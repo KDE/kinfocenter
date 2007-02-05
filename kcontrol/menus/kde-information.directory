@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Directory
+Name=Information
+Name[el]=Πληροφορίες
+Name[fr]=Informations
+Name[x-test]=xxInformationxx
+Icon=hwinfo
+X-KDE-BaseGroup=info
+NoDisplay=true
