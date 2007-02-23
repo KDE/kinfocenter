@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Type=Directory
 Name=Web Browser
-Name[el]=Περιηγητής Ιστού
+Name[el]=Περιηγητής ιστού
 Name[fr]=Navigateur web
 Name[x-test]=xxWeb Browserxx
 Icon=konqueror
