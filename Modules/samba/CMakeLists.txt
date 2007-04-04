@@ -1,6 +1,8 @@
 
 
 
+add_definitions (-DQT3_SUPPORT)
+
 ########### next target ###############
 
 set(kcm_samba_PART_SRCS 
