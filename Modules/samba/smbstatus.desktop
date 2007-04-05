@@ -13,7 +13,6 @@ X-KDE-ParentApp=kinfocenter
 
 Name=Samba Status
 Name[ar]=حالة Samba
-Name[be]=Стан Samba
 Name[bg]=Сървър Samba
 Name[br]=Saviad Samba
 Name[ca]=Estat de Samba
@@ -73,7 +72,6 @@ Name[zh_TW]=Samba 狀態
 
 Comment=Samba status monitor
 Comment[ar]=مراقب حالة Samba
-Comment[be]=Назіральнік стану Samba
 Comment[bg]=Информация за състоянието на сървъра Samba
 Comment[br]=Diskwel saviad Samba
 Comment[ca]=Monitor de l'estat de Samba
@@ -134,7 +132,6 @@ Comment[zh_TW]=Samba 狀態監視器
 Keywords=SMB,SAMBA,Windows network,LAN,System Information
 Keywords[af]=SMB,SAMBA,Windows network,LAN,System Informasie
 Keywords[ar]=SMB,SAMBA,شبكة Windows,شبكة محلية,معلومات النظام
-Keywords[be]=Сетка Windows,Сетка,Сістэмная інфармацыя,SMB,SAMBA,Windows network,LAN,System Information
 Keywords[bg]=информация, система, системна, самба, сървър, статус, състояние, мрежа, SMB, SAMBA, Windows network, LAN, System Information
 Keywords[br]=SMB,SAMBA,rouedad Windows,LAN,titouroù reizhiad
 Keywords[ca]=SMB,SAMBA,Xarxa Windows,LAN,Informació del sistema
