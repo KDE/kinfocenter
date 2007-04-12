@@ -25,7 +25,7 @@
 
 #include <QApplication>
 #include <QLayout>
-#include <q3listview.h>
+#include <Qt3Support/Q3CheckListItem>
 #include <QLabel>
 #include <QLineEdit>
 #include <QCheckBox>

@@ -22,7 +22,7 @@
 #include <QTimer>
 #include <QLabel>
 #include <k3process.h>
-#include <q3listview.h>
+#include <Qt3Support/Q3CheckListItem>
 #include <kconfig.h>
 
 #define SCREEN_XY_OFFSET 20

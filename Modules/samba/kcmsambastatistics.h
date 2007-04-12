@@ -23,7 +23,7 @@
 #ifndef kcmsambastatistics_h_included
 #define kcmsambastatistics_h_included
 
-#include <q3ptrlist.h>
+#include <Qt3Support/Q3PtrList>
 #include <QWidget>
 
 class Q3ListView;

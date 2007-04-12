@@ -25,7 +25,7 @@
 #define kcmsambaimports_h_included
  
 #include <QTimer>
-#include <q3listview.h>
+#include <Qt3Support/Q3CheckListItem>
 #include <kconfig.h>
 
 class ImportsView: public QWidget

@@ -26,7 +26,7 @@
 #include <QLabel>
 #include <QCheckBox>
 #include <QPushButton>
-#include <q3listview.h>
+#include <Qt3Support/Q3CheckListItem>
 #include <QEvent>
 #include <kconfig.h>
 
