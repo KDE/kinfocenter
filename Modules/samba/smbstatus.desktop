@@ -13,6 +13,7 @@ X-KDE-ParentApp=kinfocenter
 
 Name=Samba Status
 Name[ar]=حالة Samba
+Name[be]=Стан Samba
 Name[br]=Saviad Samba
 Name[ca]=Estat de Samba
 Name[cs]=Stav Samby
@@ -72,6 +73,7 @@ Name[zh_TW]=Samba 狀態
 
 Comment=Samba status monitor
 Comment[ar]=مراقب حالة Samba
+Comment[be]=Назіральнік стану Samba
 Comment[br]=Diskwel saviad Samba
 Comment[ca]=Monitor de l'estat de Samba
 Comment[cs]=Monitor stavu Samby
