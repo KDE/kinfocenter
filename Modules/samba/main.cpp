@@ -84,16 +84,16 @@ SambaContainer::SambaContainer(QWidget *parent, const QStringList&)
      " showmount in your PATH."));
 
     KAboutData *about =
-    new KAboutData(I18N_NOOP("kcmsamba"),
-		I18N_NOOP("KDE Panel System Information Control Module"),
-		0, 0, KAboutData::License_GPL,
-		I18N_NOOP("(c) 2002 KDE Information Control Module Samba Team"));
-    about->addAuthor("Michael Glauche", 0, "glauche@isa.rwth-aachen.de");
-    about->addAuthor("Matthias Hoelzer", 0, "hoelzer@kde.org");
-    about->addAuthor("David Faure", 0, "faure@kde.org");
-    about->addAuthor("Harald Koschinski", 0, "Harald.Koschinski@arcormail.de");
-    about->addAuthor("Wilco Greven", 0, "greven@kde.org");
-    about->addAuthor("Alexander Neundorf", 0, "neundorf@kde.org");
+    new KAboutData(I18N_NOOP("kcmsamba"), 0,
+		ki18n("KDE Panel System Information Control Module"),
+		0, KLocalizedString(), KAboutData::License_GPL,
+		ki18n("(c) 2002 KDE Information Control Module Samba Team"));
+    about->addAuthor(ki18n("Michael Glauche"), KLocalizedString(), "glauche@isa.rwth-aachen.de");
+    about->addAuthor(ki18n("Matthias Hoelzer"), KLocalizedString(), "hoelzer@kde.org");
+    about->addAuthor(ki18n("David Faure"), KLocalizedString(), "faure@kde.org");
+    about->addAuthor(ki18n("Harald Koschinski"), KLocalizedString(), "Harald.Koschinski@arcormail.de");
+    about->addAuthor(ki18n("Wilco Greven"), KLocalizedString(), "greven@kde.org");
+    about->addAuthor(ki18n("Alexander Neundorf"), KLocalizedString(), "neundorf@kde.org");
     setAboutData( about );
 }
 
