@@ -12,7 +12,6 @@ set(kcm_samba_PART_SRCS
    kcmsambalog.cpp 
    kcmsambastatistics.cpp )
 
-kde4_automoc(${kcm_samba_PART_SRCS})
 
 kde4_add_plugin(kcm_samba ${kcm_samba_PART_SRCS})
 
