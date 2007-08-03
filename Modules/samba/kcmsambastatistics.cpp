@@ -237,14 +237,14 @@ void StatisticsView::clearStatistics()
 
 void SambaLog::printItems()
 {
-   kDebug() << "****** printing items: ******" << endl;
+   kDebug() << "****** printing items: ******";
    for (LogItem* tmpItem=items.first();tmpItem!=0;tmpItem=items.next())
    {
-      kDebug() << "SERVICE: " << tmpItem->name << endl;
+      kDebug() << "SERVICE: " << tmpItem->name;
       for (SmallLogItem* tmpLog=tmpItem->accessed.first();tmpLog!=0;tmpLog=tmpItem->accessed.next())
-         kDebug() << "      accessed by: " << tmpLog->name << "  " << tmpLog->count << endl;
+         kDebug() << "      accessed by: " << tmpLog->name << "  " << tmpLog->count;
    };
-   kDebug() << "------ end of printing ------" << endl << endl;
+   kDebug() << "------ end of printing ------";
 }
 
 LogItem* SambaLog::itemInList(const QString &name)

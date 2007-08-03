@@ -134,7 +134,7 @@ void NetMon::processSambaLine(char *bufline, int)
 // half of one ...)
 void NetMon::slotReceivedData(K3Process *, char *buffer, int )
 {
-   //kDebug()<<"received stuff"<<endl;
+   //kDebug()<<"received stuff";
    char s[250],*start,*end;
    size_t len;
    start = buffer;
@@ -145,7 +145,7 @@ void NetMon::slotReceivedData(K3Process *, char *buffer, int )
 	      len=sizeof(s)-1;
       strncpy(s,start,len);
       s[len] = '\0';
-      //kDebug() << "recived: "<<s << endl;
+      //kDebug() << "recived: "<<s;
       if (readingpart==nfs)
          processNFSLine(s,len);
       else
@@ -206,7 +206,7 @@ void NetMon::update()
    //without this timer showmount hangs up to 5 minutes
    //if the portmapper daemon isn't running
    QTimer::singleShot(5000,this,SLOT(killShowmount()));
-   //kDebug()<<"starting kill timer with 5 seconds"<<endl;
+   //kDebug()<<"starting kill timer with 5 seconds";
    connect(showmountProc,SIGNAL(processExited(K3Process*)),this,SLOT(killShowmount()));
    if (!showmountProc->start(K3Process::NotifyOnExit,K3Process::Stdout)) // run showmount
    {
@@ -220,7 +220,7 @@ void NetMon::update()
 
 void NetMon::killShowmount()
 {
-   //kDebug()<<"killShowmount()"<<endl;
+   //kDebug()<<"killShowmount()";
     delete showmountProc;
     showmountProc=0;
 }
