@@ -7,7 +7,7 @@ ServiceTypes=KCModule
 DocPath=kinfocenter/samba/index.html
 
 
-X-KDE-Library=samba
+X-KDE-Library=kcm_samba
 X-KDE-FactoryName=samba
 X-KDE-ParentApp=kinfocenter
 
