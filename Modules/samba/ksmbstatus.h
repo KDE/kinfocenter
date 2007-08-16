@@ -33,7 +33,7 @@ class NetMon : public QWidget
 {
 Q_OBJECT
 public:
-   NetMon(QWidget *parent, KConfig * config=0 );
+   explicit NetMon(QWidget *parent, KConfig * config=0 );
    void saveSettings() {}
    void loadSettings() {}
 private:

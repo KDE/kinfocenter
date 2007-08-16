@@ -32,7 +32,7 @@ class ImportsView: public QWidget
 {
    Q_OBJECT
    public:
-      ImportsView(QWidget *parent, KConfig *config=0);
+      explicit ImportsView(QWidget *parent, KConfig *config=0);
       virtual ~ImportsView() {}
       void saveSettings() {}
       void loadSettings() {}

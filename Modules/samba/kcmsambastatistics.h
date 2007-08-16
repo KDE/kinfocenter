@@ -79,7 +79,7 @@ class StatisticsView: public QWidget
 {
   Q_OBJECT
 public:
-  StatisticsView(QWidget *parent=0, KConfig *config=0);
+  explicit StatisticsView(QWidget *parent=0, KConfig *config=0);
   virtual ~StatisticsView() {}
   void saveSettings() {}
   void loadSettings() {}
