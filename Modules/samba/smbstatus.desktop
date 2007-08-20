@@ -12,6 +12,7 @@ X-KDE-FactoryName=samba
 X-KDE-ParentApp=kinfocenter
 
 Name=Samba Status
+Name[ar]=حالة السامبا
 Name[be]=Стан Samba
 Name[bg]=Сървър Samba
 Name[br]=Saviad Samba
@@ -74,6 +75,7 @@ Name[xh]=Isimo se Samba
 Name[zh_TW]=Samba 狀態
 
 Comment=Samba status monitor
+Comment[ar]=مراقب حالة السامبا
 Comment[be]=Назіральнік стану Samba
 Comment[bg]=Информация за състоянието на сървъра Samba
 Comment[br]=Diskwel saviad Samba
