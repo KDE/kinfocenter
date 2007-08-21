@@ -101,14 +101,14 @@ LogView::LogView(QWidget *parent,KConfig *config)
    viewHistory.addColumn(i18n("Service/File"),210);
    viewHistory.addColumn(i18n("Host/User"),150);
 
-   viewHistory.setWhatsThis( i18n("This list shows details of the events"
+   viewHistory.setWhatsThis( i18n("<p>This list shows details of the events"
      " logged by samba. Note that events at the file level are not logged"
-     " unless you have configured the log level for samba to 2 or greater.<p>"
+     " unless you have configured the log level for samba to 2 or greater.</p><p>"
      " As with many other lists in KDE, you can click on a column heading"
      " to sort on that column. Click again to change the sorting direction"
-     " from ascending to descending or vice versa.<p>"
+     " from ascending to descending or vice versa.</p><p>"
      " If the list is empty, try clicking the \"Update\" button. The samba"
-     " log file will be read and the list refreshed.") );
+     " log file will be read and the list refreshed.</p>") );
 
    showConnOpen.setChecked(true);
    showConnClose.setChecked(true);
