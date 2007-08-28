@@ -28,11 +28,13 @@
 #include "kcmsambalog.h"
 #include "kcmsambastatistics.h"
 #include "ksmbstatus.h"
+#include <KPluginFactory>
 
 class SambaContainer:public KCModule
 {
+    Q_OBJECT
    public:
-      SambaContainer(QWidget *parent=0, const QStringList &list = QStringList() );
+      SambaContainer(QWidget *parent=0, const QVariantList &list = QVariantList() );
       virtual ~SambaContainer();
       virtual void load();
       virtual void save();
@@ -46,10 +48,12 @@ class SambaContainer:public KCModule
       StatisticsView statisticsView;
 };
 
-typedef KGenericFactory<SambaContainer, QWidget > SambaFactory;
-K_EXPORT_COMPONENT_FACTORY (samba, SambaFactory("kcmsamba") )
+K_PLUGIN_FACTORY(SambaFactory,
+        registerPlugin<SambaContainer>();
+        )
+K_EXPORT_PLUGIN(SambaFactory("kcmsamba"))
 
-SambaContainer::SambaContainer(QWidget *parent, const QStringList&)
+SambaContainer::SambaContainer(QWidget *parent, const QVariantList&)
 :KCModule(SambaFactory::componentData(), parent)
 ,config("kcmsambarc")
 ,tabs(this)
@@ -119,3 +123,4 @@ void SambaContainer::save()
    config.sync();
 }
 
+#include "main.moc"
