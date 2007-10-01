@@ -70,6 +70,7 @@ Name[vi]=Trạng thái Samba
 Name[wa]=Estat di Samba
 Name[x-test]=xxSamba Statusxx
 Name[xh]=Isimo se Samba
+Name[zh_CN]=Samba 状态
 Name[zh_TW]=Samba 狀態
 
 Comment=Samba status monitor
@@ -134,6 +135,7 @@ Comment[vi]=Theo dõi trạng thái Samba
 Comment[wa]=Corwaitoe di l' estat di Samba
 Comment[x-test]=xxSamba status monitorxx
 Comment[xh]=Umphathi wemeko we Samba
+Comment[zh_CN]=Samba 状态监视器
 Comment[zh_TW]=Samba 狀態監視器
 
 Keywords=SMB,SAMBA,Windows network,LAN,System Information
@@ -193,5 +195,6 @@ Keywords[vi]=SMB,SAMBA,Mạng Windows,LAN,mạng cục bộ,Thông tin hệ th�
 Keywords[wa]=SMB,SAMBA,rantoele Windows,LAN,rantoele locåle,infôrmåcion do sistinme
 Keywords[x-test]=xxSMB,SAMBA,Windows network,LAN,System Informationxx
 Keywords[xh]=SMB,SAMBA,umsebenzi womnatha wee window,LAN,Ulwazi lwendlela yokusebenza
+Keywords[zh_CN]=SMB,SAMBA,Windows network,LAN,System Information,局域网,系统信息
 Keywords[zh_TW]=SMB,SAMBA,Windows network,LAN,System Information,Windows 網路,區域網路,系統資訊
 Categories=Qt;KDE;X-KDE-information;
