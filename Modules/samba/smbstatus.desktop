@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Exec=kcmshell smbstatus
-Icon=samba
+Icon=preferences-system-network-share-windows-status
 Type=Service
 ServiceTypes=KCModule
 DocPath=kinfocenter/samba/index.html
