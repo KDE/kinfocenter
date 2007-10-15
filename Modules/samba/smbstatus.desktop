@@ -1,6 +1,6 @@
 [Desktop Entry]
 Encoding=UTF-8
-Exec=kcmshell smbstatus
+Exec=kcmshell4 smbstatus
 Icon=preferences-system-network-share-windows-status
 Type=Service
 ServiceTypes=KCModule
