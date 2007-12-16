@@ -64,7 +64,7 @@ SambaContainer::SambaContainer(QWidget *parent, const QVariantList&)
 {
    QVBoxLayout *layout = new QVBoxLayout( this );
    layout->setMargin(0);
-   layout->setSpacing(KDialog::spacingHint());
+   layout->setSpacing(0);
    layout->addWidget(&tabs);
    tabs.addTab(&status,i18n("&Exports"));
    tabs.addTab(&imports,i18n("&Imports"));
