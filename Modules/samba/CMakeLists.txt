@@ -1,9 +1,4 @@
-
-
-
-add_definitions (-DQT3_SUPPORT)
-
-########### next target ###############
+add_definitions (-DQT3_SUPPORT -DQT3_SUPPORT_WARNINGS)
 
 set(kcm_samba_PART_SRCS 
    main.cpp 
