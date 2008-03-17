@@ -1,7 +1,7 @@
 [Desktop Entry]
 Exec=kcmshell4 smbstatus
 Icon=preferences-system-network-share-windows-status
-Type=Service
+Type=Application
 X-KDE-ServiceTypes=KCModule
 X-DocPath=kinfocenter/samba/index.html
 
