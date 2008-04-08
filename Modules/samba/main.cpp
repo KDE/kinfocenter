@@ -80,12 +80,7 @@ SambaContainer::SambaContainer(QWidget *parent, const QVariantList&)
      " implements the SMB (Session Message Block) protocol, also called the"
      " NetBIOS or LanManager protocol. This protocol can be used to provide"
      " printer sharing or drive sharing services on a network including"
-     " machines running the various flavors of Microsoft Windows.</p><p>"
-     " Showmount is part of the NFS software package. NFS stands for Network"
-     " File System and is the traditional UNIX way to share directories over"
-     " the network. In this case the output of <em>showmount -a localhost</em>"
-     " is parsed. On some systems showmount is in /usr/sbin, check if you have"
-     " showmount in your PATH.</p>"));
+     " machines running the various flavors of Microsoft Windows.</p>"));
 
     KAboutData *about =
     new KAboutData(I18N_NOOP("kcmsamba"), 0,
