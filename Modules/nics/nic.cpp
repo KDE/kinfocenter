@@ -18,6 +18,8 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
+#include "nic.h"
+
 #include <sys/types.h>
 #include <sys/param.h>
 #include <netinet/in.h>
@@ -42,8 +44,6 @@
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QTreeWidget>
-
-#include "nic.h"
 
 #ifdef USE_SOLARIS
 /* net/if.h is incompatible with STL on Solaris 2.6 - 2.8, redefine
