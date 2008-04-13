@@ -267,7 +267,7 @@ bool GetInfo_Partitions(QTreeWidget* tree) {
 	if (setfsent() != 1) /* Try to open fstab */{
 		int s_err= errno;
 		QString s;
-		s = i18n("Could not check filesystem info: ");
+		s = i18n("Could not check file system info: ");
 		s += strerror(s_err);
 		QStringList list;
 		list << s;
