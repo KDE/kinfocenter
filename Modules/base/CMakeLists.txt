@@ -10,4 +10,4 @@ check_include_files(sys/ioctl.h HAVE_SYS_IOCTL_H)   # info_linux.cpp
 check_include_files(sys/raw.h HAVE_SYS_RAW_H)       # info_linux.cpp
 check_include_files(Alib.h HAVE_ALIB_H)             # info_hpux.cpp
 
-configure_file (../base/config-infocenter.h.cmake ${CMAKE_CURRENT_SOURCE_DIR}/config-infocenter.h )
+configure_file (../base/config-infocenter.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-infocenter.h )
