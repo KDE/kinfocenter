@@ -252,9 +252,9 @@ bool GetInfo_PCI(QTreeWidget* tree) {
 	}
 
 	if (!tree->topLevelItemCount()) {
-		QStringList list;
-		list << i18n("The PCI subsystem could not be queried, this may need root privileges.");
-		olditem = new QTreeWidgetItem(tree, olditem, list);
+		QString str = i18n("The PCI subsystem could not be queried, this may need root privileges.");
+		olditem = new QTreeWidgetItem(tree, olditem);
+        olditem->setText(0, str);
 		return true;
 	}
 
@@ -277,7 +277,7 @@ bool GetInfo_Partitions(QTreeWidget* tree) {
 		headers << i18n("Device") << i18n("Mount Point") << i18n("FS Type") << i18n("Mount Options");
 
 		while ((fstab_ent=getfsent())!=NULL) {
-			QString list;
+			QStringList list;
 			list << fstab_ent->fs_spec << fstab_ent->fs_file << fstab_ent->fs_vfstype << fstab_ent->fs_mntops;
 			new QTreeWidgetItem(tree, list);
 		}
@@ -334,24 +334,24 @@ bool GetInfo_Devices(QTreeWidget* tree) {
 }
 
 QString GetController(const QString &line) {
-	if ( ( (line.startsWith("ad")) || (line.startsWith("afd")) || (line.startsWith("acd")) ) && (line.find(":") < 6)) {
+	if ( ( (line.startsWith("ad")) || (line.startsWith("afd")) || (line.startsWith("acd")) ) && (line.indexOf(":") < 6)) {
 		QString controller = line;
-		controller.remove(0, controller.find(" at ")+4);
-		if (controller.find("-slave") != -1) {
-			controller.remove(controller.find("-slave"), controller.length());
-		} else if (controller.find("-master") != -1) {
-			controller.remove(controller.find("-master"), controller.length());
+		controller.remove(0, controller.indexOf(" at ")+4);
+		if (controller.indexOf("-slave") != -1) {
+			controller.remove(controller.indexOf("-slave"), controller.length());
+		} else if (controller.indexOf("-master") != -1) {
+			controller.remove(controller.indexOf("-master"), controller.length());
 		} else
 			controller=QString();
 		if (!controller.isNull())
 			return controller;
 	}
-	if (line.find(" on ") != -1) {
+	if (line.indexOf(" on ") != -1) {
 		QString controller;
 		controller = line;
-		controller.remove(0, controller.find(" on ")+4);
-		if (controller.find(" ") != -1)
-			controller.remove(controller.find(" "), controller.length());
+		controller.remove(0, controller.indexOf(" on ")+4);
+		if (controller.indexOf(" ") != -1)
+			controller.remove(controller.indexOf(" "), controller.length());
 		return controller;
 	}
 	return QString();
@@ -359,13 +359,13 @@ QString GetController(const QString &line) {
 
 Device *GetDevice(const QString &line) {
 	Device *dev;
-	int colon = line.find(":");
+	int colon = line.indexOf(":");
 	if (colon == -1)
 		return 0;
 	dev = new Device;
 	dev->name = line.mid(0, colon);
-	dev->description = line.mid(line.find("<")+1, line.length());
-	dev->description.remove(dev->description.find(">"), dev->description.length());
+	dev->description = line.mid(line.indexOf("<")+1, line.length());
+	dev->description.remove(dev->description.indexOf(">"), dev->description.length());
 	return dev;
 }
 
