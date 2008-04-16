@@ -36,7 +36,7 @@
 #endif
 
 #ifdef HAVE_PCIUTILS
-#include "pci.h"
+#include "kpci.h"
 #endif //HAVE_PCIUTILS
 #include <QRegExp>
 #include <QFile>
