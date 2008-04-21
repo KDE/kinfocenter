@@ -118,6 +118,8 @@ bool GetInfo_CPU(QTreeWidget* tree) {
 
 bool GetInfo_IRQ(QTreeWidget* tree) {
 	tree->setFont(KGlobalSettings::fixedFont());
+	tree->setHeaderHidden(true);
+	
 	return GetInfo_ReadfromFile(tree, INFO_IRQ, 0);
 }
 
@@ -161,7 +163,7 @@ bool GetInfo_PCI(QTreeWidget* tree) {
 	}
 	
 #endif //HAVE_PCIUTILS
-	tree->header()->setVisible(false);
+	tree->setHeaderHidden(true);
 	tree->setSortingEnabled(false);
 
 	/* try to get the output of the lspci package first */
