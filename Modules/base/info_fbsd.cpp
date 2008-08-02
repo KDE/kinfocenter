@@ -328,8 +328,10 @@ bool GetInfo_Devices(QTreeWidget* tree) {
 				}
 			}
 		}
+                delete f;
 		return true;
 	}
+        delete f;
 	return false;
 }
 
