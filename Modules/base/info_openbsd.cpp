@@ -37,7 +37,7 @@ typedef struct {
 } hw_info_mib_list_t;
 
 bool GetInfo_CPU(QTreeWidget* tree) {
-	static hw_info_mib_list_t hw_info_mib_list[]= { { 1, HW_MODEL, "Model" }, { 1, HW_MACHINE, "Machine" }, { 0, HW_NCPU, "Number of CPUs" }, { 0, HW_PAGESIZE, "Pagesize" }, { 0, 0, 0 } };
+	static const hw_info_mib_list_t hw_info_mib_list[]= { { 1, HW_MODEL, "Model" }, { 1, HW_MACHINE, "Machine" }, { 0, HW_NCPU, "Number of CPUs" }, { 0, HW_PAGESIZE, "Pagesize" }, { 0, 0, 0 } };
 	hw_info_mib_list_t *hw_info_mib;
 
 	int mib[2], num;

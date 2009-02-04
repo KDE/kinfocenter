@@ -52,7 +52,7 @@ static const QString ByteString(unsigned long n) {
 	return i18nc("plural form: '%1 Bytes'", "%1 Bytes", KGlobal::locale()->formatNumber(n, 0));
 }
 
-static struct _event_table {
+static const struct _event_table {
 	const char *name;
 	long value;
 } event_table[] = { { "KeyPressMask", KeyPressMask }, { "KeyReleaseMask", KeyReleaseMask }, { "ButtonPressMask", ButtonPressMask }, { "ButtonReleaseMask", ButtonReleaseMask }, { "EnterWindowMask", EnterWindowMask }, { "LeaveWindowMask", LeaveWindowMask }, { "PointerMotionMask", PointerMotionMask },
@@ -168,7 +168,7 @@ static QTreeWidgetItem* XServer_fill_screen_info(QTreeWidgetItem *lBox, QTreeWid
 	QStringList currentInput;
 	currentInput << i18n("Current Input Event Mask") << HexStr((unsigned long)EventMaskOfScreen(s), HEXDIGITS);
 	last = new QTreeWidgetItem(item, currentInput);
-	struct _event_table *etp;
+	const struct _event_table *etp;
 	for (etp=event_table; etp->name; etp++) {
 		if (EventMaskOfScreen(s) & etp->value) {
 			QStringList eventList;

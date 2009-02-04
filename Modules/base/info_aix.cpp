@@ -125,6 +125,7 @@ struct model {
 	unsigned short architecture; /* enum CHIP */
 };
 
+const
 struct model _models[] = { { "02", "7015-930", "25", Power }, { "10", "7013-530", "25", Power }, { "10", "7016-730", "25", Power }, { "11", "7013-540", "30", Power }, { "14", "7013-540", "30", Power }, { "18", "7013-53H", "33", Power }, { "1C", "7013-550", "41.6", Power }, { "20", "7015-930", "25",
 		Power }, { "2E", "7015-950", "41", Power }, { "30", "7013-520", "20", Power }, { "31", "7012-320", "20", Power }, { "34", "7013-52H", "25", Power }, { "35", "7012-32H", "25", Power }, { "37", "7012-340", "33", Power }, { "38", "7012-350", "41", Power }, { "41", "7011-20", "33", PowerPC }, {
 		"45", "7011-220", "33", PowerPC }, { "42", "7006-41T/41W", "80", PowerPC }, { "43", "7008-M20", "33", Power }, { "43", "7008-M2A", "33", Power }, { "46", "7011-250", "66", PowerPC }, { "47", "7011-230", "45", RSC }, { "48", "7009-C10", "80", PowerPC },
@@ -138,6 +139,7 @@ struct model _models[] = { { "02", "7015-930", "25", Power }, { "10", "7013-530"
 		"(unknown)", PowerPC }, { "A6", "7012-G30", "(unknown)", PowerPC }, { "A7", "7012-G40", "(unknown)", PowerPC }, { "C0", "7024-E20", "(unknown)", PowerPC }, { "C0", "7024-E30", "(unknown)", PowerPC }, { "C4", "7025-F30", "(unknown)", PowerPC }, { "F0", "7007-N40", "50", ThinkPad }, { "", "",
 		"0", 0 } };
 
+const
 struct model _4C_models[] = { { "IBM,7017-S70", "7017-S70", "125", RS64 }, { "IBM,7017-S7A", "7017-S7A", "262", RD64_II }, { "IBM,7017-S80", "7017-S80", "450", RS_III }, { "IBM,7017-S85", "pSeries 680", "600", RS64_IV }, { "IBM,7025-F40", "7025-F40", "166/233", PowerPC_604e }, { "IBM,7025-F50",
 		"7025-F50", "(unknown)", PowerPC_604e }, { "IBM,7025-F80", "7025-F80", "(unknown)", RS64_III }, { "IBM,7026-H10", "7025-H10", "166/233", PowerPC_604e }, { "IBM,7026-H50", "7025-H50", "(unknown)", PowerPC_604e }, { "IBM,7026-H80", "7025-H80", "(unknown)", RS64_III }, { "IBM,7026-M80",
 		"7026-M80", "500", RS64_III }, { "IBM,7025-F40", "7025-F40", "166/233", PowerPC }, { "IBM,7025-F50", "7025-F50", "(unknown)", PowerPC }, { "IBM,7025-F80", "7025-F80", "450", PowerPC }, { "IBM,7026-B80", "pSeries 640", "375", Power3_II }, { "IBM,7026-H10", "7026-H10", "166/233", PowerPC }, {
