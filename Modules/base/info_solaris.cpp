@@ -446,7 +446,7 @@ int dump_minor_node( di_node_t node, di_minor_t minor, void *arg ) {
 	specResult = i18n( "block special" );
 
 	QStringList spec;
-	spec << i18n( "Spectype:" ) << specResult;
+	spec << i18nc( "Can be either character special or block special", "Special type:" ) << specResult;
 
 	new QTreeWidgetItem(item, spec);
 
