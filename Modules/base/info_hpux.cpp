@@ -547,10 +547,6 @@ bool GetInfo_Sound( QListView *lBox )
 			Value(audio->block_size));
 	olditem = new QListViewItem(lBox, olditem, i18n("Stream Port (decimal)"),
 			Value(audio->stream_port));
-	olditem = new QListViewItem(lBox, olditem, i18n("Ev Buffer Size"),
-			Value(audio->ev_buf_size));
-	olditem = new QListViewItem(lBox, olditem, i18n("Ext Number"),
-			Value(audio->ext_number));
 
 	ACloseAudio( audio, &status );
 
