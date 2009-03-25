@@ -32,9 +32,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <iostream.h>
+#include <iostream>
 
-#include <qdict.h>
 #include <QFile>
 #include <QFontMetrics>
 
@@ -51,7 +50,7 @@
 
 #include <machine/limits.h>
 
-bool GetInfo_CPU(QListView *lBox) {
+bool GetInfo_CPU(QTreeWidget* tree) {
 
 	QString cpustring;
 
@@ -62,26 +61,26 @@ bool GetInfo_CPU(QListView *lBox) {
 	ret=host_info(mach_host_self(), HOST_BASIC_INFO, (host_info_t)&basic_info, &count);
 	if (ret != KERN_SUCCESS) {
 		kDebug() << "unable to get host information from mach";
-		return false;
 	} else {
 		kDebug() << "got Host Info: (" << basic_info.avail_cpus << ") CPUs available";
 		const NXArchInfo *archinfo;
 		archinfo=NXGetArchInfoFromCpuType(basic_info.cpu_type, basic_info.cpu_subtype);
-		new QListViewItem(lBox, i18n("Kernel is configured for %1 CPUs", basic_info.max_cpus));
+
 		for (int i = 1; i <= basic_info.avail_cpus; i++) {
-			cpustring = i18n("CPU %1: %2", i, archinfo->description);
-			new QListViewItem(lBox, cpustring);
+			QStringList list;
+			list << QString(i) << archinfo->description;
+			new QTreeWidgetItem(tree, list);
 		}
 		return true;
 	}
 	return false;
 }
 
-bool GetInfo_IRQ(QListView *) {
+bool GetInfo_IRQ(QTreeWidget*) {
 	return false;
 }
 
-bool GetInfo_DMA(QListView *) {
+bool GetInfo_DMA(QTreeWidget*) {
 	return false;
 }
 
@@ -89,11 +88,11 @@ bool GetInfo_PCI(QTreeWidget*) {
 	return false;
 }
 
-bool GetInfo_IO_Ports(QListView *) {
+bool GetInfo_IO_Ports(QTreeWidget*) {
 	return false;
 }
 
-bool GetInfo_Sound(QListView *lBox) {
+bool GetInfo_Sound(QTreeWidget *tree) {
 #ifdef HAVE_COREAUDIO
 #define qMaxStringSize 1024
 	OSStatus status;
@@ -118,7 +117,9 @@ bool GetInfo_Sound(QListView *lBox) {
 			kDebug() << "get device name failed, status = " << (int)status;
 			return false;
 		}
-		new QListViewItem(lBox, i18n("Device Name: %1", deviceName));
+		QStringList deviceList;
+		deviceList << i18n("Device Name") << deviceName;
+		new QTreeWidgetItem(tree, deviceList);
 
 		/* Manufacturer */
 		status = AudioDeviceGetProperty(gOutputDeviceID, 1, 0, kAudioDevicePropertyDeviceManufacturer, &propertySize, manufacturer);
@@ -126,7 +127,9 @@ bool GetInfo_Sound(QListView *lBox) {
 			kDebug() << "get manufacturer failed, status = " << (int)status;
 			return false;
 		}
-		new QListViewItem(lBox, i18n("Manufacturer: %1", manufacturer));
+		QStringList manufacturerList;
+		manufacturerList << i18n("Manufacturer") << manufacturer;
+		new QTreeWidgetItem(tree, manufacturerList);
 		return true;
 	} else {
 		return false;
@@ -136,18 +139,22 @@ bool GetInfo_Sound(QListView *lBox) {
 #endif
 }
 
-bool GetInfo_SCSI(QListView *lbox) {
+bool GetInfo_SCSI(QTreeWidget*) {
 	return false;
 }
 
-bool GetInfo_Partitions(QListView *lbox) {
+bool GetInfo_Partitions(QTreeWidget*) {
 	return false;
 }
 
-bool GetInfo_XServer_and_Video(QListView *lBox) {
-	return GetInfo_XServer_Generic(lBox);
+bool GetInfo_XServer_and_Video(QTreeWidget* tree) {
+#ifdef Q_WS_X11
+	return GetInfo_XServer_Generic(tree);
+#else
+	return false;
+#endif
 }
 
-bool GetInfo_Devices(QListView *lbox) {
+bool GetInfo_Devices(QTreeWidget* tree) {
 	return false;
 }
