@@ -98,7 +98,7 @@ static QTreeWidgetItem* XServer_fill_screen_info(QTreeWidgetItem *lBox, QTreeWid
 		item->setExpanded(true);
 
 	QStringList dimensionList;
-	dimensionList << i18n("Dimensions") << i18n("%1 x %2 Pixel (%3 x %4 mm)", (int)DisplayWidth(dpy,scr) , (int)DisplayHeight(dpy,scr) , (int)DisplayWidthMM(dpy,scr) , (int)DisplayHeightMM (dpy,scr) );
+	dimensionList << i18n("Dimensions") << i18n("%1 x %2 Pixels (%3 x %4 mm)", (int)DisplayWidth(dpy,scr) , (int)DisplayHeight(dpy,scr) , (int)DisplayWidthMM(dpy,scr) , (int)DisplayHeightMM (dpy,scr) );
 	last = new QTreeWidgetItem(item, dimensionList);
 
 	QStringList resolutionList;
