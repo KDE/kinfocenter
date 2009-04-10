@@ -89,7 +89,7 @@ bool GetInfo_CPU(QTreeWidget* tree) {
 		new QTreeWidgetItem(tree, list);
 
 		/* Clean up after ourselves, this time I mean it ;-) */
-		delete buf[];
+		delete[] buf;
 	}
 
 	return true;
