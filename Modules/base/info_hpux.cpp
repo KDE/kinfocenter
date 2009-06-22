@@ -174,8 +174,8 @@ bool GetInfo_CPU(QListView *lBox) {
 			str = t->readLine();
 			olditem = new QListViewItem(lBox, olditem, i18n("Model"), str);
 			delete t;
+                        pclose( pipe );
 		}
-		delete pipe;
 	}
 	delete model;
 
