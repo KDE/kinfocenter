@@ -2,7 +2,6 @@
 #define OS_CURRENT_H_
 
 class QTreeWidget;
-class QTreeWidgetItem;
 class QString;
 
 /* function call-back-prototypes... */
