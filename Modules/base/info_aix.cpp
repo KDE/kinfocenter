@@ -304,7 +304,7 @@ bool GetInfo_Partitions(QListView *lbox) {
 	struct statvfs svfs;
 	long total, avail;
 	QString str;
-	QString MB(i18n("MB")+ "  "); // International Text for MB=Mega-Byte
+	QString MB(i18nc("Mebibyte", "MiB "));
 
 	if (setfsent() != 1) // Try to open fstab 
 		return false;

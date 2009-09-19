@@ -239,7 +239,7 @@ bool GetInfo_CPU(QListView *lBox) {
 		}
 	}// for(coprocessor..)
 
-	str = Value(((pst.physical_memory*pst.page_size)/1024/1024)) + i18n(" MB"); // Mega-Byte
+	str = Value(((pst.physical_memory*pst.page_size)/1024/1024)) + i18nc("Mebibyte", "MiB");
 	olditem = new QListViewItem(lBox, olditem, i18n("Total Physical Memory"), str);
 
 	str = Value(pst.page_size) + i18n(" Bytes");

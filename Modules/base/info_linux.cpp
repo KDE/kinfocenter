@@ -331,7 +331,7 @@ void Get_LinuxRawDevices(QTreeWidget* tree)
 	int new_raw_devs = 1;
 	struct raw_config_request rq;
 	QString devname;
-	QString MB(i18n("MB")); /* "MB" = "Mega-Byte" */
+	QString MB(i18nc("Mebibyte", "MiB"));
 
 	/* try to open the raw device control file */
 	f = open("/dev/rawctl", O_RDWR);
@@ -442,7 +442,7 @@ bool GetInfo_Partitions(QTreeWidget* tree) {
 	struct statfs sfs;
 	quint64 total, avail;
 	QString str, mountopts;
-	QString MB(i18n("MB")); /* "MB" = "Mega-Byte" */
+	QString MB(i18nc("Mebibyte", "MiB"));
 
 #ifdef HAVE_FSTAB_H
 	if (setfsent() == 0) /* Try to open fstab */
