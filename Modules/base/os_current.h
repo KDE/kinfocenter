@@ -63,7 +63,7 @@ bool GetInfo_XServer_and_Video(QTreeWidget* tree);
 	
 	#define DEFAULT_ERRORSTRING  i18n("This system may not be completely supported yet.")
 
-#elif __hpux
+#elif defined(__hpux)
 
 	#define INFO_CPU_AVAILABLE
 	#define INFO_IRQ_AVAILABLE
@@ -80,7 +80,7 @@ bool GetInfo_XServer_and_Video(QTreeWidget* tree);
 	
 	#define DEFAULT_ERRORSTRING QString()
 
-#elif __NetBSD__
+#elif defined(__NetBSD__)
 
 	#define INFO_CPU_AVAILABLE
 	#define INFO_IRQ_AVAILABLE
@@ -94,7 +94,7 @@ bool GetInfo_XServer_and_Video(QTreeWidget* tree);
 	
 	#define DEFAULT_ERRORSTRING  i18n("This system may not be completely supported yet.")
 
-#elif __OpenBSD__
+#elif defined(__OpenBSD__)
 
 	#define INFO_CPU_AVAILABLE
 	#define INFO_IRQ_AVAILABLE
@@ -122,7 +122,7 @@ bool GetInfo_XServer_and_Video(QTreeWidget* tree);
 
 	#define DEFAULT_ERRORSTRING  i18n("This system may not be completely supported yet.")
 
-#elif __svr4__
+#elif defined(__svr4__)
 
 	#define INFO_CPU_AVAILABLE
 	#define INFO_IRQ_AVAILABLE
@@ -136,7 +136,7 @@ bool GetInfo_XServer_and_Video(QTreeWidget* tree);
 
 	#define DEFAULT_ERRORSTRING  i18n("This system may not be completely supported yet.")
 
-#elif _AIX
+#elif defined(_AIX)
 
 	#define INFO_DEVICES_AVAILABLE
 	#define INFO_SCSI_AVAILABLE

@@ -9,17 +9,17 @@
 	#include "info_sgi.cpp"
 #elif defined(__FreeBSD__) || defined(__DragonFly__)
 	#include "info_fbsd.cpp"
-#elif __hpux
+#elif defined(__hpux)
 	#include "info_hpux.cpp"
-#elif __NetBSD__
+#elif defined(__NetBSD__)
 	#include "info_netbsd.cpp"
-#elif __OpenBSD__
+#elif defined(__OpenBSD__)
 	#include "info_openbsd.cpp"
 #elif defined(__svr4__) && defined(sun)
 	#include "info_solaris.cpp"
-#elif __svr4__
+#elif defined(__svr4__)
 	#include "info_svr4.cpp"
-#elif _AIX
+#elif defined(_AIX)
 	#include "info_aix.cpp"
 #elif defined(__APPLE__)
 	#include "info_osx.cpp"
