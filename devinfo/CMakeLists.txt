@@ -1,7 +1,4 @@
-
 project( devinfo )
-find_package( KDE4 REQUIRED )
-include_directories( ${KDE4_INCLUDES} )
 
 set( devinfoSources soldevice.cpp devinfo.cpp devicelisting.cpp infopanel.cpp soldevicetypes.cpp qvlistlayout.cpp solidhelper.cpp nicsignals.cpp )
 
