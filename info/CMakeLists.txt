@@ -26,7 +26,6 @@ install(
 	interrupts.desktop 
 	ioports.desktop 
 	sound.desktop 
-	devices.desktop 
 	scsi.desktop 
 	xserver.desktop  
 	DESTINATION  ${SERVICES_INSTALL_DIR} 

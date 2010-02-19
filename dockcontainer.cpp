@@ -25,6 +25,7 @@
 #include <kdialog.h>
 #include <kiconloader.h>
 #include <kvbox.h>
+#include <ktoolinvocation.h>
 
 #include <QLabel>
 #include <QPixmap>
@@ -66,7 +67,7 @@ void ModuleTitle::setCommentText(const QString& docPath, const QString& text, co
 	else if (docPath.isEmpty())
 		setComment(text);
 	else {
-		setComment(quickHelp + i18n("<p>Click here to consult the full <a href=\"%1\">Manual</a>.</p>", "help:/" + docPath));
+	  setComment(quickHelp + i18n("<p>Click here to consult the full <a href=\"%1\">Manual</a>.</p>", "help:/" + docPath));
 	}
 }
 

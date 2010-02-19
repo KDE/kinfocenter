@@ -1,7 +1,8 @@
+
 /*
- * nic.h
+ *  nicsignals.h
  *
- *  Copyright (C) 2001 Alexander Neundorf <neundorf@kde.org>
+ *  Copyright (C) 2009 David Hubner <hubnerd@ntlworld.com>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -16,29 +17,36 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *
  */
 
-#ifndef KCONTROL_NIC_H
-#define KCONTROL_NIC_H
+#ifndef __NICSIGNALS__
+#define __NICSIGNALS__
 
-#include <kcmodule.h>
+//Qt
+#include <QObject>
 
-class QPushButton;
-class QTreeWidget;
+//KDE
+#include <kdebug.h>
+#include <solid/control/networkmanager.h>
+#include <solid/control/networkinterface.h>
 
-class KCMNic:public KCModule
+class NicSignals : public QObject
 {
-   Q_OBJECT
-   public:
-      explicit KCMNic(QWidget *parent=0, const QVariantList &list = QVariantList( ));
+  Q_OBJECT
+  
+  public:
+    NicSignals();
+    
+  private:
+    void connectToNicSignals();
 
-   protected Q_SLOTS:
-      void update();
-
-   protected:
-      QTreeWidget *m_list;
-      QPushButton *m_updateButton;
+  signals:
+    void nicActivatedOrDisconnected();
+    
+  public slots:
+    void nicChangedSignal(const int &,const int &,const int &);
+    
 };
 
-#endif
-
+#endif // __NICSIGNALS __

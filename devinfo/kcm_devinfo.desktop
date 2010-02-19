@@ -1,0 +1,50 @@
+[Desktop Entry]
+Exec=kcmshell4 kcm_devinfo
+Icon=device-notifier
+Type=Service
+X-KDE-ServiceTypes=KCModule
+
+X-KDE-Library=kcm_devinfo
+X-KDE-ParentApp=kinfocenter
+
+Name=Device Information
+Name[da]=Enhedsinformation
+Name[de]=Geräteinformationen
+Name[en_GB]=Device Information
+Name[es]=Información del dispositivo
+Name[et]=Seadmete teave
+Name[fi]=Laitetiedot
+Name[fr]=Information sur le périphérique
+Name[nb]=Enhetsinformasjon
+Name[nds]=Reedschap-Informatschonen
+Name[nl]=Apparaatinformatie
+Name[nn]=Einingsinformasjon
+Name[pt]=Informação dos Dispositivos
+Name[pt_BR]=Informação do dispositivo
+Name[sk]=Informácie o zariadení
+Name[sv]=Enhetsinformation
+Name[uk]=Інформація про пристрої
+Name[x-test]=xxDevice Informationxx
+
+Comment=Device Information
+Comment[da]=Enhedsinformation
+Comment[de]=Geräteinformationen
+Comment[en_GB]=Device Information
+Comment[es]=Información del dispositivo
+Comment[et]=Seadmete teave
+Comment[fi]=Laitetiedot
+Comment[fr]=Information sur le périphérique
+Comment[nb]=Systeminformasjon
+Comment[nds]=Reedschap-Informatschonen
+Comment[nl]=Apparaatinformatie
+Comment[nn]=Systeminformasjon
+Comment[pt]=Informação do Dispositivo
+Comment[pt_BR]=Informação do dispositivo
+Comment[sk]=Informácie o zariadení
+Comment[sv]=Enhetsinformation
+Comment[uk]=Інформація про пристрої
+Comment[x-test]=xxDevice Informationxx
+
+X-KDE-Keywords=device,devices
+X-DocPath=kcontrol/kcm_devinfo/index.html
+Categories=Qt;KDE;X-KDE-information;

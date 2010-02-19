@@ -1,7 +1,8 @@
+
 /*
- *  solidproc.h
+ *  devinfo.h
  *
- *  Copyright (C) 2008 Ivo Anjo <knuckles@gmail.com>
+ *  Copyright (C) 2009 David Hubner <hubnerd@ntlworld.com>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -16,30 +17,46 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *
  */
 
-#ifndef KCONTROL_SOLIDPROC_H
-#define KCONTROL_SOLIDPROC_H
+#ifndef __devinfo__
+#define __devinfo__
 
+//kde
 #include <kcmodule.h>
+#include <klocale.h>
+#include <kaboutdata.h>
 
-#include <solid/device.h>
+//Plugin
+#include <kpluginfactory.h>
+#include <kpluginloader.h>
 
-#include "ui_solidproc.h"
+//QT
+#include <QLayout>
+#include <QSplitter>
+#include <QStatusBar>
 
+//Local
+#include "devicelisting.h"
+#include "infopanel.h"
 
-class KCMSolidProc: public KCModule, public Ui::Solidproc
+class InfoPanel;
+class DeviceListing;
+
+class DevInfoPlugin : public KCModule
 {
-    Q_OBJECT
-
-    public:
-        explicit KCMSolidProc(QWidget *parent = 0, const QVariantList &list = QVariantList() );
-
-    protected slots:
-        virtual void rowSelected(int newRow);
-
-    protected:
-        QList<Solid::Device> solidProcList;
+  Q_OBJECT
+  
+  public:
+    DevInfoPlugin(QWidget *parent, const QVariantList &);
+    ~DevInfoPlugin();
+    
+    void updateStatus(const QString uid);
+    
+  private:
+    QGridLayout *layout;
+    QLabel *udiStatus;
 };
 
-#endif
+#endif //__devinfo__

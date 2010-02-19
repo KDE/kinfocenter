@@ -3,18 +3,14 @@ add_definitions( -DKDE_DEFAULT_DEBUG_AREA=1208 )
 
 add_subdirectory( about ) 
 
-add_subdirectory( solidproc )
-
 add_subdirectory( usbview )
 add_subdirectory( memory )
-
-add_subdirectory( partition )
+add_subdirectory( devinfo )
+add_subdirectory( info )
 
 add_subdirectory( ioslaveinfo )
 
 if(NOT WIN32)
-  add_subdirectory( nics )
-  add_subdirectory( info )
   add_subdirectory( samba )
 
   macro_optional_find_package(OpenGL)
