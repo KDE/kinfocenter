@@ -25,10 +25,8 @@
 
 // QT
 #include <QWidget>
-#include <QLayout>
 #include <QGroupBox>
 #include <QLabel>
-#include <QSize>
 
 //Solid
 #include <solid/device.h>

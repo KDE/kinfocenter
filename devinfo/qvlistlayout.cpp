@@ -22,6 +22,9 @@
 
 #include "qvlistlayout.h"
 
+#include <QStringList>
+#include <QLabel>
+
 QVListLayout::QVListLayout() :
   QVBoxLayout()
 {

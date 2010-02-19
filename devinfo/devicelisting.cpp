@@ -22,6 +22,8 @@
 
 #include "devicelisting.h"
 
+#include <QMenu>
+
 DeviceListing::DeviceListing(QWidget *parent, InfoPanel *info, DevInfoPlugin *stat) : 
   QTreeWidget(parent), iPanel(info), status(stat) 
 {  

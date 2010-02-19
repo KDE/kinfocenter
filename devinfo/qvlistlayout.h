@@ -24,8 +24,6 @@
 #define __QVListLayout__
 
 #include <QVBoxLayout>
-#include <QLabel>
-#include <QFont>
 
 class QVListLayout : public QVBoxLayout
 {

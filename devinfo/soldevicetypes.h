@@ -24,9 +24,6 @@
 #define __SOLDEVICETYPES__
 
 //QT
-#include <QStringList>
-#include <QHostAddress>
-#include <QProgressBar>
 
 //kde 
 #include <solid/control/networkinterface.h>

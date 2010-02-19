@@ -32,10 +32,8 @@
 #include <solid/networking.h>
 
 //QT 
-#include <QList>
 #include <QMap>
 #include <QTreeWidget>
-#include <QMenu>
 #include <QAction>
 #include <QContextMenuEvent>
 #include <QTreeWidgetItemIterator>

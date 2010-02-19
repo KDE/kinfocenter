@@ -22,6 +22,7 @@
 
 #include "soldevicetypes.h"
 
+#include <QProgressBar>
 // ---- Processor
 
 SolProcessorDevice::SolProcessorDevice(QTreeWidgetItem *parent, const Solid::Device &device) :

@@ -24,10 +24,8 @@
 #define __SOLDEVICE__
 
 //QT
-#include <QWidget>
 #include <QTreeWidgetItem>
 #include <QTreeWidget>
-#include <QMessageBox>
 
 //Solid
 #include <solid/device.h>

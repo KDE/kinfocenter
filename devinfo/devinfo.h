@@ -33,9 +33,6 @@
 #include <kpluginloader.h>
 
 //QT
-#include <QLayout>
-#include <QSplitter>
-#include <QStatusBar>
 
 //Local
 #include "devicelisting.h"

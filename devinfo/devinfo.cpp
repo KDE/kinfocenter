@@ -21,6 +21,7 @@
  */
 
 #include "devinfo.h"
+#include <QSplitter>
 
 K_PLUGIN_FACTORY(devInfoModuleFactory, registerPlugin<DevInfoPlugin>();)
 K_EXPORT_PLUGIN(devInfoModuleFactory("kcmdevinfo"))
