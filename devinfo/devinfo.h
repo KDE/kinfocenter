@@ -41,8 +41,6 @@
 #include "devicelisting.h"
 #include "infopanel.h"
 
-class InfoPanel;
-class DeviceListing;
 
 class DevInfoPlugin : public KCModule
 {
