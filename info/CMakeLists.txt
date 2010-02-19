@@ -14,7 +14,6 @@ kde4_add_plugin(kcm_info ${kcm_info_PART_SRCS})
 
 target_link_libraries(kcm_info  ${KDE4_KDEUI_LIBS} ${QT_QTGUI_LIBRARY} ${X11_X11_LIB})
 
-
 install(TARGETS kcm_info  DESTINATION ${PLUGIN_INSTALL_DIR} )
 
 
@@ -25,7 +24,6 @@ install(
 	dma.desktop 
 	interrupts.desktop 
 	ioports.desktop 
-	sound.desktop 
 	scsi.desktop 
 	xserver.desktop  
 	DESTINATION  ${SERVICES_INSTALL_DIR} 
