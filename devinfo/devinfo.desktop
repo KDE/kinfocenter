@@ -1,10 +1,10 @@
 [Desktop Entry]
-Exec=kcmshell4 kcm_devinfo
+Exec=kcmshell4 devinfo
 Icon=device-notifier
 Type=Service
 X-KDE-ServiceTypes=KCModule
 
-X-KDE-Library=kcm_devinfo
+X-KDE-Library=devinfo
 X-KDE-ParentApp=kinfocenter
 
 Name=Device Information
@@ -46,5 +46,5 @@ Comment[uk]=Інформація про пристрої
 Comment[x-test]=xxDevice Informationxx
 
 X-KDE-Keywords=device,devices
-X-DocPath=kcontrol/kcm_devinfo/index.html
+X-DocPath=kinfocenter/devinfo/index.html
 Categories=Qt;KDE;X-KDE-information;
