@@ -1,2 +1,2 @@
 #!/bin/sh
-$XGETTEXT *.cpp -o $podir/kcmdevinfo.pot
+$XGETTEXT *.h *.cpp -o $podir/kcmdevinfo.pot
