@@ -81,6 +81,8 @@ Name[zh_TW]=裝置資訊
 
 Comment=Device Information
 Comment[de]=Geräteinformationen
+Comment[nb]=Systeminformasjon
+Comment[nn]=Systeminformasjon
 Comment[pt]=Informação do Dispositivo
 Comment[pt_BR]=Informações do dispositivo
 Comment[sv]=Enhetsinformation
