@@ -1,0 +1,18 @@
+[Desktop Entry]
+Exec=kcmshell4 devinfo
+Icon=device-notifier
+Type=Service
+X-KDE-ServiceTypes=KCModule
+X-KDE-System-Settings-Parent-Category=Device Information
+
+X-KDE-Weight=2
+X-KDE-Library=devinfo
+X-KDE-ParentApp=kinfocenter
+
+Name=Device Viewer
+
+Comment=Solid Device Viewer
+
+X-KDE-Keywords=device,devices
+X-DocPath=kinfocenter/devinfo/index.html
+Categories=Qt;KDE;X-KDE-information;
