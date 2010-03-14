@@ -1,6 +1,6 @@
 
 /*
- *  main.h
+ *  sidepanel.h
  *
  *  Copyright (C) 2010 David Hubner <hubnerd@ntlworld.com>
  *
@@ -20,28 +20,30 @@
  *
  */
 
-#ifndef __MAIN__
-#define __MAIN__
-
-//KDE
-#include <kapplication.h>
-#include <kaboutdata.h>
-#include <kcmdlineargs.h>
+#ifndef __SIDEPANEL__
+#define __SIDEPANEL__
 
 //Local
-#include "infocenter.h"
+#include "kdc.h"
 
-class KInfoCenter;
+//KDE
+#include <KLocale>
 
-class KicApp : public KApplication {
-  
-  Q_OBJECT
-  
+//QT
+#include <QTreeWidget>
+#include <QWidget>
+
+class SidePanel : public QTreeWidget, public Kdc
+{
   public:
-    KicApp();
+    SidePanel(QWidget *);
     
   private:
-    KInfoCenter *display;
+    void generateMenuContent();
+    KcmMenuItem *categoryTreeRoot(QString) const;
+    bool isCategory(QString) const;
+    
+    QHash<QString,KcmMenuItem *> *m_categories;
 };
 
-#endif // __MAIN__
+#endif //__SIDEPANEL__

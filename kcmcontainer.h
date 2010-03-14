@@ -1,6 +1,6 @@
 
 /*
- *  main.h
+ *  kcmcontainer.h
  *
  *  Copyright (C) 2010 David Hubner <hubnerd@ntlworld.com>
  *
@@ -20,28 +20,42 @@
  *
  */
 
-#ifndef __MAIN__
-#define __MAIN__
+#ifndef __KCMCONTAINER__
+#define __KCMCONTAINER__
 
 //KDE
-#include <kapplication.h>
-#include <kaboutdata.h>
-#include <kcmdlineargs.h>
+#include <KCModuleInfo>
+#include <KCModuleProxy>
+#include <KCModule>
+#include <KAboutData>
+#include <KIcon>
 
-//Local
-#include "infocenter.h"
+//QT
+#include <QWidget>
+#include <QVBoxLayout>
+#include <QLabel>
+#include <QScrollArea>
 
-class KInfoCenter;
-
-class KicApp : public KApplication {
-  
-  Q_OBJECT
-  
+class KcmContainer : public QScrollArea
+{  
   public:
-    KicApp();
+    KcmContainer(QWidget *);
+    ~KcmContainer();
+    
+    void setKcm(const KCModuleInfo &);
+    const QString helpPath() const;
+    const KCModule::Buttons buttons() const;
+    const KAboutData *kcmAboutData() const;
+    const QString exportText();
     
   private:
-    KInfoCenter *display;
+    void setContainerLayout();
+    void setKcmTitle(const KCModuleInfo &);
+    
+    QLabel *m_titleLabel;
+    QWidget *m_centerWidget;
+    KCModuleProxy *m_mod;
+    KCModuleInfo m_modInfo;
 };
 
-#endif // __MAIN__
+#endif //__KCMCONTAINER__

@@ -1,6 +1,6 @@
 
 /*
- *  main.h
+ *  kdc.cpp
  *
  *  Copyright (C) 2010 David Hubner <hubnerd@ntlworld.com>
  *
@@ -20,28 +20,41 @@
  *
  */
 
-#ifndef __MAIN__
-#define __MAIN__
+#include "kdc.h"
 
-//KDE
-#include <kapplication.h>
-#include <kaboutdata.h>
-#include <kcmdlineargs.h>
+Kdc::Kdc(QTreeWidget *parent) : m_treeWidget(parent)
+{ 
+  generateList();
+}
 
-//Local
-#include "infocenter.h"
+Kdc::~Kdc()
+{
+}
 
-class KInfoCenter;
-
-class KicApp : public KApplication {
+void Kdc::generateList() 
+{  
+  KService::List moduleList = KServiceTypeTrader::self()->query("KCModule", "[X-KDE-ParentApp] == 'kinfocenter'");
   
-  Q_OBJECT
-  
-  public:
-    KicApp();
-    
-  private:
-    KInfoCenter *display;
-};
+  // Check List
+  for (int i = 0; i < moduleList.size(); ++i) {
+    const KService::Ptr &module = moduleList.at(i);
+    if (module->isType(KST_KService) == false) 
+    {
+      moduleList.removeAt(i);
+    }
+  }
+  m_moduleList = moduleList;
+}
 
-#endif // __MAIN__
+KService::List *Kdc::kcmList()
+{  
+  if(isEmpty()) return NULL;
+  return &m_moduleList;
+}
+
+bool Kdc::isEmpty() const 
+{  
+  if(m_moduleList.isEmpty()) return true;
+  return false;
+}
+

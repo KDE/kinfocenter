@@ -1,6 +1,6 @@
 
 /*
- *  main.h
+ *  kdc.h
  *
  *  Copyright (C) 2010 David Hubner <hubnerd@ntlworld.com>
  *
@@ -20,28 +20,35 @@
  *
  */
 
-#ifndef __MAIN__
-#define __MAIN__
-
-//KDE
-#include <kapplication.h>
-#include <kaboutdata.h>
-#include <kcmdlineargs.h>
+#ifndef __KDC__
+#define __KDC__
 
 //Local
-#include "infocenter.h"
+#include "kcmmenuitem.h"
 
-class KInfoCenter;
+//KDE
+#include <KServiceTypeTrader>
 
-class KicApp : public KApplication {
-  
-  Q_OBJECT
-  
+//QT 
+#include <QHash>
+#include <KDebug>
+
+class KcmMenuItem;
+
+class Kdc {
+ 
   public:
-    KicApp();
-    
-  private:
-    KInfoCenter *display;
+    Kdc(QTreeWidget *);
+    ~Kdc();
+
+  protected:
+    KService::List *kcmList();
+    bool isEmpty() const;
+   
+  private:  
+    void generateList();
+    KService::List m_moduleList;
+    QTreeWidget *m_treeWidget;
 };
 
-#endif // __MAIN__
+#endif //__KDC__
