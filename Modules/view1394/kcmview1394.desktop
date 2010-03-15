@@ -5,6 +5,7 @@ X-KDE-ServiceTypes=KCModule
 X-DocPath=kinfocenter/view1394/index.html
 Exec=kcmshell4 kcmview1394
 
+X-KDE-KInfoCenter-Category=Device Information
 X-KDE-Library=kcm_view1394
 X-KDE-ParentApp=kinfocenter
 

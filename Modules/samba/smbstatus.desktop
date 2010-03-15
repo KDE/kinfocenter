@@ -5,6 +5,7 @@ Type=Service
 X-KDE-ServiceTypes=KCModule
 X-DocPath=kinfocenter/samba/index.html
 
+X-KDE-KInfoCenter-Category=Network Information
 X-KDE-Library=kcm_samba
 X-KDE-ParentApp=kinfocenter
 

@@ -36,11 +36,10 @@ SidePanel::SidePanel(QWidget *parent) : QTreeWidget(parent), Kdc(this)
 void SidePanel::generateMenuContent() 
 {  
   KService::List *moduleList = kcmList();
-  int rowCount = 100;
   
   foreach(const KService::Ptr &module, *moduleList) 
   {
-    QVariant prop = module->property("X-KDE-System-Settings-Parent-Category");
+    QVariant prop = module->property("X-KDE-KInfoCenter-Category");
     if(prop.isValid() || !prop.toString().isEmpty()) 
     {
       QString category = prop.toString();
@@ -51,8 +50,7 @@ void SidePanel::generateMenuContent()
       } 
       else
       {
-	KcmMenuItem *newCat = new KcmMenuItem(this,category,rowCount);
-	rowCount+=10;
+	KcmMenuItem *newCat = new KcmMenuItem(this,category);
 	m_categories->insert(category,newCat);
       
 	new KcmMenuItem(newCat,module);

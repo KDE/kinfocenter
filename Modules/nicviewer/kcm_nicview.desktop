@@ -4,7 +4,7 @@ Icon=device-notifier
 Type=Service
 X-KDE-ServiceTypes=KCModule
 
-X-KDE-System-Settings-Parent-Category=Network Information
+X-KDE-KInfoCenter-Category=Network Information
 X-KDE-Weight=1
 X-KDE-Library=kcm_nicview
 X-KDE-ParentApp=kinfocenter

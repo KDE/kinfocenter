@@ -5,6 +5,7 @@ X-KDE-ServiceTypes=KCModule
 X-DocPath=kinfocenter/opengl/index.html
 Icon=kcmopengl
 
+X-KDE-KInfoCenter-Category=Graphical Information
 X-KDE-Library=kcm_opengl
 X-KDE-ParentApp=kinfocenter
 

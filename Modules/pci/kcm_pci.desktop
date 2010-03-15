@@ -5,6 +5,7 @@ Type=Service
 X-KDE-ServiceTypes=KCModule
 X-DocPath=kinfocenter/pci/index.html
 
+X-KDE-KInfoCenter-Category=Device Information
 X-KDE-Library=kcm_pci
 X-KDE-ParentApp=kinfocenter
 

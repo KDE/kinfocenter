@@ -39,8 +39,8 @@ class KcmMenuItem : public QTreeWidgetItem
     KcmMenuItem(QTreeWidgetItem *, const KService::Ptr &);
     KcmMenuItem(QTreeWidget *, const KService::Ptr &);
     
-    KcmMenuItem(QTreeWidgetItem *, const QString, int);
-    KcmMenuItem(QTreeWidget *, const QString, int);
+    KcmMenuItem(QTreeWidgetItem *, const QString, int=100);
+    KcmMenuItem(QTreeWidget *, const QString, int=100);
     
     ~KcmMenuItem();
     

@@ -6,7 +6,7 @@ X-KDE-ServiceTypes=KCModule
 X-DocPath=kinfocenter/dma/index.html
 Categories=Qt;KDE;X-KDE-information;
 
-
+X-KDE-KInfoCenter-Category=Device Information
 X-KDE-Library=kcm_info
 X-KDE-PluginKeyword=dma
 X-KDE-ParentApp=kinfocenter
