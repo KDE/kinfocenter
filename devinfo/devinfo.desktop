@@ -80,6 +80,7 @@ Name[zh_CN]=设备信息
 Name[zh_TW]=裝置資訊
 
 Comment=Device Information
+Comment[cs]=Informace o zařízení
 Comment[de]=Geräteinformationen
 Comment[el]=Πληροφορίες συσκευής
 Comment[en_GB]=Device Information
@@ -94,6 +95,7 @@ Comment[pt_BR]=Informações do dispositivo
 Comment[sv]=Enhetsinformation
 Comment[th]=รายละเอียดอุปกรณ์
 Comment[uk]=Інформація про пристрої
+Comment[x-test]=xxDevice Informationxx
 
 X-KDE-Keywords=device,devices
 X-DocPath=kinfocenter/devinfo/index.html

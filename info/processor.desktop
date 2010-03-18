@@ -95,6 +95,7 @@ Name[uz@cyrillic]=Процессор
 Name[vi]=Bộ xử lý
 Name[wa]=Processeu
 Name[xh]=Umqhubekekisi phambili
+Name[x-test]=xxProcessorxx
 Name[zh_CN]=处理器
 Name[zh_TW]=處理器
 
@@ -182,6 +183,7 @@ Comment[uz@cyrillic]=Процессор ҳақида маълумот
 Comment[vi]=Thông tin về bộ vi xử lý
 Comment[wa]=Infôrmåcion sol processeu
 Comment[xh]=Inkcukacha yenkcukacha
+Comment[x-test]=xxProcessor informationxx
 Comment[zh_CN]=处理器信息
 Comment[zh_TW]=處理器資訊
 
