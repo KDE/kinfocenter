@@ -11,11 +11,13 @@ Name[nb]=KInfoCenter
 Name[nn]=KInfoCenter
 Name[pt]=KInfoCenter
 Name[uk]=KInfoCenter
+Name[x-test]=xxKInfoCenterxx
 GenericName=Info Center
 GenericName[nb]=KDEs informasjonssenter
 GenericName[nn]=KDEs informasjonssenter
 GenericName[pt]=Centro de Informações
 GenericName[uk]=Центр інформації
+GenericName[x-test]=xxInfo Centerxx
 
 X-DBUS-StartupType=Unique
 Categories=Qt;KDE;System;

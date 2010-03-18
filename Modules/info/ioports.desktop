@@ -16,12 +16,14 @@ Name[nb]=IO-porter
 Name[nn]=IU-portar
 Name[pt]=Portos de E/S
 Name[uk]=Порти В/В
+Name[x-test]=xxIO-Portsxx
 
 Comment=IO-port information
 Comment[nb]=IO-portinformasjon
 Comment[nn]=IU-port-informasjon
 Comment[pt]=Informação sobre os portos de E/S
 Comment[uk]=Інформація щодо портів вводу/виводу
+Comment[x-test]=xxIO-port informationxx
 
 X-KDE-Keywords=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Information
 X-KDE-Keywords[af]=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Informasie

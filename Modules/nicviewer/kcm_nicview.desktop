@@ -14,10 +14,12 @@ Name[nb]=Nettverksgrensesnitt
 Name[nn]=Nettverksgrensesnitt
 Name[pt]=Interfaces de Rede
 Name[uk]=Мережеві інтерфейси
+Name[x-test]=xxNetwork Interfacesxx
 
 Comment=Network Interface Summary
 Comment[pt]=Resumo da Interface de Rede
 Comment[uk]=Резюме щодо інтерфейсів мережі
+Comment[x-test]=xxNetwork Interface Summaryxx
 
 X-KDE-Keywords=device,devices
 X-DocPath=kinfocenter/devinfo/index.html

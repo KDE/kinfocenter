@@ -15,12 +15,14 @@ Name[nb]=SCSI
 Name[nn]=SCSI
 Name[pt]=SCSI
 Name[uk]=SCSI
+Name[x-test]=xxSCSIxx
 
 Comment=SCSI information
 Comment[nb]=SCSI-informasjon
 Comment[nn]=SCSI-informasjon
 Comment[pt]=Informação sobre o SCSI
 Comment[uk]=Інформація щодо SCSI
+Comment[x-test]=xxSCSI informationxx
 
 X-KDE-Keywords=SCSI,SCSI-Bus,System Information
 X-KDE-Keywords[af]=SCSI,SCSI-Bus,System Informasie

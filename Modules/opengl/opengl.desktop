@@ -14,12 +14,14 @@ Name[nb]=OpenGL
 Name[nn]=OpenGL
 Name[pt]=OpenGL
 Name[uk]=OpenGL
+Name[x-test]=xxOpenGLxx
 
 Comment=OpenGL information
 Comment[nb]=OpenGL-informasjon
 Comment[nn]=OpenGL-informasjon
 Comment[pt]=Informação sobre OpenGL
 Comment[uk]=Інформація про OpenGL
+Comment[x-test]=xxOpenGL informationxx
 
 X-KDE-Keywords=OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display
 X-KDE-Keywords[be]=Відэакарта,паскарэнне,графіка,сервер X,дысплей,экран,OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display

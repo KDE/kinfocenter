@@ -14,12 +14,14 @@ Name[nb]=USB-enheter
 Name[nn]=USB-einingar
 Name[pt]=Dispositivos USB
 Name[uk]=Пристрої USB
+Name[x-test]=xxUSB Devicesxx
 
 Comment=USB devices attached to this computer
 Comment[nb]=Vis USB-enheter som er koblet til denne maskinen
 Comment[nn]=USB-einingar kopla til datamaskina
 Comment[pt]=Ver os dispositivos USB ligados a este computador
 Comment[uk]=Пристрої USB, під'єднані до комп'ютера
+Comment[x-test]=xxUSB devices attached to this computerxx
 
 X-KDE-Keywords=USB,devices,viewer,control
 X-KDE-Keywords[be]=Прылады,Прагляд,Праглядальнік,Кіраванне,USB,devices,viewer,control

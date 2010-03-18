@@ -13,10 +13,12 @@ Name[nb]=Sammendrag
 Name[nn]=Samandrag
 Name[pt]=Resumo
 Name[uk]=Резюме
+Name[x-test]=xxSummaryxx
 
 Comment=Hardware Information Summary
 Comment[pt]=Resumo da Informação de 'Hardware'
 Comment[uk]=Резюме відомостей щодо обладнання
+Comment[x-test]=xxHardware Information Summaryxx
 
 X-KDE-Keywords=device,devices
 X-DocPath=kinfocenter/devinfo/index.html
