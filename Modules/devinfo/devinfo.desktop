@@ -11,11 +11,13 @@ X-KDE-ParentApp=kinfocenter
 
 Name=Device Viewer
 Name[pt]=Visualizador de Dispositivos
+Name[sv]=Enhetsvisning
 Name[uk]=Переглядач пристроїв
 Name[x-test]=xxDevice Viewerxx
 
 Comment=Device Viewer
 Comment[pt]=Visualizador de Dispositivos
+Comment[sv]=Enhetsvisning
 Comment[uk]=Переглядач пристроїв
 Comment[x-test]=xxDevice Viewerxx
 

@@ -13,11 +13,13 @@ Name=Network Interfaces
 Name[nb]=Nettverksgrensesnitt
 Name[nn]=Nettverksgrensesnitt
 Name[pt]=Interfaces de Rede
+Name[sv]=Nätverksgränssnitt
 Name[uk]=Мережеві інтерфейси
 Name[x-test]=xxNetwork Interfacesxx
 
 Comment=Network Interface Summary
 Comment[pt]=Resumo da Interface de Rede
+Comment[sv]=Översikt av nätverksgränssnitt
 Comment[uk]=Резюме щодо інтерфейсів мережі
 Comment[x-test]=xxNetwork Interface Summaryxx
 

@@ -14,6 +14,7 @@ Name=SCSI
 Name[nb]=SCSI
 Name[nn]=SCSI
 Name[pt]=SCSI
+Name[sv]=SCSI
 Name[uk]=SCSI
 Name[x-test]=xxSCSIxx
 
@@ -21,6 +22,7 @@ Comment=SCSI information
 Comment[nb]=SCSI-informasjon
 Comment[nn]=SCSI-informasjon
 Comment[pt]=Informação sobre o SCSI
+Comment[sv]=SCSI-information
 Comment[uk]=Інформація щодо SCSI
 Comment[x-test]=xxSCSI informationxx
 

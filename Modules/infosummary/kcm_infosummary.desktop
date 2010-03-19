@@ -12,11 +12,13 @@ Name=Summary
 Name[nb]=Sammendrag
 Name[nn]=Samandrag
 Name[pt]=Resumo
+Name[sv]=Översikt
 Name[uk]=Резюме
 Name[x-test]=xxSummaryxx
 
 Comment=Hardware Information Summary
 Comment[pt]=Resumo da Informação de 'Hardware'
+Comment[sv]=Översikt av hårdvaruinformation
 Comment[uk]=Резюме відомостей щодо обладнання
 Comment[x-test]=xxHardware Information Summaryxx
 

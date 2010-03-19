@@ -14,6 +14,7 @@ Name=Processor
 Name[nb]=Prosessor
 Name[nn]=Prosessor
 Name[pt]=Processador
+Name[sv]=Processor
 Name[uk]=Процесор
 Name[x-test]=xxProcessorxx
 
@@ -21,6 +22,7 @@ Comment=Processor information
 Comment[nb]=Prosessorinformasjon
 Comment[nn]=Prosessorinformasjon
 Comment[pt]=Informação do processador
+Comment[sv]=Processorinformation
 Comment[uk]=Інформація щодо процесора
 Comment[x-test]=xxProcessor informationxx
 

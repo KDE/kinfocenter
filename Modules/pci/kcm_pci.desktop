@@ -13,6 +13,7 @@ Name=PCI
 Name[nb]=PCI
 Name[nn]=PCI
 Name[pt]=PCI
+Name[sv]=PCI
 Name[uk]=Шина PCI
 Name[x-test]=xxPCIxx
 
@@ -20,6 +21,7 @@ Comment=PCI information
 Comment[nb]=PCI-informasjon
 Comment[nn]=PCI-informasjon
 Comment[pt]=Informação sobre o PCI
+Comment[sv]=PCI-information
 Comment[uk]=Інформація щодо шини PCI
 Comment[x-test]=xxPCI informationxx
 

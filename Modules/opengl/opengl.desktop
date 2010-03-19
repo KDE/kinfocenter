@@ -13,6 +13,7 @@ Name=OpenGL
 Name[nb]=OpenGL
 Name[nn]=OpenGL
 Name[pt]=OpenGL
+Name[sv]=OpenGL
 Name[uk]=OpenGL
 Name[x-test]=xxOpenGLxx
 
@@ -20,6 +21,7 @@ Comment=OpenGL information
 Comment[nb]=OpenGL-informasjon
 Comment[nn]=OpenGL-informasjon
 Comment[pt]=Informação sobre OpenGL
+Comment[sv]=Information om OpenGL
 Comment[uk]=Інформація про OpenGL
 Comment[x-test]=xxOpenGL informationxx
 

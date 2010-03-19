@@ -15,6 +15,7 @@ Name=IO-Ports
 Name[nb]=IO-porter
 Name[nn]=IU-portar
 Name[pt]=Portos de E/S
+Name[sv]=I/O-portar
 Name[uk]=Порти В/В
 Name[x-test]=xxIO-Portsxx
 
@@ -22,6 +23,7 @@ Comment=IO-port information
 Comment[nb]=IO-portinformasjon
 Comment[nn]=IU-port-informasjon
 Comment[pt]=Informação sobre os portos de E/S
+Comment[sv]=Information om I/O-portar
 Comment[uk]=Інформація щодо портів вводу/виводу
 Comment[x-test]=xxIO-port informationxx
 
