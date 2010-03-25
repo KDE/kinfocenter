@@ -12,6 +12,7 @@ X-KDE-PluginKeyword=irq
 X-KDE-ParentApp=kinfocenter
 
 Name=Interrupts
+Name[es]=Interrupciones
 Name[nb]=Avbruddslinjer
 Name[nn]=Avbrot
 Name[pt]=Interrupções
@@ -20,6 +21,7 @@ Name[uk]=Переривання
 Name[x-test]=xxInterruptsxx
 
 Comment=Interrupt information
+Comment[es]=Información de interrupciones
 Comment[nb]=Avbruddslinjeinformasjon
 Comment[nn]=Avbrotsinformasjon
 Comment[pt]=Informação das interrupções

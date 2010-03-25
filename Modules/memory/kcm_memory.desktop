@@ -10,6 +10,7 @@ X-KDE-Library=kcm_memory
 X-KDE-ParentApp=kinfocenter
 
 Name=Memory
+Name[es]=Memoria
 Name[nb]=Minne
 Name[nn]=Minne
 Name[pt]=Memória
@@ -18,6 +19,7 @@ Name[uk]=Пам'ять
 Name[x-test]=xxMemoryxx
 
 Comment=Memory information
+Comment[es]=Información de memoria
 Comment[nb]=Minneinformasjon
 Comment[nn]=Minneinformasjon
 Comment[pt]=Informações sobre a memória
