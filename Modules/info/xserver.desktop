@@ -11,6 +11,7 @@ X-KDE-PluginKeyword=xserver
 X-KDE-ParentApp=kinfocenter
 
 Name=X-Server
+Name[en_GB]=X-Server
 Name[es]=Servidor X
 Name[nb]=X-tjener
 Name[nn]=X-tenar
@@ -20,6 +21,7 @@ Name[uk]=Сервер X
 Name[x-test]=xxX-Serverxx
 
 Comment=X-Server information
+Comment[en_GB]=X-Server information
 Comment[es]=Información del servidor X
 Comment[nb]=X-tjenerinformasjon
 Comment[nn]=X-tenarinformasjon

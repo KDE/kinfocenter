@@ -10,6 +10,7 @@ X-KDE-Library=kcm_usb
 X-KDE-ParentApp=kinfocenter
 
 Name=USB Devices
+Name[en_GB]=USB Devices
 Name[es]=Dispositivos USB
 Name[nb]=USB-enheter
 Name[nn]=USB-einingar
@@ -19,6 +20,7 @@ Name[uk]=Пристрої USB
 Name[x-test]=xxUSB Devicesxx
 
 Comment=USB devices attached to this computer
+Comment[en_GB]=USB devices attached to this computer
 Comment[es]=Dispositivos USB conectados a este equipo
 Comment[nb]=Vis USB-enheter som er koblet til denne maskinen
 Comment[nn]=USB-einingar kopla til datamaskina

@@ -10,6 +10,7 @@ X-KDE-Library=devinfo
 X-KDE-ParentApp=kinfocenter
 
 Name=Device Viewer
+Name[en_GB]=Device Viewer
 Name[es]=Visor de dispositivos
 Name[pt]=Visualizador de Dispositivos
 Name[sv]=Enhetsvisning
@@ -17,6 +18,7 @@ Name[uk]=Переглядач пристроїв
 Name[x-test]=xxDevice Viewerxx
 
 Comment=Device Viewer
+Comment[en_GB]=Device Viewer
 Comment[es]=Visor de dispositivos
 Comment[pt]=Visualizador de Dispositivos
 Comment[sv]=Enhetsvisning

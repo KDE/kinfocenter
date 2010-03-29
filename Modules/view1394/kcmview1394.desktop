@@ -10,6 +10,7 @@ X-KDE-Library=kcm_view1394
 X-KDE-ParentApp=kinfocenter
 
 Name=IEEE 1394 Devices
+Name[en_GB]=IEEE 1394 Devices
 Name[es]=Dispositivos IEEE 1394
 Name[nb]=IEEE 1394-enheter
 Name[nn]=IEEE 1394-einingar
@@ -19,6 +20,7 @@ Name[uk]=Пристрої IEEE 1394
 Name[x-test]=xxIEEE 1394 Devicesxx
 
 Comment=Attached IEEE 1394 devices
+Comment[en_GB]=Attached IEEE 1394 devices
 Comment[es]=Dispositivos IEEE 1394 conectados
 Comment[nb]=Tilkoblede IEEE 1394-enheter
 Comment[nn]=Tilkopla IEEE 1394-einingar
