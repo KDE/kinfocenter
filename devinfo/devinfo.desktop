@@ -99,6 +99,7 @@ Comment[sv]=Enhetsinformation
 Comment[th]=รายละเอียดอุปกรณ์
 Comment[uk]=Інформація про пристрої
 Comment[x-test]=xxDevice Informationxx
+Comment[zh_TW]=裝置資訊
 
 X-KDE-Keywords=device,devices
 X-DocPath=kinfocenter/devinfo/index.html
