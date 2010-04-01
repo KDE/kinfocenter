@@ -91,6 +91,7 @@ const KAboutData *KcmContainer::kcmAboutData() const
 
 const QString KcmContainer::exportText()
 {
-  return m_mod->realModule()->exportText(); 
+  return "";
+  //return m_mod->realModule()->exportText(); 
 }
   

@@ -26,6 +26,7 @@
 //Local
 #include "sidepanel.h"
 #include "kcmcontainer.h"
+#include "infokcmmodel.h"
 
 //KDE
 #include <KLocale>
@@ -66,7 +67,7 @@ class KInfoCenter : public KXmlGuiWindow
     ~KInfoCenter();
 
   public slots:
-    void itemClickedSlot(QTreeWidgetItem *);
+    //void itemClickedSlot(QTreeWidgetItem *);
     void helpClickedSlot();
     void exportClickedSlot();
     void aboutKcmSlot();
@@ -78,8 +79,8 @@ class KInfoCenter : public KXmlGuiWindow
     void closeDimentions(const QSize);
     void startupDimentions();
     void setButtons(const KCModule::Buttons buttons);
-    bool chooseFirstItem(); 
-    void setKcm(const KcmMenuItem *kcmItem);
+  //  bool chooseFirstItem(); 
+  //  void setKcm(const KcmMenuItem *kcmItem);
     void resetCondition();
 
     KcmContainer *m_contain;

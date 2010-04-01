@@ -23,27 +23,25 @@
 #ifndef __SIDEPANEL__
 #define __SIDEPANEL__
 
-//Local
-#include "kdc.h"
-
 //KDE
 #include <KLocale>
 
 //QT
-#include <QTreeWidget>
+#include <QTreeView>
 #include <QWidget>
 
-class SidePanel : public QTreeWidget, public Kdc
+//Local
+
+#include "infokcmmodel.h"
+
+class SidePanel : public QTreeView
 {
   public:
     SidePanel(QWidget *);
+    ~SidePanel();
     
   private:
-    void generateMenuContent();
-    KcmMenuItem *categoryTreeRoot(QString) const;
-    bool isCategory(QString) const;
-    
-    QHash<QString,KcmMenuItem *> *m_categories;
+    InfoKcmModel *m_model;
 };
 
 #endif //__SIDEPANEL__

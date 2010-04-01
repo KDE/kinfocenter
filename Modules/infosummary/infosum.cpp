@@ -119,7 +119,7 @@ void InfoSumPlugin::createHdBox()
     
     stoWidget->setLabelTitles(i18n("Drive Title"),i18n("Storage Size"),i18n("Bus"));
     stoWidget->setLabelOne(dev.product());
-    stoWidget->setLabelTwo(KGlobal::locale()->formatByteSize(stodev->size()));
+    //stoWidget->setLabelTwo(KGlobal::locale()->formatByteSize(stodev->size()));
     
     QString bus;
     switch(stodev->bus())

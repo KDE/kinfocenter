@@ -43,24 +43,26 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
   initMenuBar();
   
   //TreeWidget
-  connect(m_sideMenu,SIGNAL(itemClicked(QTreeWidgetItem *,int)),this,SLOT(itemClickedSlot(QTreeWidgetItem *)));
+ // connect(m_sideMenu,SIGNAL(itemClicked(QTreeWidgetItem *,int)),this,SLOT(itemClickedSlot(QTreeWidgetItem *)));
   
   //Buttons
   connect(m_helpButton,SIGNAL(clicked(bool)),this,SLOT(helpClickedSlot()));
   connect(m_exportButton,SIGNAL(clicked(bool)),this,SLOT(exportClickedSlot()));
   
+  /*
   if(!chooseFirstItem()) 
   {
     // KMessageBox Error
     kError() << "No KCM's" << endl;
   }
+  */
   show();
 }
 
 KInfoCenter::~KInfoCenter()
 { 
   //TreeWidget
-  disconnect(m_sideMenu,SIGNAL(itemClicked(QTreeWidgetItem *,int)),this,SLOT(itemClickedSlot(QTreeWidgetItem *)));
+  //disconnect(m_sideMenu,SIGNAL(itemClicked(QTreeWidgetItem *,int)),this,SLOT(itemClickedSlot(QTreeWidgetItem *)));
   
   //Buttons
   disconnect(m_helpButton,SIGNAL(clicked(bool)),this,SLOT(helpClickedSlot()));
@@ -68,7 +70,7 @@ KInfoCenter::~KInfoCenter()
   
   closeDimentions(this->size());
 }
-
+/*
 bool KInfoCenter::chooseFirstItem() 
 {
   QTreeWidgetItemIterator treeWidget(m_sideMenu);
@@ -85,7 +87,7 @@ bool KInfoCenter::chooseFirstItem()
   } 
   return false;
 }
-
+*/
 void KInfoCenter::initMenuBar()
 { 
   KStandardAction::quit(this, SLOT(close()), actionCollection());
@@ -168,6 +170,7 @@ void KInfoCenter::closeDimentions(const QSize winSizes)
   config.sync();
 }
 
+/*
 void KInfoCenter::itemClickedSlot(QTreeWidgetItem *item) 
 { 
   resetCondition();
@@ -177,7 +180,8 @@ void KInfoCenter::itemClickedSlot(QTreeWidgetItem *item)
 
   setKcm(kcmItem);
 }
-
+*/
+/*
 void KInfoCenter::setKcm(const KcmMenuItem *kcmItem) 
 { 
   m_contain->setKcm(kcmItem->kcm());
@@ -185,11 +189,11 @@ void KInfoCenter::setKcm(const KcmMenuItem *kcmItem)
   setButtons(m_contain->buttons());
   m_aboutKcm->setEnabled(true);
 }
-
+*/
 void KInfoCenter::setButtons(const KCModule::Buttons buttons) 
 {    
   if (buttons & KCModule::Help) m_helpButton->setEnabled(true);
-  if (buttons & KCModule::Export) m_exportButton->setEnabled(true);
+  //if (buttons & KCModule::Export) m_exportButton->setEnabled(true);
 }
 
 void KInfoCenter::resetCondition()

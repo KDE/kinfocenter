@@ -22,56 +22,14 @@
 
 #include "sidepanel.h"
 
-SidePanel::SidePanel(QWidget *parent) : QTreeWidget(parent), Kdc(this)
+SidePanel::SidePanel(QWidget *parent) : QTreeView(parent)
 { 
-  setHeaderLabels(QStringList(i18nc("List header topic","Information Modules"))); 
-  
-  m_categories = new QHash<QString,KcmMenuItem *>();
-  
-  generateMenuContent();
-  setSortingEnabled(true);
-  expandAll();
+  m_model = new InfoKcmModel(this);
+  setModel(m_model);
 }
 
-void SidePanel::generateMenuContent() 
-{  
-  KService::List *moduleList = kcmList();
-  
-  foreach(const KService::Ptr &module, *moduleList) 
-  {
-    QVariant prop = module->property("X-KDE-KInfoCenter-Category");
-    if(prop.isValid() || !prop.toString().isEmpty()) 
-    {
-      QString category = prop.toString();
-      if(isCategory(category) == true) 
-      {
-	KcmMenuItem *root = categoryTreeRoot(category);
-	new KcmMenuItem(root,module);    
-      } 
-      else
-      {
-	KcmMenuItem *newCat = new KcmMenuItem(this,category);
-	m_categories->insert(category,newCat);
-      
-	new KcmMenuItem(newCat,module);
-      }
-    }
-    else 
-    {
-     new KcmMenuItem(this,module);
-    }
-  } 
+SidePanel::~SidePanel()
+{
+  delete m_model;
 }
 
-bool SidePanel::isCategory(QString cat) const 
-{ 
-  if(m_categories->contains(cat)) return true;
-  return false;
-}
-
-KcmMenuItem *SidePanel::categoryTreeRoot(QString key) const 
-{  
-  if(!isCategory(key)) return NULL;
-  return m_categories->value(key);
-}
-  
