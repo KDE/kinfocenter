@@ -10,6 +10,7 @@ X-KDE-Library=kcm_samba
 X-KDE-ParentApp=kinfocenter
 
 Name=Samba Status
+Name[cs]=Stav Samby
 Name[en_GB]=Samba Status
 Name[es]=Estado de Samba
 Name[nb]=Samba-status

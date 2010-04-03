@@ -12,6 +12,7 @@ X-KDE-PluginKeyword=dma
 X-KDE-ParentApp=kinfocenter
 
 Name=DMA-Channels
+Name[cs]=DMA kanály
 Name[en_GB]=DMA-Channels
 Name[es]=Canales DMA
 Name[nb]=DMA-kanaler

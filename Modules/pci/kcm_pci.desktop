@@ -10,6 +10,7 @@ X-KDE-Library=kcm_pci
 X-KDE-ParentApp=kinfocenter
 
 Name=PCI
+Name[cs]=PCI sběrnice
 Name[en_GB]=PCI
 Name[es]=PCI
 Name[nb]=PCI

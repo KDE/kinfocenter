@@ -9,6 +9,7 @@ X-KDE-Library=kcm_infosummary
 X-KDE-ParentApp=kinfocenter
 
 Name=Summary
+Name[cs]=Souhrn
 Name[en_GB]=Summary
 Name[es]=Resumen
 Name[nb]=Sammendrag
