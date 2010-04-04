@@ -30,6 +30,7 @@ SidePanel::SidePanel(QWidget *parent) : QTreeView(parent)
   m_proxyModel = new InfoKcmProxyModel(this);
   m_proxyModel->setSourceModel(m_model);
   
+  setMouseTracking( true );
   setModel(m_proxyModel);
   connect(this,SIGNAL(clicked(const QModelIndex &)),this,SLOT(clickedSlot(const QModelIndex &)));
 }
@@ -57,4 +58,9 @@ void SidePanel::changeToRootSelection()
   
   setCurrentIndex(rootIndex);
   emit clickedSlot(rootIndex);
+}
+
+QModelIndex SidePanel::mapProxySource(QModelIndex index)
+{
+  return m_proxyModel->mapToSource(index);
 }

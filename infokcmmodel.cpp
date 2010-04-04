@@ -148,6 +148,9 @@ QVariant InfoKcmModel::data(const QModelIndex &index, int role) const
     case Qt::DecorationRole:
       return item->icon();
       break;
+    case Qt::WhatsThisRole:
+      return item->whatsThis();
+      break;
     default:
       return QVariant();
   }

@@ -19,7 +19,8 @@
 
 #include "tooltipmanager.h"
 
-#include "MenuItem.h"
+#include "kcmtreeitem.h"
+#include "sidepanel.h"
 
 #include "ktooltip.h"
 
@@ -220,30 +221,20 @@ QWidget * ToolTipManager::createTipContent( QModelIndex item )
 
 QLayout * ToolTipManager::generateToolTipLine( QModelIndex * item, QWidget * toolTip, QSize iconSize, bool comment )
 {
-    // Get MenuItem
-    MenuItem * menuItem = d->view->model()->data( *item, Qt::UserRole ).value<MenuItem*>();
-
-    QString text = menuItem->name(); 
+    SidePanel *sidePanel = static_cast<SidePanel*>(d->view);
+    KcmTreeItem *menuItem = static_cast<KcmTreeItem*>( sidePanel->mapProxySource(*item).internalPointer() );
+    
+    QString text = menuItem->data(); 
     if ( comment ) {
-        text = QString( "<b>%1</b>" ).arg( menuItem->name() );
+        text = QString( "<b>%1</b>" ).arg( menuItem->data() );
     }
 
-    // Generate text
-    if ( comment ) {
-        text += "<br />";
-        if ( !menuItem->service()->comment().isEmpty() ) {
-            text += menuItem->service()->comment();
-        } else {
-            int childCount = d->view->model()->rowCount( *item );
-            text += i18np( "<i>Contains 1 item</i>", "<i>Contains %1 items</i>", childCount );
-        }
-    }
     QLabel * textLabel = new QLabel( toolTip );
     textLabel->setForegroundRole(QPalette::ToolTipText);
     textLabel->setText( text );
     
     // Get icon
-    KIcon icon( menuItem->service()->icon() );
+    KIcon icon( menuItem->icon() );
     QLabel * iconLabel = new QLabel( toolTip );
     iconLabel->setPixmap( icon.pixmap(iconSize) );
     iconLabel->setMaximumSize( iconSize );

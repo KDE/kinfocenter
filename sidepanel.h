@@ -44,6 +44,7 @@ class SidePanel : public QTreeView
     ~SidePanel();
     
     void changeToRootSelection();
+    QModelIndex mapProxySource(QModelIndex);
     
   signals:
     void clicked(const KcmTreeItem *);

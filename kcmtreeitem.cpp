@@ -155,3 +155,9 @@ QIcon KcmTreeItem::icon() const
     return KIcon(m_moduleInfo->icon());
   }
 }
+
+QString KcmTreeItem::whatsThis() const
+{
+  if(isValid() == false) return QString();
+  return m_moduleInfo->comment();
+}

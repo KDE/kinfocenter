@@ -60,6 +60,8 @@ class KcmTreeItem
     int weight();
     QIcon icon() const;
     
+    QString whatsThis() const;
+    
   private:
      QList<KcmTreeItem *> m_children;
      KcmTreeItem *m_parent;

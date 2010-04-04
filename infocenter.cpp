@@ -50,6 +50,7 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
   connect(m_exportButton,SIGNAL(clicked(bool)),this,SLOT(exportClickedSlot()));
   
   m_sideMenu->changeToRootSelection();
+  new ToolTipManager(m_sideMenu);
   show();
 }
 
