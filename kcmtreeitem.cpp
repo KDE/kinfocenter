@@ -1,4 +1,25 @@
 
+/*
+ *  kcmtreeitem.h
+ *
+ *  Copyright (C) 2010 David Hubner <hubnerd@ntlworld.com>
+ *
+ *  This program is free software; you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program; if not, write to the Free Software
+ *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *
+ */
+
 #include "kcmtreeitem.h"
 
 KcmTreeItem::KcmTreeItem(const KService::Ptr module, KcmTreeItem *parent) : m_parent(parent), m_module(module), 
@@ -36,7 +57,6 @@ int KcmTreeItem::childCount()
 int KcmTreeItem::columnCount()
 {
   // Hard coded, menu should never have more than one column
-  
   return 1;
 }
 
@@ -77,13 +97,49 @@ QString KcmTreeItem::data()
   }
 }
 
-bool KcmTreeItem::isValid()
+QString KcmTreeItem::category()
+{
+  if(isValid() == false)
+  {
+    return m_category;
+  }
+  return QString("");
+}
+
+bool KcmTreeItem::isValid() const 
 {
   return m_isValid;
 }
 
-bool KcmTreeItem::containsCategory(QString category) 
+KcmTreeItem *KcmTreeItem::containsCategory(QString category) 
 {
-  //TODO
-  return false;
+  foreach(KcmTreeItem *item, m_children)
+  {
+    if(item->isValid() == false)
+    {
+      if(item->category().contains(category))
+      {
+	  return item;
+      }
+      else
+      {
+	if(item->containsCategory(category))
+	{
+	  return item;
+	}
+      }
+    }
+  }
+  return NULL;
+}
+
+const KCModuleInfo KcmTreeItem::kcm() const 
+{
+  return *m_moduleInfo;
+}
+
+int KcmTreeItem::weight() const
+{
+  if(isValid() == false) return 100;
+  return m_moduleInfo->weight();
 }

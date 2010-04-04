@@ -43,26 +43,19 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
   initMenuBar();
   
   //TreeWidget
- // connect(m_sideMenu,SIGNAL(itemClicked(QTreeWidgetItem *,int)),this,SLOT(itemClickedSlot(QTreeWidgetItem *)));
+  connect(m_sideMenu,SIGNAL(clicked(const KcmTreeItem *)),this,SLOT(itemClickedSlot(const KcmTreeItem *)));
   
   //Buttons
   connect(m_helpButton,SIGNAL(clicked(bool)),this,SLOT(helpClickedSlot()));
   connect(m_exportButton,SIGNAL(clicked(bool)),this,SLOT(exportClickedSlot()));
   
-  /*
-  if(!chooseFirstItem()) 
-  {
-    // KMessageBox Error
-    kError() << "No KCM's" << endl;
-  }
-  */
   show();
 }
 
 KInfoCenter::~KInfoCenter()
 { 
   //TreeWidget
-  //disconnect(m_sideMenu,SIGNAL(itemClicked(QTreeWidgetItem *,int)),this,SLOT(itemClickedSlot(QTreeWidgetItem *)));
+  disconnect(m_sideMenu,SIGNAL(clicked(const KcmTreeItem *)),this,SLOT(itemClickedSlot(const KcmTreeItem *)));
   
   //Buttons
   disconnect(m_helpButton,SIGNAL(clicked(bool)),this,SLOT(helpClickedSlot()));
@@ -70,24 +63,7 @@ KInfoCenter::~KInfoCenter()
   
   closeDimentions(this->size());
 }
-/*
-bool KInfoCenter::chooseFirstItem() 
-{
-  QTreeWidgetItemIterator treeWidget(m_sideMenu);
-  while (*treeWidget) 
-  {
-    const KcmMenuItem *kcmItem = static_cast<const KcmMenuItem *>(*treeWidget); 
-    if(kcmItem->isValid())
-    {
-      m_sideMenu->setCurrentItem(*treeWidget);
-      setKcm(kcmItem);
-      return true;
-    }
-    ++treeWidget;
-  } 
-  return false;
-}
-*/
+
 void KInfoCenter::initMenuBar()
 { 
   KStandardAction::quit(this, SLOT(close()), actionCollection());
@@ -112,14 +88,14 @@ void KInfoCenter::createButtonBar()
   
   m_buttonBar->setFixedHeight(35);
   
-  m_helpButton = new QPushButton(i18nc("Help button","Help"));
+  m_helpButton = new QPushButton(i18nc("Help button label","Help"));
   m_helpButton->setEnabled(false);
   m_helpButton->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
   
   QWidget *m_blank = new QWidget();
   m_blank->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
   
-  m_exportButton = new QPushButton(i18nc("export button","Export"));
+  m_exportButton = new QPushButton(i18nc("export button label","Export"));
   m_exportButton->setEnabled(false);
   m_exportButton->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
   
@@ -170,26 +146,23 @@ void KInfoCenter::closeDimentions(const QSize winSizes)
   config.sync();
 }
 
-/*
-void KInfoCenter::itemClickedSlot(QTreeWidgetItem *item) 
+
+void KInfoCenter::itemClickedSlot(const KcmTreeItem *item) 
 { 
   resetCondition();
-  
-  KcmMenuItem *kcmItem = static_cast<KcmMenuItem *>(item);
-  if(kcmItem->isValid() == false) return;
+  if(item->isValid() == false) return;
 
-  setKcm(kcmItem);
+  setKcm(item);
 }
-*/
-/*
-void KInfoCenter::setKcm(const KcmMenuItem *kcmItem) 
+
+void KInfoCenter::setKcm(const KcmTreeItem *kcmItem) 
 { 
   m_contain->setKcm(kcmItem->kcm());
   
   setButtons(m_contain->buttons());
   m_aboutKcm->setEnabled(true);
 }
-*/
+
 void KInfoCenter::setButtons(const KCModule::Buttons buttons) 
 {    
   if (buttons & KCModule::Help) m_helpButton->setEnabled(true);

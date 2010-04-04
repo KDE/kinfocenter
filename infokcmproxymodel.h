@@ -1,6 +1,6 @@
 
 /*
- *  sidepanel.cpp
+ *  infokcmproxymodel.h
  *
  *  Copyright (C) 2010 David Hubner <hubnerd@ntlworld.com>
  *
@@ -20,32 +20,20 @@
  *
  */
 
-#include "sidepanel.h"
+#ifndef __INFOKCMPROXYMODEL__
+#define __INFOKCMPROXYMODEL__
 
-SidePanel::SidePanel(QWidget *parent) : QTreeView(parent)
-{ 
-  setSortingEnabled(true);
-  m_model = new InfoKcmModel(this);  
-  
-  m_proxyModel = new InfoKcmProxyModel(this);
-  m_proxyModel->setSourceModel(m_model);
-  
-  setModel(m_proxyModel);
-  connect(this,SIGNAL(clicked(const QModelIndex &)),this,SLOT(clickedSlot(const QModelIndex &)));
-}
+//QT
+#include <QSortFilterProxyModel>
 
-SidePanel::~SidePanel()
+//Local
+#include "kcmtreeitem.h"
+
+class InfoKcmProxyModel : public QSortFilterProxyModel
 {
-  disconnect(this,SIGNAL(clicked(const QModelIndex &)),this,SLOT(clickedSlot(const QModelIndex &)));
-  
-  delete m_proxyModel;
-  delete m_model;
-}
+  public:
+    InfoKcmProxyModel(QObject *parent);
+    bool lessThan(const QModelIndex &, const QModelIndex &) const;
+};
 
-void SidePanel::clickedSlot(const QModelIndex &index)
-{
-  if(index.isValid() == false) return;
-  
-  const KcmTreeItem *item = static_cast<KcmTreeItem*>(m_proxyModel->mapToSource(index).internalPointer());
-  emit clicked(item);
-}
+#endif // __INFOKCMPROXYMODEL__

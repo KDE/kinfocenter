@@ -31,17 +31,27 @@
 #include <QWidget>
 
 //Local
-
 #include "infokcmmodel.h"
+#include "infokcmproxymodel.h"
+
 
 class SidePanel : public QTreeView
 {
+  Q_OBJECT
+  
   public:
     SidePanel(QWidget *);
     ~SidePanel();
     
+  signals:
+    void clicked(const KcmTreeItem *);
+    
+  private slots:
+    void clickedSlot(const QModelIndex &index);  
+    
   private:
     InfoKcmModel *m_model;
+    InfoKcmProxyModel *m_proxyModel;
 };
 
 #endif //__SIDEPANEL__

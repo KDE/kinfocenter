@@ -23,11 +23,6 @@
 #ifndef INFOCENTER
 #define INFOCENTER
 
-//Local
-#include "sidepanel.h"
-#include "kcmcontainer.h"
-#include "infokcmmodel.h"
-
 //KDE
 #include <KLocale>
 #include <KIcon>
@@ -55,6 +50,12 @@
 #include <QObject>
 #include <QProcess>
 
+//Local
+#include "sidepanel.h"
+#include "kcmcontainer.h"
+#include "infokcmmodel.h"
+#include "kcmtreeitem.h"
+
 class KcmContainer;
 class SizePanel;
 
@@ -67,7 +68,7 @@ class KInfoCenter : public KXmlGuiWindow
     ~KInfoCenter();
 
   public slots:
-    //void itemClickedSlot(QTreeWidgetItem *);
+    void itemClickedSlot(const KcmTreeItem *);
     void helpClickedSlot();
     void exportClickedSlot();
     void aboutKcmSlot();
@@ -79,8 +80,7 @@ class KInfoCenter : public KXmlGuiWindow
     void closeDimentions(const QSize);
     void startupDimentions();
     void setButtons(const KCModule::Buttons buttons);
-  //  bool chooseFirstItem(); 
-  //  void setKcm(const KcmMenuItem *kcmItem);
+    void setKcm(const KcmTreeItem *);
     void resetCondition();
 
     KcmContainer *m_contain;

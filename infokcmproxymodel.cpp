@@ -1,6 +1,6 @@
 
 /*
- *  sidepanel.cpp
+ *  infokcmproxymodel.cpp
  *
  *  Copyright (C) 2010 David Hubner <hubnerd@ntlworld.com>
  *
@@ -20,32 +20,19 @@
  *
  */
 
-#include "sidepanel.h"
+#include "infokcmproxymodel.h"
 
-SidePanel::SidePanel(QWidget *parent) : QTreeView(parent)
-{ 
-  setSortingEnabled(true);
-  m_model = new InfoKcmModel(this);  
-  
-  m_proxyModel = new InfoKcmProxyModel(this);
-  m_proxyModel->setSourceModel(m_model);
-  
-  setModel(m_proxyModel);
-  connect(this,SIGNAL(clicked(const QModelIndex &)),this,SLOT(clickedSlot(const QModelIndex &)));
+InfoKcmProxyModel::InfoKcmProxyModel(QObject *parent) : QSortFilterProxyModel(parent) 
+{
+  setSortRole(Qt::UserRole);
 }
 
-SidePanel::~SidePanel()
+bool InfoKcmProxyModel::lessThan(const QModelIndex &leftIndex, const QModelIndex &rightIndex) const
 {
-  disconnect(this,SIGNAL(clicked(const QModelIndex &)),this,SLOT(clickedSlot(const QModelIndex &)));
+  if(leftIndex.isValid() && rightIndex.isValid()) return true;
   
-  delete m_proxyModel;
-  delete m_model;
-}
-
-void SidePanel::clickedSlot(const QModelIndex &index)
-{
-  if(index.isValid() == false) return;
+  KcmTreeItem *leftItem = static_cast<KcmTreeItem*>(leftIndex.internalPointer());
+  KcmTreeItem *rightItem = static_cast<KcmTreeItem*>(rightIndex.internalPointer());
   
-  const KcmTreeItem *item = static_cast<KcmTreeItem*>(m_proxyModel->mapToSource(index).internalPointer());
-  emit clicked(item);
+  return (leftItem->weight() < rightItem->weight()); 
 }
