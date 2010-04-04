@@ -76,7 +76,7 @@ DevInfoPlugin::DevInfoPlugin(QWidget *parent, const QVariantList &)  :
   layout->addWidget(bottom,1,0,1,0);
   
   //Misc
-  setButtons(Help|Export);
+  setButtons(Help);
   updateStatus(i18n("None"));
 }
 

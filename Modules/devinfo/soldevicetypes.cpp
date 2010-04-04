@@ -215,15 +215,10 @@ void SolNetworkDevice::setDefaultDeviceText()
   const Solid::NetworkInterface *netdev = interface<const Solid::NetworkInterface>(); 
   if(!netdev) return;
   
-  Solid::Control::NetworkInterface *nic = Solid::Control::NetworkManager::findNetworkInterface(tiedDevice.udi());
-  if (!(nic && (nic->connectionState() == Solid::Control::NetworkInterface::Activated))) actTog = i18n("Not Connected");
-  
   QString deviceText = netdev->ifaceName()
   + " (" 
   + (netdev->isWireless() ? i18n("Wireless") : i18n("Wired")) 
-  + ") " 
-  // Workaround as Solid::Control does not return lo
-  + (netdev->ifaceName() != "lo" ? " (" + actTog + ") " : "");
+  + ") ";
   
   setDeviceText(deviceText);
 }
@@ -252,32 +247,7 @@ QVListLayout *SolNetworkDevice::infoPanelLayout()
   labels << i18n("Hardware Address: ")
   << InfoPanel::friendlyString(netdev->hwAddress())
   << i18n("Wireless?")
-  << InfoPanel::convertTf(netdev->isWireless())
-  << tiedDevice.udi();
-  
-  Solid::Control::NetworkInterface *nic = Solid::Control::NetworkManager::findNetworkInterface(tiedDevice.udi());
-  if(nic && nic->isActive())
-  {  
-    Solid::Control::IPv4Config ipconfig = nic->ipV4Config();
-    if(ipconfig.isValid())
-    {
-      foreach(const Solid::Control::IPv4Address &addy, ipconfig.addresses())
-      {
-	QHostAddress *ipAddy = new QHostAddress(addy.address());
-	QHostAddress *gateAddy = new QHostAddress(addy.gateway());
-	
-	labels << "--"
-	<< i18n("IP Address (V4): ")
-	<< ipAddy->toString() + " / " + QString::number(static_cast<quint8>(addy.netMask() >> 24))
-	<< i18n("Gateway (V4): ")
-	<< gateAddy->toString();
-	
-	delete ipAddy;
-	delete gateAddy;
-	
-      }
-    }
-  }
+  << InfoPanel::convertTf(netdev->isWireless());
   
   deviceInfoLayout->applyQListToLayout(labels); 
   return deviceInfoLayout;

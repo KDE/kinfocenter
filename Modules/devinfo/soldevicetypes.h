@@ -23,12 +23,7 @@
 #ifndef __SOLDEVICETYPES__
 #define __SOLDEVICETYPES__
 
-//QT
-
 //kde 
-#include <solid/control/networkinterface.h>
-#include <solid/control/networkmanager.h>
-#include <solid/networking.h>
 #include <kdiskfreespaceinfo.h>
 
 #include "soldevice.h"
