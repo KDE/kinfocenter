@@ -49,3 +49,12 @@ void SidePanel::clickedSlot(const QModelIndex &index)
   const KcmTreeItem *item = static_cast<KcmTreeItem*>(m_proxyModel->mapToSource(index).internalPointer());
   emit clicked(item);
 }
+
+void SidePanel::changeToRootSelection()
+{
+  QModelIndex rootIndex = m_proxyModel->mapFromSource(m_model->firstValid());
+  if(rootIndex.isValid() == false) return;
+  
+  setCurrentIndex(rootIndex);
+  emit clickedSlot(rootIndex);
+}

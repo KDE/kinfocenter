@@ -43,6 +43,8 @@ class SidePanel : public QTreeView
     SidePanel(QWidget *);
     ~SidePanel();
     
+    void changeToRootSelection();
+    
   signals:
     void clicked(const KcmTreeItem *);
     

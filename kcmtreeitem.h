@@ -26,10 +26,12 @@
 //KDE
 #include <KCModuleInfo>
 #include <KDebug>
+#include <KIcon>
 
 //QT
 #include <QList>
 #include <QString>
+#include <QIcon>
 
 class KcmTreeItem
 {
@@ -55,7 +57,8 @@ class KcmTreeItem
     KcmTreeItem *containsCategory(QString); 
     
     const KCModuleInfo kcm() const; 
-    int weight() const;
+    int weight();
+    QIcon icon() const;
     
   private:
      QList<KcmTreeItem *> m_children;

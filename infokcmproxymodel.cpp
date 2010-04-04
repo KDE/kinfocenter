@@ -29,10 +29,10 @@ InfoKcmProxyModel::InfoKcmProxyModel(QObject *parent) : QSortFilterProxyModel(pa
 
 bool InfoKcmProxyModel::lessThan(const QModelIndex &leftIndex, const QModelIndex &rightIndex) const
 {
-  if(leftIndex.isValid() && rightIndex.isValid()) return true;
+  if(!leftIndex.isValid() && !rightIndex.isValid()) return true;
   
   KcmTreeItem *leftItem = static_cast<KcmTreeItem*>(leftIndex.internalPointer());
   KcmTreeItem *rightItem = static_cast<KcmTreeItem*>(rightIndex.internalPointer());
   
-  return (leftItem->weight() < rightItem->weight()); 
+  return (leftItem->weight() > rightItem->weight()); 
 }

@@ -60,7 +60,6 @@ void InfoKcmModel::createTreeItems()
       }
     }
   }
-  
 }
 
 QModelIndex InfoKcmModel::index(int row, int column, const QModelIndex &parent) const
@@ -146,9 +145,13 @@ QVariant InfoKcmModel::data(const QModelIndex &index, int role) const
     case Qt::UserRole:
       return item->weight();
       break;
+    case Qt::DecorationRole:
+      return item->icon();
+      break;
     default:
       return QVariant();
   }
+  return QVariant();
 }
 
 QVariant InfoKcmModel::headerData(int section, Qt::Orientation orientation, int role) const
@@ -172,4 +175,32 @@ Qt::ItemFlags InfoKcmModel::flags(const QModelIndex &index) const
   
   return Qt::ItemIsEnabled | Qt::ItemIsSelectable;
 }
+
+QModelIndex InfoKcmModel::firstValid() const
+{
+  return firstValid(m_root);
+}
+
+QModelIndex InfoKcmModel::firstValid(KcmTreeItem *kcmItem) const
+{ 
+  int rows = kcmItem->childCount();
+  for(int i=0;i<rows;i++)  
+  {
+    KcmTreeItem *item = kcmItem->child(i);
+    if(item->isValid() !=  false)
+    {
+      return createIndex(item->row(),0,item);
+    }
+  }
   
+  for(int i=0;i<rows;i++)  
+  {
+    KcmTreeItem *item = kcmItem->child(i);
+    if(item->isValid() ==  false)
+    {
+      QModelIndex test = firstValid(item);
+      if(test != QModelIndex()) return test;
+    }
+  }
+  return QModelIndex();
+}

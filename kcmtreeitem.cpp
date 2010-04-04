@@ -138,8 +138,20 @@ const KCModuleInfo KcmTreeItem::kcm() const
   return *m_moduleInfo;
 }
 
-int KcmTreeItem::weight() const
+int KcmTreeItem::weight() 
 {
   if(isValid() == false) return 100;
   return m_moduleInfo->weight();
+}
+
+QIcon KcmTreeItem::icon() const
+{
+  if(isValid() == false)
+  {
+    return KIcon("inode-directory");
+  }
+  else 
+  {
+    return KIcon(m_moduleInfo->icon());
+  }
 }
