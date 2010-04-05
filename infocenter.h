@@ -23,6 +23,9 @@
 #ifndef INFOCENTER
 #define INFOCENTER
 
+//C++
+#include <iostream>
+
 //KDE
 #include <KLocale>
 #include <KIcon>
@@ -42,6 +45,7 @@
 #include <KActionCollection>
 #include <KAboutApplicationDialog>
 #include <KMessageBox>
+#include <KFileDialog>
 
 //QT
 #include <QWidget>
@@ -51,6 +55,8 @@
 #include <QObject>
 #include <QProcess>
 #include <QLineEdit>
+#include <QTextStream>
+#include <QFile>
 
 //Local
 #include "sidepanel.h"

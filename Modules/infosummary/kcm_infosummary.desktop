@@ -30,5 +30,4 @@ Comment[uk]=Резюме відомостей щодо обладнання
 Comment[x-test]=xxHardware Information Summaryxx
 
 X-KDE-Keywords=device,devices
-X-DocPath=kinfocenter/devinfo/index.html
 Categories=Qt;KDE;X-KDE-information;

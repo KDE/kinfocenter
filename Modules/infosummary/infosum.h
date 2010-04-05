@@ -69,8 +69,11 @@ class InfoSumPlugin : public KCModule
     void createCpuBox();
     void createMemBox();
     void createHdBox();
+    void appendInfo(QString info);
+    void appendBreak();
     
     QVBoxLayout *m_layout;
+    QString m_exportInfo;
 };
 
 #endif //__INFOSUM__

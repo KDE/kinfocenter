@@ -37,7 +37,8 @@ InfoSumPlugin::InfoSumPlugin(QWidget *parent, const QVariantList &)  :
   setAboutData(about);
   createDisplay();
 
-  setButtons(Help);
+  setExportText(m_exportInfo);
+  setButtons(Export);
 }
 
 InfoSumPlugin::~InfoSumPlugin() 
@@ -68,6 +69,11 @@ void InfoSumPlugin::createOsBox()
   osWidget->setLabelTwo(QString(KDE_VERSION_STRING));
   osWidget->setLabelThree(osInfo->hostName());
   
+  appendInfo(i18n("OS Version") + "  " + osInfo->osVersion() + "\n");
+  appendInfo(i18n("KDE SC Version") + "  " + KDE_VERSION_STRING + "\n"); 
+  appendInfo(i18n("Hostname") + "  " + osInfo->hostName() + "\n"); 
+  appendBreak();
+  
   m_layout->addWidget(osWidget);
   
   delete osInfo;
@@ -89,6 +95,11 @@ void InfoSumPlugin::createCpuBox()
     cpuWidget->setLabelOne(dev.product());
     cpuWidget->setLabelTwo(QString::number(prodev->number()));
     cpuWidget->setLabelThree(QString::number(prodev->maxSpeed()));
+    
+    appendInfo(i18n("Processor") + "  " + dev.product() + "\n");
+    appendInfo(i18n("Processor Number") + "  " + QString::number(prodev->number()) + "\n"); 
+    appendInfo(i18n("Processor Max Speed") + "  " + QString::number(prodev->maxSpeed()) + "\n"); 
+    appendBreak();
     
     m_layout->addWidget(cpuWidget);
   }
@@ -119,7 +130,7 @@ void InfoSumPlugin::createHdBox()
     
     stoWidget->setLabelTitles(i18n("Drive Title"),i18n("Storage Size"),i18n("Bus"));
     stoWidget->setLabelOne(dev.product());
-    //stoWidget->setLabelTwo(KGlobal::locale()->formatByteSize(stodev->size()));
+    stoWidget->setLabelTwo(KGlobal::locale()->formatByteSize(stodev->size()));
     
     QString bus;
     switch(stodev->bus())
@@ -140,8 +151,23 @@ void InfoSumPlugin::createHdBox()
 	bus = i18n("Unknown"); 
     }
     
+    appendInfo(i18n("Drive Title") + "  " + dev.product() + "\n");
+    appendInfo(i18n("Storage Size") + "  " + KGlobal::locale()->formatByteSize(stodev->size()) + "\n"); 
+    appendInfo(i18n("Bus") + "  " + bus + "\n");
+    appendBreak();
+    
     stoWidget->setLabelThree(bus);
     m_layout->addWidget(stoWidget);
   }
+}
+
+void InfoSumPlugin::appendInfo(QString info)
+{
+  m_exportInfo = m_exportInfo + info;
+}
+
+void InfoSumPlugin::appendBreak()
+{
+  m_exportInfo = m_exportInfo + "\n";
 }
  

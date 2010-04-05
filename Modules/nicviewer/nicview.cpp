@@ -36,7 +36,7 @@ NicViewPlugin::NicViewPlugin(QWidget *parent, const QVariantList &)  :
 		  
   setAboutData(about);
 
-  setButtons(Help);
+  setButtons(NoAdditionalButton);
 }
 
 NicViewPlugin::~NicViewPlugin() 

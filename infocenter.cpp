@@ -198,7 +198,7 @@ void KInfoCenter::setKcm(const KcmTreeItem *kcmItem)
 void KInfoCenter::setButtons(const KCModule::Buttons buttons) 
 {    
   if (buttons & KCModule::Help) m_helpButton->setEnabled(true);
-  //if (buttons & KCModule::Export) m_exportButton->setEnabled(true);
+  if (buttons & KCModule::Export) m_exportButton->setEnabled(true);
 }
 
 void KInfoCenter::resetCondition()
@@ -220,11 +220,26 @@ void KInfoCenter::helpClickedSlot()
 
 void KInfoCenter::exportClickedSlot() 
 { 
-  #warning: Export unfinished
   if(m_contain->exportText().isEmpty())
   {
+    KInfoCenter::showError(this,i18n("Export of the module has produced no output."));
     return;
   }
+  
+  QString fileName = KFileDialog::getSaveFileName(QString(),QString(),this);
+  
+  QFile exportFile(fileName);
+
+  if(!exportFile.open(QIODevice::WriteOnly)){
+    KInfoCenter::showError(this,i18n("Unable to open file to write export information"));
+  }
+  
+  QTextStream exportTextStream( &exportFile );
+  exportTextStream << (i18n("Export information for") + " " + m_contain->currentModulesName()) 
+  << "\n\n" << m_contain->exportText() << endl;
+  
+  exportFile.close();
+  KInfoCenter::showError(this,i18n("Information exported"));
 }
 
 void KInfoCenter::aboutKcmSlot()

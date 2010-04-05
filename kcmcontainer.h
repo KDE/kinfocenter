@@ -47,6 +47,7 @@ class KcmContainer : public QScrollArea
     const KCModule::Buttons buttons() const;
     const KAboutData *kcmAboutData() const;
     const QString exportText();
+    QString currentModulesName();
     
   private:
     void setContainerLayout();
