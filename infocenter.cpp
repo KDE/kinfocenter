@@ -45,9 +45,13 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
   //TreeWidget
   connect(m_sideMenu,SIGNAL(clicked(const KcmTreeItem *)),this,SLOT(itemClickedSlot(const KcmTreeItem *)));
   
+  //SearchBox
+  connect(m_searchText,SIGNAL(editingFinished()),this,SLOT(searchSlot()));
+  
   //Buttons
   connect(m_helpButton,SIGNAL(clicked(bool)),this,SLOT(helpClickedSlot()));
   connect(m_exportButton,SIGNAL(clicked(bool)),this,SLOT(exportClickedSlot()));
+  connect(m_goButton,SIGNAL(clicked(bool)),this,SLOT(searchSlot()));
   
   m_sideMenu->changeToRootSelection();
   new ToolTipManager(m_sideMenu);
@@ -119,14 +123,32 @@ void KInfoCenter::createMainFrame()
   m_splitter->setContentsMargins(0, 0, 0, 0);
   mainLayout->addWidget(m_splitter);
   
-  m_sideMenu = new SidePanel(m_splitter);
-  m_splitter->addWidget(m_sideMenu);
+  CreateMenuFrame();
   
   m_contain = new KcmContainer(m_splitter);
   m_splitter->addWidget(m_contain);
   
   m_splitter->setStretchFactor(0, 0);
   m_splitter->setStretchFactor(1, 1);
+}
+  
+void KInfoCenter::CreateMenuFrame() 
+{
+  QWidget *sideFrame = new QWidget(m_splitter);
+  QGridLayout *menuLayout = new QGridLayout(sideFrame);
+  
+  m_searchText = new QLineEdit(sideFrame);
+  //m_searchText->setFixedWidth(150);
+  menuLayout->addWidget(m_searchText,0,0,1,1);
+  
+  m_goButton = new QPushButton("Search");
+  m_goButton->setFixedWidth(70);
+  menuLayout->addWidget(m_goButton,0,1,1,2);
+  
+  m_sideMenu = new SidePanel(sideFrame);
+  menuLayout->addWidget(m_sideMenu,1,0,1,3);
+  
+  m_splitter->addWidget(sideFrame);
 }
   
 void KInfoCenter::startupDimentions()
@@ -201,4 +223,10 @@ void KInfoCenter::aboutKcmSlot()
 {
   KAboutApplicationDialog kcmAboutDialog(m_contain->kcmAboutData());
   kcmAboutDialog.exec();
+}
+
+void KInfoCenter::searchSlot()
+{
+  QString searchText = m_searchText->text();
+  kError() << searchText;
 }

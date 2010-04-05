@@ -49,6 +49,7 @@
 #include <QSplitter>
 #include <QObject>
 #include <QProcess>
+#include <QLineEdit>
 
 //Local
 #include "sidepanel.h"
@@ -73,11 +74,13 @@ class KInfoCenter : public KXmlGuiWindow
     void helpClickedSlot();
     void exportClickedSlot();
     void aboutKcmSlot();
+    void searchSlot();
     
   private:
     void initMenuBar();
     void createButtonBar();
     void createMainFrame();
+    void CreateMenuFrame();
     void closeDimentions(const QSize);
     void startupDimentions();
     void setButtons(const KCModule::Buttons buttons);
@@ -89,9 +92,11 @@ class KInfoCenter : public KXmlGuiWindow
     QAction *m_aboutKcm;
     
     QWidget *m_cWidget;
+    QLineEdit *m_searchText;
     
     QPushButton *m_helpButton;
     QPushButton *m_exportButton;
+    QPushButton *m_goButton;
     
     SidePanel *m_sideMenu;
 };
