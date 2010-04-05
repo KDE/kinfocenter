@@ -1,8 +1,0 @@
-<!DOCTYPE kpartgui>
-<kpartgui name="kinfocenter" version="2">
-<MenuBar>
-    <Menu name="help">
-        <Action name="help_about_module" append="about_merge"/>
-    </Menu>
-</MenuBar>
-</kpartgui>
