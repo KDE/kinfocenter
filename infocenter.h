@@ -41,6 +41,7 @@
 #include <KStandardAction>
 #include <KActionCollection>
 #include <KAboutApplicationDialog>
+#include <KMessageBox>
 
 //QT
 #include <QWidget>
@@ -76,6 +77,8 @@ class KInfoCenter : public KXmlGuiWindow
     void aboutKcmSlot();
     void searchSlot();
     
+    static void showError(QWidget *,QString);
+    
   private:
     void initMenuBar();
     void createButtonBar();
@@ -99,6 +102,7 @@ class KInfoCenter : public KXmlGuiWindow
     QPushButton *m_goButton;
     
     SidePanel *m_sideMenu;
+    ToolTipManager *m_toolTips;
 };
 
 #endif //__INFOCENTER__

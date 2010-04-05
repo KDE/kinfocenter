@@ -61,6 +61,7 @@ class KcmTreeItem
     QIcon icon() const;
     
     QString whatsThis() const;
+    bool childrenRegExp(QRegExp pattern);
     
   private:
      QList<KcmTreeItem *> m_children;

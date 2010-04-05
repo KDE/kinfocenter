@@ -34,6 +34,9 @@ class InfoKcmProxyModel : public QSortFilterProxyModel
   public:
     InfoKcmProxyModel(QObject *parent);
     bool lessThan(const QModelIndex &, const QModelIndex &) const;
+    
+  private:
+    bool filterAcceptsRow(int, const QModelIndex &) const;
 };
 
 #endif // __INFOKCMPROXYMODEL__

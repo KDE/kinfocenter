@@ -29,6 +29,10 @@
 //QT
 #include <QTreeView>
 #include <QWidget>
+#include <QRegExp>
+#include <QAction>
+#include <QMenu>
+#include <QContextMenuEvent>
 
 //Local
 #include "infokcmmodel.h"
@@ -45,16 +49,29 @@ class SidePanel : public QTreeView
     
     void changeToRootSelection();
     QModelIndex mapProxySource(QModelIndex);
+    void filterSideMenu(QString);
     
   signals:
     void clicked(const KcmTreeItem *);
     
   private slots:
-    void clickedSlot(const QModelIndex &index);  
+    void clickedSlot(const QModelIndex &index);
     
+  public slots:
+    void collapseAllSlot();
+    void expandAllSlot();	
+    void resetSlot();
+
   private:
+    void createMenuActions();
+    void contextMenuEvent(QContextMenuEvent *event);
+    
     InfoKcmModel *m_model;
     InfoKcmProxyModel *m_proxyModel;
+    
+    QAction *colAct;
+    QAction *expAct;
+    QAction *resetAct;
 };
 
 #endif //__SIDEPANEL__

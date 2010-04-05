@@ -161,3 +161,15 @@ QString KcmTreeItem::whatsThis() const
   if(isValid() == false) return QString();
   return m_moduleInfo->comment();
 }
+
+bool KcmTreeItem::childrenRegExp(QRegExp pattern)
+{
+  foreach(KcmTreeItem *item, m_children)
+  {
+    if(item->data().contains(pattern) == true)
+    {
+      return true;
+    }
+  }
+  return false;
+}

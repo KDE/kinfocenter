@@ -201,8 +201,8 @@ QModelIndex InfoKcmModel::firstValid(KcmTreeItem *kcmItem) const
     KcmTreeItem *item = kcmItem->child(i);
     if(item->isValid() ==  false)
     {
-      QModelIndex test = firstValid(item);
-      if(test != QModelIndex()) return test;
+      QModelIndex valid = firstValid(item);
+      if(valid != QModelIndex()) return valid;
     }
   }
   return QModelIndex();

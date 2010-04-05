@@ -30,6 +30,8 @@ SidePanel::SidePanel(QWidget *parent) : QTreeView(parent)
   m_proxyModel = new InfoKcmProxyModel(this);
   m_proxyModel->setSourceModel(m_model);
   
+  createMenuActions();
+  
   setMouseTracking( true );
   setModel(m_proxyModel);
   connect(this,SIGNAL(clicked(const QModelIndex &)),this,SLOT(clickedSlot(const QModelIndex &)));
@@ -63,4 +65,47 @@ void SidePanel::changeToRootSelection()
 QModelIndex SidePanel::mapProxySource(QModelIndex index)
 {
   return m_proxyModel->mapToSource(index);
+}
+
+void SidePanel::filterSideMenu(QString pattern)
+{
+  if(pattern.isEmpty() == true) return;
+  m_proxyModel->setFilterRegExp(QRegExp(pattern,Qt::CaseInsensitive));
+}
+
+void SidePanel::createMenuActions() 
+{ 
+  resetAct = new QAction(i18n("Reset Search"), this);
+  connect(resetAct, SIGNAL(triggered()), this, SLOT(resetSlot()));
+  
+  expAct = new QAction(i18n("Expand All Categories"), this);
+  connect(expAct, SIGNAL(triggered()), this, SLOT(expandAllSlot()));
+  
+  colAct = new QAction(i18n("Collapse All Categories"), this);
+  connect(colAct, SIGNAL(triggered()), this, SLOT(collapseAllSlot()));
+}
+
+void SidePanel::contextMenuEvent(QContextMenuEvent *event) 
+{  
+  QMenu menu(this);
+  
+  menu.addAction(colAct);
+  menu.addAction(expAct);
+  menu.addAction(resetAct);
+  menu.exec(event->globalPos());
+}
+
+void SidePanel::collapseAllSlot()
+{
+  collapseAll();
+}
+
+void SidePanel::expandAllSlot()
+{
+  expandAll();
+}
+
+void SidePanel::resetSlot()
+{
+  m_proxyModel->setFilterRegExp(QRegExp("",Qt::CaseInsensitive));
 }

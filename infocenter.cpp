@@ -53,19 +53,28 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
   connect(m_exportButton,SIGNAL(clicked(bool)),this,SLOT(exportClickedSlot()));
   connect(m_goButton,SIGNAL(clicked(bool)),this,SLOT(searchSlot()));
   
+  //Startup
+  m_sideMenu->setFocus(Qt::OtherFocusReason);
   m_sideMenu->changeToRootSelection();
-  new ToolTipManager(m_sideMenu);
+  
+  m_toolTips = new ToolTipManager(m_sideMenu);
   show();
 }
 
 KInfoCenter::~KInfoCenter()
 { 
+  delete m_toolTips;
+  
   //TreeWidget
   disconnect(m_sideMenu,SIGNAL(clicked(const KcmTreeItem *)),this,SLOT(itemClickedSlot(const KcmTreeItem *)));
+  
+  //SearchBox
+  disconnect(m_searchText,SIGNAL(editingFinished()),this,SLOT(searchSlot()));
   
   //Buttons
   disconnect(m_helpButton,SIGNAL(clicked(bool)),this,SLOT(helpClickedSlot()));
   disconnect(m_exportButton,SIGNAL(clicked(bool)),this,SLOT(exportClickedSlot()));
+  disconnect(m_goButton,SIGNAL(clicked(bool)),this,SLOT(searchSlot()));
   
   closeDimentions(this->size());
 }
@@ -138,7 +147,6 @@ void KInfoCenter::CreateMenuFrame()
   QGridLayout *menuLayout = new QGridLayout(sideFrame);
   
   m_searchText = new QLineEdit(sideFrame);
-  //m_searchText->setFixedWidth(150);
   menuLayout->addWidget(m_searchText,0,0,1,1);
   
   m_goButton = new QPushButton("Search");
@@ -228,5 +236,17 @@ void KInfoCenter::aboutKcmSlot()
 void KInfoCenter::searchSlot()
 {
   QString searchText = m_searchText->text();
-  kError() << searchText;
+  
+  if(searchText.isEmpty())
+  {
+    KInfoCenter::showError(this,i18n("You have not entered any search string."));
+    return;
+  }
+  m_sideMenu->filterSideMenu(searchText);
+  m_sideMenu->expandAllSlot();
+}
+
+void KInfoCenter::showError(QWidget *parent, QString errorMessage)
+{
+  KMessageBox::sorry(parent,errorMessage);
 }
