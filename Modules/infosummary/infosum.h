@@ -52,8 +52,6 @@
 #include "progressboxwidget.h"
 #include "osdepinfo.h"
 
-class DefaultBoxWidget;
-class ProgressBoxWidget;
 
 class InfoSumPlugin : public KCModule
 {

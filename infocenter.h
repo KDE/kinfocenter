@@ -66,7 +66,6 @@
 #include "ToolTips/tooltipmanager.h"
 
 class KcmContainer;
-class SizePanel;
 
 class KInfoCenter : public KXmlGuiWindow
 {
