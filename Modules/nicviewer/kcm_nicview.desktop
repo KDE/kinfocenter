@@ -10,24 +10,8 @@ X-KDE-Library=kcm_nicview
 X-KDE-ParentApp=kinfocenter
 
 Name=Network Interfaces
-Name[en_GB]=Network Interfaces
-Name[es]=Interfaces de red
-Name[nb]=Nettverksgrensesnitt
-Name[nn]=Nettverksgrensesnitt
-Name[pt]=Interfaces de Rede
-Name[pt_BR]=Interfaces de rede
-Name[sv]=Nätverksgränssnitt
-Name[uk]=Мережеві інтерфейси
-Name[x-test]=xxNetwork Interfacesxx
 
 Comment=Network Interface Summary
-Comment[en_GB]=Network Interface Summary
-Comment[es]=Resumen de interfaces de red
-Comment[pt]=Resumo da Interface de Rede
-Comment[pt_BR]=Resumo das interface de rede
-Comment[sv]=Översikt av nätverksgränssnitt
-Comment[uk]=Резюме щодо інтерфейсів мережі
-Comment[x-test]=xxNetwork Interface Summaryxx
 
 X-KDE-Keywords=device,devices
 Categories=Qt;KDE;X-KDE-information;

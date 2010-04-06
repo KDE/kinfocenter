@@ -10,27 +10,8 @@ X-KDE-Library=kcm_pci
 X-KDE-ParentApp=kinfocenter
 
 Name=PCI
-Name[cs]=PCI sběrnice
-Name[en_GB]=PCI
-Name[es]=PCI
-Name[nb]=PCI
-Name[nn]=PCI
-Name[pt]=PCI
-Name[pt_BR]=PCI
-Name[sv]=PCI
-Name[uk]=Шина PCI
-Name[x-test]=xxPCIxx
 
 Comment=PCI information
-Comment[en_GB]=PCI information
-Comment[es]=Información de PCI
-Comment[nb]=PCI-informasjon
-Comment[nn]=PCI-informasjon
-Comment[pt]=Informação sobre o PCI
-Comment[pt_BR]=Informações PCI
-Comment[sv]=PCI-information
-Comment[uk]=Інформація щодо шини PCI
-Comment[x-test]=xxPCI informationxx
 
 X-KDE-Keywords=PCI,PCI-Devices,PCI-Bus,System Information
 X-KDE-Keywords[af]=PCI,PCI-Devices,PCI-Bus,System Informasie

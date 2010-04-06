@@ -10,27 +10,8 @@ X-KDE-Library=kcm_opengl
 X-KDE-ParentApp=kinfocenter
 
 Name=OpenGL
-Name[cs]=OpenGL
-Name[en_GB]=OpenGL
-Name[es]=OpenGL
-Name[nb]=OpenGL
-Name[nn]=OpenGL
-Name[pt]=OpenGL
-Name[pt_BR]=OpenGL
-Name[sv]=OpenGL
-Name[uk]=OpenGL
-Name[x-test]=xxOpenGLxx
 
 Comment=OpenGL information
-Comment[en_GB]=OpenGL information
-Comment[es]=Información de OpenGL
-Comment[nb]=OpenGL-informasjon
-Comment[nn]=OpenGL-informasjon
-Comment[pt]=Informação sobre OpenGL
-Comment[pt_BR]=Informações sobre OpenGL
-Comment[sv]=Information om OpenGL
-Comment[uk]=Інформація про OpenGL
-Comment[x-test]=xxOpenGL informationxx
 
 X-KDE-Keywords=OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display
 X-KDE-Keywords[be]=Відэакарта,паскарэнне,графіка,сервер X,дысплей,экран,OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display

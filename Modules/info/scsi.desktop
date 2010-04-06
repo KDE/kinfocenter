@@ -11,27 +11,8 @@ X-KDE-PluginKeyword=scsi
 X-KDE-ParentApp=kinfocenter
 
 Name=SCSI
-Name[cs]=SCSI
-Name[en_GB]=SCSI
-Name[es]=SCSI
-Name[nb]=SCSI
-Name[nn]=SCSI
-Name[pt]=SCSI
-Name[pt_BR]=SCSI
-Name[sv]=SCSI
-Name[uk]=SCSI
-Name[x-test]=xxSCSIxx
 
 Comment=SCSI information
-Comment[en_GB]=SCSI information
-Comment[es]=Información de SCSI
-Comment[nb]=SCSI-informasjon
-Comment[nn]=SCSI-informasjon
-Comment[pt]=Informação sobre o SCSI
-Comment[pt_BR]=Informações sobre SCSI
-Comment[sv]=SCSI-information
-Comment[uk]=Інформація щодо SCSI
-Comment[x-test]=xxSCSI informationxx
 
 X-KDE-Keywords=SCSI,SCSI-Bus,System Information
 X-KDE-Keywords[af]=SCSI,SCSI-Bus,System Informasie

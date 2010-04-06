@@ -7,27 +7,7 @@ X-KDE-StartupNotify=true
 OnlyShowIn=KDE;
 
 Name=KInfoCenter
-Name[cs]=KInfoCenter
-Name[en_GB]=KInfoCentre
-Name[es]=KInfoCenter
-Name[nb]=KInfoCenter
-Name[nn]=KInfoCenter
-Name[pt]=KInfoCenter
-Name[pt_BR]=KInfoCenter
-Name[sv]=Informationscentralen
-Name[uk]=KInfoCenter
-Name[x-test]=xxKInfoCenterxx
 GenericName=Info Center
-GenericName[cs]=Informační centrum
-GenericName[en_GB]=Info Centre
-GenericName[es]=Centro de información
-GenericName[nb]=KDEs informasjonssenter
-GenericName[nn]=KDEs informasjonssenter
-GenericName[pt]=Centro de Informações
-GenericName[pt_BR]=Centro de informações
-GenericName[sv]=Informationscentralen
-GenericName[uk]=Центр інформації
-GenericName[x-test]=xxInfo Centerxx
 
 X-DBUS-StartupType=Unique
 Categories=Qt;KDE;System;

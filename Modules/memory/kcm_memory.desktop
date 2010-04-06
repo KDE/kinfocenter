@@ -10,27 +10,8 @@ X-KDE-Library=kcm_memory
 X-KDE-ParentApp=kinfocenter
 
 Name=Memory
-Name[cs]=Paměť
-Name[en_GB]=Memory
-Name[es]=Memoria
-Name[nb]=Minne
-Name[nn]=Minne
-Name[pt]=Memória
-Name[pt_BR]=Memória
-Name[sv]=Minne
-Name[uk]=Пам'ять
-Name[x-test]=xxMemoryxx
 
 Comment=Memory information
-Comment[en_GB]=Memory information
-Comment[es]=Información de memoria
-Comment[nb]=Minneinformasjon
-Comment[nn]=Minneinformasjon
-Comment[pt]=Informações sobre a memória
-Comment[pt_BR]=Informações da memória
-Comment[sv]=Minnesinformation
-Comment[uk]=Інформація щодо пам'яті
-Comment[x-test]=xxMemory informationxx
 
 X-KDE-Keywords=Memory,RAM,Virtual memory,Physical memory,Shared memory,Swap,System Information
 X-KDE-Keywords[af]=Memory,RAM,Virtual memory,Physical memory,Shared memory,Swap,System Informasie
