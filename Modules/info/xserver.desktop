@@ -11,8 +11,18 @@ X-KDE-PluginKeyword=xserver
 X-KDE-ParentApp=kinfocenter
 
 Name=X-Server
+Name[nb]=X-tjener
+Name[nn]=X-tenar
+Name[pt]=Servidor X
+Name[sv]=X-server
+Name[uk]=Сервер X
 
 Comment=X-Server information
+Comment[nb]=X-tjenerinformasjon
+Comment[nn]=X-tenarinformasjon
+Comment[pt]=Informações sobre o servidor X
+Comment[sv]=X-serverinformation
+Comment[uk]=Інформація щодо сервера X
 
 X-KDE-Keywords=X,X-Server,XServer,XFree86,Display,VideoCard,System Information
 X-KDE-Keywords[be]=Сервер X,Дысплей,Відэакарта,Сістэмная інфармацыя,X,X-Server,XServer,XFree86,Display,VideoCard,System Information

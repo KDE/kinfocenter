@@ -10,8 +10,18 @@ X-KDE-Library=devinfo
 X-KDE-ParentApp=kinfocenter
 
 Name=Device Viewer
+Name[nb]=Office-viser
+Name[nn]=Comment=KOffice-filter
+Name[pt]=Visualizador de Dispositivos
+Name[sv]=Enhetsvisning
+Name[uk]=Переглядач пристроїв
 
 Comment=Device Viewer
+Comment[nb]=Office-viser
+Comment[nn]=Comment=KOffice-filter
+Comment[pt]=Visualizador de Dispositivos
+Comment[sv]=Enhetsvisning
+Comment[uk]=Переглядач пристроїв
 
 X-KDE-Keywords=device,devices
 X-DocPath=kinfocenter/devinfo/index.html

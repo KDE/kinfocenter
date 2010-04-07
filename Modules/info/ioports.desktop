@@ -12,8 +12,18 @@ X-KDE-PluginKeyword=ioports
 X-KDE-ParentApp=kinfocenter
 
 Name=IO-Ports
+Name[nb]=IO-porter
+Name[nn]=IU-portar
+Name[pt]=Portos de E/S
+Name[sv]=I/O-portar
+Name[uk]=Порти В/В
 
 Comment=IO-port information
+Comment[nb]=IO-portinformasjon
+Comment[nn]=IU-port-informasjon
+Comment[pt]=Informação sobre os portos de E/S
+Comment[sv]=Information om I/O-portar
+Comment[uk]=Інформація щодо портів вводу/виводу
 
 X-KDE-Keywords=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Information
 X-KDE-Keywords[af]=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Informasie

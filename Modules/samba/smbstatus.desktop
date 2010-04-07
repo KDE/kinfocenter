@@ -10,8 +10,18 @@ X-KDE-Library=kcm_samba
 X-KDE-ParentApp=kinfocenter
 
 Name=Samba Status
+Name[nb]=Samba-status
+Name[nn]=Samba-status
+Name[pt]=Estado do Samba
+Name[sv]=Samba-status
+Name[uk]=Стан Samba
 
 Comment=Samba status monitor
+Comment[nb]=Overvåking av Samba-status
+Comment[nn]=Overvaking av Samba-status
+Comment[pt]=Monitor do estado do Samba
+Comment[sv]=Övervakar Samba-status
+Comment[uk]=Монітор стану Samba
 
 X-KDE-Keywords=SMB,SAMBA,Windows network,LAN,System Information
 X-KDE-Keywords[af]=SMB,SAMBA,Windows network,LAN,System Informasie

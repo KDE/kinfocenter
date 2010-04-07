@@ -9,8 +9,18 @@ X-KDE-Library=kcm_infosummary
 X-KDE-ParentApp=kinfocenter
 
 Name=Summary
+Name[nb]=Sammendrag
+Name[nn]=Samandrag
+Name[pt]=Resumo
+Name[sv]=Översikt
+Name[uk]=Резюме
 
 Comment=Hardware Information Summary
+Comment[nb]=Maskinvare&informasjon
+Comment[nn]=Maskinvare&informasjon
+Comment[pt]=Resumo de Informações do 'Hardware'
+Comment[sv]=Översikt av hårdvaruinformation
+Comment[uk]=Резюме відомостей щодо обладнання
 
 X-KDE-Keywords=device,devices
 Categories=Qt;KDE;X-KDE-information;
