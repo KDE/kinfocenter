@@ -72,7 +72,7 @@ void KcmContainer::setKcmTitle(const KCModuleInfo &info)
   const QString kcmTitle = info.moduleName();
   const QString kcmComment = info.comment();
   
-  m_titleLabel->setText(kcmTitle + "  (" + kcmComment + ')');
+  m_titleLabel->setText(i18n("%1  ( %2 )",kcmTitle,kcmComment));
 }
 
 const QString KcmContainer::helpPath() const 
