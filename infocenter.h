@@ -46,6 +46,7 @@
 #include <KAboutApplicationDialog>
 #include <KMessageBox>
 #include <KFileDialog>
+#include <KLineEdit>
 
 //QT
 #include <QWidget>
@@ -54,7 +55,6 @@
 #include <QSplitter>
 #include <QObject>
 #include <QProcess>
-#include <QLineEdit>
 #include <QTextStream>
 #include <QFile>
 
@@ -66,6 +66,7 @@
 #include "ToolTips/tooltipmanager.h"
 
 class KcmContainer;
+class SizePanel;
 
 class KInfoCenter : public KXmlGuiWindow
 {
@@ -100,7 +101,7 @@ class KInfoCenter : public KXmlGuiWindow
     QAction *m_aboutKcm;
     
     QWidget *m_cWidget;
-    QLineEdit *m_searchText;
+    KLineEdit *m_searchText;
     
     QPushButton *m_helpButton;
     QPushButton *m_exportButton;

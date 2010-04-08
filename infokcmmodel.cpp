@@ -22,7 +22,7 @@
 
 #include "infokcmmodel.h"
 
-InfoKcmModel::InfoKcmModel(QObject *parent) : QAbstractItemModel(parent), m_root(new KcmTreeItem("Information Modules"))
+InfoKcmModel::InfoKcmModel(QObject *parent) : QAbstractItemModel(parent), m_root(new KcmTreeItem(i18n("Information Modules")))
 {
   createTreeItems();  
 }

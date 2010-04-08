@@ -38,8 +38,9 @@ KcmContainer::~KcmContainer()
 void KcmContainer::setContainerLayout() 
 {  
   m_centerWidget = new QWidget(this);
-  setWidget(m_centerWidget); 
+  m_centerWidget->setContentsMargins(0,0,0,0);
   
+  setWidget(m_centerWidget); 
   QVBoxLayout *centerWidgetLayout = new QVBoxLayout(m_centerWidget);
    
   QFont bFont;
@@ -57,11 +58,12 @@ void KcmContainer::setKcm(const KCModuleInfo &info)
   delete m_centerWidget;
   setContainerLayout();    
   
-  setKcmTitle(info);
-  
   m_mod = new KCModuleProxy(info);
   m_modInfo = info;
    
+  setKcmTitle(info);
+  
+  m_mod->setWhatsThis(m_mod->quickHelp());
   m_centerWidget->layout()->addWidget(m_mod);
 }
 
@@ -70,7 +72,7 @@ void KcmContainer::setKcmTitle(const KCModuleInfo &info)
   const QString kcmTitle = info.moduleName();
   const QString kcmComment = info.comment();
   
-  m_titleLabel->setText(kcmTitle + "  (" + kcmComment + ")");
+  m_titleLabel->setText(kcmTitle + "  (" + kcmComment + ')');
 }
 
 const QString KcmContainer::helpPath() const 
@@ -98,4 +100,3 @@ QString KcmContainer::currentModulesName()
 {
   return m_modInfo.moduleName();
 }
-  

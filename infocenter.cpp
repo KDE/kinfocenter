@@ -46,7 +46,7 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
   connect(m_sideMenu,SIGNAL(clicked(const KcmTreeItem *)),this,SLOT(itemClickedSlot(const KcmTreeItem *)));
   
   //SearchBox
-  connect(m_searchText,SIGNAL(editingFinished()),this,SLOT(searchSlot()));
+  connect(m_searchText,SIGNAL(returnPressed()),this,SLOT(searchSlot()));
   
   //Buttons
   connect(m_helpButton,SIGNAL(clicked(bool)),this,SLOT(helpClickedSlot()));
@@ -98,12 +98,16 @@ void KInfoCenter::initMenuBar()
 
 void KInfoCenter::createButtonBar()
 {  
-  QWidget *m_buttonBar = new QWidget(); 
-  QHBoxLayout *m_bbLayout = new QHBoxLayout(m_buttonBar);
+  QWidget *m_buttonBar = new QWidget();
+  m_buttonBar->setContentsMargins(0,0,0,0);
   
-  m_buttonBar->setFixedHeight(35);
+  QHBoxLayout *m_bbLayout = new QHBoxLayout(m_buttonBar);
+  m_buttonBar->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum);
+  
+ // m_buttonBar->setFixedHeight(35);
   
   m_helpButton = new QPushButton(i18nc("Help button label","Help"));
+  m_helpButton->setIcon(KIcon("help"));
   m_helpButton->setEnabled(false);
   m_helpButton->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
   
@@ -111,6 +115,7 @@ void KInfoCenter::createButtonBar()
   m_blank->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
   
   m_exportButton = new QPushButton(i18nc("export button label","Export"));
+  m_exportButton->setIcon(KIcon("document-export"));
   m_exportButton->setEnabled(false);
   m_exportButton->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
   
@@ -124,8 +129,8 @@ void KInfoCenter::createButtonBar()
 void KInfoCenter::createMainFrame()
 { 
   QWidget *mainDisplay = new QWidget();
-  m_cWidget->layout()->addWidget(mainDisplay);
-  
+  mainDisplay->setContentsMargins(0,0,0,0);
+    
   QHBoxLayout *mainLayout = new QHBoxLayout(mainDisplay);
   
   m_splitter = new QSplitter(m_cWidget);
@@ -139,22 +144,27 @@ void KInfoCenter::createMainFrame()
   
   m_splitter->setStretchFactor(0, 0);
   m_splitter->setStretchFactor(1, 1);
+  
+  m_cWidget->layout()->addWidget(mainDisplay);
+
 }
   
 void KInfoCenter::CreateMenuFrame() 
 {
   QWidget *sideFrame = new QWidget(m_splitter);
+  sideFrame->setContentsMargins(0,0,0,0);
+  
   QGridLayout *menuLayout = new QGridLayout(sideFrame);
   
-  m_searchText = new QLineEdit(sideFrame);
+  m_searchText = new KLineEdit(sideFrame);
   menuLayout->addWidget(m_searchText,0,0,1,1);
   
-  m_goButton = new QPushButton("Search");
-  m_goButton->setFixedWidth(70);
-  menuLayout->addWidget(m_goButton,0,1,1,2);
+  m_goButton = new QPushButton(i18nc("Search Button","Search"));
+  m_goButton->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
+  menuLayout->addWidget(m_goButton,0,1,1,1);
   
   m_sideMenu = new SidePanel(sideFrame);
-  menuLayout->addWidget(m_sideMenu,1,0,1,3);
+  menuLayout->addWidget(m_sideMenu,1,0,1,2);
   
   m_splitter->addWidget(sideFrame);
 }
@@ -227,6 +237,7 @@ void KInfoCenter::exportClickedSlot()
   }
   
   QString fileName = KFileDialog::getSaveFileName(QString(),QString(),this);
+  if(fileName.isEmpty()) return;
   
   QFile exportFile(fileName);
 
@@ -235,7 +246,7 @@ void KInfoCenter::exportClickedSlot()
   }
   
   QTextStream exportTextStream( &exportFile );
-  exportTextStream << (i18n("Export information for") + " " + m_contain->currentModulesName()) 
+  exportTextStream << (i18n("Export information for %1",m_contain->currentModulesName()))
   << "\n\n" << m_contain->exportText() << endl;
   
   exportFile.close();

@@ -36,8 +36,8 @@
 class KcmTreeItem
 {
   public:
-    KcmTreeItem(const KService::Ptr, KcmTreeItem *parent=0);
-    KcmTreeItem(QString, KcmTreeItem *parent=0);
+    explicit KcmTreeItem(const KService::Ptr, KcmTreeItem *parent=0);
+    explicit KcmTreeItem(QString, KcmTreeItem *parent=0);
     ~KcmTreeItem();
     
     void addChild(KcmTreeItem *);

@@ -108,4 +108,5 @@ void SidePanel::expandAllSlot()
 void SidePanel::resetSlot()
 {
   m_proxyModel->setFilterRegExp(QRegExp("",Qt::CaseInsensitive));
+  collapseAllSlot();
 }
