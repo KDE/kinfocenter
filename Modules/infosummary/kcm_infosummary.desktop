@@ -12,6 +12,7 @@ Name=Summary
 Name[nb]=Sammendrag
 Name[nn]=Samandrag
 Name[pt]=Resumo
+Name[pt_BR]=Resumo
 Name[sv]=Översikt
 Name[uk]=Резюме
 
@@ -19,6 +20,7 @@ Comment=Hardware Information Summary
 Comment[nb]=Maskinvare&informasjon
 Comment[nn]=Maskinvare&informasjon
 Comment[pt]=Resumo de Informações do 'Hardware'
+Comment[pt_BR]=Resumo de informações do 'Hardware'
 Comment[sv]=Översikt av hårdvaruinformation
 Comment[uk]=Резюме відомостей щодо обладнання
 

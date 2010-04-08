@@ -13,6 +13,7 @@ Name=Memory
 Name[nb]=Minne
 Name[nn]=Minne
 Name[pt]=Memória
+Name[pt_BR]=Memória
 Name[sv]=Minne
 Name[uk]=Пам'ять
 
@@ -20,6 +21,7 @@ Comment=Memory information
 Comment[nb]=Minneinformasjon
 Comment[nn]=Minneinformasjon
 Comment[pt]=Informações sobre a memória
+Comment[pt_BR]=Informações sobre a memória
 Comment[sv]=Minnesinformation
 Comment[uk]=Інформація щодо пам'яті
 

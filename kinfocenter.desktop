@@ -10,12 +10,14 @@ Name=KInfoCenter
 Name[nb]=KInfoCenter
 Name[nn]=KInfoCenter
 Name[pt]=KInfoCenter
+Name[pt_BR]=KInfoCenter
 Name[sv]=Informationscentralen
 Name[uk]=KInfoCenter
 GenericName=Info Center
 GenericName[nb]=KDEs informasjonssenter
 GenericName[nn]=KDEs informasjonssenter
 GenericName[pt]=Centro de Informações
+GenericName[pt_BR]=Centro de Informações
 GenericName[sv]=Informationscentralen
 GenericName[uk]=Центр інформації
 

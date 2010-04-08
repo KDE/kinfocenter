@@ -15,6 +15,7 @@ Name=Interrupts
 Name[nb]=Avbruddslinjer
 Name[nn]=Avbrot
 Name[pt]=Interrupções
+Name[pt_BR]=Interrupções
 Name[sv]=Avbrott
 Name[uk]=Перериваннявати
 
@@ -22,6 +23,7 @@ Comment=Interrupt information
 Comment[nb]=Avbruddslinjeinformasjon
 Comment[nn]=Avbrotsinformasjon
 Comment[pt]=Informação das interrupções
+Comment[pt_BR]=Informação das interrupções
 Comment[sv]=Avbrottsinformation
 Comment[uk]=Інформація щодо переривань
 

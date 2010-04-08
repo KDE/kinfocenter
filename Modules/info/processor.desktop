@@ -15,6 +15,7 @@ Name[nb]=Prosessor
 Name[nds]=Perzesser
 Name[nn]=Prosessor
 Name[pt]=Processador
+Name[pt_BR]=Processador
 Name[sv]=Processor
 Name[uk]=Процесор
 Name[zh_TW]=處理器
@@ -23,6 +24,7 @@ Comment=Processor information
 Comment[nb]=Prosessorinformasjon
 Comment[nn]=Prosessorinformasjon
 Comment[pt]=Informação do processador
+Comment[pt_BR]=Informações sobre o processador
 Comment[sv]=Processorinformation
 Comment[uk]=Інформація щодо процесора
 

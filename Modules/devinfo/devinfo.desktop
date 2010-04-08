@@ -13,6 +13,7 @@ Name=Device Viewer
 Name[nb]=Office-viser
 Name[nn]=Comment=KOffice-filter
 Name[pt]=Visualizador de Dispositivos
+Name[pt_BR]=Visualizador de dispositivos
 Name[sv]=Enhetsvisning
 Name[uk]=Переглядач пристроїв
 
@@ -20,6 +21,7 @@ Comment=Device Viewer
 Comment[nb]=Office-viser
 Comment[nn]=Comment=KOffice-filter
 Comment[pt]=Visualizador de Dispositivos
+Comment[pt_BR]=Visualizador de dispositivos
 Comment[sv]=Enhetsvisning
 Comment[uk]=Переглядач пристроїв
 
