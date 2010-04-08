@@ -1,19 +1,23 @@
-/*
- !!!!! this file will be included by info.cpp !!!!!
- 
- Mostly written 1998-1999 by Helge Deller (deller@gmx.de),
- with some pieces of code from Aubert Pierre.
 
- Last modified:	done:
- 1999-06-21	added more models to the lookup-table (deller)
- 1999-06-18	added support for 64-Bit HP-UX in CPU-detection(deller)
- 1999-05-04	added audio(alib)-support (deller)
- 1999-04-27	[tested with HP-UX 10.20 (HP9000/715/64-EISA)]
- added support for nearly all categories 
- (means: not finished!)
- 1998-11-01	first, nearly empty version (deller)
- with a little source for CPU from Aubert Pierre
- */
+/*
+Copyright 1998  Helge Deller deller@gmx.de
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of
+the License or (at your option) version 3 or any later version
+accepted by the membership of KDE e.V. (or its successor approved
+by the membership of KDE e.V.), which shall act as a proxy 
+defined in Section 14 of version 3 of the license.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 #include <unistd.h>
 #include <sys/types.h>

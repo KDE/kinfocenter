@@ -1,19 +1,22 @@
+
 /*
+Copyright 1999  Helge Deller deller@gmx.de
 
-    This file will be included by memory.cpp !
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of
+the License or (at your option) version 3 or any later version
+accepted by the membership of KDE e.V. (or its successor approved
+by the membership of KDE e.V.), which shall act as a proxy 
+defined in Section 14 of version 3 of the license.
 
-    HP-UX is really ugly to retrieve information from !
-    Implemented on 24.04.1999 by Helge Deller (deller@gmx.de)
-    Tested on an HP9000/715/64 under HPUX-10.20.
-    Updated for QT 2.0 on 27.04.1999 (deller)
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-    Sorry, but I don't know, who implemented the first (little) version of 
-    update(), but it showed wrong sizes !
-
-    Many thanks goes also to Mike Romberg, who implemented such functions in
-    the program "xosview". Here's his copyright:
-    Copyright (c) 1994, 1995 by Mike Romberg ( romberg@fsl.noaa.gov )
-
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #include <stdio.h>

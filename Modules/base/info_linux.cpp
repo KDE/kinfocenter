@@ -1,19 +1,23 @@
+
 /*
+Copyright 1998  Helge Deller deller@gmx.de
 
- Linux-specific Information about the Hardware.
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of
+the License or (at your option) version 3 or any later version
+accepted by the membership of KDE e.V. (or its successor approved
+by the membership of KDE e.V.), which shall act as a proxy 
+defined in Section 14 of version 3 of the license.
 
- (C) Copyright 1998-2001 by Helge Deller <deller@gmx.de>
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
- To do (maybe?):
- - include Information about XFree86 and/or Accelerated X
- (needs to change configure-script, to see, if Header-files are available !)
- - maybe also include information about the video-framebuffer devices
- - rewrite detection-routines (maybe not to use the /proc-fs)
- - more & better sound-information
-
- /dev/sndstat support added: 1998-12-08 Duncan Haldane (f.d.m.haldane@cwix.com)
-
- */
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 #include <unistd.h>
 #include <syscall.h>
