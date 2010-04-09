@@ -245,7 +245,7 @@ void KInfoCenter::exportClickedSlot()
   }
   
   QTextStream exportTextStream( &exportFile );
-  exportTextStream << (i18n("Export information for %1",m_contain->currentModulesName()))
+  exportTextStream << (i18n("Export information for %1",m_contain->modulesName()))
   << "\n\n" << m_contain->exportText() << endl;
   
   exportFile.close();
@@ -256,19 +256,6 @@ void KInfoCenter::aboutKcmSlot()
 {
   KAboutApplicationDialog kcmAboutDialog(m_contain->kcmAboutData());
   kcmAboutDialog.exec();
-}
-
-void KInfoCenter::searchSlot()
-{
-  QString searchText = m_searchText->text();
-  
-  if(searchText.isEmpty())
-  {
-    KInfoCenter::showError(this,i18n("You have not entered any search string."));
-    return;
-  }
-  m_sideMenu->filterSideMenuSlot(searchText);
-  m_sideMenu->expandAllSlot();
 }
 
 void KInfoCenter::showError(QWidget *parent, QString errorMessage)

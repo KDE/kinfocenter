@@ -135,6 +135,7 @@ KcmTreeItem *KcmTreeItem::containsCategory(QString category)
 
 const KCModuleInfo KcmTreeItem::kcm() const 
 {
+  if(isValid() == false) return KCModuleInfo();
   return *m_moduleInfo;
 }
 

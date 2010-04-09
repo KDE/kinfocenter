@@ -62,6 +62,7 @@ class SidePanel : public QTreeView
     void collapseAllSlot();
     void expandAllSlot();	
     void filterSideMenuSlot(const QString &);
+    void resetSearchSlot();
 
   private:
     void createMenuActions();

@@ -81,7 +81,6 @@ class KInfoCenter : public KXmlGuiWindow
     void helpClickedSlot();
     void exportClickedSlot();
     void aboutKcmSlot();
-    void searchSlot();
     
     static void showError(QWidget *,QString);
     

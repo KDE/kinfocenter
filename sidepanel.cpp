@@ -32,7 +32,7 @@ SidePanel::SidePanel(QWidget *parent) : QTreeView(parent)
   
   createMenuActions();
   
-  setMouseTracking( true );
+  setMouseTracking(true);
   setModel(m_proxyModel);
   connect(this,SIGNAL(clicked(const QModelIndex &)),this,SLOT(clickedSlot(const QModelIndex &)));
 }
@@ -83,7 +83,7 @@ void SidePanel::filterSideMenuSlot(const QString &pattern)
 void SidePanel::createMenuActions() 
 { 
   resetAct = new QAction(i18n("Reset Search"), this);
-  connect(resetAct, SIGNAL(triggered()), this, SLOT(filterSideMenuSlot("")));
+  connect(resetAct, SIGNAL(triggered()), this, SLOT(resetSearchSlot()));
   
   expAct = new QAction(i18n("Expand All Categories"), this);
   connect(expAct, SIGNAL(triggered()), this, SLOT(expandAllSlot()));
@@ -115,4 +115,9 @@ void SidePanel::expandAllSlot()
 QStringList SidePanel::allChildrenKeywords()
 {
   return m_model->allChildrenKeywords();
+}
+
+void SidePanel::resetSearchSlot()
+{
+  filterSideMenuSlot("");
 }

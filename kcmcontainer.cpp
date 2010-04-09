@@ -96,7 +96,7 @@ const QString KcmContainer::exportText()
   return m_mod->realModule()->exportText(); 
 }
 
-QString KcmContainer::currentModulesName()
+QString KcmContainer::modulesName()
 {
   return m_modInfo.moduleName();
 }
