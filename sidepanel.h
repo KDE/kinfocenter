@@ -50,6 +50,7 @@ class SidePanel : public QTreeView
     void changeToRootSelection();
     QModelIndex mapProxySource(QModelIndex);
     void filterSideMenu(QString);
+    QStringList allChildrenKeywords();
     
   signals:
     void clicked(const KcmTreeItem *);
@@ -60,7 +61,7 @@ class SidePanel : public QTreeView
   public slots:
     void collapseAllSlot();
     void expandAllSlot();	
-    void resetSlot();
+    void filterSideMenuSlot(const QString &);
 
   private:
     void createMenuActions();

@@ -62,6 +62,7 @@ class KcmTreeItem
     
     QString whatsThis() const;
     bool childrenRegExp(QRegExp pattern);
+    QStringList keywords();
     
   private:
      QList<KcmTreeItem *> m_children;

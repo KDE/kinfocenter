@@ -45,5 +45,5 @@ bool InfoKcmProxyModel::filterAcceptsRow(int sourceRow, const QModelIndex &sourc
   if(indexItem->isValid() == false) {
     if(indexItem->childrenRegExp(filterRegExp()) == true) return true;
   }
-  return (sourceModel()->data(index).toString().contains(filterRegExp()));
+  return ((indexItem->keywords().filter(filterRegExp()).count() > 0));
 }

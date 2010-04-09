@@ -67,16 +67,23 @@ QModelIndex SidePanel::mapProxySource(QModelIndex index)
   return m_proxyModel->mapToSource(index);
 }
 
-void SidePanel::filterSideMenu(QString pattern)
+void SidePanel::filterSideMenuSlot(const QString &pattern)
 {
-  if(pattern.isEmpty() == true) return;
+  if(pattern.isEmpty())
+  {
+    collapseAll();
+  }
+  else 
+  {
+    expandAll();
+  }
   m_proxyModel->setFilterRegExp(QRegExp(pattern,Qt::CaseInsensitive));
 }
 
 void SidePanel::createMenuActions() 
 { 
   resetAct = new QAction(i18n("Reset Search"), this);
-  connect(resetAct, SIGNAL(triggered()), this, SLOT(resetSlot()));
+  connect(resetAct, SIGNAL(triggered()), this, SLOT(filterSideMenuSlot("")));
   
   expAct = new QAction(i18n("Expand All Categories"), this);
   connect(expAct, SIGNAL(triggered()), this, SLOT(expandAllSlot()));
@@ -105,8 +112,7 @@ void SidePanel::expandAllSlot()
   expandAll();
 }
 
-void SidePanel::resetSlot()
+QStringList SidePanel::allChildrenKeywords()
 {
-  m_proxyModel->setFilterRegExp(QRegExp("",Qt::CaseInsensitive));
-  collapseAllSlot();
+  return m_model->allChildrenKeywords();
 }

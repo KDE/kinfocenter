@@ -166,10 +166,16 @@ bool KcmTreeItem::childrenRegExp(QRegExp pattern)
 {
   foreach(KcmTreeItem *item, m_children)
   {
-    if(item->data().contains(pattern) == true)
+    if((item->keywords().filter(pattern).count() > 0) == true)
     {
       return true;
     }
   }
   return false;
+}
+
+QStringList KcmTreeItem::keywords()
+{
+  if(isValid() == false) return QStringList();
+  return m_moduleInfo->keywords();
 }

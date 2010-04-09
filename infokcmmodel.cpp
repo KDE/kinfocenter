@@ -207,3 +207,29 @@ QModelIndex InfoKcmModel::firstValid(KcmTreeItem *kcmItem) const
   }
   return QModelIndex();
 }
+
+QStringList InfoKcmModel::allChildrenKeywords()
+{
+  return childrenKeywords(m_root);
+}
+
+QStringList InfoKcmModel::childrenKeywords(KcmTreeItem *kcmItem)
+{
+  QStringList childKeywords;
+  
+  int rows = kcmItem->childCount();
+  for(int i=0;i<rows;i++)  
+  {
+    KcmTreeItem *item = kcmItem->child(i);
+    if(item->isValid() ==  false)
+    {
+      childKeywords = childKeywords + childrenKeywords(item);
+    } 
+    else 
+    {
+      childKeywords = childKeywords + item->keywords();
+    }
+  }
+  return childKeywords;
+}
+  

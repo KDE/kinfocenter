@@ -46,14 +46,14 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
   connect(m_sideMenu,SIGNAL(clicked(const KcmTreeItem *)),this,SLOT(itemClickedSlot(const KcmTreeItem *)));
   
   //SearchBox
-  connect(m_searchText,SIGNAL(returnPressed()),this,SLOT(searchSlot()));
+  connect(m_searchText, SIGNAL(textChanged(const QString&)), m_sideMenu, SLOT(filterSideMenuSlot(const QString&)));
   
   //Buttons
   connect(m_helpButton,SIGNAL(clicked(bool)),this,SLOT(helpClickedSlot()));
   connect(m_exportButton,SIGNAL(clicked(bool)),this,SLOT(exportClickedSlot()));
-  connect(m_goButton,SIGNAL(clicked(bool)),this,SLOT(searchSlot()));
   
   //Startup
+  m_searchText->completionObject()->setItems(m_sideMenu->allChildrenKeywords());
   m_sideMenu->setFocus(Qt::OtherFocusReason);
   m_sideMenu->changeToRootSelection();
   
@@ -69,12 +69,11 @@ KInfoCenter::~KInfoCenter()
   disconnect(m_sideMenu,SIGNAL(clicked(const KcmTreeItem *)),this,SLOT(itemClickedSlot(const KcmTreeItem *)));
   
   //SearchBox
-  disconnect(m_searchText,SIGNAL(editingFinished()),this,SLOT(searchSlot()));
+  disconnect(m_searchText, SIGNAL(textChanged(const QString&)), m_sideMenu, SLOT(filterSideMenuSlot(const QString&)));
   
   //Buttons
   disconnect(m_helpButton,SIGNAL(clicked(bool)),this,SLOT(helpClickedSlot()));
   disconnect(m_exportButton,SIGNAL(clicked(bool)),this,SLOT(exportClickedSlot()));
-  disconnect(m_goButton,SIGNAL(clicked(bool)),this,SLOT(searchSlot()));
   
   closeDimentions(this->size());
 }
@@ -104,12 +103,11 @@ void KInfoCenter::createButtonBar()
   QHBoxLayout *m_bbLayout = new QHBoxLayout(m_buttonBar);
   m_buttonBar->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum);
   
- // m_buttonBar->setFixedHeight(35);
-  
   m_helpButton = new QPushButton(i18nc("Help button label","Help"));
   m_helpButton->setIcon(KIcon("help"));
   m_helpButton->setEnabled(false);
   m_helpButton->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
+  m_helpButton->setToolTip(i18nc("Help Button ToolTip", "Opens help browser for selected module"));
   
   QWidget *m_blank = new QWidget();
   m_blank->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
@@ -118,6 +116,7 @@ void KInfoCenter::createButtonBar()
   m_exportButton->setIcon(KIcon("document-export"));
   m_exportButton->setEnabled(false);
   m_exportButton->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
+  m_exportButton->setToolTip(i18nc("Export Button ToolTip", "Exports information for selected module"));
   
   m_bbLayout->addWidget(m_helpButton);
   m_bbLayout->addWidget(m_blank);
@@ -146,7 +145,6 @@ void KInfoCenter::createMainFrame()
   m_splitter->setStretchFactor(1, 1);
   
   m_cWidget->layout()->addWidget(mainDisplay);
-
 }
   
 void KInfoCenter::CreateMenuFrame() 
@@ -154,17 +152,18 @@ void KInfoCenter::CreateMenuFrame()
   QWidget *sideFrame = new QWidget(m_splitter);
   sideFrame->setContentsMargins(0,0,0,0);
   
-  QGridLayout *menuLayout = new QGridLayout(sideFrame);
+  QVBoxLayout *menuLayout = new QVBoxLayout(sideFrame);
   
   m_searchText = new KLineEdit(sideFrame);
-  menuLayout->addWidget(m_searchText,0,0,1,1);
+  m_searchText->setClearButtonShown( true );
+  m_searchText->setClickMessage( i18nc( "Search Bar Click Message", "Search" ) );
+  m_searchText->setCompletionMode( KGlobalSettings::CompletionPopup );
+  menuLayout->addWidget(m_searchText);
   
-  m_goButton = new QPushButton(i18nc("Search Button","Search"));
-  m_goButton->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
-  menuLayout->addWidget(m_goButton,0,1,1,1);
+  m_searchText->completionObject()->setIgnoreCase( true );
   
   m_sideMenu = new SidePanel(sideFrame);
-  menuLayout->addWidget(m_sideMenu,1,0,1,2);
+  menuLayout->addWidget(m_sideMenu);
   
   m_splitter->addWidget(sideFrame);
 }
@@ -268,7 +267,7 @@ void KInfoCenter::searchSlot()
     KInfoCenter::showError(this,i18n("You have not entered any search string."));
     return;
   }
-  m_sideMenu->filterSideMenu(searchText);
+  m_sideMenu->filterSideMenuSlot(searchText);
   m_sideMenu->expandAllSlot();
 }
 

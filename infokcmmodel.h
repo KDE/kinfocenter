@@ -60,10 +60,12 @@ class InfoKcmModel : public QAbstractItemModel
     Qt::ItemFlags flags(const QModelIndex &) const;
     
     QModelIndex firstValid() const;
-    QModelIndex firstValid(KcmTreeItem *kcmItem) const;
+    QStringList allChildrenKeywords();
     
   private:    
     void createTreeItems();
+    QModelIndex firstValid(KcmTreeItem *kcmItem) const;
+    QStringList childrenKeywords(KcmTreeItem *kcmItem);
     
     KService::List m_moduleList;
     KcmTreeItem *m_root;
