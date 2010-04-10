@@ -16,6 +16,7 @@ Name[pt]=Dispositivos IEEE 1394
 Name[pt_BR]=Dispositivos IEEE 1394
 Name[sv]=IEEE 1394-enheter
 Name[uk]=Пристрої IEEE 1394
+Name[x-test]=xxIEEE 1394 Devicesxx
 
 Comment=Attached IEEE 1394 devices
 Comment[nb]=Tilkoblede IEEE 1394-enheter
@@ -24,6 +25,7 @@ Comment[pt]=Dispositivos IEEE 1394
 Comment[pt_BR]=Dispositivos IEEE 1394 conectados
 Comment[sv]=Anslutna IEEE 1394-enheter
 Comment[uk]=Під’єднані пристрої IEEE 1394
+Comment[x-test]=xxAttached IEEE 1394 devicesxx
 
 X-KDE-Keywords=1394,Firewire,devices,viewer,control
 X-KDE-Keywords[be]=Прылады,Прылада,Прагляд,Праглядальнік,Кіраванне,1394,Firewire,devices,viewer,control

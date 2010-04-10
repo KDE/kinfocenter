@@ -16,6 +16,7 @@ Name[pt]=Visualizador de Dispositivos
 Name[pt_BR]=Visualizador de dispositivos
 Name[sv]=Enhetsvisning
 Name[uk]=Переглядач пристроїв
+Name[x-test]=xxDevice Viewerxx
 
 Comment=Device Viewer
 Comment[nb]=Office-viser
@@ -24,6 +25,7 @@ Comment[pt]=Visualizador de Dispositivos
 Comment[pt_BR]=Visualizador de dispositivos
 Comment[sv]=Enhetsvisning
 Comment[uk]=Переглядач пристроїв
+Comment[x-test]=xxDevice Viewerxx
 
 X-KDE-Keywords=device,devices
 X-DocPath=kinfocenter/devinfo/index.html

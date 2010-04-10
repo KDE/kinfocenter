@@ -15,6 +15,7 @@ Name[pt]=Resumo
 Name[pt_BR]=Resumo
 Name[sv]=Översikt
 Name[uk]=Резюме
+Name[x-test]=xxSummaryxx
 
 Comment=Hardware Information Summary
 Comment[nb]=Maskinvare&informasjon
@@ -23,6 +24,7 @@ Comment[pt]=Resumo de Informações do 'Hardware'
 Comment[pt_BR]=Resumo de informações do 'Hardware'
 Comment[sv]=Översikt av hårdvaruinformation
 Comment[uk]=Резюме відомостей щодо обладнання
+Comment[x-test]=xxHardware Information Summaryxx
 
 X-KDE-Keywords=device,devices
 Categories=Qt;KDE;X-KDE-information;

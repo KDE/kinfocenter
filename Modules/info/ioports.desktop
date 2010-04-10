@@ -18,6 +18,7 @@ Name[pt]=Portos de E/S
 Name[pt_BR]=Portas de E/S
 Name[sv]=I/O-portar
 Name[uk]=Порти В/В
+Name[x-test]=xxIO-Portsxx
 
 Comment=IO-port information
 Comment[nb]=IO-portinformasjon
@@ -26,6 +27,7 @@ Comment[pt]=Informação sobre os portos de E/S
 Comment[pt_BR]=Informações sobre as portas de E/S
 Comment[sv]=Information om I/O-portar
 Comment[uk]=Інформація щодо портів вводу/виводу
+Comment[x-test]=xxIO-port informationxx
 
 X-KDE-Keywords=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Information
 X-KDE-Keywords[af]=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Informasie

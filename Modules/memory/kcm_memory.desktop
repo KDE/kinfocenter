@@ -16,6 +16,7 @@ Name[pt]=Memória
 Name[pt_BR]=Memória
 Name[sv]=Minne
 Name[uk]=Пам'ять
+Name[x-test]=xxMemoryxx
 
 Comment=Memory information
 Comment[nb]=Minneinformasjon
@@ -24,6 +25,7 @@ Comment[pt]=Informações sobre a memória
 Comment[pt_BR]=Informações sobre a memória
 Comment[sv]=Minnesinformation
 Comment[uk]=Інформація щодо пам'яті
+Comment[x-test]=xxMemory informationxx
 
 X-KDE-Keywords=Memory,RAM,Virtual memory,Physical memory,Shared memory,Swap,System Information
 X-KDE-Keywords[af]=Memory,RAM,Virtual memory,Physical memory,Shared memory,Swap,System Informasie

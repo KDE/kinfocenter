@@ -18,6 +18,7 @@ Name[pt]=Processador
 Name[pt_BR]=Processador
 Name[sv]=Processor
 Name[uk]=Процесор
+Name[x-test]=xxProcessorxx
 Name[zh_TW]=處理器
 
 Comment=Processor information
@@ -27,6 +28,7 @@ Comment[pt]=Informação do processador
 Comment[pt_BR]=Informações sobre o processador
 Comment[sv]=Processorinformation
 Comment[uk]=Інформація щодо процесора
+Comment[x-test]=xxProcessor informationxx
 
 X-KDE-Keywords=Processor,CPU,FPU,MHz,System Information
 X-KDE-Keywords[af]=Processor,CPU,FPU,MHz,System Informasie

@@ -18,6 +18,7 @@ Name[pt]=Canais de DMA
 Name[pt_BR]=Canais DMA
 Name[sv]=DMA-kanaler
 Name[uk]=Канали DMA
+Name[x-test]=xxDMA-Channelsxx
 
 Comment=DMA information
 Comment[nb]=DMA-informasjon
@@ -26,6 +27,7 @@ Comment[pt]=Informação do DMA
 Comment[pt_BR]=Informação do DMA
 Comment[sv]=DMA-information
 Comment[uk]=Інформація щодо DMAпристрої
+Comment[x-test]=xxDMA informationxx
 
 X-KDE-Keywords=dma,DMA-Channels,System Information
 X-KDE-Keywords[af]=dma,DMA-Channels,System Informasie

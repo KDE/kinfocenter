@@ -17,6 +17,7 @@ Name[pt]=Servidor X
 Name[pt_BR]=Servidor X
 Name[sv]=X-server
 Name[uk]=Сервер X
+Name[x-test]=xxX-Serverxx
 
 Comment=X-Server information
 Comment[nb]=X-tjenerinformasjon
@@ -25,6 +26,7 @@ Comment[pt]=Informações sobre o servidor X
 Comment[pt_BR]=Informações sobre o servidor X
 Comment[sv]=X-serverinformation
 Comment[uk]=Інформація щодо сервера X
+Comment[x-test]=xxX-Server informationxx
 
 X-KDE-Keywords=X,X-Server,XServer,XFree86,Display,VideoCard,System Information
 X-KDE-Keywords[be]=Сервер X,Дысплей,Відэакарта,Сістэмная інфармацыя,X,X-Server,XServer,XFree86,Display,VideoCard,System Information
