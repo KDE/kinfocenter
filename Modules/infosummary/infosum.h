@@ -1,8 +1,8 @@
 
 /*
- *  devinfo.h
+ *  infosum.h
  *
- *  Copyright (C) 2009 David Hubner <hubnerd@ntlworld.com>
+ *  Copyright (C) 2010 David Hubner <hubnerd@ntlworld.com>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -67,11 +67,8 @@ class InfoSumPlugin : public KCModule
     void createCpuBox();
     void createMemBox();
     void createHdBox();
-    void appendInfo(QString info);
-    void appendBreak();
     
     QVBoxLayout *m_layout;
-    QString m_exportInfo;
 };
 
 #endif //__INFOSUM__

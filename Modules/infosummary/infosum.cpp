@@ -1,8 +1,8 @@
 
 /*
- *  devinfo.cpp
+ *  infosum.cpp
  *
- *  Copyright (C) 2009 David Hubner <hubnerd@ntlworld.com>
+ *  Copyright (C) 2010 David Hubner <hubnerd@ntlworld.com>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -36,9 +36,6 @@ InfoSumPlugin::InfoSumPlugin(QWidget *parent, const QVariantList &)  :
 		  
   setAboutData(about);
   createDisplay();
-
-  setExportText(m_exportInfo);
-  setButtons(Export);
 }
 
 InfoSumPlugin::~InfoSumPlugin() 
@@ -68,11 +65,7 @@ void InfoSumPlugin::createOsBox()
   osWidget->setLabelOne(osInfo->osVersion());
   osWidget->setLabelTwo(QString(KDE_VERSION_STRING));
   osWidget->setLabelThree(osInfo->hostName());
-  
-  appendInfo(i18n("OS Version") + "  " + osInfo->osVersion() + "\n");
-  appendInfo(i18n("KDE SC Version") + "  " + KDE_VERSION_STRING + "\n"); 
-  appendInfo(i18n("Hostname") + "  " + osInfo->hostName() + "\n"); 
-  appendBreak();
+  osWidget->setWhatsThis(i18nc("OS whats this","This shows information about your Operating System"));
   
   m_layout->addWidget(osWidget);
   
@@ -94,12 +87,8 @@ void InfoSumPlugin::createCpuBox()
     
     cpuWidget->setLabelOne(dev.product());
     cpuWidget->setLabelTwo(QString::number(prodev->number()));
-    cpuWidget->setLabelThree(QString::number(prodev->maxSpeed()));
-    
-    appendInfo(i18n("Processor") + "  " + dev.product() + "\n");
-    appendInfo(i18n("Processor Number") + "  " + QString::number(prodev->number()) + "\n"); 
-    appendInfo(i18n("Processor Max Speed") + "  " + QString::number(prodev->maxSpeed()) + "\n"); 
-    appendBreak();
+    cpuWidget->setLabelThree(QString::number(prodev->maxSpeed()));   
+    cpuWidget->setWhatsThis(i18nc("CPU whats this","This shows information about a specific CPU in your computer"));
     
     m_layout->addWidget(cpuWidget);
   }
@@ -148,26 +137,12 @@ void InfoSumPlugin::createHdBox()
       case Solid::StorageDrive::Platform:
 	bus = i18n("Platform"); break;
       default:
-	bus = i18n("Unknown"); 
+	bus = i18nc("Unknown device","Unknown"); 
     }
     
-    appendInfo(i18n("Drive Title") + "  " + dev.product() + "\n");
-    appendInfo(i18n("Storage Size") + "  " + KGlobal::locale()->formatByteSize(stodev->size()) + "\n"); 
-    appendInfo(i18n("Bus") + "  " + bus + "\n");
-    appendBreak();
-    
     stoWidget->setLabelThree(bus);
+    stoWidget->setWhatsThis(i18nc("Hard Drive Whats This","This shows information about a specific hard drive in your computer"));
+    
     m_layout->addWidget(stoWidget);
   }
 }
-
-void InfoSumPlugin::appendInfo(QString info)
-{
-  m_exportInfo = m_exportInfo + info;
-}
-
-void InfoSumPlugin::appendBreak()
-{
-  m_exportInfo = m_exportInfo + "\n";
-}
- 
