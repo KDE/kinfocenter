@@ -11,6 +11,7 @@ X-KDE-PluginKeyword=cpu
 X-KDE-ParentApp=kinfocenter
 
 Name=Processor
+Name[es]=Procesador
 Name[nb]=Prosessor
 Name[nds]=Perzesser
 Name[nn]=Prosessor
@@ -22,6 +23,7 @@ Name[x-test]=xxProcessorxx
 Name[zh_TW]=處理器
 
 Comment=Processor information
+Comment[es]=Información del procesador
 Comment[nb]=Prosessorinformasjon
 Comment[nn]=Prosessorinformasjon
 Comment[pt]=Informação do processador

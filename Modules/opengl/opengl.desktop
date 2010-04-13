@@ -10,6 +10,7 @@ X-KDE-Library=kcm_opengl
 X-KDE-ParentApp=kinfocenter
 
 Name=OpenGL
+Name[es]=OpenGPL
 Name[nb]=OpenGL
 Name[nn]=OpenGL
 Name[pt]=OpenGL
@@ -19,6 +20,7 @@ Name[uk]=OpenGL
 Name[x-test]=xxOpenGLxx
 
 Comment=OpenGL information
+Comment[es]=Información de OpenGL
 Comment[nb]=OpenGL-informasjon
 Comment[nn]=OpenGL-informasjon
 Comment[pt]=Informação sobre OpenGL

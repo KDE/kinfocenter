@@ -10,6 +10,7 @@ X-KDE-Library=kcm_samba
 X-KDE-ParentApp=kinfocenter
 
 Name=Samba Status
+Name[es]=Estado de Samba
 Name[nb]=Samba-status
 Name[nn]=Samba-status
 Name[pt]=Estado do Samba
@@ -19,6 +20,7 @@ Name[uk]=Стан Samba
 Name[x-test]=xxSamba Statusxx
 
 Comment=Samba status monitor
+Comment[es]=Monitor de estado de Samba
 Comment[nb]=Overvåking av Samba-status
 Comment[nn]=Overvaking av Samba-status
 Comment[pt]=Monitor do estado do Samba
