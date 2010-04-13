@@ -97,7 +97,9 @@ class KInfoCenter : public KXmlGuiWindow
 
     KcmContainer *m_contain;
     QSplitter *m_splitter;
+    
     QAction *m_aboutKcm;
+    QAction *m_searchAction;
     
     QWidget *m_cWidget;
     KLineEdit *m_searchText;

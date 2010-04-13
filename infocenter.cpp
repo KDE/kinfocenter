@@ -229,23 +229,26 @@ void KInfoCenter::helpClickedSlot()
 
 void KInfoCenter::exportClickedSlot() 
 { 
+  QString moduleName = m_contain->modulesName();
+  
   if(m_contain->exportText().isEmpty())
   {
     KInfoCenter::showError(this,i18n("Export of the module has produced no output."));
     return;
   }
   
-  QString fileName = KFileDialog::getSaveFileName(QString(),QString(),this);
+  QString fileName = KFileDialog::getSaveFileName(KUrl(moduleName + ".txt"),QString(),this);
   if(fileName.isEmpty()) return;
   
   QFile exportFile(fileName);
 
   if(!exportFile.open(QIODevice::WriteOnly)){
     KInfoCenter::showError(this,i18n("Unable to open file to write export information"));
+    return;
   }
   
   QTextStream exportTextStream( &exportFile );
-  exportTextStream << (i18n("Export information for %1",m_contain->modulesName()))
+  exportTextStream << (i18n("Export information for %1",moduleName))
   << "\n\n" << m_contain->exportText() << endl;
   
   exportFile.close();
