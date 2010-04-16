@@ -82,7 +82,7 @@ void SidePanel::filterSideMenuSlot(const QString &pattern)
 
 void SidePanel::createMenuActions() 
 { 
-  resetAct = new QAction(i18n("Reset Search"), this);
+  resetAct = new QAction(i18n("Clear Search"), this);
   connect(resetAct, SIGNAL(triggered()), this, SLOT(resetSearchSlot()));
   
   expAct = new QAction(i18n("Expand All Categories"), this);

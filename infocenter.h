@@ -47,6 +47,7 @@
 #include <KMessageBox>
 #include <KFileDialog>
 #include <KLineEdit>
+#include <KShortcut>
 
 //QT
 #include <QWidget>
@@ -57,6 +58,7 @@
 #include <QProcess>
 #include <QTextStream>
 #include <QFile>
+#include <QKeySequence>
 
 //Local
 #include "sidepanel.h"
@@ -98,8 +100,8 @@ class KInfoCenter : public KXmlGuiWindow
     KcmContainer *m_contain;
     QSplitter *m_splitter;
     
-    QAction *m_aboutKcm;
-    QAction *m_searchAction;
+    KAction *m_aboutKcm;
+    KAction *m_searchBoxAction;
     
     QWidget *m_cWidget;
     KLineEdit *m_searchText;

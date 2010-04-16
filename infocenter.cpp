@@ -35,7 +35,6 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
   Q_UNUSED(cLayout); // Is used but compiler is stupid
   
   cLayout->setSpacing(0);
-  
   createMainFrame();
   createButtonBar();
   
@@ -47,12 +46,16 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
   
   //SearchBox
   connect(m_searchText, SIGNAL(textChanged(const QString&)), m_sideMenu, SLOT(filterSideMenuSlot(const QString&)));
+  connect(m_searchBoxAction, SIGNAL(triggered(Qt::MouseButtons, Qt::KeyboardModifiers)),m_searchText, SLOT(setFocus()));
   
   //Buttons
   connect(m_helpButton,SIGNAL(clicked(bool)),this,SLOT(helpClickedSlot()));
   connect(m_exportButton,SIGNAL(clicked(bool)),this,SLOT(exportClickedSlot()));
   
-  //Startup
+  //Menu
+  connect(m_aboutKcm, SIGNAL(triggered(bool) ), this, SLOT(aboutKcmSlot()));
+  
+  //Startup 
   m_searchText->completionObject()->setItems(m_sideMenu->allChildrenKeywords());
   m_sideMenu->setFocus(Qt::OtherFocusReason);
   m_sideMenu->changeToRootSelection();
@@ -70,10 +73,14 @@ KInfoCenter::~KInfoCenter()
   
   //SearchBox
   disconnect(m_searchText, SIGNAL(textChanged(const QString&)), m_sideMenu, SLOT(filterSideMenuSlot(const QString&)));
+  disconnect(m_searchBoxAction, SIGNAL(triggered(Qt::MouseButtons, Qt::KeyboardModifiers)),m_searchText, SLOT(setFocus()));
   
   //Buttons
   disconnect(m_helpButton,SIGNAL(clicked(bool)),this,SLOT(helpClickedSlot()));
   disconnect(m_exportButton,SIGNAL(clicked(bool)),this,SLOT(exportClickedSlot()));
+  
+  //Menu
+  disconnect(m_aboutKcm, SIGNAL(triggered(bool) ), this, SLOT(aboutKcmSlot()));
   
   closeDimentions(this->size());
 }
@@ -87,7 +94,6 @@ void KInfoCenter::initMenuBar()
   m_aboutKcm->setText(i18nc("Information about current module located in about menu","About Current Information Module"));
   m_aboutKcm->setIcon(KIcon("help"));
   m_aboutKcm->setEnabled(false);
-  connect(m_aboutKcm, SIGNAL(triggered(bool) ), this, SLOT(aboutKcmSlot()));
   
   createGUI();
 
@@ -155,16 +161,21 @@ void KInfoCenter::CreateMenuFrame()
   QVBoxLayout *menuLayout = new QVBoxLayout(sideFrame);
   
   m_searchText = new KLineEdit(sideFrame);
-  m_searchText->setClearButtonShown( true );
+  m_searchText->setClearButtonShown(true);
   m_searchText->setClickMessage( i18nc( "Search Bar Click Message", "Search" ) );
   m_searchText->setCompletionMode( KGlobalSettings::CompletionPopup );
-  menuLayout->addWidget(m_searchText);
+  m_searchText->completionObject()->setIgnoreCase(true);
   
-  m_searchText->completionObject()->setIgnoreCase( true );
+  m_searchBoxAction = new KAction(sideFrame);
+  m_searchBoxAction->setDefaultWidget(m_searchText);
+  m_searchBoxAction->setShortcut(KShortcut(QKeySequence(Qt::CTRL + Qt::Key_F)));
+  actionCollection()->addAction("searchText",m_searchBoxAction);
+  m_searchText->show();
   
   m_sideMenu = new SidePanel(sideFrame);
-  menuLayout->addWidget(m_sideMenu);
   
+  menuLayout->addWidget(m_searchText);
+  menuLayout->addWidget(m_sideMenu);
   m_splitter->addWidget(sideFrame);
 }
   
@@ -186,7 +197,6 @@ void KInfoCenter::closeDimentions(const QSize winSizes)
 
   config.sync();
 }
-
 
 void KInfoCenter::itemClickedSlot(const KcmTreeItem *item) 
 { 
