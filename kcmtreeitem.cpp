@@ -178,5 +178,6 @@ bool KcmTreeItem::childrenRegExp(QRegExp pattern)
 QStringList KcmTreeItem::keywords()
 {
   if(isValid() == false) return QStringList();
+  if(m_moduleInfo->keywords().isEmpty()) return QStringList(data());
   return m_moduleInfo->keywords();
 }
