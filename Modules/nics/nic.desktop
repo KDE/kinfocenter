@@ -5,6 +5,7 @@ X-KDE-ServiceTypes=KCModule
 X-DocPath=kinfocenter/nics/index.html
 Icon=network-workgroup
 
+X-KDE-KInfoCenter-Category=Network Information
 X-KDE-Library=kcm_nic
 X-KDE-ParentApp=kinfocenter
 
