@@ -3,7 +3,7 @@ Exec=kcmshell4 opengl
 Type=Service
 X-KDE-ServiceTypes=KCModule
 X-DocPath=kinfocenter/opengl/index.html
-Icon=kcmopengl
+Icon=video-display
 
 X-KDE-KInfoCenter-Category=Graphical Information
 X-KDE-Library=kcm_opengl

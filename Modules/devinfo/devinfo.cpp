@@ -37,21 +37,24 @@ DevInfoPlugin::DevInfoPlugin(QWidget *parent, const QVariantList &)  :
 		  
   setAboutData(about);
   
+  
   //Layout
   layout = new QGridLayout(this);
   
   //top 
   QSplitter *split = new QSplitter(Qt::Horizontal, this);
+ 
   split->setChildrenCollapsible(false);
-
+  
   InfoPanel *info = new InfoPanel(split, this);
   DeviceListing *devList = new DeviceListing(split, info, this);
   
   split->setStretchFactor(1,1);
  
   //bottom
-  QWidget *bottom = new QWidget(this);  
-  bottom->setMaximumHeight(30);
+  QWidget *bottom = new QWidget(this); 
+  bottom->setContentsMargins(0,0,0,0);
+  bottom->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum);
   QHBoxLayout *bottomLayout = new QHBoxLayout(bottom);
 
   QFont boldFont;

@@ -1,10 +1,10 @@
 
 add_subdirectory( usbview )
 add_subdirectory( infosummary )
-add_subdirectory( nicviewer )
 add_subdirectory( memory )
 add_subdirectory( devinfo )
 add_subdirectory( info )
+add_subdirectory( nics )
 
 if(NOT WIN32)
   add_subdirectory( samba )
