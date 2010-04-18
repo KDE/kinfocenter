@@ -93,7 +93,7 @@ QString KcmTreeItem::data()
   }
   else 
   {
-    return m_category;
+    return category();
   }
 }
 

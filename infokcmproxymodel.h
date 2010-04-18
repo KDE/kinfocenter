@@ -26,6 +26,9 @@
 //QT
 #include <QSortFilterProxyModel>
 
+//KDE
+#include <KDebug>
+
 //Local
 #include "kcmtreeitem.h"
 

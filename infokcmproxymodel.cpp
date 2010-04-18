@@ -39,11 +39,11 @@ bool InfoKcmProxyModel::lessThan(const QModelIndex &leftIndex, const QModelIndex
 
 bool InfoKcmProxyModel::filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const
 {
-  QModelIndex index= sourceModel()->index(sourceRow, 0, sourceParent);
+  QModelIndex index=sourceModel()->index(sourceRow, 0, sourceParent);
   KcmTreeItem *indexItem = static_cast<KcmTreeItem*>(index.internalPointer());
  
   if(indexItem->isValid() == false) {
     if(indexItem->childrenRegExp(filterRegExp()) == true) return true;
   }
-  return ((indexItem->keywords().filter(filterRegExp()).count() > 0));
+  return ((indexItem->keywords().filter(filterRegExp()).count() >= 0));
 }
