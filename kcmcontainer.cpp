@@ -55,6 +55,7 @@ void KcmContainer::setContainerLayout()
   m_centerWidget->setContentsMargins(0,0,0,0);
   
   QVBoxLayout *centerWidgetLayout = new QVBoxLayout(m_centerWidget);
+  centerWidgetLayout->setContentsMargins(0, 0, 0, 0);
    
   QFont bFont;
   bFont.setBold(true);

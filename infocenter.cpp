@@ -35,6 +35,7 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
   Q_UNUSED(cLayout); // Is used but compiler is stupid
   
   cLayout->setSpacing(0);
+  cLayout->setContentsMargins(0, 0, 0, 0);
   createMainFrame();
   createButtonBar();
   
@@ -106,7 +107,8 @@ void KInfoCenter::createButtonBar()
   QWidget *m_buttonBar = new QWidget();
   m_buttonBar->setContentsMargins(0,0,0,0);
   
-  QHBoxLayout *m_bbLayout = new QHBoxLayout(m_buttonBar);
+  QHBoxLayout *bbLayout = new QHBoxLayout(m_buttonBar);
+  bbLayout->setContentsMargins(0, 0, 0, 0);
   m_buttonBar->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum);
   
   m_helpButton = new QPushButton(i18nc("Help button label","Help"));
@@ -124,9 +126,9 @@ void KInfoCenter::createButtonBar()
   m_exportButton->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
   m_exportButton->setToolTip(i18nc("Export Button ToolTip", "Exports information for selected module"));
   
-  m_bbLayout->addWidget(m_helpButton);
-  m_bbLayout->addWidget(m_blank);
-  m_bbLayout->addWidget(m_exportButton);
+  bbLayout->addWidget(m_helpButton);
+  bbLayout->addWidget(m_blank);
+  bbLayout->addWidget(m_exportButton);
   
   m_cWidget->layout()->addWidget(m_buttonBar);
 }
@@ -159,6 +161,7 @@ void KInfoCenter::CreateMenuFrame()
   sideFrame->setContentsMargins(0,0,0,0);
   
   QVBoxLayout *menuLayout = new QVBoxLayout(sideFrame);
+  menuLayout->setContentsMargins(0, 0, 0, 0);
   
   m_searchText = new KLineEdit(sideFrame);
   m_searchText->setClearButtonShown(true);
