@@ -86,6 +86,15 @@ KInfoCenter::~KInfoCenter()
   closeDimentions(this->size());
 }
 
+bool KInfoCenter::eventFilter(QObject *watched, QEvent *event)
+{
+    if (watched == m_sideMenu && event->type() == QEvent::Move) {
+        m_contain->setKcmTopEdge(m_sideMenu->y());
+    }
+
+    return false;
+}
+
 void KInfoCenter::initMenuBar()
 { 
   KStandardAction::quit(this, SLOT(close()), actionCollection());
@@ -176,6 +185,7 @@ void KInfoCenter::CreateMenuFrame()
   m_searchText->show();
   
   m_sideMenu = new SidePanel(sideFrame);
+  m_sideMenu->installEventFilter(this);
   
   menuLayout->addWidget(m_searchText);
   menuLayout->addWidget(m_sideMenu);

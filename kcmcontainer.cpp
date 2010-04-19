@@ -22,10 +22,14 @@
 
 #include "kcmcontainer.h"
 
+#include <QStyle>
+
 KcmContainer::KcmContainer(QWidget *parent)
   : QScrollArea(parent),
+    m_titleLabel(NULL),
     m_centerWidget(NULL),
-    m_mod(NULL)
+    m_mod(NULL),
+    m_kcmTopEdge(-1)
 {
   setWidgetResizable( true );
   setFrameStyle( QFrame::NoFrame );
@@ -53,19 +57,21 @@ void KcmContainer::setContainerLayout()
   p.setColor(QPalette::Window, Qt::transparent);
   m_centerWidget->setPalette(p);
   m_centerWidget->setContentsMargins(0,0,0,0);
-  
+
   QVBoxLayout *centerWidgetLayout = new QVBoxLayout(m_centerWidget);
   centerWidgetLayout->setContentsMargins(0, 0, 0, 0);
-   
+
   QFont bFont;
   bFont.setBold(true);
-   
+
   m_titleLabel = new QLabel(m_centerWidget);
   m_titleLabel->setFont(bFont);
-  m_titleLabel->setFixedHeight(15);
-   
+  m_titleLabel->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
+  m_titleLabel->setContentsMargins(style()->pixelMetric(QStyle::PM_DefaultFrameWidth), 0, 0, 0);
+
   centerWidgetLayout->addWidget(m_titleLabel);  
-  setWidget(m_centerWidget); 
+  setWidget(m_centerWidget);
+  setKcmTopEdge(m_kcmTopEdge);
 }
 
 void KcmContainer::setKcm(const KCModuleInfo &info)
@@ -79,6 +85,19 @@ void KcmContainer::setKcm(const KCModuleInfo &info)
   
   m_mod->setWhatsThis(m_mod->quickHelp());
   m_centerWidget->layout()->addWidget(m_mod);
+}
+
+void KcmContainer::setKcmTopEdge(int y)
+{
+    m_kcmTopEdge = y;
+    if (m_kcmTopEdge < 0) {
+        return;
+    }
+
+    if (m_titleLabel) {
+        int spacing = style()->layoutSpacing(QSizePolicy::DefaultType, QSizePolicy::DefaultType, Qt::Vertical);
+        m_titleLabel->setMinimumHeight(m_kcmTopEdge - spacing);
+    }
 }
 
 void KcmContainer::setKcmTitle(const KCModuleInfo &info) 

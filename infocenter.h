@@ -78,6 +78,8 @@ class KInfoCenter : public KXmlGuiWindow
     KInfoCenter();
     ~KInfoCenter();
 
+    bool eventFilter(QObject *watched, QEvent *event);
+
   public slots:
     void itemClickedSlot(const KcmTreeItem *);
     void helpClickedSlot();

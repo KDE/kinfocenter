@@ -43,6 +43,7 @@ class KcmContainer : public QScrollArea
     ~KcmContainer();
     
     void setKcm(const KCModuleInfo &);
+    void setKcmTopEdge(int y);
     const QString helpPath() const;
     const KCModule::Buttons buttons() const;
     const KAboutData *kcmAboutData() const;
@@ -57,6 +58,7 @@ class KcmContainer : public QScrollArea
     QWidget *m_centerWidget;
     KCModuleProxy *m_mod;
     KCModuleInfo m_modInfo;
+    int m_kcmTopEdge;
 };
 
 #endif //__KCMCONTAINER__
