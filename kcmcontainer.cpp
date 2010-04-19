@@ -22,6 +22,7 @@
 
 #include "kcmcontainer.h"
 
+#include <QApplication>
 #include <QStyle>
 
 KcmContainer::KcmContainer(QWidget *parent)
@@ -75,16 +76,17 @@ void KcmContainer::setContainerLayout()
 }
 
 void KcmContainer::setKcm(const KCModuleInfo &info)
-{    
+{
   setContainerLayout();
-  
+
   m_mod = new KCModuleProxy(info);
   m_modInfo = info;
-   
+
   setKcmTitle(info);
-  
+
   m_mod->setWhatsThis(m_mod->quickHelp());
   m_centerWidget->layout()->addWidget(m_mod);
+  m_mod->setPalette(QApplication::palette());
 }
 
 void KcmContainer::setKcmTopEdge(int y)
