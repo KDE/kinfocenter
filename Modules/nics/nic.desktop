@@ -20,6 +20,11 @@ Name[uk]=Мережеві інтерфейси
 Name[x-test]=xxNetwork Interfacesxx
 
 Comment=Network interface information
+Comment[es]=Información de la interfaz de red
+Comment[pt]=Informações sobre as interfaces de rede
+Comment[pt_BR]=Informações da interface de rede
+Comment[sv]=Information om nätverksgränssnitt
+Comment[uk]=Відомості щодо інтерфейсів мережі
 Comment[x-test]=xxNetwork interface informationxx
 
 Categories=Qt;KDE;X-KDE-information;
