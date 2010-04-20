@@ -37,13 +37,14 @@ DevInfoPlugin::DevInfoPlugin(QWidget *parent, const QVariantList &)  :
 		  
   setAboutData(about);
   
-  
   //Layout
   layout = new QGridLayout(this);
+  layout->setContentsMargins(0,0,0,0);
   
   //top 
   QSplitter *split = new QSplitter(Qt::Horizontal, this);
- 
+  split->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+  
   split->setChildrenCollapsible(false);
   
   InfoPanel *info = new InfoPanel(split, this);
@@ -54,15 +55,17 @@ DevInfoPlugin::DevInfoPlugin(QWidget *parent, const QVariantList &)  :
   //bottom
   QWidget *bottom = new QWidget(this); 
   bottom->setContentsMargins(0,0,0,0);
-  bottom->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum);
+  bottom->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Minimum);
+  
   QHBoxLayout *bottomLayout = new QHBoxLayout(bottom);
-
+  bottomLayout->setContentsMargins(0,0,0,0);
+  
   QFont boldFont;
   boldFont.setBold(true);
   
   QLabel *udiLabel = new QLabel(i18n("UDI: "));
   udiLabel->setFont(boldFont);
-  udiLabel->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Minimum);
+  udiLabel->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
    
   udiStatus = new QLabel(this);
   udiStatus->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
@@ -79,7 +82,7 @@ DevInfoPlugin::DevInfoPlugin(QWidget *parent, const QVariantList &)  :
   layout->addWidget(bottom,1,0,1,0);
   
   //Misc
-  setButtons(Help|Export);
+  setButtons(Help);
   updateStatus(i18n("None"));
 }
 

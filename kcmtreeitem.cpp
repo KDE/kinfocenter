@@ -141,7 +141,7 @@ const KCModuleInfo KcmTreeItem::kcm() const
 
 int KcmTreeItem::weight() 
 {
-  if(isValid() == false) return 100;
+  if(isValid() == false) return category().count();
   return m_moduleInfo->weight();
 }
 

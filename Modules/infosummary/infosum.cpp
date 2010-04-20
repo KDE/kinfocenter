@@ -43,7 +43,7 @@ InfoSumPlugin::~InfoSumPlugin()
 }
   
 void InfoSumPlugin::createDisplay()
-{ 
+{  
   m_layout = new QVBoxLayout(this);
   m_layout->setAlignment(Qt::AlignTop);
   m_layout->setSpacing(10);
