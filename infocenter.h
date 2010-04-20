@@ -65,7 +65,7 @@
 #include "kcmcontainer.h"
 #include "infokcmmodel.h"
 #include "kcmtreeitem.h"
-#include "ToolTips/tooltipmanager.h"
+#include "tooltipmanager.h"
 
 class KcmContainer;
 class SizePanel;

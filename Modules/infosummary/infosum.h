@@ -46,7 +46,6 @@
 //QT
 #include <QGridLayout>
 #include <QScrollArea>
-#include <QGroupBox>
 
 //local 
 #include "defaultboxwidget.h"

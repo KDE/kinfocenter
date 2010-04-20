@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
   KLocale::setMainCatalog("kinfocenter");
 
   KAboutData aboutKInfoCenter( "kinfocenter", 0, ki18n("KDE Info Center"),
-    "0.10", ki18n("The KDE Info Center"), KAboutData::License_GPL,
+    "0.90", ki18n("The KDE Info Center"), KAboutData::License_GPL,
     ki18n("(c) 2009-2010, The KDE SC KInfocenter Development Team"));
 
   QByteArray argv_0 = argv[0];
