@@ -12,6 +12,7 @@ X-KDE-ParentApp=kinfocenter
 
 Name=SCSI
 Name[es]=SCSI
+Name[fr]=SCSI
 Name[nb]=SCSI
 Name[nn]=SCSI
 Name[pt]=SCSI
@@ -22,6 +23,7 @@ Name[x-test]=xxSCSIxx
 
 Comment=SCSI information
 Comment[es]=Información de SCSI
+Comment[fr]=Information SCSI
 Comment[nb]=SCSI-informasjon
 Comment[nn]=SCSI-informasjon
 Comment[pt]=Informação sobre o SCSI

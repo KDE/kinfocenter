@@ -11,6 +11,7 @@ X-KDE-ParentApp=kinfocenter
 
 Name=PCI
 Name[es]=PCI
+Name[fr]=PCI
 Name[nb]=PCI
 Name[nn]=PCI
 Name[pt]=PCI
@@ -21,6 +22,7 @@ Name[x-test]=xxPCIxx
 
 Comment=PCI information
 Comment[es]=Información de PCI
+Comment[fr]=Information PCI
 Comment[nb]=PCI-informasjon
 Comment[nn]=PCI-informasjon
 Comment[pt]=Informação sobre o PCI

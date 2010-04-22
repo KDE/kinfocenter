@@ -11,6 +11,7 @@ X-KDE-ParentApp=kinfocenter
 
 Name=Samba Status
 Name[es]=Estado de Samba
+Name[fr]=Statut Samba
 Name[nb]=Samba-status
 Name[nn]=Samba-status
 Name[pt]=Estado do Samba
@@ -21,6 +22,7 @@ Name[x-test]=xxSamba Statusxx
 
 Comment=Samba status monitor
 Comment[es]=Monitor de estado de Samba
+Comment[fr]=Outil de surveillance du statut Samba
 Comment[nb]=Overvåking av Samba-status
 Comment[nn]=Overvaking av Samba-status
 Comment[pt]=Monitor do estado do Samba

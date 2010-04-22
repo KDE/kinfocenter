@@ -12,6 +12,7 @@ X-KDE-ParentApp=kinfocenter
 
 Name=Processor
 Name[es]=Procesador
+Name[fr]=Processeur
 Name[nb]=Prosessor
 Name[nds]=Perzesser
 Name[nn]=Prosessor
@@ -24,6 +25,7 @@ Name[zh_TW]=處理器
 
 Comment=Processor information
 Comment[es]=Información del procesador
+Comment[fr]=Information sur le processeur
 Comment[nb]=Prosessorinformasjon
 Comment[nn]=Prosessorinformasjon
 Comment[pt]=Informação do processador

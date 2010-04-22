@@ -11,6 +11,7 @@ X-KDE-ParentApp=kinfocenter
 
 Name=Network Interfaces
 Name[es]=Interfaces de red
+Name[fr]=Interfaces réseau
 Name[nb]=Nettverksgrensesnitt
 Name[nn]=Nettverksgrensesnitt
 Name[pt]=Interfaces de Rede
@@ -21,6 +22,8 @@ Name[x-test]=xxNetwork Interfacesxx
 
 Comment=Network interface information
 Comment[es]=Información de la interfaz de red
+Comment[fr]=Information sur les interfaces réseau
+Comment[nb]=Informasjon om nettverksgrensesnitt
 Comment[pt]=Informações sobre as interfaces de rede
 Comment[pt_BR]=Informações da interface de rede
 Comment[sv]=Information om nätverksgränssnitt

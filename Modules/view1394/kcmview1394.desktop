@@ -11,6 +11,7 @@ X-KDE-ParentApp=kinfocenter
 
 Name=IEEE 1394 Devices
 Name[es]=Dispositivos IEEE 1394
+Name[fr]=Périphériques IEEE 1394
 Name[nb]=IEEE 1394-enheter
 Name[nn]=IEEE 1394-einingar
 Name[pt]=Dispositivos IEEE 1394
@@ -21,6 +22,7 @@ Name[x-test]=xxIEEE 1394 Devicesxx
 
 Comment=Attached IEEE 1394 devices
 Comment[es]=Dispositivos IEEE 1394 conectados
+Comment[fr]=Périphériques IEEE 1394 reliés
 Comment[nb]=Tilkoblede IEEE 1394-enheter
 Comment[nn]=Tilkopla IEEE 1394-einingar
 Comment[pt]=Dispositivos IEEE 1394

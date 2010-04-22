@@ -13,6 +13,7 @@ X-KDE-ParentApp=kinfocenter
 
 Name=DMA-Channels
 Name[es]=Canales DMA
+Name[fr]=Canal DMA
 Name[nb]=DMA-kanaler
 Name[nn]=DMA-kanalar
 Name[pt]=Canais de DMA
@@ -23,6 +24,7 @@ Name[x-test]=xxDMA-Channelsxx
 
 Comment=DMA information
 Comment[es]=Información de DMA
+Comment[fr]=Information DMA
 Comment[nb]=DMA-informasjon
 Comment[nn]=DMA-informasjon
 Comment[pt]=Informação do DMA

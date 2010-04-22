@@ -13,6 +13,7 @@ X-KDE-ParentApp=kinfocenter
 
 Name=Interrupts
 Name[es]=Interrupción
+Name[fr]=Interruptions
 Name[nb]=Avbruddslinjer
 Name[nn]=Avbrot
 Name[pt]=Interrupções
@@ -23,6 +24,7 @@ Name[x-test]=xxInterruptsxx
 
 Comment=Interrupt information
 Comment[es]=Información de interrupción
+Comment[fr]=Information sur les interruptions
 Comment[nb]=Avbruddslinjeinformasjon
 Comment[nn]=Avbrotsinformasjon
 Comment[pt]=Informação das interrupções

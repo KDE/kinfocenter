@@ -11,6 +11,7 @@ X-KDE-ParentApp=kinfocenter
 
 Name=USB Devices
 Name[es]=Dispositivos USB
+Name[fr]=Périphériques USB
 Name[nb]=USB-enheter
 Name[nn]=USB-einingar
 Name[pt]=Dispositivos USB
@@ -21,6 +22,7 @@ Name[x-test]=xxUSB Devicesxx
 
 Comment=USB devices attached to this computer
 Comment[es]=Dispositivos USB conectados a este equipo
+Comment[fr]=Périphériques USB reliés à cet ordinateur
 Comment[nb]=Vis USB-enheter som er koblet til denne maskinen
 Comment[nn]=USB-einingar kopla til datamaskina
 Comment[pt]=Ver os dispositivos USB ligados a este computador

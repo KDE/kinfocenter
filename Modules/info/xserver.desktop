@@ -12,6 +12,7 @@ X-KDE-ParentApp=kinfocenter
 
 Name=X-Server
 Name[es]=X-Server
+Name[fr]=Serveur X
 Name[nb]=X-tjener
 Name[nn]=X-tenar
 Name[pt]=Servidor X
@@ -22,6 +23,7 @@ Name[x-test]=xxX-Serverxx
 
 Comment=X-Server information
 Comment[es]=Información de X-Server
+Comment[fr]=Information du serveur X
 Comment[nb]=X-tjenerinformasjon
 Comment[nn]=X-tenarinformasjon
 Comment[pt]=Informações sobre o servidor X

@@ -13,6 +13,7 @@ X-KDE-ParentApp=kinfocenter
 
 Name=IO-Ports
 Name[es]=Puertos E/S
+Name[fr]=Ports d'entrée / sortie
 Name[nb]=IO-porter
 Name[nn]=IU-portar
 Name[pt]=Portos de E/S
@@ -23,6 +24,7 @@ Name[x-test]=xxIO-Portsxx
 
 Comment=IO-port information
 Comment[es]=Información de los puertos E/S
+Comment[fr]=Information sur les ports d'entrée / sortie
 Comment[nb]=IO-portinformasjon
 Comment[nn]=IU-port-informasjon
 Comment[pt]=Informação sobre os portos de E/S

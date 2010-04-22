@@ -11,6 +11,7 @@ X-KDE-ParentApp=kinfocenter
 
 Name=Device Viewer
 Name[es]=Visor de dispositivos
+Name[fr]=Outil de visualisation de périphérique
 Name[nb]=Office-viser
 Name[nn]=Comment=KOffice-filter
 Name[pt]=Visualizador de Dispositivos
@@ -21,6 +22,7 @@ Name[x-test]=xxDevice Viewerxx
 
 Comment=Device Viewer
 Comment[es]=Visor de dispositivos
+Comment[fr]=Outil de visualisation de périphérique
 Comment[nb]=Office-viser
 Comment[nn]=Comment=KOffice-filter
 Comment[pt]=Visualizador de Dispositivos
