@@ -1,0 +1,33 @@
+[Desktop Entry]
+Exec=kcmshell4 nic
+Type=Service
+X-KDE-ServiceTypes=KCModule
+X-DocPath=kinfocenter/nics/index.html
+Icon=network-workgroup
+
+X-KDE-KInfoCenter-Category=Network Information
+X-KDE-Library=kcm_nic
+X-KDE-ParentApp=kinfocenter
+
+Name=Network Interfaces
+Name[es]=Interfaces de red
+Name[fr]=Interfaces réseau
+Name[nb]=Nettverksgrensesnitt
+Name[nn]=Nettverksgrensesnitt
+Name[pt]=Interfaces de Rede
+Name[pt_BR]=Interfaces de rede
+Name[sv]=Nätverksgränssnitt
+Name[uk]=Мережеві інтерфейси
+Name[x-test]=xxNetwork Interfacesxx
+
+Comment=Network interface information
+Comment[es]=Información de la interfaz de red
+Comment[fr]=Information sur les interfaces réseau
+Comment[nb]=Informasjon om nettverksgrensesnitt
+Comment[pt]=Informações sobre as interfaces de rede
+Comment[pt_BR]=Informações da interface de rede
+Comment[sv]=Information om nätverksgränssnitt
+Comment[uk]=Відомості щодо інтерфейсів мережі
+Comment[x-test]=xxNetwork interface informationxx
+
+Categories=Qt;KDE;X-KDE-information;
