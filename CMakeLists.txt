@@ -21,7 +21,7 @@ ToolTips/tooltipmanager.cpp
 
 kde4_add_executable( kinfocenter ${kinfocenter_SRCS} )
 
-target_link_libraries( kinfocenter ${KDE4_KDECORE_LIBS} ${KDE4_KDEUI_LIBS} ${KDE4_KUTILS_LIBS} )
+target_link_libraries( kinfocenter ${KDE4_KFILE_LIBS} ${KDE4_KUTILS_LIBS} )
 
 ##install
 
