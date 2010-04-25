@@ -93,8 +93,6 @@ class KInfoCenter : public KXmlGuiWindow
     void createButtonBar();
     void createMainFrame();
     void CreateMenuFrame();
-    void closeDimentions(const QSize);
-    void startupDimentions();
     void setButtons(const KCModule::Buttons buttons);
     void setKcm(const KcmTreeItem *);
     void resetCondition();

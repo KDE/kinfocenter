@@ -39,7 +39,6 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
   createMainFrame();
   createButtonBar();
   
-  startupDimentions();
   initMenuBar();
   
   //TreeWidget
@@ -62,7 +61,6 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
   m_sideMenu->changeToRootSelection();
   
   m_toolTips = new ToolTipManager(m_sideMenu);
-  show();
 }
 
 KInfoCenter::~KInfoCenter()
@@ -82,8 +80,6 @@ KInfoCenter::~KInfoCenter()
   
   //Menu
   disconnect(m_aboutKcm, SIGNAL(triggered(bool) ), this, SLOT(aboutKcmSlot()));
-  
-  closeDimentions(this->size());
 }
 
 bool KInfoCenter::eventFilter(QObject *watched, QEvent *event)
@@ -105,7 +101,7 @@ void KInfoCenter::initMenuBar()
   m_aboutKcm->setIcon(KIcon("help"));
   m_aboutKcm->setEnabled(false);
   
-  createGUI();
+  setupGUI(QSize(800, 480));
 
   QAction *aboutApp = actionCollection()->action("help_about_app");
   aboutApp->setIcon(KIcon("hwinfo"));
@@ -179,10 +175,9 @@ void KInfoCenter::CreateMenuFrame()
   m_searchText->completionObject()->setIgnoreCase(true);
   
   m_searchBoxAction = new KAction(sideFrame);
-  m_searchBoxAction->setDefaultWidget(m_searchText);
   m_searchBoxAction->setShortcut(KShortcut(QKeySequence(Qt::CTRL + Qt::Key_F)));
+  m_searchBoxAction->setText(i18n("Search Modules"));
   actionCollection()->addAction("searchText",m_searchBoxAction);
-  m_searchText->show();
   
   m_sideMenu = new SidePanel(sideFrame);
   m_sideMenu->installEventFilter(this);
@@ -192,25 +187,6 @@ void KInfoCenter::CreateMenuFrame()
   m_splitter->addWidget(sideFrame);
 }
   
-void KInfoCenter::startupDimentions()
-{ 
-  KConfigGroup config = KConfigGroup(KGlobal::config(), "General");
-  int height = config.readEntry<int>("MainWindowHeight",0);
-  int width = config.readEntry<int>("MainWindowWidth",0);
-
-  if(height && width) this->resize(width,height);
-}
-  
-void KInfoCenter::closeDimentions(const QSize winSizes) 
-{ 
-  KConfigGroup config = KConfigGroup(KGlobal::config(), "General");
-  
-  config.writeEntry("MainWindowHeight", winSizes.height());
-  config.writeEntry("MainWindowWidth", winSizes.width());
-
-  config.sync();
-}
-
 void KInfoCenter::itemClickedSlot(const KcmTreeItem *item) 
 { 
   resetCondition();
