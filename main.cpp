@@ -25,6 +25,7 @@
 KicApp::KicApp() : KApplication() 
 {  
   display = new KInfoCenter();
+  display->show();
 }
 
 int main(int argc, char *argv[])
