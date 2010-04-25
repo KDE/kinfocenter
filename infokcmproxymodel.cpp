@@ -34,7 +34,7 @@ bool InfoKcmProxyModel::lessThan(const QModelIndex &leftIndex, const QModelIndex
   KcmTreeItem *leftItem = static_cast<KcmTreeItem*>(leftIndex.internalPointer());
   KcmTreeItem *rightItem = static_cast<KcmTreeItem*>(rightIndex.internalPointer());
   
-  return (leftItem->weight() > rightItem->weight()); 
+  return (leftItem->weight() < rightItem->weight());
 }
 
 bool InfoKcmProxyModel::filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const

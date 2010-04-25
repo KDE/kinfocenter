@@ -25,6 +25,7 @@
 SidePanel::SidePanel(QWidget *parent) : QTreeView(parent)
 { 
   setSortingEnabled(true);
+  sortByColumn(0, Qt::AscendingOrder);
   m_model = new InfoKcmModel(this);  
   
   m_proxyModel = new InfoKcmProxyModel(this);
