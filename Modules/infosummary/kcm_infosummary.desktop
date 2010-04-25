@@ -9,24 +9,15 @@ X-KDE-Library=kcm_infosummary
 X-KDE-ParentApp=kinfocenter
 
 Name=Summary
-Name[es]=Resumen
-Name[fr]=Résumé
-Name[nb]=Sammendrag
-Name[nn]=Samandrag
-Name[pt]=Resumo
-Name[pt_BR]=Resumo
 Name[sv]=Översikt
+Name[th]=สรุป
 Name[uk]=Резюме
 Name[x-test]=xxSummaryxx
 
 Comment=Hardware Information Summary
-Comment[es]=Resumen de la información del hardware
-Comment[fr]=Résumé des informations du matériel
-Comment[nb]=Maskinvare&informasjon
-Comment[nn]=Maskinvare&informasjon
-Comment[pt]=Resumo de Informações do 'Hardware'
-Comment[pt_BR]=Resumo de informações do 'Hardware'
 Comment[sv]=Översikt av hårdvaruinformation
+Comment[tg]=Сахтафзор
+Comment[th]=ข้อมูลสรุปของฮาร์ดแวร์
 Comment[uk]=Резюме відомостей щодо обладнання
 Comment[x-test]=xxHardware Information Summaryxx
 
