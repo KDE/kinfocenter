@@ -54,9 +54,6 @@ void KcmContainer::setContainerLayout()
   m_mod = NULL; // will be deleted on the line below
   delete m_centerWidget;
   m_centerWidget = new QWidget(this);
-  QPalette p = m_centerWidget->palette();
-  p.setColor(QPalette::Window, Qt::transparent);
-  m_centerWidget->setPalette(p);
   m_centerWidget->setContentsMargins(0,0,0,0);
 
   QVBoxLayout *centerWidgetLayout = new QVBoxLayout(m_centerWidget);
@@ -72,6 +69,7 @@ void KcmContainer::setContainerLayout()
 
   centerWidgetLayout->addWidget(m_titleLabel);  
   setWidget(m_centerWidget);
+  m_centerWidget->setAutoFillBackground(false);
   setKcmTopEdge(m_kcmTopEdge);
 }
 
@@ -86,7 +84,6 @@ void KcmContainer::setKcm(const KCModuleInfo &info)
 
   m_mod->setWhatsThis(m_mod->quickHelp());
   m_centerWidget->layout()->addWidget(m_mod);
-  m_mod->setPalette(QApplication::palette());
 }
 
 void KcmContainer::setKcmTopEdge(int y)
