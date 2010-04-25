@@ -52,6 +52,7 @@ void InfoSumPlugin::createDisplay()
   createCpuBox();
   //createMemBox(); // Awaiting Mem class from kdereview 
   createHdBox();
+  m_layout->addStretch();
 }
 
 void InfoSumPlugin::createOsBox()
