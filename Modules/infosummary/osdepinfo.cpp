@@ -49,7 +49,7 @@ const QString OsDepInfo::osVersion()
 void OsDepInfo::setDepInfo() 
 {
   m_osVersion.clear();
-  m_hostname.clear();
+  m_hostName.clear();
 }
 
 #endif // Q_OS_LINUX
