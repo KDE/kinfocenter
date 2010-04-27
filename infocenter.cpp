@@ -101,7 +101,7 @@ void KInfoCenter::initMenuBar()
   m_aboutKcm->setIcon(KIcon("help"));
   m_aboutKcm->setEnabled(false);
   
-  setupGUI(QSize(800, 480), ToolBar | Keys | Save | Create);
+  setupGUI(QSize(800, 480), Keys | Save | Create);
 
   QAction *aboutApp = actionCollection()->action("help_about_app");
   aboutApp->setIcon(KIcon("hwinfo"));
