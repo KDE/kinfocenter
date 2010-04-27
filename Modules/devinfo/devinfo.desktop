@@ -10,6 +10,8 @@ X-KDE-Library=devinfo
 X-KDE-ParentApp=kinfocenter
 
 Name=Device Viewer
+Name[ia]=Visor de Dispositivo
+Name[km]=កម្មវិធី​មើល​ឧបករណ៍
 Name[pt]=Visualizador de Dispositivos
 Name[sv]=Enhetsvisning
 Name[tg]=Намоишгари тасвирҳо
@@ -19,6 +21,8 @@ Name[x-test]=xxDevice Viewerxx
 Name[zh_TW]=裝置檢視器
 
 Comment=Device Viewer
+Comment[ia]=Visor de dispositivo
+Comment[km]=កម្មវិធី​មើល​ឧបករណ៍
 Comment[pt]=Visualizador de Dispositivos
 Comment[sv]=Enhetsvisning
 Comment[uk]=Переглядач пристроїв
