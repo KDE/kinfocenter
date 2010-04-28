@@ -20,6 +20,11 @@
  *
  */
 
+//KDE
+#include <kaboutdata.h>
+#include <kcmdlineargs.h>
+
+//Local
 #include "main.h"
 
 KicApp::KicApp() : KApplication() 

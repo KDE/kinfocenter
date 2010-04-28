@@ -20,13 +20,11 @@
  *
  */
 
-#ifndef __MAIN__
-#define __MAIN__
+#ifndef INFOCENTERMAIN
+#define INFOCENTERMAIN
 
 //KDE
 #include <kapplication.h>
-#include <kaboutdata.h>
-#include <kcmdlineargs.h>
 
 //Local
 #include "infocenter.h"
@@ -44,4 +42,4 @@ class KicApp : public KApplication {
     KInfoCenter *display;
 };
 
-#endif // __MAIN__
+#endif // INFOCENTERMAIN

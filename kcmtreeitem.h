@@ -20,18 +20,16 @@
  *
  */
 
-#ifndef __KCMTREEITEM__
-#define __KCMTREEITEM__
+#ifndef KCMTREEITEM
+#define KCMTREEITEM
 
 //KDE
 #include <KCModuleInfo>
-#include <KDebug>
 #include <KIcon>
 
 //QT
 #include <QList>
 #include <QString>
-#include <QIcon>
 
 class KcmTreeItem
 {
@@ -58,7 +56,7 @@ class KcmTreeItem
     
     const KCModuleInfo kcm() const; 
     int weight();
-    QIcon icon() const;
+    KIcon icon() const;
     
     QString whatsThis() const;
     bool childrenRegExp(QRegExp pattern);
@@ -74,4 +72,4 @@ class KcmTreeItem
      bool m_isValid;
 };
 
-#endif // __KCMTREEITEM__
+#endif // KCMTREEITEM

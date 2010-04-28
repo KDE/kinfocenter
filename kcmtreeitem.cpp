@@ -20,6 +20,10 @@
  *
  */
 
+//KDE
+#include <KDebug>
+
+//Local
 #include "kcmtreeitem.h"
 
 KcmTreeItem::KcmTreeItem(const KService::Ptr module, KcmTreeItem *parent) : m_parent(parent), m_module(module), 
@@ -51,7 +55,7 @@ KcmTreeItem *KcmTreeItem::child(int row)
 
 int KcmTreeItem::childCount() 
 {
-    return m_children.count();
+  return m_children.count();
 }
 
 int KcmTreeItem::columnCount()
@@ -119,7 +123,7 @@ KcmTreeItem *KcmTreeItem::containsCategory(QString category)
     {
       if(item->category().contains(category))
       {
-	  return item;
+	return item;
       }
       else
       {
@@ -145,7 +149,7 @@ int KcmTreeItem::weight()
   return m_moduleInfo->weight();
 }
 
-QIcon KcmTreeItem::icon() const
+KIcon KcmTreeItem::icon() const
 {
   if(isValid() == false)
   {

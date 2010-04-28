@@ -23,42 +23,18 @@
 #ifndef INFOCENTER
 #define INFOCENTER
 
-//C++
-#include <iostream>
-
 //KDE
-#include <KLocale>
-#include <KIcon>
-#include <KMenuBar>
-#include <KMenu>
-#include <KHelpMenu>
-#include <KConfig>
-#include <KGlobal>
-#include <KConfigGroup>
-#include <KDebug>
-#include <KCModule>
-#include <KToolInvocation>
-#include <KActionMenu>
 #include <KXmlGuiWindow>
-#include <kxmlguifactory.h>
-#include <KStandardAction>
-#include <KActionCollection>
-#include <KAboutApplicationDialog>
-#include <KMessageBox>
-#include <KFileDialog>
 #include <KLineEdit>
-#include <KShortcut>
+#include <KAction>
+#include <KCModule>
 
 //QT
 #include <QWidget>
-#include <QGridLayout>
-#include <QPushButton>
-#include <QSplitter>
 #include <QObject>
-#include <QProcess>
-#include <QTextStream>
-#include <QFile>
-#include <QKeySequence>
+#include <QEvent>
+#include <QSplitter>
+#include <QPushButton>
 
 //Local
 #include "sidepanel.h"
@@ -69,6 +45,8 @@
 
 class KcmContainer;
 class SizePanel;
+class ToolTipManager;
+class KcmTreeItem;
 
 class KInfoCenter : public KXmlGuiWindow
 {
@@ -114,4 +92,4 @@ class KInfoCenter : public KXmlGuiWindow
     ToolTipManager *m_toolTips;
 };
 
-#endif //__INFOCENTER__
+#endif //INFOCENTER

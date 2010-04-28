@@ -22,6 +22,11 @@
 
 #include "kcmcontainer.h"
 
+//KDE
+#include <KIcon>
+
+//QT
+#include <QVBoxLayout>
 #include <QApplication>
 #include <QStyle>
 
@@ -90,12 +95,12 @@ void KcmContainer::setKcmTopEdge(int y)
 {
     m_kcmTopEdge = y;
     if (m_kcmTopEdge < 0) {
-        return;
+      return;
     }
 
     if (m_titleLabel) {
-        int spacing = style()->layoutSpacing(QSizePolicy::DefaultType, QSizePolicy::DefaultType, Qt::Vertical);
-        m_titleLabel->setMinimumHeight(m_kcmTopEdge - spacing);
+      int spacing = style()->layoutSpacing(QSizePolicy::DefaultType, QSizePolicy::DefaultType, Qt::Vertical);
+      m_titleLabel->setMinimumHeight(m_kcmTopEdge - spacing);
     }
 }
 

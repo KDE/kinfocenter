@@ -20,26 +20,24 @@
  *
  */
 
-#ifndef __INFOKCMMODEL__
-#define __INFOKCMMODEL__
+#ifndef INFOKCMMODEL
+#define INFOKCMMODEL
 
 //KDE
 #include <KService>
-#include <KServiceTypeTrader>
-#include <KDebug>
 
 //QT
-#include <QAbstractItemModel>
 #include <QObject>
-#include <QHash>
+#include <QStringList>
+#include <QAbstractItemModel>
+#include <QModelIndex>
+#include <QVariant>
 #include <QString>
 
 //Local
 #include "kcmtreeitem.h"
 
-
-class QAbstractItemModel;
-class QObject;
+class KcmTreeItem;
 
 class InfoKcmModel : public QAbstractItemModel 
 {
@@ -71,4 +69,4 @@ class InfoKcmModel : public QAbstractItemModel
     KcmTreeItem *m_root;
 };
 
-#endif // __INFOKCMMODEL__
+#endif // INFOKCMMODEL

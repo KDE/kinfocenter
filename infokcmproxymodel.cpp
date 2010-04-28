@@ -20,6 +20,10 @@
  *
  */
 
+//KDE
+#include <KDebug>
+
+//Local
 #include "infokcmproxymodel.h"
 
 InfoKcmProxyModel::InfoKcmProxyModel(QObject *parent) : QSortFilterProxyModel(parent) 

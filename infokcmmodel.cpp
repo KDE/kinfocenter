@@ -20,6 +20,11 @@
  *
  */
 
+//KDE
+#include <KServiceTypeTrader>
+#include <KDebug>
+
+//Local
 #include "infokcmmodel.h"
 
 InfoKcmModel::InfoKcmModel(QObject *parent) : QAbstractItemModel(parent), m_root(new KcmTreeItem(i18n("Information Modules")))

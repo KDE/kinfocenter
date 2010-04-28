@@ -20,24 +20,23 @@
  *
  */
 
-#ifndef __SIDEPANEL__
-#define __SIDEPANEL__
-
-//KDE
-#include <KLocale>
+#ifndef SIDEPANEL
+#define SIDEPANEL
 
 //QT
-#include <QTreeView>
-#include <QWidget>
-#include <QRegExp>
-#include <QAction>
-#include <QMenu>
+#include <QString>
+#include <QModelIndex>
 #include <QContextMenuEvent>
+#include <QAction>
+#include <QStringList>
+#include <QTreeView>
 
 //Local
 #include "infokcmmodel.h"
 #include "infokcmproxymodel.h"
 
+class InfoKcmModel;
+class InfoKcmProxyModel;
 
 class SidePanel : public QTreeView
 {
@@ -76,4 +75,4 @@ class SidePanel : public QTreeView
     QAction *resetAct;
 };
 
-#endif //__SIDEPANEL__
+#endif //SIDEPANEL

@@ -20,20 +20,19 @@
  *
  */
 
-#ifndef __KCMCONTAINER__
-#define __KCMCONTAINER__
+#ifndef KCMCONTAINER
+#define KCMCONTAINER
 
 //KDE
 #include <KCModuleInfo>
-#include <KCModuleProxy>
-#include <KCModule>
 #include <KAboutData>
-#include <KIcon>
+#include <KCModule>
+#include <KCModuleProxy>
 
 //QT
-#include <QWidget>
-#include <QVBoxLayout>
 #include <QLabel>
+#include <QWidget>
+#include <QString>
 #include <QScrollArea>
 
 class KcmContainer : public QScrollArea
@@ -61,4 +60,4 @@ class KcmContainer : public QScrollArea
     int m_kcmTopEdge;
 };
 
-#endif //__KCMCONTAINER__
+#endif //KCMCONTAINER

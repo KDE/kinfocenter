@@ -20,14 +20,13 @@
  *
  */
 
-#ifndef __INFOKCMPROXYMODEL__
-#define __INFOKCMPROXYMODEL__
+#ifndef INFOKCMPROXYMODEL
+#define INFOKCMPROXYMODEL
 
 //QT
+#include <QModelIndex>
+#include <QObject>
 #include <QSortFilterProxyModel>
-
-//KDE
-#include <KDebug>
 
 //Local
 #include "kcmtreeitem.h"
@@ -42,4 +41,4 @@ class InfoKcmProxyModel : public QSortFilterProxyModel
     bool filterAcceptsRow(int, const QModelIndex &) const;
 };
 
-#endif // __INFOKCMPROXYMODEL__
+#endif // INFOKCMPROXYMODEL

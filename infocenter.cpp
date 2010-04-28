@@ -20,6 +20,34 @@
  *
  */
 
+//KDE
+#include <KLocale>
+#include <KIcon>
+#include <KMenuBar>
+#include <KMenu>
+#include <KHelpMenu>
+#include <KConfig>
+#include <KGlobal>
+#include <KConfigGroup>
+#include <KDebug>
+#include <KToolInvocation>
+#include <KActionMenu>
+#include <kxmlguifactory.h>
+#include <KStandardAction>
+#include <KActionCollection>
+#include <KAboutApplicationDialog>
+#include <KMessageBox>
+#include <KFileDialog>
+#include <KShortcut>
+
+//QT
+#include <QGridLayout>
+#include <QProcess>
+#include <QTextStream>
+#include <QFile>
+#include <QKeySequence>
+
+//Local
 #include "infocenter.h"
 
 KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
@@ -32,7 +60,7 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
   setCentralWidget(m_cWidget);
   
   QVBoxLayout *cLayout = new QVBoxLayout(m_cWidget);
-  Q_UNUSED(cLayout); // Is used but compiler is stupid
+  Q_UNUSED(cLayout); 
   
   cLayout->setSpacing(0);
   cLayout->setContentsMargins(0, 0, 0, 0);
@@ -84,11 +112,10 @@ KInfoCenter::~KInfoCenter()
 
 bool KInfoCenter::eventFilter(QObject *watched, QEvent *event)
 {
-    if (watched == m_sideMenu && event->type() == QEvent::Move) {
-        m_contain->setKcmTopEdge(m_sideMenu->y());
-    }
-
-    return false;
+  if (watched == m_sideMenu && event->type() == QEvent::Move) {
+    m_contain->setKcmTopEdge(m_sideMenu->y());
+  }
+  return false;
 }
 
 void KInfoCenter::initMenuBar()
@@ -142,7 +169,7 @@ void KInfoCenter::createMainFrame()
 { 
   QWidget *mainDisplay = new QWidget();
   mainDisplay->setContentsMargins(0,0,0,0);
-    
+
   QHBoxLayout *mainLayout = new QHBoxLayout(mainDisplay);
   
   m_splitter = new QSplitter(m_cWidget);
