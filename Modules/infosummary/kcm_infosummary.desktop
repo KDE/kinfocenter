@@ -9,8 +9,11 @@ X-KDE-Library=kcm_infosummary
 X-KDE-ParentApp=kinfocenter
 
 Name=Summary
+Name[is]=Samantekt
 Name[km]=សេចក្ដី​សង្ខេប
+Name[nds]=Översicht
 Name[pt]=Resumo
+Name[pt_BR]=Resumo
 Name[sk]=Súhrn
 Name[sv]=Översikt
 Name[th]=สรุป
@@ -20,8 +23,10 @@ Name[zh_TW]=摘要
 
 Comment=Hardware Information Summary
 Comment[ia]=Summario de information de hardware
+Comment[is]=Samantekt vélbúnaðarupplýsinga
 Comment[km]=សេចក្ដី​សង្ខេប​អំពី​ព័ត៌មាន​ផ្នែក​រឹង
 Comment[pt]=Resumo de Informação do 'Hardware'
+Comment[pt_BR]=Resumo de informações do hardware
 Comment[sv]=Översikt av hårdvaruinformation
 Comment[tg]=Сахтафзор
 Comment[th]=ข้อมูลสรุปของฮาร์ดแวร์

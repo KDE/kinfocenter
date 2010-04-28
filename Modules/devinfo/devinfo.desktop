@@ -11,8 +11,11 @@ X-KDE-ParentApp=kinfocenter
 
 Name=Device Viewer
 Name[ia]=Visor de Dispositivo
+Name[is]=Tækjaskoðun
 Name[km]=កម្មវិធី​មើល​ឧបករណ៍
+Name[nds]=Reedschappenkieker
 Name[pt]=Visualizador de Dispositivos
+Name[pt_BR]=Visualizador de dispositivos
 Name[sv]=Enhetsvisning
 Name[tg]=Намоишгари тасвирҳо
 Name[th]=ตัวแสดงอุปกรณ์
@@ -22,8 +25,11 @@ Name[zh_TW]=裝置檢視器
 
 Comment=Device Viewer
 Comment[ia]=Visor de dispositivo
+Comment[is]=Tækjaskoðun
 Comment[km]=កម្មវិធី​មើល​ឧបករណ៍
+Comment[nds]=Reedschappenkieker
 Comment[pt]=Visualizador de Dispositivos
+Comment[pt_BR]=Visualizador de dispositivos
 Comment[sv]=Enhetsvisning
 Comment[uk]=Переглядач пристроїв
 Comment[x-test]=xxDevice Viewerxx
