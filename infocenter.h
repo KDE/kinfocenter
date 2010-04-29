@@ -28,6 +28,7 @@
 #include <KLineEdit>
 #include <KAction>
 #include <KCModule>
+#include <KActionMenu>
 
 //QT
 #include <QWidget>
@@ -67,10 +68,9 @@ class KInfoCenter : public KXmlGuiWindow
     static void showError(QWidget *,QString);
     
   private:
-    void initMenuBar();
-    void createButtonBar();
     void createMainFrame();
-    void CreateMenuFrame();
+    void createToolBar();
+    void createMenuFrame();
     void setButtons(const KCModule::Buttons buttons);
     void setKcm(const KcmTreeItem *);
     void resetCondition();
@@ -79,14 +79,13 @@ class KInfoCenter : public KXmlGuiWindow
     QSplitter *m_splitter;
     
     KAction *m_aboutKcm;
-    KAction *m_searchBoxAction;
+    KAction *m_searchAction;
+    KAction *m_exportAction;
+    KAction *m_moduleHelpAction;
+    KActionMenu *m_helpAction;
     
     QWidget *m_cWidget;
     KLineEdit *m_searchText;
-    
-    QPushButton *m_helpButton;
-    QPushButton *m_exportButton;
-    QPushButton *m_goButton;
     
     SidePanel *m_sideMenu;
     ToolTipManager *m_toolTips;

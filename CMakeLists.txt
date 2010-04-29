@@ -27,3 +27,4 @@ target_link_libraries( kinfocenter ${KDE4_KFILE_LIBS} ${KDE4_KUTILS_LIBS} )
 
 install( TARGETS kinfocenter          ${INSTALL_TARGETS_DEFAULT_ARGS} )
 install( FILES kinfocenter.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
+INSTALL( FILES kinfocenterui.rc DESTINATION ${DATA_INSTALL_DIR}/kinfocenter )

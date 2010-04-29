@@ -39,6 +39,7 @@
 #include <KMessageBox>
 #include <KFileDialog>
 #include <KShortcut>
+#include <KToolBar>
 
 //QT
 #include <QGridLayout>
@@ -65,20 +66,18 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
   cLayout->setSpacing(0);
   cLayout->setContentsMargins(0, 0, 0, 0);
   createMainFrame();
-  createButtonBar();
-  
-  initMenuBar();
+  createToolBar();
   
   //TreeWidget
   connect(m_sideMenu,SIGNAL(clicked(const KcmTreeItem *)),this,SLOT(itemClickedSlot(const KcmTreeItem *)));
   
   //SearchBox
   connect(m_searchText, SIGNAL(textChanged(const QString&)), m_sideMenu, SLOT(filterSideMenuSlot(const QString&)));
-  connect(m_searchBoxAction, SIGNAL(triggered(Qt::MouseButtons, Qt::KeyboardModifiers)),m_searchText, SLOT(setFocus()));
+  connect(m_searchAction, SIGNAL(triggered(Qt::MouseButtons, Qt::KeyboardModifiers)),m_searchText, SLOT(setFocus()));
   
   //Buttons
-  connect(m_helpButton,SIGNAL(clicked(bool)),this,SLOT(helpClickedSlot()));
-  connect(m_exportButton,SIGNAL(clicked(bool)),this,SLOT(exportClickedSlot()));
+  connect(m_moduleHelpAction, SIGNAL(triggered(bool)),this,SLOT(helpClickedSlot()));
+  connect(m_exportAction, SIGNAL(triggered(bool)),this,SLOT(exportClickedSlot()));
   
   //Menu
   connect(m_aboutKcm, SIGNAL(triggered(bool) ), this, SLOT(aboutKcmSlot()));
@@ -89,6 +88,13 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
   m_sideMenu->changeToRootSelection();
   
   m_toolTips = new ToolTipManager(m_sideMenu);
+  setupGUI(ToolBar | Keys | Save | Create,"kinfocenterui.rc");
+  
+  m_helpAction->setMenu( dynamic_cast<KMenu*>( factory()->container("help", this) ) );
+  menuBar()->hide();
+  
+  QAction *aboutApp = actionCollection()->action("help_about_app");
+  aboutApp->setIcon(KIcon("hwinfo"));
 }
 
 KInfoCenter::~KInfoCenter()
@@ -100,11 +106,11 @@ KInfoCenter::~KInfoCenter()
   
   //SearchBox
   disconnect(m_searchText, SIGNAL(textChanged(const QString&)), m_sideMenu, SLOT(filterSideMenuSlot(const QString&)));
-  disconnect(m_searchBoxAction, SIGNAL(triggered(Qt::MouseButtons, Qt::KeyboardModifiers)),m_searchText, SLOT(setFocus()));
+  disconnect(m_searchAction, SIGNAL(triggered(Qt::MouseButtons, Qt::KeyboardModifiers)),m_searchText, SLOT(setFocus()));
   
   //Buttons
-  disconnect(m_helpButton,SIGNAL(clicked(bool)),this,SLOT(helpClickedSlot()));
-  disconnect(m_exportButton,SIGNAL(clicked(bool)),this,SLOT(exportClickedSlot()));
+  disconnect(m_moduleHelpAction, SIGNAL(triggered(bool)),this,SLOT(helpClickedSlot()));
+  disconnect(m_exportAction, SIGNAL(triggered(bool)),this,SLOT(exportClickedSlot()));
   
   //Menu
   disconnect(m_aboutKcm, SIGNAL(triggered(bool) ), this, SLOT(aboutKcmSlot()));
@@ -118,51 +124,32 @@ bool KInfoCenter::eventFilter(QObject *watched, QEvent *event)
   return false;
 }
 
-void KInfoCenter::initMenuBar()
-{ 
+void KInfoCenter::createToolBar()
+{
   KStandardAction::quit(this, SLOT(close()), actionCollection());
   KStandardAction::keyBindings(guiFactory(), SLOT(configureShortcuts()), actionCollection());
+  
+  toolBar()->setMovable(false);
   
   m_aboutKcm = actionCollection()->addAction("help_about_module");
   m_aboutKcm->setText(i18nc("Information about current module located in about menu","About Current Information Module"));
   m_aboutKcm->setIcon(KIcon("help"));
   m_aboutKcm->setEnabled(false);
   
-  setupGUI(QSize(800, 480), Keys | Save | Create);
-
-  QAction *aboutApp = actionCollection()->action("help_about_app");
-  aboutApp->setIcon(KIcon("hwinfo"));
-}
-
-void KInfoCenter::createButtonBar()
-{  
-  QWidget *m_buttonBar = new QWidget();
-  m_buttonBar->setContentsMargins(0,0,0,0);
+  m_exportAction = new KAction(this);
+  m_exportAction->setText(i18nc("Export button label","Export"));
+  m_exportAction->setIcon(KIcon("document-export"));
   
-  QHBoxLayout *bbLayout = new QHBoxLayout(m_buttonBar);
-  bbLayout->setContentsMargins(0, 0, 0, 0);
-  m_buttonBar->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum);
+  m_moduleHelpAction = new KAction(this);
+  m_moduleHelpAction->setText(i18nc("Module help button label","Module Help"));
+  m_moduleHelpAction->setIcon(KIcon("khelpcenter"));
   
-  m_helpButton = new QPushButton(i18nc("Help button label","Help"));
-  m_helpButton->setIcon(KIcon("help"));
-  m_helpButton->setEnabled(false);
-  m_helpButton->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
-  m_helpButton->setToolTip(i18nc("Help Button ToolTip", "Opens help browser for selected module"));
+  m_helpAction = new KActionMenu( KIcon("help"), i18nc("Help button label","Help"), this );
+  m_helpAction->setDelayed( false );
   
-  QWidget *m_blank = new QWidget();
-  m_blank->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
-  
-  m_exportButton = new QPushButton(i18nc("export button label","Export"));
-  m_exportButton->setIcon(KIcon("document-export"));
-  m_exportButton->setEnabled(false);
-  m_exportButton->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
-  m_exportButton->setToolTip(i18nc("Export Button ToolTip", "Exports information for selected module"));
-  
-  bbLayout->addWidget(m_helpButton);
-  bbLayout->addWidget(m_blank);
-  bbLayout->addWidget(m_exportButton);
-  
-  m_cWidget->layout()->addWidget(m_buttonBar);
+  actionCollection()->addAction("export",m_exportAction);
+  actionCollection()->addAction("helpModule",m_moduleHelpAction);
+  actionCollection()->addAction("helpMenu",m_helpAction);
 }
 
 void KInfoCenter::createMainFrame()
@@ -176,7 +163,7 @@ void KInfoCenter::createMainFrame()
   m_splitter->setContentsMargins(0, 0, 0, 0);
   mainLayout->addWidget(m_splitter);
   
-  CreateMenuFrame();
+  createMenuFrame();
   
   m_contain = new KcmContainer(m_splitter);
   m_splitter->addWidget(m_contain);
@@ -187,24 +174,26 @@ void KInfoCenter::createMainFrame()
   m_cWidget->layout()->addWidget(mainDisplay);
 }
   
-void KInfoCenter::CreateMenuFrame() 
+void KInfoCenter::createMenuFrame() 
 {
   QWidget *sideFrame = new QWidget(m_splitter);
   sideFrame->setContentsMargins(0,0,0,0);
   
   QVBoxLayout *menuLayout = new QVBoxLayout(sideFrame);
   menuLayout->setContentsMargins(0, 0, 0, 0);
-  
+
   m_searchText = new KLineEdit(sideFrame);
   m_searchText->setClearButtonShown(true);
   m_searchText->setClickMessage( i18nc( "Search Bar Click Message", "Search" ) );
   m_searchText->setCompletionMode( KGlobalSettings::CompletionPopup );
   m_searchText->completionObject()->setIgnoreCase(true);
   
-  m_searchBoxAction = new KAction(sideFrame);
-  m_searchBoxAction->setShortcut(KShortcut(QKeySequence(Qt::CTRL + Qt::Key_F)));
-  m_searchBoxAction->setText(i18n("Search Modules"));
-  actionCollection()->addAction("searchText",m_searchBoxAction);
+  m_searchAction = new KAction(this);
+  m_searchAction->setShortcut(KShortcut(QKeySequence(Qt::CTRL + Qt::Key_F)));
+  m_searchAction->setText(i18nc("Kaction search label", "Search Modules"));
+  m_searchAction->setIcon(KIcon("search"));
+  
+  actionCollection()->addAction("search",m_searchAction);
   
   m_sideMenu = new SidePanel(sideFrame);
   m_sideMenu->installEventFilter(this);
@@ -232,14 +221,14 @@ void KInfoCenter::setKcm(const KcmTreeItem *kcmItem)
 
 void KInfoCenter::setButtons(const KCModule::Buttons buttons) 
 {    
-  if (buttons & KCModule::Help) m_helpButton->setEnabled(true);
-  if (buttons & KCModule::Export) m_exportButton->setEnabled(true);
+  if (buttons & KCModule::Help) m_moduleHelpAction->setEnabled(true);
+  if (buttons & KCModule::Export) m_exportAction->setEnabled(true);
 }
 
 void KInfoCenter::resetCondition()
 {
-  m_helpButton->setEnabled(false);
-  m_exportButton->setEnabled(false);
+  m_moduleHelpAction->setEnabled(false);
+  m_exportAction->setEnabled(false);
 
   m_aboutKcm->setEnabled(false);
 }
