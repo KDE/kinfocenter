@@ -9,6 +9,7 @@ X-KDE-Library=kcm_infosummary
 X-KDE-ParentApp=kinfocenter
 
 Name=Summary
+Name[ia]=Summario
 Name[is]=Samantekt
 Name[km]=សេចក្ដី​សង្ខេប
 Name[nds]=Översicht
