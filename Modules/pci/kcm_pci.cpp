@@ -58,7 +58,8 @@ KCMPci::KCMPci(QWidget *parent, const QVariantList &) :
 	about->addAuthor(ki18n("Helge Deller"), KLocalizedString(), "deller@gmx.de");
 	setAboutData(about);
 
-
+	KGlobal::locale()->insertCatalog("kcm_infobase");
+	
 	QHBoxLayout* layout = new QHBoxLayout(this);
 	layout->setSpacing(0);
 	layout->setMargin(0);
