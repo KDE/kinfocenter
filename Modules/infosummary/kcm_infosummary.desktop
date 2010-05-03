@@ -9,10 +9,12 @@ X-KDE-Library=kcm_infosummary
 X-KDE-ParentApp=kinfocenter
 
 Name=Summary
+Name[en_GB]=Summary
 Name[ia]=Summario
 Name[is]=Samantekt
 Name[km]=សេចក្ដី​សង្ខេប
 Name[nds]=Översicht
+Name[nl]=Samenvatting
 Name[pt]=Resumo
 Name[pt_BR]=Resumo
 Name[sk]=Súhrn
@@ -23,10 +25,12 @@ Name[x-test]=xxSummaryxx
 Name[zh_TW]=摘要
 
 Comment=Hardware Information Summary
+Comment[en_GB]=Hardware Information Summary
 Comment[ia]=Summario de information de hardware
 Comment[is]=Samantekt vélbúnaðarupplýsinga
 Comment[ja]=ハードウェア情報概要
 Comment[km]=សេចក្ដី​សង្ខេប​អំពី​ព័ត៌មាន​ផ្នែក​រឹង
+Comment[nl]=Hardware-informatie samenvatting
 Comment[pt]=Resumo de Informação do 'Hardware'
 Comment[pt_BR]=Resumo de informações do hardware
 Comment[sv]=Översikt av hårdvaruinformation
