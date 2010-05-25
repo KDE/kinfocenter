@@ -28,6 +28,7 @@ Name[tg]=Намоишгари тасвирҳо
 Name[th]=ตัวแสดงอุปกรณ์
 Name[uk]=Переглядач пристроїв
 Name[x-test]=xxDevice Viewerxx
+Name[zh_CN]=设备查看器
 Name[zh_TW]=裝置檢視器
 
 Comment=Device Viewer
@@ -48,6 +49,7 @@ Comment[sv]=Enhetsvisning
 Comment[th]=ตัวแสดงอุปกรณ์
 Comment[uk]=Переглядач пристроїв
 Comment[x-test]=xxDevice Viewerxx
+Comment[zh_CN]=设备查看器
 Comment[zh_TW]=裝置檢視器
 
 X-KDE-Keywords=device,devices
