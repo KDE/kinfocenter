@@ -55,4 +55,5 @@ Comment[zh_CN]=硬件信息摘要
 Comment[zh_TW]=硬體資訊摘要
 
 X-KDE-Keywords=device,devices
+X-DocPath=kinfocenter/infosummary/index.html
 Categories=Qt;KDE;X-KDE-information;
