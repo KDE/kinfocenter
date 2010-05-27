@@ -34,6 +34,7 @@
 SidePanel::SidePanel(QWidget *parent) : QTreeView(parent)
 { 
   setSortingEnabled(true);
+  setAnimated(true);
   sortByColumn(0, Qt::AscendingOrder);
   m_model = new InfoKcmModel(this);  
   
