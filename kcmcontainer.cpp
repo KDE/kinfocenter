@@ -128,17 +128,22 @@ const KAboutData *KcmContainer::kcmAboutData() const
   return m_mod->aboutData();
 }
 
-const QString KcmContainer::exportText()
+const QString KcmContainer::exportText() const
 {
   return m_mod->realModule()->exportText(); 
 }
 
-QString KcmContainer::name()
+const QString KcmContainer::name() const
 {
   return m_modInfo.moduleName();
 }
 
-QString KcmContainer::library() 
+const QString KcmContainer::library() const 
 {
   return m_modInfo.library();
+}
+
+const QString KcmContainer::fileName() const 
+{
+  return m_modInfo.fileName();
 }

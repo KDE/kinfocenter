@@ -241,7 +241,7 @@ void KInfoCenter::helpClickedSlot()
 
   if(docPath.isEmpty())
   {
-      KToolInvocation::invokeHelp(m_contain->library());
+      KToolInvocation::invokeHelp(m_contain->fileName());
   } 
   else 
   {
