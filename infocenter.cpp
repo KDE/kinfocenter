@@ -40,6 +40,7 @@
 #include <KFileDialog>
 #include <KShortcut>
 #include <KToolBar>
+#include <KToolInvocation>
 
 //QT
 #include <QGridLayout>
@@ -238,13 +239,20 @@ void KInfoCenter::helpClickedSlot()
   // Nicked from Ben, could not use KToolInvocation due to docpath.  
   QString docPath = m_contain->helpPath();
 
-  KUrl url( KUrl("help:/"), docPath );
-  QProcess::startDetached("khelpcenter", QStringList() << url.url());
+  if(docPath.isEmpty())
+  {
+      KToolInvocation::invokeHelp(m_contain->library());
+  } 
+  else 
+  {
+    KUrl url( KUrl("help:/"), docPath );
+    QProcess::startDetached("khelpcenter", QStringList() << url.url());
+  }
 }
 
 void KInfoCenter::exportClickedSlot() 
 { 
-  QString moduleName = m_contain->modulesName();
+  QString moduleName = m_contain->name();
   
   if(m_contain->exportText().isEmpty())
   {

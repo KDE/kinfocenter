@@ -3,7 +3,6 @@ Exec=kcmshell4 smbstatus
 Icon=preferences-system-network-share-windows-status
 Type=Service
 X-KDE-ServiceTypes=KCModule
-X-DocPath=kinfocenter/samba/index.html
 
 X-KDE-KInfoCenter-Category=Network Information
 X-KDE-Library=kcm_samba

@@ -2,7 +2,6 @@
 Icon=drive-removable-media-usb-pendrive
 Type=Service
 X-KDE-ServiceTypes=KCModule
-X-DocPath=kinfocenter/usb/index.html
 Exec=kcmshell4 kcmusb
 
 X-KDE-KInfoCenter-Category=Device Information

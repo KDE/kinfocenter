@@ -133,7 +133,12 @@ const QString KcmContainer::exportText()
   return m_mod->realModule()->exportText(); 
 }
 
-QString KcmContainer::modulesName()
+QString KcmContainer::name()
 {
   return m_modInfo.moduleName();
+}
+
+QString KcmContainer::library() 
+{
+  return m_modInfo.library();
 }

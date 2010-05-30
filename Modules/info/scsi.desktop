@@ -3,7 +3,6 @@ Exec=kcmshell4 scsi
 Icon=kcmscsi
 Type=Service
 X-KDE-ServiceTypes=KCModule
-X-DocPath=kinfocenter/scsi/index.html
 
 X-KDE-KInfoCenter-Category=Device Information
 X-KDE-Library=kcm_info

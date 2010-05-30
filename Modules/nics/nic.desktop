@@ -2,7 +2,6 @@
 Exec=kcmshell4 nic
 Type=Service
 X-KDE-ServiceTypes=KCModule
-X-DocPath=kinfocenter/nics/index.html
 Icon=network-workgroup
 
 X-KDE-KInfoCenter-Category=Network Information

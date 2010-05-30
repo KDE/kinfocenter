@@ -3,7 +3,6 @@ Exec=kcmshell4 ioports
 Icon=kcmmemory
 Type=Service
 X-KDE-ServiceTypes=KCModule
-X-DocPath=kinfocenter/ioports/index.html
 Categories=Qt;KDE;X-KDE-information;
 
 X-KDE-KInfoCenter-Category=Device Information

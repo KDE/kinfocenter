@@ -3,7 +3,6 @@ Exec=kcmshell4 xserver
 Icon=xorg
 Type=Service
 X-KDE-ServiceTypes=KCModule
-X-DocPath=kinfocenter/xserver/index.html
 
 X-KDE-KInfoCenter-Category=Graphical Information
 X-KDE-Library=kcm_info

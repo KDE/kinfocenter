@@ -3,7 +3,6 @@ Exec=kcmshell4 kcm_memory
 Icon=memory
 Type=Service
 X-KDE-ServiceTypes=KCModule
-X-DocPath=kinfocenter/memory/index.html
 
 X-KDE-Weight=1
 X-KDE-Library=kcm_memory

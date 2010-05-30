@@ -59,5 +59,4 @@ Comment[zh_CN]=设备查看器
 Comment[zh_TW]=裝置檢視器
 
 X-KDE-Keywords=device,devices
-X-DocPath=kinfocenter/devinfo/index.html
 Categories=Qt;KDE;X-KDE-information;
