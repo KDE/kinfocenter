@@ -143,9 +143,9 @@ void KInfoCenter::createToolBar()
   
   m_moduleHelpAction = new KAction(this);
   m_moduleHelpAction->setText(i18nc("Module help button label","Module Help"));
-  m_moduleHelpAction->setIcon(KIcon("khelpcenter"));
+  m_moduleHelpAction->setIcon(KIcon("help-contextual"));
   
-  m_helpAction = new KActionMenu( KIcon("help"), i18nc("Help button label","Help"), this );
+  m_helpAction = new KActionMenu( KIcon("help-contents"), i18nc("Help button label","Help"), this );
   m_helpAction->setDelayed( false );
   
   actionCollection()->addAction("export",m_exportAction);

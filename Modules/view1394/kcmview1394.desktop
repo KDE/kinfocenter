@@ -1,5 +1,5 @@
 [Desktop Entry]
-Icon=kcmmemory
+Icon=text-x-texinfo
 Type=Service
 X-KDE-ServiceTypes=KCModule
 Exec=kcmshell4 kcmview1394
