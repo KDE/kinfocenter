@@ -1,6 +1,6 @@
 [Desktop Entry]
 Exec=kcmshell4 scsi
-Icon=kcmscsi
+Icon=text-x-texinfo
 Type=Service
 X-KDE-ServiceTypes=KCModule
 
