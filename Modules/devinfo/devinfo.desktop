@@ -10,9 +10,12 @@ X-KDE-Library=devinfo
 X-KDE-ParentApp=kinfocenter
 
 Name=Device Viewer
+Name[cs]=Prohlížeč zařízení
+Name[da]=Enhedsfremviser
 Name[de]=Gerätebetrachter
 Name[en_GB]=Device Viewer
 Name[es]=Visor de dispositivos
+Name[et]=Seadmete näitaja
 Name[ia]=Visor de Dispositivo
 Name[id]=Penampil Divais
 Name[is]=Tækjaskoðun
@@ -35,9 +38,12 @@ Name[zh_CN]=设备查看器
 Name[zh_TW]=裝置檢視器
 
 Comment=Device Viewer
+Comment[cs]=Prohlížeč zařízení
+Comment[da]=Enhedsfremviser
 Comment[de]=Gerätebetrachter
 Comment[en_GB]=Device Viewer
 Comment[es]=Visor de dispositivos
+Comment[et]=Seadmete näitaja
 Comment[ia]=Visor de dispositivo
 Comment[id]=Penampil Divais
 Comment[is]=Tækjaskoðun

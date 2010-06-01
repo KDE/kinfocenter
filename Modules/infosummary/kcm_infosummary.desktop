@@ -10,9 +10,11 @@ X-KDE-ParentApp=kinfocenter
 
 Name=Summary
 Name[cs]=Shrnutí
+Name[da]=Oversigt
 Name[de]=Übersicht
 Name[en_GB]=Summary
 Name[es]=Resumen
+Name[et]=Kokkuvõte
 Name[ga]=Achoimre
 Name[hr]=Sažetak
 Name[ia]=Summario
@@ -36,9 +38,12 @@ Name[zh_CN]=摘要
 Name[zh_TW]=摘要
 
 Comment=Hardware Information Summary
+Comment[cs]=Souhrn informací o hardwaru
+Comment[da]=Oversigt over hardwareinformation
 Comment[de]=Übersicht über Hardwareinformationen
 Comment[en_GB]=Hardware Information Summary
 Comment[es]=Resumen de la información del hardware
+Comment[et]=Riistvarateabe kokkuvõte
 Comment[ia]=Summario de information de hardware
 Comment[id]=Kesimpulan Informasi Peranti Keras
 Comment[is]=Samantekt vélbúnaðarupplýsinga
