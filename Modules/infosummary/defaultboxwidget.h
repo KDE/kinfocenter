@@ -24,14 +24,14 @@
 #define __DEFAULTBOXWIDGET__
 
 //QT
-#include <QFrame>
+#include <QGroupBox>
 #include <QGridLayout>
 #include <QLabel>
 
 //KDE
 #include <KIcon>
 
-class DefaultBoxWidget : public QFrame
+class DefaultBoxWidget : public QGroupBox
 {
   Q_OBJECT
  

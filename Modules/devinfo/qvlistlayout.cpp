@@ -52,6 +52,8 @@ void QVListLayout::applyQListToLayout(const QStringList &list)
 	  bLabel->setFont(labelFont);
 	} else {
 	  bLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
+	  bLabel->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Maximum);
+	  bLabel->setAlignment(Qt::AlignTop);
 	  toggle = true;
 	}
 	

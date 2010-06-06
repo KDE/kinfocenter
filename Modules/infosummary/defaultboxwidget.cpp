@@ -31,8 +31,6 @@ DefaultBoxWidget::DefaultBoxWidget()
   m_layout->setAlignment(Qt::AlignTop|Qt::AlignLeft);
   m_layout->setSpacing(10);
   
-  setStyleSheet("QFrame#OuterFrame { border: 2px solid grey; border-radius: 10px; };");
-  
   createDisplay();
 }
 

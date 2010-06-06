@@ -72,6 +72,7 @@ void InfoPanel::setTopWidgetLayout(const bool &isInit)
   top = new QWidget(this);
    
   vLayout->addWidget(top);
+  top->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Maximum);
   top->setLayout(setAlignedLayout(top));
 }
 

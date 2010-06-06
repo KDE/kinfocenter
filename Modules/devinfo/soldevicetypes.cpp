@@ -597,7 +597,7 @@ SolCameraDevice::SolCameraDevice(const Solid::DeviceInterface::Type &type) :
 
 void SolCameraDevice::setDefaultListing(const Solid::DeviceInterface::Type &type) 
 { 
-  createDeviceChildren<SolVolumeDevice>(this,QString(),type);
+  createDeviceChildren<SolCameraDevice>(this,QString(),type);
 }
 
 QVListLayout *SolCameraDevice::infoPanelLayout() 
@@ -709,7 +709,7 @@ SolAcAdapterDevice::SolAcAdapterDevice(const Solid::DeviceInterface::Type &type)
 
 void SolAcAdapterDevice::setDefaultListing(const Solid::DeviceInterface::Type &type) 
 { 
-  createDeviceChildren<SolVolumeDevice>(this,QString(),type);
+  createDeviceChildren<SolAcAdapterDevice>(this,QString(),type);
 }
 
 QVListLayout *SolAcAdapterDevice::infoPanelLayout() 
@@ -747,7 +747,7 @@ SolDvbDevice::SolDvbDevice(const Solid::DeviceInterface::Type &type) :
 
 void SolDvbDevice::setDefaultListing(const Solid::DeviceInterface::Type &type) 
 { 
-  createDeviceChildren<SolVolumeDevice>(this,QString(),type);
+  createDeviceChildren<SolDvbDevice>(this,QString(),type);
 }
 
 QVListLayout *SolDvbDevice::infoPanelLayout() 
