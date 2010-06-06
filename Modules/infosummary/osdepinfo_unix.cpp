@@ -1,6 +1,6 @@
 
 /*
- *  osdepinfo_linux.cpp
+ *  osdepinfo_unix.cpp
  *
  *  Copyright (C) 2010 David Hubner <hubnerd@ntlworld.com>
  *
@@ -22,14 +22,13 @@
 
 #include "osdepinfo.h"
 
-//Linux
 #include <sys/utsname.h>
 
 void OsDepInfo::setDepInfo() 
 {
-  struct utsname linInfo;
-  if(uname(&linInfo)) return; 
+  struct utsname unixInfo;
+  if(uname(&unixInfo)) return; 
   
-  m_osVersion = QString(linInfo.sysname) + ' ' + QString(linInfo.release);
-  m_hostName = QString(linInfo.nodename);
+  m_osVersion = QString(unixInfo.sysname) + ' ' + QString(unixInfo.release);
+  m_hostName = QString(unixInfo.nodename);
 }

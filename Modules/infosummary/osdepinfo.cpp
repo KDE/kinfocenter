@@ -37,8 +37,8 @@ const QString OsDepInfo::osVersion()
   return m_osVersion;
 }
 
-#if defined(Q_OS_LINUX)
-  #include "osdepinfo_linux.cpp"
+#if defined(Q_OS_UNIX)
+  #include "osdepinfo_unix.cpp"
 #else
 
 #ifdef __GNUC__
@@ -52,5 +52,5 @@ void OsDepInfo::setDepInfo()
   m_hostName.clear();
 }
 
-#endif // Q_OS_LINUX
+#endif // Q_OS_UNIX
 
