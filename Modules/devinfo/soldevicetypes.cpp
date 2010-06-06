@@ -282,8 +282,7 @@ void SolVolumeDevice::setDefaultListing(const Solid::DeviceInterface::Type &type
 QVListLayout *SolVolumeDevice::infoPanelLayout() 
 {
   QStringList labels;
-  QProgressBar *usageBar = new QProgressBar();
-  bool barToggle = false;
+  QProgressBar *usageBar = NULL;
   
   const Solid::StorageVolume *voldev = interface<const Solid::StorageVolume>();
   const Solid::StorageAccess *accdev = interface<const Solid::StorageAccess>();
@@ -331,15 +330,15 @@ QVListLayout *SolVolumeDevice::infoPanelLayout()
       << KGlobal::locale()->formatByteSize(mountSpaceInfo.size())
       << i18n("Percentage Used / Available: ");
       
+      usageBar = new QProgressBar();
       usageBar->setRange(0,100);
       usageBar->setValue(static_cast<int>((mountSpaceInfo.used() * 100) / mountSpaceInfo.size()));
-      barToggle = true;
     }
 
   }
   
   deviceInfoLayout->applyQListToLayout(labels);
-  if(barToggle) deviceInfoLayout->addWidget(usageBar);
+  if(usageBar) deviceInfoLayout->addWidget(usageBar);
     
   return deviceInfoLayout;
 }
