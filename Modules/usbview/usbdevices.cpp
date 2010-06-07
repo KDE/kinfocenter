@@ -45,7 +45,7 @@ USBDevice::USBDevice() :
 }
 
 USBDevice::~USBDevice() {
-	
+
 }
 
 static QString catFile(QString fname) {
@@ -135,7 +135,7 @@ USBDevice* USBDevice::find(int bus, int device) {
 		if (usbDevice->bus() == bus && usbDevice->device() == device)
 			return usbDevice;
 	}
-	
+
 	return NULL;
 }
 
@@ -290,11 +290,31 @@ bool USBDevice::parseSys(const QString &dname) {
 	return d.count();
 }
 
-#elif (defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD)) && !defined(DISABLE_USBDEVICES_FREEBSD)
+#else
+
+// Unused by *BSD
+bool USBDevice::parseSys(const QString &fname)
+{
+	Q_UNUSED(fname)
+
+	return true;
+}
+
+# if defined(DISABLE_USBDEVICES_FREEBSD)
+
 /*
  * FIXME: The USB subsystem has changed a lot in FreeBSD 8.0
  *        Support for it must be written.
  */
+
+bool USBDevice::parse(const QString &fname)
+{
+	Q_UNUSED(fname)
+
+	return true;
+}
+
+# else
 
 /*
  * FreeBSD support by Markus Brueffer <markus@brueffer.de>
@@ -367,6 +387,8 @@ void USBDevice::collectData( int fd, int level, usb_device_info &di, int parent)
 
 bool USBDevice::parse(const QString &fname)
 {
+	Q_UNUSED(fname)
+
 	static bool showErrorMessage = true;
 	bool error = false;
 	_devices.clear();
@@ -408,4 +430,6 @@ bool USBDevice::parse(const QString &fname)
 
 	return true;
 }
-#endif
+
+# endif // defined(DISABLE_USBDEVICES_FREEBSD)
+#endif // !(defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD))
