@@ -71,7 +71,7 @@ class SidePanel : public QTreeView
    /**
    * Get all the treeview items keywords
    */
-   QStringList allChildrensKeywords();
+   QStringList allChildKeywords();
     
   signals:
     /**

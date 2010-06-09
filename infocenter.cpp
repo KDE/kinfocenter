@@ -84,7 +84,7 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
   connect(m_aboutKcm, SIGNAL(triggered(bool) ), this, SLOT(aboutKcmSlot()));
   
   //Startup 
-  m_searchText->completionObject()->setItems(m_sideMenu->allChildrenKeywords());
+  m_searchText->completionObject()->setItems(m_sideMenu->allChildKeywords());
   m_sideMenu->setFocus(Qt::OtherFocusReason);
   m_sideMenu->changeToFirstValidItem();
   

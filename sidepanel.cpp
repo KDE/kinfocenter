@@ -123,7 +123,7 @@ void SidePanel::expandAllSlot()
   expandAll();
 }
 
-QStringList SidePanel::allChildrensKeywords()
+QStringList SidePanel::allChildKeywords()
 {
   return m_model->allChildrenKeywords();
 }

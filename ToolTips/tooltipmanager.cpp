@@ -206,7 +206,7 @@ QWidget * ToolTipManager::createTipContent( QModelIndex item )
 QLayout * ToolTipManager::generateToolTipLine( QModelIndex * item, QWidget * toolTip, QSize iconSize, bool comment )
 {
     SidePanel *sidePanel = static_cast<SidePanel*>(d->view);
-    KcmTreeItem *menuItem = static_cast<KcmTreeItem*>( sidePanel->mapProxySource(*item).internalPointer() );
+    KcmTreeItem *menuItem = static_cast<KcmTreeItem*>( sidePanel->mapToProxySource(*item).internalPointer() );
     
     QString text = menuItem->data(); 
     if ( comment ) {
