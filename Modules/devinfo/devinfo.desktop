@@ -11,6 +11,7 @@ X-KDE-ParentApp=kinfocenter
 
 Name=Device Viewer
 Name[ca]=Visor de dispositius
+Name[ca@valencia]=Visor de dispositius
 Name[cs]=Prohlížeč zařízení
 Name[da]=Enhedsfremviser
 Name[de]=Gerätebetrachter
@@ -41,6 +42,7 @@ Name[zh_TW]=裝置檢視器
 
 Comment=Device Viewer
 Comment[ca]=Visor de dispositius
+Comment[ca@valencia]=Visor de dispositius
 Comment[cs]=Prohlížeč zařízení
 Comment[da]=Enhedsfremviser
 Comment[de]=Gerätebetrachter
