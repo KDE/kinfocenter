@@ -36,6 +36,9 @@ class KicApp : public KApplication {
   Q_OBJECT
   
   public:
+    /**
+    * Init main window of application
+    */
     KicApp();
     
   private:

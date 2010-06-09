@@ -43,28 +43,83 @@ class SidePanel : public QTreeView
   Q_OBJECT
   
   public:
-    SidePanel(QWidget *);
+    
+    /**
+    * Create Side Panel Widget, including search line edit.
+    *
+    * @param parent objects parent
+    */
+    SidePanel(QWidget *parent);
+    
+    /** 
+    * Destory SidePanel object
+    */
     ~SidePanel();
     
-    void changeToRootSelection();
-    QModelIndex mapProxySource(QModelIndex);
-    void filterSideMenu(QString);
-    QStringList allChildrenKeywords();
+    /**
+    * Select the first valid item in TreeView
+    */
+    void changeToFirstValidItem();
+    
+    /** 
+    * Map a QAbstractItemModel index to a QSortFilterProxyModel index
+    */
+    QModelIndex mapToProxySource(QModelIndex);
+    
+   // void filterSideMenu(QString);
+   
+   /**
+   * Get all the treeview items keywords
+   */
+   QStringList allChildrensKeywords();
     
   signals:
+    /**
+    * Emited when menu item is clicked
+    */
     void clicked(const KcmTreeItem *);
     
   private slots:
+    
+    /**
+    * Triggered when treeview item is clicked
+    */
     void clickedSlot(const QModelIndex &index);
     
   public slots:
+    /**
+    * Triggered when collapseAll is selected from tree view 
+    * item menu
+    */
     void collapseAllSlot();
-    void expandAllSlot();	
+    
+    /**
+    * Triggered when ExpandAll is selected from tree view
+    * item menu 
+    */
+    void expandAllSlot();
+    
+    /**
+    * Filter out all but menu items that fit certain keywords
+    */
     void filterSideMenuSlot(const QString &);
+    
+    /**
+    * Triggered when Reset Search is selected from tree view
+    * item menu
+    */
     void resetSearchSlot();
 
   private:
+    
+    /**
+    * Created actions for the tree view item menu
+    */
     void createMenuActions();
+    
+    /** 
+    * Create treeview item menu
+    */
     void contextMenuEvent(QContextMenuEvent *event);
     
     InfoKcmModel *m_model;

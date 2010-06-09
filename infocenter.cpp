@@ -86,7 +86,7 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
   //Startup 
   m_searchText->completionObject()->setItems(m_sideMenu->allChildrenKeywords());
   m_sideMenu->setFocus(Qt::OtherFocusReason);
-  m_sideMenu->changeToRootSelection();
+  m_sideMenu->changeToFirstValidItem();
   
   m_toolTips = new ToolTipManager(m_sideMenu);
   setupGUI(QSize(640,480),ToolBar | Keys | Save | Create,"kinfocenterui.rc");
@@ -238,16 +238,9 @@ void KInfoCenter::helpClickedSlot()
 { 
   // Nicked from Ben, could not use KToolInvocation due to docpath.  
   QString docPath = m_contain->helpPath();
-
-  if(docPath.isEmpty())
-  {
-      KToolInvocation::invokeHelp(m_contain->docName());
-  } 
-  else 
-  {
-    KUrl url( KUrl("help:/"), docPath );
-    QProcess::startDetached("khelpcenter", QStringList() << url.url());
-  }
+  
+  KUrl url( KUrl("help:/"), docPath );
+  QProcess::startDetached("khelpcenter", QStringList() << url.url());
 }
 
 void KInfoCenter::exportClickedSlot() 

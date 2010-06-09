@@ -64,7 +64,7 @@ void SidePanel::clickedSlot(const QModelIndex &index)
   emit clicked(item);
 }
 
-void SidePanel::changeToRootSelection()
+void SidePanel::changeToFirstValidItem()
 {
   QModelIndex rootIndex = m_proxyModel->mapFromSource(m_model->firstValid());
   if(rootIndex.isValid() == false) return;
@@ -73,7 +73,7 @@ void SidePanel::changeToRootSelection()
   emit clickedSlot(rootIndex);
 }
 
-QModelIndex SidePanel::mapProxySource(QModelIndex index)
+QModelIndex SidePanel::mapToProxySource(QModelIndex index)
 {
   return m_proxyModel->mapToSource(index);
 }
@@ -123,7 +123,7 @@ void SidePanel::expandAllSlot()
   expandAll();
 }
 
-QStringList SidePanel::allChildrenKeywords()
+QStringList SidePanel::allChildrensKeywords()
 {
   return m_model->allChildrenKeywords();
 }

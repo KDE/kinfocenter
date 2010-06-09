@@ -143,14 +143,4 @@ const QString KcmContainer::fileName() const
 {
   return m_modInfo.fileName();
 }
-
-const QString KcmContainer::docName() 
-{
-  QString fn = fileName();
-  int fnDotIndex = fn.lastIndexOf('.');
-  
-  if(fnDotIndex == -1) return fn;
-  return fn.left(fnDotIndex);
-}
-
   

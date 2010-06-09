@@ -34,10 +34,26 @@
 class InfoKcmProxyModel : public QSortFilterProxyModel
 {
   public:
+    /**
+    * Create InfoKcMProxyModel object. Used to filter out
+    * and sort a tree view.
+    *
+    * @param parent objects parent
+    */
     InfoKcmProxyModel(QObject *parent);
+    
+    /**
+    * Check if left item is less than right item
+    * Uses X-KDE-Weight for measurements
+    */
     bool lessThan(const QModelIndex &, const QModelIndex &) const;
     
   private:
+    
+    /**
+    * Filter out rows
+    * Used in search implementation
+    */
     bool filterAcceptsRow(int, const QModelIndex &) const;
 };
 

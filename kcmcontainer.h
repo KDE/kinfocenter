@@ -38,21 +38,73 @@
 class KcmContainer : public QScrollArea
 {  
   public:
-    KcmContainer(QWidget *);
+    /**
+    * Widget to display and recieve information 
+    * about displayed KCM.
+    *
+    * @param parent objects parent
+    */
+    KcmContainer(QWidget *parent);
+    
+    /** 
+    * Destory KCMContainer 
+    */
     ~KcmContainer();
     
+    /**
+    * Set and show KCM in KCMContainer window
+    */
     void setKcm(const KCModuleInfo &);
+    
+    /**
+    * Move KCMContainer top edge to a certain position
+    *
+    * @param y y coordinates of top edge
+    */
     void setKcmTopEdge(int y);
+    
+    /**
+    * Get currently selected KCMs document path 
+    * for .desktop
+    * X-KDE-DocPath
+    */
     const QString helpPath() const;
+    
+    /**
+    * Get currently selected KCMs 
+    * information on which buttons need to be shown
+    */
     const KCModule::Buttons buttons() const;
+    
+    /**
+    * Get about data for currently selected KCM
+    */
     const KAboutData *kcmAboutData() const;
+    
+    /**
+    * Get currently selected KCMs export information 
+    */
     const QString exportText() const;
+    
+    /**
+    * Get currently selected KCMs name
+    */
     const QString name() const;
+    
+    /**
+    * Get currently selected KCMs .desktop file name
+    */
     const QString fileName() const;
-    const QString docName(); 
     
   private:
+    /**
+    * Init and set KCMContainer Layout
+    */
     void setContainerLayout();
+    
+    /**
+    * Set top title in KCMContainer
+    */
     void setKcmTitle(const KCModuleInfo &);
     
     QLabel *m_titleLabel;
