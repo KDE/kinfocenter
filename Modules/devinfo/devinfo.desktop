@@ -8,6 +8,7 @@ X-KDE-Weight=0
 X-KDE-KInfoCenter-Category=Device Information
 X-KDE-Library=devinfo
 X-KDE-ParentApp=kinfocenter
+X-DocPath=kinfocenter/index.html#devinfo
 
 Name=Device Viewer
 Name[ca]=Visor de dispositius

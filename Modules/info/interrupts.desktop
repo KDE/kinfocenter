@@ -9,6 +9,7 @@ X-KDE-KInfoCenter-Category=Device Information
 X-KDE-Library=kcm_info
 X-KDE-PluginKeyword=irq
 X-KDE-ParentApp=kinfocenter
+X-DocPath=kinfocenter/index.html#interrupts
 
 Name=Interrupts
 Name[af]=Interrupts

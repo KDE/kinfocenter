@@ -8,6 +8,7 @@ X-KDE-KInfoCenter-Category=Device Information
 X-KDE-Library=kcm_info
 X-KDE-PluginKeyword=scsi
 X-KDE-ParentApp=kinfocenter
+X-DocPath=kinfocenter/index.html#scsi
 
 Name=SCSI
 Name[af]=Scsi

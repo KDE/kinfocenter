@@ -9,6 +9,7 @@ X-KDE-KInfoCenter-Category=Device Information
 X-KDE-Library=kcm_info
 X-KDE-PluginKeyword=dma
 X-KDE-ParentApp=kinfocenter
+X-DocPath=kinfocenter/index.html#dma
 
 Name=DMA-Channels
 Name[af]=Dma-kanale

@@ -7,6 +7,7 @@ Icon=network-workgroup
 X-KDE-KInfoCenter-Category=Network Information
 X-KDE-Library=kcm_nic
 X-KDE-ParentApp=kinfocenter
+X-DocPath=kinfocenter/index.html#nic
 
 Name=Network Interfaces
 Name[af]=Netwerk Koppelvlakke
