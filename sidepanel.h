@@ -77,14 +77,14 @@ class SidePanel : public QTreeView
     /**
     * Emited when menu item is clicked
     */
-    void clicked(const KcmTreeItem *);
+    void activated(const KcmTreeItem *);
     
   private slots:
     
     /**
     * Triggered when treeview item is clicked
     */
-    void clickedSlot(const QModelIndex &index);
+    void activatedSlot(const QModelIndex &index);
     
   public slots:
     /**
