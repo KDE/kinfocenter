@@ -34,6 +34,7 @@
 class InfoKcmProxyModel : public QSortFilterProxyModel
 {
   public:
+    
     /**
     * Create InfoKcMProxyModel object. Used to filter out
     * and sort a tree view.

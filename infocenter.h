@@ -75,6 +75,7 @@ class KInfoCenter : public KXmlGuiWindow
     bool eventFilter(QObject *watched, QEvent *event);
 
   public slots:
+    
     /**
     * Triggered when mouse is clicked on a treeview item
     *
@@ -107,6 +108,7 @@ class KInfoCenter : public KXmlGuiWindow
     static void showError(QWidget *parent, QString errorMessage);
     
   private:
+    
     /** 
     * Create main window and splitter
     */

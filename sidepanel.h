@@ -41,7 +41,7 @@ class InfoKcmProxyModel;
 class SidePanel : public QTreeView
 {
   Q_OBJECT
-  
+
   public:
     
     /**
@@ -50,60 +50,61 @@ class SidePanel : public QTreeView
     * @param parent objects parent
     */
     SidePanel(QWidget *parent);
-    
+
     /** 
     * Destory SidePanel object
     */
     ~SidePanel();
-    
+
     /**
     * Select the first valid item in TreeView
     */
     void changeToFirstValidItem();
-    
+
     /** 
     * Map a QAbstractItemModel index to a QSortFilterProxyModel index
     */
     QModelIndex mapToProxySource(QModelIndex);
-    
-   // void filterSideMenu(QString);
-   
-   /**
-   * Get all the treeview items keywords
-   */
-   QStringList allChildKeywords();
-    
-  signals:
+
+    // void filterSideMenu(QString);
+
+    /**
+    * Get all the treeview items keywords
+    */
+    QStringList allChildKeywords();
+
+    signals:
     /**
     * Emited when menu item is clicked
     */
     void activated(const KcmTreeItem *);
-    
-  private slots:
-    
+
+    private slots:
+
     /**
     * Triggered when treeview item is clicked
     */
     void activatedSlot(const QModelIndex &index);
-    
+
   public slots:
+    
     /**
     * Triggered when collapseAll is selected from tree view 
     * item menu
     */
     void collapseAllSlot();
-    
+
     /**
     * Triggered when ExpandAll is selected from tree view
     * item menu 
     */
     void expandAllSlot();
-    
+
     /**
     * Filter out all but menu items that fit certain keywords
     */
     void filterSideMenuSlot(const QString &);
-    
+
     /**
     * Triggered when Reset Search is selected from tree view
     * item menu
@@ -111,20 +112,20 @@ class SidePanel : public QTreeView
     void resetSearchSlot();
 
   private:
-    
+
     /**
     * Created actions for the tree view item menu
     */
     void createMenuActions();
-    
+
     /** 
     * Create treeview item menu
     */
     void contextMenuEvent(QContextMenuEvent *event);
-    
+
     InfoKcmModel *m_model;
     InfoKcmProxyModel *m_proxyModel;
-    
+
     QAction *colAct;
     QAction *expAct;
     QAction *resetAct;

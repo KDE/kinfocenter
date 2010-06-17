@@ -75,7 +75,9 @@ void SidePanel::changeToFirstValidItem()
 
 QModelIndex SidePanel::mapToProxySource(QModelIndex index)
 {
-  return m_proxyModel->mapToSource(index);
+  QModelIndex tmp = m_proxyModel->mapToSource(index);
+  if(tmp.isValid() == true) return tmp;
+  return QModelIndex();
 }
 
 void SidePanel::filterSideMenuSlot(const QString &pattern)

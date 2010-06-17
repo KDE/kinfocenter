@@ -92,6 +92,20 @@ QModelIndex InfoKcmModel::index(int row, int column, const QModelIndex &parent) 
   }
 }
 
+QModelIndex InfoKcmModel::index(int row, int column, KcmTreeItem *parent) const
+{
+  KcmTreeItem *childItem = parent->child(row);
+  
+  if (childItem)
+  {
+    return createIndex(row, column, childItem);
+  }
+  else
+  {
+    return QModelIndex();
+  }
+}
+
 QModelIndex InfoKcmModel::parent(const QModelIndex &index) const
 {
   if (!index.isValid())
@@ -182,29 +196,16 @@ Qt::ItemFlags InfoKcmModel::flags(const QModelIndex &index) const
 }
 
 QModelIndex InfoKcmModel::firstValid() const
-{
-  return firstValid(m_root);
-}
-
-QModelIndex InfoKcmModel::firstValid(KcmTreeItem *kcmItem) const
 { 
-  int rows = kcmItem->childCount();
-  for(int i=0;i<rows;i++)  
-  {
-    KcmTreeItem *item = kcmItem->child(i);
-    if(item->isValid() !=  false)
-    {
-      return createIndex(item->row(),0,item);
-    }
-  }
+  /// TODO: Make it desend picking out the lowest weight
   
+  int rows = m_root->childCount();
   for(int i=0;i<rows;i++)  
   {
-    KcmTreeItem *item = kcmItem->child(i);
-    if(item->isValid() ==  false)
+    KcmTreeItem *item = m_root->child(i);
+    if(item->isValid() ==  true)
     {
-      QModelIndex valid = firstValid(item);
-      if(valid != QModelIndex()) return valid;
+      if(item->weight() == 0) return index(item->row(),0,item->parent());
     }
   }
   return QModelIndex();

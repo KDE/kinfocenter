@@ -38,6 +38,7 @@
 class KcmContainer : public QScrollArea
 {  
   public:
+    
     /**
     * Widget to display and recieve information 
     * about displayed KCM.
@@ -97,6 +98,7 @@ class KcmContainer : public QScrollArea
     const QString fileName() const;
     
   private:
+    
     /**
     * Init and set KCMContainer Layout
     */

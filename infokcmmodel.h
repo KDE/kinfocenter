@@ -44,6 +44,7 @@ class InfoKcmModel : public QAbstractItemModel
   Q_OBJECT
   
   public:
+    
     /**
     * Create InfoKcmModel object.
     * Abstract data model to display KCM's for a tree view
@@ -61,6 +62,7 @@ class InfoKcmModel : public QAbstractItemModel
     * @return index of object
     */
     QModelIndex index(int row, int column, const QModelIndex& parent) const;
+    QModelIndex index(int row, int column, KcmTreeItem *parent) const;
     
     /** 
     * Get parent of item in model
@@ -78,7 +80,6 @@ class InfoKcmModel : public QAbstractItemModel
     int columnCount(const QModelIndex& parent) const;
     
     /**
-    *
     * Get the stored data for a role
     *
     * @param index objects index
@@ -98,7 +99,7 @@ class InfoKcmModel : public QAbstractItemModel
     
     /**
     * Get the first valid item on the treeview 
-    * Checks main root items and then folder items
+    * Checks main root items only
     *
     * @return index of valid item
     */
@@ -110,16 +111,11 @@ class InfoKcmModel : public QAbstractItemModel
     QStringList allChildrenKeywords();
     
   private:
+    
     /**
     * Init tree items
     */
     void createTreeItems();
-    
-    /** 
-    * Get the first valid item on the treeview
-    * overloaded for recursion
-    */
-    QModelIndex firstValid(KcmTreeItem *kcmItem) const;
     
     /** 
     * Get a certain KCM's keywords

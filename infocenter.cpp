@@ -103,7 +103,7 @@ KInfoCenter::~KInfoCenter()
   delete m_toolTips;
   
   //TreeWidget
-  disconnect(m_sideMenu,SIGNAL(clicked(const KcmTreeItem *)),this,SLOT(itemClickedSlot(const KcmTreeItem *)));
+  disconnect(m_sideMenu,SIGNAL(activated(const KcmTreeItem *)),this,SLOT(itemClickedSlot(const KcmTreeItem *)));
   
   //SearchBox
   disconnect(m_searchText, SIGNAL(textChanged(const QString&)), m_sideMenu, SLOT(filterSideMenuSlot(const QString&)));

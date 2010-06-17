@@ -151,6 +151,7 @@ class KcmTreeItem
     QStringList keywords();
     
   private:
+    
      QList<KcmTreeItem *> m_children;
      KcmTreeItem *m_parent;
      const KService::Ptr m_module;
