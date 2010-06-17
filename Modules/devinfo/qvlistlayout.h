@@ -20,8 +20,8 @@
  *
  */
 
-#ifndef __QVListLayout__
-#define __QVListLayout__
+#ifndef QVLISTLAYOUT
+#define QVLISTLAYOUT
 
 #include <QVBoxLayout>
 
@@ -34,4 +34,4 @@ class QVListLayout : public QVBoxLayout
 
 };
 
-#endif // __QVListLayout
+#endif //QVLISTLAYOUT

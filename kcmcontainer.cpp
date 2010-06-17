@@ -51,7 +51,8 @@ KcmContainer::~KcmContainer()
 
 void KcmContainer::setContainerLayout() 
 {
-  if (!m_mod && m_centerWidget) {
+  if (!m_mod && m_centerWidget) 
+  {
       // we have no module, but a widget set up for one,
       // so just return for now
       return;
@@ -95,11 +96,13 @@ void KcmContainer::setKcm(const KCModuleInfo &info)
 void KcmContainer::setKcmTopEdge(int y)
 {
     m_kcmTopEdge = y;
-    if (m_kcmTopEdge < 0) {
+    if (m_kcmTopEdge < 0) 
+    {
       return;
     }
 
-    if (m_titleLabel) {
+    if (m_titleLabel) 
+    {
       int spacing = style()->layoutSpacing(QSizePolicy::DefaultType, QSizePolicy::DefaultType, Qt::Vertical);
       m_titleLabel->setMinimumHeight(m_kcmTopEdge - spacing);
     }
@@ -143,4 +146,3 @@ const QString KcmContainer::fileName() const
 {
   return m_modInfo.fileName();
 }
-  

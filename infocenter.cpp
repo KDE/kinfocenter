@@ -20,6 +20,9 @@
  *
  */
 
+//Local
+#include "infocenter.h"
+
 //KDE
 #include <KLocale>
 #include <KIcon>
@@ -40,7 +43,6 @@
 #include <KFileDialog>
 #include <KShortcut>
 #include <KToolBar>
-#include <KToolInvocation>
 
 //QT
 #include <QGridLayout>
@@ -48,9 +50,6 @@
 #include <QTextStream>
 #include <QFile>
 #include <QKeySequence>
-
-//Local
-#include "infocenter.h"
 
 KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
 { 
@@ -119,7 +118,8 @@ KInfoCenter::~KInfoCenter()
 
 bool KInfoCenter::eventFilter(QObject *watched, QEvent *event)
 {
-  if (watched == m_sideMenu && event->type() == QEvent::Move) {
+  if (watched == m_sideMenu && event->type() == QEvent::Move)
+  {
     m_contain->setKcmTopEdge(m_sideMenu->y());
   }
   return false;
@@ -258,7 +258,8 @@ void KInfoCenter::exportClickedSlot()
   
   QFile exportFile(fileName);
 
-  if(!exportFile.open(QIODevice::WriteOnly)){
+  if(!exportFile.open(QIODevice::WriteOnly))
+  {
     KInfoCenter::showError(this,i18n("Unable to open file to write export information"));
     return;
   }

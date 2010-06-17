@@ -20,8 +20,8 @@
  *
  */
 
-#ifndef __deviceListing__
-#define __deviceListing__
+#ifndef DEVICELISTING
+#define DEVICELISTING
 
 //Solid
 #include <solid/device.h>
@@ -100,4 +100,4 @@ class DeviceListing : public QTreeWidget
     void networkingChangedSlot();
 };
 
-#endif //__deviceListing__
+#endif //DEVICELISTING

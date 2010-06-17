@@ -20,8 +20,8 @@
  *
  */
 
-#ifndef __SOLIDHELPER__
-#define __SOLIDHELPER__
+#ifndef SOLIDHELPER
+#define SOLIDHELPER
 
 //Solid
 #include <solid/device.h>
@@ -34,4 +34,4 @@ class SolidHelper
     Solid::DeviceInterface::Type deviceType(const Solid::Device *);
 };
 
-#endif // __SOLIDHELPER__
+#endif //SOLIDHELPER

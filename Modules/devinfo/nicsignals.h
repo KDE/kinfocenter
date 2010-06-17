@@ -20,8 +20,8 @@
  *
  */
 
-#ifndef __NICSIGNALS__
-#define __NICSIGNALS__
+#ifndef NICSIGNALS
+#define NICSIGNALS
 
 //Qt
 #include <QObject>
@@ -49,4 +49,4 @@ class NicSignals : public QObject
     
 };
 
-#endif // __NICSIGNALS __
+#endif //NICSIGNALS

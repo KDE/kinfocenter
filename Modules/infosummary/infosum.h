@@ -20,8 +20,8 @@
  *
  */
 
-#ifndef __INFOSUM__
-#define __INFOSUM__
+#ifndef INFOSUM
+#define INFOSUM
 
 //kde
 #include <KCModule>
@@ -71,4 +71,4 @@ class InfoSumPlugin : public KCModule
     QVBoxLayout *m_layout;
 };
 
-#endif //__INFOSUM__
+#endif //INFOSUM

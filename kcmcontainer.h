@@ -40,7 +40,7 @@ class KcmContainer : public QScrollArea
   public:
     
     /**
-    * Widget to display and recieve information 
+    * Widget to display and receive information 
     * about displayed KCM.
     *
     * @param parent objects parent

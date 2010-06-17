@@ -20,8 +20,8 @@
  *
  */
 
-#ifndef __devinfo__
-#define __devinfo__
+#ifndef DEVINFO
+#define DEVINFO
 
 //kde
 #include <kcmodule.h>
@@ -54,4 +54,4 @@ class DevInfoPlugin : public KCModule
     QLabel *udiStatus;
 };
 
-#endif //__devinfo__
+#endif //DEVINFO

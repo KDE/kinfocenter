@@ -20,8 +20,8 @@
  *
  */
 
-#ifndef __infopanel__
-#define __infopanel__
+#ifndef INFOPANEL
+#define INFOPANEL
 
 // QT
 #include <QWidget>
@@ -76,4 +76,4 @@ class InfoPanel : public QGroupBox
     DevInfoPlugin *status;
 };
 
-#endif // __infopanel__
+#endif //INFOPANEL

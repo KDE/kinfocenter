@@ -20,12 +20,12 @@
  *
  */
 
+//Local
+#include "infokcmmodel.h"
+
 //KDE
 #include <KServiceTypeTrader>
 #include <KDebug>
-
-//Local
-#include "infokcmmodel.h"
 
 InfoKcmModel::InfoKcmModel(QObject *parent) : QAbstractItemModel(parent), m_root(new KcmTreeItem(i18n("Information Modules")))
 {
@@ -197,7 +197,8 @@ Qt::ItemFlags InfoKcmModel::flags(const QModelIndex &index) const
 
 QModelIndex InfoKcmModel::firstValid() const
 { 
-  /// TODO: Make it desend picking out the lowest weight
+  // TODO: Make it desend if nothing is on the root,
+  // picking out the lowest weight
   
   int rows = m_root->childCount();
   for(int i=0;i<rows;i++)  

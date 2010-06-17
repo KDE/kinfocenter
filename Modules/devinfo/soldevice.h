@@ -20,8 +20,8 @@
  *
  */
 
-#ifndef __SOLDEVICE__
-#define __SOLDEVICE__
+#ifndef SOLDEVICE
+#define SOLDEVICE
 
 //QT
 #include <QTreeWidgetItem>
@@ -130,4 +130,4 @@ class SolDevice : public QTreeWidgetItem
     Solid::Device tiedDevice;
 };
 
-#endif //__SOLDEVICE__
+#endif //SOLDEVICE

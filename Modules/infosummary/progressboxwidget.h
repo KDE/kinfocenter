@@ -20,8 +20,8 @@
  *
  */
 
-#ifndef __PROGRESSBOXWIDGET__
-#define __PROGRESSBOXWIDGET__
+#ifndef PROGRESSBOXWIDGET
+#define PROGRESSBOXWIDGET
 
 //QT
 #include <QFrame>
@@ -58,4 +58,4 @@ class ProgressBoxWidget : public QFrame
     QProgressBar *m_progressBar;
 };
 
-#endif // __PROGRESSBOXWIDGET__
+#endif //PROGRESSBOXWIDGET

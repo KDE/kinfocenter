@@ -20,8 +20,8 @@
  *
  */
 
-#ifndef __OSDEPINFO__
-#define __OSDEPINFO__
+#ifndef OSDEPINFO
+#define OSDEPINFO
 
 #include <QString>
 
@@ -40,4 +40,4 @@ class OsDepInfo
     QString m_osVersion;
 };
 
-#endif // __OSDEPINFO__
+#endif //OSDEPINFO

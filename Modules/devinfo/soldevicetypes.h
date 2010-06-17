@@ -20,8 +20,8 @@
  *
  */
 
-#ifndef __SOLDEVICETYPES__
-#define __SOLDEVICETYPES__
+#ifndef SOLDEVICETYPES
+#define SOLDEVICETYPES
 
 //kde 
 #include <kdiskfreespaceinfo.h>
@@ -218,4 +218,4 @@ class SolVideoDevice : public SolDevice
 };
 
 
-#endif // __SOLDEVICETYPES__
+#endif //SOLDEVICETYPES

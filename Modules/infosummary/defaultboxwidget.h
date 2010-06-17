@@ -20,8 +20,8 @@
  *
  */
 
-#ifndef __DEFAULTBOXWIDGET__
-#define __DEFAULTBOXWIDGET__
+#ifndef DEFAULTBOXWIDGET
+#define DEFAULTBOXWIDGET
 
 //QT
 #include <QGroupBox>
@@ -60,4 +60,5 @@ class DefaultBoxWidget : public QGroupBox
     QLabel *m_info2NameLabel;
 };
 
-#endif // __DEFAULTBOXWIDGET__
+#endif //DEFAULTBOXWIDGET
+

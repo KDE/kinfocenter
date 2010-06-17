@@ -126,7 +126,7 @@ class KInfoCenter : public KXmlGuiWindow
     void createMenuFrame();
     
     /**
-    * Detect wether to enable export and help buttons
+    * Detect if export and help buttons should be enabled
     *
     * @param buttons buttons to check
     */

@@ -20,6 +20,9 @@
  *
  */
 
+//Local
+#include "sidepanel.h"
+
 //KDE
 #include <KLocale>
 
@@ -27,9 +30,6 @@
 #include <QWidget>
 #include <QRegExp>
 #include <QMenu>
-
-//Local
-#include "sidepanel.h"
 
 SidePanel::SidePanel(QWidget *parent) : QTreeView(parent)
 { 

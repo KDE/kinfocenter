@@ -75,7 +75,7 @@ class SidePanel : public QTreeView
 
     signals:
     /**
-    * Emited when menu item is clicked
+    * Emitted when menu item is clicked
     */
     void activated(const KcmTreeItem *);
 
