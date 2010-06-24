@@ -123,6 +123,16 @@ QModelIndex InfoKcmModel::parent(const QModelIndex &index) const
   
   return createIndex(parent->row(), 0, parent);
 }
+
+QModelIndex InfoKcmModel::indexOf(KcmTreeItem *item) 
+{
+  QModelIndex tmpIndex = createIndex(item->row(), 0, item);
+  
+  if(!tmpIndex.isValid()){
+    return QModelIndex();
+  }
+  return tmpIndex;
+}
     
 int InfoKcmModel::rowCount(const QModelIndex &parent) const
 {
@@ -196,20 +206,27 @@ Qt::ItemFlags InfoKcmModel::flags(const QModelIndex &index) const
 }
 
 QModelIndex InfoKcmModel::firstValid() const
-{ 
-  // TODO: Make it desend if nothing is on the root,
-  // picking out the lowest weight
-  
+{   
   int rows = m_root->childCount();
+  
+  //Massive large number to max compare
+  unsigned int winner = 0; winner--;
+  
+  QModelIndex winnerIndex = QModelIndex();
+  
   for(int i=0;i<rows;i++)  
   {
     KcmTreeItem *item = m_root->child(i);
     if(item->isValid() ==  true)
     {
-      if(item->weight() == 0) return index(item->row(),0,item->parent());
+      if(winner >= (unsigned int)item->weight()) 
+      {
+	winner = item->weight();
+	winnerIndex = index(item->row(),0,item->parent());
+      }
     }
   }
-  return QModelIndex();
+  return winnerIndex;
 }
 
 QStringList InfoKcmModel::allChildrenKeywords()

@@ -110,6 +110,11 @@ class InfoKcmModel : public QAbstractItemModel
     */
     QStringList allChildrenKeywords();
     
+    /**
+     * Get QModelIndex of a KcmTreeItem
+    */
+    QModelIndex indexOf(KcmTreeItem *item);
+    
   private:
     
     /**

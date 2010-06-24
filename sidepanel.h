@@ -73,13 +73,19 @@ class SidePanel : public QTreeView
     */
     QStringList allChildKeywords();
 
-    signals:
+    /**
+     * Expand and collapse an Item ( if an expandable item ) 
+     */
+    void toggleExpand(const KcmTreeItem *);
+    
+  signals:
+  
     /**
     * Emitted when menu item is clicked
     */
     void activated(const KcmTreeItem *);
 
-    private slots:
+  private slots:
 
     /**
     * Triggered when treeview item is clicked
@@ -110,7 +116,7 @@ class SidePanel : public QTreeView
     * item menu
     */
     void resetSearchSlot();
-
+    
   private:
 
     /**
