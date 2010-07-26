@@ -27,8 +27,8 @@
 #include <kaboutdata.h>
 #include <kcmdlineargs.h>
 
-KicApp::KicApp() : KApplication()
-{
+KicApp::KicApp() : KApplication() 
+{  
   display = new KInfoCenter();
   display->show();
 }
@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 
   KAboutData aboutKInfoCenter( "kinfocenter", 0, ki18n("KDE Info Center"),
     KDE_VERSION_STRING, ki18n("The KDE Info Center"), KAboutData::License_GPL,
-    ki18n("Copyright © 2009–2010, The KDE Info Center authors"));
+    ki18n("(c) 2009-2010, The KDE SC KInfocenter Development Team"));
 
   QByteArray argv_0 = argv[0];
   KAboutData *aboutData = &aboutKInfoCenter;
