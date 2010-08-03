@@ -11,6 +11,7 @@ X-KDE-ParentApp=kinfocenter
 X-DocPath=kinfocenter/index.html#devinfo
 
 Name=Device Viewer
+Name[ar]=عارض الأجهزة
 Name[ca]=Visor de dispositius
 Name[ca@valencia]=Visor de dispositius
 Name[cs]=Prohlížeč zařízení
@@ -52,6 +53,7 @@ Name[zh_CN]=设备查看器
 Name[zh_TW]=裝置檢視器
 
 Comment=Device Viewer
+Comment[ar]=عارض الأجهزة
 Comment[ca]=Visor de dispositius
 Comment[ca@valencia]=Visor de dispositius
 Comment[cs]=Prohlížeč zařízení
