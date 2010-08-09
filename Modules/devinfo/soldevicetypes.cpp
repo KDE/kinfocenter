@@ -22,7 +22,7 @@
 
 #include "soldevicetypes.h"
 
-#include <QProgressBar>
+#include <kcapacitybar.h>
 // ---- Processor
 
 SolProcessorDevice::SolProcessorDevice(QTreeWidgetItem *parent, const Solid::Device &device) :
@@ -282,7 +282,7 @@ void SolVolumeDevice::setDefaultListing(const Solid::DeviceInterface::Type &type
 QVListLayout *SolVolumeDevice::infoPanelLayout() 
 {
   QStringList labels;
-  QProgressBar *usageBar = NULL;
+  KCapacityBar *usageBar = NULL;
   
   const Solid::StorageVolume *voldev = interface<const Solid::StorageVolume>();
   const Solid::StorageAccess *accdev = interface<const Solid::StorageAccess>();
@@ -326,13 +326,16 @@ QVListLayout *SolVolumeDevice::infoPanelLayout()
     {  
       KDiskFreeSpaceInfo mountSpaceInfo = KDiskFreeSpaceInfo::freeSpaceInfo(accdev->filePath());
       
-      labels << i18n("Volume Size: ")
-      << KGlobal::locale()->formatByteSize(mountSpaceInfo.size())
-      << i18n("Percentage Used / Available: ");
+      labels << i18n("Volume Space:");
       
-      usageBar = new QProgressBar();
-      usageBar->setRange(0,100);
+      usageBar = new KCapacityBar();
       usageBar->setValue(static_cast<int>((mountSpaceInfo.used() * 100) / mountSpaceInfo.size()));
+      usageBar->setText(
+            i18nc("Available space out of total partition size (percent used)",
+                  "%1 free of %2 (%3% used)",
+                  KGlobal::locale()->formatByteSize(mountSpaceInfo.available()),
+                  KGlobal::locale()->formatByteSize(mountSpaceInfo.size()),
+                  usageBar->value()));
     }
 
   }
