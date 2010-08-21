@@ -1,2 +1,3 @@
 #!/bin/sh
-$XGETTEXT *.cpp -o $podir/kinfocenter.pot
+$EXTRACTRC *.rc >> rc.cpp
+$XGETTET *.cpp -o $podir/kinfocenter.pot
