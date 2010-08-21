@@ -4,7 +4,7 @@ Icon=text-x-texinfo
 Type=Service
 X-KDE-ServiceTypes=KCModule
 
-X-KDE-KInfoCenter-Category=Device Information
+X-KDE-KInfoCenter-Category=device_information
 X-KDE-Library=kcm_info
 X-KDE-PluginKeyword=scsi
 X-KDE-ParentApp=kinfocenter

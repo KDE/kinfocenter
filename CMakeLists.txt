@@ -2,6 +2,7 @@
 include_directories( ${KDE4_INCLUDES} )
 add_definitions( -DKDE_DEFAULT_DEBUG_AREA=1208 )
 
+add_subdirectory( Categories )
 add_subdirectory( Modules )
 
 INCLUDE_DIRECTORIES( ToolTips )
@@ -12,6 +13,7 @@ main.cpp
 sidepanel.cpp 
 kcmcontainer.cpp 
 kcmtreeitem.cpp 
+kcmcategoryitem.cpp
 infokcmmodel.cpp 
 infokcmproxymodel.cpp
 ToolTips/ktooltip.cpp

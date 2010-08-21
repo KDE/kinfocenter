@@ -139,7 +139,7 @@ void SidePanel::resetSearchSlot()
 void SidePanel::toggleExpand(const KcmTreeItem *item)
 {
   int expand=0;
-  if(item->isValid()) return;
+  if(item->type() == KcmTreeItem::KCM) return;
   
   QModelIndex expandIndex = m_proxyModel->mapFromSource(m_model->indexOf((KcmTreeItem *)item));
   

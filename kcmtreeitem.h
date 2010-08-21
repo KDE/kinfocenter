@@ -34,9 +34,9 @@
 class KcmTreeItem
 {
   public:
+    
     /**
-    * Tree Item for InfoKcmModel. Holds information about a KCM or 
-    * folder object.
+    * KCM Tree Item for InfoKcmModel. Holds information about a KCM 
     *
     * @param module pointer to KCM module
     * @param parent objects parent
@@ -44,20 +44,23 @@ class KcmTreeItem
     explicit KcmTreeItem(const KService::Ptr module, KcmTreeItem *parent=0);
     
     /**
-    * Tree Item for InfoKcmModel. Holds information about a KCM or 
-    * folder object. 
+    * KCM Tree Item for InfoKcmModel. Holds information about a KCM  
     *
     * @note Used for root folder objects
     *
-    * @param category Categories name
-    * @param parent objects parent
     */
-    explicit KcmTreeItem(QString category, KcmTreeItem *parent=0);
+    KcmTreeItem();
+    
+    /**
+     * Enumeration of the possible tree item types
+     *
+     */
+    enum itemType { KCM=0, CATEGORY };
     
     /**
     * Destory KcmTreeItem
     */
-    ~KcmTreeItem();
+    virtual ~KcmTreeItem();
     
     /**
     * Add child tree item to parent
@@ -100,18 +103,18 @@ class KcmTreeItem
     /**
     * Get data of tree item
     */
-    QString data();
+    virtual QString data();
     
     /**
     * Get category of tree item.
     * Set in X-KDE-KInfoCenter-Category
     */
-    QString category();
+    virtual QString category();
     
     /**
-    * Shows if item holds KCM information 
+    * Gets the item type.
     */
-    bool isValid() const;
+    virtual itemType type() const;
     
     /**
     * Check if children of tree item contains a category.
@@ -122,22 +125,22 @@ class KcmTreeItem
     /**
     * Get tree item KCMs Data
     */
-    const KCModuleInfo kcm() const;
+    virtual const KCModuleInfo kcm() const;
     
     /**
     * Get tree items KCM's weight
     */
-    int weight();
+    virtual int weight();
     
     /**
     * Get icon tied to KCM
     */
-    KIcon icon() const;
+    virtual KIcon icon() const;
     
     /**
     * Get whatsThis information from KCM
     */
-    QString whatsThis() const;
+    virtual QString whatsThis() const;
     
     /**
     * Check if there are any children tree items keywords that
@@ -148,17 +151,15 @@ class KcmTreeItem
     /**
     * Get KCM tree item keywords
     */
-    QStringList keywords();
+    virtual QStringList keywords();
     
-  private:
+  protected:
     
-     QList<KcmTreeItem *> m_children;
-     KcmTreeItem *m_parent;
-     const KService::Ptr m_module;
-     
-     const QString m_category;
-     const KCModuleInfo *m_moduleInfo;
-     bool m_isValid;
+    QList<KcmTreeItem *> m_children;
+    KcmTreeItem *m_parent;
+    const KService::Ptr m_module;
+  
+    const KCModuleInfo *m_moduleInfo;
 };
 
 #endif // KCMTREEITEM

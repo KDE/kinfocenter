@@ -27,12 +27,11 @@
 #include <KDebug>
 
 KcmTreeItem::KcmTreeItem(const KService::Ptr module, KcmTreeItem *parent) : m_parent(parent), m_module(module), 
-  m_moduleInfo(new KCModuleInfo(m_module)), m_isValid(true)
+  m_moduleInfo(new KCModuleInfo(m_module))
 {
 }
 
-KcmTreeItem::KcmTreeItem(QString category, KcmTreeItem *parent) : m_parent(parent), m_category(category), 
-  m_isValid(false)
+KcmTreeItem::KcmTreeItem() : m_parent(NULL), m_moduleInfo(new KCModuleInfo())
 {
 }
 
@@ -91,35 +90,24 @@ int KcmTreeItem::indexOf(KcmTreeItem *item)
 
 QString KcmTreeItem::data()
 {
-  if(isValid() == true)
-  {
-    return m_moduleInfo->moduleName();
-  }
-  else 
-  {
-    return category();
-  }
+  return m_moduleInfo->moduleName();
 }
 
 QString KcmTreeItem::category()
 {
-  if(isValid() == false)
-  {
-    return m_category;
-  }
-  return QString("");
+  return m_module->property("X-KDE-KInfoCenter-Category").toString().trimmed();
 }
 
-bool KcmTreeItem::isValid() const 
+KcmTreeItem::itemType KcmTreeItem::type() const
 {
-  return m_isValid;
+  return KCM;
 }
 
 KcmTreeItem *KcmTreeItem::containsCategory(QString category) 
 {
   foreach(KcmTreeItem *item, m_children)
   {
-    if(item->isValid() == false)
+    if(item->type() == CATEGORY)
     {
       if(item->category().contains(category))
       {
@@ -139,31 +127,21 @@ KcmTreeItem *KcmTreeItem::containsCategory(QString category)
 
 const KCModuleInfo KcmTreeItem::kcm() const 
 {
-  if(isValid() == false) return KCModuleInfo();
   return *m_moduleInfo;
 }
 
 int KcmTreeItem::weight() 
 {
-  if(isValid() == false) return category().count();
   return m_moduleInfo->weight();
 }
 
 KIcon KcmTreeItem::icon() const
 {
-  if(isValid() == false)
-  {
-    return KIcon("inode-directory");
-  }
-  else 
-  {
-    return KIcon(m_moduleInfo->icon());
-  }
+  return KIcon(m_moduleInfo->icon());
 }
 
 QString KcmTreeItem::whatsThis() const
 {
-  if(isValid() == false) return QString();
   return m_moduleInfo->comment();
 }
 
@@ -181,7 +159,6 @@ bool KcmTreeItem::childrenRegExp(QRegExp pattern)
 
 QStringList KcmTreeItem::keywords()
 {
-  if(isValid() == false) return QStringList();
   if(m_moduleInfo->keywords().isEmpty()) return QStringList(data());
   return m_moduleInfo->keywords();
 }

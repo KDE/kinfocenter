@@ -4,7 +4,7 @@ Type=Service
 X-KDE-ServiceTypes=KCModule
 Icon=video-display
 
-X-KDE-KInfoCenter-Category=Graphical Information
+X-KDE-KInfoCenter-Category=graphical_information
 X-KDE-Library=kcm_opengl
 X-KDE-ParentApp=kinfocenter
 X-DocPath=kinfocenter/index.html#opengl

@@ -207,7 +207,7 @@ void KInfoCenter::createMenuFrame()
 void KInfoCenter::itemClickedSlot(const KcmTreeItem *item) 
 { 
   resetCondition();
-  if(item->isValid() == false) 
+  if(item->type() == KcmTreeItem::CATEGORY) 
   {
     m_sideMenu->toggleExpand(item);
     return;

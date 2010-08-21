@@ -5,7 +5,7 @@ Type=Service
 X-KDE-ServiceTypes=KCModule
 
 X-KDE-Weight=0
-X-KDE-KInfoCenter-Category=Device Information
+X-KDE-KInfoCenter-Category=device_information
 X-KDE-Library=devinfo
 X-KDE-ParentApp=kinfocenter
 X-DocPath=kinfocenter/index.html#devinfo

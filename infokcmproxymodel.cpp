@@ -46,7 +46,7 @@ bool InfoKcmProxyModel::filterAcceptsRow(int sourceRow, const QModelIndex &sourc
   QModelIndex index=sourceModel()->index(sourceRow, 0, sourceParent);
   KcmTreeItem *indexItem = static_cast<KcmTreeItem*>(index.internalPointer());
 
-  if(indexItem->isValid() == false) 
+  if(indexItem->type() == KcmTreeItem::CATEGORY) 
   {
     if(indexItem->childrenRegExp(filterRegExp()) == true) return true;
   }  

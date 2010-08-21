@@ -4,7 +4,7 @@ Type=Service
 X-KDE-ServiceTypes=KCModule
 Exec=kcmshell4 kcmusb
 
-X-KDE-KInfoCenter-Category=Device Information
+X-KDE-KInfoCenter-Category=device_information
 X-KDE-Library=kcm_usb
 X-KDE-ParentApp=kinfocenter
 X-DocPath=kinfocenter/index.html#kcmusb

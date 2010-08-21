@@ -4,7 +4,7 @@ Icon=hwinfo
 Type=Service
 X-KDE-ServiceTypes=KCModule
 
-X-KDE-KInfoCenter-Category=Device Information
+X-KDE-KInfoCenter-Category=device_information
 X-KDE-Library=kcm_pci
 X-KDE-ParentApp=kinfocenter
 X-DocPath=kinfocenter/index.html#kcm_pci

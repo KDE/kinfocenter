@@ -73,6 +73,7 @@ void KcmContainer::setContainerLayout()
   m_titleLabel->setFont(bFont);
   m_titleLabel->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
   m_titleLabel->setContentsMargins(style()->pixelMetric(QStyle::PM_DefaultFrameWidth), 0, 0, 0);
+  m_titleLabel->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
 
   centerWidgetLayout->addWidget(m_titleLabel);  
   setWidget(m_centerWidget);

@@ -4,7 +4,7 @@ Icon=xorg
 Type=Service
 X-KDE-ServiceTypes=KCModule
 
-X-KDE-KInfoCenter-Category=Graphical Information
+X-KDE-KInfoCenter-Category=graphical_information
 X-KDE-Library=kcm_info
 X-KDE-PluginKeyword=xserver
 X-KDE-ParentApp=kinfocenter
