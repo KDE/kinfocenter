@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=ServiceType
+X-KDE-ServiceType=KInfoCenterCategory
+Name=KInfoCenter Category
+
+# Cat Ident
+[PropertyDef::X-KDE-KInfoCenter-Category]
+Type=QString
+

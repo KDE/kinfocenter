@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KInfoCenterCategory
+X-KDE-KInfoCenter-Category=network_information
+Icon=folder-documents
+
+Name=Network Information
