@@ -23,8 +23,7 @@
 #include "kcmcategoryitem.h"
 
 KcmCategoryItem::KcmCategoryItem(const KService::Ptr module, KcmTreeItem *parent) : 
-  KcmTreeItem(module, parent), 
-  m_category(NULL) 
+  KcmTreeItem(module, parent) 
 {
 }
 
@@ -36,7 +35,7 @@ KcmCategoryItem::KcmCategoryItem(QString categoryName) :
 
 QString KcmCategoryItem::data()
 {
-  if(m_category == NULL)
+  if(m_category.isEmpty())
   {
     return m_moduleInfo->moduleName();
   }
@@ -53,7 +52,7 @@ KcmTreeItem::itemType KcmCategoryItem::type() const
 
 QString KcmCategoryItem::category()
 {
-  if(m_category == NULL)
+  if(m_category.isEmpty())
   {
     return m_module->property("X-KDE-KInfoCenter-Category").toString().trimmed();  
   } 
@@ -75,7 +74,7 @@ int KcmCategoryItem::weight()
 
 KIcon KcmCategoryItem::icon() const
 {
-  if(m_category == NULL)
+  if(m_category.isEmpty())
   {
     return KIcon(m_moduleInfo->icon());
   }
