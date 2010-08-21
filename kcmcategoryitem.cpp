@@ -33,7 +33,7 @@ KcmCategoryItem::KcmCategoryItem(QString categoryName) :
 {
 }
 
-QString KcmCategoryItem::data()
+const QString KcmCategoryItem::data() const
 {
   if(m_category.isEmpty())
   {
@@ -50,7 +50,7 @@ KcmTreeItem::itemType KcmCategoryItem::type() const
     return CATEGORY;
 }
 
-QString KcmCategoryItem::category()
+const QString KcmCategoryItem::category() const
 {
   if(m_category.isEmpty())
   {
@@ -84,12 +84,12 @@ KIcon KcmCategoryItem::icon() const
   }
 }
 
-QString KcmCategoryItem::whatsThis() const
+const QString KcmCategoryItem::whatsThis() const
 {
   return QString();
 }
 
-QStringList KcmCategoryItem::keywords()
+const QStringList KcmCategoryItem::keywords() const
 {
   return QStringList();
 }

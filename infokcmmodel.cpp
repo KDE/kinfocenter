@@ -236,12 +236,12 @@ QModelIndex InfoKcmModel::firstValid() const
   return winnerIndex;
 }
 
-QStringList InfoKcmModel::allChildrenKeywords()
+const QStringList InfoKcmModel::allChildrenKeywords()
 {
   return childrenKeywords(m_root);
 }
 
-QStringList InfoKcmModel::childrenKeywords(KcmTreeItem *kcmItem)
+const QStringList InfoKcmModel::childrenKeywords(KcmTreeItem *kcmItem)
 {
   QStringList childKeywords;
   

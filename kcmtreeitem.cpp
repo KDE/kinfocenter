@@ -46,7 +46,7 @@ void KcmTreeItem::addChild(KcmTreeItem *child)
   m_children.append(child);
 }
 
-KcmTreeItem *KcmTreeItem::child(int row)
+KcmTreeItem *KcmTreeItem::child(const int row)
 {
   if(childCount() > row) return m_children.value(row);
   return NULL;
@@ -88,12 +88,12 @@ int KcmTreeItem::indexOf(KcmTreeItem *item)
   return 0;
 }
 
-QString KcmTreeItem::data()
+const QString KcmTreeItem::data() const
 {
   return m_moduleInfo->moduleName();
 }
 
-QString KcmTreeItem::category()
+const QString KcmTreeItem::category() const
 {
   return m_module->property("X-KDE-KInfoCenter-Category").toString().trimmed();
 }
@@ -130,7 +130,7 @@ const KCModuleInfo KcmTreeItem::kcm() const
   return *m_moduleInfo;
 }
 
-int KcmTreeItem::weight() 
+int KcmTreeItem::weight()
 {
   return m_moduleInfo->weight();
 }
@@ -140,7 +140,7 @@ KIcon KcmTreeItem::icon() const
   return KIcon(m_moduleInfo->icon());
 }
 
-QString KcmTreeItem::whatsThis() const
+const QString KcmTreeItem::whatsThis() const
 {
   return m_moduleInfo->comment();
 }
@@ -157,7 +157,7 @@ bool KcmTreeItem::childrenRegExp(QRegExp pattern)
   return false;
 }
 
-QStringList KcmTreeItem::keywords()
+const QStringList KcmTreeItem::keywords() const
 {
   if(m_moduleInfo->keywords().isEmpty()) return QStringList(data());
   return m_moduleInfo->keywords();

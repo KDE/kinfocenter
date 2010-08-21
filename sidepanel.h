@@ -71,7 +71,7 @@ class SidePanel : public QTreeView
     /**
     * Get all the treeview items keywords
     */
-    QStringList allChildKeywords();
+    const QStringList allChildKeywords();
 
     /**
      * Expand and collapse an Item ( if an expandable item ) 

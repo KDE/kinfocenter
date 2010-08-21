@@ -108,7 +108,7 @@ class InfoKcmModel : public QAbstractItemModel
     /**
     * Get all KCM keywords for all KCMs stored in the model
     */
-    QStringList allChildrenKeywords();
+    const QStringList allChildrenKeywords();
     
     /**
      * Get QModelIndex of a KcmTreeItem
@@ -125,7 +125,7 @@ class InfoKcmModel : public QAbstractItemModel
     /** 
     * Get a certain KCM's keywords
     */
-    QStringList childrenKeywords(KcmTreeItem *kcmItem);
+    const QStringList childrenKeywords(KcmTreeItem *kcmItem);
     
     KService::List m_moduleList;
     KcmTreeItem *m_root;

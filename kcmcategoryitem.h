@@ -51,13 +51,13 @@ class KcmCategoryItem : public KcmTreeItem
     /**
      * Get data of tree item
      */
-    QString data();
+    const QString data() const;
     
     /**
      * Get category of tree item.
      * Set in X-KDE-KInfoCenter-Category
      */
-    QString category();
+    const QString category() const;
     
     /**
      * Gets the item type.
@@ -82,12 +82,12 @@ class KcmCategoryItem : public KcmTreeItem
     /**
      * Get whatsThis information from KCM
      */
-    QString whatsThis() const;
+    const QString whatsThis() const;
     
     /**
      * Get KCM tree item keywords
      */
-    QStringList keywords();
+    const QStringList keywords() const;
     
   private:
     

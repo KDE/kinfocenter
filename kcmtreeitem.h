@@ -72,7 +72,7 @@ class KcmTreeItem
     *
     * @param row row where child is located
     */
-    KcmTreeItem *child(int row);
+    KcmTreeItem *child(const int row);
     
     /**
     * Get amount of children
@@ -103,13 +103,13 @@ class KcmTreeItem
     /**
     * Get data of tree item
     */
-    virtual QString data();
+    virtual const QString data() const;
     
     /**
     * Get category of tree item.
     * Set in X-KDE-KInfoCenter-Category
     */
-    virtual QString category();
+    virtual const QString category() const;
     
     /**
     * Gets the item type.
@@ -120,7 +120,7 @@ class KcmTreeItem
     * Check if children of tree item contains a category.
     * Used in search implementation
     */
-    KcmTreeItem *containsCategory(QString); 
+    KcmTreeItem *containsCategory(const QString); 
     
     /**
     * Get tree item KCMs Data
@@ -140,7 +140,7 @@ class KcmTreeItem
     /**
     * Get whatsThis information from KCM
     */
-    virtual QString whatsThis() const;
+    virtual const QString whatsThis() const;
     
     /**
     * Check if there are any children tree items keywords that
@@ -151,7 +151,7 @@ class KcmTreeItem
     /**
     * Get KCM tree item keywords
     */
-    virtual QStringList keywords();
+    virtual const QStringList keywords() const;
     
   protected:
     
