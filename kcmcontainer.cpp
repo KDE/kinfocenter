@@ -117,13 +117,13 @@ void KcmContainer::setKcmTitle(const KCModuleInfo &info)
   m_titleLabel->setText(i18n("%1  ( %2 )",kcmTitle,kcmComment));
 }
 
-const QString KcmContainer::helpPath() const 
+QString KcmContainer::helpPath() const 
 {  
   if(m_mod == NULL) return QString();  
   return m_modInfo.docPath();
 }
 
-const KCModule::Buttons KcmContainer::buttons() const
+KCModule::Buttons KcmContainer::buttons() const
 {
   return m_mod->buttons();
 }
@@ -133,17 +133,17 @@ const KAboutData *KcmContainer::kcmAboutData() const
   return m_mod->aboutData();
 }
 
-const QString KcmContainer::exportText() const
+QString KcmContainer::exportText() const
 {
   return m_mod->realModule()->exportText(); 
 }
 
-const QString KcmContainer::name() const
+QString KcmContainer::name() const
 {
   return m_modInfo.moduleName();
 }
 
-const QString KcmContainer::fileName() const 
+QString KcmContainer::fileName() const 
 {
   return m_modInfo.fileName();
 }

@@ -103,13 +103,13 @@ class KcmTreeItem
     /**
     * Get data of tree item
     */
-    virtual const QString data() const;
+    virtual QString data() const;
     
     /**
     * Get category of tree item.
     * Set in X-KDE-KInfoCenter-Category
     */
-    virtual const QString category() const;
+    virtual QString category() const;
     
     /**
     * Gets the item type.
@@ -125,7 +125,7 @@ class KcmTreeItem
     /**
     * Get tree item KCMs Data
     */
-    virtual const KCModuleInfo kcm() const;
+    virtual KCModuleInfo kcm() const;
     
     /**
     * Get tree items KCM's weight
@@ -140,7 +140,7 @@ class KcmTreeItem
     /**
     * Get whatsThis information from KCM
     */
-    virtual const QString whatsThis() const;
+    virtual QString whatsThis() const;
     
     /**
     * Check if there are any children tree items keywords that
@@ -151,7 +151,7 @@ class KcmTreeItem
     /**
     * Get KCM tree item keywords
     */
-    virtual const QStringList keywords() const;
+    virtual QStringList keywords() const;
     
   protected:
     

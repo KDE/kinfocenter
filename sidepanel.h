@@ -66,33 +66,31 @@ class SidePanel : public QTreeView
     */
     QModelIndex mapToProxySource(QModelIndex);
 
-    // void filterSideMenu(QString);
-
     /**
     * Get all the treeview items keywords
     */
-    const QStringList allChildKeywords();
+    QStringList allChildKeywords();
 
     /**
      * Expand and collapse an Item ( if an expandable item ) 
      */
     void toggleExpand(const KcmTreeItem *);
     
-  signals:
+  Q_SIGNALS:
   
     /**
     * Emitted when menu item is clicked
     */
     void activated(const KcmTreeItem *);
 
-  private slots:
+  private Q_SLOTS:
 
     /**
     * Triggered when treeview item is clicked
     */
     void activatedSlot(const QModelIndex &index);
 
-  public slots:
+  public Q_SLOTS:
     
     /**
     * Triggered when collapseAll is selected from tree view 

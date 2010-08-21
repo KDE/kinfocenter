@@ -74,7 +74,7 @@ class KInfoCenter : public KXmlGuiWindow
     */
     bool eventFilter(QObject *watched, QEvent *event);
 
-  public slots:
+  public Q_SLOTS:
     
     /**
     * Triggered when mouse is clicked on a treeview item

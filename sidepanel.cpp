@@ -126,7 +126,7 @@ void SidePanel::expandAllSlot()
   expandAll();
 }
 
-const QStringList SidePanel::allChildKeywords()
+QStringList SidePanel::allChildKeywords()
 {
   return m_model->allChildrenKeywords();
 }

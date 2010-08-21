@@ -51,13 +51,13 @@ class KcmCategoryItem : public KcmTreeItem
     /**
      * Get data of tree item
      */
-    const QString data() const;
+    QString data() const;
     
     /**
      * Get category of tree item.
      * Set in X-KDE-KInfoCenter-Category
      */
-    const QString category() const;
+    QString category() const;
     
     /**
      * Gets the item type.
@@ -67,7 +67,7 @@ class KcmCategoryItem : public KcmTreeItem
     /**
      * Get tree item KCMs Data
      */
-    const KCModuleInfo kcm() const;
+    KCModuleInfo kcm() const;
     
     /**
      * Get tree items KCM's weight
@@ -82,12 +82,12 @@ class KcmCategoryItem : public KcmTreeItem
     /**
      * Get whatsThis information from KCM
      */
-    const QString whatsThis() const;
+    QString whatsThis() const;
     
     /**
      * Get KCM tree item keywords
      */
-    const QStringList keywords() const;
+    QStringList keywords() const;
     
   private:
     

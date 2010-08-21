@@ -69,13 +69,13 @@ class KcmContainer : public QScrollArea
     * for .desktop
     * X-KDE-DocPath
     */
-    const QString helpPath() const;
+    QString helpPath() const;
     
     /**
     * Get currently selected KCMs 
     * information on which buttons need to be shown
     */
-    const KCModule::Buttons buttons() const;
+    KCModule::Buttons buttons() const;
     
     /**
     * Get about data for currently selected KCM
@@ -85,17 +85,17 @@ class KcmContainer : public QScrollArea
     /**
     * Get currently selected KCMs export information 
     */
-    const QString exportText() const;
+    QString exportText() const;
     
     /**
     * Get currently selected KCMs name
     */
-    const QString name() const;
+    QString name() const;
     
     /**
     * Get currently selected KCMs .desktop file name
     */
-    const QString fileName() const;
+    QString fileName() const;
     
   private:
     
