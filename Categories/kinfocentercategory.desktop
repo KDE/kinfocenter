@@ -2,6 +2,7 @@
 Type=ServiceType
 X-KDE-ServiceType=KInfoCenterCategory
 Name=KInfoCenter Category
+Name[x-test]=xxKInfoCenter Categoryxx
 
 # Cat Ident
 [PropertyDef::X-KDE-KInfoCenter-Category]

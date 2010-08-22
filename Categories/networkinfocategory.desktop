@@ -5,3 +5,4 @@ X-KDE-KInfoCenter-Category=network_information
 Icon=folder-documents
 
 Name=Network Information
+Name[x-test]=xxNetwork Informationxx

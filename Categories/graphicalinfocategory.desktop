@@ -5,3 +5,4 @@ X-KDE-KInfoCenter-Category=graphical_information
 Icon=folder-documents
 
 Name=Graphical Information
+Name[x-test]=xxGraphical Informationxx

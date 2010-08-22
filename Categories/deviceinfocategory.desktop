@@ -5,3 +5,4 @@ X-KDE-KInfoCenter-Category=lost_and_found
 Icon=folder-documents
 
 Name=Lost And Found
+Name[x-test]=xxLost And Foundxx
