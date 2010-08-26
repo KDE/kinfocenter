@@ -6,10 +6,14 @@ Icon=folder-documents
 
 Name=Network Information
 Name[da]=Netværksinformation
+Name[es]=Información de la red
 Name[et]=Võrguteave
 Name[ia]=Information de Rete
+Name[nds]=Nettwark-Informatschonen
 Name[nl]=Netwerkinformatie
 Name[pt]=Informação da Rede
+Name[pt_BR]=Informações da rede
+Name[sl]=Podatki o omrežju
 Name[sv]=Nätverksinformation
 Name[uk]=Інформація щодо мережі
 Name[x-test]=xxNetwork Informationxx
