@@ -5,7 +5,9 @@ X-KDE-KInfoCenter-Category=graphical_information
 Icon=folder-documents
 
 Name=Graphical Information
+Name[ca]=Informació gràfica
 Name[da]=Grafikinformation
+Name[de]=Grafische Informationen
 Name[es]=Información gráfica
 Name[et]=Monitoriteave
 Name[ia]=Information Graphic

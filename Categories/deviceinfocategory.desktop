@@ -5,7 +5,9 @@ X-KDE-KInfoCenter-Category=lost_and_found
 Icon=folder-documents
 
 Name=Lost And Found
+Name[ca]=Perdut i trobat
 Name[da]=Hittegods
+Name[de]=Nicht zuzuordnen
 Name[es]=Objetos perdidos
 Name[et]=Kaotatud ja leitud
 Name[ia]=Trovate & Perdite

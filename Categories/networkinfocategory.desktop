@@ -5,7 +5,9 @@ X-KDE-KInfoCenter-Category=network_information
 Icon=folder-documents
 
 Name=Network Information
+Name[ca]=Informació de la xarxa
 Name[da]=Netværksinformation
+Name[de]=Netzwerkinformationen
 Name[es]=Información de la red
 Name[et]=Võrguteave
 Name[ia]=Information de Rete
@@ -15,6 +17,7 @@ Name[pt]=Informação da Rede
 Name[pt_BR]=Informações da rede
 Name[sl]=Podatki o omrežju
 Name[sv]=Nätverksinformation
+Name[tg]=Иттилооти шабака
 Name[uk]=Інформація щодо мережі
 Name[x-test]=xxNetwork Informationxx
 Name[zh_TW]=網路資訊
