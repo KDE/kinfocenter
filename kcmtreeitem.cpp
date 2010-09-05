@@ -103,7 +103,7 @@ KcmTreeItem::itemType KcmTreeItem::type() const
   return KCM;
 }
 
-KcmTreeItem *KcmTreeItem::containsCategory(QString category) 
+KcmTreeItem *KcmTreeItem::containsCategory(const QString category) 
 {
   foreach(KcmTreeItem *item, m_children)
   {
