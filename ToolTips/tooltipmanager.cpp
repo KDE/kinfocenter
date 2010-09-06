@@ -129,7 +129,7 @@ void ToolTipManager::prepareToolTip()
     showToolTip( d->item );
 }
 
-void ToolTipManager::showToolTip( QModelIndex menuItem )
+void ToolTipManager::showToolTip( const QModelIndex& menuItem )
 {
     if (QApplication::mouseButtons() & Qt::LeftButton) {
         return;
@@ -177,17 +177,17 @@ void ToolTipManager::showToolTip( QModelIndex menuItem )
     KToolTip::showTip(QPoint(x, y), tip);
 }
 
-QWidget * ToolTipManager::createTipContent( QModelIndex item )
+QWidget * ToolTipManager::createTipContent( const QModelIndex& item )
 {
     QWidget * tipContent = new QWidget();
     QGridLayout* tipLayout = new QGridLayout();
 
-    QLayout * primaryLine = generateToolTipLine( &item, tipContent, QSize(32,32), true );
+    QLayout * primaryLine = generateToolTipLine( item, tipContent, QSize(32,32), true );
     tipLayout->addLayout( primaryLine, 0, 0 );
 
     for ( int done = 0; d->view->model()->rowCount( item ) > done; done = 1 + done ) {
         QModelIndex childItem = d->view->model()->index( done, 0, item );
-        QLayout * subLine = generateToolTipLine( &childItem, tipContent, QSize(24,24), false );
+        QLayout * subLine = generateToolTipLine( childItem, tipContent, QSize(24,24), false );
         tipLayout->addLayout( subLine, done + 2, 0 );
     }
 
@@ -203,10 +203,10 @@ QWidget * ToolTipManager::createTipContent( QModelIndex item )
     return tipContent;
 }
 
-QLayout * ToolTipManager::generateToolTipLine( QModelIndex * item, QWidget * toolTip, QSize iconSize, bool comment )
+QLayout * ToolTipManager::generateToolTipLine( const QModelIndex & item, QWidget * toolTip, const QSize& iconSize, bool comment )
 {
     SidePanel *sidePanel = static_cast<SidePanel*>(d->view);
-    KcmTreeItem *menuItem = static_cast<KcmTreeItem*>( sidePanel->mapToProxySource(*item).internalPointer() );
+    KcmTreeItem *menuItem = static_cast<KcmTreeItem*>( sidePanel->mapToProxySource(item).internalPointer() );
     
     QString text = menuItem->data(); 
     if ( comment ) {
