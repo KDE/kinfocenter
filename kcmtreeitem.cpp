@@ -144,7 +144,7 @@ QString KcmTreeItem::whatsThis() const
   return m_moduleInfo->comment();
 }
 
-bool KcmTreeItem::childrenRegExp(QRegExp pattern)
+bool KcmTreeItem::childrenRegExp(const QRegExp& pattern)
 {
   foreach(KcmTreeItem *item, m_children)
   {

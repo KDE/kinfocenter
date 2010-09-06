@@ -146,7 +146,7 @@ class KcmTreeItem
     * Check if there are any children tree items keywords that
     * have a certain regexp pattern
     */
-    bool childrenRegExp(QRegExp pattern);
+    bool childrenRegExp(const QRegExp& pattern);
     
     /**
     * Get KCM tree item keywords
