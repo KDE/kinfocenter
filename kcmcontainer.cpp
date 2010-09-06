@@ -46,7 +46,7 @@ KcmContainer::KcmContainer(QWidget *parent)
 
 KcmContainer::~KcmContainer() 
 {  
-  if(m_mod!=NULL) delete m_mod;
+  delete m_mod;
 }
 
 void KcmContainer::setContainerLayout() 
