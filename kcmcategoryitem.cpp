@@ -27,7 +27,7 @@ KcmCategoryItem::KcmCategoryItem(const KService::Ptr module, KcmTreeItem *parent
 {
 }
 
-KcmCategoryItem::KcmCategoryItem(QString categoryName) : 
+KcmCategoryItem::KcmCategoryItem(const QString& categoryName) : 
   KcmTreeItem(), 
   m_category(categoryName)
 {

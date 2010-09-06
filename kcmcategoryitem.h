@@ -46,7 +46,7 @@ class KcmCategoryItem : public KcmTreeItem
      *
      * @note Used for root folder objects
      */
-    explicit KcmCategoryItem(QString category);
+    explicit KcmCategoryItem(const QString& category);
     
     /**
      * Get data of tree item
