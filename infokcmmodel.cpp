@@ -33,6 +33,11 @@ InfoKcmModel::InfoKcmModel(QObject *parent) : QAbstractItemModel(parent), m_root
   createTreeItems();  
 }
 
+InfoKcmModel::~InfoKcmModel()
+{
+  delete m_root;
+}
+
 void InfoKcmModel::createTreeItems() 
 { 
   KService::List categoryList = KServiceTypeTrader::self()->query("KInfoCenterCategory");

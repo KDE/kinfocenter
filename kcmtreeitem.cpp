@@ -25,7 +25,6 @@
 
 //KDE
 #include <KDebug>
-
 KcmTreeItem::KcmTreeItem(const KService::Ptr module, KcmTreeItem *parent) : m_parent(parent), m_module(module), 
   m_moduleInfo(new KCModuleInfo(m_module))
 {
@@ -38,7 +37,7 @@ KcmTreeItem::KcmTreeItem() : m_parent(NULL), m_moduleInfo(new KCModuleInfo())
 KcmTreeItem::~KcmTreeItem()
 {
   qDeleteAll(m_children);
-  delete m_parent;
+  delete m_moduleInfo;
 }
 
 void KcmTreeItem::addChild(KcmTreeItem *child) 

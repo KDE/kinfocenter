@@ -52,7 +52,9 @@ class InfoKcmModel : public QAbstractItemModel
     * @param parent objects parent
     */
     InfoKcmModel(QObject *parent);
-    
+
+    ~InfoKcmModel();
+
     /** 
     * Get index of item in model 
     *
