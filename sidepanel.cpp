@@ -74,7 +74,7 @@ void SidePanel::changeToFirstValidItem()
   emit activatedSlot(rootIndex);
 }
 
-QModelIndex SidePanel::mapToProxySource(QModelIndex index)
+QModelIndex SidePanel::mapToProxySource(const QModelIndex& index)
 {
   QModelIndex tmp = m_proxyModel->mapToSource(index);
   if(tmp.isValid() == true) return tmp;
