@@ -120,7 +120,7 @@ class KcmTreeItem
     * Check if children of tree item contains a category.
     * Used in search implementation
     */
-    KcmTreeItem *containsCategory(const QString); 
+    KcmTreeItem *containsCategory(const QString&); 
     
     /**
     * Get tree item KCMs Data
