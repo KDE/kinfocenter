@@ -9,7 +9,7 @@ X-KDE-Library=kcm_infosummary
 X-KDE-ParentApp=kinfocenter
 
 Name=Summary
-Name[ar]=الخلاصة
+Name[ar]=ملخص
 Name[ca]=Resum
 Name[ca@valencia]=Resum
 Name[cs]=Shrnutí
@@ -61,7 +61,7 @@ Name[zh_CN]=汇总
 Name[zh_TW]=摘要
 
 Comment=Hardware Information Summary
-Comment[ar]=خلاصة معلومات الأجهزة
+Comment[ar]=ملخص معلومات العتاد
 Comment[ca]=Resum de la informació del maquinari
 Comment[ca@valencia]=Resum de la informació del maquinari
 Comment[cs]=Souhrn informací o hardwaru

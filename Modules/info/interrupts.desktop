@@ -13,7 +13,7 @@ X-DocPath=kinfocenter/index.html#interrupts
 
 Name=Interrupts
 Name[af]=Interrupts
-Name[ar]=الانقطاعات
+Name[ar]=المقاطعات
 Name[as]=Interrupts
 Name[be]=Перапыненні
 Name[be@latin]=Pierarvańni
@@ -103,7 +103,7 @@ Name[zh_TW]=中斷
 
 Comment=Interrupt information
 Comment[af]=Interrupt informasie
-Comment[ar]=معلومات الانقطاع
+Comment[ar]=معلومات المقاطعات
 Comment[as]=Interrupt তথ্য
 Comment[be]=Звесткі пра перапыненні
 Comment[be@latin]=Źviestki ab pierarvańniach

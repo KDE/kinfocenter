@@ -11,7 +11,7 @@ X-DocPath=kinfocenter/index.html#opengl
 
 Name=OpenGL
 Name[af]=OpenGL
-Name[ar]=مكتبة الرسوميات المفتوحة  OpenGL
+Name[ar]=OpenGL
 Name[as]=OpenGL
 Name[be]=OpenGL
 Name[be@latin]=OpenGL
@@ -100,7 +100,7 @@ Name[zh_TW]=OpenGL
 
 Comment=OpenGL information
 Comment[af]=OpenGL informasie
-Comment[ar]=معلومات OpenGL
+Comment[ar]=معلومات عن OpenGL
 Comment[as]=OpenGL ৰ তথ্য
 Comment[be]=Звесткі пра OpenGL
 Comment[be@latin]=Źviestki pra OpenGL
