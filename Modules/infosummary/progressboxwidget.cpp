@@ -25,7 +25,7 @@
 ProgressBoxWidget::ProgressBoxWidget()
 {
   setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum);
-  setObjectName("OuterFrame");
+  setObjectName( QLatin1String("OuterFrame" ));
   
   m_layout = new QGridLayout(this);
   m_layout->setAlignment(Qt::AlignTop|Qt::AlignLeft);
