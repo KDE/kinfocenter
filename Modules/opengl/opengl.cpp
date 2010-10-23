@@ -340,7 +340,7 @@ print_limits(QTreeWidgetItem *l1, const char * glExtensions, bool getProcAddress
 #ifdef GL_MAX_PALETTE_MATRICES_ARB
       { 1, GL_MAX_PALETTE_MATRICES_ARB, i18n("Max. vertex blend matrix palette size") },
 #endif
-      {0,0,0}
+      {0,0,QString()}
      };
 
    const struct token_name texture_limits[] = {
@@ -354,7 +354,7 @@ print_limits(QTreeWidgetItem *l1, const char * glExtensions, bool getProcAddress
       { 1 | KCMGL_FLOAT, GL_MAX_TEXTURE_LOD_BIAS_EXT, i18n("Max. texture LOD bias") },
       { 1, GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT, 	i18n("Max. anisotropy filtering level") },
       { 1, GL_NUM_COMPRESSED_TEXTURE_FORMATS_ARB, i18n("No. of compressed texture formats") },
-      {0,0,0}
+      {0,0,QString()}
      };
 
    const struct token_name float_limits[] = {
@@ -364,7 +364,7 @@ print_limits(QTreeWidgetItem *l1, const char * glExtensions, bool getProcAddress
       { 2 | KCMGL_FLOAT, GL_ALIASED_LINE_WIDTH_RANGE, 	"ALIASED_LINE_WIDTH_RANGE" },
       { 2 | KCMGL_FLOAT, GL_SMOOTH_LINE_WIDTH_RANGE, 	"SMOOTH_LINE_WIDTH_RANGE" },
       { 1 | KCMGL_FLOAT, GL_SMOOTH_LINE_WIDTH_GRANULARITY,"SMOOTH_LINE_WIDTH_GRANULARITY"},
-      {0,0,0}
+      {0,0,QString()}
      };
 
    const struct token_name stack_depth[] = {
@@ -378,7 +378,7 @@ print_limits(QTreeWidgetItem *l1, const char * glExtensions, bool getProcAddress
 #ifdef GL_MAX_MATRIX_PALETTE_STACK_DEPTH_ARB
       { 1, GL_MAX_MATRIX_PALETTE_STACK_DEPTH_ARB,"MAX_MATRIX_PALETTE_STACK_DEPTH"},
 #endif
-      {0,0,0}
+      {0,0,QString()}
    };
 
 #ifdef GL_ARB_fragment_program
@@ -403,7 +403,7 @@ print_limits(QTreeWidgetItem *l1, const char * glExtensions, bool getProcAddress
     { 1 | KCMGL_PROG, GL_MAX_PROGRAM_NATIVE_TEMPORARIES_ARB, "MAX_PROGRAM_NATIVE_TEMPORARIES" },
     { 1 | KCMGL_PROG, GL_MAX_PROGRAM_NATIVE_PARAMETERS_ARB, "MAX_PROGRAM_NATIVE_PARAMETERS" },
     { 1 | KCMGL_PROG, GL_MAX_PROGRAM_NATIVE_ATTRIBS_ARB, "MAX_PROGRAM_NATIVE_ATTRIBS" },
-    {0,0,0}
+    {0,0,QString()}
    };
 #endif
 
@@ -424,7 +424,7 @@ print_limits(QTreeWidgetItem *l1, const char * glExtensions, bool getProcAddress
 { 1 | KCMGL_PROG, GL_MAX_PROGRAM_NATIVE_PARAMETERS_ARB,"MAX_PROGRAM_NATIVE_PARAMETERS"},
 { 1 | KCMGL_PROG, GL_MAX_PROGRAM_NATIVE_ATTRIBS_ARB,"MAX_PROGRAM_NATIVE_ATTRIBS"},
 { 1 | KCMGL_PROG, GL_MAX_PROGRAM_NATIVE_ADDRESS_REGISTERS_ARB ,"MAX_PROGRAM_NATIVE_ADDRESS_REGISTERS"},
-{0,0,0}
+{0,0,QString()}
 };
 #endif
 
@@ -437,7 +437,7 @@ print_limits(QTreeWidgetItem *l1, const char * glExtensions, bool getProcAddress
     { 1, GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS_ARB,"MAX_VERTEX_TEXTURE_IMAGE_UNITS"},
     { 1, GL_MAX_TEXTURE_IMAGE_UNITS_ARB,"MAX_TEXTURE_IMAGE_UNITS"},
     { 1, GL_MAX_TEXTURE_COORDS_ARB,"MAX_TEXTURE_COORDS"},
-    {0,0,0}
+    {0,0,QString()}
    };
 #endif
 
@@ -446,7 +446,7 @@ print_limits(QTreeWidgetItem *l1, const char * glExtensions, bool getProcAddress
     { 1, GL_MAX_FRAGMENT_UNIFORM_COMPONENTS_ARB,"MAX_FRAGMENT_UNIFORM_COMPONENTS"},
     { 1, GL_MAX_TEXTURE_IMAGE_UNITS_ARB,"MAX_TEXTURE_IMAGE_UNITS"},
     { 1, GL_MAX_TEXTURE_COORDS_ARB,"MAX_TEXTURE_COORDS"},
-    {0,0,0}
+    {0,0,QString()}
    };
 #endif
 
@@ -454,7 +454,7 @@ print_limits(QTreeWidgetItem *l1, const char * glExtensions, bool getProcAddress
       { 2, GL_MAX_VIEWPORT_DIMS, 	i18n("Max. viewport dimensions") },
       { 1, GL_SUBPIXEL_BITS, 		i18n("Subpixel bits") },
       { 1, GL_AUX_BUFFERS, 		i18n("Aux. buffers")},
-      {0,0,0}
+      {0,0,QString()}
     };
 
    const struct token_group groups[] =
