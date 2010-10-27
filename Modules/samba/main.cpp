@@ -22,7 +22,6 @@
 #include <kaboutdata.h>
 #include <kcmodule.h>
 #include <kdialog.h>
-#include <kgenericfactory.h>
 
 #include "kcmsambaimports.h"
 #include "kcmsambalog.h"
