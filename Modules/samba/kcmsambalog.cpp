@@ -121,7 +121,7 @@ void LogView::loadSettings() {
 	if (configFile==0)
 		return;
 	KConfigGroup group = configFile->group(LOGGROUPNAME);
-	logFileName.setPath(group.readPathEntry("SambaLogFile", "/var/log/samba.log"));
+	logFileName.setUrl(KUrl(group.readPathEntry("SambaLogFile", "/var/log/samba.log")));
 
 	showConnOpen.setChecked(group.readEntry("ShowConnectionOpen", true));
 	showConnClose.setChecked(group.readEntry("ShowConnectionClose", false));
