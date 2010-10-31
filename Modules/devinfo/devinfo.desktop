@@ -12,6 +12,7 @@ X-DocPath=kinfocenter/index.html#devinfo
 
 Name=Device Viewer
 Name[ar]=عارض الأجهزة
+Name[ast]=Visor de preseos
 Name[ca]=Visor de dispositius
 Name[ca@valencia]=Visor de dispositius
 Name[cs]=Prohlížeč zařízení
@@ -61,6 +62,7 @@ Name[zh_TW]=裝置檢視器
 
 Comment=Device Viewer
 Comment[ar]=عارض الأجهزة
+Comment[ast]=Visor de preseos
 Comment[ca]=Visor de dispositius
 Comment[ca@valencia]=Visor de dispositius
 Comment[cs]=Prohlížeč zařízení

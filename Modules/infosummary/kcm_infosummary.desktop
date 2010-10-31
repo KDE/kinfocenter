@@ -10,6 +10,7 @@ X-KDE-ParentApp=kinfocenter
 
 Name=Summary
 Name[ar]=ملخص
+Name[ast]=Resume
 Name[ca]=Resum
 Name[ca@valencia]=Resum
 Name[cs]=Shrnutí
@@ -63,6 +64,7 @@ Name[zh_TW]=摘要
 
 Comment=Hardware Information Summary
 Comment[ar]=ملخص معلومات العتاد
+Comment[ast]=Resume de la información del hardware
 Comment[ca]=Resum de la informació del maquinari
 Comment[ca@valencia]=Resum de la informació del maquinari
 Comment[cs]=Souhrn informací o hardwaru
