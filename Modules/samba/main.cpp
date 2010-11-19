@@ -73,7 +73,7 @@ SambaContainer::SambaContainer(QWidget *parent, const QVariantList&) :
 		" machines running the various flavors of Microsoft Windows.</p>"));
 
 	KAboutData *about = new KAboutData(I18N_NOOP("kcmsamba"), 0,
-			ki18n("KDE Panel System Information Control Module"),
+			ki18n("System Information Control Module"),
 			0, KLocalizedString(), KAboutData::License_GPL,
 			ki18n("(c) 2002 KDE Information Control Module Samba Team"));
 	about->addAuthor(ki18n("Michael Glauche"), KLocalizedString(), "glauche@isa.rwth-aachen.de");

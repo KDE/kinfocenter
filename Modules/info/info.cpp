@@ -37,7 +37,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 KInfoListWidget::KInfoListWidget(const KComponentData &inst, const QString &_title, QWidget *parent, bool _getlistbox(QTreeWidget *tree) ) :
 	KCModule(inst, parent), title(_title) {
 	KAboutData *about = new KAboutData("kcminfo", 0,
-			ki18n("KDE Panel System Information Control Module"),
+			ki18n("System Information Control Module"),
 			0, KLocalizedString(), KAboutData::License_GPL,
 			ki18n(	"(c) 2008 Nicolas Ternisien\n"
 					"(c) 1998 - 2002 Helge Deller"));

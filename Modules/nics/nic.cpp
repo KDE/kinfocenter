@@ -109,7 +109,7 @@ KCMNic::KCMNic(QWidget *parent, const QVariantList &) :
 	connect(timer, SIGNAL(timeout()), this, SLOT(update()));
 	update();
 	KAboutData *about = new KAboutData(I18N_NOOP("kcminfo"), 0,
-			ki18n("KDE Panel System Information Control Module"),
+			ki18n("System Information Control Module"),
 			0, KLocalizedString(), KAboutData::License_GPL,
 			ki18n("(c) 2001 - 2002 Alexander Neundorf"));
 
