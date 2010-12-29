@@ -233,8 +233,8 @@ QModelIndex InfoKcmModel::firstValid() const
     {
       if(winner >= (unsigned int)item->weight()) 
       {
-	winner = item->weight();
-	winnerIndex = index(item->row(),0,item->parent());
+		winner = item->weight();
+		winnerIndex = index(item->row(),0,item->parent());
       }
     }
   }

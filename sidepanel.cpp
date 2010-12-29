@@ -136,22 +136,3 @@ void SidePanel::resetSearchSlot()
   filterSideMenuSlot("");
 }
 
-void SidePanel::toggleExpand(const KcmTreeItem *item)
-{
-  int expand=0;
-  if(item->type() == KcmTreeItem::KCM) return;
-  
-  QModelIndex expandIndex = m_proxyModel->mapFromSource(m_model->indexOf((KcmTreeItem *)item));
-  
-  if(!expandIndex.isValid()) return;
-  if(!isExpanded(expandIndex)) 
-  {
-    expand = true;
-  } 
-  else
-  {
-    expand = false;
-  }
-  this->setExpanded(expandIndex,expand);
-}
-
