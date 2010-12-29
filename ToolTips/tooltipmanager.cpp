@@ -19,8 +19,8 @@
 
 #include "tooltipmanager.h"
 
-#include "../kcmtreeitem.h"
-#include "../sidepanel.h"
+#include "kcmtreeitem.h"
+#include "sidepanel.h"
 
 #include "ktooltip.h"
 
