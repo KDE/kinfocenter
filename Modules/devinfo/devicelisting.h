@@ -90,7 +90,7 @@ class DeviceListing : public QTreeWidget
     NicSignals *nicSig;
     
   public slots:
-    void deviceItemClickedSlot(QTreeWidgetItem *,const int);
+    void itemActivatedSlot(QTreeWidgetItem *,const int);
     void deviceAddedSlot(const QString);
     void deviceRemovedSlot(const QString);
     void collapseAllDevicesSlot();
