@@ -32,7 +32,7 @@ DeviceListing::DeviceListing(QWidget *parent, InfoPanel *info, DevInfoPlugin *st
    connect(nicSig,SIGNAL(nicActivatedOrDisconnected()),this,SLOT(networkingChangedSlot()));
    
     // Check if clicked
-    connect(this,SIGNAL(itemClicked(QTreeWidgetItem *,int)),this,SLOT(deviceItemClickedSlot(QTreeWidgetItem *,int)));
+    connect(this,SIGNAL(itemActivated(QTreeWidgetItem *,int)),this,SLOT(itemActivatedSlot(QTreeWidgetItem *,int)));
     
     // Check if item is added
     connect(Solid::DeviceNotifier::instance(),SIGNAL(deviceAdded(QString)),this,SLOT(deviceAddedSlot(QString)));
@@ -146,7 +146,7 @@ void DeviceListing::populateListing(const show showStatus)
   } 
 }
 
-void DeviceListing::deviceItemClickedSlot(QTreeWidgetItem *listItemIn ,const int columnIn) 
+void DeviceListing::itemActivatedSlot(QTreeWidgetItem *listItemIn ,const int columnIn) 
 {
   Q_UNUSED(columnIn);
   
