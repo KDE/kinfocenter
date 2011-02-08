@@ -276,7 +276,7 @@ void KInfoCenter::aboutKcmSlot()
   kcmAboutDialog.exec();
 }
 
-void KInfoCenter::showError(QWidget *parent, QString errorMessage)
+void KInfoCenter::showError(QWidget *parent, const QString& errorMessage)
 {
   KMessageBox::sorry(parent,errorMessage);
 }

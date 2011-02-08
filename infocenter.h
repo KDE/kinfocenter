@@ -105,7 +105,7 @@ class KInfoCenter : public KXmlGuiWindow
     * @param parent parent object
     * @param errorMessage error message text
     */
-    static void showError(QWidget *parent, QString errorMessage);
+    static void showError(QWidget *parent, const QString& errorMessage);
     
   private:
     
