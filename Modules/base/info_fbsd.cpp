@@ -34,18 +34,8 @@ extern "C" {
 
 #include <QTextStream>
 
-class Device {
-public:
-	Device(QString n=QString(), QString d=QString()) {
-		name=n;
-		description=d;
-	}
-	QString name, description;
-};
-
 void ProcessChildren(QString name);
 QString GetController(const QString &line);
-Device *GetDevice(const QString &line);
 
 #ifdef HAVE_DEVINFO_H
 extern "C" {
@@ -243,48 +233,6 @@ bool GetInfo_XServer_and_Video(QTreeWidget* tree) {
 	return GetInfo_XServer_Generic(tree);
 }
 
-bool GetInfo_Devices(QTreeWidget* tree) {
-	QFile *f = new QFile("/var/run/dmesg.boot");
-	if (f->open(QIODevice::ReadOnly)) {
-		QTextStream qts(f);
-		QMap<QString, QTreeWidgetItem*> lv_items;
-		Device *dev;
-		QString line, controller;
-		tree->setRootIsDecorated(true);
-		QStringList headers;
-		headers << i18n("Device") << i18n("Description");
-		tree->setHeaderLabels(headers);
-		while ( !(line=qts.readLine()).isNull() ) {
-			controller = GetController(line);
-			if (controller.isNull())
-				continue;
-			dev=GetDevice(line);
-			if (!dev)
-				continue;
-			// Ewww assuing motherboard is the only toplevel controller is rather gross
-			if (controller == "motherboard") {
-				if (lv_items.contains(QString(dev->name))==false) {
-					QStringList list;
-					list << dev->name << dev->description;
-
-					lv_items.insert(QString(dev->name), new QTreeWidgetItem(tree, list));
-				}
-			} else {
-				QTreeWidgetItem* parent=lv_items[controller];
-				if (parent && lv_items.contains(dev->name)==false) {
-					QStringList list;
-					list << dev->name << dev->description;
-					lv_items.insert(QString(dev->name), new QTreeWidgetItem(parent, list));
-				}
-			}
-		}
-                delete f;
-		return true;
-	}
-        delete f;
-	return false;
-}
-
 QString GetController(const QString &line) {
 	if ( ( (line.startsWith("ad")) || (line.startsWith("afd")) || (line.startsWith("acd")) ) && (line.indexOf(":") < 6)) {
 		QString controller = line;
@@ -307,18 +255,6 @@ QString GetController(const QString &line) {
 		return controller;
 	}
 	return QString();
-}
-
-Device *GetDevice(const QString &line) {
-	Device *dev;
-	int colon = line.indexOf(":");
-	if (colon == -1)
-		return 0;
-	dev = new Device;
-	dev->name = line.mid(0, colon);
-	dev->description = line.mid(line.indexOf("<")+1, line.length());
-	dev->description.remove(dev->description.indexOf(">"), dev->description.length());
-	return dev;
 }
 
 #ifdef HAVE_DEVINFO_H

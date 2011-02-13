@@ -197,11 +197,6 @@ bool GetInfo_Sound(QTreeWidget* tree) {
 	return true;
 }
 
-bool GetInfo_Devices(QTreeWidget* tree) {
-	(void) GetDmesgInfo(tree, NULL, NULL);
-	return true;
-}
-
 bool GetInfo_SCSI(QTreeWidget* tree) {
 	if (!GetDmesgInfo(tree, "scsibus", NULL)) {
 		QStringList list;

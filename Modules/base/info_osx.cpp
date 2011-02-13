@@ -128,7 +128,3 @@ bool GetInfo_XServer_and_Video(QTreeWidget* tree) {
 	return false;
 #endif
 }
-
-bool GetInfo_Devices(QTreeWidget* tree) {
-	return false;
-}

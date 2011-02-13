@@ -192,10 +192,6 @@ bool GetInfo_Sound(QListView *) {
 	return false;
 }
 
-bool GetInfo_Devices(QListView *lBox) {
-	return list_devices(lBox, (char *)"PdDvLn like '*'");
-}
-
 bool GetInfo_SCSI(QListView *lBox) {
 	return list_devices(lBox, (char *)"PdDvLn like '*/scsi/*'");
 }

@@ -186,12 +186,8 @@ bool GetInfo_IO_Ports(QListView *lBox) {
 		return GetInfo_ReadfromPipe(lBox, INFO_IOPORTS_2, false);
 }
 
-bool GetInfo_Devices(QListView *lBox) {
-	return GetInfo_ReadfromPipe(lBox, INFO_DEVICES, false);
-}
-
 bool GetInfo_SCSI(QListView *lBox) {
-	return GetInfo_Devices(lBox);
+	return GetInfo_ReadfromPipe(lBox, INFO_DEVICES, false);
 }
 /* Parts taken from fsusage.c from the Midnight Commander (mc)
 

@@ -44,10 +44,6 @@ bool GetInfo_Sound(QTreeWidget*) {
 	return false;
 }
 
-bool GetInfo_Devices(QTreeWidget*) {
-	return false;
-}
-
 bool GetInfo_SCSI(QTreeWidget*) {
 	return false;
 }

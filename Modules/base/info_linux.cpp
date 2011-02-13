@@ -63,7 +63,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define INFO_ASOUND "/proc/asound/oss/sndstat"
 #define INFO_ASOUND09 "/proc/asound/sndstat"
 
-#define INFO_DEVICES "/proc/devices"
 #define INFO_MISC "/proc/misc"
 
 #define INFO_SCSI "/proc/scsi/scsi"
@@ -188,92 +187,6 @@ bool GetInfo_Sound(QTreeWidget* tree) {
 		return true;
 	else
 		return GetInfo_ReadfromFile(tree, INFO_ASOUND09, 0);
-}
-
-bool GetInfo_Devices(QTreeWidget* tree) {
-	kDebug() << "Linux Info Devices" << endl;
-	QFile file;
-	QTreeWidgetItem *misc=NULL;
-
-	tree->setRootIsDecorated(true);
-	QStringList headers;
-	headers << i18n("Devices") << i18n("Major Number") << i18n("Minor Number");
-	tree->setHeaderLabels(headers);
-
-	file.setFileName(INFO_DEVICES);
-	if (file.exists() && file.open(QIODevice::ReadOnly)) {
-		QTextStream stream(&file);
-		QTreeWidgetItem *parent=0L, *child=0L;
-
-		QString line = stream.readLine();
-
-		while (!line.isNull()) {
-			if (!line.isEmpty()) {
-				if (-1 != line.indexOf("character device", 0, Qt::CaseInsensitive)) {
-					QStringList list;
-					list << i18n("Character Devices");
-					parent = new QTreeWidgetItem(tree, list);
-					parent->setIcon(0, SmallIcon("chardevice"));
-					parent->setExpanded(true);
-
-				} else if (-1 != line.indexOf("block device", 0, Qt::CaseInsensitive)) {
-					QStringList list;
-					list << i18n("Block Devices");
-					parent = new QTreeWidgetItem(tree, list);
-					parent->setIcon(0, SmallIcon("blockdevice"));
-					parent->setExpanded(true);
-
-				} else {
-					QRegExp rx("^\\s*(\\S+)\\s+(\\S+)");
-					if (-1 != rx.indexIn(line)) {
-						if (parent) {
-							QStringList list;
-							list << rx.cap(2) << rx.cap(1);
-							child = new QTreeWidgetItem(parent, list);
-						} else {
-							QStringList list;
-							list << rx.cap(2) << rx.cap(1);
-							child = new QTreeWidgetItem(tree, list);
-						}
-
-						if (rx.cap(2)=="misc") {
-							misc=child;
-						}
-					}
-				}
-			}
-			line = stream.readLine();
-		}
-		file.close();
-	} else {
-		return false;
-	}
-
-	file.setFileName(INFO_MISC);
-	if (misc && file.exists() && file.open(QIODevice::ReadOnly)) {
-		QTextStream stream(&file);
-
-		misc->setText(0, i18n("Miscellaneous Devices"));
-		misc->setIcon(0, SmallIcon("memory"));
-		misc->setExpanded(true);
-
-		QString line = stream.readLine();
-
-		while (!line.isNull()) {
-			if (!line.isEmpty()) {
-				QRegExp rx("^\\s*(\\S+)\\s+(\\S+)");
-				if (-1 != rx.indexIn(line)) {
-					QStringList list;
-					list << rx.cap(2) << "10" << rx.cap(1);
-					new QTreeWidgetItem(misc, list);
-				}
-			}
-			line = stream.readLine();
-		}
-		file.close();
-	}
-
-	return true;
 }
 
 bool GetInfo_SCSI(QTreeWidget* tree) {

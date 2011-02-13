@@ -86,10 +86,6 @@ bool GetInfo_Sound(QListView *lBox) {
 		return false;
 }
 
-bool GetInfo_Devices(QListView *) {
-	return false;
-}
-
 bool GetInfo_SCSI(QListView *) {
 	return false;
 }
