@@ -30,6 +30,7 @@ extern "C" {
 
 #include <QMap>
 #include <QFile>
+#include <QFileInfo>
 
 #include <QTextStream>
 
@@ -125,11 +126,10 @@ bool GetInfo_Sound(QTreeWidget* tree) {
 
 bool GetInfo_SCSI(QTreeWidget* tree) {
 	FILE *pipe;
-	QFile *camcontrol = new QFile("/sbin/camcontrol");
 	QTextStream *t;
 	QString s;
 
-	if (!camcontrol->exists()) {
+	if (!QFileInfo(QLatin1String("/sbin/camcontrol")).exists()) {
 		s = i18n("SCSI subsystem could not be queried: /sbin/camcontrol could not be found");
 		QStringList list;
 		list << s;
@@ -159,8 +159,6 @@ bool GetInfo_SCSI(QTreeWidget* tree) {
 		pclose(pipe);
 	}
 
-	delete camcontrol;
-
 	if (!tree->topLevelItemCount())
 		return false;
 
@@ -169,52 +167,44 @@ bool GetInfo_SCSI(QTreeWidget* tree) {
 
 bool GetInfo_PCI(QTreeWidget* tree) {
 	FILE *pipe;
-	QFile *pcicontrol;
 	QString s, cmd;
 	QTreeWidgetItem *olditem= NULL;
 
-	pcicontrol = new QFile("/usr/sbin/pciconf");
-
-	if (!pcicontrol->exists()) {
-		delete pcicontrol;
-		pcicontrol = new QFile("/usr/X11R6/bin/scanpci");
-		if (!pcicontrol->exists()) {
-			delete pcicontrol;
-			pcicontrol = new QFile("/usr/X11R6/bin/pcitweak");
-			if (!pcicontrol->exists()) {
-				QStringList list;
-				list << i18n("Could not find any programs with which to query your system's PCI information");
-				new QTreeWidgetItem(tree, list);
-				delete pcicontrol;
-				return true;
-			} else {
-				cmd = "/usr/X11R6/bin/pcitweak -l 2>&1";
-			}
-		} else {
-			cmd = "/usr/X11R6/bin/scanpci";
-		}
+	if (!QFileInfo(QLatin1String("/usr/sbin/pciconf")).exists()) {
+		QStringList list;
+		list << i18n("Could not find any programs with which to query your system's PCI information");
+		new QTreeWidgetItem(tree, list);
+		return true;
 	} else {
 		cmd = "/usr/sbin/pciconf -l -v 2>&1";
 	}
-	delete pcicontrol;
 
+	// TODO: GetInfo_ReadfromPipe should be improved so that we could pass the program name and its
+	//       arguments to it and remove most of the code below.
 	if ((pipe = popen(cmd.toLatin1(), "r")) == NULL) {
 		QStringList list;
 		list << i18n("PCI subsystem could not be queried: %1 could not be executed", cmd);
 		olditem = new QTreeWidgetItem(olditem, list);
 	} else {
-
 		/* This prints out a list of all the pci devies, perhaps eventually we could
 		 parse it as opposed to schlepping it into a listbox */
+		QTextStream outputStream(pipe, QIODevice::ReadOnly);
+
+		while (!outputStream.atEnd()) {
+			s = outputStream.readLine();
+			if (s.isEmpty() )
+				break;
+			const QStringList list(s);
+			new QTreeWidgetItem(tree, list);
+		}
 
 		pclose(pipe);
-		GetInfo_ReadfromPipe(tree, cmd.toLatin1(), true);
 	}
 
 	if (!tree->topLevelItemCount()) {
 		QString str = i18n("The PCI subsystem could not be queried, this may need root privileges.");
 		olditem = new QTreeWidgetItem(tree, olditem);
-        olditem->setText(0, str);
+		olditem->setText(0, str);
 		return true;
 	}
 
