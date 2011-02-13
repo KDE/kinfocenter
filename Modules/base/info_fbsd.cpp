@@ -30,6 +30,7 @@ extern "C" {
 
 #include <QMap>
 #include <QFile>
+#include <QFileInfo>
 
 #include <QTextStream>
 
@@ -165,11 +166,10 @@ bool GetInfo_Sound(QTreeWidget* tree) {
 
 bool GetInfo_SCSI(QTreeWidget* tree) {
 	FILE *pipe;
-	QFile *camcontrol = new QFile("/sbin/camcontrol");
 	QTextStream *t;
 	QString s;
 
-	if (!camcontrol->exists()) {
+	if (!QFileInfo(QLatin1String("/sbin/camcontrol")).exists()) {
 		s = i18n("SCSI subsystem could not be queried: /sbin/camcontrol could not be found");
 		QStringList list;
 		list << s;
@@ -199,8 +199,6 @@ bool GetInfo_SCSI(QTreeWidget* tree) {
 		pclose(pipe);
 	}
 
-	delete camcontrol;
-
 	if (!tree->topLevelItemCount())
 		return false;
 
@@ -209,22 +207,17 @@ bool GetInfo_SCSI(QTreeWidget* tree) {
 
 bool GetInfo_PCI(QTreeWidget* tree) {
 	FILE *pipe;
-	QFile *pcicontrol;
 	QString s, cmd;
 	QTreeWidgetItem *olditem= NULL;
 
-	pcicontrol = new QFile("/usr/sbin/pciconf");
-
-	if (!pcicontrol->exists()) {
+	if (!QFileInfo(QLatin1String("/usr/sbin/pciconf")).exists()) {
 		QStringList list;
 		list << i18n("Could not find any programs with which to query your system's PCI information");
 		new QTreeWidgetItem(tree, list);
-		delete pcicontrol;
 		return true;
 	} else {
 		cmd = "/usr/sbin/pciconf -l -v 2>&1";
 	}
-	delete pcicontrol;
 
 	// TODO: GetInfo_ReadfromPipe should be improved so that we could pass the program name and its
 	//       arguments to it and remove most of the code below.
