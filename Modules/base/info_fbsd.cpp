@@ -226,17 +226,26 @@ bool GetInfo_PCI(QTreeWidget* tree) {
 	}
 	delete pcicontrol;
 
+	// TODO: GetInfo_ReadfromPipe should be improved so that we could pass the program name and its
+	//       arguments to it and remove most of the code below.
 	if ((pipe = popen(cmd.toLatin1(), "r")) == NULL) {
 		QStringList list;
 		list << i18n("PCI subsystem could not be queried: %1 could not be executed", cmd);
 		olditem = new QTreeWidgetItem(olditem, list);
 	} else {
-
 		/* This prints out a list of all the pci devies, perhaps eventually we could
 		 parse it as opposed to schlepping it into a listbox */
+		QTextStream outputStream(pipe, QIODevice::ReadOnly);
+
+		while (!outputStream.atEnd()) {
+			s = outputStream.readLine();
+			if (s.isEmpty() )
+				break;
+			const QStringList list(s);
+			new QTreeWidgetItem(tree, list);
+		}
 
 		pclose(pipe);
-		GetInfo_ReadfromPipe(tree, cmd.toLatin1(), true);
 	}
 
 	if (!tree->topLevelItemCount()) {
