@@ -35,7 +35,6 @@ extern "C" {
 #include <QTextStream>
 
 void ProcessChildren(QString name);
-QString GetController(const QString &line);
 
 #ifdef HAVE_DEVINFO_H
 extern "C" {
@@ -231,30 +230,6 @@ bool GetInfo_Partitions(QTreeWidget* tree) {
 
 bool GetInfo_XServer_and_Video(QTreeWidget* tree) {
 	return GetInfo_XServer_Generic(tree);
-}
-
-QString GetController(const QString &line) {
-	if ( ( (line.startsWith("ad")) || (line.startsWith("afd")) || (line.startsWith("acd")) ) && (line.indexOf(":") < 6)) {
-		QString controller = line;
-		controller.remove(0, controller.indexOf(" at ")+4);
-		if (controller.indexOf("-slave") != -1) {
-			controller.remove(controller.indexOf("-slave"), controller.length());
-		} else if (controller.indexOf("-master") != -1) {
-			controller.remove(controller.indexOf("-master"), controller.length());
-		} else
-			controller=QString();
-		if (!controller.isNull())
-			return controller;
-	}
-	if (line.indexOf(" on ") != -1) {
-		QString controller;
-		controller = line;
-		controller.remove(0, controller.indexOf(" on ")+4);
-		if (controller.indexOf(" ") != -1)
-			controller.remove(controller.indexOf(" "), controller.length());
-		return controller;
-	}
-	return QString();
 }
 
 #ifdef HAVE_DEVINFO_H
