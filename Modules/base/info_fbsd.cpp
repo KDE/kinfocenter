@@ -251,7 +251,7 @@ bool GetInfo_PCI(QTreeWidget* tree) {
 	if (!tree->topLevelItemCount()) {
 		QString str = i18n("The PCI subsystem could not be queried, this may need root privileges.");
 		olditem = new QTreeWidgetItem(tree, olditem);
-        olditem->setText(0, str);
+		olditem->setText(0, str);
 		return true;
 	}
 
