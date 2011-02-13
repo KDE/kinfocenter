@@ -206,48 +206,6 @@ bool GetInfo_SCSI(QTreeWidget* tree) {
 	return true;
 }
 
-bool GetInfo_Partitions(QTreeWidget* tree) {
-	QString s;
-	char *line, *orig_line;
-	const char *device, *mountpoint, *type, *flags;
-	FILE *pipe = popen("/sbin/mount", "r");
-	QTextStream *t;
-
-	if (!pipe) {
-		kError(0) << i18n("Unable to run /sbin/mount.") << endl;
-		return false;
-	}
-	t = new QTextStream(pipe, QIODevice::ReadOnly);
-
-	QStringList headers;
-	headers << i18n("Device") << i18n("Mount Point") << i18n("FS Type") << i18n("Mount Options");
-	tree->setHeaderLabels(headers);
-
-	while (!(s = t->readLine()).isNull()) {
-		orig_line = line = strdup(s.toLatin1());
-
-		device = strsep(&line, " ");
-
-		(void) strsep(&line, " "); // consume word "on"
-		mountpoint = strsep(&line, " ");
-
-		(void) strsep(&line, " "); // consume word "type"
-		type = strsep(&line, " ");
-
-		flags = line;
-
-		QStringList mountList;
-		mountList << device << mountpoint << type << flags;
-		new QTreeWidgetItem(tree, mountList);
-
-		free(orig_line);
-	}
-
-	delete t;
-	pclose(pipe);
-	return true;
-}
-
 bool GetInfo_XServer_and_Video(QTreeWidget* tree) {
 	return GetInfo_XServer_Generic(tree);
 }

@@ -24,8 +24,6 @@ extern "C" {
 }
 #endif
 
-#include <errno.h>
-#include <fstab.h>
 #include <string.h>
 
 #include <QMap>
@@ -200,34 +198,6 @@ bool GetInfo_PCI(QTreeWidget* tree) {
 		return true;
 	}
 
-	return true;
-}
-
-bool GetInfo_Partitions(QTreeWidget* tree) {
-	struct fstab *fstab_ent;
-
-	if (setfsent() != 1) /* Try to open fstab */{
-		int s_err= errno;
-		QString s;
-		s = i18n("Could not check file system info: ");
-		s += strerror(s_err);
-		QStringList list;
-		list << s;
-		new QTreeWidgetItem(tree, list);
-	} else {
-		QStringList headers;
-		headers << i18n("Device") << i18n("Mount Point") << i18n("FS Type") << i18n("Mount Options");
-
-		while ((fstab_ent=getfsent())!=NULL) {
-			QStringList list;
-			list << fstab_ent->fs_spec << fstab_ent->fs_file << fstab_ent->fs_vfstype << fstab_ent->fs_mntops;
-			new QTreeWidgetItem(tree, list);
-		}
-
-		tree->sortItems(0, Qt::AscendingOrder);
-
-		endfsent(); /* Close fstab */
-	}
 	return true;
 }
 

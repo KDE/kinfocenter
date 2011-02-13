@@ -37,8 +37,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #	define INFO_IOPORTS_1		"/etc/dmesg"		// as pipe !
 #	define INFO_IOPORTS_2		"/usr/sbin/dmesg"	// as pipe !
 #	define INFO_DEVICES		"/etc/ioscan" 	// as pipe !!
-#	define INFO_PARTITIONS_1 	FSTAB	// = "/etc/fstab" (in fstab.h)
-#	define INFO_PARTITIONS_2 	"/etc/checklist"
 
 /*	The following table is from an HP-UX 10.20 System
  build out of the files
@@ -234,59 +232,6 @@ static int get_fs_usage(char *path, long *l_total, long *l_avail) {
 	*l_total = fsu_blocks/2;
 
 	return 0;
-}
-
-// Some Ideas taken from garbazo from his source in info_fbsd.cpp
-
-bool GetInfo_Partitions(QListView *lbox) {
-#define NUMCOLS 5
-	QString Title[NUMCOLS];
-	int n;
-
-	struct fstab *fstab_ent;
-	struct statvfs svfs;
-	long total, avail;
-	QString str;
-	QString MB(i18n("MB")+ "  "); // International Text for MB=Mega-Byte
-
-	if (setfsent() != 1) // Try to open fstab 
-		return false;
-
-	Title[0] = i18n("Device");
-	Title[1] = i18n("Mount Point");
-	Title[2] = i18n("FS Type");
-	Title[3] = i18n("Total Size");
-	Title[4] = i18n("Free Size");
-
-	for (n=0; n<NUMCOLS; ++n) {
-		lbox->addColumn(Title[n]);
-	}
-
-	while ((fstab_ent=getfsent())!=NULL) {
-		/* fstab_ent->fs_type holds only "rw","xx","ro"... */
-		memset(&svfs, 0, sizeof(svfs));
-		statvfs(fstab_ent->fs_file, &svfs);
-		get_fs_usage(fstab_ent->fs_file, &total, &avail);
-
-		if (!strcmp(fstab_ent->fs_type, FSTAB_XX)) // valid drive ?
-			svfs.f_basetype[0] = 0;
-
-		if (svfs.f_basetype[0]) {
-			new QListViewItem(lbox, QString(fstab_ent->fs_spec),
-					QString(fstab_ent->fs_file) + QString("  "),
-					(svfs.f_basetype[0] ? QString(svfs.f_basetype) : i18n("n/a")),
-					Value((total+512)/1024,6) + MB,
-					Value((avail+512)/1024,6) + MB);
-		} else {
-			new QListViewItem(lbox, QString(fstab_ent->fs_spec),
-					QString(fstab_ent->fs_file) + QString("  "),
-					(svfs.f_basetype[0] ? QString(svfs.f_basetype) : i18n("n/a")));
-		}
-
-	}
-	endfsent();
-
-	return true;
 }
 
 bool GetInfo_XServer_and_Video(QListView *lBox) {

@@ -34,10 +34,6 @@ bool GetInfo_SCSI(QListView *) {
 	return false;
 }
 
-bool GetInfo_Partitions(QListView *) {
-	return false;
-}
-
 bool GetInfo_XServer_and_Video(QListView *lBox) {
 	return GetInfo_XServer_Generic(lBox);
 }

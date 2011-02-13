@@ -117,10 +117,6 @@ bool GetInfo_SCSI(QTreeWidget*) {
 	return false;
 }
 
-bool GetInfo_Partitions(QTreeWidget*) {
-	return false;
-}
-
 bool GetInfo_XServer_and_Video(QTreeWidget* tree) {
 #ifdef Q_WS_X11
 	return GetInfo_XServer_Generic(tree);
