@@ -158,45 +158,6 @@ bool GetInfo_IO_Ports(QTreeWidget* tree) {
 	return true;
 }
 
-bool GetInfo_Sound(QTreeWidget* tree) {
-	if (!GetDmesgInfo(tree, "audio", NULL)) {
-		QStringList list;
-		list << i18n("No audio devices found.");
-		new QTreeWidgetItem(tree, list);
-	}
-
-	// append information on any audio devices found
-	QTreeWidgetItemIterator it(tree, QTreeWidgetItemIterator::All);
-	while ( *it != NULL ) {
-		QTreeWidgetItem* lvitem = *it;
-
-		QString s;
-		int pos, len;
-		const char *start, *end;
-		char *dev;
-
-		s = lvitem->text(0);
-		if ((pos = s.find("at ")) >= 0) {
-			pos += 3; // skip "at "
-			start = end = s.toAscii();
-			for (; *end && (*end!=':') && (*end!='\n'); end++)
-				;
-			len = end - start;
-			dev = (char *) malloc(len + 1);
-			strncpy(dev, start, len);
-			dev[len] = '\0';
-
-			GetDmesgInfo(tree, dev, NULL);
-
-			free(dev);
-		}
-		
-		++it;
-	}
-
-	return true;
-}
-
 bool GetInfo_SCSI(QTreeWidget* tree) {
 	if (!GetDmesgInfo(tree, "scsibus", NULL)) {
 		QStringList list;

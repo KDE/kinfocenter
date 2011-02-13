@@ -7,8 +7,6 @@
  Initially based on info_sgi.cpp
  */
 
-#define INFO_DEV_SNDSTAT "/dev/sndstat"
-
 #include <sys/systeminfo.h>
 
 /*  all following functions should return true, when the Information 
@@ -77,13 +75,6 @@ bool GetInfo_PCI(QTreeWidget* tree) {
 
 bool GetInfo_IO_Ports(QListView *) {
 	return false;
-}
-
-bool GetInfo_Sound(QListView *lBox) {
-	if (GetInfo_ReadfromFile(lBox, INFO_DEV_SNDSTAT, 0))
-		return true;
-	else
-		return false;
 }
 
 bool GetInfo_SCSI(QListView *) {

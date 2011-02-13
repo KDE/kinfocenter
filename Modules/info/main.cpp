@@ -59,9 +59,6 @@ CREATE_FACTORY(IRQ, i18n("Interrupt"))
 #ifdef INFO_IOPORTS_AVAILABLE
 CREATE_FACTORY(IO_Ports, i18n("I/O-Port"))
 #endif
-#ifdef INFO_SOUND_AVAILABLE
-CREATE_FACTORY(Sound, i18n("Soundcard"))
-#endif
 #ifdef INFO_SCSI_AVAILABLE
 CREATE_FACTORY(SCSI, i18n("SCSI"))
 #endif
@@ -82,9 +79,6 @@ KInfoModulesFactory::KInfoModulesFactory(const char *componentName)
 #endif
 #ifdef INFO_IOPORTS_AVAILABLE
     registerPlugin<KIO_PortsInfoWidget>("ioports");
-#endif
-#ifdef INFO_SOUND_AVAILABLE
-    registerPlugin<KSoundInfoWidget>("sound");
 #endif
 #ifdef INFO_SCSI_AVAILABLE
     registerPlugin<KSCSIInfoWidget>("scsi");

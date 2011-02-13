@@ -27,7 +27,6 @@ extern "C" {
 #include <string.h>
 
 #include <QMap>
-#include <QFile>
 #include <QFileInfo>
 
 #include <QTextStream>
@@ -81,34 +80,6 @@ bool GetInfo_IO_Ports(QTreeWidget* tree) {
 #else
 	return false;
 #endif
-}
-
-bool GetInfo_Sound(QTreeWidget* tree) {
-	QFile *sndstat = new QFile("/dev/sndstat");
-	QTextStream *t;
-	QString s;
-
-	if (!sndstat->exists() || !sndstat->open(QIODevice::ReadOnly)) {
-
-		s = i18n("Your sound system could not be queried.  /dev/sndstat does not exist or is not readable.");
-		QStringList list;
-		list << s;
-		new QTreeWidgetItem(tree, list);
-	} else {
-		t = new QTextStream(sndstat);
-		while (!(s=t->readLine()).isNull()) {
-			QStringList list;
-			list << s;
-
-			new QTreeWidgetItem(tree, list);
-		}
-
-		delete t;
-		sndstat->close();
-	}
-
-	delete sndstat;
-	return true;
 }
 
 bool GetInfo_SCSI(QTreeWidget* tree) {

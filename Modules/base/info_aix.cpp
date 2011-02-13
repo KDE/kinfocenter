@@ -187,10 +187,6 @@ bool GetInfo_IO_Ports(QListView *) {
 	return false;
 }
 
-bool GetInfo_Sound(QListView *) {
-	return false;
-}
-
 bool GetInfo_SCSI(QListView *lBox) {
 	return list_devices(lBox, (char *)"PdDvLn like '*/scsi/*'");
 }

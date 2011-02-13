@@ -46,11 +46,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define INFO_IOPORTS "/proc/ioports"
 
-#define INFO_DEV_SNDSTAT "/dev/sndstat"
-#define INFO_SOUND "/proc/sound"
-#define INFO_ASOUND "/proc/asound/oss/sndstat"
-#define INFO_ASOUND09 "/proc/asound/sndstat"
-
 #define INFO_MISC "/proc/misc"
 
 #define INFO_SCSI "/proc/scsi/scsi"
@@ -159,19 +154,6 @@ bool GetInfo_IO_Ports(QTreeWidget* tree) {
 	headers << i18n("I/O-Range") << i18n("Used By");
 	tree->setHeaderLabels(headers);
 	return GetInfo_ReadfromFile(tree, INFO_IOPORTS, ':');
-}
-
-bool GetInfo_Sound(QTreeWidget* tree) {
-	tree->setSortingEnabled(false);
-
-	if (GetInfo_ReadfromFile(tree, INFO_DEV_SNDSTAT, 0))
-		return true;
-	else if (GetInfo_ReadfromFile(tree, INFO_SOUND, 0))
-		return true;
-	else if (GetInfo_ReadfromFile(tree, INFO_ASOUND, 0))
-		return true;
-	else
-		return GetInfo_ReadfromFile(tree, INFO_ASOUND09, 0);
 }
 
 bool GetInfo_SCSI(QTreeWidget* tree) {

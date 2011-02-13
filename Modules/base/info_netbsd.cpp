@@ -151,41 +151,6 @@ bool GetInfo_IO_Ports(QTreeWidget* tree) {
 	return true;
 }
 
-bool GetInfo_Sound(QTreeWidget* tree) {
-	tree->setSortingEnabled(false);
-
-	if (!GetDmesgInfo(tree, "audio", NULL)) {
-		QStringList list;
-		list << i18n("No audio devices found.");
-		new QTreeWidgetItem(tree, list);
-	}
-
-	// append information for each audio devices found
-
-	QTreeWidgetItemIterator it(tree, QTreeWidgetItemIterator::All);
-	while ( *it != NULL) {
-		QString s, s2;
-		int pos;
-		char *dev;
-
-		s = (*it)->text(0);
-		// The autoconf message is in form 'audio0 at auvia0: ...'
-		if (s.indexOf("audio") == 0 && (pos = s.indexOf(" at ")) > 0) {
-			s2 = s.mid(pos+4); // skip " at "
-			s2.remove(QRegExp("[:\n\t ].*"));
-			dev = strdup(s2.toAscii().data());
-
-			GetDmesgInfo(tree, dev, NULL);
-
-			free(dev);
-		}
-
-		++it;
-	}
-
-	return true;
-}
-
 bool GetInfo_SCSI(QTreeWidget* tree) {
 	if (!GetDmesgInfo(tree, "scsibus", NULL)) {
 		QStringList list;

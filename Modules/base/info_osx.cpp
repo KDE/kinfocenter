@@ -44,10 +44,6 @@
 #include <mach/mach.h>
 #include <mach-o/arch.h>
 
-#ifdef HAVE_COREAUDIO
-#include <CoreAudio/CoreAudio.h>
-#endif
-
 #include <machine/limits.h>
 
 bool GetInfo_IRQ(QTreeWidget*) {
@@ -64,53 +60,6 @@ bool GetInfo_PCI(QTreeWidget*) {
 
 bool GetInfo_IO_Ports(QTreeWidget*) {
 	return false;
-}
-
-bool GetInfo_Sound(QTreeWidget *tree) {
-#ifdef HAVE_COREAUDIO
-#define qMaxStringSize 1024
-	OSStatus status;
-	AudioDeviceID gOutputDeviceID;
-	unsigned long propertySize;
-	char deviceName[qMaxStringSize];
-	char manufacturer[qMaxStringSize];
-	propertySize = sizeof(gOutputDeviceID);
-	status = AudioHardwareGetProperty(kAudioHardwarePropertyDefaultOutputDevice, &propertySize, &gOutputDeviceID);
-	if (status) {
-		kDebug() << "get default output device failed, status = " << (int)status;
-		return false;
-	}
-
-	if (gOutputDeviceID != kAudioDeviceUnknown) {
-
-		propertySize = qMaxStringSize;
-
-		/* Device Name */
-		status = AudioDeviceGetProperty(gOutputDeviceID, 1, 0, kAudioDevicePropertyDeviceName, &propertySize, deviceName);
-		if (status) {
-			kDebug() << "get device name failed, status = " << (int)status;
-			return false;
-		}
-		QStringList deviceList;
-		deviceList << i18n("Device Name") << deviceName;
-		new QTreeWidgetItem(tree, deviceList);
-
-		/* Manufacturer */
-		status = AudioDeviceGetProperty(gOutputDeviceID, 1, 0, kAudioDevicePropertyDeviceManufacturer, &propertySize, manufacturer);
-		if (status) {
-			kDebug() << "get manufacturer failed, status = " << (int)status;
-			return false;
-		}
-		QStringList manufacturerList;
-		manufacturerList << i18n("Manufacturer") << manufacturer;
-		new QTreeWidgetItem(tree, manufacturerList);
-		return true;
-	} else {
-		return false;
-	}
-#else
-	return false;
-#endif
 }
 
 bool GetInfo_SCSI(QTreeWidget*) {

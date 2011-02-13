@@ -26,10 +26,6 @@ bool GetInfo_IO_Ports(QListView *) {
 	return false;
 }
 
-bool GetInfo_Sound(QListView *) {
-	return false;
-}
-
 bool GetInfo_SCSI(QListView *) {
 	return false;
 }
