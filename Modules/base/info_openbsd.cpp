@@ -36,45 +36,6 @@ typedef struct {
 	const char *title;
 } hw_info_mib_list_t;
 
-bool GetInfo_CPU(QTreeWidget* tree) {
-	static const hw_info_mib_list_t hw_info_mib_list[]= { { 1, HW_MODEL, "Model" }, { 1, HW_MACHINE, "Machine" }, { 0, HW_NCPU, "Number of CPUs" }, { 0, HW_PAGESIZE, "Pagesize" }, { 0, 0, 0 } };
-	hw_info_mib_list_t *hw_info_mib;
-
-	int mib[2], num;
-	char *buf;
-	size_t len;
-	QString value;
-
-	QStringList headers;
-	headers << i18n("Information") << i18n("Value");
-	tree->setHeaderLabels(headers);
-
-	for (hw_info_mib = hw_info_mib_list; hw_info_mib->title; ++hw_info_mib) {
-		mib[0] = CTL_HW;
-		mib[1] = hw_info_mib->name;
-		if (hw_info_mib->string) {
-			sysctl(mib, 2, NULL, &len, NULL, 0);
-			if ( (buf = (char*)malloc(len))) {
-				sysctl(mib, 2, buf, &len, NULL, 0);
-				value = QString::fromLocal8Bit(buf);
-				free(buf);
-			} else {
-				value = QString("Unknown");
-			}
-		} else {
-			len = sizeof(num);
-			sysctl(mib, 2, &num, &len, NULL, 0);
-			value.sprintf("%d", num);
-		}
-		
-		QStringList list;
-		list << hw_info_mib->title << value;
-		new QTreeWidgetItem(tree, list);
-	}
-
-	return true;
-}
-
 // this is used to find out which devices are currently
 // on system
 static bool GetDmesgInfo(QTreeWidget* tree, const char *filter, void func(QTreeWidget *, QString s, void **, bool)) {

@@ -26,7 +26,7 @@
 #include <KPluginLoader>
  
 /* we have to include the info.cpp-file, to get the DEFINES about possible properties.
-   example: we need the "define INFO_CPU_AVAILABLE" */
+   example: we need the "define INFO_DMA_AVAILABLE" */
 #include "info.h"
 
 #include "os_current.h"
@@ -53,9 +53,6 @@ class K##type##InfoWidget : public KInfoListWidget \
         } \
 }; \
 
-#ifdef INFO_CPU_AVAILABLE
-CREATE_FACTORY(CPU, i18n("Processor(s)"))
-#endif
 #ifdef INFO_IRQ_AVAILABLE
 CREATE_FACTORY(IRQ, i18n("Interrupt"))
 #endif
@@ -83,9 +80,6 @@ KInfoModulesFactory::KInfoModulesFactory(const char *componentName)
 {
     s_instance = this;
 
-#ifdef INFO_CPU_AVAILABLE
-    registerPlugin<KCPUInfoWidget>("cpu");
-#endif
 #ifdef INFO_IRQ_AVAILABLE
     registerPlugin<KIRQInfoWidget>("irq");
 #endif

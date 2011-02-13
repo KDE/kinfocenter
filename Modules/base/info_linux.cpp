@@ -51,8 +51,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <kglobalsettings.h>
 #include <kdebug.h>
 
-#define INFO_CPU "/proc/cpuinfo"
-
 #define INFO_IRQ "/proc/interrupts"
 #define INFO_DMA "/proc/dma"
 
@@ -110,14 +108,6 @@ bool GetInfo_ReadfromFile(QTreeWidget* tree, const char *FileName, const QChar& 
 	file.close();
 
 	return added;
-}
-
-bool GetInfo_CPU(QTreeWidget* tree) {
-	QStringList headers;
-	headers << i18n("Information") << i18n("Value");
-	tree->setHeaderLabels(headers);
-
-	return GetInfo_ReadfromFile(tree, INFO_CPU, ':');
 }
 
 bool GetInfo_IRQ(QTreeWidget* tree) {

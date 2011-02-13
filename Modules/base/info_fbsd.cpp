@@ -55,46 +55,6 @@ extern "C" {
 }
 #endif
 
-bool GetInfo_CPU(QTreeWidget* tree) {
-	// Modified 13 July 2000 for SMP by Brad Hughes - bhughes@trolltech.com
-
-	int ncpu;
-	size_t len;
-
-	len = sizeof(ncpu);
-	sysctlbyname("hw.ncpu", &ncpu, &len, NULL, 0);
-
-	QString cpustring;
-	for (int i = ncpu; i > 0; i--) {
-		/* Stuff for sysctl */
-		char *buf;
-		int i_buf;
-
-		// get the processor model
-		sysctlbyname("hw.model", NULL, &len, NULL, 0);
-		buf = new char[len];
-		sysctlbyname("hw.model", buf, &len, NULL, 0);
-
-		// get the TSC speed if we can
-		len = sizeof(i_buf);
-		if (sysctlbyname("machdep.tsc_freq", &i_buf, &len, NULL, 0) != -1) {
-			cpustring = i18n("CPU %1: %2, %3 MHz", i, buf, i_buf/1000000);
-		} else {
-			cpustring = i18n("CPU %1: %2, unknown speed", i, buf);
-		}
-
-		/* Put everything in the listbox */
-		QStringList list;
-		list << cpustring;
-		new QTreeWidgetItem(tree, list);
-
-		/* Clean up after ourselves, this time I mean it ;-) */
-		delete[] buf;
-	}
-
-	return true;
-}
-
 bool GetInfo_IRQ(QTreeWidget* tree) {
 #ifdef HAVE_DEVINFO_H
 	/* systat lists the interrupts assigned to devices as well as how many were

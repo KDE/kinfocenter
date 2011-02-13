@@ -10,16 +10,6 @@
 
 #include <sys/systeminfo.h>
 
-bool GetInfo_CPU(QListView *lBox) {
-	QString str;
-	char buf[256];
-
-	sysinfo(SI_ARCHITECTURE, buf, sizeof(buf));
-	str = QString::fromLocal8Bit(buf);
-	new QListViewItem(lBox, str);
-	return true;
-}
-
 bool GetInfo_IRQ(QListView *) {
 	return false;
 }

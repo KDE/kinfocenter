@@ -57,14 +57,6 @@ bool GetInfo_ReadfromFile(QListView *lBox, char *Name, char splitchar) {
 	return true;
 }
 
-bool GetInfo_CPU(QListView *lBox) {
-	char buf[256];
-
-	sysinfo(SI_ARCHITECTURE, buf, sizeof(buf));
-	new QListViewItem(lBox, QString::fromLocal8Bit(buf));
-	return true;
-}
-
 bool GetInfo_IRQ(QListView *) {
 	return false;
 }

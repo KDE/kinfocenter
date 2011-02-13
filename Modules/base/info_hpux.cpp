@@ -32,7 +32,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <QFontMetrics>
 #include <QTextStream>
 
-#	define INFO_CPU_MODEL		"/bin/model" 	// as pipe !!
 #	define INFO_PCI			""	// Please, who know it ????
 #	define INFO_PCI_EISA		"/etc/eisa/system.sci" // File !
 #	define INFO_IOPORTS_1		"/etc/dmesg"		// as pipe !
@@ -146,111 +145,6 @@ static bool Find_in_LOOKUPTABLE(QListView *lBox, char *machine) {
  was filled into the lBox-Widget.
  returning false indicates, that information was not available.
  */
-
-bool GetInfo_CPU(QListView *lBox) {
-	FILE *pipe;
-	QFile *model;
-
-	struct pst_dynamic psd;
-	struct pst_static pst;
-	struct pst_processor pro;
-	struct utsname info;
-	QString str, str2;
-	QListViewItem* olditem = 0;
-	int maxwidth, i;
-
-	if ((pstat_getstatic(&pst, sizeof(pst), (size_t)1, 0) == -1) || (pstat_getdynamic(&psd, sizeof(psd), (size_t)1, 0)== -1)) {
-		return false;
-	}
-
-	maxwidth = 0;
-	lBox->addColumn(i18n("Information") );
-	lBox->addColumn(i18n("Value") );
-
-	uname(&info);
-
-	olditem = new QListViewItem(lBox, olditem, i18n("Machine"), info.machine);
-
-	model = new QFile(INFO_CPU_MODEL);
-	if (model->exists()) {
-		if ((pipe = popen(INFO_CPU_MODEL, "r"))) {
-			QTextStream *t = new QTextStream(pipe, QIODevice::ReadOnly);
-			str = t->readLine();
-			olditem = new QListViewItem(lBox, olditem, i18n("Model"), str);
-			delete t;
-                        pclose( pipe );
-		}
-	}
-	delete model;
-
-	olditem = new QListViewItem(lBox, olditem, i18n("Machine Identification Number"),
-			strlen(info.__idnumber) ? QString(info.__idnumber) : i18n("(none)") );
-
-	if (psd.psd_proc_cnt<=0)
-		psd.psd_proc_cnt=1; // Minimum one CPU !
-
-	olditem = new QListViewItem(lBox, olditem, i18n("Number of Active Processors"),
-			Value(psd.psd_proc_cnt));
-
-	pstat_getprocessor( &pro, sizeof(pro), 1, 0);
-	olditem = new QListViewItem(lBox, olditem, i18n("CPU Clock"),
-			Value(pro.psp_iticksperclktick/10000) + ' ' + i18n("MHz"));
-
-	switch (sysconf(_SC_CPU_VERSION)) {
-	case CPU_HP_MC68020:
-		str2 = "Motorola 68020";
-		break;
-	case CPU_HP_MC68030:
-		str2 = "Motorola 68030";
-		break;
-	case CPU_HP_MC68040:
-		str2 = "Motorola 68040";
-		break;
-	case CPU_PA_RISC1_0:
-		str2 = "PA-RISC 1.0";
-		break;
-	case CPU_PA_RISC1_1:
-		str2 = "PA-RISC 1.1";
-		break;
-	case CPU_PA_RISC1_2:
-		str2 = "PA-RISC 1.2";
-		break;
-	case CPU_PA_RISC2_0:
-#if defined(_SC_KERNEL_BITS)
-		switch (sysconf(_SC_KERNEL_BITS)) {
-			case 64: str2 = "PA-RISC 2.0w (64 bit)"; break;
-			case 32: str2 = "PA-RISC 2.0n (32 bit)"; break;
-			default: str2 = "PA-RISC 2.0"; break;
-		}; break;
-#else  /* !defined(_SC_KERNEL_BITS) */
-		str2 = "PA-RISC 2.0";
-		break;
-#endif
-	default:
-		str2 = i18n("(unknown)");
-		break;
-	}
-
-	olditem = new QListViewItem(lBox, olditem, i18n("CPU Architecture"), str2);
-
-	Find_in_LOOKUPTABLE(lBox, info.machine);// try to get extended Information.
-
-	for (i=PS_PA83_FPU; i<=PS_PA89_FPU; ++i) {
-		if ((1<<(i-1)) & pro.psp_coprocessor.psc_present) {
-			str = QString( (i==PS_PA83_FPU) ? "PS_PA83_FPU" : "PS_PA89_FPU") + QString(" (") + QString(((1<<(i-1))&pro.psp_coprocessor.psc_enabled) ? i18n("enabled") : i18n("disabled") ) + QString(")");
-
-			olditem = new QListViewItem(lBox, olditem, i18n("Numerical Coprocessor (FPU)"), str);
-		}
-	}// for(coprocessor..)
-
-	str = Value(((pst.physical_memory*pst.page_size)/1024/1024)) + i18nc("Mebibyte", "MiB");
-	olditem = new QListViewItem(lBox, olditem, i18n("Total Physical Memory"), str);
-
-	str = Value(pst.page_size) + i18n(" Bytes");
-	olditem = new QListViewItem(lBox, olditem, i18n("Size of One Page"), str);
-
-	return true;
-}
 
 bool GetInfo_ReadfromFile(QListView *lBox, const char *Name) {
 	char buf[2048];

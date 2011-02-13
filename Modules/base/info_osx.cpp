@@ -50,32 +50,6 @@
 
 #include <machine/limits.h>
 
-bool GetInfo_CPU(QTreeWidget* tree) {
-
-	QString cpustring;
-
-	kern_return_t ret;
-	struct host_basic_info basic_info;
-	unsigned int count=HOST_BASIC_INFO_COUNT;
-
-	ret=host_info(mach_host_self(), HOST_BASIC_INFO, (host_info_t)&basic_info, &count);
-	if (ret != KERN_SUCCESS) {
-		kDebug() << "unable to get host information from mach";
-	} else {
-		kDebug() << "got Host Info: (" << basic_info.avail_cpus << ") CPUs available";
-		const NXArchInfo *archinfo;
-		archinfo=NXGetArchInfoFromCpuType(basic_info.cpu_type, basic_info.cpu_subtype);
-
-		for (int i = 1; i <= basic_info.avail_cpus; i++) {
-			QStringList list;
-			list << QString(i) << archinfo->description;
-			new QTreeWidgetItem(tree, list);
-		}
-		return true;
-	}
-	return false;
-}
-
 bool GetInfo_IRQ(QTreeWidget*) {
 	return false;
 }
