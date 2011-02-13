@@ -159,6 +159,9 @@ bool GetInfo_PCI(QTreeWidget* tree) {
 	QString s, cmd;
 	QTreeWidgetItem *olditem= NULL;
 
+	const QStringList headers(i18nc("@title:column Column name for PCI information", "Information"));
+	tree->setHeaderLabels(headers);
+
 	if (!QFileInfo(QLatin1String("/usr/sbin/pciconf")).exists()) {
 		QStringList list;
 		list << i18n("Could not find any programs with which to query your system's PCI information");
