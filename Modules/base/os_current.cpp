@@ -37,8 +37,6 @@ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 	#include "info_openbsd.cpp"
 #elif defined(__svr4__) && defined(sun)
 	#include "info_solaris.cpp"
-#elif defined(__svr4__)
-	#include "info_svr4.cpp"
 #elif defined(_AIX)
 	#include "info_aix.cpp"
 #elif defined(__APPLE__)

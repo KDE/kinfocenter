@@ -109,16 +109,6 @@ bool GetInfo_XServer_and_Video(QTreeWidget* tree);
 
 	#define DEFAULT_ERRORSTRING  i18n("This system may not be completely supported yet.")
 
-#elif defined(__svr4__)
-
-	#define INFO_IRQ_AVAILABLE
-	#define INFO_DMA_AVAILABLE
-	#define INFO_IOPORTS_AVAILABLE
-	#define INFO_SCSI_AVAILABLE
-	#define INFO_XSERVER_AVAILABLE
-
-	#define DEFAULT_ERRORSTRING  i18n("This system may not be completely supported yet.")
-
 #elif defined(_AIX)
 
 	#define INFO_SCSI_AVAILABLE
