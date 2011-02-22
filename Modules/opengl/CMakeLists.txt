@@ -1,5 +1,10 @@
-
+if(KCM_ENABLE_OPENGL)
 include_directories( ${OPENGL_INCLUDE_DIR} ${OPENGL_GLU_INCLUDE_DIR} )
+endif(KCM_ENABLE_OPENGL)
+
+if(KCM_ENABLE_OPENGLES)
+include_directories( ${OPENGLES_INCLUDE_DIR} )
+endif(KCM_ENABLE_OPENGLES)
 
 ########### next target ###############
 
@@ -17,7 +22,15 @@ if (DL_LIBRARY)
   target_link_libraries(kcm_opengl ${DL_LIBRARY})
 endif(DL_LIBRARY)
 
+if(KCM_ENABLE_OPENGL)
 target_link_libraries(kcm_opengl ${OPENGL_gl_LIBRARY} ${OPENGL_glu_LIBRARY})
+endif(KCM_ENABLE_OPENGL)
+
+if(KCM_ENABLE_OPENGLES)
+target_link_libraries(kcm_opengl ${OPENGLES_EGL_LIBRARIES} ${OPENGLES_LIBRARIES})
+endif(KCM_ENABLE_OPENGLES)
+
+configure_file(openglconfig.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/openglconfig.h )
 
 install(TARGETS kcm_opengl  DESTINATION ${PLUGIN_INSTALL_DIR})
 

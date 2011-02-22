@@ -40,6 +40,12 @@
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
 
+#include <openglconfig.h>
+
+#ifdef KCM_ENABLE_OPENGLES
+#include <EGL/egl.h>
+#include <GLES2/gl2.h>
+#else
 // GLU includes
 #include <GL/glu.h>
 
@@ -47,6 +53,7 @@
 #include <GL/gl.h>
 #include <GL/glext.h>
 #include <GL/glx.h>
+#endif
 
 #include "opengl.moc"
 
@@ -113,6 +120,7 @@ QTreeWidgetItem *newItem(QTreeWidgetItem *parent, QString textCol1, QString text
 static bool IsDirect;
 
 static struct glinfo {
+#ifndef KCM_ENABLE_OPENGLES
       const char *serverVendor;
       const char *serverVersion;
       const char *serverExtensions;
@@ -120,12 +128,19 @@ static struct glinfo {
       const char *clientVersion;
       const char *clientExtensions;
       const char *glxExtensions;
+#else
+      const char *eglVendor;
+      const char *eglVersion;
+      const char *eglExtensions;
+#endif
       const char *glVendor;
       const char *glRenderer;
       const char *glVersion;
       const char *glExtensions;
+#ifndef KCM_ENABLE_OPENGLES
       const char *gluVersion;
       const char *gluExtensions;
+#endif
       char *displayName;
 } gli;
 
@@ -223,6 +238,7 @@ static bool get_dri_device() { return false; }
 
 #endif
 
+#ifndef KCM_ENABLE_OPENGLES
 static void
 mesa_hack(Display *dpy, int scrnum)
 {
@@ -247,6 +263,7 @@ mesa_hack(Display *dpy, int scrnum)
       XFree(visinfo);
 }
 
+#endif
 
 static void
 print_extension_list(const char *ext, QTreeWidgetItem *l1)
@@ -280,6 +297,8 @@ print_extension_list(const char *ext, QTreeWidgetItem *l1)
       j++;
    }
 }
+
+#ifndef KCM_ENABLE_OPENGLES
 
 #if defined(GLX_ARB_get_proc_address) && defined(__GLXextFuncPtr)
 extern "C" {
@@ -522,6 +541,7 @@ print_limits(QTreeWidgetItem *l1, const char * glExtensions, bool getProcAddress
 
      }
 }
+#endif
 
 
 static QTreeWidgetItem *print_screen_info(QTreeWidgetItem *l1, QTreeWidgetItem *after)
@@ -557,22 +577,25 @@ static QTreeWidgetItem *print_screen_info(QTreeWidgetItem *l1, QTreeWidgetItem *
 
   	l3 = newItem(l2, i18n("Vendor"), gli.glVendor);
     	l3 = newItem(l2, l3, i18n("Renderer"), gli.glRenderer);
-    	l3 = newItem(l2, l3, i18n("OpenGL version"), gli.glVersion);
+        l3 = newItem(l2, l3, i18n("OpenGL/ES version"), gli.glVersion);
 
     	if (IsDirect) {
     		if (dri_info.module.isEmpty()) dri_info.module = i18n("unknown");
     		l3 = newItem(l2, l3, i18n("Kernel module"), dri_info.module);
     	}
 
-    	l3 = newItem(l2, l3, i18n("OpenGL extensions"));
+        l3 = newItem(l2, l3, i18n("OpenGL/ES extensions"));
     	print_extension_list(gli.glExtensions, l3);
 
+#ifndef KCM_ENABLE_OPENGLES
     	l3 = newItem(l2, l3, i18n("Implementation specific"));
     	print_limits(l3, gli.glExtensions, strstr(gli.clientExtensions, "GLX_ARB_get_proc_address") != NULL);
+#endif
 
         return l1;
 }
 
+#ifndef KCM_ENABLE_OPENGLES
 void print_glx_glu(QTreeWidgetItem *l1, QTreeWidgetItem *l2)
 {
    QTreeWidgetItem *l3;
@@ -596,10 +619,32 @@ void print_glx_glu(QTreeWidgetItem *l1, QTreeWidgetItem *l2)
     print_extension_list(gli.gluExtensions, l3);
 
 }
+#else
+void print_egl(QTreeWidgetItem *l1, QTreeWidgetItem *l2)
+{
+   QTreeWidgetItem *l3;
+
+   l2 = newItem(l1, l2, i18n("EGL"));
+   l3 = newItem(l2, i18n("EGL Vendor"), gli.eglVendor);
+   l3 = newItem(l2, l3, i18n("EGL Version"), gli.eglVersion);
+   l3 = newItem(l2, l3, i18n("EGL Extensions"));
+   print_extension_list(gli.eglExtensions, l3);
+}
+#endif
 
 static QTreeWidgetItem *get_gl_info(Display *dpy, int scrnum, Bool allowDirect, QTreeWidgetItem *l1, QTreeWidgetItem *after)
 {
    Window win;
+   XSetWindowAttributes attr;
+   unsigned long mask;
+   Window root;
+   XVisualInfo *visinfo;
+   int width = 100, height = 100;
+   QTreeWidgetItem *result = after;
+
+   root = RootWindow(dpy, scrnum);
+
+#ifndef KCM_ENABLE_OPENGLES
    const int attribSingle[] = {
       GLX_RGBA,
       GLX_RED_SIZE, 1,
@@ -613,16 +658,7 @@ static QTreeWidgetItem *get_gl_info(Display *dpy, int scrnum, Bool allowDirect, 
       GLX_BLUE_SIZE, 1,
       GLX_DOUBLEBUFFER,
       None };
-
-   XSetWindowAttributes attr;
-   unsigned long mask;
-   Window root;
    GLXContext ctx;
-   XVisualInfo *visinfo;
-   int width = 100, height = 100;
-   QTreeWidgetItem *result = after;
-
-   root = RootWindow(dpy, scrnum);
 
    visinfo = glXChooseVisual(dpy, scrnum, const_cast<int*>(attribSingle));
    if (!visinfo) {
@@ -632,6 +668,58 @@ static QTreeWidgetItem *get_gl_info(Display *dpy, int scrnum, Bool allowDirect, 
          return result;
       }
    }
+#else
+   Q_UNUSED(allowDirect);
+
+   static const EGLint attribs[] = {
+      EGL_RED_SIZE, 1,
+      EGL_GREEN_SIZE, 1,
+      EGL_BLUE_SIZE, 1,
+      EGL_DEPTH_SIZE, 1,
+      EGL_NONE
+   };
+   static const EGLint ctx_attribs[] = {
+      EGL_CONTEXT_CLIENT_VERSION, 2,
+      EGL_NONE
+   };
+
+   XVisualInfo visTemplate;
+   int num_visuals;
+   EGLDisplay egl_dpy;
+   EGLSurface surf;
+   EGLContext ctx;
+   EGLConfig config;
+   EGLint num_configs;
+   EGLint vid, major, minor;
+
+   egl_dpy = eglGetDisplay(dpy);
+   if (!egl_dpy) {
+      kDebug() << "Error: eglGetDisplay() failed\n";
+      return result;
+   }
+
+   if (!eglInitialize(egl_dpy, &major, &minor)) {
+      kDebug() << "Error: eglInitialize() failed\n";
+      return result;
+   }
+
+   if (!eglChooseConfig(egl_dpy, attribs, &config, 1, &num_configs)) {
+      kDebug() << "Error: couldn't get an EGL visual config\n";
+      return result;
+   }
+
+   if (!eglGetConfigAttrib(egl_dpy, config, EGL_NATIVE_VISUAL_ID, &vid)) {
+      kDebug() << "Error: eglGetConfigAttrib() failed\n";
+      return result;
+   }
+
+   visTemplate.visualid = vid;
+   visinfo = XGetVisualInfo(dpy, VisualIDMask, &visTemplate, &num_visuals);
+   if (!visinfo) {
+      kDebug() << "Error: couldn't get X visual\n";
+      return result;
+   }
+#endif
 
    attr.background_pixel = 0;
    attr.border_pixel = 0;
@@ -642,6 +730,7 @@ static QTreeWidgetItem *get_gl_info(Display *dpy, int scrnum, Bool allowDirect, 
    			0, visinfo->depth, InputOutput,
 		       visinfo->visual, mask, &attr);
 
+#ifndef KCM_ENABLE_OPENGLES
    ctx = glXCreateContext( dpy, visinfo, NULL, allowDirect );
    if (!ctx) {
 		kDebug() << "Error: glXCreateContext failed\n";
@@ -674,6 +763,43 @@ static QTreeWidgetItem *get_gl_info(Display *dpy, int scrnum, Bool allowDirect, 
    }
 
    glXDestroyContext(dpy, ctx);
+#else
+   eglBindAPI(EGL_OPENGL_ES_API);
+   ctx = eglCreateContext(egl_dpy, config, EGL_NO_CONTEXT, ctx_attribs);
+   if (!ctx) {
+      kDebug() << "Error: eglCreateContext failed\n";
+      XDestroyWindow(dpy, win);
+      return result;
+   }
+
+   surf = eglCreateWindowSurface(egl_dpy, config, win, NULL);
+   if (!surf) {
+      kDebug() << "Error: eglCreateWindowSurface failed\n";
+      eglDestroyContext(egl_dpy, ctx);
+      XDestroyWindow(dpy, win);
+      return result;
+   }
+
+   if (eglMakeCurrent(egl_dpy, surf, surf, ctx)) {
+      gli.eglVendor = eglQueryString(egl_dpy, EGL_VENDOR);
+      gli.eglVersion = eglQueryString(egl_dpy, EGL_VERSION);
+      gli.eglExtensions = eglQueryString(egl_dpy, EGL_EXTENSIONS);
+      gli.glVendor = (const char *) glGetString(GL_VENDOR);
+      gli.glRenderer = (const char *) glGetString(GL_RENDERER);
+      gli.glVersion = (const char *) glGetString(GL_VERSION);
+      gli.glExtensions = (const char *) glGetString(GL_EXTENSIONS);
+      gli.displayName = NULL;
+
+      IsDirect = TRUE;
+      result = print_screen_info(l1, after);
+   }
+   else {
+      kDebug() <<"Error: eglMakeCurrent() failed\n";
+   }
+
+   eglDestroyContext(egl_dpy, ctx);
+   eglDestroySurface(egl_dpy, surf);
+#endif
    XDestroyWindow(dpy, win);
    return result;
 
@@ -713,19 +839,31 @@ bool GetInfo_OpenGL(QTreeWidget *treeWidget)
     for (; scrnum < numScreens; scrnum++)
 #endif
     {
+#ifndef KCM_ENABLE_OPENGLES
 	mesa_hack(dpy, scrnum);
+#endif
 
 	l2 = get_gl_info(dpy, scrnum, true, l1, l2);
  	if (l2) l2->setExpanded(true);
 
+#ifndef KCM_ENABLE_OPENGLES
 	if (IsDirect) l2 = get_gl_info(dpy, scrnum, false, l1, l2);
+#endif
 
 //   TODO      print_visual_info(dpy, scrnum, mode);
     }
+
+#ifndef KCM_ENABLE_OPENGLES
     if (l2)
 	print_glx_glu(l1, l2);
     else
 	KMessageBox::error(0, i18n("Could not initialize OpenGL"));
+#else
+    if (l2)
+	print_egl(l1, l2);
+    else
+	KMessageBox::error(0, i18n("Could not initialize OpenGL ES2.0"));
+#endif
 
     treeWidget->resizeColumnToContents(0);
     treeWidget->resizeColumnToContents(1);

@@ -14,11 +14,22 @@ if(NOT WIN32)
   macro_optional_find_package(OpenGL)
   macro_log_feature(OPENGL_FOUND "OpenGL" "API for developing portable, interactive 2D and 3D graphics applications" "http://mesa3d.sourceforge.net" FALSE "" "View OpenGL details in kinfocenter.")
 
-  if(OPENGL_FOUND AND OPENGL_GLU_FOUND)
+  macro_optional_find_package(OpenGLES)
+  macro_log_feature(OPENGLES_FOUND "OpenGL ES" "Support for OpenGL ES2.0 graphics library" "http://www.khronos.org/opengles" FALSE "" "View OpenGL ES2.0 details in kinfocenter.")
+
+  if(OPENGL_FOUND AND OPENGL_GLU_FOUND AND NOT KWIN_BUILD_WITH_OPENGLES)
+      set( KCM_ENABLE_OPENGL 1 )
+  endif(OPENGL_FOUND AND OPENGL_GLU_FOUND AND NOT KWIN_BUILD_WITH_OPENGLES)
+
+  if(OPENGLES_FOUND AND OPENGLES_EGL_FOUND AND KWIN_BUILD_WITH_OPENGLES)
+      set( KCM_ENABLE_OPENGLES 1 )
+  endif(OPENGLES_FOUND AND OPENGLES_EGL_FOUND AND KWIN_BUILD_WITH_OPENGLES)
+
+  if(KCM_ENABLE_OPENGL OR KCM_ENABLE_OPENGLES)
       add_subdirectory( opengl )
-  else(OPENGL_FOUND AND OPENGL_GLU_FOUND)
-      MESSAGE(STATUS "OpenGL information module has been disabled.")
-  endif(OPENGL_FOUND AND OPENGL_GLU_FOUND)
+  else(KCM_ENABLE_OPENGL OR KCM_ENABLE_OPENGLES)
+      MESSAGE(STATUS "OpenGL/ES2.0 information module has been disabled.")
+  endif(KCM_ENABLE_OPENGL OR KCM_ENABLE_OPENGLES)
 
 
 macro_optional_find_package(PCIUTILS)
