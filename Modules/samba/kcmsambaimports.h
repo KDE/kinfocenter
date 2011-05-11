@@ -25,8 +25,9 @@
 #define kcmsambaimports_h_included
 
 #include <QTimer>
-#include <Qt3Support/Q3CheckListItem>
-#include <kconfig.h>
+#include <QTreeWidget>
+
+#include <KConfig>
 
 class ImportsView : public QWidget {
 Q_OBJECT
@@ -40,7 +41,7 @@ public:
 	}
 private:
 	KConfig *configFile;
-	Q3ListView list;
+	QTreeWidget list;
 	QTimer timer;
 private Q_SLOTS:
 	void updateList();
