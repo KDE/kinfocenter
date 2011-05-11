@@ -61,7 +61,7 @@ SambaContainer::SambaContainer(QWidget *parent, const QVariantList&) :
 	tabs.addTab(&imports, i18n("&Imports"));
 	tabs.addTab(&logView, i18n("&Log"));
 	tabs.addTab(&statisticsView, i18n("&Statistics"));
-	connect(&logView, SIGNAL(contentsChanged(Q3ListView* , int, int)), &statisticsView, SLOT(setListInfo(Q3ListView *, int, int)));
+	connect(&logView, SIGNAL(contentsChanged(QTreeWidget* , int, int)), &statisticsView, SLOT(setListInfo(QTreeWidget *, int, int)));
 	setButtons(Help);
 
 	setQuickHelp(i18n("<p>The Samba and NFS Status Monitor is a front end to the programs"

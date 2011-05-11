@@ -26,7 +26,7 @@
 #include <Qt3Support/Q3PtrList>
 #include <QWidget>
 
-class Q3ListView;
+class QTreeWidget;
 class QLabel;
 class QComboBox;
 class QCheckBox;
@@ -88,11 +88,11 @@ public:
 	void loadSettings() {
 	}
 public Q_SLOTS:
-	void setListInfo(Q3ListView *list, int nrOfFiles, int nrOfConnections);
+	void setListInfo(QTreeWidget *list, int nrOfFiles, int nrOfConnections);
 private:
 	KConfig *configFile;
-	Q3ListView *dataList;
-	Q3ListView* viewStatistics;
+	QTreeWidget* dataList;
+	QTreeWidget* viewStatistics;
 	QLabel* connectionsL, *filesL;
 	QComboBox* eventCb;
 	QLabel* eventL;
