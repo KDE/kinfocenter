@@ -39,22 +39,18 @@ NetMon::NetMon(QWidget * parent, KConfig *config) :
 	topLayout->setMargin(KDialog::marginHint());
 	topLayout->setSpacing(KDialog::spacingHint());
 
-	list=new Q3ListView(this,"Hello");
+	list = new QTreeWidget(this);
 	topLayout->addWidget(list);
 	version=new QLabel(this);
 	topLayout->addWidget(version);
 
 	list->setAllColumnsShowFocus(true);
 	list->setMinimumSize(425, 200);
-	list->setShowSortIndicator(true);
 
-	list->addColumn(i18n("Type"));
-	list->addColumn(i18n("Service"));
-	list->addColumn(i18n("Accessed From"));
-	list->addColumn(i18n("UID"));
-	list->addColumn(i18n("GID"));
-	list->addColumn(i18n("PID"));
-	list->addColumn(i18n("Open Files"));
+	QStringList headers;
+        headers << i18n("Type") << i18n("Service") << i18n("Accessed From")
+		<< i18n("UID") << i18n("GID") << i18n("PID") << i18n("Open Files");
+	list->setHeaderLabels(headers);
 
 	timer = new QTimer(this);
 	timer->start(15000);
@@ -64,8 +60,12 @@ NetMon::NetMon(QWidget * parent, KConfig *config) :
 
 void NetMon::processNFSLine(char *bufline, int) {
 	QByteArray line(bufline);
-	if (line.contains(":/"))
-		new Q3ListViewItem(list,"NFS",After(":",line),Before(":/",line));
+	if (line.contains(":/")) {
+		QTreeWidgetItem *item = new QTreeWidgetItem(list);
+		item->setText(0, "NFS");
+		item->setText(0, After(":",line));
+		item->setText(0, Before(":/",line));
+	}
 }
 
 void NetMon::processSambaLine(char *bufline, int) {
@@ -88,7 +88,13 @@ void NetMon::processSambaLine(char *bufline, int) {
 
 		line=line.mid(iMachine, line.length());
 		strMachine=line;
-		new Q3ListViewItem(list,"SMB",strShare,strMachine, strUser,strGroup,strPid/*,strSince*/);
+		QTreeWidgetItem * item = new QTreeWidgetItem(list);
+		item->setText(0, "SMB");
+		item->setText(1, strShare);
+		item->setText(2, strMachine);
+		item->setText(3, strUser);
+		item->setText(4, strGroup);
+		item->setText(5, strPid/*,strSince*/);
 	} else if (readingpart==connexions)
 		readingpart=locked_files;
 	else if ((readingpart==locked_files) && (line.indexOf("No ")==0))
@@ -161,8 +167,9 @@ void NetMon::update() {
 	else
 	{
 		// ok -> count the number of locked files for each pid
-		for (Q3ListViewItem *row=list->firstChild();row!=0;row=row->itemBelow())
+		for (int i = 0; i < list->topLevelItemCount(); ++i)
 		{
+			QTreeWidgetItem *row = list->topLevelItem(i);
 			//         cerr<<"NetMon::update: this should be the pid: "<<row->text(5)<<endl;
 			int pid=row->text(5).toInt();
 			row->setText(6,QString("%1").arg((lo)[pid]));
