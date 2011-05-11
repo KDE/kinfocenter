@@ -11,7 +11,7 @@ set(kcm_samba_PART_SRCS
 kde4_add_plugin(kcm_samba ${kcm_samba_PART_SRCS})
 
 
-target_link_libraries(kcm_samba  ${KDE4_KDE3SUPPORT_LIBS} )
+target_link_libraries(kcm_samba ${KDE4_KDEUI_LIBS} ${KDE4_KIO_LIBS})
 
 install(TARGETS kcm_samba  DESTINATION ${PLUGIN_INSTALL_DIR} )
 
