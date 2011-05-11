@@ -7,9 +7,7 @@ add_subdirectory( info )
 add_subdirectory( nics )
 
 if(NOT WIN32)
-  if(QT_QT3SUPPORT_FOUND)
   add_subdirectory( samba )
-  endif(QT_QT3SUPPORT_FOUND)
 
   macro_optional_find_package(OpenGL)
   macro_log_feature(OPENGL_FOUND "OpenGL" "API for developing portable, interactive 2D and 3D graphics applications" "http://mesa3d.sourceforge.net" FALSE "" "View OpenGL details in kinfocenter.")
