@@ -22,12 +22,11 @@
 #include <QTimer>
 #include <QTreeWidget>
 #include <QLabel>
-#include <k3process.h>
-#include <kconfig.h>
+#include <QProcess>
+
+#include <KConfig>
 
 #define SCREEN_XY_OFFSET 20
-
-class K3Process;
 
 class NetMon : public QWidget {
 Q_OBJECT
@@ -39,7 +38,7 @@ public:
 	}
 private:
 	KConfig *configFile;
-	K3Process *showmountProc;
+	QProcess *showmountProc;
 	QTreeWidget *list;
 	QLabel *version;
 	QTimer *timer;
@@ -56,7 +55,8 @@ private:
 private Q_SLOTS:
 	void killShowmount();
 	void update();
-	void slotReceivedData(K3Process *proc, char *buffer, int buflen);
+	void readFromProcess();
+	void smbstatusError();
 };
 
 #endif // main_included

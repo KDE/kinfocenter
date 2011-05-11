@@ -115,7 +115,14 @@ void NetMon::processSambaLine(char *bufline, int) {
 // called when we get some data from smbstatus
 // can be called for any size of buffer (one line, several lines,
 // half of one ...)
-void NetMon::slotReceivedData(K3Process *, char *buffer, int) {
+void NetMon::readFromProcess() {
+	QProcess *process = qobject_cast<QProcess *>(sender());
+	if (!process || !process->canReadLine())
+		return;
+
+	qint64 buflen = 8046; // 8k enough?
+	char buffer[buflen];
+	buflen = process->readLine(buffer, buflen);
 	//kDebug()<<"received stuff";
 	char s[250], *start, *end;
 	size_t len;
@@ -134,16 +141,23 @@ void NetMon::slotReceivedData(K3Process *, char *buffer, int) {
 			processSambaLine(s, len); // process each line
 		start=end+1;
 	}
+        /* FIXME: is this needed? was here with the Q3Support classes, but seems a little inane
 	if (readingpart==nfs) {
 		list->viewport()->update();
 		list->update();
 	}
+        */
 	// here we could save the remaining part of line, if ever buffer
 	// doesn't end with a '\n' ... but will this happen ?
 }
 
+void NetMon::smbstatusError()
+{
+	version->setText(i18n("Error: Unable to run smbstatus"));
+}
+
 void NetMon::update() {
-	K3Process * process = new K3Process();
+	QProcess *process = new QProcess();
 
 	memset(&lo, 0, sizeof(lo));
 	list->clear();
@@ -155,15 +169,13 @@ void NetMon::update() {
 	rownumber=0;
 	readingpart=header;
 	nrpid=0;
-	process->setEnvironment("PATH", path);
-	connect(process,
-	SIGNAL(receivedStdout(K3Process *, char *, int)),
-	SLOT(slotReceivedData(K3Process *, char *, int)));
-	*process << "smbstatus";
-	if (!process->start(K3Process::Block,K3Process::Stdout))
-	version->setText(i18n("Error: Unable to run smbstatus"));
-	else if (rownumber==0) // empty result
-	version->setText(i18n("Error: Unable to open configuration file \"smb.conf\""));
+	process->setEnvironment(QStringList() << ("PATH=" + path));
+	connect(process, SIGNAL(readyRead()), SLOT(readFromProcess()));
+	connect(process, SIGNAL(error(QProcess::ProcessError)), SLOT(smbstatusError()));
+	process->start("smbstatus");
+	process->waitForFinished();
+	if (rownumber==0) // empty result
+		version->setText(i18n("Error: Unable to open configuration file \"smb.conf\""));
 	else
 	{
 		// ok -> count the number of locked files for each pid
@@ -175,25 +187,22 @@ void NetMon::update() {
 			row->setText(6,QString("%1").arg((lo)[pid]));
 		}
 	}
+
 	delete process;
 	process=0;
 
 	readingpart=nfs;
 	delete showmountProc;
-	showmountProc=new K3Process();
-	showmountProc->setEnvironment("PATH", path);
-	*showmountProc<<"showmount"<<"-a"<<"localhost";
-	connect(showmountProc,SIGNAL(receivedStdout(K3Process *, char *, int)),SLOT(slotReceivedData(K3Process *, char *, int)));
+	showmountProc=new QProcess();
+	connect(showmountProc, SIGNAL(readyRead()), SLOT(readFromProcess()));
+	showmountProc->setEnvironment(QStringList() << ("PATH=" + path));
 	//without this timer showmount hangs up to 5 minutes
 	//if the portmapper daemon isn't running
 	QTimer::singleShot(5000,this,SLOT(killShowmount()));
 	//kDebug()<<"starting kill timer with 5 seconds";
-	connect(showmountProc,SIGNAL(processExited(K3Process*)),this,SLOT(killShowmount()));
-	if (!showmountProc->start(K3Process::NotifyOnExit,K3Process::Stdout)) // run showmount
-	{
-		delete showmountProc;
-		showmountProc=0;
-	}
+	connect(showmountProc,SIGNAL(finished(int,QProcess::ExitStatus)),this,SLOT(killShowmount()));
+	connect(showmountProc,SIGNAL(error(QProcess::ProcessError)),this,SLOT(killShowmount()));
+	showmountProc->start("showmount", QStringList() << "-a" << "localhost");
 
 	version->adjustSize();
 	list->show();
@@ -201,7 +210,7 @@ void NetMon::update() {
 
 void NetMon::killShowmount() {
 	//kDebug()<<"killShowmount()";
-	delete showmountProc;
+	showmountProc->deleteLater();
 	showmountProc=0;
 }
 
