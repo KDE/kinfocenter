@@ -171,8 +171,20 @@ void StatisticsView::calculate() {
 				}
 			}
 		}
-		for (LogItem* tmpItem=sLog.items.first(); tmpItem!=0; tmpItem=sLog.items.next()) {
-			for (SmallLogItem *tmpStr=tmpItem->accessed.first(); tmpStr!=0; tmpStr=tmpItem->accessed.next()) {
+
+		foreach (const LogItem *tmpItem, sLog.items)
+		{
+			if (!tmpItem)
+			{
+				continue;
+                        }
+
+			foreach (const SmallLogItem *tmpStr, tmpItem->accessed) {
+				if (!tmpStr)
+				{
+					continue;
+				}
+
 				calcCount++;
 				QString number("");
 				number.sprintf("%6d", calcCount);
@@ -184,8 +196,8 @@ void StatisticsView::calculate() {
 				item->setText(2, tmpItem->name);
 				item->setText(3, tmpStr->name);
 				item->setText(4, hits);
-			};
-		};
+			}
+		}
 	}
 	//no expanded info needed
 	else {
@@ -225,23 +237,41 @@ void StatisticsView::clearStatistics() {
 
 void SambaLog::printItems() {
 	kDebug() << "****** printing items: ******";
-	for (LogItem* tmpItem=items.first(); tmpItem!=0; tmpItem=items.next()) {
+	foreach (const LogItem *tmpItem, items)
+	{
+		if (!tmpItem)
+		{
+			continue;
+		}
+
 		kDebug() << "SERVICE: " << tmpItem->name;
-		for (SmallLogItem* tmpLog=tmpItem->accessed.first(); tmpLog!=0; tmpLog=tmpItem->accessed.next())
+		foreach (const SmallLogItem *tmpLog, tmpItem->accessed) {
+			if (!tmpLog)
+			{
+				continue;
+			}
 			kDebug() << "      accessed by: " << tmpLog->name << "  " << tmpLog->count;
-	};
+		}
+	}
+
 	kDebug() << "------ end of printing ------";
 }
 
 LogItem* SambaLog::itemInList(const QString &name) {
-	LogItem* tmpItem(items.first());
-	LogItem* foundItem(0);
-	while ((tmpItem!=0) && (foundItem==0)) {
+	foreach (LogItem *tmpItem, items)
+	{
+		if (!tmpItem)
+		{
+			continue;
+		}
+
 		if (tmpItem->name==name)
-			foundItem=tmpItem;
-		tmpItem=items.next();
+		{
+			return tmpItem;
+		}
 	}
-	return foundItem;
+
+	return 0;
 }
 
 void SambaLog::addItem(const QString &share, const QString &user) {
@@ -256,14 +286,12 @@ void SambaLog::addItem(const QString &share, const QString &user) {
 }
 
 SmallLogItem* LogItem::itemInList(const QString &name) {
-	SmallLogItem* tmpItem(accessed.first());
-	SmallLogItem* foundItem(0);
-	while ((tmpItem!=0) && (foundItem==0)) {
-		if (tmpItem->name==name)
-			foundItem=tmpItem;
-		tmpItem=accessed.next();
+	foreach (SmallLogItem *tmpLog, accessed) {
+		if (tmpLog && tmpLog->name==name) {
+			return tmpLog;
+                }
 	}
-	return foundItem;
+	return 0;
 }
 
 void LogItem::addItem(const QString &host) {
