@@ -25,22 +25,22 @@
 
 #include <QApplication>
 #include <QLayout>
-#include <Qt3Support/Q3CheckListItem>
 #include <QLabel>
 #include <QLineEdit>
 #include <QCheckBox>
 #include <QComboBox>
 #include <QPushButton>
 #include <QRegExp>
+#include <QTreeWidget>
 
-#include <kglobal.h>
-#include <klocale.h>
-#include <kdebug.h>
-#include <kdialog.h>
+#include <KDebug>
+#include <KDialog>
+#include <KGlobal>
+#include <KLocale>
 
 StatisticsView::StatisticsView(QWidget *parent, KConfig *config) :
 	QWidget(parent), configFile(config), dataList(0), connectionsCount(0), filesCount(0), calcCount(0) {
-	viewStatistics = new Q3ListView( this );
+	viewStatistics = new QTreeWidget( this );
 	connectionsL = new QLabel( i18n( "Connections: 0" ), this );
 	filesL = new QLabel( i18n( "File accesses: 0" ), this );
 	eventCb = new QComboBox( this );
@@ -59,14 +59,10 @@ StatisticsView::StatisticsView(QWidget *parent, KConfig *config) :
 
 	viewStatistics->setAllColumnsShowFocus(true);
 	viewStatistics->setFocusPolicy(Qt::ClickFocus);
-	viewStatistics->setShowSortIndicator(true);
 
-	viewStatistics->addColumn(i18n("Nr"), 30);
-	viewStatistics->addColumn(i18n("Event"), 130);
-	viewStatistics->addColumn(i18n("Service/File"), 200);
-	viewStatistics->addColumn(i18n("Host/User"), 90);
-	viewStatistics->addColumn(i18n("Hits"), 50);
-	//viewStatistics->addColumn(i18n("Percentage"),100);
+        QStringList headers;
+        headers << i18n("Nr") << i18n("Event") << i18n("Service/File") << i18n("Host/User") << i18n("Hits"); //i18n("Percentage"),100);
+	viewStatistics->setHeaderLabels(headers);
 
 	eventCb->setEditable(false);
 	eventCb->addItem(i18n("Connection"));
@@ -122,7 +118,7 @@ StatisticsView::StatisticsView(QWidget *parent, KConfig *config) :
 	setListInfo(0, 0, 0);
 }
 
-void StatisticsView::setListInfo(Q3ListView *list, int nrOfFiles, int nrOfConnections) {
+void StatisticsView::setListInfo(QTreeWidget *list, int nrOfFiles, int nrOfConnections) {
 	dataList=list;
 	filesCount=nrOfFiles;
 	connectionsCount=nrOfConnections;
@@ -144,8 +140,9 @@ void StatisticsView::calculate() {
 		QRegExp rService(serviceLe->text(), Qt::CaseInsensitive, QRegExp::Wildcard);
 		QRegExp rHost(hostLe->text(), Qt::CaseInsensitive, QRegExp::Wildcard);
 		QString item2, item3;
-		Q3ListViewItem* item=dataList->firstChild();
-		while (item!=0) {
+		for (int i = 0; i < dataList->topLevelItemCount(); ++i)
+		{
+			QTreeWidgetItem *item = dataList->topLevelItem(i);
 			if (connCount) {
 				if ((QString(item->text(1)).contains(i18n("CONNECTION OPENED"))) && (QString(item->text(2)).contains(rService)) && (QString(item->text(3)).contains(rHost))) {
 					if (expandedInfoCb->isChecked())
@@ -173,18 +170,34 @@ void StatisticsView::calculate() {
 
 				}
 			}
-			item=item->nextSibling();
 		}
-		for (LogItem* tmpItem=sLog.items.first(); tmpItem!=0; tmpItem=sLog.items.next()) {
-			for (SmallLogItem *tmpStr=tmpItem->accessed.first(); tmpStr!=0; tmpStr=tmpItem->accessed.next()) {
+
+		foreach (const LogItem *tmpItem, sLog.items)
+		{
+			if (!tmpItem)
+			{
+				continue;
+                        }
+
+			foreach (const SmallLogItem *tmpStr, tmpItem->accessed) {
+				if (!tmpStr)
+				{
+					continue;
+				}
+
 				calcCount++;
 				QString number("");
 				number.sprintf("%6d", calcCount);
 				QString hits("");
 				hits.sprintf("%7d", tmpStr->count);
-				new Q3ListViewItem(viewStatistics,number,eventCb->currentText(),tmpItem->name,tmpStr->name,hits);
-			};
-		};
+				QTreeWidgetItem *item = new QTreeWidgetItem(viewStatistics);
+				item->setText(0, number);
+				item->setText(1, eventCb->currentText());
+				item->setText(2, tmpItem->name);
+				item->setText(3, tmpStr->name);
+				item->setText(4, hits);
+			}
+		}
 	}
 	//no expanded info needed
 	else {
@@ -192,8 +205,9 @@ void StatisticsView::calculate() {
 		int count(0);
 		QRegExp rService(serviceLe->text(), Qt::CaseInsensitive, QRegExp::Wildcard);
 		QRegExp rHost(hostLe->text(), Qt::CaseInsensitive, QRegExp::Wildcard);
-		Q3ListViewItem* item=dataList->firstChild();
-		while (item!=0) {
+		for (int i = 0; i < dataList->topLevelItemCount(); ++i)
+                {
+			QTreeWidgetItem *item = dataList->topLevelItem(i);
 			if (connCount) {
 				if ((QString(item->text(1)).contains(i18n("CONNECTION OPENED"))) && (QString(item->text(2)).contains(rService)) && (QString(item->text(3)).contains(rHost)))
 					count++;
@@ -201,13 +215,17 @@ void StatisticsView::calculate() {
 				if ((QString(item->text(1)).contains(i18n("FILE OPENED"))) && (QString(item->text(2)).contains(rService)) && (QString(item->text(3)).contains(rHost)))
 					count++;
 			}
-			item=item->nextSibling();
 		}
 		QString number("");
 		number.sprintf("%6d", calcCount);
 		QString hits("");
 		hits.sprintf("%7d", count);
-		new Q3ListViewItem(viewStatistics,number,eventCb->currentText(),serviceLe->text(),hostLe->text(),hits);
+		QTreeWidgetItem *item = new QTreeWidgetItem(viewStatistics);
+		item->setText(0, number);
+		item->setText(1, eventCb->currentText());
+		item->setText(2, serviceLe->text());
+		item->setText(3, hostLe->text());
+		item->setText(4, hits);
 	};
 	QApplication::restoreOverrideCursor();
 }
@@ -219,23 +237,41 @@ void StatisticsView::clearStatistics() {
 
 void SambaLog::printItems() {
 	kDebug() << "****** printing items: ******";
-	for (LogItem* tmpItem=items.first(); tmpItem!=0; tmpItem=items.next()) {
+	foreach (const LogItem *tmpItem, items)
+	{
+		if (!tmpItem)
+		{
+			continue;
+		}
+
 		kDebug() << "SERVICE: " << tmpItem->name;
-		for (SmallLogItem* tmpLog=tmpItem->accessed.first(); tmpLog!=0; tmpLog=tmpItem->accessed.next())
+		foreach (const SmallLogItem *tmpLog, tmpItem->accessed) {
+			if (!tmpLog)
+			{
+				continue;
+			}
 			kDebug() << "      accessed by: " << tmpLog->name << "  " << tmpLog->count;
-	};
+		}
+	}
+
 	kDebug() << "------ end of printing ------";
 }
 
 LogItem* SambaLog::itemInList(const QString &name) {
-	LogItem* tmpItem(items.first());
-	LogItem* foundItem(0);
-	while ((tmpItem!=0) && (foundItem==0)) {
+	foreach (LogItem *tmpItem, items)
+	{
+		if (!tmpItem)
+		{
+			continue;
+		}
+
 		if (tmpItem->name==name)
-			foundItem=tmpItem;
-		tmpItem=items.next();
+		{
+			return tmpItem;
+		}
 	}
-	return foundItem;
+
+	return 0;
 }
 
 void SambaLog::addItem(const QString &share, const QString &user) {
@@ -250,14 +286,12 @@ void SambaLog::addItem(const QString &share, const QString &user) {
 }
 
 SmallLogItem* LogItem::itemInList(const QString &name) {
-	SmallLogItem* tmpItem(accessed.first());
-	SmallLogItem* foundItem(0);
-	while ((tmpItem!=0) && (foundItem==0)) {
-		if (tmpItem->name==name)
-			foundItem=tmpItem;
-		tmpItem=accessed.next();
+	foreach (SmallLogItem *tmpLog, accessed) {
+		if (tmpLog && tmpLog->name==name) {
+			return tmpLog;
+                }
 	}
-	return foundItem;
+	return 0;
 }
 
 void LogItem::addItem(const QString &host) {

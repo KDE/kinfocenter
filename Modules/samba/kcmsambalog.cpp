@@ -83,12 +83,12 @@ LogView::LogView(QWidget *parent, KConfig *config) :
 
 	viewHistory.setAllColumnsShowFocus(true);
 	viewHistory.setFocusPolicy(Qt::ClickFocus);
-	viewHistory.setShowSortIndicator(true);
 
-	viewHistory.addColumn(i18n("Date & Time"), 130);
-	viewHistory.addColumn(i18n("Event"), 150);
-	viewHistory.addColumn(i18n("Service/File"), 210);
-	viewHistory.addColumn(i18n("Host/User"), 150);
+	QStringList headers;
+	headers << i18n("Date & Time") << i18n("Event") << i18n("Service/File")
+		<< i18n("Host/User") << i18n("Date & Time") << i18n("Event")
+		<< i18n("Service/File") << i18n("Host/User");
+        viewHistory.setHeaderLabels(headers);
 
 	viewHistory.setWhatsThis(i18n("<p>This list shows details of the events"
 		" logged by samba. Note that events at the file level are not logged"
@@ -105,7 +105,7 @@ LogView::LogView(QWidget *parent, KConfig *config) :
 	showFileClose.setChecked(false);
 
 	connect(&updateButton, SIGNAL(clicked()), this, SLOT(updateList()));
-emit 	contentsChanged(&viewHistory, 0, 0);
+	emit contentsChanged(&viewHistory, 0, 0);
 
 	label.setMinimumSize(label.sizeHint());
 	logFileName.setMinimumSize(250, logFileName.sizeHint().height());
@@ -201,27 +201,27 @@ void LogView::updateList() {
 					c=strstr(buf, " as user");
 					*c='\0';
 					*c1='\0';
-					new QListViewItemX(&viewHistory,time,I18N_NOOP("CONNECTION OPENED"),c1+connOpenLen,buf+2);
+					new QTreeWidgetItemX(&viewHistory,time,I18N_NOOP("CONNECTION OPENED"),c1+connOpenLen,buf+2);
 					connectionsCount++;
 				} else if (c2!=0) {
 					*c2='\0';
-					new QListViewItemX(&viewHistory,time,I18N_NOOP("CONNECTION CLOSED"),c2+connCloseLen,buf+2);
+					new QTreeWidgetItemX(&viewHistory,time,I18N_NOOP("CONNECTION CLOSED"),c2+connCloseLen,buf+2);
 				} else if (c3!=0) {
 					c=strstr(buf, " read=");
 					*c='\0';
 					*c3='\0';
-					new QListViewItemX(&viewHistory,time,I18N_NOOP("            FILE OPENED"),c3+fileOpenLen,buf+2);
+					new QTreeWidgetItemX(&viewHistory,time,I18N_NOOP("            FILE OPENED"),c3+fileOpenLen,buf+2);
 					filesCount++;
 				} else if (c4!=0) {
 					c=strstr(buf, " (numopen=");
 					*c='\0';
 					*c4='\0';
-					new QListViewItemX(&viewHistory,time,I18N_NOOP("            FILE CLOSED"),c4+fileCloseLen,buf+2);
+					new QTreeWidgetItemX(&viewHistory,time,I18N_NOOP("            FILE CLOSED"),c4+fileCloseLen,buf+2);
 				};
 			};
 		};
 		logFile.close();
-emit 		contentsChanged(&viewHistory, filesCount, connectionsCount);
+		emit contentsChanged(&viewHistory, filesCount, connectionsCount);
 		QApplication::restoreOverrideCursor();
 	} else {
 		QString tmp = i18n("Could not open file %1", logFileName.url().path());

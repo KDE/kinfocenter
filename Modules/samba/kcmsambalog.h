@@ -26,11 +26,11 @@
 #include <QLabel>
 #include <QCheckBox>
 #include <QPushButton>
-#include <Qt3Support/Q3CheckListItem>
+#include <QTreeWidget>
 #include <QEvent>
-#include <kconfig.h>
 
-#include <kurlrequester.h>
+#include <KConfig>
+#include <KUrlRequester>
 
 #define LOGGROUPNAME "SambaLogFileSettings"
 
@@ -47,20 +47,20 @@ private:
 	int filesCount, connectionsCount;
 	KUrlRequester logFileName;
 	QLabel label;
-	Q3ListView viewHistory;
+	QTreeWidget viewHistory;
 	QCheckBox showConnOpen, showConnClose, showFileOpen, showFileClose;
 	QPushButton updateButton;
 private Q_SLOTS:
 	void updateList();
 Q_SIGNALS:
-	void contentsChanged(Q3ListView* list, int nrOfFiles, int nrOfConnections);
+	void contentsChanged(QTreeWidget *list, int nrOfFiles, int nrOfConnections);
 };
 
-class QListViewItemX : public Q3ListViewItem {
+class QTreeWidgetItemX : public QTreeWidgetItem {
 public:
 	//a faster constructor saves a lot time
-	QListViewItemX(Q3ListView * parent, const char *c0, const char *c1 = 0, const char *c2 = 0, const char *c3 = 0, const char *c4 = 0, const char *c5 = 0, const char *c6 = 0, const char *c7 = 0) :
-		Q3ListViewItem(parent) {
+	QTreeWidgetItemX(QTreeWidget *parent, const char *c0, const char *c1 = 0, const char *c2 = 0, const char *c3 = 0, const char *c4 = 0, const char *c5 = 0, const char *c6 = 0, const char *c7 = 0) :
+		QTreeWidgetItem(parent) {
 		setText( 0, c0);
 		setText( 1, c1);
 		setText( 2, c2);

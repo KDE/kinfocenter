@@ -23,10 +23,10 @@
 #ifndef kcmsambastatistics_h_included
 #define kcmsambastatistics_h_included
 
-#include <Qt3Support/Q3PtrList>
+#include <QList>
 #include <QWidget>
 
-class Q3ListView;
+class QTreeWidget;
 class QLabel;
 class QComboBox;
 class QCheckBox;
@@ -54,12 +54,14 @@ public:
 	}
 	LogItem(const QString &n, const QString &a) :
 		name(n), accessed(), count(1) {
-		accessed.setAutoDelete(true);
 		accessed.append(new SmallLogItem(a));
 	}
+	~LogItem() {
+		qDeleteAll(accessed);
+		accessed.clear();
+	}
 	QString name;
-	//QStrList accessedBy;
-	Q3PtrList<SmallLogItem> accessed;
+	QList<SmallLogItem *> accessed;
 	int count;
 	SmallLogItem* itemInList(const QString &name);
 	void addItem(const QString &host);
@@ -67,10 +69,11 @@ public:
 
 class SambaLog {
 public:
-	SambaLog() {
-		items.setAutoDelete(true);
+	~SambaLog() {
+		qDeleteAll(items);
+		items.clear();
 	}
-	Q3PtrList<LogItem> items;
+	QList<LogItem *> items;
 	void addItem(const QString &share, const QString &host);
 	void printItems();
 private:
@@ -88,11 +91,11 @@ public:
 	void loadSettings() {
 	}
 public Q_SLOTS:
-	void setListInfo(Q3ListView *list, int nrOfFiles, int nrOfConnections);
+	void setListInfo(QTreeWidget *list, int nrOfFiles, int nrOfConnections);
 private:
 	KConfig *configFile;
-	Q3ListView *dataList;
-	Q3ListView* viewStatistics;
+	QTreeWidget* dataList;
+	QTreeWidget* viewStatistics;
 	QLabel* connectionsL, *filesL;
 	QComboBox* eventCb;
 	QLabel* eventL;

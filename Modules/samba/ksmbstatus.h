@@ -20,14 +20,13 @@
 #define ksmbstatus_h_included
 
 #include <QTimer>
+#include <QTreeWidget>
 #include <QLabel>
-#include <k3process.h>
-#include <Qt3Support/Q3CheckListItem>
-#include <kconfig.h>
+#include <QProcess>
+
+#include <KConfig>
 
 #define SCREEN_XY_OFFSET 20
-
-class K3Process;
 
 class NetMon : public QWidget {
 Q_OBJECT
@@ -39,11 +38,10 @@ public:
 	}
 private:
 	KConfig *configFile;
-	K3Process *showmountProc;
-	Q3ListView *list;
+	QProcess *showmountProc;
+	QTreeWidget *list;
 	QLabel *version;
 	QTimer *timer;
-	Q3ListViewItem *killrow;
 	int rownumber;
 	enum {header, connexions, locked_files, finished, nfs} readingpart;
 	int lo[65536];
@@ -57,7 +55,8 @@ private:
 private Q_SLOTS:
 	void killShowmount();
 	void update();
-	void slotReceivedData(K3Process *proc, char *buffer, int buflen);
+	void readFromProcess();
+	void smbstatusError();
 };
 
 #endif // main_included

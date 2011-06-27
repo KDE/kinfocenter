@@ -39,11 +39,8 @@ ImportsView::ImportsView(QWidget * parent, KConfig *config) :
 	topLayout->addWidget(&list);
 
 	list.setAllColumnsShowFocus(true);
-	list.setShowSortIndicator(true);
 	list.setMinimumSize(425, 200);
-	list.addColumn(i18n("Type"), 50);
-	list.addColumn(i18n("Resource"), 200);
-	list.addColumn(i18n("Mounted Under"), 190);
+	list.setHeaderLabels(QStringList() << i18n("Type") << i18n("Resource") << i18n("Mounted Under"));
 
 	this->setWhatsThis(i18n("This list shows the Samba and NFS shared"
 		" resources mounted on your system from other hosts. The \"Type\""
@@ -81,7 +78,10 @@ void ImportsView::updateList() {
 				if (pos==-1)
 					pos=strMount.indexOf(" read/");
 				strMount=strMount.left(pos);
-				new Q3ListViewItem(&list,strType,strSource,strMount);
+				QTreeWidgetItem *item = new QTreeWidgetItem(&list);
+				item->setText(0, strType);
+				item->setText(1, strSource);
+				item->setText(2, strMount);
 			};
 		};
 	} while (!feof(f));
