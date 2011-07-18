@@ -27,10 +27,10 @@
 DeviceListing::DeviceListing(QWidget *parent, InfoPanel *info, DevInfoPlugin *stat) : 
   QTreeWidget(parent), iPanel(info), status(stat) 
 {  
-    // Check nic changes
-   nicSig = new NicSignals(); 
-   connect(nicSig,SIGNAL(nicActivatedOrDisconnected()),this,SLOT(networkingChangedSlot()));
-   
+//     // Check nic changes
+//    nicSig = new NicSignals();
+//    connect(nicSig,SIGNAL(nicActivatedOrDisconnected()),this,SLOT(networkingChangedSlot()));
+//
     // Check if clicked
     connect(this,SIGNAL(itemActivated(QTreeWidgetItem *,int)),this,SLOT(itemActivatedSlot(QTreeWidgetItem *,int)));
     
@@ -49,7 +49,7 @@ DeviceListing::DeviceListing(QWidget *parent, InfoPanel *info, DevInfoPlugin *st
 
 DeviceListing::~DeviceListing()
 {  
-  delete nicSig;
+  //delete nicSig;
   clear();
 }
 
