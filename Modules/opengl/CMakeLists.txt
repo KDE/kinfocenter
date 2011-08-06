@@ -27,7 +27,7 @@ target_link_libraries(kcm_opengl ${OPENGL_gl_LIBRARY} ${OPENGL_glu_LIBRARY})
 endif(KCM_ENABLE_OPENGL)
 
 if(KCM_ENABLE_OPENGLES)
-target_link_libraries(kcm_opengl ${OPENGLES_EGL_LIBRARIES} ${OPENGLES_LIBRARIES})
+target_link_libraries(kcm_opengl ${OPENGLES_LIBRARIES})
 endif(KCM_ENABLE_OPENGLES)
 
 configure_file(openglconfig.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/openglconfig.h )
