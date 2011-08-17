@@ -32,7 +32,7 @@ DeviceListing::DeviceListing(QWidget *parent, InfoPanel *info, DevInfoPlugin *st
 //    connect(nicSig,SIGNAL(nicActivatedOrDisconnected()),this,SLOT(networkingChangedSlot()));
 //
     // Check if clicked
-    connect(this,SIGNAL(itemActivated(QTreeWidgetItem *,int)),this,SLOT(itemActivatedSlot(QTreeWidgetItem *,int)));
+    connect(this,SIGNAL(itemActivated(QTreeWidgetItem*,int)),this,SLOT(itemActivatedSlot(QTreeWidgetItem*,int)));
     
     // Check if item is added
     connect(Solid::DeviceNotifier::instance(),SIGNAL(deviceAdded(QString)),this,SLOT(deviceAddedSlot(QString)));

@@ -69,18 +69,18 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
   createToolBar();
   
   //TreeWidget
-  connect(m_sideMenu,SIGNAL(activated(const KcmTreeItem *)),this,SLOT(itemClickedSlot(const KcmTreeItem *)));
+  connect(m_sideMenu,SIGNAL(activated(const KcmTreeItem*)),this,SLOT(itemClickedSlot(const KcmTreeItem*)));
 
   //SearchBox
-  connect(m_searchText, SIGNAL(textChanged(const QString&)), m_sideMenu, SLOT(filterSideMenuSlot(const QString&)));
-  connect(m_searchAction, SIGNAL(triggered(Qt::MouseButtons, Qt::KeyboardModifiers)),m_searchText,SLOT(setFocus()));
+  connect(m_searchText, SIGNAL(textChanged(QString)), m_sideMenu, SLOT(filterSideMenuSlot(QString)));
+  connect(m_searchAction, SIGNAL(triggered(Qt::MouseButtons,Qt::KeyboardModifiers)),m_searchText,SLOT(setFocus()));
   
   //Buttons
   connect(m_moduleHelpAction, SIGNAL(triggered(bool)),this,SLOT(helpClickedSlot()));
   connect(m_exportAction, SIGNAL(triggered(bool)),this,SLOT(exportClickedSlot()));
   
   //Menu
-  connect(m_aboutKcm, SIGNAL(triggered(bool) ), this, SLOT(aboutKcmSlot()));
+  connect(m_aboutKcm, SIGNAL(triggered(bool)), this, SLOT(aboutKcmSlot()));
   
   //Startup 
   m_searchText->completionObject()->setItems(m_sideMenu->allChildKeywords());
@@ -102,18 +102,18 @@ KInfoCenter::~KInfoCenter()
   delete m_toolTips;
   
   //TreeWidget
-  disconnect(m_sideMenu,SIGNAL(activated(const KcmTreeItem *)),this,SLOT(itemClickedSlot(const KcmTreeItem *)));
+  disconnect(m_sideMenu,SIGNAL(activated(const KcmTreeItem*)),this,SLOT(itemClickedSlot(const KcmTreeItem*)));
   
   //SearchBox
-  disconnect(m_searchText, SIGNAL(textChanged(const QString&)), m_sideMenu, SLOT(filterSideMenuSlot(const QString&)));
-  disconnect(m_searchAction, SIGNAL(triggered(Qt::MouseButtons, Qt::KeyboardModifiers)),m_searchText, SLOT(setFocus()));
+  disconnect(m_searchText, SIGNAL(textChanged(QString)), m_sideMenu, SLOT(filterSideMenuSlot(QString)));
+  disconnect(m_searchAction, SIGNAL(triggered(Qt::MouseButtons,Qt::KeyboardModifiers)),m_searchText, SLOT(setFocus()));
   
   //Buttons
   disconnect(m_moduleHelpAction, SIGNAL(triggered(bool)),this,SLOT(helpClickedSlot()));
   disconnect(m_exportAction, SIGNAL(triggered(bool)),this,SLOT(exportClickedSlot()));
   
   //Menu
-  disconnect(m_aboutKcm, SIGNAL(triggered(bool) ), this, SLOT(aboutKcmSlot()));
+  disconnect(m_aboutKcm, SIGNAL(triggered(bool)), this, SLOT(aboutKcmSlot()));
 }
 
 bool KInfoCenter::eventFilter(QObject *watched, QEvent *event)

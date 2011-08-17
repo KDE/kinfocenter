@@ -31,7 +31,7 @@ void NicSignals::connectToNicSignals()
   const QList<Solid::Control::NetworkInterface *> nicList = Solid::Control::NetworkManager::networkInterfaces();
   
   foreach(const Solid::Control::NetworkInterface *nic, nicList) {
-    connect(nic,SIGNAL(connectionStateChanged(const int,const int,const int)),this,SLOT(nicChangedSignal(const int,const int,const int)));
+    connect(nic,SIGNAL(connectionStateChanged(int,int,int)),this,SLOT(nicChangedSignal(int,int,int)));
   }
 }
 

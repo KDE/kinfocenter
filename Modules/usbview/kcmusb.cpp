@@ -68,7 +68,7 @@ USBViewer::USBViewer(QWidget *parent, const QVariantList &) :
 	refreshTimer->start(1000);
 
 	connect(refreshTimer, SIGNAL(timeout()), SLOT(refresh()));
-	connect(_devices, SIGNAL(currentItemChanged(QTreeWidgetItem*, QTreeWidgetItem*)), this, SLOT(selectionChanged(QTreeWidgetItem*)));
+	connect(_devices, SIGNAL(currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*)), this, SLOT(selectionChanged(QTreeWidgetItem*)));
 
 	KAboutData *about = new KAboutData(I18N_NOOP("kcmusb"), 0, ki18n("KDE USB Viewer"),
 			0, KLocalizedString(), KAboutData::License_GPL,
