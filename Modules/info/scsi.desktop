@@ -198,4 +198,9 @@ Comment[zh_CN]=SCSI 信息
 Comment[zh_TW]=SCSI 資訊
 
 X-KDE-Keywords=SCSI,SCSI-Bus,System Information
+X-KDE-Keywords[kk]=SCSI,SCSI-Bus,System Information
+X-KDE-Keywords[nl]=SCSI,SCSI-bus,systeeminformatie
+X-KDE-Keywords[sv]=SCSI,SCSI-buss,Systeminformation
+X-KDE-Keywords[uk]=SCSI,SCSI-Bus,System Information,шина,канал,система
+X-KDE-Keywords[x-test]=xxSCSI,SCSI-Bus,System Informationxx
 Categories=Qt;KDE;X-KDE-information;

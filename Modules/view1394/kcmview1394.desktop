@@ -186,3 +186,6 @@ Comment[zh_CN]=挂接的 IEEE 1394 设备
 Comment[zh_TW]=已加上 IEEE 1394 裝置
 
 X-KDE-Keywords=1394,Firewire,devices,viewer,control
+X-KDE-Keywords[kk]=1394,Firewire,devices,viewer,control
+X-KDE-Keywords[uk]=1394,Firewire,devices,viewer,control,пристрій,пристрої,перегляд,переглядач,керування,контроль
+X-KDE-Keywords[x-test]=xx1394,Firewire,devices,viewer,controlxx

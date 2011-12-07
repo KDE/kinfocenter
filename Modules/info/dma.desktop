@@ -198,4 +198,7 @@ Comment[zh_CN]=DMA 信息
 Comment[zh_TW]=DMA 資訊
 
 X-KDE-Keywords=dma,DMA-Channels,System Information
+X-KDE-Keywords[kk]=dma,DMA-Channels,System Information
+X-KDE-Keywords[uk]=dma,DMA-Channels,System Information,канал,система,інформація,відомості
+X-KDE-Keywords[x-test]=xxdma,DMA-Channels,System Informationxx
 

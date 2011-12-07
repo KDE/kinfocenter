@@ -197,5 +197,8 @@ Comment[zh_CN]=X 服务器信息
 Comment[zh_TW]=X 伺服器資訊
 
 X-KDE-Keywords=X,X-Server,XServer,XFree86,Display,VideoCard,System Information
+X-KDE-Keywords[kk]=X,X-Server,XServer,XFree86,Display,VideoCard,System Information
+X-KDE-Keywords[uk]=X,X-Server,XServer,XFree86,Display,VideoCard,System Information,сервер,графічний,графічний сервер,дисплей,відео,відеокартка,система,інформація,відомості
+X-KDE-Keywords[x-test]=xxX,X-Server,XServer,XFree86,Display,VideoCard,System Informationxx
 
 Categories=Qt;KDE;X-KDE-information;

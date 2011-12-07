@@ -196,4 +196,7 @@ Comment[zh_CN]=PCI 信息
 Comment[zh_TW]=PCI 資訊
 
 X-KDE-Keywords=PCI,PCI-Devices,PCI-Bus,System Information
+X-KDE-Keywords[kk]=PCI,PCI-Devices,PCI-Bus,System Information
+X-KDE-Keywords[uk]=PCI,PCI-Devices,PCI-Bus,System Information,пристрій,пристрої,канал,шина,система,інформація,відомості
+X-KDE-Keywords[x-test]=xxPCI,PCI-Devices,PCI-Bus,System Informationxx
 Categories=Qt;KDE;X-KDE-information;

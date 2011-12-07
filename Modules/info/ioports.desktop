@@ -198,4 +198,7 @@ Comment[zh_CN]=IO 端口信息
 Comment[zh_TW]=IO-Port 資訊
 
 X-KDE-Keywords=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Information
+X-KDE-Keywords[kk]=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Information
+X-KDE-Keywords[uk]=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Information,ввід,введення,вивід,виведення,порт,діапазон,система,інформація,відомості
+X-KDE-Keywords[x-test]=xxIO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Informationxx
 
