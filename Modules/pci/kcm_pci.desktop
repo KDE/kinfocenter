@@ -196,7 +196,12 @@ Comment[zh_CN]=PCI 信息
 Comment[zh_TW]=PCI 資訊
 
 X-KDE-Keywords=PCI,PCI-Devices,PCI-Bus,System Information
+X-KDE-Keywords[ia]=PCI,Dispositivos PCI,Bus PCI,Information de systema
 X-KDE-Keywords[kk]=PCI,PCI-Devices,PCI-Bus,System Information
+X-KDE-Keywords[nl]=PCI,PCI-apparaten,PCI-Bus,systeeminformatie
+X-KDE-Keywords[pt]=PCI,Dispositivos PCI,Barramento PCI,Informação do Sistema
+X-KDE-Keywords[pt_BR]=PCI,Dispositivos PCI,Barramento PCI,Informação do sistema
+X-KDE-Keywords[sv]=PCI,PCI-Enheter,PCI-Buss,Systeminformation
 X-KDE-Keywords[uk]=PCI,PCI-Devices,PCI-Bus,System Information,пристрій,пристрої,канал,шина,система,інформація,відомості
 X-KDE-Keywords[x-test]=xxPCI,PCI-Devices,PCI-Bus,System Informationxx
 Categories=Qt;KDE;X-KDE-information;

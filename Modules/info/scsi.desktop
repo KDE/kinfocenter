@@ -198,8 +198,12 @@ Comment[zh_CN]=SCSI 信息
 Comment[zh_TW]=SCSI 資訊
 
 X-KDE-Keywords=SCSI,SCSI-Bus,System Information
+X-KDE-Keywords[cs]=SCSI,Sběrnice SCSI,Systémové informace
+X-KDE-Keywords[ia]=SCSI,SCSI-Bus,Information de systema
 X-KDE-Keywords[kk]=SCSI,SCSI-Bus,System Information
 X-KDE-Keywords[nl]=SCSI,SCSI-bus,systeeminformatie
+X-KDE-Keywords[pt]=Informação do sistema,SCSI
+X-KDE-Keywords[pt_BR]=SCSI,SCSI-Bus,Informação do sistema
 X-KDE-Keywords[sv]=SCSI,SCSI-buss,Systeminformation
 X-KDE-Keywords[uk]=SCSI,SCSI-Bus,System Information,шина,канал,система
 X-KDE-Keywords[x-test]=xxSCSI,SCSI-Bus,System Informationxx

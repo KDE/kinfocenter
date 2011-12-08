@@ -135,8 +135,12 @@ Comment[zh_CN]=硬件信息汇总
 Comment[zh_TW]=硬體資訊摘要
 
 X-KDE-Keywords=device,devices
+X-KDE-Keywords[ia]=dispositivo,dispositivos
 X-KDE-Keywords[kk]=device,devices
+X-KDE-Keywords[nl]=apparaat,apparaten
+X-KDE-Keywords[pt]=dispositivo,dispositivos
 X-KDE-Keywords[pt_BR]=dispositivo,dispositivos
+X-KDE-Keywords[sv]=enhet,enheter
 X-KDE-Keywords[uk]=пристрій,пристрої
 X-KDE-Keywords[x-test]=xxdevice,devicesxx
 X-DocPath=kinfocenter/index.html#kcm_infosummary

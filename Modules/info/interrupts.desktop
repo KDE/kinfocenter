@@ -198,8 +198,12 @@ Comment[zh_CN]=中断信息
 Comment[zh_TW]=中斷資訊
 
 X-KDE-Keywords=Interrupts,IRQ,System Information
+X-KDE-Keywords[cs]=Přerušení,IRQ,Systémové informace
+X-KDE-Keywords[ia]=Interrupts,IRQ,Information de systema
 X-KDE-Keywords[kk]=Interrupts,IRQ,System Information
 X-KDE-Keywords[nl]=Interrupts,IRQ,systeeminformatie
+X-KDE-Keywords[pt]=Interrupções,IRQ,Informação do sistema
+X-KDE-Keywords[pt_BR]=Interrupções,IRQ,Informação do sistema
 X-KDE-Keywords[sv]=Avbrott,IRQ,Systeminformation
 X-KDE-Keywords[uk]=Interrupts,IRQ,System Information,переривання,система,інформація,відомості
 X-KDE-Keywords[x-test]=xxInterrupts,IRQ,System Informationxx

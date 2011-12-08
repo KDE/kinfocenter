@@ -197,7 +197,12 @@ Comment[zh_CN]=内存信息
 Comment[zh_TW]=記憶體資訊資訊
 
 X-KDE-Keywords=Memory,RAM,Virtual memory,Physical memory,Shared memory,Swap,System Information
+X-KDE-Keywords[ia]=Memoria,RAM,memoria virtual,memoria physic,memoria compartite,Swap,Information de systema
 X-KDE-Keywords[kk]=Memory,RAM,Virtual memory,Physical memory,Shared memory,Swap,System Information
+X-KDE-Keywords[nl]=geheugen,RAM,virtueel geheugen,fysiek geheugen,gedeeld geheugen,swap,systeeminformatie
+X-KDE-Keywords[pt]=Memória,RAM,Memória virtual,Memória física,Memória partilhada,Paginação,Informação do Sistema
+X-KDE-Keywords[pt_BR]=Memória,RAM,Memória virtual,Memória física,Memória compartilhada,Swap,Informação do sistema
+X-KDE-Keywords[sv]=Minne,RAM,Virtuellt minne,Fysiskt minne,Delat minne,Växling,Systeminformation
 X-KDE-Keywords[uk]=Memory,RAM,Virtual memory,Physical memory,Shared memory,Swap,System Information,пам’ять,віртуальна пам’ять,фізична пам’ять,спільна пам’ять,свопінг,резервна пам’ять,резерв,своп,система,інформація,відомості
 X-KDE-Keywords[x-test]=xxMemory,RAM,Virtual memory,Physical memory,Shared memory,Swap,System Informationxx
 Categories=Qt;KDE;X-KDE-information;

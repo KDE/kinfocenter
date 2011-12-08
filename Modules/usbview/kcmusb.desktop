@@ -187,7 +187,12 @@ Comment[zh_CN]=连接到该计算机的 USB 设备
 Comment[zh_TW]=查看連接到這台電腦的 USB 裝置
 
 X-KDE-Keywords=USB,devices,viewer,control
+X-KDE-Keywords[ia]=USB,dispositivos,visor,controlo
 X-KDE-Keywords[kk]=USB,devices,viewer,control
+X-KDE-Keywords[nl]=USB,apparaten,viewer,besturing
+X-KDE-Keywords[pt]=USB,dispositivos,visualizador,controlo
+X-KDE-Keywords[pt_BR]=USB,dispositivos,visualizador,controle
+X-KDE-Keywords[sv]=USB,enheter,visning,kontroll
 X-KDE-Keywords[uk]=USB,devices,viewer,control,пристрій,пристрої,перегляд,переглядач,керування,контроль
 X-KDE-Keywords[x-test]=xxUSB,devices,viewer,controlxx
 

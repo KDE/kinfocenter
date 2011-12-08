@@ -133,8 +133,12 @@ Comment[zh_CN]=设备查看器
 Comment[zh_TW]=裝置檢視器
 
 X-KDE-Keywords=device,devices
+X-KDE-Keywords[ia]=dispositivo,dispositivos
 X-KDE-Keywords[kk]=device,devices
+X-KDE-Keywords[nl]=apparaat,apparaten
+X-KDE-Keywords[pt]=dispositivo,dispositivos
 X-KDE-Keywords[pt_BR]=dispositivo,dispositivos
+X-KDE-Keywords[sv]=enhet,enheter
 X-KDE-Keywords[uk]=пристрій,пристрої
 X-KDE-Keywords[x-test]=xxdevice,devicesxx
 Categories=Qt;KDE;X-KDE-information;

@@ -196,7 +196,12 @@ Comment[zh_CN]=Samba 状态监视器
 Comment[zh_TW]=Samba 狀態監視器
 
 X-KDE-Keywords=SMB,SAMBA,Windows network,LAN,System Information
+X-KDE-Keywords[ia]=SMB,SAMBA,rete de Windows,LAN,Information de systema
 X-KDE-Keywords[kk]=SMB,SAMBA,Windows network,LAN,System Information
+X-KDE-Keywords[nl]=SMB,SAMBA,Windows-netwerk,LAN,systeeminformatie
+X-KDE-Keywords[pt]=SMB,SAMBA,rede Windows,LAN,Informação do Sistema
+X-KDE-Keywords[pt_BR]=SMB,SAMBA,Rede Windows,LAN,Informação do sistema
+X-KDE-Keywords[sv]=SMB,SAMBA,Windows-nätverk,LAN,Systeminformation
 X-KDE-Keywords[uk]=SMB,SAMBA,Windows network,LAN,System Information,мережа,віндоус,віндоуз,віндовс,віндовз,система,інформація,відомості
 X-KDE-Keywords[x-test]=xxSMB,SAMBA,Windows network,LAN,System Informationxx
 Categories=Qt;KDE;X-KDE-information;

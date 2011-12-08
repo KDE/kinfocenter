@@ -197,7 +197,12 @@ Comment[zh_CN]=X 服务器信息
 Comment[zh_TW]=X 伺服器資訊
 
 X-KDE-Keywords=X,X-Server,XServer,XFree86,Display,VideoCard,System Information
+X-KDE-Keywords[ia]=X,Servitor-X,SXerver,XFree86,Monstrator,Scheda video,Information de systema
 X-KDE-Keywords[kk]=X,X-Server,XServer,XFree86,Display,VideoCard,System Information
+X-KDE-Keywords[nl]=X,X-Server,XServer,XFree86,scherm,videocard,systeeminformatie
+X-KDE-Keywords[pt]=X,Servidor-X,Servidor de X,XFree86,Ecrã,Placa Gráfica,Informação do Sistema
+X-KDE-Keywords[pt_BR]=X,Servidor-X,Servidor X,XFree86,Monitor,Placa de vídeo,Informação do sistema
+X-KDE-Keywords[sv]=X,X-Server,XServer,XFree86,Bildskärm,Videokort,Systeminformation
 X-KDE-Keywords[uk]=X,X-Server,XServer,XFree86,Display,VideoCard,System Information,сервер,графічний,графічний сервер,дисплей,відео,відеокартка,система,інформація,відомості
 X-KDE-Keywords[x-test]=xxX,X-Server,XServer,XFree86,Display,VideoCard,System Informationxx
 
