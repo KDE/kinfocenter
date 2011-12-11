@@ -198,6 +198,7 @@ Comment[zh_CN]=SCSI 信息
 Comment[zh_TW]=SCSI 資訊
 
 X-KDE-Keywords=SCSI,SCSI-Bus,System Information
+X-KDE-Keywords[ca]=SCSI,Bus SCSI,Informació del sistema
 X-KDE-Keywords[cs]=SCSI,Sběrnice SCSI,Systémové informace
 X-KDE-Keywords[ia]=SCSI,SCSI-Bus,Information de systema
 X-KDE-Keywords[kk]=SCSI,SCSI-Bus,System Information
@@ -208,4 +209,5 @@ X-KDE-Keywords[ro]=SCSI;magistrala SCSI;informații sistem
 X-KDE-Keywords[sv]=SCSI,SCSI-buss,Systeminformation
 X-KDE-Keywords[uk]=SCSI,SCSI-Bus,System Information,шина,канал,система
 X-KDE-Keywords[x-test]=xxSCSI,SCSI-Bus,System Informationxx
+X-KDE-Keywords[zh_TW]=SCSI,SCSI-Bus,System Information
 Categories=Qt;KDE;X-KDE-information;

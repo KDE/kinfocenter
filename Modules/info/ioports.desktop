@@ -198,6 +198,7 @@ Comment[zh_CN]=IO 端口信息
 Comment[zh_TW]=IO-Port 資訊
 
 X-KDE-Keywords=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Information
+X-KDE-Keywords[ca]=IO,I/O,E/S,Ports IO,Ports I/O,Interval IO,Interval I/O,Informació del sistema
 X-KDE-Keywords[ia]=IE,I/E,portos de I/E,Portos,Extension de IE,Extension de I/E,Information de systema
 X-KDE-Keywords[kk]=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Information
 X-KDE-Keywords[nl]=IO,I/O,IO-Ports,I/O-Ports,poorten,IO-Range,I/O-Range,systeeminformatie
@@ -206,4 +207,5 @@ X-KDE-Keywords[pt_BR]=IO,I/O,ES,E/S,Portas IO,Portas ES,Portas I/O,Portas E/S,Po
 X-KDE-Keywords[sv]=IO,I/O,IO-portar,I/O-Portar,Portar,IO-intervall,I/O-intervall,Systeminformation
 X-KDE-Keywords[uk]=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Information,ввід,введення,вивід,виведення,порт,діапазон,система,інформація,відомості
 X-KDE-Keywords[x-test]=xxIO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Informationxx
+X-KDE-Keywords[zh_TW]=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Information
 
