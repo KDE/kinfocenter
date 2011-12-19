@@ -99,8 +99,8 @@ Name[uz]=Toʻxtalishlar
 Name[uz@cyrillic]=Тўхталишлар
 Name[vi]=Gián đoạn
 Name[wa]=Boutoes
-Name[xh]=Iziphazamiso
 Name[x-test]=xxInterruptsxx
+Name[xh]=Iziphazamiso
 Name[zh_CN]=中断
 Name[zh_TW]=中斷
 
@@ -192,8 +192,8 @@ Comment[uz]=Toʻxtalish haqida maʼlumot
 Comment[uz@cyrillic]=Тўхталиш ҳақида маълумот
 Comment[vi]=Thông tin về các gián đoạn
 Comment[wa]=Informåcions so les djocaedjes
-Comment[xh]=Phazamisa ulwazi
 Comment[x-test]=xxInterrupt informationxx
+Comment[xh]=Phazamisa ulwazi
 Comment[zh_CN]=中断信息
 Comment[zh_TW]=中斷資訊
 
