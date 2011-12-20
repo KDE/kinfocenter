@@ -99,8 +99,8 @@ Name[uz]=SCSI
 Name[uz@cyrillic]=SCSI
 Name[vi]=SCSI
 Name[wa]=SCSI
-Name[x-test]=xxSCSIxx
 Name[xh]=SCSI
+Name[x-test]=xxSCSIxx
 Name[zh_CN]=SCSI
 Name[zh_TW]=SCSI
 
@@ -192,14 +192,15 @@ Comment[uz]=SCSI uskunalar haqida maʼlumot
 Comment[uz@cyrillic]=SCSI ускуналар ҳақида маълумот
 Comment[vi]=Thông tin về SCSI
 Comment[wa]=Informåcion SCSI
-Comment[x-test]=xxSCSI informationxx
 Comment[xh]=Inkcukacha ye SCSI
+Comment[x-test]=xxSCSI informationxx
 Comment[zh_CN]=SCSI 信息
 Comment[zh_TW]=SCSI 資訊
 
 X-KDE-Keywords=SCSI,SCSI-Bus,System Information
 X-KDE-Keywords[ca]=SCSI,Bus SCSI,Informació del sistema
 X-KDE-Keywords[cs]=SCSI,Sběrnice SCSI,Systémové informace
+X-KDE-Keywords[de]=SCSI,SCSI-Bus,Systeminformation
 X-KDE-Keywords[fi]=SCSI,SCSI-väylä,järjestelmätiedot
 X-KDE-Keywords[ia]=SCSI,SCSI-Bus,Information de systema
 X-KDE-Keywords[kk]=SCSI,SCSI-Bus,System Information

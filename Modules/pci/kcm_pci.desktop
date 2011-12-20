@@ -97,8 +97,8 @@ Name[uz]=PCI
 Name[uz@cyrillic]=PCI
 Name[vi]=PCI
 Name[wa]=PCI
-Name[x-test]=xxPCIxx
 Name[xh]=PCI
+Name[x-test]=xxPCIxx
 Name[zh_CN]=PCI
 Name[zh_TW]=PCI
 
@@ -190,13 +190,14 @@ Comment[uz]=PCI uskunalar haqida maʼlumot
 Comment[uz@cyrillic]=PCI ускуналар ҳақида маълумот
 Comment[vi]=Thông tin về PCI
 Comment[wa]=Informåcion PCI
-Comment[x-test]=xxPCI informationxx
 Comment[xh]=Inkcukacha ye PCI
+Comment[x-test]=xxPCI informationxx
 Comment[zh_CN]=PCI 信息
 Comment[zh_TW]=PCI 資訊
 
 X-KDE-Keywords=PCI,PCI-Devices,PCI-Bus,System Information
 X-KDE-Keywords[ca]=PCI,Dispositius PCI,Bus PCI,Informació del sistema
+X-KDE-Keywords[de]=PCI,PCI-Geräte,PCI-Bus,Systeminformation
 X-KDE-Keywords[fi]=PCI,PCI-laitteet,PCI-väylä,järjestelmätiedot
 X-KDE-Keywords[ia]=PCI,Dispositivos PCI,Bus PCI,Information de systema
 X-KDE-Keywords[kk]=PCI,PCI-Devices,PCI-Bus,System Information
