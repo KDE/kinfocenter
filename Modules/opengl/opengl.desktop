@@ -195,7 +195,9 @@ Comment[zh_TW]=OpenGL 資訊
 
 X-KDE-Keywords=OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display
 X-KDE-Keywords[ca]=OpenGL,DRI,GLX,3D,Targeta de vídeo,Acceleració per maquinari,Gràfics,X,X11,Xserver,Servidor X,XFree86,Pantalla
+X-KDE-Keywords[da]=OpenGL,DRI,GLX,3D,Videokort,grafikkort,Hardwareacceleration,Grafik,X,X11,Xserver,X-Server,XFree86,skærm
 X-KDE-Keywords[de]=OpenGL,DRI,GLX,3D,Grafikkarte,Hardware-Beschleunigung,Grafik,X,X11,Xserver,X-Server,XFree86,Display,Anzeige
+X-KDE-Keywords[et]=OpenGL,DRI,GLX,3D,videokaart,riistvaraline kiirendus,graafika,X,X11,Xserver,X-Server,XFree86,kuva
 X-KDE-Keywords[fi]=OpenGL,DRI,GLX,3D,3U,näytönohjain,laitteistokiihdytys,grafiikka,X,X11,Xserver,X-Server,X-palvelin,XFree86,näyttö
 X-KDE-Keywords[ia]=OpenGL,DRI,GLX,3D,Scheda video,Acceleration hardware,Graphiches,X,X11,XServer,Servitor de X,XFree86,Monstrator
 X-KDE-Keywords[kk]=OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display

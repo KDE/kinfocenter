@@ -97,8 +97,8 @@ Name[uz]=Samba'ning holati
 Name[uz@cyrillic]=Samba'нинг ҳолати
 Name[vi]=Trạng thái Samba
 Name[wa]=Estat di Samba
-Name[xh]=Isimo se Samba
 Name[x-test]=xxSamba Statusxx
+Name[xh]=Isimo se Samba
 Name[zh_CN]=Samba 状态
 Name[zh_TW]=Samba 狀態
 
@@ -190,14 +190,16 @@ Comment[uz]=Samba'ning holatini nazorat qiluvchi vosita
 Comment[uz@cyrillic]=Samba'нинг ҳолатини назорат қилувчи восита
 Comment[vi]=Theo dõi trạng thái Samba
 Comment[wa]=Corwaitoe di l' estat di Samba
-Comment[xh]=Umphathi wemeko we Samba
 Comment[x-test]=xxSamba status monitorxx
+Comment[xh]=Umphathi wemeko we Samba
 Comment[zh_CN]=Samba 状态监视器
 Comment[zh_TW]=Samba 狀態監視器
 
 X-KDE-Keywords=SMB,SAMBA,Windows network,LAN,System Information
 X-KDE-Keywords[ca]=SMB,SAMBA,Xarxa Windows,LAN,Informació del sistema
+X-KDE-Keywords[da]=SMB,SAMBA,Windows netværk,LAN,Systeminformation
 X-KDE-Keywords[de]=SMB,Samba,Windows-Netzwerk,LAN,Systeminformation
+X-KDE-Keywords[et]=SMB,SAMBA,Windowsi võrk,LAN,süsteemi teave
 X-KDE-Keywords[fi]=SMB,SAMBA,Windows-verkko,LAN,järjestelmätiedot
 X-KDE-Keywords[ia]=SMB,SAMBA,rete de Windows,LAN,Information de systema
 X-KDE-Keywords[kk]=SMB,SAMBA,Windows network,LAN,System Information
