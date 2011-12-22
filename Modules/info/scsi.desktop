@@ -99,8 +99,8 @@ Name[uz]=SCSI
 Name[uz@cyrillic]=SCSI
 Name[vi]=SCSI
 Name[wa]=SCSI
-Name[x-test]=xxSCSIxx
 Name[xh]=SCSI
+Name[x-test]=xxSCSIxx
 Name[zh_CN]=SCSI
 Name[zh_TW]=SCSI
 
@@ -192,8 +192,8 @@ Comment[uz]=SCSI uskunalar haqida maʼlumot
 Comment[uz@cyrillic]=SCSI ускуналар ҳақида маълумот
 Comment[vi]=Thông tin về SCSI
 Comment[wa]=Informåcion SCSI
-Comment[x-test]=xxSCSI informationxx
 Comment[xh]=Inkcukacha ye SCSI
+Comment[x-test]=xxSCSI informationxx
 Comment[zh_CN]=SCSI 信息
 Comment[zh_TW]=SCSI 資訊
 

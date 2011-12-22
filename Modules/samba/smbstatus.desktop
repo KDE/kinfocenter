@@ -97,8 +97,8 @@ Name[uz]=Samba'ning holati
 Name[uz@cyrillic]=Samba'нинг ҳолати
 Name[vi]=Trạng thái Samba
 Name[wa]=Estat di Samba
-Name[x-test]=xxSamba Statusxx
 Name[xh]=Isimo se Samba
+Name[x-test]=xxSamba Statusxx
 Name[zh_CN]=Samba 状态
 Name[zh_TW]=Samba 狀態
 
@@ -190,8 +190,8 @@ Comment[uz]=Samba'ning holatini nazorat qiluvchi vosita
 Comment[uz@cyrillic]=Samba'нинг ҳолатини назорат қилувчи восита
 Comment[vi]=Theo dõi trạng thái Samba
 Comment[wa]=Corwaitoe di l' estat di Samba
-Comment[x-test]=xxSamba status monitorxx
 Comment[xh]=Umphathi wemeko we Samba
+Comment[x-test]=xxSamba status monitorxx
 Comment[zh_CN]=Samba 状态监视器
 Comment[zh_TW]=Samba 狀態監視器
 
