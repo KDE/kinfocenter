@@ -108,13 +108,15 @@ bool Chart::drawChart(t_memsize total, const QList<t_memsize>& used, const QList
 
 
 QString Chart::formattedUnit(t_memsize value) {
-	if (value > (1024 * 1024))
-		if (value > (1024 * 1024 * 1024))
-			return i18n("%1 GiB", KGlobal::locale()->formatNumber(value / (1024 * 1024 * 1024.0), 2));
+	const KLocale* locale = KGlobal::locale();
+	const double multiplier = (locale->binaryUnitDialect() == KLocale::MetricBinaryDialect) ? 1000 : 1024;
+	if (value > (multiplier * multiplier))
+		if (value > (multiplier * multiplier * multiplier))
+			return locale->formatByteSize(value, 2, KLocale::DefaultBinaryDialect, KLocale::UnitGigaByte);
 		else
-			return i18n("%1 MiB", KGlobal::locale()->formatNumber(value / (1024 * 1024.0), 2));
+			return locale->formatByteSize(value, 2, KLocale::DefaultBinaryDialect, KLocale::UnitMegaByte);
 	else
-		return i18n("%1 KiB", KGlobal::locale()->formatNumber(value / 1024.0, 2));
+		return locale->formatByteSize(value, 2, KLocale::DefaultBinaryDialect, KLocale::UnitKiloByte);
 }
 
 ChartWidget::ChartWidget(const QString& title, const QString& hint, Chart* chartImplementation, QWidget* parent) :
