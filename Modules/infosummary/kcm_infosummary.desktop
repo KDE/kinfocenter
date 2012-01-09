@@ -114,7 +114,7 @@ Comment[nn]=Samandrag av maskinvareinformasjon
 Comment[pa]=ਹਾਰਡਵੇਅਰ ਜਾਨਾਕਰੀ ਸੰਖੇਪ
 Comment[pl]=Podsumowanie informacji o sprzęcie
 Comment[pt]=Resumo de Informação do 'Hardware'
-Comment[pt_BR]=Resumo de informações do hardware
+Comment[pt_BR]=Resumo das informações do hardware
 Comment[ro]=Sumar informații echipament
 Comment[ru]=Краткие сведения о системе
 Comment[si]=දෘඩාංග තොරතුරු සාරාංශය
@@ -137,6 +137,7 @@ Comment[zh_TW]=硬體資訊摘要
 
 X-KDE-Keywords=device,devices
 X-KDE-Keywords[ca]=dispositiu,dispositius
+X-KDE-Keywords[ca@valencia]=dispositiu,dispositius
 X-KDE-Keywords[da]=enhed,enheder
 X-KDE-Keywords[et]=seade,seadmed
 X-KDE-Keywords[fi]=laite,laitteet
