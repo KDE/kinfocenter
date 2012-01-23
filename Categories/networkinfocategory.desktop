@@ -5,6 +5,7 @@ X-KDE-KInfoCenter-Category=network_information
 Icon=folder-documents
 
 Name=Network Information
+Name[ar]=معلومات الشبكة
 Name[ast]=Información de la rede
 Name[bg]=Мрежови данни
 Name[bs]=Podaci o mreži
