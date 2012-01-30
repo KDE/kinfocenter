@@ -2,6 +2,7 @@
 Type=ServiceType
 X-KDE-ServiceType=KInfoCenterCategory
 Name=KInfoCenter Category
+Name[ar]=فئة مركز معلومات كدي
 Name[ast]=Categoría de KInfoCenter
 Name[bg]=Категория в информационния център
 Name[bs]=Kategorija K‑infocentra
