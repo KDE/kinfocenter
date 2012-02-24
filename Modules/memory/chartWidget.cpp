@@ -108,15 +108,7 @@ bool Chart::drawChart(t_memsize total, const QList<t_memsize>& used, const QList
 
 
 QString Chart::formattedUnit(t_memsize value) {
-	const KLocale* locale = KGlobal::locale();
-	const double multiplier = (locale->binaryUnitDialect() == KLocale::MetricBinaryDialect) ? 1000 : 1024;
-	if (value > (multiplier * multiplier))
-		if (value > (multiplier * multiplier * multiplier))
-			return locale->formatByteSize(value, 2, KLocale::DefaultBinaryDialect, KLocale::UnitGigaByte);
-		else
-			return locale->formatByteSize(value, 2, KLocale::DefaultBinaryDialect, KLocale::UnitMegaByte);
-	else
-		return locale->formatByteSize(value, 2, KLocale::DefaultBinaryDialect, KLocale::UnitKiloByte);
+	return KGlobal::locale()->formatByteSize(value, 2);
 }
 
 ChartWidget::ChartWidget(const QString& title, const QString& hint, Chart* chartImplementation, QWidget* parent) :
@@ -148,7 +140,5 @@ void ChartWidget::setMemoryInfos(t_memsize* memoryInfos) {
 void ChartWidget::refresh() {
 	//The update() method will launch paintEvent() automatically
 	chart->update();
-	
 }
-
 
