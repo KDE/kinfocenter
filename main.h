@@ -32,17 +32,17 @@
 class KInfoCenter;
 
 class KicApp : public KApplication {
-  
-  Q_OBJECT
 
-  public:
-    /**
-    * Init main window of application
-    */
-    KicApp();
+	Q_OBJECT
 
-  private:
-    KInfoCenter *display;
+	public:
+		/**
+		* Init main window of application
+		*/
+		KicApp();
+
+	private:
+		KInfoCenter *display;
 };
 
 #endif // INFOCENTERMAIN

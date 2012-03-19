@@ -25,7 +25,7 @@
 
 //KDE
 #include <KDebug>
-KcmTreeItem::KcmTreeItem(const KService::Ptr module, KcmTreeItem *parent) : m_parent(parent), m_module(module), 
+KcmTreeItem::KcmTreeItem(const KService::Ptr module, KcmTreeItem *parent) : m_parent(parent), m_module(module),
   m_moduleInfo(new KCModuleInfo(m_module))
 {
 }
@@ -36,128 +36,128 @@ KcmTreeItem::KcmTreeItem() : m_parent(NULL), m_moduleInfo(new KCModuleInfo())
 
 KcmTreeItem::~KcmTreeItem()
 {
-  qDeleteAll(m_children);
-  delete m_moduleInfo;
+	qDeleteAll(m_children);
+	delete m_moduleInfo;
 }
 
-void KcmTreeItem::addChild(KcmTreeItem *child) 
+void KcmTreeItem::addChild(KcmTreeItem *child)
 {
-  m_children.append(child);
+	m_children.append(child);
 }
 
 KcmTreeItem *KcmTreeItem::child(const int row)
 {
-  if(childCount() > row) return m_children.value(row);
-  return NULL;
+	if(childCount() > row) return m_children.value(row);
+	return NULL;
 }
 
-int KcmTreeItem::childCount() 
+int KcmTreeItem::childCount()
 {
-  return m_children.count();
+	return m_children.count();
 }
 
 int KcmTreeItem::columnCount()
 {
-  // Hard coded, menu should never have more than one column
-  return 1;
+	// Hard coded, menu should never have more than one column
+	return 1;
 }
 
 KcmTreeItem *KcmTreeItem::parent()
 {
-  return m_parent;
+	return m_parent;
 }
 
 int KcmTreeItem::row()
 {
-  if (m_parent)
-  {
-    return indexOf(const_cast<KcmTreeItem*>(this));
-  }
-  
-  return 0;
+	if (m_parent)
+	{
+		return indexOf(const_cast<KcmTreeItem*>(this));
+	}
+
+	return 0;
 }
 
 int KcmTreeItem::indexOf(KcmTreeItem *item)
 {
-  if (m_parent)
-  {
-    return m_parent->m_children.indexOf(item);
-  }
-  
-  return 0;
+	if (m_parent)
+	{
+		return m_parent->m_children.indexOf(item);
+	}
+
+	return 0;
 }
 
 QString KcmTreeItem::data() const
 {
-  return m_moduleInfo->moduleName();
+	return m_moduleInfo->moduleName();
 }
 
 QString KcmTreeItem::category() const
 {
-  return m_module->property("X-KDE-KInfoCenter-Category").toString().trimmed();
+	return m_module->property("X-KDE-KInfoCenter-Category").toString().trimmed();
 }
 
 KcmTreeItem::itemType KcmTreeItem::type() const
 {
-  return KCM;
+	return KCM;
 }
 
-KcmTreeItem *KcmTreeItem::containsCategory(const QString& category) 
+KcmTreeItem *KcmTreeItem::containsCategory(const QString& category)
 {
-  foreach(KcmTreeItem *item, m_children)
-  {
-    if(item->type() == CATEGORY)
-    {
-      if(item->category().contains(category))
-      {
-	return item;
-      }
-      else
-      {
-	if(item->containsCategory(category))
+	foreach(KcmTreeItem *item, m_children)
 	{
-	  return item;
+		if(item->type() == CATEGORY)
+		{
+			if(item->category().contains(category))
+			{
+				return item;
+			}
+			else
+			{
+				if(item->containsCategory(category))
+				{
+					return item;
+				}
+			}
+		}
 	}
-      }
-    }
-  }
-  return NULL;
+	return NULL;
 }
 
-KCModuleInfo KcmTreeItem::kcm() const 
+KCModuleInfo KcmTreeItem::kcm() const
 {
-  return *m_moduleInfo;
+	return *m_moduleInfo;
 }
 
 int KcmTreeItem::weight()
 {
-  return m_moduleInfo->weight();
+	return m_moduleInfo->weight();
 }
 
 KIcon KcmTreeItem::icon() const
 {
-  return KIcon(m_moduleInfo->icon());
+	return KIcon(m_moduleInfo->icon());
 }
 
 QString KcmTreeItem::whatsThis() const
 {
-  return m_moduleInfo->comment();
+	return m_moduleInfo->comment();
 }
 
 bool KcmTreeItem::childrenRegExp(const QRegExp& pattern)
 {
-  foreach(KcmTreeItem *item, m_children)
-  {
-    if((item->keywords().filter(pattern).count() > 0) == true)
-    {
-      return true;
-    }
-  }
-  return false;
+	foreach(KcmTreeItem *item, m_children)
+	{
+		if((item->keywords().filter(pattern).count() > 0) == true)
+		{
+			return true;
+		}
+	}
+	return false;
 }
 
 QStringList KcmTreeItem::keywords() const
 {
-  if(m_moduleInfo->keywords().isEmpty()) return QStringList(data());
-  return m_moduleInfo->keywords();
+	if(m_moduleInfo->keywords().isEmpty()) return QStringList(data());
+	return m_moduleInfo->keywords();
 }

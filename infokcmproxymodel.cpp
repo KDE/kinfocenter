@@ -26,29 +26,29 @@
 //KDE
 #include <KDebug>
 
-InfoKcmProxyModel::InfoKcmProxyModel(QObject *parent) : QSortFilterProxyModel(parent) 
+InfoKcmProxyModel::InfoKcmProxyModel(QObject *parent) : QSortFilterProxyModel(parent)
 {
-  setSortRole(Qt::UserRole);
+	setSortRole(Qt::UserRole);
 }
 
 bool InfoKcmProxyModel::lessThan(const QModelIndex &leftIndex, const QModelIndex &rightIndex) const
 {
-  if(!leftIndex.isValid() && !rightIndex.isValid()) return true;
-  
-  KcmTreeItem *leftItem = static_cast<KcmTreeItem*>(leftIndex.internalPointer());
-  KcmTreeItem *rightItem = static_cast<KcmTreeItem*>(rightIndex.internalPointer());
-  
-  return (leftItem->weight() < rightItem->weight());
+	if(!leftIndex.isValid() && !rightIndex.isValid()) return true;
+
+	KcmTreeItem *leftItem = static_cast<KcmTreeItem*>(leftIndex.internalPointer());
+	KcmTreeItem *rightItem = static_cast<KcmTreeItem*>(rightIndex.internalPointer());
+
+	return (leftItem->weight() < rightItem->weight());
 }
 
 bool InfoKcmProxyModel::filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const
 {
-  QModelIndex index=sourceModel()->index(sourceRow, 0, sourceParent);
-  KcmTreeItem *indexItem = static_cast<KcmTreeItem*>(index.internalPointer());
+	QModelIndex index=sourceModel()->index(sourceRow, 0, sourceParent);
+	KcmTreeItem *indexItem = static_cast<KcmTreeItem*>(index.internalPointer());
 
-  if(indexItem->type() == KcmTreeItem::CATEGORY) 
-  {
-    if(indexItem->childrenRegExp(filterRegExp()) == true) return true;
-  }  
-  return ((indexItem->keywords().filter(filterRegExp()).count() > 0));
+	if(indexItem->type() == KcmTreeItem::CATEGORY)
+	{
+		if(indexItem->childrenRegExp(filterRegExp()) == true) return true;
+	}
+	return ((indexItem->keywords().filter(filterRegExp()).count() > 0));
 }

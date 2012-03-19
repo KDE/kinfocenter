@@ -51,114 +51,114 @@ class KcmTreeItem;
 
 class KInfoCenter : public KXmlGuiWindow
 {
-  Q_OBJECT
-  
-  public:
-    
-    /**
-    * Create KInfoCenter main window
-    */
-    KInfoCenter();
-    
-    /**
-    * Destory KInfoCenter object
-    */
-    ~KInfoCenter();
+	Q_OBJECT
 
-    /** 
-    * Event filter to move KCMContainer to be level with 
-    * the side menu.
-    *
-    * @param watched object being watched
-    * @param event event object containing event information
-    */
-    bool eventFilter(QObject *watched, QEvent *event);
+	public:
 
-  public Q_SLOTS:
-    
-    /**
-    * Triggered when mouse is clicked on a treeview item
-    *
-    * @param item item selected via mouse
-    */
-    void itemClickedSlot(const KcmTreeItem *item);
-    
-    /** 
-    * Triggered when help toolbar action is used.
-    */
-    void helpClickedSlot();
-    
-    /** 
-    * Triggered when export toolbar action is used.
-    */
-    void exportClickedSlot();
-    
-    /**
-    * Triggered when the about KCM action is used
-    * in the help menu.
-    */
-    void aboutKcmSlot();
-    
-    /**
-    * Show a error message box
-    * 
-    * @param parent parent object
-    * @param errorMessage error message text
-    */
-    static void showError(QWidget *parent, const QString& errorMessage);
-    
-  private:
-    
-    /** 
-    * Create main window and splitter
-    */
-    void createMainFrame();
-    
-    /** 
-    * Create top toolbar on main window and setup toolbar
-    * actions.
-    */
-    void createToolBar();
-    
-    /** 
-    * Create side menu frame including search bar
-    */
-    void createMenuFrame();
-    
-    /**
-    * Detect if export and help buttons should be enabled
-    *
-    * @param buttons buttons to check
-    */
-    void setButtons(const KCModule::Buttons buttons);
-    
-    /** 
-    * Load KCM into KCMContainer
-    *
-    * @param kcmItem KCM to be loaded
-    */
-    void setKcm(const KcmTreeItem *kcmItem);
-    
-    /**
-    * Set enable state on KCM About menu action, 
-    * export toolbar action and help toolbar action.
-    */
-    void resetCondition();
+		/**
+		* Create KInfoCenter main window
+		*/
+		KInfoCenter();
 
-    KcmContainer *m_contain;
-    QSplitter *m_splitter;
-    
-    KAction *m_aboutKcm;
-    KAction *m_searchAction;
-    KAction *m_exportAction;
-    KAction *m_moduleHelpAction;
-    KActionMenu *m_helpAction;
-    
-    QWidget *m_cWidget;
-    KLineEdit *m_searchText;
-    
-    SidePanel *m_sideMenu;
-    ToolTipManager *m_toolTips;
+		/**
+		* Destory KInfoCenter object
+		*/
+		~KInfoCenter();
+
+		/**
+		* Event filter to move KCMContainer to be level with
+		* the side menu.
+		*
+		* @param watched object being watched
+		* @param event event object containing event information
+		*/
+		bool eventFilter(QObject *watched, QEvent *event);
+
+		public Q_SLOTS:
+
+		/**
+		* Triggered when mouse is clicked on a treeview item
+		*
+		* @param item item selected via mouse
+		*/
+		void itemClickedSlot(const KcmTreeItem *item);
+
+		/**
+		* Triggered when help toolbar action is used.
+		*/
+		void helpClickedSlot();
+
+		/**
+		* Triggered when export toolbar action is used.
+		*/
+		void exportClickedSlot();
+
+		/**
+		* Triggered when the about KCM action is used
+		* in the help menu.
+		*/
+		void aboutKcmSlot();
+
+		/**
+		* Show a error message box
+		*
+		* @param parent parent object
+		* @param errorMessage error message text
+		*/
+		static void showError(QWidget *parent, const QString& errorMessage);
+
+	private:
+
+		/**
+		* Create main window and splitter
+		*/
+		void createMainFrame();
+
+		/**
+		* Create top toolbar on main window and setup toolbar
+		* actions.
+		*/
+		void createToolBar();
+
+		/**
+		* Create side menu frame including search bar
+		*/
+		void createMenuFrame();
+
+		/**
+		* Detect if export and help buttons should be enabled
+		*
+		* @param buttons buttons to check
+		*/
+		void setButtons(const KCModule::Buttons buttons);
+
+		/**
+		* Load KCM into KCMContainer
+		*
+		* @param kcmItem KCM to be loaded
+		*/
+		void setKcm(const KcmTreeItem *kcmItem);
+
+		/**
+		* Set enable state on KCM About menu action,
+		* export toolbar action and help toolbar action.
+		*/
+		void resetCondition();
+
+		KcmContainer *m_contain;
+		QSplitter *m_splitter;
+
+		KAction *m_aboutKcm;
+		KAction *m_searchAction;
+		KAction *m_exportAction;
+		KAction *m_moduleHelpAction;
+		KActionMenu *m_helpAction;
+
+		QWidget *m_cWidget;
+		KLineEdit *m_searchText;
+
+		SidePanel *m_sideMenu;
+		ToolTipManager *m_toolTips;
 };
 
 #endif //INFOCENTER

@@ -40,99 +40,99 @@ class InfoKcmProxyModel;
 
 class SidePanel : public QTreeView
 {
-  Q_OBJECT
+	Q_OBJECT
 
-  public:
-    
-    /**
-    * Create Side Panel Widget, including search line edit.
-    *
-    * @param parent objects parent
-    */
-    SidePanel(QWidget *parent);
+	public:
 
-    /** 
-    * Destory SidePanel object
-    */
-    ~SidePanel();
+		/**
+		* Create Side Panel Widget, including search line edit.
+		*
+		* @param parent objects parent
+		*/
+		SidePanel(QWidget *parent);
 
-    /**
-    * Select the first valid item in TreeView
-    */
-    void changeToFirstValidItem();
+		/**
+		* Destory SidePanel object
+		*/
+		~SidePanel();
 
-    /** 
-    * Map a QAbstractItemModel index to a QSortFilterProxyModel index
-    */
-    QModelIndex mapToProxySource(const QModelIndex&);
+		/**
+		* Select the first valid item in TreeView
+		*/
+		void changeToFirstValidItem();
 
-    /**
-    * Get all the treeview items keywords
-    */
-    QStringList allChildKeywords();
+		/**
+		* Map a QAbstractItemModel index to a QSortFilterProxyModel index
+		*/
+		QModelIndex mapToProxySource(const QModelIndex&);
 
-    /**
-     * Expand and collapse an Item ( if an expandable item ) 
-     */
-    void toggleExpand(const KcmTreeItem *);
-    
-  Q_SIGNALS:
-  
-    /**
-    * Emitted when menu item is clicked
-    */
-    void activated(const KcmTreeItem *);
+		/**
+		* Get all the treeview items keywords
+		*/
+		QStringList allChildKeywords();
 
-  private Q_SLOTS:
+		/**
+		* Expand and collapse an Item ( if an expandable item )
+		*/
+		void toggleExpand(const KcmTreeItem *);
 
-    /**
-    * Triggered when treeview item is clicked
-    */
-    void activatedSlot(const QModelIndex &index);
+		Q_SIGNALS:
 
-  public Q_SLOTS:
-    
-    /**
-    * Triggered when collapseAll is selected from tree view 
-    * item menu
-    */
-    void collapseAllSlot();
+		/**
+		* Emitted when menu item is clicked
+		*/
+		void activated(const KcmTreeItem *);
 
-    /**
-    * Triggered when ExpandAll is selected from tree view
-    * item menu 
-    */
-    void expandAllSlot();
+		private Q_SLOTS:
 
-    /**
-    * Filter out all but menu items that fit certain keywords
-    */
-    void filterSideMenuSlot(const QString &);
+		/**
+		* Triggered when treeview item is clicked
+		*/
+		void activatedSlot(const QModelIndex &index);
 
-    /**
-    * Triggered when Reset Search is selected from tree view
-    * item menu
-    */
-    void resetSearchSlot();
-    
-  private:
+		public Q_SLOTS:
 
-    /**
-    * Created actions for the tree view item menu
-    */
-    void createMenuActions();
+		/**
+		* Triggered when collapseAll is selected from tree view
+		* item menu
+		*/
+		void collapseAllSlot();
 
-    /** 
-    * Create treeview item menu
-    */
-    void contextMenuEvent(QContextMenuEvent *event);
+		/**
+		* Triggered when ExpandAll is selected from tree view
+		* item menu
+		*/
+		void expandAllSlot();
 
-    InfoKcmModel *m_model;
-    InfoKcmProxyModel *m_proxyModel;
+		/**
+		* Filter out all but menu items that fit certain keywords
+		*/
+		void filterSideMenuSlot(const QString &);
 
-    QAction *colAct;
-    QAction *expAct;
-    QAction *resetAct;
+		/**
+		* Triggered when Reset Search is selected from tree view
+		* item menu
+		*/
+		void resetSearchSlot();
+
+	private:
+
+		/**
+		* Created actions for the tree view item menu
+		*/
+		void createMenuActions();
+
+		/**
+		* Create treeview item menu
+		*/
+		void contextMenuEvent(QContextMenuEvent *event);
+
+		InfoKcmModel *m_model;
+		InfoKcmProxyModel *m_proxyModel;
+
+		QAction *colAct;
+		QAction *expAct;
+		QAction *resetAct;
 };
 
 #endif //SIDEPANEL

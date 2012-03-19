@@ -31,67 +31,67 @@
 
 class KcmCategoryItem : public KcmTreeItem
 {
-  public:
-   
-    /**
-     * Category Tree Item for InfoKcmModel. Holds information about a Category
-     *
-     * @param module pointer to KCM module
-     * @param parent objects parent
-     */
-    explicit KcmCategoryItem(const KService::Ptr module, KcmTreeItem *parent=0);
-    
-    /**
-     * Category Tree Item for InfoKcmModel. Holds information about a Category  
-     *
-     * @note Used for root folder objects
-     */
-    explicit KcmCategoryItem(const QString& category);
-    
-    /**
-     * Get data of tree item
-     */
-    QString data() const;
-    
-    /**
-     * Get category of tree item.
-     * Set in X-KDE-KInfoCenter-Category
-     */
-    QString category() const;
-    
-    /**
-     * Gets the item type.
-     */
-    itemType type() const;
-    
-    /**
-     * Get tree item KCMs Data
-     */
-    KCModuleInfo kcm() const;
-    
-    /**
-     * Get tree items KCM's weight
-     */
-    int weight();
-    
-    /**
-     * Get icon tied to KCM
-     */
-    KIcon icon() const;
-    
-    /**
-     * Get whatsThis information from KCM
-     */
-    QString whatsThis() const;
-    
-    /**
-     * Get KCM tree item keywords
-     */
-    QStringList keywords() const;
-    
-  private:
-    
-    const QString m_category;
+	public:
+
+		/**
+		* Category Tree Item for InfoKcmModel. Holds information about a Category
+		*
+		* @param module pointer to KCM module
+		* @param parent objects parent
+		*/
+		explicit KcmCategoryItem(const KService::Ptr module, KcmTreeItem *parent=0);
+
+		/**
+		* Category Tree Item for InfoKcmModel. Holds information about a Category
+		*
+		* @note Used for root folder objects
+		*/
+		explicit KcmCategoryItem(const QString& category);
+
+		/**
+		* Get data of tree item
+		*/
+		QString data() const;
+
+		/**
+		* Get category of tree item.
+		* Set in X-KDE-KInfoCenter-Category
+		*/
+		QString category() const;
+
+		/**
+		* Gets the item type.
+		*/
+		itemType type() const;
+
+		/**
+		* Get tree item KCMs Data
+		*/
+		KCModuleInfo kcm() const;
+
+		/**
+		* Get tree items KCM's weight
+		*/
+		int weight();
+
+		/**
+		* Get icon tied to KCM
+		*/
+		KIcon icon() const;
+
+		/**
+		* Get whatsThis information from KCM
+		*/
+		QString whatsThis() const;
+
+		/**
+		* Get KCM tree item keywords
+		*/
+		QStringList keywords() const;
+
+	private:
+
+		const QString m_category;
 };
 
 #endif //KCMCATEGORYITEM

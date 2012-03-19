@@ -7,14 +7,14 @@ add_subdirectory( Modules )
 
 INCLUDE_DIRECTORIES( ToolTips )
 
-set( kinfocenter_SRCS 
-infocenter.cpp 
-main.cpp 
-sidepanel.cpp 
-kcmcontainer.cpp 
-kcmtreeitem.cpp 
+set( kinfocenter_SRCS
+infocenter.cpp
+main.cpp
+sidepanel.cpp
+kcmcontainer.cpp
+kcmtreeitem.cpp
 kcmcategoryitem.cpp
-infokcmmodel.cpp 
+infokcmmodel.cpp
 infokcmproxymodel.cpp
 ToolTips/ktooltip.cpp
 ToolTips/ktooltipwindow.cpp
