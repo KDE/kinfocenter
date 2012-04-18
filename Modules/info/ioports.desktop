@@ -198,7 +198,7 @@ Comment[zh_CN]=IO 端口信息
 Comment[zh_TW]=IO-Port 資訊
 
 X-KDE-Keywords=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Information
-X-KDE-Keywords[ca]=IO,I/O,E/S,Ports IO,Ports I/O,Interval IO,Interval I/O,Informació del sistema
+X-KDE-Keywords[ca]=ES,E/S,Ports ES,Ports E/S,Ports,Interval ES,Interval E/S,Informació del sistema
 X-KDE-Keywords[ca@valencia]=IO,I/O,E/S,Ports IO,Ports I/O,Interval IO,Interval I/O,Informació del sistema
 X-KDE-Keywords[da]=IO,I/O,IO-Porte,I/O-Porte,Porte,IO-Range,I/O-Range,Systeminformation
 X-KDE-Keywords[de]=Ein-/Ausgabe,IO,I/O,IO-ports,I/O-Ports,Ports,IO-Bereich,I/O-Bereich,Systeminformationen
