@@ -216,6 +216,7 @@ X-KDE-Keywords[sv]=USB,enheter,visning,kontroll
 X-KDE-Keywords[tr]=USB,aygıtlar,gösterici,denetim
 X-KDE-Keywords[uk]=USB,devices,viewer,control,пристрій,пристрої,перегляд,переглядач,керування,контроль
 X-KDE-Keywords[x-test]=xxUSB,devices,viewer,controlxx
+X-KDE-Keywords[zh_CN]=USB,devices,viewer,control,设备,查看器,控制
 X-KDE-Keywords[zh_TW]=USB,devices,viewer,control
 
 Categories=Qt;KDE;X-KDE-information;
