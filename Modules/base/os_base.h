@@ -62,15 +62,11 @@ static const QString Order(int order) {
 }
 
 static const QString BitString(unsigned long n) {
-	return i18np("1 Bit", "%1 Bits", n); // singular & plural form of "%d Bit"
+	return i18np("1 Bit", "%1 Bits", n);
 }
 
 static const QString ByteString(unsigned long n) {
-	/* explanation in BR #52640 (http://bugs.kde.org/show_bug.cgi?id=52640) */
-	if (n == 1)
-		return i18nc("singular form: '1 Byte' (yes, it is '1', not '%1'!)", "1 Byte");
-
-	return i18nc("plural form: '%1 Bytes'", "%1 Bytes", KGlobal::locale()->formatNumber(n, 0));
+	return i18np("1 Byte", "%1 Bytes", n);
 }
 
 static const struct _event_table {
@@ -166,7 +162,7 @@ static QTreeWidgetItem* XServer_fill_screen_info(QTreeWidgetItem *lBox, QTreeWid
 	last = new QTreeWidgetItem(item, colormapCellList);
 
 	QStringList preallocatedList;
-	preallocatedList << i18n("Preallocated Pixels") << i18n("Black %1, White %2", KGlobal::locale()->formatNumber(BlackPixel(dpy,scr), 0), KGlobal::locale()->formatNumber(WhitePixel(dpy,scr), 0));
+	preallocatedList << i18n("Preallocated Pixels") << i18n("Black %1, White %2", BlackPixel(dpy,scr), WhitePixel(dpy,scr));
 	last = new QTreeWidgetItem(item, preallocatedList);
 
 	QString YES(i18n("Yes"));
