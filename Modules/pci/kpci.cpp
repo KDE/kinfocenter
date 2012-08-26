@@ -292,8 +292,8 @@ static QTreeWidgetItem* addMapping(QTreeWidgetItem *parent, QTreeWidgetItem *aft
 			topLocalAfter->setText(1, value.sprintf("0x%08X%08X", info->cooked.header.header0.mapping[i+1].baseAddress, info->cooked.header.header0.mapping[i].baseAddress));
 			if (info->cooked.header.header0.mapping[i+1].baseAddress==0) { //no top 4 bytes
 				if ((info->cooked.header.header0.mapping[i].baseAddress&(~(info->cooked.header.header0.mapping[i].baseAddress_bits.baseAddressMap ? 0x3 : 0xF)))==0) { //no address at all
-					localAfter=create(topLocalAfter, i18n("Address"), i18n("Unassigned"));
-					localAfter=create(topLocalAfter, i18n("Size"), i18n("Unassigned"));
+					localAfter=create(topLocalAfter, i18n("Address"), i18nc("unassigned address", "Unassigned"));
+					localAfter=create(topLocalAfter, i18n("Size"), i18nc("unassigned size", "Unassigned"));
 				}//if
 				else {
 					localAfter=create(topLocalAfter, i18n("Address"), value.sprintf("0x%X", (info->cooked.header.header0.mapping[i].baseAddress&(~(info->cooked.header.header0.mapping[i].baseAddress_bits.baseAddressMap ? 0x3 : 0xF)))));
@@ -308,8 +308,8 @@ static QTreeWidgetItem* addMapping(QTreeWidgetItem *parent, QTreeWidgetItem *aft
 		else {
 			topLocalAfter->setText(1, value.sprintf("0x%08X", info->cooked.header.header0.mapping[i].baseAddress));
 			if ((info->cooked.header.header0.mapping[i].baseAddress&(~(info->cooked.header.header0.mapping[i].baseAddress_bits.baseAddressMap ? 0x3 : 0xF)))==0) { //no address at all
-				localAfter=create(topLocalAfter, i18n("Address"), i18n("Unassigned"));
-				localAfter=create(topLocalAfter, i18n("Size"), i18n("Unassigned"));
+				localAfter=create(topLocalAfter, i18n("Address"), i18nc("unassigned address", "Unassigned"));
+				localAfter=create(topLocalAfter, i18n("Size"), i18nc("unassigned size", "Unassigned"));
 			}//if
 			else {
 				localAfter=create(topLocalAfter, i18n("Address"), value.sprintf("0x%X", (info->cooked.header.header0.mapping[i].baseAddress&(~(info->cooked.header.header0.mapping[i].baseAddress_bits.baseAddressMap ? 0x3 : 0xF)))));
@@ -434,8 +434,8 @@ static QTreeWidgetItem* addRom(QTreeWidgetItem *parent, QTreeWidgetItem *after, 
 		after=createTitle(parent, i18n("Expansion ROM"));
 		localAfter=create(after, i18n("Status"),(info->cooked.header.header0.romAddress.romAddress_bits.romEnabled?i18nc(strCtxt, strEnabled):i18nc(strCtxt, strDisabled)));
 		if (PCIDevice->rom_base_addr==0) { //no address at all
-			localAfter=create(after, i18n("Address"),i18n("Unassigned"));
-			localAfter=create(after, i18n("Size"),i18n("Unassigned"));
+			localAfter=create(after, i18n("Address"),i18nc("unassigned address", "Unassigned"));
+			localAfter=create(after, i18n("Size"),i18nc("unassigned size", "Unassigned"));
 		}//if
 		else {
 			localAfter=create(after, i18n("Address"),value.sprintf("0x%X",static_cast<unsigned>(PCIDevice->rom_base_addr)));

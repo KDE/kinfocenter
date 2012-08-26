@@ -66,7 +66,7 @@ void SolDevice::setDefaultListing(const Solid::DeviceInterface::Type &type)
 
 void SolDevice::setDefaultDeviceText() 
 {  
-  QString ddtString = i18n("Unknown");
+  QString ddtString = i18nc("unknown device", "Unknown");
   
   if(deviceSet) ddtString = tiedDevice.product();
   setText(0,ddtString);

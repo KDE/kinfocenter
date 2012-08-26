@@ -73,7 +73,7 @@ QVListLayout *SolProcessorDevice::infoPanelLayout()
   if (insSets & Solid::Processor::IntelSse4) extensions << i18n("Intel SSE4");
   if (insSets & Solid::Processor::Amd3DNow) extensions << i18n("AMD 3DNow");
   if (insSets & Solid::Processor::AltiVec) extensions << i18n("ATI IVEC");
-  if(extensions.isEmpty()) extensions << i18n("None");
+  if(extensions.isEmpty()) extensions << i18nc("no instruction set extensions", "None");
   
   labels << i18n("Processor Number: ")
   << InfoPanel::friendlyString(QString::number(prodev->number())) 
@@ -167,9 +167,9 @@ QVListLayout *SolStorageDevice::infoPanelLayout()
     case Solid::StorageDrive::Sata:
       bus = i18n("SATA"); break;
     case Solid::StorageDrive::Platform:
-      bus = i18n("Platform"); break;
+      bus = i18nc("platform storage bus", "Platform"); break;
     default:
-      bus = i18n("Unknown"); 
+      bus = i18nc("unknown storage bus", "Unknown"); 
   }
   
   labels << i18n("Bus: ")
@@ -304,7 +304,7 @@ QVListLayout *SolVolumeDevice::infoPanelLayout()
     case Solid::StorageVolume::Encrypted:
       usage = i18n("Encrypted"); break;
     default: 
-      usage = i18n("Unknown");
+      usage = i18nc("unknown volume usage", "Unknown");
   }
   
   labels << i18n("File System Type: ") 
@@ -449,7 +449,7 @@ QVListLayout *SolAudioDevice::infoPanelLayout()
     case Solid::AudioInterface::AudioOutput:
       AiType = i18n("Output"); break;
     default:
-      AiType = i18n("Unknown");
+      AiType = i18nc("unknown audio interface type", "Unknown");
   }
   
   QString ScType;
@@ -466,7 +466,7 @@ QVListLayout *SolAudioDevice::infoPanelLayout()
     case Solid::AudioInterface::Modem:
       ScType = i18n("Modem"); break;
     default:
-      ScType = i18n("Unknown"); 
+      ScType = i18nc("unknown sound card type", "Unknown"); 
   }
   
   labels << i18n("Audio Interface Type: ")
@@ -669,7 +669,7 @@ QVListLayout *SolBatteryDevice::infoPanelLayout()
       case Solid::Battery::CameraBattery:
 	type = i18n("Camera"); break;
       default:
-	type = i18n("Unknown");
+	type = i18nc("unknown battery type", "Unknown");
   }
   
   QString state;
@@ -784,7 +784,7 @@ QVListLayout *SolDvbDevice::infoPanelLayout()
       type = i18n("Video"); break;
     case Solid::DvbInterface::DvbUnknown:
     default:
-      type = i18n("Unknown"); 
+      type = i18nc("unknown device type", "Unknown"); 
   }
   
   labels << i18n("Device Type: ")
@@ -829,14 +829,14 @@ QVListLayout *SolSerialDevice::infoPanelLayout()
   switch(serdev->serialType())
   {
     case Solid::SerialInterface::Platform:
-      type = i18n("Platform"); break;
+      type = i18nc("platform serial interface type", "Platform"); break;
     case Solid::SerialInterface::Usb:
       type = i18n("USB"); break;
     default:
-      type = i18n("Unknown"); 
+      type = i18nc("unknown serial interface type", "Unknown"); 
   }
   
-  QString port = i18n("Unknown");
+  QString port = i18nc("unknown port", "Unknown");
   if(serdev->port() != -1) port = QString::number(serdev->port());
 
   labels << i18n("Serial Type: ")
@@ -887,7 +887,7 @@ QVListLayout *SolSmartCardDevice::infoPanelLayout()
     case Solid::SmartCardReader::CryptoToken:
       type = i18n("Crypto Token"); break;
     default:
-      type = i18n("Unknown"); 
+      type = i18nc("unknown smart card type", "Unknown"); 
   }
  
   labels << i18n("Smart Card Type: ")

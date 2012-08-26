@@ -110,7 +110,7 @@ QTreeWidgetItem *DeviceListing::createListItems(const Solid::DeviceInterface::Ty
 	case Solid::DeviceInterface::Video:
 	  return new SolVideoDevice(type);
 	default:
-	  return new SolDevice(type,i18n("Unknown"));
+	  return new SolDevice(type,i18nc("unknown device type", "Unknown"));
       }
 }
 
@@ -160,7 +160,7 @@ void DeviceListing::itemActivatedSlot(QTreeWidgetItem *listItemIn ,const int col
     
     iPanel->setBottomInfo(bottomLay);
   } else {
-    status->updateStatus(i18n("None"));
+    status->updateStatus(i18nc("no device UDI", "None"));
   }
 }
 

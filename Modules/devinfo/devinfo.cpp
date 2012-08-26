@@ -83,7 +83,7 @@ DevInfoPlugin::DevInfoPlugin(QWidget *parent, const QVariantList &)  :
   
   //Misc
   setButtons(Help);
-  updateStatus(i18n("None"));
+  updateStatus(i18nc("no device UDI", "None"));
 }
 
 DevInfoPlugin::~DevInfoPlugin() 

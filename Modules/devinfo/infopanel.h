@@ -56,7 +56,7 @@ class InfoPanel : public QGroupBox
     
     void setTopInfo(const QIcon &, Solid::Device *);
     void setBottomInfo(QVListLayout *lay);
-    static QString friendlyString(const QString &, const QString & = i18n("Unknown"));
+    static QString friendlyString(const QString &, const QString & = i18nc("name of something is not known", "Unknown"));
     static QString convertTf(const bool &);
     
   private:
