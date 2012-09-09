@@ -203,6 +203,7 @@ X-KDE-Keywords[et]=OpenGL,DRI,GLX,3D,videokaart,riistvaraline kiirendus,graafika
 X-KDE-Keywords[fi]=OpenGL,DRI,GLX,3D,3U,näytönohjain,laitteistokiihdytys,grafiikka,X,X11,Xserver,X-Server,X-palvelin,XFree86,näyttö
 X-KDE-Keywords[fr]=OpenGL,DRI,GLX,3D,Carte vidéo,Accélération matérielle,Graphiques,X,X11,Xserver,X-Server,XFree86,Affichage
 X-KDE-Keywords[ga]=OpenGL,DRI,GLX,3D,FísChárta,Luasú Crua-Earraí,Grafaic,X,X11,Freastalaí-X,XFree86,Scáileán
+X-KDE-Keywords[gl]=OpenGL,DRI,GLX,3D,tarxeta de vídeo, aceleración por hardware,gráficos,X,X11,Xserver,Servidor X,XFree86,Monitor,pantalla
 X-KDE-Keywords[hu]=OpenGL,DRI,GLX,3D,Videokártya,Hardveres gyorsítás,Grafika,X,X11,Xserver,X kiszolgáló,XFree86,Kijelző
 X-KDE-Keywords[ia]=OpenGL,DRI,GLX,3D,Scheda video,Acceleration hardware,Graphiches,X,X11,XServer,Servitor de X,XFree86,Monstrator
 X-KDE-Keywords[it]=OpenGL,DRI,GLX,3D,scheda video,accelerazione hardware,grafica,X,X11,Xserver,X-Server,XFree86,schermo
