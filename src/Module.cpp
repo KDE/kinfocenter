@@ -114,7 +114,7 @@ void Module::load()
         ui->kernelLabel->setText(utsName.release);
 
     int bits = QT_POINTER_SIZE == 8 ? 64 : 32;
-    ui->bitsLabel->setText(QString("%1-bit System").arg(QString::number(bits)));
+    ui->bitsLabel->setText(i18n("%1-bit System", QString::number(bits)));
 
     const QList<Solid::Device> list = Solid::Device::listFromType(Solid::DeviceInterface::Processor);
     // Only care about one processor/core...
@@ -125,7 +125,7 @@ void Module::load()
 
     struct sysinfo info;
     sysinfo(&info);
-    ui->memoryLabel->setText(QString("%1 of RAM").arg(KGlobal::locale()->formatByteSize(info.totalram)));
+    ui->memoryLabel->setText(i18n("%1 of RAM", KGlobal::locale()->formatByteSize(info.totalram)));
 }
 
 void Module::save()
