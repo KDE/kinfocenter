@@ -197,6 +197,7 @@ Comment[zh_CN]=X 服务器信息
 Comment[zh_TW]=X 伺服器資訊
 
 X-KDE-Keywords=X,X-Server,XServer,XFree86,Display,VideoCard,System Information
+X-KDE-Keywords[bs]=X,X-Server,XServer,XBesplatno86,Displej,Grafička kartica,Sistemske informacije
 X-KDE-Keywords[ca]=X,Servidor X,XServer,XFree86,Pantalla,Targeta de vídeo,Informació del sistema
 X-KDE-Keywords[ca@valencia]=X,Servidor X,XServer,XFree86,Pantalla,Targeta de vídeo,Informació del sistema
 X-KDE-Keywords[da]=X,X-Server,XServer,XFree86,skærm,Videokort,grafikkort,Systeminformation
