@@ -9,19 +9,8 @@ add_subdirectory( nics )
 if(NOT WIN32)
   add_subdirectory( samba )
 
-  macro_optional_find_package(OpenGL)
-  set_package_properties(OpenGL PROPERTIES DESCRIPTION "API for developing portable, interactive 2D and 3D graphics applications"
-                         URL "http://mesa3d.sourceforge.net"
-                         TYPE OPTIONAL
-                         PURPOSE "View OpenGL details in kinfocenter."
-                        )
-
-  macro_optional_find_package(OpenGLES)
-  set_package_properties(OpenGLES PROPERTIES DESCRIPTION "Support for OpenGL ES2.0 graphics library"
-                         URL "http://www.khronos.org/opengles"
-                         TYPE OPTIONAL
-                         PURPOSE "View OpenGL ES2.0 details in kinfocenter."
-                        )
+add_feature_info("OpenGL support" OPENGL_FOUND "View OpenGL details in kinfocenter." )
+add_feature_info("OpenGL/ES support" OPENGLES_FOUND "View OpenGL ES2.0 details in kinfocenter." )
 
   if(OPENGL_FOUND AND OPENGL_GLU_FOUND AND NOT KWIN_BUILD_WITH_OPENGLES)
       set( KCM_ENABLE_OPENGL 1 )
