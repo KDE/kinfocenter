@@ -10,10 +10,18 @@ if(NOT WIN32)
   add_subdirectory( samba )
 
   macro_optional_find_package(OpenGL)
-  macro_log_feature(OPENGL_FOUND "OpenGL" "API for developing portable, interactive 2D and 3D graphics applications" "http://mesa3d.sourceforge.net" FALSE "" "View OpenGL details in kinfocenter.")
+  set_package_properties(OpenGL PROPERTIES DESCRIPTION "API for developing portable, interactive 2D and 3D graphics applications"
+                         URL "http://mesa3d.sourceforge.net"
+                         TYPE OPTIONAL
+                         PURPOSE "View OpenGL details in kinfocenter."
+                        )
 
   macro_optional_find_package(OpenGLES)
-  macro_log_feature(OPENGLES_FOUND "OpenGL ES" "Support for OpenGL ES2.0 graphics library" "http://www.khronos.org/opengles" FALSE "" "View OpenGL ES2.0 details in kinfocenter.")
+  set_package_properties(OpenGLES PROPERTIES DESCRIPTION "Support for OpenGL ES2.0 graphics library"
+                         URL "http://www.khronos.org/opengles"
+                         TYPE OPTIONAL
+                         PURPOSE "View OpenGL ES2.0 details in kinfocenter."
+                        )
 
   if(OPENGL_FOUND AND OPENGL_GLU_FOUND AND NOT KWIN_BUILD_WITH_OPENGLES)
       set( KCM_ENABLE_OPENGL 1 )
@@ -31,7 +39,11 @@ if(NOT WIN32)
 
 
 macro_optional_find_package(PCIUTILS)
-macro_log_feature(PCIUTILS_FOUND "PCIUTILS" "PciUtils is a library for direct access to PCI slots" "http://atrey.karlin.mff.cuni.cz/~mj/pciutils.shtml" FALSE "" "View PCI details in kinfocenter.")
+set_package_properties(PCIUTILS PROPERTIES DESCRIPTION "PciUtils is a library for direct access to PCI slots"
+                       URL "http://atrey.karlin.mff.cuni.cz/~mj/pciutils.shtml"
+                       TYPE OPTIONAL
+                       PURPOSE "View PCI details in kinfocenter."
+                      )
 
 if(NOT APPLE)
     add_subdirectory( pci )
@@ -39,7 +51,11 @@ endif(NOT APPLE)
 endif(NOT WIN32)
 
 macro_optional_find_package(RAW1394)
-macro_log_feature(RAW1394_FOUND "RAW1394" "library for direct access to IEEE 1394 bus" "http://www.linux1394.org/" FALSE "" "View FireWire devices in kinfocenter.")
+set_package_properties(RAW1394 PROPERTIES DESCRIPTION "library for direct access to IEEE 1394 bus"
+                       URL "http://www.linux1394.org/"
+                       TYPE OPTIONAL
+                       PURPOSE "View FireWire devices in kinfocenter."
+                      )
 
 if(RAW1394_FOUND)
    add_subdirectory( view1394 )
