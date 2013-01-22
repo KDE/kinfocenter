@@ -68,7 +68,17 @@ void SolDevice::setDefaultDeviceText()
 {  
   QString ddtString = i18nc("unknown device", "Unknown");
   
-  if(deviceSet) ddtString = tiedDevice.product();
+  if(deviceSet) {
+    ddtString = tiedDevice.product();
+    if (tiedDevice.isDeviceInterface(Solid::DeviceInterface::StorageVolume) ||
+          tiedDevice.isDeviceInterface(Solid::DeviceInterface::SerialInterface) ||
+          tiedDevice.isDeviceInterface(Solid::DeviceInterface::Battery)) {
+      QString label = SolDevice::udi().section("/", -1, -1);
+      if (!label.isEmpty()) {
+          ddtString = label;
+      }
+    }
+  }
   setText(0,ddtString);
 }
 
