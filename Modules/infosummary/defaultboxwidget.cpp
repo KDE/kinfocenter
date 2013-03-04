@@ -25,8 +25,8 @@
 DefaultBoxWidget::DefaultBoxWidget()
 {
   setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum);
-  setObjectName( QLatin1String("OuterFrame" ));
-  
+  setObjectName(QLatin1String("OuterFrame"));
+
   m_layout = new QGridLayout(this);
   m_layout->setAlignment(Qt::AlignTop|Qt::AlignLeft);
   m_layout->setSpacing(10);
@@ -44,16 +44,22 @@ void DefaultBoxWidget::createDisplay()
   bFont.setBold(true);
   
   m_info0Label = new QLabel();
+  m_info0Label->setTextInteractionFlags(Qt::TextSelectableByMouse);
   m_info0Label->setFont(bFont);
   m_info0NameLabel = new QLabel();
+  m_info0NameLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
   
   m_info1Label = new QLabel();
+  m_info1Label->setTextInteractionFlags(Qt::TextSelectableByMouse);
   m_info1Label->setFont(bFont);
   m_info1NameLabel = new QLabel();
+  m_info1NameLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
  
   m_info2Label = new QLabel();
+  m_info2Label->setTextInteractionFlags(Qt::TextSelectableByMouse);
   m_info2Label->setFont(bFont);
   m_info2NameLabel = new QLabel();
+  m_info2NameLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
   
   m_layout->addWidget(m_iconLabel,1,1,3,1,Qt::AlignCenter);
   

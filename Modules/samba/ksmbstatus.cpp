@@ -42,6 +42,7 @@ NetMon::NetMon(QWidget * parent, KConfig *config) :
 	list = new QTreeWidget(this);
 	topLayout->addWidget(list);
 	version=new QLabel(this);
+	version->setTextInteractionFlags(Qt::TextSelectableByMouse);
 	topLayout->addWidget(version);
 
 	list->setAllColumnsShowFocus(true);

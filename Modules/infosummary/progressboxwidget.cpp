@@ -46,10 +46,13 @@ void ProgressBoxWidget::createDisplay()
   bFont.setBold(true);
   
   m_info0Label = new QLabel();
+  m_info0Label->setTextInteractionFlags(Qt::TextSelectableByMouse);
   m_info0Label->setFont(bFont);
   m_info0NameLabel = new QLabel();
+  m_info0NameLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
   
   m_info1Label = new QLabel();
+  m_info1Label->setTextInteractionFlags(Qt::TextSelectableByMouse);
   m_info1Label->setFont(bFont);
   m_progressBar = new QProgressBar();
   

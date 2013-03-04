@@ -37,6 +37,7 @@
 LogView::LogView(QWidget *parent, KConfig *config) :
 	QWidget(parent), configFile(config), filesCount(0), connectionsCount(0), logFileName(KUrl::fromPath("/var/log/samba.log"), this), label(i18n("Samba log file: "), this), viewHistory(this), showConnOpen(i18n("Show opened connections"), this), showConnClose(i18n("Show closed connections"), this),
 			showFileOpen(i18n("Show opened files"), this), showFileClose(i18n("Show closed files"), this), updateButton(i18n("&Update"), this) {
+	label.setTextInteractionFlags(Qt::TextSelectableByMouse);
 	label.setBuddy( &logFileName);
 	QVBoxLayout *mainLayout=new QVBoxLayout(this);
 	mainLayout->setMargin(KDialog::marginHint());

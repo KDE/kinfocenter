@@ -64,6 +64,7 @@ DevInfoPlugin::DevInfoPlugin(QWidget *parent, const QVariantList &)  :
   boldFont.setBold(true);
   
   QLabel *udiLabel = new QLabel(i18n("UDI: "));
+  udiLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
   udiLabel->setFont(boldFont);
   udiLabel->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
    

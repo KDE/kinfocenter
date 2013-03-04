@@ -27,7 +27,6 @@
 #include <QLayout>
 #include <QPainter>
 #include <QPixmap>
-#include <QLabel>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QLinearGradient>
@@ -170,6 +169,7 @@ QGroupBox* KCMMemory::initializeText() {
 			break;
 		};
 		QLabel* labelWidget = new QLabel(title, this);
+		labelWidget->setTextInteractionFlags(Qt::TextSelectableByMouse);
 		labelWidget->setAlignment(Qt::AlignLeft);
 		vbox->addWidget(labelWidget);
 	}
@@ -185,6 +185,7 @@ QGroupBox* KCMMemory::initializeText() {
 			if (i == SWAP_MEM)
 				vbox->addSpacing(SPACING);
 			QLabel* labelWidget = new QLabel(this);
+			labelWidget->setTextInteractionFlags(Qt::TextSelectableByMouse);
 			labelWidget->setAlignment(Qt::AlignRight);
 			memorySizeLabels[i][j] = labelWidget;
 			vbox->addWidget(labelWidget);

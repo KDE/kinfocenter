@@ -31,7 +31,6 @@
 #include <QPainter>
 
 #include <QPixmap>
-#include <QLabel>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QTreeWidget>

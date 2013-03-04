@@ -42,15 +42,20 @@ StatisticsView::StatisticsView(QWidget *parent, KConfig *config) :
 	QWidget(parent), configFile(config), dataList(0), connectionsCount(0), filesCount(0), calcCount(0) {
 	viewStatistics = new QTreeWidget( this );
 	connectionsL = new QLabel( i18n( "Connections: 0" ), this );
+	connectionsL->setTextInteractionFlags(Qt::TextSelectableByMouse);
 	filesL = new QLabel( i18n( "File accesses: 0" ), this );
+	filesL->setTextInteractionFlags(Qt::TextSelectableByMouse);
 	eventCb = new QComboBox( this );
 	eventL = new QLabel( i18n( "Event: " ), this );
+	eventL->setTextInteractionFlags(Qt::TextSelectableByMouse);
 	eventL->setBuddy(eventCb);
 	serviceLe = new QLineEdit( this );
 	serviceL = new QLabel( i18n( "Service/File:" ), this );
+	serviceL->setTextInteractionFlags(Qt::TextSelectableByMouse);
 	serviceL->setBuddy(serviceLe);
 	hostLe = new QLineEdit( this );
 	hostL = new QLabel( i18n( "Host/User:" ), this );
+	hostL->setTextInteractionFlags(Qt::TextSelectableByMouse);
 	hostL->setBuddy(hostLe);
 	calcButton = new QPushButton( i18n( "&Search" ), this );
 	clearButton = new QPushButton( i18n( "Clear Results" ), this );

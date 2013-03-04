@@ -117,6 +117,7 @@ ChartWidget::ChartWidget(const QString& title, const QString& hint, Chart* chart
 	QVBoxLayout* mainLayout = new QVBoxLayout(this);
 	
 	titleLabel = new QLabel("<strong>" + title + "</strong>", this);
+	titleLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
 	titleLabel->setAlignment(Qt::AlignHCenter);
 	titleLabel->setToolTip(hint);
 	mainLayout->addWidget(titleLabel);
@@ -126,6 +127,7 @@ ChartWidget::ChartWidget(const QString& title, const QString& hint, Chart* chart
 	mainLayout->addWidget(chart);
 	
 	freeMemoryLabel = new QLabel("", this);
+	freeMemoryLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
 	freeMemoryLabel->setAlignment(Qt::AlignHCenter);
 	freeMemoryLabel->setToolTip(hint);
 	mainLayout->addWidget(freeMemoryLabel);

@@ -22,7 +22,6 @@
 #define KCONTROL_KCM_PCI_H
 
 #include <QWidget>
-#include <QLabel>
 #include <QPushButton>
 
 #include <kcmodule.h>
