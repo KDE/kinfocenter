@@ -581,7 +581,7 @@ static QTreeWidgetItem* addCapsAgp(QTreeWidgetItem *parent, QTreeWidgetItem *aft
 		}//if
 		localAfter=create(after, i18n("Maximum number of AGP command"),value.sprintf("%i (0x%02X)",infoAgp.cooked.status.status_bits1.statusReq+1,infoAgp.cooked.status.status_bits1.statusReq));
 		localAfter=NULL;
-		after=create(parent, i18n("Configuration"),value.sprintf("0x%08X",infoAgp.cooked.config.config));
+		after=create(parent, i18n("Configuration"),value.sprintf("0x%08X",infoAgp.cooked.config));
 		localAfter=create(after, i18n("Rate"),getNameById(agpRate,infoAgp.cooked.config.config_bits0.configEnhRate));
 		localAfter=create(after, i18n("Fast Writes"),(infoAgp.cooked.config.config_bits1.configFastWrite?i18nc(strCtxt, strEnabled):i18nc(strCtxt, strDisabled)));
 		if (infoAgp.cooked.status.status_bits1.statusMode==1) {
