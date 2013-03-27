@@ -117,11 +117,30 @@ void Module::load()
     ui->bitsLabel->setText(i18n("%1-bit", QString::number(bits)));
 
     const QList<Solid::Device> list = Solid::Device::listFromType(Solid::DeviceInterface::Processor);
-    // Only care about one processor/core...
-    QString processorName = list.at(1).product();
-    processorName = processorName.replace(QString("(TM)"), QChar(8482));
-    processorName = processorName.replace(QString("(R)"), QChar(174));
-    ui->processorLabel->setText(processorName.simplified());
+    ui->processor->setText(i18np("Processor:", "Processors:", list.count()));
+    // Format processor string
+    // Group by processor name
+    QMap<QString, int> processorMap;
+    Q_FOREACH(Solid::Device device, list) {
+        const QString name = device.product();
+        auto it = processorMap.find(name);
+        if (it == processorMap.end()) {
+            processorMap.insert(name, 1);
+        } else {
+            ++it.value();
+        }
+    }
+    // Create a formatted list of grouped processors
+    QStringList names;
+    for (auto it = processorMap.constBegin(); it != processorMap.constEnd(); ++it) {
+        const int count = it.value();
+        QString name = it.key();
+        name.replace(QString("(TM)"), QChar(8482));
+        name.replace(QString("(R)"), QChar(174));
+        name = name.simplified();
+        names.append(QString::fromUtf8("%1 × %2").arg(count).arg(name));
+    }
+    ui->processorLabel->setText(names.join(", "));
 
     struct sysinfo info;
     sysinfo(&info);
