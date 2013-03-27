@@ -114,7 +114,7 @@ void Module::load()
         ui->kernelLabel->setText(utsName.release);
 
     int bits = QT_POINTER_SIZE == 8 ? 64 : 32;
-    ui->bitsLabel->setText(i18n("%1-bit System", QString::number(bits)));
+    ui->bitsLabel->setText(i18n("%1-bit", QString::number(bits)));
 
     const QList<Solid::Device> list = Solid::Device::listFromType(Solid::DeviceInterface::Processor);
     // Only care about one processor/core...
