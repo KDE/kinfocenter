@@ -121,7 +121,7 @@ void Module::load()
     QString processorName = list.at(1).product();
     processorName = processorName.replace(QString("(TM)"), QChar(8482));
     processorName = processorName.replace(QString("(R)"), QChar(174));
-    ui->processorLabel->setText(processorName);
+    ui->processorLabel->setText(processorName.simplified());
 
     struct sysinfo info;
     sysinfo(&info);
