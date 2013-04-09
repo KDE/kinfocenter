@@ -30,11 +30,11 @@ LSBRelease::LSBRelease()
     QFile file("/etc/lsb-release");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         kDebug() << "Could not open /etc/lsb-release, aborting LSB";
-        QString unkown = i18nc("@label", "Unknown");
-        m_id = unkown;
-        m_release = unkown;
-        m_codename = unkown;
-        m_description = unkown;
+        QString unknown = i18nc("@label", "Unknown");
+        m_id = unknown;
+        m_release = unknown;
+        m_codename = unknown;
+        m_description = unknown;
         return;
     }
 
@@ -44,7 +44,7 @@ LSBRelease::LSBRelease()
     while (!file.atEnd()) {
         line = file.readLine();
         comps = line.split(QChar('='));
-#warning unkown set?
+#warning unknown set?
         Q_ASSERT(comps.size() == 2);
         QString key = comps.at(0);
         QString value = comps.at(1).trimmed();
@@ -60,7 +60,7 @@ LSBRelease::LSBRelease()
             Q_ASSERT(false); // Should not happen!
     }
 
-#warning unkown set?
+#warning unknown set?
     if (m_id.isEmpty() || m_release.isEmpty())
         Q_ASSERT(false); // meh.
 
