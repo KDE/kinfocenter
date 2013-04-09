@@ -1,17 +1,16 @@
 [Desktop Entry]
-Exec=kcmshell4 about-distro
-Icon=help-about
 Type=Service
-X-KDE-ServiceTypes=KCModule
+Icon=help-about
+Exec=kcmshell4 about-distro
 
 X-KDE-Library=kcm_about_distro
-X-KDE-PluginKeyword=about-distro
-X-KDE-ParentApp=kcontrol
-
-X-KDE-Keywords=
+X-KDE-ServiceTypes=KCModule
 X-KDE-System-Settings-Parent-Category=system-administration
+X-KDE-System-Settings-Parent-Category-V2=system-administration
+X-KDE-ParentApp=kcontrol
+X-KDE-PluginKeyword=about-distro
+X-KDE-Keywords=
+Categories=Qt;KDE;X-KDE-settings-system-administration;
 
-Name=About
+Name=About System
 Comment=
-
-Categories=Qt;KDE;
