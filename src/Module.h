@@ -1,5 +1,5 @@
 /*
-  Copyright © 2012 Harald Sitter <apachelogger@ubuntu.com>
+  Copyright (C) 2012 Harald Sitter <apachelogger@ubuntu.com>
 
   This program is free software; you can redistribute it and/or
   modify it under the terms of the GNU General Public License as
