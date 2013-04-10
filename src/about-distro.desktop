@@ -8,9 +8,10 @@ X-KDE-ServiceTypes=KCModule
 X-KDE-System-Settings-Parent-Category=system-administration
 X-KDE-System-Settings-Parent-Category-V2=system-administration
 X-KDE-ParentApp=kcontrol
+X-KDE-ParentApp=kinfocenter
 X-KDE-PluginKeyword=about-distro
-X-KDE-Keywords=
-Categories=Qt;KDE;X-KDE-settings-system-administration;
+X-KDE-Keywords=information,distribution,distro,system,kernel,qt,kde
+Categories=Qt;KDE;X-KDE-settings-system-administration;X-KDE-information;
 
 Name=About System
-Comment=
+Comment=Information About This System
