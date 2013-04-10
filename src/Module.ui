@@ -164,7 +164,7 @@
    <item row="5" column="1">
     <widget class="QLabel" name="kde">
      <property name="text">
-      <string>KDE SC Version:</string>
+      <string>KDELibs Version:</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
