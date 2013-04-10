@@ -63,8 +63,4 @@ LSBRelease::LSBRelease()
 #warning unknown set?
     if (m_id.isEmpty() || m_release.isEmpty())
         Q_ASSERT(false); // meh.
-
-    // For branding reasons we always talk about Kubuntu
-    if (m_id == QLatin1String("Ubuntu"))
-        m_id = QLatin1String("Kubuntu");
 }

@@ -101,7 +101,11 @@ void Module::load()
         ui->urlLabel->setText(QString("<a href='%1'>%1</a>").arg(url));
 
     LSBRelease lsb;
-    ui->nameVersionLabel->setText(QString("%1 %2").arg(lsb.id(), lsb.release()));
+    // We allow overriding of the LSB name for branding purposes.
+    // For example LSB Ubuntu may be rebranded as Kubuntu. Also Kubuntu Active
+    // as a product brand is different from Kubuntu.
+    QString distroName = cg.readEntry("Name", lsb.id());
+    ui->nameVersionLabel->setText(QString("%1 %2").arg(distroName, lsb.release()));
 
     ui->kdeLabel->setText(QLatin1String(KDE::versionString()));
     ui->qtLabel->setText(qVersion());
