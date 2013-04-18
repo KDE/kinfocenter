@@ -44,14 +44,14 @@
 #include "soldevicetypes.h"
 #include "devinfo.h"
 #include "solidhelper.h"
-#include "nicsignals.h"
+//#include "nicsignals.h"
 
 //Kde
 #include <klocale.h>
 
 class InfoPanel;
 class DevInfoPlugin;
-class NicSignals;
+//class NicSignals;
 
 class DeviceListing : public QTreeWidget
 {  
@@ -87,7 +87,7 @@ class DeviceListing : public QTreeWidget
     QAction *colAct, *expAct, *allAct, *relAct;
     DevInfoPlugin *status;
     Solid::Networking::Notifier *network;
-    NicSignals *nicSig;
+    //NicSignals *nicSig;
     
   public slots:
     void itemActivatedSlot(QTreeWidgetItem *,const int);
