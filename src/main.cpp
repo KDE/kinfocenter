@@ -24,5 +24,5 @@
 #include "Module.h"
 
 K_PLUGIN_FACTORY(KcmAboutDistroFactory,
-                 registerPlugin<Module>("about-distro");)
-K_EXPORT_PLUGIN(KcmAboutDistroFactory("about-distro"))
+                 registerPlugin<Module>("kcm-about-distro");)
+K_EXPORT_PLUGIN(KcmAboutDistroFactory("kcm-about-distro"))

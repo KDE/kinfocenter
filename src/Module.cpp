@@ -47,7 +47,7 @@ Module::Module(QWidget *parent, const QVariantList &args) :
     KCModule(KcmAboutDistroFactory::componentData(), parent, args),
     ui(new Ui::Module)
 {
-    KAboutData *about = new KAboutData("about-distro", 0,
+    KAboutData *about = new KAboutData("kcm-about-distro", 0,
                                        ki18n("About Distribution"),
                                        global_s_versionStringFull,
                                        ki18n("DESCRIPTION..."),
