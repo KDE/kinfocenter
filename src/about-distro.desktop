@@ -11,7 +11,10 @@ X-KDE-ParentApp=kcontrol
 X-KDE-ParentApp=kinfocenter
 X-KDE-PluginKeyword=about-distro
 X-KDE-Keywords=information,distribution,distro,system,kernel,qt,kde
+X-KDE-Keywords[sv]=information,distribution,distro,system,kärna,qt,kde
 Categories=Qt;KDE;X-KDE-settings-system-administration;X-KDE-information;
 
 Name=About System
+Name[sv]=Om systemet
 Comment=Information About This System
+Comment[sv]=Information om det här systemet
