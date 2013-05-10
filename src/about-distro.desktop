@@ -22,6 +22,7 @@ X-KDE-Keywords[x-test]=xxinformation,distribution,distro,system,kernel,qt,kdexx
 Categories=Qt;KDE;X-KDE-settings-system-administration;X-KDE-information;
 
 Name=About System
+Name[cs]=O systému
 Name[de]=Über das System
 Name[nl]=Over systeem
 Name[pt]=Acerca do Sistema
