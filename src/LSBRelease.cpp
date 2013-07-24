@@ -30,7 +30,8 @@ LSBRelease::LSBRelease()
     QFile file("/etc/lsb-release");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         kDebug() << "Could not open /etc/lsb-release, aborting LSB";
-        QString unknown = i18nc("@label", "Unknown");
+        const QString unknown = i18nc("@label unknown distribution information (name, version, release codename, description)",
+                                      "Unknown");
         m_id = unknown;
         m_release = unknown;
         m_codename = unknown;
