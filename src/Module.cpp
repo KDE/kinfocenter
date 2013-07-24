@@ -50,7 +50,7 @@ Module::Module(QWidget *parent, const QVariantList &args) :
     KAboutData *about = new KAboutData("kcm-about-distro", 0,
                                        ki18n("About Distribution"),
                                        global_s_versionStringFull,
-                                       ki18n("DESCRIPTION..."),
+                                       KLocalizedString(),
                                        KAboutData::License_GPL_V3,
                                        ki18n("Copyright 2012 Harald Sitter"),
                                        KLocalizedString(), QByteArray(),
