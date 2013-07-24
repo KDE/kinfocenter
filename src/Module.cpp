@@ -71,8 +71,7 @@ Module::Module(QWidget *parent, const QVariantList &args) :
     // We have no help so remove the button from the buttons.
     setButtons(buttons() ^ KCModule::Help ^ KCModule::Default ^ KCModule::Apply);
 
-    QShortcut *shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::
-Key_G), this);
+    QShortcut *shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_G), this);
     connect(shortcut, SIGNAL(activated()), this, SLOT(onStyle()));
 }
 
