@@ -14,7 +14,7 @@ kde4_add_plugin(kcm_about_distro ${kcm_SRCS})
 target_link_libraries(kcm_about_distro
     ${KDE4_KDEUI_LIBRARY}
     ${KDE4_KIO_LIBS}
-    solid
+    ${KDE4_SOLID_LIBRARY}
 )
 
 install(TARGETS kcm_about_distro DESTINATION ${PLUGIN_INSTALL_DIR})
