@@ -35,7 +35,9 @@
 #include <solid/device.h>
 #include <solid/processor.h>
 
+#ifdef Q_OS_LINUX
 #include <sys/sysinfo.h>
+#endif
 #include <sys/utsname.h>
 
 #include "LSBRelease.h"
@@ -46,9 +48,11 @@ K_PLUGIN_FACTORY_DECLARATION(KcmAboutDistroFactory);
 static qlonglong calculateTotalRam()
 {
     qlonglong ret = -1;
+#ifdef Q_OS_LINUX
     struct sysinfo info;
     if (sysinfo(&info) == 0)
         ret = info.totalram;
+#endif
     return ret;
 }
 
