@@ -158,10 +158,6 @@ void Module::defaults()
 {
 }
 
-void Module::onChanged()
-{
-}
-
 void Module::onStyle()
 {
     KToolInvocation::invokeBrowser("http://www.youtube.com/watch?v=CX_4aGQWw_4");

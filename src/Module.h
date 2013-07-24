@@ -51,35 +51,15 @@ public:
 
     /**
      * Overloading the KCModule save() function.
-     *
-     * Saving a script file exporting QT_GRAPHICSSYSTEM to KDE's env directory
-     * which gets included by startkde at startup.
-     *
-     * The file will only be created if:
-     *   * A radio button is checked
-     *   * The checked button is NOT the same as the one probed @see probedButton
-     *
-     * If there is no button selected the script file will be removed.
      */
     void save();
 
     /**
      * Overloading the KCModule defaults() function.
-     *
-     * Setting all radio buttons to unchecked, which indicates for save() to
-     * restore to system default (i.e. remove the script file).
      */
     void defaults();
 
 protected slots:
-    /**
-     * Called when the user selects a radio button.
-     *
-     * This shows an informational message in the lower left corner that a
-     * re-login is required to apply the changed
-     */
-    void onChanged();
-
     void onStyle();
 
 private:
