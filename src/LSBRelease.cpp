@@ -30,12 +30,10 @@ LSBRelease::LSBRelease()
     QFile file("/etc/lsb-release");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         kDebug() << "Could not open /etc/lsb-release, aborting LSB";
-        const QString unknown = i18nc("@label unknown distribution information (name, version, release codename, description)",
-                                      "Unknown");
-        m_id = unknown;
-        m_release = unknown;
-        m_codename = unknown;
-        m_description = unknown;
+        m_id = i18nc("@label Unknown distribution name (e.g. MyDistro)", "Unknown");
+        m_release = i18nc("@label Unknown distribution version (e.g. 1.0)", "Unknown");
+        m_codename = i18nc("@label Unknown distribution codename (e.g. for Kubuntu this would be 'raring' or 'saucy')", "Unknown");
+        m_description = i18nc("@label Unknown distribution description (this often is a combination of name and version, such as 'MyDistro 1.0'", "Unknown");
         return;
     }
 
