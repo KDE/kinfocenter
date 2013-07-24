@@ -137,7 +137,7 @@ void Module::load()
     // Format processor string
     // Group by processor name
     QMap<QString, int> processorMap;
-    Q_FOREACH(Solid::Device device, list) {
+    Q_FOREACH(const Solid::Device &device, list) {
         const QString name = device.product();
         auto it = processorMap.find(name);
         if (it == processorMap.end()) {
