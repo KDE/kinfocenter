@@ -43,6 +43,15 @@
 
 K_PLUGIN_FACTORY_DECLARATION(KcmAboutDistroFactory);
 
+static qlonglong calculateTotalRam()
+{
+    qlonglong ret = -1;
+    struct sysinfo info;
+    if (sysinfo(&info) == 0)
+        ret = info.totalram;
+    return ret;
+}
+
 Module::Module(QWidget *parent, const QVariantList &args) :
     KCModule(KcmAboutDistroFactory::componentData(), parent, args),
     ui(new Ui::Module)
@@ -145,9 +154,10 @@ void Module::load()
     }
     ui->processorLabel->setText(names.join(", "));
 
-    struct sysinfo info;
-    sysinfo(&info);
-    ui->memoryLabel->setText(i18n("%1 of RAM", KGlobal::locale()->formatByteSize(info.totalram)));
+    const qlonglong totalRam = calculateTotalRam();
+    ui->memoryLabel->setText(totalRam > 0
+                             ? i18n("%1 of RAM", KGlobal::locale()->formatByteSize(totalRam))
+                             : i18nc("Unknown amount of RAM", "Unknown"));
 }
 
 void Module::save()
