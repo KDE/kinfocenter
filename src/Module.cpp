@@ -130,7 +130,8 @@ void Module::load()
         ui->kernelLabel->setText(utsName.release);
 
     const int bits = QT_POINTER_SIZE == 8 ? 64 : 32;
-    ui->bitsLabel->setText(i18n("%1-bit", QString::number(bits)));
+    ui->bitsLabel->setText(i18nc("@label %1 is the CPU bit width (e.g. 32 or 64)",
+                                 "<numid>%1</numid>-bit", bits));
 
     const QList<Solid::Device> list = Solid::Device::listFromType(Solid::DeviceInterface::Processor);
     ui->processor->setText(i18np("Processor:", "Processors:", list.count()));
@@ -160,7 +161,8 @@ void Module::load()
 
     const qlonglong totalRam = calculateTotalRam();
     ui->memoryLabel->setText(totalRam > 0
-                             ? i18n("%1 of RAM", KGlobal::locale()->formatByteSize(totalRam))
+                             ? i18nc("@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)",
+                                     "%1 of RAM", KGlobal::locale()->formatByteSize(totalRam))
                              : i18nc("Unknown amount of RAM", "Unknown"));
 }
 
