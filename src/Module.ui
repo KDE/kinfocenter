@@ -127,7 +127,7 @@
    <item row="11" column="1">
     <widget class="QLabel" name="processor">
      <property name="text">
-      <string>Processor:</string>
+      <string notr="true">Processor:</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
