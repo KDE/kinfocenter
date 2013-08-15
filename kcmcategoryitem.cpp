@@ -28,68 +28,58 @@ KcmCategoryItem::KcmCategoryItem(const KService::Ptr module, KcmTreeItem *parent
 }
 
 KcmCategoryItem::KcmCategoryItem(const QString& categoryName) :
-  KcmTreeItem(),
-  m_category(categoryName)
+  KcmTreeItem(), m_category(categoryName)
 {
 }
 
 QString KcmCategoryItem::data() const
 {
-	if(m_category.isEmpty())
-	{
-		return m_moduleInfo->moduleName();
-	}
-	else
-	{
-		return category();
-	}
+    if(m_category.isEmpty()) {
+        return m_moduleInfo->moduleName();
+    }
+
+    return category();
 }
 
 KcmTreeItem::itemType KcmCategoryItem::type() const
 {
-	return CATEGORY;
+    return CATEGORY;
 }
 
 QString KcmCategoryItem::category() const
 {
-	if(m_category.isEmpty())
-	{
-		return m_module->property("X-KDE-KInfoCenter-Category").toString().trimmed();
-	}
-	else
-	{
-		return m_category;
-	}
+    if(m_category.isEmpty())
+    {
+        return m_module->property("X-KDE-KInfoCenter-Category").toString().trimmed();
+    }
+    return m_category;
 }
 
 KCModuleInfo KcmCategoryItem::kcm() const
 {
-	return KCModuleInfo();
+    return KCModuleInfo();
 }
 
 int KcmCategoryItem::weight()
 {
-	return (category().count() + 1000);
+    return (category().count() + 1000);
 }
 
 KIcon KcmCategoryItem::icon() const
 {
-	if(m_category.isEmpty())
-	{
-		return KIcon(m_moduleInfo->icon());
-	}
-	else
-	{
-		return KIcon("");
-	}
+    if(m_category.isEmpty())
+    {
+        return KIcon(m_moduleInfo->icon());
+    }
+    return KIcon("");
 }
 
 QString KcmCategoryItem::whatsThis() const
 {
-	return QString();
+    return QString();
 }
 
 QStringList KcmCategoryItem::keywords() const
 {
-	return QStringList();
+    return QStringList();
 }

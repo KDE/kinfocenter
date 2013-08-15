@@ -41,96 +41,96 @@ class KcmTreeItem;
 
 class InfoKcmModel : public QAbstractItemModel
 {
-	Q_OBJECT
+    Q_OBJECT
 
-	public:
+    public:
 
-		/**
-		* Create InfoKcmModel object.
-		* Abstract data model to display KCM's for a tree view
-		*
-		* @param parent objects parent
-		*/
-		InfoKcmModel(QObject *parent);
+        /**
+        * Create InfoKcmModel object.
+        * Abstract data model to display KCM's for a tree view
+        *
+        * @param parent objects parent
+        */
+        InfoKcmModel(QObject *parent);
 
-		~InfoKcmModel();
+        ~InfoKcmModel();
 
-		/**
-		* Get index of item in model
-		*
-		* @param row row position
-		* @param column column position
-		* @param parent parent of object
-		* @return index of object
-		*/
-		QModelIndex index(int row, int column, const QModelIndex& parent) const;
-		QModelIndex index(int row, int column, KcmTreeItem *parent) const;
+        /**
+        * Get index of item in model
+        *
+        * @param row row position
+        * @param column column position
+        * @param parent parent of object
+        * @return index of object
+        */
+        QModelIndex index(int row, int column, const QModelIndex& parent) const;
+        QModelIndex index(int row, int column, KcmTreeItem *parent) const;
 
-		/**
-		* Get parent of item in model
-		*/
-		QModelIndex parent(const QModelIndex& index) const;
+        /**
+        * Get parent of item in model
+        */
+        QModelIndex parent(const QModelIndex& index) const;
 
-		/**
-		* Get amount of rows under parent
-		*/
-		int rowCount(const QModelIndex& parent) const;
+        /**
+        * Get amount of rows under parent
+        */
+        int rowCount(const QModelIndex& parent) const;
 
-		/**
-		* Get amount of columns under parent
-		*/
-		int columnCount(const QModelIndex& parent) const;
+        /**
+        * Get amount of columns under parent
+        */
+        int columnCount(const QModelIndex& parent) const;
 
-		/**
-		* Get the stored data for a role
-		*
-		* @param index objects index
-		* @param role role to retrieve data about
-		*/
-		QVariant data(const QModelIndex& index, int role) const;
+        /**
+        * Get the stored data for a role
+        *
+        * @param index objects index
+        * @param role role to retrieve data about
+        */
+        QVariant data(const QModelIndex& index, int role) const;
 
-		/**
-		* Get header information
-		*/
-		QVariant headerData(int, Qt::Orientation, int) const;
+        /**
+        * Get header information
+        */
+        QVariant headerData(int, Qt::Orientation, int) const;
 
-		/**
-		* Get set flags for a treeitem
-		*/
-		Qt::ItemFlags flags(const QModelIndex &) const;
+        /**
+        * Get set flags for a treeitem
+        */
+        Qt::ItemFlags flags(const QModelIndex &) const;
 
-		/**
-		* Get the first valid item on the treeview
-		* Checks main root items only
-		*
-		* @return index of valid item
-		*/
-		QModelIndex firstValid() const;
+        /**
+        * Get the first valid item on the treeview
+        * Checks main root items only
+        *
+        * @return index of valid item
+        */
+        QModelIndex firstValid() const;
 
-		/**
-		* Get all KCM keywords for all KCMs stored in the model
-		*/
-		QStringList allChildrenKeywords();
+        /**
+        * Get all KCM keywords for all KCMs stored in the model
+        */
+        QStringList allChildrenKeywords();
 
-		/**
-		* Get QModelIndex of a KcmTreeItem
-		*/
-		QModelIndex indexOf(KcmTreeItem *item);
+        /**
+        * Get QModelIndex of a KcmTreeItem
+        */
+        QModelIndex indexOf(KcmTreeItem *item);
 
-		private:
+        private:
 
-		/**
-		* Init tree items
-		*/
-		void createTreeItems();
+        /**
+        * Init tree items
+        */
+        void createTreeItems();
 
-		/**
-		* Get a certain KCM's keywords
-		*/
-		QStringList childrenKeywords(KcmTreeItem *kcmItem);
+        /**
+        * Get a certain KCM's keywords
+        */
+        QStringList childrenKeywords(KcmTreeItem *kcmItem);
 
-		KService::List m_moduleList;
-		KcmTreeItem *m_root;
+        KService::List m_moduleList;
+        KcmTreeItem *m_root;
 };
 
 #endif // INFOKCMMODEL
