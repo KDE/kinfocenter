@@ -18,7 +18,7 @@ set(kcm_nic_PART_SRCS nic.cpp )
 kde4_add_plugin(kcm_nic ${kcm_nic_PART_SRCS})
 
 
-target_link_libraries(kcm_nic  ${KDE4_KIO_LIBS} )
+target_link_libraries(kcm_nic  KF5::KIOCore KF5::KIOWidgets )
 
 install(TARGETS kcm_nic  DESTINATION ${PLUGIN_INSTALL_DIR} )
 
