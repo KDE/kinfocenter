@@ -51,7 +51,8 @@ static qlonglong calculateTotalRam()
 #ifdef Q_OS_LINUX
     struct sysinfo info;
     if (sysinfo(&info) == 0)
-        ret = info.totalram;
+        // manpage "sizes are given as multiples of mem_unit bytes"
+        ret = info.totalram * info.mem_unit;
 #endif
     return ret;
 }
