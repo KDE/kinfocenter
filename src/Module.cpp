@@ -159,6 +159,10 @@ void Module::load()
         names.append(QString::fromUtf8("%1 × %2").arg(count).arg(name));
     }
     ui->processorLabel->setText(names.join(", "));
+    if (ui->processorLabel->text().isEmpty()) {
+        ui->processor->setHidden(true);
+        ui->processorLabel->setHidden(true);
+    }
 
     const qlonglong totalRam = calculateTotalRam();
     ui->memoryLabel->setText(totalRam > 0
