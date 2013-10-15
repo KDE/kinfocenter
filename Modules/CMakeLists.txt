@@ -27,7 +27,7 @@ add_feature_info("OpenGL/ES support" OPENGLES_FOUND "View OpenGL ES2.0 details i
   endif(KCM_ENABLE_OPENGL OR KCM_ENABLE_OPENGLES)
 
 
-macro_optional_find_package(PCIUTILS)
+find_package(PCIUTILS MODULE)
 set_package_properties(PCIUTILS PROPERTIES DESCRIPTION "PciUtils is a library for direct access to PCI slots"
                        URL "http://atrey.karlin.mff.cuni.cz/~mj/pciutils.shtml"
                        TYPE OPTIONAL
@@ -39,7 +39,7 @@ if(NOT APPLE)
 endif(NOT APPLE)
 endif(NOT WIN32)
 
-macro_optional_find_package(RAW1394)
+find_package(RAW1394 MODULE)
 set_package_properties(RAW1394 PROPERTIES DESCRIPTION "library for direct access to IEEE 1394 bus"
                        URL "http://www.linux1394.org/"
                        TYPE OPTIONAL
