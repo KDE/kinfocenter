@@ -89,7 +89,7 @@ class DeviceListing : public QTreeWidget
     Solid::Networking::Notifier *network;
     //NicSignals *nicSig;
     
-  public slots:
+  public Q_SLOTS:
     void itemActivatedSlot(QTreeWidgetItem *,const int);
     void deviceAddedSlot(const QString);
     void deviceRemovedSlot(const QString);
