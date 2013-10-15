@@ -39,7 +39,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 class KInfoListWidget : public KCModule
 {
 public:
-  KInfoListWidget(const KComponentData &inst,const QString &_title, QWidget *parent, bool _getlistbox (QTreeWidget*) = NULL);
+  KInfoListWidget(const QString &_title, QWidget *parent, bool _getlistbox (QTreeWidget*) = NULL);
 
   virtual void load();
   virtual QString quickHelp() const;

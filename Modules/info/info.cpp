@@ -34,8 +34,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <klocale.h>
 #include <kdebug.h>
 
-KInfoListWidget::KInfoListWidget(const KComponentData &inst, const QString &_title, QWidget *parent, bool _getlistbox(QTreeWidget *tree) ) :
-	KCModule(inst, parent), title(_title) {
+KInfoListWidget::KInfoListWidget(const QString &_title, QWidget *parent, bool _getlistbox(QTreeWidget *tree) ) :
+	KCModule(parent), title(_title) {
 	KAboutData *about = new KAboutData("kcminfo", QString(),
 			i18n("System Information Control Module"),
 			QString(), QString(), KAboutData::License_GPL,

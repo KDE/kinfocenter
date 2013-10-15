@@ -47,8 +47,7 @@ class K##type##InfoWidget : public KInfoListWidget \
 { \
     public: \
         K##type##InfoWidget(QWidget *parent, const QVariantList &) \
-            : KInfoListWidget(KInfoModulesFactory::componentData(), \
-                    name, parent, GetInfo_##type) \
+            : KInfoListWidget(name, parent, GetInfo_##type) \
         { \
         } \
 }; \
