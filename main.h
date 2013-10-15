@@ -31,7 +31,7 @@
 
 class KInfoCenter;
 
-class KicApp : public KApplication {
+class KicApp : public QApplication {
 
     Q_OBJECT
 
@@ -39,7 +39,7 @@ class KicApp : public KApplication {
         /**
         * Init main window of application
         */
-        KicApp();
+        KicApp(int &argc, char **argv);
 
     private:
         KInfoCenter *display;
