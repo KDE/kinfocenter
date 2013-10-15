@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=kcmshell4 dma
+Exec=kcmshell5 dma
 Icon=text-x-texinfo
 Type=Service
 X-KDE-ServiceTypes=KCModule

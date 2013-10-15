@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=kcmshell4 xserver
+Exec=kcmshell5 xserver
 Icon=xorg
 Type=Service
 X-KDE-ServiceTypes=KCModule
