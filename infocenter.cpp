@@ -256,7 +256,7 @@ void KInfoCenter::exportClickedSlot()
         return;
     }
 
-    QString fileName = KFileDialog::getSaveFileName(KUrl(moduleName + ".txt"),QString(),this);
+    QString fileName = QFileDialog::getSaveFileName(this, QString(moduleName + ".txt"));
     if(fileName.isEmpty()) return;
 
     QFile exportFile(fileName);
