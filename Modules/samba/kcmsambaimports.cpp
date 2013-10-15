@@ -26,7 +26,7 @@
 #include <QLayout>
 #include <QWhatsThis>
 
-#include <klocale.h>
+#include <KLocalizedString>
 #include <kdialog.h>
 
 #include <stdio.h>

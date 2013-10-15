@@ -24,7 +24,7 @@
 
 #include <QLayout>
 
-#include <klocale.h>
+#include <KLocalizedString>
 #include <kdialog.h>
 
 #include "ksmbstatus.h"

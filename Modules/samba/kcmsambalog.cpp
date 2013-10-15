@@ -27,7 +27,7 @@
 
 #include <kmessagebox.h>
 #include <kdialog.h>
-#include <klocale.h>
+#include <KLocalizedString>
 
 #include "kcmsambalog.h"
 #include "kcmsambalog.moc"

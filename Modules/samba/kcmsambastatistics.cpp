@@ -36,6 +36,7 @@
 #include <KDebug>
 #include <KDialog>
 #include <KGlobal>
+#include <KLocalizedString>
 #include <KLocale>
 
 StatisticsView::StatisticsView(QWidget *parent, KConfig *config) :
