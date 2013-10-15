@@ -24,7 +24,7 @@
 #include "infocenter.h"
 
 //KDE
-#include <KLocale>
+#include <KLocalizedString>
 #include <KIcon>
 #include <KMenuBar>
 #include <KMenu>
@@ -40,9 +40,9 @@
 #include <KActionCollection>
 #include <KAboutApplicationDialog>
 #include <KMessageBox>
-#include <KFileDialog>
 #include <KShortcut>
 #include <KToolBar>
+#include <KUrl>
 
 //QT
 #include <QGridLayout>
@@ -50,6 +50,7 @@
 #include <QTextStream>
 #include <QFile>
 #include <QKeySequence>
+#include <QFileDialog>
 
 KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
 {

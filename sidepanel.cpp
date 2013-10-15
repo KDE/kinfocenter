@@ -24,7 +24,7 @@
 #include "sidepanel.h"
 
 //KDE
-#include <KLocale>
+#include <KLocalizedString>
 #include <KDebug>
 
 //QT

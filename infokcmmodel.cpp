@@ -27,6 +27,7 @@
 //KDE
 #include <KServiceTypeTrader>
 #include <KDebug>
+#include <KLocalizedString>
 
 InfoKcmModel::InfoKcmModel(QObject *parent) : QAbstractItemModel(parent), m_root(new KcmCategoryItem(i18n("Information Modules")))
 {

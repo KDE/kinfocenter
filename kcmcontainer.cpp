@@ -25,6 +25,7 @@
 //KDE
 #include <KIcon>
 #include <KDebug>
+#include <KLocalizedString>
 
 //QT
 #include <QVBoxLayout>
