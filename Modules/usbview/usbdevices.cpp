@@ -20,7 +20,7 @@
 #include <QDir>
 #include <QRegExp>
 
-#include <klocale.h>
+#include <KLocalizedString>
 #include <kmessagebox.h>
 
 #include "usbdb.h"
