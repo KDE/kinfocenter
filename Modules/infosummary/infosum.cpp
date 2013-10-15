@@ -21,6 +21,9 @@
  */
 
 #include "infosum.h"
+#include <KGlobal>
+#include <KLocale>
+#include <KLocalizedString>
 
 K_PLUGIN_FACTORY(devInfoModuleFactory, registerPlugin<InfoSumPlugin>();)
 K_EXPORT_PLUGIN(devInfoModuleFactory("kcm_infosummary"))
@@ -147,3 +150,5 @@ void InfoSumPlugin::createHdBox()
     m_layout->addWidget(stoWidget);
   }
 }
+
+#include "infosum.moc"
