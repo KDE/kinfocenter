@@ -276,7 +276,7 @@ void KInfoCenter::exportClickedSlot()
 
 void KInfoCenter::aboutKcmSlot()
 {
-    KAboutApplicationDialog kcmAboutDialog(m_contain->kcmAboutData());
+    KAboutApplicationDialog kcmAboutDialog(*(m_contain->kcmAboutData()));
     kcmAboutDialog.exec();
 }
 
