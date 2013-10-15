@@ -148,10 +148,10 @@ class KInfoCenter : public KXmlGuiWindow
         KcmContainer *m_contain;
         QSplitter *m_splitter;
 
-        KAction *m_aboutKcm;
-        KAction *m_searchAction;
-        KAction *m_exportAction;
-        KAction *m_moduleHelpAction;
+        QAction *m_aboutKcm;
+        QAction *m_searchAction;
+        QAction *m_exportAction;
+        QAction *m_moduleHelpAction;
         KActionMenu *m_helpAction;
 
         QWidget *m_cWidget;
