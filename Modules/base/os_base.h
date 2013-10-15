@@ -33,6 +33,7 @@ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 #include <kiconloader.h>
 #include <kglobal.h>
 #include <klocale.h>
+#include <KLocalizedString>
 
 #include <X11/Xlib.h>
 
