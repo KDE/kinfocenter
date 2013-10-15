@@ -24,6 +24,7 @@
 #include <kcomponentdata.h>
 #include <KPluginFactory>
 #include <KPluginLoader>
+#include <KLocalizedString>
  
 /* we have to include the info.cpp-file, to get the DEFINES about possible properties.
    example: we need the "define INFO_DMA_AVAILABLE" */

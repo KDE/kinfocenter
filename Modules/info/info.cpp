@@ -31,7 +31,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <kglobalsettings.h>
 #include <kiconloader.h>
 #include <kdialog.h>
-#include <klocale.h>
+#include <KLocalizedString>
 #include <kdebug.h>
 
 KInfoListWidget::KInfoListWidget(const QString &_title, QWidget *parent, bool _getlistbox(QTreeWidget *tree) ) :
