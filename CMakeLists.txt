@@ -1,6 +1,7 @@
 
 include_directories( ${KDE4_INCLUDES} )
 add_definitions( -DKDE_DEFAULT_DEBUG_AREA=1208 )
+remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_STRICT_ITERATORS -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_KEYWORDS)
 
 add_subdirectory( Categories )
 add_subdirectory( Modules )
