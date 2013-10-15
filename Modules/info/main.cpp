@@ -32,17 +32,6 @@
 
 #include "os_current.h"
 
-class KInfoModulesFactory : public KPluginFactory
-{
-    public:
-        KInfoModulesFactory(const char *componentName);
-        static KComponentData componentData();
-
-    private:
-        static KPluginFactory *s_instance;
-};
-KPluginFactory *KInfoModulesFactory::s_instance = 0;
-
 #define CREATE_FACTORY(type, name) \
 class K##type##InfoWidget : public KInfoListWidget \
 { \
@@ -69,11 +58,7 @@ CREATE_FACTORY(DMA, i18n("DMA-Channel"))
 CREATE_FACTORY(XServer_and_Video, i18n("X-Server"))
 #endif
 
-KInfoModulesFactory::KInfoModulesFactory(const char *componentName)
-    : KPluginFactory(componentName)
-{
-    s_instance = this;
-
+K_PLUGIN_FACTORY(KInfoModulesFactory,
 #ifdef INFO_IRQ_AVAILABLE
     registerPlugin<KIRQInfoWidget>("irq");
 #endif
@@ -89,12 +74,6 @@ KInfoModulesFactory::KInfoModulesFactory(const char *componentName)
 #ifdef INFO_XSERVER_AVAILABLE
     registerPlugin<KXServer_and_VideoInfoWidget>("xserver");
 #endif
-}
+)
 
-KComponentData KInfoModulesFactory::componentData()
-{
-    Q_ASSERT(s_instance);
-    return s_instance->componentData();
-}
-
-K_EXPORT_PLUGIN(KInfoModulesFactory("kcminfo"))
+#include "main.moc"
