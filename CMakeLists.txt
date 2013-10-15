@@ -24,7 +24,13 @@ ToolTips/tooltipmanager.cpp
 
 kde4_add_executable( kinfocenter ${kinfocenter_SRCS} )
 
-target_link_libraries( kinfocenter ${KDE4_KFILE_LIBS} ${KDE4_KCMUTILS_LIBS} )
+target_link_libraries( kinfocenter
+    KF5::KCMUtils
+    KF5::KCompletion
+    KF5::KI18n
+    KF5::XmlGui
+    ${KDE4Support_LIBRARIES}
+)
 
 ##install
 
