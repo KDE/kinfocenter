@@ -28,7 +28,7 @@ K_PLUGIN_FACTORY(devInfoModuleFactory, registerPlugin<DevInfoPlugin>();)
 K_EXPORT_PLUGIN(devInfoModuleFactory("kcmdevinfo"))
 
 DevInfoPlugin::DevInfoPlugin(QWidget *parent, const QVariantList &)  : 
-  KCModule(devInfoModuleFactory::componentData(), parent)
+  KCModule(parent)
 {
   
   const KAboutData *about =
