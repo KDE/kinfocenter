@@ -46,7 +46,7 @@ K_PLUGIN_FACTORY(KCMPciFactory,
 K_EXPORT_PLUGIN(KCMPciFactory("kcm_pci"))
 
 KCMPci::KCMPci(QWidget *parent, const QVariantList &) :
-	KCModule(KCMPciFactory::componentData(), parent) {
+	KCModule(parent) {
 
 	KAboutData *about = new KAboutData(I18N_NOOP("kcm_pci"), 0,
 			ki18n("KDE PCI Information Control Module"),
