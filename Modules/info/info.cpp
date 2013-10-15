@@ -46,7 +46,6 @@ KInfoListWidget::KInfoListWidget(const KComponentData &inst, const QString &_tit
 	about->addAuthor(i18n("Helge Deller"), QString(), QStringLiteral("deller@kde.org"));
 	setAboutData(about);
 
-	KGlobal::locale()->insertCatalog("kcm_infobase");
 	
 	kDebug() << "Constructing a KInfoListWidget..." << endl;
 
