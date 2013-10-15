@@ -38,7 +38,7 @@
 
 #include <sys/param.h>		/* for BSD */
 
-#include <klocale.h>
+#include <KLocalizedString>
 #include <kglobal.h>
 
 #include <KPluginFactory>

@@ -11,7 +11,7 @@
 
 #include "swapMemoryChart.h"
 
-#include <klocale.h>
+#include <KLocalizedString>
 #include <kdebug.h>
 
 #include "base.h"

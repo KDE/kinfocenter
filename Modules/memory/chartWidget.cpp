@@ -17,7 +17,9 @@
 #include <QPainter>
 #include <QPen>
 #include <QColor>
+#include <qdrawutil.h>
 
+#include <KLocalizedString>
 #include <klocale.h>
 #include <kdebug.h>
 #include <kglobal.h>
