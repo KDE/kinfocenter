@@ -23,6 +23,8 @@
 #include "soldevicetypes.h"
 
 #include <kcapacitybar.h>
+#include <KGlobal>
+#include <KLocale>
 // ---- Processor
 
 SolProcessorDevice::SolProcessorDevice(QTreeWidgetItem *parent, const Solid::Device &device) :

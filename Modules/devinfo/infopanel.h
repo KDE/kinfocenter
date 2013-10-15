@@ -38,7 +38,7 @@
 //KDE
 #include <kicon.h>
 #include <kdebug.h>
-#include <klocale.h>
+#include <KLocalizedString>
 
 //Local
 #include "qvlistlayout.h"

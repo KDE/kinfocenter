@@ -22,6 +22,7 @@
 
 #include "devinfo.h"
 #include <QSplitter>
+#include <KLocalizedString>
 
 K_PLUGIN_FACTORY(devInfoModuleFactory, registerPlugin<DevInfoPlugin>();)
 K_EXPORT_PLUGIN(devInfoModuleFactory("kcmdevinfo"))
@@ -96,3 +97,5 @@ void DevInfoPlugin::updateStatus(const QString message)
 {  
   udiStatus->setText(message);
 }
+
+#include "devinfo.moc"
