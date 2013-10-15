@@ -78,15 +78,15 @@ KCMOpenGL::KCMOpenGL(QWidget *parent, const QVariantList &)
     connect(glinfoTreeWidget, SIGNAL(collapsed(QModelIndex)), this, SLOT(treeWidgetChanged()));
     
     KAboutData *about =
-    new KAboutData(I18N_NOOP("kcmopengl"), 0,
-        ki18n("KCM OpenGL Information"),
-        0, KLocalizedString(), KAboutData::License_GPL,
-        ki18n("(c) 2008 Ivo Anjo\n(c) 2004 Ilya Korniyko\n(c) 1999-2002 Brian Paul"));
+    new KAboutData(i18n("kcmopengl"), QString(),
+        i18n("KCM OpenGL Information"),
+        QString(), QString(), KAboutData::License_GPL,
+        i18n("(c) 2008 Ivo Anjo\n(c) 2004 Ilya Korniyko\n(c) 1999-2002 Brian Paul"));
 
-    about->addAuthor(ki18n("Ivo Anjo"), KLocalizedString(), "knuckles@gmail.com");
-    about->addAuthor(ki18n("Ilya Korniyko"), KLocalizedString(), "k_ilya@ukr.net");
-    about->addCredit(ki18n("Helge Deller"), ki18n("Original Maintainer"), "deller@gmx.de");
-    about->addCredit(ki18n("Brian Paul"), ki18n("Author of glxinfo Mesa demos (http://www.mesa3d.org)"));
+    about->addAuthor(i18n("Ivo Anjo"), QString(), QStringLiteral("knuckles@gmail.com"));
+    about->addAuthor(i18n("Ilya Korniyko"), QString(), QStringLiteral("k_ilya@ukr.net"));
+    about->addCredit(i18n("Helge Deller"), i18n("Original Maintainer"), QStringLiteral("deller@gmx.de"));
+    about->addCredit(i18n("Brian Paul"), i18n("Author of glxinfo Mesa demos (http://www.mesa3d.org)"));
     setAboutData(about);
 }
 
