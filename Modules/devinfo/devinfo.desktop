@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=kcmshell4 devinfo
+Exec=kcmshell5 devinfo
 Icon=device-notifier
 Type=Service
 X-KDE-ServiceTypes=KCModule
