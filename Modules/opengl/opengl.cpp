@@ -66,7 +66,7 @@ K_EXPORT_PLUGIN(KCMOpenGLFactory("kcmopengl"))
 bool GetInfo_OpenGL(QTreeWidget *treeWidget);
 
 KCMOpenGL::KCMOpenGL(QWidget *parent, const QVariantList &)
-    : KCModule(KCMOpenGLFactory::componentData(), parent)
+    : KCModule(parent)
 {
     setupUi(this);
     layout()->setMargin(0);
