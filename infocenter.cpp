@@ -186,7 +186,7 @@ void KInfoCenter::createMenuFrame()
     m_searchText = new KLineEdit(sideFrame);
     m_searchText->setClearButtonShown(true);
     m_searchText->setClickMessage( i18nc( "Search Bar Click Message", "Search" ) );
-    m_searchText->setCompletionMode( KGlobalSettings::CompletionPopup );
+    m_searchText->setCompletionMode( KCompletion::CompletionPopup );
     m_searchText->completionObject()->setIgnoreCase(true);
 
     m_searchAction = new KAction(this);
