@@ -1,4 +1,5 @@
 
+include(CheckSymbolExists)
 include(CheckStructMember)
 
 check_include_files(sys/sockio.h HAVE_SYS_SOCKIO_H) # nic.cpp
@@ -18,7 +19,7 @@ set(kcm_nic_PART_SRCS nic.cpp )
 kde4_add_plugin(kcm_nic ${kcm_nic_PART_SRCS})
 
 
-target_link_libraries(kcm_nic  KF5::KIOCore KF5::KIOWidgets )
+target_link_libraries(kcm_nic KF5::KCMUtils KF5::KI18n ${KDE4Support_LIBRARIES} )
 
 install(TARGETS kcm_nic  DESTINATION ${PLUGIN_INSTALL_DIR} )
 
