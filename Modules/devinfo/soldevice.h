@@ -105,7 +105,7 @@ class SolDevice : public QTreeWidgetItem
       }
     }   
 
-    void setDeviceIcon(const KIcon &);
+    void setDeviceIcon(const QIcon &);
     void setDeviceToolTip(const QString &);
 
     virtual QVListLayout *infoPanelLayout();

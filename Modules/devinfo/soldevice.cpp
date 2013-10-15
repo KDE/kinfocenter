@@ -84,9 +84,9 @@ void SolDevice::setDefaultDeviceText()
 
 void SolDevice::setDefaultDeviceIcon() 
 { 
-  KIcon ddiString = KIcon("kde");
+  QIcon ddiString = QIcon::fromTheme("kde");
   
-  if(deviceSet) ddiString = KIcon(tiedDevice.icon());
+  if(deviceSet) ddiString = QIcon(tiedDevice.icon());
   setDeviceIcon(ddiString);
 }
 
@@ -98,7 +98,7 @@ void SolDevice::setDefaultDeviceToolTip()
   setDeviceToolTip(ddttString);
 }
 
-void SolDevice::setDeviceIcon(const KIcon &icon)
+void SolDevice::setDeviceIcon(const QIcon &icon)
 { 
    setIcon(0,icon);
 }
