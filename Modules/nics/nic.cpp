@@ -89,7 +89,7 @@ struct MyNIC {
 QList<MyNIC*> findNICs();
 
 KCMNic::KCMNic(QWidget *parent, const QVariantList &) :
-	KCModule(KCMNicFactory::componentData(), parent) {
+	KCModule(parent) {
 	QVBoxLayout *box=new QVBoxLayout(this);
 	box->setMargin(0);
 	box->setSpacing(KDialog::spacingHint());
