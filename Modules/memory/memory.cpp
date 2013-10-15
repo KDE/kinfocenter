@@ -71,12 +71,12 @@ K_EXPORT_PLUGIN(KCMMemoryFactory("kcm_memory"))
 KCMMemory::KCMMemory(QWidget *parent, const QVariantList &) :
 	KCModule(parent) {
 
-	KAboutData *about = new KAboutData(I18N_NOOP("kcm_memory"), 0,
-			ki18n("KDE Panel Memory Information Control Module"),
-			0, KLocalizedString(), KAboutData::License_GPL,
-			ki18n("(c) 1998 - 2002 Helge Deller"));
+	KAboutData *about = new KAboutData(i18n("kcm_memory"), QString(),
+			i18n("KDE Panel Memory Information Control Module"),
+			QString(), QString(), KAboutData::License_GPL,
+			i18n("(c) 1998 - 2002 Helge Deller"));
 
-	about->addAuthor(ki18n("Helge Deller"), KLocalizedString(), "deller@gmx.de");
+	about->addAuthor(i18n("Helge Deller"), QString(), QStringLiteral("deller@gmx.de"));
 	setAboutData(about);
 
 	QString title, initial_str;
