@@ -48,14 +48,14 @@ K_EXPORT_PLUGIN(KCMPciFactory("kcm_pci"))
 KCMPci::KCMPci(QWidget *parent, const QVariantList &) :
 	KCModule(parent) {
 
-	KAboutData *about = new KAboutData(I18N_NOOP("kcm_pci"), 0,
-			ki18n("KDE PCI Information Control Module"),
-			0, KLocalizedString(), KAboutData::License_GPL,
-			ki18n(	"(c) 2008 Nicolas Ternisien"
+	KAboutData *about = new KAboutData(i18n("kcm_pci"), QString(),
+			i18n("KDE PCI Information Control Module"),
+			QString(), QString(), KAboutData::License_GPL,
+			i18n(	"(c) 2008 Nicolas Ternisien"
 					"(c) 1998 - 2002 Helge Deller"));
 
-	about->addAuthor(ki18n("Nicolas Ternisien"), KLocalizedString(), "nicolas.ternisien@gmail.com");
-	about->addAuthor(ki18n("Helge Deller"), KLocalizedString(), "deller@gmx.de");
+	about->addAuthor(i18n("Nicolas Ternisien"), QString(), QStringLiteral("nicolas.ternisien@gmail.com"));
+	about->addAuthor(i18n("Helge Deller"), QString(), QStringLiteral("deller@gmx.de"));
 	setAboutData(about);
 
 	KGlobal::locale()->insertCatalog("kcm_infobase");
