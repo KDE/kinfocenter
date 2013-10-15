@@ -62,7 +62,7 @@ K_PLUGIN_FACTORY(View1394Factory, registerPlugin<View1394>();)
 K_EXPORT_PLUGIN(View1394Factory("kcmview1394"))
 
 View1394::View1394(QWidget *parent, const QVariantList &) :
-	KCModule(View1394Factory::componentData(), parent), m_insideRescanBus(false) {
+	KCModule(parent), m_insideRescanBus(false) {
 	setQuickHelp(i18n("<qt>Here you can see some information about "
 		"your IEEE 1394 configuration. "
 		"The meaning of the columns:"
