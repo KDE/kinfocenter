@@ -69,7 +69,7 @@ K_PLUGIN_FACTORY(KCMMemoryFactory,
 K_EXPORT_PLUGIN(KCMMemoryFactory("kcm_memory"))
 
 KCMMemory::KCMMemory(QWidget *parent, const QVariantList &) :
-	KCModule(KCMMemoryFactory::componentData(), parent) {
+	KCModule(parent) {
 
 	KAboutData *about = new KAboutData(I18N_NOOP("kcm_memory"), 0,
 			ki18n("KDE Panel Memory Information Control Module"),
