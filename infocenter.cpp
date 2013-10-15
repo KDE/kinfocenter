@@ -190,7 +190,7 @@ void KInfoCenter::createMenuFrame()
     m_searchText->completionObject()->setIgnoreCase(true);
 
     m_searchAction = new KAction(this);
-    m_searchAction->setShortcut(KShortcut(QKeySequence(Qt::CTRL + Qt::Key_F)));
+    m_searchAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_F));
     m_searchAction->setText(i18nc("Kaction search label", "Search Modules"));
     m_searchAction->setIcon(KIcon("search"));
 
