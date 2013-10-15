@@ -36,14 +36,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 KInfoListWidget::KInfoListWidget(const KComponentData &inst, const QString &_title, QWidget *parent, bool _getlistbox(QTreeWidget *tree) ) :
 	KCModule(inst, parent), title(_title) {
-	KAboutData *about = new KAboutData("kcminfo", 0,
-			ki18n("System Information Control Module"),
-			0, KLocalizedString(), KAboutData::License_GPL,
-			ki18n(	"(c) 2008 Nicolas Ternisien\n"
+	KAboutData *about = new KAboutData("kcminfo", QString(),
+			i18n("System Information Control Module"),
+			QString(), QString(), KAboutData::License_GPL,
+			i18n(	"(c) 2008 Nicolas Ternisien\n"
 					"(c) 1998 - 2002 Helge Deller"));
 
-	about->addAuthor(ki18n("Nicolas Ternisien"), KLocalizedString(), "nicolas.ternisien@gmail.com");
-	about->addAuthor(ki18n("Helge Deller"), KLocalizedString(), "deller@kde.org");
+	about->addAuthor(i18n("Nicolas Ternisien"), QString(), QStringLiteral("nicolas.ternisien@gmail.com"));
+	about->addAuthor(i18n("Helge Deller"), QString(), QStringLiteral("deller@kde.org"));
 	setAboutData(about);
 
 	KGlobal::locale()->insertCatalog("kcm_infobase");
