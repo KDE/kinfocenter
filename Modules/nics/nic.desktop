@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=kcmshell4 nic
+Exec=kcmshell5 nic
 Type=Service
 X-KDE-ServiceTypes=KCModule
 Icon=network-workgroup
