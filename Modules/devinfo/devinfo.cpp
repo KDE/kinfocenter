@@ -32,9 +32,9 @@ DevInfoPlugin::DevInfoPlugin(QWidget *parent, const QVariantList &)  :
 {
   
   const KAboutData *about =
-  new KAboutData(I18N_NOOP("kcmdevinfo"), 0, ki18n("KDE Solid Based Device Viewer"),
-                  "0.70", KLocalizedString(), KAboutData::License_GPL,
-                  ki18n("(c) 2010 David Hubner"));
+  new KAboutData(i18n("kcmdevinfo"), QString(), i18n("KDE Solid Based Device Viewer"),
+                  QStringLiteral("0.70"), QString(), KAboutData::License_GPL,
+                  i18n("(c) 2010 David Hubner"));
 		  
   setAboutData(about);
   
