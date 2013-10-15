@@ -26,7 +26,7 @@ K_PLUGIN_FACTORY(devInfoModuleFactory, registerPlugin<InfoSumPlugin>();)
 K_EXPORT_PLUGIN(devInfoModuleFactory("kcm_infosummary"))
 
 InfoSumPlugin::InfoSumPlugin(QWidget *parent, const QVariantList &)  : 
-  KCModule(devInfoModuleFactory::componentData(), parent)
+  KCModule(parent)
 {
   
   const KAboutData *about =
