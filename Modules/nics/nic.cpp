@@ -36,6 +36,7 @@
 #include <kaboutdata.h>
 #include <kdialog.h>
 #include <kglobal.h>
+#include <KLocalizedString>
 
 #include <QLayout>
 #include <QPushButton>
@@ -108,12 +109,12 @@ KCMNic::KCMNic(QWidget *parent, const QVariantList &) :
 	connect(m_updateButton, SIGNAL(clicked()), this, SLOT(update()));
 	connect(timer, SIGNAL(timeout()), this, SLOT(update()));
 	update();
-	KAboutData *about = new KAboutData(I18N_NOOP("kcminfo"), 0,
-			ki18n("System Information Control Module"),
-			0, KLocalizedString(), KAboutData::License_GPL,
-			ki18n("(c) 2001 - 2002 Alexander Neundorf"));
+	KAboutData *about = new KAboutData(i18n("kcminfo"), QString(),
+			i18n("System Information Control Module"),
+			QString(), QString(), KAboutData::License_GPL,
+			i18n("(c) 2001 - 2002 Alexander Neundorf"));
 
-	about->addAuthor(ki18n("Alexander Neundorf"), KLocalizedString(), "neundorf@kde.org");
+	about->addAuthor(i18n("Alexander Neundorf"), QString(), QStringLiteral("neundorf@kde.org"));
 	setAboutData(about);
 
 }
