@@ -73,16 +73,16 @@ SambaContainer::SambaContainer(QWidget *parent, const QVariantList&) :
 		" printer sharing or drive sharing services on a network including"
 		" machines running the various flavors of Microsoft Windows.</p>"));
 
-	KAboutData *about = new KAboutData(I18N_NOOP("kcmsamba"), 0,
-			ki18n("System Information Control Module"),
-			0, KLocalizedString(), KAboutData::License_GPL,
-			ki18n("(c) 2002 KDE Information Control Module Samba Team"));
-	about->addAuthor(ki18n("Michael Glauche"), KLocalizedString(), "glauche@isa.rwth-aachen.de");
-	about->addAuthor(ki18n("Matthias Hoelzer"), KLocalizedString(), "hoelzer@kde.org");
-	about->addAuthor(ki18n("David Faure"), KLocalizedString(), "faure@kde.org");
-	about->addAuthor(ki18n("Harald Koschinski"), KLocalizedString(), "Harald.Koschinski@arcormail.de");
-	about->addAuthor(ki18n("Wilco Greven"), KLocalizedString(), "greven@kde.org");
-	about->addAuthor(ki18n("Alexander Neundorf"), KLocalizedString(), "neundorf@kde.org");
+	KAboutData *about = new KAboutData(i18n("kcmsamba"), QString(),
+			i18n("System Information Control Module"),
+			QString(), QString(), KAboutData::License_GPL,
+			i18n("(c) 2002 KDE Information Control Module Samba Team"));
+	about->addAuthor(i18n("Michael Glauche"), QString(), QStringLiteral("glauche@isa.rwth-aachen.de"));
+	about->addAuthor(i18n("Matthias Hoelzer"), QString(), QStringLiteral("hoelzer@kde.org"));
+	about->addAuthor(i18n("David Faure"), QString(), QStringLiteral("faure@kde.org"));
+	about->addAuthor(i18n("Harald Koschinski"), QString(), QStringLiteral("Harald.Koschinski@arcormail.de"));
+	about->addAuthor(i18n("Wilco Greven"), QString(), QStringLiteral("greven@kde.org"));
+	about->addAuthor(i18n("Alexander Neundorf"), QString(), QStringLiteral("neundorf@kde.org"));
 	setAboutData(about);
 }
 
