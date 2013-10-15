@@ -16,7 +16,8 @@
 
 #include <QString>
 
-#include <klocale.h>
+#include <KLocalizedString>
+#include <kdemacros.h>
 
 //pci lookup buffer size
 #define NAME_BUFFER_SIZE 256

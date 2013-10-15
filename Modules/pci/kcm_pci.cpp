@@ -36,6 +36,7 @@
 #include <QTreeWidget>
 
 #include <klocale.h>
+#include <KLocalizedString>
 #include <kglobal.h>
 #include <kseparator.h>
 
