@@ -32,7 +32,7 @@
 
 #include <kaboutdata.h>
 #include <kdialog.h>
-#include <klocale.h>
+#include <KLocalizedString>
 #include <kmessagebox.h>
 #include <kdebug.h>
 
@@ -54,8 +54,6 @@
 #include <GL/glext.h>
 #include <GL/glx.h>
 #endif
-
-#include "opengl.moc"
 
 K_PLUGIN_FACTORY(KCMOpenGLFactory,
     registerPlugin<KCMOpenGL>();
@@ -871,3 +869,5 @@ bool GetInfo_OpenGL(QTreeWidget *treeWidget)
     XCloseDisplay(dpy);
     return true;
 }
+
+#include "opengl.moc"
