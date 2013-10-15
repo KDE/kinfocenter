@@ -34,7 +34,7 @@ K_PLUGIN_FACTORY(USBFactory,
 K_EXPORT_PLUGIN(USBFactory("kcmusb"))
 
 USBViewer::USBViewer(QWidget *parent, const QVariantList &) :
-	KCModule(USBFactory::componentData(), parent) {
+	KCModule(parent) {
 
 	setQuickHelp(i18n("This module allows you to see"
 		" the devices attached to your USB bus(es)."));
