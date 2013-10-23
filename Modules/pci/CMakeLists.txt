@@ -13,7 +13,6 @@ set(KCM_LIBS
     KF5::KI18n
     KF5::KIconThemes
     ${KDE4Support_LIBRARIES}
-    ${KDE4Attic_LIBRARIES}
     ${X11_LIBRARIES}
 )
 

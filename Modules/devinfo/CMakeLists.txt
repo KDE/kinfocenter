@@ -10,7 +10,6 @@ target_link_libraries( devinfo
     KF5::KIOWidgets
     KF5::Solid
     ${KDE4Support_LIBRARIES}
-    ${KDE4Attic_LIBRARIES}
 )
 
 install( TARGETS devinfo DESTINATION ${PLUGIN_INSTALL_DIR} )
