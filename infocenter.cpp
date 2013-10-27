@@ -70,7 +70,7 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
     createToolBar();
 
     //TreeWidget
-    connect(m_sideMenu,SIGNAL(activated(const KcmTreeItem*)),this,SLOT(itemClickedSlot(const KcmTreeItem*)));
+    connect(m_sideMenu,SIGNAL(clicked(const KcmTreeItem*)),this,SLOT(itemClickedSlot(const KcmTreeItem*)));
 
     //SearchBox
     connect(m_searchText, SIGNAL(textChanged(QString)), m_sideMenu, SLOT(filterSideMenuSlot(QString)));
@@ -103,7 +103,7 @@ KInfoCenter::~KInfoCenter()
     delete m_toolTips;
 
     //TreeWidget
-    disconnect(m_sideMenu,SIGNAL(activated(const KcmTreeItem*)),this,SLOT(itemClickedSlot(const KcmTreeItem*)));
+    disconnect(m_sideMenu,SIGNAL(clicked(const KcmTreeItem*)),this,SLOT(itemClickedSlot(const KcmTreeItem*)));
 
     //SearchBox
     disconnect(m_searchText, SIGNAL(textChanged(QString)), m_sideMenu, SLOT(filterSideMenuSlot(QString)));

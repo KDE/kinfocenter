@@ -46,25 +46,25 @@ SidePanel::SidePanel(QWidget *parent) : QTreeView(parent)
 
     setMouseTracking(true);
     setModel(m_proxyModel);
-    connect(this,SIGNAL(activated(QModelIndex)),this,SLOT(activatedSlot(QModelIndex)));
+    connect(this,SIGNAL(clicked(QModelIndex)),this,SLOT(clickedSlot(QModelIndex)));
 }
 
 SidePanel::~SidePanel()
 {
-    disconnect(this,SIGNAL(activated(QModelIndex)),this,SLOT(activatedSlot(QModelIndex)));
+    disconnect(this,SIGNAL(clicked(QModelIndex)),this,SLOT(clickedSlot(QModelIndex)));
 
     delete m_proxyModel;
     delete m_model;
 }
 
-void SidePanel::activatedSlot(const QModelIndex &index)
+void SidePanel::clickedSlot(const QModelIndex &index)
 {
     if(index.isValid() == false) {
         return;
     }
 
     const KcmTreeItem *item = static_cast<KcmTreeItem*>(m_proxyModel->mapToSource(index).internalPointer());
-    emit activated(item);
+    emit clicked(item);
 }
 
 void SidePanel::changeToFirstValidItem()
@@ -75,7 +75,7 @@ void SidePanel::changeToFirstValidItem()
     }
 
     setCurrentIndex(rootIndex);
-    emit activatedSlot(rootIndex);
+    emit clickedSlot(rootIndex);
 }
 
 QModelIndex SidePanel::mapToProxySource(const QModelIndex& index)
