@@ -16,7 +16,7 @@ target_link_libraries(kcm_info
     KF5::KCMUtils
     KF5::KI18n
     KF5::KIconThemes
-    ${KDE4Support_LIBRARIES}
+    KF5::KDE4Support
     ${X11_X11_LIB})
 
 install(TARGETS kcm_info  DESTINATION ${PLUGIN_INSTALL_DIR} )

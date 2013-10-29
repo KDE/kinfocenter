@@ -6,7 +6,7 @@ target_link_libraries( kcm_infosummary
     KF5::KCMUtils
     KF5::KI18n
     KF5::Solid
-    ${KDE4Support_LIBRARIES}
+    KF5::KDE4Support
  )
 
 install( TARGETS kcm_infosummary DESTINATION ${PLUGIN_INSTALL_DIR} )

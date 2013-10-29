@@ -29,7 +29,7 @@ target_link_libraries( kinfocenter
     KF5::KCompletion
     KF5::KI18n
     KF5::XmlGui
-    ${KDE4Support_LIBRARIES}
+    KF5::KDE4Support
 )
 
 ##install

@@ -15,7 +15,7 @@ qt4_wrap_ui(KCM_OPENGL_PART_UIS_H ${KCM_OPENGL_PART_UIS})
 
 kde4_add_plugin(kcm_opengl ${KCM_OPENGL_PART_SRCS} ${KCM_OPENGL_PART_UIS_H})
 
-target_link_libraries(kcm_opengl KF5::KCMUtils KF5::KI18n ${KDE4Support_LIBRARIES} ${X11_X11_LIB})
+target_link_libraries(kcm_opengl KF5::KCMUtils KF5::KI18n KF5::KDE4Support ${X11_X11_LIB})
 
 find_library(DL_LIBRARY dl)
 if (DL_LIBRARY)

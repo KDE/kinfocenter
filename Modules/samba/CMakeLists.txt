@@ -11,7 +11,7 @@ set(kcm_samba_PART_SRCS
 kde4_add_plugin(kcm_samba ${kcm_samba_PART_SRCS})
 
 
-target_link_libraries(kcm_samba KF5::KCMUtils KF5::KI18n KF5::KIOCore KF5::KIOWidgets ${KDE4Support_LIBRARIES} )
+target_link_libraries(kcm_samba KF5::KCMUtils KF5::KI18n KF5::KIOCore KF5::KIOWidgets KF5::KDE4Support )
 
 install(TARGETS kcm_samba  DESTINATION ${PLUGIN_INSTALL_DIR} )
 

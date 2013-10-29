@@ -9,7 +9,7 @@ target_link_libraries( devinfo
     KF5::KIOCore
     KF5::KIOWidgets
     KF5::Solid
-    ${KDE4Support_LIBRARIES}
+    KF5::KDE4Support
 )
 
 install( TARGETS devinfo DESTINATION ${PLUGIN_INSTALL_DIR} )
