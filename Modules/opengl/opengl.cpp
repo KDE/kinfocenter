@@ -165,7 +165,10 @@ static int ReadPipe(QString FileName, QStringList &list)
 
     while (!t.atEnd()) list.append(t.readLine());
 
-    pclose(pipe);
+    if (pclose(pipe) != 0) {
+	list.clear();
+	return 0;
+    }
     return list.count();
 }
 
