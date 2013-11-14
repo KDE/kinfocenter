@@ -9,7 +9,7 @@ target_link_libraries(kcm_memory KF5::KCMUtils KF5::KI18n KF5::KDE4Support)
 
 if (${CMAKE_SYSTEM_NAME} STREQUAL "FreeBSD")
    target_link_libraries(kcm_memory kvm)
-endif (${CMAKE_SYSTEM_NAME} STREQUAL "FreeBSD")
+endif ()
 
 install(TARGETS kcm_memory  DESTINATION ${PLUGIN_INSTALL_DIR})
 

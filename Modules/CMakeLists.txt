@@ -14,17 +14,17 @@ add_feature_info("OpenGL/ES support" OPENGLES_FOUND "View OpenGL ES2.0 details i
 
   if(OPENGL_FOUND AND OPENGL_GLU_FOUND AND NOT KWIN_BUILD_WITH_OPENGLES)
       set( KCM_ENABLE_OPENGL 1 )
-  endif(OPENGL_FOUND AND OPENGL_GLU_FOUND AND NOT KWIN_BUILD_WITH_OPENGLES)
+  endif()
 
   if(OPENGLES_FOUND AND KWIN_BUILD_WITH_OPENGLES)
       set( KCM_ENABLE_OPENGLES 1 )
-  endif(OPENGLES_FOUND AND KWIN_BUILD_WITH_OPENGLES)
+  endif()
 
   if(KCM_ENABLE_OPENGL OR KCM_ENABLE_OPENGLES)
       add_subdirectory( opengl )
-  else(KCM_ENABLE_OPENGL OR KCM_ENABLE_OPENGLES)
+  else()
       MESSAGE(STATUS "OpenGL/ES2.0 information module has been disabled.")
-  endif(KCM_ENABLE_OPENGL OR KCM_ENABLE_OPENGLES)
+  endif()
 
 
 find_package(PCIUTILS MODULE)
@@ -36,8 +36,8 @@ set_package_properties(PCIUTILS PROPERTIES DESCRIPTION "PciUtils is a library fo
 
 if(NOT APPLE)
     add_subdirectory( pci )
-endif(NOT APPLE)
-endif(NOT WIN32)
+endif()
+endif()
 
 find_package(RAW1394 MODULE)
 set_package_properties(RAW1394 PROPERTIES DESCRIPTION "library for direct access to IEEE 1394 bus"
@@ -48,4 +48,4 @@ set_package_properties(RAW1394 PROPERTIES DESCRIPTION "library for direct access
 
 if(RAW1394_FOUND)
    add_subdirectory( view1394 )
-endif(RAW1394_FOUND)
+endif()

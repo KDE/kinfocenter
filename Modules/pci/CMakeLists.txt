@@ -22,7 +22,7 @@ if(PCIUTILS_FOUND)
     add_definitions( -DHAVE_PCIUTILS )
 if (UNIX AND NOT APPLE)
    add_definitions (-fpermissive)
-endif (UNIX AND NOT APPLE)
+endif ()
 
     set(KCM_PCI_PART_SRCS kcm_pci.cpp ../base/os_current.cpp kpci.cpp )
 
@@ -31,14 +31,14 @@ endif (UNIX AND NOT APPLE)
     target_link_libraries(kcm_pci ${KCM_LIBS} ${PCIUTILS_LIBRARIES} ${ZLIB_LIBRARIES})
 
     
-else(PCIUTILS_FOUND)
+else()
 
     set(KCM_PCI_PART_SRCS kcm_pci.cpp ../base/os_current.cpp )
 
     kde4_add_plugin(kcm_pci ${KCM_PCI_PART_SRCS})
     
     target_link_libraries(kcm_pci ${KCM_LIBS} )
-endif(PCIUTILS_FOUND)
+endif()
 
 install(TARGETS kcm_pci  DESTINATION ${PLUGIN_INSTALL_DIR})
 

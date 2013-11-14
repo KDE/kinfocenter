@@ -1,10 +1,10 @@
 if(KCM_ENABLE_OPENGL)
 include_directories( ${OPENGL_INCLUDE_DIR} ${OPENGL_GLU_INCLUDE_DIR} )
-endif(KCM_ENABLE_OPENGL)
+endif()
 
 if(KCM_ENABLE_OPENGLES)
 include_directories( ${OPENGLES_INCLUDE_DIR} )
-endif(KCM_ENABLE_OPENGLES)
+endif()
 
 ########### next target ###############
 
@@ -20,15 +20,15 @@ target_link_libraries(kcm_opengl KF5::KCMUtils KF5::KI18n KF5::KDE4Support ${X11
 find_library(DL_LIBRARY dl)
 if (DL_LIBRARY)
   target_link_libraries(kcm_opengl ${DL_LIBRARY})
-endif(DL_LIBRARY)
+endif()
 
 if(KCM_ENABLE_OPENGL)
 target_link_libraries(kcm_opengl ${OPENGL_gl_LIBRARY} ${OPENGL_glu_LIBRARY})
-endif(KCM_ENABLE_OPENGL)
+endif()
 
 if(KCM_ENABLE_OPENGLES)
 target_link_libraries(kcm_opengl ${OPENGLES_LIBRARIES})
-endif(KCM_ENABLE_OPENGLES)
+endif()
 
 configure_file(openglconfig.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/openglconfig.h )
 
