@@ -17,7 +17,7 @@ set(KCM_LIBS
 )
 
 if(PCIUTILS_FOUND)
-    MESSAGE(STATUS "Enabling PCI module based on pciutils library")
+    message(STATUS "Enabling PCI module based on pciutils library")
 
     add_definitions( -DHAVE_PCIUTILS )
 if (UNIX AND NOT APPLE)
@@ -26,7 +26,7 @@ endif ()
 
     set(KCM_PCI_PART_SRCS kcm_pci.cpp ../base/os_current.cpp kpci.cpp )
 
-    kde4_add_plugin(kcm_pci ${KCM_PCI_PART_SRCS})
+    add_library(kcm_pci MODULE ${KCM_PCI_PART_SRCS})
 
     target_link_libraries(kcm_pci ${KCM_LIBS} ${PCIUTILS_LIBRARIES} ${ZLIB_LIBRARIES})
 
@@ -35,7 +35,7 @@ else()
 
     set(KCM_PCI_PART_SRCS kcm_pci.cpp ../base/os_current.cpp )
 
-    kde4_add_plugin(kcm_pci ${KCM_PCI_PART_SRCS})
+    add_library(kcm_pci MODULE ${KCM_PCI_PART_SRCS})
     
     target_link_libraries(kcm_pci ${KCM_LIBS} )
 endif()

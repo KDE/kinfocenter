@@ -11,9 +11,9 @@ endif()
 set(KCM_OPENGL_PART_SRCS opengl.cpp )
 set(KCM_OPENGL_PART_UIS opengl.ui )
 
-qt4_wrap_ui(KCM_OPENGL_PART_UIS_H ${KCM_OPENGL_PART_UIS})
+qt5_wrap_ui(KCM_OPENGL_PART_UIS_H ${KCM_OPENGL_PART_UIS})
 
-kde4_add_plugin(kcm_opengl ${KCM_OPENGL_PART_SRCS} ${KCM_OPENGL_PART_UIS_H})
+add_library(kcm_opengl MODULE ${KCM_OPENGL_PART_SRCS} ${KCM_OPENGL_PART_UIS_H})
 
 target_link_libraries(kcm_opengl KF5::KCMUtils KF5::KI18n KF5::KDE4Support ${X11_X11_LIB})
 

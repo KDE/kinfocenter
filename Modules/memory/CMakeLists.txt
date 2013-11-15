@@ -3,7 +3,7 @@
 
 set(KCM_MEMORY_PART_SRCS memory.cpp chartWidget.cpp totalMemoryChart.cpp physicalMemoryChart.cpp swapMemoryChart.cpp )
 
-kde4_add_plugin(kcm_memory ${KCM_MEMORY_PART_SRCS})
+add_library(kcm_memory MODULE ${KCM_MEMORY_PART_SRCS})
 
 target_link_libraries(kcm_memory KF5::KCMUtils KF5::KI18n KF5::KDE4Support)
 

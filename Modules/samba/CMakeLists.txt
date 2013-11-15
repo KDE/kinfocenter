@@ -8,7 +8,7 @@ set(kcm_samba_PART_SRCS
    kcmsambastatistics.cpp )
 
 
-kde4_add_plugin(kcm_samba ${kcm_samba_PART_SRCS})
+add_library(kcm_samba MODULE ${kcm_samba_PART_SRCS})
 
 
 target_link_libraries(kcm_samba KF5::KCMUtils KF5::KI18n KF5::KIOCore KF5::KIOWidgets KF5::KDE4Support )

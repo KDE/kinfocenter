@@ -16,7 +16,7 @@ configure_file (config-nic.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-nic.h )
 set(kcm_nic_PART_SRCS nic.cpp )
 
 
-kde4_add_plugin(kcm_nic ${kcm_nic_PART_SRCS})
+add_library(kcm_nic MODULE ${kcm_nic_PART_SRCS})
 
 
 target_link_libraries(kcm_nic KF5::KCMUtils KF5::KI18n KF5::KDE4Support )

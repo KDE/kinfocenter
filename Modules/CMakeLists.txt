@@ -23,7 +23,7 @@ add_feature_info("OpenGL/ES support" OPENGLES_FOUND "View OpenGL ES2.0 details i
   if(KCM_ENABLE_OPENGL OR KCM_ENABLE_OPENGLES)
       add_subdirectory( opengl )
   else()
-      MESSAGE(STATUS "OpenGL/ES2.0 information module has been disabled.")
+      message(STATUS "OpenGL/ES2.0 information module has been disabled.")
   endif()
 
 

@@ -6,7 +6,7 @@ remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_STRICT_ITERATORS -DQT_NO_CAST_FR
 add_subdirectory( Categories )
 add_subdirectory( Modules )
 
-INCLUDE_DIRECTORIES( ToolTips )
+include_directories( ToolTips )
 
 set( kinfocenter_SRCS
 infocenter.cpp
@@ -22,7 +22,7 @@ ToolTips/ktooltipwindow.cpp
 ToolTips/tooltipmanager.cpp
 )
 
-kde4_add_executable( kinfocenter ${kinfocenter_SRCS} )
+add_executable( kinfocenter ${kinfocenter_SRCS} )
 
 target_link_libraries( kinfocenter
     KF5::KCMUtils
@@ -36,4 +36,4 @@ target_link_libraries( kinfocenter
 
 install( TARGETS kinfocenter          ${INSTALL_TARGETS_DEFAULT_ARGS} )
 install( PROGRAMS kinfocenter.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
-INSTALL( FILES kinfocenterui.rc DESTINATION ${DATA_INSTALL_DIR}/kinfocenter )
+install( FILES kinfocenterui.rc DESTINATION ${DATA_INSTALL_DIR}/kinfocenter )

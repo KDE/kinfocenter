@@ -10,7 +10,7 @@ include_directories(
 
 set(kcm_info_PART_SRCS main.cpp info.cpp ../base/os_current.cpp )
 
-kde4_add_plugin(kcm_info ${kcm_info_PART_SRCS})
+add_library(kcm_info MODULE ${kcm_info_PART_SRCS})
 
 target_link_libraries(kcm_info
     KF5::KCMUtils
