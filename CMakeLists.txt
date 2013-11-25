@@ -28,6 +28,7 @@ target_link_libraries( kinfocenter
     KF5::KCMUtils
     KF5::KCompletion
     KF5::KI18n
+    KF5::KWindowSystem
     KF5::XmlGui
     KF5::KDE4Support
 )
