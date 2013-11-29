@@ -329,13 +329,21 @@ QVListLayout *SolVolumeDevice::infoPanelLayout()
       labels << i18n("Volume Space:");
       
       usageBar = new KCapacityBar();
-      usageBar->setValue(static_cast<int>((mountSpaceInfo.used() * 100) / mountSpaceInfo.size()));
-      usageBar->setText(
-            i18nc("Available space out of total partition size (percent used)",
-                  "%1 free of %2 (%3% used)",
-                  KGlobal::locale()->formatByteSize(mountSpaceInfo.available()),
-                  KGlobal::locale()->formatByteSize(mountSpaceInfo.size()),
-                  usageBar->value()));
+      if(mountSpaceInfo.size() > 0)
+      {
+        usageBar->setValue(static_cast<int>((mountSpaceInfo.used() * 100) / mountSpaceInfo.size()));
+        usageBar->setText(
+              i18nc("Available space out of total partition size (percent used)",
+                    "%1 free of %2 (%3% used)",
+                    KGlobal::locale()->formatByteSize(mountSpaceInfo.available()),
+                    KGlobal::locale()->formatByteSize(mountSpaceInfo.size()),
+                    usageBar->value()));
+      }
+      else
+      {
+        usageBar->setValue(0);
+        usageBar->setText(i18nc("No data available"));
+      }
     }
 
   }
