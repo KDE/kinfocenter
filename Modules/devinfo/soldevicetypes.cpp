@@ -342,7 +342,7 @@ QVListLayout *SolVolumeDevice::infoPanelLayout()
       else
       {
         usageBar->setValue(0);
-        usageBar->setText(i18nc("No data available"));
+        usageBar->setText(i18n("No data available"));
       }
     }
 
