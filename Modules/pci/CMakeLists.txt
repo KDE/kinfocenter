@@ -10,8 +10,8 @@ include_directories(
 
 set(KCM_LIBS
     KF5::KCMUtils
-    KF5::KI18n
-    KF5::KIconThemes
+    KF5::I18n
+    KF5::IconThemes
     KF5::KDE4Support
     ${X11_LIBRARIES}
 )

@@ -5,7 +5,7 @@ set( devinfoSources soldevice.cpp devinfo.cpp devicelisting.cpp infopanel.cpp so
 kde4_add_plugin( devinfo ${devinfoSources} )
 target_link_libraries( devinfo
     KF5::KCMUtils
-    KF5::KI18n
+    KF5::I18n
     KF5::KIOCore
     KF5::KIOWidgets
     KF5::Solid
