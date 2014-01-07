@@ -4,10 +4,10 @@ add_subdirectory( infosummary )
 add_subdirectory( memory )
 add_subdirectory( devinfo )
 add_subdirectory( info )
-add_subdirectory( nics )
 
 if(NOT WIN32)
-  add_subdirectory( samba )
+add_subdirectory( samba )
+add_subdirectory( nics )
 
 add_feature_info("OpenGL support" OPENGL_FOUND "View OpenGL details in kinfocenter." )
 add_feature_info("OpenGL/ES support" OPENGLES_FOUND "View OpenGL ES2.0 details in kinfocenter." )

@@ -35,7 +35,9 @@ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 #include <klocale.h>
 #include <KLocalizedString>
 
+#ifdef Q_WS_X11
 #include <X11/Xlib.h>
+#endif
 
 #include "config-infocenter.h"
 
@@ -53,6 +55,7 @@ static const QString HexStr(unsigned long val, int digits) {
 	return hexstr;
 }
 
+#ifdef Q_WS_X11
 static const QString Order(int order) {
 	if (order==LSBFirst)
 		return i18n("LSBFirst");
@@ -61,6 +64,7 @@ static const QString Order(int order) {
 	else
 		return i18n("Unknown Order %1", order);
 }
+#endif
 
 static const QString BitString(unsigned long n) {
 	return i18np("1 Bit", "%1 Bits", n);
@@ -70,6 +74,7 @@ static const QString ByteString(unsigned long n) {
 	return i18np("1 Byte", "%1 Bytes", n);
 }
 
+#ifdef Q_WS_X11
 static const struct _event_table {
 	const char *name;
 	long value;
@@ -78,6 +83,7 @@ static const struct _event_table {
 				"ButtonMotionMask", ButtonMotionMask }, { "KeymapStateMask", KeymapStateMask }, { "ExposureMask", ExposureMask }, { "VisibilityChangeMask", VisibilityChangeMask }, { "StructureNotifyMask", StructureNotifyMask }, { "ResizeRedirectMask", ResizeRedirectMask }, {
 				"SubstructureNotifyMask", SubstructureNotifyMask }, { "SubstructureRedirectMask", SubstructureRedirectMask }, { "FocusChangeMask", FocusChangeMask }, { "PropertyChangeMask", PropertyChangeMask }, { "ColormapChangeMask", ColormapChangeMask }, { "OwnerGrabButtonMask",
 				OwnerGrabButtonMask }, { 0L, 0 } };
+#endif
 
 /* easier to read with such a define ! */
 #define I18N_MAX(txt,in,fm,maxw) \
@@ -86,6 +92,7 @@ static const struct _event_table {
 #define PIXEL_ADD	20	// add x Pixel to multicolumns..
 #define HEXDIGITS (sizeof(int)*8/4)	/* 4 Bytes = 32 Bits = 8 Hex-Digits */
 
+#ifdef Q_WS_X11
 static QTreeWidgetItem* XServer_fill_screen_info(QTreeWidgetItem *lBox, QTreeWidgetItem *last, Display *dpy, int scr, int default_scr) {
 	unsigned width, height;
 	double xres, yres;
@@ -200,8 +207,10 @@ static QTreeWidgetItem* XServer_fill_screen_info(QTreeWidgetItem *lBox, QTreeWid
 	else
 		return last->child(last->childCount()-1);
 }
+#endif
 
 static bool GetInfo_XServer_Generic(QTreeWidget *lBox) {
+#ifdef Q_WS_X11
 	/* Many parts of this source are taken from the X11-program "xdpyinfo" */
 
 	int i, n;
@@ -317,6 +326,7 @@ static bool GetInfo_XServer_Generic(QTreeWidget *lBox) {
 	last = new QTreeWidgetItem(next, imageByteList);
 
 	XCloseDisplay(dpy);
+#endif
 	return true;
 }
 
