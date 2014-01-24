@@ -27,9 +27,8 @@
 #include <QGroupBox>
 #include <QGridLayout>
 #include <QLabel>
+#include <QIcon>
 
-//KDE
-#include <KIcon>
 
 class DefaultBoxWidget : public QGroupBox
 {
@@ -42,7 +41,7 @@ class DefaultBoxWidget : public QGroupBox
     void setLabelOne(const QString &);
     void setLabelTwo(const QString &);
     void setLabelThree(const QString &);
-    void setIcon(const KIcon &icon); 
+    void setIcon(const QIcon &icon);
     
   private:
     void createDisplay(); 

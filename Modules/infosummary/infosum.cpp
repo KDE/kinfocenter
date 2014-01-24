@@ -21,8 +21,7 @@
  */
 
 #include "infosum.h"
-#include <KGlobal>
-#include <KLocale>
+#include <KFormat>
 #include <KLocalizedString>
 
 K_PLUGIN_FACTORY(devInfoModuleFactory, registerPlugin<InfoSumPlugin>();)
@@ -61,7 +60,7 @@ void InfoSumPlugin::createDisplay()
 void InfoSumPlugin::createOsBox()
 {  
   DefaultBoxWidget *osWidget = new DefaultBoxWidget();
-  osWidget->setIcon(KIcon("kde"));
+  osWidget->setIcon(QIcon::fromTheme(QStringLiteral("kde")));
   osWidget->setLabelTitles(i18n("OS Version"),i18n("KDE SC Version"), i18n("Hostname"));
   
   OsDepInfo *osInfo = new OsDepInfo();
@@ -87,7 +86,7 @@ void InfoSumPlugin::createCpuBox()
     
     DefaultBoxWidget *cpuWidget = new DefaultBoxWidget();
     cpuWidget->setLabelTitles(i18n("Processor"), i18n("Processor Number"), i18n("Processor Max Speed"));
-    cpuWidget->setIcon(KIcon("cpu"));
+    cpuWidget->setIcon(QIcon::fromTheme(QStringLiteral("cpu")));
     
     cpuWidget->setLabelOne(dev.product());
     cpuWidget->setLabelTwo(QString::number(prodev->number()));
@@ -102,7 +101,7 @@ void InfoSumPlugin::createMemBox()
 {
   ProgressBoxWidget *memWidget = new ProgressBoxWidget();
   
-  memWidget->setIcon(KIcon("memory"));
+  memWidget->setIcon(QIcon::fromTheme(QStringLiteral("memory")));
   memWidget->setLabelTitles(i18n("Memory Amount"),i18n("Memory Used/Free"));
   m_layout->addWidget(memWidget);
 }
@@ -119,11 +118,11 @@ void InfoSumPlugin::createHdBox()
     if(!stodev) return;
    
     DefaultBoxWidget *stoWidget = new DefaultBoxWidget();
-    stoWidget->setIcon(KIcon("drive-harddisk"));
+    stoWidget->setIcon(QIcon::fromTheme(QStringLiteral("drive-harddisk")));
     
     stoWidget->setLabelTitles(i18n("Drive Title"),i18n("Storage Size"),i18n("Bus"));
     stoWidget->setLabelOne(dev.product());
-    stoWidget->setLabelTwo(KGlobal::locale()->formatByteSize(stodev->size()));
+    stoWidget->setLabelTwo(KFormat().formatByteSize(stodev->size()));
     
     QString bus;
     switch(stodev->bus())

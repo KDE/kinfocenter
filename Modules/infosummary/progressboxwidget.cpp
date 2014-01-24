@@ -71,7 +71,7 @@ void ProgressBoxWidget::setLabelTitles(const QString &first, const QString &seco
   m_info1Label->setText(second);
 }
 
-void ProgressBoxWidget::setIcon(const KIcon &icon) 
+void ProgressBoxWidget::setIcon(const QIcon &icon)
 {
   m_iconLabel->setPixmap(icon.pixmap(64));
 }

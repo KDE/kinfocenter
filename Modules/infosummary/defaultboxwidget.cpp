@@ -80,7 +80,7 @@ void DefaultBoxWidget::setLabelTitles(const QString &first, const QString &secon
   m_info2Label->setText(third);
 }
 
-void DefaultBoxWidget::setIcon(const KIcon &icon) 
+void DefaultBoxWidget::setIcon(const QIcon &icon)
 {
   m_iconLabel->setPixmap(icon.pixmap(64));
 }

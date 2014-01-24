@@ -27,7 +27,6 @@
 #include <KCModule>
 #include <KLocale>
 #include <KAboutData>
-#include <KDebug>
 #include <kdeversion.h>
 
 //Solid

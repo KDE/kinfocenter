@@ -28,9 +28,8 @@
 #include <QGridLayout>
 #include <QLabel>
 #include <QProgressBar>
+#include <QIcon>
 
-//KDE
-#include <KIcon>
 
 class ProgressBoxWidget : public QFrame
 {
@@ -41,7 +40,7 @@ class ProgressBoxWidget : public QFrame
 
     void setLabelTitles(const QString &, const QString &);
     void setLabelOne(const QString &);
-    void setIcon(const KIcon &icon); 
+    void setIcon(const QIcon &icon);
     void setRange(int, int) const;
     void setValue(int) const;
     
