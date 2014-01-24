@@ -62,7 +62,7 @@ void InfoPanel::setDefaultText()
   
   QVBoxLayout *lay = static_cast<QVBoxLayout*>(top->layout());
   
-  lay->addWidget(setDevicesIcon(KIcon("kde")),0,Qt::AlignHCenter);
+  lay->addWidget(setDevicesIcon(QIcon::fromTheme(QStringLiteral("kde"))),0,Qt::AlignHCenter);
   lay->addWidget(defaultText,0,Qt::AlignHCenter);
 }
 

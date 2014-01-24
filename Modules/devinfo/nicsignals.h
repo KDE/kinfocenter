@@ -27,7 +27,6 @@
 #include <QObject>
 
 //KDE
-#include <kdebug.h>
 #include <solid/control/networkmanager.h>
 #include <solid/control/networkinterface.h>
 

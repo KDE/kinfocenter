@@ -26,6 +26,7 @@
 //QT
 #include <QTreeWidgetItem>
 #include <QTreeWidget>
+#include <QDebug>
 
 //Solid
 #include <solid/device.h>
@@ -48,8 +49,6 @@
 #include <solid/predicate.h>
 
 //KDE
-#include <kicon.h>
-#include <kdebug.h>
 #include <KLocalizedString>
 
 // Local
@@ -77,7 +76,7 @@ class SolDevice : public QTreeWidgetItem
 	IFace *dev = tiedDevice.as<const IFace>();
 	if(!dev)
 	{
-	  kDebug() << i18n("Device unable to be cast to correct device") << endl;
+	  qDebug() << "Device unable to be cast to correct device";
 	}
 	return dev;
       } else {
@@ -89,7 +88,7 @@ class SolDevice : public QTreeWidgetItem
     {
 	IFace *dev = device.as<const IFace>();
 	if(!dev) {
-	  kDebug() << i18n("Device unable to be cast to correct device") << endl;
+	  qDebug() << "Device unable to be cast to correct device";
 	}
 	return dev;
     }

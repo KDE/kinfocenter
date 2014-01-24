@@ -36,8 +36,6 @@
 #include <solid/storagedrive.h>
 
 //KDE
-#include <kicon.h>
-#include <kdebug.h>
 #include <KLocalizedString>
 
 //Local

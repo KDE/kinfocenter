@@ -23,8 +23,8 @@
 #include "soldevicetypes.h"
 
 #include <kcapacitybar.h>
-#include <KGlobal>
-#include <KLocale>
+
+#include <KFormat>
 // ---- Processor
 
 SolProcessorDevice::SolProcessorDevice(QTreeWidgetItem *parent, const Solid::Device &device) :
@@ -39,7 +39,7 @@ SolProcessorDevice::SolProcessorDevice(const Solid::DeviceInterface::Type &type)
 { 
   deviceTypeHolder = Solid::DeviceInterface::Processor;
   
-  setDeviceIcon(KIcon("cpu"));
+  setDeviceIcon(QIcon::fromTheme(QStringLiteral("cpu")));
   setDeviceText(i18n("Processors"));
   setDefaultListing(type);
 }
@@ -107,7 +107,7 @@ SolStorageDevice::SolStorageDevice(const Solid::DeviceInterface::Type &type) :
 { 
   deviceTypeHolder = Solid::DeviceInterface::StorageDrive;
   
-  setDeviceIcon(KIcon("drive-harddisk"));
+  setDeviceIcon(QIcon::fromTheme(QStringLiteral("drive-harddisk")));
   setDeviceText(i18n("Storage Drives"));
   setDefaultListing(type);
 }
@@ -201,7 +201,7 @@ SolNetworkDevice::SolNetworkDevice(const Solid::DeviceInterface::Type &type) :
 { 
   deviceTypeHolder = Solid::DeviceInterface::NetworkInterface;
   
-  setDeviceIcon(KIcon("network-wired"));
+  setDeviceIcon(QIcon::fromTheme(QStringLiteral("network-wired")));
   setDeviceText(i18n("Network Interfaces"));
   setDefaultListing(type);
 }
@@ -232,9 +232,9 @@ void SolNetworkDevice::setDefaultDeviceIcon()
   
   if(netdev->isWireless() == true)
   {
-    setDeviceIcon(KIcon("network-wireless"));
+    setDeviceIcon(QIcon::fromTheme(QStringLiteral("network-wireless")));
   } else {
-    setDeviceIcon(KIcon("network-wired"));
+    setDeviceIcon(QIcon::fromTheme(QStringLiteral("network-wired")));
   }
 }
 
@@ -337,8 +337,8 @@ QVListLayout *SolVolumeDevice::infoPanelLayout()
         usageBar->setText(
               i18nc("Available space out of total partition size (percent used)",
                     "%1 free of %2 (%3% used)",
-                    KGlobal::locale()->formatByteSize(mountSpaceInfo.available()),
-                    KGlobal::locale()->formatByteSize(mountSpaceInfo.size()),
+                    KFormat().formatByteSize(mountSpaceInfo.available()),
+                    KFormat().formatByteSize(mountSpaceInfo.size()),
                     usageBar->value()));
       }
       else
@@ -369,7 +369,7 @@ SolAudioDevice::SolAudioDevice(const Solid::DeviceInterface::Type &type) :
 { 
   deviceTypeHolder = Solid::DeviceInterface::AudioInterface;
   
-  setDeviceIcon(KIcon("audio-card"));
+  setDeviceIcon(QIcon::fromTheme(QStringLiteral("audio-card")));
   setDeviceText(i18n("Audio Interfaces"));
   setDefaultListing(type);
 }
@@ -412,11 +412,11 @@ void SolAudioDevice::createSubItems(const SubMenus &menus)
   if(menus == ALSA)
   {
     alsaSubItem = new SolDevice(this);
-    alsaSubItem->setDeviceIcon(KIcon("audio-card"));
+    alsaSubItem->setDeviceIcon(QIcon::fromTheme(QStringLiteral("audio-card")));
     alsaSubItem->setText(0,i18n("Alsa Interfaces"));
   } else {
     ossSubItem = new SolDevice(this);
-    ossSubItem->setDeviceIcon(KIcon("audio-card"));
+    ossSubItem->setDeviceIcon(QIcon::fromTheme(QStringLiteral("audio-card")));
     ossSubItem->setText(0,i18n("Open Sound System Interfaces"));
   }
 }
@@ -503,7 +503,7 @@ SolButtonDevice::SolButtonDevice(const Solid::DeviceInterface::Type &type) :
 { 
   deviceTypeHolder = Solid::DeviceInterface::Button;
   
-  setDeviceIcon(KIcon("insert-button"));
+  setDeviceIcon(QIcon::fromTheme(QStringLiteral("insert-button")));
   setDeviceText(i18n("Device Buttons"));
   setDefaultListing(type);
 }
@@ -515,7 +515,7 @@ void SolButtonDevice::setDefaultListing(const Solid::DeviceInterface::Type &type
 
 void SolButtonDevice::setDefaultDeviceIcon() 
 {
-  setDeviceIcon(KIcon("insert-button"));
+  setDeviceIcon(QIcon::fromTheme(QStringLiteral("insert-button")));
 }
 
 QVListLayout *SolButtonDevice::infoPanelLayout() 
@@ -563,7 +563,7 @@ SolMediaPlayerDevice::SolMediaPlayerDevice(const Solid::DeviceInterface::Type &t
 { 
   deviceTypeHolder = Solid::DeviceInterface::PortableMediaPlayer;
 
-  setDeviceIcon(KIcon("multimedia-player"));
+  setDeviceIcon(QIcon::fromTheme(QStringLiteral("multimedia-player")));
   setDeviceText(i18n("Multimedia Players"));
   setDefaultListing(type);
 }
@@ -603,7 +603,7 @@ SolCameraDevice::SolCameraDevice(const Solid::DeviceInterface::Type &type) :
 { 
   deviceTypeHolder = Solid::DeviceInterface::Camera;
 
-  setDeviceIcon(KIcon("camera-web"));
+  setDeviceIcon(QIcon::fromTheme(QStringLiteral("camera-web")));
   setDeviceText(i18n("Cameras"));
   setDefaultListing(type);
 }
@@ -643,7 +643,7 @@ SolBatteryDevice::SolBatteryDevice(const Solid::DeviceInterface::Type &type) :
 { 
   deviceTypeHolder = Solid::DeviceInterface::Battery;
 
-  setDeviceIcon(KIcon("battery"));
+  setDeviceIcon(QIcon::fromTheme(QStringLiteral("battery")));
   setDeviceText(i18n("Batteries"));
   setDefaultListing(type);
 }
@@ -715,7 +715,7 @@ SolAcAdapterDevice::SolAcAdapterDevice(const Solid::DeviceInterface::Type &type)
 { 
   deviceTypeHolder = Solid::DeviceInterface::AcAdapter;
 
-  setDeviceIcon(KIcon("kde"));
+  setDeviceIcon(QIcon::fromTheme(QStringLiteral("kde")));
   setDeviceText(i18n("AC Adapters"));
   setDefaultListing(type);
 }
@@ -753,7 +753,7 @@ SolDvbDevice::SolDvbDevice(const Solid::DeviceInterface::Type &type) :
 { 
   deviceTypeHolder = Solid::DeviceInterface::DvbInterface;
 
-  setDeviceIcon(KIcon("kde"));
+  setDeviceIcon(QIcon::fromTheme(QStringLiteral("kde")));
   setDeviceText(i18n("Digital Video Broadcasting Devices"));
   setDefaultListing(type);
 }
@@ -817,7 +817,7 @@ SolSerialDevice::SolSerialDevice(const Solid::DeviceInterface::Type &type) :
 { 
   deviceTypeHolder = Solid::DeviceInterface::SerialInterface;
   
-  setDeviceIcon(KIcon("printer"));
+  setDeviceIcon(QIcon::fromTheme(QStringLiteral("printer")));
   setDeviceText(i18n("Serial Devices"));
   setDefaultListing(type);
 }
@@ -871,7 +871,7 @@ SolSmartCardDevice::SolSmartCardDevice(const Solid::DeviceInterface::Type &type)
 { 
   deviceTypeHolder = Solid::DeviceInterface::SmartCardReader;
 
-  setDeviceIcon(KIcon("kde"));
+  setDeviceIcon(QIcon::fromTheme(QStringLiteral("kde")));
   setDeviceText(i18n("Smart Card Devices"));
   setDefaultListing(type);
 }
@@ -920,7 +920,7 @@ SolVideoDevice::SolVideoDevice(const Solid::DeviceInterface::Type &type) :
 { 
   deviceTypeHolder = Solid::DeviceInterface::Video;
   
-  setDeviceIcon(KIcon("video-display"));
+  setDeviceIcon(QIcon::fromTheme(QStringLiteral("video-display")));
   setDeviceText(i18n("Video Devices"));
   setDefaultListing(type);
 }
