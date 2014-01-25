@@ -12,7 +12,6 @@
 #include "physicalMemoryChart.h"
 
 #include <KLocalizedString>
-#include <kdebug.h>
 
 #include "base.h"
 

@@ -33,13 +33,10 @@
 #include <QTreeWidget>
 
 #include <kaboutdata.h>
-#include <kdialog.h>
-#include <kdebug.h>
 
 #include <sys/param.h>		/* for BSD */
 
 #include <KLocalizedString>
-#include <kglobal.h>
 
 #include <KPluginFactory>
 #include <KPluginLoader>

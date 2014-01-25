@@ -20,9 +20,7 @@
 #include <qdrawutil.h>
 
 #include <KLocalizedString>
-#include <klocale.h>
-#include <kdebug.h>
-#include <kglobal.h>
+#include <KFormat>
 
 Chart::Chart(QWidget* parent) :
 	QWidget(parent) {
@@ -110,7 +108,7 @@ bool Chart::drawChart(t_memsize total, const QList<t_memsize>& used, const QList
 
 
 QString Chart::formattedUnit(t_memsize value) {
-	return KGlobal::locale()->formatByteSize(value, 2);
+	return KFormat().formatByteSize(value, 2);
 }
 
 ChartWidget::ChartWidget(const QString& title, const QString& hint, Chart* chartImplementation, QWidget* parent) :

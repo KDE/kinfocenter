@@ -12,8 +12,6 @@
 #include "totalMemoryChart.h"
 
 #include <KLocalizedString>
-#include <kdebug.h>
-
 #include "base.h"
 
 
