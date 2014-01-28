@@ -15,7 +15,7 @@ qt5_wrap_ui(KCM_OPENGL_PART_UIS_H ${KCM_OPENGL_PART_UIS})
 
 add_library(kcm_opengl MODULE ${KCM_OPENGL_PART_SRCS} ${KCM_OPENGL_PART_UIS_H})
 
-target_link_libraries(kcm_opengl KF5::KCMUtils KF5::I18n KF5::KDE4Support ${X11_X11_LIB})
+target_link_libraries(kcm_opengl KF5::KCMUtils KF5::I18n ${X11_X11_LIB})
 
 find_library(DL_LIBRARY dl)
 if (DL_LIBRARY)
