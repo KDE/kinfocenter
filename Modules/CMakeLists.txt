@@ -17,6 +17,8 @@ endif()
 if(OPENGLES_FOUND AND (${Qt5Gui_OPENGL_IMPLEMENTATION} STREQUAL "GLESv2"))
     set(KCM_ENABLE_OPENGLES TRUE)
 endif()
+set(KCM_HAVE_GLX ${KCM_ENABLE_OPENGL})
+set(KCM_HAVE_EGL ${EGL_FOUND})
 
 add_feature_info("OpenGL support" KCM_ENABLE_OPENGL "View OpenGL details in kinfocenter." )
 add_feature_info("OpenGL/ES support" KCM_ENABLE_OPENGLES "View OpenGL ES2.0 details in kinfocenter." )

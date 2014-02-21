@@ -24,4 +24,7 @@
 
 #cmakedefine KCM_ENABLE_OPENGLES
 
+#cmakedefine01 KCM_HAVE_GLX
+#cmakedefine01 KCM_HAVE_EGL
+
 #endif

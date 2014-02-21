@@ -26,6 +26,10 @@ if(KCM_ENABLE_OPENGL)
 target_link_libraries(kcm_opengl ${OPENGL_gl_LIBRARY} ${OPENGL_glu_LIBRARY})
 endif()
 
+if(KCM_HAVE_EGL)
+  target_link_libraries(kcm_opengl EGL::EGL)
+endif()
+
 if(KCM_ENABLE_OPENGLES)
 target_link_libraries(kcm_opengl ${OPENGLES_LIBRARIES})
 endif()
