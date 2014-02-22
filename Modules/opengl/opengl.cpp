@@ -27,6 +27,9 @@
 #include <QFile>
 #include <QTextStream>
 #include <QDebug>
+#include <QOpenGLContext>
+#include <QOffscreenSurface>
+#include <QSurfaceFormat>
 
 #include <KPluginFactory>
 #include <KPluginLoader>
@@ -602,8 +605,10 @@ static QTreeWidgetItem *print_screen_info(QTreeWidgetItem *l1, QTreeWidgetItem *
     	print_extension_list(gli.glExtensions, l3);
 
 #if KCM_HAVE_GLX
-    	l3 = newItem(l2, l3, i18n("Implementation specific"));
-    	print_limits(l3, gli.glExtensions, strstr(gli.clientExtensions, "GLX_ARB_get_proc_address") != NULL);
+        if (QGuiApplication::platformName() == QStringLiteral("xcb")) {
+            l3 = newItem(l2, l3, i18n("Implementation specific"));
+            print_limits(l3, gli.glExtensions, strstr(gli.clientExtensions, "GLX_ARB_get_proc_address") != NULL);
+        }
 #endif
 
         return l1;
@@ -843,21 +848,55 @@ static QTreeWidgetItem *get_gl_info_egl(Display *dpy, int scrnum, QTreeWidgetIte
    return result;
 
 }
+
+static QTreeWidgetItem *get_gl_info_egl_qt(QTreeWidgetItem *l1, QTreeWidgetItem *after, QSurfaceFormat::OpenGLContextProfile profile, const QString &title)
+{
+    QTreeWidgetItem *result = after;
+    QOffscreenSurface surface;
+    surface.create();
+    QOpenGLContext context;
+    QSurfaceFormat format;
+    format.setMajorVersion(3);
+    format.setMinorVersion(2);
+    format.setProfile(profile);
+    context.setFormat(format);
+    if (!context.create()) {
+        qDebug() << "Could not create QOpenGLContext";
+        return result;
+    }
+    if (context.format().profile() != profile) {
+        qDebug() << "Could not get requested OpenGL profile, requested" << profile << "got" << context.format().profile();
+        return result;
+    }
+
+    if (context.makeCurrent(&surface)) {
+        EGLDisplay egl_dpy = eglGetCurrentDisplay();
+        gli.eglVendor = eglQueryString(egl_dpy, EGL_VENDOR);
+        gli.eglVersion = eglQueryString(egl_dpy, EGL_VERSION);
+        gli.eglExtensions = eglQueryString(egl_dpy, EGL_EXTENSIONS);
+        gli.glVendor = (const char *) glGetString(GL_VENDOR);
+        gli.glRenderer = (const char *) glGetString(GL_RENDERER);
+        gli.glVersion = (const char *) glGetString(GL_VERSION);
+        gli.glExtensions = (const char *) glGetString(GL_EXTENSIONS);
+        gli.displayName = NULL;
+        result = print_screen_info(l1, after, title);
+    }
+    else {
+        qDebug() <<"Error: eglMakeCurrent() failed\n";
+    }
+
+    context.doneCurrent();
+
+    return result;
+}
 #endif
 
 bool GetInfo_OpenGL(QTreeWidget *treeWidget)
 {
     QTreeWidgetItem *l1, *l2 = NULL;
 
-    char *displayName = NULL;
-    Display *dpy;
-    int numScreens, scrnum;
-
-    dpy = XOpenDisplay(displayName);
-    if (!dpy) {
-//      qDebug() << "Error: unable to open display " << displayName;
-	return false;
-    }
+    static bool isX11 = QGuiApplication::platformName() == QStringLiteral("xcb");
+    static bool isWayland = QGuiApplication::platformName().contains(QStringLiteral("wayland"));
 
     QTreeWidgetItem *header = new QTreeWidgetItem();
     header->setText(0, i18n("Information"));
@@ -867,52 +906,83 @@ bool GetInfo_OpenGL(QTreeWidget *treeWidget)
     treeWidget->setRootIsDecorated(false);
 
     l1 = new QTreeWidgetItem(treeWidget);
-    l1->setText(0, i18n("Name of the Display"));
-    l1->setText(1, DisplayString(dpy));
-    l1->setExpanded(true);
-    l1->setFlags(Qt::ItemIsEnabled);
 
-    numScreens = ScreenCount(dpy);
+    if (isX11) {
+        char *displayName = NULL;
+        Display *dpy;
+        int numScreens, scrnum;
 
-    scrnum = 0;
+        dpy = XOpenDisplay(displayName);
+        if (!dpy) {
+    //      qDebug() << "Error: unable to open display " << displayName;
+            return false;
+        }
+        l1->setText(0, i18n("Name of the Display"));
+        l1->setText(1, DisplayString(dpy));
+        l1->setExpanded(true);
+        l1->setFlags(Qt::ItemIsEnabled);
+
+        numScreens = ScreenCount(dpy);
+
+        scrnum = 0;
 #ifdef KCMGL_MANY_SCREENS
-    for (; scrnum < numScreens; scrnum++)
+        for (; scrnum < numScreens; scrnum++)
 #endif
-    {
+        {
 #if KCM_HAVE_GLX
-	mesa_hack(dpy, scrnum);
+            mesa_hack(dpy, scrnum);
 
-	l2 = get_gl_info_glx(dpy, scrnum, true, l1, l2);
- 	if (l2) l2->setExpanded(true);
+            l2 = get_gl_info_glx(dpy, scrnum, true, l1, l2);
+            if (l2) l2->setExpanded(true);
 
-	if (IsDirect) l2 = get_gl_info_glx(dpy, scrnum, false, l1, l2);
+            if (IsDirect) l2 = get_gl_info_glx(dpy, scrnum, false, l1, l2);
 #endif
 #if KCM_HAVE_EGL
-        l2 = get_gl_info_egl(dpy, scrnum, l1, l2);
-        if (l2)
-            l2->setExpanded(true);
+            l2 = get_gl_info_egl(dpy, scrnum, l1, l2);
+            if (l2)
+                l2->setExpanded(true);
 #endif
 
 //   TODO      print_visual_info(dpy, scrnum, mode);
-    }
+        }
 
 #if KCM_HAVE_GLX
-    if (l2)
-	print_glx_glu(l1, l2);
-    else
-	KMessageBox::error(0, i18n("Could not initialize OpenGL/GLX"));
+        if (l2)
+            print_glx_glu(l1, l2);
+        else
+            KMessageBox::error(0, i18n("Could not initialize OpenGL/GLX"));
 #endif
+        XCloseDisplay(dpy);
+    }
+
+    if (isWayland) {
+        l1->setText(0, i18n("Name of the Display"));
+        l1->setText(1, qgetenv("WAYLAND_DISPLAY"));
+        l1->setExpanded(true);
+        l1->setFlags(Qt::ItemIsEnabled);
+#if KCM_HAVE_EGL
+        l2 = get_gl_info_egl_qt(l1, l2, QSurfaceFormat::NoProfile, i18n("OpenGL"));
+        if (l2)
+            l2->setExpanded(true);
+        l2 = get_gl_info_egl_qt(l1, l2, QSurfaceFormat::CoreProfile, i18n("Core Profile"));
+        if (l2)
+            l2->setExpanded(true);
+        l2 = get_gl_info_egl_qt(l1, l2, QSurfaceFormat::CompatibilityProfile, i18n("Compatibility Profile"));
+        if (l2)
+            l2->setExpanded(true);
+#endif
+    }
+
 #if KCM_HAVE_EGL
     if (l2)
-	print_egl(l1, l2);
+        print_egl(l1, l2);
     else
-	KMessageBox::error(0, i18n("Could not initialize OpenGL (ES)/EGL "));
+        KMessageBox::error(0, i18n("Could not initialize OpenGL (ES)/EGL "));
 #endif
 
     treeWidget->resizeColumnToContents(0);
     treeWidget->resizeColumnToContents(1);
 
-    XCloseDisplay(dpy);
     return true;
 }
 
