@@ -16,6 +16,10 @@ set(KCM_LIBS
     ${X11_LIBRARIES}
 )
 
+if(Wayland_Client_FOUND)
+    set(KCM_LIBS ${KCM_LIBS} Wayland::Client)
+endif()
+
 if(PCIUTILS_FOUND)
     message(STATUS "Enabling PCI module based on pciutils library")
 
@@ -25,6 +29,9 @@ if (UNIX AND NOT APPLE)
 endif ()
 
     set(KCM_PCI_PART_SRCS kcm_pci.cpp ../base/os_current.cpp kpci.cpp )
+    if(Wayland_Client_FOUND)
+        set(KCM_PCI_PART_SRCS ${KCM_PCI_PART_SRCS} ../base/info_wayland.cpp)
+    endif()
 
     add_library(kcm_pci MODULE ${KCM_PCI_PART_SRCS})
 

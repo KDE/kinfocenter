@@ -1,0 +1,18 @@
+[Desktop Entry]
+Exec=kcmshell5 wayland
+Icon=wayland
+Type=Service
+X-KDE-ServiceTypes=KCModule
+
+X-KDE-KInfoCenter-Category=graphical_information
+X-KDE-Library=kcm_info
+X-KDE-PluginKeyword=wayland
+X-KDE-ParentApp=kinfocenter
+
+Name=Wayland
+
+Comment=Information about the Wayland Compositor
+
+X-KDE-Keywords=Wayland,Compositor,Display,System Information
+
+Categories=Qt;KDE;X-KDE-information;

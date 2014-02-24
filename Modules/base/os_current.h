@@ -33,6 +33,7 @@ bool GetInfo_PCI(QTreeWidget* tree);
 bool GetInfo_IO_Ports(QTreeWidget* tree);
 bool GetInfo_SCSI(QTreeWidget* tree);
 bool GetInfo_XServer_and_Video(QTreeWidget* tree);
+bool GetInfo_Wayland(QTreeWidget* tree);
 
 
 #ifdef __linux__
@@ -42,6 +43,7 @@ bool GetInfo_XServer_and_Video(QTreeWidget* tree);
 	#define INFO_IOPORTS_AVAILABLE
 	#define INFO_SCSI_AVAILABLE
 	#define INFO_XSERVER_AVAILABLE
+        #define INFO_WAYLAND_AVAILABLE
 	
 	/* i18n("Maybe the proc-filesystem is not enabled in Linux-Kernel.") */
 	#define DEFAULT_ERRORSTRING QString() 

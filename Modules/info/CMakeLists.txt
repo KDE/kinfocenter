@@ -10,6 +10,10 @@ include_directories(
 
 set(kcm_info_PART_SRCS main.cpp info.cpp ../base/os_current.cpp )
 
+if(Wayland_Client_FOUND)
+    set(kcm_info_PART_SRCS ${kcm_info_PART_SRCS} ../base/info_wayland.cpp)
+endif()
+
 add_library(kcm_info MODULE ${kcm_info_PART_SRCS})
 
 target_link_libraries(kcm_info
@@ -18,6 +22,10 @@ target_link_libraries(kcm_info
     KF5::IconThemes
     KF5::KDE4Support
     ${X11_X11_LIB})
+
+if(Wayland_Client_FOUND)
+    target_link_libraries(kcm_info Wayland::Client)
+endif()
 
 install(TARGETS kcm_info  DESTINATION ${PLUGIN_INSTALL_DIR} )
 
@@ -31,6 +39,7 @@ install(
 	ioports.desktop 
 	scsi.desktop 
 	xserver.desktop  
+    wayland.desktop
 	DESTINATION  ${SERVICES_INSTALL_DIR} 
 )
 
