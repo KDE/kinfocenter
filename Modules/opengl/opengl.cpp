@@ -26,6 +26,7 @@
 #include <QRegExp>
 #include <QFile>
 #include <QTextStream>
+#include <QProcess>
 #include <QDebug>
 #include <QOpenGLContext>
 #include <QOffscreenSurface>
@@ -159,22 +160,20 @@ static struct {
 		rev;
 } dri_info;
 
-static int ReadPipe(QString FileName, QStringList &list)
+static int ReadPipe(const QString &FileName, QStringList &list)
 {
-    FILE *pipe;
+    QProcess pipe;
+    pipe.start(FileName, QIODevice::ReadOnly);
 
-    if ((pipe = popen(FileName.toAscii().data(), "r")) == NULL) {
+    if (!pipe.waitForFinished()) {
+	// something went wrong, f.e. command not found
 	return 0;
     }
 
-    QTextStream t(pipe, QIODevice::ReadOnly);
+    QTextStream t(&pipe);
 
     while (!t.atEnd()) list.append(t.readLine());
 
-    if (pclose(pipe) != 0) {
-	list.clear();
-	return 0;
-    }
     return list.count();
 }
 
