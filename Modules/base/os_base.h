@@ -34,12 +34,13 @@ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 #include <kglobal.h>
 #include <klocale.h>
 #include <KLocalizedString>
+#include <config-workspace.h>
+#include "config-infocenter.h"
 
 #if HAVE_X11
 #include <X11/Xlib.h>
 #endif
 
-#include "config-infocenter.h"
 
 static const QString Value(int val, int numbers=1) {
 	return KGlobal::locale()->formatNumber(val, 0).rightJustified(numbers);
