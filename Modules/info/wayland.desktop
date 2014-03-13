@@ -10,30 +10,39 @@ X-KDE-PluginKeyword=wayland
 X-KDE-ParentApp=kinfocenter
 
 Name=Wayland
+Name[da]=Wayland
 Name[de]=Wayland
+Name[es]=Wayland
 Name[nds]=Wayland
 Name[nl]=Wayland
 Name[pt]=Wayland
 Name[sk]=Wayland
+Name[sv]=Wayland
 Name[uk]=Wayland
 Name[x-test]=xxWaylandxx
 
 Comment=Information about the Wayland Compositor
 Comment[cs]=Informace o kompozitoru Wayland
+Comment[da]=Information om Wayland Compositor
 Comment[de]=Informationen über den Wayland-Compositor
+Comment[es]=Información sobre el compositor Wayland
 Comment[nds]=Informatschonen över de Wayland-Tosamensetten
 Comment[nl]=Informatie over de Wayland Compositor
 Comment[pt]=Informação sobre o compositor Wayland
 Comment[sk]=Informácia o skladateľovi Wayland
+Comment[sv]=Information om Wayland-sammansättning
 Comment[uk]=Відомості щодо засобу композиції Wayland
 Comment[x-test]=xxInformation about the Wayland Compositorxx
 
 X-KDE-Keywords=Wayland,Compositor,Display,System Information
+X-KDE-Keywords[da]=Wayland,Compositor,Display,System Information
 X-KDE-Keywords[de]=Wayland,Compositor,Anzeige,Systeminformationen
+X-KDE-Keywords[es]=Wayland,Compositor,Pantalla,Información del sistema
 X-KDE-Keywords[nds]=Wayland,Tosamensetten,Dorstellen,Systeem-Informatschonen
 X-KDE-Keywords[nl]=Wayland,Compositor,Scherm,Systeeminformatie
 X-KDE-Keywords[pt]=Wayland,Compositor,Ecrã,Informação do Sistema
 X-KDE-Keywords[sk]=Wayland,skladateľ,obrazovka,systémové informácie
+X-KDE-Keywords[sv]=Wayland,Sammansättning,Bildskärm,Systeminformation
 X-KDE-Keywords[uk]=Wayland,Compositor,Display,System Information,композиція,засіб,дисплей,монітор,відомості щодо системи
 X-KDE-Keywords[x-test]=xxWayland,Compositor,Display,System Informationxx
 
