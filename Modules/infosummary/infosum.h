@@ -25,9 +25,7 @@
 
 //kde
 #include <KCModule>
-#include <KLocale>
 #include <KAboutData>
-#include <kdeversion.h>
 
 //Solid
 #include <solid/device.h>

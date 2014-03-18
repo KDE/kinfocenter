@@ -37,7 +37,6 @@
 #include <KDialog>
 #include <KGlobal>
 #include <KLocalizedString>
-#include <KLocale>
 
 StatisticsView::StatisticsView(QWidget *parent, KConfig *config) :
 	QWidget(parent), configFile(config), dataList(0), connectionsCount(0), filesCount(0), calcCount(0) {
