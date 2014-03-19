@@ -7,6 +7,7 @@ target_link_libraries( kcm_infosummary
     KF5::I18n
     KF5::Solid
     KF5::CoreAddons
+    KF5::Plasma
  )
 
 install( TARGETS kcm_infosummary DESTINATION ${PLUGIN_INSTALL_DIR} )
