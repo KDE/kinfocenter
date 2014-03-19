@@ -34,7 +34,7 @@ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 #include <kglobal.h>
 #include <klocale.h>
 #include <KLocalizedString>
-#include <config-workspace.h>
+#include <config-X11.h>
 #include "config-infocenter.h"
 
 #if HAVE_X11
