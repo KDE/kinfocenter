@@ -47,7 +47,6 @@
 //#include "nicsignals.h"
 
 //Kde
-#include <klocale.h>
 
 class InfoPanel;
 class DevInfoPlugin;

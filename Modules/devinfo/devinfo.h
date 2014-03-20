@@ -25,7 +25,6 @@
 
 //kde
 #include <kcmodule.h>
-#include <klocale.h>
 #include <kaboutdata.h>
 
 //Plugin

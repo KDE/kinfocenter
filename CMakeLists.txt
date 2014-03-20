@@ -2,7 +2,6 @@ configure_file(config-workspace.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-works
 configure_file(config-X11.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-X11.h)
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
-include_directories( ${KDE4_INCLUDES} )
 add_definitions( -DKDE_DEFAULT_DEBUG_AREA=1208 )
 remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_STRICT_ITERATORS -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_KEYWORDS)
 
