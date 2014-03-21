@@ -79,6 +79,7 @@ remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_STRICT_ITERATORS -DQT_NO_CAST_FR
 
 add_subdirectory( Categories )
 add_subdirectory( Modules )
+add_subdirectory( doc )
 
 include_directories( ToolTips )
 
