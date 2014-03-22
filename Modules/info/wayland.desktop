@@ -10,6 +10,7 @@ X-KDE-PluginKeyword=wayland
 X-KDE-ParentApp=kinfocenter
 
 Name=Wayland
+Name[ca]=Wayland
 Name[da]=Wayland
 Name[de]=Wayland
 Name[es]=Wayland
@@ -35,6 +36,7 @@ Name[x-test]=xxWaylandxx
 Name[zh_TW]=Wayland
 
 Comment=Information about the Wayland Compositor
+Comment[ca]=Informació quant al compositor Wayland
 Comment[cs]=Informace o kompozitoru Wayland
 Comment[da]=Information om Wayland Compositor
 Comment[de]=Informationen über den Wayland-Compositor
@@ -61,6 +63,7 @@ Comment[x-test]=xxInformation about the Wayland Compositorxx
 Comment[zh_TW]=關於 Wayland 的資訊
 
 X-KDE-Keywords=Wayland,Compositor,Display,System Information
+X-KDE-Keywords[ca]=Wayland,Compositor,Pantalla,Informació del sistema
 X-KDE-Keywords[da]=Wayland,Compositor,Display,System Information
 X-KDE-Keywords[de]=Wayland,Compositor,Anzeige,Systeminformationen
 X-KDE-Keywords[es]=Wayland,Compositor,Pantalla,Información del sistema
