@@ -109,18 +109,6 @@ class SolBatteryDevice : public SolDevice
     void setDefaultListing(const Solid::DeviceInterface::Type &);
 };
 
-class SolAcAdapterDevice : public SolDevice 
-{
-
-  public:
-    SolAcAdapterDevice(const Solid::DeviceInterface::Type &);
-    SolAcAdapterDevice(QTreeWidgetItem *, const Solid::Device &);
-    QVListLayout *infoPanelLayout();
-    
-  private:
-    void setDefaultListing(const Solid::DeviceInterface::Type &);
-};
-
 class SolDvbDevice : public SolDevice 
 {
 

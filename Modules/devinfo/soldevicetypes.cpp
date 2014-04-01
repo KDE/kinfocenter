@@ -432,45 +432,6 @@ QVListLayout *SolBatteryDevice::infoPanelLayout()
   deviceInfoLayout->applyQListToLayout(labels);
   return deviceInfoLayout;
 }
-  
-// Ac Adapter
-
-SolAcAdapterDevice::SolAcAdapterDevice(QTreeWidgetItem *parent, const Solid::Device &device) :
-  SolDevice(parent, device) 
-{
-  deviceTypeHolder = Solid::DeviceInterface::AcAdapter;
-}
-
-SolAcAdapterDevice::SolAcAdapterDevice(const Solid::DeviceInterface::Type &type) :
-  SolDevice(type)
-{ 
-  deviceTypeHolder = Solid::DeviceInterface::AcAdapter;
-
-  setDeviceIcon(QIcon::fromTheme(QStringLiteral("kde")));
-  setDeviceText(i18n("AC Adapters"));
-  setDefaultListing(type);
-}
-
-void SolAcAdapterDevice::setDefaultListing(const Solid::DeviceInterface::Type &type) 
-{ 
-  createDeviceChildren<SolAcAdapterDevice>(this,QString(),type);
-}
-
-QVListLayout *SolAcAdapterDevice::infoPanelLayout() 
-{  
-  QStringList labels;
-  const Solid::AcAdapter *acdev = interface<const Solid::AcAdapter>(); 
-  
-  if(!acdev) return NULL;
-  deviceInfoLayout = new QVListLayout();
-  
-  labels << i18n("Is plugged in?")
-  << InfoPanel::convertTf(acdev->isPlugged());
-  
-  deviceInfoLayout->applyQListToLayout(labels);
-  return deviceInfoLayout;
-}
-
 // DVB
 
 SolDvbDevice::SolDvbDevice(QTreeWidgetItem *parent, const Solid::Device &device) :
