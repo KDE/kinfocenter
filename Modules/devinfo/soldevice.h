@@ -38,7 +38,6 @@
 #include <solid/portablemediaplayer.h>
 #include <solid/camera.h>
 #include <solid/battery.h>
-#include <solid/smartcardreader.h>
 #include <solid/predicate.h>
 
 //KDE
