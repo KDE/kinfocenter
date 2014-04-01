@@ -281,68 +281,6 @@ QVListLayout *SolVolumeDevice::infoPanelLayout()
   return deviceInfoLayout;
 }
 
-// Button
-
-SolButtonDevice::SolButtonDevice(QTreeWidgetItem *parent, const Solid::Device &device) :
-  SolDevice(parent, device) 
-{
-  deviceTypeHolder = Solid::DeviceInterface::Button;
-  
-  setDefaultDeviceIcon();
-}
-
-SolButtonDevice::SolButtonDevice(const Solid::DeviceInterface::Type &type) :
-  SolDevice(type)
-{ 
-  deviceTypeHolder = Solid::DeviceInterface::Button;
-  
-  setDeviceIcon(QIcon::fromTheme(QStringLiteral("insert-button")));
-  setDeviceText(i18n("Device Buttons"));
-  setDefaultListing(type);
-}
-
-void SolButtonDevice::setDefaultListing(const Solid::DeviceInterface::Type &type) 
-{ 
-  createDeviceChildren<SolButtonDevice>(this,QString(),type);
-}
-
-void SolButtonDevice::setDefaultDeviceIcon() 
-{
-  setDeviceIcon(QIcon::fromTheme(QStringLiteral("insert-button")));
-}
-
-QVListLayout *SolButtonDevice::infoPanelLayout() 
-{
-  QStringList labels;
-  const Solid::Button *butdev = interface<const Solid::Button>();
-  
-  if(!butdev) return NULL;
-  deviceInfoLayout = new QVListLayout();
- 
-  QString type;
-  switch(butdev->type()) 
-  {
-    case Solid::Button::LidButton:
-      type = i18n("Lid Button"); break;
-    case Solid::Button::PowerButton:
-      type = i18n("Power Button"); break;
-    case Solid::Button::SleepButton:
-      type = i18n("Sleep Button"); break;
-    case Solid::Button::TabletButton:
-      type = i18n("Tablet Button"); break;
-    default:
-      type = i18n("Unknown Button"); 
-  }
-    
-  labels << i18n("Button type: ")
-  << type
-  << i18n("Has State?")
-  << InfoPanel::convertTf(butdev->hasState());
-    
-  deviceInfoLayout->applyQListToLayout(labels);
-  return deviceInfoLayout;
-}
-
 // Media Player
 
 SolMediaPlayerDevice::SolMediaPlayerDevice(QTreeWidgetItem *parent, const Solid::Device &device) :
