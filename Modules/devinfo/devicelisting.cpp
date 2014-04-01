@@ -103,7 +103,6 @@ void DeviceListing::populateListing(const show showStatus)
   const Solid::DeviceInterface::Type needHardware[] = { 
     Solid::DeviceInterface::Processor,
     Solid::DeviceInterface::StorageDrive,
-    Solid::DeviceInterface::AudioInterface,
     Solid::DeviceInterface::Battery, 
     Solid::DeviceInterface::PortableMediaPlayer,
     Solid::DeviceInterface::Camera
@@ -165,8 +164,6 @@ void DeviceListing::deviceAddedSlot(const QString udi)
       {
 	case Solid::DeviceInterface::Processor: 
 	  new SolProcessorDevice(deviceMap[deviceType],dev); break;
-	case Solid::DeviceInterface::AudioInterface:
-	  deviceMap[deviceType]->addItem(dev); break;
 	case Solid::DeviceInterface::Camera:
 	  new SolCameraDevice(deviceMap[deviceType],dev); break;
 	case Solid::DeviceInterface::PortableMediaPlayer:

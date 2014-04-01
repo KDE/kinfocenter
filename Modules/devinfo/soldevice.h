@@ -35,7 +35,6 @@
 #include <solid/storagedrive.h>
 #include <solid/storagevolume.h>
 #include <solid/storageaccess.h>
-#include <solid/audiointerface.h>
 #include <solid/portablemediaplayer.h>
 #include <solid/camera.h>
 #include <solid/battery.h>
