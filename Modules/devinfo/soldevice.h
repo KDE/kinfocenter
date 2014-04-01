@@ -39,7 +39,6 @@
 #include <solid/portablemediaplayer.h>
 #include <solid/camera.h>
 #include <solid/battery.h>
-#include <solid/serialinterface.h>
 #include <solid/video.h>
 #include <solid/smartcardreader.h>
 #include <solid/predicate.h>

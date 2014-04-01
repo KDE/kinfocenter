@@ -60,7 +60,6 @@ class SolStorageDevice : public SolDevice
     void setDefaultListing(const Solid::DeviceInterface::Type &); 
 };
 
-
 class SolVolumeDevice : public SolDevice 
 {
 
@@ -105,18 +104,6 @@ class SolBatteryDevice : public SolDevice
     SolBatteryDevice(QTreeWidgetItem *, const Solid::Device &);
     QVListLayout *infoPanelLayout();
     
-  private:
-    void setDefaultListing(const Solid::DeviceInterface::Type &);
-};
-
-class SolSerialDevice : public SolDevice 
-{
-
-  public:
-    SolSerialDevice(const Solid::DeviceInterface::Type &);
-    SolSerialDevice(QTreeWidgetItem *, const Solid::Device &);
-    QVListLayout *infoPanelLayout();
-
   private:
     void setDefaultListing(const Solid::DeviceInterface::Type &);
 };

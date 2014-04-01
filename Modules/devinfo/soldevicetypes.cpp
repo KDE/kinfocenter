@@ -432,59 +432,6 @@ QVListLayout *SolBatteryDevice::infoPanelLayout()
   deviceInfoLayout->applyQListToLayout(labels);
   return deviceInfoLayout;
 }
-
-SolSerialDevice::SolSerialDevice(QTreeWidgetItem *parent, const Solid::Device &device) :
-  SolDevice(parent, device) 
-{
-  deviceTypeHolder = Solid::DeviceInterface::SerialInterface;
-}
-
-SolSerialDevice::SolSerialDevice(const Solid::DeviceInterface::Type &type) :
-  SolDevice(type)
-{ 
-  deviceTypeHolder = Solid::DeviceInterface::SerialInterface;
-  
-  setDeviceIcon(QIcon::fromTheme(QStringLiteral("printer")));
-  setDeviceText(i18n("Serial Devices"));
-  setDefaultListing(type);
-}
-
-void SolSerialDevice::setDefaultListing(const Solid::DeviceInterface::Type &type) 
-{ 
-  createDeviceChildren<SolSerialDevice>(this,QString(),type);
-}
-
-QVListLayout *SolSerialDevice::infoPanelLayout() 
-{  
-  QStringList labels;
-  const Solid::SerialInterface *serdev = interface<const Solid::SerialInterface>(); 
-  
-  if(!serdev) return NULL;
-  deviceInfoLayout = new QVListLayout();
-  
-  QString type;
-  switch(serdev->serialType())
-  {
-    case Solid::SerialInterface::Platform:
-      type = i18nc("platform serial interface type", "Platform"); break;
-    case Solid::SerialInterface::Usb:
-      type = i18n("USB"); break;
-    default:
-      type = i18nc("unknown serial interface type", "Unknown"); 
-  }
-  
-  QString port = i18nc("unknown port", "Unknown");
-  if(serdev->port() != -1) port = QString::number(serdev->port());
-
-  labels << i18n("Serial Type: ")
-  << type
-  << i18n("Port: ")
-  << port;
-  
-  deviceInfoLayout->applyQListToLayout(labels);
-  return deviceInfoLayout;
-}
-
 // Video
 
 SolVideoDevice::SolVideoDevice(QTreeWidgetItem *parent, const Solid::Device &device) :
