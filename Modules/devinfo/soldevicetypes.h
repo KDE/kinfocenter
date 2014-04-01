@@ -108,17 +108,4 @@ class SolBatteryDevice : public SolDevice
     void setDefaultListing(const Solid::DeviceInterface::Type &);
 };
 
-class SolVideoDevice : public SolDevice 
-{
-
-  public:
-    SolVideoDevice(const Solid::DeviceInterface::Type &);
-    SolVideoDevice(QTreeWidgetItem *, const Solid::Device &);
-    QVListLayout *infoPanelLayout();
-    
-  private:
-    void setDefaultListing(const Solid::DeviceInterface::Type &);
-};
-
-
 #endif //SOLDEVICETYPES
