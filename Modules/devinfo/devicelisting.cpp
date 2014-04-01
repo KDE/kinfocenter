@@ -105,8 +105,6 @@ QTreeWidgetItem *DeviceListing::createListItems(const Solid::DeviceInterface::Ty
 	  return new SolDvbDevice(type);
 	case Solid::DeviceInterface::SerialInterface:
 	  return new SolSerialDevice(type);
-	case Solid::DeviceInterface::SmartCardReader:
-	  return new SolSmartCardDevice(type);
 	case Solid::DeviceInterface::Video:
 	  return new SolVideoDevice(type);
 	default:
@@ -123,7 +121,6 @@ void DeviceListing::populateListing(const show showStatus)
     Solid::DeviceInterface::AudioInterface,
     Solid::DeviceInterface::Video,
     Solid::DeviceInterface::SerialInterface,
-    Solid::DeviceInterface::SmartCardReader,
     Solid::DeviceInterface::DvbInterface,
     Solid::DeviceInterface::Button,
     Solid::DeviceInterface::Battery, 
@@ -206,8 +203,6 @@ void DeviceListing::deviceAddedSlot(const QString udi)
 	  new SolDvbDevice(deviceMap[deviceType],dev); break;
 	case Solid::DeviceInterface::SerialInterface:
 	  new SolSerialDevice(deviceMap[deviceType],dev); break;
-	case Solid::DeviceInterface::SmartCardReader:
-	  new SolSmartCardDevice(deviceMap[deviceType],dev); break;
 	case Solid::DeviceInterface::Video:
 	  new SolVideoDevice(deviceMap[deviceType],dev); break;
 	case Solid::DeviceInterface::StorageDrive:

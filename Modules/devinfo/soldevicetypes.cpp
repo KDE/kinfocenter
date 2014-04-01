@@ -858,55 +858,6 @@ QVListLayout *SolSerialDevice::infoPanelLayout()
   return deviceInfoLayout;
 }
 
-//  Smartcard
-
-SolSmartCardDevice::SolSmartCardDevice(QTreeWidgetItem *parent, const Solid::Device &device) :
-  SolDevice(parent, device) 
-{
-  deviceTypeHolder = Solid::DeviceInterface::SmartCardReader;
-}
-
-SolSmartCardDevice::SolSmartCardDevice(const Solid::DeviceInterface::Type &type) :
-  SolDevice(type)
-{ 
-  deviceTypeHolder = Solid::DeviceInterface::SmartCardReader;
-
-  setDeviceIcon(QIcon::fromTheme(QStringLiteral("kde")));
-  setDeviceText(i18n("Smart Card Devices"));
-  setDefaultListing(type);
-}
-
-void SolSmartCardDevice::setDefaultListing(const Solid::DeviceInterface::Type &type) 
-{ 
-  createDeviceChildren<SolSmartCardDevice>(this,QString(),type);
-}
-
-QVListLayout *SolSmartCardDevice::infoPanelLayout() 
-{  
-  QStringList labels;
-  const Solid::SmartCardReader *scdev = interface<const Solid::SmartCardReader>(); 
-  
-  if(!scdev) return NULL;
-  deviceInfoLayout = new QVListLayout();
-  
-  QString type;
-  switch(scdev->readerType())
-  {
-    case Solid::SmartCardReader::CardReader:
-      type = i18n("Card Reader"); break;
-    case Solid::SmartCardReader::CryptoToken:
-      type = i18n("Crypto Token"); break;
-    default:
-      type = i18nc("unknown smart card type", "Unknown"); 
-  }
- 
-  labels << i18n("Smart Card Type: ")
-  << type;
-  
-  deviceInfoLayout->applyQListToLayout(labels);
-  return deviceInfoLayout;
-}
-
 // Video
 
 SolVideoDevice::SolVideoDevice(QTreeWidgetItem *parent, const Solid::Device &device) :

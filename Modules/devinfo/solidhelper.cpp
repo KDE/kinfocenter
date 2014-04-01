@@ -31,7 +31,6 @@ Solid::DeviceInterface::Type SolidHelper::deviceType(const Solid::Device *dev)
     Solid::DeviceInterface::AudioInterface,
     Solid::DeviceInterface::Video,
     Solid::DeviceInterface::SerialInterface,
-    Solid::DeviceInterface::SmartCardReader,
     Solid::DeviceInterface::DvbInterface,
     Solid::DeviceInterface::Button,
     Solid::DeviceInterface::Battery, 
