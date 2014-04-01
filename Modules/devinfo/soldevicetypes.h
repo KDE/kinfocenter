@@ -193,18 +193,6 @@ class SolSerialDevice : public SolDevice
     void setDefaultListing(const Solid::DeviceInterface::Type &);
 };
 
-class SolSmartCardDevice : public SolDevice 
-{
-
-  public:
-    SolSmartCardDevice(const Solid::DeviceInterface::Type &);
-    SolSmartCardDevice(QTreeWidgetItem *, const Solid::Device &);
-    QVListLayout *infoPanelLayout();
-    
-  private:
-    void setDefaultListing(const Solid::DeviceInterface::Type &);
-};
-
 class SolVideoDevice : public SolDevice 
 {
 
