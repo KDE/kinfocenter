@@ -27,7 +27,6 @@
 #include <solid/device.h>
 #include <solid/deviceinterface.h>
 #include <solid/processor.h>
-#include <solid/networkinterface.h>
 #include <solid/devicenotifier.h>
 #include <solid/networking.h>
 
@@ -96,7 +95,6 @@ class DeviceListing : public QTreeWidget
     void expandAllDevicesSlot();
     void showAllDevicesSlot();
     void showRelevantDevicesSlot();
-    void networkingChangedSlot();
 };
 
 #endif //DEVICELISTING

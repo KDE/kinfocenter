@@ -60,20 +60,6 @@ class SolStorageDevice : public SolDevice
     void setDefaultListing(const Solid::DeviceInterface::Type &); 
 };
 
-class SolNetworkDevice : public SolDevice
-{
-  
-  public:
-    SolNetworkDevice(const Solid::DeviceInterface::Type &);
-    SolNetworkDevice(QTreeWidgetItem *, const Solid::Device &);
-    QVListLayout *infoPanelLayout();
-    void refreshName();
-    
-  private:
-    void setDefaultDeviceText();
-    void setDefaultDeviceIcon();
-    void setDefaultListing(const Solid::DeviceInterface::Type &); 
-};
 
 class SolVolumeDevice : public SolDevice 
 {

@@ -32,7 +32,6 @@
 #include <solid/device.h>
 #include <solid/deviceinterface.h>
 #include <solid/processor.h>
-#include <solid/networkinterface.h>
 #include <solid/storagedrive.h>
 #include <solid/storagevolume.h>
 #include <solid/storageaccess.h>

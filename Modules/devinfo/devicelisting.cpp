@@ -87,8 +87,6 @@ QTreeWidgetItem *DeviceListing::createListItems(const Solid::DeviceInterface::Ty
 	  return new SolProcessorDevice(type);
 	case Solid::DeviceInterface::StorageDrive:
 	  return new SolStorageDevice(type);
-	case Solid::DeviceInterface::NetworkInterface:
-	  return new SolNetworkDevice(type);
 	case Solid::DeviceInterface::Camera:
 	  return new SolCameraDevice(type);
 	case Solid::DeviceInterface::PortableMediaPlayer:
@@ -115,7 +113,6 @@ void DeviceListing::populateListing(const show showStatus)
   const Solid::DeviceInterface::Type needHardware[] = { 
     Solid::DeviceInterface::Processor,
     Solid::DeviceInterface::StorageDrive,
-    Solid::DeviceInterface::NetworkInterface,
     Solid::DeviceInterface::AudioInterface,
     Solid::DeviceInterface::Video,
     Solid::DeviceInterface::SerialInterface,
@@ -183,8 +180,6 @@ void DeviceListing::deviceAddedSlot(const QString udi)
       {
 	case Solid::DeviceInterface::Processor: 
 	  new SolProcessorDevice(deviceMap[deviceType],dev); break;
-	case Solid::DeviceInterface::NetworkInterface:
-	  new SolNetworkDevice(deviceMap[deviceType],dev); break;
 	case Solid::DeviceInterface::AudioInterface:
 	  deviceMap[deviceType]->addItem(dev); break;
 	case Solid::DeviceInterface::Camera:
@@ -242,15 +237,4 @@ void DeviceListing::showAllDevicesSlot()
 void DeviceListing::showRelevantDevicesSlot() 
 { 
   populateListing(RELEVANT);
-}
-
-void DeviceListing::networkingChangedSlot() 
-{ 
-  QTreeWidgetItemIterator treeWidget(this);
-  while (*treeWidget) 
-  {
-    SolDevice *item = static_cast<SolDevice *>(*treeWidget);
-    if(item->deviceType() == Solid::DeviceInterface::NetworkInterface) item->refreshName();
-    ++treeWidget;
-  } 
 }
