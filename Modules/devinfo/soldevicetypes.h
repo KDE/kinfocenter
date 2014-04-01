@@ -87,27 +87,6 @@ class SolVolumeDevice : public SolDevice
     void setDefaultListing(const Solid::DeviceInterface::Type &);
 };
 
-class SolAudioDevice : public SolDevice 
-{
-
-  public:
-    SolAudioDevice(const Solid::DeviceInterface::Type &);
-    SolAudioDevice(QTreeWidgetItem *, const Solid::Device &);
-    QVListLayout *infoPanelLayout();
-    void addItem(Solid::Device);
-    
-  private:
-    enum SubMenus { ALSA=0, OSS };
-    
-    void setDefaultListing(const Solid::DeviceInterface::Type &);
-    void listOss();
-    void listAlsa();
-    void createSubItems(const SubMenus &);
-    
-    SolDevice *alsaSubItem;
-    SolDevice *ossSubItem;
-};
-
 class SolButtonDevice : public SolDevice 
 {
 

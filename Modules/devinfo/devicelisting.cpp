@@ -89,8 +89,6 @@ QTreeWidgetItem *DeviceListing::createListItems(const Solid::DeviceInterface::Ty
 	  return new SolStorageDevice(type);
 	case Solid::DeviceInterface::NetworkInterface:
 	  return new SolNetworkDevice(type);
-	case Solid::DeviceInterface::AudioInterface:
-	  return new SolAudioDevice(type);
 	case Solid::DeviceInterface::Camera:
 	  return new SolCameraDevice(type);
 	case Solid::DeviceInterface::PortableMediaPlayer:
