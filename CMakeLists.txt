@@ -11,12 +11,14 @@ include(KDECMakeSettings)
 include(KDECompilerSettings)
 include(FeatureSummary)
 
-find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
-    Core
-)
+find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Core Gui)
 
 find_package(KF5 CONFIG REQUIRED COMPONENTS
+    Completion
+    Config
     I18n
+    DocTools
+    KIO
     XmlGui
     KDE4Support
     WindowSystem
@@ -25,12 +27,6 @@ find_package(KF5 CONFIG REQUIRED COMPONENTS
     KDE4Support
     Plasma
 )
-
-find_package(ZLIB)
-set_package_properties(ZLIB PROPERTIES DESCRIPTION "Support for gzip compressed files and data streams"
-                       URL "http://www.zlib.net"
-                       TYPE REQUIRED
-                      )
 
 find_package(OpenGL)
 set_package_properties(OpenGL PROPERTIES DESCRIPTION "The OpenGL libraries"
@@ -46,16 +42,14 @@ set_package_properties(OpenGLES PROPERTIES DESCRIPTION "The OpenGLES libraries"
 find_package(EGL)
 set_package_properties(EGL PROPERTIES
                        TYPE OPTIONAL
-                       PURPOSE "Required to build KWin with EGL support"
+                       PURPOSE "Required for OpenGL Information Module"
                       )
 
-find_package(Wayland 1.2 COMPONENTS Client Egl Cursor)
+find_package(Wayland 1.2 COMPONENTS Client)
 set_package_properties(Wayland PROPERTIES
                        TYPE OPTIONAL
-                       PURPOSE "Required for building KWin with Wayland support"
                       )
-add_feature_info("Wayland-Client" Wayland_Client_FOUND "Required for building the Wayland backend in KWin")
-add_feature_info("Wayland-EGL" Wayland_Egl_FOUND "Required for building the Wayland EGL compositing backend in KWin")
+add_feature_info("Wayland-Client" Wayland_Client_FOUND "Required for Wayland Compositor Information Module")
 
 find_package(X11)
 set_package_properties(X11 PROPERTIES DESCRIPTION "X11 libraries"
@@ -63,12 +57,6 @@ set_package_properties(X11 PROPERTIES DESCRIPTION "X11 libraries"
                         TYPE OPTIONAL
                         PURPOSE "Required for building the X11 based workspace"
                       )
-if(X11_FOUND)
-  find_package(XCB REQUIRED COMPONENTS XCB XFIXES DAMAGE COMPOSITE SHAPE SYNC RENDER RANDR KEYSYMS IMAGE SHM XTEST)
-  set_package_properties(XCB PROPERTIES TYPE REQUIRED)
-  find_package(XCB COMPONENTS ICCCM)
-  add_feature_info("XCB-ICCCM" XCB_ICCCM_FOUND "Required for building test applications for KWin")
-endif()
 
 configure_file(config-workspace.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-workspace.h)
 configure_file(config-X11.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-X11.h)
