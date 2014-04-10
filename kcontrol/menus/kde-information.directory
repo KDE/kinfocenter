@@ -3,6 +3,7 @@ Encoding=UTF-8
 Type=Directory
 Name=Information
 Name[ca]=Informació
+Name[ca@valencia]=Informació
 Name[cs]=Informace
 Name[de]=Information
 Name[es]=Información
