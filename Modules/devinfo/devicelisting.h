@@ -28,7 +28,6 @@
 #include <solid/deviceinterface.h>
 #include <solid/processor.h>
 #include <solid/devicenotifier.h>
-#include <solid/networking.h>
 
 //QT 
 #include <QMap>
@@ -84,7 +83,6 @@ class DeviceListing : public QTreeWidget
     InfoPanel *iPanel;
     QAction *colAct, *expAct, *allAct, *relAct;
     DevInfoPlugin *status;
-    Solid::Networking::Notifier *network;
     //NicSignals *nicSig;
     
   public Q_SLOTS:
