@@ -9,7 +9,7 @@ set(kcm_usb_PART_SRCS kcmusb.cpp usbdevices.cpp usbdb.cpp )
 add_library(kcm_usb MODULE ${kcm_usb_PART_SRCS})
 
 
-target_link_libraries(kcm_usb KF5::KCMUtils KF5::I18n KF5::KDE4Support)
+target_link_libraries(kcm_usb KF5::KCMUtils KF5::I18n KF5::KDELibs4Support)
 
 install(TARGETS kcm_usb  DESTINATION ${PLUGIN_INSTALL_DIR} )
 

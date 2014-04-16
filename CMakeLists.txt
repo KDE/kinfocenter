@@ -11,21 +11,25 @@ include(KDECMakeSettings)
 include(KDECompilerSettings)
 include(FeatureSummary)
 
-find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Core Gui)
+find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Core Gui Widgets)
 
 find_package(KF5 CONFIG REQUIRED COMPONENTS
     Completion
     Config
-    I18n
+    ConfigWidgets
+    CoreAddons
     DocTools
-    KIO
-    XmlGui
-    KDE4Support
-    WindowSystem
+    I18n
+    IconThemes
     KCMUtils
-    Solid
-    KDE4Support
+    KDELibs4Support
+    KIO
     Plasma
+    Service
+    Solid
+    WidgetsAddons
+    WindowSystem
+    XmlGui
 )
 
 find_package(OpenGL)
@@ -89,12 +93,22 @@ ToolTips/tooltipmanager.cpp
 add_executable( kinfocenter ${kinfocenter_SRCS} )
 
 target_link_libraries( kinfocenter
-    KF5::KCMUtils
     KF5::Completion
+    KF5::Config
+    KF5::ConfigWidgets
+    KF5::CoreAddons
+    KF5::DocTools
     KF5::I18n
+    KF5::IconThemes
+    KF5::KCMUtils
+    KF5::KDELibs4Support
+    KF5::KIO
+    KF5::Plasma
+    KF5::Service
+    KF5::Solid
+    KF5::WidgetsAddons
     KF5::WindowSystem
     KF5::XmlGui
-    KF5::KDE4Support
 )
 
 ##install

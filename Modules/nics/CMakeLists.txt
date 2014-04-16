@@ -19,7 +19,7 @@ set(kcm_nic_PART_SRCS nic.cpp )
 add_library(kcm_nic MODULE ${kcm_nic_PART_SRCS})
 
 
-target_link_libraries(kcm_nic KF5::KCMUtils KF5::I18n KF5::KDE4Support )
+target_link_libraries(kcm_nic KF5::KCMUtils KF5::I18n KF5::KDELibs4Support )
 
 install(TARGETS kcm_nic  DESTINATION ${PLUGIN_INSTALL_DIR} )
 
