@@ -94,15 +94,12 @@ add_executable( kinfocenter ${kinfocenter_SRCS} )
 
 target_link_libraries( kinfocenter
     KF5::Completion
-    KF5::Config
     KF5::ConfigWidgets
     KF5::CoreAddons
-    KF5::DocTools
     KF5::I18n
     KF5::IconThemes
     KF5::KCMUtils
     KF5::KDELibs4Support
-    KF5::KIO
     KF5::Plasma
     KF5::Service
     KF5::Solid
