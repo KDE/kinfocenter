@@ -12,14 +12,17 @@ X-KDE-ParentApp=kinfocenter
 X-DocPath=kinfocenter/index.html#ioports
 
 Name=IO-Ports
+Name[nl]=IO-Poorten
 Name[uk]=Порти В/В
 Name[x-test]=xxIO-Portsxx
 
 Comment=IO-port information
+Comment[nl]=IO-poortinformatie
 Comment[uk]=Інформація щодо портів вводу/виводу
 Comment[x-test]=xxIO-port informationxx
 
 X-KDE-Keywords=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Information
+X-KDE-Keywords[nl]=IO,I/O,IO-Ports,I/O-Ports,poorten,IO-Range,I/O-Range,systeeminformatie
 X-KDE-Keywords[uk]=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Information,ввід,введення,вивід,виведення,порт,діапазон,система,інформація,відомості
 X-KDE-Keywords[x-test]=xxIO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Informationxx
 

@@ -2,6 +2,7 @@
 Type=ServiceType
 X-KDE-ServiceType=KInfoCenterCategory
 Name=KInfoCenter Category
+Name[nl]=Categorie KInfoCenter
 Name[uk]=Категорія KInfoCenter
 Name[x-test]=xxKInfoCenter Categoryxx
 

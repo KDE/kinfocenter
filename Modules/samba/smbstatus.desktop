@@ -10,14 +10,17 @@ X-KDE-ParentApp=kinfocenter
 X-DocPath=kinfocenter/index.html#smbstatus
 
 Name=Samba Status
+Name[nl]=Samba-status
 Name[uk]=Стан Samba
 Name[x-test]=xxSamba Statusxx
 
 Comment=Samba status monitor
+Comment[nl]=Sambastatusmonitor
 Comment[uk]=Монітор стану Samba
 Comment[x-test]=xxSamba status monitorxx
 
 X-KDE-Keywords=SMB,SAMBA,Windows network,LAN,System Information
+X-KDE-Keywords[nl]=SMB,SAMBA,Windows-netwerk,LAN,systeeminformatie
 X-KDE-Keywords[uk]=SMB,SAMBA,Windows network,LAN,System Information,мережа,віндоус,віндоуз,віндовс,віндовз,система,інформація,відомості
 X-KDE-Keywords[x-test]=xxSMB,SAMBA,Windows network,LAN,System Informationxx
 Categories=Qt;KDE;X-KDE-information;

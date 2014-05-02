@@ -12,14 +12,17 @@ X-KDE-ParentApp=kinfocenter
 X-DocPath=kinfocenter/index.html#interrupts
 
 Name=Interrupts
+Name[nl]=Interrupts
 Name[uk]=Переривання
 Name[x-test]=xxInterruptsxx
 
 Comment=Interrupt information
+Comment[nl]=Interrupt-informatie
 Comment[uk]=Інформація щодо переривань
 Comment[x-test]=xxInterrupt informationxx
 
 X-KDE-Keywords=Interrupts,IRQ,System Information
+X-KDE-Keywords[nl]=Interrupts,IRQ,systeeminformatie
 X-KDE-Keywords[uk]=Interrupts,IRQ,System Information,переривання,система,інформація,відомості
 X-KDE-Keywords[x-test]=xxInterrupts,IRQ,System Informationxx
 

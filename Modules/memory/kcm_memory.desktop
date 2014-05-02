@@ -10,14 +10,17 @@ X-KDE-ParentApp=kinfocenter
 X-DocPath=kinfocenter/index.html#kcm_memory
 
 Name=Memory
+Name[nl]=Geheugen
 Name[uk]=Пам'ять
 Name[x-test]=xxMemoryxx
 
 Comment=Memory information
+Comment[nl]=Geheugeninformatie
 Comment[uk]=Інформація щодо пам'яті
 Comment[x-test]=xxMemory informationxx
 
 X-KDE-Keywords=Memory,RAM,Virtual memory,Physical memory,Shared memory,Swap,System Information
+X-KDE-Keywords[nl]=geheugen,RAM,virtueel geheugen,fysiek geheugen,gedeeld geheugen,swap,systeeminformatie
 X-KDE-Keywords[uk]=Memory,RAM,Virtual memory,Physical memory,Shared memory,Swap,System Information,пам’ять,віртуальна пам’ять,фізична пам’ять,спільна пам’ять,свопінг,резервна пам’ять,резерв,своп,система,інформація,відомості
 X-KDE-Keywords[x-test]=xxMemory,RAM,Virtual memory,Physical memory,Shared memory,Swap,System Informationxx
 Categories=Qt;KDE;X-KDE-information;

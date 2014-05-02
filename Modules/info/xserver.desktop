@@ -11,14 +11,17 @@ X-KDE-ParentApp=kinfocenter
 X-DocPath=kinfocenter/index.html#xserver
 
 Name=X-Server
+Name[nl]=X-server
 Name[uk]=Сервер X
 Name[x-test]=xxX-Serverxx
 
 Comment=X-Server information
+Comment[nl]=X-Server-informatie
 Comment[uk]=Інформація щодо сервера X
 Comment[x-test]=xxX-Server informationxx
 
 X-KDE-Keywords=X,X-Server,XServer,XFree86,Display,VideoCard,System Information
+X-KDE-Keywords[nl]=X,X-Server,XServer,XFree86,scherm,videocard,systeeminformatie
 X-KDE-Keywords[uk]=X,X-Server,XServer,XFree86,Display,VideoCard,System Information,сервер,графічний,графічний сервер,дисплей,відео,відеокартка,система,інформація,відомості
 X-KDE-Keywords[x-test]=xxX,X-Server,XServer,XFree86,Display,VideoCard,System Informationxx
 

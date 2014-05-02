@@ -10,14 +10,17 @@ X-KDE-ParentApp=kinfocenter
 X-DocPath=kinfocenter/index.html#kcm_pci
 
 Name=PCI
+Name[nl]=PCI
 Name[uk]=Шина PCI
 Name[x-test]=xxPCIxx
 
 Comment=PCI information
+Comment[nl]=PCI-informatie
 Comment[uk]=Інформація щодо шини PCI
 Comment[x-test]=xxPCI informationxx
 
 X-KDE-Keywords=PCI,PCI-Devices,PCI-Bus,System Information
+X-KDE-Keywords[nl]=PCI,PCI-apparaten,PCI-Bus,systeeminformatie
 X-KDE-Keywords[uk]=PCI,PCI-Devices,PCI-Bus,System Information,пристрій,пристрої,канал,шина,система,інформація,відомості
 X-KDE-Keywords[x-test]=xxPCI,PCI-Devices,PCI-Bus,System Informationxx
 Categories=Qt;KDE;X-KDE-information;

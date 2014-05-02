@@ -11,14 +11,17 @@ X-KDE-ParentApp=kinfocenter
 X-DocPath=kinfocenter/index.html#devinfo
 
 Name=Device Viewer
+Name[nl]=Apparaatweergaveprogramma
 Name[uk]=Переглядач пристроїв
 Name[x-test]=xxDevice Viewerxx
 
 Comment=Device Viewer
+Comment[nl]=Apparaatweergaveprogramma
 Comment[uk]=Переглядач пристроїв
 Comment[x-test]=xxDevice Viewerxx
 
 X-KDE-Keywords=device,devices
+X-KDE-Keywords[nl]=apparaat,apparaten
 X-KDE-Keywords[uk]=пристрій,пристрої
 X-KDE-Keywords[x-test]=xxdevice,devicesxx
 Categories=Qt;KDE;X-KDE-information;

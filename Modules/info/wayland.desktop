@@ -10,14 +10,17 @@ X-KDE-PluginKeyword=wayland
 X-KDE-ParentApp=kinfocenter
 
 Name=Wayland
+Name[nl]=Wayland
 Name[uk]=Wayland
 Name[x-test]=xxWaylandxx
 
 Comment=Information about the Wayland Compositor
+Comment[nl]=Informatie over de Wayland Compositor
 Comment[uk]=Відомості щодо засобу композиції Wayland
 Comment[x-test]=xxInformation about the Wayland Compositorxx
 
 X-KDE-Keywords=Wayland,Compositor,Display,System Information
+X-KDE-Keywords[nl]=Wayland,Compositor,Scherm,Systeeminformatie
 X-KDE-Keywords[uk]=Wayland,Compositor,Display,System Information,композиція,засіб,дисплей,монітор,відомості щодо системи
 X-KDE-Keywords[x-test]=xxWayland,Compositor,Display,System Informationxx
 

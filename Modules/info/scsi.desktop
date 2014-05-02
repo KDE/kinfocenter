@@ -11,14 +11,17 @@ X-KDE-ParentApp=kinfocenter
 X-DocPath=kinfocenter/index.html#scsi
 
 Name=SCSI
+Name[nl]=SCSI
 Name[uk]=SCSI
 Name[x-test]=xxSCSIxx
 
 Comment=SCSI information
+Comment[nl]=SCSI-informatie
 Comment[uk]=Інформація щодо SCSI
 Comment[x-test]=xxSCSI informationxx
 
 X-KDE-Keywords=SCSI,SCSI-Bus,System Information
+X-KDE-Keywords[nl]=SCSI,SCSI-bus,systeeminformatie
 X-KDE-Keywords[uk]=SCSI,SCSI-Bus,System Information,шина,канал,система
 X-KDE-Keywords[x-test]=xxSCSI,SCSI-Bus,System Informationxx
 Categories=Qt;KDE;X-KDE-information;

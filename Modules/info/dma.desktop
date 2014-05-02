@@ -12,14 +12,17 @@ X-KDE-ParentApp=kinfocenter
 X-DocPath=kinfocenter/index.html#dma
 
 Name=DMA-Channels
+Name[nl]=DMA-kanalen
 Name[uk]=Канали DMA
 Name[x-test]=xxDMA-Channelsxx
 
 Comment=DMA information
+Comment[nl]=DMA-informatie
 Comment[uk]=Інформація щодо DMA
 Comment[x-test]=xxDMA informationxx
 
 X-KDE-Keywords=dma,DMA-Channels,System Information
+X-KDE-Keywords[nl]=dma,DMA-channels,systeeminformatie
 X-KDE-Keywords[uk]=dma,DMA-Channels,System Information,канал,система,інформація,відомості
 X-KDE-Keywords[x-test]=xxdma,DMA-Channels,System Informationxx
 

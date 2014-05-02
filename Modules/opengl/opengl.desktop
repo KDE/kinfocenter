@@ -10,14 +10,17 @@ X-KDE-ParentApp=kinfocenter
 X-DocPath=kinfocenter/index.html#opengl
 
 Name=OpenGL
+Name[nl]=OpenGL
 Name[uk]=OpenGL
 Name[x-test]=xxOpenGLxx
 
 Comment=OpenGL information
+Comment[nl]=OpenGL-informatie
 Comment[uk]=Інформація про OpenGL
 Comment[x-test]=xxOpenGL informationxx
 
 X-KDE-Keywords=OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display
+X-KDE-Keywords[nl]=OpenGL,DRI,GLX,3D,VideoCard,hardwareversnelling,Graphics,X,X11,Xserver,X-Server,XFree86,scherm
 X-KDE-Keywords[uk]=OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display,відео,картка,відеокартка,прискорення,апаратне,графіка,дисплей,показ,сервер,графічний
 X-KDE-Keywords[x-test]=xxOpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Displayxx
 

@@ -9,14 +9,17 @@ X-KDE-Library=kcm_infosummary
 X-KDE-ParentApp=kinfocenter
 
 Name=Summary
+Name[nl]=Samenvatting
 Name[uk]=Резюме
 Name[x-test]=xxSummaryxx
 
 Comment=Hardware Information Summary
+Comment[nl]=Hardware-informatie samenvatting
 Comment[uk]=Резюме відомостей щодо обладнання
 Comment[x-test]=xxHardware Information Summaryxx
 
 X-KDE-Keywords=device,devices
+X-KDE-Keywords[nl]=apparaat,apparaten
 X-KDE-Keywords[uk]=пристрій,пристрої
 X-KDE-Keywords[x-test]=xxdevice,devicesxx
 X-DocPath=kinfocenter/index.html#kcm_infosummary

@@ -10,13 +10,16 @@ X-KDE-ParentApp=kinfocenter
 X-DocPath=kinfocenter/index.html#kcmview1394
 
 Name=IEEE 1394 Devices
+Name[nl]=IEEE 1394-apparaten
 Name[uk]=Пристрої IEEE 1394
 Name[x-test]=xxIEEE 1394 Devicesxx
 
 Comment=Attached IEEE 1394 devices
+Comment[nl]=IEEE 1394-apparaten die op deze computer zijn aangesloten
 Comment[uk]=Під’єднані пристрої IEEE 1394
 Comment[x-test]=xxAttached IEEE 1394 devicesxx
 
 X-KDE-Keywords=1394,Firewire,devices,viewer,control
+X-KDE-Keywords[nl]=1394,Firewire,apparaten,viewer,besturing
 X-KDE-Keywords[uk]=1394,Firewire,devices,viewer,control,пристрій,пристрої,перегляд,переглядач,керування,контроль
 X-KDE-Keywords[x-test]=xx1394,Firewire,devices,viewer,controlxx
