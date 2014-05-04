@@ -134,7 +134,7 @@ void KInfoCenter::createToolBar()
 
     m_aboutKcm = actionCollection()->addAction("help_about_module");
     m_aboutKcm->setText(i18nc("Information about current module located in about menu","About Current Information Module"));
-    m_aboutKcm->setIcon(KIcon("help"));
+    m_aboutKcm->setIcon(KIcon("help-about"));
     m_aboutKcm->setEnabled(false);
 
     m_exportAction = new KAction(this);
@@ -192,7 +192,7 @@ void KInfoCenter::createMenuFrame()
     m_searchAction = new KAction(this);
     m_searchAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_F));
     m_searchAction->setText(i18nc("Kaction search label", "Search Modules"));
-    m_searchAction->setIcon(KIcon("search"));
+    m_searchAction->setIcon(KIcon("edit-find"));
 
     actionCollection()->addAction("search",m_searchAction);
 
