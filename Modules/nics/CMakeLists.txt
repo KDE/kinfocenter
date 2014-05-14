@@ -1,6 +1,7 @@
 
 include(CheckSymbolExists)
 include(CheckStructMember)
+include(CheckFunctionExists)
 
 check_include_files(sys/sockio.h HAVE_SYS_SOCKIO_H) # nic.cpp
 check_symbol_exists(getnameinfo   "sys/socket.h;netdb.h" HAVE_GETNAMEINFO) # nic.cpp

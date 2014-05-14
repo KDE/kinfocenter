@@ -55,12 +55,16 @@ set_package_properties(Wayland PROPERTIES
                       )
 add_feature_info("Wayland-Client" Wayland_Client_FOUND "Required for Wayland Compositor Information Module")
 
-find_package(X11)
-set_package_properties(X11 PROPERTIES DESCRIPTION "X11 libraries"
-                        URL "http://www.x.org"
-                        TYPE OPTIONAL
-                        PURPOSE "Required for building the X11 based workspace"
-                      )
+if(NOT APPLE)
+  find_package(X11)
+  set_package_properties(X11 PROPERTIES DESCRIPTION "X11 libraries"
+                          URL "http://www.x.org"
+                          TYPE OPTIONAL
+                          PURPOSE "Required for building the X11 based workspace"
+                        )
+else()
+  set(X11_FOUND False)
+endif()
 
 configure_file(config-workspace.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-workspace.h)
 configure_file(config-X11.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-X11.h)
@@ -72,7 +76,8 @@ remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_STRICT_ITERATORS -DQT_NO_CAST_FR
 add_subdirectory( Categories )
 add_subdirectory( kcontrol/menus )
 add_subdirectory( Modules )
-add_subdirectory( doc )
+include(ECMOptionalAddSubdirectory)
+ecm_optional_add_subdirectory( doc )
 
 include_directories( ToolTips )
 

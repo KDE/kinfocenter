@@ -23,12 +23,12 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <QFile>
+#include <QDebug>
 #include <mach/mach_init.h>
 #include <mach/mach_host.h>
 #include <mach/host_info.h>
 #include <sys/stat.h>
 #include <dirent.h>
-#include <kdebug.h>
 
 void KCMMemory::fetchValues()
 {
@@ -41,7 +41,7 @@ void KCMMemory::fetchValues()
 
 	info_count = HOST_VM_INFO_COUNT;
 	if (host_statistics(mach_host_self (), HOST_VM_INFO, (host_info_t)&vm_info, &info_count)) {
-		kDebug() << "could not get memory statistics";
+		qDebug() << "could not get memory statistics";
 		return;
 	}
 
@@ -54,7 +54,7 @@ void KCMMemory::fetchValues()
 
 	dirp = opendir("/private/var/vm");
 	if (!dirp) {
-		kDebug() << "unable to open /private/var/vm";
+		qDebug() << "unable to open /private/var/vm";
 		return;
 	}
 
@@ -79,7 +79,7 @@ void KCMMemory::fetchValues()
 	info_count = HOST_VM_INFO_COUNT;
 	if (host_statistics (mach_host_self (), HOST_VM_INFO,
 		(host_info_t) &vm_info, &info_count)) {
-			kDebug() << "unable to get VM info";
+			qDebug() << "unable to get VM info";
 	}
 
 	memoryInfos[SWAP_MEM]     = total;

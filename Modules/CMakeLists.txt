@@ -23,12 +23,13 @@ set(KCM_HAVE_EGL ${EGL_FOUND})
 add_feature_info("OpenGL support" KCM_ENABLE_OPENGL "View OpenGL details in kinfocenter." )
 add_feature_info("OpenGL/ES support" KCM_ENABLE_OPENGLES "View OpenGL ES2.0 details in kinfocenter." )
 
-  if(KCM_ENABLE_OPENGL OR KCM_ENABLE_OPENGLES)
+  if(NOT APPLE)
+    if(KCM_ENABLE_OPENGL OR KCM_ENABLE_OPENGLES)
       add_subdirectory( opengl )
-  else()
+    else()
       message(STATUS "OpenGL/ES2.0 information module has been disabled.")
+    endif()
   endif()
-
 
 find_package(PCIUTILS MODULE)
 set_package_properties(PCIUTILS PROPERTIES DESCRIPTION "PciUtils is a library for direct access to PCI slots"
