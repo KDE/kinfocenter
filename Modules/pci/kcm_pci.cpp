@@ -48,9 +48,9 @@ K_EXPORT_PLUGIN(KCMPciFactory("kcm_pci"))
 KCMPci::KCMPci(QWidget *parent, const QVariantList &) :
 	KCModule(parent) {
 
-	KAboutData *about = new KAboutData(i18n("kcm_pci"), QString(),
+	KAboutData *about = new KAboutData(i18n("kcm_pci"),
 			i18n("KDE PCI Information Control Module"),
-			QString(), QString(), KAboutData::License_GPL,
+			QString(), QString(), KAboutLicense::GPL,
 			i18n(	"(c) 2008 Nicolas Ternisien"
 					"(c) 1998 - 2002 Helge Deller"));
 

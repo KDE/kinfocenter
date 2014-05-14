@@ -33,8 +33,8 @@ InfoSumPlugin::InfoSumPlugin(QWidget *parent, const QVariantList &)  :
 {
   
   const KAboutData *about =
-  new KAboutData(i18n("kcm_infosummary"), QString(), i18n("Hardware Summary Information"),
-                  QStringLiteral("0.10"), QString(), KAboutData::License_GPL,
+  new KAboutData(i18n("kcm_infosummary"), i18n("Hardware Summary Information"),
+                  QStringLiteral("0.10"), QString(), KAboutLicense::GPL,
                   i18n("(c) 2010 David Hubner"));
 		  
   setAboutData(about);

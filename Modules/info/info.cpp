@@ -36,9 +36,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 KInfoListWidget::KInfoListWidget(const QString &_title, QWidget *parent, bool _getlistbox(QTreeWidget *tree) ) :
 	KCModule(parent), title(_title) {
-	KAboutData *about = new KAboutData("kcminfo", QString(),
+	KAboutData *about = new KAboutData("kcminfo",
 			i18n("System Information Control Module"),
-			QString(), QString(), KAboutData::License_GPL,
+			QString(), QString(), KAboutLicense::GPL,
 			i18n(	"(c) 2008 Nicolas Ternisien\n"
 					"(c) 1998 - 2002 Helge Deller"));
 

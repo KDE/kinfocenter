@@ -73,9 +73,9 @@ SambaContainer::SambaContainer(QWidget *parent, const QVariantList&) :
 		" printer sharing or drive sharing services on a network including"
 		" machines running the various flavors of Microsoft Windows.</p>"));
 
-	KAboutData *about = new KAboutData(i18n("kcmsamba"), QString(),
+	KAboutData *about = new KAboutData(i18n("kcmsamba"),
 			i18n("System Information Control Module"),
-			QString(), QString(), KAboutData::License_GPL,
+			QString(), QString(), KAboutLicense::GPL,
 			i18n("(c) 2002 KDE Information Control Module Samba Team"));
 	about->addAuthor(i18n("Michael Glauche"), QString(), QStringLiteral("glauche@isa.rwth-aachen.de"));
 	about->addAuthor(i18n("Matthias Hoelzer"), QString(), QStringLiteral("hoelzer@kde.org"));

@@ -84,9 +84,9 @@ KCMOpenGL::KCMOpenGL(QWidget *parent, const QVariantList &)
     connect(glinfoTreeWidget, SIGNAL(collapsed(QModelIndex)), this, SLOT(treeWidgetChanged()));
     
     KAboutData *about =
-    new KAboutData(i18n("kcmopengl"), QString(),
+    new KAboutData(i18n("kcmopengl"),
         i18n("KCM OpenGL Information"),
-        QString(), QString(), KAboutData::License_GPL,
+        QString(), QString(), KAboutLicense::GPL,
         i18n("(c) 2008 Ivo Anjo\n(c) 2004 Ilya Korniyko\n(c) 1999-2002 Brian Paul"));
 
     about->addAuthor(i18n("Ivo Anjo"), QString(), QStringLiteral("knuckles@gmail.com"));

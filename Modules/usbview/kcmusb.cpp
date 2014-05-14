@@ -70,8 +70,8 @@ USBViewer::USBViewer(QWidget *parent, const QVariantList &) :
 	connect(refreshTimer, SIGNAL(timeout()), SLOT(refresh()));
 	connect(_devices, SIGNAL(currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*)), this, SLOT(selectionChanged(QTreeWidgetItem*)));
 
-	KAboutData *about = new KAboutData(i18n("kcmusb"), QString(), i18n("KDE USB Viewer"),
-			QString(), QString(), KAboutData::License_GPL,
+	KAboutData *about = new KAboutData(i18n("kcmusb"), i18n("KDE USB Viewer"),
+			QString(), QString(), KAboutLicense::GPL,
 			i18n("(c) 2001 Matthias Hoelzer-Kluepfel"));
 
 	about->addAuthor(i18n("Matthias Hoelzer-Kluepfel"), QString(), QStringLiteral("mhk@kde.org"));
