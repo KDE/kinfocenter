@@ -18,6 +18,7 @@ find_package(KF5 REQUIRED COMPONENTS
     Config
     ConfigWidgets
     CoreAddons
+    DBusAddons
     DocTools
     I18n
     IconThemes
@@ -101,6 +102,7 @@ target_link_libraries( kinfocenter
     KF5::Completion
     KF5::ConfigWidgets
     KF5::CoreAddons
+    KF5::DBusAddons
     KF5::I18n
     KF5::IconThemes
     KF5::KCMUtils

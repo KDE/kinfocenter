@@ -27,6 +27,7 @@
 #include <kaboutdata.h>
 #include <KLocalizedString>
 #include <config-workspace.h>
+#include <KDBusService>
 
 KicApp::KicApp(int &argc, char **argv)
     : QApplication(argc, argv)
@@ -37,6 +38,8 @@ KicApp::KicApp(int &argc, char **argv)
     QApplication::setApplicationDisplayName(i18n("KDE Info Center"));
     display = new KInfoCenter();
     display->show();
+
+    KDBusService* service = new KDBusService(KDBusService::Unique, this);
 }
 
 int main(int argc, char *argv[])
