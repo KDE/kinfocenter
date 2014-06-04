@@ -1,4 +1,5 @@
-
+# KI18N Translation Domain for this library
+add_definitions(-DTRANSLATION_DOMAIN=\"kcmview1394\")
 
 
 ########### next target ###############
@@ -6,7 +7,7 @@
 set(kcm_view1394_PART_SRCS view1394.cpp )
 
 
-kde4_add_ui_files(kcm_view1394_PART_SRCS view1394widget.ui )
+ki18n_wrap_ui(kcm_view1394_PART_SRCS view1394widget.ui )
 
 kde4_add_plugin(kcm_view1394 ${kcm_view1394_PART_SRCS})
 

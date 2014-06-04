@@ -1,3 +1,5 @@
+# KI18N Translation Domain for this library
+add_definitions(-DTRANSLATION_DOMAIN=\"kcm_infosummary\")
 
 set( infosummarySources infosum.cpp defaultboxwidget.cpp progressboxwidget.cpp osdepinfo.cpp)
 

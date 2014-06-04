@@ -1,3 +1,5 @@
+# KI18N Translation Domain for this library
+add_definitions(-DTRANSLATION_DOMAIN=\"kcminfo\")
 
 # OS Base includes
 include(../base/CMakeLists.txt)

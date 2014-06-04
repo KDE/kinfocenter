@@ -44,6 +44,7 @@ KicApp::KicApp(int &argc, char **argv)
 
 int main(int argc, char *argv[])
 {
+    KLocalizedString::setApplicationDomain("kinfocenter");
     KAboutData aboutKInfoCenter( QStringLiteral("kinfocenter"), i18n("KDE Info Center"),
         QStringLiteral(WORKSPACE_VERSION_STRING), i18n("The KDE Info Center"), KAboutLicense::GPL,
         i18n("(c) 2009-2010, The KDE SC KInfocenter Development Team"));

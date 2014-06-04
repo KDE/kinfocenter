@@ -1,3 +1,6 @@
+# KI18N Translation Domain for this library
+add_definitions(-DTRANSLATION_DOMAIN=\"kcmopengl\")
+
 if(KCM_ENABLE_OPENGL)
 include_directories( ${OPENGL_INCLUDE_DIR} ${OPENGL_GLU_INCLUDE_DIR} )
 endif()
@@ -11,7 +14,7 @@ endif()
 set(KCM_OPENGL_PART_SRCS opengl.cpp )
 set(KCM_OPENGL_PART_UIS opengl.ui )
 
-qt5_wrap_ui(KCM_OPENGL_PART_UIS_H ${KCM_OPENGL_PART_UIS})
+ki18n_wrap_ui(KCM_OPENGL_PART_UIS_H ${KCM_OPENGL_PART_UIS})
 
 add_library(kcm_opengl MODULE ${KCM_OPENGL_PART_SRCS} ${KCM_OPENGL_PART_UIS_H})
 

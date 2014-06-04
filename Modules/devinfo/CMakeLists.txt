@@ -1,4 +1,6 @@
 project( devinfo )
+# KI18N Translation Domain for this library
+add_definitions(-DTRANSLATION_DOMAIN=\"kcmdevinfo\")
 
 set( devinfoSources soldevice.cpp devinfo.cpp devicelisting.cpp infopanel.cpp soldevicetypes.cpp qvlistlayout.cpp solidhelper.cpp)
 
