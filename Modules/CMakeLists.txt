@@ -20,8 +20,14 @@ endif()
 set(KCM_HAVE_GLX ${KCM_ENABLE_OPENGL})
 set(KCM_HAVE_EGL ${EGL_FOUND})
 
-add_feature_info("OpenGL support" KCM_ENABLE_OPENGL "View OpenGL details in kinfocenter." )
-add_feature_info("OpenGL/ES support" KCM_ENABLE_OPENGLES "View OpenGL ES2.0 details in kinfocenter." )
+if(${Qt5Gui_OPENGL_IMPLEMENTATION} STREQUAL "GL")
+    add_feature_info("OpenGL support" OPENGL_FOUND "View OpenGL details in kinfocenter." )
+    add_feature_info("OpenGL Utility Library (GLU)" OPENGL_GLU_FOUND "Required for OpenGL details in kinfocenter." )
+endif()
+
+if(${Qt5Gui_OPENGL_IMPLEMENTATION} STREQUAL "GLESv2")
+    add_feature_info("OpenGL/ES support" KCM_ENABLE_OPENGLES "View OpenGL ES2.0 details in kinfocenter." )
+endif()
 
   if(NOT APPLE)
     if(KCM_ENABLE_OPENGL OR KCM_ENABLE_OPENGLES)
