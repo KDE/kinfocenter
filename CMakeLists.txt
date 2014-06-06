@@ -33,17 +33,20 @@ find_package(KF5 REQUIRED COMPONENTS
     XmlGui
 )
 
-find_package(OpenGL)
-set_package_properties(OpenGL PROPERTIES DESCRIPTION "The OpenGL libraries"
-                       URL "http://www.opengl.org"
-                       TYPE OPTIONAL
-                      )
+if(${Qt5Gui_OPENGL_IMPLEMENTATION} STREQUAL "GL")
+    find_package(OpenGL)
+    set_package_properties(OpenGL PROPERTIES DESCRIPTION "The OpenGL libraries"
+                        URL "http://www.opengl.org"
+                        TYPE OPTIONAL
+                        )
+else()
+    find_package(OpenGLES)
+    set_package_properties(OpenGLES PROPERTIES DESCRIPTION "The OpenGLES libraries"
+                        URL "http://www.khronos.org/opengles"
+                        TYPE OPTIONAL
+                        )
+endif()
 
-find_package(OpenGLES)
-set_package_properties(OpenGLES PROPERTIES DESCRIPTION "The OpenGLES libraries"
-                       URL "http://www.khronos.org/opengles"
-                       TYPE OPTIONAL
-                      )
 find_package(EGL)
 set_package_properties(EGL PROPERTIES
                        TYPE OPTIONAL
