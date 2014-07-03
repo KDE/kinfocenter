@@ -5,6 +5,7 @@ set(kcm_SRCS
     main.cpp
     LSBRelease.cpp
     Module.cpp
+    OSRelease.cpp
 )
 
 kde4_add_ui_files(kcm_SRCS Module.ui)

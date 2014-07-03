@@ -40,7 +40,7 @@
 #endif
 #include <sys/utsname.h>
 
-#include "LSBRelease.h"
+#include "OSRelease.h"
 #include "Version.h"
 
 K_PLUGIN_FACTORY_DECLARATION(KcmAboutDistroFactory);
@@ -107,18 +107,18 @@ void Module::load()
         logo = QPixmap(logoPath);
     ui->logoLabel->setPixmap(logo);
 
-    QString url = cg.readEntry("Website", QString());
+    OSRelease os;
+    // We allow overriding of the OS name for branding purposes.
+    // For example OS Ubuntu may be rebranded as Kubuntu. Also Kubuntu Active
+    // as a product brand is different from Kubuntu.
+    QString distroName = cg.readEntry("Name", os.prettyName);
+    ui->nameVersionLabel->setText(QString("%1 %2").arg(distroName, os.version));
+
+    QString url = cg.readEntry("Website", os.homeUrl);
     if (url.isEmpty())
         ui->urlLabel->hide();
     else
         ui->urlLabel->setText(QString("<a href='%1'>%1</a>").arg(url));
-
-    LSBRelease lsb;
-    // We allow overriding of the LSB name for branding purposes.
-    // For example LSB Ubuntu may be rebranded as Kubuntu. Also Kubuntu Active
-    // as a product brand is different from Kubuntu.
-    QString distroName = cg.readEntry("Name", lsb.id());
-    ui->nameVersionLabel->setText(QString("%1 %2").arg(distroName, lsb.release()));
 
     ui->kdeLabel->setText(QLatin1String(KDE::versionString()));
     ui->qtLabel->setText(qVersion());
