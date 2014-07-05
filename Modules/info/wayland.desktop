@@ -41,6 +41,7 @@ Name[sv]=Wayland
 Name[tr]=Wayland
 Name[uk]=Wayland
 Name[x-test]=xxWaylandxx
+Name[zh_CN]=Wayland
 Name[zh_TW]=Wayland
 
 Comment=Information about the Wayland Compositor
@@ -76,6 +77,7 @@ Comment[sv]=Information om Wayland-sammansättning
 Comment[tr]=Wayland dizgici hakkında bilgiler
 Comment[uk]=Відомості щодо засобу композиції Wayland
 Comment[x-test]=xxInformation about the Wayland Compositorxx
+Comment[zh_CN]=关于 Wayland 的信息。
 Comment[zh_TW]=關於 Wayland 的資訊
 
 X-KDE-Keywords=Wayland,Compositor,Display,System Information
@@ -110,6 +112,7 @@ X-KDE-Keywords[sv]=Wayland,Sammansättning,Bildskärm,Systeminformation
 X-KDE-Keywords[tr]=Wayland,Dizgici,Görüntü,Sistem Bilgileri
 X-KDE-Keywords[uk]=Wayland,Compositor,Display,System Information,композиція,засіб,дисплей,монітор,відомості щодо системи
 X-KDE-Keywords[x-test]=xxWayland,Compositor,Display,System Informationxx
+X-KDE-Keywords[zh_CN]=Wayland,Compositor,Display,System Information,显示,系统信息,混成
 X-KDE-Keywords[zh_TW]=Wayland,Compositor,Display,System Information
 
 Categories=Qt;KDE;X-KDE-information;
