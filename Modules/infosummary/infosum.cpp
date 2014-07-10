@@ -62,7 +62,7 @@ void InfoSumPlugin::createOsBox()
 {  
   DefaultBoxWidget *osWidget = new DefaultBoxWidget();
   osWidget->setIcon(QIcon::fromTheme(QStringLiteral("kde")));
-  osWidget->setLabelTitles(i18n("OS Version"),i18n("KDE SC Version"), i18n("Hostname"));
+  osWidget->setLabelTitles(i18n("OS Version"),i18n("KDE Plasma Version"), i18n("Hostname"));
   
   OsDepInfo *osInfo = new OsDepInfo();
   
