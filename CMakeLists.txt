@@ -122,6 +122,6 @@ target_link_libraries( kinfocenter
 
 install( TARGETS kinfocenter          ${INSTALL_TARGETS_DEFAULT_ARGS} )
 install( PROGRAMS kinfocenter.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
-install( FILES kinfocenterui.rc DESTINATION ${DATA_INSTALL_DIR}/kinfocenter )
+install( FILES kinfocenterui.rc DESTINATION ${KXMLGUI_INSTALL_DIR}/kinfocenter )
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
