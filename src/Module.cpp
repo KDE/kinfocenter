@@ -112,7 +112,7 @@ void Module::load()
     // For example OS Ubuntu may be rebranded as Kubuntu. Also Kubuntu Active
     // as a product brand is different from Kubuntu.
     QString distroName = cg.readEntry("Name", os.prettyName);
-    ui->nameVersionLabel->setText(QString("%1 %2").arg(distroName, os.version));
+    ui->nameVersionLabel->setText(QString("%1 %2").arg(distroName, os.versionId));
 
     QString url = cg.readEntry("Website", os.homeUrl);
     if (url.isEmpty())

@@ -3,7 +3,6 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
 set(kcm_SRCS
     main.cpp
-    LSBRelease.cpp
     Module.cpp
     OSRelease.cpp
 )

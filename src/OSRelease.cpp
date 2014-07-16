@@ -64,17 +64,13 @@ static void setVar(QStringList *var, const QString &value)
 
 OSRelease::OSRelease()
 {
-    kDebug() << "yolo";
     QFile file("/etc/os-release");
-    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        kDebug() << "Could not open /etc/os-release, aborting parser";
-        // FIXME: port to osr
-//         m_id = i18nc("@label Unknown distribution name (e.g. MyDistro)", "Unknown");
-//         m_release = i18nc("@label Unknown distribution version (e.g. 1.0)", "Unknown");
-//         m_codename = i18nc("@label Unknown distribution codename (e.g. for Kubuntu this would be 'raring' or 'saucy')", "Unknown");
-//         m_description = i18nc("@label Unknown distribution description (this often is a combination of name and version, such as 'MyDistro 1.0'", "Unknown");
-        return;
-    }
+    // NOTE: The os-release specification defines default values for specific
+    //       fields which means that even if we can not read the os-release file
+    //       we have sort of expected default values to use.
+    // TODO: it might still be handy to indicate to the outside whether
+    //       fallback values are being used or not.
+    file.open(QIODevice::ReadOnly | QIODevice::Text);
 
     // Set default values for non-optional fields.
     name = QLatin1String("Linux");
