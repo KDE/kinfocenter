@@ -66,7 +66,7 @@ Module::Module(QWidget *parent, const QVariantList &args) :
                                        global_s_versionStringFull,
                                        KLocalizedString(),
                                        KAboutData::License_GPL_V3,
-                                       ki18n("Copyright 2012 Harald Sitter"),
+                                       ki18n("Copyright 2012-2014 Harald Sitter"),
                                        KLocalizedString(), QByteArray(),
                                        "apachelogger@ubuntu.com");
 
