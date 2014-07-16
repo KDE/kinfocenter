@@ -18,11 +18,11 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include <KGenericFactory>
 #include <KPluginFactory>
 
 #include "Module.h"
 
 K_PLUGIN_FACTORY(KcmAboutDistroFactory,
                  registerPlugin<Module>("kcm-about-distro");)
-K_EXPORT_PLUGIN(KcmAboutDistroFactory("kcm-about-distro"))
+
+#include "main.moc"

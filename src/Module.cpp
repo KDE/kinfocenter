@@ -1,5 +1,5 @@
 /*
-  Copyright (C) 2012 Harald Sitter <apachelogger@ubuntu.com>
+  Copyright (C) 2012-2014 Harald Sitter <apachelogger@ubuntu.com>
 
   This program is free software; you can redistribute it and/or
   modify it under the terms of the GNU General Public License as
@@ -21,16 +21,16 @@
 #include "Module.h"
 #include "ui_Module.h"
 
-#include <QShortcut>
+#include <QIcon>
+#include <QStandardPaths>
 
 #include <KAboutData>
 #include <KConfig>
 #include <KConfigGroup>
-#include <KDebug>
-#include <KIcon>
-#include <KPluginFactory>
-#include <KStandardDirs>
-#include <KToolInvocation>
+#include <KDesktopFile>
+#include <KFormat>
+#include <KLocalizedString>
+#include <KSharedConfig>
 
 #include <solid/device.h>
 #include <solid/processor.h>
@@ -42,8 +42,6 @@
 
 #include "OSRelease.h"
 #include "Version.h"
-
-K_PLUGIN_FACTORY_DECLARATION(KcmAboutDistroFactory);
 
 static qlonglong calculateTotalRam()
 {
@@ -58,20 +56,29 @@ static qlonglong calculateTotalRam()
 }
 
 Module::Module(QWidget *parent, const QVariantList &args) :
-    KCModule(KcmAboutDistroFactory::componentData(), parent, args),
+    KCModule(parent, args),
     ui(new Ui::Module)
 {
-    KAboutData *about = new KAboutData("kcm-about-distro", 0,
-                                       ki18n("About Distribution"),
-                                       global_s_versionStringFull,
-                                       KLocalizedString(),
-                                       KAboutData::License_GPL_V3,
-                                       ki18n("Copyright 2012-2014 Harald Sitter"),
-                                       KLocalizedString(), QByteArray(),
-                                       "apachelogger@ubuntu.com");
+    KAboutData *aboutData = new KAboutData("kcm-about-distro",
+                                           i18nc("@title", "About Distribution"),
+                                           global_s_versionStringFull,
+                                           QStringLiteral(""),
+                                           KAboutLicense::LicenseKey::GPL_V3,
+                                           i18nc("@info:credit", "Copyright 2012-2014 Harald Sitter"));
 
-    about->addAuthor(ki18n("Harald Sitter"), ki18n("Author"), "apachelogger@ubuntu.com");
-    setAboutData(about);
+    aboutData->addAuthor(i18nc("@info:credit", "Jonathan Thomas"),
+                         QString(),
+                         QStringLiteral("echidnaman@kubuntu.org"));
+    aboutData->addAuthor(i18nc("@info:credit", "Harald Sitter"),
+                         i18nc("@info:credit", "Qt 5 port"),
+                         QStringLiteral("apachelogger@kubuntu.org"));
+    aboutData->setProgramIconName(QStringLiteral("applications-other"));
+
+    aboutData->addAuthor(i18nc("@info:credit", "Harald Sitter"),
+                        i18nc("@info:credit", "Author"),
+                        QStringLiteral("apachelogger@kubuntu.org"));
+
+    setAboutData(aboutData);
 
     ui->setupUi(this);
 
@@ -84,9 +91,6 @@ Module::Module(QWidget *parent, const QVariantList &args) :
 
     // We have no help so remove the button from the buttons.
     setButtons(buttons() ^ KCModule::Help ^ KCModule::Default ^ KCModule::Apply);
-
-    QShortcut *shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_G), this);
-    connect(shortcut, SIGNAL(activated()), this, SLOT(onStyle()));
 }
 
 Module::~Module()
@@ -105,7 +109,7 @@ void Module::load()
     QString logoPath = cg.readEntry("LogoPath", QString());
     QPixmap logo;
     if (logoPath.isEmpty())
-        logo = KIcon("start-here-kde").pixmap(128, 128);
+        logo = QIcon::fromTheme("start-here-kde").pixmap(128, 128);
     else
         logo = QPixmap(logoPath);
     ui->logoLabel->setPixmap(logo);
@@ -114,7 +118,7 @@ void Module::load()
     // We allow overriding of the OS name for branding purposes.
     // For example OS Ubuntu may be rebranded as Kubuntu. Also Kubuntu Active
     // as a product brand is different from Kubuntu.
-    QString distroName = cg.readEntry("Name", os.prettyName);
+    QString distroName = cg.readEntry("Name", os.name);
     ui->nameVersionLabel->setText(QString("%1 %2").arg(distroName, os.versionId));
 
     QString url = cg.readEntry("Website", os.homeUrl);
@@ -123,7 +127,16 @@ void Module::load()
     else
         ui->urlLabel->setText(QString("<a href='%1'>%1</a>").arg(url));
 
-    ui->kdeLabel->setText(QLatin1String(KDE::versionString()));
+    // Since Plasma version detection isn't based on a library query it can fail
+    // in weird cases; instead of admiting defeat we simply hide everything :P
+    QString plasma = plasmaVersion();
+    if (plasma.isEmpty()) {
+        ui->plasma->hide();
+        ui->plasmaLabel->hide();
+    } else {
+        ui->plasmaLabel->setText(plasma);
+    }
+
     ui->qtLabel->setText(qVersion());
 
     struct utsname utsName;
@@ -135,7 +148,7 @@ void Module::load()
 
     const int bits = QT_POINTER_SIZE == 8 ? 64 : 32;
     ui->bitsLabel->setText(i18nc("@label %1 is the CPU bit width (e.g. 32 or 64)",
-                                 "<numid>%1</numid>-bit", bits));
+                                 "%1-bit", QString::number(bits)));
 
     const QList<Solid::Device> list = Solid::Device::listFromType(Solid::DeviceInterface::Processor);
     ui->processor->setText(i18np("Processor:", "Processors:", list.count()));
@@ -170,7 +183,7 @@ void Module::load()
     const qlonglong totalRam = calculateTotalRam();
     ui->memoryLabel->setText(totalRam > 0
                              ? i18nc("@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)",
-                                     "%1 of RAM", KGlobal::locale()->formatByteSize(totalRam))
+                                     "%1 of RAM", KFormat().formatByteSize(totalRam))
                              : i18nc("Unknown amount of RAM", "Unknown"));
 }
 
@@ -182,7 +195,19 @@ void Module::defaults()
 {
 }
 
-void Module::onStyle()
+QString Module::plasmaVersion() const
 {
-    KToolInvocation::invokeBrowser("http://www.youtube.com/watch?v=CX_4aGQWw_4");
+    const QStringList &filePaths = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation,
+                                                             "xsessions/plasma.desktop");
+
+    if (filePaths.length() < 1) {
+        return QString();
+    }
+
+    // Despite the fact that there can be multiple desktop files we simply take
+    // the first one as users usually don't have xsessions/ in their $HOME
+    // data location, so the first match should (usually) be the only one and
+    // reflect the plasma session run.
+    KDesktopFile desktopFile(filePaths.first());
+    return desktopFile.desktopGroup().readEntry("X-KDE-PluginInfo-Version", QString());
 }

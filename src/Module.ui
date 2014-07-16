@@ -68,7 +68,7 @@
     </widget>
    </item>
    <item row="5" column="3">
-    <widget class="QLabel" name="kdeLabel">
+    <widget class="QLabel" name="plasmaLabel">
      <property name="text">
       <string notr="true">{KDEVersion}</string>
      </property>
@@ -159,9 +159,9 @@
     </widget>
    </item>
    <item row="5" column="1">
-    <widget class="QLabel" name="kde">
+    <widget class="QLabel" name="plasma">
      <property name="text">
-      <string>KDELibs Version:</string>
+      <string>KDE Plasma Version:</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

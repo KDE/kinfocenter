@@ -20,9 +20,9 @@
 
 #include "OSRelease.h"
 
-#include <QtCore/QFile>
+#include <QDebug>
+#include <QFile>
 
-#include <KDebug>
 #include <KLocalizedString>
 #include <KShell>
 
@@ -31,7 +31,6 @@ static void setVar(QString *var, const QString &value)
     // Values may contain quotation marks, strip them as we have no use for them.
     KShell::Errors error;
     QStringList args = KShell::splitArgs(value, KShell::NoOptions, &error);
-    kDebug() << args << args.size();
     if (error != KShell::NoError) { // Failed to parse.
         return;
     }

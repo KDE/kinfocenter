@@ -59,14 +59,14 @@ public:
      */
     void defaults();
 
-protected slots:
-    void onStyle();
-
 private:
     /**
      * UI
      */
     Ui::Module *ui;
+
+    /** \returns Version of plasmashell or an empty string when none was found */
+    QString plasmaVersion() const;
 };
 
 #endif // MODULE_H
