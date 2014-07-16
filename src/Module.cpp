@@ -66,14 +66,6 @@ Module::Module(QWidget *parent, const QVariantList &args) :
                                            KAboutLicense::LicenseKey::GPL_V3,
                                            i18nc("@info:credit", "Copyright 2012-2014 Harald Sitter"));
 
-    aboutData->addAuthor(i18nc("@info:credit", "Jonathan Thomas"),
-                         QString(),
-                         QStringLiteral("echidnaman@kubuntu.org"));
-    aboutData->addAuthor(i18nc("@info:credit", "Harald Sitter"),
-                         i18nc("@info:credit", "Qt 5 port"),
-                         QStringLiteral("apachelogger@kubuntu.org"));
-    aboutData->setProgramIconName(QStringLiteral("applications-other"));
-
     aboutData->addAuthor(i18nc("@info:credit", "Harald Sitter"),
                         i18nc("@info:credit", "Author"),
                         QStringLiteral("apachelogger@kubuntu.org"));

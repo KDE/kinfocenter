@@ -27,3 +27,5 @@ find_package(KF5Service 5.0.0)
 find_package(KF5Solid 5.0.0)
 
 add_subdirectory(src)
+
+feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
