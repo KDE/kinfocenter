@@ -23,7 +23,6 @@ else(NOT SUFFIX_VERSION)
 endif(NOT SUFFIX_VERSION)
 
 find_package(KF5ConfigWidgets 5.0.0)
-find_package(KF5Service 5.0.0)
 find_package(KF5Solid 5.0.0)
 
 add_subdirectory(src)
