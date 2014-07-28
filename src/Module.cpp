@@ -96,7 +96,10 @@ Module::~Module()
 
 void Module::load()
 {
-    KSharedConfig::Ptr config = KSharedConfig::openConfig("kcm-about-distrorc");
+    // NOTE: do not include globals, otherwise kdeglobals could provide values
+    //       even though we only explicitly want them from our own config.
+    KSharedConfig::Ptr config = KSharedConfig::openConfig("kcm-about-distrorc",
+                                                          KConfig::NoGlobals);
     KConfigGroup cg = KConfigGroup(config, "General");
 
     QString logoPath = cg.readEntry("LogoPath", QString());
