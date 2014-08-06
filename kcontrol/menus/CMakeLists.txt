@@ -3,9 +3,9 @@
 
 ########### install files ###############
 if (WIN32)
-install( FILES kde-information.menu DESTINATION ${SHARE_INSTALL_DIR}/xdg/menus/)
+install( FILES kinfocenter.menu DESTINATION ${SHARE_INSTALL_DIR}/xdg/menus/)
 else ()
-install( FILES kde-information.menu DESTINATION ${SYSCONF_INSTALL_DIR}/xdg/menus/)
+install( FILES kinfocenter.menu DESTINATION ${SYSCONF_INSTALL_DIR}/xdg/menus/)
 endif ()
 
-install( FILES kde-information.directory  DESTINATION  ${XDG_DIRECTORY_INSTALL_DIR} )
+install( FILES kinfocenter.directory  DESTINATION  ${XDG_DIRECTORY_INSTALL_DIR} )
