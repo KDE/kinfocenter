@@ -66,9 +66,13 @@ if(NOT APPLE)
                           TYPE OPTIONAL
                           PURPOSE "Required for building the X11 based workspace"
                         )
+    if(X11_FOUND)
+        set(HAVE_X11 TRUE)
+    endif()
 else()
   set(X11_FOUND False)
 endif()
+
 
 configure_file(config-workspace.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-workspace.h)
 configure_file(config-X11.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-X11.h)
