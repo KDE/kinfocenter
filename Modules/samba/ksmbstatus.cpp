@@ -152,11 +152,6 @@ void NetMon::readFromProcess() {
 	// doesn't end with a '\n' ... but will this happen ?
 }
 
-void NetMon::smbstatusError()
-{
-	version->setText(i18n("Error: Unable to run smbstatus"));
-}
-
 void NetMon::update() {
 	QProcess *process = new QProcess();
 
@@ -172,20 +167,21 @@ void NetMon::update() {
 	nrpid=0;
 	process->setEnvironment(QStringList() << ("PATH=" + path));
 	connect(process, SIGNAL(readyRead()), SLOT(readFromProcess()));
-	connect(process, SIGNAL(error(QProcess::ProcessError)), SLOT(smbstatusError()));
 	process->start("smbstatus");
-	process->waitForFinished();
-	if (rownumber==0) // empty result
-		version->setText(i18n("Error: Unable to open configuration file \"smb.conf\""));
-	else
-	{
-		// ok -> count the number of locked files for each pid
-		for (int i = 0; i < list->topLevelItemCount(); ++i)
-		{
-			QTreeWidgetItem *row = list->topLevelItem(i);
-			//         cerr<<"NetMon::update: this should be the pid: "<<row->text(5)<<endl;
-			int pid=row->text(5).toInt();
-			row->setText(6,QString("%1").arg((lo)[pid]));
+	if (!process->waitForFinished()) {
+		version->setText(i18n("Error run smbstatus: %1", process->errorString()));
+	} else {
+		if (rownumber==0) // empty result
+			version->setText(i18n("Error: Unable to open configuration file \"smb.conf\""));
+		else {
+			// ok -> count the number of locked files for each pid
+			for (int i = 0; i < list->topLevelItemCount(); ++i)
+			{
+				QTreeWidgetItem *row = list->topLevelItem(i);
+				// cerr<<"NetMon::update: this should be the pid: "<<row->text(5)<<endl;
+				int pid=row->text(5).toInt();
+				row->setText(6,QString("%1").arg((lo)[pid]));
+			}
 		}
 	}
 

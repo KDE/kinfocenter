@@ -56,7 +56,6 @@ private Q_SLOTS:
 	void killShowmount();
 	void update();
 	void readFromProcess();
-	void smbstatusError();
 };
 
 #endif // main_included
