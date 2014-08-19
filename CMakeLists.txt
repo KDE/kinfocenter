@@ -1,4 +1,5 @@
 project(kinfocenter)
+set(PROJECT_VERSION "5.0.95")
 
 cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
 set(QT_MIN_VERSION "5.3.0")
@@ -104,6 +105,7 @@ ToolTips/tooltipmanager.cpp
 )
 
 add_executable( kinfocenter ${kinfocenter_SRCS} )
+target_compile_definitions(kinfocenter PRIVATE -DPROJECT_VERSION="${PROJECT_VERSION}")
 
 target_link_libraries( kinfocenter
     KF5::Completion

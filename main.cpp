@@ -29,12 +29,12 @@
 #include <config-workspace.h>
 #include <KDBusService>
 
+//Qt
+#include <QCommandLineParser>
+
 KicApp::KicApp(int &argc, char **argv)
     : QApplication(argc, argv)
 {
-    QCoreApplication::setApplicationName(QStringLiteral("kinfocenter"));
-    QCoreApplication::setApplicationVersion(QStringLiteral(WORKSPACE_VERSION_STRING));
-    QCoreApplication::setOrganizationDomain(QStringLiteral("kde.org"));
     QApplication::setApplicationDisplayName(i18n("KDE Info Center"));
     display = new KInfoCenter();
     display->show();
@@ -45,20 +45,27 @@ KicApp::KicApp(int &argc, char **argv)
 int main(int argc, char *argv[])
 {
     KLocalizedString::setApplicationDomain("kinfocenter");
-    KAboutData aboutKInfoCenter( QStringLiteral("kinfocenter"), i18n("KDE Info Center"),
-        QStringLiteral(WORKSPACE_VERSION_STRING), i18n("The KDE Info Center"), KAboutLicense::GPL,
-        i18n("(c) 2009-2010, The KDE SC KInfocenter Development Team"));
-
-    KAboutData *aboutData = &aboutKInfoCenter;
-
-    aboutData->addAuthor(i18n("David Hubner"),i18n("Current Maintainer"), QStringLiteral("hubnerd@ntlworld.com"));
-    aboutData->addAuthor(i18n("Helge Deller"), i18n("Previous Maintainer"), QStringLiteral("deller@kde.org"));
-    aboutData->addAuthor(i18n("Matthias Hoelzer-Kluepfel"),QString(), QStringLiteral("hoelzer@kde.org"));
-    aboutData->addAuthor(i18n("Matthias Elter"), QString(), QStringLiteral("elter@kde.org"));
-    aboutData->addAuthor(i18n("Matthias Ettrich"), QString(), QStringLiteral("ettrich@kde.org"));
-    aboutData->addAuthor(i18n("Waldo Bastian"), QString(), QStringLiteral("bastian@kde.org"));
-    aboutData->addAuthor(i18n("Nicolas Ternisien"), QString(), QStringLiteral("nicolas.ternisien@gmail.com"));
 
     KicApp Kic(argc, argv);
+
+    KAboutData aboutData( QStringLiteral("kinfocenter"), i18n("KDE Info Center"),
+        PROJECT_VERSION, i18n("The KDE Info Center"), KAboutLicense::GPL,
+        i18n("(c) 2009-2010, The KDE SC KInfocenter Development Team"));
+
+    aboutData.addAuthor(i18n("David Hubner"),i18n("Current Maintainer"), QStringLiteral("hubnerd@ntlworld.com"));
+    aboutData.addAuthor(i18n("Helge Deller"), i18n("Previous Maintainer"), QStringLiteral("deller@kde.org"));
+    aboutData.addAuthor(i18n("Matthias Hoelzer-Kluepfel"),QString(), QStringLiteral("hoelzer@kde.org"));
+    aboutData.addAuthor(i18n("Matthias Elter"), QString(), QStringLiteral("elter@kde.org"));
+    aboutData.addAuthor(i18n("Matthias Ettrich"), QString(), QStringLiteral("ettrich@kde.org"));
+    aboutData.addAuthor(i18n("Waldo Bastian"), QString(), QStringLiteral("bastian@kde.org"));
+    aboutData.addAuthor(i18n("Nicolas Ternisien"), QString(), QStringLiteral("nicolas.ternisien@gmail.com"));
+    KAboutData::setApplicationData(aboutData);
+    QCommandLineParser parser;
+    parser.addHelpOption();
+    parser.addVersionOption();
+    aboutData.setupCommandLine(&parser);
+    parser.process(Kic);
+    aboutData.processCommandLine(&parser);
+
     return Kic.exec();
 }
