@@ -30,7 +30,6 @@ find_package(KF5 REQUIRED COMPONENTS
     Service
     Solid
     WidgetsAddons
-    WindowSystem
     XmlGui
 )
 
@@ -120,7 +119,6 @@ target_link_libraries( kinfocenter
     KF5::Service
     KF5::Solid
     KF5::WidgetsAddons
-    KF5::WindowSystem
     KF5::XmlGui
 )
 

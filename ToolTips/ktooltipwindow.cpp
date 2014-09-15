@@ -22,7 +22,6 @@
 #include "ktooltipwindow_p.h"
 
 #include <kcolorscheme.h>
-#include <kwindowsystem.h>
 
 #include <QPaintEvent>
 #include <QStylePainter>
