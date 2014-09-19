@@ -20,8 +20,8 @@ set(KCM_PCI_LIBS
 
 set(KCM_PCI_PART_SRCS kcm_pci.cpp ../base/os_current.cpp )
 
-if(Wayland_Client_FOUND)
-    set(KCM_PCI_LIBS ${KCM_PCI_LIBS} Wayland::Client)
+if(KF5Wayland_FOUND)
+    set(KCM_PCI_LIBS ${KCM_PCI_LIBS} KF5::WaylandClient)
     set(KCM_PCI_PART_SRCS ${KCM_PCI_PART_SRCS} ../base/info_wayland.cpp)
 endif()
 

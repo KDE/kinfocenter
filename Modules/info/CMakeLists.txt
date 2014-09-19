@@ -12,7 +12,7 @@ include_directories(
 
 set(kcm_info_PART_SRCS main.cpp info.cpp ../base/os_current.cpp )
 
-if(Wayland_Client_FOUND)
+if(KF5Wayland_FOUND)
     set(kcm_info_PART_SRCS ${kcm_info_PART_SRCS} ../base/info_wayland.cpp)
 endif()
 
@@ -25,8 +25,8 @@ target_link_libraries(kcm_info
     KF5::KDELibs4Support
     ${X11_X11_LIB})
 
-if(Wayland_Client_FOUND)
-    target_link_libraries(kcm_info Wayland::Client)
+if(KF5Wayland_FOUND)
+    target_link_libraries(kcm_info KF5::WaylandClient)
 endif()
 
 install(TARGETS kcm_info  DESTINATION ${PLUGIN_INSTALL_DIR} )

@@ -53,11 +53,11 @@ set_package_properties(EGL PROPERTIES
                        PURPOSE "Required for OpenGL Information Module"
                       )
 
-find_package(Wayland 1.2 COMPONENTS Client)
-set_package_properties(Wayland PROPERTIES
+find_package(KF5Wayland CONFIG)
+set_package_properties(KF5Wayland PROPERTIES
                        TYPE OPTIONAL
                       )
-add_feature_info("Wayland-Client" Wayland_Client_FOUND "Required for Wayland Compositor Information Module")
+add_feature_info("KF5Wayland" KF5Wayland_FOUND "Required for Wayland Compositor Information Module")
 
 if(NOT APPLE)
   find_package(X11)

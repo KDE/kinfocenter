@@ -186,7 +186,7 @@ bool GetInfo_Wayland(QTreeWidget* tree) {
 #if HAVE_WAYLAND
     WaylandModule *display = new WaylandModule(tree);
 
-    return display->isValid();
+    return true;
 #endif
     return false;
 }

@@ -23,10 +23,14 @@ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 
 #include <QObject>
 
-struct wl_display;
-struct wl_registry;
 class QTreeWidget;
-class QTreeWidgetItem;
+class QThread;
+
+namespace KWayland {
+    namespace Client {
+        class ConnectionThread;
+    }
+}
 
 class WaylandModule : public QObject
 {
@@ -34,29 +38,12 @@ class WaylandModule : public QObject
 public:
     WaylandModule(QTreeWidget *lBox);
     ~WaylandModule();
-    void flush();
-    wl_display *display() const {
-        return m_display;
-    }
-
-    QTreeWidgetItem *interfacesItem() const {
-        return m_interfacesItem;
-    }
-
-    QTreeWidgetItem *root() const {
-        return m_compositorItem;
-    }
-
-    bool isValid() const;
 
 private:
     void init();
-    void readEvents();
-    wl_display *m_display;
-    wl_registry *m_registry;
     QTreeWidget *m_tree;
-    QTreeWidgetItem *m_interfacesItem;
-    QTreeWidgetItem *m_compositorItem;
+    QThread *m_thread;
+    KWayland::Client::ConnectionThread *m_connection;
 };
 
 #endif // INFO_WAYLAND_H

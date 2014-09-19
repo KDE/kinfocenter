@@ -21,217 +21,191 @@ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 #include "info_wayland.h"
 
 #include <KLocalizedString>
-#include <QSocketNotifier>
 #include <QTreeWidgetItem>
+#include <QThread>
 
-#include <wayland-client.h>
-#include <wayland-client.h>
-
-namespace Wayland {
-
-static void outputHandleGeometry(void *data, wl_output *output, int32_t x, int32_t y,
-                                 int32_t physicalWidth, int32_t physicalHeight, int32_t subPixel,
-                                 const char *make, const char *model, int32_t transform)
-{
-    Q_UNUSED(output)
-    QTreeWidgetItem *parent = reinterpret_cast<QTreeWidgetItem*>(data);
-    QTreeWidgetItem *o = new QTreeWidgetItem(parent, QStringList() << i18n("Output"));
-    new QTreeWidgetItem(o, QStringList() << i18n("Manufacturer") << QString::fromUtf8(make));
-    new QTreeWidgetItem(o, QStringList() << i18n("Model") << QString::fromUtf8(model));
-    new QTreeWidgetItem(o, QStringList() << i18n("Physical Width") << QString::number(physicalWidth));
-    new QTreeWidgetItem(o, QStringList() << i18n("Physical Height") << QString::number(physicalHeight));
-    new QTreeWidgetItem(o, QStringList() << i18n("X") << QString::number(x));
-    new QTreeWidgetItem(o, QStringList() << i18n("Y") << QString::number(y));
-    new QTreeWidgetItem(o, QStringList() << i18n("Subpixel") << QString::number(subPixel));
-    QString transformText;
-    switch (transform) {
-    case 0:
-        transformText = i18n("Normal");
-        break;
-    case 1:
-        transformText = QStringLiteral("90");
-        break;
-    case 2:
-        transformText = QStringLiteral("180");
-        break;
-    case 3:
-        transformText = QStringLiteral("270");
-        break;
-    case 4:
-        transformText = i18n("Flipped");
-        break;
-    case 5:
-        transformText = i18n("Flipped 90");
-        break;
-    case 6:
-        transformText = i18n("Flipped 180");
-        break;
-    case 7:
-        transformText = i18n("Flipped 270");
-        break;
-    }
-    new QTreeWidgetItem(o, QStringList() << i18n("Transform") << transformText);
-}
-
-static void outputHandleMode(void *data, wl_output *output, uint flags, int32_t width, int32_t height, int32_t refresh)
-{
-    Q_UNUSED(data)
-    Q_UNUSED(output)
-    Q_UNUSED(flags)
-    Q_UNUSED(width)
-    Q_UNUSED(height)
-    Q_UNUSED(refresh)
-}
-
-static void outputHandleDone(void *data, wl_output *output)
-{
-    Q_UNUSED(data)
-    Q_UNUSED(output)
-}
-
-static void outputHandleScale(void *data, wl_output *output, int32_t scale)
-{
-    Q_UNUSED(data)
-    Q_UNUSED(output)
-    Q_UNUSED(scale)
-}
-
-static const struct wl_output_listener s_outputListener = {
-    outputHandleGeometry,
-    outputHandleMode,
-    outputHandleDone,
-    outputHandleScale
-};
-
-static void seatHandleCapabilities(void *data, wl_seat *seat, uint32_t capabilities)
-{
-    Q_UNUSED(seat)
-    QTreeWidgetItem *parent = reinterpret_cast<QTreeWidgetItem*>(data);
-    if ((capabilities & WL_SEAT_CAPABILITY_POINTER)) {
-        new QTreeWidgetItem(parent, QStringList() << i18n("Pointer"));
-    }
-    if ((capabilities & WL_SEAT_CAPABILITY_KEYBOARD)) {
-        new QTreeWidgetItem(parent, QStringList() << i18n("Keyboard"));
-    }
-    if ((capabilities & WL_SEAT_CAPABILITY_TOUCH)) {
-        new QTreeWidgetItem(parent, QStringList() << i18n("Touch"));
-    }
-}
-
-static void seatHandleName(void *data, wl_seat *seat, const char *name)
-{
-    Q_UNUSED(seat)
-    QTreeWidgetItem *parent = reinterpret_cast<QTreeWidgetItem*>(data);
-    new QTreeWidgetItem(parent, QStringList() << i18n("Name") << QString::fromUtf8(name));
-}
-
-static const struct wl_seat_listener s_seatListener = {
-    seatHandleCapabilities,
-    seatHandleName
-};
-
-static void registryHandleGlobal(void *data, struct wl_registry *registry,
-                                        uint32_t name, const char *interface, uint32_t version)
-{
-    WaylandModule *wayland = reinterpret_cast<WaylandModule*>(data);
-
-    new QTreeWidgetItem(wayland->interfacesItem(), QStringList() << QString::fromUtf8(interface) << QString::number(version));
-
-    if (strcmp(interface, "wl_output") == 0) {
-        QTreeWidgetItem *outputItems = new QTreeWidgetItem(wayland->root(), QStringList() << i18n("Outputs"));
-        wl_output *output = reinterpret_cast<wl_output *>(wl_registry_bind(registry, name, &wl_output_interface, 1));
-        wl_output_add_listener(output, &s_outputListener, outputItems);
-        wayland->flush();
-    }
-    if (strcmp(interface, "wl_seat") == 0) {
-        QTreeWidgetItem *seatItem = new QTreeWidgetItem(wayland->root(), QStringList() << i18n("Seat"));
-        wl_seat *seat = reinterpret_cast<wl_seat*>(wl_registry_bind(registry, name, &wl_seat_interface, 1));
-        wl_seat_add_listener(seat, &s_seatListener, seatItem);
-        wayland->flush();
-    }
-}
-
-static void registryHandleGlobalRemove(void *data, wl_registry *registry, uint32_t name)
-{
-    Q_UNUSED(data)
-    Q_UNUSED(registry)
-    Q_UNUSED(name)
-}
-
-static const struct wl_registry_listener s_registryListener = {
-    registryHandleGlobal,
-    registryHandleGlobalRemove
-};
-
-} // namespace Wayland
+#include <KWayland/Client/connection_thread.h>
+#include <KWayland/Client/event_queue.h>
+#include <KWayland/Client/output.h>
+#include <KWayland/Client/seat.h>
+#include <KWayland/Client/registry.h>
 
 WaylandModule::WaylandModule(QTreeWidget *parent)
     : QObject(parent)
-    , m_display(nullptr)
-    , m_registry(nullptr)
     , m_tree(parent)
-    , m_interfacesItem(nullptr)
-    , m_compositorItem(nullptr)
+    , m_thread(new QThread(this))
+    , m_connection(new KWayland::Client::ConnectionThread)
 {
     init();
 }
 
 WaylandModule::~WaylandModule()
 {
-    if (m_registry) {
-        wl_registry_destroy(m_registry);
-    }
-    if (m_display) {
-        wl_display_flush(m_display);
-        wl_display_disconnect(m_display);
-    }
+    m_connection->deleteLater();
+    m_thread->quit();
+    m_thread->wait();
 }
 
 void WaylandModule::init()
 {
-    m_display = wl_display_connect(nullptr);
-    if (!m_display) {
-        return;
-    }
+    using namespace KWayland::Client;
+    m_connection->moveToThread(m_thread);
+    m_thread->start();
 
     m_tree->setHeaderLabels(QStringList() << i18n("Information") << i18n("Value"));
     m_tree->setSortingEnabled(false);
 
-    m_compositorItem = new QTreeWidgetItem(m_tree, QStringList() << i18n("Compositor Information"));
-    m_compositorItem->setIcon(0, QIcon::fromTheme(QStringLiteral("wayland")));
-    m_compositorItem->setExpanded(true);
+    auto compositorItem = new QTreeWidgetItem(m_tree, QStringList() << i18n("Compositor Information"));
+    compositorItem->setIcon(0, QIcon::fromTheme(QStringLiteral("wayland")));
+    compositorItem->setExpanded(true);
 
-    new QTreeWidgetItem(m_compositorItem, QStringList() << i18n("Name of the Display") << qgetenv("WAYLAND_DISPLAY"));
+    new QTreeWidgetItem(compositorItem, QStringList() << i18n("Name of the Display") << qgetenv("WAYLAND_DISPLAY"));
 
-    m_interfacesItem = new QTreeWidgetItem(m_compositorItem, QStringList() << i18n("Interfaces") << i18n("Interface Version"));
-    m_interfacesItem->setExpanded(true);
+    auto interfacesItem = new QTreeWidgetItem(compositorItem, QStringList() << i18n("Interfaces") << i18n("Interface Version"));
+    interfacesItem->setExpanded(true);
 
-    m_registry = wl_display_get_registry(m_display);
-    if (!m_registry) {
-        return;
-    }
-    wl_registry_add_listener(m_registry, &Wayland::s_registryListener, this);
+    connect(m_connection, &ConnectionThread::connected, this,
+        [this, compositorItem, interfacesItem] {
+            Registry *registry = new Registry(this);
+            EventQueue *queue = new EventQueue(this);
+            queue->setup(m_connection);
+            registry->setEventQueue(queue);
+            connect(registry, &Registry::interfaceAnnounced, this,
+                [this, interfacesItem] (QByteArray interface, quint32 name, quint32 version) {
+                    Q_UNUSED(name)
+                    new QTreeWidgetItem(interfacesItem, QStringList() << interface << QString::number(version));
+                }
+            );
+            connect(registry, &Registry::seatAnnounced, this,
+                [this, registry, compositorItem] (quint32 name, quint32 version) {
+                    QTreeWidgetItem *seatItem = new QTreeWidgetItem(compositorItem, QStringList() << i18n("Seat") << QString());
+                    seatItem->setExpanded(true);
+                    Seat *seat = registry->createSeat(name, version, registry);
+                    connect(seat, &Seat::nameChanged, this,
+                        [this, seat, seatItem] {
+                            new QTreeWidgetItem(seatItem, QStringList() << i18n("Name") << seat->name());
+                        }
+                    );
+                    connect(seat, &Seat::hasPointerChanged, this,
+                        [this, seat, seatItem] {
+                            if (seat->hasPointer()) {
+                                new QTreeWidgetItem(seatItem, QStringList() << i18n("Pointer"));
+                            }
+                        }
+                    );
+                    connect(seat, &Seat::hasKeyboardChanged, this,
+                        [this, seat, seatItem] {
+                            if (seat->hasKeyboard()) {
+                                new QTreeWidgetItem(seatItem, QStringList() << i18n("Keyboard"));
+                            }
+                        }
+                    );
+                    connect(seat, &Seat::hasTouchChanged, this,
+                        [this, seat, seatItem] {
+                            if (seat->hasTouch()) {
+                                new QTreeWidgetItem(seatItem, QStringList() << i18n("Touch"));
+                            }
+                        }
+                    );
+                }
+            );
+            QTreeWidgetItem *outputItem = new QTreeWidgetItem(compositorItem, QStringList() << i18n("Outputs"));
+            outputItem->setExpanded(true);
+            connect(registry, &Registry::outputAnnounced, this,
+                [this, registry, outputItem] (quint32 name, quint32 version) {
+                    Output *output = registry->createOutput(name, version, registry);
+                    connect(output, &Output::changed, this,
+                        [this, output, outputItem] {
+                            output->deleteLater();
+                            const QSize s = output->physicalSize();
+                            const QPoint p = output->globalPosition();
 
-    int fd = wl_display_get_fd(m_display);
-    QSocketNotifier *notifier = new QSocketNotifier(fd, QSocketNotifier::Read, this);
-    connect(notifier, &QSocketNotifier::activated, this, &WaylandModule::readEvents);
+                            auto o = new QTreeWidgetItem(outputItem, QStringList() << QString::number(outputItem->childCount()));
+                            o->setExpanded(true);
 
-    flush();
-}
+                            new QTreeWidgetItem(o, QStringList() << i18n("Manufacturer") << output->manufacturer());
+                            new QTreeWidgetItem(o, QStringList() << i18n("Model") << output->model());
+                            new QTreeWidgetItem(o, QStringList() << i18n("Physical Size") << QStringLiteral("%1x%2").arg(s.width()).arg(s.height()));
+                            new QTreeWidgetItem(o, QStringList() << i18n("Global Position") << QStringLiteral("%1/%2").arg(p.x()).arg(p.y()));
 
-void WaylandModule::flush()
-{
-    wl_display_dispatch_pending(m_display);
-    wl_display_flush(m_display);
-}
+                            QString subPixel;
+                            switch (output->subPixel()) {
+                            case Output::SubPixel::None:
+                                subPixel = i18n("None");
+                                break;
+                            case Output::SubPixel::HorizontalRGB:
+                                subPixel = i18n("Horizontal RGB");
+                                break;
+                            case Output::SubPixel::HorizontalBGR:
+                                subPixel = i18n("Horizontal BGR");
+                                break;
+                            case Output::SubPixel::VerticalRGB:
+                                subPixel = i18n("Vertical RGB");
+                                break;
+                            case Output::SubPixel::VerticalBGR:
+                                subPixel = i18n("Vertical BGR");
+                                break;
+                            case Output::SubPixel::Unknown:
+                            default:
+                                subPixel = i18n("Unknown");
+                                break;
+                            }
+                            new QTreeWidgetItem(o, QStringList() << i18n("Subpixel") << subPixel);
 
-void WaylandModule::readEvents()
-{
-    wl_display_flush(m_display);
-    wl_display_dispatch(m_display);
-}
+                            QString transform;
+                            switch (output->transform()) {
+                            case Output::Transform::Rotated90:
+                                transform = QStringLiteral("90");
+                                break;
+                            case Output::Transform::Rotated180:
+                                transform = QStringLiteral("180");
+                                break;
+                            case Output::Transform::Rotated270:
+                                transform = QStringLiteral("270");
+                                break;
+                            case Output::Transform::Flipped:
+                                transform = i18n("Flipped");
+                                break;
+                            case Output::Transform::Flipped90:
+                                transform = i18n("Flipped 90");
+                                break;
+                            case Output::Transform::Flipped180:
+                                transform = i18n("Flipped 180");
+                                break;
+                            case Output::Transform::Flipped270:
+                                transform = i18n("Flipped 270");
+                                break;
+                            case Output::Transform::Normal:
+                            default:
+                                transform = i18n("Normal");
+                                break;
+                            }
+                            new QTreeWidgetItem(o, QStringList() << i18n("Transform") << transform);
 
-bool WaylandModule::isValid() const
-{
-    return m_registry != nullptr;
+                            // add Modes
+                            auto modesItem = new QTreeWidgetItem(o, QStringList() << i18n("Modes"));
+                            int i = 0;
+                            for (const auto &mode : output->modes()) {
+                                auto modeItem = new QTreeWidgetItem(modesItem, QStringList() << QString::number(i++));
+                                modeItem->setExpanded(true);
+                                new QTreeWidgetItem(modeItem, QStringList() << i18n("Size")
+                                                                            << QStringLiteral("%1x%2").arg(mode.size.width()).arg(mode.size.height()));
+                                new QTreeWidgetItem(modeItem, QStringList() << i18n("Refresh Rate")
+                                                                            << QString::number(mode.refreshRate));
+                                new QTreeWidgetItem(modeItem, QStringList() << i18n("Preferred")
+                                                                            << (mode.flags.testFlag(Output::Mode::Flag::Preferred) ? i18n("yes") : i18n("no")));
+                                new QTreeWidgetItem(modeItem, QStringList() << i18n("Current")
+                                                                            << (mode.flags.testFlag(Output::Mode::Flag::Current) ? i18n("yes") : i18n("no")));
+                            }
+                        }
+                    );
+                }
+            );
+            registry->create(m_connection);
+            registry->setup();
+        },
+        Qt::QueuedConnection
+    );
+
+    m_connection->initConnection();
 }
