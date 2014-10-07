@@ -106,7 +106,7 @@ LogView::LogView(QWidget *parent, KConfig *config) :
 	showFileOpen.setChecked(false);
 	showFileClose.setChecked(false);
 
-	connect(&updateButton, SIGNAL(clicked()), this, SLOT(updateList()));
+	connect(&updateButton, &QPushButton::clicked, this, &LogView::updateList);
 	emit contentsChanged(&viewHistory, 0, 0);
 
 	label.setMinimumSize(label.sizeHint());

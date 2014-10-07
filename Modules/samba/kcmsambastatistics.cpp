@@ -118,8 +118,8 @@ StatisticsView::StatisticsView(QWidget *parent, KConfig *config) :
 	subLayout->addWidget(expandedInfoCb, 3, 1);
 	subLayout->addWidget(expandedUserCb, 3, 2);
 
-	connect(clearButton, SIGNAL(clicked()), this, SLOT(clearStatistics()));
-	connect(calcButton, SIGNAL(clicked()), this, SLOT(calculate()));
+	connect(clearButton, &QPushButton::clicked, this, &StatisticsView::clearStatistics);
+	connect(calcButton, &QPushButton::clicked, this, &StatisticsView::calculate);
 	setListInfo(0, 0, 0);
 }
 

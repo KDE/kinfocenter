@@ -94,7 +94,7 @@ KCMMemory::KCMMemory(QWidget *parent, const QVariantList &) :
 	timer = new QTimer(this);
 	timer->start(100);
 
-	connect(timer, SIGNAL(timeout()), this, SLOT(updateDatas()));
+	connect(timer, &QTimer::timeout, this, &KCMMemory::updateDatas);
 	
 	updateDatas();
 }

@@ -106,8 +106,8 @@ KCMNic::KCMNic(QWidget *parent, const QVariantList &) :
 	hbox->addStretch(1);
 	QTimer* timer=new QTimer(this);
 	timer->start(60000);
-	connect(m_updateButton, SIGNAL(clicked()), this, SLOT(update()));
-	connect(timer, SIGNAL(timeout()), this, SLOT(update()));
+	connect(m_updateButton, &QPushButton::clicked, this, &KCMNic::update);
+	connect(timer, &QTimer::timeout, this, &KCMNic::update);
 	update();
 	KAboutData *about = new KAboutData(i18n("kcminfo"),
 			i18n("System Information Control Module"),

@@ -80,8 +80,8 @@ KCMOpenGL::KCMOpenGL(QWidget *parent, const QVariantList &)
     GetInfo_OpenGL(glinfoTreeWidget);
 
     // Watch for expanded and collapsed events, to resize columns
-    connect(glinfoTreeWidget, SIGNAL(expanded(QModelIndex)), this, SLOT(treeWidgetChanged()));
-    connect(glinfoTreeWidget, SIGNAL(collapsed(QModelIndex)), this, SLOT(treeWidgetChanged()));
+    connect(glinfoTreeWidget, &QTreeWidget::expanded, this, &KCMOpenGL::treeWidgetChanged);
+    connect(glinfoTreeWidget, &QTreeWidget::collapsed, this, &KCMOpenGL::treeWidgetChanged);
     
     KAboutData *about =
     new KAboutData(i18n("kcmopengl"),

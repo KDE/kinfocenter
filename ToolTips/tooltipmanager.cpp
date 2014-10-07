@@ -63,7 +63,7 @@ ToolTipManager::ToolTipManager(QAbstractItemView* parent)
             
     d->timer = new QTimer(this);
     d->timer->setSingleShot(true);
-    connect(d->timer, SIGNAL(timeout()), this, SLOT(prepareToolTip()));
+    connect(d->timer, &QTimer::timeout, this, &ToolTipManager::prepareToolTip);
 
     // When the mousewheel is used, the items don't get a hovered indication
     // (Qt-issue #200665). To assure that the tooltip still gets hidden,

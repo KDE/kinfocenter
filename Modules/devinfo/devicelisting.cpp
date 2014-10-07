@@ -32,7 +32,7 @@ DeviceListing::DeviceListing(QWidget *parent, InfoPanel *info, DevInfoPlugin *st
 //    connect(nicSig,SIGNAL(nicActivatedOrDisconnected()),this,SLOT(networkingChangedSlot()));
 //
     // Check if clicked
-    connect(this,SIGNAL(itemActivated(QTreeWidgetItem*,int)),this,SLOT(itemActivatedSlot(QTreeWidgetItem*,int)));
+    connect(this, &DeviceListing::itemActivated, this, &DeviceListing::itemActivatedSlot);
     
     // Check if item is added
     connect(Solid::DeviceNotifier::instance(),SIGNAL(deviceAdded(QString)),this,SLOT(deviceAddedSlot(QString)));
@@ -56,16 +56,16 @@ DeviceListing::~DeviceListing()
 void DeviceListing::createMenuActions() 
 { 
   colAct = new QAction(i18n("Collapse All"), this);
-  connect(colAct, SIGNAL(triggered()), this, SLOT(collapseAllDevicesSlot()));
+  connect(colAct, &QAction::triggered, this, &DeviceListing::collapseAllDevicesSlot);
   
   expAct = new QAction(i18n("Expand All"), this);
-  connect(expAct, SIGNAL(triggered()), this, SLOT(expandAllDevicesSlot()));
+  connect(expAct, &QAction::triggered, this, &DeviceListing::expandAllDevicesSlot);
   
   allAct = new QAction(i18n("Show All Devices"), this);
-  connect(allAct, SIGNAL(triggered()), this, SLOT(showAllDevicesSlot()));
+  connect(allAct, &QAction::triggered, this, &DeviceListing::showAllDevicesSlot);
   
   relAct = new QAction(i18n("Show Relevant Devices"), this);
-  connect(relAct, SIGNAL(triggered()), this, SLOT(showRelevantDevicesSlot()));
+  connect(relAct, &QAction::triggered, this, &DeviceListing::showRelevantDevicesSlot);
 }
 
 void DeviceListing::contextMenuEvent(QContextMenuEvent *event) 

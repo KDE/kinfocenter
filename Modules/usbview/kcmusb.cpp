@@ -67,8 +67,8 @@ USBViewer::USBViewer(QWidget *parent, const QVariantList &) :
 	// 1 sec seems to be a good compromise between latency and polling load.
 	refreshTimer->start(1000);
 
-	connect(refreshTimer, SIGNAL(timeout()), SLOT(refresh()));
-	connect(_devices, SIGNAL(currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*)), this, SLOT(selectionChanged(QTreeWidgetItem*)));
+	connect(refreshTimer, &QTimer::timeout, this, &USBViewer::refresh);
+	connect(_devices, &QTreeWidget::currentItemChanged, this, &USBViewer::selectionChanged);
 
 	KAboutData *about = new KAboutData(i18n("kcmusb"), i18n("KDE USB Viewer"),
 			QString(), QString(), KAboutLicense::GPL,

@@ -94,8 +94,8 @@ View1394::View1394(QWidget *parent, const QVariantList &) :
 	*/
 	box->addWidget(m_view);
 	m_view->layout()->setMargin(0);
-	connect(m_view->m_busResetPb, SIGNAL(clicked()), this, SLOT(generateBusReset()));
-	connect(&m_rescanTimer, SIGNAL(timeout()), this, SLOT(rescanBus()));
+	connect(m_view->m_busResetPb, &QPushButton::clicked, this, &View1394::generateBusReset);
+	connect(&m_rescanTimer, &QTimer::timeout, this, &View1394::rescanBus);
 	rescanBus();
 }
 
@@ -192,7 +192,7 @@ void View1394::rescanBus() {
 		raw1394_set_userdata(handle, this);
 		raw1394_set_bus_reset_handler(handle, my_reset_handler);
 		QSocketNotifier *notif=new QSocketNotifier(raw1394_get_fd(handle),QSocketNotifier::Read);
-		connect(notif, SIGNAL(activated(int)), this, SLOT(callRaw1394EventLoop(int)));
+		connect(notif, &QSocketNotifier::activated, this, &View1394::callRaw1394EventLoop);
 		m_notifiers.append(notif);
 		m_handles.append(handle);
 

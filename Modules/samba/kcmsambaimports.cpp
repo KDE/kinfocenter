@@ -51,7 +51,7 @@ ImportsView::ImportsView(QWidget * parent, KConfig *config) :
 		" resource is mounted.") );
 
 	timer.start(10000);
-	QObject::connect(&timer, SIGNAL(timeout()), this, SLOT(updateList()));
+	QObject::connect(&timer, &QTimer::timeout, this, &ImportsView::updateList);
 	updateList();
 }
 
