@@ -39,8 +39,6 @@
 
 #include <QTextStream>
 
-#include <kdebug.h>
-
 #include <mach/mach.h>
 #include <mach-o/arch.h>
 

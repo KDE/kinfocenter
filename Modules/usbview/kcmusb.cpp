@@ -20,7 +20,6 @@
 #include <QHeaderView>
 
 #include <kaboutdata.h>
-#include <kdialog.h>
 
 #include <KPluginFactory>
 #include <KPluginLoader>

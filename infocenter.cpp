@@ -25,7 +25,7 @@
 
 //KDE
 #include <KLocalizedString>
-#include <KIcon>
+#include <QIcon>
 #include <KMenuBar>
 #include <KMenu>
 #include <KHelpMenu>
@@ -40,7 +40,6 @@
 #include <KActionCollection>
 #include <KAboutApplicationDialog>
 #include <KMessageBox>
-#include <KShortcut>
 #include <KToolBar>
 #include <KUrl>
 
@@ -54,7 +53,7 @@
 
 KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
 {
-    setWindowIcon(KIcon("hwinfo"));
+    setWindowIcon(QIcon::fromTheme("hwinfo"));
     setWindowTitle(i18nc("Main window title", "KInfocenter"));
     setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
@@ -91,11 +90,11 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
     m_toolTips = new ToolTipManager(m_sideMenu);
     setupGUI(QSize(640,480), ToolBar | Keys | Save | Create, "kinfocenterui.rc");
 
-    m_helpAction->setMenu( dynamic_cast<KMenu*>( factory()->container("help", this) ) );
+    m_helpAction->setMenu( dynamic_cast<QMenu*>( factory()->container("help", this) ) );
     menuBar()->hide();
 
     QAction *aboutApp = actionCollection()->action("help_about_app");
-    aboutApp->setIcon(KIcon("hwinfo"));
+    aboutApp->setIcon(QIcon::fromTheme("hwinfo"));
 }
 
 KInfoCenter::~KInfoCenter()
@@ -134,18 +133,18 @@ void KInfoCenter::createToolBar()
 
     m_aboutKcm = actionCollection()->addAction("help_about_module");
     m_aboutKcm->setText(i18nc("Information about current module located in about menu","About Current Information Module"));
-    m_aboutKcm->setIcon(KIcon("help-about"));
+    m_aboutKcm->setIcon(QIcon::fromTheme("help-about"));
     m_aboutKcm->setEnabled(false);
 
-    m_exportAction = new KAction(this);
+    m_exportAction = new QAction(this);
     m_exportAction->setText(i18nc("Export button label", "Export"));
-    m_exportAction->setIcon(KIcon("document-export"));
+    m_exportAction->setIcon(QIcon::fromTheme("document-export"));
 
-    m_moduleHelpAction = new KAction(this);
+    m_moduleHelpAction = new QAction(this);
     m_moduleHelpAction->setText(i18nc("Module help button label", "Module Help"));
-    m_moduleHelpAction->setIcon(KIcon("help-contextual"));
+    m_moduleHelpAction->setIcon(QIcon::fromTheme("help-contextual"));
 
-    m_helpAction = new KActionMenu( KIcon("help-contents"), i18nc("Help button label","Help"), this );
+    m_helpAction = new KActionMenu( QIcon::fromTheme("help-contents"), i18nc("Help button label","Help"), this );
     m_helpAction->setDelayed( false );
 
     actionCollection()->addAction("export", m_exportAction);
@@ -189,12 +188,12 @@ void KInfoCenter::createMenuFrame()
     m_searchText->setCompletionMode( KCompletion::CompletionPopup );
     m_searchText->completionObject()->setIgnoreCase(true);
 
-    m_searchAction = new KAction(this);
-    m_searchAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_F));
+    m_searchAction = new QAction(this);
     m_searchAction->setText(i18nc("Kaction search label", "Search Modules"));
-    m_searchAction->setIcon(KIcon("edit-find"));
+    m_searchAction->setIcon(QIcon::fromTheme("edit-find"));
 
     actionCollection()->addAction("search",m_searchAction);
+    actionCollection()->setDefaultShortcut(m_searchAction, QKeySequence(Qt::CTRL + Qt::Key_F));
 
     m_sideMenu = new SidePanel(sideFrame);
     m_sideMenu->installEventFilter(this);

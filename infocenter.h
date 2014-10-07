@@ -26,7 +26,7 @@
 //KDE
 #include <KXmlGuiWindow>
 #include <KLineEdit>
-#include <KAction>
+#include <QAction>
 #include <KCModule>
 #include <KActionMenu>
 
