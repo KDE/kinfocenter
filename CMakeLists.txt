@@ -4,7 +4,7 @@ set(PROJECT_VERSION "5.0.95")
 cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
 set(QT_MIN_VERSION "5.3.0")
 
-find_package(ECM 0.0.11 REQUIRED NO_MODULE)
+find_package(ECM 1.2.0 REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 include(KDEInstallDirs)
@@ -125,7 +125,7 @@ target_link_libraries( kinfocenter
 ##install
 
 install( TARGETS kinfocenter          ${INSTALL_TARGETS_DEFAULT_ARGS} )
-install( PROGRAMS kinfocenter.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
+install( PROGRAMS org.kde.kinfocenter.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
 install( FILES kinfocenterui.rc DESTINATION ${KXMLGUI_INSTALL_DIR}/kinfocenter )
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
