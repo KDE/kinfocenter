@@ -45,7 +45,6 @@
 #include "tooltipmanager.h"
 
 class KcmContainer;
-class SizePanel;
 class ToolTipManager;
 class KcmTreeItem;
 
