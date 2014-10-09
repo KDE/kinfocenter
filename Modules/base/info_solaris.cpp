@@ -6,7 +6,6 @@
 
 #include "config-infocenter.h"
 
-#include <QTreeWidgetItemIterator>
 
 #include <stdio.h>
 #include <stdlib.h>

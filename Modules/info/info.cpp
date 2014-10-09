@@ -21,11 +21,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "info.h"		
 
-#include <QLayout>
-#include <QProcess>
 #include <QLabel>
 #include <QHBoxLayout>
-#include <QTextStream>
 #include <QHeaderView>
 
 #include <kglobalsettings.h>

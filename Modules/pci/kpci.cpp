@@ -21,7 +21,6 @@ extern "C" {
 #include <string.h> //memcpy
 #include <QTreeWidget>
 #include <QTreeWidgetItem>
-#include <QFile>
 
 static const QString& getNameById(const id2name *const table, int id) {
 	for (int i=0;; i++) {

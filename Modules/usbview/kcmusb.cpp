@@ -9,8 +9,6 @@
  ***************************************************************************/
 #include "kcmusb.h"
 
-#include <QGroupBox>
-#include <QLayout>
 #include <QSplitter>
 #include <QTextEdit>
 #include <QTimer>

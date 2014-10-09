@@ -24,9 +24,7 @@
 #include <stdlib.h>	/* for malloc(3) */
 
 #include <QFile>
-#include <QFontMetrics>
 #include <QTextStream>
-#include <QTreeWidgetItemIterator>
 
 #include <kdebug.h>
 

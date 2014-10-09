@@ -26,10 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <QStackedWidget>
 #include <QLabel>
 #include <QPushButton>
-#include <QTimer>
 #include <QTreeWidget>
-#include <QFile>
-#include <QEvent>
 
 #include <kcmodule.h>
 #include <kaboutdata.h>

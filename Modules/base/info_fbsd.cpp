@@ -26,7 +26,6 @@ extern "C" {
 
 #include <string.h>
 
-#include <QMap>
 #include <QFileInfo>
 
 #include <QTextStream>

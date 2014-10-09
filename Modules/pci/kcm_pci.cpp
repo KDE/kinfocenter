@@ -18,7 +18,6 @@
 
 #include "kcm_pci.h"
 
-#include <QStringList>
 
 #include <KPluginFactory>
 #include <KPluginLoader>
@@ -27,11 +26,7 @@
 #include <kdialog.h>
 #include <kdebug.h>
 
-#include <QLayout>
-#include <QPainter>
 
-#include <QPixmap>
-#include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QTreeWidget>
 

@@ -22,7 +22,6 @@
 
 #include <unistd.h>
 #include <stdlib.h>
-#include <QFile>
 #include <QDebug>
 #include <mach/mach_init.h>
 #include <mach/mach_host.h>

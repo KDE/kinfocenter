@@ -23,7 +23,6 @@ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 #define KCONTROL_MEMORY_H
 
 #include <QWidget>
-#include <QLabel>
 #include <QPushButton>
 #include <QTimer>
 

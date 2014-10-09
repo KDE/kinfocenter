@@ -34,10 +34,7 @@
 
 #include <iostream>
 
-#include <QFile>
-#include <QFontMetrics>
 
-#include <QTextStream>
 
 #include <mach/mach.h>
 #include <mach-o/arch.h>

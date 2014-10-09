@@ -23,13 +23,11 @@
 #include "kcmcontainer.h"
 
 //KDE
-#include <QIcon>
 #include <KDebug>
 #include <KLocalizedString>
 
 //QT
 #include <QVBoxLayout>
-#include <QApplication>
 #include <QStyle>
 
 KcmContainer::KcmContainer(QWidget *parent) : QScrollArea(parent), m_titleLabel(NULL),

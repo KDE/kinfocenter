@@ -26,7 +26,6 @@
 #include <fstab.h>
 
 #include <QFile>
-#include <QFontMetrics>
 #include <QStringList>
 #include <QTextStream>
 #include <QTreeWidgetItemIterator>

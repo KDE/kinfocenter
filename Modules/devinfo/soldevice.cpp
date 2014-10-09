@@ -21,7 +21,7 @@
  */
 
 #include "soldevice.h"
-
+#include <KLocalizedString>
 // Con
 
 SolDevice::SolDevice(const Solid::DeviceInterface::Type &type) : 

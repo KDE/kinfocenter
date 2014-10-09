@@ -38,9 +38,7 @@
 #include <kglobal.h>
 #include <KLocalizedString>
 
-#include <QLayout>
 #include <QPushButton>
-#include <QTabWidget>
 #include <QTimer>
 #include <QVBoxLayout>
 #include <QHBoxLayout>

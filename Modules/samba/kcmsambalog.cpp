@@ -23,8 +23,10 @@
 
 #include <QApplication>
 #include <QFile>
-#include <QLayout>
 #include <QUrl>
+#include <QHBoxLayout>
+#include <QVBoxLayout>
+#include <QGridLayout>
 
 #include <kmessagebox.h>
 #include <kdialog.h>

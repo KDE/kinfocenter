@@ -29,8 +29,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <fstab.h>
 #include <stdlib.h>
 #include <QFile>
-#include <QFontMetrics>
-#include <QTextStream>
 
 #	define INFO_PCI			""	// Please, who know it ????
 #	define INFO_PCI_EISA		"/etc/eisa/system.sci" // File !

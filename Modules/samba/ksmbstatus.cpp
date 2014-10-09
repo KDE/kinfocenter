@@ -22,10 +22,11 @@
 #include <string.h>
 #include <time.h>
 
-#include <QLayout>
 
 #include <KLocalizedString>
 #include <kdialog.h>
+
+#include <QBoxLayout>
 
 #include "ksmbstatus.h"
 #include "ksmbstatus.moc"

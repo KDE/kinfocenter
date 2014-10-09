@@ -24,6 +24,7 @@
 #include <KFormat>
 #include <KLocalizedString>
 #include <plasma/version.h>
+#include <KAboutData>
 
 K_PLUGIN_FACTORY(devInfoModuleFactory, registerPlugin<InfoSumPlugin>();)
 K_EXPORT_PLUGIN(devInfoModuleFactory("kcm_infosummary"))

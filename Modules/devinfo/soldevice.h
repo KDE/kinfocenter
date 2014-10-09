@@ -41,7 +41,6 @@
 #include <solid/predicate.h>
 
 //KDE
-#include <KLocalizedString>
 
 // Local
 #include "qvlistlayout.h"

@@ -16,13 +16,12 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#include <QLayout>
 #include <QTabWidget>
 
 #include <kaboutdata.h>
 #include <kcmodule.h>
 #include <KLocalizedString>
-
+#include <QVBoxLayout>
 #include "kcmsambaimports.h"
 #include "kcmsambalog.h"
 #include "kcmsambastatistics.h"

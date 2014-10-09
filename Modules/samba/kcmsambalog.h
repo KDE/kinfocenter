@@ -27,7 +27,6 @@
 #include <QCheckBox>
 #include <QPushButton>
 #include <QTreeWidget>
-#include <QEvent>
 
 #include <KConfig>
 #include <KUrlRequester>

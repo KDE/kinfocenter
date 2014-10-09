@@ -21,17 +21,11 @@
 
 #include "memory.h"
 
-#include <QStringList>
 
 #include <QGroupBox>
-#include <QLayout>
-#include <QPainter>
-#include <QPixmap>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
-#include <QLinearGradient>
-#include <QTreeWidget>
-
+#include <QLabel>
 #include <kaboutdata.h>
 
 #include <sys/param.h>		/* for BSD */

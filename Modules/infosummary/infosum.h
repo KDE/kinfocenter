@@ -25,7 +25,6 @@
 
 //kde
 #include <KCModule>
-#include <KAboutData>
 
 //Solid
 #include <solid/device.h>
@@ -41,8 +40,6 @@
 #include <kpluginloader.h>
 
 //QT
-#include <QGridLayout>
-#include <QScrollArea>
 
 //local 
 #include "defaultboxwidget.h"

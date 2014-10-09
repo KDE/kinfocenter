@@ -26,12 +26,7 @@
 //KDE
 #include <KLocalizedString>
 #include <QIcon>
-#include <KMenuBar>
-#include <KMenu>
-#include <KHelpMenu>
 #include <KConfig>
-#include <KGlobal>
-#include <KConfigGroup>
 #include <KDebug>
 #include <KToolInvocation>
 #include <KActionMenu>
@@ -40,16 +35,17 @@
 #include <KActionCollection>
 #include <KAboutApplicationDialog>
 #include <KMessageBox>
-#include <KToolBar>
 #include <KUrl>
+#include <KToolBar>
 
 //QT
-#include <QGridLayout>
 #include <QProcess>
 #include <QTextStream>
 #include <QFile>
 #include <QKeySequence>
 #include <QFileDialog>
+#include <QHBoxLayout>
+#include <QMenuBar>
 
 KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
 {

@@ -23,7 +23,6 @@
 #include "kcmsambastatistics.h"
 
 #include <QApplication>
-#include <QLayout>
 #include <QLabel>
 #include <QLineEdit>
 #include <QCheckBox>
@@ -31,10 +30,13 @@
 #include <QPushButton>
 #include <QRegExp>
 #include <QTreeWidget>
+#include <QGridLayout>
+#include <QHBoxLayout>
+#include <QVBoxLayout>
+#include <KLocale>
 
 #include <KDebug>
 #include <KDialog>
-#include <KGlobal>
 #include <KLocalizedString>
 
 StatisticsView::StatisticsView(QWidget *parent, KConfig *config) :

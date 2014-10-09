@@ -22,7 +22,6 @@ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 #ifndef TOTAL_MEMORY_CHART_H
 #define TOTAL_MEMORY_CHART_H
 
-#include <QFrame>
 #include <QList>
 
 #include "chartWidget.h"

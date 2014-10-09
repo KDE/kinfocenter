@@ -36,7 +36,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #endif //HAVE_PCIUTILS
 #include <QRegExp>
 #include <QFile>
-#include <QHeaderView>
 
 #include <KLocalizedString>
 #include <kiconloader.h>
