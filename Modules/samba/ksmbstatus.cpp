@@ -56,7 +56,7 @@ NetMon::NetMon(QWidget * parent, KConfig *config) :
 
 	timer = new QTimer(this);
 	timer->start(15000);
-	QObject::connect(timer, SIGNAL(timeout()), this, SLOT(update()));
+	QObject::connect(timer, &QTimer::timeout, this, &NetMon::update);
 	update();
 }
 
@@ -167,7 +167,7 @@ void NetMon::update() {
 	readingpart=header;
 	nrpid=0;
 	process->setEnvironment(QStringList() << ("PATH=" + path));
-	connect(process, SIGNAL(readyRead()), SLOT(readFromProcess()));
+	connect(process, &QProcess::readyRead, this, &NetMon::readFromProcess);
 	process->start("smbstatus");
 	if (!process->waitForFinished()) {
 		version->setText(i18n("Error run smbstatus: %1", process->errorString()));
@@ -192,14 +192,14 @@ void NetMon::update() {
 	readingpart=nfs;
 	delete showmountProc;
 	showmountProc=new QProcess();
-	connect(showmountProc, SIGNAL(readyRead()), SLOT(readFromProcess()));
+	connect(showmountProc, &QProcess::readyRead, this, &NetMon::readFromProcess);
 	showmountProc->setEnvironment(QStringList() << ("PATH=" + path));
 	//without this timer showmount hangs up to 5 minutes
 	//if the portmapper daemon isn't running
 	QTimer::singleShot(5000,this,SLOT(killShowmount()));
 	//kDebug()<<"starting kill timer with 5 seconds";
-	connect(showmountProc,SIGNAL(finished(int,QProcess::ExitStatus)),this,SLOT(killShowmount()));
-	connect(showmountProc,SIGNAL(error(QProcess::ProcessError)),this,SLOT(killShowmount()));
+	connect(showmountProc, static_cast<void (QProcess::*)(int, QProcess::ExitStatus)>(&QProcess::finished), this, &NetMon::killShowmount);
+	connect(showmountProc, static_cast<void (QProcess::*)(QProcess::ProcessError)>(&QProcess::error), this, &NetMon::killShowmount);
 	showmountProc->start("showmount", QStringList() << "-a" << "localhost");
 
 	version->adjustSize();
