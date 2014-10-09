@@ -33,6 +33,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <kdialog.h>
 #include <KLocalizedString>
 #include <kdebug.h>
+#include <QFontDatabase>
 
 KInfoListWidget::KInfoListWidget(const QString &_title, QWidget *parent, bool _getlistbox(QTreeWidget *tree) ) :
 	KCModule(parent), title(_title) {
@@ -60,7 +61,7 @@ KInfoListWidget::KInfoListWidget(const QString &_title, QWidget *parent, bool _g
 	tree = new QTreeWidget(widgetStack);
 	widgetStack->addWidget(tree);
 	tree->setMinimumSize(200, 120);
-	tree->setFont(KGlobalSettings::generalFont()); /* default font */
+	tree->setFont(QFontDatabase::systemFont(QFontDatabase::GeneralFont)); /* default font */
 	tree->setSortingEnabled(true);
 	tree->setRootIsDecorated(false);
 	tree->header()->setSortIndicatorShown(true);

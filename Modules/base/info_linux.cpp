@@ -42,6 +42,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <kiconloader.h>
 #include <kglobalsettings.h>
 #include <kdebug.h>
+#include <QFontDatabase>
 
 #define INFO_IRQ "/proc/interrupts"
 #define INFO_DMA "/proc/dma"
@@ -94,7 +95,7 @@ bool GetInfo_ReadfromFile(QTreeWidget* tree, const char *FileName, const QChar& 
 }
 
 bool GetInfo_IRQ(QTreeWidget* tree) {
-	tree->setFont(KGlobalSettings::fixedFont());
+	tree->setFont(QFontDatabase::systemFont(QFontDatabase::FixedFont));
 	tree->setHeaderHidden(true);
 	
 	return GetInfo_ReadfromFile(tree, INFO_IRQ, 0);

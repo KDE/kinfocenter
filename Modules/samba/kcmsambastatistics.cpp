@@ -21,7 +21,6 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 #include "kcmsambastatistics.h"
-#include "kcmsambastatistics.moc"
 
 #include <QApplication>
 #include <QLayout>
@@ -127,8 +126,8 @@ void StatisticsView::setListInfo(QTreeWidget *list, int nrOfFiles, int nrOfConne
 	dataList=list;
 	filesCount=nrOfFiles;
 	connectionsCount=nrOfConnections;
-	connectionsL->setText(i18n("Connections: %1", KGlobal::locale()->formatNumber(connectionsCount, 0)));
-	filesL->setText(i18n("File accesses: %1", KGlobal::locale()->formatNumber(filesCount, 0)));
+	connectionsL->setText(i18n("Connections: %1", KLocale::global()->formatNumber(connectionsCount, 0)));
+	filesL->setText(i18n("File accesses: %1", KLocale::global()->formatNumber(filesCount, 0)));
 	clearStatistics();
 }
 

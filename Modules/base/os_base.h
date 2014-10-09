@@ -43,7 +43,7 @@ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 
 
 static const QString Value(int val, int numbers=1) {
-	return KGlobal::locale()->formatNumber(val, 0).rightJustified(numbers);
+	return KLocale::global()->formatNumber(val, 0).rightJustified(numbers);
 }
 
 static const QString HexStr(unsigned long val, int digits) {
