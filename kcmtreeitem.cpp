@@ -127,9 +127,9 @@ int KcmTreeItem::weight()
     return m_moduleInfo->weight();
 }
 
-KIcon KcmTreeItem::icon() const
+QIcon KcmTreeItem::icon() const
 {
-    return KIcon(m_moduleInfo->icon());
+    return QIcon::fromTheme(m_moduleInfo->icon());
 }
 
 QString KcmTreeItem::whatsThis() const

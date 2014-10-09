@@ -35,7 +35,7 @@
 #include <QDesktopWidget>
 #include <QAbstractItemView>
 
-#include <KIcon>
+#include <QIcon>
 #include <KColorScheme>
 
 class ToolTipManager::Private
@@ -214,7 +214,7 @@ QLayout * ToolTipManager::generateToolTipLine( const QModelIndex & item, QWidget
     textLabel->setText( text );
     
     // Get icon
-    KIcon icon( menuItem->icon() );
+    QIcon icon( menuItem->icon() );
     QLabel * iconLabel = new QLabel( toolTip );
     iconLabel->setPixmap( icon.pixmap(iconSize) );
     iconLabel->setMaximumSize( iconSize );

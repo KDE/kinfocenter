@@ -27,7 +27,7 @@
 
 //KDE
 #include <KCModuleInfo>
-#include <KIcon>
+#include <QIcon>
 
 class KcmCategoryItem : public KcmTreeItem
 {
@@ -77,7 +77,7 @@ class KcmCategoryItem : public KcmTreeItem
         /**
         * Get icon tied to KCM
         */
-        KIcon icon() const;
+        QIcon icon() const;
 
         /**
         * Get whatsThis information from KCM

@@ -23,7 +23,7 @@
 #include "kcmcontainer.h"
 
 //KDE
-#include <KIcon>
+#include <QIcon>
 #include <KDebug>
 #include <KLocalizedString>
 

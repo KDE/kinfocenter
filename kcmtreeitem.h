@@ -25,7 +25,7 @@
 
 //KDE
 #include <KCModuleInfo>
-#include <KIcon>
+#include <QIcon>
 
 //QT
 #include <QList>
@@ -135,7 +135,7 @@ class KcmTreeItem
         /**
         * Get icon tied to KCM
         */
-        virtual KIcon icon() const;
+        virtual QIcon icon() const;
 
         /**
         * Get whatsThis information from KCM
