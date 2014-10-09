@@ -35,7 +35,6 @@
 
 #include <kaboutdata.h>
 #include <kdialog.h>
-#include <kglobal.h>
 #include <KLocalizedString>
 
 #include <QPushButton>

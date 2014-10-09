@@ -46,8 +46,6 @@ int main(int argc, char *argv[])
 {
     KLocalizedString::setApplicationDomain("kinfocenter");
 
-    KicApp Kic(argc, argv);
-
     KAboutData aboutData( QStringLiteral("kinfocenter"), i18n("KDE Info Center"),
         PROJECT_VERSION, i18n("The KDE Info Center"), KAboutLicense::GPL,
         i18n("(c) 2009-2010, The KDE SC KInfocenter Development Team"));
@@ -60,6 +58,8 @@ int main(int argc, char *argv[])
     aboutData.addAuthor(i18n("Waldo Bastian"), QString(), QStringLiteral("bastian@kde.org"));
     aboutData.addAuthor(i18n("Nicolas Ternisien"), QString(), QStringLiteral("nicolas.ternisien@gmail.com"));
     KAboutData::setApplicationData(aboutData);
+    KicApp Kic(argc, argv);
+
     QCommandLineParser parser;
     parser.addHelpOption();
     parser.addVersionOption();
