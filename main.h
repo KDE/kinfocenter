@@ -24,7 +24,7 @@
 #define INFOCENTERMAIN
 
 //KDE
-#include <kapplication.h>
+#include <qapplication.h>
 
 //Local
 #include "infocenter.h"
