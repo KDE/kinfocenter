@@ -23,7 +23,6 @@
 #include "kcmcontainer.h"
 
 //KDE
-#include <KDebug>
 #include <KLocalizedString>
 
 //QT

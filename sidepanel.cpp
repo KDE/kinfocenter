@@ -25,7 +25,6 @@
 
 //KDE
 #include <KLocalizedString>
-#include <KDebug>
 
 //QT
 #include <QWidget>

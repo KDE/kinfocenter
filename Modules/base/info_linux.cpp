@@ -39,8 +39,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include <KLocalizedString>
 #include <kiconloader.h>
-#include <kglobalsettings.h>
-#include <kdebug.h>
 #include <QFontDatabase>
 
 #define INFO_IRQ "/proc/interrupts"
@@ -162,20 +160,6 @@ bool GetInfo_IO_Ports(QTreeWidget* tree) {
 
 bool GetInfo_SCSI(QTreeWidget* tree) {
 	return GetInfo_ReadfromFile(tree, INFO_SCSI, 0);
-}
-
-static void cleanPassword(QString & str) {
-	int index = 0;
-	QString passwd("password=");
-
-	while (index >= 0) {
-		index = str.indexOf(passwd, index, Qt::CaseInsensitive);
-		if (index >= 0) {
-			index += passwd.length();
-			while (index < (int) str.length() && str[index] != ' ' && str[index] != ',')
-				str[index++] = '*';
-		}
-	}
 }
 
 bool GetInfo_XServer_and_Video(QTreeWidget* tree) {

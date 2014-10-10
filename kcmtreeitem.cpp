@@ -23,8 +23,6 @@
 //Local
 #include "kcmtreeitem.h"
 
-//KDE
-#include <KDebug>
 KcmTreeItem::KcmTreeItem(const KService::Ptr module, KcmTreeItem *parent) : m_parent(parent), m_module(module),
   m_moduleInfo(new KCModuleInfo(m_module))
 {

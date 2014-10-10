@@ -27,7 +27,6 @@
 #include <KLocalizedString>
 #include <QIcon>
 #include <KConfig>
-#include <KDebug>
 #include <KToolInvocation>
 #include <KActionMenu>
 #include <kxmlguifactory.h>
