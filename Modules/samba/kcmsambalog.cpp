@@ -33,7 +33,6 @@
 #include <KLocalizedString>
 
 #include "kcmsambalog.h"
-#include "kcmsambalog.moc"
 
 #define LOG_SCREEN_XY_OFFSET 10
 

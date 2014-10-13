@@ -29,7 +29,6 @@
 #include <QBoxLayout>
 
 #include "ksmbstatus.h"
-#include "ksmbstatus.moc"
 
 #define Before(ttf,in) in.left(in.indexOf(ttf))
 #define After(ttf,in)  (in.contains(ttf)?QString(in.mid(in.indexOf(ttf)+QString(ttf).length())):QString(""))

@@ -31,7 +31,7 @@
 #include <kdialog.h>
 #include <kglobal.h>
 #include <klocale.h>
-#include <kstandarddirs.h>
+
 #include <kpluginfactory.h>
 #include <kpluginloader.h>
 
@@ -43,6 +43,7 @@
 #include <string.h>
 
 #include <libraw1394/csr.h>
+#include <QStandardPaths>
 
 #define CONFIGROM_BASE 0x00
 #define CONFIGROM_CAP  0x08
@@ -276,7 +277,7 @@ void View1394::generateBusReset() {
 }
 
 OuiDb::OuiDb() {
-	QString filename=KStandardDirs::locate("data", "kcmview1394/oui.db");
+	QString filename=QStandardPaths::locate(QStandardPaths::GenericDataLocation, "kcmview1394/oui.db");
 	if (filename.isEmpty())
 		return;
 	QFile f(filename);
