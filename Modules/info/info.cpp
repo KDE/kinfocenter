@@ -29,7 +29,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <kiconloader.h>
 #include <kdialog.h>
 #include <KLocalizedString>
-#include <kdebug.h>
+#include <QDebug>
 #include <QFontDatabase>
 
 KInfoListWidget::KInfoListWidget(const QString &_title, QWidget *parent, bool _getlistbox(QTreeWidget *tree) ) :
@@ -45,7 +45,7 @@ KInfoListWidget::KInfoListWidget(const QString &_title, QWidget *parent, bool _g
 	setAboutData(about);
 
 	
-	kDebug() << "Constructing a KInfoListWidget..." << endl;
+	//qDebug() << "Constructing a KInfoListWidget..." << endl;
 
 	//setButtons(KCModule::Help);
 	getlistbox = _getlistbox;
@@ -73,7 +73,7 @@ KInfoListWidget::KInfoListWidget(const QString &_title, QWidget *parent, bool _g
 }
 
 void KInfoListWidget::load() {
-	kDebug() << "Loading KInfoListWidget..." << endl;
+	//qDebug() << "Loading KInfoListWidget..." << endl;
 
 	//TODO Remove tree content before clear it
 	tree->clear();

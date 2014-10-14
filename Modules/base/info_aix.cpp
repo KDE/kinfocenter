@@ -31,7 +31,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #undef class
 #include <nl_types.h>
 #include <string.h>
-#include <kdebug.h>
+#include <QDebug>
 #include <stdlib.h>
 
 #include <sys/statfs.h>

@@ -27,6 +27,7 @@
 #include <kdialog.h>
 
 #include <QBoxLayout>
+#include <QDebug>
 
 #include "ksmbstatus.h"
 
@@ -124,7 +125,7 @@ void NetMon::readFromProcess() {
 	qint64 buflen = 8046; // 8k enough?
 	char buffer[buflen];
 	buflen = process->readLine(buffer, buflen);
-	//kDebug()<<"received stuff";
+	////qDebug()<<"received stuff";
 	char s[250], *start, *end;
 	size_t len;
 	start = buffer;
@@ -135,7 +136,7 @@ void NetMon::readFromProcess() {
 			len=sizeof(s)-1;
 		strncpy(s, start, len);
 		s[len] = '\0';
-		//kDebug() << "recived: "<<s;
+		////qDebug() << "recived: "<<s;
 		if (readingpart==nfs)
 			processNFSLine(s, len);
 		else
@@ -196,7 +197,7 @@ void NetMon::update() {
 	//without this timer showmount hangs up to 5 minutes
 	//if the portmapper daemon isn't running
 	QTimer::singleShot(5000,this,SLOT(killShowmount()));
-	//kDebug()<<"starting kill timer with 5 seconds";
+	////qDebug()<<"starting kill timer with 5 seconds";
 	connect(showmountProc, static_cast<void (QProcess::*)(int, QProcess::ExitStatus)>(&QProcess::finished), this, &NetMon::killShowmount);
 	connect(showmountProc, static_cast<void (QProcess::*)(QProcess::ProcessError)>(&QProcess::error), this, &NetMon::killShowmount);
 	showmountProc->start("showmount", QStringList() << "-a" << "localhost");
@@ -206,7 +207,7 @@ void NetMon::update() {
 }
 
 void NetMon::killShowmount() {
-	//kDebug()<<"killShowmount()";
+	////qDebug()<<"killShowmount()";
 	showmountProc->deleteLater();
 	showmountProc=0;
 }

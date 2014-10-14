@@ -35,7 +35,7 @@
 #include <QVBoxLayout>
 #include <KLocale>
 
-#include <KDebug>
+#include <QDebug>
 #include <KDialog>
 #include <KLocalizedString>
 
@@ -242,7 +242,7 @@ void StatisticsView::clearStatistics() {
 }
 
 void SambaLog::printItems() {
-	kDebug() << "****** printing items: ******";
+	//qDebug() << "****** printing items: ******";
 	foreach (const LogItem *tmpItem, items)
 	{
 		if (!tmpItem)
@@ -250,17 +250,17 @@ void SambaLog::printItems() {
 			continue;
 		}
 
-		kDebug() << "SERVICE: " << tmpItem->name;
+		//qDebug() << "SERVICE: " << tmpItem->name;
 		foreach (const SmallLogItem *tmpLog, tmpItem->accessed) {
 			if (!tmpLog)
 			{
 				continue;
 			}
-			kDebug() << "      accessed by: " << tmpLog->name << "  " << tmpLog->count;
+			//qDebug() << "      accessed by: " << tmpLog->name << "  " << tmpLog->count;
 		}
 	}
 
-	kDebug() << "------ end of printing ------";
+	//qDebug() << "------ end of printing ------";
 }
 
 LogItem* SambaLog::itemInList(const QString &name) {

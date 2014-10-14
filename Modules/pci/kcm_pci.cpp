@@ -24,7 +24,7 @@
 
 #include <kaboutdata.h>
 #include <kdialog.h>
-#include <kdebug.h>
+#include <QDebug>
 
 
 #include <QHBoxLayout>
@@ -73,7 +73,7 @@ KCMPci::~KCMPci() {
 }
 
 void KCMPci::load() {
-	kDebug() << "Loading PCI information..." << endl;
+	//qDebug() << "Loading PCI information..." << endl;
 	GetInfo_PCI(tree);
 
 	//Resize the column width to the maximum needed

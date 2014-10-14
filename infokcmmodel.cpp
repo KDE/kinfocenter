@@ -26,7 +26,7 @@
 
 //KDE
 #include <KServiceTypeTrader>
-#include <KDebug>
+#include <QDebug>
 #include <KLocalizedString>
 
 InfoKcmModel::InfoKcmModel(QObject *parent) : QAbstractItemModel(parent), m_root(new KcmCategoryItem(i18n("Information Modules")))
@@ -63,7 +63,7 @@ void InfoKcmModel::createTreeItems()
                     if(lost != NULL) {
                         lost->addChild(new KcmTreeItem(kcmModule,lost));
                     } else {
-                        kWarning() << "Lost and found category not found, unable to display lost Kcontrol modules";
+                        qWarning() << "Lost and found category not found, unable to display lost Kcontrol modules";
                     }
                 }
             } else {

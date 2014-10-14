@@ -30,7 +30,7 @@
 #include <QTextStream>
 #include <QTreeWidgetItemIterator>
 
-#include <kdebug.h>
+#include <QDebug>
 #include <kio/global.h> /* for KIO::convertSize() */
 
 typedef struct {

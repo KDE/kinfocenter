@@ -21,6 +21,7 @@
 
 #include <KLocalizedString>
 #include <KFormat>
+#include <QDebug>
 
 Chart::Chart(QWidget* parent) :
 	QWidget(parent) {
@@ -75,7 +76,7 @@ bool Chart::drawChart(t_memsize total, const QList<t_memsize>& used, const QList
 		else
 			localheight = startline;
 
-		//kDebug() << "Count : " <<  count << " Percent : " << percent << "%" << " Localheight:" << localheight << endl;
+		////qDebug() << "Count : " <<  count << " Percent : " << percent << "%" << " Localheight:" << localheight << endl;
 		
 		if (localheight>0) {
 			QLinearGradient gradient(QPointF(1, startline), QPointF(width()-2, -localheight));

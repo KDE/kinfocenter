@@ -26,7 +26,7 @@
 #include <QFile>
 #include <QTextStream>
 
-#include <kdebug.h>
+#include <QDebug>
 
 typedef struct {
 	int string;
