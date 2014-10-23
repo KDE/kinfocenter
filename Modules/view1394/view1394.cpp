@@ -26,14 +26,11 @@
 #include <QTreeWidgetItem>
 #include <QTreeWidget>
 #include <QVBoxLayout>
-
-#include <kcomponentdata.h>
-#include <kdialog.h>
-#include <kglobal.h>
-#include <klocale.h>
+#include <KLocalizedString>
 
 #include <kpluginfactory.h>
 #include <kpluginloader.h>
+#include <KDialog>
 
 #include <sys/time.h>
 #include <sys/types.h>

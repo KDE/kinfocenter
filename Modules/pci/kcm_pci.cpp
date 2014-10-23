@@ -23,16 +23,13 @@
 #include <KPluginLoader>
 
 #include <kaboutdata.h>
-#include <kdialog.h>
 #include <QDebug>
 
 
 #include <QHBoxLayout>
 #include <QTreeWidget>
 
-#include <klocale.h>
 #include <KLocalizedString>
-#include <kglobal.h>
 #include <kseparator.h>
 
 K_PLUGIN_FACTORY(KCMPciFactory,
