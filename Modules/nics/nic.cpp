@@ -34,7 +34,6 @@
 #endif
 
 #include <kaboutdata.h>
-#include <kdialog.h>
 #include <KLocalizedString>
 
 #include <QPushButton>
@@ -89,7 +88,7 @@ KCMNic::KCMNic(QWidget *parent, const QVariantList &) :
 	KCModule(parent) {
 	QVBoxLayout *box=new QVBoxLayout(this);
 	box->setMargin(0);
-	box->setSpacing(KDialog::spacingHint());
+	//PORT QT5 box->setSpacing(KDialog::spacingHint());
 	m_list=new QTreeWidget(this);
 	m_list->setRootIsDecorated(false);
 	box->addWidget(m_list);
