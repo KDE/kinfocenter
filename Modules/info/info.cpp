@@ -25,9 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <QHBoxLayout>
 #include <QHeaderView>
 
-#include <kglobalsettings.h>
 #include <kiconloader.h>
-#include <kdialog.h>
 #include <KLocalizedString>
 #include <QDebug>
 #include <QFontDatabase>
@@ -50,7 +48,7 @@ KInfoListWidget::KInfoListWidget(const QString &_title, QWidget *parent, bool _g
 	//setButtons(KCModule::Help);
 	getlistbox = _getlistbox;
 	QHBoxLayout *layout = new QHBoxLayout(this);
-	layout->setSpacing(KDialog::spacingHint());
+	//PORT QT5 layout->setSpacing(KDialog::spacingHint());
 	layout->setMargin(0);
 	widgetStack = new QStackedWidget(this);
 	layout->addWidget(widgetStack);

@@ -21,7 +21,6 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#include <kcomponentdata.h>
 #include <KPluginFactory>
 #include <KPluginLoader>
 #include <KLocalizedString>
