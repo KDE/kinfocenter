@@ -7,7 +7,7 @@ set(kcm_SRCS
     OSRelease.cpp
 )
 
-qt5_wrap_ui(kcm_SRCS Module.ui)
+ki18n_wrap_ui(kcm_SRCS Module.ui)
 
 add_library(kcm_about_distro MODULE ${kcm_SRCS})
 
