@@ -26,7 +26,6 @@ find_package(KF5 REQUIRED COMPONENTS
     KCMUtils
     KDELibs4Support
     KIO
-    Plasma
     Service
     Solid
     WidgetsAddons
@@ -115,7 +114,6 @@ target_link_libraries( kinfocenter
     KF5::IconThemes
     KF5::KCMUtils
     KF5::KDELibs4Support
-    KF5::Plasma
     KF5::Service
     KF5::Solid
     KF5::WidgetsAddons
