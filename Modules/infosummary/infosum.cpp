@@ -20,10 +20,10 @@
  *
  */
 
+#include <config-workspace.h>
 #include "infosum.h"
 #include <KFormat>
 #include <KLocalizedString>
-#include <plasma/version.h>
 #include <KAboutData>
 
 K_PLUGIN_FACTORY(devInfoModuleFactory, registerPlugin<InfoSumPlugin>();)
@@ -68,7 +68,7 @@ void InfoSumPlugin::createOsBox()
   OsDepInfo *osInfo = new OsDepInfo();
   
   osWidget->setLabelOne(osInfo->osVersion());
-  osWidget->setLabelTwo(QString(PLASMA_VERSION_STRING));
+  osWidget->setLabelTwo(QString(PROJECT_VERSION));
   osWidget->setLabelThree(osInfo->hostName());
   osWidget->setWhatsThis(i18nc("OS whats this","This shows information about your Operating System"));
   

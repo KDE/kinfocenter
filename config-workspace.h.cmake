@@ -156,4 +156,4 @@
 /* type to use in place of socklen_t if not defined */
 #define kde_socklen_t socklen_t
 
-#define WORKSPACE_VERSION_STRING "${KDE4WORKSPACE_VERSION}"
+#define PROJECT_VERSION "${PROJECT_VERSION}"
