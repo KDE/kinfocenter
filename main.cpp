@@ -36,6 +36,7 @@ KicApp::KicApp(int &argc, char **argv)
     : QApplication(argc, argv)
 {
     QApplication::setApplicationDisplayName(i18n("KDE Info Center"));
+    QApplication::setOrganizationDomain("kde.org");
     display = new KInfoCenter();
     display->show();
 
