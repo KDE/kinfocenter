@@ -4,4 +4,4 @@ Essentially you place an rc file in the file system that defines the distro logo
 and website url. The file ought to be in some `kde4-config --path config` dir.
 
 e.g.
-pkexec cp `pwd`/example/kcm-about-distrorc.ex /usr/share/kde4/config/kcm-about-distrorc
+pkexec cp `pwd`/example/kcm-about-distrorc.ex /etc/xdg/kcm-about-distrorc

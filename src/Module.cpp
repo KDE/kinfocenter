@@ -67,8 +67,8 @@ Module::Module(QWidget *parent, const QVariantList &args) :
                                            i18nc("@info:credit", "Copyright 2012-2014 Harald Sitter"));
 
     aboutData->addAuthor(i18nc("@info:credit", "Harald Sitter"),
-                        i18nc("@info:credit", "Author"),
-                        QStringLiteral("apachelogger@kubuntu.org"));
+                         i18nc("@info:credit", "Author"),
+                         QStringLiteral("apachelogger@kubuntu.org"));
 
     setAboutData(aboutData);
 
