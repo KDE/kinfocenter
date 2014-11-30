@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 {
     KLocalizedString::setApplicationDomain("kinfocenter");
 
-    KAboutData aboutData( QStringLiteral("kinfocenter"), i18n("KDE Info Center"),
+    KAboutData aboutData( QStringLiteral("hwinfo"), i18n("KDE Info Center"),
         PROJECT_VERSION, i18n("The KDE Info Center"), KAboutLicense::GPL,
         i18n("(c) 2009-2010, The KDE SC KInfocenter Development Team"));
 
