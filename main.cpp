@@ -47,10 +47,11 @@ int main(int argc, char *argv[])
 {
     KLocalizedString::setApplicationDomain("kinfocenter");
 
-    KAboutData aboutData( QStringLiteral("hwinfo"), i18n("KDE Info Center"),
+    KAboutData aboutData( QStringLiteral("kinfocenter"), i18n("KDE Info Center"),
         PROJECT_VERSION, i18n("The KDE Info Center"), KAboutLicense::GPL,
         i18n("(c) 2009-2010, The KDE SC KInfocenter Development Team"));
 
+    aboutData.setProgramIconName("hwinfo");
     aboutData.addAuthor(i18n("David Hubner"),i18n("Current Maintainer"), QStringLiteral("hubnerd@ntlworld.com"));
     aboutData.addAuthor(i18n("Helge Deller"), i18n("Previous Maintainer"), QStringLiteral("deller@kde.org"));
     aboutData.addAuthor(i18n("Matthias Hoelzer-Kluepfel"),QString(), QStringLiteral("hoelzer@kde.org"));
