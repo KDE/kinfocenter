@@ -10,10 +10,10 @@ include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings)
 
-set(MAJOR_VERSION "0")
+set(MAJOR_VERSION "2")
 set(MINOR_VERSION "0")
 set(PATCH_VERSION "0")
-set(SUFFIX_VERSION "GIT")
+set(SUFFIX_VERSION "")
 
 set(VERSION_STRING "${MAJOR_VERSION}.${MINOR_VERSION}.${PATCH_VERSION}")
 if(NOT SUFFIX_VERSION)
