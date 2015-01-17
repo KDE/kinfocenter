@@ -25,6 +25,10 @@ target_link_libraries(kcm_info
     KF5::KDELibs4Support
     ${X11_X11_LIB})
 
+if(${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD")
+    target_link_libraries(kcm_info devinfo)
+endif()
+
 if(KF5Wayland_FOUND)
     target_link_libraries(kcm_info KF5::WaylandClient)
 endif()

@@ -4,8 +4,8 @@ add_definitions(-DTRANSLATION_DOMAIN=\"kcmdevinfo\")
 
 set( devinfoSources soldevice.cpp devinfo.cpp devicelisting.cpp infopanel.cpp soldevicetypes.cpp qvlistlayout.cpp solidhelper.cpp)
 
-kde4_add_plugin( devinfo ${devinfoSources} )
-target_link_libraries( devinfo
+kde4_add_plugin(kcm_devinfo ${devinfoSources})
+target_link_libraries(kcm_devinfo
     KF5::KCMUtils
     KF5::I18n
     KF5::KIOCore
@@ -13,5 +13,5 @@ target_link_libraries( devinfo
     KF5::Solid
 )
 
-install( TARGETS devinfo DESTINATION ${PLUGIN_INSTALL_DIR} )
+install(TARGETS kcm_devinfo DESTINATION ${PLUGIN_INSTALL_DIR})
 install( FILES devinfo.desktop DESTINATION ${SERVICES_INSTALL_DIR} )
