@@ -414,20 +414,22 @@ QVListLayout *SolBatteryDevice::infoPanelLayout()
   }
   
   QString state;
-    switch(batdev->type())
-    {
-      case Solid::Battery::Charging:
-	state = i18n("Charging"); break;
-      case Solid::Battery::Discharging:
-	state = i18n("Discharging"); break;
-      default:
-	state = i18n("No Charge"); 
-    }
+  switch(batdev->type())
+  {
+  case Solid::Battery::Charging:
+      state = i18n("Charging"); break;
+  case Solid::Battery::Discharging:
+      state = i18n("Discharging"); break;
+  case Solid::Battery::FullyCharged:
+      state = i18n("Fully Charged"); break;
+  default:
+      state = i18n("No Charge");
+  }
   
   labels << i18n("Battery Type: ")
-  << type
-  << i18n("Charge Status: ")
-  << state;
+         << type
+         << i18n("Charge Status: ")
+         << state;
   
   deviceInfoLayout->applyQListToLayout(labels);
   return deviceInfoLayout;
