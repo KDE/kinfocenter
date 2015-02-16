@@ -4,7 +4,7 @@ add_definitions(-DTRANSLATION_DOMAIN=\"kcmdevinfo\")
 
 set( devinfoSources soldevice.cpp devinfo.cpp devicelisting.cpp infopanel.cpp soldevicetypes.cpp qvlistlayout.cpp solidhelper.cpp)
 
-kde4_add_plugin(kcm_devinfo ${devinfoSources})
+add_library(kcm_devinfo MODULE ${devinfoSources})
 target_link_libraries(kcm_devinfo
     KF5::KCMUtils
     KF5::I18n
