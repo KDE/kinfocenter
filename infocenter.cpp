@@ -34,10 +34,10 @@
 #include <KActionCollection>
 #include <KAboutApplicationDialog>
 #include <KMessageBox>
-#include <KUrl>
 #include <KToolBar>
 
 //QT
+#include <QUrl>
 #include <QProcess>
 #include <QTextStream>
 #include <QFile>
@@ -237,7 +237,7 @@ void KInfoCenter::helpClickedSlot()
     // Nicked from Ben, could not use KToolInvocation due to docpath.
     QString docPath = m_contain->helpPath();
 
-    KUrl url( KUrl("help:/"), docPath );
+    QUrl url("help:/" + docPath );
     QProcess::startDetached("khelpcenter", QStringList() << url.url());
 }
 
