@@ -14,15 +14,18 @@
 
 #include <QFile>
 #include <QRegExp>
-//Added by qt3to4:
 #include <QTextStream>
-
-#include <kstandarddirs.h>
+#include <QStandardPaths>
+#include <QDebug>
 
 USBDB::USBDB() {
-	QString db = "/usr/share/hwdata/usb.ids"; /* on Fedora */
-	if (!QFile::exists(db))
-		db = KStandardDirs::locate("data", "kcmusb/usb.ids");
+	QString db = "/usr/share/hwdata/usb.ids"; /* on Fedora and Arch*/
+	if (!QFile::exists(db)) {
+                //cannot use locate(AppDataLocation) as the app is kinfocenter
+		db = QStandardPaths::locate(QStandardPaths::GenericDataLocation, "kcmusb", QStandardPaths::LocateDirectory);
+                if (!db.isEmpty())
+                    db+="/usb.ids";
+        }
 	if (db.isEmpty())
 		return;
 
