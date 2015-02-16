@@ -3,7 +3,7 @@ add_definitions(-DTRANSLATION_DOMAIN=\"kcm_infosummary\")
 
 set( infosummarySources infosum.cpp defaultboxwidget.cpp progressboxwidget.cpp osdepinfo.cpp)
 
-kde4_add_plugin( kcm_infosummary ${infosummarySources} )
+add_library( kcm_infosummary MODULE ${infosummarySources} )
 target_link_libraries( kcm_infosummary
     KF5::KCMUtils
     KF5::I18n

@@ -9,7 +9,7 @@ set(kcm_view1394_PART_SRCS view1394.cpp )
 
 ki18n_wrap_ui(kcm_view1394_PART_SRCS view1394widget.ui )
 
-kde4_add_plugin(kcm_view1394 ${kcm_view1394_PART_SRCS})
+add_library(kcm_view1394 MODULE ${kcm_view1394_PART_SRCS})
 
 target_link_libraries(kcm_view1394 KF5::KCMUtils KF5::I18n KF5::KDELibs4Support ${RAW1394_LIBRARIES} )
 
