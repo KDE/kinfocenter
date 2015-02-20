@@ -33,6 +33,7 @@
 
 SidePanel::SidePanel(QWidget *parent) : QTreeView(parent)
 {
+    setHeaderHidden(true);
     setSortingEnabled(true);
     setAnimated(true);
     sortByColumn(0, Qt::AscendingOrder);

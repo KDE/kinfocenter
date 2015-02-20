@@ -30,6 +30,9 @@ find_package(KF5 REQUIRED COMPONENTS
     Solid
     WidgetsAddons
     XmlGui
+    Declarative
+    Package
+    Solid
 )
 
 if(${Qt5Gui_OPENGL_IMPLEMENTATION} STREQUAL "GL")
