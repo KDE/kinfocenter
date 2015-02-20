@@ -59,3 +59,8 @@ set_package_properties(RAW1394 PROPERTIES DESCRIPTION "library for direct access
 if(RAW1394_FOUND)
    add_subdirectory( view1394 )
 endif()
+
+if (CMAKE_SYSTEM_NAME MATCHES Linux)
+    add_subdirectory(energy)
+endif()
+

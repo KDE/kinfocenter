@@ -1,0 +1,19 @@
+[Desktop Entry]
+Name=Energy Information
+Comment=Statistics about energy consumption
+Icon=preferences-system-power-management
+Encoding=UTF-8
+Keywords=
+Type=Service
+X-KDE-ParentApp=
+X-KDE-PluginInfo-Author=Kai Uwe Broulik
+X-KDE-PluginInfo-Email=kde@privat.broulik.de
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-Name=kcm_energyinfo
+X-KDE-PluginInfo-Version=
+X-KDE-PluginInfo-Website=
+X-KDE-ServiceTypes=Plasma/Generic
+X-Plasma-API=declarativeappletscript
+
+X-Plasma-MainScript=ui/main.qml
+X-Plasma-RemoteLocation=

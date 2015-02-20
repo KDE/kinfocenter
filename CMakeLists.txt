@@ -12,7 +12,7 @@ include(KDECMakeSettings)
 include(KDECompilerSettings)
 include(FeatureSummary)
 
-find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Core Gui Widgets)
+find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Core Gui Widgets QuickWidgets)
 
 find_package(KF5 REQUIRED COMPONENTS
     Completion
@@ -30,6 +30,10 @@ find_package(KF5 REQUIRED COMPONENTS
     Solid
     WidgetsAddons
     XmlGui
+    Package # (make optional)
+    Plasma # MAKE OPTIONAL
+    PlasmaQuick # MAKE OPTIONAL
+    Solid # MAKE OPTIONAL
 )
 
 if(${Qt5Gui_OPENGL_IMPLEMENTATION} STREQUAL "GL")
