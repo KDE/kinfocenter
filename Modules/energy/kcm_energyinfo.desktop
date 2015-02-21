@@ -11,7 +11,7 @@ X-KDE-ParentApp=kinfocenter
 #X-DocPath=kinfocenter/index.html#xserver
 
 Name=Energy Information
-Comment=Statistics about energy consumption
+Comment=Statistics About Energy Consumption
 
 X-KDE-Keywords=Battery,Energy,Statistics,History,Power
 X-KDE-Weight=2
