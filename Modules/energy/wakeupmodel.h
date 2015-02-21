@@ -27,6 +27,7 @@
 
 class WakeUpData {
 public:
+    uint pid = 0;
     QString name;
     QString prettyName;
     QString iconName;
@@ -47,10 +48,11 @@ public:
     virtual ~WakeUpModel() = default;
 
     enum Roles {
-        NameRole = Qt::UserRole,
+        PidRole = Qt::UserRole,
+        NameRole,
         PrettyNameRole = Qt::DisplayRole,
         IconNameRole = Qt::DecorationRole,
-        WakeUpsRole = Qt::UserRole + 1,
+        WakeUpsRole = Qt::UserRole + 2,
         PercentRole,
         UserSpaceRole
     };

@@ -53,7 +53,7 @@ const QDBusArgument &operator>>(const QDBusArgument &argument, WakeUpReply &data
     return argument;
 }
 
-static const int s_maximumEntries = 6;
+static const int s_maximumEntries = 10;
 
 WakeUpModel::WakeUpModel(QObject *parent) : QAbstractListModel(parent)
 {
@@ -96,6 +96,8 @@ void WakeUpModel::reload()
             beginResetModel();
         }
 
+        m_total = 0.0;
+        m_combinedData.clear();
         m_data.clear();
 
         auto values = reply.value();
@@ -104,51 +106,42 @@ void WakeUpModel::reload()
             if (!(*it).fromUserSpace) {
                 continue;
             }
-            const QString appName = (*it).cmdline.split(QLatin1Char(' ')).first(); // ugly
+            const QString appName = (*it).cmdline.split(QLatin1Char(' '), QString::SkipEmptyParts).first(); // ugly
             if (!m_combinedData.contains(appName)) {
                 m_combinedData[appName].name = appName;
                 m_combinedData[appName].userSpace = (*it).fromUserSpace;
             }
             m_combinedData[appName].wakeUps += (*it).wakeUpsPerSecond;
+            if ((*it).id) {
+                m_combinedData[appName].pid = (*it).id;
+            }
             m_total += (*it).wakeUpsPerSecond;
         }
 
-        for (auto it = m_combinedData.constBegin(); it != m_combinedData.constEnd(); ++it) {
-            if (m_data.count() >= s_maximumEntries) {
-                break;
-            }
+        for (auto it = m_combinedData.begin(); it != m_combinedData.end(); ++it) {
+            const QString &name = (*it).name;
 
-            const qreal percent = (*it).wakeUps / m_total * 100;
-            if (percent > 0.5) { // ignore those millions of tiny wakeups
-                const QString &name = (*it).name;
+            auto existingService = m_applicationInfo.find(name);
+            if (existingService != m_applicationInfo.end()) {
+                (*it).prettyName = (*existingService).first;
+                (*it).iconName = (*existingService).second;
+            } else {
+                KService::Ptr service = KService::serviceByStorageId(name + ".desktop");
+                if (service) {
+                    (*it).prettyName = service->property("Name", QVariant::Invalid).toString();
+                    (*it).iconName = service->icon();
 
-                WakeUpData item;
-                item.name = name;
-                item.prettyName = name;
-
-                auto existingService = m_applicationInfo.find(name);
-                if (existingService != m_applicationInfo.end()) {
-                    item.prettyName = (*existingService).first;
-                    item.iconName = (*existingService).second;
+                    m_applicationInfo.insert(name, qMakePair((*it).prettyName, (*it).iconName));
                 } else {
-                    KService::Ptr service = KService::serviceByStorageId(name + ".desktop");
-                    if (service) {
-                        item.prettyName = service->property("Name", QVariant::Invalid).toString();
-                        item.iconName = service->icon();
-
-                        m_applicationInfo.insert(name, qMakePair(item.prettyName, item.iconName));
-                    } else {
-                        // use the app name as fallback icon
-                        item.iconName = name.split(QLatin1Char('/'), QString::SkipEmptyParts).last().toLower();
-                    }
+                    // use the app name as fallback icon
+                    (*it).iconName = name.split(QLatin1Char('/'), QString::SkipEmptyParts).last().toLower();
                 }
-
-                item.wakeUps = (*it).wakeUps;
-                item.userSpace = (*it).userSpace;
-
-                m_data.append(item);
             }
+
+            m_data.append((*it));
         }
+
+        m_combinedData.clear();
 
         std::sort(m_data.begin(), m_data.end(), [](const WakeUpData &a, const WakeUpData &b) {
             return a.wakeUps > b.wakeUps;
@@ -172,6 +165,8 @@ QVariant WakeUpModel::data(const QModelIndex &index, int role) const
     }
 
     switch(role) {
+    case PidRole:
+        return m_data.at(index.row()).pid;
     case NameRole:
         return m_data.at(index.row()).name;
     case PrettyNameRole:
@@ -198,6 +193,7 @@ int WakeUpModel::rowCount(const QModelIndex &parent) const
 QHash<int, QByteArray> WakeUpModel::roleNames() const
 {
     return {
+        {PidRole, "pid"},
         {NameRole, "name"},
         {PrettyNameRole, "prettyName"},
         {IconNameRole, "iconName"},
