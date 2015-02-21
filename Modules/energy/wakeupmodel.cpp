@@ -59,11 +59,20 @@ WakeUpModel::WakeUpModel(QObject *parent) : QAbstractListModel(parent)
 {
     qDBusRegisterMetaType<WakeUpReply>();
     qDBusRegisterMetaType<QList<WakeUpReply>>();
+
+    if (!QDBusConnection::systemBus().connect(QStringLiteral("org.freedesktop.UPower"),
+                                               QStringLiteral("/org/freedesktop/UPower/Wakeups"),
+                                               QStringLiteral("org.freedesktop.UPower.Wakeups"),
+                                               QStringLiteral("DataChanged"), this,
+                                               SLOT(reload()))) {
+        qDebug() << "Error connecting to wakeup data changes via dbus";
+    }
+
+    reload();
 }
 
 void WakeUpModel::reload()
 {
-    qDebug() << "UPDATE WAKEUPS";
     QDBusPendingReply<QList<WakeUpReply>> reply = QDBusConnection::systemBus().asyncCall(
         QDBusMessage::createMethodCall(QStringLiteral("org.freedesktop.UPower"),
                                        QStringLiteral("/org/freedesktop/UPower/Wakeups"),
@@ -91,31 +100,26 @@ void WakeUpModel::reload()
 
         auto values = reply.value();
 
-        QHash<QString, WakeUpData> combinedData;
-        qreal totalWakeUps = 0.0;
-
         for (auto it = values.constBegin(); it != values.constEnd(); ++it) {
             if (!(*it).fromUserSpace) {
                 continue;
             }
             const QString appName = (*it).cmdline.split(QLatin1Char(' ')).first(); // ugly
-            if (!combinedData.contains(appName)) {
-                combinedData[appName].name = appName;
-                combinedData[appName].userSpace = (*it).fromUserSpace;
+            if (!m_combinedData.contains(appName)) {
+                m_combinedData[appName].name = appName;
+                m_combinedData[appName].userSpace = (*it).fromUserSpace;
             }
-            combinedData[appName].wakeUps += (*it).wakeUpsPerSecond;
-            totalWakeUps += (*it).wakeUpsPerSecond;
+            m_combinedData[appName].wakeUps += (*it).wakeUpsPerSecond;
+            m_total += (*it).wakeUpsPerSecond;
         }
 
-        for (auto it = combinedData.constBegin(); it != combinedData.constEnd(); ++it) {
+        for (auto it = m_combinedData.constBegin(); it != m_combinedData.constEnd(); ++it) {
             if (m_data.count() >= s_maximumEntries) {
                 break;
             }
 
-            const qreal percent = (*it).wakeUps / (qreal)totalWakeUps * 100;
+            const qreal percent = (*it).wakeUps / m_total * 100;
             if (percent > 0.5) { // ignore those millions of tiny wakeups
-                combinedData[it.key()].percent = percent;
-
                 const QString &name = (*it).name;
 
                 WakeUpData item;
@@ -124,27 +128,22 @@ void WakeUpModel::reload()
 
                 auto existingService = m_applicationInfo.find(name);
                 if (existingService != m_applicationInfo.end()) {
-                    qDebug() << "WE KNOW WHO" << name << "IS";
                     item.prettyName = (*existingService).first;
                     item.iconName = (*existingService).second;
                 } else {
-                    qDebug() << "LOOKING UP WHO" << name << "IS";
                     KService::Ptr service = KService::serviceByStorageId(name + ".desktop");
                     if (service) {
-                        qDebug() << "I know now who" << name << "is!";
                         item.prettyName = service->property("Name", QVariant::Invalid).toString();
                         item.iconName = service->icon();
 
                         m_applicationInfo.insert(name, qMakePair(item.prettyName, item.iconName));
                     } else {
-                        qDebug() << "Too bad I dont know who" << name << "is :(";
                         // use the app name as fallback icon
                         item.iconName = name.split(QLatin1Char('/'), QString::SkipEmptyParts).last().toLower();
                     }
                 }
 
                 item.wakeUps = (*it).wakeUps;
-                item.percent = (*it).percent;
                 item.userSpace = (*it).userSpace;
 
                 m_data.append(item);
@@ -152,22 +151,23 @@ void WakeUpModel::reload()
         }
 
         std::sort(m_data.begin(), m_data.end(), [](const WakeUpData &a, const WakeUpData &b) {
-            return a.percent > b.percent;
+            return a.wakeUps > b.wakeUps;
         });
+
+        emit totalChanged();
+        emit countChanged();
 
         if (resetModel) {
             endResetModel();
         } else {
             emit dataChanged(index(0, 0), index(s_maximumEntries - 1, 0));
         }
-
-        emit countChanged();
     });
 }
 
 QVariant WakeUpModel::data(const QModelIndex &index, int role) const
 {
-    if (index.row() < 0 || index.row() >= m_data.count()) {
+    if (index.row() < 0 || index.row() >= m_data.count() || index.row() >= s_maximumEntries) {
         return QVariant();
     }
 
@@ -192,7 +192,7 @@ QVariant WakeUpModel::data(const QModelIndex &index, int role) const
 int WakeUpModel::rowCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent);
-    return m_data.count();
+    return qMin(m_data.count(), s_maximumEntries);
 }
 
 QHash<int, QByteArray> WakeUpModel::roleNames() const

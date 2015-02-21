@@ -40,6 +40,7 @@ class WakeUpModel : public QAbstractListModel
     Q_OBJECT
 
     Q_PROPERTY(int count READ rowCount NOTIFY countChanged)
+    Q_PROPERTY(qreal total READ total NOTIFY totalChanged)
 
 public:
     explicit WakeUpModel(QObject *parent);
@@ -54,6 +55,8 @@ public:
         UserSpaceRole
     };
 
+    qreal total() const { return m_total; }
+
     QVariant data(const QModelIndex &index, int role) const;
     int rowCount(const QModelIndex &parent = QModelIndex()) const;
     QHash<int, QByteArray> roleNames() const;
@@ -63,9 +66,12 @@ public slots:
 
 signals:
     void countChanged();
+    void totalChanged();
 
 private:
     QList<WakeUpData> m_data;
+    QHash<QString, WakeUpData> m_combinedData;
+    qreal m_total = 0.0;
     QHash<QString, QPair<QString, QString>> m_applicationInfo;
 
 };

@@ -37,6 +37,8 @@ Rectangle {
     property int historyType: 0
     onHistoryTypeChanged: updateHistory()
 
+    property bool showWakeUps: true
+
     readonly property var details: [
         {
             title: i18n("Information"),
@@ -90,15 +92,6 @@ Rectangle {
         kcm.getHistory(currentUdi, historyType, timespanCombo.model[timespanCombo.currentIndex].value, 50)
     }
 
-    Timer {
-        id: wakeUpsTimer
-        interval: 5000
-        triggeredOnStart: true
-        running: true
-        repeat: true
-        onTriggered: kcm.wakeUps.reload()
-    }
-
     width: units.gridUnit * 25
     height: units.gridUnit * 25
     color: syspal.window
@@ -146,7 +139,7 @@ Rectangle {
                                     return model.battery == root.currentBattery
                                 })
 
-                                wakeUpsTimer.running = (index === 0)
+                                showWakeUps = (index === 0)
                             }
 
                             Component.onCompleted: {
@@ -274,7 +267,7 @@ Rectangle {
             ColumnLayout {
                 Layout.fillWidth: true
                 spacing: units.smallSpacing
-                visible: wakeUpsTimer.running && kcm.wakeUps.count > 0
+                visible: showWakeUps && kcm.wakeUps.count > 0
 
                 RowLayout {
                     Layout.fillWidth: true
@@ -284,13 +277,6 @@ Rectangle {
                         level: 4
                         text: i18n("Application Energy Consumption")
                     }
-
-                    /*Button {
-                        iconName: "view-refresh"
-                        tooltip: i18n("Reload")
-                        Accessible.name: tooltip
-                        onClicked: kcm.wakeUps.update()
-                    }*/
                 }
 
                 GridLayout {
@@ -301,21 +287,21 @@ Rectangle {
                     columnSpacing: units.smallSpacing
 
                     Repeater {
-                        model: wakeUpsTimer.running ? kcm.wakeUps : null
+                        model: showWakeUps ? kcm.wakeUps : null
 
                         RowLayout {
-                            Layout.fillWidth: true // FIXME should be 50:50 but somehow doesn't work often
-                            //Layout.minimumWidth: root.width / 2 - units.smallSpacing
-                            //Layout.maximumWidth: Layout.minimumWidth
+                            Layout.minimumWidth: root.width / 2 - units.smallSpacing * 2
+                            Layout.maximumWidth: Layout.minimumWidth
 
-                            PlasmaCore.IconItem {
+                            QIconItem {
                                 width: units.iconSizes.medium
                                 height: width
-                                source: model.iconName
+                                icon: model.iconName
                             }
 
                             ColumnLayout {
                                 Layout.fillWidth: true
+                                spacing: 0
 
                                 RowLayout {
                                     Layout.fillWidth: true
@@ -326,18 +312,18 @@ Rectangle {
                                         text: model.prettyName
                                     }
 
-                                    Label {
+                                    /*Label {
                                         text: i18n("System Service")
                                         visible: !model.userSpace
                                         opacity: 0.6
-                                    }
+                                    }*/
                                 }
 
                                 ProgressBar {
                                     Layout.fillWidth: true
                                     minimumValue: 0
                                     maximumValue: 100
-                                    value: model.percent
+                                    value: model.wakeUps / kcm.wakeUps.total * 100
                                 }
                             }
                         }
