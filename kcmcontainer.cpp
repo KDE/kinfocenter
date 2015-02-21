@@ -59,11 +59,11 @@ void KcmContainer::setContainerLayout()
     QVBoxLayout *centerWidgetLayout = new QVBoxLayout(m_centerWidget);
     centerWidgetLayout->setContentsMargins(0, 0, 0, 0);
 
-    QFont bFont;
-    bFont.setBold(true);
+    QFont font;
+    font.setPointSize(qRound(font.pointSize() * 1.4));
 
     m_titleLabel = new QLabel(m_centerWidget);
-    m_titleLabel->setFont(bFont);
+    m_titleLabel->setFont(font);
     m_titleLabel->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
     m_titleLabel->setContentsMargins(style()->pixelMetric(QStyle::PM_DefaultFrameWidth), 0, 0, 0);
     m_titleLabel->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
@@ -102,10 +102,7 @@ void KcmContainer::setKcmTopEdge(int y)
 
 void KcmContainer::setKcmTitle(const KCModuleInfo &info)
 {
-    const QString kcmTitle = info.moduleName();
-    const QString kcmComment = info.comment();
-
-    m_titleLabel->setText(i18n("%1  ( %2 )",kcmTitle,kcmComment));
+    m_titleLabel->setText(info.comment());
 }
 
 QString KcmContainer::helpPath() const
