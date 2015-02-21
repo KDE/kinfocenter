@@ -93,7 +93,7 @@ Rectangle {
     }
 
     width: units.gridUnit * 25
-    height: units.gridUnit * 25
+    height: !!currentBattery ? units.gridUnit * 25 : units.gridUnit * 12
     color: syspal.window
 
     SystemPalette {
@@ -194,6 +194,7 @@ Rectangle {
             ColumnLayout {
                 Layout.fillWidth: true
                 spacing: units.smallSpacing
+                visible: !!currentBattery
 
                 RowLayout {
                     Layout.fillWidth: true
@@ -291,55 +292,77 @@ Rectangle {
                         Layout.fillWidth: true
                         Layout.columnSpan: 2
                         level: 4
-                        text: i18n("Application Energy Consumption")
+                        text: i18n("Current Application Energy Consumption")
                     }
                 }
 
                 GridLayout {
                     id: wakeUpsGrid
                     Layout.fillWidth: true
-                    rows: 3
+                    rows: kcm.wakeUps.count / 2
                     flow: GridLayout.TopToBottom
+                    rowSpacing: units.smallSpacing
                     columnSpacing: units.smallSpacing
 
                     Repeater {
                         model: showWakeUps ? kcm.wakeUps : null
 
-                        RowLayout {
+                        PlasmaCore.ToolTipArea { // FIXME use widget style tooltip
                             Layout.minimumWidth: root.width / 2 - units.smallSpacing * 2
-                            Layout.maximumWidth: Layout.minimumWidth
-
-                            QIconItem {
-                                width: units.iconSizes.medium
-                                height: width
-                                icon: model.iconName
+                            Layout.maximumWidth: root.width / 2 - units.smallSpacing * 2
+                            height: childrenRect.height
+                            z: 2 // since the progress bar eats mouse events
+                            mainText: model.prettyName || model.name
+                            subText: {
+                                var text = ""
+                                if (model.prettyName && model.name !== model.prettyName) {
+                                    text += i18n("Path: %1", model.name) + "\n"
+                                }
+                                if (model.pid) {
+                                    text += i18n("PID: %1", model.pid) + "\n"
+                                }
+                                // FIXME format decimals
+                                text += i18n("Wakeups per second: %1 (%2%)", Math.round(model.wakeUps * 100) / 100, Math.round(model.wakeUps / kcm.wakeUps.total * 100))
+                                return text
                             }
+                            icon: model.iconName
 
-                            ColumnLayout {
-                                Layout.fillWidth: true
-                                spacing: 0
+                            RowLayout {
+                                id: wakeUpItemRow
+                                width: parent.width
 
-                                RowLayout {
-                                    Layout.fillWidth: true
-
-                                    Label {
-                                        Layout.fillWidth: true
-                                        elide: Text.ElideRight
-                                        text: model.prettyName
-                                    }
-
-                                    /*Label {
-                                        text: i18n("System Service")
-                                        visible: !model.userSpace
-                                        opacity: 0.6
-                                    }*/
+                                QIconItem {
+                                    width: units.iconSizes.medium
+                                    height: width
+                                    icon: model.iconName
                                 }
 
-                                ProgressBar {
+                                ColumnLayout {
                                     Layout.fillWidth: true
-                                    minimumValue: 0
-                                    maximumValue: 100
-                                    value: model.wakeUps / kcm.wakeUps.total * 100
+                                    spacing: 0
+
+                                    RowLayout {
+                                        Layout.fillWidth: true
+
+                                        Label {
+                                            Layout.fillWidth: true
+                                            elide: Text.ElideRight
+                                            text: model.prettyName || model.name
+                                        }
+
+                                        /*Label {
+                                            text: i18n("System Service")
+                                            visible: !model.userSpace
+                                            opacity: 0.6
+                                        }*/
+                                    }
+
+                                    ProgressBar {
+                                        Layout.fillWidth: true
+                                        minimumValue: 0
+                                        maximumValue: 100
+                                        value: model.wakeUps / kcm.wakeUps.total * 100
+                                    }
                                 }
                             }
                         }
@@ -360,6 +383,7 @@ Rectangle {
 
                 Layout.fillWidth: true
                 spacing: 0
+                visible: !!currentBattery
 
                 Repeater {
                     model: root.details
