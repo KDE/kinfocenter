@@ -119,6 +119,7 @@ Rectangle {
                 Layout.maximumHeight: Layout.minimumHeight
 
                 frameVisible: true
+                visible: kcm.batteries.count > 1
 
                 verticalScrollBarPolicy: Qt.ScrollBarAlwaysOff
 
@@ -127,6 +128,7 @@ Rectangle {
                         model: kcm.batteries
 
                         Button {
+                            id: button
                             width: height
                             height: tabView.viewport.height
                             checked: model.battery == root.currentBattery
@@ -149,26 +151,40 @@ Rectangle {
                                 }
                             }
 
-                            WorkspaceComponents.BatteryIcon {
+                            ColumnLayout {
                                 anchors {
                                     fill: parent
                                     margins: units.smallSpacing
                                 }
-                                hasBattery: true
-                                batteryType: {
-                                    switch(model.battery.type) {
-                                    case 3: return "Battery"
-                                    case 2: return "Ups"
-                                    case 9: return "Monitor"
-                                    case 4: return "Mouse"
-                                    case 5: return "Keyboard"
-                                    case 1: return "Pda"
-                                    case 7: return "Phone"
-                                    default: return "Unknown"
+                                spacing: 0
+
+                                WorkspaceComponents.BatteryIcon {
+                                    Layout.fillWidth: true
+                                    Layout.fillHeight: true
+                                    hasBattery: true
+                                    batteryType: {
+                                        switch(model.battery.type) {
+                                        case 3: return "Battery"
+                                        case 2: return "Ups"
+                                        case 9: return "Monitor"
+                                        case 4: return "Mouse"
+                                        case 5: return "Keyboard"
+                                        case 1: return "Pda"
+                                        case 7: return "Phone"
+                                        default: return "Unknown"
+                                        }
                                     }
+                                    percent: model.battery.chargePercent
+                                    //pluggedIn: model.battery.chargeState === 1 // Makes it hard to see
                                 }
-                                percent: model.battery.chargePercent
-                                pluggedIn: model.battery.chargeState === 1
+
+                                ProgressBar { // TODO make progress bar not eat mouse events
+                                    Layout.fillWidth: true
+                                    minimumValue: 0
+                                    maximumValue: 100
+                                    value: model.battery.chargePercent
+                                    enabled: button.checked ? false : true
+                                }
                             }
                         }
                     }
@@ -391,8 +407,6 @@ Rectangle {
                                             }
                                         }
 
-
-
                                         if (!value) {
                                             return ""
                                         }
@@ -400,6 +414,7 @@ Rectangle {
                                         var precision = modelData.precision
                                         if (typeof precision === "number") { // round to decimals
                                             var tenPow = Math.pow(10, precision)
+                                            // TODO format commas
                                             value = parseFloat(Math.round(value * tenPow) / tenPow).toFixed(precision)
                                         }
 
@@ -410,8 +425,6 @@ Rectangle {
                                         if (modelData.unit) {
                                             value = i18nc("%1 is value, %2 is unit", "%1 %2", value, modelData.unit)
                                         }
-
-                                        if (modelData)
 
                                         return value
                                     }
