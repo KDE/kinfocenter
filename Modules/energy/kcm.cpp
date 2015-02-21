@@ -48,6 +48,7 @@
 #include <Plasma/PluginLoader>
 
 #include "batterymodel.h"
+#include "wakeupmodel.h"
 
 const QDBusArgument &operator<<(QDBusArgument &argument, const HistoryReply &data)
 {
@@ -65,22 +66,6 @@ const QDBusArgument &operator>>(const QDBusArgument &arg, HistoryReply &attrs)
    return arg;
 }
 
-const QDBusArgument &operator<<(QDBusArgument &argument, const WakeUpReply &data)
-{
-    argument.beginStructure();
-    argument << data.fromUserSpace << data.id << data.wakeUpsPerSecond << data.cmdline << data.details;
-    argument.endStructure();
-    return argument;
-}
-
-const QDBusArgument &operator>>(const QDBusArgument &argument, WakeUpReply &data)
-{
-    argument.beginStructure();
-    argument >> data.fromUserSpace >> data.id >> data.wakeUpsPerSecond >> data.cmdline >> data.details;
-    argument.endStructure();
-    return argument;
-}
-
 K_PLUGIN_FACTORY(KCMEnergyInfoFactory, registerPlugin<KCMEnergyInfo>();)
 
 KCMEnergyInfo::KCMEnergyInfo(QWidget *parent, const QVariantList &args) : KCModuleQml(parent, args)
@@ -92,11 +77,10 @@ KCMEnergyInfo::KCMEnergyInfo(QWidget *parent, const QVariantList &args) : KCModu
 
     qmlRegisterType<QStandardItemModel>();
     qmlRegisterType<BatteryModel>();
+    qmlRegisterType<WakeUpModel>();
 
     qDBusRegisterMetaType<HistoryReply>();
     qDBusRegisterMetaType<QList<HistoryReply>>();
-    qDBusRegisterMetaType<WakeUpReply>();
-    qDBusRegisterMetaType<QList<WakeUpReply>>();
 
     KAboutData *about = new KAboutData("kcm_energyinfo", i18n("Energy Consumption Statistics"),
                                        "0.1", QString(), KAboutLicense::GPL);
@@ -113,114 +97,7 @@ KCMEnergyInfo::KCMEnergyInfo(QWidget *parent, const QVariantList &args) : KCModu
         {ChargingRole, "charging"}
     });
 
-    m_wakeUps = new QStandardItemModel(this);
-    m_wakeUps->setItemRoleNames({
-        {WakeUpNameRole, "name"},
-        {WakeUpPrettyNameRole, "prettyName"},
-        {WakeUpIconNameRole, "iconName"},
-        {WakeUpNumberRole, "number"},
-        {WakeUpPercentRole, "percent"},
-        {WakeUpUserSpaceRole, "userSpace"}
-    });
-
-    m_wakeUpsTimer = new QTimer(this);
-    m_wakeUpsTimer->setInterval(5000);
-    connect(m_wakeUpsTimer, &QTimer::timeout, this, &KCMEnergyInfo::updateWakeUps);
-
-    setAutoUpdateWakeUps(true); // we start on the first page
-}
-
-void KCMEnergyInfo::setAutoUpdateWakeUps(bool autoUpdateWakeUps)
-{
-    if (m_autoUpdateWakeUps != autoUpdateWakeUps) {
-        m_autoUpdateWakeUps = autoUpdateWakeUps;
-        emit autoUpdateWakeUpsChanged();
-
-        if (autoUpdateWakeUps) {
-            m_wakeUpsTimer->start();
-        } else {
-            m_wakeUpsTimer->stop();
-        }
-
-        updateWakeUps();
-    }
-}
-
-void KCMEnergyInfo::updateWakeUps()
-{
-    qDebug() << "UPDATE WAKEUPS";
-    QDBusPendingReply<QList<WakeUpReply>> reply = QDBusConnection::systemBus().asyncCall(
-        QDBusMessage::createMethodCall(QStringLiteral("org.freedesktop.UPower"),
-                                       QStringLiteral("/org/freedesktop/UPower/Wakeups"),
-                                       QStringLiteral("org.freedesktop.UPower.Wakeups"),
-                                       QStringLiteral("GetData"))
-    );
-
-    QDBusPendingCallWatcher *watcher = new QDBusPendingCallWatcher(reply, this);
-    QObject::connect(watcher, &QDBusPendingCallWatcher::finished, this, [this](QDBusPendingCallWatcher *watcher) {
-        QDBusPendingReply<QList<WakeUpReply>> reply = *watcher;
-        watcher->deleteLater();
-
-        if (reply.isError()) {
-            qWarning() << "Failed to get wakeup statistics from UPower";
-            return;
-        }
-
-        m_wakeUps->clear();
-
-        auto values = reply.value();
-
-        QHash<QString, WakeUpData> combinedData;
-        qreal totalWakeUps = 0.0;
-
-        for (auto it = values.constBegin(); it != values.constEnd(); ++it) {
-            if (!(*it).fromUserSpace) {
-                continue;
-            }
-            const QString appName = (*it).cmdline.split(QLatin1Char(' ')).first(); // ugly
-            if (!combinedData.contains(appName)) {
-                combinedData[appName].name = appName;
-                combinedData[appName].userSpace = (*it).fromUserSpace;
-            }
-            combinedData[appName].wakeUps += (*it).wakeUpsPerSecond;
-            totalWakeUps += (*it).wakeUpsPerSecond;
-        }
-
-        for (auto it = combinedData.constBegin(); it != combinedData.constEnd(); ++it) {
-            if (m_wakeUps->rowCount() >= 6) {
-                break;
-            }
-
-            const qreal percent = (*it).wakeUps / (qreal)totalWakeUps * 100;
-            if (percent > 0.5) { // ignore those millions of tiny wakeups
-                combinedData[it.key()].percent = percent;
-
-                const QString &name = (*it).name;
-
-                QStandardItem *item = new QStandardItem();
-                item->setData(name, WakeUpNameRole);
-
-                KService::Ptr service = KService::serviceByStorageId(name + ".desktop");
-                // TODO Cache this stuff
-                if (service) {
-                    item->setData(service->property("Name", QVariant::Invalid).toString(), WakeUpPrettyNameRole);
-                    item->setData(service->icon(), WakeUpIconNameRole);
-                    //m_applicationInfo.insert(name, qMakePair(*prettyName, *icon));
-                } else {
-                    item->setData(name, WakeUpPrettyNameRole);
-                    item->setData(name.split(QLatin1Char('/'), QString::SkipEmptyParts).last().toLower(), WakeUpIconNameRole);
-                }
-
-                item->setData((*it).wakeUps, WakeUpNumberRole);
-                item->setData((*it).percent, WakeUpPercentRole);
-                item->setData((*it).userSpace, WakeUpUserSpaceRole);
-                m_wakeUps->appendRow(item);
-            }
-        }
-
-        m_wakeUpsCount = totalWakeUps;
-        emit wakeUpsCountChanged();
-    });
+    m_wakeUps = new WakeUpModel(this);
 }
 
 void KCMEnergyInfo::getHistory(const QString &udi, KCMEnergyInfo::HistoryType type, uint timespan, uint resolution)

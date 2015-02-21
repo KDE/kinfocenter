@@ -24,9 +24,9 @@
 
 class QQuickView;
 class QStandardItemModel;
-class QTimer;
 
 class BatteryModel;
+class WakeUpModel;
 
 class HistoryReply {
 public:
@@ -35,27 +35,6 @@ public:
     uint charging = 0;
 };
 Q_DECLARE_METATYPE(HistoryReply)
-
-class WakeUpReply {
-public:
-    bool fromUserSpace = false;
-    quint32 id = 0;
-    double wakeUpsPerSecond = 0.0;
-    QString cmdline;
-    QString details;
-};
-
-Q_DECLARE_METATYPE(WakeUpReply)
-
-class WakeUpData {
-public:
-    QString name;
-    QString prettyName;
-    QString iconName;
-    qreal wakeUps = 0.0;
-    qreal percent = 0.0;
-    bool userSpace = false;
-};
 
 class KCMEnergyInfo : public KCModuleQml
 {
@@ -67,9 +46,7 @@ class KCMEnergyInfo : public KCModuleQml
     Q_PROPERTY(QStandardItemModel *history READ history CONSTANT)
     Q_PROPERTY(bool historyAvailable READ historyAvailable NOTIFY historyAvailableChanged)
 
-    Q_PROPERTY(QStandardItemModel *wakeUps READ wakeUps CONSTANT)
-    Q_PROPERTY(int wakeUpsCount READ wakeUpsCount NOTIFY wakeUpsCountChanged CONSTANT)
-    Q_PROPERTY(bool autoUpdateWakeUps READ autoUpdateWakeUps WRITE setAutoUpdateWakeUps NOTIFY autoUpdateWakeUpsChanged)
+    Q_PROPERTY(WakeUpModel *wakeUps READ wakeUps CONSTANT)
 
 public:
     explicit KCMEnergyInfo(QWidget *parent, const QVariantList &args);
@@ -105,21 +82,13 @@ public:
     QStandardItemModel *history() const { return m_history; }
     bool historyAvailable() const { return m_historyAvailable; }
 
-    QStandardItemModel *wakeUps() const { return m_wakeUps; }
-
-    int wakeUpsCount() const { return m_wakeUpsCount; }
-
-    bool autoUpdateWakeUps() const { return m_autoUpdateWakeUps; }
-    void setAutoUpdateWakeUps(bool autoUpdateWakeUps);
+    WakeUpModel *wakeUps() const { return m_wakeUps; }
 
 public slots:
-    void updateWakeUps();
     void getHistory(const QString &udi, HistoryType type, uint timespan, uint resolution);
 
 signals:
     void historyAvailableChanged();
-    void wakeUpsCountChanged();
-    void autoUpdateWakeUpsChanged();
 
 private:
     void setHistoryAvailable(bool historyAvailable);
@@ -129,11 +98,10 @@ private:
     QStandardItemModel *m_history = nullptr;
     bool m_historyAvailable = false;
 
-    QStandardItemModel *m_wakeUps = nullptr;
+    WakeUpModel *m_wakeUps = nullptr;
 
-    QTimer *m_wakeUpsTimer = nullptr;
     int m_wakeUpsCount = 0;
-    bool m_autoUpdateWakeUps = false;
+
 };
 
 #endif // KCM_ENERGYINFO_H

@@ -6,6 +6,7 @@ configure_file (config-kcm.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kcm.h )
 set(kcm_energyinfo_SRCS
   kcm.cpp
   batterymodel.cpp
+  wakeupmodel.cpp
 )
 
 add_library(kcm_energyinfo MODULE ${kcm_energyinfo_SRCS})

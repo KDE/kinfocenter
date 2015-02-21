@@ -90,6 +90,15 @@ Rectangle {
         kcm.getHistory(currentUdi, historyType, timespanCombo.model[timespanCombo.currentIndex].value, 50)
     }
 
+    Timer {
+        id: wakeUpsTimer
+        interval: 5000
+        triggeredOnStart: true
+        running: true
+        repeat: true
+        onTriggered: kcm.wakeUps.reload()
+    }
+
     width: units.gridUnit * 25
     height: units.gridUnit * 25
     color: syspal.window
@@ -137,7 +146,7 @@ Rectangle {
                                     return model.battery == root.currentBattery
                                 })
 
-                                kcm.autoUpdateWakeUps = (index === 0)
+                                wakeUpsTimer.running = (index === 0)
                             }
 
                             Component.onCompleted: {
@@ -265,7 +274,7 @@ Rectangle {
             ColumnLayout {
                 Layout.fillWidth: true
                 spacing: units.smallSpacing
-                visible: kcm.autoUpdateWakeUps
+                visible: wakeUpsTimer.running && kcm.wakeUps.count > 0
 
                 RowLayout {
                     Layout.fillWidth: true
@@ -276,12 +285,12 @@ Rectangle {
                         text: i18n("Application Energy Consumption")
                     }
 
-                    Button {
+                    /*Button {
                         iconName: "view-refresh"
                         tooltip: i18n("Reload")
                         Accessible.name: tooltip
-                        onClicked: kcm.updateWakeUps()
-                    }
+                        onClicked: kcm.wakeUps.update()
+                    }*/
                 }
 
                 GridLayout {
@@ -292,11 +301,7 @@ Rectangle {
                     columnSpacing: units.smallSpacing
 
                     Repeater {
-                        model: PlasmaCore.SortFilterModel {
-                            sortRole: "percent"
-                            sortOrder: Qt.DescendingOrder
-                            sourceModel: kcm.autoUpdateWakeUps ? kcm.wakeUps : null
-                        }
+                        model: wakeUpsTimer.running ? kcm.wakeUps : null
 
                         RowLayout {
                             Layout.fillWidth: true // FIXME should be 50:50 but somehow doesn't work often
