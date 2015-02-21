@@ -156,6 +156,7 @@ void KInfoCenter::createMainFrame()
 
     m_splitter = new QSplitter(m_cWidget);
     m_splitter->setContentsMargins(0, 0, 0, 0);
+    m_splitter->setHandleWidth(5);
     mainLayout->addWidget(m_splitter);
 
     createMenuFrame();
