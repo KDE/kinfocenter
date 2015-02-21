@@ -326,7 +326,10 @@ Rectangle {
                                     text += i18n("PID: %1", model.pid) + "\n"
                                 }
                                 // FIXME format decimals
-                                text += i18n("Wakeups per second: %1 (%2%)", Math.round(model.wakeUps * 100) / 100, Math.round(model.wakeUps / kcm.wakeUps.total * 100))
+                                text += i18n("Wakeups per second: %1 (%2%)", Math.round(model.wakeUps * 100) / 100, Math.round(model.wakeUps / kcm.wakeUps.total * 100)) + "\n"
+                                if (model.details) {
+                                    text += i18n("Details: %1", model.details)
+                                }
                                 return text
                             }
                             icon: model.iconName

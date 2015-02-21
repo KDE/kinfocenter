@@ -115,6 +115,9 @@ void WakeUpModel::reload()
             if ((*it).id) {
                 m_combinedData[appName].pid = (*it).id;
             }
+            if (!(*it).details.isEmpty()) {
+                m_combinedData[appName].details = (*it).details;
+            }
             m_total += (*it).wakeUpsPerSecond;
         }
 
@@ -179,6 +182,8 @@ QVariant WakeUpModel::data(const QModelIndex &index, int role) const
         return m_data.at(index.row()).percent;
     case UserSpaceRole:
         return m_data.at(index.row()).userSpace;
+    case DetailsRole:
+        return m_data.at(index.row()).details;
     }
 
     return QVariant();
@@ -199,6 +204,7 @@ QHash<int, QByteArray> WakeUpModel::roleNames() const
         {IconNameRole, "iconName"},
         {WakeUpsRole, "wakeUps"},
         {PercentRole, "percent"},
-        {UserSpaceRole, "userSpace"}
+        {UserSpaceRole, "userSpace"},
+        {DetailsRole, "details"}
     };
 }

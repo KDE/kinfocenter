@@ -34,6 +34,7 @@ public:
     qreal wakeUps = 0.0;
     qreal percent = 0.0;
     bool userSpace = false;
+    QString details;
 };
 
 class WakeUpModel : public QAbstractListModel
@@ -54,7 +55,8 @@ public:
         IconNameRole = Qt::DecorationRole,
         WakeUpsRole = Qt::UserRole + 2,
         PercentRole,
-        UserSpaceRole
+        UserSpaceRole,
+        DetailsRole
     };
 
     qreal total() const { return m_total; }
