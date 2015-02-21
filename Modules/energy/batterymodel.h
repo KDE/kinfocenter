@@ -33,12 +33,15 @@ class BatteryModel : public QAbstractListModel
 
 public:
     explicit BatteryModel(QObject *parent);
-    virtual ~BatteryModel();
+    virtual ~BatteryModel() = default;
 
     enum Roles {
         BatteryRole = Qt::UserRole,
         UdiRole
     };
+
+    Q_INVOKABLE Solid::Battery *get(int index) const;
+    Q_INVOKABLE QString udi(int index) const;
 
     QVariant data(const QModelIndex &index, int role) const;
     int rowCount(const QModelIndex &parent = QModelIndex()) const;

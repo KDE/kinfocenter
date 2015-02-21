@@ -32,7 +32,13 @@ Rectangle {
     id: root
     property QtObject currentBattery: null
     property string currentUdi: ""
-    onCurrentBatteryChanged: updateHistory()
+    onCurrentBatteryChanged: {
+        if (!currentBattery) {
+            currentBattery = kcm.batteries.get(0)
+            currentUdi = kcm.batteries.udi(0)
+        }
+        updateHistory()
+    }
 
     property int historyType: 0
     onHistoryTypeChanged: updateHistory()
@@ -92,6 +98,11 @@ Rectangle {
         kcm.getHistory(currentUdi, historyType, timespanCombo.model[timespanCombo.currentIndex].value, 50)
     }
 
+    Component.onCompleted: {
+        currentBattery = kcm.batteries.get(0)
+        currentUdi = kcm.batteries.udi(0)
+    }
+
     width: units.gridUnit * 25
     height: !!currentBattery ? units.gridUnit * 25 : units.gridUnit * 12
     color: syspal.window
@@ -142,13 +153,6 @@ Rectangle {
                                 })
 
                                 showWakeUps = (index === 0)
-                            }
-
-                            Component.onCompleted: {
-                                if (index === 0 && !root.currentBattery) {
-                                    root.currentUdi = model.udi
-                                    root.currentBattery = model.battery
-                                }
                             }
 
                             ColumnLayout {

@@ -20,6 +20,7 @@
 #include "batterymodel.h"
 
 #include <Solid/Device>
+#include <Solid/DeviceNotifier>
 
 #include <QtQml>
 
@@ -29,19 +30,65 @@ BatteryModel::BatteryModel(QObject *parent) : QAbstractListModel(parent)
 
     const auto devices = Solid::Device::listFromType(Solid::DeviceInterface::Battery);
     foreach (const Solid::Device &device, devices) {
+        // who owns them, who throws them away?!
         auto* battery = const_cast<Solid::Battery *>(device.as<Solid::Battery>());
-
-        battery->setParent(this);
-        //QQmlEngine::setObjectOwnership(battery, QQmlEngine::CppOwnership);
         m_batteries.append(battery);
         // FIXME Fix Solid so it exposes the base device interface properties too
         m_batteriesUdi.append(device.udi());
     }
+
+    connect(Solid::DeviceNotifier::instance(), &Solid::DeviceNotifier::deviceAdded, this, [this](const QString &udi) {
+        if (m_batteriesUdi.contains(udi)) {
+            // we already know that one
+            return;
+        }
+
+        const Solid::Device device(udi);
+        if (device.isValid()) {
+            auto *battery = const_cast<Solid::Battery *>(device.as<Solid::Battery>());
+            if (battery) {
+                beginInsertRows(QModelIndex(), m_batteries.count(), m_batteries.count());
+                m_batteries.append(battery);
+                // FIXME Fix Solid so it exposes the base device interface properties too
+                m_batteriesUdi.append(device.udi());
+                endInsertRows();
+
+                emit countChanged();
+            }
+        }
+    });
+    connect(Solid::DeviceNotifier::instance(), &Solid::DeviceNotifier::deviceRemoved, this, [this](const QString &udi) {
+        const int index = m_batteriesUdi.indexOf(udi);
+        if (index < 0) {
+            // we don't have that one
+            return;
+        }
+
+        beginRemoveRows(QModelIndex(), index, index);
+        m_batteries.removeAt(index);
+        m_batteriesUdi.removeAt(index);
+        endRemoveRows();
+
+        emit countChanged();
+    });
 }
 
-BatteryModel::~BatteryModel()
+Solid::Battery *BatteryModel::get(int index) const
 {
-    //qDeleteAll(m_batteries);
+    if (index < 0 || index >= m_batteries.count()) {
+        return nullptr;
+    }
+
+    return m_batteries.at(index);
+}
+
+QString BatteryModel::udi(int index) const
+{
+    if (index < 0 || index >= m_batteriesUdi.count()) {
+        return QString();
+    }
+
+    return m_batteriesUdi.at(index);
 }
 
 QVariant BatteryModel::data(const QModelIndex &index, int role) const
