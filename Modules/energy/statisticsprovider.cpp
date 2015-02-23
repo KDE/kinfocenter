@@ -141,7 +141,7 @@ void StatisticsProvider::load()
         msg << QLatin1String("charge");
     }
 
-    uint resolution = 200;
+    uint resolution = 50;
     msg << m_duration << resolution;
 
     qDebug() << msg;
