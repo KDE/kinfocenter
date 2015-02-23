@@ -41,15 +41,14 @@ class StatisticsProvider : public QObject, public QQmlParserStatus
 
     Q_ENUMS(HistoryType)
 
-    Q_PROPERTY (QString device MEMBER m_device WRITE setDevice NOTIFY deviceChanged);
-    Q_PROPERTY (uint duration MEMBER m_duration WRITE setDuration NOTIFY durationChanged);
-    Q_PROPERTY (HistoryType type MEMBER m_type WRITE setType NOTIFY typeChanged);
+    Q_PROPERTY(QString device MEMBER m_device WRITE setDevice NOTIFY deviceChanged)
+    Q_PROPERTY(uint duration MEMBER m_duration WRITE setDuration NOTIFY durationChanged)
+    Q_PROPERTY(HistoryType type MEMBER m_type WRITE setType NOTIFY typeChanged)
 
-    Q_PROPERTY (QVariantList points READ asPoints NOTIFY dataChanged);
-    Q_PROPERTY (int firstDataPointTime READ firstDataPointTime NOTIFY dataChanged);
-    Q_PROPERTY (int lastDataPointTime READ lastDataPointTime NOTIFY dataChanged);
-
-
+    Q_PROPERTY(QVariantList points READ asPoints NOTIFY dataChanged)
+    Q_PROPERTY(int count READ count NOTIFY dataChanged)
+    Q_PROPERTY(int firstDataPointTime READ firstDataPointTime NOTIFY dataChanged)
+    Q_PROPERTY(int lastDataPointTime READ lastDataPointTime NOTIFY dataChanged)
 
 public:
     enum HistoryType {
@@ -63,8 +62,7 @@ public:
         ChargingRole
     };
 
-
-    StatisticsProvider(QObject *parent=0);
+    StatisticsProvider(QObject *parent = Q_NULLPTR);
 
     void setDevice(const QString &device);
     void setDuration(int duration);
@@ -76,10 +74,10 @@ public:
     void componentComplete() Q_DECL_OVERRIDE;
 
     QVariantList asPoints() const;
+    int count() const;
 
     int firstDataPointTime();
     int lastDataPointTime();
-
 
 Q_SIGNALS:
     void deviceChanged();

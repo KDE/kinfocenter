@@ -3,12 +3,8 @@ Exec=kcmshell5 kcm_energyinfo
 Icon=preferences-system-power-management
 Type=Service
 X-KDE-ServiceTypes=KCModule
-
-#X-KDE-KInfoCenter-Category=graphical_information
 X-KDE-Library=kcm_energyinfo
-#X-KDE-PluginKeyword=xserver
 X-KDE-ParentApp=kinfocenter
-#X-DocPath=kinfocenter/index.html#xserver
 
 Name=Energy Information
 Comment=Statistics About Energy Consumption

@@ -44,20 +44,21 @@ const QDBusArgument &operator>>(const QDBusArgument &arg, HistoryReply &attrs)
    return arg;
 }
 
-StatisticsProvider::StatisticsProvider(QObject* parent):
-    QObject(parent)
+StatisticsProvider::StatisticsProvider(QObject *parent) : QObject(parent)
 {
     m_type = StatisticsProvider::ChargeType;
     m_duration = 120;
-    m_device = "/org/freedesktop/UPower/devices/battery_BAT1";
 
     qDBusRegisterMetaType<HistoryReply>();
     qDBusRegisterMetaType<QList<HistoryReply> >();
 }
 
-void StatisticsProvider::setDevice(const QString& device)
+void StatisticsProvider::setDevice(const QString &device)
 {
-    if (device == m_device) return;
+    if (device == m_device) {
+        return;
+    }
+
     m_device = device;
     Q_EMIT deviceChanged();
 
@@ -66,7 +67,10 @@ void StatisticsProvider::setDevice(const QString& device)
 
 void StatisticsProvider::setDuration(int duration)
 {
-    if (duration == m_duration) return;
+    if (duration == m_duration) {
+        return;
+    }
+
     m_duration = duration;
     Q_EMIT durationChanged();
 
@@ -75,7 +79,10 @@ void StatisticsProvider::setDuration(int duration)
 
 void StatisticsProvider::setType(StatisticsProvider::HistoryType type)
 {
-    if (m_type == type) return;
+    if (m_type == type) {
+        return;
+    }
+
     m_type = type;
     Q_EMIT typeChanged();
 
@@ -100,9 +107,15 @@ QVariantList StatisticsProvider::asPoints() const
         points.append(QPointF(h.time, h.value));
     }
 
-    if (!points.isEmpty())
+    if (!points.isEmpty()) {
         points.takeLast();
+    }
     return points;
+}
+
+int StatisticsProvider::count() const
+{
+    return m_values.count();
 }
 
 int StatisticsProvider::firstDataPointTime()
@@ -128,9 +141,10 @@ void StatisticsProvider::refresh()
 
 void StatisticsProvider::load()
 {
-    if (!m_isComplete) return;
+    if (!m_isComplete || m_device.isEmpty()) {
+        return;
+    }
 
-    qDebug() << "get history" << m_device << m_type << m_duration ;
     auto msg = QDBusMessage::createMethodCall(QStringLiteral("org.freedesktop.UPower"),
                                               m_device,
                                               QStringLiteral("org.freedesktop.UPower.Device"),
@@ -144,13 +158,10 @@ void StatisticsProvider::load()
     uint resolution = 50;
     msg << m_duration << resolution;
 
-    qDebug() << msg;
-
     QDBusPendingReply<QList<HistoryReply>> reply = QDBusConnection::systemBus().asyncCall(msg);
-//
+
     auto *watcher = new QDBusPendingCallWatcher(reply, this);
     QObject::connect(watcher, &QDBusPendingCallWatcher::finished, this, [this](QDBusPendingCallWatcher *watcher) {
-
         QDBusPendingReply<QList<HistoryReply>> reply = *watcher;
         watcher->deleteLater();
         m_values.clear();
@@ -161,9 +172,10 @@ void StatisticsProvider::load()
         }
         m_values = reply.value();
 
+        qDebug() << m_values.count();
+
         Q_EMIT dataChanged();
     });
 }
-
 
 #include "statisticsprovider.moc"

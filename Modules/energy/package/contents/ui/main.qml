@@ -245,11 +245,12 @@ Rectangle {
                 HistoryModel {
                     id: history
                     duration: timespanCombo.model[timespanCombo.currentIndex].value
-//                     device: currentUdi
+                    device: currentUdi
                     type: root.historyType
                 }
 
                 Graph {
+                    id: graph
                     Layout.fillWidth: true
                     Layout.minimumHeight: column.width / 3
                     Layout.maximumHeight: column.width / 3
@@ -261,8 +262,18 @@ Rectangle {
                     yUnits: root.historyType == HistoryModel.RateType ? i18nc("Shorthand for Watts","W") : i18nc("literal percent sign","%")
                     yMax: root.historyType == HistoryModel.RateType ? 50 : 100
                     yStep: root.historyType == HistoryModel.RateType ? 10 : 20
+                    visible: history.count > 1
                 }
 
+                Label {
+                    Layout.fillWidth: true
+                    Layout.minimumHeight: column.width / 3
+                    Layout.maximumHeight: column.width / 3
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    text: i18n("This type of history is currently not available for this device.")
+                    visible: !graph.visible
+                }
             }
 
             ColumnLayout {
@@ -276,7 +287,7 @@ Rectangle {
                         Layout.fillWidth: true
                         Layout.columnSpan: 2
                         level: 4
-                        text: i18n("Current Application Energy Consumption")
+                        text: i18n("Application Energy Consumption")
                     }
                 }
 
