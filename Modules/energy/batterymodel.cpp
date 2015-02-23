@@ -29,9 +29,9 @@ BatteryModel::BatteryModel(QObject *parent) : QAbstractListModel(parent)
     qmlRegisterType<Solid::Battery>();
 
     const auto devices = Solid::Device::listFromType(Solid::DeviceInterface::Battery);
-    foreach (const Solid::Device &device, devices) {
+    foreach (Solid::Device device, devices) {
         // who owns them, who throws them away?!
-        auto* battery = const_cast<Solid::Battery *>(device.as<Solid::Battery>());
+        auto battery = device.as<Solid::Battery>();
         m_batteries.append(battery);
         // FIXME Fix Solid so it exposes the base device interface properties too
         m_batteriesUdi.append(device.udi());
