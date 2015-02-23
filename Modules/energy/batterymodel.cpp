@@ -23,6 +23,8 @@
 #include <Solid/DeviceNotifier>
 
 #include <QtQml>
+#include <QQmlEngine>
+
 
 BatteryModel::BatteryModel(QObject *parent) : QAbstractListModel(parent)
 {
@@ -79,7 +81,9 @@ Solid::Battery *BatteryModel::get(int index) const
         return nullptr;
     }
 
-    return m_batteries.at(index);
+    auto battery = m_batteries.at(index);
+    QQmlEngine::setObjectOwnership(battery, QQmlEngine::CppOwnership);
+    return battery;
 }
 
 QString BatteryModel::udi(int index) const
