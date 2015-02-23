@@ -118,7 +118,7 @@ int StatisticsProvider::count() const
     return m_values.count();
 }
 
-int StatisticsProvider::firstDataPointTime()
+int StatisticsProvider::firstDataPointTime() const
 {
     if (m_values.isEmpty()) {
         return 0;
@@ -126,12 +126,27 @@ int StatisticsProvider::firstDataPointTime()
     return m_values.first().time;
 }
 
-int StatisticsProvider::lastDataPointTime()
+int StatisticsProvider::lastDataPointTime() const
 {
     if (m_values.count() < 2) {
         return 0;
     }
     return m_values[m_values.count()-2].time;
+}
+
+int StatisticsProvider::largestValue() const
+{
+    if (m_values.isEmpty()) {
+        return 0;
+    }
+
+    int max = 0; // TODO std::max or something?
+    for (auto it = m_values.constBegin(); it != m_values.constEnd(); ++it) {
+        if ((*it).value > max) {
+            max = (*it).value;
+        }
+    }
+    return max;
 }
 
 void StatisticsProvider::refresh()
@@ -155,7 +170,7 @@ void StatisticsProvider::load()
         msg << QLatin1String("charge");
     }
 
-    uint resolution = 50;
+    uint resolution = 100;
     msg << m_duration << resolution;
 
     QDBusPendingReply<QList<HistoryReply>> reply = QDBusConnection::systemBus().asyncCall(msg);
@@ -171,8 +186,6 @@ void StatisticsProvider::load()
             return;
         }
         m_values = reply.value();
-
-        qDebug() << m_values.count();
 
         Q_EMIT dataChanged();
     });
