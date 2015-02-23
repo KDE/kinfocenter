@@ -22,6 +22,8 @@ import QtQuick.Controls 1.3
 import QtQuick.Layouts 1.1
 
 import org.kde.kquickcontrolsaddons 2.0
+import KCM 1.0
+
 //We need units from it
 import org.kde.plasma.core 2.0 as PlasmaCore
 import org.kde.plasma.extras 2.0 as PlasmaExtras
@@ -37,13 +39,10 @@ Rectangle {
             currentBattery = kcm.batteries.get(0)
             currentUdi = kcm.batteries.udi(0)
         }
-        updateHistory()
     }
 
-    property int historyType: 0
-    onHistoryTypeChanged: updateHistory()
-
     property bool showWakeUps: true
+    property int historyType: HistoryModel.ChargeType
 
     readonly property var details: [
         {
@@ -92,10 +91,6 @@ Rectangle {
         case 2: return i18n("Discharging")
         case 3: return i18n("Fully charged")
         }
-    }
-
-    function updateHistory() {
-        kcm.getHistory(currentUdi, historyType, timespanCombo.model[timespanCombo.currentIndex].value, 50)
     }
 
     Component.onCompleted: {
@@ -208,9 +203,8 @@ Rectangle {
                         checked: true
                         checkable: true
                         text: i18n("Charge Percentage")
-                        enabled: kcm.historyAvailable
                         onClicked: {
-                            historyType = 0
+                            historyType = HistoryModel.ChargeType
                             rateButton.checked = false
                         }
                     }
@@ -218,9 +212,8 @@ Rectangle {
                         id: rateButton
                         checkable: true
                         text: i18n("Energy Comsumption")
-                        enabled: kcm.historyAvailable
                         onClicked: {
-                            historyType = 1
+                            historyType = HistoryModel.RateType
                             chargeButton.checked = false
                         }
                     }
@@ -232,8 +225,6 @@ Rectangle {
                     ComboBox {
                         id: timespanCombo
                         Layout.minimumWidth: units.gridUnit * 6
-                        onCurrentIndexChanged: updateHistory()
-                        enabled: kcm.historyAvailable
                         model: [
                             {text: i18n("Last 1 hour"), value: 3600},
                             {text: i18n("Last 24 hours"), value: 86400},
@@ -247,42 +238,31 @@ Rectangle {
                         iconName: "view-refresh"
                         tooltip: i18n("Refresh")
                         Accessible.name: tooltip
-                        onClicked: updateHistory()
+                        onClicked: history.refresh()
                     }
                 }
 
-                Plotter {
-                    id: plotter
+                HistoryModel {
+                    id: history
+                    duration: timespanCombo.model[timespanCombo.currentIndex].value
+//                     device: currentUdi
+                    type: root.historyType
+                }
+
+                Graph {
                     Layout.fillWidth: true
                     Layout.minimumHeight: column.width / 3
                     Layout.maximumHeight: column.width / 3
-                    visible: kcm.historyAvailable
+                    data: history.points
 
-                    dataSets: [
-                        PlotData {
-                            color: theme.highlightColor // syspal?
-                        }
-                    ]
+                    xMin: history.firstDataPointTime
+                    xMax: history.lastDataPointTime
+
+                    yUnits: root.historyType == HistoryModel.RateType ? i18nc("Shorthand for Watts","W") : i18nc("literal percent sign","%")
+                    yMax: root.historyType == HistoryModel.RateType ? 50 : 100
+                    yStep: root.historyType == HistoryModel.RateType ? 10 : 20
                 }
 
-                Repeater {
-                    model: kcm.history
-
-                    QtObject {
-                        Component.onCompleted: plotter.addSample(model.value)
-                    }
-                }
-
-                Label {
-                    Layout.fillWidth: true
-                    Layout.minimumHeight: column.width / 3
-                    Layout.maximumHeight: column.width / 3
-
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    text: i18n("There is currently no history available for this device.")
-                    visible: !kcm.historyAvailable
-                }
             }
 
             ColumnLayout {

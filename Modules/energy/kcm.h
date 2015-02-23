@@ -28,44 +28,26 @@ class QStandardItemModel;
 class BatteryModel;
 class WakeUpModel;
 
-class HistoryReply {
-public:
-    uint time = 0;
-    double value = 0.0;
-    uint charging = 0;
-};
-Q_DECLARE_METATYPE(HistoryReply)
 
 class KCMEnergyInfo : public KCModuleQml
 {
     Q_OBJECT
-    Q_ENUMS(HistoryType)
 
     Q_PROPERTY(BatteryModel *batteries READ batteries CONSTANT)
 
-    Q_PROPERTY(QStandardItemModel *history READ history CONSTANT)
-    Q_PROPERTY(bool historyAvailable READ historyAvailable NOTIFY historyAvailableChanged)
+    Q_PROPERTY(QObject *history READ history CONSTANT)
 
     Q_PROPERTY(WakeUpModel *wakeUps READ wakeUps CONSTANT)
+    Q_PROPERTY(WakeUpModel *wakeUps READ wakeUps CONSTANT)
+
 
 public:
     explicit KCMEnergyInfo(QWidget *parent, const QVariantList &args);
     virtual ~KCMEnergyInfo() = default;
 
-    enum HistoryType {
-        RateType,
-        ChargeType
-    };
-
     enum BatteryRoles {
         BatteryRole = Qt::UserRole + 1,
         TestRole
-    };
-
-    enum HistoryRoles {
-        TimeRole = Qt::UserRole + 1,
-        ValueRole,
-        ChargingRole
     };
 
     enum WakeUpRoles {
@@ -79,29 +61,23 @@ public:
 
     BatteryModel *batteries() const { return m_batteries; }
 
-    QStandardItemModel *history() const { return m_history; }
-    bool historyAvailable() const { return m_historyAvailable; }
+    QObject *history() const { return m_history; }
 
     WakeUpModel *wakeUps() const { return m_wakeUps; }
 
-public slots:
-    void getHistory(const QString &udi, HistoryType type, uint timespan, uint resolution);
-
-signals:
-    void historyAvailableChanged();
 
 private:
-    void setHistoryAvailable(bool historyAvailable);
 
     BatteryModel *m_batteries = nullptr;
 
-    QStandardItemModel *m_history = nullptr;
-    bool m_historyAvailable = false;
+    QObject *m_history = nullptr;
 
     WakeUpModel *m_wakeUps = nullptr;
 
     int m_wakeUpsCount = 0;
 
 };
+
+Q_DECLARE_METATYPE(QList<QPointF>)
 
 #endif // KCM_ENERGYINFO_H

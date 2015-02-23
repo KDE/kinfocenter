@@ -7,6 +7,7 @@ set(kcm_energyinfo_SRCS
   kcm.cpp
   batterymodel.cpp
   wakeupmodel.cpp
+  statisticsprovider.cpp
 )
 
 add_library(kcm_energyinfo MODULE ${kcm_energyinfo_SRCS})
