@@ -39,6 +39,7 @@ X-KDE-Keywords[zh_CN]=information,distribution,distro,system,kernel,qt,kde,信�
 Categories=Qt;KDE;X-KDE-settings-personalization;X-KDE-information;
 
 Name=About System
+Name[ast]=Tocante al sistema
 Name[bs]=O sistemu
 Name[ca]=Quant al sistema
 Name[cs]=O systému
@@ -66,6 +67,7 @@ Name[uk]=Про систему
 Name[x-test]=xxAbout Systemxx
 Name[zh_CN]=关于系统
 Comment=Information About This System
+Comment[ast]=Información tocante a esti sistema
 Comment[bs]=Informacije o ovom sistemu
 Comment[ca]=Informació quant a aquest sistema
 Comment[cs]=Informace o tomto systému
