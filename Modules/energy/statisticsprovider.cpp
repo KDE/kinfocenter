@@ -110,6 +110,7 @@ QVariantList StatisticsProvider::asPoints() const
     if (!points.isEmpty()) {
         points.takeLast();
     }
+
     return points;
 }
 
@@ -123,15 +124,17 @@ int StatisticsProvider::firstDataPointTime() const
     if (m_values.isEmpty()) {
         return 0;
     }
+
     return m_values.first().time;
 }
 
 int StatisticsProvider::lastDataPointTime() const
 {
-    if (m_values.count() < 2) {
+    if (m_values.isEmpty()) {
         return 0;
     }
-    return m_values[m_values.count()-2].time;
+
+    return m_values.last().time;
 }
 
 int StatisticsProvider::largestValue() const
@@ -185,7 +188,12 @@ void StatisticsProvider::load()
             qWarning() << "Failed to get device history from UPower" << reply.error().message();
             return;
         }
-        m_values = reply.value();
+
+        foreach (const HistoryReply &r, reply.value()) {
+            if (r.value > 0) { //we get back some values which contain no value, possibly to indicate if charging changes, ignore them
+                m_values.prepend(r);
+            }
+        }
 
         Q_EMIT dataChanged();
     });
