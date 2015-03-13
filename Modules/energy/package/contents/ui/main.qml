@@ -226,8 +226,10 @@ Rectangle {
                         id: timespanCombo
                         Layout.minimumWidth: units.gridUnit * 6
                         model: [
+                            {text: i18n("Last 10 minutes"), value: 10},
                             {text: i18n("Last 1 hour"), value: 3600},
-                            {text: i18n("Last 12 hour"), value: 43200},
+                            {text: i18n("Last 2 hours"), value: 7200},
+                            {text: i18n("Last 12 hours"), value: 43200},
                             {text: i18n("Last 24 hours"), value: 86400},
                             {text: i18n("Last 48 hours"), value: 172800},
                             {text: i18n("Last 7 days"), value: 604800}
