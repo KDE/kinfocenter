@@ -208,10 +208,11 @@ Rectangle {
                             rateButton.checked = false
                         }
                     }
+
                     Button {
                         id: rateButton
                         checkable: true
-                        text: i18n("Energy Comsumption")
+                        text: i18n("Energy Consumption")
                         onClicked: {
                             historyType = HistoryModel.RateType
                             chargeButton.checked = false

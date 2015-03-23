@@ -35,8 +35,6 @@ class KCMEnergyInfo : public KQuickAddons::ConfigModule
 
     Q_PROPERTY(BatteryModel *batteries READ batteries CONSTANT)
 
-    Q_PROPERTY(QObject *history READ history CONSTANT)
-
     Q_PROPERTY(WakeUpModel *wakeUps READ wakeUps CONSTANT)
 
 
@@ -60,16 +58,12 @@ public:
 
     BatteryModel *batteries() const { return m_batteries; }
 
-    QObject *history() const { return m_history; }
-
     WakeUpModel *wakeUps() const { return m_wakeUps; }
 
 
 private:
 
     BatteryModel *m_batteries = nullptr;
-
-    QObject *m_history = nullptr;
 
     WakeUpModel *m_wakeUps = nullptr;
 

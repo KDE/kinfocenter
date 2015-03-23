@@ -68,8 +68,6 @@ KCMEnergyInfo::KCMEnergyInfo(QObject *parent, const QVariantList &args) : Config
 
     m_batteries = new BatteryModel(this);
 
-    m_history = new StatisticsProvider(this);
-
     m_wakeUps = new WakeUpModel(this);
 }
 
