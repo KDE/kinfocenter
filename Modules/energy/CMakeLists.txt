@@ -20,7 +20,7 @@ target_link_libraries(kcm_energyinfo
   KF5::Solid
   #KF5::Plasma
   #KF5::PlasmaQuick
-
+  KF5::QuickAddons
   #KF5::KDELibs4Support
 
   Qt5::DBus

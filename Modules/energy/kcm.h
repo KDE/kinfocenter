@@ -20,7 +20,7 @@
 #ifndef KCM_ENERGYINFO_H
 #define KCM_ENERGYINFO_H
 
-#include <KCModuleQml>
+#include <KQuickAddons/ConfigModule>
 
 class QQuickView;
 class QStandardItemModel;
@@ -29,7 +29,7 @@ class BatteryModel;
 class WakeUpModel;
 
 
-class KCMEnergyInfo : public KCModuleQml
+class KCMEnergyInfo : public KQuickAddons::ConfigModule
 {
     Q_OBJECT
 
@@ -38,11 +38,10 @@ class KCMEnergyInfo : public KCModuleQml
     Q_PROPERTY(QObject *history READ history CONSTANT)
 
     Q_PROPERTY(WakeUpModel *wakeUps READ wakeUps CONSTANT)
-    Q_PROPERTY(WakeUpModel *wakeUps READ wakeUps CONSTANT)
 
 
 public:
-    explicit KCMEnergyInfo(QWidget *parent, const QVariantList &args);
+    explicit KCMEnergyInfo(QObject *parent, const QVariantList &args);
     virtual ~KCMEnergyInfo() = default;
 
     enum BatteryRoles {

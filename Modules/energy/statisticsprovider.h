@@ -66,7 +66,7 @@ public:
     StatisticsProvider(QObject *parent = Q_NULLPTR);
 
     void setDevice(const QString &device);
-    void setDuration(int duration);
+    void setDuration(uint duration);
     void setType(HistoryType type);
 
     void load();

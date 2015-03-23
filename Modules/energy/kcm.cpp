@@ -46,8 +46,9 @@
 
 K_PLUGIN_FACTORY(KCMEnergyInfoFactory, registerPlugin<KCMEnergyInfo>();)
 
+using namespace KQuickAddons;
 
-KCMEnergyInfo::KCMEnergyInfo(QWidget *parent, const QVariantList &args) : KCModuleQml(parent, args)
+KCMEnergyInfo::KCMEnergyInfo(QObject *parent, const QVariantList &args) : ConfigModule(parent, args)
 {
     //This flag seems to be needed in order for QQuickWidget to work
     //see https://bugreports.qt-project.org/browse/QTBUG-40765
@@ -64,11 +65,10 @@ KCMEnergyInfo::KCMEnergyInfo(QWidget *parent, const QVariantList &args) : KCModu
                                        "0.1", QString(), KAboutLicense::GPL);
     about->addAuthor(i18n("Kai Uwe Broulik"), QString(), "kde@privat.broulik.de");
     setAboutData(about);
-    //setButtons(Help | Apply | Default);
 
     m_batteries = new BatteryModel(this);
 
-//     m_history = new StatisticsProvider(this);
+    m_history = new StatisticsProvider(this);
 
     m_wakeUps = new WakeUpModel(this);
 }

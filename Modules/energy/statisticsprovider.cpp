@@ -65,7 +65,7 @@ void StatisticsProvider::setDevice(const QString &device)
     load();
 }
 
-void StatisticsProvider::setDuration(int duration)
+void StatisticsProvider::setDuration(uint duration)
 {
     if (duration == m_duration) {
         return;

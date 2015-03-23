@@ -30,6 +30,7 @@ find_package(KF5 REQUIRED COMPONENTS
     Solid
     WidgetsAddons
     XmlGui
+    Declarative
     Package # (make optional)
     Plasma # MAKE OPTIONAL
     PlasmaQuick # MAKE OPTIONAL
