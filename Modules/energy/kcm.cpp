@@ -55,8 +55,6 @@ KCMEnergyInfo::KCMEnergyInfo(QObject *parent, const QVariantList &args) : Config
     //also, it seems to work only if set in the kcm, not in the systemsettings' main
     qApp->setAttribute(Qt::AA_DontCreateNativeWidgetSiblings);
 
-    qRegisterMetaType<QList<QPointF> >();
-
     qmlRegisterType<BatteryModel>();
     qmlRegisterType<WakeUpModel>();
     qmlRegisterType<StatisticsProvider>("KCM", 1, 0, "HistoryModel");

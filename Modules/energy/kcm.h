@@ -42,20 +42,6 @@ public:
     explicit KCMEnergyInfo(QObject *parent, const QVariantList &args);
     virtual ~KCMEnergyInfo() = default;
 
-    enum BatteryRoles {
-        BatteryRole = Qt::UserRole + 1,
-        TestRole
-    };
-
-    enum WakeUpRoles {
-        WakeUpNameRole = Qt::UserRole + 1,
-        WakeUpPrettyNameRole = Qt::DisplayRole,
-        WakeUpIconNameRole = Qt::DecorationRole,
-        WakeUpNumberRole = Qt::UserRole,
-        WakeUpPercentRole,
-        WakeUpUserSpaceRole
-    };
-
     BatteryModel *batteries() const { return m_batteries; }
 
     WakeUpModel *wakeUps() const { return m_wakeUps; }
