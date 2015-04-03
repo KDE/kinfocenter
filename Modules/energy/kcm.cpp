@@ -44,7 +44,8 @@
 #include "wakeupmodel.h"
 #include "statisticsprovider.h"
 
-K_PLUGIN_FACTORY(KCMEnergyInfoFactory, registerPlugin<KCMEnergyInfo>();)
+
+K_PLUGIN_FACTORY_WITH_JSON(KCMLookandFeelFactory, "kcm_energyinfo.json", registerPlugin<KCMEnergyInfo>();)
 
 using namespace KQuickAddons;
 

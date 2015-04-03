@@ -28,7 +28,9 @@ target_link_libraries(kcm_energyinfo
   Qt5::QuickWidgets
 )
 
+kcoreaddons_desktop_to_json(kcm_energyinfo "kcm_energyinfo.desktop")
+
 install(FILES kcm_energyinfo.desktop DESTINATION ${SERVICES_INSTALL_DIR})
-install(TARGETS kcm_energyinfo DESTINATION ${PLUGIN_INSTALL_DIR})
+install(TARGETS kcm_energyinfo DESTINATION ${PLUGIN_INSTALL_DIR}/kcms)
 
 kpackage_install_package(package kcm_energyinfo kcms)
