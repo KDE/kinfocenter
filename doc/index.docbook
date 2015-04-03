@@ -20,8 +20,8 @@
 </authorgroup>
 
 <legalnotice>&FDLNotice;</legalnotice>
-<date>2013-06-22</date>
-<releaseinfo>&kde; SC 4.11</releaseinfo>
+<date>2015-04-03</date>
+<releaseinfo>Plasma 5.3</releaseinfo>
 
 <abstract>
 <para>This documentation describes &kde;’s information center.</para>
@@ -76,7 +76,8 @@ Center</guimenuitem></menuchoice> from the application launcher in the panel.
 <listitem>
 <para>
 By pressing <keycombo
-action="simul">&Alt;<keycap>F2</keycap></keycombo>.
+action="simul">&Alt;<keycap>F2</keycap></keycombo> or <keycombo
+action="simul">&Alt;<keycap>Space</keycap></keycombo>.
 This will bring up &krunner;.  Type
 <userinput><command>kinfocenter</command></userinput>, and press &Enter;.
 </para>
@@ -139,14 +140,6 @@ You can right click on the module listing to show the following options:
 The main panel shows you the system information about the selected module.
 </para>
 
-<!--
-<para>
-In this example, we are running &kde; 2.99, we started &infocenter;
-as user <systemitem class="username">adridg</systemitem>, the computer is
-named <systemitem class="systemname">aramis</systemitem>, it is a
-FreeBSD system, Version 4.4-RELEASE, on a Pentium.
-</para> -->
-
 </sect1>
 
 <!--*****************************************************************-->
@@ -156,7 +149,7 @@ FreeBSD system, Version 4.4-RELEASE, on a Pentium.
 <title>The &infocenter; Toolbar</title>
 
 <para>This next section gives you a brief description of what each toolbar item does. </para>
-<!--FIXME not working in 4.11
+<!--FIXME not working in kf5
 <sect2 id="info-center-export-file">
 <title>
 <guimenu>Export</guimenu> button
@@ -378,6 +371,12 @@ virtual memory.</para>
 
 <!--****************************************-->
 
+<sect1 id="aboutsystem">
+<title>System Information Module</title>
+</sect1>
+
+<!--****************************************-->
+
 <sect1 id="devinfo">
 <title>Device Information Module</title>
 
@@ -435,8 +434,8 @@ The information labels have the ability to be selected and copied from.</para>
 </sect2>
 <sect2 id="udilabel">
 <title><acronym>UDI</acronym> Information</title>
-<para>The bottom information panel shows the current selected devices <acronym>UDI</acronym>. This is the unique device identifier.
-The label has the ability to be selected and copied from.</para>
+<para>The bottom information panel shows the current selected devices <acronym>UDI</acronym>. This is the unique device identifier.</para>
+<para>All labels have the ability to be selected and copied from.</para>
 </sect2>
 </sect1>
 
@@ -879,6 +878,8 @@ information only.</para>
 </sect1>
 
 <!--****************************************-->
+
+<!-- Wayland missing -->
 
 </chapter>
 
