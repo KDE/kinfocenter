@@ -5,8 +5,6 @@ Exec=kcmshell5 about-distro
 
 X-KDE-Library=kcm_about_distro
 X-KDE-ServiceTypes=KCModule
-X-KDE-System-Settings-Parent-Category=personalization
-X-KDE-ParentApp=kcontrol
 X-KDE-ParentApp=kinfocenter
 X-KDE-PluginKeyword=kcm-about-distro
 X-KDE-Weight=0
