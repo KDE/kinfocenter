@@ -88,11 +88,6 @@ class KInfoCenter : public KXmlGuiWindow
         void helpClickedSlot();
 
         /**
-        * Triggered when export toolbar action is used.
-        */
-        void exportClickedSlot();
-
-        /**
         * Triggered when the about KCM action is used
         * in the help menu.
         */
@@ -149,7 +144,6 @@ class KInfoCenter : public KXmlGuiWindow
 
         QAction *m_aboutKcm;
         QAction *m_searchAction;
-        QAction *m_exportAction;
         QAction *m_moduleHelpAction;
         KActionMenu *m_helpAction;
 

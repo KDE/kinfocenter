@@ -72,7 +72,6 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
 
     //Buttons
     connect(m_moduleHelpAction, SIGNAL(triggered(bool)),this,SLOT(helpClickedSlot()));
-    connect(m_exportAction, SIGNAL(triggered(bool)),this,SLOT(exportClickedSlot()));
 
     //Menu
     connect(m_aboutKcm, SIGNAL(triggered(bool)), this, SLOT(aboutKcmSlot()));
@@ -105,7 +104,6 @@ KInfoCenter::~KInfoCenter()
 
     //Buttons
     disconnect(m_moduleHelpAction, SIGNAL(triggered(bool)),this,SLOT(helpClickedSlot()));
-    disconnect(m_exportAction, SIGNAL(triggered(bool)),this,SLOT(exportClickedSlot()));
 
     //Menu
     disconnect(m_aboutKcm, SIGNAL(triggered(bool)), this, SLOT(aboutKcmSlot()));
@@ -131,10 +129,6 @@ void KInfoCenter::createToolBar()
     m_aboutKcm->setIcon(QIcon::fromTheme("help-about"));
     m_aboutKcm->setEnabled(false);
 
-    m_exportAction = new QAction(this);
-    m_exportAction->setText(i18nc("Export button label", "Export"));
-    m_exportAction->setIcon(QIcon::fromTheme("document-export"));
-
     m_moduleHelpAction = new QAction(this);
     m_moduleHelpAction->setText(i18nc("Module help button label", "Module Help"));
     m_moduleHelpAction->setIcon(QIcon::fromTheme("help-contextual"));
@@ -142,7 +136,6 @@ void KInfoCenter::createToolBar()
     m_helpAction = new KActionMenu( QIcon::fromTheme("help-contents"), i18nc("Help button label","Help"), this );
     m_helpAction->setDelayed( false );
 
-    actionCollection()->addAction("export", m_exportAction);
     actionCollection()->addAction("helpModule", m_moduleHelpAction);
     actionCollection()->addAction("helpMenu", m_helpAction);
 }
@@ -219,15 +212,11 @@ void KInfoCenter::setButtons(const KCModule::Buttons buttons)
     if (buttons & KCModule::Help) {
         m_moduleHelpAction->setEnabled(true);
     }
-    if (buttons & KCModule::Export) {
-        m_exportAction->setEnabled(true);
-    }
 }
 
 void KInfoCenter::resetCondition()
 {
     m_moduleHelpAction->setEnabled(false);
-    m_exportAction->setEnabled(false);
 
     m_aboutKcm->setEnabled(false);
 }
@@ -239,33 +228,6 @@ void KInfoCenter::helpClickedSlot()
 
     QUrl url("help:/" + docPath );
     QProcess::startDetached("khelpcenter", QStringList() << url.url());
-}
-
-void KInfoCenter::exportClickedSlot()
-{
-    QString moduleName = m_contain->name();
-
-    if(m_contain->exportText().isEmpty()) {
-        KInfoCenter::showError(this,i18n("Export of the module has produced no output."));
-        return;
-    }
-
-    QString fileName = QFileDialog::getSaveFileName(this, QString(moduleName + ".txt"));
-    if(fileName.isEmpty()) return;
-
-    QFile exportFile(fileName);
-
-    if(!exportFile.open(QIODevice::WriteOnly)) {
-        KInfoCenter::showError(this,i18n("Unable to open file to write export information"));
-        return;
-    }
-
-    QTextStream exportTextStream( &exportFile );
-    exportTextStream << (i18n("Export information for %1", moduleName))
-        << "\n\n" << m_contain->exportText() << endl;
-
-    exportFile.close();
-    KInfoCenter::showError(this, i18n("Information exported"));
 }
 
 void KInfoCenter::aboutKcmSlot()
