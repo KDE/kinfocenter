@@ -24,6 +24,8 @@ endif(NOT SUFFIX_VERSION)
 
 find_package(KF5ConfigWidgets 5.0.0)
 find_package(KF5Solid 5.0.0)
+find_package(KF5I18n 5.0.0)
+
 
 # KI18N Translation Domain for this library
 add_definitions(-DTRANSLATION_DOMAIN=\"kcm-about-distro\")
