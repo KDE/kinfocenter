@@ -8,8 +8,6 @@
   </MenuBar>
   <ToolBar name="mainToolBar" fullWidth="true" hidden="false" noMerge="1">
     <text context="@title:menu">Main Toolbar</text>
-    <Action name="export"/>
-    <Separator/>
     <Action name="helpModule"/>
     <Action name="helpMenu"/>
   </ToolBar>
