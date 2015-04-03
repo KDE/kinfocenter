@@ -9,6 +9,7 @@ X-KDE-System-Settings-Parent-Category=personalization
 X-KDE-ParentApp=kcontrol
 X-KDE-ParentApp=kinfocenter
 X-KDE-PluginKeyword=kcm-about-distro
+X-KDE-Weight=0
 X-KDE-Keywords=information,distribution,distro,system,kernel,qt,kde
 X-KDE-Keywords[ast]=información,distribución,distro,sistema,kernel,qt,kde
 X-KDE-Keywords[bs]=informacija,distribucija,distro,sistem,kernel,qt,kde
