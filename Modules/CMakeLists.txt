@@ -1,7 +1,6 @@
 
 add_subdirectory( about-distro )
 add_subdirectory( usbview )
-add_subdirectory( infosummary )
 add_subdirectory( memory )
 add_subdirectory( devinfo )
 add_subdirectory( info )
