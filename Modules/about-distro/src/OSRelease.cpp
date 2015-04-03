@@ -63,19 +63,29 @@ static void setVar(QStringList *var, const QString &value)
 
 OSRelease::OSRelease()
 {
-    QFile file("/etc/os-release");
+    // Set default values for non-optional fields.
+    name = QLatin1String("Linux");
+    id = QLatin1String("linux");
+    prettyName = QLatin1String("Linux");
+
+    QString fileName;
+
+    if (QFile::exists("/etc/os-release")) {
+        fileName = "/etc/os-release";
+    } else if (QFile::exists("/usr/lib/os-release")) {
+        fileName = "/usr/lib/os-release";
+    } else {
+        return;
+    }
+
+
+    QFile file(fileName);
     // NOTE: The os-release specification defines default values for specific
     //       fields which means that even if we can not read the os-release file
     //       we have sort of expected default values to use.
     // TODO: it might still be handy to indicate to the outside whether
     //       fallback values are being used or not.
     file.open(QIODevice::ReadOnly | QIODevice::Text);
-
-    // Set default values for non-optional fields.
-    name = QLatin1String("Linux");
-    id = QLatin1String("linux");
-    prettyName = QLatin1String("Linux");
-
     QString line;
     QStringList comps;
     while (!file.atEnd()) {
