@@ -100,13 +100,9 @@ Canvas
         // Draw the line graph
         c.beginPath();
         var point = scalePoint(data[0]);
-        var lastPoint = point;
         c.moveTo(point.x, point.y);
         for(var i = 1; i < data.length; i ++) {
             point = scalePoint(data[i])
-            var midPointX = point.x*0.3+lastPoint.x*0.7;
-            var midPointY = point.y*0.3+lastPoint.y*0.7;
-            lastPoint = point;
             c.lineTo(point.x, point.y);
         }
         c.stroke();
