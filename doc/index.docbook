@@ -20,7 +20,7 @@
 </authorgroup>
 
 <legalnotice>&FDLNotice;</legalnotice>
-<date>2015-04-03</date>
+<date>2015-04-04</date>
 <releaseinfo>Plasma 5.3</releaseinfo>
 
 <abstract>
@@ -118,7 +118,7 @@ which can be divided into three functional parts.
 
 <para>
 Across the top is a toolbar.  The toolbar will provide you with quick
-access to most of &infocenter;’s features like export, get help on the current
+access to most of &infocenter;’s features like get help on the current
 module and a help menu.
 </para>
 
@@ -149,18 +149,6 @@ The main panel shows you the system information about the selected module.
 <title>The &infocenter; Toolbar</title>
 
 <para>This next section gives you a brief description of what each toolbar item does. </para>
-<!--FIXME not working in kf5
-<sect2 id="info-center-export-file">
-<title>
-<guimenu>Export</guimenu> button
-</title>
-<para>
-The export button allows you to export information from the current information module if the
-module allows this functionality. Clicking the export button will bring up a file dialog that will allow
-you to choose the location of the file.
-</para>
-</sect2>
--->
 
 <sect2 id="info-center-module-help">
 <title>
@@ -207,89 +195,17 @@ Type <keycombo action="simul">&Ctrl;<keycap>Q</keycap></keycombo> on the keyboar
 
 <!--****************************************-->
 
-<sect1 id="kcm_infosummary">
-<title>Summary Information Module</title>
+<sect1 id="aboutsystem">
+<title>System Information Module</title>
 
-<para>
-The summary information <acronym>KCM</acronym> provides a quick way to display important information.
-The module has three categories; <acronym>OS</acronym> Information, <acronym>CPU</acronym> Information and Hard Drive Information.
-</para>
-<note><para>You may have more than one of these information boxes per category.</para></note>
+<para>This page shows a brief summary about your system, &ie; your distribution, <guilabel>KDE Plasma Version</guilabel>,
+<guilabel>Qt Version</guilabel>, <guilabel>Kernel Version</guilabel> and <guilabel>OS Type</guilabel>; and in the hardware section
+information about <guilabel>Processors</guilabel> and <guilabel>Memory</guilabel>.</para>
 
-<sect2 id="osbox">
-<title><acronym>OS</acronym> Information Box</title>
-<para>
-<screenshot>
-<screeninfo>Screenshot of <acronym>OS</acronym> Information box</screeninfo>
-  <mediaobject>
-    <imageobject>
-      <imagedata fileref="os_block.png" format="PNG"/>
-    </imageobject>
-      <textobject>
-      <phrase><acronym>OS</acronym> Information Box</phrase>
-    </textobject>
-  </mediaobject>
-</screenshot>
-</para><para>
-The <acronym>OS</acronym> information box has the following information:
-</para>
-<itemizedlist>
-<listitem><para><guilabel>OS Version</guilabel>: This is the version information of the Operating System KInfoCenter is present on.</para></listitem>
-<listitem><para><guilabel>KDE Plasma Version</guilabel>: This is the version of the KDE Plasma Workspace KInfoCenter was compiled on.</para></listitem>
-<listitem><para><guilabel>Hostname</guilabel>: This is the hostname of the computer KInfoCenter is present on.</para></listitem>
-</itemizedlist>
-
-</sect2>
-<sect2 id="cpubox">
-
-<title><acronym>CPU</acronym> Information Box</title>
-<para>
-<screenshot>
-<screeninfo>Screenshot of <acronym>CPU</acronym> Information box</screeninfo>
-  <mediaobject>
-    <imageobject>
-      <imagedata fileref="pro_block.png" format="PNG"/>
-    </imageobject>
-      <textobject>
-      <phrase><acronym>CPU</acronym> Information Box</phrase>
-    </textobject>
-  </mediaobject>
-</screenshot>
-</para><para>
-The <acronym>CPU</acronym> information box has the following information:
-</para>
-<itemizedlist>
-<listitem><para><guilabel>Processor</guilabel>: This is the vendors name for your CPU</para></listitem>
-<listitem><para><guilabel>Processor Number</guilabel>: This is the <acronym>ID</acronym> number of your <acronym>CPU</acronym>, starting from zero.</para></listitem>
-<listitem><para><guilabel>Processor Max Speed</guilabel>: This is the processors maximum speed.</para></listitem>
-</itemizedlist>
-
-</sect2>
-
-<sect2 id="hdbox">
-<title>Hard Drive Information Box</title>
-<para>
-<screenshot>
-<screeninfo>Screenshot of Hard Drive Information box</screeninfo>
-  <mediaobject>
-    <imageobject>
-      <imagedata fileref="sto_block.png" format="PNG"/>
-    </imageobject>
-      <textobject>
-      <phrase>Hard Drive Information Box</phrase>
-    </textobject>
-  </mediaobject>
-</screenshot>
-</para><para>
-The Hard Drive information box has the following information:
-</para>
-<itemizedlist>
-<listitem><para><guilabel>Drive Title</guilabel>: This is the vendors name for the hard drive.</para></listitem>
-<listitem><para><guilabel>Storage Size</guilabel>: This is the current size of your hard drive. </para></listitem>
-<listitem><para><guilabel>Bus</guilabel>: This is the bus your hard drive uses.</para></listitem>
-</itemizedlist>
-</sect2>
+<para>Use the information on this page if you ask for help in support channels or report a bug at 
+<ulink url="http://bugs.kde.org">&kde;'s bugtracker</ulink>.</para> 
 </sect1>
+
 
 <!--****************************************-->
 
@@ -368,13 +284,6 @@ virtual memory.</para>
 
 </sect2>
 </sect1>
-
-<!--****************************************-->
-
-<!-- add info later
-sect1 id="aboutsystem">
-<title>System Information Module</title>
-</sect1-->
 
 <!--****************************************-->
 
