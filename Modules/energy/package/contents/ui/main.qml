@@ -46,7 +46,7 @@ Rectangle {
 
     readonly property var details: [
         {
-            title: i18n("Information"),
+            title: i18n("Battery"),
             data: [
                 {label: i18n("Rechargeable"), value: "rechargeable"},
                 {label: i18n("Charge state"), value: "chargeState", modifier: "chargeState"}
@@ -65,13 +65,13 @@ Rectangle {
         {
             title: i18n("System"),
             data: [
-                {label: i18n("Is power supply"), value: "powerSupply"}
+                {label: i18n("Has power supply"), value: "powerSupply"}
             ]
         },
         {
             title: i18n("Environment"),
             data: [
-                {label: i18n("Temperature"), value: "temperature", unit: i18nc("Degree celsius", "°C"), precision: 2}
+                {label: i18n("Temperature"), value: "temperature", unit: i18nc("Degree Celsius", "°C"), precision: 2}
             ]
         },
         {
@@ -227,7 +227,7 @@ Rectangle {
                         id: timespanCombo
                         Layout.minimumWidth: units.gridUnit * 6
                         model: [
-                            {text: i18n("Last 1 hour"), value: 3600},
+                            {text: i18n("Last hour"), value: 3600},
                             {text: i18n("Last 2 hours"), value: 7200},
                             {text: i18n("Last 12 hours"), value: 43200},
                             {text: i18n("Last 24 hours"), value: 86400},

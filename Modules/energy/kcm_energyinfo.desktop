@@ -7,7 +7,7 @@ X-KDE-Library=kcm_energyinfo
 X-KDE-ParentApp=kinfocenter
 
 Name=Energy Information
-Comment=Statistics About Energy Consumption
+Comment=Energy Consumption Statistics
 
 X-KDE-Keywords=Battery,Energy,Statistics,History,Power
 X-KDE-Weight=2
