@@ -25,8 +25,6 @@
 #include <KAboutData>
 #include <QDebug>
 #include <QStandardPaths>
-#include <QQuickWidget>
-#include <QQuickView>
 
 #include <QtQml>
 #include <QQmlEngine>
@@ -38,7 +36,6 @@
 #include <Solid/Battery>
 
 #include <KLocalizedString>
-#include <Plasma/PluginLoader>
 
 #include "batterymodel.h"
 #include "wakeupmodel.h"

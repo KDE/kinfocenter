@@ -131,8 +131,8 @@ void WakeUpModel::reload()
             } else {
                 KService::Ptr service = KService::serviceByStorageId(name + ".desktop");
                 if (service) {
-                    (*it).prettyName = service->property("Name", QVariant::Invalid).toString();
-                    (*it).iconName = service->icon();
+                    it->prettyName = service->property("Name", QVariant::Invalid).toString();
+                    it->iconName = service->icon();
 
                     m_applicationInfo.insert(name, qMakePair((*it).prettyName, (*it).iconName));
                 } else {

@@ -13,19 +13,14 @@ set(kcm_energyinfo_SRCS
 add_library(kcm_energyinfo MODULE ${kcm_energyinfo_SRCS})
 
 target_link_libraries(kcm_energyinfo
+  Qt5::DBus
+  Qt5::Widgets
   KF5::KIOWidgets
   KF5::CoreAddons
   KF5::KCMUtils
   KF5::I18n
   KF5::Solid
-  #KF5::Plasma
-  #KF5::PlasmaQuick
   KF5::QuickAddons
-  #KF5::KDELibs4Support
-
-  Qt5::DBus
-  Qt5::Widgets
-  Qt5::QuickWidgets
 )
 
 kcoreaddons_desktop_to_json(kcm_energyinfo "kcm_energyinfo.desktop")

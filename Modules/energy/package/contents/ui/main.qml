@@ -41,6 +41,8 @@ Rectangle {
         }
     }
 
+    SystemPalette { id: sysPal; colorGroup: SystemPalette.Active }
+    
     property bool showWakeUps: true
     property int historyType: HistoryModel.ChargeType
 
@@ -297,6 +299,7 @@ Rectangle {
                     PlasmaExtras.Heading {
                         Layout.fillWidth: true
                         Layout.columnSpan: 2
+                        color: sysPal.text
                         level: 4
                         text: i18n("Application Energy Consumption")
                     }
@@ -381,7 +384,7 @@ Rectangle {
 
             Rectangle {
                 Layout.fillWidth: true
-                height: 1 // FIXME dpi
+                height: 1
                 color: "#ccc" // FIXME palette
                 visible: wakeUpsGrid.visible
             }
@@ -402,6 +405,7 @@ Rectangle {
 
                         PlasmaExtras.Heading {
                             level: 4
+                            color: sysPal.text
                             text: modelData.title
                         }
 
