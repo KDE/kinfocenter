@@ -267,12 +267,16 @@ Rectangle {
 
                     yUnits: root.historyType == HistoryModel.RateType ? i18nc("Shorthand for Watts","W") : i18nc("literal percent sign","%")
                     yMax: {
-                        var max = history.largestValue
-                        var modulo = max % 10
-                        if (modulo > 0) {
-                            max = max - modulo + 10 // ceil to nearest 10s
+                        if (root.historyType == HistoryModel.RateType) {
+                            var max = history.largestValue
+                            var modulo = max % 10
+                            if (modulo > 0) {
+                                max = max - modulo + 10 // ceil to nearest 10s
+                            }
+                            return max;
+                        } else {
+                            return 100;
                         }
-                        return max
                     }
                     yStep: root.historyType == HistoryModel.RateType ? 10 : 20
                     visible: history.count > 1
