@@ -1,6 +1,20 @@
 [Desktop Entry]
 Name=Energy Information
+Name[nl]=Energie-informatie
+Name[pt]=Informação de Energia
+Name[pt_BR]=Informações de energia
+Name[sv]=Information om energi
+Name[uk]=Інформація щодо енергоспоживання
+Name[x-test]=xxEnergy Informationxx
+Name[zh_CN]=能源信息
 Comment=Statistics about energy consumption
+Comment[nl]=Statistiek over energiegebruik
+Comment[pt]=Estatísticas acerca do consumo de energia
+Comment[pt_BR]=Estatística do consumo de energia
+Comment[sv]=Statistik om energiförbrukning
+Comment[uk]=Статистика щодо споживання енергії
+Comment[x-test]=xxStatistics about energy consumptionxx
+Comment[zh_CN]=能源消耗的统计
 Icon=preferences-system-power-management
 Encoding=UTF-8
 Keywords=
