@@ -7,9 +7,27 @@ X-KDE-Library=kcm_energyinfo
 X-KDE-ParentApp=kinfocenter
 
 Name=Energy Information
+Name[nl]=Energie-informatie
+Name[pt]=Informação de Energia
+Name[pt_BR]=Informações de energia
+Name[sv]=Information om energi
+Name[uk]=Інформація щодо енергоспоживання
+Name[zh_CN]=能源信息
 Comment=Energy Consumption Statistics
+Comment[nl]=Statistiek van energiegebruik
+Comment[pt]=Estatísticas do Consumo de Energia
+Comment[pt_BR]=Estatística do consumo de energia
+Comment[sv]=Statistik över energiförbrukning
+Comment[uk]=Статистика споживання електроенергії
+Comment[zh_CN]=能源消耗统计
 
 X-KDE-Keywords=Battery,Energy,Statistics,History,Power
+X-KDE-Keywords[nl]=Batterij,Energie,Statistieken,Geschiedenis
+X-KDE-Keywords[pt]=Bateria,Energia,Estatísticas,Histórico,Potência
+X-KDE-Keywords[pt_BR]=Bateria,Energia,Estatística,Histórico,Potência
+X-KDE-Keywords[sv]=Batteri,Energi,Statistik,historik,Effekt
+X-KDE-Keywords[uk]=Battery,Energy,Statistics,History,Power,акумулятор,енергія,статистика,журнал,живлення,споживання,енергоспоживання
+X-KDE-Keywords[zh_CN]=Battery,Energy,Statistics,History,Power,电池,能源,统计,历史,电源
 X-KDE-Weight=2
 
 Categories=Qt;KDE;X-KDE-information;
