@@ -1,16 +1,22 @@
 [Desktop Entry]
 Name=Energy Information
+Name[ca]=Informació d'energia
+Name[gl]=Información da enerxía
 Name[nl]=Energie-informatie
 Name[pt]=Informação de Energia
 Name[pt_BR]=Informações de energia
+Name[sk]=Informácie o energii
 Name[sv]=Information om energi
 Name[uk]=Інформація щодо енергоспоживання
 Name[x-test]=xxEnergy Informationxx
 Name[zh_CN]=能源信息
 Comment=Statistics about energy consumption
+Comment[ca]=Estadístiques quant al consum d'energia
+Comment[gl]=Estatísticas de consumo enerxético.
 Comment[nl]=Statistiek over energiegebruik
 Comment[pt]=Estatísticas acerca do consumo de energia
 Comment[pt_BR]=Estatística do consumo de energia
+Comment[sk]=Štatistiky o spotrebe energie
 Comment[sv]=Statistik om energiförbrukning
 Comment[uk]=Статистика щодо споживання енергії
 Comment[x-test]=xxStatistics about energy consumptionxx
