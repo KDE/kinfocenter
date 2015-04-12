@@ -103,7 +103,7 @@ Name[zh_TW]=USB 裝置
 
 Comment=USB devices attached to this computer
 Comment[af]=USB toestelle gekoppel aan hierdie rekenaar
-Comment[ar]=اعرض أجهزة USB الموصولة إلى هذا الحاسوب
+Comment[ar]=أجهزة USB الموصولة بهذا الحاسوب
 Comment[as]=এই কম্পিউটাৰৰ সৈতে সংযুক্ত USB যন্ত্ৰ
 Comment[be@latin]=Padłučanyja pryłady USB
 Comment[bg]=Данни за USB устройствата
@@ -185,6 +185,7 @@ Comment[zh_CN]=连接到该计算机的 USB 设备
 Comment[zh_TW]=查看連接到這台電腦的 USB 裝置
 
 X-KDE-Keywords=USB,devices,viewer,control
+X-KDE-Keywords[ar]=USB,أجهزة,عارض,تحكّم
 X-KDE-Keywords[bs]=Usb,uređaji,gledatelj,kontrola
 X-KDE-Keywords[ca]=USB,dispositius,visor,control
 X-KDE-Keywords[ca@valencia]=USB,dispositius,visor,control

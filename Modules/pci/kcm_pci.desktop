@@ -103,7 +103,7 @@ Name[zh_TW]=PCI
 
 Comment=PCI information
 Comment[af]=PCI informasie
-Comment[ar]=معلومات عن PCI
+Comment[ar]=معلومات PCI
 Comment[as]=PCI ৰ তথ্য
 Comment[be]=Звесткі пра PCI
 Comment[be@latin]=Źviestki pra PCI
@@ -194,6 +194,7 @@ Comment[zh_CN]=PCI 信息
 Comment[zh_TW]=PCI 資訊
 
 X-KDE-Keywords=PCI,PCI-Devices,PCI-Bus,System Information
+X-KDE-Keywords[ar]=PCI,أجهزة PCI,PCI-Bus,معلومات النّظام
 X-KDE-Keywords[bs]=PCI,PCI-uređaji,PCI-Bus,Sistemske informacije
 X-KDE-Keywords[ca]=PCI,Dispositius PCI,Bus PCI,Informació del sistema
 X-KDE-Keywords[ca@valencia]=PCI,Dispositius PCI,Bus PCI,Informació del sistema

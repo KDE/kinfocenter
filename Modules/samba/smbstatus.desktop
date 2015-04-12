@@ -11,7 +11,7 @@ X-DocPath=kinfocenter/index.html#smbstatus
 
 Name=Samba Status
 Name[af]=Samba Status
-Name[ar]=حالة السامبا
+Name[ar]=حالة سامبا
 Name[as]=Samba ৰ অৱস্থা
 Name[be]=Стан Samba
 Name[be@latin]=Stanovišča słužby „Samba”
@@ -103,7 +103,7 @@ Name[zh_TW]=Samba 狀態
 
 Comment=Samba status monitor
 Comment[af]=Samba status monitor
-Comment[ar]=مراقب حالة السامبا
+Comment[ar]=مراقب حالة سامبا
 Comment[as]=Samba ৰ অৱস্থাৰ নিৰীক্ষণ
 Comment[be]=Назіральнік стану Samba
 Comment[be@latin]=Nazirańnik za stanoviščam słužby „Samba”
@@ -194,6 +194,7 @@ Comment[zh_CN]=Samba 状态监视器
 Comment[zh_TW]=Samba 狀態監視器
 
 X-KDE-Keywords=SMB,SAMBA,Windows network,LAN,System Information
+X-KDE-Keywords[ar]=SMB,سامبا,شبكة وندوز,LAN,معلومات النّظام
 X-KDE-Keywords[bs]=SMB,SAMBA,Windows umrežavanje,LAN,Sistemske informacije
 X-KDE-Keywords[ca]=SMB,SAMBA,Xarxa Windows,LAN,Informació del sistema
 X-KDE-Keywords[ca@valencia]=SMB,SAMBA,Xarxa Windows,LAN,Informació del sistema

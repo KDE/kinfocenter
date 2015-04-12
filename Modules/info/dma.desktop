@@ -13,7 +13,7 @@ X-DocPath=kinfocenter/index.html#dma
 
 Name=DMA-Channels
 Name[af]=Dma-kanale
-Name[ar]=DMA قنوات
+Name[ar]=قنوات DMA
 Name[as]=DMA-Channels
 Name[be]=Каналы DMA
 Name[be@latin]=Kanały DMA
@@ -196,7 +196,7 @@ Comment[zh_CN]=DMA 信息
 Comment[zh_TW]=DMA 資訊
 
 X-KDE-Keywords=dma,DMA-Channels,System Information
-X-KDE-Keywords[ar]=قنوات,معلومات,نظام,dma
+X-KDE-Keywords[ar]=dma,قنوات DMA,معلومات النّظام
 X-KDE-Keywords[bs]=dma,DMA-Kanali, Sistemske informacije
 X-KDE-Keywords[ca]=dma,Canals DMA,Informació del sistema
 X-KDE-Keywords[ca@valencia]=dma,Canals DMA,Informació del sistema

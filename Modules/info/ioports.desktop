@@ -13,7 +13,7 @@ X-DocPath=kinfocenter/index.html#ioports
 
 Name=IO-Ports
 Name[af]=Io-poorte
-Name[ar]=منافذ الإدخال والإخراج
+Name[ar]=منافذ الدّخل والخرج
 Name[as]=IO-Ports
 Name[be]=Парты ўводу/вываду
 Name[be@latin]=Porty dla pierasyłańnia źviestak
@@ -105,7 +105,7 @@ Name[zh_TW]=IO-Ports
 
 Comment=IO-port information
 Comment[af]=Io-poort informasie
-Comment[ar]=معلومات عن منافذ الإدخال والإخراج
+Comment[ar]=معلومات عن منافذ الدّخل والخرج
 Comment[as]=IO-port তথ্য
 Comment[be]=Звесткі пра парты уводу/вываду
 Comment[be@latin]=Źviestki pra porty pierasyłańnia
