@@ -33,6 +33,7 @@ Name[sv]=Information om energi
 Name[uk]=Інформація щодо енергоспоживання
 Name[x-test]=xxEnergy Informationxx
 Name[zh_CN]=能源信息
+Name[zh_TW]=能源資訊
 Comment=Energy Consumption Statistics
 Comment[ca]=Estadístiques de consum d'energia
 Comment[de]=Statistiken über den Energieverbrauch
@@ -59,6 +60,7 @@ Comment[sv]=Statistik över energiförbrukning
 Comment[uk]=Статистика споживання електроенергії
 Comment[x-test]=xxEnergy Consumption Statisticsxx
 Comment[zh_CN]=能源消耗统计
+Comment[zh_TW]=能源消耗統計
 
 X-KDE-Keywords=Battery,Energy,Statistics,History,Power
 X-KDE-Keywords[ca]=Bateria,Energia,Estadístiques,Historial,Potència
@@ -86,6 +88,7 @@ X-KDE-Keywords[sv]=Batteri,Energi,Statistik,historik,Effekt
 X-KDE-Keywords[uk]=Battery,Energy,Statistics,History,Power,акумулятор,енергія,статистика,журнал,живлення,споживання,енергоспоживання
 X-KDE-Keywords[x-test]=xxBatteryxx,xxEnergyxx,xxStatisticsxx,xxHistoryxx,xxPowerxx
 X-KDE-Keywords[zh_CN]=Battery,Energy,Statistics,History,Power,电池,能源,统计,历史,电源
+X-KDE-Keywords[zh_TW]=Battery,Energy,Statistics,History,Power
 X-KDE-Weight=2
 
 Categories=Qt;KDE;X-KDE-information;
