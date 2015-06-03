@@ -933,8 +933,6 @@ bool GetInfo_OpenGL(QTreeWidget *treeWidget)
 
             l2 = get_gl_info_glx(dpy, scrnum, true, l1, l2);
             if (l2) l2->setExpanded(true);
-
-            if (IsDirect) l2 = get_gl_info_glx(dpy, scrnum, false, l1, l2);
 #endif
 #if KCM_HAVE_EGL
             l2 = get_gl_info_egl(dpy, scrnum, l1, l2);
