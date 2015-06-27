@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Energy Information
+Name[ast]=Información d'enerxía
 Name[ca]=Informació d'energia
 Name[cs]=Informace o energii
 Name[de]=Energie-Information
@@ -30,6 +31,7 @@ Name[x-test]=xxEnergy Informationxx
 Name[zh_CN]=能源信息
 Name[zh_TW]=能源資訊
 Comment=Statistics about energy consumption
+Comment[ast]=Estadístiques tocante al consumu d'enerxía
 Comment[ca]=Estadístiques quant al consum d'energia
 Comment[cs]=Statistika o spotřebě energie
 Comment[de]=Statistiken über den Energieverbrauch

@@ -7,6 +7,7 @@ X-KDE-Library=kcm_energyinfo
 X-KDE-ParentApp=kinfocenter
 
 Name=Energy Information
+Name[ast]=Información d'enerxía
 Name[ca]=Informació d'energia
 Name[cs]=Informace o energii
 Name[de]=Energie-Information
@@ -37,6 +38,7 @@ Name[x-test]=xxEnergy Informationxx
 Name[zh_CN]=能源信息
 Name[zh_TW]=能源資訊
 Comment=Energy Consumption Statistics
+Comment[ast]=Estadístiques del consumu d'enerxía
 Comment[ca]=Estadístiques de consum d'energia
 Comment[cs]=Statistika spotřeby energie
 Comment[de]=Statistiken über den Energieverbrauch
@@ -68,6 +70,7 @@ Comment[zh_CN]=能源消耗统计
 Comment[zh_TW]=能源消耗統計
 
 X-KDE-Keywords=Battery,Energy,Statistics,History,Power
+X-KDE-Keywords[ast]=Batería,Enerxía,Estadístiques,Historia
 X-KDE-Keywords[ca]=Bateria,Energia,Estadístiques,Historial,Potència
 X-KDE-Keywords[cs]=Baterie,Energie,Statistika,Historie,Napájení
 X-KDE-Keywords[de]=Akku,Energie,Statistik,Verlauf
