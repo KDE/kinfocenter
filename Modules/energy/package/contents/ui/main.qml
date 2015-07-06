@@ -34,6 +34,8 @@ Rectangle {
     id: root
     property QtObject currentBattery: null
     property string currentUdi: ""
+    property bool compact: (root.width / units.gridUnit) < 25
+
     onCurrentBatteryChanged: {
         if (!currentBattery) {
             currentBattery = kcm.batteries.get(0)
@@ -197,8 +199,9 @@ Rectangle {
                 spacing: units.smallSpacing
                 visible: !!currentBattery
 
-                RowLayout {
+                GridLayout {
                     Layout.fillWidth: true
+                    columns: !compact ? 5 : 3
 
                     Button {
                         id: chargeButton
@@ -228,6 +231,7 @@ Rectangle {
                     ComboBox {
                         id: timespanCombo
                         Layout.minimumWidth: units.gridUnit * 6
+                        visible: graph.visible
                         model: [
                             {text: i18n("Last hour"), value: 3600},
                             {text: i18n("Last 2 hours"), value: 7200},
@@ -242,6 +246,7 @@ Rectangle {
 
                     Button {
                         iconName: "view-refresh"
+                        visible: graph.visible
                         tooltip: i18n("Refresh")
                         Accessible.name: tooltip
                         onClicked: history.refresh()
@@ -312,17 +317,18 @@ Rectangle {
                 GridLayout {
                     id: wakeUpsGrid
                     Layout.fillWidth: true
-                    rows: kcm.wakeUps.count / 2
+                    rows: compact ? kcm.wakeUps.count : kcm.wakeUps.count / 2
                     flow: GridLayout.TopToBottom
                     rowSpacing: units.smallSpacing
                     columnSpacing: units.smallSpacing
+                    property int barWidth: (compact ? root.width - units.gridUnit: root.width / 2) - units.smallSpacing * 2
 
                     Repeater {
                         model: showWakeUps ? kcm.wakeUps : null
 
                         PlasmaCore.ToolTipArea { // FIXME use widget style tooltip
-                            Layout.minimumWidth: root.width / 2 - units.smallSpacing * 2
-                            Layout.maximumWidth: root.width / 2 - units.smallSpacing * 2
+                            Layout.minimumWidth: wakeUpsGrid.barWidth
+                            Layout.maximumWidth: wakeUpsGrid.barWidth
                             height: childrenRect.height
                             z: 2 // since the progress bar eats mouse events
                             mainText: model.prettyName || model.name
@@ -390,6 +396,7 @@ Rectangle {
                 Layout.fillWidth: true
                 height: 1
                 color: "#ccc" // FIXME palette
+                //Layout.topMargin: (compact ? units.gridUnit * 2 : 0)
                 visible: wakeUpsGrid.visible
             }
 
