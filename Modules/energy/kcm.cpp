@@ -55,7 +55,7 @@ KCMEnergyInfo::KCMEnergyInfo(QObject *parent, const QVariantList &args) : Config
 
     qmlRegisterType<BatteryModel>();
     qmlRegisterType<WakeUpModel>();
-    qmlRegisterType<StatisticsProvider>("KCM", 1, 0, "HistoryModel");
+    qmlRegisterType<StatisticsProvider>("org.kde.kinfocenter.energy.private", 1, 0, "HistoryModel");
 
     KAboutData *about = new KAboutData("kcm_energyinfo", i18n("Energy Consumption Statistics"),
                                        "0.1", QString(), KAboutLicense::GPL);

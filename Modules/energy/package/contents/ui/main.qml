@@ -22,7 +22,7 @@ import QtQuick.Controls 1.3
 import QtQuick.Layouts 1.1
 
 import org.kde.kquickcontrolsaddons 2.0
-import KCM 1.0
+import org.kde.kinfocenter.energy.private 1.0
 
 //We need units from it
 import org.kde.plasma.core 2.0 as PlasmaCore
