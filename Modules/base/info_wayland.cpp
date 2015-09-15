@@ -26,6 +26,7 @@ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 
 #include <KWayland/Client/connection_thread.h>
 #include <KWayland/Client/event_queue.h>
+#include <KWayland/Client/keyboard.h>
 #include <KWayland/Client/output.h>
 #include <KWayland/Client/seat.h>
 #include <KWayland/Client/registry.h>
@@ -96,7 +97,19 @@ void WaylandModule::init()
                     connect(seat, &Seat::hasKeyboardChanged, this,
                         [this, seat, seatItem] {
                             if (seat->hasKeyboard()) {
-                                new QTreeWidgetItem(seatItem, QStringList() << i18n("Keyboard"));
+                                auto i = new QTreeWidgetItem(seatItem, QStringList{i18n("Keyboard")});
+                                i->setExpanded(true);
+                                auto e = new QTreeWidgetItem(i, QStringList{i18n("Repeat enabled")});
+                                auto r = new QTreeWidgetItem(i, QStringList{i18n("Repeat rate (characters per second)")});
+                                auto d = new QTreeWidgetItem(i, QStringList{i18n("Repeat delay (msec)")});
+                                auto k = seat->createKeyboard(seat);
+                                connect(k, &Keyboard::keyRepeatChanged, this,
+                                        [this, k, e, r, d] {
+                                            e->setText(1, k->isKeyRepeatEnabled() ? i18n("Yes") : i18n("No"));
+                                            r->setText(1, QString::number(k->keyRepeatRate()));
+                                            d->setText(1, QString::number(k->keyRepeatDelay()));
+                                        }
+                                );
                             }
                         }
                     );
