@@ -7,10 +7,31 @@ X-KDE-Library=kcm_fileindexermonitor
 X-KDE-ParentApp=kinfocenter
 
 Name=File Indexer Monitor
+Name[ca]=Controlador de l'indexador de fitxers
+Name[es]=Monitor del indexador de archivos
+Name[nl]=Monitor voor bestandenindexering
+Name[pt]=Monitor de Indexação de Ficheiros
+Name[pt_BR]=Monitor de Indexação de Arquivos
+Name[uk]=Монітор засобу індексування файлів
+Name[x-test]=xxFile Indexer Monitorxx
 
 Comment=Monitor State of File Indexer
+Comment[ca]=Controlador de l'estat de l'indexador de fitxers
+Comment[es]=Monitoriza el estado del indexador de archivos
+Comment[nl]=Monitorstatus voor bestandenindexering
+Comment[pt]=Vigia o estado da indexação dos ficheiros
+Comment[pt_BR]=Monitora o estado da indexação dos arquivos
+Comment[uk]=Спостереження за станом засобу індексування файлів
+Comment[x-test]=xxMonitor State of File Indexerxx
 
 X-KDE-Keywords=Baloo,File,Index,Monitor
+X-KDE-Keywords[ca]=Baloo,Fitxer,Índex,Controlador
+X-KDE-Keywords[es]=Baloo,Archivo,Índice,Monitor
+X-KDE-Keywords[nl]=Baloo,bestand,index,monitor
+X-KDE-Keywords[pt]=Baloo,Ficheiro,Índice,Monitor
+X-KDE-Keywords[pt_BR]=Baloo,Arquivo,Índice,Monitor
+X-KDE-Keywords[uk]=Baloo,File,Index,Monitor,балу,файл,індекс,індексування,монітор,спостереження,стеження
+X-KDE-Keywords[x-test]=xxBalooxx,xxFilexx,xxIndexxx,xxMonitorxx
 X-KDE-Weight=3
 
 Categories=Qt;KDE;X-KDE-information;
