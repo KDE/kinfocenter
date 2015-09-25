@@ -48,7 +48,7 @@ Item {
         }
 
         Label {
-            id: url
+            id: filePath
 
             // Required so that text elides instead of expanding the entire layout
             Layout.maximumWidth: parent.width
@@ -58,7 +58,7 @@ Item {
 
             text: {
                 if (monitor.state == Constants.State.ContentIndexing) {
-                    return i18n("Indexing: %1 ", monitor.url)
+                    return i18n("Indexing: %1 ", monitor.filePath)
                 } else if (monitor.state == Constants.State.Idle && monitor.filesIndexed == monitor.totalFiles) {
                     return i18n("Done")
                 } else {
