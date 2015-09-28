@@ -8,7 +8,9 @@ X-KDE-ParentApp=kinfocenter
 
 Name=File Indexer Monitor
 Name[ca]=Controlador de l'indexador de fitxers
+Name[en_GB]=File Indexer Monitor
 Name[es]=Monitor del indexador de archivos
+Name[it]=Monitor indicizzatore di file
 Name[nl]=Monitor voor bestandenindexering
 Name[pl]=Monitor indeksowania plików
 Name[pt]=Monitor de Indexação de Ficheiros
@@ -18,7 +20,9 @@ Name[x-test]=xxFile Indexer Monitorxx
 
 Comment=Monitor State of File Indexer
 Comment[ca]=Controlador de l'estat de l'indexador de fitxers
+Comment[en_GB]=Monitor State of File Indexer
 Comment[es]=Monitoriza el estado del indexador de archivos
+Comment[it]=Controlla lo stato dell'indicizzatore di file
 Comment[nl]=Monitorstatus voor bestandenindexering
 Comment[pl]=Stan monitora indeksowania plików
 Comment[pt]=Vigia o estado da indexação dos ficheiros
@@ -28,7 +32,9 @@ Comment[x-test]=xxMonitor State of File Indexerxx
 
 X-KDE-Keywords=Baloo,File,Index,Monitor
 X-KDE-Keywords[ca]=Baloo,Fitxer,Índex,Controlador
+X-KDE-Keywords[en_GB]=Baloo,File,Index,Monitor
 X-KDE-Keywords[es]=Baloo,Archivo,Índice,Monitor
+X-KDE-Keywords[it]=Baloo,file,indice,monitor
 X-KDE-Keywords[nl]=Baloo,bestand,index,monitor
 X-KDE-Keywords[pl]=Baloo,Plik,Indeks,Monitor
 X-KDE-Keywords[pt]=Baloo,Ficheiro,Índice,Monitor
