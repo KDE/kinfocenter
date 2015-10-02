@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=File Indexer Monitor
 Name[ca]=Controlador de l'indexador de fitxers
+Name[de]=Datei-Indizierungsüberwachung
 Name[en_GB]=File Indexer Monitor
 Name[es]=Monitor del indexador de archivos
 Name[fi]=Tiedostoindeksoijan valvonta
@@ -14,6 +15,7 @@ Name[uk]=Монітор засобу індексування файлів
 Name[x-test]=xxFile Indexer Monitorxx
 Comment=File Index Monitor
 Comment[ca]=Controlador de l'índex de fitxers
+Comment[de]=Datei-Indizierungsüberwachung
 Comment[en_GB]=File Index Monitor
 Comment[es]=Monitor del índice de archivos
 Comment[fi]=Tiedostoindeksoijan valvonta
