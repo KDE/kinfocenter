@@ -7,6 +7,7 @@ X-KDE-Library=kcm_fileindexermonitor
 X-KDE-ParentApp=kinfocenter
 
 Name=File Indexer Monitor
+Name[ast]=Monitorizador d'indizador de ficheros
 Name[ca]=Controlador de l'indexador de fitxers
 Name[de]=Datei-Indizierungsüberwachung
 Name[en_GB]=File Indexer Monitor
@@ -30,6 +31,7 @@ Name[x-test]=xxFile Indexer Monitorxx
 Name[zh_CN]=文件索引器监视器
 
 Comment=Monitor State of File Indexer
+Comment[ast]=Monitoriza l'estáu del indizador de ficheros
 Comment[ca]=Controlador de l'estat de l'indexador de fitxers
 Comment[de]=Überwachungsstatus der Datei-Indizierung
 Comment[en_GB]=Monitor State of File Indexer
@@ -53,6 +55,7 @@ Comment[x-test]=xxMonitor State of File Indexerxx
 Comment[zh_CN]=监视文件索引器状态
 
 X-KDE-Keywords=Baloo,File,Index,Monitor
+X-KDE-Keywords[ast]=Baloo,Ficheru,Índiz,Monitorizar
 X-KDE-Keywords[ca]=Baloo,Fitxer,Índex,Controlador
 X-KDE-Keywords[de]=Baloo,Datei,Index,Indizierung,Überwachung
 X-KDE-Keywords[en_GB]=Baloo,File,Index,Monitor
