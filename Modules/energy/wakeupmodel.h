@@ -24,6 +24,7 @@
 #include <QHash>
 #include <QList>
 #include <QPair>
+#include <QTime>
 
 class WakeUpData {
 public:
@@ -77,6 +78,7 @@ private:
     QHash<QString, WakeUpData> m_combinedData;
     qreal m_total = 0.0;
     QHash<QString, QPair<QString, QString>> m_applicationInfo;
+    QTime m_lastReload;
 
 };
 
