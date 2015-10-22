@@ -68,7 +68,7 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
 
     //SearchBox
     connect(m_searchText, SIGNAL(textChanged(QString)), m_sideMenu, SLOT(filterSideMenuSlot(QString)));
-    connect(m_searchAction, SIGNAL(triggered(Qt::MouseButtons,Qt::KeyboardModifiers)),m_searchText,SLOT(setFocus()));
+    connect(m_searchAction, SIGNAL(triggered()),m_searchText,SLOT(setFocus()));
 
     //Buttons
     connect(m_moduleHelpAction, SIGNAL(triggered(bool)),this,SLOT(helpClickedSlot()));
@@ -100,7 +100,7 @@ KInfoCenter::~KInfoCenter()
 
     //SearchBox
     disconnect(m_searchText, SIGNAL(textChanged(QString)), m_sideMenu, SLOT(filterSideMenuSlot(QString)));
-    disconnect(m_searchAction, SIGNAL(triggered(Qt::MouseButtons,Qt::KeyboardModifiers)),m_searchText, SLOT(setFocus()));
+    disconnect(m_searchAction, SIGNAL(triggered()),m_searchText, SLOT(setFocus()));
 
     //Buttons
     disconnect(m_moduleHelpAction, SIGNAL(triggered(bool)),this,SLOT(helpClickedSlot()));

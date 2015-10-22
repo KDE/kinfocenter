@@ -73,6 +73,16 @@ WakeUpModel::WakeUpModel(QObject *parent) : QAbstractListModel(parent)
 
 void WakeUpModel::reload()
 {
+    // It is possible that DataChanged is emitted very quickly, up to the point
+    // that upower won't be able to respond, resulting in errors due to maximum number
+    // of pending replies.
+    // One update per second should be enough.
+    if (!m_lastReload.isNull() && m_lastReload.secsTo(QTime::currentTime()) < 1) {
+        return;
+    }
+
+    m_lastReload = QTime::currentTime();
+
     QDBusPendingReply<QList<WakeUpReply>> reply = QDBusConnection::systemBus().asyncCall(
         QDBusMessage::createMethodCall(QStringLiteral("org.freedesktop.UPower"),
                                        QStringLiteral("/org/freedesktop/UPower/Wakeups"),
