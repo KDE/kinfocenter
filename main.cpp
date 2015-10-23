@@ -37,14 +37,7 @@ KicApp::KicApp(int &argc, char **argv)
 {
     QApplication::setApplicationDisplayName(i18n("KDE Info Center"));
     QApplication::setOrganizationDomain("kde.org");
-    display = new KInfoCenter();
-    display->show();
 
-    KDBusService* service = new KDBusService(KDBusService::Unique, this);
-}
-
-int main(int argc, char *argv[])
-{
     KLocalizedString::setApplicationDomain("kinfocenter");
 
     KAboutData aboutData( QStringLiteral("kinfocenter"), i18n("KDE Info Center"),
@@ -60,14 +53,23 @@ int main(int argc, char *argv[])
     aboutData.addAuthor(i18n("Waldo Bastian"), QString(), QStringLiteral("bastian@kde.org"));
     aboutData.addAuthor(i18n("Nicolas Ternisien"), QString(), QStringLiteral("nicolas.ternisien@gmail.com"));
     KAboutData::setApplicationData(aboutData);
-    KicApp Kic(argc, argv);
 
     QCommandLineParser parser;
     parser.addHelpOption();
     parser.addVersionOption();
     aboutData.setupCommandLine(&parser);
-    parser.process(Kic);
+    parser.process(*this);
     aboutData.processCommandLine(&parser);
+
+    display = new KInfoCenter();
+    display->show();
+
+    KDBusService* service = new KDBusService(KDBusService::Unique, this);
+}
+
+int main(int argc, char *argv[])
+{
+    KicApp Kic(argc, argv);
 
     return Kic.exec();
 }
