@@ -156,7 +156,7 @@ QGroupBox* KCMMemory::initializeText() {
 			title = i18n("Free swap memory:");
 			break;
 		default:
-			title = "";
+			title = QLatin1String("");
 			break;
 		};
 		QLabel* labelWidget = new QLabel(title, this);

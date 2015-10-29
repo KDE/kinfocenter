@@ -32,7 +32,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 KInfoListWidget::KInfoListWidget(const QString &_title, QWidget *parent, bool _getlistbox(QTreeWidget *tree) ) :
 	KCModule(parent), title(_title) {
-	KAboutData *about = new KAboutData("kcminfo",
+	KAboutData *about = new KAboutData(QStringLiteral("kcminfo"),
 			i18n("System Information Control Module"),
 			QString(), QString(), KAboutLicense::GPL,
 			i18n(	"(c) 2008 Nicolas Ternisien\n"
@@ -76,7 +76,7 @@ void KInfoListWidget::load() {
 	//TODO Remove tree content before clear it
 	tree->clear();
 
-	errorString = i18nc("%1 is one of the modules of the kinfocenter, cpu info, os info, etc", "No information available about %1.", title) + QLatin1String("\n\n") + DEFAULT_ERRORSTRING;
+	errorString = i18nc("%1 is one of the modules of the kinfocenter, cpu info, os info, etc", "No information available about %1.", title) + QStringLiteral("\n\n") + DEFAULT_ERRORSTRING;
 
 	/* No Sorting per default */
 	tree->setSortingEnabled(false); 

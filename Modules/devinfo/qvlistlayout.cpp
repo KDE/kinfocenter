@@ -44,7 +44,7 @@ void QVListLayout::applyQListToLayout(const QStringList &list)
     {     
       bLabel = new QLabel(item);
       bLabel->setWordWrap(true);
-      if(bLabel->text() != "--")
+      if(bLabel->text() != QLatin1String("--"))
       { 
 	if(toggle) 
 	{ 
@@ -58,7 +58,7 @@ void QVListLayout::applyQListToLayout(const QStringList &list)
 	}
 	
       } else {
-	bLabel->setText("");
+	bLabel->setText(QLatin1String(""));
       }
       addWidget(bLabel);
     }

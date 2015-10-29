@@ -19,12 +19,12 @@
 #include <QDebug>
 
 USBDB::USBDB() {
-	QString db = "/usr/share/hwdata/usb.ids"; /* on Fedora and Arch*/
+	QString db = QStringLiteral("/usr/share/hwdata/usb.ids"); /* on Fedora and Arch*/
 	if (!QFile::exists(db)) {
                 //cannot use locate(AppDataLocation) as the app is kinfocenter
-		db = QStandardPaths::locate(QStandardPaths::GenericDataLocation, "kcmusb", QStandardPaths::LocateDirectory);
+		db = QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("kcmusb"), QStandardPaths::LocateDirectory);
                 if (!db.isEmpty())
-                    db+="/usb.ids";
+                    db+=QLatin1String("/usb.ids");
         }
 	if (db.isEmpty())
 		return;
@@ -37,43 +37,43 @@ USBDB::USBDB() {
 
 		QString line, name;
 		int id=0, subid=0, protid=0;
-		QRegExp vendor("[0-9a-fA-F]+ ");
-		QRegExp product("\\s+[0-9a-fA-F]+ ");
-		QRegExp cls("C [0-9a-fA-F][0-9a-fA-F]");
-		QRegExp subclass("\\s+[0-9a-fA-F][0-9a-fA-F]  ");
-		QRegExp prot("\\s+[0-9a-fA-F][0-9a-fA-F]  ");
+		QRegExp vendor(QStringLiteral("[0-9a-fA-F]+ "));
+		QRegExp product(QStringLiteral("\\s+[0-9a-fA-F]+ "));
+		QRegExp cls(QStringLiteral("C [0-9a-fA-F][0-9a-fA-F]"));
+		QRegExp subclass(QStringLiteral("\\s+[0-9a-fA-F][0-9a-fA-F]  "));
+		QRegExp prot(QStringLiteral("\\s+[0-9a-fA-F][0-9a-fA-F]  "));
 		while (!ts.atEnd()) {
 			line = ts.readLine();
-			if (line.left(1) == "#" || line.trimmed().isEmpty())
+			if (line.left(1) == QLatin1String("#") || line.trimmed().isEmpty())
 				continue;
 
 			// skip AT lines
-			if (line.left(2) == "AT")
+			if (line.left(2) == QLatin1String("AT"))
 				continue;
 
 			if (cls.indexIn(line) == 0 && cls.matchedLength() == 4) {
-				id = line.mid(2,2).toInt(0, 16);
+				id = line.midRef(2,2).toInt(0, 16);
 				name = line.mid(4).trimmed();
-				_classes.insert(QString("%1").arg(id), name);
+				_classes.insert(QStringLiteral("%1").arg(id), name);
 			} else if (prot.indexIn(line) == 0 && prot.matchedLength() > 5) {
 				line = line.trimmed();
-				protid = line.left(2).toInt(0, 16);
+				protid = line.leftRef(2).toInt(0, 16);
 				name = line.mid(4).trimmed();
-				_classes.insert(QString("%1-%2-%3").arg(id).arg(subid).arg(protid), name);
+				_classes.insert(QStringLiteral("%1-%2-%3").arg(id).arg(subid).arg(protid), name);
 			} else if (subclass.indexIn(line) == 0 && subclass.matchedLength() > 4) {
 				line = line.trimmed();
-				subid = line.left(2).toInt(0, 16);
+				subid = line.leftRef(2).toInt(0, 16);
 				name = line.mid(4).trimmed();
-				_classes.insert(QString("%1-%2").arg(id).arg(subid), name);
+				_classes.insert(QStringLiteral("%1-%2").arg(id).arg(subid), name);
 			} else if (vendor.indexIn(line) == 0 && vendor.matchedLength() == 5) {
-				id = line.left(4).toInt(0, 16);
+				id = line.leftRef(4).toInt(0, 16);
 				name = line.mid(6);
-				_ids.insert(QString("%1").arg(id), name);
+				_ids.insert(QStringLiteral("%1").arg(id), name);
 			} else if (product.indexIn(line) == 0 && product.matchedLength() > 5) {
 				line = line.trimmed();
-				subid = line.left(4).toInt(0, 16);
+				subid = line.leftRef(4).toInt(0, 16);
 				name = line.mid(6);
-				_ids.insert(QString("%1-%2").arg(id).arg(subid), name);
+				_ids.insert(QStringLiteral("%1-%2").arg(id).arg(subid), name);
 			}
 
 		}
@@ -83,7 +83,7 @@ USBDB::USBDB() {
 }
 
 QString USBDB::vendor(int id) {
-	QString s = _ids[QString("%1").arg(id)];
+	QString s = _ids[QStringLiteral("%1").arg(id)];
 	if (id != 0) {
 		return s;
 	}
@@ -91,21 +91,21 @@ QString USBDB::vendor(int id) {
 }
 
 QString USBDB::device(int vendor, int id) {
-	QString s = _ids[QString("%1-%2").arg(vendor).arg(id)];
+	QString s = _ids[QStringLiteral("%1-%2").arg(vendor).arg(id)];
 	if ((id != 0) && (vendor != 0))
 		return s;
 	return QString();
 }
 
 QString USBDB::cls(int cls) {
-	return _classes[QString("%1").arg(cls)];
+	return _classes[QStringLiteral("%1").arg(cls)];
 }
 
 QString USBDB::subclass(int cls, int sub) {
-	return _classes[QString("%1-%2").arg(cls).arg(sub)];
+	return _classes[QStringLiteral("%1-%2").arg(cls).arg(sub)];
 }
 
 QString USBDB::protocol(int cls, int sub, int prot) {
-	return _classes[QString("%1-%2-%3").arg(cls).arg(sub).arg(prot)];
+	return _classes[QStringLiteral("%1-%2-%3").arg(cls).arg(sub).arg(prot)];
 }
 

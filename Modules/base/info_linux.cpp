@@ -112,7 +112,7 @@ bool GetInfo_DMA(QTreeWidget* tree) {
 		line = stream.readLine();
 		while (!line.isNull()) {
 			if (!line.isEmpty()) {
-				QRegExp rx("^\\s*(\\S+)\\s*:\\s*(\\S+)");
+				QRegExp rx(QStringLiteral("^\\s*(\\S+)\\s*:\\s*(\\S+)"));
 				if (-1 != rx.indexIn(line)) {
 					QStringList list;
 					list << rx.cap(1) << rx.cap(2);

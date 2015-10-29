@@ -82,7 +82,7 @@ QVListLayout *SolProcessorDevice::infoPanelLayout()
   << i18n("Max Speed: ") 
   << InfoPanel::friendlyString(QString::number(prodev->maxSpeed()))
   << i18n("Supported Instruction Sets: ")
-  << extensions.join("\n");
+  << extensions.join(QStringLiteral("\n"));
   
   deviceInfoLayout->applyQListToLayout(labels);
   return deviceInfoLayout;
@@ -245,7 +245,7 @@ QVListLayout *SolVolumeDevice::infoPanelLayout()
   
   if(accdev) 
   {  
-    labels << "--"
+    labels << QStringLiteral("--")
     << i18n("Mounted At: ") 
     << InfoPanel::friendlyString(accdev->filePath(),i18n("Not Mounted"));
     

@@ -228,7 +228,7 @@ void View1394::rescanBus() {
 			else {
 				QString guidStr;
 				char buf[32];
-				snprintf(buf, 32, "%llX", guid);
+				snprintf(buf, 32, "%lX", guid);
 				guidStr=buf;
 				guidStr="0x"+guidStr.rightJustified(16, '0');
 				QString local=((j | 0xffc0) == localNodeId) ? "X" : "";
@@ -242,17 +242,17 @@ void View1394::rescanBus() {
 				QString speedStr;
 				switch (speed) {
 				case (3):
-					speedStr="800";
+					speedStr=QLatin1String("800");
 					break;
 				case (2):
-					speedStr="400";
+					speedStr=QLatin1String("400");
 					break;
 				case (1):
-					speedStr="200";
+					speedStr=QLatin1String("200");
 					break;
 				case (0):
 				default:
-					speedStr="100";
+					speedStr=QLatin1String("100");
 					break;
 				}
 				
@@ -274,7 +274,7 @@ void View1394::generateBusReset() {
 }
 
 OuiDb::OuiDb() {
-	QString filename=QStandardPaths::locate(QStandardPaths::GenericDataLocation, "kcmview1394/oui.db");
+	QString filename=QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("kcmview1394/oui.db"));
 	if (filename.isEmpty())
 		return;
 	QFile f(filename);

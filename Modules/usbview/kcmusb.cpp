@@ -110,8 +110,8 @@ static void delete_recursive(QTreeWidgetItem *item, const QMap<int, QTreeWidgetI
 void USBViewer::refresh() {
 	QMap<int, QTreeWidgetItem*> new_items;
 
-	if (!USBDevice::parse("/proc/bus/usb/devices"))
-		USBDevice::parseSys("/sys/bus/usb/devices");
+	if (!USBDevice::parse(QStringLiteral("/proc/bus/usb/devices")))
+		USBDevice::parseSys(QStringLiteral("/sys/bus/usb/devices"));
 
 	int level = 0;
 	bool found = true;

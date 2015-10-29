@@ -101,13 +101,13 @@ void SidePanel::filterSideMenuSlot(const QString &pattern)
 void SidePanel::createMenuActions()
 {
     resetAct = new QAction(i18n("Clear Search"), this);
-    connect(resetAct, SIGNAL(triggered()), this, SLOT(resetSearchSlot()));
+    connect(resetAct, &QAction::triggered, this, &SidePanel::resetSearchSlot);
 
     expAct = new QAction(i18n("Expand All Categories"), this);
-    connect(expAct, SIGNAL(triggered()), this, SLOT(expandAllSlot()));
+    connect(expAct, &QAction::triggered, this, &SidePanel::expandAllSlot);
 
     colAct = new QAction(i18n("Collapse All Categories"), this);
-    connect(colAct, SIGNAL(triggered()), this, SLOT(collapseAllSlot()));
+    connect(colAct, &QAction::triggered, this, &SidePanel::collapseAllSlot);
 }
 
 void SidePanel::contextMenuEvent(QContextMenuEvent *event)
@@ -137,6 +137,6 @@ QStringList SidePanel::allChildKeywords()
 
 void SidePanel::resetSearchSlot()
 {
-    filterSideMenuSlot("");
+    filterSideMenuSlot(QLatin1String(""));
 }
 

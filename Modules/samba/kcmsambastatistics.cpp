@@ -77,8 +77,8 @@ StatisticsView::StatisticsView(QWidget *parent, KConfig *config) :
 	expandedInfoCb->setChecked(false);
 	expandedUserCb->setChecked(false);
 	clearStatistics();
-	serviceLe->setText("*");
-	hostLe->setText("*");
+	serviceLe->setText(QStringLiteral("*"));
+	hostLe->setText(QStringLiteral("*"));
 
 	viewStatistics->setMinimumSize(375, 200);
 	connectionsL->setMinimumSize(connectionsL->sizeHint());
@@ -192,9 +192,9 @@ void StatisticsView::calculate() {
 				}
 
 				calcCount++;
-				QString number("");
+				QString number(QLatin1String(""));
 				number.sprintf("%6d", calcCount);
-				QString hits("");
+				QString hits(QLatin1String(""));
 				hits.sprintf("%7d", tmpStr->count);
 				QTreeWidgetItem *item = new QTreeWidgetItem(viewStatistics);
 				item->setText(0, number);
@@ -222,9 +222,9 @@ void StatisticsView::calculate() {
 					count++;
 			}
 		}
-		QString number("");
+		QString number(QLatin1String(""));
 		number.sprintf("%6d", calcCount);
-		QString hits("");
+		QString hits(QLatin1String(""));
 		hits.sprintf("%7d", count);
 		QTreeWidgetItem *item = new QTreeWidgetItem(viewStatistics);
 		item->setText(0, number);

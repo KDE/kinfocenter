@@ -41,25 +41,25 @@ InfoKcmModel::~InfoKcmModel()
 
 void InfoKcmModel::createTreeItems()
 {
-    KService::List categoryList = KServiceTypeTrader::self()->query("KInfoCenterCategory");
+    KService::List categoryList = KServiceTypeTrader::self()->query(QStringLiteral("KInfoCenterCategory"));
 
     foreach(const KService::Ptr &categoryModule, categoryList) {
         m_root->addChild(new KcmCategoryItem(categoryModule,m_root));
     }
 
-    KService::List moduleList = KServiceTypeTrader::self()->query("KCModule", "[X-KDE-ParentApp] == 'kinfocenter'");
+    KService::List moduleList = KServiceTypeTrader::self()->query(QStringLiteral("KCModule"), QStringLiteral("[X-KDE-ParentApp] == 'kinfocenter'"));
 
     foreach(const KService::Ptr &kcmModule, moduleList) {
         if (kcmModule->isType(KST_KService) == true) {
 
-            QString category = kcmModule->property("X-KDE-KInfoCenter-Category").toString().trimmed();
+            QString category = kcmModule->property(QStringLiteral("X-KDE-KInfoCenter-Category")).toString().trimmed();
 
             if(!category.isEmpty() || !category.isNull()) {
                 KcmTreeItem *item = m_root->containsCategory(category);
                 if(item != NULL) {
                     item->addChild(new KcmTreeItem(kcmModule,item));
                 } else {
-                    KcmTreeItem *lost = m_root->containsCategory("lost_and_found");
+                    KcmTreeItem *lost = m_root->containsCategory(QStringLiteral("lost_and_found"));
                     if(lost != NULL) {
                         lost->addChild(new KcmTreeItem(kcmModule,lost));
                     } else {

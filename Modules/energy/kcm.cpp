@@ -57,9 +57,9 @@ KCMEnergyInfo::KCMEnergyInfo(QObject *parent, const QVariantList &args) : Config
     qmlRegisterType<WakeUpModel>();
     qmlRegisterType<StatisticsProvider>("org.kde.kinfocenter.energy.private", 1, 0, "HistoryModel");
 
-    KAboutData *about = new KAboutData("kcm_energyinfo", i18n("Energy Consumption Statistics"),
-                                       "0.1", QString(), KAboutLicense::GPL);
-    about->addAuthor(i18n("Kai Uwe Broulik"), QString(), "kde@privat.broulik.de");
+    KAboutData *about = new KAboutData(QStringLiteral("kcm_energyinfo"), i18n("Energy Consumption Statistics"),
+                                       QStringLiteral("0.1"), QString(), KAboutLicense::GPL);
+    about->addAuthor(i18n("Kai Uwe Broulik"), QString(), QStringLiteral("kde@privat.broulik.de"));
     setAboutData(about);
 
     m_batteries = new BatteryModel(this);

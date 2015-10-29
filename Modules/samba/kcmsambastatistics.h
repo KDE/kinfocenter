@@ -38,7 +38,7 @@ class KConfig;
 class SmallLogItem {
 public:
 	SmallLogItem() :
-		name(""), count(0) {
+		name(QLatin1String("")), count(0) {
 	}
 	SmallLogItem(const QString &n) :
 		name(n), count(1) {
@@ -50,7 +50,7 @@ public:
 class LogItem {
 public:
 	LogItem() :
-		name(""), accessed(), count(0) {
+		name(QLatin1String("")), accessed(), count(0) {
 	}
 	LogItem(const QString &n, const QString &a) :
 		name(n), accessed(), count(1) {

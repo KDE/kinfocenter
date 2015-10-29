@@ -64,16 +64,16 @@ static void setVar(QStringList *var, const QString &value)
 OSRelease::OSRelease()
 {
     // Set default values for non-optional fields.
-    name = QLatin1String("Linux");
-    id = QLatin1String("linux");
-    prettyName = QLatin1String("Linux");
+    name = QStringLiteral("Linux");
+    id = QStringLiteral("linux");
+    prettyName = QStringLiteral("Linux");
 
     QString fileName;
 
-    if (QFile::exists("/etc/os-release")) {
-        fileName = "/etc/os-release";
-    } else if (QFile::exists("/usr/lib/os-release")) {
-        fileName = "/usr/lib/os-release";
+    if (QFile::exists(QStringLiteral("/etc/os-release"))) {
+        fileName = QStringLiteral("/etc/os-release");
+    } else if (QFile::exists(QStringLiteral("/usr/lib/os-release"))) {
+        fileName = QStringLiteral("/usr/lib/os-release");
     } else {
         return;
     }

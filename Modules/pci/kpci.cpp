@@ -94,16 +94,16 @@ static QTreeWidgetItem* addVendor(QTreeWidgetItem *parent, QTreeWidgetItem *afte
 	if (pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_VENDOR, info->cooked.vendor, 0, 0, 0)!=NULL) {
 		//		line.setAscii(nameBuffer); //not work, workaround below
 		line = QString::fromAscii(pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_VENDOR, info->cooked.vendor, 0, 0, 0));
-		if (line.contains("Unknown")==0) {
+		if (line.contains(QStringLiteral("Unknown"))==0) {
 			isVendor=true;
 			topname=line;
 			after=create(parent, i18n("Vendor"), line+value.sprintf(" (0x%04X)", info->cooked.vendor));
 			if (pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_DEVICE, info->cooked.vendor, info->cooked.device, 0, 0)!=NULL) {
 				//				line.setAscii(nameBuffer); //not work, workaround below
 				line = QString::fromAscii(pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_DEVICE, info->cooked.vendor, info->cooked.device, 0, 0));
-				if (line.contains("Unknown")==0) {
+				if (line.contains(QStringLiteral("Unknown"))==0) {
 					isDevice=true;
-					topname+=QString(" ")+line;
+					topname+=QStringLiteral(" ")+line;
 					after=create(parent, i18n("Device"), line+value.sprintf(" (0x%04X)", info->cooked.device));
 					if (info->cooked.headerType.headerType_bits.headerType==PCI_HEADER_TYPE_BRIDGE) {
 						isSub=true;
@@ -111,7 +111,7 @@ static QTreeWidgetItem* addVendor(QTreeWidgetItem *parent, QTreeWidgetItem *afte
 					else if (pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_DEVICE|PCI_LOOKUP_SUBSYSTEM, info->cooked.vendor, info->cooked.device, subvendor, subdevice)!=NULL) {
 						//						line.setAscii(nameBuffer); //not work, workaround below
 						line = QString::fromAscii(pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_DEVICE|PCI_LOOKUP_SUBSYSTEM, info->cooked.vendor, info->cooked.device, subvendor, subdevice));
-						if (line.contains("Unknown")==0) {
+						if (line.contains(QStringLiteral("Unknown"))==0) {
 							isSub=true;
 							after=create(parent, i18n("Subsystem"), line+value.sprintf(" (0x%04X:0x%04X)", subvendor, subdevice));
 						}//if
@@ -131,7 +131,7 @@ static QTreeWidgetItem* addVendor(QTreeWidgetItem *parent, QTreeWidgetItem *afte
 		if (pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_VENDOR, subvendor, 0, 0, 0)!=NULL) {
 			//			line.setAscii(nameBuffer); //not work, workaround below
 			line = QString::fromAscii(pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_VENDOR, subvendor, 0, 0, 0));
-			if (line.contains("Unknown")==0) {
+			if (line.contains(QStringLiteral("Unknown"))==0) {
 				after=create(parent, i18n("Subsystem"), line+i18n(" - device:")+value.sprintf(" 0x%04X (0x%04X:0x%04X)", subdevice, subvendor, subdevice));
 			}//if
 			else {
@@ -238,13 +238,13 @@ static QTreeWidgetItem* addBist(QTreeWidgetItem *parent, QTreeWidgetItem *after,
 
 static QTreeWidgetItem* addSize(QTreeWidgetItem *parent, QTreeWidgetItem *after, pciaddr_t size) {
 	if (size<0x400) {
-		after=create(parent, i18n("Size"), QString("%1 B").arg(static_cast<unsigned long>(size)));
+		after=create(parent, i18n("Size"), QStringLiteral("%1 B").arg(static_cast<unsigned long>(size)));
 	}//if
 	else if (size<0x100000) {
-		after=create(parent, i18n("Size"), QString("%1 kiB").arg(static_cast<unsigned long>(size/0x400)));
+		after=create(parent, i18n("Size"), QStringLiteral("%1 kiB").arg(static_cast<unsigned long>(size/0x400)));
 	}//elif
 	else if (size<0x40000000) {
-		after=create(parent, i18n("Size"), QString("%1 MiB").arg(static_cast<unsigned long>(size/0x100000)));
+		after=create(parent, i18n("Size"), QStringLiteral("%1 MiB").arg(static_cast<unsigned long>(size/0x100000)));
 	}//elif
 
 #ifdef HAVE_PCIADDR_T64
@@ -261,7 +261,7 @@ static QTreeWidgetItem* addSize(QTreeWidgetItem *parent, QTreeWidgetItem *after,
 
 #else //HAVE_PCIADDR_T64
 	else {
-		after=create(parent, i18n("Size"), QString("%1 GiB").arg(static_cast<unsigned long>(size/0x40000000)));
+		after=create(parent, i18n("Size"), QStringLiteral("%1 GiB").arg(static_cast<unsigned long>(size/0x40000000)));
 	}//else
 
 #endif //HAVE_PCIADDR_T64
@@ -558,7 +558,7 @@ static QTreeWidgetItem* addCapsAgp(QTreeWidgetItem *parent, QTreeWidgetItem *aft
 	if ((offset+2+sizeof(agpInfo))<256) {
 		memcpy(reinterpret_cast<void*>(&infoAgp.raw[0]), reinterpret_cast<void*>(&info->raw[offset+2]), sizeof(agpInfo));
 		//		after=create(parent, i18n("Revision"),value.sprintf("%i.%i",infoAgp.revMaior,infoAgp.revMinor));
-		after=create(parent, i18n("Revision"),QString("%1.%2").arg(infoAgp.cooked.revision.revMaior).arg(infoAgp.cooked.revision.revMinor));
+		after=create(parent, i18n("Revision"),QStringLiteral("%1.%2").arg(infoAgp.cooked.revision.revMaior).arg(infoAgp.cooked.revision.revMinor));
 		after=create(parent, i18n("Status"),value.sprintf("0x%08X",infoAgp.cooked.status.status));
 		localAfter=create(after, i18n("Rate"),getNameById(agpRate,infoAgp.cooked.status.status_bits0.statusEnhRate));
 		localAfter=create(after, i18n("AGP 3.0 mode"),(infoAgp.cooked.status.status_bits1.statusMode?i18nc(strCtxt, strEnabled):i18nc(strCtxt, strDisabled)));

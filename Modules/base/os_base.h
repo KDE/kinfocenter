@@ -49,7 +49,7 @@ static const QString Value(int val, int numbers=1) {
 static const QString HexStr(unsigned long val, int digits) {
 	QString hexstr;
 	int i;
-	hexstr = QString::fromLatin1("0x%1").arg(val, digits, 16/*=HEX*/);
+	hexstr = QStringLiteral("0x%1").arg(val, digits, 16/*=HEX*/);
 	for (i=hexstr.length()-1; i>0; --i)
 		if (hexstr[i]==' ')
 			hexstr[i] = '0';
@@ -141,7 +141,7 @@ static QTreeWidgetItem* XServer_fill_screen_info(QTreeWidgetItem *lBox, QTreeWid
 		for (i = 0; i < ndepths; i++) {
 			txt = txt + Value(depths[i]);
 			if (i < ndepths - 1)
-				txt = txt + QLatin1String(", ");
+				txt = txt + QStringLiteral(", ");
 		}
 
 		QStringList depthList;
@@ -188,7 +188,7 @@ static QTreeWidgetItem* XServer_fill_screen_info(QTreeWidgetItem *lBox, QTreeWid
 	if (width == 65535 && height == 65535)
 		largestList << i18n("unlimited");
 	else
-		largestList << QString::fromLatin1("%1 x %2").arg(width).arg(height);
+		largestList << QStringLiteral("%1 x %2").arg(width).arg(height);
 	last = new QTreeWidgetItem(item, largestList);
 
 	QStringList currentInput;
@@ -235,7 +235,7 @@ static bool GetInfo_XServer_Generic(QTreeWidget *lBox) {
 	QStringList serverInfo;
 	serverInfo << i18n("Server Information");
 	next = new QTreeWidgetItem(lBox, serverInfo);
-	next->setIcon(0, SmallIcon("xorg"));
+	next->setIcon(0, SmallIcon(QStringLiteral("xorg")));
 	next->setExpanded(true);
 
 	QStringList displayNameList;
@@ -251,7 +251,7 @@ static bool GetInfo_XServer_Generic(QTreeWidget *lBox) {
 	last = new QTreeWidgetItem(next, vendorReleaseList);
 
 	QStringList versionList;
-	versionList << i18n("Version Number") << QString::fromLatin1("%1.%2").arg((int)ProtocolVersion(dpy)).arg((int)ProtocolRevision(dpy));
+	versionList << i18n("Version Number") << QStringLiteral("%1.%2").arg((int)ProtocolVersion(dpy)).arg((int)ProtocolRevision(dpy));
 	last = new QTreeWidgetItem(next, versionList);
 
 	QStringList screenList;

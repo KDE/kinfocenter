@@ -64,7 +64,7 @@ void NetMon::processNFSLine(char *bufline, int) {
 	QByteArray line(bufline);
 	if (line.contains(":/")) {
 		QTreeWidgetItem *item = new QTreeWidgetItem(list);
-		item->setText(0, "NFS");
+		item->setText(0, QStringLiteral("NFS"));
 		item->setText(0, After(":",line));
 		item->setText(0, Before(":/",line));
 	}
@@ -91,7 +91,7 @@ void NetMon::processSambaLine(char *bufline, int) {
 		line=line.mid(iMachine, line.length());
 		strMachine=line;
 		QTreeWidgetItem * item = new QTreeWidgetItem(list);
-		item->setText(0, "SMB");
+		item->setText(0, QStringLiteral("SMB"));
 		item->setText(1, strShare);
 		item->setText(2, strMachine);
 		item->setText(3, strUser);
@@ -161,14 +161,14 @@ void NetMon::update() {
 	/* Re-read the Contents ... */
 
 	QString path(::getenv("PATH"));
-	path += "/bin:/sbin:/usr/bin:/usr/sbin";
+	path += QLatin1String("/bin:/sbin:/usr/bin:/usr/sbin");
 
 	rownumber=0;
 	readingpart=header;
 	nrpid=0;
 	process->setEnvironment(QStringList() << ("PATH=" + path));
 	connect(process, &QProcess::readyRead, this, &NetMon::readFromProcess);
-	process->start("smbstatus");
+	process->start(QStringLiteral("smbstatus"));
 	if (!process->waitForFinished()) {
 		version->setText(i18n("Error run smbstatus: %1", process->errorString()));
 	} else {
@@ -181,7 +181,7 @@ void NetMon::update() {
 				QTreeWidgetItem *row = list->topLevelItem(i);
 				// cerr<<"NetMon::update: this should be the pid: "<<row->text(5)<<endl;
 				int pid=row->text(5).toInt();
-				row->setText(6,QString("%1").arg((lo)[pid]));
+				row->setText(6,QStringLiteral("%1").arg((lo)[pid]));
 			}
 		}
 	}
@@ -196,11 +196,11 @@ void NetMon::update() {
 	showmountProc->setEnvironment(QStringList() << ("PATH=" + path));
 	//without this timer showmount hangs up to 5 minutes
 	//if the portmapper daemon isn't running
-	QTimer::singleShot(5000,this,SLOT(killShowmount()));
+	QTimer::singleShot(5000,this,&NetMon::killShowmount);
 	////qDebug()<<"starting kill timer with 5 seconds";
 	connect(showmountProc, static_cast<void (QProcess::*)(int, QProcess::ExitStatus)>(&QProcess::finished), this, &NetMon::killShowmount);
 	connect(showmountProc, static_cast<void (QProcess::*)(QProcess::ProcessError)>(&QProcess::error), this, &NetMon::killShowmount);
-	showmountProc->start("showmount", QStringList() << "-a" << "localhost");
+	showmountProc->start(QStringLiteral("showmount"), QStringList() << QStringLiteral("-a") << QStringLiteral("localhost"));
 
 	version->adjustSize();
 	list->show();

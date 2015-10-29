@@ -72,7 +72,7 @@ void SolDevice::setDefaultDeviceText()
     ddtString = tiedDevice.product();
     if (tiedDevice.isDeviceInterface(Solid::DeviceInterface::StorageVolume) ||
           tiedDevice.isDeviceInterface(Solid::DeviceInterface::Battery)) {
-      QString label = SolDevice::udi().section("/", -1, -1);
+      QString label = SolDevice::udi().section(QStringLiteral("/"), -1, -1);
       if (!label.isEmpty()) {
           ddtString = label;
       }
@@ -83,7 +83,7 @@ void SolDevice::setDefaultDeviceText()
 
 void SolDevice::setDefaultDeviceIcon() 
 { 
-  QIcon ddiString = QIcon::fromTheme("kde");
+  QIcon ddiString = QIcon::fromTheme(QStringLiteral("kde"));
   
   if(deviceSet) ddiString = QIcon(tiedDevice.icon());
   setDeviceIcon(ddiString);

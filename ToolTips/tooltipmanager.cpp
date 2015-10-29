@@ -56,8 +56,8 @@ ToolTipManager::ToolTipManager(QAbstractItemView* parent)
 {
     d->view = parent;
 
-    connect(parent, SIGNAL(viewportEntered()), this, SLOT(hideToolTip()));
-    connect(parent, SIGNAL(entered(QModelIndex)), this, SLOT(requestToolTip(QModelIndex)));
+    connect(parent, &QAbstractItemView::viewportEntered, this, &ToolTipManager::hideToolTip);
+    connect(parent, &QAbstractItemView::entered, this, &ToolTipManager::requestToolTip);
             
     d->timer = new QTimer(this);
     d->timer->setSingleShot(true);
@@ -66,8 +66,8 @@ ToolTipManager::ToolTipManager(QAbstractItemView* parent)
     // When the mousewheel is used, the items don't get a hovered indication
     // (Qt-issue #200665). To assure that the tooltip still gets hidden,
     // the scrollbars are observed.
-    connect(parent->horizontalScrollBar(), SIGNAL(valueChanged(int)), this, SLOT(hideToolTip()));
-    connect(parent->verticalScrollBar(), SIGNAL(valueChanged(int)), this, SLOT(hideToolTip()));
+    connect(parent->horizontalScrollBar(), &QAbstractSlider::valueChanged, this, &ToolTipManager::hideToolTip);
+    connect(parent->verticalScrollBar(), &QAbstractSlider::valueChanged, this, &ToolTipManager::hideToolTip);
 
     d->view->viewport()->installEventFilter(this);
 }
@@ -204,7 +204,7 @@ QLayout * ToolTipManager::generateToolTipLine( const QModelIndex & item, QWidget
     
     QString text = menuItem->data(); 
     if ( comment ) {
-        text = QString( "<b>%1</b>" ).arg( menuItem->data() );
+        text = QStringLiteral( "<b>%1</b>" ).arg( menuItem->data() );
     }
 
     QLabel * textLabel = new QLabel( toolTip );

@@ -89,7 +89,7 @@ bool Chart::drawChart(t_memsize total, const QList<t_memsize>& used, const QList
 			//paint.fillRect(1, startline, width()-2, -localheight, color);
 
 			if (localheight >= SPACING) {
-				paint.drawText(0, startline-localheight, width(), localheight, Qt::AlignCenter | Qt::TextWordWrap, QString("%1 %2%").arg(text).arg(percent));
+				paint.drawText(0, startline-localheight, width(), localheight, Qt::AlignCenter | Qt::TextWordWrap, QStringLiteral("%1 %2%").arg(text).arg(percent));
 			}
 		}
 
@@ -127,7 +127,7 @@ ChartWidget::ChartWidget(const QString& title, const QString& hint, Chart* chart
 	chart->setToolTip(hint);
 	mainLayout->addWidget(chart);
 	
-	freeMemoryLabel = new QLabel("", this);
+	freeMemoryLabel = new QLabel(QLatin1String(""), this);
 	freeMemoryLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
 	freeMemoryLabel->setAlignment(Qt::AlignHCenter);
 	freeMemoryLabel->setToolTip(hint);

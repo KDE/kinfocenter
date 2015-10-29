@@ -135,7 +135,7 @@ static QString HWaddr2String(const char *hwaddr) {
 	QString ret;
 	for (int i=0; i<6; i++, hwaddr++) {
 		int v = (*hwaddr & 0xff);
-		QString num = QString("%1").arg(v, 0, 16);
+		QString num = QStringLiteral("%1").arg(v, 0, 16);
 		if (num.length() < 2)
 			num.prepend("0");
 		if (i>0)

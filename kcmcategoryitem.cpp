@@ -50,7 +50,7 @@ QString KcmCategoryItem::category() const
 {
     if(m_category.isEmpty())
     {
-        return m_module->property("X-KDE-KInfoCenter-Category").toString().trimmed();
+        return m_module->property(QStringLiteral("X-KDE-KInfoCenter-Category")).toString().trimmed();
     }
     return m_category;
 }

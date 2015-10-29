@@ -59,7 +59,7 @@ Module::Module(QWidget *parent, const QVariantList &args) :
     KCModule(parent, args),
     ui(new Ui::Module)
 {
-    KAboutData *aboutData = new KAboutData("kcm-about-distro",
+    KAboutData *aboutData = new KAboutData(QStringLiteral("kcm-about-distro"),
                                            i18nc("@title", "About Distribution"),
                                            global_s_versionStringFull,
                                            QStringLiteral(""),
@@ -94,14 +94,14 @@ void Module::load()
 {
     // NOTE: do not include globals, otherwise kdeglobals could provide values
     //       even though we only explicitly want them from our own config.
-    KSharedConfig::Ptr config = KSharedConfig::openConfig("kcm-about-distrorc",
+    KSharedConfig::Ptr config = KSharedConfig::openConfig(QStringLiteral("kcm-about-distrorc"),
                                                           KConfig::NoGlobals);
     KConfigGroup cg = KConfigGroup(config, "General");
 
     QString logoPath = cg.readEntry("LogoPath", QString());
     QPixmap logo;
     if (logoPath.isEmpty())
-        logo = QIcon::fromTheme("start-here-kde").pixmap(128, 128);
+        logo = QIcon::fromTheme(QStringLiteral("start-here-kde")).pixmap(128, 128);
     else
         logo = QPixmap(logoPath);
     ui->logoLabel->setPixmap(logo);
@@ -111,13 +111,13 @@ void Module::load()
     // For example OS Ubuntu may be rebranded as Kubuntu. Also Kubuntu Active
     // as a product brand is different from Kubuntu.
     QString distroName = cg.readEntry("Name", os.name);
-    ui->nameVersionLabel->setText(QString("%1 %2").arg(distroName, os.versionId));
+    ui->nameVersionLabel->setText(QStringLiteral("%1 %2").arg(distroName, os.versionId));
 
     QString url = cg.readEntry("Website", os.homeUrl);
     if (url.isEmpty())
         ui->urlLabel->hide();
     else
-        ui->urlLabel->setText(QString("<a href='%1'>%1</a>").arg(url));
+        ui->urlLabel->setText(QStringLiteral("<a href='%1'>%1</a>").arg(url));
 
     // Since Plasma version detection isn't based on a library query it can fail
     // in weird cases; instead of admiting defeat we simply hide everything :P
@@ -161,12 +161,12 @@ void Module::load()
     for (auto it = processorMap.constBegin(); it != processorMap.constEnd(); ++it) {
         const int count = it.value();
         QString name = it.key();
-        name.replace(QString("(TM)"), QChar(8482));
-        name.replace(QString("(R)"), QChar(174));
+        name.replace(QStringLiteral("(TM)"), QChar(8482));
+        name.replace(QStringLiteral("(R)"), QChar(174));
         name = name.simplified();
-        names.append(QString::fromUtf8("%1 × %2").arg(count).arg(name));
+        names.append(QStringLiteral("%1 × %2").arg(count).arg(name));
     }
-    ui->processorLabel->setText(names.join(", "));
+    ui->processorLabel->setText(names.join(QStringLiteral(", ")));
     if (ui->processorLabel->text().isEmpty()) {
         ui->processor->setHidden(true);
         ui->processorLabel->setHidden(true);
@@ -190,7 +190,7 @@ void Module::defaults()
 QString Module::plasmaVersion() const
 {
     const QStringList &filePaths = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation,
-                                                             "xsessions/plasma.desktop");
+                                                             QStringLiteral("xsessions/plasma.desktop"));
 
     if (filePaths.length() < 1) {
         return QString();

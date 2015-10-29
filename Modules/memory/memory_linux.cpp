@@ -23,7 +23,7 @@ void KCMMemory::fetchValues()
   memoryInfos[SWAP_MEM]     = MEMORY(info.totalswap) * mem_unit; // total size of all swap-partitions
   memoryInfos[FREESWAP_MEM] = MEMORY(info.freeswap)  * mem_unit; // free memory in swap-partitions
   
-  QFile file("/proc/meminfo");
+  QFile file(QStringLiteral("/proc/meminfo"));
   if (file.open(QIODevice::ReadOnly)) {
 	char buf[512];
 	while (file.readLine(buf, sizeof(buf) - 1) > 0) {

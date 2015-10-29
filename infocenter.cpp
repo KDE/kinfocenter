@@ -48,7 +48,7 @@
 
 KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
 {
-    setWindowIcon(QIcon::fromTheme("hwinfo"));
+    setWindowIcon(QIcon::fromTheme(QStringLiteral("hwinfo")));
     setWindowTitle(i18nc("Main window title", "KInfocenter"));
     setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
@@ -67,14 +67,14 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
     connect(m_sideMenu,SIGNAL(clicked(const KcmTreeItem*)),this,SLOT(itemClickedSlot(const KcmTreeItem*)));
 
     //SearchBox
-    connect(m_searchText, SIGNAL(textChanged(QString)), m_sideMenu, SLOT(filterSideMenuSlot(QString)));
+    connect(m_searchText, &QLineEdit::textChanged, m_sideMenu, &SidePanel::filterSideMenuSlot);
     connect(m_searchAction, SIGNAL(triggered()),m_searchText,SLOT(setFocus()));
 
     //Buttons
-    connect(m_moduleHelpAction, SIGNAL(triggered(bool)),this,SLOT(helpClickedSlot()));
+    connect(m_moduleHelpAction, &QAction::triggered,this,&KInfoCenter::helpClickedSlot);
 
     //Menu
-    connect(m_aboutKcm, SIGNAL(triggered(bool)), this, SLOT(aboutKcmSlot()));
+    connect(m_aboutKcm, &QAction::triggered, this, &KInfoCenter::aboutKcmSlot);
 
     //Startup
     m_searchText->completionObject()->setItems(m_sideMenu->allChildKeywords());
@@ -82,13 +82,13 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
     m_sideMenu->changeToFirstValidItem();
 
     m_toolTips = new ToolTipManager(m_sideMenu);
-    setupGUI(QSize(640,480), ToolBar | Keys | Save | Create, "kinfocenterui.rc");
+    setupGUI(QSize(640,480), ToolBar | Keys | Save | Create, QStringLiteral("kinfocenterui.rc"));
 
-    m_helpAction->setMenu( dynamic_cast<QMenu*>( factory()->container("help", this) ) );
+    m_helpAction->setMenu( dynamic_cast<QMenu*>( factory()->container(QStringLiteral("help"), this) ) );
     menuBar()->hide();
 
-    QAction *aboutApp = actionCollection()->action("help_about_app");
-    aboutApp->setIcon(QIcon::fromTheme("hwinfo"));
+    QAction *aboutApp = actionCollection()->action(QStringLiteral("help_about_app"));
+    aboutApp->setIcon(QIcon::fromTheme(QStringLiteral("hwinfo")));
 }
 
 KInfoCenter::~KInfoCenter()
@@ -99,14 +99,14 @@ KInfoCenter::~KInfoCenter()
     disconnect(m_sideMenu,SIGNAL(clicked(const KcmTreeItem*)),this,SLOT(itemClickedSlot(const KcmTreeItem*)));
 
     //SearchBox
-    disconnect(m_searchText, SIGNAL(textChanged(QString)), m_sideMenu, SLOT(filterSideMenuSlot(QString)));
+    disconnect(m_searchText, &QLineEdit::textChanged, m_sideMenu, &SidePanel::filterSideMenuSlot);
     disconnect(m_searchAction, SIGNAL(triggered()),m_searchText, SLOT(setFocus()));
 
     //Buttons
-    disconnect(m_moduleHelpAction, SIGNAL(triggered(bool)),this,SLOT(helpClickedSlot()));
+    disconnect(m_moduleHelpAction, &QAction::triggered,this,&KInfoCenter::helpClickedSlot);
 
     //Menu
-    disconnect(m_aboutKcm, SIGNAL(triggered(bool)), this, SLOT(aboutKcmSlot()));
+    disconnect(m_aboutKcm, &QAction::triggered, this, &KInfoCenter::aboutKcmSlot);
 }
 
 bool KInfoCenter::eventFilter(QObject *watched, QEvent *event)
@@ -124,20 +124,20 @@ void KInfoCenter::createToolBar()
 
     toolBar()->setMovable(false);
 
-    m_aboutKcm = actionCollection()->addAction("help_about_module");
+    m_aboutKcm = actionCollection()->addAction(QStringLiteral("help_about_module"));
     m_aboutKcm->setText(i18nc("Information about current module located in about menu","About Current Information Module"));
-    m_aboutKcm->setIcon(QIcon::fromTheme("help-about"));
+    m_aboutKcm->setIcon(QIcon::fromTheme(QStringLiteral("help-about")));
     m_aboutKcm->setEnabled(false);
 
     m_moduleHelpAction = new QAction(this);
     m_moduleHelpAction->setText(i18nc("Module help button label", "Module Help"));
-    m_moduleHelpAction->setIcon(QIcon::fromTheme("help-contextual"));
+    m_moduleHelpAction->setIcon(QIcon::fromTheme(QStringLiteral("help-contextual")));
 
-    m_helpAction = new KActionMenu( QIcon::fromTheme("help-contents"), i18nc("Help button label","Help"), this );
+    m_helpAction = new KActionMenu( QIcon::fromTheme(QStringLiteral("help-contents")), i18nc("Help button label","Help"), this );
     m_helpAction->setDelayed( false );
 
-    actionCollection()->addAction("helpModule", m_moduleHelpAction);
-    actionCollection()->addAction("helpMenu", m_helpAction);
+    actionCollection()->addAction(QStringLiteral("helpModule"), m_moduleHelpAction);
+    actionCollection()->addAction(QStringLiteral("helpMenu"), m_helpAction);
 }
 
 void KInfoCenter::createMainFrame()
@@ -179,9 +179,9 @@ void KInfoCenter::createMenuFrame()
 
     m_searchAction = new QAction(this);
     m_searchAction->setText(i18nc("Kaction search label", "Search Modules"));
-    m_searchAction->setIcon(QIcon::fromTheme("edit-find"));
+    m_searchAction->setIcon(QIcon::fromTheme(QStringLiteral("edit-find")));
 
-    actionCollection()->addAction("search",m_searchAction);
+    actionCollection()->addAction(QStringLiteral("search"),m_searchAction);
     actionCollection()->setDefaultShortcut(m_searchAction, QKeySequence(Qt::CTRL + Qt::Key_F));
 
     m_sideMenu = new SidePanel(sideFrame);
@@ -228,7 +228,7 @@ void KInfoCenter::helpClickedSlot()
     QString docPath = m_contain->helpPath();
 
     QUrl url("help:/" + docPath );
-    QProcess::startDetached("khelpcenter", QStringList() << url.url());
+    QProcess::startDetached(QStringLiteral("khelpcenter"), QStringList() << url.url());
 }
 
 void KInfoCenter::aboutKcmSlot()
