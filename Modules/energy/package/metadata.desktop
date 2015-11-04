@@ -2,6 +2,7 @@
 Name=Energy Information
 Name[ast]=Información d'enerxía
 Name[ca]=Informació d'energia
+Name[ca@valencia]=Informació d'energia
 Name[cs]=Informace o energii
 Name[da]=Energiinformation
 Name[de]=Energie-Information
@@ -36,6 +37,7 @@ Name[zh_TW]=能源資訊
 Comment=Statistics about energy consumption
 Comment[ast]=Estadístiques tocante al consumu d'enerxía
 Comment[ca]=Estadístiques quant al consum d'energia
+Comment[ca@valencia]=Estadístiques quant al consum d'energia
 Comment[cs]=Statistika o spotřebě energie
 Comment[da]=Statistik om energiforbrug
 Comment[de]=Statistiken über den Energieverbrauch
