@@ -25,12 +25,14 @@
 #include <QStandardPaths>
 
 #include <KAboutData>
+#include <KCoreAddons>
 #include <KConfig>
 #include <KConfigGroup>
 #include <KDesktopFile>
 #include <KFormat>
 #include <KLocalizedString>
 #include <KSharedConfig>
+#include <kcoreaddons_version.h>
 
 #include <solid/device.h>
 #include <solid/processor.h>
@@ -130,6 +132,14 @@ void Module::load()
     }
 
     ui->qtLabel->setText(qVersion());
+
+
+#if KCOREADDONS_VERSION >= QT_VERSION_CHECK(5,20,0)
+    ui->frameworksLabel->setText(KCoreAddons::versionString());
+#else
+    ui->frameworksLabelKey->setVisible(false);
+    ui->frameworksLabel->setVisible(false);
+#endif
 
     struct utsname utsName;
     if(uname(&utsName) != 0) {
