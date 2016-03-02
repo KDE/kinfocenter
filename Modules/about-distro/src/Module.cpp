@@ -24,6 +24,7 @@
 #include <QIcon>
 #include <QStandardPaths>
 
+#include <kcoreaddons_version.h>
 #include <KAboutData>
 #if KCOREADDONS_VERSION >= QT_VERSION_CHECK(5,20,0)
 #include <KCoreAddons>
@@ -34,7 +35,6 @@
 #include <KFormat>
 #include <KLocalizedString>
 #include <KSharedConfig>
-#include <kcoreaddons_version.h>
 
 #include <solid/device.h>
 #include <solid/processor.h>
