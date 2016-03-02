@@ -25,7 +25,9 @@
 #include <QStandardPaths>
 
 #include <KAboutData>
+#if KCOREADDONS_VERSION >= QT_VERSION_CHECK(5,20,0)
 #include <KCoreAddons>
+#endif
 #include <KConfig>
 #include <KConfigGroup>
 #include <KDesktopFile>
