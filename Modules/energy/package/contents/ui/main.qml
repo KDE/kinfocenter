@@ -30,7 +30,7 @@ import org.kde.plasma.extras 2.0 as PlasmaExtras
 
 import org.kde.plasma.workspace.components 2.0 as WorkspaceComponents
 
-Rectangle {
+Item {
     id: root
     property QtObject currentBattery: null
     property string currentUdi: ""
@@ -104,7 +104,6 @@ Rectangle {
 
     width: units.gridUnit * 25
     height: !!currentBattery ? units.gridUnit * 25 : units.gridUnit * 12
-    color: syspal.window
 
     SystemPalette {
         id: syspal
@@ -294,6 +293,7 @@ Rectangle {
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     text: i18n("This type of history is currently not available for this device.")
+                    wrapMode: Text.WordWrap
                     visible: !graph.visible
                 }
             }
