@@ -187,10 +187,6 @@ bool GetInfo_IO_Ports(QListView *) {
 	return false;
 }
 
-bool GetInfo_SCSI(QListView *lBox) {
-	return list_devices(lBox, (char *)"PdDvLn like '*/scsi/*'");
-}
-
 /* Parts taken from fsusage.c from the Midnight Commander (mc)
 
  Copyright (C) 1991, 1992 Free Software Foundation, In

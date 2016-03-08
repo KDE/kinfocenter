@@ -512,31 +512,6 @@ second column identifies the device that uses these I/O ports.</para>
 
 <!--****************************************-->
 
-<sect1 id="scsi">
-<title><acronym>SCSI</acronym> Interface Information Module</title>
-
-<para>This page displays information about Small Computer Systems
-Interface (<acronym>SCSI</acronym>) Interfaces and the attached
-<acronym>SCSI</acronym> devices.</para>
-
-<note><para>The exact information displayed is system-dependent.  On
-some systems <acronym>SCSI</acronym> information cannot be displayed
-yet.</para></note>
-
-<para>On &Linux;, this information is read from <filename
-class="devicefile">/proc/scsi/scsi</filename>, which is only available
-if the <filename class="directory">/proc</filename> pseudo-filesystem is
-compiled into the kernel.  A listing of all <acronym>SCSI</acronym>
-devices known to the kernel is shown.</para>
-
-<para>The devices are sorted numerically by their host, channel, and
-<acronym>ID</acronym> numbers.</para>
-
-<para>The user cannot modify any settings on this page.</para>
-</sect1>
-
-<!--****************************************-->
-
 <sect1 id="kcmusb">
 <title><acronym>USB</acronym> Controller/<acronym>USB</acronym> Devices Information Module</title>
 

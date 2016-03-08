@@ -50,8 +50,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define INFO_MISC "/proc/misc"
 
-#define INFO_SCSI "/proc/scsi/scsi"
-
 #define MAXCOLUMNWIDTH 600
 
 bool GetInfo_ReadfromFile(QTreeWidget* tree, const char *FileName, const QChar& splitChar) {
@@ -156,10 +154,6 @@ bool GetInfo_IO_Ports(QTreeWidget* tree) {
 	headers << i18n("I/O-Range") << i18n("Used By");
 	tree->setHeaderLabels(headers);
 	return GetInfo_ReadfromFile(tree, INFO_IOPORTS, ':');
-}
-
-bool GetInfo_SCSI(QTreeWidget* tree) {
-	return GetInfo_ReadfromFile(tree, INFO_SCSI, 0);
 }
 
 bool GetInfo_XServer_and_Video(QTreeWidget* tree) {

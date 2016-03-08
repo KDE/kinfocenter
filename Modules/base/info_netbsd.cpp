@@ -150,29 +150,6 @@ bool GetInfo_IO_Ports(QTreeWidget* tree) {
 	return true;
 }
 
-bool GetInfo_SCSI(QTreeWidget* tree) {
-	if (!GetDmesgInfo(tree, "scsibus", NULL)) {
-		QStringList list;
-		list << i18n("No SCSI devices found.");
-		new QTreeWidgetItem(tree, list);
-	}
-
-	// remove the 'waiting %d seconds for devices to settle' message
-	QTreeWidgetItemIterator it(tree, QTreeWidgetItemIterator::All);
-	while ( *it != NULL) {
-		QString s = (*it)->text(0);
-
-		if (s.contains("seconds for devices to settle")) {
-			delete tree->takeTopLevelItem( tree->indexOfTopLevelItem(*it) );
-			break;
-		}
-
-		++it;
-	}
-
-	return true;
-}
-
 bool GetInfo_XServer_and_Video(QTreeWidget* tree) {
 	return GetInfo_XServer_Generic(tree);
 }

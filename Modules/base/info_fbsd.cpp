@@ -81,47 +81,6 @@ bool GetInfo_IO_Ports(QTreeWidget* tree) {
 #endif
 }
 
-bool GetInfo_SCSI(QTreeWidget* tree) {
-	FILE *pipe;
-	QTextStream *t;
-	QString s;
-
-	if (!QFileInfo(QLatin1String("/sbin/camcontrol")).exists()) {
-		s = i18n("SCSI subsystem could not be queried: /sbin/camcontrol could not be found");
-		QStringList list;
-		list << s;
-		new QTreeWidgetItem(tree, list);
-	} else if ((pipe = popen("/sbin/camcontrol devlist 2>&1", "r")) == NULL) {
-		s = i18n("SCSI subsystem could not be queried: /sbin/camcontrol could not be executed");
-		QStringList list;
-		list << s;
-		new QTreeWidgetItem(tree, list);
-	} else {
-
-		/* This prints out a list of all the scsi devies, perhaps eventually we could
-		 parse it as opposed to schlepping it into a listbox */
-
-		t = new QTextStream(pipe, QIODevice::ReadOnly);
-
-		while (true) {
-			s = t->readLine();
-			if (s.isEmpty() )
-				break;
-			QStringList list;
-			list << s;
-			new QTreeWidgetItem(tree, list);
-		}
-
-		delete t;
-		pclose(pipe);
-	}
-
-	if (!tree->topLevelItemCount())
-		return false;
-
-	return true;
-}
-
 bool GetInfo_PCI(QTreeWidget* tree) {
 	FILE *pipe;
 	QString s, cmd;

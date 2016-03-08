@@ -156,15 +156,6 @@ bool GetInfo_IO_Ports(QTreeWidget* tree) {
 	return true;
 }
 
-bool GetInfo_SCSI(QTreeWidget* tree) {
-	if (!GetDmesgInfo(tree, "scsibus", NULL)) {
-		QStringList list;
-		list << i18n("No SCSI devices found.");
-		new QTreeWidgetItem(tree, list);
-	}
-	return true;
-}
-
 bool GetInfo_XServer_and_Video(QTreeWidget* tree) {
 	return GetInfo_XServer_Generic(tree);
 }

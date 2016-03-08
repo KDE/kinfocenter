@@ -40,10 +40,6 @@ bool GetInfo_IO_Ports(QTreeWidget*) {
 	return false;
 }
 
-bool GetInfo_SCSI(QTreeWidget*) {
-	return false;
-}
-
 bool GetInfo_XServer_and_Video(QTreeWidget* tree) {
 	return GetInfo_XServer_Generic(tree);
 }
