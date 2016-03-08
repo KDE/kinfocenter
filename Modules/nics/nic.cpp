@@ -71,7 +71,6 @@ QString flags_tos (unsigned int flags);
 K_PLUGIN_FACTORY(KCMNicFactory,
 		registerPlugin<KCMNic>();
 )
-K_EXPORT_PLUGIN(KCMNicFactory("kcmnic"))
 
 struct MyNIC {
 	QString name;
