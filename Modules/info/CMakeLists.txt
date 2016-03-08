@@ -43,7 +43,6 @@ install(
 	dma.desktop 
 	interrupts.desktop 
 	ioports.desktop 
-	scsi.desktop 
 	xserver.desktop  
     wayland.desktop
 	DESTINATION  ${SERVICES_INSTALL_DIR} 

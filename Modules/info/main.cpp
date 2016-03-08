@@ -47,9 +47,6 @@ CREATE_FACTORY(IRQ, i18n("Interrupt"))
 #ifdef INFO_IOPORTS_AVAILABLE
 CREATE_FACTORY(IO_Ports, i18n("I/O-Port"))
 #endif
-#ifdef INFO_SCSI_AVAILABLE
-CREATE_FACTORY(SCSI, i18n("SCSI"))
-#endif
 #ifdef INFO_DMA_AVAILABLE
 CREATE_FACTORY(DMA, i18n("DMA-Channel"))
 #endif
@@ -66,9 +63,6 @@ K_PLUGIN_FACTORY(KInfoModulesFactory,
 #endif
 #ifdef INFO_IOPORTS_AVAILABLE
     registerPlugin<KIO_PortsInfoWidget>("ioports");
-#endif
-#ifdef INFO_SCSI_AVAILABLE
-    registerPlugin<KSCSIInfoWidget>("scsi");
 #endif
 #ifdef INFO_DMA_AVAILABLE
     registerPlugin<KDMAInfoWidget>("dma");
