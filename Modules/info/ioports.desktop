@@ -1,6 +1,6 @@
 [Desktop Entry]
 Exec=kcmshell5 ioports
-Icon=text-x-texinfo
+Icon=computer
 Type=Service
 X-KDE-ServiceTypes=KCModule
 Categories=Qt;KDE;X-KDE-information;

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Exec=kcmshell5 smbstatus
-Icon=preferences-system-network-share-windows-status
+Icon=preferences-system-network-sharing
 Type=Service
 X-KDE-ServiceTypes=KCModule
 
