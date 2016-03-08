@@ -2,7 +2,7 @@
 Type=Service
 X-KDE-ServiceTypes=KInfoCenterCategory
 X-KDE-KInfoCenter-Category=network_information
-Icon=folder-documents
+Icon=preferences-system-network
 
 Name=Network Information
 Name[ar]=معلومات الشّبكة
