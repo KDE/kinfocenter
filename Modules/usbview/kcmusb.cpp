@@ -67,7 +67,7 @@ USBViewer::USBViewer(QWidget *parent, const QVariantList &) :
 	connect(refreshTimer, &QTimer::timeout, this, &USBViewer::refresh);
 	connect(_devices, &QTreeWidget::currentItemChanged, this, &USBViewer::selectionChanged);
 
-	KAboutData *about = new KAboutData(i18n("kcmusb"), i18n("KDE USB Viewer"),
+	KAboutData *about = new KAboutData(i18n("kcmusb"), i18n("USB Devices"),
 			QString(), QString(), KAboutLicense::GPL,
 			i18n("(c) 2001 Matthias Hoelzer-Kluepfel"));
 
