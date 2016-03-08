@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Service
-Icon=help-about
+Icon=ktip
 Exec=kcmshell5 about-distro
 
 X-KDE-Library=kcm_about_distro

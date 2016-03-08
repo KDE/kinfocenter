@@ -2,7 +2,7 @@
 Exec=kcmshell5 nic
 Type=Service
 X-KDE-ServiceTypes=KCModule
-Icon=network-workgroup
+Icon=network-card
 
 X-KDE-KInfoCenter-Category=network_information
 X-KDE-Library=kcm_nic

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Exec=kcmshell5 dma
-Icon=text-x-texinfo
+Icon=media-flash
 Type=Service
 X-KDE-ServiceTypes=KCModule
 Categories=Qt;KDE;X-KDE-information;

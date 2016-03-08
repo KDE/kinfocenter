@@ -1,5 +1,5 @@
 [Desktop Entry]
-Icon=text-x-texinfo
+Icon=camera-web
 Type=Service
 X-KDE-ServiceTypes=KCModule
 Exec=kcmshell5 kcmview1394
