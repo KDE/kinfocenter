@@ -48,7 +48,6 @@ private:
 K_PLUGIN_FACTORY(SambaFactory,
 		registerPlugin<SambaContainer>();
 )
-K_EXPORT_PLUGIN(SambaFactory("kcmsamba"))
 
 SambaContainer::SambaContainer(QWidget *parent, const QVariantList&) :
 	KCModule(parent), config(QStringLiteral("kcmsambarc")), tabs(this), status(&tabs, &config), imports(&tabs, &config), logView(&tabs, &config), statisticsView(&tabs, &config) {

@@ -28,7 +28,6 @@
 K_PLUGIN_FACTORY(USBFactory,
 		registerPlugin<USBViewer>();
 )
-K_EXPORT_PLUGIN(USBFactory("kcmusb"))
 
 USBViewer::USBViewer(QWidget *parent, const QVariantList &) :
 	KCModule(parent) {

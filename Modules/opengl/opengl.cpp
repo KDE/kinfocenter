@@ -66,7 +66,6 @@
 K_PLUGIN_FACTORY(KCMOpenGLFactory,
     registerPlugin<KCMOpenGL>();
 )
-K_EXPORT_PLUGIN(KCMOpenGLFactory("kcmopengl"))
 
 // FIXME: Temporary!
 bool GetInfo_OpenGL(QTreeWidget *treeWidget);

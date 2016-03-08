@@ -57,7 +57,6 @@ static QLabel *memorySizeLabels[MEM_LAST_ENTRY][2];
 K_PLUGIN_FACTORY(KCMMemoryFactory,
 		registerPlugin<KCMMemory>();
 )
-K_EXPORT_PLUGIN(KCMMemoryFactory("kcm_memory"))
 
 KCMMemory::KCMMemory(QWidget *parent, const QVariantList &) :
 	KCModule(parent) {

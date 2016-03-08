@@ -56,7 +56,6 @@ int my_reset_handler(raw1394handle_t handle, unsigned int) {
 }
 
 K_PLUGIN_FACTORY(View1394Factory, registerPlugin<View1394>();)
-K_EXPORT_PLUGIN(View1394Factory("kcmview1394"))
 
 View1394::View1394(QWidget *parent, const QVariantList &) :
 	KCModule(parent), m_insideRescanBus(false) {
