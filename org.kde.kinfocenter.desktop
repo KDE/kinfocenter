@@ -7,9 +7,12 @@ X-KDE-StartupNotify=true
 OnlyShowIn=KDE;
 
 Name=Info Center
+Name[ca]=Centre d'informació
+Name[es]=Centro de información
 Name[nl]=Informatiecentrum
 Name[pt]=Centro de Informações
 Name[pt_BR]=Centro de Informações
+Name[sk]=Informačné centrum
 Name[sl]=Podatkovno središče
 Name[sv]=Informationscentral
 Name[uk]=Центр інформації
