@@ -41,6 +41,9 @@
 
 #ifdef Q_OS_LINUX
 #include <sys/sysinfo.h>
+#elif defined(Q_OS_FREEBSD)
+#include <sys/types.h>
+#include <sys/sysctl.h>
 #endif
 #include <sys/utsname.h>
 
@@ -55,6 +58,15 @@ static qlonglong calculateTotalRam()
     if (sysinfo(&info) == 0)
         // manpage "sizes are given as multiples of mem_unit bytes"
         ret = info.totalram * info.mem_unit;
+#elif defined(Q_OS_FREEBSD)
+    /* Stuff for sysctl */
+    size_t len;
+
+    unsigned long memory;
+    len = sizeof(memory);
+    sysctlbyname("hw.physmem", &memory, &len, NULL, 0);
+
+    ret = memory;
 #endif
     return ret;
 }
