@@ -20,8 +20,8 @@
 </authorgroup>
 
 <legalnotice>&FDLNotice;</legalnotice>
-<date>2015-04-04</date>
-<releaseinfo>Plasma 5.3</releaseinfo>
+<date>2016-03-19</date>
+<releaseinfo>Plasma 5.6</releaseinfo>
 
 <abstract>
 <para>This documentation describes &kde;’s information center.</para>
