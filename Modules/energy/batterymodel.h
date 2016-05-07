@@ -52,7 +52,6 @@ signals:
     void countChanged();
 
 private:
-    QStringList m_batteriesUdi;
     QList<Solid::Device> m_batteries;
 };
 
