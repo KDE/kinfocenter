@@ -32,9 +32,8 @@ BatteryModel::BatteryModel(QObject *parent) : QAbstractListModel(parent)
 
     const auto devices = Solid::Device::listFromType(Solid::DeviceInterface::Battery);
     foreach (Solid::Device device, devices) {
-        auto battery = device.as<Solid::Battery>();
-        m_batteries.append(battery);
-        // FIXME Fix Solid so it exposes the base device interface properties too
+        m_batteries.append(device);
+        // FIXME use m_batteries[].udi();
         m_batteriesUdi.append(device.udi());
     }
 
@@ -45,17 +44,14 @@ BatteryModel::BatteryModel(QObject *parent) : QAbstractListModel(parent)
         }
 
         const Solid::Device device(udi);
-        if (device.isValid()) {
-            auto *battery = const_cast<Solid::Battery *>(device.as<Solid::Battery>());
-            if (battery) {
-                beginInsertRows(QModelIndex(), m_batteries.count(), m_batteries.count());
-                m_batteries.append(battery);
-                // FIXME Fix Solid so it exposes the base device interface properties too
-                m_batteriesUdi.append(device.udi());
-                endInsertRows();
+        if (device.isValid() && device.is<Solid::Battery>()) {
+            beginInsertRows(QModelIndex(), m_batteries.count(), m_batteries.count());
+            m_batteries.append(device);
+            // FIXME Fix Solid so it exposes the base device interface properties too
+            m_batteriesUdi.append(device.udi());
+            endInsertRows();
 
-                emit countChanged();
-            }
+            emit countChanged();
         }
     });
     connect(Solid::DeviceNotifier::instance(), &Solid::DeviceNotifier::deviceRemoved, this, [this](const QString &udi) {
@@ -80,7 +76,8 @@ Solid::Battery *BatteryModel::get(int index) const
         return nullptr;
     }
 
-    auto battery = m_batteries.at(index);
+    Solid::Battery* battery = m_batteries.value(index).as<Solid::Battery>();
+
     QQmlEngine::setObjectOwnership(battery, QQmlEngine::CppOwnership);
     return battery;
 }
@@ -101,7 +98,7 @@ QVariant BatteryModel::data(const QModelIndex &index, int role) const
     }
 
     if (role == BatteryRole) {
-        return QVariant::fromValue(m_batteries.at(index.row()));
+        return QVariant::fromValue(m_batteries.value(index.row()).as<Solid::Battery>());
     } else if (role == UdiRole) {
         return m_batteriesUdi.at(index.row());
     }
