@@ -23,6 +23,7 @@
 #include <QAbstractListModel>
 #include <QList>
 
+#include <Solid/Device>
 #include <Solid/Battery>
 
 class BatteryModel : public QAbstractListModel
@@ -51,8 +52,7 @@ signals:
     void countChanged();
 
 private:
-    QStringList m_batteriesUdi;
-    QList<Solid::Battery *> m_batteries;
+    QList<Solid::Device> m_batteries;
 };
 
 #endif // KCM_ENERGYINFO_BATTERYMODEL_H
