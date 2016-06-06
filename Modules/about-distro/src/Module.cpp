@@ -121,10 +121,11 @@ void Module::load()
 
     QString logoPath = cg.readEntry("LogoPath", QString());
     QPixmap logo;
-    if (logoPath.isEmpty())
+    if (logoPath.isEmpty()) {
         logo = QIcon::fromTheme(QStringLiteral("start-here-kde")).pixmap(128, 128);
-    else
+    } else {
         logo = QPixmap(logoPath);
+    }
     ui->logoLabel->setPixmap(logo);
 
     OSRelease os;
@@ -136,16 +137,18 @@ void Module::load()
     ui->nameVersionLabel->setText(QStringLiteral("%1 %2").arg(distroName, versionId));
 
     QString variant = cg.readEntry("Variant", QString());
-    if (variant.isEmpty())
+    if (variant.isEmpty()) {
         ui->variantLabel->hide();
-    else
+    } else {
         ui->variantLabel->setText(variant);
+    }
 
     QString url = cg.readEntry("Website", os.homeUrl);
-    if (url.isEmpty())
+    if (url.isEmpty()) {
         ui->urlLabel->hide();
-    else
+    } else {
         ui->urlLabel->setText(QStringLiteral("<a href='%1'>%1</a>").arg(url));
+    }
 
     // Since Plasma version detection isn't based on a library query it can fail
     // in weird cases; instead of admiting defeat we simply hide everything :P
@@ -171,8 +174,9 @@ void Module::load()
     if(uname(&utsName) != 0) {
         ui->kernel->hide();
         ui->kernelLabel->hide();
-    } else
+    } else {
         ui->kernelLabel->setText(utsName.release);
+    }
 
     const int bits = QT_POINTER_SIZE == 8 ? 64 : 32;
     ui->bitsLabel->setText(i18nc("@label %1 is the CPU bit width (e.g. 32 or 64)",
