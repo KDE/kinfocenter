@@ -95,6 +95,11 @@ Module::Module(QWidget *parent, const QVariantList &args) :
     font.setBold(true);
     ui->nameVersionLabel->setFont(font);
 
+    QFont fontVariant = ui->variantLabel->font();
+    fontVariant.setPixelSize(18);
+    fontVariant.setBold(true);
+    ui->variantLabel->setFont(fontVariant);
+
     ui->urlLabel->setTextInteractionFlags(Qt::TextSelectableByMouse | Qt::LinksAccessibleByMouse);
 
     // We have no help so remove the button from the buttons.
@@ -129,6 +134,12 @@ void Module::load()
     QString distroName = cg.readEntry("Name", os.name);
     QString versionId = cg.readEntry("Version", os.versionId);
     ui->nameVersionLabel->setText(QStringLiteral("%1 %2").arg(distroName, versionId));
+
+    QString variant = cg.readEntry("Variant", QString());
+    if (variant.isEmpty())
+        ui->variantLabel->hide();
+    else
+        ui->variantLabel->setText(variant);
 
     QString url = cg.readEntry("Website", os.homeUrl);
     if (url.isEmpty())

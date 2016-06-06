@@ -37,6 +37,13 @@
       </widget>
      </item>
      <item>
+      <widget class="QLabel" name="variantLabel">
+       <property name="text">
+        <string>{variantLabel}</string>
+       </property>
+      </widget>
+     </item>
+     <item>
       <widget class="QLabel" name="urlLabel">
        <property name="text">
         <string notr="true">{UrlLabel}</string>
