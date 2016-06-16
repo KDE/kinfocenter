@@ -462,9 +462,7 @@ Item {
 
                                         var precision = modelData.precision
                                         if (typeof precision === "number") { // round to decimals
-                                            var tenPow = Math.pow(10, precision)
-                                            // TODO format commas
-                                            value = parseFloat(Math.round(value * tenPow) / tenPow).toFixed(precision)
+                                            value = Number(value).toLocaleString(Qt.locale(), "f", precision)
                                         }
 
                                         if (modelData.modifier && root["modifier_" + modelData.modifier]) {
