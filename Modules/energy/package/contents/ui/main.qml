@@ -419,9 +419,21 @@ Item {
                             level: 4
                             color: sysPal.text
                             text: modelData.title
+                            // HACK hide section header if all labels are invisible
+                            visible: {
+                                for (var i = 0, length = detailsRepeater.count; i < length; ++i) {
+                                    var item = detailsRepeater.itemAt(i)
+                                    if (item && item.visible) {
+                                        return true
+                                    }
+                                }
+
+                                return false
+                            }
                         }
 
                         Repeater {
+                            id: detailsRepeater
                             model: modelData.data || []
 
                             RowLayout {
