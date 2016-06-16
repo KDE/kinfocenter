@@ -59,6 +59,7 @@ Item {
         {
             title: i18n("Energy"),
             data: [
+                {label: i18nc("current power draw from the battery in W", "Consumption"), value: "energyRate", unit: i18nc("Watt", "W"), precision: 2},
                 {label: i18n("Capacity"), value: "capacity", unit: i18n("%"), precision: 0},
                 {label: i18n("Voltage"), value: "voltage", unit: i18nc("Volt", "V"), precision: 2},
                 {label: i18n("Current"), value: "energy", unit: i18nc("Watt-hours", "Wh"), precision: 2},
