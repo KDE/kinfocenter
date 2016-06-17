@@ -35,6 +35,7 @@ Name[sv]=Filindexeringsövervakare
 Name[uk]=Монітор засобу індексування файлів
 Name[x-test]=xxFile Indexer Monitorxx
 Name[zh_CN]=文件索引器监视器
+Name[zh_TW]=檔案索引器監視器
 
 Comment=Monitor State of File Indexer
 Comment[ast]=Monitoriza l'estáu del indizador de ficheros
@@ -65,6 +66,7 @@ Comment[sv]=Övervaka filindexeringens tillstånd
 Comment[uk]=Спостереження за станом засобу індексування файлів
 Comment[x-test]=xxMonitor State of File Indexerxx
 Comment[zh_CN]=监视文件索引器状态
+Comment[zh_TW]=監控檔案索引器的狀態
 
 X-KDE-Keywords=Baloo,File,Index,Monitor
 X-KDE-Keywords[ast]=Baloo,Ficheru,Índiz,Monitorizar
@@ -95,6 +97,7 @@ X-KDE-Keywords[sv]=Baloo,Fil,Indexering,Övervaka
 X-KDE-Keywords[uk]=Baloo,File,Index,Monitor,балу,файл,індекс,індексування,монітор,спостереження,стеження
 X-KDE-Keywords[x-test]=xxBalooxx,xxFilexx,xxIndexxx,xxMonitorxx
 X-KDE-Keywords[zh_CN]=Baloo,File,Index,Monitor,文件,索引,监视
+X-KDE-Keywords[zh_TW]=Baloo,File,Index,Monitor
 X-KDE-Weight=3
 
 Categories=Qt;KDE;X-KDE-information;
