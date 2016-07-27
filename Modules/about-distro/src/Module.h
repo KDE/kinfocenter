@@ -60,6 +60,9 @@ public:
     void defaults();
 
 private:
+    void loadSoftware();
+    void loadHardware();
+
     /**
      * UI
      */

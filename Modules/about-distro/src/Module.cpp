@@ -119,6 +119,20 @@ Module::~Module()
 
 void Module::load()
 {
+    loadSoftware();
+    loadHardware();
+}
+
+void Module::save()
+{
+}
+
+void Module::defaults()
+{
+}
+
+void Module::loadSoftware()
+{
     // NOTE: do not include globals, otherwise kdeglobals could provide values
     //       even though we only explicitly want them from our own config.
     KSharedConfig::Ptr config = KSharedConfig::openConfig(QStringLiteral("kcm-about-distrorc"),
@@ -168,14 +182,16 @@ void Module::load()
 
     ui->qtLabel->setText(qVersion());
 
-
 #if KCOREADDONS_VERSION >= QT_VERSION_CHECK(5,20,0)
     ui->frameworksLabel->setText(KCoreAddons::versionString());
 #else
     ui->frameworksLabelKey->setVisible(false);
     ui->frameworksLabel->setVisible(false);
 #endif
+}
 
+void Module::loadHardware()
+{
     struct utsname utsName;
     if(uname(&utsName) != 0) {
         ui->kernel->hide();
@@ -223,14 +239,6 @@ void Module::load()
                              ? i18nc("@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)",
                                      "%1 of RAM", KFormat().formatByteSize(totalRam))
                              : i18nc("Unknown amount of RAM", "Unknown"));
-}
-
-void Module::save()
-{
-}
-
-void Module::defaults()
-{
 }
 
 QString Module::plasmaVersion() const
