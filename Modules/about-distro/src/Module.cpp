@@ -104,6 +104,12 @@ Module::Module(QWidget *parent, const QVariantList &args) :
 
     // We have no help so remove the button from the buttons.
     setButtons(buttons() ^ KCModule::Help ^ KCModule::Default ^ KCModule::Apply);
+
+    // https://bugs.kde.org/show_bug.cgi?id=366158
+    // When a KCM loads fast enough do a blocking load via the constructor.
+    // Otherwise there is a notciable rendering gap where dummy/no data is
+    // shown. Makes it look bad.
+    load();
 }
 
 Module::~Module()
