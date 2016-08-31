@@ -1,7 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
 "dtd/kdedbx45.dtd" [
-<!ENTITY kappname "&kinfocenter;">
 <!ENTITY % addindex "IGNORE">
 <!ENTITY % English "INCLUDE" > <!-- change language only here -->
 ]>
@@ -648,7 +647,7 @@ share) from host <literal>*</literal> (&ie; from any host).  Now enable
 which matches the wildcard <literal>*</literal>, how many connections
 were opened by him.</para>
 
-<para>Now press <guibutton>clear</guibutton>.</para>
+<para>Now press <guibutton>Clear Results</guibutton>.</para>
 
 <para>Now set the <guilabel>Event</guilabel> field to File Access and
 enable <guilabel>Show expanded service info</guilabel> and press
