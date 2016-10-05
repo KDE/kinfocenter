@@ -150,6 +150,7 @@ Comment[sl]=Priročen pregled številnih podatkov o sistemu
 Comment[sv]=Centraliserad och bekväm översikt av systeminformation
 Comment[uk]=Централізований та зручний огляд усіх даних щодо системи
 Comment[x-test]=xxCentralized and convenient overview of system informationxx
+Comment[zh_CN]=中心化和方便的系统信息展示
 X-DBUS-ServiceName=org.kde.kinfocenter
 X-DBUS-StartupType=Unique
 Categories=Qt;KDE;System;
