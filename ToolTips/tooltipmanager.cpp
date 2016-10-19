@@ -168,7 +168,7 @@ void ToolTipManager::showToolTip( const QModelIndex& menuItem )
     }
     
     // the ownership of tip is transferred to KToolTip
-    KToolTip::showTip(QPoint(x, y), tip);
+    KToolTip::showTip(QPoint(x, y), tip, d->view->nativeParentWidget()->windowHandle());
 }
 
 QWidget * ToolTipManager::createTipContent( const QModelIndex& item )
