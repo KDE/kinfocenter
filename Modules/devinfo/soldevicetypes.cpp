@@ -414,7 +414,7 @@ QVListLayout *SolBatteryDevice::infoPanelLayout()
   }
   
   QString state;
-  switch(batdev->type())
+  switch(batdev->chargeState())
   {
   case Solid::Battery::Charging:
       state = i18n("Charging"); break;
