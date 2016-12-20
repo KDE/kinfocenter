@@ -8,7 +8,6 @@ X-KDE-ParentApp=kinfocenter
 
 Name=File Indexer Monitor
 Name[ar]=مرقاب مفهرس الملفّات
-Name[ast]=Monitorizador d'indizador de ficheros
 Name[ca]=Controlador de l'indexador de fitxers
 Name[ca@valencia]=Controlador de l'indexador de fitxers
 Name[da]=Overvågning af filindeksering
@@ -44,7 +43,6 @@ Name[zh_TW]=檔案索引器監視器
 
 Comment=Monitor State of File Indexer
 Comment[ar]=حالة مرقاب مفهرس الملفّات
-Comment[ast]=Monitoriza l'estáu del indizador de ficheros
 Comment[ca]=Controlador de l'estat de l'indexador de fitxers
 Comment[ca@valencia]=Controlador de l'estat de l'indexador de fitxers
 Comment[da]=Overvåg filindekseringens tilstand
@@ -80,7 +78,6 @@ Comment[zh_TW]=監控檔案索引器的狀態
 
 X-KDE-Keywords=Baloo,File,Index,Monitor
 X-KDE-Keywords[ar]=Baloo,File,Index,Monitor,بالو,ملف,ملفات,مهفرس,فهرسة,فهرس,مرقاب,مراقب
-X-KDE-Keywords[ast]=Baloo,Ficheru,Índiz,Monitorizar
 X-KDE-Keywords[ca]=Baloo,Fitxer,Índex,Controlador
 X-KDE-Keywords[ca@valencia]=Baloo,Fitxer,Índex,Controlador
 X-KDE-Keywords[da]=Baloo,Fil,Indeksering,Overvåg
