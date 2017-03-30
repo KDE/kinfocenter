@@ -20,12 +20,12 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     Config
     ConfigWidgets
     CoreAddons
+    Crash
     DBusAddons
     DocTools
     I18n
     IconThemes
     KCMUtils
-    KDELibs4Support
     KIO
     Service
     Solid
@@ -111,11 +111,11 @@ target_link_libraries( kinfocenter
     KF5::Completion
     KF5::ConfigWidgets
     KF5::CoreAddons
+    KF5::Crash
     KF5::DBusAddons
     KF5::I18n
     KF5::IconThemes
     KF5::KCMUtils
-    KF5::KDELibs4Support
     KF5::Service
     KF5::Solid
     KF5::WidgetsAddons

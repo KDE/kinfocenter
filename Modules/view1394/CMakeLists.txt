@@ -11,7 +11,7 @@ ki18n_wrap_ui(kcm_view1394_PART_SRCS view1394widget.ui )
 
 add_library(kcm_view1394 MODULE ${kcm_view1394_PART_SRCS})
 
-target_link_libraries(kcm_view1394 KF5::KCMUtils KF5::I18n KF5::KDELibs4Support ${RAW1394_LIBRARIES} )
+target_link_libraries(kcm_view1394 KF5::KCMUtils KF5::I18n ${RAW1394_LIBRARIES} )
 
 install(TARGETS kcm_view1394  DESTINATION ${PLUGIN_INSTALL_DIR} )
 

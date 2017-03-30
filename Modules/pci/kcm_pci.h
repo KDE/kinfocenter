@@ -21,16 +21,10 @@
 #ifndef KCONTROL_KCM_PCI_H
 #define KCONTROL_KCM_PCI_H
 
-#include <QWidget>
-#include <QPushButton>
-
-#include <kcmodule.h>
-#include <kaboutdata.h>
+#include <KCModule>
 
 #include "os_current.h"
 
-
-class QPushButton;
 class QTreeWidget;
 
 class KCMPci : public KCModule {

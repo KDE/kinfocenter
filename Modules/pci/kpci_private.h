@@ -14,10 +14,10 @@
 
 #include "kpci.h"
 
+#include <qglobal.h>
 #include <QString>
 
 #include <KLocalizedString>
-#include <kdemacros.h>
 
 //pci lookup buffer size
 #define NAME_BUFFER_SIZE 256
@@ -65,8 +65,8 @@ union pciInfo {
 				unsigned comFastBack:1;
 				unsigned comInterrupt:1;
 				unsigned comUnk:5;
-			} command_bits KDE_PACKED;
-		} command KDE_PACKED;
+			} command_bits Q_PACKED;
+		} command Q_PACKED;
 		union {
 			unsigned short status;
 			struct {
@@ -83,8 +83,8 @@ union pciInfo {
 				unsigned statRecMasterAbort:1;
 				unsigned statSigSystemError:1;
 				unsigned statDetectedParity:1;
-			} status_bits KDE_PACKED;
-		} status KDE_PACKED;
+			} status_bits Q_PACKED;
+		} status Q_PACKED;
 		unsigned char revision;
 		union {
 			unsigned char devProgIface;
@@ -95,8 +95,8 @@ union pciInfo {
 				unsigned progSecProgInd:1;
 				unsigned progUnk:3;
 				unsigned progIdeMaster:1;
-			} devProgIface_bits KDE_PACKED;
-		} devProgIface KDE_PACKED;
+			} devProgIface_bits Q_PACKED;
+		} devProgIface Q_PACKED;
 		unsigned char devSubClass;
 		unsigned char devClass;
 		unsigned char cacheLineSize;
@@ -106,8 +106,8 @@ union pciInfo {
 			struct {
 				unsigned headerType:7;
 				unsigned multifunctional:1;
-			} headerType_bits KDE_PACKED;
-		} headerType KDE_PACKED;
+			} headerType_bits Q_PACKED;
+		} headerType Q_PACKED;
 		union {
 			unsigned char bist;
 			struct {
@@ -115,8 +115,8 @@ union pciInfo {
 				unsigned bistUnk:2;
 				unsigned bistStart:1;
 				unsigned bistCapable:1;
-			} bist_bits KDE_PACKED;
-		} bist KDE_PACKED;
+			} bist_bits Q_PACKED;
+		} bist Q_PACKED;
 		union {
 			struct { //header0
 				union {
@@ -126,8 +126,8 @@ union pciInfo {
 						unsigned baseAddressType:2;
 						unsigned baseAddressPref:1;
 						unsigned baseAddressAddr:28;
-					} baseAddress_bits KDE_PACKED;
-				} KDE_PACKED mapping[6];
+					} baseAddress_bits Q_PACKED;
+				} Q_PACKED mapping[6];
 				unsigned cardbusCis;
 				unsigned short subVendor;
 				unsigned short subDevice;
@@ -137,15 +137,15 @@ union pciInfo {
 						unsigned romEnabled:1;
 						unsigned romUnk:10;
 						unsigned romAddr:21;
-					} romAddress_bits KDE_PACKED;
-				} romAddress KDE_PACKED;
+					} romAddress_bits Q_PACKED;
+				} romAddress Q_PACKED;
 				unsigned char capabilityList;
 				unsigned char reserved1[7];
 				unsigned char interruptLine;
 				unsigned char interruptPin;
 				unsigned char minGnt;
 				unsigned char maxLat;
-			} header0 KDE_PACKED;
+			} header0 Q_PACKED;
 			struct { //header1
 				unsigned baseAddress0_2;
 				unsigned baseAddress1_2;
@@ -159,8 +159,8 @@ union pciInfo {
 						unsigned ioBaseType:1;
 						unsigned ioBaseUnk:3;
 						unsigned ioBaseAddr:4;
-					} ioBase_bits KDE_PACKED;
-				} ioBase KDE_PACKED;
+					} ioBase_bits Q_PACKED;
+				} ioBase Q_PACKED;
 				unsigned char ioLimit;
 				union {
 					unsigned short secStatus;
@@ -178,16 +178,16 @@ union pciInfo {
 						unsigned secStatRecMasterAbort:1;
 						unsigned secStatSigSystemError:1;
 						unsigned secStatDetectedParity:1;
-					} secStatus_bits KDE_PACKED;
-				} secStatus KDE_PACKED;
+					} secStatus_bits Q_PACKED;
+				} secStatus Q_PACKED;
 				union {
 					unsigned short memoryBase;
 					struct {						
 						unsigned memoryType:1;
 						unsigned memoryUnk:3;
 						unsigned memoryAddr:4;
-					} memoryBase_bits KDE_PACKED;
-				} memoryBase KDE_PACKED;
+					} memoryBase_bits Q_PACKED;
+				} memoryBase Q_PACKED;
 				unsigned short memoryLimit;
 				union {
 					unsigned short prefMemoryBase;
@@ -195,8 +195,8 @@ union pciInfo {
 						unsigned prefMemoryType:1;
 						unsigned prefMemoryUnk:3;
 						unsigned prefMemoryAddr:4;
-					} prefMemoryBase_bits KDE_PACKED;
-				} prefMemoryBase KDE_PACKED;
+					} prefMemoryBase_bits Q_PACKED;
+				} prefMemoryBase Q_PACKED;
 				unsigned short prefMemoryLimit;
 				unsigned prefBaseUpper32;
 				unsigned prefLimitUpper32;
@@ -223,9 +223,9 @@ union pciInfo {
 						unsigned bridgeControlDisTimStat:1;
 						unsigned bridgeControlDisTimeSerr:1;
 						unsigned bridgeControlUnk2:4;
-					} bridgeControl_bits KDE_PACKED;
-				} bridgeControl KDE_PACKED;
-			} header1 KDE_PACKED;
+					} bridgeControl_bits Q_PACKED;
+				} bridgeControl Q_PACKED;
+			} header1 Q_PACKED;
 			struct{ //header2
 				unsigned baseAddress0_3;
 				union {
@@ -244,8 +244,8 @@ union pciInfo {
 						unsigned cbSecStatRecMasterAbort:1;
 						unsigned cbSecStatSigSystemError:1;
 						unsigned cbSecStatDetectedParity:1;
-					} cbSecStatus_bits KDE_PACKED;
-				} cbSecStatus KDE_PACKED;
+					} cbSecStatus_bits Q_PACKED;
+				} cbSecStatus Q_PACKED;
 				unsigned char cbPrimaryBus;
 				unsigned char cbCardBus;
 				unsigned char cbSubordinateBus;
@@ -253,7 +253,7 @@ union pciInfo {
 				struct {
 					unsigned cbMemoryBase;
 					unsigned cbMemoryLimit;
-				} KDE_PACKED cbMemory[2];
+				} Q_PACKED cbMemory[2];
 				struct {
 					union {
 						unsigned cbIoBase;
@@ -261,10 +261,10 @@ union pciInfo {
 							unsigned cbIoBaseType:1;
 							unsigned coIoBaseUnk:1;
 							unsigned cbIoBaseAddr:30;
-						} cbIoBase_bits KDE_PACKED;
-					} cbIoBase KDE_PACKED;
+						} cbIoBase_bits Q_PACKED;
+					} cbIoBase Q_PACKED;
 					unsigned cbIoLimit;
-				} KDE_PACKED cbIo[2];
+				} Q_PACKED cbIo[2];
 				unsigned char interruptLine_3;
 				unsigned char interruptPin_3;
 				union {
@@ -282,15 +282,15 @@ union pciInfo {
 						unsigned cbControlPref1:1;
 						unsigned cbControlPostWrites:1;
 						unsigned cbControlUnk2:5;
-					} cbControl_bits KDE_PACKED;
-				} cbControl KDE_PACKED;
+					} cbControl_bits Q_PACKED;
+				} cbControl Q_PACKED;
 				unsigned short cbSubVendor;
 				unsigned short cbSubDevice;
 				unsigned short cbLegacyModeBase;
-			} header2 KDE_PACKED;
-		} header KDE_PACKED;
-	} cooked KDE_PACKED;
-} KDE_PACKED;
+			} header2 Q_PACKED;
+		} header Q_PACKED;
+	} cooked Q_PACKED;
+} Q_PACKED;
 
 union agpInfo{
 	unsigned char raw[10];
@@ -299,13 +299,13 @@ union agpInfo{
 			unsigned revMinor:4;
 			unsigned revMaior:4;
 			unsigned char unk;
-		} revision KDE_PACKED;
+		} revision Q_PACKED;
 		union {
 			unsigned status;
 			struct {
 				unsigned statusEnhRate:4;
 				unsigned statusUnk:28;
-			} status_bits0 KDE_PACKED;
+			} status_bits0 Q_PACKED;
 			struct {
 				unsigned statusRate:3;
 				unsigned statusMode:1;
@@ -321,14 +321,14 @@ union agpInfo{
 				unsigned statusIsochSupp:1;
 				unsigned statusUnk2:6;
 				unsigned statusReq:8;
-			} status_bits1 KDE_PACKED;
-		} status KDE_PACKED;
+			} status_bits1 Q_PACKED;
+		} status Q_PACKED;
 		union {
 			unsigned config;
 			struct {
 				unsigned configEnhRate:4;
 				unsigned configUnk:28;
-			} config_bits0 KDE_PACKED;
+			} config_bits0 Q_PACKED;
 			struct {
 				unsigned configRate:3;
 				unsigned configUnk1:1;
@@ -342,10 +342,10 @@ union agpInfo{
 				unsigned configOptReqSize:3;
 				unsigned configUnk3:8;
 				unsigned configReq:8;
-			} config_bits1 KDE_PACKED;
-		} config KDE_PACKED;
-	} cooked KDE_PACKED;
-} KDE_PACKED;
+			} config_bits1 Q_PACKED;
+		} config Q_PACKED;
+	} cooked Q_PACKED;
+} Q_PACKED;
 
 union pmInfo {
 	unsigned char raw[6];
@@ -365,8 +365,8 @@ union pmInfo {
 				unsigned capsPmeD2:1;
 				unsigned capsPmeD3hot:1;
 				unsigned capsPmeD3cold:1;
-			} caps_bits KDE_PACKED;
-		} caps KDE_PACKED;
+			} caps_bits Q_PACKED;
+		} caps Q_PACKED;
 		union {
 			unsigned short status;
 			struct {
@@ -376,19 +376,19 @@ union pmInfo {
 				unsigned statDataSelect:4;
 				unsigned statDataScale:2;
 				unsigned statPmeStat:1;
-			} status_bits KDE_PACKED;
-		} status KDE_PACKED;
+			} status_bits Q_PACKED;
+		} status Q_PACKED;
 		union {
 			unsigned char statusBridge;
 			struct {
 				unsigned statBridgeUnk:6;
 				unsigned statBridgeBx:1;
 				unsigned statBridgeClock:1;
-			} statusBridge_bits KDE_PACKED;
-		} statusBridge KDE_PACKED;
+			} statusBridge_bits Q_PACKED;
+		} statusBridge Q_PACKED;
 		unsigned char data;
-	} cooked KDE_PACKED;
-} KDE_PACKED;
+	} cooked Q_PACKED;
+} Q_PACKED;
 
 union vpdInfo {
 	unsigned char raw[6];
@@ -396,8 +396,8 @@ union vpdInfo {
 		unsigned vpdAddress:15;
 		unsigned vpdTransfer:1;
 		unsigned vpdData;
-	} cooked  KDE_PACKED;
-} KDE_PACKED;
+	} cooked  Q_PACKED;
+} Q_PACKED;
 
 union msiInfo {
 	unsigned char raw[22];
@@ -411,8 +411,8 @@ union msiInfo {
 				unsigned msi64bit:1;
 				unsigned msiPerVector:1;
 				unsigned msiUnk0:7;
-			} msiControl_bits KDE_PACKED;
-		} msiControl KDE_PACKED;
+			} msiControl_bits Q_PACKED;
+		} msiControl Q_PACKED;
 		unsigned msiAddress;
 		union {
 			struct {
@@ -421,16 +421,16 @@ union msiInfo {
 				unsigned short msiUnk64;
 				unsigned msiMask64;
 				unsigned msiPending64;
-			} address KDE_PACKED;
+			} address Q_PACKED;
 			struct {
 				unsigned short msiData;
 				unsigned short msiUnk;			
 				unsigned msiMask;
 				unsigned msiPending;
-			} data KDE_PACKED;
-		} payload KDE_PACKED;
-	} cooked KDE_PACKED;
-} KDE_PACKED;
+			} data Q_PACKED;
+		} payload Q_PACKED;
+	} cooked Q_PACKED;
+} Q_PACKED;
 
 //In following arrays -1 mean default value
 

@@ -33,10 +33,8 @@
 #include <QGridLayout>
 #include <QHBoxLayout>
 #include <QVBoxLayout>
-#include <KLocale>
-
 #include <QDebug>
-#include <KDialog>
+
 #include <KLocalizedString>
 
 StatisticsView::StatisticsView(QWidget *parent, KConfig *config) :
@@ -95,8 +93,6 @@ StatisticsView::StatisticsView(QWidget *parent, KConfig *config) :
 	expandedUserCb->setMinimumSize(expandedUserCb->sizeHint());
 
 	QVBoxLayout *topLayout=new QVBoxLayout(this);
-	topLayout->setMargin(KDialog::marginHint());
-	topLayout->setSpacing(KDialog::spacingHint());
 	topLayout->addWidget(viewStatistics, 1);
 	QGridLayout *subLayout=new QGridLayout();
 	topLayout->addItem(subLayout);
@@ -128,9 +124,9 @@ void StatisticsView::setListInfo(QTreeWidget *list, int nrOfFiles, int nrOfConne
 	dataList=list;
 	filesCount=nrOfFiles;
 	connectionsCount=nrOfConnections;
-	connectionsL->setText(i18n("Connections: %1", KLocale::global()->formatNumber(connectionsCount, 0)));
-	filesL->setText(i18n("File accesses: %1", KLocale::global()->formatNumber(filesCount, 0)));
-	clearStatistics();
+    connectionsL->setText(i18n("Connections: %1", connectionsCount));
+    filesL->setText(i18n("File accesses: %1", filesCount));
+    clearStatistics();
 }
 
 void StatisticsView::calculate() {

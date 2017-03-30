@@ -2,12 +2,12 @@
 add_definitions(-DTRANSLATION_DOMAIN=\"kcmnic\")
 
 include(CheckSymbolExists)
-include(CheckStructMember)
+include(CheckStructHasMember)
 include(CheckFunctionExists)
 
 check_include_files(sys/sockio.h HAVE_SYS_SOCKIO_H) # nic.cpp
 check_symbol_exists(getnameinfo   "sys/socket.h;netdb.h" HAVE_GETNAMEINFO) # nic.cpp
-check_struct_member("struct sockaddr" "sa_len" "sys/socket.h" HAVE_STRUCT_SOCKADDR_SA_LEN) # nic.cpp
+check_struct_has_member("struct sockaddr" "sa_len" "sys/socket.h" HAVE_STRUCT_SOCKADDR_SA_LEN) # nic.cpp
 check_function_exists(getifaddrs  HAVE_GETIFADDRS)  # nic.cpp
 
 configure_file (config-nic.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-nic.h )

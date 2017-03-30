@@ -19,10 +19,10 @@ endif()
 add_library(kcm_info MODULE ${kcm_info_PART_SRCS})
 
 target_link_libraries(kcm_info
+    KF5::CoreAddons
     KF5::KCMUtils
     KF5::I18n
     KF5::IconThemes
-    KF5::KDELibs4Support
     ${X11_X11_LIB})
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD")

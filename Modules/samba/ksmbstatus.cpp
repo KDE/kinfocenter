@@ -22,9 +22,7 @@
 #include <string.h>
 #include <time.h>
 
-
 #include <KLocalizedString>
-#include <kdialog.h>
 
 #include <QBoxLayout>
 #include <QDebug>
@@ -37,8 +35,6 @@
 NetMon::NetMon(QWidget * parent, KConfig *config) :
 	QWidget(parent), configFile(config), showmountProc(0), strShare(""), strUser(""), strGroup(""), strMachine(""), strSince(""), strPid(""), iUser(0), iGroup(0), iMachine(0), iPid(0) {
 	QBoxLayout *topLayout = new QVBoxLayout(this);
-	topLayout->setMargin(KDialog::marginHint());
-	topLayout->setSpacing(KDialog::spacingHint());
 
 	list = new QTreeWidget(this);
 	topLayout->addWidget(list);

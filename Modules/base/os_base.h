@@ -31,8 +31,6 @@ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 #include <QTreeWidgetItem>
 
 #include <kiconloader.h>
-#include <kglobal.h>
-#include <klocale.h>
 #include <KLocalizedString>
 #include <config-X11.h>
 #include "config-infocenter.h"
@@ -43,7 +41,7 @@ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 
 
 static const QString Value(int val, int numbers=1) {
-	return KLocale::global()->formatNumber(val, 0).rightJustified(numbers);
+	return QString::number(val).rightJustified(numbers);
 }
 
 static const QString HexStr(unsigned long val, int digits) {

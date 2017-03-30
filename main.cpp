@@ -25,6 +25,7 @@
 
 //KDE
 #include <kaboutdata.h>
+#include <KCrash>
 #include <KLocalizedString>
 #include <config-workspace.h>
 #include <KDBusService>
@@ -70,6 +71,8 @@ KicApp::KicApp(int &argc, char **argv)
 int main(int argc, char *argv[])
 {
     KicApp Kic(argc, argv);
+
+    KCrash::initialize();
 
     return Kic.exec();
 }

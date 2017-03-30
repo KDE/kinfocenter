@@ -30,7 +30,6 @@
 
 #include <kpluginfactory.h>
 #include <kpluginloader.h>
-#include <KDialog>
 
 #include <sys/time.h>
 #include <sys/types.h>
@@ -79,7 +78,6 @@ View1394::View1394(QWidget *parent, const QVariantList &) :
 
 	m_ouiDb=new OuiDb();
 	QVBoxLayout *box=new QVBoxLayout(this);
-	box->setSpacing(KDialog::spacingHint());
 	box->setMargin(0);
 	m_view=new View1394Widget(this);
 	/*

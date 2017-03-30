@@ -29,7 +29,7 @@
 #include <QGridLayout>
 
 #include <kmessagebox.h>
-#include <kdialog.h>
+#include <KConfigGroup>
 #include <KLocalizedString>
 
 #include "kcmsambalog.h"
@@ -42,8 +42,6 @@ LogView::LogView(QWidget *parent, KConfig *config) :
 	label.setTextInteractionFlags(Qt::TextSelectableByMouse);
 	label.setBuddy( &logFileName);
 	QVBoxLayout *mainLayout=new QVBoxLayout(this);
-	mainLayout->setMargin(KDialog::marginHint());
-	mainLayout->setSpacing(KDialog::spacingHint());
 	QHBoxLayout *leLayout=new QHBoxLayout();
 	mainLayout->addItem(leLayout);
 	leLayout->addWidget(&label);
