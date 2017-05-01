@@ -194,6 +194,7 @@ void WaylandModule::init()
                                 break;
                             }
                             new QTreeWidgetItem(o, QStringList() << i18n("Transform") << transform);
+                            new QTreeWidgetItem(o, QStringList() << i18nc("The scale factor of the output", "Scale") << QString::number(output->scale()));
 
                             // add Modes
                             auto modesItem = new QTreeWidgetItem(o, QStringList() << i18n("Modes"));
