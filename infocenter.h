@@ -71,7 +71,7 @@ class KInfoCenter : public KXmlGuiWindow
         * @param watched object being watched
         * @param event event object containing event information
         */
-        bool eventFilter(QObject *watched, QEvent *event);
+        bool eventFilter(QObject *watched, QEvent *event) Q_DECL_OVERRIDE;
 
         public Q_SLOTS:
 

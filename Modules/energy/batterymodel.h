@@ -44,9 +44,9 @@ public:
     Q_INVOKABLE Solid::Battery *get(int index) const;
     Q_INVOKABLE QString udi(int index) const;
 
-    QVariant data(const QModelIndex &index, int role) const;
-    int rowCount(const QModelIndex &parent = QModelIndex()) const;
-    QHash<int, QByteArray> roleNames() const;
+    QVariant data(const QModelIndex &index, int role) const Q_DECL_OVERRIDE;
+    int rowCount(const QModelIndex &parent = QModelIndex()) const Q_DECL_OVERRIDE;
+    QHash<int, QByteArray> roleNames() const Q_DECL_OVERRIDE;
 
 signals:
     void countChanged();

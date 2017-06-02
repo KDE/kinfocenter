@@ -76,7 +76,7 @@ class DeviceListing : public QTreeWidget
   private:
     void populateListing(const show=RELEVANT);
     QTreeWidgetItem *createListItems(const Solid::DeviceInterface::Type &);
-    void contextMenuEvent(QContextMenuEvent *);
+    void contextMenuEvent(QContextMenuEvent *) Q_DECL_OVERRIDE;
     void createMenuActions();
   
     QMap<Solid::DeviceInterface::Type, SolDevice *> deviceMap;

@@ -42,7 +42,7 @@ public:
 	explicit KCMMemory(QWidget *parent = NULL, const QVariantList &list = QVariantList());
 	~KCMMemory();
 
-	QString quickHelp() const;
+	QString quickHelp() const Q_DECL_OVERRIDE;
 	
 private Q_SLOTS:
 	void updateMemoryText();

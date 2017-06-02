@@ -39,7 +39,7 @@ public:
 	
 
 protected:
-	virtual void paintEvent(QPaintEvent* event);
+	void paintEvent(QPaintEvent* event) Q_DECL_OVERRIDE;
 	
 private:
 	bool colorsInitialized;

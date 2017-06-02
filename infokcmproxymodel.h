@@ -47,7 +47,7 @@ class InfoKcmProxyModel : public QSortFilterProxyModel
         * Check if left item is less than right item
         * Uses X-KDE-Weight for measurements
         */
-        bool lessThan(const QModelIndex &, const QModelIndex &) const;
+        bool lessThan(const QModelIndex &, const QModelIndex &) const Q_DECL_OVERRIDE;
 
     private:
 
@@ -55,7 +55,7 @@ class InfoKcmProxyModel : public QSortFilterProxyModel
         * Filter out rows
         * Used in search implementation
         */
-        bool filterAcceptsRow(int, const QModelIndex &) const;
+        bool filterAcceptsRow(int, const QModelIndex &) const Q_DECL_OVERRIDE;
 };
 
 #endif // INFOKCMPROXYMODEL

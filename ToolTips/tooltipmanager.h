@@ -64,7 +64,7 @@ protected:
     * @param event The event object.
     * @returns true if the event was handled in this filter, or false if it was not.
     */
-    virtual bool eventFilter( QObject* watched, QEvent* event );
+    bool eventFilter( QObject* watched, QEvent* event ) Q_DECL_OVERRIDE;
 
 private Q_SLOTS:
     void prepareToolTip();

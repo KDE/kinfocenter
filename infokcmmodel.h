@@ -63,23 +63,23 @@ class InfoKcmModel : public QAbstractItemModel
         * @param parent parent of object
         * @return index of object
         */
-        QModelIndex index(int row, int column, const QModelIndex& parent) const;
+        QModelIndex index(int row, int column, const QModelIndex& parent) const Q_DECL_OVERRIDE;
         QModelIndex index(int row, int column, KcmTreeItem *parent) const;
 
         /**
         * Get parent of item in model
         */
-        QModelIndex parent(const QModelIndex& index) const;
+        QModelIndex parent(const QModelIndex& index) const Q_DECL_OVERRIDE;
 
         /**
         * Get amount of rows under parent
         */
-        int rowCount(const QModelIndex& parent) const;
+        int rowCount(const QModelIndex& parent) const Q_DECL_OVERRIDE;
 
         /**
         * Get amount of columns under parent
         */
-        int columnCount(const QModelIndex& parent) const;
+        int columnCount(const QModelIndex& parent) const Q_DECL_OVERRIDE;
 
         /**
         * Get the stored data for a role
@@ -87,17 +87,17 @@ class InfoKcmModel : public QAbstractItemModel
         * @param index objects index
         * @param role role to retrieve data about
         */
-        QVariant data(const QModelIndex& index, int role) const;
+        QVariant data(const QModelIndex& index, int role) const Q_DECL_OVERRIDE;
 
         /**
         * Get header information
         */
-        QVariant headerData(int, Qt::Orientation, int) const;
+        QVariant headerData(int, Qt::Orientation, int) const Q_DECL_OVERRIDE;
 
         /**
         * Get set flags for a treeitem
         */
-        Qt::ItemFlags flags(const QModelIndex &) const;
+        Qt::ItemFlags flags(const QModelIndex &) const Q_DECL_OVERRIDE;
 
         /**
         * Get the first valid item on the treeview

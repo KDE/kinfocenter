@@ -37,11 +37,11 @@ class SolProcessorDevice : public SolDevice
   public:
     SolProcessorDevice(const Solid::DeviceInterface::Type &);
     SolProcessorDevice(QTreeWidgetItem *, const Solid::Device &);
-    QVListLayout *infoPanelLayout();
+    QVListLayout *infoPanelLayout() Q_DECL_OVERRIDE;
     
   private:
-    void setDefaultDeviceText();
-    void setDefaultListing(const Solid::DeviceInterface::Type &); 
+    void setDefaultDeviceText() Q_DECL_OVERRIDE;
+    void setDefaultListing(const Solid::DeviceInterface::Type &) Q_DECL_OVERRIDE;
 };
 
 
@@ -53,11 +53,11 @@ class SolStorageDevice : public SolDevice
     
     SolStorageDevice(const Solid::DeviceInterface::Type &);
     SolStorageDevice(QTreeWidgetItem *, const Solid::Device &, const storageChildren & = CREATECHILDREN);
-    QVListLayout *infoPanelLayout();
+    QVListLayout *infoPanelLayout() Q_DECL_OVERRIDE;
       
   private:
-    void setDefaultDeviceText();
-    void setDefaultListing(const Solid::DeviceInterface::Type &); 
+    void setDefaultDeviceText() Q_DECL_OVERRIDE;
+    void setDefaultListing(const Solid::DeviceInterface::Type &) Q_DECL_OVERRIDE;
 };
 
 class SolVolumeDevice : public SolDevice 
@@ -66,10 +66,10 @@ class SolVolumeDevice : public SolDevice
   public:
     SolVolumeDevice(const Solid::DeviceInterface::Type &);
     SolVolumeDevice(QTreeWidgetItem *, const Solid::Device &);
-    QVListLayout *infoPanelLayout();
+    QVListLayout *infoPanelLayout() Q_DECL_OVERRIDE;
     
   private:
-    void setDefaultListing(const Solid::DeviceInterface::Type &);
+    void setDefaultListing(const Solid::DeviceInterface::Type &) Q_DECL_OVERRIDE;
 };
 
 class SolMediaPlayerDevice : public SolDevice 
@@ -78,10 +78,10 @@ class SolMediaPlayerDevice : public SolDevice
   public:
     SolMediaPlayerDevice(const Solid::DeviceInterface::Type &);
     SolMediaPlayerDevice(QTreeWidgetItem *, const Solid::Device &);
-    QVListLayout *infoPanelLayout();
+    QVListLayout *infoPanelLayout() Q_DECL_OVERRIDE;
 
   private:
-    void setDefaultListing(const Solid::DeviceInterface::Type &);
+    void setDefaultListing(const Solid::DeviceInterface::Type &) Q_DECL_OVERRIDE;
 };
 
 class SolCameraDevice : public SolDevice 
@@ -90,10 +90,10 @@ class SolCameraDevice : public SolDevice
   public:
     SolCameraDevice(const Solid::DeviceInterface::Type &);
     SolCameraDevice(QTreeWidgetItem *, const Solid::Device &);
-    QVListLayout *infoPanelLayout();
+    QVListLayout *infoPanelLayout() Q_DECL_OVERRIDE;
     
   private:
-    void setDefaultListing(const Solid::DeviceInterface::Type &);
+    void setDefaultListing(const Solid::DeviceInterface::Type &) Q_DECL_OVERRIDE;
 };
 
 class SolBatteryDevice : public SolDevice 
@@ -102,10 +102,10 @@ class SolBatteryDevice : public SolDevice
   public:
     SolBatteryDevice(const Solid::DeviceInterface::Type &);
     SolBatteryDevice(QTreeWidgetItem *, const Solid::Device &);
-    QVListLayout *infoPanelLayout();
+    QVListLayout *infoPanelLayout() Q_DECL_OVERRIDE;
     
   private:
-    void setDefaultListing(const Solid::DeviceInterface::Type &);
+    void setDefaultListing(const Solid::DeviceInterface::Type &) Q_DECL_OVERRIDE;
 };
 
 #endif //SOLDEVICETYPES

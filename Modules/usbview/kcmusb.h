@@ -26,7 +26,7 @@ public:
 
 	explicit USBViewer(QWidget *parent = 0L, const QVariantList &list=QVariantList());
 
-	void load();
+	void load() Q_DECL_OVERRIDE;
 
 protected Q_SLOTS:
 

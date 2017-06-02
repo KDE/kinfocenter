@@ -47,17 +47,17 @@ public:
     /**
      * Overloading the KCModule load() function.
      */
-    void load();
+    void load() Q_DECL_OVERRIDE;
 
     /**
      * Overloading the KCModule save() function.
      */
-    void save();
+    void save() Q_DECL_OVERRIDE;
 
     /**
      * Overloading the KCModule defaults() function.
      */
-    void defaults();
+    void defaults() Q_DECL_OVERRIDE;
 
 private:
     void loadSoftware();

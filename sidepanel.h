@@ -125,7 +125,7 @@ class SidePanel : public QTreeView
         /**
         * Create treeview item menu
         */
-        void contextMenuEvent(QContextMenuEvent *event);
+        void contextMenuEvent(QContextMenuEvent *event) Q_DECL_OVERRIDE;
 
         InfoKcmModel *m_model;
         InfoKcmProxyModel *m_proxyModel;

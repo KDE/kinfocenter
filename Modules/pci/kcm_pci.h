@@ -34,8 +34,8 @@ public:
 	explicit KCMPci(QWidget *parent = NULL, const QVariantList &list = QVariantList());
 	~KCMPci();
 
-	virtual void load();
-	virtual QString quickHelp() const;
+	void load() Q_DECL_OVERRIDE;
+	QString quickHelp() const Q_DECL_OVERRIDE;
 
 private:
 	QTreeWidget* tree;
