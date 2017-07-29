@@ -39,7 +39,7 @@
      <item>
       <widget class="QLabel" name="variantLabel">
        <property name="text">
-        <string>{variantLabel}</string>
+        <string notr="true">{variantLabel}</string>
        </property>
       </widget>
      </item>
