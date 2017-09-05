@@ -814,6 +814,7 @@ static QTreeWidgetItem *get_gl_info_egl(Display *dpy, int scrnum, QTreeWidgetIte
    if (!ctx) {
       qDebug() << "Error: eglCreateContext failed\n";
       XDestroyWindow(dpy, win);
+      XFree(visinfo);
       return result;
    }
 
@@ -822,6 +823,7 @@ static QTreeWidgetItem *get_gl_info_egl(Display *dpy, int scrnum, QTreeWidgetIte
       qDebug() << "Error: eglCreateWindowSurface failed\n";
       eglDestroyContext(egl_dpy, ctx);
       XDestroyWindow(dpy, win);
+      XFree(visinfo);
       return result;
    }
 
@@ -843,6 +845,7 @@ static QTreeWidgetItem *get_gl_info_egl(Display *dpy, int scrnum, QTreeWidgetIte
    eglDestroyContext(egl_dpy, ctx);
    eglDestroySurface(egl_dpy, surf);
    XDestroyWindow(dpy, win);
+   XFree(visinfo);
    return result;
 
 }
