@@ -44,7 +44,6 @@ void Chart::setFreeMemoryLabel(QLabel* freeMemoryLabel) {
 
 /* Graphical Memory Display */
 bool Chart::drawChart(t_memsize total, const QList<t_memsize>& used, const QList<QColor>& colors, const QList<QString>& texts) {
-	
 	QPainter paint(this);
 
 	QPen pen(QColor(0, 0, 0));
@@ -54,11 +53,13 @@ bool Chart::drawChart(t_memsize total, const QList<t_memsize>& used, const QList
 		paint.fillRect(1, 1, width() - 2, height() - 2, QBrush(QColor(128, 128, 128)));
 		paint.setPen(pen);
 		paint.drawRect(rect());
+		setAccessibleDescription(i18n("Not available."));
 		freeMemoryLabel->setText(i18n("Not available."));
 
 		return false;
 	}
 
+	QStringList accessibleDescription;
 	int startline = height()-2;
 	
 	int percent, localheight;
@@ -90,6 +91,7 @@ bool Chart::drawChart(t_memsize total, const QList<t_memsize>& used, const QList
 
 			if (localheight >= SPACING) {
 				paint.drawText(0, startline-localheight, width(), localheight, Qt::AlignCenter | Qt::TextWordWrap, QStringLiteral("%1 %2%").arg(text).arg(percent));
+				accessibleDescription.append(QStringLiteral("%1 %2%").arg(text).arg(percent));
 			}
 		}
 
@@ -103,7 +105,7 @@ bool Chart::drawChart(t_memsize total, const QList<t_memsize>& used, const QList
 
 	freeMemoryLabel->setText(i18n("%1 free", formattedUnit(last_used)));
 
-	
+	setAccessibleDescription(accessibleDescription.join('\n'));
 	return true;
 }
 
