@@ -46,11 +46,13 @@ SidePanel::SidePanel(QWidget *parent) : QTreeView(parent)
 
     setMouseTracking(true);
     setModel(m_proxyModel);
+    connect(this,SIGNAL(activated(QModelIndex)),this,SLOT(clickedSlot(QModelIndex)));
     connect(this,SIGNAL(clicked(QModelIndex)),this,SLOT(clickedSlot(QModelIndex)));
 }
 
 SidePanel::~SidePanel()
 {
+    disconnect(this,SIGNAL(activated(QModelIndex)),this,SLOT(clickedSlot(QModelIndex)));
     disconnect(this,SIGNAL(clicked(QModelIndex)),this,SLOT(clickedSlot(QModelIndex)));
 
     delete m_proxyModel;

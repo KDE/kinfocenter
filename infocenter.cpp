@@ -202,10 +202,12 @@ void KInfoCenter::itemClickedSlot(const KcmTreeItem *item)
 
 void KInfoCenter::setKcm(const KcmTreeItem *kcmItem)
 {
-    m_contain->setKcm(kcmItem->kcm());
+    if (m_contain->fileName() != kcmItem->kcm().fileName()) {
+        m_contain->setKcm(kcmItem->kcm());
 
-    setButtons(m_contain->buttons());
-    m_aboutKcm->setEnabled(true);
+        setButtons(m_contain->buttons());
+        m_aboutKcm->setEnabled(true);
+    }
 }
 
 void KInfoCenter::setButtons(const KCModule::Buttons buttons)
