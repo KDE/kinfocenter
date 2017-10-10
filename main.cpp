@@ -36,11 +36,12 @@
 KicApp::KicApp(int &argc, char **argv)
     : QApplication(argc, argv)
 {
+    KLocalizedString::setApplicationDomain("kinfocenter");
+
     const auto displayName = i18n("Info Center");
     QApplication::setApplicationDisplayName(displayName);
     QApplication::setOrganizationDomain(QStringLiteral("kde.org"));
     QApplication::setWindowIcon(QIcon::fromTheme("hwinfo"));
-    KLocalizedString::setApplicationDomain("kinfocenter");
 
     KAboutData aboutData( QStringLiteral("kinfocenter"), displayName,
         PROJECT_VERSION, displayName, KAboutLicense::GPL,
