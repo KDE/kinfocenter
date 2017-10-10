@@ -36,12 +36,9 @@
 KicApp::KicApp(int &argc, char **argv)
     : QApplication(argc, argv)
 {
-    const auto displayName = i18n("Info Center");
-    QApplication::setApplicationDisplayName(displayName);
-    QApplication::setOrganizationDomain(QStringLiteral("kde.org"));
-    QApplication::setWindowIcon(QIcon::fromTheme("hwinfo"));
     KLocalizedString::setApplicationDomain("kinfocenter");
 
+    const auto displayName = i18n("Info Center");
     KAboutData aboutData( QStringLiteral("kinfocenter"), displayName,
         PROJECT_VERSION, displayName, KAboutLicense::GPL,
         i18n("Copyright 2009-2016 KDE"));
@@ -54,6 +51,7 @@ KicApp::KicApp(int &argc, char **argv)
     aboutData.addAuthor(i18n("Waldo Bastian"), QString(), QStringLiteral("bastian@kde.org"));
     aboutData.addAuthor(i18n("Nicolas Ternisien"), QString(), QStringLiteral("nicolas.ternisien@gmail.com"));
     KAboutData::setApplicationData(aboutData);
+    QApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("hwinfo")));
 
     QCommandLineParser parser;
     parser.addHelpOption();
