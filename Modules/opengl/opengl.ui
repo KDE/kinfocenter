@@ -14,7 +14,7 @@
     <widget class="QTreeWidget" name="glinfoTreeWidget" >
      <column>
       <property name="text" >
-       <string>1</string>
+       <string comment="KDE::DoNotExtract">1</string>
       </property>
      </column>
     </widget>
