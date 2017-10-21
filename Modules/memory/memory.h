@@ -39,7 +39,7 @@ class KCMMemory : public KCModule {
 	Q_OBJECT
 
 public:
-	explicit KCMMemory(QWidget *parent = NULL, const QVariantList &list = QVariantList());
+	explicit KCMMemory(QWidget *parent = nullptr, const QVariantList &list = QVariantList());
 	~KCMMemory();
 
 	QString quickHelp() const Q_DECL_OVERRIDE;

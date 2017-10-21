@@ -35,7 +35,7 @@ public:
 	/**
 	 * Initialize the list view item and task.
 	 */
-	SwapMemoryChart(QWidget* parent = NULL);
+	SwapMemoryChart(QWidget* parent = nullptr);
 	
 
 protected:

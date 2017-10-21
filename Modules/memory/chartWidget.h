@@ -34,7 +34,7 @@ class QWidget;
 
 class Chart : public QWidget {
 public:
-	Chart(QWidget* parent = NULL);
+	Chart(QWidget* parent = nullptr);
 	
 	void setMemoryInfos(t_memsize* memoryInfos);
 	void setFreeMemoryLabel(QLabel* freeMemoryLabel);
@@ -57,7 +57,7 @@ public:
 	/**
 	 * Initialize the list view item and task.
 	 */
-	ChartWidget(const QString& title, const QString& hint, Chart* chartImplementation, QWidget* parent = NULL);
+	ChartWidget(const QString& title, const QString& hint, Chart* chartImplementation, QWidget* parent = nullptr);
 	
 	void setMemoryInfos(t_memsize* memoryInfos);
 	void refresh();

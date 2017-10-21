@@ -31,7 +31,7 @@ class KCMPci : public KCModule {
 	Q_OBJECT
 
 public:
-	explicit KCMPci(QWidget *parent = NULL, const QVariantList &list = QVariantList());
+	explicit KCMPci(QWidget *parent = nullptr, const QVariantList &list = QVariantList());
 	~KCMPci();
 
 	void load() Q_DECL_OVERRIDE;
