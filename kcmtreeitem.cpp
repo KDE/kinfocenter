@@ -138,7 +138,7 @@ QString KcmTreeItem::whatsThis() const
 bool KcmTreeItem::childrenRegExp(const QRegExp& pattern)
 {
     foreach(KcmTreeItem *item, m_children) {
-        if((item->keywords().filter(pattern).count() > 0) == true) {
+        if(item->keywords().filter(pattern).count() > 0) {
             return true;
         }
     }
