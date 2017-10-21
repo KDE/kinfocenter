@@ -186,7 +186,7 @@ void DeviceListing::deviceAddedSlot(const QString udi)
 void DeviceListing::deviceRemovedSlot(const QString udi) 
 {
   const QTreeWidgetItem *item = getTreeWidgetItemFromUdi(this,udi);
-  if(item == NULL) return;
+  if(item == nullptr) return;
   
   delete item;
 }

@@ -103,7 +103,7 @@ KInfoCenter::~KInfoCenter()
     disconnect(m_searchAction, SIGNAL(triggered()),m_searchText, SLOT(setFocus()));
 
     //Buttons
-    disconnect(m_moduleHelpAction, &QAction::triggered,this,&KInfoCenter::helpClickedSlot);
+    disconnect(m_moduleHelpAction, &QAction::triggered, this, &KInfoCenter::helpClickedSlot);
 
     //Menu
     disconnect(m_aboutKcm, &QAction::triggered, this, &KInfoCenter::aboutKcmSlot);
@@ -229,7 +229,7 @@ void KInfoCenter::helpClickedSlot()
     // Nicked from Ben, could not use KToolInvocation due to docpath.
     QString docPath = m_contain->helpPath();
 
-    QUrl url("help:/" + docPath );
+    QUrl url(QStringLiteral("help:/") + docPath );
     QProcess::startDetached(QStringLiteral("khelpcenter"), QStringList() << url.url());
 }
 

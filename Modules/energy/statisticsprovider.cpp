@@ -103,6 +103,7 @@ void StatisticsProvider::componentComplete()
 QVariantList StatisticsProvider::asPoints() const
 {
     QVariantList points;
+    points.reserve(m_values.count());
     foreach (const HistoryReply &h, m_values) {
         points.append(QPointF(h.time, h.value));
     }

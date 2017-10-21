@@ -29,8 +29,8 @@
 #include <QVBoxLayout>
 #include <QStyle>
 
-KcmContainer::KcmContainer(QWidget *parent) : QScrollArea(parent), m_titleLabel(NULL),
-    m_centerWidget(NULL), m_mod(NULL), m_kcmTopEdge(-1)
+KcmContainer::KcmContainer(QWidget *parent) : QScrollArea(parent), m_titleLabel(nullptr),
+    m_centerWidget(nullptr), m_mod(nullptr), m_kcmTopEdge(-1)
 {
     setWidgetResizable( true );
     setFrameStyle( QFrame::NoFrame );
@@ -51,7 +51,7 @@ void KcmContainer::setContainerLayout()
         return;
     }
 
-    m_mod = NULL; // will be deleted on the line below
+    m_mod = nullptr; // will be deleted on the line below
     delete m_centerWidget;
     m_centerWidget = new QWidget(this);
     m_centerWidget->setContentsMargins(0,0,0,0);
@@ -107,7 +107,7 @@ void KcmContainer::setKcmTitle(const KCModuleInfo &info)
 
 QString KcmContainer::helpPath() const
 {
-    if(m_mod == NULL) {
+    if(m_mod == nullptr) {
         return QString();
     }
     return m_modInfo.docPath();

@@ -66,7 +66,7 @@ void InfoPanel::setDefaultText()
   lay->addWidget(defaultText,0,Qt::AlignHCenter);
 }
 
-void InfoPanel::setTopWidgetLayout(const bool &isInit) 
+void InfoPanel::setTopWidgetLayout(bool isInit)
 {   
   if(!isInit) delete top;
   top = new QWidget(this);
@@ -76,7 +76,7 @@ void InfoPanel::setTopWidgetLayout(const bool &isInit)
   top->setLayout(setAlignedLayout(top));
 }
 
-QVBoxLayout *InfoPanel::setAlignedLayout(QWidget *parent, const int &spacingHeight) 
+QVBoxLayout *InfoPanel::setAlignedLayout(QWidget *parent, int spacingHeight)
 { 
   QVBoxLayout *lay = new QVBoxLayout(parent);
   lay->insertSpacing(0,spacingHeight);
@@ -85,7 +85,7 @@ QVBoxLayout *InfoPanel::setAlignedLayout(QWidget *parent, const int &spacingHeig
   return lay;
 }
 
-void InfoPanel::setBottomWidgetLayout(QVListLayout *lay, const bool &isInit) 
+void InfoPanel::setBottomWidgetLayout(QVListLayout *lay, bool isInit)
 {  
   if(!isInit) delete bottom;
   
@@ -136,7 +136,7 @@ QString InfoPanel::friendlyString(const QString &input, const QString &blankName
   return input; 
 }
 
-QString InfoPanel::convertTf(const bool &b) 
+QString InfoPanel::convertTf(bool b)
 {  
   if(b) return i18n("Yes");
   return i18n("No");

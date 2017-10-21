@@ -41,7 +41,7 @@ KicApp::KicApp(int &argc, char **argv)
     const auto displayName = i18n("Info Center");
     KAboutData aboutData( QStringLiteral("kinfocenter"), displayName,
         PROJECT_VERSION, displayName, KAboutLicense::GPL,
-        i18n("Copyright 2009-2016 KDE"));
+        i18n("Copyright 2009-2017 KDE"));
 
     aboutData.addAuthor(i18n("David Hubner"),i18n("Current Maintainer"), QStringLiteral("hubnerd@ntlworld.com"));
     aboutData.addAuthor(i18n("Helge Deller"), i18n("Previous Maintainer"), QStringLiteral("deller@kde.org"));
@@ -63,7 +63,7 @@ KicApp::KicApp(int &argc, char **argv)
     display = new KInfoCenter();
     display->show();
 
-    KDBusService* service = new KDBusService(KDBusService::Unique, this);
+    (void)new KDBusService(KDBusService::Unique, this);
 }
 
 int main(int argc, char *argv[])

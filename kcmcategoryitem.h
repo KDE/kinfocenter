@@ -39,7 +39,7 @@ class KcmCategoryItem : public KcmTreeItem
         * @param module pointer to KCM module
         * @param parent objects parent
         */
-        explicit KcmCategoryItem(const KService::Ptr module, KcmTreeItem *parent=0);
+        explicit KcmCategoryItem(const KService::Ptr &module, KcmTreeItem *parent=nullptr);
 
         /**
         * Category Tree Item for InfoKcmModel. Holds information about a Category

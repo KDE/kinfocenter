@@ -24,11 +24,8 @@
 #include <QIcon>
 #include <QStandardPaths>
 
-#include <kcoreaddons_version.h>
 #include <KAboutData>
-#if KCOREADDONS_VERSION >= QT_VERSION_CHECK(5,20,0)
 #include <KCoreAddons>
-#endif
 #include <KConfig>
 #include <KConfigGroup>
 #include <KDesktopFile>
@@ -182,12 +179,7 @@ void Module::loadSoftware()
 
     ui->qtLabel->setText(qVersion());
 
-#if KCOREADDONS_VERSION >= QT_VERSION_CHECK(5,20,0)
     ui->frameworksLabel->setText(KCoreAddons::versionString());
-#else
-    ui->frameworksLabelKey->setVisible(false);
-    ui->frameworksLabel->setVisible(false);
-#endif
 }
 
 void Module::loadHardware()

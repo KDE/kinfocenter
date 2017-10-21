@@ -31,7 +31,8 @@
 #include <QRegExp>
 #include <QMenu>
 
-SidePanel::SidePanel(QWidget *parent) : QTreeView(parent)
+SidePanel::SidePanel(QWidget *parent)
+    : QTreeView(parent)
 {
     setHeaderHidden(true);
     setSortingEnabled(true);

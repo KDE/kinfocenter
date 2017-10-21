@@ -48,7 +48,7 @@ USBDevice::~USBDevice() {
 
 }
 
-static QString catFile(QString fname) {
+static QString catFile(const QString &fname) {
 	char buffer[256];
 	QString result;
 	int fd =:: open(QFile::encodeName(fname), O_RDONLY);

@@ -28,7 +28,7 @@ KcmTreeItem::KcmTreeItem(const KService::Ptr module, KcmTreeItem *parent) : m_pa
 {
 }
 
-KcmTreeItem::KcmTreeItem() : m_parent(NULL), m_moduleInfo(new KCModuleInfo())
+KcmTreeItem::KcmTreeItem() : m_parent(nullptr), m_moduleInfo(new KCModuleInfo())
 {
 }
 

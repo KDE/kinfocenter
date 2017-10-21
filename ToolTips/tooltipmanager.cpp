@@ -37,18 +37,12 @@
 class ToolTipManager::Private
 {
 public:
-    Private() :
-        view(0),
-        timer(0),
-        delay(50)
-        { }
-
-    KToolTipWidget *tooltip;
-    QAbstractItemView* view;
-    QTimer* timer;
+    KToolTipWidget *tooltip = nullptr;
+    QAbstractItemView* view = nullptr;
+    QTimer* timer = nullptr;
     QModelIndex item;
     QRect itemRect;
-    int delay;
+    int delay = 50;
 };
 
 ToolTipManager::ToolTipManager(QAbstractItemView* parent)

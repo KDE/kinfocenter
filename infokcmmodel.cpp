@@ -29,7 +29,9 @@
 #include <QDebug>
 #include <KLocalizedString>
 
-InfoKcmModel::InfoKcmModel(QObject *parent) : QAbstractItemModel(parent), m_root(new KcmCategoryItem(i18n("Information Modules")))
+InfoKcmModel::InfoKcmModel(QObject *parent)
+    : QAbstractItemModel(parent),
+      m_root(new KcmCategoryItem(i18n("Information Modules")))
 {
     createTreeItems();
 }
@@ -41,7 +43,7 @@ InfoKcmModel::~InfoKcmModel()
 
 void InfoKcmModel::createTreeItems()
 {
-    KService::List categoryList = KServiceTypeTrader::self()->query(QStringLiteral("KInfoCenterCategory"));
+    const KService::List categoryList = KServiceTypeTrader::self()->query(QStringLiteral("KInfoCenterCategory"));
 
     foreach(const KService::Ptr &categoryModule, categoryList) {
         m_root->addChild(new KcmCategoryItem(categoryModule,m_root));

@@ -54,17 +54,17 @@ class InfoPanel : public QGroupBox
     void setTopInfo(const QIcon &, Solid::Device *);
     void setBottomInfo(QVListLayout *lay);
     static QString friendlyString(const QString &, const QString & = i18nc("name of something is not known", "Unknown"));
-    static QString convertTf(const bool &);
+    static QString convertTf(bool );
     
   private:
-    void setTopWidgetLayout(const bool & = false);
-    void setBottomWidgetLayout(QVListLayout *, const bool & = false); 
+    void setTopWidgetLayout(bool = false);
+    void setBottomWidgetLayout(QVListLayout *, bool = false);
     void setInfoPanelLayout();
     void removeItems(QWidget *);
     void setDefaultText();
     
     QLabel *setDevicesIcon(const QIcon &);
-    QVBoxLayout *setAlignedLayout(QWidget *parent, const int & = 0);
+    QVBoxLayout *setAlignedLayout(QWidget *parent, int = 0);
     
     QWidget *top;
     QWidget *bottom;
