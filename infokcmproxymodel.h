@@ -41,7 +41,7 @@ class InfoKcmProxyModel : public QSortFilterProxyModel
         *
         * @param parent objects parent
         */
-        InfoKcmProxyModel(QObject *parent);
+        explicit InfoKcmProxyModel(QObject *parent);
 
         /**
         * Check if left item is less than right item

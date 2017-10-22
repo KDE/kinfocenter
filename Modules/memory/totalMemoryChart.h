@@ -35,7 +35,7 @@ public:
 	/**
 	 * Initialize the list view item and task.
 	 */
-	TotalMemoryChart(QWidget* parent = nullptr);
+        explicit TotalMemoryChart(QWidget* parent = nullptr);
 	
 
 protected:

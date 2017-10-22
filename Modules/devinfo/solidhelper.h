@@ -30,7 +30,7 @@ class SolidHelper
 {
 
   public:
-    SolidHelper() {};
+    SolidHelper() {}
     Solid::DeviceInterface::Type deviceType(const Solid::Device *);
 };
 

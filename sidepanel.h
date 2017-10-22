@@ -49,7 +49,7 @@ class SidePanel : public QTreeView
         *
         * @param parent objects parent
         */
-        SidePanel(QWidget *parent);
+        explicit SidePanel(QWidget *parent);
 
         /**
         * Destory SidePanel object

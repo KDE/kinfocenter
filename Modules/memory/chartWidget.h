@@ -33,8 +33,9 @@ class QWidget;
 #include "base.h"
 
 class Chart : public QWidget {
+    Q_OBJECT
 public:
-	Chart(QWidget* parent = nullptr);
+        explicit Chart(QWidget* parent = nullptr);
 	
 	void setMemoryInfos(t_memsize* memoryInfos);
 	void setFreeMemoryLabel(QLabel* freeMemoryLabel);
@@ -45,9 +46,9 @@ protected:
 	
 	bool drawChart(t_memsize total, const QList<t_memsize>& used, const QList<QColor>& colors, const QList<QString>& texts);
 	
-	t_memsize* memoryInfos;
+        t_memsize* memoryInfos = nullptr;
 	
-	QLabel* freeMemoryLabel;
+        QLabel* freeMemoryLabel = nullptr;
 	
 };
 
@@ -64,11 +65,11 @@ public:
 	
 private:
 	
-	QLabel* titleLabel;
+        QLabel* titleLabel = nullptr;
 	
-	Chart* chart;
+        Chart* chart = nullptr;
 	
-	QLabel* freeMemoryLabel;
+        QLabel* freeMemoryLabel = nullptr;
 	
 };
 

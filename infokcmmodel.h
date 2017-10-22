@@ -51,7 +51,7 @@ class InfoKcmModel : public QAbstractItemModel
         *
         * @param parent objects parent
         */
-        InfoKcmModel(QObject *parent);
+        explicit InfoKcmModel(QObject *parent);
 
         ~InfoKcmModel();
 
