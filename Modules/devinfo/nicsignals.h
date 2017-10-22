@@ -1,4 +1,3 @@
-
 /*
  *  nicsignals.h
  *
@@ -32,20 +31,19 @@
 
 class NicSignals : public QObject
 {
-  Q_OBJECT
-  
-  public:
+    Q_OBJECT
+
+public:
     NicSignals();
-    
-  private:
+
+private:
     void connectToNicSignals();
 
-  signals:
+signals:
     void nicActivatedOrDisconnected();
-    
-  public slots:
-    void nicChangedSignal(const int &,const int &,const int &);
-    
+
+public slots:
+    void nicChangedSignal(const int &, const int &, const int &);
 };
 
 #endif //NICSIGNALS

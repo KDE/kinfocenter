@@ -1,4 +1,3 @@
-
 /*
  *  soldevicetypes.cpp
  *
@@ -28,9 +27,11 @@
 
 class SolidHelper
 {
+public:
+    SolidHelper()
+    {
+    }
 
-  public:
-    SolidHelper() {}
     Solid::DeviceInterface::Type deviceType(const Solid::Device *);
 };
 

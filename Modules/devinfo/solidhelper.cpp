@@ -1,4 +1,3 @@
-
 /*
  *  solidhelper.cpp
  *
@@ -24,17 +23,19 @@
 
 Solid::DeviceInterface::Type SolidHelper::deviceType(const Solid::Device *dev)
 {
-  const Solid::DeviceInterface::Type needHardware[] = { 
-    Solid::DeviceInterface::Processor,
-    Solid::DeviceInterface::StorageDrive,
-    Solid::DeviceInterface::Battery, 
-    Solid::DeviceInterface::PortableMediaPlayer,
-    Solid::DeviceInterface::Camera,
-    Solid::DeviceInterface::StorageVolume
-  };
-  
-  for(unsigned int i=0;i<(sizeof(needHardware)/sizeof(Solid::DeviceInterface::Type));i++) { 
-    if(dev->isDeviceInterface(needHardware[i]) == true) return needHardware[i];
-  }
-  return Solid::DeviceInterface::Unknown;
+    const Solid::DeviceInterface::Type needHardware[] = {
+        Solid::DeviceInterface::Processor,
+        Solid::DeviceInterface::StorageDrive,
+        Solid::DeviceInterface::Battery,
+        Solid::DeviceInterface::PortableMediaPlayer,
+        Solid::DeviceInterface::Camera,
+        Solid::DeviceInterface::StorageVolume
+    };
+
+    for (unsigned int i = 0; i < (sizeof(needHardware)/sizeof(Solid::DeviceInterface::Type)); i++) {
+        if (dev->isDeviceInterface(needHardware[i]) == true) {
+            return needHardware[i];
+        }
+    }
+    return Solid::DeviceInterface::Unknown;
 }

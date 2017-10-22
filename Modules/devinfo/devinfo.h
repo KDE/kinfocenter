@@ -1,4 +1,3 @@
-
 /*
  *  devinfo.h
  *
@@ -37,18 +36,17 @@
 #include "devicelisting.h"
 #include "infopanel.h"
 
-
 class DevInfoPlugin : public KCModule
 {
-  Q_OBJECT
-  
-  public:
+    Q_OBJECT
+
+public:
     DevInfoPlugin(QWidget *parent, const QVariantList &);
     ~DevInfoPlugin();
-    
+
     void updateStatus(const QString &uid);
-    
-  private:
+
+private:
     QGridLayout *layout;
     QLabel *udiStatus;
 };

@@ -1,4 +1,3 @@
-
 /*
  *  devicelisting.h
  *
@@ -29,7 +28,7 @@
 #include <solid/processor.h>
 #include <solid/devicenotifier.h>
 
-//QT 
+//QT
 #include <QMap>
 #include <QTreeWidget>
 #include <QAction>
@@ -51,42 +50,46 @@ class DevInfoPlugin;
 //class NicSignals;
 
 class DeviceListing : public QTreeWidget
-{  
-  Q_OBJECT
+{
+    Q_OBJECT
 
-  private:
-    enum show { ALL=0, RELEVANT };
+private:
+    enum show {
+        ALL = 0, RELEVANT
+    };
 
-  public:
+public:
     DeviceListing(QWidget *, InfoPanel *, DevInfoPlugin *);
-    ~DeviceListing();   
+    ~DeviceListing();
 
     static QTreeWidgetItem *getTreeWidgetItemFromUdi(QTreeWidget *widget, const QString &udi)
     {
         QTreeWidgetItemIterator treeWidget(widget);
-	while (*treeWidget) 
-	{
-	  SolDevice *item = static_cast<SolDevice *>(*treeWidget);
-	    if(item->udi() == udi) return *treeWidget;
-	  ++treeWidget;
-	}
-	return NULL;
+        while (*treeWidget)
+        {
+            SolDevice *item = static_cast<SolDevice *>(*treeWidget);
+            if (item->udi() == udi) {
+                return *treeWidget;
+            }
+            ++treeWidget;
+        }
+        return NULL;
     }
-    
-  private:
-    void populateListing(const show=RELEVANT);
+
+private:
+    void populateListing(const show = RELEVANT);
     QTreeWidgetItem *createListItems(const Solid::DeviceInterface::Type &);
     void contextMenuEvent(QContextMenuEvent *) Q_DECL_OVERRIDE;
     void createMenuActions();
-  
+
     QMap<Solid::DeviceInterface::Type, SolDevice *> deviceMap;
     InfoPanel *iPanel;
     QAction *colAct, *expAct, *allAct, *relAct;
     DevInfoPlugin *status;
     //NicSignals *nicSig;
-    
-  public Q_SLOTS:
-    void itemActivatedSlot(QTreeWidgetItem *,const int);
+
+public Q_SLOTS:
+    void itemActivatedSlot(QTreeWidgetItem *, const int);
     void deviceAddedSlot(const QString &);
     void deviceRemovedSlot(const QString &);
     void collapseAllDevicesSlot();

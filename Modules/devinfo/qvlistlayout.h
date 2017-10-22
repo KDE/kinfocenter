@@ -1,4 +1,3 @@
-
 /*
  *  soldevicetypes.cpp
  *
@@ -27,11 +26,9 @@
 
 class QVListLayout : public QVBoxLayout
 {
-
-  public:
+public:
     QVListLayout();
     void applyQListToLayout(const QStringList &);
-
 };
 
 #endif //QVLISTLAYOUT
