@@ -72,7 +72,7 @@ void WaylandModule::init()
             queue->setup(m_connection);
             registry->setEventQueue(queue);
             connect(registry, &Registry::interfaceAnnounced, this,
-                [this, interfacesItem] (QByteArray interface, quint32 name, quint32 version) {
+                [this, interfacesItem] (const QByteArray &interface, quint32 name, quint32 version) {
                     Q_UNUSED(name)
                     new QTreeWidgetItem(interfacesItem, QStringList() << interface << QString::number(version));
                 }

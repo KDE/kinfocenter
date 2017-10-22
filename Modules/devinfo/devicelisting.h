@@ -61,7 +61,7 @@ class DeviceListing : public QTreeWidget
     DeviceListing(QWidget *, InfoPanel *, DevInfoPlugin *);
     ~DeviceListing();   
 
-    static QTreeWidgetItem *getTreeWidgetItemFromUdi(QTreeWidget *widget, QString udi)
+    static QTreeWidgetItem *getTreeWidgetItemFromUdi(QTreeWidget *widget, const QString &udi)
     {
         QTreeWidgetItemIterator treeWidget(widget);
 	while (*treeWidget) 
@@ -87,7 +87,7 @@ class DeviceListing : public QTreeWidget
     
   public Q_SLOTS:
     void itemActivatedSlot(QTreeWidgetItem *,const int);
-    void deviceAddedSlot(const QString);
+    void deviceAddedSlot(const QString &);
     void deviceRemovedSlot(const QString);
     void collapseAllDevicesSlot();
     void expandAllDevicesSlot();

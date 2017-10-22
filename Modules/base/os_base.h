@@ -218,7 +218,6 @@ static bool GetInfo_XServer_Generic(QTreeWidget *lBox) {
 	Display *dpy;
 	XPixmapFormatValues *pmf;
 
-	QString str, txt;
 	QTreeWidgetItem *last, *item, *next;
 
 	dpy = XOpenDisplay(0);

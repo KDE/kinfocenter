@@ -140,7 +140,7 @@ void DeviceListing::itemActivatedSlot(QTreeWidgetItem *listItemIn ,const int col
   }
 }
 
-void DeviceListing::deviceAddedSlot(const QString udi) 
+void DeviceListing::deviceAddedSlot(const QString &udi)
 {  
   SolidHelper *solhelp = new SolidHelper();
   const QList<Solid::Device> list = Solid::Device::allDevices();

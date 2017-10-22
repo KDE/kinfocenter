@@ -203,7 +203,7 @@ static bool get_dri_device()
 		if (end2>end) end=end2;
 		dri_info.pci[end]='.';
 
-		QString cmd = QString("lspci -m -v -s ") + dri_info.pci;
+		QString cmd = QStringLiteral("lspci -m -v -s ") + dri_info.pci;
 		QStringList pci_info;
 		int num;
 		if (((num = ReadPipe(cmd, pci_info)) ||
@@ -537,8 +537,8 @@ print_limits(QTreeWidgetItem *l1, const char * glExtensions, bool getProcAddress
 		if (glGetError() == GL_NONE) {
 			QString s;
 			if (!tfloat && count == 1) s = QString::number(max[0]); else
-			if (!tfloat && count == 2) s = QString("%1, %2").arg(max[0]).arg(max[1]); else
-			if (tfloat && count == 2) s = QString("%1 - %2").arg(fmax[0],0,'f',6).arg(fmax[1],0,'f',6); else
+			if (!tfloat && count == 2) s = QStringLiteral("%1, %2").arg(max[0]).arg(max[1]); else
+			if (tfloat && count == 2) s = QStringLiteral("%1 - %2").arg(fmax[0],0,'f',6).arg(fmax[1],0,'f',6); else
 			if (tfloat && count == 1) s = QString::number(fmax[0],'f',6);
 			if (l3) l3 = newItem(l2, l3, cur_token->name, s);
 	 			else l3 = newItem(l2, cur_token->name, s);
