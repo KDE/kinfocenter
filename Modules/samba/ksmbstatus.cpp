@@ -33,7 +33,7 @@
 #define After(ttf,in)  (in.contains(ttf)?QString(in.mid(in.indexOf(ttf)+QString(ttf).length())):QString(""))
 
 NetMon::NetMon(QWidget * parent, KConfig *config) :
-	QWidget(parent), configFile(config), showmountProc(0), strShare(""), strUser(""), strGroup(""), strMachine(""), strSince(""), strPid(""), iUser(0), iGroup(0), iMachine(0), iPid(0) {
+    QWidget(parent), configFile(config), showmountProc(nullptr), strShare(""), strUser(""), strGroup(""), strMachine(""), strSince(""), strPid(""), iUser(0), iGroup(0), iMachine(0), iPid(0) {
 	QBoxLayout *topLayout = new QVBoxLayout(this);
 
 	list = new QTreeWidget(this);

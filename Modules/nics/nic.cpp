@@ -87,7 +87,6 @@ KCMNic::KCMNic(QWidget *parent, const QVariantList &) :
 	KCModule(parent) {
 	QVBoxLayout *box=new QVBoxLayout(this);
 	box->setMargin(0);
-	//PORT QT5 box->setSpacing(KDialog::spacingHint());
 	m_list=new QTreeWidget(this);
 	m_list->setRootIsDecorated(false);
 	box->addWidget(m_list);
@@ -258,7 +257,7 @@ QList<MyNIC*> findNICs() {
 				getnameinfo(ifa->ifa_addr, ifa->ifa_addr->sa_len, buf, 127, 0, 0, NI_NUMERICHOST);
 				tmp->addr = buf;
 
-				if (ifa->ifa_netmask != NULL) {
+                if (ifa->ifa_netmask != nullptr) {
 					bzero(buf, 128);
 					getnameinfo(ifa->ifa_netmask, ifa->ifa_netmask->sa_len, buf, 127, 0, 0, NI_NUMERICHOST);
 					tmp->netmask = buf;

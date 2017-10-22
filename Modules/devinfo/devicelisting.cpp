@@ -153,7 +153,7 @@ void DeviceListing::deviceAddedSlot(const QString &udi)
             QTreeWidgetItem *parent = getTreeWidgetItemFromUdi(this, dev.parentUdi());
 
             // Incase of bad index
-            if (deviceMap[deviceType] == NULL) {
+            if (deviceMap[deviceType] == nullptr) {
                 QTreeWidgetItem *topItem = topLevelItem(0);
                 if (topItem == 0) {
                     delete solhelp;
@@ -179,7 +179,7 @@ void DeviceListing::deviceAddedSlot(const QString &udi)
                 new SolStorageDevice(deviceMap[deviceType], dev, SolStorageDevice::NOCHILDREN);
                 break;
             case Solid::DeviceInterface::StorageVolume:
-                if (parent == NULL) {
+                if (parent == nullptr) {
                     break;
                 }
                 new SolVolumeDevice(parent, dev);

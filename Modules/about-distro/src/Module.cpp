@@ -212,6 +212,7 @@ void Module::loadHardware()
     }
     // Create a formatted list of grouped processors
     QStringList names;
+    names.reserve(processorMap.count());
     for (auto it = processorMap.constBegin(); it != processorMap.constEnd(); ++it) {
         const int count = it.value();
         QString name = it.key();

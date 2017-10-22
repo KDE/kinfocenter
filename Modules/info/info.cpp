@@ -48,8 +48,7 @@ KInfoListWidget::KInfoListWidget(const QString &_title, QWidget *parent, bool _g
 	//setButtons(KCModule::Help);
 	getlistbox = _getlistbox;
 	QHBoxLayout *layout = new QHBoxLayout(this);
-	//PORT QT5 layout->setSpacing(KDialog::spacingHint());
-	layout->setMargin(0);
+    layout->setMargin(0);
 	widgetStack = new QStackedWidget(this);
 	layout->addWidget(widgetStack);
 

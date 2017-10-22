@@ -64,7 +64,7 @@ QVListLayout *SolProcessorDevice::infoPanelLayout()
     const Solid::Processor *prodev = interface<const Solid::Processor>();
 
     if (!prodev) {
-        return NULL;
+        return nullptr;
     }
     deviceInfoLayout = new QVListLayout();
 
@@ -181,7 +181,7 @@ QVListLayout *SolStorageDevice::infoPanelLayout()
     const Solid::StorageDrive *stodev = interface<const Solid::StorageDrive>();
 
     if (!stodev) {
-        return NULL;
+        return nullptr;
     }
     deviceInfoLayout = new QVListLayout();
 
@@ -244,13 +244,13 @@ void SolVolumeDevice::setDefaultListing(const Solid::DeviceInterface::Type &type
 QVListLayout *SolVolumeDevice::infoPanelLayout()
 {
     QStringList labels;
-    KCapacityBar *usageBar = NULL;
+    KCapacityBar *usageBar = nullptr;
 
     const Solid::StorageVolume *voldev = interface<const Solid::StorageVolume>();
     const Solid::StorageAccess *accdev = interface<const Solid::StorageAccess>();
 
     if (!voldev) {
-        return NULL;
+        return nullptr;
     }
     deviceInfoLayout = new QVListLayout();
 
@@ -349,7 +349,7 @@ QVListLayout *SolMediaPlayerDevice::infoPanelLayout()
     const Solid::PortableMediaPlayer *mpdev = interface<const Solid::PortableMediaPlayer>();
 
     if (!mpdev) {
-        return NULL;
+        return nullptr;
     }
     deviceInfoLayout = new QVListLayout();
 
@@ -391,7 +391,7 @@ QVListLayout *SolCameraDevice::infoPanelLayout()
     const Solid::Camera *camdev = interface<const Solid::Camera>();
 
     if (!camdev) {
-        return NULL;
+        return nullptr;
     }
     deviceInfoLayout = new QVListLayout();
 
@@ -433,7 +433,7 @@ QVListLayout *SolBatteryDevice::infoPanelLayout()
     const Solid::Battery *batdev = interface<const Solid::Battery>();
 
     if (!batdev) {
-        return NULL;
+        return nullptr;
     }
     deviceInfoLayout = new QVListLayout();
 

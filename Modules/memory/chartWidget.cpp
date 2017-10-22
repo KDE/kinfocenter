@@ -28,8 +28,8 @@ Chart::Chart(QWidget* parent) :
 	
 	setSizePolicy(QSizePolicy::Minimum, QSizePolicy::MinimumExpanding);
 	
-	memoryInfos = NULL;
-	freeMemoryLabel = NULL;
+    memoryInfos = nullptr;
+    mFreeMemoryLabel = nullptr;
 }
 
 
@@ -38,7 +38,7 @@ void Chart::setMemoryInfos(t_memsize* memoryInfos) {
 }
 
 void Chart::setFreeMemoryLabel(QLabel* freeMemoryLabel) {
-	this->freeMemoryLabel = freeMemoryLabel;
+    this->mFreeMemoryLabel = freeMemoryLabel;
 }
 
 
@@ -54,7 +54,7 @@ bool Chart::drawChart(t_memsize total, const QList<t_memsize>& used, const QList
 		paint.setPen(pen);
 		paint.drawRect(rect());
 		setAccessibleDescription(i18n("Not available."));
-		freeMemoryLabel->setText(i18n("Not available."));
+        mFreeMemoryLabel->setText(i18n("Not available."));
 
 		return false;
 	}
@@ -103,7 +103,7 @@ bool Chart::drawChart(t_memsize total, const QList<t_memsize>& used, const QList
 	QRect r = rect();
 	qDrawShadePanel(&paint, r.x(), r.y(), r.width(), r.height(), palette(), true, 1);
 
-	freeMemoryLabel->setText(i18n("%1 free", formattedUnit(last_used)));
+    mFreeMemoryLabel->setText(i18n("%1 free", formattedUnit(last_used)));
 
 	setAccessibleDescription(accessibleDescription.join('\n'));
 	return true;
@@ -129,13 +129,13 @@ ChartWidget::ChartWidget(const QString& title, const QString& hint, Chart* chart
 	chart->setToolTip(hint);
 	mainLayout->addWidget(chart);
 	
-	freeMemoryLabel = new QLabel(QLatin1String(""), this);
-	freeMemoryLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
-	freeMemoryLabel->setAlignment(Qt::AlignHCenter);
-	freeMemoryLabel->setToolTip(hint);
-	mainLayout->addWidget(freeMemoryLabel);
+    mFreeMemoryLabel = new QLabel(QLatin1String(""), this);
+    mFreeMemoryLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
+    mFreeMemoryLabel->setAlignment(Qt::AlignHCenter);
+    mFreeMemoryLabel->setToolTip(hint);
+    mainLayout->addWidget(mFreeMemoryLabel);
 
-	chart->setFreeMemoryLabel(freeMemoryLabel);
+    chart->setFreeMemoryLabel(mFreeMemoryLabel);
 }
 
 void ChartWidget::setMemoryInfos(t_memsize* memoryInfos) {

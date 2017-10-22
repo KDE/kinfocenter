@@ -96,7 +96,7 @@ static void delete_recursive(QTreeWidgetItem *item, const QMap<int, QTreeWidgetI
 		return;
 
 	QTreeWidgetItemIterator it(item, QTreeWidgetItemIterator::All);
-	while ( *it != NULL ) {
+	while ( *it != nullptr ) {
 		QTreeWidgetItem* currentItem = *it;
 		if (new_items.contains(currentItem->text(1).toUInt()) == false) {
 			delete_recursive(currentItem->child(0), new_items);

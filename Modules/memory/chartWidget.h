@@ -38,7 +38,7 @@ public:
         explicit Chart(QWidget* parent = nullptr);
 	
 	void setMemoryInfos(t_memsize* memoryInfos);
-	void setFreeMemoryLabel(QLabel* freeMemoryLabel);
+        void setFreeMemoryLabel(QLabel* freeMemoryLabel);
 	
 	static QString formattedUnit(t_memsize value);
 	
@@ -48,7 +48,7 @@ protected:
 	
         t_memsize* memoryInfos = nullptr;
 	
-        QLabel* freeMemoryLabel = nullptr;
+        QLabel* mFreeMemoryLabel = nullptr;
 	
 };
 
@@ -69,7 +69,7 @@ private:
 	
         Chart* chart = nullptr;
 	
-        QLabel* freeMemoryLabel = nullptr;
+        QLabel* mFreeMemoryLabel = nullptr;
 	
 };
 

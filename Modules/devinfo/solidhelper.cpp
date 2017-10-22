@@ -32,7 +32,7 @@ Solid::DeviceInterface::Type SolidHelper::deviceType(const Solid::Device *dev)
         Solid::DeviceInterface::StorageVolume
     };
 
-    for (unsigned int i = 0; i < (sizeof(needHardware)/sizeof(Solid::DeviceInterface::Type)); i++) {
+    for (unsigned int i = 0, total = (sizeof(needHardware)/sizeof(Solid::DeviceInterface::Type)); i < total; ++i) {
         if (dev->isDeviceInterface(needHardware[i]) == true) {
             return needHardware[i];
         }

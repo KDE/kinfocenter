@@ -145,7 +145,7 @@ int StatisticsProvider::largestValue() const
     }
 
     int max = 0; // TODO std::max or something?
-    for (auto it = m_values.constBegin(); it != m_values.constEnd(); ++it) {
+    for (auto it = m_values.constBegin(), end = m_values.constEnd(); it != end; ++it) {
         if ((*it).value > max) {
             max = (*it).value;
         }

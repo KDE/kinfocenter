@@ -117,17 +117,12 @@ QLabel *InfoPanel::setDevicesIcon(const QIcon &deviceIcon)
 
 void InfoPanel::setTopInfo(const QIcon &deviceIcon, Solid::Device *device)
 {
-    QList<QString> labels;
-
     setTopWidgetLayout();
     QVListLayout *tLayout = static_cast<QVListLayout *>(top->layout());
 
     tLayout->addWidget(setDevicesIcon(deviceIcon), 0, Qt::AlignHCenter);
 
-    labels << i18n("Product: ")
-           << device->product()
-           << i18n("Vendor: ")
-           << friendlyString(device->vendor());
+    const QStringList labels {i18n("Product: "), device->product(), i18n("Vendor: "), friendlyString(device->vendor())};
 
     status->updateStatus(device->udi());
     tLayout->applyQListToLayout(labels);

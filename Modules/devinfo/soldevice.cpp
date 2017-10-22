@@ -25,7 +25,7 @@
 
 SolDevice::SolDevice(const Solid::DeviceInterface::Type &type)
     : QTreeWidgetItem()
-    , deviceSet(0)
+    , deviceSet(false)
 {
     deviceTypeHolder = type;
     setText(0, Solid::DeviceInterface::typeToString(type));
@@ -33,14 +33,14 @@ SolDevice::SolDevice(const Solid::DeviceInterface::Type &type)
 
 SolDevice::SolDevice(QTreeWidgetItem *parent)
     : QTreeWidgetItem(parent)
-    , deviceSet(0)
+    , deviceSet(false)
 {
     deviceTypeHolder = Solid::DeviceInterface::Unknown;
 }
 
 SolDevice::SolDevice(const Solid::DeviceInterface::Type &type, const QString &typeName)
     : QTreeWidgetItem()
-    , deviceSet(0)
+    , deviceSet(false)
 {
     deviceTypeHolder = type;
     setText(0, typeName);

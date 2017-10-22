@@ -48,7 +48,7 @@ KcmTreeItem *KcmTreeItem::child(const int row)
     if(childCount() > row) {
         return m_children.value(row);
     }
-    return NULL;
+    return nullptr;
 }
 
 int KcmTreeItem::childCount()
@@ -112,7 +112,7 @@ KcmTreeItem *KcmTreeItem::containsCategory(const QString& category)
             }
         }
     }
-    return NULL;
+    return nullptr;
 }
 
 KCModuleInfo KcmTreeItem::kcm() const

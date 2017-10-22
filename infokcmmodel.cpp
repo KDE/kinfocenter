@@ -45,24 +45,24 @@ void InfoKcmModel::createTreeItems()
 {
     const KService::List categoryList = KServiceTypeTrader::self()->query(QStringLiteral("KInfoCenterCategory"));
 
-    foreach(const KService::Ptr &categoryModule, categoryList) {
+    for(const KService::Ptr &categoryModule : categoryList) {
         m_root->addChild(new KcmCategoryItem(categoryModule,m_root));
     }
 
-    KService::List moduleList = KServiceTypeTrader::self()->query(QStringLiteral("KCModule"), QStringLiteral("[X-KDE-ParentApp] == 'kinfocenter'"));
+    const KService::List moduleList = KServiceTypeTrader::self()->query(QStringLiteral("KCModule"), QStringLiteral("[X-KDE-ParentApp] == 'kinfocenter'"));
 
-    foreach(const KService::Ptr &kcmModule, moduleList) {
+    for (const KService::Ptr &kcmModule : moduleList) {
         if (kcmModule->isType(KST_KService) == true) {
 
             QString category = kcmModule->property(QStringLiteral("X-KDE-KInfoCenter-Category")).toString().trimmed();
 
             if(!category.isEmpty() || !category.isNull()) {
                 KcmTreeItem *item = m_root->containsCategory(category);
-                if(item != NULL) {
+                if(item != nullptr) {
                     item->addChild(new KcmTreeItem(kcmModule,item));
                 } else {
                     KcmTreeItem *lost = m_root->containsCategory(QStringLiteral("lost_and_found"));
-                    if(lost != NULL) {
+                    if(lost != nullptr) {
                         lost->addChild(new KcmTreeItem(kcmModule,lost));
                     } else {
                         qWarning() << "Lost and found category not found, unable to display lost Kcontrol modules";

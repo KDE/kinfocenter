@@ -31,7 +31,7 @@
 class SambaContainer : public KCModule {
 Q_OBJECT
 public:
-	SambaContainer(QWidget *parent=0, const QVariantList &list = QVariantList());
+    SambaContainer(QWidget *parent=nullptr, const QVariantList &list = QVariantList());
 	virtual ~SambaContainer();
 	void load() Q_DECL_OVERRIDE;
 	void save() Q_DECL_OVERRIDE;

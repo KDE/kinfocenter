@@ -136,7 +136,7 @@ USBDevice* USBDevice::find(int bus, int device) {
 			return usbDevice;
 	}
 
-	return NULL;
+	return nullptr;
 }
 
 QString USBDevice::product() {
@@ -276,7 +276,7 @@ bool USBDevice::parseSys(const QString &dname) {
 	d.setNameFilters(QStringList() << QStringLiteral("usb*"));
 	const QStringList list = d.entryList();
 
-	for (QStringList::const_iterator it = list.constBegin(); it != list.constEnd(); ++it) {
+    for (QStringList::const_iterator it = list.constBegin(), total = list.constEnd(); it != total; ++it) {
 		USBDevice* device = new USBDevice();
 
 		int bus = 0;

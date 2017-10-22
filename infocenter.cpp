@@ -56,7 +56,6 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
     setCentralWidget(m_cWidget);
 
     QVBoxLayout *cLayout = new QVBoxLayout(m_cWidget);
-    Q_UNUSED(cLayout);
 
     cLayout->setSpacing(0);
     cLayout->setContentsMargins(0, 0, 0, 0);

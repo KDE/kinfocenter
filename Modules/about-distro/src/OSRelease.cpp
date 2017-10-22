@@ -34,7 +34,7 @@ static void setVar(QString *var, const QString &value)
     if (error != KShell::NoError) { // Failed to parse.
         return;
     }
-    *var = args.join(QChar(' '));
+    *var = args.join(QLatin1Char(' '));
 }
 
 static void setVar(QStringList *var, const QString &value)
@@ -91,12 +91,12 @@ OSRelease::OSRelease()
     while (!file.atEnd()) {
         line = file.readLine();
 
-        if (line.startsWith(QChar('#'))) {
+        if (line.startsWith(QLatin1Char('#'))) {
             // Comment line
             continue;
         }
 
-        comps = line.split(QChar('='));
+        comps = line.split(QLatin1Char('='));
 
         if (comps.size() != 2) {
             // Invalid line.

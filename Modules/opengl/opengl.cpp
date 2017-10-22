@@ -102,9 +102,9 @@ void KCMOpenGL::treeWidgetChanged() {
 
 QTreeWidgetItem *newItem(QTreeWidgetItem *parent, QTreeWidgetItem *preceding, const QString &textCol1, const QString &textCol2 = QString()) {
     QTreeWidgetItem *newItem;
-    if ((parent == NULL) && (preceding == NULL)) {
+    if ((parent == nullptr) && (preceding == nullptr)) {
 	newItem = new QTreeWidgetItem();
-    } else if (preceding == NULL) {
+    } else if (preceding == nullptr) {
 	newItem = new QTreeWidgetItem(parent);
     } else {
 	newItem = new QTreeWidgetItem(parent, preceding);
@@ -280,7 +280,7 @@ print_extension_list(const char *ext, QTreeWidgetItem *l1)
    if (!ext || !ext[0])
       return;
    QString qext = QString::fromLatin1(ext);
-   QTreeWidgetItem *l2 = NULL;
+   QTreeWidgetItem *l2 = nullptr;
 
    i = j = 0;
    while (1) {
@@ -339,9 +339,9 @@ print_limits(QTreeWidgetItem *l1, const char * glExtensions, bool getProcAddress
 	const char *ext;
    };
 
-   QTreeWidgetItem *l2 = NULL, *l3 = NULL;
+   QTreeWidgetItem *l2 = nullptr, *l3 = nullptr;
 #if defined(PFNGLGETPROGRAMIVARBPROC)
-   PFNGLGETPROGRAMIVARBPROC kcm_glGetProgramivARB = NULL;
+   PFNGLGETPROGRAMIVARBPROC kcm_glGetProgramivARB = nullptr;
 #endif
 
    #define KCMGL_FLOAT 128
@@ -516,7 +516,7 @@ print_limits(QTreeWidgetItem *l1, const char * glExtensions, bool getProcAddress
 
 	if (l2) l2 = newItem(l1, l2, groups[i].descr);
    	   else l2 = newItem(l1, groups[i].descr);
-	l3 = NULL;
+	l3 = nullptr;
    	const struct token_name *cur_token;
 	for (cur_token = groups[i].group; cur_token->type; cur_token++) {
 
@@ -553,7 +553,7 @@ print_limits(QTreeWidgetItem *l1, const char * glExtensions, bool getProcAddress
 
 static QTreeWidgetItem *print_screen_info(QTreeWidgetItem *l1, QTreeWidgetItem *after, const QString &title)
 {
-   	QTreeWidgetItem *l2 = NULL, *l3 = NULL;
+   	QTreeWidgetItem *l2 = nullptr, *l3 = nullptr;
 
    	if (after) {
         l1 = newItem(l1, after, title);
@@ -605,7 +605,7 @@ static QTreeWidgetItem *print_screen_info(QTreeWidgetItem *l1, QTreeWidgetItem *
 #if KCM_HAVE_GLX
         if (QGuiApplication::platformName() == QStringLiteral("xcb")) {
             l3 = newItem(l2, l3, i18n("Implementation specific"));
-            print_limits(l3, gli.glExtensions, strstr(gli.clientExtensions, "GLX_ARB_get_proc_address") != NULL);
+            print_limits(l3, gli.glExtensions, strstr(gli.clientExtensions, "GLX_ARB_get_proc_address") != nullptr);
         }
 #endif
 
@@ -716,7 +716,7 @@ static QTreeWidgetItem *get_gl_info_glx(Display *dpy, int scrnum, Bool allowDire
       gli.glRenderer = (const char *) glGetString(GL_RENDERER);
       gli.glVersion = (const char *) glGetString(GL_VERSION);
       gli.glExtensions = (const char *) glGetString(GL_EXTENSIONS);
-      gli.displayName = NULL;
+      gli.displayName = nullptr;
       gli.gluVersion = (const char *) gluGetString(GLU_VERSION);
       gli.gluExtensions = (const char *) gluGetString(GLU_EXTENSIONS);
 
@@ -835,7 +835,7 @@ static QTreeWidgetItem *get_gl_info_egl(Display *dpy, int scrnum, QTreeWidgetIte
       gli.glRenderer = (const char *) glGetString(GL_RENDERER);
       gli.glVersion = (const char *) glGetString(GL_VERSION);
       gli.glExtensions = (const char *) glGetString(GL_EXTENSIONS);
-      gli.displayName = NULL;
+      gli.displayName = nullptr;
       result = print_screen_info(l1, after, i18n("Direct Rendering (EGL)"));
    }
    else {
@@ -879,7 +879,7 @@ static QTreeWidgetItem *get_gl_info_egl_qt(QTreeWidgetItem *l1, QTreeWidgetItem 
         gli.glRenderer = (const char *) glGetString(GL_RENDERER);
         gli.glVersion = (const char *) glGetString(GL_VERSION);
         gli.glExtensions = (const char *) glGetString(GL_EXTENSIONS);
-        gli.displayName = NULL;
+        gli.displayName = nullptr;
         result = print_screen_info(l1, after, title);
     }
     else {
@@ -894,7 +894,7 @@ static QTreeWidgetItem *get_gl_info_egl_qt(QTreeWidgetItem *l1, QTreeWidgetItem 
 
 bool GetInfo_OpenGL(QTreeWidget *treeWidget)
 {
-    QTreeWidgetItem *l1, *l2 = NULL;
+    QTreeWidgetItem *l1, *l2 = nullptr;
 
     static bool isX11 = QGuiApplication::platformName() == QStringLiteral("xcb");
     static bool isWayland = QGuiApplication::platformName().contains(QStringLiteral("wayland"));
@@ -909,7 +909,7 @@ bool GetInfo_OpenGL(QTreeWidget *treeWidget)
     l1 = new QTreeWidgetItem(treeWidget);
 
     if (isX11) {
-        char *displayName = NULL;
+        char *displayName = nullptr;
         Display *dpy;
         int numScreens, scrnum;
 

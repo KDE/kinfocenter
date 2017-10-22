@@ -37,7 +37,7 @@ void QVListLayout::applyQListToLayout(const QStringList &list)
     QFont labelFont;
     labelFont.setBold(true);
 
-    foreach (const QString &item, list) {
+    for (const QString &item : list) {
         if (!item.isEmpty()) {
             bLabel = new QLabel(item);
             bLabel->setWordWrap(true);
