@@ -100,7 +100,7 @@ void KCMOpenGL::treeWidgetChanged() {
     glinfoTreeWidget->resizeColumnToContents(1);
 }
 
-QTreeWidgetItem *newItem(QTreeWidgetItem *parent, QTreeWidgetItem *preceding, QString textCol1, QString textCol2 = QString()) {
+QTreeWidgetItem *newItem(QTreeWidgetItem *parent, QTreeWidgetItem *preceding, const QString &textCol1, const QString &textCol2 = QString()) {
     QTreeWidgetItem *newItem;
     if ((parent == NULL) && (preceding == NULL)) {
 	newItem = new QTreeWidgetItem();
@@ -178,7 +178,7 @@ static int ReadPipe(const QString &FileName, QStringList &list)
 
 #if defined(Q_OS_LINUX)
 
-#define INFO_DRI "/proc/dri/0/name"
+#define INFO_DRI QStringLiteral("/proc/dri/0/name")
 
 static bool get_dri_device()
 {

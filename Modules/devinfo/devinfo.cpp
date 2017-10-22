@@ -92,7 +92,7 @@ DevInfoPlugin::~DevInfoPlugin()
   delete layout; 
 }
   
-void DevInfoPlugin::updateStatus(const QString message) 
+void DevInfoPlugin::updateStatus(const QString &message)
 {  
   udiStatus->setText(message);
 }

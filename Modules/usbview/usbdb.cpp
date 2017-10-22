@@ -44,7 +44,7 @@ USBDB::USBDB() {
 		QRegExp prot(QStringLiteral("\\s+[0-9a-fA-F][0-9a-fA-F]  "));
 		while (!ts.atEnd()) {
 			line = ts.readLine();
-			if (line.left(1) == QLatin1String("#") || line.trimmed().isEmpty())
+            if (!line.isEmpty() && (line.at(0) == QLatin1String("#") || line.trimmed().isEmpty()))
 				continue;
 
 			// skip AT lines

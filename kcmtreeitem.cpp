@@ -23,7 +23,7 @@
 //Local
 #include "kcmtreeitem.h"
 
-KcmTreeItem::KcmTreeItem(const KService::Ptr module, KcmTreeItem *parent) : m_parent(parent), m_module(module),
+KcmTreeItem::KcmTreeItem(const KService::Ptr &module, KcmTreeItem *parent) : m_parent(parent), m_module(module),
   m_moduleInfo(new KCModuleInfo(m_module))
 {
 }

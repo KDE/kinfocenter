@@ -88,7 +88,7 @@ class DeviceListing : public QTreeWidget
   public Q_SLOTS:
     void itemActivatedSlot(QTreeWidgetItem *,const int);
     void deviceAddedSlot(const QString &);
-    void deviceRemovedSlot(const QString);
+    void deviceRemovedSlot(const QString &);
     void collapseAllDevicesSlot();
     void expandAllDevicesSlot();
     void showAllDevicesSlot();

@@ -99,8 +99,8 @@ class SolDevice : public QTreeWidgetItem
     void setDeviceToolTip(const QString &);
 
     virtual QVListLayout *infoPanelLayout();
-    virtual void addItem(Solid::Device dev) { new SolDevice(this,dev); };
-    virtual void refreshName() { setDefaultDeviceText(); };
+    virtual void addItem(const Solid::Device &dev) { new SolDevice(this,dev); }
+    virtual void refreshName() { setDefaultDeviceText(); }
    
     QString udi() const;
     bool isDeviceSet();

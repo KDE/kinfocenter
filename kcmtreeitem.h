@@ -41,7 +41,7 @@ class KcmTreeItem
         * @param module pointer to KCM module
         * @param parent objects parent
         */
-        explicit KcmTreeItem(const KService::Ptr module, KcmTreeItem *parent=0);
+        explicit KcmTreeItem(const KService::Ptr &module, KcmTreeItem *parent=0);
 
         /**
         * KCM Tree Item for InfoKcmModel. Holds information about a KCM

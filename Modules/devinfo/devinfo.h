@@ -46,7 +46,7 @@ class DevInfoPlugin : public KCModule
     DevInfoPlugin(QWidget *parent, const QVariantList &);
     ~DevInfoPlugin();
     
-    void updateStatus(const QString uid);
+    void updateStatus(const QString &uid);
     
   private:
     QGridLayout *layout;

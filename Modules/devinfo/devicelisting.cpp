@@ -183,7 +183,7 @@ void DeviceListing::deviceAddedSlot(const QString &udi)
   delete solhelp;
 }
 
-void DeviceListing::deviceRemovedSlot(const QString udi) 
+void DeviceListing::deviceRemovedSlot(const QString &udi)
 {
   const QTreeWidgetItem *item = getTreeWidgetItemFromUdi(this,udi);
   if(item == nullptr) return;
