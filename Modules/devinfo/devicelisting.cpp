@@ -36,12 +36,12 @@ DeviceListing::DeviceListing(QWidget *parent, InfoPanel *info, DevInfoPlugin *st
     connect(this, &DeviceListing::itemActivated, this, &DeviceListing::itemActivatedSlot);
 
     // Check if item is added
-    connect(Solid::DeviceNotifier::instance(), SIGNAL(deviceAdded(QString)), this,
-            SLOT(deviceAddedSlot(QString)));
+    connect(Solid::DeviceNotifier::instance(), &Solid::DeviceNotifier::deviceAdded, this,
+            &DeviceListing::deviceAddedSlot);
 
     // Check if item is removed
-    connect(Solid::DeviceNotifier::instance(), SIGNAL(deviceRemoved(QString)), this,
-            SLOT(deviceRemovedSlot(QString)));
+    connect(Solid::DeviceNotifier::instance(), &Solid::DeviceNotifier::deviceRemoved, this,
+            &DeviceListing::deviceRemovedSlot);
 
     setWhatsThis(i18nc("Device Listing Whats This",
                        "Shows all the devices that are currently listed."));

@@ -47,13 +47,13 @@ SidePanel::SidePanel(QWidget *parent)
 
     setMouseTracking(true);
     setModel(m_proxyModel);
-    connect(this,SIGNAL(activated(QModelIndex)),this,SLOT(clickedSlot(QModelIndex)));
+    connect(this,&QAbstractItemView::activated,this,&SidePanel::clickedSlot);
     connect(this,SIGNAL(clicked(QModelIndex)),this,SLOT(clickedSlot(QModelIndex)));
 }
 
 SidePanel::~SidePanel()
 {
-    disconnect(this,SIGNAL(activated(QModelIndex)),this,SLOT(clickedSlot(QModelIndex)));
+    disconnect(this,&QAbstractItemView::activated,this,&SidePanel::clickedSlot);
     disconnect(this,SIGNAL(clicked(QModelIndex)),this,SLOT(clickedSlot(QModelIndex)));
 
     delete m_proxyModel;
