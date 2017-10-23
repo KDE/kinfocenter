@@ -118,7 +118,7 @@ bool KInfoCenter::eventFilter(QObject *watched, QEvent *event)
 
 void KInfoCenter::createToolBar()
 {
-    KStandardAction::quit(this, SLOT(close()), actionCollection());
+    KStandardAction::quit(this, &KInfoCenter::close, actionCollection());
     KStandardAction::keyBindings(guiFactory(), SLOT(configureShortcuts()), actionCollection());
 
     toolBar()->setMovable(false);
