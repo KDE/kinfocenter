@@ -77,12 +77,12 @@ class KcmTreeItem
         /**
         * Get amount of children
         */
-        int childCount();
+        int childCount() const;
 
         /**
         * Get parent of current tree item
         */
-        KcmTreeItem *parent();
+        KcmTreeItem *parent() const;
 
         /**
         * Get index of tree item
@@ -93,7 +93,7 @@ class KcmTreeItem
         * Get amount of columns that tree item contains.
         * Hardcoded to 1
         */
-        int columnCount();
+        int columnCount() const;
 
         /**
         * Get row of tree item

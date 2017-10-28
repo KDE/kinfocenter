@@ -51,18 +51,18 @@ KcmTreeItem *KcmTreeItem::child(const int row)
     return nullptr;
 }
 
-int KcmTreeItem::childCount()
+int KcmTreeItem::childCount() const
 {
     return m_children.count();
 }
 
-int KcmTreeItem::columnCount()
+int KcmTreeItem::columnCount() const
 {
     // Hard coded, menu should never have more than one column
     return 1;
 }
 
-KcmTreeItem *KcmTreeItem::parent()
+KcmTreeItem *KcmTreeItem::parent() const
 {
     return m_parent;
 }
