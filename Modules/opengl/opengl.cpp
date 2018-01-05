@@ -701,6 +701,7 @@ static QTreeWidgetItem *get_gl_info_glx(Display *dpy, int scrnum, Bool allowDire
    if (!ctx) {
                 qDebug() << "Error: glXCreateContext failed\n";
       XDestroyWindow(dpy, win);
+      XFree(visinfo);
       return result;
    }
 
@@ -730,6 +731,8 @@ static QTreeWidgetItem *get_gl_info_glx(Display *dpy, int scrnum, Bool allowDire
 
    glXDestroyContext(dpy, ctx);
    XDestroyWindow(dpy, win);
+   XFree(visinfo);
+
    return result;
 }
 #endif
