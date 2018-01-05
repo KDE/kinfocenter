@@ -44,7 +44,7 @@ set_package_properties(PCIUTILS PROPERTIES DESCRIPTION "PciUtils is a library fo
                        PURPOSE "View PCI details in kinfocenter."
                       )
 
-if(NOT APPLE)
+if(NOT APPLE AND NOT ${CMAKE_SYSTEM_PROCESSOR} MATCHES "arm" AND NOT ${CMAKE_SYSTEM_PROCESSOR} MATCHES "aarch64")
     add_subdirectory( pci )
 endif()
 endif()
