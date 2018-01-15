@@ -84,6 +84,14 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR})
 add_definitions( -DKDE_DEFAULT_DEBUG_AREA=1208 )
 remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_STRICT_ITERATORS -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_KEYWORDS)
 
+if(NOT CMAKE_VERSION VERSION_LESS "3.10.0" AND KF5_VERSION VERSION_LESS "5.42.0")
+  # CMake 3.9+ warns about automoc on files without Q_OBJECT, and doesn't know about other macros.
+  # 3.10+ lets us provide more macro names that require automoc.
+  # KF5 >= 5.42 takes care itself of adding its macros in its cmake config files
+  list(APPEND CMAKE_AUTOMOC_MACRO_NAMES "K_PLUGIN_FACTORY_WITH_JSON" "K_PLUGIN_FACTORY")
+endif()
+
+
 add_subdirectory( Categories )
 add_subdirectory( kcontrol/menus )
 add_subdirectory( Modules )
