@@ -141,5 +141,6 @@ QStringList SidePanel::allChildKeywords()
 void SidePanel::resetSearchSlot()
 {
     filterSideMenuSlot(QLatin1String(""));
+    Q_EMIT clearSearchLine();
 }
 

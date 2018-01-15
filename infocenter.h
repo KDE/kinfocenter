@@ -139,6 +139,8 @@ class KInfoCenter : public KXmlGuiWindow
         */
         void resetCondition();
 
+        void clearSearchLine();
+
         KcmContainer *m_contain;
         QSplitter *m_splitter;
 

@@ -185,10 +185,16 @@ void KInfoCenter::createMenuFrame()
 
     m_sideMenu = new SidePanel(sideFrame);
     m_sideMenu->installEventFilter(this);
+    connect(m_sideMenu, &SidePanel::clearSearchLine, this, &KInfoCenter::clearSearchLine);
 
     menuLayout->addWidget(m_searchText);
     menuLayout->addWidget(m_sideMenu);
     m_splitter->addWidget(sideFrame);
+}
+
+void KInfoCenter::clearSearchLine()
+{
+    m_searchText->clear();
 }
 
 void KInfoCenter::itemClickedSlot(const KcmTreeItem *item)

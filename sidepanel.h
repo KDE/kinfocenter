@@ -115,6 +115,9 @@ class SidePanel : public QTreeView
         */
         void resetSearchSlot();
 
+Q_SIGNALS:
+        void clearSearchLine();
+
     private:
 
         /**
