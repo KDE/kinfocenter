@@ -72,7 +72,7 @@ class KcmCategoryItem : public KcmTreeItem
         /**
         * Get tree items KCM's weight
         */
-        int weight() Q_DECL_OVERRIDE;
+        int weight() const Q_DECL_OVERRIDE;
 
         /**
         * Get icon tied to KCM

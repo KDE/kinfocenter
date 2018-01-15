@@ -60,7 +60,7 @@ KCModuleInfo KcmCategoryItem::kcm() const
     return KCModuleInfo();
 }
 
-int KcmCategoryItem::weight()
+int KcmCategoryItem::weight() const
 {
     return (category().count() + 1000);
 }

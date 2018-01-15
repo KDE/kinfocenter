@@ -141,19 +141,19 @@ class KInfoCenter : public KXmlGuiWindow
 
         void clearSearchLine();
 
-        KcmContainer *m_contain;
-        QSplitter *m_splitter;
+        KcmContainer *m_contain = nullptr;
+        QSplitter *m_splitter = nullptr;
 
-        QAction *m_aboutKcm;
-        QAction *m_searchAction;
-        QAction *m_moduleHelpAction;
-        KActionMenu *m_helpAction;
+        QAction *m_aboutKcm = nullptr;
+        QAction *m_searchAction = nullptr;
+        QAction *m_moduleHelpAction = nullptr;
+        KActionMenu *m_helpAction = nullptr;
 
-        QWidget *m_cWidget;
-        KLineEdit *m_searchText;
+        QWidget *m_cWidget = nullptr;
+        KLineEdit *m_searchText = nullptr;
 
-        SidePanel *m_sideMenu;
-        ToolTipManager *m_toolTips;
+        SidePanel *m_sideMenu = nullptr;
+        ToolTipManager *m_toolTips = nullptr;
 };
 
 #endif //INFOCENTER

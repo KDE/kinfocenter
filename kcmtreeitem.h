@@ -130,7 +130,7 @@ class KcmTreeItem
         /**
         * Get tree items KCM's weight
         */
-        virtual int weight();
+        virtual int weight() const;
 
         /**
         * Get icon tied to KCM

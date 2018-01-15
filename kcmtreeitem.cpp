@@ -120,7 +120,7 @@ KCModuleInfo KcmTreeItem::kcm() const
     return *m_moduleInfo;
 }
 
-int KcmTreeItem::weight()
+int KcmTreeItem::weight() const
 {
     return m_moduleInfo->weight();
 }
