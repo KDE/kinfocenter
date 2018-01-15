@@ -47,7 +47,7 @@ class InfoPanel : public QGroupBox
     Q_OBJECT
 
 public:
-    InfoPanel(QWidget *, DevInfoPlugin *);
+    explicit InfoPanel(QWidget *, DevInfoPlugin *);
     ~InfoPanel();
 
     void setTopInfo(const QIcon &, Solid::Device *);

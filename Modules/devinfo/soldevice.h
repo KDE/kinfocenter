@@ -67,7 +67,7 @@ public:
             }
             return dev;
         } else {
-            return NULL;
+            return nullptr;
         }
     }
 

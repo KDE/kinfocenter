@@ -45,7 +45,7 @@ class KcmContainer : public QScrollArea
         *
         * @param parent objects parent
         */
-        KcmContainer(QWidget *parent);
+        explicit KcmContainer(QWidget *parent);
 
         /**
         * Destory KCMContainer

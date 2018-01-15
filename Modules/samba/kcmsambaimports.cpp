@@ -57,7 +57,7 @@ void ImportsView::updateList() {
 	char buf[250];
 	QByteArray s(""), strSource, strMount, strType;
 	FILE *f=popen("mount", "r");
-	if (f==0)
+    if (f==nullptr)
 		return;
 	do {
 		e=fgets(buf, 250, f);

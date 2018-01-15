@@ -331,7 +331,7 @@ static bool GetInfo_XServer_Generic(QTreeWidget *lBox) {
 /* Helper-function to read output from an external program */
 static int GetInfo_ReadfromPipe(QTreeWidget* tree, const char *FileName, bool WithEmptyLines = true) {
 	QProcess proc;
-	QTreeWidgetItem* olditem= NULL;
+    QTreeWidgetItem* olditem= nullptr;
 	QString s;
 
 	proc.start(FileName, QIODevice::ReadOnly);

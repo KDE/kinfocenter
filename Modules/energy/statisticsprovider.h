@@ -63,7 +63,7 @@ public:
         ChargingRole
     };
 
-    StatisticsProvider(QObject *parent = Q_NULLPTR);
+    explicit StatisticsProvider(QObject *parent = nullptr);
 
     void setDevice(const QString &device);
     void setDuration(uint duration);

@@ -66,7 +66,7 @@ private:
     /**
      * UI
      */
-    Ui::Module *ui;
+    Ui::Module *ui = nullptr;
 
     /** \returns Version of plasmashell or an empty string when none was found */
     QString plasmaVersion() const;

@@ -73,7 +73,7 @@ public:
             }
             ++treeWidget;
         }
-        return NULL;
+        return nullptr;
     }
 
 private:
@@ -83,9 +83,12 @@ private:
     void createMenuActions();
 
     QMap<Solid::DeviceInterface::Type, SolDevice *> deviceMap;
-    InfoPanel *iPanel;
-    QAction *colAct, *expAct, *allAct, *relAct;
-    DevInfoPlugin *status;
+    InfoPanel *iPanel = nullptr;
+    QAction *colAct = nullptr;
+    QAction *expAct = nullptr;
+    QAction *allAct = nullptr;
+    QAction *relAct = nullptr;
+    DevInfoPlugin *status = nullptr;
     //NicSignals *nicSig;
 
 public Q_SLOTS:

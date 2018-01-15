@@ -211,10 +211,10 @@ void StatisticsView::calculate() {
                 {
 			QTreeWidgetItem *item = dataList->topLevelItem(i);
 			if (connCount) {
-				if ((QString(item->text(1)).contains(i18n("CONNECTION OPENED"))) && (QString(item->text(2)).contains(rService)) && (QString(item->text(3)).contains(rHost)))
+                if ((item->text(1).contains(i18n("CONNECTION OPENED"))) && (item->text(2).contains(rService)) && (item->text(3).contains(rHost)))
 					count++;
 			} else {
-				if ((QString(item->text(1)).contains(i18n("FILE OPENED"))) && (QString(item->text(2)).contains(rService)) && (QString(item->text(3)).contains(rHost)))
+                if ((item->text(1).contains(i18n("FILE OPENED"))) && (item->text(2).contains(rService)) && (item->text(3).contains(rHost)))
 					count++;
 			}
 		}
@@ -273,7 +273,7 @@ LogItem* SambaLog::itemInList(const QString &name) {
 		}
 	}
 
-	return 0;
+    return nullptr;
 }
 
 void SambaLog::addItem(const QString &share, const QString &user) {
@@ -284,7 +284,7 @@ void SambaLog::addItem(const QString &share, const QString &user) {
 		tmp->addItem(user);
 	} else {
 		items.append(new LogItem(share,user));
-	};
+    }
 }
 
 SmallLogItem* LogItem::itemInList(const QString &name) {

@@ -41,7 +41,7 @@ class DevInfoPlugin : public KCModule
     Q_OBJECT
 
 public:
-    DevInfoPlugin(QWidget *parent, const QVariantList &);
+    explicit DevInfoPlugin(QWidget *parent, const QVariantList &);
     ~DevInfoPlugin();
 
     void updateStatus(const QString &uid);

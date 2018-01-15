@@ -136,7 +136,7 @@ void Module::loadSoftware()
                                                           KConfig::NoGlobals);
     KConfigGroup cg = KConfigGroup(config, "General");
 
-    QString logoPath = cg.readEntry("LogoPath", QString());
+    const QString logoPath = cg.readEntry("LogoPath", QString());
     QPixmap logo;
     if (logoPath.isEmpty()) {
         logo = QIcon::fromTheme(QStringLiteral("start-here-kde")).pixmap(128, 128);
@@ -149,18 +149,18 @@ void Module::loadSoftware()
     // We allow overriding of the OS name for branding purposes.
     // For example OS Ubuntu may be rebranded as Kubuntu. Also Kubuntu Active
     // as a product brand is different from Kubuntu.
-    QString distroName = cg.readEntry("Name", os.name);
-    QString versionId = cg.readEntry("Version", os.versionId);
+    const QString distroName = cg.readEntry("Name", os.name);
+    const QString versionId = cg.readEntry("Version", os.versionId);
     ui->nameVersionLabel->setText(QStringLiteral("%1 %2").arg(distroName, versionId));
 
-    QString variant = cg.readEntry("Variant", QString());
+    const QString variant = cg.readEntry("Variant", QString());
     if (variant.isEmpty()) {
         ui->variantLabel->hide();
     } else {
         ui->variantLabel->setText(variant);
     }
 
-    QString url = cg.readEntry("Website", os.homeUrl);
+    const QString url = cg.readEntry("Website", os.homeUrl);
     if (url.isEmpty()) {
         ui->urlLabel->hide();
     } else {
@@ -169,7 +169,7 @@ void Module::loadSoftware()
 
     // Since Plasma version detection isn't based on a library query it can fail
     // in weird cases; instead of admiting defeat we simply hide everything :P
-    QString plasma = plasmaVersion();
+    const QString plasma = plasmaVersion();
     if (plasma.isEmpty()) {
         ui->plasma->hide();
         ui->plasmaLabel->hide();
