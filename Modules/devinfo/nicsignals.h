@@ -43,7 +43,7 @@ signals:
     void nicActivatedOrDisconnected();
 
 public slots:
-    void nicChangedSignal(const int &, const int &, const int &);
+    void nicChangedSignal(int , int , int );
 };
 
 #endif //NICSIGNALS

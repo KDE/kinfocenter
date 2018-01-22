@@ -36,7 +36,7 @@ void NicSignals::connectToNicSignals()
     }
 }
 
-void NicSignals::nicChangedSignal(const int &ns, const int &os, const int &reason)
+void NicSignals::nicChangedSignal(int ns, int os, int reason)
 {
     Q_UNUSED(os);
     Q_UNUSED(reason);
