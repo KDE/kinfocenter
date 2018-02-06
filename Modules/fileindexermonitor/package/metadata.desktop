@@ -2,7 +2,7 @@
 Name=File Indexer Monitor
 Name[ar]=مرقاب مفهرس الملفّات
 Name[ca]=Monitor de l'indexador de fitxers
-Name[ca@valencia]=Controlador de l'indexador de fitxers
+Name[ca@valencia]=Monitor de l'indexador de fitxers
 Name[da]=Overvågning af filindeksering
 Name[de]=Datei-Indizierungsüberwachung
 Name[el]=Επόπτης εφαρμογής δεικτοδότησης αρχείων
@@ -39,7 +39,7 @@ Name[zh_TW]=檔案索引器監視器
 Comment=File Index Monitor
 Comment[ar]=مرقاب فهرسة الملفّات
 Comment[ca]=Monitor de l'índex de fitxers
-Comment[ca@valencia]=Controlador de l'índex de fitxers
+Comment[ca@valencia]=Monitor de l'índex de fitxers
 Comment[da]=Overvågning af filindeksering
 Comment[de]=Datei-Indizierungsüberwachung
 Comment[el]=Επόπτης δεικτοδότησης αρχείων
