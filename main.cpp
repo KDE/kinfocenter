@@ -36,6 +36,7 @@
 KicApp::KicApp(int &argc, char **argv)
     : QApplication(argc, argv)
 {
+    QGuiApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
     KLocalizedString::setApplicationDomain("kinfocenter");
 
     const auto displayName = i18n("Info Center");
