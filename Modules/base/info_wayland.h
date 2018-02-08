@@ -29,6 +29,7 @@ class QThread;
 namespace KWayland {
     namespace Client {
         class ConnectionThread;
+        class Registry;
     }
 }
 
@@ -44,6 +45,7 @@ private:
     QTreeWidget *m_tree;
     QThread *m_thread;
     KWayland::Client::ConnectionThread *m_connection;
+    KWayland::Client::Registry *m_registry = nullptr;
 };
 
 #endif // INFO_WAYLAND_H
