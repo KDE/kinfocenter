@@ -42,6 +42,7 @@ WaylandModule::WaylandModule(QTreeWidget *parent)
 
 WaylandModule::~WaylandModule()
 {
+    delete m_registry;
     m_connection->deleteLater();
     m_thread->quit();
     m_thread->wait();
@@ -68,7 +69,7 @@ void WaylandModule::init()
     connect(m_connection, &ConnectionThread::connected, this,
         [this, compositorItem, interfacesItem] {
             Registry *registry = new Registry(this);
-            EventQueue *queue = new EventQueue(this);
+            EventQueue *queue = new EventQueue(registry);
             queue->setup(m_connection);
             registry->setEventQueue(queue);
             connect(registry, &Registry::interfaceAnnounced, this,
@@ -215,6 +216,7 @@ void WaylandModule::init()
                     );
                 }
             );
+            m_registry = registry;
             registry->create(m_connection);
             registry->setup();
         },
