@@ -79,7 +79,6 @@ Comment[x-test]=xxStatistics about energy consumptionxx
 Comment[zh_CN]=能源消耗的统计
 Comment[zh_TW]=關於能源消耗的統計
 Icon=preferences-system-power-management
-Encoding=UTF-8
 Keywords=
 Type=Service
 X-KDE-ParentApp=
