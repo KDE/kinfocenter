@@ -255,7 +255,7 @@ bool USBDevice::parse(const QString &fname) {
 	// read in the device infos
 	USBDevice *device = 0;
 	int start=0, end;
-	result.replace(QRegExp(QStringLiteral("^\n")),QLatin1String(""));
+    result.remove(QRegExp(QStringLiteral("^\n")));
 	while ((end = result.indexOf('\n', start)) > 0)
 	{
 		QString line = result.mid(start, end-start);

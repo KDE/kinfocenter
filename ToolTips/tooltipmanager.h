@@ -20,9 +20,9 @@
 #ifndef TOOLTIPMANAGER_H
 #define TOOLTIPMANAGER_H
 
-#include <QtCore/QObject>
+#include <QObject>
 
-#include <QtCore/QModelIndex>
+#include <QModelIndex>
 
 class QLayout;
 class QAbstractItemView;
