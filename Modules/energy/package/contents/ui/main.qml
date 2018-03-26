@@ -231,7 +231,6 @@ Item {
                     ComboBox {
                         id: timespanCombo
                         Layout.minimumWidth: units.gridUnit * 6
-                        visible: graph.visible
                         model: [
                             {text: i18n("Last hour"), value: 3600},
                             {text: i18n("Last 2 hours"), value: 7200},
@@ -246,7 +245,6 @@ Item {
 
                     Button {
                         iconName: "view-refresh"
-                        visible: graph.visible
                         tooltip: i18n("Refresh")
                         Accessible.name: tooltip
                         onClicked: history.refresh()
