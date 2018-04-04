@@ -21,6 +21,8 @@
 
 #include "soldevicetypes.h"
 
+#include <QProgressBar>
+
 #include <kcapacitybar.h>
 
 #include <KFormat>
@@ -491,8 +493,17 @@ QVListLayout *SolBatteryDevice::infoPanelLayout()
     labels << i18n("Battery Type: ")
            << type
            << i18n("Charge Status: ")
-           << state;
+           << state
+           << i18n("Charge Percent: ");
 
     deviceInfoLayout->applyQListToLayout(labels);
+
+    QProgressBar *chargePercent = new QProgressBar();
+    chargePercent->setMaximum(100);
+    chargePercent->setValue(batdev->chargePercent());
+    chargePercent->setEnabled(batdev->isPresent());
+
+    deviceInfoLayout->addWidget(chargePercent);
+
     return deviceInfoLayout;
 }
