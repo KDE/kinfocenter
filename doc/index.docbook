@@ -19,15 +19,15 @@
 </authorgroup>
 
 <legalnotice>&FDLNotice;</legalnotice>
-<date>2016-03-19</date>
-<releaseinfo>Plasma 5.6</releaseinfo>
+<date>2018-03-31</date>
+<releaseinfo>Plasma 5.12</releaseinfo>
 
 <abstract>
-<para>This documentation describes &kde;’s information center.</para>
+<para>This documentation describes &plasma;’s information center.</para>
 </abstract>
 
 <keywordset>
-<keyword>KDE</keyword>
+<keyword>Plasma</keyword>
 <keyword>kinfocenter</keyword>
 <keyword>system</keyword>
 <keyword>information</keyword>
@@ -170,7 +170,7 @@ of the &kde; Fundamentals.
 
 </sect1>
 <sect1 id="info-center-exiting">
-<title>Exiting The &kde; Information Center</title>
+<title>Exiting The Information Center</title>
 
 <para>You can exit the info center one of two ways: </para>
 <itemizedlist>
@@ -195,10 +195,10 @@ Type <keycombo action="simul">&Ctrl;<keycap>Q</keycap></keycombo> on the keyboar
 <!--****************************************-->
 
 <sect1 id="aboutsystem">
-<title>System Information Module</title>
+<title>About System Module</title>
 
 <para>This page shows a brief summary about your system, &ie; your distribution, <guilabel>KDE Plasma Version</guilabel>,
-<guilabel>Qt Version</guilabel>, <guilabel>Kernel Version</guilabel> and <guilabel>OS Type</guilabel>; and in the hardware section
+<guilabel>KDE Frameworks Version</guilabel>, <guilabel>Qt Version</guilabel>, <guilabel>Kernel Version</guilabel> and <guilabel>OS Type</guilabel>; and in the hardware section
 information about <guilabel>Processors</guilabel> and <guilabel>Memory</guilabel>.</para>
 
 <para>Use the information on this page if you ask for help in support channels or report a bug at 
@@ -284,6 +284,28 @@ virtual memory.</para>
 </sect2>
 </sect1>
 
+
+<!--****************************************-->
+
+<sect1 id="energieinformation">
+<title>Energy Information Module</title>
+
+<para>This provides information about CPU wakeups, battery percentage and consumption
+over a user defined history and detailed information about the battery.
+</para>
+</sect1>
+
+<!--****************************************-->
+
+<sect1 id="fileindexermonitor">
+<title>File Indexer Monitor Module</title>
+
+<para>This Module shows the state of the file indexer. If the indexer is not running
+you can start it and then suspend or resume the indexing.</para>
+
+
+</sect1>
+
 <!--****************************************-->
 
 <sect1 id="devinfo">
@@ -292,7 +314,7 @@ virtual memory.</para>
 <para>Device Information is a device viewer module. It shows all relevant devices that are present within your <acronym>PC</acronym>. It has three sections,
 a device viewer, a information panel and a <acronym>UDI</acronym> listing for the currently selected device.</para>
 <sect2 id="devlist">
-<title>Device Listing</title>
+<title>Device Viewer</title>
 <para>The device viewer displays all the current devices detected on your <acronym>PC</acronym> in a tree. The main topics at the beginning of the tree
 are the device categories, left click on a collapsed category to expand it and vice versa to collapse it.
 To display information about a device, left click on the device in the viewer, the information will display on the right side information panel.
@@ -324,8 +346,8 @@ in the device listing are not all devices within your PC, they are just devices 
 <note>
 <para>Video devices do not include your video card adapter</para>
 </note>
-</sect2>
-<sect2 id="infopanel">
+
+<sect3 id="infopanel">
 <title>Information Panel</title>
 <para>The information panel is where device information is shown when you select a device. The first two information topics are always:</para>
 <itemizedlist>
@@ -340,17 +362,17 @@ The information labels have the ability to be selected and copied from.</para>
 <note>
 <para>Top categories in the device listing do not show any information.</para>
 </note>
-</sect2>
-<sect2 id="udilabel">
+</sect3>
+<sect3 id="udilabel">
 <title><acronym>UDI</acronym> Information</title>
 <para>The bottom information panel shows the current selected devices <acronym>UDI</acronym>. This is the unique device identifier.</para>
 <para>All labels have the ability to be selected and copied from.</para>
+</sect3>
 </sect2>
-</sect1>
 
 <!--****************************************-->
 
-<sect1 id="interrupts">
+<sect2 id="interrupts">
 <title>Interrupt Request (<abbrev>IRQ</abbrev>) Information Module</title>
 
 <para>This page displays information about the Interrupt Request
@@ -384,11 +406,11 @@ reboot.  The third column shows the type of interrupt.  The fourth,
 identifies the device assigned to that interrupt.</para>
 
 <para>The user cannot modify any settings on this page.</para>
-</sect1>
+</sect2>
 
 <!--****************************************-->
 
-<sect1 id="dma">
+<sect2 id="dma">
 <title><acronym>DMA</acronym> Channel Information Module</title>
 
 <para> This page displays information about the <acronym>DMA</acronym>
@@ -419,11 +441,11 @@ Unused <acronym>DMA</acronym> channels are not listed.
 <para>
 The user cannot modify any settings on this page.
 </para>
-</sect1>
+</sect2>
 
 <!--****************************************-->
 
-<sect1 id="kcmview1394">
+<sect2 id="kcmview1394">
 <title>IEEE 1394 Device Information Module</title>
 
 <para>The IEEE 1394 interface, also known as <trademark>FireWire</trademark>,
@@ -448,36 +470,23 @@ button.</para>
 <listitem><para><guilabel>Speed</guilabel>: the speed of the node</para></listitem>
 <listitem><para><guilabel>Vendor</guilabel>: the vendor of the device</para></listitem>
 </itemizedlist>
-</sect1>
+</sect2>
 
 <!--****************************************-->
 
-<sect1 id="kcm_pci">
-<title><acronym>PCI</acronym>-bus/Installed <acronym>PCI</acronym> Cards Information Module</title>
+<sect2 id="kcmusb">
+<title><acronym>USB</acronym> Controller/<acronym>USB</acronym> Devices Information Module</title>
 
-<para>This page displays information about the
-<acronym>PCI</acronym>-bus and installed <acronym>PCI</acronym> cards,
-and other devices that use the Peripheral Component Interconnect
-(<acronym>PCI</acronym>) bus.</para>
+<para>This module allows you to see the devices attached to your
+<acronym>USB</acronym> bus(es).</para>
 
-<note><para>The exact information displayed is system-dependent. On some
-systems, <acronym>PCI</acronym>-information can not yet be
-displayed.</para> </note>
-
-<para>On &Linux;, this information is read from <filename
-class="devicefile">/proc/pci</filename> which is only available if the
-<filename class="directory">/proc</filename> pseudo-filesystem is
-compiled into the kernel.  A listing of all <acronym>PCI</acronym>
-devices found during kernel initialization, and their configuration, is
-shown.</para>
-
-<para>Each entry begins with a bus, device and function number.</para>
-<para>The user cannot modify any settings on this page.</para>
-</sect1>
+<para>This module is for information only, you cannot edit any
+information you see here.</para>
+</sect2>
 
 <!--****************************************-->
 
-<sect1 id="ioports">
+<sect2 id="ioports">
 <title>Input/Output Port Information Module</title>
 
 <para>This page displays information about the I/O ports.</para>
@@ -507,23 +516,58 @@ regions that are in use is shown.</para>
 second column identifies the device that uses these I/O ports.</para>
 
 <para>The user cannot modify any settings on this page.</para>
+</sect2>
+
+<!--****************************************-->
+
+<sect2 id="kcm_pci">
+<title><acronym>PCI</acronym>-bus/Installed <acronym>PCI</acronym> Cards Information Module</title>
+
+<para>This page displays information about the
+<acronym>PCI</acronym>-bus and installed <acronym>PCI</acronym> cards,
+and other devices that use the Peripheral Component Interconnect
+(<acronym>PCI</acronym>) bus.</para>
+
+<note><para>The exact information displayed is system-dependent. On some
+systems, <acronym>PCI</acronym>-information can not yet be
+displayed.</para> </note>
+
+<para>On &Linux;, this information is read from <filename
+class="devicefile">/proc/pci</filename> which is only available if the
+<filename class="directory">/proc</filename> pseudo-filesystem is
+compiled into the kernel.  A listing of all <acronym>PCI</acronym>
+devices found during kernel initialization, and their configuration, is
+shown.</para>
+
+<para>Each entry begins with a bus, device and function number.</para>
+<para>The user cannot modify any settings on this page.</para>
+</sect2>
+
 </sect1>
 
 <!--****************************************-->
 
-<sect1 id="kcmusb">
-<title><acronym>USB</acronym> Controller/<acronym>USB</acronym> Devices Information Module</title>
 
-<para>This module allows you to see the devices attached to your
-<acronym>USB</acronym> bus(es).</para>
+<sect1 id="network">
+<title>Network Information Module</title>
 
-<para>This module is for information only, you cannot edit any
-information you see here.</para>
-</sect1>
+<sect2 id="nic">
+<title>Network Interfaces Information Module</title>
+
+<para>
+This page displays information about the network interfaces
+installed in your computer.
+</para>
+
+<note><para>The exact information displayed is system-dependent.  On
+some systems, this information can not yet be displayed.</para></note>
+
+<para>The user cannot modify any settings on this page.</para>
+</sect2>
 
 <!--****************************************-->
 
-<sect1 id="smbstatus">
+<sect2 id="smbstatus">
 <title>Samba Status Information Module</title>
 
 <para>The Samba and <acronym>NFS</acronym> Status Monitor is a front end
@@ -545,7 +589,7 @@ network. In this case the output of <command>showmount</command>
 <filename class="directory">/usr/sbin</filename>, check if you have
 showmount in your <envar>PATH</envar>.</para>
 
-<sect2 id="smb-exports">
+<sect3 id="smb-exports">
 <title>Exports</title>
 
 <para>On this page you can see a big list which shows the currently
@@ -574,9 +618,9 @@ not notice it.</para>
 Here you see only, how many files he has <emphasis>open</emphasis> just
 now, you don't see how many he copied or formerly opened &etc;</para>
 
-</sect2>
+</sect3>
 
-<sect2 id="smb-imports">
+<sect3 id="smb-imports">
 <title>Imports</title>
 
 <para> Here you see which Samba- and <acronym>NFS</acronym>-shares from
@@ -589,9 +633,9 @@ mounted.</para>
 &Linux; (this has been tested), and it should also work on &Solaris;
 (this has not been tested).</para>
 
-</sect2>
+</sect3>
 
-<sect2 id="smb-log">
+<sect3 id="smb-log">
 <title>Log</title>
 
 <para>This page presents the contents of your local samba log file in a
@@ -625,8 +669,8 @@ your samba is too low, you won't see everything.</para>
 <para>By clicking on the header of one column you can sort the list by
 this column.</para>
 
-</sect2>
-<sect2 id="smb-statistics">
+</sect3>
+<sect3 id="smb-statistics">
 <title>Statistics</title>
 
 <para>On this page you can filter the contents of the third page for
@@ -667,10 +711,10 @@ recognized.</para>
 this column.  This way you can check out which file was opened most
 often, or which user opened the most files or whatever.</para>
 
-</sect2>
+</sect3>
 
 
-<sect2 id="smb-stat-author">
+<sect3 id="smb-stat-author">
 <title>Section Author</title>
 
 <para>Module copyright 2000: Michael Glauche and &Alexander.Neundorf; &Alexander.Neundorf.mail;</para>
@@ -696,52 +740,14 @@ fixed:</para>
 
 <!-- TRANS:CREDIT_FOR_TRANSLATORS -->
 
+</sect3>
 </sect2>
 </sect1>
 
-<!--****************************************-->
+<sect1 id="graphical">
+<title>Graphical Information Module</title>
 
-<sect1 id="nic">
-<title>Network Interfaces Information Module</title>
-
-<para>
-This page displays information about the network interfaces
-installed in your computer.
-</para>
-
-<note><para>The exact information displayed is system-dependent.  On
-some systems, this information can not yet be displayed.</para></note>
-
-<para>The user cannot modify any settings on this page.</para>
-</sect1>
-
-<!--****************************************-->
-
-<sect1 id="opengl">
-<title>OpenGL Information Module</title>
-
-<para>This page displays information about installed <acronym>OpenGL</acronym> implementation.
-OpenGL (for "Open Graphics Library") is a cross-platform,
-hardware independent interface for 3D graphics. </para>
-
-<para><acronym>GLX</acronym> is the binding for OpenGL to X Window system.</para>
-
-<para> <acronym>DRI</acronym> (Direct Rendering Infrastucture) provides hardware acceleration for OpenGL.
-You must have a videocard with 3D accelerator and properly installed driver for this.</para>
-<para> </para>
-
-<para>Read more at the official OpenGL site <ulink url="http://www.opengl.org">http://www.opengl.org</ulink> </para>
-</sect1>
-
-<!--****************************************-->
-
-<sect1 id="xserver">
-<title>X Server Information Module</title>
-
-<para>This screen is useful for getting specific information about your
-X server and the current session of X.</para>
-
-<para>When you open this module, you are presented with some
+<para>When you open the modules in this section, you are presented with some
 information.  The left hand side of the window is organized into a
 tree. Some of the elements have a plus sign in front of the label.
 Clicking this sign opens a <quote>submenu</quote> related to the
@@ -757,13 +763,48 @@ setup.</para>
 <note><para>Some setups may not be able to determine some or all of the
 parameters.</para></note>
 
-<para>You can not change any values from this menu.  It is for
+<para>You can not change any values from this module.  It is for
 information only.</para>
-</sect1>
 
 <!--****************************************-->
 
-<!-- Wayland missing -->
+<sect2 id="wayland">
+<title>Wayland Information Module</title>
+
+<para>This screen is useful for getting specific information about your
+<ulink url="https://en.wikipedia.org/wiki/Wayland_(display_server_protocol)">Wayland Compositor</ulink>.</para>
+
+</sect2>
+
+<!--****************************************-->
+
+<sect2 id="xserver">
+<title>X Server Information Module</title>
+
+<para>This screen is useful for getting specific information about your
+X Server and the current session of X.</para>
+
+</sect2>
+
+<!--****************************************-->
+
+<sect2 id="opengl">
+<title>OpenGL Information Module</title>
+
+<para>This page displays information about installed <acronym>OpenGL</acronym> implementation.
+OpenGL (for "Open Graphics Library") is a cross-platform,
+hardware independent interface for 3D graphics. </para>
+
+<para><acronym>GLX</acronym> is the binding for OpenGL to X Window system.</para>
+
+<para> <acronym>DRI</acronym> (Direct Rendering Infrastucture) provides hardware acceleration for OpenGL.
+You must have a videocard with 3D accelerator and properly installed driver for this.</para>
+<para> </para>
+
+<para>Read more at the official OpenGL site <ulink url="https://www.opengl.org">OpenGL</ulink> </para>
+</sect2>
+
+</sect1>
 
 </chapter>
 
