@@ -445,11 +445,11 @@ QVListLayout *SolBatteryDevice::infoPanelLayout()
     case Solid::Battery::UpsBattery:
         type = i18n("UPS");
         break;
-    case Solid::Battery::MouseBattery:
-        type = i18n("Mouse");
-        break;
     case Solid::Battery::PrimaryBattery:
         type = i18n("Primary");
+        break;
+    case Solid::Battery::MouseBattery:
+        type = i18n("Mouse");
         break;
     case Solid::Battery::KeyboardBattery:
         type = i18n("Keyboard");
@@ -459,6 +459,15 @@ QVListLayout *SolBatteryDevice::infoPanelLayout()
         break;
     case Solid::Battery::CameraBattery:
         type = i18n("Camera");
+        break;
+    case Solid::Battery::PhoneBattery:
+        type = i18n("Phone");
+        break;
+    case Solid::Battery::MonitorBattery:
+        type = i18nc("Screen", "Monitor");
+        break;
+    case Solid::Battery::GamingInputBattery:
+        type = i18nc("Wireless game pad or joystick battery", "Gaming Input");
         break;
     default:
         type = i18nc("unknown battery type", "Unknown");
