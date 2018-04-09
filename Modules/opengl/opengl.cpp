@@ -860,8 +860,6 @@ static QTreeWidgetItem *get_gl_info_egl_qt(QTreeWidgetItem *l1, QTreeWidgetItem 
     surface.create();
     QOpenGLContext context;
     QSurfaceFormat format;
-    format.setMajorVersion(3);
-    format.setMinorVersion(2);
     format.setProfile(profile);
     context.setFormat(format);
     if (!context.create()) {
