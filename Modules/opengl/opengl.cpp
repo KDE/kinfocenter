@@ -729,6 +729,7 @@ static QTreeWidgetItem *get_gl_info_glx(Display *dpy, int scrnum, Bool allowDire
       qDebug() << "Error: glXMakeCurrent failed\n";
    }
 
+   glXMakeCurrent(dpy, GL_NONE, nullptr);
    glXDestroyContext(dpy, ctx);
    XDestroyWindow(dpy, win);
    XFree(visinfo);
@@ -845,6 +846,7 @@ static QTreeWidgetItem *get_gl_info_egl(Display *dpy, int scrnum, QTreeWidgetIte
       qDebug() <<"Error: eglMakeCurrent() failed\n";
    }
 
+   eglMakeCurrent(egl_dpy, EGL_NO_SURFACE, EGL_NO_SURFACE, EGL_NO_CONTEXT);
    eglDestroyContext(egl_dpy, ctx);
    eglDestroySurface(egl_dpy, surf);
    XDestroyWindow(dpy, win);
