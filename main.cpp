@@ -29,6 +29,7 @@
 #include <KLocalizedString>
 #include <config-workspace.h>
 #include <KDBusService>
+#include <KWindowSystem>
 
 //Qt
 #include <QCommandLineParser>
@@ -61,10 +62,14 @@ KicApp::KicApp(int &argc, char **argv)
     parser.process(*this);
     aboutData.processCommandLine(&parser);
 
+    auto *service = new KDBusService(KDBusService::Unique, this);
+
     display = new KInfoCenter();
     display->show();
 
-    (void)new KDBusService(KDBusService::Unique, this);
+    connect(service, &KDBusService::activateRequested, this, [this]() {
+        KWindowSystem::forceActiveWindow(display->winId());
+    });
 }
 
 int main(int argc, char *argv[])
