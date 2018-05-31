@@ -574,7 +574,7 @@ some systems, this information can not yet be displayed.</para></note>
 to the programs <command>smbstatus</command> and
 <command>showmount</command>.  Smbstatus reports on current Samba
 connections, and is part of the suite of Samba tools, which implements
-the <acronym>SMB</acronym> (Session Message Block) protocol, also called
+the <acronym>SMB</acronym> (Server Message Block) protocol, also called
 the NetBIOS or LanManager protocol.</para>
 
 <para>This protocol can be used to provide printer sharing or drive
