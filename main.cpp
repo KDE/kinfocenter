@@ -56,8 +56,6 @@ KicApp::KicApp(int &argc, char **argv)
     QApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("hwinfo")));
 
     QCommandLineParser parser;
-    parser.addHelpOption();
-    parser.addVersionOption();
     aboutData.setupCommandLine(&parser);
     parser.process(*this);
     aboutData.processCommandLine(&parser);
