@@ -108,6 +108,7 @@ public:
     QString udi() const;
     bool isDeviceSet();
 
+    bool operator< (const QTreeWidgetItem & other) const;
 protected:
 
     void setDeviceText(const QString &);

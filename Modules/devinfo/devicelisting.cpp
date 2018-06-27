@@ -49,6 +49,7 @@ DeviceListing::DeviceListing(QWidget *parent, InfoPanel *info, DevInfoPlugin *st
     createMenuActions();
     setHeaderLabels(QStringList(i18n("Devices")));
     populateListing();
+    setSortingEnabled(true);
 }
 
 DeviceListing::~DeviceListing()

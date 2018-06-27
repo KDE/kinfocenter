@@ -153,3 +153,28 @@ bool SolDevice::isDeviceSet()
 {
     return deviceSet;
 }
+
+bool SolDevice::operator< ( const QTreeWidgetItem & other ) const
+{
+    const SolDevice * otherDevice = dynamic_cast<const SolDevice*>(&other);
+    if (otherDevice) {
+        if (deviceType() != otherDevice->deviceType()) {
+            return deviceType() < otherDevice->deviceType();
+        }
+        switch (deviceType()) {
+        case Solid::DeviceInterface::Processor: {
+                const Solid::Processor *left = tiedDevice.as<const Solid::Processor>();
+                const Solid::Processor *right = otherDevice->tiedDevice.as<const Solid::Processor>();
+                // Processors are sorted in ascending order, so this is reversed
+                return left->number() > right->number();
+            }
+        case Solid::DeviceInterface::StorageVolume: {
+                // Storage volumes are sorted in ascending order (i.e. sda, sda1, sda2...)
+                return text(0) > other.text(0);
+            }
+        default:
+            break;
+        }
+    }
+    return text(0) < other.text(0);
+}
