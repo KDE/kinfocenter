@@ -62,7 +62,7 @@ class KInfoCenter : public KXmlGuiWindow
         /**
         * Destory KInfoCenter object
         */
-        ~KInfoCenter();
+        ~KInfoCenter() override;
 
         /**
         * Event filter to move KCMContainer to be level with
@@ -71,7 +71,7 @@ class KInfoCenter : public KXmlGuiWindow
         * @param watched object being watched
         * @param event event object containing event information
         */
-        bool eventFilter(QObject *watched, QEvent *event) Q_DECL_OVERRIDE;
+        bool eventFilter(QObject *watched, QEvent *event) override;
 
         public Q_SLOTS:
 

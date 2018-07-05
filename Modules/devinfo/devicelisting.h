@@ -60,7 +60,7 @@ private:
 
 public:
     DeviceListing(QWidget *, InfoPanel *, DevInfoPlugin *);
-    ~DeviceListing();
+    ~DeviceListing() override;
 
     static QTreeWidgetItem *getTreeWidgetItemFromUdi(QTreeWidget *widget, const QString &udi)
     {
@@ -79,7 +79,7 @@ public:
 private:
     void populateListing(const show = RELEVANT);
     QTreeWidgetItem *createListItems(const Solid::DeviceInterface::Type &);
-    void contextMenuEvent(QContextMenuEvent *) Q_DECL_OVERRIDE;
+    void contextMenuEvent(QContextMenuEvent *) override;
     void createMenuActions();
 
     QMap<Solid::DeviceInterface::Type, SolDevice *> deviceMap;

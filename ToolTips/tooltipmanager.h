@@ -46,7 +46,7 @@ public:
     * @param parent The view which will have the tooltips displayed for.
     */
     explicit ToolTipManager(QAbstractItemView* parent);
-    virtual ~ToolTipManager();
+    ~ToolTipManager() override;
 
 public Q_SLOTS:
     /**
@@ -64,7 +64,7 @@ protected:
     * @param event The event object.
     * @returns true if the event was handled in this filter, or false if it was not.
     */
-    bool eventFilter( QObject* watched, QEvent* event ) Q_DECL_OVERRIDE;
+    bool eventFilter( QObject* watched, QEvent* event ) override;
 
 private Q_SLOTS:
     void prepareToolTip();

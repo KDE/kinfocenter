@@ -42,22 +42,22 @@ public:
     /**
      * Destructor.
      */
-    ~Module();
+    ~Module() override;
 
     /**
      * Overloading the KCModule load() function.
      */
-    void load() Q_DECL_OVERRIDE;
+    void load() override;
 
     /**
      * Overloading the KCModule save() function.
      */
-    void save() Q_DECL_OVERRIDE;
+    void save() override;
 
     /**
      * Overloading the KCModule defaults() function.
      */
-    void defaults() Q_DECL_OVERRIDE;
+    void defaults() override;
 
 private:
     void loadSoftware();

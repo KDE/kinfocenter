@@ -49,7 +49,7 @@
 
 int my_reset_handler(raw1394handle_t handle, unsigned int) {
 	View1394* view1394=(View1394*)raw1394_get_userdata(handle);
-	if (view1394!=0)
+    if (view1394)
 		view1394->rescanBus();
 	return 0;
 }
@@ -118,7 +118,7 @@ bool View1394::readConfigRom(raw1394handle_t handle, nodeid_t nodeid, quadlet_t&
 		}
 		tv.tv_sec=0;
 		tv.tv_usec=10*1000;
-		select(0, 0, 0, 0, &tv);
+        select(0, nullptr, nullptr, nullptr, &tv);
 	}
 	if (firstQuad==0)
 		return false;
@@ -168,7 +168,7 @@ void View1394::rescanBus() {
 	m_view->m_listview->clear();
 
 	raw1394handle_t handle=raw1394_new_handle();
-	if (handle==NULL) {
+    if (handle==nullptr) {
 		m_insideRescanBus=false;
 		return;
 	}

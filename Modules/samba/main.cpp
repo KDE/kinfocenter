@@ -33,8 +33,8 @@ Q_OBJECT
 public:
     SambaContainer(QWidget *parent=nullptr, const QVariantList &list = QVariantList());
 	virtual ~SambaContainer();
-	void load() Q_DECL_OVERRIDE;
-	void save() Q_DECL_OVERRIDE;
+	void load() override;
+	void save() override;
 
 private:
 	KConfig config;

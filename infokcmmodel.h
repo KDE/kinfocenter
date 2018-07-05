@@ -53,7 +53,7 @@ class InfoKcmModel : public QAbstractItemModel
         */
         explicit InfoKcmModel(QObject *parent);
 
-        ~InfoKcmModel();
+        ~InfoKcmModel() override;
 
         /**
         * Get index of item in model
@@ -63,23 +63,23 @@ class InfoKcmModel : public QAbstractItemModel
         * @param parent parent of object
         * @return index of object
         */
-        QModelIndex index(int row, int column, const QModelIndex& parent) const Q_DECL_OVERRIDE;
+        QModelIndex index(int row, int column, const QModelIndex& parent) const override;
         QModelIndex index(int row, int column, KcmTreeItem *parent) const;
 
         /**
         * Get parent of item in model
         */
-        QModelIndex parent(const QModelIndex& index) const Q_DECL_OVERRIDE;
+        QModelIndex parent(const QModelIndex& index) const override;
 
         /**
         * Get amount of rows under parent
         */
-        int rowCount(const QModelIndex& parent) const Q_DECL_OVERRIDE;
+        int rowCount(const QModelIndex& parent) const override;
 
         /**
         * Get amount of columns under parent
         */
-        int columnCount(const QModelIndex& parent) const Q_DECL_OVERRIDE;
+        int columnCount(const QModelIndex& parent) const override;
 
         /**
         * Get the stored data for a role
@@ -87,17 +87,17 @@ class InfoKcmModel : public QAbstractItemModel
         * @param index objects index
         * @param role role to retrieve data about
         */
-        QVariant data(const QModelIndex& index, int role) const Q_DECL_OVERRIDE;
+        QVariant data(const QModelIndex& index, int role) const override;
 
         /**
         * Get header information
         */
-        QVariant headerData(int, Qt::Orientation, int) const Q_DECL_OVERRIDE;
+        QVariant headerData(int, Qt::Orientation, int) const override;
 
         /**
         * Get set flags for a treeitem
         */
-        Qt::ItemFlags flags(const QModelIndex &) const Q_DECL_OVERRIDE;
+        Qt::ItemFlags flags(const QModelIndex &) const override;
 
         /**
         * Get the first valid item on the treeview

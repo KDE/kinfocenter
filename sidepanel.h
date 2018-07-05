@@ -54,7 +54,7 @@ class SidePanel : public QTreeView
         /**
         * Destory SidePanel object
         */
-        ~SidePanel();
+        ~SidePanel() override;
 
         /**
         * Select the first valid item in TreeView
@@ -128,7 +128,7 @@ Q_SIGNALS:
         /**
         * Create treeview item menu
         */
-        void contextMenuEvent(QContextMenuEvent *event) Q_DECL_OVERRIDE;
+        void contextMenuEvent(QContextMenuEvent *event) override;
 
         InfoKcmModel *m_model;
         InfoKcmProxyModel *m_proxyModel;

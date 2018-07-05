@@ -51,43 +51,43 @@ class KcmCategoryItem : public KcmTreeItem
         /**
         * Get data of tree item
         */
-        QString data() const Q_DECL_OVERRIDE;
+        QString data() const override;
 
         /**
         * Get category of tree item.
         * Set in X-KDE-KInfoCenter-Category
         */
-        QString category() const Q_DECL_OVERRIDE;
+        QString category() const override;
 
         /**
         * Gets the item type.
         */
-        itemType type() const Q_DECL_OVERRIDE;
+        itemType type() const override;
 
         /**
         * Get tree item KCMs Data
         */
-        KCModuleInfo kcm() const Q_DECL_OVERRIDE;
+        KCModuleInfo kcm() const override;
 
         /**
         * Get tree items KCM's weight
         */
-        int weight() const Q_DECL_OVERRIDE;
+        int weight() const override;
 
         /**
         * Get icon tied to KCM
         */
-        QIcon icon() const Q_DECL_OVERRIDE;
+        QIcon icon() const override;
 
         /**
         * Get whatsThis information from KCM
         */
-        QString whatsThis() const Q_DECL_OVERRIDE;
+        QString whatsThis() const override;
 
         /**
         * Get KCM tree item keywords
         */
-        QStringList keywords() const Q_DECL_OVERRIDE;
+        QStringList keywords() const override;
 
     private:
 

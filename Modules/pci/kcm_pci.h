@@ -32,10 +32,10 @@ class KCMPci : public KCModule {
 
 public:
 	explicit KCMPci(QWidget *parent = nullptr, const QVariantList &list = QVariantList());
-	~KCMPci();
+    ~KCMPci() override;
 
-	void load() Q_DECL_OVERRIDE;
-	QString quickHelp() const Q_DECL_OVERRIDE;
+	void load() override;
+	QString quickHelp() const override;
 
 private:
 	QTreeWidget* tree;

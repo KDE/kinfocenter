@@ -38,8 +38,8 @@ class KInfoListWidget : public KCModule
 public:
   KInfoListWidget(const QString &_title, QWidget *parent, bool _getlistbox (QTreeWidget*) = nullptr);
 
-  void load() Q_DECL_OVERRIDE;
-  QString quickHelp() const Q_DECL_OVERRIDE;
+  void load() override;
+  QString quickHelp() const override;
 
 private:
   QTreeWidget* tree;

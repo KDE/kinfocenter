@@ -156,7 +156,7 @@ void DeviceListing::deviceAddedSlot(const QString &udi)
             // Incase of bad index
             if (deviceMap[deviceType] == nullptr) {
                 QTreeWidgetItem *topItem = topLevelItem(0);
-                if (topItem == 0) {
+                if (!topItem) {
                     delete solhelp;
                     return;
                 }
