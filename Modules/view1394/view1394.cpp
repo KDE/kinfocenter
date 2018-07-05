@@ -215,7 +215,7 @@ void View1394::rescanBus() {
 			//minimal config rom
 			if (((firstQuad>>24) & 0xff)==1) {
 				QString guidStr=QString::number(firstQuad, 16);
-				guidStr="0x"+guidStr.rightJustified(6, '0');
+                guidStr="0x"+guidStr.rightJustified(6, QLatin1Char('0'));
 				
 				QStringList romList;
 				romList << nodeStr << guidStr;
@@ -227,13 +227,13 @@ void View1394::rescanBus() {
 				char buf[32];
 				snprintf(buf, 32, "%lX", guid);
 				guidStr=buf;
-				guidStr="0x"+guidStr.rightJustified(16, '0');
-				QString local=((j | 0xffc0) == localNodeId) ? "X" : "";
-				QString irmStr=(cap & 0x80000000) ? "X" : "";
-				QString cmStr=(cap & 0x40000000) ? "X" : "";
-				QString isStr=(cap & 0x20000000) ? "X" : "";
-				QString bmStr=(cap & 0x10000000) ? "X" : "";
-				QString pmStr=(cap & 0x08000000) ? "X" : "";
+                guidStr="0x"+guidStr.rightJustified(16, QLatin1Char('0'));
+                QString local=((j | 0xffc0) == localNodeId) ? QStringLiteral("X") : QString();
+                QString irmStr=(cap & 0x80000000) ? QStringLiteral("X") : QString();
+                QString cmStr=(cap & 0x40000000) ? QStringLiteral("X") : QString();
+                QString isStr=(cap & 0x20000000) ? QStringLiteral("X") : QString();
+                QString bmStr=(cap & 0x10000000) ? QStringLiteral("X") : QString();
+                QString pmStr=(cap & 0x08000000) ? QStringLiteral("X") : QString();
 				QString accStr=QString::number((cap &0x00ff0000)>>16);
 				int speed=(cap & 0x00000007);
 				QString speedStr;

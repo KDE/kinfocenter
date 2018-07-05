@@ -105,7 +105,7 @@ bool Chart::drawChart(t_memsize total, const QList<t_memsize>& used, const QList
 
     mFreeMemoryLabel->setText(i18n("%1 free", formattedUnit(last_used)));
 
-	setAccessibleDescription(accessibleDescription.join('\n'));
+    setAccessibleDescription(accessibleDescription.join(QLatin1Char('\n')));
 	return true;
 }
 
@@ -119,7 +119,7 @@ ChartWidget::ChartWidget(const QString& title, const QString& hint, Chart* chart
 
 	QVBoxLayout* mainLayout = new QVBoxLayout(this);
 	
-	titleLabel = new QLabel("<strong>" + title + "</strong>", this);
+    titleLabel = new QLabel(QStringLiteral("<strong>") + title + QStringLiteral("</strong>"), this);
 	titleLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
 	titleLabel->setAlignment(Qt::AlignHCenter);
 	titleLabel->setToolTip(hint);
@@ -129,7 +129,7 @@ ChartWidget::ChartWidget(const QString& title, const QString& hint, Chart* chart
 	chart->setToolTip(hint);
 	mainLayout->addWidget(chart);
 	
-    mFreeMemoryLabel = new QLabel(QLatin1String(""), this);
+    mFreeMemoryLabel = new QLabel(QString(), this);
     mFreeMemoryLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
     mFreeMemoryLabel->setAlignment(Qt::AlignHCenter);
     mFreeMemoryLabel->setToolTip(hint);

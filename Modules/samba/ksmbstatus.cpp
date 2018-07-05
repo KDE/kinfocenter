@@ -30,7 +30,7 @@
 #include "ksmbstatus.h"
 
 #define Before(ttf,in) in.left(in.indexOf(ttf))
-#define After(ttf,in)  (in.contains(ttf)?QString(in.mid(in.indexOf(ttf)+QString(ttf).length())):QString(""))
+#define After(ttf,in)  (in.contains(ttf)?QString(in.mid(in.indexOf(ttf)+QString(ttf).length())):QLatin1String(""))
 
 NetMon::NetMon(QWidget * parent, KConfig *config) :
     QWidget(parent), configFile(config), showmountProc(nullptr), strShare(""), strUser(""), strGroup(""), strMachine(""), strSince(""), strPid(""), iUser(0), iGroup(0), iMachine(0), iPid(0) {
@@ -61,8 +61,8 @@ void NetMon::processNFSLine(char *bufline, int) {
 	if (line.contains(":/")) {
 		QTreeWidgetItem *item = new QTreeWidgetItem(list);
 		item->setText(0, QStringLiteral("NFS"));
-		item->setText(0, After(":",line));
-		item->setText(0, Before(":/",line));
+        item->setText(0, After(QLatin1String(":"),QString::fromUtf8(line)));
+        item->setText(0, Before(QLatin1String(":/"),QString::fromUtf8(line)));
 	}
 }
 
@@ -70,7 +70,7 @@ void NetMon::processSambaLine(char *bufline, int) {
 	QByteArray line(bufline);
 	rownumber++;
 	if (rownumber == 2)
-		version->setText(bufline); // second line = samba version
+        version->setText(QString::fromUtf8(bufline)); // second line = samba version
 	if ((readingpart==header) && line.contains("Service")) {
 		iUser=line.indexOf("uid");
 		iGroup=line.indexOf("gid");
@@ -88,11 +88,11 @@ void NetMon::processSambaLine(char *bufline, int) {
 		strMachine=line;
 		QTreeWidgetItem * item = new QTreeWidgetItem(list);
 		item->setText(0, QStringLiteral("SMB"));
-		item->setText(1, strShare);
-		item->setText(2, strMachine);
-		item->setText(3, strUser);
-		item->setText(4, strGroup);
-		item->setText(5, strPid/*,strSince*/);
+        item->setText(1, QString::fromUtf8(strShare));
+        item->setText(2, QString::fromUtf8(strMachine));
+        item->setText(3, QString::fromUtf8(strUser));
+        item->setText(4, QString::fromUtf8(strGroup));
+        item->setText(5, QString::fromUtf8(strPid)/*,strSince*/);
 	} else if (readingpart==connexions)
 		readingpart=locked_files;
 	else if ((readingpart==locked_files) && (line.indexOf("No ")==0))
@@ -156,13 +156,13 @@ void NetMon::update() {
 	list->clear();
 	/* Re-read the Contents ... */
 
-	QString path(::getenv("PATH"));
+    QString path(QString::fromUtf8(::getenv("PATH")));
 	path += QLatin1String("/bin:/sbin:/usr/bin:/usr/sbin");
 
 	rownumber=0;
 	readingpart=header;
 	nrpid=0;
-	process->setEnvironment(QStringList() << ("PATH=" + path));
+    process->setEnvironment(QStringList() << (QStringLiteral("PATH=") + path));
 	connect(process, &QProcess::readyRead, this, &NetMon::readFromProcess);
 	process->start(QStringLiteral("smbstatus"));
 	if (!process->waitForFinished()) {
@@ -183,13 +183,13 @@ void NetMon::update() {
 	}
 
 	delete process;
-	process=0;
+    process=nullptr;
 
 	readingpart=nfs;
 	delete showmountProc;
 	showmountProc=new QProcess();
 	connect(showmountProc, &QProcess::readyRead, this, &NetMon::readFromProcess);
-	showmountProc->setEnvironment(QStringList() << ("PATH=" + path));
+    showmountProc->setEnvironment(QStringList() << (QStringLiteral("PATH=") + path));
 	//without this timer showmount hangs up to 5 minutes
 	//if the portmapper daemon isn't running
 	QTimer::singleShot(5000,this,&NetMon::killShowmount);
@@ -205,6 +205,6 @@ void NetMon::update() {
 void NetMon::killShowmount() {
 	////qDebug()<<"killShowmount()";
 	showmountProc->deleteLater();
-	showmountProc=0;
+    showmountProc=nullptr;
 }
 

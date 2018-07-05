@@ -59,19 +59,19 @@ CREATE_FACTORY(Wayland, i18n("Wayland"))
 
 K_PLUGIN_FACTORY(KInfoModulesFactory,
 #ifdef INFO_IRQ_AVAILABLE
-    registerPlugin<KIRQInfoWidget>("irq");
+    registerPlugin<KIRQInfoWidget>(QStringLiteral("irq"));
 #endif
 #ifdef INFO_IOPORTS_AVAILABLE
-    registerPlugin<KIO_PortsInfoWidget>("ioports");
+    registerPlugin<KIO_PortsInfoWidget>(QStringLiteral("ioports"));
 #endif
 #ifdef INFO_DMA_AVAILABLE
-    registerPlugin<KDMAInfoWidget>("dma");
+    registerPlugin<KDMAInfoWidget>(QStringLiteral("dma"));
 #endif
 #ifdef INFO_XSERVER_AVAILABLE
-    registerPlugin<KXServer_and_VideoInfoWidget>("xserver");
+    registerPlugin<KXServer_and_VideoInfoWidget>(QStringLiteral("xserver"));
 #endif
 #ifdef INFO_WAYLAND_AVAILABLE
-    registerPlugin<KWaylandInfoWidget>("wayland");
+    registerPlugin<KWaylandInfoWidget>(QStringLiteral("wayland"));
 #endif
 )
 

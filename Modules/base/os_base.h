@@ -49,8 +49,8 @@ static const QString HexStr(unsigned long val, int digits) {
 	int i;
 	hexstr = QStringLiteral("0x%1").arg(val, digits, 16/*=HEX*/);
 	for (i=hexstr.length()-1; i>0; --i)
-		if (hexstr[i]==' ')
-			hexstr[i] = '0';
+        if (hexstr[i]==QLatin1Char(' '))
+            hexstr[i] = QLatin1Char('0');
 	return hexstr;
 }
 
@@ -196,7 +196,7 @@ static QTreeWidgetItem* XServer_fill_screen_info(QTreeWidgetItem *lBox, QTreeWid
 	for (etp=event_table; etp->name; etp++) {
 		if (EventMaskOfScreen(s) & etp->value) {
 			QStringList eventList;
-			eventList << i18n("Event = %1", HexStr(etp->value, HEXDIGITS)) << etp->name;
+            eventList << i18n("Event = %1", HexStr(etp->value, HEXDIGITS)) << QString::fromLatin1(etp->name);
 			new QTreeWidgetItem(last, eventList);
 		}
 	}
@@ -236,7 +236,7 @@ static bool GetInfo_XServer_Generic(QTreeWidget *lBox) {
 	next->setExpanded(true);
 
 	QStringList displayNameList;
-	displayNameList << i18n("Name of the Display") << DisplayString(dpy);
+    displayNameList << i18n("Name of the Display") << QString::fromUtf8(DisplayString(dpy));
 	last = new QTreeWidgetItem(next, displayNameList);
 
 	QStringList vendorList;
@@ -334,7 +334,7 @@ static int GetInfo_ReadfromPipe(QTreeWidget* tree, const char *FileName, bool Wi
     QTreeWidgetItem* olditem= nullptr;
 	QString s;
 
-	proc.start(FileName, QIODevice::ReadOnly);
+    proc.start(QString::fromLatin1(FileName), QIODevice::ReadOnly);
 	if (!proc.waitForFinished()) {
 		// Process hanged or did not start
 		return 0;

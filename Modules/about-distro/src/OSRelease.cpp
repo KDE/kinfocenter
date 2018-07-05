@@ -49,7 +49,7 @@ static void setVar(QStringList *var, const QString &value)
     //       is required to not contain spaces even if more advanced shell escaping
     //       is also allowed...
     QString value_ = value;
-    if (value_.at(0) == QChar('"') && value_.at(value_.size()-1) == QChar('"')) {
+    if (value_.at(0) == QLatin1Char('"') && value_.at(value_.size()-1) == QLatin1Char('"')) {
         value_.remove(0, 1);
         value_.remove(-1, 1);
     }
@@ -89,7 +89,7 @@ OSRelease::OSRelease()
     QString line;
     QStringList comps;
     while (!file.atEnd()) {
-        line = file.readLine();
+        line = QString::fromLatin1(file.readLine());
 
         if (line.startsWith(QLatin1Char('#'))) {
             // Comment line

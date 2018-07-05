@@ -60,22 +60,22 @@ public:
 	//a faster constructor saves a lot time
 	QTreeWidgetItemX(QTreeWidget *parent, const char *c0, const char *c1 = 0, const char *c2 = 0, const char *c3 = 0, const char *c4 = 0, const char *c5 = 0, const char *c6 = 0, const char *c7 = 0) :
 		QTreeWidgetItem(parent) {
-		setText( 0, c0);
-		setText( 1, c1);
-		setText( 2, c2);
-		setText( 3, c3);
+        setText( 0, QString::fromLatin1(c0));
+        setText( 1, QString::fromLatin1(c1));
+        setText( 2, QString::fromLatin1(c2));
+        setText( 3, QString::fromLatin1(c3));
 		if (c4==0)
 			return;
-		setText( 4, c4);
+        setText( 4, QString::fromLatin1(c4));
 		if (c5==0)
 			return;
-		setText( 5, c5);
+        setText( 5, QString::fromLatin1(c5));
 		if (c6==0)
 			return;
-		setText( 6, c6);
+        setText( 6, QString::fromLatin1(c6));
 		if (c7==0)
 			return;
-		setText( 7, c7);
+        setText( 7, QString::fromLatin1(c7));
 	}
 };
 

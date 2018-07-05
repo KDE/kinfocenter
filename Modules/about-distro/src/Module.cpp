@@ -74,8 +74,8 @@ Module::Module(QWidget *parent, const QVariantList &args) :
 {
     KAboutData *aboutData = new KAboutData(QStringLiteral("kcm-about-distro"),
                                            i18nc("@title", "About Distribution"),
-                                           global_s_versionStringFull,
-                                           QStringLiteral(""),
+                                           QString::fromLatin1(global_s_versionStringFull),
+                                           QString(),
                                            KAboutLicense::LicenseKey::GPL_V3,
                                            i18nc("@info:credit", "Copyright 2012-2014 Harald Sitter"));
 
@@ -177,7 +177,7 @@ void Module::loadSoftware()
         ui->plasmaLabel->setText(plasma);
     }
 
-    ui->qtLabel->setText(qVersion());
+    ui->qtLabel->setText(QString::fromLatin1(qVersion()));
 
     ui->frameworksLabel->setText(KCoreAddons::versionString());
 }
@@ -189,7 +189,7 @@ void Module::loadHardware()
         ui->kernel->hide();
         ui->kernelLabel->hide();
     } else {
-        ui->kernelLabel->setText(utsName.release);
+        ui->kernelLabel->setText(QString::fromLatin1(utsName.release));
     }
 
     const int bits = QT_POINTER_SIZE == 8 ? 64 : 32;

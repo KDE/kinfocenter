@@ -23,6 +23,6 @@
 #include "Module.h"
 
 K_PLUGIN_FACTORY(KcmAboutDistroFactory,
-                 registerPlugin<Module>("kcm-about-distro");)
+                 registerPlugin<Module>(QStringLiteral("kcm-about-distro"));)
 
 #include "main.moc"

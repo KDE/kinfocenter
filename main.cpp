@@ -42,7 +42,7 @@ KicApp::KicApp(int &argc, char **argv)
 
     const auto displayName = i18n("Info Center");
     KAboutData aboutData( QStringLiteral("kinfocenter"), displayName,
-        PROJECT_VERSION, displayName, KAboutLicense::GPL,
+        QString::fromLatin1(PROJECT_VERSION), displayName, KAboutLicense::GPL,
         i18n("Copyright 2009-2018 KDE"));
 
     aboutData.addAuthor(i18n("David Hubner"),i18n("Current Maintainer"), QStringLiteral("hubnerd@ntlworld.com"));

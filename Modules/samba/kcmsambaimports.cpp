@@ -55,29 +55,30 @@ void ImportsView::updateList() {
 	list.clear();
 	char *e;
 	char buf[250];
-	QByteArray s(""), strSource, strMount, strType;
+    QByteArray s(""), strSource, strMount;
+    QString strType;
 	FILE *f=popen("mount", "r");
     if (f==nullptr)
 		return;
 	do {
 		e=fgets(buf, 250, f);
-		if (e!=0) {
+        if (e) {
 			s=buf;
 			if ((s.contains(" nfs ")) || (s.contains(" smbfs "))) {
 				strSource=s.left(s.indexOf(" on /"));
 				strMount=s.mid(s.indexOf(" on /")+4, s.length());
 				if ((s.contains(" nfs ")) || (s.contains("/remote on ")))
-					strType="NFS";
+                    strType=QStringLiteral("NFS");
 				else if (s.contains(" smbfs "))
-					strType="SMB";
+                    strType=QStringLiteral("SMB");
 				int pos(strMount.indexOf(" type "));
 				if (pos==-1)
 					pos=strMount.indexOf(" read/");
 				strMount=strMount.left(pos);
 				QTreeWidgetItem *item = new QTreeWidgetItem(&list);
 				item->setText(0, strType);
-				item->setText(1, strSource);
-				item->setText(2, strMount);
+                item->setText(1, QString::fromUtf8(strSource));
+                item->setText(2, QString::fromUtf8(strMount));
 			};
 		};
 	} while (!feof(f));

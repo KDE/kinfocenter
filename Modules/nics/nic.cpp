@@ -135,9 +135,9 @@ static QString HWaddr2String(const char *hwaddr) {
 		int v = (*hwaddr & 0xff);
 		QString num = QStringLiteral("%1").arg(v, 0, 16);
 		if (num.length() < 2)
-			num.prepend("0");
+            num.prepend(QStringLiteral("0"));
 		if (i>0)
-			ret.append(":");
+            ret.append(QStringLiteral(":"));
 		ret.append(num);
 	}
 	return ret;
@@ -172,7 +172,7 @@ QList<MyNIC*> findNICs() {
 
 		int flags;
 		struct sockaddr_in *sinptr;
-		MyNIC *tmp=0;
+        MyNIC *tmp=nullptr;
 		switch (ifr->ifr_addr.sa_family) {
 		case AF_INET:
 			sinptr = (struct sockaddr_in *) &ifr->ifr_addr;

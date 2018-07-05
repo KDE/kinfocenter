@@ -178,42 +178,42 @@ void LogView::updateList() {
 					};
 			};
 			if (timeRead==0) {
-				c1=0;
-				c2=0;
-				c3=0;
-				c4=0;
+                c1=nullptr;
+                c2=nullptr;
+                c3=nullptr;
+                c4=nullptr;
 				if (showConnOpen.isChecked())
 					c1=strstr(buf, CONN_OPEN);
-				if (c1==0) {
+                if (!c1) {
 					if (showConnClose.isChecked())
 						c2=strstr(buf, CONN_CLOSE);
-					if (c2==0) {
+                    if (!c2) {
 						if (showFileOpen.isChecked())
 							c3=strstr(buf, FILE_OPEN);
-						if (c3==0) {
+                        if (!c3) {
 							if (showFileClose.isChecked())
 								c4=strstr(buf, FILE_CLOSE);
-							if (c4==0)
+                            if (!c4)
 								continue;
 						};
 					};
 				};
-				if (c1!=0) {
+                if (c1) {
 					c=strstr(buf, " as user");
 					*c='\0';
 					*c1='\0';
 					new QTreeWidgetItemX(&viewHistory,time,I18N_NOOP("CONNECTION OPENED"),c1+connOpenLen,buf+2);
 					connectionsCount++;
-				} else if (c2!=0) {
+                } else if (c2) {
 					*c2='\0';
 					new QTreeWidgetItemX(&viewHistory,time,I18N_NOOP("CONNECTION CLOSED"),c2+connCloseLen,buf+2);
-				} else if (c3!=0) {
+                } else if (c3) {
 					c=strstr(buf, " read=");
 					*c='\0';
 					*c3='\0';
 					new QTreeWidgetItemX(&viewHistory,time,I18N_NOOP("            FILE OPENED"),c3+fileOpenLen,buf+2);
 					filesCount++;
-				} else if (c4!=0) {
+                } else if (c4) {
 					c=strstr(buf, " (numopen=");
 					*c='\0';
 					*c4='\0';

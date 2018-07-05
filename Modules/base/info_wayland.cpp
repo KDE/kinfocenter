@@ -61,7 +61,7 @@ void WaylandModule::init()
     compositorItem->setIcon(0, QIcon::fromTheme(QStringLiteral("wayland")));
     compositorItem->setExpanded(true);
 
-    new QTreeWidgetItem(compositorItem, QStringList() << i18n("Name of the Display") << qgetenv("WAYLAND_DISPLAY"));
+    new QTreeWidgetItem(compositorItem, QStringList() << i18n("Name of the Display") << QString::fromLatin1(qgetenv("WAYLAND_DISPLAY")));
 
     auto interfacesItem = new QTreeWidgetItem(compositorItem, QStringList() << i18n("Interfaces") << i18n("Interface Version"));
     interfacesItem->setExpanded(true);
@@ -75,7 +75,7 @@ void WaylandModule::init()
             connect(registry, &Registry::interfaceAnnounced, this,
                 [this, interfacesItem] (const QByteArray &interface, quint32 name, quint32 version) {
                     Q_UNUSED(name)
-                    new QTreeWidgetItem(interfacesItem, QStringList() << interface << QString::number(version));
+                    new QTreeWidgetItem(interfacesItem, QStringList() << QString::fromLatin1(interface) << QString::number(version));
                 }
             );
             connect(registry, &Registry::seatAnnounced, this,

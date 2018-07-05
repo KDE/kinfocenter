@@ -59,7 +59,7 @@ static QString catFile(const QString &fname) {
 	{
 		ssize_t count;
 		while ((count = ::read(fd, buffer, 256)) > 0)
-		result.append(QString(buffer).leftRef(count));
+        result.append(QString::fromLatin1(buffer).leftRef(count));
 
 		::close(fd);
 	}
@@ -69,27 +69,27 @@ static QString catFile(const QString &fname) {
 void USBDevice::parseSysDir(int bus, int parent, int level, const QString& dname) {
 	_level = level;
 	_parent = parent;
-	_manufacturer = catFile(dname + "/manufacturer");
-	_product = catFile(dname + "/product");
+    _manufacturer = catFile(dname + QStringLiteral("/manufacturer"));
+    _product = catFile(dname + QStringLiteral("/product"));
 
 	_bus = bus;
-	_device = catFile(dname + "/devnum").toUInt();
+    _device = catFile(dname + QStringLiteral("/devnum")).toUInt();
 
 	if (_device == 1)
 		_product += QStringLiteral(" (%1)").arg(_bus);
 
-	_vendorID = catFile(dname + "/idVendor").toUInt(0, 16);
-	_prodID = catFile(dname + "/idProduct").toUInt(0, 16);
+    _vendorID = catFile(dname + QStringLiteral("/idVendor")).toUInt(nullptr, 16);
+    _prodID = catFile(dname + QStringLiteral("/idProduct")).toUInt(nullptr, 16);
 
-	_class = catFile(dname + "/bDeviceClass").toUInt(0, 16);
-	_sub = catFile(dname + "/bDeviceSubClass").toUInt(0, 16);
-	_maxPacketSize = catFile(dname + "/bMaxPacketSize0").toUInt();
+    _class = catFile(dname + QStringLiteral("/bDeviceClass")).toUInt(nullptr, 16);
+    _sub = catFile(dname + QStringLiteral("/bDeviceSubClass")).toUInt(nullptr, 16);
+    _maxPacketSize = catFile(dname + QStringLiteral("/bMaxPacketSize0")).toUInt();
 
-	_speed = catFile(dname + "/speed").toDouble();
-	_serial = catFile(dname + "/serial");
-	_channels = catFile(dname + "/maxchild").toUInt();
+    _speed = catFile(dname + QStringLiteral("/speed")).toDouble();
+    _serial = catFile(dname + QStringLiteral("/serial"));
+    _channels = catFile(dname + QStringLiteral("/maxchild")).toUInt();
 
-	double version = catFile(dname + "/version").toDouble();
+    double version = catFile(dname + QStringLiteral("/version")).toDouble();
 	_verMajor = int(version);
 	_verMinor = int(10*(version - floor(version)));
 
@@ -99,11 +99,11 @@ void USBDevice::parseSysDir(int bus, int parent, int level, const QString& dname
 	const QStringList list = dir.entryList();
 
 	for (QStringList::const_iterator it = list.constBegin(); it != list.constEnd(); ++it) {
-		if ((*it).contains(':'))
+        if ((*it).contains(QLatin1Char(':')))
 			continue;
 
 		USBDevice* dev = new USBDevice();
-		dev->parseSysDir(bus, ++level, _device, dname + '/' + *it);
+        dev->parseSysDir(bus, ++level, _device, dname + QLatin1Char('/') + *it);
 	}
 }
 
@@ -125,7 +125,7 @@ void USBDevice::parseLine(const QString& line) {
 	} else if (line.startsWith(QLatin1String("D:"))) {
 		char buffer[11];
 		sscanf(line.toLocal8Bit().data(), "D:  Ver=%x.%x Cls=%x(%10s) Sub=%x Prot=%x MxPS=%u #Cfgs=%u", &_verMajor, &_verMinor, &_class, buffer, &_sub, &_prot, &_maxPacketSize, &_configs);
-		_className = buffer;
+        _className = QString::fromLatin1(buffer);
 	} else if (line.startsWith(QLatin1String("P:")))
 		sscanf(line.toLocal8Bit().data(), "P:  Vendor=%x ProdID=%x Rev=%x.%x", &_vendorID, &_prodID, &_revMajor, &_revMinor);
 }
@@ -151,29 +151,29 @@ QString USBDevice::product() {
 QString USBDevice::dump() {
 	QString r;
 
-	r = "<qml><h2><center>" + product() + "</center></h2><br/><hl/>";
+    r = QStringLiteral("<qml><h2><center>") + product() + QStringLiteral("</center></h2><br/><hl/>");
 
 	if (!_manufacturer.isEmpty())
-		r += i18n("<b>Manufacturer:</b> ") + _manufacturer + "<br/>";
+        r += i18n("<b>Manufacturer:</b> ") + _manufacturer + QStringLiteral("<br/>");
 	if (!_serial.isEmpty())
-		r += i18n("<b>Serial #:</b> ") + _serial + "<br/>";
+        r += i18n("<b>Serial #:</b> ") + _serial + QStringLiteral("<br/>");
 
 	r += QLatin1String("<br/><table>");
 
 	QString c = QStringLiteral("<td>%1</td>").arg(_class);
 	QString cname = _db->cls(_class);
 	if (!cname.isEmpty())
-		c += "<td>(" + i18n(cname.toLatin1()) +")</td>";
+        c += QStringLiteral("<td>(") + i18n(cname.toLatin1()) +QStringLiteral(")</td>");
 	r += i18n("<tr><td><i>Class</i></td>%1</tr>", c);
 	QString sc = QStringLiteral("<td>%1</td>").arg(_sub);
 	QString scname = _db->subclass(_class, _sub);
 	if (!scname.isEmpty())
-		sc += "<td>(" + i18n(scname.toLatin1()) +")</td>";
+        sc += QStringLiteral("<td>(") + i18n(scname.toLatin1()) +QStringLiteral(")</td>");
 	r += i18n("<tr><td><i>Subclass</i></td>%1</tr>", sc);
 	QString pr = QStringLiteral("<td>%1</td>").arg(_prot);
 	QString prname = _db->protocol(_class, _sub, _prot);
 	if (!prname.isEmpty())
-		pr += "<td>(" + prname +")</td>";
+        pr += QStringLiteral("<td>(") + prname +QStringLiteral(")</td>");
 	r += i18n("<tr><td><i>Protocol</i></td>%1</tr>", pr);
 #if !(defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD))
 	r += ki18n("<tr><td><i>USB Version</i></td><td>%1.%2</td></tr>")
@@ -185,12 +185,12 @@ QString USBDevice::dump() {
 	QString v = QString::number(_vendorID, 16);
 	QString name = _db->vendor(_vendorID);
 	if (!name.isEmpty())
-		v += "<td>(" + name +")</td>";
+        v += QStringLiteral("<td>(") + name +QStringLiteral(")</td>");
 	r += i18n("<tr><td><i>Vendor ID</i></td><td>0x%1</td></tr>", v);
 	QString p = QString::number(_prodID, 16);
 	QString pname = _db->device(_vendorID, _prodID);
 	if (!pname.isEmpty())
-		p += "<td>(" + pname +")</td>";
+        p += QStringLiteral("<td>(") + pname +QStringLiteral(")</td>");
 	r += i18n("<tr><td><i>Product ID</i></td><td>0x%1</td></tr>", p);
 	r += ki18n("<tr><td><i>Revision</i></td><td>%1.%2</td></tr>")
 	.subs(_revMajor,0,16).subs(_revMinor,2,16,QChar::fromLatin1('0'))
@@ -209,7 +209,7 @@ QString USBDevice::dump() {
 		QStringList::const_iterator it = _devnodes.constBegin();
 		++it;
 		for (; it != _devnodes.constEnd(); ++it )
-		r += "<tr><td></td><td>" + *it + "</td></tr>";
+        r += QStringLiteral("<tr><td></td><td>") + *it + QStringLiteral("</td></tr>");
 	}
 #else
 	r += i18n("<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>", _maxPacketSize);
@@ -247,16 +247,16 @@ bool USBDevice::parse(const QString &fname) {
 	{
 		ssize_t count;
 		while ((count = ::read(fd, buffer, 256)) > 0)
-		result.append(QString(buffer).leftRef(count));
+        result.append(QString::fromLatin1(buffer).leftRef(count));
 
 		::close(fd);
 	}
 
 	// read in the device infos
-	USBDevice *device = 0;
+    USBDevice *device = nullptr;
 	int start=0, end;
     result.remove(QRegExp(QStringLiteral("^\n")));
-	while ((end = result.indexOf('\n', start)) > 0)
+    while ((end = result.indexOf(QLatin1Char('\n'), start)) > 0)
 	{
 		QString line = result.mid(start, end-start);
 
@@ -284,7 +284,7 @@ bool USBDevice::parseSys(const QString &dname) {
 		if (bus_reg.indexIn(*it) != -1)
 			bus = bus_reg.cap(1).toInt();
 
-		device->parseSysDir(bus, 0, 0, d.absolutePath() + '/' + *it);
+        device->parseSysDir(bus, 0, 0, d.absolutePath() + QLatin1Char('/') + *it);
 	}
 
 	return d.count();

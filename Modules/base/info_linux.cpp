@@ -54,7 +54,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 bool GetInfo_ReadfromFile(QTreeWidget* tree, const char *FileName, const QChar& splitChar) {
 	bool added = false;
-	QFile file(FileName);
+        QFile file(QString::fromLatin1(FileName));
 
 	if (!file.exists()) {
 		return false;
@@ -97,7 +97,7 @@ bool GetInfo_IRQ(QTreeWidget* tree) {
 }
 
 bool GetInfo_DMA(QTreeWidget* tree) {
-	QFile file(INFO_DMA);
+        QFile file(QString::fromLatin1(INFO_DMA));
 
 	QStringList headers;
 	headers << i18n("DMA-Channel") << i18n("Used By");
@@ -153,7 +153,7 @@ bool GetInfo_IO_Ports(QTreeWidget* tree) {
 	QStringList headers;
 	headers << i18n("I/O-Range") << i18n("Used By");
 	tree->setHeaderLabels(headers);
-	return GetInfo_ReadfromFile(tree, INFO_IOPORTS, ':');
+        return GetInfo_ReadfromFile(tree, INFO_IOPORTS, QLatin1Char(':'));
 }
 
 bool GetInfo_XServer_and_Video(QTreeWidget* tree) {
