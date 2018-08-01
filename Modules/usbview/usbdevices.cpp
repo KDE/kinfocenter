@@ -51,7 +51,7 @@ USBDevice::~USBDevice() {
 static QString catFile(const QString &fname) {
 	char buffer[256];
 	QString result;
-	int fd =:: open(QFile::encodeName(fname), O_RDONLY);
+        int fd =:: open(QFile::encodeName(fname).constData(), O_RDONLY);
 	if (fd<0)
 	return QString();
 
@@ -163,12 +163,12 @@ QString USBDevice::dump() {
 	QString c = QStringLiteral("<td>%1</td>").arg(_class);
 	QString cname = _db->cls(_class);
 	if (!cname.isEmpty())
-        c += QStringLiteral("<td>(") + i18n(cname.toLatin1()) +QStringLiteral(")</td>");
+        c += QStringLiteral("<td>(") + i18n(cname.toLatin1().constData()) +QStringLiteral(")</td>");
 	r += i18n("<tr><td><i>Class</i></td>%1</tr>", c);
 	QString sc = QStringLiteral("<td>%1</td>").arg(_sub);
 	QString scname = _db->subclass(_class, _sub);
 	if (!scname.isEmpty())
-        sc += QStringLiteral("<td>(") + i18n(scname.toLatin1()) +QStringLiteral(")</td>");
+        sc += QStringLiteral("<td>(") + i18n(scname.toLatin1().constData()) +QStringLiteral(")</td>");
 	r += i18n("<tr><td><i>Subclass</i></td>%1</tr>", sc);
 	QString pr = QStringLiteral("<td>%1</td>").arg(_prot);
 	QString prname = _db->protocol(_class, _sub, _prot);
@@ -239,7 +239,7 @@ bool USBDevice::parse(const QString &fname) {
 	// Note: we can't use a QTextStream, as the files in /proc
 	// are pseudo files with zero length
 	char buffer[256];
-	int fd =:: open(QFile::encodeName(fname), O_RDONLY);
+        int fd =:: open(QFile::encodeName(fname).constData(), O_RDONLY);
 	if (fd<0)
 	return false;
 

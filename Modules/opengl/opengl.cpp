@@ -966,7 +966,7 @@ bool GetInfo_OpenGL(QTreeWidget *treeWidget)
             return false;
         }
         l1->setText(0, i18n("Name of the Display"));
-        l1->setText(1, DisplayString(dpy));
+        l1->setText(1, QString::fromLatin1(DisplayString(dpy)));
         l1->setExpanded(true);
         l1->setFlags(Qt::ItemIsEnabled);
 
@@ -1004,7 +1004,7 @@ bool GetInfo_OpenGL(QTreeWidget *treeWidget)
     if (isWayland) {
         IsDirect = true;
         l1->setText(0, i18n("Name of the Display"));
-        l1->setText(1, qgetenv("WAYLAND_DISPLAY"));
+        l1->setText(1, QString::fromLatin1(qgetenv("WAYLAND_DISPLAY")));
         l1->setExpanded(true);
         l1->setFlags(Qt::ItemIsEnabled);
 #if KCM_HAVE_EGL
