@@ -96,8 +96,8 @@ KCMNic::KCMNic(QWidget *parent, const QVariantList &) :
 	QHBoxLayout *hbox=new QHBoxLayout();
 	box->addItem(hbox);
 	m_updateButton=new QPushButton(i18n("&Update"),this);
-	hbox->addWidget(m_updateButton);
 	hbox->addStretch(1);
+	hbox->addWidget(m_updateButton);
 	QTimer* timer=new QTimer(this);
 	timer->start(60000);
 	connect(m_updateButton, &QPushButton::clicked, this, &KCMNic::update);
