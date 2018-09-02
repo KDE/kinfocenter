@@ -21,6 +21,7 @@
 #include "Module.h"
 #include "ui_Module.h"
 
+#include <QClipboard>
 #include <QIcon>
 #include <QStandardPaths>
 
@@ -102,6 +103,10 @@ Module::Module(QWidget *parent, const QVariantList &args) :
     // We have no help so remove the button from the buttons.
     setButtons(buttons() ^ KCModule::Help ^ KCModule::Default ^ KCModule::Apply);
 
+    // Setup Copy to Clipboard button
+    connect(ui->pushButtonCopyInfo, &QPushButton::clicked, this, &Module::copyToClipboard);
+    ui->pushButtonCopyInfo->setShortcut(QKeySequence::Copy);
+
     // https://bugs.kde.org/show_bug.cgi?id=366158
     // When a KCM loads fast enough do a blocking load via the constructor.
     // Otherwise there is a notciable rendering gap where dummy/no data is
@@ -116,6 +121,7 @@ Module::~Module()
 
 void Module::load()
 {
+    labelsForClipboard.clear();
     loadSoftware();
     loadHardware();
 }
@@ -153,6 +159,10 @@ void Module::loadSoftware()
     const QString versionId = cg.readEntry("Version", os.versionId);
     ui->nameVersionLabel->setText(QStringLiteral("%1 %2").arg(distroName, versionId));
 
+    const auto dummyDistroDescriptionLabel = new QLabel(i18nc("@title:row", "Operating System:"), this);
+    dummyDistroDescriptionLabel->hide();
+    labelsForClipboard << qMakePair(dummyDistroDescriptionLabel, ui->nameVersionLabel);
+
     const QString variant = cg.readEntry("Variant", QString());
     if (variant.isEmpty()) {
         ui->variantLabel->hide();
@@ -175,11 +185,16 @@ void Module::loadSoftware()
         ui->plasmaLabel->hide();
     } else {
         ui->plasmaLabel->setText(plasma);
+        labelsForClipboard << qMakePair(ui->plasma, ui->plasmaLabel);
     }
 
-    ui->qtLabel->setText(QString::fromLatin1(qVersion()));
+    const QString qversion = QString::fromLatin1(qVersion());
+    ui->qtLabel->setText(qversion);
+    labelsForClipboard << qMakePair(ui->qt, ui->qtLabel);
 
-    ui->frameworksLabel->setText(KCoreAddons::versionString());
+    const QString frameworksVersion = KCoreAddons::versionString();
+    ui->frameworksLabel->setText(frameworksVersion);
+    labelsForClipboard << qMakePair(ui->frameworksLabelKey, ui->frameworksLabel);
 }
 
 void Module::loadHardware()
@@ -190,11 +205,14 @@ void Module::loadHardware()
         ui->kernelLabel->hide();
     } else {
         ui->kernelLabel->setText(QString::fromLatin1(utsName.release));
+        labelsForClipboard << qMakePair(ui->kernel, ui->kernelLabel);
     }
 
     const int bits = QT_POINTER_SIZE == 8 ? 64 : 32;
+    const QString bitsStr = QString::number(bits);
     ui->bitsLabel->setText(i18nc("@label %1 is the CPU bit width (e.g. 32 or 64)",
-                                 "%1-bit", QString::number(bits)));
+                                 "%1-bit", bitsStr));
+    labelsForClipboard << qMakePair(ui->bitsKey, ui->bitsLabel);
 
     const QList<Solid::Device> list = Solid::Device::listFromType(Solid::DeviceInterface::Processor);
     ui->processor->setText(i18np("Processor:", "Processors:", list.count()));
@@ -221,17 +239,39 @@ void Module::loadHardware()
         name = name.simplified();
         names.append(QStringLiteral("%1 × %2").arg(count).arg(name));
     }
-    ui->processorLabel->setText(names.join(QStringLiteral(", ")));
+
+    const QString processorLabel = names.join(QStringLiteral(", "));
+    ui->processorLabel->setText(processorLabel);
     if (ui->processorLabel->text().isEmpty()) {
         ui->processor->setHidden(true);
         ui->processorLabel->setHidden(true);
+    } else {
+        labelsForClipboard << qMakePair(ui->processor, ui->processorLabel);
     }
 
     const qlonglong totalRam = calculateTotalRam();
-    ui->memoryLabel->setText(totalRam > 0
+    const QString memoryLabel = totalRam > 0
                              ? i18nc("@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)",
                                      "%1 of RAM", KFormat().formatByteSize(totalRam))
-                             : i18nc("Unknown amount of RAM", "Unknown"));
+                             : i18nc("Unknown amount of RAM", "Unknown");
+    ui->memoryLabel->setText(memoryLabel);
+    labelsForClipboard << qMakePair(ui->memory, ui->memoryLabel);
+}
+
+void Module::copyToClipboard()
+{
+    QString text;
+    // note that this loop does not necessarily represent the same order as in the GUI
+    for (auto labelPair : qAsConst(labelsForClipboard)) {
+        const auto valueLabel = labelPair.second;
+        if (!valueLabel->isHidden()) {
+            const auto descriptionLabelText = labelPair.first->text();
+            const auto valueLabelText = valueLabel->text();
+            text += i18nc("%1 is a label already including a colon, %2 is the corresponding value", "%1 %2", descriptionLabelText, valueLabelText) + QStringLiteral("\n");
+        }
+    }
+
+    QGuiApplication::clipboard()->setText(text);
 }
 
 QString Module::plasmaVersion() const

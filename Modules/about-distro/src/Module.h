@@ -27,6 +27,8 @@ namespace Ui {
     class Module;
 }
 
+class QLabel;
+
 class Module : public KCModule
 {
     Q_OBJECT
@@ -62,6 +64,13 @@ public:
 private:
     void loadSoftware();
     void loadHardware();
+
+    /**
+     * Copies the software and hardware information to clipboard.
+     */
+    void copyToClipboard();
+
+    QVector<QPair<QLabel*, QLabel*> > labelsForClipboard;
 
     /**
      * UI
