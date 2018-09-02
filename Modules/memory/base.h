@@ -1,5 +1,5 @@
-#ifndef SETTINGS_H_
-#define SETTINGS_H_
+#ifndef BASE_H_
+#define BASE_H_
 
 #include <QColor>
 
@@ -45,4 +45,4 @@ enum { /* entries for memoryInfos[] */
 
 #define SPACING 16
 
-#endif /*SETTINGS_H_*/
+#endif /*BASE_H_*/

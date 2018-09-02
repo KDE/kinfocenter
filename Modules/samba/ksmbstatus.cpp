@@ -132,7 +132,7 @@ void NetMon::readFromProcess() {
 			len=sizeof(s)-1;
 		strncpy(s, start, len);
 		s[len] = '\0';
-		////qDebug() << "recived: "<<s;
+		////qDebug() << "received: "<<s;
 		if (readingpart==nfs)
 			processNFSLine(s, len);
 		else
