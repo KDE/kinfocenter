@@ -19,6 +19,7 @@
 
 import QtQuick 2.2
 import QtQuick.Controls 1.3
+import QtQuick.Controls 2.0 as QQC2
 import QtQuick.Layouts 1.1
 
 import org.kde.kquickcontrolsaddons 2.0
@@ -285,7 +286,7 @@ Item {
                     visible: history.count > 1
                 }
 
-                Label {
+                QQC2.Label {
                     Layout.fillWidth: true
                     Layout.minimumHeight: column.width / 3
                     Layout.maximumHeight: column.width / 3
@@ -365,7 +366,7 @@ Item {
                                     RowLayout {
                                         Layout.fillWidth: true
 
-                                        Label {
+                                        QQC2.Label {
                                             Layout.fillWidth: true
                                             elide: Text.ElideRight
                                             text: model.prettyName || model.name
@@ -439,7 +440,7 @@ Item {
                                 spacing: units.smallSpacing * 2
                                 visible: valueLabel.text !== ""
 
-                                Label {
+                                QQC2.Label {
                                     Layout.minimumWidth: detailsColumn.legendWidth + units.gridUnit
                                     horizontalAlignment: Text.AlignRight
                                     text: i18n("%1:", modelData.label)
@@ -452,7 +453,7 @@ Item {
                                     }
                                 }
 
-                                Label {
+                                QQC2.Label {
                                     id: valueLabel
                                     Layout.fillWidth: true
                                     text: {
