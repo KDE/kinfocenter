@@ -22,6 +22,7 @@
 
 import QtQuick 2.4
 import QtQuick.Controls 1.3
+import QtQuick.Controls 2.0 as QQC2
 import QtQuick.Layouts 1.1
 
 import org.kde.baloo.experimental 0.1 as Baloo
@@ -42,12 +43,12 @@ Item {
         spacing: 20
         visible: monitor.balooRunning
 
-        Label {
+        QQC2.Label {
             id: indexerState
             text: i18n("Indexer State: %1", monitor.stateString)
         }
 
-        Label {
+        QQC2.Label {
             id: filePath
 
             // Required so that text elides instead of expanding the entire layout
@@ -86,7 +87,7 @@ Item {
             }
         }
 
-        Label {
+        QQC2.Label {
             visible: monitor.state == Constants.State.ContentIndexing
             id: remainingTime
             text: i18n("Remaining Time: %1", monitor.remainingTime)
@@ -100,7 +101,7 @@ Item {
 
         spacing: 20
 
-        Label {
+        QQC2.Label {
             Layout.fillWidth: true
             horizontalAlignment: Text.AlignHCenter
             text: i18n("File Indexer not running")
