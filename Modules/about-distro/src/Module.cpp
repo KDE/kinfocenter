@@ -178,7 +178,7 @@ void Module::loadSoftware()
     }
 
     // Since Plasma version detection isn't based on a library query it can fail
-    // in weird cases; instead of admiting defeat we simply hide everything :P
+    // in weird cases; instead of admitting defeat we simply hide everything :P
     const QString plasma = plasmaVersion();
     if (plasma.isEmpty()) {
         ui->plasma->hide();
@@ -188,13 +188,13 @@ void Module::loadSoftware()
         labelsForClipboard << qMakePair(ui->plasma, ui->plasmaLabel);
     }
 
-    const QString qversion = QString::fromLatin1(qVersion());
-    ui->qtLabel->setText(qversion);
-    labelsForClipboard << qMakePair(ui->qt, ui->qtLabel);
-
     const QString frameworksVersion = KCoreAddons::versionString();
     ui->frameworksLabel->setText(frameworksVersion);
     labelsForClipboard << qMakePair(ui->frameworksLabelKey, ui->frameworksLabel);
+
+    const QString qversion = QString::fromLatin1(qVersion());
+    ui->qtLabel->setText(qversion);
+    labelsForClipboard << qMakePair(ui->qt, ui->qtLabel);
 }
 
 void Module::loadHardware()
