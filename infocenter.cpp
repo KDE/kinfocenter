@@ -83,6 +83,7 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
     m_toolTips = new ToolTipManager(m_sideMenu);
     setupGUI(QSize(640,480), ToolBar | Keys | Save | Create, QStringLiteral("kinfocenterui.rc"));
 
+    delete m_helpAction->menu();
     m_helpAction->setMenu( dynamic_cast<QMenu*>( factory()->container(QStringLiteral("help"), this) ) );
     menuBar()->hide();
 
