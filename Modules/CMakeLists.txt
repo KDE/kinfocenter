@@ -44,7 +44,20 @@ set_package_properties(PCIUTILS PROPERTIES DESCRIPTION "PciUtils is a library fo
                        PURPOSE "View PCI details in kinfocenter."
                       )
 
-if(NOT APPLE AND NOT ${CMAKE_SYSTEM_PROCESSOR} MATCHES "arm" AND NOT ${CMAKE_SYSTEM_PROCESSOR} MATCHES "aarch64")
+# PCI module doesn't work on Linux arm64, nor on MacOS, but does on
+# FreeBSD arm64, so this is a bit of a tangle of what-is-supported.
+set(_want_pci ON)
+if(APPLE) 
+    set(_want_pci OFF)
+elseif(${CMAKE_SYSTEM_PROCESSOR} MATCHES "arm" OR ${CMAKE_SYSTEM_PROCESSOR} MATCHES "aarch64")
+    if (${CMAKE_SYSTEM} MATCHES "FreeBSD")
+        message(STATUS "FreeBSD arm64 pci support enabled.")
+    else()
+        set(_want_pci OFF)
+    endif()
+endif()
+
+if(_want_pci)
     add_subdirectory( pci )
 endif()
 endif()
