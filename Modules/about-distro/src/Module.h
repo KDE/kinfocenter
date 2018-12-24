@@ -69,8 +69,10 @@ private:
      * Copies the software and hardware information to clipboard.
      */
     void copyToClipboard();
+    void copyToClipboardInEnglish();
 
     QVector<QPair<QLabel*, QLabel*> > labelsForClipboard;
+    QString englishTextForClipboard;
 
     /**
      * UI

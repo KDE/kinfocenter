@@ -367,6 +367,20 @@
       </widget>
      </item>
      <item row="0" column="1">
+         <widget class="QPushButton" name="pushButtonCopyInfoInEnglish">
+             <property name="toolTip">
+                 <string>Copy software and hardware information to clipboard in English</string>
+             </property>
+             <property name="text">
+                 <string>Copy to Clipboard in English</string>
+             </property>
+             <property name="icon">
+                 <iconset theme="edit-copy">
+                     <normaloff>.</normaloff>.</iconset>
+             </property>
+         </widget>
+     </item>
+     <item row="0" column="2">
       <spacer name="horizontalSpacer_2">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>

@@ -23,6 +23,7 @@
 
 #include <QClipboard>
 #include <QIcon>
+#include <QLocale>
 #include <QStandardPaths>
 
 #include <KAboutData>
@@ -105,6 +106,10 @@ Module::Module(QWidget *parent, const QVariantList &args) :
 
     // Setup Copy to Clipboard button
     connect(ui->pushButtonCopyInfo, &QPushButton::clicked, this, &Module::copyToClipboard);
+    connect(ui->pushButtonCopyInfoInEnglish, &QPushButton::clicked, this, &Module::copyToClipboardInEnglish);
+    if (QLocale::system().language() == QLocale::English) {
+        ui->pushButtonCopyInfoInEnglish->hide();
+    }
     ui->pushButtonCopyInfo->setShortcut(QKeySequence::Copy);
 
     // https://bugs.kde.org/show_bug.cgi?id=366158
@@ -122,6 +127,7 @@ Module::~Module()
 void Module::load()
 {
     labelsForClipboard.clear();
+    englishTextForClipboard = QStringLiteral("");
     loadSoftware();
     loadHardware();
 }
@@ -157,11 +163,13 @@ void Module::loadSoftware()
     // as a product brand is different from Kubuntu.
     const QString distroName = cg.readEntry("Name", os.name);
     const QString versionId = cg.readEntry("Version", os.versionId);
-    ui->nameVersionLabel->setText(QStringLiteral("%1 %2").arg(distroName, versionId));
+    const QString distroNameVersion = QStringLiteral("%1 %2").arg(distroName, versionId);
+    ui->nameVersionLabel->setText(distroNameVersion);
 
     const auto dummyDistroDescriptionLabel = new QLabel(i18nc("@title:row", "Operating System:"), this);
     dummyDistroDescriptionLabel->hide();
     labelsForClipboard << qMakePair(dummyDistroDescriptionLabel, ui->nameVersionLabel);
+    englishTextForClipboard += QStringLiteral("Operating System: %1\n").arg(distroNameVersion);
 
     const QString variant = cg.readEntry("Variant", QString());
     if (variant.isEmpty()) {
@@ -186,15 +194,18 @@ void Module::loadSoftware()
     } else {
         ui->plasmaLabel->setText(plasma);
         labelsForClipboard << qMakePair(ui->plasma, ui->plasmaLabel);
+        englishTextForClipboard += QStringLiteral("KDE Plasma Version: %1\n").arg(plasma);
     }
 
     const QString frameworksVersion = KCoreAddons::versionString();
     ui->frameworksLabel->setText(frameworksVersion);
     labelsForClipboard << qMakePair(ui->frameworksLabelKey, ui->frameworksLabel);
+    englishTextForClipboard += QStringLiteral("KDE Frameworks Version: %1\n").arg(frameworksVersion);
 
     const QString qversion = QString::fromLatin1(qVersion());
     ui->qtLabel->setText(qversion);
     labelsForClipboard << qMakePair(ui->qt, ui->qtLabel);
+    englishTextForClipboard += QStringLiteral("Qt Version: %1\n").arg(qversion);
 }
 
 void Module::loadHardware()
@@ -204,8 +215,10 @@ void Module::loadHardware()
         ui->kernel->hide();
         ui->kernelLabel->hide();
     } else {
-        ui->kernelLabel->setText(QString::fromLatin1(utsName.release));
+        QString kernelVersion = QString::fromLatin1(utsName.release);
+        ui->kernelLabel->setText(kernelVersion);
         labelsForClipboard << qMakePair(ui->kernel, ui->kernelLabel);
+        englishTextForClipboard += QStringLiteral("Kernel Version: %1\n").arg(kernelVersion);
     }
 
     const int bits = QT_POINTER_SIZE == 8 ? 64 : 32;
@@ -213,6 +226,7 @@ void Module::loadHardware()
     ui->bitsLabel->setText(i18nc("@label %1 is the CPU bit width (e.g. 32 or 64)",
                                  "%1-bit", bitsStr));
     labelsForClipboard << qMakePair(ui->bitsKey, ui->bitsLabel);
+    englishTextForClipboard += QStringLiteral("OS Type: %1-bit\n").arg(bitsStr);
 
     const QList<Solid::Device> list = Solid::Device::listFromType(Solid::DeviceInterface::Processor);
     ui->processor->setText(i18np("Processor:", "Processors:", list.count()));
@@ -247,6 +261,7 @@ void Module::loadHardware()
         ui->processorLabel->setHidden(true);
     } else {
         labelsForClipboard << qMakePair(ui->processor, ui->processorLabel);
+        englishTextForClipboard += QStringLiteral("Processors: %1\n").arg(processorLabel);
     }
 
     const qlonglong totalRam = calculateTotalRam();
@@ -256,6 +271,7 @@ void Module::loadHardware()
                              : i18nc("Unknown amount of RAM", "Unknown");
     ui->memoryLabel->setText(memoryLabel);
     labelsForClipboard << qMakePair(ui->memory, ui->memoryLabel);
+    englishTextForClipboard += QStringLiteral("Memory: %1\n").arg(KFormat().formatByteSize(totalRam));
 }
 
 void Module::copyToClipboard()
@@ -272,6 +288,11 @@ void Module::copyToClipboard()
     }
 
     QGuiApplication::clipboard()->setText(text);
+}
+
+void Module::copyToClipboardInEnglish()
+{
+    QGuiApplication::clipboard()->setText(englishTextForClipboard);
 }
 
 QString Module::plasmaVersion() const
