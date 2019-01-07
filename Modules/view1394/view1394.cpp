@@ -239,17 +239,17 @@ void View1394::rescanBus() {
 				QString speedStr;
 				switch (speed) {
 				case (3):
-					speedStr=QLatin1String("800");
+					speedStr=QStringLiteral("800");
 					break;
 				case (2):
-					speedStr=QLatin1String("400");
+					speedStr=QStringLiteral("400");
 					break;
 				case (1):
-					speedStr=QLatin1String("200");
+					speedStr=QStringLiteral("200");
 					break;
 				case (0):
 				default:
-					speedStr=QLatin1String("100");
+					speedStr=QStringLiteral("100");
 					break;
 				}
 				

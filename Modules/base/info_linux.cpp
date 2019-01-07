@@ -97,7 +97,7 @@ bool GetInfo_IRQ(QTreeWidget* tree) {
 }
 
 bool GetInfo_DMA(QTreeWidget* tree) {
-        QFile file(QString::fromLatin1(INFO_DMA));
+        QFile file(QLatin1String(INFO_DMA));
 
 	QStringList headers;
 	headers << i18n("DMA-Channel") << i18n("Used By");
