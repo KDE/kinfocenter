@@ -124,7 +124,7 @@ QTreeWidgetItem *newItem(QTreeWidgetItem *parent, QTreeWidgetItem *preceding, co
     return newItem;
 }
 
-QTreeWidgetItem *newItem(QTreeWidgetItem *parent, QString textCol1, QString textCol2 = QString()) {
+QTreeWidgetItem *newItem(QTreeWidgetItem *parent, const QString &textCol1, const QString &textCol2 = QString()) {
     return newItem(parent, NULL, textCol1, textCol2);
 }
 
