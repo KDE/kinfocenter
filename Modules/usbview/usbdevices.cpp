@@ -103,7 +103,7 @@ void USBDevice::parseSysDir(int bus, int parent, int level, const QString& dname
 			continue;
 
 		USBDevice* dev = new USBDevice();
-        dev->parseSysDir(bus, ++level, _device, dname + QLatin1Char('/') + *it);
+        dev->parseSysDir(bus, _device, ++level, dname + QLatin1Char('/') + *it);
 	}
 }
 

@@ -21,6 +21,9 @@
 USBDB::USBDB() {
 	QString db = QStringLiteral("/usr/share/hwdata/usb.ids"); /* on Fedora and Arch*/
 	if (!QFile::exists(db)) {
+		db = QStringLiteral("/usr/share/misc/usb.ids"); /* on Gentoo */
+	}
+	if (!QFile::exists(db)) {
                 //cannot use locate(AppDataLocation) as the app is kinfocenter
 		db = QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("kcmusb"), QStandardPaths::LocateDirectory);
                 if (!db.isEmpty())
