@@ -148,11 +148,15 @@ void Module::loadSoftware()
                                                           KConfig::NoGlobals);
     KConfigGroup cg = KConfigGroup(config, "General");
 
-    const QString logoPath = cg.readEntry("LogoPath", QStringLiteral("start-here-kde"));
+    OSRelease os;
+
+    QString logoPath = cg.readEntry("LogoPath", os.logo);
+    if (logoPath.isEmpty()) {
+        logoPath = QStringLiteral("start-here-kde");
+    }
     const QPixmap logo = QIcon::fromTheme(logoPath).pixmap(128, 128);
     ui->logoLabel->setPixmap(logo);
 
-    OSRelease os;
     // We allow overriding of the OS name for branding purposes.
     // For example OS Ubuntu may be rebranded as Kubuntu. Also Kubuntu Active
     // as a product brand is different from Kubuntu.
