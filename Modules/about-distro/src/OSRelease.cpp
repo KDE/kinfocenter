@@ -1,5 +1,5 @@
 /*
-  Copyright (C) 2014 Harald Sitter <apachelogger@ubuntu.com>
+  Copyright (C) 2014-2019 Harald Sitter <sitter@kde.org>
 
   This program is free software; you can redistribute it and/or
   modify it under the terms of the GNU General Public License as
@@ -23,7 +23,6 @@
 #include <QDebug>
 #include <QFile>
 
-#include <KLocalizedString>
 #include <KShell>
 
 static void setVar(QString *var, const QString &value) 
@@ -61,25 +60,39 @@ static void setVar(QStringList *var, const QString &value)
     *var = args;
 }
 
-OSRelease::OSRelease()
+OSRelease::OSRelease(const QString &filePath)
 {
     // Set default values for non-optional fields.
     name = QStringLiteral("Linux");
     id = QStringLiteral("linux");
     prettyName = QStringLiteral("Linux");
 
-    QString fileName;
-
-    if (QFile::exists(QStringLiteral("/etc/os-release"))) {
-        fileName = QStringLiteral("/etc/os-release");
-    } else if (QFile::exists(QStringLiteral("/usr/lib/os-release"))) {
-        fileName = QStringLiteral("/usr/lib/os-release");
-    } else {
+    if (filePath.isEmpty()) {
         return;
     }
 
+    QHash<QString, QString *> stringHash = {
+        { QStringLiteral("NAME"), &name },
+        { QStringLiteral("VERSION"), &version },
+        { QStringLiteral("ID"), &id },
+        // idLike is not a QString, special handling below!
+        { QStringLiteral("VERSION_CODENAME"), &versionCodename },
+        { QStringLiteral("VERSION_ID"), &versionId },
+        { QStringLiteral("PRETTY_NAME"), &prettyName },
+        { QStringLiteral("ANSI_COLOR"), &ansiColor },
+        { QStringLiteral("CPE_NAME"), &cpeName },
+        { QStringLiteral("HOME_URL"), &homeUrl },
+        { QStringLiteral("DOCUMENTATION_URL"), &documentationUrl },
+        { QStringLiteral("SUPPORT_URL"), &supportUrl },
+        { QStringLiteral("BUG_REPORT_URL"), &bugReportUrl },
+        { QStringLiteral("PRIVACY_POLICY_URL"), &privacyPolicyUrl },
+        { QStringLiteral("BUILD_ID"), &buildId },
+        { QStringLiteral("VARIANT"), &variant },
+        { QStringLiteral("VARIANT_ID"), &variantId },
+        { QStringLiteral("LOGO"), &logo }
+    };
 
-    QFile file(fileName);
+    QFile file(filePath);
     // NOTE: The os-release specification defines default values for specific
     //       fields which means that even if we can not read the os-release file
     //       we have sort of expected default values to use.
@@ -105,31 +118,28 @@ OSRelease::OSRelease()
 
         QString key = comps.at(0);
         QString value = comps.at(1).trimmed();
-        if (key == QLatin1String("NAME"))
-            setVar(&name, value);
-        else if (key == QLatin1String("VERSION"))
-            setVar(&version, value);
-        else if (key == QLatin1String("ID"))
-            setVar(&id, value);
-        else if (key == QLatin1String("ID_LIKE"))
+
+        if (QString *var = stringHash.value(key, nullptr)) {
+            setVar(var, value);
+        }
+
+        // ID_LIKE is a list and parsed as such (rather than a QString).
+        if (key == QLatin1String("ID_LIKE")) {
             setVar(&idLike, value);
-        else if (key == QLatin1String("VERSION_ID"))
-            setVar(&versionId, value);
-        else if (key == QLatin1String("PRETTY_NAME"))
-            setVar(&prettyName, value);
-        else if (key == QLatin1String("ANSI_COLOR"))
-            setVar(&ansiColor, value);
-        else if (key == QLatin1String("CPE_NAME"))
-            setVar(&cpeName, value);
-        else if (key == QLatin1String("HOME_URL"))
-            setVar(&homeUrl, value);
-        else if (key == QLatin1String("SUPPORT_URL"))
-            setVar(&supportUrl, value);
-        else if (key == QLatin1String("BUG_REPORT_URL"))
-            setVar(&bugReportUrl, value);
-        else if (key == QLatin1String("BUILD_ID"))
-            setVar(&buildId, value);
+        }
+
         // os-release explicitly allows for vendor specific aditions. We have no
         // interest in those right now.
+    }
+}
+
+QString OSRelease::defaultFilePath()
+{
+    if (QFile::exists(QStringLiteral("/etc/os-release"))) {
+        return QStringLiteral("/etc/os-release");
+    } else if (QFile::exists(QStringLiteral("/usr/lib/os-release"))) {
+        return QStringLiteral("/usr/lib/os-release");
+    } else {
+        return QString();
     }
 }

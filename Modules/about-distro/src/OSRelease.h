@@ -1,5 +1,5 @@
 /*
-  Copyright (C) 2014 Harald Sitter <apachelogger@ubuntu.com>
+  Copyright (C) 2014-2019 Harald Sitter <sitter@kde.org>
 
   This program is free software; you can redistribute it and/or
   modify it under the terms of the GNU General Public License as
@@ -27,21 +27,30 @@
 class OSRelease
 {
 public:
-    OSRelease();
+    OSRelease(const QString &filePath = defaultFilePath());
+
+    static QString defaultFilePath();
 
     QString name;
     QString version;
     QString id;
     QStringList idLike;
+    QString versionCodename;
     QString versionId;
     QString prettyName;
     QString ansiColor;
     QString cpeName;
     // TODO: url struct or map?
     QString homeUrl;
+    QString documentationUrl;
     QString supportUrl;
     QString bugReportUrl;
+    QString privacyPolicyUrl;
+
     QString buildId;
+    QString variant;
+    QString variantId;
+    QString logo;
 };
 
 #endif // OSRELEASE_H
