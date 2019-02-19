@@ -148,13 +148,8 @@ void Module::loadSoftware()
                                                           KConfig::NoGlobals);
     KConfigGroup cg = KConfigGroup(config, "General");
 
-    const QString logoPath = cg.readEntry("LogoPath", QString());
-    QPixmap logo;
-    if (logoPath.isEmpty()) {
-        logo = QIcon::fromTheme(QStringLiteral("start-here-kde")).pixmap(128, 128);
-    } else {
-        logo = QPixmap(logoPath);
-    }
+    const QString logoPath = cg.readEntry("LogoPath", QStringLiteral("start-here-kde"));
+    const QPixmap logo = QIcon::fromTheme(logoPath).pixmap(128, 128);
     ui->logoLabel->setPixmap(logo);
 
     OSRelease os;
