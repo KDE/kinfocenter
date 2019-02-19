@@ -166,7 +166,7 @@ void Module::loadSoftware()
     labelsForClipboard << qMakePair(dummyDistroDescriptionLabel, ui->nameVersionLabel);
     englishTextForClipboard += QStringLiteral("Operating System: %1\n").arg(distroNameVersion);
 
-    const QString variant = cg.readEntry("Variant", QString());
+    const QString variant = cg.readEntry("Variant", os.variant);
     if (variant.isEmpty()) {
         ui->variantLabel->hide();
     } else {
