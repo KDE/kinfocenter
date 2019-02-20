@@ -219,7 +219,7 @@ void KInfoCenter::setKcm(const KcmTreeItem *kcmItem)
 
 void KInfoCenter::setButtons(const KCModule::Buttons buttons)
 {
-    if (buttons & KCModule::Help) {
+    if (buttons & KCModule::Help && !m_contain->helpPath().isEmpty()) {
         m_moduleHelpAction->setEnabled(true);
     }
 }
