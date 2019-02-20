@@ -200,20 +200,21 @@ void KInfoCenter::clearSearchLine()
 
 void KInfoCenter::itemClickedSlot(const KcmTreeItem *item)
 {
-	resetCondition();
-	if(item->type() != KcmTreeItem::CATEGORY) {
-        setKcm(item);
+    if (item != m_kcmItem) {
+        resetCondition();
+        if(item->type() != KcmTreeItem::CATEGORY) {
+            setKcm(item);
+        }
     }
+    m_kcmItem = item;
 }
 
 void KInfoCenter::setKcm(const KcmTreeItem *kcmItem)
 {
-    if (m_contain->fileName() != kcmItem->kcm().fileName()) {
-        m_contain->setKcm(kcmItem->kcm());
+    m_contain->setKcm(kcmItem->kcm());
 
-        setButtons(m_contain->buttons());
-        m_aboutKcm->setEnabled(true);
-    }
+    setButtons(m_contain->buttons());
+    m_aboutKcm->setEnabled(true);
 }
 
 void KInfoCenter::setButtons(const KCModule::Buttons buttons)
