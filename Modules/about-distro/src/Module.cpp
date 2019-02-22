@@ -161,7 +161,10 @@ void Module::loadSoftware()
     // For example OS Ubuntu may be rebranded as Kubuntu. Also Kubuntu Active
     // as a product brand is different from Kubuntu.
     const QString distroName = cg.readEntry("Name", os.name);
-    const QString versionId = cg.readEntry("Version", os.versionId);
+    const QString osrVersion = cg.readEntry("UseOSReleaseVersion", false)
+            ? os.version
+            : os.versionId;
+    const QString versionId = cg.readEntry("Version", osrVersion);
     const QString distroNameVersion = QStringLiteral("%1 %2").arg(distroName, versionId);
     ui->nameVersionLabel->setText(distroNameVersion);
 
