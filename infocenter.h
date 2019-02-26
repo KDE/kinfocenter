@@ -141,6 +141,7 @@ class KInfoCenter : public KXmlGuiWindow
 
         void clearSearchLine();
 
+        const KcmTreeItem *m_kcmItem = nullptr;
         KcmContainer *m_contain = nullptr;
         QSplitter *m_splitter = nullptr;
 
