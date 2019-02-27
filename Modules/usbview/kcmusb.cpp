@@ -36,7 +36,7 @@ USBViewer::USBViewer(QWidget *parent, const QVariantList &) :
 		" the devices attached to your USB bus(es)."));
 
 	QHBoxLayout *mainLayout = new QHBoxLayout(this);
-	mainLayout->setMargin(0);
+	mainLayout->setContentsMargins(0, 0, 0, 0);
 	mainLayout->setSpacing(0);
 
 	QSplitter *splitter = new QSplitter(this);

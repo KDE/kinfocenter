@@ -86,7 +86,7 @@ QList<MyNIC*> findNICs();
 KCMNic::KCMNic(QWidget *parent, const QVariantList &) :
 	KCModule(parent) {
 	QVBoxLayout *box=new QVBoxLayout(this);
-	box->setMargin(0);
+	box->setContentsMargins(0, 0, 0, 0);
 	m_list=new QTreeWidget(this);
 	m_list->setRootIsDecorated(false);
 	box->addWidget(m_list);

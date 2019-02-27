@@ -78,7 +78,7 @@ View1394::View1394(QWidget *parent, const QVariantList &) :
 
 	m_ouiDb=new OuiDb();
 	QVBoxLayout *box=new QVBoxLayout(this);
-	box->setMargin(0);
+	box->setContentsMargins(0, 0, 0, 0);
 	m_view=new View1394Widget(this);
 	/*
 	for (int i=2; i<8; i++)
@@ -87,7 +87,7 @@ View1394::View1394(QWidget *parent, const QVariantList &) :
 	m_view->m_listview->setColumnAlignment(9, Qt::AlignRight);
 	*/
 	box->addWidget(m_view);
-	m_view->layout()->setMargin(0);
+	m_view->layout()->setContentsMargins(0, 0, 0, 0);
 	connect(m_view->m_busResetPb, &QPushButton::clicked, this, &View1394::generateBusReset);
 	connect(&m_rescanTimer, &QTimer::timeout, this, &View1394::rescanBus);
 	rescanBus();

@@ -52,7 +52,7 @@ K_PLUGIN_FACTORY(SambaFactory,
 SambaContainer::SambaContainer(QWidget *parent, const QVariantList&) :
 	KCModule(parent), config(QStringLiteral("kcmsambarc")), tabs(this), status(&tabs, &config), imports(&tabs, &config), logView(&tabs, &config), statisticsView(&tabs, &config) {
 	QVBoxLayout *layout = new QVBoxLayout( this );
-	layout->setMargin(0);
+	layout->setContentsMargins(0, 0, 0, 0);
 	layout->setSpacing(0);
 	layout->addWidget(&tabs);
 	tabs.addTab(&status, i18n("&Exports"));

@@ -74,7 +74,7 @@ KCMMemory::KCMMemory(QWidget *parent, const QVariantList &) :
 	setButtons(Help);
 
 	QVBoxLayout *top = new QVBoxLayout(this);
-	top->setMargin(0);
+	top->setContentsMargins(0, 0, 0, 0);
 	top->setSpacing(1);
 
 	QGroupBox* informationGroup = initializeText();

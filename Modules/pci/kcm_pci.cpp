@@ -52,7 +52,7 @@ KCMPci::KCMPci(QWidget *parent, const QVariantList &) :
 	
 	QHBoxLayout* layout = new QHBoxLayout(this);
 	layout->setSpacing(0);
-	layout->setMargin(0);
+	layout->setContentsMargins(0, 0, 0, 0);
 	
 	tree = new QTreeWidget(this);
 	layout->addWidget(tree);
