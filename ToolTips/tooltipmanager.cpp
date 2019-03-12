@@ -31,8 +31,19 @@
 #include <QAbstractItemView>
 
 #include <QIcon>
+#include <KIconLoader>
 #include <KColorScheme>
 #include <KToolTipWidget>
+
+class IconLoaderSingleton
+{
+public:
+    IconLoaderSingleton() = default;
+
+    KIconLoader self;
+};
+
+Q_GLOBAL_STATIC(IconLoaderSingleton, privateIconLoaderSelf)
 
 class ToolTipManager::Private
 {
@@ -173,7 +184,15 @@ QLayout * ToolTipManager::generateToolTipLine( const QModelIndex & item, QWidget
     textLabel->setText( text );
     
     // Get icon
-    QIcon icon( menuItem->icon() );
+    QPalette pal = textLabel->palette();
+    for (auto state : { QPalette::Active, QPalette::Inactive, QPalette::Disabled }) {
+        pal.setBrush(state, QPalette::WindowText, pal.toolTipText());
+        pal.setBrush(state, QPalette::Window, pal.toolTipBase());
+    }
+
+    privateIconLoaderSelf->self.setCustomPalette(pal);
+
+    QIcon icon = KDE::icon(menuItem->iconName(), &privateIconLoaderSelf->self);
     QLabel * iconLabel = new QLabel( toolTip );
     iconLabel->setPixmap( icon.pixmap(iconSize) );
     iconLabel->setMaximumSize( iconSize );

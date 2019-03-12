@@ -164,7 +164,7 @@ QVariant InfoKcmModel::data(const QModelIndex &index, int role) const
     case Qt::UserRole:
         return item->weight();
     case Qt::DecorationRole:
-        return item->icon();
+        return QIcon::fromTheme(item->iconName());
     default:
         return QVariant();
     }

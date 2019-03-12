@@ -65,13 +65,13 @@ int KcmCategoryItem::weight() const
     return (category().count() + 1000);
 }
 
-QIcon KcmCategoryItem::icon() const
+QString KcmCategoryItem::iconName() const
 {
     if(m_category.isEmpty())
     {
-        return QIcon::fromTheme(m_moduleInfo->icon());
+        return m_moduleInfo->icon();
     }
-    return QIcon();
+    return QString();
 }
 
 QString KcmCategoryItem::whatsThis() const

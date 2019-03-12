@@ -135,7 +135,7 @@ class KcmTreeItem
         /**
         * Get icon tied to KCM
         */
-        virtual QIcon icon() const;
+        virtual QString iconName() const;
 
         /**
         * Get whatsThis information from KCM

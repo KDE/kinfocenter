@@ -77,7 +77,7 @@ class KcmCategoryItem : public KcmTreeItem
         /**
         * Get icon tied to KCM
         */
-        QIcon icon() const override;
+        QString iconName() const override;
 
         /**
         * Get whatsThis information from KCM
