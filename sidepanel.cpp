@@ -49,15 +49,12 @@ SidePanel::SidePanel(QWidget *parent)
     setModel(m_proxyModel);
     // Mind that activated does not include clicked when the system is in
     // double-click mode https://bugs.kde.org/show_bug.cgi?id=405373
-    connect(this,&QAbstractItemView::clicked,this,&SidePanel::clickedSlot);
-    connect(this,&QAbstractItemView::activated,this,&SidePanel::clickedSlot);
+    connect(this, &QAbstractItemView::clicked, this, &SidePanel::clickedSlot);
+    connect(this, &QAbstractItemView::activated, this, &SidePanel::clickedSlot);
 }
 
 SidePanel::~SidePanel()
 {
-    disconnect(this,&QAbstractItemView::activated,this,&SidePanel::clickedSlot);
-    disconnect(this,&QAbstractItemView::clicked,this,&SidePanel::clickedSlot);
-
     delete m_proxyModel;
     delete m_model;
 }
