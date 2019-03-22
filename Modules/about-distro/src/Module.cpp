@@ -150,7 +150,7 @@ void Module::loadSoftware()
 
     OSRelease os;
 
-    QString logoPath = cg.readEntry("LogoPath", os.logo);
+    QString logoPath = cg.readEntry("LogoPath", os.logo());
     if (logoPath.isEmpty()) {
         logoPath = QStringLiteral("start-here-kde");
     }
@@ -160,10 +160,10 @@ void Module::loadSoftware()
     // We allow overriding of the OS name for branding purposes.
     // For example OS Ubuntu may be rebranded as Kubuntu. Also Kubuntu Active
     // as a product brand is different from Kubuntu.
-    const QString distroName = cg.readEntry("Name", os.name);
+    const QString distroName = cg.readEntry("Name", os.name());
     const QString osrVersion = cg.readEntry("UseOSReleaseVersion", false)
-            ? os.version
-            : os.versionId;
+            ? os.version()
+            : os.versionId();
     const QString versionId = cg.readEntry("Version", osrVersion);
     const QString distroNameVersion = QStringLiteral("%1 %2").arg(distroName, versionId);
     ui->nameVersionLabel->setText(distroNameVersion);
@@ -173,14 +173,14 @@ void Module::loadSoftware()
     labelsForClipboard << qMakePair(dummyDistroDescriptionLabel, ui->nameVersionLabel);
     englishTextForClipboard += QStringLiteral("Operating System: %1\n").arg(distroNameVersion);
 
-    const QString variant = cg.readEntry("Variant", os.variant);
+    const QString variant = cg.readEntry("Variant", os.variant());
     if (variant.isEmpty()) {
         ui->variantLabel->hide();
     } else {
         ui->variantLabel->setText(variant);
     }
 
-    const QString url = cg.readEntry("Website", os.homeUrl);
+    const QString url = cg.readEntry("Website", os.homeUrl());
     if (url.isEmpty()) {
         ui->urlLabel->hide();
     } else {

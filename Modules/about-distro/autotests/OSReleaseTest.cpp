@@ -31,24 +31,24 @@ private Q_SLOTS:
     void testParse()
     {
         auto r = OSRelease(QFINDTESTDATA("data/os-release"));
-        QCOMPARE(r.name, "Name");
-        QCOMPARE(r.version, "100.5");
-        QCOMPARE(r.id, "theid");
-        QCOMPARE(r.idLike, QStringList({"otherid", "otherotherid"}));
-        QCOMPARE(r.versionCodename, "versioncodename");
-        QCOMPARE(r.versionId, "500.1");
-        QCOMPARE(r.prettyName, "Pretty Name");
-        QCOMPARE(r.ansiColor, "1;34");
-        QCOMPARE(r.cpeName, "cpe:/o:foo:bar:100");
-        QCOMPARE(r.homeUrl, "https://url.home");
-        QCOMPARE(r.documentationUrl, "https://url.docs");
-        QCOMPARE(r.supportUrl, "https://url.support");
-        QCOMPARE(r.bugReportUrl, "https://url.bugs");
-        QCOMPARE(r.privacyPolicyUrl, "https://url.privacy");
-        QCOMPARE(r.buildId, "105.5");
-        QCOMPARE(r.variant, "Test Edition");
-        QCOMPARE(r.variantId, "test");
-        QCOMPARE(r.logo, "start-here-test");
+        QCOMPARE(r.name(), "Name");
+        QCOMPARE(r.version(), "100.5");
+        QCOMPARE(r.id(), "theid");
+        QCOMPARE(r.idLike(), QStringList({"otherid", "otherotherid"}));
+        QCOMPARE(r.versionCodename(), "versioncodename");
+        QCOMPARE(r.versionId(), "500.1");
+        QCOMPARE(r.prettyName(), "Pretty Name");
+        QCOMPARE(r.ansiColor(), "1;34");
+        QCOMPARE(r.cpeName(), "cpe:/o:foo:bar:100");
+        QCOMPARE(r.homeUrl(), "https://url.home");
+        QCOMPARE(r.documentationUrl(), "https://url.docs");
+        QCOMPARE(r.supportUrl(), "https://url.support");
+        QCOMPARE(r.bugReportUrl(), "https://url.bugs");
+        QCOMPARE(r.privacyPolicyUrl(), "https://url.privacy");
+        QCOMPARE(r.buildId(), "105.5");
+        QCOMPARE(r.variant(), "Test Edition");
+        QCOMPARE(r.variantId(), "test");
+        QCOMPARE(r.logo(), "start-here-test");
     }
 };
 
