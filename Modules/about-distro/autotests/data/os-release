@@ -13,6 +13,9 @@ SUPPORT_URL="https://url.support"
 BUG_REPORT_URL="https://url.bugs"
 PRIVACY_POLICY_URL="https://url.privacy"
 BUILD_ID="105.5"
+# comment
 VARIANT="Test Edition"
 VARIANT_ID=test
+   # indented comment
 LOGO=start-here-test
+DEBIAN_BTS="debbugs://bugs.debian.org/"

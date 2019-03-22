@@ -140,8 +140,11 @@ public:
                 continue;
             }
 
-        // os-release explicitly allows for vendor specific aditions. We have no
-        // interest in those right now.
+            // os-release explicitly allows for vendor specific additions, we'll
+            // collect them as strings and exposes them as "extras".
+            QString parsedValue;
+            setVar(&parsedValue, value);
+            extras.insert(key, parsedValue);
         }
     }
 
@@ -163,6 +166,8 @@ public:
     QString variant;
     QString variantId;
     QString logo;
+
+    QHash<QString, QString> extras;
 };
 
 OSRelease::OSRelease(const QString &filePath)
@@ -263,6 +268,16 @@ QString OSRelease::variantId() const
 QString OSRelease::logo() const
 {
     return d->logo;
+}
+
+QStringList OSRelease::extraKeys() const
+{
+    return d->extras.keys();
+}
+
+QString OSRelease::extraValue(const QString &key) const
+{
+    return d->extras.value(key);
 }
 
 QString OSRelease::defaultFilePath()

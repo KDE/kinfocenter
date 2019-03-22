@@ -49,6 +49,8 @@ private Q_SLOTS:
         QCOMPARE(r.variant(), "Test Edition");
         QCOMPARE(r.variantId(), "test");
         QCOMPARE(r.logo(), "start-here-test");
+        QCOMPARE(r.extraKeys(), QStringList({"DEBIAN_BTS"}));
+        QCOMPARE(r.extraValue("DEBIAN_BTS"), "debbugs://bugs.debian.org/");
     }
 };
 

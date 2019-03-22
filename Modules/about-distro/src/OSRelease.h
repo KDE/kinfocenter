@@ -86,6 +86,14 @@ public:
     /** @see https://www.freedesktop.org/software/systemd/man/os-release.html#LOGO= */
     QString logo() const;
 
+    /**
+     * Extra keys are keys that are unknown or specified by a vendor.
+     */
+    QStringList extraKeys() const;
+
+    /** Extra values are values assoicated with keys that are unknown. */
+    QString extraValue(const QString &key) const;
+
 private:
     static QString defaultFilePath();
 
