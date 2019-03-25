@@ -104,8 +104,8 @@ Item {
         currentUdi = kcm.batteries.udi(0)
     }
 
-    width: units.gridUnit * 25
-    height: !!currentBattery ? units.gridUnit * 25 : units.gridUnit * 12
+    implicitWidth: units.gridUnit * 25
+    implicitHeight: !!currentBattery ? units.gridUnit * 25 : units.gridUnit * 12
 
     SystemPalette {
         id: syspal

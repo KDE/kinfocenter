@@ -31,6 +31,9 @@ import "constants.js" as Constants
 Item {
     id: mainWindow
 
+    implicitWidth: units.gridUnit * 25
+    implicitHeight: units.gridUnit * 10
+
     Baloo.Monitor {
         id: monitor
     }
