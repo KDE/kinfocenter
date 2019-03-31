@@ -27,7 +27,7 @@
 #include <kaboutdata.h>
 #include <KCrash>
 #include <KLocalizedString>
-#include <config-workspace.h>
+#include <config-project-version.h>
 #include <KDBusService>
 #include <KWindowSystem>
 

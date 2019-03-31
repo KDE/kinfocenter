@@ -78,7 +78,7 @@ else()
 endif()
 
 
-configure_file(config-workspace.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-workspace.h)
+configure_file(config-project-version.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-project-version.h)
 configure_file(config-X11.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-X11.h)
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
