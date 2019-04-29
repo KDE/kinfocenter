@@ -56,7 +56,7 @@ static qlonglong calculateTotalRam()
     struct sysinfo info;
     if (sysinfo(&info) == 0)
         // manpage "sizes are given as multiples of mem_unit bytes"
-        ret = info.totalram * info.mem_unit;
+        ret = qlonglong(info.totalram) * info.mem_unit;
 #elif defined(Q_OS_FREEBSD)
     /* Stuff for sysctl */
     size_t len;
