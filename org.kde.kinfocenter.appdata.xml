@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component type="desktop-application">
+  <id>org.kde.kinfocenter</id>
+  <metadata_license>FSFAP</metadata_license>
+  <project_license>GPL-2.0-or-later</project_license>
+  <name>Info Center</name>
+  <summary>Centralized and convenient overview of system information</summary>
+  <description>
+     <p>The Info Center provides you with a centralized and convenient
+     overview of your system and desktop environment.</p>
+     <p>The information center is made up of multiple modules.  Each module is a
+     separate application, but the information center organizes all of these
+     programs into a convenient location.</p>
+  </description>
+  <url type="homepage">https://www.kde.org</url>
+  <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kinfocenter</url>
+  <url type="donation">https://www.kde.org/community/donations/?app=kinfocenter</url>
+  <launchable type="desktop-id">org.kde.kinfocenter</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://cdn.kde.org/screenshots/kinfocenter/kinfocenter.png</image>
+    </screenshot>
+  </screenshots>
+  <provides>
+    <binary>kinfocenter</binary>
+  </provides>
+  <project_group>KDE</project_group>
+</component>

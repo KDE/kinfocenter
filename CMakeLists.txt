@@ -130,6 +130,7 @@ target_link_libraries( kinfocenter
 ##install
 
 install( TARGETS kinfocenter          ${INSTALL_TARGETS_DEFAULT_ARGS} )
+install( FILES org.kde.kinfocenter.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 install( PROGRAMS org.kde.kinfocenter.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
 install( FILES kinfocenterui.rc DESTINATION ${KXMLGUI_INSTALL_DIR}/kinfocenter )
 
