@@ -4,13 +4,37 @@
   <metadata_license>FSFAP</metadata_license>
   <project_license>GPL-2.0-or-later</project_license>
   <name>Info Center</name>
+  <name xml:lang="ca">Centre d'informació</name>
+  <name xml:lang="ca-valencia">Centre d'informació</name>
+  <name xml:lang="es">Centro de información</name>
+  <name xml:lang="fi">Tietokeskus</name>
+  <name xml:lang="uk">Центр інформації</name>
+  <name xml:lang="x-test">xxInfo Centerxx</name>
   <summary>Centralized and convenient overview of system information</summary>
+  <summary xml:lang="ca">Resum centralitzat i pràctic de la informació del sistema</summary>
+  <summary xml:lang="ca-valencia">Resum centralitzat i pràctic de la informació del sistema</summary>
+  <summary xml:lang="es">Resumen práctico y centralizado de la información del sistema</summary>
+  <summary xml:lang="fi">Järjestelmätietojen mukava keskitetty yleisnäkymä</summary>
+  <summary xml:lang="uk">Централізований та зручний огляд усіх даних щодо системи</summary>
+  <summary xml:lang="x-test">xxCentralized and convenient overview of system informationxx</summary>
   <description>
-     <p>The Info Center provides you with a centralized and convenient
+    <p>The Info Center provides you with a centralized and convenient
      overview of your system and desktop environment.</p>
-     <p>The information center is made up of multiple modules.  Each module is a
+    <p xml:lang="ca">El Centre d'informació proporciona una vista general centralitzada i còmoda del sistema i l'escriptori.</p>
+    <p xml:lang="ca-valencia">El Centre d'informació proporciona una vista general centralitzada i còmoda del sistema i l'escriptori.</p>
+    <p xml:lang="es">El centro de información le proporciona un resumen práctico y centralizado del entorno de su sistema y de su escritorio.</p>
+    <p xml:lang="fi">Tietokeskus tarjoaa mukavan keskitetyn yleisnäkymä järjestelmään ja työpöytäympäristöön.</p>
+    <p xml:lang="uk">«Центр інформації» надає вам змогу переглядати централізовано і зручно параметри вашої системи та стільничного середовища.</p>
+    <p xml:lang="x-test">xxThe Info Center provides you with a centralized and convenient overview of your system and desktop environment.xx</p>
+    <p>The information center is made up of multiple modules.  Each module is a
      separate application, but the information center organizes all of these
      programs into a convenient location.</p>
+    <p xml:lang="ca">El centre d'informació està format per múltiples mòduls. Cadascun és una aplicació individual, però el centre d'informació els reuneix tots en un lloc comú.</p>
+    <p xml:lang="ca-valencia">El centre d'informació està format per múltiples mòduls. Cadascun és una aplicació individual, però el centre d'informació els reuneix tots en un lloc comú.</p>
+    <p xml:lang="es">El centro de información está compuesto por múltiples módulos. Cada módulo es una aplicación separada, aunque el centro de información organiza todos estos programas en un lugar adecuado.</p>
+    <p xml:lang="fi">Tietokeskus koostuu moduuleista, joista kukin on erillinen sovellus. Tietokeskus järjestää nämä ohjelmat yhteen paikaan.</p>
+    <p xml:lang="uk">Центр інформації складається з декількох модулів. Кожен модуль є окремою програмою, але центр інформації об’єднує всі ці програми у вигляді однієї зручної оболонки.</p>
+    <p xml:lang="x-test">xxThe information center is made up of multiple modules. Each module is a separate application, but the information center organizes all of these programs into a convenient location.xx</p>
   </description>
   <url type="homepage">https://www.kde.org</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kinfocenter</url>
