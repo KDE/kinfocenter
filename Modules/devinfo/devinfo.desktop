@@ -136,7 +136,7 @@ Comment[x-test]=xxDevice Viewerxx
 Comment[zh_CN]=设备查看器
 Comment[zh_TW]=裝置檢視器
 
-X-KDE-Keywords=device,devices
+X-KDE-Keywords=device,devices,disk,drive,processor,cpu
 X-KDE-Keywords[ar]=جهاز,أجهزة
 X-KDE-Keywords[bs]=uređaj, uređaji
 X-KDE-Keywords[ca]=dispositiu,dispositius
