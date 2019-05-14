@@ -33,6 +33,7 @@
 #include <KDesktopFile>
 #include <KFormat>
 #include <KLocalizedString>
+#include <KOSRelease>
 #include <KSharedConfig>
 
 #include <solid/device.h>
@@ -46,7 +47,6 @@
 #endif
 #include <sys/utsname.h>
 
-#include "OSRelease.h"
 #include "Version.h"
 
 static qlonglong calculateTotalRam()
@@ -148,7 +148,7 @@ void Module::loadSoftware()
                                                           KConfig::NoGlobals);
     KConfigGroup cg = KConfigGroup(config, "General");
 
-    OSRelease os;
+    KOSRelease os;
 
     QString logoPath = cg.readEntry("LogoPath", os.logo());
     if (logoPath.isEmpty()) {

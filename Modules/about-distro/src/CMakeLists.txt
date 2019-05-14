@@ -4,7 +4,6 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR})
 set(kcm_SRCS
     main.cpp
     Module.cpp
-    OSRelease.cpp
 )
 
 ki18n_wrap_ui(kcm_SRCS Module.ui)
