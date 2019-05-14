@@ -12,6 +12,7 @@
   <name xml:lang="nl">Informatiecentrum</name>
   <name xml:lang="pl">Ośrodek danych</name>
   <name xml:lang="pt">Centro de Informações</name>
+  <name xml:lang="sk">Informačné centrum</name>
   <name xml:lang="uk">Центр інформації</name>
   <name xml:lang="x-test">xxInfo Centerxx</name>
   <name xml:lang="zh-TW">資訊中心</name>
@@ -24,6 +25,7 @@
   <summary xml:lang="nl">Gecentraliseerd en prettig overzicht van systeeminformatie</summary>
   <summary xml:lang="pl">Skupiony w jednym miejscu i wygodny przegląd danych o systemie</summary>
   <summary xml:lang="pt">Visão centralizada e conveniente da informação do sistema</summary>
+  <summary xml:lang="sk">Centralizovaný a pohodlný prehľad systémových informácií</summary>
   <summary xml:lang="uk">Централізований та зручний огляд усіх даних щодо системи</summary>
   <summary xml:lang="x-test">xxCentralized and convenient overview of system informationxx</summary>
   <description>
