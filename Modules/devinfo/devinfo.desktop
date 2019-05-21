@@ -138,9 +138,11 @@ Comment[zh_TW]=裝置檢視器
 
 X-KDE-Keywords=device,devices,disk,drive,processor,cpu
 X-KDE-Keywords[ca]=dispositiu,dispositius,disc,unitat,processador,cpu
+X-KDE-Keywords[ca@valencia]=dispositiu,dispositius,disc,unitat,processador,cpu
 X-KDE-Keywords[en_GB]=device,devices,disk,drive,processor,cpu
 X-KDE-Keywords[es]=dispositivo,dispositivos,disco,unidad,procesador,cpu
 X-KDE-Keywords[id]=perangkat,device,disk,cakram,prosesor,cpu
+X-KDE-Keywords[it]=dispositivo,dispositivi,disco,lettore,processore,cpu
 X-KDE-Keywords[ko]=device,devices,disk,drive,processor,cpu,장치,디스크,드라이브,프로세서
 X-KDE-Keywords[nl]=apparaat,apparaten,schijf,station,processor,cpu
 X-KDE-Keywords[pt]=dispositivo,dispositivos,disco,unidade,processador,cpu
