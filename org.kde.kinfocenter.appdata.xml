@@ -32,6 +32,7 @@
   <summary xml:lang="nl">Gecentraliseerd en prettig overzicht van systeeminformatie</summary>
   <summary xml:lang="pl">Skupiony w jednym miejscu i wygodny przegląd danych o systemie</summary>
   <summary xml:lang="pt">Visão centralizada e conveniente da informação do sistema</summary>
+  <summary xml:lang="pt-BR">Visão geral centralizada e conveniente das informações do sistema</summary>
   <summary xml:lang="sk">Centralizovaný a pohodlný prehľad systémových informácií</summary>
   <summary xml:lang="uk">Централізований та зручний огляд усіх даних щодо системи</summary>
   <summary xml:lang="x-test">xxCentralized and convenient overview of system informationxx</summary>
@@ -48,6 +49,7 @@
     <p xml:lang="nl">Het informatiecentrum biedt u een gecentraliseerd en handig overzicht van uw systeem en bureaubladomgeving.</p>
     <p xml:lang="pl">Ośrodek danych zapewnia skupiony w jednym miejscu i wygodny przegląd systemu i środowiska pulpitu.</p>
     <p xml:lang="pt">O Centro de Informações oferece-lhe uma visão geral centralizada e conveniente sobre o seu sistema e ambiente de trabalho.</p>
+    <p xml:lang="pt-BR">O centro de informações fornece a você uma visão geral centralizada e conveniente de seu sistema e ambiente de trabalho.</p>
     <p xml:lang="uk">«Центр інформації» надає вам змогу переглядати централізовано і зручно параметри вашої системи та стільничного середовища.</p>
     <p xml:lang="x-test">xxThe Info Center provides you with a centralized and convenient overview of your system and desktop environment.xx</p>
     <p>The information center is made up of multiple modules.  Each module is a
