@@ -19,6 +19,7 @@
   <name xml:lang="pt">Centro de Informações</name>
   <name xml:lang="pt-BR">Centro de informações</name>
   <name xml:lang="sk">Informačné centrum</name>
+  <name xml:lang="sv">Informationscentral</name>
   <name xml:lang="uk">Центр інформації</name>
   <name xml:lang="x-test">xxInfo Centerxx</name>
   <name xml:lang="zh-TW">資訊中心</name>
@@ -36,6 +37,7 @@
   <summary xml:lang="pt">Visão centralizada e conveniente da informação do sistema</summary>
   <summary xml:lang="pt-BR">Visão geral centralizada e conveniente das informações do sistema</summary>
   <summary xml:lang="sk">Centralizovaný a pohodlný prehľad systémových informácií</summary>
+  <summary xml:lang="sv">Centraliserad och bekväm översikt av systeminformation</summary>
   <summary xml:lang="uk">Централізований та зручний огляд усіх даних щодо системи</summary>
   <summary xml:lang="x-test">xxCentralized and convenient overview of system informationxx</summary>
   <description>
@@ -53,6 +55,8 @@
     <p xml:lang="pl">Ośrodek danych zapewnia skupiony w jednym miejscu i wygodny przegląd systemu i środowiska pulpitu.</p>
     <p xml:lang="pt">O Centro de Informações oferece-lhe uma visão geral centralizada e conveniente sobre o seu sistema e ambiente de trabalho.</p>
     <p xml:lang="pt-BR">O centro de informações fornece a você uma visão geral centralizada e conveniente de seu sistema e ambiente de trabalho.</p>
+    <p xml:lang="sk">Informačné centrum vám poskytuje centralizovaný a pohodlný prehľad vášho systému a prostredia pracovnej plochy.</p>
+    <p xml:lang="sv">Informationscentralen ger dig en centraliserad och bekväm översikt av systemet och skrivbordsmiljön.</p>
     <p xml:lang="uk">«Центр інформації» надає вам змогу переглядати централізовано і зручно параметри вашої системи та стільничного середовища.</p>
     <p xml:lang="x-test">xxThe Info Center provides you with a centralized and convenient overview of your system and desktop environment.xx</p>
     <p>The information center is made up of multiple modules.  Each module is a
@@ -70,6 +74,8 @@
     <p xml:lang="pl">Ośrodek danych składa się z wielu części. Każda część jest osobnym programem, lecz ośrodek danych zbiera je wszystkie w jednym miejscu.</p>
     <p xml:lang="pt">O centro de informação é composto por vários módulos; cada módulo é uma aplicação separada, porém, o centro de controlo organiza todos estes programas de uma forma conveniente.</p>
     <p xml:lang="pt-BR">O centro de informações é formado por vários módulos, sendo que cada um deles é um aplicativo separado. Porém, ele organiza todos estes programas, em uma localização conveniente.</p>
+    <p xml:lang="sk">Informačné centrum sa skladá z viacerých modulov. Každý modul je samostatná aplikácia, ale informačné centrum spája všetky programy na vhodnom mieste.</p>
+    <p xml:lang="sv">Informationscentralen består av flera moduler. Varje modul är ett eget program, men informationscentralen organiserar alla dessa program på ett bekvämt ställe.</p>
     <p xml:lang="uk">Центр інформації складається з декількох модулів. Кожен модуль є окремою програмою, але центр інформації об’єднує всі ці програми у вигляді однієї зручної оболонки.</p>
     <p xml:lang="x-test">xxThe information center is made up of multiple modules. Each module is a separate application, but the information center organizes all of these programs into a convenient location.xx</p>
   </description>
