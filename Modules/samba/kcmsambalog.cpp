@@ -37,7 +37,7 @@
 #define LOG_SCREEN_XY_OFFSET 10
 
 LogView::LogView(QWidget *parent, KConfig *config) :
-	QWidget(parent), configFile(config), filesCount(0), connectionsCount(0), logFileName(QUrl::fromLocalFile(QStringLiteral("/var/log/samba.log")), this), label(i18n("Samba log file: "), this), viewHistory(this), showConnOpen(i18n("Show opened connections"), this), showConnClose(i18n("Show closed connections"), this),
+	QWidget(parent), configFile(config), filesCount(0), connectionsCount(0), logFileName(QUrl::fromLocalFile(QStringLiteral("/var/log/samba/log.smbd")), this), label(i18n("Samba log file: "), this), viewHistory(this), showConnOpen(i18n("Show opened connections"), this), showConnClose(i18n("Show closed connections"), this),
 			showFileOpen(i18n("Show opened files"), this), showFileClose(i18n("Show closed files"), this), updateButton(i18n("&Update"), this) {
 	label.setTextInteractionFlags(Qt::TextSelectableByMouse);
 	label.setBuddy( &logFileName);
@@ -122,7 +122,7 @@ void LogView::loadSettings() {
 	if (configFile==0)
 		return;
 	KConfigGroup group = configFile->group(LOGGROUPNAME);
-	logFileName.setUrl(QUrl::fromLocalFile(group.readPathEntry("SambaLogFile", QStringLiteral("/var/log/samba.log"))));
+	logFileName.setUrl(QUrl::fromLocalFile(group.readPathEntry("SambaLogFile", QStringLiteral("/var/log/samba/log.smbd"))));
 
 	showConnOpen.setChecked(group.readEntry("ShowConnectionOpen", true));
 	showConnClose.setChecked(group.readEntry("ShowConnectionClose", false));
