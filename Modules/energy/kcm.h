@@ -22,8 +22,6 @@
 
 #include <KQuickAddons/ConfigModule>
 
-class QQuickView;
-class QStandardItemModel;
 
 class BatteryModel;
 class WakeUpModel;
