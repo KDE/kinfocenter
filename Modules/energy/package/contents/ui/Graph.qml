@@ -37,7 +37,7 @@ Canvas
     antialiasing: true
 
     property int xPadding: 45
-    property int yPadding: 25
+    property int yPadding: 10
 
     property var data //expect an array of QPointF
 
@@ -52,7 +52,7 @@ Canvas
 
     //internal
 
-    property real plotWidth: width - xPadding *2
+    property real plotWidth: width - xPadding
     property real plotHeight: height - yPadding *2
 
     onDataChanged: {

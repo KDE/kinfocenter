@@ -48,17 +48,12 @@ using namespace KQuickAddons;
 
 KCMEnergyInfo::KCMEnergyInfo(QObject *parent, const QVariantList &args) : ConfigModule(parent, args)
 {
-    //This flag seems to be needed in order for QQuickWidget to work
-    //see https://bugreports.qt-project.org/browse/QTBUG-40765
-    //also, it seems to work only if set in the kcm, not in the systemsettings' main
-    qApp->setAttribute(Qt::AA_DontCreateNativeWidgetSiblings);
-
     qmlRegisterType<BatteryModel>();
     qmlRegisterType<WakeUpModel>();
     qmlRegisterType<StatisticsProvider>("org.kde.kinfocenter.energy.private", 1, 0, "HistoryModel");
 
     KAboutData *about = new KAboutData(QStringLiteral("kcm_energyinfo"), i18n("Energy Consumption Statistics"),
-                                       QStringLiteral("0.1"), QString(), KAboutLicense::GPL);
+                                       QStringLiteral("0.2"), QString(), KAboutLicense::GPL);
     about->addAuthor(i18n("Kai Uwe Broulik"), QString(), QStringLiteral("kde@privat.broulik.de"));
     setAboutData(about);
 
