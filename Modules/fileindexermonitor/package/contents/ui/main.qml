@@ -21,15 +21,17 @@
  */
 
 import QtQuick 2.4
-import QtQuick.Controls 1.3
 import QtQuick.Controls 2.0 as QQC2
 import QtQuick.Layouts 1.1
 
 import org.kde.baloo.experimental 0.1 as Baloo
 import "constants.js" as Constants
+import org.kde.kcm 1.1 as KCM
 
-Item {
+KCM.SimpleKCM {
     id: mainWindow
+
+    KCM.ConfigModule.quickHelp: i18n("This module lets you monitor the file indexing")
 
     implicitWidth: units.gridUnit * 25
     implicitHeight: units.gridUnit * 10
@@ -76,14 +78,14 @@ Item {
             id: progressLayout
             spacing: 20
 
-            ProgressBar {
+            QQC2.ProgressBar {
                 id: progress
                 Layout.fillWidth: true
-                maximumValue: monitor.totalFiles
+                to: monitor.totalFiles
                 value: monitor.filesIndexed
             }
 
-            Button {
+            QQC2.Button {
                 id: toggleButton
                 text: monitor.state == Constants.State.Suspended ? i18n("Resume") : i18n("Suspend")
                 onClicked: monitor.toggleSuspendState()
@@ -110,7 +112,7 @@ Item {
             text: i18n("File Indexer not running")
         }
 
-        Button {
+        QQC2.Button {
             Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
             id: startBaloo
             text: i18n("Start File Indexer")
