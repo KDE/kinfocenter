@@ -26,6 +26,7 @@
 #include <KLocalizedString>
 
 //QT
+#include <QApplication>
 #include <QVBoxLayout>
 #include <QStyle>
 
@@ -60,7 +61,8 @@ void KcmContainer::setContainerLayout()
     centerWidgetLayout->setContentsMargins(0, 0, 0, 0);
 
     QFont font;
-    font.setPointSize(qRound(font.pointSize() * 1.4));
+    // Adapted from KTitleWidget to match KCM qml title size
+    font.setPointSize(qRound(QApplication::font().pointSize() * 1.6));
 
     m_titleLabel = new QLabel(m_centerWidget);
     m_titleLabel->setFont(font);
@@ -80,6 +82,11 @@ void KcmContainer::setKcm(const KCModuleInfo &info)
 
     m_mod = new KCModuleProxy(info);
     m_modInfo = info;
+
+    // Adpated from systemsettings ModuleView::updatePageIconHeader similar hack
+    if (!m_mod->realModule()->inherits("KCModuleQml") ) {
+        m_centerWidget->setContentsMargins(5,5,5,5);
+    }
 
     setKcmTitle(info);
 
@@ -102,6 +109,11 @@ void KcmContainer::setKcmTopEdge(int y)
 
 void KcmContainer::setKcmTitle(const KCModuleInfo &info)
 {
+    //HACK: not much other ways to detect is a qml kcm
+    // Adpated from systemsettings ModuleView::updatePageIconHeader similar hack
+    if (m_mod->realModule()->inherits("KCModuleQml") ) {
+        m_titleLabel->setVisible(false);
+    }
     m_titleLabel->setText(info.comment());
 }
 
