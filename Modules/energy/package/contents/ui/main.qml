@@ -229,7 +229,7 @@ KCM.SimpleKCM {
                     QQC2.ToolTip.text: i18n("Refresh")
                     QQC2.ToolTip.visible: hovered
                     QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
-                    Accessible.name: ToolTip.text
+                    Accessible.name: QQC2.ToolTip.text
                     onClicked: history.refresh()
                 }
             }
