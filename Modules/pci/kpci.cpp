@@ -7,7 +7,7 @@
  here, since there are only few of them, and they are important and
  should their names be translated.
  
- Author: Konrad Rzepecki <hannibal@megapolis.pl>
+ Author: Konrad Rzepecki <hannibal@astral.lodz.pl>
  */
 #include "kpci_private.h"
 

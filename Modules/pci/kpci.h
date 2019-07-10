@@ -1,7 +1,7 @@
 /* Retrieve information about PCI subsystem through libpci library from
    pciutils package. This should be possible on Linux, BSD and AIX.
 
-   Author: Konrad Rzepecki <hannibal@megapolis.pl>
+   Author: Konrad Rzepecki <hannibal@astral.lodz.pl>
 */
 
 #ifndef KCONTROL_KPCI_H

@@ -7,7 +7,7 @@
    
    pci.cpp private header, don't include in other files.
 
-   Author: Konrad Rzepecki <hannibal@megapolis.pl>
+   Author: Konrad Rzepecki <hannibal@astral.lodz.pl>
 */
 #ifndef KCONTROL_KPCI_PRIVATE_H
 #define KCONTROL_KPCI_PRIVATE_H
