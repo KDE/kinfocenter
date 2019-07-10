@@ -182,7 +182,7 @@ union pciInfo {
 				} secStatus Q_PACKED;
 				union {
 					unsigned short memoryBase;
-					struct {						
+					struct {
 						unsigned memoryType:1;
 						unsigned memoryUnk:3;
 						unsigned memoryAddr:4;
@@ -191,7 +191,7 @@ union pciInfo {
 				unsigned short memoryLimit;
 				union {
 					unsigned short prefMemoryBase;
-					struct {						
+					struct {
 						unsigned prefMemoryType:1;
 						unsigned prefMemoryUnk:3;
 						unsigned prefMemoryAddr:4;
@@ -424,7 +424,7 @@ union msiInfo {
 			} address Q_PACKED;
 			struct {
 				unsigned short msiData;
-				unsigned short msiUnk;			
+				unsigned short msiUnk;
 				unsigned msiMask;
 				unsigned msiPending;
 			} data Q_PACKED;
@@ -437,166 +437,166 @@ union msiInfo {
 //keep -1 in last position
 //device classes list
 static const id2name devClass[]={{	0x00,	i18n("Unclassified device")},
-								{	0x01,	i18n("Mass storage controller")},
-								{	0x02,	i18n("Network controller")},
-								{	0x03,	i18n("Display controller")},
-								{	0x04,	i18n("Multimedia controller")},
-								{	0x05,	i18n("Memory controller")},
-								{	0x06,	i18n("Bridge")},
-								{	0x07,	i18n("Communication controller")},
-								{	0x08,	i18n("Generic system peripheral")},
-								{	0x09,	i18n("Input device controller")},
-								{	0x0A,	i18n("Docking station")},
-								{	0x0B,	i18n("Processor")},
-								{	0x0C,	i18n("Serial bus controller")},
-								{	0x0D,	i18n("Wireless controller")},
-								{	0x0E,	i18n("Intelligent controller")},
-								{	0x0F,	i18n("Satellite communications controller")},
-								{	0x10,	i18n("Encryption controller")},
-								{	0x11,	i18n("Signal processing controller")},
-								{	-1,		i18n("Unknown device class")}
+				{	0x01,	i18n("Mass storage controller")},
+				{	0x02,	i18n("Network controller")},
+				{	0x03,	i18n("Display controller")},
+				{	0x04,	i18n("Multimedia controller")},
+				{	0x05,	i18n("Memory controller")},
+				{	0x06,	i18n("Bridge")},
+				{	0x07,	i18n("Communication controller")},
+				{	0x08,	i18n("Generic system peripheral")},
+				{	0x09,	i18n("Input device controller")},
+				{	0x0A,	i18n("Docking station")},
+				{	0x0B,	i18n("Processor")},
+				{	0x0C,	i18n("Serial bus controller")},
+				{	0x0D,	i18n("Wireless controller")},
+				{	0x0E,	i18n("Intelligent controller")},
+				{	0x0F,	i18n("Satellite communications controller")},
+				{	0x10,	i18n("Encryption controller")},
+				{	0x11,	i18n("Signal processing controller")},
+				{	-1,	i18n("Unknown device class")}
 };
 
 //keep -1 in last position in "id"
 //and in last position in "id2" with certain "id"
 //subdevice classes list
 static const id3name devSubclass[]={	{	0x00,	0x00,	i18n("Non-VGA unclassified device")},
-										{	0x00,	0x01,	i18n("VGA unclassified device")},
-										{	0x00,	-1,		i18n("Unknown unclassified device")},
+					{	0x00,	0x01,	i18n("VGA unclassified device")},
+					{	0x00,	-1,	i18n("Unknown unclassified device")},
 
-										{	0x01,	0x00,	i18n("SCSI storage controller")},
-										{	0x01,	0x01,	i18n("IDE controller")},
-										{	0x01,	0x02,	i18n("Floppy disk controller")},
-										{	0x01,	0x03,	i18n("IPI bus controller")},
-										{	0x01,	0x04,	i18n("RAID bus controller")},
-										{	0x01,	0x05,	i18n("ATA controller")},
-										{	0x01,	0x06,	i18n("Serial ATA direct port access")},
-										{	0x01,	0x80,	i18n("Mass storage controller")},
-										{	0x01,	-1,		i18n("Unknown storage controller")},
+					{	0x01,	0x00,	i18n("SCSI storage controller")},
+					{	0x01,	0x01,	i18n("IDE controller")},
+					{	0x01,	0x02,	i18n("Floppy disk controller")},
+					{	0x01,	0x03,	i18n("IPI bus controller")},
+					{	0x01,	0x04,	i18n("RAID bus controller")},
+					{	0x01,	0x05,	i18n("ATA controller")},
+					{	0x01,	0x06,	i18n("Serial ATA direct port access")},
+					{	0x01,	0x80,	i18n("Mass storage controller")},
+					{	0x01,	-1,	i18n("Unknown storage controller")},
 
-										{	0x02,	0x00,	i18n("Ethernet controller")},
-										{	0x02,	0x01,	i18n("Token ring network controller")},
-										{	0x02,	0x02,	i18n("FDDI network controller")},
-										{	0x02,	0x03,	i18n("ATM network controller")},
-										{	0x02,	0x04,	i18n("ISDN controller")},
-										{	0x02,	0x05,	i18n("WorldFip controller")},
-										{	0x02,	0x06,	i18n("PICMG 2.14 multi computing")},
-										{	0x02,	0x80,	i18n("Network controller")},
-										{	0x02,	-1,		i18n("Unknown network controller")},
+					{	0x02,	0x00,	i18n("Ethernet controller")},
+					{	0x02,	0x01,	i18n("Token ring network controller")},
+					{	0x02,	0x02,	i18n("FDDI network controller")},
+					{	0x02,	0x03,	i18n("ATM network controller")},
+					{	0x02,	0x04,	i18n("ISDN controller")},
+					{	0x02,	0x05,	i18n("WorldFip controller")},
+					{	0x02,	0x06,	i18n("PICMG 2.14 multi computing")},
+					{	0x02,	0x80,	i18n("Network controller")},
+					{	0x02,	-1,	i18n("Unknown network controller")},
 
-										{	0x03,	0x00,	i18n("VGA compatible controller")},
-										{	0x03,	0x01,	i18n("XGA compatible controller")},
-										{	0x03,	0x02,	i18n("3D controller")},
-										{	0x03,	0x80,	i18n("Display controller")},
-										{	0x03,	-1,		i18n("Unknown display controller")},
+					{	0x03,	0x00,	i18n("VGA compatible controller")},
+					{	0x03,	0x01,	i18n("XGA compatible controller")},
+					{	0x03,	0x02,	i18n("3D controller")},
+					{	0x03,	0x80,	i18n("Display controller")},
+					{	0x03,	-1,	i18n("Unknown display controller")},
 
-										{	0x04,	0x00,	i18n("Multimedia video controller")},
-										{	0x04,	0x01,	i18n("Multimedia audio controller")},
-										{	0x04,	0x02,	i18n("Computer telephony device")},
-										{	0x04,	0x80,	i18n("Multimedia controller")},
-										{	0x04,	-1,		i18n("Unknown multimedia controller")},
+					{	0x04,	0x00,	i18n("Multimedia video controller")},
+					{	0x04,	0x01,	i18n("Multimedia audio controller")},
+					{	0x04,	0x02,	i18n("Computer telephony device")},
+					{	0x04,	0x80,	i18n("Multimedia controller")},
+					{	0x04,	-1,	i18n("Unknown multimedia controller")},
 
-										{	0x05,	0x00,	i18n("RAM memory")},
-										{	0x05,	0x01,	i18n("FLASH memory")},
-										{	0x05,	0x80,	i18n("Memory controller")},
-										{	0x05,	-1,		i18n("Unknown memory controller")},
+					{	0x05,	0x00,	i18n("RAM memory")},
+					{	0x05,	0x01,	i18n("FLASH memory")},
+					{	0x05,	0x80,	i18n("Memory controller")},
+					{	0x05,	-1,	i18n("Unknown memory controller")},
 
-										{	0x06,	0x00,	i18n("Host bridge")},
-										{	0x06,	0x01,	i18n("ISA bridge")},
-										{	0x06,	0x02,	i18n("EISA bridge")},
-										{	0x06,	0x03,	i18n("MicroChannel bridge")},
-										{	0x06,	0x04,	i18n("PCI bridge")},
-										{	0x06,	0x05,	i18n("PCMCIA bridge")},
-										{	0x06,	0x06,	i18n("NuBus bridge")},
-										{	0x06,	0x07,	i18n("CardBus bridge")},
-										{	0x06,	0x08,	i18n("RACEway bridge")},
-										{	0x06,	0x09,	i18n("Semi-transparent PCI-to-PCI bridge")},
-										{	0x06,	0x0A,	i18n("InfiniBand to PCI host bridge")},
-										{	0x06,	0x80,	i18n("Bridge")},
-										{	0x06,	-1,		i18n("Unknown bridge")},
+					{	0x06,	0x00,	i18n("Host bridge")},
+					{	0x06,	0x01,	i18n("ISA bridge")},
+					{	0x06,	0x02,	i18n("EISA bridge")},
+					{	0x06,	0x03,	i18n("MicroChannel bridge")},
+					{	0x06,	0x04,	i18n("PCI bridge")},
+					{	0x06,	0x05,	i18n("PCMCIA bridge")},
+					{	0x06,	0x06,	i18n("NuBus bridge")},
+					{	0x06,	0x07,	i18n("CardBus bridge")},
+					{	0x06,	0x08,	i18n("RACEway bridge")},
+					{	0x06,	0x09,	i18n("Semi-transparent PCI-to-PCI bridge")},
+					{	0x06,	0x0A,	i18n("InfiniBand to PCI host bridge")},
+					{	0x06,	0x80,	i18n("Bridge")},
+					{	0x06,	-1,	i18n("Unknown bridge")},
 
-										{	0x07,	0x00,	i18n("Serial controller")},
-										{	0x07,	0x01,	i18n("Parallel controller")},
-										{	0x07,	0x02,	i18n("Multiport serial controller")},
-										{	0x07,	0x03,	i18n("Modem")},
-										{	0x07,	0x04,	i18n("GPIB (IEEE 488.1/2) controller")},
-										{	0x07,	0x05,	i18n("Smart card")},
-										{	0x07,	0x80,	i18n("Communication controller")},
-										{	0x07,	-1,		i18n("Unknown communication controller")},
+					{	0x07,	0x00,	i18n("Serial controller")},
+					{	0x07,	0x01,	i18n("Parallel controller")},
+					{	0x07,	0x02,	i18n("Multiport serial controller")},
+					{	0x07,	0x03,	i18n("Modem")},
+					{	0x07,	0x04,	i18n("GPIB (IEEE 488.1/2) controller")},
+					{	0x07,	0x05,	i18n("Smart card")},
+					{	0x07,	0x80,	i18n("Communication controller")},
+					{	0x07,	-1,	i18n("Unknown communication controller")},
 
-										{	0x08,	0x00,	i18n("PIC")},
-										{	0x08,	0x01,	i18n("DMA controller")},
-										{	0x08,	0x02,	i18n("Timer")},
-										{	0x08,	0x03,	i18n("RTC")},
-										{	0x08,	0x04,	i18n("PCI Hot-plug controller")},
-										{	0x08,	0x80,	i18n("System peripheral")},
-										{	0x08,	-1,		i18n("Unknown system peripheral")},
+					{	0x08,	0x00,	i18n("PIC")},
+					{	0x08,	0x01,	i18n("DMA controller")},
+					{	0x08,	0x02,	i18n("Timer")},
+					{	0x08,	0x03,	i18n("RTC")},
+					{	0x08,	0x04,	i18n("PCI Hot-plug controller")},
+					{	0x08,	0x80,	i18n("System peripheral")},
+					{	0x08,	-1,	i18n("Unknown system peripheral")},
 
-										{	0x09,	0x00,	i18n("Keyboard controller")},
-										{	0x09,	0x01,	i18n("Digitizer Pen")},
-										{	0x09,	0x02,	i18n("Mouse controller")},
-										{	0x09,	0x03,	i18n("Scanner controller")},
-										{	0x09,	0x04,	i18n("Gameport controller")},
-										{	0x09,	0x80,	i18n("Input device controller")},
-										{	0x09,	-1,		i18n("Unknown input device controller")},
+					{	0x09,	0x00,	i18n("Keyboard controller")},
+					{	0x09,	0x01,	i18n("Digitizer Pen")},
+					{	0x09,	0x02,	i18n("Mouse controller")},
+					{	0x09,	0x03,	i18n("Scanner controller")},
+					{	0x09,	0x04,	i18n("Gameport controller")},
+					{	0x09,	0x80,	i18n("Input device controller")},
+					{	0x09,	-1,	i18n("Unknown input device controller")},
 
-										{	0x0A,	0x00,	i18n("Generic docking station")},
-										{	0x0A,	0x80,	i18n("Docking station")},
-										{	0x0A,	-1,		i18n("Unknown docking station")},
+					{	0x0A,	0x00,	i18n("Generic docking station")},
+					{	0x0A,	0x80,	i18n("Docking station")},
+					{	0x0A,	-1,	i18n("Unknown docking station")},
 
-										{	0x0B,	0x00,	i18n("386")},
-										{	0x0B,	0x01,	i18n("486")},
-										{	0x0B,	0x02,	i18n("Pentium")},
-										{	0x0B,	0x10,	i18n("Alpha")},
-										{	0x0B,	0x20,	i18n("Power PC")},
-										{	0x0B,	0x30,	i18n("MIPS")},
-										{	0x0B,	0x40,	i18n("Co-processor")},
-										{	0x0B,	-1,		i18n("Unknown processor")},
+					{	0x0B,	0x00,	i18n("386")},
+					{	0x0B,	0x01,	i18n("486")},
+					{	0x0B,	0x02,	i18n("Pentium")},
+					{	0x0B,	0x10,	i18n("Alpha")},
+					{	0x0B,	0x20,	i18n("Power PC")},
+					{	0x0B,	0x30,	i18n("MIPS")},
+					{	0x0B,	0x40,	i18n("Co-processor")},
+					{	0x0B,	-1,	i18n("Unknown processor")},
 
-										{	0x0C,	0x00,	i18n("FireWire (IEEE 1394)")},
-										{	0x0C,	0x01,	i18n("ACCESS bus")},
-										{	0x0C,	0x02,	i18n("SSA")},
-										{	0x0C,	0x03,	i18n("USB controller")},
-										{	0x0C,	0x04,	i18n("Fibre channel")},
-										{	0x0C,	0x05,	i18n("SMBus")},
-										{	0x0C,	0x06,	i18n("InfiniBand")},
-										{	0x0C,	0x07,	i18n("IPMI interface")},
-										{	0x0C,	0x08,	i18n("SERCOS interface")},
-										{	0x0C,	0x09,	i18n("CANbus")},
-										{	0x0C,	-1,		i18n("Unknown serial bus controller")},
+					{	0x0C,	0x00,	i18n("FireWire (IEEE 1394)")},
+					{	0x0C,	0x01,	i18n("ACCESS bus")},
+					{	0x0C,	0x02,	i18n("SSA")},
+					{	0x0C,	0x03,	i18n("USB controller")},
+					{	0x0C,	0x04,	i18n("Fibre channel")},
+					{	0x0C,	0x05,	i18n("SMBus")},
+					{	0x0C,	0x06,	i18n("InfiniBand")},
+					{	0x0C,	0x07,	i18n("IPMI interface")},
+					{	0x0C,	0x08,	i18n("SERCOS interface")},
+					{	0x0C,	0x09,	i18n("CANbus")},
+					{	0x0C,	-1,	i18n("Unknown serial bus controller")},
 
-										{	0x0D,	0x00,	i18n("IRDA controller")},
-										{	0x0D,	0x01,	i18n("Consumer IR controller")},
-										{	0x0D,	0x10,	i18n("RF controller")},
-										{	0x0D,	0x11,	i18n("Bluetooth")},
-										{	0x0D,	0x12,	i18n("Broadband")},
-										{	0x0D,	0x20,	i18n("Ethernet (802.11a - 5 GHz)")},
-										{	0x0D,	0x21,	i18n("Ethernet (802.11b - 2.4 GHz)")},
-										{	0x0D,	0x80,	i18n("Wireless controller")},
-										{	0x0D,	-1,		i18n("Unknown wireless controller")},
+					{	0x0D,	0x00,	i18n("IRDA controller")},
+					{	0x0D,	0x01,	i18n("Consumer IR controller")},
+					{	0x0D,	0x10,	i18n("RF controller")},
+					{	0x0D,	0x11,	i18n("Bluetooth")},
+					{	0x0D,	0x12,	i18n("Broadband")},
+					{	0x0D,	0x20,	i18n("Ethernet (802.11a - 5 GHz)")},
+					{	0x0D,	0x21,	i18n("Ethernet (802.11b - 2.4 GHz)")},
+					{	0x0D,	0x80,	i18n("Wireless controller")},
+					{	0x0D,	-1,	i18n("Unknown wireless controller")},
 
-										{	0x0E,	0x00,	i18n("I2O")},
-										{	0x0E,	-1,		i18n("Unknown intelligent controller")},
+					{	0x0E,	0x00,	i18n("I2O")},
+					{	0x0E,	-1,	i18n("Unknown intelligent controller")},
 
-										{	0x0F,	0x01,	i18n("Satellite TV controller")},
-										{	0x0F,	0x02,	i18n("Satellite audio communication controller")},
-										{	0x0F,	0x03,	i18n("Satellite voice communication controller")},
-										{	0x0F,	0x04,	i18n("Satellite data communication controller")},
-										{	0x0F,	-1,		i18n("Unknown satellite communications controller")},
+					{	0x0F,	0x01,	i18n("Satellite TV controller")},
+					{	0x0F,	0x02,	i18n("Satellite audio communication controller")},
+					{	0x0F,	0x03,	i18n("Satellite voice communication controller")},
+					{	0x0F,	0x04,	i18n("Satellite data communication controller")},
+					{	0x0F,	-1,	i18n("Unknown satellite communications controller")},
 
-										{	0x10,	0x00,	i18n("Network and computing encryption device")},
-										{	0x10,	0x10,	i18n("Entertainment encryption device")},
-										{	0x10,	0x80,	i18n("Encryption controller")},
-										{	0x10,	-1,		i18n("Unknown encryption controller")},
+					{	0x10,	0x00,	i18n("Network and computing encryption device")},
+					{	0x10,	0x10,	i18n("Entertainment encryption device")},
+					{	0x10,	0x80,	i18n("Encryption controller")},
+					{	0x10,	-1,	i18n("Unknown encryption controller")},
 
-										{	0x11,	0x00,	i18n("DPIO module")},
-										{	0x11,	0x01,	i18n("Performance counters")},
-										{	0x11,	0x10,	i18n("Communication synchronizer")},
-										{	0x11,	0x20,	i18n("Management card")},
-										{	0x11,	0x80,	i18n("Signal processing controller")},
-										{	0x11,	-1,		i18n("Unknown signal processing controller")},
+					{	0x11,	0x00,	i18n("DPIO module")},
+					{	0x11,	0x01,	i18n("Performance counters")},
+					{	0x11,	0x10,	i18n("Communication synchronizer")},
+					{	0x11,	0x20,	i18n("Management card")},
+					{	0x11,	0x80,	i18n("Signal processing controller")},
+					{	0x11,	-1,	i18n("Unknown signal processing controller")},
 
-										{	-1,		-1,		i18n("Unknown subdevice class")}
+					{	-1,	-1,	i18n("Unknown subdevice class")}
 };
 
 //keep -1 in last position in "id",
@@ -604,178 +604,178 @@ static const id3name devSubclass[]={	{	0x00,	0x00,	i18n("Non-VGA unclassified de
 //and in last position in "id3" with certain "id2"
 //device programming interface list
 static const id4name devInterface[]={	{	0x01,	0x05,	0x20,	i18n("single DMA")},
-										{	0x01,	0x05,	0x30,	i18n("chained DMA")},
+					{	0x01,	0x05,	0x30,	i18n("chained DMA")},
 
-										{	0x03,	0x00,	0x00,	i18n("VGA compatible")},
-										{	0x03,	0x00,	0x01,	i18n("8514 compatible")},
+					{	0x03,	0x00,	0x00,	i18n("VGA compatible")},
+					{	0x03,	0x00,	0x01,	i18n("8514 compatible")},
 
-										{	0x06,	0x04,	0x00,	i18n("Normal decode")},
-										{	0x06,	0x04,	0x01,	i18n("Subtractive decode")},
+					{	0x06,	0x04,	0x00,	i18n("Normal decode")},
+					{	0x06,	0x04,	0x01,	i18n("Subtractive decode")},
 
-										{	0x06,	0x08,	0x00,	i18n("Transparent mode")},
-										{	0x06,	0x08,	0x01,	i18n("Endpoint mode")},
+					{	0x06,	0x08,	0x00,	i18n("Transparent mode")},
+					{	0x06,	0x08,	0x01,	i18n("Endpoint mode")},
 
-										{	0x06,	0x09,	0x40,	i18n("Primary bus towards host CPU")},
-										{	0x06,	0x09,	0x40,	i18n("Secondary bus towards host CPU")},
+					{	0x06,	0x09,	0x40,	i18n("Primary bus towards host CPU")},
+					{	0x06,	0x09,	0x40,	i18n("Secondary bus towards host CPU")},
 
-										{	0x07,	0x00,	0x00,	i18n("8250")},
-										{	0x07,	0x00,	0x01,	i18n("16450")},
-										{	0x07,	0x00,	0x02,	i18n("16550")},
-										{	0x07,	0x00,	0x03,	i18n("16650")},
-										{	0x07,	0x00,	0x04,	i18n("16750")},
-										{	0x07,	0x00,	0x05,	i18n("16850")},
-										{	0x07,	0x00,	0x06,	i18n("16950")},
+					{	0x07,	0x00,	0x00,	i18n("8250")},
+					{	0x07,	0x00,	0x01,	i18n("16450")},
+					{	0x07,	0x00,	0x02,	i18n("16550")},
+					{	0x07,	0x00,	0x03,	i18n("16650")},
+					{	0x07,	0x00,	0x04,	i18n("16750")},
+					{	0x07,	0x00,	0x05,	i18n("16850")},
+					{	0x07,	0x00,	0x06,	i18n("16950")},
 
-										{	0x07,	0x01,	0x00,	i18n("SPP")},
-										{	0x07,	0x01,	0x01,	i18n("BiDir")},
-										{	0x07,	0x01,	0x02,	i18n("ECP")},
-										{	0x07,	0x01,	0x03,	i18n("IEEE1284")},
-										{	0x07,	0x01,	0xFE,	i18n("IEEE1284 Target")},
+					{	0x07,	0x01,	0x00,	i18n("SPP")},
+					{	0x07,	0x01,	0x01,	i18n("BiDir")},
+					{	0x07,	0x01,	0x02,	i18n("ECP")},
+					{	0x07,	0x01,	0x03,	i18n("IEEE1284")},
+					{	0x07,	0x01,	0xFE,	i18n("IEEE1284 Target")},
 
-										{	0x07,	0x03,	0x00,	i18n("Generic")},
-										{	0x07,	0x03,	0x01,	i18n("Hayes/16450")},
-										{	0x07,	0x03,	0x02,	i18n("Hayes/16550")},
-										{	0x07,	0x03,	0x03,	i18n("Hayes/16650")},
-										{	0x07,	0x03,	0x04,	i18n("Hayes/16750")},
+					{	0x07,	0x03,	0x00,	i18n("Generic")},
+					{	0x07,	0x03,	0x01,	i18n("Hayes/16450")},
+					{	0x07,	0x03,	0x02,	i18n("Hayes/16550")},
+					{	0x07,	0x03,	0x03,	i18n("Hayes/16650")},
+					{	0x07,	0x03,	0x04,	i18n("Hayes/16750")},
 
-										{	0x08,	0x00,	0x00,	i18n("8259")},
-										{	0x08,	0x00,	0x01,	i18n("ISA PIC")},
-										{	0x08,	0x00,	0x02,	i18n("EISA PIC")},
-										{	0x08,	0x00,	0x03,	i18n("IO-APIC")},
-										{	0x08,	0x00,	0x04,	i18n("IO(X)-APIC")},
+					{	0x08,	0x00,	0x00,	i18n("8259")},
+					{	0x08,	0x00,	0x01,	i18n("ISA PIC")},
+					{	0x08,	0x00,	0x02,	i18n("EISA PIC")},
+					{	0x08,	0x00,	0x03,	i18n("IO-APIC")},
+					{	0x08,	0x00,	0x04,	i18n("IO(X)-APIC")},
 
-										{	0x08,	0x01,	0x00,	i18n("8237")},
-										{	0x08,	0x01,	0x01,	i18n("ISA DMA")},
-										{	0x08,	0x01,	0x01,	i18n("EISA DMA")},
+					{	0x08,	0x01,	0x00,	i18n("8237")},
+					{	0x08,	0x01,	0x01,	i18n("ISA DMA")},
+					{	0x08,	0x01,	0x01,	i18n("EISA DMA")},
 
-										{	0x08,	0x02,	0x00,	i18n("8254")},
-										{	0x08,	0x02,	0x01,	i18n("ISA timer")},
-										{	0x08,	0x02,	0x01,	i18n("EISA timers")},
+					{	0x08,	0x02,	0x00,	i18n("8254")},
+					{	0x08,	0x02,	0x01,	i18n("ISA timer")},
+					{	0x08,	0x02,	0x01,	i18n("EISA timers")},
 
-										{	0x08,	0x03,	0x00,	i18n("Generic")},
-										{	0x08,	0x03,	0x01,	i18n("ISA RTC")},
+					{	0x08,	0x03,	0x00,	i18n("Generic")},
+					{	0x08,	0x03,	0x01,	i18n("ISA RTC")},
 
-										{	0x09,	0x04,	0x00,	i18n("Generic")},
-										{	0x09,	0x04,	0x01,	i18n("Extended")},
+					{	0x09,	0x04,	0x00,	i18n("Generic")},
+					{	0x09,	0x04,	0x01,	i18n("Extended")},
 
-										{	0x0C,	0x00,	0x00,	i18n("Generic")},
-										{	0x0C,	0x00,	0x01,	i18n("OHCI")},
+					{	0x0C,	0x00,	0x00,	i18n("Generic")},
+					{	0x0C,	0x00,	0x01,	i18n("OHCI")},
 
-										{	0x0C,	0x03,	0x00,	i18n("UHCI")},
-										{	0x0C,	0x03,	0x10,	i18n("OHCI")},
-										{	0x0C,	0x03,	0x20,	i18n("EHCI")},
-										{	0x0C,	0x03,	0x80,	i18n("Unspecified")},
-										{	0x0C,	0x03,	0xFE,	i18n("USB Device")},
+					{	0x0C,	0x03,	0x00,	i18n("UHCI")},
+					{	0x0C,	0x03,	0x10,	i18n("OHCI")},
+					{	0x0C,	0x03,	0x20,	i18n("EHCI")},
+					{	0x0C,	0x03,	0x80,	i18n("Unspecified")},
+					{	0x0C,	0x03,	0xFE,	i18n("USB Device")},
 
-										{	0x0C,	0x07,	0x00,	i18n("SMIC")},
-										{	0x0C,	0x07,	0x01,	i18n("Keyboard controller style")},
-										{	0x0C,	0x07,	0x02,	i18n("Block transfer")},
-									
-										{	-1,		-1,		-1,		i18n(strUnknown)}
+					{	0x0C,	0x07,	0x00,	i18n("SMIC")},
+					{	0x0C,	0x07,	0x01,	i18n("Keyboard controller style")},
+					{	0x0C,	0x07,	0x02,	i18n("Block transfer")},
+
+					{	-1,	-1,	-1,	i18n(strUnknown)}
 };
 
 
 //keep -1 in last position
 //capabilities list
 static const id2name capNames[]={{	0x01,	i18n("Power management")},
-								{	0x02,	i18n("AGP")},
-								{	0x03,	i18n("Vital product data")},
-								{	0x04,	i18n("Slot identification")},
-								{	0x05,	i18n("Message signaled interrupts")},
-								{	0x06,	i18n("CompactPCI hot swap")},
-								{	0x07,	i18n("PCI-X")},
-								{	0x08,	i18n("HyperTransport")},
-								{	0x09,	i18n("Vendor specific")},
-								{	0x0A,	i18n("Debug port")},
-								{	0x0B,	i18n("CompactPCI central resource control")},
-								{	0x0C,	i18n("PCI hot-plug")},
-								{	0x0E,	i18n("AGP x8")},
-								{	0x0F,	i18n("Secure device")},
-								{	0x10,	i18n("PCI express")},
-								{	0x11,	i18n("MSI-X")},
-								{	-1,		i18n(strUnknown)}
+				{	0x02,	i18n("AGP")},
+				{	0x03,	i18n("Vital product data")},
+				{	0x04,	i18n("Slot identification")},
+				{	0x05,	i18n("Message signaled interrupts")},
+				{	0x06,	i18n("CompactPCI hot swap")},
+				{	0x07,	i18n("PCI-X")},
+				{	0x08,	i18n("HyperTransport")},
+				{	0x09,	i18n("Vendor specific")},
+				{	0x0A,	i18n("Debug port")},
+				{	0x0B,	i18n("CompactPCI central resource control")},
+				{	0x0C,	i18n("PCI hot-plug")},
+				{	0x0E,	i18n("AGP x8")},
+				{	0x0F,	i18n("Secure device")},
+				{	0x10,	i18n("PCI express")},
+				{	0x11,	i18n("MSI-X")},
+				{	-1,	i18n(strUnknown)}
 };
 
 //keep -1 in last position
 //device selection timing
 static const id2name devSel[]={	{	0x00,	i18n("Fast")},
-								{	0x01,	i18n("Medium")},
-								{	0x02,	i18n("Slow")},
-								{	-1,		i18n(strUnknown)}
+				{	0x01,	i18n("Medium")},
+				{	0x02,	i18n("Slow")},
+				{	-1,	i18n(strUnknown)}
 };
 
 //keep -1 in last position
 //mapping type
 static const id2name mappingType[]={{	0x00,	i18n("32 bit")},
-									{	0x01,	i18n("Below 1M")},
-									{	0x02,	i18n("64 bit")},
-									{	-1,		i18n(strUnknown)}
+				{	0x01,	i18n("Below 1M")},
+				{	0x02,	i18n("64 bit")},
+				{	-1,	i18n(strUnknown)}
 };
 
 //keep -1 in last position
 //header type
 static const id2name headerType[]={	{	0x00,	i18n("Standard")},
-									{	0x01,	i18n("Bridge")},
-									{	0x02,	i18n("CardBus")},
-									{	-1,		i18n(strUnknown)}
+					{	0x01,	i18n("Bridge")},
+					{	0x02,	i18n("CardBus")},
+					{	-1,	i18n(strUnknown)}
 };
 
 //keep -1 in last position
 //AGP rate
 static const id2name agpRate[]={{	0x01,	i18n("1X")},
-								{	0x02,	i18n("2X")},
-								{	0x03,	i18n("1X & 2X")},
-								{	0x04,	i18n("4X")},
-								{	0x05,	i18n("1X & 4X")},
-								{	0x06,	i18n("2X & 4X")},
-								{	0x07,	i18n("1X & 2X & 4X")},
-								{	0x09,	i18n("4X")},
-								{	0x0A,	i18n("8X")},
-								{	0x0B,	i18n("4X & 8X")},
-								{	-1,		i18n(strUnknown)}
+				{	0x02,	i18n("2X")},
+				{	0x03,	i18n("1X & 2X")},
+				{	0x04,	i18n("4X")},
+				{	0x05,	i18n("1X & 4X")},
+				{	0x06,	i18n("2X & 4X")},
+				{	0x07,	i18n("1X & 2X & 4X")},
+				{	0x09,	i18n("4X")},
+				{	0x0A,	i18n("8X")},
+				{	0x0B,	i18n("4X & 8X")},
+				{	-1,	i18n(strUnknown)}
 };
 
 //keep -1 in last position
 //AGP calibrating cycle
 static const id2name calCycle[]={	{	0x00,	i18n("4 ms")},
-									{	0x01,	i18n("16 ms")},
-									{	0x02,	i18n("64 ms")},
-									{	0x03,	i18n("256 ms")},
-									{	0x07,	i18n("Not needed")},
-									{	-1,		i18n(strUnknown)}
+					{	0x01,	i18n("16 ms")},
+					{	0x02,	i18n("64 ms")},
+					{	0x03,	i18n("256 ms")},
+					{	0x07,	i18n("Not needed")},
+					{	-1,	i18n(strUnknown)}
 };
 
 //keep -1 in last position
 //PM auxiliary current
 static const id2name auxCur[]={	{	0x00,	i18n("0 (self powered)")},
-								{	0x01,	i18n("55 mA")},
-								{	0x02,	i18n("100 mA")},
-								{	0x03,	i18n("160 mA")},
-								{	0x04,	i18n("220 mA")},
-								{	0x05,	i18n("270 mA")},
-								{	0x06,	i18n("320 mA")},
-								{	0x07,	i18n("375 mA")},
-								{	-1,		i18n(strUnknown)}
+				{	0x01,	i18n("55 mA")},
+				{	0x02,	i18n("100 mA")},
+				{	0x03,	i18n("160 mA")},
+				{	0x04,	i18n("220 mA")},
+				{	0x05,	i18n("270 mA")},
+				{	0x06,	i18n("320 mA")},
+				{	0x07,	i18n("375 mA")},
+				{	-1,	i18n(strUnknown)}
 };
 
 //keep -1 in last position
 //PM power state
 static const id2name powerState[]={	{	0x00,	i18n("D0")},
-									{	0x01,	i18n("D1")},
-									{	0x02,	i18n("D2")},
-									{	0x03,	i18n("D3 hot")},
-									{	-1,		i18n(strUnknown)}
+					{	0x01,	i18n("D1")},
+					{	0x02,	i18n("D2")},
+					{	0x03,	i18n("D3 hot")},
+					{	-1,	i18n(strUnknown)}
 };
 
 //keep -1 in last position
 //MSI multiple message
 static const id2name multipleMessage[]={{	0x00,	i18n("1 vector")},
-										{	0x01,	i18n("2 vectors")},
-										{	0x02,	i18n("4 vectors")},
-										{	0x03,	i18n("8 vectors")},
-										{	0x04,	i18n("16 vectors")},
-										{	0x05,	i18n("32 vectors")},
-										{	-1,		i18n(strUnknown)}
+					{	0x01,	i18n("2 vectors")},
+					{	0x02,	i18n("4 vectors")},
+					{	0x03,	i18n("8 vectors")},
+					{	0x04,	i18n("16 vectors")},
+					{	0x05,	i18n("32 vectors")},
+					{	-1,	i18n(strUnknown)}
 };
 
 static const QString& getNameById(const id2name *const table,int id);
