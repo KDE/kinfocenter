@@ -454,6 +454,10 @@ static const id2name devClass[]={{	0x00,	i18n("Unclassified device")},
 				{	0x0F,	i18n("Satellite communications controller")},
 				{	0x10,	i18n("Encryption controller")},
 				{	0x11,	i18n("Signal processing controller")},
+				{	0x12,	i18n("Processing accelerators")},
+				{	0x13,	i18n("Non-Essential Instrumentation")},
+				{	0x13,	i18n("Coprocessor")},
+				{	0xFF,	i18n("Unassigned class")},
 				{	-1,	i18n("Unknown device class")}
 };
 
@@ -470,7 +474,9 @@ static const id3name devSubclass[]={	{	0x00,	0x00,	i18n("Non-VGA unclassified de
 					{	0x01,	0x03,	i18n("IPI bus controller")},
 					{	0x01,	0x04,	i18n("RAID bus controller")},
 					{	0x01,	0x05,	i18n("ATA controller")},
-					{	0x01,	0x06,	i18n("Serial ATA direct port access")},
+					{	0x01,	0x06,	i18n("SATA controller")},
+					{	0x01,	0x07,	i18n("Serial Attached SCSI controller")},
+					{	0x01,	0x08,	i18n("Non-Volatile memory controller")},
 					{	0x01,	0x80,	i18n("Mass storage controller")},
 					{	0x01,	-1,	i18n("Unknown storage controller")},
 
@@ -480,7 +486,9 @@ static const id3name devSubclass[]={	{	0x00,	0x00,	i18n("Non-VGA unclassified de
 					{	0x02,	0x03,	i18n("ATM network controller")},
 					{	0x02,	0x04,	i18n("ISDN controller")},
 					{	0x02,	0x05,	i18n("WorldFip controller")},
-					{	0x02,	0x06,	i18n("PICMG 2.14 multi computing")},
+					{	0x02,	0x06,	i18n("PICMG controller")},
+					{	0x02,	0x07,	i18n("Infiniband controller")},
+					{	0x02,	0x08,	i18n("Fabric controller")},
 					{	0x02,	0x80,	i18n("Network controller")},
 					{	0x02,	-1,	i18n("Unknown network controller")},
 
@@ -493,6 +501,7 @@ static const id3name devSubclass[]={	{	0x00,	0x00,	i18n("Non-VGA unclassified de
 					{	0x04,	0x00,	i18n("Multimedia video controller")},
 					{	0x04,	0x01,	i18n("Multimedia audio controller")},
 					{	0x04,	0x02,	i18n("Computer telephony device")},
+					{	0x04,	0x03,	i18n("Audio device")},
 					{	0x04,	0x80,	i18n("Multimedia controller")},
 					{	0x04,	-1,	i18n("Unknown multimedia controller")},
 
@@ -519,8 +528,8 @@ static const id3name devSubclass[]={	{	0x00,	0x00,	i18n("Non-VGA unclassified de
 					{	0x07,	0x01,	i18n("Parallel controller")},
 					{	0x07,	0x02,	i18n("Multiport serial controller")},
 					{	0x07,	0x03,	i18n("Modem")},
-					{	0x07,	0x04,	i18n("GPIB (IEEE 488.1/2) controller")},
-					{	0x07,	0x05,	i18n("Smart card")},
+					{	0x07,	0x04,	i18n("GPIB controller")},
+					{	0x07,	0x05,	i18n("Smart card controller")},
 					{	0x07,	0x80,	i18n("Communication controller")},
 					{	0x07,	-1,	i18n("Unknown communication controller")},
 
@@ -529,7 +538,9 @@ static const id3name devSubclass[]={	{	0x00,	0x00,	i18n("Non-VGA unclassified de
 					{	0x08,	0x02,	i18n("Timer")},
 					{	0x08,	0x03,	i18n("RTC")},
 					{	0x08,	0x04,	i18n("PCI Hot-plug controller")},
-					{	0x08,	0x80,	i18n("System peripheral")},
+					{	0x08,	0x05,	i18n("SD Host controller")},
+					{	0x08,	0x06,	i18n("SD Host controller")},
+					{	0x08,	0x80,	i18n("IOMMU")},
 					{	0x08,	-1,	i18n("Unknown system peripheral")},
 
 					{	0x09,	0x00,	i18n("Keyboard controller")},
@@ -592,9 +603,12 @@ static const id3name devSubclass[]={	{	0x00,	0x00,	i18n("Non-VGA unclassified de
 					{	0x11,	0x00,	i18n("DPIO module")},
 					{	0x11,	0x01,	i18n("Performance counters")},
 					{	0x11,	0x10,	i18n("Communication synchronizer")},
-					{	0x11,	0x20,	i18n("Management card")},
+					{	0x11,	0x20,	i18n("Signal processing management")},
 					{	0x11,	0x80,	i18n("Signal processing controller")},
 					{	0x11,	-1,	i18n("Unknown signal processing controller")},
+
+					{	0x12,	0x00,	i18n("Processing accelerators")},
+					{	0x12,	-1,	i18n("Unknown processing accelerator")},
 
 					{	-1,	-1,	i18n("Unknown subdevice class")}
 };
@@ -603,11 +617,29 @@ static const id3name devSubclass[]={	{	0x00,	0x00,	i18n("Non-VGA unclassified de
 //in last position in "id2" with certain "id",
 //and in last position in "id3" with certain "id2"
 //device programming interface list
-static const id4name devInterface[]={	{	0x01,	0x05,	0x20,	i18n("single DMA")},
-					{	0x01,	0x05,	0x30,	i18n("chained DMA")},
+static const id4name devInterface[]={	{	0x01,	0x01,	0x00,	i18n("ISA Compatibility mode-only controller")},
+					{	0x01,	0x01,	0x05,	i18n("PCI native mode-only controller")},
+					{	0x01,	0x01,	0x0A,	i18n("ISA Compatibility mode controller, supports both channels switched to PCI native mode")},
+					{	0x01,	0x01,	0x0F,	i18n("PCI native mode controller, supports both channels switched to ISA compatibility mode")},
+					{	0x01,	0x01,	0x80,	i18n("ISA Compatibility mode-only controller, supports bus mastering")},
+					{	0x01,	0x01,	0x85,	i18n("PCI native mode-only controller, supports bus mastering")},
+					{	0x01,	0x01,	0x8A,	i18n("ISA Compatibility mode controller, supports both channels switched to PCI native mode, supports bus mastering")},
+					{	0x01,	0x01,	0x8F,	i18n("PCI native mode controller, supports both channels switched to ISA compatibility mode, supports bus mastering")},
 
-					{	0x03,	0x00,	0x00,	i18n("VGA compatible")},
-					{	0x03,	0x00,	0x01,	i18n("8514 compatible")},
+					{	0x01,	0x05,	0x20,	i18n("ADMA single stepping")},
+					{	0x01,	0x05,	0x30,	i18n("ADMA continuous operation")},
+
+					{	0x01,	0x06,	0x00,	i18n("Vendor specific")},
+					{	0x01,	0x06,	0x01,	i18n("AHCI 1.0")},
+					{	0x01,	0x06,	0x02,	i18n("Serial Storage Bus")},
+
+					{	0x01,	0x07,	0x01,	i18n("Serial Storage Bus")},
+
+					{	0x01,	0x08,	0x01,	i18n("NVMHCI")},
+					{	0x01,	0x08,	0x02,	i18n("NVM Express")},
+
+					{	0x03,	0x00,	0x00,	i18n("VGA controller")},
+					{	0x03,	0x00,	0x01,	i18n("8514 controller")},
 
 					{	0x06,	0x04,	0x00,	i18n("Normal decode")},
 					{	0x06,	0x04,	0x01,	i18n("Subtractive decode")},
@@ -650,7 +682,8 @@ static const id4name devInterface[]={	{	0x01,	0x05,	0x20,	i18n("single DMA")},
 
 					{	0x08,	0x02,	0x00,	i18n("8254")},
 					{	0x08,	0x02,	0x01,	i18n("ISA timer")},
-					{	0x08,	0x02,	0x01,	i18n("EISA timers")},
+					{	0x08,	0x02,	0x02,	i18n("EISA timers")},
+					{	0x08,	0x02,	0x03,	i18n("HPET")},
 
 					{	0x08,	0x03,	0x00,	i18n("Generic")},
 					{	0x08,	0x03,	0x01,	i18n("ISA RTC")},
@@ -664,6 +697,7 @@ static const id4name devInterface[]={	{	0x01,	0x05,	0x20,	i18n("single DMA")},
 					{	0x0C,	0x03,	0x00,	i18n("UHCI")},
 					{	0x0C,	0x03,	0x10,	i18n("OHCI")},
 					{	0x0C,	0x03,	0x20,	i18n("EHCI")},
+					{	0x0C,	0x03,	0x20,	i18n("XHCI")},
 					{	0x0C,	0x03,	0x80,	i18n("Unspecified")},
 					{	0x0C,	0x03,	0xFE,	i18n("USB Device")},
 
@@ -693,6 +727,7 @@ static const id2name capNames[]={{	0x01,	i18n("Power management")},
 				{	0x0F,	i18n("Secure device")},
 				{	0x10,	i18n("PCI express")},
 				{	0x11,	i18n("MSI-X")},
+				{	0x13,	i18n("PCI Advanced Features")},
 				{	-1,	i18n(strUnknown)}
 };
 
