@@ -7,7 +7,7 @@
   <name xml:lang="ca">Centre d'informació</name>
   <name xml:lang="ca-valencia">Centre d'informació</name>
   <name xml:lang="cs">Informační centrum</name>
-  <name xml:lang="de">Info-Center</name>
+  <name xml:lang="de">Infozentrum</name>
   <name xml:lang="en-GB">Info Centre</name>
   <name xml:lang="es">Centro de información</name>
   <name xml:lang="eu">Info-gunea</name>
@@ -32,6 +32,7 @@
   <summary>Centralized and convenient overview of system information</summary>
   <summary xml:lang="ca">Resum centralitzat i pràctic de la informació del sistema</summary>
   <summary xml:lang="ca-valencia">Resum centralitzat i pràctic de la informació del sistema</summary>
+  <summary xml:lang="de">Zentrale Übersicht über Systeminformationen</summary>
   <summary xml:lang="en-GB">Centralised and convenient overview of system information</summary>
   <summary xml:lang="es">Resumen práctico y centralizado de la información del sistema</summary>
   <summary xml:lang="eu">Sistema-informazioaren ikuspegi-orokor zentralizatu eta praktikoa</summary>
@@ -56,6 +57,7 @@
      overview of your system and desktop environment.</p>
     <p xml:lang="ca">El Centre d'informació proporciona una vista general centralitzada i còmoda del sistema i l'escriptori.</p>
     <p xml:lang="ca-valencia">El Centre d'informació proporciona una vista general centralitzada i còmoda del sistema i l'escriptori.</p>
+    <p xml:lang="de">Das  Infozentrum bietet Ihnen einen zentralisierten und bequemen Überblick über Ihr System und die Arbeitsumgebung.</p>
     <p xml:lang="en-GB">The Info Centre provides you with a centralised and convenient overview of your system and desktop environment.</p>
     <p xml:lang="es">El centro de información le proporciona un resumen práctico y centralizado del entorno de su sistema y de su escritorio.</p>
     <p xml:lang="eu">Info-guneak zure sistemaren eta mahaigain ingurunearen ikuspegi-orokor zentralizatu eta praktiko bat ematen dizu.</p>
@@ -80,6 +82,7 @@
     <p xml:lang="ca">El centre d'informació està format per múltiples mòduls. Cadascun és una aplicació individual, però el centre d'informació els reuneix tots en un lloc comú.</p>
     <p xml:lang="ca-valencia">El centre d'informació està format per múltiples mòduls. Cadascun és una aplicació individual, però el centre d'informació els reuneix tots en un lloc comú.</p>
     <p xml:lang="cs">Informační centrum se skládá z celé řady modulů. Každý modul je ve skutečnosti samostatná aplikace, informační centrum ale všechny tyto aplikace sdružuje do jednoho místa.</p>
+    <p xml:lang="de">Das Infozentrum besteht aus mehreren Modulen. Jedes Modul ist eine separate Anwendung, aber das Infozentrum ordnet all diese Programme bequem an einem Ort an.</p>
     <p xml:lang="en-GB">The information centre is made up of multiple modules. Each module is a separate application, but the information center organizes all of these programs into a convenient location.</p>
     <p xml:lang="es">El centro de información está compuesto por múltiples módulos. Cada módulo es una aplicación separada, aunque el centro de información organiza todos estos programas en un lugar adecuado.</p>
     <p xml:lang="eu">Informazio gunea modulu anitzez osatua dago. Modulu bakoitza aplikazio bereizi bat da, baino informazio guneak programa guzti hauek kokaleku praktiko batean kokatzen ditu.</p>
