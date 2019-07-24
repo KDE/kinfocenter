@@ -8,7 +8,7 @@ X-KDE-ServiceTypes=KCModule
 X-KDE-ParentApp=kinfocenter
 X-KDE-PluginKeyword=kcm-about-distro
 X-KDE-Weight=0
-X-KDE-Keywords=information,distribution,distro,system,kernel,qt,kde
+X-KDE-Keywords=about,info,information,distribution,distro,system,kernel,qt,kde
 X-KDE-Keywords[ar]=information,distribution,distro,system,kernel,qt,kde,معلومات,توزيعة,نظام,نواة,كيوت,كدي
 X-KDE-Keywords[ca]=informació,distribució,distro,sistema,nucli,qt,kde
 X-KDE-Keywords[ca@valencia]=informació,distribució,distro,sistema,nucli,qt,kde
@@ -50,7 +50,7 @@ X-KDE-Keywords[zh_CN]=information,distribution,distro,system,kernel,qt,kde,信�
 X-KDE-Keywords[zh_TW]=information,distribution,distro,system,kernel,qt,kde
 Categories=Qt;KDE;X-KDE-settings-personalization;X-KDE-information;
 
-Name=About System
+Name=System Information
 Name[ar]=عن النّظام
 Name[ca]=Quant al sistema
 Name[ca@valencia]=Quant al sistema
