@@ -7,6 +7,7 @@ X-KDE-Library=kcm_about_distro
 X-KDE-ServiceTypes=KCModule
 X-KDE-ParentApp=kinfocenter
 X-KDE-PluginKeyword=kcm-about-distro
+X-KDE-System-Settings-Parent-Category=system-administration
 X-KDE-Weight=0
 X-KDE-Keywords=about,info,information,distribution,distro,system,kernel,qt,kde
 X-KDE-Keywords[ca]=quant a,info,informació,distribució,distro,sistema,nucli,qt,kde
