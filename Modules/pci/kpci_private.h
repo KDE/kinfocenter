@@ -45,6 +45,15 @@ struct id4name {
 	QString name;
 };
 
+/* Following structures MUST BE packed, otherwise variables will be mapped to
+   wrong places. Q_PACKED macro seems to not work very well. `#pragma pack` are
+   more widely adopted, and should be ignored if not supported.
+
+   TODO: It will be good to check if structures was packed by compiler, and
+         disable this module entirely if not.
+*/
+#pragma pack(push, 1)
+
 union pciInfo {
 	unsigned char raw[256];
 	struct {
@@ -431,6 +440,8 @@ union msiInfo {
 		} payload Q_PACKED;
 	} cooked Q_PACKED;
 } Q_PACKED;
+
+#pragma pack(pop)
 
 //In following arrays -1 mean default value
 
