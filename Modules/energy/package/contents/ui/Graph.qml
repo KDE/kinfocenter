@@ -131,7 +131,7 @@ Canvas
 
             //grid line
             c.moveTo(xPadding,y)
-            c.lineTo(canvas.width - xPadding, y)
+            c.lineTo(canvas.width, y)
             c.stroke()
         }
     }
