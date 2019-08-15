@@ -36,11 +36,6 @@ using namespace KQuickAddons;
 
 KCMFileIndexer::KCMFileIndexer(QObject *parent, const QVariantList &args) : ConfigModule(parent, args)
 {
-    //This flag seems to be needed in order for QQuickWidget to work
-    //see https://bugreports.qt-project.org/browse/QTBUG-40765
-    //also, it seems to work only if set in the kcm, not in the systemsettings' main
-    qApp->setAttribute(Qt::AA_DontCreateNativeWidgetSiblings);
-
     KAboutData *about = new KAboutData(QStringLiteral("kcm_fileindexermonitor"), i18n("File Indexer Monitor"),
                                        QStringLiteral("0.1"), QString(), KAboutLicense::GPL);
     about->addAuthor(i18n("Pinak Ahuja"), QString(), QStringLiteral("pinak.ahuja@gmail.com"));
