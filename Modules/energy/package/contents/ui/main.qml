@@ -69,12 +69,6 @@ KCM.SimpleKCM {
             ]
         },
         {
-            title: i18n("System"),
-            data: [
-                {label: i18n("Has power supply"), value: "powerSupply"}
-            ]
-        },
-        {
             title: i18n("Environment"),
             data: [
                 {label: i18n("Temperature"), value: "temperature", unit: i18nc("Degree Celsius", "°C"), precision: 2}
