@@ -54,7 +54,8 @@ KCM.SimpleKCM {
             title: i18n("Battery"),
             data: [
                 {label: i18n("Rechargeable"), value: "rechargeable"},
-                {label: i18n("Charge state"), value: "chargeState", modifier: "chargeState"}
+                {label: i18n("Charge state"), value: "chargeState", modifier: "chargeState"},
+                {label: i18n("Capacity degradation"), value: "capacity", unit: i18n("%"), precision: 0}
             ]
         },
         {
@@ -62,7 +63,6 @@ KCM.SimpleKCM {
             data: [
                 {label: i18nc("current power draw from the battery in W", "Consumption"), value: "energyRate", unit: i18nc("Watt", "W"), precision: 2},
                 {label: i18n("Voltage"), value: "voltage", unit: i18nc("Volt", "V"), precision: 2},
-                {label: i18n("Capacity"), value: "capacity", unit: i18n("%"), precision: 0},
                 {label: i18n("Remaining energy"), value: "energy", unit: i18nc("Watt-hours", "Wh"), precision: 2},
                 {label: i18n("Last full"), value: "energyFull", unit: i18nc("Watt-hours", "Wh"), precision: 2},
                 {label: i18n("Full design"), value: "energyFullDesign", unit: i18nc("Watt-hours", "Wh"), precision: 2}
@@ -429,6 +429,12 @@ KCM.SimpleKCM {
                             Kirigami.FormData.label: i18n("%1:", modelData.label)
                             text: {
                                 var value = currentBattery[modelData.value]
+
+                                // There's no "degradation" value we can look up, so
+                                // instead, process the capacity value to produce it
+                                if (modelData.value == "capacity") {
+                                    value = 100 - value
+                                }
 
                                 if (typeof value === "boolean") {
                                     if (value) {
