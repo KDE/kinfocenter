@@ -37,11 +37,15 @@ KCM.SimpleKCM {
 
     property QtObject currentBattery: null
     property string currentUdi: ""
+    property string currentVendor: ""
+    property string currentProduct: ""
     property bool compact: (root.width / units.gridUnit) < 25
 
     onCurrentBatteryChanged: {
         if (!currentBattery) {
-            currentBattery = kcm.batteries.get(0)
+            currentBattery = kcm.batteries.battery(0)
+            currentVendor = kcm.batteries.vendor(0)
+            currentProduct = kcm.batteries.product(0)
             currentUdi = kcm.batteries.udi(0)
         }
     }
@@ -55,7 +59,11 @@ KCM.SimpleKCM {
             data: [
                 {label: i18n("Rechargeable"), value: "rechargeable"},
                 {label: i18n("Charge state"), value: "chargeState", modifier: "chargeState"},
-                {label: i18n("Capacity degradation"), value: "capacity", unit: i18n("%"), precision: 0}
+                {label: i18n("Current charge"), value: "chargePercent", unit: i18n("%"), precision: 0},
+                {label: i18n("Capacity degradation"), value: "capacity", unit: i18n("%"), precision: 0},
+                {label: i18n("Vendor"), value: "vendor", source:"Vendor"},
+                {label: i18n("Model"), value: "model", source:"Product"},
+                {label: i18n("Serial Number"), value: "serial"}
             ]
         },
         {
@@ -74,14 +82,6 @@ KCM.SimpleKCM {
                 {label: i18n("Temperature"), value: "temperature", unit: i18nc("Degree Celsius", "°C"), precision: 2}
             ]
         },
-        {
-            title: i18n("Manufacturer"),
-            data: [
-                {label: i18n("Vendor"), value: "vendor"},
-                {label: i18n("Model"), value: "model"},
-                {label: i18n("Serial Number"), value: "serial"}
-            ]
-        }
     ]
 
     function modifier_chargeState(value) {
@@ -95,6 +95,8 @@ KCM.SimpleKCM {
 
     Component.onCompleted: {
         currentBattery = kcm.batteries.get(0)
+        currentVendor = kcm.batteries.vendor(0)
+        currentProduct = kcm.batteries.product(0)
         currentUdi = kcm.batteries.udi(0)
     }
 
@@ -126,7 +128,10 @@ KCM.SimpleKCM {
                         checkable: true
                         onClicked: {
                             root.currentUdi = model.udi
+                            root.currentVendor = model.vendor
+                            root.currentProduct = model.product
                             root.currentBattery = model.battery
+
                             // override checked property
                             checked = Qt.binding(function() {
                                 return model.battery == root.currentBattery
@@ -422,7 +427,12 @@ KCM.SimpleKCM {
                             id: valueLabel
                             Kirigami.FormData.label: i18n("%1:", modelData.label)
                             text: {
-                                var value = currentBattery[modelData.value]
+                                var value;
+                                if (modelData.source) {
+                                    value = root["current" + modelData.source];
+                                } else {
+                                    value = currentBattery[modelData.value]
+                                }
 
                                 // There's no "degradation" value we can look up, so
                                 // instead, process the capacity value to produce it

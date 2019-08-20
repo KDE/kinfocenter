@@ -86,6 +86,24 @@ QString BatteryModel::udi(int index) const
     return m_batteries.at(index).udi();
 }
 
+QString BatteryModel::vendor(int index) const {
+
+    if (index < 0 || index >= m_batteries.count()) {
+        return QString();
+    }
+    const Solid::Device device = m_batteries.value(index);
+    return device.vendor();
+}
+
+QString BatteryModel::product(int index) const {
+
+    if (index < 0 || index >= m_batteries.count()) {
+        return QString();
+    }
+    const Solid::Device device = m_batteries.value(index);
+    return device.product();
+}
+
 QVariant BatteryModel::data(const QModelIndex &index, int role) const
 {
     if (index.row() < 0 || index.row() >= m_batteries.count()) {
@@ -94,6 +112,12 @@ QVariant BatteryModel::data(const QModelIndex &index, int role) const
 
     if (role == BatteryRole) {
         return QVariant::fromValue(m_batteries.value(index.row()).as<Solid::Battery>());
+    } else if (role == ProductRole) {
+        const Solid::Device device = m_batteries.value(index.row());
+        return device.product();
+    } else if (role == VendorRole) {
+        const Solid::Device device = m_batteries.value(index.row());
+        return device.vendor();
     } else if (role == UdiRole) {
         return m_batteries.at(index.row()).udi();
     }
@@ -111,6 +135,8 @@ QHash<int, QByteArray> BatteryModel::roleNames() const
 {
     return {
         {BatteryRole, "battery"},
+        {VendorRole, "vendor"},
+        {ProductRole, "product"},
         {UdiRole, "udi"}
     };
 }
