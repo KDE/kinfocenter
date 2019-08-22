@@ -27,7 +27,6 @@ import org.kde.kinfocenter.energy.private 1.0
 
 import org.kde.plasma.core 2.0 as PlasmaCore
 
-import org.kde.plasma.workspace.components 2.0 as WorkspaceComponents
 import org.kde.kcm 1.1 as KCM
 
 KCM.SimpleKCM {
@@ -110,7 +109,7 @@ KCM.SimpleKCM {
         QQC2.ScrollView {
             id: tabView
             Layout.fillWidth: true
-            Layout.minimumHeight: units.gridUnit * 3
+            Layout.minimumHeight: units.gridUnit * 4
             Layout.maximumHeight: Layout.minimumHeight
             visible: kcm.batteries.count > 1
 
@@ -121,7 +120,7 @@ KCM.SimpleKCM {
 
                     QQC2.Button {
                         id: button
-                        width: height
+                        width: units.gridUnit * 10
                         height: tabView.height
                         checked: model.battery == root.currentBattery
                         checkable: true
@@ -142,36 +141,60 @@ KCM.SimpleKCM {
                         ColumnLayout {
                             anchors {
                                 fill: parent
-                                margins: units.smallSpacing
+                                margins: units.smallSpacing * 2
                             }
-                            spacing: 0
+                            RowLayout {
 
-                            WorkspaceComponents.BatteryIcon {
-                                Layout.fillWidth: true
-                                Layout.fillHeight: true
-                                hasBattery: true
-                                batteryType: {
-                                    switch(model.battery.type) {
-                                    case 3: return "Battery"
-                                    case 2: return "Ups"
-                                    case 9: return "Monitor"
-                                    case 4: return "Mouse"
-                                    case 5: return "Keyboard"
-                                    case 1: return "Pda"
-                                    case 7: return "Phone"
-                                    default: return "Unknown"
+                                Kirigami.Icon {
+                                    id: batteryIcon
+                                    Layout.preferredWidth: Kirigami.Units.iconSizes.smallMedium
+                                    Layout.preferredHeight: Layout.preferredWidth
+                                    source: {
+                                        switch(model.battery.type) {
+                                        case 3: return model.battery.chargeState === 1 ? "battery-full-charging" : "battery-full"
+                                        case 2: return "battery-ups"
+                                        case 9: return "monitor"
+                                        case 4: return "input-mouse"
+                                        case 5: return "input-keyboard"
+                                        case 1: return "phone"
+                                        case 7: return "smartphone"
+                                        default: return "paint-unknown"
+                                        }
                                     }
                                 }
-                                percent: model.battery.chargePercent
-                                //pluggedIn: model.battery.chargeState === 1 // Makes it hard to see
+
+                                QQC2.Label {
+                                    Layout.fillWidth: true
+                                    text: {
+                                        switch(model.battery.type) {
+                                        case 3: return i18n("Internal battery")
+                                        case 2: return i18n("UPS battery")
+                                        case 9: return i18n("Monitor battery")
+                                        case 4: return i18n("Mouse battery")
+                                        case 5: return i18n("Keyboard battery")
+                                        case 1: return i18n("PDA battery")
+                                        case 7: return i18n("Phone battery")
+                                        default: return i18n("Unknown battery")
+                                        }
+                                    }
+                                    elide: Text.ElideRight
+                                }
                             }
 
-                            QQC2.ProgressBar { // TODO make progress bar not eat mouse events
-                                Layout.fillWidth: true
-                                from: 0
-                                to: 100
-                                value: model.battery.chargePercent
-                                enabled: button.checked ? false : true
+                            RowLayout {
+                                QQC2.ProgressBar {
+                                    id: percentageSlider
+                                    Layout.fillWidth: true
+                                    from: 0
+                                    to: 100
+                                    value: model.battery.chargePercent
+                                }
+
+                                QQC2.Label {
+                                    text: model.battery.chargeState === 1 ?
+                                        i18nc("Battery charge percentage", "%1% (Charging)", Math.round(percentageSlider.value)) :
+                                        i18nc("Battery charge percentage", "%1%", Math.round(percentageSlider.value))
+                                }
                             }
                         }
                     }
