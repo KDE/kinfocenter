@@ -647,7 +647,7 @@ static QTreeWidgetItem *print_screen_info(QTreeWidgetItem *l1, QTreeWidgetItem *
     	print_extension_list(gli.glExtensions, l3);
 
 #if KCM_HAVE_GLX
-        if (QGuiApplication::platformName() == QStringLiteral("xcb")) {
+        if (QGuiApplication::platformName() == QLatin1String("xcb")) {
             l3 = newItem(l2, l3, i18n("Implementation specific"));
             print_limits(l3, gli.glExtensions, strstr(gli.clientExtensions, "GLX_ARB_get_proc_address") != nullptr);
         }
@@ -943,8 +943,8 @@ bool GetInfo_OpenGL(QTreeWidget *treeWidget)
 {
     QTreeWidgetItem *l1, *l2 = nullptr;
 
-    static bool isX11 = QGuiApplication::platformName() == QStringLiteral("xcb");
-    static bool isWayland = QGuiApplication::platformName().contains(QStringLiteral("wayland"));
+    static bool isX11 = QGuiApplication::platformName() == QLatin1String("xcb");
+    static bool isWayland = QGuiApplication::platformName().contains(QLatin1String("wayland"));
 
     QTreeWidgetItem *header = new QTreeWidgetItem();
     header->setText(0, i18n("Information"));

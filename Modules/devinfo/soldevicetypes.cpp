@@ -103,7 +103,7 @@ QVListLayout *SolProcessorDevice::infoPanelLayout()
            << i18n("Max Speed: ")
            << InfoPanel::friendlyString(QString::number(prodev->maxSpeed()))
            << i18n("Supported Instruction Sets: ")
-           << extensions.join(QStringLiteral("\n"));
+           << extensions.join(QLatin1String("\n"));
 
     deviceInfoLayout->applyQListToLayout(labels);
     return deviceInfoLayout;

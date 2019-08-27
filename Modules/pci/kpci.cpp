@@ -94,14 +94,14 @@ static QTreeWidgetItem* addVendor(QTreeWidgetItem *parent, QTreeWidgetItem *afte
 	if (pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_VENDOR, info->cooked.vendor, 0, 0, 0)!=nullptr) {
 		//line.setAscii(nameBuffer); //not work, workaround below
 		line = QString::fromLatin1(pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_VENDOR, info->cooked.vendor, 0, 0, 0));
-		if (line.contains(QStringLiteral("Unknown"))==0) {
+		if (line.contains(QLatin1String("Unknown"))==0) {
 			isVendor=true;
 			topname=line;
 			after=create(parent, i18n("Vendor"), line+value.sprintf(" (0x%04X)", info->cooked.vendor));
 			if (pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_DEVICE, info->cooked.vendor, info->cooked.device, 0, 0)!=nullptr) {
 				//line.setAscii(nameBuffer); //not work, workaround below
 				line = QString::fromLatin1(pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_DEVICE, info->cooked.vendor, info->cooked.device, 0, 0));
-				if (line.contains(QStringLiteral("Unknown"))==0) {
+				if (line.contains(QLatin1String("Unknown"))==0) {
 					isDevice=true;
 					topname+=QStringLiteral(" ")+line;
 					after=create(parent, i18n("Device"), line+value.sprintf(" (0x%04X)", info->cooked.device));
@@ -111,7 +111,7 @@ static QTreeWidgetItem* addVendor(QTreeWidgetItem *parent, QTreeWidgetItem *afte
 					else if (pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_DEVICE|PCI_LOOKUP_SUBSYSTEM, info->cooked.vendor, info->cooked.device, subvendor, subdevice)!=nullptr) {
 						//line.setAscii(nameBuffer); //not work, workaround below
 						line = QString::fromLatin1(pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_DEVICE|PCI_LOOKUP_SUBSYSTEM, info->cooked.vendor, info->cooked.device, subvendor, subdevice));
-						if (line.contains(QStringLiteral("Unknown"))==0) {
+						if (line.contains(QLatin1String("Unknown"))==0) {
 							isSub=true;
 							after=create(parent, i18n("Subsystem"), line+value.sprintf(" (0x%04X:0x%04X)", subvendor, subdevice));
 						}//if
@@ -131,7 +131,7 @@ static QTreeWidgetItem* addVendor(QTreeWidgetItem *parent, QTreeWidgetItem *afte
 		if (pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_VENDOR, subvendor, 0, 0, 0)!=nullptr) {
 			//line.setAscii(nameBuffer); //not work, workaround below
 			line = QString::fromLatin1(pci_lookup_name(PCIAccess, nameBuffer, NAME_BUFFER_SIZE, PCI_LOOKUP_VENDOR, subvendor, 0, 0, 0));
-			if (line.contains(QStringLiteral("Unknown"))==0) {
+			if (line.contains(QLatin1String("Unknown"))==0) {
 				after=create(parent, i18n("Subsystem"), line+i18n(" - device:")+value.sprintf(" 0x%04X (0x%04X:0x%04X)", subdevice, subvendor, subdevice));
 			}//if
 			else {

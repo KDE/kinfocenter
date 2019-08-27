@@ -256,7 +256,7 @@ void Module::loadHardware()
         names.append(QStringLiteral("%1 × %2").arg(count).arg(name));
     }
 
-    const QString processorLabel = names.join(QStringLiteral(", "));
+    const QString processorLabel = names.join(QLatin1String(", "));
     ui->processorLabel->setText(processorLabel);
     if (ui->processorLabel->text().isEmpty()) {
         ui->processor->setHidden(true);
