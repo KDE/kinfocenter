@@ -65,45 +65,6 @@ BatteryModel::BatteryModel(QObject *parent) : QAbstractListModel(parent)
     });
 }
 
-Solid::Battery *BatteryModel::get(int index) const
-{
-    if (index < 0 || index >= m_batteries.count()) {
-        return nullptr;
-    }
-
-    Solid::Battery* battery = m_batteries.value(index).as<Solid::Battery>();
-
-    QQmlEngine::setObjectOwnership(battery, QQmlEngine::CppOwnership);
-    return battery;
-}
-
-QString BatteryModel::udi(int index) const
-{
-    if (index < 0 || index >= m_batteries.count()) {
-        return QString();
-    }
-
-    return m_batteries.at(index).udi();
-}
-
-QString BatteryModel::vendor(int index) const {
-
-    if (index < 0 || index >= m_batteries.count()) {
-        return QString();
-    }
-    const Solid::Device device = m_batteries.value(index);
-    return device.vendor();
-}
-
-QString BatteryModel::product(int index) const {
-
-    if (index < 0 || index >= m_batteries.count()) {
-        return QString();
-    }
-    const Solid::Device device = m_batteries.value(index);
-    return device.product();
-}
-
 QVariant BatteryModel::data(const QModelIndex &index, int role) const
 {
     if (index.row() < 0 || index.row() >= m_batteries.count()) {

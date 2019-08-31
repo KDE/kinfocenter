@@ -41,12 +41,18 @@ KCM.SimpleKCM {
     property string currentProduct: ""
     property bool compact: (root.width / units.gridUnit) < 25
 
+    function initCurrentBattery() {
+        currentBattery = kcm.batteries.data(kcm.batteries.index(0, 0), BatteryModel.BatteryRole)
+        currentVendor = kcm.batteries.data(kcm.batteries.index(0, 0), BatteryModel.VendorRole)
+        currentProduct = kcm.batteries.data(kcm.batteries.index(0, 0), BatteryModel.ProductRole)
+        currentUdi = kcm.batteries.data(kcm.batteries.index(0, 0), BatteryModel.UdiRole)
+    }
+
+    Component.onCompleted: initCurrentBattery()
+
     onCurrentBatteryChanged: {
         if (!currentBattery) {
-            currentBattery = kcm.batteries.battery(0)
-            currentVendor = kcm.batteries.vendor(0)
-            currentProduct = kcm.batteries.product(0)
-            currentUdi = kcm.batteries.udi(0)
+            initCurrentBattery()
         }
     }
 
@@ -91,13 +97,6 @@ KCM.SimpleKCM {
         case 2: return i18n("Discharging")
         case 3: return i18n("Fully charged")
         }
-    }
-
-    Component.onCompleted: {
-        currentBattery = kcm.batteries.get(0)
-        currentVendor = kcm.batteries.vendor(0)
-        currentProduct = kcm.batteries.product(0)
-        currentUdi = kcm.batteries.udi(0)
     }
 
     implicitWidth: units.gridUnit * 30

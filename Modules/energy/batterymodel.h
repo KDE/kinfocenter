@@ -42,11 +42,7 @@ public:
         VendorRole,
         ProductRole
     };
-
-    Q_INVOKABLE Solid::Battery *get(int index) const;
-    Q_INVOKABLE QString vendor(int index) const;
-    Q_INVOKABLE QString product(int index) const;
-    Q_INVOKABLE QString udi(int index) const;
+    Q_ENUM(Roles)
 
     QVariant data(const QModelIndex &index, int role) const override;
     int rowCount(const QModelIndex &parent = QModelIndex()) const override;
