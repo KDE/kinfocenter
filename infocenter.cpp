@@ -52,6 +52,9 @@ KInfoCenter::KInfoCenter() : KXmlGuiWindow( 0, Qt::WindowContextHelpButtonHint )
     setWindowTitle(i18nc("Main window title", "KInfocenter"));
     setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
+    setMinimumWidth(800);
+    setMinimumHeight(600);
+
     m_cWidget = new QWidget(this);
     setCentralWidget(m_cWidget);
 
