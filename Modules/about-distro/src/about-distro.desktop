@@ -31,6 +31,7 @@ X-KDE-Keywords[sr@latin]=information,distribution,distro,system,kernel,qt,kde,po
 X-KDE-Keywords[sv]=information,distribution,distro,system,kernel,qt,kde
 X-KDE-Keywords[uk]=information,distribution,distro,system,kernel,qt,kde,інформація,дистрибутив,дистро,система,ядро,процесор,комп’ютер,інфо
 X-KDE-Keywords[x-test]=xxinformationxx,xxdistributionxx,xxdistroxx,xxsystemxx,xxkernelxx,xxqtxx,xxkdexx
+X-KDE-Keywords[zh_CN]=information,distribution,distro,system,kernel,qt,kde,信息,发行版,系统,内核
 Categories=Qt;KDE;X-KDE-settings-personalization;X-KDE-information;
 
 Name=About System
