@@ -271,9 +271,24 @@ KCM.SimpleKCM {
 
                 data: history.points
 
+                readonly property real xTicksAtDontCare: 0 
+                readonly property real xTicksAtTwelveOClock: 1
+                readonly property real xTicksAtFullHour: 2
+                readonly property real xTicksAtHalfHour: 3
+                readonly property real xTicksAtFullSecondHour: 4
+                readonly property real xTicksAtTenMinutes: 5            
+                readonly property var xTicksAtList: [xTicksAtTenMinutes, xTicksAtHalfHour, xTicksAtHalfHour, 
+                                                     xTicksAtFullHour, xTicksAtFullSecondHour, xTicksAtTwelveOClock]
+
+                // Set grid lines distances which directly correspondent to the xTicksAt variables
+                readonly property var xDivisionWidths: [1000 * 60 * 10, 1000 * 60 * 60 * 12, 1000 * 60 * 60, 1000 * 60 * 30, 1000 * 60 * 60 * 2, 1000 * 60 * 10]
+                xTicksAt: xTicksAtList[timespanCombo.currentIndex]
+                xDivisionWidth: xDivisionWidths[xTicksAt]
+
                 xMin: history.firstDataPointTime
                 xMax: history.lastDataPointTime
-
+                xDuration: history.duration
+    
                 yUnits: root.historyType == HistoryModel.RateType ? i18nc("Shorthand for Watts","W") : i18nc("literal percent sign","%")
                 yMax: {
                     if (root.historyType == HistoryModel.RateType) {
