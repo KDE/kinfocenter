@@ -292,12 +292,8 @@ KCM.SimpleKCM {
                 yUnits: root.historyType == HistoryModel.RateType ? i18nc("Shorthand for Watts","W") : i18nc("literal percent sign","%")
                 yMax: {
                     if (root.historyType == HistoryModel.RateType) {
-                        var max = history.largestValue
-                        var modulo = max % 10
-                        if (modulo > 0) {
-                            max = max - modulo + 10 // ceil to nearest 10s
-                        }
-                        return max;
+                        // ceil to nearest 10
+                        return Math.floor(history.largestValue) + 10
                     } else {
                         return 100;
                     }
