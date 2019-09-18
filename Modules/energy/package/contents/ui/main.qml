@@ -293,7 +293,10 @@ KCM.SimpleKCM {
                 yMax: {
                     if (root.historyType == HistoryModel.RateType) {
                         // ceil to nearest 10
-                        return Math.floor(history.largestValue) + 10
+                        var max = Math.floor(history.largestValue)
+                        max = max - max % 10 + 10
+                        
+                        return max;
                     } else {
                         return 100;
                     }

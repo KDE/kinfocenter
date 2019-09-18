@@ -66,7 +66,7 @@ Canvas
 
     //take a QPointF
     function scalePoint(plot, currentUnixTime) {
-        var scaledX = (plot.x - (currentUnixTime / 1000 - xDuration)) / xDuration * plotWidth
+        var scaledX = (plot.x - (currentUnixTime / 1000 - xDuration)) / xDuration * plotWidth;
         var scaledY = (plot.y - yMin)  * plotHeight / (yMax - yMin);
 
         return Qt.point(xPadding + scaledX,
@@ -111,7 +111,7 @@ Canvas
 
         var index = 0
 
-        while (data[index].x < (xMinUnixTime / 1000)) {
+        while ((index < data.length - 1) && (data[index].x < (xMinUnixTime / 1000))) {
             index++
         }
 
