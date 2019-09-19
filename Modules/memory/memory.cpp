@@ -197,7 +197,7 @@ QGroupBox* KCMMemory::initializeCharts() {
 
 	QHBoxLayout* chartsLayout = new QHBoxLayout(chartsGroup);
 	chartsLayout->setSpacing(1);
-	chartsLayout->setMargin(1);
+	chartsLayout->setContentsMargins(1, 1, 1, 1);
 
 	//chartsLayout->addStretch(1);
 
