@@ -188,10 +188,8 @@ void StatisticsView::calculate() {
 				}
 
 				calcCount++;
-				QString number(QLatin1String(""));
-				number.sprintf("%6d", calcCount);
-				QString hits(QLatin1String(""));
-				hits.sprintf("%7d", tmpStr->count);
+				const QString number = QString::asprintf("%6d", calcCount);
+				const QString hits = QString::asprintf("%7d", tmpStr->count);
 				QTreeWidgetItem *item = new QTreeWidgetItem(viewStatistics);
 				item->setText(0, number);
 				item->setText(1, eventCb->currentText());
