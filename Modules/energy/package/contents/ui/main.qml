@@ -68,7 +68,8 @@ KCM.SimpleKCM {
                 {label: i18n("Health"), value: "capacity", unit: i18n("%"), precision: 0},
                 {label: i18n("Vendor"), value: "vendor", source:"Vendor"},
                 {label: i18n("Model"), value: "model", source:"Product"},
-                {label: i18n("Serial Number"), value: "serial"}
+                {label: i18n("Serial Number"), value: "serial"},
+                {label: i18n("Technology"), value: "technology", modifier: "technology"}
             ]
         },
         {
@@ -95,6 +96,18 @@ KCM.SimpleKCM {
         case 1: return i18n("Charging")
         case 2: return i18n("Discharging")
         case 3: return i18n("Fully charged")
+        }
+    }
+
+    function modifier_technology(value) {
+        switch(value) {
+        case 0: return i18n("Unknown Technology")
+        case 1: return i18n("Lithium Ion")
+        case 2: return i18n("Lithium Polymer")
+        case 3: return i18n("Lithium Iron Phosphate")
+        case 4: return i18n("LeadAcid")
+        case 5: return i18n("Lead Acid")
+        case 6: return i18n("Nickel Metal Hydride")
         }
     }
 
