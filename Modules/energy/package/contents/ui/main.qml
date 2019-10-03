@@ -92,22 +92,22 @@ KCM.SimpleKCM {
 
     function modifier_chargeState(value) {
         switch(value) {
-        case 0: return i18n("Not charging")
-        case 1: return i18n("Charging")
-        case 2: return i18n("Discharging")
-        case 3: return i18n("Fully charged")
+        case Battery.NoCharge: return i18n("Not charging")
+        case Battery.Charging: return i18n("Charging")
+        case Battery.Discharging: return i18n("Discharging")
+        case Battery.FullyCharged: return i18n("Fully charged")
         }
     }
 
     function modifier_technology(value) {
         switch(value) {
-        case 0: return i18n("Unknown Technology")
-        case 1: return i18n("Lithium Ion")
-        case 2: return i18n("Lithium Polymer")
-        case 3: return i18n("Lithium Iron Phosphate")
-        case 4: return i18n("LeadAcid")
-        case 5: return i18n("Lead Acid")
-        case 6: return i18n("Nickel Metal Hydride")
+        case Battery.LithiumIon: return i18n("Lithium ion")
+        case Battery.LithiumPolymer: return i18n("Lithium polymer")
+        case Battery.LithiumIronPhosphate: return i18n("Lithium iron phosphate")
+        case Battery.LeadAcid: return i18n("Lead acid")
+        case Battery.NickelCadmium: return i18n("Nickel cadmium")
+        case Battery.NickelMetalHydride: return i18n("Nickel metal hydride")
+        default: return i18n("Unknown technology")
         }
     }
 

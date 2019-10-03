@@ -28,7 +28,8 @@
 
 BatteryModel::BatteryModel(QObject *parent) : QAbstractListModel(parent)
 {
-    qmlRegisterType<Solid::Battery>();
+    qmlRegisterUncreatableType<Solid::Battery>("org.kde.kinfocenter.energy.private", 1, 0, "Battery",
+            QStringLiteral("Use Solid::Battery"));
 
     m_batteries = Solid::Device::listFromType(Solid::DeviceInterface::Battery);
 
