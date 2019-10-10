@@ -125,6 +125,7 @@
   </provides>
   <project_group>KDE</project_group>
   <releases>
+    <release version="5.17.0" date="2019-10-15"/>
     <release version="5.15.90" date="2019-05-16"/>
   </releases>
 </component>
