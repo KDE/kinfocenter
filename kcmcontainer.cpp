@@ -135,11 +135,6 @@ const KAboutData *KcmContainer::kcmAboutData() const
     return m_mod->aboutData();
 }
 
-QString KcmContainer::exportText() const
-{
-    return m_mod->realModule()->exportText();
-}
-
 QString KcmContainer::name() const
 {
     return m_modInfo.moduleName();

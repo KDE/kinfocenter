@@ -83,11 +83,6 @@ class KcmContainer : public QScrollArea
         const KAboutData *kcmAboutData() const;
 
         /**
-        * Get currently selected KCMs export information
-        */
-        QString exportText() const;
-
-        /**
         * Get currently selected KCMs name
         */
         QString name() const;
