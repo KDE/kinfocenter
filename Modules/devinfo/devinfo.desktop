@@ -162,6 +162,6 @@ X-KDE-Keywords[sk]=zariadenie,zariadenia,disk,disk,procesor,cpu
 X-KDE-Keywords[sv]=enhet,enheter,disk,processor,cpu
 X-KDE-Keywords[uk]=device,devices,disk,drive,processor,cpu,пристрій,пристрої,диск,флешка,процесор,цпу
 X-KDE-Keywords[x-test]=xxdevicexx,xxdevicesxx,xxdiskxx,xxdrivexx,xxprocessorxx,xxcpuxx
-X-KDE-Keywords[zh_CN]=设备,磁盘,硬盘,驱动,处理器
+X-KDE-Keywords[zh_CN]=device,devices,disk,drive,processor,cpu,设备,磁盘,硬盘,驱动,处理器
 X-KDE-Keywords[zh_TW]=device,devices,disk,drive,processor,cpu,裝置,磁碟,硬碟,磁碟機,硬碟機,裝置,設備,處理器,CPU
 Categories=Qt;KDE;X-KDE-information;
