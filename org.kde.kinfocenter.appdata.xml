@@ -4,6 +4,7 @@
   <metadata_license>FSFAP</metadata_license>
   <project_license>GPL-2.0-or-later</project_license>
   <name>Info Center</name>
+  <name xml:lang="ast">Centru d'información</name>
   <name xml:lang="ca">Centre d'informació</name>
   <name xml:lang="ca-valencia">Centre d'informació</name>
   <name xml:lang="cs">Informační centrum</name>
@@ -33,6 +34,7 @@
   <name xml:lang="zh-CN">信息中心</name>
   <name xml:lang="zh-TW">資訊中心</name>
   <summary>Centralized and convenient overview of system information</summary>
+  <summary xml:lang="ast">Tola información del sistema nun llugar afayadizu</summary>
   <summary xml:lang="ca">Resum centralitzat i pràctic de la informació del sistema</summary>
   <summary xml:lang="ca-valencia">Resum centralitzat i pràctic de la informació del sistema</summary>
   <summary xml:lang="de">Zentrale Übersicht über Systeminformationen</summary>
@@ -62,6 +64,7 @@
   <description>
     <p>The Info Center provides you with a centralized and convenient
      overview of your system and desktop environment.</p>
+    <p xml:lang="ast">Centru d'información úfrete un llugar centralizáu y afayadizu pa consultar la información del sistema y l'entornu d'escritoriu.</p>
     <p xml:lang="ca">El Centre d'informació proporciona una vista general centralitzada i còmoda del sistema i l'escriptori.</p>
     <p xml:lang="ca-valencia">El Centre d'informació proporciona una vista general centralitzada i còmoda del sistema i de l'escriptori.</p>
     <p xml:lang="de">Das  Infozentrum bietet Ihnen einen zentralisierten und bequemen Überblick über Ihr System und die Arbeitsumgebung.</p>
@@ -91,6 +94,7 @@
     <p>The information center is made up of multiple modules.  Each module is a
      separate application, but the information center organizes all of these
      programs into a convenient location.</p>
+    <p xml:lang="ast">Esti programa constitúinlu munchos módulos, caún ye una aplicación separtada pero Centru d'información organizalos toos nun llugar afayadizu.</p>
     <p xml:lang="ca">El centre d'informació està format per múltiples mòduls. Cadascun és una aplicació individual, però el centre d'informació els reuneix tots en un lloc comú.</p>
     <p xml:lang="ca-valencia">El centre d'informació està format per múltiples mòduls. Cadascú és una aplicació individual, però el centre d'informació els reuneix tots en un lloc comú.</p>
     <p xml:lang="cs">Informační centrum se skládá z celé řady modulů. Každý modul je ve skutečnosti samostatná aplikace, informační centrum ale všechny tyto aplikace sdružuje do jednoho místa.</p>
