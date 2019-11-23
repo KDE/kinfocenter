@@ -39,7 +39,7 @@ endif()
 
 find_package(PCIUTILS MODULE)
 set_package_properties(PCIUTILS PROPERTIES DESCRIPTION "PciUtils is a library for direct access to PCI slots"
-                       URL "http://atrey.karlin.mff.cuni.cz/~mj/pciutils.shtml"
+                       URL "https://mj.ucw.cz/sw/pciutils"
                        TYPE OPTIONAL
                        PURPOSE "View PCI details in kinfocenter."
                       )
@@ -64,7 +64,7 @@ endif()
 
 find_package(RAW1394 MODULE)
 set_package_properties(RAW1394 PROPERTIES DESCRIPTION "library for direct access to IEEE 1394 bus"
-                       URL "http://www.linux1394.org/"
+                       URL "https://ieee1394.wiki.kernel.org/index.php/Main_Page"
                        TYPE OPTIONAL
                        PURPOSE "View FireWire devices in kinfocenter."
                       )

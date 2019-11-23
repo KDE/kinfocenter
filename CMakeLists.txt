@@ -41,13 +41,13 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
 if(${Qt5Gui_OPENGL_IMPLEMENTATION} STREQUAL "GL")
     find_package(OpenGL)
     set_package_properties(OpenGL PROPERTIES DESCRIPTION "The OpenGL libraries"
-                        URL "http://www.opengl.org"
+                        URL "https://www.opengl.org"
                         TYPE OPTIONAL
                         )
 else()
     find_package(OpenGLES)
     set_package_properties(OpenGLES PROPERTIES DESCRIPTION "The OpenGLES libraries"
-                        URL "http://www.khronos.org/opengles"
+                        URL "https://www.khronos.org/opengles"
                         TYPE OPTIONAL
                         )
 endif()
@@ -67,7 +67,7 @@ add_feature_info("KF5Wayland" KF5Wayland_FOUND "Required for Wayland Compositor 
 if(NOT APPLE)
   find_package(X11)
   set_package_properties(X11 PROPERTIES DESCRIPTION "X11 libraries"
-                          URL "http://www.x.org"
+                          URL "https://www.x.org"
                           TYPE OPTIONAL
                           PURPOSE "Required for building the X11 based workspace"
                         )
