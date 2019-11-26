@@ -162,7 +162,7 @@ This button opens khelpcenter with the current help page for the information mod
 <title>Help Menu button</title>
 <para>
 &kinfocenter; has the common &kde; <guimenu>Help</guimenu>
-menu items, for more information read the section about the <ulink url="help:/fundamentals/ui.html#menus-help">Help Menu</ulink>
+menu items, for more information read the section about the <ulink url="help:/fundamentals/menus.html#menus-help">Help Menu</ulink>
 of the &kde; Fundamentals.
 </para>
 
