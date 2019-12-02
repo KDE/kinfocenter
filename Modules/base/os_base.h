@@ -30,7 +30,6 @@ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 #include <QTreeWidget>
 #include <QTreeWidgetItem>
 
-#include <kiconloader.h>
 #include <KLocalizedString>
 #include <config-X11.h>
 #include "config-infocenter.h"
@@ -232,7 +231,7 @@ static bool GetInfo_XServer_Generic(QTreeWidget *lBox) {
 	QStringList serverInfo;
 	serverInfo << i18n("Server Information");
 	next = new QTreeWidgetItem(lBox, serverInfo);
-	next->setIcon(0, SmallIcon(QStringLiteral("xorg")));
+	next->setIcon(0, QIcon::fromTheme(QStringLiteral("xorg")));
 	next->setExpanded(true);
 
 	QStringList displayNameList;
