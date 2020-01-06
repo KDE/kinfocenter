@@ -195,7 +195,7 @@ void NetMon::update() {
 	QTimer::singleShot(5000,this,&NetMon::killShowmount);
 	////qDebug()<<"starting kill timer with 5 seconds";
 	connect(showmountProc, static_cast<void (QProcess::*)(int, QProcess::ExitStatus)>(&QProcess::finished), this, &NetMon::killShowmount);
-	connect(showmountProc, static_cast<void (QProcess::*)(QProcess::ProcessError)>(&QProcess::error), this, &NetMon::killShowmount);
+        connect(showmountProc, &QProcess::errorOccurred, this, &NetMon::killShowmount);
 	showmountProc->start(QStringLiteral("showmount"), QStringList() << QStringLiteral("-a") << QStringLiteral("localhost"));
 
 	version->adjustSize();

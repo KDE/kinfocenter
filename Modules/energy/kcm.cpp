@@ -48,8 +48,14 @@ using namespace KQuickAddons;
 
 KCMEnergyInfo::KCMEnergyInfo(QObject *parent, const QVariantList &args) : ConfigModule(parent, args)
 {
+#if QT_VERSION < QT_VERSION_CHECK(5, 14, 0)
     qmlRegisterType<BatteryModel>();
     qmlRegisterType<WakeUpModel>();
+#else
+    qmlRegisterAnonymousType<BatteryModel>("org.kde.kinfocenter.energy.private", 1);
+    qmlRegisterAnonymousType<WakeUpModel>("org.kde.kinfocenter.energy.private", 1);
+#endif
+
     qmlRegisterType<StatisticsProvider>("org.kde.kinfocenter.energy.private", 1, 0, "HistoryModel");
     qmlRegisterUncreatableType<BatteryModel>("org.kde.kinfocenter.energy.private", 1, 0, "BatteryModel",
             QStringLiteral("Use BatteryModel"));
