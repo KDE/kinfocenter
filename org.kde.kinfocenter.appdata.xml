@@ -15,6 +15,7 @@
   <name xml:lang="fi">Tietokeskus</name>
   <name xml:lang="fr">Centre d'informations</name>
   <name xml:lang="gl">Centro de información</name>
+  <name xml:lang="ia">Centro de Info</name>
   <name xml:lang="id">Info Center</name>
   <name xml:lang="it">Centro d'informazione</name>
   <name xml:lang="ko">정보 센터</name>
@@ -41,6 +42,7 @@
   <summary xml:lang="fi">Järjestelmätietojen mukava keskitetty yleisnäkymä</summary>
   <summary xml:lang="fr">Aperçu centralisé et pratique des informations système</summary>
   <summary xml:lang="gl">Resumo centralizado e cómodo de información do sistema</summary>
+  <summary xml:lang="ia">Centralisate e conveniente supervision del information de systema</summary>
   <summary xml:lang="id">Ikhtisar informasi sistem yang terpusat dan serasi</summary>
   <summary xml:lang="it">Panoramica centralizzata e comoda delle informazioni di sistema</summary>
   <summary xml:lang="ko">시스템 정보를 한 눈에 보기</summary>
