@@ -1,21 +1,6 @@
 /*
-  Copyright (C) 2012 Harald Sitter <apachelogger@ubuntu.com>
-
-  This program is free software; you can redistribute it and/or
-  modify it under the terms of the GNU General Public License as
-  published by the Free Software Foundation; either version 2 of
-  the License or (at your option) version 3 or any later version
-  accepted by the membership of KDE e.V. (or its successor approved
-  by the membership of KDE e.V.), which shall act as a proxy
-  defined in Section 14 of version 3 of the license.
-
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  GNU General Public License for more details.
-
-  You should have received a copy of the GNU General Public License
-  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    SPDX-FileCopyrightText: 2012-2020 Harald Sitter <sitter@kde.org>
+    SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 */
 
 #ifndef MODULE_H
@@ -27,7 +12,7 @@ namespace Ui {
     class Module;
 }
 
-class QLabel;
+class Entry;
 
 class Module : public KCModule
 {
@@ -62,25 +47,24 @@ public:
     void defaults() override;
 
 private:
-    void loadSoftware();
-    void loadHardware();
+    // Load os-release data into UI.
+    void loadOSData();
+    // Load generic entries into UI.
+    void loadEntries();
 
-    /**
-     * Copies the software and hardware information to clipboard.
-     */
+    // Copy data dump to clipboard
     void copyToClipboard();
+    // Same as copyToClipboard but in en_US when the system language
+    // is something else
     void copyToClipboardInEnglish();
-
-    QVector<QPair<QLabel*, QLabel*> > labelsForClipboard;
-    QString englishTextForClipboard;
 
     /**
      * UI
      */
     Ui::Module *ui = nullptr;
 
-    /** \returns Version of plasmashell or an empty string when none was found */
-    QString plasmaVersion() const;
+    /*** Description entries for dumping into textual form. Already excludes invalids. */
+    std::vector<const Entry *> m_entries;
 };
 
 #endif // MODULE_H

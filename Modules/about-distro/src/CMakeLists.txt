@@ -4,6 +4,13 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR})
 set(kcm_SRCS
     main.cpp
     Module.cpp
+    Entry.cpp
+    PlasmaEntry.cpp
+    KernelEntry.cpp
+    SectionLabel.cpp
+    BitEntry.cpp
+    MemoryEntry.cpp
+    CPUEntry.cpp
 )
 
 ki18n_wrap_ui(kcm_SRCS Module.ui)

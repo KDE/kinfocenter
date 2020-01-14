@@ -1,21 +1,6 @@
 /*
-  Copyright (C) 2012-2014 Harald Sitter <apachelogger@ubuntu.com>
-
-  This program is free software; you can redistribute it and/or
-  modify it under the terms of the GNU General Public License as
-  published by the Free Software Foundation; either version 2 of
-  the License or (at your option) version 3 or any later version
-  accepted by the membership of KDE e.V. (or its successor approved
-  by the membership of KDE e.V.), which shall act as a proxy
-  defined in Section 14 of version 3 of the license.
-
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  GNU General Public License for more details.
-
-  You should have received a copy of the GNU General Public License
-  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    SPDX-FileCopyrightText: 2012-2020 Harald Sitter <sitter@kde.org>
+    SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 */
 
 #include "Module.h"
@@ -24,66 +9,37 @@
 #include <QClipboard>
 #include <QIcon>
 #include <QLocale>
-#include <QStandardPaths>
 
 #include <KAboutData>
 #include <KCoreAddons>
 #include <KConfig>
 #include <KConfigGroup>
-#include <KDesktopFile>
-#include <KFormat>
 #include <KLocalizedString>
 #include <KOSRelease>
 #include <KSharedConfig>
 
-#include <solid/device.h>
-#include <solid/processor.h>
-
-#ifdef Q_OS_LINUX
-#include <sys/sysinfo.h>
-#elif defined(Q_OS_FREEBSD)
-#include <sys/types.h>
-#include <sys/sysctl.h>
-#endif
-#include <sys/utsname.h>
-
+#include "CPUEntry.h"
+#include "BitEntry.h"
+#include "KernelEntry.h"
+#include "MemoryEntry.h"
+#include "PlasmaEntry.h"
+#include "SectionLabel.h"
 #include "Version.h"
-
-static qlonglong calculateTotalRam()
-{
-    qlonglong ret = -1;
-#ifdef Q_OS_LINUX
-    struct sysinfo info;
-    if (sysinfo(&info) == 0)
-        // manpage "sizes are given as multiples of mem_unit bytes"
-        ret = qlonglong(info.totalram) * info.mem_unit;
-#elif defined(Q_OS_FREEBSD)
-    /* Stuff for sysctl */
-    size_t len;
-
-    unsigned long memory;
-    len = sizeof(memory);
-    sysctlbyname("hw.physmem", &memory, &len, NULL, 0);
-
-    ret = memory;
-#endif
-    return ret;
-}
 
 Module::Module(QWidget *parent, const QVariantList &args) :
     KCModule(parent, args),
     ui(new Ui::Module)
 {
     KAboutData *aboutData = new KAboutData(QStringLiteral("kcm-about-distro"),
-                                           i18nc("@title", "About Distribution"),
+                                           i18nc("@title", "About System"),
                                            QString::fromLatin1(global_s_versionStringFull),
                                            QString(),
                                            KAboutLicense::LicenseKey::GPL_V3,
-                                           i18nc("@info:credit", "Copyright 2012-2014 Harald Sitter"));
+                                           i18nc("@info:credit", "Copyright 2012-2020 Harald Sitter"));
 
     aboutData->addAuthor(i18nc("@info:credit", "Harald Sitter"),
                          i18nc("@info:credit", "Author"),
-                         QStringLiteral("apachelogger@kubuntu.org"));
+                         QStringLiteral("sitter@kde.org"));
 
     setAboutData(aboutData);
 
@@ -122,14 +78,20 @@ Module::Module(QWidget *parent, const QVariantList &args) :
 Module::~Module()
 {
     delete ui;
+    qDeleteAll(m_entries);
 }
 
 void Module::load()
 {
-    labelsForClipboard.clear();
-    englishTextForClipboard = QStringLiteral("");
-    loadSoftware();
-    loadHardware();
+    // load is called lazly, but also from the ctor -> prevent double init.
+    static bool initd = false;
+    if (initd) {
+        return;
+    }
+    initd = true;
+
+    loadOSData();
+    loadEntries();
 }
 
 void Module::save()
@@ -140,7 +102,7 @@ void Module::defaults()
 {
 }
 
-void Module::loadSoftware()
+void Module::loadOSData()
 {
     // NOTE: do not include globals, otherwise kdeglobals could provide values
     //       even though we only explicitly want them from our own config.
@@ -168,10 +130,8 @@ void Module::loadSoftware()
     const QString distroNameVersion = QStringLiteral("%1 %2").arg(distroName, versionId);
     ui->nameVersionLabel->setText(distroNameVersion);
 
-    const auto dummyDistroDescriptionLabel = new QLabel(i18nc("@title:row", "Operating System:"), this);
-    dummyDistroDescriptionLabel->hide();
-    labelsForClipboard << qMakePair(dummyDistroDescriptionLabel, ui->nameVersionLabel);
-    englishTextForClipboard += QStringLiteral("Operating System: %1\n").arg(distroNameVersion);
+    // Insert a dummy entry for debug info dumps.
+    m_entries.push_back(new Entry(ki18n("Operating System:"), distroNameVersion));
 
     const QString variant = cg.readEntry("Variant", os.variant());
     if (variant.isEmpty()) {
@@ -186,130 +146,67 @@ void Module::loadSoftware()
     } else {
         ui->urlLabel->setText(QStringLiteral("<a href='%1'>%1</a>").arg(url));
     }
-
-    // Since Plasma version detection isn't based on a library query it can fail
-    // in weird cases; instead of admitting defeat we simply hide everything :P
-    const QString plasma = plasmaVersion();
-    if (plasma.isEmpty()) {
-        ui->plasma->hide();
-        ui->plasmaLabel->hide();
-    } else {
-        ui->plasmaLabel->setText(plasma);
-        labelsForClipboard << qMakePair(ui->plasma, ui->plasmaLabel);
-        englishTextForClipboard += QStringLiteral("KDE Plasma Version: %1\n").arg(plasma);
-    }
-
-    const QString frameworksVersion = KCoreAddons::versionString();
-    ui->frameworksLabel->setText(frameworksVersion);
-    labelsForClipboard << qMakePair(ui->frameworksLabelKey, ui->frameworksLabel);
-    englishTextForClipboard += QStringLiteral("KDE Frameworks Version: %1\n").arg(frameworksVersion);
-
-    const QString qversion = QString::fromLatin1(qVersion());
-    ui->qtLabel->setText(qversion);
-    labelsForClipboard << qMakePair(ui->qt, ui->qtLabel);
-    englishTextForClipboard += QStringLiteral("Qt Version: %1\n").arg(qversion);
 }
 
-void Module::loadHardware()
+void Module::loadEntries()
 {
-    struct utsname utsName;
-    if(uname(&utsName) != 0) {
-        ui->kernel->hide();
-        ui->kernelLabel->hide();
-    } else {
-        QString kernelVersion = QString::fromLatin1(utsName.release);
-        ui->kernelLabel->setText(kernelVersion);
-        labelsForClipboard << qMakePair(ui->kernel, ui->kernelLabel);
-        englishTextForClipboard += QStringLiteral("Kernel Version: %1\n").arg(kernelVersion);
-    }
+    auto addSectionHeader = [this](const QString &text)
+    {
+        int row = ui->infoGrid->rowCount();
+        // Random sizes stolen from original UI file values :S
+        ui->infoGrid->addItem(new QSpacerItem(17, 21, QSizePolicy::Minimum, QSizePolicy::Fixed), row, 1, 1, 1);
+        ++row;
+        ui->infoGrid->addWidget(new SectionLabel(text), row, 1, Qt::AlignLeft);
+        ++row;
+    };
 
-    const int bits = QT_POINTER_SIZE == 8 ? 64 : 32;
-    const QString bitsStr = QString::number(bits);
-    ui->bitsLabel->setText(i18nc("@label %1 is the CPU bit width (e.g. 32 or 64)",
-                                 "%1-bit", bitsStr));
-    labelsForClipboard << qMakePair(ui->bitsKey, ui->bitsLabel);
-    englishTextForClipboard += QStringLiteral("OS Type: %1-bit\n").arg(bitsStr);
-
-    const QList<Solid::Device> list = Solid::Device::listFromType(Solid::DeviceInterface::Processor);
-    ui->processor->setText(i18np("Processor:", "Processors:", list.count()));
-    // Format processor string
-    // Group by processor name
-    QMap<QString, int> processorMap;
-    Q_FOREACH(const Solid::Device &device, list) {
-        const QString name = device.product();
-        auto it = processorMap.find(name);
-        if (it == processorMap.end()) {
-            processorMap.insert(name, 1);
-        } else {
-            ++it.value();
+    auto addEntriesToGrid = [this](std::vector<const Entry *> entries)
+    {
+        int row = ui->infoGrid->rowCount();
+        for (auto entry : entries) {
+            if (!entry->isValid()) {
+                delete entry; // since we do not keep it around
+                continue;
+            }
+            ui->infoGrid->addWidget(new QLabel(entry->label.toString()), row, 0, Qt::AlignRight);
+            ui->infoGrid->addWidget(new QLabel(entry->value), row, 1, Qt::AlignLeft);
+            m_entries.push_back(entry);
+            ++row;
         }
-    }
-    // Create a formatted list of grouped processors
-    QStringList names;
-    names.reserve(processorMap.count());
-    for (auto it = processorMap.constBegin(); it != processorMap.constEnd(); ++it) {
-        const int count = it.value();
-        QString name = it.key();
-        name.replace(QStringLiteral("(TM)"), QChar(8482));
-        name.replace(QStringLiteral("(R)"), QChar(174));
-        name = name.simplified();
-        names.append(QStringLiteral("%1 × %2").arg(count).arg(name));
-    }
+    };
 
-    const QString processorLabel = names.join(QLatin1String(", "));
-    ui->processorLabel->setText(processorLabel);
-    if (ui->processorLabel->text().isEmpty()) {
-        ui->processor->setHidden(true);
-        ui->processorLabel->setHidden(true);
-    } else {
-        labelsForClipboard << qMakePair(ui->processor, ui->processorLabel);
-        englishTextForClipboard += QStringLiteral("Processors: %1\n").arg(processorLabel);
-    }
+    // software
+    addSectionHeader(i18nc("@title:group", "Software"));
+    addEntriesToGrid({
+                         new PlasmaEntry(),
+                         new Entry(ki18n("KDE Frameworks Version:"), KCoreAddons::versionString()),
+                         new Entry(ki18n("Qt Version:"), QString::fromLatin1(qVersion())),
+                         new KernelEntry(),
+                         new BitEntry()
+                     });
 
-    const qlonglong totalRam = calculateTotalRam();
-    const QString memoryLabel = totalRam > 0
-                             ? i18nc("@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)",
-                                     "%1 of RAM", KFormat().formatByteSize(totalRam))
-                             : i18nc("Unknown amount of RAM", "Unknown");
-    ui->memoryLabel->setText(memoryLabel);
-    labelsForClipboard << qMakePair(ui->memory, ui->memoryLabel);
-    englishTextForClipboard += QStringLiteral("Memory: %1\n").arg(KFormat().formatByteSize(totalRam));
+    // hardware
+    addSectionHeader(i18nc("@title:group", "Hardware"));
+    addEntriesToGrid({
+                         new CPUEntry(),
+                         new MemoryEntry()
+                     });
 }
 
 void Module::copyToClipboard()
 {
     QString text;
-    // note that this loop does not necessarily represent the same order as in the GUI
-    for (auto labelPair : qAsConst(labelsForClipboard)) {
-        const auto valueLabel = labelPair.second;
-        if (!valueLabel->isHidden()) {
-            const auto descriptionLabelText = labelPair.first->text();
-            const auto valueLabelText = valueLabel->text();
-            text += i18nc("%1 is a label already including a colon, %2 is the corresponding value", "%1 %2", descriptionLabelText, valueLabelText) + QStringLiteral("\n");
-        }
+    for (auto entry : m_entries) {
+        text += entry->diagnosticLine(Entry::Language::System);
     }
-
     QGuiApplication::clipboard()->setText(text);
 }
 
 void Module::copyToClipboardInEnglish()
 {
-    QGuiApplication::clipboard()->setText(englishTextForClipboard);
-}
-
-QString Module::plasmaVersion() const
-{
-    const QStringList &filePaths = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation,
-                                                             QStringLiteral("xsessions/plasma.desktop"));
-
-    if (filePaths.length() < 1) {
-        return QString();
+    QString text;
+    for (auto entry : m_entries) {
+        text += entry->diagnosticLine(Entry::Language::English);
     }
-
-    // Despite the fact that there can be multiple desktop files we simply take
-    // the first one as users usually don't have xsessions/ in their $HOME
-    // data location, so the first match should (usually) be the only one and
-    // reflect the plasma session run.
-    KDesktopFile desktopFile(filePaths.first());
-    return desktopFile.desktopGroup().readEntry("X-KDE-PluginInfo-Version", QString());
+    QGuiApplication::clipboard()->setText(text);
 }
