@@ -20,6 +20,7 @@
 
 #include "CPUEntry.h"
 #include "BitEntry.h"
+#include "GPUEntry.h"
 #include "KernelEntry.h"
 #include "MemoryEntry.h"
 #include "PlasmaEntry.h"
@@ -189,7 +190,8 @@ void Module::loadEntries()
     addSectionHeader(i18nc("@title:group", "Hardware"));
     addEntriesToGrid({
                          new CPUEntry(),
-                         new MemoryEntry()
+                         new MemoryEntry(),
+                         new GPUEntry()
                      });
 }
 

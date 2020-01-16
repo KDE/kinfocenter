@@ -11,6 +11,8 @@ set(kcm_SRCS
     BitEntry.cpp
     MemoryEntry.cpp
     CPUEntry.cpp
+    GPUEntry.cpp
+    FancyString.cpp
 )
 
 ki18n_wrap_ui(kcm_SRCS Module.ui)

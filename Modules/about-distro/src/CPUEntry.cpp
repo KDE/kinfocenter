@@ -10,6 +10,8 @@
 #include <solid/device.h>
 #include <solid/processor.h>
 
+#include "FancyString.h"
+
 CPUEntry::CPUEntry()
     : Entry(KLocalizedString(), QString())
 {
@@ -34,10 +36,7 @@ CPUEntry::CPUEntry()
     names.reserve(processorMap.count());
     for (auto it = processorMap.constBegin(); it != processorMap.constEnd(); ++it) {
         const int count = it.value();
-        QString name = it.key();
-        name.replace(QStringLiteral("(TM)"), QChar(8482));
-        name.replace(QStringLiteral("(R)"), QChar(174));
-        name = name.simplified();
+        QString name = FancyString::fromUgly(it.key());
         names.append(QStringLiteral("%1 × %2").arg(count).arg(name));
     }
 
