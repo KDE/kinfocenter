@@ -47,10 +47,6 @@
 #include <KPluginFactory>
 #include <KPluginLoader>
 
-#ifndef	HAVE_STRUCT_SOCKADDR_SA_LEN
-#undef HAVE_GETNAMEINFO
-#undef HAVE_GETIFADDRS
-#endif
 
 #if defined(HAVE_GETNAMEINFO) && defined(HAVE_GETIFADDRS)
 #include <ifaddrs.h>
@@ -110,7 +106,7 @@ void KCMNic::update() {
 
 	foreach(MyNIC* tmp, nics) {
 		QStringList lst;
-		lst << tmp->name<<tmp->addr<<tmp->netmask<<tmp->type<<tmp->state<<tmp->HWaddr;
+        lst << tmp->name<<tmp->addr<<tmp->netmask<<tmp->type<<tmp->state<<tmp->HWaddr;
 		new QTreeWidgetItem(m_list,lst);
 
 		delete tmp;
@@ -132,6 +128,21 @@ static QString HWaddr2String(const char *hwaddr) {
 		ret.append(num);
 	}
 	return ret;
+}
+
+// Convenience wrapper around sa_len being available or not.
+static int getNameInfo(struct sockaddr *addr, struct ifaddrs *ifa, char *hostOut)
+{
+#ifdef HAVE_STRUCT_SOCKADDR_SA_LEN
+    return getnameinfo(addr, ifa->ifa_addr->sa_len, buf, 127, 0, 0, NI_NUMERICHOST);
+#else
+    return getnameinfo(addr,
+                (ifa->ifa_addr->sa_family == AF_INET) ? sizeof(struct sockaddr_in) :
+                                                        sizeof(struct sockaddr_in6),
+                hostOut, NI_MAXHOST,
+                nullptr, 0,
+                NI_NUMERICHOST);
+#endif
 }
 
 QList<MyNIC*> findNICs() {
@@ -166,7 +177,7 @@ QList<MyNIC*> findNICs() {
         MyNIC *tmp=nullptr;
 		switch (ifr->ifr_addr.sa_family) {
 		case AF_INET:
-			sinptr = (struct sockaddr_in *) &ifr->ifr_addr;
+            sinptr = (struct sockaddr_in *) &ifr->ifr_addr;
 			flags=0;
 
 			struct ifreq ifcopy;
@@ -221,10 +232,10 @@ QList<MyNIC*> findNICs() {
 				tmp->HWaddr = i18nc("Unknown HWaddr", "Unknown");
 			}
 
-			nl.append(tmp);
+            nl.append(tmp);
 			break;
 
-		default:
+        default:
 			break;
 		}
 	}
@@ -235,8 +246,8 @@ QList<MyNIC*> findNICs() {
 	}
 
 	MyNIC *tmp=0;
-	for (ifa = ifap; ifa; ifa = ifa->ifa_next) {
-		switch (ifa->ifa_addr->sa_family) {
+    for (ifa = ifap; ifa; ifa = ifa->ifa_next) {
+        switch (ifa->ifa_addr->sa_family) {
 			case AF_INET6:
 			case AF_INET: {
 				tmp = new MyNIC;
@@ -245,12 +256,12 @@ QList<MyNIC*> findNICs() {
 				char buf[128];
 
 				bzero(buf, 128);
-				getnameinfo(ifa->ifa_addr, ifa->ifa_addr->sa_len, buf, 127, 0, 0, NI_NUMERICHOST);
-				tmp->addr = buf;
+                getNameInfo(ifa->ifa_addr, ifa, buf);
+                tmp->addr = buf;
 
                 if (ifa->ifa_netmask != nullptr) {
-					bzero(buf, 128);
-					getnameinfo(ifa->ifa_netmask, ifa->ifa_netmask->sa_len, buf, 127, 0, 0, NI_NUMERICHOST);
+                    bzero(buf, 128);
+                    getNameInfo(ifa->ifa_netmask, ifa, buf);
 					tmp->netmask = buf;
 				}
 
