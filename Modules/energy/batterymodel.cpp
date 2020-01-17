@@ -73,7 +73,12 @@ QVariant BatteryModel::data(const QModelIndex &index, int role) const
     }
 
     if (role == BatteryRole) {
-        return QVariant::fromValue(m_batteries.value(index.row()).as<Solid::Battery>());
+        // .as returns a pointer to a casted DeviceInterface. This pointer must
+        // not, under any circumstances, be deleted outside Solid!
+        // https://bugs.kde.org/show_bug.cgi?id=413003
+        const auto battery = m_batteries.value(index.row()).as<Solid::Battery>();
+        QQmlEngine::setObjectOwnership(battery, QQmlEngine::CppOwnership);
+        return QVariant::fromValue(battery);
     } else if (role == ProductRole) {
         const Solid::Device device = m_batteries.value(index.row());
         return device.product();
