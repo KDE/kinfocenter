@@ -29,6 +29,7 @@ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 #include <QTextStream>
 #include <QTreeWidget>
 #include <QTreeWidgetItem>
+#include <QVersionNumber>
 
 #include <KLocalizedString>
 #include <config-X11.h>
@@ -239,11 +240,22 @@ static bool GetInfo_XServer_Generic(QTreeWidget *lBox) {
 	last = new QTreeWidgetItem(next, displayNameList);
 
 	QStringList vendorList;
-	vendorList << i18n("Vendor String") << QLatin1String(ServerVendor(dpy));
+    const QString vendor = QString::fromLatin1(ServerVendor(dpy));
+    vendorList << i18n("Vendor String") << vendor;
 	last = new QTreeWidgetItem(next, vendorList);
 
-	QStringList vendorReleaseList;
-	vendorReleaseList << i18n("Vendor Release Number") << Value((int)VendorRelease(dpy));
+    QStringList vendorReleaseList;
+    const int releaseNumber = VendorRelease(dpy);
+    QString releaseString = Value(releaseNumber);
+    if (vendor.contains(QStringLiteral("x.org"), Qt::CaseInsensitive)) {
+        // Pipe through QVersionNumber to ensure output is sane.
+        // As a side effect we ignore the potential 4th level as QVN doesn't
+        // have support for it anyway.
+        releaseString = QVersionNumber(releaseNumber / 10000000,
+                                       (releaseNumber / 100000) % 100,
+                                       (releaseNumber / 1000) % 100).toString();
+    }
+    vendorReleaseList << i18n("Vendor Release Number") << releaseString;
 	last = new QTreeWidgetItem(next, vendorReleaseList);
 
 	QStringList versionList;
