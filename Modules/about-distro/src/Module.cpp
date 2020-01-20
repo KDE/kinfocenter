@@ -107,7 +107,7 @@ Module::Module(QWidget *parent, const QVariantList &args) :
     // Setup Copy to Clipboard button
     connect(ui->pushButtonCopyInfo, &QPushButton::clicked, this, &Module::copyToClipboard);
     connect(ui->pushButtonCopyInfoInEnglish, &QPushButton::clicked, this, &Module::copyToClipboardInEnglish);
-    if (QLocale::system().language() == QLocale::English) {
+    if (QLocale::system().language() == QLocale::English || QLocale::system().language() == QLocale::C) {
         ui->pushButtonCopyInfoInEnglish->hide();
     }
     ui->pushButtonCopyInfo->setShortcut(QKeySequence::Copy);

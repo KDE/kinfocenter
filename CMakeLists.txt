@@ -13,6 +13,7 @@ include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(FeatureSummary)
 include(KDEClangFormat)
+include(ECMQMLModules)
 
 find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Core Gui Widgets)
 
@@ -78,6 +79,7 @@ else()
   set(X11_FOUND False)
 endif()
 
+ecm_find_qmlmodule(org.kde.kirigami 2.5)
 
 configure_file(config-project-version.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-project-version.h)
 configure_file(config-X11.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-X11.h)
