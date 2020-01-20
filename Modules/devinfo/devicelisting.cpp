@@ -146,49 +146,50 @@ void DeviceListing::itemActivatedSlot(QTreeWidgetItem *listItemIn, const int col
 void DeviceListing::deviceAddedSlot(const QString &udi)
 {
     SolidHelper *solhelp = new SolidHelper();
-    const QList<Solid::Device> list = Solid::Device::allDevices();
 
-    foreach (const Solid::Device &dev, list) {
-        if (dev.udi() == udi) {
-            Solid::DeviceInterface::Type deviceType = solhelp->deviceType(&dev);
-            QTreeWidgetItem *parent = getTreeWidgetItemFromUdi(this, dev.parentUdi());
+    Solid::Device dev(udi);
+    if (!dev.isValid()) {
+        // Probably the device already disappeared again.
+        return;
+    }
 
-            // Incase of bad index
-            if (deviceMap[deviceType] == nullptr) {
-                QTreeWidgetItem *topItem = topLevelItem(0);
-                if (!topItem) {
-                    delete solhelp;
-                    return;
-                }
-                deviceMap[deviceType] = static_cast<SolDevice *>(topItem);
-            }
+    Solid::DeviceInterface::Type deviceType = solhelp->deviceType(&dev);
+    QTreeWidgetItem *parent = getTreeWidgetItemFromUdi(this, dev.parentUdi());
 
-            switch (deviceType) {
-            case Solid::DeviceInterface::Processor:
-                new SolProcessorDevice(deviceMap[deviceType], dev);
-                break;
-            case Solid::DeviceInterface::Camera:
-                new SolCameraDevice(deviceMap[deviceType], dev);
-                break;
-            case Solid::DeviceInterface::PortableMediaPlayer:
-                new SolMediaPlayerDevice(deviceMap[deviceType], dev);
-                break;
-            case Solid::DeviceInterface::Battery:
-                new SolBatteryDevice(deviceMap[deviceType], dev);
-                break;
-            case Solid::DeviceInterface::StorageDrive:
-                new SolStorageDevice(deviceMap[deviceType], dev, SolStorageDevice::NOCHILDREN);
-                break;
-            case Solid::DeviceInterface::StorageVolume:
-                if (parent == nullptr) {
-                    break;
-                }
-                new SolVolumeDevice(parent, dev);
-                break;
-            default:
-                break;
-            }
+    // Incase of bad index
+    if (deviceMap[deviceType] == nullptr) {
+        QTreeWidgetItem *topItem = topLevelItem(0);
+        if (!topItem) {
+            delete solhelp;
+            return;
         }
+        deviceMap[deviceType] = static_cast<SolDevice *>(topItem);
+    }
+
+    switch (deviceType) {
+    case Solid::DeviceInterface::Processor:
+        new SolProcessorDevice(deviceMap[deviceType], dev);
+        break;
+    case Solid::DeviceInterface::Camera:
+        new SolCameraDevice(deviceMap[deviceType], dev);
+        break;
+    case Solid::DeviceInterface::PortableMediaPlayer:
+        new SolMediaPlayerDevice(deviceMap[deviceType], dev);
+        break;
+    case Solid::DeviceInterface::Battery:
+        new SolBatteryDevice(deviceMap[deviceType], dev);
+        break;
+    case Solid::DeviceInterface::StorageDrive:
+        new SolStorageDevice(deviceMap[deviceType], dev, SolStorageDevice::NOCHILDREN);
+        break;
+    case Solid::DeviceInterface::StorageVolume:
+        if (parent == nullptr) {
+            break;
+        }
+        new SolVolumeDevice(parent, dev);
+        break;
+    default:
+        break;
     }
     delete solhelp;
 }
