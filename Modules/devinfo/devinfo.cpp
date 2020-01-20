@@ -20,8 +20,19 @@
  */
 
 #include "devinfo.h"
+
+#include <QGridLayout>
+#include <QLabel>
 #include <QSplitter>
 #include <KLocalizedString>
+#include <kaboutdata.h>
+
+//Plugin
+#include <kpluginfactory.h>
+#include <kpluginloader.h>
+
+#include "devicelisting.h"
+#include "infopanel.h"
 
 K_PLUGIN_FACTORY(devInfoModuleFactory, registerPlugin<DevInfoPlugin>();
                  )

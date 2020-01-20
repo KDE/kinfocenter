@@ -20,8 +20,16 @@
  */
 
 #include "soldevice.h"
+
+#include <solid/deviceinterface.h>
+#include <solid/processor.h>
+
+#include <QTreeWidget>
+
 #include <KLocalizedString>
-// Con
+
+// Local
+#include "qvlistlayout.h"
 
 SolDevice::SolDevice(const Solid::DeviceInterface::Type &type)
     : QTreeWidgetItem()

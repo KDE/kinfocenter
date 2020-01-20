@@ -22,9 +22,6 @@
 #ifndef SOLDEVICETYPES
 #define SOLDEVICETYPES
 
-//kde
-#include <kdiskfreespaceinfo.h>
-
 #include "soldevice.h"
 #include "infopanel.h"
 
@@ -103,4 +100,4 @@ private:
     void setDefaultListing(const Solid::DeviceInterface::Type &) override;
 };
 
-#endif //SOLDEVICETYPES
+#endif //

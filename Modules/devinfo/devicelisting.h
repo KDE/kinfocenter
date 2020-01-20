@@ -22,32 +22,20 @@
 #ifndef DEVICELISTING
 #define DEVICELISTING
 
-//Solid
-#include <solid/device.h>
-#include <solid/deviceinterface.h>
-#include <solid/processor.h>
-#include <solid/devicenotifier.h>
-
 //QT
 #include <QMap>
 #include <QTreeWidget>
-#include <QAction>
-#include <QContextMenuEvent>
 #include <QTreeWidgetItemIterator>
 
 //Local
-#include "infopanel.h"
 #include "soldevice.h"
-#include "soldevicetypes.h"
-#include "devinfo.h"
-#include "solidhelper.h"
-//#include "nicsignals.h"
 
 //Kde
 
 class InfoPanel;
 class DevInfoPlugin;
-//class NicSignals;
+class QContextMenuEvent;
+class QAction;
 
 class DeviceListing : public QTreeWidget
 {

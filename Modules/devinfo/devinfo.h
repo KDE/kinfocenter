@@ -24,17 +24,9 @@
 
 //kde
 #include <kcmodule.h>
-#include <kaboutdata.h>
 
-//Plugin
-#include <kpluginfactory.h>
-#include <kpluginloader.h>
-
-//QT
-
-//Local
-#include "devicelisting.h"
-#include "infopanel.h"
+class QLabel;
+class QGridLayout;
 
 class DevInfoPlugin : public KCModule
 {

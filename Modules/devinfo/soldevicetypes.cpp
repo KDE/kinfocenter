@@ -21,11 +21,24 @@
 
 #include "soldevicetypes.h"
 
+#include <solid/deviceinterface.h>
+#include <solid/processor.h>
+#include <solid/storagedrive.h>
+#include <solid/storagevolume.h>
+#include <solid/storageaccess.h>
+#include <solid/portablemediaplayer.h>
+#include <solid/camera.h>
+#include <solid/battery.h>
+
 #include <QProgressBar>
 
+//kde
+#include <kdiskfreespaceinfo.h>
 #include <kcapacitybar.h>
-
 #include <KFormat>
+
+#include "qvlistlayout.h"
+
 // ---- Processor
 
 SolProcessorDevice::SolProcessorDevice(QTreeWidgetItem *parent, const Solid::Device &device)

@@ -21,6 +21,9 @@
 
 #include "solidhelper.h"
 
+//Solid
+#include <solid/device.h>
+
 Solid::DeviceInterface::Type SolidHelper::deviceType(const Solid::Device *dev)
 {
     const Solid::DeviceInterface::Type needHardware[] = {

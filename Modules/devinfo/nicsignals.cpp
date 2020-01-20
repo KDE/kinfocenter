@@ -20,6 +20,10 @@
 
 #include "nicsignals.h"
 
+//KDE
+#include <solid/control/networkmanager.h>
+#include <solid/control/networkinterface.h>
+
 NicSignals::NicSignals()
 {
     connectToNicSignals();

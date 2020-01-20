@@ -21,6 +21,15 @@
 
 #include "infopanel.h"
 
+//Solid
+#include <solid/device.h>
+
+#include <QLabel>
+#include <QIcon>
+
+#include "devinfo.h"
+#include "qvlistlayout.h"
+
 InfoPanel::InfoPanel(QWidget *parent, DevInfoPlugin *stat)
     : QGroupBox(i18n("Device Information"), parent)
     , status(stat)

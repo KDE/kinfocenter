@@ -21,7 +21,19 @@
 
 #include "devicelisting.h"
 
+//Solid
+#include <solid/devicenotifier.h>
+
+#include <QContextMenuEvent>
 #include <QMenu>
+
+//Local
+#include "infopanel.h"
+#include "soldevice.h"
+#include "soldevicetypes.h"
+#include "devinfo.h"
+#include "solidhelper.h"
+//#include "nicsignals.h"
 
 DeviceListing::DeviceListing(QWidget *parent, InfoPanel *info, DevInfoPlugin *stat)
     : QTreeWidget(parent)

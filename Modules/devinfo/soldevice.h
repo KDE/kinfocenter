@@ -24,25 +24,12 @@
 
 //QT
 #include <QTreeWidgetItem>
-#include <QTreeWidget>
 #include <QDebug>
 
 //Solid
 #include <solid/device.h>
-#include <solid/deviceinterface.h>
-#include <solid/processor.h>
-#include <solid/storagedrive.h>
-#include <solid/storagevolume.h>
-#include <solid/storageaccess.h>
-#include <solid/portablemediaplayer.h>
-#include <solid/camera.h>
-#include <solid/battery.h>
-#include <solid/predicate.h>
-
 //KDE
 
-// Local
-#include "qvlistlayout.h"
 
 class QVListLayout;
 

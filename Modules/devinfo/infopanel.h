@@ -23,24 +23,18 @@
 #define INFOPANEL
 
 // QT
-#include <QWidget>
 #include <QGroupBox>
-#include <QLabel>
-
-//Solid
-#include <solid/device.h>
-#include <solid/processor.h>
-#include <solid/deviceinterface.h>
-#include <solid/storagedrive.h>
 
 //KDE
 #include <KLocalizedString>
 
-//Local
-#include "qvlistlayout.h"
-#include "devinfo.h"
-
+class QVListLayout;
+class QLabel;
 class DevInfoPlugin;
+class QVBoxLayout;
+namespace Solid {
+class Device;
+}
 
 class InfoPanel : public QGroupBox
 {

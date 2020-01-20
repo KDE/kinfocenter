@@ -23,7 +23,7 @@
 #define SOLIDHELPER
 
 //Solid
-#include <solid/device.h>
+#include <solid/deviceinterface.h>
 
 class SolidHelper
 {

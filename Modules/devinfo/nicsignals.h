@@ -25,10 +25,6 @@
 //Qt
 #include <QObject>
 
-//KDE
-#include <solid/control/networkmanager.h>
-#include <solid/control/networkinterface.h>
-
 class NicSignals : public QObject
 {
     Q_OBJECT
