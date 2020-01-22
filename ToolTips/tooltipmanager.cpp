@@ -29,6 +29,7 @@
 #include <QGridLayout>
 #include <QApplication>
 #include <QAbstractItemView>
+#include <QStyle>
 
 #include <QIcon>
 #include <KIconLoader>
@@ -53,7 +54,7 @@ public:
     QTimer* timer = nullptr;
     QModelIndex item;
     QRect itemRect;
-    int delay = 50;
+    int delay = QApplication::style()->styleHint(QStyle::SH_ToolTip_WakeUpDelay);
 };
 
 ToolTipManager::ToolTipManager(QAbstractItemView* parent)

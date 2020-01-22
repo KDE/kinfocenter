@@ -21,6 +21,7 @@ extern "C" {
 #include <string.h> //memcpy
 #include <QTreeWidget>
 #include <QTreeWidgetItem>
+#include <QDebug>
 
 static const QString& getNameById(const id2name *const table, int id) {
 	for (int i=0;; i++) {
@@ -698,6 +699,14 @@ static QTreeWidgetItem* addCaps(QTreeWidgetItem *parent, QTreeWidgetItem *after,
 	return after;
 }//addCaps
 
+static void pci_warning(char *msg, ...)
+{
+    va_list args;
+    va_start(args, msg);
+    qWarning(msg, args);
+    va_end(args);
+}
+
 bool GetInfo_PCIUtils(QTreeWidget* tree) {
 
 	QStringList headers;
@@ -713,6 +722,9 @@ bool GetInfo_PCIUtils(QTreeWidget* tree) {
 	if (PCIAccess==nullptr) {
 		return false;
 	}//if
+    // Use warnings for errors, they are decidely not fatal for us!
+    // https://bugs.kde.org/show_bug.cgi?id=382979
+    PCIAccess->error = pci_warning;
 
 	pci_init(PCIAccess);
 	pci_scan_bus(PCIAccess);
