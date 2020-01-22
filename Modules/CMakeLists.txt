@@ -3,6 +3,7 @@ add_subdirectory( about-distro )
 add_subdirectory( memory )
 add_subdirectory( devinfo )
 add_subdirectory( info )
+add_subdirectory(vulkan)
 
 add_subdirectory( samba )
 add_subdirectory( nics )
