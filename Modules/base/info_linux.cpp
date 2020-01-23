@@ -38,7 +38,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <QFile>
 
 #include <KLocalizedString>
-#include <kiconloader.h>
 #include <QFontDatabase>
 
 #define INFO_IRQ "/proc/interrupts"
