@@ -2,9 +2,10 @@
 Type=Service
 X-KDE-ServiceTypes=KInfoCenterCategory
 X-KDE-KInfoCenter-Category=network_information
+X-KDE-KInfoCenter-Parent-Category=detailed_information
 Icon=preferences-system-network
 
-Name=Network Information
+Name=Network
 Name[ar]=معلومات الشّبكة
 Name[bg]=Мрежови данни
 Name[bs]=Podaci o mreži

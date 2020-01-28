@@ -5,6 +5,7 @@ Type=Service
 X-KDE-ServiceTypes=KCModule
 X-KDE-Library=kcm_fileindexermonitor
 X-KDE-ParentApp=kinfocenter
+X-KDE-KInfoCenter-Category=basic_information
 
 Name=File Indexer Monitor
 Name[ar]=مرقاب مفهرس الملفّات

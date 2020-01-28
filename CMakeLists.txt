@@ -81,8 +81,6 @@ endif()
 
 ecm_find_qmlmodule(org.kde.kirigami 2.5)
 
-configure_file(config-project-version.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-project-version.h)
-configure_file(config-X11.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-X11.h)
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
 remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_KEYWORDS)
@@ -97,38 +95,6 @@ add_subdirectory( Modules )
 include(ECMOptionalAddSubdirectory)
 ecm_optional_add_subdirectory( doc )
 
-include_directories( ToolTips )
-
-set( kinfocenter_SRCS
-infocenter.cpp
-main.cpp
-sidepanel.cpp
-kcmcontainer.cpp
-kcmtreeitem.cpp
-kcmcategoryitem.cpp
-infokcmmodel.cpp
-infokcmproxymodel.cpp
-ToolTips/tooltipmanager.cpp
-)
-
-add_executable( kinfocenter ${kinfocenter_SRCS} )
-target_compile_definitions(kinfocenter PRIVATE -DPROJECT_VERSION="${PROJECT_VERSION}")
-
-target_link_libraries( kinfocenter
-    KF5::Completion
-    KF5::ConfigWidgets
-    KF5::CoreAddons
-    KF5::Crash
-    KF5::DBusAddons
-    KF5::I18n
-    KF5::IconThemes
-    KF5::KCMUtils
-    KF5::Service
-    KF5::Solid
-    KF5::WidgetsAddons
-    KF5::WindowSystem
-    KF5::XmlGui
-)
 
 # add clang-format target for all our real source files
 file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)
@@ -136,9 +102,12 @@ kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
 
 ##install
 
-install( TARGETS kinfocenter          ${INSTALL_TARGETS_DEFAULT_ARGS} )
 install( FILES org.kde.kinfocenter.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 install( PROGRAMS org.kde.kinfocenter.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
-install( FILES kinfocenterui.rc DESTINATION ${KXMLGUI_INSTALL_DIR}/kinfocenter )
+
+ADD_CUSTOM_TARGET(kinfocenter_link ALL
+                  COMMAND ${CMAKE_COMMAND} -E create_symlink ${KDE_INSTALL_FULL_BINDIR}/systemsettings5 ${CMAKE_CURRENT_BINARY_DIR}/kinfocenter)
+
+install( FILES ${CMAKE_CURRENT_BINARY_DIR}/kinfocenter DESTINATION ${KDE_INSTALL_FULL_BINDIR}/ )
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)

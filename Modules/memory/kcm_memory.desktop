@@ -7,6 +7,7 @@ X-KDE-ServiceTypes=KCModule
 X-KDE-Weight=1
 X-KDE-Library=kcm_memory
 X-KDE-ParentApp=kinfocenter
+X-KDE-KInfoCenter-Category=basic_information
 X-DocPath=kinfocenter/index.html#kcm_memory
 
 Name=Memory

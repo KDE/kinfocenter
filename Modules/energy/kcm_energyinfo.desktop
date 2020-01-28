@@ -5,8 +5,9 @@ Type=Service
 X-KDE-ServiceTypes=KCModule
 X-KDE-Library=kcm_energyinfo
 X-KDE-ParentApp=kinfocenter
+X-KDE-KInfoCenter-Category=basic_information
 
-Name=Energy Information
+Name=Energy
 Name[ar]=معلومات عن الطّاقة
 Name[ca]=Informació de l'energia
 Name[ca@valencia]=Informació de l'energia

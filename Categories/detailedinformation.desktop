@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KInfoCenterCategory
+X-KDE-KInfoCenter-Category=detailed_information
+Icon=dialog-information
+
+Name=Detailed Information

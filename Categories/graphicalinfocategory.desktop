@@ -2,9 +2,10 @@
 Type=Service
 X-KDE-ServiceTypes=KInfoCenterCategory
 X-KDE-KInfoCenter-Category=graphical_information
+X-KDE-KInfoCenter-Parent-Category=detailed_information
 Icon=applications-graphics
 
-Name=Graphical Information
+Name=Graphics
 Name[ar]=المعلومات الرّسوميّة
 Name[bg]=Данни за графичната система
 Name[bs]=Podaci o grafici

@@ -65,4 +65,5 @@ Name[zh_TW]=KInfoCenter 類別
 # Cat Ident
 [PropertyDef::X-KDE-KInfoCenter-Category]
 Type=QString
-
+[PropertyDef::X-KDE-KInfoCenter-Parent-Category]
+Type=QString

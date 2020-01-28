@@ -2,9 +2,10 @@
 Type=Service
 X-KDE-ServiceTypes=KInfoCenterCategory
 X-KDE-KInfoCenter-Category=device_information
+X-KDE-KInfoCenter-Parent-Category=detailed_information
 Icon=hwinfo
 
-Name=Device Information
+Name=Devices
 Name[ar]=معلومات الأجهزة
 Name[be@latin]=Źviestki z pryłady
 Name[bg]=Данни за устройства
