@@ -46,16 +46,6 @@ bool GetInfo_Wayland(QTreeWidget* tree);
 	/* i18n("Maybe the proc-filesystem is not enabled in Linux-Kernel.") */
 	#define DEFAULT_ERRORSTRING QString() 
 
-
-#elif defined(sgi) && sgi
-
-	#define INFO_IRQ_AVAILABLE
-	#define INFO_DMA_AVAILABLE
-	#define INFO_IOPORTS_AVAILABLE
-	#define INFO_XSERVER_AVAILABLE
-
-	#define DEFAULT_ERRORSTRING  i18n("This system may not be completely supported yet.")
-
 #elif defined(__FreeBSD__) || defined(__DragonFly__)
 
 	#define INFO_IRQ_AVAILABLE
@@ -64,17 +54,6 @@ bool GetInfo_Wayland(QTreeWidget* tree);
 	#define INFO_XSERVER_AVAILABLE
 	
 	#define DEFAULT_ERRORSTRING  i18n("This system may not be completely supported yet.")
-
-#elif defined(__hpux)
-
-	#define INFO_IRQ_AVAILABLE
-	#define INFO_DMA_AVAILABLE
-	#define INFO_IOPORTS_AVAILABLE
-	
-	
-	#define INFO_XSERVER_AVAILABLE
-	
-	#define DEFAULT_ERRORSTRING QString()
 
 #elif defined(__NetBSD__)
 
@@ -90,34 +69,6 @@ bool GetInfo_Wayland(QTreeWidget* tree);
 	#define INFO_IRQ_AVAILABLE
 	#define INFO_DMA_AVAILABLE
 	#define INFO_IOPORTS_AVAILABLE
-	#define INFO_XSERVER_AVAILABLE
-
-	#define DEFAULT_ERRORSTRING  i18n("This system may not be completely supported yet.")
-
-#elif defined(__svr4__) && defined(sun)
-
-	#define INFO_IRQ_AVAILABLE
-	#define INFO_DMA_AVAILABLE
-	#define INFO_IOPORTS_AVAILABLE
-	#define INFO_XSERVER_AVAILABLE
-
-	#define DEFAULT_ERRORSTRING  i18n("This system may not be completely supported yet.")
-
-#elif defined(_AIX)
-
-
-	#define INFO_IRQ_AVAILABLE
-	#define INFO_DMA_AVAILABLE
-	#define INFO_IOPORTS_AVAILABLE
-	#define INFO_XSERVER_AVAILABLE
-
-	#define DEFAULT_ERRORSTRING  i18n("This system may not be completely supported yet.")
-
-#elif defined(__APPLE__)
-
-	//#define INFO_IRQ_AVAILABLE
-	//#define INFO_DMA_AVAILABLE
-	//#define INFO_IOPORTS_AVAILABLE
 	#define INFO_XSERVER_AVAILABLE
 
 	#define DEFAULT_ERRORSTRING  i18n("This system may not be completely supported yet.")

@@ -29,11 +29,9 @@ void PhysicalMemoryChart::paintEvent(QPaintEvent* /*event*/) {
 
 	t_memsize bufferMemory;
 	
-	bufferMemory = 0;
-#if !defined(__svr4__) || !defined(sun)
+    bufferMemory = 0;
 #if !defined(__NetBSD__) && !defined(__OpenBSD__)
-	bufferMemory = ZERO_IF_NO_INFO(memoryInfos[BUFFER_MEM]);
-#endif
+    bufferMemory = ZERO_IF_NO_INFO(memoryInfos[BUFFER_MEM]);
 #endif
 	t_memsize cachedMemory = ZERO_IF_NO_INFO(memoryInfos[CACHED_MEM]);
 	t_memsize freeMemory = ZERO_IF_NO_INFO(memoryInfos[FREE_MEM]);

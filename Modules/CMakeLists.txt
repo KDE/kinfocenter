@@ -5,7 +5,6 @@ add_subdirectory( memory )
 add_subdirectory( devinfo )
 add_subdirectory( info )
 
-if(NOT WIN32)
 add_subdirectory( samba )
 add_subdirectory( nics )
 
@@ -29,13 +28,11 @@ if(${Qt5Gui_OPENGL_IMPLEMENTATION} STREQUAL "GLESv2")
     add_feature_info("OpenGL/ES support" KCM_ENABLE_OPENGLES "View OpenGL ES2.0 details in kinfocenter." )
 endif()
 
-  if(NOT APPLE)
-    if(KCM_ENABLE_OPENGL OR KCM_ENABLE_OPENGLES)
-      add_subdirectory( opengl )
-    else()
-      message(STATUS "OpenGL/ES2.0 information module has been disabled.")
-    endif()
-  endif()
+if(KCM_ENABLE_OPENGL OR KCM_ENABLE_OPENGLES)
+    add_subdirectory( opengl )
+else()
+    message(STATUS "OpenGL/ES2.0 information module has been disabled.")
+endif()
 
 find_package(PCIUTILS MODULE)
 set_package_properties(PCIUTILS PROPERTIES DESCRIPTION "PciUtils is a library for direct access to PCI slots"
@@ -47,9 +44,7 @@ set_package_properties(PCIUTILS PROPERTIES DESCRIPTION "PciUtils is a library fo
 # PCI module doesn't work on Linux arm64, nor on MacOS, but does on
 # FreeBSD arm64, so this is a bit of a tangle of what-is-supported.
 set(_want_pci ON)
-if(APPLE) 
-    set(_want_pci OFF)
-elseif(${CMAKE_SYSTEM_PROCESSOR} MATCHES "arm" OR ${CMAKE_SYSTEM_PROCESSOR} MATCHES "aarch64")
+if(${CMAKE_SYSTEM_PROCESSOR} MATCHES "arm" OR ${CMAKE_SYSTEM_PROCESSOR} MATCHES "aarch64")
     if (${CMAKE_SYSTEM} MATCHES "FreeBSD")
         message(STATUS "FreeBSD arm64 pci support enabled.")
     else()
@@ -59,7 +54,6 @@ endif()
 
 if(_want_pci)
     add_subdirectory( pci )
-endif()
 endif()
 
 find_package(RAW1394 MODULE)
