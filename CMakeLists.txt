@@ -65,18 +65,14 @@ set_package_properties(KF5Wayland PROPERTIES
                       )
 add_feature_info("KF5Wayland" KF5Wayland_FOUND "Required for Wayland Compositor Information Module")
 
-if(NOT APPLE)
-  find_package(X11)
-  set_package_properties(X11 PROPERTIES DESCRIPTION "X11 libraries"
-                          URL "https://www.x.org"
-                          TYPE OPTIONAL
-                          PURPOSE "Required for building the X11 based workspace"
-                        )
-    if(X11_FOUND)
-        set(HAVE_X11 TRUE)
-    endif()
-else()
-  set(X11_FOUND False)
+find_package(X11)
+set_package_properties(X11 PROPERTIES DESCRIPTION "X11 libraries"
+    URL "https://www.x.org"
+    TYPE OPTIONAL
+    PURPOSE "Required for building the X11 based workspace"
+)
+if(X11_FOUND)
+    set(HAVE_X11 TRUE)
 endif()
 
 ecm_find_qmlmodule(org.kde.kirigami 2.5)
