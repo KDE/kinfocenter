@@ -5,3 +5,12 @@ X-KDE-KInfoCenter-Category=basic_information
 Icon=dialog-information
 
 Name=Basic Information
+Name[ca]=Informació bàsica
+Name[et]=Põhiteave
+Name[eu]=Oinarrizko informazioa
+Name[lt]=Pagrindinė informacija
+Name[pt]=Informação Básica
+Name[ru]=Основные сведения
+Name[sv]=Grundinformation
+Name[uk]=Основна інформація
+Name[x-test]=xxBasic Informationxx

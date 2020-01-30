@@ -5,3 +5,12 @@ X-KDE-KInfoCenter-Category=detailed_information
 Icon=dialog-information
 
 Name=Detailed Information
+Name[ca]=Informació detallada
+Name[et]=Üksikasjalik teave
+Name[eu]=Informazio zehatza
+Name[lt]=Išsami informacija
+Name[pt]=Informação Detalhada
+Name[ru]=Подробные сведения
+Name[sv]=Detaljerad information
+Name[uk]=Докладна інформація
+Name[x-test]=xxDetailed Informationxx
