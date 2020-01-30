@@ -77,6 +77,13 @@ endif()
 
 ecm_find_qmlmodule(org.kde.kirigami 2.5)
 
+find_package(SystemSettings QUIET)
+set_package_properties(SystemSettings PROPERTIES
+    DESCRIPTION "Plasma's SystemSettings"
+    TYPE RUNTIME
+    PURPOSE "Absolutely required because the KInfoCenter binary is a symlink to it!"
+)
+
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
 remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_KEYWORDS)
