@@ -88,6 +88,7 @@ add_definitions(-DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT)
 add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
 add_definitions(-DQT_USE_QSTRINGBUILDER)
 
+configure_file(config-X11.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-X11.h)
 
 add_subdirectory( Categories )
 add_subdirectory( kcontrol/menus )
