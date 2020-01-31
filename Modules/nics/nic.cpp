@@ -134,14 +134,18 @@ static QString HWaddr2String(const char *hwaddr) {
 static int getNameInfo(struct sockaddr *addr, struct ifaddrs *ifa, char *hostOut)
 {
 #ifdef HAVE_STRUCT_SOCKADDR_SA_LEN
-    return getnameinfo(addr, ifa->ifa_addr->sa_len, buf, 127, 0, 0, NI_NUMERICHOST);
+    return getnameinfo(addr,
+                       ifa->ifa_addr->sa_len,
+                       hostOut, 127,
+                       nullptr, 0,
+                       NI_NUMERICHOST);
 #else
     return getnameinfo(addr,
-                (ifa->ifa_addr->sa_family == AF_INET) ? sizeof(struct sockaddr_in) :
-                                                        sizeof(struct sockaddr_in6),
-                hostOut, NI_MAXHOST,
-                nullptr, 0,
-                NI_NUMERICHOST);
+                       (ifa->ifa_addr->sa_family == AF_INET) ? sizeof(struct sockaddr_in) :
+                                                               sizeof(struct sockaddr_in6),
+                       hostOut, NI_MAXHOST,
+                       nullptr, 0,
+                       NI_NUMERICHOST);
 #endif
 }
 
