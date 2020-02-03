@@ -7,13 +7,16 @@ Icon=preferences-system-network
 
 Name=Network
 Name[ca]=Xarxa
+Name[es]=Red
 Name[et]=Võrk
 Name[eu]=Sarea
 Name[fr]=Réseau
+Name[it]=Rete
 Name[lt]=Tinklas
 Name[nl]=Netwerk
 Name[pt]=Rede
 Name[ru]=Сеть
+Name[sk]=Sieť
 Name[sv]=Nätverk
 Name[uk]=Мережа
 Name[x-test]=xxNetworkxx

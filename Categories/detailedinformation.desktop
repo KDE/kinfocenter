@@ -6,13 +6,16 @@ Icon=dialog-information
 
 Name=Detailed Information
 Name[ca]=Informació detallada
+Name[es]=Información detallada
 Name[et]=Üksikasjalik teave
 Name[eu]=Informazio zehatza
 Name[fr]=Informations détaillées
+Name[it]=Informazioni dettagliate
 Name[lt]=Išsami informacija
 Name[nl]=Gedetailleerde informatie
 Name[pt]=Informação Detalhada
 Name[ru]=Подробные сведения
+Name[sk]=Podrobné informácie
 Name[sv]=Detaljerad information
 Name[uk]=Докладна інформація
 Name[x-test]=xxDetailed Informationxx

@@ -7,13 +7,16 @@ Icon=hwinfo
 
 Name=Devices
 Name[ca]=Dispositius
+Name[es]=Dispositivos
 Name[et]=Seadmed
 Name[eu]=Gailuak
 Name[fr]=Périphériques
+Name[it]=Dispositivi
 Name[lt]=Įrenginiai
 Name[nl]=Apparaten
 Name[pt]=Dispositivos
 Name[ru]=Устройства
+Name[sk]=Zariadenia
 Name[sv]=Enheter
 Name[uk]=Пристрої
 Name[x-test]=xxDevicesxx
