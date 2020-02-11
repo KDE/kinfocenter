@@ -49,9 +49,9 @@ SambaContainer::SambaContainer(QWidget *parent, const QVariantList &)
     Q_ASSERT(this->layout());
     setLayout(layout);
 
-    addTableView(i18n("&Exports"), new KSambaShareModel(this));
+    addTableView(i18nc("@title/group", "Exported Shares"), new KSambaShareModel(this));
 
-    auto importsView = addTableView(i18n("&Imports"), new SmbMountModel(this));
+    auto importsView = addTableView(i18nc("@title/group", "Mounted Shares"), new SmbMountModel(this));
     importsView->horizontalHeader()->setSectionResizeMode(static_cast<int>(SmbMountModel::ColumnRole::Accessible),
                                                           QHeaderView::ResizeToContents);
 
@@ -60,11 +60,8 @@ SambaContainer::SambaContainer(QWidget *parent, const QVariantList &)
 
 QTableView *SambaContainer::addTableView(const QString &localizedLabel, QAbstractListModel *model)
 {
-    QString text = localizedLabel;
     auto title = new KTitleWidget(this);
-    // hackily remove ampersand to not break i18n too much in 5.18
-    // TODO: replace i18n'd string to one without quick access marker
-    title->setText(text.remove("&"));
+    title->setText(localizedLabel);
     title->setLevel(2);
     layout()->addWidget(title);
 

@@ -46,9 +46,9 @@ QVariant SmbMountModel::headerData(int section, Qt::Orientation orientation, int
     Q_ASSERT(section <static_cast<int>(ColumnRole::ColumnCount));
     switch (static_cast<ColumnRole>(section)) {
     case ColumnRole::Share:
-        return i18n("Resource"); // TODO: maybe reword for 5.19
+        return i18n("Resource");
     case ColumnRole::Path:
-        return i18n("Mounted Under"); // TODO: maybe reword for 5.19
+        return i18n("Mounted Under");
     case ColumnRole::Accessible:
         return i18nc("@title:column whether a samba share is accessible locally (i.e. mounted)", "Accessible");
     case ColumnRole::ColumnCount:
