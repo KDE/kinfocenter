@@ -85,11 +85,9 @@ Module::~Module()
 void Module::load()
 {
     // load is called lazly, but also from the ctor -> prevent double init.
-    static bool initd = false;
-    if (initd) {
+    if (!m_entries.empty()) {
         return;
     }
-    initd = true;
 
     loadOSData();
     loadEntries();
