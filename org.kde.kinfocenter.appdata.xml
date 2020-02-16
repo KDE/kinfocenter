@@ -131,7 +131,7 @@
   <url type="homepage">https://www.kde.org</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kinfocenter</url>
   <url type="donation">https://www.kde.org/community/donations/?app=kinfocenter</url>
-  <launchable type="desktop-id">org.kde.kinfocenter</launchable>
+  <launchable type="desktop-id">org.kde.kinfocenter.desktop</launchable>
   <screenshots>
     <screenshot type="default">
       <image>https://cdn.kde.org/screenshots/kinfocenter/kinfocenter.png</image>
