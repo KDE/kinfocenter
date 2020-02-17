@@ -41,6 +41,7 @@
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QTreeWidget>
+#include <QDebug>
 
 #include <net/if.h>
 #include <sys/ioctl.h>
@@ -251,6 +252,12 @@ QList<MyNIC*> findNICs() {
 
 	MyNIC *tmp=0;
     for (ifa = ifap; ifa; ifa = ifa->ifa_next) {
+        if (!ifa->ifa_addr) {
+            qDebug() << "stumbled over an interface without ifa_addr. You may wish to file a bug against kinfocenter"
+                     << ifa->ifa_name << ifa->ifa_flags;
+            continue;
+        }
+
         switch (ifa->ifa_addr->sa_family) {
 			case AF_INET6:
 			case AF_INET: {
