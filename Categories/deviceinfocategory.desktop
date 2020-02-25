@@ -6,6 +6,7 @@ X-KDE-KInfoCenter-Parent-Category=detailed_information
 Icon=hwinfo
 
 Name=Devices
+Name[ast]=Preseos
 Name[ca]=Dispositius
 Name[de]=Geräte
 Name[es]=Dispositivos

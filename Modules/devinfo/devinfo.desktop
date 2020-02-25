@@ -12,6 +12,7 @@ X-DocPath=kinfocenter/index.html#devinfo
 
 Name=Device Viewer
 Name[ar]=عارض الأجهزة
+Name[ast]=Visor de preseos
 Name[bg]=Преглед на устройства
 Name[bs]=Prikazivač uređaja
 Name[ca]=Visor de dispositius
@@ -75,6 +76,7 @@ Name[zh_TW]=裝置檢視器
 
 Comment=Device Viewer
 Comment[ar]=عارض الأجهزة
+Comment[ast]=Visor de preseos
 Comment[bg]=Преглед на устройства
 Comment[bs]=Prikazivač uređaja
 Comment[ca]=Visor de dispositius
@@ -137,6 +139,7 @@ Comment[zh_CN]=设备查看器
 Comment[zh_TW]=裝置檢視器
 
 X-KDE-Keywords=device,devices,disk,drive,processor,cpu
+X-KDE-Keywords[ast]=preséu,preseos,discu,discos,unidá,unidaes,procesador,procesadores,cpu,cpus
 X-KDE-Keywords[ca]=dispositiu,dispositius,disc,unitat,processador,cpu
 X-KDE-Keywords[ca@valencia]=dispositiu,dispositius,disc,unitat,processador,cpu
 X-KDE-Keywords[da]=enhed,enheder,disk,drive,processor,cpu

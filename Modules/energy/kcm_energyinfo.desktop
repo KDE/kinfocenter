@@ -8,6 +8,7 @@ X-KDE-ParentApp=kinfocenter
 X-KDE-KInfoCenter-Category=basic_information
 
 Name=Energy
+Name[ast]=Enerxía
 Name[ca]=Energia
 Name[de]=Energie
 Name[es]=Energía
@@ -31,6 +32,7 @@ Name[x-test]=xxEnergyxx
 Name[zh_TW]=電量
 Comment=Energy Consumption Statistics
 Comment[ar]=إحصائيّات استهلاك الطّاقة
+Comment[ast]=Estadístiques del consumu enerxéticu
 Comment[ca]=Estadístiques del consum d'energia
 Comment[ca@valencia]=Estadístiques del consum d'energia
 Comment[cs]=Statistika spotřeby energie
@@ -74,6 +76,7 @@ Comment[zh_TW]=能源消耗統計
 
 X-KDE-Keywords=Battery,Energy,Statistics,History,Power
 X-KDE-Keywords[ar]=Battery,Energy,Statistics,History,Power,بطارية,طاقة,إحصائيات,احصائيات,تأريخ,تاريخ
+X-KDE-Keywords[ast]=Batería,Enerxía,Estadístiques,Historial
 X-KDE-Keywords[ca]=Bateria,Energia,Estadístiques,Historial,Potència
 X-KDE-Keywords[ca@valencia]=Bateria,Energia,Estadístiques,Historial,Potència
 X-KDE-Keywords[cs]=Baterie,Energie,Statistika,Historie,Napájení
