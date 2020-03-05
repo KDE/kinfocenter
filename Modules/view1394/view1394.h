@@ -70,6 +70,7 @@ private:
 	bool m_insideRescanBus;
 	QTimer m_rescanTimer;
 	OuiDb *m_ouiDb;
+	OuiDb *ouiDb();
 private Q_SLOTS:
 	void callRaw1394EventLoop(int fd);
 };

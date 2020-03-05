@@ -58,7 +58,7 @@ int my_reset_handler(raw1394handle_t handle, unsigned int) {
 K_PLUGIN_FACTORY(View1394Factory, registerPlugin<View1394>();)
 
 View1394::View1394(QWidget *parent, const QVariantList &) :
-	KCModule(parent), m_insideRescanBus(false) {
+	KCModule(parent), m_insideRescanBus(false), m_ouiDb(nullptr) {
 	setQuickHelp(i18n("<qt>Here you can see some information about "
 		"your IEEE 1394 configuration. "
 		"The meaning of the columns:"
@@ -77,7 +77,6 @@ View1394::View1394(QWidget *parent, const QVariantList &) :
 		"</ul></qt>"
 		));
 
-	m_ouiDb=new OuiDb();
 	QVBoxLayout *box=new QVBoxLayout(this);
 	box->setContentsMargins(0, 0, 0, 0);
 	m_view=new View1394Widget(this);
@@ -255,7 +254,7 @@ void View1394::rescanBus() {
 				}
 				
 				QStringList nodeContents;
-				nodeContents << nodeStr << guidStr << local << irmStr << cmStr << isStr << bmStr << pmStr << accStr << speedStr << m_ouiDb->vendor(guid);
+				nodeContents << nodeStr << guidStr << local << irmStr << cmStr << isStr << bmStr << pmStr << accStr << speedStr << ouiDb()->vendor(guid);
 				
 				new QTreeWidgetItem(card, nodeContents);
 			}
@@ -269,6 +268,12 @@ void View1394::rescanBus() {
 void View1394::generateBusReset() {
 	for (QList<raw1394handle_t>::iterator it=m_handles.begin(); it!=m_handles.end(); ++it)
 		raw1394_reset_bus(*it);
+}
+
+OuiDb *View1394::ouiDb() {
+	if (m_ouiDb==nullptr)
+		m_ouiDb=new OuiDb();
+	return m_ouiDb;
 }
 
 OuiDb::OuiDb() {
