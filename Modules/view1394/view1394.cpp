@@ -23,6 +23,7 @@
 #include <QLayout>
 #include <QPushButton>
 #include <QFile>
+#include <QTextStream>
 #include <QTreeWidgetItem>
 #include <QTreeWidget>
 #include <QVBoxLayout>
@@ -271,9 +272,41 @@ void View1394::generateBusReset() {
 }
 
 OuiDb::OuiDb() {
-	QString filename=QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("kcmview1394/oui.db"));
+	const char *paths[]={
+		"/var/lib/ieee-data/oui.txt", /* Debian, ieee-data with updates */
+		"/usr/share/ieee-data/oui.txt", /* Debian, plain ieee-data */
+		"/usr/share/hwdata/oui.txt", /* hwdata */
+		nullptr
+	};
+	QString filename;
+	for (int i=0; paths[i]; ++i) {
+		if (QFile::exists(QLatin1String(paths[i]))) {
+			filename=QLatin1String(paths[i]);
+			loadFromOuiTxt(filename);
+			break;
+		}
+	}
+	if (!filename.isEmpty())
+		return;
+
+	filename=QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("kcmview1394/oui.db"));
 	if (!filename.isEmpty())
 		loadFromCustomOuiDb(filename);
+}
+
+void OuiDb::loadFromOuiTxt(const QString &filename) {
+	QFile f(filename);
+	if (!f.open(QIODevice::ReadOnly | QIODevice::Text))
+		return;
+
+	QTextStream ts(&f);
+	ts.setCodec("UTF-8");
+	while (!ts.atEnd()) {
+		const QString line = ts.readLine();
+		if (line.isEmpty() || !line.contains(QLatin1String("(base 16)")))
+			continue;
+		m_vendorIds.insert(line.section(QLatin1Char(' '), 0, 0), line.section(QLatin1Char('\t'), 1, -1, QString::SectionSkipEmpty).trimmed());
+	}
 }
 
 void OuiDb::loadFromCustomOuiDb(const QString &filename) {
