@@ -272,8 +272,11 @@ void View1394::generateBusReset() {
 
 OuiDb::OuiDb() {
 	QString filename=QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("kcmview1394/oui.db"));
-	if (filename.isEmpty())
-		return;
+	if (!filename.isEmpty())
+		loadFromCustomOuiDb(filename);
+}
+
+void OuiDb::loadFromCustomOuiDb(const QString &filename) {
 	QFile f(filename);
 	if (!f.open(QIODevice::ReadOnly))
 		return;

@@ -38,6 +38,7 @@ public:
 	OuiDb();
 	QString vendor(octlet_t guid);
 private:
+	void loadFromCustomOuiDb(const QString &filename);
 	QMap<QString, QString> m_vendorIds;
 };
 
