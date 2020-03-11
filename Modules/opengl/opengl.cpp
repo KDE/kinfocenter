@@ -31,6 +31,7 @@
 #include <QOpenGLContext>
 #include <QOffscreenSurface>
 #include <QSurfaceFormat>
+#include <QDirIterator>
 
 #include <KPluginFactory>
 #include <KPluginLoader>
@@ -156,14 +157,20 @@ static struct glinfo {
       char *displayName;
 } gli;
 
-static struct {
-	QString module,
-		pci,
-		vendor,
-		device,
-		subvendor,
-		rev;
-} dri_info;
+struct DriInfo {
+    QString deviceId; // card0 etc.
+    QString module;
+    QString pci;
+    QString vendor;
+    QString device;
+    QString subvendor;
+    QString rev;
+
+    bool isValid() const
+    {
+        return (!module.isEmpty() && !pci.isEmpty() && !deviceId.isEmpty());
+    }
+};
 
 static int ReadPipe(const QString &FileName, QStringList &list)
 {
@@ -184,7 +191,7 @@ static int ReadPipe(const QString &FileName, QStringList &list)
 
 #if defined(Q_OS_LINUX)
 
-static QString get_sysfs_link_name(const QString& path)
+static QString get_sysfs_link_name(const QString &path)
 {
     const QString target = QFileInfo(path).symLinkTarget();
 
@@ -195,97 +202,96 @@ static QString get_sysfs_link_name(const QString& path)
     return target.mid(index + 1);
 }
 
-static bool get_drm_device_sysfs()
+static DriInfo get_drm_device_sysfs(const QString &path)
 {
-    struct stat fileInfo;
-    if (::stat("/dev/dri/card0", &fileInfo) != 0)
-        return false;
-    if ((fileInfo.st_mode & S_IFCHR) != S_IFCHR)
-        return false;
+    DriInfo info;
+
+    struct stat fileInfo{};
+    if (::stat(QFile::encodeName(path), &fileInfo) != 0) {
+        return info;
+    }
+    if ((fileInfo.st_mode & S_IFCHR) != S_IFCHR) {
+        return info;
+    }
 
     const uint16_t devMajor = major(fileInfo.st_rdev);
     const uint16_t devMinor = minor(fileInfo.st_rdev);
-    QString sysPath = QStringLiteral("/sys/dev/char/%1:%2/device").arg(devMajor).arg(devMinor);
+    const QString sysPath = QStringLiteral("/sys/dev/char/%1:%2").arg(devMajor).arg(devMinor);
 
-    dri_info.pci = get_sysfs_link_name(sysPath);
-    dri_info.module = get_sysfs_link_name(sysPath + QStringLiteral("/driver"));
+    info.pci = get_sysfs_link_name(sysPath + QStringLiteral("/device"));
+    info.module = get_sysfs_link_name(sysPath + QStringLiteral("/device/driver"));
 
-    return (dri_info.pci.size() && dri_info.module.size());
+    return info;
 }
 
-#define INFO_DRI QStringLiteral("/proc/dri/0/name")
-
-static bool get_dri_device_proc()
+static QVector<DriInfo> get_drm_devices_sysfs()
 {
-    QFile file;
-    file.setFileName(INFO_DRI);
-    if (!file.exists() || !file.open(QIODevice::ReadOnly))
-        return false;
-
-    QTextStream stream(&file);
-    QString line = stream.readLine();
-    if (line.isEmpty())
-        return false;
-    dri_info.module = line.mid(0, line.indexOf(0x20));
-
-    // possible formats, for regression testing
-    // line = " PCI:01:00:0";
-    // line = " pci:0000:01:00.0"
-    QRegExp rx = QRegExp("\\b[Pp][Cc][Ii][:]([0-9a-fA-F]+[:])?([0-9a-fA-F]+[:][0-9a-fA-F]+[:.][0-9a-fA-F]+)\\b");
-    if (rx.indexIn(line)>0)	 {
-        dri_info.pci = rx.cap(2);
-        int end = dri_info.pci.lastIndexOf(':');
-        int end2 = dri_info.pci.lastIndexOf('.');
-        if (end2>end) end=end2;
-        dri_info.pci[end]='.';
-        return true;
+    QVector<DriInfo> list;
+    QDirIterator it("/dev/dri/", {"card*"}, QDir::System);
+    while (it.hasNext()) {
+        it.next();
+        auto info = get_drm_device_sysfs(it.filePath());
+        info.deviceId = it.fileName();
+        if (info.isValid()) {
+            list << info;
+        }
     }
-    return false;
+    std::sort(list.begin(), list.end(), [](const DriInfo &i1, const DriInfo &i2) -> bool {
+        // reverse card0 < card1 < card2
+        return QString::localeAwareCompare(i1.deviceId, i2.deviceId) < 0;
+    });
+    return list;
 }
 
-static bool get_dri_device()
+static QVector<DriInfo> get_dri_devices()
 {
-    if (!get_drm_device_sysfs() && !get_dri_device_proc())
-        return false;
-
-    QString cmd = QStringLiteral("lspci -m -v -s ") + dri_info.pci;
-    QStringList pci_info;
-    int num;
-    if (((num = ReadPipe(cmd, pci_info)) ||
-    (num = ReadPipe("/sbin/"+cmd, pci_info)) ||
-    (num = ReadPipe("/usr/sbin/"+cmd, pci_info)) ||
-    (num = ReadPipe("/usr/local/sbin/"+cmd, pci_info))) && num>=7) {
-        QString line;
-        for (int i=2; i<=6; i++) {
-            line = pci_info[i];
-            line.remove(QRegExp("[^:]*:[ ]*"));
-            switch (i){
-                case 2: dri_info.vendor = line;    break;
-                case 3: dri_info.device = line;    break;
-                case 4: dri_info.subvendor = line; break;
-                case 6: dri_info.rev = line;       break;
+    auto infos = get_drm_devices_sysfs();
+    for (auto it = infos.begin(); it != infos.end(); ++it) {
+        const QString cmd = QStringLiteral("lspci -m -v -s ") + it->pci;
+        QStringList pci_info;
+        int num = 0;
+        if (((num = ReadPipe(cmd, pci_info)) ||
+             (num = ReadPipe("/sbin/"+cmd, pci_info)) ||
+             (num = ReadPipe("/usr/sbin/"+cmd, pci_info)) ||
+             (num = ReadPipe("/usr/local/sbin/"+cmd, pci_info))) && num>=7) {
+            QString line;
+            for (int i=2; i<=6; i++) {
+                line = pci_info[i];
+                line.remove(QRegExp("[^:]*:[ ]*"));
+                switch (i) {
+                    case 2: it->vendor = line;    break;
+                    case 3: it->device = line;    break;
+                    case 4: it->subvendor = line; break;
+                    case 6: it->rev = line;       break;
+                }
+            }
+        } else {
+            qDebug() << "failed to pcinfo" << cmd;;
+            it = infos.erase(it);
+            if (it == infos.end()) {
+                break;
             }
         }
-        return true;
     }
-
-    return false;
+    return infos;
 }
 
 #elif defined(Q_OS_FREEBSD)
 
-static bool get_dri_device() {
-
+static QVector<DriInfo> get_dri_devices() {
+    QVector<DriInfo> list;
 	QStringList pci_info;
-	if (ReadPipe("sysctl -n hw.dri.0.name",pci_info)) {
-		dri_info.module = pci_info[0].mid(0, pci_info[0].indexOf(0x20));
-		}
-	return false;
+    if (ReadPipe("sysctl -n hw.dri.0.name", pci_info)) {
+        DriInfo info;
+        info.module = pci_info[0].mid(0, pci_info[0].indexOf(0x20));
+        list << info;
+    }
+    return list;
 }
 
 #else
 
-static bool get_dri_device() { return false; }
+static QVector<DriInfo> get_dri_devices() { return {}; }
 
 #endif
 
@@ -594,6 +600,14 @@ print_limits(QTreeWidgetItem *l1, const char * glExtensions, bool getProcAddress
 }
 #endif
 
+static void makeDriItem(const DriInfo &info, QTreeWidgetItem *parent, QTreeWidgetItem *preceding)
+{
+    preceding = newItem(parent, preceding, i18n("Vendor"), info.vendor);
+    preceding = newItem(parent, preceding, i18n("Device"), info.device);
+    preceding = newItem(parent, preceding, i18n("Subvendor"), info.subvendor);
+    preceding = newItem(parent, preceding, i18n("Revision"), info.rev);
+    preceding = newItem(parent, preceding, i18n("Kernel module"), info.module);
+}
 
 static QTreeWidgetItem *print_screen_info(QTreeWidgetItem *l1, QTreeWidgetItem *after, const QString &title)
 {
@@ -604,15 +618,21 @@ static QTreeWidgetItem *print_screen_info(QTreeWidgetItem *l1, QTreeWidgetItem *
     } else {
         l1 = newItem(l1, title);
     }
-    
-   	if (IsDirect) {
-   	 	if (get_dri_device())  {
-      			l2 = newItem(l1, i18n("3D Accelerator"));
-     			l2->setExpanded(true);
-   			l3 = newItem(l2, l3, i18n("Vendor"), dri_info.vendor);
-   			l3 = newItem(l2, l3, i18n("Device"), dri_info.device);
-   			l3 = newItem(l2, l3, i18n("Subvendor"), dri_info.subvendor);
-   			l3 = newItem(l2, l3, i18n("Revision"), dri_info.rev);
+
+    if (IsDirect) {
+        const QVector<DriInfo> infos = get_dri_devices();
+        if (infos.size() > 0) {
+            l2 = newItem(l1, i18n("3D Accelerator"));
+            l2->setExpanded(true);
+            if (infos.size() > 1) {
+                for (const auto &info : infos) {
+                    l3 = newItem(l2, l3, info.deviceId);
+                    l3->setExpanded(true);
+                    makeDriItem(info, l3, nullptr);
+                }
+            } else if (infos.size() == 1) {
+                makeDriItem(infos.at(0), l2, nullptr);
+            }
 		} else {
             l2 = newItem(l1, l2, i18n("3D Accelerator"), i18n("unknown"));
         }
@@ -633,11 +653,6 @@ static QTreeWidgetItem *print_screen_info(QTreeWidgetItem *l1, QTreeWidgetItem *
 #else
         l3 = newItem(l2, l3, i18n("OpenGL version"), gli.glVersion);
 #endif
-
-    	if (IsDirect) {
-    		if (dri_info.module.isEmpty()) dri_info.module = i18n("unknown");
-    		l3 = newItem(l2, l3, i18n("Kernel module"), dri_info.module);
-    	}
 
 #ifdef KCM_ENABLE_OPENGLES
         l3 = newItem(l2, l3, i18n("OpenGL ES extensions"));
