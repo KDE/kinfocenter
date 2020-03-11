@@ -259,10 +259,10 @@ static QVector<DriInfo> get_dri_devices()
                 line = pci_info[i];
                 line.remove(QRegExp("[^:]*:[ ]*"));
                 switch (i) {
-                    case 2: it->vendor = line;    break;
-                    case 3: it->device = line;    break;
-                    case 4: it->subvendor = line; break;
-                    case 6: it->rev = line;       break;
+                    case 2: it->vendor = line.simplified();    break;
+                    case 3: it->device = line.simplified();    break;
+                    case 4: it->subvendor = line.simplified(); break;
+                    case 6: it->rev = line.simplified();       break;
                 }
             }
         } else {
