@@ -105,8 +105,13 @@ void SmbMountModel::addDevice(const QString &udi)
         return; // already in the list
     }
 
+    Solid::Device device(udi);
+    if (!device.is<Solid::NetworkShare>()) {
+        return;
+    }
+
     beginInsertRows(QModelIndex(), m_devices.count(), m_devices.count());
-    m_devices.append(Solid::Device(udi));
+    m_devices.append(device);
     endInsertRows();
 }
 
