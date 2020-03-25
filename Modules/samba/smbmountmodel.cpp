@@ -129,6 +129,11 @@ void SmbMountModel::reloadData()
     m_devices.clear();
     const auto devices = Solid::Device::listFromType(Solid::DeviceInterface::NetworkShare);
     for (auto it = devices.begin(); it != devices.end(); ++it) {
+        if (!it->is<Solid::NetworkShare>()) {
+            // Workaround in case listFromType still gives incorrect types.
+            // https://bugs.kde.org/show_bug.cgi?id=419220
+            continue;
+        }
         switch (it->as<Solid::NetworkShare>()->type()) {
         case Solid::NetworkShare::Cifs:
             m_devices.append(*it);
