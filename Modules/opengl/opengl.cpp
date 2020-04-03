@@ -622,7 +622,7 @@ static QTreeWidgetItem *print_screen_info(QTreeWidgetItem *l1, QTreeWidgetItem *
     if (IsDirect) {
         const QVector<DriInfo> infos = get_dri_devices();
         if (infos.size() > 0) {
-            l2 = newItem(l1, i18n("3D Accelerator"));
+            l2 = newItem(l1, i18np("3D Accelerator", "3D Accelerators", infos.size()));
             l2->setExpanded(true);
             if (infos.size() > 1) {
                 for (const auto &info : infos) {
