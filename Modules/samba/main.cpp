@@ -68,6 +68,25 @@ QTableView *SambaContainer::addTableView(const QString &localizedLabel, QAbstrac
     auto view = new QTableView(this);
     layout()->addWidget(view);
     view->setModel(model);
+
+    // Stretching is a bit awkward because it allows resizing below the sizeHint of
+    // the header, effectively cutting off the text. This is made worse by kcmshell
+    // which rather unfortunately stacks scrollviews so size hinting is lost along
+    // the way allowing the actual window to be (even by default) smaller than
+    // what our preferred hint is. To mitigate this problem we manually make
+    // the sizeHint's width the minimal size. This is kind of like QSizePolicy::Minimum.
+    // https://bugs.kde.org/show_bug.cgi?id=419786
+    int maxSectionRequirement = 0;
+    for (auto i = 0; i < view->model()->columnCount(); ++i) {
+        const int hint = view->horizontalHeader()->sectionSizeHint(i);
+        maxSectionRequirement = qMax<int>(maxSectionRequirement, hint);
+    }
+    view->horizontalHeader()->setMinimumSectionSize(maxSectionRequirement);
+    // Combined with the minimum section size this makes sure the default size will
+    // be minimal sufficient regardless of parent sizing policies and model content
+    // i.e. an empty view will still have fine spacing for header text.
+    view->setSizeAdjustPolicy(QAbstractScrollArea::AdjustToContentsOnFirstShow);
+
     view->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     view->horizontalHeader()->reset();
     view->horizontalHeader()->setVisible(true);
