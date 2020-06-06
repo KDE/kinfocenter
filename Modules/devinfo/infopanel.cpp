@@ -131,7 +131,11 @@ void InfoPanel::setTopInfo(const QIcon &deviceIcon, Solid::Device *device)
 
     tLayout->addWidget(setDevicesIcon(deviceIcon), 0, Qt::AlignHCenter);
 
-    const QStringList labels {i18n("Product: "), device->product(), i18n("Vendor: "), friendlyString(device->vendor())};
+    const QStringList labels {
+        i18n("Description: "), device->description(),
+        i18n("Product: "), device->product(),
+        i18n("Vendor: "), friendlyString(device->vendor())
+    };
 
     status->updateStatus(device->udi());
     tLayout->applyQListToLayout(labels);
