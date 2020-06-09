@@ -89,9 +89,8 @@ void USBDevice::parseSysDir(int bus, int parent, int level, const QString& dname
     _serial = catFile(dname + QStringLiteral("/serial"));
     _channels = catFile(dname + QStringLiteral("/maxchild")).toUInt();
 
-    double version = catFile(dname + QStringLiteral("/version")).toDouble();
-	_verMajor = int(version);
-	_verMinor = int(10*(version - floor(version)));
+    const QString version = catFile(dname + QStringLiteral("/version"));
+    sscanf(qPrintable(version), "%2x.%02x", &_verMajor, &_verMinor);
 
 	QDir dir(dname);
 	dir.setNameFilters(QStringList() << QStringLiteral("%1-*").arg(bus));
