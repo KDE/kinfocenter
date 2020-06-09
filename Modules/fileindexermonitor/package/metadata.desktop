@@ -2,6 +2,7 @@
 Name=File Indexer Monitor
 Name[ar]=مرقاب مفهرس الملفّات
 Name[ast]=Supervisor del indizador de ficheros
+Name[az]=Fayl indeksləmə İzləyicisi
 Name[ca]=Monitor de l'indexador de fitxers
 Name[ca@valencia]=Monitor de l'indexador de fitxers
 Name[da]=Overvågning af filindeksering
@@ -42,6 +43,7 @@ Name[zh_TW]=檔案索引器監視器
 Comment=File Index Monitor
 Comment[ar]=مرقاب فهرسة الملفّات
 Comment[ast]=Supervisor del indizador de ficheros
+Comment[az]=Fayl indekslənmə İzləyicisi
 Comment[ca]=Monitor de l'índex de fitxers
 Comment[ca@valencia]=Monitor de l'índex de fitxers
 Comment[da]=Overvågning af filindeksering
