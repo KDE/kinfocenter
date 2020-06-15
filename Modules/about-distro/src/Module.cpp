@@ -126,7 +126,9 @@ void Module::loadOSData()
             ? os.version()
             : os.versionId();
     const QString versionId = cg.readEntry("Version", osrVersion);
-    const QString distroNameVersion = QStringLiteral("%1 %2").arg(distroName, versionId);
+    // This creates a trailing space if versionId is empty, so trimming String
+    // to remove possibly trailing spaces
+    const QString distroNameVersion = QStringLiteral("%1 %2").arg(distroName, versionId).trimmed();
     ui->nameVersionLabel->setText(distroNameVersion);
 
     // Insert a dummy entry for debug info dumps.
@@ -199,7 +201,7 @@ void Module::copyToClipboard()
     for (auto entry : m_entries) {
         text += entry->diagnosticLine(Entry::Language::System);
     }
-    QGuiApplication::clipboard()->setText(text);
+    QGuiApplication::clipboard()->setText(text.trimmed());
 }
 
 void Module::copyToClipboardInEnglish()
@@ -208,5 +210,5 @@ void Module::copyToClipboardInEnglish()
     for (auto entry : m_entries) {
         text += entry->diagnosticLine(Entry::Language::English);
     }
-    QGuiApplication::clipboard()->setText(text);
+    QGuiApplication::clipboard()->setText(text.trimmed());
 }
