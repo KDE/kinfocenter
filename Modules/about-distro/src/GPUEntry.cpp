@@ -34,6 +34,9 @@ GPUEntry::GPUEntry()
         // It seems the renderer value may have excess information in parentheses ->
         // strip that. Elide would probably be nicer, a bit meh with QWidgets though.
         value = value.mid(0, value.indexOf('('));
+        // Leads to trailing space in my case, don't know whether that is happening
+        // everyhere, though. Thus removing trailing spaces separately.
+        value = value.trimmed();
         context.doneCurrent();
     } else {
         qWarning() << "Failed to make QOpenGLContext current";
