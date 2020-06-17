@@ -100,7 +100,6 @@ Name[uz@cyrillic]=Тўхталишлар
 Name[vi]=Gián đoạn
 Name[wa]=Boutoes
 Name[xh]=Iziphazamiso
-Name[x-test]=xxInterruptsxx
 Name[zh_CN]=中断
 Name[zh_TW]=中斷
 
@@ -192,7 +191,6 @@ Comment[uz@cyrillic]=Тўхталиш ҳақида маълумот
 Comment[vi]=Thông tin về các gián đoạn
 Comment[wa]=Informåcions so les djocaedjes
 Comment[xh]=Phazamisa ulwazi
-Comment[x-test]=xxInterrupt informationxx
 Comment[zh_CN]=中断信息
 Comment[zh_TW]=中斷資訊
 
@@ -244,7 +242,6 @@ X-KDE-Keywords[sv]=Avbrott,IRQ,Systeminformation
 X-KDE-Keywords[tr]=Kesmeler,IRQ,Sistem Bilgileri
 X-KDE-Keywords[uk]=Interrupts,IRQ,System Information,переривання,система,інформація,відомості
 X-KDE-Keywords[vi]=Gián đoạn,IRQ,Thông tin Hệ thống
-X-KDE-Keywords[x-test]=xxInterruptsxx,xxIRQxx,xxSystem Informationxx
 X-KDE-Keywords[zh_CN]=Interrupts,IRQ,System Information,终端信息
 X-KDE-Keywords[zh_TW]=Interrupts,IRQ,System Information
 

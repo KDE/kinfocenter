@@ -98,7 +98,6 @@ Name[uz@cyrillic]=USB ускуналар
 Name[vi]=Thiết bị USB
 Name[wa]=Éndjins USB
 Name[xh]=Amacebo e USB
-Name[x-test]=xxUSB Devicesxx
 Name[zh_CN]=USB设备
 Name[zh_TW]=USB 裝置
 
@@ -181,7 +180,6 @@ Comment[uk]=Пристроїв USB, під'єднаних до комп'ютер
 Comment[uz]=Kompyuterga ulangan USB uskunalar
 Comment[uz@cyrillic]=Компьютерга уланган USB ускуналар
 Comment[wa]=Éndjins USB raloyîs a cisse copiutrece chal
-Comment[x-test]=xxUSB devices attached to this computerxx
 Comment[zh_CN]=连接到该计算机的 USB 设备
 Comment[zh_TW]=查看連接到這台電腦的 USB 裝置
 
@@ -232,7 +230,6 @@ X-KDE-Keywords[sv]=USB,enheter,visning,kontroll
 X-KDE-Keywords[tr]=USB,aygıtlar,gösterici,denetim
 X-KDE-Keywords[uk]=USB,devices,viewer,control,пристрій,пристрої,перегляд,переглядач,керування,контроль
 X-KDE-Keywords[vi]=USB,thiết bị,xem,điều khiển
-X-KDE-Keywords[x-test]=xxUSBxx,xxdevicesxx,xxviewerxx,xxcontrolxx
 X-KDE-Keywords[zh_CN]=USB,devices,viewer,control,设备,查看器,控制
 X-KDE-Keywords[zh_TW]=USB,devices,viewer,control
 

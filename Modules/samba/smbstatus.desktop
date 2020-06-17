@@ -99,7 +99,6 @@ Name[uz@cyrillic]=Samba'нинг ҳолати
 Name[vi]=Trạng thái Samba
 Name[wa]=Estat di Samba
 Name[xh]=Isimo se Samba
-Name[x-test]=xxSamba Statusxx
 Name[zh_CN]=Samba 状态
 Name[zh_TW]=Samba 狀態
 
@@ -192,7 +191,6 @@ Comment[uz@cyrillic]=Samba'нинг ҳолатини назорат қилувч
 Comment[vi]=Theo dõi trạng thái Samba
 Comment[wa]=Corwaitoe di l' estat di Samba
 Comment[xh]=Umphathi wemeko we Samba
-Comment[x-test]=xxSamba status monitorxx
 Comment[zh_CN]=Samba 状态监视器
 Comment[zh_TW]=Samba 狀態監視器
 
@@ -243,7 +241,6 @@ X-KDE-Keywords[sr@latin]=SMB,SAMBA,Windows network,LAN,System Information,SMB,Sa
 X-KDE-Keywords[sv]=SMB,SAMBA,Windows-nätverk,LAN,Systeminformation
 X-KDE-Keywords[tr]=SMB,SAMBA,Windows ağı,LAN,Yerel Ağ,Sistem Bilgileri
 X-KDE-Keywords[uk]=SMB,SAMBA,Windows network,LAN,System Information,мережа,віндоус,віндоуз,віндовс,віндовз,система,інформація,відомості
-X-KDE-Keywords[x-test]=xxSMBxx,xxSAMBAxx,xxWindows networkxx,xxLANxx,xxSystem Informationxx
 X-KDE-Keywords[zh_CN]=SMB,SAMBA,Windows network,LAN,System Information,Windows 网络,网上邻居,局域网,系统信息
 X-KDE-Keywords[zh_TW]=SMB,SAMBA,Windows network,LAN,System Information
 Categories=Qt;KDE;X-KDE-information;
