@@ -7,6 +7,7 @@
 #define ENTRY_H
 
 #include <QString>
+#include <QLocale>
 #include <KLocalizedString>
 
 // Generic dumpable info entry.
@@ -37,8 +38,18 @@ public:
     // Value of the entry (e.g. the version of plasma)
     QString value;
 
+    // Returns localized QString for the given language.
+    QString localize(const KLocalizedString &string, Language language) const;
+
+    // Returns a QLocale for the given language.
+    QLocale localeForLanguage(Language language) const;
+
 private:
     QString localizedLabel(Language language) const;
+
+    // Returns the value by default. Needs to be overwritten in subclasses if localization
+    // is needed for the value.
+    virtual QString localizedValue(Language language) const;
 };
 
 #endif // ENTRY_H

@@ -30,19 +30,42 @@ QString Entry::diagnosticLine(Language language) const
     // that is to say the colon should be on the left, BUT englishy words
     // within that should be LTR, everything besides the label should be LTR
     // because we do not localize the values I don't think?
-    return localizedLabel(language) + ' ' + value + '\n';
+    return localizedLabel(language) + ' ' + localizedValue(language) + '\n';
+}
+
+QString Entry::localize(const KLocalizedString &string, Language language) const
+{
+    switch (language) {
+    case Language::System:
+        return string.toString();
+    case Language::English:
+        // https://bugs.kde.org/show_bug.cgi?id=416247
+        return string.toString(QStringList { QStringLiteral("en_US") });
+    }
+    Q_UNREACHABLE();
+    return QStringLiteral("Unknown Language %1 (bug in KInfocenter!):").arg(
+                QString::number(static_cast<int>(language)));
 }
 
 QString Entry::localizedLabel(Language language) const
 {
+    return localize(label, language);
+}
+
+QString Entry::localizedValue(Language language = Language::System) const
+{
+    Q_UNUSED(language);
+    return value;
+}
+
+QLocale Entry::localeForLanguage(Language language) const
+{
     switch (language) {
     case Language::System:
-        return label.toString();
+        return QLocale::system();
     case Language::English:
-        // https://bugs.kde.org/show_bug.cgi?id=416247
-        return label.toString(QStringList { QStringLiteral("en_US") });
+        return QLocale(QLocale::English, QLocale::UnitedStates);
     }
     Q_UNREACHABLE();
-    return QStringLiteral("Unknown Label Language %1 (bug in KInfocenter!):").arg(
-                QString::number(static_cast<int>(language)));
+    return QLocale::system();
 }
