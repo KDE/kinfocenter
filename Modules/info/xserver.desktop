@@ -99,7 +99,6 @@ Name[uz@cyrillic]=X-Сервер
 Name[vi]=X-Server
 Name[wa]=Sierveu X
 Name[xh]=Umncedisi we-X
-Name[x-test]=xxX-Serverxx
 Name[zh_CN]=X 服务器
 Name[zh_TW]=X 伺服器
 
@@ -191,7 +190,6 @@ Comment[uz@cyrillic]=X-Сервер ҳақида маълумот
 Comment[vi]=Thông tin về X-Server
 Comment[wa]=Informåcion sol sierveu X
 Comment[xh]=Ulwazi lomncedisi we-X
-Comment[x-test]=xxX-Server informationxx
 Comment[zh_CN]=X 服务器信息
 Comment[zh_TW]=X 伺服器資訊
 
@@ -239,7 +237,6 @@ X-KDE-Keywords[sr@latin]=X,X-Server,XServer,XFree86,Display,VideoCard,System Inf
 X-KDE-Keywords[sv]=X,X-Server,XServer,XFree86,Bildskärm,Videokort,Systeminformation
 X-KDE-Keywords[tr]=X,X-Server,XSunucu,XFree86,Ekran,Ekran Kartı,Sistem Bilgileri
 X-KDE-Keywords[uk]=X,X-Server,XServer,XFree86,Display,VideoCard,System Information,сервер,графічний,графічний сервер,дисплей,відео,відеокартка,система,інформація,відомості
-X-KDE-Keywords[x-test]=xxXxx,xxX-Serverxx,xxXServerxx,xxXFree86xx,xxDisplayxx,xxVideoCardxx,xxSystem Informationxx
 X-KDE-Keywords[zh_CN]=X,X-Server,XServer,XFree86,Display,VideoCard,System Information,X-服务器,显示,显卡,系统信息
 X-KDE-Keywords[zh_TW]=X,X-Server,XServer,XFree86,Display,VideoCard,System Information
 

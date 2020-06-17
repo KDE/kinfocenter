@@ -100,7 +100,6 @@ Name[uz@cyrillic]=Хотира
 Name[vi]=Bộ nhớ
 Name[wa]=Memwere
 Name[xh]=Inkumbulo
-Name[x-test]=xxMemoryxx
 Name[zh_CN]=内存
 Name[zh_TW]=記憶體
 
@@ -192,7 +191,6 @@ Comment[uz@cyrillic]=Хотира ҳақида маълумот
 Comment[vi]=Thông tin về bộ nhớ
 Comment[wa]=Informåcion sol memwere
 Comment[xh]=Ulwazi lwenkumbulo
-Comment[x-test]=xxMemory informationxx
 Comment[zh_CN]=内存信息
 Comment[zh_TW]=記憶體資訊
 
@@ -239,7 +237,6 @@ X-KDE-Keywords[sr@latin]=Memory,RAM,Virtual memory,Physical memory,Shared memory
 X-KDE-Keywords[sv]=Minne,RAM,Virtuellt minne,Fysiskt minne,Delat minne,Växling,Systeminformation
 X-KDE-Keywords[tr]=Bellek,RAM,Sanal bellek,Fiziksel bellek,Paylaşılan bellek,Takas alanı,Swap,Sistem bilgileri
 X-KDE-Keywords[uk]=Memory,RAM,Virtual memory,Physical memory,Shared memory,Swap,System Information,пам’ять,віртуальна пам’ять,фізична пам’ять,спільна пам’ять,свопінг,резервна пам’ять,резерв,своп,система,інформація,відомості
-X-KDE-Keywords[x-test]=xxMemoryxx,xxRAMxx,xxVirtual memoryxx,xxPhysical memoryxx,xxShared memoryxx,xxSwapxx,xxSystem Informationxx
 X-KDE-Keywords[zh_CN]=Memory,RAM,Virtual memory,Physical memory,Shared memory,Swap,System Information,内存,随机存储,虚拟内存,物理内存,共享内存,交换空间,系统信息
 X-KDE-Keywords[zh_TW]=Memory,RAM,Virtual memory,Physical memory,Shared memory,Swap,System Information
 Categories=Qt;KDE;X-KDE-information;
