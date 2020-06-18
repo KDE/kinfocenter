@@ -70,6 +70,7 @@ Name[ug]=ئۈسكۈنە كۆرگۈ
 Name[uk]=Переглядач пристроїв
 Name[vi]=Trình xem thiết bị
 Name[wa]=Håyneu des éndjins
+Name[x-test]=xxDevice Viewerxx
 Name[zh_CN]=设备查看器
 Name[zh_TW]=裝置檢視器
 
@@ -133,6 +134,7 @@ Comment[ug]=ئۈسكۈنە كۆرگۈ
 Comment[uk]=Переглядач пристроїв
 Comment[vi]=Trình xem thiết bị
 Comment[wa]=Håyneu des éndjins
+Comment[x-test]=xxDevice Viewerxx
 Comment[zh_CN]=设备查看器
 Comment[zh_TW]=裝置檢視器
 
@@ -167,6 +169,7 @@ X-KDE-Keywords[sk]=zariadenie,zariadenia,disk,disk,procesor,cpu
 X-KDE-Keywords[sl]=naprava,naprave,disk,pogon,procesor,cpe
 X-KDE-Keywords[sv]=enhet,enheter,disk,processor,cpu
 X-KDE-Keywords[uk]=device,devices,disk,drive,processor,cpu,пристрій,пристрої,диск,флешка,процесор,цпу
+X-KDE-Keywords[x-test]=xxdevicexx,xxdevicesxx,xxdiskxx,xxdrivexx,xxprocessorxx,xxcpuxx
 X-KDE-Keywords[zh_CN]=device,devices,disk,drive,processor,cpu,设备,磁盘,硬盘,驱动,处理器
 X-KDE-Keywords[zh_TW]=device,devices,disk,drive,processor,cpu,裝置,磁碟,硬碟,磁碟機,硬碟機,裝置,設備,處理器,CPU
 Categories=Qt;KDE;X-KDE-information;
