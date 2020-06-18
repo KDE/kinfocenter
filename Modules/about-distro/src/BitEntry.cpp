@@ -7,13 +7,14 @@
 
 
 BitEntry::BitEntry()
-    : Entry(ki18n("OS Type:"), bitString())
+    : Entry(ki18n("OS Type:"), QString())
 {
 }
 
-QString BitEntry::bitString()
+QString BitEntry::localizedValue(Entry::Language language) const
 {
     const int bits = QT_POINTER_SIZE == 8 ? 64 : 32;
-    return i18nc("@label %1 is the CPU bit width (e.g. 32 or 64)",
-                 "%1-bit", QString::number(bits));
+    return localize(ki18nc("@label %1 is the CPU bit width (e.g. 32 or 64)",
+                           "%1-bit").subs(QString::number(bits)),
+                    language);
 }
