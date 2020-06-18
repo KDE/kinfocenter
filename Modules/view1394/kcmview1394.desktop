@@ -96,6 +96,7 @@ Name[uz]=IEEE 1394 uskunalar
 Name[uz@cyrillic]=IEEE 1394 ускуналар
 Name[vi]=Thiết bị IEEE 1394
 Name[wa]=Éndjins IEEE 1394
+Name[x-test]=xxIEEE 1394 Devicesxx
 Name[zh_CN]=IEEE 1394 设备
 Name[zh_TW]=IEEE 1394 裝置
 
@@ -179,6 +180,7 @@ Comment[uz]=Ulangan IEEE 1394 uskunalar
 Comment[uz@cyrillic]=Уланган IEEE 1394 ускуналар
 Comment[vi]=Thiết bị IEEE 1394 đã gắn
 Comment[wa]=Éndjins IEEE 1394 ataetchîs
+Comment[x-test]=xxAttached IEEE 1394 devicesxx
 Comment[zh_CN]=挂接的 IEEE 1394 设备
 Comment[zh_TW]=已加上 IEEE 1394 裝置
 
@@ -226,5 +228,6 @@ X-KDE-Keywords[sv]=1394,Firewire,enheter,visning,kontroll
 X-KDE-Keywords[tr]=1394,Firewire,aygıtlar,gösterici,denetim
 X-KDE-Keywords[uk]=1394,Firewire,devices,viewer,control,пристрій,пристрої,перегляд,переглядач,керування,контроль
 X-KDE-Keywords[vi]=1394,Firewire,thiết bị,trình xem,điều khiển
+X-KDE-Keywords[x-test]=xx1394xx,xxFirewirexx,xxdevicesxx,xxviewerxx,xxcontrolxx
 X-KDE-Keywords[zh_CN]=1394,Firewire,devices,viewer,control,火线,设备,查看器,控制
 X-KDE-Keywords[zh_TW]=1394,Firewire,devices,viewer,control
