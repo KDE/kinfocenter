@@ -100,6 +100,7 @@ Name[uz@cyrillic]=К/Ч портлар
 Name[vi]=Các cổng IO
 Name[wa]=Pôrts I/R
 Name[xh]=IO-Ufako
+Name[x-test]=xxIO-Portsxx
 Name[zh_CN]=IO 端口
 Name[zh_TW]=IO-Ports
 
@@ -193,6 +194,7 @@ Comment[uz@cyrillic]=Кириш/чиқиш портлар ҳақида маъл�
 Comment[vi]=Thông tin cổng IO
 Comment[wa]=Informåcion so les pôrts d' Intrêye/Rexhowe
 Comment[xh]=IO-ulwazi lwezibuko
+Comment[x-test]=xxIO-port informationxx
 Comment[zh_CN]=IO 端口信息
 Comment[zh_TW]=IO-Port 資訊
 
@@ -243,6 +245,7 @@ X-KDE-Keywords[sv]=IO,I/O,IO-portar,I/O-Portar,Portar,IO-intervall,I/O-intervall
 X-KDE-Keywords[tr]=GÇ,G/Ç,IO,I/O,IO-Portları,I/O-Portları,Portlar,IO-Range,I/O-Aralığı,Sistem Bilgileri
 X-KDE-Keywords[uk]=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Information,ввід,введення,вивід,виведення,порт,діапазон,система,інформація,відомості
 X-KDE-Keywords[vi]=IO, I/O,Cổng IO,Cổng I/O,Vùng IO,Vùng I/O,Thông tin hệ thống
+X-KDE-Keywords[x-test]=xxIOxx,xxI/Oxx,xxIO-Portsxx,xxI/O-Portsxx,xxPortsxx,xxIO-Rangexx,xxI/O-Rangexx,xxSystem Informationxx
 X-KDE-Keywords[zh_CN]=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Information,输入输出,输入/输出,IO-端口,I/O-端口,端口,IO-范围,I/O-范围,系统信息
 X-KDE-Keywords[zh_TW]=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Information
 
