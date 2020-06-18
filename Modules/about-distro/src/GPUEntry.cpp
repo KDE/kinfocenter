@@ -28,15 +28,15 @@ GPUEntry::GPUEntry()
     }
 
     if (context.makeCurrent(&surface)) {
-        value = QString::fromLatin1(reinterpret_cast<const char*>(
-                                        context.functions()->glGetString(GL_RENDERER)));
-        value = FancyString::fromUgly(value);
+        m_value = QString::fromLatin1(reinterpret_cast<const char*>(
+                                          context.functions()->glGetString(GL_RENDERER)));
+        m_value = FancyString::fromUgly(m_value);
         // It seems the renderer value may have excess information in parentheses ->
         // strip that. Elide would probably be nicer, a bit meh with QWidgets though.
-        value = value.mid(0, value.indexOf('('));
+        m_value = m_value.mid(0, m_value.indexOf('('));
         // Leads to trailing space in my case, don't know whether that is happening
         // everyhere, though. Thus removing trailing spaces separately.
-        value = value.trimmed();
+        m_value = m_value.trimmed();
         context.doneCurrent();
     } else {
         qWarning() << "Failed to make QOpenGLContext current";

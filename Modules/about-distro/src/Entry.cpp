@@ -6,10 +6,10 @@
 #include "Entry.h"
 
 Entry::Entry(const KLocalizedString &label_, const QString &value_)
-    : label(label_)
-    , value(value_)
+    : m_label(label_)
+    , m_value(value_)
 {
-    Q_ASSERT(label.isEmpty() || localizedLabel(Language::English).endsWith(':'));
+    Q_ASSERT(m_label.isEmpty() || localizedLabel(Language::English).endsWith(':'));
 }
 
 Entry::~Entry() = default;
@@ -17,7 +17,7 @@ Entry::~Entry() = default;
 // When false this entry is garbage (e.g. incomplete data) and shouldn't be rendered.
 bool Entry::isValid() const
 {
-    return !label.toString().isEmpty() && !value.isEmpty();
+    return !localizedLabel().isEmpty() && !localizedValue().isEmpty();
 }
 
 // Returns textual representation of entry.
@@ -49,13 +49,13 @@ QString Entry::localize(const KLocalizedString &string, Language language) const
 
 QString Entry::localizedLabel(Language language) const
 {
-    return localize(label, language);
+    return localize(m_label, language);
 }
 
-QString Entry::localizedValue(Language language = Language::System) const
+QString Entry::localizedValue(Language language) const
 {
     Q_UNUSED(language);
-    return value;
+    return m_value;
 }
 
 QLocale Entry::localeForLanguage(Language language) const

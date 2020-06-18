@@ -14,7 +14,7 @@ PlasmaEntry::PlasmaEntry()
 {
     // Since Plasma version detection isn't based on a library query it can fail
     // in weird cases; instead of admitting defeat we simply hide everything :P
-    if (value.isEmpty()) {
+    if (localizedValue().isEmpty()) {
         return;
     }
 }

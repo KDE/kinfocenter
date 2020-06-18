@@ -17,7 +17,7 @@ CPUEntry::CPUEntry()
 {
     const QList<Solid::Device> list = Solid::Device::listFromType(Solid::DeviceInterface::Processor);
 
-    label = ki18np("Processor:", "Processors:").subs(list.count());
+    m_label = ki18np("Processor:", "Processors:").subs(list.count());
 
     // Format processor string
     // Group by processor name
@@ -40,5 +40,5 @@ CPUEntry::CPUEntry()
         names.append(QStringLiteral("%1 × %2").arg(count).arg(name));
     }
 
-    value = names.join(QLatin1String(", "));
+    m_value = names.join(QLatin1String(", "));
 }

@@ -169,8 +169,8 @@ void Module::loadEntries()
                 delete entry; // since we do not keep it around
                 continue;
             }
-            ui->infoGrid->addWidget(new QLabel(entry->label.toString()), row, 0, Qt::AlignRight);
-            ui->infoGrid->addWidget(new QLabel(entry->value), row, 1, Qt::AlignLeft);
+            ui->infoGrid->addWidget(new QLabel(entry->localizedLabel()), row, 0, Qt::AlignRight);
+            ui->infoGrid->addWidget(new QLabel(entry->localizedValue()), row, 1, Qt::AlignLeft);
             m_entries.push_back(entry);
             ++row;
         }

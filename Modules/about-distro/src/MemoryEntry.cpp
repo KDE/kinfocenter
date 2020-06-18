@@ -14,7 +14,7 @@
 #include <sys/sysctl.h>
 #endif
 
-MemoryEntry::MemoryEntry() : Entry(ki18n("Memory:"), localizedValue())
+MemoryEntry::MemoryEntry() : Entry(ki18n("Memory:"), QString() /* overridden here */)
 {
 }
 
