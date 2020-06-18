@@ -7,6 +7,7 @@
 #define ENTRY_H
 
 #include <QString>
+#include <QLocale>
 #include <KLocalizedString>
 
 // Generic dumpable info entry.
@@ -23,6 +24,7 @@ public:
         English
     };
 
+    // value may be empty if localizedValue is overridden
     Entry(const KLocalizedString &label_, const QString &value_);
     virtual ~Entry();
 
@@ -32,13 +34,23 @@ public:
     // Returns textual representation of entry.
     QString diagnosticLine(Language language = Language::System) const;
 
-    // Descriptive label
-    KLocalizedString label;
-    // Value of the entry (e.g. the version of plasma)
-    QString value;
+    QString localizedLabel(Language language = Language::System) const;
 
-private:
-    QString localizedLabel(Language language) const;
+    // Returns the value by default. Needs to be overridden in subclasses if localization
+    // is needed for the value.
+    virtual QString localizedValue(Language language = Language::System) const;
+
+protected:
+    // Returns localized QString for the given language.
+    QString localize(const KLocalizedString &string, Language language) const;
+
+    // Returns a QLocale for the given language.
+    QLocale localeForLanguage(Language language) const;
+
+    // Descriptive label
+    KLocalizedString m_label;
+    // Value of the entry (e.g. the version of plasma)
+    QString m_value;
 };
 
 #endif // ENTRY_H

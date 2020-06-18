@@ -14,7 +14,7 @@
 #include <sys/sysctl.h>
 #endif
 
-MemoryEntry::MemoryEntry() : Entry(ki18n("Memory:"), text())
+MemoryEntry::MemoryEntry() : Entry(ki18n("Memory:"), QString() /* overridden here */)
 {
 }
 
@@ -39,12 +39,14 @@ qlonglong MemoryEntry::calculateTotalRam()
     return ret;
 }
 
-QString MemoryEntry::text()
+QString MemoryEntry::localizedValue(Language language) const
 {
     const qlonglong totalRam = calculateTotalRam();
     if (totalRam > 0) {
-        return i18nc("@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)",
-                     "%1 of RAM", KFormat().formatByteSize(totalRam));
+        const auto string = ki18nc("@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)",
+                                   "%1 of RAM").subs(KFormat(localeForLanguage(language)).formatByteSize(totalRam));
+        return localize(string, language);
     }
-    return i18nc("Unknown amount of RAM", "Unknown");
+    return localize(ki18nc("Unknown amount of RAM", "Unknown"),
+                    language);
 }

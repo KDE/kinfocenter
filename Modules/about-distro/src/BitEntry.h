@@ -14,7 +14,7 @@ class BitEntry : public Entry
 {
 public:
     BitEntry();
-    static QString bitString();
+    QString localizedValue(Language language = Language::System) const final;
 };
 
 #endif // BITENTRY_H

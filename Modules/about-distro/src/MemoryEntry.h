@@ -13,7 +13,9 @@ class MemoryEntry : public Entry
 public:
     MemoryEntry();
     static qlonglong calculateTotalRam();
-    static QString text();
+    
+    // Overwrite to get correct localization for the value.
+    QString localizedValue(Language language = Language::System) const final;
 };
 
 #endif // MEMORYENTRY_H
