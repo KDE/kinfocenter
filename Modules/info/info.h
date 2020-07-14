@@ -28,8 +28,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <QPushButton>
 #include <QTreeWidget>
 
-#include <kcmodule.h>
-#include <kaboutdata.h>
+#include <KCModule>
+#include <KAboutData>
 
 #include "os_current.h"
 

@@ -21,7 +21,7 @@
 #ifndef KCONTROL_OPENGL_H
 #define KCONTROL_OPENGL_H
 
-#include <kcmodule.h>
+#include <KCModule>
 
 #include "ui_opengl.h"
 

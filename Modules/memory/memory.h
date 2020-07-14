@@ -26,8 +26,8 @@ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 #include <QPushButton>
 #include <QTimer>
 
-#include <kcmodule.h>
-#include <kaboutdata.h>
+#include <KCModule>
+#include <KAboutData>
 
 #include "base.h"
 

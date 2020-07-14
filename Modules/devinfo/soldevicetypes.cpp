@@ -33,8 +33,8 @@
 #include <QProgressBar>
 
 //kde
-#include <kdiskfreespaceinfo.h>
-#include <kcapacitybar.h>
+#include <KDiskFreeSpaceInfo>
+#include <KCapacityBar>
 #include <KFormat>
 
 #include "qvlistlayout.h"

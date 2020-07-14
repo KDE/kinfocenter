@@ -21,7 +21,7 @@
 #include <QRegExp>
 
 #include <KLocalizedString>
-#include <kmessagebox.h>
+#include <KMessageBox>
 
 #include "usbdb.h"
 

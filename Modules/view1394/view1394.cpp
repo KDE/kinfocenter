@@ -29,8 +29,8 @@
 #include <QVBoxLayout>
 #include <KLocalizedString>
 
-#include <kpluginfactory.h>
-#include <kpluginloader.h>
+#include <KPluginFactory>
+#include <KPluginLoader>
 
 #include <sys/time.h>
 #include <sys/types.h>

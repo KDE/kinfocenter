@@ -21,7 +21,7 @@
 #ifndef KCONTROL_NIC_H
 #define KCONTROL_NIC_H
 
-#include <kcmodule.h>
+#include <KCModule>
 
 class QPushButton;
 class QTreeWidget;

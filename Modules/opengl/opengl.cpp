@@ -36,9 +36,9 @@
 #include <KPluginFactory>
 #include <KPluginLoader>
 
-#include <kaboutdata.h>
+#include <KAboutData>
 #include <KLocalizedString>
-#include <kmessagebox.h>
+#include <KMessageBox>
 
 // X11 includes
 #include <X11/Xlib.h>

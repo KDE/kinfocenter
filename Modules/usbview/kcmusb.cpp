@@ -17,7 +17,7 @@
 #include <QTreeWidget>
 #include <QHeaderView>
 
-#include <kaboutdata.h>
+#include <KAboutData>
 
 #include <KPluginFactory>
 #include <KPluginLoader>

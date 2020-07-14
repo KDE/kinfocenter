@@ -33,7 +33,7 @@
 #include <sys/sockio.h>
 #endif
 
-#include <kaboutdata.h>
+#include <KAboutData>
 #include <KLocalizedString>
 
 #include <QPushButton>

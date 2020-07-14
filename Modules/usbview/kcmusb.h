@@ -13,7 +13,7 @@
 
 #include <QMap>
 
-#include <kcmodule.h>
+#include <KCModule>
 
 class QTreeWidget;
 class QTreeWidgetItem;

@@ -23,7 +23,7 @@
 #define DEVINFO
 
 //kde
-#include <kcmodule.h>
+#include <KCModule>
 
 class QLabel;
 class QGridLayout;

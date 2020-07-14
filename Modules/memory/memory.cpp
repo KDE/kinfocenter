@@ -26,7 +26,7 @@
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QLabel>
-#include <kaboutdata.h>
+#include <KAboutData>
 
 #include <sys/param.h>		/* for BSD */
 

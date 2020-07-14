@@ -22,7 +22,7 @@
 #include <KPluginFactory>
 #include <KPluginLoader>
 
-#include <kaboutdata.h>
+#include <KAboutData>
 #include <QDebug>
 
 
@@ -30,7 +30,7 @@
 #include <QTreeWidget>
 
 #include <KLocalizedString>
-#include <kseparator.h>
+#include <KSeparator>
 
 K_PLUGIN_FACTORY(KCMPciFactory,
 		registerPlugin<KCMPci>();

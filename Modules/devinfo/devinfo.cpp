@@ -25,11 +25,11 @@
 #include <QLabel>
 #include <QSplitter>
 #include <KLocalizedString>
-#include <kaboutdata.h>
+#include <KAboutData>
 
 //Plugin
-#include <kpluginfactory.h>
-#include <kpluginloader.h>
+#include <KPluginFactory>
+#include <KPluginLoader>
 
 #include "devicelisting.h"
 #include "infopanel.h"
