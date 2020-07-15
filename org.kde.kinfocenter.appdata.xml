@@ -136,7 +136,7 @@
     <p xml:lang="zh-CN">信息中心由多个模块组成。每个模块都是一个单独的应用程序，但信息中心将所有这些程序组织在一处，形成一个方便的工具。</p>
     <p xml:lang="zh-TW">資訊中心是由多個模組組成的。每個模組皆是獨立的應用程式，但資訊中心把這些程式統整到一個方便查閱的位置。</p>
   </description>
-  <url type="homepage">https://www.kde.org</url>
+  <url type="homepage">https://kde.org/plasma-desktop</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kinfocenter</url>
   <url type="donation">https://www.kde.org/community/donations/?app=kinfocenter</url>
   <launchable type="desktop-id">org.kde.kinfocenter.desktop</launchable>
