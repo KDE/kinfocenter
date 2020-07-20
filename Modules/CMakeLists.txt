@@ -1,6 +1,5 @@
 
 add_subdirectory( about-distro )
-add_subdirectory( usbview )
 add_subdirectory( memory )
 add_subdirectory( devinfo )
 add_subdirectory( info )
@@ -65,6 +64,17 @@ set_package_properties(RAW1394 PROPERTIES DESCRIPTION "library for direct access
 
 if(RAW1394_FOUND)
    add_subdirectory( view1394 )
+endif()
+
+find_package(USB1 MODULE)
+set_package_properties(USB1 PROPERTIES DESCRIPTION "library that provides generic access to USB devicess"
+                       URL "https://libusb.info/"
+                       TYPE OPTIONAL
+                       PURPOSE "View USB devices in kinfocenter"
+                      )
+
+if(USB1_FOUND)
+   add_subdirectory( usbview )
 endif()
 
 if (CMAKE_SYSTEM_NAME MATCHES Linux)
