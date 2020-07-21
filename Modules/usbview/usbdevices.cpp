@@ -35,8 +35,32 @@ QList<USBDevice*> USBDevice::_devices;
 USBDB *USBDevice::_db;
 
 USBDevice::USBDevice() :
-	_bus(0), _level(0), _parent(0), _port(0), _count(0), _device(0), _channels(0), _power(0), _speed(0.0), _bwTotal(0), _bwUsed(0), _bwPercent(0), _bwIntr(0), _bwIso(0), _hasBW(false), _verMajor(0), _verMinor(0), _class(0), _sub(0), _prot(0), _maxPacketSize(0), _configs(0), _vendorID(0),
-			_prodID(0), _revMajor(0), _revMinor(0) {
+	_bus(0),
+	_level(0),
+	_parent(0),
+	_port(0),
+	_count(0),
+	_device(0),
+	_channels(0),
+	_power(0),
+	_speed(0.0),
+	_bwTotal(0),
+	_bwUsed(0),
+	_bwPercent(0),
+	_bwIntr(0),
+	_bwIso(0),
+	_hasBW(false),
+	_verMajor(0),
+	_verMinor(0),
+	_class(0),
+	_sub(0),
+	_prot(0),
+	_maxPacketSize(0),
+	_configs(0),
+	_vendorID(0),
+	_prodID(0),
+	_revMajor(0),
+	_revMinor(0) {
 	_devices.append(this);
 
 	if (!_db)
