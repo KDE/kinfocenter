@@ -62,6 +62,48 @@ static void convertLibusbUsbVersion(uint16_t bcdUSB, unsigned int *verMajor, uns
 	*verMinor = ((bcdUSB & 0xf0) >> 4) * 10 + (bcdUSB & 0xf);
 }
 
+static QString prettyLibusbClassName(int class_code) {
+	switch (class_code) {
+	case LIBUSB_CLASS_PER_INTERFACE:
+		return i18nc("USB device class", "(Defined at Interface level)");
+	case LIBUSB_CLASS_AUDIO:
+		return i18nc("USB device class", "Audio");
+	case LIBUSB_CLASS_COMM:
+		return i18nc("USB device class", "Communications");
+	case LIBUSB_CLASS_HID:
+		return i18nc("USB device class", "Human Interface Device");
+	case LIBUSB_CLASS_PHYSICAL:
+		return i18nc("USB device class", "Physical Interface Device");
+	case LIBUSB_CLASS_PRINTER:
+		return i18nc("USB device class", "Printer");
+	case LIBUSB_CLASS_IMAGE:
+		return i18nc("USB device class", "Imaging");
+	case LIBUSB_CLASS_MASS_STORAGE:
+		return i18nc("USB device class", "Mass Storage");
+	case LIBUSB_CLASS_HUB:
+		return i18nc("USB device class", "Hub");
+	case LIBUSB_CLASS_DATA:
+		return i18nc("USB device class", "CDC Data");
+	case LIBUSB_CLASS_SMART_CARD:
+		return i18nc("USB device class", "Chip/SmartCard");
+	case LIBUSB_CLASS_CONTENT_SECURITY:
+		return i18nc("USB device class", "Content Security");
+	case LIBUSB_CLASS_VIDEO:
+		return i18nc("USB device class", "Video");
+	case LIBUSB_CLASS_PERSONAL_HEALTHCARE:
+		return i18nc("USB device class", "Personal Healthcare");
+	case LIBUSB_CLASS_DIAGNOSTIC_DEVICE:
+		return i18nc("USB device class", "Diagnostic");
+	case LIBUSB_CLASS_WIRELESS:
+		return i18nc("USB device class", "Wireless");
+	case LIBUSB_CLASS_APPLICATION:
+		return i18nc("USB device class", "Application Specific Interface");
+	case LIBUSB_CLASS_VENDOR_SPEC:
+		return i18nc("USB device class", "Vendor Specific Class");
+	}
+	return QString();
+}
+
 USBDevice::USBDevice(libusb_device *dev, struct libusb_device_descriptor &dev_desc) :
 	_bus(libusb_get_bus_number(dev)),
 	_level(0),
@@ -179,7 +221,9 @@ QString USBDevice::dump() {
 	r += QLatin1String("<br/><table>");
 
 	QString c = QStringLiteral("<td>%1</td>").arg(_class);
-	QString cname = _db->cls(_class);
+	QString cname = prettyLibusbClassName(_class);
+	if (cname.isEmpty())
+		cname = _db->cls(_class);
 	if (!cname.isEmpty())
         c += QStringLiteral("<td>(") + i18n(cname.toLatin1().constData()) +QStringLiteral(")</td>");
 	r += i18n("<tr><td><i>Class</i></td>%1</tr>", c);
