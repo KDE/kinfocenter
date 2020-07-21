@@ -25,6 +25,7 @@ Q_OBJECT
 public:
 
         explicit USBViewer(QWidget *parent = nullptr, const QVariantList &list=QVariantList());
+        ~USBViewer() override;
 
 	void load() override;
 

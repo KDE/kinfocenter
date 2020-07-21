@@ -14,36 +14,64 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include <stdio.h>
 
+#include <QDebug>
 #include <QFile>
-#include <QDir>
-#include <QRegularExpression>
+#include <QHash>
 
 #include <KLocalizedString>
-#include <KMessageBox>
 
 #include "usbdb.h"
 
-#include <math.h>
+// FreeBSD has its own libusb implementation that does not provide
+// libusb_get_parent(), even if the advertised LIBUSB_API_VERSION
+// is the same as when libusb upstream introduced libusb_get_parent().
+#ifdef Q_OS_FREEBSD
 
-#if defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD)
-#include <sys/ioctl.h>
+#define libusb_get_parent(device) nullptr
+
 #endif
 
 QList<USBDevice*> USBDevice::_devices;
+libusb_context *USBDevice::_context;
 USBDB *USBDevice::_db;
 
-USBDevice::USBDevice() :
-	_bus(0),
+static double convertLibusbSpeed(int speed) {
+	switch (speed) {
+	case LIBUSB_SPEED_UNKNOWN:
+		// not using default here to catch future enum values
+		return 0;
+	case LIBUSB_SPEED_LOW:
+		return 1.5;
+	case LIBUSB_SPEED_FULL:
+		return 12;
+	case LIBUSB_SPEED_HIGH:
+		return 480;
+	case LIBUSB_SPEED_SUPER:
+		return 5000;
+#if LIBUSB_API_VERSION >= 0x01000106
+	case LIBUSB_SPEED_SUPER_PLUS:
+		return 10000;
+#endif
+	}
+	return 0;
+};
+
+static void convertLibusbUsbVersion(uint16_t bcdUSB, unsigned int *verMajor, unsigned int *verMinor) {
+	*verMajor = bcdUSB >> 8;
+	*verMinor = ((bcdUSB & 0xf0) >> 4) * 10 + (bcdUSB & 0xf);
+}
+
+USBDevice::USBDevice(libusb_device *dev, struct libusb_device_descriptor &dev_desc) :
+	_bus(libusb_get_bus_number(dev)),
 	_level(0),
 	_parent(0),
-	_port(0),
+	_port(libusb_get_port_number(dev)),
 	_count(0),
-	_device(0),
+	_device(libusb_get_device_address(dev)),
 	_channels(0),
 	_power(0),
-	_speed(0.0),
+	_speed(convertLibusbSpeed(libusb_get_device_speed(dev))),
 	_bwTotal(0),
 	_bwUsed(0),
 	_bwPercent(0),
@@ -52,24 +80,30 @@ USBDevice::USBDevice() :
 	_hasBW(false),
 	_verMajor(0),
 	_verMinor(0),
-	_class(0),
-	_sub(0),
-	_prot(0),
-	_maxPacketSize(0),
+	_class(dev_desc.bDeviceClass),
+	_sub(dev_desc.bDeviceSubClass),
+	_prot(dev_desc.bDeviceProtocol),
+	_maxPacketSize(dev_desc.bMaxPacketSize0),
 	_configs(0),
-	_vendorID(0),
-	_prodID(0),
+	_vendorID(dev_desc.idVendor),
+	_prodID(dev_desc.idProduct),
 	_revMajor(0),
 	_revMinor(0) {
 	_devices.append(this);
 
 	if (!_db)
 		_db = new USBDB;
+
+	convertLibusbUsbVersion(dev_desc.bcdUSB, &_verMajor, &_verMinor);
+
+	collectDataSys(dev);
 }
 
 USBDevice::~USBDevice() {
 
 }
+
+#if defined(Q_OS_LINUX)
 
 static QString catFile(const QString &fname) {
 	char buffer[256];
@@ -89,68 +123,41 @@ static QString catFile(const QString &fname) {
 	return result.trimmed();
 }
 
-void USBDevice::parseSysDir(int bus, int parent, int level, const QString& dname) {
-	_level = level;
-	_parent = parent;
-    _manufacturer = catFile(dname + QStringLiteral("/manufacturer"));
-    _product = catFile(dname + QStringLiteral("/product"));
+static QString devpath(libusb_device *dev) {
+	// hardcoded to 7 as the libusb apidocs says:
+	// "As per the USB 3.0 specs, the current maximum limit for the depth is 7."
+	static const int ports = 7;
+	uint8_t port_numbers[ports];
+	const int num = libusb_get_port_numbers(dev, port_numbers, ports);
+	QString ret;
+	for (uint8_t i = 0; i < num; ++i) {
+		if (i > 0)
+			ret += QLatin1Char('.');
+		ret += QString::number(port_numbers[i]);
+	}
+	return ret;
+}
 
-	_bus = bus;
-    _device = catFile(dname + QStringLiteral("/devnum")).toUInt();
+void USBDevice::collectDataSys(libusb_device *dev) {
+	const QString dname = _port == 0
+	                    ? QStringLiteral("/sys/bus/usb/devices/usb%1").arg(_bus)
+	                    : QStringLiteral("/sys/bus/usb/devices/%1-%2").arg(_bus).arg(devpath(dev));
 
+	_manufacturer = catFile(dname + QStringLiteral("/manufacturer"));
+	_product = catFile(dname + QStringLiteral("/product"));
 	if (_device == 1)
 		_product += QStringLiteral(" (%1)").arg(_bus);
-
-    _vendorID = catFile(dname + QStringLiteral("/idVendor")).toUInt(nullptr, 16);
-    _prodID = catFile(dname + QStringLiteral("/idProduct")).toUInt(nullptr, 16);
-
-    _class = catFile(dname + QStringLiteral("/bDeviceClass")).toUInt(nullptr, 16);
-    _sub = catFile(dname + QStringLiteral("/bDeviceSubClass")).toUInt(nullptr, 16);
-    _maxPacketSize = catFile(dname + QStringLiteral("/bMaxPacketSize0")).toUInt();
-
-    _speed = catFile(dname + QStringLiteral("/speed")).toDouble();
-    _serial = catFile(dname + QStringLiteral("/serial"));
-    _channels = catFile(dname + QStringLiteral("/maxchild")).toUInt();
-
-    const QString version = catFile(dname + QStringLiteral("/version"));
-    sscanf(qPrintable(version), "%2x.%02x", &_verMajor, &_verMinor);
-
-	QDir dir(dname);
-	dir.setNameFilters(QStringList() << QStringLiteral("%1-*").arg(bus));
-	dir.setFilter(QDir::Dirs);
-	const QStringList list = dir.entryList();
-
-	for (QStringList::const_iterator it = list.constBegin(); it != list.constEnd(); ++it) {
-        if ((*it).contains(QLatin1Char(':')))
-			continue;
-
-		USBDevice* dev = new USBDevice();
-        dev->parseSysDir(bus, _device, ++level, dname + QLatin1Char('/') + *it);
-	}
+	_serial = catFile(dname + QStringLiteral("/serial"));
+	_channels = catFile(dname + QStringLiteral("/maxchild")).toUInt();
 }
 
-void USBDevice::parseLine(const QString& line) {
-	if (line.startsWith(QLatin1String("T:")))
-		sscanf(line.toLocal8Bit().data(), "T:  Bus=%2d Lev=%2d Prnt=%2d Port=%d Cnt=%2d Dev#=%3d Spd=%3f MxCh=%2d", &_bus, &_level, &_parent, &_port, &_count, &_device, &_speed, &_channels);
-	else if (line.startsWith(QLatin1String("S:  Manufacturer")))
-		_manufacturer = line.mid(17);
-	else if (line.startsWith(QLatin1String("S:  Product"))) {
-		_product = line.mid(12);
-		/* add bus number to root devices */
-		if (_device==1)
-			_product += QStringLiteral(" (%1)").arg(_bus);
-	} else if (line.startsWith(QLatin1String("S:  SerialNumber")))
-		_serial = line.mid(17);
-	else if (line.startsWith(QLatin1String("B:"))) {
-		sscanf(line.toLocal8Bit().data(), "B:  Alloc=%3d/%3d us (%2d%%), #Int=%3d, #Iso=%3d", &_bwUsed, &_bwTotal, &_bwPercent, &_bwIntr, &_bwIso);
-		_hasBW = true;
-	} else if (line.startsWith(QLatin1String("D:"))) {
-		char buffer[11];
-		sscanf(line.toLocal8Bit().data(), "D:  Ver=%x.%x Cls=%x(%10s) Sub=%x Prot=%x MxPS=%u #Cfgs=%u", &_verMajor, &_verMinor, &_class, buffer, &_sub, &_prot, &_maxPacketSize, &_configs);
-        _className = QString::fromLatin1(buffer);
-	} else if (line.startsWith(QLatin1String("P:")))
-		sscanf(line.toLocal8Bit().data(), "P:  Vendor=%x ProdID=%x Rev=%x.%x", &_vendorID, &_prodID, &_revMajor, &_revMinor);
+#else
+
+void USBDevice::collectDataSys(libusb_device *dev) {
+	Q_UNUSED(dev);
 }
+
+#endif
 
 USBDevice* USBDevice::find(int bus, int device) {
 	foreach(USBDevice* usbDevice, _devices) {
@@ -197,11 +204,9 @@ QString USBDevice::dump() {
 	if (!prname.isEmpty())
         pr += QStringLiteral("<td>(") + prname +QStringLiteral(")</td>");
 	r += i18n("<tr><td><i>Protocol</i></td>%1</tr>", pr);
-#if !(defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD))
 	r += ki18n("<tr><td><i>USB Version</i></td><td>%1.%2</td></tr>")
-	.subs(_verMajor,0,16).subs(_verMinor,2,16,QChar::fromLatin1('0'))
+	.subs(_verMajor).subs(_verMinor,2,10,QChar::fromLatin1('0'))
 	.toString();
-#endif
 	r += QLatin1String("<tr><td></td></tr>");
 
 	QString v = QString::number(_vendorID, 16);
@@ -221,21 +226,7 @@ QString USBDevice::dump() {
 
 	r += i18n("<tr><td><i>Speed</i></td><td>%1 Mbit/s</td></tr>", _speed);
 	r += i18n("<tr><td><i>Channels</i></td><td>%1</td></tr>", _channels);
-#if (defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD)) && !defined(DISABLE_USBDEVICES_FREEBSD)
-	if ( _power )
-	r += i18n("<tr><td><i>Power Consumption</i></td><td>%1 mA</td></tr>", _power);
-	else
-	r += i18n("<tr><td><i>Power Consumption</i></td><td>self powered</td></tr>");
-	r += i18n("<tr><td><i>Attached Devicenodes</i></td><td>%1</td></tr>", _devnodes.at(0));
-	if ( _devnodes.count() > 1 ) {
-		QStringList::const_iterator it = _devnodes.constBegin();
-		++it;
-		for (; it != _devnodes.constEnd(); ++it )
-        r += QStringLiteral("<tr><td></td><td>") + *it + QStringLiteral("</td></tr>");
-	}
-#else
 	r += i18n("<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>", _maxPacketSize);
-#endif
 	r += QLatin1String("<tr><td></td></tr>");
 
 	if (_hasBW) {
@@ -250,213 +241,68 @@ QString USBDevice::dump() {
 	return r;
 }
 
-#if !(defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD))
-bool USBDevice::parse(const QString &fname) {
+bool USBDevice::load() {
+	if (!_context) {
+		const int r = libusb_init(&_context);
+		if (r < 0) {
+			qWarning() << "Failed to initialize libusb:" << r << libusb_error_name(r);
+			return false;
+		}
+	}
+
+	qDeleteAll(_devices);
 	_devices.clear();
 
-	QString result;
-
-	// read in the complete file
-	//
-	// Note: we can't use a QTextStream, as the files in /proc
-	// are pseudo files with zero length
-	char buffer[256];
-        int fd =:: open(QFile::encodeName(fname).constData(), O_RDONLY);
-	if (fd<0)
-	return false;
-
-	if (fd >= 0)
-	{
-		ssize_t count;
-		while ((count = ::read(fd, buffer, 256)) > 0)
-        result.append(QString::fromLatin1(buffer).leftRef(count));
-
-		::close(fd);
+	libusb_device **devs;
+	const ssize_t count = libusb_get_device_list(_context, &devs);
+	if (count < 0) {
+		qWarning() << "Cannot get the list of USB devices";
+		return false;
 	}
 
-	// read in the device infos
-    USBDevice *device = nullptr;
-	int start=0, end;
-    const QString orig = result;
-    result.remove(QRegularExpression(QStringLiteral("^\n")));
-    while ((end = result.indexOf(QLatin1Char('\n'), start)) > 0)
-	{
-		QString line = result.mid(start, end-start);
+	QHash<libusb_device *, USBDevice *> devBylibusbMap;
+	QHash<USBDevice *, libusb_device *> libusbByDevMap;
 
-		if (line.startsWith(QLatin1String("T:")))
-		device = new USBDevice();
-
-		if (device)
-		device->parseLine(line);
-
-		start = end+1;
-	}
-	return true;
-}
-
-bool USBDevice::parseSys(const QString &dname) {
-	QDir d(dname);
-	d.setNameFilters(QStringList() << QStringLiteral("usb*"));
-	const QStringList list = d.entryList();
-
-	const int length = QStringLiteral("usb").size();
-    for (QStringList::const_iterator it = list.constBegin(), total = list.constEnd(); it != total; ++it) {
-		USBDevice* device = new USBDevice();
-
-		int bus = 0;
-
-		bool ok = false;
-		const int num = it->midRef(it->lastIndexOf(QLatin1String("usb")) + length).toInt(&ok);
-		if (ok) {
-			bus = num;
+	for (ssize_t i = 0; i < count; ++i) {
+		libusb_device *dev = devs[i];
+		struct libusb_device_descriptor dev_desc;
+		int r = libusb_get_device_descriptor(dev, &dev_desc);
+		if (r < 0) {
+			qWarning() << "libusb_get_device_descriptor failed:" << r << libusb_error_name(r);
+			continue;
 		}
-
-        device->parseSysDir(bus, 0, 0, d.absolutePath() + QLatin1Char('/') + *it);
+		USBDevice *device = new USBDevice(dev, dev_desc);
+		devBylibusbMap.insert(dev, device);
+		libusbByDevMap.insert(device, dev);
 	}
 
-	return d.count();
-}
-
-#else
-
-// Unused by *BSD
-bool USBDevice::parseSys(const QString &fname)
-{
-	Q_UNUSED(fname)
-
-	return true;
-}
-
-# if defined(DISABLE_USBDEVICES_FREEBSD)
-
-/*
- * FIXME: The USB subsystem has changed a lot in FreeBSD 8.0
- *        Support for it must be written.
- */
-
-bool USBDevice::parse(const QString &fname)
-{
-	Q_UNUSED(fname)
-
-	return true;
-}
-
-# else
-
-/*
- * FreeBSD support by Markus Brueffer <markus@brueffer.de>
- *
- * Basic idea and some code fragments were taken from FreeBSD's usbdevs(8),
- * originally developed for NetBSD, so this code should work with no or
- * only little modification on NetBSD.
- */
-
-void USBDevice::collectData( int fd, int level, usb_device_info &di, int parent)
-{
-	// determine data for this device
-	_level = level;
-	_parent = parent;
-
-	_bus = di.udi_bus;
-	_device = di.udi_addr;
-	_product = QLatin1String(di.udi_product);
-	if ( _device == 1 )
-	_product += ' ' + QString::number( _bus );
-	_manufacturer = QLatin1String(di.udi_vendor);
-	_prodID = di.udi_productNo;
-	_vendorID = di.udi_vendorNo;
-	_class = di.udi_class;
-	_sub = di.udi_subclass;
-	_prot = di.udi_protocol;
-	_power = di.udi_power;
-	_channels = di.udi_nports;
-
-	// determine the speed
-#if defined(__DragonFly__) || (defined(Q_OS_FREEBSD) && __FreeBSD_version > 490102) || defined(Q_OS_NETBSD)
-	switch (di.udi_speed) {
-		case USB_SPEED_LOW: _speed = 1.5; break;
-		case USB_SPEED_FULL: _speed = 12.0; break;
-		case USB_SPEED_HIGH: _speed = 480.0; break;
-	}
-#else
-	_speed = di.udi_lowspeed ? 1.5 : 12.0;
-#endif
-
-	// Get all attached devicenodes
-	for ( int i = 0; i < USB_MAX_DEVNAMES; ++i )
-	if ( di.udi_devnames[i][0] )
-	_devnodes << di.udi_devnames[i];
-
-	// For compatibility, split the revision number
-	sscanf( di.udi_release, "%x.%x", &_revMajor, &_revMinor );
-
-	// Cycle through the attached devices if there are any
-	for ( int p = 0; p < di.udi_nports; ++p ) {
-		// Get data for device
-		struct usb_device_info di2;
-
-		di2.udi_addr = di.udi_ports[p];
-
-		if ( di2.udi_addr >= USB_MAX_DEVICES )
-		continue;
-
-		if ( ioctl(fd, USB_DEVICEINFO, &di2) == -1 )
-		continue;
-
-		// Only add the device if we didn't detect it, yet
-		if (!find( di2.udi_bus, di2.udi_addr ) )
-		{
-			USBDevice *device = new USBDevice();
-			device->collectData( fd, level + 1, di2, di.udi_addr );
+	auto levels = [](libusb_device *dev) {
+		int level = 0;
+		for (libusb_device *p = libusb_get_parent(dev); p; p = libusb_get_parent(p)) {
+			++level;
 		}
+		return level;
+	};
+	for (int i = 0; i < _devices.count(); ++i) {
+		USBDevice *device = _devices[i];
+		libusb_device *dev = libusbByDevMap.value(device);
+		device->_level = levels(dev);
+		libusb_device *parentDev = libusb_get_parent(dev);
+		if (parentDev)
+			device->_parent = devBylibusbMap.value(parentDev)->_device;
 	}
+
+	libusb_free_device_list(devs, 1);
+
+	return true;
 }
 
-bool USBDevice::parse(const QString &fname)
-{
-	Q_UNUSED(fname)
-
-	static bool showErrorMessage = true;
-	bool error = false;
+void USBDevice::clear() {
+	qDeleteAll(_devices);
 	_devices.clear();
 
-	QFile controller("/dev/usb0");
-	int i = 1;
-	while ( controller.exists() )
-	{
-		// If the devicenode exists, continue with further inspection
-		if ( controller.open(QIODevice::ReadOnly) )
-		{
-			for ( int addr = 1; addr < USB_MAX_DEVICES; ++addr )
-			{
-				struct usb_device_info di;
-
-				di.udi_addr = addr;
-				if ( ioctl(controller.handle(), USB_DEVICEINFO, &di) != -1 )
-				{
-					if (!find( di.udi_bus, di.udi_addr ) )
-					{
-						USBDevice *device = new USBDevice();
-						device->collectData( controller.handle(), 0, di, 0);
-					}
-				}
-			}
-			controller.close();
-#ifndef Q_OS_NETBSD
-		} else {
-			error = true;
-#endif
-		}
-		controller.setFileName( QString::fromLocal8Bit("/dev/usb%1").arg(i++) );
+	if (_context) {
+		libusb_exit(_context);
+		_context = nullptr;
 	}
-
-	if ( showErrorMessage && error ) {
-		showErrorMessage = false;
-		KMessageBox::error( 0, i18n("Could not open one or more USB controller. Make sure, you have read access to all USB controllers that should be listed here."));
-	}
-
-	return true;
 }
-
-# endif // defined(DISABLE_USBDEVICES_FREEBSD)
-#endif // !(defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD))

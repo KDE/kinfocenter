@@ -75,6 +75,10 @@ USBViewer::USBViewer(QWidget *parent, const QVariantList &) :
 
 }
 
+USBViewer::~USBViewer() {
+	USBDevice::clear();
+}
+
 void USBViewer::load() {
 	_items.clear();
 	_devices->clear();
@@ -108,8 +112,8 @@ static void delete_recursive(QTreeWidgetItem *item, const QMap<int, QTreeWidgetI
 void USBViewer::refresh() {
 	QMap<int, QTreeWidgetItem*> new_items;
 
-	if (!USBDevice::parse(QStringLiteral("/proc/bus/usb/devices")))
-		USBDevice::parseSys(QStringLiteral("/sys/bus/usb/devices"));
+	if (!USBDevice::load())
+		return;
 
 	int level = 0;
 	bool found = true;

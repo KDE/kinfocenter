@@ -14,31 +14,16 @@
 #include <QList>
 #include <QString>
 
-#if defined(__DragonFly__)
-#include <bus/usb/usb.h>
-#include <QStringList>
-#elif defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD)
-#include <sys/param.h>
-# if defined(__FreeBSD_version) && __FreeBSD_version >= 800100
-#  define DISABLE_USBDEVICES_FREEBSD
-#  warning "The USB subsystem has changed in 8.0. Disabling."
-# else
-#  include <dev/usb/usb.h>
-#  include <QStringList>
-# endif
-#endif
+#include <libusb.h>
 
 class USBDB;
 
 class USBDevice {
 public:
 
-	USBDevice();
+	USBDevice(libusb_device *dev, struct libusb_device_descriptor &dev_desc);
 	
 	~USBDevice();
-
-	void parseLine(const QString &line);
-	void parseSysDir(int bus, int parent, int level, const QString &line);
 
 	int level() const {
 		return _level;
@@ -60,12 +45,13 @@ public:
 		return _devices;
 	}
 	static USBDevice *find(int bus, int device);
-	static bool parse(const QString& fname);
-	static bool parseSys(const QString& fname);
+	static bool load();
+	static void clear();
 
 private:
 
 	static QList<USBDevice*> _devices;
+	static libusb_context *_context;
 
 	static USBDB *_db;
 
@@ -82,10 +68,7 @@ private:
 
 	unsigned int _vendorID, _prodID, _revMajor, _revMinor;
 
-#if (defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD)) && !defined(DISABLE_USBDEVICES_FREEBSD)
-	void collectData( int fd, int level, usb_device_info &di, int parent );
-	QStringList _devnodes;
-#endif
+	void collectDataSys(libusb_device *dev);
 };
 
 #endif
