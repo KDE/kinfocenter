@@ -55,18 +55,14 @@ private:
 
 	static USBDB *_db;
 
-	int _bus, _level, _parent, _port, _count, _device, _channels, _power;
+	int _bus, _level, _parent, _port, _device, _channels;
 	float _speed;
 
 	QString _manufacturer, _product, _serial;
 
-	int _bwTotal, _bwUsed, _bwPercent, _bwIntr, _bwIso;
-	bool _hasBW;
+	unsigned int _verMajor, _verMinor, _class, _sub, _prot, _maxPacketSize;
 
-	unsigned int _verMajor, _verMinor, _class, _sub, _prot, _maxPacketSize, _configs;
-	QString _className;
-
-	unsigned int _vendorID, _prodID, _revMajor, _revMinor;
+	unsigned int _vendorID, _prodID;
 
 	void collectDataSys(libusb_device *dev);
 };

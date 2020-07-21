@@ -67,28 +67,17 @@ USBDevice::USBDevice(libusb_device *dev, struct libusb_device_descriptor &dev_de
 	_level(0),
 	_parent(0),
 	_port(libusb_get_port_number(dev)),
-	_count(0),
 	_device(libusb_get_device_address(dev)),
 	_channels(0),
-	_power(0),
 	_speed(convertLibusbSpeed(libusb_get_device_speed(dev))),
-	_bwTotal(0),
-	_bwUsed(0),
-	_bwPercent(0),
-	_bwIntr(0),
-	_bwIso(0),
-	_hasBW(false),
 	_verMajor(0),
 	_verMinor(0),
 	_class(dev_desc.bDeviceClass),
 	_sub(dev_desc.bDeviceSubClass),
 	_prot(dev_desc.bDeviceProtocol),
 	_maxPacketSize(dev_desc.bMaxPacketSize0),
-	_configs(0),
 	_vendorID(dev_desc.idVendor),
-	_prodID(dev_desc.idProduct),
-	_revMajor(0),
-	_revMinor(0) {
+	_prodID(dev_desc.idProduct) {
 	_devices.append(this);
 
 	if (!_db)
@@ -219,22 +208,12 @@ QString USBDevice::dump() {
 	if (!pname.isEmpty())
         p += QStringLiteral("<td>(") + pname +QStringLiteral(")</td>");
 	r += i18n("<tr><td><i>Product ID</i></td><td>0x%1</td></tr>", p);
-	r += ki18n("<tr><td><i>Revision</i></td><td>%1.%2</td></tr>")
-	.subs(_revMajor,0,16).subs(_revMinor,2,16,QChar::fromLatin1('0'))
-	.toString();
 	r += QLatin1String("<tr><td></td></tr>");
 
 	r += i18n("<tr><td><i>Speed</i></td><td>%1 Mbit/s</td></tr>", _speed);
 	r += i18n("<tr><td><i>Channels</i></td><td>%1</td></tr>", _channels);
 	r += i18n("<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>", _maxPacketSize);
 	r += QLatin1String("<tr><td></td></tr>");
-
-	if (_hasBW) {
-		r += i18n("<tr><td><i>Bandwidth</i></td><td>%1 of %2 (%3%)</td></tr>", _bwUsed, _bwTotal, _bwPercent);
-		r += i18n("<tr><td><i>Intr. requests</i></td><td>%1</td></tr>", _bwIntr);
-		r += i18n("<tr><td><i>Isochr. requests</i></td><td>%1</td></tr>", _bwIso);
-		r += QLatin1String("<tr><td></td></tr>");
-	}
 
 	r += QLatin1String("</table>");
 
