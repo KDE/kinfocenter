@@ -2,7 +2,7 @@
 Icon=camera-web
 Type=Service
 X-KDE-ServiceTypes=KCModule
-Exec=kcmshell5 kcmview1394
+Exec=kinfocenter kcmview1394
 
 X-KDE-KInfoCenter-Category=device_information
 X-KDE-Library=kcm_view1394

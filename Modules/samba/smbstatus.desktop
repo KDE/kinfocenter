@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=kcmshell5 smbstatus
+Exec=kinfocenter smbstatus
 Icon=preferences-system-network-sharing
 Type=Service
 X-KDE-ServiceTypes=KCModule

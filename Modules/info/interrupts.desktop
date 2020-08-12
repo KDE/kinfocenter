@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=kcmshell5 interrupts
+Exec=kinfocenter interrupts
 Icon=cpu
 Type=Service
 X-KDE-ServiceTypes=KCModule
