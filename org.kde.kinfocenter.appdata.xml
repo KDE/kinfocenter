@@ -147,6 +147,12 @@
     <screenshot type="default">
       <image>https://cdn.kde.org/screenshots/kinfocenter/kinfocenter.png</image>
     </screenshot>
+    <screenshot>
+      <image>https://cdn.kde.org/screenshots/kinfocenter/kinfocenter1.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://cdn.kde.org/screenshots/kinfocenter/kinfocenter2.png</image>
+    </screenshot>
   </screenshots>
   <provides>
     <binary>kinfocenter</binary>
