@@ -200,7 +200,7 @@ Comment[zh_TW]=IO-Port 資訊
 
 X-KDE-Keywords=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Information
 X-KDE-Keywords[ast]=E/S,Puertos d'E/S,Rangu d'E/S,Información del sistema
-X-KDE-Keywords[az]=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Information,giriş,çıxış,giriş portu,çıxış portu,giriş-şıxış həddi,sistem haqqında məlumat
+X-KDE-Keywords[az]=IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Information,giriş,çıxış,giriş portu,çıxış portu,giriş-çıxış həddi,sistem haqqında məlumat
 X-KDE-Keywords[bs]=IO,I/O,IO-Portovi,I/O-Portovi,Portovi,IO-Opseg,I/O-Opseg,Sistemske informacije
 X-KDE-Keywords[ca]=ES,E/S,Ports ES,Ports E/S,Ports,Interval ES,Interval E/S,Informació del sistema
 X-KDE-Keywords[ca@valencia]=ES,E/S,Ports ES,Ports E/S,Ports,Interval ES,Interval E/S,Informació del sistema
