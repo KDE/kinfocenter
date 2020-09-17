@@ -2,7 +2,7 @@ project(kinfocenter)
 set(PROJECT_VERSION "5.19.80")
 
 cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
-set(QT_MIN_VERSION "5.14.0")
+set(QT_MIN_VERSION "5.15.0")
 
 set(KF5_MIN_VERSION "5.74")
 find_package(ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
