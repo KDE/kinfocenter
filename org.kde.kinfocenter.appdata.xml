@@ -28,6 +28,7 @@
   <name xml:lang="pl">Ośrodek danych</name>
   <name xml:lang="pt">Centro de Informações</name>
   <name xml:lang="pt-BR">Centro de informações</name>
+  <name xml:lang="ro">Centru de informații</name>
   <name xml:lang="ru">Информация о системе</name>
   <name xml:lang="sk">Informačné centrum</name>
   <name xml:lang="sv">Informationscentral</name>
@@ -58,6 +59,7 @@
   <summary xml:lang="pl">Skupiony w jednym miejscu i wygodny przegląd danych o systemie</summary>
   <summary xml:lang="pt">Visão centralizada e conveniente da informação do sistema</summary>
   <summary xml:lang="pt-BR">Visão geral centralizada e conveniente das informações do sistema</summary>
+  <summary xml:lang="ro">Vizualizare centralizată și convenabilă a informațiilor despre sistem</summary>
   <summary xml:lang="ru">Централизованный и удобный просмотр информации о системе</summary>
   <summary xml:lang="sk">Centralizovaný a pohodlný prehľad systémových informácií</summary>
   <summary xml:lang="sv">Centraliserad och bekväm översikt av systeminformation</summary>
