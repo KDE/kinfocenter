@@ -27,9 +27,8 @@
 #include "SectionLabel.h"
 #include "Version.h"
 
-Module::Module(QWidget *parent, const QVariantList &args) :
-    KCModule(parent, args),
-    ui(new Ui::Module)
+Module::Module(QObject *parent, const QVariantList &args) :
+    KQuickAddons::ConfigModule(parent, args)
 {
     KAboutData *aboutData = new KAboutData(QStringLiteral("kcm-about-distro"),
                                            i18nc("@title", "About System"),
@@ -44,9 +43,7 @@ Module::Module(QWidget *parent, const QVariantList &args) :
 
     setAboutData(aboutData);
 
-    ui->setupUi(this);
-
-    QFont font = ui->nameVersionLabel->font();
+    /*QFont font = ui->nameVersionLabel->font();
     font.setPixelSize(24);
     font.setBold(true);
     ui->nameVersionLabel->setFont(font);
@@ -67,7 +64,8 @@ Module::Module(QWidget *parent, const QVariantList &args) :
     if (QLocale::system().language() == QLocale::English || QLocale::system().language() == QLocale::C) {
         ui->pushButtonCopyInfoInEnglish->hide();
     }
-    ui->pushButtonCopyInfo->setShortcut(QKeySequence::Copy);
+    ui->pushButtonCopyInfo->setShortcut(QKeySequence::Copy);*/
+    
 
     // https://bugs.kde.org/show_bug.cgi?id=366158
     // When a KCM loads fast enough do a blocking load via the constructor.
@@ -78,7 +76,6 @@ Module::Module(QWidget *parent, const QVariantList &args) :
 
 Module::~Module()
 {
-    delete ui;
     qDeleteAll(m_entries);
 }
 
@@ -116,7 +113,7 @@ void Module::loadOSData()
         logoPath = QStringLiteral("start-here-kde");
     }
     const QPixmap logo = QIcon::fromTheme(logoPath).pixmap(128, 128);
-    ui->logoLabel->setPixmap(logo);
+    //ui->logoLabel->setPixmap(logo);
 
     // We allow overriding of the OS name for branding purposes.
     // For example OS Ubuntu may be rebranded as Kubuntu. Also Kubuntu Active
@@ -129,32 +126,33 @@ void Module::loadOSData()
     // This creates a trailing space if versionId is empty, so trimming String
     // to remove possibly trailing spaces
     const QString distroNameVersion = QStringLiteral("%1 %2").arg(distroName, versionId).trimmed();
-    ui->nameVersionLabel->setText(distroNameVersion);
+    //ui->nameVersionLabel->setText(distroNameVersion);
 
     // Insert a dummy entry for debug info dumps.
     m_entries.push_back(new Entry(ki18n("Operating System:"), distroNameVersion));
 
     const QString variant = cg.readEntry("Variant", os.variant());
     if (variant.isEmpty()) {
-        ui->variantLabel->hide();
+        //ui->variantLabel->hide();
     } else {
-        ui->variantLabel->setText(variant);
+        //ui->variantLabel->setText(variant);
     }
 
     const QString url = cg.readEntry("Website", os.homeUrl());
     if (url.isEmpty()) {
-        ui->urlLabel->hide();
+        //ui->urlLabel->hide();
     } else {
-        ui->urlLabel->setText(QStringLiteral("<a href='%1'>%1</a>").arg(url));
+       // ui->urlLabel->setText(QStringLiteral("<a href='%1'>%1</a>").arg(url));
     }
 }
 
 void Module::loadEntries()
 {
+    /*
     auto addSectionHeader = [this](const QString &text)
     {
         int row = ui->infoGrid->rowCount();
-        // Random sizes stolen from original UI file values :S
+         Random sizes stolen from original UI file values :S
         ui->infoGrid->addItem(new QSpacerItem(17, 21, QSizePolicy::Minimum, QSizePolicy::Fixed), row, 1, 1, 1);
         ++row;
         ui->infoGrid->addWidget(new SectionLabel(text), row, 1, Qt::AlignLeft);
@@ -193,6 +191,7 @@ void Module::loadEntries()
                          new MemoryEntry(),
                          new GPUEntry()
                      });
+    */
 }
 
 void Module::copyToClipboard()

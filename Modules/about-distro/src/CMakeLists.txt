@@ -13,6 +13,7 @@ set(kcm_SRCS
     CPUEntry.cpp
     GPUEntry.cpp
     FancyString.cpp
+    Entries.cpp
 )
 
 ki18n_wrap_ui(kcm_SRCS Module.ui)
@@ -23,7 +24,10 @@ target_link_libraries(kcm_about_distro
     KF5::ConfigWidgets
     KF5::CoreAddons
     KF5::I18n
-    KF5::Solid)
+    KF5::Solid
+    KF5::QuickAddons)
+    
+target_compile_features(kcm_about_distro PUBLIC cxx_std_17)
 
 install(TARGETS kcm_about_distro DESTINATION ${PLUGIN_INSTALL_DIR})
 install(FILES about-distro.desktop DESTINATION ${SERVICES_INSTALL_DIR})

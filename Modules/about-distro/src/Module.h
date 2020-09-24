@@ -6,15 +6,12 @@
 #ifndef MODULE_H
 #define MODULE_H
 
-#include <KCModule>
+#include <KQuickAddons/ConfigModule>
 
-namespace Ui {
-    class Module;
-}
 
 class Entry;
 
-class Module : public KCModule
+class Module : public KQuickAddons::ConfigModule
 {
     Q_OBJECT
 public:
@@ -24,7 +21,7 @@ public:
      * @param parent Parent widget of the module
      * @param args Arguments for the module
      */
-    explicit Module(QWidget *parent, const QVariantList &args = QVariantList());
+    explicit Module(QObject *parent, const QVariantList &args = QVariantList());
 
     /**
      * Destructor.
@@ -57,11 +54,6 @@ private:
     // Same as copyToClipboard but in en_US when the system language
     // is something else
     void copyToClipboardInEnglish();
-
-    /**
-     * UI
-     */
-    Ui::Module *ui = nullptr;
 
     /*** Description entries for dumping into textual form. Already excludes invalids. */
     std::vector<const Entry *> m_entries;
