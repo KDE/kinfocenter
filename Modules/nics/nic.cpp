@@ -20,7 +20,7 @@ KCMNic::KCMNic(QObject *parent, const QVariantList &list)
     : KQuickAddons::ConfigModule(parent, list)
 {
     KAboutData *about = new KAboutData(i18n("kcm_nic"),
-            i18nc("@title:window", "Network Information"),
+            i18nc("@title:window", "Network Interfaces"),
             QString(), QString(), KAboutLicense::GPL,
             i18nc("@info", "(c) 2001 - 2002 Alexander Neundorf"));
 
