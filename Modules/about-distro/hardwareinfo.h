@@ -29,6 +29,7 @@ class HardwareInfo : public QObject
 
     Q_PROPERTY(QString processors READ processors CONSTANT)
     Q_PROPERTY(QString processorCount READ processorCount CONSTANT)
+    Q_PROPERTY(QString memory READ memory CONSTANT)
     Q_PROPERTY(QString gpu READ gpu CONSTANT)
 
 public:
