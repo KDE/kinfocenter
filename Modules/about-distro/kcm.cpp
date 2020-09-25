@@ -31,9 +31,9 @@ K_PLUGIN_CLASS_WITH_JSON(KCMAbout, "kcm_about_distro.json")
 
 KCMAbout::KCMAbout(QObject *parent, const QVariantList &args)
     : KQuickAddons::ConfigModule(parent, args),
-    m_distroInfo(new DistroInfo),
-    m_softwareInfo(new SoftwareInfo),
-    m_hardwareInfo(new HardwareInfo)
+    m_distroInfo(new DistroInfo(this)),
+    m_softwareInfo(new SoftwareInfo(this)),
+    m_hardwareInfo(new HardwareInfo(this))
 {
     KAboutData* about = new KAboutData("kcm_about_distro", i18n("Info"),
                                        "1.0", QString(), KAboutLicense::LGPL);
@@ -45,9 +45,29 @@ KCMAbout::KCMAbout(QObject *parent, const QVariantList &args)
 
 }
 
-void KCMAbout::copyToClipboard(const QString& text) const
+void KCMAbout::copyToClipboard() const
 {
-    QGuiApplication::clipboard()->setText(text);
+    const QString clipboardText = QStringLiteral("Operating System: %1\n"
+                   "KDE Plasma Version: %2\n"
+                   "KDE Frameworks Version: %3\n"
+                   "Qt Version: %4\n"
+                   "Kernel Version: %5\n"
+                   "OS-Type: %6\n"
+                   "Processor: %7\n"
+                   "Memory: %8\n"
+                   "GPU: %9").arg(
+                    distroInfo()->name(),
+                    softwareInfo()->plasmaVersion(),
+                    softwareInfo()->frameworksVersion(),
+                    softwareInfo()->qtVersion(),
+                    softwareInfo()->kernelRelease(),
+                    softwareInfo()->osType(),
+                    hardwareInfo()->processors(),
+                    hardwareInfo()->memory(),
+                    hardwareInfo()->gpu()
+                );
+    QGuiApplication::clipboard()->setText(clipboardText);
+
 }
 
 DistroInfo* KCMAbout::distroInfo() const

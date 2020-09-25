@@ -28,22 +28,18 @@ class SoftwareInfo : public QObject
     Q_OBJECT
 
     Q_PROPERTY(QString kernelRelease READ kernelRelease CONSTANT)
-    QString kernelRelease() const;
-    
     Q_PROPERTY(QString frameworksVersion READ frameworksVersion CONSTANT)
-    QString frameworksVersion() const;
-
     Q_PROPERTY(QString qtVersion READ qtVersion CONSTANT)
-    QString qtVersion() const;
-
     Q_PROPERTY(QString plasmaVersion READ plasmaVersion CONSTANT)
-    QString plasmaVersion() const;
-
     Q_PROPERTY(QString osType READ osType CONSTANT)
-    QString osType() const;
 
 public:
-    SoftwareInfo();
+    SoftwareInfo(QObject *parent = nullptr);
+    QString kernelRelease() const;
+    QString frameworksVersion() const;
+    QString qtVersion() const;
+    QString plasmaVersion() const;
+    QString osType() const;
 };
 
 #endif // SOFTWAREINFO_H

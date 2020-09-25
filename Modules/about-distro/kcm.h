@@ -30,17 +30,17 @@
 class KCMAbout : public KQuickAddons::ConfigModule {
     Q_OBJECT
 
-    Q_PROPERTY(DistroInfo* distroInfo READ distroInfo NOTIFY distroInfoChanged)
-    Q_PROPERTY(SoftwareInfo* softwareInfo READ softwareInfo NOTIFY softwareInfoChanged)
-    Q_PROPERTY(HardwareInfo* hardwareInfo READ hardwareInfo NOTIFY hardwareInfoChanged)
-    DistroInfo* distroInfo() const;
-    SoftwareInfo* softwareInfo() const;
-    HardwareInfo* hardwareInfo() const;
+    Q_PROPERTY(DistroInfo *distroInfo READ distroInfo NOTIFY distroInfoChanged)
+    Q_PROPERTY(SoftwareInfo *softwareInfo READ softwareInfo NOTIFY softwareInfoChanged)
+    Q_PROPERTY(HardwareInfo *hardwareInfo READ hardwareInfo NOTIFY hardwareInfoChanged)
+    DistroInfo *distroInfo() const;
+    SoftwareInfo *softwareInfo() const;
+    HardwareInfo *hardwareInfo() const;
 
 public:
-    KCMAbout(QObject* parent, const QVariantList& args);
+    KCMAbout(QObject *parent, const QVariantList &args);
 
-    Q_INVOKABLE void copyToClipboard(const QString& text) const;
+    Q_INVOKABLE void copyToClipboard() const;
 
 Q_SIGNALS:
     void distroInfoChanged();
@@ -48,9 +48,9 @@ Q_SIGNALS:
     void hardwareInfoChanged();
 
 private:
-    DistroInfo* m_distroInfo;
-    SoftwareInfo* m_softwareInfo;
-    HardwareInfo* m_hardwareInfo;
+    DistroInfo *m_distroInfo;
+    SoftwareInfo *m_softwareInfo;
+    HardwareInfo *m_hardwareInfo;
 };
 
 #endif // INFO_H

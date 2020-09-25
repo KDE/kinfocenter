@@ -29,13 +29,16 @@
 #include <KConfigGroup>
 #include <KLocalizedString>
 
-SoftwareInfo::SoftwareInfo()
-= default;
+SoftwareInfo::SoftwareInfo(QObject *parent)
+    : QObject(parent)
+{
+}
 
 QString SoftwareInfo::kernelRelease() const
 {
     struct utsname utsName{};
     uname(&utsName);
+
     return QString::fromLatin1(utsName.release);
 }
 

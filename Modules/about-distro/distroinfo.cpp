@@ -21,4 +21,7 @@
 
 #include "distroinfo.h"
 
-DistroInfo::DistroInfo() = default;
+DistroInfo::DistroInfo(QObject *parent)
+    : QObject(parent)
+{
+}

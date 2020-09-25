@@ -32,61 +32,45 @@ class DistroInfo : public QObject
     Q_OBJECT
 
     Q_PROPERTY(QString name READ name CONSTANT)
-    PROPERTY(QString, name)
-
     Q_PROPERTY(QString version READ version CONSTANT)
-    PROPERTY(QString, version)
-
     Q_PROPERTY(QString id READ id CONSTANT)
-    PROPERTY(QString, id)
-
     Q_PROPERTY(QStringList idLike READ idLike CONSTANT)
-    PROPERTY(QStringList, idLike)
-
     Q_PROPERTY(QString versionCodename READ versionCodename CONSTANT)
-    PROPERTY(QString, versionCodename)
-
     Q_PROPERTY(QString versionId READ versionId CONSTANT)
-    PROPERTY(QString, versionId)
-
     Q_PROPERTY(QString prettyName READ prettyName CONSTANT)
-    PROPERTY(QString, prettyName)
-
     Q_PROPERTY(QString ansiColor READ ansiColor CONSTANT)
-    PROPERTY(QString, ansiColor)
-
     Q_PROPERTY(QString cpeName READ cpeName CONSTANT)
-    PROPERTY(QString, cpeName)
-
     Q_PROPERTY(QString homeUrl READ homeUrl CONSTANT)
-    PROPERTY(QString, homeUrl)
-
     Q_PROPERTY(QString documentationUrl READ documentationUrl CONSTANT)
-    PROPERTY(QString, documentationUrl)
-
     Q_PROPERTY(QString supportUrl READ supportUrl CONSTANT)
-    PROPERTY(QString, supportUrl)
-
     Q_PROPERTY(QString bugReportUrl READ bugReportUrl CONSTANT)
-    PROPERTY(QString, bugReportUrl)
-
     Q_PROPERTY(QString privacyPolicyUrl READ privacyPolicyUrl CONSTANT)
-    PROPERTY(QString, privacyPolicyUrl)
-
     Q_PROPERTY(QString buildId READ buildId CONSTANT)
-    PROPERTY(QString, buildId)
-
     Q_PROPERTY(QString variant READ variant CONSTANT)
-    PROPERTY(QString, variant)
-
     Q_PROPERTY(QString variantId READ variantId CONSTANT)
-    PROPERTY(QString, variantId)
-
     Q_PROPERTY(QString logo READ logo CONSTANT)
-    PROPERTY(QString, logo)
 
 public:
-    DistroInfo();
+    DistroInfo(QObject *parent = nullptr);
+
+    PROPERTY(QString, name)
+    PROPERTY(QString, version)
+    PROPERTY(QString, id)
+    PROPERTY(QStringList, idLike)
+    PROPERTY(QString, versionCodename)
+    PROPERTY(QString, versionId)
+    PROPERTY(QString, prettyName)
+    PROPERTY(QString, ansiColor)
+    PROPERTY(QString, cpeName)
+    PROPERTY(QString, homeUrl)
+    PROPERTY(QString, documentationUrl)
+    PROPERTY(QString, supportUrl)
+    PROPERTY(QString, bugReportUrl)
+    PROPERTY(QString, privacyPolicyUrl)
+    PROPERTY(QString, buildId)
+    PROPERTY(QString, variant)
+    PROPERTY(QString, variantId)
+    PROPERTY(QString, logo)
 
 private:
     KOSRelease m_osrelease;
