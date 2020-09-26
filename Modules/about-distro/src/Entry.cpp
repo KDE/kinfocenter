@@ -24,7 +24,7 @@ bool Entry::isValid() const
 QString Entry::diagnosticLine(Language language) const
 {
     // FIXME: This isn't really working for right-to-left
-    // The answer probably is in uncide control characters, but
+    // The answer probably is in unicode control characters, but
     // didn't work when tried.
     // Essentially what needs to happen is that the label should be RTL
     // that is to say the colon should be on the left, BUT englishy words

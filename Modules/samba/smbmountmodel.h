@@ -11,7 +11,7 @@
 #include <Solid/Device>
 
 /**
- * Model of cifs mount entires. Implementing properties
+ * Model of cifs mount entries. Implementing properties
  * as columns rather than roles.
  */
 class SmbMountModel : public QAbstractListModel

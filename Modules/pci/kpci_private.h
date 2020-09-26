@@ -1,4 +1,4 @@
-/* Retrive information about PCI subsystem through libpci library from
+/* Retrieve information about PCI subsystem through libpci library from
    pciutils package. This should be possible on Linux, BSD and AIX.
    
    Device classes, subclasses and programming interfaces are hardcoded

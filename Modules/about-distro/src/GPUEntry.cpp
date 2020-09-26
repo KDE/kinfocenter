@@ -35,7 +35,7 @@ GPUEntry::GPUEntry()
         // strip that. Elide would probably be nicer, a bit meh with QWidgets though.
         m_value = m_value.mid(0, m_value.indexOf('('));
         // Leads to trailing space in my case, don't know whether that is happening
-        // everyhere, though. Thus removing trailing spaces separately.
+        // everywhere, though. Thus removing trailing spaces separately.
         m_value = m_value.trimmed();
         context.doneCurrent();
     } else {

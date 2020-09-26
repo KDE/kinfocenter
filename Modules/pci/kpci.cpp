@@ -752,7 +752,7 @@ bool GetInfo_PCIUtils(QTreeWidget* tree) {
 
 		//adding revision
                 after=create(DeviceName, i18n("Revision"), QString::asprintf("0x%02X", info.cooked.revision));
-		//adding vendor, device, and subvendor/sudevice info
+		//adding vendor, device, and subvendor/subdevice info
 		after=addVendor(DeviceName, after, &info, PCIAccess);
 		//adding control
 		after=addControl(DeviceName, after, &info);
@@ -773,7 +773,7 @@ bool GetInfo_PCIUtils(QTreeWidget* tree) {
 		after=addBus(DeviceName, after, &info);
 		//adding secondary status
 		after=addSecStatus(DeviceName, after, &info);
-		//adding resourece behind bridge 
+		//adding resource behind bridge 
 		after=addBridgeBehind(DeviceName, after, &info);
 		//adding bridge control
 		after=addBridgeControl(DeviceName, after, &info);

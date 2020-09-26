@@ -280,7 +280,7 @@ QString flags_tos(unsigned int flags)
         if (tmp.length()) {
             tmp += QLatin1String(", ");
         }
-        tmp += i18nc("@item:intable Netork type", "Broadcast");
+        tmp += i18nc("@item:intable Network type", "Broadcast");
     }
 
     if (flags & IFF_MULTICAST) {
