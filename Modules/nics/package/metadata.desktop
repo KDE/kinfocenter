@@ -2,6 +2,13 @@
 # SPDX-FileCopyrightText: 2020 Carl Schwan <carl@carlschwan.eu>
 [Desktop Entry]
 Name=NIC
+Name[ca]=NIC
+Name[en_GB]=NIC
+Name[es]=NIC
+Name[nl]=NIC
+Name[pt]=NIC
+Name[sv]=NIC
+Name[x-test]=xxNICxx
 Type=Service
 Icon=network-card
 Keywords=
