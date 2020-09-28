@@ -3,41 +3,35 @@
     SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 */
 
-#ifndef KSAMBASHAREMODEL_H
-#define KSAMBASHAREMODEL_H
+#pragma once
 
 #include <QAbstractListModel>
 #include <KIOCore/KSambaShareData>
 
 /**
- * Model of ksamabasharedata. Implementing properties
- * as columns rather than roles.
+ * Model of KSambaShareData.
  */
 class KSambaShareModel : public QAbstractListModel
 {
 Q_OBJECT
 public:
-    enum class ColumnRole {
-        Name,
-        Path,
-        Comment,
-        ColumnCount, // End marker
-    };
+    enum class Role { Name = Qt::UserRole + 1, Path, ShareUrl, Comment };
+    Q_ENUM(Role);
 
     explicit KSambaShareModel(QObject *parent = nullptr);
     ~KSambaShareModel() override;
 
-    int rowCount(const QModelIndex &parent) const override;
-    int columnCount(const QModelIndex &parent) const override;
-    QVariant headerData(int section, Qt::Orientation orientation, int role) const override;
-    QVariant data(const QModelIndex &index, int role) const override;
-    bool hasChildren(const QModelIndex &parent) const override;
+    int rowCount(const QModelIndex &parent) const final;
+    QVariant data(const QModelIndex &index, int intRole) const final;
+    bool hasChildren(const QModelIndex &parent) const final;
+    Q_INVOKABLE void showPropertiesDialog(int index);
 
-public slots:
+    QHash<int, QByteArray> roleNames() const final;
+
+public Q_SLOTS:
     void reloadData();
 
 private:
     QList<KSambaShareData> m_list;
+    QString m_fqdn;
 };
-
-#endif // KSAMBASHAREMODEL_H

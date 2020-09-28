@@ -5,15 +5,21 @@
 
 #include "ksambasharemodel.h"
 
+#include <QDBusPendingCallWatcher>
+#include <QMetaEnum>
+#include <QApplication> // for kpropertiesdialog parenting
+
 #include <KSambaShare>
-#include <KLocalizedString>
+#include <KIOWidgets/KPropertiesDialog>
+
+#include "org.freedesktop.Avahi.Server.h"
 
 KSambaShareModel::KSambaShareModel(QObject *parent)
     : QAbstractListModel(parent)
 {
     connect(KSambaShare::instance(), &KSambaShare::changed,
             this, &KSambaShareModel::reloadData);
-    reloadData();
+    metaObject()->invokeMethod(this, &KSambaShareModel::reloadData);
 }
 
 KSambaShareModel::~KSambaShareModel() = default;
@@ -24,55 +30,48 @@ int KSambaShareModel::rowCount(const QModelIndex &parent) const
     return m_list.size();
 }
 
-int KSambaShareModel::columnCount(const QModelIndex &parent) const
-{
-    Q_UNUSED(parent)
-    return static_cast<int>(ColumnRole::ColumnCount);
-}
-
-QVariant KSambaShareModel::headerData(int section, Qt::Orientation orientation, int role) const
-{
-    if (orientation != Qt::Horizontal || role != Qt::DisplayRole) {
-        return {}; // we only have column headers.
-    }
-
-    Q_ASSERT(section < static_cast<int>(ColumnRole::ColumnCount));
-    switch (static_cast<ColumnRole>(section)) {
-    case ColumnRole::Name:
-        return i18nc("@title:column samba share name", "Name");
-    case ColumnRole::Path:
-        return i18nc("@title:column samba share dir path", "Path");
-    case ColumnRole::Comment:
-        return i18nc("@title:column samba share text comment/description", "Comment");
-    case ColumnRole::ColumnCount:
-        break; // noop
-    }
-
-    return {};
-}
-
-QVariant KSambaShareModel::data(const QModelIndex &index, int role) const
+QVariant KSambaShareModel::data(const QModelIndex &index, int intRole) const
 {
     if (!index.isValid()) {
         return {};
     }
 
     Q_ASSERT(index.row() < m_list.length());
-    Q_ASSERT(index.column() < static_cast<int>(ColumnRole::ColumnCount));
-    if (role == Qt::DisplayRole) {
-        switch (static_cast<ColumnRole>(index.column())) {
-        case ColumnRole::Name:
-            return m_list.at(index.row()).name();
-        case ColumnRole::Path:
-            return m_list.at(index.row()).path();
-        case ColumnRole::Comment:
-            return m_list.at(index.row()).comment();
-        case ColumnRole::ColumnCount:
-            break; // noop
+
+    static QMetaEnum roleEnum = QMetaEnum::fromType<Role>();
+    if (roleEnum.valueToKey(intRole) == nullptr) {
+        return {};
+    }
+    const auto role = static_cast<Role>(intRole);
+
+    const KSambaShareData &share = m_list.at(index.row());
+    switch (role) {
+    case Role::Name:
+        return share.name();
+    case Role::Path:
+        return share.path();
+    case Role::Comment:
+        return share.comment();
+    case Role::ShareUrl: {
+        if (m_fqdn.isEmpty()) {
+            return {};
         }
+        QUrl url;
+        url.setScheme(QStringLiteral("smb"));
+        url.setHost(m_fqdn);
+        url.setPath(QStringLiteral("/") + share.name());
+        return url;
+    }
     }
 
     return {};
+}
+
+Q_INVOKABLE void KSambaShareModel::showPropertiesDialog(int index)
+{
+    auto dialog = new KPropertiesDialog(QUrl::fromUserInput(m_list.at(index).path()), QApplication::activeWindow());
+    dialog->setFileNameReadOnly(true);
+    dialog->show();
 }
 
 void KSambaShareModel::reloadData()
@@ -84,9 +83,48 @@ void KSambaShareModel::reloadData()
         m_list += samba->getSharesByPath(path);
     }
     endResetModel();
+
+    // Reload FQDN
+    m_fqdn.clear();
+    auto avahi = new OrgFreedesktopAvahiServerInterface(QStringLiteral("org.freedesktop.Avahi"),
+                                                        QStringLiteral("/"),
+                                                        QDBusConnection::systemBus(),
+                                                        this);
+    auto watcher = new QDBusPendingCallWatcher(avahi->GetHostNameFqdn(), this);
+    connect(watcher, &QDBusPendingCallWatcher::finished, this, [this, avahi, watcher] {
+        watcher->deleteLater();
+        avahi->deleteLater();
+        QDBusPendingReply<QString> reply = *watcher;
+        if (reply.isError()) {
+            // When Avahi isn't available there's not really a good way to resolve the FQDN. The user could drive
+            // resolution through LLMNR or NetBios or some other ad-hoc system, neither provide us with an easy
+            // way to get their configured FQDN. We are therefor opting to not render URLs in that scenario since
+            // we can't get a name that will reliably work.
+            m_fqdn.clear();
+            return;
+        }
+        m_fqdn = reply.argumentAt(0).toString();
+        Q_EMIT dataChanged(createIndex(0, 0), createIndex(m_list.count(), 0), { static_cast<int>(Role::ShareUrl) });
+    });
 }
 
 bool KSambaShareModel::hasChildren(const QModelIndex &parent) const
 {
     return !parent.isValid() ? false : (rowCount(parent) > 0);
+}
+
+QHash<int, QByteArray> KSambaShareModel::roleNames() const
+{
+    static QHash<int, QByteArray> roles;
+    if (!roles.isEmpty()) {
+        return roles;
+    }
+
+    const QMetaEnum roleEnum = QMetaEnum::fromType<Role>();
+    for (int i = 0; i < roleEnum.keyCount(); ++i) {
+        const int value = roleEnum.value(i);
+        Q_ASSERT(value != -1);
+        roles[static_cast<int>(value)] = QByteArray("ROLE_") + roleEnum.valueToKey(value);
+    }
+    return roles;
 }

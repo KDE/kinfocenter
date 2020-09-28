@@ -5,8 +5,9 @@
 
 #include "smbmountmodel.h"
 
+#include <QDebug>
 #include <QIcon>
-#include <KLocalizedString>
+#include <QMetaEnum>
 #include <Solid/Device>
 #include <Solid/DeviceInterface>
 #include <Solid/DeviceNotifier>
@@ -20,7 +21,7 @@ SmbMountModel::SmbMountModel(QObject *parent)
             this, &SmbMountModel::addDevice);
     connect(Solid::DeviceNotifier::instance(), &Solid::DeviceNotifier::deviceRemoved,
             this, &SmbMountModel::removeDevice);
-    reloadData();
+    metaObject()->invokeMethod(this, &SmbMountModel::reloadData);
 }
 
 SmbMountModel::~SmbMountModel() = default;
@@ -31,68 +32,28 @@ int SmbMountModel::rowCount(const QModelIndex &parent) const
     return m_devices.size();
 }
 
-int SmbMountModel::columnCount(const QModelIndex &parent) const
-{
-    Q_UNUSED(parent)
-    return static_cast<int>(ColumnRole::ColumnCount);
-}
-
-QVariant SmbMountModel::headerData(int section, Qt::Orientation orientation, int role) const
-{
-    if (orientation != Qt::Horizontal || role != Qt::DisplayRole) {
-        return {}; // we only have column headers.
-    }
-
-    Q_ASSERT(section <static_cast<int>(ColumnRole::ColumnCount));
-    switch (static_cast<ColumnRole>(section)) {
-    case ColumnRole::Share:
-        return i18n("Resource");
-    case ColumnRole::Path:
-        return i18n("Mounted Under");
-    case ColumnRole::Accessible:
-        return i18nc("@title:column whether a samba share is accessible locally (i.e. mounted)", "Accessible");
-    case ColumnRole::ColumnCount:
-        break; // noop
-    }
-
-    return {};
-}
-
-QVariant SmbMountModel::data(const QModelIndex &index, int role) const
+QVariant SmbMountModel::data(const QModelIndex &index, int intRole) const
 {
     if (!index.isValid()) {
         return {};
     }
 
     Q_ASSERT(index.row() < m_devices.count());
-    Q_ASSERT(index.column() <static_cast<int>(ColumnRole::ColumnCount));
 
-    if (role == Qt::DisplayRole) {
-        switch (static_cast<ColumnRole>(index.column())) {
-        case ColumnRole::Share:
-            return m_devices.at(index.row()).as<Solid::NetworkShare>()->url();
-        case ColumnRole::Path:
-            return m_devices.at(index.row()).as<Solid::StorageAccess>()->filePath();
-        case ColumnRole::Accessible:
-            break; // Decoration only
-        case ColumnRole::ColumnCount:
-            break; // noop
-        }
+    static QMetaEnum roleEnum = QMetaEnum::fromType<Role>();
+    if (roleEnum.valueToKey(intRole) == nullptr) {
+        return {};
     }
+    const auto role = static_cast<Role>(intRole);
 
-    if (role == Qt::DecorationRole) {
-        switch (static_cast<ColumnRole>(index.column())) {
-        case ColumnRole::Accessible:
-            // Using characters here since we use a QTableView and can't just
-            return m_devices.at(index.row()).as<Solid::StorageAccess>()->isAccessible()
-                    ? QIcon::fromTheme("dialog-ok")
-                    : QIcon::fromTheme("dialog-cancel");
-        case ColumnRole::Share:
-        case ColumnRole::Path:
-            break; // Display only
-        case ColumnRole::ColumnCount:
-            break; // noop
-        }
+    const Solid::Device &device = m_devices.at(index.row());
+    switch (role) {
+    case Role::Share:
+        return device.as<Solid::NetworkShare>()->url();
+    case Role::Path:
+        return device.as<Solid::StorageAccess>()->filePath();
+    case Role::Accessible:
+        return device.as<Solid::StorageAccess>()->isAccessible();
     }
 
     return {};
@@ -154,4 +115,20 @@ void SmbMountModel::reloadData()
 bool SmbMountModel::hasChildren(const QModelIndex &parent) const
 {
     return !parent.isValid() ? false : (rowCount(parent) > 0);
+}
+
+QHash<int, QByteArray> SmbMountModel::roleNames() const
+{
+    static QHash<int, QByteArray> roles;
+    if (!roles.isEmpty()) {
+        return roles;
+    }
+
+    const QMetaEnum roleEnum = QMetaEnum::fromType<Role>();
+    for (int i = 0; i < roleEnum.keyCount(); ++i) {
+        const int value = roleEnum.value(i);
+        Q_ASSERT(value != -1);
+        roles[static_cast<int>(value)] = QByteArray("ROLE_") + roleEnum.valueToKey(value);
+    }
+    return roles;
 }

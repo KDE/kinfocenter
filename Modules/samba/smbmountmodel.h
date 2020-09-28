@@ -3,8 +3,7 @@
     SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 */
 
-#ifndef SMBMOUNTMODEL_H
-#define SMBMOUNTMODEL_H
+#pragma once
 
 #include <QAbstractListModel>
 #include <QList>
@@ -18,21 +17,17 @@ class SmbMountModel : public QAbstractListModel
 {
     Q_OBJECT
 public:
-    enum class ColumnRole {
-        Share,
-        Path,
-        Accessible,
-        ColumnCount, // End marker
-    };
+    enum class Role { Share = Qt::UserRole + 1, Path, Accessible };
+    Q_ENUM(Role);
 
     explicit SmbMountModel(QObject *parent = nullptr);
     ~SmbMountModel() override;
 
-    int rowCount(const QModelIndex &parent) const override;
-    int columnCount(const QModelIndex &parent) const override;
-    QVariant headerData(int section, Qt::Orientation orientation, int role) const override;
-    QVariant data(const QModelIndex &index, int role) const override;
-    bool hasChildren(const QModelIndex &parent) const override;
+    int rowCount(const QModelIndex &parent) const final;
+    QVariant data(const QModelIndex &index, int intRole) const final;
+    bool hasChildren(const QModelIndex &parent) const final;
+
+    QHash<int, QByteArray> roleNames() const final;
 
 private slots:
     void addDevice(const QString &udi);
@@ -50,5 +45,3 @@ private:
 
     QList<Solid::Device> m_devices;
 };
-
-#endif // SMBMOUNTMODEL_H
