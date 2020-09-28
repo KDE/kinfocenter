@@ -23,7 +23,7 @@ SambaModule::SambaModule(QObject *parent, const QVariantList &args)
     : KQuickAddons::ConfigModule(parent, args)
 {
     KAboutData *about = new KAboutData(i18n("kcmsamba"),
-                                       i18n("System Information Control Module"),
+                                       i18n("Samba Status"),
                                        QString(), QString(), KAboutLicense::GPL,
                                        i18n("(c) 2002-2020 KDE Information Control Module Samba Team"));
     about->addAuthor(i18n("Michael Glauche"), QString(), QStringLiteral("glauche@isa.rwth-aachen.de"));
