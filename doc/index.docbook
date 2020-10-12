@@ -6,15 +6,11 @@
 ]>
 
 <book id="kinfocenter" lang="&language;">
-<bookinfo>
 <title>The &infocenter;</title>
 
+<bookinfo>
 <authorgroup>
-<author>
-<firstname>Michael</firstname>
-<surname>McBride</surname>
-<affiliation><address>&Mike.McBride.mail;</address></affiliation>
-</author>
+<author>&Mike.McBride; &Mike.McBride.mail;</author>
 <!-- TRANS:ROLES_OF_TRANSLATORS -->
 </authorgroup>
 
@@ -52,8 +48,8 @@ programs into a convenient location.
 
 <para>
 This next section details the use of the information center itself.  For
-information on individual modules, please see <link linkend="module">Default KInfo
-Center Modules</link>.
+information on individual modules, please see <link linkend="module">Default
+&infocenter; Modules</link>.
 </para>
 
 <sect1 id="information-center-starting">
@@ -67,8 +63,8 @@ The &infocenter; can be started in three ways:
 <listitem>
 <para>
 By selecting <menuchoice><guimenu>Applications
-</guimenu><guisubmenu>System</guisubmenu><guimenuitem>Info
-Center</guimenuitem></menuchoice> from the application launcher in the panel.
+</guimenu><guisubmenu>System</guisubmenu><guimenuitem>&infocenter;</guimenuitem>
+</menuchoice> from the application launcher in the panel.
 
 </para>
 </listitem>
@@ -76,7 +72,7 @@ Center</guimenuitem></menuchoice> from the application launcher in the panel.
 <para>
 By pressing <keycombo
 action="simul">&Alt;<keycap>F2</keycap></keycombo> or <keycombo
-action="simul">&Alt;<keycap>Space</keycap></keycombo>.
+action="simul">&Alt;&Space;</keycombo>.
 This will bring up &krunner;.  Type
 <userinput><command>kinfocenter</command></userinput>, and press &Enter;.
 </para>
@@ -147,14 +143,14 @@ The main panel shows you the system information about the selected module.
 <sect1 id="info-center-menus">
 <title>The &infocenter; Toolbar</title>
 
-<para>This next section gives you a brief description of what each toolbar item does. </para>
+<para>This next section gives you a brief description of what each toolbar item does.</para>
 
 <sect2 id="info-center-module-help">
 <title>
 Module Help button
 </title>
 <para>
-This button opens khelpcenter with the current help page for the information module.
+This button opens &khelpcenter; with the current help page for the information module.
 </para>
 </sect2>
 
@@ -197,12 +193,12 @@ Type <keycombo action="simul">&Ctrl;<keycap>Q</keycap></keycombo> on the keyboar
 <sect1 id="aboutsystem">
 <title>About System Module</title>
 
-<para>This page shows a brief summary about your system, &ie; your distribution, <guilabel>KDE Plasma Version</guilabel>,
-<guilabel>KDE Frameworks Version</guilabel>, <guilabel>Qt Version</guilabel>, <guilabel>Kernel Version</guilabel> and <guilabel>OS Type</guilabel>; and in the hardware section
-information about <guilabel>Processors</guilabel> and <guilabel>Memory</guilabel>.</para>
+<para>This page shows a brief summary about your system, &ie; your distribution, <guilabel>KDE Plasma Version:</guilabel>,
+<guilabel>KDE Frameworks Version:</guilabel>, <guilabel>Qt Version:</guilabel>, <guilabel>Kernel Version:</guilabel> and <guilabel>OS Type:</guilabel>; and in the hardware section
+information about <guilabel>Processors:</guilabel>, <guilabel>Memory:</guilabel> and <guilabel>Graphics Processor:</guilabel>.</para>
 
 <para>Use the information on this page if you ask for help in support channels or report a bug at 
-<ulink url="http://bugs.kde.org">&kde;'s bugtracker</ulink>.</para> 
+<ulink url="https://bugs.kde.org">&kde;'s bugtracker</ulink>.</para>
 </sect1>
 
 
@@ -326,22 +322,22 @@ You can right click on the device viewer to show the following options: </para>
 <listitem><para><guimenuitem>Show Relevant Devices</guimenuitem>: Only show categories that have devices present.</para></listitem>
 </itemizedlist>
 <para>The default display is to collapse all while showing only relevant devices. Please note that the devices shown
-in the device listing are not all devices within your PC, they are just devices that have been detected via the Solid.</para>
+in the device listing are not all devices within your PC, they are just devices that have been detected via the &solid;.</para>
 <para> The device viewer can show the following devices:</para>
 <itemizedlist>
-<listitem><para>Processors: These are your computers <acronym>CPU</acronym>s ( Central Processing Units ).</para></listitem>
-<listitem><para>Storage Drives: Devices that are used to store your <acronym>PC</acronym>s files and data.</para></listitem>
-<listitem><para>Network Interfaces: Devices that allow you to connect to a network or to another <acronym>PC</acronym>.</para></listitem>
-<listitem><para>Audio Interfaces: Devices that allow your <acronym>PC</acronym> to play Sound. They are split into 2 categories, <acronym>ALSA</acronym> and <acronym>OSS</acronym> sound architectures.</para></listitem>
-<listitem><para>Video Devices: Devices that allow you to stream live video. </para></listitem>
-<listitem><para>Serial Devices: Devices that are connected to your serial port in your PC.</para></listitem>
-<listitem><para>Smart Card Devices: Devices that are smart card readers. </para></listitem>
-<listitem><para>Digital Video Broadcasting Devices: Devices that use the open standards for digital television.</para></listitem>
-<listitem><para>Device Buttons: These are buttons that are present on your <acronym>PC</acronym> or external devices. </para></listitem>
-<listitem><para>Batteries: These are battery devices that are plugged into your laptop. </para></listitem>
-<listitem><para><acronym>AC</acronym> Adapters: These devices will be present when you plug in your <acronym>AC</acronym> Adapter. </para></listitem>
-<listitem><para>Multimedia Players: Devices that play media files, like a music player. </para></listitem>
-<listitem><para>Camera Devices: These are digital camera that are connected to your <acronym>PC</acronym>.</para></listitem>
+<listitem><para><guisubmenu>Processors:</guisubmenu> These are your computers <acronym>CPU</acronym>s ( Central Processing Units ).</para></listitem>
+<listitem><para><guisubmenu>Storage Drives:</guisubmenu> Devices that are used to store your <acronym>PC</acronym>s files and data.</para></listitem>
+<listitem><para><guisubmenu>Network Interfaces:</guisubmenu> Devices that allow you to connect to a network or to another <acronym>PC</acronym>.</para></listitem>
+<listitem><para><guisubmenu>Audio Interfaces:</guisubmenu> Devices that allow your <acronym>PC</acronym> to play Sound. They are split into 2 categories, <acronym>ALSA</acronym> and <acronym>OSS</acronym> sound architectures.</para></listitem>
+<listitem><para><guisubmenu>Video Devices:</guisubmenu> Devices that allow you to stream live video.</para></listitem>
+<listitem><para><guisubmenu>Serial Devices:</guisubmenu> Devices that are connected to your serial port in your PC.</para></listitem>
+<listitem><para><guisubmenu>Smart Card Devices:</guisubmenu> Devices that are smart card readers.</para></listitem>
+<listitem><para><guisubmenu>Digital Video Broadcasting Devices:</guisubmenu> Devices that use the open standards for digital television.</para></listitem>
+<listitem><para><guisubmenu>Device Buttons:</guisubmenu> These are buttons that are present on your <acronym>PC</acronym> or external devices.</para></listitem>
+<listitem><para><guisubmenu>Batteries:</guisubmenu> These are battery devices that are plugged into your laptop.</para></listitem>
+<listitem><para><guisubmenu>AC Adapters:</guisubmenu> These devices will be present when you plug in your <acronym>AC</acronym> Adapter.</para></listitem>
+<listitem><para><guisubmenu>Multimedia Players:</guisubmenu> Devices that play media files, like a music player.</para></listitem>
+<listitem><para><guisubmenu>Camera Devices:</guisubmenu> These are digital camera that are connected to your <acronym>PC</acronym>.</para></listitem>
 </itemizedlist>
 <note>
 <para>Video devices do not include your video card adapter</para>
@@ -351,13 +347,13 @@ in the device listing are not all devices within your PC, they are just devices 
 <title>Information Panel</title>
 <para>The information panel is where device information is shown when you select a device. The first two information topics are always:</para>
 <itemizedlist>
-<listitem><para><guilabel>Product</guilabel>: The name of the device.</para></listitem>
-<listitem><para><guilabel>Vendor</guilabel>: The vendors name of the device.</para></listitem>
+<listitem><para><guilabel>Product:</guilabel> The name of the device.</para></listitem>
+<listitem><para><guilabel>Vendor:</guilabel> The vendors name of the device.</para></listitem>
 </itemizedlist>
 <para>The following information topics are dependent on the device chosen. They are labeled with easy to understand names.
 The information labels have the ability to be selected and copied from.</para>
 <note>
-<para>Processor <quote>Max Speed</quote> and <quote>Supported Instruction sets</quote> topics are usual not set by solid.</para>
+<para>Processor <guilabel>Max Speed:</guilabel> and <guilabel>Supported Instruction sets:</guilabel> topics are usual not set by &solid;.</para>
 </note>
 <note>
 <para>Top categories in the device listing do not show any information.</para>
@@ -418,21 +414,21 @@ identifies the device assigned to that interrupt.</para>
 direct connection that allows devices to transfer data to and from
 memory without going through the processor. Typically, i386-architecture
 systems (<acronym>PC</acronym>'s) have eight <acronym>DMA</acronym>
-channels (0-7).  </para>
+channels (0-7).</para>
 
 <note> <para> The exact information displayed is system-dependent.  On
 some systems, <acronym>DMA</acronym> Channel information cannot be
-displayed yet.  </para> </note>
+displayed yet.</para> </note>
 
 <para> On &Linux;, this information is read from <filename
 class="devicefile">/proc/dma</filename>, which is only available if the
 <filename class="directory">/proc</filename> pseudo-filesystem is
-compiled into the kernel.  </para>
+compiled into the kernel.</para>
 
 <para> A list of all currently-registered (<acronym>ISA</acronym> bus)
 <acronym>DMA</acronym> channels that are in use is shown. The first
 column shows the <acronym>DMA</acronym> channel, and the second column
-shows the device which uses that channel.  </para>
+shows the device which uses that channel.</para>
 
 <para>
 Unused <acronym>DMA</acronym> channels are not listed.
@@ -475,10 +471,10 @@ button.</para>
 <!--****************************************-->
 
 <sect2 id="kcmusb">
-<title><acronym>USB</acronym> Controller/<acronym>USB</acronym> Devices Information Module</title>
+<title>&USB; Controller/&USB; Devices Information Module</title>
 
 <para>This module allows you to see the devices attached to your
-<acronym>USB</acronym> bus(es).</para>
+&USB; bus(es).</para>
 
 <para>This module is for information only, you cannot edit any
 information you see here.</para>
@@ -501,7 +497,7 @@ takes place through the I/O port address of the device, which is a
 number.  No two devices can share the same I/O port.  Many devices use
  multiple
 I/O port addresses, which are expressed as a range of hexadecimal
-numbers. </para>
+numbers.</para>
 
 <note><para>The exact information displayed is system-dependent. On some
 systems, I/O port information can not yet be displayed.</para></note>
@@ -568,21 +564,21 @@ some systems, this information can not yet be displayed.</para></note>
 <!--****************************************-->
 
 <sect2 id="smbstatus">
-<title>Samba Status Information Module</title>
+<title>&Samba; Status Information Module</title>
 
-<para>The Samba and <acronym>NFS</acronym> Status Monitor is a front end
+<para>The &Samba; and &NFS; Status Monitor is a front end
 to the programs <command>smbstatus</command> and
-<command>showmount</command>.  Smbstatus reports on current Samba
-connections, and is part of the suite of Samba tools, which implements
-the <acronym>SMB</acronym> (Server Message Block) protocol, also called
+<command>showmount</command>.  Smbstatus reports on current &Samba;
+connections, and is part of the suite of &Samba; tools, which implements
+the &SMB; (Server Message Block) protocol, also called
 the NetBIOS or LanManager protocol.</para>
 
 <para>This protocol can be used to provide printer sharing or drive
 sharing services on a network including machines running the various
 flavors of &Microsoft; &Windows;.</para>
 
-<para><command>showmount</command> is part of the <acronym>NFS</acronym>
-software package. <acronym>NFS</acronym> stands for Network File System
+<para><command>showmount</command> is part of the &NFS;
+software package. &NFS; stands for Network File System
 and is the traditional &UNIX; way to share folders over the
 network. In this case the output of <command>showmount</command>
 <option>-a localhost</option> is parsed. On some systems showmount is in
@@ -593,12 +589,12 @@ showmount in your <envar>PATH</envar>.</para>
 <title>Exports</title>
 
 <para>On this page you can see a big list which shows the currently
-active connections to Samba shares and <acronym>NFS</acronym> exports of
-your machine.  The first column shows you whether the resource is a Samba
-(<acronym>SMB</acronym>) share or a <acronym>NFS</acronym> export. The
+active connections to &Samba; shares and &NFS; exports of
+your machine.  The first column shows you whether the resource is a &Samba;
+(&SMB;) share or a &NFS; export. The
 second column contains the name of the share, the third the name of the
 remote host, which accesses this share. The remaining columns have only
-a meaning for Samba-shares.</para>
+a meaning for &Samba;-shares.</para>
 
 <para>The fourth column contains the User <abbrev>ID</abbrev> of the
 user, who accesses this share. Note that this does not have to be equal
@@ -623,13 +619,13 @@ now, you don't see how many he copied or formerly opened &etc;</para>
 <sect3 id="smb-imports">
 <title>Imports</title>
 
-<para> Here you see which Samba- and <acronym>NFS</acronym>-shares from
+<para> Here you see which &Samba;- and &NFS;-shares from
 other hosts are mounted on your local system. The first column shows
-whether it is a Samba- or <acronym>NFS</acronym>-share, the second column
+whether it is a &Samba;- or &NFS;-share, the second column
 displays the name of the share, and the third shows where it is
 mounted.</para>
 
-<para>The mounted <acronym>NFS</acronym>-shares you should see on
+<para>The mounted &NFS;-shares you should see on
 &Linux; (this has been tested), and it should also work on &Solaris;
 (this has not been tested).</para>
 
@@ -638,17 +634,17 @@ mounted.</para>
 <sect3 id="smb-log">
 <title>Log</title>
 
-<para>This page presents the contents of your local samba log file in a
+<para>This page presents the contents of your local &Samba; log file in a
 nice way. If you open this page, the list will be empty.  You have to
-press the <guibutton>Update</guibutton> button, then the samba log file
-will be read and the results displayed. Check whether the samba log file
+press the <guibutton>Update</guibutton> button, then the &Samba; log file
+will be read and the results displayed. Check whether the &Samba; log file
 on your system is really at the location as specified in the input
 line. If it is somewhere else or if it has another name, correct
 it. After changing the file name you have to press
 <guibutton>Update</guibutton> again.</para>
 
-<para>Samba logs its actions according to the log level (see
-<filename>smb.conf</filename>).  If loglevel = 1, samba logs only when
+<para>&Samba; logs its actions according to the log level (see
+<filename>smb.conf</filename>).  If loglevel = 1, &Samba; logs only when
 somebody connects to your machine and when this connection is closed
 again. If log level = 2, it logs also if somebody opens a file and if he
 closes the file again.  If the log level is higher than 2, yet more
@@ -656,15 +652,15 @@ stuff is logged.</para>
 
 <para>If you are interested in who accesses your machine, and which
 files are accessed, you should set the log level to 2 and regularly
-create a new samba log file (&eg; set up a <command>cron</command> task
-which once a week moves your current samba log file into another
-folder or something like that). Otherwise your samba log file may
+create a new &Samba; log file (&eg; set up a <command>cron</command> task
+which once a week moves your current &Samba; log file into another
+folder or something like that). Otherwise your &Samba; log file may
 become very big.</para>
 
 <para>With the four checkboxes below the big list you can decide, which
 events are displayed in the list. You have to press
 <guibutton>Update</guibutton> to see the results.  If the log level of
-your samba is too low, you won't see everything.</para>
+your &Samba; is too low, you won't see everything.</para>
 
 <para>By clicking on the header of one column you can sort the list by
 this column.</para>
@@ -725,7 +721,7 @@ often, or which user opened the most files or whatever.</para>
 
 <itemizedlist>
 <title>Contributors</title>
-<listitem><para>Conversion to kcontrol applet:</para>
+<listitem><para>Conversion to &kcontrol; applet:</para>
 <para>&Matthias.Hoelzer-Kluepfel; &Matthias.Hoelzer-Kluepfel.mail;</para></listitem>
 <listitem><para>Use of <classname>K3Process</classname> instead of popen, and more error checking:</para>
 <para>&David.Faure; &David.Faure.mail;</para></listitem>
@@ -769,10 +765,10 @@ information only.</para>
 <!--****************************************-->
 
 <sect2 id="wayland">
-<title>Wayland Information Module</title>
+<title>&Wayland; Information Module</title>
 
 <para>This screen is useful for getting specific information about your
-<ulink url="https://en.wikipedia.org/wiki/Wayland_(display_server_protocol)">Wayland Compositor</ulink>.</para>
+<ulink url="https://en.wikipedia.org/wiki/Wayland_(display_server_protocol)">&Wayland; Compositor</ulink>.</para>
 
 </sect2>
 
@@ -793,7 +789,7 @@ X Server and the current session of X.</para>
 
 <para>This page displays information about installed <acronym>OpenGL</acronym> implementation.
 OpenGL (for "Open Graphics Library") is a cross-platform,
-hardware independent interface for 3D graphics. </para>
+hardware independent interface for 3D graphics.</para>
 
 <para><acronym>GLX</acronym> is the binding for OpenGL to X Window system.</para>
 
@@ -816,13 +812,13 @@ You must have a videocard with 3D accelerator and properly installed driver for 
 <para>Contributors:</para>
 
 <itemizedlist>
-<listitem><para>Matthias Hoelzer-Kluepfel
+<listitem><para>&Matthias.Hoelzer-Kluepfel;
 &Matthias.Hoelzer-Kluepfel.mail;</para></listitem>
 <listitem><para>&Matthias.Elter; &Matthias.Elter.mail;</para></listitem>
 </itemizedlist>
 
-<para>Documentation <trademark class="copyright">copyright 2000 Michael
-McBride</trademark> &Mike.McBride.mail;</para>
+<para>Documentation <trademark class="copyright">copyright 2000
+&Mike.McBride;</trademark> &Mike.McBride.mail;</para>
 
 <para>Contributors:</para>
 
@@ -833,8 +829,8 @@ McBride</trademark> &Mike.McBride.mail;</para>
 <listitem><para>&Patrick.Dowler;</para></listitem>
 <listitem><para>&Duncan.Haldane; <email>duncan@kde.org</email></para></listitem>
 <listitem><para>&Steffen.Hansen; <email>stefh@mip.ou.dk</email>.</para></listitem>
-<listitem><para>Matthias Hoelzer-Kluepfel &Matthias.Hoelzer-Kluepfel.mail;</para></listitem>
-<listitem><para>Martin Jones &Martin.R.Jones.mail;</para></listitem>
+<listitem><para>&Matthias.Hoelzer-Kluepfel; &Matthias.Hoelzer-Kluepfel.mail;</para></listitem>
+<listitem><para>&Martin.R.Jones; &Martin.R.Jones.mail;</para></listitem>
 <listitem><para>&Jost.Schenck; &Jost.Schenck.mail;</para></listitem>
 <listitem><para>&Jonathan.Singer; &Jonathan.Singer.mail;</para></listitem>
 <listitem><para>&Thomas.Tanghus; &Thomas.Tanghus.mail;</para></listitem>
