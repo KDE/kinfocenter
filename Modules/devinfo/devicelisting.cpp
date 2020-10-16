@@ -141,7 +141,7 @@ void DeviceListing::currentItemChangedSlot(QTreeWidgetItem *listItemIn, QTreeWid
     Q_UNUSED(previous);
 
     SolDevice *listItem = static_cast<SolDevice *>(listItemIn);
-    if (listItem->isDeviceSet()) {
+    if (listItem && listItem->isDeviceSet()) {
         iPanel->setTopInfo(listItem->deviceIcon(), listItem->device());
 
         QVListLayout *bottomLay = listItem->infoPanelLayout();
