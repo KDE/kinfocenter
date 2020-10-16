@@ -80,7 +80,7 @@ private:
     //NicSignals *nicSig;
 
 public Q_SLOTS:
-    void itemActivatedSlot(QTreeWidgetItem *, const int);
+    void currentItemChangedSlot(QTreeWidgetItem *, QTreeWidgetItem *);
     void deviceAddedSlot(const QString &);
     void deviceRemovedSlot(const QString &);
     void collapseAllDevicesSlot();

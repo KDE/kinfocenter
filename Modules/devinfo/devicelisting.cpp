@@ -44,8 +44,8 @@ DeviceListing::DeviceListing(QWidget *parent, InfoPanel *info, DevInfoPlugin *st
 //    nicSig = new NicSignals();
 //    connect(nicSig,SIGNAL(nicActivatedOrDisconnected()),this,SLOT(networkingChangedSlot()));
 //
-    // Check if clicked
-    connect(this, &DeviceListing::itemActivated, this, &DeviceListing::itemActivatedSlot);
+    // Check if selection changed
+    connect(this, &DeviceListing::currentItemChanged, this, &DeviceListing::currentItemChangedSlot);
 
     // Check if item is added
     connect(Solid::DeviceNotifier::instance(), &Solid::DeviceNotifier::deviceAdded, this,
@@ -136,9 +136,9 @@ void DeviceListing::populateListing(const show showStatus)
     }
 }
 
-void DeviceListing::itemActivatedSlot(QTreeWidgetItem *listItemIn, const int columnIn)
+void DeviceListing::currentItemChangedSlot(QTreeWidgetItem *listItemIn, QTreeWidgetItem *previous)
 {
-    Q_UNUSED(columnIn);
+    Q_UNUSED(previous);
 
     SolDevice *listItem = static_cast<SolDevice *>(listItemIn);
     if (listItem->isDeviceSet()) {
