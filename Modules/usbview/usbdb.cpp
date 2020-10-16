@@ -13,7 +13,7 @@
 #include <iostream>
 
 #include <QFile>
-#include <QRegExp>
+#include <QRegularExpression>
 #include <QTextStream>
 #include <QStandardPaths>
 #include <QDebug>
@@ -40,11 +40,14 @@ USBDB::USBDB() {
 
 		QString line, name;
 		int id=0, subid=0, protid=0;
-		QRegExp vendor(QStringLiteral("[0-9a-fA-F]+ "));
-		QRegExp product(QStringLiteral("\\s+[0-9a-fA-F]+ "));
-		QRegExp cls(QStringLiteral("C [0-9a-fA-F][0-9a-fA-F]"));
-		QRegExp subclass(QStringLiteral("\\s+[0-9a-fA-F][0-9a-fA-F]  "));
-		QRegExp prot(QStringLiteral("\\s+[0-9a-fA-F][0-9a-fA-F]  "));
+
+		const QRegularExpression vendor(QStringLiteral("^[0-9a-fA-F]+ "));
+		const QRegularExpression product(QStringLiteral("^\\s+[0-9a-fA-F]+ "));
+		const QRegularExpression cls(QStringLiteral("^C [0-9a-fA-F]{2}"));
+		const QRegularExpression subclass(QStringLiteral("^\\s+[0-9a-fA-F]{2}  "));
+		const QRegularExpression prot(QStringLiteral("^\\s+[0-9a-fA-F]{2}  "));
+
+		QRegularExpressionMatch rmatch;
 		while (!ts.atEnd()) {
 			line = ts.readLine();
             if (!line.isEmpty() && (line.at(0) == QLatin1String("#") || line.trimmed().isEmpty()))
@@ -54,25 +57,25 @@ USBDB::USBDB() {
 			if (line.left(2) == QLatin1String("AT"))
 				continue;
 
-			if (cls.indexIn(line) == 0 && cls.matchedLength() == 4) {
+			if (line.contains(cls, &rmatch) && rmatch.capturedLength(0) == 4) {
 				id = line.midRef(2,2).toInt(0, 16);
 				name = line.mid(4).trimmed();
 				_classes.insert(QStringLiteral("%1").arg(id), name);
-			} else if (prot.indexIn(line) == 0 && prot.matchedLength() > 5) {
+			} else if (line.contains(prot, &rmatch) && rmatch.capturedLength(0) > 5) {
 				line = line.trimmed();
 				protid = line.leftRef(2).toInt(0, 16);
 				name = line.mid(4).trimmed();
 				_classes.insert(QStringLiteral("%1-%2-%3").arg(id).arg(subid).arg(protid), name);
-			} else if (subclass.indexIn(line) == 0 && subclass.matchedLength() > 4) {
+			} else if (line.contains(subclass, &rmatch) && rmatch.capturedLength(0) > 4) {
 				line = line.trimmed();
 				subid = line.leftRef(2).toInt(0, 16);
 				name = line.mid(4).trimmed();
 				_classes.insert(QStringLiteral("%1-%2").arg(id).arg(subid), name);
-			} else if (vendor.indexIn(line) == 0 && vendor.matchedLength() == 5) {
+			} else if (line.contains(vendor, &rmatch) && rmatch.capturedLength(0) == 5) {
 				id = line.leftRef(4).toInt(0, 16);
 				name = line.mid(6);
 				_ids.insert(QStringLiteral("%1").arg(id), name);
-			} else if (product.indexIn(line) == 0 && product.matchedLength() > 5) {
+			} else if (line.contains(product, &rmatch) && rmatch.capturedLength(0) > 5) {
 				line = line.trimmed();
 				subid = line.leftRef(4).toInt(0, 16);
 				name = line.mid(6);
