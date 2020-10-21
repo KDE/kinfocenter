@@ -23,7 +23,6 @@
 
 #include "opengl.h"
 
-#include <QRegExp>
 #include <QFile>
 #include <QTextStream>
 #include <QProcess>
@@ -256,12 +255,12 @@ static QVector<DriInfo> get_dri_devices()
             QString line;
             for (int i=2; i<=6; i++) {
                 line = pci_info[i];
-                line.remove(QRegExp("[^:]*:[ ]*"));
+                line = line.mid(line.indexOf(QLatin1Char(':')) + 1).simplified();
                 switch (i) {
-                    case 2: it->vendor = line.simplified();    break;
-                    case 3: it->device = line.simplified();    break;
-                    case 4: it->subvendor = line.simplified(); break;
-                    case 6: it->rev = line.simplified();       break;
+                    case 2: it->vendor = line;    break;
+                    case 3: it->device = line;    break;
+                    case 4: it->subvendor = line; break;
+                    case 6: it->rev = line;       break;
                 }
             }
         } else {

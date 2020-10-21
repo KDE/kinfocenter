@@ -34,11 +34,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifdef HAVE_PCIUTILS
 #include "kpci.h"
 #endif //HAVE_PCIUTILS
-#include <QRegExp>
 #include <QFile>
 
 #include <KLocalizedString>
 #include <QFontDatabase>
+
+#include <algorithm>
 
 #define INFO_IRQ "/proc/interrupts"
 #define INFO_DMA "/proc/dma"
@@ -109,12 +110,18 @@ bool GetInfo_DMA(QTreeWidget* tree) {
 		line = stream.readLine();
 		while (!line.isNull()) {
 			if (!line.isEmpty()) {
-				QRegExp rx(QStringLiteral("^\\s*(\\S+)\\s*:\\s*(\\S+)"));
-				if (-1 != rx.indexIn(line)) {
-					QStringList list;
-					list << rx.cap(1) << rx.cap(2);
-					new QTreeWidgetItem(tree, list);
+				// line is e.g. " 4: cascade"
+				QStringList list = line.split(QLatin1Char(':'), Qt::KeepEmptyParts, Qt::CaseInsensitive);
+
+				if (list.size() != 2) {
+					continue;
 				}
+
+				std::for_each(list.begin(), list.end(), [](QString &str) {
+					str = str.trimmed();
+				});
+
+				new QTreeWidgetItem(tree, list);
 			}
 			line = stream.readLine();
 		}
