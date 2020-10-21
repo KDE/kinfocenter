@@ -55,7 +55,6 @@ private:
     void setTopWidgetLayout(bool = false);
     void setBottomWidgetLayout(QVListLayout *, bool = false);
     void setInfoPanelLayout();
-    void removeItems(QWidget *);
     void setDefaultText();
 
     QLabel *setDevicesIcon(const QIcon &);
