@@ -19,7 +19,6 @@
 
 #include "batterymodel.h"
 
-#include <Solid/Device>
 #include <Solid/DeviceNotifier>
 
 #include <QtQml>

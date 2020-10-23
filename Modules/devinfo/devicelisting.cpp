@@ -29,7 +29,6 @@
 
 //Local
 #include "infopanel.h"
-#include "soldevice.h"
 #include "soldevicetypes.h"
 #include "devinfo.h"
 #include "solidhelper.h"

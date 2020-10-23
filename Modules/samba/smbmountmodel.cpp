@@ -8,7 +8,6 @@
 #include <QDebug>
 #include <QIcon>
 #include <QMetaEnum>
-#include <Solid/Device>
 #include <Solid/DeviceInterface>
 #include <Solid/DeviceNotifier>
 #include <Solid/NetworkShare>

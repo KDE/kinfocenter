@@ -19,7 +19,6 @@ extern "C" {
 #include <sys/types.h> //getuid
 #include <ctype.h> //isxdigit
 #include <string.h> //memcpy
-#include <QTreeWidget>
 #include <QTreeWidgetItem>
 #include <QDebug>
 

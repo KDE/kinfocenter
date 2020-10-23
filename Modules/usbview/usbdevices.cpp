@@ -29,7 +29,6 @@
 
 #if defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD)
 #include <sys/ioctl.h>
-#include <sys/param.h>
 #endif
 
 QList<USBDevice*> USBDevice::_devices;
