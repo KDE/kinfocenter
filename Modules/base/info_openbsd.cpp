@@ -1,15 +1,10 @@
 /*
- * info_netbsd.cpp is part of the KDE program kcminfo.  This displays
- * various information about the OpenBSD system it's running on.
- *
- * Originally written by Jaromir Dolecek <dolecek@ics.muni.cz>. CPU info
- * code has been imported from implementation of processor.cpp for KDE 1.0
- * by David Brownlee <abs@NetBSD.org> as found in NetBSD packages collection.
- * Hubert Feyer <hubertf@NetBSD.org> enhanced the sound information printing
- * quite a lot, too.
- *
- * The code is placed into public domain. Do whatever you want with it.
- */
+    SPDX-License-Identifier: CC0-1.0
+
+    SPDX-FileCopyrightText: Jaromir Dolecek <dolecek@ics.muni.cz>
+    SPDX-FileCopyrightText: David Brownlee <abs@NetBSD.org>
+    SPDX-FileCopyrightText: Hubert Feyer <hubertf@NetBSD.org>
+*/
 
 /*
  * all following functions should return true, when the Information

@@ -1,8 +1,8 @@
-/**
+/*
  * SPDX-FileCopyrightText: 2001 Alexander Neundorf <neundorf@kde.org>
  * SPDX-FileCopyrightText: 2020 Carl Schwan <carl@carlschwan.eu>
  *
- * SPDX-LicenseIndentifier: GPL-2.0-or-later
+ * SPDX-License-Identifier: GPL-2.0-or-later
  */
 
 #include "networkmodel.h"
