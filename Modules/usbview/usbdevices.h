@@ -1,12 +1,7 @@
-/***************************************************************************
- *   Copyright (C) 2001 by Matthias Hoelzer-Kluepfel <mhk@caldera.de>      *
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 2 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- ***************************************************************************/
+/*
+ *   SPDX-FileCopyrightText: 2001 Matthias Hoelzer-Kluepfel <mhk@caldera.de>
+ *   SPDX-License-Identifier: GPL-2.0-or-later
+ */
 
 #ifndef __USB_DEVICES_H__
 #define __USB_DEVICES_H__
