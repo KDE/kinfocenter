@@ -34,6 +34,7 @@
   <name xml:lang="ru">Информация о системе</name>
   <name xml:lang="sk">Informačné centrum</name>
   <name xml:lang="sl">Info Center</name>
+  <name xml:lang="sv">Informationscentral</name>
   <name xml:lang="tg">Маркази иттилоотӣ</name>
   <name xml:lang="uk">Центр інформації</name>
   <name xml:lang="x-test">xxInfo Centerxx</name>
@@ -68,6 +69,7 @@
   <summary xml:lang="ru">Централизованный и удобный просмотр информации о системе</summary>
   <summary xml:lang="sk">Centralizovaný a pohodlný prehľad systémových informácií</summary>
   <summary xml:lang="sl">Centraliziran in priročen pregled sistemskih informacij</summary>
+  <summary xml:lang="sv">Centraliserad och bekväm översikt av systeminformation</summary>
   <summary xml:lang="tg">Намоиши мусоид ва марказонидашуда барои низоми иттилоотӣ</summary>
   <summary xml:lang="uk">Централізований та зручний огляд усіх даних щодо системи</summary>
   <summary xml:lang="x-test">xxCentralized and convenient overview of system informationxx</summary>
@@ -102,6 +104,7 @@
     <p xml:lang="ru">Программа «Информация о системе» позволяет централизованно посмотреть параметры системы и окружения рабочего стола.</p>
     <p xml:lang="sk">Informačné centrum vám poskytuje centralizovaný a pohodlný prehľad o vašom systéme a prostredí pracovnej plochy.</p>
     <p xml:lang="sl">Info center vam nudi centraliziran in priročen pregled nad sistemom in namizjem.</p>
+    <p xml:lang="sv">Informationscentralen ger dig en centraliserad och bekväm översikt av systemet och skrivbordsmiljön.</p>
     <p xml:lang="tg">Маркази иттилоотӣ ба шумо намоиши мусоид ва марказонидашударо барои низом ва муҳити мизи кории шумо таъмин менамояд.</p>
     <p xml:lang="uk">«Центр інформації» надає вам змогу переглядати централізовано і зручно параметри вашої системи та стільничного середовища.</p>
     <p xml:lang="x-test">xxThe Info Center provides you with a centralized and convenient overview of your system and desktop environment.xx</p>
@@ -137,6 +140,7 @@
     <p xml:lang="ru">Она имеет модульную структуру. Каждый модуль является отдельным приложением, а приложение KInfoCenter объединяет их в одном месте.</p>
     <p xml:lang="sk">Informačné centrum pozostáva z viacerých modulov. Každý modul je samostatnou aplikáciou, ale informačné centrum organizuje všetky tieto programy na vhodnom mieste.</p>
     <p xml:lang="sl">Informacijski center je sestavljen iz več modulov. Vsak modul je ločena aplikacija, vendar informacijski center vse to sestavi na priročno mesto.</p>
+    <p xml:lang="sv">Informationscentralen består av flera moduler. Varje modul är ett eget program, men informationscentralen organiserar alla dessa program på ett bekvämt ställe.</p>
     <p xml:lang="tg">маркази иттилоотӣ аз якчанд модул иборат аст. Ҳар як модул барномаи алоҳида мебошад, аммо маркази иттилоотӣ ҳамаи барномаҳоро дар як ҷои мусоид муттаҳид мекунад.</p>
     <p xml:lang="uk">Центр інформації складається з декількох модулів. Кожен модуль є окремою програмою, але центр інформації об’єднує всі ці програми у вигляді однієї зручної оболонки.</p>
     <p xml:lang="x-test">xxThe information center is made up of multiple modules. Each module is a separate application, but the information center organizes all of these programs into a convenient location.xx</p>
