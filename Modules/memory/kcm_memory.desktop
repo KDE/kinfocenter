@@ -109,7 +109,7 @@ Comment=Memory information
 Comment[af]=Geheue informasie
 Comment[ar]=معلومات الذّاكرة
 Comment[as]=স্মৃতিশক্তিৰ তথ্য
-Comment[ast]=La información tocante a la memoria
+Comment[ast]=La información de la memoria
 Comment[az]=Yaddaş Məlumatı
 Comment[be]=Звесткі пра памяць
 Comment[be@latin]=Źviestki pra pamiać
@@ -200,6 +200,7 @@ Comment[zh_TW]=記憶體資訊
 
 X-KDE-Keywords=Memory,RAM,Virtual memory,Physical memory,Shared memory,Swap,System Information
 X-KDE-Keywords[ar]=ذاكرة,ذاكرة عشوائية,ذاكرة وهميّة,ذاكرة فيزيائيّة,ذاكرة مشتركة,تبديل,معلومات النّظام
+X-KDE-Keywords[ast]=Memoria,RAM,Memoria virtual,Memoria física,Memoria compartida, Intercambéu,Información del sistema,Información,Sistema
 X-KDE-Keywords[az]=Memory,RAM,Virtual memory,Physical memory,Shared memory,Swap,System Information,yaddaş,virtual yaddaş,fiziki yaddaş,bölünən yaddaş,mübadilənə sahəsi,sistem haqqında məlumat
 X-KDE-Keywords[bs]=Memorija,RAM,virtuelna memorija,fizička memorija,razmijeniti,informacijski sustav
 X-KDE-Keywords[ca]=Memòria,RAM,Memòria virtual,Memòria física,Memòria compartida,Swap,Intercanvi,Informació del sistema
