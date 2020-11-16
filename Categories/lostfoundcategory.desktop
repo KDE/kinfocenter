@@ -3,6 +3,7 @@ Type=Service
 X-KDE-ServiceTypes=KInfoCenterCategory
 X-KDE-KInfoCenter-Category=lost_and_found
 Icon=hwinfo
+X-KDE-Weight=99
 
 Name=Lost And Found
 Name[ar]=فُقد ووُجد

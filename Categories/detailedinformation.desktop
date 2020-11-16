@@ -3,6 +3,7 @@ Type=Service
 X-KDE-ServiceTypes=KInfoCenterCategory
 X-KDE-KInfoCenter-Category=detailed_information
 Icon=dialog-information
+X-KDE-Weight=20
 
 Name=Detailed Information
 Name[ast]=Información detallada

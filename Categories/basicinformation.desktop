@@ -3,6 +3,7 @@ Type=Service
 X-KDE-ServiceTypes=KInfoCenterCategory
 X-KDE-KInfoCenter-Category=basic_information
 Icon=dialog-information
+X-KDE-Weight=10
 
 Name=Basic Information
 Name[ast]=Información básica
