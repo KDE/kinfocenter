@@ -20,7 +20,6 @@
 
 
 #include <KPluginFactory>
-#include <KPluginLoader>
 
 #include <KAboutData>
 #include <QDebug>

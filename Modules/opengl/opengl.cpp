@@ -34,7 +34,6 @@
 #include <QDirIterator>
 
 #include <KPluginFactory>
-#include <KPluginLoader>
 
 #include <KAboutData>
 #include <KLocalizedString>

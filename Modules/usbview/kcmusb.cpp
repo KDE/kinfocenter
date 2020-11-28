@@ -20,7 +20,6 @@
 #include <KAboutData>
 
 #include <KPluginFactory>
-#include <KPluginLoader>
 #include <KLocalizedString>
 
 #include "usbdevices.h"

@@ -28,7 +28,6 @@
 #include <net/if.h>
 #include <sys/ioctl.h>
 #include <KPluginFactory>
-#include <KPluginLoader>
 
 
 #if defined(HAVE_GETNAMEINFO) && defined(HAVE_GETIFADDRS)

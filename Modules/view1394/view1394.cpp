@@ -30,7 +30,6 @@
 #include <KLocalizedString>
 
 #include <KPluginFactory>
-#include <KPluginLoader>
 
 #include <sys/time.h>
 #include <sys/types.h>

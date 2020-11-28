@@ -21,7 +21,6 @@
 #include "config-kcm.h"
 
 #include <KPluginFactory>
-#include <KPluginLoader>
 #include <KAboutData>
 #include <QDebug>
 #include <QStandardPaths>

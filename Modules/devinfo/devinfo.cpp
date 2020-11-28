@@ -29,7 +29,6 @@
 
 //Plugin
 #include <KPluginFactory>
-#include <KPluginLoader>
 
 #include "devicelisting.h"
 #include "infopanel.h"

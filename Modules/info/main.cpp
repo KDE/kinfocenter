@@ -22,7 +22,6 @@
  */
 
 #include <KPluginFactory>
-#include <KPluginLoader>
 #include <KLocalizedString>
  
 /* we have to include the info.cpp-file, to get the DEFINES about possible properties.

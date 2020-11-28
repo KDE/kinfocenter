@@ -8,7 +8,6 @@
 #include "nic.h"
 
 #include <KPluginFactory>
-#include <KPluginLoader>
 #include <KAboutData>
 #include <KLocalizedString>
 

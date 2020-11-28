@@ -32,7 +32,6 @@
 #include <KLocalizedString>
 
 #include <KPluginFactory>
-#include <KPluginLoader>
 
 #include "chartWidget.h"
 
