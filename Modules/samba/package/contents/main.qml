@@ -37,7 +37,7 @@ KCM.AbstractKCM {
                 model: Samba.ShareModel{}
 
                 delegate: ShareListItem {
-                    // The view isn't navigatable nor intearactable. Disable highlighting.
+                    // The view isn't navigatable nor interactable. Disable highlighting.
                     hoverEnabled: false
                 }
 
