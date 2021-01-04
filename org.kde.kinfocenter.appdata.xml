@@ -19,6 +19,7 @@
   <name xml:lang="fi">Tietokeskus</name>
   <name xml:lang="fr">Centre d'informations</name>
   <name xml:lang="gl">Centro de información</name>
+  <name xml:lang="hu">Rendszerinformáció</name>
   <name xml:lang="ia">Centro de Info</name>
   <name xml:lang="id">Info Center</name>
   <name xml:lang="it">Centro d'informazione</name>
@@ -55,6 +56,7 @@
   <summary xml:lang="fi">Järjestelmätietojen mukava keskitetty yleisnäkymä</summary>
   <summary xml:lang="fr">Aperçu centralisé et pratique des informations système</summary>
   <summary xml:lang="gl">Resumo centralizado e cómodo de información do sistema</summary>
+  <summary xml:lang="hu">A rendszerjellemzők központosított és kényelmes áttekintése</summary>
   <summary xml:lang="ia">Centralisate e conveniente supervision del information de systema</summary>
   <summary xml:lang="id">Ikhtisar informasi sistem yang terpusat dan serasi</summary>
   <summary xml:lang="it">Panoramica centralizzata e comoda delle informazioni di sistema</summary>
@@ -92,6 +94,7 @@
     <p xml:lang="fi">Tietokeskus tarjoaa mukavan keskitetyn yleisnäkymä järjestelmään ja työpöytäympäristöön.</p>
     <p xml:lang="fr">Le centre d'informations vous propose un aperçu centralisé et pratique des informations du système et de l'environnement de bureau.</p>
     <p xml:lang="gl">O centro de información fornécelle un resumo centralizado e cómodo do seu sistema e contorno de escritorio.</p>
+    <p xml:lang="hu">A Rendszerinformáció központosított és kényelmes áttekintést nyújt a rendszer és az asztali környezet jellemzőiről.</p>
     <p xml:lang="id">Info Center menyediakanmu dengan ikhtisar terpusat dan serasi terhadap sistem dan lingkungan desktop-mu.</p>
     <p xml:lang="it">Il centro d'informazione ti dà una panoramica centralizzata e comoda sul tuo sistema e sull'ambiente desktop.</p>
     <p xml:lang="ko">정보 센터에서는 시스템과 데스크톱 환경 정보를 모아서 표시합니다.</p>
@@ -128,6 +131,7 @@
     <p xml:lang="fi">Tietokeskus koostuu moduuleista, joista kukin on erillinen sovellus. Tietokeskus järjestää nämä ohjelmat yhteen paikaan.</p>
     <p xml:lang="fr">Le centre d'informations comporte plusieurs modules. Chaque module est une application séparée, mais le centre d'informations permet de centraliser tous ces programme au sein d'un emplacement pratique.</p>
     <p xml:lang="gl">O centro de información está composto por varios módulos. Cada módulo é unha aplicación de seu, pero o centro de información organiza todos os programas nun lugar cómodo.</p>
+    <p xml:lang="hu">Az alkalmazás több modulból épül fel. Minden modul egy külön alkalmazás, a Rendszerinformáció azonban egy helyre gyűjti össze azokat.</p>
     <p xml:lang="id">Pusat informasi terdiri dari banyak modul. Setiap modul adalah sebuah aplikasi yang terpisah, tetapi pusat informasi yang mengorganisasi semua program tersebut ke dalam lokasi yang serasi.</p>
     <p xml:lang="it">Il centro d'informazione è composto da diversi moduli; ognuno è un'applicazione a sé, ma il centro d'informazione li riunisce tutti in un posto comodo.</p>
     <p xml:lang="ko">정보 센터는 여러 모듈로 구성되어 있습니다. 개별 모듈은 개별 프로그램이지만 정보 센터에서 한 자리에서 편하게 볼 수 있도록 모아 줍니다.</p>
