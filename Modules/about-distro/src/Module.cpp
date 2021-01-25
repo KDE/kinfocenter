@@ -20,6 +20,7 @@
 
 #include "CPUEntry.h"
 #include "BitEntry.h"
+#include "GraphicsPlatformEntry.h"
 #include "GPUEntry.h"
 #include "KernelEntry.h"
 #include "MemoryEntry.h"
@@ -183,7 +184,8 @@ void Module::loadEntries()
                          new Entry(ki18n("KDE Frameworks Version:"), KCoreAddons::versionString()),
                          new Entry(ki18n("Qt Version:"), QString::fromLatin1(qVersion())),
                          new KernelEntry(),
-                         new BitEntry()
+                         new BitEntry(),
+                         new GraphicsPlatformEntry()
                      });
 
     // hardware

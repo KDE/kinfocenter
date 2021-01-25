@@ -10,6 +10,7 @@ set(kcm_SRCS
     SectionLabel.cpp
     BitEntry.cpp
     MemoryEntry.cpp
+    GraphicsPlatformEntry.cpp
     CPUEntry.cpp
     GPUEntry.cpp
     FancyString.cpp
