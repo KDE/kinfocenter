@@ -8,7 +8,6 @@ set(kcm_SRCS
     PlasmaEntry.cpp
     KernelEntry.cpp
     SectionLabel.cpp
-    BitEntry.cpp
     MemoryEntry.cpp
     GraphicsPlatformEntry.cpp
     CPUEntry.cpp

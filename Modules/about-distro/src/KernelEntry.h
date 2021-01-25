@@ -12,7 +12,7 @@ class KernelEntry : public Entry
 {
 public:
     KernelEntry();
-    static QString kernelVersion();
+    QString localizedValue(Language language = Language::System) const override;
 };
 
 #endif // KERNELENTRY_H
