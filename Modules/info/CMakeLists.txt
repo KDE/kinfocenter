@@ -33,7 +33,7 @@ if(KF5Wayland_FOUND)
     target_link_libraries(kcm_info KF5::WaylandClient)
 endif()
 
-install(TARGETS kcm_info  DESTINATION ${PLUGIN_INSTALL_DIR} )
+install(TARGETS kcm_info  DESTINATION ${KDE_INSTALL_PLUGINDIR} )
 
 
 ########### install files ###############

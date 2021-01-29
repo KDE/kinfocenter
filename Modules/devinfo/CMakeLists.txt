@@ -12,5 +12,5 @@ target_link_libraries(kcm_devinfo
     KF5::Solid
 )
 
-install(TARGETS kcm_devinfo DESTINATION ${PLUGIN_INSTALL_DIR})
+install(TARGETS kcm_devinfo DESTINATION ${KDE_INSTALL_PLUGINDIR})
 install( FILES devinfo.desktop DESTINATION ${SERVICES_INSTALL_DIR} )

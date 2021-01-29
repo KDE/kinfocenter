@@ -13,7 +13,7 @@ if (${CMAKE_SYSTEM_NAME} STREQUAL "FreeBSD")
    target_link_libraries(kcm_memory kvm)
 endif ()
 
-install(TARGETS kcm_memory  DESTINATION ${PLUGIN_INSTALL_DIR})
+install(TARGETS kcm_memory  DESTINATION ${KDE_INSTALL_PLUGINDIR})
 
 ########### install files ###############
 

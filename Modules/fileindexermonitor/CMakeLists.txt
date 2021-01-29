@@ -19,6 +19,6 @@ target_link_libraries(kcm_fileindexermonitor
 kcoreaddons_desktop_to_json(kcm_fileindexermonitor "kcm_fileindexermonitor.desktop")
 
 install(FILES kcm_fileindexermonitor.desktop DESTINATION ${SERVICES_INSTALL_DIR})
-install(TARGETS kcm_fileindexermonitor DESTINATION ${PLUGIN_INSTALL_DIR}/kcms)
+install(TARGETS kcm_fileindexermonitor DESTINATION ${KDE_INSTALL_PLUGINDIR}/kcms)
 
 kpackage_install_package(package kcm_fileindexermonitor kcms)

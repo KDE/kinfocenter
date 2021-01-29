@@ -26,6 +26,6 @@ target_link_libraries(kcm_energyinfo
 kcoreaddons_desktop_to_json(kcm_energyinfo "kcm_energyinfo.desktop")
 
 install(FILES kcm_energyinfo.desktop DESTINATION ${SERVICES_INSTALL_DIR})
-install(TARGETS kcm_energyinfo DESTINATION ${PLUGIN_INSTALL_DIR}/kcms)
+install(TARGETS kcm_energyinfo DESTINATION ${KDE_INSTALL_PLUGINDIR}/kcms)
 
 kpackage_install_package(package kcm_energyinfo kcms)

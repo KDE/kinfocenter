@@ -11,7 +11,7 @@ add_library(kcm_usb MODULE ${kcm_usb_PART_SRCS})
 
 target_link_libraries(kcm_usb KF5::KCMUtils KF5::I18n)
 
-install(TARGETS kcm_usb  DESTINATION ${PLUGIN_INSTALL_DIR} )
+install(TARGETS kcm_usb  DESTINATION ${KDE_INSTALL_PLUGINDIR} )
 
 
 ########### install files ###############

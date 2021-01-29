@@ -39,7 +39,7 @@ endif()
 
 configure_file(openglconfig.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/openglconfig.h )
 
-install(TARGETS kcm_opengl  DESTINATION ${PLUGIN_INSTALL_DIR})
+install(TARGETS kcm_opengl  DESTINATION ${KDE_INSTALL_PLUGINDIR})
 
 ########### install files ###############
 

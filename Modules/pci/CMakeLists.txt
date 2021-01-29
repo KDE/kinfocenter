@@ -40,7 +40,7 @@ add_library(kcm_pci MODULE ${KCM_PCI_PART_SRCS})
 
 target_link_libraries(kcm_pci ${KCM_PCI_LIBS} )
 
-install(TARGETS kcm_pci  DESTINATION ${PLUGIN_INSTALL_DIR})
+install(TARGETS kcm_pci  DESTINATION ${KDE_INSTALL_PLUGINDIR})
 
 ########### install files ###############
 
