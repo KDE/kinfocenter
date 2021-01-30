@@ -13,8 +13,8 @@ set(kcm_energyinfo_SRCS
 add_library(kcm_energyinfo MODULE ${kcm_energyinfo_SRCS})
 
 target_link_libraries(kcm_energyinfo
-  Qt5::DBus
-  Qt5::Widgets
+  Qt::DBus
+  Qt::Widgets
   KF5::KIOWidgets
   KF5::CoreAddons
   KF5::KCMUtils

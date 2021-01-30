@@ -12,7 +12,7 @@ ecm_add_tests(
     ksambasharemodeltest
     smbmountmodeltest
     LINK_LIBRARIES
-        Qt5::Core
-        Qt5::Test
+        Qt::Core
+        Qt::Test
         kcm_samba_static
 )

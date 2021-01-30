@@ -8,7 +8,7 @@ set(kcm_fileindexer_SRCS
 add_library(kcm_fileindexermonitor MODULE ${kcm_fileindexer_SRCS})
 
 target_link_libraries(kcm_fileindexermonitor
-  Qt5::Widgets
+  Qt::Widgets
   KF5::KIOWidgets
   KF5::CoreAddons
   KF5::KCMUtils
