@@ -304,7 +304,9 @@ void OuiDb::loadFromOuiTxt(const QString &filename) {
 		return;
 
 	QTextStream ts(&f);
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 	ts.setCodec("UTF-8");
+#endif
 	while (!ts.atEnd()) {
 		const QString line = ts.readLine();
 		if (line.isEmpty() || !line.contains(QLatin1String("(base 16)")))
