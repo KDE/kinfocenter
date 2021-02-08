@@ -16,5 +16,5 @@ install(TARGETS kcm_usb  DESTINATION ${KDE_INSTALL_PLUGINDIR} )
 
 ########### install files ###############
 
-install( FILES kcmusb.desktop  DESTINATION  ${SERVICES_INSTALL_DIR} )
-install( FILES usb.ids  DESTINATION  ${DATA_INSTALL_DIR}/kcmusb )
+install( FILES kcmusb.desktop  DESTINATION  ${KDE_INSTALL_KSERVICES5DIR} )
+install( FILES usb.ids  DESTINATION  ${KDE_INSTALL_DATADIR}/kcmusb )

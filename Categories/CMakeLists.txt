@@ -1,5 +1,5 @@
 
-install( FILES kinfocentercategory.desktop DESTINATION  ${SERVICETYPES_INSTALL_DIR} )
+install( FILES kinfocentercategory.desktop DESTINATION  ${KDE_INSTALL_KSERVICETYPES5DIR} )
 
 install( FILES deviceinfocategory.desktop graphicalinfocategory.desktop networkinfocategory.desktop lostfoundcategory.desktop basicinformation.desktop detailedinformation.desktop
-         DESTINATION  ${SERVICES_INSTALL_DIR} )
+         DESTINATION  ${KDE_INSTALL_KSERVICES5DIR} )

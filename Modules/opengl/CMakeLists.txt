@@ -43,4 +43,4 @@ install(TARGETS kcm_opengl  DESTINATION ${KDE_INSTALL_PLUGINDIR})
 
 ########### install files ###############
 
-install(FILES opengl.desktop  DESTINATION  ${SERVICES_INSTALL_DIR})
+install(FILES opengl.desktop  DESTINATION  ${KDE_INSTALL_KSERVICES5DIR})

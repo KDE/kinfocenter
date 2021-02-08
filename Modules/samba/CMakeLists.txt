@@ -32,7 +32,7 @@ target_link_libraries(kcm_samba
 kcoreaddons_desktop_to_json(kcm_samba smbstatus.desktop)
 
 install(TARGETS kcm_samba DESTINATION ${KDE_INSTALL_PLUGINDIR}/kcms)
-install(FILES smbstatus.desktop DESTINATION ${SERVICES_INSTALL_DIR})
+install(FILES smbstatus.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR})
 kpackage_install_package(package kcmsamba kcms) # NB: the target name follows the kaboutdata name which in turn follows the i18n domain name
 
 add_subdirectory(autotests)

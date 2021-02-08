@@ -29,7 +29,7 @@ target_compile_features(kcm_nic PUBLIC cxx_std_14)
 
 kcoreaddons_desktop_to_json(kcm_nic "kcm_nic.desktop")
 
-install(FILES kcm_nic.desktop DESTINATION ${SERVICES_INSTALL_DIR})
+install(FILES kcm_nic.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR})
 install(TARGETS kcm_nic DESTINATION ${KDE_INSTALL_PLUGINDIR}/kcms)
 
 kpackage_install_package(package kcm_nic kcms)

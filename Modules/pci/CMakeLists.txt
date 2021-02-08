@@ -44,4 +44,4 @@ install(TARGETS kcm_pci  DESTINATION ${KDE_INSTALL_PLUGINDIR})
 
 ########### install files ###############
 
-install( FILES kcm_pci.desktop  DESTINATION  ${SERVICES_INSTALL_DIR})
+install( FILES kcm_pci.desktop  DESTINATION  ${KDE_INSTALL_KSERVICES5DIR})

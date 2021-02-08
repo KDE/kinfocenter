@@ -26,4 +26,4 @@ target_link_libraries(kcm_about_distro
     KF5::Solid)
 
 install(TARGETS kcm_about_distro DESTINATION ${KDE_INSTALL_PLUGINDIR})
-install(FILES about-distro.desktop DESTINATION ${SERVICES_INSTALL_DIR})
+install(FILES about-distro.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR})

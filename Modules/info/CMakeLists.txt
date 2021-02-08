@@ -45,6 +45,6 @@ install(
 	ioports.desktop 
 	xserver.desktop  
     wayland.desktop
-	DESTINATION  ${SERVICES_INSTALL_DIR} 
+	DESTINATION  ${KDE_INSTALL_KSERVICES5DIR} 
 )
 

@@ -13,4 +13,4 @@ target_link_libraries(kcm_devinfo
 )
 
 install(TARGETS kcm_devinfo DESTINATION ${KDE_INSTALL_PLUGINDIR})
-install( FILES devinfo.desktop DESTINATION ${SERVICES_INSTALL_DIR} )
+install( FILES devinfo.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR} )

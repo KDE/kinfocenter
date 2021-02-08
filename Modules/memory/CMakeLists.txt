@@ -17,4 +17,4 @@ install(TARGETS kcm_memory  DESTINATION ${KDE_INSTALL_PLUGINDIR})
 
 ########### install files ###############
 
-install( FILES kcm_memory.desktop  DESTINATION  ${SERVICES_INSTALL_DIR})
+install( FILES kcm_memory.desktop  DESTINATION  ${KDE_INSTALL_KSERVICES5DIR})

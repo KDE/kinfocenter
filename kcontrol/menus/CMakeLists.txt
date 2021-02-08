@@ -1,2 +1,2 @@
-install( FILES kinfocenter.menu DESTINATION ${SYSCONF_INSTALL_DIR}/xdg/menus/)
-install( FILES kinfocenter.directory  DESTINATION  ${XDG_DIRECTORY_INSTALL_DIR} )
+install( FILES kinfocenter.menu DESTINATION ${KDE_INSTALL_SYSCONFDIR}/xdg/menus/)
+install( FILES kinfocenter.directory  DESTINATION  ${KDE_INSTALL_DESKTOPDIR} )
