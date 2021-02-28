@@ -632,7 +632,7 @@ static QTreeWidgetItem *print_screen_info(QTreeWidgetItem *l1, QTreeWidgetItem *
                 makeDriItem(infos.at(0), l2, nullptr);
             }
 		} else {
-            l2 = newItem(l1, l2, i18n("3D Accelerator"), i18n("unknown"));
+            l2 = newItem(l1, l2, i18nc("Just one accelerator", "3D Accelerator"), i18n("unknown"));
         }
     }
     
