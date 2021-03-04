@@ -1,10 +1,6 @@
 # KI18N Translation Domain for this library
 add_definitions(-DTRANSLATION_DOMAIN=\"kcmopengl\")
 
-if(KCM_ENABLE_OPENGL)
-include_directories( ${OPENGL_INCLUDE_DIR} ${OPENGL_GLU_INCLUDE_DIR} )
-endif()
-
 if(KCM_ENABLE_OPENGLES)
 include_directories( ${OPENGLES_INCLUDE_DIR} )
 endif()
@@ -26,7 +22,7 @@ if (DL_LIBRARY)
 endif()
 
 if(KCM_ENABLE_OPENGL)
-target_link_libraries(kcm_opengl ${OPENGL_gl_LIBRARY} ${OPENGL_glu_LIBRARY})
+target_link_libraries(kcm_opengl OpenGL::GL OpenGL::GLU)
 endif()
 
 if(KCM_HAVE_EGL)
