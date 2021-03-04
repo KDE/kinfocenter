@@ -1,7 +1,7 @@
 project(kinfocenter)
 set(PROJECT_VERSION "5.21.80")
 
-cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.16)
 set(QT_MIN_VERSION "5.15.0")
 
 set(KF5_MIN_VERSION "5.74")
