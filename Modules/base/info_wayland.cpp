@@ -1,5 +1,6 @@
 /*
 Copyright 2014  Martin Gräßlin <mgraesslin@kde.org>
+Copyright 2021 Harald Sitter <sitter@kde.org>
 
 This library is free software; you can redistribute it and/or
 modify it under the terms of the GNU Lesser General Public
@@ -65,6 +66,15 @@ void WaylandModule::init()
 
     auto interfacesItem = new QTreeWidgetItem(compositorItem, QStringList() << i18n("Interfaces") << i18n("Interface Version"));
     interfacesItem->setExpanded(true);
+
+    auto resizeColumns = [this] {
+        for (int i = 0; i < m_tree->columnCount(); ++i) {
+            m_tree->resizeColumnToContents(i);
+        }
+    };
+    connect(m_tree, &QTreeWidget::expanded, this, resizeColumns);
+    connect(m_tree, &QTreeWidget::collapsed, this, resizeColumns);
+    connect(m_tree->model(), &QAbstractItemModel::dataChanged, this, resizeColumns);
 
     connect(m_connection, &ConnectionThread::connected, this,
         [this, compositorItem, interfacesItem] {
