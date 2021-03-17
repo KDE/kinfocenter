@@ -17,7 +17,11 @@ class SmbMountModel : public QAbstractListModel
 {
     Q_OBJECT
 public:
-    enum class Role { Share = Qt::UserRole + 1, Path, Accessible };
+    enum class Role {
+        Share = Qt::UserRole + 1,
+        Path,
+        Accessible,
+    };
     Q_ENUM(Role);
 
     explicit SmbMountModel(QObject *parent = nullptr);

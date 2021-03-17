@@ -21,7 +21,7 @@ class Entry
 public:
     enum class Language {
         System,
-        English
+        English,
     };
 
     // value may be empty if localizedValue is overridden

@@ -54,13 +54,13 @@ class StatisticsProvider : public QObject, public QQmlParserStatus
 public:
     enum HistoryType {
         RateType,
-        ChargeType
+        ChargeType,
     };
 
     enum HistoryRoles {
         TimeRole = Qt::UserRole + 1,
         ValueRole,
-        ChargingRole
+        ChargingRole,
     };
 
     explicit StatisticsProvider(QObject *parent = nullptr);

@@ -43,7 +43,8 @@ class DeviceListing : public QTreeWidget
 
 private:
     enum show {
-        ALL = 0, RELEVANT
+        ALL = 0,
+        RELEVANT,
     };
 
 public:

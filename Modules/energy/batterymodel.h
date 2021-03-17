@@ -40,7 +40,7 @@ public:
         BatteryRole = Qt::UserRole,
         UdiRole,
         VendorRole,
-        ProductRole
+        ProductRole,
     };
     Q_ENUM(Roles)
 

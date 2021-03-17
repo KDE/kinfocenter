@@ -57,7 +57,7 @@ public:
         WakeUpsRole = Qt::UserRole + 2,
         PercentRole,
         UserSpaceRole,
-        DetailsRole
+        DetailsRole,
     };
 
     qreal total() const { return m_total; }

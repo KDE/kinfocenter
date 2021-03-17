@@ -29,7 +29,7 @@ enum { /* entries for memoryInfos[] */
 	CACHED_MEM, /* cache memory size (located in ram) */
 	SWAP_MEM, /* total size of all swap-partitions */
 	FREESWAP_MEM, /* free memory in swap-partitions */
-	MEM_LAST_ENTRY
+	MEM_LAST_ENTRY,
 };
 
 

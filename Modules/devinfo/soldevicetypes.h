@@ -43,7 +43,8 @@ class SolStorageDevice : public SolDevice
 {
 public:
     enum storageChildren {
-        CREATECHILDREN, NOCHILDREN
+        CREATECHILDREN,
+        NOCHILDREN,
     };
 
     SolStorageDevice(const Solid::DeviceInterface::Type &);
