@@ -120,7 +120,7 @@ void DeviceListing::populateListing(const show showStatus)
         Solid::DeviceInterface::StorageDrive,
         Solid::DeviceInterface::Battery,
         Solid::DeviceInterface::PortableMediaPlayer,
-        Solid::DeviceInterface::Camera
+        Solid::DeviceInterface::Camera,
     };
 
     clear();
