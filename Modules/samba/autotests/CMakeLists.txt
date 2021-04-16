@@ -9,8 +9,8 @@ find_package(Qt5Test ${QT_MIN_VERSION} CONFIG REQUIRED)
 include(ECMAddTests)
 
 ecm_add_tests(
-    ksambasharemodeltest
-    smbmountmodeltest
+    ksambasharemodeltest.cpp
+    smbmountmodeltest.cpp
     LINK_LIBRARIES
         Qt::Core
         Qt::Test
