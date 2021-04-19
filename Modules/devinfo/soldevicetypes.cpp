@@ -31,9 +31,9 @@
 #include <solid/battery.h>
 
 #include <QProgressBar>
+#include <QStorageInfo>
 
 //kde
-#include <KDiskFreeSpaceInfo>
 #include <KCapacityBar>
 #include <KFormat>
 
@@ -306,26 +306,31 @@ QVListLayout *SolVolumeDevice::infoPanelLayout()
            << InfoPanel::friendlyString(voldev->uuid());
 
     if (accdev) {
+        const QString mountPoint = accdev->filePath();
+
         labels << QStringLiteral("--")
                << i18n("Mounted At: ")
-               << InfoPanel::friendlyString(accdev->filePath(), i18n("Not Mounted"));
+               << InfoPanel::friendlyString(mountPoint, i18n("Not Mounted"));
 
-        if (!accdev->filePath().isEmpty()) {
-            KDiskFreeSpaceInfo mountSpaceInfo
-                = KDiskFreeSpaceInfo::freeSpaceInfo(accdev->filePath());
+        if (!mountPoint.isEmpty()) {
+            QStorageInfo storageInfo(mountPoint);
 
             labels << i18n("Volume Space:");
 
             usageBar = new KCapacityBar();
-            if (mountSpaceInfo.size() > 0) {
-                usageBar->setValue(static_cast<int>((mountSpaceInfo.used() * 100)
-                                                    / mountSpaceInfo.size()));
+            qint64 size = 0;
+            if (storageInfo.isValid() && storageInfo.isReady()
+                && (size = storageInfo.bytesTotal()) > 0) {
+                const auto freeSpace = storageInfo.bytesFree();
+                const auto usedSpace = size - freeSpace;
+                const auto usedPercent = static_cast<int>((usedSpace * 100) / size);
+                usageBar->setValue(usedPercent);
                 usageBar->setText(
                     i18nc("Available space out of total partition size (percent used)",
                           "%1 free of %2 (%3% used)",
-                          KFormat().formatByteSize(mountSpaceInfo.available()),
-                          KFormat().formatByteSize(mountSpaceInfo.size()),
-                          usageBar->value()));
+                          KFormat().formatByteSize(freeSpace),
+                          KFormat().formatByteSize(size),
+                          usedPercent));
             } else {
                 usageBar->setValue(0);
                 usageBar->setText(i18n("No data available"));
