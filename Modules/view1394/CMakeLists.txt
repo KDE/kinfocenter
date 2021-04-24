@@ -19,5 +19,4 @@ install(TARGETS kcm_view1394  DESTINATION ${KDE_INSTALL_PLUGINDIR} )
 ########### install files ###############
 
 install( FILES kcmview1394.desktop  DESTINATION  ${KDE_INSTALL_KSERVICES5DIR} )
-install( FILES oui.db  DESTINATION  ${KDE_INSTALL_DATADIR}/kcmview1394 )
 
