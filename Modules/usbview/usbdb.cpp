@@ -14,6 +14,7 @@
 
 #include <QFile>
 #include <QRegularExpression>
+#include <QRegularExpressionMatch>
 #include <QTextStream>
 #include <QStandardPaths>
 #include <QDebug>
@@ -40,48 +41,57 @@ USBDB::USBDB() {
 		ts.setCodec("UTF-8");
 #endif
 
-		QString line, name;
-		int id=0, subid=0, protid=0;
-
-		const QRegularExpression vendor(QStringLiteral("^[0-9a-fA-F]+ "));
-		const QRegularExpression product(QStringLiteral("^\\s+[0-9a-fA-F]+ "));
-		const QRegularExpression cls(QStringLiteral("^C [0-9a-fA-F]{2}"));
-		const QRegularExpression subclass(QStringLiteral("^\\s+[0-9a-fA-F]{2}  "));
-		const QRegularExpression prot(QStringLiteral("^\\s+[0-9a-fA-F]{2}  "));
-
-		QRegularExpressionMatch rmatch;
-		while (!ts.atEnd()) {
-			line = ts.readLine();
-            if (!line.isEmpty() && (line.at(0) == QLatin1String("#") || line.trimmed().isEmpty()))
+		QString line;
+		int id = -1, subid = -1;
+		const QRegularExpression vendor(QStringLiteral("^([0-9a-fA-F]{4})\\s+(.+)$"));
+		const QRegularExpression product(QStringLiteral("^\t([0-9a-fA-F]{4})\\s+(.+)$"));
+		const QRegularExpression cls(QStringLiteral("^C ([0-9a-fA-F]{2})\\s+(.+)$"));
+		const QRegularExpression subclass(QStringLiteral("^\t([0-9a-fA-F]{2})\\s+(.+)$"));
+		const QRegularExpression prot(QStringLiteral("^\t\t([0-9a-fA-F]{2})\\s+(.+)$"));
+		while (ts.readLineInto(&line)) {
+			if (!line.isEmpty() && line.startsWith(QLatin1String("#")))
 				continue;
 
-			// skip AT lines
-			if (line.left(2) == QLatin1String("AT"))
+			// skip unhandled categories lines
+			if (line.isEmpty() ||
+			    line.startsWith(QLatin1String("AT ")) ||
+			    line.startsWith(QLatin1String("HID ")) ||
+			    line.startsWith(QLatin1String("R ")) ||
+			    line.startsWith(QLatin1String("BIAS ")) ||
+			    line.startsWith(QLatin1String("PHY ")) ||
+			    line.startsWith(QLatin1String("HUT ")) ||
+			    line.startsWith(QLatin1String("L ")) ||
+			    line.startsWith(QLatin1String("HCC ")) ||
+			    line.startsWith(QLatin1String("VT "))) {
+				id = -1;
+				subid = -1;
 				continue;
+			}
 
-			if (line.contains(cls, &rmatch) && rmatch.capturedLength(0) == 4) {
-				id = line.midRef(2,2).toInt(0, 16);
-				name = line.mid(4).trimmed();
+			QRegularExpressionMatch match;
+			if (line.startsWith('C') && (match = cls.match(line)).hasMatch()) {
+				id = match.capturedRef(1).toInt(0, 16);
+				const QString name = match.capturedRef(2).trimmed().toString();
 				_classes.insert(QStringLiteral("%1").arg(id), name);
-			} else if (line.contains(prot, &rmatch) && rmatch.capturedLength(0) > 5) {
-				line = line.trimmed();
-				protid = line.leftRef(2).toInt(0, 16);
-				name = line.mid(4).trimmed();
+			} else if (id >= 0 && subid >= 0 && (match = prot.match(line)).hasMatch()) {
+				const int protid = match.capturedRef(1).toInt(0, 16);
+				const QString name = match.capturedRef(2).trimmed().toString();
 				_classes.insert(QStringLiteral("%1-%2-%3").arg(id).arg(subid).arg(protid), name);
-			} else if (line.contains(subclass, &rmatch) && rmatch.capturedLength(0) > 4) {
-				line = line.trimmed();
-				subid = line.leftRef(2).toInt(0, 16);
-				name = line.mid(4).trimmed();
+			} else if (id >= 0 && (match = subclass.match(line)).hasMatch()) {
+				subid = match.capturedRef(1).toInt(0, 16);
+				const QString name = match.capturedRef(2).trimmed().toString();
 				_classes.insert(QStringLiteral("%1-%2").arg(id).arg(subid), name);
-			} else if (line.contains(vendor, &rmatch) && rmatch.capturedLength(0) == 5) {
-				id = line.leftRef(4).toInt(0, 16);
-				name = line.mid(6);
+			} else if ((match = vendor.match(line)).hasMatch()) {
+				id = match.capturedRef(1).toInt(0, 16);
+				const QString name = match.captured(2);
 				_ids.insert(QStringLiteral("%1").arg(id), name);
-			} else if (line.contains(product, &rmatch) && rmatch.capturedLength(0) > 5) {
-				line = line.trimmed();
-				subid = line.leftRef(4).toInt(0, 16);
-				name = line.mid(6);
+			} else if (id >= 0 && (match = product.match(line)).hasMatch()) {
+				subid = match.capturedRef(1).toInt(0, 16);
+				const QString name = match.capturedRef(2).trimmed().toString();
 				_ids.insert(QStringLiteral("%1-%2").arg(id).arg(subid), name);
+			} else {
+				id = -1;
+				subid = -1;
 			}
 
 		}
