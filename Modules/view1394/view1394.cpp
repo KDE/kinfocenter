@@ -290,12 +290,6 @@ OuiDb::OuiDb() {
 			break;
 		}
 	}
-	if (!filename.isEmpty())
-		return;
-
-	filename=QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("kcmview1394/oui.db"));
-	if (!filename.isEmpty())
-		loadFromCustomOuiDb(filename);
 }
 
 void OuiDb::loadFromOuiTxt(const QString &filename) {
@@ -313,30 +307,6 @@ void OuiDb::loadFromOuiTxt(const QString &filename) {
 			continue;
 		m_vendorIds.insert(line.section(QLatin1Char(' '), 0, 0), line.section(QLatin1Char('\t'), 1, -1, QString::SectionSkipEmpty).trimmed());
 	}
-}
-
-void OuiDb::loadFromCustomOuiDb(const QString &filename) {
-	QFile f(filename);
-	if (!f.open(QIODevice::ReadOnly))
-		return;
-
-	QByteArray ba=f.readAll();
-	int bytesLeft=ba.size();
-	char* data=ba.data();
-	while (bytesLeft>8) {
-		char *eol=(char*)memchr((const void*)data, '\n', bytesLeft);
-		if (eol==0)
-			break;
-		if ((eol-data)<8)
-			break;
-		data[6]='\0';
-		*eol='\0';
-		m_vendorIds.insert(QLatin1String(data), QString::fromUtf8(data+7));
-		bytesLeft-=(eol+1-data);
-		data=eol+1;
-	}
-
-	f.close();
 }
 
 QString OuiDb::vendor(octlet_t guid) {
