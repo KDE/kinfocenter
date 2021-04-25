@@ -1,8 +1,6 @@
 # KI18N Translation Domain for this library
 add_definitions(-DTRANSLATION_DOMAIN=\"kcm_energyinfo\")
 
-configure_file (config-kcm.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kcm.h )
-
 set(kcm_energyinfo_SRCS
   kcm.cpp
   batterymodel.cpp

@@ -18,7 +18,6 @@
  ***************************************************************************/
 
 #include "kcm.h"
-#include "config-kcm.h"
 
 #include <KPluginFactory>
 #include <KAboutData>
