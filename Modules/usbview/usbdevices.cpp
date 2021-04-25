@@ -151,7 +151,7 @@ static QString catFile(const QString &fname) {
 	{
 		ssize_t count;
 		while ((count = ::read(fd, buffer, 256)) > 0)
-        result.append(QString::fromLatin1(buffer).leftRef(count));
+        result.append(QString::fromLatin1(buffer, count));
 
 		::close(fd);
 	}
