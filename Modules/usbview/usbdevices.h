@@ -64,7 +64,7 @@ private:
 	uint8_t _class, _sub, _prot;
 	unsigned int _maxPacketSize;
 
-	unsigned int _vendorID, _prodID;
+	uint16_t _vendorID, _prodID;
 
 	void collectDataSys(libusb_device *dev);
 };

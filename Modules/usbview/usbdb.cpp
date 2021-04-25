@@ -94,7 +94,7 @@ USBDB::USBDB() {
 	}
 }
 
-QString USBDB::vendor(int id) const {
+QString USBDB::vendor(uint16_t id) const {
 	QString s = _ids.value(QStringLiteral("%1").arg(id));
 	if (id != 0) {
 		return s;
@@ -102,7 +102,7 @@ QString USBDB::vendor(int id) const {
 	return QString();
 }
 
-QString USBDB::device(int vendor, int id) const {
+QString USBDB::device(uint16_t vendor, uint16_t id) const {
 	QString s = _ids.value(QStringLiteral("%1-%2").arg(vendor).arg(id));
 	if ((id != 0) && (vendor != 0))
 		return s;

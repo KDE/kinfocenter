@@ -21,8 +21,8 @@ public:
 
 	USBDB();
 
-	QString vendor(int id) const;
-	QString device(int vendor, int id) const;
+	QString vendor(uint16_t id) const;
+	QString device(uint16_t vendor, uint16_t id) const;
 
 	QString cls(uint8_t cls) const;
 	QString subclass(uint8_t cls, uint8_t sub) const;
