@@ -109,15 +109,15 @@ QString USBDB::device(int vendor, int id) {
 	return QString();
 }
 
-QString USBDB::cls(int cls) {
+QString USBDB::cls(uint8_t cls) {
 	return _classes[QStringLiteral("%1").arg(cls)];
 }
 
-QString USBDB::subclass(int cls, int sub) {
+QString USBDB::subclass(uint8_t cls, uint8_t sub) {
 	return _classes[QStringLiteral("%1-%2").arg(cls).arg(sub)];
 }
 
-QString USBDB::protocol(int cls, int sub, int prot) {
+QString USBDB::protocol(uint8_t cls, uint8_t sub, uint8_t prot) {
 	return _classes[QStringLiteral("%1-%2-%3").arg(cls).arg(sub).arg(prot)];
 }
 

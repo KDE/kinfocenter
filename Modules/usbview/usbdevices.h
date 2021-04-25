@@ -60,7 +60,9 @@ private:
 
 	QString _manufacturer, _product, _serial;
 
-	unsigned int _verMajor, _verMinor, _class, _sub, _prot, _maxPacketSize;
+	unsigned int _verMajor, _verMinor;
+	uint8_t _class, _sub, _prot;
+	unsigned int _maxPacketSize;
 
 	unsigned int _vendorID, _prodID;
 

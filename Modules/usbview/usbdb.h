@@ -14,6 +14,8 @@
 #include <QMap>
 #include <QString>
 
+#include <stdint.h>
+
 class USBDB {
 public:
 
@@ -22,9 +24,9 @@ public:
 	QString vendor(int id);
 	QString device(int vendor, int id);
 
-	QString cls(int cls);
-	QString subclass(int cls, int sub);
-	QString protocol(int cls, int sub, int prot);
+	QString cls(uint8_t cls);
+	QString subclass(uint8_t cls, uint8_t sub);
+	QString protocol(uint8_t cls, uint8_t sub, uint8_t prot);
 
 private:
 
