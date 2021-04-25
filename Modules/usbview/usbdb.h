@@ -21,12 +21,12 @@ public:
 
 	USBDB();
 
-	QString vendor(int id);
-	QString device(int vendor, int id);
+	QString vendor(int id) const;
+	QString device(int vendor, int id) const;
 
-	QString cls(uint8_t cls);
-	QString subclass(uint8_t cls, uint8_t sub);
-	QString protocol(uint8_t cls, uint8_t sub, uint8_t prot);
+	QString cls(uint8_t cls) const;
+	QString subclass(uint8_t cls, uint8_t sub) const;
+	QString protocol(uint8_t cls, uint8_t sub, uint8_t prot) const;
 
 private:
 

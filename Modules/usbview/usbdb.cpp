@@ -94,30 +94,30 @@ USBDB::USBDB() {
 	}
 }
 
-QString USBDB::vendor(int id) {
-	QString s = _ids[QStringLiteral("%1").arg(id)];
+QString USBDB::vendor(int id) const {
+	QString s = _ids.value(QStringLiteral("%1").arg(id));
 	if (id != 0) {
 		return s;
 	}
 	return QString();
 }
 
-QString USBDB::device(int vendor, int id) {
-	QString s = _ids[QStringLiteral("%1-%2").arg(vendor).arg(id)];
+QString USBDB::device(int vendor, int id) const {
+	QString s = _ids.value(QStringLiteral("%1-%2").arg(vendor).arg(id));
 	if ((id != 0) && (vendor != 0))
 		return s;
 	return QString();
 }
 
-QString USBDB::cls(uint8_t cls) {
-	return _classes[QStringLiteral("%1").arg(cls)];
+QString USBDB::cls(uint8_t cls) const {
+	return _classes.value(QStringLiteral("%1").arg(cls));
 }
 
-QString USBDB::subclass(uint8_t cls, uint8_t sub) {
-	return _classes[QStringLiteral("%1-%2").arg(cls).arg(sub)];
+QString USBDB::subclass(uint8_t cls, uint8_t sub) const {
+	return _classes.value(QStringLiteral("%1-%2").arg(cls).arg(sub));
 }
 
-QString USBDB::protocol(uint8_t cls, uint8_t sub, uint8_t prot) {
-	return _classes[QStringLiteral("%1-%2-%3").arg(cls).arg(sub).arg(prot)];
+QString USBDB::protocol(uint8_t cls, uint8_t sub, uint8_t prot) const {
+	return _classes.value(QStringLiteral("%1-%2-%3").arg(cls).arg(sub).arg(prot));
 }
 
