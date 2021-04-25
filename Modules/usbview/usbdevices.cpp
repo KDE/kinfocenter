@@ -96,6 +96,10 @@ static QString prettyLibusbClassName(int class_code) {
 		return i18nc("USB device class", "Diagnostic");
 	case LIBUSB_CLASS_WIRELESS:
 		return i18nc("USB device class", "Wireless");
+#if LIBUSB_API_VERSION >= 0x01000108
+	case LIBUSB_CLASS_MISCELLANEOUS:
+		return i18nc("USB device class", "Miscellaneous Device");
+#endif
 	case LIBUSB_CLASS_APPLICATION:
 		return i18nc("USB device class", "Application Specific Interface");
 	case LIBUSB_CLASS_VENDOR_SPEC:
