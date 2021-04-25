@@ -226,15 +226,18 @@ QString USBDevice::dump() {
 
 	QString c = QStringLiteral("<td>%1</td>").arg(_class);
 	QString cname = prettyLibusbClassName(_class);
-	if (cname.isEmpty())
+	if (cname.isEmpty()) {
 		cname = _db->cls(_class);
+		if (!cname.isEmpty())
+			cname = i18nc("USB device class", cname.toUtf8().constData());
+	}
 	if (!cname.isEmpty())
-        c += QStringLiteral("<td>(") + i18n(cname.toLatin1().constData()) +QStringLiteral(")</td>");
+        c += QStringLiteral("<td>(") + cname +QStringLiteral(")</td>");
 	r += i18n("<tr><td><i>Class</i></td>%1</tr>", c);
 	QString sc = QStringLiteral("<td>%1</td>").arg(_sub);
 	QString scname = _db->subclass(_class, _sub);
 	if (!scname.isEmpty())
-        sc += QStringLiteral("<td>(") + i18n(scname.toLatin1().constData()) +QStringLiteral(")</td>");
+        sc += QStringLiteral("<td>(") + i18nc("USB device subclass", scname.toLatin1().constData()) +QStringLiteral(")</td>");
 	r += i18n("<tr><td><i>Subclass</i></td>%1</tr>", sc);
 	QString pr = QStringLiteral("<td>%1</td>").arg(_prot);
 	QString prname = _db->protocol(_class, _sub, _prot);
