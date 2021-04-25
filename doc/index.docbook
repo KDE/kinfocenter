@@ -291,16 +291,6 @@ over a user defined history and detailed information about the battery.
 </para>
 </sect1>
 
-<!--****************************************-->
-
-<sect1 id="fileindexermonitor">
-<title>File Indexer Monitor Module</title>
-
-<para>This Module shows the state of the file indexer. If the indexer is not running
-you can start it and then suspend or resume the indexing.</para>
-
-
-</sect1>
 
 <!--****************************************-->
 
