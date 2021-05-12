@@ -33,7 +33,7 @@ Module::Module(QWidget *parent, const QVariantList &args) :
 {
     KAboutData *aboutData = new KAboutData(QStringLiteral("kcm-about-distro"),
                                            i18nc("@title", "About System"),
-                                           QString::fromLatin1(global_s_versionStringFull),
+                                           QStringLiteral(PROJECT_VERSION),
                                            QString(),
                                            KAboutLicense::LicenseKey::GPL_V3,
                                            i18nc("@info:credit", "Copyright 2012-2020 Harald Sitter"));
