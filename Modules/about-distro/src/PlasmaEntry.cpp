@@ -1,5 +1,5 @@
 /*
-    SPDX-FileCopyrightText: 2012-2020 Harald Sitter <sitter@kde.org>
+    SPDX-FileCopyrightText: 2012-2021 Harald Sitter <sitter@kde.org>
     SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 */
 
@@ -8,6 +8,8 @@
 #include <QStandardPaths>
 #include <KConfigGroup>
 #include <KDesktopFile>
+
+#include "Version.h"
 
 PlasmaEntry::PlasmaEntry()
     : Entry(ki18n("KDE Plasma Version:"), plasmaVersion())
@@ -21,17 +23,6 @@ PlasmaEntry::PlasmaEntry()
 
 QString PlasmaEntry::plasmaVersion()
 {
-    const QStringList &filePaths = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation,
-                                                             QStringLiteral("xsessions/plasma.desktop"));
-
-    if (filePaths.length() < 1) {
-        return QString();
-    }
-
-    // Despite the fact that there can be multiple desktop files we simply take
-    // the first one as users usually don't have xsessions/ in their $HOME
-    // data location, so the first match should (usually) be the only one and
-    // reflect the plasma session run.
-    KDesktopFile desktopFile(filePaths.first());
-    return desktopFile.desktopGroup().readEntry("X-KDE-PluginInfo-Version", QString());
+    // KInfoCenter is part of Plasma. Simply show our version!
+    return QString::fromLatin1(PROJECT_VERSION);
 }
