@@ -5,7 +5,7 @@ and website url. The file ought to be in some XDG_CONFIG_DIRS dir.
 
 Do note that the LogoPath may also be an icon name that gets resolved through
 the icon theme. Ideally the logo should be an SVG so as to be scalable for
-different screeen resolutions.
+different screen resolutions.
 
 e.g.
 pkexec cp `pwd`/example/kcm-about-distrorc.ex /etc/xdg/kcm-about-distrorc

@@ -71,7 +71,7 @@ Module::Module(QWidget *parent, const QVariantList &args) :
 
     // https://bugs.kde.org/show_bug.cgi?id=366158
     // When a KCM loads fast enough do a blocking load via the constructor.
-    // Otherwise there is a noticable rendering gap where dummy/no data is
+    // Otherwise there is a noticeable rendering gap where dummy/no data is
     // shown. Makes it look bad.
     load();
 }
