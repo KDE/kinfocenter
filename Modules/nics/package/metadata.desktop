@@ -29,6 +29,7 @@ Name[sl]=NIC
 Name[sv]=NIC
 Name[uk]=NIC
 Name[x-test]=xxNICxx
+Name[zh_CN]=NIC
 Type=Service
 Icon=network-card
 Keywords=
