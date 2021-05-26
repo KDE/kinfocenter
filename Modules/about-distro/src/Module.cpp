@@ -32,7 +32,7 @@ Module::Module(QWidget *parent, const QVariantList &args) :
     ui(new Ui::Module)
 {
     KAboutData *aboutData = new KAboutData(QStringLiteral("kcm-about-distro"),
-                                           i18nc("@title", "About System"),
+                                           i18nc("@title", "About this System"),
                                            QStringLiteral(PROJECT_VERSION),
                                            QString(),
                                            KAboutLicense::LicenseKey::GPL_V3,

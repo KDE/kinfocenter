@@ -49,7 +49,7 @@ X-KDE-Keywords[zh_CN]=about,info,information,distribution,distro,system,kernel,q
 X-KDE-Keywords[zh_TW]=about,info,information,distribution,distro,system,kernel,qt,kde,關於,資訊,信息,發行版,發行,系統,核心,內核
 Categories=Qt;KDE;X-KDE-settings-personalization;X-KDE-information;
 
-Name=System Information
+Name=About this System
 Name[ast]=Información del sistema
 Name[az]=Sistem Məlumatları
 Name[ca]=Informació del sistema
