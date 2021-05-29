@@ -50,6 +50,14 @@ X-KDE-Keywords[zh_TW]=about,info,information,distribution,distro,system,kernel,q
 Categories=Qt;KDE;X-KDE-settings-personalization;X-KDE-information;
 
 Name=About this System
+Name[az]=Bu sistem haqqında
+Name[ca]=Quant a aquest sistema
+Name[de]=Über dieses System
+Name[es]=Acerca de este sistema
+Name[nl]=Over dit systeem
+Name[sv]=Om systemet
+Name[uk]=Про цю систему
+Name[x-test]=xxAbout this Systemxx
 Comment=Information About This System
 Comment[ar]=معلومات عن هذا النّظام
 Comment[ast]=La información tocante a esti sistema
