@@ -9,7 +9,7 @@ set(kcm_samba_PART_SRCS
     ksambasharemodel.cpp
 )
 
-qt5_add_dbus_interface(kcm_samba_PART_SRCS org.freedesktop.Avahi.Server.xml org.freedesktop.Avahi.Server)
+qt_add_dbus_interface(kcm_samba_PART_SRCS org.freedesktop.Avahi.Server.xml org.freedesktop.Avahi.Server)
 
 # Intermediate lib for use in testing.
 add_library(kcm_samba_static STATIC ${kcm_samba_PART_SRCS})
@@ -22,7 +22,7 @@ target_link_libraries(kcm_samba_static
 )
 
 set(kcm_samba_SRCS main.cpp)
-qt5_add_dbus_interface(kcm_samba_SRCS org.freedesktop.DBus.Properties.xml org.freedesktop.DBus.Properties)
+qt_add_dbus_interface(kcm_samba_SRCS org.freedesktop.DBus.Properties.xml org.freedesktop.DBus.Properties)
 add_library(kcm_samba MODULE ${kcm_samba_SRCS})
 target_link_libraries(kcm_samba
     KF5::QuickAddons
