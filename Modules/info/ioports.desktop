@@ -9,7 +9,7 @@ X-KDE-KInfoCenter-Category=device_information
 X-KDE-Library=kcm_info
 X-KDE-PluginKeyword=ioports
 X-KDE-ParentApp=kinfocenter
-X-DocPath=kinfocenter/index.html#ioports
+X-DocPath=kinfocenter/ioports.html
 
 Name=IO-Ports
 Name[af]=Io-poorte

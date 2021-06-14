@@ -7,7 +7,7 @@ Exec=kinfocenter kcmview1394
 X-KDE-KInfoCenter-Category=device_information
 X-KDE-Library=kcm_view1394
 X-KDE-ParentApp=kinfocenter
-X-DocPath=kinfocenter/index.html#kcmview1394
+X-DocPath=kinfocenter/kcmview1394.html
 
 Name=IEEE 1394 Devices
 Name[af]=IEEE 1394 toestelle

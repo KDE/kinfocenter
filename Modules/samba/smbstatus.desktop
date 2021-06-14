@@ -7,7 +7,7 @@ X-KDE-ServiceTypes=KCModule
 X-KDE-KInfoCenter-Category=network_information
 X-KDE-Library=kcm_samba
 X-KDE-ParentApp=kinfocenter
-X-DocPath=kinfocenter/index.html#smbstatus
+X-DocPath=kinfocenter/smbstatus.html
 
 Name=Samba Status
 Name[af]=Samba Status

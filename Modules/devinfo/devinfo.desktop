@@ -8,7 +8,7 @@ X-KDE-Weight=0
 X-KDE-KInfoCenter-Category=device_information
 X-KDE-Library=kcm_devinfo
 X-KDE-ParentApp=kinfocenter
-X-DocPath=kinfocenter/index.html#devinfo
+X-DocPath=kinfocenter/devinfo.html
 
 Name=Device Viewer
 Name[ar]=عارض الأجهزة

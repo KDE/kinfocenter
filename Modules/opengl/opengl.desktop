@@ -7,7 +7,7 @@ Icon=video-display
 X-KDE-KInfoCenter-Category=graphical_information
 X-KDE-Library=kcm_opengl
 X-KDE-ParentApp=kinfocenter
-X-DocPath=kinfocenter/index.html#opengl
+X-DocPath=kinfocenter/opengl.html
 
 Name=OpenGL
 Name[af]=OpenGL

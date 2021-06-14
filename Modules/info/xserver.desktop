@@ -8,7 +8,7 @@ X-KDE-KInfoCenter-Category=graphical_information
 X-KDE-Library=kcm_info
 X-KDE-PluginKeyword=xserver
 X-KDE-ParentApp=kinfocenter
-X-DocPath=kinfocenter/index.html#xserver
+X-DocPath=kinfocenter/xserver.html
 
 Name=X-Server
 Name[af]=X-bediener

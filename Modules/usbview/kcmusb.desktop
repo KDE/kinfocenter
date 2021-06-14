@@ -7,7 +7,7 @@ Exec=kinfocenter kcmusb
 X-KDE-KInfoCenter-Category=device_information
 X-KDE-Library=kcm_usb
 X-KDE-ParentApp=kinfocenter
-X-DocPath=kinfocenter/index.html#kcmusb
+X-DocPath=kinfocenter/kcmusb.html
 
 Name=USB Devices
 Name[af]=USB Toestelle

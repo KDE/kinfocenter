@@ -7,7 +7,7 @@ X-KDE-Library=kcm_nic
 X-KDE-ParentApp=kinfocenter
 X-KDE-KInfoCenter-Category=network_information
 X-KDE-PluginKeyword=kcm_nic
-X-DocPath=kinfocenter/index.html#nic
+X-DocPath=kinfocenter/nic.html
 
 Name=Network Interfaces
 Name[af]=Netwerk Koppelvlakke
