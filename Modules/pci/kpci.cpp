@@ -15,6 +15,7 @@
 extern "C" {
 #include <pci/pci.h>
 }
+#include <csetjmp>
 #include <unistd.h>
 #include <sys/types.h> //getuid
 #include <ctype.h> //isxdigit
@@ -698,12 +699,18 @@ static QTreeWidgetItem* addCaps(QTreeWidgetItem *parent, QTreeWidgetItem *after,
 	return after;
 }//addCaps
 
-static void pci_warning(char *msg, ...)
+static jmp_buf pci_error_jmp_buf;
+
+// This callback must not return, but we don't want to call exit.
+// Exceptions across C code aren't safe, so the only option is longjmp.
+static void pci_error(char *msg, ...)
 {
     va_list args;
     va_start(args, msg);
-    qWarning(msg, args);
+    qWarning() << QString::vasprintf(msg, args);
     va_end(args);
+
+    longjmp(pci_error_jmp_buf, 1);
 }
 
 bool GetInfo_PCIUtils(QTreeWidget* tree) {
@@ -721,9 +728,15 @@ bool GetInfo_PCIUtils(QTreeWidget* tree) {
 	if (PCIAccess==nullptr) {
 		return false;
 	}//if
-    // Use warnings for errors, they are decidely not fatal for us!
-    // https://bugs.kde.org/show_bug.cgi?id=382979
-    PCIAccess->error = pci_warning;
+
+	if (setjmp(pci_error_jmp_buf)) {
+		// Got a fatal error. Cleanup might be unsafe, just return.
+		return false;
+	}
+
+	// Register a custom error handler so that missing PCI support doesn't
+	// exit the application (https://bugs.kde.org/show_bug.cgi?id=382979)
+	PCIAccess->error = pci_error;
 
 	pci_init(PCIAccess);
 	pci_scan_bus(PCIAccess);
