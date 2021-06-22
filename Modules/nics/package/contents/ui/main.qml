@@ -15,12 +15,6 @@ SimpleKCM {
     ConfigModule.quickHelp: i18n("Network Interfaces")
     clip: true
 
-    Component.onCompleted: {
-        // The widget thumbnails are a bit more elaborate and need more room, especially when translated
-        view.implicitCellWidth = Kirigami.Units.gridUnit * 20;
-        view.implicitCellHeight = delegateLayout.implicitHeight - Kirigami.Units.gridUnit * 4
-    }
-
     Kirigami.CardsLayout {
         Repeater {
             id: repeater
