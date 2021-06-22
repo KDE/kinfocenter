@@ -24,7 +24,7 @@ SimpleKCM {
     Kirigami.CardsLayout {
         Repeater {
             id: repeater
-            model: NetworkModel {}
+            model: NetworkModel { id: networkModel }
             Kirigami.AbstractCard {
                 Layout.fillHeight: true
                 contentItem: Kirigami.FormLayout {
@@ -75,7 +75,7 @@ SimpleKCM {
     footer: QQC2.Button {
         icon.name: "view-refresh"
         text: i18nc("@action:button", "Refresh")
-        onClicked: model.update();
+        onClicked: networkModel.update();
     }
 }
 
