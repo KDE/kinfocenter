@@ -14,7 +14,7 @@ import org.kde.kinfocenter.nic.private 1.0
 SimpleKCM {
     ConfigModule.quickHelp: i18n("Network Interfaces")
     clip: true
-    
+
     Component.onCompleted: {
         // The widget thumbnails are a bit more elaborate and need more room, especially when translated
         view.implicitCellWidth = Kirigami.Units.gridUnit * 20;
@@ -29,14 +29,8 @@ SimpleKCM {
                 Layout.fillHeight: true
                 contentItem: Kirigami.FormLayout {
                     id: delegateLayout
-                    twinFormLayouts: {
-                        const size = repeater.count
-                        let items = [];
-                        for (let i = 0; i < size; i++) {
-                            items.push(repeater.itemAt(i).contentItem);
-                        }
-                        return items;
-                    }
+                    // NB: do not make the repeated layouts twinFormLayouts!
+                    //    It utterly doesn't scale and causes seconds long lockups while calculating the layout.
                     Layout.fillWidth: true
                     QQC2.Label {
                         Kirigami.FormData.label: i18nc("@label", "Name:")
@@ -77,7 +71,7 @@ SimpleKCM {
         }
     }
 
-    
+
     footer: QQC2.Button {
         icon.name: "view-refresh"
         text: i18nc("@action:button", "Refresh")
