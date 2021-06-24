@@ -11,29 +11,23 @@
 
 #include <KLocalizedString>
 
+CommandOutputContext::CommandOutputContext(const QString &executable, const QStringList &arguments, QObject *parent)
+    : QObject(parent)
+    , m_executableName(executable)
+    , m_executablePath(QStandardPaths::findExecutable(m_executableName))
+    , m_arguments(arguments)
+{
+    metaObject()->invokeMethod(this, &CommandOutputContext::load);
+}
+
 QString CommandOutputContext::executableName() const
 {
     return m_executableName;
 }
 
-void CommandOutputContext::setExecutableName(const QString &executableName)
-{
-    m_executableName = executableName;
-    m_executablePath = QStandardPaths::findExecutable(m_executableName);
-    metaObject()->invokeMethod(this, &CommandOutputContext::load);
-    Q_EMIT executableNameChanged();
-}
-
 QStringList CommandOutputContext::arguments() const
 {
     return m_arguments;
-}
-
-void CommandOutputContext::setArguments(const QStringList &arguments)
-{
-    m_arguments = arguments;
-    metaObject()->invokeMethod(this, &CommandOutputContext::load);
-    Q_EMIT argumentsChanged();
 }
 
 QString CommandOutputContext::filter() const

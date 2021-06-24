@@ -14,8 +14,8 @@ class CommandOutputContext : public QObject, public QQmlParserStatus
 {
     Q_OBJECT
     Q_INTERFACES(QQmlParserStatus)
-    Q_PROPERTY(QString executable READ executableName WRITE setExecutableName NOTIFY executableNameChanged)
-    Q_PROPERTY(QStringList arguments READ arguments WRITE setArguments NOTIFY argumentsChanged)
+    Q_PROPERTY(QString executable READ executableName CONSTANT)
+    Q_PROPERTY(QStringList arguments READ arguments CONSTANT)
     // Output. With filter applied.
     Q_PROPERTY(QString text MEMBER m_text NOTIFY textChanged)
     // Filter string. Case in-sensitive. If lines do not contain the filter string they'll be removed from text.
@@ -25,15 +25,10 @@ class CommandOutputContext : public QObject, public QQmlParserStatus
     // Potential error description. Empty when there is no error to report.
     Q_PROPERTY(QString error MEMBER m_error NOTIFY errorChanged)
 public:
-    using QObject::QObject;
+    explicit CommandOutputContext(const QString &executable, const QStringList &arguments, QObject *parent = nullptr);
 
     QString executableName() const;
-    void setExecutableName(const QString &executableName);
-    Q_SIGNAL void executableNameChanged();
-
     QStringList arguments() const;
-    void setArguments(const QStringList &arguments);
-    Q_SIGNAL void argumentsChanged();
 
     QString filter() const;
     void setFilter(const QString &filter);
@@ -53,9 +48,9 @@ private:
     void setError(const QString &message);
     void setReady();
 
-    QString m_executableName;
-    QString m_executablePath;
-    QStringList m_arguments;
+    const QString m_executableName;
+    const QString m_executablePath;
+    const QStringList m_arguments;
 
     QList<QString> m_originalLines;
 

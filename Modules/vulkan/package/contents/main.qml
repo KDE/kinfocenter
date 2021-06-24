@@ -21,9 +21,8 @@ KCM.SimpleKCM {
 
     KCM.ConfigModule.quickHelp: i18nc("@info", "Vulkan Graphics API Information")
 
-    CommandOutputContext {
+    VulkanInfoOutputContext {
         id: output
-        executable: "vulkaninfo"
         filter: filterField.text
     }
 
