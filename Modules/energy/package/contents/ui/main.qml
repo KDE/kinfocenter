@@ -1,5 +1,6 @@
 /***************************************************************************
  *   Copyright (C) 2015 Kai Uwe Broulik <kde@privat.broulik.de>            *
+ *   Copyright (C) 2021 Harald Sitter <sitter@kde.org>                     *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -20,7 +21,7 @@
 import QtQuick 2.5
 import QtQuick.Controls 2.5 as QQC2
 import QtQuick.Layouts 1.1
-import org.kde.kirigami 2.5 as Kirigami
+import org.kde.kirigami 2.12 as Kirigami
 
 import org.kde.kquickcontrolsaddons 2.0
 import org.kde.kinfocenter.energy.private 1.0
@@ -116,6 +117,14 @@ KCM.SimpleKCM {
 
     readonly property var timespanComboChoices: [i18n("Last hour"),i18n("Last 2 hours"),i18n("Last 12 hours"),i18n("Last 24 hours"),i18n("Last 48 hours"), i18n("Last 7 days")]
     readonly property var timespanComboDurations: [3600, 7200, 43200, 86400, 172800, 604800]
+
+    Kirigami.PlaceholderMessage {
+        anchors.centerIn: parent
+        visible: kcm.batteries.count <= 0 && kcm.wakeUps.count <= 0 && history.count <= 0
+        width: parent.width - (Kirigami.Units.largeSpacing * 4)
+        text: i18nc("@info:status", "No energy information available on this system")
+        icon.name: "utilities-energy-monitor"
+    }
 
     ColumnLayout {
         id: column
