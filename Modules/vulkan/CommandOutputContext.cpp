@@ -42,7 +42,6 @@ void CommandOutputContext::setFilter(const QString &filter)
         m_text = m_originalLines.join('\n');
     } else {
         m_text.clear();
-        m_text.reserve(m_originalLines.size());
         for (const QString &line : m_originalLines) {
             if (line.contains(filter, Qt::CaseInsensitive)) {
                 m_text += line + '\n';
