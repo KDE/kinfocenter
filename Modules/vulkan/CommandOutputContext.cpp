@@ -66,9 +66,16 @@ void CommandOutputContext::componentComplete()
 void CommandOutputContext::reset()
 {
     m_ready = false;
-    m_originalLines.clear();
+    m_error.clear();
     m_text.clear();
     m_filter.clear();
+    Q_EMIT readyChanged();
+    Q_EMIT errorChanged();
+    Q_EMIT textChanged();
+    Q_EMIT filterChanged();
+
+    // Not exposed as properties
+    m_originalLines.clear();
 }
 
 void CommandOutputContext::load()
