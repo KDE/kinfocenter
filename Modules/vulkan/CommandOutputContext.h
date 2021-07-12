@@ -52,7 +52,7 @@ private:
     const QString m_executablePath;
     const QStringList m_arguments;
 
-    QList<QString> m_originalLines;
+    QStringList m_originalLines;
 
     bool m_componentComplete = false;
     bool m_ready = false;
