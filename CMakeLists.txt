@@ -1,5 +1,5 @@
 project(kinfocenter)
-set(PROJECT_VERSION "5.22.3")
+set(PROJECT_VERSION "5.22.4")
 
 cmake_minimum_required(VERSION 3.16)
 set(QT_MIN_VERSION "5.15.0")
