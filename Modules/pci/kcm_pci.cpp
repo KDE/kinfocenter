@@ -17,7 +17,7 @@
 #include <KLocalizedString>
 #include <KSeparator>
 
-K_PLUGIN_FACTORY(KCMPciFactory, registerPlugin<KCMPci>();)
+K_PLUGIN_CLASS_WITH_JSON(KCMPci, "kcm_pci.json")
 
 KCMPci::KCMPci(QWidget *parent, const QVariantList &)
     : KCModule(parent)

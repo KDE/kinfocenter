@@ -41,7 +41,7 @@ int my_reset_handler(raw1394handle_t handle, unsigned int)
     return 0;
 }
 
-K_PLUGIN_FACTORY(View1394Factory, registerPlugin<View1394>();)
+K_PLUGIN_CLASS_WITH_JSON(View1394, "kcmview1394.json")
 
 View1394::View1394(QWidget *parent, const QVariantList &)
     : KCModule(parent)

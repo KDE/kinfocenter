@@ -20,16 +20,13 @@ target_link_libraries(kcm_samba_static
 
 set(kcm_samba_SRCS main.cpp)
 qt_add_dbus_interface(kcm_samba_SRCS org.freedesktop.DBus.Properties.xml org.freedesktop.DBus.Properties)
-add_library(kcm_samba MODULE ${kcm_samba_SRCS})
+kcoreaddons_add_plugin(kcm_samba SOURCES ${kcm_samba_SRCS} INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
+kcoreaddons_desktop_to_json(kcm_samba "smbstatus.desktop")
 target_link_libraries(kcm_samba
     KF5::QuickAddons
     kcm_samba_static
 )
 
-kcoreaddons_desktop_to_json(kcm_samba smbstatus.desktop)
-
-install(TARGETS kcm_samba DESTINATION ${KDE_INSTALL_PLUGINDIR}/kcms)
-install(FILES smbstatus.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR})
 kpackage_install_package(package kcmsamba kcms) # NB: the target name follows the kaboutdata name which in turn follows the i18n domain name
 
 add_subdirectory(autotests)

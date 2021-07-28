@@ -19,7 +19,7 @@
 
 #include "usbdevices.h"
 
-K_PLUGIN_FACTORY(USBFactory, registerPlugin<USBViewer>();)
+K_PLUGIN_CLASS_WITH_JSON(USBViewer, "kcmusb.json")
 
 USBViewer::USBViewer(QWidget *parent, const QVariantList &)
     : KCModule(parent)

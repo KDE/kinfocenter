@@ -32,12 +32,7 @@ if(PCIUTILS_FOUND)
     set(KCM_PCI_LIBS ${KCM_PCI_LIBS} ${PCIUTILS_LIBRARIES} ${ZLIB_LIBRARIES})
 endif()
 
-add_library(kcm_pci MODULE ${KCM_PCI_PART_SRCS})
+kcoreaddons_add_plugin(kcm_pci SOURCES ${KCM_PCI_PART_SRCS} INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
+kcoreaddons_desktop_to_json(kcm_pci "kcm_pci.desktop")
 
 target_link_libraries(kcm_pci ${KCM_PCI_LIBS} )
-
-install(TARGETS kcm_pci  DESTINATION ${KDE_INSTALL_PLUGINDIR})
-
-########### install files ###############
-
-install( FILES kcm_pci.desktop  DESTINATION  ${KDE_INSTALL_KSERVICES5DIR})

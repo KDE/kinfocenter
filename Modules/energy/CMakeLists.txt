@@ -8,7 +8,8 @@ set(kcm_energyinfo_SRCS
   statisticsprovider.cpp
 )
 
-add_library(kcm_energyinfo MODULE ${kcm_energyinfo_SRCS})
+kcoreaddons_add_plugin(kcm_energyinfo SOURCES ${kcm_energyinfo_SRCS} INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
+kcoreaddons_desktop_to_json(kcm_energyinfo "kcm_energyinfo.desktop")
 
 target_link_libraries(kcm_energyinfo
   Qt::DBus
@@ -20,10 +21,5 @@ target_link_libraries(kcm_energyinfo
   KF5::Solid
   KF5::QuickAddons
 )
-
-kcoreaddons_desktop_to_json(kcm_energyinfo "kcm_energyinfo.desktop")
-
-install(FILES kcm_energyinfo.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR})
-install(TARGETS kcm_energyinfo DESTINATION ${KDE_INSTALL_PLUGINDIR}/kcms)
 
 kpackage_install_package(package kcm_energyinfo kcms)

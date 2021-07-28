@@ -9,14 +9,7 @@ set(kcm_view1394_PART_SRCS view1394.cpp )
 
 ki18n_wrap_ui(kcm_view1394_PART_SRCS view1394widget.ui )
 
-add_library(kcm_view1394 MODULE ${kcm_view1394_PART_SRCS})
+kcoreaddons_add_plugin(kcm_view1394 SOURCES ${kcm_view1394_PART_SRCS} INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
+kcoreaddons_desktop_to_json(kcm_view1394 "kcmview1394.desktop")
 
 target_link_libraries(kcm_view1394 KF5::KCMUtils KF5::I18n ${RAW1394_LIBRARIES} )
-
-install(TARGETS kcm_view1394  DESTINATION ${KDE_INSTALL_PLUGINDIR} )
-
-
-########### install files ###############
-
-install( FILES kcmview1394.desktop  DESTINATION  ${KDE_INSTALL_KSERVICES5DIR} )
-

@@ -19,7 +19,7 @@
 #include "devicelisting.h"
 #include "infopanel.h"
 
-K_PLUGIN_FACTORY(devInfoModuleFactory, registerPlugin<DevInfoPlugin>();)
+K_PLUGIN_CLASS_WITH_JSON(DevInfoPlugin, "devinfo.json")
 
 DevInfoPlugin::DevInfoPlugin(QWidget *parent, const QVariantList &)
     : KCModule(parent)
