@@ -18,6 +18,20 @@
 
 #include "os_current.h"
 
+#include <KPluginFactory>
+#include <KLocalizedString>
+
+#define CREATE_FACTORY(type, name, json)                                                                                                                       \
+    class K##type##InfoWidget : public KInfoListWidget                                                                                                         \
+    {                                                                                                                                                          \
+    public:                                                                                                                                                    \
+        K##type##InfoWidget(QWidget *parent, const QVariantList &)                                                                                             \
+            : KInfoListWidget(name, parent, GetInfo_##type)                                                                                                    \
+        {                                                                                                                                                      \
+        }                                                                                                                                                      \
+    };                                                                                                                                                         \
+    K_PLUGIN_CLASS_WITH_JSON(K##type##InfoWidget, json)
+
 class KInfoListWidget : public KCModule
 {
 public:

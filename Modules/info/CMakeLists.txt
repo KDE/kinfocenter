@@ -8,13 +8,22 @@ include_directories(
 	${CMAKE_CURRENT_SOURCE_DIR}/../base
 )
 
+ecm_setup_qtplugin_macro_names(JSON_ARG3 "CREATE_FACTORY"
+    CONFIG_CODE_VARIABLE
+    PACKAGE_SETUP_AUTOMOC_VARIABLES
+)
+
 ########### next target ###############
 
-set(kcm_info_PART_SRCS main.cpp info.cpp ../base/os_current.cpp )
+set(kcm_info_PART_SRCS info.cpp ../base/os_current.cpp )
 
-add_library(kcm_info MODULE ${kcm_info_PART_SRCS})
+if(KF5Wayland_FOUND)
+    set(kcm_info_PART_SRCS ${kcm_info_PART_SRCS} ../base/info_wayland.cpp)
+endif()
 
-target_link_libraries(kcm_info
+add_library(kcm_info_static MODULE STATIC ${kcm_info_PART_SRCS})
+
+target_link_libraries(kcm_info_static
     KF5::CoreAddons
     KF5::KCMUtils
     KF5::I18n
@@ -22,18 +31,20 @@ target_link_libraries(kcm_info
     ${X11_X11_LIB})
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD")
-    target_link_libraries(kcm_info devinfo)
+    target_link_libraries(kcm_info_staticdevinfo)
 endif()
 
-install(TARGETS kcm_info  DESTINATION ${KDE_INSTALL_PLUGINDIR} )
+if(KF5Wayland_FOUND)
+    target_link_libraries(kcm_info_static KF5::WaylandClient)
+    kcoreaddons_add_plugin(kcm_wayland SOURCES kcm_wayland.cpp INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
+    kcoreaddons_desktop_to_json(kcm_wayland "wayland.desktop")
+    target_link_libraries(kcm_wayland kcm_info_static)
+endif()
 
+kcoreaddons_add_plugin(kcm_dma SOURCES kcm_dma.cpp INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
+kcoreaddons_desktop_to_json(kcm_dma "dma.desktop")
+target_link_libraries(kcm_dma kcm_info_static)
 
-########### install files ###############
-
-install(
-    FILES
-	dma.desktop
-	ioports.desktop
-	DESTINATION  ${KDE_INSTALL_KSERVICES5DIR}
-)
-
+kcoreaddons_add_plugin(kcm_ioports SOURCES kcm_ioports.cpp INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
+kcoreaddons_desktop_to_json(kcm_ioports "ioports.desktop")
+target_link_libraries(kcm_ioports kcm_info_static)
