@@ -38,6 +38,7 @@
   <name xml:lang="sv">Informationscentral</name>
   <name xml:lang="tg">Маркази иттилоотӣ</name>
   <name xml:lang="uk">Центр інформації</name>
+  <name xml:lang="vi">Trung tâm thông tin</name>
   <name xml:lang="x-test">xxInfo Centerxx</name>
   <name xml:lang="zh-CN">信息中心</name>
   <name xml:lang="zh-TW">資訊中心</name>
@@ -75,6 +76,7 @@
   <summary xml:lang="sv">Centraliserad och bekväm översikt av systeminformation</summary>
   <summary xml:lang="tg">Намоиши мусоид ва марказонидашуда барои низоми иттилоотӣ</summary>
   <summary xml:lang="uk">Централізований та зручний огляд усіх даних щодо системи</summary>
+  <summary xml:lang="vi">Phần tổng quan tập trung và tiện lợi về thông tin hệ thống</summary>
   <summary xml:lang="x-test">xxCentralized and convenient overview of system informationxx</summary>
   <summary xml:lang="zh-CN">中心化和方便的系统信息展示</summary>
   <description>
