@@ -1,0 +1,23 @@
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
+[Desktop Entry]
+Icon=video-display
+Type=Service
+X-KDE-ParentApp=
+X-KDE-PluginInfo-Author=Harald Sitter
+X-KDE-PluginInfo-Email=sitter@kde.org
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-Name=kcm_vulkan
+X-KDE-PluginInfo-Version=
+X-KDE-PluginInfo-Website=
+X-KDE-ServiceTypes=Plasma/GenericQml
+X-KDE-FormFactors=desktop
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=main.qml
+
+Name=Vulkan
+
+Comment=Vulkan graphics API information
+
+X-KDE-Keywords=Vulkan,VideoCard,Hardware Acceleration,Graphics
+

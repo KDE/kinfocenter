@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
+[Desktop Entry]
+TryExec=vulkaninfo
+Exec=kinfocenter kcm_vulkan
+Type=Service
+X-KDE-ServiceTypes=KCModule
+Icon=video-display
+
+X-KDE-KInfoCenter-Category=graphical_information
+X-KDE-Library=kcm_vulkan
+X-KDE-ParentApp=kinfocenter
+Categories=Qt;KDE;X-KDE-information;
+
+Name=Vulkan
+
+Comment=Vulkan graphics API information
+
+X-KDE-Keywords=Vulkan,VideoCard,Hardware Acceleration,Graphics
+
