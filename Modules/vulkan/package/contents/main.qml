@@ -16,8 +16,8 @@ import org.kde.kinfocenter.vulkan.private 1.0
 KCM.SimpleKCM {
     id: root
 
-    implicitWidth: units.gridUnit * 20
-    implicitHeight: units.gridUnit * 20
+    implicitWidth: Kirigami.Units.gridUnit * 20
+    implicitHeight: Kirigami.Units.gridUnit * 20
 
     KCM.ConfigModule.quickHelp: i18nc("@info", "Vulkan Graphics API Information")
 
