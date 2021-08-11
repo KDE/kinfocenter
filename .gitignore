@@ -1,4 +1,6 @@
-# Ignore the following files
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: none
+
 *~
 *.[oa]
 *.diff
@@ -25,3 +27,4 @@ CMakeLists.txt.user*
 .idea
 /cmake-build*
 .cache
+/.vscode/
