@@ -34,29 +34,11 @@ void ProcessChildren(QString name);
 
 #ifdef HAVE_DEVINFO_H
 extern "C" {
-int print_irq(struct devinfo_rman *rman, void *arg);
 int print_dma(struct devinfo_rman *rman, void *arg);
 int print_ioports(struct devinfo_rman *rman, void *arg);
 int print_resource(struct devinfo_res *res, void *arg);
 }
 #endif
-
-bool GetInfo_IRQ(QTreeWidget *tree)
-{
-#ifdef HAVE_DEVINFO_H
-    /* systat lists the interrupts assigned to devices as well as how many were
-     generated.  Parsing its output however is about as fun as a sandpaper
-     enema.  The best idea would probably be to rip out the guts of systat.
-     Too bad it's not very well commented */
-    /* Oh neat, current now has a neat little utility called devinfo */
-    if (devinfo_init())
-        return false;
-    devinfo_foreach_rman(print_irq, tree);
-    return true;
-#else
-    return false;
-#endif
-}
 
 bool GetInfo_DMA(QTreeWidget *tree)
 {
@@ -140,18 +122,6 @@ bool GetInfo_XServer_and_Video(QTreeWidget *tree)
 }
 
 #ifdef HAVE_DEVINFO_H
-
-int print_irq(struct devinfo_rman *rman, void *arg)
-{
-    QTreeWidget *tree = (QTreeWidget *)arg;
-    if (strcmp(rman->dm_desc, "Interrupt request lines") == 0) {
-        QStringList list;
-        list << rman->dm_desc;
-        new QTreeWidgetItem(tree, list);
-        devinfo_foreach_rman_resource(rman, print_resource, arg);
-    }
-    return 0;
-}
 
 int print_dma(struct devinfo_rman *rman, void *arg)
 {

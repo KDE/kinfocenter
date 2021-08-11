@@ -33,7 +33,6 @@ install(TARGETS kcm_info  DESTINATION ${KDE_INSTALL_PLUGINDIR} )
 install(
     FILES
 	dma.desktop
-	interrupts.desktop
 	ioports.desktop
 	xserver.desktop
 	DESTINATION  ${KDE_INSTALL_KSERVICES5DIR}

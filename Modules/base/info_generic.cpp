@@ -9,11 +9,6 @@
  returning false indicates, that information was not available.
  */
 
-bool GetInfo_IRQ(QTreeWidget *)
-{
-    return false;
-}
-
 bool GetInfo_DMA(QTreeWidget *)
 {
     return false;

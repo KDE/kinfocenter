@@ -1,15 +1,15 @@
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
 [Desktop Entry]
-Exec=kinfocenter interrupts
-Icon=cpu
 Type=Service
-X-KDE-ServiceTypes=KCModule
-Categories=Qt;KDE;X-KDE-information;
-
-X-KDE-KInfoCenter-Category=device_information
-X-KDE-Library=kcm_info
-X-KDE-PluginKeyword=irq
-X-KDE-ParentApp=kinfocenter
-X-DocPath=kinfocenter/interrupts.html
+X-KDE-PluginInfo-Author=Harald Sitter
+X-KDE-PluginInfo-Email=sitter@kde.org
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-Name=kcm_interrupts
+X-KDE-ServiceTypes=Plasma/GenericQml
+X-KDE-FormFactors=desktop
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=main.qml
 
 Name=Interrupts
 Name[af]=Interrupts
@@ -247,6 +247,5 @@ X-KDE-Keywords[tr]=Kesmeler,IRQ,Sistem Bilgileri
 X-KDE-Keywords[uk]=Interrupts,IRQ,System Information,переривання,система,інформація,відомості
 X-KDE-Keywords[vi]=Interrupts,IRQ,System Information,Ngắt,Thông tin hệ thống
 X-KDE-Keywords[x-test]=xxInterruptsxx,xxIRQxx,xxSystem Informationxx
-X-KDE-Keywords[zh_CN]=Interrupts,IRQ,System Information,中断,系统信息
+X-KDE-Keywords[zh_CN]=Interrupts,IRQ,System Information,终端信息
 X-KDE-Keywords[zh_TW]=Interrupts,IRQ,System Information
-

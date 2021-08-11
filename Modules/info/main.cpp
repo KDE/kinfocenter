@@ -22,9 +22,6 @@
         }                                                                                                                                                      \
     };
 
-#ifdef INFO_IRQ_AVAILABLE
-CREATE_FACTORY(IRQ, i18n("Interrupt"))
-#endif
 #ifdef INFO_IOPORTS_AVAILABLE
 CREATE_FACTORY(IO_Ports, i18n("I/O-Port"))
 #endif
@@ -36,9 +33,6 @@ CREATE_FACTORY(XServer_and_Video, i18n("X-Server"))
 #endif
 
 K_PLUGIN_FACTORY(KInfoModulesFactory,
-#ifdef INFO_IRQ_AVAILABLE
-                 registerPlugin<KIRQInfoWidget>(QStringLiteral("irq"));
-#endif
 #ifdef INFO_IOPORTS_AVAILABLE
                  registerPlugin<KIO_PortsInfoWidget>(QStringLiteral("ioports"));
 #endif
