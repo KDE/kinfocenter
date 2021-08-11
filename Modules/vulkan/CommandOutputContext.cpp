@@ -87,7 +87,7 @@ void CommandOutputContext::load()
     reset();
 
     if (m_executablePath.isEmpty()) {
-        setError(xi18nc("@info", "The exectuable <command>%1</command> could not be found in $PATH.", m_executableName));
+        setError(xi18nc("@info", "The executable <command>%1</command> could not be found in $PATH.", m_executableName));
         return;
     }
 

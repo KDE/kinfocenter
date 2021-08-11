@@ -8,7 +8,7 @@
 #include <QObject>
 #include <QQmlParserStatus>
 
-// Somewhat general-purpose command executor. This class runs the exectuable with arguments, collecting all its output
+// Somewhat general-purpose command executor. This class runs the executable with arguments, collecting all its output
 // and potentially filtering it to limit the lines to only ones matching.
 class CommandOutputContext : public QObject, public QQmlParserStatus
 {
