@@ -13,8 +13,29 @@ X-KDE-ParentApp=kinfocenter
 Categories=Qt;KDE;X-KDE-information;
 
 Name=Vulkan
+Name[ca]=Vulkan
+Name[cs]=Vulkan
+Name[es]=Vulkan
+Name[nl]=Vulkan
+Name[sv]=Vulkan
+Name[uk]=Vulkan
+Name[x-test]=xxVulkanxx
 
 Comment=Vulkan graphics API information
+Comment[ca]=Informació de la API gràfica Vulkan
+Comment[cs]=Informace o grafickém API Vulkan
+Comment[es]=Información de la API de gráficos Vulkan
+Comment[nl]=Vulkan grafische API-informatie
+Comment[sv]=Information om Vulkan grafiskt programmeringsgränssnitt
+Comment[uk]=Далі щодо графічного програмного інтерфейсу Vulkan
+Comment[x-test]=xxVulkan graphics API informationxx
 
 X-KDE-Keywords=Vulkan,VideoCard,Hardware Acceleration,Graphics
+X-KDE-Keywords[ca]=Vulkan,Targeta de vídeo,Acceleració per maquinari,Gràfics
+X-KDE-Keywords[cs]=Vulkan,grafická karta,hardwarová akcelerace,grafika
+X-KDE-Keywords[es]=Vulkan,Tarjeta de vídeo,Tarjeta de video,Aceleración por hardware,Gráficos
+X-KDE-Keywords[nl]=Vulkan,Videokaart,Hardware versnelling,grafische zaken
+X-KDE-Keywords[sv]=Vulkan,Videokort,Hårdvaruacceleration,Grafik
+X-KDE-Keywords[uk]=Vulkan,VideoCard,Hardware Acceleration,Graphics,вулкан,відеокартка,апаратне прискорення,графіка
+X-KDE-Keywords[x-test]=xxVulkanxx,xxVideoCardxx,xxHardware Accelerationxx,xxGraphicsxx
 

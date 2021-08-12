@@ -185,7 +185,7 @@ Comment[uz@cyrillic]=Компьютерга уланган USB ускунала�
 Comment[vi]=Các thiết bị USB nối với máy tính này
 Comment[wa]=Éndjins USB raloyîs a cisse copiutrece chal
 Comment[x-test]=xxUSB devices attached to this computerxx
-Comment[zh_CN]=连接到该计算机的 USB 设备
+Comment[zh_CN]=本机已连接的 USB 设备
 Comment[zh_TW]=查看連接到這台電腦的 USB 裝置
 
 X-KDE-Keywords=USB,devices,viewer,control

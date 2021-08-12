@@ -104,7 +104,7 @@ Comment[tr]=Wayland dizgici hakkında bilgiler
 Comment[uk]=Відомості щодо засобу композиції Wayland
 Comment[vi]=Thông tin về Trình kết hợp Wayland
 Comment[x-test]=xxInformation about the Wayland Compositorxx
-Comment[zh_CN]=关于 Wayland 的信息。
+Comment[zh_CN]=关于 Wayland 显示特效混合器的信息。
 Comment[zh_TW]=關於 Wayland 的資訊
 
 X-KDE-Keywords=Wayland,Compositor,Display,System Information
@@ -152,7 +152,7 @@ X-KDE-Keywords[tr]=Wayland,Dizgici,Görüntü,Sistem Bilgileri
 X-KDE-Keywords[uk]=Wayland,Compositor,Display,System Information,композиція,засіб,дисплей,монітор,відомості щодо системи
 X-KDE-Keywords[vi]=Wayland,Compositor,Display,System Information,Trình kết hợp,Hiển thị,Thông tin hệ thống
 X-KDE-Keywords[x-test]=xxWaylandxx,xxCompositorxx,xxDisplayxx,xxSystem Informationxx
-X-KDE-Keywords[zh_CN]=Wayland,Compositor,Display,System Information,显示,系统信息,混成
+X-KDE-Keywords[zh_CN]=Wayland,Compositor,Display,System Information,显示特效混合器,特效,混合器,显示,显示器,系统信息
 X-KDE-Keywords[zh_TW]=Wayland,Compositor,Display,System Information
 
 Categories=Qt;KDE;X-KDE-information;
