@@ -27,6 +27,6 @@ public:
     }
 };
 
-K_PLUGIN_FACTORY_WITH_JSON(KCMVulkanFactory, "kcm_vulkan.json", registerPlugin<KCMVulkan>();)
+K_PLUGIN_CLASS_WITH_JSON(KCMVulkan, "kcm_vulkan.json")
 
 #include "main.moc"
