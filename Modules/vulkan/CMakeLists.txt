@@ -6,10 +6,8 @@ set_package_properties(vulkaninfo PROPERTIES TYPE RUNTIME)
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kcm_vulkan\")
 
-add_library(kcm_vulkan MODULE main.cpp CommandOutputContext.cpp)
-target_link_libraries(kcm_vulkan KF5::CoreAddons KF5::QuickAddons KF5::I18n)
-# Disable legacy stuff to get rid of some deprecation warnings. Notably duplicated QProcess::finished overloads.
-target_compile_definitions(kcm_vulkan PRIVATE -DQT_DISABLE_DEPRECATED_BEFORE=0x050e00)
+add_library(kcm_vulkan MODULE main.cpp)
+target_link_libraries(kcm_vulkan KF5::CoreAddons KF5::QuickAddons KF5::I18n KInfoCenterInternal)
 
 kcoreaddons_desktop_to_json(kcm_vulkan "kcm_vulkan.desktop")
 

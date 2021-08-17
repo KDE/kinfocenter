@@ -3,26 +3,13 @@
     SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
 */
 
-#include <QQmlContext>
-#include <QQmlEngine>
-#include <QQuickItem>
-
+#include <KAboutData>
 #include <KLocalizedString>
 #include <KPluginFactory>
 #include <KPluginLoader>
 #include <KQuickAddons/ConfigModule>
-#include <kaboutdata.h>
 
-#include "CommandOutputContext.h"
-
-class VulkanInfoOutputContext : public CommandOutputContext
-{
-public:
-    explicit VulkanInfoOutputContext(QObject *parent = nullptr)
-        : CommandOutputContext(QStringLiteral("vulkaninfo"), {}, parent)
-    {
-    }
-};
+#include <CommandOutputContext.h>
 
 class KCMVulkan : public KQuickAddons::ConfigModule
 {
@@ -31,7 +18,8 @@ public:
     explicit KCMVulkan(QObject *parent, const QVariantList &args)
         : ConfigModule(parent, args)
     {
-        qmlRegisterType<VulkanInfoOutputContext>("org.kde.kinfocenter.vulkan.private", 1, 0, "VulkanInfoOutputContext");
+        auto outputContext = new CommandOutputContext(QStringLiteral("vulkaninfo"), {}, parent);
+        qmlRegisterSingletonInstance("org.kde.kinfocenter.vulkan.private", 1, 0, "InfoOutputContext", outputContext);
 
         auto *about = new KAboutData(QStringLiteral("kcm_vulkan"), i18nc("@label kcm name", "Vulkan"), QStringLiteral("1.0"), QString(), KAboutLicense::GPL);
         about->addAuthor(i18n("Harald Sitter"), QString(), QStringLiteral("sitter@kde.org"));

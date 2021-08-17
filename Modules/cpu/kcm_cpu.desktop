@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
+[Desktop Entry]
+TryExec=lscpu
+Exec=kinfocenter kcm_cpu
+Type=Service
+X-KDE-ServiceTypes=KCModule
+Icon=preferences-devices-cpu
+
+X-KDE-KInfoCenter-Category=device_information
+X-KDE-Library=kcm_cpu
+X-KDE-ParentApp=kinfocenter
+Categories=Qt;KDE;X-KDE-information;
+
+Name=CPU
+
+Comment=Advanced CPU Information
+
+X-KDE-Keywords=cpu,amd,intel,arm,instructions,cores,architecture,byte order
+

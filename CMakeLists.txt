@@ -95,9 +95,10 @@ configure_file(config-X11.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-X11.h)
 add_subdirectory( Categories )
 add_subdirectory( kcontrol/menus )
 add_subdirectory( Modules )
+add_subdirectory(src)
+
 include(ECMOptionalAddSubdirectory)
 ecm_optional_add_subdirectory( doc )
-
 
 # add clang-format target for all our real source files
 file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)

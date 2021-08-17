@@ -6,14 +6,12 @@
 #pragma once
 
 #include <QObject>
-#include <QQmlParserStatus>
 
 // Somewhat general-purpose command executor. This class runs the executable with arguments, collecting all its output
 // and potentially filtering it to limit the lines to only ones matching.
-class CommandOutputContext : public QObject, public QQmlParserStatus
+class CommandOutputContext : public QObject
 {
     Q_OBJECT
-    Q_INTERFACES(QQmlParserStatus)
     Q_PROPERTY(QString executable READ executableName CONSTANT)
     Q_PROPERTY(QStringList arguments READ arguments CONSTANT)
     // Output. With filter applied.
@@ -34,9 +32,6 @@ public:
     void setFilter(const QString &filter);
     Q_SIGNAL void filterChanged();
 
-    void classBegin() override;
-    void componentComplete() override;
-
 Q_SIGNALS:
     void textChanged();
     void readyChanged();
@@ -54,7 +49,6 @@ private:
 
     QStringList m_originalLines;
 
-    bool m_componentComplete = false;
     bool m_ready = false;
     QString m_error;
 

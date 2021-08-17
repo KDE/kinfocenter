@@ -8,10 +8,11 @@ import QtQuick 2.5
 import org.kde.kcm 1.4 as KCM
 
 import org.kde.kinfocenter.private 1.0 as KInfoCenter
-import org.kde.kinfocenter.vulkan.private 1.0
+import org.kde.kinfocenter.cpu.private 1.0
 
 KInfoCenter.CommandOutputKCM {
-    KCM.ConfigModule.quickHelp: i18nc("@info", "Vulkan Graphics API Information")
+    KCM.ConfigModule.quickHelp: i18nc("@info:whatsthis", "Advanced CPU Information")
 
     output: InfoOutputContext
+    wrapMode: TextEdit.Wrap
 }
