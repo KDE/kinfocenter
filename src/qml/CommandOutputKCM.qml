@@ -68,6 +68,8 @@ KCM.SimpleKCM {
 
             focusSequence: "Ctrl+I"
             Layout.fillWidth: true
+
+            onAccepted: output.filter = text
         }
     }
 
