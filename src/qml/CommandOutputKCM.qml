@@ -11,7 +11,8 @@ import org.kde.kirigami 2.12 as Kirigami
 import org.kde.kquickcontrolsaddons 2.0
 import org.kde.kcm 1.4 as KCM
 
-KCM.SimpleKCM {
+// SimpleKCM is illsuited because we need a more capable scrollview and also want more control over where items are.
+KCM.AbstractKCM {
     id: root
 
     implicitWidth: Kirigami.Units.gridUnit * 20
@@ -19,34 +20,61 @@ KCM.SimpleKCM {
 
     // The CommandOutputContext object.
     required property QtObject output
-    // TODO NoWrap may be better but the scrollablepage actually gets no horizontal scroll bar oO
-    property int wrapMode: TextEdit.Wrap
+    property int wrapMode: TextEdit.NoWrap
 
     Component {
         id: dataComponent
 
-        QQC2.TextArea {
-            readOnly: true
-            text: output.text
-            font.family: "monospace"
-            wrapMode: root.wrapMode
+        ColumnLayout {
+            QQC2.ScrollView {
+                id: view
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+
+                QQC2.TextArea {
+                    id: textArea
+                    readOnly: true
+                    text: output.text
+                    font.family: "monospace"
+                    textFormat: TextEdit.PlainText
+                    wrapMode: root.wrapMode
+                }
+            }
+
+            Kirigami.SearchField {
+                id: filterField
+
+                Layout.fillWidth: true
+                Accessible.name: i18nc("accessible name for filter input", "Filter")
+                Accessible.searchEdit: true
+
+                placeholderText: i18nc("@label placeholder text to filter for something", "Filter…")
+                focusSequence: "Ctrl+I"
+                onAccepted: output.filter = text
+            }
         }
     }
 
     Component {
         id: loadingComponent
-        QQC2.BusyIndicator {
-            running: true
+        Item {
+            QQC2.BusyIndicator {
+                anchors.centerIn: parent
+                running: true
+            }
         }
     }
 
     Component {
         id: noDataComponent
 
-        Kirigami.PlaceholderMessage {
-            width: parent.width - (Kirigami.Units.largeSpacing * 4)
-            text: output.error
-            icon.name: "data-warning"
+        Item {
+            Kirigami.PlaceholderMessage {
+                anchors.centerIn: parent
+                width: parent.width - (Kirigami.Units.largeSpacing * 4)
+                text: output.error
+                icon.name: "data-warning"
+            }
         }
     }
 
@@ -54,23 +82,9 @@ KCM.SimpleKCM {
     // We could switch around visiblity but a Loader seems neater over all.
     Loader {
         id: contentLoader
-    }
-
-    footer: ColumnLayout {
-        Kirigami.SearchField {
-            id: filterField
-            visible: root.state === ""
-
-            placeholderText: i18nc("@label placeholder text to filter for something", "Filter…")
-
-            Accessible.name: i18nc("accessible name for filter input", "Filter")
-            Accessible.searchEdit: true
-
-            focusSequence: "Ctrl+I"
-            Layout.fillWidth: true
-
-            onAccepted: output.filter = text
-        }
+        // always fill with the loaded content to ensure it covers the entire area, but not more. Inside the
+        // root item we can then lay out as necessary for the given state item.
+        anchors.fill: parent
     }
 
     states: [
