@@ -13,8 +13,38 @@ X-KDE-ParentApp=kinfocenter
 Categories=Qt;KDE;X-KDE-information;
 
 Name=CPU
+Name[az]=CPU
+Name[ca]=CPU
+Name[cs]=CPU
+Name[es]=CPU
+Name[nl]=CPU
+Name[pt_BR]=CPU
+Name[sv]=Processor
+Name[uk]=Процесор
+Name[vi]=CPU
+Name[x-test]=xxCPUxx
 
 Comment=Advanced CPU Information
+Comment[az]=Əlavə CPU məlumatı
+Comment[ca]=Informació avançada de la CPU
+Comment[cs]=Pokročilé informace o CPU
+Comment[es]=Información avanzada de la CPU
+Comment[nl]=Geavanceerde CPU-informatie
+Comment[pt_BR]=Informações avançadas da CPU
+Comment[sv]=Avancerad processorinformation
+Comment[uk]=Додаткові відомості щодо процесора
+Comment[vi]=Thông tin nâng cao về CPU
+Comment[x-test]=xxAdvanced CPU Informationxx
 
 X-KDE-Keywords=cpu,amd,intel,arm,instructions,cores,architecture,byte order
+X-KDE-Keywords[az]=cpu,amd,intel,arm,instructions,cores,architecture,byte order,təlimatlar,nüvə,növbə,arxitektura,bayt
+X-KDE-Keywords[ca]=cpu,amd,intel,arm,instruccions,nuclis,arquitectura,ordre de bytes
+X-KDE-Keywords[cs]=cpu,amd,intel,arm,instrukce,jádra,architektura,pořadí bajtů
+X-KDE-Keywords[es]=cpu,amd,intel,arm,instrucciones,cores,núcleos,arquitectura,byte order,orden de bytes
+X-KDE-Keywords[nl]=cpu,amd,intel,arm,instructies,kernen,architectuur,byte volgorde
+X-KDE-Keywords[pt_BR]=cpu,amd,intel,arm,instruções,cores,arquitetura,byte order,ordem dos bits
+X-KDE-Keywords[sv]=processor,amd,intel,arm,instruktioner,kärnor,arkitektur,byteordning
+X-KDE-Keywords[uk]=cpu,amd,intel,arm,instructions,cores,architecture,byte order,процесор,амд,інтел,арм,інструкції,ядра,архітектура,порядок байтів
+X-KDE-Keywords[vi]=cpu,amd,intel,arm,instructions,cores,architecture,byte order,lệnh,lõi,kiến trúc,thứ tự byte
+X-KDE-Keywords[x-test]=xxcpuxx,xxamdxx,xxintelxx,xxarmxx,xxinstructionsxx,xxcoresxx,xxarchitecturexx,xxbyte orderxx
 
