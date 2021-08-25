@@ -1,9 +1,6 @@
 # KI18N Translation Domain for this library
 add_definitions(-DTRANSLATION_DOMAIN=\"kcmsamba\")
 
-file(GLOB QML_SRCS package/contents/*.qml)
-add_custom_target(QmlFiles ALL echo SOURCES ${QML_SRCS})
-
 set(kcm_samba_PART_SRCS
     smbmountmodel.cpp
     ksambasharemodel.cpp
