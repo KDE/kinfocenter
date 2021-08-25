@@ -68,7 +68,7 @@ SolDevice::SolDevice(QTreeWidgetItem *parent, const Solid::Device &device)
     setDefaultDeviceToolTip();
 }
 
-//Sets
+// Sets
 
 void SolDevice::setDefaultListing(const Solid::DeviceInterface::Type &type)
 {
@@ -81,8 +81,7 @@ void SolDevice::setDefaultDeviceText()
 
     if (deviceSet) {
         ddtString = tiedDevice.product();
-        if (tiedDevice.isDeviceInterface(Solid::DeviceInterface::StorageVolume)
-            || tiedDevice.isDeviceInterface(Solid::DeviceInterface::Battery)) {
+        if (tiedDevice.isDeviceInterface(Solid::DeviceInterface::StorageVolume) || tiedDevice.isDeviceInterface(Solid::DeviceInterface::Battery)) {
             QString label = SolDevice::udi().section(QStringLiteral("/"), -1, -1);
             if (!label.isEmpty()) {
                 ddtString = label;
@@ -162,24 +161,24 @@ bool SolDevice::isDeviceSet()
     return deviceSet;
 }
 
-bool SolDevice::operator< ( const QTreeWidgetItem & other ) const
+bool SolDevice::operator<(const QTreeWidgetItem &other) const
 {
-    const SolDevice * otherDevice = dynamic_cast<const SolDevice*>(&other);
+    const SolDevice *otherDevice = dynamic_cast<const SolDevice *>(&other);
     if (otherDevice) {
         if (deviceType() != otherDevice->deviceType()) {
             return deviceType() < otherDevice->deviceType();
         }
         switch (deviceType()) {
         case Solid::DeviceInterface::Processor: {
-                const Solid::Processor *left = tiedDevice.as<const Solid::Processor>();
-                const Solid::Processor *right = otherDevice->tiedDevice.as<const Solid::Processor>();
-                // Processors are sorted in ascending order, so this is reversed
-                return left->number() > right->number();
-            }
+            const Solid::Processor *left = tiedDevice.as<const Solid::Processor>();
+            const Solid::Processor *right = otherDevice->tiedDevice.as<const Solid::Processor>();
+            // Processors are sorted in ascending order, so this is reversed
+            return left->number() > right->number();
+        }
         case Solid::DeviceInterface::StorageVolume: {
-                // Storage volumes are sorted in ascending order (i.e. sda, sda1, sda2...)
-                return text(0) > other.text(0);
-            }
+            // Storage volumes are sorted in ascending order (i.e. sda, sda1, sda2...)
+            return text(0) > other.text(0);
+        }
         default:
             break;
         }

@@ -22,8 +22,8 @@
 #ifndef SOLDEVICETYPES
 #define SOLDEVICETYPES
 
-#include "soldevice.h"
 #include "infopanel.h"
+#include "soldevice.h"
 
 class QVListLayout;
 
@@ -48,8 +48,7 @@ public:
     };
 
     SolStorageDevice(const Solid::DeviceInterface::Type &);
-    SolStorageDevice(QTreeWidgetItem *, const Solid::Device &,
-                     const storageChildren & = CREATECHILDREN);
+    SolStorageDevice(QTreeWidgetItem *, const Solid::Device &, const storageChildren & = CREATECHILDREN);
     QVListLayout *infoPanelLayout() override;
 
 private:

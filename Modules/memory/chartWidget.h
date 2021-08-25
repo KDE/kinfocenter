@@ -15,62 +15,59 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 Lesser General Public License for more details.
 
-You should have received a copy of the GNU Lesser General Public 
+You should have received a copy of the GNU Lesser General Public
 License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #ifndef CHART_WIDGET_H
 #define CHART_WIDGET_H
 
-#include <QWidget>
-#include <QString>
 #include <QColor>
 #include <QList>
+#include <QString>
+#include <QWidget>
 
 class QLabel;
 class QWidget;
 
 #include "base.h"
 
-class Chart : public QWidget {
+class Chart : public QWidget
+{
     Q_OBJECT
 public:
-        explicit Chart(QWidget* parent = nullptr);
-	
-	void setMemoryInfos(t_memsize* memoryInfos);
-        void setFreeMemoryLabel(QLabel* freeMemoryLabel);
-	
-	static QString formattedUnit(t_memsize value);
-	
+    explicit Chart(QWidget *parent = nullptr);
+
+    void setMemoryInfos(t_memsize *memoryInfos);
+    void setFreeMemoryLabel(QLabel *freeMemoryLabel);
+
+    static QString formattedUnit(t_memsize value);
+
 protected:
-	
-	bool drawChart(t_memsize total, const QList<t_memsize>& used, const QList<QColor>& colors, const QList<QString>& texts);
-	
-        t_memsize* memoryInfos = nullptr;
-	
-        QLabel* mFreeMemoryLabel = nullptr;
-	
+    bool drawChart(t_memsize total, const QList<t_memsize> &used, const QList<QColor> &colors, const QList<QString> &texts);
+
+    t_memsize *memoryInfos = nullptr;
+
+    QLabel *mFreeMemoryLabel = nullptr;
 };
 
-class ChartWidget : public QWidget {
+class ChartWidget : public QWidget
+{
 public:
+    /**
+     * Initialize the list view item and task.
+     */
+    ChartWidget(const QString &title, const QString &hint, Chart *chartImplementation, QWidget *parent = nullptr);
 
-	/**
-	 * Initialize the list view item and task.
-	 */
-	ChartWidget(const QString& title, const QString& hint, Chart* chartImplementation, QWidget* parent = nullptr);
-	
-	void setMemoryInfos(t_memsize* memoryInfos);
-	void refresh();
-	
+    void setMemoryInfos(t_memsize *memoryInfos);
+    void refresh();
+
 private:
-	
-        QLabel* titleLabel = nullptr;
-	
-        Chart* chart = nullptr;
-	
-        QLabel* mFreeMemoryLabel = nullptr;
-	
+    QLabel *titleLabel = nullptr;
+
+    Chart *chart = nullptr;
+
+    QLabel *mFreeMemoryLabel = nullptr;
 };
 
 #endif // CHART_WIDGET_H

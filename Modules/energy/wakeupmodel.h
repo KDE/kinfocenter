@@ -26,7 +26,8 @@
 #include <QPair>
 #include <QTime>
 
-class WakeUpData {
+class WakeUpData
+{
 public:
     uint pid = 0;
     QString name;
@@ -60,7 +61,10 @@ public:
         DetailsRole,
     };
 
-    qreal total() const { return m_total; }
+    qreal total() const
+    {
+        return m_total;
+    }
 
     QVariant data(const QModelIndex &index, int role) const override;
     int rowCount(const QModelIndex &parent = QModelIndex()) const override;
@@ -79,7 +83,6 @@ private:
     qreal m_total = 0.0;
     QHash<QString, QPair<QString, QString>> m_applicationInfo;
     QTime m_lastReload;
-
 };
 
 #endif // KCM_ENERGYINFO_WAKEUPMODEL_H

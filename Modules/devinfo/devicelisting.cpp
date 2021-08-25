@@ -21,16 +21,16 @@
 
 #include "devicelisting.h"
 
-//Solid
+// Solid
 #include <solid/devicenotifier.h>
 
 #include <QContextMenuEvent>
 #include <QMenu>
 
-//Local
+// Local
+#include "devinfo.h"
 #include "infopanel.h"
 #include "soldevicetypes.h"
-#include "devinfo.h"
 #include "solidhelper.h"
 //#include "nicsignals.h"
 
@@ -39,23 +39,20 @@ DeviceListing::DeviceListing(QWidget *parent, InfoPanel *info, DevInfoPlugin *st
     , iPanel(info)
     , status(stat)
 {
-//     // Check nic changes
-//    nicSig = new NicSignals();
-//    connect(nicSig,SIGNAL(nicActivatedOrDisconnected()),this,SLOT(networkingChangedSlot()));
-//
+    //     // Check nic changes
+    //    nicSig = new NicSignals();
+    //    connect(nicSig,SIGNAL(nicActivatedOrDisconnected()),this,SLOT(networkingChangedSlot()));
+    //
     // Check if selection changed
     connect(this, &DeviceListing::currentItemChanged, this, &DeviceListing::currentItemChangedSlot);
 
     // Check if item is added
-    connect(Solid::DeviceNotifier::instance(), &Solid::DeviceNotifier::deviceAdded, this,
-            &DeviceListing::deviceAddedSlot);
+    connect(Solid::DeviceNotifier::instance(), &Solid::DeviceNotifier::deviceAdded, this, &DeviceListing::deviceAddedSlot);
 
     // Check if item is removed
-    connect(Solid::DeviceNotifier::instance(), &Solid::DeviceNotifier::deviceRemoved, this,
-            &DeviceListing::deviceRemovedSlot);
+    connect(Solid::DeviceNotifier::instance(), &Solid::DeviceNotifier::deviceRemoved, this, &DeviceListing::deviceRemovedSlot);
 
-    setWhatsThis(i18nc("Device Listing Whats This",
-                       "Shows all the devices that are currently listed."));
+    setWhatsThis(i18nc("Device Listing Whats This", "Shows all the devices that are currently listed."));
 
     createMenuActions();
     setHeaderLabels(QStringList(i18n("Devices")));
@@ -65,7 +62,7 @@ DeviceListing::DeviceListing(QWidget *parent, InfoPanel *info, DevInfoPlugin *st
 
 DeviceListing::~DeviceListing()
 {
-    //delete nicSig;
+    // delete nicSig;
     clear();
 }
 
@@ -125,7 +122,7 @@ void DeviceListing::populateListing(const show showStatus)
 
     clear();
 
-    for (unsigned int i = 0; i < (sizeof(needHardware)/sizeof(Solid::DeviceInterface::Type)); i++) {
+    for (unsigned int i = 0; i < (sizeof(needHardware) / sizeof(Solid::DeviceInterface::Type)); i++) {
         QTreeWidgetItem *tmpDevice = createListItems(needHardware[i]);
         deviceMap[needHardware[i]] = static_cast<SolDevice *>(tmpDevice);
 

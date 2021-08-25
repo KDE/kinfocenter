@@ -21,8 +21,8 @@
 
 #include "qvlistlayout.h"
 
-#include <QStringList>
 #include <QLabel>
+#include <QStringList>
 
 QVListLayout::QVListLayout()
     : QVBoxLayout()

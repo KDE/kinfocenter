@@ -19,7 +19,7 @@ QString KernelEntry::localizedValue(Language language) const
         return QString();
     }
     const int bits = QT_POINTER_SIZE == 8 ? 64 : 32;
-    return localize(ki18nc("@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)",
-                           "%1 (%2-bit)").subs(utsName.release).subs(QString::number(bits)),
-                    language);
+    return localize(
+        ki18nc("@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)", "%1 (%2-bit)").subs(utsName.release).subs(QString::number(bits)),
+        language);
 }

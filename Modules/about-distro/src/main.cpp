@@ -7,7 +7,6 @@
 
 #include "Module.h"
 
-K_PLUGIN_FACTORY(KcmAboutDistroFactory,
-                 registerPlugin<Module>(QStringLiteral("kcm-about-distro"));)
+K_PLUGIN_FACTORY(KcmAboutDistroFactory, registerPlugin<Module>(QStringLiteral("kcm-about-distro"));)
 
 #include "main.moc"

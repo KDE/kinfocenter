@@ -25,14 +25,15 @@
 // QT
 #include <QGroupBox>
 
-//KDE
+// KDE
 #include <KLocalizedString>
 
 class QVListLayout;
 class QLabel;
 class DevInfoPlugin;
 class QVBoxLayout;
-namespace Solid {
+namespace Solid
+{
 class Device;
 }
 
@@ -46,9 +47,7 @@ public:
 
     void setTopInfo(const QIcon &, Solid::Device *);
     void setBottomInfo(QVListLayout *lay);
-    static QString friendlyString(const QString &,
-                                  const QString & = i18nc("name of something is not known",
-                                                          "Unknown"));
+    static QString friendlyString(const QString &, const QString & = i18nc("name of something is not known", "Unknown"));
     static QString convertTf(bool);
 
 private:
@@ -67,4 +66,4 @@ private:
     DevInfoPlugin *status;
 };
 
-#endif //INFOPANEL
+#endif // INFOPANEL

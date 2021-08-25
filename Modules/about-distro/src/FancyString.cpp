@@ -7,7 +7,6 @@
 
 namespace FancyString
 {
-
 QString fromUgly(const QString &string)
 {
     QString ugly(string);

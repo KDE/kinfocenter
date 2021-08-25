@@ -22,14 +22,13 @@
 #ifndef SOLDEVICE
 #define SOLDEVICE
 
-//QT
-#include <QTreeWidgetItem>
+// QT
 #include <QDebug>
+#include <QTreeWidgetItem>
 
-//Solid
+// Solid
 #include <solid/device.h>
-//KDE
-
+// KDE
 
 class QVListLayout;
 
@@ -45,7 +44,8 @@ public:
     Solid::Device *device();
     Solid::DeviceInterface::Type deviceType() const;
 
-    template<class IFace> const IFace *interface()
+    template<class IFace>
+    const IFace *interface()
     {
         if (deviceSet) {
             IFace *dev = tiedDevice.as<const IFace>();
@@ -58,7 +58,8 @@ public:
         }
     }
 
-    template<class IFace> const IFace *interface(const Solid::Device &device)
+    template<class IFace>
+    const IFace *interface(const Solid::Device &device)
     {
         IFace *dev = device.as<const IFace>();
         if (!dev) {
@@ -67,9 +68,8 @@ public:
         return dev;
     }
 
-    template<class IFace> void createDeviceChildren(
-        QTreeWidgetItem *treeParent, const QString &parentUid,
-        const Solid::DeviceInterface::Type &type)
+    template<class IFace>
+    void createDeviceChildren(QTreeWidgetItem *treeParent, const QString &parentUid, const Solid::DeviceInterface::Type &type)
     {
         const QList<Solid::Device> list = Solid::Device::listFromType(type, parentUid);
 
@@ -95,9 +95,9 @@ public:
     QString udi() const;
     bool isDeviceSet();
 
-    bool operator< (const QTreeWidgetItem & other) const override;
-protected:
+    bool operator<(const QTreeWidgetItem &other) const override;
 
+protected:
     void setDeviceText(const QString &);
 
     virtual void setDefaultDeviceToolTip();
@@ -111,4 +111,4 @@ protected:
     Solid::Device tiedDevice;
 };
 
-#endif //SOLDEVICE
+#endif // SOLDEVICE

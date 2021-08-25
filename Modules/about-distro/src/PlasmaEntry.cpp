@@ -5,9 +5,9 @@
 
 #include "PlasmaEntry.h"
 
-#include <QStandardPaths>
 #include <KConfigGroup>
 #include <KDesktopFile>
+#include <QStandardPaths>
 
 #include "Version.h"
 

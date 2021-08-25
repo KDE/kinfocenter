@@ -20,9 +20,9 @@
 
 #include "nicsignals.h"
 
-//KDE
-#include <solid/control/networkmanager.h>
+// KDE
 #include <solid/control/networkinterface.h>
+#include <solid/control/networkmanager.h>
 
 NicSignals::NicSignals()
 {
@@ -31,12 +31,10 @@ NicSignals::NicSignals()
 
 void NicSignals::connectToNicSignals()
 {
-    const QList<Solid::Control::NetworkInterface *> nicList
-        = Solid::Control::NetworkManager::networkInterfaces();
+    const QList<Solid::Control::NetworkInterface *> nicList = Solid::Control::NetworkManager::networkInterfaces();
 
     foreach (const Solid::Control::NetworkInterface *nic, nicList) {
-        connect(nic, SIGNAL(connectionStateChanged(int,int,int)), this,
-                SLOT(nicChangedSignal(int,int,int)));
+        connect(nic, SIGNAL(connectionStateChanged(int, int, int)), this, SLOT(nicChangedSignal(int, int, int)));
     }
 }
 

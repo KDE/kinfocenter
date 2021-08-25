@@ -22,7 +22,7 @@
 #ifndef NICSIGNALS
 #define NICSIGNALS
 
-//Qt
+// Qt
 #include <QObject>
 
 class NicSignals : public QObject
@@ -39,7 +39,7 @@ signals:
     void nicActivatedOrDisconnected();
 
 public slots:
-    void nicChangedSignal(int , int , int );
+    void nicChangedSignal(int, int, int);
 };
 
-#endif //NICSIGNALS
+#endif // NICSIGNALS

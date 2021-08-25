@@ -8,8 +8,9 @@
 
 #include <KCModule>
 
-namespace Ui {
-    class Module;
+namespace Ui
+{
+class Module;
 }
 
 class Entry;

@@ -16,10 +16,8 @@
 SmbMountModel::SmbMountModel(QObject *parent)
     : QAbstractListModel(parent)
 {
-    connect(Solid::DeviceNotifier::instance(), &Solid::DeviceNotifier::deviceAdded,
-            this, &SmbMountModel::addDevice);
-    connect(Solid::DeviceNotifier::instance(), &Solid::DeviceNotifier::deviceRemoved,
-            this, &SmbMountModel::removeDevice);
+    connect(Solid::DeviceNotifier::instance(), &Solid::DeviceNotifier::deviceAdded, this, &SmbMountModel::addDevice);
+    connect(Solid::DeviceNotifier::instance(), &Solid::DeviceNotifier::deviceRemoved, this, &SmbMountModel::removeDevice);
     metaObject()->invokeMethod(this, &SmbMountModel::reloadData);
 }
 

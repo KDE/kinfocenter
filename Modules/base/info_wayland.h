@@ -26,11 +26,13 @@ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 class QTreeWidget;
 class QThread;
 
-namespace KWayland {
-    namespace Client {
-        class ConnectionThread;
-        class Registry;
-    }
+namespace KWayland
+{
+namespace Client
+{
+class ConnectionThread;
+class Registry;
+}
 }
 
 class WaylandModule : public QObject

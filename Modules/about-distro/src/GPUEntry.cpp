@@ -28,8 +28,7 @@ GPUEntry::GPUEntry()
     }
 
     if (context.makeCurrent(&surface)) {
-        m_value = QString::fromLatin1(reinterpret_cast<const char*>(
-                                          context.functions()->glGetString(GL_RENDERER)));
+        m_value = QString::fromLatin1(reinterpret_cast<const char *>(context.functions()->glGetString(GL_RENDERER)));
         m_value = FancyString::fromUgly(m_value);
         // It seems the renderer value may have excess information in parentheses ->
         // strip that. Elide would probably be nicer, a bit meh with QWidgets though.

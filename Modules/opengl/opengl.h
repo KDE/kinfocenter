@@ -25,16 +25,15 @@
 
 #include "ui_opengl.h"
 
-class KCMOpenGL: public KCModule, public Ui::OpenGL
+class KCMOpenGL : public KCModule, public Ui::OpenGL
 {
     Q_OBJECT
 
-    public:
-        explicit KCMOpenGL(QWidget *parent = 0, const QVariantList &list = QVariantList() );
+public:
+    explicit KCMOpenGL(QWidget *parent = 0, const QVariantList &list = QVariantList());
 
-    protected Q_SLOTS:
-        virtual void treeWidgetChanged();
-
+protected Q_SLOTS:
+    virtual void treeWidgetChanged();
 };
 
 #endif

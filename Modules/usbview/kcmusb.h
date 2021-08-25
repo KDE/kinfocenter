@@ -19,26 +19,25 @@ class QTreeWidget;
 class QTreeWidgetItem;
 class QTextEdit;
 
-class USBViewer : public KCModule {
-Q_OBJECT
+class USBViewer : public KCModule
+{
+    Q_OBJECT
 
 public:
+    explicit USBViewer(QWidget *parent = nullptr, const QVariantList &list = QVariantList());
+    ~USBViewer() override;
 
-        explicit USBViewer(QWidget *parent = nullptr, const QVariantList &list=QVariantList());
-        ~USBViewer() override;
-
-	void load() override;
+    void load() override;
 
 protected Q_SLOTS:
 
-	void selectionChanged(QTreeWidgetItem *item);
-	void refresh();
+    void selectionChanged(QTreeWidgetItem *item);
+    void refresh();
 
 private:
-
-	QMap<int, QTreeWidgetItem*> _items;
-	QTreeWidget *_devices;
-	QTextEdit *_details;
+    QMap<int, QTreeWidgetItem *> _items;
+    QTreeWidget *_devices;
+    QTextEdit *_details;
 };
 
 #endif

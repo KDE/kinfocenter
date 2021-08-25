@@ -41,8 +41,7 @@ private slots:
 private:
     inline QList<Solid::Device>::const_iterator deviceForUdi(const QString &udi) const
     {
-        return std::find_if(m_devices.constBegin(), m_devices.constEnd(),
-                            [&udi](const Solid::Device &device) {
+        return std::find_if(m_devices.constBegin(), m_devices.constEnd(), [&udi](const Solid::Device &device) {
             return device.udi() == udi;
         });
     }

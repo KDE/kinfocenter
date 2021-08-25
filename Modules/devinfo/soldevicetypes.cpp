@@ -21,19 +21,19 @@
 
 #include "soldevicetypes.h"
 
+#include <solid/battery.h>
+#include <solid/camera.h>
 #include <solid/deviceinterface.h>
+#include <solid/portablemediaplayer.h>
 #include <solid/processor.h>
+#include <solid/storageaccess.h>
 #include <solid/storagedrive.h>
 #include <solid/storagevolume.h>
-#include <solid/storageaccess.h>
-#include <solid/portablemediaplayer.h>
-#include <solid/camera.h>
-#include <solid/battery.h>
 
 #include <QProgressBar>
 #include <QStorageInfo>
 
-//kde
+// kde
 #include <KCapacityBar>
 #include <KFormat>
 
@@ -117,12 +117,8 @@ QVListLayout *SolProcessorDevice::infoPanelLayout()
         extensions << i18nc("no instruction set extensions", "None");
     }
 
-    labels << i18n("Processor Number: ")
-           << InfoPanel::friendlyString(QString::number(prodev->number()))
-           << i18n("Max Speed: ")
-           << InfoPanel::friendlyString(QString::number(prodev->maxSpeed()))
-           << i18n("Supported Instruction Sets: ")
-           << extensions.join(QLatin1String("\n"));
+    labels << i18n("Processor Number: ") << InfoPanel::friendlyString(QString::number(prodev->number())) << i18n("Max Speed: ")
+           << InfoPanel::friendlyString(QString::number(prodev->maxSpeed())) << i18n("Supported Instruction Sets: ") << extensions.join(QLatin1String("\n"));
 
     deviceInfoLayout->applyQListToLayout(labels);
     return deviceInfoLayout;
@@ -130,16 +126,14 @@ QVListLayout *SolProcessorDevice::infoPanelLayout()
 
 // ---- Storage
 
-SolStorageDevice::SolStorageDevice(QTreeWidgetItem *parent, const Solid::Device &device,
-                                   const storageChildren &c)
+SolStorageDevice::SolStorageDevice(QTreeWidgetItem *parent, const Solid::Device &device, const storageChildren &c)
     : SolDevice(parent, device)
 {
     deviceTypeHolder = Solid::DeviceInterface::StorageDrive;
     setDefaultDeviceText();
 
     if (c == CREATECHILDREN) {
-        createDeviceChildren<SolVolumeDevice>(this,
-                                              device.udi(), Solid::DeviceInterface::StorageVolume);
+        createDeviceChildren<SolVolumeDevice>(this, device.udi(), Solid::DeviceInterface::StorageVolume);
     }
 }
 
@@ -230,11 +224,7 @@ QVListLayout *SolStorageDevice::infoPanelLayout()
         bus = i18nc("unknown storage bus", "Unknown");
     }
 
-    labels << i18n("Bus: ")
-           << bus
-           << i18n("Hotpluggable?")
-           << InfoPanel::convertTf(stodev->isHotpluggable())
-           << i18n("Removable?")
+    labels << i18n("Bus: ") << bus << i18n("Hotpluggable?") << InfoPanel::convertTf(stodev->isHotpluggable()) << i18n("Removable?")
            << InfoPanel::convertTf(stodev->isRemovable());
 
     deviceInfoLayout->applyQListToLayout(labels);
@@ -296,21 +286,14 @@ QVListLayout *SolVolumeDevice::infoPanelLayout()
         usage = i18nc("unknown volume usage", "Unknown");
     }
 
-    labels << i18n("File System Type: ")
-           << InfoPanel::friendlyString(voldev->fsType())
-           << i18n("Label: ")
-           << InfoPanel::friendlyString(voldev->label(), i18n("Not Set"))
-           << i18n("Volume Usage: ")
-           << usage
-           << i18n("UUID: ")
+    labels << i18n("File System Type: ") << InfoPanel::friendlyString(voldev->fsType()) << i18n("Label: ")
+           << InfoPanel::friendlyString(voldev->label(), i18n("Not Set")) << i18n("Volume Usage: ") << usage << i18n("UUID: ")
            << InfoPanel::friendlyString(voldev->uuid());
 
     if (accdev) {
         const QString mountPoint = accdev->filePath();
 
-        labels << QStringLiteral("--")
-               << i18n("Mounted At: ")
-               << InfoPanel::friendlyString(mountPoint, i18n("Not Mounted"));
+        labels << QStringLiteral("--") << i18n("Mounted At: ") << InfoPanel::friendlyString(mountPoint, i18n("Not Mounted"));
 
         if (!mountPoint.isEmpty()) {
             QStorageInfo storageInfo(mountPoint);
@@ -319,18 +302,16 @@ QVListLayout *SolVolumeDevice::infoPanelLayout()
 
             usageBar = new KCapacityBar();
             qint64 size = 0;
-            if (storageInfo.isValid() && storageInfo.isReady()
-                && (size = storageInfo.bytesTotal()) > 0) {
+            if (storageInfo.isValid() && storageInfo.isReady() && (size = storageInfo.bytesTotal()) > 0) {
                 const auto freeSpace = storageInfo.bytesFree();
                 const auto usedSpace = size - freeSpace;
                 const auto usedPercent = static_cast<int>((usedSpace * 100) / size);
                 usageBar->setValue(usedPercent);
-                usageBar->setText(
-                    i18nc("Available space out of total partition size (percent used)",
-                          "%1 free of %2 (%3% used)",
-                          KFormat().formatByteSize(freeSpace),
-                          KFormat().formatByteSize(size),
-                          usedPercent));
+                usageBar->setText(i18nc("Available space out of total partition size (percent used)",
+                                        "%1 free of %2 (%3% used)",
+                                        KFormat().formatByteSize(freeSpace),
+                                        KFormat().formatByteSize(size),
+                                        usedPercent));
             } else {
                 usageBar->setValue(0);
                 usageBar->setText(i18n("No data available"));
@@ -379,10 +360,7 @@ QVListLayout *SolMediaPlayerDevice::infoPanelLayout()
     }
     deviceInfoLayout = new QVListLayout();
 
-    labels << i18n("Supported Drivers: ")
-           << mpdev->supportedDrivers()
-           << i18n("Supported Protocols: ")
-           << mpdev->supportedProtocols();
+    labels << i18n("Supported Drivers: ") << mpdev->supportedDrivers() << i18n("Supported Protocols: ") << mpdev->supportedProtocols();
 
     deviceInfoLayout->applyQListToLayout(labels);
     return deviceInfoLayout;
@@ -421,10 +399,7 @@ QVListLayout *SolCameraDevice::infoPanelLayout()
     }
     deviceInfoLayout = new QVListLayout();
 
-    labels << i18n("Supported Drivers: ")
-           << camdev->supportedDrivers()
-           << i18n("Supported Protocols: ")
-           << camdev->supportedProtocols();
+    labels << i18n("Supported Drivers: ") << camdev->supportedDrivers() << i18n("Supported Protocols: ") << camdev->supportedProtocols();
 
     deviceInfoLayout->applyQListToLayout(labels);
     return deviceInfoLayout;
@@ -514,11 +489,7 @@ QVListLayout *SolBatteryDevice::infoPanelLayout()
         state = i18n("No Charge");
     }
 
-    labels << i18n("Battery Type: ")
-           << type
-           << i18n("Charge Status: ")
-           << state
-           << i18n("Charge Percent: ");
+    labels << i18n("Battery Type: ") << type << i18n("Charge Status: ") << state << i18n("Charge Percent: ");
 
     deviceInfoLayout->applyQListToLayout(labels);
 

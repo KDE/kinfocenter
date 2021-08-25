@@ -40,11 +40,10 @@ QString Entry::localize(const KLocalizedString &string, Language language) const
         return string.toString();
     case Language::English:
         // https://bugs.kde.org/show_bug.cgi?id=416247
-        return string.toString(QStringList { QStringLiteral("en_US") });
+        return string.toString(QStringList{QStringLiteral("en_US")});
     }
     Q_UNREACHABLE();
-    return QStringLiteral("Unknown Language %1 (bug in KInfocenter!):").arg(
-                QString::number(static_cast<int>(language)));
+    return QStringLiteral("Unknown Language %1 (bug in KInfocenter!):").arg(QString::number(static_cast<int>(language)));
 }
 
 QString Entry::localizedLabel(Language language) const

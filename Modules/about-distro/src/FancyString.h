@@ -10,8 +10,8 @@
 
 namespace FancyString
 {
-    // Turns ugly '(R)' '(TM)' ascii into unicode.
-    QString fromUgly(const QString &string);
+// Turns ugly '(R)' '(TM)' ascii into unicode.
+QString fromUgly(const QString &string);
 }
 
 #endif // FANCYSTRING_H

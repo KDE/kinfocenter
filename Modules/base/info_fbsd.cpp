@@ -15,8 +15,8 @@
  */
 
 #include "config-infocenter.h" // HAVE_DEVINFO_H
-#include <sys/types.h>
 #include <sys/sysctl.h>
+#include <sys/types.h>
 
 #ifdef HAVE_DEVINFO_H
 extern "C" {
@@ -34,186 +34,189 @@ void ProcessChildren(QString name);
 
 #ifdef HAVE_DEVINFO_H
 extern "C" {
-	int print_irq(struct devinfo_rman *rman, void *arg);
-	int print_dma(struct devinfo_rman *rman, void *arg);
-	int print_ioports(struct devinfo_rman *rman, void *arg);
-	int print_resource(struct devinfo_res *res, void *arg);
+int print_irq(struct devinfo_rman *rman, void *arg);
+int print_dma(struct devinfo_rman *rman, void *arg);
+int print_ioports(struct devinfo_rman *rman, void *arg);
+int print_resource(struct devinfo_res *res, void *arg);
 }
 #endif
 
-bool GetInfo_IRQ(QTreeWidget* tree) {
+bool GetInfo_IRQ(QTreeWidget *tree)
+{
 #ifdef HAVE_DEVINFO_H
-	/* systat lists the interrupts assigned to devices as well as how many were
-	 generated.  Parsing its output however is about as fun as a sandpaper
-	 enema.  The best idea would probably be to rip out the guts of systat.
-	 Too bad it's not very well commented */
-	/* Oh neat, current now has a neat little utility called devinfo */
-	if (devinfo_init())
-	return false;
-	devinfo_foreach_rman(print_irq, tree);
-	return true;
+    /* systat lists the interrupts assigned to devices as well as how many were
+     generated.  Parsing its output however is about as fun as a sandpaper
+     enema.  The best idea would probably be to rip out the guts of systat.
+     Too bad it's not very well commented */
+    /* Oh neat, current now has a neat little utility called devinfo */
+    if (devinfo_init())
+        return false;
+    devinfo_foreach_rman(print_irq, tree);
+    return true;
 #else
-	return false;
+    return false;
 #endif
 }
 
-bool GetInfo_DMA(QTreeWidget* tree) {
+bool GetInfo_DMA(QTreeWidget *tree)
+{
 #ifdef HAVE_DEVINFO_H
-	/* Oh neat, current now has a neat little utility called devinfo */
-	if (devinfo_init())
-	return false;
-	devinfo_foreach_rman(print_dma, tree);
-	return true;
+    /* Oh neat, current now has a neat little utility called devinfo */
+    if (devinfo_init())
+        return false;
+    devinfo_foreach_rman(print_dma, tree);
+    return true;
 #else
-	return false;
+    return false;
 #endif
 }
 
-bool GetInfo_IO_Ports(QTreeWidget* tree) {
+bool GetInfo_IO_Ports(QTreeWidget *tree)
+{
 #ifdef HAVE_DEVINFO_H
-	/* Oh neat, current now has a neat little utility called devinfo */
-	if (devinfo_init())
-	return false;
-	devinfo_foreach_rman(print_ioports, tree);
-	return true;
+    /* Oh neat, current now has a neat little utility called devinfo */
+    if (devinfo_init())
+        return false;
+    devinfo_foreach_rman(print_ioports, tree);
+    return true;
 #else
-	return false;
+    return false;
 #endif
 }
 
-bool GetInfo_PCI(QTreeWidget* tree) {
-	FILE *pipe;
-	QString s, cmd;
-	QTreeWidgetItem *olditem= NULL;
+bool GetInfo_PCI(QTreeWidget *tree)
+{
+    FILE *pipe;
+    QString s, cmd;
+    QTreeWidgetItem *olditem = NULL;
 
-	const QStringList headers(i18nc("@title:column Column name for PCI information", "Information"));
-	tree->setHeaderLabels(headers);
+    const QStringList headers(i18nc("@title:column Column name for PCI information", "Information"));
+    tree->setHeaderLabels(headers);
 
-	if (!QFileInfo(QLatin1String("/usr/sbin/pciconf")).exists()) {
-		QStringList list;
-		list << i18n("Could not find any programs with which to query your system's PCI information");
-		new QTreeWidgetItem(tree, list);
-		return true;
-	} else {
-		cmd = "/usr/sbin/pciconf -l -v 2>&1";
-	}
+    if (!QFileInfo(QLatin1String("/usr/sbin/pciconf")).exists()) {
+        QStringList list;
+        list << i18n("Could not find any programs with which to query your system's PCI information");
+        new QTreeWidgetItem(tree, list);
+        return true;
+    } else {
+        cmd = "/usr/sbin/pciconf -l -v 2>&1";
+    }
 
-	// TODO: GetInfo_ReadfromPipe should be improved so that we could pass the program name and its
-	//       arguments to it and remove most of the code below.
-	if ((pipe = popen(cmd.toLatin1(), "r")) == NULL) {
-		QStringList list;
-		list << i18n("PCI subsystem could not be queried: %1 could not be executed", cmd);
-		olditem = new QTreeWidgetItem(olditem, list);
-	} else {
-		/* This prints out a list of all the pci devies, perhaps eventually we could
-		 parse it as opposed to schlepping it into a listbox */
-		QTextStream outputStream(pipe, QIODevice::ReadOnly);
+    // TODO: GetInfo_ReadfromPipe should be improved so that we could pass the program name and its
+    //       arguments to it and remove most of the code below.
+    if ((pipe = popen(cmd.toLatin1(), "r")) == NULL) {
+        QStringList list;
+        list << i18n("PCI subsystem could not be queried: %1 could not be executed", cmd);
+        olditem = new QTreeWidgetItem(olditem, list);
+    } else {
+        /* This prints out a list of all the pci devies, perhaps eventually we could
+         parse it as opposed to schlepping it into a listbox */
+        QTextStream outputStream(pipe, QIODevice::ReadOnly);
 
-		while (!outputStream.atEnd()) {
-			s = outputStream.readLine();
-			if (s.isEmpty() )
-				break;
-			const QStringList list(s);
-			new QTreeWidgetItem(tree, list);
-		}
+        while (!outputStream.atEnd()) {
+            s = outputStream.readLine();
+            if (s.isEmpty())
+                break;
+            const QStringList list(s);
+            new QTreeWidgetItem(tree, list);
+        }
 
-		pclose(pipe);
-	}
+        pclose(pipe);
+    }
 
-	if (!tree->topLevelItemCount()) {
-		QString str = i18n("The PCI subsystem could not be queried, this may need root privileges.");
-		olditem = new QTreeWidgetItem(tree, olditem);
-		olditem->setText(0, str);
-		return true;
-	}
+    if (!tree->topLevelItemCount()) {
+        QString str = i18n("The PCI subsystem could not be queried, this may need root privileges.");
+        olditem = new QTreeWidgetItem(tree, olditem);
+        olditem->setText(0, str);
+        return true;
+    }
 
-	return true;
+    return true;
 }
 
-bool GetInfo_XServer_and_Video(QTreeWidget* tree) {
-	return GetInfo_XServer_Generic(tree);
+bool GetInfo_XServer_and_Video(QTreeWidget *tree)
+{
+    return GetInfo_XServer_Generic(tree);
 }
 
 #ifdef HAVE_DEVINFO_H
 
-int print_irq(struct devinfo_rman *rman, void *arg) {
-	QTreeWidget* tree = (QTreeWidget *)arg;
-	if (strcmp(rman->dm_desc, "Interrupt request lines")==0) {
-
-		QStringList list;
-		list << rman->dm_desc;
-		new QTreeWidgetItem(tree, list);
-		devinfo_foreach_rman_resource(rman, print_resource, arg);
-	}
-	return 0;
+int print_irq(struct devinfo_rman *rman, void *arg)
+{
+    QTreeWidget *tree = (QTreeWidget *)arg;
+    if (strcmp(rman->dm_desc, "Interrupt request lines") == 0) {
+        QStringList list;
+        list << rman->dm_desc;
+        new QTreeWidgetItem(tree, list);
+        devinfo_foreach_rman_resource(rman, print_resource, arg);
+    }
+    return 0;
 }
 
 int print_dma(struct devinfo_rman *rman, void *arg)
 {
-	QTreeWidget* tree = (QTreeWidget *)arg;
-	if (strcmp(rman->dm_desc, "DMA request lines")==0) {
-		QStringList list;
-		list << rman->dm_desc;
-		new QTreeWidgetItem(tree, list);
-		devinfo_foreach_rman_resource(rman, print_resource, arg);
-	}
-	return(0);
+    QTreeWidget *tree = (QTreeWidget *)arg;
+    if (strcmp(rman->dm_desc, "DMA request lines") == 0) {
+        QStringList list;
+        list << rman->dm_desc;
+        new QTreeWidgetItem(tree, list);
+        devinfo_foreach_rman_resource(rman, print_resource, arg);
+    }
+    return (0);
 }
 
 int print_ioports(struct devinfo_rman *rman, void *arg)
 {
-	QTreeWidget* tree = (QTreeWidget*) arg;
+    QTreeWidget *tree = (QTreeWidget *)arg;
 
-	if (strcmp(rman->dm_desc, "I/O ports")==0) {
-		QStringList list;
-		list << rman->dm_desc;
-		new QTreeWidgetItem(tree, list);
+    if (strcmp(rman->dm_desc, "I/O ports") == 0) {
+        QStringList list;
+        list << rman->dm_desc;
+        new QTreeWidgetItem(tree, list);
 
-		devinfo_foreach_rman_resource(rman, print_resource, arg);
-	}
-	else if (strcmp(rman->dm_desc, "I/O memory addresses")==0) {
-		QStringList list;
-		list << rman->dm_desc;
-		new QTreeWidgetItem(tree, list);
+        devinfo_foreach_rman_resource(rman, print_resource, arg);
+    } else if (strcmp(rman->dm_desc, "I/O memory addresses") == 0) {
+        QStringList list;
+        list << rman->dm_desc;
+        new QTreeWidgetItem(tree, list);
 
-		devinfo_foreach_rman_resource(rman, print_resource, arg);
-	}
-	return 0;
+        devinfo_foreach_rman_resource(rman, print_resource, arg);
+    }
+    return 0;
 }
 
 int print_resource(struct devinfo_res *res, void *arg)
 {
-	struct devinfo_dev *dev;
-	struct devinfo_rman *rman;
-	int hexmode;
+    struct devinfo_dev *dev;
+    struct devinfo_rman *rman;
+    int hexmode;
 
-	QTreeWidget* tree = (QTreeWidget*) arg;
+    QTreeWidget *tree = (QTreeWidget *)arg;
 
-	QString s, tmp;
+    QString s, tmp;
 
-	rman = devinfo_handle_to_rman(res->dr_rman);
-	hexmode = (rman->dm_size > 100) || (rman->dm_size == 0);
-	tmp.sprintf(hexmode ? "0x%lx" : "%lu", res->dr_start);
-	s += tmp;
-	if (res->dr_size > 1) {
-		tmp.sprintf(hexmode ? "-0x%lx" : "-%lu",
-				res->dr_start + res->dr_size - 1);
-		s += tmp;
-	}
+    rman = devinfo_handle_to_rman(res->dr_rman);
+    hexmode = (rman->dm_size > 100) || (rman->dm_size == 0);
+    tmp.sprintf(hexmode ? "0x%lx" : "%lu", res->dr_start);
+    s += tmp;
+    if (res->dr_size > 1) {
+        tmp.sprintf(hexmode ? "-0x%lx" : "-%lu", res->dr_start + res->dr_size - 1);
+        s += tmp;
+    }
 
-	dev = devinfo_handle_to_device(res->dr_device);
-	if ((dev != NULL) && (dev->dd_name[0] != 0)) {
-		tmp.sprintf(" (%s)", dev->dd_name);
-	} else {
-		tmp.sprintf(" ----");
-	}
-	s += tmp;
+    dev = devinfo_handle_to_device(res->dr_device);
+    if ((dev != NULL) && (dev->dd_name[0] != 0)) {
+        tmp.sprintf(" (%s)", dev->dd_name);
+    } else {
+        tmp.sprintf(" ----");
+    }
+    s += tmp;
 
-	QStringList list;
-	list << s;
-	new QTreeWidgetItem(tree, list);
+    QStringList list;
+    list << s;
+    new QTreeWidgetItem(tree, list);
 
-	return 0;
+    return 0;
 }
 
 #endif

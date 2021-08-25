@@ -22,8 +22,8 @@
 #define STATISTICSPROVIDER_H
 
 #include <QObject>
-#include <QQmlParserStatus>
 #include <QPointF>
+#include <QQmlParserStatus>
 
 struct HistoryReply {
 public:
@@ -94,7 +94,7 @@ public Q_SLOTS:
 private:
     QString m_device;
     HistoryType m_type;
-    uint m_duration; //in seconds
+    uint m_duration; // in seconds
 
     QList<HistoryReply> m_values;
     bool m_isComplete = false;

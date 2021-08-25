@@ -22,10 +22,8 @@
 
 #include <KQuickAddons/ConfigModule>
 
-
 class BatteryModel;
 class WakeUpModel;
-
 
 class KCMEnergyInfo : public KQuickAddons::ConfigModule
 {
@@ -35,24 +33,26 @@ class KCMEnergyInfo : public KQuickAddons::ConfigModule
 
     Q_PROPERTY(WakeUpModel *wakeUps READ wakeUps CONSTANT)
 
-
 public:
     explicit KCMEnergyInfo(QObject *parent, const QVariantList &args);
     virtual ~KCMEnergyInfo() = default;
 
-    BatteryModel *batteries() const { return m_batteries; }
+    BatteryModel *batteries() const
+    {
+        return m_batteries;
+    }
 
-    WakeUpModel *wakeUps() const { return m_wakeUps; }
-
+    WakeUpModel *wakeUps() const
+    {
+        return m_wakeUps;
+    }
 
 private:
-
     BatteryModel *m_batteries = nullptr;
 
     WakeUpModel *m_wakeUps = nullptr;
 
     int m_wakeUpsCount = 0;
-
 };
 
 Q_DECLARE_METATYPE(QList<QPointF>)

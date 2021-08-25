@@ -21,36 +21,33 @@
 
 #include "devinfo.h"
 
+#include <KAboutData>
+#include <KLocalizedString>
 #include <QGridLayout>
 #include <QLabel>
 #include <QSplitter>
-#include <KLocalizedString>
-#include <KAboutData>
 
-//Plugin
+// Plugin
 #include <KPluginFactory>
 
 #include "devicelisting.h"
 #include "infopanel.h"
 
-K_PLUGIN_FACTORY(devInfoModuleFactory, registerPlugin<DevInfoPlugin>();
-                 )
+K_PLUGIN_FACTORY(devInfoModuleFactory, registerPlugin<DevInfoPlugin>();)
 
 DevInfoPlugin::DevInfoPlugin(QWidget *parent, const QVariantList &)
     : KCModule(parent)
 {
-    const KAboutData *about
-        = new KAboutData(i18n("kcmdevinfo"), i18n("Device Viewer"),
-                         QStringLiteral("0.70"), QString(), KAboutLicense::GPL,
-                         i18n("(c) 2010 David Hubner"));
+    const KAboutData *about =
+        new KAboutData(i18n("kcmdevinfo"), i18n("Device Viewer"), QStringLiteral("0.70"), QString(), KAboutLicense::GPL, i18n("(c) 2010 David Hubner"));
 
     setAboutData(about);
 
-    //Layout
+    // Layout
     layout = new QGridLayout(this);
     layout->setContentsMargins(0, 0, 0, 0);
 
-    //top
+    // top
     QSplitter *split = new QSplitter(Qt::Horizontal, this);
     split->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
@@ -61,7 +58,7 @@ DevInfoPlugin::DevInfoPlugin(QWidget *parent, const QVariantList &)
 
     split->setStretchFactor(1, 1);
 
-    //bottom
+    // bottom
     QWidget *bottom = new QWidget(this);
     bottom->setContentsMargins(0, 0, 0, 0);
     bottom->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Minimum);
@@ -80,10 +77,9 @@ DevInfoPlugin::DevInfoPlugin(QWidget *parent, const QVariantList &)
     udiStatus = new QLabel(this);
     udiStatus->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
     udiStatus->setTextInteractionFlags(Qt::TextSelectableByMouse);
-    udiStatus->setWhatsThis(i18nc("Udi Whats This",
-                                  "Shows the current device's UDI (Unique Device Identifier)"));
+    udiStatus->setWhatsThis(i18nc("Udi Whats This", "Shows the current device's UDI (Unique Device Identifier)"));
 
-    //Adding
+    // Adding
     split->addWidget(devList);
     split->addWidget(info);
     layout->addWidget(split, 0, 0);
@@ -92,7 +88,7 @@ DevInfoPlugin::DevInfoPlugin(QWidget *parent, const QVariantList &)
     bottomLayout->addWidget(udiStatus);
     layout->addWidget(bottom, 1, 0, 1, 0);
 
-    //Misc
+    // Misc
     setButtons(Help);
     updateStatus(i18nc("no device UDI", "None"));
 }

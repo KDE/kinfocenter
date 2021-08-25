@@ -21,11 +21,11 @@
 
 #include "infopanel.h"
 
-//Solid
+// Solid
 #include <solid/device.h>
 
-#include <QLabel>
 #include <QIcon>
+#include <QLabel>
 
 #include "devinfo.h"
 #include "qvlistlayout.h"
@@ -40,8 +40,7 @@ InfoPanel::InfoPanel(QWidget *parent, DevInfoPlugin *stat)
     setDefaultText();
     adjustSize();
 
-    setWhatsThis(i18nc("Info Panel Whats This",
-                       "Shows information about the currently selected device."));
+    setWhatsThis(i18nc("Info Panel Whats This", "Shows information about the currently selected device."));
 }
 
 InfoPanel::~InfoPanel()
@@ -131,11 +130,12 @@ void InfoPanel::setTopInfo(const QIcon &deviceIcon, Solid::Device *device)
 
     tLayout->addWidget(setDevicesIcon(deviceIcon), 0, Qt::AlignHCenter);
 
-    const QStringList labels {
-        i18n("Description: "), device->description(),
-        i18n("Product: "), device->product(),
-        i18n("Vendor: "), friendlyString(device->vendor())
-    };
+    const QStringList labels{i18n("Description: "),
+                             device->description(),
+                             i18n("Product: "),
+                             device->product(),
+                             i18n("Vendor: "),
+                             friendlyString(device->vendor())};
 
     status->updateStatus(device->udi());
     tLayout->applyQListToLayout(labels);

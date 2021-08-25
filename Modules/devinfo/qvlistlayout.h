@@ -31,4 +31,4 @@ public:
     void applyQListToLayout(const QStringList &);
 };
 
-#endif //QVLISTLAYOUT
+#endif // QVLISTLAYOUT

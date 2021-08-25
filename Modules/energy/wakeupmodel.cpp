@@ -19,14 +19,15 @@
 
 #include "wakeupmodel.h"
 
-#include <QDebug>
 #include <QDBusConnection>
-#include <QDBusPendingReply>
 #include <QDBusMetaType>
+#include <QDBusPendingReply>
+#include <QDebug>
 
 #include <KService>
 
-class WakeUpReply {
+class WakeUpReply
+{
 public:
     bool fromUserSpace = false;
     quint32 id = 0;
@@ -55,16 +56,18 @@ const QDBusArgument &operator>>(const QDBusArgument &argument, WakeUpReply &data
 
 static const int s_maximumEntries = 10;
 
-WakeUpModel::WakeUpModel(QObject *parent) : QAbstractListModel(parent)
+WakeUpModel::WakeUpModel(QObject *parent)
+    : QAbstractListModel(parent)
 {
     qDBusRegisterMetaType<WakeUpReply>();
     qDBusRegisterMetaType<QList<WakeUpReply>>();
 
     if (!QDBusConnection::systemBus().connect(QStringLiteral("org.freedesktop.UPower"),
-                                               QStringLiteral("/org/freedesktop/UPower/Wakeups"),
-                                               QStringLiteral("org.freedesktop.UPower.Wakeups"),
-                                               QStringLiteral("DataChanged"), this,
-                                               SLOT(reload()))) {
+                                              QStringLiteral("/org/freedesktop/UPower/Wakeups"),
+                                              QStringLiteral("org.freedesktop.UPower.Wakeups"),
+                                              QStringLiteral("DataChanged"),
+                                              this,
+                                              SLOT(reload()))) {
         qDebug() << "Error connecting to wakeup data changes via dbus";
     }
 
@@ -83,12 +86,11 @@ void WakeUpModel::reload()
 
     m_lastReload = QTime::currentTime();
 
-    QDBusPendingReply<QList<WakeUpReply>> reply = QDBusConnection::systemBus().asyncCall(
-        QDBusMessage::createMethodCall(QStringLiteral("org.freedesktop.UPower"),
-                                       QStringLiteral("/org/freedesktop/UPower/Wakeups"),
-                                       QStringLiteral("org.freedesktop.UPower.Wakeups"),
-                                       QStringLiteral("GetData"))
-    );
+    QDBusPendingReply<QList<WakeUpReply>> reply =
+        QDBusConnection::systemBus().asyncCall(QDBusMessage::createMethodCall(QStringLiteral("org.freedesktop.UPower"),
+                                                                              QStringLiteral("/org/freedesktop/UPower/Wakeups"),
+                                                                              QStringLiteral("org.freedesktop.UPower.Wakeups"),
+                                                                              QStringLiteral("GetData")));
 
     QDBusPendingCallWatcher *watcher = new QDBusPendingCallWatcher(reply, this);
     QObject::connect(watcher, &QDBusPendingCallWatcher::finished, this, [this](QDBusPendingCallWatcher *watcher) {
@@ -177,7 +179,7 @@ QVariant WakeUpModel::data(const QModelIndex &index, int role) const
         return QVariant();
     }
 
-    switch(role) {
+    switch (role) {
     case PidRole:
         return m_data.at(index.row()).pid;
     case NameRole:
@@ -207,14 +209,12 @@ int WakeUpModel::rowCount(const QModelIndex &parent) const
 
 QHash<int, QByteArray> WakeUpModel::roleNames() const
 {
-    return {
-        {PidRole, "pid"},
-        {NameRole, "name"},
-        {PrettyNameRole, "prettyName"},
-        {IconNameRole, "iconName"},
-        {WakeUpsRole, "wakeUps"},
-        {PercentRole, "percent"},
-        {UserSpaceRole, "userSpace"},
-        {DetailsRole, "details"}
-    };
+    return {{PidRole, "pid"},
+            {NameRole, "name"},
+            {PrettyNameRole, "prettyName"},
+            {IconNameRole, "iconName"},
+            {WakeUpsRole, "wakeUps"},
+            {PercentRole, "percent"},
+            {UserSpaceRole, "userSpace"},
+            {DetailsRole, "details"}};
 }

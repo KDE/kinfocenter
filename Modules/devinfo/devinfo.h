@@ -22,7 +22,7 @@
 #ifndef DEVINFO
 #define DEVINFO
 
-//kde
+// kde
 #include <KCModule>
 
 class QLabel;
@@ -43,4 +43,4 @@ private:
     QLabel *udiStatus;
 };
 
-#endif //DEVINFO
+#endif // DEVINFO

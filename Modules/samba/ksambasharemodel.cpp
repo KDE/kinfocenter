@@ -5,20 +5,19 @@
 
 #include "ksambasharemodel.h"
 
+#include <QApplication> // for kpropertiesdialog parenting
 #include <QDBusPendingCallWatcher>
 #include <QMetaEnum>
-#include <QApplication> // for kpropertiesdialog parenting
 
-#include <KSambaShare>
 #include <KIOWidgets/KPropertiesDialog>
+#include <KSambaShare>
 
 #include "org.freedesktop.Avahi.Server.h"
 
 KSambaShareModel::KSambaShareModel(QObject *parent)
     : QAbstractListModel(parent)
 {
-    connect(KSambaShare::instance(), &KSambaShare::changed,
-            this, &KSambaShareModel::reloadData);
+    connect(KSambaShare::instance(), &KSambaShare::changed, this, &KSambaShareModel::reloadData);
     metaObject()->invokeMethod(this, &KSambaShareModel::reloadData);
 }
 
@@ -86,10 +85,7 @@ void KSambaShareModel::reloadData()
 
     // Reload FQDN
     m_fqdn.clear();
-    auto avahi = new OrgFreedesktopAvahiServerInterface(QStringLiteral("org.freedesktop.Avahi"),
-                                                        QStringLiteral("/"),
-                                                        QDBusConnection::systemBus(),
-                                                        this);
+    auto avahi = new OrgFreedesktopAvahiServerInterface(QStringLiteral("org.freedesktop.Avahi"), QStringLiteral("/"), QDBusConnection::systemBus(), this);
     auto watcher = new QDBusPendingCallWatcher(avahi->GetHostNameFqdn(), this);
     connect(watcher, &QDBusPendingCallWatcher::finished, this, [this, avahi, watcher] {
         watcher->deleteLater();
@@ -104,7 +100,7 @@ void KSambaShareModel::reloadData()
             return;
         }
         m_fqdn = reply.argumentAt(0).toString();
-        Q_EMIT dataChanged(createIndex(0, 0), createIndex(m_list.count(), 0), { static_cast<int>(Role::ShareUrl) });
+        Q_EMIT dataChanged(createIndex(0, 0), createIndex(m_list.count(), 0), {static_cast<int>(Role::ShareUrl)});
     });
 }
 

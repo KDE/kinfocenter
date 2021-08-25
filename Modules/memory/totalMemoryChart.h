@@ -15,7 +15,7 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 Lesser General Public License for more details.
 
-You should have received a copy of the GNU Lesser General Public 
+You should have received a copy of the GNU Lesser General Public
 License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 */
 
@@ -29,24 +29,22 @@ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 class QWidget;
 class QPaintEvent;
 
-class TotalMemoryChart : public Chart {
+class TotalMemoryChart : public Chart
+{
 public:
-
-	/**
-	 * Initialize the list view item and task.
-	 */
-        explicit TotalMemoryChart(QWidget* parent = nullptr);
-	
+    /**
+     * Initialize the list view item and task.
+     */
+    explicit TotalMemoryChart(QWidget *parent = nullptr);
 
 protected:
-	void paintEvent(QPaintEvent* event) override;
-	
+    void paintEvent(QPaintEvent *event) override;
+
 private:
-	bool colorsInitialized;
+    bool colorsInitialized;
 
-	QList<QColor> colors;
-	QList<QString> texts;
-
+    QList<QColor> colors;
+    QList<QString> texts;
 };
 
 #endif // TOTAL_MEMORY_CHART_H

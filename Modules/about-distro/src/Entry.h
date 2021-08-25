@@ -6,9 +6,9 @@
 #ifndef ENTRY_H
 #define ENTRY_H
 
-#include <QString>
-#include <QLocale>
 #include <KLocalizedString>
+#include <QLocale>
+#include <QString>
 
 // Generic dumpable info entry.
 // This encapsulates a table entry so that it may be put into the UI

@@ -15,19 +15,19 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 Lesser General Public License for more details.
 
-You should have received a copy of the GNU Lesser General Public 
+You should have received a copy of the GNU Lesser General Public
 License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #ifndef KCONTROL_MEMORY_H
 #define KCONTROL_MEMORY_H
 
-#include <QWidget>
 #include <QPushButton>
 #include <QTimer>
+#include <QWidget>
 
-#include <KCModule>
 #include <KAboutData>
+#include <KCModule>
 
 #include "base.h"
 
@@ -35,35 +35,33 @@ class QGroupBox;
 class QPushButton;
 class ChartWidget;
 
-class KCMMemory : public KCModule {
-	Q_OBJECT
+class KCMMemory : public KCModule
+{
+    Q_OBJECT
 
 public:
-	explicit KCMMemory(QWidget *parent = nullptr, const QVariantList &list = QVariantList());
-	~KCMMemory();
+    explicit KCMMemory(QWidget *parent = nullptr, const QVariantList &list = QVariantList());
+    ~KCMMemory();
 
-	QString quickHelp() const override;
-	
+    QString quickHelp() const override;
+
 private Q_SLOTS:
-	void updateMemoryText();
-	void updateMemoryGraphics();
+    void updateMemoryText();
+    void updateMemoryGraphics();
 
-	void updateDatas();
+    void updateDatas();
+
 private:
-	
-	QGroupBox* initializeText();
-	QGroupBox* initializeCharts();
+    QGroupBox *initializeText();
+    QGroupBox *initializeCharts();
 
-	QTimer *timer;
+    QTimer *timer;
 
-	ChartWidget* totalMemory;
-	ChartWidget* physicalMemory;
-	ChartWidget* swapMemory;
-	
-	
-	void fetchValues();
+    ChartWidget *totalMemory;
+    ChartWidget *physicalMemory;
+    ChartWidget *swapMemory;
 
+    void fetchValues();
 };
 
 #endif
-

@@ -11,25 +11,25 @@
 #include <QLocale>
 
 #include <KAboutData>
-#include <KCoreAddons>
 #include <KConfig>
 #include <KConfigGroup>
+#include <KCoreAddons>
 #include <KLocalizedString>
 #include <KOSRelease>
 #include <KSharedConfig>
 
 #include "CPUEntry.h"
-#include "GraphicsPlatformEntry.h"
 #include "GPUEntry.h"
+#include "GraphicsPlatformEntry.h"
 #include "KernelEntry.h"
 #include "MemoryEntry.h"
 #include "PlasmaEntry.h"
 #include "SectionLabel.h"
 #include "Version.h"
 
-Module::Module(QWidget *parent, const QVariantList &args) :
-    KCModule(parent, args),
-    ui(new Ui::Module)
+Module::Module(QWidget *parent, const QVariantList &args)
+    : KCModule(parent, args)
+    , ui(new Ui::Module)
 {
     KAboutData *aboutData = new KAboutData(QStringLiteral("kcm-about-distro"),
                                            i18nc("@title", "About this System"),
@@ -38,9 +38,7 @@ Module::Module(QWidget *parent, const QVariantList &args) :
                                            KAboutLicense::LicenseKey::GPL_V3,
                                            i18nc("@info:credit", "Copyright 2012-2020 Harald Sitter"));
 
-    aboutData->addAuthor(i18nc("@info:credit", "Harald Sitter"),
-                         i18nc("@info:credit", "Author"),
-                         QStringLiteral("sitter@kde.org"));
+    aboutData->addAuthor(i18nc("@info:credit", "Harald Sitter"), i18nc("@info:credit", "Author"), QStringLiteral("sitter@kde.org"));
 
     setAboutData(aboutData);
 
@@ -105,8 +103,7 @@ void Module::loadOSData()
 {
     // NOTE: do not include globals, otherwise kdeglobals could provide values
     //       even though we only explicitly want them from our own config.
-    KSharedConfig::Ptr config = KSharedConfig::openConfig(QStringLiteral("kcm-about-distrorc"),
-                                                          KConfig::NoGlobals);
+    KSharedConfig::Ptr config = KSharedConfig::openConfig(QStringLiteral("kcm-about-distrorc"), KConfig::NoGlobals);
     KConfigGroup cg = KConfigGroup(config, "General");
 
     KOSRelease os;
@@ -122,9 +119,7 @@ void Module::loadOSData()
     // For example OS Ubuntu may be rebranded as Kubuntu. Also Kubuntu Active
     // as a product brand is different from Kubuntu.
     const QString distroName = cg.readEntry("Name", os.name());
-    const QString osrVersion = cg.readEntry("UseOSReleaseVersion", false)
-            ? os.version()
-            : os.versionId();
+    const QString osrVersion = cg.readEntry("UseOSReleaseVersion", false) ? os.version() : os.versionId();
     const QString versionId = cg.readEntry("Version", osrVersion);
     // This creates a trailing space if versionId is empty, so trimming String
     // to remove possibly trailing spaces
@@ -151,8 +146,7 @@ void Module::loadOSData()
 
 void Module::loadEntries()
 {
-    auto addSectionHeader = [this](const QString &text)
-    {
+    auto addSectionHeader = [this](const QString &text) {
         int row = ui->infoGrid->rowCount();
         // Random sizes stolen from original UI file values :S
         ui->infoGrid->addItem(new QSpacerItem(17, 21, QSizePolicy::Minimum, QSizePolicy::Fixed), row, 1, 1, 1);
@@ -161,8 +155,7 @@ void Module::loadEntries()
         ++row;
     };
 
-    auto addEntriesToGrid = [this](std::vector<const Entry *> entries)
-    {
+    auto addEntriesToGrid = [this](std::vector<const Entry *> entries) {
         int row = ui->infoGrid->rowCount();
         for (auto entry : entries) {
             if (!entry->isValid()) {
@@ -178,21 +171,15 @@ void Module::loadEntries()
 
     // software
     addSectionHeader(i18nc("@title:group", "Software"));
-    addEntriesToGrid({
-                         new PlasmaEntry(),
-                         new Entry(ki18n("KDE Frameworks Version:"), KCoreAddons::versionString()),
-                         new Entry(ki18n("Qt Version:"), QString::fromLatin1(qVersion())),
-                         new KernelEntry(),
-                         new GraphicsPlatformEntry()
-                     });
+    addEntriesToGrid({new PlasmaEntry(),
+                      new Entry(ki18n("KDE Frameworks Version:"), KCoreAddons::versionString()),
+                      new Entry(ki18n("Qt Version:"), QString::fromLatin1(qVersion())),
+                      new KernelEntry(),
+                      new GraphicsPlatformEntry()});
 
     // hardware
     addSectionHeader(i18nc("@title:group", "Hardware"));
-    addEntriesToGrid({
-                         new CPUEntry(),
-                         new MemoryEntry(),
-                         new GPUEntry()
-                     });
+    addEntriesToGrid({new CPUEntry(), new MemoryEntry(), new GPUEntry()});
 }
 
 void Module::copyToClipboard()

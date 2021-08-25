@@ -21,20 +21,20 @@
 
 #include <Solid/DeviceNotifier>
 
-#include <QtQml>
 #include <QQmlEngine>
+#include <QtQml>
 
-
-BatteryModel::BatteryModel(QObject *parent) : QAbstractListModel(parent)
+BatteryModel::BatteryModel(QObject *parent)
+    : QAbstractListModel(parent)
 {
-    qmlRegisterUncreatableType<Solid::Battery>("org.kde.kinfocenter.energy.private", 1, 0, "Battery",
-            QStringLiteral("Use Solid::Battery"));
+    qmlRegisterUncreatableType<Solid::Battery>("org.kde.kinfocenter.energy.private", 1, 0, "Battery", QStringLiteral("Use Solid::Battery"));
 
     m_batteries = Solid::Device::listFromType(Solid::DeviceInterface::Battery);
 
     connect(Solid::DeviceNotifier::instance(), &Solid::DeviceNotifier::deviceAdded, this, [this](const QString &udi) {
-
-        auto it = std::find_if(m_batteries.constBegin(), m_batteries.constEnd(), [&udi](const Solid::Device &dev) {return dev.udi() == udi;});
+        auto it = std::find_if(m_batteries.constBegin(), m_batteries.constEnd(), [&udi](const Solid::Device &dev) {
+            return dev.udi() == udi;
+        });
         if (it != m_batteries.constEnd()) {
             return;
         }
@@ -49,13 +49,14 @@ BatteryModel::BatteryModel(QObject *parent) : QAbstractListModel(parent)
         }
     });
     connect(Solid::DeviceNotifier::instance(), &Solid::DeviceNotifier::deviceRemoved, this, [this](const QString &udi) {
-        auto it = std::find_if(m_batteries.constBegin(), m_batteries.constEnd(), [&udi](const Solid::Device &dev) {return dev.udi() == udi;});
+        auto it = std::find_if(m_batteries.constBegin(), m_batteries.constEnd(), [&udi](const Solid::Device &dev) {
+            return dev.udi() == udi;
+        });
         if (it == m_batteries.constEnd()) {
             return;
         }
 
         int index = std::distance(m_batteries.constBegin(), it);
-
 
         beginRemoveRows(QModelIndex(), index, index);
         m_batteries.removeAt(index);
@@ -99,10 +100,5 @@ int BatteryModel::rowCount(const QModelIndex &parent) const
 
 QHash<int, QByteArray> BatteryModel::roleNames() const
 {
-    return {
-        {BatteryRole, "battery"},
-        {VendorRole, "vendor"},
-        {ProductRole, "product"},
-        {UdiRole, "udi"}
-    };
+    return {{BatteryRole, "battery"}, {VendorRole, "vendor"}, {ProductRole, "product"}, {UdiRole, "udi"}};
 }

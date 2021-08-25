@@ -15,7 +15,7 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 Lesser General Public License for more details.
 
-You should have received a copy of the GNU Lesser General Public 
+You should have received a copy of the GNU Lesser General Public
 License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 */
 
@@ -24,13 +24,13 @@ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 #include "os_base.h"
 
 #ifdef __linux__
-    #include "info_linux.cpp"
+#include "info_linux.cpp"
 #elif defined(__FreeBSD__) || defined(__DragonFly__)
-    #include "info_fbsd.cpp"
+#include "info_fbsd.cpp"
 #elif defined(__NetBSD__)
-	#include "info_netbsd.cpp"
+#include "info_netbsd.cpp"
 #elif defined(__OpenBSD__)
-    #include "info_openbsd.cpp"
+#include "info_openbsd.cpp"
 #else
-	#include "info_generic.cpp"	/* Default for unsupported systems.... */
+#include "info_generic.cpp" /* Default for unsupported systems.... */
 #endif

@@ -23,8 +23,8 @@
 #include <QAbstractListModel>
 #include <QList>
 
-#include <Solid/Device>
 #include <Solid/Battery>
+#include <Solid/Device>
 
 class BatteryModel : public QAbstractListModel
 {

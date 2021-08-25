@@ -10,11 +10,12 @@
 #ifdef Q_OS_LINUX
 #include <sys/sysinfo.h>
 #elif defined(Q_OS_FREEBSD)
-#include <sys/types.h>
 #include <sys/sysctl.h>
+#include <sys/types.h>
 #endif
 
-MemoryEntry::MemoryEntry() : Entry(ki18n("Memory:"), QString() /* overridden here */)
+MemoryEntry::MemoryEntry()
+    : Entry(ki18n("Memory:"), QString() /* overridden here */)
 {
 }
 
@@ -43,10 +44,9 @@ QString MemoryEntry::localizedValue(Language language) const
 {
     const qlonglong totalRam = calculateTotalRam();
     if (totalRam > 0) {
-        const auto string = ki18nc("@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)",
-                                   "%1 of RAM").subs(KFormat(localeForLanguage(language)).formatByteSize(totalRam));
+        const auto string = ki18nc("@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)", "%1 of RAM")
+                                .subs(KFormat(localeForLanguage(language)).formatByteSize(totalRam));
         return localize(string, language);
     }
-    return localize(ki18nc("Unknown amount of RAM", "Unknown"),
-                    language);
+    return localize(ki18nc("Unknown amount of RAM", "Unknown"), language);
 }

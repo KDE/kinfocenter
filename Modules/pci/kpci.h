@@ -9,6 +9,6 @@
 
 #include <QTreeWidget>
 
-bool GetInfo_PCIUtils(QTreeWidget* tree);
+bool GetInfo_PCIUtils(QTreeWidget *tree);
 
-#endif //KCONTROL_KPCI_H
+#endif // KCONTROL_KPCI_H

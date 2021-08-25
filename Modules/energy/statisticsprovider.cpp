@@ -20,13 +20,13 @@
 
 #include "statisticsprovider.h"
 
-#include <QDebug>
 #include <QDBusArgument>
 #include <QDBusConnection>
 #include <QDBusInterface>
 #include <QDBusMessage>
 #include <QDBusMetaType> // qDBusRegisterMetaType
 #include <QDBusPendingReply>
+#include <QDebug>
 
 const QDBusArgument &operator<<(QDBusArgument &argument, const HistoryReply &data)
 {
@@ -38,19 +38,20 @@ const QDBusArgument &operator<<(QDBusArgument &argument, const HistoryReply &dat
 
 const QDBusArgument &operator>>(const QDBusArgument &arg, HistoryReply &attrs)
 {
-   arg.beginStructure();
-   arg >> attrs.time >> attrs.value >> attrs.charging;
-   arg.endStructure();
-   return arg;
+    arg.beginStructure();
+    arg >> attrs.time >> attrs.value >> attrs.charging;
+    arg.endStructure();
+    return arg;
 }
 
-StatisticsProvider::StatisticsProvider(QObject *parent) : QObject(parent)
+StatisticsProvider::StatisticsProvider(QObject *parent)
+    : QObject(parent)
 {
     m_type = StatisticsProvider::ChargeType;
     m_duration = 120;
 
     qDBusRegisterMetaType<HistoryReply>();
-    qDBusRegisterMetaType<QList<HistoryReply> >();
+    qDBusRegisterMetaType<QList<HistoryReply>>();
 }
 
 void StatisticsProvider::setDevice(const QString &device)
@@ -88,7 +89,6 @@ void StatisticsProvider::setType(StatisticsProvider::HistoryType type)
 
     load();
 }
-
 
 void StatisticsProvider::classBegin()
 {
@@ -191,7 +191,7 @@ void StatisticsProvider::load()
         }
 
         foreach (const HistoryReply &r, reply.value()) {
-            if (r.value > 0) { //we get back some values which contain no value, possibly to indicate if charging changes, ignore them
+            if (r.value > 0) { // we get back some values which contain no value, possibly to indicate if charging changes, ignore them
                 m_values.prepend(r);
             }
         }

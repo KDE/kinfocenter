@@ -6,12 +6,12 @@
 
 #pragma once
 
-#include <QAbstractTableModel> 
+#include <QAbstractTableModel>
 
 class NetworkModel : public QAbstractListModel
 {
     Q_OBJECT
-    
+
 public:
     struct MyNIC {
         QString name;
@@ -21,7 +21,7 @@ public:
         QString type;
         QString HWaddr;
     };
-    
+
     enum Roles {
         NameRole = Qt::UserRole + 1,
         AddrRole,
@@ -30,16 +30,16 @@ public:
         HWAddrRole,
         StateRole,
     };
-    
+
     explicit NetworkModel(QObject *parent = nullptr);
     virtual ~NetworkModel() = default;
 
     virtual QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
     virtual QHash<int, QByteArray> roleNames() const override;
     virtual int rowCount(const QModelIndex &parent = QModelIndex()) const override;
-    
+
     Q_INVOKABLE void update();
-    
+
 private:
     QList<MyNIC *> m_nics;
 };

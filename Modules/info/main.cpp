@@ -21,24 +21,24 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#include <KPluginFactory>
 #include <KLocalizedString>
- 
+#include <KPluginFactory>
+
 /* we have to include the info.cpp-file, to get the DEFINES about possible properties.
    example: we need the "define INFO_DMA_AVAILABLE" */
 #include "info.h"
 
 #include "os_current.h"
 
-#define CREATE_FACTORY(type, name) \
-class K##type##InfoWidget : public KInfoListWidget \
-{ \
-    public: \
-        K##type##InfoWidget(QWidget *parent, const QVariantList &) \
-            : KInfoListWidget(name, parent, GetInfo_##type) \
-        { \
-        } \
-}; \
+#define CREATE_FACTORY(type, name)                                                                                                                             \
+    class K##type##InfoWidget : public KInfoListWidget                                                                                                         \
+    {                                                                                                                                                          \
+    public:                                                                                                                                                    \
+        K##type##InfoWidget(QWidget *parent, const QVariantList &)                                                                                             \
+            : KInfoListWidget(name, parent, GetInfo_##type)                                                                                                    \
+        {                                                                                                                                                      \
+        }                                                                                                                                                      \
+    };
 
 #ifdef INFO_IRQ_AVAILABLE
 CREATE_FACTORY(IRQ, i18n("Interrupt"))
@@ -58,19 +58,19 @@ CREATE_FACTORY(Wayland, i18n("Wayland"))
 
 K_PLUGIN_FACTORY(KInfoModulesFactory,
 #ifdef INFO_IRQ_AVAILABLE
-    registerPlugin<KIRQInfoWidget>(QStringLiteral("irq"));
+                 registerPlugin<KIRQInfoWidget>(QStringLiteral("irq"));
 #endif
 #ifdef INFO_IOPORTS_AVAILABLE
-    registerPlugin<KIO_PortsInfoWidget>(QStringLiteral("ioports"));
+                 registerPlugin<KIO_PortsInfoWidget>(QStringLiteral("ioports"));
 #endif
 #ifdef INFO_DMA_AVAILABLE
-    registerPlugin<KDMAInfoWidget>(QStringLiteral("dma"));
+                 registerPlugin<KDMAInfoWidget>(QStringLiteral("dma"));
 #endif
 #ifdef INFO_XSERVER_AVAILABLE
-    registerPlugin<KXServer_and_VideoInfoWidget>(QStringLiteral("xserver"));
+                 registerPlugin<KXServer_and_VideoInfoWidget>(QStringLiteral("xserver"));
 #endif
 #ifdef INFO_WAYLAND_AVAILABLE
-    registerPlugin<KWaylandInfoWidget>(QStringLiteral("wayland"));
+                 registerPlugin<KWaylandInfoWidget>(QStringLiteral("wayland"));
 #endif
 )
 

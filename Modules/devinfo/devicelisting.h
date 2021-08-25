@@ -22,15 +22,15 @@
 #ifndef DEVICELISTING
 #define DEVICELISTING
 
-//QT
+// QT
 #include <QMap>
 #include <QTreeWidget>
 #include <QTreeWidgetItemIterator>
 
-//Local
+// Local
 #include "soldevice.h"
 
-//Kde
+// Kde
 
 class InfoPanel;
 class DevInfoPlugin;
@@ -54,8 +54,7 @@ public:
     static QTreeWidgetItem *getTreeWidgetItemFromUdi(QTreeWidget *widget, const QString &udi)
     {
         QTreeWidgetItemIterator treeWidget(widget);
-        while (*treeWidget)
-        {
+        while (*treeWidget) {
             SolDevice *item = static_cast<SolDevice *>(*treeWidget);
             if (item->udi() == udi) {
                 return *treeWidget;
@@ -78,7 +77,7 @@ private:
     QAction *allAct = nullptr;
     QAction *relAct = nullptr;
     DevInfoPlugin *status = nullptr;
-    //NicSignals *nicSig;
+    // NicSignals *nicSig;
 
 public Q_SLOTS:
     void currentItemChangedSlot(QTreeWidgetItem *, QTreeWidgetItem *);
@@ -90,4 +89,4 @@ public Q_SLOTS:
     void showRelevantDevicesSlot();
 };
 
-#endif //DEVICELISTING
+#endif // DEVICELISTING
