@@ -109,7 +109,8 @@ kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
 install( FILES org.kde.kinfocenter.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 install( PROGRAMS org.kde.kinfocenter.desktop  DESTINATION  ${KDE_INSTALL_APPDIR} )
 
-install(CODE "file(CREATE_LINK ${KDE_INSTALL_FULL_BINDIR}/systemsettings5 ${KDE_INSTALL_FULL_BINDIR}/kinfocenter SYMBOLIC)")
+ADD_CUSTOM_TARGET(kinfocenter_link ALL
+                  COMMAND ${CMAKE_COMMAND} -E create_symlink ${KDE_INSTALL_FULL_BINDIR}/systemsettings5 ${CMAKE_CURRENT_BINARY_DIR}/kinfocenter)
 
 install( FILES ${CMAKE_CURRENT_BINARY_DIR}/kinfocenter DESTINATION ${KDE_INSTALL_FULL_BINDIR}/ )
 
