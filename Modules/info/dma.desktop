@@ -7,7 +7,6 @@ Categories=Qt;KDE;X-KDE-information;
 
 X-KDE-KInfoCenter-Category=device_information
 X-KDE-Library=kcm_info
-X-KDE-PluginKeyword=dma
 X-KDE-ParentApp=kinfocenter
 X-DocPath=kinfocenter/dma.html
 

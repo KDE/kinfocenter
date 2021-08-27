@@ -6,7 +6,6 @@ Exec=kinfocenter about-distro
 X-KDE-Library=kcm_about-distro
 X-KDE-ServiceTypes=KCModule
 X-KDE-ParentApp=kinfocenter
-X-KDE-PluginKeyword=kcm-about-distro
 X-KDE-System-Settings-Parent-Category=system-administration
 X-KDE-KInfoCenter-Category=basic_information
 X-KDE-Weight=0
