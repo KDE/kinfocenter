@@ -28,6 +28,7 @@ Name[sv]=Processor
 Name[uk]=Процесор
 Name[vi]=CPU
 Name[x-test]=xxCPUxx
+Name[zh_CN]=CPU
 
 Comment=Advanced CPU Information
 Comment[az]=Əlavə CPU məlumatı
@@ -46,6 +47,7 @@ Comment[sv]=Avancerad processorinformation
 Comment[uk]=Додаткові відомості щодо процесора
 Comment[vi]=Thông tin nâng cao về CPU
 Comment[x-test]=xxAdvanced CPU Informationxx
+Comment[zh_CN]=高级 CPU 信息
 
 X-KDE-Keywords=cpu,amd,intel,arm,instructions,cores,architecture,byte order
 X-KDE-Keywords[az]=cpu,amd,intel,arm,instructions,cores,architecture,byte order,təlimatlar,nüvə,növbə,arxitektura,bayt
@@ -64,3 +66,4 @@ X-KDE-Keywords[sv]=processor,amd,intel,arm,instruktioner,kärnor,arkitektur,byte
 X-KDE-Keywords[uk]=cpu,amd,intel,arm,instructions,cores,architecture,byte order,процесор,амд,інтел,арм,інструкції,ядра,архітектура,порядок байтів
 X-KDE-Keywords[vi]=cpu,amd,intel,arm,instructions,cores,architecture,byte order,lệnh,lõi,kiến trúc,thứ tự byte
 X-KDE-Keywords[x-test]=xxcpuxx,xxamdxx,xxintelxx,xxarmxx,xxinstructionsxx,xxcoresxx,xxarchitecturexx,xxbyte orderxx
+X-KDE-Keywords[zh_CN]=cpu,amd,intel,arm,instructions,cores,architecture,byte order,中央处理器,处理器,指令集,处理器核心,核心,内核,核心数量,架构,体系,字节顺序
