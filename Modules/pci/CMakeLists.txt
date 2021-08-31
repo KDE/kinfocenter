@@ -4,7 +4,7 @@ add_definitions(-DTRANSLATION_DOMAIN=\"kcm_pci\")
 # OS Base includes
 include(../base/CMakeLists.txt)
 
-include_directories( 
+include_directories(
 	${CMAKE_CURRENT_SOURCE_DIR}/../base
 )
 
@@ -20,10 +20,6 @@ set(KCM_PCI_LIBS
 
 set(KCM_PCI_PART_SRCS kcm_pci.cpp ../base/os_current.cpp )
 
-if(KF5Wayland_FOUND)
-    set(KCM_PCI_LIBS ${KCM_PCI_LIBS} KF5::WaylandClient)
-    set(KCM_PCI_PART_SRCS ${KCM_PCI_PART_SRCS} ../base/info_wayland.cpp)
-endif()
 if(${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD")
     set(KCM_PCI_LIBS ${KCM_PCI_LIBS} devinfo)
 endif()

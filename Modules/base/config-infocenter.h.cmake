@@ -10,4 +10,3 @@
 /* Define to 1 if you have the <Alib.h> header file. */
 #cmakedefine HAVE_ALIB_H 1
 
-#cmakedefine01 HAVE_WAYLAND

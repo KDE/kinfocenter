@@ -1,13 +1,16 @@
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
 [Desktop Entry]
-Exec=kinfocenter wayland
-Icon=wayland
 Type=Service
+TryExec=wayland-info
+Exec=kinfocenter kcm_wayland
+Icon=wayland
+Categories=Qt;KDE;X-KDE-information;
 X-KDE-ServiceTypes=KCModule
-
 X-KDE-KInfoCenter-Category=graphical_information
-X-KDE-Library=kcm_info
-X-KDE-PluginKeyword=wayland
+X-KDE-Library=kcm_wayland
 X-KDE-ParentApp=kinfocenter
+X-KDE-OnlyShowOnQtPlatforms=wayland;
 
 Name=Wayland
 Name[ar]=ويلاند
@@ -154,5 +157,3 @@ X-KDE-Keywords[vi]=Wayland,Compositor,Display,System Information,Trình kết h�
 X-KDE-Keywords[x-test]=xxWaylandxx,xxCompositorxx,xxDisplayxx,xxSystem Informationxx
 X-KDE-Keywords[zh_CN]=Wayland,Compositor,Display,System Information,显示特效混合器,特效,混合器,显示,显示器,系统信息
 X-KDE-Keywords[zh_TW]=Wayland,Compositor,Display,System Information
-
-Categories=Qt;KDE;X-KDE-information;

@@ -59,12 +59,6 @@ set_package_properties(EGL PROPERTIES
                        PURPOSE "Required for OpenGL Information Module"
                       )
 
-find_package(KF5Wayland CONFIG)
-set_package_properties(KF5Wayland PROPERTIES
-                       TYPE OPTIONAL
-                      )
-add_feature_info("KF5Wayland" KF5Wayland_FOUND "Required for Wayland Compositor Information Module")
-
 find_package(X11)
 set_package_properties(X11 PROPERTIES DESCRIPTION "X11 libraries"
     URL "https://www.x.org"
