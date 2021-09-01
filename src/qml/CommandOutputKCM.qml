@@ -16,11 +16,12 @@ KCM.SimpleKCM {
 
     implicitWidth: Kirigami.Units.gridUnit * 20
     implicitHeight: Kirigami.Units.gridUnit * 20
+    // Use a horizontal scrollbar if text wrapping is disabled. In all other cases we'll go with the defaults.
+    horizontalScrollBarPolicy: wrapMode === TextEdit.NoWrap ? Qt.ScrollBarAsNeeded : undefined
 
     // The CommandOutputContext object.
     required property QtObject output
-    // TODO NoWrap may be better but the scrollablepage actually gets no horizontal scroll bar oO
-    property int wrapMode: TextEdit.Wrap
+    property int wrapMode: TextEdit.NoWrap
 
     Component {
         id: dataComponent
