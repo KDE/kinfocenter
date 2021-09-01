@@ -37,7 +37,18 @@ KCM.SimpleKCM {
     Component {
         id: loadingComponent
         QQC2.BusyIndicator {
+            id: indicator
+            visible: false
             running: true
+
+            // only show the indicator after a brief timeout otherwise we can have a situtation where loading takes a couple
+            // milliseconds during which time the indicator flashes up for no good reason
+            Timer {
+                running: true
+                repeat: false
+                interval: 500
+                onTriggered: indicator.visible = true
+            }
         }
     }
 
