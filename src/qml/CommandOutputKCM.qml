@@ -30,6 +30,8 @@ KCM.SimpleKCM {
             text: output.text
             font.family: "monospace"
             wrapMode: root.wrapMode
+            // Don't render a frame around the output. It offers a more cleaned up look.
+            background: Item {}
         }
     }
 
