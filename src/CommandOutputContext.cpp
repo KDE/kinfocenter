@@ -5,6 +5,8 @@
 
 #include "CommandOutputContext.h"
 
+#include <utility>
+
 #include <QDebug>
 #include <QProcess>
 #include <QStandardPaths>
@@ -42,7 +44,7 @@ void CommandOutputContext::setFilter(const QString &filter)
         m_text = m_originalLines.join('\n');
     } else {
         m_text.clear();
-        for (const QString &line : m_originalLines) {
+        for (const QString &line : std::as_const(m_originalLines)) {
             if (line.contains(filter, Qt::CaseInsensitive)) {
                 m_text += line + '\n';
             }
