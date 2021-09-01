@@ -1,12 +1,14 @@
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
 [Desktop Entry]
-Exec=kinfocenter xserver
-Icon=xorg
 Type=Service
+TryExec=xdpyinfo
+Exec=kinfocenter kcm_xserver
+Icon=xorg
+Categories=Qt;KDE;X-KDE-information;
 X-KDE-ServiceTypes=KCModule
-
 X-KDE-KInfoCenter-Category=graphical_information
-X-KDE-Library=kcm_info
-X-KDE-PluginKeyword=xserver
+X-KDE-Library=kcm_xserver
 X-KDE-ParentApp=kinfocenter
 X-DocPath=kinfocenter/xserver.html
 
@@ -248,5 +250,3 @@ X-KDE-Keywords[vi]=X,X-Server,XServer,XFree86,Display,VideoCard,System Informati
 X-KDE-Keywords[x-test]=xxXxx,xxX-Serverxx,xxXServerxx,xxXFree86xx,xxDisplayxx,xxVideoCardxx,xxSystem Informationxx
 X-KDE-Keywords[zh_CN]=X,X-Server,XServer,XFree86,Display,VideoCard,System Information,X 服务器,显示,显示器,显卡,GPU,系统信息
 X-KDE-Keywords[zh_TW]=X,X-Server,XServer,XFree86,Display,VideoCard,System Information
-
-Categories=Qt;KDE;X-KDE-information;

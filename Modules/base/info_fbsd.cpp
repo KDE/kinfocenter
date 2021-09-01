@@ -116,11 +116,6 @@ bool GetInfo_PCI(QTreeWidget *tree)
     return true;
 }
 
-bool GetInfo_XServer_and_Video(QTreeWidget *tree)
-{
-    return GetInfo_XServer_Generic(tree);
-}
-
 #ifdef HAVE_DEVINFO_H
 
 int print_dma(struct devinfo_rman *rman, void *arg)

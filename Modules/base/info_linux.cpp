@@ -138,8 +138,3 @@ bool GetInfo_IO_Ports(QTreeWidget *tree)
     tree->setHeaderLabels(headers);
     return GetInfo_ReadfromFile(tree, INFO_IOPORTS, QLatin1Char(':'));
 }
-
-bool GetInfo_XServer_and_Video(QTreeWidget *tree)
-{
-    return GetInfo_XServer_Generic(tree);
-}

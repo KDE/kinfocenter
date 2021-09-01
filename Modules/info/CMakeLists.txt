@@ -34,7 +34,6 @@ install(
     FILES
 	dma.desktop
 	ioports.desktop
-	xserver.desktop
 	DESTINATION  ${KDE_INSTALL_KSERVICES5DIR}
 )
 

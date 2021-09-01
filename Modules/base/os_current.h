@@ -15,13 +15,11 @@ class QString;
 bool GetInfo_DMA(QTreeWidget *tree);
 bool GetInfo_PCI(QTreeWidget *tree);
 bool GetInfo_IO_Ports(QTreeWidget *tree);
-bool GetInfo_XServer_and_Video(QTreeWidget *tree);
 
 #ifdef __linux__
 
 #define INFO_DMA_AVAILABLE
 #define INFO_IOPORTS_AVAILABLE
-#define INFO_XSERVER_AVAILABLE
 
 /* i18n("Maybe the proc-filesystem is not enabled in Linux-Kernel.") */
 #define DEFAULT_ERRORSTRING QString()
@@ -30,7 +28,6 @@ bool GetInfo_XServer_and_Video(QTreeWidget *tree);
 
 #define INFO_DMA_AVAILABLE
 #define INFO_IOPORTS_AVAILABLE
-#define INFO_XSERVER_AVAILABLE
 
 #define DEFAULT_ERRORSTRING i18n("This system may not be completely supported yet.")
 
@@ -38,7 +35,6 @@ bool GetInfo_XServer_and_Video(QTreeWidget *tree);
 
 #define INFO_DMA_AVAILABLE
 #define INFO_IOPORTS_AVAILABLE
-#define INFO_XSERVER_AVAILABLE
 
 #define DEFAULT_ERRORSTRING i18n("This system may not be completely supported yet.")
 

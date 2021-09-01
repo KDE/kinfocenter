@@ -28,9 +28,6 @@ CREATE_FACTORY(IO_Ports, i18n("I/O-Port"))
 #ifdef INFO_DMA_AVAILABLE
 CREATE_FACTORY(DMA, i18n("DMA-Channel"))
 #endif
-#ifdef INFO_XSERVER_AVAILABLE
-CREATE_FACTORY(XServer_and_Video, i18n("X-Server"))
-#endif
 
 K_PLUGIN_FACTORY(KInfoModulesFactory,
 #ifdef INFO_IOPORTS_AVAILABLE
@@ -38,9 +35,6 @@ K_PLUGIN_FACTORY(KInfoModulesFactory,
 #endif
 #ifdef INFO_DMA_AVAILABLE
                  registerPlugin<KDMAInfoWidget>(QStringLiteral("dma"));
-#endif
-#ifdef INFO_XSERVER_AVAILABLE
-                 registerPlugin<KXServer_and_VideoInfoWidget>(QStringLiteral("xserver"));
 #endif
 )
 
