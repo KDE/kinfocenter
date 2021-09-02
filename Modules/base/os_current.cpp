@@ -27,10 +27,6 @@ License along with this library.  If not, see <http://www.gnu.org/licenses/>.
 #include "info_linux.cpp"
 #elif defined(__FreeBSD__) || defined(__DragonFly__)
 #include "info_fbsd.cpp"
-#elif defined(__NetBSD__)
-#include "info_netbsd.cpp"
-#elif defined(__OpenBSD__)
-#include "info_openbsd.cpp"
 #else
 #include "info_generic.cpp" /* Default for unsupported systems.... */
 #endif

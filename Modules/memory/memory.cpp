@@ -125,21 +125,12 @@ QGroupBox *KCMMemory::initializeText()
         case FREE_MEM:
             title = i18n("Free physical memory:");
             break;
-#if !defined(__NetBSD__) && !defined(__OpenBSD__)
         case SHARED_MEM:
             title = i18n("Shared memory:");
             break;
         case BUFFER_MEM:
             title = i18n("Disk buffers:");
             break;
-#else
-        case ACTIVE_MEM:
-            title = i18n("Active memory:");
-            break;
-        case INACTIVE_MEM:
-            title = i18n("Inactive memory:");
-            break;
-#endif
         case CACHED_MEM:
             title = i18n("Disk cache:");
             break;
@@ -283,8 +274,6 @@ void KCMMemory::updateMemoryGraphics()
 #include "memory_linux.cpp"
 #elif defined(__FreeBSD__) || defined(__DragonFly__)
 #include "memory_fbsd.cpp"
-#elif defined(__NetBSD__) || defined(__OpenBSD__)
-#include "memory_netbsd.cpp"
 #else
 
 /* Default for unsupported systems */

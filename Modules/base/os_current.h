@@ -54,24 +54,6 @@ bool GetInfo_Wayland(QTreeWidget *tree);
 
 #define DEFAULT_ERRORSTRING i18n("This system may not be completely supported yet.")
 
-#elif defined(__NetBSD__)
-
-#define INFO_IRQ_AVAILABLE
-#define INFO_DMA_AVAILABLE
-#define INFO_IOPORTS_AVAILABLE
-#define INFO_XSERVER_AVAILABLE
-
-#define DEFAULT_ERRORSTRING i18n("This system may not be completely supported yet.")
-
-#elif defined(__OpenBSD__)
-
-#define INFO_IRQ_AVAILABLE
-#define INFO_DMA_AVAILABLE
-#define INFO_IOPORTS_AVAILABLE
-#define INFO_XSERVER_AVAILABLE
-
-#define DEFAULT_ERRORSTRING i18n("This system may not be completely supported yet.")
-
 #else
 
 #define INFO_IRQ_AVAILABLE
