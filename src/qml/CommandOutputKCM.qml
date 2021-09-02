@@ -52,6 +52,23 @@ KCM.SimpleKCM {
             font.family: "monospace"
             wrapMode: root.wrapMode
             textFormat: TextEdit.PlainText
+
+             MouseArea {
+                anchors.fill: parent
+                acceptedButtons: Qt.RightButton
+                onClicked: contextMenu.popup()
+
+                Clipboard { id: clipboard }
+
+                QQC2.Menu {
+                    id: contextMenu
+                    Kirigami.Action {
+                        iconName: "edit-copy"
+                        text: i18nc("@item:inmenu copies all displayed text", "Copy All")
+                        onTriggered: clipboard.content = output.text
+                    }
+                }
+            }
         }
     }
 
