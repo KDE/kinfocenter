@@ -65,8 +65,6 @@ KCMMemory::KCMMemory(QWidget *parent, const QVariantList &)
     about->addAuthor(i18n("Helge Deller"), QString(), QStringLiteral("deller@gmx.de"));
     setAboutData(about);
 
-    QString title, initial_str;
-
     setButtons(Help);
 
     QVBoxLayout *top = new QVBoxLayout(this);
