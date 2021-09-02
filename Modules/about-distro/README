@@ -1,3 +1,8 @@
+<!--
+    SPDX-License-Identifier: CC0-1.0
+    SPDX-FileCopyrightText: 2013-2014 Harald Sitter <sitter@kde.org>    SPDX-FileCopyrightText: 2017 Jonathan Riddell <jr@jriddell.org>
+-->
+
 See example/*.
 
 Essentially you place an rc file in the file system that defines the distro logo

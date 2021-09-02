@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# SPDX-FileCopyrightText: 2020 Harald Sitter <sitter@kde.org>
+
 if(NOT BUILD_TESTING)
     return()
 endif()

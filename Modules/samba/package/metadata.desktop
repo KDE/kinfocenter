@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: 2020 Harald Sitter <sitter@kde.org>
 [Desktop Entry]
 Name=Samba Status
 Name[af]=Samba Status
@@ -44,7 +46,7 @@ Name[is]=Staða Samba
 Name[it]=Stato di Samba
 Name[ja]=Samba の状態
 Name[ka]=Samba-ს სტატუსი
-Name[kk]=Samba сервері 
+Name[kk]=Samba сервері
 Name[km]=ស្ថានភាព​ Samba
 Name[kn]=ಸಾಂಬಾ ಸ್ಥಿತಿಗತಿ
 Name[ko]=삼바 상태
