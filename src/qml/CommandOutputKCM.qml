@@ -56,7 +56,7 @@ KCM.SimpleKCM {
         id: noDataComponent
 
         Kirigami.PlaceholderMessage {
-            width: parent.width - (Kirigami.Units.largeSpacing * 4)
+            width: root.width - (Kirigami.Units.largeSpacing * 4)
             text: {
                 if (output.error !== "") {
                     return output.error
