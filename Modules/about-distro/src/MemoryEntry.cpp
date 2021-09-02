@@ -10,8 +10,10 @@
 #ifdef Q_OS_LINUX
 #include <sys/sysinfo.h>
 #elif defined(Q_OS_FREEBSD)
-#include <sys/sysctl.h>
+// clang-format off
 #include <sys/types.h>
+#include <sys/sysctl.h>
+// clang-format on
 #endif
 
 MemoryEntry::MemoryEntry()
