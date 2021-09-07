@@ -19,26 +19,8 @@ KCM.SimpleKCM {
     // Use a horizontal scrollbar if text wrapping is disabled. In all other cases we'll go with the defaults.
     horizontalScrollBarPolicy: wrapMode === TextEdit.NoWrap ? Qt.ScrollBarAsNeeded : undefined
 
-    // Somewhat hacky view background setting. The view is the contentItem and our actual
-    // content will be moved into it. So, to cover the entire view area with the background we need to
-    // anchor it to an already existing item. To achieve that the background is a component that gets
-    // instantiated as child of the contentItem (the scrollView) upon completion.
-    // TODO: replace with whatever sane solution we come up with
-    //   (see https://invent.kde.org/frameworks/kdeclarative/-/merge_requests/77 and references)
-    Component {
-        id: viewBackground
-        Rectangle {
-            z: parent.z - 1
-            anchors.fill: parent
-            color: Kirigami.Theme.backgroundColor
-            Kirigami.Theme.colorSet: Kirigami.Theme.View
-            Kirigami.Theme.inherit: false
-        }
-    }
-
-    Component.onCompleted: {
-        viewBackground.createObject(root.contentItem)
-    }
+    Kirigami.Theme.colorSet: Kirigami.Theme.View
+    Kirigami.Theme.inherit: false
 
     // The CommandOutputContext object.
     required property QtObject output
@@ -114,10 +96,13 @@ KCM.SimpleKCM {
         id: contentLoader
     }
 
-    footer: ColumnLayout {
+    footer: QQC2.ToolBar {
+        visible: root.state !== "loading"
+
         Kirigami.SearchField {
             id: filterField
-            visible: root.state !== "loading"
+
+            anchors.fill: parent
 
             placeholderText: i18nc("@label placeholder text to filter for something", "Filter…")
 
@@ -125,7 +110,6 @@ KCM.SimpleKCM {
             Accessible.searchEdit: true
 
             focusSequence: "Ctrl+I"
-            Layout.fillWidth: true
 
             onAccepted: output.filter = text
         }
