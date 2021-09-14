@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: BSD-3-Clause
+# SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
+
+find_package(glxinfo)
+set_package_properties(glxinfo PROPERTIES TYPE RUNTIME)
+
+add_definitions(-DTRANSLATION_DOMAIN=\"kcm_glx\")
+
+add_library(kcm_glx MODULE main.cpp)
+target_link_libraries(kcm_glx KF5::CoreAddons KF5::QuickAddons KF5::I18n KInfoCenterInternal)
+
+kcoreaddons_desktop_to_json(kcm_glx "kcm_glx.desktop")
+
+install(FILES kcm_glx.desktop DESTINATION ${SERVICES_INSTALL_DIR})
+install(TARGETS kcm_glx DESTINATION ${PLUGIN_INSTALL_DIR}/kcms)
+
+kpackage_install_package(package kcm_glx kcms)

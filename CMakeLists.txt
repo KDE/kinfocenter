@@ -39,26 +39,6 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     Declarative
 )
 
-if(${Qt5Gui_OPENGL_IMPLEMENTATION} STREQUAL "GL")
-    find_package(OpenGL)
-    set_package_properties(OpenGL PROPERTIES DESCRIPTION "The OpenGL libraries"
-                        URL "https://www.opengl.org"
-                        TYPE OPTIONAL
-                        )
-else()
-    find_package(OpenGLES)
-    set_package_properties(OpenGLES PROPERTIES DESCRIPTION "The OpenGLES libraries"
-                        URL "https://www.khronos.org/opengles"
-                        TYPE OPTIONAL
-                        )
-endif()
-
-find_package(EGL)
-set_package_properties(EGL PROPERTIES
-                       TYPE OPTIONAL
-                       PURPOSE "Required for OpenGL Information Module"
-                      )
-
 find_package(X11)
 set_package_properties(X11 PROPERTIES DESCRIPTION "X11 libraries"
     URL "https://www.x.org"

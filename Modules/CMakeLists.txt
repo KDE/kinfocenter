@@ -8,35 +8,11 @@ add_subdirectory(cpu)
 add_subdirectory(wayland)
 add_subdirectory(interrupts)
 add_subdirectory(xserver)
+add_subdirectory(egl)
+add_subdirectory(glx)
 
 add_subdirectory( samba )
 add_subdirectory( nics )
-
-set(KCM_ENABLE_OPENGL FALSE)
-set(KCM_ENABLE_OPENGLES FALSE)
-if(OPENGL_FOUND AND OPENGL_GLU_FOUND AND (${Qt5Gui_OPENGL_IMPLEMENTATION} STREQUAL "GL"))
-    set(KCM_ENABLE_OPENGL TRUE)
-endif()
-if(OPENGLES_FOUND AND (${Qt5Gui_OPENGL_IMPLEMENTATION} STREQUAL "GLESv2"))
-    set(KCM_ENABLE_OPENGLES TRUE)
-endif()
-set(KCM_HAVE_GLX ${KCM_ENABLE_OPENGL})
-set(KCM_HAVE_EGL ${EGL_FOUND})
-
-if(${Qt5Gui_OPENGL_IMPLEMENTATION} STREQUAL "GL")
-    add_feature_info("OpenGL support" OPENGL_FOUND "View OpenGL details in kinfocenter." )
-    add_feature_info("OpenGL Utility Library (GLU)" OPENGL_GLU_FOUND "Required for OpenGL details in kinfocenter." )
-endif()
-
-if(${Qt5Gui_OPENGL_IMPLEMENTATION} STREQUAL "GLESv2")
-    add_feature_info("OpenGL/ES support" KCM_ENABLE_OPENGLES "View OpenGL ES2.0 details in kinfocenter." )
-endif()
-
-if(KCM_ENABLE_OPENGL OR KCM_ENABLE_OPENGLES)
-    add_subdirectory( opengl )
-else()
-    message(STATUS "OpenGL/ES2.0 information module has been disabled.")
-endif()
 
 find_package(PCIUTILS MODULE)
 set_package_properties(PCIUTILS PROPERTIES DESCRIPTION "PciUtils is a library for direct access to PCI slots"

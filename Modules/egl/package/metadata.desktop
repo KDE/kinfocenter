@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
+[Desktop Entry]
+Type=Service
+X-KDE-PluginInfo-Author=Harald Sitter
+X-KDE-PluginInfo-Email=sitter@kde.org
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-Name=kcm_egl
+X-KDE-ServiceTypes=Plasma/GenericQml
+X-KDE-FormFactors=desktop
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=main.qml
+
+Name=OpenGL (EGL)
+
+Comment=EGL information
+
+X-KDE-Keywords=OpenGL,DRI,3D,VideoCard,Hardware Acceleration,Graphics,EGL
