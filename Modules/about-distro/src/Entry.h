@@ -8,6 +8,7 @@
 
 #include <KLocalizedString>
 #include <QLocale>
+#include <QObject>
 #include <QString>
 
 // Generic dumpable info entry.
@@ -16,17 +17,20 @@
 // All entries that are meant to be serializable should derive from this!
 // This class may either be subclassed or used as-is if label/value are trivial
 // to obtain.
-class Entry
+class Entry : public QObject
 {
+    Q_OBJECT
+    Q_DISABLE_COPY_MOVE(Entry)
 public:
     enum class Language {
         System,
         English,
     };
+    Q_ENUM(Language);
 
     // value may be empty if localizedValue is overridden
     Entry(const KLocalizedString &label_, const QString &value_);
-    virtual ~Entry();
+    ~Entry() override;
 
     // When false this entry is garbage (e.g. incomplete data) and shouldn't be rendered.
     bool isValid() const;
@@ -34,11 +38,11 @@ public:
     // Returns textual representation of entry.
     QString diagnosticLine(Language language = Language::System) const;
 
-    QString localizedLabel(Language language = Language::System) const;
+    Q_SCRIPTABLE QString localizedLabel(Language language = Language::System) const;
 
     // Returns the value by default. Needs to be overridden in subclasses if localization
     // is needed for the value.
-    virtual QString localizedValue(Language language = Language::System) const;
+    Q_SCRIPTABLE virtual QString localizedValue(Language language = Language::System) const;
 
 protected:
     // Returns localized QString for the given language.

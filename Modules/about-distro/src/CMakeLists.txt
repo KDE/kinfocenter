@@ -3,11 +3,9 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
 set(kcm_SRCS
     main.cpp
-    Module.cpp
     Entry.cpp
     PlasmaEntry.cpp
     KernelEntry.cpp
-    SectionLabel.cpp
     MemoryEntry.cpp
     GraphicsPlatformEntry.cpp
     CPUEntry.cpp
@@ -15,15 +13,17 @@ set(kcm_SRCS
     FancyString.cpp
 )
 
-ki18n_wrap_ui(kcm_SRCS Module.ui)
+add_library(kcm_about-distro MODULE ${kcm_SRCS})
 
-add_library(kcm_about_distro MODULE ${kcm_SRCS})
-
-target_link_libraries(kcm_about_distro
-    KF5::ConfigWidgets
+target_link_libraries(kcm_about-distro
     KF5::CoreAddons
     KF5::I18n
+    KF5::ConfigCore
+    KF5::QuickAddons
     KF5::Solid)
 
-install(TARGETS kcm_about_distro DESTINATION ${KDE_INSTALL_PLUGINDIR})
+kcoreaddons_desktop_to_json(kcm_about-distro "about-distro.desktop")
+kpackage_install_package(package kcm_about-distro kcms)
+
+install(TARGETS kcm_about-distro DESTINATION ${KDE_INSTALL_PLUGINDIR}/kcms)
 install(FILES about-distro.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR})
