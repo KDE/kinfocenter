@@ -1,38 +1,17 @@
-# KI18N Translation Domain for this library
+# SPDX-License-Identifier: BSD-3-Clause
+# SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
+
+find_package(lspci)
+set_package_properties(lspci PROPERTIES TYPE RUNTIME)
+
 add_definitions(-DTRANSLATION_DOMAIN=\"kcm_pci\")
 
-# OS Base includes
-include(../base/CMakeLists.txt)
+add_library(kcm_pci MODULE main.cpp)
+target_link_libraries(kcm_pci KF5::CoreAddons KF5::QuickAddons KF5::I18n KInfoCenterInternal)
 
-include_directories(
-	${CMAKE_CURRENT_SOURCE_DIR}/../base
-)
-
-########### next target ###############
-
-set(KCM_PCI_LIBS
-    KF5::ConfigWidgets
-    KF5::KCMUtils
-    KF5::I18n
-    KF5::IconThemes
-    ${X11_LIBRARIES}
-)
-
-set(KCM_PCI_PART_SRCS kcm_pci.cpp ../base/os_current.cpp )
-
-if(${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD")
-    set(KCM_PCI_LIBS ${KCM_PCI_LIBS} devinfo)
-endif()
-
-if(PCIUTILS_FOUND)
-    message(STATUS "Enabling PCI module based on pciutils library")
-    add_definitions(-DHAVE_PCIUTILS -fpermissive)
-
-    set(KCM_PCI_PART_SRCS ${KCM_PCI_PART_SRCS} kpci.cpp)
-    set(KCM_PCI_LIBS ${KCM_PCI_LIBS} ${PCIUTILS_LIBRARIES} ${ZLIB_LIBRARIES})
-endif()
-
-kcoreaddons_add_plugin(kcm_pci SOURCES ${KCM_PCI_PART_SRCS} INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
 kcoreaddons_desktop_to_json(kcm_pci "kcm_pci.desktop")
 
-target_link_libraries(kcm_pci ${KCM_PCI_LIBS} )
+install(FILES kcm_pci.desktop DESTINATION ${SERVICES_INSTALL_DIR})
+install(TARGETS kcm_pci DESTINATION ${PLUGIN_INSTALL_DIR}/kcms)
+
+kpackage_install_package(package kcm_pci kcms)

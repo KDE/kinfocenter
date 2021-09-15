@@ -66,56 +66,6 @@ bool GetInfo_IO_Ports(QTreeWidget *tree)
 #endif
 }
 
-bool GetInfo_PCI(QTreeWidget *tree)
-{
-    FILE *pipe;
-    QString s, cmd;
-    QTreeWidgetItem *olditem = NULL;
-
-    const QStringList headers(i18nc("@title:column Column name for PCI information", "Information"));
-    tree->setHeaderLabels(headers);
-
-    if (!QFileInfo(QLatin1String("/usr/sbin/pciconf")).exists()) {
-        QStringList list;
-        list << i18n("Could not find any programs with which to query your system's PCI information");
-        new QTreeWidgetItem(tree, list);
-        return true;
-    } else {
-        cmd = "/usr/sbin/pciconf -l -v 2>&1";
-    }
-
-    // TODO: GetInfo_ReadfromPipe should be improved so that we could pass the program name and its
-    //       arguments to it and remove most of the code below.
-    if ((pipe = popen(cmd.toLatin1(), "r")) == NULL) {
-        QStringList list;
-        list << i18n("PCI subsystem could not be queried: %1 could not be executed", cmd);
-        olditem = new QTreeWidgetItem(olditem, list);
-    } else {
-        /* This prints out a list of all the pci devies, perhaps eventually we could
-         parse it as opposed to schlepping it into a listbox */
-        QTextStream outputStream(pipe, QIODevice::ReadOnly);
-
-        while (!outputStream.atEnd()) {
-            s = outputStream.readLine();
-            if (s.isEmpty())
-                break;
-            const QStringList list(s);
-            new QTreeWidgetItem(tree, list);
-        }
-
-        pclose(pipe);
-    }
-
-    if (!tree->topLevelItemCount()) {
-        QString str = i18n("The PCI subsystem could not be queried, this may need root privileges.");
-        olditem = new QTreeWidgetItem(tree, olditem);
-        olditem->setText(0, str);
-        return true;
-    }
-
-    return true;
-}
-
 #ifdef HAVE_DEVINFO_H
 
 int print_dma(struct devinfo_rman *rman, void *arg)

@@ -2,14 +2,14 @@
 # SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
 [Desktop Entry]
 Type=Service
-TryExec=lspci
-Exec=kinfocenter kcm_pci
-Icon=hwinfo
-Categories=Qt;KDE;X-KDE-information;
-X-KDE-ServiceTypes=KCModule
-X-KDE-KInfoCenter-Category=device_information
-X-KDE-Library=kcm_pci
-X-KDE-ParentApp=kinfocenter
+X-KDE-PluginInfo-Author=Harald Sitter
+X-KDE-PluginInfo-Email=sitter@kde.org
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-Name=kcm_pci
+X-KDE-ServiceTypes=Plasma/GenericQml
+X-KDE-FormFactors=desktop
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=main.qml
 
 Name=PCI
 Name[af]=PCI

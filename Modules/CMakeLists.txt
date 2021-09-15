@@ -9,20 +9,10 @@ add_subdirectory(interrupts)
 add_subdirectory(xserver)
 add_subdirectory(egl)
 add_subdirectory(glx)
+add_subdirectory(pci)
 
 add_subdirectory( samba )
 add_subdirectory( nics )
-
-find_package(PCIUTILS MODULE)
-set_package_properties(PCIUTILS PROPERTIES DESCRIPTION "PciUtils is a library for direct access to PCI slots"
-                       URL "https://mj.ucw.cz/sw/pciutils"
-                       TYPE OPTIONAL
-                       PURPOSE "View PCI details in kinfocenter."
-                      )
-
-if(PCIUTILS_FOUND)
-    add_subdirectory( pci )
-endif()
 
 find_package(RAW1394 MODULE)
 set_package_properties(RAW1394 PROPERTIES DESCRIPTION "library for direct access to IEEE 1394 bus"

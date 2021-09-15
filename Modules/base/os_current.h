@@ -13,7 +13,6 @@ class QString;
 /* function call-back-prototypes... */
 
 bool GetInfo_DMA(QTreeWidget *tree);
-bool GetInfo_PCI(QTreeWidget *tree);
 bool GetInfo_IO_Ports(QTreeWidget *tree);
 
 #ifdef __linux__

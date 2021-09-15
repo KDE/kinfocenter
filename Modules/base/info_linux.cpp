@@ -12,10 +12,9 @@
 #include <syscall.h>
 #include <unistd.h>
 
-#ifdef HAVE_PCIUTILS
-#include "kpci.h"
-#endif // HAVE_PCIUTILS
 #include <QFile>
+#include <QTextStream>
+#include <QTreeWidget>
 
 #include <KLocalizedString>
 #include <QFontDatabase>
@@ -23,8 +22,6 @@
 #include <algorithm>
 
 #define INFO_DMA "/proc/dma"
-
-#define INFO_PCI "/proc/pci"
 
 #define INFO_IOPORTS "/proc/ioports"
 
@@ -106,29 +103,6 @@ bool GetInfo_DMA(QTreeWidget *tree)
     }
 
     return true;
-}
-
-bool GetInfo_PCI(QTreeWidget *tree)
-{
-    int num;
-
-#ifdef HAVE_PCIUTILS
-    if ((num = GetInfo_PCIUtils(tree))) {
-        return num;
-    }
-
-#endif // HAVE_PCIUTILS
-    tree->setHeaderHidden(true);
-    tree->setSortingEnabled(false);
-
-    /* try to get the output of the lspci package first */
-    if ((num = GetInfo_ReadfromPipe(tree, "lspci -v", true)) || (num = GetInfo_ReadfromPipe(tree, "/sbin/lspci -v", true))
-        || (num = GetInfo_ReadfromPipe(tree, "/usr/sbin/lspci -v", true)) || (num = GetInfo_ReadfromPipe(tree, "/usr/local/sbin/lspci -v", true))
-        || (num = GetInfo_ReadfromPipe(tree, "/usr/bin/lspci -v", true)))
-        return num;
-
-    /* if lspci failed, read the contents of /proc/pci */
-    return GetInfo_ReadfromFile(tree, INFO_PCI, 0);
 }
 
 bool GetInfo_IO_Ports(QTreeWidget *tree)

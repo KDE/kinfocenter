@@ -6,8 +6,6 @@
 
 #include "os_current.h"
 
-#include "os_base.h"
-
 #ifdef __linux__
 #include "info_linux.cpp"
 #elif defined(__FreeBSD__) || defined(__DragonFly__)

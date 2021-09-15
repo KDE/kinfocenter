@@ -40,16 +40,6 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     Declarative
 )
 
-find_package(X11)
-set_package_properties(X11 PROPERTIES DESCRIPTION "X11 libraries"
-    URL "https://www.x.org"
-    TYPE OPTIONAL
-    PURPOSE "Required for building the X11 based workspace"
-)
-if(X11_FOUND)
-    set(HAVE_X11 TRUE)
-endif()
-
 ecm_find_qmlmodule(org.kde.kirigami 2.5)
 
 find_package(SystemSettings QUIET)
@@ -65,8 +55,6 @@ remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_K
 add_definitions(-DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT)
 add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
 add_definitions(-DQT_USE_QSTRINGBUILDER)
-
-configure_file(config-X11.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-X11.h)
 
 add_subdirectory( Categories )
 add_subdirectory( kcontrol/menus )

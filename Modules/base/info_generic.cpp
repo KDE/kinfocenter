@@ -14,11 +14,6 @@ bool GetInfo_DMA(QTreeWidget *)
     return false;
 }
 
-bool GetInfo_PCI(QTreeWidget *)
-{
-    return false;
-}
-
 bool GetInfo_IO_Ports(QTreeWidget *)
 {
     return false;
