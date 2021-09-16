@@ -4,6 +4,7 @@ add_definitions(-DTRANSLATION_DOMAIN=\"kcmnic\")
 include(CheckSymbolExists)
 include(CheckStructHasMember)
 include(CheckFunctionExists)
+include(CheckIncludeFiles)
 
 check_include_files(sys/sockio.h HAVE_SYS_SOCKIO_H) # networkmodel.cpp
 check_symbol_exists(getnameinfo   "sys/socket.h;netdb.h" HAVE_GETNAMEINFO) # networkmodel.cpp
