@@ -1,7 +1,6 @@
 
 add_subdirectory( about-distro )
 add_subdirectory( devinfo )
-add_subdirectory( info )
 add_subdirectory(vulkan)
 add_subdirectory(cpu)
 add_subdirectory(wayland)
