@@ -25,7 +25,7 @@ target_link_libraries(kcm_nic
     KF5::CoreAddons
     KF5::KCMUtils
     KF5::QuickAddons)
-    
+
 target_compile_features(kcm_nic PUBLIC cxx_std_14)
 
 kcoreaddons_desktop_to_json(kcm_nic "kcm_nic.desktop")
