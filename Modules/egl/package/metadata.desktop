@@ -12,7 +12,28 @@ X-Plasma-API=declarativeappletscript
 X-Plasma-MainScript=main.qml
 
 Name=OpenGL (EGL)
+Name[az]=OpenGL (EGL)
+Name[ca]=OpenGL (EGL)
+Name[es]=OpenGL (EGL)
+Name[nl]=OpenGL (EGL)
+Name[sv]=OpenGL (EGL)
+Name[uk]=OpenGL (EGL)
+Name[x-test]=xxOpenGL (EGL)xx
 
 Comment=EGL information
+Comment[az]=EGL məlumatı
+Comment[ca]=Informació EGL
+Comment[es]=Información sobre EGL
+Comment[nl]=EGL-informatie
+Comment[sv]=Information om EGL
+Comment[uk]=Інформація про EGL
+Comment[x-test]=xxEGL informationxx
 
 X-KDE-Keywords=OpenGL,DRI,3D,VideoCard,Hardware Acceleration,Graphics,EGL
+X-KDE-Keywords[az]=OpenGL,DRI,3D,VideoCard,Hardware Acceleration,Graphics,EGL,Videokart,Avadanlıq sürətləndiricisi,Qrafukalar
+X-KDE-Keywords[ca]=OpenGL,DRI,3D,Targeta de vídeo,Acceleració per maquinari,Gràfics,EGL
+X-KDE-Keywords[es]=OpenGL,DRI,3D,tarjeta de vídeo,aceleración por hardware,gráficos,EGL
+X-KDE-Keywords[nl]=OpenGL,DRI,3D,Videokaart,Hardware versnelling,Grafisch,EGL
+X-KDE-Keywords[sv]=OpenGL,DRI,3D,Videokort,Maskinvaruacceleration,Grafik,EGL
+X-KDE-Keywords[uk]=OpenGL,DRI,3D,Vulkan,VideoCard,Hardware Acceleration,Graphics,EGL,вулкан,відеокартка,апаратне прискорення,графіка,оупенгл,оупенгеель,дрі,трид,егл,егеель
+X-KDE-Keywords[x-test]=xxOpenGLxx,xxDRIxx,xx3Dxx,xxVideoCardxx,xxHardware Accelerationxx,xxGraphicsxx,xxEGLxx
