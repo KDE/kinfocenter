@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Service
 Icon=ktip
-Exec=kinfocenter kcm_about-distro
+Exec=kinfocenter about-distro
 
 X-KDE-Library=kcm_about-distro
 X-KDE-ServiceTypes=KCModule
