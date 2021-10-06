@@ -16,9 +16,6 @@
 #include <unistd.h>
 
 #include "config-nic.h"
-#ifdef HAVE_SYS_SOCKIO_H
-#include <sys/sockio.h>
-#endif
 
 #include <KLocalizedString>
 
@@ -29,12 +26,10 @@
 #include <net/if.h>
 #include <sys/ioctl.h>
 
-#if defined(HAVE_GETIFADDRS)
 #include <ifaddrs.h>
 #include <netdb.h>
 
 QString flags_tos(unsigned int flags);
-#endif
 
 NetworkModel::NetworkModel(QObject *parent)
     : QAbstractListModel(parent)
@@ -89,21 +84,6 @@ void NetworkModel::update()
     m_nics = findNICs();
 }
 
-static QString HWaddr2String(const char *hwaddr)
-{
-    QString ret;
-    for (int i = 0; i < 6; i++, hwaddr++) {
-        int v = (*hwaddr & 0xff);
-        QString num = QStringLiteral("%1").arg(v, 0, 16);
-        if (num.length() < 2)
-            num.prepend(QStringLiteral("0"));
-        if (i > 0)
-            ret.append(QStringLiteral(":"));
-        ret.append(num);
-    }
-    return ret;
-}
-
 // Convenience wrapper around sa_len being available or not.
 static int getNameInfo(struct sockaddr *addr, struct ifaddrs *ifa, char *hostOut)
 {
@@ -124,92 +104,6 @@ QList<NetworkModel::MyNIC *> findNICs()
 {
     QList<NetworkModel::MyNIC *> nl;
 
-#if !defined(HAVE_GETIFADDRS)
-
-    int sockfd = socket(AF_INET, SOCK_DGRAM, 0);
-
-    char buf[8 * 1024];
-    struct ifconf ifc;
-    ifc.ifc_len = sizeof(buf);
-    ifc.ifc_req = (struct ifreq *)buf;
-    int result = ioctl(sockfd, SIOCGIFCONF, &ifc);
-
-    for (char *ptr = buf; ptr < buf + ifc.ifc_len;) {
-        struct ifreq *ifr = (struct ifreq *)ptr;
-#ifdef HAVE_STRUCT_SOCKADDR_SA_LEN
-        int len = sizeof(struct sockaddr);
-        if (ifr->ifr_addr.sa_len > len)
-            len = ifr->ifr_addr.sa_len; /* length > 16 */
-        ptr += sizeof(ifr->ifr_name) + len; /* for next one in buffer */
-#else
-        ptr += sizeof(*ifr); /* for next one in buffer */
-#endif
-
-        int flags;
-        struct sockaddr_in *sinptr;
-        MyNIC *tmp = nullptr;
-        switch (ifr->ifr_addr.sa_family) {
-        case AF_INET:
-            sinptr = (struct sockaddr_in *)&ifr->ifr_addr;
-            flags = 0;
-
-            struct ifreq ifcopy;
-            ifcopy = *ifr;
-            result = ioctl(sockfd, SIOCGIFFLAGS, &ifcopy);
-            flags = ifcopy.ifr_flags;
-
-            tmp = new MyNIC;
-            tmp->name = ifr->ifr_name;
-            tmp->state = ((flags & IFF_UP) == IFF_UP) ? upMessage : downMessage;
-
-            if ((flags & IFF_BROADCAST) == IFF_BROADCAST)
-                tmp->type = i18nc("@item:intext Mode of network card", "Broadcast");
-            else if ((flags & IFF_POINTOPOINT) == IFF_POINTOPOINT)
-                tmp->type = i18nc("@item:intext Mode of network card", "Point to Point");
-            else if ((flags & IFF_MULTICAST) == IFF_MULTICAST)
-                tmp->type = i18nc("@item:intext Mode of network card", "Multicast");
-            else if ((flags & IFF_LOOPBACK) == IFF_LOOPBACK)
-                tmp->type = i18nc("@item:intext Mode of network card", "Loopback");
-            else
-                tmp->type = i18nc("@item:intext Mode of network card", "Unknown");
-
-            tmp->addr = inet_ntoa(sinptr->sin_addr);
-
-            ifcopy = *ifr;
-            result = ioctl(sockfd, SIOCGIFNETMASK, &ifcopy);
-            if (result == 0) {
-                sinptr = (struct sockaddr_in *)&ifcopy.ifr_addr;
-                tmp->netmask = inet_ntoa(sinptr->sin_addr);
-            } else
-                tmp->netmask = i18nc("Unknown network mask", "Unknown");
-
-            ifcopy = *ifr;
-            result = -1; // if none of the two #ifs below matches, ensure that result!=0 so that "Unknown" is returned as result
-#ifdef SIOCGIFHWADDR
-            result = ioctl(sockfd, SIOCGIFHWADDR, &ifcopy);
-            if (result == 0) {
-                char *n = &ifcopy.ifr_ifru.ifru_hwaddr.sa_data[0];
-                tmp->HWaddr = HWaddr2String(n);
-            }
-#elif defined SIOCGENADDR
-            result = ioctl(sockfd, SIOCGENADDR, &ifcopy);
-            if (result == 0) {
-                char *n = &ifcopy.ifr_ifru.ifru_enaddr[0];
-                tmp->HWaddr = HWaddr2String(n);
-            }
-#endif
-            if (result != 0) {
-                tmp->HWaddr = i18nc("Unknown HWaddr", "Unknown");
-            }
-
-            nl.append(tmp);
-            break;
-
-        default:
-            break;
-        }
-    }
-#else
     struct ifaddrs *ifap = nullptr;
     if (getifaddrs(&ifap) != 0) {
         return nl;
@@ -252,11 +146,9 @@ QList<NetworkModel::MyNIC *> findNICs()
     }
 
     freeifaddrs(ifap);
-#endif
     return nl;
 }
 
-#if defined(HAVE_GETIFADDRS)
 QString flags_tos(unsigned int flags)
 {
     QString tmp;
@@ -286,4 +178,3 @@ QString flags_tos(unsigned int flags)
     }
     return tmp;
 }
-#endif

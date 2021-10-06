@@ -2,12 +2,9 @@
 add_definitions(-DTRANSLATION_DOMAIN=\"kcmnic\")
 
 include(CheckStructHasMember)
-include(CheckFunctionExists)
-include(CheckIncludeFiles)
 
-check_include_files(sys/sockio.h HAVE_SYS_SOCKIO_H) # networkmodel.cpp
+# sa_len is only available on freebsd, not linux.
 check_struct_has_member("struct sockaddr" "sa_len" "sys/socket.h" HAVE_STRUCT_SOCKADDR_SA_LEN) # networkmodel.cpp
-check_function_exists(getifaddrs  HAVE_GETIFADDRS)  # networkmodel.cpp
 
 configure_file(config-nic.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-nic.h)
 
