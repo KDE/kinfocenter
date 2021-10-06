@@ -166,10 +166,8 @@ QList<NetworkModel::MyNIC *> findNICs()
                 tmp->type = i18nc("@item:intext Mode of network card", "Broadcast");
             else if ((flags & IFF_POINTOPOINT) == IFF_POINTOPOINT)
                 tmp->type = i18nc("@item:intext Mode of network card", "Point to Point");
-#ifndef _AIX
             else if ((flags & IFF_MULTICAST) == IFF_MULTICAST)
                 tmp->type = i18nc("@item:intext Mode of network card", "Multicast");
-#endif
             else if ((flags & IFF_LOOPBACK) == IFF_LOOPBACK)
                 tmp->type = i18nc("@item:intext Mode of network card", "Loopback");
             else
