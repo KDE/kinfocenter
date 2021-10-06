@@ -1,13 +1,11 @@
 # KI18N Translation Domain for this library
 add_definitions(-DTRANSLATION_DOMAIN=\"kcmnic\")
 
-include(CheckSymbolExists)
 include(CheckStructHasMember)
 include(CheckFunctionExists)
 include(CheckIncludeFiles)
 
 check_include_files(sys/sockio.h HAVE_SYS_SOCKIO_H) # networkmodel.cpp
-check_symbol_exists(getnameinfo   "sys/socket.h;netdb.h" HAVE_GETNAMEINFO) # networkmodel.cpp
 check_struct_has_member("struct sockaddr" "sa_len" "sys/socket.h" HAVE_STRUCT_SOCKADDR_SA_LEN) # networkmodel.cpp
 check_function_exists(getifaddrs  HAVE_GETIFADDRS)  # networkmodel.cpp
 

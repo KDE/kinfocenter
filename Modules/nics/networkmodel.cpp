@@ -29,7 +29,7 @@
 #include <net/if.h>
 #include <sys/ioctl.h>
 
-#if defined(HAVE_GETNAMEINFO) && defined(HAVE_GETIFADDRS)
+#if defined(HAVE_GETIFADDRS)
 #include <ifaddrs.h>
 #include <netdb.h>
 
@@ -124,7 +124,7 @@ QList<NetworkModel::MyNIC *> findNICs()
 {
     QList<NetworkModel::MyNIC *> nl;
 
-#if !defined(HAVE_GETIFADDRS) || !defined(HAVE_GETNAMEINFO)
+#if !defined(HAVE_GETIFADDRS)
 
     int sockfd = socket(AF_INET, SOCK_DGRAM, 0);
 
@@ -256,7 +256,7 @@ QList<NetworkModel::MyNIC *> findNICs()
     return nl;
 }
 
-#if defined(HAVE_GETNAMEINFO) && defined(HAVE_GETIFADDRS)
+#if defined(HAVE_GETIFADDRS)
 QString flags_tos(unsigned int flags)
 {
     QString tmp;
