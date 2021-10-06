@@ -78,7 +78,8 @@ void KSambaShareModel::reloadData()
     beginResetModel();
     m_list.clear();
     const auto samba = KSambaShare::instance();
-    for (const auto &path : samba->sharedDirectories()) {
+    const QStringList sharedDirectories = samba->sharedDirectories();
+    for (const auto &path : sharedDirectories) {
         m_list += samba->getSharesByPath(path);
     }
     endResetModel();
