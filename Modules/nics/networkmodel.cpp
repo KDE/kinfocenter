@@ -1,6 +1,7 @@
 /*
  * SPDX-FileCopyrightText: 2001 Alexander Neundorf <neundorf@kde.org>
  * SPDX-FileCopyrightText: 2020 Carl Schwan <carl@carlschwan.eu>
+ * SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
  *
  * SPDX-License-Identifier: GPL-2.0-or-later
  */
@@ -17,6 +18,8 @@
 
 #include "config-nic.h"
 
+#include <array>
+
 #include <KLocalizedString>
 
 #include <QDebug>
@@ -28,6 +31,8 @@
 
 #include <ifaddrs.h>
 #include <netdb.h>
+
+using HostNameArray = std::array<char, NI_MAXHOST>;
 
 QString flags_tos(unsigned int flags);
 
@@ -85,15 +90,16 @@ void NetworkModel::update()
 }
 
 // Convenience wrapper around sa_len being available or not.
-static int getNameInfo(struct sockaddr *addr, struct ifaddrs *ifa, char *hostOut)
+static int getNameInfo(struct sockaddr *addr, struct ifaddrs *ifa, HostNameArray &hostOut)
 {
+    hostOut.fill(0);
 #ifdef HAVE_STRUCT_SOCKADDR_SA_LEN
-    return getnameinfo(addr, ifa->ifa_addr->sa_len, hostOut, 127, nullptr, 0, NI_NUMERICHOST);
+    return getnameinfo(addr, ifa->ifa_addr->sa_len, hostOut.data(), hostOut.size(), nullptr, 0, NI_NUMERICHOST);
 #else
     return getnameinfo(addr,
                        (ifa->ifa_addr->sa_family == AF_INET) ? sizeof(struct sockaddr_in) : sizeof(struct sockaddr_in6),
-                       hostOut,
-                       NI_MAXHOST,
+                       hostOut.data(),
+                       hostOut.size(),
                        nullptr,
                        0,
                        NI_NUMERICHOST);
@@ -109,7 +115,6 @@ QList<NetworkModel::MyNIC *> findNICs()
         return nl;
     }
 
-    NetworkModel::MyNIC *tmp = nullptr;
     for (auto *ifa = ifap; ifa; ifa = ifa->ifa_next) {
         if (!ifa->ifa_addr) {
             qDebug() << "stumbled over an interface without ifa_addr. You may wish to file a bug against kinfocenter" << ifa->ifa_name << ifa->ifa_flags;
@@ -119,19 +124,17 @@ QList<NetworkModel::MyNIC *> findNICs()
         switch (ifa->ifa_addr->sa_family) {
         case AF_INET6:
         case AF_INET: {
-            tmp = new NetworkModel::MyNIC;
+            auto tmp = new NetworkModel::MyNIC;
             tmp->name = ifa->ifa_name;
 
-            char buf[128];
+            HostNameArray hostBuffer;
 
-            bzero(buf, 128);
-            getNameInfo(ifa->ifa_addr, ifa, buf);
-            tmp->addr = buf;
+            getNameInfo(ifa->ifa_addr, ifa, hostBuffer);
+            tmp->addr = hostBuffer.data();
 
             if (ifa->ifa_netmask != nullptr) {
-                bzero(buf, 128);
-                getNameInfo(ifa->ifa_netmask, ifa, buf);
-                tmp->netmask = buf;
+                getNameInfo(ifa->ifa_netmask, ifa, hostBuffer);
+                tmp->netmask = hostBuffer.data();
             }
 
             tmp->state = (ifa->ifa_flags & IFF_UP) ? true : false;
