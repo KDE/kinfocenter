@@ -210,13 +210,13 @@ QList<NetworkModel::MyNIC *> findNICs()
         }
     }
 #else
-    struct ifaddrs *ifap, *ifa;
+    struct ifaddrs *ifap;
     if (getifaddrs(&ifap) != 0) {
         return nl;
     }
 
     NetworkModel::MyNIC *tmp = nullptr;
-    for (ifa = ifap; ifa; ifa = ifa->ifa_next) {
+    for (auto *ifa = ifap; ifa; ifa = ifa->ifa_next) {
         if (!ifa->ifa_addr) {
             qDebug() << "stumbled over an interface without ifa_addr. You may wish to file a bug against kinfocenter" << ifa->ifa_name << ifa->ifa_flags;
             continue;
