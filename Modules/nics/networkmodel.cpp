@@ -210,7 +210,7 @@ QList<NetworkModel::MyNIC *> findNICs()
         }
     }
 #else
-    struct ifaddrs *ifap;
+    struct ifaddrs *ifap = nullptr;
     if (getifaddrs(&ifap) != 0) {
         return nl;
     }
