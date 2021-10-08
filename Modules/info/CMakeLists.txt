@@ -30,6 +30,11 @@ target_link_libraries(kcm_info_static
     KF5::IconThemes
     ${X11_X11_LIB})
 
+if(${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD")
+    target_link_libraries(kcm_info_static devinfo)
+endif()
+
+
 kcoreaddons_add_plugin(kcm_dma SOURCES kcm_dma.cpp INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
 kcoreaddons_desktop_to_json(kcm_dma "dma.desktop")
 target_link_libraries(kcm_dma kcm_info_static)
