@@ -30,17 +30,6 @@ target_link_libraries(kcm_info_static
     KF5::IconThemes
     ${X11_X11_LIB})
 
-if(${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD")
-    target_link_libraries(kcm_info_staticdevinfo)
-endif()
-
-if(KF5Wayland_FOUND)
-    target_link_libraries(kcm_info_static KF5::WaylandClient)
-    kcoreaddons_add_plugin(kcm_wayland SOURCES kcm_wayland.cpp INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
-    kcoreaddons_desktop_to_json(kcm_wayland "wayland.desktop")
-    target_link_libraries(kcm_wayland kcm_info_static)
-endif()
-
 kcoreaddons_add_plugin(kcm_dma SOURCES kcm_dma.cpp INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
 kcoreaddons_desktop_to_json(kcm_dma "dma.desktop")
 target_link_libraries(kcm_dma kcm_info_static)
