@@ -26,8 +26,6 @@ class StatisticsProvider : public QObject, public QQmlParserStatus
     Q_OBJECT
     Q_INTERFACES(QQmlParserStatus)
 
-    Q_ENUMS(HistoryType)
-
     Q_PROPERTY(QString device MEMBER m_device WRITE setDevice NOTIFY deviceChanged)
     Q_PROPERTY(uint duration MEMBER m_duration WRITE setDuration NOTIFY durationChanged)
     Q_PROPERTY(HistoryType type MEMBER m_type WRITE setType NOTIFY typeChanged)
@@ -43,6 +41,7 @@ public:
         RateType,
         ChargeType,
     };
+    Q_ENUM(HistoryType)
 
     enum HistoryRoles {
         TimeRole = Qt::UserRole + 1,

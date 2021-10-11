@@ -105,7 +105,7 @@ void WakeUpModel::reload()
             if (!(*it).fromUserSpace) {
                 continue;
             }
-            const QString appName = (*it).cmdline.split(QLatin1Char(' '), QString::SkipEmptyParts).first(); // ugly
+            const QString appName = (*it).cmdline.split(QLatin1Char(' '), Qt::SkipEmptyParts).first(); // ugly
             if (!m_combinedData.contains(appName)) {
                 m_combinedData[appName].name = appName;
                 m_combinedData[appName].userSpace = (*it).fromUserSpace;
@@ -136,7 +136,7 @@ void WakeUpModel::reload()
                     m_applicationInfo.insert(name, qMakePair((*it).prettyName, (*it).iconName));
                 } else {
                     // use the app name as fallback icon
-                    (*it).iconName = name.split(QLatin1Char('/'), QString::SkipEmptyParts).last().toLower();
+                    (*it).iconName = name.split(QLatin1Char('/'), Qt::SkipEmptyParts).last().toLower();
                 }
             }
 
