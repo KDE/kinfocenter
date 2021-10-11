@@ -15,9 +15,10 @@
  */
 
 #include "config-infocenter.h" // HAVE_DEVINFO_H
-#include <sys/sysctl.h>
+// clang-format off
 #include <sys/types.h>
-
+#include <sys/sysctl.h>
+// clang-format on
 #ifdef HAVE_DEVINFO_H
 extern "C" {
 #include <devinfo.h>
