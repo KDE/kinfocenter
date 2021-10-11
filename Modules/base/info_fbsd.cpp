@@ -31,6 +31,10 @@ extern "C" {
 
 #include <QTextStream>
 
+#include <QTreeWidget>
+
+#include <QTreeWidgetItem>
+
 void ProcessChildren(QString name);
 
 #ifdef HAVE_DEVINFO_H
