@@ -11,7 +11,6 @@ target_link_libraries(kcm_pci KF5::CoreAddons KF5::QuickAddons KF5::I18n KInfoCe
 
 kcoreaddons_desktop_to_json(kcm_pci "kcm_pci.desktop")
 
-install(FILES kcm_pci.desktop DESTINATION ${SERVICES_INSTALL_DIR})
-install(TARGETS kcm_pci DESTINATION ${PLUGIN_INSTALL_DIR}/kcms)
+install(TARGETS kcm_pci DESTINATION ${PLUGIN_INSTALL_DIR}/plasma/kcms/kinfocenter)
 
 kpackage_install_package(package kcm_pci kcms)

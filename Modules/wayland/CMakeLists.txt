@@ -14,7 +14,6 @@ target_link_libraries(kcm_wayland KF5::CoreAddons KF5::QuickAddons KF5::I18n KIn
 
 kcoreaddons_desktop_to_json(kcm_wayland "kcm_wayland.desktop")
 
-install(FILES kcm_wayland.desktop DESTINATION ${SERVICES_INSTALL_DIR})
-install(TARGETS kcm_wayland DESTINATION ${PLUGIN_INSTALL_DIR}/kcms)
+install(TARGETS kcm_wayland DESTINATION ${PLUGIN_INSTALL_DIR}/plasma/kcms/kinfocenter)
 
 kpackage_install_package(package kcm_wayland kcms)

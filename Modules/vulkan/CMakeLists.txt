@@ -11,7 +11,6 @@ target_link_libraries(kcm_vulkan KF5::CoreAddons KF5::QuickAddons KF5::I18n KInf
 
 kcoreaddons_desktop_to_json(kcm_vulkan "kcm_vulkan.desktop")
 
-install(FILES kcm_vulkan.desktop DESTINATION ${SERVICES_INSTALL_DIR})
-install(TARGETS kcm_vulkan DESTINATION ${PLUGIN_INSTALL_DIR}/kcms)
+install(TARGETS kcm_vulkan DESTINATION ${PLUGIN_INSTALL_DIR}/plasma/kcms/kinfocenter)
 
 kpackage_install_package(package kcm_vulkan kcms)

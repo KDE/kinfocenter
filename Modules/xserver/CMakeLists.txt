@@ -11,7 +11,6 @@ target_link_libraries(kcm_xserver KF5::CoreAddons KF5::QuickAddons KF5::I18n KIn
 
 kcoreaddons_desktop_to_json(kcm_xserver "kcm_xserver.desktop")
 
-install(FILES kcm_xserver.desktop DESTINATION ${SERVICES_INSTALL_DIR})
-install(TARGETS kcm_xserver DESTINATION ${PLUGIN_INSTALL_DIR}/kcms)
+install(TARGETS kcm_xserver DESTINATION ${PLUGIN_INSTALL_DIR}/plasma/kcms/kinfocenter)
 
 kpackage_install_package(package kcm_xserver kcms)
