@@ -14,3 +14,4 @@ kcoreaddons_desktop_to_json(kcm_xserver "kcm_xserver.desktop")
 install(TARGETS kcm_xserver DESTINATION ${PLUGIN_INSTALL_DIR}/plasma/kcms/kinfocenter)
 
 kpackage_install_package(package kcm_xserver kcms)
+install(PROGRAMS kcm_xserver.desktop DESTINATION  ${KDE_INSTALL_DATADIR}/kcms)

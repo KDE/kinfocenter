@@ -14,3 +14,4 @@ kcoreaddons_desktop_to_json(kcm_vulkan "kcm_vulkan.desktop")
 install(TARGETS kcm_vulkan DESTINATION ${PLUGIN_INSTALL_DIR}/plasma/kcms/kinfocenter)
 
 kpackage_install_package(package kcm_vulkan kcms)
+install(PROGRAMS kcm_vulkan.desktop DESTINATION  ${KDE_INSTALL_DATADIR}/kcms)

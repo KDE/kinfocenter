@@ -17,3 +17,4 @@ kcoreaddons_desktop_to_json(kcm_wayland "kcm_wayland.desktop")
 install(TARGETS kcm_wayland DESTINATION ${PLUGIN_INSTALL_DIR}/plasma/kcms/kinfocenter)
 
 kpackage_install_package(package kcm_wayland kcms)
+install(PROGRAMS kcm_wayland.desktop DESTINATION  ${KDE_INSTALL_DATADIR}/kcms)

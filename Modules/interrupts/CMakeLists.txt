@@ -9,3 +9,4 @@ target_link_libraries(kcm_interrupts KF5::CoreAddons KF5::QuickAddons KF5::I18n 
 kcoreaddons_desktop_to_json(kcm_interrupts "kcm_interrupts.desktop")
 
 kpackage_install_package(package kcm_interrupts kcms)
+install(PROGRAMS kcm_interrupts.desktop DESTINATION  ${KDE_INSTALL_DATADIR}/kcms)

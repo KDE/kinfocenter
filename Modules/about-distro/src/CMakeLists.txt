@@ -14,7 +14,7 @@ set(kcm_SRCS
 )
 
 kcoreaddons_add_plugin(kcm_about-distro SOURCES ${kcm_SRCS} INSTALL_NAMESPACE "plasma/kcms")
-kcoreaddons_desktop_to_json(kcm_about-distro "about-distro.desktop")
+kcoreaddons_desktop_to_json(kcm_about-distro "kcm_about-distro.desktop")
 
 target_link_libraries(kcm_about-distro
     KF5::CoreAddons
@@ -23,5 +23,5 @@ target_link_libraries(kcm_about-distro
     KF5::QuickAddons
     KF5::Solid)
 
-kcoreaddons_desktop_to_json(kcm_about-distro "about-distro.desktop")
+install(FILES kcm_about-distro.desktop DESTINATION  ${KDE_INSTALL_KSERVICES5DIR}/kcms)
 kpackage_install_package(package kcm_about-distro kcms)

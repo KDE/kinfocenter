@@ -23,3 +23,4 @@ target_link_libraries(kcm_energyinfo
 )
 
 kpackage_install_package(package kcm_energyinfo kcms)
+install(PROGRAMS kcm_energyinfo.desktop DESTINATION  ${KDE_INSTALL_DATADIR}/kcms)

@@ -25,3 +25,4 @@ target_link_libraries(kcm_nic
 target_compile_features(kcm_nic PUBLIC cxx_std_14)
 
 kpackage_install_package(package kcm_nic kcms)
+install(PROGRAMS kcm_nic.desktop DESTINATION  ${KDE_INSTALL_DATADIR}/kcms)

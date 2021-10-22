@@ -14,3 +14,4 @@ kcoreaddons_desktop_to_json(kcm_pci "kcm_pci.desktop")
 install(TARGETS kcm_pci DESTINATION ${PLUGIN_INSTALL_DIR}/plasma/kcms/kinfocenter)
 
 kpackage_install_package(package kcm_pci kcms)
+install(PROGRAMS kcm_pci.desktop DESTINATION  ${KDE_INSTALL_DATADIR}/kcms)

@@ -14,3 +14,4 @@ kcoreaddons_desktop_to_json(kcm_glx "kcm_glx.desktop")
 install(TARGETS kcm_glx DESTINATION ${PLUGIN_INSTALL_DIR}/plasma/kcms/kinfocenter)
 
 kpackage_install_package(package kcm_glx kcms)
+install(PROGRAMS kcm_glx.desktop DESTINATION  ${KDE_INSTALL_DATADIR}/kcms)
