@@ -22,7 +22,7 @@ class KCMEnergyInfo : public KQuickAddons::ConfigModule
 
 public:
     explicit KCMEnergyInfo(QObject *parent, const QVariantList &args);
-    virtual ~KCMEnergyInfo() = default;
+    ~KCMEnergyInfo() override = default;
 
     BatteryModel *batteries() const
     {

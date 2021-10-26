@@ -32,7 +32,7 @@ public:
     };
 
     explicit NetworkModel(QObject *parent = nullptr);
-    virtual ~NetworkModel() = default;
+    ~NetworkModel() override = default;
 
     virtual QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
     virtual QHash<int, QByteArray> roleNames() const override;

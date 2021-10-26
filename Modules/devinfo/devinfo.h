@@ -20,7 +20,7 @@ class DevInfoPlugin : public KCModule
 
 public:
     explicit DevInfoPlugin(QWidget *parent, const QVariantList &);
-    ~DevInfoPlugin();
+    ~DevInfoPlugin() override;
 
     void updateStatus(const QString &uid);
 

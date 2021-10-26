@@ -35,7 +35,7 @@ class WakeUpModel : public QAbstractListModel
 
 public:
     explicit WakeUpModel(QObject *parent);
-    virtual ~WakeUpModel() = default;
+    ~WakeUpModel() override = default;
 
     enum Roles {
         PidRole = Qt::UserRole,

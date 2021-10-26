@@ -21,7 +21,7 @@ class BatteryModel : public QAbstractListModel
 
 public:
     explicit BatteryModel(QObject *parent);
-    virtual ~BatteryModel() = default;
+    ~BatteryModel() override = default;
 
     enum Roles {
         BatteryRole = Qt::UserRole,

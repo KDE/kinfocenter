@@ -29,7 +29,7 @@ class InfoPanel : public QGroupBox
 
 public:
     explicit InfoPanel(QWidget *, DevInfoPlugin *);
-    ~InfoPanel();
+    ~InfoPanel() override;
 
     void setTopInfo(const QIcon &, Solid::Device *);
     void setBottomInfo(QVListLayout *lay);
