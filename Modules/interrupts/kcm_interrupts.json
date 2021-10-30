@@ -239,6 +239,5 @@
     "X-KDE-Keywords[vi]": "Interrupts,IRQ,System Information,Ngắt,Thông tin hệ thống",
     "X-KDE-Keywords[x-test]": "xxInterruptsxx,xxIRQxx,xxSystem Informationxx",
     "X-KDE-Keywords[zh_CN]": "Interrupts,IRQ,System Information,中断,系统信息",
-    "X-KDE-Keywords[zh_TW]": "Interrupts,IRQ,System Information",
-    "X-KDE-ParentApp": "kinfocenter"
+    "X-KDE-Keywords[zh_TW]": "Interrupts,IRQ,System Information"
 }

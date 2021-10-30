@@ -82,6 +82,5 @@
     "X-KDE-Keywords[uk]": "cpu,amd,intel,arm,instructions,cores,architecture,byte order,процесор,амд,інтел,арм,інструкції,ядра,архітектура,порядок байтів",
     "X-KDE-Keywords[vi]": "cpu,amd,intel,arm,instructions,cores,architecture,byte order,lệnh,lõi,kiến trúc,thứ tự byte",
     "X-KDE-Keywords[x-test]": "xxcpuxx,xxamdxx,xxintelxx,xxarmxx,xxinstructionsxx,xxcoresxx,xxarchitecturexx,xxbyte orderxx",
-    "X-KDE-Keywords[zh_CN]": "cpu,amd,intel,arm,instructions,cores,architecture,byte order,中央处理器,处理器,指令集,处理器核心,核心,内核,核心数量,架构,体系,字节顺序",
-    "X-KDE-ParentApp": "kinfocenter"
+    "X-KDE-Keywords[zh_CN]": "cpu,amd,intel,arm,instructions,cores,architecture,byte order,中央处理器,处理器,指令集,处理器核心,核心,内核,核心数量,架构,体系,字节顺序"
 }

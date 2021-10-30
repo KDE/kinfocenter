@@ -118,7 +118,6 @@
     "X-KDE-Keywords[x-test]": "xxaboutxx,xxinfoxx,xxinformationxx,xxdistributionxx,xxdistroxx,xxsystemxx,xxkernelxx,xxqtxx,xxkdexx",
     "X-KDE-Keywords[zh_CN]": "about,info,information,distribution,distro,system,kernel,qt,kde,关于,信息,发行版,系统,内核,qt,kde",
     "X-KDE-Keywords[zh_TW]": "about,info,information,distribution,distro,system,kernel,qt,kde,關於,資訊,信息,發行版,發行,系統,核心,內核",
-    "X-KDE-ParentApp": "kinfocenter",
     "X-KDE-System-Settings-Parent-Category": "system-administration",
     "X-KDE-Weight": 0
 }

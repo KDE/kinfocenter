@@ -150,6 +150,5 @@
     "X-KDE-Keywords[zh_TW]": "Wayland,Compositor,Display,System Information",
     "X-KDE-OnlyShowOnQtPlatforms": [
         "wayland;"
-    ],
-    "X-KDE-ParentApp": "kinfocenter"
+    ]
 }

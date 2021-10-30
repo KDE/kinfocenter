@@ -189,6 +189,5 @@
         "Name[zh_TW]": "網路介面"
     },
     "X-DocPath": "kinfocenter/nic.html",
-    "X-KDE-KInfoCenter-Category": "network_information",
-    "X-KDE-ParentApp": "kinfocenter"
+    "X-KDE-KInfoCenter-Category": "network_information"
 }

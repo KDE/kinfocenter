@@ -241,6 +241,5 @@
     "X-KDE-Keywords[vi]": "X,X-Server,XServer,XFree86,Display,VideoCard,System Information,Máy chủ X,Hiển thị,Bo mạch đồ hoạ,Thông tin hệ thống",
     "X-KDE-Keywords[x-test]": "xxXxx,xxX-Serverxx,xxXServerxx,xxXFree86xx,xxDisplayxx,xxVideoCardxx,xxSystem Informationxx",
     "X-KDE-Keywords[zh_CN]": "X,X-Server,XServer,XFree86,Display,VideoCard,System Information,X 服务器,显示,显示器,显卡,GPU,系统信息",
-    "X-KDE-Keywords[zh_TW]": "X,X-Server,XServer,XFree86,Display,VideoCard,System Information",
-    "X-KDE-ParentApp": "kinfocenter"
+    "X-KDE-Keywords[zh_TW]": "X,X-Server,XServer,XFree86,Display,VideoCard,System Information"
 }

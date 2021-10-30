@@ -101,6 +101,5 @@
     "X-KDE-Keywords[vi]": "OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display,Bo mạch đồ hoạ,Tăng tốc phần cứng,Đồ hoạ,Máy chủ X,Hiển thị",
     "X-KDE-Keywords[x-test]": "xxOpenGLxx,xxDRIxx,xxGLXxx,xx3Dxx,xxVideoCardxx,xxHardware Accelerationxx,xxGraphicsxx,xxXxx,xxX11xx,xxXserverxx,xxX-Serverxx,xxXFree86xx,xxDisplayxx",
     "X-KDE-Keywords[zh_CN]": "OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display,三维,立体,GPU,显卡,硬件加速,图形,X 服务器,显示",
-    "X-KDE-Keywords[zh_TW]": "OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display",
-    "X-KDE-ParentApp": "kinfocenter"
+    "X-KDE-Keywords[zh_TW]": "OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display"
 }

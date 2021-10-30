@@ -240,6 +240,5 @@
     "X-KDE-Keywords[vi]": "SMB,SAMBA,Windows network,LAN,System Information,Mạng Windows,Thông tin hệ thống",
     "X-KDE-Keywords[x-test]": "xxSMBxx,xxSAMBAxx,xxWindows networkxx,xxLANxx,xxSystem Informationxx",
     "X-KDE-Keywords[zh_CN]": "SMB,SAMBA,Windows network,LAN,System Information,Windows 网络,网上邻居,局域网,共享,系统信息",
-    "X-KDE-Keywords[zh_TW]": "SMB,SAMBA,Windows network,LAN,System Information",
-    "X-KDE-ParentApp": "kinfocenter"
+    "X-KDE-Keywords[zh_TW]": "SMB,SAMBA,Windows network,LAN,System Information"
 }

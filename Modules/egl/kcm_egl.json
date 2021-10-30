@@ -76,6 +76,5 @@
     "X-KDE-Keywords[uk]": "OpenGL,DRI,3D,Vulkan,VideoCard,Hardware Acceleration,Graphics,EGL,вулкан,відеокартка,апаратне прискорення,графіка,оупенгл,оупенгеель,дрі,трид,егл,егеель",
     "X-KDE-Keywords[vi]": "OpenGL,DRI,3D,VideoCard,Hardware Acceleration,Graphics,EGL,Bo mạch đồ hoạ,Tăng tốc phần cứng,Đồ hoạ",
     "X-KDE-Keywords[x-test]": "xxOpenGLxx,xxDRIxx,xx3Dxx,xxVideoCardxx,xxHardware Accelerationxx,xxGraphicsxx,xxEGLxx",
-    "X-KDE-Keywords[zh_CN]": "OpenGL,DRI,3D,VideoCard,Hardware Acceleration,Graphics,EGL,三维,显卡,硬件,加速,图形,GPU,显示",
-    "X-KDE-ParentApp": "kinfocenter"
+    "X-KDE-Keywords[zh_CN]": "OpenGL,DRI,3D,VideoCard,Hardware Acceleration,Graphics,EGL,三维,显卡,硬件,加速,图形,GPU,显示"
 }

@@ -172,6 +172,5 @@
     "X-KDE-Keywords[x-test]": "xxdevicexx,xxdevicesxx,xxdiskxx,xxdrivexx,xxprocessorxx,xxcpuxx",
     "X-KDE-Keywords[zh_CN]": "device,devices,disk,drive,processor,cpu,设备,磁盘,存储,硬盘,驱动器,处理器,中央处理器",
     "X-KDE-Keywords[zh_TW]": "device,devices,disk,drive,processor,cpu,裝置,磁碟,硬碟,磁碟機,硬碟機,裝置,設備,處理器,CPU",
-    "X-KDE-ParentApp": "kinfocenter",
     "X-KDE-Weight": 0
 }
