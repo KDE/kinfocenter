@@ -14,7 +14,6 @@ set(kcm_nic_PART_SRCS
     networkmodel.cpp)
 
 kcoreaddons_add_plugin(kcm_nic SOURCES ${kcm_nic_PART_SRCS} INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
-kcoreaddons_desktop_to_json(kcm_nic "kcm_nic.desktop")
 
 target_link_libraries(kcm_nic
     KF5::I18n

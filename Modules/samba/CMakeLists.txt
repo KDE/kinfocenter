@@ -21,7 +21,6 @@ target_link_libraries(kcm_samba_static
 set(kcm_samba_SRCS main.cpp)
 qt_add_dbus_interface(kcm_samba_SRCS org.freedesktop.DBus.Properties.xml org.freedesktop.DBus.Properties)
 kcoreaddons_add_plugin(kcm_samba SOURCES ${kcm_samba_SRCS} INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
-kcoreaddons_desktop_to_json(kcm_samba "smbstatus.desktop")
 target_link_libraries(kcm_samba
     KF5::QuickAddons
     kcm_samba_static

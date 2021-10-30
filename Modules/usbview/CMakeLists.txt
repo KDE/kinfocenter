@@ -6,6 +6,5 @@ add_definitions(-DTRANSLATION_DOMAIN=\"kcmusb\")
 set(kcm_usb_PART_SRCS kcmusb.cpp usbdevices.cpp usbdb.cpp )
 
 kcoreaddons_add_plugin(kcm_usb SOURCES ${kcm_usb_PART_SRCS} INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
-kcoreaddons_desktop_to_json(kcm_usb "kcmusb.desktop")
 
 target_link_libraries(kcm_usb KF5::KCMUtils KF5::I18n Libusb-1.0)

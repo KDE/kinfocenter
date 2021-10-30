@@ -9,7 +9,6 @@ set(kcm_energyinfo_SRCS
 )
 
 kcoreaddons_add_plugin(kcm_energyinfo SOURCES ${kcm_energyinfo_SRCS} INSTALL_NAMESPACE "plasma/kcms")
-kcoreaddons_desktop_to_json(kcm_energyinfo "kcm_energyinfo.desktop")
 
 target_link_libraries(kcm_energyinfo
   Qt::DBus
