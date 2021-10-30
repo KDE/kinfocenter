@@ -53,10 +53,7 @@
         "Name[uk]": "Vulkan",
         "Name[vi]": "Vulkan",
         "Name[x-test]": "xxVulkanxx",
-        "Name[zh_CN]": "Vulkan",
-        "ServiceTypes": [
-            "KCModule"
-        ]
+        "Name[zh_CN]": "Vulkan"
     },
     "TryExec": "vulkaninfo",
     "X-KDE-KInfoCenter-Category": "graphical_information",

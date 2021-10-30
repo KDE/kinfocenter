@@ -186,10 +186,7 @@
         "Name[x-test]": "xxX-Serverxx",
         "Name[xh]": "Umncedisi we-X",
         "Name[zh_CN]": "X 服务器",
-        "Name[zh_TW]": "X 伺服器",
-        "ServiceTypes": [
-            "KCModule"
-        ]
+        "Name[zh_TW]": "X 伺服器"
     },
     "TryExec": "xdpyinfo",
     "X-DocPath": "kinfocenter/xserver.html",

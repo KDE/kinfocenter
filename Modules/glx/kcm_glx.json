@@ -49,10 +49,7 @@
         "Name[uk]": "OpenGL (GLX)",
         "Name[vi]": "OpenGL (GLX)",
         "Name[x-test]": "xxOpenGL (GLX)xx",
-        "Name[zh_CN]": "OpenGL (GLX)",
-        "ServiceTypes": [
-            "KCModule"
-        ]
+        "Name[zh_CN]": "OpenGL (GLX)"
     },
     "TryExec": "glxinfo",
     "X-KDE-KInfoCenter-Category": "graphical_information",

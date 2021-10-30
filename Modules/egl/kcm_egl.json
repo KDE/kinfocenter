@@ -49,10 +49,7 @@
         "Name[uk]": "OpenGL (EGL)",
         "Name[vi]": "OpenGL (EGL)",
         "Name[x-test]": "xxOpenGL (EGL)xx",
-        "Name[zh_CN]": "OpenGL (EGL)",
-        "ServiceTypes": [
-            "KCModule"
-        ]
+        "Name[zh_CN]": "OpenGL (EGL)"
     },
     "TryExec": "eglinfo",
     "X-KDE-KInfoCenter-Category": "graphical_information",

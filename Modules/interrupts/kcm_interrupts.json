@@ -185,10 +185,7 @@
         "Name[x-test]": "xxInterruptsxx",
         "Name[xh]": "Iziphazamiso",
         "Name[zh_CN]": "中断",
-        "Name[zh_TW]": "中斷",
-        "ServiceTypes": [
-            "KCModule"
-        ]
+        "Name[zh_TW]": "中斷"
     },
     "X-KDE-KInfoCenter-Category": "device_information",
     "X-KDE-Keywords": "Interrupts,IRQ,System Information",

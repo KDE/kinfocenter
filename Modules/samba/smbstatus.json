@@ -186,10 +186,7 @@
         "Name[x-test]": "xxSamba Statusxx",
         "Name[xh]": "Isimo se Samba",
         "Name[zh_CN]": "SAMBA 状态",
-        "Name[zh_TW]": "Samba 狀態",
-        "ServiceTypes": [
-            "KCModule"
-        ]
+        "Name[zh_TW]": "Samba 狀態"
     },
     "X-DocPath": "kinfocenter/smbstatus.html",
     "X-KDE-KInfoCenter-Category": "network_information",

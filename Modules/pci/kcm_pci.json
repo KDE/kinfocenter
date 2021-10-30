@@ -186,10 +186,7 @@
         "Name[x-test]": "xxPCIxx",
         "Name[xh]": "PCI",
         "Name[zh_CN]": "PCI",
-        "Name[zh_TW]": "PCI",
-        "ServiceTypes": [
-            "KCModule"
-        ]
+        "Name[zh_TW]": "PCI"
     },
     "TryExec": "lspci",
     "X-KDE-KInfoCenter-Category": "device_information",

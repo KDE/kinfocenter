@@ -53,10 +53,7 @@
         "Name[uk]": "Процесор",
         "Name[vi]": "CPU",
         "Name[x-test]": "xxCPUxx",
-        "Name[zh_CN]": "CPU",
-        "ServiceTypes": [
-            "KCModule"
-        ]
+        "Name[zh_CN]": "CPU"
     },
     "TryExec": "lscpu",
     "X-KDE-KInfoCenter-Category": "device_information",

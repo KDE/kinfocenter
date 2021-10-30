@@ -89,10 +89,7 @@
         "Name[vi]": "Năng lượng",
         "Name[x-test]": "xxEnergyxx",
         "Name[zh_CN]": "电量",
-        "Name[zh_TW]": "電量",
-        "ServiceTypes": [
-            "KCModule"
-        ]
+        "Name[zh_TW]": "電量"
     },
     "X-KDE-KInfoCenter-Category": "basic_information",
     "X-KDE-Keywords": "Battery,Energy,Statistics,History,Power",

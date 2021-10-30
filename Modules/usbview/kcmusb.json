@@ -178,10 +178,7 @@
         "Name[x-test]": "xxUSB Devicesxx",
         "Name[xh]": "Amacebo e USB",
         "Name[zh_CN]": "USB设备",
-        "Name[zh_TW]": "USB 裝置",
-        "ServiceTypes": [
-            "KCModule"
-        ]
+        "Name[zh_TW]": "USB 裝置"
     },
     "X-DocPath": "kinfocenter/kcmusb.html",
     "X-KDE-KInfoCenter-Category": "device_information",

@@ -77,10 +77,7 @@
         "Name[uk]": "Про цю систему",
         "Name[vi]": "Về hệ thống này",
         "Name[x-test]": "xxAbout this Systemxx",
-        "Name[zh_CN]": "关于本系统",
-        "ServiceTypes": [
-            "KCModule"
-        ]
+        "Name[zh_CN]": "关于本系统"
     },
     "X-KDE-KInfoCenter-Category": "basic_information",
     "X-KDE-Keywords": "about,info,information,distribution,distro,system,kernel,qt,kde",

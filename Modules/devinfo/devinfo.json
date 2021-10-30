@@ -129,10 +129,7 @@
         "Name[wa]": "Håyneu des éndjins",
         "Name[x-test]": "xxDevice Viewerxx",
         "Name[zh_CN]": "设备查看器",
-        "Name[zh_TW]": "裝置檢視器",
-        "ServiceTypes": [
-            "KCModule"
-        ]
+        "Name[zh_TW]": "裝置檢視器"
     },
     "X-DocPath": "kinfocenter/devinfo.html",
     "X-KDE-KInfoCenter-Category": "device_information",

@@ -97,10 +97,7 @@
         "Name[vi]": "Wayland",
         "Name[x-test]": "xxWaylandxx",
         "Name[zh_CN]": "Wayland",
-        "Name[zh_TW]": "Wayland",
-        "ServiceTypes": [
-            "KCModule"
-        ]
+        "Name[zh_TW]": "Wayland"
     },
     "TryExec": "wayland-info",
     "X-KDE-KInfoCenter-Category": "graphical_information",
