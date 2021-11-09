@@ -60,6 +60,7 @@ KCM.SimpleKCM {
             id: indicator
             visible: false
             running: true
+            y: root.height/2 - height/2 // Can't do anchors.centerIn: parent here
 
             // only show the indicator after a brief timeout otherwise we can have a situtation where loading takes a couple
             // milliseconds during which time the indicator flashes up for no good reason
@@ -77,6 +78,7 @@ KCM.SimpleKCM {
 
         Kirigami.PlaceholderMessage {
             width: root.width - (Kirigami.Units.largeSpacing * 4)
+            y: root.height/2 - height/2 // Can't do anchors.centerIn: parent here
             text: {
                 if (output.error !== "") {
                     return output.error
