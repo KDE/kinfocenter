@@ -251,12 +251,12 @@ QString USBDevice::dump()
     r += ki18n("<tr><td><i>USB Version</i></td><td>%1.%2</td></tr>").subs(_verMajor).subs(_verMinor, 2, 10, QChar::fromLatin1('0')).toString();
     r += QLatin1String("<tr><td></td></tr>");
 
-    QString v = QString::number(_vendorID, 16);
+    QString v = QStringLiteral("%1").arg(_vendorID, 4, 16, QLatin1Char('0'));
     QString name = _db->vendor(_vendorID);
     if (!name.isEmpty())
         v += QStringLiteral("<td>(") + name + QStringLiteral(")</td>");
     r += i18n("<tr><td><i>Vendor ID</i></td><td>0x%1</td></tr>", v);
-    QString p = QString::number(_prodID, 16);
+    QString p = QStringLiteral("%1").arg(_prodID, 4, 16, QLatin1Char('0'));
     QString pname = _db->device(_vendorID, _prodID);
     if (!pname.isEmpty())
         p += QStringLiteral("<td>(") + pname + QStringLiteral(")</td>");
