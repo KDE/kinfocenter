@@ -6,6 +6,7 @@ X-KDE-ServiceTypes=KCModule
 X-KDE-Library=kcm_energyinfo
 X-KDE-ParentApp=kinfocenter
 X-KDE-KInfoCenter-Category=basic_information
+X-KDE-FormFactors=desktop,tablet,handset
 
 Name=Energy
 Name[ast]=Enerxía

@@ -15,12 +15,12 @@ class SambaModule : public KQuickAddons::ConfigModule
 {
     Q_OBJECT
 public:
-    SambaModule(QObject *parent = nullptr, const QVariantList &list = QVariantList());
+    SambaModule(QObject *parent, const KPluginMetaData &data, const QVariantList &list = QVariantList());
     ~SambaModule() override = default;
 };
 
-SambaModule::SambaModule(QObject *parent, const QVariantList &args)
-    : KQuickAddons::ConfigModule(parent, args)
+SambaModule::SambaModule(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
+    : KQuickAddons::ConfigModule(parent, data, args)
 {
     KAboutData *about = new KAboutData(i18n("kcmsamba"),
                                        i18n("Samba Status"),

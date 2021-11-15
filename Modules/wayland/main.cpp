@@ -14,8 +14,8 @@ class KCMWayland : public KQuickAddons::ConfigModule
 {
     Q_OBJECT
 public:
-    explicit KCMWayland(QObject *parent, const QVariantList &args)
-        : ConfigModule(parent, args)
+    explicit KCMWayland(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
+        : ConfigModule(parent, data, args)
     {
         auto outputContext = new CommandOutputContext(QStringLiteral("wayland-info"), {}, parent);
         qmlRegisterSingletonInstance("org.kde.kinfocenter.wayland.private", 1, 0, "InfoOutputContext", outputContext);

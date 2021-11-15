@@ -14,6 +14,6 @@ class KCMNic : public KQuickAddons::ConfigModule
     Q_OBJECT
 
 public:
-    explicit KCMNic(QObject *parent = nullptr, const QVariantList &list = QVariantList());
+    explicit KCMNic(QObject *parent, const KPluginMetaData &data, const QVariantList &list = QVariantList());
     virtual ~KCMNic() override = default;
 };

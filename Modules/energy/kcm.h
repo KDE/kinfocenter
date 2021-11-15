@@ -21,7 +21,7 @@ class KCMEnergyInfo : public KQuickAddons::ConfigModule
     Q_PROPERTY(WakeUpModel *wakeUps READ wakeUps CONSTANT)
 
 public:
-    explicit KCMEnergyInfo(QObject *parent, const QVariantList &args);
+    explicit KCMEnergyInfo(QObject *parent, const KPluginMetaData &data, const QVariantList &args);
     ~KCMEnergyInfo() override = default;
 
     BatteryModel *batteries() const

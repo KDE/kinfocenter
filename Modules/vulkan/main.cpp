@@ -14,8 +14,8 @@ class KCMVulkan : public KQuickAddons::ConfigModule
 {
     Q_OBJECT
 public:
-    explicit KCMVulkan(QObject *parent, const QVariantList &args)
-        : ConfigModule(parent, args)
+    explicit KCMVulkan(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
+        : ConfigModule(parent, data, args)
     {
         auto outputContext = new CommandOutputContext(QStringLiteral("vulkaninfo"), {}, parent);
         qmlRegisterSingletonInstance("org.kde.kinfocenter.vulkan.private", 1, 0, "InfoOutputContext", outputContext);

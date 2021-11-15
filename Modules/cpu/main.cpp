@@ -14,8 +14,8 @@ class KCMCPU : public KQuickAddons::ConfigModule
 {
     Q_OBJECT
 public:
-    explicit KCMCPU(QObject *parent, const QVariantList &args)
-        : ConfigModule(parent, args)
+    explicit KCMCPU(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
+        : ConfigModule(parent, data, args)
     {
         auto outputContext = new CommandOutputContext(QStringLiteral("lscpu"), {}, parent);
         qmlRegisterSingletonInstance("org.kde.kinfocenter.cpu.private", 1, 0, "InfoOutputContext", outputContext);

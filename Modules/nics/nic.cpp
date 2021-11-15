@@ -15,8 +15,8 @@
 
 K_PLUGIN_CLASS_WITH_JSON(KCMNic, "kcm_nic.json")
 
-KCMNic::KCMNic(QObject *parent, const QVariantList &list)
-    : KQuickAddons::ConfigModule(parent, list)
+KCMNic::KCMNic(QObject *parent, const KPluginMetaData &data, const QVariantList &list)
+    : KQuickAddons::ConfigModule(parent, data, list)
 {
     KAboutData *about = new KAboutData(i18n("kcm_nic"),
                                        i18nc("@title:window", "Network Interfaces"),

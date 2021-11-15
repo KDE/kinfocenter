@@ -34,8 +34,8 @@ class KCMAboutSystem : public KQuickAddons::ConfigModule
     Q_OBJECT
     Q_DISABLE_COPY_MOVE(KCMAboutSystem) // rule of 5
 public:
-    explicit KCMAboutSystem(QObject *parent, const QVariantList &args)
-        : ConfigModule(parent, args)
+    explicit KCMAboutSystem(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
+        : ConfigModule(parent, data, args)
     {
         auto aboutData = new KAboutData;
         aboutData->setComponentName(QStringLiteral("kcm_about-distro"));

@@ -15,8 +15,8 @@ class KCMInterrupts : public KQuickAddons::ConfigModule
 {
     Q_OBJECT
 public:
-    explicit KCMInterrupts(QObject *parent, const QVariantList &args)
-        : ConfigModule(parent, args)
+    explicit KCMInterrupts(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
+        : ConfigModule(parent, data, args)
     {
         auto outputContext =
 #if defined(Q_OS_FREEBSD)
