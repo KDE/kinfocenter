@@ -32,14 +32,14 @@ int KSambaShareModel::rowCount(const QModelIndex &parent) const
 QVariant KSambaShareModel::data(const QModelIndex &index, int intRole) const
 {
     if (!index.isValid()) {
-        return {};
+        return QVariant();
     }
 
     Q_ASSERT(index.row() < m_list.length());
 
     static QMetaEnum roleEnum = QMetaEnum::fromType<Role>();
     if (roleEnum.valueToKey(intRole) == nullptr) {
-        return {};
+        return QVariant();
     }
     const auto role = static_cast<Role>(intRole);
 
@@ -53,7 +53,7 @@ QVariant KSambaShareModel::data(const QModelIndex &index, int intRole) const
         return share.comment();
     case Role::ShareUrl: {
         if (m_fqdn.isEmpty()) {
-            return {};
+            return QVariant();
         }
         QUrl url;
         url.setScheme(QStringLiteral("smb"));
@@ -63,7 +63,7 @@ QVariant KSambaShareModel::data(const QModelIndex &index, int intRole) const
     }
     }
 
-    return {};
+    return QVariant();
 }
 
 Q_INVOKABLE void KSambaShareModel::showPropertiesDialog(int index)
