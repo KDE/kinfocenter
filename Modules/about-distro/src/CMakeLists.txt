@@ -2,15 +2,23 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Version.h.cmake ${CMAKE_CURRENT_BINAR
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
 set(kcm_SRCS
-    main.cpp
-    Entry.cpp
-    PlasmaEntry.cpp
-    KernelEntry.cpp
-    MemoryEntry.cpp
-    GraphicsPlatformEntry.cpp
     CPUEntry.cpp
-    GPUEntry.cpp
+    CPUEntry.h
+    Entry.cpp
+    Entry.h
     FancyString.cpp
+    FancyString.h
+    GPUEntry.cpp
+    GPUEntry.h
+    GraphicsPlatformEntry.cpp
+    GraphicsPlatformEntry.h
+    KernelEntry.cpp
+    KernelEntry.h
+    main.cpp
+    MemoryEntry.cpp
+    MemoryEntry.h
+    PlasmaEntry.cpp
+    PlasmaEntry.h
 )
 
 kcoreaddons_add_plugin(kcm_about-distro SOURCES ${kcm_SRCS} INSTALL_NAMESPACE "plasma/kcms")

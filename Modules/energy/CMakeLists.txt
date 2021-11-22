@@ -2,10 +2,14 @@
 add_definitions(-DTRANSLATION_DOMAIN=\"kcm_energyinfo\")
 
 set(kcm_energyinfo_SRCS
-  kcm.cpp
-  batterymodel.cpp
-  wakeupmodel.cpp
-  statisticsprovider.cpp
+    batterymodel.cpp
+    batterymodel.h
+    kcm.cpp
+    kcm.h
+    statisticsprovider.cpp
+    statisticsprovider.h
+    wakeupmodel.cpp
+    wakeupmodel.h
 )
 
 kcoreaddons_add_plugin(kcm_energyinfo SOURCES ${kcm_energyinfo_SRCS} INSTALL_NAMESPACE "plasma/kcms")

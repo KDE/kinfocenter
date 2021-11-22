@@ -4,6 +4,8 @@ add_definitions(-DTRANSLATION_DOMAIN=\"kcmsamba\")
 set(kcm_samba_PART_SRCS
     smbmountmodel.cpp
     ksambasharemodel.cpp
+    smbmountmodel.h
+    ksambasharemodel.h
 )
 
 qt_add_dbus_interface(kcm_samba_PART_SRCS org.freedesktop.Avahi.Server.xml org.freedesktop.Avahi.Server)

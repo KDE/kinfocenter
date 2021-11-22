@@ -3,7 +3,12 @@ add_definitions(-DTRANSLATION_DOMAIN=\"kcmusb\")
 
 ########### next target ###############
 
-set(kcm_usb_PART_SRCS kcmusb.cpp usbdevices.cpp usbdb.cpp )
+set(kcm_usb_PART_SRCS kcmusb.cpp
+    kcmusb.h
+    usbdb.cpp
+    usbdb.h
+    usbdevices.cpp
+    usbdevices.h )
 
 kcoreaddons_add_plugin(kcm_usb SOURCES ${kcm_usb_PART_SRCS} INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
 
