@@ -2,6 +2,7 @@
     "Categories": "Qt;KDE;X-KDE-settings-personalization;X-KDE-information;",
     "KPlugin": {
         "Description": "Information About This System",
+        "Description[az]": "Bu sistem haqqında məlumat",
         "Description[ca@valencia]": "Informació quant a aquest sistema",
         "Description[ca]": "Informació quant a aquest sistema",
         "Description[es]": "Información sobre este sistema",

@@ -2,6 +2,7 @@
     "Categories": "Qt;KDE;X-KDE-information;",
     "KPlugin": {
         "Description": "X-Server information",
+        "Description[az]": "X-Server məlumatı",
         "Description[ca@valencia]": "Informació del servidor X",
         "Description[ca]": "Informació del servidor X",
         "Description[es]": "Información sobre el servidor X",

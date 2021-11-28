@@ -2,6 +2,7 @@
     "Categories": "Qt;KDE;X-KDE-information;",
     "KPlugin": {
         "Description": "EGL information",
+        "Description[az]": "EGL məlumatı",
         "Description[ca@valencia]": "Informació EGL",
         "Description[ca]": "Informació EGL",
         "Description[es]": "Información sobre EGL",

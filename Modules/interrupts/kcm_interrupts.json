@@ -2,6 +2,7 @@
     "Categories": "Qt;KDE;X-KDE-information;",
     "KPlugin": {
         "Description": "Interrupt information",
+        "Description[az]": "Boşdayanma haqqında məlumat",
         "Description[ca@valencia]": "Informació de les interrupcions",
         "Description[ca]": "Informació de les interrupcions",
         "Description[es]": "Información sobre interrupciones",

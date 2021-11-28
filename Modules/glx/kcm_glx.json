@@ -2,6 +2,7 @@
     "Categories": "Qt;KDE;X-KDE-information;",
     "KPlugin": {
         "Description": "GLX information",
+        "Description[az]": "GLX məlumatı",
         "Description[ca@valencia]": "Informació GLX",
         "Description[ca]": "Informació GLX",
         "Description[es]": "Información sobre GLX",

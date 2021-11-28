@@ -2,6 +2,7 @@
     "Categories": "Qt;KDE;X-KDE-information;",
     "KPlugin": {
         "Description": "USB devices attached to this computer",
+        "Description[az]": "Bu komputerə qoşulmuş USB qurğular",
         "Description[ca@valencia]": "Dispositius USB connectats amb aquest ordinador",
         "Description[ca]": "Dispositius USB connectats amb aquest ordinador",
         "Description[es]": "Dispositivos USB conectados a este equipo",

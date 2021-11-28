@@ -2,6 +2,7 @@
     "Categories": "Qt;KDE;X-KDE-information;",
     "KPlugin": {
         "Description": "Energy Consumption Statistics",
+        "Description[az]": "Enerji sərfiyyatı statistikası",
         "Description[ca@valencia]": "Estadístiques del consum d'energia",
         "Description[ca]": "Estadístiques del consum d'energia",
         "Description[es]": "Estadísticas de consumo de energía",
