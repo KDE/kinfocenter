@@ -18,6 +18,7 @@
         "Description[uk]": "Інформація про GLX",
         "Description[vi]": "Thông tin về GLX",
         "Description[x-test]": "xxGLX informationxx",
+        "Description[zh_CN]": "GLX 信息",
         "Icon": "video-display",
         "Name": "OpenGL (GLX)",
         "Name[az]": "OpenGL (GLX)",

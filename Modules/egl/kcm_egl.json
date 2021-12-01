@@ -18,6 +18,7 @@
         "Description[uk]": "Інформація про EGL",
         "Description[vi]": "Thông tin về EGL",
         "Description[x-test]": "xxEGL informationxx",
+        "Description[zh_CN]": "EGL 信息",
         "Icon": "video-display",
         "Name": "OpenGL (EGL)",
         "Name[az]": "OpenGL (EGL)",

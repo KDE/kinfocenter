@@ -18,6 +18,7 @@
         "Description[uk]": "Додаткові відомості щодо процесора",
         "Description[vi]": "Thông tin nâng cao về CPU",
         "Description[x-test]": "xxAdvanced CPU Informationxx",
+        "Description[zh_CN]": "高级 CPU 信息",
         "Icon": "preferences-devices-cpu",
         "Name": "CPU",
         "Name[az]": "CPU",

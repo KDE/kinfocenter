@@ -18,6 +18,7 @@
         "Description[uk]": "Далі щодо графічного програмного інтерфейсу Vulkan",
         "Description[vi]": "Thông tin API đồ hoạ Vulkan",
         "Description[x-test]": "xxVulkan graphics API informationxx",
+        "Description[zh_CN]": "Vulkan 图形 API 信息",
         "Icon": "video-display",
         "Name": "Vulkan",
         "Name[az]": "Vulkan",

@@ -18,6 +18,7 @@
         "Description[uk]": "Інформація щодо переривань",
         "Description[vi]": "Thông tin ngắt",
         "Description[x-test]": "xxInterrupt informationxx",
+        "Description[zh_CN]": "中断信息",
         "Icon": "cpu",
         "Name": "Interrupts",
         "Name[af]": "Interrupts",

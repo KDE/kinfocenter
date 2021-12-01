@@ -18,6 +18,7 @@
         "Description[uk]": "Пристроїв USB, під'єднаних до комп'ютера",
         "Description[vi]": "Các thiết bị USB nối với máy tính này",
         "Description[x-test]": "xxUSB devices attached to this computerxx",
+        "Description[zh_CN]": "本机已连接的 USB 设备",
         "Icon": "drive-removable-media-usb-pendrive",
         "Name": "USB Devices",
         "Name[af]": "USB Toestelle",

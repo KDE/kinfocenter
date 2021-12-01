@@ -18,6 +18,7 @@
         "Description[uk]": "Інформація щодо шини PCI",
         "Description[vi]": "Thông tin về PCI",
         "Description[x-test]": "xxPCI informationxx",
+        "Description[zh_CN]": "PCI 信息",
         "Icon": "hwinfo",
         "Name": "PCI",
         "Name[af]": "PCI",

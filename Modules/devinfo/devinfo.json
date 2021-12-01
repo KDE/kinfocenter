@@ -18,6 +18,7 @@
         "Description[uk]": "Переглядач пристроїв",
         "Description[vi]": "Trình xem thiết bị",
         "Description[x-test]": "xxDevice Viewerxx",
+        "Description[zh_CN]": "设备查看器",
         "Icon": "device-notifier",
         "Name": "Device Viewer",
         "Name[ar]": "عارض الأجهزة",

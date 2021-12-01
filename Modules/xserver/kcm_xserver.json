@@ -18,6 +18,7 @@
         "Description[uk]": "Інформація щодо сервера X",
         "Description[vi]": "Thông tin về máy chủ X",
         "Description[x-test]": "xxX-Server informationxx",
+        "Description[zh_CN]": "X 服务器信息",
         "Icon": "xorg",
         "Name": "X-Server",
         "Name[af]": "X-bediener",
