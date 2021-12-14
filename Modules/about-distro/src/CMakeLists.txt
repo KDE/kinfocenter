@@ -19,6 +19,7 @@ set(kcm_SRCS
     MemoryEntry.h
     PlasmaEntry.cpp
     PlasmaEntry.h
+    ServiceRunner.cpp
 )
 
 kcoreaddons_add_plugin(kcm_about-distro SOURCES ${kcm_SRCS} INSTALL_NAMESPACE "plasma/kcms")
@@ -28,6 +29,8 @@ target_link_libraries(kcm_about-distro
     KF5::I18n
     KF5::ConfigCore
     KF5::QuickAddons
-    KF5::Solid)
+    KF5::Solid
+    KF5::Service
+    KF5::KIOGui)
 
 kpackage_install_package(package kcm_about-distro kcms)

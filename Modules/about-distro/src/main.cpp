@@ -22,6 +22,7 @@
 #include "KernelEntry.h"
 #include "MemoryEntry.h"
 #include "PlasmaEntry.h"
+#include "ServiceRunner.h"
 #include "Version.h"
 
 #include <KAboutData>
@@ -45,6 +46,8 @@ public:
         aboutData->setCopyrightStatement(i18nc("@info:credit", "Copyright 2012-2020 Harald Sitter"));
         aboutData->addAuthor(i18nc("@info:credit", "Harald Sitter"), i18nc("@info:credit", "Author"), QStringLiteral("sitter@kde.org"));
         setAboutData(aboutData);
+
+        qmlRegisterType<ServiceRunner>("org.kde.kinfocenter.about_distro.private", 1, 0, "ServiceRunner");
 
         // https://bugs.kde.org/show_bug.cgi?id=366158
         // When a KCM loads fast enough do a blocking load via the constructor.
@@ -173,6 +176,8 @@ private:
 
     Q_PROPERTY(bool isEnglish MEMBER m_isEnglish CONSTANT);
     const bool m_isEnglish = QLocale::system().language() == QLocale::English || QLocale::system().language() == QLocale::C;
+    Q_PROPERTY(bool isThisKInfoCenter MEMBER m_isThisKInfoCenter CONSTANT);
+    const bool m_isThisKInfoCenter = qGuiApp->desktopFileName() == QLatin1String("org.kde.kinfocenter");
 };
 
 K_PLUGIN_CLASS_WITH_JSON(KCMAboutSystem, "about-distro.json")

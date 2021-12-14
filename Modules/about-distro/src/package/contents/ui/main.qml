@@ -10,6 +10,8 @@ import QtQuick.Layouts 1.1
 import org.kde.kirigami 2.12 as Kirigami
 import org.kde.kcm 1.4 as KCM
 
+import org.kde.kinfocenter.about_distro.private 1.0
+
 KCM.SimpleKCM {
     id: root
 
@@ -100,6 +102,25 @@ KCM.SimpleKCM {
             Repeater {
                 model: kcm.hardwareEntries
                 delegate: entryComponent
+            }
+        }
+
+        ColumnLayout { // Wraps a spacer and button (conditionally visible!)
+            Layout.alignment: Qt.AlignHCenter
+            visible: !kcm.isThisKInfoCenter && kicRunner.canRun
+
+            Item { implicitHeight: Kirigami.Units.gridUnit }
+            QQC2.Button {
+                id: kicButton
+
+                text: i18nc("@action:button launches kinfocenter from systemsettings", "Show More Information")
+                icon.name: kicRunner.iconName
+                onClicked: kicRunner.run()
+            }
+
+            ServiceRunner {
+                id: kicRunner
+                desktopFileName: "org.kde.kinfocenter"
             }
         }
     }
