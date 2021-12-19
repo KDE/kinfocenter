@@ -2,6 +2,7 @@
     "Categories": "Qt;KDE;X-KDE-information;",
     "KPlugin": {
         "Description": "Advanced CPU Information",
+        "Description[ar]": "معلومات متقدمة عن المعالج",
         "Description[az]": "Əlavə CPU məlumatı",
         "Description[ca@valencia]": "Informació avançada de la CPU",
         "Description[ca]": "Informació avançada de la CPU",
@@ -23,6 +24,7 @@
         "Description[zh_CN]": "高级 CPU 信息",
         "Icon": "preferences-devices-cpu",
         "Name": "CPU",
+        "Name[ar]": "المعالج",
         "Name[az]": "CPU",
         "Name[ca@valencia]": "CPU",
         "Name[ca]": "CPU",

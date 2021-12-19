@@ -2,6 +2,7 @@
     "Categories": "Qt;KDE;X-KDE-information;",
     "KPlugin": {
         "Description": "PCI information",
+        "Description[ar]": "معلومات PCI",
         "Description[az]": "PCİ məlumatı",
         "Description[ca@valencia]": "Informació de PCI",
         "Description[ca]": "Informació de PCI",

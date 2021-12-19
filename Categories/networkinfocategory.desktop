@@ -6,6 +6,7 @@ X-KDE-KInfoCenter-Parent-Category=detailed_information
 Icon=preferences-system-network
 
 Name=Network
+Name[ar]=الشبكة
 Name[ast]=Rede
 Name[az]=Şəbəkə
 Name[ca]=Xarxa

@@ -2,6 +2,7 @@
     "Categories": "Qt;KDE;X-KDE-information;",
     "KPlugin": {
         "Description": "Network interface information",
+        "Description[ar]": "معلومات واجهات الشّبكات",
         "Description[az]": "Şəbəkə interfeysləri məlumatı",
         "Description[ca@valencia]": "Informació de la interfície de xarxa",
         "Description[ca]": "Informació de la interfície de xarxa",

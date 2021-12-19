@@ -2,6 +2,7 @@
     "Categories": "Qt;KDE;X-KDE-settings-personalization;X-KDE-information;",
     "KPlugin": {
         "Description": "Information About This System",
+        "Description[ar]": "معلومات عن هذا النّظام",
         "Description[az]": "Bu sistem haqqında məlumat",
         "Description[ca@valencia]": "Informació quant a aquest sistema",
         "Description[ca]": "Informació quant a aquest sistema",
@@ -23,6 +24,7 @@
         "Description[zh_CN]": "关于本系统的信息",
         "Icon": "ktip",
         "Name": "About this System",
+        "Name[ar]": "عن النّظام",
         "Name[az]": "Bu sistem haqqında",
         "Name[ca@valencia]": "Quant a aquest sistema",
         "Name[ca]": "Quant a aquest sistema",

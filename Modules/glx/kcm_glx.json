@@ -2,6 +2,7 @@
     "Categories": "Qt;KDE;X-KDE-information;",
     "KPlugin": {
         "Description": "GLX information",
+        "Description[ar]": "معلومات GLX",
         "Description[az]": "GLX məlumatı",
         "Description[ca@valencia]": "Informació GLX",
         "Description[ca]": "Informació GLX",
@@ -23,6 +24,7 @@
         "Description[zh_CN]": "GLX 信息",
         "Icon": "video-display",
         "Name": "OpenGL (GLX)",
+        "Name[ar]": "OpenGL (GLX)",
         "Name[az]": "OpenGL (GLX)",
         "Name[ca@valencia]": "OpenGL (GLX)",
         "Name[ca]": "OpenGL (GLX)",

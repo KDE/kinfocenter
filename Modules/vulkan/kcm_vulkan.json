@@ -2,6 +2,7 @@
     "Categories": "Qt;KDE;X-KDE-information;",
     "KPlugin": {
         "Description": "Vulkan graphics API information",
+        "Description[ar]": "المعلومات الرّسوميّة لواجهة فالكن",
         "Description[az]": "Vulkan qrafik kartları API-si məlumatı",
         "Description[ca@valencia]": "Informació de l'API gràfica Vulkan",
         "Description[ca]": "Informació de l'API gràfica Vulkan",
@@ -23,6 +24,7 @@
         "Description[zh_CN]": "Vulkan 图形 API 信息",
         "Icon": "video-display",
         "Name": "Vulkan",
+        "Name[ar]": "فالكن",
         "Name[az]": "Vulkan",
         "Name[ca@valencia]": "Vulkan",
         "Name[ca]": "Vulkan",

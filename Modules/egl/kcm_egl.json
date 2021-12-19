@@ -2,6 +2,7 @@
     "Categories": "Qt;KDE;X-KDE-information;",
     "KPlugin": {
         "Description": "EGL information",
+        "Description[ar]": "معلومات EGL",
         "Description[az]": "EGL məlumatı",
         "Description[ca@valencia]": "Informació EGL",
         "Description[ca]": "Informació EGL",
@@ -23,6 +24,7 @@
         "Description[zh_CN]": "EGL 信息",
         "Icon": "video-display",
         "Name": "OpenGL (EGL)",
+        "Name[ar]": "OpenGL (EGL)",
         "Name[az]": "OpenGL (EGL)",
         "Name[ca@valencia]": "OpenGL (EGL)",
         "Name[ca]": "OpenGL (EGL)",
