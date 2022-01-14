@@ -14,7 +14,6 @@ Dependencies:
     'frameworks/kcoreaddons': '@latest'
     'frameworks/kdeclarative': '@latest'
     'frameworks/ki18n': '@latest'
-    'frameworks/kiconthemes': '@latest'
     'frameworks/kio': '@latest'
     'frameworks/kjobwidgets': '@latest'
     'frameworks/kservice': '@latest'
