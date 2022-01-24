@@ -4,6 +4,20 @@
 find_package(lspci)
 set_package_properties(lspci PROPERTIES TYPE RUNTIME)
 
+find_package(pciconf)
+set_package_properties(pciconf PROPERTIES TYPE RUNTIME)
+
+if(pciconf_FOUND)
+    set(PCI_BACKEND pciconf)
+    set(PCI_BACKEND_ARGUMENTS "-lv")
+else()
+    set(PCI_BACKEND lspci)
+    set(PCI_BACKEND_ARGUMENTS "-v")
+endif()
+
+configure_file(kcm_pci.json.cmake kcm_pci.json)
+configure_file(backend.h.cmake backend.h)
+
 add_definitions(-DTRANSLATION_DOMAIN=\"kcm_pci\")
 
 add_library(kcm_pci MODULE main.cpp)

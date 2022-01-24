@@ -125,7 +125,7 @@
         "Name[zh_CN]": "PCI",
         "Name[zh_TW]": "PCI"
     },
-    "TryExec": "lspci",
+    "TryExec": "@PCI_BACKEND@",
     "X-KDE-KInfoCenter-Category": "device_information",
     "X-KDE-Keywords": "PCI,PCI-Devices,PCI-Bus,System Information",
     "X-KDE-Keywords[ar]": "PCI,أجهزة PCI,PCI-Bus,معلومات النّظام",

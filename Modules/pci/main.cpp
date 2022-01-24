@@ -1,6 +1,7 @@
 /*
     SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
     SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
+    SPDX-FileCopyrightText: 2022 Tobias C. Berner <tcberner@FreeBSD.org>
 */
 
 #include <KAboutData>
@@ -10,6 +11,8 @@
 
 #include <CommandOutputContext.h>
 
+#include "backend.h"
+
 class KCMXServer : public KQuickAddons::ConfigModule
 {
     Q_OBJECT
@@ -17,7 +20,7 @@ public:
     explicit KCMXServer(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
         : ConfigModule(parent, data, args)
     {
-        auto outputContext = new CommandOutputContext(QStringLiteral("lspci"), {QStringLiteral("-v")}, parent);
+        auto outputContext = new CommandOutputContext(QStringLiteral(PCI_BACKEND), {QStringLiteral(PCI_BACKEND_ARGUMENTS)}, parent);
         qmlRegisterSingletonInstance("org.kde.kinfocenter.pci.private", 1, 0, "InfoOutputContext", outputContext);
 
         auto *about = new KAboutData(QStringLiteral("kcm_pci"), i18nc("@label kcm name", "PCI"), QStringLiteral("1.0"), QString(), KAboutLicense::GPL);
