@@ -9,6 +9,6 @@ add_definitions(-DTRANSLATION_DOMAIN=\"kcm_cpu\")
 add_library(kcm_cpu MODULE main.cpp)
 target_link_libraries(kcm_cpu KF5::CoreAddons KF5::QuickAddons KF5::I18n KInfoCenterInternal)
 
-install(TARGETS kcm_cpu DESTINATION ${PLUGIN_INSTALL_DIR}/plasma/kcms/kinfocenter)
+install(TARGETS kcm_cpu DESTINATION ${KDE_INSTALL_PLUGINDIR}/plasma/kcms/kinfocenter)
 
 kpackage_install_package(package kcm_cpu kcms)
