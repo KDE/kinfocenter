@@ -74,9 +74,17 @@ KCM.SimpleKCM {
 
             Component {
                 id: entryComponent
-                QQC2.Label {
+                QQC2.TextField {
+                    Layout.minimumWidth: contentWidth
                     Kirigami.FormData.label: modelData.localizedLabel()
                     text: modelData.localizedValue()
+                    readOnly: true
+                    leftPadding: 0
+                    topPadding: 0
+                    rightPadding: 0
+                    bottomPadding: 0
+                    background: null
+                    HoverHandler { cursorShape: Qt.IBeamCursor }
                 }
             }
 
