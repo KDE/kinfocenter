@@ -19,6 +19,12 @@ CommandOutputContext::CommandOutputContext(const QString &executable, const QStr
     , m_executablePath(QStandardPaths::findExecutable(m_executableName))
     , m_arguments(arguments)
 {
+    // Various utilities are installed in sbin, but work without elevated privileges
+    if (m_executablePath.isEmpty()) {
+        m_executablePath =
+            QStandardPaths::findExecutable(m_executableName, {QStringLiteral("/usr/local/sbin"), QStringLiteral("/usr/sbin"), QStringLiteral("/sbin")});
+    }
+
     metaObject()->invokeMethod(this, &CommandOutputContext::load);
 }
 

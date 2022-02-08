@@ -44,7 +44,7 @@ private:
     void setReady();
 
     const QString m_executableName;
-    const QString m_executablePath;
+    QString m_executablePath;
     const QStringList m_arguments;
 
     QStringList m_originalLines;
