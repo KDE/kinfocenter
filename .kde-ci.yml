@@ -21,3 +21,4 @@ Dependencies:
     'frameworks/kwindowsystem': '@latest'
     'frameworks/solid': '@latest'
     'plasma/systemsettings': '@same'
+    'plasma/plasma-systemmonitor': '@same'
