@@ -9,6 +9,7 @@ add_subdirectory(xserver)
 add_subdirectory(egl)
 add_subdirectory(glx)
 add_subdirectory(pci)
+add_subdirectory(firmware_security)
 
 add_subdirectory( samba )
 add_subdirectory( nics )

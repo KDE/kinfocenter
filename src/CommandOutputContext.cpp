@@ -1,6 +1,6 @@
 /*
     SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
-    SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
+    SPDX-FileCopyrightText: 2021-2022 Harald Sitter <sitter@kde.org>
 */
 
 #include "CommandOutputContext.h"
@@ -13,7 +13,7 @@
 
 #include <KLocalizedString>
 
-CommandOutputContext::CommandOutputContext(const QString &executable, const QStringList &arguments, QObject *parent)
+CommandOutputContext::CommandOutputContext(const QStringList &findExecutables, const QString &executable, const QStringList &arguments, QObject *parent)
     : QObject(parent)
     , m_executableName(executable)
     , m_executablePath(QStandardPaths::findExecutable(m_executableName))
@@ -25,7 +25,17 @@ CommandOutputContext::CommandOutputContext(const QString &executable, const QStr
             QStandardPaths::findExecutable(m_executableName, {QStringLiteral("/usr/local/sbin"), QStringLiteral("/usr/sbin"), QStringLiteral("/sbin")});
     }
 
+    m_foundExecutablePaths[executable] = m_executablePath;
+    for (const QString &findExecutable : findExecutables) {
+        m_foundExecutablePaths[findExecutable] = QStandardPaths::findExecutable(findExecutable);
+    }
+
     metaObject()->invokeMethod(this, &CommandOutputContext::load);
+}
+
+CommandOutputContext::CommandOutputContext(const QString &executable, const QStringList &arguments, QObject *parent)
+    : CommandOutputContext({/* executable is by default always searched for */}, executable, arguments, parent)
+{
 }
 
 QString CommandOutputContext::executableName() const
@@ -79,9 +89,11 @@ void CommandOutputContext::load()
 {
     reset();
 
-    if (m_executablePath.isEmpty()) {
-        setError(xi18nc("@info", "The executable <command>%1</command> could not be found in $PATH.", m_executableName));
-        return;
+    for (auto it = m_foundExecutablePaths.cbegin(); it != m_foundExecutablePaths.cend(); ++it) {
+        if (it.value().isEmpty()) {
+            setError(xi18nc("@info", "The executable <command>%1</command> could not be found in $PATH.", it.key()));
+            return;
+        }
     }
 
     auto proc = new QProcess(this);

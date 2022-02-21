@@ -1,0 +1,11 @@
+{
+    "Categories": "Qt;KDE;X-KDE-information;",
+    "KPlugin": {
+        "Description": "Firmware Security Information",
+        "Icon": "preferences-security",
+        "Name": "Firmware Security"
+    },
+    "TryExec": "fwupdmgr",
+    "X-KDE-KInfoCenter-Category": "device_information",
+    "X-KDE-Keywords": "firmware,security,hsi,secureboot,fwupd,bootguard,lockdown"
+}

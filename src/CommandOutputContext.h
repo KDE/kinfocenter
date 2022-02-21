@@ -1,10 +1,11 @@
 /*
     SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
-    SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
+    SPDX-FileCopyrightText: 2021-2022 Harald Sitter <sitter@kde.org>
 */
 
 #pragma once
 
+#include <QMap>
 #include <QObject>
 
 // Somewhat general-purpose command executor. This class runs the executable with arguments, collecting all its output
@@ -23,7 +24,8 @@ class CommandOutputContext : public QObject
     // Potential error description. Empty when there is no error to report.
     Q_PROPERTY(QString error MEMBER m_error NOTIFY errorChanged)
 public:
-    explicit CommandOutputContext(const QString &executable, const QStringList &arguments, QObject *parent = nullptr);
+    CommandOutputContext(const QStringList &findExecutables, const QString &executable, const QStringList &arguments, QObject *parent = nullptr);
+    CommandOutputContext(const QString &executable, const QStringList &arguments, QObject *parent = nullptr);
 
     QString executableName() const;
     QStringList arguments() const;
@@ -45,6 +47,7 @@ private:
 
     const QString m_executableName;
     QString m_executablePath;
+    QMap<QString, QString> m_foundExecutablePaths;
     const QStringList m_arguments;
 
     QStringList m_originalLines;

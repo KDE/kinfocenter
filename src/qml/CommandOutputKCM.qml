@@ -1,6 +1,6 @@
 /*
     SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
-    SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
+    SPDX-FileCopyrightText: 2021-2022 Harald Sitter <sitter@kde.org>
 */
 
 import QtQuick 2.5
@@ -25,6 +25,7 @@ KCM.SimpleKCM {
     // The CommandOutputContext object.
     required property QtObject output
     property int wrapMode: TextEdit.NoWrap
+    property var textFormat: TextEdit.PlainText
 
     Component {
         id: dataComponent
@@ -33,9 +34,12 @@ KCM.SimpleKCM {
             text: output.text
             font.family: "monospace"
             wrapMode: root.wrapMode
-            textFormat: TextEdit.PlainText
+            textFormat: root.textFormat
+            onLinkActivated: Qt.openUrlExternally(link)
+            onLinkHovered: labelsMouseArea.cursorShape = link === "" ? undefined : Qt.PointingHandCursor
 
              MouseArea {
+                id: labelsMouseArea
                 anchors.fill: parent
                 acceptedButtons: Qt.RightButton
                 onClicked: contextMenu.popup()
@@ -99,7 +103,7 @@ KCM.SimpleKCM {
     }
 
     footer: QQC2.ToolBar {
-        visible: root.state !== "loading"
+        visible: root.state !== "loading" && root.textFormat === TextEdit.PlainText
 
         Kirigami.SearchField {
             id: filterField
