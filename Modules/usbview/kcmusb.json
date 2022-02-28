@@ -123,7 +123,7 @@
         "Name[zh_CN]": "USB设备",
         "Name[zh_TW]": "USB 裝置"
     },
-    "X-DocPath": "kinfocenter/kcmusb.html",
+    "X-DocPath": "kinfocenter/devinfo.html#kcmusb",
     "X-KDE-KInfoCenter-Category": "device_information",
     "X-KDE-Keywords": "USB,devices,viewer,control",
     "X-KDE-Keywords[ar]": "USB,أجهزة,عارض,تحكّم",

@@ -124,7 +124,7 @@
         "Name[zh_TW]": "X 伺服器"
     },
     "TryExec": "xdpyinfo",
-    "X-DocPath": "kinfocenter/xserver.html",
+    "X-DocPath": "kinfocenter/graphical.html#xserver",
     "X-KDE-KInfoCenter-Category": "graphical_information",
     "X-KDE-Keywords": "X,X-Server,XServer,XFree86,Display,VideoCard,System Information",
     "X-KDE-Keywords[ar]": "X,خادوم X,س,خادوم س,XFree86,عرض,بطاقة فيديو,معلومات النّظام",
