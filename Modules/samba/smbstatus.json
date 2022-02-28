@@ -123,7 +123,7 @@
         "Name[zh_CN]": "SAMBA 状态",
         "Name[zh_TW]": "Samba 狀態"
     },
-    "X-DocPath": "kinfocenter/smbstatus.html",
+    "X-DocPath": "kinfocenter/network.html#smbstatus",
     "X-KDE-KInfoCenter-Category": "network_information",
     "X-KDE-Keywords": "SMB,SAMBA,Windows network,LAN,System Information",
     "X-KDE-Keywords[ar]": "SMB,سامبا,شبكة وندوز,LAN,معلومات النّظام",
