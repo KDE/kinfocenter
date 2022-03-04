@@ -12,12 +12,14 @@
 #include <QStandardPaths>
 
 #include <KLocalizedString>
+#include <KOSRelease>
 
 CommandOutputContext::CommandOutputContext(const QStringList &findExecutables, const QString &executable, const QStringList &arguments, QObject *parent)
     : QObject(parent)
     , m_executableName(executable)
     , m_executablePath(QStandardPaths::findExecutable(m_executableName))
     , m_arguments(arguments)
+    , m_bugReportUrl(KOSRelease().bugReportUrl())
 {
     // Various utilities are installed in sbin, but work without elevated privileges
     if (m_executablePath.isEmpty()) {
@@ -74,10 +76,12 @@ void CommandOutputContext::reset()
 {
     m_ready = false;
     m_error.clear();
+    m_explanation.clear();
     m_text.clear();
     m_filter.clear();
     Q_EMIT readyChanged();
     Q_EMIT errorChanged();
+    Q_EMIT explanationChanged();
     Q_EMIT textChanged();
     Q_EMIT filterChanged();
 
@@ -91,7 +95,10 @@ void CommandOutputContext::load()
 
     for (auto it = m_foundExecutablePaths.cbegin(); it != m_foundExecutablePaths.cend(); ++it) {
         if (it.value().isEmpty()) {
-            setError(xi18nc("@info", "The executable <command>%1</command> could not be found in $PATH.", it.key()));
+            setError(xi18nc("@info", "The <command>%1</command> tool is required to display this page, but could not be found", it.key()),
+                     xi18nc("@info",
+                            "You can search for it and install it your using your package manager.<nl/>"
+                            "Then please report this packaging issue to your distribution."));
             return;
         }
     }
@@ -103,7 +110,8 @@ void CommandOutputContext::load()
 
         switch (exitStatus) {
         case QProcess::CrashExit:
-            return setError(xi18nc("@info", "The subprocess <command>%1</command> crashed unexpectedly. No data could be obtained.", m_executableName));
+            return setError(xi18nc("@info", "The <command>%1</command> tool crashed while generating page content", m_executableName),
+                            xi18nc("@Info", "Try again later. If keeps happening, please report the crash to your distribution."));
         case QProcess::NormalExit:
             break;
         }
@@ -122,10 +130,17 @@ void CommandOutputContext::load()
     proc->start(m_executablePath, m_arguments);
 }
 
-void CommandOutputContext::setError(const QString &message)
+void CommandOutputContext::setError(const QString &message, const QString &explanation = QString())
 {
     m_error = message;
+
+    if (!explanation.isEmpty()) {
+        m_explanation = explanation;
+    }
+
     Q_EMIT errorChanged();
+    Q_EMIT explanationChanged();
+
     setReady();
 }
 

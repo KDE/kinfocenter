@@ -85,21 +85,38 @@ KCM.SimpleKCM {
         id: noDataComponent
 
         Kirigami.PlaceholderMessage {
-            width: root.width - (Kirigami.Units.largeSpacing * 4)
+            readonly property bool errorNotFilter: output.filter === "" && output.error !== ""
+
+            width: root.width - (Kirigami.Units.largeSpacing * 8)
             // Can't do anchors.centerIn: parent here
             y: root.height/2 - height/2
             x: root.width/2 - width/2
 
             text: {
+                if (output.filter !== "") {
+                    return i18nc("@info", "No text matching the filter")
+                }
                 if (output.error !== "") {
                     return output.error
                 }
-                if (output.filter !== "" && output.text === "") {
-                    return i18nc("@info", "No text matching the filter")
-                }
                 return i18nc("@info the KCM has no data to display", "No data available")
             }
+            explanation: {
+                if (errorNotFilter && output.explanation !== "") {
+                    return output.explanation
+                }
+                return ""
+            }
             icon.name: "data-warning"
+
+            helpfulAction: Kirigami.Action {
+                enabled: errorNotFilter
+                icon.name: "tools-report-bug"
+                text: i18n("Report this issue")
+                onTriggered: {
+                    Qt.openUrlExternally(output.bugReportUrl)
+                }
+            }
         }
     }
 
