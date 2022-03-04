@@ -53,24 +53,48 @@ USBDB::USBDB()
 
             QRegularExpressionMatch match;
             if (line.startsWith('C') && (match = cls.match(line)).hasMatch()) {
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
                 id = match.capturedRef(1).toInt(0, 16);
                 const QString name = match.capturedRef(2).trimmed().toString();
+#else
+                id = match.capturedView(1).toInt(0, 16);
+                const QString name = match.capturedView(2).trimmed().toString();
+#endif
                 _classes.insert(QStringLiteral("%1").arg(id), name);
             } else if (id >= 0 && subid >= 0 && (match = prot.match(line)).hasMatch()) {
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
                 const int protid = match.capturedRef(1).toInt(0, 16);
                 const QString name = match.capturedRef(2).trimmed().toString();
+#else
+                const int protid = match.capturedView(1).toInt(0, 16);
+                const QString name = match.capturedView(2).trimmed().toString();
+#endif
                 _classes.insert(QStringLiteral("%1-%2-%3").arg(id).arg(subid).arg(protid), name);
             } else if (id >= 0 && (match = subclass.match(line)).hasMatch()) {
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
                 subid = match.capturedRef(1).toInt(0, 16);
                 const QString name = match.capturedRef(2).trimmed().toString();
+#else
+                subid = match.capturedView(1).toInt(0, 16);
+                const QString name = match.capturedView(2).trimmed().toString();
+#endif
                 _classes.insert(QStringLiteral("%1-%2").arg(id).arg(subid), name);
             } else if ((match = vendor.match(line)).hasMatch()) {
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
                 id = match.capturedRef(1).toInt(0, 16);
+#else
+                id = match.capturedView(1).toInt(0, 16);
+#endif
                 const QString name = match.captured(2);
                 _ids.insert(QStringLiteral("%1").arg(id), name);
             } else if (id >= 0 && (match = product.match(line)).hasMatch()) {
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
                 subid = match.capturedRef(1).toInt(0, 16);
                 const QString name = match.capturedRef(2).trimmed().toString();
+#else
+                subid = match.capturedView(1).toInt(0, 16);
+                const QString name = match.capturedView(2).trimmed().toString();
+#endif
                 _ids.insert(QStringLiteral("%1-%2").arg(id).arg(subid), name);
             } else {
                 id = -1;

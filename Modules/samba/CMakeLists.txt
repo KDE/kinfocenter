@@ -12,6 +12,7 @@ qt_add_dbus_interface(kcm_samba_PART_SRCS org.freedesktop.Avahi.Server.xml org.f
 
 # Intermediate lib for use in testing.
 add_library(kcm_samba_static STATIC ${kcm_samba_PART_SRCS})
+set_property(TARGET kcm_samba_static PROPERTY POSITION_INDEPENDENT_CODE ON)
 target_link_libraries(kcm_samba_static
     KF5::KIOCore
     KF5::Solid

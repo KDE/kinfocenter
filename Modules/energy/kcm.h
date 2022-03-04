@@ -7,10 +7,9 @@
 #ifndef KCM_ENERGYINFO_H
 #define KCM_ENERGYINFO_H
 
+#include "wakeupmodel.h"
 #include <KQuickAddons/ConfigModule>
-
 class BatteryModel;
-class WakeUpModel;
 
 class KCMEnergyInfo : public KQuickAddons::ConfigModule
 {

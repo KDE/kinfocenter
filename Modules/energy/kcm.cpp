@@ -24,7 +24,6 @@
 
 #include "batterymodel.h"
 #include "statisticsprovider.h"
-#include "wakeupmodel.h"
 
 K_PLUGIN_CLASS_WITH_JSON(KCMEnergyInfo, "kcm_energyinfo.json")
 

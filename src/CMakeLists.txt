@@ -14,5 +14,5 @@ set_target_properties(KInfoCenterInternal
         CXX_VISIBILITY_PRESET default
         VISIBILITY_INLINES_HIDDEN OFF)
 
-install(DIRECTORY qml/ DESTINATION ${QML_INSTALL_DIR}/org/kde/kinfocenter/private)
+install(DIRECTORY qml/ DESTINATION ${KDE_INSTALL_QMLDIR}/org/kde/kinfocenter/private)
 install(TARGETS KInfoCenterInternal ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} LIBRARY NAMELINK_SKIP)

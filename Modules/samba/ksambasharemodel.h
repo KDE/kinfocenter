@@ -5,7 +5,7 @@
 
 #pragma once
 
-#include <KIOCore/KSambaShareData>
+#include <KSambaShareData>
 #include <QAbstractListModel>
 
 /**

@@ -9,7 +9,7 @@
 #include <QDBusPendingCallWatcher>
 #include <QMetaEnum>
 
-#include <KIOWidgets/KPropertiesDialog>
+#include <KPropertiesDialog>
 #include <KSambaShare>
 
 #include "org.freedesktop.Avahi.Server.h"
