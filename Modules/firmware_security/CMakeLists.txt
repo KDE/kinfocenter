@@ -12,6 +12,6 @@ add_definitions(-DTRANSLATION_DOMAIN=\"kcm_firmware_security\")
 add_library(kcm_firmware_security MODULE main.cpp)
 target_link_libraries(kcm_firmware_security KF5::CoreAddons KF5::QuickAddons KF5::I18n KF5::Package KInfoCenterInternal)
 
-install(TARGETS kcm_firmware_security DESTINATION ${PLUGIN_INSTALL_DIR}/plasma/kcms/kinfocenter)
+install(TARGETS kcm_firmware_security DESTINATION ${KDE_INSTALL_PLUGINDIR}/plasma/kcms/kinfocenter)
 
 kpackage_install_package(package kcm_firmware_security kcms)
