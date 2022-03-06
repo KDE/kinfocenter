@@ -2,8 +2,18 @@
     "Categories": "Qt;KDE;X-KDE-information;",
     "KPlugin": {
         "Description": "Firmware Security Information",
+        "Description[ca]": "Informació de seguretat del microprogramari",
+        "Description[es]": "Información sobre seguridad del firmware",
+        "Description[nl]": "Firmware beveiligingsinformatie",
+        "Description[uk]": "Дані щодо захисту мікропрограм",
+        "Description[x-test]": "xxFirmware Security Informationxx",
         "Icon": "preferences-security",
-        "Name": "Firmware Security"
+        "Name": "Firmware Security",
+        "Name[ca]": "Seguretat del microprogramari",
+        "Name[es]": "Seguridad del firmware",
+        "Name[nl]": "Firmware beveiliging",
+        "Name[uk]": "Захист мікропрограм",
+        "Name[x-test]": "xxFirmware Securityxx"
     },
     "TryExec": "fwupdmgr",
     "X-KDE-KInfoCenter-Category": "device_information",
