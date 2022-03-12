@@ -12,6 +12,7 @@
         "Description[sk]": "Informácie o zabezpečení firmvéru",
         "Description[sl]": "Informacije o varnosti vgrajenega programja",
         "Description[ta]": "சாதனநிரல் பாதுகாப்பு குறித்த விவரங்கள்",
+        "Description[tr]": "Gömülü Yazılım Güvenliği Bilgisi",
         "Description[uk]": "Дані щодо захисту мікропрограм",
         "Description[x-test]": "xxFirmware Security Informationxx",
         "Icon": "preferences-security",
@@ -26,6 +27,7 @@
         "Name[sk]": "Zabezpečenie firmvéru",
         "Name[sl]": "Varnost vgrajenega programja",
         "Name[ta]": "சாதனநிரல் பாதுகாப்பு",
+        "Name[tr]": "Gömülü Yazılım Güvenliği",
         "Name[uk]": "Захист мікропрограм",
         "Name[x-test]": "xxFirmware Securityxx"
     },
