@@ -127,7 +127,10 @@ KCM.SimpleKCM {
     }
 
     footer: QQC2.ToolBar {
-        visible: root.state !== "loading" && root.textFormat === TextEdit.PlainText
+        visible: {
+            const isVisibleState = (root.state === "" || !(root.state === "noData" && contentLoader.item.errorNotFilter))
+            return isVisibleState && root.textFormat === TextEdit.PlainText
+        }
 
         Kirigami.SearchField {
             id: filterField
