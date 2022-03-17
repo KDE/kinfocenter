@@ -17,6 +17,7 @@
         "Description[tr]": "Gömülü Yazılım Güvenliği Bilgisi",
         "Description[uk]": "Дані щодо захисту мікропрограм",
         "Description[x-test]": "xxFirmware Security Informationxx",
+        "Description[zh_CN]": "固件安全信息",
         "Icon": "preferences-security",
         "Name": "Firmware Security",
         "Name[ar]": "أمن البرامج الثابتة",
@@ -33,7 +34,8 @@
         "Name[ta]": "சாதனநிரல் பாதுகாப்பு",
         "Name[tr]": "Gömülü Yazılım Güvenliği",
         "Name[uk]": "Захист мікропрограм",
-        "Name[x-test]": "xxFirmware Securityxx"
+        "Name[x-test]": "xxFirmware Securityxx",
+        "Name[zh_CN]": "固件安全"
     },
     "TryExec": "fwupdmgr",
     "X-KDE-KInfoCenter-Category": "device_information",
