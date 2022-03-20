@@ -3,6 +3,7 @@
     "KPlugin": {
         "Description": "Firmware Security Information",
         "Description[ar]": "معلومات عن أمن البرامج الثابتة",
+        "Description[ca@valencia]": "Informació de seguretat del microprogramari",
         "Description[ca]": "Informació de seguretat del microprogramari",
         "Description[de]": "Informationen zur Firmware-Sicherheit",
         "Description[es]": "Información sobre seguridad del firmware",
@@ -22,6 +23,7 @@
         "Icon": "preferences-security",
         "Name": "Firmware Security",
         "Name[ar]": "أمن البرامج الثابتة",
+        "Name[ca@valencia]": "Seguretat del microprogramari",
         "Name[ca]": "Seguretat del microprogramari",
         "Name[de]": "Firmware-Sicherheit",
         "Name[es]": "Seguridad del firmware",
