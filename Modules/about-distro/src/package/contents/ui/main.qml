@@ -1,14 +1,14 @@
 /*
     SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
-    SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
+    SPDX-FileCopyrightText: 2021-2022 Harald Sitter <sitter@kde.org>
 */
 
 import QtQuick 2.15
 import QtQuick.Controls 2.5 as QQC2
 import QtQuick.Layouts 1.1
 
-import org.kde.kirigami 2.12 as Kirigami
-import org.kde.kcm 1.4 as KCM
+import org.kde.kirigami 2.19 as Kirigami
+import org.kde.kcm 1.6 as KCM
 
 import org.kde.kinfocenter.about_distro.private 1.0
 
@@ -74,9 +74,42 @@ KCM.SimpleKCM {
 
             Component {
                 id: entryComponent
-                QQC2.Label {
+                RowLayout {
                     Kirigami.FormData.label: modelData.localizedLabel()
-                    text: modelData.localizedValue()
+                    readonly property bool hidden: modelData.isHidden()
+
+                    Component {
+                        id: unhideDialog
+                        Kirigami.PromptDialog {
+                            // NB: should we ever have other entries that need this dialog then this needs refactoring on the Entry side.
+                            //  Do NOT simply add if else logic here!
+                            title: i18nc("@title", "Serial Number")
+                            subtitle: modelData.localizedValue()
+                            flatFooterButtons: true
+                            standardButtons: Kirigami.Dialog.NoButton
+                            customFooterActions: [
+                                Kirigami.Action {
+                                    text: i18nc("@action:button", "Copy to Clipboard")
+                                    icon.name: "edit-copy"
+                                    onTriggered: kcm.storeInClipboard(subtitle)
+                                    shortcut: StandardKey.Copy
+                                }
+                            ]
+                        }
+                    }
+
+                    QQC2.Label {
+                        visible: !hidden
+                        text: modelData.localizedValue()
+                    }
+                    QQC2.Button {
+                        visible: hidden
+                        text: i18nc("@action:button show a hidden entry in an overlay", "Show")
+                        onClicked: {
+                            const dialog = unhideDialog.createObject(root, {})
+                            dialog.open()
+                        }
+                    }
                 }
             }
 

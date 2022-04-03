@@ -1,5 +1,5 @@
 /*
-    SPDX-FileCopyrightText: 2012-2021 Harald Sitter <sitter@kde.org>
+    SPDX-FileCopyrightText: 2012-2022 Harald Sitter <sitter@kde.org>
     SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 */
 
@@ -9,6 +9,8 @@
 #include <QLocale>
 
 #include <KAboutData>
+#include <KAuthAction>
+#include <KAuthExecuteJob>
 #include <KConfig>
 #include <KConfigGroup>
 #include <KCoreAddons>
@@ -29,6 +31,62 @@
 #include <KLocalizedString>
 #include <KPluginFactory>
 #include <KQuickAddons/ConfigModule>
+
+class EntryModel : public QAbstractListModel
+{
+    Q_OBJECT
+public:
+    enum Role {
+        ModelData = Qt::UserRole,
+    };
+    Q_ENUM(Role)
+
+    using QAbstractListModel::QAbstractListModel;
+
+    [[nodiscard]] int rowCount(const QModelIndex &parent) const override
+    {
+        Q_UNUSED(parent);
+        return m_entries.size();
+    }
+
+    [[nodiscard]] QVariant data(const QModelIndex &index, int intRole) const override
+    {
+        if (!index.isValid()) {
+            return {};
+        }
+
+        switch (static_cast<Role>(intRole)) {
+        case Role::ModelData:
+            return QVariant::fromValue(m_entries.at(index.row()));
+        }
+
+        return {};
+    }
+
+    [[nodiscard]] QHash<int, QByteArray> roleNames() const override
+    {
+        static QHash<int, QByteArray> roles;
+        if (!roles.isEmpty()) {
+            return roles;
+        }
+
+        roles = QAbstractListModel::roleNames();
+        roles.insert(Role::ModelData, QByteArrayLiteral("modelData"));
+        return roles;
+    }
+
+    void append(Entry *entry)
+    {
+        beginInsertRows(QModelIndex(), m_entries.size(), m_entries.size());
+        m_entries.push_back(entry);
+        endInsertRows();
+    }
+
+private:
+    std::vector<Entry *> m_entries;
+};
+Q_DECLARE_METATYPE(EntryModel *)
+Q_DECLARE_METATYPE(Entry *)
 
 class KCMAboutSystem : public KQuickAddons::ConfigModule
 {
@@ -110,21 +168,39 @@ public:
         Q_EMIT changed();
     }
 
+    static KLocalizedString systemInfoKey(const QString &key)
+    {
+        if (key == QStringLiteral("system-manufacturer")) {
+            return ki18nc("@label", "Manufacturer:");
+        }
+        if (key == QStringLiteral("system-product-name")) {
+            return ki18nc("@label", "Product Name:");
+        }
+        if (key == QStringLiteral("system-version")) {
+            return ki18nc("@label", "System Version:");
+        }
+        if (key == QStringLiteral("system-serial-number")) {
+            return ki18nc("@label", "Serial Number:");
+        }
+        qFatal("unexpected systeminfo key %s\n", qUtf8Printable(key));
+        Q_UNREACHABLE();
+    }
+
     void loadEntries()
     {
-        auto addEntriesToGrid = [this](QList<QObject *> *list, const std::vector<Entry *> &entries) {
+        auto addEntriesToGrid = [this](EntryModel *model, const std::vector<Entry *> &entries) {
             for (auto entry : entries) {
                 if (!entry->isValid()) {
                     delete entry; // since we do not keep it around
                     continue;
                 }
-                list->append(entry);
+                model->append(entry);
                 m_entries.push_back(entry);
             }
         };
 
         // software
-        addEntriesToGrid(&m_softwareEntries,
+        addEntriesToGrid(m_softwareEntries,
                          {new PlasmaEntry(),
                           new Entry(ki18n("KDE Frameworks Version:"), KCoreAddons::versionString()),
                           new Entry(ki18n("Qt Version:"), QString::fromLatin1(qVersion())),
@@ -132,7 +208,26 @@ public:
                           new GraphicsPlatformEntry()});
 
         // hardware
-        addEntriesToGrid(&m_hardwareEntries, {new CPUEntry(), new MemoryEntry(), new GPUEntry()});
+        addEntriesToGrid(m_hardwareEntries, {new CPUEntry, new MemoryEntry, new GPUEntry});
+
+        KAuth::Action action(QStringLiteral("org.kde.kinfocenter.dmidecode.systeminformation"));
+        action.setHelperId(QStringLiteral("org.kde.kinfocenter.dmidecode"));
+        KAuth::ExecuteJob *job = action.execute();
+        connect(job, &KJob::result, this, [this, job, addEntriesToGrid] {
+            QVariantMap data = job->data();
+            static const QString systemSerialNumberKey = QStringLiteral("system-serial-number");
+            const QString systemSerialNumber = data.take(systemSerialNumberKey).toString();
+            for (auto it = data.cbegin(); it != data.cend(); ++it) {
+                addEntriesToGrid(m_hardwareEntries, {new Entry(systemInfoKey(it.key()), it.value().toString())});
+            }
+            // Insert hidden entries at the end so it doesn't look weird visually to have a button mid-layout.
+            if (!systemSerialNumber.isEmpty()) {
+                addEntriesToGrid(m_hardwareEntries, {new Entry(systemInfoKey(systemSerialNumberKey), systemSerialNumber, Entry::Hidden::Yes)});
+            }
+
+            Q_EMIT changed();
+        });
+        job->start();
 
         Q_EMIT changed();
     }
@@ -141,17 +236,28 @@ public:
     {
         QString text;
         for (auto entry : m_entries) {
+            if (entry->isHidden()) {
+                continue;
+            }
             text += entry->diagnosticLine(Entry::Language::System);
         }
-        QGuiApplication::clipboard()->setText(text.trimmed());
+        storeInClipboard(text);
     }
 
     Q_SCRIPTABLE void copyToClipboardInEnglish()
     {
         QString text;
         for (auto entry : m_entries) {
+            if (entry->isHidden()) {
+                continue;
+            }
             text += entry->diagnosticLine(Entry::Language::English);
         }
+        storeInClipboard(text);
+    }
+
+    Q_SCRIPTABLE static void storeInClipboard(const QString &text)
+    {
         QGuiApplication::clipboard()->setText(text.trimmed());
     }
 
@@ -160,10 +266,10 @@ private:
 
     Q_SIGNAL void changed();
 
-    Q_PROPERTY(QList<QObject *> softwareEntries MEMBER m_softwareEntries NOTIFY changed);
-    QList<QObject *> m_softwareEntries;
-    Q_PROPERTY(QList<QObject *> hardwareEntries MEMBER m_hardwareEntries NOTIFY changed);
-    QList<QObject *> m_hardwareEntries;
+    Q_PROPERTY(EntryModel *softwareEntries MEMBER m_softwareEntries CONSTANT);
+    EntryModel *m_softwareEntries = new EntryModel(this);
+    Q_PROPERTY(EntryModel *hardwareEntries MEMBER m_hardwareEntries CONSTANT);
+    EntryModel *m_hardwareEntries = new EntryModel(this);
 
     Q_PROPERTY(QString distroLogo MEMBER m_distroLogo NOTIFY changed);
     QString m_distroLogo;

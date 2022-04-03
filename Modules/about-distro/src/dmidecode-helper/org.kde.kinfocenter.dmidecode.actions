@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
+[Domain]
+Icon=computer
+URL=https://www.kde.org
+Name=Desktop Management Interface
+
+[org.kde.kinfocenter.dmidecode.systeminformation]
+Policy=yes
+PolicyInactive=yes
+Name=System Information
+Description=Read system information from system's Desktop Management Interface (DMI)
