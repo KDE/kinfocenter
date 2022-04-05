@@ -4,6 +4,11 @@
 Icon=computer
 URL=https://www.kde.org
 Name=Desktop Management Interface
+Name[ca]=Interfície de gestió de l'escriptori
+Name[ca@valencia]=Interfície de gestió de l'escriptori
+Name[nl]=Bureaubladbeheerinterface
+Name[uk]=Інтерфейс керування стільницею
+Name[x-test]=xxDesktop Management Interfacexx
 
 [org.kde.kinfocenter.dmidecode.systeminformation]
 Policy=yes
@@ -12,6 +17,8 @@ Name=System Information
 Name[ast]=Información del sistema
 Name[az]=Sistem Məlumatları
 Name[ca]=Informació del sistema
+Name[ca@valencia]=Informació del sistema
+Name[cs]=Systémové informace
 Name[da]=Systeminformation
 Name[de]=Systeminformation
 Name[el]=Πληροφορίες συστήματος
@@ -39,5 +46,11 @@ Name[sl]=Informacije o sistemu
 Name[sv]=Systeminformation
 Name[tg]=Иттилоот дар бораи низом
 Name[uk]=Інформація про систему
+Name[x-test]=xxSystem Informationxx
 Name[zh_TW]=系統資訊
 Description=Read system information from system's Desktop Management Interface (DMI)
+Description[ca]=Llegeix la informació del sistema de la Interfície de gestió de l'escriptori «Desktop Management Interface (DMI)» del sistema
+Description[ca@valencia]=Llig la informació del sistema de la Interfície de gestió de l'escriptori «Desktop Management Interface (DMI)» del sistema
+Description[nl]=Systeeminformatie lezen uit Bureaubladbeheerinterface (DMI) van het systeem
+Description[uk]=Читати дані системи з інтерфейсу керування стільницею (DMI) системи
+Description[x-test]=xxRead system information from system's Desktop Management Interface (DMI)xx
