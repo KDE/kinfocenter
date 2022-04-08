@@ -23,6 +23,7 @@
         "Description[ta]": "சாதனநிரல் பாதுகாப்பு குறித்த விவரங்கள்",
         "Description[tr]": "Gömülü Yazılım Güvenliği Bilgisi",
         "Description[uk]": "Дані щодо захисту мікропрограм",
+        "Description[vi]": "Thông tin an ninh phần sụn",
         "Description[x-test]": "xxFirmware Security Informationxx",
         "Description[zh_CN]": "固件安全信息",
         "Icon": "preferences-security",
@@ -48,6 +49,7 @@
         "Name[ta]": "சாதனநிரல் பாதுகாப்பு",
         "Name[tr]": "Gömülü Yazılım Güvenliği",
         "Name[uk]": "Захист мікропрограм",
+        "Name[vi]": "An ninh phần sụn",
         "Name[x-test]": "xxFirmware Securityxx",
         "Name[zh_CN]": "固件安全"
     },

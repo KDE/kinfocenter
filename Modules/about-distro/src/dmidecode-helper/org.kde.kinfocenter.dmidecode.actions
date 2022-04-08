@@ -12,6 +12,7 @@ Name[nl]=Bureaubladbeheerinterface
 Name[sl]=Vmesnik za upravljanje namizja
 Name[sv]=Gränssnitt för skrivbordshantering
 Name[uk]=Інтерфейс керування стільницею
+Name[vi]=Giao diện quản lí máy tính
 Name[x-test]=xxDesktop Management Interfacexx
 
 [org.kde.kinfocenter.dmidecode.systeminformation]
@@ -50,6 +51,7 @@ Name[sl]=Informacije o sistemu
 Name[sv]=Systeminformation
 Name[tg]=Иттилоот дар бораи низом
 Name[uk]=Інформація про систему
+Name[vi]=Thông tin hệ thống
 Name[x-test]=xxSystem Informationxx
 Name[zh_TW]=系統資訊
 Description=Read system information from system's Desktop Management Interface (DMI)
@@ -61,4 +63,5 @@ Description[nl]=Systeeminformatie lezen uit Bureaubladbeheerinterface (DMI) van 
 Description[sl]=Preberi sistemske informacije vmesnika sistema za upravljanje namizja (angl. DMI)
 Description[sv]=Läs systeminformation från systemets gränssnitt för skrivbordshantering (DMI)
 Description[uk]=Читати дані системи з інтерфейсу керування стільницею (DMI) системи
+Description[vi]=Đọc thông tin hệ thống từ "Giao diện quản lí máy tính" (DMI) của hệ thống
 Description[x-test]=xxRead system information from system's Desktop Management Interface (DMI)xx
