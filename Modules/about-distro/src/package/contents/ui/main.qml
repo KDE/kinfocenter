@@ -25,7 +25,6 @@ KCM.SimpleKCM {
     topPadding: Kirigami.Units.largeSpacing * 4
     leftPadding: Kirigami.Units.largeSpacing * 4
     rightPadding: Kirigami.Units.largeSpacing * 4
-    bottomPadding: Kirigami.Units.largeSpacing * 4
 
     ColumnLayout {
         spacing: Kirigami.Units.largeSpacing
