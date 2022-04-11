@@ -22,9 +22,9 @@ KCM.SimpleKCM {
     implicitHeight: Kirigami.Units.gridUnit * 20
 
     // Scoot away from the edges! Otherwise the KCM looks overly cramped.
-    topPadding: Kirigami.Units.largeSpacing * 4
-    leftPadding: Kirigami.Units.largeSpacing * 4
-    rightPadding: Kirigami.Units.largeSpacing * 4
+    topPadding: Kirigami.Units.gridUnit
+    leftPadding: Kirigami.Units.gridUnit
+    rightPadding: Kirigami.Units.gridUnit
 
 
     ServiceRunner {
