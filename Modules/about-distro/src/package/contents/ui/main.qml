@@ -26,6 +26,12 @@ KCM.SimpleKCM {
     leftPadding: Kirigami.Units.largeSpacing * 4
     rightPadding: Kirigami.Units.largeSpacing * 4
 
+
+    ServiceRunner {
+        id: kicRunner
+        desktopFileName: "org.kde.kinfocenter"
+    }
+
     ColumnLayout {
         spacing: Kirigami.Units.largeSpacing
 
@@ -133,23 +139,19 @@ KCM.SimpleKCM {
             }
         }
 
-        ColumnLayout { // Wraps a spacer and button (conditionally visible!)
-            Layout.alignment: Qt.AlignHCenter
+        Item {
+            visible: !kcm.isThisKInfoCenter && kicRunner.canRun
+            implicitHeight: Kirigami.Units.largeSpacing
+        }
+
+        QQC2.Button {
             visible: !kcm.isThisKInfoCenter && kicRunner.canRun
 
-            Item { implicitHeight: Kirigami.Units.gridUnit }
-            QQC2.Button {
-                id: kicButton
+            Layout.alignment: Qt.AlignHCenter
 
-                text: i18nc("@action:button launches kinfocenter from systemsettings", "Show More Information")
-                icon.name: kicRunner.iconName
-                onClicked: kicRunner.run()
-            }
-
-            ServiceRunner {
-                id: kicRunner
-                desktopFileName: "org.kde.kinfocenter"
-            }
+            text: i18nc("@action:button launches kinfocenter from systemsettings", "Show More Information")
+            icon.name: kicRunner.iconName
+            onClicked: kicRunner.run()
         }
     }
 
