@@ -3,7 +3,7 @@
 
 #pragma once
 
-#include <KAuthActionReply>
+#include <KAuth/ActionReply>
 
 class DMIDecodeHelper : public QObject
 {

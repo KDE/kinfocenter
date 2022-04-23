@@ -7,7 +7,7 @@ set_package_properties(dmidecode PROPERTIES TYPE RUNTIME)
 add_executable(kinfocenter-dmidecode-helper helper.cpp)
 target_link_libraries(kinfocenter-dmidecode-helper
     Qt::Widgets
-    KF5::Auth
+    KF5::AuthCore
     KF5::I18n
 )
 
