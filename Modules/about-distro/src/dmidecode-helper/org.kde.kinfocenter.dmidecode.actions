@@ -7,6 +7,7 @@ Name=Desktop Management Interface
 Name[az]=Masaüstü İdarəetmə İnterfeysi
 Name[ca]=Interfície de gestió de l'escriptori
 Name[ca@valencia]=Interfície de gestió de l'escriptori
+Name[en_GB]=Desktop Management Interface
 Name[es]=Interfaz de gestión del escritorio
 Name[fi]=Työpöydänhallintakäyttöliittymä
 Name[fr]=Interface de gestion du bureau
@@ -73,6 +74,7 @@ Description=Read system information from system's Desktop Management Interface (
 Description[az]=Sistem məlumatlarını Masaüstü İdarəetmə İnterfeysindən (az-Mİİ = en-DMİ) oxumaq
 Description[ca]=Llegeix la informació del sistema de la Interfície de gestió de l'escriptori «Desktop Management Interface (DMI)» del sistema
 Description[ca@valencia]=Llig la informació del sistema de la Interfície de gestió de l'escriptori «Desktop Management Interface (DMI)» del sistema
+Description[en_GB]=Read system information from system's Desktop Management Interface (DMI)
 Description[es]=Leer información del sistema de la interfaz de gestión del escritorio (DMI)
 Description[fi]=Lue järjestelmätiedot järjestelmän työpöydänhallintaliittymästä (DMI)
 Description[fr]=Lire les informations sur le système à partir de l'interface de gestion du bureau « DMI » (Desktop Management Interface)
