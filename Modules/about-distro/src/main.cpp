@@ -9,8 +9,8 @@
 #include <QLocale>
 
 #include <KAboutData>
-#include <KAuthAction>
-#include <KAuthExecuteJob>
+#include <KAuth/Action>
+#include <KAuth/ExecuteJob>
 #include <KConfig>
 #include <KConfigGroup>
 #include <KCoreAddons>

@@ -7,7 +7,7 @@
 #include <QProcess>
 #include <QStandardPaths>
 
-#include <KAuthHelperSupport>
+#include <KAuth/HelperSupport>
 
 template<typename Output, typename... Input>
 auto make_array(Input&&... args) -> std::array<Output, sizeof...(args)> // NB: we need suffix notation here so args is defined
