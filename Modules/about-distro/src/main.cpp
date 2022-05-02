@@ -3,6 +3,8 @@
     SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 */
 
+#include <utility>
+
 #include <QClipboard>
 #include <QGuiApplication>
 #include <QIcon>
@@ -235,7 +237,7 @@ public:
     Q_SCRIPTABLE void copyToClipboard()
     {
         QString text;
-        for (auto entry : m_entries) {
+        for (auto entry : std::as_const(m_entries)) {
             if (entry->isHidden()) {
                 continue;
             }
@@ -247,7 +249,7 @@ public:
     Q_SCRIPTABLE void copyToClipboardInEnglish()
     {
         QString text;
-        for (auto entry : m_entries) {
+        for (auto entry : std::as_const(m_entries)) {
             if (entry->isHidden()) {
                 continue;
             }
