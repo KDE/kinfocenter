@@ -37,3 +37,4 @@ target_link_libraries(kcm_about-distro
     KF5::AuthCore)
 
 kpackage_install_package(package kcm_about-distro kcms)
+install(FILES kcm_about-distro.desktop DESTINATION ${KDE_INSTALL_APPDIR})
