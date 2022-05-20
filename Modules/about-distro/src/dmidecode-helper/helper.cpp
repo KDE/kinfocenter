@@ -3,6 +3,7 @@
 
 #include "helper.h"
 
+#include <array>
 #include <QDebug>
 #include <QProcess>
 #include <QStandardPaths>
