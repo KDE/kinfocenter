@@ -5,4 +5,4 @@
 set -e
 
 # For sed testing please use --posix on GNU sed so you don't end up using gnu-isms.
-fwupdmgr security --force | aha | sed -E 's@(https:[^[:space:]]+)@<a href="\1">\1</a>@g'
+fwupdmgr security --force 2>&1 | aha | sed -E 's@(https:[^[:space:]]+)@<a href="\1">\1</a>@g'
