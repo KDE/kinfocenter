@@ -1,16 +1,24 @@
 # SPDX-License-Identifier: BSD-3-Clause
 # SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
 
-find_package(lspci)
-set_package_properties(lspci PROPERTIES TYPE RUNTIME)
+# Linux has lcpci; effectively it's always there, but it's a runtime
+# dependency anyway so we don't need to fail on it. `lspci -v` shows
+# a verbose PCI tree.
+#
+# FreeBSD has pciconf in base; that means that it will always
+# be there, so the `find_package()` is there mostly to demonstrate that
+# we're looking for it (and not for lspci). `pciconf -lv` shows a verbose
+# PCI tree.
+if (CMAKE_SYSTEM_NAME STREQUAL "FreeBSD")
+    find_package(pciconf)
+    set_package_properties(pciconf PROPERTIES TYPE RUNTIME)
 
-find_package(pciconf)
-set_package_properties(pciconf PROPERTIES TYPE RUNTIME)
-
-if(pciconf_FOUND)
     set(PCI_BACKEND pciconf)
     set(PCI_BACKEND_ARGUMENTS "-lv")
 else()
+    find_package(lspci)
+    set_package_properties(lspci PROPERTIES TYPE RUNTIME)
+
     set(PCI_BACKEND lspci)
     set(PCI_BACKEND_ARGUMENTS "-v")
 endif()
