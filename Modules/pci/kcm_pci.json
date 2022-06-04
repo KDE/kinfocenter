@@ -13,6 +13,7 @@
         "Description[fi]": "PCI-tiedot",
         "Description[fr]": "Informations concernant l'interface PCI",
         "Description[ia]": "Information de PCI",
+        "Description[id]": "Informasi PCI",
         "Description[it]": "Informazioni sul bus PCI",
         "Description[ko]": "PCI 정보",
         "Description[nl]": "PCI-informatie",
