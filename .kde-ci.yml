@@ -22,3 +22,5 @@ Dependencies:
     'frameworks/solid': '@latest'
     'plasma/systemsettings': '@same'
     'plasma/plasma-systemmonitor': '@same'
+Options:
+  require-passing-tests-on: [ 'Linux', 'FreeBSD']
