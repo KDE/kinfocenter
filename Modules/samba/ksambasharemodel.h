@@ -16,7 +16,7 @@ class KSambaShareModel : public QAbstractListModel
     Q_OBJECT
 public:
     enum class Role { Name = Qt::UserRole + 1, Path, ShareUrl, Comment };
-    Q_ENUM(Role);
+    Q_ENUM(Role)
 
     explicit KSambaShareModel(QObject *parent = nullptr);
     ~KSambaShareModel() override;

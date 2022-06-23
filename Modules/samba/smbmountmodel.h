@@ -22,7 +22,7 @@ public:
         Path,
         Accessible,
     };
-    Q_ENUM(Role);
+    Q_ENUM(Role)
 
     explicit SmbMountModel(QObject *parent = nullptr);
     ~SmbMountModel() override;

@@ -26,13 +26,13 @@ public:
         System,
         English,
     };
-    Q_ENUM(Language);
+    Q_ENUM(Language)
 
     enum class Hidden {
         No = false,
         Yes = true,
     };
-    Q_ENUM(Hidden);
+    Q_ENUM(Hidden)
 
     // value may be empty if localizedValue is overridden
     Entry(const KLocalizedString &label_, const QString &value_, Hidden hidden = Hidden::No);
