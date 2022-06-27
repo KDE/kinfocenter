@@ -42,7 +42,6 @@ KCM.SimpleKCM {
         }
     }
 
-    property bool showWakeUps: true
     property int historyType: HistoryModel.ChargeType
 
     readonly property var details: [
@@ -106,7 +105,7 @@ KCM.SimpleKCM {
 
     Kirigami.PlaceholderMessage {
         anchors.centerIn: parent
-        visible: kcm.batteries.count <= 0 && kcm.wakeUps.count <= 0 && history.count <= 0
+        visible: kcm.batteries.count <= 0 && history.count <= 0
         width: parent.width - (Kirigami.Units.largeSpacing * 4)
         text: i18nc("@info:status", "No energy information available on this system")
         icon.name: "utilities-energy-monitor"
@@ -142,8 +141,6 @@ KCM.SimpleKCM {
                             checked = Qt.binding(function() {
                                 return model.battery == root.currentBattery
                             })
-
-                            showWakeUps = (index === 0)
                         }
 
                         ColumnLayout {
@@ -320,107 +317,6 @@ KCM.SimpleKCM {
                 text: i18n("This type of history is currently not available for this device.")
                 visible: !graph.visible
             }
-        }
-
-        ColumnLayout {
-            Layout.fillWidth: true
-            spacing: units.smallSpacing
-            visible: showWakeUps && kcm.wakeUps.count > 0
-
-            RowLayout {
-                Layout.fillWidth: true
-                Kirigami.Heading {
-                    Layout.fillWidth: true
-                    Layout.columnSpan: 2
-                    level: 4
-                    text: i18n("Application Energy Consumption")
-                }
-            }
-
-            GridLayout {
-                id: wakeUpsGrid
-                Layout.fillWidth: true
-                rows: compact ? kcm.wakeUps.count : kcm.wakeUps.count / 2
-                flow: GridLayout.TopToBottom
-                rowSpacing: units.smallSpacing
-                columnSpacing: units.smallSpacing
-                property int barWidth: (compact ? root.width - units.gridUnit: root.width / 2) - units.smallSpacing * 2
-
-                Repeater {
-                    model: showWakeUps ? kcm.wakeUps : null
-
-                    PlasmaCore.ToolTipArea { // FIXME use widget style tooltip
-                        Layout.minimumWidth: wakeUpsGrid.barWidth
-                        Layout.maximumWidth: wakeUpsGrid.barWidth
-                        height: childrenRect.height
-                        z: 2 // since the progress bar eats mouse events
-                        mainText: model.prettyName || model.name
-                        subText: {
-                            var text = ""
-                            if (model.prettyName && model.name !== model.prettyName) {
-                                text += i18n("Path: %1", model.name) + "\n"
-                            }
-                            if (model.pid) {
-                                text += i18n("PID: %1", model.pid) + "\n"
-                            }
-                            // FIXME format decimals
-                            text += i18n("Wakeups per second: %1 (%2%)", Math.round(model.wakeUps * 100) / 100, Math.round(model.wakeUps / kcm.wakeUps.total * 100)) + "\n"
-                            if (model.details) {
-                                text += i18n("Details: %1", model.details)
-                            }
-                            return text
-                        }
-                        icon: model.iconName
-
-                        RowLayout {
-                            id: wakeUpItemRow
-                            width: parent.width
-
-                            QIconItem {
-                                width: units.iconSizes.medium
-                                height: width
-                                icon: model.iconName
-                            }
-
-                            ColumnLayout {
-                                Layout.fillWidth: true
-                                spacing: 0
-
-                                RowLayout {
-                                    Layout.fillWidth: true
-
-                                    QQC2.Label {
-                                        Layout.fillWidth: true
-                                        elide: Text.ElideRight
-                                        text: model.prettyName || model.name
-                                    }
-
-                                    /*QQC2.Label {
-                                        text: i18n("System Service")
-                                        visible: !model.userSpace
-                                        opacity: 0.6
-                                    }*/
-                                }
-
-                                QQC2.ProgressBar {
-                                    Layout.fillWidth: true
-                                    from: 0
-                                    to: 100
-                                    value: model.wakeUps / kcm.wakeUps.total * 100
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        Rectangle {
-            Layout.fillWidth: true
-            height: 1
-            color: Kirigami.Theme.textColor // FIXME palette
-            //Layout.topMargin: (compact ? units.gridUnit * 2 : 0)
-            visible: wakeUpsGrid.visible
         }
 
         ColumnLayout {

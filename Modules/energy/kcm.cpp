@@ -33,7 +33,6 @@ KCMEnergyInfo::KCMEnergyInfo(QObject *parent, const KPluginMetaData &data, const
     : ConfigModule(parent, data, args)
 {
     qmlRegisterAnonymousType<BatteryModel>("org.kde.kinfocenter.energy.private", 1);
-    qmlRegisterAnonymousType<WakeUpModel>("org.kde.kinfocenter.energy.private", 1);
 
     qmlRegisterType<StatisticsProvider>("org.kde.kinfocenter.energy.private", 1, 0, "HistoryModel");
     qmlRegisterUncreatableType<BatteryModel>("org.kde.kinfocenter.energy.private", 1, 0, "BatteryModel", QStringLiteral("Use BatteryModel"));
@@ -44,8 +43,6 @@ KCMEnergyInfo::KCMEnergyInfo(QObject *parent, const KPluginMetaData &data, const
     setAboutData(about);
 
     m_batteries = new BatteryModel(this);
-
-    m_wakeUps = new WakeUpModel(this);
 }
 
 #include "kcm.moc"

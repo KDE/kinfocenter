@@ -8,8 +8,6 @@ set(kcm_energyinfo_SRCS
     kcm.h
     statisticsprovider.cpp
     statisticsprovider.h
-    wakeupmodel.cpp
-    wakeupmodel.h
 )
 
 kcoreaddons_add_plugin(kcm_energyinfo SOURCES ${kcm_energyinfo_SRCS} INSTALL_NAMESPACE "plasma/kcms")
