@@ -6,6 +6,7 @@ Exec=kinfocenter kcm_about-distro
 
 Name=About this System
 Name[az]=Bu sistem haqqında
+Name[bg]=За системата
 Name[ca]=Quant a aquest sistema
 Name[ca@valencia]=Quant a este sistema
 Name[de]=Über dieses System

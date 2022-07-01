@@ -4,6 +4,7 @@
         "Description": "Samba status monitor",
         "Description[ar]": "مراقب حالة سامبا",
         "Description[az]": "Samba serverinin vəziyyəti",
+        "Description[bg]": "Монитор на Samba статус",
         "Description[ca@valencia]": "Controlador de l'estat de Samba",
         "Description[ca]": "Controlador de l'estat de Samba",
         "Description[de]": "Samba-Statusmonitor",
