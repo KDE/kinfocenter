@@ -6,7 +6,6 @@
 #include <KAboutData>
 #include <KLocalizedString>
 #include <KPluginFactory>
-#include <KPluginLoader>
 #include <KQuickAddons/ConfigModule>
 
 #include <CommandOutputContext.h>
