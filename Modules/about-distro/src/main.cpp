@@ -188,6 +188,41 @@ public:
         Q_UNREACHABLE();
     }
 
+#if defined(Q_OS_LINUX) || defined(Q_OS_ANDROID)
+    static KLocalizedString fdtNodeName(const QString &fdtNode)
+    {
+        if (fdtNode == QStringLiteral("model")) {
+            return ki18nc("@label", "Product Name:");
+        }
+        if (fdtNode == QStringLiteral("serial-number")) {
+            return ki18nc("@label", "Serial Number:");
+        }
+        if (fdtNode == QStringLiteral("chosen/u-boot,version")) {
+            return ki18nc("@label", "U-Boot Version:");
+        }
+        qFatal("unexpected devicetree property %s\n", qUtf8Printable(fdtNode));
+        Q_UNREACHABLE();
+    }
+
+    QString fdtGetValue(const QString &fdtNode)
+    {
+        QString fdtNodeValue;
+        QLatin1String fdtBase("/proc/device-tree/");
+        QFileInfo targetNode(fdtBase + fdtNode);
+        if (targetNode.exists() && targetNode.isFile()) {
+            QFile fdtNodeFile(fdtBase + fdtNode);
+            if (!fdtNodeFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
+                qWarning("Devicetree: could not retrieve value from node %s\n", qUtf8Printable(fdtNode));
+                return {};
+            } else {
+                fdtNodeValue = fdtNodeFile.readLine();
+                fdtNodeFile.close();
+            }
+        }
+        return fdtNodeValue;
+    }
+#endif // Q_OS_LINUX || Q_OS_ANDROID
+
     void loadEntries()
     {
         auto addEntriesToGrid = [this](EntryModel *model, const std::vector<Entry *> &entries) {
@@ -230,6 +265,25 @@ public:
             Q_EMIT changed();
         });
         job->start();
+
+#if defined(Q_OS_LINUX) || defined(Q_OS_ANDROID)
+        // FDT nodes should be relative to fdtBase/. Note the lack of leading slashes.
+        // Keep nodes which contain personal information at the bottom of the list to avoid mid-layout buttons.
+        static const QStringList fdtSupportedInfo = {"model", "chosen/u-boot,version", "serial-number"};
+
+        for (auto i = 0; i < fdtSupportedInfo.size(); ++i) {
+            QString fdtNode = fdtSupportedInfo.at(i);
+            QString fdtValue = fdtGetValue(fdtNode);
+            if (!fdtValue.isEmpty()) {
+                if (fdtNode == "serial-number") {
+                    addEntriesToGrid(m_hardwareEntries, {new Entry(fdtNodeName(fdtNode), fdtValue, Entry::Hidden::Yes)});
+                } else {
+                    addEntriesToGrid(m_hardwareEntries, {new Entry(fdtNodeName(fdtNode), fdtValue)});
+                }
+            }
+            Q_EMIT changed();
+        }
+#endif // Q_OS_LINUX || Q_OS_ANDROID
 
         Q_EMIT changed();
     }
