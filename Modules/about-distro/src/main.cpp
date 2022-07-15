@@ -208,19 +208,16 @@ public:
 
     QString fdtGetValue(const QString &fdtNode)
     {
-        QString fdtNodeValue;
         const QFileInfo targetNode(QLatin1String("/proc/device-tree/") + fdtNode);
         if (targetNode.exists() && targetNode.isFile()) {
             QFile fdtNodeFile(targetNode.filePath());
             if (!fdtNodeFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
                 qWarning("Devicetree: could not retrieve value from node %s\n", qUtf8Printable(fdtNode));
                 return {};
-            } else {
-                fdtNodeValue = fdtNodeFile.readLine();
-                fdtNodeFile.close();
             }
+            return fdtNodeFile.readLine();
         }
-        return fdtNodeValue;
+        return {};
     }
 #endif // Q_OS_LINUX || Q_OS_ANDROID
 
