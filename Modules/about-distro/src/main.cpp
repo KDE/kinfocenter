@@ -273,9 +273,8 @@ public:
         // Keep nodes which contain personal information at the bottom of the list to avoid mid-layout buttons.
         static const QStringList fdtSupportedInfo = {QStringLiteral("model"), QStringLiteral("chosen/u-boot,version"), QStringLiteral("serial-number")};
 
-        for (auto i = 0; i < fdtSupportedInfo.size(); ++i) {
-            QString fdtNode = fdtSupportedInfo.at(i);
-            QString fdtValue = fdtGetValue(fdtNode);
+        for (const auto &fdtNode : fdtSupportedInfo) {
+            const QString fdtValue = fdtGetValue(fdtNode);
             if (!fdtValue.isEmpty()) {
                 if (fdtNode == "serial-number") {
                     addEntriesToGrid(m_hardwareEntries, {new Entry(fdtNodeName(fdtNode), fdtValue, Entry::Hidden::Yes)});
