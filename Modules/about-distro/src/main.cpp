@@ -209,10 +209,9 @@ public:
     QString fdtGetValue(const QString &fdtNode)
     {
         QString fdtNodeValue;
-        QLatin1String fdtBase("/proc/device-tree/");
-        QFileInfo targetNode(fdtBase + fdtNode);
+        const QFileInfo targetNode(QLatin1String("/proc/device-tree/") + fdtNode);
         if (targetNode.exists() && targetNode.isFile()) {
-            QFile fdtNodeFile(fdtBase + fdtNode);
+            QFile fdtNodeFile(targetNode.filePath());
             if (!fdtNodeFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
                 qWarning("Devicetree: could not retrieve value from node %s\n", qUtf8Printable(fdtNode));
                 return {};
