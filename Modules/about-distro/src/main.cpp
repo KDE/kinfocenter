@@ -199,7 +199,7 @@ public:
             return ki18nc("@label", "Serial Number:");
         }
         if (fdtNode == QStringLiteral("chosen/u-boot,version")) {
-            return ki18nc("@label", "U-Boot Version:");
+            return ki18nc("@label uboot is the name of a bootloader for embedded devices", "U-Boot Version:");
         }
         qFatal("unexpected devicetree property %s\n", qUtf8Printable(fdtNode));
         Q_UNREACHABLE();
