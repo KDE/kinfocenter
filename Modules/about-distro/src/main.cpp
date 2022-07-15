@@ -271,7 +271,7 @@ public:
 #if defined(Q_OS_LINUX) || defined(Q_OS_ANDROID)
         // FDT nodes should be relative to fdtBase/. Note the lack of leading slashes.
         // Keep nodes which contain personal information at the bottom of the list to avoid mid-layout buttons.
-        static const QStringList fdtSupportedInfo = {"model", "chosen/u-boot,version", "serial-number"};
+        static const QStringList fdtSupportedInfo = {QStringLiteral("model"), QStringLiteral("chosen/u-boot,version"), QStringLiteral("serial-number")};
 
         for (auto i = 0; i < fdtSupportedInfo.size(); ++i) {
             QString fdtNode = fdtSupportedInfo.at(i);
