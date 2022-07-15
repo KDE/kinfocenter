@@ -186,6 +186,7 @@ public:
         }
         qFatal("unexpected systeminfo key %s\n", qUtf8Printable(key));
         Q_UNREACHABLE();
+        return ki18nc("@label unknown entry in table", "Unknown:");
     }
 
 #if defined(Q_OS_LINUX) || defined(Q_OS_ANDROID)
@@ -202,6 +203,7 @@ public:
         }
         qFatal("unexpected devicetree property %s\n", qUtf8Printable(fdtNode));
         Q_UNREACHABLE();
+        return ki18nc("@label unknown entry in table", "Unknown:");
     }
 
     QString fdtGetValue(const QString &fdtNode)
