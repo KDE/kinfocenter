@@ -32,7 +32,7 @@
         "Description[uk]": "Відомості щодо засобу композиції Wayland",
         "Description[vi]": "Thông tin về Trình kết hợp Wayland",
         "Description[x-test]": "xxInformation about the Wayland Compositorxx",
-        "Description[zh_CN]": "关于 Wayland 显示特效混合器的信息。",
+        "Description[zh_CN]": "关于 Wayland 显示特效合成器的信息。",
         "Icon": "wayland",
         "Name": "Wayland",
         "Name[ar]": "ويلاند",
