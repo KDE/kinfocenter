@@ -26,6 +26,7 @@ set(kcm_SRCS
 
 kcoreaddons_add_plugin(kcm_about-distro SOURCES ${kcm_SRCS} INSTALL_NAMESPACE "plasma/kcms")
 
+kcmutils_generate_desktop_file(kcm_about-distro)
 target_link_libraries(kcm_about-distro
     KF5::CoreAddons
     KF5::I18n
@@ -37,4 +38,3 @@ target_link_libraries(kcm_about-distro
     KF5::AuthCore)
 
 kpackage_install_package(package kcm_about-distro kcms)
-install(FILES kcm_about-distro.desktop DESTINATION ${KDE_INSTALL_APPDIR})

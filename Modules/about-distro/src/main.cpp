@@ -339,6 +339,6 @@ private:
     const bool m_isThisKInfoCenter = qGuiApp->desktopFileName() == QLatin1String("org.kde.kinfocenter");
 };
 
-K_PLUGIN_CLASS_WITH_JSON(KCMAboutSystem, "about-distro.json")
+K_PLUGIN_CLASS_WITH_JSON(KCMAboutSystem, "kcm_about-distro.json")
 
 #include "main.moc"
