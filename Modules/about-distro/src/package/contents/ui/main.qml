@@ -100,6 +100,7 @@ KCM.SimpleKCM {
                                     shortcut: StandardKey.Copy
                                 }
                             ]
+                            onClosed: destroy();
                         }
                     }
 
