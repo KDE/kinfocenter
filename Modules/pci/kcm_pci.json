@@ -4,6 +4,7 @@
         "Description": "PCI information",
         "Description[ar]": "معلومات PCI",
         "Description[az]": "PCİ məlumatı",
+        "Description[bg]": "Данни за PCI шина",
         "Description[ca@valencia]": "Informació de PCI",
         "Description[ca]": "Informació de PCI",
         "Description[de]": "Informationen zu PCI",
