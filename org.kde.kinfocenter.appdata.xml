@@ -10,6 +10,7 @@
   <name>Info Center</name>
   <name xml:lang="ast">Centru d'información</name>
   <name xml:lang="az">Məlumat Mərkəzi</name>
+  <name xml:lang="bg">Информационен център</name>
   <name xml:lang="ca">Centre d'informació</name>
   <name xml:lang="ca-valencia">Centre d'informació</name>
   <name xml:lang="cs">Informační centrum</name>
@@ -50,6 +51,7 @@
   <summary>Centralized and convenient overview of system information</summary>
   <summary xml:lang="ast">Tola información del sistema nun llugar afayadizu</summary>
   <summary xml:lang="az">Sistem haqqında məlumatlara mərkəzləşmiş və rahat şəkildə baxış</summary>
+  <summary xml:lang="bg">Централизиран и удобен преглед на системната информация</summary>
   <summary xml:lang="ca">Resum centralitzat i pràctic de la informació del sistema</summary>
   <summary xml:lang="ca-valencia">Resum centralitzat i pràctic de la informació del sistema</summary>
   <summary xml:lang="da">Centraliseret og bekvem oversigt over systeminformation</summary>
@@ -90,6 +92,7 @@
      overview of your system and desktop environment.</p>
     <p xml:lang="ast">Centru d'información úfrete un llugar centralizáu y afayadizu pa consultar la información del sistema y l'entornu d'escritoriu.</p>
     <p xml:lang="az">"Sistem Haqqında Məlumat" proqramı sistem parametrlərinə və İş Masası mühitinə mərkəzləşmiş şəkildə baxmağa imkan verir.</p>
+    <p xml:lang="bg">Информационният център ви предоставя централизиран и удобен преглед на системната и работната среда.</p>
     <p xml:lang="ca">El Centre d'informació proporciona una vista general centralitzada i còmoda del sistema i l'escriptori.</p>
     <p xml:lang="ca-valencia">Centre d'informació proporciona una vista general centralitzada i còmoda del sistema i l'escriptori.</p>
     <p xml:lang="da">Infocentret giver dig et centralt og bekvemt overblik over dit system og skrivebordsmiljø.</p>
@@ -129,6 +132,7 @@
      programs into a convenient location.</p>
     <p xml:lang="ast">Esti programa constitúinlu munchos módulos, caún ye una aplicación separtada pero Centru d'información organizalos toos nun llugar afayadizu.</p>
     <p xml:lang="az">Məlumat Mərkəzi bir çox modullardan ibarətdir. Hər modul ayrıca tətbiqdən ibarətdir, lakin KInfoCenter tətbiqi onları bir yerdə toplayır.</p>
+    <p xml:lang="bg">Информационният център се състои от множество модули. Всеки модул е отделно приложение, но информационният център организира всички тези програми на едно място.</p>
     <p xml:lang="ca">El centre d'informació està format per múltiples mòduls. Cadascun és una aplicació individual, però el centre d'informació els reuneix tots en un lloc comú.</p>
     <p xml:lang="ca-valencia">El centre d'informació està format per múltiples mòduls. Cadascun és una aplicació individual, però el centre d'informació els reuneix tots en un lloc comú.</p>
     <p xml:lang="cs">Informační centrum se skládá z celé řady modulů. Každý modul je ve skutečnosti samostatná aplikace, informační centrum ale všechny tyto aplikace sdružuje do jednoho místa.</p>
