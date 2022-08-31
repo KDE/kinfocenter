@@ -1,5 +1,5 @@
 /*
-    SPDX-FileCopyrightText: 2020 Harald Sitter <sitter@kde.org>
+    SPDX-FileCopyrightText: 2020-2022 Harald Sitter <sitter@kde.org>
     SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 */
 
@@ -70,6 +70,7 @@ Q_INVOKABLE void KSambaShareModel::showPropertiesDialog(int index)
 {
     auto dialog = new KPropertiesDialog(QUrl::fromUserInput(m_list.at(index).path()), QApplication::activeWindow());
     dialog->setFileNameReadOnly(true);
+    dialog->showFileSharingPage();
     dialog->show();
 }
 
