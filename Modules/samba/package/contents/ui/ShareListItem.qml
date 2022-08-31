@@ -50,7 +50,7 @@ Kirigami.AbstractListItem {
                     Layout.fillWidth: true
                     horizontalAlignment: Text.AlignLeft
                     font: Kirigami.Theme.smallFont
-                    url: ROLE_ShareUrl
+                    url: ROLE_ShareUrl !== undefined ? ROLE_ShareUrl : ""
                 }
 
                 // ... or name when we couldn't resolve a fully qualified url
