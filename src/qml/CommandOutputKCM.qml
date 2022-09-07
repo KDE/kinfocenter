@@ -27,6 +27,8 @@ KCM.SimpleKCM {
     property int wrapMode: TextEdit.NoWrap
     property var textFormat: TextEdit.PlainText
 
+    Clipboard { id: clipboard }
+
     Component {
         id: dataComponent
 
@@ -41,19 +43,8 @@ KCM.SimpleKCM {
              MouseArea {
                 id: labelsMouseArea
                 anchors.fill: parent
-                acceptedButtons: Qt.RightButton
+                acceptedButtons: Qt.NoButton
                 onClicked: contextMenu.popup()
-
-                Clipboard { id: clipboard }
-
-                QQC2.Menu {
-                    id: contextMenu
-                    Kirigami.Action {
-                        iconName: "edit-copy"
-                        text: i18nc("@item:inmenu copies all displayed text", "Copy All")
-                        onTriggered: clipboard.content = output.text
-                    }
-                }
             }
         }
     }
@@ -127,24 +118,35 @@ KCM.SimpleKCM {
     }
 
     footer: QQC2.ToolBar {
-        visible: {
-            const isVisibleState = (root.state === "" || !(root.state === "noData" && contentLoader.item.errorNotFilter))
-            return isVisibleState && root.textFormat === TextEdit.PlainText
-        }
+        contentItem: RowLayout {
 
-        Kirigami.SearchField {
-            id: filterField
+            Kirigami.SearchField {
+                id: filterField
 
-            anchors.fill: parent
+                Layout.fillWidth: true
 
-            placeholderText: i18nc("@label placeholder text to filter for something", "Filter…")
+                visible: {
+                    const isVisibleState = (root.state === "" || !(root.state === "noData" && contentLoader.item.errorNotFilter))
+                    return isVisibleState && root.textFormat === TextEdit.PlainText
+                }
 
-            Accessible.name: i18nc("accessible name for filter input", "Filter")
-            Accessible.searchEdit: true
+                placeholderText: i18nc("@label placeholder text to filter for something", "Filter…")
 
-            focusSequence: "Ctrl+I"
+                Accessible.name: i18nc("accessible name for filter input", "Filter")
+                Accessible.searchEdit: true
 
-            onAccepted: output.filter = text
+                focusSequence: "Ctrl+I"
+
+                onAccepted: output.filter = text
+            }
+            QQC2.Button {
+                Layout.alignment: Qt.AlignRight
+
+                icon.name: "edit-copy"
+                text: i18nc("@action:button copies all displayed text", "Copy to Clipboard")
+
+                onClicked: clipboard.content = output.text
+            }
         }
     }
 
