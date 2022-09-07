@@ -3,8 +3,8 @@
     SPDX-FileCopyrightText: 2021-2022 Harald Sitter <sitter@kde.org>
 */
 
-import QtQuick 2.5
-import QtQuick.Controls 2.5 as QQC2
+import QtQuick 2.15
+import QtQuick.Controls 2.15 as QQC2
 import QtQuick.Layouts 1.1
 
 import org.kde.kirigami 2.12 as Kirigami
@@ -33,18 +33,15 @@ KCM.SimpleKCM {
         id: dataComponent
 
         QQC2.Label {
+            id: text
             text: output.text
             font.family: "monospace"
             wrapMode: root.wrapMode
             textFormat: root.textFormat
             onLinkActivated: Qt.openUrlExternally(link)
-            onLinkHovered: labelsMouseArea.cursorShape = link === "" ? undefined : Qt.PointingHandCursor
 
-             MouseArea {
-                id: labelsMouseArea
-                anchors.fill: parent
-                acceptedButtons: Qt.NoButton
-                onClicked: contextMenu.popup()
+             HoverHandler {
+                cursorShape: text.linkHovered.length > 0 ? Qt.PointingHandCursor : undefined
             }
         }
     }
