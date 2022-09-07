@@ -1,0 +1,10 @@
+{
+    "Categories": "Qt;KDE;X-KDE-information;",
+    "KPlugin": {
+        "Description": "KWin Support information",
+        "Icon": "kwin",
+        "Name": "Window Manager"
+    },
+    "TryExec": "qdbus",
+    "X-KDE-KInfoCenter-Category": "graphical_information"
+}

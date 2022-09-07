@@ -2,6 +2,7 @@
 add_subdirectory( about-distro )
 add_subdirectory( devinfo )
 add_subdirectory(vulkan)
+add_subdirectory(kwinsupportinfo)
 add_subdirectory(cpu)
 add_subdirectory(wayland)
 add_subdirectory(interrupts)
