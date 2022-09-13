@@ -66,10 +66,16 @@ SimpleKCM {
     }
 
 
-    footer: QQC2.Button {
-        icon.name: "view-refresh"
-        text: i18nc("@action:button", "Refresh")
-        onClicked: networkModel.update();
+    footer: QQC2.ToolBar {
+        RowLayout {
+            anchors.fill: parent
+            spacing: Kirigami.Units.smallSpacing
+            QQC2.Button {
+                Layout.fillWidth: true
+                icon.name: "view-refresh"
+                text: i18nc("@action:button", "Refresh")
+                onClicked: networkModel.update();
+            }
+        }
     }
 }
-
