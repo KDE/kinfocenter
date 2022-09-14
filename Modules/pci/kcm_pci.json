@@ -30,6 +30,7 @@
         "Description[sk]": "Informácie o PCI",
         "Description[sl]": "Podatki o vodilu PCI",
         "Description[sv]": "Information om PCI",
+        "Description[ta]": "PCI விவரங்கள்",
         "Description[tr]": "PCI bilgisi",
         "Description[uk]": "Інформація щодо шини PCI",
         "Description[vi]": "Thông tin về PCI",
