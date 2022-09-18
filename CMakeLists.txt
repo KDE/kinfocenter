@@ -20,6 +20,7 @@ include(KDEClangFormat)
 include(ECMFindQmlModule)
 include(KDEGitCommitHooks)
 include(ECMSetupQtPluginMacroNames)
+include(ECMQueryQt)
 
 find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Core Gui Widgets)
 
@@ -54,6 +55,8 @@ remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_K
 add_definitions(-DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT)
 add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
 add_definitions(-DQT_USE_QSTRINGBUILDER)
+
+ecm_query_qt(QtBinariesDir QT_INSTALL_BINS)
 
 add_subdirectory( Categories )
 add_subdirectory( kcontrol/menus )
