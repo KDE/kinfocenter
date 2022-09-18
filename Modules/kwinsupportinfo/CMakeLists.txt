@@ -9,4 +9,6 @@ target_link_libraries(kcm_kwinsupportinfo KF5::CoreAddons KF5::QuickAddons KF5::
 
 install(TARGETS kcm_kwinsupportinfo DESTINATION ${KDE_INSTALL_PLUGINDIR}/plasma/kcms/kinfocenter)
 
+configure_file(kcm_kwinsupportinfo.json.in ${CMAKE_CURRENT_BINARY_DIR}/kcm_kwinsupportinfo.json @ONLY)
+
 kpackage_install_package(package kcm_kwinsupportinfo kcms)

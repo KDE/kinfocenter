@@ -35,6 +35,6 @@
         "Name[uk]": "Керування вікнами",
         "Name[x-test]": "xxWindow Managerxx"
     },
-    "TryExec": "qdbus",
+    "TryExec": "@QtBinariesDir@/qdbus",
     "X-KDE-KInfoCenter-Category": "graphical_information"
 }
