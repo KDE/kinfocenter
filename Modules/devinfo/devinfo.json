@@ -1,6 +1,7 @@
 {
     "Categories": "Qt;KDE;X-KDE-information;",
     "KPlugin": {
+        "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
         "Description": "Device Viewer",
         "Description[ar]": "عارض الأجهزة",
         "Description[az]": "Qurğuların siyahısı",

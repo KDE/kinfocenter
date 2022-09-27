@@ -1,6 +1,7 @@
 {
     "Categories": "Qt;KDE;X-KDE-information;",
     "KPlugin": {
+        "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
         "Description": "Interrupt information",
         "Description[ar]": "معلومات المقاطعات",
         "Description[az]": "Boşdayanma haqqında məlumat",

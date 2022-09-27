@@ -1,6 +1,7 @@
 {
     "Categories": "Qt;KDE;X-KDE-settings-personalization;X-KDE-information;",
     "KPlugin": {
+        "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
         "Description": "Information About This System",
         "Description[ar]": "معلومات عن هذا النّظام",
         "Description[az]": "Bu sistem haqqında məlumat",

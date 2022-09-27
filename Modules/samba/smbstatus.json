@@ -1,6 +1,7 @@
 {
     "Categories": "Qt;KDE;X-KDE-information;",
     "KPlugin": {
+        "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
         "Description": "Samba status monitor",
         "Description[ar]": "مراقب حالة سامبا",
         "Description[az]": "Samba serverinin vəziyyəti",

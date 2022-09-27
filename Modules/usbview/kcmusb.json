@@ -1,6 +1,7 @@
 {
     "Categories": "Qt;KDE;X-KDE-information;",
     "KPlugin": {
+        "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
         "Description": "USB devices attached to this computer",
         "Description[ar]": "أجهزة USB الموصولة بهذا الحاسوب",
         "Description[az]": "Bu komputerə qoşulmuş USB qurğular",

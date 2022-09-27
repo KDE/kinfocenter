@@ -1,6 +1,7 @@
 {
     "Categories": "Qt;KDE;X-KDE-information;",
     "KPlugin": {
+        "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
         "Description": "Vulkan graphics API information",
         "Description[ar]": "المعلومات الرّسوميّة لواجهة فالكن",
         "Description[az]": "Vulkan qrafik kartları API-si məlumatı",
