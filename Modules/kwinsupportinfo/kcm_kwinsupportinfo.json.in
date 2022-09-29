@@ -20,6 +20,7 @@
         "Description[ta]": "கேவின் ஆதரவு விவரங்கள்",
         "Description[tr]": "KWin Destek Bilgisi",
         "Description[uk]": "Дані щодо підтримки KWin",
+        "Description[vi]": "Thông tin hỗ trợ KWin",
         "Description[x-test]": "xxKWin Support informationxx",
         "Icon": "kwin",
         "Name": "Window Manager",
@@ -41,6 +42,7 @@
         "Name[ta]": "சாளர மேலாளி",
         "Name[tr]": "Pencere Yöneticisi",
         "Name[uk]": "Керування вікнами",
+        "Name[vi]": "Trình quản lí cửa sổ",
         "Name[x-test]": "xxWindow Managerxx"
     },
     "TryExec": "@QtBinariesDir@/qdbus",
