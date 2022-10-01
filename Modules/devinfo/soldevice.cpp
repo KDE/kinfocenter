@@ -20,23 +20,23 @@
 SolDevice::SolDevice(const Solid::DeviceInterface::Type &type)
     : QTreeWidgetItem()
     , deviceSet(false)
+    , deviceTypeHolder(type)
 {
-    deviceTypeHolder = type;
     setText(0, Solid::DeviceInterface::typeToString(type));
 }
 
 SolDevice::SolDevice(QTreeWidgetItem *parent)
     : QTreeWidgetItem(parent)
     , deviceSet(false)
+    , deviceTypeHolder(Solid::DeviceInterface::Unknown)
 {
-    deviceTypeHolder = Solid::DeviceInterface::Unknown;
 }
 
 SolDevice::SolDevice(const Solid::DeviceInterface::Type &type, const QString &typeName)
     : QTreeWidgetItem()
     , deviceSet(false)
+    , deviceTypeHolder(type)
 {
-    deviceTypeHolder = type;
     setText(0, typeName);
 
     setDefaultListing(type);
@@ -44,10 +44,9 @@ SolDevice::SolDevice(const Solid::DeviceInterface::Type &type, const QString &ty
 
 SolDevice::SolDevice(QTreeWidgetItem *parent, const Solid::Device &device)
     : QTreeWidgetItem(parent)
+    , deviceTypeHolder(Solid::DeviceInterface::Unknown)
     , tiedDevice(device)
 {
-    deviceTypeHolder = Solid::DeviceInterface::Unknown;
-
     deviceSet = device.isValid();
     setDefaultDeviceText();
     setDefaultDeviceIcon();
