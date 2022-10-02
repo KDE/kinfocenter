@@ -1,0 +1,1160 @@
+# Uyghur translation for kcm_pci.
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Sahran <sahran.ug@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_pci\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
+"PO-Revision-Date: 2013-09-08 07:05+0900\n"
+"Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language: ug\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ئابدۇقادىر ئابلىز, غەيرەت كەنجى"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sahran.ug@gmail.com,  gheyret@gmail.com"
+
+#: main.cpp:26
+#, fuzzy, kde-format
+#| msgid "PCI-X"
+msgctxt "@label kcm name"
+msgid "PCI"
+msgstr "PCI-X"
+
+#: main.cpp:27
+#, kde-format
+msgid "Harald Sitter"
+msgstr ""
+
+#: package/contents/ui/main.qml:14
+#, fuzzy
+#| msgid "Information"
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "ئۇچۇر"
+
+#~ msgid "kcm_pci"
+#~ msgstr "kcm_pci"
+
+#, fuzzy
+#~| msgid "Device"
+#~ msgid "PCI Devices"
+#~ msgstr "ئۈسكۈنە"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+
+#~ msgid "Nicolas Ternisien"
+#~ msgstr "Nicolas Ternisien"
+
+#~ msgid "Helge Deller"
+#~ msgstr "Helge Deller"
+
+#~ msgid "This list displays PCI information."
+#~ msgstr "بۇ تىزىمدا PCI ئۇچۇرلىرى كۆرسىتىلىدۇ."
+
+#~ msgid ""
+#~ "This display shows information about your computer's PCI slots and the "
+#~ "related connected devices."
+#~ msgstr ""
+#~ "بۇ كومپيۇتېرىڭىزدىكى PCI ئوقۇرلىرى ۋە مۇناسىۋەتلىك چېتىلغان ئۈسكۈنىلەر "
+#~ "ھەققىدىكى ئۇچۇرلارنى كۆرسىتىدۇ."
+
+#~ msgid "Device Class"
+#~ msgstr "ئۈسكۈنە تىپى(Class)"
+
+#~ msgid "Device Subclass"
+#~ msgstr "ئۈسكۈنە تارماق تىپى(Subclass)"
+
+#~ msgid "Device Programming Interface"
+#~ msgstr "ئۈسكۈنە پروگرامما ئارايۈزى"
+
+#~ msgid "Master IDE Device"
+#~ msgstr "ئاساسىي IDE ئۈسكۈنىسى"
+
+#~ msgid "Secondary programmable indicator"
+#~ msgstr "ئىككىنچى پروگرامما كۆرسەتكۈچى"
+
+#~ msgid "Secondary operating mode"
+#~ msgstr "ئىككىنچى مەشغۇلات ھالىتى"
+
+#~ msgid "Primary programmable indicator"
+#~ msgstr "بىرىنچى پروگرامما كۆرسەتكۈچى"
+
+#~ msgid "Primary operating mode"
+#~ msgstr "بىرىنچى مەشغۇلات ھالىتى"
+
+#~ msgid "Vendor"
+#~ msgstr "تارقاتقۇچى"
+
+#~ msgid "Device"
+#~ msgstr "ئۈسكۈنە"
+
+#~ msgid "Subsystem"
+#~ msgstr "تارماق سىستېما"
+
+#~ msgid " - device:"
+#~ msgstr " -ئۈسكۈنە:"
+
+#~ msgid "Interrupt"
+#~ msgstr "ئۈزۈلۈش"
+
+#~ msgid "IRQ"
+#~ msgstr "IRQ"
+
+#~ msgid "Pin"
+#~ msgstr "مۇقىم"
+
+#~ msgid "Control"
+#~ msgstr "تىزگىن"
+
+#~ msgid "Response in I/O space"
+#~ msgstr "I/O بوشلۇقىدىكى ئىنكاس"
+
+#~ msgid "Response in memory space"
+#~ msgstr "ئەسلەك بوشلۇقىدىكى ئىنكاس"
+
+#~ msgid "Memory write and invalidate"
+#~ msgstr "ئەسلەككە يېزىش ۋە ئىناۋەتسىز قىلىش"
+
+#~ msgid "System error"
+#~ msgstr "سىستېما خاتالىقى"
+
+#~ msgid "Status"
+#~ msgstr "ھالىتى"
+
+#~ msgid "Interrupt status"
+#~ msgstr "ئۈزۈلۈش ھالىتى"
+
+#~ msgid "66 MHz PCI 2.1 bus"
+#~ msgstr "66 MHz PCI 2.1 باش لىنىيىسى"
+
+#~ msgid "User-definable features"
+#~ msgstr "ئىشلەتكۈچى قوشقان ئالاھىدىلىكلەر"
+
+#~ msgid "Data parity error"
+#~ msgstr "سانلىق-مەلۇماتنىڭ تاق-جۈپلۈكىنى تەكشۈرۈش خاتالىقى"
+
+#~ msgid "Device selection timing"
+#~ msgstr "ئۈسكۈنە تاللاش ۋاقتى"
+
+#~ msgid "Signaled system error"
+#~ msgstr "سىگنال سىستېمىسى خاتالىقى"
+
+#~ msgid "Parity error"
+#~ msgstr "تاق-جۈپلۈكىنى تەكشۈرۈش خاتالىقى"
+
+#~ msgid "Latency"
+#~ msgstr "كېچىكتۈرۈش"
+
+#~ msgid "MIN_GNT"
+#~ msgstr "MIN_GNT"
+
+#~ msgid "No major requirements (0x00)"
+#~ msgstr "ئاساسىي زۆرۈرىيەت يوق(0x00)"
+
+#~ msgid "MAX_LAT"
+#~ msgstr "MAX_LAT"
+
+#~ msgid "Header"
+#~ msgstr "بەت قېشى"
+
+#~ msgid "Type"
+#~ msgstr "تىپى"
+
+#~ msgid "Multifunctional"
+#~ msgstr "كۆپ ئىقتىدارلىق"
+
+#~ msgid "Build-in self test"
+#~ msgstr "سىڭدۈرۈلگەن ئۆزىنى سىناش"
+
+#~ msgid "BIST Start"
+#~ msgstr "BIST باشلاش"
+
+#~ msgid "Completion code"
+#~ msgstr "تاماملاش كودى"
+
+#~ msgid "Size"
+#~ msgstr "چوڭلۇقى"
+
+#~ msgid "Space"
+#~ msgstr "بوشلۇق"
+
+#~ msgid "I/O"
+#~ msgstr "I/O"
+
+#~ msgid "Memory"
+#~ msgstr "ئەسلەك"
+
+#~ msgid "Address"
+#~ msgstr "ئادرېس"
+
+#~ msgctxt "unassigned address"
+#~ msgid "Unassigned"
+#~ msgstr "تەقسىملەنمىگەن"
+
+#~ msgctxt "unassigned size"
+#~ msgid "Unassigned"
+#~ msgstr "تەقسىملەنمىگەن"
+
+#~ msgid "Bus"
+#~ msgstr "باش لىنىيە"
+
+#~ msgid "Primary bus number"
+#~ msgstr "بىرىنچى باش لىنىيىنىڭ نومۇرى"
+
+#~ msgid "Secondary bus number"
+#~ msgstr "ئىككىلەمچى سىستېما باش لىنىيە نومۇرى"
+
+#~ msgid "Subordinate bus number"
+#~ msgstr "ئەگەشكۈچى سىستېما باش لىنىيە نومۇرى"
+
+#~ msgid "Secondary latency timer"
+#~ msgstr "ئىككىلەمچى كېچىكتۈرۈش ۋاقتى"
+
+#~ msgid "CardBus number"
+#~ msgstr "CardBus نومۇرى"
+
+#~ msgid "CardBus latency timer"
+#~ msgstr "CardBus كېچىكتۈرۈش ۋاقتى"
+
+#~ msgid "Secondary status"
+#~ msgstr "ئىككىلەمچى ھالەت"
+
+#~ msgid "I/O behind bridge"
+#~ msgstr "I/O كەينى كۆۋرۈكى"
+
+#~ msgid "32-bit"
+#~ msgstr "32 بىتلىق"
+
+#~ msgid "Base"
+#~ msgstr "ئاساسى"
+
+#~ msgid "Limit"
+#~ msgstr "چېكى"
+
+#~ msgid "Memory behind bridge"
+#~ msgstr "ئەسلەك كەينى كۆۋرۈكى"
+
+#~ msgid "64-bit"
+#~ msgstr "64 بىتلىق"
+
+#~ msgid "Bridge control"
+#~ msgstr "كۆۋرۈك تىزگىنى"
+
+#~ msgid "Secondary parity checking"
+#~ msgstr "ئىككىلەمچى تاق-جۈپلۈكىنى تەكشۈرۈش خاتالىقى"
+
+#~ msgid "Secondary system error"
+#~ msgstr "ئىككىلەمچى سىستېما خاتالىقى"
+
+#~ msgid "Secondary bus reset"
+#~ msgstr "ئىككىلەمچى سىستېما باش لىنىيىسىنىڭ ئەسلىگە قايتىشى"
+
+#~ msgid "2e10 PCI clocks"
+#~ msgstr "2e10 PCI  سائىتى"
+
+#~ msgid "2e15 PCI clocks"
+#~ msgstr "2e15 PCI سائىتى"
+
+#~ msgid "Memory windows"
+#~ msgstr "ئەسلەك كۆزنىكى"
+
+#~ msgid "Window %1"
+#~ msgstr "كۆزنەك %1"
+
+#~ msgid "I/O windows"
+#~ msgstr "I/O كۆزنەكلىرى"
+
+#~ msgid "16-bit"
+#~ msgstr "16-bit"
+
+#~ msgid "CardBus control"
+#~ msgstr "CardBus تىزگىنى"
+
+#~ msgid "Interrupts for 16-bit cards"
+#~ msgstr "16-بىتلىق كارتىلارنىڭ ئۈزۈلۈشى"
+
+#~ msgid "Raw PCI config space"
+#~ msgstr "خام PCI سەپلىمە بوشلۇقى"
+
+#~ msgid "Capabilities"
+#~ msgstr "ئىقتىدارى"
+
+#~ msgid "Version"
+#~ msgstr "نەشرى"
+
+#~ msgid "Device-specific initialization required"
+#~ msgstr "ئۈسكۈنىگە خاس بولغان دەسلەپلەشتۈرۈش زۆرۈر"
+
+#~ msgid "Maximum auxiliary current required in D3 cold"
+#~ msgstr "D3 سوغۇققا زۆرۈر بولغان ئەڭ چوڭ ياردەمچى توك كۈچى"
+
+#~ msgid "D1 support"
+#~ msgstr "D1 قوللىشى"
+
+#~ msgid "D2 support"
+#~ msgstr "D2 قوللىشى"
+
+#~ msgid "Power management events"
+#~ msgstr "توك مەنبە باشقۇرۇش ھادىسىلىرى"
+
+#~ msgid "D0"
+#~ msgstr "D0"
+
+#~ msgid "D1"
+#~ msgstr "D1"
+
+#~ msgid "D2"
+#~ msgstr "D2"
+
+#~ msgid "D3 hot"
+#~ msgstr "D3 قىزىق"
+
+#~ msgid "D3 cold"
+#~ msgstr "D3 سوغۇق"
+
+#~ msgid "Power state"
+#~ msgstr "توك مەنبە ھالىتى"
+
+#~ msgid "Power management"
+#~ msgstr "توك مەنبەسىنى باشقۇرۇش"
+
+#~ msgid "Data select"
+#~ msgstr "سانلىق-مەلۇمات تاللاش"
+
+#~ msgid "Data scale"
+#~ msgstr "سانلىق-مەلۇمات ئۆلچىكى"
+
+#~ msgid "Power management status"
+#~ msgstr "توك مەنبە باشقۇرۇش ھالىتى"
+
+#~ msgid "Bridge status"
+#~ msgstr "كۆۋرۈك ھالىتى"
+
+#~ msgid "Secondary bus state in D3 hot"
+#~ msgstr "D3 ئىسسىقتىكى ئىككىلەمچى سىستېما باش لىنىيىسىنىڭ ھالىتى"
+
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgid "Secondary bus power & clock control"
+#~ msgstr "ئىككىلەمچى سىستېما باش لىنىيىسى توك مەنبەسى ۋە سائەت تىزگىنى"
+
+#~ msgid "Data"
+#~ msgstr "سانلىق-مەلۇمات"
+
+#~ msgid "Revision"
+#~ msgstr "تۈزىتىلمە"
+
+#~ msgid "Rate"
+#~ msgstr "نىسبىتى"
+
+#~ msgid "AGP 3.0 mode"
+#~ msgstr "AGP 3.0 ھالىتى"
+
+#~ msgid "Fast Writes"
+#~ msgstr "تېز يېزىش"
+
+#~ msgid "Address over 4 GiB"
+#~ msgstr "4 گىگابايتتىن ئېشىپ كەتكەن ئادرېس"
+
+#~ msgid "64-bit GART"
+#~ msgstr "64 بىت GART"
+
+#~ msgid "Maximum number of AGP command"
+#~ msgstr "AGP بۇيرۇقىنىڭ ئەڭ چوڭ سانى"
+
+#~ msgid "Configuration"
+#~ msgstr "سەپلىمە"
+
+#~ msgid "AGP"
+#~ msgstr "AGP"
+
+#~ msgid "Data address"
+#~ msgstr "سانلىق-مەلۇمات ئادرېسى"
+
+#~ msgid "Transfer completed"
+#~ msgstr "ئۇزىتىش تاماملاندى"
+
+#~ msgid "Message control"
+#~ msgstr "ئۇچۇر تىزگىنلەش"
+
+#~ msgid "Multiple message capable"
+#~ msgstr "كۆپ ئۇچۇر قوللايدۇ"
+
+#~ msgid "Multiple message enable"
+#~ msgstr "كۆپ ئۇچۇر ئىناۋەتلىك"
+
+#~ msgid "64-bit address"
+#~ msgstr "64 بىتلىق ئادرېس"
+
+#~ msgid "Mask"
+#~ msgstr "ماسكا"
+
+#~ msgid "Pending"
+#~ msgstr "كۈتۈۋاتىدۇ"
+
+#~ msgid "Length"
+#~ msgstr "ئۇزۇنلۇقى"
+
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "يوق"
+
+#~ msgid "Next"
+#~ msgstr "كېيىنكى"
+
+#~ msgid "0x00 (None)"
+#~ msgstr "0x00 (يوق)"
+
+#~ msgid "Root only"
+#~ msgstr "پەقەت Root لا"
+
+#~ msgid "Value"
+#~ msgstr "قىممەت"
+
+#~ msgid "Cache line size"
+#~ msgstr "غەملەك قۇرىنىڭ چوڭلۇقى"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Enabled"
+#~ msgstr "ئىناۋەتلىك قىلىنغان"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Disabled"
+#~ msgstr "ئىناۋەتسىز قىلىنغان"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Yes"
+#~ msgstr "ھەئە"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "ياق"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Unknown"
+#~ msgstr "نامەلۇم"
+
+#~ msgid "Unclassified device"
+#~ msgstr "تىپقا ئايرىلمىغان ئۈسكۈنە"
+
+#~ msgid "Mass storage controller"
+#~ msgstr "چوڭ ھەجىمدىكى ساقلىغۇچ تىزگىنى"
+
+#~ msgid "Network controller"
+#~ msgstr "تور تىزگىنى"
+
+#~ msgid "Display controller"
+#~ msgstr "كۆرسەتكۈچ تىزگىنى"
+
+#~ msgid "Multimedia controller"
+#~ msgstr "كۆپ ۋاسىتە تىزگىنى"
+
+#~ msgid "Memory controller"
+#~ msgstr "ئەسلەك تىزگىنى"
+
+#~ msgid "Bridge"
+#~ msgstr "كۆۋرۈك"
+
+#~ msgid "Communication controller"
+#~ msgstr "ئالاقە تىزگىنى"
+
+#~ msgid "Generic system peripheral"
+#~ msgstr "ئادەتتىكى سىستېما سىرتقى ئۈسكۈنىلىرى"
+
+#~ msgid "Input device controller"
+#~ msgstr "كىرگۈزۈش ئۈسكۈنىسى تىزگىنى"
+
+#~ msgid "Processor"
+#~ msgstr "بىر تەرەپ قىلغۇچ"
+
+#~ msgid "Serial bus controller"
+#~ msgstr "ئارقىمۇئارقا باش لىنىيە تىزگىنى"
+
+#~ msgid "Wireless controller"
+#~ msgstr "سىمسىز تور تىزگىنى"
+
+#~ msgid "Intelligent controller"
+#~ msgstr "ئىدراكلىق تىزگىن"
+
+#~ msgid "Satellite communications controller"
+#~ msgstr "سۈننىي ھەمراھ ئالاقە تىزگىنى"
+
+#~ msgid "Encryption controller"
+#~ msgstr "شىفىرلاش تىزگىنى"
+
+#~ msgid "Signal processing controller"
+#~ msgstr "سىگنال بىر تەرەپ قىلغۇچ تىزگىنى"
+
+#, fuzzy
+#~| msgid "Co-processor"
+#~ msgid "Coprocessor"
+#~ msgstr "Co-processor"
+
+#, fuzzy
+#~| msgctxt "unassigned address"
+#~| msgid "Unassigned"
+#~ msgid "Unassigned class"
+#~ msgstr "تەقسىملەنمىگەن"
+
+#~ msgid "Unknown device class"
+#~ msgstr "ئۈسكۈنە تىپى نامەلۇم"
+
+#~ msgid "Non-VGA unclassified device"
+#~ msgstr "تىپقا ئايرىلمىغان VGA ئەمەس ئۈسكۈنە"
+
+#~ msgid "VGA unclassified device"
+#~ msgstr "تىپقا ئايرىلمىغان VGA ئۈسكۈنە"
+
+#~ msgid "Unknown unclassified device"
+#~ msgstr "تىپقا ئايرىلمىغان نامەلۇم ئۈسكۈنە"
+
+#~ msgid "SCSI storage controller"
+#~ msgstr "SCSI ساقلىغۇچ تىزگىنى"
+
+#~ msgid "IDE controller"
+#~ msgstr "IDE تىزگىنى"
+
+#~ msgid "Floppy disk controller"
+#~ msgstr "يۇمشاق دىسكا تىزگىنى"
+
+#~ msgid "IPI bus controller"
+#~ msgstr "IPI باش لىنىيە تىزگىنى"
+
+#~ msgid "RAID bus controller"
+#~ msgstr "RAID باش لىنىيە تىزگىنى"
+
+#~ msgid "ATA controller"
+#~ msgstr "ATA كونتروللىغۇچى"
+
+#, fuzzy
+#~| msgid "ATA controller"
+#~ msgid "SATA controller"
+#~ msgstr "ATA كونتروللىغۇچى"
+
+#, fuzzy
+#~| msgid "Serial controller"
+#~ msgid "Serial Attached SCSI controller"
+#~ msgstr "ئارقىمۇئارقا تىزگىنى"
+
+#, fuzzy
+#~| msgid "Unknown memory controller"
+#~ msgid "Non-Volatile memory controller"
+#~ msgstr "نامەلۇم ئەسلەك تىزگىنى"
+
+#~ msgid "Unknown storage controller"
+#~ msgstr "نامەلۇم ساقلىغۇچ تىزگىنى"
+
+#~ msgid "Ethernet controller"
+#~ msgstr "Ethernet تىزگىنى"
+
+#~ msgid "Token ring network controller"
+#~ msgstr "Token ring تور تىزگىنى"
+
+#~ msgid "FDDI network controller"
+#~ msgstr "FDDI تور تىزگىنى"
+
+#~ msgid "ATM network controller"
+#~ msgstr "ATM تور كونتروللىغۇچى"
+
+#~ msgid "ISDN controller"
+#~ msgstr "ISDN تىزگىنى"
+
+#~ msgid "WorldFip controller"
+#~ msgstr "WorldFip تىزگىنى"
+
+#, fuzzy
+#~| msgid "IDE controller"
+#~ msgid "PICMG controller"
+#~ msgstr "IDE تىزگىنى"
+
+#, fuzzy
+#~| msgid "Keyboard controller"
+#~ msgid "Infiniband controller"
+#~ msgstr "ھەرپتاختا تىزگىنى"
+
+#, fuzzy
+#~| msgid "RF controller"
+#~ msgid "Fabric controller"
+#~ msgstr "RF تىزگىنى"
+
+#~ msgid "Unknown network controller"
+#~ msgstr "نامەلۇم تور تىزگىنى"
+
+#~ msgid "VGA compatible controller"
+#~ msgstr "VGA بىلەن ئوخشاش تىزگىن"
+
+#~ msgid "XGA compatible controller"
+#~ msgstr "XGA بىلەن ئوخشاش تىزگىن"
+
+#~ msgid "3D controller"
+#~ msgstr "3D تىزگىنى"
+
+#~ msgid "Unknown display controller"
+#~ msgstr "نامەلۇم كۆرسەتكۈچ تىزگىنى"
+
+#~ msgid "Multimedia video controller"
+#~ msgstr "كۆپ ۋاسىتە سىن تىزگىنى"
+
+#~ msgid "Multimedia audio controller"
+#~ msgstr "كۆپ ۋاسىتە ئۈن تىزگىنى"
+
+#~ msgid "Computer telephony device"
+#~ msgstr "كومپيۇتېر تېلېفون ئۈسكۈنىسى"
+
+#, fuzzy
+#~| msgid "Secure device"
+#~ msgid "Audio device"
+#~ msgstr "بىخەتەر ئۈسكۈنە"
+
+#~ msgid "Unknown multimedia controller"
+#~ msgstr "نامەلۇم كۆپ ۋاسىتە تىزگىنى"
+
+#~ msgid "RAM memory"
+#~ msgstr "RAM ئەسلىكى"
+
+#~ msgid "FLASH memory"
+#~ msgstr "FLASH ئەسلىكى"
+
+#~ msgid "Unknown memory controller"
+#~ msgstr "نامەلۇم ئەسلەك تىزگىنى"
+
+#~ msgid "ISA bridge"
+#~ msgstr "ISA كۆۋرۈكى"
+
+#~ msgid "EISA bridge"
+#~ msgstr "EISA كۆۋرۈكى"
+
+#~ msgid "MicroChannel bridge"
+#~ msgstr "MicroChannel كۆۋرۈكى"
+
+#~ msgid "PCI bridge"
+#~ msgstr "PCI كۆۋرۈكى"
+
+#~ msgid "PCMCIA bridge"
+#~ msgstr "PCMCIA كۆۋرۈكى"
+
+#~ msgid "NuBus bridge"
+#~ msgstr "NuBus كۆۋرۈكى"
+
+#~ msgid "CardBus bridge"
+#~ msgstr "CardBus كۆۋرۈكى"
+
+#~ msgid "RACEway bridge"
+#~ msgstr "RACEway كۆۋرۈكى"
+
+#~ msgid "Unknown bridge"
+#~ msgstr "نامەلۇم كۆۋرۈك"
+
+#~ msgid "Serial controller"
+#~ msgstr "ئارقىمۇئارقا تىزگىنى"
+
+#~ msgid "Parallel controller"
+#~ msgstr "پاراللېل تىزگىنى"
+
+#~ msgid "Multiport serial controller"
+#~ msgstr "كۆپ ئېغىزلىق ئارقىمۇئارقا تىزگىن"
+
+#~ msgid "Modem"
+#~ msgstr "مودېم"
+
+#, fuzzy
+#~| msgid "USB controller"
+#~ msgid "GPIB controller"
+#~ msgstr "USB تىزگىنى"
+
+#, fuzzy
+#~| msgid "Scanner controller"
+#~ msgid "Smart card controller"
+#~ msgstr "شويلىلىغۇچ تىزگىنى"
+
+#~ msgid "Unknown communication controller"
+#~ msgstr "نامەلۇم ئالاقە تىزگىنى"
+
+#~ msgid "PIC"
+#~ msgstr "PIC"
+
+#~ msgid "DMA controller"
+#~ msgstr "DMA تىزگىنى"
+
+#~ msgid "Timer"
+#~ msgstr "ۋاقىت ئۆلچىگۈچ"
+
+#~ msgid "RTC"
+#~ msgstr "RTC"
+
+#~ msgid "PCI Hot-plug controller"
+#~ msgstr "PCI Hot-plug تىزگىنى"
+
+#, fuzzy
+#~| msgid "ISDN controller"
+#~ msgid "SD Host controller"
+#~ msgstr "ISDN تىزگىنى"
+
+#~ msgid "Unknown system peripheral"
+#~ msgstr "نامەلۇم سىستېما سىرتقى ئۈسكۈنىسى"
+
+#~ msgid "Keyboard controller"
+#~ msgstr "ھەرپتاختا تىزگىنى"
+
+#~ msgid "Digitizer Pen"
+#~ msgstr "رەقەملەشتۈرۈش قەلىمى"
+
+#~ msgid "Mouse controller"
+#~ msgstr "چاشقىنەك تىزگىنى"
+
+#~ msgid "Scanner controller"
+#~ msgstr "شويلىلىغۇچ تىزگىنى"
+
+#~ msgid "Gameport controller"
+#~ msgstr "ئويۇن ئېغىزى تىزگىنى"
+
+#~ msgid "Unknown input device controller"
+#~ msgstr "نامەلۇم كىرگۈزۈش ئۈسكۈنىسى تىزگىنى"
+
+#~ msgid "386"
+#~ msgstr "386"
+
+#~ msgid "486"
+#~ msgstr "486"
+
+#~ msgid "Pentium"
+#~ msgstr "Pentium"
+
+#~ msgid "Alpha"
+#~ msgstr "ئالفا"
+
+#~ msgid "Power PC"
+#~ msgstr "Power PC"
+
+#~ msgid "MIPS"
+#~ msgstr "MIPS"
+
+#~ msgid "Co-processor"
+#~ msgstr "Co-processor"
+
+#~ msgid "Unknown processor"
+#~ msgstr "نامەلۇم بىر تەرەپ قىلغۇچ"
+
+#~ msgid "FireWire (IEEE 1394)"
+#~ msgstr "FireWire (IEEE 1394)"
+
+#~ msgid "ACCESS bus"
+#~ msgstr "ACCESS باش لىنىيىسى"
+
+#~ msgid "SSA"
+#~ msgstr "SSA"
+
+#~ msgid "USB controller"
+#~ msgstr "USB تىزگىنى"
+
+#~ msgid "Fibre channel"
+#~ msgstr "Fibre قانىلى"
+
+#~ msgid "SMBus"
+#~ msgstr "SMBus"
+
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#~ msgid "IPMI interface"
+#~ msgstr "IPMI ئارايۈزى"
+
+#~ msgid "SERCOS interface"
+#~ msgstr "SERCOS ئارايۈزى"
+
+#~ msgid "CANbus"
+#~ msgstr "CANbus"
+
+#~ msgid "Unknown serial bus controller"
+#~ msgstr "نامەلۇم ئارقىمۇئارقا باش لىنىيە تىزگىنى"
+
+#~ msgid "IRDA controller"
+#~ msgstr "IRDA تىزگىنى"
+
+#~ msgid "RF controller"
+#~ msgstr "RF تىزگىنى"
+
+#~ msgid "Bluetooth"
+#~ msgstr "كۆكچىش"
+
+#~ msgid "Ethernet (802.11a - 5 GHz)"
+#~ msgstr "Ethernet (802.11a - 5 GHz)"
+
+#~ msgid "Ethernet (802.11b - 2.4 GHz)"
+#~ msgstr "Ethernet (802.11b - 2.4 GHz)"
+
+#~ msgid "Unknown wireless controller"
+#~ msgstr "نامەلۇم سىمسىز تىزگىنى"
+
+#~ msgid "I2O"
+#~ msgstr "I2O"
+
+#~ msgid "Unknown intelligent controller"
+#~ msgstr "نامەلۇم ئىدراكلىق تىزگىن"
+
+#~ msgid "Satellite TV controller"
+#~ msgstr "سۈننىي ھەمراھ تېلېۋىزور تىزگىنى"
+
+#~ msgid "Satellite audio communication controller"
+#~ msgstr "سۈننىي ھەمراھ ئۈن ئالاقە تىزگىنى"
+
+#~ msgid "Satellite voice communication controller"
+#~ msgstr "سۈننىي ھەمراھ ئۈن ئالاقە تىزگىنى"
+
+#~ msgid "Satellite data communication controller"
+#~ msgstr "سۈننىي ھەمراھ سانلىق-مەلۇمات ئالاقە تىزگىنى"
+
+#~ msgid "Unknown satellite communications controller"
+#~ msgstr "نامەلۇم سۈننىي ھەمراھ ئالاقە تىزگىنى"
+
+#~ msgid "Network and computing encryption device"
+#~ msgstr "تور ۋە ھېسابلاشنى شىفىرلاش ئۈسكۈنىسى"
+
+#~ msgid "Unknown encryption controller"
+#~ msgstr "نامەلۇم شىفىرلاش تىزگىنى"
+
+#~ msgid "DPIO module"
+#~ msgstr "DPIO بۆلىكى"
+
+#~ msgid "Communication synchronizer"
+#~ msgstr "ئالاقە قەدەمداشلىغۇچ"
+
+#, fuzzy
+#~| msgid "Signal processing controller"
+#~ msgid "Signal processing management"
+#~ msgstr "سىگنال بىر تەرەپ قىلغۇچ تىزگىنى"
+
+#~ msgid "Unknown signal processing controller"
+#~ msgstr "نامەلۇم سىگنال بىر تەرەپ قىلغۇچ تىزگىنى"
+
+#, fuzzy
+#~| msgid "Unknown processor"
+#~ msgid "Unknown processing accelerator"
+#~ msgstr "نامەلۇم بىر تەرەپ قىلغۇچ"
+
+#~ msgid "Unknown subdevice class"
+#~ msgstr "نامەلۇم تارماق ئۈسكۈنە تىپى"
+
+#, fuzzy
+#~| msgid "VGA compatible controller"
+#~ msgid "ISA Compatibility mode-only controller"
+#~ msgstr "VGA بىلەن ئوخشاش تىزگىن"
+
+#, fuzzy
+#~| msgid "PCI Hot-plug controller"
+#~ msgid "PCI native mode-only controller"
+#~ msgstr "PCI Hot-plug تىزگىنى"
+
+#~ msgid "Vendor specific"
+#~ msgstr "شىركەتكە خاس"
+
+#, fuzzy
+#~| msgid "ATA controller"
+#~ msgid "VGA controller"
+#~ msgstr "ATA كونتروللىغۇچى"
+
+#, fuzzy
+#~| msgid "3D controller"
+#~ msgid "8514 controller"
+#~ msgstr "3D تىزگىنى"
+
+#~ msgid "Normal decode"
+#~ msgstr "نورمال كودسىزلاش"
+
+#~ msgid "Subtractive decode"
+#~ msgstr "ئېلىپ كودسىزلاش"
+
+#~ msgid "Transparent mode"
+#~ msgstr "سۈزۈك ھالەت"
+
+#~ msgid "Endpoint mode"
+#~ msgstr "ئاخىرقى ئۇچ ھالىتى"
+
+#~ msgid "8250"
+#~ msgstr "8250"
+
+#~ msgid "16450"
+#~ msgstr "16450"
+
+#~ msgid "16550"
+#~ msgstr "16550"
+
+#~ msgid "16650"
+#~ msgstr "16650"
+
+#~ msgid "16750"
+#~ msgstr "16750"
+
+#~ msgid "16850"
+#~ msgstr "16850"
+
+#~ msgid "16950"
+#~ msgstr "16950"
+
+#~ msgid "SPP"
+#~ msgstr "SPP"
+
+#~ msgid "BiDir"
+#~ msgstr "BiDir"
+
+#~ msgid "ECP"
+#~ msgstr "ECP"
+
+#~ msgid "IEEE1284"
+#~ msgstr "IEEE1284"
+
+#~ msgid "IEEE1284 Target"
+#~ msgstr "IEEE1284 نىشانى"
+
+#~ msgid "Generic"
+#~ msgstr "ئادەتتىكى"
+
+#~ msgid "Hayes/16450"
+#~ msgstr "Hayes/16450"
+
+#~ msgid "Hayes/16550"
+#~ msgstr "Hayes/16550"
+
+#~ msgid "Hayes/16650"
+#~ msgstr "Hayes/16650"
+
+#~ msgid "Hayes/16750"
+#~ msgstr "Hayes/16750"
+
+#~ msgid "8259"
+#~ msgstr "8259"
+
+#~ msgid "ISA PIC"
+#~ msgstr "ISA PIC"
+
+#~ msgid "EISA PIC"
+#~ msgstr "EISA PIC"
+
+#~ msgid "IO-APIC"
+#~ msgstr "IO-APIC"
+
+#~ msgid "IO(X)-APIC"
+#~ msgstr "IO(X)-APIC"
+
+#~ msgid "8237"
+#~ msgstr "8237"
+
+#~ msgid "ISA DMA"
+#~ msgstr "ISA DMA"
+
+#~ msgid "EISA DMA"
+#~ msgstr "EISA DMA"
+
+#~ msgid "8254"
+#~ msgstr "8254"
+
+#~ msgid "ISA timer"
+#~ msgstr "ISA ۋاقىت ئۆلچىگۈچ"
+
+#~ msgid "EISA timers"
+#~ msgstr "EISA ۋاقىت ئۆلچىگۈچلىرى"
+
+#~ msgid "ISA RTC"
+#~ msgstr "ISA RTC"
+
+#~ msgid "Extended"
+#~ msgstr "كېڭەيتىلگەن"
+
+#~ msgid "OHCI"
+#~ msgstr "OHCI"
+
+#~ msgid "UHCI"
+#~ msgstr "UHCI"
+
+#~ msgid "EHCI"
+#~ msgstr "EHCI"
+
+#~ msgid "Unspecified"
+#~ msgstr "بەلگىلەنمىگەن"
+
+#~ msgid "USB Device"
+#~ msgstr "USB ئۈسكۈنىسى"
+
+#~ msgid "SMIC"
+#~ msgstr "SMIC"
+
+#~ msgid "Keyboard controller style"
+#~ msgstr "ھەرپتاختا تىزگىنىڭ ئۇسلۇبى"
+
+#~ msgid "Block transfer"
+#~ msgstr "بۆلەكلىك يوللاش"
+
+#~ msgid "Vital product data"
+#~ msgstr "زۆرۈر مەھسۇلات سانلىق-مەلۇماتى"
+
+#~ msgid "Slot identification"
+#~ msgstr "ئوقۇر كىملىكى"
+
+#~ msgid "HyperTransport"
+#~ msgstr "HyperTransport"
+
+#~ msgid "Debug port"
+#~ msgstr "سازلاش ئېغىزى"
+
+#~ msgid "AGP x8"
+#~ msgstr "AGP x8"
+
+#~ msgid "Secure device"
+#~ msgstr "بىخەتەر ئۈسكۈنە"
+
+#~ msgid "MSI-X"
+#~ msgstr "MSI-X"
+
+#~ msgid "Fast"
+#~ msgstr "تېز"
+
+#~ msgid "Medium"
+#~ msgstr "ئوتتۇراھال"
+
+#~ msgid "Slow"
+#~ msgstr "ئاستا"
+
+#~ msgid "32 bit"
+#~ msgstr "32 بىت"
+
+#~ msgid "Below 1M"
+#~ msgstr "1M دىن كىچىك"
+
+#~ msgid "64 bit"
+#~ msgstr "64 بىت"
+
+#~ msgid "Standard"
+#~ msgstr "ئۆلچەملىك"
+
+#~ msgid "CardBus"
+#~ msgstr "CardBus"
+
+#~ msgid "1X"
+#~ msgstr "1X"
+
+#~ msgid "2X"
+#~ msgstr "2X"
+
+#~ msgid "1X & 2X"
+#~ msgstr "1X & 2X"
+
+#~ msgid "4X"
+#~ msgstr "4X"
+
+#~ msgid "1X & 4X"
+#~ msgstr "1X & 4X"
+
+#~ msgid "2X & 4X"
+#~ msgstr "2X & 4X"
+
+#~ msgid "1X & 2X & 4X"
+#~ msgstr "1X & 2X & 4X"
+
+#~ msgid "8X"
+#~ msgstr "8X"
+
+#~ msgid "4X & 8X"
+#~ msgstr "4X & 8X"
+
+#~ msgid "4 ms"
+#~ msgstr "4 ms"
+
+#~ msgid "16 ms"
+#~ msgstr "16 ms"
+
+#~ msgid "64 ms"
+#~ msgstr "64 ms"
+
+#~ msgid "256 ms"
+#~ msgstr "256 ms"
+
+#~ msgid "Not needed"
+#~ msgstr "زۆرۈر ئەمەس"
+
+#~ msgid "0 (self powered)"
+#~ msgstr "0 (توكىنى ئۆزى تەمىنلەيدۇ)"
+
+#~ msgid "55 mA"
+#~ msgstr "55 mA"
+
+#~ msgid "100 mA"
+#~ msgstr "100 mA"
+
+#~ msgid "160 mA"
+#~ msgstr "160 mA"
+
+#~ msgid "220 mA"
+#~ msgstr "220 mA"
+
+#~ msgid "270 mA"
+#~ msgstr "270 mA"
+
+#~ msgid "320 mA"
+#~ msgstr "320 mA"
+
+#~ msgid "375 mA"
+#~ msgstr "375 mA"
+
+#~ msgid "1 vector"
+#~ msgstr "1 ۋېكتور"
+
+#~ msgid "2 vectors"
+#~ msgstr "2 ۋېكتور"
+
+#~ msgid "4 vectors"
+#~ msgstr "4 ۋېكتور"
+
+#~ msgid "8 vectors"
+#~ msgstr "8 ۋېكتور"
+
+#~ msgid "16 vectors"
+#~ msgstr "16 ۋېكتور"
+
+#~ msgid "32 vectors"
+#~ msgstr "32 ۋېكتور"
+
+#~ msgid "Serial ATA direct port access"
+#~ msgstr "ئارقىمۇئارقا ATA بىۋاسىتە ئېغىز زىيارىتى"
+
+#~ msgid "GPIB (IEEE 488.1/2) controller"
+#~ msgstr "GPIB (IEEE 488.1/2) تىزگىنى"
+
+#~ msgid "System peripheral"
+#~ msgstr "سىستېما سىرتقى ئۈسكۈنىسى"
+
+#~ msgid "Management card"
+#~ msgstr "باشقۇرۇش كارتىسى"
+
+#~ msgid "single DMA"
+#~ msgstr "يەككە DMA"
+
+#~ msgid "chained DMA"
+#~ msgstr "زەنجىرلىك DMA"
+
+#~ msgid "VGA compatible"
+#~ msgstr "VGA بىلەن تەڭداش"
+
+#~ msgid "8514 compatible"
+#~ msgstr "8514 تەڭداش"
+
+#~ msgid "KDE PCI Information Control Module"
+#~ msgstr "ك د ئې(KDE) نىڭ PCI ئۇچۇرلىرىنى تىزگىنلەش بۆلىكى"

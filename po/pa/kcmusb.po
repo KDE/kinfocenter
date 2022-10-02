@@ -1,0 +1,622 @@
+# translation of kcmusb.po to Punjabi
+# Amanpreet Singh Alam <aalam@redhat.com>, 2004, 2005.
+# Amanpreet Singh Brar <amanpreetalam@yahoo.com>, 2005.
+# A S Alam <aalam@users.sf.net>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmusb\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-09-03 00:18+0000\n"
+"PO-Revision-Date: 2008-11-24 22:25+0530\n"
+"Last-Translator: A S Alam <aalam@users.sf.net>\n"
+"Language-Team: Punjabi <punjabi-l10n@users.sf.net>\n"
+"Language: pa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ਅਮਨਪਰੀਤ ਸਿੰਘ ਆਲਮ"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "aalam@users.sf.net"
+
+#: classes.i18n:2 usbdevices.cpp:66
+#, kde-format
+msgctxt "USB device class"
+msgid "(Defined at Interface level)"
+msgstr ""
+
+#: classes.i18n:3 usbdevices.cpp:102
+#, kde-format
+msgctxt "USB device class"
+msgid "Application Specific Interface"
+msgstr ""
+
+#: classes.i18n:4 usbdevices.cpp:68
+#, fuzzy, kde-format
+#| msgid "Audio"
+msgctxt "USB device class"
+msgid "Audio"
+msgstr "ਆਡੀਓ"
+
+#: classes.i18n:5 usbdevices.cpp:84
+#, fuzzy, kde-format
+#| msgid "Data"
+msgctxt "USB device class"
+msgid "CDC Data"
+msgstr "ਡਾਟਾ"
+
+#: classes.i18n:6 usbdevices.cpp:86
+#, kde-format
+msgctxt "USB device class"
+msgid "Chip/SmartCard"
+msgstr ""
+
+#: classes.i18n:7 usbdevices.cpp:70
+#, fuzzy, kde-format
+#| msgid "Communications"
+msgctxt "USB device class"
+msgid "Communications"
+msgstr "ਸੰਚਾਰ"
+
+#: classes.i18n:8 usbdevices.cpp:88
+#, kde-format
+msgctxt "USB device class"
+msgid "Content Security"
+msgstr ""
+
+#: classes.i18n:9 usbdevices.cpp:94
+#, kde-format
+msgctxt "USB device class"
+msgid "Diagnostic"
+msgstr ""
+
+#: classes.i18n:10 usbdevices.cpp:82
+#, fuzzy, kde-format
+#| msgid "Hub"
+msgctxt "USB device class"
+msgid "Hub"
+msgstr "ਹੱਬ"
+
+#: classes.i18n:11 usbdevices.cpp:72
+#, fuzzy, kde-format
+#| msgid "Human Interface Devices"
+msgctxt "USB device class"
+msgid "Human Interface Device"
+msgstr "ਹਿਊਮਨ ਇੰਟਰਫੇਸ ਜੰਤਰ"
+
+#: classes.i18n:12 usbdevices.cpp:78
+#, kde-format
+msgctxt "USB device class"
+msgid "Imaging"
+msgstr ""
+
+#: classes.i18n:13 usbdevices.cpp:80
+#, fuzzy, kde-format
+#| msgid "Mass Storage"
+msgctxt "USB device class"
+msgid "Mass Storage"
+msgstr "ਵੱਡੇ ਭੰਡਾਰ"
+
+#: classes.i18n:14 usbdevices.cpp:99
+#, kde-format
+msgctxt "USB device class"
+msgid "Miscellaneous Device"
+msgstr ""
+
+#: classes.i18n:15 usbdevices.cpp:74
+#, fuzzy, kde-format
+#| msgid "Human Interface Devices"
+msgctxt "USB device class"
+msgid "Physical Interface Device"
+msgstr "ਹਿਊਮਨ ਇੰਟਰਫੇਸ ਜੰਤਰ"
+
+#: classes.i18n:16 usbdevices.cpp:76
+#, fuzzy, kde-format
+#| msgid "Printer"
+msgctxt "USB device class"
+msgid "Printer"
+msgstr "ਪਰਿੰਟਰ"
+
+#: classes.i18n:17 usbdevices.cpp:104
+#, fuzzy, kde-format
+#| msgid "Vendor Specific Class"
+msgctxt "USB device class"
+msgid "Vendor Specific Class"
+msgstr "ਵਿਕਰੇਤਾ ਖਾਸ ਕਲਾਸ"
+
+#: classes.i18n:18 usbdevices.cpp:90
+#, kde-format
+msgctxt "USB device class"
+msgid "Video"
+msgstr ""
+
+#: classes.i18n:19 usbdevices.cpp:96
+#, kde-format
+msgctxt "USB device class"
+msgid "Wireless"
+msgstr ""
+
+#: classes.i18n:20
+#, kde-format
+msgctxt "USB device class"
+msgid "Xbox"
+msgstr ""
+
+#: classes.i18n:21
+#, kde-format
+msgctxt "USB device subclass"
+msgid "?"
+msgstr ""
+
+#: classes.i18n:22
+#, fuzzy, kde-format
+#| msgid "ATM Networking"
+msgctxt "USB device subclass"
+msgid "ATM Networking"
+msgstr "ATM ਨੈੱਟਵਰਕਿੰਗ"
+
+#: classes.i18n:23
+#, fuzzy, kde-format
+#| msgid "Abstract (modem)"
+msgctxt "USB device subclass"
+msgid "Abstract (modem)"
+msgstr "ਅਬਸਟਰੇਟ (ਮਾਡਮ)"
+
+#: classes.i18n:24
+#, fuzzy, kde-format
+#| msgid "Boot Interface Subclass"
+msgctxt "USB device subclass"
+msgid "Boot Interface Subclass"
+msgstr "ਬੂਟ ਇੰਟਰਫੇਸ ਸਬ-ਕਲਾਸ"
+
+#: classes.i18n:25
+#, fuzzy, kde-format
+#| msgid "CAPI Control"
+msgctxt "USB device subclass"
+msgid "CAPI Control"
+msgstr "CAPI ਕੰਟਰੋਲ"
+
+#: classes.i18n:26
+#, fuzzy, kde-format
+#| msgid "Control Device"
+msgctxt "USB device subclass"
+msgid "Control Device"
+msgstr "ਕੰਟਰੋਲ ਜੰਤਰ"
+
+#: classes.i18n:27
+#, fuzzy, kde-format
+#| msgid "Control/Bulk"
+msgctxt "USB device subclass"
+msgid "Controller"
+msgstr "ਕੰਟਰੋਲ/ਬਲਕ"
+
+#: classes.i18n:28
+#, kde-format
+msgctxt "USB device subclass"
+msgid "Device Firmware Update"
+msgstr ""
+
+#: classes.i18n:29
+#, kde-format
+msgctxt "USB device subclass"
+msgid "Device Management"
+msgstr ""
+
+#: classes.i18n:30
+#, fuzzy, kde-format
+#| msgid "Direct Line"
+msgctxt "USB device subclass"
+msgid "Direct Line"
+msgstr "ਸਿੱਧੀ ਲਾਈਨ"
+
+#: classes.i18n:31
+#, fuzzy, kde-format
+#| msgid "Ethernet Networking"
+msgctxt "USB device subclass"
+msgid "Ethernet Emulation"
+msgstr "ਈਥਰਨੈੱਟ ਨੈੱਟਵਰਕਿੰਗ"
+
+#: classes.i18n:32
+#, fuzzy, kde-format
+#| msgid "Ethernet Networking"
+msgctxt "USB device subclass"
+msgid "Ethernet Networking"
+msgstr "ਈਥਰਨੈੱਟ ਨੈੱਟਵਰਕਿੰਗ"
+
+#: classes.i18n:33
+#, fuzzy, kde-format
+#| msgid "Floppy"
+msgctxt "USB device subclass"
+msgid "Floppy (UFI)"
+msgstr "ਫਲਾਪੀ"
+
+#: classes.i18n:34
+#, kde-format
+msgctxt "USB device subclass"
+msgid "IRDA Bridge"
+msgstr ""
+
+#: classes.i18n:35
+#, fuzzy, kde-format
+#| msgid "Streaming"
+msgctxt "USB device subclass"
+msgid "MIDI Streaming"
+msgstr "ਧਾਰਾ"
+
+#: classes.i18n:36
+#, fuzzy, kde-format
+#| msgid "Direct Line"
+msgctxt "USB device subclass"
+msgid "Mobile Direct Line"
+msgstr "ਸਿੱਧੀ ਲਾਈਨ"
+
+#: classes.i18n:37
+#, fuzzy, kde-format
+#| msgid "Multi-Channel"
+msgctxt "USB device subclass"
+msgid "Multi-Channel"
+msgstr "ਬਹੁ-ਚੈਨਲ"
+
+#: classes.i18n:38
+#, fuzzy, kde-format
+#| msgid "No Subclass"
+msgctxt "USB device subclass"
+msgid "No Subclass"
+msgstr "ਸਬ-ਕਲਾਸ ਨਹੀਂ"
+
+#: classes.i18n:39
+#, kde-format
+msgctxt "USB device subclass"
+msgid "OBEX"
+msgstr ""
+
+#: classes.i18n:40
+#, fuzzy, kde-format
+#| msgid "Printer"
+msgctxt "USB device subclass"
+msgid "Printer"
+msgstr "ਪਰਿੰਟਰ"
+
+#: classes.i18n:41
+#, kde-format
+msgctxt "USB device subclass"
+msgid "QIC-157"
+msgstr ""
+
+#: classes.i18n:42
+#, kde-format
+msgctxt "USB device subclass"
+msgid "RBC (typically Flash)"
+msgstr ""
+
+#: classes.i18n:43
+#, kde-format
+msgctxt "USB device subclass"
+msgid "Radio Frequency"
+msgstr ""
+
+#: classes.i18n:44
+#, kde-format
+msgctxt "USB device subclass"
+msgid "Reprogrammable Diagnostics"
+msgstr ""
+
+#: classes.i18n:45
+#, fuzzy, kde-format
+#| msgid "SCSI"
+msgctxt "USB device subclass"
+msgid "SCSI"
+msgstr "SCSI"
+
+#: classes.i18n:46
+#, kde-format
+msgctxt "USB device subclass"
+msgid "SFF-8020i, MMC-2 (ATAPI)"
+msgstr ""
+
+#: classes.i18n:47
+#, kde-format
+msgctxt "USB device subclass"
+msgid "SFF-8070i"
+msgstr ""
+
+#: classes.i18n:48
+#, kde-format
+msgctxt "USB device subclass"
+msgid "Still Image Capture"
+msgstr ""
+
+#: classes.i18n:49
+#, fuzzy, kde-format
+#| msgid "Streaming"
+msgctxt "USB device subclass"
+msgid "Streaming"
+msgstr "ਧਾਰਾ"
+
+#: classes.i18n:50
+#, fuzzy, kde-format
+#| msgid "Telephone"
+msgctxt "USB device subclass"
+msgid "Telephone"
+msgstr "ਟੈਲੀਫੋਨ"
+
+#: classes.i18n:51
+#, kde-format
+msgctxt "USB device subclass"
+msgid "Test and Measurement"
+msgstr ""
+
+#: classes.i18n:52
+#, kde-format
+msgctxt "USB device subclass"
+msgid "USB3 Vision"
+msgstr ""
+
+#: classes.i18n:53
+#, kde-format
+msgctxt "USB device subclass"
+msgid "Undefined"
+msgstr ""
+
+#: classes.i18n:54
+#, kde-format
+msgctxt "USB device subclass"
+msgid "Unused"
+msgstr ""
+
+#: classes.i18n:55
+#, fuzzy, kde-format
+#| msgid "Vendor Specific Subclass"
+msgctxt "USB device subclass"
+msgid "Vendor Specific Subclass"
+msgstr "ਵਿਕਰੇਤਾ ਖਾਸ ਸਬ-ਕਲਾਸ"
+
+#: classes.i18n:56
+#, fuzzy, kde-format
+#| msgid "CAPI Control"
+msgctxt "USB device subclass"
+msgid "Video Control"
+msgstr "CAPI ਕੰਟਰੋਲ"
+
+#: classes.i18n:57
+#, kde-format
+msgctxt "USB device subclass"
+msgid "Video Interface Collection"
+msgstr ""
+
+#: classes.i18n:58
+#, fuzzy, kde-format
+#| msgid "Non Streaming"
+msgctxt "USB device subclass"
+msgid "Video Streaming"
+msgstr "ਕੋਈ ਧਾਰਾ ਨਹੀਂ"
+
+#: classes.i18n:59
+#, kde-format
+msgctxt "USB device subclass"
+msgid "Wireless Handset Control"
+msgstr ""
+
+#: classes.i18n:60
+#, kde-format
+msgctxt "USB device subclass"
+msgid "Wireless USB Wire Adapter"
+msgstr ""
+
+#: kcmusb.cpp:28
+#, kde-format
+msgid "This module allows you to see the devices attached to your USB bus(es)."
+msgstr "ਇਹ ਮੋਡੀਊਲ ਤੁਹਾਨੂੰ ਆਪਣੀ USB ਬਸਾਂ ਨਾਲ ਜੁੜੇ ਜੰਤਰਾਂ ਨੂੰ ਵੇਖਾਉਣ ਲਈ ਸਹਾਇਕ ਹੈ।"
+
+#: kcmusb.cpp:42
+#, kde-format
+msgid "Device"
+msgstr "ਜੰਤਰ"
+
+#: kcmusb.cpp:63
+#, kde-format
+msgid "kcmusb"
+msgstr "kcmusb"
+
+#: kcmusb.cpp:63
+#, fuzzy, kde-format
+#| msgid "Device"
+msgid "USB Devices"
+msgstr "ਜੰਤਰ"
+
+#: kcmusb.cpp:63
+#, kde-format
+msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
+msgstr "(c) ੨੦੦੧ ਮਾਥੀਨ ਹੋਈਲਜੀਰ-ਕਲੂਈਪਫੀਲ"
+
+#: kcmusb.cpp:65
+#, kde-format
+msgid "Matthias Hoelzer-Kluepfel"
+msgstr "ਮਾਥੀਨ ਹੋਈਲਜੀਰ-ਕਲੂਈਪਫੀਲ"
+
+#: kcmusb.cpp:66
+#, kde-format
+msgid "Leo Savernik"
+msgstr "Leo Savernik"
+
+#: kcmusb.cpp:66
+#, kde-format
+msgid "Live Monitoring of USB Bus"
+msgstr "USB ਬੱਸ ਲਈ ਲਾਇਵ ਨਿਗਰਾਨੀ"
+
+#: usbdevices.cpp:92
+#, kde-format
+msgctxt "USB device class"
+msgid "Personal Healthcare"
+msgstr ""
+
+#: usbdevices.cpp:215
+#, kde-format
+msgid "Unknown"
+msgstr "ਅਣਜਾਣ"
+
+#: usbdevices.cpp:225
+#, kde-format
+msgid "<b>Manufacturer:</b> "
+msgstr "<b>ਨਿਰਮਾਤਾ:</b> "
+
+#: usbdevices.cpp:227
+#, kde-format
+msgid "<b>Serial #:</b> "
+msgstr "<b>ਸੀਰੀਅਲ #:</b> "
+
+#: usbdevices.cpp:240
+#, kde-format
+msgid "<tr><td><i>Class</i></td>%1</tr>"
+msgstr "<tr><td><i>ਕਲਾਸ</i></td>%1</tr>"
+
+#: usbdevices.cpp:245
+#, kde-format
+msgid "<tr><td><i>Subclass</i></td>%1</tr>"
+msgstr "<tr><td><i>ਸਬ-ਕਲਾਸ</i></td>%1</tr>"
+
+#: usbdevices.cpp:250
+#, kde-format
+msgid "<tr><td><i>Protocol</i></td>%1</tr>"
+msgstr "<tr><td><i>ਪਰੋਟੋਕਾਲ</i></td>%1</tr>"
+
+#: usbdevices.cpp:251
+#, kde-format
+msgid "<tr><td><i>USB Version</i></td><td>%1.%2</td></tr>"
+msgstr "<tr><td><i>USB ਵਰਜਨ</i></td><td>%1.%2</td></tr>"
+
+#: usbdevices.cpp:258
+#, kde-format
+msgid "<tr><td><i>Vendor ID</i></td><td>0x%1</td></tr>"
+msgstr "<tr><td><i>ਵਿਕ੍ਰੇਤਾ ID</i></td><td>0x%1</td></tr>"
+
+#: usbdevices.cpp:263
+#, kde-format
+msgid "<tr><td><i>Product ID</i></td><td>0x%1</td></tr>"
+msgstr "<tr><td><i>ਉਤਪਾਦ ID</i></td><td>0x%1</td></tr>"
+
+#: usbdevices.cpp:266
+#, kde-format
+msgid "<tr><td><i>Speed</i></td><td>%1 Mbit/s</td></tr>"
+msgstr "<tr><td><i>ਸਪੀਡ</i></td><td>%1 Mbit/s</td></tr>"
+
+#: usbdevices.cpp:267
+#, kde-format
+msgid "<tr><td><i>Channels</i></td><td>%1</td></tr>"
+msgstr "<tr><td><i>ਚੈਨਲ</i></td><td>%1</td></tr>"
+
+#: usbdevices.cpp:268
+#, kde-format
+msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
+msgstr "<tr><td><i>ਵੱਧੋ-ਵੱਧ ਪੈਕੇਟ ਆਕਾਰ</i></td><td>%1</td></tr>"
+
+#~ msgid "AT-commands"
+#~ msgstr "AT-ਕਮਾਂਡਾਂ"
+
+#~ msgid "Bidirectional"
+#~ msgstr "ਦੋ-ਦਿਸ਼ਾਵੀ"
+
+#~ msgid "Bulk (Zip)"
+#~ msgstr "ਭੰਡਾਰ (Zip)"
+
+#~ msgid "CAPI 2.0"
+#~ msgstr "CAPI 2.0"
+
+#~ msgid "CDC PUF"
+#~ msgstr "CDC PUF"
+
+#~ msgid "Control/Bulk/Interrupt"
+#~ msgstr "ਕੰਟਰੋਲ/ਭੰਡਾਰ/ਰੁਕਾਵਟ"
+
+#~ msgid "HDLC"
+#~ msgstr "HDLC"
+
+#~ msgid "Host Based Driver"
+#~ msgstr "ਹੋਸਟ ਅਧਾਰਿਤ ਡਰਾਇਵਰ"
+
+#~ msgid "I.430 ISDN BRI"
+#~ msgstr "I.430 ISDN BRI"
+
+#~ msgid "Interface"
+#~ msgstr "ਇੰਟਰਫੇਸ"
+
+#~ msgid "Keyboard"
+#~ msgstr "ਕੀਬੋਰਡ"
+
+#~ msgid "Mouse"
+#~ msgstr "ਮਾਊਸ"
+
+#~ msgid "None"
+#~ msgstr "ਕੋਈ ਨਹੀਂ"
+
+#~ msgid "Q.921"
+#~ msgstr "Q.921"
+
+#~ msgid "Q.921M"
+#~ msgstr "Q.921M"
+
+#~ msgid "Q.921TM"
+#~ msgstr "Q.921TM"
+
+#~ msgid "Q.932 EuroISDN"
+#~ msgstr "Q.932 EuroISDN"
+
+#~ msgid "Transparent"
+#~ msgstr "ਪਾਰਦਰਸ਼ੀ"
+
+#~ msgid "Unidirectional"
+#~ msgstr "ਇੱਕ-ਦਿਸ਼ਾਵੀ"
+
+#~ msgid "V.120 V.24 rate ISDN"
+#~ msgstr "V.120 V.24 ਦਰ ISDN"
+
+#~ msgid "V.42bis"
+#~ msgstr "V.42bis"
+
+#~ msgid "Vendor Specific"
+#~ msgstr "ਵਿਕਰੇਤਾ ਖਾਸ"
+
+#~ msgid "Vendor Specific Protocol"
+#~ msgstr "ਵਿਕਰੇਤਾ ਖਾਸ ਪਰੋਟੋਕਾਲ"
+
+#~ msgid "Vendor specific"
+#~ msgstr "ਵਿਕਰੇਤਾ ਖਾਸ"
+
+#~ msgid "<tr><td><i>Revision</i></td><td>%1.%2</td></tr>"
+#~ msgstr "<tr><td><i>ਰੀਵਿਜ਼ਨ</i></td><td>%1.%2</td></tr>"
+
+#~ msgid "<tr><td><i>Power Consumption</i></td><td>%1 mA</td></tr>"
+#~ msgstr "<tr><td><i>ਊਰਜਾ ਵਰਤੋਂ</i></td><td>%1 mA</td></tr>"
+
+#~ msgid "<tr><td><i>Power Consumption</i></td><td>self powered</td></tr>"
+#~ msgstr "<tr><td><i>ਊਰਜਾ ਵਰਤੋਂ</i></td><td>ਸਵੈ-ਊਰਜਾ</td></tr>"
+
+#~ msgid "<tr><td><i>Attached Devicenodes</i></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><i>ਜੁੜੀ ਜੰਤਰ-ਨੋਡ</i></td><td>%1</td></tr>"
+
+#~ msgid "<tr><td><i>Bandwidth</i></td><td>%1 of %2 (%3%)</td></tr>"
+#~ msgstr "<tr><td><i>ਬੈਡਵਿਡਥ (Bandwidth)</i></td><td>%2 (%3%) ਵਿੱਚੋਂ %1</td></tr>"
+
+#~ msgid "<tr><td><i>Intr. requests</i></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><i>Intr. requests</i></td><td>%1</td></tr>"
+
+#~ msgid "<tr><td><i>Isochr. requests</i></td><td>%1</td></tr>"
+#~ msgstr "<tr><td><i>Isochr. requests</i></td><td>%1</td></tr>"
+
+#~ msgid ""
+#~ "Could not open one or more USB controller. Make sure, you have read "
+#~ "access to all USB controllers that should be listed here."
+#~ msgstr ""
+#~ "ਇੱਕ ਜਾਂ ਵਧੇਰੇ USB ਕੰਟਰੋਲਰ ਖੋਲ੍ਹੇ ਨਹੀਂ ਜਾ ਸਕੇ ਹਨ। ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਤੁਹਾਨੂੰ ਇੱਥੇ ਵਿਖਾਏ ਗਏ ਸਭ USB "
+#~ "ਕੰਟਰੋਲਰਾਂ ਨੂੰ ਪੜ੍ਹਨ ਦੇ ਅਧਿਕਾਰ ਹਨ।"
+
+#~ msgid "KDE USB Viewer"
+#~ msgstr "KDE USB ਦਰਸ਼ਕ"

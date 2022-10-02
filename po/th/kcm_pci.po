@@ -1,0 +1,686 @@
+# translation of kcm_pci.po to Thai
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Thanomsub Noppaburana <donga.nb@gmail.com>, 2008, 2010.
+# Phuwanat Sakornsakolpat <narachai@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_pci\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
+"PO-Revision-Date: 2010-05-23 12:59+0700\n"
+"Last-Translator: Phuwanat Sakornsakolpat <narachai@gmail.com>\n"
+"Language-Team: Thai <thai-l10n@googlegroups.com>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ถนอมทรัพย์ นพบูรณ์"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "donga.nb@gmail.com"
+
+#: main.cpp:26
+#, fuzzy, kde-format
+#| msgid "PCI-X"
+msgctxt "@label kcm name"
+msgid "PCI"
+msgstr "PCI-X"
+
+#: main.cpp:27
+#, kde-format
+msgid "Harald Sitter"
+msgstr ""
+
+#: package/contents/ui/main.qml:14
+#, fuzzy
+#| msgid "Information"
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "ข้อมูลรายละเอียด"
+
+#, fuzzy
+#~| msgid "Device"
+#~ msgid "PCI Devices"
+#~ msgstr "อุปกรณ์"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr ""
+#~ "สงวนลิขสิทธิ์ (c) 2551 Nicolas Ternisien สงวนลิขสิทธิ์ (c) 2541 - 2545 Helge "
+#~ "Deller"
+
+#~ msgid "Nicolas Ternisien"
+#~ msgstr "Nicolas Ternisien"
+
+#~ msgid "Helge Deller"
+#~ msgstr "Helge Deller"
+
+#~ msgid "This list displays PCI information."
+#~ msgstr "รายการนี้แสดงข้อมูลเกี่ยวกับ PCI"
+
+#~ msgid ""
+#~ "This display shows information about your computer's PCI slots and the "
+#~ "related connected devices."
+#~ msgstr "นี่คือการแสดงข้อมูลเกี่ยวกับสล็อต PCI ในคอมพิวเตอร์ของคุณและอุปกรณ์ที่เกี่ยวข้อง"
+
+#~ msgid "Device Class"
+#~ msgstr "คลาสอุปกรณ์"
+
+#~ msgid "Device Subclass"
+#~ msgstr "ซับคลาสอุปกรณ์"
+
+#~ msgid "Vendor"
+#~ msgstr "ผู้ผลิต"
+
+#~ msgid "Device"
+#~ msgstr "อุปกรณ์"
+
+#~ msgid "Subsystem"
+#~ msgstr "ระบบย่อย"
+
+#~ msgid " - device:"
+#~ msgstr " - อุปกรณ์:"
+
+#~ msgid "Interrupt"
+#~ msgstr "อินเทอร์รัพท์"
+
+#~ msgid "IRQ"
+#~ msgstr "หมายเลข IRQ"
+
+#~ msgid "Control"
+#~ msgstr "ควบคุม"
+
+#~ msgid "System error"
+#~ msgstr "ระบบผิดพลาด"
+
+#~ msgid "Status"
+#~ msgstr "สถานะ"
+
+#~ msgid "Interrupt status"
+#~ msgstr "สถานะอินเทอร์รัพท์"
+
+#~ msgid "Capability list"
+#~ msgstr "รายการความสามารถ"
+
+#~ msgid "User-definable features"
+#~ msgstr "คุณสมบัติที่ผู้ใช้นิยามเองได้"
+
+#~ msgid "Size"
+#~ msgstr "ขนาด"
+
+#~ msgid "Space"
+#~ msgstr "พื้นที่"
+
+#~ msgid "I/O"
+#~ msgstr "ส่วนนำเข้า/ส่งออกข้อมูล (I/O)"
+
+#~ msgid "Memory"
+#~ msgstr "หน่วยความจำ"
+
+#~ msgid "Prefetchable"
+#~ msgstr "โหลดล่วงหน้าได้"
+
+#~ msgid "Address"
+#~ msgstr "ที่อยู่"
+
+#, fuzzy
+#~| msgid "Unassigned"
+#~ msgctxt "unassigned address"
+#~ msgid "Unassigned"
+#~ msgstr "ยังไม่กำหนด"
+
+#, fuzzy
+#~| msgid "Unassigned"
+#~ msgctxt "unassigned size"
+#~ msgid "Unassigned"
+#~ msgstr "ยังไม่กำหนด"
+
+#~ msgid "Bus"
+#~ msgstr "บัส"
+
+#~ msgid "32-bit"
+#~ msgstr "32-บิท"
+
+#~ msgid "64-bit"
+#~ msgstr "64-บิท"
+
+#~ msgid "Memory windows"
+#~ msgstr "หน้าต่างหน่วยความจำ"
+
+#~ msgid "Window %1"
+#~ msgstr "หน้าต่าง %1"
+
+#~ msgid "16-bit"
+#~ msgstr "16-บิท"
+
+#~ msgid "Capabilities"
+#~ msgstr "ความสามารถ"
+
+#~ msgid "Version"
+#~ msgstr "รุ่น"
+
+#~ msgid "D0"
+#~ msgstr "D0"
+
+#~ msgid "D1"
+#~ msgstr "D1"
+
+#~ msgid "D2"
+#~ msgstr "D2"
+
+#~ msgid "Power state"
+#~ msgstr "สถานะพลังงาน"
+
+#~ msgid "Power management"
+#~ msgstr "การจัดการการใช้พลังงาน"
+
+#~ msgid "Power management status"
+#~ msgstr "สถานะการจัดการการใช้พลังงาน"
+
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgid "Data"
+#~ msgstr "ข้อมูล"
+
+#~ msgid "64-bit GART"
+#~ msgstr "GART แบบ 64 บิต"
+
+#~ msgid "Maximum number of AGP command"
+#~ msgstr "จำนวนคำสั่ง AGP สูงสุด"
+
+#~ msgid "Configuration"
+#~ msgstr "การตั้งค่า"
+
+#~ msgid "AGP"
+#~ msgstr "AGP"
+
+#~ msgid "Data address"
+#~ msgstr "ที่อยู่ข้อมูล"
+
+#~ msgid "64-bit address"
+#~ msgstr "ที่อยู่แบบ 64 บิต"
+
+#~ msgid "Mask"
+#~ msgstr "มาสก์"
+
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "ไม่มี"
+
+#~ msgid "Value"
+#~ msgstr "ค่า"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Enabled"
+#~ msgstr "เปิดใช้งาน"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Disabled"
+#~ msgstr "ปิดการใช้งาน"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Yes"
+#~ msgstr "ใช่"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "ไม่ใช่"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Unknown"
+#~ msgstr "ไม่ทราบ"
+
+#~ msgid "Unclassified device"
+#~ msgstr "อุปกรณ์ที่ยังไม่แบ่งประเภท"
+
+#~ msgid "Mass storage controller"
+#~ msgstr "ส่วนควบคุมอุปกรณ์จัดเก็บข้อมูล"
+
+#~ msgid "Network controller"
+#~ msgstr "ส่วนควบคุมเครือข่าย"
+
+#~ msgid "Display controller"
+#~ msgstr "ส่วนควบคุมการแสดงผล"
+
+#~ msgid "Multimedia controller"
+#~ msgstr "ส่วนควบคุมสื่อประสม"
+
+#~ msgid "Memory controller"
+#~ msgstr "ส่วนควบคุมหน่วยความจำ"
+
+#~ msgid "Bridge"
+#~ msgstr "บริดจ์"
+
+#~ msgid "Communication controller"
+#~ msgstr "ส่วนควบคุมการสื่อสาร"
+
+#~ msgid "Generic system peripheral"
+#~ msgstr "อุปกรณ์ต่อพ่วงทั่วไปของระบบ"
+
+#~ msgid "Input device controller"
+#~ msgstr "ส่วนควบคุมอุปกรณ์ป้อนข้อมูล"
+
+#~ msgid "Docking station"
+#~ msgstr "ด็อกกิง"
+
+#~ msgid "Processor"
+#~ msgstr "ตัวประมวลผล"
+
+#~ msgid "Serial bus controller"
+#~ msgstr "ส่วนควบคุมบัสอนุกรม"
+
+#~ msgid "Wireless controller"
+#~ msgstr "ส่วนควบคุมเครือข่ายไร้สาย"
+
+#, fuzzy
+#~| msgid "Co-processor"
+#~ msgid "Coprocessor"
+#~ msgstr "ตัวประมวลผลร่วม"
+
+#, fuzzy
+#~| msgid "Unassigned"
+#~ msgid "Unassigned class"
+#~ msgstr "ยังไม่กำหนด"
+
+#~ msgid "Unknown unclassified device"
+#~ msgstr "อุปกรณ์ที่ยังไม่แบ่งประเภทที่ไม่รู้จัก"
+
+#~ msgid "SCSI storage controller"
+#~ msgstr "ส่วนควบคุมอุปกรณ์จัดเก็บข้อมูลแบบ SCSI"
+
+#~ msgid "IDE controller"
+#~ msgstr "ส่วนควบคุม IDE"
+
+#~ msgid "Floppy disk controller"
+#~ msgstr "ส่วนควบคุมดิสก์ฟลอปปี"
+
+#~ msgid "ATA controller"
+#~ msgstr "ส่วนควบคุม ATA"
+
+#, fuzzy
+#~| msgid "ATA controller"
+#~ msgid "SATA controller"
+#~ msgstr "ส่วนควบคุม ATA"
+
+#, fuzzy
+#~| msgid "Serial bus controller"
+#~ msgid "Serial Attached SCSI controller"
+#~ msgstr "ส่วนควบคุมบัสอนุกรม"
+
+#, fuzzy
+#~| msgid "Memory controller"
+#~ msgid "Non-Volatile memory controller"
+#~ msgstr "ส่วนควบคุมหน่วยความจำ"
+
+#~ msgid "Ethernet controller"
+#~ msgstr "ส่วนควบคุมอีเทอร์เน็ต"
+
+#~ msgid "Token ring network controller"
+#~ msgstr "ส่วนควบคุมเครือข่ายแบบโทเคนริง"
+
+#~ msgid "FDDI network controller"
+#~ msgstr "ส่วนควบคุมเครือข่ายแบบ FDDI"
+
+#~ msgid "ATM network controller"
+#~ msgstr "ส่วนควบคุมเครือข่ายแบบ ATM"
+
+#~ msgid "ISDN controller"
+#~ msgstr "ส่วนควบคุม ISDN"
+
+#, fuzzy
+#~| msgid "IDE controller"
+#~ msgid "PICMG controller"
+#~ msgstr "ส่วนควบคุม IDE"
+
+#, fuzzy
+#~| msgid "Keyboard controller"
+#~ msgid "Infiniband controller"
+#~ msgstr "ส่วนควบคุมแป้นพิมพ์"
+
+#, fuzzy
+#~| msgid "Scanner controller"
+#~ msgid "Fabric controller"
+#~ msgstr "ส่วนควบคุมเครื่องสแกน"
+
+#, fuzzy
+#~| msgid " - device:"
+#~ msgid "Audio device"
+#~ msgstr " - อุปกรณ์:"
+
+#, fuzzy
+#~| msgid "USB controller"
+#~ msgid "GPIB controller"
+#~ msgstr "ส่วนควบคุม USB"
+
+#, fuzzy
+#~| msgid "Scanner controller"
+#~ msgid "Smart card controller"
+#~ msgstr "ส่วนควบคุมเครื่องสแกน"
+
+#~ msgid "DMA controller"
+#~ msgstr "ส่วนควบคุม DMA"
+
+#, fuzzy
+#~ msgid "Timer"
+#~ msgstr "ตัวควบคุมเวลา"
+
+#, fuzzy
+#~| msgid "ISDN controller"
+#~ msgid "SD Host controller"
+#~ msgstr "ส่วนควบคุม ISDN"
+
+#~ msgid "Unknown system peripheral"
+#~ msgstr "อุปกรณ์ต่อพ่วงระบบที่ไม่รู้จัก"
+
+#~ msgid "Keyboard controller"
+#~ msgstr "ส่วนควบคุมแป้นพิมพ์"
+
+#~ msgid "Digitizer Pen"
+#~ msgstr "ปากกาดิจิไทเซอร์"
+
+#~ msgid "Mouse controller"
+#~ msgstr "ส่วนควบคุมเมาส์"
+
+#~ msgid "Scanner controller"
+#~ msgstr "ส่วนควบคุมเครื่องสแกน"
+
+#~ msgid "Gameport controller"
+#~ msgstr "ส่วนควบคุมพอร์ตเกม"
+
+#~ msgid "Unknown input device controller"
+#~ msgstr "ส่วนควบคุมอุปกรณ์ป้อนข้อมูลที่ไม่รู้จัก"
+
+#~ msgid "386"
+#~ msgstr "386"
+
+#~ msgid "486"
+#~ msgstr "486"
+
+#~ msgid "Pentium"
+#~ msgstr "เพนเทียม"
+
+#~ msgid "Alpha"
+#~ msgstr "อัลฟา"
+
+#~ msgid "Power PC"
+#~ msgstr "เพาเวอร์พีซี"
+
+#~ msgid "MIPS"
+#~ msgstr "MIPS"
+
+#~ msgid "Co-processor"
+#~ msgstr "ตัวประมวลผลร่วม"
+
+#~ msgid "Unknown processor"
+#~ msgstr "ตัวประมวลผลที่ไม่รู้จัก"
+
+#~ msgid "USB controller"
+#~ msgstr "ส่วนควบคุม USB"
+
+#~ msgid "Bluetooth"
+#~ msgstr "บลูทูท"
+
+#~ msgid "Broadband"
+#~ msgstr "บอร์ดแบนด์"
+
+#~ msgid "Ethernet (802.11a - 5 GHz)"
+#~ msgstr "อีเทอร์เน็ต (802.11a - 5 GHz)"
+
+#~ msgid "Ethernet (802.11b - 2.4 GHz)"
+#~ msgstr "อีเทอร์เน็ต (802.11b - 2.4 GHz)"
+
+#~ msgid "I2O"
+#~ msgstr "I2O"
+
+#, fuzzy
+#~| msgid "Unknown processor"
+#~ msgid "Unknown processing accelerator"
+#~ msgstr "ตัวประมวลผลที่ไม่รู้จัก"
+
+#, fuzzy
+#~| msgid "Communication controller"
+#~ msgid "ISA Compatibility mode-only controller"
+#~ msgstr "ส่วนควบคุมการสื่อสาร"
+
+#, fuzzy
+#~| msgid "Communication controller"
+#~ msgid "PCI native mode-only controller"
+#~ msgstr "ส่วนควบคุมการสื่อสาร"
+
+#, fuzzy
+#~| msgid "PCI express"
+#~ msgid "NVM Express"
+#~ msgstr "PCI express"
+
+#, fuzzy
+#~| msgid "ATA controller"
+#~ msgid "VGA controller"
+#~ msgstr "ส่วนควบคุม ATA"
+
+#, fuzzy
+#~| msgid "IDE controller"
+#~ msgid "8514 controller"
+#~ msgstr "ส่วนควบคุม IDE"
+
+#~ msgid "8250"
+#~ msgstr "8250"
+
+#~ msgid "16450"
+#~ msgstr "16450"
+
+#~ msgid "16550"
+#~ msgstr "16550"
+
+#~ msgid "16650"
+#~ msgstr "16650"
+
+#~ msgid "16750"
+#~ msgstr "16750"
+
+#~ msgid "16850"
+#~ msgstr "16850"
+
+#~ msgid "16950"
+#~ msgstr "16950"
+
+#~ msgid "SPP"
+#~ msgstr "SPP"
+
+#~ msgid "BiDir"
+#~ msgstr "BiDir"
+
+#~ msgid "ECP"
+#~ msgstr "ECP"
+
+#~ msgid "IEEE1284"
+#~ msgstr "IEEE1284"
+
+#~ msgid "Hayes/16450"
+#~ msgstr "Hayes/16450"
+
+#~ msgid "Hayes/16550"
+#~ msgstr "Hayes/16550"
+
+#~ msgid "Hayes/16650"
+#~ msgstr "Hayes/16650"
+
+#~ msgid "Hayes/16750"
+#~ msgstr "Hayes/16750"
+
+#~ msgid "8259"
+#~ msgstr "8259"
+
+#~ msgid "ISA PIC"
+#~ msgstr "ISA PIC"
+
+#~ msgid "EISA PIC"
+#~ msgstr "EISA PIC"
+
+#~ msgid "IO-APIC"
+#~ msgstr "IO-APIC"
+
+#~ msgid "IO(X)-APIC"
+#~ msgstr "IO(X)-APIC"
+
+#~ msgid "8237"
+#~ msgstr "8237"
+
+#~ msgid "ISA DMA"
+#~ msgstr "ISA DMA"
+
+#~ msgid "EISA DMA"
+#~ msgstr "EISA DMA"
+
+#~ msgid "8254"
+#~ msgstr "8254"
+
+#~ msgid "ISA RTC"
+#~ msgstr "ISA RTC"
+
+#~ msgid "OHCI"
+#~ msgstr "OHCI"
+
+#~ msgid "UHCI"
+#~ msgstr "UHCI"
+
+#~ msgid "EHCI"
+#~ msgstr "EHCI"
+
+#~ msgid "Unspecified"
+#~ msgstr "ยังไม่ระบุ"
+
+#~ msgid "USB Device"
+#~ msgstr "อุปกรณ์ USB"
+
+#~ msgid "AGP x8"
+#~ msgstr "AGP x8"
+
+#~ msgid "PCI express"
+#~ msgstr "PCI express"
+
+#~ msgid "MSI-X"
+#~ msgstr "MSI-X"
+
+#~ msgid "Fast"
+#~ msgstr "เร็ว"
+
+#~ msgid "Medium"
+#~ msgstr "ปานกลาง"
+
+#~ msgid "Slow"
+#~ msgstr "ช้า"
+
+#~ msgid "32 bit"
+#~ msgstr "32 บิท"
+
+#~ msgid "Below 1M"
+#~ msgstr "ต่ำกว่า 1M"
+
+#~ msgid "64 bit"
+#~ msgstr "64 บิท"
+
+#~ msgid "Standard"
+#~ msgstr "มาตรฐาน"
+
+#~ msgid "1X"
+#~ msgstr "1X"
+
+#~ msgid "2X"
+#~ msgstr "2X"
+
+#~ msgid "1X & 2X"
+#~ msgstr "1X & 2X"
+
+#~ msgid "4X"
+#~ msgstr "4X"
+
+#~ msgid "1X & 4X"
+#~ msgstr "1X & 4X"
+
+#~ msgid "2X & 4X"
+#~ msgstr "2X & 4X"
+
+#~ msgid "1X & 2X & 4X"
+#~ msgstr "1X & 2X & 4X"
+
+#~ msgid "8X"
+#~ msgstr "8X"
+
+#~ msgid "4X & 8X"
+#~ msgstr "4X & 8X"
+
+#~ msgid "4 ms"
+#~ msgstr "4 มิลลิวินาที"
+
+#~ msgid "16 ms"
+#~ msgstr "16 มิลลิวินาที"
+
+#~ msgid "64 ms"
+#~ msgstr "64 มิลลิวินาที"
+
+#~ msgid "256 ms"
+#~ msgstr "256 มิลลิวินาที"
+
+#~ msgid "Not needed"
+#~ msgstr "ไม่ต้องการ"
+
+#~ msgid "0 (self powered)"
+#~ msgstr "0 (ใช้พลังงานของตัวเอง)"
+
+#~ msgid "55 mA"
+#~ msgstr "55 มิลลิแอมป์"
+
+#~ msgid "100 mA"
+#~ msgstr "100 มิลลิแอมป์"
+
+#~ msgid "160 mA"
+#~ msgstr "160 มิลลิแอมป์"
+
+#~ msgid "220 mA"
+#~ msgstr "220 มิลลิแอมป์"
+
+#~ msgid "270 mA"
+#~ msgstr "270 มิลลิแอมป์"
+
+#~ msgid "320 mA"
+#~ msgstr "320 มิลลิแอมป์"
+
+#~ msgid "375 mA"
+#~ msgstr "370 มิลลิแอมป์"
+
+#~ msgid "1 vector"
+#~ msgstr "1 เวกเตอร์"
+
+#~ msgid "2 vectors"
+#~ msgstr "2 เวกเตอร์"
+
+#~ msgid "4 vectors"
+#~ msgstr "4 เวกเตอร์"
+
+#~ msgid "8 vectors"
+#~ msgstr "8 เวกเตอร์"
+
+#~ msgid "16 vectors"
+#~ msgstr "16 เวกเตอร์"
+
+#~ msgid "32 vectors"
+#~ msgstr "32 เวกเตอร์"
+
+#~ msgid "System peripheral"
+#~ msgstr "อุปกรณ์ต่อพ่วงระบบ"
+
+#~ msgid "KDE PCI Information Control Module"
+#~ msgstr "มอดูลควบคุมข้อมูล PCI ของ KDE"

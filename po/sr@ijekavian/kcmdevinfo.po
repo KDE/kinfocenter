@@ -1,0 +1,541 @@
+# Translation of kcmdevinfo.po into Serbian.
+# Dalibor Djuric <daliborddjuric@gmail.com>, 2010.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2010, 2012, 2013, 2015, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmdevinfo\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-06-09 02:14+0200\n"
+"PO-Revision-Date: 2016-03-13 14:33+0100\n"
+"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"Language: sr@ijekavian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Environment: kde\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Часлав Илић"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "caslav.ilic@gmx.net"
+
+#: devicelisting.cpp:59
+#, kde-format
+msgctxt "Device Listing Whats This"
+msgid "Shows all the devices that are currently listed."
+msgstr "Приказује све тренутно побројане уређаје."
+
+#: devicelisting.cpp:62
+#, kde-format
+msgid "Devices"
+msgstr "Уређаји"
+
+#: devicelisting.cpp:75
+#, kde-format
+msgid "Collapse All"
+msgstr "Сажми све"
+
+#: devicelisting.cpp:78
+#, kde-format
+msgid "Expand All"
+msgstr "Рашири све"
+
+#: devicelisting.cpp:81
+#, kde-format
+msgid "Show All Devices"
+msgstr "Прикажи све уређаје"
+
+#: devicelisting.cpp:84
+#, kde-format
+msgid "Show Relevant Devices"
+msgstr "Прикажи релевантне уређаје"
+
+#: devicelisting.cpp:113
+#, kde-format
+msgctxt "unknown device type"
+msgid "Unknown"
+msgstr "непознат"
+
+#: devicelisting.cpp:154 devinfo.cpp:98
+#, kde-format
+msgctxt "no device UDI"
+msgid "None"
+msgstr "ништа"
+
+#: devinfo.cpp:44
+#, kde-format
+msgid "kcmdevinfo"
+msgstr "КЦМ‑подаци-уређаја"
+
+#: devinfo.cpp:44
+#, kde-format
+msgid "Device Viewer"
+msgstr "Приказивач уређаја"
+
+#: devinfo.cpp:46
+#, kde-format
+msgid "(c) 2010 David Hubner"
+msgstr "© 2010, Дејвид Хјубнер"
+
+#: devinfo.cpp:76
+#, kde-format
+msgid "UDI: "
+msgstr "УДИ: "
+
+#: devinfo.cpp:85
+#, kde-format
+msgctxt "Udi Whats This"
+msgid "Shows the current device's UDI (Unique Device Identifier)"
+msgstr "Јединствени идентификатор уређаја (УДИ) за тренутни уређај."
+
+#: infopanel.cpp:34
+#, kde-format
+msgid "Device Information"
+msgstr "Подаци о уређају"
+
+#: infopanel.cpp:44
+#, kde-format
+msgctxt "Info Panel Whats This"
+msgid "Shows information about the currently selected device."
+msgstr "Подаци о тренутно изабраном уређају."
+
+#: infopanel.cpp:71
+#, kde-format
+msgid ""
+"\n"
+"Solid Based Device Viewer Module"
+msgstr ""
+"\n"
+"Модуле приказивача уређаја на основу Солида"
+
+#: infopanel.cpp:135
+#, kde-format
+msgid "Description: "
+msgstr ""
+
+#: infopanel.cpp:136
+#, kde-format
+msgid "Product: "
+msgstr "Производ: "
+
+#: infopanel.cpp:137
+#, kde-format
+msgid "Vendor: "
+msgstr "Произвођач: "
+
+#: infopanel.cpp:159
+#, kde-format
+msgid "Yes"
+msgstr "да"
+
+#: infopanel.cpp:161
+#, kde-format
+msgid "No"
+msgstr "не"
+
+#: infopanel.h:51
+#, kde-format
+msgctxt "name of something is not known"
+msgid "Unknown"
+msgstr "непознато"
+
+#: soldevice.cpp:80
+#, kde-format
+msgctxt "unknown device"
+msgid "Unknown"
+msgstr "непознат"
+
+#: soldevice.cpp:107
+#, kde-format
+msgctxt "Default device tooltip"
+msgid "A Device"
+msgstr "Неки уређај."
+
+#: soldevicetypes.cpp:57
+#, kde-format
+msgid "Processors"
+msgstr "Процесори"
+
+#: soldevicetypes.cpp:73
+#, kde-format
+msgid "Processor %1"
+msgstr "процесор %1"
+
+#: soldevicetypes.cpp:90
+#, kde-format
+msgid "Intel MMX"
+msgstr "Интелов ММИкс"
+
+#: soldevicetypes.cpp:93
+#, kde-format
+msgid "Intel SSE"
+msgstr "Интелов ССЕ"
+
+#: soldevicetypes.cpp:96
+#, kde-format
+msgid "Intel SSE2"
+msgstr "Интелов ССЕ‑2"
+
+#: soldevicetypes.cpp:99
+#, kde-format
+msgid "Intel SSE3"
+msgstr "Интелов ССЕ3"
+
+#: soldevicetypes.cpp:102
+#, fuzzy, kde-format
+#| msgid "Intel SSE3"
+msgid "Intel SSSE3"
+msgstr "Интелов ССЕ3"
+
+#: soldevicetypes.cpp:105
+#, fuzzy, kde-format
+#| msgid "Intel SSE4"
+msgid "Intel SSE4.1"
+msgstr "Интелов ССЕ4"
+
+#: soldevicetypes.cpp:108
+#, fuzzy, kde-format
+#| msgid "Intel SSE4"
+msgid "Intel SSE4.2"
+msgstr "Интелов ССЕ4"
+
+#: soldevicetypes.cpp:111
+#, fuzzy, kde-format
+#| msgid "AMD 3DNow"
+msgid "AMD 3DNow!"
+msgstr "АМД‑ов 3Д‑нау!"
+
+#: soldevicetypes.cpp:114
+#, kde-format
+msgid "ATI IVEC"
+msgstr "АТИ‑јев и‑век"
+
+#: soldevicetypes.cpp:117
+#, kde-format
+msgctxt "no instruction set extensions"
+msgid "None"
+msgstr "ништа"
+
+#: soldevicetypes.cpp:120
+#, kde-format
+msgid "Processor Number: "
+msgstr "Број процесора: "
+
+#: soldevicetypes.cpp:122
+#, kde-format
+msgid "Max Speed: "
+msgstr "Највећа брзина: "
+
+#: soldevicetypes.cpp:124
+#, kde-format
+msgid "Supported Instruction Sets: "
+msgstr "Подржани скупови инструкција: "
+
+#: soldevicetypes.cpp:152
+#, kde-format
+msgid "Storage Drives"
+msgstr "Складишне јединице"
+
+#: soldevicetypes.cpp:171
+#, kde-format
+msgid "Hard Disk Drive"
+msgstr "хард‑диск"
+
+#: soldevicetypes.cpp:174
+#, kde-format
+msgid "Compact Flash Reader"
+msgstr "читач компактфлеша"
+
+#: soldevicetypes.cpp:177
+#, kde-format
+msgid "Smart Media Reader"
+msgstr "читач смартмедије"
+
+#: soldevicetypes.cpp:180
+#, kde-format
+msgid "SD/MMC Reader"
+msgstr "читач СД/ММЦ‑а"
+
+#: soldevicetypes.cpp:183
+#, kde-format
+msgid "Optical Drive"
+msgstr "оптичка јединица"
+
+#: soldevicetypes.cpp:186
+#, kde-format
+msgid "Memory Stick Reader"
+msgstr "читач меморијских штапића"
+
+#: soldevicetypes.cpp:189
+#, kde-format
+msgid "xD Reader"
+msgstr "читач Иксда"
+
+#: soldevicetypes.cpp:192
+#, kde-format
+msgid "Unknown Drive"
+msgstr "непозната јединица"
+
+#: soldevicetypes.cpp:212
+#, kde-format
+msgid "IDE"
+msgstr "ИДЕ"
+
+#: soldevicetypes.cpp:215
+#, kde-format
+msgid "USB"
+msgstr "УСБ"
+
+#: soldevicetypes.cpp:218
+#, kde-format
+msgid "IEEE1394"
+msgstr "ИЕЕЕ 1394"
+
+#: soldevicetypes.cpp:221
+#, kde-format
+msgid "SCSI"
+msgstr "скази"
+
+#: soldevicetypes.cpp:224
+#, kde-format
+msgid "SATA"
+msgstr "С‑АТА"
+
+#: soldevicetypes.cpp:227
+#, kde-format
+msgctxt "platform storage bus"
+msgid "Platform"
+msgstr "платформски"
+
+#: soldevicetypes.cpp:230
+#, kde-format
+msgctxt "unknown storage bus"
+msgid "Unknown"
+msgstr "непознат"
+
+#: soldevicetypes.cpp:233
+#, kde-format
+msgid "Bus: "
+msgstr "Магистрала: "
+
+#: soldevicetypes.cpp:235
+#, kde-format
+msgid "Hotpluggable?"
+msgstr "Вруће укључив?"
+
+#: soldevicetypes.cpp:237
+#, kde-format
+msgid "Removable?"
+msgstr "Уклоњив?"
+
+#: soldevicetypes.cpp:281
+#, kde-format
+msgid "Unused"
+msgstr "неискоришћено"
+
+#: soldevicetypes.cpp:284
+#, kde-format
+msgid "File System"
+msgstr "фајл систем"
+
+#: soldevicetypes.cpp:287
+#, kde-format
+msgid "Partition Table"
+msgstr "табела партиција"
+
+#: soldevicetypes.cpp:290
+#, kde-format
+msgid "Raid"
+msgstr "РАИД"
+
+#: soldevicetypes.cpp:293
+#, kde-format
+msgid "Encrypted"
+msgstr "шифровано"
+
+#: soldevicetypes.cpp:296
+#, kde-format
+msgctxt "unknown volume usage"
+msgid "Unknown"
+msgstr "непознато"
+
+#: soldevicetypes.cpp:299
+#, kde-format
+msgid "File System Type: "
+msgstr "Тип фајл система: "
+
+#: soldevicetypes.cpp:301
+#, kde-format
+msgid "Label: "
+msgstr "Етикета: "
+
+#: soldevicetypes.cpp:302
+#, kde-format
+msgid "Not Set"
+msgstr "није постављена"
+
+#: soldevicetypes.cpp:303
+#, kde-format
+msgid "Volume Usage: "
+msgstr "Искоришћеност складишта: "
+
+#: soldevicetypes.cpp:305
+#, kde-format
+msgid "UUID: "
+msgstr "УУИД: "
+
+#: soldevicetypes.cpp:310
+#, kde-format
+msgid "Mounted At: "
+msgstr "Монтирано на: "
+
+#: soldevicetypes.cpp:311
+#, kde-format
+msgid "Not Mounted"
+msgstr "није монтирано"
+
+# skip-rule: t-space
+#: soldevicetypes.cpp:317
+#, kde-format
+msgid "Volume Space:"
+msgstr "Простор складишта:"
+
+#: soldevicetypes.cpp:325
+#, kde-format
+msgctxt "Available space out of total partition size (percent used)"
+msgid "%1 free of %2 (%3% used)"
+msgstr "слободно %1 од %2 (%3% искоришћено)"
+
+#: soldevicetypes.cpp:331
+#, kde-format
+msgid "No data available"
+msgstr "подаци недоступни"
+
+#: soldevicetypes.cpp:358
+#, kde-format
+msgid "Multimedia Players"
+msgstr "Мултимедијални плејери"
+
+#: soldevicetypes.cpp:377 soldevicetypes.cpp:419
+#, kde-format
+msgid "Supported Drivers: "
+msgstr "Подржани драјвери: "
+
+#: soldevicetypes.cpp:379 soldevicetypes.cpp:421
+#, kde-format
+msgid "Supported Protocols: "
+msgstr "Подржани протоколи: "
+
+#: soldevicetypes.cpp:400
+#, kde-format
+msgid "Cameras"
+msgstr "Фотоапарати"
+
+#: soldevicetypes.cpp:442
+#, kde-format
+msgid "Batteries"
+msgstr "Батерије"
+
+#: soldevicetypes.cpp:464
+#, kde-format
+msgid "PDA"
+msgstr "ПДА"
+
+#: soldevicetypes.cpp:467
+#, kde-format
+msgid "UPS"
+msgstr "УПС"
+
+#: soldevicetypes.cpp:470
+#, kde-format
+msgid "Primary"
+msgstr "примарна"
+
+#: soldevicetypes.cpp:473
+#, kde-format
+msgid "Mouse"
+msgstr "миш"
+
+#: soldevicetypes.cpp:476
+#, kde-format
+msgid "Keyboard"
+msgstr "тастатура"
+
+#: soldevicetypes.cpp:479
+#, kde-format
+msgid "Keyboard + Mouse"
+msgstr "тастатура и миш"
+
+#: soldevicetypes.cpp:482
+#, kde-format
+msgid "Camera"
+msgstr "фотоапарат"
+
+#: soldevicetypes.cpp:485
+#, kde-format
+msgid "Phone"
+msgstr ""
+
+#: soldevicetypes.cpp:488
+#, kde-format
+msgctxt "Screen"
+msgid "Monitor"
+msgstr ""
+
+#: soldevicetypes.cpp:491
+#, kde-format
+msgctxt "Wireless game pad or joystick battery"
+msgid "Gaming Input"
+msgstr ""
+
+#: soldevicetypes.cpp:494
+#, kde-format
+msgctxt "unknown battery type"
+msgid "Unknown"
+msgstr "непозната"
+
+#: soldevicetypes.cpp:500
+#, kde-format
+msgid "Charging"
+msgstr "пуни се"
+
+#: soldevicetypes.cpp:503
+#, kde-format
+msgid "Discharging"
+msgstr "празни се"
+
+#: soldevicetypes.cpp:506
+#, kde-format
+msgid "Fully Charged"
+msgstr "скроз пуна"
+
+#: soldevicetypes.cpp:509
+#, kde-format
+msgid "No Charge"
+msgstr "празна"
+
+#: soldevicetypes.cpp:512
+#, kde-format
+msgid "Battery Type: "
+msgstr "Тип батерије: "
+
+#: soldevicetypes.cpp:514
+#, kde-format
+msgid "Charge Status: "
+msgstr "Стање пуњења: "
+
+#: soldevicetypes.cpp:516
+#, fuzzy, kde-format
+#| msgid "Charge Status: "
+msgid "Charge Percent: "
+msgstr "Стање пуњења: "

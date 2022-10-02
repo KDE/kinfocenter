@@ -1,0 +1,155 @@
+# Translation of kcm_nic to Norwegian Nynorsk
+#
+# Gaute Hvoslef Kvalnes <gaute@verdsveven.com>, 2002, 2004.
+# Karl Ove Hufthammer <karl@huftis.org>, 2004, 2007, 2008, 2015, 2016, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmnic\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-14 00:46+0000\n"
+"PO-Revision-Date: 2020-10-22 21:04+0200\n"
+"Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
+"Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.08.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Gaute Hvoslef Kvalnes"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "gaute@verdsveven.com"
+
+#: networkmodel.cpp:159
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Point to Point"
+msgstr "Punkt-til-punkt"
+
+#: networkmodel.cpp:166
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Broadcast"
+msgstr "Kringkasting"
+
+#: networkmodel.cpp:173
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Multicast"
+msgstr "Multikasting"
+
+#: networkmodel.cpp:180
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Loopback"
+msgstr "Loopback"
+
+#: nic.cpp:21
+#, kde-format
+msgid "kcm_nic"
+msgstr "kcm_nic"
+
+#: nic.cpp:22
+#, kde-format
+msgctxt "@title:window"
+msgid "Network Interfaces"
+msgstr "Nettverksgrensesnitt"
+
+#: nic.cpp:26
+#, kde-format
+msgctxt "@info"
+msgid "(c) 2001 - 2002 Alexander Neundorf"
+msgstr "© 2001–2002 Alexander Neundorf"
+
+#: nic.cpp:28
+#, kde-format
+msgctxt "@info:credit"
+msgid "Alexander Neundorf"
+msgstr "Alexander Neundorf"
+
+#: nic.cpp:28
+#, kde-format
+msgctxt "@info:credit"
+msgid "creator"
+msgstr "Opphavsperson"
+
+#: nic.cpp:29
+#, kde-format
+msgctxt "@info:credit"
+msgid "Carl Schwan"
+msgstr "Carl Schwan"
+
+#: nic.cpp:29
+#, kde-format
+msgctxt "@info:credit"
+msgid "developer"
+msgstr "Utviklar"
+
+#: package/contents/ui/main.qml:15
+#, kde-format
+msgid "Network Interfaces"
+msgstr "Nettverksgrensesnitt"
+
+#: package/contents/ui/main.qml:30
+#, kde-format
+msgctxt "@label"
+msgid "Name:"
+msgstr "Namn:"
+
+#: package/contents/ui/main.qml:34
+#, kde-format
+msgctxt "@label"
+msgid "Address:"
+msgstr "Adresse:"
+
+#: package/contents/ui/main.qml:38
+#, kde-format
+msgctxt "@label"
+msgid "Network Mask:"
+msgstr "Nettverksmaske:"
+
+#: package/contents/ui/main.qml:42
+#, kde-format
+msgctxt "@label"
+msgid "Type:"
+msgstr "Type:"
+
+#: package/contents/ui/main.qml:46
+#, kde-format
+msgctxt "@label"
+msgid "Hardware Address:"
+msgstr "Maskinvareadresse:"
+
+#: package/contents/ui/main.qml:51
+#, kde-format
+msgctxt "@label"
+msgid "State:"
+msgstr "Tilstand:"
+
+#: package/contents/ui/main.qml:59
+#, kde-format
+msgctxt "State of network card is connected"
+msgid "Up"
+msgstr "Oppe"
+
+#: package/contents/ui/main.qml:60
+#, kde-format
+msgctxt "State of network card is disconnected"
+msgid "Down"
+msgstr "Nede"
+
+#: package/contents/ui/main.qml:76
+#, kde-format
+msgctxt "@action:button"
+msgid "Refresh"
+msgstr "Oppdater"

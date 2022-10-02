@@ -1,0 +1,156 @@
+# translation of kcm_pci.po to Persian
+# Saied Taghavi <s.taghavi@gmail.com>, 2008.
+# Mohammad Reza Mirdamadi <mohi@linuxshop.ir>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_pci\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
+"PO-Revision-Date: 2013-01-11 02:43+0330\n"
+"Last-Translator: Mohammad Reza Mirdamadi <mohi@linuxshop.ir>\n"
+"Language-Team: Farsi (Persian) <kde-i18n-fa@kde.org>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "محمدرضا میردامادی"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "mohi@linuxshop.ir"
+
+#: main.cpp:26
+#, kde-format
+msgctxt "@label kcm name"
+msgid "PCI"
+msgstr ""
+
+#: main.cpp:27
+#, kde-format
+msgid "Harald Sitter"
+msgstr ""
+
+#: package/contents/ui/main.qml:14
+#, fuzzy
+#| msgid "Information"
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "اطلاعات"
+
+#, fuzzy
+#~| msgid "Device"
+#~ msgid "PCI Devices"
+#~ msgstr "دستگاه"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+
+#~ msgid "Device"
+#~ msgstr "دستگاه"
+
+#, fuzzy
+#~ msgid " - device:"
+#~ msgstr "دستگاه"
+
+#~ msgid "Interrupt"
+#~ msgstr "وقفه"
+
+#~ msgid "Control"
+#~ msgstr "کنترل"
+
+#~ msgid "Status"
+#~ msgstr "وضعیت"
+
+#~ msgid "Type"
+#~ msgstr "نوع"
+
+#~ msgid "Size"
+#~ msgstr "اندازه"
+
+#~ msgid "Space"
+#~ msgstr "فاصله"
+
+#, fuzzy
+#~ msgid "Address"
+#~ msgstr "نشانی:"
+
+#, fuzzy
+#~ msgid "Version"
+#~ msgstr "نسخه %1"
+
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgid "Configuration"
+#~ msgstr "پیکربندی"
+
+#~ msgid "Mask"
+#~ msgstr "نقاب"
+
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "هیچ‌کدام"
+
+#~ msgid "Next"
+#~ msgstr "بعدی"
+
+#~ msgid "Value"
+#~ msgstr "مقدار"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Enabled"
+#~ msgstr "فعال"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Disabled"
+#~ msgstr "غیرفعال"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Yes"
+#~ msgstr "بله"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "نه"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Unknown"
+#~ msgstr "ناشناخته"
+
+#, fuzzy
+#~| msgid "Control"
+#~ msgid "PICMG controller"
+#~ msgstr "کنترل"
+
+#, fuzzy
+#~ msgid "Audio device"
+#~ msgstr "دستگاه"
+
+#~ msgid "Bluetooth"
+#~ msgstr "بلوتوث"
+
+#, fuzzy
+#~ msgid "1X"
+#~ msgstr "x"
+
+#, fuzzy
+#~ msgid "2X"
+#~ msgstr "x"
+
+#, fuzzy
+#~ msgid "4X"
+#~ msgstr "x"
+
+#, fuzzy
+#~ msgid "8X"
+#~ msgstr "x"

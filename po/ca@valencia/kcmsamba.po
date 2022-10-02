@@ -1,0 +1,116 @@
+# Translation of kcmsamba.po to Catalan (Valencian)
+# Copyright (C) 1998-2020 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+#
+# Sebastià Pla i Sanz <sps@sastia.com>, 1998, 1999, 2000, 2001, 2002.
+# Albert Astals Cid <aacid@kde.org>, 2005.
+# Josep M. Ferrer <txemaq@gmail.com>, 2007, 2008, 2009, 2010, 2013, 2015, 2018, 2019, 2020.
+# Antoni Bella Pérez <antonibella5@yahoo.com>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: kinfocenter\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-11-17 00:29+0000\n"
+"PO-Revision-Date: 2020-09-29 11:23+0100\n"
+"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: ca@valencia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Sebastià Pla i Sanz"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sps@sastia.com"
+
+#: main.cpp:25
+#, kde-format
+msgid "kcmsamba"
+msgstr "kcmsamba"
+
+#: main.cpp:26
+#, kde-format
+msgid "Samba Status"
+msgstr "Estat de Samba"
+
+#: main.cpp:30
+#, kde-format
+msgid "(c) 2002-2020 KDE Information Control Module Samba Team"
+msgstr "(c) 2002-2020 Equip Samba del mòdul de control d'informació de KDE"
+
+#: main.cpp:31
+#, kde-format
+msgid "Michael Glauche"
+msgstr "Michael Glauche"
+
+#: main.cpp:32
+#, kde-format
+msgid "Matthias Hoelzer"
+msgstr "Matthias Hoelzer"
+
+#: main.cpp:33
+#, kde-format
+msgid "David Faure"
+msgstr "David Faure"
+
+#: main.cpp:34
+#, kde-format
+msgid "Harald Koschinski"
+msgstr "Harald Koschinski"
+
+#: main.cpp:35
+#, kde-format
+msgid "Wilco Greven"
+msgstr "Wilco Greven"
+
+#: main.cpp:36
+#, kde-format
+msgid "Alexander Neundorf"
+msgstr "Alexander Neundorf"
+
+#: main.cpp:37
+#, kde-format
+msgid "Harald Sitter"
+msgstr "Harald Sitter"
+
+#: package/contents/ui/main.qml:17
+#, kde-format
+msgctxt "@title heading above listview"
+msgid "User-Created Shares"
+msgstr "Comparticions creades pels usuaris"
+
+#: package/contents/ui/main.qml:22
+#, kde-format
+msgctxt "@title heading above listview"
+msgid "Mounted Remote Shares"
+msgstr "Comparticions muntades remotes"
+
+#: package/contents/ui/main.qml:49
+#, kde-format
+msgctxt "@info place holder for empty listview"
+msgid "There are no directories shared by users"
+msgstr "No hi ha cap directori compartit pels usuaris"
+
+#: package/contents/ui/main.qml:89
+#, kde-format
+msgctxt "@info place holder for empty listview"
+msgid "There are no Samba shares mounted on this system"
+msgstr "No hi ha cap compartició Samba muntada en este sistema"
+
+#: package/contents/ui/ShareListItem.qml:71
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "Open folder properties to change share settings"
+msgstr ""
+"Obriu les propietats de la carpeta per a canviar la configuració de la "
+"compartició"

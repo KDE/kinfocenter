@@ -1,0 +1,1367 @@
+# translation of kcm_pci.po to Italian
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Federico Zenith <zenith@chemeng.ntnu.no>, 2008.
+# Luciano Montanaro <mikelima@cirulla.net>, 2008.
+# Federico Zenith <federico.zenith@member.fsf.org>, 2009, 2010, 2012.
+# Paolo Zamponi <zapaolo@email.it>, 2016, 2018, 2019, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_pci\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
+"PO-Revision-Date: 2021-11-30 18:25+0100\n"
+"Last-Translator: Paolo Zamponi <zapaolo@email.it>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 21.08.3\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Federico Zenith"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "federico.zenith@member.fsf.org"
+
+#: main.cpp:26
+#, kde-format
+msgctxt "@label kcm name"
+msgid "PCI"
+msgstr "PCI"
+
+#: main.cpp:27
+#, kde-format
+msgid "Harald Sitter"
+msgstr "Harald Sitter"
+
+#: package/contents/ui/main.qml:14
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "Informazioni sul bus PCI"
+
+#~ msgid "kcm_pci"
+#~ msgstr "kcm_pci"
+
+#~ msgid "PCI Devices"
+#~ msgstr "Dispositivi PCI"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr "© 2008 Nicolas Ternisien © 1998–2002 Helge Deller"
+
+#~ msgid "Nicolas Ternisien"
+#~ msgstr "Nicolas Ternisien"
+
+#~ msgid "Helge Deller"
+#~ msgstr "Helge Deller"
+
+#~ msgid "This list displays PCI information."
+#~ msgstr "Questa lista mostra le informazioni PCI."
+
+#~ msgid ""
+#~ "This display shows information about your computer's PCI slots and the "
+#~ "related connected devices."
+#~ msgstr ""
+#~ "Questo visore mostra le informazioni sugli slot PCI del computer e i "
+#~ "dispositivi relativi collegati."
+
+#~ msgid "Device Class"
+#~ msgstr "Classe di dispositivi"
+
+#~ msgid "Device Subclass"
+#~ msgstr "Sottoclasse di dispositivi"
+
+#~ msgid "Device Programming Interface"
+#~ msgstr "Interfaccia di programmazione dei dispositivi"
+
+#~ msgid "Master IDE Device"
+#~ msgstr "Dispositivo master IDE"
+
+#~ msgid "Secondary programmable indicator"
+#~ msgstr "Indicatore programmabile secondario"
+
+#~ msgid "Secondary operating mode"
+#~ msgstr "Modalità di operazione secondaria"
+
+#~ msgid "Primary programmable indicator"
+#~ msgstr "Indicatore programmabile primario"
+
+#~ msgid "Primary operating mode"
+#~ msgstr "Modalità di operazione primaria"
+
+#~ msgid "Vendor"
+#~ msgstr "Fornitore"
+
+#~ msgid "Device"
+#~ msgstr "Dispositivo"
+
+#~ msgid "Subsystem"
+#~ msgstr "Sottosistema"
+
+#~ msgid " - device:"
+#~ msgstr " - dispositivo:"
+
+#~ msgid "Interrupt"
+#~ msgstr "Interrupt"
+
+#~ msgid "IRQ"
+#~ msgstr "IRQ"
+
+#~ msgid "Pin"
+#~ msgstr "Pin"
+
+#~ msgid "Control"
+#~ msgstr "Controllo"
+
+#~ msgid "Response in I/O space"
+#~ msgstr "Risposta nello spazio I/O"
+
+#~ msgid "Response in memory space"
+#~ msgstr "Risposta nello spazio di memoria"
+
+#~ msgid "Bus mastering"
+#~ msgstr "Controllo del bus"
+
+#~ msgid "Response to special cycles"
+#~ msgstr "Risposta a cicli speciali"
+
+#~ msgid "Memory write and invalidate"
+#~ msgstr "Scrittura e invalidazione della memoria"
+
+# Traduzione trovata in un manuale di un bios sul sito della Acer
+# http://csd.acer.com.tw/acer/URMUL1.NSF/1af87a750eeeb70f0825628f006e0bfc/00227d5df8db8205c825654b002584cf/$FILE/v65x-2i.pdf
+#~ msgid "Palette snooping"
+#~ msgstr "Spia della tavolozza"
+
+#~ msgid "Parity checking"
+#~ msgstr "Controllo di parità"
+
+#~ msgid "Address/data stepping"
+#~ msgstr "Avanzamento indirizzi/dati"
+
+#~ msgid "System error"
+#~ msgstr "Errore di sistema"
+
+#~ msgid "Back-to-back writes"
+#~ msgstr "Scrittura back-to-back"
+
+#~ msgid "Status"
+#~ msgstr "Stato"
+
+#~ msgid "Interrupt status"
+#~ msgstr "Stato degli interrupt"
+
+#~ msgid "Capability list"
+#~ msgstr "Elenco di capacità"
+
+#~ msgid "66 MHz PCI 2.1 bus"
+#~ msgstr "Bus PCI 2.1 a 66 MHz"
+
+#~ msgid "User-definable features"
+#~ msgstr "Funzionalità definibili dall'utente"
+
+#~ msgid "Accept fast back-to-back"
+#~ msgstr "Accetta back-to-back veloce"
+
+#~ msgid "Data parity error"
+#~ msgstr "Errore di parità dei dati"
+
+#~ msgid "Device selection timing"
+#~ msgstr "Tempistica della selezione dei dispositivi"
+
+#~ msgid "Signaled target abort"
+#~ msgstr "Interruzione target segnalata"
+
+#~ msgid "Received target abort"
+#~ msgstr "Interruzione target ricevuta"
+
+#~ msgid "Received master abort"
+#~ msgstr "Interruzione master ricevuta"
+
+#~ msgid "Signaled system error"
+#~ msgstr "Errore di sistema segnalato"
+
+#~ msgid "Parity error"
+#~ msgstr "Errore di parità"
+
+#~ msgid "Latency"
+#~ msgstr "Latenza"
+
+#~ msgid "MIN_GNT"
+#~ msgstr "MIN_GNT"
+
+#~ msgid "No major requirements (0x00)"
+#~ msgstr "Nessun requisito particolare (0x00)"
+
+#~ msgid "MAX_LAT"
+#~ msgstr "MAX_LAT"
+
+#~ msgid "Header"
+#~ msgstr "Intestazione"
+
+#~ msgid "Type"
+#~ msgstr "Tipo"
+
+#~ msgid "Multifunctional"
+#~ msgstr "Multifunzionale"
+
+#~ msgid "Build-in self test"
+#~ msgstr "Autodiagnostica incorporata (BIST)"
+
+#~ msgid "BIST Capable"
+#~ msgstr "Capacità BIST"
+
+#~ msgid "BIST Start"
+#~ msgstr "Avvio BIST"
+
+#~ msgid "Completion code"
+#~ msgstr "Codice di completamento"
+
+#~ msgid "Size"
+#~ msgstr "Dimensioni"
+
+#~ msgid "Address mappings"
+#~ msgstr "Mappature di indirizzi"
+
+#~ msgid "Mapping %1"
+#~ msgstr "Mappatura %1"
+
+#~ msgid "Space"
+#~ msgstr "Spazio"
+
+#~ msgid "I/O"
+#~ msgstr "I/O"
+
+#~ msgid "Memory"
+#~ msgstr "Memoria"
+
+#~ msgid "Prefetchable"
+#~ msgstr "Prefetchable"
+
+#~ msgid "Address"
+#~ msgstr "Indirizzo"
+
+#~ msgctxt "unassigned address"
+#~ msgid "Unassigned"
+#~ msgstr "Non assegnato"
+
+#~ msgctxt "unassigned size"
+#~ msgid "Unassigned"
+#~ msgstr "Non assegnato"
+
+#~ msgid "Bus"
+#~ msgstr "Bus"
+
+#~ msgid "Primary bus number"
+#~ msgstr "Numero di bus primario"
+
+#~ msgid "Secondary bus number"
+#~ msgstr "Numero di bus secondario"
+
+#~ msgid "Subordinate bus number"
+#~ msgstr "Numero di bus subordinato"
+
+#~ msgid "Secondary latency timer"
+#~ msgstr "Timer di latenza secondario"
+
+#~ msgid "CardBus number"
+#~ msgstr "Numero CardBus"
+
+#~ msgid "CardBus latency timer"
+#~ msgstr "Timer di latenza CardBus"
+
+#~ msgid "Secondary status"
+#~ msgstr "Stato secondario"
+
+#~ msgid "I/O behind bridge"
+#~ msgstr "I/O oltre il ponte"
+
+#~ msgid "32-bit"
+#~ msgstr "32 bit"
+
+#~ msgid "Base"
+#~ msgstr "Base"
+
+#~ msgid "Limit"
+#~ msgstr "Limite"
+
+#~ msgid "Memory behind bridge"
+#~ msgstr "Memoria oltre il ponte"
+
+#~ msgid "Prefetchable memory behind bridge"
+#~ msgstr "Memoria prefetchable oltre il ponte"
+
+#~ msgid "64-bit"
+#~ msgstr "64 bit"
+
+#~ msgid "Bridge control"
+#~ msgstr "Controllo del ponte"
+
+#~ msgid "Secondary parity checking"
+#~ msgstr "Controllo di parità secondario"
+
+#~ msgid "Secondary system error"
+#~ msgstr "Errore di sistema secondario"
+
+#~ msgid "ISA ports forwarding"
+#~ msgstr "Inoltro di porte ISA"
+
+#~ msgid "VGA forwarding"
+#~ msgstr "Inoltro VGA"
+
+#~ msgid "Master abort"
+#~ msgstr "Interruzione master"
+
+#~ msgid "Secondary bus reset"
+#~ msgstr "Azzeramento del bus secondario"
+
+#~ msgid "Secondary back-to-back writes"
+#~ msgstr "Scrittura back-to-back secondaria"
+
+#~ msgid "Primary discard timer counts"
+#~ msgstr "Conteggi del timer di annullamento primario"
+
+#~ msgid "2e10 PCI clocks"
+#~ msgstr "Clock PCI 2e10"
+
+#~ msgid "2e15 PCI clocks"
+#~ msgstr "Clock PCI 2e15"
+
+#~ msgid "Secondary discard timer counts"
+#~ msgstr "Conteggi del timer di annullamento secondario"
+
+#~ msgid "Discard timer error"
+#~ msgstr "Errore del timer di annullamento"
+
+#~ msgid "Discard timer system error"
+#~ msgstr "Errore di sistema del timer di annullamento"
+
+#~ msgid "Expansion ROM"
+#~ msgstr "ROM di espansione"
+
+#~ msgid "Memory windows"
+#~ msgstr "Finestre di memoria"
+
+#~ msgid "Window %1"
+#~ msgstr "Finestra %1"
+
+#~ msgid "I/O windows"
+#~ msgstr "Finestre di I/O"
+
+#~ msgid "16-bit"
+#~ msgstr "16 bit"
+
+#~ msgid "16-bit legacy interface ports"
+#~ msgstr "Porte di interfaccia retrocompatibili a 16 bit"
+
+#~ msgid "CardBus control"
+#~ msgstr "Controllo CardBus"
+
+#~ msgid "Interrupts for 16-bit cards"
+#~ msgstr "Interrupt per schede a 16 bit"
+
+#~ msgid "Window 0 prefetchable memory"
+#~ msgstr "Memoria prefetchable della finestra 0"
+
+#~ msgid "Window 1 prefetchable memory"
+#~ msgstr "Memoria prefetchable della finestra 1"
+
+# "Post" non è inteso come il latino "dopo", ma come l'inglese "posting".
+# Non ho trovato traduzioni, anche perché molti sono probabilmente incerti sul significato.
+#~ msgid "Post writes"
+#~ msgstr "Scrittura post"
+
+#~ msgid "Raw PCI config space"
+#~ msgstr "Spazio di configurazione PCI grezzo"
+
+#~ msgid "Capabilities"
+#~ msgstr "Capacità"
+
+#~ msgid "Version"
+#~ msgstr "Versione"
+
+#~ msgid "Clock required for PME generation"
+#~ msgstr "Clock richiesto per la generazione PME"
+
+#~ msgid "Device-specific initialization required"
+#~ msgstr "Inizializzazione specifica per il dispositivo richiesta"
+
+#~ msgid "Maximum auxiliary current required in D3 cold"
+#~ msgstr "Corrente ausiliaria massima richiesta in D3 cold"
+
+#~ msgid "D1 support"
+#~ msgstr "Supporto D1"
+
+#~ msgid "D2 support"
+#~ msgstr "Supporto D2"
+
+#~ msgid "Power management events"
+#~ msgstr "Eventi di gestione energetica"
+
+#~ msgid "D0"
+#~ msgstr "D0"
+
+#~ msgid "D1"
+#~ msgstr "D1"
+
+#~ msgid "D2"
+#~ msgstr "D2"
+
+#~ msgid "D3 hot"
+#~ msgstr "D3 hot"
+
+#~ msgid "D3 cold"
+#~ msgstr "D3 cold"
+
+#~ msgid "Power state"
+#~ msgstr "Stato dell'energia"
+
+#~ msgid "Power management"
+#~ msgstr "Gestione energetica"
+
+#~ msgid "Data select"
+#~ msgstr "Selezione dei dati"
+
+#~ msgid "Data scale"
+#~ msgstr "Scala dei dati"
+
+#~ msgid "Power management status"
+#~ msgstr "Stato della gestione energetica"
+
+#~ msgid "Bridge status"
+#~ msgstr "Stato dei ponti"
+
+#~ msgid "Secondary bus state in D3 hot"
+#~ msgstr "Stato del bus secondario in D3 hot"
+
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgid "Secondary bus power & clock control"
+#~ msgstr "Controllo dell'energia e del clock del bus secondario"
+
+#~ msgid "Data"
+#~ msgstr "Dati"
+
+#~ msgid "Revision"
+#~ msgstr "Revisione"
+
+#~ msgid "Rate"
+#~ msgstr "Velocità"
+
+#~ msgid "AGP 3.0 mode"
+#~ msgstr "Modalità AGP 3.0"
+
+#~ msgid "Fast Writes"
+#~ msgstr "Scrittura veloce"
+
+#~ msgid "Address over 4 GiB"
+#~ msgstr "Indirizzi oltre 4 GiB"
+
+#~ msgid "Translation of host processor access"
+#~ msgstr "Traduzione dell'accesso al processore ospite"
+
+#~ msgid "64-bit GART"
+#~ msgstr "GART a 64 bit"
+
+#~ msgid "Cache Coherency"
+#~ msgstr "Coerenza della cache"
+
+#~ msgid "Side-band addressing"
+#~ msgstr "Indirizzamento di banda laterale"
+
+#~ msgid "Calibrating cycle"
+#~ msgstr "Ciclo di calibrazione"
+
+#~ msgid "Optimum asynchronous request size"
+#~ msgstr "Dimensione ottima delle richieste asincrone"
+
+#~ msgid "Isochronous transactions"
+#~ msgstr "Transazioni isocrone"
+
+#~ msgid "Maximum number of AGP command"
+#~ msgstr "Numero massimo di comandi AGP"
+
+#~ msgid "Configuration"
+#~ msgstr "Configurazione"
+
+#~ msgid "AGP"
+#~ msgstr "AGP"
+
+#~ msgid "Data address"
+#~ msgstr "Indirizzo dei dati"
+
+#~ msgid "Transfer completed"
+#~ msgstr "Trasferimento completato"
+
+#~ msgid "Message control"
+#~ msgstr "Controllo dei messaggi"
+
+#~ msgid "Message signaled interrupts"
+#~ msgstr "Interrupt segnalati con messaggi"
+
+#~ msgid "Multiple message capable"
+#~ msgstr "Capacità di messaggi multipli"
+
+#~ msgid "Multiple message enable"
+#~ msgstr "Abilita messaggi multipli"
+
+#~ msgid "64-bit address"
+#~ msgstr "Indirizzo a 64 bit"
+
+#~ msgid "Per vector masking"
+#~ msgstr "Con mascheratura vettoriale"
+
+#~ msgid "Mask"
+#~ msgstr "Maschera"
+
+#~ msgid "Pending"
+#~ msgstr "In sospeso"
+
+#~ msgid "Length"
+#~ msgstr "Lunghezza"
+
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "Nessuno"
+
+#~ msgid "Next"
+#~ msgstr "Prossimo"
+
+#~ msgid "0x00 (None)"
+#~ msgstr "0x00 (Nessuno)"
+
+#~ msgid "Root only"
+#~ msgstr "Solo root"
+
+#~ msgid "Value"
+#~ msgstr "Valore"
+
+#~ msgid "Cache line size"
+#~ msgstr "Dimensione della coda di cache"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Enabled"
+#~ msgstr "Abilitato"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Disabled"
+#~ msgstr "Disabilitato"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Yes"
+#~ msgstr "Sì"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "No"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Unknown"
+#~ msgstr "Sconosciuto"
+
+#~ msgid "Unclassified device"
+#~ msgstr "Dispositivo non classificato"
+
+#~ msgid "Mass storage controller"
+#~ msgstr "Controllore di memorizzazione di massa"
+
+#~ msgid "Network controller"
+#~ msgstr "Controllore di rete"
+
+#~ msgid "Display controller"
+#~ msgstr "Controllore visivo"
+
+#~ msgid "Multimedia controller"
+#~ msgstr "Controllore multimediale"
+
+#~ msgid "Memory controller"
+#~ msgstr "Controllore della memoria"
+
+#~ msgid "Bridge"
+#~ msgstr "Ponte"
+
+#~ msgid "Communication controller"
+#~ msgstr "Controllore di comunicazione"
+
+#~ msgid "Generic system peripheral"
+#~ msgstr "Periferica generica di sistema"
+
+#~ msgid "Input device controller"
+#~ msgstr "Controllore dei dispositivi di inserimento"
+
+#~ msgid "Docking station"
+#~ msgstr "Base di aggancio"
+
+#~ msgid "Processor"
+#~ msgstr "Processore"
+
+#~ msgid "Serial bus controller"
+#~ msgstr "Controllore del bus seriale"
+
+#~ msgid "Wireless controller"
+#~ msgstr "Controllore senza fili"
+
+#~ msgid "Intelligent controller"
+#~ msgstr "Controllore intelligente"
+
+#~ msgid "Satellite communications controller"
+#~ msgstr "Controllore di comunicazioni satellitari"
+
+#~ msgid "Encryption controller"
+#~ msgstr "Controllore di cifratura"
+
+#~ msgid "Signal processing controller"
+#~ msgstr "Controllore dell'elaborazione dei segnali"
+
+#~ msgid "Processing accelerators"
+#~ msgstr "Acceleratori di elaborazione"
+
+#~ msgid "Non-Essential Instrumentation"
+#~ msgstr "Strumentazione non essenziale"
+
+#~ msgid "Coprocessor"
+#~ msgstr "Coprocessore"
+
+#~ msgid "Unassigned class"
+#~ msgstr "Classe non assegnata"
+
+#~ msgid "Unknown device class"
+#~ msgstr "Classe di dispositivi sconosciuta"
+
+#~ msgid "Non-VGA unclassified device"
+#~ msgstr "Dispositivo non VGA non classificato"
+
+#~ msgid "VGA unclassified device"
+#~ msgstr "Dispositivo VGA non classificato"
+
+#~ msgid "Unknown unclassified device"
+#~ msgstr "Dispositivo sconosciuto non classificato"
+
+#~ msgid "SCSI storage controller"
+#~ msgstr "Controllore di memorizzazione SCSI"
+
+#~ msgid "IDE controller"
+#~ msgstr "Controllore IDE"
+
+#~ msgid "Floppy disk controller"
+#~ msgstr "Controllore per dischetti"
+
+#~ msgid "IPI bus controller"
+#~ msgstr "Controllore del bus IPI"
+
+#~ msgid "RAID bus controller"
+#~ msgstr "Controllore del bus RAID"
+
+#~ msgid "ATA controller"
+#~ msgstr "Controllore ATA"
+
+#~ msgid "SATA controller"
+#~ msgstr "Controllore SATA"
+
+#~ msgid "Serial Attached SCSI controller"
+#~ msgstr "Controllore Serial Attached SCSI"
+
+#~ msgid "Non-Volatile memory controller"
+#~ msgstr "Controllore di memoria non volatile"
+
+#~ msgid "Unknown storage controller"
+#~ msgstr "Controllo di memorizzazione sconosciuto"
+
+#~ msgid "Ethernet controller"
+#~ msgstr "Controllore Ethernet"
+
+#~ msgid "Token ring network controller"
+#~ msgstr "Controllore di rete token ring"
+
+#~ msgid "FDDI network controller"
+#~ msgstr "Controllore di rete FDDI"
+
+#~ msgid "ATM network controller"
+#~ msgstr "Controllore di rete ATM"
+
+#~ msgid "ISDN controller"
+#~ msgstr "Controllore ISDN"
+
+#~ msgid "WorldFip controller"
+#~ msgstr "Controllore WorldFip"
+
+#~ msgid "PICMG controller"
+#~ msgstr "Controllore PICMG"
+
+#~ msgid "Infiniband controller"
+#~ msgstr "Controllore InfiniBand"
+
+#~ msgid "Fabric controller"
+#~ msgstr "Controllore Fabric"
+
+#~ msgid "Unknown network controller"
+#~ msgstr "Controllore di rete sconosciuto"
+
+#~ msgid "VGA compatible controller"
+#~ msgstr "Controllore compatibile con VGA"
+
+#~ msgid "XGA compatible controller"
+#~ msgstr "Controllore compatibile con XGA"
+
+#~ msgid "3D controller"
+#~ msgstr "Controllore 3D"
+
+#~ msgid "Unknown display controller"
+#~ msgstr "Controllore visivo sconosciuto"
+
+#~ msgid "Multimedia video controller"
+#~ msgstr "Controllore video multimediale"
+
+#~ msgid "Multimedia audio controller"
+#~ msgstr "Controllore audio multimediale"
+
+#~ msgid "Computer telephony device"
+#~ msgstr "Dispositivo di telefonia informatica"
+
+#~ msgid "Audio device"
+#~ msgstr "Dispositivo audio"
+
+#~ msgid "Unknown multimedia controller"
+#~ msgstr "Controllore multimediale sconosciuto"
+
+#~ msgid "RAM memory"
+#~ msgstr "Memoria RAM"
+
+#~ msgid "FLASH memory"
+#~ msgstr "Memoria FLASH"
+
+#~ msgid "Unknown memory controller"
+#~ msgstr "Controllore di memoria sconosciuto"
+
+# "Post" non è inteso come il latino "dopo", ma come l'inglese "posting".
+# Non ho trovato traduzioni, anche perché molti sono probabilmente incerti sul significato.
+#~ msgid "Host bridge"
+#~ msgstr "Ponte ospite"
+
+#~ msgid "ISA bridge"
+#~ msgstr "Ponte ISA"
+
+#~ msgid "EISA bridge"
+#~ msgstr "Ponte EISA"
+
+#~ msgid "MicroChannel bridge"
+#~ msgstr "Ponte MicroChannel"
+
+#~ msgid "PCI bridge"
+#~ msgstr "Ponte PCI"
+
+#~ msgid "PCMCIA bridge"
+#~ msgstr "Ponte PCMCIA"
+
+#~ msgid "NuBus bridge"
+#~ msgstr "Ponte NuBus"
+
+#~ msgid "CardBus bridge"
+#~ msgstr "Ponte CardBus"
+
+#~ msgid "RACEway bridge"
+#~ msgstr "Ponte RACEway"
+
+#~ msgid "Semi-transparent PCI-to-PCI bridge"
+#~ msgstr "Ponte tra PCI semitrasparente"
+
+#~ msgid "InfiniBand to PCI host bridge"
+#~ msgstr "Ponte ospite da InfiniBand a PCI"
+
+#~ msgid "Unknown bridge"
+#~ msgstr "Ponte sconosciuto"
+
+#~ msgid "Serial controller"
+#~ msgstr "Controllore seriale"
+
+#~ msgid "Parallel controller"
+#~ msgstr "Controllore parallelo"
+
+#~ msgid "Multiport serial controller"
+#~ msgstr "Controllore seriale multiporta"
+
+#~ msgid "Modem"
+#~ msgstr "Modem"
+
+#~ msgid "GPIB controller"
+#~ msgstr "Controllore GPIB"
+
+#~ msgid "Smart card controller"
+#~ msgstr "Controllore Smart card"
+
+#~ msgid "Unknown communication controller"
+#~ msgstr "Controllore di comunicazione sconosciuto"
+
+#~ msgid "PIC"
+#~ msgstr "PIC"
+
+#~ msgid "DMA controller"
+#~ msgstr "Controllore DMA"
+
+#~ msgid "Timer"
+#~ msgstr "Timer"
+
+#~ msgid "RTC"
+#~ msgstr "RTC"
+
+#~ msgid "PCI Hot-plug controller"
+#~ msgstr "Controllore hot-plug PCI"
+
+#~ msgid "SD Host controller"
+#~ msgstr "Controllore Host SD"
+
+#~ msgid "IOMMU"
+#~ msgstr "IOMMU"
+
+#~ msgid "Unknown system peripheral"
+#~ msgstr "Periferica di sistema sconosciuta"
+
+#~ msgid "Keyboard controller"
+#~ msgstr "Controllore della tastiera"
+
+#~ msgid "Digitizer Pen"
+#~ msgstr "Penna digitale"
+
+#~ msgid "Mouse controller"
+#~ msgstr "Controllore del mouse"
+
+#~ msgid "Scanner controller"
+#~ msgstr "Controllore dello scanner"
+
+#~ msgid "Gameport controller"
+#~ msgstr "Controllore della porta dei giochi"
+
+#~ msgid "Unknown input device controller"
+#~ msgstr "Controllore di dispositivo di ingresso sconosciuto"
+
+#~ msgid "Generic docking station"
+#~ msgstr "Base di aggancio generica"
+
+#~ msgid "Unknown docking station"
+#~ msgstr "Base di aggancio sconosciuta"
+
+#~ msgid "386"
+#~ msgstr "386"
+
+#~ msgid "486"
+#~ msgstr "486"
+
+#~ msgid "Pentium"
+#~ msgstr "Pentium"
+
+#~ msgid "Alpha"
+#~ msgstr "Alpha"
+
+#~ msgid "Power PC"
+#~ msgstr "Power PC"
+
+#~ msgid "MIPS"
+#~ msgstr "MIPS"
+
+#~ msgid "Co-processor"
+#~ msgstr "Coprocessore"
+
+#~ msgid "Unknown processor"
+#~ msgstr "Processore sconosciuto"
+
+#~ msgid "FireWire (IEEE 1394)"
+#~ msgstr "FireWire (IEEE 1394)"
+
+#~ msgid "ACCESS bus"
+#~ msgstr "Bus ACCESS"
+
+#~ msgid "SSA"
+#~ msgstr "SSA"
+
+#~ msgid "USB controller"
+#~ msgstr "Controllore USB"
+
+#~ msgid "Fibre channel"
+#~ msgstr "Fibre channel"
+
+#~ msgid "SMBus"
+#~ msgstr "SMBus"
+
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#~ msgid "IPMI interface"
+#~ msgstr "Interfaccia IPMI"
+
+#~ msgid "SERCOS interface"
+#~ msgstr "Interfaccia SERCOS"
+
+#~ msgid "CANbus"
+#~ msgstr "CANbus"
+
+#~ msgid "Unknown serial bus controller"
+#~ msgstr "Controllore di bus seriale sconosciuto"
+
+#~ msgid "IRDA controller"
+#~ msgstr "Controllore IRDA"
+
+#~ msgid "Consumer IR controller"
+#~ msgstr "Controllore Consumer IR"
+
+#~ msgid "RF controller"
+#~ msgstr "Controllore RF"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Broadband"
+#~ msgstr "Banda larga"
+
+#~ msgid "Ethernet (802.11a - 5 GHz)"
+#~ msgstr "Ethernet (802.11a - 5 GHz)"
+
+#~ msgid "Ethernet (802.11b - 2.4 GHz)"
+#~ msgstr "Ethernet (802.11b - 2.4 GHz)"
+
+#~ msgid "Unknown wireless controller"
+#~ msgstr "Controllore senza fili sconosciuto"
+
+#~ msgid "I2O"
+#~ msgstr "I2O"
+
+#~ msgid "Unknown intelligent controller"
+#~ msgstr "Controllore intelligente sconosciuto"
+
+#~ msgid "Satellite TV controller"
+#~ msgstr "Controllore della TV satellitare"
+
+#~ msgid "Satellite audio communication controller"
+#~ msgstr "Controllore di comunicazioni audio satellitari"
+
+#~ msgid "Satellite voice communication controller"
+#~ msgstr "Controllore di comunicazioni vocali satellitari"
+
+#~ msgid "Satellite data communication controller"
+#~ msgstr "Controllore di comunicazioni di dati satellitari"
+
+#~ msgid "Unknown satellite communications controller"
+#~ msgstr "Controllore di comunicazioni satellitari sconosciuto"
+
+#~ msgid "Network and computing encryption device"
+#~ msgstr "Dispositivo di cifratura di rete e calcolo"
+
+#~ msgid "Entertainment encryption device"
+#~ msgstr "Dispositivo di cifratura per l'intrattenimento"
+
+#~ msgid "Unknown encryption controller"
+#~ msgstr "Controllore di cifratura sconosciuto"
+
+#~ msgid "DPIO module"
+#~ msgstr "Modulo DPIO"
+
+#~ msgid "Performance counters"
+#~ msgstr "Contatori di prestazioni"
+
+#~ msgid "Communication synchronizer"
+#~ msgstr "Sincronizzatore di comunicazione"
+
+#~ msgid "Signal processing management"
+#~ msgstr "Gestione dell'elaborazione dei segnali"
+
+#~ msgid "Unknown signal processing controller"
+#~ msgstr "Controllore di gestione dei segnali sconosciuto"
+
+#~ msgid "Unknown processing accelerator"
+#~ msgstr "Acceleratore di elaborazione sconosciuto"
+
+#~ msgid "Unknown subdevice class"
+#~ msgstr "Classe di sottodispositivi sconosciuta"
+
+#~ msgid "ISA Compatibility mode-only controller"
+#~ msgstr "Controllore solo modalità compatibilità ISA"
+
+#~ msgid "PCI native mode-only controller"
+#~ msgstr "Controllore solo modalità nativa PCI"
+
+#~ msgid ""
+#~ "ISA Compatibility mode controller, supports both channels switched to PCI "
+#~ "native mode"
+#~ msgstr ""
+#~ "Controllore modalità compatibilità ISA, supporta entrambi i canali "
+#~ "attivati in modalità nativa PCI"
+
+#~ msgid ""
+#~ "PCI native mode controller, supports both channels switched to ISA "
+#~ "compatibility mode"
+#~ msgstr ""
+#~ "Controllore modalità nativa PCI, supporta entrambi i canali attivati in "
+#~ "modalità nativa ISA"
+
+#~ msgid "ISA Compatibility mode-only controller, supports bus mastering"
+#~ msgstr ""
+#~ "Controllore solo modalità compatibilità ISA, supporta il controllo del bus"
+
+#~ msgid "PCI native mode-only controller, supports bus mastering"
+#~ msgstr "Controllore solo modalità nativa PCI, supporta il controllo del bus"
+
+#~ msgid ""
+#~ "ISA Compatibility mode controller, supports both channels switched to PCI "
+#~ "native mode, supports bus mastering"
+#~ msgstr ""
+#~ "Controllore modalità compatibilità ISA, supporta entrambi i canali "
+#~ "attivati in modalità nativa PCI ed il controllo del bus"
+
+#~ msgid ""
+#~ "PCI native mode controller, supports both channels switched to ISA "
+#~ "compatibility mode, supports bus mastering"
+#~ msgstr ""
+#~ "Controllore modalità nativa PCI, supporta entrambi i canali attivati in "
+#~ "modalità nativa ISA ed il controllo del bus"
+
+#~ msgid "ADMA single stepping"
+#~ msgstr "Passo singolo ADMA"
+
+#~ msgid "ADMA continuous operation"
+#~ msgstr "Operazione continua ADMA"
+
+#~ msgid "Vendor specific"
+#~ msgstr "Specifico del fornitore"
+
+#~ msgid "AHCI 1.0"
+#~ msgstr "AHCI 1.0"
+
+#~ msgid "Serial Storage Bus"
+#~ msgstr "Serial Storage Bus"
+
+#~ msgid "NVMHCI"
+#~ msgstr "NVMHCI"
+
+#~ msgid "NVM Express"
+#~ msgstr "NVM Express"
+
+#~ msgid "VGA controller"
+#~ msgstr "Controllore VGA"
+
+#~ msgid "8514 controller"
+#~ msgstr "Controllore 8514"
+
+#~ msgid "Normal decode"
+#~ msgstr "Decodifica normale"
+
+#~ msgid "Subtractive decode"
+#~ msgstr "Decodifica sottrattiva"
+
+#~ msgid "Transparent mode"
+#~ msgstr "Modalità trasparente"
+
+#~ msgid "Endpoint mode"
+#~ msgstr "Modalità a punto finale"
+
+#~ msgid "Primary bus towards host CPU"
+#~ msgstr "Bus primario verso la CPU ospite"
+
+#~ msgid "Secondary bus towards host CPU"
+#~ msgstr "Bus secondario verso la CPU ospite"
+
+#~ msgid "8250"
+#~ msgstr "8250"
+
+#~ msgid "16450"
+#~ msgstr "16450"
+
+#~ msgid "16550"
+#~ msgstr "16550"
+
+#~ msgid "16650"
+#~ msgstr "16650"
+
+#~ msgid "16750"
+#~ msgstr "16750"
+
+#~ msgid "16850"
+#~ msgstr "16850"
+
+#~ msgid "16950"
+#~ msgstr "16950"
+
+#~ msgid "SPP"
+#~ msgstr "SPP"
+
+#~ msgid "BiDir"
+#~ msgstr "BiDir"
+
+#~ msgid "ECP"
+#~ msgstr "ECP"
+
+#~ msgid "IEEE1284"
+#~ msgstr "IEEE1284"
+
+#~ msgid "IEEE1284 Target"
+#~ msgstr "IEEE1284 destinazione"
+
+#~ msgid "Generic"
+#~ msgstr "Generico"
+
+#~ msgid "Hayes/16450"
+#~ msgstr "Hayes/16450"
+
+#~ msgid "Hayes/16550"
+#~ msgstr "Hayes/16550"
+
+#~ msgid "Hayes/16650"
+#~ msgstr "Hayes/16650"
+
+#~ msgid "Hayes/16750"
+#~ msgstr "Hayes/16750"
+
+#~ msgid "8259"
+#~ msgstr "8259"
+
+#~ msgid "ISA PIC"
+#~ msgstr "ISA PIC"
+
+#~ msgid "EISA PIC"
+#~ msgstr "EISA PIC"
+
+#~ msgid "IO-APIC"
+#~ msgstr "IO-APIC"
+
+#~ msgid "IO(X)-APIC"
+#~ msgstr "IO(X)-APIC"
+
+#~ msgid "8237"
+#~ msgstr "8237"
+
+#~ msgid "ISA DMA"
+#~ msgstr "ISA DMA"
+
+#~ msgid "EISA DMA"
+#~ msgstr "EISA DMA"
+
+#~ msgid "8254"
+#~ msgstr "8254"
+
+#~ msgid "ISA timer"
+#~ msgstr "Timer ISA"
+
+#~ msgid "EISA timers"
+#~ msgstr "Timer EISA"
+
+#~ msgid "HPET"
+#~ msgstr "HPET"
+
+#~ msgid "ISA RTC"
+#~ msgstr "ISA RTC"
+
+#~ msgid "Extended"
+#~ msgstr "Esteso"
+
+#~ msgid "OHCI"
+#~ msgstr "OHCI"
+
+#~ msgid "UHCI"
+#~ msgstr "UHCI"
+
+#~ msgid "EHCI"
+#~ msgstr "EHCI"
+
+#~ msgid "XHCI"
+#~ msgstr "XHCI"
+
+#~ msgid "Unspecified"
+#~ msgstr "Non specificato"
+
+#~ msgid "USB Device"
+#~ msgstr "Dispositivo USB"
+
+#~ msgid "SMIC"
+#~ msgstr "SMIC"
+
+#~ msgid "Keyboard controller style"
+#~ msgstr "Stile del controllore della tastiera"
+
+#~ msgid "Block transfer"
+#~ msgstr "Trasferimento in blocco"
+
+#~ msgid "Vital product data"
+#~ msgstr "Dati vitali del prodotto"
+
+#~ msgid "Slot identification"
+#~ msgstr "Identificazione dello slot"
+
+#~ msgid "CompactPCI hot swap"
+#~ msgstr "Cambio in corsa CompactPCI"
+
+#~ msgid "HyperTransport"
+#~ msgstr "HyperTransport"
+
+#~ msgid "Debug port"
+#~ msgstr "Porta di debug"
+
+#~ msgid "CompactPCI central resource control"
+#~ msgstr "Controllo centrale delle risorse CompactPCI"
+
+#~ msgid "PCI hot-plug"
+#~ msgstr "Hot-plug PCI"
+
+#~ msgid "AGP x8"
+#~ msgstr "AGP ×8"
+
+#~ msgid "Secure device"
+#~ msgstr "Dispositivo sicuro"
+
+#~ msgid "PCI express"
+#~ msgstr "PCI express"
+
+#~ msgid "MSI-X"
+#~ msgstr "MSI-X"
+
+#~ msgid "PCI Advanced Features"
+#~ msgstr "Funzionalità avanzate PCI"
+
+#~ msgid "Fast"
+#~ msgstr "Veloce"
+
+#~ msgid "Medium"
+#~ msgstr "Medio"
+
+#~ msgid "Slow"
+#~ msgstr "Lento"
+
+#~ msgid "32 bit"
+#~ msgstr "32 bit"
+
+#~ msgid "Below 1M"
+#~ msgstr "Sotto 1M"
+
+#~ msgid "64 bit"
+#~ msgstr "64 bit"
+
+#~ msgid "Standard"
+#~ msgstr "Standard"
+
+#~ msgid "CardBus"
+#~ msgstr "CardBus"
+
+#~ msgid "1X"
+#~ msgstr "1×"
+
+#~ msgid "2X"
+#~ msgstr "2×"
+
+#~ msgid "1X & 2X"
+#~ msgstr "1× e 2×"
+
+#~ msgid "4X"
+#~ msgstr "4×"
+
+#~ msgid "1X & 4X"
+#~ msgstr "1× e 4×"
+
+#~ msgid "2X & 4X"
+#~ msgstr "2× e 4×"
+
+#~ msgid "1X & 2X & 4X"
+#~ msgstr "1× e 2× e 4×"
+
+#~ msgid "8X"
+#~ msgstr "8×"
+
+#~ msgid "4X & 8X"
+#~ msgstr "4X e 8X"
+
+#~ msgid "4 ms"
+#~ msgstr "4 ms"
+
+#~ msgid "16 ms"
+#~ msgstr "16 ms"
+
+#~ msgid "64 ms"
+#~ msgstr "64 ms"
+
+#~ msgid "256 ms"
+#~ msgstr "256 ms"
+
+#~ msgid "Not needed"
+#~ msgstr "Non necessario"
+
+#~ msgid "0 (self powered)"
+#~ msgstr "0 (autonomo)"
+
+#~ msgid "55 mA"
+#~ msgstr "55 mA"
+
+#~ msgid "100 mA"
+#~ msgstr "100 mA"
+
+#~ msgid "160 mA"
+#~ msgstr "160 mA"
+
+#~ msgid "220 mA"
+#~ msgstr "220 mA"
+
+#~ msgid "270 mA"
+#~ msgstr "270 mA"
+
+#~ msgid "320 mA"
+#~ msgstr "320 mA"
+
+#~ msgid "375 mA"
+#~ msgstr "375 mA"
+
+#~ msgid "1 vector"
+#~ msgstr "1 vettore"
+
+#~ msgid "2 vectors"
+#~ msgstr "2 vettori"
+
+#~ msgid "4 vectors"
+#~ msgstr "4 vettori"
+
+#~ msgid "8 vectors"
+#~ msgstr "8 vettori"
+
+#~ msgid "16 vectors"
+#~ msgstr "16 vettori"
+
+#~ msgid "32 vectors"
+#~ msgstr "32 vettori"
+
+#~ msgid "Serial ATA direct port access"
+#~ msgstr "Accesso diretto alla porta ATA seriale"
+
+#~ msgid "PICMG 2.14 multi computing"
+#~ msgstr "Multicalcolo PICMG 2.14"
+
+#~ msgid "GPIB (IEEE 488.1/2) controller"
+#~ msgstr "Controllore GPIB (IEEE 488.1/2)"
+
+#~ msgid "Smart card"
+#~ msgstr "Smart card"
+
+#~ msgid "System peripheral"
+#~ msgstr "Periferica di sistema"
+
+#~ msgid "Management card"
+#~ msgstr "Scheda di gestione"
+
+#~ msgid "single DMA"
+#~ msgstr "DMA singolo"
+
+#~ msgid "chained DMA"
+#~ msgstr "DMA in serie"
+
+#~ msgid "VGA compatible"
+#~ msgstr "Compatibile con VGA"
+
+#~ msgid "8514 compatible"
+#~ msgstr "Compatibile con 8514"
+
+#~ msgid "KDE PCI Information Control Module"
+#~ msgstr "Modulo di controllo delle informazioni PCI per KDE"

@@ -1,0 +1,153 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Yasen Pramatarov <yasen@lindeas.com>, 2010.
+# Mincho Kondarev <mkondarev@yahoo.de>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmnic\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-14 00:46+0000\n"
+"PO-Revision-Date: 2022-05-21 07:07+0200\n"
+"Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
+"Language-Team: Bulgarian <dict@fsa-bg.org>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 22.04.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Ясен Праматаров"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "yasen@lindeas.com"
+
+#: networkmodel.cpp:159
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Point to Point"
+msgstr "Point-to-Point"
+
+#: networkmodel.cpp:166
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Broadcast"
+msgstr "Broadcast"
+
+#: networkmodel.cpp:173
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Multicast"
+msgstr "Multicast"
+
+#: networkmodel.cpp:180
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Loopback"
+msgstr "Loopback"
+
+#: nic.cpp:21
+#, kde-format
+msgid "kcm_nic"
+msgstr "kcm_nic"
+
+#: nic.cpp:22
+#, kde-format
+msgctxt "@title:window"
+msgid "Network Interfaces"
+msgstr "Мрежов интерфейс"
+
+#: nic.cpp:26
+#, kde-format
+msgctxt "@info"
+msgid "(c) 2001 - 2002 Alexander Neundorf"
+msgstr "(c) 2001 - 2002 Alexander Neundorf"
+
+#: nic.cpp:28
+#, kde-format
+msgctxt "@info:credit"
+msgid "Alexander Neundorf"
+msgstr "Alexander Neundorf"
+
+#: nic.cpp:28
+#, kde-format
+msgctxt "@info:credit"
+msgid "creator"
+msgstr "създател"
+
+#: nic.cpp:29
+#, kde-format
+msgctxt "@info:credit"
+msgid "Carl Schwan"
+msgstr "Carl Schwan"
+
+#: nic.cpp:29
+#, kde-format
+msgctxt "@info:credit"
+msgid "developer"
+msgstr "разработчик"
+
+#: package/contents/ui/main.qml:15
+#, kde-format
+msgid "Network Interfaces"
+msgstr "Мрежов интерфейс"
+
+#: package/contents/ui/main.qml:30
+#, kde-format
+msgctxt "@label"
+msgid "Name:"
+msgstr "Име:"
+
+#: package/contents/ui/main.qml:34
+#, kde-format
+msgctxt "@label"
+msgid "Address:"
+msgstr "Адрес:"
+
+#: package/contents/ui/main.qml:38
+#, kde-format
+msgctxt "@label"
+msgid "Network Mask:"
+msgstr "Мрежова маска:"
+
+#: package/contents/ui/main.qml:42
+#, kde-format
+msgctxt "@label"
+msgid "Type:"
+msgstr "Вид:"
+
+#: package/contents/ui/main.qml:46
+#, kde-format
+msgctxt "@label"
+msgid "Hardware Address:"
+msgstr "Хардуерният адрес:"
+
+#: package/contents/ui/main.qml:51
+#, kde-format
+msgctxt "@label"
+msgid "State:"
+msgstr "Състояние:"
+
+#: package/contents/ui/main.qml:59
+#, kde-format
+msgctxt "State of network card is connected"
+msgid "Up"
+msgstr "Включено"
+
+#: package/contents/ui/main.qml:60
+#, kde-format
+msgctxt "State of network card is disconnected"
+msgid "Down"
+msgstr "Изключено"
+
+#: package/contents/ui/main.qml:76
+#, kde-format
+msgctxt "@action:button"
+msgid "Refresh"
+msgstr "Обновяване"

@@ -1,0 +1,1013 @@
+# translation of kcm_pci.po to Icelandic
+# Copyright (C) 2008 This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sveinn í Felli <sveinki@nett.is>, 2008, 2009, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_pci\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
+"PO-Revision-Date: 2016-04-08 22:57+0000\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
+"Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
+"Language: is\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
+"\n"
+"\n"
+
+#, fuzzy, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Sveinn í Felli"
+
+#, fuzzy, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sv1@fellsnet.is"
+
+#: main.cpp:26
+#, fuzzy, kde-format
+msgctxt "@label kcm name"
+msgid "PCI"
+msgstr "PCI-X"
+
+#: main.cpp:27
+#, kde-format
+msgid "Harald Sitter"
+msgstr ""
+
+#: package/contents/ui/main.qml:14
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "Upplýsingar"
+
+#, fuzzy
+#~ msgid "kcm_pci"
+#~ msgstr "kcm_pci"
+
+#, fuzzy
+#~| msgid "Device"
+#~ msgid "PCI Devices"
+#~ msgstr "Tæki"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+
+#~ msgid "Nicolas Ternisien"
+#~ msgstr "Nicolas Ternisien"
+
+#~ msgid "Helge Deller"
+#~ msgstr "Helge Deller"
+
+#~ msgid "This list displays PCI information."
+#~ msgstr "Þessi listi sýnir PCI-upplýsingar."
+
+#~ msgid ""
+#~ "This display shows information about your computer's PCI slots and the "
+#~ "related connected devices."
+#~ msgstr ""
+#~ "Þessi gluggi birtir upplýsingar um PCI-raufar tölvunnar og þau tæki sem "
+#~ "þeim eru tengd."
+
+#~ msgid "Device Class"
+#~ msgstr "Tækjaflokkur"
+
+#~ msgid "Device Subclass"
+#~ msgstr "Undirflokkur tækis"
+
+#~ msgid "Device Programming Interface"
+#~ msgstr "Forritunarviðmót tækis"
+
+#~ msgid "Master IDE Device"
+#~ msgstr "Yfir- IDE tæki"
+
+#, fuzzy
+#~ msgid "Vendor"
+#~ msgstr "Framleiðandi"
+
+#~ msgid "Device"
+#~ msgstr "Tæki"
+
+#~ msgid "Subsystem"
+#~ msgstr "Undirkerfi"
+
+#~ msgid " - device:"
+#~ msgstr " - tæki:"
+
+#~ msgid "Interrupt"
+#~ msgstr "Ígrip"
+
+#~ msgid "IRQ"
+#~ msgstr "IRQ"
+
+#, fuzzy
+#~ msgid "Pin"
+#~ msgstr "Pin"
+
+#~ msgid "Control"
+#~ msgstr "Stýring"
+
+#, fuzzy
+#~ msgid "Parity checking"
+#~ msgstr "Pörunarprófun"
+
+#, fuzzy
+#~ msgid "System error"
+#~ msgstr "Kerfisvilla"
+
+#, fuzzy
+#~ msgid "Status"
+#~ msgstr "Staða"
+
+#, fuzzy
+#~ msgid "Interrupt status"
+#~ msgstr "Staða ígrips"
+
+#, fuzzy
+#~ msgid "Capability list"
+#~ msgstr "Listi yfir eiginleika"
+
+#, fuzzy
+#~ msgid "66 MHz PCI 2.1 bus"
+#~ msgstr "66 MHz PCI 2.1 bus"
+
+#, fuzzy
+#~ msgid "User-definable features"
+#~ msgstr "Eiginleikar skilgreinanlegir af notanda"
+
+#, fuzzy
+#~ msgid "Data parity error"
+#~ msgstr "Gagnapörunarvilla"
+
+#, fuzzy
+#~ msgid "Parity error"
+#~ msgstr "Pörunarvilla"
+
+#, fuzzy
+#~ msgid "Latency"
+#~ msgstr "Töf"
+
+#, fuzzy
+#~ msgid "MIN_GNT"
+#~ msgstr "MIN_GNT"
+
+#, fuzzy
+#~ msgid "MAX_LAT"
+#~ msgstr "MAX_LAT"
+
+#, fuzzy
+#~ msgid "Header"
+#~ msgstr "Haus"
+
+#, fuzzy
+#~ msgid "Type"
+#~ msgstr "Tegund"
+
+#, fuzzy
+#~ msgid "Build-in self test"
+#~ msgstr "Innbyggð eiginprófun (self test)"
+
+#, fuzzy
+#~ msgid "Size"
+#~ msgstr "Stærð"
+
+#, fuzzy
+#~ msgid "Space"
+#~ msgstr "Bil"
+
+#, fuzzy
+#~ msgid "I/O"
+#~ msgstr "I/O"
+
+#, fuzzy
+#~ msgid "Memory"
+#~ msgstr "Minni"
+
+#, fuzzy
+#~ msgid "Prefetchable"
+#~ msgstr "Forsækjanlegt"
+
+#, fuzzy
+#~ msgid "Address"
+#~ msgstr "Vistfang"
+
+#, fuzzy
+#~ msgctxt "unassigned address"
+#~ msgid "Unassigned"
+#~ msgstr "Ekki úthlutað"
+
+#, fuzzy
+#~ msgctxt "unassigned size"
+#~ msgid "Unassigned"
+#~ msgstr "Ekki úthlutað"
+
+#, fuzzy
+#~ msgid "Bus"
+#~ msgstr "Rás"
+
+#, fuzzy
+#~ msgid "32-bit"
+#~ msgstr "32-bita"
+
+#, fuzzy
+#~ msgid "Base"
+#~ msgstr "Grunnur"
+
+#, fuzzy
+#~ msgid "Limit"
+#~ msgstr "Takmörk"
+
+#, fuzzy
+#~ msgid "64-bit"
+#~ msgstr "64-bita"
+
+#, fuzzy
+#~ msgid "2e10 PCI clocks"
+#~ msgstr "2e10 PCI klukkur"
+
+#, fuzzy
+#~ msgid "2e15 PCI clocks"
+#~ msgstr "2e15 PCI klukkur"
+
+#, fuzzy
+#~ msgid "Memory windows"
+#~ msgstr "Minnisgluggar"
+
+#, fuzzy
+#~ msgid "Window %1"
+#~ msgstr "Gluggi %1"
+
+#, fuzzy
+#~ msgid "I/O windows"
+#~ msgstr "I/O gluggar"
+
+#, fuzzy
+#~ msgid "16-bit"
+#~ msgstr "16-bita"
+
+#, fuzzy
+#~ msgid "CardBus control"
+#~ msgstr "CardBus stýring"
+
+#, fuzzy
+#~ msgid "Interrupts for 16-bit cards"
+#~ msgstr "Ígrip fyrir 16-bita spjöld"
+
+#, fuzzy
+#~ msgid "Capabilities"
+#~ msgstr "Geta"
+
+#, fuzzy
+#~ msgid "Version"
+#~ msgstr "Útgáfa"
+
+#, fuzzy
+#~ msgid "D1 support"
+#~ msgstr "D1 stuðningur"
+
+#, fuzzy
+#~ msgid "D2 support"
+#~ msgstr "D2 stuðningur"
+
+#, fuzzy
+#~ msgid "Power management events"
+#~ msgstr "Atburðir orkustýringar"
+
+#, fuzzy
+#~ msgid "D0"
+#~ msgstr "D0"
+
+#, fuzzy
+#~ msgid "D1"
+#~ msgstr "D1"
+
+#, fuzzy
+#~ msgid "D2"
+#~ msgstr "D2"
+
+#, fuzzy
+#~ msgid "Power state"
+#~ msgstr "Orkustaða"
+
+#, fuzzy
+#~ msgid "Power management"
+#~ msgstr "Orkustýring"
+
+#, fuzzy
+#~ msgid "Power management status"
+#~ msgstr "Staða orkustýringar"
+
+#, fuzzy
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#, fuzzy
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#, fuzzy
+#~ msgid "Data"
+#~ msgstr "Gögn"
+
+#, fuzzy
+#~ msgid "Revision"
+#~ msgstr "Útgáfa"
+
+#, fuzzy
+#~ msgid "Rate"
+#~ msgstr "Tíðni"
+
+#, fuzzy
+#~ msgid "AGP 3.0 mode"
+#~ msgstr "AGP 3.0 hamur"
+
+#, fuzzy
+#~ msgid "64-bit GART"
+#~ msgstr "64-bit GART"
+
+#, fuzzy
+#~ msgid "Configuration"
+#~ msgstr "Stillingar"
+
+#, fuzzy
+#~ msgid "AGP"
+#~ msgstr "AGP"
+
+#, fuzzy
+#~ msgid "Transfer completed"
+#~ msgstr "Flutningi lokið"
+
+#, fuzzy
+#~ msgid "64-bit address"
+#~ msgstr "64-bita vistfang"
+
+#, fuzzy
+#~ msgid "Mask"
+#~ msgstr "Möskvi"
+
+#, fuzzy
+#~ msgid "Pending"
+#~ msgstr "Í bið"
+
+#, fuzzy
+#~ msgid "Length"
+#~ msgstr "Lengd"
+
+#, fuzzy
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "Ekkert"
+
+#, fuzzy
+#~ msgid "Next"
+#~ msgstr "Næsta"
+
+#, fuzzy
+#~ msgid "0x00 (None)"
+#~ msgstr "0x00 (ekkert)"
+
+#, fuzzy
+#~ msgid "Root only"
+#~ msgstr "Aðeins rót"
+
+#, fuzzy
+#~ msgid "Value"
+#~ msgstr "Gildi"
+
+#, fuzzy
+#~ msgctxt "state of PCI item"
+#~ msgid "Enabled"
+#~ msgstr "Virkt"
+
+#, fuzzy
+#~ msgctxt "state of PCI item"
+#~ msgid "Disabled"
+#~ msgstr "Óvirkt"
+
+#, fuzzy
+#~ msgctxt "state of PCI item"
+#~ msgid "Yes"
+#~ msgstr "Já"
+
+#, fuzzy
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "Ekkert"
+
+#, fuzzy
+#~ msgctxt "state of PCI item"
+#~ msgid "Unknown"
+#~ msgstr "Óþekkt"
+
+#, fuzzy
+#~ msgid "Unclassified device"
+#~ msgstr "Óflokkað tæki"
+
+#, fuzzy
+#~ msgid "Mass storage controller"
+#~ msgstr "Geymslumiðilsstýring"
+
+#, fuzzy
+#~ msgid "Bridge"
+#~ msgstr "Brú"
+
+#, fuzzy
+#~ msgid "Processor"
+#~ msgstr "Örgjörvi"
+
+#, fuzzy
+#~ msgid "Wireless controller"
+#~ msgstr "Þráðlaus netkort"
+
+#, fuzzy
+#~ msgid "Coprocessor"
+#~ msgstr "Örgjörvi"
+
+#, fuzzy
+#~ msgid "Unassigned class"
+#~ msgstr "Ekki úthlutað"
+
+#, fuzzy
+#~ msgid "Unknown device class"
+#~ msgstr "Undirflokkur tækis"
+
+#, fuzzy
+#~ msgid "IDE controller"
+#~ msgstr "IDE stýring"
+
+#, fuzzy
+#~ msgid "Floppy disk controller"
+#~ msgstr "Disklingadrifsstýring"
+
+#, fuzzy
+#~ msgid "SATA controller"
+#~ msgstr "DMA stýring"
+
+#, fuzzy
+#~ msgid "Serial Attached SCSI controller"
+#~ msgstr "Serial stýring"
+
+#, fuzzy
+#~ msgid "Non-Volatile memory controller"
+#~ msgstr "Stýring fyrir gervihnattasjónvarp"
+
+#, fuzzy
+#~ msgid "Ethernet controller"
+#~ msgstr "Ethernetkort"
+
+#, fuzzy
+#~ msgid "ISDN controller"
+#~ msgstr "ISDN netkort"
+
+#, fuzzy
+#~ msgid "PICMG controller"
+#~ msgstr "IDE stýring"
+
+#, fuzzy
+#~ msgid "Infiniband controller"
+#~ msgstr "IDE stýring"
+
+#, fuzzy
+#~ msgid "Fabric controller"
+#~ msgstr "Control"
+
+#, fuzzy
+#~ msgid "3D controller"
+#~ msgstr "Control"
+
+#, fuzzy
+#~ msgid "Audio device"
+#~ msgstr " - tæki:"
+
+#, fuzzy
+#~ msgid "RAM memory"
+#~ msgstr "Minni"
+
+#, fuzzy
+#~ msgid "FLASH memory"
+#~ msgstr "FLASH minni"
+
+#, fuzzy
+#~ msgid "Serial controller"
+#~ msgstr "Serial stýring"
+
+#, fuzzy
+#~ msgid "Parallel controller"
+#~ msgstr "Parallel stýring"
+
+#, fuzzy
+#~ msgid "Modem"
+#~ msgstr "Mótald"
+
+#, fuzzy
+#~ msgid "GPIB controller"
+#~ msgstr "USB stýring"
+
+#, fuzzy
+#~ msgid "Smart card controller"
+#~ msgstr "Skannastýring"
+
+#, fuzzy
+#~ msgid "PIC"
+#~ msgstr "PIC"
+
+#, fuzzy
+#~ msgid "DMA controller"
+#~ msgstr "DMA stýring"
+
+#, fuzzy
+#~ msgid "Timer"
+#~ msgstr "Klukka"
+
+#, fuzzy
+#~ msgid "RTC"
+#~ msgstr "RTC"
+
+#, fuzzy
+#~ msgid "SD Host controller"
+#~ msgstr "ISDN netkort"
+
+#, fuzzy
+#~ msgid "Mouse controller"
+#~ msgstr "Músarstýring"
+
+#, fuzzy
+#~ msgid "Scanner controller"
+#~ msgstr "Skannastýring"
+
+#, fuzzy
+#~ msgid "386"
+#~ msgstr "386"
+
+#, fuzzy
+#~ msgid "486"
+#~ msgstr "486"
+
+#, fuzzy
+#~ msgid "Pentium"
+#~ msgstr "Pentium"
+
+#, fuzzy
+#~ msgid "Alpha"
+#~ msgstr "Alfa"
+
+#, fuzzy
+#~ msgid "Power PC"
+#~ msgstr "Orkustaða"
+
+#, fuzzy
+#~ msgid "MIPS"
+#~ msgstr "MIPS"
+
+#, fuzzy
+#~ msgid "Unknown processor"
+#~ msgstr "Óþekktur örgjorvi"
+
+#, fuzzy
+#~ msgid "FireWire (IEEE 1394)"
+#~ msgstr "FireWire (IEEE 1394)"
+
+#, fuzzy
+#~ msgid "ACCESS bus"
+#~ msgstr "ACCESS bus"
+
+#, fuzzy
+#~ msgid "SSA"
+#~ msgstr "SSA"
+
+#, fuzzy
+#~ msgid "USB controller"
+#~ msgstr "USB stýring"
+
+#, fuzzy
+#~ msgid "Fibre channel"
+#~ msgstr "Ljósleiðararás"
+
+#, fuzzy
+#~ msgid "SMBus"
+#~ msgstr "Rás"
+
+#, fuzzy
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#, fuzzy
+#~ msgid "IPMI interface"
+#~ msgstr "IPMI spjald"
+
+#, fuzzy
+#~ msgid "SERCOS interface"
+#~ msgstr "SERCOS spjald"
+
+#, fuzzy
+#~ msgid "CANbus"
+#~ msgstr "CANbus"
+
+#, fuzzy
+#~ msgid "IRDA controller"
+#~ msgstr "IRDA stýring"
+
+#, fuzzy
+#~ msgid "RF controller"
+#~ msgstr "Control"
+
+#, fuzzy
+#~ msgid "Bluetooth"
+#~ msgstr "Blátönn"
+
+#, fuzzy
+#~ msgid "Broadband"
+#~ msgstr "Breiðband"
+
+#, fuzzy
+#~ msgid "Ethernet (802.11a - 5 GHz)"
+#~ msgstr "Ethernet (802.11a - 5 GHz)"
+
+#, fuzzy
+#~ msgid "Ethernet (802.11b - 2.4 GHz)"
+#~ msgstr "Ethernet (802.11b - 2.4 GHz)"
+
+#, fuzzy
+#~ msgid "Unknown wireless controller"
+#~ msgstr "Óþekkt þráðlaust netkort"
+
+#, fuzzy
+#~ msgid "I2O"
+#~ msgstr "I2O"
+
+#, fuzzy
+#~ msgid "Satellite TV controller"
+#~ msgstr "Stýring fyrir gervihnattasjónvarp"
+
+#, fuzzy
+#~ msgid "DPIO module"
+#~ msgstr "DPIO eining"
+
+#, fuzzy
+#~ msgid "Unknown processing accelerator"
+#~ msgstr "Óþekktur örgjorvi"
+
+#, fuzzy
+#~ msgid "PCI native mode-only controller"
+#~ msgstr "Parallel stýring"
+
+#, fuzzy
+#~ msgid "Vendor specific"
+#~ msgstr "Tiltekinn framleiðandi"
+
+#, fuzzy
+#~ msgid "NVM Express"
+#~ msgstr "PCI express"
+
+#, fuzzy
+#~ msgid "VGA controller"
+#~ msgstr "DMA stýring"
+
+#, fuzzy
+#~ msgid "8514 controller"
+#~ msgstr "Control"
+
+#, fuzzy
+#~ msgid "8250"
+#~ msgstr "8250"
+
+#, fuzzy
+#~ msgid "16450"
+#~ msgstr "16450"
+
+#, fuzzy
+#~ msgid "16550"
+#~ msgstr "16550"
+
+#, fuzzy
+#~ msgid "16650"
+#~ msgstr "16650"
+
+#, fuzzy
+#~ msgid "16750"
+#~ msgstr "16750"
+
+#, fuzzy
+#~ msgid "16850"
+#~ msgstr "16850"
+
+#, fuzzy
+#~ msgid "16950"
+#~ msgstr "16950"
+
+#, fuzzy
+#~ msgid "SPP"
+#~ msgstr "SPP"
+
+#, fuzzy
+#~ msgid "BiDir"
+#~ msgstr "BiDir"
+
+#, fuzzy
+#~ msgid "ECP"
+#~ msgstr "ECP"
+
+#, fuzzy
+#~ msgid "IEEE1284"
+#~ msgstr "IEEE1284"
+
+#, fuzzy
+#~ msgid "IEEE1284 Target"
+#~ msgstr "IEEE1284 úttak"
+
+#, fuzzy
+#~ msgid "Generic"
+#~ msgstr "Almenn"
+
+#, fuzzy
+#~ msgid "Hayes/16450"
+#~ msgstr "Hayes/16450"
+
+#, fuzzy
+#~ msgid "Hayes/16550"
+#~ msgstr "Hayes/16550"
+
+#, fuzzy
+#~ msgid "Hayes/16650"
+#~ msgstr "Hayes/16650"
+
+#, fuzzy
+#~ msgid "Hayes/16750"
+#~ msgstr "Hayes/16750"
+
+#, fuzzy
+#~ msgid "8259"
+#~ msgstr "8259"
+
+#, fuzzy
+#~ msgid "ISA PIC"
+#~ msgstr "ISA PIC"
+
+#, fuzzy
+#~ msgid "EISA PIC"
+#~ msgstr "EISA PIC"
+
+#, fuzzy
+#~ msgid "IO-APIC"
+#~ msgstr "IO-APIC"
+
+#, fuzzy
+#~ msgid "IO(X)-APIC"
+#~ msgstr "IO(X)-APIC"
+
+#, fuzzy
+#~ msgid "8237"
+#~ msgstr "8237"
+
+#, fuzzy
+#~ msgid "ISA DMA"
+#~ msgstr "ISA DMA"
+
+#, fuzzy
+#~ msgid "EISA DMA"
+#~ msgstr "EISA DMA"
+
+#, fuzzy
+#~ msgid "8254"
+#~ msgstr "8254"
+
+#, fuzzy
+#~ msgid "ISA RTC"
+#~ msgstr "ISA RTC"
+
+#, fuzzy
+#~ msgid "Extended"
+#~ msgstr "Útvíkkað"
+
+#, fuzzy
+#~ msgid "OHCI"
+#~ msgstr "OHCI"
+
+#, fuzzy
+#~ msgid "UHCI"
+#~ msgstr "UHCI"
+
+#, fuzzy
+#~ msgid "EHCI"
+#~ msgstr "EHCI"
+
+#, fuzzy
+#~ msgid "Unspecified"
+#~ msgstr "Óskilgreint"
+
+#, fuzzy
+#~ msgid "USB Device"
+#~ msgstr "Tæki"
+
+#, fuzzy
+#~ msgid "SMIC"
+#~ msgstr "SMIC"
+
+#, fuzzy
+#~ msgid "HyperTransport"
+#~ msgstr "HyperTransport"
+
+#, fuzzy
+#~ msgid "Debug port"
+#~ msgstr "Aflúsunargátt"
+
+#, fuzzy
+#~ msgid "PCI hot-plug"
+#~ msgstr "PCI hot-plug"
+
+#, fuzzy
+#~ msgid "AGP x8"
+#~ msgstr "AGP"
+
+#, fuzzy
+#~ msgid "Secure device"
+#~ msgstr " - tæki:"
+
+#, fuzzy
+#~ msgid "PCI express"
+#~ msgstr "PCI express"
+
+#, fuzzy
+#~ msgid "MSI-X"
+#~ msgstr "MSI-X"
+
+#, fuzzy
+#~ msgid "Fast"
+#~ msgstr "Hratt"
+
+#, fuzzy
+#~ msgid "Medium"
+#~ msgstr "Miðlungs"
+
+#, fuzzy
+#~ msgid "Slow"
+#~ msgstr "Hægt"
+
+#, fuzzy
+#~ msgid "32 bit"
+#~ msgstr "32-bita"
+
+#, fuzzy
+#~ msgid "Below 1M"
+#~ msgstr "Undir 1M"
+
+#, fuzzy
+#~ msgid "64 bit"
+#~ msgstr "64-bita"
+
+#, fuzzy
+#~ msgid "Standard"
+#~ msgstr "Staðlað"
+
+#, fuzzy
+#~ msgid "CardBus"
+#~ msgstr "Rás"
+
+#, fuzzy
+#~ msgid "1X"
+#~ msgstr "1X"
+
+#, fuzzy
+#~ msgid "2X"
+#~ msgstr "2X"
+
+#, fuzzy
+#~ msgid "1X & 2X"
+#~ msgstr "1X & 2X"
+
+#, fuzzy
+#~ msgid "4X"
+#~ msgstr "4X"
+
+#, fuzzy
+#~ msgid "1X & 4X"
+#~ msgstr "1X & 4X"
+
+#, fuzzy
+#~ msgid "2X & 4X"
+#~ msgstr "2X & 4X"
+
+#, fuzzy
+#~ msgid "1X & 2X & 4X"
+#~ msgstr "1X & 2X & 4X"
+
+#, fuzzy
+#~ msgid "8X"
+#~ msgstr "8X"
+
+#, fuzzy
+#~ msgid "4X & 8X"
+#~ msgstr "4X & 8X"
+
+#, fuzzy
+#~ msgid "4 ms"
+#~ msgstr "4 ms"
+
+#, fuzzy
+#~ msgid "16 ms"
+#~ msgstr "16 ms"
+
+#, fuzzy
+#~ msgid "64 ms"
+#~ msgstr "64 ms"
+
+#, fuzzy
+#~ msgid "256 ms"
+#~ msgstr "256 ms"
+
+#, fuzzy
+#~ msgid "Not needed"
+#~ msgstr "Ekki nauðsynlegt"
+
+#, fuzzy
+#~ msgid "0 (self powered)"
+#~ msgstr "0 (sjálfknúið)"
+
+#, fuzzy
+#~ msgid "55 mA"
+#~ msgstr "55 mA"
+
+#, fuzzy
+#~ msgid "100 mA"
+#~ msgstr "100 mA"
+
+#, fuzzy
+#~ msgid "160 mA"
+#~ msgstr "160 mA"
+
+#, fuzzy
+#~ msgid "220 mA"
+#~ msgstr "220 mA"
+
+#, fuzzy
+#~ msgid "270 mA"
+#~ msgstr "270 mA"
+
+#, fuzzy
+#~ msgid "320 mA"
+#~ msgstr "320 mA"
+
+#, fuzzy
+#~ msgid "375 mA"
+#~ msgstr "375 mA"
+
+#, fuzzy
+#~ msgid "1 vector"
+#~ msgstr "1 vigur"
+
+#, fuzzy
+#~ msgid "2 vectors"
+#~ msgstr "2 vigrar"
+
+#, fuzzy
+#~ msgid "4 vectors"
+#~ msgstr "4 vigrar"
+
+#, fuzzy
+#~ msgid "8 vectors"
+#~ msgstr "8 vigrar"
+
+#, fuzzy
+#~ msgid "16 vectors"
+#~ msgstr "16 vigrar"
+
+#, fuzzy
+#~ msgid "32 vectors"
+#~ msgstr "32 vigrar"
+
+#, fuzzy
+#~ msgid "GPIB (IEEE 488.1/2) controller"
+#~ msgstr "GPIB (IEEE 488.1/2) stýring"
+
+#, fuzzy
+#~ msgid "Smart card"
+#~ msgstr "Smartkort"
+
+#, fuzzy
+#~ msgid "System peripheral"
+#~ msgstr "Kerfisvilla"
+
+#, fuzzy
+#~ msgid "single DMA"
+#~ msgstr "einfalt DMA"
+
+#, fuzzy
+#~ msgid "chained DMA"
+#~ msgstr "raðtengt DMA"
+
+#, fuzzy
+#~ msgid "VGA compatible"
+#~ msgstr "VGA samhæft"
+
+#, fuzzy
+#~ msgid "8514 compatible"
+#~ msgstr "8514 samhæft"
+
+#~ msgid "KDE PCI Information Control Module"
+#~ msgstr "Stjórneining KDE PCI-upplýsinga"

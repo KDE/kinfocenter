@@ -1,0 +1,815 @@
+# translation of kcm_pci.po to Telugu
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Krishna Babu K <kkrothap@redhat.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_pci\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
+"PO-Revision-Date: 2009-01-16 22:16+0530\n"
+"Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
+"Language-Team: Telugu <en@li.org>\n"
+"Language: te\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "కృష్ణబాబు కె , విజయ్ కిరణ్ కముజు"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "k.meetme@gmail.com,infyquest@gmail.com"
+
+#: main.cpp:26
+#, kde-format
+msgctxt "@label kcm name"
+msgid "PCI"
+msgstr ""
+
+#: main.cpp:27
+#, kde-format
+msgid "Harald Sitter"
+msgstr ""
+
+#: package/contents/ui/main.qml:14
+#, fuzzy
+#| msgid "Information"
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "సమాచారం"
+
+#~ msgid "kcm_pci"
+#~ msgstr "kcm_pci"
+
+#, fuzzy
+#~| msgid "Device"
+#~ msgid "PCI Devices"
+#~ msgstr "పరికరం"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr "(c) 2008 నికోలస్ టెర్నిసియన్(c) 1998 - 2002 హెల్గె డెల్లర్"
+
+#~ msgid "Nicolas Ternisien"
+#~ msgstr "నికొలాస్ టెర్నిసియన్"
+
+#~ msgid "Helge Deller"
+#~ msgstr "హెల్గె డెల్లర్"
+
+#~ msgid "This list displays PCI information."
+#~ msgstr "ఈ జాబితా PCI సమాచారమును ప్రదర్శిస్తుంది."
+
+#~ msgid ""
+#~ "This display shows information about your computer's PCI slots and the "
+#~ "related connected devices."
+#~ msgstr ""
+#~ "ఈ ప్రదర్శన మీ కంప్యూటర్ యొక్క PCI స్లాట్స్ మరియు సంభందిత అనుసంధానిత పరికరముల గురించిన "
+#~ "సమాచారాన్ని చూపుతుంది."
+
+#~ msgid "Device Class"
+#~ msgstr "పరికరము క్లాస్"
+
+#~ msgid "Device Subclass"
+#~ msgstr "పరికరము సబ్‌క్లాస్"
+
+#~ msgid "Device Programming Interface"
+#~ msgstr "పరికరము ప్రోగ్రామింగ్ ఇంటర్‌ఫేస్"
+
+#~ msgid "Master IDE Device"
+#~ msgstr "మాస్టర్ IDE పరికరము"
+
+#~ msgid "Secondary programmable indicator"
+#~ msgstr "ద్వితీయ ప్రోగ్రామబుల్ సూచకి"
+
+#~ msgid "Secondary operating mode"
+#~ msgstr "ద్వితీయ ఆపరేటింగ్ రీతి"
+
+#~ msgid "Primary programmable indicator"
+#~ msgstr "ప్రాధమిక ప్రోగ్రామబుల్ సూచకి"
+
+#~ msgid "Primary operating mode"
+#~ msgstr "ప్రాధమిక ఆపరేటింగ్ రీతి"
+
+#~ msgid "Vendor"
+#~ msgstr "అమ్మకందారి (వెండార్)"
+
+#~ msgid "Device"
+#~ msgstr "పరికరం"
+
+#~ msgid "Subsystem"
+#~ msgstr "ఉపసిస్టమ్"
+
+#~ msgid " - device:"
+#~ msgstr " - పరికరము:"
+
+#~ msgid "Interrupt"
+#~ msgstr "ఇంటరప్ట్"
+
+#~ msgid "IRQ"
+#~ msgstr "ఐ ఆర్ క్యూ"
+
+#~ msgid "Pin"
+#~ msgstr "పిన్"
+
+#~ msgid "Control"
+#~ msgstr "నియంత్రణ"
+
+#~ msgid "Response in I/O space"
+#~ msgstr "I/P స్పేస్ నందు స్పందన"
+
+#~ msgid "Response in memory space"
+#~ msgstr "మెమొరీ స్పేస్‌నందు స్పందన"
+
+#~ msgid "Bus mastering"
+#~ msgstr "బస్ మాస్టరింగ్"
+
+#~ msgid "Response to special cycles"
+#~ msgstr "ప్రత్యేక సైకిల్స్‌కు స్పందన"
+
+#~ msgid "Palette snooping"
+#~ msgstr "పాలెట్ స్నూపింగ్"
+
+#~ msgid "Parity checking"
+#~ msgstr "పారిటి చెకింగ్"
+
+#~ msgid "Address/data stepping"
+#~ msgstr "చిరునామా/డాటా స్టెప్పింగ్"
+
+#~ msgid "System error"
+#~ msgstr "సిస్టమ్ దోషము"
+
+#~ msgid "Back-to-back writes"
+#~ msgstr "బ్యాక్-టు-బ్యాక్ వ్రైట్స్"
+
+#~ msgid "Status"
+#~ msgstr "స్థితి"
+
+#~ msgid "Interrupt status"
+#~ msgstr "ఆటంకము స్థితి"
+
+#~ msgid "Capability list"
+#~ msgstr "కాపబిలిటి జాబితా"
+
+#~ msgid "66 MHz PCI 2.1 bus"
+#~ msgstr "66 MHz PCI 2.1 bus"
+
+#~ msgid "User-definable features"
+#~ msgstr "వినియోగదారి-నిర్విచించదగు సౌలభ్యములు"
+
+#~ msgid "Accept fast back-to-back"
+#~ msgstr "ఫాస్ట్ బ్యాక్-టు-బ్యాక్‌ను ఆమోదించుము"
+
+#~ msgid "Data parity error"
+#~ msgstr "డాటా పారిటి దోషము"
+
+#~ msgid "Device selection timing"
+#~ msgstr "పరికరము యెంపిక టైమింగ్"
+
+#~ msgid "Signaled target abort"
+#~ msgstr "సంకేతించిన లక్ష్యపు ఎబార్ట్"
+
+#~ msgid "Received target abort"
+#~ msgstr "స్వీకరించిన లక్ష్యపు ఎబార్ట్"
+
+#~ msgid "Received master abort"
+#~ msgstr "స్వీకరించిన మాస్టర్ ఎబార్ట్"
+
+#~ msgid "Signaled system error"
+#~ msgstr "సంకేతించిన సిస్టమ్ దోషము"
+
+#~ msgid "Parity error"
+#~ msgstr "పారిటి దోషము"
+
+#~ msgid "Latency"
+#~ msgstr "లేటెన్సీ"
+
+#~ msgid "MIN_GNT"
+#~ msgstr "MIN_GNT"
+
+#~ msgid "No major requirements (0x00)"
+#~ msgstr "మేజర్ అవసరములు లేవు (0x00)"
+
+#~ msgid "MAX_LAT"
+#~ msgstr "MAX_LAT"
+
+#~ msgid "Header"
+#~ msgstr "హెడర్"
+
+#~ msgid "Type"
+#~ msgstr "రకము"
+
+#~ msgid "Multifunctional"
+#~ msgstr "మల్టీఫంక్షనల్"
+
+#~ msgid "Build-in self test"
+#~ msgstr "బుల్ట్-ఇన్ సెల్ఫ్ పరీక్ష"
+
+#~ msgid "BIST Capable"
+#~ msgstr "BIST సామర్ధ్యంగల"
+
+#~ msgid "BIST Start"
+#~ msgstr "BIST ప్రారంభము"
+
+#~ msgid "Completion code"
+#~ msgstr "ముగింపు కోడ్"
+
+#~ msgid "Size"
+#~ msgstr "పరిమాణము"
+
+#~ msgid "Address mappings"
+#~ msgstr "చిరునామా మాపింగ్సు"
+
+#~ msgid "Mapping %1"
+#~ msgstr "మాపింగ్ %1"
+
+#~ msgid "Space"
+#~ msgstr "స్పేస్"
+
+#~ msgid "I/O"
+#~ msgstr "I/O"
+
+#~ msgid "Memory"
+#~ msgstr "మెమొరి"
+
+#~ msgid "Prefetchable"
+#~ msgstr "ముందుగాఫెచ్‌చేయగల"
+
+#~ msgid "Address"
+#~ msgstr "చిరునామా"
+
+#, fuzzy
+#~| msgid "Unassigned"
+#~ msgctxt "unassigned address"
+#~ msgid "Unassigned"
+#~ msgstr "అప్పగించని"
+
+#, fuzzy
+#~| msgid "Unassigned"
+#~ msgctxt "unassigned size"
+#~ msgid "Unassigned"
+#~ msgstr "అప్పగించని"
+
+#~ msgid "Bus"
+#~ msgstr "బస్"
+
+#~ msgid "Primary bus number"
+#~ msgstr "ప్రాధమిక బస్ సంఖ్య"
+
+#~ msgid "Secondary bus number"
+#~ msgstr "రెండవ బస్ సంఖ్య"
+
+#~ msgid "Subordinate bus number"
+#~ msgstr "సబ్‌రొటీన్ బస్ సంఖ్య"
+
+#~ msgid "Secondary latency timer"
+#~ msgstr "రెండవ లాటెన్సి టైమర్"
+
+#~ msgid "CardBus number"
+#~ msgstr "కార్డ్‌బస్ సంఖ్య"
+
+#~ msgid "CardBus latency timer"
+#~ msgstr "కార్డ్‌బస్ లేటెన్సి టైమర్"
+
+#~ msgid "Secondary status"
+#~ msgstr "రెండవ స్థితి"
+
+#~ msgid "I/O behind bridge"
+#~ msgstr "I/O బిహైండ్ బ్రిడ్జ్"
+
+#~ msgid "32-bit"
+#~ msgstr "32-bit"
+
+#~ msgid "Base"
+#~ msgstr "బేస్"
+
+#~ msgid "Limit"
+#~ msgstr "పరిమితి"
+
+#~ msgid "Memory behind bridge"
+#~ msgstr "మెమొరి బిహైండ్ బ్రిడ్జ్"
+
+#~ msgid "Prefetchable memory behind bridge"
+#~ msgstr "బ్రిడ్జ్ వెనుక ముందుగాఫెచ్‌చేయగలిగిన మెమొరి"
+
+#~ msgid "64-bit"
+#~ msgstr "64-bit"
+
+#~ msgid "Bridge control"
+#~ msgstr "బ్రిడ్జ్ నియంత్రణ"
+
+#~ msgid "Secondary parity checking"
+#~ msgstr "రెండవ పారిటి పరిశీలన"
+
+#~ msgid "Secondary system error"
+#~ msgstr "రెండవ సిస్టమ్ దోషము"
+
+#~ msgid "ISA ports forwarding"
+#~ msgstr "ISA పోర్ట్స్ ఫార్వార్డింగ్"
+
+#~ msgid "VGA forwarding"
+#~ msgstr "VGA ఫార్వార్డింగ్"
+
+#~ msgid "Master abort"
+#~ msgstr "మాస్టర్ ఎబార్ట్"
+
+#~ msgid "Secondary bus reset"
+#~ msgstr "రెండవ బస్ తిరిగివుంచుము"
+
+#~ msgid "Secondary back-to-back writes"
+#~ msgstr "రెండవ బ్యాక్-టు-బ్యాక్ వ్రైట్స్"
+
+#~ msgid "Primary discard timer counts"
+#~ msgstr "ప్రాధమిక నిరాకరించు టైమర్ కౌంట్స్"
+
+#~ msgid "2e10 PCI clocks"
+#~ msgstr "2e10 PCI clocks"
+
+#~ msgid "2e15 PCI clocks"
+#~ msgstr "2e15 PCI clocks"
+
+#~ msgid "Secondary discard timer counts"
+#~ msgstr "రెండవ నిరాకరించు టైమర్ కౌంట్స్"
+
+#~ msgid "Discard timer error"
+#~ msgstr "నిరాకరించు టైమర్ దోషము"
+
+#~ msgid "Discard timer system error"
+#~ msgstr "నిరాకరించు టైమర్ సిస్టమ్ దోషము"
+
+#~ msgid "Expansion ROM"
+#~ msgstr "ఎక్స్‌పాన్షన్ ROM"
+
+#~ msgid "Memory windows"
+#~ msgstr "మెమొరీ విండోలు"
+
+#~ msgid "Window %1"
+#~ msgstr "విండో %1"
+
+#~ msgid "I/O windows"
+#~ msgstr "I/O విండోలు"
+
+#~ msgid "16-bit"
+#~ msgstr "16-bit"
+
+#~ msgid "16-bit legacy interface ports"
+#~ msgstr "16-bit లెగసి ఇంటర్‌ఫేస్ పోర్ట్స్"
+
+#~ msgid "CardBus control"
+#~ msgstr "కార్డ్‌బస్ నియంత్రణ"
+
+#~ msgid "Interrupts for 16-bit cards"
+#~ msgstr "16-bit కార్డ్స్ కొరకు ఆటంకములు"
+
+#~ msgid "Window 0 prefetchable memory"
+#~ msgstr "విండో 0 ముందుగాఫెచ్‌చేయగలిగిన మెమొరీ"
+
+#~ msgid "Window 1 prefetchable memory"
+#~ msgstr "విండో 1 ముందుగాఫేచ్‌చేయగలిగిన మెమొరీ"
+
+#~ msgid "Post writes"
+#~ msgstr "పోస్ట్ వ్రైట్స్"
+
+#~ msgid "Raw PCI config space"
+#~ msgstr "ముడి PCI ఆకృతీకరణ జాగా"
+
+#~ msgid "Capabilities"
+#~ msgstr "సామర్ధ్యములు"
+
+#~ msgid "Version"
+#~ msgstr "వర్షన్"
+
+#~ msgid "Clock required for PME generation"
+#~ msgstr "PME వుద్భావనకు గడియారం అవసరము"
+
+#~ msgid "Device-specific initialization required"
+#~ msgstr "పరికరము-ప్రత్యేక సిద్దీకరణ అవసరము"
+
+#~ msgid "Maximum auxiliary current required in D3 cold"
+#~ msgstr "D3 కొల్డ్ నందు గరిష్ట ఆక్సిలరీ కరెంట్ అవసరము"
+
+#~ msgid "D1 support"
+#~ msgstr "D1 మద్దతు"
+
+#~ msgid "D2 support"
+#~ msgstr "D2 మద్దతు"
+
+#~ msgid "Power management events"
+#~ msgstr "పవర్ నిర్వహణా ఘటనలు"
+
+#~ msgid "D0"
+#~ msgstr "D0"
+
+#~ msgid "D1"
+#~ msgstr "D1"
+
+#~ msgid "D2"
+#~ msgstr "D2"
+
+#~ msgid "D3 hot"
+#~ msgstr "D3 హాట్"
+
+#~ msgid "D3 cold"
+#~ msgstr "D3 కోల్డ్"
+
+#~ msgid "Power state"
+#~ msgstr "పవర్ స్థితి"
+
+#~ msgid "Power management"
+#~ msgstr "పవర్ నిర్వహణ"
+
+#~ msgid "Data select"
+#~ msgstr "డాటా ఎంపిక"
+
+#~ msgid "Data scale"
+#~ msgstr "డాటా స్కేల్"
+
+#~ msgid "Power management status"
+#~ msgstr "పవర్ నిర్వహణ స్థితి"
+
+#~ msgid "Bridge status"
+#~ msgstr "బ్రిడ్జ్ స్థితి"
+
+#~ msgid "Secondary bus state in D3 hot"
+#~ msgstr "D3 హాట్‌నందు ద్వితీయ బస్ స్థితి"
+
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgid "Secondary bus power & clock control"
+#~ msgstr "రెండవ బస్ పవర్ & గడియార నియంత్రణ"
+
+#~ msgid "Data"
+#~ msgstr "డాటా"
+
+#~ msgid "Revision"
+#~ msgstr "రివిజన్"
+
+#~ msgid "Rate"
+#~ msgstr "రేట్"
+
+#~ msgid "AGP 3.0 mode"
+#~ msgstr "AGP 3.0 రీతి"
+
+#~ msgid "Fast Writes"
+#~ msgstr "ఫాస్ట్ వ్రైట్స్"
+
+#~ msgid "Address over 4 GiB"
+#~ msgstr "4GiB పై చిరునామా"
+
+#~ msgid "Translation of host processor access"
+#~ msgstr "హోస్ట్ ప్రోసెసర్ యాక్సెస్ యొక్క అనువాదము"
+
+#~ msgid "64-bit GART"
+#~ msgstr "64-bit GART"
+
+#~ msgid "Cache Coherency"
+#~ msgstr "క్యాచి కొహెరెన్సి"
+
+#~ msgid "Side-band addressing"
+#~ msgstr "సైడ్-బాండ్ ఎడ్రెస్సింగ్"
+
+#~ msgid "Calibrating cycle"
+#~ msgstr "కాలిబ్రేటింగ్ సైకిల్"
+
+#~ msgid "Optimum asynchronous request size"
+#~ msgstr "ఆప్టిమమ్ ఎసింక్రనస్ అభ్యర్ధన పరిమాణము"
+
+#~ msgid "Isochronous transactions"
+#~ msgstr "ఐసోక్రోనస్ వ్యవహారములు"
+
+#~ msgid "Maximum number of AGP command"
+#~ msgstr "AGP ఆదేశము యొక్క గరిష్ట సంఖ్య"
+
+#~ msgid "Configuration"
+#~ msgstr "ఆకృతీకరణ"
+
+#~ msgid "AGP"
+#~ msgstr "AGP"
+
+#~ msgid "Data address"
+#~ msgstr "డాటా చిరునామా"
+
+#~ msgid "Transfer completed"
+#~ msgstr "బదిలీకరణ పూర్తైనది"
+
+#~ msgid "Message control"
+#~ msgstr "సందేశ నియంత్రణ"
+
+#~ msgid "Message signaled interrupts"
+#~ msgstr "సందేశం సంకేతిత ఆటంకములు"
+
+#~ msgid "Multiple message capable"
+#~ msgstr "బహుళ సందేశ సామర్థ్యంగల"
+
+#~ msgid "Multiple message enable"
+#~ msgstr "బహుళ సందేశము చేతనమైవున్న"
+
+#~ msgid "64-bit address"
+#~ msgstr "64-bit చిరునామా"
+
+#~ msgid "Per vector masking"
+#~ msgstr "ప్రతి వెక్టార్ మాస్కింగ్"
+
+#~ msgid "Mask"
+#~ msgstr "మాస్క్"
+
+#~ msgid "Pending"
+#~ msgstr "వాయిదావున్న"
+
+#~ msgid "Length"
+#~ msgstr "పొడవు"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "ఏదీకాదు"
+
+#~ msgid "Next"
+#~ msgstr "తరువాత"
+
+#~ msgid "0x00 (None)"
+#~ msgstr "0x00 (ఏదీకాదు)"
+
+#~ msgid "Root only"
+#~ msgstr "Root మాత్రమే"
+
+#~ msgid "Value"
+#~ msgstr "విలువ"
+
+#~ msgid "Cache line size"
+#~ msgstr "క్యాచీ గీత పరిమాణము"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "ఏదీకాదు"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "Mass storage controller"
+#~ msgstr "సందేశ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "Display controller"
+#~ msgstr "సందేశ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "Multimedia controller"
+#~ msgstr "సందేశ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "Memory controller"
+#~ msgstr "సందేశ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Bridge status"
+#~ msgid "Bridge"
+#~ msgstr "బ్రిడ్జ్ స్థితి"
+
+#, fuzzy
+#~| msgid "CardBus control"
+#~ msgid "Serial bus controller"
+#~ msgstr "కార్డ్‌బస్ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "Wireless controller"
+#~ msgstr "సందేశ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Bridge control"
+#~ msgid "Intelligent controller"
+#~ msgstr "బ్రిడ్జ్ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Unassigned"
+#~ msgid "Unassigned class"
+#~ msgstr "అప్పగించని"
+
+#, fuzzy
+#~| msgid "Device Subclass"
+#~ msgid "Unknown device class"
+#~ msgstr "పరికరము సబ్‌క్లాస్"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "SCSI storage controller"
+#~ msgstr "సందేశ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "CardBus control"
+#~ msgid "IPI bus controller"
+#~ msgstr "కార్డ్‌బస్ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "SATA controller"
+#~ msgstr "సందేశ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Bridge control"
+#~ msgid "Serial Attached SCSI controller"
+#~ msgstr "బ్రిడ్జ్ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "Non-Volatile memory controller"
+#~ msgstr "సందేశ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Bridge control"
+#~ msgid "Ethernet controller"
+#~ msgstr "బ్రిడ్జ్ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Bridge control"
+#~ msgid "WorldFip controller"
+#~ msgstr "బ్రిడ్జ్ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "PICMG controller"
+#~ msgstr "సందేశ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "CardBus control"
+#~ msgid "Infiniband controller"
+#~ msgstr "కార్డ్‌బస్ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Control"
+#~ msgid "Fabric controller"
+#~ msgstr "నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Control"
+#~ msgid "3D controller"
+#~ msgstr "నియంత్రణ"
+
+#, fuzzy
+#~| msgid " - device:"
+#~ msgid "Audio device"
+#~ msgstr " - పరికరము:"
+
+#, fuzzy
+#~| msgid "Memory"
+#~ msgid "RAM memory"
+#~ msgstr "మెమొరి"
+
+#, fuzzy
+#~| msgid "Post writes"
+#~ msgid "Host bridge"
+#~ msgstr "పోస్ట్ వ్రైట్స్"
+
+#, fuzzy
+#~| msgid "CardBus number"
+#~ msgid "CardBus bridge"
+#~ msgstr "కార్డ్‌బస్ సంఖ్య"
+
+#, fuzzy
+#~| msgid "Bridge control"
+#~ msgid "Serial controller"
+#~ msgstr "బ్రిడ్జ్ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Bridge control"
+#~ msgid "Parallel controller"
+#~ msgstr "బ్రిడ్జ్ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Bridge control"
+#~ msgid "GPIB controller"
+#~ msgstr "బ్రిడ్జ్ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "CardBus control"
+#~ msgid "Smart card controller"
+#~ msgstr "కార్డ్‌బస్ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "DMA controller"
+#~ msgstr "సందేశ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Control"
+#~ msgid "SD Host controller"
+#~ msgstr "నియంత్రణ"
+
+#, fuzzy
+#~| msgid "CardBus control"
+#~ msgid "Keyboard controller"
+#~ msgstr "కార్డ్‌బస్ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "Mouse controller"
+#~ msgstr "సందేశ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "CardBus control"
+#~ msgid "Scanner controller"
+#~ msgstr "కార్డ్‌బస్ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Power state"
+#~ msgid "Power PC"
+#~ msgstr "పవర్ స్థితి"
+
+#, fuzzy
+#~| msgid "Bridge control"
+#~ msgid "USB controller"
+#~ msgstr "బ్రిడ్జ్ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Bus"
+#~ msgid "SMBus"
+#~ msgstr "బస్"
+
+#, fuzzy
+#~| msgid "Control"
+#~ msgid "RF controller"
+#~ msgstr "నియంత్రణ"
+
+#, fuzzy
+#~| msgid "I/O"
+#~ msgid "I2O"
+#~ msgstr "I/O"
+
+#, fuzzy
+#~| msgid "Bridge control"
+#~ msgid "PCI native mode-only controller"
+#~ msgstr "బ్రిడ్జ్ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "VGA controller"
+#~ msgstr "సందేశ నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Control"
+#~ msgid "8514 controller"
+#~ msgstr "నియంత్రణ"
+
+#, fuzzy
+#~| msgid "Secondary bus reset"
+#~ msgid "Secondary bus towards host CPU"
+#~ msgstr "రెండవ బస్ తిరిగివుంచుము"
+
+#, fuzzy
+#~| msgid "Device"
+#~ msgid "USB Device"
+#~ msgstr "పరికరం"
+
+#, fuzzy
+#~| msgid "D1 support"
+#~ msgid "Debug port"
+#~ msgstr "D1 మద్దతు"
+
+#, fuzzy
+#~| msgid "AGP"
+#~ msgid "AGP x8"
+#~ msgstr "AGP"
+
+#, fuzzy
+#~| msgid " - device:"
+#~ msgid "Secure device"
+#~ msgstr " - పరికరము:"
+
+#, fuzzy
+#~| msgid "32-bit"
+#~ msgid "32 bit"
+#~ msgstr "32-bit"
+
+#, fuzzy
+#~| msgid "64-bit"
+#~ msgid "64 bit"
+#~ msgstr "64-bit"
+
+#, fuzzy
+#~| msgid "CardBus number"
+#~ msgid "CardBus"
+#~ msgstr "కార్డ్‌బస్ సంఖ్య"
+
+#, fuzzy
+#~| msgid "System error"
+#~ msgid "System peripheral"
+#~ msgstr "సిస్టమ్ దోషము"
+
+#~ msgid "KDE PCI Information Control Module"
+#~ msgstr "KDE PCI సమాచార నియంత్రణ మాడ్యూల్"

@@ -1,0 +1,1091 @@
+# Diego Iastrubni <elcuco@kde.org>, 2009.
+# Elkana Bardugo <ttv200@gmail.com>, 2016.
+# Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_pci\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
+"PO-Revision-Date: 2017-05-16 06:52-0400\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Hebrew\n"
+"X-Poedit-Country: ISRAEL\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Zanata 3.9.6\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ירון שהרבני, אלקנה ברדוגו"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sh.yaron@gmail.com,ttv200@gmail.com"
+
+#: main.cpp:26
+#, fuzzy, kde-format
+#| msgid "PCI-X"
+msgctxt "@label kcm name"
+msgid "PCI"
+msgstr "PCI-X"
+
+#: main.cpp:27
+#, kde-format
+msgid "Harald Sitter"
+msgstr ""
+
+#: package/contents/ui/main.qml:14
+#, fuzzy
+#| msgid "Information"
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "נתונים"
+
+#~ msgid "kcm_pci"
+#~ msgstr "kcm_pci"
+
+#~ msgid "PCI Devices"
+#~ msgstr "התקני PCI"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+
+#~ msgid "Nicolas Ternisien"
+#~ msgstr "Nicolas Ternisien"
+
+#~ msgid "Helge Deller"
+#~ msgstr "Helge Deller"
+
+#~ msgid "This list displays PCI information."
+#~ msgstr "רשימה זו מציגה את נתוני ה־PCI."
+
+#~ msgid ""
+#~ "This display shows information about your computer's PCI slots and the "
+#~ "related connected devices."
+#~ msgstr ""
+#~ "תצוגה זו מציגה נתונים אודות חריצי ה־PCI במחשב שלך ואת ההתקנים המחוברים "
+#~ "אליהם."
+
+#~ msgid "Device Class"
+#~ msgstr "מחלקת ההתקן"
+
+#~ msgid "Device Subclass"
+#~ msgstr "תת־מחלקת ההתקן"
+
+#~ msgid "Device Programming Interface"
+#~ msgstr "מנשק התכנות של ההתקן"
+
+#~ msgid "Master IDE Device"
+#~ msgstr "התקן ה־IDE הראשי"
+
+#~ msgid "Secondary programmable indicator"
+#~ msgstr "מחוון המשני הניתן לתכנות"
+
+#~ msgid "Secondary operating mode"
+#~ msgstr "מצב הפעולה המשני"
+
+#~ msgid "Primary programmable indicator"
+#~ msgstr "מחוון ראשי הניתן לתכנות"
+
+#~ msgid "Primary operating mode"
+#~ msgstr "מצב הפעולה הראשי"
+
+#~ msgid "Vendor"
+#~ msgstr "יצרן"
+
+#~ msgid "Device"
+#~ msgstr "התקן"
+
+#~ msgid "Subsystem"
+#~ msgstr "תת־מערכת"
+
+#~ msgid " - device:"
+#~ msgstr "- התקן:"
+
+#~ msgid "Interrupt"
+#~ msgstr "פסיקה"
+
+#~ msgid "IRQ"
+#~ msgstr "IRQ"
+
+#~ msgid "Pin"
+#~ msgstr "פין"
+
+#~ msgid "Control"
+#~ msgstr "בקרה"
+
+#~ msgid "Response in I/O space"
+#~ msgstr "התגובה במרחב קלט/פלט"
+
+#~ msgid "Response in memory space"
+#~ msgstr "התגובה במרחב הזכרון"
+
+#~ msgid "Bus mastering"
+#~ msgstr "שליטה באפיקים"
+
+#~ msgid "Response to special cycles"
+#~ msgstr "תגובה למחזורים מיוחדים"
+
+#~ msgid "Memory write and invalidate"
+#~ msgstr "כתיבה ואי־אימות של הזכרון"
+
+#~ msgid "Parity checking"
+#~ msgstr "בדיקת זוגיות"
+
+#~ msgid "System error"
+#~ msgstr "שגיאת מערכת"
+
+#~ msgid "Back-to-back writes"
+#~ msgstr "כתיבות גב־אל־גב"
+
+#~ msgid "Status"
+#~ msgstr "מצב"
+
+#~ msgid "Interrupt status"
+#~ msgstr "מצב ההפרעה"
+
+#~ msgid "Capability list"
+#~ msgstr "רשימת יכולות"
+
+#~ msgid "66 MHz PCI 2.1 bus"
+#~ msgstr "אפיק PCI 2.1 במהירות 66 מה\"ץ"
+
+#~ msgid "User-definable features"
+#~ msgstr "תכונות הניתנות להגדרה על ידי המשתמש"
+
+#~ msgid "Data parity error"
+#~ msgstr "שגיאת זוגיות"
+
+#~ msgid "Device selection timing"
+#~ msgstr "תזמון בחירת התקן"
+
+#~ msgid "Parity error"
+#~ msgstr "שגיאת זוגיות"
+
+#~ msgid "Latency"
+#~ msgstr "עיכוב"
+
+#~ msgid "MIN_GNT"
+#~ msgstr "MIN_GNT"
+
+#~ msgid "MAX_LAT"
+#~ msgstr "MAX_LAT"
+
+#~ msgid "Header"
+#~ msgstr "כותרת"
+
+#~ msgid "Type"
+#~ msgstr "סוג"
+
+#~ msgid "Multifunctional"
+#~ msgstr "רב תכליתי"
+
+#~ msgid "Build-in self test"
+#~ msgstr "בדיקה עצמית מובנית"
+
+#~ msgid "BIST Capable"
+#~ msgstr "יכולת BIST"
+
+#~ msgid "Completion code"
+#~ msgstr "קוד השלמה"
+
+#~ msgid "Size"
+#~ msgstr "גודל"
+
+#~ msgid "Address mappings"
+#~ msgstr "מיפוי כתובת"
+
+#~ msgid "Mapping %1"
+#~ msgstr "ממפה את %1"
+
+#~ msgid "Space"
+#~ msgstr "מרחב"
+
+#~ msgid "I/O"
+#~ msgstr "קלט/פלט"
+
+#~ msgid "Memory"
+#~ msgstr "זכרון"
+
+#~ msgid "Address"
+#~ msgstr "כתובת"
+
+#~ msgctxt "unassigned address"
+#~ msgid "Unassigned"
+#~ msgstr "לא מוקצה"
+
+#~ msgctxt "unassigned size"
+#~ msgid "Unassigned"
+#~ msgstr "לא מוקצה"
+
+#~ msgid "Bus"
+#~ msgstr "אפיק"
+
+#~ msgid "32-bit"
+#~ msgstr "32 סיביות"
+
+#~ msgid "Base"
+#~ msgstr "בסיס"
+
+#~ msgid "Limit"
+#~ msgstr "הגבלה"
+
+#~ msgid "Memory behind bridge"
+#~ msgstr "זכרון מאחורי הגשר"
+
+#~ msgid "64-bit"
+#~ msgstr "64 סיביות"
+
+#~ msgid "Bridge control"
+#~ msgstr "בקרת גשר"
+
+#~ msgid "VGA forwarding"
+#~ msgstr "העברת VGA"
+
+#~ msgid "Memory windows"
+#~ msgstr "חלונות זכרון"
+
+#~ msgid "Window %1"
+#~ msgstr "חלון מספר %1"
+
+#~ msgid "I/O windows"
+#~ msgstr "חלונות פלט/קלט"
+
+#~ msgid "16-bit"
+#~ msgstr "16 סיביות"
+
+#~ msgid "Capabilities"
+#~ msgstr "יכולות"
+
+#~ msgid "Version"
+#~ msgstr "גירסה"
+
+#~ msgid "D1 support"
+#~ msgstr "תמיכה ב־D1"
+
+#~ msgid "D2 support"
+#~ msgstr "תמיכה ב־D2"
+
+#~ msgid "D0"
+#~ msgstr "D0"
+
+#~ msgid "D1"
+#~ msgstr "D1"
+
+#~ msgid "D2"
+#~ msgstr "D2"
+
+#~ msgid "D3 hot"
+#~ msgstr "D3 חם"
+
+#~ msgid "D3 cold"
+#~ msgstr "D3 קר"
+
+#~ msgid "Power state"
+#~ msgstr "מצב צריכת החשמל"
+
+#~ msgid "Power management"
+#~ msgstr "ניהול צריכת החשמל"
+
+#~ msgid "Data select"
+#~ msgstr "בחירת נתונים"
+
+#~ msgid "Data scale"
+#~ msgstr "מידת הנתונים"
+
+#~ msgid "Power management status"
+#~ msgstr "מצב ניהול צריכת החשמל"
+
+#~ msgid "Bridge status"
+#~ msgstr "מצב הגשר"
+
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgid "Data"
+#~ msgstr "נתונים"
+
+#~ msgid "Revision"
+#~ msgstr "מהדורה"
+
+#~ msgid "Rate"
+#~ msgstr "קצב"
+
+#~ msgid "AGP 3.0 mode"
+#~ msgstr "מצב AGP 3.0"
+
+#~ msgid "Fast Writes"
+#~ msgstr "כתיבות מהירות"
+
+#~ msgid "Address over 4 GiB"
+#~ msgstr "כתובת מעל 4 GiB"
+
+#~ msgid "64-bit GART"
+#~ msgstr "64-bit GART"
+
+#~ msgid "Configuration"
+#~ msgstr "תצורה"
+
+#~ msgid "AGP"
+#~ msgstr "AGP"
+
+#~ msgid "Data address"
+#~ msgstr "כתובת הנתונים"
+
+#~ msgid "Transfer completed"
+#~ msgstr "ההעברה הושלמה"
+
+#~ msgid "Message control"
+#~ msgstr "בקרת הודעות"
+
+#~ msgid "64-bit address"
+#~ msgstr "כתובת של 64 סיביות"
+
+#~ msgid "Per vector masking"
+#~ msgstr "מיסוך עבור כל וקטור בנפרד"
+
+#~ msgid "Mask"
+#~ msgstr "מסכה"
+
+#~ msgid "Pending"
+#~ msgstr "ממתין"
+
+#~ msgid "Length"
+#~ msgstr "אורך"
+
+#, fuzzy
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "ללא"
+
+#~ msgid "Next"
+#~ msgstr "הבא"
+
+#~ msgid "0x00 (None)"
+#~ msgstr "0x00 (ללא)"
+
+#~ msgid "Root only"
+#~ msgstr "Root בלבד"
+
+#~ msgid "Value"
+#~ msgstr "ערך"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Enabled"
+#~ msgstr "מאופשר"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Disabled"
+#~ msgstr "מבוטל"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Yes"
+#~ msgstr "כן"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "לא"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Unknown"
+#~ msgstr "בלתי ידוע"
+
+#~ msgid "Unclassified device"
+#~ msgstr "התקן ללא סיווג"
+
+#~ msgid "Mass storage controller"
+#~ msgstr "בקר להתקני אחסון גדולים"
+
+#~ msgid "Network controller"
+#~ msgstr "בקר רשת"
+
+#~ msgid "Display controller"
+#~ msgstr "בקר תצוגה"
+
+#~ msgid "Multimedia controller"
+#~ msgstr "בקר מולטימדיה"
+
+#~ msgid "Memory controller"
+#~ msgstr "בקר זכרון"
+
+#~ msgid "Bridge"
+#~ msgstr "גשר"
+
+#~ msgid "Communication controller"
+#~ msgstr "בקר תקשורת"
+
+#~ msgid "Generic system peripheral"
+#~ msgstr "רכיבי מערכת היקפיים גנריים"
+
+#~ msgid "Input device controller"
+#~ msgstr "בקר התקן פלט"
+
+#~ msgid "Docking station"
+#~ msgstr "תחנת עגינה"
+
+#~ msgid "Processor"
+#~ msgstr "מעבד"
+
+#~ msgid "Serial bus controller"
+#~ msgstr "בקר אפיק טורי"
+
+#~ msgid "Wireless controller"
+#~ msgstr "בקר אל־חוטי"
+
+#~ msgid "Intelligent controller"
+#~ msgstr "בקר חכם"
+
+#~ msgid "Satellite communications controller"
+#~ msgstr "בקר לתקשורת לוויינית"
+
+#~ msgid "Encryption controller"
+#~ msgstr "בקר הצפנה"
+
+#~ msgid "Signal processing controller"
+#~ msgstr "בקר לעיבוד אותות"
+
+#, fuzzy
+#~| msgid "Processor"
+#~ msgid "Coprocessor"
+#~ msgstr "מעבד"
+
+#, fuzzy
+#~| msgctxt "unassigned address"
+#~| msgid "Unassigned"
+#~ msgid "Unassigned class"
+#~ msgstr "לא מוקצה"
+
+#~ msgid "Unknown device class"
+#~ msgstr "מחלקת ההתקן בלתי מוכרת"
+
+#~ msgid "Non-VGA unclassified device"
+#~ msgstr "התקן לא מסווג שאינו VGA"
+
+#~ msgid "VGA unclassified device"
+#~ msgstr "התקן VGA שאינו מסווג"
+
+#~ msgid "Unknown unclassified device"
+#~ msgstr "התקן לא ידוע ולא מזוהה"
+
+#~ msgid "SCSI storage controller"
+#~ msgstr "בקר אחסון SCSI"
+
+#~ msgid "IDE controller"
+#~ msgstr "בקר IDE"
+
+#~ msgid "Floppy disk controller"
+#~ msgstr "בקר כונני תקליטונים"
+
+#~ msgid "IPI bus controller"
+#~ msgstr "בקר אפיק IPI"
+
+#~ msgid "RAID bus controller"
+#~ msgstr "בקר אפיק RAID"
+
+#~ msgid "ATA controller"
+#~ msgstr "בקר ATA"
+
+#, fuzzy
+#~| msgid "ATA controller"
+#~ msgid "SATA controller"
+#~ msgstr "בקר ATA"
+
+#, fuzzy
+#~| msgid "Serial controller"
+#~ msgid "Serial Attached SCSI controller"
+#~ msgstr "בקר טורי"
+
+#, fuzzy
+#~| msgid "Unknown memory controller"
+#~ msgid "Non-Volatile memory controller"
+#~ msgstr "בקר זכרון בלתי ידוע"
+
+#~ msgid "Unknown storage controller"
+#~ msgstr "בקר אחסון לא ידוע"
+
+#~ msgid "Ethernet controller"
+#~ msgstr "בקר רשת"
+
+#~ msgid "Token ring network controller"
+#~ msgstr "בקר רשת מסוג אסימונים (Tokens)"
+
+#~ msgid "FDDI network controller"
+#~ msgstr "בקר רשת מסוג FDDI"
+
+#~ msgid "ATM network controller"
+#~ msgstr "בקר רשת מסוג ATM"
+
+#~ msgid "ISDN controller"
+#~ msgstr "בקר ISDN"
+
+#~ msgid "WorldFip controller"
+#~ msgstr "בקר WorldFip"
+
+#, fuzzy
+#~| msgid "IDE controller"
+#~ msgid "PICMG controller"
+#~ msgstr "בקר IDE"
+
+#, fuzzy
+#~| msgid "Keyboard controller"
+#~ msgid "Infiniband controller"
+#~ msgstr "בקר מקלדת"
+
+#, fuzzy
+#~| msgid "RF controller"
+#~ msgid "Fabric controller"
+#~ msgstr "בקר שידורי רדיו"
+
+#~ msgid "Unknown network controller"
+#~ msgstr "בקר רשת בלתי ידוע"
+
+#~ msgid "VGA compatible controller"
+#~ msgstr "בקר התומך ב־VGA"
+
+#~ msgid "XGA compatible controller"
+#~ msgstr "בקר התומך ב־XGA"
+
+#~ msgid "3D controller"
+#~ msgstr "בקר תלת־מימד"
+
+#~ msgid "Unknown display controller"
+#~ msgstr "בקר תצוגה בלתי ידוע"
+
+#~ msgid "Multimedia video controller"
+#~ msgstr "בקר וידאו מולטימדיה"
+
+#~ msgid "Multimedia audio controller"
+#~ msgstr "בקר שמע מולטימדיה"
+
+#~ msgid "Computer telephony device"
+#~ msgstr "התקן טלפוניה ממוחשב"
+
+#, fuzzy
+#~| msgid "Secure device"
+#~ msgid "Audio device"
+#~ msgstr "התקן מאובטח"
+
+#~ msgid "Unknown multimedia controller"
+#~ msgstr "בקר מולטימדיה בלתי ידוע"
+
+#~ msgid "RAM memory"
+#~ msgstr "זכרון RAM"
+
+#~ msgid "FLASH memory"
+#~ msgstr "זכרון FLASH"
+
+#~ msgid "Unknown memory controller"
+#~ msgstr "בקר זכרון בלתי ידוע"
+
+#~ msgid "Host bridge"
+#~ msgstr "גשר מארח"
+
+#~ msgid "ISA bridge"
+#~ msgstr "גשר ISA"
+
+#~ msgid "EISA bridge"
+#~ msgstr "גשר EISA"
+
+#~ msgid "MicroChannel bridge"
+#~ msgstr "גשר MicroChannel"
+
+#~ msgid "PCI bridge"
+#~ msgstr "גשר PCI"
+
+#~ msgid "PCMCIA bridge"
+#~ msgstr "גשר PCMCIA"
+
+#~ msgid "NuBus bridge"
+#~ msgstr "גשר NuBus"
+
+#~ msgid "CardBus bridge"
+#~ msgstr "גשר CardBus"
+
+#~ msgid "RACEway bridge"
+#~ msgstr "גשר RACEway"
+
+#~ msgid "Semi-transparent PCI-to-PCI bridge"
+#~ msgstr "גשר שקוף למחצה מסוג PCI-אל-PCI"
+
+#~ msgid "Unknown bridge"
+#~ msgstr "גשר בלתי ידוע"
+
+#~ msgid "Serial controller"
+#~ msgstr "בקר טורי"
+
+#~ msgid "Parallel controller"
+#~ msgstr "בקר מקבילי"
+
+#~ msgid "Multiport serial controller"
+#~ msgstr "בקר טורי רב ערוצי"
+
+#~ msgid "Modem"
+#~ msgstr "מודם"
+
+#, fuzzy
+#~| msgid "USB controller"
+#~ msgid "GPIB controller"
+#~ msgstr "בקר USB"
+
+#, fuzzy
+#~| msgid "Scanner controller"
+#~ msgid "Smart card controller"
+#~ msgstr "בקר סורק"
+
+#~ msgid "Unknown communication controller"
+#~ msgstr "בקר תקשורת בלתי ידוע"
+
+#~ msgid "PIC"
+#~ msgstr "PIC"
+
+#~ msgid "DMA controller"
+#~ msgstr "בקר DMA"
+
+#~ msgid "Timer"
+#~ msgstr "מתזמן"
+
+#~ msgid "RTC"
+#~ msgstr "RTC"
+
+#~ msgid "PCI Hot-plug controller"
+#~ msgstr "בקר לחיבור־חם של התקן PCI"
+
+#, fuzzy
+#~| msgid "ISDN controller"
+#~ msgid "SD Host controller"
+#~ msgstr "בקר ISDN"
+
+#~ msgid "Unknown system peripheral"
+#~ msgstr "רכיב מערכת היקפי לא ידוע"
+
+#~ msgid "Keyboard controller"
+#~ msgstr "בקר מקלדת"
+
+#~ msgid "Digitizer Pen"
+#~ msgstr "עט דיגיטלית"
+
+#~ msgid "Mouse controller"
+#~ msgstr "בקר עכבר"
+
+#~ msgid "Scanner controller"
+#~ msgstr "בקר סורק"
+
+#~ msgid "Gameport controller"
+#~ msgstr "בקר התקן משחק"
+
+#~ msgid "Generic docking station"
+#~ msgstr "תחנת עגינה כללית"
+
+#~ msgid "Unknown docking station"
+#~ msgstr "תחנת עגינה בלתי ידועה"
+
+#~ msgid "386"
+#~ msgstr "386"
+
+#~ msgid "486"
+#~ msgstr "486"
+
+#~ msgid "Pentium"
+#~ msgstr "פנטיום"
+
+#~ msgid "Alpha"
+#~ msgstr "Alpha"
+
+#~ msgid "Power PC"
+#~ msgstr "Power PC"
+
+#~ msgid "MIPS"
+#~ msgstr "MIPS"
+
+#~ msgid "Unknown processor"
+#~ msgstr "מעבד לא ידוע"
+
+#~ msgid "FireWire (IEEE 1394)"
+#~ msgstr "FireWire (IEEE 1394)"
+
+#~ msgid "ACCESS bus"
+#~ msgstr "אפיק ACCESS"
+
+#~ msgid "SSA"
+#~ msgstr "SSA"
+
+#~ msgid "USB controller"
+#~ msgstr "בקר USB"
+
+#~ msgid "Fibre channel"
+#~ msgstr "ערוץ אופטי"
+
+#~ msgid "SMBus"
+#~ msgstr "SMBus"
+
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#~ msgid "IPMI interface"
+#~ msgstr "מנשק IPMI"
+
+#~ msgid "SERCOS interface"
+#~ msgstr "מנשק SERCOS"
+
+#~ msgid "CANbus"
+#~ msgstr "CANbus"
+
+#~ msgid "Unknown serial bus controller"
+#~ msgstr "בקר אפיק טורי בלתי ידוע"
+
+#~ msgid "IRDA controller"
+#~ msgstr "בקר IRDA"
+
+#~ msgid "RF controller"
+#~ msgstr "בקר שידורי רדיו"
+
+#~ msgid "Bluetooth"
+#~ msgstr "בלוטות'"
+
+#~ msgid "Broadband"
+#~ msgstr "פס־רחב"
+
+#~ msgid "Ethernet (802.11a - 5 GHz)"
+#~ msgstr "אתרנט (802.11a - 5 גה\"ץ)"
+
+#~ msgid "Ethernet (802.11b - 2.4 GHz)"
+#~ msgstr "אתרנט (802.11b - 2.4 גה\"ץ)"
+
+#~ msgid "Unknown wireless controller"
+#~ msgstr "בקר אל־חוטי בלתי ידוע"
+
+#~ msgid "I2O"
+#~ msgstr "I2O"
+
+#~ msgid "Unknown intelligent controller"
+#~ msgstr "בקר חכם בלתי ידוע"
+
+#~ msgid "Satellite TV controller"
+#~ msgstr "בקר טלוויזיה בלוויין"
+
+#~ msgid "Unknown encryption controller"
+#~ msgstr "בקר הצפנה בלתי ידוע"
+
+#~ msgid "DPIO module"
+#~ msgstr "מודול DPIO"
+
+#~ msgid "Performance counters"
+#~ msgstr "מדי ביצועים"
+
+#, fuzzy
+#~| msgid "Signal processing controller"
+#~ msgid "Signal processing management"
+#~ msgstr "בקר לעיבוד אותות"
+
+#, fuzzy
+#~| msgid "Unknown processor"
+#~ msgid "Unknown processing accelerator"
+#~ msgstr "מעבד לא ידוע"
+
+#, fuzzy
+#~| msgid "VGA compatible controller"
+#~ msgid "ISA Compatibility mode-only controller"
+#~ msgstr "בקר התומך ב־VGA"
+
+#, fuzzy
+#~| msgid "PCI Hot-plug controller"
+#~ msgid "PCI native mode-only controller"
+#~ msgstr "בקר לחיבור־חם של התקן PCI"
+
+#~ msgid "Vendor specific"
+#~ msgstr "זיהוי ייחודי ליצרן"
+
+#, fuzzy
+#~| msgid "PCI express"
+#~ msgid "NVM Express"
+#~ msgstr "PCI express"
+
+#, fuzzy
+#~| msgid "ATA controller"
+#~ msgid "VGA controller"
+#~ msgstr "בקר ATA"
+
+#, fuzzy
+#~| msgid "3D controller"
+#~ msgid "8514 controller"
+#~ msgstr "בקר תלת־מימד"
+
+#~ msgid "Normal decode"
+#~ msgstr "פענוח רגיל"
+
+#~ msgid "Subtractive decode"
+#~ msgstr "פענוח מתחסר"
+
+#~ msgid "Transparent mode"
+#~ msgstr "מצב שקוף"
+
+#~ msgid "Endpoint mode"
+#~ msgstr "מצב נקודת קצה"
+
+#~ msgid "8250"
+#~ msgstr "8250"
+
+#~ msgid "16450"
+#~ msgstr "16450"
+
+#~ msgid "16550"
+#~ msgstr "16550"
+
+#~ msgid "16650"
+#~ msgstr "16650"
+
+#~ msgid "16750"
+#~ msgstr "16750"
+
+#~ msgid "16850"
+#~ msgstr "16850"
+
+#~ msgid "16950"
+#~ msgstr "16950"
+
+#~ msgid "SPP"
+#~ msgstr "SPP"
+
+#~ msgid "BiDir"
+#~ msgstr "דו־כיווני"
+
+#~ msgid "ECP"
+#~ msgstr "ECP"
+
+#~ msgid "IEEE1284"
+#~ msgstr "IEEE1284"
+
+#~ msgid "IEEE1284 Target"
+#~ msgstr "יעד IEEE1284"
+
+#~ msgid "Generic"
+#~ msgstr "כללי"
+
+#~ msgid "Hayes/16450"
+#~ msgstr "Hayes/16450"
+
+#~ msgid "Hayes/16550"
+#~ msgstr "Hayes/16550"
+
+#~ msgid "Hayes/16650"
+#~ msgstr "Hayes/16650"
+
+#~ msgid "Hayes/16750"
+#~ msgstr "Hayes/16750"
+
+#~ msgid "8259"
+#~ msgstr "8259"
+
+#~ msgid "ISA PIC"
+#~ msgstr "ISA PIC"
+
+#~ msgid "EISA PIC"
+#~ msgstr "EISA PIC"
+
+#~ msgid "IO-APIC"
+#~ msgstr "IO-APIC"
+
+#~ msgid "IO(X)-APIC"
+#~ msgstr "IO(X)-APIC"
+
+#~ msgid "8237"
+#~ msgstr "8237"
+
+#~ msgid "ISA DMA"
+#~ msgstr "ISA DMA"
+
+#~ msgid "EISA DMA"
+#~ msgstr "EISA DMA"
+
+#~ msgid "8254"
+#~ msgstr "8254"
+
+#~ msgid "ISA timer"
+#~ msgstr "מתזמן ISA"
+
+#~ msgid "EISA timers"
+#~ msgstr "מתזמני EISA"
+
+#~ msgid "Extended"
+#~ msgstr "מורחב"
+
+#~ msgid "OHCI"
+#~ msgstr "OHCI"
+
+#~ msgid "UHCI"
+#~ msgstr "UHCI"
+
+#~ msgid "EHCI"
+#~ msgstr "EHCI"
+
+#~ msgid "Unspecified"
+#~ msgstr "בלתי מוגדר"
+
+#~ msgid "USB Device"
+#~ msgstr "התקן USB"
+
+#~ msgid "SMIC"
+#~ msgstr "SMIC"
+
+#~ msgid "Keyboard controller style"
+#~ msgstr "סגנון בקר המקלדת"
+
+#~ msgid "Vital product data"
+#~ msgstr "נתוני מוצר חיוניים"
+
+#~ msgid "Slot identification"
+#~ msgstr "זיהוי חריץ"
+
+#~ msgid "PCI hot-plug"
+#~ msgstr "חיבור חם של רכיב PCI"
+
+#~ msgid "AGP x8"
+#~ msgstr "AGP x8"
+
+#~ msgid "Secure device"
+#~ msgstr "התקן מאובטח"
+
+#~ msgid "PCI express"
+#~ msgstr "PCI express"
+
+#~ msgid "MSI-X"
+#~ msgstr "MSI-X"
+
+#~ msgid "Fast"
+#~ msgstr "מהיר"
+
+#~ msgid "Medium"
+#~ msgstr "בינוני"
+
+#~ msgid "Slow"
+#~ msgstr "איטי"
+
+#~ msgid "32 bit"
+#~ msgstr "32 סיביות"
+
+#~ msgid "Below 1M"
+#~ msgstr "פחות ממיליון"
+
+#~ msgid "64 bit"
+#~ msgstr "64 סיביות"
+
+#~ msgid "Standard"
+#~ msgstr "רגיל"
+
+#~ msgid "CardBus"
+#~ msgstr "CardBus"
+
+#~ msgid "1X"
+#~ msgstr "1X"
+
+#~ msgid "2X"
+#~ msgstr "2X"
+
+#~ msgid "1X & 2X"
+#~ msgstr "1X & 2X"
+
+#~ msgid "4X"
+#~ msgstr "4X"
+
+#~ msgid "1X & 4X"
+#~ msgstr "1X & 4X"
+
+#~ msgid "2X & 4X"
+#~ msgstr "2X & 4X"
+
+#~ msgid "1X & 2X & 4X"
+#~ msgstr "1X & 2X & 4X"
+
+#~ msgid "8X"
+#~ msgstr "8X"
+
+#~ msgid "4X & 8X"
+#~ msgstr "4X & 8X"
+
+#~ msgid "4 ms"
+#~ msgstr "4 מ\"ש"
+
+#~ msgid "16 ms"
+#~ msgstr "16 מ\"ש"
+
+#~ msgid "64 ms"
+#~ msgstr "64 מ\"ש"
+
+#~ msgid "256 ms"
+#~ msgstr "256 מ\"ש"
+
+#~ msgid "Not needed"
+#~ msgstr "לא נחוץ"
+
+#~ msgid "0 (self powered)"
+#~ msgstr "0 (נזון עצמאית)"
+
+#~ msgid "55 mA"
+#~ msgstr "55 מיליאמפר"
+
+#~ msgid "100 mA"
+#~ msgstr "100 מיליאמפר"
+
+#~ msgid "160 mA"
+#~ msgstr "160 מיליאמפר"
+
+#~ msgid "220 mA"
+#~ msgstr "220 מיליאמפר"
+
+#~ msgid "270 mA"
+#~ msgstr "270 מיליאמפר"
+
+#~ msgid "320 mA"
+#~ msgstr "320 מיליאמפר"
+
+#~ msgid "375 mA"
+#~ msgstr "375 מיליאמפר"
+
+#~ msgid "1 vector"
+#~ msgstr "וקטור אחד"
+
+#~ msgid "2 vectors"
+#~ msgstr "2 וקטורים"
+
+#~ msgid "4 vectors"
+#~ msgstr "4 וקטורים"
+
+#~ msgid "8 vectors"
+#~ msgstr "8 וקטורים"
+
+#~ msgid "16 vectors"
+#~ msgstr "16 וקטורים"
+
+#~ msgid "32 vectors"
+#~ msgstr "32 וקטורים"
+
+#~ msgid "GPIB (IEEE 488.1/2) controller"
+#~ msgstr "בקר GPIB (IEEE 488.1/2)‎"
+
+#~ msgid "Smart card"
+#~ msgstr "כרטיס חכם"
+
+#~ msgid "System peripheral"
+#~ msgstr "רכיב מערכת היקפי"
+
+#~ msgid "Management card"
+#~ msgstr "כרטיס ניהול"
+
+#~ msgid "single DMA"
+#~ msgstr "DMA יחיד"
+
+#~ msgid "VGA compatible"
+#~ msgstr "תומך VGA"
+
+#~ msgid "8514 compatible"
+#~ msgstr "תומך 8514"

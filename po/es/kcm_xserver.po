@@ -1,0 +1,46 @@
+# Spanish translations for kcm_xserver.po package.
+# Copyright (C) 2021 This file is copyright:
+# This file is distributed under the same license as the kinfocenter package.
+#
+# Automatically generated, 2021.
+# Eloy Cuadra <ecuadra@eloihr.net>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_xserver\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-11-17 00:29+0000\n"
+"PO-Revision-Date: 2021-09-28 23:38+0200\n"
+"Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
+"Language-Team: Spanish <kde-l10n-es@kde.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 21.08.1\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Eloy Cuadra"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "ecuadra@eloihr.net"
+
+#: main.cpp:23
+#, kde-format
+msgctxt "@label kcm name"
+msgid "X-Server"
+msgstr "Servidor X"
+
+#: main.cpp:24
+#, kde-format
+msgid "Harald Sitter"
+msgstr "Harald Sitter"
+
+#: package/contents/ui/main.qml:14
+msgctxt "@info:whatsthis"
+msgid "X-Server Information"
+msgstr "Información sobre el servidor X"

@@ -1,0 +1,228 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Lasse Liehu <lasse.liehu@gmail.com>, 2013, 2014, 2016.
+# Tommi Nieminen <translator@legisign.org>, 2018, 2019, 2020, 2021, 2022.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-08-09 00:47+0000\n"
+"PO-Revision-Date: 2022-04-15 23:15+0300\n"
+"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
+"Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 20.12.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Lasse Liehu, Tommi Nieminen"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "lasse.liehu@gmail.com, translator@legisign.org"
+
+#: CPUEntry.cpp:17
+#, kde-format
+msgid "Processor:"
+msgid_plural "Processors:"
+msgstr[0] "Suoritin:"
+msgstr[1] "Suorittimet:"
+
+#: CPUEntry.cpp:22
+#, kde-format
+msgctxt ""
+"unknown CPU type/product name; presented as `Processors: 4 × Unknown Type'"
+msgid "Unknown Type"
+msgstr "Tuntematon tyyppi"
+
+#: GPUEntry.cpp:19
+#, kde-format
+msgid "Graphics Processor:"
+msgstr "Grafiikkasuoritin:"
+
+#: GraphicsPlatformEntry.cpp:10
+#, kde-format
+msgid "Graphics Platform:"
+msgstr "Grafiikka-alusta:"
+
+#: KernelEntry.cpp:11
+#, kde-format
+msgid "Kernel Version:"
+msgstr "Käyttöjärjestelmäytimen versio:"
+
+#: KernelEntry.cpp:23
+#, kde-format
+msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
+msgid "%1 (%2-bit)"
+msgstr "%1 (%2-bittinen)"
+
+#: main.cpp:103
+#, kde-format
+msgctxt "@title"
+msgid "About this System"
+msgstr "Tietoa tästä järjestelmästä"
+
+#: main.cpp:106
+#, kde-format
+msgctxt "@info:credit"
+msgid "Copyright 2012-2020 Harald Sitter"
+msgstr "Tekijänoikeudet 2012–2020 Harald Sitter"
+
+#: main.cpp:107
+#, kde-format
+msgctxt "@info:credit"
+msgid "Harald Sitter"
+msgstr "Harald Sitter"
+
+#: main.cpp:107
+#, kde-format
+msgctxt "@info:credit"
+msgid "Author"
+msgstr "Tekijä"
+
+#: main.cpp:162
+#, kde-format
+msgid "Operating System:"
+msgstr "Käyttöjärjestelmä:"
+
+#: main.cpp:176
+#, kde-format
+msgctxt "@label"
+msgid "Manufacturer:"
+msgstr "Valmistaja:"
+
+#: main.cpp:179 main.cpp:196
+#, kde-format
+msgctxt "@label"
+msgid "Product Name:"
+msgstr "Tuotteen nimi:"
+
+#: main.cpp:182
+#, kde-format
+msgctxt "@label"
+msgid "System Version:"
+msgstr "Järjestelmän versio:"
+
+#: main.cpp:185 main.cpp:199
+#, kde-format
+msgctxt "@label"
+msgid "Serial Number:"
+msgstr "Sarjanumero:"
+
+#: main.cpp:189 main.cpp:206
+#, fuzzy, kde-format
+#| msgctxt "Unknown amount of RAM"
+#| msgid "Unknown"
+msgctxt "@label unknown entry in table"
+msgid "Unknown:"
+msgstr "Tuntematon"
+
+#: main.cpp:202
+#, fuzzy, kde-format
+#| msgid "Qt Version:"
+msgctxt "@label uboot is the name of a bootloader for embedded devices"
+msgid "U-Boot Version:"
+msgstr "Qt-versio:"
+
+#: main.cpp:240
+#, kde-format
+msgid "KDE Frameworks Version:"
+msgstr "KDE Frameworks -versio:"
+
+#: main.cpp:241
+#, kde-format
+msgid "Qt Version:"
+msgstr "Qt-versio:"
+
+#: MemoryEntry.cpp:20
+#, kde-format
+msgid "Memory:"
+msgstr "Muisti:"
+
+#: MemoryEntry.cpp:49
+#, kde-format
+msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
+msgid "%1 of RAM"
+msgstr "%1 keskusmuistia"
+
+#: MemoryEntry.cpp:53
+#, kde-format
+msgctxt "Unknown amount of RAM"
+msgid "Unknown"
+msgstr "Tuntematon"
+
+#: package/contents/ui/main.qml:91
+#, kde-format
+msgctxt "@title"
+msgid "Serial Number"
+msgstr "Sarjanumero"
+
+#: package/contents/ui/main.qml:97 package/contents/ui/main.qml:165
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy to Clipboard"
+msgstr "Kopioi leikepöydälle"
+
+#: package/contents/ui/main.qml:113
+#, kde-format
+msgctxt "@action:button show a hidden entry in an overlay"
+msgid "Show"
+msgstr "Näytä"
+
+#: package/contents/ui/main.qml:123
+#, kde-format
+msgctxt "@title:group"
+msgid "Software"
+msgstr "Ohjelmisto"
+
+#: package/contents/ui/main.qml:133
+#, kde-format
+msgctxt "@title:group"
+msgid "Hardware"
+msgstr "Laitteisto"
+
+#: package/contents/ui/main.qml:153
+#, kde-format
+msgctxt "@action:button launches kinfocenter from systemsettings"
+msgid "Show More Information"
+msgstr "Näytä lisätietoa"
+
+#: package/contents/ui/main.qml:172
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy to Clipboard in English"
+msgstr "Kopioi leikepöydälle englanninkielisenä"
+
+#: PlasmaEntry.cpp:15
+#, kde-format
+msgid "KDE Plasma Version:"
+msgstr "KDE Plasma -versio:"
+
+#~ msgid "Copy software and hardware information to clipboard"
+#~ msgstr "Kopioi ohjelmisto- ja laitetiedot leikepöydälle"
+
+#~ msgid "Copy software and hardware information to clipboard in English"
+#~ msgstr "Kopioi ohjelmisto- ja laitetiedot leikepöydälle englanninkielisinä"
+
+#~ msgid "OS Type:"
+#~ msgstr "Käyttöjärjestelmän tyyppi:"
+
+#~ msgctxt "@title"
+#~ msgid "About Distribution"
+#~ msgstr "Tietoa jakelusta"
+
+#~ msgctxt ""
+#~ "%1 is a label already including a colon, %2 is the corresponding value"
+#~ msgid "%1 %2"
+#~ msgstr "%1 %2"
+
+#~ msgid "{variantLabel}"
+#~ msgstr "{variantLabel}"

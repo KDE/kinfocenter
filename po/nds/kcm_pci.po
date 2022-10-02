@@ -1,0 +1,1335 @@
+# Translation of kcm_pci.po to Low Saxon
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Sönke Dibbern <s_dibbern@web.de>, 2008, 2009, 2014.
+# Manfred Wiese <m.j.wiese@web.de>, 2010, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_pci\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
+"PO-Revision-Date: 2014-03-10 21:39+0100\n"
+"Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
+"Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
+"Language: nds\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Sönke Dibbern"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "s_dibbern@web.de"
+
+#: main.cpp:26
+#, fuzzy, kde-format
+#| msgid "PCI-X"
+msgctxt "@label kcm name"
+msgid "PCI"
+msgstr "PCI-X"
+
+#: main.cpp:27
+#, kde-format
+msgid "Harald Sitter"
+msgstr ""
+
+#: package/contents/ui/main.qml:14
+#, fuzzy
+#| msgid "Information"
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "Informatschonen"
+
+#~ msgid "kcm_pci"
+#~ msgstr "kcm_pci"
+
+#, fuzzy
+#~| msgid "Device"
+#~ msgid "PCI Devices"
+#~ msgstr "Reedschap"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr "© 2008 Nicolas Ternisien © 1998 - 2002 Helge Deller"
+
+#~ msgid "Nicolas Ternisien"
+#~ msgstr "Nicolas Ternisien"
+
+#~ msgid "Helge Deller"
+#~ msgstr "Helge Deller"
+
+#~ msgid "This list displays PCI information."
+#~ msgstr "Disse List wiest PCI-Informatschonen."
+
+#~ msgid ""
+#~ "This display shows information about your computer's PCI slots and the "
+#~ "related connected devices."
+#~ msgstr ""
+#~ "Disse Dorstellen wiest Informatschonen över Dien Reekner sien PCI-"
+#~ "Verbinnen un de tokoppelten Reedschappen."
+
+#~ msgid "Device Class"
+#~ msgstr "Reedschapklass"
+
+#~ msgid "Device Subclass"
+#~ msgstr "Reedschap-Ünnerklass"
+
+#~ msgid "Device Programming Interface"
+#~ msgstr "Reedschap-Programmeerkoppelsteed"
+
+#~ msgid "Master IDE Device"
+#~ msgstr "Hööft-IDE-Reedschap"
+
+#~ msgid "Secondary programmable indicator"
+#~ msgstr "Tweet programmeerbor Wieser"
+
+#~ msgid "Secondary operating mode"
+#~ msgstr "Tweet Bedriefoort"
+
+#~ msgid "Primary programmable indicator"
+#~ msgstr "Eerst programmeerbor Wieser"
+
+#~ msgid "Primary operating mode"
+#~ msgstr "Eerst Bedriefoort"
+
+#~ msgid "Vendor"
+#~ msgstr "Leverant"
+
+#~ msgid "Device"
+#~ msgstr "Reedschap"
+
+#~ msgid "Subsystem"
+#~ msgstr "Ünnersysteem"
+
+#~ msgid " - device:"
+#~ msgstr " - Reedschap:"
+
+#~ msgid "Interrupt"
+#~ msgstr "Interrupt"
+
+#~ msgid "IRQ"
+#~ msgstr "IRQ"
+
+#~ msgid "Pin"
+#~ msgstr "Pin"
+
+#~ msgid "Control"
+#~ msgstr "Kuntrull"
+
+#~ msgid "Response in I/O space"
+#~ msgstr "Antwoort binnen I/U-Ruum"
+
+#~ msgid "Response in memory space"
+#~ msgstr "Antwoort binnen Spieker-Ruum"
+
+#~ msgid "Bus mastering"
+#~ msgstr "Busstüern"
+
+#~ msgid "Response to special cycles"
+#~ msgstr "Antwoort op besünner Lööp"
+
+#~ msgid "Memory write and invalidate"
+#~ msgstr "Na Spieker schrieven un leeg maken"
+
+#~ msgid "Palette snooping"
+#~ msgstr "Palett utsnuppen"
+
+#~ msgid "Parity checking"
+#~ msgstr "Pariteet pröven"
+
+#~ msgid "Address/data stepping"
+#~ msgstr "Adress-/Datenschritt"
+
+#~ msgid "System error"
+#~ msgstr "Systeemfehler"
+
+#~ msgid "Back-to-back writes"
+#~ msgstr "Achtern-na-Achtern-Schrieven"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Interrupt status"
+#~ msgstr "Interrupt-Status"
+
+#~ msgid "Capability list"
+#~ msgstr "Könenlist"
+
+#~ msgid "66 MHz PCI 2.1 bus"
+#~ msgstr "66 MHz PCI 2.1-Bus"
+
+#~ msgid "User-definable features"
+#~ msgstr "Brukerfunkschonen"
+
+#~ msgid "Accept fast back-to-back"
+#~ msgstr "Gau Achtern-na-Achtern tolaten"
+
+#~ msgid "Data parity error"
+#~ msgstr "Datenpariteet-Fehler"
+
+#~ msgid "Device selection timing"
+#~ msgstr "Reedschap-Utsööktieden"
+
+#~ msgid "Signaled target abort"
+#~ msgstr "Teelafbrook anseggt"
+
+#~ msgid "Received target abort"
+#~ msgstr "Teelafbrook kregen"
+
+#~ msgid "Received master abort"
+#~ msgstr "Hööftafbrook kregen"
+
+#~ msgid "Signaled system error"
+#~ msgstr "Systeemfehler anseggt"
+
+#~ msgid "Parity error"
+#~ msgstr "Pariteetfehler"
+
+#~ msgid "Latency"
+#~ msgstr "Töövtiet"
+
+#~ msgid "MIN_GNT"
+#~ msgstr "MIN_GNT"
+
+#~ msgid "No major requirements (0x00)"
+#~ msgstr "Nix wieder nödig (0x00)"
+
+#~ msgid "MAX_LAT"
+#~ msgstr "MAX_LAT"
+
+#~ msgid "Header"
+#~ msgstr "Kopp"
+
+#~ msgid "Type"
+#~ msgstr "Typ"
+
+#~ msgid "Multifunctional"
+#~ msgstr "Mehrfachfunkschoon"
+
+#~ msgid "Build-in self test"
+#~ msgstr "Inbuut Sülvsttest"
+
+#~ msgid "BIST Capable"
+#~ msgstr "InSt mööglich"
+
+#~ msgid "BIST Start"
+#~ msgstr "InSt starten"
+
+#~ msgid "Completion code"
+#~ msgstr "Heelmaak-Kode"
+
+#~ msgid "Size"
+#~ msgstr "Grött"
+
+#~ msgid "Address mappings"
+#~ msgstr "Adress-Afbiller"
+
+#~ msgid "Mapping %1"
+#~ msgstr "Afbild %1"
+
+#~ msgid "Space"
+#~ msgstr "Freeruum"
+
+#~ msgid "I/O"
+#~ msgstr "I/U"
+
+#~ msgid "Memory"
+#~ msgstr "Spieker"
+
+#~ msgid "Prefetchable"
+#~ msgstr "Vörhaalbor"
+
+#~ msgid "Address"
+#~ msgstr "Adress"
+
+#~ msgctxt "unassigned address"
+#~ msgid "Unassigned"
+#~ msgstr "Nich towiest"
+
+#~ msgctxt "unassigned size"
+#~ msgid "Unassigned"
+#~ msgstr "Nich towiest"
+
+#~ msgid "Bus"
+#~ msgstr "Bus"
+
+#~ msgid "Primary bus number"
+#~ msgstr "Eerst Busnummer"
+
+#~ msgid "Secondary bus number"
+#~ msgstr "Tweet Busnummer"
+
+#~ msgid "Subordinate bus number"
+#~ msgstr "Ünnerornt Busnummer"
+
+#~ msgid "Secondary latency timer"
+#~ msgstr "Tweet Töövtietklock"
+
+#~ msgid "CardBus number"
+#~ msgstr "CardBus-Nummer"
+
+#~ msgid "CardBus latency timer"
+#~ msgstr "CardBus-Töövtietklock"
+
+#~ msgid "Secondary status"
+#~ msgstr "Tweet Status"
+
+#~ msgid "I/O behind bridge"
+#~ msgstr "I/U achter Brüch"
+
+#~ msgid "32-bit"
+#~ msgstr "32-Bit"
+
+#~ msgid "Base"
+#~ msgstr "Basis"
+
+#~ msgid "Limit"
+#~ msgstr "Grenz"
+
+#~ msgid "Memory behind bridge"
+#~ msgstr "Spieker achter Brüch"
+
+#~ msgid "Prefetchable memory behind bridge"
+#~ msgstr "Vörhaalbor Spieker achter Brüch"
+
+#~ msgid "64-bit"
+#~ msgstr "64-Bit"
+
+#~ msgid "Bridge control"
+#~ msgstr "Brüchkuntrull"
+
+#~ msgid "Secondary parity checking"
+#~ msgstr "Tweet Pariteetprööv"
+
+#~ msgid "Secondary system error"
+#~ msgstr "Tweet Systeemfehler"
+
+#~ msgid "ISA ports forwarding"
+#~ msgstr "Wiederledden vun ISA-Porten"
+
+#~ msgid "VGA forwarding"
+#~ msgstr "VGA-Wiederledden"
+
+#~ msgid "Master abort"
+#~ msgstr "Hööftafbrook"
+
+#~ msgid "Secondary bus reset"
+#~ msgstr "Tweet Bus torüchsetten"
+
+#~ msgid "Secondary back-to-back writes"
+#~ msgstr "Tweet Achtern-na-Achtern-Schrieven"
+
+#~ msgid "Primary discard timer counts"
+#~ msgstr "Eerst Wegsmietklock-Tieden"
+
+#~ msgid "2e10 PCI clocks"
+#~ msgstr "2e10 PCI-Tieden"
+
+#~ msgid "2e15 PCI clocks"
+#~ msgstr "2e15 PCI-Tieden"
+
+#~ msgid "Secondary discard timer counts"
+#~ msgstr "Tweet Wegsmietklock-Tieden"
+
+#~ msgid "Discard timer error"
+#~ msgstr "Wegsmietklock-Fehler"
+
+#~ msgid "Discard timer system error"
+#~ msgstr "Wegsmietklock-Systeemfehler"
+
+#~ msgid "Expansion ROM"
+#~ msgstr "Verwiedern-ROM"
+
+#~ msgid "Memory windows"
+#~ msgstr "Spiekerfinstern"
+
+#~ msgid "Window %1"
+#~ msgstr "Finster %1"
+
+#~ msgid "I/O windows"
+#~ msgstr "I/U-Finstern"
+
+#~ msgid "16-bit"
+#~ msgstr "16-Bit"
+
+#~ msgid "16-bit legacy interface ports"
+#~ msgstr "Oolt 16-Bit Koppelsteedporten"
+
+#~ msgid "CardBus control"
+#~ msgstr "CardBus-Kuntrull"
+
+#~ msgid "Interrupts for 16-bit cards"
+#~ msgstr "Interrupts för 16-Bit-Koorten"
+
+#~ msgid "Window 0 prefetchable memory"
+#~ msgstr "Finster 0 - vörhaalbor Spieker"
+
+#~ msgid "Window 1 prefetchable memory"
+#~ msgstr "Finster 1 - vörhaalbor Spieker"
+
+#~ msgid "Post writes"
+#~ msgstr "Naschrieven"
+
+#~ msgid "Raw PCI config space"
+#~ msgstr "PCI-Rohinstellen"
+
+#~ msgid "Capabilities"
+#~ msgstr "Könen"
+
+#~ msgid "Version"
+#~ msgstr "Verschoon"
+
+#~ msgid "Clock required for PME generation"
+#~ msgstr "Klock nödig för't Opstellen vun PME"
+
+#~ msgid "Device-specific initialization required"
+#~ msgstr "Besünner Reedschap-egen Torechtmaken nödig"
+
+#~ msgid "Maximum auxiliary current required in D3 cold"
+#~ msgstr "Tohööchst tolaten Hülpstroom binnen D3_koolt nödig"
+
+#~ msgid "D1 support"
+#~ msgstr "D1-Ünnerstütten"
+
+#~ msgid "D2 support"
+#~ msgstr "D2-Ünnerstütten"
+
+#~ msgid "Power management events"
+#~ msgstr "Stroomkuntrull-Begeefnissen"
+
+#~ msgid "D0"
+#~ msgstr "D0"
+
+#~ msgid "D1"
+#~ msgstr "D1"
+
+#~ msgid "D2"
+#~ msgstr "D2"
+
+#~ msgid "D3 hot"
+#~ msgstr "D3_hitt"
+
+#~ msgid "D3 cold"
+#~ msgstr "D3_koolt"
+
+#~ msgid "Power state"
+#~ msgstr "Stroomkuntrull-Tostand"
+
+#~ msgid "Power management"
+#~ msgstr "Stroomkuntrull"
+
+#~ msgid "Data select"
+#~ msgstr "Datenköör"
+
+#~ msgid "Data scale"
+#~ msgstr "Datenskala"
+
+#~ msgid "Power management status"
+#~ msgstr "Stroomkuntrull-Status"
+
+#~ msgid "Bridge status"
+#~ msgstr "Brüch-Status"
+
+#~ msgid "Secondary bus state in D3 hot"
+#~ msgstr "Tweet Bus in Status D3_hitt"
+
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgid "Secondary bus power & clock control"
+#~ msgstr "Stroom- un Klockkuntrull tweet Bus"
+
+#~ msgid "Data"
+#~ msgstr "Daten"
+
+#~ msgid "Revision"
+#~ msgstr "Revischoon"
+
+#~ msgid "Rate"
+#~ msgstr "Gauheit"
+
+#~ msgid "AGP 3.0 mode"
+#~ msgstr "AGP-3.0-Bedrief"
+
+#~ msgid "Fast Writes"
+#~ msgstr "Gaue Schrieven"
+
+#~ msgid "Address over 4 GiB"
+#~ msgstr "Adress över 4GiB"
+
+#~ msgid "Translation of host processor access"
+#~ msgstr "Reeknerperzesser-Togriep överdregen"
+
+#~ msgid "64-bit GART"
+#~ msgstr "64-Bit GART"
+
+#~ msgid "Cache Coherency"
+#~ msgstr "Twischenspieker-Kohärens"
+
+#~ msgid "Side-band addressing"
+#~ msgstr "Sietband-Adresseren"
+
+#~ msgid "Calibrating cycle"
+#~ msgstr "Afstimmloop"
+
+#~ msgid "Optimum asynchronous request size"
+#~ msgstr "Best asynkroon Anfraaggrött"
+
+#~ msgid "Isochronous transactions"
+#~ msgstr "Tietlieke Överdregen"
+
+#~ msgid "Maximum number of AGP command"
+#~ msgstr "Gröttst Tall för AGP-Befehl"
+
+#~ msgid "Configuration"
+#~ msgstr "Instellen"
+
+#~ msgid "AGP"
+#~ msgstr "AGP"
+
+#~ msgid "Data address"
+#~ msgstr "Datenadress"
+
+#~ msgid "Transfer completed"
+#~ msgstr "Överdregen afslaten"
+
+#~ msgid "Message control"
+#~ msgstr "Narichtenkuntrull"
+
+#~ msgid "Message signaled interrupts"
+#~ msgstr "Narichtanseggt Interrupts"
+
+#~ msgid "Multiple message capable"
+#~ msgstr "Mehrfachnaricht mööglich"
+
+#~ msgid "Multiple message enable"
+#~ msgstr "Mehrfachnaricht anmaken"
+
+#~ msgid "64-bit address"
+#~ msgstr "64-Bit-Adress"
+
+#~ msgid "Per vector masking"
+#~ msgstr "Maskeren per Vektor"
+
+#~ msgid "Mask"
+#~ msgstr "Mask"
+
+#~ msgid "Pending"
+#~ msgstr "Utstahn"
+
+#~ msgid "Length"
+#~ msgstr "Längde"
+
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "Keen"
+
+#~ msgid "Next"
+#~ msgstr "Nakamen"
+
+#~ msgid "0x00 (None)"
+#~ msgstr "0x00 (keen)"
+
+#~ msgid "Root only"
+#~ msgstr "Bloots Wörtel"
+
+#~ msgid "Value"
+#~ msgstr "Weert"
+
+#~ msgid "Cache line size"
+#~ msgstr "Twischenspiekerreeg-Grött"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Enabled"
+#~ msgstr "Anmaakt"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Disabled"
+#~ msgstr "Utmaakt"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Yes"
+#~ msgstr "Jo"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "Nee"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Unknown"
+#~ msgstr "Nich begäng"
+
+#~ msgid "Unclassified device"
+#~ msgstr "Reedschap ahn Klass"
+
+#~ msgid "Mass storage controller"
+#~ msgstr "Bültspieker-Stüerreedschap"
+
+#~ msgid "Network controller"
+#~ msgstr "Nettwark-Stüerreedschap"
+
+#~ msgid "Display controller"
+#~ msgstr "Dorstellen-Stüerreedschap"
+
+#~ msgid "Multimedia controller"
+#~ msgstr "Multimedia-Stüerreedschap"
+
+#~ msgid "Memory controller"
+#~ msgstr "Spieker-Stüerreedschap"
+
+#~ msgid "Bridge"
+#~ msgstr "Brüch"
+
+#~ msgid "Communication controller"
+#~ msgstr "Överdregen-Stüerreedschap"
+
+#~ msgid "Generic system peripheral"
+#~ msgstr "Allmeen Systeemreedschap"
+
+#~ msgid "Input device controller"
+#~ msgstr "Ingaavreedschappen-Stüerreedschap"
+
+#~ msgid "Docking station"
+#~ msgstr "Dockstatschoon"
+
+#~ msgid "Processor"
+#~ msgstr "Perzesser"
+
+#~ msgid "Serial bus controller"
+#~ msgstr "Stüerreedschap för en seriell Bus"
+
+#~ msgid "Wireless controller"
+#~ msgstr "Funk-Stüerreedschap"
+
+#~ msgid "Intelligent controller"
+#~ msgstr "Plietsch Stüerreedschap"
+
+#~ msgid "Satellite communications controller"
+#~ msgstr "Satellitenfunk-Stüerreedschap"
+
+#~ msgid "Encryption controller"
+#~ msgstr "Verslötel-Stüerreedschap"
+
+#~ msgid "Signal processing controller"
+#~ msgstr "Signaalverarbeiden-Stüerreedschap"
+
+#, fuzzy
+#~| msgid "Co-processor"
+#~ msgid "Coprocessor"
+#~ msgstr "Ko-Perzesser"
+
+#, fuzzy
+#~| msgctxt "unassigned address"
+#~| msgid "Unassigned"
+#~ msgid "Unassigned class"
+#~ msgstr "Nich towiest"
+
+#~ msgid "Unknown device class"
+#~ msgstr "Nich begäng Reedschapklass"
+
+#~ msgid "Non-VGA unclassified device"
+#~ msgstr "Nich-VGA-Reedschap ahn Klass"
+
+#~ msgid "VGA unclassified device"
+#~ msgstr "VGA-Reedschap ahn Klass"
+
+#~ msgid "Unknown unclassified device"
+#~ msgstr "Nich begäng Reedschap ahn Klass"
+
+#~ msgid "SCSI storage controller"
+#~ msgstr "SCSI-Spieker-Stüerreedschap"
+
+#~ msgid "IDE controller"
+#~ msgstr "IDE-Stüerreedschap"
+
+#~ msgid "Floppy disk controller"
+#~ msgstr "Disketten-Stüerreedschap"
+
+#~ msgid "IPI bus controller"
+#~ msgstr "IPI-Bus-Stüerreedschap"
+
+#~ msgid "RAID bus controller"
+#~ msgstr "RAID-Bus-Stüerreedschap"
+
+#~ msgid "ATA controller"
+#~ msgstr "ATA-Stüerreedschap"
+
+#, fuzzy
+#~| msgid "ATA controller"
+#~ msgid "SATA controller"
+#~ msgstr "ATA-Stüerreedschap"
+
+#, fuzzy
+#~| msgid "Serial controller"
+#~ msgid "Serial Attached SCSI controller"
+#~ msgstr "Seriell Stüerreedschap"
+
+#, fuzzy
+#~| msgid "Unknown memory controller"
+#~ msgid "Non-Volatile memory controller"
+#~ msgstr "Nich begäng Spieker-Stüerreedschap"
+
+#~ msgid "Unknown storage controller"
+#~ msgstr "Nich begäng Spieker-Stüerreedschap"
+
+#~ msgid "Ethernet controller"
+#~ msgstr "Ethernet-Stüerreedschap"
+
+#~ msgid "Token ring network controller"
+#~ msgstr "Token-Krink-Nettwark-Stüerreedschap"
+
+#~ msgid "FDDI network controller"
+#~ msgstr "FDDI-Nettwark-Stüerreedschap"
+
+#~ msgid "ATM network controller"
+#~ msgstr "ATM-Nettwark-Stüerreedschap"
+
+#~ msgid "ISDN controller"
+#~ msgstr "ISDN-Stüerreedschap"
+
+#~ msgid "WorldFip controller"
+#~ msgstr "WorldFip-Stüerreedschap"
+
+#, fuzzy
+#~| msgid "IDE controller"
+#~ msgid "PICMG controller"
+#~ msgstr "IDE-Stüerreedschap"
+
+#, fuzzy
+#~| msgid "Keyboard controller"
+#~ msgid "Infiniband controller"
+#~ msgstr "CardBus-Kuntrull"
+
+#, fuzzy
+#~| msgid "RF controller"
+#~ msgid "Fabric controller"
+#~ msgstr "Funkfrequenz-Stüerreedschap"
+
+#~ msgid "Unknown network controller"
+#~ msgstr "Nich begäng Nettwark-Stüerreedschap"
+
+#~ msgid "VGA compatible controller"
+#~ msgstr "VGA-kompatibel Stüerreedschap"
+
+#~ msgid "XGA compatible controller"
+#~ msgstr "XGA-kompatibel Stüerreedschap"
+
+#~ msgid "3D controller"
+#~ msgstr "3D-Stüerreedschap"
+
+#~ msgid "Unknown display controller"
+#~ msgstr "Nich begäng Dorstellen-Stüerreedschap"
+
+#~ msgid "Multimedia video controller"
+#~ msgstr "Multimedia-Video-Stüerreedschap"
+
+#~ msgid "Multimedia audio controller"
+#~ msgstr "Multimedia-Klang-Stüerreedschap"
+
+#~ msgid "Computer telephony device"
+#~ msgstr "Reeknertelefoon-Reedschap"
+
+#, fuzzy
+#~| msgid "Secure device"
+#~ msgid "Audio device"
+#~ msgstr "Seker Reedschap"
+
+#~ msgid "Unknown multimedia controller"
+#~ msgstr "Nich begäng Multimedia-Stüerreedschap"
+
+#~ msgid "RAM memory"
+#~ msgstr "RAM-Spieker"
+
+#~ msgid "FLASH memory"
+#~ msgstr "Flash-Spieker"
+
+#~ msgid "Unknown memory controller"
+#~ msgstr "Nich begäng Spieker-Stüerreedschap"
+
+#~ msgid "Host bridge"
+#~ msgstr "Reeknerbrüch"
+
+#~ msgid "ISA bridge"
+#~ msgstr "ISA-Brüch"
+
+#~ msgid "EISA bridge"
+#~ msgstr "EISA-Brüch"
+
+#~ msgid "MicroChannel bridge"
+#~ msgstr "MicroChannel-Brüch"
+
+#~ msgid "PCI bridge"
+#~ msgstr "PCI-Brüch"
+
+#~ msgid "PCMCIA bridge"
+#~ msgstr "PCMCIA-Brüch"
+
+#~ msgid "NuBus bridge"
+#~ msgstr "NuBus-Brüch"
+
+#~ msgid "CardBus bridge"
+#~ msgstr "CardBus-Brüch"
+
+#~ msgid "RACEway bridge"
+#~ msgstr "RACEway-Brüch"
+
+#~ msgid "Semi-transparent PCI-to-PCI bridge"
+#~ msgstr "Halfdörsichtig PCI-na-PCI-Brüch"
+
+#~ msgid "InfiniBand to PCI host bridge"
+#~ msgstr "InfiniBand-na-PCI-Reeknerbrüch"
+
+#~ msgid "Unknown bridge"
+#~ msgstr "Nich begäng Brüch"
+
+#~ msgid "Serial controller"
+#~ msgstr "Seriell Stüerreedschap"
+
+#~ msgid "Parallel controller"
+#~ msgstr "Parallel-Stüerreedschap"
+
+#~ msgid "Multiport serial controller"
+#~ msgstr "Seriell Mehrporten-Stüerreedschap"
+
+#~ msgid "Modem"
+#~ msgstr "Modem"
+
+#, fuzzy
+#~| msgid "USB controller"
+#~ msgid "GPIB controller"
+#~ msgstr "USB-Stüerreedschap"
+
+#, fuzzy
+#~| msgid "Scanner controller"
+#~ msgid "Smart card controller"
+#~ msgstr "Inleser-Stüerreedschap"
+
+#~ msgid "Unknown communication controller"
+#~ msgstr "Nich begäng Överdregen-Stüerreedschap"
+
+#~ msgid "PIC"
+#~ msgstr "PIC"
+
+#~ msgid "DMA controller"
+#~ msgstr "DMA-Stüerreedschap"
+
+#~ msgid "Timer"
+#~ msgstr "Tietgever"
+
+#~ msgid "RTC"
+#~ msgstr "RTC"
+
+#~ msgid "PCI Hot-plug controller"
+#~ msgstr "PCI-Hitttokoppel-Stüerreedschap"
+
+#, fuzzy
+#~| msgid "ISDN controller"
+#~ msgid "SD Host controller"
+#~ msgstr "ISDN-Stüerreedschap"
+
+#~ msgid "Unknown system peripheral"
+#~ msgstr "Nich begäng Systeemreedschap"
+
+#~ msgid "Keyboard controller"
+#~ msgstr "CardBus-Kuntrull"
+
+#~ msgid "Digitizer Pen"
+#~ msgstr "Digitaalstift"
+
+#~ msgid "Mouse controller"
+#~ msgstr "Muus-Stüerreedschap"
+
+#~ msgid "Scanner controller"
+#~ msgstr "Inleser-Stüerreedschap"
+
+#~ msgid "Gameport controller"
+#~ msgstr "Speelport-Stüerreedschap"
+
+#~ msgid "Unknown input device controller"
+#~ msgstr "Nich begäng Ingaavreedschap-Stüerreedschap"
+
+#~ msgid "Generic docking station"
+#~ msgstr "Allmeen Dockstatschoon"
+
+#~ msgid "Unknown docking station"
+#~ msgstr "Nich begäng Dockstatschoon"
+
+#~ msgid "386"
+#~ msgstr "386"
+
+#~ msgid "486"
+#~ msgstr "486"
+
+#~ msgid "Pentium"
+#~ msgstr "Pentium"
+
+#~ msgid "Alpha"
+#~ msgstr "Alpha"
+
+#~ msgid "Power PC"
+#~ msgstr "PowerPC"
+
+#~ msgid "MIPS"
+#~ msgstr "MIPS"
+
+#~ msgid "Co-processor"
+#~ msgstr "Ko-Perzesser"
+
+#~ msgid "Unknown processor"
+#~ msgstr "Nich begäng Perzesser"
+
+#~ msgid "FireWire (IEEE 1394)"
+#~ msgstr "FireWire (IEEE 1394)"
+
+#~ msgid "ACCESS bus"
+#~ msgstr "ACCESS-Bus"
+
+#~ msgid "SSA"
+#~ msgstr "SSA"
+
+#~ msgid "USB controller"
+#~ msgstr "USB-Stüerreedschap"
+
+#~ msgid "Fibre channel"
+#~ msgstr "Fibre Channel"
+
+#~ msgid "SMBus"
+#~ msgstr "SMBus"
+
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#~ msgid "IPMI interface"
+#~ msgstr "IPMI-Koppelsteed"
+
+#~ msgid "SERCOS interface"
+#~ msgstr "SERCOS-Koppelsteed"
+
+#~ msgid "CANbus"
+#~ msgstr "CANbus"
+
+#~ msgid "Unknown serial bus controller"
+#~ msgstr "Nich begäng seriell Bus-Stüerreedschap"
+
+#~ msgid "IRDA controller"
+#~ msgstr "IRDA-Stüerreedschap"
+
+#~ msgid "Consumer IR controller"
+#~ msgstr "Bruker-IR-Stüerreedschap"
+
+#~ msgid "RF controller"
+#~ msgstr "Funkfrequenz-Stüerreedschap"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Broadband"
+#~ msgstr "Breedband"
+
+#~ msgid "Ethernet (802.11a - 5 GHz)"
+#~ msgstr "Ethernet (802.11a - 5 GHz)"
+
+#~ msgid "Ethernet (802.11b - 2.4 GHz)"
+#~ msgstr "Ethernet (802.11b - 2.4 GHz)"
+
+#~ msgid "Unknown wireless controller"
+#~ msgstr "Nich begäng Funk-Stüerreedschap"
+
+#~ msgid "I2O"
+#~ msgstr "I2O"
+
+#~ msgid "Unknown intelligent controller"
+#~ msgstr "Nich begäng plietsch Stüerreedschap"
+
+#~ msgid "Satellite TV controller"
+#~ msgstr "Satelliten-TV-Stüerreedschap"
+
+#~ msgid "Satellite audio communication controller"
+#~ msgstr "Satelliten-Klangöverdregen-Stüerreedschap"
+
+#~ msgid "Satellite voice communication controller"
+#~ msgstr "Satelliten-Spraaköverdregen-Stüerreedschap"
+
+#~ msgid "Satellite data communication controller"
+#~ msgstr "Satelliten-Datenöverdregen-Stüerreedschap"
+
+#~ msgid "Unknown satellite communications controller"
+#~ msgstr "Nich begäng Satellitenöverdregen-Stüerreedschap"
+
+#~ msgid "Network and computing encryption device"
+#~ msgstr "Nettwark- un Reekner-Verslötelreedschap"
+
+#~ msgid "Entertainment encryption device"
+#~ msgstr "Höög-Verslötelreedschap"
+
+#~ msgid "Unknown encryption controller"
+#~ msgstr "Nich begäng Verslötelreedschap"
+
+#~ msgid "DPIO module"
+#~ msgstr "DPIO-Moduul"
+
+#~ msgid "Performance counters"
+#~ msgstr "Leisten-Klocken"
+
+#~ msgid "Communication synchronizer"
+#~ msgstr "Överdregen-Synkroniseren"
+
+#, fuzzy
+#~| msgid "Signal processing controller"
+#~ msgid "Signal processing management"
+#~ msgstr "Signaalverarbeiden-Stüerreedschap"
+
+#~ msgid "Unknown signal processing controller"
+#~ msgstr "Nich begäng Signaalverarbeiden-Verarbeiden"
+
+#, fuzzy
+#~| msgid "Unknown processor"
+#~ msgid "Unknown processing accelerator"
+#~ msgstr "Nich begäng Perzesser"
+
+#~ msgid "Unknown subdevice class"
+#~ msgstr "Nich begäng Ünnerreedschap-Klass"
+
+#, fuzzy
+#~| msgid "VGA compatible controller"
+#~ msgid "ISA Compatibility mode-only controller"
+#~ msgstr "VGA-kompatibel Stüerreedschap"
+
+#, fuzzy
+#~| msgid "PCI Hot-plug controller"
+#~ msgid "PCI native mode-only controller"
+#~ msgstr "PCI-Hitttokoppel-Stüerreedschap"
+
+#~ msgid "Vendor specific"
+#~ msgstr "Vun Maker afhangig"
+
+#, fuzzy
+#~| msgid "PCI express"
+#~ msgid "NVM Express"
+#~ msgstr "PCI-Express"
+
+#, fuzzy
+#~| msgid "ATA controller"
+#~ msgid "VGA controller"
+#~ msgstr "ATA-Stüerreedschap"
+
+#, fuzzy
+#~| msgid "3D controller"
+#~ msgid "8514 controller"
+#~ msgstr "3D-Stüerreedschap"
+
+#~ msgid "Normal decode"
+#~ msgstr "Normaal Opslöteln"
+
+#~ msgid "Subtractive decode"
+#~ msgstr "Aftrecken Opslöteln"
+
+#~ msgid "Transparent mode"
+#~ msgstr "Dörsichtig Bedrief"
+
+#~ msgid "Endpoint mode"
+#~ msgstr "Ennpunkt-Bedrief"
+
+#~ msgid "Primary bus towards host CPU"
+#~ msgstr "Hööftbus na Reekner-CPU"
+
+#~ msgid "Secondary bus towards host CPU"
+#~ msgstr "Tweet Bus na Reekner-CPU"
+
+#~ msgid "8250"
+#~ msgstr "8250"
+
+#~ msgid "16450"
+#~ msgstr "16450"
+
+#~ msgid "16550"
+#~ msgstr "16550"
+
+#~ msgid "16650"
+#~ msgstr "16650"
+
+#~ msgid "16750"
+#~ msgstr "16750"
+
+#~ msgid "16850"
+#~ msgstr "16850"
+
+#~ msgid "16950"
+#~ msgstr "16950"
+
+#~ msgid "SPP"
+#~ msgstr "SPP"
+
+#~ msgid "BiDir"
+#~ msgstr "BiDir"
+
+#~ msgid "ECP"
+#~ msgstr "ECP"
+
+#~ msgid "IEEE1284"
+#~ msgstr "IEEE1284"
+
+#~ msgid "IEEE1284 Target"
+#~ msgstr "IEEE1284-Teel"
+
+#~ msgid "Generic"
+#~ msgstr "Allmeen"
+
+#~ msgid "Hayes/16450"
+#~ msgstr "Hayes/16450"
+
+#~ msgid "Hayes/16550"
+#~ msgstr "Hayes/16550"
+
+#~ msgid "Hayes/16650"
+#~ msgstr "Hayes/16650"
+
+#~ msgid "Hayes/16750"
+#~ msgstr "Hayes/16750"
+
+#~ msgid "8259"
+#~ msgstr "8259"
+
+#~ msgid "ISA PIC"
+#~ msgstr "ISA PIC"
+
+#~ msgid "EISA PIC"
+#~ msgstr "EISA PIC"
+
+#~ msgid "IO-APIC"
+#~ msgstr "IO-APIC"
+
+#~ msgid "IO(X)-APIC"
+#~ msgstr "IO(X)-APIC"
+
+#~ msgid "8237"
+#~ msgstr "8237"
+
+#~ msgid "ISA DMA"
+#~ msgstr "ISA DMA"
+
+#~ msgid "EISA DMA"
+#~ msgstr "EISA DMA"
+
+#~ msgid "8254"
+#~ msgstr "8254"
+
+#~ msgid "ISA timer"
+#~ msgstr "ISA-Tietgever"
+
+#~ msgid "EISA timers"
+#~ msgstr "EISA-Tietgevers"
+
+#~ msgid "ISA RTC"
+#~ msgstr "ISA RTC"
+
+#~ msgid "Extended"
+#~ msgstr "Verwiedert"
+
+#~ msgid "OHCI"
+#~ msgstr "OHCI"
+
+#~ msgid "UHCI"
+#~ msgstr "UHCI"
+
+#~ msgid "EHCI"
+#~ msgstr "EHCI"
+
+#~ msgid "Unspecified"
+#~ msgstr "Nich angeven"
+
+#~ msgid "USB Device"
+#~ msgstr "USB-Reedschap"
+
+#~ msgid "SMIC"
+#~ msgstr "SMIC"
+
+#~ msgid "Keyboard controller style"
+#~ msgstr "Tastatuur-Stüerreedschap-Stil"
+
+#~ msgid "Block transfer"
+#~ msgstr "Block-Överdregen"
+
+#~ msgid "Vital product data"
+#~ msgstr "Wichtig Produktdaten"
+
+#~ msgid "Slot identification"
+#~ msgstr "Slot-Kennen"
+
+#~ msgid "CompactPCI hot swap"
+#~ msgstr "CompactPCI-Hitttuusch"
+
+#~ msgid "HyperTransport"
+#~ msgstr "HyperTransport"
+
+#~ msgid "Debug port"
+#~ msgstr "Fehlersöök-Port"
+
+#~ msgid "CompactPCI central resource control"
+#~ msgstr "Zentraal CompactPCI-Ressourcenkuntrull"
+
+#~ msgid "PCI hot-plug"
+#~ msgstr "PCI-Hitttokoppeln"
+
+#~ msgid "AGP x8"
+#~ msgstr "AGP x8"
+
+#~ msgid "Secure device"
+#~ msgstr "Seker Reedschap"
+
+#~ msgid "PCI express"
+#~ msgstr "PCI-Express"
+
+#~ msgid "MSI-X"
+#~ msgstr "MSI-X"
+
+#~ msgid "Fast"
+#~ msgstr "Gau"
+
+#~ msgid "Medium"
+#~ msgstr "Middel"
+
+#~ msgid "Slow"
+#~ msgstr "Langsam"
+
+#~ msgid "32 bit"
+#~ msgstr "32-Bit"
+
+#~ msgid "Below 1M"
+#~ msgstr "Nerrn 1M"
+
+#~ msgid "64 bit"
+#~ msgstr "64-Bit"
+
+#~ msgid "Standard"
+#~ msgstr "Standard"
+
+#~ msgid "CardBus"
+#~ msgstr "CardBus"
+
+#~ msgid "1X"
+#~ msgstr "1X"
+
+#~ msgid "2X"
+#~ msgstr "2X"
+
+#~ msgid "1X & 2X"
+#~ msgstr "1X & 2X"
+
+#~ msgid "4X"
+#~ msgstr "4X"
+
+#~ msgid "1X & 4X"
+#~ msgstr "1X & 4X"
+
+#~ msgid "2X & 4X"
+#~ msgstr "2X & 4X"
+
+#~ msgid "1X & 2X & 4X"
+#~ msgstr "1X & 2X & 4X"
+
+#~ msgid "8X"
+#~ msgstr "8X"
+
+#~ msgid "4X & 8X"
+#~ msgstr "4X & 8X"
+
+#~ msgid "4 ms"
+#~ msgstr "4 ms"
+
+#~ msgid "16 ms"
+#~ msgstr "16 ms"
+
+#~ msgid "64 ms"
+#~ msgstr "64 ms"
+
+#~ msgid "256 ms"
+#~ msgstr "256 ms"
+
+#~ msgid "Not needed"
+#~ msgstr "Nich nödig"
+
+#~ msgid "0 (self powered)"
+#~ msgstr "0 (Egen Stroom)"
+
+#~ msgid "55 mA"
+#~ msgstr "55 mA"
+
+#~ msgid "100 mA"
+#~ msgstr "100 mA"
+
+#~ msgid "160 mA"
+#~ msgstr "160 mA"
+
+#~ msgid "220 mA"
+#~ msgstr "220 mA"
+
+#~ msgid "270 mA"
+#~ msgstr "270 mA"
+
+#~ msgid "320 mA"
+#~ msgstr "320 mA"
+
+#~ msgid "375 mA"
+#~ msgstr "375 mA"
+
+#~ msgid "1 vector"
+#~ msgstr "1 Vektor"
+
+#~ msgid "2 vectors"
+#~ msgstr "2 Vektoren"
+
+#~ msgid "4 vectors"
+#~ msgstr "4 Vektoren"
+
+#~ msgid "8 vectors"
+#~ msgstr "8 Vektoren"
+
+#~ msgid "16 vectors"
+#~ msgstr "16 Vektoren"
+
+#~ msgid "32 vectors"
+#~ msgstr "32 Vektoren"
+
+#~ msgid "Serial ATA direct port access"
+#~ msgstr "Seriell ATA-Direkt-Porttogriep"
+
+#~ msgid "PICMG 2.14 multi computing"
+#~ msgstr "PICMG-2.14-Mehrreekner-Nett"
+
+#~ msgid "GPIB (IEEE 488.1/2) controller"
+#~ msgstr "GPIB-(IEEE 488.1/2-)Stüerreedschap"
+
+#~ msgid "Smart card"
+#~ msgstr "Smartkoort"
+
+#~ msgid "System peripheral"
+#~ msgstr "Systeemreedschap"
+
+#~ msgid "Management card"
+#~ msgstr "Pleegkoort"
+
+#~ msgid "single DMA"
+#~ msgstr "Eenfach DMA"
+
+#~ msgid "chained DMA"
+#~ msgstr "Keden-DMA"
+
+#~ msgid "VGA compatible"
+#~ msgstr "VGA-kompatibel"
+
+#~ msgid "8514 compatible"
+#~ msgstr "8514-kompatibel"
+
+#~ msgid "KDE PCI Information Control Module"
+#~ msgstr "KDE-Kuntrullmoduul för PCI-Informatschonen"

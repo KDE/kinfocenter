@@ -1,0 +1,152 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeorg\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-14 00:46+0000\n"
+"PO-Revision-Date: 2022-09-20 01:55\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: kdeorg\n"
+"X-Crowdin-Project-ID: 269464\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /kf5-trunk/messages/kinfocenter/kcm_nic.pot\n"
+"X-Crowdin-File-ID: 24850\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "KDE 中国"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde-china@kde.org"
+
+#: networkmodel.cpp:159
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Point to Point"
+msgstr "点对点"
+
+#: networkmodel.cpp:166
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Broadcast"
+msgstr "广播"
+
+#: networkmodel.cpp:173
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Multicast"
+msgstr "多播"
+
+#: networkmodel.cpp:180
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Loopback"
+msgstr "回环"
+
+#: nic.cpp:21
+#, kde-format
+msgid "kcm_nic"
+msgstr "kcm_nic"
+
+#: nic.cpp:22
+#, kde-format
+msgctxt "@title:window"
+msgid "Network Interfaces"
+msgstr "网络接口"
+
+#: nic.cpp:26
+#, kde-format
+msgctxt "@info"
+msgid "(c) 2001 - 2002 Alexander Neundorf"
+msgstr "(c) 2001 - 2002 Alexander Neundorf"
+
+#: nic.cpp:28
+#, kde-format
+msgctxt "@info:credit"
+msgid "Alexander Neundorf"
+msgstr "Alexander Neundorf"
+
+#: nic.cpp:28
+#, kde-format
+msgctxt "@info:credit"
+msgid "creator"
+msgstr "创始人"
+
+#: nic.cpp:29
+#, kde-format
+msgctxt "@info:credit"
+msgid "Carl Schwan"
+msgstr "Carl Schwan"
+
+#: nic.cpp:29
+#, kde-format
+msgctxt "@info:credit"
+msgid "developer"
+msgstr "开发人员"
+
+#: package/contents/ui/main.qml:15
+#, kde-format
+msgid "Network Interfaces"
+msgstr "网络接口"
+
+#: package/contents/ui/main.qml:30
+#, kde-format
+msgctxt "@label"
+msgid "Name:"
+msgstr "名称："
+
+#: package/contents/ui/main.qml:34
+#, kde-format
+msgctxt "@label"
+msgid "Address:"
+msgstr "地址："
+
+#: package/contents/ui/main.qml:38
+#, kde-format
+msgctxt "@label"
+msgid "Network Mask:"
+msgstr "子网掩码："
+
+#: package/contents/ui/main.qml:42
+#, kde-format
+msgctxt "@label"
+msgid "Type:"
+msgstr "类型："
+
+#: package/contents/ui/main.qml:46
+#, kde-format
+msgctxt "@label"
+msgid "Hardware Address:"
+msgstr "硬件地址："
+
+#: package/contents/ui/main.qml:51
+#, kde-format
+msgctxt "@label"
+msgid "State:"
+msgstr "状态："
+
+#: package/contents/ui/main.qml:59
+#, kde-format
+msgctxt "State of network card is connected"
+msgid "Up"
+msgstr "已连接"
+
+#: package/contents/ui/main.qml:60
+#, kde-format
+msgctxt "State of network card is disconnected"
+msgid "Down"
+msgstr "已断开"
+
+#: package/contents/ui/main.qml:76
+#, kde-format
+msgctxt "@action:button"
+msgid "Refresh"
+msgstr "刷新"

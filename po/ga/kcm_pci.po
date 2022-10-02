@@ -1,0 +1,1334 @@
+# Irish translation of kcm_pci
+# Copyright (C) 2009 This_file_is_part_of_KDE
+# This file is distributed under the same license as the kcm_pci package.
+# Kevin Scannell <kscanne@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdebase/kcm_pci.po\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
+"PO-Revision-Date: 2008-04-15 10:38-0500\n"
+"Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
+"Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
+"Language: ga\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n < 11 ? "
+"3 : 4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Kevin Scannell"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kscanne@gmail.com"
+
+#: main.cpp:26
+#, fuzzy, kde-format
+#| msgid "PCI-X"
+msgctxt "@label kcm name"
+msgid "PCI"
+msgstr "PCI-X"
+
+#: main.cpp:27
+#, kde-format
+msgid "Harald Sitter"
+msgstr ""
+
+#: package/contents/ui/main.qml:14
+#, fuzzy
+#| msgid "Information"
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "Eolas"
+
+#~ msgid "kcm_pci"
+#~ msgstr "kcm_pci"
+
+#, fuzzy
+#~| msgid "Device"
+#~ msgid "PCI Devices"
+#~ msgstr "Gléas"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr "© 2008 Nicolas Ternisien © 1998 - 2002 Helge Deller"
+
+#~ msgid "Nicolas Ternisien"
+#~ msgstr "Nicolas Ternisien"
+
+#~ msgid "Helge Deller"
+#~ msgstr "Helge Deller"
+
+#~ msgid "This list displays PCI information."
+#~ msgstr "Taispeánann an liosta seo faisnéis PCI."
+
+#~ msgid ""
+#~ "This display shows information about your computer's PCI slots and the "
+#~ "related connected devices."
+#~ msgstr ""
+#~ "Taispeánann sé seo faisnéis maidir le sliotáin PCI do ríomhaire agus na "
+#~ "gléasanna atá ceangailte leo."
+
+#~ msgid "Device Class"
+#~ msgstr "Aicme Gléis"
+
+#~ msgid "Device Subclass"
+#~ msgstr "Fo-Aicme Gléasanna"
+
+#~ msgid "Device Programming Interface"
+#~ msgstr "Comhéadan Cláraithe Gléasanna"
+
+#~ msgid "Master IDE Device"
+#~ msgstr "Máistirghléas IDE"
+
+#~ msgid "Secondary programmable indicator"
+#~ msgstr "Táscaire tánaisteach inchláraithe"
+
+#~ msgid "Secondary operating mode"
+#~ msgstr "Mód tánaisteach oibríochta"
+
+#~ msgid "Primary programmable indicator"
+#~ msgstr "Príomhtháscaire inchláraithe"
+
+#~ msgid "Primary operating mode"
+#~ msgstr "Príomh-mhód oibríochta"
+
+#~ msgid "Vendor"
+#~ msgstr "Díoltóir"
+
+#~ msgid "Device"
+#~ msgstr "Gléas"
+
+#~ msgid "Subsystem"
+#~ msgstr "Fochóras"
+
+#~ msgid " - device:"
+#~ msgstr " - gléas:"
+
+#~ msgid "Interrupt"
+#~ msgstr "Idirbhriseadh"
+
+#~ msgid "IRQ"
+#~ msgstr "IRQ"
+
+#~ msgid "Pin"
+#~ msgstr "Pionna"
+
+#~ msgid "Control"
+#~ msgstr "Control"
+
+#~ msgid "Response in I/O space"
+#~ msgstr "Freagra i spás I/A"
+
+#~ msgid "Response in memory space"
+#~ msgstr "Freagra i spás cuimhne"
+
+#~ msgid "Bus mastering"
+#~ msgstr "Máistriú bus"
+
+#~ msgid "Response to special cycles"
+#~ msgstr "Freagra ar chiogail speisialta"
+
+#~ msgid "Memory write and invalidate"
+#~ msgstr "Scríobh cuimhne agus neamhbhailigh"
+
+#~ msgid "Palette snooping"
+#~ msgstr "Smúrthacht phailéid"
+
+#~ msgid "Parity checking"
+#~ msgstr "Seiceáil paireachta"
+
+#~ msgid "Address/data stepping"
+#~ msgstr "Céimniú seoltaí/sonraí"
+
+#~ msgid "System error"
+#~ msgstr "Earráid chórais"
+
+#~ msgid "Back-to-back writes"
+#~ msgstr "Scríobhanna i ndiaidh a chéile"
+
+#~ msgid "Status"
+#~ msgstr "Stádas"
+
+#~ msgid "Interrupt status"
+#~ msgstr "Stádas idirbhriste"
+
+#~ msgid "Capability list"
+#~ msgstr "Liosta ábaltachtaí"
+
+#~ msgid "66 MHz PCI 2.1 bus"
+#~ msgstr "Bus 66 MHz PCI 2.1"
+
+#~ msgid "User-definable features"
+#~ msgstr "Gnéithe insainithe ag an úsáideoir"
+
+#~ msgid "Accept fast back-to-back"
+#~ msgstr "Glac idirbhirt thapa i ndiaidh a chéile"
+
+#~ msgid "Data parity error"
+#~ msgstr "Earráid phaireachta sna sonraí"
+
+#~ msgid "Device selection timing"
+#~ msgstr "Comhrialú roghnaithe gléis"
+
+#~ msgid "Signaled target abort"
+#~ msgstr "Comharthaíodh tobscor sprice"
+
+#~ msgid "Received target abort"
+#~ msgstr "Fuarthas tobscor sprice"
+
+#~ msgid "Received master abort"
+#~ msgstr "Fuarthas máistirthobscor"
+
+#~ msgid "Signaled system error"
+#~ msgstr "Comharthaíodh earráid chórais"
+
+#~ msgid "Parity error"
+#~ msgstr "Earráid phaireachta"
+
+#~ msgid "Latency"
+#~ msgstr "Aga Folaigh"
+
+#~ msgid "MIN_GNT"
+#~ msgstr "MIN_GNT"
+
+#~ msgid "No major requirements (0x00)"
+#~ msgstr "Gan riachtanais mhóra (0x00)"
+
+#~ msgid "MAX_LAT"
+#~ msgstr "MAX_LAT"
+
+#~ msgid "Header"
+#~ msgstr "Ceanntásc"
+
+#~ msgid "Type"
+#~ msgstr "Cineál"
+
+#~ msgid "Multifunctional"
+#~ msgstr "Ilfheidhmeach"
+
+#~ msgid "Build-in self test"
+#~ msgstr "Féintástáil insuite"
+
+#~ msgid "BIST Capable"
+#~ msgstr "Acmhainn BIST"
+
+#~ msgid "BIST Start"
+#~ msgstr "Tosú BIST"
+
+#~ msgid "Completion code"
+#~ msgstr "Cód comhlánaithe"
+
+#~ msgid "Size"
+#~ msgstr "Méid"
+
+#~ msgid "Address mappings"
+#~ msgstr "Mapálacha seoltaí"
+
+#~ msgid "Mapping %1"
+#~ msgstr "Mapáil %1"
+
+#~ msgid "Space"
+#~ msgstr "Spás"
+
+#~ msgid "I/O"
+#~ msgstr "I/A"
+
+#~ msgid "Memory"
+#~ msgstr "Cuimhne"
+
+#~ msgid "Prefetchable"
+#~ msgstr "Réamh-infhaighte"
+
+#~ msgid "Address"
+#~ msgstr "Seoladh"
+
+#~ msgctxt "unassigned address"
+#~ msgid "Unassigned"
+#~ msgstr "Gan sannadh"
+
+#~ msgctxt "unassigned size"
+#~ msgid "Unassigned"
+#~ msgstr "Gan sannadh"
+
+#~ msgid "Bus"
+#~ msgstr "Bus"
+
+#~ msgid "Primary bus number"
+#~ msgstr "Uimhir an phríomhbhus"
+
+#~ msgid "Secondary bus number"
+#~ msgstr "Uimhir an bhus thánaistigh"
+
+#~ msgid "Subordinate bus number"
+#~ msgstr "Uimhir an bhus íochtaránaigh"
+
+#~ msgid "Secondary latency timer"
+#~ msgstr "Uaineadóir tánaisteach moillaga"
+
+#~ msgid "CardBus number"
+#~ msgstr "Uimhir CardBus"
+
+#~ msgid "CardBus latency timer"
+#~ msgstr "Uaineadóir moillaga CardBus"
+
+#~ msgid "Secondary status"
+#~ msgstr "Stádas tánaisteach"
+
+#~ msgid "I/O behind bridge"
+#~ msgstr "I/A ar chúl droichid"
+
+#~ msgid "32-bit"
+#~ msgstr "32-giotán"
+
+#~ msgid "Base"
+#~ msgstr "Bonn"
+
+#~ msgid "Limit"
+#~ msgstr "Teorainn"
+
+#~ msgid "Memory behind bridge"
+#~ msgstr "Cuimhne ar chúl droichid"
+
+#~ msgid "Prefetchable memory behind bridge"
+#~ msgstr "Cuimhne réamh-infhaighte ar chúl droichid"
+
+#~ msgid "64-bit"
+#~ msgstr "64-giotán"
+
+#~ msgid "Bridge control"
+#~ msgstr "Rialú droichid"
+
+#~ msgid "Secondary parity checking"
+#~ msgstr "Seiceáil thánaisteach paireachta"
+
+#~ msgid "Secondary system error"
+#~ msgstr "Earráid thánaisteach chórais"
+
+#~ msgid "ISA ports forwarding"
+#~ msgstr "Poirt ISA curtha ar aghaidh"
+
+#~ msgid "VGA forwarding"
+#~ msgstr "Cur ar aghaidh VGA"
+
+#~ msgid "Master abort"
+#~ msgstr "Máistirthobscor"
+
+#~ msgid "Secondary bus reset"
+#~ msgstr "Athshocrú bus tánaisteach"
+
+#~ msgid "Secondary back-to-back writes"
+#~ msgstr "Scríobhanna tánaisteacha i ndiaidh a chéile"
+
+#~ msgid "Primary discard timer counts"
+#~ msgstr "Cuntais an phríomhuaineadóra cuileála"
+
+#~ msgid "2e10 PCI clocks"
+#~ msgstr "Cloig PCI 2e10"
+
+#~ msgid "2e15 PCI clocks"
+#~ msgstr "Cloig PCI 2e15"
+
+#~ msgid "Secondary discard timer counts"
+#~ msgstr "Cuntais an uaineadóra thánaistigh chuileála"
+
+#~ msgid "Discard timer error"
+#~ msgstr "Earráid le huaineadóir cuileála"
+
+#~ msgid "Discard timer system error"
+#~ msgstr "Earráid chórais le huaineadóir cuileála"
+
+#~ msgid "Expansion ROM"
+#~ msgstr "ROM forlíonta"
+
+#~ msgid "Memory windows"
+#~ msgstr "Fuinneoga cuimhne"
+
+#~ msgid "Window %1"
+#~ msgstr "Fuinneog %1"
+
+#~ msgid "I/O windows"
+#~ msgstr "Fuinneoga I/A"
+
+#~ msgid "16-bit"
+#~ msgstr "16-giotán"
+
+#~ msgid "16-bit legacy interface ports"
+#~ msgstr "Poirt chomhéadain oidhreachta 16-giotán"
+
+#~ msgid "CardBus control"
+#~ msgstr "Rialú CardBus"
+
+#~ msgid "Interrupts for 16-bit cards"
+#~ msgstr "Idirbhristeacha le haghaidh cártaí 16-giotán"
+
+#~ msgid "Window 0 prefetchable memory"
+#~ msgstr "Cuimhne réamh-infhaighte: fuinneog 0"
+
+#~ msgid "Window 1 prefetchable memory"
+#~ msgstr "Cuimhne réamh-infhaighte: fuinneog 1"
+
+#~ msgid "Post writes"
+#~ msgstr "Postáil scríobhanna"
+
+#~ msgid "Raw PCI config space"
+#~ msgstr "Amhspás cumraíochta PCI"
+
+#~ msgid "Capabilities"
+#~ msgstr "Ábaltachtaí"
+
+#~ msgid "Version"
+#~ msgstr "Leagan"
+
+#~ msgid "Clock required for PME generation"
+#~ msgstr "Clog ag teastáil le haghaidh ghiniúint PME"
+
+#~ msgid "Device-specific initialization required"
+#~ msgstr "Túsú sainiúil don ghléas de dhíth"
+
+#~ msgid "Maximum auxiliary current required in D3 cold"
+#~ msgstr "Uasmhéid srutha leictrigh cúntaigh de dhíth sa staid \"D3 fuar\""
+
+#~ msgid "D1 support"
+#~ msgstr "Tacaíocht D1"
+
+#~ msgid "D2 support"
+#~ msgstr "Tacaíocht D2"
+
+#~ msgid "Power management events"
+#~ msgstr "Teagmhais bhainisteoireachta cumhachta"
+
+#~ msgid "D0"
+#~ msgstr "D0"
+
+#~ msgid "D1"
+#~ msgstr "D1"
+
+#~ msgid "D2"
+#~ msgstr "D2"
+
+#~ msgid "D3 hot"
+#~ msgstr "D3 te"
+
+#~ msgid "D3 cold"
+#~ msgstr "D3 fuar"
+
+#~ msgid "Power state"
+#~ msgstr "Staid chumhachta"
+
+# no lenition after abstract fem. noun
+#~ msgid "Power management"
+#~ msgstr "Bainisteoireacht cumhachta"
+
+#~ msgid "Data select"
+#~ msgstr "Roghnú sonraí"
+
+#~ msgid "Data scale"
+#~ msgstr "Scála sonraí"
+
+#~ msgid "Power management status"
+#~ msgstr "Stádas bainisteoireachta cumhachta"
+
+#~ msgid "Bridge status"
+#~ msgstr "Stádas droichid"
+
+#~ msgid "Secondary bus state in D3 hot"
+#~ msgstr "Staid an bhus thánaistigh sa staid \"D3 te\""
+
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgid "Secondary bus power & clock control"
+#~ msgstr "Rialú cumhachta agus cloig don bhus tánaisteach"
+
+#~ msgid "Data"
+#~ msgstr "Sonraí"
+
+#~ msgid "Revision"
+#~ msgstr "Leasú"
+
+#~ msgid "Rate"
+#~ msgstr "Ráta"
+
+#~ msgid "AGP 3.0 mode"
+#~ msgstr "Mód AGP 3.0"
+
+#~ msgid "Fast Writes"
+#~ msgstr "Scríobhanna Tapa"
+
+#~ msgid "Address over 4 GiB"
+#~ msgstr "Seoladh thar 4 GiB"
+
+#~ msgid "Translation of host processor access"
+#~ msgstr "Aistriúchán ar rochtain phróiseálaí an óstríomhaire"
+
+#~ msgid "64-bit GART"
+#~ msgstr "GART 64-giotán"
+
+#~ msgid "Cache Coherency"
+#~ msgstr "Comhleanúnachas Taisce"
+
+#~ msgid "Side-band addressing"
+#~ msgstr "Seoladh taobh-bhanda"
+
+#~ msgid "Calibrating cycle"
+#~ msgstr "Ciogal calabraithe"
+
+#~ msgid "Optimum asynchronous request size"
+#~ msgstr "Méid optamach d'iarratais aisioncrónacha"
+
+#~ msgid "Isochronous transactions"
+#~ msgstr "Idirbhirt iseacronacha"
+
+#~ msgid "Maximum number of AGP command"
+#~ msgstr "Líon uasta na n-orduithe AGP"
+
+#~ msgid "Configuration"
+#~ msgstr "Cumraíocht"
+
+#~ msgid "AGP"
+#~ msgstr "AGP"
+
+#~ msgid "Data address"
+#~ msgstr "Seoladh sonraí"
+
+#~ msgid "Transfer completed"
+#~ msgstr "Aistriú críochnaithe"
+
+#~ msgid "Message control"
+#~ msgstr "Rialú teachtaireachtaí"
+
+#~ msgid "Message signaled interrupts"
+#~ msgstr "Chomharthaigh teachtaireacht idirbhristeacha"
+
+#~ msgid "Multiple message capable"
+#~ msgstr "Ilteachtaireachtaí i gcumas"
+
+#~ msgid "Multiple message enable"
+#~ msgstr "Ilteachtaireachtaí cumasaithe"
+
+#~ msgid "64-bit address"
+#~ msgstr "Seoladh 64-giotán"
+
+#~ msgid "Per vector masking"
+#~ msgstr "Mascadh in aghaidh an veicteora"
+
+#~ msgid "Mask"
+#~ msgstr "Masc"
+
+#~ msgid "Pending"
+#~ msgstr "Ar Feitheamh"
+
+#~ msgid "Length"
+#~ msgstr "Fad"
+
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "Neamhní"
+
+#~ msgid "Next"
+#~ msgstr "Ar Aghaidh"
+
+#~ msgid "0x00 (None)"
+#~ msgstr "0x00 (Neamhní)"
+
+#~ msgid "Root only"
+#~ msgstr "Fréamh amháin"
+
+#~ msgid "Value"
+#~ msgstr "Luach"
+
+#~ msgid "Cache line size"
+#~ msgstr "Méid línte na taisce"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Enabled"
+#~ msgstr "Cumasaithe"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Disabled"
+#~ msgstr "Díchumasaithe"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Yes"
+#~ msgstr "Tá"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "Níl"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Unknown"
+#~ msgstr "Anaithnid"
+
+#~ msgid "Unclassified device"
+#~ msgstr "Gléas neamhrangaithe"
+
+#~ msgid "Mass storage controller"
+#~ msgstr "Rialaitheoir ollstórála"
+
+#~ msgid "Network controller"
+#~ msgstr "Rialaitheoir líonra"
+
+#~ msgid "Display controller"
+#~ msgstr "Rialaitheoir taispeána"
+
+#~ msgid "Multimedia controller"
+#~ msgstr "Rialaitheoir ilmheán"
+
+#~ msgid "Memory controller"
+#~ msgstr "Rialaitheoir cuimhne"
+
+#~ msgid "Bridge"
+#~ msgstr "Droichead"
+
+#~ msgid "Communication controller"
+#~ msgstr "Rialaitheoir cumarsáide"
+
+#~ msgid "Generic system peripheral"
+#~ msgstr "Forimeallach ginearálta"
+
+#~ msgid "Input device controller"
+#~ msgstr "Rialaitheoir gléis ionchurtha"
+
+#~ msgid "Docking station"
+#~ msgstr "Stáisiún nasctha"
+
+#~ msgid "Processor"
+#~ msgstr "Próiseálaí"
+
+#~ msgid "Serial bus controller"
+#~ msgstr "Rialaitheoir bus srathaigh"
+
+#~ msgid "Wireless controller"
+#~ msgstr "Rialaitheoir gan sreang"
+
+#~ msgid "Intelligent controller"
+#~ msgstr "Rialaitheoir cliste"
+
+#~ msgid "Satellite communications controller"
+#~ msgstr "Rialaitheoir cumarsáide satailíte"
+
+#~ msgid "Encryption controller"
+#~ msgstr "Rialaitheoir criptithe"
+
+#~ msgid "Signal processing controller"
+#~ msgstr "Rialaitheoir próiseála comhartha"
+
+#, fuzzy
+#~| msgid "Co-processor"
+#~ msgid "Coprocessor"
+#~ msgstr "Comhphróiseálaí"
+
+#, fuzzy
+#~| msgctxt "unassigned address"
+#~| msgid "Unassigned"
+#~ msgid "Unassigned class"
+#~ msgstr "Gan sannadh"
+
+#~ msgid "Unknown device class"
+#~ msgstr "Aicme anaithnid ghléis"
+
+#~ msgid "Non-VGA unclassified device"
+#~ msgstr "Gléas neamhrangaithe neamh-VGA"
+
+#~ msgid "VGA unclassified device"
+#~ msgstr "Gléas neamhrangaithe VGA"
+
+#~ msgid "Unknown unclassified device"
+#~ msgstr "Gléas anaithnid neamhrangaithe"
+
+#~ msgid "SCSI storage controller"
+#~ msgstr "Rialaitheoir stórála SCSI"
+
+#~ msgid "IDE controller"
+#~ msgstr "Rialaitheoir IDE"
+
+#~ msgid "Floppy disk controller"
+#~ msgstr "Rialaitheoir diosca flapaigh"
+
+#~ msgid "IPI bus controller"
+#~ msgstr "Rialaitheoir bus IPI"
+
+#~ msgid "RAID bus controller"
+#~ msgstr "Rialaitheoir bus RAID"
+
+#~ msgid "ATA controller"
+#~ msgstr "Rialaitheoir ATA"
+
+#, fuzzy
+#~| msgid "ATA controller"
+#~ msgid "SATA controller"
+#~ msgstr "Rialaitheoir ATA"
+
+#, fuzzy
+#~| msgid "Serial controller"
+#~ msgid "Serial Attached SCSI controller"
+#~ msgstr "Rialaitheoir srathach"
+
+#, fuzzy
+#~| msgid "Unknown memory controller"
+#~ msgid "Non-Volatile memory controller"
+#~ msgstr "Rialaitheoir anaithnid cuimhne"
+
+#~ msgid "Unknown storage controller"
+#~ msgstr "Rialaitheoir anaithnid stórála"
+
+#~ msgid "Ethernet controller"
+#~ msgstr "Rialaitheoir Ethernet"
+
+#~ msgid "Token ring network controller"
+#~ msgstr "Rialaitheoir líonra fáinne ceadchomharthaí"
+
+#~ msgid "FDDI network controller"
+#~ msgstr "Rialaitheoir líonra FDDI"
+
+#~ msgid "ATM network controller"
+#~ msgstr "Rialaitheoir líonra ATM"
+
+#~ msgid "ISDN controller"
+#~ msgstr "Rialaitheoir ISDN"
+
+#~ msgid "WorldFip controller"
+#~ msgstr "Rialaitheoir WorldFip"
+
+#, fuzzy
+#~| msgid "IDE controller"
+#~ msgid "PICMG controller"
+#~ msgstr "Rialaitheoir IDE"
+
+#, fuzzy
+#~| msgid "Keyboard controller"
+#~ msgid "Infiniband controller"
+#~ msgstr "Rialaitheoir méarchláir"
+
+#, fuzzy
+#~| msgid "RF controller"
+#~ msgid "Fabric controller"
+#~ msgstr "Rialaitheoir RF"
+
+#~ msgid "Unknown network controller"
+#~ msgstr "Rialaitheoir anaithnid líonra"
+
+#~ msgid "VGA compatible controller"
+#~ msgstr "Rialaitheoir comhoiriúnach do VGA"
+
+#~ msgid "XGA compatible controller"
+#~ msgstr "Rialaitheoir comhoiriúnach do XGA"
+
+#~ msgid "3D controller"
+#~ msgstr "Rialaitheoir 3T"
+
+#~ msgid "Unknown display controller"
+#~ msgstr "Rialaitheoir anaithnid taispeána"
+
+#~ msgid "Multimedia video controller"
+#~ msgstr "Rialaitheoir físe ilmheán"
+
+#~ msgid "Multimedia audio controller"
+#~ msgstr "Rialaitheoir fuaime ilmheán"
+
+#~ msgid "Computer telephony device"
+#~ msgstr "Gléas ríomhtheileafónaíochta"
+
+#, fuzzy
+#~| msgid "Secure device"
+#~ msgid "Audio device"
+#~ msgstr "Gléas slán"
+
+#~ msgid "Unknown multimedia controller"
+#~ msgstr "Rialaitheoir anaithnid ilmheán"
+
+#~ msgid "RAM memory"
+#~ msgstr "Cuimhne randamrochtana"
+
+#~ msgid "FLASH memory"
+#~ msgstr "Laomchuimhne"
+
+#~ msgid "Unknown memory controller"
+#~ msgstr "Rialaitheoir anaithnid cuimhne"
+
+#~ msgid "Host bridge"
+#~ msgstr "Droichead óstríomhaire"
+
+#~ msgid "ISA bridge"
+#~ msgstr "Droichead ISA"
+
+#~ msgid "EISA bridge"
+#~ msgstr "Droichead EISA"
+
+#~ msgid "MicroChannel bridge"
+#~ msgstr "Droichead micreachainéil"
+
+#~ msgid "PCI bridge"
+#~ msgstr "Droichead PCI"
+
+#~ msgid "PCMCIA bridge"
+#~ msgstr "Droichead PCMCIA"
+
+#~ msgid "NuBus bridge"
+#~ msgstr "Droichead NuBus"
+
+#~ msgid "CardBus bridge"
+#~ msgstr "Droichead CardBus"
+
+#~ msgid "RACEway bridge"
+#~ msgstr "Droichead RACEway"
+
+#~ msgid "Semi-transparent PCI-to-PCI bridge"
+#~ msgstr "Droichead leaththrédhearcach PCI-go-PCI"
+
+#~ msgid "InfiniBand to PCI host bridge"
+#~ msgstr "InfiniBand go dtí droichead óstríomhaire PCI"
+
+#~ msgid "Unknown bridge"
+#~ msgstr "Droichead anaithnid"
+
+#~ msgid "Serial controller"
+#~ msgstr "Rialaitheoir srathach"
+
+#~ msgid "Parallel controller"
+#~ msgstr "Rialaitheoir comhuaineach"
+
+#~ msgid "Multiport serial controller"
+#~ msgstr "Rialaitheoir srathach ilphort"
+
+#~ msgid "Modem"
+#~ msgstr "Móideim"
+
+#, fuzzy
+#~| msgid "USB controller"
+#~ msgid "GPIB controller"
+#~ msgstr "Rialaitheoir USB"
+
+#, fuzzy
+#~| msgid "Scanner controller"
+#~ msgid "Smart card controller"
+#~ msgstr "Rialaitheoir scanóra"
+
+#~ msgid "Unknown communication controller"
+#~ msgstr "Rialaitheoir anaithnid cumarsáide"
+
+#~ msgid "PIC"
+#~ msgstr "PIC"
+
+#~ msgid "DMA controller"
+#~ msgstr "Rialaitheoir DMA"
+
+#~ msgid "Timer"
+#~ msgstr "Uaineadóir"
+
+#~ msgid "RTC"
+#~ msgstr "RTC"
+
+#~ msgid "PCI Hot-plug controller"
+#~ msgstr "Rialaitheoir Hot-plug PCI"
+
+#, fuzzy
+#~| msgid "ISDN controller"
+#~ msgid "SD Host controller"
+#~ msgstr "Rialaitheoir ISDN"
+
+#~ msgid "Unknown system peripheral"
+#~ msgstr "Forimeallach anaithnid"
+
+#~ msgid "Keyboard controller"
+#~ msgstr "Rialaitheoir méarchláir"
+
+#~ msgid "Digitizer Pen"
+#~ msgstr "Peann Digitithe"
+
+#~ msgid "Mouse controller"
+#~ msgstr "Rialaitheoir luiche"
+
+#~ msgid "Scanner controller"
+#~ msgstr "Rialaitheoir scanóra"
+
+#~ msgid "Gameport controller"
+#~ msgstr "Rialaitheoir poirt chluiche"
+
+#~ msgid "Unknown input device controller"
+#~ msgstr "Rialaitheoir anaithnid gléis ionchurtha"
+
+#~ msgid "Generic docking station"
+#~ msgstr "Stáisiún ginearálta nasctha"
+
+#~ msgid "Unknown docking station"
+#~ msgstr "Stáisiún anaithnid nasctha"
+
+#~ msgid "386"
+#~ msgstr "386"
+
+#~ msgid "486"
+#~ msgstr "486"
+
+#~ msgid "Pentium"
+#~ msgstr "Pentium"
+
+#~ msgid "Alpha"
+#~ msgstr "DEC Alpha"
+
+#~ msgid "Power PC"
+#~ msgstr "Power PC"
+
+#~ msgid "MIPS"
+#~ msgstr "MIPS"
+
+#~ msgid "Co-processor"
+#~ msgstr "Comhphróiseálaí"
+
+#~ msgid "Unknown processor"
+#~ msgstr "Próiseálaí anaithnid"
+
+#~ msgid "FireWire (IEEE 1394)"
+#~ msgstr "FireWire (IEEE 1394)"
+
+#~ msgid "ACCESS bus"
+#~ msgstr "Bus ACCESS"
+
+#~ msgid "SSA"
+#~ msgstr "SSA"
+
+#~ msgid "USB controller"
+#~ msgstr "Rialaitheoir USB"
+
+#~ msgid "Fibre channel"
+#~ msgstr "Cainéal snáithíní"
+
+#~ msgid "SMBus"
+#~ msgstr "SMBus"
+
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#~ msgid "IPMI interface"
+#~ msgstr "Comhéadan IPMI"
+
+#~ msgid "SERCOS interface"
+#~ msgstr "Comhéadan SERCOS"
+
+#~ msgid "CANbus"
+#~ msgstr "CANbus"
+
+#~ msgid "Unknown serial bus controller"
+#~ msgstr "Rialaitheoir anaithnid bus srathaigh"
+
+#~ msgid "IRDA controller"
+#~ msgstr "Rialaitheoir IRDA"
+
+#~ msgid "Consumer IR controller"
+#~ msgstr "Rialaitheoir tomhaltais infridhearg"
+
+#~ msgid "RF controller"
+#~ msgstr "Rialaitheoir RF"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Broadband"
+#~ msgstr "Leathanbhanda"
+
+#~ msgid "Ethernet (802.11a - 5 GHz)"
+#~ msgstr "Ethernet (802.11a - 5 GHz)"
+
+#~ msgid "Ethernet (802.11b - 2.4 GHz)"
+#~ msgstr "Ethernet (802.11b - 2.4 GHz)"
+
+#~ msgid "Unknown wireless controller"
+#~ msgstr "Rialaitheoir anaithnid gan sreang"
+
+#~ msgid "I2O"
+#~ msgstr "I2O"
+
+#~ msgid "Unknown intelligent controller"
+#~ msgstr "Rialaitheoir anaithnid cliste"
+
+#~ msgid "Satellite TV controller"
+#~ msgstr "Rialaitheoir teilifíse satailíte"
+
+#~ msgid "Satellite audio communication controller"
+#~ msgstr "Rialaitheoir cumarsáide fuaime satailíte"
+
+#~ msgid "Satellite voice communication controller"
+#~ msgstr "Rialaitheoir cumarsáide gutha satailíte"
+
+#~ msgid "Satellite data communication controller"
+#~ msgstr "Rialaitheoir cumarsáide sonraí satailíte"
+
+#~ msgid "Unknown satellite communications controller"
+#~ msgstr "Rialaitheoir anaithnid cumarsáide satailíte"
+
+#~ msgid "Network and computing encryption device"
+#~ msgstr "Gléas criptithe líonra agus ríomhaireachta"
+
+#~ msgid "Entertainment encryption device"
+#~ msgstr "Gléas criptithe siamsaíochta"
+
+#~ msgid "Unknown encryption controller"
+#~ msgstr "Rialaitheoir anaithnid criptithe"
+
+#~ msgid "DPIO module"
+#~ msgstr "Modúl DPIO"
+
+#~ msgid "Performance counters"
+#~ msgstr "Áiritheoirí feidhmíochta"
+
+#~ msgid "Communication synchronizer"
+#~ msgstr "Sioncronóir cumarsáide"
+
+#, fuzzy
+#~| msgid "Signal processing controller"
+#~ msgid "Signal processing management"
+#~ msgstr "Rialaitheoir próiseála comhartha"
+
+#~ msgid "Unknown signal processing controller"
+#~ msgstr "Rialaitheoir anaithnid próiseála comharthaí"
+
+#, fuzzy
+#~| msgid "Unknown processor"
+#~ msgid "Unknown processing accelerator"
+#~ msgstr "Próiseálaí anaithnid"
+
+#~ msgid "Unknown subdevice class"
+#~ msgstr "Aicme anaithnid fhoghléis"
+
+#, fuzzy
+#~| msgid "VGA compatible controller"
+#~ msgid "ISA Compatibility mode-only controller"
+#~ msgstr "Rialaitheoir comhoiriúnach do VGA"
+
+#, fuzzy
+#~| msgid "PCI Hot-plug controller"
+#~ msgid "PCI native mode-only controller"
+#~ msgstr "Rialaitheoir Hot-plug PCI"
+
+#~ msgid "Vendor specific"
+#~ msgstr "Sainiúil don díoltóir"
+
+#, fuzzy
+#~| msgid "PCI express"
+#~ msgid "NVM Express"
+#~ msgstr "PCI tapa"
+
+#, fuzzy
+#~| msgid "ATA controller"
+#~ msgid "VGA controller"
+#~ msgstr "Rialaitheoir ATA"
+
+#, fuzzy
+#~| msgid "3D controller"
+#~ msgid "8514 controller"
+#~ msgstr "Rialaitheoir 3T"
+
+#~ msgid "Normal decode"
+#~ msgstr "Gnáth-dhíchódú"
+
+#~ msgid "Subtractive decode"
+#~ msgstr "Díchódú dealaitheach"
+
+#~ msgid "Transparent mode"
+#~ msgstr "Mód trédhearcach"
+
+#~ msgid "Endpoint mode"
+#~ msgstr "Mód cinn iompair"
+
+#~ msgid "Primary bus towards host CPU"
+#~ msgstr "Príomhbhus go dtí LAP an óstríomhaire"
+
+#~ msgid "Secondary bus towards host CPU"
+#~ msgstr "Bus tánaisteach go dtí LAP an óstríomhaire"
+
+#~ msgid "8250"
+#~ msgstr "8250"
+
+#~ msgid "16450"
+#~ msgstr "16450"
+
+#~ msgid "16550"
+#~ msgstr "16550"
+
+#~ msgid "16650"
+#~ msgstr "16650"
+
+#~ msgid "16750"
+#~ msgstr "16750"
+
+#~ msgid "16850"
+#~ msgstr "16850"
+
+#~ msgid "16950"
+#~ msgstr "16950"
+
+#~ msgid "SPP"
+#~ msgstr "SPP"
+
+#~ msgid "BiDir"
+#~ msgstr "BiDir"
+
+#~ msgid "ECP"
+#~ msgstr "ECP"
+
+#~ msgid "IEEE1284"
+#~ msgstr "IEEE1284"
+
+#~ msgid "IEEE1284 Target"
+#~ msgstr "Sprioc IEEE1284"
+
+#~ msgid "Generic"
+#~ msgstr "Ginearálta"
+
+#~ msgid "Hayes/16450"
+#~ msgstr "Hayes/16450"
+
+#~ msgid "Hayes/16550"
+#~ msgstr "Hayes/16550"
+
+#~ msgid "Hayes/16650"
+#~ msgstr "Hayes/16650"
+
+#~ msgid "Hayes/16750"
+#~ msgstr "Hayes/16750"
+
+#~ msgid "8259"
+#~ msgstr "8259"
+
+#~ msgid "ISA PIC"
+#~ msgstr "ISA PIC"
+
+#~ msgid "EISA PIC"
+#~ msgstr "EISA PIC"
+
+#~ msgid "IO-APIC"
+#~ msgstr "IO-APIC"
+
+#~ msgid "IO(X)-APIC"
+#~ msgstr "IO(X)-APIC"
+
+#~ msgid "8237"
+#~ msgstr "8237"
+
+#~ msgid "ISA DMA"
+#~ msgstr "ISA DMA"
+
+#~ msgid "EISA DMA"
+#~ msgstr "EISA DMA"
+
+#~ msgid "8254"
+#~ msgstr "8254"
+
+#~ msgid "ISA timer"
+#~ msgstr "Uaineadóir ISA"
+
+#~ msgid "EISA timers"
+#~ msgstr "Uaineadóirí EISA"
+
+#~ msgid "ISA RTC"
+#~ msgstr "ISA RTC"
+
+#~ msgid "Extended"
+#~ msgstr "Breisithe"
+
+#~ msgid "OHCI"
+#~ msgstr "OHCI"
+
+#~ msgid "UHCI"
+#~ msgstr "UHCI"
+
+#~ msgid "EHCI"
+#~ msgstr "EHCI"
+
+#~ msgid "Unspecified"
+#~ msgstr "Gan sonrú"
+
+#~ msgid "USB Device"
+#~ msgstr "Gléas USB"
+
+#~ msgid "SMIC"
+#~ msgstr "SMIC"
+
+#~ msgid "Keyboard controller style"
+#~ msgstr "Stíl rialaitheoir an mhéarchláir"
+
+#~ msgid "Block transfer"
+#~ msgstr "Blocaistriú"
+
+#~ msgid "Vital product data"
+#~ msgstr "Sonraí riachtanacha táirge"
+
+#~ msgid "Slot identification"
+#~ msgstr "Aitheantas sliotáin"
+
+#~ msgid "CompactPCI hot swap"
+#~ msgstr "Babhtáil bheo CompactPCI"
+
+#~ msgid "HyperTransport"
+#~ msgstr "HyperTransport"
+
+#~ msgid "Debug port"
+#~ msgstr "Port dífhabhtaithe"
+
+#~ msgid "CompactPCI central resource control"
+#~ msgstr "Rialú lárnach acmhainní CompactPCI"
+
+#~ msgid "PCI hot-plug"
+#~ msgstr "Hot-plug PCI"
+
+#~ msgid "AGP x8"
+#~ msgstr "AGP x8"
+
+#~ msgid "Secure device"
+#~ msgstr "Gléas slán"
+
+#~ msgid "PCI express"
+#~ msgstr "PCI tapa"
+
+#~ msgid "MSI-X"
+#~ msgstr "MSI-X"
+
+#~ msgid "Fast"
+#~ msgstr "Tapa"
+
+#~ msgid "Medium"
+#~ msgstr "Measartha"
+
+#~ msgid "Slow"
+#~ msgstr "Mall"
+
+#~ msgid "32 bit"
+#~ msgstr "32-giotán"
+
+#~ msgid "Below 1M"
+#~ msgstr "Níos lú ná 1M"
+
+#~ msgid "64 bit"
+#~ msgstr "64-giotán"
+
+#~ msgid "Standard"
+#~ msgstr "Caighdeánach"
+
+#~ msgid "CardBus"
+#~ msgstr "CardBus"
+
+#~ msgid "1X"
+#~ msgstr "1X"
+
+#~ msgid "2X"
+#~ msgstr "2X"
+
+#~ msgid "1X & 2X"
+#~ msgstr "1X agus 2X"
+
+#~ msgid "4X"
+#~ msgstr "4X"
+
+#~ msgid "1X & 4X"
+#~ msgstr "1X agus 4X"
+
+#~ msgid "2X & 4X"
+#~ msgstr "2X agus 4X"
+
+#~ msgid "1X & 2X & 4X"
+#~ msgstr "1X agus 2X agus 4X"
+
+#~ msgid "8X"
+#~ msgstr "8X"
+
+#~ msgid "4X & 8X"
+#~ msgstr "4X agus 8X"
+
+#~ msgid "4 ms"
+#~ msgstr "4 ms"
+
+#~ msgid "16 ms"
+#~ msgstr "16 ms"
+
+#~ msgid "64 ms"
+#~ msgstr "64 ms"
+
+#~ msgid "256 ms"
+#~ msgstr "256 ms"
+
+#~ msgid "Not needed"
+#~ msgstr "Níl gá leis"
+
+#~ msgid "0 (self powered)"
+#~ msgstr "0 (féinchumhachtaithe)"
+
+#~ msgid "55 mA"
+#~ msgstr "55 mA"
+
+#~ msgid "100 mA"
+#~ msgstr "100 mA"
+
+#~ msgid "160 mA"
+#~ msgstr "160 mA"
+
+#~ msgid "220 mA"
+#~ msgstr "220 mA"
+
+#~ msgid "270 mA"
+#~ msgstr "270 mA"
+
+#~ msgid "320 mA"
+#~ msgstr "320 mA"
+
+#~ msgid "375 mA"
+#~ msgstr "375 mA"
+
+#~ msgid "1 vector"
+#~ msgstr "1 veicteoir"
+
+#~ msgid "2 vectors"
+#~ msgstr "2 veicteoir"
+
+#~ msgid "4 vectors"
+#~ msgstr "4 veicteoir"
+
+#~ msgid "8 vectors"
+#~ msgstr "8 veicteoir"
+
+#~ msgid "16 vectors"
+#~ msgstr "16 veicteoir"
+
+#~ msgid "32 vectors"
+#~ msgstr "32 veicteoir"
+
+#~ msgid "Serial ATA direct port access"
+#~ msgstr "Rochtain dhíreach ar phort srathach ATA"
+
+#~ msgid "PICMG 2.14 multi computing"
+#~ msgstr "Ilríomhaireacht PICMG 2.14"
+
+#~ msgid "GPIB (IEEE 488.1/2) controller"
+#~ msgstr "Rialaitheoir GPIB (IEEE 488.1/2)"
+
+#~ msgid "Smart card"
+#~ msgstr "Cárta cliste"
+
+#~ msgid "System peripheral"
+#~ msgstr "Forimeallach córais"
+
+#~ msgid "Management card"
+#~ msgstr "Cárta bainistíochta"
+
+#~ msgid "single DMA"
+#~ msgstr "DMA amháin"
+
+#~ msgid "chained DMA"
+#~ msgstr "DMA slabhraithe"
+
+#~ msgid "VGA compatible"
+#~ msgstr "Comhoiriúnach do VGA"
+
+#~ msgid "8514 compatible"
+#~ msgstr "Comhoiriúnach do 8514"
+
+#~ msgid "KDE PCI Information Control Module"
+#~ msgstr "Modúl Rialaithe Eolais PCI le haghaidh KDE"

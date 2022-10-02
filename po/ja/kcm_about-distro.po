@@ -1,0 +1,206 @@
+# Tomohiro Hyakutake <tomhioo@outlook.jp>, 2019.
+# Ryuichi Yamada <ryuichi_ya220@outlook.jp>, 2022.
+# Fumiaki Okushi <fumiaki.okushi@gmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm-about-distro\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-08-09 00:47+0000\n"
+"PO-Revision-Date: 2022-07-04 11:42-0700\n"
+"Last-Translator: Fumiaki Okushi <fumiaki.okushi@gmail.com>\n"
+"Language-Team: Japanese <kde-jp@kde.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Generator: Lokalize 21.12.3\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Ryuichi Yamada"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "ryuichi_ya220@outlook.jp"
+
+#: CPUEntry.cpp:17
+#, kde-format
+msgid "Processor:"
+msgid_plural "Processors:"
+msgstr[0] "プロセッサ:"
+msgstr[1] "プロセッサ:"
+
+#: CPUEntry.cpp:22
+#, kde-format
+msgctxt ""
+"unknown CPU type/product name; presented as `Processors: 4 × Unknown Type'"
+msgid "Unknown Type"
+msgstr "不明のタイプ"
+
+#: GPUEntry.cpp:19
+#, kde-format
+msgid "Graphics Processor:"
+msgstr "グラフィックプロセッサ:"
+
+#: GraphicsPlatformEntry.cpp:10
+#, kde-format
+msgid "Graphics Platform:"
+msgstr "グラフィックプラットフォーム:"
+
+#: KernelEntry.cpp:11
+#, kde-format
+msgid "Kernel Version:"
+msgstr "カーネルバージョン:"
+
+#: KernelEntry.cpp:23
+#, kde-format
+msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
+msgid "%1 (%2-bit)"
+msgstr ""
+
+#: main.cpp:103
+#, kde-format
+msgctxt "@title"
+msgid "About this System"
+msgstr "このシステムについて"
+
+#: main.cpp:106
+#, kde-format
+msgctxt "@info:credit"
+msgid "Copyright 2012-2020 Harald Sitter"
+msgstr ""
+
+#: main.cpp:107
+#, kde-format
+msgctxt "@info:credit"
+msgid "Harald Sitter"
+msgstr ""
+
+#: main.cpp:107
+#, kde-format
+msgctxt "@info:credit"
+msgid "Author"
+msgstr "作者"
+
+#: main.cpp:162
+#, kde-format
+msgid "Operating System:"
+msgstr "オペレーティングシステム:"
+
+#: main.cpp:176
+#, kde-format
+msgctxt "@label"
+msgid "Manufacturer:"
+msgstr "製造元:"
+
+#: main.cpp:179 main.cpp:196
+#, kde-format
+msgctxt "@label"
+msgid "Product Name:"
+msgstr "製品名:"
+
+#: main.cpp:182
+#, kde-format
+msgctxt "@label"
+msgid "System Version:"
+msgstr "システムのバージョン:"
+
+#: main.cpp:185 main.cpp:199
+#, kde-format
+msgctxt "@label"
+msgid "Serial Number:"
+msgstr "シリアルナンバー:"
+
+#: main.cpp:189 main.cpp:206
+#, fuzzy, kde-format
+#| msgctxt "Unknown amount of RAM"
+#| msgid "Unknown"
+msgctxt "@label unknown entry in table"
+msgid "Unknown:"
+msgstr "不明"
+
+#: main.cpp:202
+#, fuzzy, kde-format
+#| msgid "Qt Version:"
+msgctxt "@label uboot is the name of a bootloader for embedded devices"
+msgid "U-Boot Version:"
+msgstr "Qt のバージョン:"
+
+#: main.cpp:240
+#, kde-format
+msgid "KDE Frameworks Version:"
+msgstr "KDE Frameworks のバージョン:"
+
+#: main.cpp:241
+#, kde-format
+msgid "Qt Version:"
+msgstr "Qt のバージョン:"
+
+#: MemoryEntry.cpp:20
+#, kde-format
+msgid "Memory:"
+msgstr "メモリ:"
+
+#: MemoryEntry.cpp:49
+#, kde-format
+msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
+msgid "%1 of RAM"
+msgstr "%1 の RAM"
+
+#: MemoryEntry.cpp:53
+#, kde-format
+msgctxt "Unknown amount of RAM"
+msgid "Unknown"
+msgstr "不明"
+
+#: package/contents/ui/main.qml:91
+#, kde-format
+msgctxt "@title"
+msgid "Serial Number"
+msgstr "シリアルナンバー"
+
+#: package/contents/ui/main.qml:97 package/contents/ui/main.qml:165
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy to Clipboard"
+msgstr "クリップボードにコピー"
+
+#: package/contents/ui/main.qml:113
+#, kde-format
+msgctxt "@action:button show a hidden entry in an overlay"
+msgid "Show"
+msgstr "表示"
+
+#: package/contents/ui/main.qml:123
+#, kde-format
+msgctxt "@title:group"
+msgid "Software"
+msgstr "ソフトウェア"
+
+#: package/contents/ui/main.qml:133
+#, kde-format
+msgctxt "@title:group"
+msgid "Hardware"
+msgstr "ハードウェア"
+
+#: package/contents/ui/main.qml:153
+#, kde-format
+msgctxt "@action:button launches kinfocenter from systemsettings"
+msgid "Show More Information"
+msgstr "その他の情報"
+
+#: package/contents/ui/main.qml:172
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy to Clipboard in English"
+msgstr "英語でクリップボードにコピー"
+
+#: PlasmaEntry.cpp:15
+#, kde-format
+msgid "KDE Plasma Version:"
+msgstr "KDE Plasma のバージョン:"

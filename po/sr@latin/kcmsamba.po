@@ -1,0 +1,139 @@
+# Translation of kcmsamba.po into Serbian.
+# Ljubisa Radivojevic <claw@claw.co.yu>, 2000.
+# Tiron Andric <tiron@beotel.yu>, 2003.
+# Toplica Tanaskovic <toptan@kde.org.yu>, 2003.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2005, 2007, 2008, 2009, 2010, 2014, 2017.
+# Dalibor Djuric <daliborddjuric@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmsamba\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-02-13 03:40+0100\n"
+"PO-Revision-Date: 2017-09-28 17:58+0200\n"
+"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"Language: sr@latin\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Environment: kde\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Časlav Ilić"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "caslav.ilic@gmx.net"
+
+#: ksambasharemodel.cpp:42
+#, kde-format
+msgctxt "@title:column samba share name"
+msgid "Name"
+msgstr ""
+
+#: ksambasharemodel.cpp:44
+#, kde-format
+msgctxt "@title:column samba share dir path"
+msgid "Path"
+msgstr ""
+
+#: ksambasharemodel.cpp:46
+#, kde-format
+msgctxt "@title:column samba share text comment/description"
+msgid "Comment"
+msgstr ""
+
+#: main.cpp:35
+#, kde-format
+msgid "kcmsamba"
+msgstr "KCM‑Samba"
+
+#: main.cpp:36
+#, kde-format
+msgid "System Information Control Module"
+msgstr ""
+"Kontrolni modul podataka o sistemu|/|$[svojstva dat 'Kontrolnom modulu "
+"podataka o sistemu']"
+
+#: main.cpp:38
+#, kde-format
+msgid "(c) 2002 KDE Information Control Module Samba Team"
+msgstr "© 2002, tim Samba modula kontrolnog centra"
+
+#: main.cpp:39
+#, kde-format
+msgid "Michael Glauche"
+msgstr "Mihael Glauhe"
+
+#: main.cpp:40
+#, kde-format
+msgid "Matthias Hoelzer"
+msgstr "Matijas Helcer-Klipfel"
+
+#: main.cpp:41
+#, kde-format
+msgid "David Faure"
+msgstr "David For"
+
+#: main.cpp:42
+#, kde-format
+msgid "Harald Koschinski"
+msgstr "Harald Košinski"
+
+#: main.cpp:43
+#, kde-format
+msgid "Wilco Greven"
+msgstr "Vilko Greven"
+
+#: main.cpp:44
+#, kde-format
+msgid "Alexander Neundorf"
+msgstr "Aleksander Nojndorf"
+
+#: main.cpp:45
+#, kde-format
+msgid "Harald Sitter"
+msgstr ""
+
+#: main.cpp:52
+#, fuzzy, kde-format
+#| msgid "&Exports"
+msgctxt "@title/group"
+msgid "Exported Shares"
+msgstr "&Izvozi"
+
+# >> @title:column
+#: main.cpp:54
+#, fuzzy, kde-format
+#| msgid "Mounted Under"
+msgctxt "@title/group"
+msgid "Mounted Shares"
+msgstr "montiran pod"
+
+# >> @title:column
+#: smbmountmodel.cpp:49
+#, kde-format
+msgid "Resource"
+msgstr "resurs"
+
+# >> @title:column
+#: smbmountmodel.cpp:51
+#, kde-format
+msgid "Mounted Under"
+msgstr "montiran pod"
+
+# >> @title:column
+#: smbmountmodel.cpp:53
+#, fuzzy, kde-format
+#| msgid "Accessed From"
+msgctxt ""
+"@title:column whether a samba share is accessible locally (i.e. mounted)"
+msgid "Accessible"
+msgstr "pristup sa"

@@ -1,0 +1,745 @@
+# translation of kcmdevinfo.po to Thai
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Thanomsub Noppaburana <donga.nb@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmdevinfo\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-09-03 00:18+0000\n"
+"PO-Revision-Date: 2010-12-17 20:54+0700\n"
+"Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
+"Language-Team: Thai <thai-l10n@googlegroups.com>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ถนอมทรัพย์ นพบูรณ์"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "donga.nb@gmail.com"
+
+#: devicelisting.cpp:41
+#, kde-format
+msgctxt "Device Listing Whats This"
+msgid "Shows all the devices that are currently listed."
+msgstr "แสดงอุปกรณ์ต่าง ๆ ทั้งหมดที่แสดงรายการอยู่ในปัจจุบัน"
+
+#: devicelisting.cpp:44
+#, kde-format
+msgid "Devices"
+msgstr "อุปกรณ์ต่าง ๆ"
+
+#: devicelisting.cpp:57
+#, kde-format
+msgid "Collapse All"
+msgstr "ยุบทั้งหมด"
+
+#: devicelisting.cpp:60
+#, kde-format
+msgid "Expand All"
+msgstr "ขยายทั้งหมด"
+
+#: devicelisting.cpp:63
+#, kde-format
+msgid "Show All Devices"
+msgstr "แสดงอุปกรณ์ต่าง ๆ ทั้งหมด"
+
+#: devicelisting.cpp:66
+#, kde-format
+msgid "Show Relevant Devices"
+msgstr "แสดงอุปกรณ์ต่าง ๆ ที่เกี่ยวพันกัน"
+
+#: devicelisting.cpp:95
+#, fuzzy, kde-format
+#| msgid "Unknown"
+msgctxt "unknown device type"
+msgid "Unknown"
+msgstr "ไม่ทราบ"
+
+#: devicelisting.cpp:136 devinfo.cpp:79
+#, fuzzy, kde-format
+#| msgid "None"
+msgctxt "no device UDI"
+msgid "None"
+msgstr "ไม่มี"
+
+#: devinfo.cpp:28
+#, kde-format
+msgid "kcmdevinfo"
+msgstr "kcmdevinfo"
+
+#: devinfo.cpp:28
+#, fuzzy, kde-format
+#| msgid "KDE Solid Based Device Viewer"
+msgid "Device Viewer"
+msgstr "ตัวแสดงรายการอุปกรณ์ต่าง ๆ อิงพื้นฐาน Solid ของ KDE"
+
+#: devinfo.cpp:28
+#, kde-format
+msgid "(c) 2010 David Hubner"
+msgstr "สงวนลิขสิทธิ์ (c) 2010 David Hubner"
+
+#: devinfo.cpp:58
+#, kde-format
+msgid "UDI: "
+msgstr "ค่า UDI: "
+
+#: devinfo.cpp:66
+#, kde-format
+msgctxt "Udi Whats This"
+msgid "Shows the current device's UDI (Unique Device Identifier)"
+msgstr "แสดงค่า UDI (Unique Device Identifier) ปัจจุบันของอุปกรณ์"
+
+#: infopanel.cpp:20
+#, kde-format
+msgid "Device Information"
+msgstr "ข้อมูลรายละเอียดอุปกรณ์"
+
+#: infopanel.cpp:29
+#, kde-format
+msgctxt "Info Panel Whats This"
+msgid "Shows information about the currently selected device."
+msgstr "แสดงข้อมูลรายละเอียดเกี่ยวกับอุปกรณ์ที่เลือกไว้ในปัจจุบัน"
+
+#: infopanel.cpp:56
+#, kde-format
+msgid ""
+"\n"
+"Solid Based Device Viewer Module"
+msgstr ""
+"\n"
+"มอดูลตัวแสดงอุปกรณ์อิงพื้นฐาน Solid"
+
+#: infopanel.cpp:119
+#, kde-format
+msgid "Description: "
+msgstr ""
+
+#: infopanel.cpp:121
+#, kde-format
+msgid "Product: "
+msgstr "ผลิตภัณฑ์: "
+
+#: infopanel.cpp:123
+#, kde-format
+msgid "Vendor: "
+msgstr "ผู้ผลิต: "
+
+#: infopanel.cpp:145
+#, kde-format
+msgid "Yes"
+msgstr "ใช่"
+
+#: infopanel.cpp:147
+#, kde-format
+msgid "No"
+msgstr "ไม่ใช่"
+
+#: infopanel.h:36
+#, fuzzy, kde-format
+#| msgid "Unknown"
+msgctxt "name of something is not known"
+msgid "Unknown"
+msgstr "ไม่ทราบ"
+
+#: soldevice.cpp:66
+#, fuzzy, kde-format
+#| msgid "Unknown"
+msgctxt "unknown device"
+msgid "Unknown"
+msgstr "ไม่ทราบ"
+
+#: soldevice.cpp:92
+#, kde-format
+msgctxt "Default device tooltip"
+msgid "A Device"
+msgstr "อุปกรณ์"
+
+#: soldevicetypes.cpp:43
+#, kde-format
+msgid "Processors"
+msgstr "ตัวประมวลผล"
+
+#: soldevicetypes.cpp:59
+#, kde-format
+msgid "Processor %1"
+msgstr "ตัวประมวลผล %1"
+
+#: soldevicetypes.cpp:76
+#, kde-format
+msgid "Intel MMX"
+msgstr "Intel MMX"
+
+#: soldevicetypes.cpp:79
+#, kde-format
+msgid "Intel SSE"
+msgstr "Intel SSE"
+
+#: soldevicetypes.cpp:82
+#, kde-format
+msgid "Intel SSE2"
+msgstr "Intel SSE2"
+
+#: soldevicetypes.cpp:85
+#, kde-format
+msgid "Intel SSE3"
+msgstr "Intel SSE3"
+
+#: soldevicetypes.cpp:88
+#, fuzzy, kde-format
+#| msgid "Intel SSE3"
+msgid "Intel SSSE3"
+msgstr "Intel SSE3"
+
+#: soldevicetypes.cpp:91
+#, fuzzy, kde-format
+#| msgid "Intel SSE4"
+msgid "Intel SSE4.1"
+msgstr "Intel SSE4"
+
+#: soldevicetypes.cpp:94
+#, fuzzy, kde-format
+#| msgid "Intel SSE4"
+msgid "Intel SSE4.2"
+msgstr "Intel SSE4"
+
+#: soldevicetypes.cpp:97
+#, fuzzy, kde-format
+#| msgid "AMD 3DNow"
+msgid "AMD 3DNow!"
+msgstr "AMD 3DNow"
+
+#: soldevicetypes.cpp:100
+#, kde-format
+msgid "ATI IVEC"
+msgstr "ATI IVEC"
+
+#: soldevicetypes.cpp:103
+#, fuzzy, kde-format
+#| msgid "None"
+msgctxt "no instruction set extensions"
+msgid "None"
+msgstr "ไม่มี"
+
+#: soldevicetypes.cpp:106
+#, kde-format
+msgid "Processor Number: "
+msgstr "จำนวนตัวประมวลผล: "
+
+#: soldevicetypes.cpp:106
+#, kde-format
+msgid "Max Speed: "
+msgstr "ความเร็วสูงสุด: "
+
+#: soldevicetypes.cpp:107
+#, kde-format
+msgid "Supported Instruction Sets: "
+msgstr "ชุดคำสั่งต่าง ๆ ที่รองรับ: "
+
+#: soldevicetypes.cpp:132
+#, kde-format
+msgid "Storage Drives"
+msgstr "ไดรฟ์จัดเก็บข้อมูล"
+
+#: soldevicetypes.cpp:151
+#, kde-format
+msgid "Hard Disk Drive"
+msgstr "ไดรฟ์ฮาร์ดดิสก์"
+
+#: soldevicetypes.cpp:154
+#, kde-format
+msgid "Compact Flash Reader"
+msgstr "ตัวอ่านคอมแพคแฟลช"
+
+#: soldevicetypes.cpp:157
+#, kde-format
+msgid "Smart Media Reader"
+msgstr "ตัวอ่านสมาร์ทมีเดีย"
+
+#: soldevicetypes.cpp:160
+#, kde-format
+msgid "SD/MMC Reader"
+msgstr "ตัวอ่าน SD/MMC"
+
+#: soldevicetypes.cpp:163
+#, kde-format
+msgid "Optical Drive"
+msgstr "ไดรฟ์แบบออพติคัล"
+
+#: soldevicetypes.cpp:166
+#, kde-format
+msgid "Memory Stick Reader"
+msgstr "ตัวอ่านเมโมรีสติ๊ก"
+
+#: soldevicetypes.cpp:169
+#, kde-format
+msgid "xD Reader"
+msgstr "ตัวอ่านการ์ด xD"
+
+#: soldevicetypes.cpp:172
+#, kde-format
+msgid "Unknown Drive"
+msgstr "ไดรฟ์ที่ไม่รู้จัก"
+
+#: soldevicetypes.cpp:192
+#, kde-format
+msgid "IDE"
+msgstr "IDE"
+
+#: soldevicetypes.cpp:195
+#, kde-format
+msgid "USB"
+msgstr "USB"
+
+#: soldevicetypes.cpp:198
+#, kde-format
+msgid "IEEE1394"
+msgstr "IEEE1394"
+
+#: soldevicetypes.cpp:201
+#, kde-format
+msgid "SCSI"
+msgstr "SCSI"
+
+#: soldevicetypes.cpp:204
+#, kde-format
+msgid "SATA"
+msgstr "SATA"
+
+#: soldevicetypes.cpp:207
+#, fuzzy, kde-format
+#| msgid "Platform"
+msgctxt "platform storage bus"
+msgid "Platform"
+msgstr "แพลทฟอร์ม"
+
+#: soldevicetypes.cpp:210
+#, fuzzy, kde-format
+#| msgid "Unknown"
+msgctxt "unknown storage bus"
+msgid "Unknown"
+msgstr "ไม่ทราบ"
+
+#: soldevicetypes.cpp:213
+#, kde-format
+msgid "Bus: "
+msgstr "บัส: "
+
+#: soldevicetypes.cpp:213
+#, kde-format
+msgid "Hotpluggable?"
+msgstr "ถอด/เสียบได้แบบทันที ?"
+
+#: soldevicetypes.cpp:213
+#, kde-format
+msgid "Removable?"
+msgstr "ถอด/เสียบได้ ?"
+
+#: soldevicetypes.cpp:257
+#, kde-format
+msgid "Unused"
+msgstr "ไม่ได้ใช้"
+
+#: soldevicetypes.cpp:260
+#, kde-format
+msgid "File System"
+msgstr "ระบบแฟ้ม"
+
+#: soldevicetypes.cpp:263
+#, kde-format
+msgid "Partition Table"
+msgstr "ตารางพาร์ทิชัน"
+
+#: soldevicetypes.cpp:266
+#, kde-format
+msgid "Raid"
+msgstr "Raid"
+
+#: soldevicetypes.cpp:269
+#, kde-format
+msgid "Encrypted"
+msgstr "มีการเข้ารหัส"
+
+#: soldevicetypes.cpp:272
+#, fuzzy, kde-format
+#| msgid "Unknown"
+msgctxt "unknown volume usage"
+msgid "Unknown"
+msgstr "ไม่ทราบ"
+
+#: soldevicetypes.cpp:275
+#, kde-format
+msgid "File System Type: "
+msgstr "ประเภทของระบบแฟ้ม: "
+
+#: soldevicetypes.cpp:275
+#, kde-format
+msgid "Label: "
+msgstr "ป้ายชื่อ: "
+
+#: soldevicetypes.cpp:276
+#, kde-format
+msgid "Not Set"
+msgstr "ยังไม่ได้ตั้ง"
+
+#: soldevicetypes.cpp:276
+#, kde-format
+msgid "Volume Usage: "
+msgstr "การใช้พื้นที่โวลุม: "
+
+#: soldevicetypes.cpp:276
+#, kde-format
+msgid "UUID: "
+msgstr "ค่า UUID: "
+
+#: soldevicetypes.cpp:282
+#, kde-format
+msgid "Mounted At: "
+msgstr "ถูกเมานท์ไว้ที่: "
+
+#: soldevicetypes.cpp:282
+#, kde-format
+msgid "Not Mounted"
+msgstr "ยังไม่ถูกเมานท์"
+
+#: soldevicetypes.cpp:287
+#, kde-format
+msgid "Volume Space:"
+msgstr "ขนาดของโวลุม:"
+
+#: soldevicetypes.cpp:297
+#, kde-format
+msgctxt "Available space out of total partition size (percent used)"
+msgid "%1 free of %2 (%3% used)"
+msgstr "ว่าง %1 จากพื้นที่รวม %2 (ใช้ไป %3%)"
+
+#: soldevicetypes.cpp:303
+#, kde-format
+msgid "No data available"
+msgstr ""
+
+#: soldevicetypes.cpp:330
+#, kde-format
+msgid "Multimedia Players"
+msgstr "เครื่องเล่นสื่อ"
+
+#: soldevicetypes.cpp:349 soldevicetypes.cpp:388
+#, kde-format
+msgid "Supported Drivers: "
+msgstr "ไดรเวอร์ต่าง ๆ ที่รองรับ: "
+
+#: soldevicetypes.cpp:349 soldevicetypes.cpp:388
+#, kde-format
+msgid "Supported Protocols: "
+msgstr "โพรโทคอลต่าง ๆ ที่รองรับ: "
+
+#: soldevicetypes.cpp:369
+#, kde-format
+msgid "Cameras"
+msgstr "กล้องต่าง ๆ"
+
+#: soldevicetypes.cpp:408
+#, kde-format
+msgid "Batteries"
+msgstr "แบตเตอรีต่าง ๆ"
+
+#: soldevicetypes.cpp:430
+#, kde-format
+msgid "PDA"
+msgstr "เครื่อง PDA"
+
+#: soldevicetypes.cpp:433
+#, kde-format
+msgid "UPS"
+msgstr "เครื่องสำรองไฟ (UPS)"
+
+#: soldevicetypes.cpp:436
+#, kde-format
+msgid "Primary"
+msgstr "อุปกรณ์หลัก"
+
+#: soldevicetypes.cpp:439
+#, kde-format
+msgid "Mouse"
+msgstr "เมาส์"
+
+#: soldevicetypes.cpp:442
+#, kde-format
+msgid "Keyboard"
+msgstr "แป้นพิมพ์"
+
+#: soldevicetypes.cpp:445
+#, kde-format
+msgid "Keyboard + Mouse"
+msgstr "แป้นพิมพ์ + เมาส์"
+
+#: soldevicetypes.cpp:448
+#, kde-format
+msgid "Camera"
+msgstr "กล้องถ่ายภาพ"
+
+#: soldevicetypes.cpp:451
+#, kde-format
+msgid "Phone"
+msgstr ""
+
+#: soldevicetypes.cpp:454
+#, kde-format
+msgctxt "Screen"
+msgid "Monitor"
+msgstr ""
+
+#: soldevicetypes.cpp:457
+#, kde-format
+msgctxt "Wireless game pad or joystick battery"
+msgid "Gaming Input"
+msgstr ""
+
+#: soldevicetypes.cpp:460
+#, fuzzy, kde-format
+#| msgid "Unknown"
+msgctxt "unknown battery type"
+msgid "Unknown"
+msgstr "ไม่ทราบ"
+
+#: soldevicetypes.cpp:466
+#, kde-format
+msgid "Charging"
+msgstr "กำลังประจุไฟ"
+
+#: soldevicetypes.cpp:469
+#, kde-format
+msgid "Discharging"
+msgstr "กำลังใช้ประจุไฟ"
+
+#: soldevicetypes.cpp:472
+#, fuzzy, kde-format
+#| msgid "No Charge"
+msgid "Fully Charged"
+msgstr "ไม่มีการประจุไฟ"
+
+#: soldevicetypes.cpp:475
+#, kde-format
+msgid "No Charge"
+msgstr "ไม่มีการประจุไฟ"
+
+#: soldevicetypes.cpp:478
+#, kde-format
+msgid "Battery Type: "
+msgstr "ประเภทของแบตเตอรี: "
+
+#: soldevicetypes.cpp:478
+#, kde-format
+msgid "Charge Status: "
+msgstr "สถานะการประจุไฟ: "
+
+#: soldevicetypes.cpp:478
+#, fuzzy, kde-format
+#| msgid "Charge Status: "
+msgid "Charge Percent: "
+msgstr "สถานะการประจุไฟ: "
+
+#~ msgid "Network Interfaces"
+#~ msgstr "แผงวงจรเครือข่าย"
+
+#~ msgid "Connected"
+#~ msgstr "เชื่อมต่ออยู่"
+
+#~ msgid "Wireless"
+#~ msgstr "เครือข่ายไร้สาย"
+
+#~ msgid "Wired"
+#~ msgstr "เครือข่ายใช้สาย"
+
+#~ msgid "Hardware Address: "
+#~ msgstr "ค่าที่อยู่ของฮาร์ดแวร์: "
+
+#~ msgid "Wireless?"
+#~ msgstr "เครือข่ายไร้สาย ?"
+
+#~ msgid "Audio Interfaces"
+#~ msgstr "แผงวงจรระบบเสียง"
+
+#~ msgid "Alsa Interfaces"
+#~ msgstr "ส่วนเชื่อมต่อ Alsa"
+
+#~ msgid "Open Sound System Interfaces"
+#~ msgstr "ส่วนเชื่อมต่อ OSS (Open Sound System)"
+
+#~ msgid "Control"
+#~ msgstr "ควบคุม"
+
+#~ msgid "Input"
+#~ msgstr "ข้อมูลเข้า"
+
+#~ msgid "Output"
+#~ msgstr "ข้อมูลออก"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown audio interface type"
+#~ msgid "Unknown"
+#~ msgstr "ไม่ทราบ"
+
+#~ msgid "Internal Soundcard"
+#~ msgstr "แผงวงจรเสียงภายใน"
+
+#~ msgid "USB Soundcard"
+#~ msgstr "แผงวงจรเสียงแบบ USB"
+
+#~ msgid "Firewire Soundcard"
+#~ msgstr "แผงวงจรเสียงแบบไฟร์ไวร์"
+
+#~ msgid "Headset"
+#~ msgstr "ชุดหูฟัง"
+
+#~ msgid "Modem"
+#~ msgstr "โมเด็ม"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown sound card type"
+#~ msgid "Unknown"
+#~ msgstr "ไม่ทราบ"
+
+#~ msgid "Audio Interface Type: "
+#~ msgstr "ประเภทของส่วนเชื่อมต่อระบบเสียง: "
+
+#~ msgid "Soundcard Type: "
+#~ msgstr "ประเภทของแผงวงจรระบบเสียง: "
+
+#~ msgid "Device Buttons"
+#~ msgstr "ปุ่มต่าง ๆ ของอุปกรณ์"
+
+#~ msgid "Lid Button"
+#~ msgstr "ปุ่มตรวจการปิดฝาเครื่องแล็ปท็อป (Lid)"
+
+#~ msgid "Power Button"
+#~ msgstr "ปุ่มเปิด/ปิดเครื่อง"
+
+#~ msgid "Sleep Button"
+#~ msgstr "ปุ่มหลับ (Sleep)"
+
+#~ msgid "Tablet Button"
+#~ msgstr "ปุ่มแท็บเล็ต"
+
+#~ msgid "Unknown Button"
+#~ msgstr "ปุ่มที่ไม่รู้จัก"
+
+#~ msgid "Button type: "
+#~ msgstr "ประเภทของปุ่ม: "
+
+#~ msgid "Has State?"
+#~ msgstr "มีสถานะหรือไม่ ?"
+
+#~ msgid "AC Adapters"
+#~ msgstr "เครื่องแปลงไฟ"
+
+#~ msgid "Is plugged in?"
+#~ msgstr "มีการเสียบอยู่หรือไม่ ?"
+
+#~ msgid "Digital Video Broadcasting Devices"
+#~ msgstr "อุปกรณ์กระจายภาพวีดิทัศน์แบบดิจิทัล"
+
+#~ msgid "Audio"
+#~ msgstr "ระบบเสียง"
+
+#~ msgid "Conditional access system"
+#~ msgstr "ระบบควบคุมการเข้าใช้งาน"
+
+#~ msgid "Demux"
+#~ msgstr "Demux"
+
+#~ msgid "Digital video recorder"
+#~ msgstr "เครื่องบันทึกวีดิทัศน์แบบดิจิทัล"
+
+#~ msgid "Front end"
+#~ msgstr "ฟร้อนเอนด์"
+
+#~ msgid "Network"
+#~ msgstr "ระบบเครือข่าย"
+
+#~ msgid "On-Screen display"
+#~ msgstr "ข้อความบนหน้าจอ (OSD)"
+
+#~ msgid "Security and content protection"
+#~ msgstr "ระบบความปลอดภัยและการป้องกันเนื้อหา"
+
+#~ msgid "Video"
+#~ msgstr "วีดิทัศน์"
+
+#~ msgid "Device Type: "
+#~ msgstr "ประเภทของอุปกรณ์: "
+
+#~ msgid "Serial Devices"
+#~ msgstr "อุปกรณ์แบบอนุกรม"
+
+#, fuzzy
+#~| msgid "Platform"
+#~ msgctxt "platform serial interface type"
+#~ msgid "Platform"
+#~ msgstr "แพลทฟอร์ม"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown serial interface type"
+#~ msgid "Unknown"
+#~ msgstr "ไม่ทราบ"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown port"
+#~ msgid "Unknown"
+#~ msgstr "ไม่ทราบ"
+
+#~ msgid "Serial Type: "
+#~ msgstr "ประเภทของอนุกรม: "
+
+#~ msgid "Port: "
+#~ msgstr "พอร์ต: "
+
+#~ msgid "Smart Card Devices"
+#~ msgstr "อุปกรณ์สมาร์ทการ์ดต่าง ๆ"
+
+#~ msgid "Card Reader"
+#~ msgstr "ตัวอ่านการ์ด"
+
+#~ msgid "Crypto Token"
+#~ msgstr "ตั๋วเข้ารหัส/ถอดรหัสข้อมูล"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown smart card type"
+#~ msgid "Unknown"
+#~ msgstr "ไม่ทราบ"
+
+#~ msgid "Smart Card Type: "
+#~ msgstr "ประเภทของสมาร์การ์ด: "
+
+#~ msgid "Video Devices"
+#~ msgstr "อุปกรณ์วีดิทัศน์ต่าง ๆ"
+
+#~ msgid "Device unable to be cast to correct device"
+#~ msgstr "อุปกรณ์ไม่สามารถแปลงไปเป็นอุปกรณ์ที่ถูกต้องได้"
+
+#~ msgid "Percentage Used / Available: "
+#~ msgstr "เปอร์เซ็นต์การใช้งาน/ที่มีเหลือให้ใช้: "
+
+#~ msgid "Not Connected"
+#~ msgstr "ไม่ได้เชื่อมต่ออยู่"
+
+#~ msgid "IP Address (V4): "
+#~ msgstr "หมายเลขไอพี (รุ่น 4): "
+
+#~ msgid "Gateway (V4): "
+#~ msgstr "เกตเวย์ (รุ่น 4): "

@@ -1,0 +1,732 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Danishka Navin <danishka@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-09-03 00:18+0000\n"
+"PO-Revision-Date: 2011-07-27 02:32+0530\n"
+"Last-Translator: Danishka Navin <danishka@gmail.com>\n"
+"Language-Team: Sinhala <info@hanthana.org>\n"
+"Language: si\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Danishka Navin"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "danishka@gmail.com"
+
+#: devicelisting.cpp:41
+#, kde-format
+msgctxt "Device Listing Whats This"
+msgid "Shows all the devices that are currently listed."
+msgstr "දැනට ලැයිස්තුගත කර ඇති සියළුම උපකරණ පෙන්වයි."
+
+#: devicelisting.cpp:44
+#, kde-format
+msgid "Devices"
+msgstr "උපකරණ"
+
+#: devicelisting.cpp:57
+#, kde-format
+msgid "Collapse All"
+msgstr "සියල්ල හකුළන්න"
+
+#: devicelisting.cpp:60
+#, kde-format
+msgid "Expand All"
+msgstr "සියල්ල දිගහරින්න"
+
+#: devicelisting.cpp:63
+#, kde-format
+msgid "Show All Devices"
+msgstr "සියළු උපකරණ පෙන්වන්න"
+
+#: devicelisting.cpp:66
+#, kde-format
+msgid "Show Relevant Devices"
+msgstr "අදාල උපකරණ පෙන්වන්න"
+
+#: devicelisting.cpp:95
+#, fuzzy, kde-format
+#| msgid "Unknown"
+msgctxt "unknown device type"
+msgid "Unknown"
+msgstr "නොදන්නා"
+
+#: devicelisting.cpp:136 devinfo.cpp:79
+#, fuzzy, kde-format
+#| msgid "None"
+msgctxt "no device UDI"
+msgid "None"
+msgstr "නොමැත"
+
+#: devinfo.cpp:28
+#, kde-format
+msgid "kcmdevinfo"
+msgstr "kcmdevinfo"
+
+#: devinfo.cpp:28
+#, fuzzy, kde-format
+#| msgid "KDE Solid Based Device Viewer"
+msgid "Device Viewer"
+msgstr "KDE දෘඩ පාදක උපකරණ දර්ශකය"
+
+#: devinfo.cpp:28
+#, kde-format
+msgid "(c) 2010 David Hubner"
+msgstr "(c) 2010 David Hubner"
+
+#: devinfo.cpp:58
+#, kde-format
+msgid "UDI: "
+msgstr "UDI: "
+
+#: devinfo.cpp:66
+#, kde-format
+msgctxt "Udi Whats This"
+msgid "Shows the current device's UDI (Unique Device Identifier)"
+msgstr "වත්මන් උපකරණයේ UDI (අනන්‍ය උපකරණ හඳුන්වනය) පෙන්වයි "
+
+#: infopanel.cpp:20
+#, kde-format
+msgid "Device Information"
+msgstr "උපකරණයේ තොරතුරු"
+
+#: infopanel.cpp:29
+#, kde-format
+msgctxt "Info Panel Whats This"
+msgid "Shows information about the currently selected device."
+msgstr "දැනට තෝරාගත් උපකරණ පිළිබඳ තොරතුරු පෙන්වයි."
+
+#: infopanel.cpp:56
+#, kde-format
+msgid ""
+"\n"
+"Solid Based Device Viewer Module"
+msgstr ""
+"\n"
+"දෘඩ පාදක උපකරණ දර්ශක මොඩියුලය"
+
+#: infopanel.cpp:119
+#, kde-format
+msgid "Description: "
+msgstr ""
+
+#: infopanel.cpp:121
+#, kde-format
+msgid "Product: "
+msgstr "නිශ්පාදනය: "
+
+#: infopanel.cpp:123
+#, kde-format
+msgid "Vendor: "
+msgstr "නිශ්පාදක: "
+
+#: infopanel.cpp:145
+#, kde-format
+msgid "Yes"
+msgstr "ඔව්"
+
+#: infopanel.cpp:147
+#, kde-format
+msgid "No"
+msgstr "නැහැ"
+
+#: infopanel.h:36
+#, fuzzy, kde-format
+#| msgid "Unknown"
+msgctxt "name of something is not known"
+msgid "Unknown"
+msgstr "නොදන්නා"
+
+#: soldevice.cpp:66
+#, fuzzy, kde-format
+#| msgid "Unknown"
+msgctxt "unknown device"
+msgid "Unknown"
+msgstr "නොදන්නා"
+
+#: soldevice.cpp:92
+#, kde-format
+msgctxt "Default device tooltip"
+msgid "A Device"
+msgstr "උපකරණයක්"
+
+#: soldevicetypes.cpp:43
+#, kde-format
+msgid "Processors"
+msgstr "සකසන"
+
+#: soldevicetypes.cpp:59
+#, kde-format
+msgid "Processor %1"
+msgstr "සකසනය %1"
+
+#: soldevicetypes.cpp:76
+#, kde-format
+msgid "Intel MMX"
+msgstr "Intel MMX"
+
+#: soldevicetypes.cpp:79
+#, kde-format
+msgid "Intel SSE"
+msgstr "Intel SSE"
+
+#: soldevicetypes.cpp:82
+#, kde-format
+msgid "Intel SSE2"
+msgstr "Intel SSE2"
+
+#: soldevicetypes.cpp:85
+#, kde-format
+msgid "Intel SSE3"
+msgstr "Intel SSE3"
+
+#: soldevicetypes.cpp:88
+#, fuzzy, kde-format
+#| msgid "Intel SSE3"
+msgid "Intel SSSE3"
+msgstr "Intel SSE3"
+
+#: soldevicetypes.cpp:91
+#, fuzzy, kde-format
+#| msgid "Intel SSE4"
+msgid "Intel SSE4.1"
+msgstr "Intel SSE4"
+
+#: soldevicetypes.cpp:94
+#, fuzzy, kde-format
+#| msgid "Intel SSE4"
+msgid "Intel SSE4.2"
+msgstr "Intel SSE4"
+
+#: soldevicetypes.cpp:97
+#, fuzzy, kde-format
+#| msgid "AMD 3DNow"
+msgid "AMD 3DNow!"
+msgstr "AMD 3DNow"
+
+#: soldevicetypes.cpp:100
+#, kde-format
+msgid "ATI IVEC"
+msgstr "ATI IVEC"
+
+#: soldevicetypes.cpp:103
+#, fuzzy, kde-format
+#| msgid "None"
+msgctxt "no instruction set extensions"
+msgid "None"
+msgstr "නොමැත"
+
+#: soldevicetypes.cpp:106
+#, kde-format
+msgid "Processor Number: "
+msgstr "සකසන අංකය: "
+
+#: soldevicetypes.cpp:106
+#, kde-format
+msgid "Max Speed: "
+msgstr "උපරිම වේගය: "
+
+#: soldevicetypes.cpp:107
+#, kde-format
+msgid "Supported Instruction Sets: "
+msgstr "සහායදක්වන තොරතුරු කට්ටල: "
+
+#: soldevicetypes.cpp:132
+#, kde-format
+msgid "Storage Drives"
+msgstr "ගබඩා උපකරණ"
+
+#: soldevicetypes.cpp:151
+#, kde-format
+msgid "Hard Disk Drive"
+msgstr "දෘඩ තැටි ධාවකය"
+
+#: soldevicetypes.cpp:154
+#, kde-format
+msgid "Compact Flash Reader"
+msgstr "සංයුක්ත ෆ්ලෑශ් කියවනය"
+
+#: soldevicetypes.cpp:157
+#, kde-format
+msgid "Smart Media Reader"
+msgstr "ස්මාට් මාධ්‍ය කියවනය"
+
+#: soldevicetypes.cpp:160
+#, kde-format
+msgid "SD/MMC Reader"
+msgstr "SD/MMC කියවනය"
+
+#: soldevicetypes.cpp:163
+#, kde-format
+msgid "Optical Drive"
+msgstr "ප්‍රකාශ ධාවකය"
+
+#: soldevicetypes.cpp:166
+#, kde-format
+msgid "Memory Stick Reader"
+msgstr "මතක උපකරණ කියවනය"
+
+#: soldevicetypes.cpp:169
+#, kde-format
+msgid "xD Reader"
+msgstr "xD කියවනය"
+
+#: soldevicetypes.cpp:172
+#, kde-format
+msgid "Unknown Drive"
+msgstr "නොදන්නා උපකරණයක්"
+
+#: soldevicetypes.cpp:192
+#, kde-format
+msgid "IDE"
+msgstr "IDE"
+
+#: soldevicetypes.cpp:195
+#, kde-format
+msgid "USB"
+msgstr "USB"
+
+#: soldevicetypes.cpp:198
+#, kde-format
+msgid "IEEE1394"
+msgstr "IEEE1394"
+
+#: soldevicetypes.cpp:201
+#, kde-format
+msgid "SCSI"
+msgstr "SCSI"
+
+#: soldevicetypes.cpp:204
+#, kde-format
+msgid "SATA"
+msgstr "SATA"
+
+#: soldevicetypes.cpp:207
+#, fuzzy, kde-format
+#| msgid "Platform"
+msgctxt "platform storage bus"
+msgid "Platform"
+msgstr "වේදිකාව"
+
+#: soldevicetypes.cpp:210
+#, fuzzy, kde-format
+#| msgid "Unknown"
+msgctxt "unknown storage bus"
+msgid "Unknown"
+msgstr "නොදන්නා"
+
+#: soldevicetypes.cpp:213
+#, kde-format
+msgid "Bus: "
+msgstr "බස්: "
+
+#: soldevicetypes.cpp:213
+#, kde-format
+msgid "Hotpluggable?"
+msgstr "ක්‍ෂණිකව එක්කල හැකි?"
+
+#: soldevicetypes.cpp:213
+#, kde-format
+msgid "Removable?"
+msgstr "ඉවත්කලහැකි?"
+
+#: soldevicetypes.cpp:257
+#, kde-format
+msgid "Unused"
+msgstr "භාවිත නොකල"
+
+#: soldevicetypes.cpp:260
+#, kde-format
+msgid "File System"
+msgstr "ගොනු පද්ධතිය"
+
+#: soldevicetypes.cpp:263
+#, kde-format
+msgid "Partition Table"
+msgstr "කොටස් වගුව"
+
+#: soldevicetypes.cpp:266
+#, kde-format
+msgid "Raid"
+msgstr "Raid"
+
+#: soldevicetypes.cpp:269
+#, kde-format
+msgid "Encrypted"
+msgstr "සංඛේතනය කල"
+
+#: soldevicetypes.cpp:272
+#, fuzzy, kde-format
+#| msgid "Unknown"
+msgctxt "unknown volume usage"
+msgid "Unknown"
+msgstr "නොදන්නා"
+
+#: soldevicetypes.cpp:275
+#, kde-format
+msgid "File System Type: "
+msgstr "ගොනු පද්ධති වර්ගය: "
+
+#: soldevicetypes.cpp:275
+#, kde-format
+msgid "Label: "
+msgstr "ලේබලය: "
+
+#: soldevicetypes.cpp:276
+#, kde-format
+msgid "Not Set"
+msgstr "නොසැකසූ"
+
+#: soldevicetypes.cpp:276
+#, kde-format
+msgid "Volume Usage: "
+msgstr "වෙළුම් භාවිතය: "
+
+#: soldevicetypes.cpp:276
+#, kde-format
+msgid "UUID: "
+msgstr "UUID: "
+
+#: soldevicetypes.cpp:282
+#, kde-format
+msgid "Mounted At: "
+msgstr "හි රැඳවූ: "
+
+#: soldevicetypes.cpp:282
+#, kde-format
+msgid "Not Mounted"
+msgstr "නොරැඳවූ"
+
+#: soldevicetypes.cpp:287
+#, kde-format
+msgid "Volume Space:"
+msgstr "වෙළුම් ඉඩ:"
+
+#: soldevicetypes.cpp:297
+#, kde-format
+msgctxt "Available space out of total partition size (percent used)"
+msgid "%1 free of %2 (%3% used)"
+msgstr "%2 කින් %1 නිදහස් (%3% භාවිතකර ඇත)"
+
+#: soldevicetypes.cpp:303
+#, kde-format
+msgid "No data available"
+msgstr ""
+
+#: soldevicetypes.cpp:330
+#, kde-format
+msgid "Multimedia Players"
+msgstr "බහුමාධ්‍ය වාදක"
+
+#: soldevicetypes.cpp:349 soldevicetypes.cpp:388
+#, kde-format
+msgid "Supported Drivers: "
+msgstr "සහායදක්වන ධාවකයන්:"
+
+#: soldevicetypes.cpp:349 soldevicetypes.cpp:388
+#, kde-format
+msgid "Supported Protocols: "
+msgstr "සහාය දක්වන නීතිමාලා: "
+
+#: soldevicetypes.cpp:369
+#, kde-format
+msgid "Cameras"
+msgstr "කැමරා"
+
+#: soldevicetypes.cpp:408
+#, kde-format
+msgid "Batteries"
+msgstr "බැටරි"
+
+#: soldevicetypes.cpp:430
+#, kde-format
+msgid "PDA"
+msgstr "PDA"
+
+#: soldevicetypes.cpp:433
+#, kde-format
+msgid "UPS"
+msgstr "UPS"
+
+#: soldevicetypes.cpp:436
+#, kde-format
+msgid "Primary"
+msgstr "ප්‍රාථමික"
+
+#: soldevicetypes.cpp:439
+#, kde-format
+msgid "Mouse"
+msgstr "මවුස"
+
+#: soldevicetypes.cpp:442
+#, kde-format
+msgid "Keyboard"
+msgstr "යතුරුපුවරුව"
+
+#: soldevicetypes.cpp:445
+#, kde-format
+msgid "Keyboard + Mouse"
+msgstr "යතුරුපුවරුව + මවුසය"
+
+#: soldevicetypes.cpp:448
+#, kde-format
+msgid "Camera"
+msgstr "කැමරාව"
+
+#: soldevicetypes.cpp:451
+#, kde-format
+msgid "Phone"
+msgstr ""
+
+#: soldevicetypes.cpp:454
+#, kde-format
+msgctxt "Screen"
+msgid "Monitor"
+msgstr ""
+
+#: soldevicetypes.cpp:457
+#, kde-format
+msgctxt "Wireless game pad or joystick battery"
+msgid "Gaming Input"
+msgstr ""
+
+#: soldevicetypes.cpp:460
+#, fuzzy, kde-format
+#| msgid "Unknown"
+msgctxt "unknown battery type"
+msgid "Unknown"
+msgstr "නොදන්නා"
+
+#: soldevicetypes.cpp:466
+#, kde-format
+msgid "Charging"
+msgstr "ආරෝපණය වෙමින"
+
+#: soldevicetypes.cpp:469
+#, kde-format
+msgid "Discharging"
+msgstr "විසර්ජනය වෙමින්"
+
+#: soldevicetypes.cpp:472
+#, fuzzy, kde-format
+#| msgid "No Charge"
+msgid "Fully Charged"
+msgstr "ආරෝපණයක් නොමැත"
+
+#: soldevicetypes.cpp:475
+#, kde-format
+msgid "No Charge"
+msgstr "ආරෝපණයක් නොමැත"
+
+#: soldevicetypes.cpp:478
+#, kde-format
+msgid "Battery Type: "
+msgstr "බැටරි වර්ගය:"
+
+#: soldevicetypes.cpp:478
+#, kde-format
+msgid "Charge Status: "
+msgstr "ආරෝපණ තත්වය:"
+
+#: soldevicetypes.cpp:478
+#, fuzzy, kde-format
+#| msgid "Charge Status: "
+msgid "Charge Percent: "
+msgstr "ආරෝපණ තත්වය:"
+
+#~ msgid "Network Interfaces"
+#~ msgstr "ජාල අතුරුමුහුණත්"
+
+#~ msgid "Connected"
+#~ msgstr "සබඳකල "
+
+#~ msgid "Wireless"
+#~ msgstr "රැහැන් රහිත"
+
+#~ msgid "Wired"
+#~ msgstr "රැහැන් සහිත"
+
+#~ msgid "Hardware Address: "
+#~ msgstr "දෘඩාංග ලිපිනය: "
+
+#~ msgid "Wireless?"
+#~ msgstr "රැහැන්රහිතද?"
+
+#~ msgid "Audio Interfaces"
+#~ msgstr "ශ්‍රව්‍ය අතුරුමුහුණත්"
+
+#~ msgid "Alsa Interfaces"
+#~ msgstr "Alsa අතුරුමුහුණත්"
+
+#~ msgid "Open Sound System Interfaces"
+#~ msgstr "විවෘත ශබ්ද පද්ධති අතුරුමුහුණත්"
+
+#~ msgid "Control"
+#~ msgstr "පාලනය"
+
+#~ msgid "Input"
+#~ msgstr "ආදානය"
+
+#~ msgid "Output"
+#~ msgstr "ප්‍රතිදානය"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown audio interface type"
+#~ msgid "Unknown"
+#~ msgstr "නොදන්නා"
+
+#~ msgid "Internal Soundcard"
+#~ msgstr "අභ්‍යන්තර ශබ්දකාඩ්පත"
+
+#~ msgid "USB Soundcard"
+#~ msgstr "USB ශබ්දකාඩ්පත"
+
+#~ msgid "Firewire Soundcard"
+#~ msgstr "ෆයර්වයර් ශබ්දකාඩ්පත"
+
+#~ msgid "Headset"
+#~ msgstr "හෙඩ්සෙට්"
+
+#~ msgid "Modem"
+#~ msgstr "මොඩමය"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown sound card type"
+#~ msgid "Unknown"
+#~ msgstr "නොදන්නා"
+
+#~ msgid "Audio Interface Type: "
+#~ msgstr "ශ්‍රව්‍ය අතුරුමුහුණත් වර්ගය: "
+
+#~ msgid "Soundcard Type: "
+#~ msgstr "ශබ්දකාඩ්පත් වර්ගය: "
+
+#~ msgid "Device Buttons"
+#~ msgstr "උපකරණ බොත්තම්"
+
+#~ msgid "Lid Button"
+#~ msgstr "Lid බොත්තම"
+
+#~ msgid "Power Button"
+#~ msgstr "බල බොත්තම"
+
+#~ msgid "Sleep Button"
+#~ msgstr "නිද්‍රා බොත්තම"
+
+#~ msgid "Tablet Button"
+#~ msgstr "ටැබ්ලට් බොත්තම"
+
+#~ msgid "Unknown Button"
+#~ msgstr "නොදන්නා බොත්තම"
+
+#~ msgid "Button type: "
+#~ msgstr "බොත්තම් වර්ගය: "
+
+#~ msgid "Has State?"
+#~ msgstr "තත්වයක් ඇතිද?"
+
+#~ msgid "AC Adapters"
+#~ msgstr "AC ඇඩැප්ටර"
+
+#~ msgid "Is plugged in?"
+#~ msgstr "සවිකර ඇත්ද?"
+
+#~ msgid "Digital Video Broadcasting Devices"
+#~ msgstr "අංකිත දෘශ්‍ය විකාශක උපකරණ"
+
+#~ msgid "Audio"
+#~ msgstr "ශ්‍රව්‍ය"
+
+#~ msgid "Conditional access system"
+#~ msgstr "සීමා පිවිසුම් පද්ධති"
+
+#~ msgid "Demux"
+#~ msgstr "Demux"
+
+#~ msgid "Digital video recorder"
+#~ msgstr "අංකිත දෘශ්‍ය පටිගතකරනය"
+
+#~ msgid "Front end"
+#~ msgstr "ඉදිරි ඉම"
+
+#~ msgid "Network"
+#~ msgstr "ජාලය"
+
+#~ msgid "On-Screen display"
+#~ msgstr "තිරයමත දර්ශකය"
+
+#~ msgid "Security and content protection"
+#~ msgstr "ආරක්‍ෂාව හා අන්තර්ගතය සුරැකීම"
+
+#~ msgid "Video"
+#~ msgstr "වීඩියෝ"
+
+#~ msgid "Device Type: "
+#~ msgstr "උපකරණ වර්ගය: "
+
+#~ msgid "Serial Devices"
+#~ msgstr "ශ්‍රේණිගත උපකරණ"
+
+#, fuzzy
+#~| msgid "Platform"
+#~ msgctxt "platform serial interface type"
+#~ msgid "Platform"
+#~ msgstr "වේදිකාව"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown serial interface type"
+#~ msgid "Unknown"
+#~ msgstr "නොදන්නා"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown port"
+#~ msgid "Unknown"
+#~ msgstr "නොදන්නා"
+
+#~ msgid "Serial Type: "
+#~ msgstr "ශ්‍රේණිගත වර්ගය: "
+
+#~ msgid "Port: "
+#~ msgstr "පේනුව: "
+
+#~ msgid "Smart Card Devices"
+#~ msgstr "ස්මාට් කාඩ් උපකරණ"
+
+#~ msgid "Card Reader"
+#~ msgstr "කාඩ් රීඩර්"
+
+#~ msgid "Crypto Token"
+#~ msgstr "ගුප්තකේතන ටෝකනය"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown smart card type"
+#~ msgid "Unknown"
+#~ msgstr "නොදන්නා"
+
+#~ msgid "Smart Card Type: "
+#~ msgstr "ස්මාට් කාඩ් වර්ගය: "
+
+#~ msgid "Video Devices"
+#~ msgstr "වීඩියෝ උපකරණ"
+
+#~ msgid "Device unable to be cast to correct device"
+#~ msgstr "උපකරණය නිවැරදි උපකරණයක් ලෙස දැක්විය නොහැකි විය"

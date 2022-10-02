@@ -1,0 +1,201 @@
+# Indonesian translations for kcmnic package.
+# Copyright (C) 2010 This_file_is_part_of_KDE
+# This file is distributed under the same license as the kcmnic package.
+# Andhika Padmawan <andhika.padmawan@gmail.com>, 2010-2014.
+# Wantoyo <wantoyek@gmail.com>, 2017, 2018, 2019.
+# Aziz Adam Adrian <4.adam.adrian@gmail.com>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmnic\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-14 00:46+0000\n"
+"PO-Revision-Date: 2022-06-03 10:19+0700\n"
+"Last-Translator: Aziz Adam Adrian <4.adam.adrian@gmail.com>\n"
+"Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 22.04.1\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Andhika Padmawan"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "andhika.padmawan@gmail.com"
+
+#: networkmodel.cpp:159
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Point to Point"
+msgstr "Point-to-Point"
+
+#: networkmodel.cpp:166
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Broadcast"
+msgstr "Siaran"
+
+#: networkmodel.cpp:173
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Multicast"
+msgstr "Multi Siaran"
+
+#: networkmodel.cpp:180
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Loopback"
+msgstr "Putaran"
+
+#: nic.cpp:21
+#, kde-format
+msgid "kcm_nic"
+msgstr "kcm_nic"
+
+#: nic.cpp:22
+#, kde-format
+msgctxt "@title:window"
+msgid "Network Interfaces"
+msgstr "Antarmuka Jaringan"
+
+#: nic.cpp:26
+#, kde-format
+msgctxt "@info"
+msgid "(c) 2001 - 2002 Alexander Neundorf"
+msgstr "(c) 2001 - 2002 Alexander Neundorf"
+
+#: nic.cpp:28
+#, kde-format
+msgctxt "@info:credit"
+msgid "Alexander Neundorf"
+msgstr "Alexander Neundorf"
+
+#: nic.cpp:28
+#, kde-format
+msgctxt "@info:credit"
+msgid "creator"
+msgstr "pencipta"
+
+#: nic.cpp:29
+#, kde-format
+msgctxt "@info:credit"
+msgid "Carl Schwan"
+msgstr "Carl Schwan"
+
+#: nic.cpp:29
+#, kde-format
+msgctxt "@info:credit"
+msgid "developer"
+msgstr "pengembang"
+
+#: package/contents/ui/main.qml:15
+#, kde-format
+msgid "Network Interfaces"
+msgstr "Antarmuka Jaringan"
+
+#: package/contents/ui/main.qml:30
+#, kde-format
+msgctxt "@label"
+msgid "Name:"
+msgstr "Nama:"
+
+#: package/contents/ui/main.qml:34
+#, kde-format
+msgctxt "@label"
+msgid "Address:"
+msgstr "Alamat:"
+
+#: package/contents/ui/main.qml:38
+#, kde-format
+msgctxt "@label"
+msgid "Network Mask:"
+msgstr "Mask Jaringan:"
+
+#: package/contents/ui/main.qml:42
+#, kde-format
+msgctxt "@label"
+msgid "Type:"
+msgstr "Tipe:"
+
+#: package/contents/ui/main.qml:46
+#, kde-format
+msgctxt "@label"
+msgid "Hardware Address:"
+msgstr "Alamat Hardware:"
+
+#: package/contents/ui/main.qml:51
+#, kde-format
+msgctxt "@label"
+msgid "State:"
+msgstr "Kondisi:"
+
+#: package/contents/ui/main.qml:59
+#, kde-format
+msgctxt "State of network card is connected"
+msgid "Up"
+msgstr "Tersambung"
+
+#: package/contents/ui/main.qml:60
+#, kde-format
+msgctxt "State of network card is disconnected"
+msgid "Down"
+msgstr "Terputus"
+
+#: package/contents/ui/main.qml:76
+#, kde-format
+msgctxt "@action:button"
+msgid "Refresh"
+msgstr "Segarkan"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Broadcast"
+#~ msgstr "Siaran"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Point to Point"
+#~ msgstr "Titik ke Titik"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Multicast"
+#~ msgstr "Multi Siaran"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Loopback"
+#~ msgstr "Putaran"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Unknown"
+#~ msgstr "Tak Diketahui"
+
+#~ msgctxt "Unknown network mask"
+#~ msgid "Unknown"
+#~ msgstr "Tak Diketahui"
+
+#~ msgctxt "Unknown HWaddr"
+#~ msgid "Unknown"
+#~ msgstr "Tak Diketahui"
+
+#, fuzzy
+#~| msgid "Broadcast"
+#~ msgctxt "@item:intable Netork type"
+#~ msgid "Broadcast"
+#~ msgstr "Siaran"
+
+#~ msgid "HWAddr"
+#~ msgstr "Alamat Perangkat Keras"
+
+#~ msgid "&Update"
+#~ msgstr "&Perbarui"
+
+#~ msgid "kcminfo"
+#~ msgstr "kcminfo"
+
+#~ msgid "System Information Control Module"
+#~ msgstr "Modul Kendali Informasi Sistem"

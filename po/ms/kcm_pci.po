@@ -1,0 +1,321 @@
+# kcm_pci Bahasa Melayu (Malay) (ms)
+# Copyright (C) 2008, 2009 K Desktop Environment
+# This file is distributed under the same license as the kcm_pci package.
+#
+# Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>, 2008, 2009, 2010.
+# Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>, 2010, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_pci\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
+"PO-Revision-Date: 2011-05-25 22:18+0800\n"
+"Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@gmail.com>\n"
+"Language-Team: Malay <kedidiemas@yahoogroups.com>\n"
+"Language: ms\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Sharuzzaman Ahmat Raslan"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sharuzzaman@myrealbox.com"
+
+#: main.cpp:26
+#, fuzzy, kde-format
+#| msgid "PIC"
+msgctxt "@label kcm name"
+msgid "PCI"
+msgstr "PIC"
+
+#: main.cpp:27
+#, kde-format
+msgid "Harald Sitter"
+msgstr ""
+
+#: package/contents/ui/main.qml:14
+#, fuzzy
+#| msgid "Information"
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "Maklumat"
+
+#~ msgid "kcm_pci"
+#~ msgstr "kcm_pci"
+
+#, fuzzy
+#~| msgid "Device"
+#~ msgid "PCI Devices"
+#~ msgstr "Peranti"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+
+#~ msgid "Nicolas Ternisien"
+#~ msgstr "Nicolas Ternisien"
+
+#~ msgid "Helge Deller"
+#~ msgstr "Helge Deller"
+
+#~ msgid "This list displays PCI information."
+#~ msgstr "Senarai ini memaparkan maklumat PCI."
+
+#~ msgid ""
+#~ "This display shows information about your computer's PCI slots and the "
+#~ "related connected devices."
+#~ msgstr ""
+#~ "Paparan ini memaparkan maklumat mengenai slot PCI komputer anda dan "
+#~ "peranti tersambung berkaitan."
+
+#~ msgid "Device Class"
+#~ msgstr "Kelas Peranti"
+
+#~ msgid "Device Subclass"
+#~ msgstr "Subkelas Peranti"
+
+#~ msgid "Device Programming Interface"
+#~ msgstr "Antaramuka Pengaturcaraan Peranti"
+
+#~ msgid "Vendor"
+#~ msgstr "Pengeluar"
+
+#~ msgid "Device"
+#~ msgstr "Peranti"
+
+#~ msgid "Interrupt"
+#~ msgstr "Ganggu"
+
+#~ msgid "IRQ"
+#~ msgstr "IRQ"
+
+#~ msgid "Pin"
+#~ msgstr "Pin"
+
+#~ msgid "Control"
+#~ msgstr "Kawalan"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "66 MHz PCI 2.1 bus"
+#~ msgstr "66 MHz PCI 2.1 bus"
+
+#~ msgid "Header"
+#~ msgstr "Pengepala"
+
+#~ msgid "Type"
+#~ msgstr "Jenis"
+
+#~ msgid "Size"
+#~ msgstr "Saiz"
+
+#~ msgid "Space"
+#~ msgstr "Ruang"
+
+#~ msgid "I/O"
+#~ msgstr "I/O"
+
+#~ msgid "Memory"
+#~ msgstr "Memori"
+
+#~ msgid "Address"
+#~ msgstr "Alamat"
+
+#~ msgid "Bus"
+#~ msgstr "Bas"
+
+#~ msgid "32-bit"
+#~ msgstr "32-bit"
+
+#~ msgid "Base"
+#~ msgstr "Asas"
+
+#~ msgid "Limit"
+#~ msgstr "Had"
+
+#~ msgid "64-bit"
+#~ msgstr "64-bit"
+
+#~ msgid "16-bit"
+#~ msgstr "16-bit"
+
+#~ msgid "Capabilities"
+#~ msgstr "Keupayaan"
+
+#~ msgid "Version"
+#~ msgstr "Versi"
+
+#~ msgid "D0"
+#~ msgstr "D0"
+
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgid "Data"
+#~ msgstr "Data"
+
+#~ msgid "Revision"
+#~ msgstr "Semakan"
+
+#~ msgid "Rate"
+#~ msgstr "Kadar"
+
+#~ msgid "Configuration"
+#~ msgstr "Tetapan"
+
+#~ msgid "Pending"
+#~ msgstr "Tertangguh"
+
+#~ msgid "Length"
+#~ msgstr "Panjang"
+
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "Tiada"
+
+#~ msgid "Next"
+#~ msgstr "Maju"
+
+#~ msgid "Value"
+#~ msgstr "Nilai"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Enabled"
+#~ msgstr "Diaktifkan"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Disabled"
+#~ msgstr "Dimatikan"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Yes"
+#~ msgstr "Ya"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "Tidak"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Unknown"
+#~ msgstr "Tidak diketahui"
+
+#~ msgid "Bridge"
+#~ msgstr "Jambatan"
+
+#~ msgid "Processor"
+#~ msgstr "Pemproses"
+
+#, fuzzy
+#~| msgid "Processor"
+#~ msgid "Coprocessor"
+#~ msgstr "Pemproses"
+
+#, fuzzy
+#~| msgid "3D controller"
+#~ msgid "SATA controller"
+#~ msgstr "Pengawal 3D"
+
+#, fuzzy
+#~| msgid "3D controller"
+#~ msgid "PICMG controller"
+#~ msgstr "Pengawal 3D"
+
+#, fuzzy
+#~| msgid "3D controller"
+#~ msgid "Infiniband controller"
+#~ msgstr "Pengawal 3D"
+
+#, fuzzy
+#~| msgid "RF controller"
+#~ msgid "Fabric controller"
+#~ msgstr "Pengawal RF"
+
+#~ msgid "3D controller"
+#~ msgstr "Pengawal 3D"
+
+#~ msgid "RAM memory"
+#~ msgstr "Memori RAM"
+
+#~ msgid "Modem"
+#~ msgstr "Modem"
+
+#, fuzzy
+#~| msgid "3D controller"
+#~ msgid "GPIB controller"
+#~ msgstr "Pengawal 3D"
+
+#, fuzzy
+#~| msgid "3D controller"
+#~ msgid "Smart card controller"
+#~ msgstr "Pengawal 3D"
+
+#~ msgid "Timer"
+#~ msgstr "Pemasa"
+
+#, fuzzy
+#~| msgid "3D controller"
+#~ msgid "SD Host controller"
+#~ msgstr "Pengawal 3D"
+
+#~ msgid "Alpha"
+#~ msgstr "Alpha"
+
+#~ msgid "SMBus"
+#~ msgstr "SMBus"
+
+#~ msgid "RF controller"
+#~ msgstr "Pengawal RF"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Vendor specific"
+#~ msgstr "Khusus pengeluar"
+
+#, fuzzy
+#~| msgid "3D controller"
+#~ msgid "VGA controller"
+#~ msgstr "Pengawal 3D"
+
+#, fuzzy
+#~| msgid "3D controller"
+#~ msgid "8514 controller"
+#~ msgstr "Pengawal 3D"
+
+#~ msgid "Generic"
+#~ msgstr "Generik"
+
+#~ msgid "Unspecified"
+#~ msgstr "Tidak dinyatakan"
+
+#~ msgid "USB Device"
+#~ msgstr "Peranti USB"
+
+#~ msgid "Fast"
+#~ msgstr "Pantas"
+
+#~ msgid "Medium"
+#~ msgstr "Sederhana"
+
+#~ msgid "Slow"
+#~ msgstr "Perlahan"
+
+#~ msgid "Standard"
+#~ msgstr "Piawai"
+
+#~ msgid "CardBus"
+#~ msgstr "CardBus"
+
+#~ msgid "KDE PCI Information Control Module"
+#~ msgstr "Modul Kawalan Maklumat PCI KDE"

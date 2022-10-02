@@ -1,0 +1,180 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the kinfocenter package.
+#
+# Phu Hung Nguyen <phu.nguyen@kdemail.net>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: kinfocenter\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-14 00:46+0000\n"
+"PO-Revision-Date: 2021-08-03 10:51+0200\n"
+"Last-Translator: Phu Hung Nguyen <phu.nguyen@kdemail.net>\n"
+"Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 20.12.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Nguyễn Hùng Phú"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "phu.nguyen@kdemail.net"
+
+#: networkmodel.cpp:159
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Point to Point"
+msgstr "Đơn bá"
+
+#: networkmodel.cpp:166
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Broadcast"
+msgstr "Quảng bá"
+
+#: networkmodel.cpp:173
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Multicast"
+msgstr "Đa bá"
+
+#: networkmodel.cpp:180
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Loopback"
+msgstr "Vòng lại"
+
+#: nic.cpp:21
+#, kde-format
+msgid "kcm_nic"
+msgstr "kcm_nic"
+
+#: nic.cpp:22
+#, kde-format
+msgctxt "@title:window"
+msgid "Network Interfaces"
+msgstr "Giao diện mạng"
+
+#: nic.cpp:26
+#, kde-format
+msgctxt "@info"
+msgid "(c) 2001 - 2002 Alexander Neundorf"
+msgstr "(c) 2001 - 2002 Alexander Neundorf"
+
+#: nic.cpp:28
+#, kde-format
+msgctxt "@info:credit"
+msgid "Alexander Neundorf"
+msgstr "Alexander Neundorf"
+
+#: nic.cpp:28
+#, kde-format
+msgctxt "@info:credit"
+msgid "creator"
+msgstr "người tạo"
+
+#: nic.cpp:29
+#, kde-format
+msgctxt "@info:credit"
+msgid "Carl Schwan"
+msgstr "Carl Schwan"
+
+#: nic.cpp:29
+#, kde-format
+msgctxt "@info:credit"
+msgid "developer"
+msgstr "nhà phát triển"
+
+#: package/contents/ui/main.qml:15
+#, kde-format
+msgid "Network Interfaces"
+msgstr "Giao diện mạng"
+
+#: package/contents/ui/main.qml:30
+#, kde-format
+msgctxt "@label"
+msgid "Name:"
+msgstr "Tên:"
+
+#: package/contents/ui/main.qml:34
+#, kde-format
+msgctxt "@label"
+msgid "Address:"
+msgstr "Địa chỉ:"
+
+#: package/contents/ui/main.qml:38
+#, kde-format
+msgctxt "@label"
+msgid "Network Mask:"
+msgstr "Mặt nạ mạng:"
+
+#: package/contents/ui/main.qml:42
+#, kde-format
+msgctxt "@label"
+msgid "Type:"
+msgstr "Kiểu:"
+
+#: package/contents/ui/main.qml:46
+#, kde-format
+msgctxt "@label"
+msgid "Hardware Address:"
+msgstr "Địa chỉ phần cứng:"
+
+#: package/contents/ui/main.qml:51
+#, kde-format
+msgctxt "@label"
+msgid "State:"
+msgstr "Trạng thái:"
+
+#: package/contents/ui/main.qml:59
+#, kde-format
+msgctxt "State of network card is connected"
+msgid "Up"
+msgstr "Kết nối"
+
+#: package/contents/ui/main.qml:60
+#, kde-format
+msgctxt "State of network card is disconnected"
+msgid "Down"
+msgstr "Không kết nối"
+
+#: package/contents/ui/main.qml:76
+#, kde-format
+msgctxt "@action:button"
+msgid "Refresh"
+msgstr "Cập nhật"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Broadcast"
+#~ msgstr "Quảng bá"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Point to Point"
+#~ msgstr "Đơn bá"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Multicast"
+#~ msgstr "Đa bá"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Loopback"
+#~ msgstr "Vòng lại"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Unknown"
+#~ msgstr "Không rõ"
+
+#~ msgctxt "Unknown network mask"
+#~ msgid "Unknown"
+#~ msgstr "Không rõ"
+
+#~ msgctxt "Unknown HWaddr"
+#~ msgid "Unknown"
+#~ msgstr "Không rõ"

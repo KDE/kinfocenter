@@ -1,0 +1,1318 @@
+# translation of kcm_pci.po to Frysk
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Rinse de Vries <rinsedevries@kde.nl>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_pci\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
+"PO-Revision-Date: 2010-07-19 12:01+0100\n"
+"Last-Translator: Berend Ytsma <berendy@gmail.com>\n"
+"Language-Team: Frysk <kde-i18n-fry@kde.org>\n"
+"Language: fy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Berend Ytsma"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "Berendy@gmail.com"
+
+#: main.cpp:26
+#, fuzzy, kde-format
+#| msgid "PCI-X"
+msgctxt "@label kcm name"
+msgid "PCI"
+msgstr "PCI-X"
+
+#: main.cpp:27
+#, kde-format
+msgid "Harald Sitter"
+msgstr ""
+
+#: package/contents/ui/main.qml:14
+#, fuzzy
+#| msgid "Information"
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "Ynformaasje"
+
+#~ msgid "kcm_pci"
+#~ msgstr "kcm_pci"
+
+#, fuzzy
+#~| msgid "Device"
+#~ msgid "PCI Devices"
+#~ msgstr "Apparaat"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+
+#~ msgid "Nicolas Ternisien"
+#~ msgstr "Nicolas Ternisien"
+
+#~ msgid "Helge Deller"
+#~ msgstr "Helge Deller"
+
+#, fuzzy
+#~ msgid "This list displays PCI information."
+#~ msgstr "Dizze list lit de partysjes op jo systeem sjen."
+
+#~ msgid "Device Class"
+#~ msgstr "Apparaatklasse"
+
+#~ msgid "Device Subclass"
+#~ msgstr "Apparaat subklase"
+
+#~ msgid "Device Programming Interface"
+#~ msgstr "Aparaat programear ynterface"
+
+#~ msgid "Master IDE Device"
+#~ msgstr "Haad IDE stasjon"
+
+#~ msgid "Secondary programmable indicator"
+#~ msgstr "Sekundêre programeabere skakelaar"
+
+#~ msgid "Secondary operating mode"
+#~ msgstr "Sekundêre bewurkingsmodus"
+
+#~ msgid "Primary programmable indicator"
+#~ msgstr "Primêre programearbere skakelaar"
+
+#~ msgid "Primary operating mode"
+#~ msgstr "Primêre bewurkingsmodus"
+
+#~ msgid "Vendor"
+#~ msgstr "Fabrikant"
+
+#~ msgid "Device"
+#~ msgstr "Apparaat"
+
+#~ msgid "Subsystem"
+#~ msgstr "Subsysteem"
+
+#~ msgid " - device:"
+#~ msgstr "- apparaat:"
+
+#~ msgid "Interrupt"
+#~ msgstr "Interrupt"
+
+#~ msgid "IRQ"
+#~ msgstr "IRQ"
+
+#~ msgid "Pin"
+#~ msgstr "Pin"
+
+#~ msgid "Control"
+#~ msgstr "Kontrôle"
+
+#~ msgid "Response in I/O space"
+#~ msgstr "Reaksje yn I/O-gebiet"
+
+#~ msgid "Response in memory space"
+#~ msgstr "Reaksje yn ûnthâldromte"
+
+#~ msgid "Bus mastering"
+#~ msgstr "Busbestjoering"
+
+#, fuzzy
+#~ msgid "Response to special cycles"
+#~ msgstr "Symlink nei spesjaal"
+
+#, fuzzy
+#~ msgid "Memory write and invalidate"
+#~ msgstr "Unthâld en wiskelûndhâld skiednis"
+
+#, fuzzy
+#~ msgid "Parity checking"
+#~ msgstr "Stavering hifkje"
+
+#, fuzzy
+#~ msgid "Address/data stepping"
+#~ msgstr "Data-display-debugger"
+
+#~ msgid "System error"
+#~ msgstr "Systeemflater"
+
+#, fuzzy
+#~ msgid "Back-to-back writes"
+#~ msgstr "Werom nei't album"
+
+#~ msgid "Status"
+#~ msgstr "Tastân"
+
+#, fuzzy
+#~ msgid "Interrupt status"
+#~ msgstr "Samba-tastân"
+
+#, fuzzy
+#~ msgid "Capability list"
+#~ msgstr "Finsterlist"
+
+#~ msgid "66 MHz PCI 2.1 bus"
+#~ msgstr "66 MHz PCI 2.1 bus"
+
+#, fuzzy
+#~ msgid "User-definable features"
+#~ msgstr "Wachtwurd en brûkersbehear"
+
+#, fuzzy
+#~ msgid "Accept fast back-to-back"
+#~ msgstr "Werom nei de foarige side"
+
+#, fuzzy
+#~ msgid "Data parity error"
+#~ msgstr "Ynterne PowerDevil flater"
+
+#, fuzzy
+#~ msgid "Device selection timing"
+#~ msgstr "Seleksjewiksel sjen litte"
+
+#, fuzzy
+#~ msgid "Signaled target abort"
+#~ msgstr "Aktive sesjes ôfbrekke:"
+
+#, fuzzy
+#~ msgid "Received target abort"
+#~ msgstr "Aktive sesjes ôfbrekke:"
+
+#, fuzzy
+#~ msgid "Received master abort"
+#~ msgstr "Aktive sesjes ôfbrekke:"
+
+#, fuzzy
+#~ msgid "Signaled system error"
+#~ msgstr "Ynterne PowerDevil flater"
+
+#, fuzzy
+#~ msgid "Parity error"
+#~ msgstr "Fatale flater"
+
+#~ msgid "MIN_GNT"
+#~ msgstr "MIN_GNT"
+
+#, fuzzy
+#~ msgid "No major requirements (0x00)"
+#~ msgstr "Der is gjin tsjint mei de juste easken fûn."
+
+#~ msgid "MAX_LAT"
+#~ msgstr "MAX_LAT"
+
+#, fuzzy
+#~ msgid "Header"
+#~ msgstr "Kopteksteigenskippen"
+
+#~ msgid "Type"
+#~ msgstr "Type"
+
+#~ msgid "Build-in self test"
+#~ msgstr "Ynboude selftest"
+
+#~ msgid "BIST Capable"
+#~ msgstr "BIST geskikt"
+
+#~ msgid "BIST Start"
+#~ msgstr "BIST Start"
+
+#, fuzzy
+#~ msgid "Completion code"
+#~ msgstr "Koade-oanfolling oanroppe"
+
+#~ msgid "Size"
+#~ msgstr "Grutte"
+
+#, fuzzy
+#~ msgid "Address mappings"
+#~ msgstr "Hw adres"
+
+#, fuzzy
+#~ msgid "Mapping %1"
+#~ msgstr "Mapping"
+
+#~ msgid "Space"
+#~ msgstr "Romte"
+
+#~ msgid "I/O"
+#~ msgstr "I/O"
+
+#~ msgid "Memory"
+#~ msgstr "Unthâld"
+
+#~ msgid "Address"
+#~ msgstr "adres"
+
+#~ msgid "Bus"
+#~ msgstr "Bus"
+
+#~ msgid "Primary bus number"
+#~ msgstr "Primêre busnûmer"
+
+#~ msgid "Secondary bus number"
+#~ msgstr "Sekundêre busnûmer"
+
+#~ msgid "Subordinate bus number"
+#~ msgstr "Undergeskikt busnûmer"
+
+#, fuzzy
+#~ msgid "Secondary latency timer"
+#~ msgstr "Sekundêre programeabere skakelaar"
+
+#~ msgid "CardBus number"
+#~ msgstr "CardBus nûmer"
+
+#~ msgid "Secondary status"
+#~ msgstr "Sekundêre tastân"
+
+#, fuzzy
+#~ msgid "I/O behind bridge"
+#~ msgstr "Bridge-tastân"
+
+#~ msgid "32-bit"
+#~ msgstr "32-bit"
+
+#~ msgid "Base"
+#~ msgstr "Basis"
+
+#~ msgid "Limit"
+#~ msgstr "Undergrins"
+
+#, fuzzy
+#~ msgid "Memory behind bridge"
+#~ msgstr "Efter &finster sjen litte"
+
+#~ msgid "64-bit"
+#~ msgstr "64-bit"
+
+#, fuzzy
+#~ msgid "Bridge control"
+#~ msgstr "Enerzjybehear"
+
+#, fuzzy
+#~ msgid "Secondary parity checking"
+#~ msgstr "Opsjes foar de staveringshifker"
+
+#, fuzzy
+#~ msgid "Secondary system error"
+#~ msgstr "Ynterne PowerDevil flater"
+
+#, fuzzy
+#~ msgid "Master abort"
+#~ msgstr "Haad Wachtwurd"
+
+#, fuzzy
+#~ msgid "Secondary bus reset"
+#~ msgstr "Sekundêre busnûmer"
+
+#, fuzzy
+#~ msgid "Secondary back-to-back writes"
+#~ msgstr "Werom nei de foarige side"
+
+#~ msgid "2e10 PCI clocks"
+#~ msgstr "2e10 PCI clocks"
+
+#~ msgid "2e15 PCI clocks"
+#~ msgstr "2e15 PCI clocks"
+
+#, fuzzy
+#~ msgid "Discard timer error"
+#~ msgstr "Ynterne PowerDevil flater"
+
+#, fuzzy
+#~ msgid "Expansion ROM"
+#~ msgstr "kompaktskiifstasjon ..."
+
+#~ msgid "Memory windows"
+#~ msgstr "Unthâld finsters"
+
+#~ msgid "Window %1"
+#~ msgstr "Finster %1"
+
+#~ msgid "I/O windows"
+#~ msgstr "I/O finsters"
+
+#~ msgid "16-bit"
+#~ msgstr "16-bit"
+
+#, fuzzy
+#~ msgid "CardBus control"
+#~ msgstr "Enerzjybehear"
+
+#, fuzzy
+#~ msgid "Window 0 prefetchable memory"
+#~ msgstr "Statistyken firtuele ûnthâld"
+
+#, fuzzy
+#~ msgid "Window 1 prefetchable memory"
+#~ msgstr "Statistyken firtuele ûnthâld"
+
+#, fuzzy
+#~ msgid "Post writes"
+#~ msgstr "Fluch skriuwe"
+
+#, fuzzy
+#~ msgid "Capabilities"
+#~ msgstr "Systeem mooglikheden"
+
+#~ msgid "Version"
+#~ msgstr "Ferzje"
+
+#~ msgid "D1 support"
+#~ msgstr "D1 stipe"
+
+#~ msgid "D2 support"
+#~ msgstr "D2 stipe"
+
+#~ msgid "Power management events"
+#~ msgstr "Fermogensbehear barren"
+
+#~ msgid "D0"
+#~ msgstr "D0"
+
+#~ msgid "D1"
+#~ msgstr "D1"
+
+#~ msgid "D2"
+#~ msgstr "D2"
+
+#~ msgid "D3 hot"
+#~ msgstr "D3 hyt"
+
+#~ msgid "D3 cold"
+#~ msgstr "D3 kâld"
+
+#~ msgid "Power state"
+#~ msgstr "Fermogenstastân"
+
+#~ msgid "Power management"
+#~ msgstr "Fermogensbehear"
+
+#~ msgid "Data select"
+#~ msgstr "Gegevens seleksje"
+
+#~ msgid "Data scale"
+#~ msgstr "Gegevens skaal"
+
+#~ msgid "Power management status"
+#~ msgstr "Fermogensbehear tastân"
+
+#~ msgid "Bridge status"
+#~ msgstr "Bridge-tastân"
+
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgid "Data"
+#~ msgstr "Gegevens"
+
+#~ msgid "Revision"
+#~ msgstr "Revysje"
+
+#~ msgid "Rate"
+#~ msgstr "Fluggens"
+
+#~ msgid "AGP 3.0 mode"
+#~ msgstr "AGP 3.0 modus"
+
+#~ msgid "Fast Writes"
+#~ msgstr "Fluch skriuwe"
+
+#~ msgid "Address over 4 GiB"
+#~ msgstr "Adres boppe 4 GiB"
+
+#~ msgid "64-bit GART"
+#~ msgstr "64-bit GART"
+
+#, fuzzy
+#~ msgid "Cache Coherency"
+#~ msgstr "Lyts skiif ûnthâld:"
+
+#~ msgid "Side-band addressing"
+#~ msgstr "Sydbân adresearring"
+
+#, fuzzy
+#~ msgid "Calibrating cycle"
+#~ msgstr "Troch ljeppers rinne"
+
+#~ msgid "Maximum number of AGP command"
+#~ msgstr "Maksimum oantal fan AGP kommando's"
+
+#~ msgid "Configuration"
+#~ msgstr "Konfiguraasje"
+
+#~ msgid "AGP"
+#~ msgstr "AGP"
+
+#~ msgid "Data address"
+#~ msgstr "Gegevens adres"
+
+#~ msgid "Transfer completed"
+#~ msgstr "Oerdracht foltôge"
+
+#~ msgid "Message control"
+#~ msgstr "Berjochtbehear"
+
+#~ msgid "Message signaled interrupts"
+#~ msgstr "Berjocht sinjalearre ynterrupts"
+
+#~ msgid "Multiple message capable"
+#~ msgstr "Mearfâldich geskikte berjochten"
+
+#~ msgid "Multiple message enable"
+#~ msgstr "Mearfâldige berjochten ynskeakele"
+
+#~ msgid "64-bit address"
+#~ msgstr "64-bit adres"
+
+#~ msgid "Per vector masking"
+#~ msgstr "De fektor maskearje"
+
+#~ msgid "Mask"
+#~ msgstr "Masker"
+
+#~ msgid "Pending"
+#~ msgstr "Yn behanneling"
+
+#~ msgid "Length"
+#~ msgstr "Lingte"
+
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "Gjint"
+
+#~ msgid "Next"
+#~ msgstr "Folgjende"
+
+#~ msgid "0x00 (None)"
+#~ msgstr "0x00 (Gjint)"
+
+#~ msgid "Root only"
+#~ msgstr "Allinne root"
+
+#~ msgid "Value"
+#~ msgstr "Wearde"
+
+#, fuzzy
+#~ msgid "Cache line size"
+#~ msgstr "Lyts ûnthâld grutte fan`e eftergrûn"
+
+#, fuzzy
+#~| msgid "Enabled"
+#~ msgctxt "state of PCI item"
+#~ msgid "Enabled"
+#~ msgstr "Ynskeakele"
+
+#, fuzzy
+#~| msgid "Disabled"
+#~ msgctxt "state of PCI item"
+#~ msgid "Disabled"
+#~ msgstr "Utskeakele"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Yes"
+#~ msgstr "Jawis"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "Nee"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Unknown"
+#~ msgstr "Unbekend"
+
+#, fuzzy
+#~ msgid "Unclassified device"
+#~ msgstr "Kamera..."
+
+#, fuzzy
+#~ msgid "Mass storage controller"
+#~ msgstr "Nepomuk Gegevens opslach"
+
+#, fuzzy
+#~ msgid "Network controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "Display controller"
+#~ msgstr "Multymedia kontrôler"
+
+#~ msgid "Multimedia controller"
+#~ msgstr "Multymedia kontrôler"
+
+#~ msgid "Memory controller"
+#~ msgstr "Unthâld kontrôler"
+
+#~ msgid "Bridge"
+#~ msgstr "Bridge"
+
+#, fuzzy
+#~ msgid "Communication controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "Generic system peripheral"
+#~ msgstr "SAM systeembehear"
+
+#, fuzzy
+#~ msgid "Input device controller"
+#~ msgstr "kompaktskiifstasjon ..."
+
+#, fuzzy
+#~ msgid "Docking station"
+#~ msgstr "Mistbank by stasjon"
+
+#~ msgid "Processor"
+#~ msgstr "Ferwurkingsienheid"
+
+#, fuzzy
+#~ msgid "Serial bus controller"
+#~ msgstr "Primêre busnûmer"
+
+#, fuzzy
+#~ msgid "Wireless controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "Intelligent controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "Satellite communications controller"
+#~ msgstr "eDonkey2000 GTK+ Core Controller"
+
+#, fuzzy
+#~ msgid "Encryption controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "Signal processing controller"
+#~ msgstr "eDonkey2000 GTK+ Core Controller"
+
+#, fuzzy
+#~ msgid "Coprocessor"
+#~ msgstr "lûdsstudio"
+
+#, fuzzy
+#~ msgid "Unknown device class"
+#~ msgstr "<tr><td><i>Klasse</i></td>%1</tr>"
+
+#, fuzzy
+#~ msgid "VGA unclassified device"
+#~ msgstr "kompaktskiifstasjon ..."
+
+#, fuzzy
+#~ msgid "Unknown unclassified device"
+#~ msgstr "kompaktskiifstasjon ..."
+
+#, fuzzy
+#~ msgid "SCSI storage controller"
+#~ msgstr "Nepomuk Gegevens opslach"
+
+#~ msgid "IDE controller"
+#~ msgstr "IDE kontrôler"
+
+#, fuzzy
+#~ msgid "Floppy disk controller"
+#~ msgstr "Lltstûnthâldgrutte op skiif:"
+
+#, fuzzy
+#~ msgid "IPI bus controller"
+#~ msgstr "Primêre busnûmer"
+
+#, fuzzy
+#~ msgid "RAID bus controller"
+#~ msgstr "Primêre busnûmer"
+
+#~ msgid "ATA controller"
+#~ msgstr "ATA kontrôler"
+
+#, fuzzy
+#~| msgid "ATA controller"
+#~ msgid "SATA controller"
+#~ msgstr "ATA kontrôler"
+
+#, fuzzy
+#~ msgid "Serial Attached SCSI controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "Non-Volatile memory controller"
+#~ msgstr "Statistyken firtuele ûnthâld"
+
+#, fuzzy
+#~ msgid "Unknown storage controller"
+#~ msgstr "Nepomuk Gegevens opslach"
+
+#, fuzzy
+#~ msgid "Ethernet controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "FDDI network controller"
+#~ msgstr "Netwurkynterface-ynformaasje"
+
+#, fuzzy
+#~ msgid "ATM network controller"
+#~ msgstr "Netwurkynterface-ynformaasje"
+
+#~ msgid "ISDN controller"
+#~ msgstr "ISDN kontrôler"
+
+#~ msgid "WorldFip controller"
+#~ msgstr "WorldFip kontrôler"
+
+#, fuzzy
+#~| msgid "IDE controller"
+#~ msgid "PICMG controller"
+#~ msgstr "IDE kontrôler"
+
+#, fuzzy
+#~ msgid "Infiniband controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "Fabric controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "Unknown network controller"
+#~ msgstr "Netwurkynterface-ynformaasje"
+
+#, fuzzy
+#~ msgid "VGA compatible controller"
+#~ msgstr "eDonkey2000 GTK+ Core Controller"
+
+#, fuzzy
+#~ msgid "XGA compatible controller"
+#~ msgstr "eDonkey2000 GTK+ Core Controller"
+
+#~ msgid "3D controller"
+#~ msgstr "3D kontrôler"
+
+#, fuzzy
+#~ msgid "Unknown display controller"
+#~ msgstr "Data-display-debugger"
+
+#, fuzzy
+#~ msgid "Multimedia video controller"
+#~ msgstr "AVI-fideospiler"
+
+#, fuzzy
+#~ msgid "Multimedia audio controller"
+#~ msgstr "Multyspoor Audio Studio"
+
+#, fuzzy
+#~ msgid "Computer telephony device"
+#~ msgstr "kompaktskiifstasjon ..."
+
+#, fuzzy
+#~ msgid "Audio device"
+#~ msgstr "Kamera..."
+
+#, fuzzy
+#~ msgid "Unknown multimedia controller"
+#~ msgstr "KDE Multymedia efterein"
+
+#, fuzzy
+#~ msgid "RAM memory"
+#~ msgstr "Unthâld ynformaasje"
+
+#, fuzzy
+#~ msgid "FLASH memory"
+#~ msgstr "Unthâld ynformaasje"
+
+#, fuzzy
+#~ msgid "Unknown memory controller"
+#~ msgstr "Statistyken firtuele ûnthâld"
+
+#, fuzzy
+#~ msgid "Host bridge"
+#~ msgstr "Bridge-tastân"
+
+#~ msgid "ISA bridge"
+#~ msgstr "ISA bridge"
+
+#~ msgid "EISA bridge"
+#~ msgstr "EISA bridge"
+
+#~ msgid "MicroChannel bridge"
+#~ msgstr "MicroChannel bridge"
+
+#, fuzzy
+#~ msgid "PCI bridge"
+#~ msgstr "Bridge-tastân"
+
+#~ msgid "PCMCIA bridge"
+#~ msgstr "PCMCIA bridge"
+
+#~ msgid "NuBus bridge"
+#~ msgstr "NuBus bridge"
+
+#~ msgid "CardBus bridge"
+#~ msgstr "CardBus bridge"
+
+#~ msgid "RACEway bridge"
+#~ msgstr "RACEway bridge"
+
+#~ msgid "Semi-transparent PCI-to-PCI bridge"
+#~ msgstr "Semi-transparent PCI-nei-PCI bridge"
+
+#~ msgid "InfiniBand to PCI host bridge"
+#~ msgstr "InfiniBand nei PCI host bridge"
+
+#, fuzzy
+#~ msgid "Unknown bridge"
+#~ msgstr "Bridge-tastân"
+
+#, fuzzy
+#~ msgid "Serial controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "Parallel controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "Multiport serial controller"
+#~ msgstr "Searje nûmer"
+
+#~ msgid "Modem"
+#~ msgstr "Modem"
+
+#, fuzzy
+#~ msgid "GPIB controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "Smart card controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "Unknown communication controller"
+#~ msgstr "D-Bus-kommunikaasjeflater"
+
+#~ msgid "PIC"
+#~ msgstr "PIC"
+
+#, fuzzy
+#~ msgid "DMA controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "Timer"
+#~ msgstr "Timerynstellings"
+
+#~ msgid "RTC"
+#~ msgstr "RTC"
+
+#, fuzzy
+#~| msgid "ISDN controller"
+#~ msgid "SD Host controller"
+#~ msgstr "ISDN kontrôler"
+
+#, fuzzy
+#~ msgid "Unknown system peripheral"
+#~ msgstr "SAM systeembehear"
+
+#, fuzzy
+#~ msgid "Keyboard controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "Mouse controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "Scanner controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "Gameport controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "Unknown input device controller"
+#~ msgstr "Net by steat it i/o apparaat te inisjalisearjen"
+
+#, fuzzy
+#~ msgid "Generic docking station"
+#~ msgstr "Gewoane mbox triem:"
+
+#, fuzzy
+#~ msgid "Unknown docking station"
+#~ msgstr "Prosessor %1: %2, ûnbekende fluggens"
+
+#~ msgid "386"
+#~ msgstr "386"
+
+#~ msgid "486"
+#~ msgstr "486"
+
+#~ msgid "Pentium"
+#~ msgstr "Pentium"
+
+#~ msgid "Alpha"
+#~ msgstr "Alpha"
+
+#~ msgid "Power PC"
+#~ msgstr "Power PC"
+
+#~ msgid "MIPS"
+#~ msgstr "MIPS"
+
+#, fuzzy
+#~ msgid "Co-processor"
+#~ msgstr "lûdsstudio"
+
+#, fuzzy
+#~ msgid "Unknown processor"
+#~ msgstr "lûdsstudio"
+
+#~ msgid "FireWire (IEEE 1394)"
+#~ msgstr "FireWire (IEEE 1394)"
+
+#, fuzzy
+#~ msgid "ACCESS bus"
+#~ msgstr "Unbekende bus"
+
+#~ msgid "SSA"
+#~ msgstr "SSA"
+
+#, fuzzy
+#~ msgid "USB controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "Fibre channel"
+#~ msgstr "DMA-kanaal"
+
+#~ msgid "SMBus"
+#~ msgstr "SMBus"
+
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#, fuzzy
+#~ msgid "IPMI interface"
+#~ msgstr "Ynterface-ûntwerper"
+
+#, fuzzy
+#~ msgid "SERCOS interface"
+#~ msgstr "Ynterface-ûntwerper"
+
+#~ msgid "CANbus"
+#~ msgstr "CANbus"
+
+#, fuzzy
+#~ msgid "IRDA controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "Consumer IR controller"
+#~ msgstr "eDonkey2000 GTK+ Core Controller"
+
+#, fuzzy
+#~ msgid "RF controller"
+#~ msgstr "Multymedia kontrôler"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Ethernet (802.11a - 5 GHz)"
+#~ msgstr "Ethernet (802.11a - 5 GHz)"
+
+#~ msgid "Ethernet (802.11b - 2.4 GHz)"
+#~ msgstr "Ethernet (802.11b - 2.4 GHz)"
+
+#, fuzzy
+#~ msgid "Unknown wireless controller"
+#~ msgstr "Palm/Wireless emulator"
+
+#~ msgid "I2O"
+#~ msgstr "I2O"
+
+#, fuzzy
+#~ msgid "Unknown intelligent controller"
+#~ msgstr "Prosessor %1: %2, ûnbekende fluggens"
+
+#, fuzzy
+#~ msgid "Satellite TV controller"
+#~ msgstr "eDonkey2000 GTK+ Core Controller"
+
+#, fuzzy
+#~ msgid "Entertainment encryption device"
+#~ msgstr "kompaktskiifstasjon ..."
+
+#, fuzzy
+#~ msgid "Unknown encryption controller"
+#~ msgstr "Unbekend fersifer skema."
+
+#, fuzzy
+#~ msgid "DPIO module"
+#~ msgstr "Kernelmodule"
+
+#, fuzzy
+#~ msgid "Performance counters"
+#~ msgstr "KDE-prestaasjes"
+
+#, fuzzy
+#~ msgid "Communication synchronizer"
+#~ msgstr "Kommunikaasjeflater"
+
+#, fuzzy
+#~ msgid "Signal processing management"
+#~ msgstr "eDonkey2000 GTK+ Core Controller"
+
+#, fuzzy
+#~ msgid "Unknown processing accelerator"
+#~ msgstr "lûdsstudio"
+
+#, fuzzy
+#~ msgid "Unknown subdevice class"
+#~ msgstr "<tr><td><i>Klasse</i></td>%1</tr>"
+
+#, fuzzy
+#~ msgid "ISA Compatibility mode-only controller"
+#~ msgstr "eDonkey2000 GTK+ Core Controller"
+
+#, fuzzy
+#~ msgid "PCI native mode-only controller"
+#~ msgstr "Multymedia kontrôler"
+
+#, fuzzy
+#~ msgid "Vendor specific"
+#~ msgstr "Distributeur spesifyk"
+
+#, fuzzy
+#~| msgid "PCI express"
+#~ msgid "NVM Express"
+#~ msgstr "PCI express"
+
+#, fuzzy
+#~| msgid "ATA controller"
+#~ msgid "VGA controller"
+#~ msgstr "ATA kontrôler"
+
+#, fuzzy
+#~| msgid "3D controller"
+#~ msgid "8514 controller"
+#~ msgstr "3D kontrôler"
+
+#, fuzzy
+#~ msgid "Normal decode"
+#~ msgstr "Gewoane eftergrûn"
+
+#, fuzzy
+#~ msgid "Transparent mode"
+#~ msgstr "Werjeftemodus"
+
+#, fuzzy
+#~ msgid "Endpoint mode"
+#~ msgstr "Werjeftemodus"
+
+#~ msgid "8250"
+#~ msgstr "8250"
+
+#~ msgid "16450"
+#~ msgstr "16450"
+
+#~ msgid "16550"
+#~ msgstr "16550"
+
+#~ msgid "16650"
+#~ msgstr "16650"
+
+#~ msgid "16750"
+#~ msgstr "16750"
+
+#~ msgid "16850"
+#~ msgstr "16850"
+
+#~ msgid "16950"
+#~ msgstr "16950"
+
+#~ msgid "SPP"
+#~ msgstr "SPP"
+
+#~ msgid "BiDir"
+#~ msgstr "BiDir"
+
+#~ msgid "ECP"
+#~ msgstr "ECP"
+
+#~ msgid "IEEE1284"
+#~ msgstr "IEEE1284"
+
+#~ msgid "IEEE1284 Target"
+#~ msgstr "IEEE1284 Target"
+
+#~ msgid "Generic"
+#~ msgstr "Algemien"
+
+#~ msgid "Hayes/16450"
+#~ msgstr "Hayes/16450"
+
+#~ msgid "Hayes/16550"
+#~ msgstr "Hayes/16550"
+
+#~ msgid "Hayes/16650"
+#~ msgstr "Hayes/16650"
+
+#~ msgid "Hayes/16750"
+#~ msgstr "Hayes/16750"
+
+#~ msgid "8259"
+#~ msgstr "8259"
+
+#~ msgid "ISA PIC"
+#~ msgstr "ISA PIC"
+
+#~ msgid "EISA PIC"
+#~ msgstr "EISA PIC"
+
+#~ msgid "IO-APIC"
+#~ msgstr "IO-APIC"
+
+#~ msgid "IO(X)-APIC"
+#~ msgstr "IO(X)-APIC"
+
+#~ msgid "8237"
+#~ msgstr "8237"
+
+#~ msgid "ISA DMA"
+#~ msgstr "ISA DMA"
+
+#~ msgid "EISA DMA"
+#~ msgstr "EISA DMA"
+
+#~ msgid "8254"
+#~ msgstr "8254"
+
+#, fuzzy
+#~ msgid "ISA timer"
+#~ msgstr "Timerynstellings"
+
+#, fuzzy
+#~ msgid "EISA timers"
+#~ msgstr "EISA bridge"
+
+#~ msgid "ISA RTC"
+#~ msgstr "ISA RTC"
+
+#, fuzzy
+#~ msgid "Extended"
+#~ msgstr "Utwreid"
+
+#~ msgid "OHCI"
+#~ msgstr "OHCI"
+
+#~ msgid "UHCI"
+#~ msgstr "UHCI"
+
+#~ msgid "EHCI"
+#~ msgstr "EHCI"
+
+#~ msgid "Unspecified"
+#~ msgstr "Net spesifisearre"
+
+#, fuzzy
+#~ msgid "USB Device"
+#~ msgstr "Kamera..."
+
+#~ msgid "SMIC"
+#~ msgstr "SMIC"
+
+#, fuzzy
+#~ msgid "Keyboard controller style"
+#~ msgstr "Klassyke KDE styl"
+
+#, fuzzy
+#~ msgid "Block transfer"
+#~ msgstr "Oerdracht foltôge"
+
+#, fuzzy
+#~ msgid "Vital product data"
+#~ msgstr "Data-display-debugger"
+
+#, fuzzy
+#~ msgid "Slot identification"
+#~ msgstr "Blêder identifikaasje"
+
+#, fuzzy
+#~ msgid "CompactPCI hot swap"
+#~ msgstr "Totaal oan wikselûnthâld:"
+
+#~ msgid "HyperTransport"
+#~ msgstr "HyperTransport"
+
+#, fuzzy
+#~ msgid "Debug port"
+#~ msgstr "Poarteskenner"
+
+#, fuzzy
+#~ msgid "PCI hot-plug"
+#~ msgstr "Plug-ins"
+
+#~ msgid "AGP x8"
+#~ msgstr "AGP x8"
+
+#, fuzzy
+#~ msgid "Secure device"
+#~ msgstr "Kamera..."
+
+#~ msgid "PCI express"
+#~ msgstr "PCI express"
+
+#~ msgid "MSI-X"
+#~ msgstr "MSI-X"
+
+#~ msgid "Fast"
+#~ msgstr "Fluch"
+
+#~ msgid "Medium"
+#~ msgstr "Middelt"
+
+#~ msgid "Slow"
+#~ msgstr "Traach"
+
+#~ msgid "32 bit"
+#~ msgstr "32 bit"
+
+#~ msgid "Below 1M"
+#~ msgstr "Under 1M"
+
+#~ msgid "64 bit"
+#~ msgstr "64 bit"
+
+#~ msgid "Standard"
+#~ msgstr "Standert"
+
+#, fuzzy
+#~ msgid "CardBus"
+#~ msgstr "CardBus nûmer"
+
+#~ msgid "1X"
+#~ msgstr "1X"
+
+#~ msgid "2X"
+#~ msgstr "2X"
+
+#~ msgid "1X & 2X"
+#~ msgstr "1X & 2X"
+
+#~ msgid "4X"
+#~ msgstr "4X"
+
+#~ msgid "1X & 4X"
+#~ msgstr "1X & 4X"
+
+#~ msgid "2X & 4X"
+#~ msgstr "2X & 4X"
+
+#~ msgid "1X & 2X & 4X"
+#~ msgstr "1X & 2X & 4X"
+
+#~ msgid "8X"
+#~ msgstr "8X"
+
+#~ msgid "4X & 8X"
+#~ msgstr "4X & 8X"
+
+#~ msgid "4 ms"
+#~ msgstr "4 ms"
+
+#~ msgid "16 ms"
+#~ msgstr "16 ms"
+
+#~ msgid "64 ms"
+#~ msgstr "64 ms"
+
+#~ msgid "256 ms"
+#~ msgstr "256 ms"
+
+#~ msgid "Not needed"
+#~ msgstr "Net nedich"
+
+#~ msgid "0 (self powered)"
+#~ msgstr "0 (sels oantrune)"
+
+#~ msgid "55 mA"
+#~ msgstr "55 mA"
+
+#~ msgid "100 mA"
+#~ msgstr "100 mA"
+
+#~ msgid "160 mA"
+#~ msgstr "160 mA"
+
+#~ msgid "220 mA"
+#~ msgstr "220 mA"
+
+#~ msgid "270 mA"
+#~ msgstr "270 mA"
+
+#~ msgid "320 mA"
+#~ msgstr "320 mA"
+
+#~ msgid "375 mA"
+#~ msgstr "375 mA"
+
+#~ msgid "1 vector"
+#~ msgstr "1 fektor"
+
+#~ msgid "2 vectors"
+#~ msgstr "2 fektors"
+
+#~ msgid "4 vectors"
+#~ msgstr "4 fektors"
+
+#~ msgid "8 vectors"
+#~ msgstr "8 fektors"
+
+#~ msgid "16 vectors"
+#~ msgstr "16 fektors"
+
+#~ msgid "32 vectors"
+#~ msgstr "32 fektors"
+
+#, fuzzy
+#~ msgid "Smart card"
+#~ msgstr "Smart Card apparaten"
+
+#, fuzzy
+#~ msgid "System peripheral"
+#~ msgstr "Systeemmonitor"
+
+#, fuzzy
+#~ msgid "Management card"
+#~ msgstr "Kaartspul"
+
+#~ msgid "single DMA"
+#~ msgstr "Inkele DMA"
+
+#, fuzzy
+#~ msgid "chained DMA"
+#~ msgstr "DMA-kanalen"
+
+#, fuzzy
+#~ msgid "VGA compatible"
+#~ msgstr "Kompatibel nammen:"
+
+#, fuzzy
+#~ msgid "8514 compatible"
+#~ msgstr "Kompatibel nammen:"
+
+#~ msgid "KDE PCI Information Control Module"
+#~ msgstr "KDE PCI ynformaasje Konfiguraasjemodule"

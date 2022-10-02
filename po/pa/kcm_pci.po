@@ -1,0 +1,1131 @@
+# translation of kcm_pci.po to Punjabi
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Amanpreet Singh Alam <aalam@users.sf.net>, 2009.
+# A S Alam <aalam@users.sf.net>, 2009, 2010, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_pci\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
+"PO-Revision-Date: 2019-12-28 15:45-0800\n"
+"Last-Translator: A S Alam <alam.yellow@gmail.com>\n"
+"Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
+"Language: pa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 19.04.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ਅਮਨਪਰੀਤ ਸਿੰਘ ਆਲਮ (A S Alam)"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "alam.yellow@gmail.com"
+
+#: main.cpp:26
+#, fuzzy, kde-format
+#| msgid "PCI-X"
+msgctxt "@label kcm name"
+msgid "PCI"
+msgstr "PCI-X"
+
+#: main.cpp:27
+#, kde-format
+msgid "Harald Sitter"
+msgstr ""
+
+#: package/contents/ui/main.qml:14
+#, fuzzy
+#| msgid "Information"
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "ਜਾਣਕਾਰੀ"
+
+#~ msgid "kcm_pci"
+#~ msgstr "kcm_pci"
+
+#~ msgid "PCI Devices"
+#~ msgstr "PCI ਡਿਵਾਈਸ"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+
+#~ msgid "Nicolas Ternisien"
+#~ msgstr "ਨਿਕੋਲਸ ਟੇਰੀਨਿਸੀਨ"
+
+#~ msgid "Helge Deller"
+#~ msgstr "ਹਿਲਗੀ ਡਿੱਲਰ"
+
+#~ msgid "This list displays PCI information."
+#~ msgstr "ਇਹ ਲਿਸਟ PCI ਜਾਣਕਾਰੀ ਵੇਖਦੀ ਹੈ।"
+
+#~ msgid ""
+#~ "This display shows information about your computer's PCI slots and the "
+#~ "related connected devices."
+#~ msgstr ""
+#~ "ਇਹ ਡਿਸਪਲੇਅ ਤੁਹਾਡੇ ਕੰਪਿਊਟਰ ਦੇ PCI ਸਲਾਟ ਅਤੇ ਉਨ੍ਹਾਂ ਨਾਲ ਕੁਨੈਕਟ ਹੋਏ ਜੰਤਰਾਂ ਬਾਰੇ ਜਾਣਕਾਰੀ "
+#~ "ਵੇਖਾਉਦਾ ਹੈ।"
+
+#~ msgid "Device Class"
+#~ msgstr "ਜੰਤਰ ਕਲਾਸ"
+
+#~ msgid "Device Subclass"
+#~ msgstr "ਜੰਤਰ ਸਬ-ਕਲਾਸ"
+
+#~ msgid "Device Programming Interface"
+#~ msgstr "ਜੰਤਰ ਪਰੋਗਰਾਮਿੰਗ ਇੰਟਰਫੇਸ"
+
+#~ msgid "Master IDE Device"
+#~ msgstr "ਮਾਸਟਰ IDE ਜੰਤਰ"
+
+#~ msgid "Secondary programmable indicator"
+#~ msgstr "ਸੈਕੰਡਰੀ ਪਰੋਗਰਾਮ-ਯੋਗ ਇੰਡੀਕੇਟਰ"
+
+#~ msgid "Secondary operating mode"
+#~ msgstr "ਸੈਕੰਡਰੀ ਓਪਰੇਟਿੰਗ ਮੋਡ"
+
+#~ msgid "Primary programmable indicator"
+#~ msgstr "ਪ੍ਰਾਇਮਰੀ ਪਰੋਗਰਾਮ-ਯੋਗ ਇੰਡੀਕੇਟਰ"
+
+#~ msgid "Primary operating mode"
+#~ msgstr "ਪ੍ਰਾਇਮਰੀ ਓਪਰੇਟਿੰਗ ਮੋਡ"
+
+#~ msgid "Vendor"
+#~ msgstr "ਵੇਂਡਰ"
+
+#~ msgid "Device"
+#~ msgstr "ਜੰਤਰ"
+
+#~ msgid "Subsystem"
+#~ msgstr "ਸਬ-ਸਿਸਟਮ"
+
+#~ msgid " - device:"
+#~ msgstr " - ਜੰਤਰ:"
+
+#~ msgid "Interrupt"
+#~ msgstr "ਇੰਟਰਰੱਪਟ"
+
+#~ msgid "IRQ"
+#~ msgstr "IRQ"
+
+#~ msgid "Pin"
+#~ msgstr "ਪਿੰਨ"
+
+#~ msgid "Control"
+#~ msgstr "ਕੰਟਰੋਲ"
+
+#~ msgid "Response in memory space"
+#~ msgstr "ਮੈਮੋਰੀ ਸਪੇਸ ਵਿੱਚ ਰਿਸਪਾਂਸ"
+
+#~ msgid "Bus mastering"
+#~ msgstr "ਬਸ ਮਾਸਟਰਿੰਗ"
+
+#~ msgid "Response to special cycles"
+#~ msgstr "ਸਪੈਸ਼ਲ ਸਾਈਕਲ ਨੂੰ ਰਿਸਪਾਂਸ"
+
+#~ msgid "Memory write and invalidate"
+#~ msgstr "ਮੈਮੋਰੀ ਲਿਖਣ ਅਤੇ ਨਾ-ਪ੍ਰਮਾਣਿਤ"
+
+#~ msgid "System error"
+#~ msgstr "ਸਿਸਟਮ ਗਲਤੀ"
+
+#~ msgid "Back-to-back writes"
+#~ msgstr "ਬੈਕ-ਟੂ-ਬੈਕ ਰਾਈਟ"
+
+#~ msgid "Status"
+#~ msgstr "ਹਾਲਤ"
+
+#~ msgid "Interrupt status"
+#~ msgstr "ਇੰਟਰਰੱਪਟ ਹਾਲਤ"
+
+#~ msgid "Capability list"
+#~ msgstr "ਸਮੱਰਥਾ ਲਿਸਟ"
+
+#~ msgid "66 MHz PCI 2.1 bus"
+#~ msgstr "66 MHz PCI 2.1 ਬੱਸ"
+
+#~ msgid "User-definable features"
+#~ msgstr "ਯੂਜ਼ਰ ਵਲੋਂ ਦਿੱਤੇ ਫੀਚਰ"
+
+#~ msgid "Device selection timing"
+#~ msgstr "ਡਿਵਾਈਸ ਚੋਣ ਟਾਈਮਿੰਗ"
+
+#~ msgid "Latency"
+#~ msgstr "ਲੇਟਨਸੀ"
+
+#~ msgid "MIN_GNT"
+#~ msgstr "MIN_GNT"
+
+#~ msgid "No major requirements (0x00)"
+#~ msgstr "ਕੋਈ ਖਾਸ ਲੋੜਾਂ ਨਹੀਂ (0x00)"
+
+#~ msgid "MAX_LAT"
+#~ msgstr "MAX_LAT"
+
+#~ msgid "Header"
+#~ msgstr "ਹੈੱਡਰ"
+
+#~ msgid "Type"
+#~ msgstr "ਟਾਈਪ"
+
+#~ msgid "Multifunctional"
+#~ msgstr "ਮਲਟੀ-ਫੰਕਸ਼ਨਲ"
+
+#~ msgid "Build-in self test"
+#~ msgstr "ਬਿਲਡ-ਇਨ ਸੈਲਫ਼ ਟੈਸਟ"
+
+#~ msgid "BIST Capable"
+#~ msgstr "BIST ਕੈਪੇਬਲ"
+
+#~ msgid "BIST Start"
+#~ msgstr "BIST ਸਟਾਰਟ"
+
+#~ msgid "Size"
+#~ msgstr "ਸਾਈਜ਼"
+
+#~ msgid "Address mappings"
+#~ msgstr "ਐਡਰੈੱਸ ਮੈਪਿੰਗ"
+
+#~ msgid "Mapping %1"
+#~ msgstr "%1 ਮੈਪਿੰਗ"
+
+#~ msgid "Space"
+#~ msgstr "ਸਪੇਸ"
+
+#~ msgid "I/O"
+#~ msgstr "I/O"
+
+#~ msgid "Memory"
+#~ msgstr "ਮੈਮੋਰੀ"
+
+#~ msgid "Address"
+#~ msgstr "ਐਡਰੈੱਸ"
+
+#~ msgctxt "unassigned address"
+#~ msgid "Unassigned"
+#~ msgstr "ਨਾ-ਜਾਰੀ"
+
+#~ msgid "Bus"
+#~ msgstr "ਬੱਸ"
+
+#~ msgid "Primary bus number"
+#~ msgstr "ਪ੍ਰਾਇਮਰੀ ਬੱਸ ਨੰਬਰ"
+
+#~ msgid "Secondary bus number"
+#~ msgstr "ਸੈਕੰਡਰੀ ਬੱਸ ਨੰਬਰ"
+
+#~ msgid "CardBus number"
+#~ msgstr "ਕਾਰਡ-ਬੱਸ ਨੰਬਰ"
+
+#~ msgid "Secondary status"
+#~ msgstr "ਸੈਕੰਡਰੀ ਹਾਲਤ"
+
+#~ msgid "32-bit"
+#~ msgstr "32-ਬਿੱਟ"
+
+#~ msgid "Base"
+#~ msgstr "ਬੇਸ"
+
+#~ msgid "Limit"
+#~ msgstr "ਲਿਮਟ"
+
+#~ msgid "64-bit"
+#~ msgstr "64-ਬਿੱਟ"
+
+#~ msgid "Bridge control"
+#~ msgstr "ਬਰਿੱਜ਼ ਕੰਟਰੋਲ"
+
+#~ msgid "Secondary system error"
+#~ msgstr "ਸੈਕੰਡਰੀ ਸਿਸਟਮ ਗਲਤੀ"
+
+#~ msgid "ISA ports forwarding"
+#~ msgstr "ISA ਪੋਰਟ ਫਾਰਵਡਿੰਗ"
+
+#~ msgid "VGA forwarding"
+#~ msgstr "VGA ਫਾਰਵਡਿੰਗ"
+
+#~ msgid "Secondary bus reset"
+#~ msgstr "ਸੈਕੰਡਰੀ ਬੱਸ ਰੀ-ਸੈੱਟ"
+
+#~ msgid "2e10 PCI clocks"
+#~ msgstr "2e10 PCI ਕਲਾਕ"
+
+#~ msgid "2e15 PCI clocks"
+#~ msgstr "2e15 PCI ਕਲਾਕ"
+
+#~ msgid "Memory windows"
+#~ msgstr "ਮੈਮੋਰੀ ਵਿੰਡੋਜ਼"
+
+#~ msgid "Window %1"
+#~ msgstr "ਵਿੰਡੋ %1"
+
+#~ msgid "I/O windows"
+#~ msgstr "I/O ਵਿੰਡੋਜ਼"
+
+#~ msgid "16-bit"
+#~ msgstr "16-ਬਿੱਟ"
+
+#~ msgid "CardBus control"
+#~ msgstr "ਕਾਰਡ-ਬੱਸ ਕੰਟਰੋਲ"
+
+#~ msgid "Interrupts for 16-bit cards"
+#~ msgstr "16-ਬਿੱਟ ਕਾਰਡਾਂ ਲਈ ਇੰਟਰੱਪਟ"
+
+#~ msgid "Capabilities"
+#~ msgstr "ਸਮੱਰਥਾ"
+
+#~ msgid "Version"
+#~ msgstr "ਵਰਜਨ"
+
+#~ msgid "D1 support"
+#~ msgstr "D1 ਸਹਿਯੋਗ"
+
+#~ msgid "D2 support"
+#~ msgstr "D2 ਸਹਿਯੋਗ"
+
+#~ msgid "Power management events"
+#~ msgstr "ਪਾਵਰ ਪਰਬੰਧ ਈਵੈਂਟ"
+
+#~ msgid "D0"
+#~ msgstr "D0"
+
+#~ msgid "D1"
+#~ msgstr "D1"
+
+#~ msgid "D2"
+#~ msgstr "D2"
+
+#~ msgid "D3 hot"
+#~ msgstr "D3 ਹਾਟ"
+
+#~ msgid "D3 cold"
+#~ msgstr "D3 ਕੋਲਡ"
+
+#~ msgid "Power state"
+#~ msgstr "ਪਾਵਰ ਹਾਲਤ"
+
+#~ msgid "Power management"
+#~ msgstr "ਪਾਵਰ ਪਰਬੰਧ"
+
+#~ msgid "Data select"
+#~ msgstr "ਡਾਟਾ ਚੁਣੋ"
+
+#~ msgid "Data scale"
+#~ msgstr "ਡਾਟਾ ਸਕੇਲ"
+
+#~ msgid "Power management status"
+#~ msgstr "ਪਾਵਰ ਪਰਬੰਧ ਹਾਲਤ"
+
+#~ msgid "Bridge status"
+#~ msgstr "ਬਰਿੱਜ਼ ਸਟੇਟਸ"
+
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgid "Secondary bus power & clock control"
+#~ msgstr "ਸੈਕੰਡਰੀ ਬੱਸ ਪਾਵਰ ਅਤੇ ਕਲਾਕ ਕੰਟਰੋਲ"
+
+#~ msgid "Data"
+#~ msgstr "ਡਾਟਾ"
+
+#~ msgid "Revision"
+#~ msgstr "ਰੀਵਿਜ਼ਨ"
+
+#~ msgid "Rate"
+#~ msgstr "ਰੇਟ"
+
+#~ msgid "AGP 3.0 mode"
+#~ msgstr "AGP 3.0 ਮੋਡ"
+
+#~ msgid "Fast Writes"
+#~ msgstr "ਤੇਜ਼ ਲਿਖਣਾ"
+
+#~ msgid "Address over 4 GiB"
+#~ msgstr "4GiB ਤੋਂ ਵੱਧ ਐਡਰੈਸ"
+
+#~ msgid "64-bit GART"
+#~ msgstr "64-ਬਿੱਟ GART"
+
+#~ msgid "Configuration"
+#~ msgstr "ਸੰਰਚਨਾ"
+
+#~ msgid "AGP"
+#~ msgstr "AGP"
+
+#~ msgid "Data address"
+#~ msgstr "ਡਾਟਾ ਐਡਰੈੱਸ"
+
+#~ msgid "Transfer completed"
+#~ msgstr "ਟਰਾਂਸਫਰ ਪੂਰਾ ਹੋਇਆ"
+
+#~ msgid "Message control"
+#~ msgstr "ਮੈਸੇਜ਼ ਕੰਟਰੋਲ"
+
+#~ msgid "Message signaled interrupts"
+#~ msgstr "ਮੈਸੇਜ਼ ਸਿੰਗਲ ਇੰਟਰੱਪਟ"
+
+#~ msgid "64-bit address"
+#~ msgstr "64-ਬਿੱਟ ਐਡਰੈੱਸ"
+
+#~ msgid "Per vector masking"
+#~ msgstr "ਪ੍ਰਤੀ ਵੈਕਟਰ ਮਾਸਕਿੰਗ"
+
+#~ msgid "Mask"
+#~ msgstr "ਮਾਸਕ"
+
+#~ msgid "Pending"
+#~ msgstr "ਬਾਕੀ"
+
+#~ msgid "Length"
+#~ msgstr "ਲੰਬਾਈ"
+
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "ਕੋਈ ਨਹੀਂ"
+
+#~ msgid "Next"
+#~ msgstr "ਅੱਗੇ"
+
+#~ msgid "0x00 (None)"
+#~ msgstr "0x00 (ਕੋਈ ਨਹੀਂ)"
+
+#~ msgid "Root only"
+#~ msgstr "ਕੇਵਲ ਰੂਟ"
+
+#~ msgid "Value"
+#~ msgstr "ਮੁੱਲ"
+
+#~ msgid "Cache line size"
+#~ msgstr "ਕੈਸ਼ ਲਾਈਨ ਸਾਈਜ਼"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Enabled"
+#~ msgstr "ਯੋਗ ਹੈ"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Disabled"
+#~ msgstr "ਆਯੋਗ ਹੈ"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Yes"
+#~ msgstr "ਹਾਂ"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "ਨਹੀਂ"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Unknown"
+#~ msgstr "ਅਣਜਾਣ"
+
+#~ msgid "Unclassified device"
+#~ msgstr "ਬਿਨ-ਕਲਾਸੀਫਾਈਡ ਜੰਤਰ"
+
+#~ msgid "Mass storage controller"
+#~ msgstr "ਮਾਸ ਸਟੋਰੇਜ਼ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Network controller"
+#~ msgstr "ਨੈੱਟਵਰਕ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Display controller"
+#~ msgstr "ਡਿਸਪਲੇਅ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Multimedia controller"
+#~ msgstr "ਮਲਟੀਮੀਡਿਆ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Memory controller"
+#~ msgstr "ਮੈਮੋਰੀ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Bridge"
+#~ msgstr "ਬਰਿੱਜ਼"
+
+#~ msgid "Communication controller"
+#~ msgstr "ਕਮਿਊਨੀਕੇਸ਼ਨ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Generic system peripheral"
+#~ msgstr "ਆਮ ਸਿਸਟਮ ਪੇਰੀਫਿਲਰ"
+
+#~ msgid "Input device controller"
+#~ msgstr "ਇੰਪੁੱਟ ਜੰਤਰ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Docking station"
+#~ msgstr "ਡੌਕਿੰਗ ਸਟੇਸ਼ਨ"
+
+#~ msgid "Processor"
+#~ msgstr "ਪਰੋਸੈਸਰ"
+
+#~ msgid "Serial bus controller"
+#~ msgstr "ਸੀਰੀਅਲ ਬਸ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Wireless controller"
+#~ msgstr "ਬੇਤਾਰ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Intelligent controller"
+#~ msgstr "ਇੰਟੈਲੀਜੈਂਟ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Satellite communications controller"
+#~ msgstr "ਸੈਟੇਲਾਈਟ ਕਮਿਊਨੀਕੇਸ਼ਨ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Encryption controller"
+#~ msgstr "ਇੰਕ੍ਰਿਪਸ਼ਨ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Signal processing controller"
+#~ msgstr "ਸਿਗਨਲ ਪਰੋਸੈਸਿੰਗ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Coprocessor"
+#~ msgstr "ਕੋ-ਪਰੋਸੈਸਰ"
+
+#~ msgid "Unassigned class"
+#~ msgstr "ਨਾ-ਜਾਰੀ ਕੀਤੀ ਕਲਾਸ"
+
+#~ msgid "Unknown device class"
+#~ msgstr "ਅਣਪਛਾਤੀ ਡਿਵਾਈਸ ਕਲਾਸ"
+
+#~ msgid "Non-VGA unclassified device"
+#~ msgstr "ਗ਼ੈਰ-VGA ਨਾ-ਵੰਡ ਕੀਤਾ ਡਿਵਾਈਸ"
+
+#~ msgid "VGA unclassified device"
+#~ msgstr "VGA ਨਾ-ਵੰਡ ਕੀਤਾ ਡਿਵਾਈਸ"
+
+#~ msgid "Unknown unclassified device"
+#~ msgstr "ਅਣਪਛਾਤੀ ਨਾ-ਵੰਡ ਕੀਤਾ ਡਿਵਾਈਸ"
+
+#~ msgid "SCSI storage controller"
+#~ msgstr "SCSI ਸਟੋਰੇਜ਼ ਕੰਟਰੋਲਰ"
+
+#~ msgid "IDE controller"
+#~ msgstr "IDE ਕੰਟਰੋਲਰ"
+
+#~ msgid "Floppy disk controller"
+#~ msgstr "ਫਲਾਪੀ ਡਿਸਕ ਕੰਟਰੋਲਰ"
+
+#~ msgid "IPI bus controller"
+#~ msgstr "IPI ਬੱਸ ਕੰਟਰੋਲਰ"
+
+#~ msgid "RAID bus controller"
+#~ msgstr "RAID ਬਸ ਕੰਟਰੋਲਰ"
+
+#~ msgid "ATA controller"
+#~ msgstr "ATA ਕੰਟਰੋਲਰ"
+
+#~ msgid "SATA controller"
+#~ msgstr "SATA ਕੰਟਰੋਲਰ"
+
+#~ msgid "Serial Attached SCSI controller"
+#~ msgstr "ਸੀਰੀਅਲ ਅਟੈਂਚਡ SCSI ਕੰਟਰੋਲਰ"
+
+#~ msgid "Non-Volatile memory controller"
+#~ msgstr "ਗ਼ੈਰ-ਵੋਲਾਟਾਇਲ ਮੈਮੋਰੀ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Unknown storage controller"
+#~ msgstr "ਅਣਪਛਾਤਾ ਸਟੋਰੇਜ਼ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Ethernet controller"
+#~ msgstr "ਈਥਰਨੈੱਟ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Token ring network controller"
+#~ msgstr "ਟੋਕਨ ਰਿੰਗ ਨੈੱਟਵਰਕ ਕੰਟਰੋਲਰ"
+
+#~ msgid "FDDI network controller"
+#~ msgstr "FDDI ਨੈੱਟਵਰਕ ਕੰਟਰੋਲਰ"
+
+#~ msgid "ATM network controller"
+#~ msgstr "ATM ਨੈੱਟਵਰਕ ਕੰਟਰੋਲਰ"
+
+#~ msgid "ISDN controller"
+#~ msgstr "ISDN ਕੰਟਰੋਲਰ"
+
+#~ msgid "WorldFip controller"
+#~ msgstr "ਵਰਲਡਫਿਪ ਕੰਟਰੋਲਰ"
+
+#~ msgid "PICMG controller"
+#~ msgstr "PICMG ਕੰਟਰੋਲਰ"
+
+#~ msgid "Infiniband controller"
+#~ msgstr "ਇੰਫੀਬੈਂਡ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Fabric controller"
+#~ msgstr "ਫਾਇਬਰ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Unknown network controller"
+#~ msgstr "ਅਣਪਛਾਤਾ ਨੈੱਟਵਰਕ ਕੰਟਰੋਲਰ"
+
+#~ msgid "VGA compatible controller"
+#~ msgstr "VGA ਅਨੁਕੂਲ ਕੰਟਰੋਲਰ"
+
+#~ msgid "XGA compatible controller"
+#~ msgstr "XGA ਅਨੁਕੂਲ ਕੰਟਰੋਲਰ"
+
+#~ msgid "3D controller"
+#~ msgstr "3D ਕੰਟਰੋਲਰ"
+
+#~ msgid "Unknown display controller"
+#~ msgstr "ਅਣਪਛਾਤਾ ਡਿਸਪਲੇਅ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Multimedia video controller"
+#~ msgstr "ਮਲਟੀਮੀਡਿਆ ਵਿਡੀਓ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Multimedia audio controller"
+#~ msgstr "ਮਲਟੀਮੀਡਿਆ ਆਡੀਓ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Computer telephony device"
+#~ msgstr "ਕੰਪਿਊਟਰ ਟੈਲੀਫੋਨੀ ਡਿਵਾਈਸ"
+
+#~ msgid "Audio device"
+#~ msgstr "ਆਡੀਓ ਡਿਵਾਈਸ"
+
+#~ msgid "Unknown multimedia controller"
+#~ msgstr "ਅਣਪਛਾਤਾ ਮਲਟੀਮੀਡਿਆ ਕੰਟਰੋਲਰ"
+
+#~ msgid "RAM memory"
+#~ msgstr "RAM ਮੈਮੋਰੀ"
+
+#~ msgid "FLASH memory"
+#~ msgstr "FLASH ਮੈਮੋਰੀ"
+
+#~ msgid "Unknown memory controller"
+#~ msgstr "ਅਣਪਛਾਤਾ ਮੈਮੋਰੀ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Host bridge"
+#~ msgstr "ਹੋਸਟ ਬਰਿਜ਼"
+
+#~ msgid "ISA bridge"
+#~ msgstr "ISA ਬਰਿੱਜ਼"
+
+#~ msgid "EISA bridge"
+#~ msgstr "EISA ਬਰਿੱਜ਼"
+
+#~ msgid "MicroChannel bridge"
+#~ msgstr "ਮਾਈਕਰੋਚੈਨਲ ਬਰਿੱਜ਼"
+
+#~ msgid "PCI bridge"
+#~ msgstr "PCI ਬਰਿੱਜ਼"
+
+#~ msgid "PCMCIA bridge"
+#~ msgstr "PCMCIA ਬਰਿੱਜ਼ "
+
+#~ msgid "NuBus bridge"
+#~ msgstr "NuBus ਬਰਿੱਜ਼"
+
+#~ msgid "CardBus bridge"
+#~ msgstr "ਕਾਰਡ-ਬੱਸ ਬਰਿੱਜ਼"
+
+#~ msgid "RACEway bridge"
+#~ msgstr "RACEway ਬਰਿੱਜ਼"
+
+#~ msgid "Unknown bridge"
+#~ msgstr "ਅਣਪਛਾਤਾ ਬਰਿੱਜ਼"
+
+#~ msgid "Serial controller"
+#~ msgstr "ਸੀਰੀਅਲ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Parallel controller"
+#~ msgstr "ਪਰੈਲਲ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Multiport serial controller"
+#~ msgstr "ਮਲਟੀਪੋਰਟ ਸੀਰੀਅਲ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Modem"
+#~ msgstr "ਮਾਡਮ"
+
+#~ msgid "GPIB controller"
+#~ msgstr "GPIB ਕੰਟਰੋਲਰ"
+
+#~ msgid "Smart card controller"
+#~ msgstr "ਸਮਾਰਟ ਕਾਰਡ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Unknown communication controller"
+#~ msgstr "ਅਣਪਛਾਤਾ ਕਮਿਊਨੀਕੇਸ਼ਨ ਕੰਟਰੋਲਰ"
+
+#~ msgid "PIC"
+#~ msgstr "PIC"
+
+#~ msgid "DMA controller"
+#~ msgstr "DMA ਕੰਟਰੋਲਰ"
+
+#~ msgid "Timer"
+#~ msgstr "ਟਾਈਮਰ"
+
+#~ msgid "RTC"
+#~ msgstr "RTC"
+
+#~ msgid "PCI Hot-plug controller"
+#~ msgstr "PCI ਹਾਟ-ਪਲੱਗ ਕੰਟਰੋਲਰ"
+
+#~ msgid "SD Host controller"
+#~ msgstr "SD ਹੋਸਟ ਕੰਟਰੋਲਰ"
+
+#~ msgid "IOMMU"
+#~ msgstr "IOMMU"
+
+#~ msgid "Unknown system peripheral"
+#~ msgstr "ਅਣਪਛਾਤਾ ਸਿਸਟਮ ਪੇਰੀਫੇਰਲ"
+
+#~ msgid "Keyboard controller"
+#~ msgstr "ਕੀਬੋਰਡ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Digitizer Pen"
+#~ msgstr "ਡਿਜ਼ੀਟੀਜ਼ਰ ਪੈੱਨ"
+
+#~ msgid "Mouse controller"
+#~ msgstr "ਮਾਊਸ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Scanner controller"
+#~ msgstr "ਸਕੈਨਰ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Gameport controller"
+#~ msgstr "ਗੇਮਪੋਰਟ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Unknown input device controller"
+#~ msgstr "ਅਣਪਛਾਤਾ ਇੰਪੁੱਟ ਡਿਵਾਈਸ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Generic docking station"
+#~ msgstr "ਸਧਾਰਨ ਡੌਕਿੰਗ ਸਟੇਸ਼ਨ"
+
+#~ msgid "Unknown docking station"
+#~ msgstr "ਅਣਪਛਾਤਾ ਡੌਕਿੰਗ ਸਟੇਸ਼ਨ"
+
+#~ msgid "386"
+#~ msgstr "386"
+
+#~ msgid "486"
+#~ msgstr "486"
+
+#~ msgid "Pentium"
+#~ msgstr "ਪੈਂਟੀਅਮ"
+
+#~ msgid "Alpha"
+#~ msgstr "ਐਲਫਾ"
+
+#~ msgid "Power PC"
+#~ msgstr "ਪਾਵਰ ਪੀਸੀ"
+
+#~ msgid "MIPS"
+#~ msgstr "MIPS"
+
+#~ msgid "Co-processor"
+#~ msgstr "ਕੋ-ਪਰੋਸੈਸਰ"
+
+#~ msgid "Unknown processor"
+#~ msgstr "ਅਣਪਛਾਤਾ ਪਰੋਸੈਸਰ"
+
+#~ msgid "FireWire (IEEE 1394)"
+#~ msgstr "ਫਾਇਰਵਾਇਰ (IEEE 1394)"
+
+#~ msgid "ACCESS bus"
+#~ msgstr "ACCESS ਬਸ"
+
+#~ msgid "SSA"
+#~ msgstr "SSA"
+
+#~ msgid "USB controller"
+#~ msgstr "USB ਕੰਟਰੋਲਰ"
+
+#~ msgid "Fibre channel"
+#~ msgstr "ਫਾਇਬਰ ਚੈਨਲ"
+
+#~ msgid "SMBus"
+#~ msgstr "SMBus"
+
+#~ msgid "InfiniBand"
+#~ msgstr "ਇੰਫੀਬੈਂਡ"
+
+#~ msgid "IPMI interface"
+#~ msgstr "IPMI ਇੰਟਰਫੇਸ"
+
+#~ msgid "SERCOS interface"
+#~ msgstr "SERCOS ਇੰਟਰਫੇਸ"
+
+#~ msgid "CANbus"
+#~ msgstr "CANbus"
+
+#~ msgid "Unknown serial bus controller"
+#~ msgstr "ਅਣਪਛਾਤਾ ਸੀਰੀਅਲ ਬਸ ਕੰਟਰੋਲਰ"
+
+#~ msgid "IRDA controller"
+#~ msgstr "IRDA ਕੰਟਰੋਲਰ"
+
+#~ msgid "RF controller"
+#~ msgstr "RF ਕੰਟਰੋਲਰ"
+
+#~ msgid "Bluetooth"
+#~ msgstr "ਬਲੂਟੁੱਥ"
+
+#~ msgid "Broadband"
+#~ msgstr "ਬਰੌਡਬੈਂਡ"
+
+#~ msgid "Ethernet (802.11a - 5 GHz)"
+#~ msgstr "ਈਥਰਨੈੱਟ (802.11a - 5 GHz)"
+
+#~ msgid "Ethernet (802.11b - 2.4 GHz)"
+#~ msgstr "ਈਥਰਨੈੱਟ (802.11b - 2.4 GHz)"
+
+#~ msgid "Unknown wireless controller"
+#~ msgstr "ਅਣਪਛਾਤਾ ਬੇਤਾਰ ਕੰਟਰੋਲਰ"
+
+#~ msgid "I2O"
+#~ msgstr "I2O"
+
+#~ msgid "Unknown intelligent controller"
+#~ msgstr "ਅਣਪਛਾਤਾ ਇੰਟੈਲੀਜੈਂਟ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Satellite TV controller"
+#~ msgstr "ਸੈਟੇਲਾਈਟ TV ਕੰਟਰੋਲਰ"
+
+#~ msgid "Satellite audio communication controller"
+#~ msgstr "ਸੈਟੇਲਾਈਟ ਆਡੀਓ ਕਮਿਊਨੀਕੇਸ਼ਨ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Satellite voice communication controller"
+#~ msgstr "ਸੈਟੇਲਾਈਟ ਵਾਈਸ ਕਮਿਊਨੀਕੇਸ਼ਨ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Satellite data communication controller"
+#~ msgstr "ਸੈਟੇਲਾਈਟ ਡਾਟਾ ਕਮਿਊਨੀਕੇਸ਼ਨ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Unknown satellite communications controller"
+#~ msgstr "ਅਣਪਛਾਤਾ ਸੈਟੇਲਾਈਟ ਕਮਿਊਨੀਕੇਸ਼ਨ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Network and computing encryption device"
+#~ msgstr "ਨੈੱਟਵਰਕ ਤੇ ਕੰਪਿਊਟਿੰਗ ਇੰਕ੍ਰਿਪਸ਼ਨ ਡਿਵਾਈਸ"
+
+#~ msgid "Unknown encryption controller"
+#~ msgstr "ਅਣਪਛਾਤਾ ਇੰਕ੍ਰਿਪਸ਼ਨ ਕੰਟਰੋਲਰ"
+
+#~ msgid "DPIO module"
+#~ msgstr "DPIO ਮੋਡੀਊਲ"
+
+#~ msgid "Signal processing management"
+#~ msgstr "ਸਿਗਨਲ ਪਰੋਸੈਸਿੰਗ ਮੈਨਜੇਮੈਂਟ"
+
+#~ msgid "Unknown signal processing controller"
+#~ msgstr "ਅਣਪਛਾਤਾ ਸਿਗਨਲ ਪਰੋਸੈਸਿੰਗ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Unknown processing accelerator"
+#~ msgstr "ਅਣਪਛਾਤਾ ਪਰੋਸੈਸਿੰਗ ਐਕਸਰਲੇਟਰ"
+
+#~ msgid "Unknown subdevice class"
+#~ msgstr "ਅਣਪਛਾਤੀ ਸਬ-ਡਿਵਾਈਸ ਕਲਾਸ"
+
+#~ msgid "ISA Compatibility mode-only controller"
+#~ msgstr "ISA ਨੇਟਿਵ ਮੋਡ-ਸਿਰਫ਼ ਕੰਟਰੋਲਰ"
+
+#~ msgid "PCI native mode-only controller"
+#~ msgstr "PCI ਨੇਟਿਵ ਮੋਡ-ਸਿਰਫ਼ ਕੰਟਰੋਲਰ"
+
+#~ msgid "Vendor specific"
+#~ msgstr "ਵੇਂਡਰ ਖਾਸ"
+
+#~ msgid "AHCI 1.0"
+#~ msgstr "AHCI 1.0"
+
+#~ msgid "Serial Storage Bus"
+#~ msgstr "ਸੀਰੀਅਲ ਸਟੋਰੇਜ਼ ਬਸ"
+
+#~ msgid "NVMHCI"
+#~ msgstr "NVMHCI"
+
+#~ msgid "NVM Express"
+#~ msgstr "NVM ਐਕਸਪਰੈਸ"
+
+#~ msgid "VGA controller"
+#~ msgstr "VGA ਕੰਟਰੋਲਰ"
+
+#~ msgid "8514 controller"
+#~ msgstr "8514 ਕੰਟਰੋਲਰ"
+
+#~ msgid "Normal decode"
+#~ msgstr "ਨਾਰਮਲ ਡੀਕੋਡ"
+
+#~ msgid "Transparent mode"
+#~ msgstr "ਟਰਾਂਸਪੇਰੈਂਟ ਮੋਡ"
+
+#~ msgid "Primary bus towards host CPU"
+#~ msgstr "ਹੋਸਟ CPU ਵੱਲ ਪ੍ਰਾਇਮਰੀ ਬੱਸ"
+
+#~ msgid "Secondary bus towards host CPU"
+#~ msgstr "ਹੋਸਟ CPU ਵੱਲ ਸੈਕੰਡਰੀ ਬੱਸ"
+
+#~ msgid "8250"
+#~ msgstr "8250"
+
+#~ msgid "16450"
+#~ msgstr "16450"
+
+#~ msgid "16550"
+#~ msgstr "16550"
+
+#~ msgid "16650"
+#~ msgstr "16650"
+
+#~ msgid "16750"
+#~ msgstr "16750"
+
+#~ msgid "16850"
+#~ msgstr "16850"
+
+#~ msgid "16950"
+#~ msgstr "16950"
+
+#~ msgid "SPP"
+#~ msgstr "SPP"
+
+#~ msgid "BiDir"
+#~ msgstr "BiDir"
+
+#~ msgid "ECP"
+#~ msgstr "ECP"
+
+#~ msgid "IEEE1284"
+#~ msgstr "IEEE1284"
+
+#~ msgid "IEEE1284 Target"
+#~ msgstr "IEEE1284 ਟਾਰਗੇਟ"
+
+#~ msgid "Generic"
+#~ msgstr "ਆਮ"
+
+#~ msgid "Hayes/16450"
+#~ msgstr "Hayes/16450"
+
+#~ msgid "Hayes/16550"
+#~ msgstr "Hayes/16550"
+
+#~ msgid "Hayes/16650"
+#~ msgstr "Hayes/16650"
+
+#~ msgid "Hayes/16750"
+#~ msgstr "Hayes/16750"
+
+#~ msgid "8259"
+#~ msgstr "8259"
+
+#~ msgid "ISA PIC"
+#~ msgstr "ISA PIC"
+
+#~ msgid "EISA PIC"
+#~ msgstr "EISA PIC"
+
+#~ msgid "IO-APIC"
+#~ msgstr "IO-APIC"
+
+#~ msgid "IO(X)-APIC"
+#~ msgstr "IO(X)-APIC"
+
+#~ msgid "8237"
+#~ msgstr "8237"
+
+#~ msgid "ISA DMA"
+#~ msgstr "ISA DMA"
+
+#~ msgid "EISA DMA"
+#~ msgstr "EISA DMA"
+
+#~ msgid "8254"
+#~ msgstr "8254"
+
+#~ msgid "ISA timer"
+#~ msgstr "ISA ਟਾਈਮਰ"
+
+#~ msgid "EISA timers"
+#~ msgstr "EISA ਟਾਈਮਰ"
+
+#~ msgid "HPET"
+#~ msgstr "HPET"
+
+#~ msgid "ISA RTC"
+#~ msgstr "ISA RTC"
+
+#~ msgid "Extended"
+#~ msgstr "ਐਕਸਟੈੱਡਡ"
+
+#~ msgid "OHCI"
+#~ msgstr "OHCI"
+
+#~ msgid "UHCI"
+#~ msgstr "UHCI"
+
+#~ msgid "EHCI"
+#~ msgstr "EHCI"
+
+#~ msgid "XHCI"
+#~ msgstr "XHCI"
+
+#~ msgid "Unspecified"
+#~ msgstr "ਦਿੱਤਾ ਨਹੀਂ"
+
+#~ msgid "USB Device"
+#~ msgstr "USB ਡਿਵਾਈਸ"
+
+#~ msgid "SMIC"
+#~ msgstr "SMIC"
+
+#~ msgid "Keyboard controller style"
+#~ msgstr "ਕੀਬੋਰਡ ਕੰਟਰੋਲਰ ਸਟਾਈਲ"
+
+#~ msgid "Block transfer"
+#~ msgstr "ਬਲੌਕ ਟਰਾਂਸਫਰ"
+
+#~ msgid "Vital product data"
+#~ msgstr "ਖਾਸ ਉਤਪਾਦ ਡਾਟਾ"
+
+#~ msgid "Slot identification"
+#~ msgstr "ਸਲਾਟ ਪਛਾਣ"
+
+#~ msgid "CompactPCI hot swap"
+#~ msgstr "ਕੰਪੈਕਟPCI ਹਾਟ ਸਵੈਪ"
+
+#~ msgid "HyperTransport"
+#~ msgstr "ਹਾਈਪਰਟਰਾਂਸਪੋਰਟ"
+
+#~ msgid "Debug port"
+#~ msgstr "ਡੀਬੱਗ ਪੋਰਟ"
+
+#~ msgid "PCI hot-plug"
+#~ msgstr "PCI ਹਾਟ-ਪਲੱਗ"
+
+#~ msgid "AGP x8"
+#~ msgstr "AGP x8"
+
+#~ msgid "Secure device"
+#~ msgstr "ਸਕਿਉਰ ਡਿਵਾਇਸ"
+
+#~ msgid "PCI express"
+#~ msgstr "PCI ਐਕਸਪਰੈਸ"
+
+#~ msgid "MSI-X"
+#~ msgstr "MSI-X"
+
+#~ msgid "PCI Advanced Features"
+#~ msgstr "PCI ਤਕਨੀਕੀ ਫ਼ੀਚਰ"
+
+#~ msgid "Fast"
+#~ msgstr "ਤੇਜ਼"
+
+#~ msgid "Medium"
+#~ msgstr "ਮੱਧਮ"
+
+#~ msgid "Slow"
+#~ msgstr "ਹੌਲੀ"
+
+#~ msgid "32 bit"
+#~ msgstr "32 ਬਿੱਟ"
+
+#~ msgid "Below 1M"
+#~ msgstr "1M ਤੋਂ ਘੱਟ"
+
+#~ msgid "64 bit"
+#~ msgstr "64 ਬਿੱਟ"
+
+#~ msgid "Standard"
+#~ msgstr "ਸਟੈਂਡਰਡ"
+
+#~ msgid "CardBus"
+#~ msgstr "ਕਾਰਡਬੱਸ"
+
+#~ msgid "1X"
+#~ msgstr "1X"
+
+#~ msgid "2X"
+#~ msgstr "2X"
+
+#~ msgid "1X & 2X"
+#~ msgstr "1X & 2X"
+
+#~ msgid "4X"
+#~ msgstr "4X"
+
+#~ msgid "1X & 4X"
+#~ msgstr "1X & 4X"
+
+#~ msgid "2X & 4X"
+#~ msgstr "2X & 4X"
+
+#~ msgid "1X & 2X & 4X"
+#~ msgstr "1X & 2X & 4X"
+
+#~ msgid "8X"
+#~ msgstr "8X"
+
+#~ msgid "4X & 8X"
+#~ msgstr "4X & 8X"
+
+#~ msgid "4 ms"
+#~ msgstr "4 ms"
+
+#~ msgid "16 ms"
+#~ msgstr "16 ms"
+
+#~ msgid "64 ms"
+#~ msgstr "64 ms"
+
+#~ msgid "256 ms"
+#~ msgstr "256 ms"
+
+#~ msgid "Not needed"
+#~ msgstr "ਲੋੜੀਦਾ ਨਹੀਂ"
+
+#~ msgid "0 (self powered)"
+#~ msgstr "0 (ਖੁਦ ਪਾਵਰ ਨਾਲ)"
+
+#~ msgid "55 mA"
+#~ msgstr "55 mA"
+
+#~ msgid "100 mA"
+#~ msgstr "100 mA"
+
+#~ msgid "160 mA"
+#~ msgstr "160 mA"
+
+#~ msgid "220 mA"
+#~ msgstr "220 mA"
+
+#~ msgid "270 mA"
+#~ msgstr "270 mA"
+
+#~ msgid "320 mA"
+#~ msgstr "320 mA"
+
+#~ msgid "375 mA"
+#~ msgstr "375 mA"
+
+#~ msgid "1 vector"
+#~ msgstr "1 ਵੈਕਟਰ"
+
+#~ msgid "2 vectors"
+#~ msgstr "2 ਵੈਕਟਰ"
+
+#~ msgid "4 vectors"
+#~ msgstr "4 ਵੈਕਟਰ"
+
+#~ msgid "8 vectors"
+#~ msgstr "8 ਵੈਕਟਰ"
+
+#~ msgid "16 vectors"
+#~ msgstr "16 ਵੈਕਟਰ"
+
+#~ msgid "32 vectors"
+#~ msgstr "32 ਵੈਕਟਰ"
+
+#~ msgid "GPIB (IEEE 488.1/2) controller"
+#~ msgstr "GPIB (IEEE 488.1/2) ਕੰਟਰੋਲਰ"
+
+#~ msgid "Smart card"
+#~ msgstr "ਸਮਾਰਟ ਕਾਰਡ"
+
+#~ msgid "System peripheral"
+#~ msgstr "ਸਿਸਟਮ ਪੇਰੀਫਿਲਰ"
+
+#~ msgid "VGA compatible"
+#~ msgstr "VGA ਅਨੁਕੂਲ"
+
+#~ msgid "KDE PCI Information Control Module"
+#~ msgstr "KDE PCI ਜਾਣਕਾਰੀ ਕੰਟਰੋਲ ਮੋਡੀਊਲ"

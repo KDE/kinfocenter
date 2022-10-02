@@ -1,0 +1,730 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Einars Sprugis <einars8@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-09-03 00:18+0000\n"
+"PO-Revision-Date: 2011-07-01 22:56+0300\n"
+"Last-Translator: Einars Sprugis <einars8@gmail.com>\n"
+"Language-Team: Latvian <locale@laka.lv>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Einārs Sprūģis"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "einars8@gmail.com"
+
+#: devicelisting.cpp:41
+#, kde-format
+msgctxt "Device Listing Whats This"
+msgid "Shows all the devices that are currently listed."
+msgstr "Rāda visas ierīces, kas pašreiz ir sarakstā."
+
+#: devicelisting.cpp:44
+#, kde-format
+msgid "Devices"
+msgstr "Ierīces"
+
+#: devicelisting.cpp:57
+#, kde-format
+msgid "Collapse All"
+msgstr "Sakļaut visu"
+
+#: devicelisting.cpp:60
+#, kde-format
+msgid "Expand All"
+msgstr "Izplest visu"
+
+#: devicelisting.cpp:63
+#, kde-format
+msgid "Show All Devices"
+msgstr "Rādīt visas ierīces"
+
+#: devicelisting.cpp:66
+#, kde-format
+msgid "Show Relevant Devices"
+msgstr "Rādīt nozīmīgās ierīces"
+
+#: devicelisting.cpp:95
+#, fuzzy, kde-format
+#| msgid "Unknown"
+msgctxt "unknown device type"
+msgid "Unknown"
+msgstr "Nezināms"
+
+#: devicelisting.cpp:136 devinfo.cpp:79
+#, fuzzy, kde-format
+#| msgid "None"
+msgctxt "no device UDI"
+msgid "None"
+msgstr "Nav"
+
+#: devinfo.cpp:28
+#, kde-format
+msgid "kcmdevinfo"
+msgstr "kcmdevinfo"
+
+#: devinfo.cpp:28
+#, fuzzy, kde-format
+#| msgid "KDE Solid Based Device Viewer"
+msgid "Device Viewer"
+msgstr "Uz KDE Solid balstīts ierīču skatītājs"
+
+#: devinfo.cpp:28
+#, kde-format
+msgid "(c) 2010 David Hubner"
+msgstr "(c) 2010 David Hubner"
+
+#: devinfo.cpp:58
+#, kde-format
+msgid "UDI: "
+msgstr "UDI: "
+
+#: devinfo.cpp:66
+#, kde-format
+msgctxt "Udi Whats This"
+msgid "Shows the current device's UDI (Unique Device Identifier)"
+msgstr "Rāda pašreizējās ierīces UDI (Unique Device Identifier)"
+
+#: infopanel.cpp:20
+#, kde-format
+msgid "Device Information"
+msgstr "Informācija par ierīci"
+
+#: infopanel.cpp:29
+#, kde-format
+msgctxt "Info Panel Whats This"
+msgid "Shows information about the currently selected device."
+msgstr "Rāda informāciju par pašreiz izvēlēto ierīci."
+
+#: infopanel.cpp:56
+#, kde-format
+msgid ""
+"\n"
+"Solid Based Device Viewer Module"
+msgstr ""
+"\n"
+"Uz Solid bāzēts ierīču skatītāja modulis"
+
+#: infopanel.cpp:119
+#, kde-format
+msgid "Description: "
+msgstr ""
+
+#: infopanel.cpp:121
+#, kde-format
+msgid "Product: "
+msgstr "Produkts: "
+
+#: infopanel.cpp:123
+#, kde-format
+msgid "Vendor: "
+msgstr "Ražotājs: "
+
+#: infopanel.cpp:145
+#, kde-format
+msgid "Yes"
+msgstr "Jā"
+
+#: infopanel.cpp:147
+#, kde-format
+msgid "No"
+msgstr "Nē"
+
+#: infopanel.h:36
+#, fuzzy, kde-format
+#| msgid "Unknown"
+msgctxt "name of something is not known"
+msgid "Unknown"
+msgstr "Nezināms"
+
+#: soldevice.cpp:66
+#, fuzzy, kde-format
+#| msgid "Unknown"
+msgctxt "unknown device"
+msgid "Unknown"
+msgstr "Nezināms"
+
+#: soldevice.cpp:92
+#, kde-format
+msgctxt "Default device tooltip"
+msgid "A Device"
+msgstr "Ierīce"
+
+#: soldevicetypes.cpp:43
+#, kde-format
+msgid "Processors"
+msgstr "Procesori"
+
+#: soldevicetypes.cpp:59
+#, kde-format
+msgid "Processor %1"
+msgstr "Procesors %1"
+
+#: soldevicetypes.cpp:76
+#, kde-format
+msgid "Intel MMX"
+msgstr "Intel MMX"
+
+#: soldevicetypes.cpp:79
+#, kde-format
+msgid "Intel SSE"
+msgstr "Intel SSE"
+
+#: soldevicetypes.cpp:82
+#, kde-format
+msgid "Intel SSE2"
+msgstr "Intel SSE2"
+
+#: soldevicetypes.cpp:85
+#, kde-format
+msgid "Intel SSE3"
+msgstr "Intel SSE3"
+
+#: soldevicetypes.cpp:88
+#, fuzzy, kde-format
+#| msgid "Intel SSE3"
+msgid "Intel SSSE3"
+msgstr "Intel SSE3"
+
+#: soldevicetypes.cpp:91
+#, fuzzy, kde-format
+#| msgid "Intel SSE4"
+msgid "Intel SSE4.1"
+msgstr "Intel SSE4"
+
+#: soldevicetypes.cpp:94
+#, fuzzy, kde-format
+#| msgid "Intel SSE4"
+msgid "Intel SSE4.2"
+msgstr "Intel SSE4"
+
+#: soldevicetypes.cpp:97
+#, fuzzy, kde-format
+#| msgid "AMD 3DNow"
+msgid "AMD 3DNow!"
+msgstr "AMD 3DNow"
+
+#: soldevicetypes.cpp:100
+#, kde-format
+msgid "ATI IVEC"
+msgstr "ATI IVEC"
+
+#: soldevicetypes.cpp:103
+#, fuzzy, kde-format
+#| msgid "None"
+msgctxt "no instruction set extensions"
+msgid "None"
+msgstr "Nav"
+
+#: soldevicetypes.cpp:106
+#, kde-format
+msgid "Processor Number: "
+msgstr "Procesora numurs: "
+
+#: soldevicetypes.cpp:106
+#, kde-format
+msgid "Max Speed: "
+msgstr "Maksimālais ātrums: "
+
+#: soldevicetypes.cpp:107
+#, kde-format
+msgid "Supported Instruction Sets: "
+msgstr "Atbalstītās instrukciju kopas: "
+
+#: soldevicetypes.cpp:132
+#, kde-format
+msgid "Storage Drives"
+msgstr "Datu nesēji"
+
+#: soldevicetypes.cpp:151
+#, kde-format
+msgid "Hard Disk Drive"
+msgstr "Cietais disks"
+
+#: soldevicetypes.cpp:154
+#, kde-format
+msgid "Compact Flash Reader"
+msgstr "Compact Flash lasītājs"
+
+#: soldevicetypes.cpp:157
+#, kde-format
+msgid "Smart Media Reader"
+msgstr "Smart Media lasītājs"
+
+#: soldevicetypes.cpp:160
+#, kde-format
+msgid "SD/MMC Reader"
+msgstr "SD/MMC lasītājs"
+
+#: soldevicetypes.cpp:163
+#, kde-format
+msgid "Optical Drive"
+msgstr "Optiskā ierīce"
+
+#: soldevicetypes.cpp:166
+#, kde-format
+msgid "Memory Stick Reader"
+msgstr "Memory Stick lasītājs"
+
+#: soldevicetypes.cpp:169
+#, kde-format
+msgid "xD Reader"
+msgstr "xD lasītājs"
+
+#: soldevicetypes.cpp:172
+#, kde-format
+msgid "Unknown Drive"
+msgstr "Nezināma ierīce"
+
+#: soldevicetypes.cpp:192
+#, kde-format
+msgid "IDE"
+msgstr "IDE"
+
+#: soldevicetypes.cpp:195
+#, kde-format
+msgid "USB"
+msgstr "USB"
+
+#: soldevicetypes.cpp:198
+#, kde-format
+msgid "IEEE1394"
+msgstr "IEEE1394"
+
+#: soldevicetypes.cpp:201
+#, kde-format
+msgid "SCSI"
+msgstr "SCSI"
+
+#: soldevicetypes.cpp:204
+#, kde-format
+msgid "SATA"
+msgstr "SATA"
+
+#: soldevicetypes.cpp:207
+#, fuzzy, kde-format
+#| msgid "Platform"
+msgctxt "platform storage bus"
+msgid "Platform"
+msgstr "Platforma"
+
+#: soldevicetypes.cpp:210
+#, fuzzy, kde-format
+#| msgid "Unknown"
+msgctxt "unknown storage bus"
+msgid "Unknown"
+msgstr "Nezināms"
+
+#: soldevicetypes.cpp:213
+#, kde-format
+msgid "Bus: "
+msgstr "Kopne: "
+
+#: soldevicetypes.cpp:213
+#, kde-format
+msgid "Hotpluggable?"
+msgstr "'Karsti nomaināma' (hotpluggable)?"
+
+#: soldevicetypes.cpp:213
+#, kde-format
+msgid "Removable?"
+msgstr "Noņemama?"
+
+#: soldevicetypes.cpp:257
+#, kde-format
+msgid "Unused"
+msgstr "Neizmantota"
+
+#: soldevicetypes.cpp:260
+#, kde-format
+msgid "File System"
+msgstr "Failu sistēma"
+
+#: soldevicetypes.cpp:263
+#, kde-format
+msgid "Partition Table"
+msgstr "Partīciju tabula"
+
+#: soldevicetypes.cpp:266
+#, kde-format
+msgid "Raid"
+msgstr "Raid"
+
+#: soldevicetypes.cpp:269
+#, kde-format
+msgid "Encrypted"
+msgstr "Šifrēts"
+
+#: soldevicetypes.cpp:272
+#, fuzzy, kde-format
+#| msgid "Unknown"
+msgctxt "unknown volume usage"
+msgid "Unknown"
+msgstr "Nezināms"
+
+#: soldevicetypes.cpp:275
+#, kde-format
+msgid "File System Type: "
+msgstr "Failu sistēmas tips: "
+
+#: soldevicetypes.cpp:275
+#, kde-format
+msgid "Label: "
+msgstr "Etiķete: "
+
+#: soldevicetypes.cpp:276
+#, kde-format
+msgid "Not Set"
+msgstr "Nav iestatīts"
+
+#: soldevicetypes.cpp:276
+#, kde-format
+msgid "Volume Usage: "
+msgstr "Vienības izlietojums: "
+
+#: soldevicetypes.cpp:276
+#, kde-format
+msgid "UUID: "
+msgstr "UUID: "
+
+#: soldevicetypes.cpp:282
+#, kde-format
+msgid "Mounted At: "
+msgstr "Piemontēta: "
+
+#: soldevicetypes.cpp:282
+#, kde-format
+msgid "Not Mounted"
+msgstr "Nav piemontēta"
+
+#: soldevicetypes.cpp:287
+#, kde-format
+msgid "Volume Space:"
+msgstr "Vienības ietilpība:"
+
+#: soldevicetypes.cpp:297
+#, kde-format
+msgctxt "Available space out of total partition size (percent used)"
+msgid "%1 free of %2 (%3% used)"
+msgstr "Brīvi %1 no %2 (izmantoti %3%)"
+
+#: soldevicetypes.cpp:303
+#, kde-format
+msgid "No data available"
+msgstr ""
+
+#: soldevicetypes.cpp:330
+#, kde-format
+msgid "Multimedia Players"
+msgstr "Multivides atskaņotāji"
+
+#: soldevicetypes.cpp:349 soldevicetypes.cpp:388
+#, kde-format
+msgid "Supported Drivers: "
+msgstr "Atbalstītie draiveri: "
+
+#: soldevicetypes.cpp:349 soldevicetypes.cpp:388
+#, kde-format
+msgid "Supported Protocols: "
+msgstr "Atbalstītie protokoli: "
+
+#: soldevicetypes.cpp:369
+#, kde-format
+msgid "Cameras"
+msgstr "Fotoaparāti"
+
+#: soldevicetypes.cpp:408
+#, kde-format
+msgid "Batteries"
+msgstr "Baterijas"
+
+#: soldevicetypes.cpp:430
+#, kde-format
+msgid "PDA"
+msgstr "PDA"
+
+#: soldevicetypes.cpp:433
+#, kde-format
+msgid "UPS"
+msgstr "UPS"
+
+#: soldevicetypes.cpp:436
+#, kde-format
+msgid "Primary"
+msgstr "Primārais"
+
+#: soldevicetypes.cpp:439
+#, kde-format
+msgid "Mouse"
+msgstr "Pele"
+
+#: soldevicetypes.cpp:442
+#, kde-format
+msgid "Keyboard"
+msgstr "Tastatūra"
+
+#: soldevicetypes.cpp:445
+#, kde-format
+msgid "Keyboard + Mouse"
+msgstr "Klaviatūra + pele"
+
+#: soldevicetypes.cpp:448
+#, kde-format
+msgid "Camera"
+msgstr "Fotoaparāts"
+
+#: soldevicetypes.cpp:451
+#, kde-format
+msgid "Phone"
+msgstr ""
+
+#: soldevicetypes.cpp:454
+#, kde-format
+msgctxt "Screen"
+msgid "Monitor"
+msgstr ""
+
+#: soldevicetypes.cpp:457
+#, kde-format
+msgctxt "Wireless game pad or joystick battery"
+msgid "Gaming Input"
+msgstr ""
+
+#: soldevicetypes.cpp:460
+#, fuzzy, kde-format
+#| msgid "Unknown"
+msgctxt "unknown battery type"
+msgid "Unknown"
+msgstr "Nezināms"
+
+#: soldevicetypes.cpp:466
+#, kde-format
+msgid "Charging"
+msgstr "Lādējas"
+
+#: soldevicetypes.cpp:469
+#, kde-format
+msgid "Discharging"
+msgstr "Izlādējas"
+
+#: soldevicetypes.cpp:472
+#, fuzzy, kde-format
+#| msgid "No Charge"
+msgid "Fully Charged"
+msgstr "Nav lādiņa"
+
+#: soldevicetypes.cpp:475
+#, kde-format
+msgid "No Charge"
+msgstr "Nav lādiņa"
+
+#: soldevicetypes.cpp:478
+#, kde-format
+msgid "Battery Type: "
+msgstr "Baterijas tips: "
+
+#: soldevicetypes.cpp:478
+#, kde-format
+msgid "Charge Status: "
+msgstr "Lādēšanas statuss: "
+
+#: soldevicetypes.cpp:478
+#, fuzzy, kde-format
+#| msgid "Charge Status: "
+msgid "Charge Percent: "
+msgstr "Lādēšanas statuss: "
+
+#~ msgid "Network Interfaces"
+#~ msgstr "Tīkla ierīces"
+
+#~ msgid "Connected"
+#~ msgstr "Pieslēgta"
+
+#~ msgid "Wireless"
+#~ msgstr "Bezvadu"
+
+#~ msgid "Wired"
+#~ msgstr "Vadu"
+
+#~ msgid "Hardware Address: "
+#~ msgstr "Aparatūras adrese: "
+
+#~ msgid "Wireless?"
+#~ msgstr "Bezvadu?"
+
+#~ msgid "Audio Interfaces"
+#~ msgstr "Audio saskarnes"
+
+#~ msgid "Alsa Interfaces"
+#~ msgstr "Alsa saskarnes"
+
+#~ msgid "Open Sound System Interfaces"
+#~ msgstr "Open Sound System saskarnes"
+
+#~ msgid "Control"
+#~ msgstr "Kontrole"
+
+#~ msgid "Input"
+#~ msgstr "Ievade"
+
+#~ msgid "Output"
+#~ msgstr "Izvade"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown audio interface type"
+#~ msgid "Unknown"
+#~ msgstr "Nezināms"
+
+#~ msgid "Internal Soundcard"
+#~ msgstr "Iekšējā skaņas karte"
+
+#~ msgid "USB Soundcard"
+#~ msgstr "USB skaņas karte"
+
+#~ msgid "Firewire Soundcard"
+#~ msgstr "Firewire skaņas karte"
+
+#~ msgid "Headset"
+#~ msgstr "Austiņas"
+
+#~ msgid "Modem"
+#~ msgstr "Modems"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown sound card type"
+#~ msgid "Unknown"
+#~ msgstr "Nezināms"
+
+#~ msgid "Audio Interface Type: "
+#~ msgstr "Nezināms audio saskarnes tips: "
+
+#~ msgid "Soundcard Type: "
+#~ msgstr "Skaņas kartes tips: "
+
+#~ msgid "Device Buttons"
+#~ msgstr "Ierīces pogas"
+
+#~ msgid "Lid Button"
+#~ msgstr "Ekrāna poga"
+
+#~ msgid "Power Button"
+#~ msgstr "Strāvas poga"
+
+#~ msgid "Sleep Button"
+#~ msgstr "Aizmidzināšanas poga"
+
+#~ msgid "Tablet Button"
+#~ msgstr "Planšetdatora poga"
+
+#~ msgid "Unknown Button"
+#~ msgstr "Nezināma tipa poga"
+
+#~ msgid "Button type: "
+#~ msgstr "Pogas tips: "
+
+#~ msgid "Has State?"
+#~ msgstr "Ir stāvoklis?"
+
+#~ msgid "AC Adapters"
+#~ msgstr "Ārējā barošana"
+
+#~ msgid "Is plugged in?"
+#~ msgstr "Ir pieslēgta?"
+
+#~ msgid "Digital Video Broadcasting Devices"
+#~ msgstr "Digitālās video pārraides ierīces"
+
+#~ msgid "Audio"
+#~ msgstr "Audio"
+
+#~ msgid "Conditional access system"
+#~ msgstr "Nosacījumpiekļuves sistēma"
+
+#~ msgid "Demux"
+#~ msgstr "Demukseris"
+
+#~ msgid "Digital video recorder"
+#~ msgstr "Digitālā video ierakstītājs"
+
+#~ msgid "Front end"
+#~ msgstr "Priekšpuse"
+
+#~ msgid "Network"
+#~ msgstr "Tīkls"
+
+#~ msgid "On-Screen display"
+#~ msgstr "Virsekrāna displejs"
+
+#~ msgid "Security and content protection"
+#~ msgstr "Drošība un satura aizsardzība"
+
+#~ msgid "Video"
+#~ msgstr "Video"
+
+#~ msgid "Device Type: "
+#~ msgstr "Ierīces tips: "
+
+#~ msgid "Serial Devices"
+#~ msgstr "Seriālās ierīces"
+
+#, fuzzy
+#~| msgid "Platform"
+#~ msgctxt "platform serial interface type"
+#~ msgid "Platform"
+#~ msgstr "Platforma"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown serial interface type"
+#~ msgid "Unknown"
+#~ msgstr "Nezināms"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown port"
+#~ msgid "Unknown"
+#~ msgstr "Nezināms"
+
+#~ msgid "Serial Type: "
+#~ msgstr "Seriālās ierīces tips: "
+
+#~ msgid "Port: "
+#~ msgstr "Ports: "
+
+#~ msgid "Smart Card Devices"
+#~ msgstr "Viedkaršu ierīces"
+
+#~ msgid "Card Reader"
+#~ msgstr "Karšu lasītājs"
+
+#~ msgid "Crypto Token"
+#~ msgstr "Kriptogrāfijas elements"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown smart card type"
+#~ msgid "Unknown"
+#~ msgstr "Nezināms"
+
+#~ msgid "Smart Card Type: "
+#~ msgstr "Viedkartes tips: "
+
+#~ msgid "Video Devices"
+#~ msgstr "Video ierīces"

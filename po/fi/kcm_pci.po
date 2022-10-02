@@ -1,0 +1,1364 @@
+# Finnish messages for kcm_pci.
+# Copyright © 2010 This_file_is_part_of_KDE
+# This file is distributed under the same license as the kdebase package.
+# Jorma Karvonen <karvonen.jorma@gmail.com>, 2010.
+# Lasse Liehu <lasse.liehu@gmail.com>, 2011, 2012, 2013, 2014, 2016.
+# Tommi Nieminen <translator@legisign.org>, 2019, 2021, 2022.
+#
+# KDE Finnish translation sprint participants:
+# Author: Lliehu
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_pci\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
+"PO-Revision-Date: 2022-01-04 22:40+0200\n"
+"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
+"Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-POT-Import-Date: 2012-12-01 22:22:20+0000\n"
+"X-Generator: Lokalize 20.04.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Jorma Karvonen, Tommi Nieminen"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "karvonen.jorma@gmail.com, translator@legisign.org"
+
+#: main.cpp:26
+#, kde-format
+msgctxt "@label kcm name"
+msgid "PCI"
+msgstr "PCI"
+
+#: main.cpp:27
+#, kde-format
+msgid "Harald Sitter"
+msgstr "Harald Sitter"
+
+#: package/contents/ui/main.qml:14
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "PCI-tiedot"
+
+#~ msgid "kcm_pci"
+#~ msgstr "kcm_pci"
+
+#~ msgid "PCI Devices"
+#~ msgstr "PCI-laitteet"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr "© 2008 Nicolas Ternisien © 1998–2002 Helge Deller"
+
+#~ msgid "Nicolas Ternisien"
+#~ msgstr "Nicolas Ternisien"
+
+#~ msgid "Helge Deller"
+#~ msgstr "Helge Deller"
+
+#~ msgid "This list displays PCI information."
+#~ msgstr "Tämä luettelo näyttää PCI-tietoja."
+
+#~ msgid ""
+#~ "This display shows information about your computer's PCI slots and the "
+#~ "related connected devices."
+#~ msgstr ""
+#~ "Tämä näyttö esittää tietoa tietokoneen PCI-korttipaikoista ja niihin "
+#~ "liitetyistä laitteista."
+
+#~ msgid "Device Class"
+#~ msgstr "Laiteluokka"
+
+#~ msgid "Device Subclass"
+#~ msgstr "Laitealiluokka"
+
+#~ msgid "Device Programming Interface"
+#~ msgstr "Laitteen ohjelmointirajapinta"
+
+#~ msgid "Master IDE Device"
+#~ msgstr "Ensisijainen IDE-laite"
+
+#~ msgid "Secondary programmable indicator"
+#~ msgstr "Toissijainen ohjelmoitava indikaattori"
+
+#~ msgid "Secondary operating mode"
+#~ msgstr "Toissijainen toimintotila"
+
+#~ msgid "Primary programmable indicator"
+#~ msgstr "Ensisijainen ohjelmoitava indikaattori"
+
+#~ msgid "Primary operating mode"
+#~ msgstr "Ensisijainen toimintotila"
+
+#~ msgid "Vendor"
+#~ msgstr "Toimittaja"
+
+#~ msgid "Device"
+#~ msgstr "Laite"
+
+#~ msgid "Subsystem"
+#~ msgstr "Alijärjestelmä"
+
+#~ msgid " - device:"
+#~ msgstr " - laite:"
+
+#~ msgid "Interrupt"
+#~ msgstr "Keskeytys"
+
+# IRQ tarkoittaa oikeastaan Keskeytyspyyntöä, mutta IRQ-tunnetaan käsitteenä
+#~ msgid "IRQ"
+#~ msgstr "IRQ"
+
+#~ msgid "Pin"
+#~ msgstr "Liitäntänasta"
+
+#~ msgid "Control"
+#~ msgstr "Hallinta"
+
+#~ msgid "Response in I/O space"
+#~ msgstr "Vastaus siirräntätilassa"
+
+#~ msgid "Response in memory space"
+#~ msgstr "Vastaus muistitilassa"
+
+# Bus mastering tarkoittaa, että väylää voi hallita useampi väylään liitetty laite, ei vain suoritin.
+#~ msgid "Bus mastering"
+#~ msgstr "Monilaiteväylähallinta"
+
+#~ msgid "Response to special cycles"
+#~ msgstr "Vastaus erikoisjaksoille"
+
+#~ msgid "Memory write and invalidate"
+#~ msgstr "Muistikirjoitus ja peruutus"
+
+#~ msgid "Palette snooping"
+#~ msgstr "Paletin urkinta"
+
+#~ msgid "Parity checking"
+#~ msgstr "Pariteettitarkistus"
+
+#~ msgid "Address/data stepping"
+#~ msgstr "Osoite/data-askellus"
+
+#~ msgid "System error"
+#~ msgstr "Järjestelmävirhe"
+
+#~ msgid "Back-to-back writes"
+#~ msgstr "Käänteis-rinnakkaiskytketyt kirjoitukset"
+
+#~ msgid "Status"
+#~ msgstr "Tila"
+
+#~ msgid "Interrupt status"
+#~ msgstr "Keskeytystila"
+
+#~ msgid "Capability list"
+#~ msgstr "Kapasiteettiluettelo"
+
+#~ msgid "66 MHz PCI 2.1 bus"
+#~ msgstr "66 MHz PCI 2.1 -väylä"
+
+#~ msgid "User-definable features"
+#~ msgstr "Käyttäjämääriteltyjä ominaisuuksia"
+
+#~ msgid "Accept fast back-to-back"
+#~ msgstr "Hyväksy nopea käänteis-rinnakkaiskytkentä"
+
+#~ msgid "Data parity error"
+#~ msgstr "Datapariteettivirhe"
+
+#~ msgid "Device selection timing"
+#~ msgstr "Laitteen valinta-ajoitus"
+
+#~ msgid "Signaled target abort"
+#~ msgstr "Signaloitu kohdekeskeytys"
+
+#~ msgid "Received target abort"
+#~ msgstr "Vastaanotettu kohdekeskeytys"
+
+#~ msgid "Received master abort"
+#~ msgstr "Vastaanotettu pääkeskeytys"
+
+#~ msgid "Signaled system error"
+#~ msgstr "Signaloitu järjestelmävirhe"
+
+#~ msgid "Parity error"
+#~ msgstr "Pariteettivirhe"
+
+#~ msgid "Latency"
+#~ msgstr "Viive"
+
+#~ msgid "MIN_GNT"
+#~ msgstr "MIN_GNT"
+
+#~ msgid "No major requirements (0x00)"
+#~ msgstr "Ei päävaatimuksia (0x00)"
+
+#~ msgid "MAX_LAT"
+#~ msgstr "MAX_LAT"
+
+#~ msgid "Header"
+#~ msgstr "Otsake"
+
+#~ msgid "Type"
+#~ msgstr "Tyyppi"
+
+#~ msgid "Multifunctional"
+#~ msgstr "Monitoiminen"
+
+#~ msgid "Build-in self test"
+#~ msgstr "Sisäänrakennettu itsetesti"
+
+#~ msgid "BIST Capable"
+#~ msgstr "BIST-kykyinen"
+
+#~ msgid "BIST Start"
+#~ msgstr "BIST-käynnistys"
+
+#~ msgid "Completion code"
+#~ msgstr "Loppukoodi"
+
+#~ msgid "Size"
+#~ msgstr "Koko"
+
+#~ msgid "Address mappings"
+#~ msgstr "Osoitekartoitukset"
+
+#~ msgid "Mapping %1"
+#~ msgstr "Kartoitus %1"
+
+#~ msgid "Space"
+#~ msgstr "Tila"
+
+#~ msgid "I/O"
+#~ msgstr "Siirräntä"
+
+#~ msgid "Memory"
+#~ msgstr "Muisti"
+
+#~ msgid "Prefetchable"
+#~ msgstr "Esinoudettava"
+
+#~ msgid "Address"
+#~ msgstr "Osoite"
+
+#~ msgctxt "unassigned address"
+#~ msgid "Unassigned"
+#~ msgstr "Ei osoitettu"
+
+#~ msgctxt "unassigned size"
+#~ msgid "Unassigned"
+#~ msgstr "Ei osoitettu"
+
+#~ msgid "Bus"
+#~ msgstr "Väylä"
+
+#~ msgid "Primary bus number"
+#~ msgstr "Ensisijainen väylänumero"
+
+#~ msgid "Secondary bus number"
+#~ msgstr "Toissijainen väylänumero"
+
+#~ msgid "Subordinate bus number"
+#~ msgstr "Alisteinen väylänumero"
+
+#~ msgid "Secondary latency timer"
+#~ msgstr "Toissijainen viiveajastin"
+
+#~ msgid "CardBus number"
+#~ msgstr "CardBus-numero"
+
+#~ msgid "CardBus latency timer"
+#~ msgstr "CardBud-viiveajastin"
+
+#~ msgid "Secondary status"
+#~ msgstr "Toissijainen tila"
+
+#~ msgid "I/O behind bridge"
+#~ msgstr "Siirräntä sillan takana"
+
+#~ msgid "32-bit"
+#~ msgstr "32-bittinen"
+
+#~ msgid "Base"
+#~ msgstr "Perus"
+
+#~ msgid "Limit"
+#~ msgstr "Raja"
+
+#~ msgid "Memory behind bridge"
+#~ msgstr "Muisti sillan takana"
+
+#~ msgid "Prefetchable memory behind bridge"
+#~ msgstr "Esinoudettava muisti sillan takana"
+
+#~ msgid "64-bit"
+#~ msgstr "64-bittinen"
+
+#~ msgid "Bridge control"
+#~ msgstr "Siltahallinta"
+
+#~ msgid "Secondary parity checking"
+#~ msgstr "Toissijainen pariteettitarkistus"
+
+#~ msgid "Secondary system error"
+#~ msgstr "Toissijaisen järjestelmän virhe"
+
+#~ msgid "ISA ports forwarding"
+#~ msgstr "ISA-porttien edelleenlähetys"
+
+#~ msgid "VGA forwarding"
+#~ msgstr "VGA-edelleenlähetys"
+
+#~ msgid "Master abort"
+#~ msgstr "Pääkeskeytys"
+
+#~ msgid "Secondary bus reset"
+#~ msgstr "Toissijaisen väylän alkuarvopalautus"
+
+#~ msgid "Secondary back-to-back writes"
+#~ msgstr "Toissijaiset käänteis-rinnakkaiskytketyt kirjoitukset"
+
+#~ msgid "Primary discard timer counts"
+#~ msgstr "Ensisijaiset hylkäysajastinlaskurit"
+
+#~ msgid "2e10 PCI clocks"
+#~ msgstr "2e10 PCi-kellot"
+
+#~ msgid "2e15 PCI clocks"
+#~ msgstr "2e15 PCI-kellot"
+
+#~ msgid "Secondary discard timer counts"
+#~ msgstr "Toissijaiset hylkäysajastinlaskurit"
+
+#~ msgid "Discard timer error"
+#~ msgstr "Hylkäysajastinvirhe"
+
+#~ msgid "Discard timer system error"
+#~ msgstr "Hylkäysajastimen järjestelmävirhe"
+
+#~ msgid "Expansion ROM"
+#~ msgstr "Laajennus-ROM"
+
+#~ msgid "Memory windows"
+#~ msgstr "Muisti-ikkunat"
+
+#~ msgid "Window %1"
+#~ msgstr "Ikkuna %1"
+
+#~ msgid "I/O windows"
+#~ msgstr "Siirräntäikkunat"
+
+#~ msgid "16-bit"
+#~ msgstr "16-bittinen"
+
+#~ msgid "16-bit legacy interface ports"
+#~ msgstr "16-bittiset perintörajapintaportit"
+
+#~ msgid "CardBus control"
+#~ msgstr "CardBus-hallinta"
+
+#~ msgid "Interrupts for 16-bit cards"
+#~ msgstr "Keskeytykset 16-bittisille korteille"
+
+#~ msgid "Window 0 prefetchable memory"
+#~ msgstr "Ikkuna 0 esinoudettava muisti"
+
+#~ msgid "Window 1 prefetchable memory"
+#~ msgstr "Ikkuna 1 esinoudettava muisti"
+
+#~ msgid "Post writes"
+#~ msgstr "Jälkikirjoitukset"
+
+#~ msgid "Raw PCI config space"
+#~ msgstr "Raaka PCI-asetustila"
+
+#~ msgid "Capabilities"
+#~ msgstr "Kapasiteetit"
+
+#~ msgid "Version"
+#~ msgstr "Versio"
+
+#~ msgid "Clock required for PME generation"
+#~ msgstr "Kello vaadittu PME-tuottamiselle"
+
+#~ msgid "Device-specific initialization required"
+#~ msgstr "Laitekohtainen alustus vaadittu"
+
+#~ msgid "Maximum auxiliary current required in D3 cold"
+#~ msgstr "Kylmän D3:n vaatima enimmäisapuvirta"
+
+#~ msgid "D1 support"
+#~ msgstr "D1-tuki"
+
+#~ msgid "D2 support"
+#~ msgstr "D2-tuki"
+
+#~ msgid "Power management events"
+#~ msgstr "Virranhallintatapahtumat"
+
+#~ msgid "D0"
+#~ msgstr "D0"
+
+#~ msgid "D1"
+#~ msgstr "D1"
+
+#~ msgid "D2"
+#~ msgstr "D2"
+
+#~ msgid "D3 hot"
+#~ msgstr "D3 kuuma"
+
+#~ msgid "D3 cold"
+#~ msgstr "D3 kylmä"
+
+#~ msgid "Power state"
+#~ msgstr "Virtalähdetila"
+
+#~ msgid "Power management"
+#~ msgstr "Virranhallinta"
+
+#~ msgid "Data select"
+#~ msgstr "Datavalinta"
+
+#~ msgid "Data scale"
+#~ msgstr "Dataskaala"
+
+#~ msgid "Power management status"
+#~ msgstr "Virranhallintatila"
+
+#~ msgid "Bridge status"
+#~ msgstr "Siltatila"
+
+#~ msgid "Secondary bus state in D3 hot"
+#~ msgstr "Kuuman D3:n toisioväylätila"
+
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgid "Secondary bus power & clock control"
+#~ msgstr "Toisioväylävirtalähde- ja kellohallinta"
+
+#~ msgid "Data"
+#~ msgstr "Data"
+
+#~ msgid "Revision"
+#~ msgstr "Versio"
+
+#~ msgid "Rate"
+#~ msgstr "Nopeus"
+
+#~ msgid "AGP 3.0 mode"
+#~ msgstr "AGP 3.0 -tila"
+
+#~ msgid "Fast Writes"
+#~ msgstr "Nopeat kirjoitukset"
+
+#~ msgid "Address over 4 GiB"
+#~ msgstr "Yli 4 GiB osoite"
+
+#~ msgid "Translation of host processor access"
+#~ msgstr "Isäntäsuoritinsaannin käännös"
+
+#~ msgid "64-bit GART"
+#~ msgstr "64-bittinen GART"
+
+#~ msgid "Cache Coherency"
+#~ msgstr "Välimuistin yhdenmukaisuus"
+
+#~ msgid "Side-band addressing"
+#~ msgstr "Sivukaistaosoitteenmuodostus"
+
+#~ msgid "Calibrating cycle"
+#~ msgstr "Kalibrointijakso"
+
+#~ msgid "Optimum asynchronous request size"
+#~ msgstr "Optimaalinen asynkroninen pyyntökoko"
+
+#~ msgid "Isochronous transactions"
+#~ msgstr "Vakioaikaerotapahtumat"
+
+#~ msgid "Maximum number of AGP command"
+#~ msgstr "AGP-komentoja enintään"
+
+#~ msgid "Configuration"
+#~ msgstr "Asetukset"
+
+#~ msgid "AGP"
+#~ msgstr "AGP"
+
+#~ msgid "Data address"
+#~ msgstr "Dataosoite"
+
+#~ msgid "Transfer completed"
+#~ msgstr "Siirto valmis"
+
+#~ msgid "Message control"
+#~ msgstr "Viestihallinta"
+
+#~ msgid "Message signaled interrupts"
+#~ msgstr "Viestin signaloimat keskeytykset"
+
+#~ msgid "Multiple message capable"
+#~ msgstr "Moniviestikykyinen"
+
+#~ msgid "Multiple message enable"
+#~ msgstr "Moniviesti otettu käyttöön"
+
+#~ msgid "64-bit address"
+#~ msgstr "64-bittinen osoite"
+
+#~ msgid "Per vector masking"
+#~ msgstr "Vektorikohtainen peite"
+
+#~ msgid "Mask"
+#~ msgstr "Peite"
+
+#~ msgid "Pending"
+#~ msgstr "Odottava"
+
+#~ msgid "Length"
+#~ msgstr "Pituus"
+
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "Ei mitään"
+
+#~ msgid "Next"
+#~ msgstr "Seuraava"
+
+#~ msgid "0x00 (None)"
+#~ msgstr "0x00 (ei mitään)"
+
+#~ msgid "Root only"
+#~ msgstr "Vain root"
+
+#~ msgid "Value"
+#~ msgstr "Arvo"
+
+#~ msgid "Cache line size"
+#~ msgstr "Välimuistirivikoko"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Enabled"
+#~ msgstr "Otettu käyttöön"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Disabled"
+#~ msgstr "Pois käytöstä"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Yes"
+#~ msgstr "Kyllä"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "Ei"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Unknown"
+#~ msgstr "Tuntematon"
+
+#~ msgid "Unclassified device"
+#~ msgstr "Luokittelematon laite"
+
+#~ msgid "Mass storage controller"
+#~ msgstr "Massamuistiohjain"
+
+#~ msgid "Network controller"
+#~ msgstr "Verkko-ohjain"
+
+#~ msgid "Display controller"
+#~ msgstr "Näyttöohjain"
+
+#~ msgid "Multimedia controller"
+#~ msgstr "Multimediaohjain"
+
+#~ msgid "Memory controller"
+#~ msgstr "Muistiohjain"
+
+#~ msgid "Bridge"
+#~ msgstr "Silta"
+
+#~ msgid "Communication controller"
+#~ msgstr "Viestintäohjain"
+
+#~ msgid "Generic system peripheral"
+#~ msgstr "Yleinen järjestelmäoheislaite"
+
+#~ msgid "Input device controller"
+#~ msgstr "Syöttölaiteohjain"
+
+#~ msgid "Docking station"
+#~ msgstr "Liitäntäasema"
+
+#~ msgid "Processor"
+#~ msgstr "Suoritin"
+
+#~ msgid "Serial bus controller"
+#~ msgstr "Sarjaväyläohjain"
+
+#~ msgid "Wireless controller"
+#~ msgstr "Langaton ohjain"
+
+#~ msgid "Intelligent controller"
+#~ msgstr "Älykäs ohjain"
+
+#~ msgid "Satellite communications controller"
+#~ msgstr "Satelliittiviestintäohjain"
+
+#~ msgid "Encryption controller"
+#~ msgstr "Salausohjain"
+
+#~ msgid "Signal processing controller"
+#~ msgstr "Signaaliprosessointiohjain"
+
+#~ msgid "Processing accelerators"
+#~ msgstr "Suorituskiihdyttimet"
+
+# *** TARKISTA: Mitähän hittoa tämä on?
+#~ msgid "Non-Essential Instrumentation"
+#~ msgstr "Ei-välttämätön instrumentointi"
+
+#~ msgid "Coprocessor"
+#~ msgstr "Apusuoritin"
+
+#~ msgid "Unassigned class"
+#~ msgstr "Unassigned class"
+
+#~ msgid "Unknown device class"
+#~ msgstr "Tuntematon laiteluokka"
+
+#~ msgid "Non-VGA unclassified device"
+#~ msgstr "Luokittelematon ei-VGA-laite"
+
+#~ msgid "VGA unclassified device"
+#~ msgstr "Luokittelematon VGA-laite"
+
+#~ msgid "Unknown unclassified device"
+#~ msgstr "Tuntematon luokittelematon laite"
+
+#~ msgid "SCSI storage controller"
+#~ msgstr "SCSI-muistiohjain"
+
+#~ msgid "IDE controller"
+#~ msgstr "IDE-ohjain"
+
+#~ msgid "Floppy disk controller"
+#~ msgstr "Levykeasemaohjain"
+
+#~ msgid "IPI bus controller"
+#~ msgstr "IPI-väyläohjain"
+
+#~ msgid "RAID bus controller"
+#~ msgstr "RAID-väyläohjain"
+
+#~ msgid "ATA controller"
+#~ msgstr "ATA-ohjain"
+
+#~ msgid "SATA controller"
+#~ msgstr "SATA-ohjain"
+
+#~ msgid "Serial Attached SCSI controller"
+#~ msgstr "Sarjaliitetty SCSI-ohjain"
+
+#~ msgid "Non-Volatile memory controller"
+#~ msgstr "Pysyvä muistiohjain"
+
+#~ msgid "Unknown storage controller"
+#~ msgstr "Tuntematon tallennusohjain"
+
+#~ msgid "Ethernet controller"
+#~ msgstr "Ethernet-ohjain"
+
+#~ msgid "Token ring network controller"
+#~ msgstr "Token ring -verkko-ohjain"
+
+#~ msgid "FDDI network controller"
+#~ msgstr "FDDI-verkko-ohjain"
+
+#~ msgid "ATM network controller"
+#~ msgstr "ATM-verkko-ohjain"
+
+#~ msgid "ISDN controller"
+#~ msgstr "ISDN-ohjain"
+
+#~ msgid "WorldFip controller"
+#~ msgstr "WorldFip-ohjain"
+
+#~ msgid "PICMG controller"
+#~ msgstr "PICMG-ohjain"
+
+#~ msgid "Infiniband controller"
+#~ msgstr "Infiniband-ohjain"
+
+#~ msgid "Fabric controller"
+#~ msgstr "Fabric-ohjain"
+
+#~ msgid "Unknown network controller"
+#~ msgstr "Tuntematon verkko-ohjain"
+
+#~ msgid "VGA compatible controller"
+#~ msgstr "VGA-yhteensopiva ohjain"
+
+#~ msgid "XGA compatible controller"
+#~ msgstr "XGA-yhteensopiva ohjain"
+
+#~ msgid "3D controller"
+#~ msgstr "3D-ohjain"
+
+#~ msgid "Unknown display controller"
+#~ msgstr "Tuntematon näyttöohjain"
+
+#~ msgid "Multimedia video controller"
+#~ msgstr "Multimedia-video-ohjain"
+
+#~ msgid "Multimedia audio controller"
+#~ msgstr "Multimedia-ääniohjain"
+
+#~ msgid "Computer telephony device"
+#~ msgstr "Tietokonepuhelinlaite"
+
+#~ msgid "Audio device"
+#~ msgstr "Äänilaite"
+
+#~ msgid "Unknown multimedia controller"
+#~ msgstr "Tuntematon multimediaohjain"
+
+#~ msgid "RAM memory"
+#~ msgstr "RAM-muisti"
+
+#~ msgid "FLASH memory"
+#~ msgstr "FLASH-muisti"
+
+#~ msgid "Unknown memory controller"
+#~ msgstr "Tuntematon muistiohjain"
+
+#~ msgid "Host bridge"
+#~ msgstr "Isäntäsilta"
+
+#~ msgid "ISA bridge"
+#~ msgstr "ISA-silta"
+
+#~ msgid "EISA bridge"
+#~ msgstr "EISA-silta"
+
+#~ msgid "MicroChannel bridge"
+#~ msgstr "MicroChannel-silta"
+
+#~ msgid "PCI bridge"
+#~ msgstr "PCI-silta"
+
+#~ msgid "PCMCIA bridge"
+#~ msgstr "PCMCIA-silta"
+
+#~ msgid "NuBus bridge"
+#~ msgstr "NuBus-silta"
+
+#~ msgid "CardBus bridge"
+#~ msgstr "CardBus-silta"
+
+#~ msgid "RACEway bridge"
+#~ msgstr "RACEway-silta"
+
+#~ msgid "Semi-transparent PCI-to-PCI bridge"
+#~ msgstr "Puoliksi läpinäkyvä PCI-to-PCI-silta"
+
+#~ msgid "InfiniBand to PCI host bridge"
+#~ msgstr "InfiniBand to PCI -isäntäsilta"
+
+#~ msgid "Unknown bridge"
+#~ msgstr "Tuntematon silta"
+
+#~ msgid "Serial controller"
+#~ msgstr "Sarjaohjain"
+
+#~ msgid "Parallel controller"
+#~ msgstr "Rinnakkaisohjain"
+
+#~ msgid "Multiport serial controller"
+#~ msgstr "Moniporttinen sarjaohjain"
+
+#~ msgid "Modem"
+#~ msgstr "Modeemi"
+
+#~ msgid "GPIB controller"
+#~ msgstr "GPIB-ohjain"
+
+#~ msgid "Smart card controller"
+#~ msgstr "Älykorttiohjain"
+
+#~ msgid "Unknown communication controller"
+#~ msgstr "Tuntematon viestintäohjain"
+
+#~ msgid "PIC"
+#~ msgstr "PIC"
+
+#~ msgid "DMA controller"
+#~ msgstr "DMA-ohjain"
+
+#~ msgid "Timer"
+#~ msgstr "Ajastin"
+
+#~ msgid "RTC"
+#~ msgstr "RTC"
+
+#~ msgid "PCI Hot-plug controller"
+#~ msgstr "PCI-lennostakytkettävä ohjain"
+
+#~ msgid "SD Host controller"
+#~ msgstr "SD-palvelinohjain"
+
+#~ msgid "IOMMU"
+#~ msgstr "IOMMU"
+
+#~ msgid "Unknown system peripheral"
+#~ msgstr "Tuntematon järjestelmäoheislaite"
+
+#~ msgid "Keyboard controller"
+#~ msgstr "Näppäimistöohjain"
+
+#~ msgid "Digitizer Pen"
+#~ msgstr "Digitointikynä"
+
+#~ msgid "Mouse controller"
+#~ msgstr "Hiiriohjain"
+
+#~ msgid "Scanner controller"
+#~ msgstr "Skanneriohjain"
+
+#~ msgid "Gameport controller"
+#~ msgstr "Peliporttiohjain"
+
+#~ msgid "Unknown input device controller"
+#~ msgstr "Tuntematon syöttölaiteohjain"
+
+#~ msgid "Generic docking station"
+#~ msgstr "Yleinen liitäntäasema"
+
+#~ msgid "Unknown docking station"
+#~ msgstr "Tuntematon liitäntäasema"
+
+#~ msgid "386"
+#~ msgstr "386"
+
+#~ msgid "486"
+#~ msgstr "486"
+
+#~ msgid "Pentium"
+#~ msgstr "Pentium"
+
+#~ msgid "Alpha"
+#~ msgstr "Alpha"
+
+#~ msgid "Power PC"
+#~ msgstr "Power PC"
+
+#~ msgid "MIPS"
+#~ msgstr "MIPS"
+
+#~ msgid "Co-processor"
+#~ msgstr "Apusuoritin"
+
+#~ msgid "Unknown processor"
+#~ msgstr "Tuntematon suoritin"
+
+#~ msgid "FireWire (IEEE 1394)"
+#~ msgstr "FireWire (IEEE 1394)"
+
+#~ msgid "ACCESS bus"
+#~ msgstr "ACCESS-väylä"
+
+#~ msgid "SSA"
+#~ msgstr "SSA"
+
+#~ msgid "USB controller"
+#~ msgstr "USB-ohjain"
+
+#~ msgid "Fibre channel"
+#~ msgstr "Kuitukanava"
+
+#~ msgid "SMBus"
+#~ msgstr "SMBus"
+
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#~ msgid "IPMI interface"
+#~ msgstr "IPMI-rajapinta"
+
+#~ msgid "SERCOS interface"
+#~ msgstr "SERCOS-rajapinta"
+
+#~ msgid "CANbus"
+#~ msgstr "CANbus"
+
+#~ msgid "Unknown serial bus controller"
+#~ msgstr "Tuntematon sarjaväyläohjain"
+
+#~ msgid "IRDA controller"
+#~ msgstr "IRDA-ohjain"
+
+#~ msgid "Consumer IR controller"
+#~ msgstr "Kuluttajan IR-ohjain"
+
+#~ msgid "RF controller"
+#~ msgstr "RF-ohjain"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Broadband"
+#~ msgstr "Laajakaista"
+
+#~ msgid "Ethernet (802.11a - 5 GHz)"
+#~ msgstr "Ethernet (802.11a - 5 GHz)"
+
+#~ msgid "Ethernet (802.11b - 2.4 GHz)"
+#~ msgstr "Ethernet (802.11b - 2.4 GHz)"
+
+#~ msgid "Unknown wireless controller"
+#~ msgstr "Tuntematon langaton ohjain"
+
+#~ msgid "I2O"
+#~ msgstr "I2O"
+
+#~ msgid "Unknown intelligent controller"
+#~ msgstr "Tuntematon älykäs ohjain"
+
+#~ msgid "Satellite TV controller"
+#~ msgstr "Satelliitti-TV-ohjain"
+
+#~ msgid "Satellite audio communication controller"
+#~ msgstr "Satelliitti-ääniviestintäohjain"
+
+#~ msgid "Satellite voice communication controller"
+#~ msgstr "Satelliitti-ääniviestintäohjain"
+
+#~ msgid "Satellite data communication controller"
+#~ msgstr "Satelliitti-dataviestintäohjain"
+
+#~ msgid "Unknown satellite communications controller"
+#~ msgstr "Tuntematon satelliittiviestintäohjain"
+
+#~ msgid "Network and computing encryption device"
+#~ msgstr "Verkko- ja laskentasalauslaite"
+
+#~ msgid "Entertainment encryption device"
+#~ msgstr "Viihdesalauslaite"
+
+#~ msgid "Unknown encryption controller"
+#~ msgstr "Tuntematon salausohjain"
+
+#~ msgid "DPIO module"
+#~ msgstr "DPIO-moduuli"
+
+#~ msgid "Performance counters"
+#~ msgstr "Suorituskykylaskurit"
+
+#~ msgid "Communication synchronizer"
+#~ msgstr "Viestintätahdistin"
+
+#~ msgid "Signal processing management"
+#~ msgstr "Signaaliprosessoinnin hallinta"
+
+#~ msgid "Unknown signal processing controller"
+#~ msgstr "Tuntematon signaalinprosessointiohjain"
+
+#~ msgid "Unknown processing accelerator"
+#~ msgstr "Tuntematon suorituskiihdytin"
+
+#~ msgid "Unknown subdevice class"
+#~ msgstr "Tuntematon alilaiteluokka"
+
+#~ msgid "ISA Compatibility mode-only controller"
+#~ msgstr "Vain ISA-yhteensopivuustila -ohjain"
+
+#~ msgid "PCI native mode-only controller"
+#~ msgstr "Vain natiivi PCI-tila -ohjain"
+
+#~ msgid ""
+#~ "ISA Compatibility mode controller, supports both channels switched to PCI "
+#~ "native mode"
+#~ msgstr ""
+#~ "ISA-yhteensopivuustilaohjain: tukee kumpaakin kanavaa natiivissa PCI-"
+#~ "tilassa"
+
+#~ msgid ""
+#~ "PCI native mode controller, supports both channels switched to ISA "
+#~ "compatibility mode"
+#~ msgstr ""
+#~ "PCI-natiivitilaohjain: tukee kumpaakin kanavaa ISA-yhteensopivuustilassa"
+
+#~ msgid "ISA Compatibility mode-only controller, supports bus mastering"
+#~ msgstr "Vain ISA -yhteensopivuustilaohjain: tukee väylämasterointia"
+
+#~ msgid "PCI native mode-only controller, supports bus mastering"
+#~ msgstr "Vain natiivi PCI-tila -ohjain: tukee väylämasterointia"
+
+#~ msgid ""
+#~ "ISA Compatibility mode controller, supports both channels switched to PCI "
+#~ "native mode, supports bus mastering"
+#~ msgstr ""
+#~ "ISA-yhteensopivuustilaohjain: tukee kumpaakin kanavaa natiivissa PCI-"
+#~ "tilassa ja väylämasterointia"
+
+#~ msgid ""
+#~ "PCI native mode controller, supports both channels switched to ISA "
+#~ "compatibility mode, supports bus mastering"
+#~ msgstr ""
+#~ "PCI-natiivitilaohjain: tukee kumpaakin kanavaa ISA-yhteensopivuustilassa "
+#~ "ja väylämasterointia"
+
+#~ msgid "ADMA single stepping"
+#~ msgstr "Yksittäisaskeltava ADMA"
+
+#~ msgid "ADMA continuous operation"
+#~ msgstr "Jatkuvan toiminnan ADMA"
+
+#~ msgid "Vendor specific"
+#~ msgstr "Toimittajakohtainen"
+
+#~ msgid "AHCI 1.0"
+#~ msgstr "AHCI 1.0"
+
+#~ msgid "Serial Storage Bus"
+#~ msgstr "Sarjatallennusväylä"
+
+#~ msgid "NVMHCI"
+#~ msgstr "NVMHCI"
+
+#~ msgid "NVM Express"
+#~ msgstr "NVM Express"
+
+#~ msgid "VGA controller"
+#~ msgstr "VGA-ohjain"
+
+#~ msgid "8514 controller"
+#~ msgstr "8514-ohjain"
+
+#~ msgid "Normal decode"
+#~ msgstr "Normaali koodin purkaminen"
+
+#~ msgid "Subtractive decode"
+#~ msgstr "Vähentävä koodin purkaminen"
+
+#~ msgid "Transparent mode"
+#~ msgstr "Läpinäkyvä tila"
+
+#~ msgid "Endpoint mode"
+#~ msgstr "Päätepistetila"
+
+#~ msgid "Primary bus towards host CPU"
+#~ msgstr "Ensisijainen väylä kohti isäntäsuoritinta"
+
+#~ msgid "Secondary bus towards host CPU"
+#~ msgstr "Toissijainen väylä kohti isäntäsuoritinta"
+
+#~ msgid "8250"
+#~ msgstr "8250"
+
+#~ msgid "16450"
+#~ msgstr "16450"
+
+#~ msgid "16550"
+#~ msgstr "16550"
+
+#~ msgid "16650"
+#~ msgstr "16650"
+
+#~ msgid "16750"
+#~ msgstr "16750"
+
+#~ msgid "16850"
+#~ msgstr "16850"
+
+#~ msgid "16950"
+#~ msgstr "16950"
+
+#~ msgid "SPP"
+#~ msgstr "SPP"
+
+#~ msgid "BiDir"
+#~ msgstr "BiDir"
+
+#~ msgid "ECP"
+#~ msgstr "ECP"
+
+#~ msgid "IEEE1284"
+#~ msgstr "IEEE1284"
+
+#~ msgid "IEEE1284 Target"
+#~ msgstr "IEEE1284-kohde"
+
+#~ msgid "Generic"
+#~ msgstr "Yleinen"
+
+#~ msgid "Hayes/16450"
+#~ msgstr "Hayes/16450"
+
+#~ msgid "Hayes/16550"
+#~ msgstr "Hayes/16550"
+
+#~ msgid "Hayes/16650"
+#~ msgstr "Hayes/16650"
+
+#~ msgid "Hayes/16750"
+#~ msgstr "Hayes/16750"
+
+#~ msgid "8259"
+#~ msgstr "8259"
+
+#~ msgid "ISA PIC"
+#~ msgstr "ISA PIC"
+
+#~ msgid "EISA PIC"
+#~ msgstr "EISA PIC"
+
+#~ msgid "IO-APIC"
+#~ msgstr "IO-APIC"
+
+#~ msgid "IO(X)-APIC"
+#~ msgstr "IO(X)-APIC"
+
+#~ msgid "8237"
+#~ msgstr "8237"
+
+#~ msgid "ISA DMA"
+#~ msgstr "ISA DMA"
+
+#~ msgid "EISA DMA"
+#~ msgstr "EISA DMA"
+
+#~ msgid "8254"
+#~ msgstr "8254"
+
+#~ msgid "ISA timer"
+#~ msgstr "ISA-ajastin"
+
+#~ msgid "EISA timers"
+#~ msgstr "EISA-ajastimet"
+
+#~ msgid "HPET"
+#~ msgstr "HPET"
+
+#~ msgid "ISA RTC"
+#~ msgstr "ISA RTC"
+
+#~ msgid "Extended"
+#~ msgstr "Laajennettu"
+
+#~ msgid "OHCI"
+#~ msgstr "OHCI"
+
+#~ msgid "UHCI"
+#~ msgstr "UHCI"
+
+#~ msgid "EHCI"
+#~ msgstr "EHCI"
+
+#~ msgid "XHCI"
+#~ msgstr "XHCI"
+
+#~ msgid "Unspecified"
+#~ msgstr "Määrittelemätön"
+
+#~ msgid "USB Device"
+#~ msgstr "USB-laite"
+
+#~ msgid "SMIC"
+#~ msgstr "SMIC"
+
+#~ msgid "Keyboard controller style"
+#~ msgstr "Näppäimistöohjaintyyli"
+
+#~ msgid "Block transfer"
+#~ msgstr "Lohkosiirto"
+
+#~ msgid "Vital product data"
+#~ msgstr "Elintärkeä tuotedata"
+
+#~ msgid "Slot identification"
+#~ msgstr "Korttipaikkatunnistus"
+
+#~ msgid "CompactPCI hot swap"
+#~ msgstr "CompactPCI-lennostavaihto"
+
+#~ msgid "HyperTransport"
+#~ msgstr "HyperTransport"
+
+#~ msgid "Debug port"
+#~ msgstr "Virheenpaikannusportti"
+
+#~ msgid "CompactPCI central resource control"
+#~ msgstr "CompactPCI-keskeinen resurssihallinta"
+
+#~ msgid "PCI hot-plug"
+#~ msgstr "PCI-lennostakytkettävä"
+
+#~ msgid "AGP x8"
+#~ msgstr "AGP x8"
+
+#~ msgid "Secure device"
+#~ msgstr "Turvalaite"
+
+#~ msgid "PCI express"
+#~ msgstr "PCI express"
+
+#~ msgid "MSI-X"
+#~ msgstr "MSI-X"
+
+#~ msgid "PCI Advanced Features"
+#~ msgstr "PCI-lisäominaisuudet"
+
+#~ msgid "Fast"
+#~ msgstr "Nopea"
+
+#~ msgid "Medium"
+#~ msgstr "Keskinopea"
+
+#~ msgid "Slow"
+#~ msgstr "Hidas"
+
+#~ msgid "32 bit"
+#~ msgstr "32-bittinen"
+
+#~ msgid "Below 1M"
+#~ msgstr "Alle 1M"
+
+#~ msgid "64 bit"
+#~ msgstr "64-bittinen"
+
+#~ msgid "Standard"
+#~ msgstr "Standardi"
+
+#~ msgid "CardBus"
+#~ msgstr "CardBus"
+
+#~ msgid "1X"
+#~ msgstr "1X"
+
+#~ msgid "2X"
+#~ msgstr "2X"
+
+#~ msgid "1X & 2X"
+#~ msgstr "1X & 2X"
+
+#~ msgid "4X"
+#~ msgstr "4X"
+
+#~ msgid "1X & 4X"
+#~ msgstr "1X & 4X"
+
+#~ msgid "2X & 4X"
+#~ msgstr "2X & 4X"
+
+#~ msgid "1X & 2X & 4X"
+#~ msgstr "1X & 2X & 4X"
+
+#~ msgid "8X"
+#~ msgstr "8X"
+
+#~ msgid "4X & 8X"
+#~ msgstr "4X & 8X"
+
+#~ msgid "4 ms"
+#~ msgstr "4 ms"
+
+#~ msgid "16 ms"
+#~ msgstr "16 ms"
+
+#~ msgid "64 ms"
+#~ msgstr "64 ms"
+
+#~ msgid "256 ms"
+#~ msgstr "256 ms"
+
+#~ msgid "Not needed"
+#~ msgstr "Ei tarvittu"
+
+#~ msgid "0 (self powered)"
+#~ msgstr "0 (oma virtalähde)"
+
+#~ msgid "55 mA"
+#~ msgstr "55 mA"
+
+#~ msgid "100 mA"
+#~ msgstr "100 mA"
+
+#~ msgid "160 mA"
+#~ msgstr "160 mA"
+
+#~ msgid "220 mA"
+#~ msgstr "220 mA"
+
+#~ msgid "270 mA"
+#~ msgstr "270 mA"
+
+#~ msgid "320 mA"
+#~ msgstr "320 mA"
+
+#~ msgid "375 mA"
+#~ msgstr "375 mA"
+
+#~ msgid "1 vector"
+#~ msgstr "1 vektori"
+
+#~ msgid "2 vectors"
+#~ msgstr "2 vektoria"
+
+#~ msgid "4 vectors"
+#~ msgstr "4 vektoria"
+
+#~ msgid "8 vectors"
+#~ msgstr "8 vektoria"
+
+#~ msgid "16 vectors"
+#~ msgstr "16 vektoria"
+
+#~ msgid "32 vectors"
+#~ msgstr "32 vektoria"
+
+#~ msgid "Serial ATA direct port access"
+#~ msgstr "Sarja-ATA:n suora porttisaanti"
+
+#~ msgid "PICMG 2.14 multi computing"
+#~ msgstr "PICMG 2.14 -monilaskenta"
+
+#~ msgid "GPIB (IEEE 488.1/2) controller"
+#~ msgstr "GPIB (IEEE 488.1/2) -ohjain"
+
+#~ msgid "Smart card"
+#~ msgstr "Älykortti"
+
+#~ msgid "System peripheral"
+#~ msgstr "Järjestelmäoheislaite"
+
+#~ msgid "Management card"
+#~ msgstr "Hallintakortti"
+
+#~ msgid "single DMA"
+#~ msgstr "yksittäis-DMA"
+
+#~ msgid "chained DMA"
+#~ msgstr "ketjutettu DMA"
+
+#~ msgid "VGA compatible"
+#~ msgstr "VGA-yhteensopiva"
+
+#~ msgid "8514 compatible"
+#~ msgstr "8514-yhteensopiva"
+
+#~ msgid "KDE PCI Information Control Module"
+#~ msgstr "KDE PCI-tietomoduuli"

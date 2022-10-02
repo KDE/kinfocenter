@@ -1,0 +1,204 @@
+# translation of kcmnic.po to
+# Version: $Revision: 796230 $
+# Copyright (C) 2002,2003, 2004, 2006, 2007 Free Software Foundation, Inc.
+#
+# Marcin Giedz <mgiedz@elka.pw.edu.pl>, 2002.
+# Mikolaj Machowski <mikmach@wp.pl>, 2004.
+# Krzysztof Lichota <lichota@mimuw.edu.pl>, 2006.
+# Marta Rybczyńska <kde-i18n@rybczynska.net>, 2007.
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2011, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmnic\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-14 00:46+0000\n"
+"PO-Revision-Date: 2021-01-23 06:48+0100\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
+"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.12.1\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Marcin Giedz"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "mgiedz@elka.pw.edu.pl"
+
+#: networkmodel.cpp:159
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Point to Point"
+msgstr "Punkt-do-punktu"
+
+#: networkmodel.cpp:166
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Broadcast"
+msgstr "Rozgłoszeniowa"
+
+#: networkmodel.cpp:173
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Multicast"
+msgstr "Z rozsyłaniem grupowym"
+
+#: networkmodel.cpp:180
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Loopback"
+msgstr "Pseudosieć"
+
+#: nic.cpp:21
+#, kde-format
+msgid "kcm_nic"
+msgstr "kcm_nic"
+
+#: nic.cpp:22
+#, kde-format
+msgctxt "@title:window"
+msgid "Network Interfaces"
+msgstr "Interfejsy sieciowe"
+
+#: nic.cpp:26
+#, kde-format
+msgctxt "@info"
+msgid "(c) 2001 - 2002 Alexander Neundorf"
+msgstr "(c) 2001 - 2002 Alexander Neundorf"
+
+#: nic.cpp:28
+#, kde-format
+msgctxt "@info:credit"
+msgid "Alexander Neundorf"
+msgstr "Alexander Neundorf"
+
+#: nic.cpp:28
+#, kde-format
+msgctxt "@info:credit"
+msgid "creator"
+msgstr "twórca"
+
+#: nic.cpp:29
+#, kde-format
+msgctxt "@info:credit"
+msgid "Carl Schwan"
+msgstr "Carl Schwan"
+
+#: nic.cpp:29
+#, kde-format
+msgctxt "@info:credit"
+msgid "developer"
+msgstr "programista"
+
+#: package/contents/ui/main.qml:15
+#, kde-format
+msgid "Network Interfaces"
+msgstr "Interfejsy sieciowe"
+
+#: package/contents/ui/main.qml:30
+#, kde-format
+msgctxt "@label"
+msgid "Name:"
+msgstr "Nazwa:"
+
+#: package/contents/ui/main.qml:34
+#, kde-format
+msgctxt "@label"
+msgid "Address:"
+msgstr "Adres:"
+
+#: package/contents/ui/main.qml:38
+#, kde-format
+msgctxt "@label"
+msgid "Network Mask:"
+msgstr "Maska sieci:"
+
+#: package/contents/ui/main.qml:42
+#, kde-format
+msgctxt "@label"
+msgid "Type:"
+msgstr "Rodzaj:"
+
+#: package/contents/ui/main.qml:46
+#, kde-format
+msgctxt "@label"
+msgid "Hardware Address:"
+msgstr "Adres sprzętu:"
+
+#: package/contents/ui/main.qml:51
+#, kde-format
+msgctxt "@label"
+msgid "State:"
+msgstr "Stan:"
+
+#: package/contents/ui/main.qml:59
+#, kde-format
+msgctxt "State of network card is connected"
+msgid "Up"
+msgstr "Połączona"
+
+#: package/contents/ui/main.qml:60
+#, kde-format
+msgctxt "State of network card is disconnected"
+msgid "Down"
+msgstr "Odłączona"
+
+#: package/contents/ui/main.qml:76
+#, kde-format
+msgctxt "@action:button"
+msgid "Refresh"
+msgstr "Odśwież"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Broadcast"
+#~ msgstr "Rozgłoszeniowy"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Point to Point"
+#~ msgstr "Punkt-do-punktu"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Multicast"
+#~ msgstr "Z rozsyłaniem grupowym"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Loopback"
+#~ msgstr "Loopback"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Unknown"
+#~ msgstr "Nieznany"
+
+#~ msgctxt "Unknown network mask"
+#~ msgid "Unknown"
+#~ msgstr "Nieznana"
+
+#~ msgctxt "Unknown HWaddr"
+#~ msgid "Unknown"
+#~ msgstr "Nieznany"
+
+#, fuzzy
+#~| msgid "Broadcast"
+#~ msgctxt "@item:intable Netork type"
+#~ msgid "Broadcast"
+#~ msgstr "Rozgłoszeniowy"
+
+#~ msgid "HWAddr"
+#~ msgstr "Adres sprzętowy"
+
+#~ msgid "&Update"
+#~ msgstr "&Uaktualnij"
+
+#~ msgid "kcminfo"
+#~ msgstr "kcminfo"
+
+#~ msgid "System Information Control Module"
+#~ msgstr "Moduł kontroli informacji o systemie"

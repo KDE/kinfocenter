@@ -1,0 +1,1340 @@
+# Translation of kcm_pci to Croatian
+#
+# Andrej Dundovic <adundovi@gmail.com>, 2009, 2010.
+# DoDo <DoDoEntertainment@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_pci\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
+"PO-Revision-Date: 2010-01-06 01:58+0100\n"
+"Last-Translator: Andrej Dundovic <adundovi@gmail.com>\n"
+"Language-Team: Croatian <kde-croatia-list@lists.sourceforge.net>\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Žarko Pintar, Andrej Dundović"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "zarko.pintar@gmail.com, adundovi@gmail.com"
+
+#: main.cpp:26
+#, fuzzy, kde-format
+#| msgid "PCI-X"
+msgctxt "@label kcm name"
+msgid "PCI"
+msgstr "PCI-X"
+
+#: main.cpp:27
+#, kde-format
+msgid "Harald Sitter"
+msgstr ""
+
+#: package/contents/ui/main.qml:14
+#, fuzzy
+#| msgid "Information"
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "Informacije"
+
+#~ msgid "kcm_pci"
+#~ msgstr "kcm_pci"
+
+#, fuzzy
+#~| msgid "Device"
+#~ msgid "PCI Devices"
+#~ msgstr "Uređaj"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr "© 2008 Nicolas Ternisien (c) 1998 – 2002 Helge Deller"
+
+#~ msgid "Nicolas Ternisien"
+#~ msgstr "Nicolas Ternisien"
+
+#~ msgid "Helge Deller"
+#~ msgstr "Helge Deller"
+
+#~ msgid "This list displays PCI information."
+#~ msgstr "Ovo lista prikazuje PCI informacije."
+
+#~ msgid ""
+#~ "This display shows information about your computer's PCI slots and the "
+#~ "related connected devices."
+#~ msgstr ""
+#~ "Ovaj ekran pokazuje informacije o PCI utorima vašeg računala i vezanim "
+#~ "priključenim uređajima."
+
+#~ msgid "Device Class"
+#~ msgstr "Klasa uređaja"
+
+#~ msgid "Device Subclass"
+#~ msgstr "Podklasa uređaja"
+
+#~ msgid "Device Programming Interface"
+#~ msgstr "Sučelje za programiranje uređaja"
+
+#~ msgid "Master IDE Device"
+#~ msgstr "Master IDE uređaj"
+
+#~ msgid "Secondary programmable indicator"
+#~ msgstr "Sekundarni programabilan indikator"
+
+#~ msgid "Secondary operating mode"
+#~ msgstr "Sekunardni operativni način"
+
+#~ msgid "Primary programmable indicator"
+#~ msgstr "Primarni programabilan indikator"
+
+#~ msgid "Primary operating mode"
+#~ msgstr "Primarni operativni način"
+
+#~ msgid "Vendor"
+#~ msgstr "Proizvođač"
+
+#~ msgid "Device"
+#~ msgstr "Uređaj"
+
+#~ msgid "Subsystem"
+#~ msgstr "Podsustav"
+
+#~ msgid " - device:"
+#~ msgstr "- uređaj:"
+
+#~ msgid "Interrupt"
+#~ msgstr "Prekid"
+
+#~ msgid "IRQ"
+#~ msgstr "IRQ"
+
+#~ msgid "Pin"
+#~ msgstr "Pin"
+
+#~ msgid "Control"
+#~ msgstr "Upravljanje"
+
+#~ msgid "Response in I/O space"
+#~ msgstr "Odgovor u I/O prostoru"
+
+#~ msgid "Response in memory space"
+#~ msgstr "Odgovor u memorijskom prostoru"
+
+#~ msgid "Bus mastering"
+#~ msgstr "Upravljanje sabirnicom"
+
+#~ msgid "Response to special cycles"
+#~ msgstr "Odgovor prema posebnim ciklusima"
+
+#~ msgid "Memory write and invalidate"
+#~ msgstr "Memorijsko pisanje i poništavanje (Memory write and invalidate)"
+
+#~ msgid "Palette snooping"
+#~ msgstr "Palette snooping"
+
+#~ msgid "Parity checking"
+#~ msgstr "Provjera pariteta"
+
+#~ msgid "Address/data stepping"
+#~ msgstr "Address/data stepping"
+
+#~ msgid "System error"
+#~ msgstr "Greška sustava"
+
+#~ msgid "Back-to-back writes"
+#~ msgstr "Back-to-back writes"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Interrupt status"
+#~ msgstr "Status prekida"
+
+#~ msgid "Capability list"
+#~ msgstr "Lista kompatibilnosti"
+
+#~ msgid "66 MHz PCI 2.1 bus"
+#~ msgstr "66 MHz PCI 2.1 sabirnica"
+
+#~ msgid "User-definable features"
+#~ msgstr "Mogućnosti koje korisnik može definirati"
+
+#~ msgid "Accept fast back-to-back"
+#~ msgstr "Prihvati \"fast back-to-back\""
+
+#~ msgid "Data parity error"
+#~ msgstr "Greška podatkovnog pariteta"
+
+#~ msgid "Device selection timing"
+#~ msgstr "Odabrano mjerenje vremena uređaja"
+
+#~ msgid "Signaled target abort"
+#~ msgstr "Javljen ciljani prekid"
+
+#~ msgid "Received target abort"
+#~ msgstr "Primljen ciljani prekid"
+
+#~ msgid "Received master abort"
+#~ msgstr "Primljen glavni prekid"
+
+#~ msgid "Signaled system error"
+#~ msgstr "Javljena pogreška sustava"
+
+#~ msgid "Parity error"
+#~ msgstr "Greška pariteta"
+
+#~ msgid "Latency"
+#~ msgstr "Latencija"
+
+#~ msgid "MIN_GNT"
+#~ msgstr "MIN_GNT"
+
+#~ msgid "No major requirements (0x00)"
+#~ msgstr "Nema glavnih zahtjeva (0x00)"
+
+#~ msgid "MAX_LAT"
+#~ msgstr "MAX_LAT"
+
+#~ msgid "Header"
+#~ msgstr "Zaglavlje"
+
+#~ msgid "Type"
+#~ msgstr "Tip"
+
+#~ msgid "Multifunctional"
+#~ msgstr "Višefunkcionalno"
+
+#~ msgid "Build-in self test"
+#~ msgstr "Ugrađeni vlastiti test"
+
+#~ msgid "BIST Capable"
+#~ msgstr "BIST sposoban"
+
+#~ msgid "BIST Start"
+#~ msgstr "BIST početak"
+
+#~ msgid "Completion code"
+#~ msgstr "Završeni kod"
+
+#~ msgid "Size"
+#~ msgstr "Veličina"
+
+#~ msgid "Address mappings"
+#~ msgstr "Pridruživanje adrese"
+
+#~ msgid "Mapping %1"
+#~ msgstr "Pridruživanje %1"
+
+#~ msgid "Space"
+#~ msgstr "Razmak"
+
+#~ msgid "I/O"
+#~ msgstr "I/O"
+
+#~ msgid "Memory"
+#~ msgstr "Memorija"
+
+#~ msgid "Prefetchable"
+#~ msgstr "Dohvativo"
+
+#~ msgid "Address"
+#~ msgstr "Adresa"
+
+#, fuzzy
+#~| msgid "Unassigned"
+#~ msgctxt "unassigned address"
+#~ msgid "Unassigned"
+#~ msgstr "Nepotpisan"
+
+#, fuzzy
+#~| msgid "Unassigned"
+#~ msgctxt "unassigned size"
+#~ msgid "Unassigned"
+#~ msgstr "Nepotpisan"
+
+#~ msgid "Bus"
+#~ msgstr "Sabirnica"
+
+#~ msgid "Primary bus number"
+#~ msgstr "Primarni broj sabirnice"
+
+#~ msgid "Secondary bus number"
+#~ msgstr "Sekundarni broj sabirnice"
+
+#~ msgid "Subordinate bus number"
+#~ msgstr "Podređen broj sabirnice"
+
+#~ msgid "Secondary latency timer"
+#~ msgstr "Sekundarni mjerač latencije"
+
+#~ msgid "CardBus number"
+#~ msgstr "CardBus broj"
+
+#~ msgid "CardBus latency timer"
+#~ msgstr "CardBus mjerač latencije"
+
+#~ msgid "Secondary status"
+#~ msgstr "Sekundarni status"
+
+#~ msgid "I/O behind bridge"
+#~ msgstr "I/O iza mosta"
+
+#~ msgid "32-bit"
+#~ msgstr "32-bitni"
+
+#~ msgid "Base"
+#~ msgstr "Baza"
+
+#~ msgid "Limit"
+#~ msgstr "Ograničenje"
+
+#~ msgid "Memory behind bridge"
+#~ msgstr "Memorija iza mosta"
+
+#~ msgid "Prefetchable memory behind bridge"
+#~ msgstr "Dohvatljiva memorija iza mosta"
+
+#~ msgid "64-bit"
+#~ msgstr "64-bitni"
+
+#~ msgid "Bridge control"
+#~ msgstr "Upravljanje mostom"
+
+#~ msgid "Secondary parity checking"
+#~ msgstr "Sekundarna provjera pariteta"
+
+#~ msgid "Secondary system error"
+#~ msgstr "Sekundarna greška sustava"
+
+#~ msgid "ISA ports forwarding"
+#~ msgstr "Prosljeđivanje ISA portova"
+
+#~ msgid "VGA forwarding"
+#~ msgstr "VGA prosljeđivanje"
+
+#~ msgid "Master abort"
+#~ msgstr "Glavni prekid"
+
+#~ msgid "Secondary bus reset"
+#~ msgstr "Sekundarno poništavanje sabirnice"
+
+#~ msgid "Secondary back-to-back writes"
+#~ msgstr "Sekundarni \"back-to-back writes\""
+
+#~ msgid "Primary discard timer counts"
+#~ msgstr "Broj primarnih odbačenih otkucaja sata"
+
+#~ msgid "2e10 PCI clocks"
+#~ msgstr "2e10 PCI taktovi"
+
+#~ msgid "2e15 PCI clocks"
+#~ msgstr "2e15 PCI taktovi"
+
+#~ msgid "Secondary discard timer counts"
+#~ msgstr "Broj sekundarnih odbačenih otkucaja sata"
+
+#~ msgid "Discard timer error"
+#~ msgstr "Odbaci mjeračku pogrešku"
+
+#~ msgid "Discard timer system error"
+#~ msgstr "Odbaci mjeračku pogrešku sustava"
+
+#~ msgid "Expansion ROM"
+#~ msgstr "Proširujući ROM"
+
+#~ msgid "Memory windows"
+#~ msgstr "Memorijski prozori"
+
+#~ msgid "Window %1"
+#~ msgstr "Prozor %1"
+
+#~ msgid "I/O windows"
+#~ msgstr "I/O prozori"
+
+#~ msgid "16-bit"
+#~ msgstr "16-bitni"
+
+#~ msgid "16-bit legacy interface ports"
+#~ msgstr "16-bitni stari sučeljski portovi"
+
+#~ msgid "CardBus control"
+#~ msgstr "Upravljanje CardBusom"
+
+#~ msgid "Interrupts for 16-bit cards"
+#~ msgstr "Prekidi za 16-bitne kartice"
+
+#~ msgid "Window 0 prefetchable memory"
+#~ msgstr "Preddohvatna memorija prozora 0"
+
+#~ msgid "Window 1 prefetchable memory"
+#~ msgstr "Preddohvatna memorija prozora 1"
+
+#~ msgid "Post writes"
+#~ msgstr "Naknadno pisanje"
+
+#~ msgid "Raw PCI config space"
+#~ msgstr "Sirov PCI konfiguracijski prostor"
+
+#~ msgid "Capabilities"
+#~ msgstr "Mogućnosti"
+
+#~ msgid "Version"
+#~ msgstr "Inačica"
+
+#~ msgid "Clock required for PME generation"
+#~ msgstr "Takt potreban za generaciju PME-ova"
+
+#~ msgid "Device-specific initialization required"
+#~ msgstr "Potrebna inicijalizacija određena uređajem"
+
+#~ msgid "Maximum auxiliary current required in D3 cold"
+#~ msgstr "Maksimalna pomoćna struja potreba u hladnom D3"
+
+#~ msgid "D1 support"
+#~ msgstr "D1 podrška"
+
+#~ msgid "D2 support"
+#~ msgstr "D2 podrška"
+
+#~ msgid "Power management events"
+#~ msgstr "Događaji kod upravljanja napajanjem"
+
+#~ msgid "D0"
+#~ msgstr "D0"
+
+#~ msgid "D1"
+#~ msgstr "D1"
+
+#~ msgid "D2"
+#~ msgstr "D2"
+
+#~ msgid "D3 hot"
+#~ msgstr "D3 toplo"
+
+#~ msgid "D3 cold"
+#~ msgstr "D3 hladno"
+
+#~ msgid "Power state"
+#~ msgstr "Stanje napajanja"
+
+#~ msgid "Power management"
+#~ msgstr "Upravljanje napajanjem"
+
+#~ msgid "Data select"
+#~ msgstr "Odabiranje podataka"
+
+#~ msgid "Data scale"
+#~ msgstr "Skaliranje podataka"
+
+#~ msgid "Power management status"
+#~ msgstr "Stanje upravljanja napajanjem"
+
+#~ msgid "Bridge status"
+#~ msgstr "Stanje mosta"
+
+#~ msgid "Secondary bus state in D3 hot"
+#~ msgstr "Stanje sekundarne sabirnice u vrućem D3"
+
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgid "Secondary bus power & clock control"
+#~ msgstr "Sekundardno napajanje sabirnice & kontrola takta"
+
+#~ msgid "Data"
+#~ msgstr "Podaci"
+
+#~ msgid "Revision"
+#~ msgstr "Revizija"
+
+#~ msgid "Rate"
+#~ msgstr "Stopa"
+
+#~ msgid "AGP 3.0 mode"
+#~ msgstr "AGP 3.0 način"
+
+#~ msgid "Fast Writes"
+#~ msgstr "Brzo pisanje"
+
+#~ msgid "Address over 4 GiB"
+#~ msgstr "Adresa preko 4 GiB"
+
+#~ msgid "Translation of host processor access"
+#~ msgstr "Pristup prijevodu glavnog procesora"
+
+#~ msgid "64-bit GART"
+#~ msgstr "64-bitni GART"
+
+#~ msgid "Cache Coherency"
+#~ msgstr "Koherentnost predmemorije"
+
+#~ msgid "Side-band addressing"
+#~ msgstr "Bočno-pojasno adresiranje"
+
+#~ msgid "Calibrating cycle"
+#~ msgstr "Kalibracijski ciklus"
+
+#~ msgid "Optimum asynchronous request size"
+#~ msgstr "Optimalni asinkroni zahtjev veličine"
+
+#~ msgid "Isochronous transactions"
+#~ msgstr "Istovremen prijenos"
+
+#~ msgid "Maximum number of AGP command"
+#~ msgstr "Maksimalan broj AGP naredbi"
+
+#~ msgid "Configuration"
+#~ msgstr "Konfiguracija"
+
+#~ msgid "AGP"
+#~ msgstr "AGP"
+
+#~ msgid "Data address"
+#~ msgstr "Podatkovna adresa"
+
+#~ msgid "Transfer completed"
+#~ msgstr "Prijenos je dovršen"
+
+#~ msgid "Message control"
+#~ msgstr "Upravljanje porukama"
+
+#~ msgid "Message signaled interrupts"
+#~ msgstr "Porukom javljen prekid"
+
+#~ msgid "Multiple message capable"
+#~ msgstr "Sposoban za višestruke poruke"
+
+#~ msgid "Multiple message enable"
+#~ msgstr "Uključene višestruke poruke"
+
+#~ msgid "64-bit address"
+#~ msgstr "64-bitna adresa"
+
+#~ msgid "Per vector masking"
+#~ msgstr "Maskiranje po vektoru"
+
+#~ msgid "Mask"
+#~ msgstr "Maska"
+
+#~ msgid "Pending"
+#~ msgstr "U toku"
+
+#~ msgid "Length"
+#~ msgstr "Duljina"
+
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "Ništa"
+
+#~ msgid "Next"
+#~ msgstr "Sljedeći"
+
+#~ msgid "0x00 (None)"
+#~ msgstr "0x00 (Ništa)"
+
+#~ msgid "Root only"
+#~ msgstr "Samo root"
+
+#~ msgid "Value"
+#~ msgstr "Vrijednost"
+
+#~ msgid "Cache line size"
+#~ msgstr "Privremeno spremi veličinu linije"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Enabled"
+#~ msgstr "Omogućeno"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Disabled"
+#~ msgstr "Onemogućeno"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Yes"
+#~ msgstr "Da"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "Ne"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Unknown"
+#~ msgstr "Nepoznato"
+
+#~ msgid "Unclassified device"
+#~ msgstr "Neklasificiran uređaj"
+
+#~ msgid "Mass storage controller"
+#~ msgstr "Upravljač masovne pohrane"
+
+#~ msgid "Network controller"
+#~ msgstr "Mrežni upravljač"
+
+#~ msgid "Display controller"
+#~ msgstr "Upravljač zaslona"
+
+#~ msgid "Multimedia controller"
+#~ msgstr "Multimedijalni upravljač"
+
+#~ msgid "Memory controller"
+#~ msgstr "Memorijski upravljač"
+
+#~ msgid "Bridge"
+#~ msgstr "Most"
+
+#~ msgid "Communication controller"
+#~ msgstr "Komunikacijski upravljač"
+
+#~ msgid "Generic system peripheral"
+#~ msgstr "Općenite vanjske jedinice sustava"
+
+#~ msgid "Input device controller"
+#~ msgstr "Upravljač ulaznih uređaja"
+
+#~ msgid "Docking station"
+#~ msgstr "Priključna stanica"
+
+#~ msgid "Processor"
+#~ msgstr "Procesor"
+
+#~ msgid "Serial bus controller"
+#~ msgstr "Upravljač serijske sabirnice"
+
+#~ msgid "Wireless controller"
+#~ msgstr "Bežični upravljač"
+
+#~ msgid "Intelligent controller"
+#~ msgstr "Pametan upravljač"
+
+#~ msgid "Satellite communications controller"
+#~ msgstr "Satelitski komunikacijski upravljač"
+
+#~ msgid "Encryption controller"
+#~ msgstr "Upravljač enkripcije"
+
+#~ msgid "Signal processing controller"
+#~ msgstr "Upravljač obrađivača signala"
+
+#, fuzzy
+#~| msgid "Co-processor"
+#~ msgid "Coprocessor"
+#~ msgstr "Koprocesor"
+
+#, fuzzy
+#~| msgid "Unassigned"
+#~ msgid "Unassigned class"
+#~ msgstr "Nepotpisan"
+
+#~ msgid "Unknown device class"
+#~ msgstr "Nepoznata klasa uređaja"
+
+#~ msgid "Non-VGA unclassified device"
+#~ msgstr "Neklasificiran ne-VGA uređaj"
+
+#~ msgid "VGA unclassified device"
+#~ msgstr "Neklasificiran VGA uređaj"
+
+#~ msgid "Unknown unclassified device"
+#~ msgstr "Nepoznat neklasificiran uređaj"
+
+#~ msgid "SCSI storage controller"
+#~ msgstr "SCSI upravljač pohrane"
+
+#~ msgid "IDE controller"
+#~ msgstr "IDE upravljač"
+
+#~ msgid "Floppy disk controller"
+#~ msgstr "Upravljač floppy diskom"
+
+#~ msgid "IPI bus controller"
+#~ msgstr "Upravljač IPI sabirnice"
+
+#~ msgid "RAID bus controller"
+#~ msgstr "Upravljač RAID sabirnice"
+
+#~ msgid "ATA controller"
+#~ msgstr "ATA upravljač"
+
+#, fuzzy
+#~| msgid "ATA controller"
+#~ msgid "SATA controller"
+#~ msgstr "ATA upravljač"
+
+#, fuzzy
+#~| msgid "Serial controller"
+#~ msgid "Serial Attached SCSI controller"
+#~ msgstr "Serijski upravljač"
+
+#, fuzzy
+#~| msgid "Unknown memory controller"
+#~ msgid "Non-Volatile memory controller"
+#~ msgstr "Nepoznati memorijski upravljač"
+
+#~ msgid "Unknown storage controller"
+#~ msgstr "Nepoznati upravljač pohrane"
+
+#~ msgid "Ethernet controller"
+#~ msgstr "Ethernet uređaj"
+
+#~ msgid "Token ring network controller"
+#~ msgstr "Upravljač prstenate mreže s značkom"
+
+#~ msgid "FDDI network controller"
+#~ msgstr "FDDI mrežni upravljač"
+
+#~ msgid "ATM network controller"
+#~ msgstr "ATM mrežni upravljač"
+
+#~ msgid "ISDN controller"
+#~ msgstr "ISDN upravljač"
+
+#~ msgid "WorldFip controller"
+#~ msgstr "WorldFip upravljač"
+
+#, fuzzy
+#~| msgid "IDE controller"
+#~ msgid "PICMG controller"
+#~ msgstr "IDE upravljač"
+
+#, fuzzy
+#~| msgid "Keyboard controller"
+#~ msgid "Infiniband controller"
+#~ msgstr "Upravljač tipkovnice"
+
+#, fuzzy
+#~| msgid "RF controller"
+#~ msgid "Fabric controller"
+#~ msgstr "RF upravljač"
+
+#~ msgid "Unknown network controller"
+#~ msgstr "Nepoznati mrežni upravljač"
+
+#~ msgid "VGA compatible controller"
+#~ msgstr "VGA kompatibilni upravljač"
+
+#~ msgid "XGA compatible controller"
+#~ msgstr "XGA kompatibilni upravljač"
+
+#~ msgid "3D controller"
+#~ msgstr "3D upravljač"
+
+#~ msgid "Unknown display controller"
+#~ msgstr "Nepoznati upravljač zaslona"
+
+#~ msgid "Multimedia video controller"
+#~ msgstr "Nepoznati video upravljač"
+
+#~ msgid "Multimedia audio controller"
+#~ msgstr "Multimedijalni tonski upravljač"
+
+#~ msgid "Computer telephony device"
+#~ msgstr "Uređaj računalne telefonije"
+
+#, fuzzy
+#~| msgid "Secure device"
+#~ msgid "Audio device"
+#~ msgstr "Sigurnosni uređaj"
+
+#~ msgid "Unknown multimedia controller"
+#~ msgstr "Nepoznati multimedijalni upravljač"
+
+#~ msgid "RAM memory"
+#~ msgstr "RAM memorija"
+
+#~ msgid "FLASH memory"
+#~ msgstr "FLASH memorija"
+
+#~ msgid "Unknown memory controller"
+#~ msgstr "Nepoznati memorijski upravljač"
+
+#~ msgid "Host bridge"
+#~ msgstr "Host most"
+
+#~ msgid "ISA bridge"
+#~ msgstr "ISA most"
+
+#~ msgid "EISA bridge"
+#~ msgstr "EISA most"
+
+#~ msgid "MicroChannel bridge"
+#~ msgstr "MicroChannel most"
+
+#~ msgid "PCI bridge"
+#~ msgstr "PCI most"
+
+#~ msgid "PCMCIA bridge"
+#~ msgstr "PCMCIA most"
+
+#~ msgid "NuBus bridge"
+#~ msgstr "NuBus most"
+
+#~ msgid "CardBus bridge"
+#~ msgstr "CardBus most"
+
+#~ msgid "RACEway bridge"
+#~ msgstr "RACEway most"
+
+#~ msgid "Semi-transparent PCI-to-PCI bridge"
+#~ msgstr "Polutransparentan most s PCI na PCI"
+
+#~ msgid "InfiniBand to PCI host bridge"
+#~ msgstr "Most od InfiniBand do PCI hosta"
+
+#~ msgid "Unknown bridge"
+#~ msgstr "Nepoznati most"
+
+#~ msgid "Serial controller"
+#~ msgstr "Serijski upravljač"
+
+#~ msgid "Parallel controller"
+#~ msgstr "Paralelni upravljač"
+
+#~ msgid "Multiport serial controller"
+#~ msgstr "Višeportni serijski upravljač"
+
+#~ msgid "Modem"
+#~ msgstr "Modem"
+
+#, fuzzy
+#~| msgid "USB controller"
+#~ msgid "GPIB controller"
+#~ msgstr "USB upravljač"
+
+#, fuzzy
+#~| msgid "Scanner controller"
+#~ msgid "Smart card controller"
+#~ msgstr "Upravljač skenera"
+
+#~ msgid "Unknown communication controller"
+#~ msgstr "Nepoznati komunikacijski upravljač"
+
+#~ msgid "PIC"
+#~ msgstr "PIC"
+
+#~ msgid "DMA controller"
+#~ msgstr "DMA upravljač"
+
+#~ msgid "Timer"
+#~ msgstr "Mjerač vremena"
+
+#~ msgid "RTC"
+#~ msgstr "RTC"
+
+#~ msgid "PCI Hot-plug controller"
+#~ msgstr "PCI Hot-plug upravljač"
+
+#, fuzzy
+#~| msgid "ISDN controller"
+#~ msgid "SD Host controller"
+#~ msgstr "ISDN upravljač"
+
+#~ msgid "Unknown system peripheral"
+#~ msgstr "Nepoznate vanjske jedinice sustava"
+
+#~ msgid "Keyboard controller"
+#~ msgstr "Upravljač tipkovnice"
+
+#~ msgid "Digitizer Pen"
+#~ msgstr "Digitalna olovka"
+
+#~ msgid "Mouse controller"
+#~ msgstr "Upravljač miša"
+
+#~ msgid "Scanner controller"
+#~ msgstr "Upravljač skenera"
+
+#~ msgid "Gameport controller"
+#~ msgstr "Upravljač igračim portovima"
+
+#~ msgid "Unknown input device controller"
+#~ msgstr "Nepoznati upravljač ulaznih uređaja"
+
+#~ msgid "Generic docking station"
+#~ msgstr "Generička priključna stanica"
+
+#~ msgid "Unknown docking station"
+#~ msgstr "Nepoznata priključna stanica"
+
+#~ msgid "386"
+#~ msgstr "386"
+
+#~ msgid "486"
+#~ msgstr "486"
+
+#~ msgid "Pentium"
+#~ msgstr "Pentium"
+
+#~ msgid "Alpha"
+#~ msgstr "Alpha"
+
+#~ msgid "Power PC"
+#~ msgstr "Power PC"
+
+#~ msgid "MIPS"
+#~ msgstr "MIPS"
+
+#~ msgid "Co-processor"
+#~ msgstr "Koprocesor"
+
+#~ msgid "Unknown processor"
+#~ msgstr "Nepoznati procesor"
+
+#~ msgid "FireWire (IEEE 1394)"
+#~ msgstr "FireWire (IEEE 1394)"
+
+#~ msgid "ACCESS bus"
+#~ msgstr "ACCESS sabirnica"
+
+#~ msgid "SSA"
+#~ msgstr "SSA"
+
+#~ msgid "USB controller"
+#~ msgstr "USB upravljač"
+
+#~ msgid "Fibre channel"
+#~ msgstr "Vlaknasti kanal"
+
+#~ msgid "SMBus"
+#~ msgstr "SMBus"
+
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#~ msgid "IPMI interface"
+#~ msgstr "IPMI sučelje"
+
+#~ msgid "SERCOS interface"
+#~ msgstr "SERCOS sučelje"
+
+#~ msgid "CANbus"
+#~ msgstr "CANbus"
+
+#~ msgid "Unknown serial bus controller"
+#~ msgstr "Nepoznat upravljač serijske sabirnice"
+
+#~ msgid "IRDA controller"
+#~ msgstr "IRDA upravljač"
+
+#~ msgid "Consumer IR controller"
+#~ msgstr "Korisnički IR uređaj"
+
+#~ msgid "RF controller"
+#~ msgstr "RF upravljač"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Broadband"
+#~ msgstr "Širokopojasni"
+
+#~ msgid "Ethernet (802.11a - 5 GHz)"
+#~ msgstr "Ethernet (802.11a – 5 GHz)"
+
+#~ msgid "Ethernet (802.11b - 2.4 GHz)"
+#~ msgstr "Ethernet (802.11b – 2.4 GHz)"
+
+#~ msgid "Unknown wireless controller"
+#~ msgstr "Nepoznati bežični upravljač"
+
+#~ msgid "I2O"
+#~ msgstr "I2O"
+
+#~ msgid "Unknown intelligent controller"
+#~ msgstr "Nepoznati pametni upravljač"
+
+#~ msgid "Satellite TV controller"
+#~ msgstr "Satelitski TV upravljač"
+
+#~ msgid "Satellite audio communication controller"
+#~ msgstr "Satelitski, audio komunikacijski upravljač"
+
+#~ msgid "Satellite voice communication controller"
+#~ msgstr "Satelitski, glasovni komunikacijski upravljač"
+
+#~ msgid "Satellite data communication controller"
+#~ msgstr "Satelitski, podatkovni komunikacijski upravljač"
+
+#~ msgid "Unknown satellite communications controller"
+#~ msgstr "Nepoznati, satelitski komunikacijski upravljač"
+
+#~ msgid "Network and computing encryption device"
+#~ msgstr "Mrežni i računski enkripcijski uređaj"
+
+#~ msgid "Entertainment encryption device"
+#~ msgstr "Zabavni enkripcijski uređaj"
+
+#~ msgid "Unknown encryption controller"
+#~ msgstr "Nepoznati enkripcijski upravljač"
+
+#~ msgid "DPIO module"
+#~ msgstr "DPIO modul"
+
+#~ msgid "Performance counters"
+#~ msgstr "Brojač performansi"
+
+#~ msgid "Communication synchronizer"
+#~ msgstr "Komunikacijski sinkronizator"
+
+#, fuzzy
+#~| msgid "Signal processing controller"
+#~ msgid "Signal processing management"
+#~ msgstr "Upravljač obrađivača signala"
+
+#~ msgid "Unknown signal processing controller"
+#~ msgstr "Nepoznati upravljač obrađivača signala"
+
+#, fuzzy
+#~| msgid "Unknown processor"
+#~ msgid "Unknown processing accelerator"
+#~ msgstr "Nepoznati procesor"
+
+#~ msgid "Unknown subdevice class"
+#~ msgstr "Nepoznata klasa poduređaja"
+
+#, fuzzy
+#~| msgid "VGA compatible controller"
+#~ msgid "ISA Compatibility mode-only controller"
+#~ msgstr "VGA kompatibilni upravljač"
+
+#, fuzzy
+#~| msgid "PCI Hot-plug controller"
+#~ msgid "PCI native mode-only controller"
+#~ msgstr "PCI Hot-plug upravljač"
+
+#~ msgid "Vendor specific"
+#~ msgstr "Svojstveno proizvođaču"
+
+#, fuzzy
+#~| msgid "PCI express"
+#~ msgid "NVM Express"
+#~ msgstr "PCI express"
+
+#, fuzzy
+#~| msgid "ATA controller"
+#~ msgid "VGA controller"
+#~ msgstr "ATA upravljač"
+
+#, fuzzy
+#~| msgid "3D controller"
+#~ msgid "8514 controller"
+#~ msgstr "3D upravljač"
+
+#~ msgid "Normal decode"
+#~ msgstr "Normalno dekodiranje"
+
+#~ msgid "Subtractive decode"
+#~ msgstr "Odbijeno dekodiranje"
+
+#~ msgid "Transparent mode"
+#~ msgstr "Transparentan način"
+
+#~ msgid "Endpoint mode"
+#~ msgstr "\"Krajnja točka\" način"
+
+#~ msgid "Primary bus towards host CPU"
+#~ msgstr "Primarna sabirnica prema CPU-u domaćina"
+
+#~ msgid "Secondary bus towards host CPU"
+#~ msgstr "Sekundarna sabirnica prema CPU-u domaćina"
+
+#~ msgid "8250"
+#~ msgstr "8250"
+
+#~ msgid "16450"
+#~ msgstr "16450"
+
+#~ msgid "16550"
+#~ msgstr "16550"
+
+#~ msgid "16650"
+#~ msgstr "16650"
+
+#~ msgid "16750"
+#~ msgstr "16750"
+
+#~ msgid "16850"
+#~ msgstr "16850"
+
+#~ msgid "16950"
+#~ msgstr "16950"
+
+#~ msgid "SPP"
+#~ msgstr "SPP"
+
+#~ msgid "BiDir"
+#~ msgstr "BiDir"
+
+#~ msgid "ECP"
+#~ msgstr "ECP"
+
+#~ msgid "IEEE1284"
+#~ msgstr "IEEE1284"
+
+#~ msgid "IEEE1284 Target"
+#~ msgstr "IEEE1284 Target"
+
+#~ msgid "Generic"
+#~ msgstr "Opći"
+
+#~ msgid "Hayes/16450"
+#~ msgstr "Hayes/16450"
+
+#~ msgid "Hayes/16550"
+#~ msgstr "Hayes/16550"
+
+#~ msgid "Hayes/16650"
+#~ msgstr "Hayes/16650"
+
+#~ msgid "Hayes/16750"
+#~ msgstr "Hayes/16750"
+
+#~ msgid "8259"
+#~ msgstr "8259"
+
+#~ msgid "ISA PIC"
+#~ msgstr "ISA PIC"
+
+#~ msgid "EISA PIC"
+#~ msgstr "EISA PIC"
+
+#~ msgid "IO-APIC"
+#~ msgstr "IO-APIC"
+
+#~ msgid "IO(X)-APIC"
+#~ msgstr "IO(X)-APIC"
+
+#~ msgid "8237"
+#~ msgstr "8237"
+
+#~ msgid "ISA DMA"
+#~ msgstr "ISA DMA"
+
+#~ msgid "EISA DMA"
+#~ msgstr "EISA DMA"
+
+#~ msgid "8254"
+#~ msgstr "8254"
+
+#~ msgid "ISA timer"
+#~ msgstr "ISA mjerač vremena"
+
+#~ msgid "EISA timers"
+#~ msgstr "EISA mjerač vremena"
+
+#~ msgid "ISA RTC"
+#~ msgstr "ISA RTC"
+
+#~ msgid "Extended"
+#~ msgstr "Prošireno"
+
+#~ msgid "OHCI"
+#~ msgstr "OHCI"
+
+#~ msgid "UHCI"
+#~ msgstr "UHCI"
+
+#~ msgid "EHCI"
+#~ msgstr "EHCI"
+
+#~ msgid "Unspecified"
+#~ msgstr "Neodređeno"
+
+#~ msgid "USB Device"
+#~ msgstr "USB uređaj"
+
+#~ msgid "SMIC"
+#~ msgstr "SMIC"
+
+#~ msgid "Keyboard controller style"
+#~ msgstr "Stil upravljača tipkovnicom"
+
+#~ msgid "Block transfer"
+#~ msgstr "Blokiraj prijenos"
+
+#~ msgid "Vital product data"
+#~ msgstr "Važni podaci proizvoda"
+
+#~ msgid "Slot identification"
+#~ msgstr "Identifikacija utora"
+
+#~ msgid "CompactPCI hot swap"
+#~ msgstr "CompactPCI hot swap"
+
+#~ msgid "HyperTransport"
+#~ msgstr "HyperTransport"
+
+#~ msgid "Debug port"
+#~ msgstr "Debug port"
+
+#~ msgid "CompactPCI central resource control"
+#~ msgstr "Upravljanje središnjim resursom CompactPCI-a"
+
+#~ msgid "PCI hot-plug"
+#~ msgstr "PCI hot-plug"
+
+#~ msgid "AGP x8"
+#~ msgstr "AGP x8"
+
+#~ msgid "Secure device"
+#~ msgstr "Sigurnosni uređaj"
+
+#~ msgid "PCI express"
+#~ msgstr "PCI express"
+
+#~ msgid "MSI-X"
+#~ msgstr "MSI-X"
+
+#~ msgid "Fast"
+#~ msgstr "Brzo"
+
+#~ msgid "Medium"
+#~ msgstr "Srednje"
+
+#~ msgid "Slow"
+#~ msgstr "Sporo"
+
+#~ msgid "32 bit"
+#~ msgstr "32 bita"
+
+#~ msgid "Below 1M"
+#~ msgstr "Ispod 1M"
+
+#~ msgid "64 bit"
+#~ msgstr "64 bita"
+
+#~ msgid "Standard"
+#~ msgstr "Standardno"
+
+#~ msgid "CardBus"
+#~ msgstr "Sabirnica kartice"
+
+#~ msgid "1X"
+#~ msgstr "1X"
+
+#~ msgid "2X"
+#~ msgstr "2X"
+
+#~ msgid "1X & 2X"
+#~ msgstr "1X & 2X"
+
+#~ msgid "4X"
+#~ msgstr "4X"
+
+#~ msgid "1X & 4X"
+#~ msgstr "1X & 4X"
+
+#~ msgid "2X & 4X"
+#~ msgstr "2X & 4X"
+
+#~ msgid "1X & 2X & 4X"
+#~ msgstr "1X & 2X & 4X"
+
+#~ msgid "8X"
+#~ msgstr "8X"
+
+#~ msgid "4X & 8X"
+#~ msgstr "4X & 8X"
+
+#~ msgid "4 ms"
+#~ msgstr "4 ms"
+
+#~ msgid "16 ms"
+#~ msgstr "16 ms"
+
+#~ msgid "64 ms"
+#~ msgstr "64 ms"
+
+#~ msgid "256 ms"
+#~ msgstr "256 ms"
+
+#~ msgid "Not needed"
+#~ msgstr "Nije potreban"
+
+#~ msgid "0 (self powered)"
+#~ msgstr "0 (samostalno napajan)"
+
+#~ msgid "55 mA"
+#~ msgstr "55 mA"
+
+#~ msgid "100 mA"
+#~ msgstr "100 mA"
+
+#~ msgid "160 mA"
+#~ msgstr "160 mA"
+
+#~ msgid "220 mA"
+#~ msgstr "220 mA"
+
+#~ msgid "270 mA"
+#~ msgstr "270 mA"
+
+#~ msgid "320 mA"
+#~ msgstr "320 mA"
+
+#~ msgid "375 mA"
+#~ msgstr "375 mA"
+
+#~ msgid "1 vector"
+#~ msgstr "1 vektor"
+
+#~ msgid "2 vectors"
+#~ msgstr "2 vektora"
+
+#~ msgid "4 vectors"
+#~ msgstr "4 vektora"
+
+#~ msgid "8 vectors"
+#~ msgstr "8 vektora"
+
+#~ msgid "16 vectors"
+#~ msgstr "16 vektora"
+
+#~ msgid "32 vectors"
+#~ msgstr "32 vektora"
+
+#~ msgid "Serial ATA direct port access"
+#~ msgstr "Serial ATA izravan pristupni port"
+
+#~ msgid "PICMG 2.14 multi computing"
+#~ msgstr "PICMG 2.14 multi computing"
+
+#~ msgid "GPIB (IEEE 488.1/2) controller"
+#~ msgstr "GPIB (IEEE 488.1/2) upravljač"
+
+#~ msgid "Smart card"
+#~ msgstr "Pametna kartica"
+
+#~ msgid "System peripheral"
+#~ msgstr "Vanjske jedinice sustava"
+
+#~ msgid "Management card"
+#~ msgstr "Upravljačka kartica"
+
+#~ msgid "single DMA"
+#~ msgstr "jednostruka DMA"
+
+#~ msgid "chained DMA"
+#~ msgstr "ulančana DMA"
+
+#~ msgid "VGA compatible"
+#~ msgstr "VGA kompatibilan"
+
+#~ msgid "8514 compatible"
+#~ msgstr "8514 kompatibilan"
+
+#~ msgid "KDE PCI Information Control Module"
+#~ msgstr "KDE-ov upravljački modul za PCI informacije"

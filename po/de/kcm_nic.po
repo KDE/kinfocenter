@@ -1,0 +1,196 @@
+# Frederik Schwarzer <schwarzer@kde.org>, 2010.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2010.
+# Burkhard Lück <lueck@hube-lueck.de>, 2012, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmnic\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-14 00:46+0000\n"
+"PO-Revision-Date: 2020-10-19 06:57+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Frederik Schwarzer"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "schwarzer@kde.org"
+
+#: networkmodel.cpp:159
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Point to Point"
+msgstr "Direktverbindung"
+
+#: networkmodel.cpp:166
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Broadcast"
+msgstr "Broadcast"
+
+#: networkmodel.cpp:173
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Multicast"
+msgstr "Multicast"
+
+#: networkmodel.cpp:180
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Loopback"
+msgstr "Loopback"
+
+#: nic.cpp:21
+#, kde-format
+msgid "kcm_nic"
+msgstr "kcm_nic"
+
+#: nic.cpp:22
+#, kde-format
+msgctxt "@title:window"
+msgid "Network Interfaces"
+msgstr "Netzwerkschnittstellen"
+
+#: nic.cpp:26
+#, kde-format
+msgctxt "@info"
+msgid "(c) 2001 - 2002 Alexander Neundorf"
+msgstr "(c) 2001 - 2002 Alexander Neundorf"
+
+#: nic.cpp:28
+#, kde-format
+msgctxt "@info:credit"
+msgid "Alexander Neundorf"
+msgstr "Alexander Neundorf"
+
+#: nic.cpp:28
+#, kde-format
+msgctxt "@info:credit"
+msgid "creator"
+msgstr "Erstellt von"
+
+#: nic.cpp:29
+#, kde-format
+msgctxt "@info:credit"
+msgid "Carl Schwan"
+msgstr "Carl Schwan"
+
+#: nic.cpp:29
+#, kde-format
+msgctxt "@info:credit"
+msgid "developer"
+msgstr "Entwickler"
+
+#: package/contents/ui/main.qml:15
+#, kde-format
+msgid "Network Interfaces"
+msgstr "Netzwerkschnittstellen"
+
+#: package/contents/ui/main.qml:30
+#, kde-format
+msgctxt "@label"
+msgid "Name:"
+msgstr "Name:"
+
+#: package/contents/ui/main.qml:34
+#, kde-format
+msgctxt "@label"
+msgid "Address:"
+msgstr "Adresse:"
+
+#: package/contents/ui/main.qml:38
+#, kde-format
+msgctxt "@label"
+msgid "Network Mask:"
+msgstr "Netzmaske:"
+
+#: package/contents/ui/main.qml:42
+#, kde-format
+msgctxt "@label"
+msgid "Type:"
+msgstr "Typ:"
+
+#: package/contents/ui/main.qml:46
+#, kde-format
+msgctxt "@label"
+msgid "Hardware Address:"
+msgstr "Hardware-Adresse"
+
+#: package/contents/ui/main.qml:51
+#, kde-format
+msgctxt "@label"
+msgid "State:"
+msgstr "Status:"
+
+#: package/contents/ui/main.qml:59
+#, kde-format
+msgctxt "State of network card is connected"
+msgid "Up"
+msgstr "Aktiviert"
+
+#: package/contents/ui/main.qml:60
+#, kde-format
+msgctxt "State of network card is disconnected"
+msgid "Down"
+msgstr "Deaktiviert"
+
+#: package/contents/ui/main.qml:76
+#, kde-format
+msgctxt "@action:button"
+msgid "Refresh"
+msgstr "Aktualisieren"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Broadcast"
+#~ msgstr "Broadcast"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Point to Point"
+#~ msgstr "Direktverbindung"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Multicast"
+#~ msgstr "Multicast"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Loopback"
+#~ msgstr "Loopback"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Unknown"
+#~ msgstr "Unbekannt"
+
+#~ msgctxt "Unknown network mask"
+#~ msgid "Unknown"
+#~ msgstr "Unbekannt"
+
+#~ msgctxt "Unknown HWaddr"
+#~ msgid "Unknown"
+#~ msgstr "Unbekannt"
+
+#, fuzzy
+#~| msgid "Broadcast"
+#~ msgctxt "@item:intable Netork type"
+#~ msgid "Broadcast"
+#~ msgstr "Broadcast"
+
+#~ msgid "HWAddr"
+#~ msgstr "Geräteadresse"
+
+#~ msgid "&Update"
+#~ msgstr "&Aktualisieren"
+
+#~ msgid "kcminfo"
+#~ msgstr "kcminfo"
+
+#~ msgid "System Information Control Module"
+#~ msgstr "Kontrollmodul für Systeminformationen"

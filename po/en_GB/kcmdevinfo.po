@@ -1,0 +1,738 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Andrew Coles <andrew_coles@yahoo.co.uk>, 2010.
+# Steve Allewell <steve.allewell@gmail.com>, 2014, 2015, 2016, 2018, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-09-03 00:18+0000\n"
+"PO-Revision-Date: 2020-06-09 22:37+0100\n"
+"Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
+"Language-Team: British English <kde-l10n-en_gb@kde.org>\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 20.04.1\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Andrew Coles, Steve Allewell"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "andrew_coles@yahoo.co.uk, steve.allewell@gmail.com"
+
+#: devicelisting.cpp:41
+#, kde-format
+msgctxt "Device Listing Whats This"
+msgid "Shows all the devices that are currently listed."
+msgstr "Shows all the devices that are currently listed."
+
+#: devicelisting.cpp:44
+#, kde-format
+msgid "Devices"
+msgstr "Devices"
+
+#: devicelisting.cpp:57
+#, kde-format
+msgid "Collapse All"
+msgstr "Collapse All"
+
+#: devicelisting.cpp:60
+#, kde-format
+msgid "Expand All"
+msgstr "Expand All"
+
+#: devicelisting.cpp:63
+#, kde-format
+msgid "Show All Devices"
+msgstr "Show All Devices"
+
+#: devicelisting.cpp:66
+#, kde-format
+msgid "Show Relevant Devices"
+msgstr "Show Relevant Devices"
+
+#: devicelisting.cpp:95
+#, kde-format
+msgctxt "unknown device type"
+msgid "Unknown"
+msgstr "Unknown"
+
+#: devicelisting.cpp:136 devinfo.cpp:79
+#, kde-format
+msgctxt "no device UDI"
+msgid "None"
+msgstr "None"
+
+#: devinfo.cpp:28
+#, kde-format
+msgid "kcmdevinfo"
+msgstr "kcmdevinfo"
+
+#: devinfo.cpp:28
+#, kde-format
+msgid "Device Viewer"
+msgstr "Device Viewer"
+
+#: devinfo.cpp:28
+#, kde-format
+msgid "(c) 2010 David Hubner"
+msgstr "(c) 2010 David Hubner"
+
+#: devinfo.cpp:58
+#, kde-format
+msgid "UDI: "
+msgstr "UDI: "
+
+#: devinfo.cpp:66
+#, kde-format
+msgctxt "Udi Whats This"
+msgid "Shows the current device's UDI (Unique Device Identifier)"
+msgstr "Shows the current device's UDI (Unique Device Identifier)"
+
+#: infopanel.cpp:20
+#, kde-format
+msgid "Device Information"
+msgstr "Device Information"
+
+#: infopanel.cpp:29
+#, kde-format
+msgctxt "Info Panel Whats This"
+msgid "Shows information about the currently selected device."
+msgstr "Shows information about the currently selected device."
+
+#: infopanel.cpp:56
+#, kde-format
+msgid ""
+"\n"
+"Solid Based Device Viewer Module"
+msgstr ""
+"\n"
+"Solid Based Device Viewer Module"
+
+#: infopanel.cpp:119
+#, kde-format
+msgid "Description: "
+msgstr "Description: "
+
+#: infopanel.cpp:121
+#, kde-format
+msgid "Product: "
+msgstr "Product: "
+
+#: infopanel.cpp:123
+#, kde-format
+msgid "Vendor: "
+msgstr "Vendor: "
+
+#: infopanel.cpp:145
+#, kde-format
+msgid "Yes"
+msgstr "Yes"
+
+#: infopanel.cpp:147
+#, kde-format
+msgid "No"
+msgstr "No"
+
+#: infopanel.h:36
+#, kde-format
+msgctxt "name of something is not known"
+msgid "Unknown"
+msgstr "Unknown"
+
+#: soldevice.cpp:66
+#, kde-format
+msgctxt "unknown device"
+msgid "Unknown"
+msgstr "Unknown"
+
+#: soldevice.cpp:92
+#, kde-format
+msgctxt "Default device tooltip"
+msgid "A Device"
+msgstr "A Device"
+
+#: soldevicetypes.cpp:43
+#, kde-format
+msgid "Processors"
+msgstr "Processors"
+
+#: soldevicetypes.cpp:59
+#, kde-format
+msgid "Processor %1"
+msgstr "Processor %1"
+
+#: soldevicetypes.cpp:76
+#, kde-format
+msgid "Intel MMX"
+msgstr "Intel MMX"
+
+#: soldevicetypes.cpp:79
+#, kde-format
+msgid "Intel SSE"
+msgstr "Intel SSE"
+
+#: soldevicetypes.cpp:82
+#, kde-format
+msgid "Intel SSE2"
+msgstr "Intel SSE2"
+
+#: soldevicetypes.cpp:85
+#, kde-format
+msgid "Intel SSE3"
+msgstr "Intel SSE3"
+
+#: soldevicetypes.cpp:88
+#, kde-format
+msgid "Intel SSSE3"
+msgstr "Intel SSSE3"
+
+#: soldevicetypes.cpp:91
+#, kde-format
+msgid "Intel SSE4.1"
+msgstr "Intel SSE4.1"
+
+#: soldevicetypes.cpp:94
+#, kde-format
+msgid "Intel SSE4.2"
+msgstr "Intel SSE4.2"
+
+#: soldevicetypes.cpp:97
+#, kde-format
+msgid "AMD 3DNow!"
+msgstr "AMD 3DNow!"
+
+#: soldevicetypes.cpp:100
+#, kde-format
+msgid "ATI IVEC"
+msgstr "ATI IVEC"
+
+#: soldevicetypes.cpp:103
+#, kde-format
+msgctxt "no instruction set extensions"
+msgid "None"
+msgstr "None"
+
+#: soldevicetypes.cpp:106
+#, kde-format
+msgid "Processor Number: "
+msgstr "Processor Number: "
+
+#: soldevicetypes.cpp:106
+#, kde-format
+msgid "Max Speed: "
+msgstr "Max Speed: "
+
+#: soldevicetypes.cpp:107
+#, kde-format
+msgid "Supported Instruction Sets: "
+msgstr "Supported Instruction Sets: "
+
+#: soldevicetypes.cpp:132
+#, kde-format
+msgid "Storage Drives"
+msgstr "Storage Drives"
+
+#: soldevicetypes.cpp:151
+#, kde-format
+msgid "Hard Disk Drive"
+msgstr "Hard Disk Drive"
+
+#: soldevicetypes.cpp:154
+#, kde-format
+msgid "Compact Flash Reader"
+msgstr "Compact Flash Reader"
+
+#: soldevicetypes.cpp:157
+#, kde-format
+msgid "Smart Media Reader"
+msgstr "Smart Media Reader"
+
+#: soldevicetypes.cpp:160
+#, kde-format
+msgid "SD/MMC Reader"
+msgstr "SD/MMC Reader"
+
+#: soldevicetypes.cpp:163
+#, kde-format
+msgid "Optical Drive"
+msgstr "Optical Drive"
+
+#: soldevicetypes.cpp:166
+#, kde-format
+msgid "Memory Stick Reader"
+msgstr "Memory Stick Reader"
+
+#: soldevicetypes.cpp:169
+#, kde-format
+msgid "xD Reader"
+msgstr "xD Reader"
+
+#: soldevicetypes.cpp:172
+#, kde-format
+msgid "Unknown Drive"
+msgstr "Unknown Drive"
+
+#: soldevicetypes.cpp:192
+#, kde-format
+msgid "IDE"
+msgstr "IDE"
+
+#: soldevicetypes.cpp:195
+#, kde-format
+msgid "USB"
+msgstr "USB"
+
+#: soldevicetypes.cpp:198
+#, kde-format
+msgid "IEEE1394"
+msgstr "IEEE1394"
+
+#: soldevicetypes.cpp:201
+#, kde-format
+msgid "SCSI"
+msgstr "SCSI"
+
+#: soldevicetypes.cpp:204
+#, kde-format
+msgid "SATA"
+msgstr "SATA"
+
+#: soldevicetypes.cpp:207
+#, kde-format
+msgctxt "platform storage bus"
+msgid "Platform"
+msgstr "Platform"
+
+#: soldevicetypes.cpp:210
+#, kde-format
+msgctxt "unknown storage bus"
+msgid "Unknown"
+msgstr "Unknown"
+
+#: soldevicetypes.cpp:213
+#, kde-format
+msgid "Bus: "
+msgstr "Bus: "
+
+#: soldevicetypes.cpp:213
+#, kde-format
+msgid "Hotpluggable?"
+msgstr "Hotpluggable?"
+
+#: soldevicetypes.cpp:213
+#, kde-format
+msgid "Removable?"
+msgstr "Removable?"
+
+#: soldevicetypes.cpp:257
+#, kde-format
+msgid "Unused"
+msgstr "Unused"
+
+#: soldevicetypes.cpp:260
+#, kde-format
+msgid "File System"
+msgstr "File System"
+
+#: soldevicetypes.cpp:263
+#, kde-format
+msgid "Partition Table"
+msgstr "Partition Table"
+
+#: soldevicetypes.cpp:266
+#, kde-format
+msgid "Raid"
+msgstr "Raid"
+
+#: soldevicetypes.cpp:269
+#, kde-format
+msgid "Encrypted"
+msgstr "Encrypted"
+
+#: soldevicetypes.cpp:272
+#, kde-format
+msgctxt "unknown volume usage"
+msgid "Unknown"
+msgstr "Unknown"
+
+#: soldevicetypes.cpp:275
+#, kde-format
+msgid "File System Type: "
+msgstr "File System Type: "
+
+#: soldevicetypes.cpp:275
+#, kde-format
+msgid "Label: "
+msgstr "Label: "
+
+#: soldevicetypes.cpp:276
+#, kde-format
+msgid "Not Set"
+msgstr "Not Set"
+
+#: soldevicetypes.cpp:276
+#, kde-format
+msgid "Volume Usage: "
+msgstr "Volume Usage: "
+
+#: soldevicetypes.cpp:276
+#, kde-format
+msgid "UUID: "
+msgstr "UUID: "
+
+#: soldevicetypes.cpp:282
+#, kde-format
+msgid "Mounted At: "
+msgstr "Mounted At: "
+
+#: soldevicetypes.cpp:282
+#, kde-format
+msgid "Not Mounted"
+msgstr "Not Mounted"
+
+#: soldevicetypes.cpp:287
+#, kde-format
+msgid "Volume Space:"
+msgstr "Volume Space:"
+
+#: soldevicetypes.cpp:297
+#, kde-format
+msgctxt "Available space out of total partition size (percent used)"
+msgid "%1 free of %2 (%3% used)"
+msgstr "%1 free of %2 (%3% used)"
+
+#: soldevicetypes.cpp:303
+#, kde-format
+msgid "No data available"
+msgstr "No data available"
+
+#: soldevicetypes.cpp:330
+#, kde-format
+msgid "Multimedia Players"
+msgstr "Multimedia Players"
+
+#: soldevicetypes.cpp:349 soldevicetypes.cpp:388
+#, kde-format
+msgid "Supported Drivers: "
+msgstr "Supported Drivers: "
+
+#: soldevicetypes.cpp:349 soldevicetypes.cpp:388
+#, kde-format
+msgid "Supported Protocols: "
+msgstr "Supported Protocols: "
+
+#: soldevicetypes.cpp:369
+#, kde-format
+msgid "Cameras"
+msgstr "Cameras"
+
+#: soldevicetypes.cpp:408
+#, kde-format
+msgid "Batteries"
+msgstr "Batteries"
+
+#: soldevicetypes.cpp:430
+#, kde-format
+msgid "PDA"
+msgstr "PDA"
+
+#: soldevicetypes.cpp:433
+#, kde-format
+msgid "UPS"
+msgstr "UPS"
+
+#: soldevicetypes.cpp:436
+#, kde-format
+msgid "Primary"
+msgstr "Primary"
+
+#: soldevicetypes.cpp:439
+#, kde-format
+msgid "Mouse"
+msgstr "Mouse"
+
+#: soldevicetypes.cpp:442
+#, kde-format
+msgid "Keyboard"
+msgstr "Keyboard"
+
+#: soldevicetypes.cpp:445
+#, kde-format
+msgid "Keyboard + Mouse"
+msgstr "Keyboard + Mouse"
+
+#: soldevicetypes.cpp:448
+#, kde-format
+msgid "Camera"
+msgstr "Camera"
+
+#: soldevicetypes.cpp:451
+#, kde-format
+msgid "Phone"
+msgstr "Phone"
+
+#: soldevicetypes.cpp:454
+#, kde-format
+msgctxt "Screen"
+msgid "Monitor"
+msgstr "Monitor"
+
+#: soldevicetypes.cpp:457
+#, kde-format
+msgctxt "Wireless game pad or joystick battery"
+msgid "Gaming Input"
+msgstr "Gaming Input"
+
+#: soldevicetypes.cpp:460
+#, kde-format
+msgctxt "unknown battery type"
+msgid "Unknown"
+msgstr "Unknown"
+
+#: soldevicetypes.cpp:466
+#, kde-format
+msgid "Charging"
+msgstr "Charging"
+
+#: soldevicetypes.cpp:469
+#, kde-format
+msgid "Discharging"
+msgstr "Discharging"
+
+#: soldevicetypes.cpp:472
+#, kde-format
+msgid "Fully Charged"
+msgstr "Fully Charged"
+
+#: soldevicetypes.cpp:475
+#, kde-format
+msgid "No Charge"
+msgstr "No Charge"
+
+#: soldevicetypes.cpp:478
+#, kde-format
+msgid "Battery Type: "
+msgstr "Battery Type: "
+
+#: soldevicetypes.cpp:478
+#, kde-format
+msgid "Charge Status: "
+msgstr "Charge Status: "
+
+#: soldevicetypes.cpp:478
+#, kde-format
+msgid "Charge Percent: "
+msgstr "Charge Percent: "
+
+#~ msgid "Network Interfaces"
+#~ msgstr "Network Interfaces"
+
+#~ msgid "Connected"
+#~ msgstr "Connected"
+
+#~ msgid "Wireless"
+#~ msgstr "Wireless"
+
+#~ msgid "Wired"
+#~ msgstr "Wired"
+
+#~ msgid "Hardware Address: "
+#~ msgstr "Hardware Address: "
+
+#~ msgid "Wireless?"
+#~ msgstr "Wireless?"
+
+#~ msgid "Audio Interfaces"
+#~ msgstr "Audio Interfaces"
+
+#~ msgid "Alsa Interfaces"
+#~ msgstr "Alsa Interfaces"
+
+#~ msgid "Open Sound System Interfaces"
+#~ msgstr "Open Sound System Interfaces"
+
+#~ msgid "Control"
+#~ msgstr "Control"
+
+#~ msgid "Input"
+#~ msgstr "Input"
+
+#~ msgid "Output"
+#~ msgstr "Output"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown audio interface type"
+#~ msgid "Unknown"
+#~ msgstr "Unknown"
+
+#~ msgid "Internal Soundcard"
+#~ msgstr "Internal Soundcard"
+
+#~ msgid "USB Soundcard"
+#~ msgstr "USB Soundcard"
+
+#~ msgid "Firewire Soundcard"
+#~ msgstr "Firewire Soundcard"
+
+#~ msgid "Headset"
+#~ msgstr "Headset"
+
+#~ msgid "Modem"
+#~ msgstr "Modem"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown sound card type"
+#~ msgid "Unknown"
+#~ msgstr "Unknown"
+
+#~ msgid "Audio Interface Type: "
+#~ msgstr "Audio Interface Type: "
+
+#~ msgid "Soundcard Type: "
+#~ msgstr "Soundcard Type: "
+
+#~ msgid "Device Buttons"
+#~ msgstr "Device Buttons"
+
+#~ msgid "Lid Button"
+#~ msgstr "Lid Button"
+
+#~ msgid "Power Button"
+#~ msgstr "Power Button"
+
+#~ msgid "Sleep Button"
+#~ msgstr "Sleep Button"
+
+#~ msgid "Tablet Button"
+#~ msgstr "Tablet Button"
+
+#~ msgid "Unknown Button"
+#~ msgstr "Unknown Button"
+
+#~ msgid "Button type: "
+#~ msgstr "Button type: "
+
+#~ msgid "Has State?"
+#~ msgstr "Has State?"
+
+#~ msgid "AC Adapters"
+#~ msgstr "AC Adapters"
+
+#~ msgid "Is plugged in?"
+#~ msgstr "Is plugged in?"
+
+#~ msgid "Digital Video Broadcasting Devices"
+#~ msgstr "Digital Video Broadcasting Devices"
+
+#~ msgid "Audio"
+#~ msgstr "Audio"
+
+#~ msgid "Conditional access system"
+#~ msgstr "Conditional access system"
+
+#~ msgid "Demux"
+#~ msgstr "Demux"
+
+#~ msgid "Digital video recorder"
+#~ msgstr "Digital video recorder"
+
+#~ msgid "Front end"
+#~ msgstr "Front end"
+
+#~ msgid "Network"
+#~ msgstr "Network"
+
+#~ msgid "On-Screen display"
+#~ msgstr "On-Screen display"
+
+#~ msgid "Security and content protection"
+#~ msgstr "Security and content protection"
+
+#~ msgid "Video"
+#~ msgstr "Video"
+
+#~ msgid "Device Type: "
+#~ msgstr "Device Type: "
+
+#~ msgid "Serial Devices"
+#~ msgstr "Serial Devices"
+
+#, fuzzy
+#~| msgid "Platform"
+#~ msgctxt "platform serial interface type"
+#~ msgid "Platform"
+#~ msgstr "Platform"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown serial interface type"
+#~ msgid "Unknown"
+#~ msgstr "Unknown"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown port"
+#~ msgid "Unknown"
+#~ msgstr "Unknown"
+
+#~ msgid "Serial Type: "
+#~ msgstr "Serial Type: "
+
+#~ msgid "Port: "
+#~ msgstr "Port: "
+
+#~ msgid "Smart Card Devices"
+#~ msgstr "Smart Card Devices"
+
+#~ msgid "Card Reader"
+#~ msgstr "Card Reader"
+
+#~ msgid "Crypto Token"
+#~ msgstr "Crypto Token"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "unknown smart card type"
+#~ msgid "Unknown"
+#~ msgstr "Unknown"
+
+#~ msgid "Smart Card Type: "
+#~ msgstr "Smart Card Type: "
+
+#~ msgid "Video Devices"
+#~ msgstr "Video Devices"
+
+#~ msgid "Device unable to be cast to correct device"
+#~ msgstr "Device unable to be cast to correct device"
+
+#~ msgid "Percentage Used / Available: "
+#~ msgstr "Percentage Used / Available: "
+
+#~ msgid "Not Connected"
+#~ msgstr "Not Connected"
+
+#~ msgid "IP Address (V4): "
+#~ msgstr "IP Address (V4): "
+
+#~ msgid "Gateway (V4): "
+#~ msgstr "Gateway (V4): "
+
+#~ msgid "Sd Mmc"
+#~ msgstr "Sd Mmc"
+
+#~ msgid "Xd"
+#~ msgstr "Xd"
+
+#~ msgid " Drive"
+#~ msgstr " Drive"

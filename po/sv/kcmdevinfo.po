@@ -1,0 +1,728 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2010, 2012, 2014, 2015, 2016, 2018, 2020, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-09-03 00:18+0000\n"
+"PO-Revision-Date: 2021-03-21 11:14+0100\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
+"Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.08.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Stefan Asserhäll"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "stefan.asserhall@bredband.net"
+
+#: devicelisting.cpp:41
+#, kde-format
+msgctxt "Device Listing Whats This"
+msgid "Shows all the devices that are currently listed."
+msgstr "Visar alla enheter som för närvarande listas."
+
+#: devicelisting.cpp:44
+#, kde-format
+msgid "Devices"
+msgstr "Enheter"
+
+#: devicelisting.cpp:57
+#, kde-format
+msgid "Collapse All"
+msgstr "Dra ihop alla"
+
+#: devicelisting.cpp:60
+#, kde-format
+msgid "Expand All"
+msgstr "Expandera alla"
+
+#: devicelisting.cpp:63
+#, kde-format
+msgid "Show All Devices"
+msgstr "Visa alla enheter"
+
+#: devicelisting.cpp:66
+#, kde-format
+msgid "Show Relevant Devices"
+msgstr "Visa relevanta enheter"
+
+#: devicelisting.cpp:95
+#, kde-format
+msgctxt "unknown device type"
+msgid "Unknown"
+msgstr "Okänd"
+
+#: devicelisting.cpp:136 devinfo.cpp:79
+#, kde-format
+msgctxt "no device UDI"
+msgid "None"
+msgstr "Ingen"
+
+#: devinfo.cpp:28
+#, kde-format
+msgid "kcmdevinfo"
+msgstr "IM enhetsinformation"
+
+#: devinfo.cpp:28
+#, kde-format
+msgid "Device Viewer"
+msgstr "Enhetsvisning"
+
+#: devinfo.cpp:28
+#, kde-format
+msgid "(c) 2010 David Hubner"
+msgstr "© 2010 David Hubner"
+
+#: devinfo.cpp:58
+#, kde-format
+msgid "UDI: "
+msgstr "UDI: "
+
+#: devinfo.cpp:66
+#, kde-format
+msgctxt "Udi Whats This"
+msgid "Shows the current device's UDI (Unique Device Identifier)"
+msgstr "Visar de aktuella enheternas UDI (unika enhetsidentifierare)"
+
+#: infopanel.cpp:20
+#, kde-format
+msgid "Device Information"
+msgstr "Enhetsinformation"
+
+#: infopanel.cpp:29
+#, kde-format
+msgctxt "Info Panel Whats This"
+msgid "Shows information about the currently selected device."
+msgstr "Visar information om enheterna som för närvarande är markerade."
+
+#: infopanel.cpp:56
+#, kde-format
+msgid ""
+"\n"
+"Solid Based Device Viewer Module"
+msgstr ""
+"\n"
+"Modul för enhetsvisning baserad på Solid"
+
+#: infopanel.cpp:119
+#, kde-format
+msgid "Description: "
+msgstr "Beskrivning: "
+
+#: infopanel.cpp:121
+#, kde-format
+msgid "Product: "
+msgstr "Produkt: "
+
+#: infopanel.cpp:123
+#, kde-format
+msgid "Vendor: "
+msgstr "Tillverkare: "
+
+#: infopanel.cpp:145
+#, kde-format
+msgid "Yes"
+msgstr "Ja"
+
+#: infopanel.cpp:147
+#, kde-format
+msgid "No"
+msgstr "Nej"
+
+#: infopanel.h:36
+#, kde-format
+msgctxt "name of something is not known"
+msgid "Unknown"
+msgstr "Okänd"
+
+#: soldevice.cpp:66
+#, kde-format
+msgctxt "unknown device"
+msgid "Unknown"
+msgstr "Okänd"
+
+#: soldevice.cpp:92
+#, kde-format
+msgctxt "Default device tooltip"
+msgid "A Device"
+msgstr "En enhet."
+
+#: soldevicetypes.cpp:43
+#, kde-format
+msgid "Processors"
+msgstr "Processorer"
+
+#: soldevicetypes.cpp:59
+#, kde-format
+msgid "Processor %1"
+msgstr "Processor %1"
+
+#: soldevicetypes.cpp:76
+#, kde-format
+msgid "Intel MMX"
+msgstr "Intel MMX "
+
+#: soldevicetypes.cpp:79
+#, kde-format
+msgid "Intel SSE"
+msgstr "Intel SSE "
+
+#: soldevicetypes.cpp:82
+#, kde-format
+msgid "Intel SSE2"
+msgstr "Intel SSE2 "
+
+#: soldevicetypes.cpp:85
+#, kde-format
+msgid "Intel SSE3"
+msgstr "Intel SSE3 "
+
+#: soldevicetypes.cpp:88
+#, kde-format
+msgid "Intel SSSE3"
+msgstr "Intel SSSE3"
+
+#: soldevicetypes.cpp:91
+#, kde-format
+msgid "Intel SSE4.1"
+msgstr "Intel SSE4.1"
+
+#: soldevicetypes.cpp:94
+#, kde-format
+msgid "Intel SSE4.2"
+msgstr "Intel SSE4.2"
+
+#: soldevicetypes.cpp:97
+#, kde-format
+msgid "AMD 3DNow!"
+msgstr "AMD 3DNow!"
+
+#: soldevicetypes.cpp:100
+#, kde-format
+msgid "ATI IVEC"
+msgstr "ATI IVEC"
+
+#: soldevicetypes.cpp:103
+#, kde-format
+msgctxt "no instruction set extensions"
+msgid "None"
+msgstr "Ingen"
+
+#: soldevicetypes.cpp:106
+#, kde-format
+msgid "Processor Number: "
+msgstr "Processor nummer: "
+
+#: soldevicetypes.cpp:106
+#, kde-format
+msgid "Max Speed: "
+msgstr "Maximal hastighet: "
+
+#: soldevicetypes.cpp:107
+#, kde-format
+msgid "Supported Instruction Sets: "
+msgstr "Instruktionsuppsättningar som stöds: "
+
+#: soldevicetypes.cpp:132
+#, kde-format
+msgid "Storage Drives"
+msgstr "Lagringsenheter"
+
+#: soldevicetypes.cpp:151
+#, kde-format
+msgid "Hard Disk Drive"
+msgstr "Hårddiskenhet"
+
+#: soldevicetypes.cpp:154
+#, kde-format
+msgid "Compact Flash Reader"
+msgstr "Compact Flash-läsare"
+
+#: soldevicetypes.cpp:157
+#, kde-format
+msgid "Smart Media Reader"
+msgstr "Smart Media-läsare"
+
+#: soldevicetypes.cpp:160
+#, kde-format
+msgid "SD/MMC Reader"
+msgstr "SD/MMC-läsare"
+
+#: soldevicetypes.cpp:163
+#, kde-format
+msgid "Optical Drive"
+msgstr "Optisk enhet"
+
+#: soldevicetypes.cpp:166
+#, kde-format
+msgid "Memory Stick Reader"
+msgstr "Läsare för minnesstickor"
+
+#: soldevicetypes.cpp:169
+#, kde-format
+msgid "xD Reader"
+msgstr "xD-läsare"
+
+#: soldevicetypes.cpp:172
+#, kde-format
+msgid "Unknown Drive"
+msgstr "Okänd enhet"
+
+#: soldevicetypes.cpp:192
+#, kde-format
+msgid "IDE"
+msgstr "IDE"
+
+#: soldevicetypes.cpp:195
+#, kde-format
+msgid "USB"
+msgstr "USB"
+
+#: soldevicetypes.cpp:198
+#, kde-format
+msgid "IEEE1394"
+msgstr "IEEE 1394"
+
+#: soldevicetypes.cpp:201
+#, kde-format
+msgid "SCSI"
+msgstr "SCSI"
+
+#: soldevicetypes.cpp:204
+#, kde-format
+msgid "SATA"
+msgstr "SATA"
+
+#: soldevicetypes.cpp:207
+#, kde-format
+msgctxt "platform storage bus"
+msgid "Platform"
+msgstr "Plattform"
+
+#: soldevicetypes.cpp:210
+#, kde-format
+msgctxt "unknown storage bus"
+msgid "Unknown"
+msgstr "Okänd"
+
+#: soldevicetypes.cpp:213
+#, kde-format
+msgid "Bus: "
+msgstr "Buss: "
+
+#: soldevicetypes.cpp:213
+#, kde-format
+msgid "Hotpluggable?"
+msgstr "Inkopplingsbar?"
+
+#: soldevicetypes.cpp:213
+#, kde-format
+msgid "Removable?"
+msgstr "Flyttbar?"
+
+#: soldevicetypes.cpp:257
+#, kde-format
+msgid "Unused"
+msgstr "Oanvänd"
+
+#: soldevicetypes.cpp:260
+#, kde-format
+msgid "File System"
+msgstr "Filsystem"
+
+#: soldevicetypes.cpp:263
+#, kde-format
+msgid "Partition Table"
+msgstr "Partitionstabell"
+
+#: soldevicetypes.cpp:266
+#, kde-format
+msgid "Raid"
+msgstr "RAID"
+
+#: soldevicetypes.cpp:269
+#, kde-format
+msgid "Encrypted"
+msgstr "Krypterad"
+
+#: soldevicetypes.cpp:272
+#, kde-format
+msgctxt "unknown volume usage"
+msgid "Unknown"
+msgstr "Okänd"
+
+#: soldevicetypes.cpp:275
+#, kde-format
+msgid "File System Type: "
+msgstr "Typ av filsystem: "
+
+#: soldevicetypes.cpp:275
+#, kde-format
+msgid "Label: "
+msgstr "Etikett: "
+
+#: soldevicetypes.cpp:276
+#, kde-format
+msgid "Not Set"
+msgstr "Inte angiven"
+
+#: soldevicetypes.cpp:276
+#, kde-format
+msgid "Volume Usage: "
+msgstr "Volymanvändning: "
+
+#: soldevicetypes.cpp:276
+#, kde-format
+msgid "UUID: "
+msgstr "UUID: "
+
+#: soldevicetypes.cpp:282
+#, kde-format
+msgid "Mounted At: "
+msgstr "Monterad som:  "
+
+#: soldevicetypes.cpp:282
+#, kde-format
+msgid "Not Mounted"
+msgstr "Inte monterad"
+
+#: soldevicetypes.cpp:287
+#, kde-format
+msgid "Volume Space:"
+msgstr "Volymutrymme: "
+
+#: soldevicetypes.cpp:297
+#, kde-format
+msgctxt "Available space out of total partition size (percent used)"
+msgid "%1 free of %2 (%3% used)"
+msgstr "%1 ledigt av %2 (%3 % använt)"
+
+#: soldevicetypes.cpp:303
+#, kde-format
+msgid "No data available"
+msgstr "Ingen data tillgänglig"
+
+#: soldevicetypes.cpp:330
+#, kde-format
+msgid "Multimedia Players"
+msgstr "Multimediaspelare"
+
+#: soldevicetypes.cpp:349 soldevicetypes.cpp:388
+#, kde-format
+msgid "Supported Drivers: "
+msgstr "Drivrutiner som stöds: "
+
+#: soldevicetypes.cpp:349 soldevicetypes.cpp:388
+#, kde-format
+msgid "Supported Protocols: "
+msgstr "Protokoll som stöds: "
+
+#: soldevicetypes.cpp:369
+#, kde-format
+msgid "Cameras"
+msgstr "Kameror"
+
+#: soldevicetypes.cpp:408
+#, kde-format
+msgid "Batteries"
+msgstr "Batterier"
+
+#: soldevicetypes.cpp:430
+#, kde-format
+msgid "PDA"
+msgstr "Handdator"
+
+#: soldevicetypes.cpp:433
+#, kde-format
+msgid "UPS"
+msgstr "Avbrottsfri kraft"
+
+#: soldevicetypes.cpp:436
+#, kde-format
+msgid "Primary"
+msgstr "Primär"
+
+#: soldevicetypes.cpp:439
+#, kde-format
+msgid "Mouse"
+msgstr "Mus"
+
+#: soldevicetypes.cpp:442
+#, kde-format
+msgid "Keyboard"
+msgstr "Tangentbord"
+
+#: soldevicetypes.cpp:445
+#, kde-format
+msgid "Keyboard + Mouse"
+msgstr "Tangentbord och mus"
+
+#: soldevicetypes.cpp:448
+#, kde-format
+msgid "Camera"
+msgstr "Kamera"
+
+#: soldevicetypes.cpp:451
+#, kde-format
+msgid "Phone"
+msgstr "Telefon"
+
+#: soldevicetypes.cpp:454
+#, kde-format
+msgctxt "Screen"
+msgid "Monitor"
+msgstr "Bildskärm"
+
+#: soldevicetypes.cpp:457
+#, kde-format
+msgctxt "Wireless game pad or joystick battery"
+msgid "Gaming Input"
+msgstr "Spelinmatning"
+
+#: soldevicetypes.cpp:460
+#, kde-format
+msgctxt "unknown battery type"
+msgid "Unknown"
+msgstr "Okänd"
+
+#: soldevicetypes.cpp:466
+#, kde-format
+msgid "Charging"
+msgstr "Laddar"
+
+#: soldevicetypes.cpp:469
+#, kde-format
+msgid "Discharging"
+msgstr "Laddar ur"
+
+#: soldevicetypes.cpp:472
+#, kde-format
+msgid "Fully Charged"
+msgstr "Fulladdat"
+
+#: soldevicetypes.cpp:475
+#, kde-format
+msgid "No Charge"
+msgstr "Ingen laddning"
+
+#: soldevicetypes.cpp:478
+#, kde-format
+msgid "Battery Type: "
+msgstr "Typ av batteri: "
+
+#: soldevicetypes.cpp:478
+#, kde-format
+msgid "Charge Status: "
+msgstr "Laddningsstatus: "
+
+#: soldevicetypes.cpp:478
+#, kde-format
+msgid "Charge Percent: "
+msgstr "Laddningsprocent: "
+
+#~ msgid "Network Interfaces"
+#~ msgstr "Nätverksgränssnitt"
+
+#~ msgid "Connected"
+#~ msgstr "Ansluten"
+
+#~ msgid "Wireless"
+#~ msgstr "Trådlös"
+
+#~ msgid "Wired"
+#~ msgstr "Trådburen"
+
+#~ msgid "Hardware Address: "
+#~ msgstr "Hårdvaruadress: "
+
+#~ msgid "Wireless?"
+#~ msgstr "Trådlös?"
+
+#~ msgid "Audio Interfaces"
+#~ msgstr "Ljudgränssnitt"
+
+#~ msgid "Alsa Interfaces"
+#~ msgstr "ALSA-gränssnitt"
+
+#~ msgid "Open Sound System Interfaces"
+#~ msgstr "Open Sound System-gränssnitt"
+
+#~ msgid "Control"
+#~ msgstr "Styrning"
+
+#~ msgid "Input"
+#~ msgstr "Inmatning"
+
+#~ msgid "Output"
+#~ msgstr "Utmatning"
+
+#~ msgctxt "unknown audio interface type"
+#~ msgid "Unknown"
+#~ msgstr "Okänd"
+
+#~ msgid "Internal Soundcard"
+#~ msgstr "Internt ljudkort"
+
+#~ msgid "USB Soundcard"
+#~ msgstr "USB-ljudkort"
+
+#~ msgid "Firewire Soundcard"
+#~ msgstr "Firewire-ljudkort"
+
+#~ msgid "Headset"
+#~ msgstr "Headset"
+
+#~ msgid "Modem"
+#~ msgstr "Modem"
+
+#~ msgctxt "unknown sound card type"
+#~ msgid "Unknown"
+#~ msgstr "Okänd"
+
+#~ msgid "Audio Interface Type: "
+#~ msgstr "Typ av ljudgränssnitt: "
+
+#~ msgid "Soundcard Type: "
+#~ msgstr "Typ av ljudkort: "
+
+#~ msgid "Device Buttons"
+#~ msgstr "Enhetsknappar"
+
+#~ msgid "Lid Button"
+#~ msgstr "Lockknapp"
+
+#~ msgid "Power Button"
+#~ msgstr "Strömknapp"
+
+#~ msgid "Sleep Button"
+#~ msgstr "Viloknapp"
+
+#~ msgid "Tablet Button"
+#~ msgstr "Knapp på styrplatta"
+
+#~ msgid "Unknown Button"
+#~ msgstr "Okänd knapp"
+
+#~ msgid "Button type: "
+#~ msgstr "Typ av knapp: "
+
+#~ msgid "Has State?"
+#~ msgstr "Har tillstånd?"
+
+#~ msgid "AC Adapters"
+#~ msgstr "Nätaggregat"
+
+#~ msgid "Is plugged in?"
+#~ msgstr "Är inkopplat?"
+
+#~ msgid "Digital Video Broadcasting Devices"
+#~ msgstr "Digital-tv-enheter"
+
+#~ msgid "Audio"
+#~ msgstr "Ljud"
+
+#~ msgid "Conditional access system"
+#~ msgstr "Villkorligt åtkomstsystem"
+
+#~ msgid "Demux"
+#~ msgstr "Demultiplexer"
+
+#~ msgid "Digital video recorder"
+#~ msgstr "Digital videoinspelare"
+
+#~ msgid "Front end"
+#~ msgstr "Gränssnitt"
+
+#~ msgid "Network"
+#~ msgstr "Nätverk"
+
+#~ msgid "On-Screen display"
+#~ msgstr "Meddelanden på skärmen"
+
+#~ msgid "Security and content protection"
+#~ msgstr "Säkerhet och innehållsskydd"
+
+#~ msgid "Video"
+#~ msgstr "Video"
+
+#~ msgid "Device Type: "
+#~ msgstr "Enhetens typ:"
+
+#~ msgid "Serial Devices"
+#~ msgstr "Seriella enheter"
+
+#~ msgctxt "platform serial interface type"
+#~ msgid "Platform"
+#~ msgstr "Plattform"
+
+#~ msgctxt "unknown serial interface type"
+#~ msgid "Unknown"
+#~ msgstr "Okänd"
+
+#~ msgctxt "unknown port"
+#~ msgid "Unknown"
+#~ msgstr "Okänd"
+
+#~ msgid "Serial Type: "
+#~ msgstr "Seriell typ: "
+
+#~ msgid "Port: "
+#~ msgstr "Port: "
+
+#~ msgid "Smart Card Devices"
+#~ msgstr "Smartkort-enheter"
+
+#~ msgid "Card Reader"
+#~ msgstr "Kortläsare"
+
+#~ msgid "Crypto Token"
+#~ msgstr "Säkerhetsdosa"
+
+#~ msgctxt "unknown smart card type"
+#~ msgid "Unknown"
+#~ msgstr "Okänd"
+
+#~ msgid "Smart Card Type: "
+#~ msgstr "Typ av smartkort: "
+
+#~ msgid "Video Devices"
+#~ msgstr "Videoenheter"
+
+#~ msgid "Device unable to be cast to correct device"
+#~ msgstr "Enheten kan inte typkonverteras till riktig enhet"
+
+#~ msgid "Percentage Used / Available: "
+#~ msgstr "Procent använt/tillgängligt: "
+
+#~ msgid "Not Connected"
+#~ msgstr "Inte ansluten"
+
+#~ msgid "IP Address (V4): "
+#~ msgstr "IP-adress (V4): "
+
+#~ msgid "Gateway (V4): "
+#~ msgstr "Förmedlingsnod (V4): "
+
+#~ msgid "AltiVec"
+#~ msgstr "AltiVec"
+
+#~ msgid "Sd Mmc"
+#~ msgstr "SD/MMC"
+
+#~ msgid "Xd"
+#~ msgstr "Xd"
+
+#~ msgid " Drive"
+#~ msgstr "Enhet"

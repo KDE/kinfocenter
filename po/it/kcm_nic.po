@@ -1,0 +1,202 @@
+# translation of kcmnic.po to Italian
+# Copyright (C) 2004, 2006, 2007 Free Software Foundation, Inc.
+# Andrea Rizzi <rizzi@kde.org>, 2004, 2007.
+# Pino Toscano <toscano.pino@tiscali.it>, 2006.
+# Andrea Rizzi <rizzi@sns.it>, 2007.
+# Nicola Ruggero <nicola@nxnt.org>, 2011.
+# Vincenzo Reale <smart2128vr@gmail.com>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmnic\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-14 00:46+0000\n"
+"PO-Revision-Date: 2020-09-28 07:35+0200\n"
+"Last-Translator: Vincenzo Reale <smart2128@baslug.org>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 20.08.1\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Nicola Ruggero,Andrea Rizzi"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "nicola@nxnt.org,"
+
+#: networkmodel.cpp:159
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Point to Point"
+msgstr "Punto-punto"
+
+#: networkmodel.cpp:166
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Broadcast"
+msgstr "Broadcast"
+
+#: networkmodel.cpp:173
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Multicast"
+msgstr "Multicast"
+
+#: networkmodel.cpp:180
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Loopback"
+msgstr "Loopback"
+
+#: nic.cpp:21
+#, kde-format
+msgid "kcm_nic"
+msgstr "kcm_nic"
+
+#: nic.cpp:22
+#, kde-format
+msgctxt "@title:window"
+msgid "Network Interfaces"
+msgstr "Interfacce di rete"
+
+#: nic.cpp:26
+#, kde-format
+msgctxt "@info"
+msgid "(c) 2001 - 2002 Alexander Neundorf"
+msgstr "(c) 2001 - 2002 Alexander Neundorf"
+
+#: nic.cpp:28
+#, kde-format
+msgctxt "@info:credit"
+msgid "Alexander Neundorf"
+msgstr "Alexander Neundorf"
+
+#: nic.cpp:28
+#, kde-format
+msgctxt "@info:credit"
+msgid "creator"
+msgstr "creatore"
+
+#: nic.cpp:29
+#, kde-format
+msgctxt "@info:credit"
+msgid "Carl Schwan"
+msgstr "Carl Schwan"
+
+#: nic.cpp:29
+#, kde-format
+msgctxt "@info:credit"
+msgid "developer"
+msgstr "sviluppatore"
+
+#: package/contents/ui/main.qml:15
+#, kde-format
+msgid "Network Interfaces"
+msgstr "Interfacce di rete"
+
+#: package/contents/ui/main.qml:30
+#, kde-format
+msgctxt "@label"
+msgid "Name:"
+msgstr "Nome:"
+
+#: package/contents/ui/main.qml:34
+#, kde-format
+msgctxt "@label"
+msgid "Address:"
+msgstr "Indirizzo:"
+
+#: package/contents/ui/main.qml:38
+#, kde-format
+msgctxt "@label"
+msgid "Network Mask:"
+msgstr "Maschera di rete:"
+
+#: package/contents/ui/main.qml:42
+#, kde-format
+msgctxt "@label"
+msgid "Type:"
+msgstr "Tipo:"
+
+#: package/contents/ui/main.qml:46
+#, kde-format
+msgctxt "@label"
+msgid "Hardware Address:"
+msgstr "Indirizzo hardware:"
+
+#: package/contents/ui/main.qml:51
+#, kde-format
+msgctxt "@label"
+msgid "State:"
+msgstr "Stato:"
+
+#: package/contents/ui/main.qml:59
+#, kde-format
+msgctxt "State of network card is connected"
+msgid "Up"
+msgstr "Connessa"
+
+#: package/contents/ui/main.qml:60
+#, kde-format
+msgctxt "State of network card is disconnected"
+msgid "Down"
+msgstr "Disconnessa"
+
+#: package/contents/ui/main.qml:76
+#, kde-format
+msgctxt "@action:button"
+msgid "Refresh"
+msgstr "Aggiorna"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Broadcast"
+#~ msgstr "Broadcast"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Point to Point"
+#~ msgstr "Punto punto"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Multicast"
+#~ msgstr "Multicast"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Loopback"
+#~ msgstr "Loopback"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Unknown"
+#~ msgstr "Sconosciuto"
+
+#~ msgctxt "Unknown network mask"
+#~ msgid "Unknown"
+#~ msgstr "Sconosciuta"
+
+#~ msgctxt "Unknown HWaddr"
+#~ msgid "Unknown"
+#~ msgstr "Sconosciuto"
+
+#, fuzzy
+#~| msgid "Broadcast"
+#~ msgctxt "@item:intable Netork type"
+#~ msgid "Broadcast"
+#~ msgstr "Broadcast"
+
+#~ msgid "HWAddr"
+#~ msgstr "IndirHW"
+
+#~ msgid "&Update"
+#~ msgstr "&Aggiorna"
+
+#~ msgid "kcminfo"
+#~ msgstr "kcminfo"
+
+#~ msgid "System Information Control Module"
+#~ msgstr "Modulo di controllo di Impostazioni di sistema"

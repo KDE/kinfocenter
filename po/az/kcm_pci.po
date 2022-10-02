@@ -1,0 +1,1327 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the kinfocenter package.
+#
+# Xəyyam Qocayev <xxmn77@gmail.com>, 2020, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: kinfocenter\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
+"PO-Revision-Date: 2021-10-14 17:23+0400\n"
+"Last-Translator: Kheyyam Gojayev <xxmn77@gmail.com>\n"
+"Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
+"Language: az\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 21.08.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Xəyyam Qocayev"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "xxmn77@gmail.com"
+
+#: main.cpp:26
+#, kde-format
+msgctxt "@label kcm name"
+msgid "PCI"
+msgstr "PCI"
+
+#: main.cpp:27
+#, kde-format
+msgid "Harald Sitter"
+msgstr "Harald Sitter"
+
+#: package/contents/ui/main.qml:14
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "PCİ məlumatı"
+
+#~ msgid "kcm_pci"
+#~ msgstr "kcm_pci"
+
+#~ msgid "PCI Devices"
+#~ msgstr "PCI Qurğuları"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+
+#~ msgid "Nicolas Ternisien"
+#~ msgstr "Nicolas Ternisien"
+
+#~ msgid "Helge Deller"
+#~ msgstr "Helge Deller"
+
+#~ msgid "This list displays PCI information."
+#~ msgstr "Bu siyahı PCİ məlumatlarını göstərir."
+
+#~ msgid ""
+#~ "This display shows information about your computer's PCI slots and the "
+#~ "related connected devices."
+#~ msgstr ""
+#~ "Bu sizin komputerinizin PCİ yuvaları və onlara qoşulmuş qurğular haqqında "
+#~ "məlumatları göstərir."
+
+#~ msgid "Device Class"
+#~ msgstr "Cihazların sinifləri"
+
+#~ msgid "Device Subclass"
+#~ msgstr "Cihazların alt sinifləri"
+
+#~ msgid "Device Programming Interface"
+#~ msgstr "Qurğuların proqramlaşdırma interfeysi"
+
+#~ msgid "Master IDE Device"
+#~ msgstr "İDE cihazının ilkin ayarlanması"
+
+#~ msgid "Secondary programmable indicator"
+#~ msgstr "İkinci proqrmlaşa bilən göstərici"
+
+#~ msgid "Secondary operating mode"
+#~ msgstr "İkinci əməliyyat rejimi"
+
+#~ msgid "Primary programmable indicator"
+#~ msgstr "İlkin proqramlaşa bilən göstərici"
+
+#~ msgid "Primary operating mode"
+#~ msgstr "İlkin əməliyyat rejimi"
+
+#~ msgid "Vendor"
+#~ msgstr "İstehsalçı"
+
+#~ msgid "Device"
+#~ msgstr "Qurğu"
+
+#~ msgid "Subsystem"
+#~ msgstr "Alt sistem"
+
+#~ msgid " - device:"
+#~ msgstr " - qurğu:"
+
+#~ msgid "Interrupt"
+#~ msgstr "Fasilə"
+
+#~ msgid "IRQ"
+#~ msgstr "IRQ"
+
+#~ msgid "Pin"
+#~ msgstr "Pin"
+
+#~ msgid "Control"
+#~ msgstr "İdarəəetmə"
+
+#~ msgid "Response in I/O space"
+#~ msgstr "Giriş/Çıxış cavabı"
+
+#~ msgid "Response in memory space"
+#~ msgstr "Yaddaş sahəsinin cavabı"
+
+#~ msgid "Bus mastering"
+#~ msgstr "Yol göstərici"
+
+#~ msgid "Response to special cycles"
+#~ msgstr "Xüsusi dövrənin cavabı"
+
+#~ msgid "Memory write and invalidate"
+#~ msgstr "Yaddaşa yazma və yararsız etmə"
+
+#~ msgid "Palette snooping"
+#~ msgstr "Palitra istifadəsi"
+
+#~ msgid "Parity checking"
+#~ msgstr "Bərarbərlik yoxlaması"
+
+#~ msgid "Address/data stepping"
+#~ msgstr "Ünvan/Veri pillələri"
+
+#~ msgid "System error"
+#~ msgstr "Sistem xətası"
+
+#~ msgid "Back-to-back writes"
+#~ msgstr "Keşdən keşə (Back-to-back) yazmaq"
+
+#~ msgid "Status"
+#~ msgstr "Vəziyyət"
+
+#~ msgid "Interrupt status"
+#~ msgstr "Fasilə vəziyyəti"
+
+#~ msgid "Capability list"
+#~ msgstr "Qabiliyyət siyahısı"
+
+#~ msgid "66 MHz PCI 2.1 bus"
+#~ msgstr "66 MHz PCI 2.1 bus"
+
+#~ msgid "User-definable features"
+#~ msgstr "İstifadəçi tərəfindən anlaşıla bilən xüsusiyyətlər"
+
+#~ msgid "Accept fast back-to-back"
+#~ msgstr "Keşdən keşə cəld yazmanı qəbul etmək"
+
+#~ msgid "Data parity error"
+#~ msgstr "Veri bərabərlik xətası"
+
+#~ msgid "Device selection timing"
+#~ msgstr "Cahaz seçmə vaxtı"
+
+#~ msgid "Signaled target abort"
+#~ msgstr "Siqnal verilmiş hədəfin ləğvi"
+
+#~ msgid "Received target abort"
+#~ msgstr "Qəbul edilmiş hədəfin ləğvi"
+
+#~ msgid "Received master abort"
+#~ msgstr "Alınmış ilkin ayarlamanın ləğvi"
+
+#~ msgid "Signaled system error"
+#~ msgstr "Siqnal verilmiş sistem xətası"
+
+#~ msgid "Parity error"
+#~ msgstr "Bərabərlik xətası"
+
+#~ msgid "Latency"
+#~ msgstr "Gecikmə"
+
+#~ msgid "MIN_GNT"
+#~ msgstr "MIN_GNT"
+
+#~ msgid "No major requirements (0x00)"
+#~ msgstr "Başlıca tələblər yoxdur (0x00)"
+
+#~ msgid "MAX_LAT"
+#~ msgstr "MAX_LAT"
+
+#~ msgid "Header"
+#~ msgstr "Başlıq"
+
+#~ msgid "Type"
+#~ msgstr "Növ"
+
+#~ msgid "Multifunctional"
+#~ msgstr "Çoxfunksiyalı"
+
+#~ msgid "Build-in self test"
+#~ msgstr "Özü-özündə quraşdırmanın testi"
+
+#~ msgid "BIST Capable"
+#~ msgstr "BİST qabiliyyəti"
+
+#~ msgid "BIST Start"
+#~ msgstr "BİST başlamaq"
+
+#~ msgid "Completion code"
+#~ msgstr "Tamamlama kodu"
+
+#~ msgid "Size"
+#~ msgstr "Ölçü"
+
+#~ msgid "Address mappings"
+#~ msgstr "Ünvan xəritələri"
+
+#~ msgid "Mapping %1"
+#~ msgstr "%1 xəritələnir"
+
+#~ msgid "Space"
+#~ msgstr "Boşluq"
+
+#~ msgid "I/O"
+#~ msgstr "Giriş/Çıxış"
+
+#~ msgid "Memory"
+#~ msgstr "Yaddaş"
+
+#~ msgid "Prefetchable"
+#~ msgstr "Əvvəlcədən təyin oluna bilən"
+
+#~ msgid "Address"
+#~ msgstr "Ünvan"
+
+#~ msgctxt "unassigned address"
+#~ msgid "Unassigned"
+#~ msgstr "Təyin olunmamış"
+
+#~ msgctxt "unassigned size"
+#~ msgid "Unassigned"
+#~ msgstr "Təyin olunmamış"
+
+#~ msgid "Bus"
+#~ msgstr "Yol"
+
+#~ msgid "Primary bus number"
+#~ msgstr "Birinci yol nömrəsi"
+
+#~ msgid "Secondary bus number"
+#~ msgstr "İkinci yol nömrəsi"
+
+#~ msgid "Subordinate bus number"
+#~ msgstr "Alt yol nömrəsi"
+
+#~ msgid "Secondary latency timer"
+#~ msgstr "İkinci gecikmə vaxtı"
+
+#~ msgid "CardBus number"
+#~ msgstr "CardBus nömrəsi"
+
+#~ msgid "CardBus latency timer"
+#~ msgstr "CardBus gecikmə vaxt göstəricisi"
+
+#~ msgid "Secondary status"
+#~ msgstr "İkinci vəziyyət"
+
+#~ msgid "I/O behind bridge"
+#~ msgstr "Körpünün arxasındakı G/Ç"
+
+#~ msgid "32-bit"
+#~ msgstr "32-bit"
+
+#~ msgid "Base"
+#~ msgstr "Baza"
+
+#~ msgid "Limit"
+#~ msgstr "Limit"
+
+#~ msgid "Memory behind bridge"
+#~ msgstr "Körpünün arxasındakı yaddaş"
+
+#~ msgid "Prefetchable memory behind bridge"
+#~ msgstr "Körpünün arxasındakı əvvəlcədən təyin oluna bilən yaddaş"
+
+#~ msgid "64-bit"
+#~ msgstr "64-bit"
+
+#~ msgid "Bridge control"
+#~ msgstr "Körpü yoxlaması"
+
+#~ msgid "Secondary parity checking"
+#~ msgstr "İkinci bərabərlik yoxlaması"
+
+#~ msgid "Secondary system error"
+#~ msgstr "İkinci sistem xətası"
+
+#~ msgid "ISA ports forwarding"
+#~ msgstr "İSA port yönləndirməsi"
+
+#~ msgid "VGA forwarding"
+#~ msgstr "VGA yönləndirməsi"
+
+#~ msgid "Master abort"
+#~ msgstr "İlkiin ayarlama ləğvi"
+
+#~ msgid "Secondary bus reset"
+#~ msgstr "İkinci yol sifirlaması"
+
+#~ msgid "Secondary back-to-back writes"
+#~ msgstr "İkinci keşdən-keşə yazmaq"
+
+#~ msgid "Primary discard timer counts"
+#~ msgstr "Birinci sıfırlama vaxtölçəni"
+
+#~ msgid "2e10 PCI clocks"
+#~ msgstr "2e10 PCI saatı"
+
+#~ msgid "2e15 PCI clocks"
+#~ msgstr "2e15 PCI saatları"
+
+#~ msgid "Secondary discard timer counts"
+#~ msgstr "İkinci sıfırlama vaxtölçəni"
+
+#~ msgid "Discard timer error"
+#~ msgstr "Sıfırlama vaxtölçəni xətası"
+
+#~ msgid "Discard timer system error"
+#~ msgstr "Sıfırlama vaxtölçəni sistem xətası"
+
+#~ msgid "Expansion ROM"
+#~ msgstr "Genişləndirmə ROM-u"
+
+#~ msgid "Memory windows"
+#~ msgstr "Yaddaş pəncərələri"
+
+#~ msgid "Window %1"
+#~ msgstr "Pəncərə %1"
+
+#~ msgid "I/O windows"
+#~ msgstr "G/Ç pəncərələri"
+
+#~ msgid "16-bit"
+#~ msgstr "16-bit"
+
+#~ msgid "16-bit legacy interface ports"
+#~ msgstr "16-bit köhnə interfeys portları"
+
+#~ msgid "CardBus control"
+#~ msgstr "CardBus idarəetməsi"
+
+#~ msgid "Interrupts for 16-bit cards"
+#~ msgstr "16-bit kartlar üçün fasilələr"
+
+#~ msgid "Window 0 prefetchable memory"
+#~ msgstr "Pəncərə 0 əvvəlcədən təyin edilə bilən yaddaş"
+
+#~ msgid "Window 1 prefetchable memory"
+#~ msgstr "Pəncərə 1 əvvəlcədən təyin edilə bilən yaddaş"
+
+#~ msgid "Post writes"
+#~ msgstr "Sonradan yazmalar"
+
+#~ msgid "Raw PCI config space"
+#~ msgstr "Raw PCI tənzimləmə sahəsi"
+
+#~ msgid "Capabilities"
+#~ msgstr "Qabiliyyətlər"
+
+#~ msgid "Version"
+#~ msgstr "Versiya"
+
+#~ msgid "Clock required for PME generation"
+#~ msgstr "PME yaradılması üçün saat lazımdır"
+
+#~ msgid "Device-specific initialization required"
+#~ msgstr "Cihazın xüsusi işə salınması tələb edilir"
+
+#~ msgid "Maximum auxiliary current required in D3 cold"
+#~ msgstr "D3 soyuq vəziyyətində lazımi ən çox köməkçi axını"
+
+#~ msgid "D1 support"
+#~ msgstr "D1 dəstəkləməsi"
+
+#~ msgid "D2 support"
+#~ msgstr "D2 dəstəkləməsi"
+
+#~ msgid "Power management events"
+#~ msgstr "El qida idarəsi halları"
+
+#~ msgid "D0"
+#~ msgstr "D0"
+
+#~ msgid "D1"
+#~ msgstr "D1"
+
+#~ msgid "D2"
+#~ msgstr "D2"
+
+#~ msgid "D3 hot"
+#~ msgstr "D3 isti"
+
+#~ msgid "D3 cold"
+#~ msgstr "D3 soyuq"
+
+#~ msgid "Power state"
+#~ msgstr "El. qidalanma vəziyyəti"
+
+#~ msgid "Power management"
+#~ msgstr "El. qidalanma idarəsi"
+
+#~ msgid "Data select"
+#~ msgstr "Verılənlər seçimi"
+
+#~ msgid "Data scale"
+#~ msgstr "Verilənlər ölçüsü"
+
+#~ msgid "Power management status"
+#~ msgstr "El qidalanma vəziyyəti"
+
+#~ msgid "Bridge status"
+#~ msgstr "Körpü vəziyyəti"
+
+#~ msgid "Secondary bus state in D3 hot"
+#~ msgstr "D3 isti olduqda ikinci yol vəziyyəti"
+
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgid "Secondary bus power & clock control"
+#~ msgstr "İkinci yol el. qidalanması və saat idarəsi"
+
+#~ msgid "Data"
+#~ msgstr "Verilənlər"
+
+#~ msgid "Revision"
+#~ msgstr "Buraxılış"
+
+#~ msgid "Rate"
+#~ msgstr "Qiymət"
+
+#~ msgid "AGP 3.0 mode"
+#~ msgstr "AGP 3.0 rejimi"
+
+#~ msgid "Fast Writes"
+#~ msgstr "Cəld yazmalar"
+
+#~ msgid "Address over 4 GiB"
+#~ msgstr "4 GiB -dən çox ünvan"
+
+#~ msgid "Translation of host processor access"
+#~ msgstr "Ana prosessor girişinin tərcüməsi"
+
+#~ msgid "64-bit GART"
+#~ msgstr "64-bit GART"
+
+#~ msgid "Cache Coherency"
+#~ msgstr "Keş uyğunluğu"
+
+#~ msgid "Side-band addressing"
+#~ msgstr "Yan zolaq ünvanlanması"
+
+#~ msgid "Calibrating cycle"
+#~ msgstr "Kalibrləşmə dövrü"
+
+#~ msgid "Optimum asynchronous request size"
+#~ msgstr "Ən uyğun eyniləşməyən təlabat ölçüsü"
+
+#~ msgid "Isochronous transactions"
+#~ msgstr "Eynitezlikli əməliyyatlar"
+
+#~ msgid "Maximum number of AGP command"
+#~ msgstr "AGP əmrinin maksimum sayı"
+
+#~ msgid "Configuration"
+#~ msgstr "Tənzimləmə"
+
+#~ msgid "AGP"
+#~ msgstr "AGP"
+
+#~ msgid "Data address"
+#~ msgstr "Verilər ünvanı"
+
+#~ msgid "Transfer completed"
+#~ msgstr "Köçürmə başa çatdı"
+
+#~ msgid "Message control"
+#~ msgstr "Məlumat nəzarəti"
+
+#~ msgid "Message signaled interrupts"
+#~ msgstr "Xəbərin siqnallı fasilələri"
+
+#~ msgid "Multiple message capable"
+#~ msgstr "Çoxlu xəbər göndərmə qabiliyyəti"
+
+#~ msgid "Multiple message enable"
+#~ msgstr "Çoxlu xəbəri aktiv etmək"
+
+#~ msgid "64-bit address"
+#~ msgstr "64-bitlik ünvan"
+
+#~ msgid "Per vector masking"
+#~ msgstr "Hər vektorun maskalanması"
+
+#~ msgid "Mask"
+#~ msgstr "Maska"
+
+#~ msgid "Pending"
+#~ msgstr "Gözləmə"
+
+#~ msgid "Length"
+#~ msgstr "Uzunluq"
+
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "Heç biri"
+
+#~ msgid "Next"
+#~ msgstr "Növbəti"
+
+#~ msgid "0x00 (None)"
+#~ msgstr "0x00 (heç biri)"
+
+#~ msgid "Root only"
+#~ msgstr "Ancaq kök (root)"
+
+#~ msgid "Value"
+#~ msgstr "Dəyər"
+
+#~ msgid "Cache line size"
+#~ msgstr "Keş sətiri ölçüsü"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Enabled"
+#~ msgstr "Aktiv etmək"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Disabled"
+#~ msgstr "Söndürmək"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Yes"
+#~ msgstr "Bəli"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "Xeyir"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Unknown"
+#~ msgstr "Naməlum"
+
+#~ msgid "Unclassified device"
+#~ msgstr "Təsnif edilməmiş qurğu"
+
+#~ msgid "Mass storage controller"
+#~ msgstr "Saxlama yaddaşı nəzarətçisi"
+
+#~ msgid "Network controller"
+#~ msgstr "Şəbəkə nəzarətçisi"
+
+#~ msgid "Display controller"
+#~ msgstr "Görüntü nəzarətçisi"
+
+#~ msgid "Multimedia controller"
+#~ msgstr "Multimediya nəzarətçisi"
+
+#~ msgid "Memory controller"
+#~ msgstr "Yaddaş nəzarətçisi"
+
+#~ msgid "Bridge"
+#~ msgstr "Körpü"
+
+#~ msgid "Communication controller"
+#~ msgstr "Rabitə nəzarətçisi"
+
+#~ msgid "Generic system peripheral"
+#~ msgstr "Əsas sistem mühiti qurğusu"
+
+#~ msgid "Input device controller"
+#~ msgstr "Giriş cihazı nəzarətçisi"
+
+#~ msgid "Docking station"
+#~ msgstr "Dok stansiya"
+
+#~ msgid "Processor"
+#~ msgstr "Prosessor"
+
+#~ msgid "Serial bus controller"
+#~ msgstr "Ardıcıl yol (bus) nəzarətçisi"
+
+#~ msgid "Wireless controller"
+#~ msgstr "Simsiz şəbəkə nəzarətçisi"
+
+#~ msgid "Intelligent controller"
+#~ msgstr "Ağıllı nəzarətçi"
+
+#~ msgid "Satellite communications controller"
+#~ msgstr "Peyk rabitəsi nəzarətçisi"
+
+#~ msgid "Encryption controller"
+#~ msgstr "Şifrələmə nəzarətçisi"
+
+#~ msgid "Signal processing controller"
+#~ msgstr "Siqnal nəzarətçisi"
+
+#~ msgid "Processing accelerators"
+#~ msgstr "Əməliyyat sürətləndiriciləri"
+
+#~ msgid "Non-Essential Instrumentation"
+#~ msgstr "Qeyri-zəruri alətlər"
+
+#~ msgid "Coprocessor"
+#~ msgstr "Köməkçi prosessor"
+
+#~ msgid "Unassigned class"
+#~ msgstr "Təyin olunmamış sinif"
+
+#~ msgid "Unknown device class"
+#~ msgstr "Naməlum cihaz sinifi"
+
+#~ msgid "Non-VGA unclassified device"
+#~ msgstr "VGA olmayan sinifləndirilməmiş qurğusu"
+
+#~ msgid "VGA unclassified device"
+#~ msgstr "VGA sinifləndirilməmiş qurğusu"
+
+#~ msgid "Unknown unclassified device"
+#~ msgstr "Naməlum sinifləndirilməmiş cihaz"
+
+#~ msgid "SCSI storage controller"
+#~ msgstr "SCSI saxlama nəzarətçisi"
+
+#~ msgid "IDE controller"
+#~ msgstr "İDE nəzarətçisi"
+
+#~ msgid "Floppy disk controller"
+#~ msgstr "Floppi disk nəzarətçisi"
+
+#~ msgid "IPI bus controller"
+#~ msgstr "İPİ yol nəzarətçisi"
+
+#~ msgid "RAID bus controller"
+#~ msgstr "RAİD yol nəzarətçisi"
+
+#~ msgid "ATA controller"
+#~ msgstr "ATA nəzarətçisi"
+
+#~ msgid "SATA controller"
+#~ msgstr "SATA nəzarətçisi"
+
+#~ msgid "Serial Attached SCSI controller"
+#~ msgstr "SCSI Serial port nəzarətçisi"
+
+#~ msgid "Non-Volatile memory controller"
+#~ msgstr "Dəyişməyən yaddaş nəzarətçisi"
+
+#~ msgid "Unknown storage controller"
+#~ msgstr "Naməlum saxlama nəzarətçisi"
+
+#~ msgid "Ethernet controller"
+#~ msgstr "Ethernet nəzarətçisi"
+
+#~ msgid "Token ring network controller"
+#~ msgstr "İçarələnmiş halqa (token ring) şəbəkə nəzarətçisi"
+
+#~ msgid "FDDI network controller"
+#~ msgstr "FDDİ şəbəkə nəzarətçisi"
+
+#~ msgid "ATM network controller"
+#~ msgstr "ATM şəbəkə nəzarətçisi"
+
+#~ msgid "ISDN controller"
+#~ msgstr "İSDN nəzarətçisi"
+
+#~ msgid "WorldFip controller"
+#~ msgstr "WorldFip nəzarətçisi"
+
+#~ msgid "PICMG controller"
+#~ msgstr "PICMG nəzarətçisi"
+
+#~ msgid "Infiniband controller"
+#~ msgstr "Klaviatura nəzarətçisi"
+
+#~ msgid "Fabric controller"
+#~ msgstr "Fabric nəzarətçisi"
+
+#~ msgid "Unknown network controller"
+#~ msgstr "Naməlum şəbəkə nəzarətçisi"
+
+#~ msgid "VGA compatible controller"
+#~ msgstr "VGA uzlaşma nəzarətçisi"
+
+#~ msgid "XGA compatible controller"
+#~ msgstr "XGA uzlaşma nəzarətçisi"
+
+#~ msgid "3D controller"
+#~ msgstr "3D nəzarətçisi"
+
+#~ msgid "Unknown display controller"
+#~ msgstr "Naməlum görüntü nəzarətçisi"
+
+#~ msgid "Multimedia video controller"
+#~ msgstr "Multimediya video nəzarətçisi"
+
+#~ msgid "Multimedia audio controller"
+#~ msgstr "Multimediya səs nəzarətçisi"
+
+#~ msgid "Computer telephony device"
+#~ msgstr "Komputer telefonu nəzarətçisi"
+
+#~ msgid "Audio device"
+#~ msgstr "Audio nəzarətçisi"
+
+#~ msgid "Unknown multimedia controller"
+#~ msgstr "Naməlum multimediya nəzarətçisi"
+
+#~ msgid "RAM memory"
+#~ msgstr "RAM yaddaş"
+
+#~ msgid "FLASH memory"
+#~ msgstr "FLASH yaddaş"
+
+#~ msgid "Unknown memory controller"
+#~ msgstr "Naməlum yaddaş nəzarətçisi"
+
+#~ msgid "Host bridge"
+#~ msgstr "Ana cihaz (host) körpüsü"
+
+#~ msgid "ISA bridge"
+#~ msgstr "İSA körpüsü"
+
+#~ msgid "EISA bridge"
+#~ msgstr "EİSA körpüsü"
+
+#~ msgid "MicroChannel bridge"
+#~ msgstr "MicroChannel körpüsü"
+
+#~ msgid "PCI bridge"
+#~ msgstr "PCİ körpüsü"
+
+#~ msgid "PCMCIA bridge"
+#~ msgstr "PCMCIA körpüsü"
+
+#~ msgid "NuBus bridge"
+#~ msgstr "NuBus körpüsü"
+
+#~ msgid "CardBus bridge"
+#~ msgstr "CardBus körpüsü"
+
+#~ msgid "RACEway bridge"
+#~ msgstr "RACEway körpüsü"
+
+#~ msgid "Semi-transparent PCI-to-PCI bridge"
+#~ msgstr "Yarım keçirici PCİ-PCİ körpüsü"
+
+#~ msgid "InfiniBand to PCI host bridge"
+#~ msgstr "InfiniBand - PCI ana körpüsü"
+
+#~ msgid "Unknown bridge"
+#~ msgstr "Naməlum körpü"
+
+#~ msgid "Serial controller"
+#~ msgstr "Ardicil port nəzarətçisi"
+
+#~ msgid "Parallel controller"
+#~ msgstr "Paralel nəzarətçi"
+
+#~ msgid "Multiport serial controller"
+#~ msgstr "Çoxsaylı port ardıcıl nəzarətçisi"
+
+#~ msgid "Modem"
+#~ msgstr "Modem"
+
+#~ msgid "GPIB controller"
+#~ msgstr "GPIB nəzarətçisi"
+
+#~ msgid "Smart card controller"
+#~ msgstr "Smart-card nəzarətçisi"
+
+#~ msgid "Unknown communication controller"
+#~ msgstr "Naməlum rabitə nəzarətçisi"
+
+#~ msgid "PIC"
+#~ msgstr "PİC"
+
+#~ msgid "DMA controller"
+#~ msgstr "DMA nəzarətçisi"
+
+#~ msgid "Timer"
+#~ msgstr "Vaxtölçən"
+
+#~ msgid "RTC"
+#~ msgstr "RTC"
+
+#~ msgid "PCI Hot-plug controller"
+#~ msgstr "PCİ qoşma nəzarətçisi"
+
+#~ msgid "SD Host controller"
+#~ msgstr "SD Host nəzarətçisi"
+
+#~ msgid "IOMMU"
+#~ msgstr "IOMMU"
+
+#~ msgid "Unknown system peripheral"
+#~ msgstr "Naməlum sistem mühiti"
+
+#~ msgid "Keyboard controller"
+#~ msgstr "Klaviatura nəzarətçisi"
+
+#~ msgid "Digitizer Pen"
+#~ msgstr "Rəqəmsal qələm"
+
+#~ msgid "Mouse controller"
+#~ msgstr "Siçan nəzarətçisi"
+
+#~ msgid "Scanner controller"
+#~ msgstr "Skaner nəzarətçisi"
+
+#~ msgid "Gameport controller"
+#~ msgstr "Oyun portu nəzarətçisi"
+
+#~ msgid "Unknown input device controller"
+#~ msgstr "Naməlum giriş cihazı nəzarətçisi"
+
+#~ msgid "Generic docking station"
+#~ msgstr "Əsas dok stansiyası"
+
+#~ msgid "Unknown docking station"
+#~ msgstr "Naməlum dok stansiyası"
+
+#~ msgid "386"
+#~ msgstr "386"
+
+#~ msgid "486"
+#~ msgstr "486"
+
+#~ msgid "Pentium"
+#~ msgstr "Pentium"
+
+#~ msgid "Alpha"
+#~ msgstr "Alpha"
+
+#~ msgid "Power PC"
+#~ msgstr "Power PC"
+
+#~ msgid "MIPS"
+#~ msgstr "MIPS"
+
+#~ msgid "Co-processor"
+#~ msgstr "Köməkçi processor"
+
+#~ msgid "Unknown processor"
+#~ msgstr "Naməlum prosessor"
+
+#~ msgid "FireWire (IEEE 1394)"
+#~ msgstr "FireWire (IEEE 1394)"
+
+#~ msgid "ACCESS bus"
+#~ msgstr "ACCESS yolu"
+
+#~ msgid "SSA"
+#~ msgstr "SSA"
+
+#~ msgid "USB controller"
+#~ msgstr "USB nəzarətçisi"
+
+#~ msgid "Fibre channel"
+#~ msgstr "Fiber kanal"
+
+#~ msgid "SMBus"
+#~ msgstr "SMBus"
+
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#~ msgid "IPMI interface"
+#~ msgstr "IPMI interfeysi"
+
+#~ msgid "SERCOS interface"
+#~ msgstr "SERCOS interfeysi"
+
+#~ msgid "CANbus"
+#~ msgstr "CANbus"
+
+#~ msgid "Unknown serial bus controller"
+#~ msgstr "Naməlum ardıcıl yol nəzarətçisi"
+
+#~ msgid "IRDA controller"
+#~ msgstr "İRDA nəzarətçisi"
+
+#~ msgid "Consumer IR controller"
+#~ msgstr "Məişət İR nəzarətçisi"
+
+#~ msgid "RF controller"
+#~ msgstr "RF nəzarətçisi"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Broadband"
+#~ msgstr "Genişkanallı"
+
+#~ msgid "Ethernet (802.11a - 5 GHz)"
+#~ msgstr "Ethernet (802.11a - 5 GHz)"
+
+#~ msgid "Ethernet (802.11b - 2.4 GHz)"
+#~ msgstr "Ethernet (802.11b - 2.4 GHz)"
+
+#~ msgid "Unknown wireless controller"
+#~ msgstr "Naməlum simsiz rabitə nəzarətçisi"
+
+#~ msgid "I2O"
+#~ msgstr "I2O"
+
+#~ msgid "Unknown intelligent controller"
+#~ msgstr "Naməlum ağıllı cihaz nəzarətçisi"
+
+#~ msgid "Satellite TV controller"
+#~ msgstr "Peyk TV nəzarətçisi"
+
+#~ msgid "Satellite audio communication controller"
+#~ msgstr "Peyk səs rabitəsi nəzarətçisi"
+
+#~ msgid "Satellite voice communication controller"
+#~ msgstr "Peyk səsli rabitə nəzarətçisi"
+
+#~ msgid "Satellite data communication controller"
+#~ msgstr "Peyk məlumatların ötürülməsi rabitəsi nəzarətçisi"
+
+#~ msgid "Unknown satellite communications controller"
+#~ msgstr "Naməlum peyk rabitəsi nəzarətçisi"
+
+#~ msgid "Network and computing encryption device"
+#~ msgstr "Hesablama şəbəkəsinin şifrələmə cihazı"
+
+#~ msgid "Entertainment encryption device"
+#~ msgstr "Multimediya şifrələmə cihazı"
+
+#~ msgid "Unknown encryption controller"
+#~ msgstr "Naməlum şifrələmə nəzarətçisi"
+
+#~ msgid "DPIO module"
+#~ msgstr "DPİO modulu"
+
+#~ msgid "Performance counters"
+#~ msgstr "Məhsuldarlıq sayğacı"
+
+#~ msgid "Communication synchronizer"
+#~ msgstr "Məlumat ötürmə eyniləşdiricisi"
+
+#~ msgid "Signal processing management"
+#~ msgstr "Siqnal işləmə idarəçisi"
+
+#~ msgid "Unknown signal processing controller"
+#~ msgstr "Naməlum siqnal işləmə nəzarətçisi"
+
+#~ msgid "Unknown processing accelerator"
+#~ msgstr "Naməlum əməliyyat sürətləndirici"
+
+#~ msgid "Unknown subdevice class"
+#~ msgstr "Naməlum alt cihaz sinifi"
+
+#~ msgid "ISA Compatibility mode-only controller"
+#~ msgstr "Yalnız İSA ilə uzlaşma rejimində işləyən nəzarətçi"
+
+#~ msgid "PCI native mode-only controller"
+#~ msgstr "Yalnız PCİ rejimi üçün təyn olunan nəzarətçi"
+
+#~ msgid ""
+#~ "ISA Compatibility mode controller, supports both channels switched to PCI "
+#~ "native mode"
+#~ msgstr ""
+#~ "PCİ ilə uyğun hər iki kanalı dəstəkləyən yalnız İSA rejimi üçün təyin "
+#~ "olunan nəzarətçi"
+
+#~ msgid ""
+#~ "PCI native mode controller, supports both channels switched to ISA "
+#~ "compatibility mode"
+#~ msgstr ""
+#~ "İSA ilə uyğun hər iki kanalı dəstəkləyən yalnız PCİ rejimi üçün təyin "
+#~ "olunan nəzarətçi"
+
+#~ msgid "ISA Compatibility mode-only controller, supports bus mastering"
+#~ msgstr ""
+#~ "Yol tənzimləməsini dəstəkləyən  və yalnız İSA ilə uyğun rejimdə işləyən "
+#~ "nəzarətçi"
+
+#~ msgid "PCI native mode-only controller, supports bus mastering"
+#~ msgstr ""
+#~ "Yol tənzimləməsini dəstəkləyən  və yalnız PCİ ilə uyğun rejimdə işləyən "
+#~ "nəzarətçi"
+
+#~ msgid ""
+#~ "ISA Compatibility mode controller, supports both channels switched to PCI "
+#~ "native mode, supports bus mastering"
+#~ msgstr ""
+#~ "Yalnız İSA ilə uyğun rejimdə işləyən, yol (bus) tənzimləməsini və PCİ "
+#~ "rejimində hər iki kanalı dəstəkləyən nəzarətçi"
+
+#~ msgid ""
+#~ "PCI native mode controller, supports both channels switched to ISA "
+#~ "compatibility mode, supports bus mastering"
+#~ msgstr ""
+#~ "Yol (bus) tənzimləməsini dəstəkləyən İSA ilə uzlaşan hər iki kanalı "
+#~ "dəstəkləyən yalnız PCİ rejimi üçün təyin olunan nəzarətçi"
+
+#~ msgid "ADMA single stepping"
+#~ msgstr "ADMA addım-addım icra etmə"
+
+#~ msgid "ADMA continuous operation"
+#~ msgstr "ADMA fasiləsiz icra etmə"
+
+#~ msgid "Vendor specific"
+#~ msgstr "İstehsalçının göstəriciləri"
+
+#~ msgid "AHCI 1.0"
+#~ msgstr "AHCI 1.0"
+
+#~ msgid "Serial Storage Bus"
+#~ msgstr "Ardıcıl saxlama yolu"
+
+#~ msgid "NVMHCI"
+#~ msgstr "NVMHCI"
+
+#~ msgid "NVM Express"
+#~ msgstr "NVM Express"
+
+#~ msgid "VGA controller"
+#~ msgstr "VGA nəzarətçi"
+
+#~ msgid "8514 controller"
+#~ msgstr "8514 nəzarətçi"
+
+#~ msgid "Normal decode"
+#~ msgstr "Normal deşifrələmə"
+
+#~ msgid "Subtractive decode"
+#~ msgstr "Özündən əvvəlkini ləğv etməklə deşifrələmə"
+
+#~ msgid "Transparent mode"
+#~ msgstr "Şəffaf rejim"
+
+#~ msgid "Endpoint mode"
+#~ msgstr "Bitmə nöqtəsi rejimi"
+
+#~ msgid "Primary bus towards host CPU"
+#~ msgstr "Mərkəzi prosessora birinci yol"
+
+#~ msgid "Secondary bus towards host CPU"
+#~ msgstr "Mərkəzi prosessora ikinci yol"
+
+#~ msgid "8250"
+#~ msgstr "8250"
+
+#~ msgid "16450"
+#~ msgstr "16450"
+
+#~ msgid "16550"
+#~ msgstr "16550"
+
+#~ msgid "16650"
+#~ msgstr "16650"
+
+#~ msgid "16750"
+#~ msgstr "16750"
+
+#~ msgid "16850"
+#~ msgstr "16850"
+
+#~ msgid "16950"
+#~ msgstr "16950"
+
+#~ msgid "SPP"
+#~ msgstr "SPP"
+
+#~ msgid "BiDir"
+#~ msgstr "BiDir"
+
+#~ msgid "ECP"
+#~ msgstr "ECP"
+
+#~ msgid "IEEE1284"
+#~ msgstr "IEEE1284"
+
+#~ msgid "IEEE1284 Target"
+#~ msgstr "IEEE1284 Hədəf"
+
+#~ msgid "Generic"
+#~ msgstr "Əsas"
+
+#~ msgid "Hayes/16450"
+#~ msgstr "Hayes/16450"
+
+#~ msgid "Hayes/16550"
+#~ msgstr "Hayes/16550"
+
+#~ msgid "Hayes/16650"
+#~ msgstr "Hayes/16650"
+
+#~ msgid "Hayes/16750"
+#~ msgstr "Hayes/16750"
+
+#~ msgid "8259"
+#~ msgstr "8259"
+
+#~ msgid "ISA PIC"
+#~ msgstr "ISA PIC"
+
+#~ msgid "EISA PIC"
+#~ msgstr "EISA PIC"
+
+#~ msgid "IO-APIC"
+#~ msgstr "IO-APIC"
+
+#~ msgid "IO(X)-APIC"
+#~ msgstr "IO(X)-APIC"
+
+#~ msgid "8237"
+#~ msgstr "8237"
+
+#~ msgid "ISA DMA"
+#~ msgstr "ISA DMA"
+
+#~ msgid "EISA DMA"
+#~ msgstr "EISA DMA"
+
+#~ msgid "8254"
+#~ msgstr "8254"
+
+#~ msgid "ISA timer"
+#~ msgstr "ISA vaxtölçəni"
+
+#~ msgid "EISA timers"
+#~ msgstr "EISA vaxtölçənləri"
+
+#~ msgid "HPET"
+#~ msgstr "HPET"
+
+#~ msgid "ISA RTC"
+#~ msgstr "ISA RTC"
+
+#~ msgid "Extended"
+#~ msgstr "Genişləndirilmiş"
+
+#~ msgid "OHCI"
+#~ msgstr "OHCI"
+
+#~ msgid "UHCI"
+#~ msgstr "UHCI"
+
+#~ msgid "EHCI"
+#~ msgstr "EHCI"
+
+#~ msgid "XHCI"
+#~ msgstr "XHCI"
+
+#~ msgid "Unspecified"
+#~ msgstr "Təyin edilməmiş"
+
+#~ msgid "USB Device"
+#~ msgstr "USB qurğusu"
+
+#~ msgid "SMIC"
+#~ msgstr "SMIC"
+
+#~ msgid "Keyboard controller style"
+#~ msgstr "Klaviatura nəzarətçisi növü"
+
+#~ msgid "Block transfer"
+#~ msgstr "Blok transferi"
+
+#~ msgid "Vital product data"
+#~ msgstr "Məhsul haqqında vacib məlumatlar"
+
+#~ msgid "Slot identification"
+#~ msgstr "Slot identifikatoru"
+
+#~ msgid "CompactPCI hot swap"
+#~ msgstr "CompactPCI qaynar dəyişdirilməsi"
+
+#~ msgid "HyperTransport"
+#~ msgstr "HyperTransport"
+
+#~ msgid "Debug port"
+#~ msgstr "Sazlama (debug) portu"
+
+#~ msgid "CompactPCI central resource control"
+#~ msgstr "CompactPCI resurslarına nəzarət mərkəzi"
+
+#~ msgid "PCI hot-plug"
+#~ msgstr "PCİ qaynar dəyişdirilməsi"
+
+#~ msgid "AGP x8"
+#~ msgstr "AGP x8"
+
+#~ msgid "Secure device"
+#~ msgstr "Təhlükəsiz cihaz"
+
+#~ msgid "PCI express"
+#~ msgstr "PCI express"
+
+#~ msgid "MSI-X"
+#~ msgstr "MSI-X"
+
+#~ msgid "PCI Advanced Features"
+#~ msgstr "PCİ əlavə imkanları"
+
+#~ msgid "Fast"
+#~ msgstr "Cəld"
+
+#~ msgid "Medium"
+#~ msgstr "Orta"
+
+#~ msgid "Slow"
+#~ msgstr "Yavaş"
+
+#~ msgid "32 bit"
+#~ msgstr "32 bit"
+
+#~ msgid "Below 1M"
+#~ msgstr "1M-dan az"
+
+#~ msgid "64 bit"
+#~ msgstr "64 bit"
+
+#~ msgid "Standard"
+#~ msgstr "Standard"
+
+#~ msgid "CardBus"
+#~ msgstr "CardBus"
+
+#~ msgid "1X"
+#~ msgstr "1X"
+
+#~ msgid "2X"
+#~ msgstr "2X"
+
+#~ msgid "1X & 2X"
+#~ msgstr "1X & 2X"
+
+#~ msgid "4X"
+#~ msgstr "4X"
+
+#~ msgid "1X & 4X"
+#~ msgstr "1X & 4X"
+
+#~ msgid "2X & 4X"
+#~ msgstr "2X & 4X"
+
+#~ msgid "1X & 2X & 4X"
+#~ msgstr "1X & 2X & 4X"
+
+#~ msgid "8X"
+#~ msgstr "8X"
+
+#~ msgid "4X & 8X"
+#~ msgstr "4X & 8X"
+
+#~ msgid "4 ms"
+#~ msgstr "4 msan"
+
+#~ msgid "16 ms"
+#~ msgstr "16 msan"
+
+#~ msgid "64 ms"
+#~ msgstr "64 msan"
+
+#~ msgid "256 ms"
+#~ msgstr "256 msan"
+
+#~ msgid "Not needed"
+#~ msgstr "Tələb edilmir"
+
+#~ msgid "0 (self powered)"
+#~ msgstr "0 (öz el. qidalanması)"
+
+#~ msgid "55 mA"
+#~ msgstr "55 mA"
+
+#~ msgid "100 mA"
+#~ msgstr "100 mA"
+
+#~ msgid "160 mA"
+#~ msgstr "160 mA"
+
+#~ msgid "220 mA"
+#~ msgstr "220 mA"
+
+#~ msgid "270 mA"
+#~ msgstr "270 mA"
+
+#~ msgid "320 mA"
+#~ msgstr "320 mA"
+
+#~ msgid "375 mA"
+#~ msgstr "375 mA"
+
+#~ msgid "1 vector"
+#~ msgstr "1 vektor"
+
+#~ msgid "2 vectors"
+#~ msgstr "2 vektor"
+
+#~ msgid "4 vectors"
+#~ msgstr "4 vektor"
+
+#~ msgid "8 vectors"
+#~ msgstr "8 vektor"
+
+#~ msgid "16 vectors"
+#~ msgstr "16 vektor"
+
+#~ msgid "32 vectors"
+#~ msgstr "32 vektor"

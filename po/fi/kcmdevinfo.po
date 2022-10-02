@@ -1,0 +1,730 @@
+# Finnish messages for kcmdevinfo.
+# Copyright © 2010, 2011 This_file_is_part_of_KDE
+# This file is distributed under the same license as the kdebase package.
+# Tommi Nieminen <translator@legisign.org>, 2010, 2011, 2012, 2015, 2018, 2020.
+# Lasse Liehu <lliehu@kolumbus.fi>, 2011, 2012, 2013, 2014, 2015, 2016.
+# Jorma Karvonen <karvonen.jorma@gmail.com>, 2011.
+#
+# KDE Finnish translation sprint participants:
+# Author: Lliehu
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmdevinfo\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-09-03 00:18+0000\n"
+"PO-Revision-Date: 2020-06-18 19:15+0300\n"
+"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
+"Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-POT-Import-Date: 2012-12-01 22:22:21+0000\n"
+"X-Generator: Lokalize 20.04.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Tommi Nieminen, Lasse Liehu, Jorma Karvonen"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"translator@legisign.org, lasse.liehu@gmail.com, karvonen.jorma@gmail.com"
+
+#: devicelisting.cpp:41
+#, kde-format
+msgctxt "Device Listing Whats This"
+msgid "Shows all the devices that are currently listed."
+msgstr "Näyttää kaikki tällä hetkellä luetellut laitteet."
+
+#: devicelisting.cpp:44
+#, kde-format
+msgid "Devices"
+msgstr "Laitteet"
+
+#: devicelisting.cpp:57
+#, kde-format
+msgid "Collapse All"
+msgstr "Supista kaikki"
+
+#: devicelisting.cpp:60
+#, kde-format
+msgid "Expand All"
+msgstr "Laajenna kaikki"
+
+#: devicelisting.cpp:63
+#, kde-format
+msgid "Show All Devices"
+msgstr "Näytä kaikki laitteet"
+
+#: devicelisting.cpp:66
+#, kde-format
+msgid "Show Relevant Devices"
+msgstr "Näytä asiaankuuluvat laitteet"
+
+#: devicelisting.cpp:95
+#, kde-format
+msgctxt "unknown device type"
+msgid "Unknown"
+msgstr "Tuntematon"
+
+#: devicelisting.cpp:136 devinfo.cpp:79
+#, kde-format
+msgctxt "no device UDI"
+msgid "None"
+msgstr "Ei UID:tä"
+
+#: devinfo.cpp:28
+#, kde-format
+msgid "kcmdevinfo"
+msgstr "kcmdevinfo"
+
+#: devinfo.cpp:28
+#, kde-format
+msgid "Device Viewer"
+msgstr "Laitekatselin"
+
+#: devinfo.cpp:28
+#, kde-format
+msgid "(c) 2010 David Hubner"
+msgstr "© 2010 David Hubner"
+
+#: devinfo.cpp:58
+#, kde-format
+msgid "UDI: "
+msgstr "UDI: "
+
+#: devinfo.cpp:66
+#, kde-format
+msgctxt "Udi Whats This"
+msgid "Shows the current device's UDI (Unique Device Identifier)"
+msgstr "Näytä nykyisen laitteen UDIn (ainutkertainen laitetunniste)"
+
+#: infopanel.cpp:20
+#, kde-format
+msgid "Device Information"
+msgstr "Laitetiedot"
+
+#: infopanel.cpp:29
+#, kde-format
+msgctxt "Info Panel Whats This"
+msgid "Shows information about the currently selected device."
+msgstr "Näyttää tietoa valitusta laitteesta."
+
+#: infopanel.cpp:56
+#, kde-format
+msgid ""
+"\n"
+"Solid Based Device Viewer Module"
+msgstr ""
+"\n"
+"Solid-perustainen laitteenkatselinmoduuli"
+
+#: infopanel.cpp:119
+#, kde-format
+msgid "Description: "
+msgstr "Kuvaus: "
+
+#: infopanel.cpp:121
+#, kde-format
+msgid "Product: "
+msgstr "Tuote: "
+
+#: infopanel.cpp:123
+#, kde-format
+msgid "Vendor: "
+msgstr "Valmistaja: "
+
+#: infopanel.cpp:145
+#, kde-format
+msgid "Yes"
+msgstr "Kyllä"
+
+#: infopanel.cpp:147
+#, kde-format
+msgid "No"
+msgstr "Ei"
+
+#: infopanel.h:36
+#, kde-format
+msgctxt "name of something is not known"
+msgid "Unknown"
+msgstr "Tuntematon"
+
+#: soldevice.cpp:66
+#, kde-format
+msgctxt "unknown device"
+msgid "Unknown"
+msgstr "Tuntematon"
+
+#: soldevice.cpp:92
+#, kde-format
+msgctxt "Default device tooltip"
+msgid "A Device"
+msgstr "Laite"
+
+#: soldevicetypes.cpp:43
+#, kde-format
+msgid "Processors"
+msgstr "Suorittimet"
+
+#: soldevicetypes.cpp:59
+#, kde-format
+msgid "Processor %1"
+msgstr "Suoritin %1"
+
+#: soldevicetypes.cpp:76
+#, kde-format
+msgid "Intel MMX"
+msgstr "Intel MMX "
+
+#: soldevicetypes.cpp:79
+#, kde-format
+msgid "Intel SSE"
+msgstr "Intel SSE "
+
+#: soldevicetypes.cpp:82
+#, kde-format
+msgid "Intel SSE2"
+msgstr "Intel SSE2 "
+
+#: soldevicetypes.cpp:85
+#, kde-format
+msgid "Intel SSE3"
+msgstr "Intel SSE3 "
+
+#: soldevicetypes.cpp:88
+#, kde-format
+msgid "Intel SSSE3"
+msgstr "Intel SSSE3"
+
+#: soldevicetypes.cpp:91
+#, kde-format
+msgid "Intel SSE4.1"
+msgstr "Intel SSE4.1"
+
+#: soldevicetypes.cpp:94
+#, kde-format
+msgid "Intel SSE4.2"
+msgstr "Intel SSE4.2"
+
+#: soldevicetypes.cpp:97
+#, kde-format
+msgid "AMD 3DNow!"
+msgstr "AMD 3DNow!"
+
+#: soldevicetypes.cpp:100
+#, kde-format
+msgid "ATI IVEC"
+msgstr "ATI IVEC "
+
+#: soldevicetypes.cpp:103
+#, kde-format
+msgctxt "no instruction set extensions"
+msgid "None"
+msgstr "Ei mitään"
+
+#: soldevicetypes.cpp:106
+#, kde-format
+msgid "Processor Number: "
+msgstr "Suorittimen numero: "
+
+#: soldevicetypes.cpp:106
+#, kde-format
+msgid "Max Speed: "
+msgstr "Enimmäisnopeus: "
+
+#: soldevicetypes.cpp:107
+#, kde-format
+msgid "Supported Instruction Sets: "
+msgstr "Tuetut käskykannat: "
+
+#: soldevicetypes.cpp:132
+#, kde-format
+msgid "Storage Drives"
+msgstr "Tallennusasemat"
+
+#: soldevicetypes.cpp:151
+#, kde-format
+msgid "Hard Disk Drive"
+msgstr "Kiintolevy"
+
+#: soldevicetypes.cpp:154
+#, kde-format
+msgid "Compact Flash Reader"
+msgstr "Compact Flash -kortinlukija"
+
+#: soldevicetypes.cpp:157
+#, kde-format
+msgid "Smart Media Reader"
+msgstr "Smart Media -kortinlukija"
+
+#: soldevicetypes.cpp:160
+#, kde-format
+msgid "SD/MMC Reader"
+msgstr "SD/MMC-kortinlukija"
+
+#: soldevicetypes.cpp:163
+#, kde-format
+msgid "Optical Drive"
+msgstr "Optinen asema"
+
+#: soldevicetypes.cpp:166
+#, kde-format
+msgid "Memory Stick Reader"
+msgstr "Muistitikunlukija"
+
+#: soldevicetypes.cpp:169
+#, kde-format
+msgid "xD Reader"
+msgstr "xD-kortinlukija"
+
+#: soldevicetypes.cpp:172
+#, kde-format
+msgid "Unknown Drive"
+msgstr "Tuntematon laite"
+
+#: soldevicetypes.cpp:192
+#, kde-format
+msgid "IDE"
+msgstr "IDE"
+
+#: soldevicetypes.cpp:195
+#, kde-format
+msgid "USB"
+msgstr "USB"
+
+#: soldevicetypes.cpp:198
+#, kde-format
+msgid "IEEE1394"
+msgstr "IEEE1394"
+
+#: soldevicetypes.cpp:201
+#, kde-format
+msgid "SCSI"
+msgstr "SCSI"
+
+#: soldevicetypes.cpp:204
+#, kde-format
+msgid "SATA"
+msgstr "SATA"
+
+#: soldevicetypes.cpp:207
+#, kde-format
+msgctxt "platform storage bus"
+msgid "Platform"
+msgstr "Alusta"
+
+#: soldevicetypes.cpp:210
+#, kde-format
+msgctxt "unknown storage bus"
+msgid "Unknown"
+msgstr "Tuntematon"
+
+#: soldevicetypes.cpp:213
+#, kde-format
+msgid "Bus: "
+msgstr "Väylä: "
+
+#: soldevicetypes.cpp:213
+#, kde-format
+msgid "Hotpluggable?"
+msgstr "Ajonaikaisesti kytkettävä?"
+
+#: soldevicetypes.cpp:213
+#, kde-format
+msgid "Removable?"
+msgstr "Siirrettävä?"
+
+#: soldevicetypes.cpp:257
+#, kde-format
+msgid "Unused"
+msgstr "Käyttämätön"
+
+#: soldevicetypes.cpp:260
+#, kde-format
+msgid "File System"
+msgstr "Tiedostojärjestelmä"
+
+#: soldevicetypes.cpp:263
+#, kde-format
+msgid "Partition Table"
+msgstr "Osiotaulukko"
+
+#: soldevicetypes.cpp:266
+#, kde-format
+msgid "Raid"
+msgstr "RAID"
+
+#: soldevicetypes.cpp:269
+#, kde-format
+msgid "Encrypted"
+msgstr "Salattu"
+
+#: soldevicetypes.cpp:272
+#, kde-format
+msgctxt "unknown volume usage"
+msgid "Unknown"
+msgstr "Tuntematon"
+
+#: soldevicetypes.cpp:275
+#, kde-format
+msgid "File System Type: "
+msgstr "Tiedostojärjestelmän tyyppi: "
+
+#: soldevicetypes.cpp:275
+#, kde-format
+msgid "Label: "
+msgstr "Nimiö: "
+
+#: soldevicetypes.cpp:276
+#, kde-format
+msgid "Not Set"
+msgstr "Ei asetettu"
+
+#: soldevicetypes.cpp:276
+#, kde-format
+msgid "Volume Usage: "
+msgstr "Taltion käyttö: "
+
+#: soldevicetypes.cpp:276
+#, kde-format
+msgid "UUID: "
+msgstr "UUID: "
+
+#: soldevicetypes.cpp:282
+#, kde-format
+msgid "Mounted At: "
+msgstr "Liitettynä kansioon:"
+
+#: soldevicetypes.cpp:282
+#, kde-format
+msgid "Not Mounted"
+msgstr "Ei liitetty"
+
+#: soldevicetypes.cpp:287
+#, kde-format
+msgid "Volume Space:"
+msgstr "Taltion käyttö: "
+
+#: soldevicetypes.cpp:297
+#, kde-format
+msgctxt "Available space out of total partition size (percent used)"
+msgid "%1 free of %2 (%3% used)"
+msgstr "%1/%2 (%3 % käytössä)"
+
+#: soldevicetypes.cpp:303
+#, kde-format
+msgid "No data available"
+msgstr "Tietoa ei saatavilla"
+
+#: soldevicetypes.cpp:330
+#, kde-format
+msgid "Multimedia Players"
+msgstr "Multimediasoittimet"
+
+#: soldevicetypes.cpp:349 soldevicetypes.cpp:388
+#, kde-format
+msgid "Supported Drivers: "
+msgstr "Tuetut ajurit: "
+
+#: soldevicetypes.cpp:349 soldevicetypes.cpp:388
+#, kde-format
+msgid "Supported Protocols: "
+msgstr "Tuetut yhteyskäytännöt: "
+
+#: soldevicetypes.cpp:369
+#, kde-format
+msgid "Cameras"
+msgstr "Kamerat"
+
+#: soldevicetypes.cpp:408
+#, kde-format
+msgid "Batteries"
+msgstr "Akut"
+
+#: soldevicetypes.cpp:430
+#, kde-format
+msgid "PDA"
+msgstr "Kämmentietokone"
+
+#: soldevicetypes.cpp:433
+#, kde-format
+msgid "UPS"
+msgstr "UPS"
+
+#: soldevicetypes.cpp:436
+#, kde-format
+msgid "Primary"
+msgstr "Ensisijainen"
+
+#: soldevicetypes.cpp:439
+#, kde-format
+msgid "Mouse"
+msgstr "Hiiri"
+
+#: soldevicetypes.cpp:442
+#, kde-format
+msgid "Keyboard"
+msgstr "Näppäimistö"
+
+#: soldevicetypes.cpp:445
+#, kde-format
+msgid "Keyboard + Mouse"
+msgstr "Näppäimistö ja hiiri"
+
+#: soldevicetypes.cpp:448
+#, kde-format
+msgid "Camera"
+msgstr "Kamera"
+
+#: soldevicetypes.cpp:451
+#, kde-format
+msgid "Phone"
+msgstr "Puhelin"
+
+#: soldevicetypes.cpp:454
+#, kde-format
+msgctxt "Screen"
+msgid "Monitor"
+msgstr "Näyttö"
+
+#: soldevicetypes.cpp:457
+#, kde-format
+msgctxt "Wireless game pad or joystick battery"
+msgid "Gaming Input"
+msgstr "Pelisyöte"
+
+#: soldevicetypes.cpp:460
+#, kde-format
+msgctxt "unknown battery type"
+msgid "Unknown"
+msgstr "Tuntematon"
+
+#: soldevicetypes.cpp:466
+#, kde-format
+msgid "Charging"
+msgstr "Latautuu"
+
+#: soldevicetypes.cpp:469
+#, kde-format
+msgid "Discharging"
+msgstr "Purkautuu"
+
+#: soldevicetypes.cpp:472
+#, kde-format
+msgid "Fully Charged"
+msgstr "Täydessä latauksessa"
+
+#: soldevicetypes.cpp:475
+#, kde-format
+msgid "No Charge"
+msgstr "Ei latausta"
+
+#: soldevicetypes.cpp:478
+#, kde-format
+msgid "Battery Type: "
+msgstr "Akun tyyppi: "
+
+#: soldevicetypes.cpp:478
+#, kde-format
+msgid "Charge Status: "
+msgstr "Latauksen tila: "
+
+#: soldevicetypes.cpp:478
+#, kde-format
+msgid "Charge Percent: "
+msgstr "Latausprosentti:"
+
+#~ msgid "Network Interfaces"
+#~ msgstr "Verkkoliitännät"
+
+#~ msgid "Connected"
+#~ msgstr "Kytketty"
+
+#~ msgid "Wireless"
+#~ msgstr "Langaton"
+
+#~ msgid "Wired"
+#~ msgstr "Langallinen"
+
+#~ msgid "Hardware Address: "
+#~ msgstr "Laiteosoite: "
+
+#~ msgid "Wireless?"
+#~ msgstr "Langaton?"
+
+#~ msgid "Audio Interfaces"
+#~ msgstr "Ääniliitännät"
+
+#~ msgid "Alsa Interfaces"
+#~ msgstr "ALSA-liitännät"
+
+#~ msgid "Open Sound System Interfaces"
+#~ msgstr "Open Sound System -liitännät"
+
+#~ msgid "Control"
+#~ msgstr "Hallinta"
+
+#~ msgid "Input"
+#~ msgstr "Tulo"
+
+#~ msgid "Output"
+#~ msgstr "Meno"
+
+#~ msgctxt "unknown audio interface type"
+#~ msgid "Unknown"
+#~ msgstr "Tuntematon"
+
+#~ msgid "Internal Soundcard"
+#~ msgstr "Sisäinen äänikortti"
+
+#~ msgid "USB Soundcard"
+#~ msgstr "USB-äänikortti"
+
+#~ msgid "Firewire Soundcard"
+#~ msgstr "Firewire-äänikortti"
+
+#~ msgid "Headset"
+#~ msgstr "Kuulokkeet"
+
+#~ msgid "Modem"
+#~ msgstr "Modeemi"
+
+#~ msgctxt "unknown sound card type"
+#~ msgid "Unknown"
+#~ msgstr "Tuntematon"
+
+#~ msgid "Audio Interface Type: "
+#~ msgstr "Ääniliitännän tyyppi: "
+
+#~ msgid "Soundcard Type: "
+#~ msgstr "Äänikortin tyyppi: "
+
+#~ msgid "Device Buttons"
+#~ msgstr "Laitteen painikkeet"
+
+#~ msgid "Lid Button"
+#~ msgstr "Kansipainike"
+
+#~ msgid "Power Button"
+#~ msgstr "Virtapainike"
+
+#~ msgid "Sleep Button"
+#~ msgstr "Nukkupainike"
+
+#~ msgid "Tablet Button"
+#~ msgstr "Kämmentietokonepainike"
+
+#~ msgid "Unknown Button"
+#~ msgstr "Tuntematon painike"
+
+#~ msgid "Button type: "
+#~ msgstr "Painikkeen tyyppi: "
+
+#~ msgid "Has State?"
+#~ msgstr "Omaa tilan?"
+
+#~ msgid "AC Adapters"
+#~ msgstr "Muuntajat"
+
+#~ msgid "Is plugged in?"
+#~ msgstr "Onko kytketty?"
+
+#~ msgid "Digital Video Broadcasting Devices"
+#~ msgstr "Digi-TV-laitteet"
+
+#~ msgid "Audio"
+#~ msgstr "Ääni"
+
+#~ msgid "Conditional access system"
+#~ msgstr "Ehdollinen saantijärjestelmä"
+
+#~ msgid "Demux"
+#~ msgstr "Demux"
+
+#~ msgid "Digital video recorder"
+#~ msgstr "Digi-TV-tallennin"
+
+# DvbInterface::DvbFrontend
+#~ msgid "Front end"
+#~ msgstr "Käyttöliittymä"
+
+#~ msgid "Network"
+#~ msgstr "Verkko"
+
+#~ msgid "On-Screen display"
+#~ msgstr "Ruutunäyttö"
+
+#~ msgid "Security and content protection"
+#~ msgstr "Turvallisuus ja sisällön suojaus"
+
+#~ msgid "Video"
+#~ msgstr "Video"
+
+#~ msgid "Device Type: "
+#~ msgstr "Laitteen tyyppi: "
+
+#~ msgid "Serial Devices"
+#~ msgstr "Sarjalaitteet"
+
+#~ msgctxt "platform serial interface type"
+#~ msgid "Platform"
+#~ msgstr "Alusta"
+
+#~ msgctxt "unknown serial interface type"
+#~ msgid "Unknown"
+#~ msgstr "Tuntematon"
+
+#~ msgctxt "unknown port"
+#~ msgid "Unknown"
+#~ msgstr "Tuntematon"
+
+#~ msgid "Serial Type: "
+#~ msgstr "Sarjatyyppi: "
+
+#~ msgid "Port: "
+#~ msgstr "Portti: "
+
+#~ msgid "Smart Card Devices"
+#~ msgstr "Smart Card -laitteet"
+
+#~ msgid "Card Reader"
+#~ msgstr "Kortinlukija"
+
+#~ msgid "Crypto Token"
+#~ msgstr "Salausmerkki"
+
+#~ msgctxt "unknown smart card type"
+#~ msgid "Unknown"
+#~ msgstr "Tuntematon"
+
+#~ msgid "Smart Card Type: "
+#~ msgstr "SmartCard-tyyppi: "
+
+#~ msgid "Video Devices"
+#~ msgstr "Videolaitteet"
+
+#~ msgid "Device unable to be cast to correct device"
+#~ msgstr "Laitteelle ei kyetä tekemään tyyppimuunnosta oikeaksi laitteeksi"
+
+#~ msgid "Not Connected"
+#~ msgstr "Ei kytketty"
+
+#~ msgid "IP Address (V4): "
+#~ msgstr "IP-osoite (V4): "
+
+#~ msgid "Gateway (V4): "
+#~ msgstr "Yhdyskäytävä (V4): "
+
+#~ msgid "Sd Mmc"
+#~ msgstr "SD MMC"
+
+#~ msgid "Xd"
+#~ msgstr "XD"
+
+#~ msgid " Drive"
+#~ msgstr " -asema"

@@ -1,0 +1,401 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2015, 2016, 2018, 2019, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-06-28 00:45+0000\n"
+"PO-Revision-Date: 2021-07-10 11:24+0200\n"
+"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 21.04.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Freek de Kruijf - t/m 2019;2021"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "freekdekruijf@kde.nl"
+
+#: kcm.cpp:41
+#, kde-format
+msgid "Energy Consumption Statistics"
+msgstr "Statistiek over energiegebruik"
+
+#: kcm.cpp:42
+#, kde-format
+msgid "Kai Uwe Broulik"
+msgstr "Kai Uwe Broulik"
+
+#: package/contents/ui/main.qml:22
+#, kde-format
+msgid "This module lets you see energy information and statistics."
+msgstr "Deze module laat u energie-informatie en statistieken zien."
+
+#: package/contents/ui/main.qml:49
+#, kde-format
+msgid "Battery"
+msgstr "Batterij"
+
+#: package/contents/ui/main.qml:51
+#, kde-format
+msgid "Rechargeable"
+msgstr "Oplaadbaar"
+
+#: package/contents/ui/main.qml:52
+#, kde-format
+msgid "Charge state"
+msgstr "Ladingsstatus"
+
+#: package/contents/ui/main.qml:53
+#, kde-format
+msgid "Current charge"
+msgstr "Huidige lading"
+
+#: package/contents/ui/main.qml:53 package/contents/ui/main.qml:54
+#, kde-format
+msgid "%"
+msgstr "%"
+
+#: package/contents/ui/main.qml:54
+#, kde-format
+msgid "Health"
+msgstr "Gezondheid"
+
+#: package/contents/ui/main.qml:55
+#, kde-format
+msgid "Vendor"
+msgstr "Fabrikant"
+
+#: package/contents/ui/main.qml:56
+#, kde-format
+msgid "Model"
+msgstr "Model"
+
+#: package/contents/ui/main.qml:57
+#, kde-format
+msgid "Serial Number"
+msgstr "Serienummer"
+
+#: package/contents/ui/main.qml:58
+#, kde-format
+msgid "Technology"
+msgstr "Technologie"
+
+#: package/contents/ui/main.qml:62
+#, kde-format
+msgid "Energy"
+msgstr "Energie"
+
+#: package/contents/ui/main.qml:64
+#, kde-format
+msgctxt "current power draw from the battery in W"
+msgid "Consumption"
+msgstr "Energiegebruik"
+
+#: package/contents/ui/main.qml:64
+#, kde-format
+msgctxt "Watt"
+msgid "W"
+msgstr "W"
+
+#: package/contents/ui/main.qml:65
+#, kde-format
+msgid "Voltage"
+msgstr "Voltage"
+
+#: package/contents/ui/main.qml:65
+#, kde-format
+msgctxt "Volt"
+msgid "V"
+msgstr "V"
+
+#: package/contents/ui/main.qml:66
+#, kde-format
+msgid "Remaining energy"
+msgstr "Resterende energie"
+
+#: package/contents/ui/main.qml:66 package/contents/ui/main.qml:67
+#: package/contents/ui/main.qml:68
+#, kde-format
+msgctxt "Watt-hours"
+msgid "Wh"
+msgstr "Wh"
+
+#: package/contents/ui/main.qml:67
+#, kde-format
+msgid "Last full charge"
+msgstr "Laatst volledig geladen"
+
+#: package/contents/ui/main.qml:68
+#, kde-format
+msgid "Original charge capacity"
+msgstr "Oorspronkelijke ladingscapaciteit"
+
+#: package/contents/ui/main.qml:72
+#, kde-format
+msgid "Environment"
+msgstr "Omgeving"
+
+#: package/contents/ui/main.qml:74
+#, kde-format
+msgid "Temperature"
+msgstr "Temperatuur"
+
+#: package/contents/ui/main.qml:74
+#, kde-format
+msgctxt "Degree Celsius"
+msgid "°C"
+msgstr "°C"
+
+#: package/contents/ui/main.qml:81
+#, kde-format
+msgid "Not charging"
+msgstr "Niet bezig met laden"
+
+#: package/contents/ui/main.qml:82
+#, kde-format
+msgid "Charging"
+msgstr "Opladen"
+
+#: package/contents/ui/main.qml:83
+#, kde-format
+msgid "Discharging"
+msgstr "Ontladen"
+
+#: package/contents/ui/main.qml:84
+#, kde-format
+msgid "Fully charged"
+msgstr "Volledig opgeladen"
+
+#: package/contents/ui/main.qml:90
+#, kde-format
+msgid "Lithium ion"
+msgstr "Lithium-ion"
+
+#: package/contents/ui/main.qml:91
+#, kde-format
+msgid "Lithium polymer"
+msgstr "Lithium-polymeer"
+
+#: package/contents/ui/main.qml:92
+#, kde-format
+msgid "Lithium iron phosphate"
+msgstr "Lithium-ijzer-fosfaat"
+
+#: package/contents/ui/main.qml:93
+#, kde-format
+msgid "Lead acid"
+msgstr "Loodaccu"
+
+#: package/contents/ui/main.qml:94
+#, kde-format
+msgid "Nickel cadmium"
+msgstr "Nikkel-Cadmium"
+
+#: package/contents/ui/main.qml:95
+#, kde-format
+msgid "Nickel metal hydride"
+msgstr "Nikkel-metaalhydride"
+
+#: package/contents/ui/main.qml:96
+#, kde-format
+msgid "Unknown technology"
+msgstr "Onbekende technologie"
+
+#: package/contents/ui/main.qml:103
+#, kde-format
+msgid "Last hour"
+msgstr "Laatste uur"
+
+#: package/contents/ui/main.qml:103
+#, kde-format
+msgid "Last 2 hours"
+msgstr "Laatste 2 uur"
+
+#: package/contents/ui/main.qml:103
+#, kde-format
+msgid "Last 12 hours"
+msgstr "Laatste 12 uur"
+
+#: package/contents/ui/main.qml:103
+#, kde-format
+msgid "Last 24 hours"
+msgstr "Laatste 24 uur"
+
+#: package/contents/ui/main.qml:103
+#, kde-format
+msgid "Last 48 hours"
+msgstr "Laatste 48 uur"
+
+#: package/contents/ui/main.qml:103
+#, kde-format
+msgid "Last 7 days"
+msgstr "Laatste 7 dagen"
+
+#: package/contents/ui/main.qml:110
+#, kde-format
+msgctxt "@info:status"
+msgid "No energy information available on this system"
+msgstr "Geen energie-informatie beschikbaar op dit systeem"
+
+#: package/contents/ui/main.qml:175
+#, kde-format
+msgid "Internal battery"
+msgstr "Interne batterij"
+
+#: package/contents/ui/main.qml:176
+#, kde-format
+msgid "UPS battery"
+msgstr "UPS-batterij"
+
+#: package/contents/ui/main.qml:177
+#, kde-format
+msgid "Monitor battery"
+msgstr "Monitorbatterij"
+
+#: package/contents/ui/main.qml:178
+#, kde-format
+msgid "Mouse battery"
+msgstr "Muisbatterij"
+
+#: package/contents/ui/main.qml:179
+#, kde-format
+msgid "Keyboard battery"
+msgstr "Toetsenbordbatterij"
+
+#: package/contents/ui/main.qml:180
+#, kde-format
+msgid "PDA battery"
+msgstr "PDA-batterij"
+
+#: package/contents/ui/main.qml:181
+#, kde-format
+msgid "Phone battery"
+msgstr "Telefoonbatterij"
+
+#: package/contents/ui/main.qml:182
+#, kde-format
+msgid "Unknown battery"
+msgstr "Onbekende batterij"
+
+#: package/contents/ui/main.qml:200
+#, kde-format
+msgctxt "Battery charge percentage"
+msgid "%1% (Charging)"
+msgstr "%1% (Opladen)"
+
+#: package/contents/ui/main.qml:201
+#, kde-format
+msgctxt "Battery charge percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/main.qml:223
+#, kde-format
+msgid "Charge Percentage"
+msgstr "Percentage"
+
+#: package/contents/ui/main.qml:233
+#, kde-format
+msgid "Energy Consumption"
+msgstr "Energiegebruik"
+
+#: package/contents/ui/main.qml:248
+#, kde-format
+msgid "Timespan"
+msgstr "Periode"
+
+#: package/contents/ui/main.qml:249
+#, kde-format
+msgid "Timespan of data to display"
+msgstr "Weer te geven periode"
+
+#: package/contents/ui/main.qml:255
+#, kde-format
+msgid "Refresh"
+msgstr "Vernieuwen"
+
+#: package/contents/ui/main.qml:297
+#, kde-format
+msgctxt "Shorthand for Watts"
+msgid "W"
+msgstr "W"
+
+#: package/contents/ui/main.qml:297
+#, kde-format
+msgctxt "literal percent sign"
+msgid "%"
+msgstr "%"
+
+#: package/contents/ui/main.qml:317
+#, kde-format
+msgid "This type of history is currently not available for this device."
+msgstr "Dit type geschiedenis is nu niet beschikbaar voor dit apparaat."
+
+#: package/contents/ui/main.qml:368
+#, kde-format
+msgid "%1:"
+msgstr "%1:"
+
+#: package/contents/ui/main.qml:379
+#, kde-format
+msgid "Yes"
+msgstr "Ja"
+
+#: package/contents/ui/main.qml:381
+#, kde-format
+msgid "No"
+msgstr "Nee"
+
+#: package/contents/ui/main.qml:399
+#, kde-format
+msgctxt "%1 is value, %2 is unit"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#~ msgid "Application Energy Consumption"
+#~ msgstr "Energiegebruik van toepassing"
+
+#~ msgid "Path: %1"
+#~ msgstr "Pad: %1"
+
+#~ msgid "PID: %1"
+#~ msgstr "PID: %1"
+
+#~ msgid "Wakeups per second: %1 (%2%)"
+#~ msgstr "Wakeups per seconde: %1 (%2%)"
+
+#~ msgid "Details: %1"
+#~ msgstr "Details: %1"
+
+#~ msgid "LeadAcid"
+#~ msgstr "LeadAcid"
+
+#~ msgid "Capacity degradation"
+#~ msgstr "Degradatie van capaciteit"
+
+#~ msgid "Manufacturer"
+#~ msgstr "Fabrikant"
+
+#~ msgid "Full design"
+#~ msgstr "Volledig ontwerp"
+
+#~ msgid "System"
+#~ msgstr "Systeem"
+
+#~ msgid "Has power supply"
+#~ msgstr "Heeft stroomvoorziening"
+
+#~ msgid "Capacity"
+#~ msgstr "Capaciteit"

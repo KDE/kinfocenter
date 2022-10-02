@@ -1,0 +1,114 @@
+# Translation of kcmsamba into Japanese.
+# This file is distributed under the same license as the kdebase package.
+# Nobosu Sinohara <shinobo@leo.bekkoame.ne.jp>, 2002.
+# Shinichi Tsunoda <tsuno@ngy.1st.ne.jp>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmsamba\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-11-17 00:29+0000\n"
+"PO-Revision-Date: 2010-05-09 02:24-0700\n"
+"Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
+"Language-Team: Japanese <kde-jp@kde.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Nobosu Sinohara,Shinichi Tsunoda"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "shinobo@leo.bekkoame.ne.jp,tsuno@ngy.1st.ne.jp"
+
+#: main.cpp:25
+#, kde-format
+msgid "kcmsamba"
+msgstr "kcmsamba"
+
+#: main.cpp:26
+#, kde-format
+msgid "Samba Status"
+msgstr ""
+
+#: main.cpp:30
+#, fuzzy, kde-format
+#| msgid "(c) 2002 KDE Information Control Module Samba Team"
+msgid "(c) 2002-2020 KDE Information Control Module Samba Team"
+msgstr "(c) 2002 KDE 情報モジュール Samba チーム"
+
+#: main.cpp:31
+#, kde-format
+msgid "Michael Glauche"
+msgstr "Michael Glauche"
+
+#: main.cpp:32
+#, kde-format
+msgid "Matthias Hoelzer"
+msgstr "Matthias Hoelzer"
+
+#: main.cpp:33
+#, kde-format
+msgid "David Faure"
+msgstr "David Faure"
+
+#: main.cpp:34
+#, kde-format
+msgid "Harald Koschinski"
+msgstr "Harald Koschinski"
+
+#: main.cpp:35
+#, kde-format
+msgid "Wilco Greven"
+msgstr "Wilco Greven"
+
+#: main.cpp:36
+#, kde-format
+msgid "Alexander Neundorf"
+msgstr "Alexander Neundorf"
+
+#: main.cpp:37
+#, kde-format
+msgid "Harald Sitter"
+msgstr ""
+
+#: package/contents/ui/main.qml:17
+#, fuzzy, kde-format
+#| msgid "&Exports"
+msgctxt "@title heading above listview"
+msgid "User-Created Shares"
+msgstr "エクスポート(&E)"
+
+#: package/contents/ui/main.qml:22
+#, fuzzy, kde-format
+#| msgid "Mounted Under"
+msgctxt "@title heading above listview"
+msgid "Mounted Remote Shares"
+msgstr "マウント先"
+
+#: package/contents/ui/main.qml:49
+#, kde-format
+msgctxt "@info place holder for empty listview"
+msgid "There are no directories shared by users"
+msgstr ""
+
+#: package/contents/ui/main.qml:89
+#, kde-format
+msgctxt "@info place holder for empty listview"
+msgid "There are no Samba shares mounted on this system"
+msgstr ""
+
+#: package/contents/ui/ShareListItem.qml:71
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "Open folder properties to change share settings"
+msgstr ""

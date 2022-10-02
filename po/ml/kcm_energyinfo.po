@@ -1,0 +1,366 @@
+# Malayalam translations for kinfocenter package.
+# Copyright (C) 2019 This file is copyright:
+# This file is distributed under the same license as the kinfocenter package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kinfocenter\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-06-28 00:45+0000\n"
+"PO-Revision-Date: 2019-12-12 22:12+0000\n"
+"Last-Translator: Vivek KJ Pazhedath <vivekkj2004@gmail.com>\n"
+"Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ് <smc."
+"org.in>\n"
+"Language: ml\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "shijualexonline@gmail.com,snalledam@dataone.in,vivekkj2004@gmail.com"
+
+#: kcm.cpp:41
+#, kde-format
+msgid "Energy Consumption Statistics"
+msgstr ""
+
+#: kcm.cpp:42
+#, kde-format
+msgid "Kai Uwe Broulik"
+msgstr ""
+
+#: package/contents/ui/main.qml:22
+#, kde-format
+msgid "This module lets you see energy information and statistics."
+msgstr ""
+
+#: package/contents/ui/main.qml:49
+#, kde-format
+msgid "Battery"
+msgstr ""
+
+#: package/contents/ui/main.qml:51
+#, kde-format
+msgid "Rechargeable"
+msgstr ""
+
+#: package/contents/ui/main.qml:52
+#, kde-format
+msgid "Charge state"
+msgstr ""
+
+#: package/contents/ui/main.qml:53
+#, kde-format
+msgid "Current charge"
+msgstr ""
+
+#: package/contents/ui/main.qml:53 package/contents/ui/main.qml:54
+#, kde-format
+msgid "%"
+msgstr ""
+
+#: package/contents/ui/main.qml:54
+#, kde-format
+msgid "Health"
+msgstr ""
+
+#: package/contents/ui/main.qml:55
+#, kde-format
+msgid "Vendor"
+msgstr ""
+
+#: package/contents/ui/main.qml:56
+#, kde-format
+msgid "Model"
+msgstr ""
+
+#: package/contents/ui/main.qml:57
+#, kde-format
+msgid "Serial Number"
+msgstr ""
+
+#: package/contents/ui/main.qml:58
+#, kde-format
+msgid "Technology"
+msgstr ""
+
+#: package/contents/ui/main.qml:62
+#, kde-format
+msgid "Energy"
+msgstr ""
+
+#: package/contents/ui/main.qml:64
+#, kde-format
+msgctxt "current power draw from the battery in W"
+msgid "Consumption"
+msgstr ""
+
+#: package/contents/ui/main.qml:64
+#, kde-format
+msgctxt "Watt"
+msgid "W"
+msgstr ""
+
+#: package/contents/ui/main.qml:65
+#, kde-format
+msgid "Voltage"
+msgstr ""
+
+#: package/contents/ui/main.qml:65
+#, kde-format
+msgctxt "Volt"
+msgid "V"
+msgstr ""
+
+#: package/contents/ui/main.qml:66
+#, kde-format
+msgid "Remaining energy"
+msgstr ""
+
+#: package/contents/ui/main.qml:66 package/contents/ui/main.qml:67
+#: package/contents/ui/main.qml:68
+#, kde-format
+msgctxt "Watt-hours"
+msgid "Wh"
+msgstr ""
+
+#: package/contents/ui/main.qml:67
+#, kde-format
+msgid "Last full charge"
+msgstr ""
+
+#: package/contents/ui/main.qml:68
+#, kde-format
+msgid "Original charge capacity"
+msgstr ""
+
+#: package/contents/ui/main.qml:72
+#, kde-format
+msgid "Environment"
+msgstr ""
+
+#: package/contents/ui/main.qml:74
+#, kde-format
+msgid "Temperature"
+msgstr ""
+
+#: package/contents/ui/main.qml:74
+#, kde-format
+msgctxt "Degree Celsius"
+msgid "°C"
+msgstr ""
+
+#: package/contents/ui/main.qml:81
+#, kde-format
+msgid "Not charging"
+msgstr ""
+
+#: package/contents/ui/main.qml:82
+#, kde-format
+msgid "Charging"
+msgstr ""
+
+#: package/contents/ui/main.qml:83
+#, kde-format
+msgid "Discharging"
+msgstr ""
+
+#: package/contents/ui/main.qml:84
+#, kde-format
+msgid "Fully charged"
+msgstr ""
+
+#: package/contents/ui/main.qml:90
+#, kde-format
+msgid "Lithium ion"
+msgstr ""
+
+#: package/contents/ui/main.qml:91
+#, kde-format
+msgid "Lithium polymer"
+msgstr ""
+
+#: package/contents/ui/main.qml:92
+#, kde-format
+msgid "Lithium iron phosphate"
+msgstr ""
+
+#: package/contents/ui/main.qml:93
+#, kde-format
+msgid "Lead acid"
+msgstr ""
+
+#: package/contents/ui/main.qml:94
+#, kde-format
+msgid "Nickel cadmium"
+msgstr ""
+
+#: package/contents/ui/main.qml:95
+#, kde-format
+msgid "Nickel metal hydride"
+msgstr ""
+
+#: package/contents/ui/main.qml:96
+#, kde-format
+msgid "Unknown technology"
+msgstr ""
+
+#: package/contents/ui/main.qml:103
+#, kde-format
+msgid "Last hour"
+msgstr ""
+
+#: package/contents/ui/main.qml:103
+#, kde-format
+msgid "Last 2 hours"
+msgstr ""
+
+#: package/contents/ui/main.qml:103
+#, kde-format
+msgid "Last 12 hours"
+msgstr ""
+
+#: package/contents/ui/main.qml:103
+#, kde-format
+msgid "Last 24 hours"
+msgstr ""
+
+#: package/contents/ui/main.qml:103
+#, kde-format
+msgid "Last 48 hours"
+msgstr ""
+
+#: package/contents/ui/main.qml:103
+#, kde-format
+msgid "Last 7 days"
+msgstr ""
+
+#: package/contents/ui/main.qml:110
+#, kde-format
+msgctxt "@info:status"
+msgid "No energy information available on this system"
+msgstr ""
+
+#: package/contents/ui/main.qml:175
+#, kde-format
+msgid "Internal battery"
+msgstr ""
+
+#: package/contents/ui/main.qml:176
+#, kde-format
+msgid "UPS battery"
+msgstr ""
+
+#: package/contents/ui/main.qml:177
+#, kde-format
+msgid "Monitor battery"
+msgstr ""
+
+#: package/contents/ui/main.qml:178
+#, kde-format
+msgid "Mouse battery"
+msgstr ""
+
+#: package/contents/ui/main.qml:179
+#, kde-format
+msgid "Keyboard battery"
+msgstr ""
+
+#: package/contents/ui/main.qml:180
+#, kde-format
+msgid "PDA battery"
+msgstr ""
+
+#: package/contents/ui/main.qml:181
+#, kde-format
+msgid "Phone battery"
+msgstr ""
+
+#: package/contents/ui/main.qml:182
+#, kde-format
+msgid "Unknown battery"
+msgstr ""
+
+#: package/contents/ui/main.qml:200
+#, kde-format
+msgctxt "Battery charge percentage"
+msgid "%1% (Charging)"
+msgstr ""
+
+#: package/contents/ui/main.qml:201
+#, kde-format
+msgctxt "Battery charge percentage"
+msgid "%1%"
+msgstr ""
+
+#: package/contents/ui/main.qml:223
+#, kde-format
+msgid "Charge Percentage"
+msgstr ""
+
+#: package/contents/ui/main.qml:233
+#, kde-format
+msgid "Energy Consumption"
+msgstr ""
+
+#: package/contents/ui/main.qml:248
+#, kde-format
+msgid "Timespan"
+msgstr ""
+
+#: package/contents/ui/main.qml:249
+#, kde-format
+msgid "Timespan of data to display"
+msgstr ""
+
+#: package/contents/ui/main.qml:255
+#, fuzzy, kde-format
+msgid "Refresh"
+msgstr "ഉന്മേഷം വീണ്ടെടുക്കുക"
+
+#: package/contents/ui/main.qml:297
+#, kde-format
+msgctxt "Shorthand for Watts"
+msgid "W"
+msgstr ""
+
+#: package/contents/ui/main.qml:297
+#, kde-format
+msgctxt "literal percent sign"
+msgid "%"
+msgstr ""
+
+#: package/contents/ui/main.qml:317
+#, kde-format
+msgid "This type of history is currently not available for this device."
+msgstr ""
+
+#: package/contents/ui/main.qml:368
+#, kde-format
+msgid "%1:"
+msgstr ""
+
+#: package/contents/ui/main.qml:379
+#, kde-format
+msgid "Yes"
+msgstr ""
+
+#: package/contents/ui/main.qml:381
+#, kde-format
+msgid "No"
+msgstr ""
+
+#: package/contents/ui/main.qml:399
+#, kde-format
+msgctxt "%1 is value, %2 is unit"
+msgid "%1 %2"
+msgstr ""

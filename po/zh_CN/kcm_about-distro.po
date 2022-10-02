@@ -1,0 +1,202 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeorg\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-08-09 00:47+0000\n"
+"PO-Revision-Date: 2022-09-20 01:55\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: kdeorg\n"
+"X-Crowdin-Project-ID: 269464\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /kf5-trunk/messages/kinfocenter/kcm_about-distro.pot\n"
+"X-Crowdin-File-ID: 25683\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "KDE China, Guo Yunhe, Tyson Tan, Weng Xuetian"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"kde-china@kde.org, i@guoyunhe.me, tysontan@tysontan.com, wengxt@gmail.com"
+
+#: CPUEntry.cpp:17
+#, kde-format
+msgid "Processor:"
+msgid_plural "Processors:"
+msgstr[0] "处理器："
+
+#: CPUEntry.cpp:22
+#, kde-format
+msgctxt ""
+"unknown CPU type/product name; presented as `Processors: 4 × Unknown Type'"
+msgid "Unknown Type"
+msgstr "未知类型"
+
+#: GPUEntry.cpp:19
+#, kde-format
+msgid "Graphics Processor:"
+msgstr "图形处理器："
+
+#: GraphicsPlatformEntry.cpp:10
+#, kde-format
+msgid "Graphics Platform:"
+msgstr "图形平台："
+
+#: KernelEntry.cpp:11
+#, kde-format
+msgid "Kernel Version:"
+msgstr "内核版本："
+
+#: KernelEntry.cpp:23
+#, kde-format
+msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
+msgid "%1 (%2-bit)"
+msgstr "%1 (%2-位)"
+
+#: main.cpp:103
+#, kde-format
+msgctxt "@title"
+msgid "About this System"
+msgstr "关于本机"
+
+#: main.cpp:106
+#, kde-format
+msgctxt "@info:credit"
+msgid "Copyright 2012-2020 Harald Sitter"
+msgstr "Copyright 2012-2020 Harald Sitter"
+
+#: main.cpp:107
+#, kde-format
+msgctxt "@info:credit"
+msgid "Harald Sitter"
+msgstr "Harald Sitter"
+
+#: main.cpp:107
+#, kde-format
+msgctxt "@info:credit"
+msgid "Author"
+msgstr "作者"
+
+#: main.cpp:162
+#, kde-format
+msgid "Operating System:"
+msgstr "操作系统："
+
+#: main.cpp:176
+#, kde-format
+msgctxt "@label"
+msgid "Manufacturer:"
+msgstr "制造商："
+
+#: main.cpp:179 main.cpp:196
+#, kde-format
+msgctxt "@label"
+msgid "Product Name:"
+msgstr "产品名称："
+
+#: main.cpp:182
+#, kde-format
+msgctxt "@label"
+msgid "System Version:"
+msgstr "系统版本："
+
+#: main.cpp:185 main.cpp:199
+#, kde-format
+msgctxt "@label"
+msgid "Serial Number:"
+msgstr "序列号："
+
+#: main.cpp:189 main.cpp:206
+#, kde-format
+msgctxt "@label unknown entry in table"
+msgid "Unknown:"
+msgstr "未知："
+
+#: main.cpp:202
+#, kde-format
+msgctxt "@label uboot is the name of a bootloader for embedded devices"
+msgid "U-Boot Version:"
+msgstr "U-Boot 版本："
+
+#: main.cpp:240
+#, kde-format
+msgid "KDE Frameworks Version:"
+msgstr "KDE 程序框架版本："
+
+#: main.cpp:241
+#, kde-format
+msgid "Qt Version:"
+msgstr "Qt 版本："
+
+#: MemoryEntry.cpp:20
+#, kde-format
+msgid "Memory:"
+msgstr "内存："
+
+#: MemoryEntry.cpp:49
+#, kde-format
+msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
+msgid "%1 of RAM"
+msgstr "%1 内存"
+
+#: MemoryEntry.cpp:53
+#, kde-format
+msgctxt "Unknown amount of RAM"
+msgid "Unknown"
+msgstr "未知"
+
+#: package/contents/ui/main.qml:91
+#, kde-format
+msgctxt "@title"
+msgid "Serial Number"
+msgstr "序列号"
+
+#: package/contents/ui/main.qml:97 package/contents/ui/main.qml:165
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy to Clipboard"
+msgstr "复制到剪贴板"
+
+#: package/contents/ui/main.qml:113
+#, kde-format
+msgctxt "@action:button show a hidden entry in an overlay"
+msgid "Show"
+msgstr "显示"
+
+#: package/contents/ui/main.qml:123
+#, kde-format
+msgctxt "@title:group"
+msgid "Software"
+msgstr "软件"
+
+#: package/contents/ui/main.qml:133
+#, kde-format
+msgctxt "@title:group"
+msgid "Hardware"
+msgstr "硬件"
+
+#: package/contents/ui/main.qml:153
+#, kde-format
+msgctxt "@action:button launches kinfocenter from systemsettings"
+msgid "Show More Information"
+msgstr "显示更多信息"
+
+#: package/contents/ui/main.qml:172
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy to Clipboard in English"
+msgstr "复制到剪贴板 (英文)"
+
+#: PlasmaEntry.cpp:15
+#, kde-format
+msgid "KDE Plasma Version:"
+msgstr "KDE Plasma 版本："

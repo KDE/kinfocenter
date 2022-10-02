@@ -1,0 +1,237 @@
+# Lithuanian translations for l package.
+# Copyright (C) 2014 This_file_is_part_of_KDE
+# This file is distributed under the same license as the l package.
+#
+# Automatically generated, 2014.
+# Liudas Ališauskas <liudas@akmc.lt>, 2015.
+# Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>, 2016, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: l 10n\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-08-09 00:47+0000\n"
+"PO-Revision-Date: 2021-08-21 16:34+0300\n"
+"Last-Translator: Moo\n"
+"Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
+"X-Generator: Poedit 3.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Liudas Ališauskas, Mindaugas Baranauskas, Moo"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "liudas@akmc.lt, opensuse.lietuviu.kalba@gmail.com, <>"
+
+#: CPUEntry.cpp:17
+#, kde-format
+msgid "Processor:"
+msgid_plural "Processors:"
+msgstr[0] "Procesorius:"
+msgstr[1] "Procesoriai:"
+msgstr[2] "Procesorių:"
+msgstr[3] "Procesorius:"
+
+#: CPUEntry.cpp:22
+#, kde-format
+msgctxt ""
+"unknown CPU type/product name; presented as `Processors: 4 × Unknown Type'"
+msgid "Unknown Type"
+msgstr "Nežinomas tipas"
+
+#: GPUEntry.cpp:19
+#, kde-format
+msgid "Graphics Processor:"
+msgstr "Grafikos procesorius:"
+
+#: GraphicsPlatformEntry.cpp:10
+#, kde-format
+msgid "Graphics Platform:"
+msgstr "Grafikos platforma:"
+
+#: KernelEntry.cpp:11
+#, kde-format
+msgid "Kernel Version:"
+msgstr "Branduolio versija:"
+
+#: KernelEntry.cpp:23
+#, kde-format
+msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
+msgid "%1 (%2-bit)"
+msgstr "%1 (%2-bitų)"
+
+#: main.cpp:103
+#, kde-format
+msgctxt "@title"
+msgid "About this System"
+msgstr "Apie šią sistemą"
+
+#: main.cpp:106
+#, kde-format
+msgctxt "@info:credit"
+msgid "Copyright 2012-2020 Harald Sitter"
+msgstr "Autorių teisės 2012-2020 Harald Sitter"
+
+#: main.cpp:107
+#, kde-format
+msgctxt "@info:credit"
+msgid "Harald Sitter"
+msgstr "Harald Sitter"
+
+#: main.cpp:107
+#, kde-format
+msgctxt "@info:credit"
+msgid "Author"
+msgstr "Autorius"
+
+#: main.cpp:162
+#, kde-format
+msgid "Operating System:"
+msgstr "Operacinė sistema:"
+
+#: main.cpp:176
+#, kde-format
+msgctxt "@label"
+msgid "Manufacturer:"
+msgstr ""
+
+#: main.cpp:179 main.cpp:196
+#, kde-format
+msgctxt "@label"
+msgid "Product Name:"
+msgstr ""
+
+#: main.cpp:182
+#, fuzzy, kde-format
+#| msgid "Qt Version:"
+msgctxt "@label"
+msgid "System Version:"
+msgstr "Qt versija:"
+
+#: main.cpp:185 main.cpp:199
+#, kde-format
+msgctxt "@label"
+msgid "Serial Number:"
+msgstr ""
+
+#: main.cpp:189 main.cpp:206
+#, fuzzy, kde-format
+#| msgctxt "Unknown amount of RAM"
+#| msgid "Unknown"
+msgctxt "@label unknown entry in table"
+msgid "Unknown:"
+msgstr "Nežinoma"
+
+#: main.cpp:202
+#, fuzzy, kde-format
+#| msgid "Qt Version:"
+msgctxt "@label uboot is the name of a bootloader for embedded devices"
+msgid "U-Boot Version:"
+msgstr "Qt versija:"
+
+#: main.cpp:240
+#, kde-format
+msgid "KDE Frameworks Version:"
+msgstr "KDE sistemų versija:"
+
+#: main.cpp:241
+#, kde-format
+msgid "Qt Version:"
+msgstr "Qt versija:"
+
+#: MemoryEntry.cpp:20
+#, kde-format
+msgid "Memory:"
+msgstr "Atmintis:"
+
+#: MemoryEntry.cpp:49
+#, kde-format
+msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
+msgid "%1 of RAM"
+msgstr "%1 operatyviosios atminties (RAM)"
+
+#: MemoryEntry.cpp:53
+#, kde-format
+msgctxt "Unknown amount of RAM"
+msgid "Unknown"
+msgstr "Nežinoma"
+
+#: package/contents/ui/main.qml:91
+#, kde-format
+msgctxt "@title"
+msgid "Serial Number"
+msgstr ""
+
+#: package/contents/ui/main.qml:97 package/contents/ui/main.qml:165
+#, fuzzy, kde-format
+#| msgid "Copy to Clipboard"
+msgctxt "@action:button"
+msgid "Copy to Clipboard"
+msgstr "Kopijuoti į iškarpinę"
+
+#: package/contents/ui/main.qml:113
+#, kde-format
+msgctxt "@action:button show a hidden entry in an overlay"
+msgid "Show"
+msgstr ""
+
+#: package/contents/ui/main.qml:123
+#, kde-format
+msgctxt "@title:group"
+msgid "Software"
+msgstr "Programinė įranga"
+
+#: package/contents/ui/main.qml:133
+#, kde-format
+msgctxt "@title:group"
+msgid "Hardware"
+msgstr "Aparatinė įranga"
+
+#: package/contents/ui/main.qml:153
+#, kde-format
+msgctxt "@action:button launches kinfocenter from systemsettings"
+msgid "Show More Information"
+msgstr ""
+
+#: package/contents/ui/main.qml:172
+#, fuzzy, kde-format
+#| msgid "Copy to Clipboard in English"
+msgctxt "@action:button"
+msgid "Copy to Clipboard in English"
+msgstr "Kopijuoti į iškarpinę anglų kalba"
+
+#: PlasmaEntry.cpp:15
+#, kde-format
+msgid "KDE Plasma Version:"
+msgstr "KDE Plasma versija:"
+
+#~ msgid "Copy software and hardware information to clipboard"
+#~ msgstr "Kopijuoti programinės ir aparatinės įrangos informaciją į iškarpinę"
+
+#~ msgid "Copy software and hardware information to clipboard in English"
+#~ msgstr ""
+#~ "Kopijuoti programinės ir aparatinės įrangos informaciją anglų kalba į "
+#~ "iškarpinę"
+
+#~ msgid "OS Type:"
+#~ msgstr "OS tipas:"
+
+#~ msgctxt "@title"
+#~ msgid "About Distribution"
+#~ msgstr "Apie platinamąjį paketą"
+
+#~ msgctxt ""
+#~ "%1 is a label already including a colon, %2 is the corresponding value"
+#~ msgid "%1 %2"
+#~ msgstr "%1 %2"
+
+#~ msgid "{variantLabel}"
+#~ msgstr "{kintanti_etiketė}"

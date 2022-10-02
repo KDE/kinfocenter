@@ -1,0 +1,405 @@
+# Lithuanian translations for trunk-kf package.
+# Copyright (C) 2015 This_file_is_part_of_KDE
+# This file is distributed under the same license as the trunk-kf package.
+#
+# Automatically generated, 2015.
+# Liudas Ališauskas <liudas@akmc.lt>, 2015.
+# Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: trunk-kf 5\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-06-28 00:45+0000\n"
+"PO-Revision-Date: 2021-08-21 16:39+0300\n"
+"Last-Translator: Moo\n"
+"Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
+"X-Generator: Poedit 3.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Liudas Ališauskas, Moo"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "liudas@akmc.lt, <>"
+
+#: kcm.cpp:41
+#, kde-format
+msgid "Energy Consumption Statistics"
+msgstr "Energijos sunaudojimo statistika"
+
+#: kcm.cpp:42
+#, kde-format
+msgid "Kai Uwe Broulik"
+msgstr "Kai Uwe Broulik"
+
+#: package/contents/ui/main.qml:22
+#, kde-format
+msgid "This module lets you see energy information and statistics."
+msgstr "Šis modulis leidžia jums matyti energijos informaciją ir statistiką."
+
+#: package/contents/ui/main.qml:49
+#, kde-format
+msgid "Battery"
+msgstr "Akumuliatorius"
+
+#: package/contents/ui/main.qml:51
+#, kde-format
+msgid "Rechargeable"
+msgstr "Iš naujo pakraunamas"
+
+#: package/contents/ui/main.qml:52
+#, kde-format
+msgid "Charge state"
+msgstr "Įkrovos būsena"
+
+#: package/contents/ui/main.qml:53
+#, kde-format
+msgid "Current charge"
+msgstr "Dabartinė įkrova"
+
+#: package/contents/ui/main.qml:53 package/contents/ui/main.qml:54
+#, kde-format
+msgid "%"
+msgstr "%"
+
+#: package/contents/ui/main.qml:54
+#, kde-format
+msgid "Health"
+msgstr "Naudingumas"
+
+#: package/contents/ui/main.qml:55
+#, kde-format
+msgid "Vendor"
+msgstr "Tiekėjas"
+
+#: package/contents/ui/main.qml:56
+#, kde-format
+msgid "Model"
+msgstr "Modelis"
+
+#: package/contents/ui/main.qml:57
+#, kde-format
+msgid "Serial Number"
+msgstr "Serijinis numeris"
+
+#: package/contents/ui/main.qml:58
+#, kde-format
+msgid "Technology"
+msgstr "Technologija"
+
+#: package/contents/ui/main.qml:62
+#, kde-format
+msgid "Energy"
+msgstr "Energija"
+
+#: package/contents/ui/main.qml:64
+#, kde-format
+msgctxt "current power draw from the battery in W"
+msgid "Consumption"
+msgstr "Sunaudojimas"
+
+#: package/contents/ui/main.qml:64
+#, kde-format
+msgctxt "Watt"
+msgid "W"
+msgstr "W"
+
+#: package/contents/ui/main.qml:65
+#, kde-format
+msgid "Voltage"
+msgstr "Įtampa"
+
+#: package/contents/ui/main.qml:65
+#, kde-format
+msgctxt "Volt"
+msgid "V"
+msgstr "V"
+
+#: package/contents/ui/main.qml:66
+#, kde-format
+msgid "Remaining energy"
+msgstr "Liko energijos"
+
+#: package/contents/ui/main.qml:66 package/contents/ui/main.qml:67
+#: package/contents/ui/main.qml:68
+#, kde-format
+msgctxt "Watt-hours"
+msgid "Wh"
+msgstr "Wh"
+
+#: package/contents/ui/main.qml:67
+#, kde-format
+msgid "Last full charge"
+msgstr "Paskiausias pilnas įkrovimas"
+
+#: package/contents/ui/main.qml:68
+#, kde-format
+msgid "Original charge capacity"
+msgstr "Pradinė įkrovos talpa"
+
+#: package/contents/ui/main.qml:72
+#, kde-format
+msgid "Environment"
+msgstr "Aplinka"
+
+#: package/contents/ui/main.qml:74
+#, kde-format
+msgid "Temperature"
+msgstr "Temperatūra"
+
+#: package/contents/ui/main.qml:74
+#, kde-format
+msgctxt "Degree Celsius"
+msgid "°C"
+msgstr "°C"
+
+#: package/contents/ui/main.qml:81
+#, kde-format
+msgid "Not charging"
+msgstr "Nekraunamas"
+
+#: package/contents/ui/main.qml:82
+#, kde-format
+msgid "Charging"
+msgstr "Kraunasi"
+
+#: package/contents/ui/main.qml:83
+#, kde-format
+msgid "Discharging"
+msgstr "Išsikrauna"
+
+#: package/contents/ui/main.qml:84
+#, kde-format
+msgid "Fully charged"
+msgstr "Pilnai įkrautas"
+
+#: package/contents/ui/main.qml:90
+#, kde-format
+msgid "Lithium ion"
+msgstr "Ličio jonų"
+
+#: package/contents/ui/main.qml:91
+#, kde-format
+msgid "Lithium polymer"
+msgstr "Ličio polimerų"
+
+#: package/contents/ui/main.qml:92
+#, kde-format
+msgid "Lithium iron phosphate"
+msgstr "Ličio geležies fosfatų"
+
+#: package/contents/ui/main.qml:93
+#, kde-format
+msgid "Lead acid"
+msgstr "Rūgštinis"
+
+#: package/contents/ui/main.qml:94
+#, kde-format
+msgid "Nickel cadmium"
+msgstr "Nikelio kadmio"
+
+#: package/contents/ui/main.qml:95
+#, kde-format
+msgid "Nickel metal hydride"
+msgstr "Nikelio metalo hidridų"
+
+#: package/contents/ui/main.qml:96
+#, kde-format
+msgid "Unknown technology"
+msgstr "Nežinoma technologija"
+
+#: package/contents/ui/main.qml:103
+#, kde-format
+msgid "Last hour"
+msgstr "Paskutinę valandą"
+
+#: package/contents/ui/main.qml:103
+#, kde-format
+msgid "Last 2 hours"
+msgstr "Paskutinės 2 val."
+
+#: package/contents/ui/main.qml:103
+#, kde-format
+msgid "Last 12 hours"
+msgstr "Paskutinių 12 val."
+
+#: package/contents/ui/main.qml:103
+#, kde-format
+msgid "Last 24 hours"
+msgstr "Paskutinės 24 val."
+
+#: package/contents/ui/main.qml:103
+#, kde-format
+msgid "Last 48 hours"
+msgstr "Paskutinės 48 val."
+
+#: package/contents/ui/main.qml:103
+#, kde-format
+msgid "Last 7 days"
+msgstr "Paskutinės 7 dienos"
+
+#: package/contents/ui/main.qml:110
+#, kde-format
+msgctxt "@info:status"
+msgid "No energy information available on this system"
+msgstr "Šioje sistemoje nėra prieinamos informacijos apie energiją"
+
+#: package/contents/ui/main.qml:175
+#, kde-format
+msgid "Internal battery"
+msgstr "Vidinis akumuliatorius"
+
+#: package/contents/ui/main.qml:176
+#, kde-format
+msgid "UPS battery"
+msgstr "NMŠ akumuliatorius"
+
+#: package/contents/ui/main.qml:177
+#, kde-format
+msgid "Monitor battery"
+msgstr "Monitoriaus akumuliatorius"
+
+#: package/contents/ui/main.qml:178
+#, kde-format
+msgid "Mouse battery"
+msgstr "Pelės akumuliatorius"
+
+#: package/contents/ui/main.qml:179
+#, kde-format
+msgid "Keyboard battery"
+msgstr "Klaviatūros akumuliatorius"
+
+#: package/contents/ui/main.qml:180
+#, kde-format
+msgid "PDA battery"
+msgstr "Delninuko akumuliatorius"
+
+#: package/contents/ui/main.qml:181
+#, kde-format
+msgid "Phone battery"
+msgstr "Telefono akumuliatorius"
+
+#: package/contents/ui/main.qml:182
+#, kde-format
+msgid "Unknown battery"
+msgstr "Nežinomas akumuliatorius"
+
+#: package/contents/ui/main.qml:200
+#, kde-format
+msgctxt "Battery charge percentage"
+msgid "%1% (Charging)"
+msgstr "%1% (Įkraunamas)"
+
+#: package/contents/ui/main.qml:201
+#, kde-format
+msgctxt "Battery charge percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/main.qml:223
+#, kde-format
+msgid "Charge Percentage"
+msgstr "Įkrovos procentinė dalis"
+
+#: package/contents/ui/main.qml:233
+#, kde-format
+msgid "Energy Consumption"
+msgstr "Energijos sunaudojimas"
+
+#: package/contents/ui/main.qml:248
+#, kde-format
+msgid "Timespan"
+msgstr "Laiko tarpas"
+
+#: package/contents/ui/main.qml:249
+#, kde-format
+msgid "Timespan of data to display"
+msgstr "Laiko tarpas duomenų vaizdavimui"
+
+#: package/contents/ui/main.qml:255
+#, kde-format
+msgid "Refresh"
+msgstr "Įkelti iš naujo"
+
+#: package/contents/ui/main.qml:297
+#, kde-format
+msgctxt "Shorthand for Watts"
+msgid "W"
+msgstr "W"
+
+#: package/contents/ui/main.qml:297
+#, kde-format
+msgctxt "literal percent sign"
+msgid "%"
+msgstr "%"
+
+#: package/contents/ui/main.qml:317
+#, kde-format
+msgid "This type of history is currently not available for this device."
+msgstr "Šiuo metu šio tipo istorija šiam įrenginiui yra neprieinama."
+
+#: package/contents/ui/main.qml:368
+#, kde-format
+msgid "%1:"
+msgstr "%1:"
+
+#: package/contents/ui/main.qml:379
+#, kde-format
+msgid "Yes"
+msgstr "Taip"
+
+#: package/contents/ui/main.qml:381
+#, kde-format
+msgid "No"
+msgstr "Ne"
+
+#: package/contents/ui/main.qml:399
+#, kde-format
+msgctxt "%1 is value, %2 is unit"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#~ msgid "Application Energy Consumption"
+#~ msgstr "Programos energijos sunaudojimas"
+
+#~ msgid "Path: %1"
+#~ msgstr "Kelias: %1"
+
+#~ msgid "PID: %1"
+#~ msgstr "PID: %1"
+
+#~ msgid "Wakeups per second: %1 (%2%)"
+#~ msgstr "Pabudimų per sekundę: %1 (%2%)"
+
+#~ msgid "Details: %1"
+#~ msgstr "Informacija: %1"
+
+#~ msgid "LeadAcid"
+#~ msgstr "Rūgštinis"
+
+#~ msgid "Capacity degradation"
+#~ msgstr "Talpos smukimas"
+
+#~ msgid "Manufacturer"
+#~ msgstr "Gamintojas"
+
+#~ msgid "Full design"
+#~ msgstr "Pilnas (suprojektuota)"
+
+#~ msgid "System"
+#~ msgstr "Sistema"
+
+#~ msgid "Has power supply"
+#~ msgstr "Turi maitinimo tiekimą"
+
+#~ msgid "Capacity"
+#~ msgstr "Talpa"

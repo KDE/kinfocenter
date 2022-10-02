@@ -1,0 +1,234 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Franklin, 2015.
+# Jeff Huang <s8321414@gmail.com>, 2016.
+# pan93412 <pan93412@gmail.com>, 2018, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-08-09 00:47+0000\n"
+"PO-Revision-Date: 2020-02-08 17:21+0800\n"
+"Last-Translator: pan93412 <pan93412@gmail.com>\n"
+"Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 19.12.1\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Franklin Weng, Jeff Huang"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "franklin@goodhorse.idv.tw, s8321414@gmail.com"
+
+#: CPUEntry.cpp:17
+#, kde-format
+msgid "Processor:"
+msgid_plural "Processors:"
+msgstr[0] "處理器："
+
+#: CPUEntry.cpp:22
+#, fuzzy, kde-format
+#| msgctxt "Unknown amount of RAM"
+#| msgid "Unknown"
+msgctxt ""
+"unknown CPU type/product name; presented as `Processors: 4 × Unknown Type'"
+msgid "Unknown Type"
+msgstr "未知"
+
+#: GPUEntry.cpp:19
+#, kde-format
+msgid "Graphics Processor:"
+msgstr "圖形處理器："
+
+#: GraphicsPlatformEntry.cpp:10
+#, fuzzy, kde-format
+#| msgid "Graphics Processor:"
+msgid "Graphics Platform:"
+msgstr "圖形處理器："
+
+#: KernelEntry.cpp:11
+#, kde-format
+msgid "Kernel Version:"
+msgstr "核心版本："
+
+#: KernelEntry.cpp:23
+#, fuzzy, kde-format
+#| msgctxt "@label %1 is the CPU bit width (e.g. 32 or 64)"
+#| msgid "%1-bit"
+msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
+msgid "%1 (%2-bit)"
+msgstr "%1 位元"
+
+#: main.cpp:103
+#, fuzzy, kde-format
+#| msgctxt "@title"
+#| msgid "About System"
+msgctxt "@title"
+msgid "About this System"
+msgstr "關於系統"
+
+#: main.cpp:106
+#, kde-format
+msgctxt "@info:credit"
+msgid "Copyright 2012-2020 Harald Sitter"
+msgstr "著作權所有 2012-2020 Harald Sitter"
+
+#: main.cpp:107
+#, kde-format
+msgctxt "@info:credit"
+msgid "Harald Sitter"
+msgstr "Harald Sitter"
+
+#: main.cpp:107
+#, kde-format
+msgctxt "@info:credit"
+msgid "Author"
+msgstr "作者"
+
+#: main.cpp:162
+#, kde-format
+msgid "Operating System:"
+msgstr "作業系統："
+
+#: main.cpp:176
+#, kde-format
+msgctxt "@label"
+msgid "Manufacturer:"
+msgstr ""
+
+#: main.cpp:179 main.cpp:196
+#, kde-format
+msgctxt "@label"
+msgid "Product Name:"
+msgstr ""
+
+#: main.cpp:182
+#, fuzzy, kde-format
+#| msgid "Qt Version:"
+msgctxt "@label"
+msgid "System Version:"
+msgstr "Qt 版本："
+
+#: main.cpp:185 main.cpp:199
+#, kde-format
+msgctxt "@label"
+msgid "Serial Number:"
+msgstr ""
+
+#: main.cpp:189 main.cpp:206
+#, fuzzy, kde-format
+#| msgctxt "Unknown amount of RAM"
+#| msgid "Unknown"
+msgctxt "@label unknown entry in table"
+msgid "Unknown:"
+msgstr "未知"
+
+#: main.cpp:202
+#, fuzzy, kde-format
+#| msgid "Qt Version:"
+msgctxt "@label uboot is the name of a bootloader for embedded devices"
+msgid "U-Boot Version:"
+msgstr "Qt 版本："
+
+#: main.cpp:240
+#, kde-format
+msgid "KDE Frameworks Version:"
+msgstr "KDE Frameworks 版本："
+
+#: main.cpp:241
+#, kde-format
+msgid "Qt Version:"
+msgstr "Qt 版本："
+
+#: MemoryEntry.cpp:20
+#, kde-format
+msgid "Memory:"
+msgstr "記憶體："
+
+#: MemoryEntry.cpp:49
+#, kde-format
+msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
+msgid "%1 of RAM"
+msgstr "%1 的記憶體"
+
+#: MemoryEntry.cpp:53
+#, kde-format
+msgctxt "Unknown amount of RAM"
+msgid "Unknown"
+msgstr "未知"
+
+#: package/contents/ui/main.qml:91
+#, kde-format
+msgctxt "@title"
+msgid "Serial Number"
+msgstr ""
+
+#: package/contents/ui/main.qml:97 package/contents/ui/main.qml:165
+#, fuzzy, kde-format
+#| msgid "Copy to Clipboard"
+msgctxt "@action:button"
+msgid "Copy to Clipboard"
+msgstr "複製至剪貼簿"
+
+#: package/contents/ui/main.qml:113
+#, kde-format
+msgctxt "@action:button show a hidden entry in an overlay"
+msgid "Show"
+msgstr ""
+
+#: package/contents/ui/main.qml:123
+#, kde-format
+msgctxt "@title:group"
+msgid "Software"
+msgstr "軟體"
+
+#: package/contents/ui/main.qml:133
+#, kde-format
+msgctxt "@title:group"
+msgid "Hardware"
+msgstr "硬體"
+
+#: package/contents/ui/main.qml:153
+#, kde-format
+msgctxt "@action:button launches kinfocenter from systemsettings"
+msgid "Show More Information"
+msgstr ""
+
+#: package/contents/ui/main.qml:172
+#, fuzzy, kde-format
+#| msgid "Copy to Clipboard in English"
+msgctxt "@action:button"
+msgid "Copy to Clipboard in English"
+msgstr "複製英文訊息至剪貼簿"
+
+#: PlasmaEntry.cpp:15
+#, kde-format
+msgid "KDE Plasma Version:"
+msgstr "KDE Plasma 版本："
+
+#~ msgid "Copy software and hardware information to clipboard"
+#~ msgstr "複製軟體與硬體資訊到剪貼簿"
+
+#~ msgid "Copy software and hardware information to clipboard in English"
+#~ msgstr "複製英文的軟體與硬體資訊到剪貼簿"
+
+#~ msgid "OS Type:"
+#~ msgstr "作業系統類型："
+
+#~ msgctxt "@title"
+#~ msgid "About Distribution"
+#~ msgstr "關於散布版"
+
+#~ msgctxt ""
+#~ "%1 is a label already including a colon, %2 is the corresponding value"
+#~ msgid "%1 %2"
+#~ msgstr "%1 %2"

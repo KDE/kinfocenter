@@ -1,0 +1,45 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the kinfocenter package.
+# Sergiu Bivol <sergiu@cip.md>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kinfocenter\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-07-05 00:46+0000\n"
+"PO-Revision-Date: 2022-02-04 13:03+0000\n"
+"Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
+"Language-Team: Romanian\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Lokalize 21.12.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Sergiu Bivol"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sergiu@cip.md"
+
+#: main.cpp:28
+#, kde-format
+msgctxt "@label kcm name"
+msgid "Interrupts"
+msgstr "Întreruperi"
+
+#: main.cpp:29
+#, kde-format
+msgid "Harald Sitter"
+msgstr "Harald Sitter"
+
+#: package/contents/ui/main.qml:14
+msgctxt "@info"
+msgid "CPU Interrupts Information"
+msgstr "Informații despre întreruperile procesorului"

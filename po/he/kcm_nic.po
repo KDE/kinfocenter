@@ -1,0 +1,213 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Diego Iastrubni <elcuco@kde.org>, 2012, 2013.
+# Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmnic\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-14 00:46+0000\n"
+"PO-Revision-Date: 2017-05-16 06:53-0400\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Zanata 3.9.6\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "צוות התרגום של KDE ישראל"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde-l10n-he@kde.org"
+
+#: networkmodel.cpp:159
+#, fuzzy, kde-format
+#| msgid "Point to Point"
+msgctxt "@item:intable Network type"
+msgid "Point to Point"
+msgstr "נקודה לנקודה"
+
+#: networkmodel.cpp:166
+#, fuzzy, kde-format
+#| msgctxt "@item:intext Mode of network card"
+#| msgid "Broadcast"
+msgctxt "@item:intable Network type"
+msgid "Broadcast"
+msgstr "שידור"
+
+#: networkmodel.cpp:173
+#, fuzzy, kde-format
+#| msgid "Multicast"
+msgctxt "@item:intable Network type"
+msgid "Multicast"
+msgstr "שידור"
+
+#: networkmodel.cpp:180
+#, fuzzy, kde-format
+#| msgid "Loopback"
+msgctxt "@item:intable Network type"
+msgid "Loopback"
+msgstr "לולאה"
+
+#: nic.cpp:21
+#, kde-format
+msgid "kcm_nic"
+msgstr ""
+
+#: nic.cpp:22
+#, fuzzy, kde-format
+#| msgid "Network Mask"
+msgctxt "@title:window"
+msgid "Network Interfaces"
+msgstr "מסיכת רשת"
+
+#: nic.cpp:26
+#, fuzzy, kde-format
+#| msgid "(c) 2001 - 2002 Alexander Neundorf"
+msgctxt "@info"
+msgid "(c) 2001 - 2002 Alexander Neundorf"
+msgstr "(c) 2001 - 2002 Alexander Neundorf"
+
+#: nic.cpp:28
+#, fuzzy, kde-format
+#| msgid "Alexander Neundorf"
+msgctxt "@info:credit"
+msgid "Alexander Neundorf"
+msgstr "Alexander Neundorf"
+
+#: nic.cpp:28
+#, kde-format
+msgctxt "@info:credit"
+msgid "creator"
+msgstr ""
+
+#: nic.cpp:29
+#, kde-format
+msgctxt "@info:credit"
+msgid "Carl Schwan"
+msgstr ""
+
+#: nic.cpp:29
+#, kde-format
+msgctxt "@info:credit"
+msgid "developer"
+msgstr ""
+
+#: package/contents/ui/main.qml:15
+#, fuzzy, kde-format
+#| msgid "Network Mask"
+msgid "Network Interfaces"
+msgstr "מסיכת רשת"
+
+#: package/contents/ui/main.qml:30
+#, fuzzy, kde-format
+#| msgid "Name"
+msgctxt "@label"
+msgid "Name:"
+msgstr "שם"
+
+#: package/contents/ui/main.qml:34
+#, fuzzy, kde-format
+#| msgid "IP Address"
+msgctxt "@label"
+msgid "Address:"
+msgstr "כתובת &IP"
+
+#: package/contents/ui/main.qml:38
+#, fuzzy, kde-format
+#| msgid "Network Mask"
+msgctxt "@label"
+msgid "Network Mask:"
+msgstr "מסיכת רשת"
+
+#: package/contents/ui/main.qml:42
+#, fuzzy, kde-format
+#| msgid "Type"
+msgctxt "@label"
+msgid "Type:"
+msgstr "סוג"
+
+#: package/contents/ui/main.qml:46
+#, kde-format
+msgctxt "@label"
+msgid "Hardware Address:"
+msgstr ""
+
+#: package/contents/ui/main.qml:51
+#, fuzzy, kde-format
+#| msgid "State"
+msgctxt "@label"
+msgid "State:"
+msgstr "מצב"
+
+#: package/contents/ui/main.qml:59
+#, kde-format
+msgctxt "State of network card is connected"
+msgid "Up"
+msgstr "למעלה"
+
+#: package/contents/ui/main.qml:60
+#, kde-format
+msgctxt "State of network card is disconnected"
+msgid "Down"
+msgstr "למטה"
+
+#: package/contents/ui/main.qml:76
+#, kde-format
+msgctxt "@action:button"
+msgid "Refresh"
+msgstr ""
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Broadcast"
+#~ msgstr "שידור"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Point to Point"
+#~ msgstr "נקודה לנקודה"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Multicast"
+#~ msgstr "שידור"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Loopback"
+#~ msgstr "לולאה"
+
+#~ msgctxt "@item:intext Mode of network card"
+#~ msgid "Unknown"
+#~ msgstr "לא ידוע"
+
+#~ msgctxt "Unknown network mask"
+#~ msgid "Unknown"
+#~ msgstr "לא ידוע"
+
+#~ msgctxt "Unknown HWaddr"
+#~ msgid "Unknown"
+#~ msgstr "לא ידוע"
+
+#, fuzzy
+#~| msgid "Broadcast"
+#~ msgctxt "@item:intable Netork type"
+#~ msgid "Broadcast"
+#~ msgstr "שידור"
+
+#~ msgid "HWAddr"
+#~ msgstr "HWAddr"
+
+#~ msgid "&Update"
+#~ msgstr "&עדכון"
+
+#~ msgid "kcminfo"
+#~ msgstr "kcminfo"
+
+#~ msgid "System Information Control Module"
+#~ msgstr "מודול בקרת מידע המערכת"

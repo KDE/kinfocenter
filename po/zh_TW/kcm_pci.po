@@ -1,0 +1,1322 @@
+# translation of kcm_pci.po to Chinese Traditional
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Frank Weng (a.k.a. Franklin) <franklin at goodhorse dot idv dot tw>, 2008, 2009, 2010, 2012.
+# Jeff Huang <s8321414@gmail.com>, 2016.
+# pan93412 <pan93412@gmail.com>, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_pci\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
+"PO-Revision-Date: 2019-10-11 19:06+0800\n"
+"Last-Translator: pan93412 <pan93412@gmail.com>\n"
+"Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"dot tw>\n"
+"X-Generator: Lokalize 19.08.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Frank Weng (a.k.a. Franklin), Jeff Huang"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "franklin@goodhorse.idv.tw, s8321414@gmail.com"
+
+#: main.cpp:26
+#, fuzzy, kde-format
+#| msgid "PCI-X"
+msgctxt "@label kcm name"
+msgid "PCI"
+msgstr "PCI-X"
+
+#: main.cpp:27
+#, kde-format
+msgid "Harald Sitter"
+msgstr ""
+
+#: package/contents/ui/main.qml:14
+#, fuzzy
+#| msgid "Information"
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "資訊"
+
+#~ msgid "kcm_pci"
+#~ msgstr "kcm_pci"
+
+#~ msgid "PCI Devices"
+#~ msgstr "PCI 裝置"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+
+#~ msgid "Nicolas Ternisien"
+#~ msgstr "Nicolas Ternisien"
+
+#~ msgid "Helge Deller"
+#~ msgstr "Helge Deller"
+
+#~ msgid "This list displays PCI information."
+#~ msgstr "此清單顯示 PCI 資訊。"
+
+#~ msgid ""
+#~ "This display shows information about your computer's PCI slots and the "
+#~ "related connected devices."
+#~ msgstr "這裡顯示關於您電腦中的 PCI 插槽，以及相關裝置的資訊。"
+
+#~ msgid "Device Class"
+#~ msgstr "裝置類別"
+
+#~ msgid "Device Subclass"
+#~ msgstr "裝置子類別"
+
+#~ msgid "Device Programming Interface"
+#~ msgstr "裝置程式介面"
+
+#~ msgid "Master IDE Device"
+#~ msgstr "主要 IDE 裝置"
+
+#~ msgid "Secondary programmable indicator"
+#~ msgstr "次要可程式指示器"
+
+#~ msgid "Secondary operating mode"
+#~ msgstr "次要操作模式"
+
+#~ msgid "Primary programmable indicator"
+#~ msgstr "主要可程式指示器"
+
+#~ msgid "Primary operating mode"
+#~ msgstr "主要操作模式"
+
+#~ msgid "Vendor"
+#~ msgstr "製造商"
+
+#~ msgid "Device"
+#~ msgstr "裝置"
+
+#~ msgid "Subsystem"
+#~ msgstr "子系統"
+
+#~ msgid " - device:"
+#~ msgstr " - 裝置："
+
+#~ msgid "Interrupt"
+#~ msgstr "中斷"
+
+#~ msgid "IRQ"
+#~ msgstr "IRQ"
+
+#~ msgid "Pin"
+#~ msgstr "Pin"
+
+#~ msgid "Control"
+#~ msgstr "控制"
+
+#~ msgid "Response in I/O space"
+#~ msgstr "於輸出入空間回應"
+
+#~ msgid "Response in memory space"
+#~ msgstr "於記憶體空間回應"
+
+#~ msgid "Bus mastering"
+#~ msgstr "匯流排主導"
+
+#~ msgid "Response to special cycles"
+#~ msgstr "回應到特定的循環"
+
+#~ msgid "Memory write and invalidate"
+#~ msgstr "記憶體寫入與未確認"
+
+#~ msgid "Palette snooping"
+#~ msgstr "調色板監控"
+
+#~ msgid "Parity checking"
+#~ msgstr "同位元檢查"
+
+#~ msgid "Address/data stepping"
+#~ msgstr "位址/資料步進"
+
+#~ msgid "System error"
+#~ msgstr "系統錯誤"
+
+#~ msgid "Back-to-back writes"
+#~ msgstr "連續寫入"
+
+#~ msgid "Status"
+#~ msgstr "狀態"
+
+#~ msgid "Interrupt status"
+#~ msgstr "中斷狀態"
+
+#~ msgid "Capability list"
+#~ msgstr "相容清單"
+
+#~ msgid "66 MHz PCI 2.1 bus"
+#~ msgstr "66 MHz PCI 2.1 bus"
+
+#~ msgid "User-definable features"
+#~ msgstr "使用者可定義的功能"
+
+#~ msgid "Accept fast back-to-back"
+#~ msgstr "快速接受─連續"
+
+#~ msgid "Data parity error"
+#~ msgstr "資料同位元錯誤"
+
+#~ msgid "Device selection timing"
+#~ msgstr "裝置選擇時間"
+
+#~ msgid "Signaled target abort"
+#~ msgstr "信號目標中止"
+
+#~ msgid "Received target abort"
+#~ msgstr "已接受目標中止"
+
+#~ msgid "Received master abort"
+#~ msgstr "已接受主導中止"
+
+#~ msgid "Signaled system error"
+#~ msgstr "信號系統錯誤"
+
+#~ msgid "Parity error"
+#~ msgstr "同位元錯誤"
+
+#~ msgid "Latency"
+#~ msgstr "延遲"
+
+#~ msgid "MIN_GNT"
+#~ msgstr "MIN_GNT"
+
+#~ msgid "No major requirements (0x00)"
+#~ msgstr "沒有主要需求（0x00）"
+
+#~ msgid "MAX_LAT"
+#~ msgstr "MAX_LAT"
+
+#~ msgid "Header"
+#~ msgstr "標頭"
+
+#~ msgid "Type"
+#~ msgstr "型態"
+
+#~ msgid "Multifunctional"
+#~ msgstr "多重功能"
+
+#~ msgid "Build-in self test"
+#~ msgstr "內建自我測試"
+
+#~ msgid "BIST Capable"
+#~ msgstr "BIST Capable"
+
+#~ msgid "BIST Start"
+#~ msgstr "BIST 啟始"
+
+#~ msgid "Completion code"
+#~ msgstr "完成碼"
+
+#~ msgid "Size"
+#~ msgstr "大小"
+
+#~ msgid "Address mappings"
+#~ msgstr "位址映射"
+
+#~ msgid "Mapping %1"
+#~ msgstr "映射 %1"
+
+#~ msgid "Space"
+#~ msgstr "空間"
+
+#~ msgid "I/O"
+#~ msgstr "輸出入"
+
+#~ msgid "Memory"
+#~ msgstr "記憶體"
+
+#~ msgid "Prefetchable"
+#~ msgstr "可預取"
+
+#~ msgid "Address"
+#~ msgstr "位址"
+
+#~ msgctxt "unassigned address"
+#~ msgid "Unassigned"
+#~ msgstr "未指定"
+
+#~ msgctxt "unassigned size"
+#~ msgid "Unassigned"
+#~ msgstr "未指定"
+
+#~ msgid "Bus"
+#~ msgstr "匯流排"
+
+#~ msgid "Primary bus number"
+#~ msgstr "主匯流排編號"
+
+#~ msgid "Secondary bus number"
+#~ msgstr "次匯流排編號"
+
+#~ msgid "Subordinate bus number"
+#~ msgstr "附屬匯流排編號"
+
+#~ msgid "Secondary latency timer"
+#~ msgstr "次要延遲計時器"
+
+#~ msgid "CardBus number"
+#~ msgstr "CardBus 編號"
+
+#~ msgid "CardBus latency timer"
+#~ msgstr "CardBus 延遲計時器"
+
+#~ msgid "Secondary status"
+#~ msgstr "次要狀態"
+
+#~ msgid "I/O behind bridge"
+#~ msgstr "橋接器後的輸出入"
+
+#~ msgid "32-bit"
+#~ msgstr "32 bit"
+
+#~ msgid "Base"
+#~ msgstr "基底"
+
+#~ msgid "Limit"
+#~ msgstr "限制"
+
+#~ msgid "Memory behind bridge"
+#~ msgstr "橋接器後的記憶體"
+
+#~ msgid "Prefetchable memory behind bridge"
+#~ msgstr "橋接器後的可預取記憶體"
+
+#~ msgid "64-bit"
+#~ msgstr "64 bit"
+
+#~ msgid "Bridge control"
+#~ msgstr "橋接器控制"
+
+#~ msgid "Secondary parity checking"
+#~ msgstr "次要同位元檢查"
+
+#~ msgid "Secondary system error"
+#~ msgstr "次要系統錯誤"
+
+#~ msgid "ISA ports forwarding"
+#~ msgstr "ISA 連接埠轉接"
+
+#~ msgid "VGA forwarding"
+#~ msgstr "VGA 轉接"
+
+#~ msgid "Master abort"
+#~ msgstr "主導中止"
+
+#~ msgid "Secondary bus reset"
+#~ msgstr "次要匯流排重置"
+
+#~ msgid "Secondary back-to-back writes"
+#~ msgstr "次要連續寫入"
+
+#~ msgid "Primary discard timer counts"
+#~ msgstr "主要丟棄計時器計數"
+
+#~ msgid "2e10 PCI clocks"
+#~ msgstr "2e10 PCI clocks"
+
+#~ msgid "2e15 PCI clocks"
+#~ msgstr "2e15 PCI clocks"
+
+#~ msgid "Secondary discard timer counts"
+#~ msgstr "次要丟棄計時器計數"
+
+#~ msgid "Discard timer error"
+#~ msgstr "丟棄計時器錯誤"
+
+#~ msgid "Discard timer system error"
+#~ msgstr "丟棄計時器系統錯誤"
+
+#~ msgid "Expansion ROM"
+#~ msgstr "延伸唯讀記憶體"
+
+#~ msgid "Memory windows"
+#~ msgstr "記憶體視窗"
+
+#~ msgid "Window %1"
+#~ msgstr "視窗 %1"
+
+#~ msgid "I/O windows"
+#~ msgstr "輸出入視窗"
+
+#~ msgid "16-bit"
+#~ msgstr "16 bit"
+
+#~ msgid "16-bit legacy interface ports"
+#~ msgstr "16 位元 legacy 介面連接埠"
+
+#~ msgid "CardBus control"
+#~ msgstr "CardBus 控制"
+
+#~ msgid "Interrupts for 16-bit cards"
+#~ msgstr "16 位元卡中斷"
+
+#~ msgid "Window 0 prefetchable memory"
+#~ msgstr "視窗 0 可預取記憶體"
+
+#~ msgid "Window 1 prefetchable memory"
+#~ msgstr "視窗 1 可預取記憶體"
+
+#~ msgid "Post writes"
+#~ msgstr "Post writes"
+
+#~ msgid "Raw PCI config space"
+#~ msgstr "原始 PCI 設定空間"
+
+#~ msgid "Capabilities"
+#~ msgstr "性能"
+
+#~ msgid "Version"
+#~ msgstr "版本"
+
+#~ msgid "Clock required for PME generation"
+#~ msgstr "產生 PME 需要的 clock"
+
+#~ msgid "Device-specific initialization required"
+#~ msgstr "裝置需要的特殊初始化"
+
+#~ msgid "Maximum auxiliary current required in D3 cold"
+#~ msgstr "D3 cold 目前需要的最大輔助"
+
+#~ msgid "D1 support"
+#~ msgstr "D1 支援"
+
+#~ msgid "D2 support"
+#~ msgstr "D2 支援"
+
+#~ msgid "Power management events"
+#~ msgstr "電源管理事件"
+
+#~ msgid "D0"
+#~ msgstr "D0"
+
+#~ msgid "D1"
+#~ msgstr "D1"
+
+#~ msgid "D2"
+#~ msgstr "D2"
+
+#~ msgid "D3 hot"
+#~ msgstr "D3 熱"
+
+#~ msgid "D3 cold"
+#~ msgstr "D3 冷"
+
+#~ msgid "Power state"
+#~ msgstr "電源狀態"
+
+#~ msgid "Power management"
+#~ msgstr "電源管理"
+
+#~ msgid "Data select"
+#~ msgstr "資料選取"
+
+#~ msgid "Data scale"
+#~ msgstr "資料範圍"
+
+#~ msgid "Power management status"
+#~ msgstr "電源管理狀態"
+
+#~ msgid "Bridge status"
+#~ msgstr "橋接器狀態"
+
+#~ msgid "Secondary bus state in D3 hot"
+#~ msgstr "D3 熱時次要匯流排狀態"
+
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgid "Secondary bus power & clock control"
+#~ msgstr "次要匯流排電源與 clock 控制"
+
+#~ msgid "Data"
+#~ msgstr "資料"
+
+#~ msgid "Revision"
+#~ msgstr "版本"
+
+#~ msgid "Rate"
+#~ msgstr "頻率"
+
+#~ msgid "AGP 3.0 mode"
+#~ msgstr "AGP 3.0 模式"
+
+#~ msgid "Fast Writes"
+#~ msgstr "快速寫入"
+
+#~ msgid "Address over 4 GiB"
+#~ msgstr "超過 4GB 的位址"
+
+#~ msgid "Translation of host processor access"
+#~ msgstr "主機處理器存取翻譯"
+
+#~ msgid "64-bit GART"
+#~ msgstr "64 bit GART"
+
+#~ msgid "Cache Coherency"
+#~ msgstr "快取結合"
+
+#~ msgid "Side-band addressing"
+#~ msgstr "Side band addressing"
+
+#~ msgid "Calibrating cycle"
+#~ msgstr "Calibrating cycle"
+
+#~ msgid "Optimum asynchronous request size"
+#~ msgstr "最佳化非同步需求大小"
+
+#~ msgid "Isochronous transactions"
+#~ msgstr "等時交易"
+
+#~ msgid "Maximum number of AGP command"
+#~ msgstr "AGP 指令最大數量"
+
+#~ msgid "Configuration"
+#~ msgstr "設定"
+
+#~ msgid "AGP"
+#~ msgstr "AGP"
+
+#~ msgid "Data address"
+#~ msgstr "資料位址"
+
+#~ msgid "Transfer completed"
+#~ msgstr "傳輸已完成"
+
+#~ msgid "Message control"
+#~ msgstr "訊息控制"
+
+#~ msgid "Message signaled interrupts"
+#~ msgstr "訊息信號中斷"
+
+#~ msgid "Multiple message capable"
+#~ msgstr "多重訊息能力"
+
+#~ msgid "Multiple message enable"
+#~ msgstr "多重訊息開啟"
+
+#~ msgid "64-bit address"
+#~ msgstr "64 位元位址"
+
+#~ msgid "Per vector masking"
+#~ msgstr "向量遮罩"
+
+#~ msgid "Mask"
+#~ msgstr "遮罩"
+
+#~ msgid "Pending"
+#~ msgstr "待決"
+
+#~ msgid "Length"
+#~ msgstr "長度"
+
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "無"
+
+#~ msgid "Next"
+#~ msgstr "下一個"
+
+#~ msgid "0x00 (None)"
+#~ msgstr "0x00（無）"
+
+#~ msgid "Root only"
+#~ msgstr "Root only"
+
+#~ msgid "Value"
+#~ msgstr "數值"
+
+#~ msgid "Cache line size"
+#~ msgstr "快取行大小"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Enabled"
+#~ msgstr "已開啟"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Disabled"
+#~ msgstr "已關閉"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Yes"
+#~ msgstr "是"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "否"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Unknown"
+#~ msgstr "未知"
+
+#~ msgid "Unclassified device"
+#~ msgstr "未分類裝置"
+
+#~ msgid "Mass storage controller"
+#~ msgstr "大量儲存控制器"
+
+#~ msgid "Network controller"
+#~ msgstr "網路控制器"
+
+#~ msgid "Display controller"
+#~ msgstr "顯示控制器"
+
+#~ msgid "Multimedia controller"
+#~ msgstr "多媒體控制器"
+
+#~ msgid "Memory controller"
+#~ msgstr "記憶體控制器"
+
+#~ msgid "Bridge"
+#~ msgstr "橋"
+
+#~ msgid "Communication controller"
+#~ msgstr "通訊控制器"
+
+#~ msgid "Generic system peripheral"
+#~ msgstr "一般系統週邊"
+
+#~ msgid "Input device controller"
+#~ msgstr "輸入裝置控制器"
+
+#~ msgid "Docking station"
+#~ msgstr "擴充底座"
+
+#~ msgid "Processor"
+#~ msgstr "處理器"
+
+#~ msgid "Serial bus controller"
+#~ msgstr "序列匯流排控制器"
+
+#~ msgid "Wireless controller"
+#~ msgstr "無線網路控制器"
+
+#~ msgid "Intelligent controller"
+#~ msgstr "智慧型控制器"
+
+#~ msgid "Satellite communications controller"
+#~ msgstr "衛星通訊控制器"
+
+#~ msgid "Encryption controller"
+#~ msgstr "加密控制器"
+
+#~ msgid "Signal processing controller"
+#~ msgstr "信號處理控制器"
+
+#~ msgid "Processing accelerators"
+#~ msgstr "處理加速器"
+
+#~ msgid "Non-Essential Instrumentation"
+#~ msgstr "非基本檢測工具"
+
+#~ msgid "Coprocessor"
+#~ msgstr "副處理器"
+
+#~ msgid "Unassigned class"
+#~ msgstr "未指定類別"
+
+#~ msgid "Unknown device class"
+#~ msgstr "未知裝置類別"
+
+#~ msgid "Non-VGA unclassified device"
+#~ msgstr "非 VGA 未分類裝置"
+
+#~ msgid "VGA unclassified device"
+#~ msgstr "VGA 未分類裝置"
+
+#~ msgid "Unknown unclassified device"
+#~ msgstr "未知未分類裝置"
+
+#~ msgid "SCSI storage controller"
+#~ msgstr "SCSI 儲存控制器"
+
+#~ msgid "IDE controller"
+#~ msgstr "IDE 控制器"
+
+#~ msgid "Floppy disk controller"
+#~ msgstr "軟碟控制器"
+
+#~ msgid "IPI bus controller"
+#~ msgstr "IPI 匯流排控制器"
+
+#~ msgid "RAID bus controller"
+#~ msgstr "RAID 匯流排控制器"
+
+#~ msgid "ATA controller"
+#~ msgstr "ATA 控制器"
+
+#~ msgid "SATA controller"
+#~ msgstr "SATA 控制器"
+
+#~ msgid "Serial Attached SCSI controller"
+#~ msgstr "序列式 SCSI 控制器"
+
+#~ msgid "Non-Volatile memory controller"
+#~ msgstr "非暫時性記憶體控制器"
+
+#~ msgid "Unknown storage controller"
+#~ msgstr "未知的儲存控制器"
+
+#~ msgid "Ethernet controller"
+#~ msgstr "乙太網路控制器"
+
+#~ msgid "Token ring network controller"
+#~ msgstr "環狀代幣網路控制器"
+
+#~ msgid "FDDI network controller"
+#~ msgstr "光纖網路控制器"
+
+#~ msgid "ATM network controller"
+#~ msgstr "ATM 網路控制器"
+
+#~ msgid "ISDN controller"
+#~ msgstr "ISDN 控制器"
+
+#~ msgid "WorldFip controller"
+#~ msgstr "WorldFip 控制器"
+
+#~ msgid "PICMG controller"
+#~ msgstr "PICMG 控制器"
+
+#~ msgid "Infiniband controller"
+#~ msgstr "Infiniband 控制器"
+
+#~ msgid "Fabric controller"
+#~ msgstr "光纖控制器"
+
+#~ msgid "Unknown network controller"
+#~ msgstr "未知的網路控制器"
+
+#~ msgid "VGA compatible controller"
+#~ msgstr "VGA 相容控制器"
+
+#~ msgid "XGA compatible controller"
+#~ msgstr "XGA 相容控制器"
+
+#~ msgid "3D controller"
+#~ msgstr "3D 控制器"
+
+#~ msgid "Unknown display controller"
+#~ msgstr "未知的顯示控制器"
+
+#~ msgid "Multimedia video controller"
+#~ msgstr "多媒體影像控制器"
+
+#~ msgid "Multimedia audio controller"
+#~ msgstr "多媒體音效控制器"
+
+#~ msgid "Computer telephony device"
+#~ msgstr "電腦電話裝置"
+
+#~ msgid "Audio device"
+#~ msgstr "音訊裝置"
+
+#~ msgid "Unknown multimedia controller"
+#~ msgstr "未知的多媒體控制器"
+
+#~ msgid "RAM memory"
+#~ msgstr "隨機存取記憶體"
+
+#~ msgid "FLASH memory"
+#~ msgstr "快閃記憶體"
+
+#~ msgid "Unknown memory controller"
+#~ msgstr "未知的記憶體控制器"
+
+#~ msgid "Host bridge"
+#~ msgstr "主機橋接器"
+
+#~ msgid "ISA bridge"
+#~ msgstr "ISA 橋接器"
+
+#~ msgid "EISA bridge"
+#~ msgstr "EISA 橋接器"
+
+#~ msgid "MicroChannel bridge"
+#~ msgstr "MicroChannel 橋接器"
+
+#~ msgid "PCI bridge"
+#~ msgstr "PCI 橋接器"
+
+#~ msgid "PCMCIA bridge"
+#~ msgstr "PCMCIA 橋接器"
+
+#~ msgid "NuBus bridge"
+#~ msgstr "NuBus 橋接器"
+
+#~ msgid "CardBus bridge"
+#~ msgstr "CardBus 橋接器"
+
+#~ msgid "RACEway bridge"
+#~ msgstr "RACEway 橋接器"
+
+#~ msgid "Semi-transparent PCI-to-PCI bridge"
+#~ msgstr "Semi-transparent PCI 對 PCI 橋接器"
+
+#~ msgid "InfiniBand to PCI host bridge"
+#~ msgstr "InfiniBand 對 PCI 主機橋接器"
+
+#~ msgid "Unknown bridge"
+#~ msgstr "未知的橋接器"
+
+#~ msgid "Serial controller"
+#~ msgstr "序列控制器"
+
+#~ msgid "Parallel controller"
+#~ msgstr "平行埠控制器"
+
+#~ msgid "Multiport serial controller"
+#~ msgstr "多埠序列控制器"
+
+#~ msgid "Modem"
+#~ msgstr "數據機"
+
+#~ msgid "GPIB controller"
+#~ msgstr "GPIB 控制器"
+
+#~ msgid "Smart card controller"
+#~ msgstr "智慧卡控制器"
+
+#~ msgid "Unknown communication controller"
+#~ msgstr "未知的通訊控制器"
+
+#~ msgid "PIC"
+#~ msgstr "PIC"
+
+#~ msgid "DMA controller"
+#~ msgstr "DMA 控制器"
+
+#~ msgid "Timer"
+#~ msgstr "計時器"
+
+#~ msgid "RTC"
+#~ msgstr "RTC"
+
+#~ msgid "PCI Hot-plug controller"
+#~ msgstr "PCI 熱插拔控制器"
+
+#~ msgid "SD Host controller"
+#~ msgstr "SD 主機控制器"
+
+#~ msgid "IOMMU"
+#~ msgstr "IOMMU"
+
+#~ msgid "Unknown system peripheral"
+#~ msgstr "未知的系統週邊"
+
+#~ msgid "Keyboard controller"
+#~ msgstr "鍵盤控制器"
+
+#~ msgid "Digitizer Pen"
+#~ msgstr "數位化筆"
+
+#~ msgid "Mouse controller"
+#~ msgstr "滑鼠控制器"
+
+#~ msgid "Scanner controller"
+#~ msgstr "掃描器控制器"
+
+#~ msgid "Gameport controller"
+#~ msgstr "遊戲埠控制器"
+
+#~ msgid "Unknown input device controller"
+#~ msgstr "未知的輸入裝置控制器"
+
+#~ msgid "Generic docking station"
+#~ msgstr "一般擴充底座"
+
+#~ msgid "Unknown docking station"
+#~ msgstr "未知的擴充底座"
+
+#~ msgid "386"
+#~ msgstr "386"
+
+#~ msgid "486"
+#~ msgstr "486"
+
+#~ msgid "Pentium"
+#~ msgstr "Pentium"
+
+#~ msgid "Alpha"
+#~ msgstr "Alpha"
+
+#~ msgid "Power PC"
+#~ msgstr "Power PC"
+
+#~ msgid "MIPS"
+#~ msgstr "MIPS"
+
+#~ msgid "Co-processor"
+#~ msgstr "副處理器"
+
+#~ msgid "Unknown processor"
+#~ msgstr "未知的處理器"
+
+#~ msgid "FireWire (IEEE 1394)"
+#~ msgstr "FireWire (IEEE 1394)"
+
+#~ msgid "ACCESS bus"
+#~ msgstr "ACCESS 匯流排"
+
+#~ msgid "SSA"
+#~ msgstr "SSA"
+
+#~ msgid "USB controller"
+#~ msgstr "USB 控制器"
+
+#~ msgid "Fibre channel"
+#~ msgstr "光纖頻道"
+
+#~ msgid "SMBus"
+#~ msgstr "SMBus"
+
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#~ msgid "IPMI interface"
+#~ msgstr "IPMI 介面"
+
+#~ msgid "SERCOS interface"
+#~ msgstr "SERCOS 介面"
+
+#~ msgid "CANbus"
+#~ msgstr "CANbus"
+
+#~ msgid "Unknown serial bus controller"
+#~ msgstr "未知的序列匯流排控制器"
+
+#~ msgid "IRDA controller"
+#~ msgstr "IRDA 控制器"
+
+#~ msgid "Consumer IR controller"
+#~ msgstr "用戶紅外線控制器"
+
+#~ msgid "RF controller"
+#~ msgstr "RF 控制器"
+
+#~ msgid "Bluetooth"
+#~ msgstr "藍芽"
+
+#~ msgid "Broadband"
+#~ msgstr "寬頻"
+
+#~ msgid "Ethernet (802.11a - 5 GHz)"
+#~ msgstr "乙太網路（802.11a - 5 GHz）"
+
+#~ msgid "Ethernet (802.11b - 2.4 GHz)"
+#~ msgstr "乙太網路（802.11b - 2.4 GHz）"
+
+#~ msgid "Unknown wireless controller"
+#~ msgstr "匯知的無線網路控制器"
+
+#~ msgid "I2O"
+#~ msgstr "I2O"
+
+#~ msgid "Unknown intelligent controller"
+#~ msgstr "未知的智慧型控制器"
+
+#~ msgid "Satellite TV controller"
+#~ msgstr "衛星電視控制器"
+
+#~ msgid "Satellite audio communication controller"
+#~ msgstr "衛星音效通訊控制器"
+
+#~ msgid "Satellite voice communication controller"
+#~ msgstr "衛星影像通訊控制器"
+
+#~ msgid "Satellite data communication controller"
+#~ msgstr "衛星資料通訊控制器"
+
+#~ msgid "Unknown satellite communications controller"
+#~ msgstr "未知的衛星通訊控制器"
+
+#~ msgid "Network and computing encryption device"
+#~ msgstr "網路與計算加密裝置"
+
+#~ msgid "Entertainment encryption device"
+#~ msgstr "娛樂加密裝置"
+
+#~ msgid "Unknown encryption controller"
+#~ msgstr "未知的加密裝置"
+
+#~ msgid "DPIO module"
+#~ msgstr "DPIO 模組"
+
+#~ msgid "Performance counters"
+#~ msgstr "效能計數器"
+
+#~ msgid "Communication synchronizer"
+#~ msgstr "通訊同步器"
+
+#~ msgid "Signal processing management"
+#~ msgstr "信號處理管理工具"
+
+#~ msgid "Unknown signal processing controller"
+#~ msgstr "未知的信號處理控制器"
+
+#~ msgid "Unknown processing accelerator"
+#~ msgstr "未知處理加速器"
+
+#~ msgid "Unknown subdevice class"
+#~ msgstr "未知的子裝置類別"
+
+#~ msgid "ISA Compatibility mode-only controller"
+#~ msgstr "ISA 僅相容模式控制器"
+
+#~ msgid "PCI native mode-only controller"
+#~ msgstr "PCI 僅原生模式控制器"
+
+#~ msgid ""
+#~ "ISA Compatibility mode controller, supports both channels switched to PCI "
+#~ "native mode"
+#~ msgstr "ISA 相容模式控制器，支援兩個切換到 PCI 原生模式的頻道"
+
+#~ msgid ""
+#~ "PCI native mode controller, supports both channels switched to ISA "
+#~ "compatibility mode"
+#~ msgstr "PCI 原生模式控制器，支援兩個切換到 ISA 相容模式的頻道"
+
+#~ msgid "ISA Compatibility mode-only controller, supports bus mastering"
+#~ msgstr "ISA 僅相容模式控制器，支援匯流排主控"
+
+#~ msgid "PCI native mode-only controller, supports bus mastering"
+#~ msgstr "PCI 僅原生模式控制器，支援匯流排主控"
+
+#~ msgid ""
+#~ "ISA Compatibility mode controller, supports both channels switched to PCI "
+#~ "native mode, supports bus mastering"
+#~ msgstr ""
+#~ "ISA 相容模式控制器，支援兩個切換到 PCI 原生模式的頻道，且支援匯流排主控"
+
+#~ msgid ""
+#~ "PCI native mode controller, supports both channels switched to ISA "
+#~ "compatibility mode, supports bus mastering"
+#~ msgstr ""
+#~ "PCI 原生模式控制器，支援兩個切換到 ISA 相容模式的頻道，且支援匯流排主控"
+
+#~ msgid "ADMA single stepping"
+#~ msgstr "ADMA 單步步進"
+
+#~ msgid "ADMA continuous operation"
+#~ msgstr "ADMA 持續操作"
+
+#~ msgid "Vendor specific"
+#~ msgstr "廠商指定"
+
+#~ msgid "AHCI 1.0"
+#~ msgstr "AHCI 1.0"
+
+#~ msgid "Serial Storage Bus"
+#~ msgstr "序列式儲存匯流排"
+
+#~ msgid "NVMHCI"
+#~ msgstr "NVMHCI"
+
+#~ msgid "NVM Express"
+#~ msgstr "NVM Express"
+
+#~ msgid "VGA controller"
+#~ msgstr "VGA 控制器"
+
+#~ msgid "8514 controller"
+#~ msgstr "8514 控制器"
+
+#~ msgid "Normal decode"
+#~ msgstr "一般解碼"
+
+#~ msgid "Subtractive decode"
+#~ msgstr "相減式解碼"
+
+#~ msgid "Transparent mode"
+#~ msgstr "透明模式"
+
+#~ msgid "Endpoint mode"
+#~ msgstr "結點模式"
+
+#~ msgid "Primary bus towards host CPU"
+#~ msgstr "到主機 CPU 的主要匯流排"
+
+#~ msgid "Secondary bus towards host CPU"
+#~ msgstr "到主機 CPU 的次要匯流排"
+
+#~ msgid "8250"
+#~ msgstr "8250"
+
+#~ msgid "16450"
+#~ msgstr "16450"
+
+#~ msgid "16550"
+#~ msgstr "16550"
+
+#~ msgid "16650"
+#~ msgstr "16650"
+
+#~ msgid "16750"
+#~ msgstr "16750"
+
+#~ msgid "16850"
+#~ msgstr "16850"
+
+#~ msgid "16950"
+#~ msgstr "16950"
+
+#~ msgid "SPP"
+#~ msgstr "SPP"
+
+#~ msgid "BiDir"
+#~ msgstr "BiDir"
+
+#~ msgid "ECP"
+#~ msgstr "ECP"
+
+#~ msgid "IEEE1284"
+#~ msgstr "IEEE1284"
+
+#~ msgid "IEEE1284 Target"
+#~ msgstr "IEEE1284 Target"
+
+#~ msgid "Generic"
+#~ msgstr "一般"
+
+#~ msgid "Hayes/16450"
+#~ msgstr "Hayes/16450"
+
+#~ msgid "Hayes/16550"
+#~ msgstr "Hayes/16550"
+
+#~ msgid "Hayes/16650"
+#~ msgstr "Hayes/16650"
+
+#~ msgid "Hayes/16750"
+#~ msgstr "Hayes/16750"
+
+#~ msgid "8259"
+#~ msgstr "8259"
+
+#~ msgid "ISA PIC"
+#~ msgstr "ISA PIC"
+
+#~ msgid "EISA PIC"
+#~ msgstr "EISA PIC"
+
+#~ msgid "IO-APIC"
+#~ msgstr "IO-APIC"
+
+#~ msgid "IO(X)-APIC"
+#~ msgstr "IO(X)-APIC"
+
+#~ msgid "8237"
+#~ msgstr "8237"
+
+#~ msgid "ISA DMA"
+#~ msgstr "ISA DMA"
+
+#~ msgid "EISA DMA"
+#~ msgstr "EISA DMA"
+
+#~ msgid "8254"
+#~ msgstr "8254"
+
+#~ msgid "ISA timer"
+#~ msgstr "ISA 計時器"
+
+#~ msgid "EISA timers"
+#~ msgstr "EISA 計時器"
+
+#~ msgid "HPET"
+#~ msgstr "HPET"
+
+#~ msgid "ISA RTC"
+#~ msgstr "ISA RTC"
+
+#~ msgid "Extended"
+#~ msgstr "延伸"
+
+#~ msgid "OHCI"
+#~ msgstr "OHCI"
+
+#~ msgid "UHCI"
+#~ msgstr "UHCI"
+
+#~ msgid "EHCI"
+#~ msgstr "EHCI"
+
+#~ msgid "XHCI"
+#~ msgstr "XHCI"
+
+#~ msgid "Unspecified"
+#~ msgstr "未指定"
+
+#~ msgid "USB Device"
+#~ msgstr "USB 裝置"
+
+#~ msgid "SMIC"
+#~ msgstr "SMIC"
+
+#~ msgid "Keyboard controller style"
+#~ msgstr "鍵盤控制器樣式"
+
+#~ msgid "Block transfer"
+#~ msgstr "區塊傳遞"
+
+#~ msgid "Vital product data"
+#~ msgstr "主要產品資料"
+
+#~ msgid "Slot identification"
+#~ msgstr "插槽識別"
+
+#~ msgid "CompactPCI hot swap"
+#~ msgstr "CompactPCI 熱插拔"
+
+#~ msgid "HyperTransport"
+#~ msgstr "HyperTransport"
+
+#~ msgid "Debug port"
+#~ msgstr "除錯埠"
+
+#~ msgid "CompactPCI central resource control"
+#~ msgstr "CompactPCI 中央資源控制"
+
+#~ msgid "PCI hot-plug"
+#~ msgstr "PCI 熱插拔"
+
+#~ msgid "AGP x8"
+#~ msgstr "AGP x8"
+
+#~ msgid "Secure device"
+#~ msgstr "安全裝置"
+
+#~ msgid "PCI express"
+#~ msgstr "PCIe"
+
+#~ msgid "MSI-X"
+#~ msgstr "MSI-X"
+
+#~ msgid "PCI Advanced Features"
+#~ msgstr "PCI 進階功能"
+
+#~ msgid "Fast"
+#~ msgstr "快"
+
+#~ msgid "Medium"
+#~ msgstr "中"
+
+#~ msgid "Slow"
+#~ msgstr "慢"
+
+#~ msgid "32 bit"
+#~ msgstr "32 位元"
+
+#~ msgid "Below 1M"
+#~ msgstr "低於 1M"
+
+#~ msgid "64 bit"
+#~ msgstr "64 位元"
+
+#~ msgid "Standard"
+#~ msgstr "標準"
+
+#~ msgid "CardBus"
+#~ msgstr "CardBus"
+
+#~ msgid "1X"
+#~ msgstr "1X"
+
+#~ msgid "2X"
+#~ msgstr "2X"
+
+#~ msgid "1X & 2X"
+#~ msgstr "1X 與 2X"
+
+#~ msgid "4X"
+#~ msgstr "4X"
+
+#~ msgid "1X & 4X"
+#~ msgstr "1X 與 4X"
+
+#~ msgid "2X & 4X"
+#~ msgstr "2X 與 4X"
+
+#~ msgid "1X & 2X & 4X"
+#~ msgstr "1X 與 2X 與 4X"
+
+#~ msgid "8X"
+#~ msgstr "8X"
+
+#~ msgid "4X & 8X"
+#~ msgstr "4X 與 8X"
+
+#~ msgid "4 ms"
+#~ msgstr "4 毫秒"
+
+#~ msgid "16 ms"
+#~ msgstr "16 毫秒"
+
+#~ msgid "64 ms"
+#~ msgstr "64 毫秒"
+
+#~ msgid "256 ms"
+#~ msgstr "256 毫秒"
+
+#~ msgid "Not needed"
+#~ msgstr "不需要"
+
+#~ msgid "0 (self powered)"
+#~ msgstr "0（自己供電）"
+
+#~ msgid "55 mA"
+#~ msgstr "55 mA"
+
+#~ msgid "100 mA"
+#~ msgstr "100 mA"
+
+#~ msgid "160 mA"
+#~ msgstr "160 mA"
+
+#~ msgid "220 mA"
+#~ msgstr "220 mA"
+
+#~ msgid "270 mA"
+#~ msgstr "270 mA"
+
+#~ msgid "320 mA"
+#~ msgstr "320 mA"
+
+#~ msgid "375 mA"
+#~ msgstr "375 mA"
+
+#~ msgid "1 vector"
+#~ msgstr "1 個向量"
+
+#~ msgid "2 vectors"
+#~ msgstr "2 個向量"
+
+#~ msgid "4 vectors"
+#~ msgstr "4 個向量"
+
+#~ msgid "8 vectors"
+#~ msgstr "8 個向量"
+
+#~ msgid "16 vectors"
+#~ msgstr "16 個向量"
+
+#~ msgid "32 vectors"
+#~ msgstr "32 個向量"

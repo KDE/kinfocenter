@@ -1,0 +1,743 @@
+# translation of desktop_kdebase.po to Upper Sorbian
+# Prof. Dr. Eduard Werner <e.werner@rz.uni-leipzig.de>, 2003.
+# Eduard Werner <edi.werner@gmx.de>, 2005, 2008.
+# Bianka Šwejdźic <hertn@gmx.de>, 2005, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: desktop_kdebase\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
+"PO-Revision-Date: 2008-11-23 22:02+0100\n"
+"Last-Translator: Eduard Werner <edi.werner@gmx.de>\n"
+"Language-Team: en_US <kde-i18n-doc@lists.kde.org>\n"
+"Language: hsb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#: main.cpp:26
+#, fuzzy, kde-format
+#| msgctxt "Name"
+#| msgid "PCI"
+msgctxt "@label kcm name"
+msgid "PCI"
+msgstr "PCI"
+
+#: main.cpp:27
+#, kde-format
+msgid "Harald Sitter"
+msgstr ""
+
+#: package/contents/ui/main.qml:14
+#, fuzzy
+#| msgid "Information"
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "informacija"
+
+#~ msgid "kcm_pci"
+#~ msgstr "kcm_pci"
+
+#, fuzzy
+#~| msgid "Device"
+#~ msgid "PCI Devices"
+#~ msgstr "Grat"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+
+#~ msgid "Nicolas Ternisien"
+#~ msgstr "Nicolas Ternisien"
+
+#~ msgid "Helge Deller"
+#~ msgstr "Helge Deller"
+
+#~ msgid "This list displays PCI information."
+#~ msgstr "Tuta lisćina pokazuje informaciju wo PCI."
+
+#~ msgid ""
+#~ "This display shows information about your computer's PCI slots and the "
+#~ "related connected devices."
+#~ msgstr ""
+#~ "Tu so pokazuje informacija wo PCI-městnach na Wašim kompjuteru a "
+#~ "přizamknjenych gratach."
+
+#~ msgid "Device Class"
+#~ msgstr "Klasa gratow"
+
+#~ msgid "Device Subclass"
+#~ msgstr "Podklasa gratow"
+
+#~ msgid "Device Programming Interface"
+#~ msgstr "Programowanski interfejs za grat"
+
+#~ msgid "Master IDE Device"
+#~ msgstr "Master IDE grat"
+
+#~ msgid "Secondary programmable indicator"
+#~ msgstr "Sekundarny programujomny indikator"
+
+#~ msgid "Secondary operating mode"
+#~ msgstr "Sekundarny modus operacije"
+
+#~ msgid "Primary programmable indicator"
+#~ msgstr "Primarny programujomny indikator"
+
+#~ msgid "Primary operating mode"
+#~ msgstr "Primarny modus operacije"
+
+#~ msgid "Vendor"
+#~ msgstr "Předawar"
+
+#~ msgid "Device"
+#~ msgstr "Grat"
+
+#~ msgid "Subsystem"
+#~ msgstr "Subsystem"
+
+#~ msgid " - device:"
+#~ msgstr "- grat:"
+
+#~ msgid "Interrupt"
+#~ msgstr "Interrupt"
+
+#~ msgid "IRQ"
+#~ msgstr "IRQ"
+
+#~ msgid "Pin"
+#~ msgstr "Pin"
+
+#~ msgid "Control"
+#~ msgstr "Kontrola"
+
+#~ msgid "Response in I/O space"
+#~ msgstr "Wotmołwa w I/O-rumje"
+
+#~ msgid "Response in memory space"
+#~ msgstr "Wotmołwa w pomjatku"
+
+#~ msgid "Bus mastering"
+#~ msgstr "Masterowanje busa"
+
+#~ msgid "Response to special cycles"
+#~ msgstr "Wotmołwa na specielne cykle"
+
+#~ msgid "Parity checking"
+#~ msgstr "Přepruwowanje parity"
+
+#~ msgid "System error"
+#~ msgstr "Systemowy zmylk"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Interrupt status"
+#~ msgstr "Status interruptow"
+
+#~ msgid "Capability list"
+#~ msgstr "Lisćina móžnosćow"
+
+#~ msgid "66 MHz PCI 2.1 bus"
+#~ msgstr "66 MHz PCI 2.1 bus"
+
+#~ msgid "Parity error"
+#~ msgstr "Zmylk parity"
+
+#~ msgid "Latency"
+#~ msgstr "Latenca"
+
+#~ msgid "MIN_GNT"
+#~ msgstr "MIN_GNT"
+
+#~ msgid "MAX_LAT"
+#~ msgstr "MAX_LAT"
+
+#~ msgid "Type"
+#~ msgstr "Družina"
+
+#~ msgid "Multifunctional"
+#~ msgstr "Multifunkcionalne"
+
+#~ msgid "Build-in self test"
+#~ msgstr "Zatwarjene sebjetestowanje"
+
+#~ msgid "BIST Capable"
+#~ msgstr "BIST-kmany"
+
+#~ msgid "BIST Start"
+#~ msgstr "BIST start"
+
+#~ msgid "Size"
+#~ msgstr "Wulkosć"
+
+#~ msgid "Mask"
+#~ msgstr "Maska"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "Žane"
+
+#~ msgid "Value"
+#~ msgstr "Hódnota"
+
+#, fuzzy
+#~| msgctxt "@item Text character set"
+#~| msgid "Disabled"
+#~ msgctxt "state of PCI item"
+#~ msgid "Enabled"
+#~ msgstr "njesteji k dispoziciji"
+
+#, fuzzy
+#~| msgctxt "@item Text character set"
+#~| msgid "Disabled"
+#~ msgctxt "state of PCI item"
+#~ msgid "Disabled"
+#~ msgstr "njesteji k dispoziciji"
+
+#, fuzzy
+#~| msgid "Yes"
+#~ msgctxt "state of PCI item"
+#~ msgid "Yes"
+#~ msgstr "Haj"
+
+#, fuzzy
+#~| msgid "No"
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "Ně"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "state of PCI item"
+#~ msgid "Unknown"
+#~ msgstr "Njeznaju"
+
+#, fuzzy
+#~| msgctxt "Banner page"
+#~| msgid "Unclassified"
+#~ msgid "Unclassified device"
+#~ msgstr "Njeklasifikowane"
+
+#, fuzzy
+#~| msgctxt "GenericName"
+#~| msgid "Network Tool"
+#~ msgid "Network controller"
+#~ msgstr "Syćowy nastroj"
+
+#, fuzzy
+#~| msgctxt "GenericName"
+#~| msgid "Multimedia Player"
+#~ msgid "Multimedia controller"
+#~ msgstr "Multimedijowy wothrawak"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "MLDonkey GTK+ Core Controller"
+#~ msgid "Memory controller"
+#~ msgstr "MLDonkey GTK+ Core Controller"
+
+#, fuzzy
+#~| msgid "Communication error"
+#~ msgid "Communication controller"
+#~ msgstr "Komunikaciski zmylk"
+
+#, fuzzy
+#~| msgid "Orientation"
+#~ msgid "Docking station"
+#~ msgstr "Orientacija"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "Processor"
+#~ msgid "Processor"
+#~ msgstr "procesor"
+
+#, fuzzy
+#~ msgid "Encryption controller"
+#~ msgstr "Wopisanje:"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "Processor"
+#~ msgid "Coprocessor"
+#~ msgstr "procesor"
+
+#, fuzzy
+#~| msgid "Device Subclass"
+#~ msgid "Unknown device class"
+#~ msgstr "Podklasa gratow"
+
+#, fuzzy
+#~| msgctxt "Banner page"
+#~| msgid "Unclassified"
+#~ msgid "VGA unclassified device"
+#~ msgstr "Njeklasifikowane"
+
+#, fuzzy
+#~| msgctxt "Banner page"
+#~| msgid "Unclassified"
+#~ msgid "Unknown unclassified device"
+#~ msgstr "Njeklasifikowane"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "Scrollkeeper"
+#~ msgid "SATA controller"
+#~ msgstr "Scrollkeeper"
+
+#, fuzzy
+#~| msgid "Serial number:"
+#~ msgid "Serial Attached SCSI controller"
+#~ msgstr "Čisło serije"
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Non-Volatile memory controller"
+#~ msgstr "Njeznaty zmylk"
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown storage controller"
+#~ msgstr "Njeznaty zmylk"
+
+#, fuzzy
+#~| msgid "Other, Control"
+#~ msgid "Ethernet controller"
+#~ msgstr "Druhe, Kontrola"
+
+#, fuzzy
+#~| msgctxt "Comment"
+#~| msgid "A network usage monitor"
+#~ msgid "FDDI network controller"
+#~ msgstr "Monitor, kiž pokazuje wućeženosć syće"
+
+#, fuzzy
+#~| msgctxt "Comment"
+#~| msgid "A network usage monitor"
+#~ msgid "ATM network controller"
+#~ msgstr "Monitor, kiž pokazuje wućeženosć syće"
+
+#, fuzzy
+#~| msgid "Control"
+#~ msgid "PICMG controller"
+#~ msgstr "Kontrola"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "Keyboard Map Tool"
+#~ msgid "Infiniband controller"
+#~ msgstr "Pomocnik za předefinowanje tastatury "
+
+#, fuzzy
+#~| msgid "Control"
+#~ msgid "Fabric controller"
+#~ msgstr "Kontrola"
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown network controller"
+#~ msgstr "Njeznaty zmylk"
+
+#, fuzzy
+#~| msgid "Control"
+#~ msgid "3D controller"
+#~ msgstr "Kontrola"
+
+#, fuzzy
+#~| msgctxt "GenericName"
+#~| msgid "Multimedia Player"
+#~ msgid "Multimedia video controller"
+#~ msgstr "Multimedijowy wothrawak"
+
+#, fuzzy
+#~| msgctxt "GenericName"
+#~| msgid "Multimedia Player"
+#~ msgid "Multimedia audio controller"
+#~ msgstr "Multimedijowy wothrawak"
+
+#, fuzzy
+#~| msgid "Services"
+#~ msgid "Audio device"
+#~ msgstr "Serwisy"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "Memory"
+#~ msgid "RAM memory"
+#~ msgstr "Pomjatk"
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown memory controller"
+#~ msgstr "Njeznaty zmylk"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "Meterbridge"
+#~ msgid "Host bridge"
+#~ msgstr "Meterbridge"
+
+#, fuzzy
+#~| msgid "Unknown word"
+#~ msgid "Unknown bridge"
+#~ msgstr "Njeznate słowo"
+
+#, fuzzy
+#~| msgid "Serial number:"
+#~ msgid "Serial controller"
+#~ msgstr "Čisło serije"
+
+#, fuzzy
+#~ msgid "Parallel controller"
+#~ msgstr "Zapisk zničić"
+
+#, fuzzy
+#~ msgid "Modem"
+#~ msgstr "Změnjeny:"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "Scrollkeeper"
+#~ msgid "GPIB controller"
+#~ msgstr "Scrollkeeper"
+
+#, fuzzy
+#~| msgid "Serial number:"
+#~ msgid "Smart card controller"
+#~ msgstr "Čisło serije"
+
+#, fuzzy
+#~| msgid "Communication error"
+#~ msgid "Unknown communication controller"
+#~ msgstr "Komunikaciski zmylk"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "PCI"
+#~ msgid "PIC"
+#~ msgstr "PCI"
+
+#, fuzzy
+#~ msgid "Timer"
+#~ msgstr "Name=(6) Hry"
+
+#, fuzzy
+#~| msgid "Control"
+#~ msgid "SD Host controller"
+#~ msgstr "Kontrola"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "Keyboard Map Tool"
+#~ msgid "Keyboard controller"
+#~ msgstr "Pomocnik za předefinowanje tastatury "
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "Power Control"
+#~ msgid "Mouse controller"
+#~ msgstr "Milinowa kontrola"
+
+#, fuzzy
+#~| msgid ""
+#~| "\n"
+#~| "Generic options:\n"
+#~ msgid "Generic docking station"
+#~ msgstr ""
+#~ "\n"
+#~ "Powšitkowne opcije:\n"
+
+#, fuzzy
+#~| msgid "Unknown Application"
+#~ msgid "Unknown docking station"
+#~ msgstr "Njeznaty program"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "Platinum"
+#~ msgid "Pentium"
+#~ msgstr "Platinum"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "Alephone"
+#~ msgid "Alpha"
+#~ msgstr "Alephone"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "Power Control"
+#~ msgid "Power PC"
+#~ msgstr "Milinowa kontrola"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "Processor"
+#~ msgid "Co-processor"
+#~ msgstr "procesor"
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown processor"
+#~ msgstr "Njeznaty zmylk"
+
+#, fuzzy
+#~| msgid "SSL"
+#~ msgid "SSA"
+#~ msgstr "SSL"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "Scrollkeeper"
+#~ msgid "USB controller"
+#~ msgstr "Scrollkeeper"
+
+#, fuzzy
+#~ msgid "Fibre channel"
+#~ msgstr "Dataja zawěsćena."
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "MusE"
+#~ msgid "SMBus"
+#~ msgstr "MusE"
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown serial bus controller"
+#~ msgstr "Njeznaty zmylk"
+
+#, fuzzy
+#~| msgid "Control"
+#~ msgid "RF controller"
+#~ msgstr "Kontrola"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "Fake Bluetooth"
+#~ msgid "Bluetooth"
+#~ msgstr "Pozdatny bluetooth"
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown wireless controller"
+#~ msgstr "Njeznaty zmylk"
+
+#, fuzzy
+#~| msgid "Enter a description"
+#~ msgid "Entertainment encryption device"
+#~ msgstr "zapodajće wopisanje"
+
+#, fuzzy
+#~ msgid "Unknown encryption controller"
+#~ msgstr "Njeznata opcija '%1'."
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "Performance"
+#~ msgid "Performance counters"
+#~ msgstr "Spěšnosć"
+
+#, fuzzy
+#~| msgid "Communication error"
+#~ msgid "Communication synchronizer"
+#~ msgstr "Komunikaciski zmylk"
+
+#, fuzzy
+#~| msgid "Unknown error"
+#~ msgid "Unknown processing accelerator"
+#~ msgstr "Njeznaty zmylk"
+
+#, fuzzy
+#~| msgid "Communication error"
+#~ msgid "ISA Compatibility mode-only controller"
+#~ msgstr "Komunikaciski zmylk"
+
+#, fuzzy
+#~| msgid "Communication error"
+#~ msgid "PCI native mode-only controller"
+#~ msgstr "Komunikaciski zmylk"
+
+#, fuzzy
+#~ msgid "Vendor specific"
+#~ msgstr "Name=Strategija"
+
+#, fuzzy
+#~| msgid "Control"
+#~ msgid "VGA controller"
+#~ msgstr "Kontrola"
+
+#, fuzzy
+#~| msgid "Control"
+#~ msgid "8514 controller"
+#~ msgstr "Kontrola"
+
+#, fuzzy
+#~| msgctxt "normal severity"
+#~| msgid "Normal"
+#~ msgid "Normal decode"
+#~ msgstr "Normalny"
+
+#, fuzzy
+#~| msgid "Translate"
+#~ msgid "Transparent mode"
+#~ msgstr "Přełožić"
+
+#, fuzzy
+#~| msgctxt "dictionary variant"
+#~| msgid "80"
+#~ msgid "8250"
+#~ msgstr "80"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "Gnumeric"
+#~ msgid "Generic"
+#~ msgstr "Gnumeric"
+
+#, fuzzy
+#~| msgctxt "dictionary variant"
+#~| msgid "extended"
+#~ msgid "Extended"
+#~ msgstr "rošěrjene"
+
+#, fuzzy
+#~| msgid "Not specified"
+#~ msgid "Unspecified"
+#~ msgstr "Ničo njepostajene"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "USB Devices"
+#~ msgid "USB Device"
+#~ msgstr "USB-graty"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "SILC"
+#~ msgid "SMIC"
+#~ msgstr "SILC"
+
+#, fuzzy
+#~| msgid "Block IFrame..."
+#~ msgid "Block transfer"
+#~ msgstr "IFrame blokować..."
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "Browser Identification"
+#~ msgid "Slot identification"
+#~ msgstr "Identifikacija browsera"
+
+#, fuzzy
+#~| msgid "Send bug report."
+#~ msgid "Debug port"
+#~ msgstr "Pósćel rozprawu wo zmylku."
+
+#, fuzzy
+#~| msgid "Services"
+#~ msgid "Secure device"
+#~ msgstr "Serwisy"
+
+#, fuzzy
+#~ msgid "Fast"
+#~ msgstr "Datum"
+
+#, fuzzy
+#~| msgctxt "dictionary variant"
+#~| msgid "medium"
+#~ msgid "Medium"
+#~ msgstr "srjedźanske"
+
+#, fuzzy
+#~| msgid "Allow"
+#~ msgid "Slow"
+#~ msgstr "dowolić"
+
+#, fuzzy
+#~| msgctxt "Banner page"
+#~| msgid "Standard"
+#~ msgid "Standard"
+#~ msgstr "Standard"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "Cyprus"
+#~ msgid "CardBus"
+#~ msgstr "Cypriska"
+
+#, fuzzy
+#~| msgid "1"
+#~ msgid "1X"
+#~ msgstr "1"
+
+#, fuzzy
+#~| msgid "2"
+#~ msgid "2X"
+#~ msgstr "2"
+
+#, fuzzy
+#~| msgid "4"
+#~ msgid "4X"
+#~ msgstr "4"
+
+#, fuzzy
+#~| msgid "8"
+#~ msgid "8X"
+#~ msgstr "8"
+
+#, fuzzy
+#~| msgid "ms"
+#~ msgid "4 ms"
+#~ msgstr "ms"
+
+#, fuzzy
+#~| msgid "Not connected."
+#~ msgid "Not needed"
+#~ msgstr "Žadyn zwisk"
+
+#, fuzzy
+#~| msgctxt "@item:intext"
+#~| msgid "1 second"
+#~| msgid_plural "%1 seconds"
+#~ msgid "1 vector"
+#~ msgstr "%1 sekunda"
+
+#, fuzzy
+#~| msgid "%1 seconds"
+#~ msgid "16 vectors"
+#~ msgstr "%1 sekundow"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "Smartcards"
+#~ msgid "Smart card"
+#~ msgstr "Smartcards"
+
+#, fuzzy
+#~| msgid "System error"
+#~ msgid "System peripheral"
+#~ msgstr "Systemowy zmylk"
+
+#, fuzzy
+#~| msgctxt "Name"
+#~| msgid "File Management"
+#~ msgid "Management card"
+#~ msgstr "Datajowy manager"
+
+#~ msgid "KDE PCI Information Control Module"
+#~ msgstr "KDE kontrolny modul za PCI-informaciju"

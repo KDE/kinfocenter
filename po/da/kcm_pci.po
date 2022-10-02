@@ -1,0 +1,1360 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Martin Schlander <mschlander@opensuse.org>, 2008, 2009, 2010, 2012, 2016, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_pci\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
+"PO-Revision-Date: 2020-07-29 20:22+0200\n"
+"Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
+"Language-Team: Danish <kde-i18n-doc@kde.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.04.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Martin Schlander"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "mschlander@opensuse.org"
+
+#: main.cpp:26
+#, fuzzy, kde-format
+#| msgid "PCI-X"
+msgctxt "@label kcm name"
+msgid "PCI"
+msgstr "PCI-X"
+
+#: main.cpp:27
+#, kde-format
+msgid "Harald Sitter"
+msgstr ""
+
+#: package/contents/ui/main.qml:14
+#, fuzzy
+#| msgid "Information"
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "Information"
+
+#~ msgid "kcm_pci"
+#~ msgstr "kcm_pci"
+
+#~ msgid "PCI Devices"
+#~ msgstr "PCI-enheder"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+
+#~ msgid "Nicolas Ternisien"
+#~ msgstr "Nicolas Ternisien"
+
+#~ msgid "Helge Deller"
+#~ msgstr "Helge Deller"
+
+#~ msgid "This list displays PCI information."
+#~ msgstr "Denne liste viser PCI-information."
+
+#~ msgid ""
+#~ "This display shows information about your computer's PCI slots and the "
+#~ "related connected devices."
+#~ msgstr ""
+#~ "Denne visning viser information om din computers PCI-stik og de dertil "
+#~ "relaterede tilsluttede enheder."
+
+#~ msgid "Device Class"
+#~ msgstr "Enhedsklasse"
+
+#~ msgid "Device Subclass"
+#~ msgstr "Enhedsunderklasse"
+
+#~ msgid "Device Programming Interface"
+#~ msgstr "Device Programming Interface"
+
+#~ msgid "Master IDE Device"
+#~ msgstr "Master IDE-enhed"
+
+#~ msgid "Secondary programmable indicator"
+#~ msgstr "Sekundær programmerbar indikator"
+
+#~ msgid "Secondary operating mode"
+#~ msgstr "Sekundær operationstilstand"
+
+#~ msgid "Primary programmable indicator"
+#~ msgstr "Primær programmerbar indikator"
+
+#~ msgid "Primary operating mode"
+#~ msgstr "Primær operationstilstand"
+
+#~ msgid "Vendor"
+#~ msgstr "Producent"
+
+#~ msgid "Device"
+#~ msgstr "Enhed"
+
+#~ msgid "Subsystem"
+#~ msgstr "Undersystem"
+
+#~ msgid " - device:"
+#~ msgstr " - enhed:"
+
+#~ msgid "Interrupt"
+#~ msgstr "Interrupt"
+
+#~ msgid "IRQ"
+#~ msgstr "IRQ"
+
+#~ msgid "Pin"
+#~ msgstr "Pin"
+
+#~ msgid "Control"
+#~ msgstr "Kontrol"
+
+#~ msgid "Response in I/O space"
+#~ msgstr "Respons i I/O-rummet"
+
+#~ msgid "Response in memory space"
+#~ msgstr "Respons i hukommelsesrummet"
+
+#~ msgid "Bus mastering"
+#~ msgstr "Bus-mastering"
+
+#~ msgid "Response to special cycles"
+#~ msgstr "Respons til særlige cyklusser"
+
+#~ msgid "Memory write and invalidate"
+#~ msgstr "Hukommelse skriv og invalidér"
+
+#~ msgid "Palette snooping"
+#~ msgstr "Palette-snooping"
+
+#~ msgid "Parity checking"
+#~ msgstr "Paritetstjek"
+
+#~ msgid "Address/data stepping"
+#~ msgstr "Adresse-/data-stepping"
+
+#~ msgid "System error"
+#~ msgstr "Systemfejl"
+
+#~ msgid "Back-to-back writes"
+#~ msgstr "Skriv back-to-back"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Interrupt status"
+#~ msgstr "Interrupt-status"
+
+#~ msgid "Capability list"
+#~ msgstr "Kapabilitetsliste"
+
+#~ msgid "66 MHz PCI 2.1 bus"
+#~ msgstr "66 MHz PCI 2.1 bus"
+
+#~ msgid "User-definable features"
+#~ msgstr "Brugerdefinerbare funktioner"
+
+#~ msgid "Accept fast back-to-back"
+#~ msgstr "Acceptér hurtig back-to-back"
+
+#~ msgid "Data parity error"
+#~ msgstr "Fejl i dataparitet"
+
+#~ msgid "Device selection timing"
+#~ msgstr "Timing af enhedsvalg"
+
+#~ msgid "Signaled target abort"
+#~ msgstr "Signalerede target-abort"
+
+#~ msgid "Received target abort"
+#~ msgstr "Modtog target-abort"
+
+#~ msgid "Received master abort"
+#~ msgstr "Modtog master-abort"
+
+#~ msgid "Signaled system error"
+#~ msgstr "Signalerede systemfejl"
+
+#~ msgid "Parity error"
+#~ msgstr "Paritetsfejl"
+
+#~ msgid "Latency"
+#~ msgstr "Latens"
+
+#~ msgid "MIN_GNT"
+#~ msgstr "MIN_GNT"
+
+#~ msgid "No major requirements (0x00)"
+#~ msgstr "Ingen større krav (0x00)"
+
+#~ msgid "MAX_LAT"
+#~ msgstr "MAX_LAT"
+
+#~ msgid "Header"
+#~ msgstr "Header"
+
+#~ msgid "Type"
+#~ msgstr "Type"
+
+#~ msgid "Multifunctional"
+#~ msgstr "Multifunktionel"
+
+#~ msgid "Build-in self test"
+#~ msgstr "Indbygget selvtest"
+
+#~ msgid "BIST Capable"
+#~ msgstr "BIST-kapabel"
+
+#~ msgid "BIST Start"
+#~ msgstr "BIST-start"
+
+#~ msgid "Completion code"
+#~ msgstr "Fuldførelseskode"
+
+#~ msgid "Size"
+#~ msgstr "Størrelse"
+
+#~ msgid "Address mappings"
+#~ msgstr "Adresse-mapping"
+
+#~ msgid "Mapping %1"
+#~ msgstr "Mapping %1"
+
+#~ msgid "Space"
+#~ msgstr "Rum"
+
+#~ msgid "I/O"
+#~ msgstr "I/O"
+
+#~ msgid "Memory"
+#~ msgstr "Hukommelse"
+
+#~ msgid "Prefetchable"
+#~ msgstr "Kan præ-hentes"
+
+#~ msgid "Address"
+#~ msgstr "Adresse"
+
+#~ msgctxt "unassigned address"
+#~ msgid "Unassigned"
+#~ msgstr "Ikke tildelt"
+
+#~ msgctxt "unassigned size"
+#~ msgid "Unassigned"
+#~ msgstr "Ikke tildelt"
+
+#~ msgid "Bus"
+#~ msgstr "Bus"
+
+#~ msgid "Primary bus number"
+#~ msgstr "Primært bus-nummer"
+
+#~ msgid "Secondary bus number"
+#~ msgstr "Sekundært bus-nummer"
+
+#~ msgid "Subordinate bus number"
+#~ msgstr "Underordnet bus-nummer"
+
+#~ msgid "Secondary latency timer"
+#~ msgstr "Sekundær latens-timer"
+
+#~ msgid "CardBus number"
+#~ msgstr "CardBus-nummer"
+
+#~ msgid "CardBus latency timer"
+#~ msgstr "CardBus latens-timer"
+
+#~ msgid "Secondary status"
+#~ msgstr "Sekundær status"
+
+#~ msgid "I/O behind bridge"
+#~ msgstr "I/O bag bro"
+
+#~ msgid "32-bit"
+#~ msgstr "32-bit"
+
+#~ msgid "Base"
+#~ msgstr "Basis"
+
+#~ msgid "Limit"
+#~ msgstr "Grænse"
+
+#~ msgid "Memory behind bridge"
+#~ msgstr "Hukommelse bag bro"
+
+#~ msgid "Prefetchable memory behind bridge"
+#~ msgstr "Hukommelse som kan præ-hentes bag bro"
+
+#~ msgid "64-bit"
+#~ msgstr "64-bit"
+
+#~ msgid "Bridge control"
+#~ msgstr "Bro-kontrol"
+
+#~ msgid "Secondary parity checking"
+#~ msgstr "Sekundært paritetstjek"
+
+#~ msgid "Secondary system error"
+#~ msgstr "Sekundær systemfejl"
+
+#~ msgid "ISA ports forwarding"
+#~ msgstr "Vidersendelse af ISA-porte"
+
+#~ msgid "VGA forwarding"
+#~ msgstr "VGA-videresendelse"
+
+#~ msgid "Master abort"
+#~ msgstr "Master-abort"
+
+#~ msgid "Secondary bus reset"
+#~ msgstr "Sekundær bus-reset"
+
+#~ msgid "Secondary back-to-back writes"
+#~ msgstr "Sekundær skriv back-to-back"
+
+#~ msgid "Primary discard timer counts"
+#~ msgstr "Primær kassér timer-tællinger"
+
+#~ msgid "2e10 PCI clocks"
+#~ msgstr "2e10 PCI-clocks"
+
+#~ msgid "2e15 PCI clocks"
+#~ msgstr "2e15 PCI-clocks"
+
+#~ msgid "Secondary discard timer counts"
+#~ msgstr "Sekundær kassér timer-tællinger"
+
+#~ msgid "Discard timer error"
+#~ msgstr "Kassér timer-fejl"
+
+#~ msgid "Discard timer system error"
+#~ msgstr "Kassér fejl i timer-system"
+
+#~ msgid "Expansion ROM"
+#~ msgstr "Udvidelses-ROM"
+
+#~ msgid "Memory windows"
+#~ msgstr "Hukommelsesvinduer"
+
+#~ msgid "Window %1"
+#~ msgstr "Vindue %1"
+
+#~ msgid "I/O windows"
+#~ msgstr "I/O-vinduer"
+
+#~ msgid "16-bit"
+#~ msgstr "16-bit"
+
+#~ msgid "16-bit legacy interface ports"
+#~ msgstr "16-bit legacy grænsefladeporte"
+
+#~ msgid "CardBus control"
+#~ msgstr "CardBus-kontrol"
+
+#~ msgid "Interrupts for 16-bit cards"
+#~ msgstr "Interrupts til 16-bit-kort"
+
+#~ msgid "Window 0 prefetchable memory"
+#~ msgstr "Vindue 0 hukommelse som kan præ-hentes"
+
+#~ msgid "Window 1 prefetchable memory"
+#~ msgstr "Vindue 1 hukommelse som kan præ-hentes"
+
+#~ msgid "Post writes"
+#~ msgstr "Efter skrivninger"
+
+#~ msgid "Raw PCI config space"
+#~ msgstr "Rå PCI-config-rum"
+
+#~ msgid "Capabilities"
+#~ msgstr "Kapabiliteter"
+
+#~ msgid "Version"
+#~ msgstr "Version"
+
+#~ msgid "Clock required for PME generation"
+#~ msgstr "Clock kræves for PME-generering"
+
+#~ msgid "Device-specific initialization required"
+#~ msgstr "Enhedsspecifik initialisering påkrævet"
+
+#~ msgid "Maximum auxiliary current required in D3 cold"
+#~ msgstr "Maksimal auxiliary aktuelt påkrævet i D3-kulde"
+
+#~ msgid "D1 support"
+#~ msgstr "D1-understøttelse"
+
+#~ msgid "D2 support"
+#~ msgstr "D2-understøttelse"
+
+#~ msgid "Power management events"
+#~ msgstr "Strømstyringsbegivenheder"
+
+#~ msgid "D0"
+#~ msgstr "D0"
+
+#~ msgid "D1"
+#~ msgstr "D1"
+
+#~ msgid "D2"
+#~ msgstr "D2"
+
+#~ msgid "D3 hot"
+#~ msgstr "D3 varm"
+
+#~ msgid "D3 cold"
+#~ msgstr "D3 kold"
+
+#~ msgid "Power state"
+#~ msgstr "Strømtilstand"
+
+#~ msgid "Power management"
+#~ msgstr "Strømstyring"
+
+#~ msgid "Data select"
+#~ msgstr "Data-select"
+
+#~ msgid "Data scale"
+#~ msgstr "Data-scale"
+
+#~ msgid "Power management status"
+#~ msgstr "Strømstyringsstatus"
+
+#~ msgid "Bridge status"
+#~ msgstr "Bro-status"
+
+#~ msgid "Secondary bus state in D3 hot"
+#~ msgstr "Sekundær bus-tilstand i D3 varm"
+
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgid "Secondary bus power & clock control"
+#~ msgstr "Sekundær bus-strøm- og clock-kontrol"
+
+#~ msgid "Data"
+#~ msgstr "Data"
+
+#~ msgid "Revision"
+#~ msgstr "Revision"
+
+#~ msgid "Rate"
+#~ msgstr "Rate"
+
+#~ msgid "AGP 3.0 mode"
+#~ msgstr "AGP 3.0-tilstand"
+
+#~ msgid "Fast Writes"
+#~ msgstr "Hurtige skrivninger"
+
+#~ msgid "Address over 4 GiB"
+#~ msgstr "Adressér over 4 GiB"
+
+#~ msgid "Translation of host processor access"
+#~ msgstr "Oversættelse af værtsprocessor-adgang"
+
+#~ msgid "64-bit GART"
+#~ msgstr "64-bit GART"
+
+#~ msgid "Cache Coherency"
+#~ msgstr "Cache-koherens"
+
+#~ msgid "Side-band addressing"
+#~ msgstr "Side-band-adressering"
+
+#~ msgid "Calibrating cycle"
+#~ msgstr "Kalibrerer cycklus"
+
+#~ msgid "Optimum asynchronous request size"
+#~ msgstr "Optimal asynkron request-størrelse"
+
+#~ msgid "Isochronous transactions"
+#~ msgstr "Isokrone transaktioner"
+
+#~ msgid "Maximum number of AGP command"
+#~ msgstr "Maksimalt antal af AGP-kommandoer"
+
+#~ msgid "Configuration"
+#~ msgstr "Konfiguration"
+
+#~ msgid "AGP"
+#~ msgstr "AGP"
+
+#~ msgid "Data address"
+#~ msgstr "Data-adresse"
+
+#~ msgid "Transfer completed"
+#~ msgstr "Overførsel gennemført"
+
+#~ msgid "Message control"
+#~ msgstr "Beskedkontrol"
+
+#~ msgid "Message signaled interrupts"
+#~ msgstr "Beskedsignalerede interrupts"
+
+#~ msgid "Multiple message capable"
+#~ msgstr "Kapabel til flere beskeder"
+
+#~ msgid "Multiple message enable"
+#~ msgstr "Aktivér flere beskeder"
+
+#~ msgid "64-bit address"
+#~ msgstr "64-bit-adresse"
+
+#~ msgid "Per vector masking"
+#~ msgstr "Masking per vektor"
+
+#~ msgid "Mask"
+#~ msgstr "Maske"
+
+#~ msgid "Pending"
+#~ msgstr "Forestående"
+
+#~ msgid "Length"
+#~ msgstr "Længde"
+
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "Ingen"
+
+#~ msgid "Next"
+#~ msgstr "Næste"
+
+#~ msgid "0x00 (None)"
+#~ msgstr "0x00 (ingen)"
+
+#~ msgid "Root only"
+#~ msgstr "Kun root"
+
+#~ msgid "Value"
+#~ msgstr "Værdi"
+
+#~ msgid "Cache line size"
+#~ msgstr "Størrelse af cache-linje"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Enabled"
+#~ msgstr "Aktiveret"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Disabled"
+#~ msgstr "Deaktiveret"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Yes"
+#~ msgstr "Ja"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "Nej"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Unknown"
+#~ msgstr "Ukendt"
+
+#~ msgid "Unclassified device"
+#~ msgstr "Ikke-klassificeret enhed"
+
+#~ msgid "Mass storage controller"
+#~ msgstr "Masselagringsstyreenhed"
+
+#~ msgid "Network controller"
+#~ msgstr "Netværksstyreenhed"
+
+#~ msgid "Display controller"
+#~ msgstr "Skærmstyreenhed"
+
+#~ msgid "Multimedia controller"
+#~ msgstr "Styreenhed for multimedie"
+
+#~ msgid "Memory controller"
+#~ msgstr "Hukommelsesstyreenhed"
+
+#~ msgid "Bridge"
+#~ msgstr "Bro"
+
+#~ msgid "Communication controller"
+#~ msgstr "Kommunikationsstyreenhed"
+
+#~ msgid "Generic system peripheral"
+#~ msgstr "Generisk systemtilkobling"
+
+#~ msgid "Input device controller"
+#~ msgstr "Styreenhed for input-enhed"
+
+#~ msgid "Docking station"
+#~ msgstr "Dokningsstation"
+
+#~ msgid "Processor"
+#~ msgstr "Processor"
+
+#~ msgid "Serial bus controller"
+#~ msgstr "Serielbus-styreenhed"
+
+#~ msgid "Wireless controller"
+#~ msgstr "Trådløs styreenhed"
+
+#~ msgid "Intelligent controller"
+#~ msgstr "Intelligent styreenhed"
+
+#~ msgid "Satellite communications controller"
+#~ msgstr "Satellitkommunikationsstyreenhed"
+
+#~ msgid "Encryption controller"
+#~ msgstr "Krypteringsstyreenhed"
+
+#~ msgid "Signal processing controller"
+#~ msgstr "Signalbehandlingsstyreenhed"
+
+#~ msgid "Processing accelerators"
+#~ msgstr "Processing-acceleratorer"
+
+#~ msgid "Non-Essential Instrumentation"
+#~ msgstr "Ikke-essentiel instrumentering"
+
+#~ msgid "Coprocessor"
+#~ msgstr "Co-processor"
+
+#~ msgid "Unassigned class"
+#~ msgstr "Ikke tildelt klasse"
+
+#~ msgid "Unknown device class"
+#~ msgstr "Ukendt enhedsklasse"
+
+#~ msgid "Non-VGA unclassified device"
+#~ msgstr "Ikke-VGA ikke-klassificeret enhed"
+
+#~ msgid "VGA unclassified device"
+#~ msgstr "VGA ikke-klassificeret enhed"
+
+#~ msgid "Unknown unclassified device"
+#~ msgstr "Ukendt ikke-klassificeret enhed"
+
+#~ msgid "SCSI storage controller"
+#~ msgstr "SCSI-lagringsstyreenhed"
+
+#~ msgid "IDE controller"
+#~ msgstr "IDE-styreenhed"
+
+#~ msgid "Floppy disk controller"
+#~ msgstr "Diskettestyreenhed"
+
+#~ msgid "IPI bus controller"
+#~ msgstr "Styreenhed for IPI-bus"
+
+#~ msgid "RAID bus controller"
+#~ msgstr "Styreenhed for RAID-bus"
+
+#~ msgid "ATA controller"
+#~ msgstr "ATA-styreenhed"
+
+#~ msgid "SATA controller"
+#~ msgstr "SATA-styreenhed"
+
+#~ msgid "Serial Attached SCSI controller"
+#~ msgstr "Serieltilsluttet SCSI-styreenhed"
+
+#~ msgid "Non-Volatile memory controller"
+#~ msgstr "Ikke-flygtig hukommelsesstyreenhed"
+
+#~ msgid "Unknown storage controller"
+#~ msgstr "Ukendt lagringsstyreenhed"
+
+#~ msgid "Ethernet controller"
+#~ msgstr "Ethernet-styreenhed"
+
+#~ msgid "Token ring network controller"
+#~ msgstr "Polet-ring netværksstyreenhed"
+
+#~ msgid "FDDI network controller"
+#~ msgstr "FDDI-netværksstyreenhed"
+
+#~ msgid "ATM network controller"
+#~ msgstr "ATM-netværksstyreenhed"
+
+#~ msgid "ISDN controller"
+#~ msgstr "ISDN-styreenhed"
+
+#~ msgid "WorldFip controller"
+#~ msgstr "WorldFip-styreenhed"
+
+#~ msgid "PICMG controller"
+#~ msgstr "PICMG-styreenhed"
+
+#~ msgid "Infiniband controller"
+#~ msgstr "Infiniband-styreenhed"
+
+#~ msgid "Fabric controller"
+#~ msgstr "Fabric-styreenhed"
+
+#~ msgid "Unknown network controller"
+#~ msgstr "Ukendt netværksstyreenhed"
+
+#~ msgid "VGA compatible controller"
+#~ msgstr "VGA-kompatibel styreenhed"
+
+#~ msgid "XGA compatible controller"
+#~ msgstr "XGA-kompatibel styreenhed"
+
+#~ msgid "3D controller"
+#~ msgstr "3D-styreenhed"
+
+#~ msgid "Unknown display controller"
+#~ msgstr "Ukendt skærmstyreenhed"
+
+#~ msgid "Multimedia video controller"
+#~ msgstr "Videostyreenhed for multimedie"
+
+#~ msgid "Multimedia audio controller"
+#~ msgstr "Lydstyreenhed for multimedie"
+
+#~ msgid "Computer telephony device"
+#~ msgstr "Computer-telefonienhed"
+
+#~ msgid "Audio device"
+#~ msgstr "Lydenhed"
+
+#~ msgid "Unknown multimedia controller"
+#~ msgstr "Ukendt styreenhed for multimedie"
+
+#~ msgid "RAM memory"
+#~ msgstr "Ram-hukommelse"
+
+#~ msgid "FLASH memory"
+#~ msgstr "FLASH-hukommelse"
+
+#~ msgid "Unknown memory controller"
+#~ msgstr "Ukendt hukommelsesstyreenhed"
+
+#~ msgid "Host bridge"
+#~ msgstr "Værtsbro"
+
+#~ msgid "ISA bridge"
+#~ msgstr "ISA-bro"
+
+#~ msgid "EISA bridge"
+#~ msgstr "EISA-bro"
+
+#~ msgid "MicroChannel bridge"
+#~ msgstr "MicroChannel-bro"
+
+#~ msgid "PCI bridge"
+#~ msgstr "PCI-bro"
+
+#~ msgid "PCMCIA bridge"
+#~ msgstr "PCMCIA-bro"
+
+#~ msgid "NuBus bridge"
+#~ msgstr "NuBus-bro"
+
+#~ msgid "CardBus bridge"
+#~ msgstr "CardBus-bro"
+
+#~ msgid "RACEway bridge"
+#~ msgstr "RACEway-bro"
+
+#~ msgid "Semi-transparent PCI-to-PCI bridge"
+#~ msgstr "Semitransparent PCI-til-PCI-bro"
+
+#~ msgid "InfiniBand to PCI host bridge"
+#~ msgstr "InfiniBand til PCI-værtsbro"
+
+#~ msgid "Unknown bridge"
+#~ msgstr "Ukendt bro"
+
+#~ msgid "Serial controller"
+#~ msgstr "Serielstyreenhed"
+
+#~ msgid "Parallel controller"
+#~ msgstr "Parallel styreenhed"
+
+#~ msgid "Multiport serial controller"
+#~ msgstr "Flerports serielstyreenhed"
+
+#~ msgid "Modem"
+#~ msgstr "Modem"
+
+#~ msgid "GPIB controller"
+#~ msgstr "GPIB-styreenhed"
+
+#~ msgid "Smart card controller"
+#~ msgstr "Smartcard-styreenhed"
+
+#~ msgid "Unknown communication controller"
+#~ msgstr "Ukendt kommunikationsstyreenhed"
+
+#~ msgid "PIC"
+#~ msgstr "PIC"
+
+#~ msgid "DMA controller"
+#~ msgstr "DMA-styreenhed"
+
+#~ msgid "Timer"
+#~ msgstr "Timer"
+
+#~ msgid "RTC"
+#~ msgstr "RTC"
+
+#~ msgid "PCI Hot-plug controller"
+#~ msgstr "PCI hotplug-styreenhed"
+
+#~ msgid "SD Host controller"
+#~ msgstr "SD værtsstyreenhed"
+
+#~ msgid "IOMMU"
+#~ msgstr "IOMMU"
+
+#~ msgid "Unknown system peripheral"
+#~ msgstr "Ukendt systemtilkobling"
+
+#~ msgid "Keyboard controller"
+#~ msgstr "Tastaturstyreenhed"
+
+#~ msgid "Digitizer Pen"
+#~ msgstr "Digitaliseringspen"
+
+#~ msgid "Mouse controller"
+#~ msgstr "Musestyreenhed"
+
+#~ msgid "Scanner controller"
+#~ msgstr "Scannerstyreenhed"
+
+#~ msgid "Gameport controller"
+#~ msgstr "Spilleportsstyreenhed"
+
+#~ msgid "Unknown input device controller"
+#~ msgstr "Ukendt styreenhed for input-enhed"
+
+#~ msgid "Generic docking station"
+#~ msgstr "Generisk dokningsstation"
+
+#~ msgid "Unknown docking station"
+#~ msgstr "Ukendt dokningsstation"
+
+#~ msgid "386"
+#~ msgstr "386"
+
+#~ msgid "486"
+#~ msgstr "486"
+
+#~ msgid "Pentium"
+#~ msgstr "Pentium"
+
+#~ msgid "Alpha"
+#~ msgstr "Alpha"
+
+#~ msgid "Power PC"
+#~ msgstr "Power PC"
+
+#~ msgid "MIPS"
+#~ msgstr "MIPS"
+
+#~ msgid "Co-processor"
+#~ msgstr "Co-processor"
+
+#~ msgid "Unknown processor"
+#~ msgstr "Ukendt processor"
+
+#~ msgid "FireWire (IEEE 1394)"
+#~ msgstr "FireWire (IEEE 1394)"
+
+#~ msgid "ACCESS bus"
+#~ msgstr "ACCESS-bus"
+
+#~ msgid "SSA"
+#~ msgstr "SSA"
+
+#~ msgid "USB controller"
+#~ msgstr "USB-styreenhed"
+
+#~ msgid "Fibre channel"
+#~ msgstr "Fiberkanal"
+
+#~ msgid "SMBus"
+#~ msgstr "SMBus"
+
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#~ msgid "IPMI interface"
+#~ msgstr "IPMI-grænseflade"
+
+#~ msgid "SERCOS interface"
+#~ msgstr "SERCOS-grænseflade"
+
+#~ msgid "CANbus"
+#~ msgstr "CANbus"
+
+#~ msgid "Unknown serial bus controller"
+#~ msgstr "Ukendt serielbus-styreenhed"
+
+#~ msgid "IRDA controller"
+#~ msgstr "IRDA-styreenhed"
+
+#~ msgid "Consumer IR controller"
+#~ msgstr "IR-styreenhed til forbrugere"
+
+#~ msgid "RF controller"
+#~ msgstr "RF-styreenhed"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Broadband"
+#~ msgstr "Bredbånd"
+
+#~ msgid "Ethernet (802.11a - 5 GHz)"
+#~ msgstr "Ethernet (802.11a - 5 GHz)"
+
+#~ msgid "Ethernet (802.11b - 2.4 GHz)"
+#~ msgstr "Ethernet (802.11b - 2.4 GHz)"
+
+#~ msgid "Unknown wireless controller"
+#~ msgstr "Ukendt trådløs styreenhed"
+
+#~ msgid "I2O"
+#~ msgstr "I2O"
+
+#~ msgid "Unknown intelligent controller"
+#~ msgstr "Ukendt intelligent styreenhed"
+
+#~ msgid "Satellite TV controller"
+#~ msgstr "Satellit-tv-styreenhed"
+
+#~ msgid "Satellite audio communication controller"
+#~ msgstr "Satellit lydkommunikationsstyreenhed"
+
+#~ msgid "Satellite voice communication controller"
+#~ msgstr "Satellit stemmekommunikationsstyreenhed"
+
+#~ msgid "Satellite data communication controller"
+#~ msgstr "Satellit datakommunikationsstyreenhed"
+
+#~ msgid "Unknown satellite communications controller"
+#~ msgstr "Ukendt satellitkommunikationsstyreenhed"
+
+#~ msgid "Network and computing encryption device"
+#~ msgstr "Netværk- og computerkrypteringsenhed"
+
+#~ msgid "Entertainment encryption device"
+#~ msgstr "Underholdningskrypteringsenhed"
+
+#~ msgid "Unknown encryption controller"
+#~ msgstr "Ukendt krypteringsstyreenhed"
+
+#~ msgid "DPIO module"
+#~ msgstr "DPIO-modul"
+
+#~ msgid "Performance counters"
+#~ msgstr "Ydelsestællere"
+
+#~ msgid "Communication synchronizer"
+#~ msgstr "Kommunikationssynkronisering"
+
+#~ msgid "Signal processing management"
+#~ msgstr "Håndtering af signalbehandling"
+
+#~ msgid "Unknown signal processing controller"
+#~ msgstr "Ukendt signalbehandlingsstyreenhed"
+
+#~ msgid "Unknown processing accelerator"
+#~ msgstr "Ukendt processing-accelerator"
+
+#~ msgid "Unknown subdevice class"
+#~ msgstr "Ukendt underenhedsklasse"
+
+#~ msgid "ISA Compatibility mode-only controller"
+#~ msgstr "Styreenhed til kun ISA-kompatibilitetstilstand"
+
+#~ msgid "PCI native mode-only controller"
+#~ msgstr "Styreenhed til kun PCI native-tilstand"
+
+#~ msgid ""
+#~ "ISA Compatibility mode controller, supports both channels switched to PCI "
+#~ "native mode"
+#~ msgstr ""
+#~ "Controller med ISA-kompatibilitetstilstand, understøtter begge kanaler "
+#~ "skiftet til PCI native-tilstand"
+
+#~ msgid ""
+#~ "PCI native mode controller, supports both channels switched to ISA "
+#~ "compatibility mode"
+#~ msgstr ""
+#~ "Controller med PCI native-tilstand, understøtter begge kanaler skiftet "
+#~ "til ISA-kompatibilitetstilstand"
+
+#~ msgid "ISA Compatibility mode-only controller, supports bus mastering"
+#~ msgstr ""
+#~ "Controller med kun ISA-kompatibilitetstilstand, understøtter bus-mastering"
+
+#~ msgid "PCI native mode-only controller, supports bus mastering"
+#~ msgstr "Controller med kun PCI native-tilstand, understøtter bus-mastering"
+
+#~ msgid ""
+#~ "ISA Compatibility mode controller, supports both channels switched to PCI "
+#~ "native mode, supports bus mastering"
+#~ msgstr ""
+#~ "Controller med ISA-kompatibilitetstilstand, understøtter begge kanaler "
+#~ "skiftet til PCI native-tilstand, understøtter bus-mastering"
+
+#~ msgid ""
+#~ "PCI native mode controller, supports both channels switched to ISA "
+#~ "compatibility mode, supports bus mastering"
+#~ msgstr ""
+#~ "Controller med PCI native-tilstand, understøtter begge kanaler skiftet "
+#~ "til ISA-kompatibilitetstilstand, understøtter bus-mastering"
+
+#~ msgid "ADMA single stepping"
+#~ msgstr "ADMA single-stepping"
+
+#~ msgid "ADMA continuous operation"
+#~ msgstr "ADMA fortløbende operation"
+
+#~ msgid "Vendor specific"
+#~ msgstr "Producentspecifik"
+
+#~ msgid "AHCI 1.0"
+#~ msgstr "AHCI 1.0"
+
+#~ msgid "Serial Storage Bus"
+#~ msgstr "Seriel lager-bus"
+
+#~ msgid "NVMHCI"
+#~ msgstr "NVMHCI"
+
+#~ msgid "NVM Express"
+#~ msgstr "NVM Express"
+
+#~ msgid "VGA controller"
+#~ msgstr "VGA-controller"
+
+#~ msgid "8514 controller"
+#~ msgstr "8514-controller"
+
+#~ msgid "Normal decode"
+#~ msgstr "Normal dekodning"
+
+#~ msgid "Subtractive decode"
+#~ msgstr "Subtraktiv dekodning"
+
+#~ msgid "Transparent mode"
+#~ msgstr "Transparent-tilstand"
+
+#~ msgid "Endpoint mode"
+#~ msgstr "Endpoint-tilstand"
+
+#~ msgid "Primary bus towards host CPU"
+#~ msgstr "Primær bus mod værts-CPU"
+
+#~ msgid "Secondary bus towards host CPU"
+#~ msgstr "Sekundær bus mod værts-CPU"
+
+#~ msgid "8250"
+#~ msgstr "8250"
+
+#~ msgid "16450"
+#~ msgstr "16450"
+
+#~ msgid "16550"
+#~ msgstr "16550"
+
+#~ msgid "16650"
+#~ msgstr "16650"
+
+#~ msgid "16750"
+#~ msgstr "16750"
+
+#~ msgid "16850"
+#~ msgstr "16850"
+
+#~ msgid "16950"
+#~ msgstr "16950"
+
+#~ msgid "SPP"
+#~ msgstr "SPP"
+
+#~ msgid "BiDir"
+#~ msgstr "BiDir"
+
+#~ msgid "ECP"
+#~ msgstr "ECP"
+
+#~ msgid "IEEE1284"
+#~ msgstr "IEEE1284"
+
+#~ msgid "IEEE1284 Target"
+#~ msgstr "IEEE1284 Target"
+
+#~ msgid "Generic"
+#~ msgstr "Generisk"
+
+#~ msgid "Hayes/16450"
+#~ msgstr "Hayes/16450"
+
+#~ msgid "Hayes/16550"
+#~ msgstr "Hayes/16550"
+
+#~ msgid "Hayes/16650"
+#~ msgstr "Hayes/16650"
+
+#~ msgid "Hayes/16750"
+#~ msgstr "Hayes/16750"
+
+#~ msgid "8259"
+#~ msgstr "8259"
+
+#~ msgid "ISA PIC"
+#~ msgstr "ISA PIC"
+
+#~ msgid "EISA PIC"
+#~ msgstr "EISA PIC"
+
+#~ msgid "IO-APIC"
+#~ msgstr "IO-APIC"
+
+#~ msgid "IO(X)-APIC"
+#~ msgstr "IO(X)-APIC"
+
+#~ msgid "8237"
+#~ msgstr "8237"
+
+#~ msgid "ISA DMA"
+#~ msgstr "ISA DMA"
+
+#~ msgid "EISA DMA"
+#~ msgstr "EISA DMA"
+
+#~ msgid "8254"
+#~ msgstr "8254"
+
+#~ msgid "ISA timer"
+#~ msgstr "ISA-timer"
+
+#~ msgid "EISA timers"
+#~ msgstr "EISA-timere"
+
+#~ msgid "HPET"
+#~ msgstr "HPET"
+
+#~ msgid "ISA RTC"
+#~ msgstr "ISA RTC"
+
+#~ msgid "Extended"
+#~ msgstr "Udvidet"
+
+#~ msgid "OHCI"
+#~ msgstr "OHCI"
+
+#~ msgid "UHCI"
+#~ msgstr "UHCI"
+
+#~ msgid "EHCI"
+#~ msgstr "EHCI"
+
+#~ msgid "XHCI"
+#~ msgstr "XHCI"
+
+#~ msgid "Unspecified"
+#~ msgstr "Uspecificeret"
+
+#~ msgid "USB Device"
+#~ msgstr "USB-enhed"
+
+#~ msgid "SMIC"
+#~ msgstr "SMIC"
+
+#~ msgid "Keyboard controller style"
+#~ msgstr "Type af tastaturstyreenhed"
+
+#~ msgid "Block transfer"
+#~ msgstr "Blokoverførsel"
+
+#~ msgid "Vital product data"
+#~ msgstr "Vital produktdata"
+
+#~ msgid "Slot identification"
+#~ msgstr "Stik-identifikation"
+
+#~ msgid "CompactPCI hot swap"
+#~ msgstr "CompactPCI hot swap"
+
+#~ msgid "HyperTransport"
+#~ msgstr "HyperTransport"
+
+#~ msgid "Debug port"
+#~ msgstr "Fejlretningsport"
+
+#~ msgid "CompactPCI central resource control"
+#~ msgstr "CompactPCI central ressourcekontrol"
+
+#~ msgid "PCI hot-plug"
+#~ msgstr "PCI hot-plug"
+
+#~ msgid "AGP x8"
+#~ msgstr "AGP x8"
+
+#~ msgid "Secure device"
+#~ msgstr "Sikker enhed"
+
+#~ msgid "PCI express"
+#~ msgstr "PCI express"
+
+#~ msgid "MSI-X"
+#~ msgstr "MSI-X"
+
+#~ msgid "PCI Advanced Features"
+#~ msgstr "PCI avancerede funktioner"
+
+#~ msgid "Fast"
+#~ msgstr "Hurtig"
+
+#~ msgid "Medium"
+#~ msgstr "Mellem"
+
+#~ msgid "Slow"
+#~ msgstr "Langsom"
+
+#~ msgid "32 bit"
+#~ msgstr "32-bit"
+
+#~ msgid "Below 1M"
+#~ msgstr "Under 1M"
+
+#~ msgid "64 bit"
+#~ msgstr "64-bit"
+
+#~ msgid "Standard"
+#~ msgstr "Standard"
+
+#~ msgid "CardBus"
+#~ msgstr "CardBus"
+
+#~ msgid "1X"
+#~ msgstr "1X"
+
+#~ msgid "2X"
+#~ msgstr "2X"
+
+#~ msgid "1X & 2X"
+#~ msgstr "1X og 2X"
+
+#~ msgid "4X"
+#~ msgstr "4X"
+
+#~ msgid "1X & 4X"
+#~ msgstr "1X og 4X"
+
+#~ msgid "2X & 4X"
+#~ msgstr "2X og 4X"
+
+#~ msgid "1X & 2X & 4X"
+#~ msgstr "1X og 2X og 4X"
+
+#~ msgid "8X"
+#~ msgstr "8X"
+
+#~ msgid "4X & 8X"
+#~ msgstr "4X og 8X"
+
+#~ msgid "4 ms"
+#~ msgstr "4 ms"
+
+#~ msgid "16 ms"
+#~ msgstr "16 ms"
+
+#~ msgid "64 ms"
+#~ msgstr "64 ms"
+
+#~ msgid "256 ms"
+#~ msgstr "256 ms"
+
+#~ msgid "Not needed"
+#~ msgstr "Ikke nødvendig"
+
+#~ msgid "0 (self powered)"
+#~ msgstr "0 (selvforsynet)"
+
+#~ msgid "55 mA"
+#~ msgstr "55 mA"
+
+#~ msgid "100 mA"
+#~ msgstr "100 mA"
+
+#~ msgid "160 mA"
+#~ msgstr "160 mA"
+
+#~ msgid "220 mA"
+#~ msgstr "220 mA"
+
+#~ msgid "270 mA"
+#~ msgstr "270 mA"
+
+#~ msgid "320 mA"
+#~ msgstr "320 mA"
+
+#~ msgid "375 mA"
+#~ msgstr "375 mA"
+
+#~ msgid "1 vector"
+#~ msgstr "1 vektor"
+
+#~ msgid "2 vectors"
+#~ msgstr "2 vektorer"
+
+#~ msgid "4 vectors"
+#~ msgstr "4 vektorer"
+
+#~ msgid "8 vectors"
+#~ msgstr "8 vektorer"
+
+#~ msgid "16 vectors"
+#~ msgstr "16 vektorer"
+
+#~ msgid "32 vectors"
+#~ msgstr "32 vektorer"
+
+#~ msgid "Serial ATA direct port access"
+#~ msgstr "Seriel ATA direkte port-adgang"
+
+#~ msgid "PICMG 2.14 multi computing"
+#~ msgstr "PICMG 2.14 multi-computing"
+
+#~ msgid "GPIB (IEEE 488.1/2) controller"
+#~ msgstr "GPIB-styreenhed (IEEE 488.1/2)"
+
+#~ msgid "Smart card"
+#~ msgstr "Smartcard"
+
+#~ msgid "System peripheral"
+#~ msgstr "Systemtilkobling"
+
+#~ msgid "Management card"
+#~ msgstr "Styringskort"
+
+#~ msgid "single DMA"
+#~ msgstr "enkelt DMA"
+
+#~ msgid "chained DMA"
+#~ msgstr "DMA i kæde"
+
+#~ msgid "VGA compatible"
+#~ msgstr "VGA-kompatibel"
+
+#~ msgid "8514 compatible"
+#~ msgstr "8514-kompatibel"
+
+#~ msgid "KDE PCI Information Control Module"
+#~ msgstr "KDE kontrolmodul til PCI-information"

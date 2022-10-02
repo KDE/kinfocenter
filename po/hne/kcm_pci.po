@@ -1,0 +1,817 @@
+# translation of kcm_pci.po to Hindi
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Ravishankar Shrivastava <raviratlami@aol.in>, 2008, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_pci\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
+"PO-Revision-Date: 2009-02-09 18:30+0530\n"
+"Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
+"Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
+"Language: hne\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 0.2\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "रविसंकर सिरीवास्तव, जी. करूनाकर"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "raviratlami@aol.in,"
+
+#: main.cpp:26
+#, kde-format
+msgctxt "@label kcm name"
+msgid "PCI"
+msgstr ""
+
+#: main.cpp:27
+#, kde-format
+msgid "Harald Sitter"
+msgstr ""
+
+#: package/contents/ui/main.qml:14
+#, fuzzy
+#| msgid "Information"
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "जानकारी"
+
+#~ msgid "kcm_pci"
+#~ msgstr "केसीएम_पीसीआई"
+
+#, fuzzy
+#~| msgid "Device"
+#~ msgid "PCI Devices"
+#~ msgstr "उपकरन"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr "(c) 2008 निकोलस टेरनिसिन(c) 1998 - 2002 हेल्ग डेलर"
+
+#~ msgid "Nicolas Ternisien"
+#~ msgstr "निकोलस टेरनिसिन"
+
+#~ msgid "Helge Deller"
+#~ msgstr "हेल्ग डेलर"
+
+#~ msgid "This list displays PCI information."
+#~ msgstr "ये सूची पीसीआई जानकारी प्रदर्सित करथे ."
+
+#~ msgid ""
+#~ "This display shows information about your computer's PCI slots and the "
+#~ "related connected devices."
+#~ msgstr ""
+#~ "ये प्रदर्सक आप मन के कम्प्यूटर के पीसीआई स्लाट अउ एखर से जुड़े उपकरन मन के जानकारी बताथे."
+
+#~ msgid "Device Class"
+#~ msgstr "उपकरन क्लास"
+
+#~ msgid "Device Subclass"
+#~ msgstr "उपकरन उपस्रेनी"
+
+#~ msgid "Device Programming Interface"
+#~ msgstr "उपकरन प्रोग्रामिंग इंटरफेस"
+
+#~ msgid "Master IDE Device"
+#~ msgstr "मास्टर आईडीई उपकरन"
+
+#~ msgid "Secondary programmable indicator"
+#~ msgstr "सेकन्डरी प्रोग्राम बनाय जा सके सूचक"
+
+#~ msgid "Secondary operating mode"
+#~ msgstr "सेकन्डरी आपरेटिंग मोड"
+
+#~ msgid "Primary programmable indicator"
+#~ msgstr "प्राथमिक प्रोग्राम बनाय जा सके सूचक"
+
+#~ msgid "Primary operating mode"
+#~ msgstr "प्राथमिक आपरेटिंग मोड"
+
+#~ msgid "Vendor"
+#~ msgstr "बेचइया"
+
+#~ msgid "Device"
+#~ msgstr "उपकरन"
+
+#~ msgid "Subsystem"
+#~ msgstr "सबसिसटम"
+
+#~ msgid " - device:"
+#~ msgstr "- उपकरनः"
+
+#~ msgid "Interrupt"
+#~ msgstr "इंटरप्ट"
+
+#~ msgid "IRQ"
+#~ msgstr "आईआरक्यू"
+
+#~ msgid "Pin"
+#~ msgstr "पिन"
+
+#~ msgid "Control"
+#~ msgstr "नियंत्रन"
+
+#~ msgid "Response in I/O space"
+#~ msgstr "आई/ओ जगह मं रिस्पांस"
+
+#~ msgid "Response in memory space"
+#~ msgstr "मेमोरी जगह मं रिस्पांस"
+
+#~ msgid "Bus mastering"
+#~ msgstr "बस मास्टरिंग"
+
+#~ msgid "Response to special cycles"
+#~ msgstr "विसिस्ट साइकलों मं रिस्पांस"
+
+#~ msgid "Memory write and invalidate"
+#~ msgstr "मेमोरी लिखना अउ असत्यापन"
+
+#~ msgid "Palette snooping"
+#~ msgstr "पैलेट स्नूपिंग"
+
+#~ msgid "Parity checking"
+#~ msgstr "पैरिटी के जांच "
+
+#~ msgid "Address/data stepping"
+#~ msgstr "पता/डाटा स्टेपिंग"
+
+#~ msgid "System error"
+#~ msgstr "तंत्र गलती"
+
+#~ msgid "Back-to-back writes"
+#~ msgstr "बैक-टू-बैक हर लिखिस"
+
+#~ msgid "Status"
+#~ msgstr "स्थिति"
+
+#~ msgid "Interrupt status"
+#~ msgstr "इंटरप्ट स्थिति"
+
+#~ msgid "Capability list"
+#~ msgstr "सछमता सूची"
+
+#~ msgid "66 MHz PCI 2.1 bus"
+#~ msgstr "66 मे.हर्त्ज पीसीआई 2.1 बस"
+
+#~ msgid "User-definable features"
+#~ msgstr "कमइया से परिभासित विसेसता"
+
+#~ msgid "Accept fast back-to-back"
+#~ msgstr "तेज बैक-टू-बैक स्वीकारव"
+
+#~ msgid "Data parity error"
+#~ msgstr "डाटा पैरिटी गलती"
+
+#~ msgid "Device selection timing"
+#~ msgstr "उपकरन चयन समय"
+
+#~ msgid "Signaled target abort"
+#~ msgstr "सिगनल दे गे लक्छ्य छोड़व"
+
+#~ msgid "Received target abort"
+#~ msgstr "प्राप्त लक्छ्य. छोड़व"
+
+#~ msgid "Received master abort"
+#~ msgstr "प्राप्त मास्टर. छोड़व"
+
+#~ msgid "Signaled system error"
+#~ msgstr "सिगनल दे गे तंत्र गलती"
+
+#~ msgid "Parity error"
+#~ msgstr "पैरिटी गलती"
+
+#~ msgid "Latency"
+#~ msgstr "लेटेन्सी"
+
+#~ msgid "MIN_GNT"
+#~ msgstr "MIN_GNT"
+
+#~ msgid "No major requirements (0x00)"
+#~ msgstr "कोई बड़े जरूरत नइ (0x00)"
+
+#~ msgid "MAX_LAT"
+#~ msgstr "MAX_LAT"
+
+#~ msgid "Header"
+#~ msgstr "सीर्सक"
+
+#~ msgid "Type"
+#~ msgstr "किसिम"
+
+#~ msgid "Multifunctional"
+#~ msgstr "मल्टीफंक्सनल"
+
+#~ msgid "Build-in self test"
+#~ msgstr "भीतर मं बने अपने अपन जांच"
+
+#~ msgid "BIST Capable"
+#~ msgstr "बीआईएसटी सक्छम"
+
+#~ msgid "BIST Start"
+#~ msgstr "बीआईएसटी सुरू"
+
+#~ msgid "Completion code"
+#~ msgstr "पूरा कोड"
+
+#~ msgid "Size"
+#~ msgstr "आकार"
+
+#~ msgid "Address mappings"
+#~ msgstr "पता मैपिंग्स"
+
+#~ msgid "Mapping %1"
+#~ msgstr "मैपिंग %1"
+
+#~ msgid "Space"
+#~ msgstr "खाली जगह"
+
+#~ msgid "I/O"
+#~ msgstr "आई/ओ"
+
+#~ msgid "Memory"
+#~ msgstr "मेमोरी"
+
+#~ msgid "Prefetchable"
+#~ msgstr "प्रीफेचेबल"
+
+#~ msgid "Address"
+#~ msgstr "पता"
+
+#, fuzzy
+#~| msgid "Unassigned"
+#~ msgctxt "unassigned address"
+#~ msgid "Unassigned"
+#~ msgstr "गैर आबंटित"
+
+#, fuzzy
+#~| msgid "Unassigned"
+#~ msgctxt "unassigned size"
+#~ msgid "Unassigned"
+#~ msgstr "गैर आबंटित"
+
+#~ msgid "Bus"
+#~ msgstr "बस"
+
+#~ msgid "Primary bus number"
+#~ msgstr "प्राथमिक बस नंबर"
+
+#~ msgid "Secondary bus number"
+#~ msgstr "सेकन्डरी बस नंबर"
+
+#~ msgid "Subordinate bus number"
+#~ msgstr "अधीनस्थ बस नंबर"
+
+#~ msgid "Secondary latency timer"
+#~ msgstr "सेकन्डरी लेटेंसी टाइमर"
+
+#~ msgid "CardBus number"
+#~ msgstr "कार्डबस नंबर"
+
+#~ msgid "CardBus latency timer"
+#~ msgstr "कार्डबस लेटेंसी टाइमर"
+
+#~ msgid "Secondary status"
+#~ msgstr "सेकेन्डरी स्थिति"
+
+#~ msgid "I/O behind bridge"
+#~ msgstr "आई/ओ ब्रिज के पीछू"
+
+#~ msgid "32-bit"
+#~ msgstr "32- बिट"
+
+#~ msgid "Base"
+#~ msgstr "आधार"
+
+#~ msgid "Limit"
+#~ msgstr "सीमा"
+
+#~ msgid "Memory behind bridge"
+#~ msgstr "मेमोरी ब्रिज के पीछू"
+
+#~ msgid "Prefetchable memory behind bridge"
+#~ msgstr "प्रीफेचेबल मेमोरी ब्रिज के पीछू"
+
+#~ msgid "64-bit"
+#~ msgstr "64-बिट"
+
+#~ msgid "Bridge control"
+#~ msgstr "ब्रिज नियंत्रन"
+
+#~ msgid "Secondary parity checking"
+#~ msgstr "सेकन्डरी पैरिटी जांच"
+
+#~ msgid "Secondary system error"
+#~ msgstr "सेकन्डरी तंत्र गलती"
+
+#~ msgid "ISA ports forwarding"
+#~ msgstr "आईएसए पोर्ट आगू भेजना"
+
+#~ msgid "VGA forwarding"
+#~ msgstr "वीजीए आगू भेजना"
+
+#~ msgid "Master abort"
+#~ msgstr "सब्बो छोड़व"
+
+#~ msgid "Secondary bus reset"
+#~ msgstr "सेकन्डरी बस रीसेट"
+
+#~ msgid "Secondary back-to-back writes"
+#~ msgstr "सेकन्डरी बैक-टू-बैक हर लिखिस"
+
+#~ msgid "Primary discard timer counts"
+#~ msgstr "प्राथमिक डिस्कार्ड टाइमर गिनती"
+
+#~ msgid "2e10 PCI clocks"
+#~ msgstr "2e10 पीसीआई घड़ी"
+
+#~ msgid "2e15 PCI clocks"
+#~ msgstr "2e15 पीसीआई घड़ी"
+
+#~ msgid "Secondary discard timer counts"
+#~ msgstr "सेकन्डरी डिस्कार्ड समय गिनती"
+
+#~ msgid "Discard timer error"
+#~ msgstr "डिस्कार्ड टाइमर गलती"
+
+#~ msgid "Discard timer system error"
+#~ msgstr "डिस्कार्ड टाइमर तंत्र गलती"
+
+#~ msgid "Expansion ROM"
+#~ msgstr "एक्सपांसन रोम"
+
+#~ msgid "Memory windows"
+#~ msgstr "मेमोरी विंडोज"
+
+#~ msgid "Window %1"
+#~ msgstr "विंडो %1"
+
+#~ msgid "I/O windows"
+#~ msgstr "आई/ओ विंडोज"
+
+#~ msgid "16-bit"
+#~ msgstr "16-बिट"
+
+#~ msgid "16-bit legacy interface ports"
+#~ msgstr "16-बिट लीजेसी इंटरफेस पोर्ट"
+
+#~ msgid "CardBus control"
+#~ msgstr "कार्डबस नियंत्रन"
+
+#~ msgid "Interrupts for 16-bit cards"
+#~ msgstr "१६ बिट कार्ड बर इंटरप्ट"
+
+#~ msgid "Window 0 prefetchable memory"
+#~ msgstr "विंडो ० प्रीफेचेबल मेमोरी"
+
+#~ msgid "Window 1 prefetchable memory"
+#~ msgstr "विंडो १ प्रीफेचेबल मेमोरी"
+
+#~ msgid "Post writes"
+#~ msgstr "पोस्ट लिखिस"
+
+#~ msgid "Raw PCI config space"
+#~ msgstr "रा पीसीआई कान्फिग जगह"
+
+#~ msgid "Capabilities"
+#~ msgstr "सामर्थ्य"
+
+#~ msgid "Version"
+#~ msgstr "संस्करन"
+
+#~ msgid "Clock required for PME generation"
+#~ msgstr "पीएमई बनाए बर परयोग मं घड़ी"
+
+#~ msgid "Device-specific initialization required"
+#~ msgstr "उपकरन विसिस्ट सुरूकरना जरूरी"
+
+#~ msgid "Maximum auxiliary current required in D3 cold"
+#~ msgstr "डी३ कोल्ड मं जरूरी सबसे अधिक ओक्जीलरी धारा"
+
+#~ msgid "D1 support"
+#~ msgstr "डी१ समर्थन"
+
+#~ msgid "D2 support"
+#~ msgstr "डी२ समर्थन"
+
+#~ msgid "Power management events"
+#~ msgstr "पावर प्रबंधन घटना"
+
+#~ msgid "D0"
+#~ msgstr "डी०"
+
+#~ msgid "D1"
+#~ msgstr "डी१"
+
+#~ msgid "D2"
+#~ msgstr "डी२"
+
+#~ msgid "D3 hot"
+#~ msgstr "डी३ गर्म"
+
+#~ msgid "D3 cold"
+#~ msgstr "डी३ ठंडा"
+
+#~ msgid "Power state"
+#~ msgstr "पावर के स्थिति"
+
+#~ msgid "Power management"
+#~ msgstr "पावर प्रबंधन"
+
+#~ msgid "Data select"
+#~ msgstr "डाटा चयन"
+
+#~ msgid "Data scale"
+#~ msgstr "डाटा स्केल"
+
+#~ msgid "Power management status"
+#~ msgstr "पावर प्रबंधन स्थिति"
+
+#~ msgid "Bridge status"
+#~ msgstr "ब्रिज स्थिति"
+
+#~ msgid "Secondary bus state in D3 hot"
+#~ msgstr "सेकन्डरी बस के स्थिति डी३ गर्म हे"
+
+#~ msgid "B2"
+#~ msgstr "बी2"
+
+#~ msgid "B3"
+#~ msgstr "बी3"
+
+#~ msgid "Secondary bus power & clock control"
+#~ msgstr "सेकन्डरी बस पावर अउ घड़ी नियंत्रक"
+
+#~ msgid "Data"
+#~ msgstr "डाटा"
+
+#~ msgid "Revision"
+#~ msgstr "संसोधन"
+
+#~ msgid "Rate"
+#~ msgstr "दर"
+
+#~ msgid "AGP 3.0 mode"
+#~ msgstr "एजीपी ३.० मोड"
+
+#~ msgid "Fast Writes"
+#~ msgstr "तेजी से लिखथे "
+
+#~ msgid "Address over 4 GiB"
+#~ msgstr "४ गी.बा. से ऊपर पता"
+
+#~ msgid "Translation of host processor access"
+#~ msgstr "होस्ट प्रोसेसर एक्सेस के अनुवाद"
+
+#~ msgid "64-bit GART"
+#~ msgstr "64-बिट जीएआरटी"
+
+#~ msgid "Cache Coherency"
+#~ msgstr "कैस संगतता"
+
+#~ msgid "Side-band addressing"
+#~ msgstr "साइड-बैंड एड्रेसिंग"
+
+#~ msgid "Calibrating cycle"
+#~ msgstr "साइकल केलिब्रेट करत हे"
+
+#~ msgid "Optimum asynchronous request size"
+#~ msgstr "एसिंक्रोनस निवेदन आकार के सबसे अधिक आकार"
+
+#~ msgid "Isochronous transactions"
+#~ msgstr "आइसोक्रोनस ट्रांजेक्सन"
+
+#~ msgid "Maximum number of AGP command"
+#~ msgstr "एजीपी कमांड के सबसे अधिक संख्या"
+
+#~ msgid "Configuration"
+#~ msgstr "कान्फिगरेसन"
+
+#~ msgid "AGP"
+#~ msgstr "एजीपी"
+
+#~ msgid "Data address"
+#~ msgstr "डाटा पता"
+
+#~ msgid "Transfer completed"
+#~ msgstr "स्थांतरन पूरा"
+
+#~ msgid "Message control"
+#~ msgstr "संदेस नियंत्रन"
+
+#~ msgid "Message signaled interrupts"
+#~ msgstr "संदेस सिगनल इंटरप्ट"
+
+#~ msgid "Multiple message capable"
+#~ msgstr "बहु संदेस सक्छम"
+
+#~ msgid "Multiple message enable"
+#~ msgstr "बहु संदेस सक्छम"
+
+#~ msgid "64-bit address"
+#~ msgstr "64-बिट पता"
+
+#~ msgid "Per vector masking"
+#~ msgstr "प्रति वेक्टर मास्किंग"
+
+#~ msgid "Mask"
+#~ msgstr "मास्क"
+
+#~ msgid "Pending"
+#~ msgstr "लंबित"
+
+#~ msgid "Length"
+#~ msgstr "लंबाई"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "कुछ नइ"
+
+#~ msgid "Next"
+#~ msgstr "अगला"
+
+#~ msgid "0x00 (None)"
+#~ msgstr "0x00 (कोई नइ)"
+
+#~ msgid "Root only"
+#~ msgstr "सिरिफ रूट"
+
+#~ msgid "Value"
+#~ msgstr "मान"
+
+#~ msgid "Cache line size"
+#~ msgstr "कैस लाइन आकार"
+
+#, fuzzy
+#~| msgid "None"
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "कुछ नइ"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "Mass storage controller"
+#~ msgstr "संदेस नियंत्रन"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "Display controller"
+#~ msgstr "संदेस नियंत्रन"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "Multimedia controller"
+#~ msgstr "संदेस नियंत्रन"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "Memory controller"
+#~ msgstr "संदेस नियंत्रन"
+
+#, fuzzy
+#~| msgid "Bridge status"
+#~ msgid "Bridge"
+#~ msgstr "ब्रिज स्थिति"
+
+#, fuzzy
+#~| msgid "CardBus control"
+#~ msgid "Serial bus controller"
+#~ msgstr "कार्डबस नियंत्रन"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "Wireless controller"
+#~ msgstr "संदेस नियंत्रन"
+
+#, fuzzy
+#~| msgid "Bridge control"
+#~ msgid "Intelligent controller"
+#~ msgstr "ब्रिज नियंत्रन"
+
+#, fuzzy
+#~| msgid "Unassigned"
+#~ msgid "Unassigned class"
+#~ msgstr "गैर आबंटित"
+
+#, fuzzy
+#~| msgid "Device Subclass"
+#~ msgid "Unknown device class"
+#~ msgstr "उपकरन उपस्रेनी"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "SCSI storage controller"
+#~ msgstr "संदेस नियंत्रन"
+
+#, fuzzy
+#~| msgid "CardBus control"
+#~ msgid "IPI bus controller"
+#~ msgstr "कार्डबस नियंत्रन"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "SATA controller"
+#~ msgstr "संदेस नियंत्रन"
+
+#, fuzzy
+#~| msgid "Bridge control"
+#~ msgid "Serial Attached SCSI controller"
+#~ msgstr "ब्रिज नियंत्रन"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "Non-Volatile memory controller"
+#~ msgstr "संदेस नियंत्रन"
+
+#, fuzzy
+#~| msgid "Bridge control"
+#~ msgid "Ethernet controller"
+#~ msgstr "ब्रिज नियंत्रन"
+
+#, fuzzy
+#~| msgid "Bridge control"
+#~ msgid "WorldFip controller"
+#~ msgstr "ब्रिज नियंत्रन"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "PICMG controller"
+#~ msgstr "संदेस नियंत्रन"
+
+#, fuzzy
+#~| msgid "CardBus control"
+#~ msgid "Infiniband controller"
+#~ msgstr "कार्डबस नियंत्रन"
+
+#, fuzzy
+#~| msgid "Control"
+#~ msgid "Fabric controller"
+#~ msgstr "नियंत्रन"
+
+#, fuzzy
+#~| msgid "Control"
+#~ msgid "3D controller"
+#~ msgstr "नियंत्रन"
+
+#, fuzzy
+#~| msgid " - device:"
+#~ msgid "Audio device"
+#~ msgstr "- उपकरनः"
+
+#, fuzzy
+#~| msgid "Memory"
+#~ msgid "RAM memory"
+#~ msgstr "मेमोरी"
+
+#, fuzzy
+#~| msgid "Post writes"
+#~ msgid "Host bridge"
+#~ msgstr "पोस्ट लिखिस"
+
+#, fuzzy
+#~| msgid "CardBus number"
+#~ msgid "CardBus bridge"
+#~ msgstr "कार्डबस नंबर"
+
+#, fuzzy
+#~| msgid "Bridge control"
+#~ msgid "Serial controller"
+#~ msgstr "ब्रिज नियंत्रन"
+
+#, fuzzy
+#~| msgid "Bridge control"
+#~ msgid "Parallel controller"
+#~ msgstr "ब्रिज नियंत्रन"
+
+#, fuzzy
+#~| msgid "Bridge control"
+#~ msgid "GPIB controller"
+#~ msgstr "ब्रिज नियंत्रन"
+
+#, fuzzy
+#~| msgid "CardBus control"
+#~ msgid "Smart card controller"
+#~ msgstr "कार्डबस नियंत्रन"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "DMA controller"
+#~ msgstr "संदेस नियंत्रन"
+
+#, fuzzy
+#~| msgid "Control"
+#~ msgid "SD Host controller"
+#~ msgstr "नियंत्रन"
+
+#, fuzzy
+#~| msgid "CardBus control"
+#~ msgid "Keyboard controller"
+#~ msgstr "कार्डबस नियंत्रन"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "Mouse controller"
+#~ msgstr "संदेस नियंत्रन"
+
+#, fuzzy
+#~| msgid "CardBus control"
+#~ msgid "Scanner controller"
+#~ msgstr "कार्डबस नियंत्रन"
+
+#, fuzzy
+#~| msgid "Power state"
+#~ msgid "Power PC"
+#~ msgstr "पावर के स्थिति"
+
+#, fuzzy
+#~| msgid "Bridge control"
+#~ msgid "USB controller"
+#~ msgstr "ब्रिज नियंत्रन"
+
+#, fuzzy
+#~| msgid "Bus"
+#~ msgid "SMBus"
+#~ msgstr "बस"
+
+#, fuzzy
+#~| msgid "Control"
+#~ msgid "RF controller"
+#~ msgstr "नियंत्रन"
+
+#, fuzzy
+#~| msgid "I/O"
+#~ msgid "I2O"
+#~ msgstr "आई/ओ"
+
+#, fuzzy
+#~| msgid "Bridge control"
+#~ msgid "PCI native mode-only controller"
+#~ msgstr "ब्रिज नियंत्रन"
+
+#, fuzzy
+#~| msgid "Message control"
+#~ msgid "VGA controller"
+#~ msgstr "संदेस नियंत्रन"
+
+#, fuzzy
+#~| msgid "Control"
+#~ msgid "8514 controller"
+#~ msgstr "नियंत्रन"
+
+#, fuzzy
+#~| msgid "Secondary bus reset"
+#~ msgid "Secondary bus towards host CPU"
+#~ msgstr "सेकन्डरी बस रीसेट"
+
+#, fuzzy
+#~| msgid "Device"
+#~ msgid "USB Device"
+#~ msgstr "उपकरन"
+
+#, fuzzy
+#~| msgid "D1 support"
+#~ msgid "Debug port"
+#~ msgstr "डी१ समर्थन"
+
+#, fuzzy
+#~| msgid "AGP"
+#~ msgid "AGP x8"
+#~ msgstr "एजीपी"
+
+#, fuzzy
+#~| msgid " - device:"
+#~ msgid "Secure device"
+#~ msgstr "- उपकरनः"
+
+#, fuzzy
+#~| msgid "32-bit"
+#~ msgid "32 bit"
+#~ msgstr "32- बिट"
+
+#, fuzzy
+#~| msgid "64-bit"
+#~ msgid "64 bit"
+#~ msgstr "64-बिट"
+
+#, fuzzy
+#~| msgid "CardBus number"
+#~ msgid "CardBus"
+#~ msgstr "कार्डबस नंबर"
+
+#, fuzzy
+#~| msgid "System error"
+#~ msgid "System peripheral"
+#~ msgstr "तंत्र गलती"
+
+#~ msgid "KDE PCI Information Control Module"
+#~ msgstr "केडीई पीसीआई जानकारी नियंत्रन माड्यूल"

@@ -1,0 +1,1338 @@
+# translation of kcm_pci.po to Kannada
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Shankar Prasad <svenkate@redhat.com>, 2009, 2010.
+# Ashok <ashok567@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_pci\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
+"PO-Revision-Date: 2010-01-25 16:25+0530\n"
+"Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
+"Language-Team: kn-IN <>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ಅಶೋಕ್ ಕುಮಾರ್ ಎ, ಶಂಕರ ಪ್ರಸಾದ್ ಎಂ ವಿ"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "ashok567@gmail.com,svenkate@redhat.com"
+
+#: main.cpp:26
+#, fuzzy, kde-format
+#| msgid "PCI-X"
+msgctxt "@label kcm name"
+msgid "PCI"
+msgstr "PCI-X"
+
+#: main.cpp:27
+#, kde-format
+msgid "Harald Sitter"
+msgstr ""
+
+#: package/contents/ui/main.qml:14
+#, fuzzy
+#| msgid "Information"
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "ಮಾಹಿತಿ"
+
+#~ msgid "kcm_pci"
+#~ msgstr "kcm_pci"
+
+#, fuzzy
+#~| msgid "Device"
+#~ msgid "PCI Devices"
+#~ msgstr "ಸಾಧನ"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+
+#~ msgid "Nicolas Ternisien"
+#~ msgstr "Nicolas Ternisien"
+
+#~ msgid "Helge Deller"
+#~ msgstr "Helge Deller"
+
+#~ msgid "This list displays PCI information."
+#~ msgstr "ಪಟ್ಟಿಯು PCI ಮಾಹಿತಿಯನ್ನು ತೋರಿಸುತ್ತದೆ."
+
+#~ msgid ""
+#~ "This display shows information about your computer's PCI slots and the "
+#~ "related connected devices."
+#~ msgstr ""
+#~ "ಈ ಸೂಚನೆಯು ನಿಮ್ಮ ಗಣಕದ ಪಿಸಿಐ ಕಿಂಡಿ(ಸೀಳು)ಗಳ ಬಗೆಗಿನ ಮಾಹಿತಿ ಮತ್ತು ಅದಕ್ಕೆ "
+#~ "ಸಂಬಂಧಿಸಿದ ಸಂಪರ್ಕ ಸಾಧನಗಳ ಬಗೆಗಿನ ಮಾಹಿತಿಯನ್ನು ತೋರಿಸುತ್ತದೆ."
+
+#~ msgid "Device Class"
+#~ msgstr "ಸಾಧನದ ವರ್ಗ"
+
+#~ msgid "Device Subclass"
+#~ msgstr "ಸಾಧನದ ಉಪವರ್ಗ"
+
+#~ msgid "Device Programming Interface"
+#~ msgstr "ಸಾಧನ ಕ್ರಮವಿಧಿರಚನೆಯ ಸಂಪರ್ಕಸಾಧನ(ಇಂಟರ್ಫೇಸ್)"
+
+#~ msgid "Master IDE Device"
+#~ msgstr "ಪ್ರಮುಖ IDE ಸಾಧನ"
+
+#~ msgid "Secondary programmable indicator"
+#~ msgstr "ಅಪ್ರಧಾನ ಕ್ರಮವಿಧಿ ಮಾಡಬಹುದಾದಂತಹ ಸೂಚಕ"
+
+#~ msgid "Secondary operating mode"
+#~ msgstr "ಅಪ್ರಮುಖವಾದ ಕಾರ್ಯಾಚರಣೆಯ ವಿಧಾನ"
+
+#~ msgid "Primary programmable indicator"
+#~ msgstr "ಪ್ರಾಥಮಿಕ ಕ್ರಮವಿಧಿ ಮಾಡಬಹುದಾದಂತಹ ಸೂಚಕ"
+
+#~ msgid "Primary operating mode"
+#~ msgstr "ಪ್ರಾಥಮಿಕ ಕಾರ್ಯಾಚರಣೆಯ ವಿಧಾನ"
+
+#~ msgid "Vendor"
+#~ msgstr "ಮಾರಾಟಗಾರ"
+
+#~ msgid "Device"
+#~ msgstr "ಸಾಧನ"
+
+#~ msgid "Subsystem"
+#~ msgstr "ಉಪವ್ಯವಸ್ಥೆ"
+
+#~ msgid " - device:"
+#~ msgstr " - ಸಾಧನ:"
+
+#~ msgid "Interrupt"
+#~ msgstr "ತಡೆ (ಇಂಟರಪ್ಟ್)"
+
+#~ msgid "IRQ"
+#~ msgstr "IRQ"
+
+#~ msgid "Pin"
+#~ msgstr "ಪಿನ್"
+
+#~ msgid "Control"
+#~ msgstr "ನಿಯಂತ್ರಣ"
+
+#~ msgid "Response in I/O space"
+#~ msgstr "I/O ಸ್ಥಳದಲ್ಲಿ ಪ್ರತ್ಯುತ್ತರ"
+
+#~ msgid "Response in memory space"
+#~ msgstr "ಸ್ಮೃತಿ ಸ್ಥಳಗಳಿಗೆ ಪ್ರತ್ಯುತ್ತರ"
+
+#~ msgid "Bus mastering"
+#~ msgstr "ಬಸ್ ಪ್ರಾಮುಖ್ಯತೆ"
+
+#~ msgid "Response to special cycles"
+#~ msgstr "ವಿಶೇಷ ಆವರ್ತಗಳಿಗೆ ಪ್ರತ್ಯುತ್ತರ"
+
+#~ msgid "Memory write and invalidate"
+#~ msgstr "ಸ್ಮೃತಿ  ಬರವಣಿಗೆ ಮತ್ತು ಅಸಿಂಧು"
+
+#~ msgid "Palette snooping"
+#~ msgstr "ವರ್ಣ ಫಲಕ ಗೂಡಚಾರಿಕೆ"
+
+#~ msgid "Parity checking"
+#~ msgstr "ಅನುರೂಪತೆ ಪರಿಶೀಲನೆ"
+
+#~ msgid "Address/data stepping"
+#~ msgstr "ವಿಳಾಸ/ದತ್ತಾಂಶದ ಹಂತ"
+
+#~ msgid "System error"
+#~ msgstr "ವ್ಯವಸ್ಥೆಯ ದೋಷ"
+
+#~ msgid "Back-to-back writes"
+#~ msgstr "ಮತ್ತೆ ಮತ್ತೆ ಬರೆಯುವಿಕೆ"
+
+#~ msgid "Status"
+#~ msgstr "ಸ್ಥಿತಿಗತಿ"
+
+#~ msgid "Interrupt status"
+#~ msgstr "ತಡೆಯ ಸ್ಥಿತಿ"
+
+#~ msgid "Capability list"
+#~ msgstr "ಸಾಮರ್ಥ್ಯ ಪರೀಕ್ಷೆ"
+
+#~ msgid "66 MHz PCI 2.1 bus"
+#~ msgstr "66 MHz PCI 2.1 ಬಸ್"
+
+#~ msgid "User-definable features"
+#~ msgstr "ಬಳಕೆದಾರ-ಸೂಚಿಸಬಲ್ಲ ಸೌಲಭ್ಯಗಳು"
+
+#~ msgid "Accept fast back-to-back"
+#~ msgstr "ವೇಗವಾಗಿ ಮರುಕಳಿಸುವುದನ್ನು ಸ್ವೀಕರಿಸು"
+
+#~ msgid "Data parity error"
+#~ msgstr "ದತ್ತಾಂಶ ಅನುರೂಪತೆಯಲ್ಲಿ ದೋಷವಿದೆ"
+
+#~ msgid "Device selection timing"
+#~ msgstr "ಸಾಧನದ ಆಯ್ಕೆಯ ಸಮಯ"
+
+#~ msgid "Signaled target abort"
+#~ msgstr "ಸೂಚಿಸಿಲಾದ ಗುರಿಯನ್ನು ತ್ಯಜಿಸು"
+
+#~ msgid "Received target abort"
+#~ msgstr "ಸ್ವೀಕರಿಸಲಾದ ಗುರಿಯನ್ನು ತ್ಯಜಿಸುವಿಕೆ"
+
+#~ msgid "Received master abort"
+#~ msgstr "ಸ್ವೀಕರಿಸಲಾದ ಪ್ರಮುಖವಾದುದನ್ನು ತ್ಯಜಿಸುವಿಕೆ"
+
+#~ msgid "Signaled system error"
+#~ msgstr "ಸೂಚಿಸಲಾದ ವ್ಯವಸ್ಥೆಯ ದೋಷದ"
+
+#~ msgid "Parity error"
+#~ msgstr "ಅನುರೂಪತೆಯಲ್ಲಿ ದೋಷ"
+
+#~ msgid "Latency"
+#~ msgstr "ಸುಪ್ತತೆ(ಲೇಟೆನ್ಸಿ)"
+
+#~ msgid "MIN_GNT"
+#~ msgstr "MIN_GNT"
+
+#~ msgid "No major requirements (0x00)"
+#~ msgstr "ಯಾವುದೆ ಪ್ರಮುಖ ಆವಶ್ಯಕತೆಗಳಿಲ್ಲ (೦x೦೦)"
+
+#~ msgid "MAX_LAT"
+#~ msgstr "MAX_LAT"
+
+#~ msgid "Header"
+#~ msgstr "ಹೆಡರ್"
+
+#~ msgid "Type"
+#~ msgstr "ಬಗೆ"
+
+#~ msgid "Multifunctional"
+#~ msgstr "ಬಹುಕ್ರಿಯೆಯ"
+
+#~ msgid "Build-in self test"
+#~ msgstr "ಸ್ವಯಂ-ಪರೀಕ್ಷೆಯಲ್ಲಿ ನಿರ್ಮಿತ"
+
+#~ msgid "BIST Capable"
+#~ msgstr "BIST ಸಮರ್ಥವಾದ"
+
+#~ msgid "BIST Start"
+#~ msgstr "BIST ಆರಂಭ"
+
+#~ msgid "Completion code"
+#~ msgstr "ಪೂರ್ಣಗೊಳಿಕೆಯ ಸಂಜ್ಞೆ"
+
+#~ msgid "Size"
+#~ msgstr "ಗಾತ್ರ"
+
+#~ msgid "Address mappings"
+#~ msgstr "ವಿಳಾಸದ ಮ್ಯಾಪಿಂಗ್‌ಗಳು"
+
+#~ msgid "Mapping %1"
+#~ msgstr "%1 ಮ್ಯಾಪಿಂಗ್"
+
+#~ msgid "Space"
+#~ msgstr "ಸ್ಥಳಾವಕಾಶ"
+
+#~ msgid "I/O"
+#~ msgstr "I/O"
+
+#~ msgid "Memory"
+#~ msgstr "ಸ್ಮೃತಿ"
+
+#~ msgid "Prefetchable"
+#~ msgstr "ಮೊದಲೆ ಪಡೆಯಬಹುದಾದ"
+
+#~ msgid "Address"
+#~ msgstr "ವಿಳಾಸ"
+
+#, fuzzy
+#~| msgid "Unassigned"
+#~ msgctxt "unassigned address"
+#~ msgid "Unassigned"
+#~ msgstr "ನಿಯೋಜಿಸದೆ ಇರುವ"
+
+#, fuzzy
+#~| msgid "Unassigned"
+#~ msgctxt "unassigned size"
+#~ msgid "Unassigned"
+#~ msgstr "ನಿಯೋಜಿಸದೆ ಇರುವ"
+
+#~ msgid "Bus"
+#~ msgstr "ಬಸ್"
+
+#~ msgid "Primary bus number"
+#~ msgstr "ಪ್ರಥಮ ಬಸ್ ಸಂಖ್ಯೆ"
+
+#~ msgid "Secondary bus number"
+#~ msgstr "ಅಪ್ರಮುಖ ಬಸ್ ಸಂಖ್ಯೆ"
+
+#~ msgid "Subordinate bus number"
+#~ msgstr "ಅಧೀನ ಬಸ್ ಸಂಖ್ಯೆ"
+
+#~ msgid "Secondary latency timer"
+#~ msgstr "ಅಪ್ರಮುಖ ಸುಪ್ತತೆ(ಲೇಟೆನ್ಸಿ) ಟೈಮರ್"
+
+#~ msgid "CardBus number"
+#~ msgstr "CardBus ಸಂಖ್ಯೆ"
+
+#~ msgid "CardBus latency timer"
+#~ msgstr "ಕಾರ್ಡ್ ಬಸ್ ವಿಳಂಬಿತ ಟೈಮರ್"
+
+#~ msgid "Secondary status"
+#~ msgstr "ಎರಡನೆಯ ಸ್ಥಿತಿ"
+
+#~ msgid "I/O behind bridge"
+#~ msgstr "ಸೇತುಬಂಧದ(ಬ್ರಿಡ್ಜ್) ಹಿಂದಿನ I/O"
+
+#~ msgid "32-bit"
+#~ msgstr "೩೨-ಬಿಟ್"
+
+#~ msgid "Base"
+#~ msgstr "ಮೂಲ"
+
+#~ msgid "Limit"
+#~ msgstr "ಮಿತಿ"
+
+#~ msgid "Memory behind bridge"
+#~ msgstr "ಸೇತುಬಂಧದ(ಬ್ರಿಡ್ಜ್) ಹಿಂದಿನ ಸ್ಮೃತಿ"
+
+#~ msgid "Prefetchable memory behind bridge"
+#~ msgstr "ಸೇತುವಿನ ಹಿಂಭಾಗದ ಸ್ಮೃತಿ ಯನ್ನು ಮರು ಆವಾಹಿಸು"
+
+#~ msgid "64-bit"
+#~ msgstr "೬೪-ಬಿಟ್"
+
+#~ msgid "Bridge control"
+#~ msgstr "ಸೇತುಬಂಧ ನಿಯಂತ್ರಣ"
+
+#~ msgid "Secondary parity checking"
+#~ msgstr "ಅಪ್ರಮುಖ ಅನುರೂಪ ಪರಿಶೀಲನೆ "
+
+#~ msgid "Secondary system error"
+#~ msgstr "ಅಪ್ರಮುಖ ವ್ಯವಸ್ಥೆ ದೋಷ"
+
+#~ msgid "ISA ports forwarding"
+#~ msgstr "ISA ಸಂಪರ್ಕಸ್ಥಾನಗಳ ಫಾರ್ವಾರ್ಡಿಂಗ್"
+
+#~ msgid "VGA forwarding"
+#~ msgstr "VGA ಫಾರ್ವಾರ್ಡಿಂಗ್"
+
+#~ msgid "Master abort"
+#~ msgstr "ಪ್ರಮುಖವದುದನ್ನು ತ್ಯಜಿಸು(ಬಿಟ್ಟುಬಿಡು)"
+
+#~ msgid "Secondary bus reset"
+#~ msgstr "ದ್ವಿತೀಯ ಬಸ್ ಅನ್ನು  ಮರುನಿಗದಿಗೊಳಿಸು"
+
+#~ msgid "Secondary back-to-back writes"
+#~ msgstr "ಉಪಯೋಗವಿಲ್ಲದ್ದನ್ನು ಸಂಗ್ರಹಕ್ಕೆ ವರ್ಗಾಯಿಸು(ಬರೆಯು)"
+
+#~ msgid "Primary discard timer counts"
+#~ msgstr "ಪ್ರಾಥಮಿಕ ಟೈಮರ್ ಎಣಿಕೆಯನ್ನು  ತ್ಯಜಿಸುವಿಕೆ"
+
+#~ msgid "2e10 PCI clocks"
+#~ msgstr "2e10 PCI ಗಡಿಯಾರಗಳು"
+
+#~ msgid "2e15 PCI clocks"
+#~ msgstr "2e15 PCI ಗಡಿಯಾರಗಳು"
+
+#~ msgid "Secondary discard timer counts"
+#~ msgstr "ಅಪ್ರಮುಖ ಟೈಮರ್ ಎಣಿಕೆಯನ್ನು ಬಿಟ್ಟುಬಿಡು(ತ್ಯಜಿಸು)"
+
+#~ msgid "Discard timer error"
+#~ msgstr "ಟೈಮರ್ ದೋಷವನ್ನು ಬಿಟ್ಟುಬಿಡು"
+
+#~ msgid "Discard timer system error"
+#~ msgstr "ಟೈಮರ್ ವ್ಯವಸ್ಥೆಯ ದೋಷವನ್ನು ಬಿಟ್ಟುಬಿಡು"
+
+#~ msgid "Expansion ROM"
+#~ msgstr "ವಿಸ್ತರಣಾ ROM"
+
+#~ msgid "Memory windows"
+#~ msgstr "ಸ್ಮೃತಿ ಕಿಟಕಿಗಳು"
+
+#~ msgid "Window %1"
+#~ msgstr "ಕಿಟಕಿ %1"
+
+#~ msgid "I/O windows"
+#~ msgstr "I/O ಕಿಟಕಿಗಳು"
+
+#~ msgid "16-bit"
+#~ msgstr "೧೬-ಬಿಟ್"
+
+#~ msgid "16-bit legacy interface ports"
+#~ msgstr "೧೬-ಬಿಟ್ ಸಾಂಪ್ರದಾಯಿಕ ಸಂಪರ್ಕಸಾಧನ ಸಂಪರ್ಕಸ್ಥಾನಗಳು"
+
+#~ msgid "CardBus control"
+#~ msgstr "CardBus ನಿಯಂತ್ರಣ"
+
+#~ msgid "Interrupts for 16-bit cards"
+#~ msgstr "೧೬-ಬಿಟ್ ಕಾರ್ಡುಗಳಿಗಾಗಿನ ತಡೆಗಳು"
+
+#~ msgid "Window 0 prefetchable memory"
+#~ msgstr "ಕಿಟಕಿ ೦ ಯ ಮೊದಲೆ ಪಡೆಯಬಹುದಾದ ಸ್ಮೃತಿ "
+
+#~ msgid "Window 1 prefetchable memory"
+#~ msgstr "ಕಿಟಕಿ ೧  ರ ಮೊದಲೆ ಪಡೆಯಬಹುದಾದ ಸ್ಮೃತಿ "
+
+#~ msgid "Post writes"
+#~ msgstr "ಬರೆಯವಿಕೆಯ ನಂತರ"
+
+#~ msgid "Raw PCI config space"
+#~ msgstr "ಕಚ್ಚಾ PCI ಸಂರಚನಾ ಸ್ಥಳ"
+
+#~ msgid "Capabilities"
+#~ msgstr "ಸಾಮರ್ಥ್ಯಗಳು"
+
+#~ msgid "Version"
+#~ msgstr "ಆವೃತ್ತಿ"
+
+#~ msgid "Clock required for PME generation"
+#~ msgstr "PME ಉತ್ಪಾದನೆಗಾಗಿ ಅಗತ್ಯವಿರುವ ಗಡಿಯಾರ"
+
+#~ msgid "Device-specific initialization required"
+#~ msgstr "ಸಾಧನ-ನಿಶ್ಚಿತವಾದ ಆರಂಭಗೊಳಿಕೆಯ ಅಗತ್ಯವಿದೆ"
+
+#~ msgid "Maximum auxiliary current required in D3 cold"
+#~ msgstr "D3 ಆರಂಭಿಕ(ಶೈತ್ಯ) ಗರಿಷ್ಠ ಒತ್ತಾಸೆಯ ಹರಿವಿನ ಅಗತ್ಯವಿದೆ"
+
+#~ msgid "D1 support"
+#~ msgstr "D1 ಬೆಂಬಲ"
+
+#~ msgid "D2 support"
+#~ msgstr "D2 ಬೆಂಬಲ"
+
+#~ msgid "Power management events"
+#~ msgstr "ವಿದ್ಯುಚ್ಛಕ್ತಿ ನಿರ್ವಹಣೆ ಸನ್ನಿವೇಶಗಳು"
+
+#~ msgid "D0"
+#~ msgstr "D0"
+
+#~ msgid "D1"
+#~ msgstr "D1"
+
+#~ msgid "D2"
+#~ msgstr "D2"
+
+#~ msgid "D3 hot"
+#~ msgstr "D3 ಬಿಸಿ"
+
+#~ msgid "D3 cold"
+#~ msgstr "D3 ತಣ್ಣನೆಯ"
+
+#~ msgid "Power state"
+#~ msgstr "ವಿದ್ಯುಚ್ಛಕ್ತಿ ಸ್ಥಿತಿ"
+
+#~ msgid "Power management"
+#~ msgstr "ವಿದ್ಯುಚ್ಛಕ್ತಿ ನಿರ್ವಹಣೆ"
+
+#~ msgid "Data select"
+#~ msgstr "ದತ್ತಾಂಶದ ಆಯ್ಕೆ"
+
+#~ msgid "Data scale"
+#~ msgstr "ದತ್ತಾಂಶದ ಅಳತೆ"
+
+#~ msgid "Power management status"
+#~ msgstr "ವಿದ್ಯುಚ್ಛಕ್ತಿ ನಿರ್ವಹಣೆಯ ಸ್ಥಿತಿ"
+
+#~ msgid "Bridge status"
+#~ msgstr "ಸೇತುಬಂಧದ ಸ್ಥಿತಿ"
+
+#~ msgid "Secondary bus state in D3 hot"
+#~ msgstr "ಅಪ್ರಮುಖ ಬಸ್ ಶಕ್ತಿ ಸ್ಥಿತಿಯು D3 ಶಾಖವನ್ನು ತಲುಪಿದೆ"
+
+#~ msgid "B2"
+#~ msgstr "B2"
+
+#~ msgid "B3"
+#~ msgstr "B3"
+
+#~ msgid "Secondary bus power & clock control"
+#~ msgstr "ಅಪ್ರಮುಖ ಬಸ್ ಶಕ್ತಿ ಮತ್ತು  ಗಡಿಯಾರ ನಿಯಂತ್ರಣ"
+
+#~ msgid "Data"
+#~ msgstr "ದತ್ತಾಂಶ"
+
+#~ msgid "Revision"
+#~ msgstr "ಪುನರಾವರ್ತನೆ"
+
+#~ msgid "Rate"
+#~ msgstr "ದರ (ರೇಟ್)"
+
+#~ msgid "AGP 3.0 mode"
+#~ msgstr "AGP 3.0 ಕ್ರಮ"
+
+#~ msgid "Fast Writes"
+#~ msgstr "ವೇಗ ಬರೆಯವಿಕೆ"
+
+#~ msgid "Address over 4 GiB"
+#~ msgstr "೪ GiB ಮೂಲಕದ ವಿಳಾಸ"
+
+#~ msgid "Translation of host processor access"
+#~ msgstr "ಅತಿಥೇಯ ಸಂಸ್ಕಾರಕದ ನಿಲುಕಣೆಯ ಅನುವಾದ"
+
+#~ msgid "64-bit GART"
+#~ msgstr "೬೪-ಬಿಟ್ GART"
+
+#~ msgid "Cache Coherency"
+#~ msgstr "ಕ್ಯಾಶೆಯ ಹೊಂದಾಣಿಕೆ"
+
+#~ msgid "Side-band addressing"
+#~ msgstr "ಬದಿ-ಬ್ಯಾಂಡ್‌ ವಿಳಾಸ ನೀಡಿಕೆ"
+
+#~ msgid "Calibrating cycle"
+#~ msgstr "ಸರಿಪಡಿಕೆಯ ಆವರ್ತ"
+
+#~ msgid "Optimum asynchronous request size"
+#~ msgstr "ಅತಿಪ್ರಶಸ್ತ  ಅಸಮಕಾಲಿಕ  ಬೇಡಿಕೆ ಗಾತ್ರ"
+
+#~ msgid "Isochronous transactions"
+#~ msgstr "ಒಂದೇ ಸಮಯದಲ್ಲಿನ ವ್ಯವಹಾರಗಳು"
+
+#~ msgid "Maximum number of AGP command"
+#~ msgstr "AGP ಆದೇಶದ ಗರಿಷ್ಟ ಸಂಖ್ಯೆ"
+
+#~ msgid "Configuration"
+#~ msgstr "ಸಂರಚನೆ"
+
+#~ msgid "AGP"
+#~ msgstr "AGP"
+
+#~ msgid "Data address"
+#~ msgstr "ದತ್ತ ವಿಳಾಸ"
+
+#~ msgid "Transfer completed"
+#~ msgstr "ವರ್ಗಾವಣೆ ಪೂರ್ಣಗೊಂಡಿದೆ"
+
+#~ msgid "Message control"
+#~ msgstr "ಸಂದೇಶ ನಿಯಂತ್ರಣ"
+
+#~ msgid "Message signaled interrupts"
+#~ msgstr "ಸಂಕೇತ ನೀಡಿದ ತಡೆಗಳ ಬಗ್ಗೆ ಸಂದೇಶ ನೀಡು"
+
+#~ msgid "Multiple message capable"
+#~ msgstr "ಬಹು ಸಂದೇಶ ನೀಡಿಕೆ ಸಮರ್ಥವಾಗಿದೆ"
+
+#~ msgid "Multiple message enable"
+#~ msgstr "ಬಹು ಸಂದೇಶ ನೀಡಿಕೆಯನ್ನು ಶಕ್ತಗೊಳಿಸಲಾಗಿದೆ"
+
+#~ msgid "64-bit address"
+#~ msgstr "೬೪-ಬಿಟ್ ವಿಳಾಸ"
+
+#~ msgid "Per vector masking"
+#~ msgstr "ಪ್ರತಿ ವೆಕ್ಟರಿನ ಮುಸುಕುಗೊಳಿಕೆ"
+
+#~ msgid "Mask"
+#~ msgstr "ಮುಸುಕು"
+
+#~ msgid "Pending"
+#~ msgstr "ಬಾಕಿ ಇರುವ"
+
+#~ msgid "Length"
+#~ msgstr "ಉದ್ದ"
+
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "ಯಾವುದೂ ಇಲ್ಲ"
+
+#~ msgid "Next"
+#~ msgstr "ಮುಂದಕ್ಕೆ"
+
+#~ msgid "0x00 (None)"
+#~ msgstr "0x00 (ಯಾವುದೂ ಇಲ್ಲ)"
+
+#~ msgid "Root only"
+#~ msgstr "ನಿರ್ವಾಹಕ(ರೂಟ್) ಮಾತ್ರ"
+
+#~ msgid "Value"
+#~ msgstr "ಮೌಲ್ಯ"
+
+#~ msgid "Cache line size"
+#~ msgstr "ಕ್ಯಾಶೆಯ ಸಾಲಿನ ಗಾತ್ರ"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Enabled"
+#~ msgstr "ಶಕ್ತಗೊಂಡಿದೆ"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Disabled"
+#~ msgstr "ನಿಷ್ಕ್ರಿಯಗೊಂಡಿದೆ"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Yes"
+#~ msgstr "ಸರಿ"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "ಇಲ್ಲ"
+
+#~ msgctxt "state of PCI item"
+#~ msgid "Unknown"
+#~ msgstr "ತಿಳಿಯದ"
+
+#~ msgid "Unclassified device"
+#~ msgstr "ವರ್ಗೀಕರಿಸದೆ ಇರುವ ಸಾಧನ"
+
+#~ msgid "Mass storage controller"
+#~ msgstr "ಮಾಸ್ ಶೇಖರಣಾ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Network controller"
+#~ msgstr "ಜಾಲಬಂಧ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Display controller"
+#~ msgstr "ಪ್ರದರ್ಶಕ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Multimedia controller"
+#~ msgstr "ಬಹುಮಾಧ್ಯಮ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Memory controller"
+#~ msgstr "ಸ್ಮೃತಿ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Bridge"
+#~ msgstr "ಸೇತುಬಂಧ"
+
+#~ msgid "Communication controller"
+#~ msgstr "ಸಂವಹನ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Generic system peripheral"
+#~ msgstr "ಸಾಮಾನ್ಯವಾದ ವ್ಯವಸ್ಥೆ ಬಾಹ್ಯ ಸಾಧನ"
+
+#~ msgid "Input device controller"
+#~ msgstr "ಆದಾನ ಸಾಧನ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Docking station"
+#~ msgstr "ಡಾಕಿಂಗ್ ಸ್ಟೇಶನ್"
+
+#~ msgid "Processor"
+#~ msgstr "ಸಂಸ್ಕಾರಕ"
+
+#~ msgid "Serial bus controller"
+#~ msgstr "ಅನುಕ್ರಮ ಬಸ್ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Wireless controller"
+#~ msgstr "ನಿಸ್ತಂತು ನಿಯಂತ್ರಕ"
+
+#~ msgid "Intelligent controller"
+#~ msgstr "ಚಾಣಾಕ್ಷ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Satellite communications controller"
+#~ msgstr "ಉಪಗ್ರಹ ಸಂವಹನಗಳ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Encryption controller"
+#~ msgstr "ಗೂಢಲಿಪೀಕರಣ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Signal processing controller"
+#~ msgstr "ಸಂಜ್ಞೆ ಸಂಸ್ಕರಣಾ ನಿಯಂತ್ರಕ"
+
+#, fuzzy
+#~| msgid "Co-processor"
+#~ msgid "Coprocessor"
+#~ msgstr "ಸಹ-ಸಂಸ್ಕಾರಕ"
+
+#, fuzzy
+#~| msgid "Unassigned"
+#~ msgid "Unassigned class"
+#~ msgstr "ನಿಯೋಜಿಸದೆ ಇರುವ"
+
+#~ msgid "Unknown device class"
+#~ msgstr "ಗೊತ್ತಿರದ ಸಾಧನದ ವರ್ಗ"
+
+#~ msgid "Non-VGA unclassified device"
+#~ msgstr "VGA ಅಲ್ಲದ ವರ್ಗೀಕರಿಸದೆ ಇರುವ ಸಾಧನ"
+
+#~ msgid "VGA unclassified device"
+#~ msgstr "VGA ವರ್ಗೀಕರಿಸದೆ ಇರುವ ಸಾಧನ"
+
+#~ msgid "Unknown unclassified device"
+#~ msgstr "ಗೊತ್ತಿರದ ವರ್ಗೀಕರಿಸದೆ ಇರುವ ಸಾಧನ"
+
+#~ msgid "SCSI storage controller"
+#~ msgstr "SCSI ಶೇಖರಣಾ ನಿಯಂತ್ರಕ"
+
+#~ msgid "IDE controller"
+#~ msgstr "IDE ನಿಯಂತ್ರಕ"
+
+#~ msgid "Floppy disk controller"
+#~ msgstr "ಫ್ಲಾಪಿ ಡಿಸ್ಕ್ ನಿಯಂತ್ರಕ"
+
+#~ msgid "IPI bus controller"
+#~ msgstr "IP ಬಸ್ ನಿಯಂತ್ರಕ"
+
+#~ msgid "RAID bus controller"
+#~ msgstr "RAID ಬಸ್ ನಿಯಂತ್ರಕ"
+
+#~ msgid "ATA controller"
+#~ msgstr "ATA ನಿಯಂತ್ರಕ"
+
+#, fuzzy
+#~| msgid "ATA controller"
+#~ msgid "SATA controller"
+#~ msgstr "ATA ನಿಯಂತ್ರಕ"
+
+#, fuzzy
+#~| msgid "Serial controller"
+#~ msgid "Serial Attached SCSI controller"
+#~ msgstr "ಅನುಕ್ರಮಿತ ನಿಯಂತ್ರಕ"
+
+#, fuzzy
+#~| msgid "Unknown memory controller"
+#~ msgid "Non-Volatile memory controller"
+#~ msgstr "ಗೊತ್ತಿರದ ಸ್ಮೃತಿ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Unknown storage controller"
+#~ msgstr "ಗೊತ್ತಿರದ ಶೇಖರಣಾ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Ethernet controller"
+#~ msgstr "ಎತರ್ನೆಟ್ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Token ring network controller"
+#~ msgstr "ಟೋಕನ್ ರಿಂಗ್ ಜಾಲಬಂಧ ನಿಯಂತ್ರಕ"
+
+#~ msgid "FDDI network controller"
+#~ msgstr "FDDI ಜಾಲಬಂಧ ನಿಯಂತ್ರಕ"
+
+#~ msgid "ATM network controller"
+#~ msgstr "ATM ಜಾಲಬಂಧ ನಿಯಂತ್ರಕ"
+
+#~ msgid "ISDN controller"
+#~ msgstr "ISDN ನಿಯಂತ್ರಕ"
+
+#~ msgid "WorldFip controller"
+#~ msgstr "WorldFip ನಿಯಂತ್ರಕ"
+
+#, fuzzy
+#~| msgid "IDE controller"
+#~ msgid "PICMG controller"
+#~ msgstr "IDE ನಿಯಂತ್ರಕ"
+
+#, fuzzy
+#~| msgid "Keyboard controller"
+#~ msgid "Infiniband controller"
+#~ msgstr "ಕೀಲಿಮಣೆ ನಿಯಂತ್ರಕ"
+
+#, fuzzy
+#~| msgid "RF controller"
+#~ msgid "Fabric controller"
+#~ msgstr "RF ನಿಯಂತ್ರಕ"
+
+#~ msgid "Unknown network controller"
+#~ msgstr "ಗೊತ್ತಿರದ ಜಾಲಬಂಧ ನಿಯಂತ್ರಕ"
+
+#~ msgid "VGA compatible controller"
+#~ msgstr "VGA ಸಹವರ್ತನೀಯ ನಿಯಂತ್ರಕ"
+
+#~ msgid "XGA compatible controller"
+#~ msgstr "XGA ಸಹವರ್ತನೀಯ ನಿಯಂತ್ರಕ"
+
+#~ msgid "3D controller"
+#~ msgstr "3D ನಿಯಂತ್ರಕ"
+
+#~ msgid "Unknown display controller"
+#~ msgstr "ಗೊತ್ತಿರದ ಪ್ರದರ್ಶಕ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Multimedia video controller"
+#~ msgstr "ಬಹುಮಾಧ್ಯಮ ವೀಡಿಯೊ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Multimedia audio controller"
+#~ msgstr "ಬಹುಮಾಧ್ಯಮ ಆಡಿಯೊ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Computer telephony device"
+#~ msgstr "ಗಣಕೀಯ ದೂರವಾಣಿ ಸಾಧನ"
+
+#, fuzzy
+#~| msgid "Secure device"
+#~ msgid "Audio device"
+#~ msgstr "ಸುರಕ್ಷಿತ ಸಾಧನ"
+
+#~ msgid "Unknown multimedia controller"
+#~ msgstr "ಗೊತ್ತಿರದ ಬಹುಮಾಧ್ಯಮ ಸ್ಮೃತಿ"
+
+#~ msgid "RAM memory"
+#~ msgstr "RAM ಸ್ಮೃತಿ"
+
+#~ msgid "FLASH memory"
+#~ msgstr "FLASH ಸ್ಮೃತಿ"
+
+#~ msgid "Unknown memory controller"
+#~ msgstr "ಗೊತ್ತಿರದ ಸ್ಮೃತಿ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Host bridge"
+#~ msgstr "ಅತಿಥೇಯ ಸೇತುಬಂಧ"
+
+#~ msgid "ISA bridge"
+#~ msgstr "ISA ಸೇತುಬಂಧ"
+
+#~ msgid "EISA bridge"
+#~ msgstr "EISA ಸೇತುಬಂಧ"
+
+#~ msgid "MicroChannel bridge"
+#~ msgstr "ಮೈಕ್ರೋಚಾನಲ್ ಸೇತುಬಂಧ"
+
+#~ msgid "PCI bridge"
+#~ msgstr "PCI ಸೇತುಬಂಧ"
+
+#~ msgid "PCMCIA bridge"
+#~ msgstr "PCMCIA ಸೇತುಬಂಧ"
+
+#~ msgid "NuBus bridge"
+#~ msgstr "NuBus ಸೇತುಬಂಧ"
+
+#~ msgid "CardBus bridge"
+#~ msgstr "CardBus ಸೇತುಬಂಧ"
+
+#~ msgid "RACEway bridge"
+#~ msgstr "RACEway ಸೇತುಬಂಧ"
+
+#~ msgid "Semi-transparent PCI-to-PCI bridge"
+#~ msgstr "ಅರೆ-ಪಾರದರ್ಶಕ PCI-ಇಂದ-PCI ಗೆ ಸೇತುಬಂಧ"
+
+#~ msgid "InfiniBand to PCI host bridge"
+#~ msgstr "PCI ಅತಿಥೇಯ ಸೇತುಬಂಧಕ್ಕೆ InfiniBand"
+
+#~ msgid "Unknown bridge"
+#~ msgstr "ಗೊತ್ತಿರದ ಸೇತುಬಂಧ"
+
+#~ msgid "Serial controller"
+#~ msgstr "ಅನುಕ್ರಮಿತ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Parallel controller"
+#~ msgstr "ಸಮಾನಾಂತರ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Multiport serial controller"
+#~ msgstr "ಬಹುಸಂಪರ್ಕಸ್ಥಾನ ಅನುಕ್ರಮಿತ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Modem"
+#~ msgstr "ಮಾಡೆಮ್"
+
+#, fuzzy
+#~| msgid "USB controller"
+#~ msgid "GPIB controller"
+#~ msgstr "USB ನಿಯಂತ್ರಕ"
+
+#, fuzzy
+#~| msgid "Scanner controller"
+#~ msgid "Smart card controller"
+#~ msgstr "ಸ್ಕ್ಯಾನರ್ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Unknown communication controller"
+#~ msgstr "ಗೊತ್ತಿರದ ಸಂವಹನಾ ನಿಯಂತ್ರಕ"
+
+#~ msgid "PIC"
+#~ msgstr "PIC"
+
+#~ msgid "DMA controller"
+#~ msgstr "DMA ನಿಯಂತ್ರಕ"
+
+#~ msgid "Timer"
+#~ msgstr "ಟೈಮರ್"
+
+#~ msgid "RTC"
+#~ msgstr "RTC"
+
+#~ msgid "PCI Hot-plug controller"
+#~ msgstr "PCI ಹಾಟ್‌-ಪ್ಲಗ್ ನಿಯಂತ್ರಕ"
+
+#, fuzzy
+#~| msgid "ISDN controller"
+#~ msgid "SD Host controller"
+#~ msgstr "ISDN ನಿಯಂತ್ರಕ"
+
+#~ msgid "Unknown system peripheral"
+#~ msgstr "ಗೊತ್ತಿರದ ವ್ಯವಸ್ಥೆಯ ಬಾಹ್ಯ ಸಾಧನ"
+
+#~ msgid "Keyboard controller"
+#~ msgstr "ಕೀಲಿಮಣೆ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Digitizer Pen"
+#~ msgstr "ಡಿಜಿಟೈಸರ್ ಲೇಖನಿ"
+
+#~ msgid "Mouse controller"
+#~ msgstr "ಮೌಸ್ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Scanner controller"
+#~ msgstr "ಸ್ಕ್ಯಾನರ್ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Gameport controller"
+#~ msgstr "ಗೇಮ್‌ಪೋರ್ಟ್ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Unknown input device controller"
+#~ msgstr "ಗೊತ್ತಿರದ ಆದಾನ ಸಾಧನ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Generic docking station"
+#~ msgstr "ವಿಶಿಷ್ಟವಾದ ಡಾಕಿಂಗ್ ಸ್ಟೇಶನ್"
+
+#~ msgid "Unknown docking station"
+#~ msgstr "ಗೊತ್ತಿರದ ಡಾಕಿಂಗ್ ಸ್ಟೇಶನ್"
+
+#~ msgid "386"
+#~ msgstr "೩೮೬"
+
+#~ msgid "486"
+#~ msgstr "೪೮೬"
+
+#~ msgid "Pentium"
+#~ msgstr "ಪೆಂಟಿಯಮ್"
+
+#~ msgid "Alpha"
+#~ msgstr "ಆಲ್ಫಾ"
+
+#~ msgid "Power PC"
+#~ msgstr "ಪವರ್ PC"
+
+#~ msgid "MIPS"
+#~ msgstr "MIPS"
+
+#~ msgid "Co-processor"
+#~ msgstr "ಸಹ-ಸಂಸ್ಕಾರಕ"
+
+#~ msgid "Unknown processor"
+#~ msgstr "ಗೊತ್ತಿರದ ಸಂಸ್ಕಾರಕ"
+
+#~ msgid "FireWire (IEEE 1394)"
+#~ msgstr "ಫೈರ್ವೈರ್ (IEEE 1394)"
+
+#~ msgid "ACCESS bus"
+#~ msgstr "ACCESS ಬಸ್"
+
+#~ msgid "SSA"
+#~ msgstr "SSA"
+
+#~ msgid "USB controller"
+#~ msgstr "USB ನಿಯಂತ್ರಕ"
+
+#~ msgid "Fibre channel"
+#~ msgstr "ಫೈಬರ್ ಚಾನಲ್"
+
+#~ msgid "SMBus"
+#~ msgstr "SMBus"
+
+#~ msgid "InfiniBand"
+#~ msgstr "InfiniBand"
+
+#~ msgid "IPMI interface"
+#~ msgstr "IPMI ಸಂಪರ್ಕಸಾಧನ"
+
+#~ msgid "SERCOS interface"
+#~ msgstr "SERCOS ಸಂಪರ್ಕಸಾಧನ"
+
+#~ msgid "CANbus"
+#~ msgstr "CANbus"
+
+#~ msgid "Unknown serial bus controller"
+#~ msgstr "ಗೊತ್ತಿರದ ಅನುಕ್ರಮಿತ ಬಸ್ ನಿಯಂತ್ರಕ"
+
+#~ msgid "IRDA controller"
+#~ msgstr "IRDA ನಿಯಂತ್ರಕ"
+
+#~ msgid "Consumer IR controller"
+#~ msgstr "ಗ್ರಾಹಕ IR ನಿಯಂತ್ರಕ"
+
+#~ msgid "RF controller"
+#~ msgstr "RF ನಿಯಂತ್ರಕ"
+
+#~ msgid "Bluetooth"
+#~ msgstr "ಬ್ಲೂಟೂತ್"
+
+#~ msgid "Broadband"
+#~ msgstr "ಬ್ರಾಡ್‌ಬ್ಯಾಂಡ್"
+
+#~ msgid "Ethernet (802.11a - 5 GHz)"
+#~ msgstr "ಎತರ್ನೆಟ್ (೮೦೨.೧೧a - ೫ GHz)"
+
+#~ msgid "Ethernet (802.11b - 2.4 GHz)"
+#~ msgstr "ಎತರ್ನೆಟ್ (೮೦೨.೧೧b - ೨.೪ GHz)"
+
+#~ msgid "Unknown wireless controller"
+#~ msgstr "ಗೊತ್ತಿರದ ನಿಸ್ತಂತು (ವೈರ್ಲೆಸ್) ನಿಯಂತ್ರಕ"
+
+#~ msgid "I2O"
+#~ msgstr "I2O"
+
+#~ msgid "Unknown intelligent controller"
+#~ msgstr "ಗೊತ್ತಿರದ ಚತುರ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Satellite TV controller"
+#~ msgstr "ಉಪಗ್ರಹ ಟಿವಿ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Satellite audio communication controller"
+#~ msgstr "ಉಪಗ್ರಹ ಆಡಿಯೊ ಸಂವಹನ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Satellite voice communication controller"
+#~ msgstr "ಉಪಗ್ರಹ ಧ್ವನಿ ಸಂವಹನ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Satellite data communication controller"
+#~ msgstr "ಉಪಗ್ರಹ ದತ್ತಾಂಶ ಸಂವಹನಾ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Unknown satellite communications controller"
+#~ msgstr "ಗೊತ್ತಿರದ ಉಪಗ್ರಹ ಸಂವಹನೆಗಳ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Network and computing encryption device"
+#~ msgstr "ಜಾಲಬಂಧ ಹಾಗು ಗಣಕೀಕರಣದ ಗೂಢಲಿಪೀಕರಣ ಸಾಧನ"
+
+#~ msgid "Entertainment encryption device"
+#~ msgstr "ಮನರಂಜನೆ ಗೂಢಲಿಪೀಕರಣ ಸಾಧನ"
+
+#~ msgid "Unknown encryption controller"
+#~ msgstr "ಗೊತ್ತಿರದ ಗೂಢಲಿಪೀಕರಣ ನಿಯಂತ್ರಕ"
+
+#~ msgid "DPIO module"
+#~ msgstr "DPIO ಘಟಕ"
+
+#~ msgid "Performance counters"
+#~ msgstr "ಕಾರ್ಯನಿರ್ವಹಣೆಯ ಎಣಿಕೆಗಳು"
+
+#~ msgid "Communication synchronizer"
+#~ msgstr "ಸಂವಹನಾ ಮೇಳೈಕೆಗಾರ"
+
+#, fuzzy
+#~| msgid "Signal processing controller"
+#~ msgid "Signal processing management"
+#~ msgstr "ಸಂಜ್ಞೆ ಸಂಸ್ಕರಣಾ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Unknown signal processing controller"
+#~ msgstr "ಗೊತ್ತಿರದ ಸಂಜ್ಞೆ ಸಂಸ್ಕರಿಸುವ ನಿಯಂತ್ರಕ"
+
+#, fuzzy
+#~| msgid "Unknown processor"
+#~ msgid "Unknown processing accelerator"
+#~ msgstr "ಗೊತ್ತಿರದ ಸಂಸ್ಕಾರಕ"
+
+#~ msgid "Unknown subdevice class"
+#~ msgstr "ಗೊತ್ತಿರದ ಉಪಸಾಧನ ವರ್ಗ"
+
+#, fuzzy
+#~| msgid "VGA compatible controller"
+#~ msgid "ISA Compatibility mode-only controller"
+#~ msgstr "VGA ಸಹವರ್ತನೀಯ ನಿಯಂತ್ರಕ"
+
+#, fuzzy
+#~| msgid "PCI Hot-plug controller"
+#~ msgid "PCI native mode-only controller"
+#~ msgstr "PCI ಹಾಟ್‌-ಪ್ಲಗ್ ನಿಯಂತ್ರಕ"
+
+#~ msgid "Vendor specific"
+#~ msgstr "ಮಾರಾಟಗಾರರನ್ನು  ಅವಲಂಬಿತ"
+
+#, fuzzy
+#~| msgid "PCI express"
+#~ msgid "NVM Express"
+#~ msgstr "PCI ಎಕ್ಸ್‌ಪ್ರೆಸ್"
+
+#, fuzzy
+#~| msgid "ATA controller"
+#~ msgid "VGA controller"
+#~ msgstr "ATA ನಿಯಂತ್ರಕ"
+
+#, fuzzy
+#~| msgid "3D controller"
+#~ msgid "8514 controller"
+#~ msgstr "3D ನಿಯಂತ್ರಕ"
+
+#~ msgid "Normal decode"
+#~ msgstr "ಸಾಮಾನ್ಯ ಡೀಕೊಡ್"
+
+#~ msgid "Subtractive decode"
+#~ msgstr "ವ್ಯವಕಲನ ಡೀಕೋಡ್"
+
+#~ msgid "Transparent mode"
+#~ msgstr "ಪಾರದರ್ಶಕ ಕ್ರಮ"
+
+#~ msgid "Endpoint mode"
+#~ msgstr "ಅಂತ್ಯಬಿಂದು ಕ್ರಮ"
+
+#~ msgid "Primary bus towards host CPU"
+#~ msgstr "ಅತಿಥೇಯ CPU ನತ್ತ ಪ್ರಾಥಮಿಕ ಬಸ್"
+
+#~ msgid "Secondary bus towards host CPU"
+#~ msgstr "ಅತಿಥೇಯ CPU ನತ್ತ ಅಪ್ರಮುಖ ಬಸ್"
+
+#~ msgid "8250"
+#~ msgstr "೮೨೫೦"
+
+#~ msgid "16450"
+#~ msgstr "೧೬೪೫೦"
+
+#~ msgid "16550"
+#~ msgstr "೧೬೫೫೦"
+
+#~ msgid "16650"
+#~ msgstr "೧೬೬೫೦"
+
+#~ msgid "16750"
+#~ msgstr "೧೬೭೫೦"
+
+#~ msgid "16850"
+#~ msgstr "೧೬೮೫೦"
+
+#~ msgid "16950"
+#~ msgstr "೧೬೯೫೦"
+
+#~ msgid "SPP"
+#~ msgstr "SPP"
+
+#~ msgid "BiDir"
+#~ msgstr "BiDir"
+
+#~ msgid "ECP"
+#~ msgstr "ECP"
+
+#~ msgid "IEEE1284"
+#~ msgstr "IEEE1284"
+
+#~ msgid "IEEE1284 Target"
+#~ msgstr "IEEE1284 ಗುರಿ"
+
+#~ msgid "Generic"
+#~ msgstr "ಸಾಮಾನ್ಯ"
+
+#~ msgid "Hayes/16450"
+#~ msgstr "ಹೇಯ್ಸ್/೧೬೪೫೦"
+
+#~ msgid "Hayes/16550"
+#~ msgstr "ಹೇಯ್ಸ್/೧೬೫೫೦"
+
+#~ msgid "Hayes/16650"
+#~ msgstr "ಹೇಯ್ಸ್/೧೬೬೫೦"
+
+#~ msgid "Hayes/16750"
+#~ msgstr "ಹೇಯ್ಸ್/೧೬೭೫೦"
+
+#~ msgid "8259"
+#~ msgstr "೮೨೫೯"
+
+#~ msgid "ISA PIC"
+#~ msgstr "ISA PIC"
+
+#~ msgid "EISA PIC"
+#~ msgstr "EISA PIC"
+
+#~ msgid "IO-APIC"
+#~ msgstr "IO-APIC"
+
+#~ msgid "IO(X)-APIC"
+#~ msgstr "IO(X)-APIC"
+
+#~ msgid "8237"
+#~ msgstr "೮೨೩೭"
+
+#~ msgid "ISA DMA"
+#~ msgstr "ISA DMA"
+
+#~ msgid "EISA DMA"
+#~ msgstr "EISA DMA"
+
+#~ msgid "8254"
+#~ msgstr "೮೨೫೪"
+
+#~ msgid "ISA timer"
+#~ msgstr "ISA ಟೈಮರ್"
+
+#~ msgid "EISA timers"
+#~ msgstr "EISA ಟೈಮರುಗಳು"
+
+#~ msgid "ISA RTC"
+#~ msgstr "ISA RTC"
+
+#~ msgid "Extended"
+#~ msgstr "ವಿಸ್ತರಿಸಲಾದ"
+
+#~ msgid "OHCI"
+#~ msgstr "OHCI"
+
+#~ msgid "UHCI"
+#~ msgstr "UHCI"
+
+#~ msgid "EHCI"
+#~ msgstr "EHCI"
+
+#~ msgid "Unspecified"
+#~ msgstr "ಸೂಚಿಸದೆ ಇರುವ"
+
+#~ msgid "USB Device"
+#~ msgstr "USB ಸಾಧನ"
+
+#~ msgid "SMIC"
+#~ msgstr "SMIC"
+
+#~ msgid "Keyboard controller style"
+#~ msgstr "ಕೀಲಿಮಣೆ ನಿಯಂತ್ರಕ ಶೈಲಿ"
+
+#~ msgid "Block transfer"
+#~ msgstr "ಖಂಡ ವರ್ಗಾವಣೆ"
+
+#~ msgid "Vital product data"
+#~ msgstr "ಆವಶ್ಯಕ ಉತ್ಪನ್ನ ದತ್ತಾಂಶ"
+
+#~ msgid "Slot identification"
+#~ msgstr "ಕಂಡಿ(ಸೀಳು) ಗುರುತು"
+
+#~ msgid "CompactPCI hot swap"
+#~ msgstr "CompactPCI ಹಾಟ್ ಸ್ವಾಪ್"
+
+#~ msgid "HyperTransport"
+#~ msgstr "ಹೈಪರ್ಟ್ರಾನ್ಸ್ಪೋರ್ಟ್"
+
+#~ msgid "Debug port"
+#~ msgstr "ದೋಷನಿವಾರಣಾ ಸಂಪರ್ಕಸ್ಥಾನ"
+
+#~ msgid "CompactPCI central resource control"
+#~ msgstr "CompactPCI ಕೇಂದ್ರೀಕೃತ ಸಂಪನ್ಮೂಲ ನಿಯಂತ್ರಣ"
+
+#~ msgid "PCI hot-plug"
+#~ msgstr "PCI ಹಾಟ್‌-ಪ್ಲಗ್"
+
+#~ msgid "AGP x8"
+#~ msgstr "AGP x8"
+
+#~ msgid "Secure device"
+#~ msgstr "ಸುರಕ್ಷಿತ ಸಾಧನ"
+
+#~ msgid "PCI express"
+#~ msgstr "PCI ಎಕ್ಸ್‌ಪ್ರೆಸ್"
+
+#~ msgid "MSI-X"
+#~ msgstr "MSI-X"
+
+#~ msgid "Fast"
+#~ msgstr "ವೇಗ"
+
+#~ msgid "Medium"
+#~ msgstr "ಮಧ್ಯಮ"
+
+#~ msgid "Slow"
+#~ msgstr "ನಿಧಾನ"
+
+#~ msgid "32 bit"
+#~ msgstr "೩೨ ಬಿಟ್"
+
+#~ msgid "Below 1M"
+#~ msgstr "೧M ಗಿಂತ ಕೆಳಗಿನ"
+
+#~ msgid "64 bit"
+#~ msgstr "೬೪ ಬಿಟ್"
+
+#~ msgid "Standard"
+#~ msgstr "ಶಿಷ್ಟ"
+
+#~ msgid "CardBus"
+#~ msgstr "CardBus"
+
+#~ msgid "1X"
+#~ msgstr "೧X"
+
+#~ msgid "2X"
+#~ msgstr "೨X"
+
+#~ msgid "1X & 2X"
+#~ msgstr "೧X ಹಾಗು ೨X"
+
+#~ msgid "4X"
+#~ msgstr "೪X"
+
+#~ msgid "1X & 4X"
+#~ msgstr "೧X ಹಾಗು ೪X"
+
+#~ msgid "2X & 4X"
+#~ msgstr "೨X ಹಾಗು ೪X"
+
+#~ msgid "1X & 2X & 4X"
+#~ msgstr "೧X ಹಾಗು ೨X ಹಾಘು ೪X"
+
+#~ msgid "8X"
+#~ msgstr "೮X"
+
+#~ msgid "4X & 8X"
+#~ msgstr "೪X ಹಾಗು ೮X"
+
+#~ msgid "4 ms"
+#~ msgstr "೪ ms"
+
+#~ msgid "16 ms"
+#~ msgstr "೧೬ ms"
+
+#~ msgid "64 ms"
+#~ msgstr "೬೪ ms"
+
+#~ msgid "256 ms"
+#~ msgstr "೨೫೬ ms"
+
+#~ msgid "Not needed"
+#~ msgstr "ಅಗತ್ಯವಿಲ್ಲ"
+
+#~ msgid "0 (self powered)"
+#~ msgstr "೦ (ಸ್ವತಃ ಶಕ್ತಿಹೊಂದಿದೆ)"
+
+#~ msgid "55 mA"
+#~ msgstr "೫೫ mA"
+
+#~ msgid "100 mA"
+#~ msgstr "೧೦೦ mA"
+
+#~ msgid "160 mA"
+#~ msgstr "೧೬೦ mA"
+
+#~ msgid "220 mA"
+#~ msgstr "೨೨೦ mA"
+
+#~ msgid "270 mA"
+#~ msgstr "೨೭೦ mA"
+
+#~ msgid "320 mA"
+#~ msgstr "೩೨೦ mA"
+
+#~ msgid "375 mA"
+#~ msgstr "೩೭೫ mA"
+
+#~ msgid "1 vector"
+#~ msgstr "೧ ವೆಕ್ಟರುಗಳು"
+
+#~ msgid "2 vectors"
+#~ msgstr "೨ ವೆಕ್ಟರುಗಳು"
+
+#~ msgid "4 vectors"
+#~ msgstr "೪ ವೆಕ್ಟರುಗಳು"
+
+#~ msgid "8 vectors"
+#~ msgstr "೮ ವೆಕ್ಟರುಗಳು"
+
+#~ msgid "16 vectors"
+#~ msgstr "೧೬ ವೆಕ್ಟರುಗಳು"
+
+#~ msgid "32 vectors"
+#~ msgstr "೩೨ ವೆಕ್ಟರುಗಳು"
+
+#~ msgid "Serial ATA direct port access"
+#~ msgstr "ಸೀರಿಯಲ್ ATA ನೇರ ಸಂಪರ್ಕಸ್ಥಾನ ನಿಲುಕಣೆ"
+
+#~ msgid "PICMG 2.14 multi computing"
+#~ msgstr "PICMG 2.14 ಬಹು ಗಣಕೀಕರಣ"
+
+#~ msgid "GPIB (IEEE 488.1/2) controller"
+#~ msgstr "GPIB (IEEE ೪೮೮.೧/೨) ನಿಯಂತ್ರಕ"
+
+#~ msgid "Smart card"
+#~ msgstr "ಚತುರ ಕಾರ್ಡ್"
+
+#~ msgid "System peripheral"
+#~ msgstr "ವ್ಯವಸ್ಥೆಯ ಬಿಡಿಭಾಗಗಳು(ಪೆರಿಫೆರಲ್)"
+
+#~ msgid "Management card"
+#~ msgstr "ನಿರ್ವಹಣಾ ಕಾರ್ಡ್"
+
+#~ msgid "single DMA"
+#~ msgstr "ಏಕ DMA"
+
+#~ msgid "chained DMA"
+#~ msgstr "ಸರಣಿ DMA"
+
+#~ msgid "VGA compatible"
+#~ msgstr "VGA ಸಹವರ್ತನೀಯ"
+
+#~ msgid "8514 compatible"
+#~ msgstr "೮೫೧೪ ಸಹವರ್ತನೀಯ"
+
+#~ msgid "KDE PCI Information Control Module"
+#~ msgstr "KDE PCI ಮಾಹಿತಿ ನಿಯಂತ್ರಣ ಘಟಕ"
