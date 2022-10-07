@@ -167,31 +167,3 @@ msgstr "切断中"
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr ""
-
-#~ msgctxt "@item:intext Mode of network card"
-#~ msgid "Broadcast"
-#~ msgstr "ブロードキャスト"
-
-#~ msgctxt "@item:intext Mode of network card"
-#~ msgid "Point to Point"
-#~ msgstr "ポイント to ポイント"
-
-#~ msgctxt "@item:intext Mode of network card"
-#~ msgid "Multicast"
-#~ msgstr "マルチキャスト"
-
-#~ msgctxt "@item:intext Mode of network card"
-#~ msgid "Loopback"
-#~ msgstr "ループバック"
-
-#~ msgctxt "@item:intext Mode of network card"
-#~ msgid "Unknown"
-#~ msgstr "不明"
-
-#~ msgctxt "Unknown network mask"
-#~ msgid "Unknown"
-#~ msgstr "不明"
-
-#~ msgctxt "Unknown HWaddr"
-#~ msgid "Unknown"
-#~ msgstr "不明"
