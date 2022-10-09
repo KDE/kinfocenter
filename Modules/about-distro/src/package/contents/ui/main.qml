@@ -7,7 +7,7 @@ import QtQuick 2.15
 import QtQuick.Controls 2.5 as QQC2
 import QtQuick.Layouts 1.1
 
-import org.kde.kirigami 2.19 as Kirigami
+import org.kde.kirigami 2.20 as Kirigami
 import org.kde.kcm 1.6 as KCM
 
 import org.kde.kinfocenter.about_distro.private 1.0
@@ -104,10 +104,19 @@ KCM.SimpleKCM {
                         }
                     }
 
-                    QQC2.Label {
+                    Kirigami.SelectableLabel {
+                        id: valueLabel
                         visible: !hidden
                         text: modelData.localizedValue()
+                        Keys.onShortcutOverride: event.accepted = (valueLabel.activeFocus && valueLabel.selectedText && event.matches(StandardKey.Copy))
+                        Keys.onPressed: {
+                            if (event.matches(StandardKey.Copy)) {
+                                valueLabel.copy();
+                                event.accepted = true;
+                            }
+                        }
                     }
+
                     QQC2.Button {
                         visible: hidden
                         text: i18nc("@action:button show a hidden entry in an overlay", "Show")
