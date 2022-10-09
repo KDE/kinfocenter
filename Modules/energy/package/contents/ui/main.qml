@@ -365,6 +365,7 @@ KCM.SimpleKCM {
 
                         Kirigami.SelectableLabel {
                             id: valueLabel
+                            Layout.fillWidth: true
                             Keys.onPressed: {
                                 if (event.matches(StandardKey.Copy)) {
                                     valueLabel.copy();
