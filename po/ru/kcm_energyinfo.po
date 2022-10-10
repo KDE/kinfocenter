@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-06-28 00:45+0000\n"
+"POT-Creation-Date: 2022-10-10 00:47+0000\n"
 "PO-Revision-Date: 2021-08-01 12:56+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -347,23 +347,23 @@ msgstr "%"
 msgid "This type of history is currently not available for this device."
 msgstr "Эта хронологическая информация сейчас недоступна для этого устройства."
 
-#: package/contents/ui/main.qml:368
+#: package/contents/ui/main.qml:375
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
-#: package/contents/ui/main.qml:379
+#: package/contents/ui/main.qml:386
 #, kde-format
 msgid "Yes"
 msgstr "Да"
 
-#: package/contents/ui/main.qml:381
+#: package/contents/ui/main.qml:388
 #, kde-format
 msgid "No"
 msgstr "Нет"
 
 # BUGME: spacing depends on the actual unit. "%" often should not have a space in front of it. --aspotashev
-#: package/contents/ui/main.qml:399
+#: package/contents/ui/main.qml:406
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"

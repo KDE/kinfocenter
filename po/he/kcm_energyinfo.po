@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-06-28 00:45+0000\n"
+"POT-Creation-Date: 2022-10-10 00:47+0000\n"
 "PO-Revision-Date: 2017-05-16 11:23-0400\n"
 "Last-Translator: Elkana Bardugo <ttv200@gmail.com>\n"
 "Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
@@ -353,22 +353,22 @@ msgstr "%"
 msgid "This type of history is currently not available for this device."
 msgstr "סוג נתונים זה אינו זמין להתקן זה כרגע"
 
-#: package/contents/ui/main.qml:368
+#: package/contents/ui/main.qml:375
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
-#: package/contents/ui/main.qml:379
+#: package/contents/ui/main.qml:386
 #, kde-format
 msgid "Yes"
 msgstr "כן"
 
-#: package/contents/ui/main.qml:381
+#: package/contents/ui/main.qml:388
 #, kde-format
 msgid "No"
 msgstr "לא"
 
-#: package/contents/ui/main.qml:399
+#: package/contents/ui/main.qml:406
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"

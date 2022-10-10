@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-06-28 00:45+0000\n"
+"POT-Creation-Date: 2022-10-10 00:47+0000\n"
 "PO-Revision-Date: 2019-10-19 22:07+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
@@ -346,22 +346,22 @@ msgid "This type of history is currently not available for this device."
 msgstr ""
 "Este tipo de historial non está dispoñíbel actualmente para este dispositivo."
 
-#: package/contents/ui/main.qml:368
+#: package/contents/ui/main.qml:375
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
-#: package/contents/ui/main.qml:379
+#: package/contents/ui/main.qml:386
 #, kde-format
 msgid "Yes"
 msgstr "Si"
 
-#: package/contents/ui/main.qml:381
+#: package/contents/ui/main.qml:388
 #, kde-format
 msgid "No"
 msgstr "Non"
 
-#: package/contents/ui/main.qml:399
+#: package/contents/ui/main.qml:406
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"

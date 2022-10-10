@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-09 00:47+0000\n"
+"POT-Creation-Date: 2022-10-10 00:47+0000\n"
 "PO-Revision-Date: 2022-09-14 07:18+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -165,37 +165,37 @@ msgctxt "@title"
 msgid "Serial Number"
 msgstr "Serijska številka"
 
-#: package/contents/ui/main.qml:97 package/contents/ui/main.qml:165
+#: package/contents/ui/main.qml:97 package/contents/ui/main.qml:174
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr "Kopiraj na odložišče"
 
-#: package/contents/ui/main.qml:113
+#: package/contents/ui/main.qml:122
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
 msgstr "Prikaži"
 
-#: package/contents/ui/main.qml:123
+#: package/contents/ui/main.qml:132
 #, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "Programska oprema"
 
-#: package/contents/ui/main.qml:133
+#: package/contents/ui/main.qml:142
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "Strojna oprema"
 
-#: package/contents/ui/main.qml:153
+#: package/contents/ui/main.qml:162
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Show More Information"
 msgstr "Prikaži več informacij"
 
-#: package/contents/ui/main.qml:172
+#: package/contents/ui/main.qml:181
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard in English"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-09 00:47+0000\n"
+"POT-Creation-Date: 2022-10-10 00:47+0000\n"
 "PO-Revision-Date: 2014-10-20 20:42+0000\n"
 "Last-Translator: Samir Ribić <Unknown>\n"
 "Language-Team: bosanski <bs@li.org>\n"
@@ -174,39 +174,39 @@ msgctxt "@title"
 msgid "Serial Number"
 msgstr ""
 
-#: package/contents/ui/main.qml:97 package/contents/ui/main.qml:165
+#: package/contents/ui/main.qml:97 package/contents/ui/main.qml:174
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr ""
 
-#: package/contents/ui/main.qml:113
+#: package/contents/ui/main.qml:122
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
 msgstr ""
 
-#: package/contents/ui/main.qml:123
+#: package/contents/ui/main.qml:132
 #, fuzzy, kde-format
 #| msgid "Software"
 msgctxt "@title:group"
 msgid "Software"
 msgstr "Software"
 
-#: package/contents/ui/main.qml:133
+#: package/contents/ui/main.qml:142
 #, fuzzy, kde-format
 #| msgid "Hardware"
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "Hardware"
 
-#: package/contents/ui/main.qml:153
+#: package/contents/ui/main.qml:162
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Show More Information"
 msgstr ""
 
-#: package/contents/ui/main.qml:172
+#: package/contents/ui/main.qml:181
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard in English"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-09 00:47+0000\n"
+"POT-Creation-Date: 2022-10-10 00:47+0000\n"
 "PO-Revision-Date: 2022-04-18 17:46+0200\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -164,37 +164,37 @@ msgctxt "@title"
 msgid "Serial Number"
 msgstr "Sériové číslo"
 
-#: package/contents/ui/main.qml:97 package/contents/ui/main.qml:165
+#: package/contents/ui/main.qml:97 package/contents/ui/main.qml:174
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr "Kopírovať do schránky"
 
-#: package/contents/ui/main.qml:113
+#: package/contents/ui/main.qml:122
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
 msgstr "Zobraziť"
 
-#: package/contents/ui/main.qml:123
+#: package/contents/ui/main.qml:132
 #, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "Softvér"
 
-#: package/contents/ui/main.qml:133
+#: package/contents/ui/main.qml:142
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "Hardvér"
 
-#: package/contents/ui/main.qml:153
+#: package/contents/ui/main.qml:162
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Show More Information"
 msgstr "Zobraziť viac informácií"
 
-#: package/contents/ui/main.qml:172
+#: package/contents/ui/main.qml:181
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard in English"

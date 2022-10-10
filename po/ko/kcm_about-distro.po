@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-09 00:47+0000\n"
+"POT-Creation-Date: 2022-10-10 00:47+0000\n"
 "PO-Revision-Date: 2022-08-09 13:20+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -159,37 +159,37 @@ msgctxt "@title"
 msgid "Serial Number"
 msgstr "일련 번호"
 
-#: package/contents/ui/main.qml:97 package/contents/ui/main.qml:165
+#: package/contents/ui/main.qml:97 package/contents/ui/main.qml:174
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr "클립보드에 복사"
 
-#: package/contents/ui/main.qml:113
+#: package/contents/ui/main.qml:122
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
 msgstr "표시"
 
-#: package/contents/ui/main.qml:123
+#: package/contents/ui/main.qml:132
 #, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "소프트웨어"
 
-#: package/contents/ui/main.qml:133
+#: package/contents/ui/main.qml:142
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "하드웨어"
 
-#: package/contents/ui/main.qml:153
+#: package/contents/ui/main.qml:162
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Show More Information"
 msgstr "더 많은 정보 표시"
 
-#: package/contents/ui/main.qml:172
+#: package/contents/ui/main.qml:181
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard in English"
