@@ -212,8 +212,61 @@ KCM.SimpleKCM {
             spacing: units.smallSpacing
             visible: !!currentBattery
 
+
+            HistoryModel {
+                id: history
+                duration: timespanComboDurations[timespanCombo.currentIndex]
+                device: currentUdi
+                type: root.historyType
+            }
+
+            Graph {
+                id: graph
+                Layout.fillWidth: true
+                Layout.minimumHeight: column.width / 3
+                Layout.maximumHeight: column.width / 3
+                Layout.topMargin: -units.largeSpacing
+
+                data: history.points
+
+                readonly property real xTicksAtDontCare: 0
+                readonly property real xTicksAtTwelveOClock: 1
+                readonly property real xTicksAtFullHour: 2
+                readonly property real xTicksAtHalfHour: 3
+                readonly property real xTicksAtFullSecondHour: 4
+                readonly property real xTicksAtTenMinutes: 5
+                readonly property var xTicksAtList: [xTicksAtTenMinutes, xTicksAtHalfHour, xTicksAtHalfHour,
+                                                     xTicksAtFullHour, xTicksAtFullSecondHour, xTicksAtTwelveOClock]
+
+                // Set grid lines distances which directly correspondent to the xTicksAt variables
+                readonly property var xDivisionWidths: [1000 * 60 * 10, 1000 * 60 * 60 * 12, 1000 * 60 * 60, 1000 * 60 * 30, 1000 * 60 * 60 * 2, 1000 * 60 * 10]
+                xTicksAt: xTicksAtList[timespanCombo.currentIndex]
+                xDivisionWidth: xDivisionWidths[xTicksAt]
+
+                xMin: history.firstDataPointTime
+                xMax: history.lastDataPointTime
+                xDuration: history.duration
+
+                yUnits: root.historyType == HistoryModel.RateType ? i18nc("Shorthand for Watts","W") : i18nc("literal percent sign","%")
+                yMax: {
+                    if (root.historyType == HistoryModel.RateType) {
+                        // ceil to nearest 10
+                        var max = Math.floor(history.largestValue)
+                        max = max - max % 10 + 10
+
+                        return max;
+                    } else {
+                        return 100;
+                    }
+                }
+                yStep: root.historyType == HistoryModel.RateType ? 10 : 20
+                visible: history.count > 1
+            }
+
             GridLayout {
                 Layout.fillWidth: true
+                Layout.leftMargin: graph.xPadding
+                Layout.rightMargin: graph.xPadding/2
                 columns: !compact ? 5 : 3
 
                 QQC2.Button {
@@ -258,56 +311,6 @@ KCM.SimpleKCM {
                     Accessible.name: QQC2.ToolTip.text
                     onClicked: history.refresh()
                 }
-            }
-
-            HistoryModel {
-                id: history
-                duration: timespanComboDurations[timespanCombo.currentIndex]
-                device: currentUdi
-                type: root.historyType
-            }
-
-            Graph {
-                id: graph
-                Layout.fillWidth: true
-                Layout.minimumHeight: column.width / 3
-                Layout.maximumHeight: column.width / 3
-                Layout.topMargin: units.largeSpacing
-
-                data: history.points
-
-                readonly property real xTicksAtDontCare: 0 
-                readonly property real xTicksAtTwelveOClock: 1
-                readonly property real xTicksAtFullHour: 2
-                readonly property real xTicksAtHalfHour: 3
-                readonly property real xTicksAtFullSecondHour: 4
-                readonly property real xTicksAtTenMinutes: 5            
-                readonly property var xTicksAtList: [xTicksAtTenMinutes, xTicksAtHalfHour, xTicksAtHalfHour, 
-                                                     xTicksAtFullHour, xTicksAtFullSecondHour, xTicksAtTwelveOClock]
-
-                // Set grid lines distances which directly correspondent to the xTicksAt variables
-                readonly property var xDivisionWidths: [1000 * 60 * 10, 1000 * 60 * 60 * 12, 1000 * 60 * 60, 1000 * 60 * 30, 1000 * 60 * 60 * 2, 1000 * 60 * 10]
-                xTicksAt: xTicksAtList[timespanCombo.currentIndex]
-                xDivisionWidth: xDivisionWidths[xTicksAt]
-
-                xMin: history.firstDataPointTime
-                xMax: history.lastDataPointTime
-                xDuration: history.duration
-    
-                yUnits: root.historyType == HistoryModel.RateType ? i18nc("Shorthand for Watts","W") : i18nc("literal percent sign","%")
-                yMax: {
-                    if (root.historyType == HistoryModel.RateType) {
-                        // ceil to nearest 10
-                        var max = Math.floor(history.largestValue)
-                        max = max - max % 10 + 10
-                        
-                        return max;
-                    } else {
-                        return 100;
-                    }
-                }
-                yStep: root.historyType == HistoryModel.RateType ? 10 : 20
-                visible: history.count > 1
             }
 
             Kirigami.InlineMessage {
