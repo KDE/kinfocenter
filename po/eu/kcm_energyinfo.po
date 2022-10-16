@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-10 00:47+0000\n"
+"POT-Creation-Date: 2022-10-16 00:48+0000\n"
 "PO-Revision-Date: 2021-07-17 20:12+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -307,64 +307,64 @@ msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr "%%1"
 
-#: package/contents/ui/main.qml:223
-#, kde-format
-msgid "Charge Percentage"
-msgstr "Kargaren ehunekoa"
-
-#: package/contents/ui/main.qml:233
-#, kde-format
-msgid "Energy Consumption"
-msgstr "Energia kontsumoa"
-
-#: package/contents/ui/main.qml:248
-#, kde-format
-msgid "Timespan"
-msgstr "Denbora tartea"
-
-#: package/contents/ui/main.qml:249
-#, kde-format
-msgid "Timespan of data to display"
-msgstr "Bistaratzeko datuen denbora tartea"
-
-#: package/contents/ui/main.qml:255
-#, kde-format
-msgid "Refresh"
-msgstr "Freskatu"
-
-#: package/contents/ui/main.qml:297
+#: package/contents/ui/main.qml:250
 #, kde-format
 msgctxt "Shorthand for Watts"
 msgid "W"
 msgstr "W"
 
-#: package/contents/ui/main.qml:297
+#: package/contents/ui/main.qml:250
 #, kde-format
 msgctxt "literal percent sign"
 msgid "%"
 msgstr "%"
 
-#: package/contents/ui/main.qml:317
+#: package/contents/ui/main.qml:276
+#, kde-format
+msgid "Charge Percentage"
+msgstr "Kargaren ehunekoa"
+
+#: package/contents/ui/main.qml:286
+#, kde-format
+msgid "Energy Consumption"
+msgstr "Energia kontsumoa"
+
+#: package/contents/ui/main.qml:301
+#, kde-format
+msgid "Timespan"
+msgstr "Denbora tartea"
+
+#: package/contents/ui/main.qml:302
+#, kde-format
+msgid "Timespan of data to display"
+msgstr "Bistaratzeko datuen denbora tartea"
+
+#: package/contents/ui/main.qml:308
+#, kde-format
+msgid "Refresh"
+msgstr "Freskatu"
+
+#: package/contents/ui/main.qml:320
 #, kde-format
 msgid "This type of history is currently not available for this device."
 msgstr "Mota honetako historia ez dago eskuragarri oraingoz gailu honentzako."
 
-#: package/contents/ui/main.qml:375
+#: package/contents/ui/main.qml:378
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
-#: package/contents/ui/main.qml:386
+#: package/contents/ui/main.qml:389
 #, kde-format
 msgid "Yes"
 msgstr "Bai"
 
-#: package/contents/ui/main.qml:388
+#: package/contents/ui/main.qml:391
 #, kde-format
 msgid "No"
 msgstr "Ez"
 
-#: package/contents/ui/main.qml:406
+#: package/contents/ui/main.qml:409
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"

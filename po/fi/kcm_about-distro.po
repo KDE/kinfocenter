@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-10 00:47+0000\n"
-"PO-Revision-Date: 2022-04-15 23:15+0300\n"
+"PO-Revision-Date: 2022-08-22 21:56+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -118,19 +118,16 @@ msgid "Serial Number:"
 msgstr "Sarjanumero:"
 
 #: main.cpp:189 main.cpp:206
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
-msgstr "Tuntematon"
+msgstr "Tuntematon:"
 
 #: main.cpp:202
-#, fuzzy, kde-format
-#| msgid "Qt Version:"
+#, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
-msgstr "Qt-versio:"
+msgstr "U-Boot-versio:"
 
 #: main.cpp:240
 #, kde-format

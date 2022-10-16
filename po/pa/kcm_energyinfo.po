@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-10 00:47+0000\n"
+"POT-Creation-Date: 2022-10-16 00:48+0000\n"
 "PO-Revision-Date: 2019-12-28 15:17-0800\n"
 "Last-Translator: A S Alam <alam.yellow@gmail.com>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
@@ -301,64 +301,64 @@ msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr "%1%"
 
-#: package/contents/ui/main.qml:223
-#, kde-format
-msgid "Charge Percentage"
-msgstr "ਚਾਰਜ ਫ਼ੀਸਦੀ"
-
-#: package/contents/ui/main.qml:233
-#, kde-format
-msgid "Energy Consumption"
-msgstr "ਊਰਜਾ ਖ਼ਪਤ"
-
-#: package/contents/ui/main.qml:248
-#, kde-format
-msgid "Timespan"
-msgstr "ਸਮਾਂ-ਵਿਸਤਾਰ"
-
-#: package/contents/ui/main.qml:249
-#, kde-format
-msgid "Timespan of data to display"
-msgstr "ਡਾਟਾ ਵਿਖਾਉਣ ਲਈ ਸਮਾਂ-ਵਿਸਤਾਰ"
-
-#: package/contents/ui/main.qml:255
-#, kde-format
-msgid "Refresh"
-msgstr "ਤਾਜ਼ਾ ਕਰੋ"
-
-#: package/contents/ui/main.qml:297
+#: package/contents/ui/main.qml:250
 #, kde-format
 msgctxt "Shorthand for Watts"
 msgid "W"
 msgstr "ਵਾਟ"
 
-#: package/contents/ui/main.qml:297
+#: package/contents/ui/main.qml:250
 #, kde-format
 msgctxt "literal percent sign"
 msgid "%"
 msgstr "%"
 
-#: package/contents/ui/main.qml:317
+#: package/contents/ui/main.qml:276
+#, kde-format
+msgid "Charge Percentage"
+msgstr "ਚਾਰਜ ਫ਼ੀਸਦੀ"
+
+#: package/contents/ui/main.qml:286
+#, kde-format
+msgid "Energy Consumption"
+msgstr "ਊਰਜਾ ਖ਼ਪਤ"
+
+#: package/contents/ui/main.qml:301
+#, kde-format
+msgid "Timespan"
+msgstr "ਸਮਾਂ-ਵਿਸਤਾਰ"
+
+#: package/contents/ui/main.qml:302
+#, kde-format
+msgid "Timespan of data to display"
+msgstr "ਡਾਟਾ ਵਿਖਾਉਣ ਲਈ ਸਮਾਂ-ਵਿਸਤਾਰ"
+
+#: package/contents/ui/main.qml:308
+#, kde-format
+msgid "Refresh"
+msgstr "ਤਾਜ਼ਾ ਕਰੋ"
+
+#: package/contents/ui/main.qml:320
 #, kde-format
 msgid "This type of history is currently not available for this device."
 msgstr "ਇਸ ਡਿਵਾਈਸ ਵਾਸਤੇ ਇਸ ਕਿਸਮ ਦਾ ਅਤੀਤ ਇਸ ਵੇਲੇ ਮੌਜੂਦ ਨਹੀਂ ਹੈ।"
 
-#: package/contents/ui/main.qml:375
+#: package/contents/ui/main.qml:378
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
-#: package/contents/ui/main.qml:386
+#: package/contents/ui/main.qml:389
 #, kde-format
 msgid "Yes"
 msgstr "ਹਾਂ"
 
-#: package/contents/ui/main.qml:388
+#: package/contents/ui/main.qml:391
 #, kde-format
 msgid "No"
 msgstr "ਨਹੀਂ"
 
-#: package/contents/ui/main.qml:406
+#: package/contents/ui/main.qml:409
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"

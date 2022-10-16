@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmdevinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-03 00:18+0000\n"
+"POT-Creation-Date: 2022-10-16 00:48+0000\n"
 "PO-Revision-Date: 2020-09-29 08:47+0200\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -145,13 +145,13 @@ msgctxt "name of something is not known"
 msgid "Unknown"
 msgstr "Unbekannt"
 
-#: soldevice.cpp:66
+#: soldevice.cpp:65
 #, kde-format
 msgctxt "unknown device"
 msgid "Unknown"
 msgstr "Unbekannt"
 
-#: soldevice.cpp:92
+#: soldevice.cpp:91
 #, kde-format
 msgctxt "Default device tooltip"
 msgid "A Device"
