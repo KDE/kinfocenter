@@ -392,7 +392,7 @@ msgstr "Adaptador de cable USB sense fil"
 #: kcmusb.cpp:28
 #, kde-format
 msgid "This module allows you to see the devices attached to your USB bus(es)."
-msgstr "Este mòdul permet veure els dispositius connectats al(s) bus(os) USB."
+msgstr "Este mòdul permet veure els dispositius connectats als busos USB."
 
 #: kcmusb.cpp:42
 #, kde-format
