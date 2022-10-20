@@ -42,7 +42,6 @@
         "Name[af]": "PCI",
         "Name[ar]": "PCI",
         "Name[as]": "PCI",
-        "Name[ast]": "PCI",
         "Name[az]": "PCI",
         "Name[be@latin]": "PCI",
         "Name[be]": "PCI",

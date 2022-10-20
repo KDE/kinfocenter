@@ -43,7 +43,6 @@ Policy=yes
 PolicyInactive=yes
 Name=System Information
 Name[ar]=معلومات النظام
-Name[ast]=Información del sistema
 Name[az]=Sistem Məlumatları
 Name[bg]=Системна информация
 Name[ca]=Informació del sistema
