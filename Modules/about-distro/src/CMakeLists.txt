@@ -19,6 +19,8 @@ set(kcm_SRCS
     main.cpp
     MemoryEntry.cpp
     MemoryEntry.h
+    OSVersionEntry.cpp
+    OSVersionEntry.h
     PlasmaEntry.cpp
     PlasmaEntry.h
     ServiceRunner.cpp

@@ -25,6 +25,7 @@
 #include "GraphicsPlatformEntry.h"
 #include "KernelEntry.h"
 #include "MemoryEntry.h"
+#include "OSVersionEntry.h"
 #include "PlasmaEntry.h"
 #include "ServiceRunner.h"
 #include "Version.h"
@@ -147,19 +148,17 @@ public:
         }
         m_distroLogo = logoPath;
 
-        // We allow overriding of the OS name for branding purposes.
-        // For example OS Ubuntu may be rebranded as Kubuntu. Also Kubuntu Active
+        // Default to not show Build
+        bool showBuild = cg.readEntry("ShowBuild", false);
+
         // as a product brand is different from Kubuntu.
         const QString distroName = cg.readEntry("Name", os.name());
         const QString osrVersion = cg.readEntry("UseOSReleaseVersion", false) ? os.version() : os.versionId();
         const QString versionId = cg.readEntry("Version", osrVersion);
-        // This creates a trailing space if versionId is empty, so trimming String
-        // to remove possibly trailing spaces
-        const QString distroNameVersion = QStringLiteral("%1 %2").arg(distroName, versionId).trimmed();
-        m_distroNameVersion = distroNameVersion;
 
-        // Insert a dummy entry for debug info dumps.
-        m_entries.push_back(new Entry(ki18n("Operating System:"), distroNameVersion));
+        auto versionEntry = new OSVersionEntry(distroName, versionId, showBuild ? os.buildId() : QString());
+        m_distroNameVersion = versionEntry->localizedValue().trimmed();
+        m_entries.push_back(versionEntry);
 
         const QString variant = cg.readEntry("Variant", os.variant());
         m_distroVariant = variant;
