@@ -10,7 +10,7 @@
 class OSVersionEntry : public Entry
 {
 public:
-    OSVersionEntry(const QString &distroName, const QString &versionId, QString buildId);
+    OSVersionEntry(const QString &distroName, const QString &versionId, const QString &buildId);
     QString localizedValue(Language language = Language::System) const override;
 
 private:

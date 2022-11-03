@@ -149,7 +149,7 @@ public:
         m_distroLogo = logoPath;
 
         // Default to not show Build
-        bool showBuild = cg.readEntry("ShowBuild", false);
+        const bool showBuild = cg.readEntry("ShowBuild", false);
 
         // as a product brand is different from Kubuntu.
         const QString distroName = cg.readEntry("Name", os.name());
@@ -157,6 +157,8 @@ public:
         const QString versionId = cg.readEntry("Version", osrVersion);
 
         auto versionEntry = new OSVersionEntry(distroName, versionId, showBuild ? os.buildId() : QString());
+        // This creates a trailing space if versionId is empty, so trimming String
+        // to remove possibly trailing spaces
         m_distroNameVersion = versionEntry->localizedValue().trimmed();
         m_entries.push_back(versionEntry);
 

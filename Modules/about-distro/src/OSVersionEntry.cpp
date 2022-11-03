@@ -5,11 +5,9 @@
 
 #include "OSVersionEntry.h"
 
-OSVersionEntry::OSVersionEntry(const QString &distroName, const QString &versionId, QString buildId)
+OSVersionEntry::OSVersionEntry(const QString &distroName, const QString &versionId, const QString &buildId)
     : Entry(ki18n("Operating System:"), QString())
 {
-    // This creates a trailing space if versionId is empty, so trimming String
-    // to remove possibly trailing spaces
     m_nameVersion = (buildId.isEmpty() ? ki18nc("@label %1 is the distro name, %2 is the version", "%1 %2").subs(distroName).subs(versionId)
                                        : ki18nc("@label %1 is the distro name, %2 is the version, %3 is the 'build' which should be a number, or 'rolling'",
                                                 "%1 %2 Build: %3")
