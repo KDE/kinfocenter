@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-10 00:47+0000\n"
+"POT-Creation-Date: 2022-11-04 00:47+0000\n"
 "PO-Revision-Date: 2014-10-20 20:42+0000\n"
 "Last-Translator: Samir Ribić <Unknown>\n"
 "Language-Team: bosanski <bs@li.org>\n"
@@ -72,61 +72,56 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr ""
 
-#: main.cpp:103
+#: main.cpp:104
 #, kde-format
 msgctxt "@title"
 msgid "About this System"
 msgstr ""
 
-#: main.cpp:106
+#: main.cpp:107
 #, fuzzy, kde-format
 msgctxt "@info:credit"
 msgid "Copyright 2012-2020 Harald Sitter"
 msgstr "Autorska prava 2012-2014 Harald Sitter"
 
-#: main.cpp:107
+#: main.cpp:108
 #, fuzzy, kde-format
 msgctxt "@info:credit"
 msgid "Harald Sitter"
 msgstr "Harald Sitter"
 
-#: main.cpp:107
+#: main.cpp:108
 #, fuzzy, kde-format
 msgctxt "@info:credit"
 msgid "Author"
 msgstr "Autor"
 
-#: main.cpp:162
-#, kde-format
-msgid "Operating System:"
-msgstr ""
-
-#: main.cpp:176
+#: main.cpp:177
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr ""
 
-#: main.cpp:179 main.cpp:196
+#: main.cpp:180 main.cpp:197
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr ""
 
-#: main.cpp:182
+#: main.cpp:183
 #, fuzzy, kde-format
 #| msgid "Qt Version:"
 msgctxt "@label"
 msgid "System Version:"
 msgstr "Qt Verzija:"
 
-#: main.cpp:185 main.cpp:199
+#: main.cpp:186 main.cpp:200
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr ""
 
-#: main.cpp:189 main.cpp:206
+#: main.cpp:190 main.cpp:207
 #, fuzzy, kde-format
 #| msgctxt "Unknown amount of RAM"
 #| msgid "Unknown"
@@ -134,19 +129,19 @@ msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "Nepoznat"
 
-#: main.cpp:202
+#: main.cpp:203
 #, fuzzy, kde-format
 #| msgid "Qt Version:"
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "Qt Verzija:"
 
-#: main.cpp:240
+#: main.cpp:241
 #, fuzzy, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "KDELibs Verzija:"
 
-#: main.cpp:241
+#: main.cpp:242
 #, kde-format
 msgid "Qt Version:"
 msgstr "Qt Verzija:"
@@ -167,6 +162,25 @@ msgstr "%1 RAM-a"
 msgctxt "Unknown amount of RAM"
 msgid "Unknown"
 msgstr "Nepoznat"
+
+#: OSVersionEntry.cpp:9
+#, kde-format
+msgid "Operating System:"
+msgstr ""
+
+#: OSVersionEntry.cpp:11
+#, kde-format
+msgctxt "@label %1 is the distro name, %2 is the version"
+msgid "%1 %2"
+msgstr ""
+
+#: OSVersionEntry.cpp:13
+#, kde-format
+msgctxt ""
+"@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
+"should be a number, or 'rolling'"
+msgid "%1 %2 Build: %3"
+msgstr ""
 
 #: package/contents/ui/main.qml:91
 #, kde-format

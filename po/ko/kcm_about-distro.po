@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-10 00:47+0000\n"
+"POT-Creation-Date: 2022-11-04 00:47+0000\n"
 "PO-Revision-Date: 2022-08-09 13:20+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -61,77 +61,72 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1(%2비트)"
 
-#: main.cpp:103
+#: main.cpp:104
 #, kde-format
 msgctxt "@title"
 msgid "About this System"
 msgstr "이 시스템 정보"
 
-#: main.cpp:106
+#: main.cpp:107
 #, kde-format
 msgctxt "@info:credit"
 msgid "Copyright 2012-2020 Harald Sitter"
 msgstr "Copyright 2012-2020 Harald Sitter"
 
-#: main.cpp:107
+#: main.cpp:108
 #, kde-format
 msgctxt "@info:credit"
 msgid "Harald Sitter"
 msgstr "Harald Sitter"
 
-#: main.cpp:107
+#: main.cpp:108
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
 msgstr "작성자"
 
-#: main.cpp:162
-#, kde-format
-msgid "Operating System:"
-msgstr "운영 체제:"
-
-#: main.cpp:176
+#: main.cpp:177
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr "제조사:"
 
-#: main.cpp:179 main.cpp:196
+#: main.cpp:180 main.cpp:197
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr "제품 이름:"
 
-#: main.cpp:182
+#: main.cpp:183
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
 msgstr "시스템 버전:"
 
-#: main.cpp:185 main.cpp:199
+#: main.cpp:186 main.cpp:200
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr "일련 번호:"
 
-#: main.cpp:189 main.cpp:206
+#: main.cpp:190 main.cpp:207
 #, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "알 수 없음:"
 
-#: main.cpp:202
+#: main.cpp:203
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "U-Boot 버전:"
 
-#: main.cpp:240
+#: main.cpp:241
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "KDE 프레임워크 버전:"
 
-#: main.cpp:241
+#: main.cpp:242
 #, kde-format
 msgid "Qt Version:"
 msgstr "Qt 버전:"
@@ -152,6 +147,28 @@ msgstr "RAM %1"
 msgctxt "Unknown amount of RAM"
 msgid "Unknown"
 msgstr "알 수 없음"
+
+#: OSVersionEntry.cpp:9
+#, kde-format
+msgid "Operating System:"
+msgstr "운영 체제:"
+
+#: OSVersionEntry.cpp:11
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "%1 is a label already including a colon, %2 is the corresponding value"
+#| msgid "%1 %2"
+msgctxt "@label %1 is the distro name, %2 is the version"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: OSVersionEntry.cpp:13
+#, kde-format
+msgctxt ""
+"@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
+"should be a number, or 'rolling'"
+msgid "%1 %2 Build: %3"
+msgstr ""
 
 #: package/contents/ui/main.qml:91
 #, kde-format
@@ -212,11 +229,6 @@ msgstr "KDE Plasma 버전:"
 #~ msgctxt "@title"
 #~ msgid "About Distribution"
 #~ msgstr "배포판 정보"
-
-#~ msgctxt ""
-#~ "%1 is a label already including a colon, %2 is the corresponding value"
-#~ msgid "%1 %2"
-#~ msgstr "%1 %2"
 
 #~ msgid "{variantLabel}"
 #~ msgstr "{variantLabel}"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-10 00:47+0000\n"
+"POT-Creation-Date: 2022-11-04 00:47+0000\n"
 "PO-Revision-Date: 2022-07-30 19:14+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -65,77 +65,72 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1 (%2-bity)"
 
-#: main.cpp:103
+#: main.cpp:104
 #, kde-format
 msgctxt "@title"
 msgid "About this System"
 msgstr "O tym systemie"
 
-#: main.cpp:106
+#: main.cpp:107
 #, kde-format
 msgctxt "@info:credit"
 msgid "Copyright 2012-2020 Harald Sitter"
 msgstr "Copyright 2012-2020 Harald Sitter"
 
-#: main.cpp:107
+#: main.cpp:108
 #, kde-format
 msgctxt "@info:credit"
 msgid "Harald Sitter"
 msgstr "Harald Sitter"
 
-#: main.cpp:107
+#: main.cpp:108
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
 msgstr "Autor"
 
-#: main.cpp:162
-#, kde-format
-msgid "Operating System:"
-msgstr "System operacyjny:"
-
-#: main.cpp:176
+#: main.cpp:177
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr "Wytwórca:"
 
-#: main.cpp:179 main.cpp:196
+#: main.cpp:180 main.cpp:197
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr "Nazwa produktu:"
 
-#: main.cpp:182
+#: main.cpp:183
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
 msgstr "Wersja systemu:"
 
-#: main.cpp:185 main.cpp:199
+#: main.cpp:186 main.cpp:200
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr "Numer seryjny:"
 
-#: main.cpp:189 main.cpp:206
+#: main.cpp:190 main.cpp:207
 #, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "Nieznany:"
 
-#: main.cpp:202
+#: main.cpp:203
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "Wersja U-Boot:"
 
-#: main.cpp:240
+#: main.cpp:241
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "Wersja Szkieletów KDE:"
 
-#: main.cpp:241
+#: main.cpp:242
 #, kde-format
 msgid "Qt Version:"
 msgstr "Wersja Qt:"
@@ -156,6 +151,28 @@ msgstr "%1 RAM-u"
 msgctxt "Unknown amount of RAM"
 msgid "Unknown"
 msgstr "Nieznana"
+
+#: OSVersionEntry.cpp:9
+#, kde-format
+msgid "Operating System:"
+msgstr "System operacyjny:"
+
+#: OSVersionEntry.cpp:11
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "%1 is a label already including a colon, %2 is the corresponding value"
+#| msgid "%1 %2"
+msgctxt "@label %1 is the distro name, %2 is the version"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: OSVersionEntry.cpp:13
+#, kde-format
+msgctxt ""
+"@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
+"should be a number, or 'rolling'"
+msgid "%1 %2 Build: %3"
+msgstr ""
 
 #: package/contents/ui/main.qml:91
 #, kde-format
@@ -217,11 +234,6 @@ msgstr "Wersja Plazmy KDE:"
 #~ msgctxt "@title"
 #~ msgid "About Distribution"
 #~ msgstr "O dystrybucji"
-
-#~ msgctxt ""
-#~ "%1 is a label already including a colon, %2 is the corresponding value"
-#~ msgid "%1 %2"
-#~ msgstr "%1 %2"
 
 #~ msgid "{variantLabel}"
 #~ msgstr "{variantLabel}"

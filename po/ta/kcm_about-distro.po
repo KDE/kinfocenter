@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-10 00:47+0000\n"
+"POT-Creation-Date: 2022-11-04 00:47+0000\n"
 "PO-Revision-Date: 2022-07-19 19:56+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -62,78 +62,73 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1 (%2-பிட்டு)"
 
-#: main.cpp:103
+#: main.cpp:104
 #, kde-format
 msgctxt "@title"
 msgid "About this System"
 msgstr "இக்கணினியை பற்றி"
 
-#: main.cpp:106
+#: main.cpp:107
 #, kde-format
 msgctxt "@info:credit"
 msgid "Copyright 2012-2020 Harald Sitter"
 msgstr "பதிப்புரிமை 2012–2020 ஹாரல்ட் சிட்டர்"
 
-#: main.cpp:107
+#: main.cpp:108
 #, kde-format
 msgctxt "@info:credit"
 msgid "Harald Sitter"
 msgstr "ஹாரல்ட் சிட்டர்"
 
-#: main.cpp:107
+#: main.cpp:108
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
 msgstr "இயற்றியவர்"
 
-#: main.cpp:162
-#, kde-format
-msgid "Operating System:"
-msgstr "இயக்குதளம்:"
-
-#: main.cpp:176
+#: main.cpp:177
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr "உற்பத்தியாளர்:"
 
-#: main.cpp:179 main.cpp:196
+#: main.cpp:180 main.cpp:197
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr "உற்பத்திப்பொருளின் பெயர்:"
 
-#: main.cpp:182
+#: main.cpp:183
 #, fuzzy, kde-format
 #| msgid "Qt Version:"
 msgctxt "@label"
 msgid "System Version:"
 msgstr "Qt பதிப்பு:"
 
-#: main.cpp:185 main.cpp:199
+#: main.cpp:186 main.cpp:200
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr "தொடர் எண்:"
 
-#: main.cpp:189 main.cpp:206
+#: main.cpp:190 main.cpp:207
 #, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "தெரியாதது:"
 
-#: main.cpp:202
+#: main.cpp:203
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "U-boot பதிப்பு:"
 
-#: main.cpp:240
+#: main.cpp:241
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "கே.டீ.யீ. நிரலகங்களின் பதிப்பு:"
 
-#: main.cpp:241
+#: main.cpp:242
 #, kde-format
 msgid "Qt Version:"
 msgstr "Qt பதிப்பு:"
@@ -154,6 +149,25 @@ msgstr "%1 RAM"
 msgctxt "Unknown amount of RAM"
 msgid "Unknown"
 msgstr "தெரியாதது"
+
+#: OSVersionEntry.cpp:9
+#, kde-format
+msgid "Operating System:"
+msgstr "இயக்குதளம்:"
+
+#: OSVersionEntry.cpp:11
+#, kde-format
+msgctxt "@label %1 is the distro name, %2 is the version"
+msgid "%1 %2"
+msgstr ""
+
+#: OSVersionEntry.cpp:13
+#, kde-format
+msgctxt ""
+"@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
+"should be a number, or 'rolling'"
+msgid "%1 %2 Build: %3"
+msgstr ""
 
 #: package/contents/ui/main.qml:91
 #, kde-format
