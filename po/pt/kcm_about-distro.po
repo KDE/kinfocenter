@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-04 00:47+0000\n"
-"PO-Revision-Date: 2022-07-16 10:47+0100\n"
+"PO-Revision-Date: 2022-11-04 10:46+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -154,7 +154,7 @@ msgstr "Sistema Operativo:"
 #, kde-format
 msgctxt "@label %1 is the distro name, %2 is the version"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: OSVersionEntry.cpp:13
 #, kde-format
@@ -162,7 +162,7 @@ msgctxt ""
 "@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
 "should be a number, or 'rolling'"
 msgid "%1 %2 Build: %3"
-msgstr ""
+msgstr "%1 %2 Compilação: %3"
 
 #: package/contents/ui/main.qml:91
 #, kde-format
