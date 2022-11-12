@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-04 00:47+0000\n"
-"PO-Revision-Date: 2022-09-24 14:48+0300\n"
+"PO-Revision-Date: 2022-11-11 15:31+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -163,10 +163,7 @@ msgid "Operating System:"
 msgstr "Операционная система:"
 
 #: OSVersionEntry.cpp:11
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "%1 is a label already including a colon, %2 is the corresponding value"
-#| msgid "%1 %2"
+#, kde-format
 msgctxt "@label %1 is the distro name, %2 is the version"
 msgid "%1 %2"
 msgstr "%1 %2"
@@ -177,7 +174,7 @@ msgctxt ""
 "@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
 "should be a number, or 'rolling'"
 msgid "%1 %2 Build: %3"
-msgstr ""
+msgstr "%1 %2 Сборка: %3"
 
 #: package/contents/ui/main.qml:91
 #, kde-format
