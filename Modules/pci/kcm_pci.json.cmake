@@ -12,6 +12,7 @@
         "Description[de]": "Informationen zu PCI",
         "Description[en_GB]": "PCI information",
         "Description[es]": "Información sobre PCI",
+        "Description[et]": "PCI info",
         "Description[eu]": "PCIren informazioa",
         "Description[fi]": "PCI-tiedot",
         "Description[fr]": "Informations concernant l'interface PCI",
