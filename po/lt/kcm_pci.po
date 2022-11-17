@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: kcm_pci\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-05-24 00:45+0000\n"
-"PO-Revision-Date: 2019-11-04 21:51+0200\n"
-"Last-Translator: Moo\n"
+"PO-Revision-Date: 2022-11-16 22:39+0200\n"
+"Last-Translator: Moo <<>>\n"
 "Language-Team: lt <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 3.2.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -37,23 +37,20 @@ msgstr ""
 "liudas@akmc.lt, <>"
 
 #: main.cpp:26
-#, fuzzy, kde-format
-#| msgid "PCI-X"
+#, kde-format
 msgctxt "@label kcm name"
 msgid "PCI"
-msgstr "PCI-X"
+msgstr "PCI"
 
 #: main.cpp:27
 #, kde-format
 msgid "Harald Sitter"
-msgstr ""
+msgstr "Harald Sitter"
 
 #: package/contents/ui/main.qml:14
-#, fuzzy
-#| msgid "Information"
 msgctxt "@info:whatsthis"
 msgid "PCI Information"
-msgstr "Informacija"
+msgstr "PCI informacija"
 
 #~ msgid "kcm_pci"
 #~ msgstr "kcm_pci"
