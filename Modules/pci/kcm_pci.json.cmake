@@ -22,6 +22,7 @@
         "Description[ja]": "PCI の情報",
         "Description[ka]": "PCI მოწყობილობები",
         "Description[ko]": "PCI 정보",
+        "Description[lt]": "Informacija apie PCI",
         "Description[nl]": "PCI-informatie",
         "Description[nn]": "PCI-informasjon",
         "Description[pl]": "Szczegóły o PCI",
