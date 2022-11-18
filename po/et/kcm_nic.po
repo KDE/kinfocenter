@@ -2,19 +2,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Marek Laane <bald@smail.ee>, 2010.
+# Mihkel Tõnnov <mihhkel@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-14 00:46+0000\n"
-"PO-Revision-Date: 2010-11-30 21:48+0200\n"
-"Last-Translator: Marek Laane <bald@smail.ee>\n"
-"Language-Team: Estonian <kde-et@linux.ee>\n"
+"PO-Revision-Date: 2022-11-17 23:45+0100\n"
+"Last-Translator: Mihkel Tõnnov <mihhkel@gmail.com>\n"
+"Language-Team: Estonian <>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.1\n"
+"X-Generator: Lokalize 22.08.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -28,30 +29,25 @@ msgid "Your emails"
 msgstr "bald@smail.ee"
 
 #: networkmodel.cpp:159
-#, fuzzy, kde-format
-#| msgid "Point to Point"
+#, kde-format
 msgctxt "@item:intable Network type"
 msgid "Point to Point"
-msgstr "Point to Point"
+msgstr "Kakspunkt"
 
 #: networkmodel.cpp:166
-#, fuzzy, kde-format
-#| msgctxt "@item:intext Mode of network card"
-#| msgid "Broadcast"
+#, kde-format
 msgctxt "@item:intable Network type"
 msgid "Broadcast"
 msgstr "Üldlevi"
 
 #: networkmodel.cpp:173
-#, fuzzy, kde-format
-#| msgid "Multicast"
+#, kde-format
 msgctxt "@item:intable Network type"
 msgid "Multicast"
 msgstr "Multiedastus"
 
 #: networkmodel.cpp:180
-#, fuzzy, kde-format
-#| msgid "Loopback"
+#, kde-format
 msgctxt "@item:intable Network type"
 msgid "Loopback"
 msgstr "Loopback"
@@ -59,25 +55,22 @@ msgstr "Loopback"
 #: nic.cpp:21
 #, kde-format
 msgid "kcm_nic"
-msgstr ""
+msgstr "kcm_nic"
 
 #: nic.cpp:22
-#, fuzzy, kde-format
-#| msgid "Network Mask"
+#, kde-format
 msgctxt "@title:window"
 msgid "Network Interfaces"
-msgstr "Võrgumask"
+msgstr "Võrguliidesed"
 
 #: nic.cpp:26
-#, fuzzy, kde-format
-#| msgid "(c) 2001 - 2002 Alexander Neundorf"
+#, kde-format
 msgctxt "@info"
 msgid "(c) 2001 - 2002 Alexander Neundorf"
 msgstr "(c) 2001 - 2002: Alexander Neundorf"
 
 #: nic.cpp:28
-#, fuzzy, kde-format
-#| msgid "Alexander Neundorf"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Alexander Neundorf"
 msgstr "Alexander Neundorf"
@@ -86,66 +79,60 @@ msgstr "Alexander Neundorf"
 #, kde-format
 msgctxt "@info:credit"
 msgid "creator"
-msgstr ""
+msgstr "looja"
 
 #: nic.cpp:29
 #, kde-format
 msgctxt "@info:credit"
 msgid "Carl Schwan"
-msgstr ""
+msgstr "Carl Schwan"
 
 #: nic.cpp:29
 #, kde-format
 msgctxt "@info:credit"
 msgid "developer"
-msgstr ""
+msgstr "arendaja"
 
 #: package/contents/ui/main.qml:15
-#, fuzzy, kde-format
-#| msgid "Network Mask"
+#, kde-format
 msgid "Network Interfaces"
-msgstr "Võrgumask"
+msgstr "Võrguliidesed"
 
 #: package/contents/ui/main.qml:30
-#, fuzzy, kde-format
-#| msgid "Name"
+#, kde-format
 msgctxt "@label"
 msgid "Name:"
-msgstr "Nimi"
+msgstr "Nimi:"
 
 #: package/contents/ui/main.qml:34
-#, fuzzy, kde-format
-#| msgid "IP Address"
+#, kde-format
 msgctxt "@label"
 msgid "Address:"
-msgstr "IP-aadress"
+msgstr "Aadress:"
 
 #: package/contents/ui/main.qml:38
-#, fuzzy, kde-format
-#| msgid "Network Mask"
+#, kde-format
 msgctxt "@label"
 msgid "Network Mask:"
-msgstr "Võrgumask"
+msgstr "Võrgumask:"
 
 #: package/contents/ui/main.qml:42
-#, fuzzy, kde-format
-#| msgid "Type"
+#, kde-format
 msgctxt "@label"
 msgid "Type:"
-msgstr "Tüüp"
+msgstr "Tüüp:"
 
 #: package/contents/ui/main.qml:46
 #, kde-format
 msgctxt "@label"
 msgid "Hardware Address:"
-msgstr ""
+msgstr "Riistvara-aadress:"
 
 #: package/contents/ui/main.qml:51
-#, fuzzy, kde-format
-#| msgid "State"
+#, kde-format
 msgctxt "@label"
 msgid "State:"
-msgstr "Olek"
+msgstr "Olek:"
 
 #: package/contents/ui/main.qml:59
 #, kde-format
@@ -163,7 +150,7 @@ msgstr "Ei tööta"
 #, kde-format
 msgctxt "@action:button"
 msgid "Refresh"
-msgstr ""
+msgstr "Värskenda"
 
 #~ msgctxt "@item:intext Mode of network card"
 #~ msgid "Broadcast"
