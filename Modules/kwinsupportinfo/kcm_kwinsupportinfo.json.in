@@ -6,6 +6,7 @@
         "Description[bg]": "Информация за поддръжка на KWin",
         "Description[ca@valencia]": "Informació de la implementació de KWin",
         "Description[ca]": "Informació de la implementació del KWin",
+        "Description[de]": "Informationen zur KWin-Unterstützung",
         "Description[en_GB]": "KWin Support information",
         "Description[es]": "Información sobre el soporte de KWin",
         "Description[eu]": "KWin euskarri-informazioa",
@@ -29,12 +30,14 @@
         "Description[uk]": "Дані щодо підтримки KWin",
         "Description[vi]": "Thông tin hỗ trợ KWin",
         "Description[x-test]": "xxKWin Support informationxx",
+        "Description[zh_CN]": "KWin 支持信息",
         "Icon": "kwin",
         "Name": "Window Manager",
         "Name[ar]": "مدير نوافذ",
         "Name[bg]": "Мениджър на прозорци",
         "Name[ca@valencia]": "Gestor de finestres",
         "Name[ca]": "Gestor de finestres",
+        "Name[de]": "Fensterverwaltung",
         "Name[en_GB]": "Window Manager",
         "Name[es]": "Gestor de ventanas",
         "Name[eu]": "Leiho-kudeatzailea",
@@ -57,7 +60,8 @@
         "Name[tr]": "Pencere Yöneticisi",
         "Name[uk]": "Керування вікнами",
         "Name[vi]": "Trình quản lí cửa sổ",
-        "Name[x-test]": "xxWindow Managerxx"
+        "Name[x-test]": "xxWindow Managerxx",
+        "Name[zh_CN]": "窗口管理器"
     },
     "TryExec": "@QtBinariesDir@/qdbus",
     "X-KDE-KInfoCenter-Category": "graphical_information"
