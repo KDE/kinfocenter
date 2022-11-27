@@ -65,6 +65,7 @@ add_subdirectory(src)
 
 include(ECMOptionalAddSubdirectory)
 ecm_optional_add_subdirectory( doc )
+kdoctools_install(po)
 
 # add clang-format target for all our real source files
 file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)
