@@ -371,18 +371,3 @@ msgstr "No"
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
-
-#~ msgid "Application Energy Consumption"
-#~ msgstr "Consum d'energia per aplicació"
-
-#~ msgid "Path: %1"
-#~ msgstr "Camí: %1"
-
-#~ msgid "PID: %1"
-#~ msgstr "PID: %1"
-
-#~ msgid "Wakeups per second: %1 (%2%)"
-#~ msgstr "Activacions per segon: %1 (%2%)"
-
-#~ msgid "Details: %1"
-#~ msgstr "Detalls: %1"
