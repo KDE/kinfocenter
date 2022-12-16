@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-04 00:47+0000\n"
-"PO-Revision-Date: 2022-08-19 15:06-0300\n"
+"PO-Revision-Date: 2022-12-15 11:33-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -161,7 +161,7 @@ msgstr "Sistema operacional:"
 #, kde-format
 msgctxt "@label %1 is the distro name, %2 is the version"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: OSVersionEntry.cpp:13
 #, kde-format
@@ -169,7 +169,7 @@ msgctxt ""
 "@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
 "should be a number, or 'rolling'"
 msgid "%1 %2 Build: %3"
-msgstr ""
+msgstr "%1 %2 Compilação: %3"
 
 #: package/contents/ui/main.qml:91
 #, kde-format
