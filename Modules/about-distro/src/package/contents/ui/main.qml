@@ -119,9 +119,12 @@ KCM.SimpleKCM {
 
                     QQC2.Button {
                         visible: hidden
+                        property var dialog: null
                         text: i18nc("@action:button show a hidden entry in an overlay", "Show")
                         onClicked: {
-                            const dialog = unhideDialog.createObject(root, {});
+                            if (!dialog) {
+                                dialog = unhideDialog.createObject(root, {});
+                            }
                             dialog.open();
                         }
                     }
