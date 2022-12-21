@@ -4,20 +4,21 @@
 # Franklin, 2015.
 # Jeff Huang <s8321414@gmail.com>, 2016.
 # pan93412 <pan93412@gmail.com>, 2018, 2020.
+# Kisaragi Hiu <mail@kisaragi-hiu.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-19 00:47+0000\n"
-"PO-Revision-Date: 2020-02-08 17:21+0800\n"
-"Last-Translator: pan93412 <pan93412@gmail.com>\n"
-"Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
+"PO-Revision-Date: 2022-12-21 05:20+0900\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 19.12.1\n"
+"X-Generator: Lokalize 22.12.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -36,13 +37,11 @@ msgid_plural "Processors:"
 msgstr[0] "處理器："
 
 #: CPUEntry.cpp:22
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt ""
 "unknown CPU type/product name; presented as `Processors: 4 × Unknown Type'"
 msgid "Unknown Type"
-msgstr "未知"
+msgstr "未知的類型"
 
 #: GPUEntry.cpp:19
 #, kde-format
@@ -50,10 +49,9 @@ msgid "Graphics Processor:"
 msgstr "圖形處理器："
 
 #: GraphicsPlatformEntry.cpp:10
-#, fuzzy, kde-format
-#| msgid "Graphics Processor:"
+#, kde-format
 msgid "Graphics Platform:"
-msgstr "圖形處理器："
+msgstr "圖形平台："
 
 #: KernelEntry.cpp:11
 #, kde-format
@@ -61,20 +59,16 @@ msgid "Kernel Version:"
 msgstr "核心版本："
 
 #: KernelEntry.cpp:23
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the CPU bit width (e.g. 32 or 64)"
-#| msgid "%1-bit"
+#, kde-format
 msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
-msgstr "%1 位元"
+msgstr "%1 (%2 位元)"
 
 #: main.cpp:104
-#, fuzzy, kde-format
-#| msgctxt "@title"
-#| msgid "About System"
+#, kde-format
 msgctxt "@title"
 msgid "About this System"
-msgstr "關於系統"
+msgstr "關於這個系統"
 
 #: main.cpp:107
 #, kde-format
@@ -98,41 +92,37 @@ msgstr "作者"
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
-msgstr ""
+msgstr "製造者："
 
 #: main.cpp:180 main.cpp:197
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
-msgstr ""
+msgstr "產品名稱："
 
 #: main.cpp:183
-#, fuzzy, kde-format
-#| msgid "Qt Version:"
+#, kde-format
 msgctxt "@label"
 msgid "System Version:"
-msgstr "Qt 版本："
+msgstr "系統版本："
 
 #: main.cpp:186 main.cpp:200
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
-msgstr ""
+msgstr "序號："
 
 #: main.cpp:190 main.cpp:207
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
-msgstr "未知"
+msgstr "未知："
 
 #: main.cpp:203
-#, fuzzy, kde-format
-#| msgid "Qt Version:"
+#, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
-msgstr "Qt 版本："
+msgstr "U-Boot 版本："
 
 #: main.cpp:241
 #, kde-format
@@ -167,10 +157,7 @@ msgid "Operating System:"
 msgstr "作業系統："
 
 #: OSVersionEntry.cpp:11
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "%1 is a label already including a colon, %2 is the corresponding value"
-#| msgid "%1 %2"
+#, kde-format
 msgctxt "@label %1 is the distro name, %2 is the version"
 msgid "%1 %2"
 msgstr "%1 %2"
@@ -181,17 +168,16 @@ msgctxt ""
 "@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
 "should be a number, or 'rolling'"
 msgid "%1 %2 Build: %3"
-msgstr ""
+msgstr "%1 %2 建置：%3"
 
 #: package/contents/ui/main.qml:91
 #, kde-format
 msgctxt "@title"
 msgid "Serial Number"
-msgstr ""
+msgstr "序號"
 
 #: package/contents/ui/main.qml:97 package/contents/ui/main.qml:177
-#, fuzzy, kde-format
-#| msgid "Copy to Clipboard"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr "複製至剪貼簿"
@@ -200,7 +186,7 @@ msgstr "複製至剪貼簿"
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
-msgstr ""
+msgstr "顯示"
 
 #: package/contents/ui/main.qml:135
 #, kde-format
@@ -218,11 +204,10 @@ msgstr "硬體"
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Show More Information"
-msgstr ""
+msgstr "顯示更多資訊"
 
 #: package/contents/ui/main.qml:184
-#, fuzzy, kde-format
-#| msgid "Copy to Clipboard in English"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard in English"
 msgstr "複製英文訊息至剪貼簿"
