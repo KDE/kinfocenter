@@ -39,6 +39,7 @@
         "Description[vi]": "Thông tin nâng cao về CPU",
         "Description[x-test]": "xxAdvanced CPU Informationxx",
         "Description[zh_CN]": "高级 CPU 信息",
+        "Description[zh_TW]": "進階 CPU 資訊",
         "Icon": "preferences-devices-cpu",
         "Name": "CPU",
         "Name[ar]": "المعالج",
@@ -77,7 +78,8 @@
         "Name[uk]": "Процесор",
         "Name[vi]": "CPU",
         "Name[x-test]": "xxCPUxx",
-        "Name[zh_CN]": "CPU"
+        "Name[zh_CN]": "CPU",
+        "Name[zh_TW]": "CPU"
     },
     "TryExec": "lscpu",
     "X-KDE-KInfoCenter-Category": "device_information",

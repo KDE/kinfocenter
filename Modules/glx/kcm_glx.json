@@ -39,6 +39,7 @@
         "Description[vi]": "Thông tin về GLX",
         "Description[x-test]": "xxGLX informationxx",
         "Description[zh_CN]": "GLX 信息",
+        "Description[zh_TW]": "GLX 資訊",
         "Icon": "video-display",
         "Name": "OpenGL (GLX)",
         "Name[ar]": "أوبن‌جي‌إل (GLX)",
@@ -77,7 +78,8 @@
         "Name[uk]": "OpenGL (GLX)",
         "Name[vi]": "OpenGL (GLX)",
         "Name[x-test]": "xxOpenGL (GLX)xx",
-        "Name[zh_CN]": "OpenGL (GLX)"
+        "Name[zh_CN]": "OpenGL (GLX)",
+        "Name[zh_TW]": "OpenGL (GLX)"
     },
     "TryExec": "glxinfo",
     "X-KDE-KInfoCenter-Category": "graphical_information",

@@ -39,6 +39,7 @@
         "Description[vi]": "Trình xem thiết bị",
         "Description[x-test]": "xxDevice Viewerxx",
         "Description[zh_CN]": "设备查看器",
+        "Description[zh_TW]": "裝置檢視器",
         "Icon": "device-notifier",
         "Name": "Device Viewer",
         "Name[ar]": "عارض الأجهزة",

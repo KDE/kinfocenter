@@ -39,6 +39,7 @@
         "Description[vi]": "Thông tin về hệ thống này",
         "Description[x-test]": "xxInformation About This Systemxx",
         "Description[zh_CN]": "关于本系统的信息",
+        "Description[zh_TW]": "關於這個系統的資訊",
         "Icon": "ktip",
         "Name": "About this System",
         "Name[ar]": "عن النّظام",
@@ -78,7 +79,8 @@
         "Name[uk]": "Про цю систему",
         "Name[vi]": "Về hệ thống này",
         "Name[x-test]": "xxAbout this Systemxx",
-        "Name[zh_CN]": "关于本系统"
+        "Name[zh_CN]": "关于本系统",
+        "Name[zh_TW]": "關於這個系統"
     },
     "X-KDE-KInfoCenter-Category": "basic_information",
     "X-KDE-Keywords": "about,info,information,distribution,distro,system,kernel,qt,kde,version",

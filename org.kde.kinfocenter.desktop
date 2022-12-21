@@ -194,6 +194,7 @@ Comment[x-test]=xxCentralized and convenient overview of system informationxx
 Comment[zh_CN]=在集中和便于操作的视图中显示系统信息概览
 Comment[zh_TW]=集中且方便的系統資訊總覽
 Keywords=kinfocenter
+Keywords[bg]=kinfocenter
 Keywords[ca]=kinfocenter
 Keywords[ca@valencia]=kinfocenter
 Keywords[es]=kinfocenter

@@ -39,6 +39,7 @@
         "Description[vi]": "Thông tin giao diện mạng",
         "Description[x-test]": "xxNetwork interface informationxx",
         "Description[zh_CN]": "网络接口信息",
+        "Description[zh_TW]": "網路介面資訊",
         "Icon": "network-card",
         "Name": "Network Interfaces",
         "Name[af]": "Netwerk Koppelvlakke",

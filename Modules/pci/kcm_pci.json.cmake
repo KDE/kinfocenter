@@ -39,6 +39,7 @@
         "Description[vi]": "Thông tin về PCI",
         "Description[x-test]": "xxPCI informationxx",
         "Description[zh_CN]": "PCI 信息",
+        "Description[zh_TW]": "PCI 資訊",
         "Icon": "hwinfo",
         "Name": "PCI",
         "Name[af]": "PCI",

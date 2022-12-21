@@ -38,6 +38,7 @@
         "Description[vi]": "Thông tin API đồ hoạ Vulkan",
         "Description[x-test]": "xxVulkan graphics API informationxx",
         "Description[zh_CN]": "Vulkan 图形 API 信息",
+        "Description[zh_TW]": "Vulkan 圖形 API 資訊",
         "Icon": "video-display",
         "Name": "Vulkan",
         "Name[ar]": "فالكن",
@@ -75,7 +76,8 @@
         "Name[uk]": "Vulkan",
         "Name[vi]": "Vulkan",
         "Name[x-test]": "xxVulkanxx",
-        "Name[zh_CN]": "Vulkan"
+        "Name[zh_CN]": "Vulkan",
+        "Name[zh_TW]": "Vulkan"
     },
     "TryExec": "vulkaninfo",
     "X-KDE-KInfoCenter-Category": "graphical_information",

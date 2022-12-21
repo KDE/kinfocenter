@@ -39,6 +39,7 @@
         "Description[vi]": "Thông tin an ninh phần sụn",
         "Description[x-test]": "xxFirmware Security Informationxx",
         "Description[zh_CN]": "固件安全信息",
+        "Description[zh_TW]": "韌體安全性資訊",
         "Icon": "preferences-security",
         "Name": "Firmware Security",
         "Name[ar]": "أمن البرامج الثابتة",
@@ -76,7 +77,8 @@
         "Name[uk]": "Захист мікропрограм",
         "Name[vi]": "An ninh phần sụn",
         "Name[x-test]": "xxFirmware Securityxx",
-        "Name[zh_CN]": "固件安全"
+        "Name[zh_CN]": "固件安全",
+        "Name[zh_TW]": "韌體安全"
     },
     "TryExec": "fwupdmgr",
     "X-KDE-KInfoCenter-Category": "device_information",

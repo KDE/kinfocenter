@@ -39,6 +39,7 @@
         "Description[vi]": "Thông tin về EGL",
         "Description[x-test]": "xxEGL informationxx",
         "Description[zh_CN]": "EGL 信息",
+        "Description[zh_TW]": "EGL 資訊",
         "Icon": "video-display",
         "Name": "OpenGL (EGL)",
         "Name[ar]": "أوبن‌جي‌إل (EGL)",
@@ -77,7 +78,8 @@
         "Name[uk]": "OpenGL (EGL)",
         "Name[vi]": "OpenGL (EGL)",
         "Name[x-test]": "xxOpenGL (EGL)xx",
-        "Name[zh_CN]": "OpenGL (EGL)"
+        "Name[zh_CN]": "OpenGL (EGL)",
+        "Name[zh_TW]": "OpenGL (EGL)"
     },
     "TryExec": "eglinfo",
     "X-KDE-KInfoCenter-Category": "graphical_information",

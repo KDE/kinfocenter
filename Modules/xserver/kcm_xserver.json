@@ -38,6 +38,7 @@
         "Description[vi]": "Thông tin về máy chủ X",
         "Description[x-test]": "xxX-Server informationxx",
         "Description[zh_CN]": "X 服务器信息",
+        "Description[zh_TW]": "X 伺服器資訊",
         "Icon": "xorg",
         "Name": "X-Server",
         "Name[af]": "X-bediener",

@@ -39,6 +39,7 @@
         "Description[vi]": "Giám sát trạng thái Samba",
         "Description[x-test]": "xxSamba status monitorxx",
         "Description[zh_CN]": "SAMBA 状态监视器",
+        "Description[zh_TW]": "Samba 狀態監視器",
         "Icon": "preferences-system-network-sharing",
         "Name": "Samba Status",
         "Name[af]": "Samba Status",
