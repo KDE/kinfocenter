@@ -9,30 +9,31 @@
 # Frank Weng (a.k.a. Franklin) <franklin at goodhorse dot idv dot tw>, 2008.
 # Franklin Weng <franklin@mail.everfocus.com.tw>, 2010, 2014.
 # Yi-Jyun Pan <pan93412@gmail.com>, 2020.
+# Kisaragi Hiu <mail@kisaragi-hiu.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-11-17 00:29+0000\n"
-"PO-Revision-Date: 2020-02-14 00:53+0800\n"
-"Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
-"Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
+"PO-Revision-Date: 2022-12-26 03:08+0900\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 19.12.2\n"
+"X-Generator: Lokalize 22.12.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Paladin Liu"
+msgstr "Paladin Liu, Kisaragi Hiu"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "paladin@ms1.hinet.net"
+msgstr "paladin@ms1.hinet.net, mail@kisaragi-hiu.com"
 
 #: main.cpp:25
 #, kde-format
@@ -42,13 +43,12 @@ msgstr "kcmsamba"
 #: main.cpp:26
 #, kde-format
 msgid "Samba Status"
-msgstr ""
+msgstr "Samba 狀態"
 
 #: main.cpp:30
-#, fuzzy, kde-format
-#| msgid "(c) 2002 KDE Information Control Module Samba Team"
+#, kde-format
 msgid "(c) 2002-2020 KDE Information Control Module Samba Team"
-msgstr "(c) 2002 KDE Information Control Module Samba Team"
+msgstr "(c) 2002-2020 KDE 資訊控制模組 Samba 組"
 
 #: main.cpp:31
 #, kde-format
@@ -86,38 +86,34 @@ msgid "Harald Sitter"
 msgstr "Harald Sitter"
 
 #: package/contents/ui/main.qml:17
-#, fuzzy, kde-format
-#| msgctxt "@title/group"
-#| msgid "Exported Shares"
+#, kde-format
 msgctxt "@title heading above listview"
 msgid "User-Created Shares"
-msgstr "匯出的共用項目"
+msgstr "使用者建立的共享裝置"
 
 #: package/contents/ui/main.qml:22
-#, fuzzy, kde-format
-#| msgctxt "@title/group"
-#| msgid "Mounted Shares"
+#, kde-format
 msgctxt "@title heading above listview"
 msgid "Mounted Remote Shares"
-msgstr "掛載的共用項目"
+msgstr "已掛載的遠端共享裝置"
 
 #: package/contents/ui/main.qml:49
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no directories shared by users"
-msgstr ""
+msgstr "沒有被使用者分享的目錄"
 
 #: package/contents/ui/main.qml:89
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no Samba shares mounted on this system"
-msgstr ""
+msgstr "這個系統上沒有已掛載的 Samba 共享裝置"
 
 #: package/contents/ui/ShareListItem.qml:71
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Open folder properties to change share settings"
-msgstr ""
+msgstr "開啟資料夾屬性來修改共享裝置設定"
 
 #~ msgctxt "@title:column samba share name"
 #~ msgid "Name"
