@@ -1,0 +1,12 @@
+{
+    "Categories": "Qt;KDE;X-KDE-information;",
+    "KPlugin": {
+        "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
+        "Description": "OpenCL API information",
+        "Icon": "video-display",
+        "Name": "OpenCL"
+    },
+    "TryExec": "clinfo",
+    "X-KDE-KInfoCenter-Category": "graphical_information",
+    "X-KDE-Keywords": "OpenCL,VideoCard,Hardware Acceleration,Graphics"
+}
