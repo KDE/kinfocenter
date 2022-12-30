@@ -3,8 +3,16 @@
     "KPlugin": {
         "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
         "Description": "OpenCL API information",
+        "Description[ca]": "Informació de l'API de l'OpenCL",
+        "Description[ka]": "OpenCL API -ის ინფორმაცია",
+        "Description[uk]": "Інформація щодо програмного інтерфейсу OpenCL",
+        "Description[x-test]": "xxOpenCL API informationxx",
         "Icon": "video-display",
-        "Name": "OpenCL"
+        "Name": "OpenCL",
+        "Name[ca]": "OpenCL",
+        "Name[ka]": "OpenCL",
+        "Name[uk]": "OpenCL",
+        "Name[x-test]": "xxOpenCLxx"
     },
     "TryExec": "clinfo",
     "X-KDE-KInfoCenter-Category": "graphical_information",
