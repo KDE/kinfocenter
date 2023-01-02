@@ -18,6 +18,7 @@
         "Description[fr]": "Informations concernant l'interface PCI",
         "Description[ia]": "Information de PCI",
         "Description[id]": "Informasi PCI",
+        "Description[is]": "Upplýsingar um PCI-braut",
         "Description[it]": "Informazioni sul bus PCI",
         "Description[ja]": "PCI の情報",
         "Description[ka]": "PCI მოწყობილობები",
