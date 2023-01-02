@@ -4,19 +4,20 @@
 # Pjetur G. Hjaltason <pjetur@pjetur.net>, 2003.
 # Arnar Leósson <leosson@frisurf.no>, 2003.
 # Sveinn í Felli <sveinki@nett.is>, 2008, 2010, 2011, 2016.
+# Guðmundur Erlingsson <gudmundure@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmnic\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-14 00:46+0000\n"
-"PO-Revision-Date: 2016-04-08 22:57+0000\n"
-"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
-"Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
+"PO-Revision-Date: 2022-12-31 14:22+0000\n"
+"Last-Translator: gummi <gudmundure@gmail.com>\n"
+"Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
 "Language: is\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 22.12.0\n"
 "Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
 "\n"
 "\n"
@@ -25,38 +26,33 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Sveinn í Felli"
+msgstr "Sveinn í Felli,Guðmundur Erlingsson"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "sv1@fellsnet.is"
+msgstr "sv1@fellsnet.is,gudmundure@gmail.com"
 
 #: networkmodel.cpp:159
-#, fuzzy, kde-format
-#| msgid "Point to Point"
+#, kde-format
 msgctxt "@item:intable Network type"
 msgid "Point to Point"
-msgstr "Punktur til punkts"
+msgstr "Bein tenging (point to point)"
 
 #: networkmodel.cpp:166
-#, fuzzy, kde-format
-#| msgctxt "@item:intext Mode of network card"
-#| msgid "Broadcast"
+#, kde-format
 msgctxt "@item:intable Network type"
 msgid "Broadcast"
-msgstr "Útvörpun"
+msgstr "Víðvarp"
 
 #: networkmodel.cpp:173
-#, fuzzy, kde-format
-#| msgid "Multicast"
+#, kde-format
 msgctxt "@item:intable Network type"
 msgid "Multicast"
-msgstr "Fjölvörpun"
+msgstr "Margvarp"
 
 #: networkmodel.cpp:180
-#, fuzzy, kde-format
-#| msgid "Loopback"
+#, kde-format
 msgctxt "@item:intable Network type"
 msgid "Loopback"
 msgstr "Hringtenging"
@@ -64,25 +60,22 @@ msgstr "Hringtenging"
 #: nic.cpp:21
 #, kde-format
 msgid "kcm_nic"
-msgstr ""
+msgstr "kcm_nic"
 
 #: nic.cpp:22
-#, fuzzy, kde-format
-#| msgid "Network Mask"
+#, kde-format
 msgctxt "@title:window"
 msgid "Network Interfaces"
-msgstr "Netmöskvi"
+msgstr "Nettengi"
 
 #: nic.cpp:26
-#, fuzzy, kde-format
-#| msgid "(c) 2001 - 2002 Alexander Neundorf"
+#, kde-format
 msgctxt "@info"
 msgid "(c) 2001 - 2002 Alexander Neundorf"
 msgstr "(c) 2001 - 2002 Alexander Neundorf"
 
 #: nic.cpp:28
-#, fuzzy, kde-format
-#| msgid "Alexander Neundorf"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Alexander Neundorf"
 msgstr "Alexander Neundorf"
@@ -91,66 +84,60 @@ msgstr "Alexander Neundorf"
 #, kde-format
 msgctxt "@info:credit"
 msgid "creator"
-msgstr ""
+msgstr "höfundur"
 
 #: nic.cpp:29
 #, kde-format
 msgctxt "@info:credit"
 msgid "Carl Schwan"
-msgstr ""
+msgstr "Carl Schwan"
 
 #: nic.cpp:29
 #, kde-format
 msgctxt "@info:credit"
 msgid "developer"
-msgstr ""
+msgstr "forritari"
 
 #: package/contents/ui/main.qml:15
-#, fuzzy, kde-format
-#| msgid "Network Mask"
+#, kde-format
 msgid "Network Interfaces"
-msgstr "Netmöskvi"
+msgstr "Nettengi"
 
 #: package/contents/ui/main.qml:30
-#, fuzzy, kde-format
-#| msgid "Name"
+#, kde-format
 msgctxt "@label"
 msgid "Name:"
-msgstr "Heiti"
+msgstr "Heiti:"
 
 #: package/contents/ui/main.qml:34
-#, fuzzy, kde-format
-#| msgid "IP Address"
+#, kde-format
 msgctxt "@label"
 msgid "Address:"
-msgstr "IP vistfang"
+msgstr "Vistfang:"
 
 #: package/contents/ui/main.qml:38
-#, fuzzy, kde-format
-#| msgid "Network Mask"
+#, kde-format
 msgctxt "@label"
 msgid "Network Mask:"
-msgstr "Netmöskvi"
+msgstr "Netmöskvi:"
 
 #: package/contents/ui/main.qml:42
-#, fuzzy, kde-format
-#| msgid "Type"
+#, kde-format
 msgctxt "@label"
 msgid "Type:"
-msgstr "Tegund"
+msgstr "Tegund:"
 
 #: package/contents/ui/main.qml:46
 #, kde-format
 msgctxt "@label"
 msgid "Hardware Address:"
-msgstr ""
+msgstr "Vistfang vélbúnaðar:"
 
 #: package/contents/ui/main.qml:51
-#, fuzzy, kde-format
-#| msgid "State"
+#, kde-format
 msgctxt "@label"
 msgid "State:"
-msgstr "Staða"
+msgstr "Staða:"
 
 #: package/contents/ui/main.qml:59
 #, kde-format
@@ -168,7 +155,7 @@ msgstr "Óvirkt"
 #, kde-format
 msgctxt "@action:button"
 msgid "Refresh"
-msgstr ""
+msgstr "Uppfæra"
 
 #~ msgctxt "@item:intext Mode of network card"
 #~ msgid "Broadcast"

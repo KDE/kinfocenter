@@ -3,19 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Sveinn í Felli <sveinki@nett.is>, 2010, 2011, 2016.
+# Guðmundur Erlingsson <gudmundure@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmdevinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-16 00:48+0000\n"
-"PO-Revision-Date: 2016-04-08 22:57+0000\n"
-"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
-"Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
+"PO-Revision-Date: 2022-12-31 14:31+0000\n"
+"Last-Translator: gummi <gudmundure@gmail.com>\n"
+"Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
 "Language: is\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 22.12.0\n"
 "Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
 "\n"
 "\n"
@@ -23,18 +24,18 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Sveinn í Felli"
+msgstr "Sveinn í Felli,Guðmundur Erlingsson"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "sv1@fellsnet.is"
+msgstr "sv1@fellsnet.is,gudmundure@gmail.com"
 
 #: devicelisting.cpp:41
 #, kde-format
 msgctxt "Device Listing Whats This"
 msgid "Shows all the devices that are currently listed."
-msgstr "Birtir öll tæki sem þegar eru á lista."
+msgstr "Sýnir öll tæki sem þegar eru á lista."
 
 #: devicelisting.cpp:44
 #, kde-format
@@ -59,18 +60,16 @@ msgstr "Sýna öll tæki"
 #: devicelisting.cpp:66
 #, kde-format
 msgid "Show Relevant Devices"
-msgstr "Sýna öll viðkomandi tæki"
+msgstr "Sýna öll viðeigandi tæki"
 
 #: devicelisting.cpp:95
-#, fuzzy, kde-format
-#| msgid "Unknown"
+#, kde-format
 msgctxt "unknown device type"
 msgid "Unknown"
 msgstr "Óþekkt"
 
 #: devicelisting.cpp:136 devinfo.cpp:79
-#, fuzzy, kde-format
-#| msgid "None"
+#, kde-format
 msgctxt "no device UDI"
 msgid "None"
 msgstr "Ekkert"
@@ -81,10 +80,9 @@ msgid "kcmdevinfo"
 msgstr "kcmdevinfo"
 
 #: devinfo.cpp:28
-#, fuzzy, kde-format
-#| msgid "KDE Solid Based Device Viewer"
+#, kde-format
 msgid "Device Viewer"
-msgstr "KDE tækjaskoðun byggð á Solid"
+msgstr "Tækjaskoðun"
 
 #: devinfo.cpp:28
 #, kde-format
@@ -100,18 +98,18 @@ msgstr "UDI: "
 #, kde-format
 msgctxt "Udi Whats This"
 msgid "Shows the current device's UDI (Unique Device Identifier)"
-msgstr "Birtir UDI (Unique Device Identifier) fyrir viðkomandi tæki"
+msgstr "Birtir UDI (Unique Device Identifier) fyrir þetta tæki"
 
 #: infopanel.cpp:20
 #, kde-format
 msgid "Device Information"
-msgstr "Upplýsingar tækis"
+msgstr "Upplýsingar um tæki"
 
 #: infopanel.cpp:29
 #, kde-format
 msgctxt "Info Panel Whats This"
 msgid "Shows information about the currently selected device."
-msgstr "Birtir upplýsingar um viðkomandi tæki."
+msgstr "Sýnir upplýsingar um tækið sem er valið."
 
 #: infopanel.cpp:56
 #, kde-format
@@ -125,7 +123,7 @@ msgstr ""
 #: infopanel.cpp:119
 #, kde-format
 msgid "Description: "
-msgstr ""
+msgstr "Lýsing:"
 
 #: infopanel.cpp:121
 #, kde-format
@@ -148,15 +146,13 @@ msgid "No"
 msgstr "Nei"
 
 #: infopanel.h:36
-#, fuzzy, kde-format
-#| msgid "Unknown"
+#, kde-format
 msgctxt "name of something is not known"
 msgid "Unknown"
 msgstr "Óþekkt"
 
 #: soldevice.cpp:65
-#, fuzzy, kde-format
-#| msgid "Unknown"
+#, kde-format
 msgctxt "unknown device"
 msgid "Unknown"
 msgstr "Óþekkt"
@@ -198,28 +194,24 @@ msgid "Intel SSE3"
 msgstr "Intel SSE3"
 
 #: soldevicetypes.cpp:88
-#, fuzzy, kde-format
-#| msgid "Intel SSE3"
+#, kde-format
 msgid "Intel SSSE3"
-msgstr "Intel SSE3"
+msgstr "Intel SSSE3"
 
 #: soldevicetypes.cpp:91
-#, fuzzy, kde-format
-#| msgid "Intel SSE4"
+#, kde-format
 msgid "Intel SSE4.1"
-msgstr "Intel SSE4"
+msgstr "Intel SSE4.1"
 
 #: soldevicetypes.cpp:94
-#, fuzzy, kde-format
-#| msgid "Intel SSE4"
+#, kde-format
 msgid "Intel SSE4.2"
-msgstr "Intel SSE4"
+msgstr "Intel SSE4.2"
 
 #: soldevicetypes.cpp:97
-#, fuzzy, kde-format
-#| msgid "AMD 3DNow"
+#, kde-format
 msgid "AMD 3DNow!"
-msgstr "AMD 3DNow"
+msgstr "AMD 3DNow!"
 
 #: soldevicetypes.cpp:100
 #, kde-format
@@ -227,8 +219,7 @@ msgid "ATI IVEC"
 msgstr "ATI IVEC"
 
 #: soldevicetypes.cpp:103
-#, fuzzy, kde-format
-#| msgid "None"
+#, kde-format
 msgctxt "no instruction set extensions"
 msgid "None"
 msgstr "Ekkert"
@@ -261,12 +252,12 @@ msgstr "Harður diskur"
 #: soldevicetypes.cpp:154
 #, kde-format
 msgid "Compact Flash Reader"
-msgstr "Compact Flash drif"
+msgstr "Compact Flash-drif"
 
 #: soldevicetypes.cpp:157
 #, kde-format
 msgid "Smart Media Reader"
-msgstr "Smart Media drif"
+msgstr "Smart Media-drif"
 
 #: soldevicetypes.cpp:160
 #, kde-format
@@ -281,12 +272,12 @@ msgstr "Geisladrif"
 #: soldevicetypes.cpp:166
 #, kde-format
 msgid "Memory Stick Reader"
-msgstr "Memory Stick kortalesari"
+msgstr "Memory Stick-kortalesari"
 
 #: soldevicetypes.cpp:169
 #, kde-format
 msgid "xD Reader"
-msgstr "xD lesari"
+msgstr "xD-lesari"
 
 #: soldevicetypes.cpp:172
 #, kde-format
@@ -319,15 +310,13 @@ msgid "SATA"
 msgstr "SATA"
 
 #: soldevicetypes.cpp:207
-#, fuzzy, kde-format
-#| msgid "Platform"
+#, kde-format
 msgctxt "platform storage bus"
 msgid "Platform"
 msgstr "Stýrikerfi"
 
 #: soldevicetypes.cpp:210
-#, fuzzy, kde-format
-#| msgid "Unknown"
+#, kde-format
 msgctxt "unknown storage bus"
 msgid "Unknown"
 msgstr "Óþekkt"
@@ -373,8 +362,7 @@ msgid "Encrypted"
 msgstr "Dulritað"
 
 #: soldevicetypes.cpp:272
-#, fuzzy, kde-format
-#| msgid "Unknown"
+#, kde-format
 msgctxt "unknown volume usage"
 msgid "Unknown"
 msgstr "Óþekkt"
@@ -417,7 +405,7 @@ msgstr "Ekki tengt"
 #: soldevicetypes.cpp:287
 #, kde-format
 msgid "Volume Space:"
-msgstr "Diskrými:"
+msgstr "Diskpláss:"
 
 #: soldevicetypes.cpp:297
 #, kde-format
@@ -428,7 +416,7 @@ msgstr "%1 laust af %2 (%3% í notkun)"
 #: soldevicetypes.cpp:303
 #, kde-format
 msgid "No data available"
-msgstr ""
+msgstr "Enginn gögn tiltæk"
 
 #: soldevicetypes.cpp:330
 #, kde-format
@@ -443,7 +431,7 @@ msgstr "Studdir reklar: "
 #: soldevicetypes.cpp:349 soldevicetypes.cpp:388
 #, kde-format
 msgid "Supported Protocols: "
-msgstr "Studdir samskiptamátar: "
+msgstr "Studdar samskiptareglur: "
 
 #: soldevicetypes.cpp:369
 #, kde-format
@@ -463,7 +451,7 @@ msgstr "PDA"
 #: soldevicetypes.cpp:433
 #, kde-format
 msgid "UPS"
-msgstr "Varaaflgjafi"
+msgstr "Varaaflgjafi (UPS)"
 
 #: soldevicetypes.cpp:436
 #, kde-format
@@ -493,23 +481,22 @@ msgstr "Myndavél"
 #: soldevicetypes.cpp:451
 #, kde-format
 msgid "Phone"
-msgstr ""
+msgstr "Sími"
 
 #: soldevicetypes.cpp:454
 #, kde-format
 msgctxt "Screen"
 msgid "Monitor"
-msgstr ""
+msgstr "Skjár"
 
 #: soldevicetypes.cpp:457
 #, kde-format
 msgctxt "Wireless game pad or joystick battery"
 msgid "Gaming Input"
-msgstr ""
+msgstr "Leikjastýring"
 
 #: soldevicetypes.cpp:460
-#, fuzzy, kde-format
-#| msgid "Unknown"
+#, kde-format
 msgctxt "unknown battery type"
 msgid "Unknown"
 msgstr "Óþekkt"
@@ -525,10 +512,9 @@ msgid "Discharging"
 msgstr "Afhleðst"
 
 #: soldevicetypes.cpp:472
-#, fuzzy, kde-format
-#| msgid "No Charge"
+#, kde-format
 msgid "Fully Charged"
-msgstr "Engin hleðsla"
+msgstr "Fullhlaðið"
 
 #: soldevicetypes.cpp:475
 #, kde-format
@@ -538,7 +524,7 @@ msgstr "Engin hleðsla"
 #: soldevicetypes.cpp:478
 #, kde-format
 msgid "Battery Type: "
-msgstr "Tegund rafhlöðu: "
+msgstr "Gerð rafhlöðu: "
 
 #: soldevicetypes.cpp:478
 #, kde-format
@@ -546,10 +532,9 @@ msgid "Charge Status: "
 msgstr "Staða hleðslu: "
 
 #: soldevicetypes.cpp:478
-#, fuzzy, kde-format
-#| msgid "Charge Status: "
+#, kde-format
 msgid "Charge Percent: "
-msgstr "Staða hleðslu: "
+msgstr "Hleðsluprósenta: "
 
 #~ msgid "Network Interfaces"
 #~ msgstr "Netkort"

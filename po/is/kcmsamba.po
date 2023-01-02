@@ -5,19 +5,20 @@
 # Svanur Palsson <svanur@tern.is>, 2004.
 # Arnar Leósson <leosson@frisurf.no>, 2005.
 # Sveinn í Felli <sveinki@nett.is>, 2008, 2011.
+# Guðmundur Erlingsson <gudmundure@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-11-17 00:29+0000\n"
-"PO-Revision-Date: 2011-05-30 22:55+0000\n"
-"Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
-"Language-Team: Icelandic <kde-isl@molar.is>\n"
+"PO-Revision-Date: 2022-12-31 14:35+0000\n"
+"Last-Translator: gummi <gudmundure@gmail.com>\n"
+"Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
 "Language: is\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Lokalize 22.12.0\n"
 "Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
 "\n"
 "\n"
@@ -26,12 +27,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Svanur Pálsson"
+msgstr "Svanur Pálsson,Guðmundur Erlingsson"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "svanurpalsson@hotmail.com"
+msgstr "svanurpalsson@hotmail.com,gudmundure@gmail.com"
 
 #: main.cpp:25
 #, kde-format
@@ -41,13 +42,12 @@ msgstr "kcmsamba"
 #: main.cpp:26
 #, kde-format
 msgid "Samba Status"
-msgstr ""
+msgstr "Staða á Samba"
 
 #: main.cpp:30
-#, fuzzy, kde-format
-#| msgid "(c) 2002 KDE Information Control Module Samba Team"
+#, kde-format
 msgid "(c) 2002-2020 KDE Information Control Module Samba Team"
-msgstr "(c) 2002 KDE Samba teymið fyrir upplýsingastjórneiningu"
+msgstr "(c) 2002 KDE-teymið fyrir Samba-stjórnunareiningu"
 
 #: main.cpp:31
 #, kde-format
@@ -82,39 +82,37 @@ msgstr "Alexander Neundorf"
 #: main.cpp:37
 #, kde-format
 msgid "Harald Sitter"
-msgstr ""
+msgstr "Harald Sitter"
 
 #: package/contents/ui/main.qml:17
-#, fuzzy, kde-format
-#| msgid "&Exports"
+#, kde-format
 msgctxt "@title heading above listview"
 msgid "User-Created Shares"
-msgstr "Flutt ú&t"
+msgstr "Sameignir búnar til af notanda"
 
 #: package/contents/ui/main.qml:22
-#, fuzzy, kde-format
-#| msgid "Mounted Under"
+#, kde-format
 msgctxt "@title heading above listview"
 msgid "Mounted Remote Shares"
-msgstr "Tengt undir"
+msgstr "Fjartengdar sameignir"
 
 #: package/contents/ui/main.qml:49
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no directories shared by users"
-msgstr ""
+msgstr "Það eru engar möppur sem notendur samnýta"
 
 #: package/contents/ui/main.qml:89
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no Samba shares mounted on this system"
-msgstr ""
+msgstr "Engar Samba-sameignir eru tengdar við kerfið"
 
 #: package/contents/ui/ShareListItem.qml:71
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Open folder properties to change share settings"
-msgstr ""
+msgstr "Opna möppueiginleika til að breyta stillingum samnýtingar"
 
 #~ msgid "System Information Control Module"
 #~ msgstr "Stjórneining kerfisupplýsinga"
