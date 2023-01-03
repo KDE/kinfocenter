@@ -3,20 +3,21 @@
 # Thomas Reitelbach <tr@erdfunkstelle.de>, 2006, 2007, 2008.
 # Burkhard Lück <lueck@hube-lueck.de>, 2021.
 # Alois Spitzbart <spitz234@hotmail.com>, 2022.
+# Frederik Schwarzer <schwarzer@kde.org>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-09-03 00:18+0000\n"
-"PO-Revision-Date: 2022-10-05 22:24+0200\n"
-"Last-Translator: Alois Spitzbart <spitz234@hotmail.com>\n"
+"PO-Revision-Date: 2022-12-19 10:37+0100\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.08.0\n"
+"X-Generator: Lokalize 22.12.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -332,7 +333,7 @@ msgstr ""
 #, kde-format
 msgctxt "USB device subclass"
 msgid "USB3 Vision"
-msgstr ""
+msgstr "USB3 Vision"
 
 #: classes.i18n:53
 #, kde-format
