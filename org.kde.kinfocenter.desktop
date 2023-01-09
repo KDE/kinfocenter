@@ -216,6 +216,7 @@ Keywords[sl]=kinfocenter
 Keywords[ta]=kinfocenter, கேயின்ஃபோசென்டர், தகவல், விவரம், விவரங்கள், கணினித் தகவல், கணினி விவரங்கள், கணினி
 Keywords[tr]=kinfocenter
 Keywords[uk]=kinfocenter;центр;інформація
+Keywords[vi]=kinfocenter
 Keywords[x-test]=xxkinfocenterxx
 X-DBUS-ServiceName=org.kde.kinfocenter
 X-DBUS-StartupType=Unique

@@ -16,6 +16,7 @@
         "Description[sl]": "Informacija o API OpenCL",
         "Description[tr]": "OpenCL API bilgisi",
         "Description[uk]": "Інформація щодо програмного інтерфейсу OpenCL",
+        "Description[vi]": "Thông tin về API OpenCL",
         "Description[x-test]": "xxOpenCL API informationxx",
         "Icon": "video-display",
         "Name": "OpenCL",
@@ -32,6 +33,7 @@
         "Name[sl]": "OpenCL",
         "Name[tr]": "OpenCL",
         "Name[uk]": "OpenCL",
+        "Name[vi]": "OpenCL",
         "Name[x-test]": "xxOpenCLxx"
     },
     "TryExec": "clinfo",
