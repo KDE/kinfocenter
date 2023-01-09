@@ -1,17 +1,18 @@
-# translation of kcmsamba.po to Esperanto
-# Esperantaj mesaĝoj por "kcmsamba"
+# translation of kcmsamba.pot to Esperanto
 # Copyright (C) 1998, 2007 Free Software Foundation, Inc.
+# This file is distributed under the same license as the kinfocenter package.
 # Wolfram Diestel <wolfram@steloj.de>, 1998.
 # Cindy McKee <cfmckee@gmail.com>, 2007.
-#
+# Axel Rousseau <axel@esperanto-jeunes.org>, 2009.
+# Oliver Kellogg <okellogg@users.sourceforge.net>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-11-17 00:29+0000\n"
-"PO-Revision-Date: 2009-12-15 10:42+0100\n"
-"Last-Translator: Axel Rousseau <axel@esperanto-jeunes.org>\n"
+"PO-Revision-Date: 2023-01-08 21:45+0100\n"
+"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
@@ -38,13 +39,12 @@ msgstr "kcmsamba"
 #: main.cpp:26
 #, kde-format
 msgid "Samba Status"
-msgstr ""
+msgstr "Stato de Samba"
 
 #: main.cpp:30
-#, fuzzy, kde-format
-#| msgid "(c) 2002 KDE Information Control Module Samba Team"
+#, kde-format
 msgid "(c) 2002-2020 KDE Information Control Module Samba Team"
-msgstr "(c) 2002 KDE Information Control Module Samba Team"
+msgstr "(c) 2002-2020 KDE Information Control Module Samba Team"
 
 #: main.cpp:31
 #, kde-format
@@ -82,283 +82,31 @@ msgid "Harald Sitter"
 msgstr ""
 
 #: package/contents/ui/main.qml:17
-#, fuzzy, kde-format
-#| msgid "&Exports"
+#, kde-format
 msgctxt "@title heading above listview"
 msgid "User-Created Shares"
-msgstr "&Eksportoj"
+msgstr "Uzantkreitaj Komundosierujoj"
 
 #: package/contents/ui/main.qml:22
-#, fuzzy, kde-format
-#| msgid "Mounted Under"
+#, kde-format
 msgctxt "@title heading above listview"
 msgid "Mounted Remote Shares"
-msgstr "Surmetita en"
+msgstr "Muntitaj Foraj Komundosierujoj"
 
 #: package/contents/ui/main.qml:49
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no directories shared by users"
-msgstr ""
+msgstr "Ne ekzistas dosierujoj komunigitaj far uzantoj"
 
 #: package/contents/ui/main.qml:89
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no Samba shares mounted on this system"
-msgstr ""
+msgstr "Ne ekzistas Samba-komundosierujoj muntitaj en ĉi sistemo"
 
 #: package/contents/ui/ShareListItem.qml:71
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Open folder properties to change share settings"
-msgstr ""
-
-#, fuzzy
-#~| msgid "KDE Panel System Information Control Module"
-#~ msgid "System Information Control Module"
-#~ msgstr "Stirmodulo por KDE-panela sistemaj informoj"
-
-#~ msgid "Resource"
-#~ msgstr "Risurco"
-
-#~ msgid "Mounted Under"
-#~ msgstr "Surmetita en"
-
-#, fuzzy
-#~| msgid "Accessed From"
-#~ msgctxt ""
-#~ "@title:column whether a samba share is accessible locally (i.e. mounted)"
-#~ msgid "Accessible"
-#~ msgstr "Aliro de"
-
-#~ msgid "&Imports"
-#~ msgstr "&Importoj"
-
-#~ msgid "Type"
-#~ msgstr "Tipo"
-
-#~ msgid ""
-#~ "This list shows the Samba and NFS shared resources mounted on your system "
-#~ "from other hosts. The \"Type\" column tells you whether the mounted "
-#~ "resource is a Samba or an NFS type of resource. The \"Resource\" column "
-#~ "shows the descriptive name of the shared resource. Finally, the third "
-#~ "column, which is labeled \"Mounted under\" shows the location on your "
-#~ "system where the shared resource is mounted."
-#~ msgstr ""
-#~ "Tiu listo montras la komunigajn risurcojn de aliaj komputiloj kiuj estas "
-#~ "surmetitaj en via sistemo per Sambo kaj NFS. La kolumno \"Tipo\" "
-#~ "informas, ĉu la risurco estas uzata per Sambo aŭ NFS. La kolumno \"Risurco"
-#~ "\" montras priskribon de la risurco. La tria kolumno \"Surmetita en\" "
-#~ "montras la lokon de la komuniga risurco en via sistemo."
-
-#~ msgid "Samba log file: "
-#~ msgstr "Samba protokolodosiero: "
-
-#~ msgid "Show opened connections"
-#~ msgstr "Montri malfermitajn konektojn"
-
-#~ msgid "Show closed connections"
-#~ msgstr "Montri fermitajn konektojn"
-
-#~ msgid "Show opened files"
-#~ msgstr "Montri malfermitajn dosierojn"
-
-#~ msgid "Show closed files"
-#~ msgstr "Montri fermitajn dosierojn"
-
-#~ msgid "&Update"
-#~ msgstr "Ĝis&datigi"
-
-#~ msgid ""
-#~ "This page presents the contents of your samba log file in a friendly "
-#~ "layout. Check that the correct log file for your computer is listed here. "
-#~ "If you need to, correct the name or location of the log file, and then "
-#~ "click the \"Update\" button."
-#~ msgstr ""
-#~ "Tiu paĝo prezentas la enhavon de via Samba protokolodosiero en afabla "
-#~ "maniero. Kontrolu, ke la ĝusta protokolodosiero por via komputilo estas "
-#~ "en la listo. Laŭbezoneĝustigu la nomon kaj lokon de la protokolodosiero "
-#~ "kaj alklaku la butonon \"Ĝisdatigi\"."
-
-#~ msgid ""
-#~ "Check this option if you want to view the details for connections opened "
-#~ "to your computer."
-#~ msgstr ""
-#~ "Ebligu tion, se vi volas rigardi la detalojn pri malfermitaj konektoj al "
-#~ "via komputilo."
-
-#~ msgid ""
-#~ "Check this option if you want to view the events when connections to your "
-#~ "computer were closed."
-#~ msgstr ""
-#~ "Ebligu tion, se vi volas rigardi la eventojn kiam konektoj al via "
-#~ "komputilo estis fermitaj."
-
-#~ msgid ""
-#~ "Check this option if you want to see the files which were opened on your "
-#~ "computer by remote users. Note that file open/close events are not logged "
-#~ "unless the samba log level is set to at least 2 (you cannot set the log "
-#~ "level using this module)."
-#~ msgstr ""
-#~ "Ebligu tion, se vi volas vidi la dosierojn de via komputiloj, kiuj estas "
-#~ "malfermitaj de foraj uzantoj. Atentu, ke la eventoj malfermo/fermo de "
-#~ "dosiero estas registrataj nur, se la protokolonivelo de Samba estas "
-#~ "almenaŭ 2 (pardonu, vi ne povas ŝanĝi la protokolonivelon per tiu ĉi "
-#~ "modulo)."
-
-#~ msgid ""
-#~ "Check this option if you want to see the events when files opened by "
-#~ "remote users were closed. Note that file open/close events are not logged "
-#~ "unless the samba log level is set to at least 2 (you cannot set the log "
-#~ "level using this module)."
-#~ msgstr ""
-#~ "Ebligu tion, se vi volas vidi la eventojn, kiam dosieroj uzitaj de foraj "
-#~ "uzantoj estas fermitaj. Atentu, ke la eventoj malfermo/fermo de dosiero "
-#~ "estas registrataj nur, se la protokolonivelo de Samba estas almenaŭ 2 "
-#~ "(pardonu, vi ne povas ŝanĝi la protokolonivelon per tiu ĉi modulo)."
-
-#~ msgid ""
-#~ "Click here to refresh the information on this page. The log file (shown "
-#~ "above) will be read to obtain the events logged by samba."
-#~ msgstr ""
-#~ "Alklaku tie ĉi por aktualigi la informojn de tiu paĝo. La "
-#~ "protokolodosiero (montrita supre) estos relegata por akiri la eventojn "
-#~ "registritajn de Samba."
-
-#~ msgid "Date & Time"
-#~ msgstr "Dato kaj tempo"
-
-#~ msgid "Event"
-#~ msgstr "Evento"
-
-#~ msgid "Service/File"
-#~ msgstr "Servo/dosiero"
-
-#~ msgid "Host/User"
-#~ msgstr "Komputilo/uzanto"
-
-#~ msgid ""
-#~ "<p>This list shows details of the events logged by samba. Note that "
-#~ "events at the file level are not logged unless you have configured the "
-#~ "log level for samba to 2 or greater.</p><p> As with many other lists in "
-#~ "KDE, you can click on a column heading to sort on that column. Click "
-#~ "again to change the sorting direction from ascending to descending or "
-#~ "vice versa.</p><p> If the list is empty, try clicking the \"Update\" "
-#~ "button. The samba log file will be read and the list refreshed.</p>"
-#~ msgstr ""
-#~ "<p>Tiu listo montras detalojn de la eventoj protokolitaj de Samba. "
-#~ "Atentu, ke la eventoj malfermo/fermo de dosiero estas registrataj nur, se "
-#~ "la protokolonivelo de Samba estas almenaŭ 2.</p><p>Vi povas alklaki "
-#~ "kolumnan titolon por ordigi laŭ tiu kolumno. Reklaku por ŝanĝi la "
-#~ "ordodirekton.</p><p> Se la listo estas malplena, premu la butonon -"
-#~ "\"Aktualigi\". La protokolodosiero de Samba estos legata kaj la listo "
-#~ "estos aktualigata.</p>"
-
-#~ msgid "CONNECTION OPENED"
-#~ msgstr "KONEKTO KOMENCIĜIS"
-
-#~ msgid "CONNECTION CLOSED"
-#~ msgstr "KONEKTO FINIĜIS"
-
-#~ msgid "            FILE OPENED"
-#~ msgstr "              DOSIERO MALFERMITA"
-
-#~ msgid "            FILE CLOSED"
-#~ msgstr "              DOSIERO FERMITA"
-
-#~ msgid "Could not open file %1"
-#~ msgstr "Ne eblis malfermi dosieron %1"
-
-#~ msgid "Connections: 0"
-#~ msgstr "Konektoj: 0"
-
-#~ msgid "File accesses: 0"
-#~ msgstr "Dosieraliro: 0"
-
-#~ msgid "Event: "
-#~ msgstr "Evento: "
-
-#~ msgid "Service/File:"
-#~ msgstr "Servo/dosiero:"
-
-#~ msgid "Host/User:"
-#~ msgstr "Komputilo/uzanto:"
-
-#~ msgid "&Search"
-#~ msgstr "&Serĉo"
-
-#~ msgid "Clear Results"
-#~ msgstr "Foviŝi rezultojn"
-
-#~ msgid "Show expanded service info"
-#~ msgstr "Montri ampleksan servoinformojn"
-
-#~ msgid "Show expanded host info"
-#~ msgstr "Montri ampleksan gastigajn informojn"
-
-#~ msgid "Nr"
-#~ msgstr "N-ro"
-
-#~ msgid "Hits"
-#~ msgstr "Trafoj"
-
-#~ msgid "Connection"
-#~ msgstr "Konekto"
-
-#~ msgid "File Access"
-#~ msgstr "Dosieraliro"
-
-#~ msgid "Connections: %1"
-#~ msgstr "Konektoj: %1"
-
-#~ msgid "File accesses: %1"
-#~ msgstr "Dosieraliroj: %1"
-
-#~ msgid "FILE OPENED"
-#~ msgstr "DOSIERO MALFERMITA"
-
-#~ msgid "Service"
-#~ msgstr "Servo"
-
-#~ msgid "UID"
-#~ msgstr "UID"
-
-#~ msgid "GID"
-#~ msgstr "GID"
-
-#~ msgid "PID"
-#~ msgstr "PID"
-
-#~ msgid "Open Files"
-#~ msgstr "dosieroj malf."
-
-#, fuzzy
-#~| msgid "Error: Unable to run smbstatus"
-#~ msgid "Error run smbstatus: %1"
-#~ msgstr "Eraro: ne eblas lanĉi \"smbstatus\""
-
-#~ msgid "Error: Unable to open configuration file \"smb.conf\""
-#~ msgstr "Eraro: Ne eblas malfermi la agordodosieron \"smb.conf\""
-
-#~ msgid "&Log"
-#~ msgstr "&Protokolo"
-
-#~ msgid "&Statistics"
-#~ msgstr "&Statistiko"
-
-#~ msgid ""
-#~ "<p>The Samba and NFS Status Monitor is a front end to the programs "
-#~ "<em>smbstatus</em> and <em>showmount</em>. Smbstatus reports on current "
-#~ "Samba connections, and is part of the suite of Samba tools, which "
-#~ "implements the SMB (Session Message Block) protocol, also called the "
-#~ "NetBIOS or LanManager protocol. This protocol can be used to provide "
-#~ "printer sharing or drive sharing services on a network including machines "
-#~ "running the various flavors of Microsoft Windows.</p>"
-#~ msgstr ""
-#~ "<p>La Samba- kaj NFS-statorigardilo estas fasado por la programoj "
-#~ "<em>smbstatus</em> kaj <em>showmount</em>. Smbstatus raportas pri "
-#~ "aktualaj Sambo-konektoj kaj estas parto de la Sambiloj, kiuj realigas la "
-#~ "SMB-protokolon (Session Message Block) , ankaŭ nomata NetBIOS- aŭ "
-#~ "LanManager-protokolo. Tiun protokolon oni povas uzi por komune uzi "
-#~ "presilojn aŭ dosierujojn en komputila reto kiu enhavas diversajn versiojn "
-#~ "de Microsoft Windows.</p>"
+msgstr "Malfermi dosierujajn trajtojn por ŝanĝi komunigecon"
