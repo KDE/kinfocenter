@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-30 00:54+0000\n"
-"PO-Revision-Date: 2023-01-04 16:40+0000\n"
+"PO-Revision-Date: 2023-01-09 18:54+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -16,29 +16,30 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-POFile-SpellExtra: OpenCL Linus Dierheimer\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "José Nuno Pires"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "zepires@gmail.com"
 
 #: main.cpp:25
 #, kde-format
 msgctxt "@label kcm name"
 msgid "OpenCL"
-msgstr ""
+msgstr "OpenCL"
 
 #: main.cpp:26
 #, kde-format
 msgid "Linus Dierheimer"
-msgstr ""
+msgstr "Linus Dierheimer"
 
 #: package/contents/ui/main.qml:16
 msgctxt "@info"
 msgid "OpenCL API Information"
-msgstr ""
+msgstr "Informação da API de OpenCL"
