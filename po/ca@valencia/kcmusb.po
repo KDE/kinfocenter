@@ -200,7 +200,7 @@ msgstr "Actualització del microprogramari del dispositiu"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Device Management"
-msgstr "Gestió del dispositiu"
+msgstr "Gestioneu el dispositiu"
 
 #: classes.i18n:30
 #, kde-format
