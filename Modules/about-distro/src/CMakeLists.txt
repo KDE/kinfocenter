@@ -24,6 +24,8 @@ set(kcm_SRCS
     PlasmaEntry.cpp
     PlasmaEntry.h
     ServiceRunner.cpp
+    ThirdPartyEntry.cpp
+    ThirdPartyEntry.h
 )
 
 kcoreaddons_add_plugin(kcm_about-distro SOURCES ${kcm_SRCS} INSTALL_NAMESPACE "plasma/kcms")

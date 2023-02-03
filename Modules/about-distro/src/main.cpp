@@ -28,6 +28,7 @@
 #include "OSVersionEntry.h"
 #include "PlasmaEntry.h"
 #include "ServiceRunner.h"
+#include "ThirdPartyEntry.h"
 #include "Version.h"
 
 #include <KAboutData>
@@ -151,6 +152,13 @@ public:
         // Default to not show Build
         const bool showBuild = cg.readEntry("ShowBuild", false);
 
+        // Check if distro want's us to show extra values
+        const QString entryName = QStringLiteral("ExtraSoftwareData");
+        const QStringList entries = cg.readXdgListEntry(entryName, QStringList());
+        for (const auto &script : entries) {
+            m_extraDataEntries.push_back(new ThirdPartyEntry(script));
+        }
+
         // as a product brand is different from Kubuntu.
         const QString distroName = cg.readEntry("Name", os.name());
         const QString osrVersion = cg.readEntry("UseOSReleaseVersion", false) ? os.version() : os.versionId();
@@ -243,6 +251,11 @@ public:
                           new KernelEntry(),
                           new GraphicsPlatformEntry()});
 
+        // Add any extraData entries
+        if (!m_extraDataEntries.empty()) {
+            addEntriesToGrid(m_softwareEntries, m_extraDataEntries);
+        }
+
         // hardware
         addEntriesToGrid(m_hardwareEntries, {new CPUEntry, new MemoryEntry, new GPUEntry});
 
@@ -317,6 +330,8 @@ public:
 
 private:
     std::vector<const Entry *> m_entries;
+    // Extra data distro wants to show in key/value pairs
+    std::vector<Entry *> m_extraDataEntries;
 
     Q_SIGNAL void changed();
 

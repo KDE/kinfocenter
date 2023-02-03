@@ -44,7 +44,7 @@ public:
     // Returns textual representation of entry.
     QString diagnosticLine(Language language = Language::System) const;
 
-    Q_SCRIPTABLE QString localizedLabel(Language language = Language::System) const;
+    Q_SCRIPTABLE virtual QString localizedLabel(Language language = Language::System) const;
 
     // Returns the value by default. Needs to be overridden in subclasses if localization
     // is needed for the value.
