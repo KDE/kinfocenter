@@ -114,29 +114,3 @@ msgid "Open folder properties to change share settings"
 msgstr ""
 "Obriu les propietats de la carpeta per a canviar la configuració de la "
 "compartició"
-
-#~ msgctxt "@title:column samba share name"
-#~ msgid "Name"
-#~ msgstr "Nom"
-
-#~ msgctxt "@title:column samba share dir path"
-#~ msgid "Path"
-#~ msgstr "Camí"
-
-#~ msgctxt "@title:column samba share text comment/description"
-#~ msgid "Comment"
-#~ msgstr "Comentari"
-
-#~ msgid "System Information Control Module"
-#~ msgstr "Mòdul de control d'informació del sistema"
-
-#~ msgid "Resource"
-#~ msgstr "Recurs"
-
-#~ msgid "Mounted Under"
-#~ msgstr "Muntat sota"
-
-#~ msgctxt ""
-#~ "@title:column whether a samba share is accessible locally (i.e. mounted)"
-#~ msgid "Accessible"
-#~ msgstr "Accessible"

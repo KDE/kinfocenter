@@ -45,23 +45,3 @@ msgstr "Harald Sitter"
 msgctxt "@info"
 msgid "Vulkan Graphics API Information"
 msgstr "Informació de l'API gràfica Vulkan"
-
-#~ msgctxt "@info"
-#~ msgid "The executable <command>%1</command> could not be found in $PATH."
-#~ msgstr "No s'ha pogut trobar l'executable <command>%1</command> a la $PATH."
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "The subprocess <command>%1</command> crashed unexpectedly. No data could "
-#~ "be obtained."
-#~ msgstr ""
-#~ "El subprocés <command>%1</command> ha fallat inesperadament. No es pot "
-#~ "obtenir cap dada."
-
-#~ msgctxt "@label placeholder text to filter for something"
-#~ msgid "Filter…"
-#~ msgstr "Filtre…"
-
-#~ msgctxt "accessible name for filter input"
-#~ msgid "Filter"
-#~ msgstr "Filtre"
