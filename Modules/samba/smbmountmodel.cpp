@@ -99,6 +99,7 @@ void SmbMountModel::reloadData()
         }
         switch (it->as<Solid::NetworkShare>()->type()) {
         case Solid::NetworkShare::Cifs:
+        case Solid::NetworkShare::Smb3:
             m_devices.append(*it);
             continue;
         case Solid::NetworkShare::Nfs:
