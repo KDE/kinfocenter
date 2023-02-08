@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-19 00:47+0000\n"
+"POT-Creation-Date: 2023-02-08 01:01+0000\n"
 "PO-Revision-Date: 2016-08-08 14:54-0600\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
@@ -70,13 +70,13 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1-ਬਿੱਟ"
 
-#: main.cpp:104
+#: main.cpp:105
 #, kde-format
 msgctxt "@title"
 msgid "About this System"
 msgstr ""
 
-#: main.cpp:107
+#: main.cpp:108
 #, fuzzy, kde-format
 #| msgctxt "@info:credit"
 #| msgid "Copyright 2012-2014 Harald Sitter"
@@ -84,44 +84,44 @@ msgctxt "@info:credit"
 msgid "Copyright 2012-2020 Harald Sitter"
 msgstr "Copyright 2012-2014 Harald Sitter"
 
-#: main.cpp:108
+#: main.cpp:109
 #, kde-format
 msgctxt "@info:credit"
 msgid "Harald Sitter"
 msgstr "ਹਾਰਾਲਡ ਸਿੱਟਰ"
 
-#: main.cpp:108
+#: main.cpp:109
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
 msgstr "ਲੇਖਕ"
 
-#: main.cpp:177
+#: main.cpp:185
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr ""
 
-#: main.cpp:180 main.cpp:197
+#: main.cpp:188 main.cpp:205
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr ""
 
-#: main.cpp:183
+#: main.cpp:191
 #, fuzzy, kde-format
 #| msgid "Qt Version:"
 msgctxt "@label"
 msgid "System Version:"
 msgstr "Qt ਵਰਜ਼ਨ:"
 
-#: main.cpp:186 main.cpp:200
+#: main.cpp:194 main.cpp:208
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr ""
 
-#: main.cpp:190 main.cpp:207
+#: main.cpp:198 main.cpp:215
 #, fuzzy, kde-format
 #| msgctxt "Unknown amount of RAM"
 #| msgid "Unknown"
@@ -129,19 +129,19 @@ msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "ਅਣਜਾਣ"
 
-#: main.cpp:203
+#: main.cpp:211
 #, fuzzy, kde-format
 #| msgid "Qt Version:"
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "Qt ਵਰਜ਼ਨ:"
 
-#: main.cpp:241
+#: main.cpp:249
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "KDE ਫਰੇਮਵਰਕਸ ਵਰਜ਼ਨ:"
 
-#: main.cpp:242
+#: main.cpp:250
 #, kde-format
 msgid "Qt Version:"
 msgstr "Qt ਵਰਜ਼ਨ:"
@@ -230,6 +230,12 @@ msgstr ""
 #, kde-format
 msgid "KDE Plasma Version:"
 msgstr "KDE ਪਲਾਜ਼ਮਾ ਵਰਜ਼ਨ:"
+
+#: ThirdPartyEntry.cpp:12
+#, kde-format
+msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
+msgid ":"
+msgstr ""
 
 #~ msgid "OS Type:"
 #~ msgstr "OS ਕਿਸਮ:"

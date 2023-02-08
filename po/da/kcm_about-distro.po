@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-19 00:47+0000\n"
+"POT-Creation-Date: 2023-02-08 01:01+0000\n"
 "PO-Revision-Date: 2020-07-27 22:17+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -67,7 +67,7 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1-bit"
 
-#: main.cpp:104
+#: main.cpp:105
 #, fuzzy, kde-format
 #| msgctxt "@title"
 #| msgid "About System"
@@ -75,50 +75,50 @@ msgctxt "@title"
 msgid "About this System"
 msgstr "Om systemet"
 
-#: main.cpp:107
+#: main.cpp:108
 #, kde-format
 msgctxt "@info:credit"
 msgid "Copyright 2012-2020 Harald Sitter"
 msgstr "Ophavsret 2012-2020 Harald Sitter"
 
-#: main.cpp:108
+#: main.cpp:109
 #, kde-format
 msgctxt "@info:credit"
 msgid "Harald Sitter"
 msgstr "Harald Sitter"
 
-#: main.cpp:108
+#: main.cpp:109
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
 msgstr "Ophavsmand"
 
-#: main.cpp:177
+#: main.cpp:185
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr ""
 
-#: main.cpp:180 main.cpp:197
+#: main.cpp:188 main.cpp:205
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr ""
 
-#: main.cpp:183
+#: main.cpp:191
 #, fuzzy, kde-format
 #| msgid "Qt Version:"
 msgctxt "@label"
 msgid "System Version:"
 msgstr "Qt-version:"
 
-#: main.cpp:186 main.cpp:200
+#: main.cpp:194 main.cpp:208
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr ""
 
-#: main.cpp:190 main.cpp:207
+#: main.cpp:198 main.cpp:215
 #, fuzzy, kde-format
 #| msgctxt "Unknown amount of RAM"
 #| msgid "Unknown"
@@ -126,19 +126,19 @@ msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "Ukendt"
 
-#: main.cpp:203
+#: main.cpp:211
 #, fuzzy, kde-format
 #| msgid "Qt Version:"
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "Qt-version:"
 
-#: main.cpp:241
+#: main.cpp:249
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "KDE Frameworks-version:"
 
-#: main.cpp:242
+#: main.cpp:250
 #, kde-format
 msgid "Qt Version:"
 msgstr "Qt-version:"
@@ -230,6 +230,12 @@ msgstr "Kopiér til udklipsholder på engelsk"
 #, kde-format
 msgid "KDE Plasma Version:"
 msgstr "KDE Plasma-version:"
+
+#: ThirdPartyEntry.cpp:12
+#, kde-format
+msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
+msgid ":"
+msgstr ""
 
 #~ msgid "Copy software and hardware information to clipboard"
 #~ msgstr "Kopiér information om software og hardware til udklipsholderen"

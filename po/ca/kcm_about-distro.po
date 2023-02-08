@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-19 00:47+0000\n"
+"POT-Creation-Date: 2023-02-08 01:01+0000\n"
 "PO-Revision-Date: 2022-11-04 13:34+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -67,72 +67,72 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1 (%2 bits)"
 
-#: main.cpp:104
+#: main.cpp:105
 #, kde-format
 msgctxt "@title"
 msgid "About this System"
 msgstr "Quant a aquest sistema"
 
-#: main.cpp:107
+#: main.cpp:108
 #, kde-format
 msgctxt "@info:credit"
 msgid "Copyright 2012-2020 Harald Sitter"
 msgstr "Copyright 2012-2020 Harald Sitter"
 
-#: main.cpp:108
+#: main.cpp:109
 #, kde-format
 msgctxt "@info:credit"
 msgid "Harald Sitter"
 msgstr "Harald Sitter"
 
-#: main.cpp:108
+#: main.cpp:109
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
 msgstr "Autor"
 
-#: main.cpp:177
+#: main.cpp:185
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr "Fabricant:"
 
-#: main.cpp:180 main.cpp:197
+#: main.cpp:188 main.cpp:205
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr "Nom del producte:"
 
-#: main.cpp:183
+#: main.cpp:191
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
 msgstr "Versió del sistema:"
 
-#: main.cpp:186 main.cpp:200
+#: main.cpp:194 main.cpp:208
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr "Número de sèrie:"
 
-#: main.cpp:190 main.cpp:207
+#: main.cpp:198 main.cpp:215
 #, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "Desconeguda:"
 
-#: main.cpp:203
+#: main.cpp:211
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "Versió de l'U-Boot:"
 
-#: main.cpp:241
+#: main.cpp:249
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "Versió dels Frameworks del KDE:"
 
-#: main.cpp:242
+#: main.cpp:250
 #, kde-format
 msgid "Qt Version:"
 msgstr "Versió de les Qt:"
@@ -219,3 +219,9 @@ msgstr "Copia al porta-retalls en anglès"
 #, kde-format
 msgid "KDE Plasma Version:"
 msgstr "Versió del Plasma del KDE:"
+
+#: ThirdPartyEntry.cpp:12
+#, kde-format
+msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
+msgid ":"
+msgstr ""

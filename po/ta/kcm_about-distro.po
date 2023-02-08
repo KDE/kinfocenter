@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-19 00:47+0000\n"
+"POT-Creation-Date: 2023-02-08 01:01+0000\n"
 "PO-Revision-Date: 2022-11-08 20:03+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -62,72 +62,72 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1 (%2-பிட்டு)"
 
-#: main.cpp:104
+#: main.cpp:105
 #, kde-format
 msgctxt "@title"
 msgid "About this System"
 msgstr "இக்கணினியை பற்றி"
 
-#: main.cpp:107
+#: main.cpp:108
 #, kde-format
 msgctxt "@info:credit"
 msgid "Copyright 2012-2020 Harald Sitter"
 msgstr "பதிப்புரிமை 2012–2020 ஹாரல்ட் சிட்டர்"
 
-#: main.cpp:108
+#: main.cpp:109
 #, kde-format
 msgctxt "@info:credit"
 msgid "Harald Sitter"
 msgstr "ஹாரல்ட் சிட்டர்"
 
-#: main.cpp:108
+#: main.cpp:109
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
 msgstr "இயற்றியவர்"
 
-#: main.cpp:177
+#: main.cpp:185
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr "உற்பத்தியாளர்:"
 
-#: main.cpp:180 main.cpp:197
+#: main.cpp:188 main.cpp:205
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr "உற்பத்திப்பொருளின் பெயர்:"
 
-#: main.cpp:183
+#: main.cpp:191
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
 msgstr "கணினியின் வகை:"
 
-#: main.cpp:186 main.cpp:200
+#: main.cpp:194 main.cpp:208
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr "தொடர் எண்:"
 
-#: main.cpp:190 main.cpp:207
+#: main.cpp:198 main.cpp:215
 #, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "தெரியாதது:"
 
-#: main.cpp:203
+#: main.cpp:211
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "U-boot பதிப்பு:"
 
-#: main.cpp:241
+#: main.cpp:249
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "கே.டீ.யீ. நிரலகங்களின் பதிப்பு:"
 
-#: main.cpp:242
+#: main.cpp:250
 #, kde-format
 msgid "Qt Version:"
 msgstr "Qt பதிப்பு:"
@@ -214,3 +214,9 @@ msgstr "பிடிப்புப்பலகைக்கு ஆங்கி�
 #, kde-format
 msgid "KDE Plasma Version:"
 msgstr "கே.டீ.யீ பிளாஸ்மா பதிப்பு:"
+
+#: ThirdPartyEntry.cpp:12
+#, kde-format
+msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
+msgid ":"
+msgstr ""
