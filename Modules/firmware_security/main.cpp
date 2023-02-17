@@ -3,7 +3,6 @@
     SPDX-FileCopyrightText: 2021-2022 Harald Sitter <sitter@kde.org>
 */
 
-#include <KAboutData>
 #include <KLocalizedString>
 #include <KPackage/PackageLoader>
 #include <KPluginFactory>
@@ -18,17 +17,9 @@ public:
     explicit KCMFirmwareSecurity(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
         : ConfigModule(parent, data, args)
     {
-        auto *about = new KAboutData(QStringLiteral("kcm_firmware_security"),
-                                     i18nc("@label kcm name", "Firmware Security"),
-                                     QStringLiteral("1.0"),
-                                     QString(),
-                                     KAboutLicense::GPL);
-        about->addAuthor(i18n("Harald Sitter"), QString(), QStringLiteral("sitter@kde.org"));
-        setAboutData(about);
-
         KPackage::Package package = KPackage::PackageLoader::self()->loadPackage(QStringLiteral("KPackage/GenericQML"));
         package.setDefaultPackageRoot(QStringLiteral("kpackage/kcms"));
-        package.setPath(about->componentName());
+        package.setPath(data.pluginId());
 
         auto outputContext = new CommandOutputContext({QStringLiteral("fwupdmgr"), QStringLiteral("aha")},
                                                       QStringLiteral("/bin/sh"),

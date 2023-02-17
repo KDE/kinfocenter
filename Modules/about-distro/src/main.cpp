@@ -10,7 +10,6 @@
 #include <QIcon>
 #include <QLocale>
 
-#include <KAboutData>
 #include <KAuth/Action>
 #include <KAuth/ExecuteJob>
 #include <KConfig>
@@ -99,15 +98,6 @@ public:
     explicit KCMAboutSystem(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
         : ConfigModule(parent, data, args)
     {
-        auto aboutData = new KAboutData;
-        aboutData->setComponentName(QStringLiteral("kcm_about-distro"));
-        aboutData->setDisplayName(i18nc("@title", "About this System"));
-        aboutData->setVersion(QByteArrayLiteral(PROJECT_VERSION));
-        aboutData->setLicense(KAboutLicense::LicenseKey::GPL_V3);
-        aboutData->setCopyrightStatement(i18nc("@info:credit", "Copyright 2012-2020 Harald Sitter"));
-        aboutData->addAuthor(i18nc("@info:credit", "Harald Sitter"), i18nc("@info:credit", "Author"), QStringLiteral("sitter@kde.org"));
-        setAboutData(aboutData);
-
         qmlRegisterType<ServiceRunner>("org.kde.kinfocenter.about_distro.private", 1, 0, "ServiceRunner");
 
         // https://bugs.kde.org/show_bug.cgi?id=366158

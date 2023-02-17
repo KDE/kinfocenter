@@ -4,7 +4,6 @@
     SPDX-FileCopyrightText: 2022 Tobias C. Berner <tcberner@FreeBSD.org>
 */
 
-#include <KAboutData>
 #include <KLocalizedString>
 #include <KPluginFactory>
 #include <KQuickAddons/ConfigModule>
@@ -22,10 +21,6 @@ public:
     {
         auto outputContext = new CommandOutputContext(QStringLiteral(PCI_BACKEND), {QStringLiteral(PCI_BACKEND_ARGUMENTS)}, parent);
         qmlRegisterSingletonInstance("org.kde.kinfocenter.pci.private", 1, 0, "InfoOutputContext", outputContext);
-
-        auto *about = new KAboutData(QStringLiteral("kcm_pci"), i18nc("@label kcm name", "PCI"), QStringLiteral("1.0"), QString(), KAboutLicense::GPL);
-        about->addAuthor(i18n("Harald Sitter"), QString(), QStringLiteral("sitter@kde.org"));
-        setAboutData(about);
     }
 };
 

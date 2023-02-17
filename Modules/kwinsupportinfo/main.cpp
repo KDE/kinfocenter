@@ -4,7 +4,6 @@
     SPDX-FileCopyrightText: 2022 Nate Graham <nate@kde.org>
 */
 
-#include <KAboutData>
 #include <KLocalizedString>
 #include <KPluginFactory>
 #include <KQuickAddons/ConfigModule>
@@ -23,14 +22,6 @@ public:
                                                       {QStringLiteral("org.kde.KWin"), QStringLiteral("/KWin"), QStringLiteral("supportInformation")},
                                                       parent);
         qmlRegisterSingletonInstance("org.kde.kinfocenter.kwinsupportinfo.private", 1, 0, "InfoOutputContext", outputContext);
-
-        auto *about = new KAboutData(QStringLiteral("kcm_kwinsupportinfo"),
-                                     i18nc("@label kcm name", "Window Manager"),
-                                     QStringLiteral("1.0"),
-                                     QString(),
-                                     KAboutLicense::GPL);
-        about->addAuthor(i18n("Nate Graham"), QString(), QStringLiteral("nate@kde.org"));
-        setAboutData(about);
     }
 };
 

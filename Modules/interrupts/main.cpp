@@ -3,7 +3,6 @@
     SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
 */
 
-#include <KAboutData>
 #include <KLocalizedString>
 #include <KPluginFactory>
 #include <KQuickAddons/ConfigModule>
@@ -24,10 +23,6 @@ public:
             new CommandOutputContext(QStringLiteral("cat"), {QStringLiteral("/proc/interrupts")}, parent);
 #endif
         qmlRegisterSingletonInstance("org.kde.kinfocenter.interrupts.private", 1, 0, "InfoOutputContext", outputContext);
-
-        auto *about = new KAboutData(QStringLiteral("kcm_interrupts"), i18nc("@label kcm name", "Interrupts"), QStringLiteral("1.0"), QString(), KAboutLicense::GPL);
-        about->addAuthor(i18n("Harald Sitter"), QString(), QStringLiteral("sitter@kde.org"));
-        setAboutData(about);
     }
 };
 

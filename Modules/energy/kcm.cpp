@@ -6,7 +6,6 @@
 
 #include "kcm.h"
 
-#include <KAboutData>
 #include <KPluginFactory>
 #include <QDebug>
 #include <QStandardPaths>
@@ -36,11 +35,6 @@ KCMEnergyInfo::KCMEnergyInfo(QObject *parent, const KPluginMetaData &data, const
 
     qmlRegisterType<StatisticsProvider>("org.kde.kinfocenter.energy.private", 1, 0, "HistoryModel");
     qmlRegisterUncreatableType<BatteryModel>("org.kde.kinfocenter.energy.private", 1, 0, "BatteryModel", QStringLiteral("Use BatteryModel"));
-
-    KAboutData *about =
-        new KAboutData(QStringLiteral("kcm_energyinfo"), i18n("Energy Consumption Statistics"), QStringLiteral("0.2"), QString(), KAboutLicense::GPL);
-    about->addAuthor(i18n("Kai Uwe Broulik"), QString(), QStringLiteral("kde@privat.broulik.de"));
-    setAboutData(about);
 
     m_batteries = new BatteryModel(this);
 }
