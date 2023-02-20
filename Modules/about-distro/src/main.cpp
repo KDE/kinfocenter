@@ -31,7 +31,6 @@
 #include "ThirdPartyEntry.h"
 #include "Version.h"
 
-#include <KAboutData>
 #include <KLocalizedString>
 #include <KPluginFactory>
 #include <KQuickAddons/ConfigModule>
