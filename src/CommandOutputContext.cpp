@@ -97,7 +97,7 @@ void CommandOutputContext::load()
         if (it.value().isEmpty()) {
             setError(xi18nc("@info", "The <command>%1</command> tool is required to display this page, but could not be found", it.key()),
                      xi18nc("@info",
-                            "You can search for it and install it your using your package manager.<nl/>"
+                            "You can search for it and install it using your package manager.<nl/>"
                             "Then please report this packaging issue to your distribution."));
             return;
         }
