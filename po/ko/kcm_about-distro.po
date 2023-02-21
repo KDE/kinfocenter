@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-08 01:01+0000\n"
+"POT-Creation-Date: 2023-02-21 01:01+0000\n"
 "PO-Revision-Date: 2022-08-09 13:20+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -61,72 +61,72 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1(%2비트)"
 
-#: main.cpp:105
+#: main.cpp:104
 #, kde-format
 msgctxt "@title"
 msgid "About this System"
 msgstr "이 시스템 정보"
 
-#: main.cpp:108
+#: main.cpp:107
 #, kde-format
 msgctxt "@info:credit"
 msgid "Copyright 2012-2020 Harald Sitter"
 msgstr "Copyright 2012-2020 Harald Sitter"
 
-#: main.cpp:109
+#: main.cpp:108
 #, kde-format
 msgctxt "@info:credit"
 msgid "Harald Sitter"
 msgstr "Harald Sitter"
 
-#: main.cpp:109
+#: main.cpp:108
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
 msgstr "작성자"
 
-#: main.cpp:185
+#: main.cpp:184
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr "제조사:"
 
-#: main.cpp:188 main.cpp:205
+#: main.cpp:187 main.cpp:204
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr "제품 이름:"
 
-#: main.cpp:191
+#: main.cpp:190
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
 msgstr "시스템 버전:"
 
-#: main.cpp:194 main.cpp:208
+#: main.cpp:193 main.cpp:207
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr "일련 번호:"
 
-#: main.cpp:198 main.cpp:215
+#: main.cpp:197 main.cpp:214
 #, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "알 수 없음:"
 
-#: main.cpp:211
+#: main.cpp:210
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "U-Boot 버전:"
 
-#: main.cpp:249
+#: main.cpp:248
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "KDE 프레임워크 버전:"
 
-#: main.cpp:250
+#: main.cpp:249
 #, kde-format
 msgid "Qt Version:"
 msgstr "Qt 버전:"

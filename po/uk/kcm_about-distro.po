@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-08 01:01+0000\n"
+"POT-Creation-Date: 2023-02-21 01:01+0000\n"
 "PO-Revision-Date: 2023-02-08 08:23+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -67,72 +67,72 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1 (%2-бітова)"
 
-#: main.cpp:105
+#: main.cpp:104
 #, kde-format
 msgctxt "@title"
 msgid "About this System"
 msgstr "Про цю систему"
 
-#: main.cpp:108
+#: main.cpp:107
 #, kde-format
 msgctxt "@info:credit"
 msgid "Copyright 2012-2020 Harald Sitter"
 msgstr "© Harald Sitter, 2012–2020"
 
-#: main.cpp:109
+#: main.cpp:108
 #, kde-format
 msgctxt "@info:credit"
 msgid "Harald Sitter"
 msgstr "Harald Sitter"
 
-#: main.cpp:109
+#: main.cpp:108
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
 msgstr "Автор"
 
-#: main.cpp:185
+#: main.cpp:184
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr "Виробник:"
 
-#: main.cpp:188 main.cpp:205
+#: main.cpp:187 main.cpp:204
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr "Назва продукту:"
 
-#: main.cpp:191
+#: main.cpp:190
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
 msgstr "Версія системи:"
 
-#: main.cpp:194 main.cpp:208
+#: main.cpp:193 main.cpp:207
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr "Серійний номер:"
 
-#: main.cpp:198 main.cpp:215
+#: main.cpp:197 main.cpp:214
 #, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "Невідоме:"
 
-#: main.cpp:211
+#: main.cpp:210
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "Версія U-Boot:"
 
-#: main.cpp:249
+#: main.cpp:248
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "Версія Frameworks KDE:"
 
-#: main.cpp:250
+#: main.cpp:249
 #, kde-format
 msgid "Qt Version:"
 msgstr "Версія Qt:"

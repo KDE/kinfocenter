@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
 #
-# Phu Hung Nguyen <phu.nguyen@kdemail.net>, 2021, 2022.
+# Phu Hung Nguyen <phu.nguyen@kdemail.net>, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-08 01:01+0000\n"
-"PO-Revision-Date: 2022-11-14 14:46+0100\n"
+"POT-Creation-Date: 2023-02-21 01:01+0000\n"
+"PO-Revision-Date: 2023-02-20 10:53+0100\n"
 "Last-Translator: Phu Hung Nguyen <phu.nguyen@kdemail.net>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
 "Language: vi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 22.08.1\n"
+"X-Generator: Lokalize 22.12.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -61,72 +61,72 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1 (%2-bit)"
 
-#: main.cpp:105
+#: main.cpp:104
 #, kde-format
 msgctxt "@title"
 msgid "About this System"
 msgstr "Về hệ thống này"
 
-#: main.cpp:108
+#: main.cpp:107
 #, kde-format
 msgctxt "@info:credit"
 msgid "Copyright 2012-2020 Harald Sitter"
 msgstr "Bản quyền 2012-2020 Harald Sitter"
 
-#: main.cpp:109
+#: main.cpp:108
 #, kde-format
 msgctxt "@info:credit"
 msgid "Harald Sitter"
 msgstr "Harald Sitter"
 
-#: main.cpp:109
+#: main.cpp:108
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
 msgstr "Tác giả"
 
-#: main.cpp:185
+#: main.cpp:184
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr "Nhà sản xuất:"
 
-#: main.cpp:188 main.cpp:205
+#: main.cpp:187 main.cpp:204
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr "Tên sản phẩm:"
 
-#: main.cpp:191
+#: main.cpp:190
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
 msgstr "Phiên bản hệ thống:"
 
-#: main.cpp:194 main.cpp:208
+#: main.cpp:193 main.cpp:207
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr "Số loạt:"
 
-#: main.cpp:198 main.cpp:215
+#: main.cpp:197 main.cpp:214
 #, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "Không rõ:"
 
-#: main.cpp:211
+#: main.cpp:210
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "Phiên bản U-Boot:"
 
-#: main.cpp:249
+#: main.cpp:248
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "Phiên bản Các Kết cấu KDE:"
 
-#: main.cpp:250
+#: main.cpp:249
 #, kde-format
 msgid "Qt Version:"
 msgstr "Phiên bản Qt:"
@@ -218,7 +218,7 @@ msgstr "Phiên bản Plasma KDE:"
 #, kde-format
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
-msgstr ""
+msgstr ":"
 
 #~ msgid "Copy software and hardware information to clipboard"
 #~ msgstr "Chép thông tin phần mềm và phần cứng vào bảng nháp"
