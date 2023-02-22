@@ -120,6 +120,7 @@ KCM.SimpleKCM {
                     QQC2.Button {
                         visible: hidden
                         property var dialog: null
+                        icon.name: "view-visible"
                         text: i18nc("@action:button show a hidden entry in an overlay", "Show")
                         onClicked: {
                             if (!dialog) {
