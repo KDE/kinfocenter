@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-21 01:01+0000\n"
+"POT-Creation-Date: 2023-02-23 00:59+0000\n"
 "PO-Revision-Date: 2023-02-17 10:58+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -182,37 +182,37 @@ msgctxt "@title"
 msgid "Serial Number"
 msgstr "Серийный номер"
 
-#: package/contents/ui/main.qml:97 package/contents/ui/main.qml:177
+#: package/contents/ui/main.qml:97 package/contents/ui/main.qml:178
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr "Копировать в буфер обмена"
 
-#: package/contents/ui/main.qml:123
+#: package/contents/ui/main.qml:124
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
 msgstr "Показать"
 
-#: package/contents/ui/main.qml:135
+#: package/contents/ui/main.qml:136
 #, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "Программы"
 
-#: package/contents/ui/main.qml:145
+#: package/contents/ui/main.qml:146
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "Оборудование"
 
-#: package/contents/ui/main.qml:165
+#: package/contents/ui/main.qml:166
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Show More Information"
 msgstr "Показать дополнительную информацию"
 
-#: package/contents/ui/main.qml:184
+#: package/contents/ui/main.qml:185
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard in English"
