@@ -16,10 +16,10 @@ set(kcm_nic_PART_SRCS
 kcoreaddons_add_plugin(kcm_nic SOURCES ${kcm_nic_PART_SRCS} INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
 
 target_link_libraries(kcm_nic
-    KF5::I18n
-    KF5::CoreAddons
-    KF5::KCMUtils
-    KF5::QuickAddons)
+    KF6::I18n
+    KF6::CoreAddons
+    KF6::KCMUtils
+    KF6::QuickAddons)
 
 target_compile_features(kcm_nic PUBLIC cxx_std_14)
 

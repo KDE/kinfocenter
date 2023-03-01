@@ -2,11 +2,11 @@ project(kinfocenter)
 set(PROJECT_VERSION "5.27.80")
 
 cmake_minimum_required(VERSION 3.16)
-set(QT_MIN_VERSION "5.15.2")
+set(QT_MIN_VERSION "6.4")
 
-set(KF5_MIN_VERSION "5.97")
+set(KF6_MIN_VERSION "5.240")
 set(KDE_COMPILERSETTINGS_LEVEL "5.82")
-find_package(ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
+find_package(ECM ${KF6_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH}  ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -22,9 +22,9 @@ include(KDEGitCommitHooks)
 include(ECMSetupQtPluginMacroNames)
 include(ECMQueryQt)
 
-find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Core Gui Widgets)
+find_package(Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Core Gui Widgets)
 
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
+find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
     Config
     ConfigWidgets
     CoreAddons

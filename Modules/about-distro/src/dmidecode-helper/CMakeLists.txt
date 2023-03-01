@@ -7,8 +7,8 @@ set_package_properties(dmidecode PROPERTIES TYPE RUNTIME)
 add_executable(kinfocenter-dmidecode-helper helper.cpp)
 target_link_libraries(kinfocenter-dmidecode-helper
     Qt::Widgets
-    KF5::AuthCore
-    KF5::I18n
+    KF6::AuthCore
+    KF6::I18n
 )
 
 kauth_install_actions(org.kde.kinfocenter.dmidecode org.kde.kinfocenter.dmidecode.actions)

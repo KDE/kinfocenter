@@ -32,13 +32,13 @@ kcoreaddons_add_plugin(kcm_about-distro SOURCES ${kcm_SRCS} INSTALL_NAMESPACE "p
 
 kcmutils_generate_desktop_file(kcm_about-distro)
 target_link_libraries(kcm_about-distro
-    KF5::CoreAddons
-    KF5::I18n
-    KF5::ConfigCore
-    KF5::QuickAddons
-    KF5::Solid
-    KF5::Service
-    KF5::KIOGui
-    KF5::AuthCore)
+    KF6::CoreAddons
+    KF6::I18n
+    KF6::ConfigCore
+    KF6::QuickAddons
+    KF6::Solid
+    KF6::Service
+    KF6::KIOGui
+    KF6::AuthCore)
 
 kpackage_install_package(package kcm_about-distro kcms)

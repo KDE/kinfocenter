@@ -5,7 +5,7 @@
 add_definitions(-DTRANSLATION_DOMAIN=\"kcm_kwinsupportinfo\")
 
 add_library(kcm_kwinsupportinfo MODULE main.cpp)
-target_link_libraries(kcm_kwinsupportinfo KF5::CoreAddons KF5::QuickAddons KF5::I18n KInfoCenterInternal)
+target_link_libraries(kcm_kwinsupportinfo KF6::CoreAddons KF6::QuickAddons KF6::I18n KInfoCenterInternal)
 
 install(TARGETS kcm_kwinsupportinfo DESTINATION ${KDE_INSTALL_PLUGINDIR}/plasma/kcms/kinfocenter)
 

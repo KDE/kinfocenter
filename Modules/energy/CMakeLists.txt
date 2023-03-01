@@ -15,12 +15,12 @@ kcoreaddons_add_plugin(kcm_energyinfo SOURCES ${kcm_energyinfo_SRCS} INSTALL_NAM
 target_link_libraries(kcm_energyinfo
   Qt::DBus
   Qt::Widgets
-  KF5::KIOWidgets
-  KF5::CoreAddons
-  KF5::KCMUtils
-  KF5::I18n
-  KF5::Solid
-  KF5::QuickAddons
+  KF6::KIOWidgets
+  KF6::CoreAddons
+  KF6::KCMUtils
+  KF6::I18n
+  KF6::Solid
+  KF6::QuickAddons
 )
 
 kpackage_install_package(package kcm_energyinfo kcms)

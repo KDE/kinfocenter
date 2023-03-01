@@ -5,9 +5,9 @@ set( devinfoSources soldevice.cpp devinfo.cpp devicelisting.cpp infopanel.cpp so
 
 kcoreaddons_add_plugin(kcm_devinfo SOURCES ${devinfoSources} INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
 target_link_libraries(kcm_devinfo
-    KF5::KCMUtils
-    KF5::I18n
-    KF5::KIOCore
-    KF5::KIOWidgets
-    KF5::Solid
+    KF6::KCMUtils
+    KF6::I18n
+    KF6::KIOCore
+    KF6::KIOWidgets
+    KF6::Solid
 )

@@ -14,18 +14,18 @@ qt_add_dbus_interface(kcm_samba_PART_SRCS org.freedesktop.Avahi.Server.xml org.f
 add_library(kcm_samba_static STATIC ${kcm_samba_PART_SRCS})
 set_property(TARGET kcm_samba_static PROPERTY POSITION_INDEPENDENT_CODE ON)
 target_link_libraries(kcm_samba_static
-    KF5::KIOCore
-    KF5::Solid
-    KF5::I18n
-    KF5::KCMUtils
-    KF5::KIOWidgets
+    KF6::KIOCore
+    KF6::Solid
+    KF6::I18n
+    KF6::KCMUtils
+    KF6::KIOWidgets
 )
 
 set(kcm_samba_SRCS main.cpp)
 qt_add_dbus_interface(kcm_samba_SRCS org.freedesktop.DBus.Properties.xml org.freedesktop.DBus.Properties)
 kcoreaddons_add_plugin(kcm_samba SOURCES ${kcm_samba_SRCS} INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
 target_link_libraries(kcm_samba
-    KF5::QuickAddons
+    KF6::QuickAddons
     kcm_samba_static
 )
 
