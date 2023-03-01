@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-14 00:46+0000\n"
+"POT-Creation-Date: 2023-03-01 23:30+0000\n"
 "PO-Revision-Date: 2020-11-15 16:54+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -21,16 +21,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 20.08.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Iñigo Salvador Azurmendi,Hizkuntza Politikarako Sailburuordetza"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "xalba@euskalnet.net,hizpol@ej-gv.es"
 
 #: networkmodel.cpp:159
 #, kde-format
@@ -55,47 +45,6 @@ msgstr "Multidifusioa"
 msgctxt "@item:intable Network type"
 msgid "Loopback"
 msgstr "Atzera-begizta"
-
-#: nic.cpp:21
-#, kde-format
-msgid "kcm_nic"
-msgstr "kcm_nic"
-
-#: nic.cpp:22
-#, kde-format
-msgctxt "@title:window"
-msgid "Network Interfaces"
-msgstr "Sareko interfazeak"
-
-#: nic.cpp:26
-#, kde-format
-msgctxt "@info"
-msgid "(c) 2001 - 2002 Alexander Neundorf"
-msgstr "(c) 2001 - 2002 Alexander Neundorf"
-
-#: nic.cpp:28
-#, kde-format
-msgctxt "@info:credit"
-msgid "Alexander Neundorf"
-msgstr "Alexander Neundorf"
-
-#: nic.cpp:28
-#, kde-format
-msgctxt "@info:credit"
-msgid "creator"
-msgstr "sortzailea"
-
-#: nic.cpp:29
-#, kde-format
-msgctxt "@info:credit"
-msgid "Carl Schwan"
-msgstr "Carl Schwan"
-
-#: nic.cpp:29
-#, kde-format
-msgctxt "@info:credit"
-msgid "developer"
-msgstr "garatzailea"
 
 #: package/contents/ui/main.qml:15
 #, kde-format
@@ -155,6 +104,41 @@ msgstr "Behera"
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr "Freskatu"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Iñigo Salvador Azurmendi,Hizkuntza Politikarako Sailburuordetza"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "xalba@euskalnet.net,hizpol@ej-gv.es"
+
+#~ msgid "kcm_nic"
+#~ msgstr "kcm_nic"
+
+#~ msgctxt "@title:window"
+#~ msgid "Network Interfaces"
+#~ msgstr "Sareko interfazeak"
+
+#~ msgctxt "@info"
+#~ msgid "(c) 2001 - 2002 Alexander Neundorf"
+#~ msgstr "(c) 2001 - 2002 Alexander Neundorf"
+
+#~ msgctxt "@info:credit"
+#~ msgid "Alexander Neundorf"
+#~ msgstr "Alexander Neundorf"
+
+#~ msgctxt "@info:credit"
+#~ msgid "creator"
+#~ msgstr "sortzailea"
+
+#~ msgctxt "@info:credit"
+#~ msgid "Carl Schwan"
+#~ msgstr "Carl Schwan"
+
+#~ msgctxt "@info:credit"
+#~ msgid "developer"
+#~ msgstr "garatzailea"
 
 #~ msgctxt "@item:intext Mode of network card"
 #~ msgid "Broadcast"

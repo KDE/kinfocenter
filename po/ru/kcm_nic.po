@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-14 00:46+0000\n"
+"POT-Creation-Date: 2023-03-01 23:30+0000\n"
 "PO-Revision-Date: 2020-10-04 13:32+0200\n"
 "Last-Translator: Alexander Potashev <aspotashev@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -22,16 +22,6 @@ msgstr ""
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Леонид Кантер,Александр Поташев"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "leon@asplinux.ru,aspotashev@gmail.com"
 
 #: networkmodel.cpp:159
 #, kde-format
@@ -57,47 +47,6 @@ msgstr "Многоадресная рассылка"
 msgctxt "@item:intable Network type"
 msgid "Loopback"
 msgstr "Loopback"
-
-#: nic.cpp:21
-#, kde-format
-msgid "kcm_nic"
-msgstr "kcm_nic"
-
-#: nic.cpp:22
-#, kde-format
-msgctxt "@title:window"
-msgid "Network Interfaces"
-msgstr "Сетевые интерфейсы"
-
-#: nic.cpp:26
-#, kde-format
-msgctxt "@info"
-msgid "(c) 2001 - 2002 Alexander Neundorf"
-msgstr "© Alexander Neundorf, 2001-2002"
-
-#: nic.cpp:28
-#, kde-format
-msgctxt "@info:credit"
-msgid "Alexander Neundorf"
-msgstr "Alexander Neundorf"
-
-#: nic.cpp:28
-#, kde-format
-msgctxt "@info:credit"
-msgid "creator"
-msgstr "Автор"
-
-#: nic.cpp:29
-#, kde-format
-msgctxt "@info:credit"
-msgid "Carl Schwan"
-msgstr "Carl Schwan"
-
-#: nic.cpp:29
-#, kde-format
-msgctxt "@info:credit"
-msgid "developer"
-msgstr "Разработчик"
 
 #: package/contents/ui/main.qml:15
 #, kde-format
@@ -157,6 +106,41 @@ msgstr "Отключён"
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr "Обновить"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Леонид Кантер,Александр Поташев"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "leon@asplinux.ru,aspotashev@gmail.com"
+
+#~ msgid "kcm_nic"
+#~ msgstr "kcm_nic"
+
+#~ msgctxt "@title:window"
+#~ msgid "Network Interfaces"
+#~ msgstr "Сетевые интерфейсы"
+
+#~ msgctxt "@info"
+#~ msgid "(c) 2001 - 2002 Alexander Neundorf"
+#~ msgstr "© Alexander Neundorf, 2001-2002"
+
+#~ msgctxt "@info:credit"
+#~ msgid "Alexander Neundorf"
+#~ msgstr "Alexander Neundorf"
+
+#~ msgctxt "@info:credit"
+#~ msgid "creator"
+#~ msgstr "Автор"
+
+#~ msgctxt "@info:credit"
+#~ msgid "Carl Schwan"
+#~ msgstr "Carl Schwan"
+
+#~ msgctxt "@info:credit"
+#~ msgid "developer"
+#~ msgstr "Разработчик"
 
 #~ msgctxt "@item:intext Mode of network card"
 #~ msgid "Broadcast"

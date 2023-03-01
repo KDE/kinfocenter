@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_pci\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-01-23 03:47+0100\n"
+"POT-Creation-Date: 2022-05-24 00:45+0000\n"
 "PO-Revision-Date: 2016-03-13 14:33+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -29,2534 +29,1663 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "caslav.ilic@gmx.net"
 
-#: kcm_pci.cpp:42
-#, kde-format
-msgid "kcm_pci"
-msgstr "КЦМ‑ПЦИ"
-
-#: kcm_pci.cpp:43
-#, kde-format
-msgid "PCI Devices"
-msgstr "ПЦИ уређаји"
-
-#: kcm_pci.cpp:45
-#, kde-format
-msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
-msgstr ""
-"© 2008, Никола Тернизјен\n"
-"© 1998-2002, Хелге Делер"
-
-#: kcm_pci.cpp:48
-#, kde-format
-msgid "Nicolas Ternisien"
-msgstr "Никола Тернизјен"
-
-#: kcm_pci.cpp:49
-#, kde-format
-msgid "Helge Deller"
-msgstr "Хелге Делер"
-
-#: kcm_pci.cpp:62
-#, kde-format
-msgid "This list displays PCI information."
-msgstr "Списак података о ПЦИ‑ја."
-
-#: kcm_pci.cpp:82
-#, kde-format
-msgid ""
-"This display shows information about your computer's PCI slots and the "
-"related connected devices."
-msgstr "Подаци о ПЦИ лежиштима у рачунару и на њих повезаним уређајима."
-
-# >> @item:intable
-#: kpci.cpp:64
-#, kde-format
-msgid "Device Class"
-msgstr "класа уређаја"
-
-# >> @item:intable
-#: kpci.cpp:65
-#, kde-format
-msgid "Device Subclass"
-msgstr "поткласа уређаја"
-
-# >> @item:intable
-#: kpci.cpp:66
-#, kde-format
-msgid "Device Programming Interface"
-msgstr "програмско сучеље уређаја"
-
-# >> @item:intable
-#: kpci.cpp:68
-#, kde-format
-msgid "Master IDE Device"
-msgstr "главни ИДЕ уређај"
-
-# >> @item:intable
-#: kpci.cpp:69
-#, kde-format
-msgid "Secondary programmable indicator"
-msgstr "секундарни програмабилни показатељ"
-
-# >> @item:intable
-#: kpci.cpp:70
-#, kde-format
-msgid "Secondary operating mode"
-msgstr "секундарни режим рада"
-
-# >> @item:intable
-#: kpci.cpp:71
-#, kde-format
-msgid "Primary programmable indicator"
-msgstr "примарни програмабилни показатељ"
-
-# >> @item:intable
-#: kpci.cpp:72
-#, kde-format
-msgid "Primary operating mode"
-msgstr "примарни режим рада"
-
-# >> @item:intable
-#: kpci.cpp:100 kpci.cpp:124
-#, kde-format
-msgid "Vendor"
-msgstr "произвођач"
-
-# >> @item:intable
-#: kpci.cpp:107 kpci.cpp:126
-#, kde-format
-msgid "Device"
-msgstr "уређај"
-
-# >> @item:intable
-#: kpci.cpp:116 kpci.cpp:135 kpci.cpp:138 kpci.cpp:142
-#, kde-format
-msgid "Subsystem"
-msgstr "подсистем"
-
-# >> @item:intext
-#: kpci.cpp:135
-#, kde-format
-msgid " - device:"
-msgstr " — уређај:"
-
-# >> @item:intable
-#: kpci.cpp:152 kpci.cpp:172
-#, kde-format
-msgid "Interrupt"
-msgstr "прекид"
-
-# >> @item:intable
-#: kpci.cpp:153
-#, kde-format
-msgid "IRQ"
-msgstr "ИРКу"
-
-# >> @item:intable
-#: kpci.cpp:154
-#, kde-format
-msgid "Pin"
-msgstr "пин"
-
-# >> @item:intable
-#: kpci.cpp:161
-#, kde-format
-msgid "Control"
-msgstr "контрола"
-
-# >> @item:intable
-#: kpci.cpp:162
-#, kde-format
-msgid "Response in I/O space"
-msgstr "одзив у У/И простору"
-
-# >> @item:intable
-#: kpci.cpp:163
-#, kde-format
-msgid "Response in memory space"
-msgstr "одзив у меморијском простору"
-
-# >> @item:intable
-#: kpci.cpp:164
-#, kde-format
-msgid "Bus mastering"
-msgstr "владање магистралом"
-
-# >> @item:intable
-#: kpci.cpp:165
-#, kde-format
-msgid "Response to special cycles"
-msgstr "одзив на посебне циклусе"
-
-# >> @item:intable
-#: kpci.cpp:166
-#, kde-format
-msgid "Memory write and invalidate"
-msgstr "писање и поништавање меморије"
-
-# >> @item:intable
-#: kpci.cpp:167
-#, kde-format
-msgid "Palette snooping"
-msgstr "забадање палете"
-
-# >> @item:intable
-#: kpci.cpp:168
-#, kde-format
-msgid "Parity checking"
-msgstr "провера паритета"
-
-# >> @item:intable
-#: kpci.cpp:169
-#, kde-format
-msgid "Address/data stepping"
-msgstr "корачање кроз адресе/податке"
-
-# >> @item:intable
-#: kpci.cpp:170
-#, kde-format
-msgid "System error"
-msgstr "системска грешка"
-
-# >> @item:intable
-#: kpci.cpp:171
-#, kde-format
-msgid "Back-to-back writes"
-msgstr "залеђни уписи"
-
-# >> @item:intable
-#: kpci.cpp:178 kpci.cpp:422 kpci.cpp:521 kpci.cpp:546
-#, kde-format
-msgid "Status"
-msgstr "стање"
-
-# >> @item:intable
-#: kpci.cpp:179 kpci.cpp:338 kpci.cpp:353
-#, kde-format
-msgid "Interrupt status"
-msgstr "стање прекида"
-
-# >> @item:intable
-#: kpci.cpp:180 kpci.cpp:339 kpci.cpp:354
-#, kde-format
-msgid "Capability list"
-msgstr "списак способности"
-
-# >> @item:intable
-#: kpci.cpp:181 kpci.cpp:340 kpci.cpp:355
-#, kde-format
-msgid "66 MHz PCI 2.1 bus"
-msgstr "66 MHz ПЦИ 2.1 магистрала"
-
-# >> @item:intable
-#: kpci.cpp:182 kpci.cpp:341 kpci.cpp:356
-#, kde-format
-msgid "User-definable features"
-msgstr "кориснички-одредљиве могућности"
-
-# >> @item:intable
-#: kpci.cpp:183 kpci.cpp:342 kpci.cpp:357
-#, kde-format
-msgid "Accept fast back-to-back"
-msgstr "прихват брзих залеђних"
-
-# >> @item:intable
-#: kpci.cpp:184 kpci.cpp:343 kpci.cpp:358
-#, kde-format
-msgid "Data parity error"
-msgstr "грешка паритета података"
-
-# >> @item:intable
-#: kpci.cpp:185 kpci.cpp:344 kpci.cpp:359
-#, kde-format
-msgid "Device selection timing"
-msgstr "време избора уређаја"
-
-# >> @item:intable
-#: kpci.cpp:186 kpci.cpp:345 kpci.cpp:360
-#, kde-format
-msgid "Signaled target abort"
-msgstr "сигнализирао циљну обуставу"
-
-# >> @item:intable
-#: kpci.cpp:187 kpci.cpp:346 kpci.cpp:361
-#, kde-format
-msgid "Received target abort"
-msgstr "примио циљну обуставу"
-
-# >> @item:intable
-#: kpci.cpp:188 kpci.cpp:347 kpci.cpp:362
-#, kde-format
-msgid "Received master abort"
-msgstr "примио главну обуставу"
-
-# >> @item:intable
-#: kpci.cpp:189 kpci.cpp:348 kpci.cpp:363
-#, kde-format
-msgid "Signaled system error"
-msgstr "сигнализирао системску грешку"
-
-# >> @item:intable
-#: kpci.cpp:190 kpci.cpp:349 kpci.cpp:364
-#, kde-format
-msgid "Parity error"
-msgstr "грешка паритета"
-
-# >> @item:intable
-#: kpci.cpp:196
-#, kde-format
-msgid "Latency"
-msgstr "кашњење"
-
-# >> @item:intable
-#: kpci.cpp:199 kpci.cpp:202
-#, kde-format
-msgid "MIN_GNT"
-msgstr "MIN_GNT"
-
-# >> @item:intable
-#: kpci.cpp:199 kpci.cpp:205
-#, kde-format
-msgid "No major requirements (0x00)"
-msgstr "без већих захтева (0x00)"
-
-# >> @item:intable
-#: kpci.cpp:205 kpci.cpp:208
-#, kde-format
-msgid "MAX_LAT"
-msgstr "MAX_LAT"
-
-# >> @item:intable
-#: kpci.cpp:216
-#, kde-format
-msgid "Header"
-msgstr "заглавље"
-
-# >> @item:intable
-#: kpci.cpp:217 kpci.cpp:280 kpci.cpp:451
-#, kde-format
-msgid "Type"
-msgstr "тип"
-
-# >> @item:intable
-#: kpci.cpp:218
-#, kde-format
-msgid "Multifunctional"
-msgstr "вишенаменски"
-
-# >> @item:intable
-#: kpci.cpp:224
-#, kde-format
-msgid "Build-in self test"
-msgstr "уграђена самопроба"
-
-# >> @item:intable
-#: kpci.cpp:225
-#, kde-format
-msgid "BIST Capable"
-msgstr "БИСТ способан"
-
-# >> @item:intable
-#: kpci.cpp:227
-#, kde-format
-msgid "BIST Start"
-msgstr "БИСТ почетак"
-
-#: kpci.cpp:228
-#, kde-format
-msgid "Completion code"
-msgstr "код довршавања"
-
-# >> @item:intable
-#: kpci.cpp:235 kpci.cpp:238 kpci.cpp:241 kpci.cpp:247 kpci.cpp:250
-#: kpci.cpp:253 kpci.cpp:258 kpci.cpp:288 kpci.cpp:304 kpci.cpp:425
-#, kde-format
-msgid "Size"
-msgstr "величина"
-
-# >> @item:intable
-#: kpci.cpp:269
-#, kde-format
-msgid "Address mappings"
-msgstr "мапирања адреса"
-
-# >> @item:intable
-#: kpci.cpp:277
-#, kde-format
-msgid "Mapping %1"
-msgstr "мапирање %1"
-
-# >> @item:intable
-#: kpci.cpp:278
-#, kde-format
-msgid "Space"
-msgstr "простор"
-
-# >> @item:intable
-#: kpci.cpp:278
-#, kde-format
-msgid "I/O"
-msgstr "У/И"
-
-# >> @item:intable
-#: kpci.cpp:278
-#, kde-format
-msgid "Memory"
-msgstr "меморија"
-
-# >> @item:intable
-#: kpci.cpp:281 kpci.cpp:444
-#, kde-format
-msgid "Prefetchable"
-msgstr "предохватно"
-
-# >> @item:intable
-#: kpci.cpp:287 kpci.cpp:291 kpci.cpp:296 kpci.cpp:303 kpci.cpp:307
-#: kpci.cpp:424 kpci.cpp:428 kpci.cpp:615 kpci.cpp:623
-#, kde-format
-msgid "Address"
-msgstr "адреса"
-
-# >> @item:intable
-#: kpci.cpp:287 kpci.cpp:303 kpci.cpp:424
-#, kde-format
-msgctxt "unassigned address"
-msgid "Unassigned"
-msgstr "недодељена"
-
-# >> @item:intable
-#: kpci.cpp:288 kpci.cpp:304 kpci.cpp:425
-#, kde-format
-msgctxt "unassigned size"
-msgid "Unassigned"
-msgstr "недодељена"
-
-# >> @item:intable
-#: kpci.cpp:318 kpci.cpp:325
-#, kde-format
-msgid "Bus"
-msgstr "магистрала"
-
-# >> @item:intable
-#: kpci.cpp:319 kpci.cpp:326
-#, kde-format
-msgid "Primary bus number"
-msgstr "примарни број магистрале"
-
-# >> @item:intable
-#: kpci.cpp:320
-#, kde-format
-msgid "Secondary bus number"
-msgstr "секундарни број магистрале"
-
-# >> @item:intable
-#: kpci.cpp:321 kpci.cpp:328
-#, kde-format
-msgid "Subordinate bus number"
-msgstr "подређени број магистрале"
-
-# >> @item:intable
-#: kpci.cpp:322
-#, kde-format
-msgid "Secondary latency timer"
-msgstr "секундарни одбројавач кашњења"
-
-# >> @item:intable
-#: kpci.cpp:327
-#, kde-format
-msgid "CardBus number"
-msgstr "број кардбаса"
-
-# >> @item:intable
-#: kpci.cpp:329
-#, kde-format
-msgid "CardBus latency timer"
-msgstr "одбројавач кашњења кардбаса"
-
-# >> @item:intable
-#: kpci.cpp:337 kpci.cpp:352
-#, kde-format
-msgid "Secondary status"
-msgstr "секундарно стање"
-
-# >> @item:intable
-#: kpci.cpp:372
-#, kde-format
-msgid "I/O behind bridge"
-msgstr "У/И изамост"
-
-# >> @item:intable
-#: kpci.cpp:373 kpci.cpp:451
-#, kde-format
-msgid "32-bit"
-msgstr "32‑битно"
-
-# >> @item:intable
-#: kpci.cpp:375 kpci.cpp:379 kpci.cpp:383 kpci.cpp:388 kpci.cpp:392
-#: kpci.cpp:445 kpci.cpp:453 kpci.cpp:457
-#, kde-format
-msgid "Base"
-msgstr "база"
-
-# >> @item:intable
-#: kpci.cpp:376 kpci.cpp:380 kpci.cpp:384 kpci.cpp:389 kpci.cpp:393
-#: kpci.cpp:446 kpci.cpp:454 kpci.cpp:458
-#, kde-format
-msgid "Limit"
-msgstr "ограничење"
-
-# >> @item:intable
-#: kpci.cpp:382
-#, kde-format
-msgid "Memory behind bridge"
-msgstr "меморијски изамост"
-
-# >> @item:intable
-#: kpci.cpp:385
-#, kde-format
-msgid "Prefetchable memory behind bridge"
-msgstr "изамост предохватне меморије"
-
-# >> @item:intable
-#: kpci.cpp:386
-#, kde-format
-msgid "64-bit"
-msgstr "64‑битно"
-
-# >> @item:intable
-#: kpci.cpp:402
-#, kde-format
-msgid "Bridge control"
-msgstr "управљање мостом"
-
-# >> @item:intable
-#: kpci.cpp:403 kpci.cpp:470
-#, kde-format
-msgid "Secondary parity checking"
-msgstr "провера секундарног паритета"
-
-# >> @item:intable
-#: kpci.cpp:404 kpci.cpp:471
-#, kde-format
-msgid "Secondary system error"
-msgstr "грешка секундарног система"
-
-# >> @item:intable
-#: kpci.cpp:405 kpci.cpp:472
-#, kde-format
-msgid "ISA ports forwarding"
-msgstr "прослеђивање ИСА портова"
-
-# >> @item:intable
-#: kpci.cpp:406 kpci.cpp:473
-#, kde-format
-msgid "VGA forwarding"
-msgstr "ВГА прослеђивање"
-
-# >> @item:intable
-#: kpci.cpp:407 kpci.cpp:474
-#, kde-format
-msgid "Master abort"
-msgstr "главна обустава"
-
-# >> @item:intable
-#: kpci.cpp:408
-#, kde-format
-msgid "Secondary bus reset"
-msgstr "ресет секундарне магистрале"
-
-# >> @item:intable
-#: kpci.cpp:409
-#, kde-format
-msgid "Secondary back-to-back writes"
-msgstr "секундарни залеђни уписи"
-
-# >> @item:intable
-#: kpci.cpp:410
-#, kde-format
-msgid "Primary discard timer counts"
-msgstr "бројачи примарног одбројавача одбацивања"
-
-# >> @item:intable
-#: kpci.cpp:410 kpci.cpp:411
-#, kde-format
-msgid "2e10 PCI clocks"
-msgstr "2e10 ПЦИ тактови"
-
-# >> @item:intable
-#: kpci.cpp:410 kpci.cpp:411
-#, kde-format
-msgid "2e15 PCI clocks"
-msgstr "2e15 ПЦИ тактови"
-
-# >> @item:intable
-#: kpci.cpp:411
-#, kde-format
-msgid "Secondary discard timer counts"
-msgstr "бројачи секундарног одбројавача одбацивања"
-
-# >> @item:intable
-#: kpci.cpp:412
-#, kde-format
-msgid "Discard timer error"
-msgstr "грешка одбројавача одбацивања"
-
-# >> @item:intable
-#: kpci.cpp:413
-#, kde-format
-msgid "Discard timer system error"
-msgstr "системска грешка одбројавача одбацивања"
-
-# >> @item:intable
-#: kpci.cpp:421
-#, kde-format
-msgid "Expansion ROM"
-msgstr "РОМ проширења"
-
-# >> @item:intable
-#: kpci.cpp:440
-#, kde-format
-msgid "Memory windows"
-msgstr "меморијски прозори"
-
-# >> @item:intable
-#: kpci.cpp:443 kpci.cpp:450
-#, kde-format
-msgid "Window %1"
-msgstr "прозор %1"
-
-# >> @item:intable
-#: kpci.cpp:448
-#, kde-format
-msgid "I/O windows"
-msgstr "У/И прозори"
-
-# >> @item:intable
-#: kpci.cpp:451
-#, kde-format
-msgid "16-bit"
-msgstr "16‑битно"
-
-# >> @item:intable
-#: kpci.cpp:461
-#, kde-format
-msgid "16-bit legacy interface ports"
-msgstr "16‑битни портови застарелих сучеља"
-
-# >> @item:intable
-#: kpci.cpp:469
-#, kde-format
-msgid "CardBus control"
-msgstr "управљање кардбасом"
-
-# >> @item:intable
-#: kpci.cpp:475
-#, kde-format
-msgid "Interrupts for 16-bit cards"
-msgstr "прекиди за 16‑битне картице"
-
-# >> @item:intable
-#: kpci.cpp:476
-#, kde-format
-msgid "Window 0 prefetchable memory"
-msgstr "предохватна меморија прозор 0"
-
-# >> @item:intable
-#: kpci.cpp:477
-#, kde-format
-msgid "Window 1 prefetchable memory"
-msgstr "предохватна меморија прозор 1"
-
-# >> @item:intable
-#: kpci.cpp:478
-#, kde-format
-msgid "Post writes"
-msgstr "накнадни уписи"
-
-# >> @item:intable
-#: kpci.cpp:486
-#, kde-format
-msgid "Raw PCI config space"
-msgstr "сирови простор ПЦИ поставе"
-
-# >> @item:intable
-#: kpci.cpp:507 kpci.cpp:665 kpci.cpp:696
-#, kde-format
-msgid "Capabilities"
-msgstr "способности"
-
-# >> @item:intable
-#: kpci.cpp:508
-#, kde-format
-msgid "Version"
-msgstr "верзија"
-
-# >> @item:intable
-#: kpci.cpp:509
-#, kde-format
-msgid "Clock required for PME generation"
-msgstr "сат неопходан за генерисање ПМЕ‑а"
-
-# >> @item:intable
-#: kpci.cpp:510
-#, kde-format
-msgid "Device-specific initialization required"
-msgstr "неопходно уређају својствено припремање"
-
-# >> @item:intable
-#: kpci.cpp:511
-#, kde-format
-msgid "Maximum auxiliary current required in D3 cold"
-msgstr "максимум допунске струје непходан у Д3 хладном"
-
-# >> @item:intable
-#: kpci.cpp:512
-#, kde-format
-msgid "D1 support"
-msgstr "подршка за Д1"
-
-# >> @item:intable
-#: kpci.cpp:513
-#, kde-format
-msgid "D2 support"
-msgstr "подршка за Д2"
-
-# >> @item:intable
-#: kpci.cpp:514
-#, kde-format
-msgid "Power management events"
-msgstr "догађаји управљања напајањем"
-
-# >> @item:intable
-#: kpci.cpp:515 kpci_private.h:809
-#, kde-format
-msgid "D0"
-msgstr "Д0"
-
-# >> @item:intable
-#: kpci.cpp:516 kpci_private.h:810
-#, kde-format
-msgid "D1"
-msgstr "Д1"
-
-# >> @item:intable
-#: kpci.cpp:517 kpci_private.h:811
-#, kde-format
-msgid "D2"
-msgstr "Д2"
-
-# >> @item:intable
-#: kpci.cpp:518 kpci_private.h:812
-#, kde-format
-msgid "D3 hot"
-msgstr "Д3 вруће"
-
-# >> @item:intable
-#: kpci.cpp:519
-#, kde-format
-msgid "D3 cold"
-msgstr "Д3 хладно"
-
-# >> @item:intable
-#: kpci.cpp:522
-#, kde-format
-msgid "Power state"
-msgstr "стање напајања"
-
-# >> @item:intable
-#: kpci.cpp:523 kpci_private.h:725
-#, kde-format
-msgid "Power management"
-msgstr "управљање напајањем"
-
-# >> @item:intable
-#: kpci.cpp:524
-#, kde-format
-msgid "Data select"
-msgstr "избор података"
-
-# >> @item:intable
-#: kpci.cpp:525
-#, kde-format
-msgid "Data scale"
-msgstr "размера података"
-
-# >> @item:intable
-#: kpci.cpp:526
-#, kde-format
-msgid "Power management status"
-msgstr "стање управљања напајањем"
-
-# >> @item:intable
-#: kpci.cpp:529
-#, kde-format
-msgid "Bridge status"
-msgstr "стање моста"
-
-# >> @item:intable
-#: kpci.cpp:530
-#, kde-format
-msgid "Secondary bus state in D3 hot"
-msgstr "стање секундарне магистрале у Д3 врућем"
-
-# >> @item:intable
-#: kpci.cpp:530
-#, kde-format
-msgid "B2"
-msgstr "Б2"
-
-# >> @item:intable
-#: kpci.cpp:530
-#, kde-format
-msgid "B3"
-msgstr "Б3"
-
-# >> @item:intable
-#: kpci.cpp:531
-#, kde-format
-msgid "Secondary bus power & clock control"
-msgstr "управљање напајањем и сатом секундарне магистрале"
-
-# >> @item:intable
-#: kpci.cpp:534 kpci.cpp:594 kpci.cpp:616 kpci.cpp:624 kpci.cpp:640
-#: kpci.cpp:652
-#, kde-format
-msgid "Data"
-msgstr "подаци"
-
-# >> @item:intable
-#. i18n("Revision"),QString::asprintf("%i.%i",infoAgp.revMaior,infoAgp.revMinor));
-#: kpci.cpp:545 kpci.cpp:754
-#, kde-format
-msgid "Revision"
-msgstr "ревизија"
-
-# >> @item:intable
-#: kpci.cpp:547 kpci.cpp:568
-#, kde-format
-msgid "Rate"
-msgstr "проток"
-
-# >> @item:intable
-#: kpci.cpp:548
-#, kde-format
-msgid "AGP 3.0 mode"
-msgstr "режим АГП 3.0"
-
-# >> @item:intable
-#: kpci.cpp:549 kpci.cpp:569
-#, kde-format
-msgid "Fast Writes"
-msgstr "брзи уписи"
-
-# >> @item:intable
-#: kpci.cpp:550 kpci.cpp:571
-#, kde-format
-msgid "Address over 4 GiB"
-msgstr "адреса преко 4 GiB"
-
-# >> @item:intable
-#: kpci.cpp:552
-#, kde-format
-msgid "Translation of host processor access"
-msgstr "превод приступа процесора домаћина"
-
-# >> @item:intable
-#: kpci.cpp:553 kpci.cpp:572
-#, kde-format
-msgid "64-bit GART"
-msgstr "64‑битни ГАРТ"
-
-# >> @item:intable
-#: kpci.cpp:554
-#, kde-format
-msgid "Cache Coherency"
-msgstr "кохеренција кеша"
-
-# >> @item:intable
-#: kpci.cpp:556 kpci.cpp:575
-#, kde-format
-msgid "Side-band addressing"
-msgstr "бочнопојасно адресирање"
-
-# >> @item:intable
-#: kpci.cpp:558 kpci.cpp:577
-#, kde-format
-msgid "Calibrating cycle"
-msgstr "калибришући циклус"
-
-# >> @item:intable
-#: kpci.cpp:562 kpci.cpp:581
-#, kde-format
-msgid "Optimum asynchronous request size"
-msgstr "оптимална величина асинхроног захтева"
-
-# >> @item:intable
-#: kpci.cpp:563
-#, kde-format
-msgid "Isochronous transactions"
-msgstr "изосинхроне трансакције"
-
-# >> @item:intable
-#: kpci.cpp:565 kpci.cpp:583
-#, kde-format
-msgid "Maximum number of AGP command"
-msgstr "највећи број АГП наредби"
-
-# >> @item:intable
-#: kpci.cpp:567
-#, kde-format
-msgid "Configuration"
-msgstr "постава"
-
-# >> @item:intable
-#: kpci.cpp:574 kpci_private.h:726
-#, kde-format
-msgid "AGP"
-msgstr "АГП"
-
-# >> @item:intable
-#: kpci.cpp:592
-#, kde-format
-msgid "Data address"
-msgstr "адреса података"
-
-# >> @item:intable
-#: kpci.cpp:593
-#, kde-format
-msgid "Transfer completed"
-msgstr "пренос довршен"
-
-# >> @item:intable
-#: kpci.cpp:605
-#, kde-format
-msgid "Message control"
-msgstr "управљање порукама"
-
-# >> @item:intable
-#: kpci.cpp:606 kpci_private.h:729
-#, kde-format
-msgid "Message signaled interrupts"
-msgstr "порука сигнализира прекиде"
-
-# >> @item:intable
-#: kpci.cpp:607
-#, kde-format
-msgid "Multiple message capable"
-msgstr "вишеструке поруке могуће"
-
-# >> @item:intable
-#: kpci.cpp:608
-#, kde-format
-msgid "Multiple message enable"
-msgstr "вишеструке поруке укључене"
-
-# >> @item:intable
-#: kpci.cpp:609
-#, kde-format
-msgid "64-bit address"
-msgstr "64‑битна адреса"
-
-# >> @item:intable
-#: kpci.cpp:610
-#, kde-format
-msgid "Per vector masking"
-msgstr "маскирање по вектору"
-
-# >> @item:intable
-#: kpci.cpp:618 kpci.cpp:626
-#, kde-format
-msgid "Mask"
-msgstr "маска"
-
-# >> @item:intable
-#: kpci.cpp:619 kpci.cpp:627
-#, kde-format
-msgid "Pending"
-msgstr "наступа"
-
-# >> @item:intable
-#: kpci.cpp:637
-#, kde-format
-msgid "Length"
-msgstr "дужина"
-
-#: kpci.cpp:640
-#, kde-format
-msgctxt "no data"
-msgid "None"
-msgstr "ништа"
-
-# >> @item:intable
-#: kpci.cpp:669
-#, kde-format
-msgid "Next"
-msgstr "следеће"
-
-# >> @item:intable
-#: kpci.cpp:669 kpci.cpp:696
-#, kde-format
-msgid "0x00 (None)"
-msgstr "0x00 (ништа)"
-
-# >> @item:intable
-#: kpci.cpp:692
-#, kde-format
-msgid "Root only"
-msgstr "само корен"
-
-# >> @item:intable
-#: kpci.cpp:713
-#, kde-format
-msgid "Information"
-msgstr "податак"
-
-# >> @item:intable
-#: kpci.cpp:713
-#, kde-format
-msgid "Value"
-msgstr "вредност"
-
-# >> @item:intable
-#: kpci.cpp:763
-#, kde-format
-msgid "Cache line size"
-msgstr "величина реда кеша"
-
 # >> @item
-#: kpci_private.h:27
-#, kde-format
-msgctxt "state of PCI item"
-msgid "Enabled"
-msgstr "укључено"
-
-# >> @item
-#: kpci_private.h:28
-#, kde-format
-msgctxt "state of PCI item"
-msgid "Disabled"
-msgstr "искључено"
-
-# >> @item
-#: kpci_private.h:29
-#, kde-format
-msgctxt "state of PCI item"
-msgid "Yes"
-msgstr "да"
-
-# >> @item
-#: kpci_private.h:30
-#, kde-format
-msgctxt "state of PCI item"
-msgid "No"
-msgstr "не"
-
-# >> @item
-#: kpci_private.h:31
-#, kde-format
-msgctxt "state of PCI item"
-msgid "Unknown"
-msgstr "непознато"
-
-# >> @item
-#: kpci_private.h:450
-#, kde-format
-msgid "Unclassified device"
-msgstr "несврстани уређај"
-
-# >> @item
-#: kpci_private.h:451 kpci_private.h:491
-#, kde-format
-msgid "Mass storage controller"
-msgstr "контролор масовног складишта"
-
-# >> @item
-#: kpci_private.h:452 kpci_private.h:503
-#, kde-format
-msgid "Network controller"
-msgstr "мрежни контролор"
-
-# >> @item
-#: kpci_private.h:453 kpci_private.h:509
-#, kde-format
-msgid "Display controller"
-msgstr "контролор екрана"
-
-# >> @item
-#: kpci_private.h:454 kpci_private.h:516
-#, kde-format
-msgid "Multimedia controller"
-msgstr "мултимедијски контролор"
-
-# >> @item
-#: kpci_private.h:455 kpci_private.h:521
-#, kde-format
-msgid "Memory controller"
-msgstr "меморијски контролор"
-
-# >> @item
-#: kpci_private.h:456 kpci_private.h:535 kpci_private.h:764
-#, kde-format
-msgid "Bridge"
-msgstr "мост"
-
-#: kpci_private.h:457 kpci_private.h:544
-#, kde-format
-msgid "Communication controller"
-msgstr "комуникациони контролор"
-
-# >> @item
-#: kpci_private.h:458
-#, kde-format
-msgid "Generic system peripheral"
-msgstr "генеричка системска периферија"
-
-# >> @item
-#: kpci_private.h:459 kpci_private.h:562
-#, kde-format
-msgid "Input device controller"
-msgstr "контролор улазног уређаја"
-
-# >> @item
-#: kpci_private.h:460 kpci_private.h:566
-#, kde-format
-msgid "Docking station"
-msgstr "сидришна станица"
-
-# >> @item
-#: kpci_private.h:461
-#, kde-format
-msgid "Processor"
-msgstr "процесор"
-
-# >> @item
-#: kpci_private.h:462
-#, kde-format
-msgid "Serial bus controller"
-msgstr "контролор серијске магистрале"
-
-# >> @item
-#: kpci_private.h:463 kpci_private.h:597
-#, kde-format
-msgid "Wireless controller"
-msgstr "контролор бежичне"
-
-# >> @item
-#: kpci_private.h:464
-#, kde-format
-msgid "Intelligent controller"
-msgstr "интелигентни контролор"
-
-# >> @item
-#: kpci_private.h:465
-#, kde-format
-msgid "Satellite communications controller"
-msgstr "контролор сателитске комуникације"
-
-# >> @item
-#: kpci_private.h:466 kpci_private.h:611
-#, kde-format
-msgid "Encryption controller"
-msgstr "контролор шифровања"
-
-# >> @item
-#: kpci_private.h:467 kpci_private.h:618
-#, kde-format
-msgid "Signal processing controller"
-msgstr "контролор обраде сигнала"
-
-#: kpci_private.h:468 kpci_private.h:621
-#, kde-format
-msgid "Processing accelerators"
-msgstr ""
-
-#: kpci_private.h:469
-#, kde-format
-msgid "Non-Essential Instrumentation"
-msgstr ""
-
-# >> @item
-#: kpci_private.h:470
+#: main.cpp:26
 #, fuzzy, kde-format
-#| msgid "Co-processor"
-msgid "Coprocessor"
-msgstr "копроцесор"
-
-# >> @item:intable
-#: kpci_private.h:471
-#, fuzzy, kde-format
-#| msgctxt "unassigned address"
-#| msgid "Unassigned"
-msgid "Unassigned class"
-msgstr "недодељена"
-
-# >> @item
-#: kpci_private.h:472
-#, kde-format
-msgid "Unknown device class"
-msgstr "непозната класа уређаја"
-
-# >> @item
-#: kpci_private.h:478
-#, kde-format
-msgid "Non-VGA unclassified device"
-msgstr "несврстани не‑ВГА уређај"
-
-# >> @item
-#: kpci_private.h:479
-#, kde-format
-msgid "VGA unclassified device"
-msgstr "несврстани ВГА уређај"
-
-# >> @item
-#: kpci_private.h:480
-#, kde-format
-msgid "Unknown unclassified device"
-msgstr "непознат несврстани уређај"
-
-# >> @item
-#: kpci_private.h:482
-#, kde-format
-msgid "SCSI storage controller"
-msgstr "контролор скази складишта"
-
-# >> @item
-#: kpci_private.h:483
-#, kde-format
-msgid "IDE controller"
-msgstr "ИДЕ контролор"
-
-# >> @item
-#: kpci_private.h:484
-#, kde-format
-msgid "Floppy disk controller"
-msgstr "контролор флопи диска"
-
-# >> @item
-#: kpci_private.h:485
-#, kde-format
-msgid "IPI bus controller"
-msgstr "контролор ИПИ магистрале"
-
-# >> @item
-#: kpci_private.h:486
-#, kde-format
-msgid "RAID bus controller"
-msgstr "контролор РАИД магистрале"
-
-# >> @item
-#: kpci_private.h:487
-#, kde-format
-msgid "ATA controller"
-msgstr "АТА контролор"
-
-# >> @item
-#: kpci_private.h:488
-#, fuzzy, kde-format
-#| msgid "ATA controller"
-msgid "SATA controller"
-msgstr "АТА контролор"
-
-# >> @item
-#: kpci_private.h:489
-#, fuzzy, kde-format
-#| msgid "Serial controller"
-msgid "Serial Attached SCSI controller"
-msgstr "серијски контролор"
-
-# >> @item
-#: kpci_private.h:490
-#, fuzzy, kde-format
-#| msgid "Unknown memory controller"
-msgid "Non-Volatile memory controller"
-msgstr "непознат меморијски контролор"
-
-# >> @item
-#: kpci_private.h:492
-#, kde-format
-msgid "Unknown storage controller"
-msgstr "непознат складишни контролор"
-
-# >> @item
-#: kpci_private.h:494
-#, kde-format
-msgid "Ethernet controller"
-msgstr "етернетски контролор"
-
-# >> @item
-#: kpci_private.h:495
-#, kde-format
-msgid "Token ring network controller"
-msgstr "контролор прстенасте мреже"
-
-# >> @item
-#: kpci_private.h:496
-#, kde-format
-msgid "FDDI network controller"
-msgstr "контролор ФДДИ мреже"
-
-# >> @item
-#: kpci_private.h:497
-#, kde-format
-msgid "ATM network controller"
-msgstr "контролор АТМ мреже"
-
-# >> @item
-#: kpci_private.h:498
-#, kde-format
-msgid "ISDN controller"
-msgstr "ИСДН контролор"
-
-# >> @item
-#: kpci_private.h:499
-#, kde-format
-msgid "WorldFip controller"
-msgstr "ворлдфип контролор"
-
-# >> @item
-#: kpci_private.h:500
-#, fuzzy, kde-format
-#| msgid "IDE controller"
-msgid "PICMG controller"
-msgstr "ИДЕ контролор"
-
-# >> @item
-#: kpci_private.h:501
-#, fuzzy, kde-format
-#| msgid "Keyboard controller"
-msgid "Infiniband controller"
-msgstr "контролор тастатуре"
-
-# >> @item
-#: kpci_private.h:502
-#, fuzzy, kde-format
-#| msgid "RF controller"
-msgid "Fabric controller"
-msgstr "РФ контролор"
-
-# >> @item
-#: kpci_private.h:504
-#, kde-format
-msgid "Unknown network controller"
-msgstr "непознат мрежни контролор"
-
-# >> @item
-#: kpci_private.h:506
-#, kde-format
-msgid "VGA compatible controller"
-msgstr "ВГА сагласни контролор"
-
-# >> @item
-#: kpci_private.h:507
-#, kde-format
-msgid "XGA compatible controller"
-msgstr "ИксГА сагласни контролор"
-
-# >> @item
-#: kpci_private.h:508
-#, kde-format
-msgid "3D controller"
-msgstr "3Д контролор"
-
-# >> @item
-#: kpci_private.h:510
-#, kde-format
-msgid "Unknown display controller"
-msgstr "непознат контролор приказа"
-
-# >> @item
-#: kpci_private.h:512
-#, kde-format
-msgid "Multimedia video controller"
-msgstr "мултимедијски видео контролор"
-
-# >> @item
-#: kpci_private.h:513
-#, kde-format
-msgid "Multimedia audio controller"
-msgstr "мултимедијски аудио контролор"
-
-# >> @item
-#: kpci_private.h:514
-#, kde-format
-msgid "Computer telephony device"
-msgstr "уређај за рачунарску телефонију"
-
-# >> @item
-#: kpci_private.h:515
-#, fuzzy, kde-format
-#| msgid "Secure device"
-msgid "Audio device"
-msgstr "безбедни уређај"
-
-# >> @item
-#: kpci_private.h:517
-#, kde-format
-msgid "Unknown multimedia controller"
-msgstr "непознат мултимедијски контролор"
-
-# >> @item
-#: kpci_private.h:519
-#, kde-format
-msgid "RAM memory"
-msgstr "РАМ меморија"
-
-# >> @item
-#: kpci_private.h:520
-#, kde-format
-msgid "FLASH memory"
-msgstr "флеш меморија"
-
-# >> @item
-#: kpci_private.h:522
-#, kde-format
-msgid "Unknown memory controller"
-msgstr "непознат меморијски контролор"
-
-# >> @item
-#: kpci_private.h:524
-#, kde-format
-msgid "Host bridge"
-msgstr "домаћински мост"
-
-# >> @item
-#: kpci_private.h:525
-#, kde-format
-msgid "ISA bridge"
-msgstr "ИСА мост"
-
-# >> @item
-#: kpci_private.h:526
-#, kde-format
-msgid "EISA bridge"
-msgstr "ЕИСА мост"
-
-# >> @item
-#: kpci_private.h:527
-#, kde-format
-msgid "MicroChannel bridge"
-msgstr "микрочанел мост"
-
-# >> @item
-#: kpci_private.h:528
-#, kde-format
-msgid "PCI bridge"
-msgstr "ПЦИ мост"
-
-# >> @item
-#: kpci_private.h:529
-#, kde-format
-msgid "PCMCIA bridge"
-msgstr "ПЦМЦИА мост"
-
-# >> @item
-#: kpci_private.h:530
-#, kde-format
-msgid "NuBus bridge"
-msgstr "нубус мост"
-
-# >> @item
-#: kpci_private.h:531
-#, kde-format
-msgid "CardBus bridge"
-msgstr "кардбас мост"
-
-# >> @item
-#: kpci_private.h:532
-#, kde-format
-msgid "RACEway bridge"
-msgstr "рејсвеј мост"
-
-# >> @item
-#: kpci_private.h:533
-#, kde-format
-msgid "Semi-transparent PCI-to-PCI bridge"
-msgstr "полупрозирни ПЦИ‑на‑ПЦИ мост"
-
-# >> @item
-#: kpci_private.h:534
-#, kde-format
-msgid "InfiniBand to PCI host bridge"
-msgstr "домаћински мост с инфинибанда на ПЦИ"
-
-# >> @item
-#: kpci_private.h:536
-#, kde-format
-msgid "Unknown bridge"
-msgstr "непознат мост"
-
-# >> @item
-#: kpci_private.h:538
-#, kde-format
-msgid "Serial controller"
-msgstr "серијски контролор"
-
-# >> @item
-#: kpci_private.h:539
-#, kde-format
-msgid "Parallel controller"
-msgstr "паралелни контролор"
-
-# >> @item
-#: kpci_private.h:540
-#, kde-format
-msgid "Multiport serial controller"
-msgstr "вишепортски серијски контролор"
-
-# >> @item
-#: kpci_private.h:541
-#, kde-format
-msgid "Modem"
-msgstr "модем"
-
-# >> @item
-#: kpci_private.h:542
-#, fuzzy, kde-format
-#| msgid "USB controller"
-msgid "GPIB controller"
-msgstr "УСБ контролор"
-
-# >> @item
-#: kpci_private.h:543
-#, fuzzy, kde-format
-#| msgid "Scanner controller"
-msgid "Smart card controller"
-msgstr "контролор скенера"
-
-# >> @item
-#: kpci_private.h:545
-#, kde-format
-msgid "Unknown communication controller"
-msgstr "непознат комуникациони контролор"
-
-# >> @item
-#: kpci_private.h:547
-#, kde-format
-msgid "PIC"
-msgstr "ПИЦ"
-
-# >> @item
-#: kpci_private.h:548
-#, kde-format
-msgid "DMA controller"
-msgstr "ДМА контролор"
-
-#: kpci_private.h:549
-#, kde-format
-msgid "Timer"
-msgstr "одбројавач"
-
-# >> @item
-#: kpci_private.h:550
-#, kde-format
-msgid "RTC"
-msgstr "РТЦ"
-
-# >> @item
-#: kpci_private.h:551
-#, kde-format
-msgid "PCI Hot-plug controller"
-msgstr "ПЦИ контролор врућег укључивања"
-
-# >> @item
-#: kpci_private.h:552 kpci_private.h:553
-#, fuzzy, kde-format
-#| msgid "ISDN controller"
-msgid "SD Host controller"
-msgstr "ИСДН контролор"
-
-#: kpci_private.h:554
-#, kde-format
-msgid "IOMMU"
-msgstr ""
-
-# >> @item
-#: kpci_private.h:555
-#, kde-format
-msgid "Unknown system peripheral"
-msgstr "непозната системска периферија"
-
-# >> @item
-#: kpci_private.h:557
-#, kde-format
-msgid "Keyboard controller"
-msgstr "контролор тастатуре"
-
-# >> @item
-#: kpci_private.h:558
-#, kde-format
-msgid "Digitizer Pen"
-msgstr "дигитализујућа оловка"
-
-# >> @item
-#: kpci_private.h:559
-#, kde-format
-msgid "Mouse controller"
-msgstr "контролор миша"
-
-# >> @item
-#: kpci_private.h:560
-#, kde-format
-msgid "Scanner controller"
-msgstr "контролор скенера"
-
-# >> @item
-#: kpci_private.h:561
-#, kde-format
-msgid "Gameport controller"
-msgstr "контролор играчког порта"
-
-# >> @item
-#: kpci_private.h:563
-#, kde-format
-msgid "Unknown input device controller"
-msgstr "непознат контролор улазног уређаја"
-
-# >> @item
-#: kpci_private.h:565
-#, kde-format
-msgid "Generic docking station"
-msgstr "генеричка сидришна станица"
-
-# >> @item
-#: kpci_private.h:567
-#, kde-format
-msgid "Unknown docking station"
-msgstr "непозната сидришна станица"
-
-# >> @item
-#: kpci_private.h:569
-#, kde-format
-msgid "386"
-msgstr "386"
-
-# >> @item
-#: kpci_private.h:570
-#, kde-format
-msgid "486"
-msgstr "486"
-
-# >> @item
-#: kpci_private.h:571
-#, kde-format
-msgid "Pentium"
-msgstr "пентијум"
-
-# >> @item
-#: kpci_private.h:572
-#, kde-format
-msgid "Alpha"
-msgstr "алфа"
-
-# >> @item
-#: kpci_private.h:573
-#, kde-format
-msgid "Power PC"
-msgstr "пауерПЦ"
-
-# >> @item
-#: kpci_private.h:574
-#, kde-format
-msgid "MIPS"
-msgstr "МИПС"
-
-# >> @item
-#: kpci_private.h:575
-#, kde-format
-msgid "Co-processor"
-msgstr "копроцесор"
-
-# >> @item
-#: kpci_private.h:576
-#, kde-format
-msgid "Unknown processor"
-msgstr "непознат процесор"
-
-# >> @item
-#: kpci_private.h:578
-#, kde-format
-msgid "FireWire (IEEE 1394)"
-msgstr "фајервајер (ИЕЕЕ 1394)"
-
-# >> @item
-#: kpci_private.h:579
-#, kde-format
-msgid "ACCESS bus"
-msgstr "аксес магистрала"
-
-# >> @item
-#: kpci_private.h:580
-#, kde-format
-msgid "SSA"
-msgstr "ССА"
-
-# >> @item
-#: kpci_private.h:581
-#, kde-format
-msgid "USB controller"
-msgstr "УСБ контролор"
-
-# >> @item
-#: kpci_private.h:582
-#, kde-format
-msgid "Fibre channel"
-msgstr "оптички канал"
-
-# >> @item
-#: kpci_private.h:583
-#, kde-format
-msgid "SMBus"
-msgstr "СМбус"
-
-# >> @item
-#: kpci_private.h:584
-#, kde-format
-msgid "InfiniBand"
-msgstr "инфинибанд"
-
-# >> @item
-#: kpci_private.h:585
-#, kde-format
-msgid "IPMI interface"
-msgstr "ИПМИ сучеље"
-
-# >> @item
-#: kpci_private.h:586
-#, kde-format
-msgid "SERCOS interface"
-msgstr "СЕРКОС сучеље"
-
-# >> @item
-#: kpci_private.h:587
-#, kde-format
-msgid "CANbus"
-msgstr "канбус"
-
-# >> @item
-#: kpci_private.h:588
-#, kde-format
-msgid "Unknown serial bus controller"
-msgstr "непознат контролор серијске магистрале"
-
-# >> @item
-#: kpci_private.h:590
-#, kde-format
-msgid "IRDA controller"
-msgstr "ИрДА контролор"
-
-# >> @item
-#: kpci_private.h:591
-#, kde-format
-msgid "Consumer IR controller"
-msgstr "потрошачки ИЦ контролор"
-
-# >> @item
-#: kpci_private.h:592
-#, kde-format
-msgid "RF controller"
-msgstr "РФ контролор"
-
-# >> @item
-#: kpci_private.h:593
-#, kde-format
-msgid "Bluetooth"
-msgstr "блутут"
-
-# >> @item
-#: kpci_private.h:594
-#, kde-format
-msgid "Broadband"
-msgstr "широкопојасни"
-
-# >> @item
-#: kpci_private.h:595
-#, kde-format
-msgid "Ethernet (802.11a - 5 GHz)"
-msgstr "етернет (802.11a - 5 GHz)"
-
-# >> @item
-#: kpci_private.h:596
-#, kde-format
-msgid "Ethernet (802.11b - 2.4 GHz)"
-msgstr "етернет (802.11b - 2,4 GHz)"
-
-# >> @item
-#: kpci_private.h:598
-#, kde-format
-msgid "Unknown wireless controller"
-msgstr "непознат контролор бежичне"
-
-# >> @item
-#: kpci_private.h:600
-#, kde-format
-msgid "I2O"
-msgstr "И20"
-
-# >> @item
-#: kpci_private.h:601
-#, kde-format
-msgid "Unknown intelligent controller"
-msgstr "непознат интелигентни контролор"
-
-# >> @item
-#: kpci_private.h:603
-#, kde-format
-msgid "Satellite TV controller"
-msgstr "контролор сателитске ТВ"
-
-# >> @item
-#: kpci_private.h:604
-#, kde-format
-msgid "Satellite audio communication controller"
-msgstr "контрол сателитске аудио комуникације"
-
-# >> @item
-#: kpci_private.h:605
-#, kde-format
-msgid "Satellite voice communication controller"
-msgstr "контролор сателитске гласовне комуникације"
-
-# >> @item
-#: kpci_private.h:606
-#, kde-format
-msgid "Satellite data communication controller"
-msgstr "контролор сателитске размене података"
-
-# >> @item
-#: kpci_private.h:607
-#, kde-format
-msgid "Unknown satellite communications controller"
-msgstr "непознат контролор сателитске комуникације"
-
-# >> @item
-#: kpci_private.h:609
-#, kde-format
-msgid "Network and computing encryption device"
-msgstr "уређај за шифровање мреже и рачунања"
-
-# >> @item
-#: kpci_private.h:610
-#, kde-format
-msgid "Entertainment encryption device"
-msgstr "уређај за шифровање забаве"
-
-# >> @item
-#: kpci_private.h:612
-#, kde-format
-msgid "Unknown encryption controller"
-msgstr "непознат контролор шифровања"
-
-# >> @item
-#: kpci_private.h:614
-#, kde-format
-msgid "DPIO module"
-msgstr "ДПИО модул"
-
-# >> @item
-#: kpci_private.h:615
-#, kde-format
-msgid "Performance counters"
-msgstr "бројачи перформанси"
-
-# >> @item
-#: kpci_private.h:616
-#, kde-format
-msgid "Communication synchronizer"
-msgstr "синхронизатор комуникације"
-
-# >> @item
-#: kpci_private.h:617
-#, fuzzy, kde-format
-#| msgid "Signal processing controller"
-msgid "Signal processing management"
-msgstr "контролор обраде сигнала"
-
-# >> @item
-#: kpci_private.h:619
-#, kde-format
-msgid "Unknown signal processing controller"
-msgstr "непознат контролор обраде сигнала"
-
-# >> @item
-#: kpci_private.h:622
-#, fuzzy, kde-format
-#| msgid "Unknown processor"
-msgid "Unknown processing accelerator"
-msgstr "непознат процесор"
-
-# >> @item
-#: kpci_private.h:624
-#, kde-format
-msgid "Unknown subdevice class"
-msgstr "непозната класа подуређаја"
-
-# >> @item
-#: kpci_private.h:631
-#, fuzzy, kde-format
-#| msgid "VGA compatible controller"
-msgid "ISA Compatibility mode-only controller"
-msgstr "ВГА сагласни контролор"
-
-# >> @item
-#: kpci_private.h:632
-#, fuzzy, kde-format
-#| msgid "PCI Hot-plug controller"
-msgid "PCI native mode-only controller"
-msgstr "ПЦИ контролор врућег укључивања"
-
-#: kpci_private.h:633
-#, kde-format
-msgid ""
-"ISA Compatibility mode controller, supports both channels switched to PCI "
-"native mode"
-msgstr ""
-
-#: kpci_private.h:634
-#, kde-format
-msgid ""
-"PCI native mode controller, supports both channels switched to ISA "
-"compatibility mode"
-msgstr ""
-
-#: kpci_private.h:635
-#, kde-format
-msgid "ISA Compatibility mode-only controller, supports bus mastering"
-msgstr ""
-
-#: kpci_private.h:636
-#, kde-format
-msgid "PCI native mode-only controller, supports bus mastering"
-msgstr ""
-
-#: kpci_private.h:637
-#, kde-format
-msgid ""
-"ISA Compatibility mode controller, supports both channels switched to PCI "
-"native mode, supports bus mastering"
-msgstr ""
-
-#: kpci_private.h:638
-#, kde-format
-msgid ""
-"PCI native mode controller, supports both channels switched to ISA "
-"compatibility mode, supports bus mastering"
-msgstr ""
-
-#: kpci_private.h:640
-#, kde-format
-msgid "ADMA single stepping"
-msgstr ""
-
-#: kpci_private.h:641
-#, kde-format
-msgid "ADMA continuous operation"
-msgstr ""
-
-# >> @item
-#: kpci_private.h:643 kpci_private.h:733
-#, kde-format
-msgid "Vendor specific"
-msgstr "посебно по произвођачу"
-
-#: kpci_private.h:644
-#, kde-format
-msgid "AHCI 1.0"
-msgstr ""
-
-#: kpci_private.h:645 kpci_private.h:647
-#, kde-format
-msgid "Serial Storage Bus"
-msgstr ""
-
-#: kpci_private.h:649
-#, kde-format
-msgid "NVMHCI"
-msgstr ""
-
-# >> @item
-#: kpci_private.h:650
-#, fuzzy, kde-format
-#| msgid "PCI express"
-msgid "NVM Express"
-msgstr "ПЦИ‑експрес"
-
-# >> @item
-#: kpci_private.h:652
-#, fuzzy, kde-format
-#| msgid "ATA controller"
-msgid "VGA controller"
-msgstr "АТА контролор"
-
-# >> @item
-#: kpci_private.h:653
-#, fuzzy, kde-format
-#| msgid "3D controller"
-msgid "8514 controller"
-msgstr "3Д контролор"
-
-# >> @item
-#: kpci_private.h:655
-#, kde-format
-msgid "Normal decode"
-msgstr "нормално декодирање"
-
-# >> @item
-#: kpci_private.h:656
-#, kde-format
-msgid "Subtractive decode"
-msgstr "одузимачко декодирање"
-
-# >> @item
-#: kpci_private.h:658
-#, kde-format
-msgid "Transparent mode"
-msgstr "режим прозирности"
-
-# >> @item
-#: kpci_private.h:659
-#, kde-format
-msgid "Endpoint mode"
-msgstr "режим крајње тачке"
-
-# >> @item
-#: kpci_private.h:661
-#, kde-format
-msgid "Primary bus towards host CPU"
-msgstr "главна магистрала ка ЦПУ‑у домаћину"
-
-# >> @item
-#: kpci_private.h:662
-#, kde-format
-msgid "Secondary bus towards host CPU"
-msgstr "споредна магистрала ка ЦПУ‑у домаћину"
-
-# >> @item
-#: kpci_private.h:664
-#, kde-format
-msgid "8250"
-msgstr "8250"
-
-# >> @item
-#: kpci_private.h:665
-#, kde-format
-msgid "16450"
-msgstr "16450"
-
-# >> @item
-#: kpci_private.h:666
-#, kde-format
-msgid "16550"
-msgstr "16550"
-
-# >> @item
-#: kpci_private.h:667
-#, kde-format
-msgid "16650"
-msgstr "16650"
-
-# >> @item
-#: kpci_private.h:668
-#, kde-format
-msgid "16750"
-msgstr "16750"
-
-# >> @item
-#: kpci_private.h:669
-#, kde-format
-msgid "16850"
-msgstr "16850"
-
-# >> @item
-#: kpci_private.h:670
-#, kde-format
-msgid "16950"
-msgstr "16950"
-
-# >> @item
-#: kpci_private.h:672
-#, kde-format
-msgid "SPP"
-msgstr "СПП"
-
-# >> @item
-#: kpci_private.h:673
-#, kde-format
-msgid "BiDir"
-msgstr "би‑дир"
-
-# >> @item
-#: kpci_private.h:674
-#, kde-format
-msgid "ECP"
-msgstr "ЕЦП"
-
-# >> @item
-#: kpci_private.h:675
-#, kde-format
-msgid "IEEE1284"
-msgstr "ИЕЕЕ 1284"
-
-# >> @item
-#: kpci_private.h:676
-#, kde-format
-msgid "IEEE1284 Target"
-msgstr "ИЕЕЕ 1284 циљ"
-
-# >> @item
-#: kpci_private.h:678 kpci_private.h:699 kpci_private.h:702 kpci_private.h:705
-#, kde-format
-msgid "Generic"
-msgstr "генерички"
-
-# >> @item
-#: kpci_private.h:679
-#, kde-format
-msgid "Hayes/16450"
-msgstr "⁠хејс/16450"
-
-# >> @item
-#: kpci_private.h:680
-#, kde-format
-msgid "Hayes/16550"
-msgstr "⁠хејс/16550"
-
-# >> @item
-#: kpci_private.h:681
-#, kde-format
-msgid "Hayes/16650"
-msgstr "⁠хејс/16550"
-
-# >> @item
-#: kpci_private.h:682
-#, kde-format
-msgid "Hayes/16750"
-msgstr "⁠хејс/16750"
-
-# >> @item
-#: kpci_private.h:684
-#, kde-format
-msgid "8259"
-msgstr "8259"
-
-# >> @item
-#: kpci_private.h:685
-#, kde-format
-msgid "ISA PIC"
-msgstr "ИСА ПИЦ"
-
-# >> @item
-#: kpci_private.h:686
-#, kde-format
-msgid "EISA PIC"
-msgstr "ЕИСА ПИЦ"
-
-# >> @item
-#: kpci_private.h:687
-#, kde-format
-msgid "IO-APIC"
-msgstr "У/И АПИЦ"
-
-# >> @item
-#: kpci_private.h:688
-#, kde-format
-msgid "IO(X)-APIC"
-msgstr "У/И(икс) АПИЦ"
-
-# >> @item
-#: kpci_private.h:690
-#, kde-format
-msgid "8237"
-msgstr "8237"
-
-# >> @item
-#: kpci_private.h:691
-#, kde-format
-msgid "ISA DMA"
-msgstr "ИСА ДМА"
-
-# >> @item
-#: kpci_private.h:692
-#, kde-format
-msgid "EISA DMA"
-msgstr "ЕИСА ДМА"
-
-# >> @item
-#: kpci_private.h:694
-#, kde-format
-msgid "8254"
-msgstr "8254"
-
-# >> @item
-#: kpci_private.h:695
-#, kde-format
-msgid "ISA timer"
-msgstr "ИСА одбројавач"
-
-# >> @item
-#: kpci_private.h:696
-#, kde-format
-msgid "EISA timers"
-msgstr "ЕИСА одбројавачи"
-
-#: kpci_private.h:697
-#, kde-format
-msgid "HPET"
-msgstr ""
-
-# >> @item
-#: kpci_private.h:700
-#, kde-format
-msgid "ISA RTC"
-msgstr "ИСА РТЦ"
-
-# >> @item
-#: kpci_private.h:703
-#, kde-format
-msgid "Extended"
-msgstr "проширени"
-
-# >> @item
-#: kpci_private.h:706 kpci_private.h:709
-#, kde-format
-msgid "OHCI"
-msgstr "ОХЦИ"
-
-# >> @item
-#: kpci_private.h:708
-#, kde-format
-msgid "UHCI"
-msgstr "УХЦИ"
-
-# >> @item
-#: kpci_private.h:710
-#, kde-format
-msgid "EHCI"
-msgstr "ЕХЦИ"
-
-#: kpci_private.h:711
-#, kde-format
-msgid "XHCI"
-msgstr ""
-
-# >> @item
-#: kpci_private.h:712
-#, kde-format
-msgid "Unspecified"
-msgstr "неназначено"
-
-# >> @item
-#: kpci_private.h:713
-#, kde-format
-msgid "USB Device"
-msgstr "УСБ уређај"
-
-# >> @item
-#: kpci_private.h:715
-#, kde-format
-msgid "SMIC"
-msgstr "СМИЦ"
-
-# >> @item
-#: kpci_private.h:716
-#, kde-format
-msgid "Keyboard controller style"
-msgstr "стил контролора тастатуре"
-
-# >> @item
-#: kpci_private.h:717
-#, kde-format
-msgid "Block transfer"
-msgstr "блоковски пренос"
-
-# >> @item
-#: kpci_private.h:727
-#, kde-format
-msgid "Vital product data"
-msgstr "кључни подаци о производу"
-
-# >> @item
-#: kpci_private.h:728
-#, kde-format
-msgid "Slot identification"
-msgstr "идентификација слота"
-
-# >> @item
-#: kpci_private.h:730
-#, kde-format
-msgid "CompactPCI hot swap"
-msgstr "компактПЦИ вруће замене"
-
-# >> @item
-#: kpci_private.h:731
-#, kde-format
-msgid "PCI-X"
+#| msgid "PCI-X"
+msgctxt "@label kcm name"
+msgid "PCI"
 msgstr "ПЦИ‑Икс"
 
-# >> @item
-#: kpci_private.h:732
+#: main.cpp:27
 #, kde-format
-msgid "HyperTransport"
-msgstr "хипертранспорт"
-
-# >> @item
-#: kpci_private.h:734
-#, kde-format
-msgid "Debug port"
-msgstr "исправљачки порт"
-
-# >> @item
-#: kpci_private.h:735
-#, kde-format
-msgid "CompactPCI central resource control"
-msgstr "компактПЦИ централно управљање ресурсима"
-
-# >> @item
-#: kpci_private.h:736
-#, kde-format
-msgid "PCI hot-plug"
-msgstr "ПЦИ врућег укључивања"
-
-# >> @item
-#: kpci_private.h:737
-#, kde-format
-msgid "AGP x8"
-msgstr "АГП×8"
-
-# >> @item
-#: kpci_private.h:738
-#, kde-format
-msgid "Secure device"
-msgstr "безбедни уређај"
-
-# >> @item
-#: kpci_private.h:739
-#, kde-format
-msgid "PCI express"
-msgstr "ПЦИ‑експрес"
-
-# >> @item
-#: kpci_private.h:740
-#, kde-format
-msgid "MSI-X"
-msgstr "МСИ‑Икс"
-
-#: kpci_private.h:741
-#, kde-format
-msgid "PCI Advanced Features"
+msgid "Harald Sitter"
 msgstr ""
 
-# >> @item
-#: kpci_private.h:747
-#, kde-format
-msgid "Fast"
-msgstr "брз"
+# >> @item:intable
+#: package/contents/ui/main.qml:14
+#, fuzzy
+#| msgid "Information"
+msgctxt "@info:whatsthis"
+msgid "PCI Information"
+msgstr "податак"
+
+#~ msgid "kcm_pci"
+#~ msgstr "КЦМ‑ПЦИ"
+
+#~ msgid "PCI Devices"
+#~ msgstr "ПЦИ уређаји"
+
+#~ msgid "(c) 2008 Nicolas Ternisien(c) 1998 - 2002 Helge Deller"
+#~ msgstr ""
+#~ "© 2008, Никола Тернизјен\n"
+#~ "© 1998-2002, Хелге Делер"
+
+#~ msgid "Nicolas Ternisien"
+#~ msgstr "Никола Тернизјен"
+
+#~ msgid "Helge Deller"
+#~ msgstr "Хелге Делер"
+
+#~ msgid "This list displays PCI information."
+#~ msgstr "Списак података о ПЦИ‑ја."
+
+#~ msgid ""
+#~ "This display shows information about your computer's PCI slots and the "
+#~ "related connected devices."
+#~ msgstr "Подаци о ПЦИ лежиштима у рачунару и на њих повезаним уређајима."
+
+# >> @item:intable
+#~ msgid "Device Class"
+#~ msgstr "класа уређаја"
+
+# >> @item:intable
+#~ msgid "Device Subclass"
+#~ msgstr "поткласа уређаја"
+
+# >> @item:intable
+#~ msgid "Device Programming Interface"
+#~ msgstr "програмско сучеље уређаја"
+
+# >> @item:intable
+#~ msgid "Master IDE Device"
+#~ msgstr "главни ИДЕ уређај"
+
+# >> @item:intable
+#~ msgid "Secondary programmable indicator"
+#~ msgstr "секундарни програмабилни показатељ"
+
+# >> @item:intable
+#~ msgid "Secondary operating mode"
+#~ msgstr "секундарни режим рада"
+
+# >> @item:intable
+#~ msgid "Primary programmable indicator"
+#~ msgstr "примарни програмабилни показатељ"
+
+# >> @item:intable
+#~ msgid "Primary operating mode"
+#~ msgstr "примарни режим рада"
+
+# >> @item:intable
+#~ msgid "Vendor"
+#~ msgstr "произвођач"
+
+# >> @item:intable
+#~ msgid "Device"
+#~ msgstr "уређај"
+
+# >> @item:intable
+#~ msgid "Subsystem"
+#~ msgstr "подсистем"
+
+# >> @item:intext
+#~ msgid " - device:"
+#~ msgstr " — уређај:"
+
+# >> @item:intable
+#~ msgid "Interrupt"
+#~ msgstr "прекид"
+
+# >> @item:intable
+#~ msgid "IRQ"
+#~ msgstr "ИРКу"
+
+# >> @item:intable
+#~ msgid "Pin"
+#~ msgstr "пин"
+
+# >> @item:intable
+#~ msgid "Control"
+#~ msgstr "контрола"
+
+# >> @item:intable
+#~ msgid "Response in I/O space"
+#~ msgstr "одзив у У/И простору"
+
+# >> @item:intable
+#~ msgid "Response in memory space"
+#~ msgstr "одзив у меморијском простору"
+
+# >> @item:intable
+#~ msgid "Bus mastering"
+#~ msgstr "владање магистралом"
+
+# >> @item:intable
+#~ msgid "Response to special cycles"
+#~ msgstr "одзив на посебне циклусе"
+
+# >> @item:intable
+#~ msgid "Memory write and invalidate"
+#~ msgstr "писање и поништавање меморије"
+
+# >> @item:intable
+#~ msgid "Palette snooping"
+#~ msgstr "забадање палете"
+
+# >> @item:intable
+#~ msgid "Parity checking"
+#~ msgstr "провера паритета"
+
+# >> @item:intable
+#~ msgid "Address/data stepping"
+#~ msgstr "корачање кроз адресе/податке"
+
+# >> @item:intable
+#~ msgid "System error"
+#~ msgstr "системска грешка"
+
+# >> @item:intable
+#~ msgid "Back-to-back writes"
+#~ msgstr "залеђни уписи"
+
+# >> @item:intable
+#~ msgid "Status"
+#~ msgstr "стање"
+
+# >> @item:intable
+#~ msgid "Interrupt status"
+#~ msgstr "стање прекида"
+
+# >> @item:intable
+#~ msgid "Capability list"
+#~ msgstr "списак способности"
+
+# >> @item:intable
+#~ msgid "66 MHz PCI 2.1 bus"
+#~ msgstr "66 MHz ПЦИ 2.1 магистрала"
+
+# >> @item:intable
+#~ msgid "User-definable features"
+#~ msgstr "кориснички-одредљиве могућности"
+
+# >> @item:intable
+#~ msgid "Accept fast back-to-back"
+#~ msgstr "прихват брзих залеђних"
+
+# >> @item:intable
+#~ msgid "Data parity error"
+#~ msgstr "грешка паритета података"
+
+# >> @item:intable
+#~ msgid "Device selection timing"
+#~ msgstr "време избора уређаја"
+
+# >> @item:intable
+#~ msgid "Signaled target abort"
+#~ msgstr "сигнализирао циљну обуставу"
+
+# >> @item:intable
+#~ msgid "Received target abort"
+#~ msgstr "примио циљну обуставу"
+
+# >> @item:intable
+#~ msgid "Received master abort"
+#~ msgstr "примио главну обуставу"
+
+# >> @item:intable
+#~ msgid "Signaled system error"
+#~ msgstr "сигнализирао системску грешку"
+
+# >> @item:intable
+#~ msgid "Parity error"
+#~ msgstr "грешка паритета"
+
+# >> @item:intable
+#~ msgid "Latency"
+#~ msgstr "кашњење"
+
+# >> @item:intable
+#~ msgid "MIN_GNT"
+#~ msgstr "MIN_GNT"
+
+# >> @item:intable
+#~ msgid "No major requirements (0x00)"
+#~ msgstr "без већих захтева (0x00)"
+
+# >> @item:intable
+#~ msgid "MAX_LAT"
+#~ msgstr "MAX_LAT"
+
+# >> @item:intable
+#~ msgid "Header"
+#~ msgstr "заглавље"
+
+# >> @item:intable
+#~ msgid "Type"
+#~ msgstr "тип"
+
+# >> @item:intable
+#~ msgid "Multifunctional"
+#~ msgstr "вишенаменски"
+
+# >> @item:intable
+#~ msgid "Build-in self test"
+#~ msgstr "уграђена самопроба"
+
+# >> @item:intable
+#~ msgid "BIST Capable"
+#~ msgstr "БИСТ способан"
+
+# >> @item:intable
+#~ msgid "BIST Start"
+#~ msgstr "БИСТ почетак"
+
+#~ msgid "Completion code"
+#~ msgstr "код довршавања"
+
+# >> @item:intable
+#~ msgid "Size"
+#~ msgstr "величина"
+
+# >> @item:intable
+#~ msgid "Address mappings"
+#~ msgstr "мапирања адреса"
+
+# >> @item:intable
+#~ msgid "Mapping %1"
+#~ msgstr "мапирање %1"
+
+# >> @item:intable
+#~ msgid "Space"
+#~ msgstr "простор"
+
+# >> @item:intable
+#~ msgid "I/O"
+#~ msgstr "У/И"
+
+# >> @item:intable
+#~ msgid "Memory"
+#~ msgstr "меморија"
+
+# >> @item:intable
+#~ msgid "Prefetchable"
+#~ msgstr "предохватно"
+
+# >> @item:intable
+#~ msgid "Address"
+#~ msgstr "адреса"
+
+# >> @item:intable
+#~ msgctxt "unassigned address"
+#~ msgid "Unassigned"
+#~ msgstr "недодељена"
+
+# >> @item:intable
+#~ msgctxt "unassigned size"
+#~ msgid "Unassigned"
+#~ msgstr "недодељена"
+
+# >> @item:intable
+#~ msgid "Bus"
+#~ msgstr "магистрала"
+
+# >> @item:intable
+#~ msgid "Primary bus number"
+#~ msgstr "примарни број магистрале"
+
+# >> @item:intable
+#~ msgid "Secondary bus number"
+#~ msgstr "секундарни број магистрале"
+
+# >> @item:intable
+#~ msgid "Subordinate bus number"
+#~ msgstr "подређени број магистрале"
+
+# >> @item:intable
+#~ msgid "Secondary latency timer"
+#~ msgstr "секундарни одбројавач кашњења"
+
+# >> @item:intable
+#~ msgid "CardBus number"
+#~ msgstr "број кардбаса"
+
+# >> @item:intable
+#~ msgid "CardBus latency timer"
+#~ msgstr "одбројавач кашњења кардбаса"
+
+# >> @item:intable
+#~ msgid "Secondary status"
+#~ msgstr "секундарно стање"
+
+# >> @item:intable
+#~ msgid "I/O behind bridge"
+#~ msgstr "У/И изамост"
+
+# >> @item:intable
+#~ msgid "32-bit"
+#~ msgstr "32‑битно"
+
+# >> @item:intable
+#~ msgid "Base"
+#~ msgstr "база"
+
+# >> @item:intable
+#~ msgid "Limit"
+#~ msgstr "ограничење"
+
+# >> @item:intable
+#~ msgid "Memory behind bridge"
+#~ msgstr "меморијски изамост"
+
+# >> @item:intable
+#~ msgid "Prefetchable memory behind bridge"
+#~ msgstr "изамост предохватне меморије"
+
+# >> @item:intable
+#~ msgid "64-bit"
+#~ msgstr "64‑битно"
+
+# >> @item:intable
+#~ msgid "Bridge control"
+#~ msgstr "управљање мостом"
+
+# >> @item:intable
+#~ msgid "Secondary parity checking"
+#~ msgstr "провера секундарног паритета"
+
+# >> @item:intable
+#~ msgid "Secondary system error"
+#~ msgstr "грешка секундарног система"
+
+# >> @item:intable
+#~ msgid "ISA ports forwarding"
+#~ msgstr "прослеђивање ИСА портова"
+
+# >> @item:intable
+#~ msgid "VGA forwarding"
+#~ msgstr "ВГА прослеђивање"
+
+# >> @item:intable
+#~ msgid "Master abort"
+#~ msgstr "главна обустава"
+
+# >> @item:intable
+#~ msgid "Secondary bus reset"
+#~ msgstr "ресет секундарне магистрале"
+
+# >> @item:intable
+#~ msgid "Secondary back-to-back writes"
+#~ msgstr "секундарни залеђни уписи"
+
+# >> @item:intable
+#~ msgid "Primary discard timer counts"
+#~ msgstr "бројачи примарног одбројавача одбацивања"
+
+# >> @item:intable
+#~ msgid "2e10 PCI clocks"
+#~ msgstr "2e10 ПЦИ тактови"
+
+# >> @item:intable
+#~ msgid "2e15 PCI clocks"
+#~ msgstr "2e15 ПЦИ тактови"
+
+# >> @item:intable
+#~ msgid "Secondary discard timer counts"
+#~ msgstr "бројачи секундарног одбројавача одбацивања"
+
+# >> @item:intable
+#~ msgid "Discard timer error"
+#~ msgstr "грешка одбројавача одбацивања"
+
+# >> @item:intable
+#~ msgid "Discard timer system error"
+#~ msgstr "системска грешка одбројавача одбацивања"
+
+# >> @item:intable
+#~ msgid "Expansion ROM"
+#~ msgstr "РОМ проширења"
+
+# >> @item:intable
+#~ msgid "Memory windows"
+#~ msgstr "меморијски прозори"
+
+# >> @item:intable
+#~ msgid "Window %1"
+#~ msgstr "прозор %1"
+
+# >> @item:intable
+#~ msgid "I/O windows"
+#~ msgstr "У/И прозори"
+
+# >> @item:intable
+#~ msgid "16-bit"
+#~ msgstr "16‑битно"
+
+# >> @item:intable
+#~ msgid "16-bit legacy interface ports"
+#~ msgstr "16‑битни портови застарелих сучеља"
+
+# >> @item:intable
+#~ msgid "CardBus control"
+#~ msgstr "управљање кардбасом"
+
+# >> @item:intable
+#~ msgid "Interrupts for 16-bit cards"
+#~ msgstr "прекиди за 16‑битне картице"
+
+# >> @item:intable
+#~ msgid "Window 0 prefetchable memory"
+#~ msgstr "предохватна меморија прозор 0"
+
+# >> @item:intable
+#~ msgid "Window 1 prefetchable memory"
+#~ msgstr "предохватна меморија прозор 1"
+
+# >> @item:intable
+#~ msgid "Post writes"
+#~ msgstr "накнадни уписи"
+
+# >> @item:intable
+#~ msgid "Raw PCI config space"
+#~ msgstr "сирови простор ПЦИ поставе"
+
+# >> @item:intable
+#~ msgid "Capabilities"
+#~ msgstr "способности"
+
+# >> @item:intable
+#~ msgid "Version"
+#~ msgstr "верзија"
+
+# >> @item:intable
+#~ msgid "Clock required for PME generation"
+#~ msgstr "сат неопходан за генерисање ПМЕ‑а"
+
+# >> @item:intable
+#~ msgid "Device-specific initialization required"
+#~ msgstr "неопходно уређају својствено припремање"
+
+# >> @item:intable
+#~ msgid "Maximum auxiliary current required in D3 cold"
+#~ msgstr "максимум допунске струје непходан у Д3 хладном"
+
+# >> @item:intable
+#~ msgid "D1 support"
+#~ msgstr "подршка за Д1"
+
+# >> @item:intable
+#~ msgid "D2 support"
+#~ msgstr "подршка за Д2"
+
+# >> @item:intable
+#~ msgid "Power management events"
+#~ msgstr "догађаји управљања напајањем"
+
+# >> @item:intable
+#~ msgid "D0"
+#~ msgstr "Д0"
+
+# >> @item:intable
+#~ msgid "D1"
+#~ msgstr "Д1"
+
+# >> @item:intable
+#~ msgid "D2"
+#~ msgstr "Д2"
+
+# >> @item:intable
+#~ msgid "D3 hot"
+#~ msgstr "Д3 вруће"
+
+# >> @item:intable
+#~ msgid "D3 cold"
+#~ msgstr "Д3 хладно"
+
+# >> @item:intable
+#~ msgid "Power state"
+#~ msgstr "стање напајања"
+
+# >> @item:intable
+#~ msgid "Power management"
+#~ msgstr "управљање напајањем"
+
+# >> @item:intable
+#~ msgid "Data select"
+#~ msgstr "избор података"
+
+# >> @item:intable
+#~ msgid "Data scale"
+#~ msgstr "размера података"
+
+# >> @item:intable
+#~ msgid "Power management status"
+#~ msgstr "стање управљања напајањем"
+
+# >> @item:intable
+#~ msgid "Bridge status"
+#~ msgstr "стање моста"
+
+# >> @item:intable
+#~ msgid "Secondary bus state in D3 hot"
+#~ msgstr "стање секундарне магистрале у Д3 врућем"
+
+# >> @item:intable
+#~ msgid "B2"
+#~ msgstr "Б2"
+
+# >> @item:intable
+#~ msgid "B3"
+#~ msgstr "Б3"
+
+# >> @item:intable
+#~ msgid "Secondary bus power & clock control"
+#~ msgstr "управљање напајањем и сатом секундарне магистрале"
+
+# >> @item:intable
+#~ msgid "Data"
+#~ msgstr "подаци"
+
+# >> @item:intable
+#~ msgid "Revision"
+#~ msgstr "ревизија"
+
+# >> @item:intable
+#~ msgid "Rate"
+#~ msgstr "проток"
+
+# >> @item:intable
+#~ msgid "AGP 3.0 mode"
+#~ msgstr "режим АГП 3.0"
+
+# >> @item:intable
+#~ msgid "Fast Writes"
+#~ msgstr "брзи уписи"
+
+# >> @item:intable
+#~ msgid "Address over 4 GiB"
+#~ msgstr "адреса преко 4 GiB"
+
+# >> @item:intable
+#~ msgid "Translation of host processor access"
+#~ msgstr "превод приступа процесора домаћина"
+
+# >> @item:intable
+#~ msgid "64-bit GART"
+#~ msgstr "64‑битни ГАРТ"
+
+# >> @item:intable
+#~ msgid "Cache Coherency"
+#~ msgstr "кохеренција кеша"
+
+# >> @item:intable
+#~ msgid "Side-band addressing"
+#~ msgstr "бочнопојасно адресирање"
+
+# >> @item:intable
+#~ msgid "Calibrating cycle"
+#~ msgstr "калибришући циклус"
+
+# >> @item:intable
+#~ msgid "Optimum asynchronous request size"
+#~ msgstr "оптимална величина асинхроног захтева"
+
+# >> @item:intable
+#~ msgid "Isochronous transactions"
+#~ msgstr "изосинхроне трансакције"
+
+# >> @item:intable
+#~ msgid "Maximum number of AGP command"
+#~ msgstr "највећи број АГП наредби"
+
+# >> @item:intable
+#~ msgid "Configuration"
+#~ msgstr "постава"
+
+# >> @item:intable
+#~ msgid "AGP"
+#~ msgstr "АГП"
+
+# >> @item:intable
+#~ msgid "Data address"
+#~ msgstr "адреса података"
+
+# >> @item:intable
+#~ msgid "Transfer completed"
+#~ msgstr "пренос довршен"
+
+# >> @item:intable
+#~ msgid "Message control"
+#~ msgstr "управљање порукама"
+
+# >> @item:intable
+#~ msgid "Message signaled interrupts"
+#~ msgstr "порука сигнализира прекиде"
+
+# >> @item:intable
+#~ msgid "Multiple message capable"
+#~ msgstr "вишеструке поруке могуће"
+
+# >> @item:intable
+#~ msgid "Multiple message enable"
+#~ msgstr "вишеструке поруке укључене"
+
+# >> @item:intable
+#~ msgid "64-bit address"
+#~ msgstr "64‑битна адреса"
+
+# >> @item:intable
+#~ msgid "Per vector masking"
+#~ msgstr "маскирање по вектору"
+
+# >> @item:intable
+#~ msgid "Mask"
+#~ msgstr "маска"
+
+# >> @item:intable
+#~ msgid "Pending"
+#~ msgstr "наступа"
+
+# >> @item:intable
+#~ msgid "Length"
+#~ msgstr "дужина"
+
+#~ msgctxt "no data"
+#~ msgid "None"
+#~ msgstr "ништа"
+
+# >> @item:intable
+#~ msgid "Next"
+#~ msgstr "следеће"
+
+# >> @item:intable
+#~ msgid "0x00 (None)"
+#~ msgstr "0x00 (ништа)"
+
+# >> @item:intable
+#~ msgid "Root only"
+#~ msgstr "само корен"
+
+# >> @item:intable
+#~ msgid "Value"
+#~ msgstr "вредност"
+
+# >> @item:intable
+#~ msgid "Cache line size"
+#~ msgstr "величина реда кеша"
 
 # >> @item
-#: kpci_private.h:748
-#, kde-format
-msgid "Medium"
-msgstr "средњи"
+#~ msgctxt "state of PCI item"
+#~ msgid "Enabled"
+#~ msgstr "укључено"
 
 # >> @item
-#: kpci_private.h:749
-#, kde-format
-msgid "Slow"
-msgstr "спор"
+#~ msgctxt "state of PCI item"
+#~ msgid "Disabled"
+#~ msgstr "искључено"
 
 # >> @item
-#: kpci_private.h:755
-#, kde-format
-msgid "32 bit"
-msgstr "32‑битни"
+#~ msgctxt "state of PCI item"
+#~ msgid "Yes"
+#~ msgstr "да"
 
 # >> @item
-#: kpci_private.h:756
-#, kde-format
-msgid "Below 1M"
-msgstr "испод 1M"
+#~ msgctxt "state of PCI item"
+#~ msgid "No"
+#~ msgstr "не"
 
 # >> @item
-#: kpci_private.h:757
-#, kde-format
-msgid "64 bit"
-msgstr "64‑битни"
+#~ msgctxt "state of PCI item"
+#~ msgid "Unknown"
+#~ msgstr "непознато"
 
 # >> @item
-#: kpci_private.h:763
-#, kde-format
-msgid "Standard"
-msgstr "стандардни"
+#~ msgid "Unclassified device"
+#~ msgstr "несврстани уређај"
 
 # >> @item
-#: kpci_private.h:765
-#, kde-format
-msgid "CardBus"
-msgstr "кардбас"
+#~ msgid "Mass storage controller"
+#~ msgstr "контролор масовног складишта"
 
 # >> @item
-#: kpci_private.h:771
-#, kde-format
-msgid "1X"
-msgstr "1×"
+#~ msgid "Network controller"
+#~ msgstr "мрежни контролор"
 
 # >> @item
-#: kpci_private.h:772
-#, kde-format
-msgid "2X"
-msgstr "2×"
+#~ msgid "Display controller"
+#~ msgstr "контролор екрана"
 
 # >> @item
-#: kpci_private.h:773
-#, kde-format
-msgid "1X & 2X"
-msgstr "1× и 2×"
+#~ msgid "Multimedia controller"
+#~ msgstr "мултимедијски контролор"
 
 # >> @item
-#: kpci_private.h:774 kpci_private.h:778
-#, kde-format
-msgid "4X"
-msgstr "4×"
+#~ msgid "Memory controller"
+#~ msgstr "меморијски контролор"
 
 # >> @item
-#: kpci_private.h:775
-#, kde-format
-msgid "1X & 4X"
-msgstr "1× и 4×"
+#~ msgid "Bridge"
+#~ msgstr "мост"
+
+#~ msgid "Communication controller"
+#~ msgstr "комуникациони контролор"
 
 # >> @item
-#: kpci_private.h:776
-#, kde-format
-msgid "2X & 4X"
-msgstr "2× и 4×"
+#~ msgid "Generic system peripheral"
+#~ msgstr "генеричка системска периферија"
 
 # >> @item
-#: kpci_private.h:777
-#, kde-format
-msgid "1X & 2X & 4X"
-msgstr "1× и 2× и 4×"
+#~ msgid "Input device controller"
+#~ msgstr "контролор улазног уређаја"
 
 # >> @item
-#: kpci_private.h:779
-#, kde-format
-msgid "8X"
-msgstr "8×"
+#~ msgid "Docking station"
+#~ msgstr "сидришна станица"
 
 # >> @item
-#: kpci_private.h:780
-#, kde-format
-msgid "4X & 8X"
-msgstr "4× и 8×"
+#~ msgid "Processor"
+#~ msgstr "процесор"
 
 # >> @item
-#: kpci_private.h:786
-#, kde-format
-msgid "4 ms"
-msgstr "4 ms"
+#~ msgid "Serial bus controller"
+#~ msgstr "контролор серијске магистрале"
 
 # >> @item
-#: kpci_private.h:787
-#, kde-format
-msgid "16 ms"
-msgstr "16 ms"
+#~ msgid "Wireless controller"
+#~ msgstr "контролор бежичне"
 
 # >> @item
-#: kpci_private.h:788
-#, kde-format
-msgid "64 ms"
-msgstr "64 ms"
+#~ msgid "Intelligent controller"
+#~ msgstr "интелигентни контролор"
 
 # >> @item
-#: kpci_private.h:789
-#, kde-format
-msgid "256 ms"
-msgstr "256 ms"
+#~ msgid "Satellite communications controller"
+#~ msgstr "контролор сателитске комуникације"
 
 # >> @item
-#: kpci_private.h:790
-#, kde-format
-msgid "Not needed"
-msgstr "непотребно"
+#~ msgid "Encryption controller"
+#~ msgstr "контролор шифровања"
 
 # >> @item
-#: kpci_private.h:796
-#, kde-format
-msgid "0 (self powered)"
-msgstr "0 (самонапајање)"
+#~ msgid "Signal processing controller"
+#~ msgstr "контролор обраде сигнала"
 
 # >> @item
-#: kpci_private.h:797
-#, kde-format
-msgid "55 mA"
-msgstr "55 mA"
+#, fuzzy
+#~| msgid "Co-processor"
+#~ msgid "Coprocessor"
+#~ msgstr "копроцесор"
+
+# >> @item:intable
+#, fuzzy
+#~| msgctxt "unassigned address"
+#~| msgid "Unassigned"
+#~ msgid "Unassigned class"
+#~ msgstr "недодељена"
 
 # >> @item
-#: kpci_private.h:798
-#, kde-format
-msgid "100 mA"
-msgstr "100 mA"
+#~ msgid "Unknown device class"
+#~ msgstr "непозната класа уређаја"
 
 # >> @item
-#: kpci_private.h:799
-#, kde-format
-msgid "160 mA"
-msgstr "160 mA"
+#~ msgid "Non-VGA unclassified device"
+#~ msgstr "несврстани не‑ВГА уређај"
 
 # >> @item
-#: kpci_private.h:800
-#, kde-format
-msgid "220 mA"
-msgstr "220 mA"
+#~ msgid "VGA unclassified device"
+#~ msgstr "несврстани ВГА уређај"
 
 # >> @item
-#: kpci_private.h:801
-#, kde-format
-msgid "270 mA"
-msgstr "270 mA"
+#~ msgid "Unknown unclassified device"
+#~ msgstr "непознат несврстани уређај"
 
 # >> @item
-#: kpci_private.h:802
-#, kde-format
-msgid "320 mA"
-msgstr "320 mA"
+#~ msgid "SCSI storage controller"
+#~ msgstr "контролор скази складишта"
 
 # >> @item
-#: kpci_private.h:803
-#, kde-format
-msgid "375 mA"
-msgstr "375 mA"
+#~ msgid "IDE controller"
+#~ msgstr "ИДЕ контролор"
 
 # >> @item
-#: kpci_private.h:818
-#, kde-format
-msgid "1 vector"
-msgstr "1 вектор"
+#~ msgid "Floppy disk controller"
+#~ msgstr "контролор флопи диска"
 
 # >> @item
-#: kpci_private.h:819
-#, kde-format
-msgid "2 vectors"
-msgstr "2 вектора"
+#~ msgid "IPI bus controller"
+#~ msgstr "контролор ИПИ магистрале"
 
 # >> @item
-#: kpci_private.h:820
-#, kde-format
-msgid "4 vectors"
-msgstr "4 вектора"
+#~ msgid "RAID bus controller"
+#~ msgstr "контролор РАИД магистрале"
 
 # >> @item
-#: kpci_private.h:821
-#, kde-format
-msgid "8 vectors"
-msgstr "8 вектора"
+#~ msgid "ATA controller"
+#~ msgstr "АТА контролор"
 
 # >> @item
-#: kpci_private.h:822
-#, kde-format
-msgid "16 vectors"
-msgstr "16 вектора"
+#, fuzzy
+#~| msgid "ATA controller"
+#~ msgid "SATA controller"
+#~ msgstr "АТА контролор"
 
 # >> @item
-#: kpci_private.h:823
-#, kde-format
-msgid "32 vectors"
-msgstr "32 вектора"
+#, fuzzy
+#~| msgid "Serial controller"
+#~ msgid "Serial Attached SCSI controller"
+#~ msgstr "серијски контролор"
+
+# >> @item
+#, fuzzy
+#~| msgid "Unknown memory controller"
+#~ msgid "Non-Volatile memory controller"
+#~ msgstr "непознат меморијски контролор"
+
+# >> @item
+#~ msgid "Unknown storage controller"
+#~ msgstr "непознат складишни контролор"
+
+# >> @item
+#~ msgid "Ethernet controller"
+#~ msgstr "етернетски контролор"
+
+# >> @item
+#~ msgid "Token ring network controller"
+#~ msgstr "контролор прстенасте мреже"
+
+# >> @item
+#~ msgid "FDDI network controller"
+#~ msgstr "контролор ФДДИ мреже"
+
+# >> @item
+#~ msgid "ATM network controller"
+#~ msgstr "контролор АТМ мреже"
+
+# >> @item
+#~ msgid "ISDN controller"
+#~ msgstr "ИСДН контролор"
+
+# >> @item
+#~ msgid "WorldFip controller"
+#~ msgstr "ворлдфип контролор"
+
+# >> @item
+#, fuzzy
+#~| msgid "IDE controller"
+#~ msgid "PICMG controller"
+#~ msgstr "ИДЕ контролор"
+
+# >> @item
+#, fuzzy
+#~| msgid "Keyboard controller"
+#~ msgid "Infiniband controller"
+#~ msgstr "контролор тастатуре"
+
+# >> @item
+#, fuzzy
+#~| msgid "RF controller"
+#~ msgid "Fabric controller"
+#~ msgstr "РФ контролор"
+
+# >> @item
+#~ msgid "Unknown network controller"
+#~ msgstr "непознат мрежни контролор"
+
+# >> @item
+#~ msgid "VGA compatible controller"
+#~ msgstr "ВГА сагласни контролор"
+
+# >> @item
+#~ msgid "XGA compatible controller"
+#~ msgstr "ИксГА сагласни контролор"
+
+# >> @item
+#~ msgid "3D controller"
+#~ msgstr "3Д контролор"
+
+# >> @item
+#~ msgid "Unknown display controller"
+#~ msgstr "непознат контролор приказа"
+
+# >> @item
+#~ msgid "Multimedia video controller"
+#~ msgstr "мултимедијски видео контролор"
+
+# >> @item
+#~ msgid "Multimedia audio controller"
+#~ msgstr "мултимедијски аудио контролор"
+
+# >> @item
+#~ msgid "Computer telephony device"
+#~ msgstr "уређај за рачунарску телефонију"
+
+# >> @item
+#, fuzzy
+#~| msgid "Secure device"
+#~ msgid "Audio device"
+#~ msgstr "безбедни уређај"
+
+# >> @item
+#~ msgid "Unknown multimedia controller"
+#~ msgstr "непознат мултимедијски контролор"
+
+# >> @item
+#~ msgid "RAM memory"
+#~ msgstr "РАМ меморија"
+
+# >> @item
+#~ msgid "FLASH memory"
+#~ msgstr "флеш меморија"
+
+# >> @item
+#~ msgid "Unknown memory controller"
+#~ msgstr "непознат меморијски контролор"
+
+# >> @item
+#~ msgid "Host bridge"
+#~ msgstr "домаћински мост"
+
+# >> @item
+#~ msgid "ISA bridge"
+#~ msgstr "ИСА мост"
+
+# >> @item
+#~ msgid "EISA bridge"
+#~ msgstr "ЕИСА мост"
+
+# >> @item
+#~ msgid "MicroChannel bridge"
+#~ msgstr "микрочанел мост"
+
+# >> @item
+#~ msgid "PCI bridge"
+#~ msgstr "ПЦИ мост"
+
+# >> @item
+#~ msgid "PCMCIA bridge"
+#~ msgstr "ПЦМЦИА мост"
+
+# >> @item
+#~ msgid "NuBus bridge"
+#~ msgstr "нубус мост"
+
+# >> @item
+#~ msgid "CardBus bridge"
+#~ msgstr "кардбас мост"
+
+# >> @item
+#~ msgid "RACEway bridge"
+#~ msgstr "рејсвеј мост"
+
+# >> @item
+#~ msgid "Semi-transparent PCI-to-PCI bridge"
+#~ msgstr "полупрозирни ПЦИ‑на‑ПЦИ мост"
+
+# >> @item
+#~ msgid "InfiniBand to PCI host bridge"
+#~ msgstr "домаћински мост с инфинибанда на ПЦИ"
+
+# >> @item
+#~ msgid "Unknown bridge"
+#~ msgstr "непознат мост"
+
+# >> @item
+#~ msgid "Serial controller"
+#~ msgstr "серијски контролор"
+
+# >> @item
+#~ msgid "Parallel controller"
+#~ msgstr "паралелни контролор"
+
+# >> @item
+#~ msgid "Multiport serial controller"
+#~ msgstr "вишепортски серијски контролор"
+
+# >> @item
+#~ msgid "Modem"
+#~ msgstr "модем"
+
+# >> @item
+#, fuzzy
+#~| msgid "USB controller"
+#~ msgid "GPIB controller"
+#~ msgstr "УСБ контролор"
+
+# >> @item
+#, fuzzy
+#~| msgid "Scanner controller"
+#~ msgid "Smart card controller"
+#~ msgstr "контролор скенера"
+
+# >> @item
+#~ msgid "Unknown communication controller"
+#~ msgstr "непознат комуникациони контролор"
+
+# >> @item
+#~ msgid "PIC"
+#~ msgstr "ПИЦ"
+
+# >> @item
+#~ msgid "DMA controller"
+#~ msgstr "ДМА контролор"
+
+#~ msgid "Timer"
+#~ msgstr "одбројавач"
+
+# >> @item
+#~ msgid "RTC"
+#~ msgstr "РТЦ"
+
+# >> @item
+#~ msgid "PCI Hot-plug controller"
+#~ msgstr "ПЦИ контролор врућег укључивања"
+
+# >> @item
+#, fuzzy
+#~| msgid "ISDN controller"
+#~ msgid "SD Host controller"
+#~ msgstr "ИСДН контролор"
+
+# >> @item
+#~ msgid "Unknown system peripheral"
+#~ msgstr "непозната системска периферија"
+
+# >> @item
+#~ msgid "Keyboard controller"
+#~ msgstr "контролор тастатуре"
+
+# >> @item
+#~ msgid "Digitizer Pen"
+#~ msgstr "дигитализујућа оловка"
+
+# >> @item
+#~ msgid "Mouse controller"
+#~ msgstr "контролор миша"
+
+# >> @item
+#~ msgid "Scanner controller"
+#~ msgstr "контролор скенера"
+
+# >> @item
+#~ msgid "Gameport controller"
+#~ msgstr "контролор играчког порта"
+
+# >> @item
+#~ msgid "Unknown input device controller"
+#~ msgstr "непознат контролор улазног уређаја"
+
+# >> @item
+#~ msgid "Generic docking station"
+#~ msgstr "генеричка сидришна станица"
+
+# >> @item
+#~ msgid "Unknown docking station"
+#~ msgstr "непозната сидришна станица"
+
+# >> @item
+#~ msgid "386"
+#~ msgstr "386"
+
+# >> @item
+#~ msgid "486"
+#~ msgstr "486"
+
+# >> @item
+#~ msgid "Pentium"
+#~ msgstr "пентијум"
+
+# >> @item
+#~ msgid "Alpha"
+#~ msgstr "алфа"
+
+# >> @item
+#~ msgid "Power PC"
+#~ msgstr "пауерПЦ"
+
+# >> @item
+#~ msgid "MIPS"
+#~ msgstr "МИПС"
+
+# >> @item
+#~ msgid "Co-processor"
+#~ msgstr "копроцесор"
+
+# >> @item
+#~ msgid "Unknown processor"
+#~ msgstr "непознат процесор"
+
+# >> @item
+#~ msgid "FireWire (IEEE 1394)"
+#~ msgstr "фајервајер (ИЕЕЕ 1394)"
+
+# >> @item
+#~ msgid "ACCESS bus"
+#~ msgstr "аксес магистрала"
+
+# >> @item
+#~ msgid "SSA"
+#~ msgstr "ССА"
+
+# >> @item
+#~ msgid "USB controller"
+#~ msgstr "УСБ контролор"
+
+# >> @item
+#~ msgid "Fibre channel"
+#~ msgstr "оптички канал"
+
+# >> @item
+#~ msgid "SMBus"
+#~ msgstr "СМбус"
+
+# >> @item
+#~ msgid "InfiniBand"
+#~ msgstr "инфинибанд"
+
+# >> @item
+#~ msgid "IPMI interface"
+#~ msgstr "ИПМИ сучеље"
+
+# >> @item
+#~ msgid "SERCOS interface"
+#~ msgstr "СЕРКОС сучеље"
+
+# >> @item
+#~ msgid "CANbus"
+#~ msgstr "канбус"
+
+# >> @item
+#~ msgid "Unknown serial bus controller"
+#~ msgstr "непознат контролор серијске магистрале"
+
+# >> @item
+#~ msgid "IRDA controller"
+#~ msgstr "ИрДА контролор"
+
+# >> @item
+#~ msgid "Consumer IR controller"
+#~ msgstr "потрошачки ИЦ контролор"
+
+# >> @item
+#~ msgid "RF controller"
+#~ msgstr "РФ контролор"
+
+# >> @item
+#~ msgid "Bluetooth"
+#~ msgstr "блутут"
+
+# >> @item
+#~ msgid "Broadband"
+#~ msgstr "широкопојасни"
+
+# >> @item
+#~ msgid "Ethernet (802.11a - 5 GHz)"
+#~ msgstr "етернет (802.11a - 5 GHz)"
+
+# >> @item
+#~ msgid "Ethernet (802.11b - 2.4 GHz)"
+#~ msgstr "етернет (802.11b - 2,4 GHz)"
+
+# >> @item
+#~ msgid "Unknown wireless controller"
+#~ msgstr "непознат контролор бежичне"
+
+# >> @item
+#~ msgid "I2O"
+#~ msgstr "И20"
+
+# >> @item
+#~ msgid "Unknown intelligent controller"
+#~ msgstr "непознат интелигентни контролор"
+
+# >> @item
+#~ msgid "Satellite TV controller"
+#~ msgstr "контролор сателитске ТВ"
+
+# >> @item
+#~ msgid "Satellite audio communication controller"
+#~ msgstr "контрол сателитске аудио комуникације"
+
+# >> @item
+#~ msgid "Satellite voice communication controller"
+#~ msgstr "контролор сателитске гласовне комуникације"
+
+# >> @item
+#~ msgid "Satellite data communication controller"
+#~ msgstr "контролор сателитске размене података"
+
+# >> @item
+#~ msgid "Unknown satellite communications controller"
+#~ msgstr "непознат контролор сателитске комуникације"
+
+# >> @item
+#~ msgid "Network and computing encryption device"
+#~ msgstr "уређај за шифровање мреже и рачунања"
+
+# >> @item
+#~ msgid "Entertainment encryption device"
+#~ msgstr "уређај за шифровање забаве"
+
+# >> @item
+#~ msgid "Unknown encryption controller"
+#~ msgstr "непознат контролор шифровања"
+
+# >> @item
+#~ msgid "DPIO module"
+#~ msgstr "ДПИО модул"
+
+# >> @item
+#~ msgid "Performance counters"
+#~ msgstr "бројачи перформанси"
+
+# >> @item
+#~ msgid "Communication synchronizer"
+#~ msgstr "синхронизатор комуникације"
+
+# >> @item
+#, fuzzy
+#~| msgid "Signal processing controller"
+#~ msgid "Signal processing management"
+#~ msgstr "контролор обраде сигнала"
+
+# >> @item
+#~ msgid "Unknown signal processing controller"
+#~ msgstr "непознат контролор обраде сигнала"
+
+# >> @item
+#, fuzzy
+#~| msgid "Unknown processor"
+#~ msgid "Unknown processing accelerator"
+#~ msgstr "непознат процесор"
+
+# >> @item
+#~ msgid "Unknown subdevice class"
+#~ msgstr "непозната класа подуређаја"
+
+# >> @item
+#, fuzzy
+#~| msgid "VGA compatible controller"
+#~ msgid "ISA Compatibility mode-only controller"
+#~ msgstr "ВГА сагласни контролор"
+
+# >> @item
+#, fuzzy
+#~| msgid "PCI Hot-plug controller"
+#~ msgid "PCI native mode-only controller"
+#~ msgstr "ПЦИ контролор врућег укључивања"
+
+# >> @item
+#~ msgid "Vendor specific"
+#~ msgstr "посебно по произвођачу"
+
+# >> @item
+#, fuzzy
+#~| msgid "PCI express"
+#~ msgid "NVM Express"
+#~ msgstr "ПЦИ‑експрес"
+
+# >> @item
+#, fuzzy
+#~| msgid "ATA controller"
+#~ msgid "VGA controller"
+#~ msgstr "АТА контролор"
+
+# >> @item
+#, fuzzy
+#~| msgid "3D controller"
+#~ msgid "8514 controller"
+#~ msgstr "3Д контролор"
+
+# >> @item
+#~ msgid "Normal decode"
+#~ msgstr "нормално декодирање"
+
+# >> @item
+#~ msgid "Subtractive decode"
+#~ msgstr "одузимачко декодирање"
+
+# >> @item
+#~ msgid "Transparent mode"
+#~ msgstr "режим прозирности"
+
+# >> @item
+#~ msgid "Endpoint mode"
+#~ msgstr "режим крајње тачке"
+
+# >> @item
+#~ msgid "Primary bus towards host CPU"
+#~ msgstr "главна магистрала ка ЦПУ‑у домаћину"
+
+# >> @item
+#~ msgid "Secondary bus towards host CPU"
+#~ msgstr "споредна магистрала ка ЦПУ‑у домаћину"
+
+# >> @item
+#~ msgid "8250"
+#~ msgstr "8250"
+
+# >> @item
+#~ msgid "16450"
+#~ msgstr "16450"
+
+# >> @item
+#~ msgid "16550"
+#~ msgstr "16550"
+
+# >> @item
+#~ msgid "16650"
+#~ msgstr "16650"
+
+# >> @item
+#~ msgid "16750"
+#~ msgstr "16750"
+
+# >> @item
+#~ msgid "16850"
+#~ msgstr "16850"
+
+# >> @item
+#~ msgid "16950"
+#~ msgstr "16950"
+
+# >> @item
+#~ msgid "SPP"
+#~ msgstr "СПП"
+
+# >> @item
+#~ msgid "BiDir"
+#~ msgstr "би‑дир"
+
+# >> @item
+#~ msgid "ECP"
+#~ msgstr "ЕЦП"
+
+# >> @item
+#~ msgid "IEEE1284"
+#~ msgstr "ИЕЕЕ 1284"
+
+# >> @item
+#~ msgid "IEEE1284 Target"
+#~ msgstr "ИЕЕЕ 1284 циљ"
+
+# >> @item
+#~ msgid "Generic"
+#~ msgstr "генерички"
+
+# >> @item
+#~ msgid "Hayes/16450"
+#~ msgstr "⁠хејс/16450"
+
+# >> @item
+#~ msgid "Hayes/16550"
+#~ msgstr "⁠хејс/16550"
+
+# >> @item
+#~ msgid "Hayes/16650"
+#~ msgstr "⁠хејс/16550"
+
+# >> @item
+#~ msgid "Hayes/16750"
+#~ msgstr "⁠хејс/16750"
+
+# >> @item
+#~ msgid "8259"
+#~ msgstr "8259"
+
+# >> @item
+#~ msgid "ISA PIC"
+#~ msgstr "ИСА ПИЦ"
+
+# >> @item
+#~ msgid "EISA PIC"
+#~ msgstr "ЕИСА ПИЦ"
+
+# >> @item
+#~ msgid "IO-APIC"
+#~ msgstr "У/И АПИЦ"
+
+# >> @item
+#~ msgid "IO(X)-APIC"
+#~ msgstr "У/И(икс) АПИЦ"
+
+# >> @item
+#~ msgid "8237"
+#~ msgstr "8237"
+
+# >> @item
+#~ msgid "ISA DMA"
+#~ msgstr "ИСА ДМА"
+
+# >> @item
+#~ msgid "EISA DMA"
+#~ msgstr "ЕИСА ДМА"
+
+# >> @item
+#~ msgid "8254"
+#~ msgstr "8254"
+
+# >> @item
+#~ msgid "ISA timer"
+#~ msgstr "ИСА одбројавач"
+
+# >> @item
+#~ msgid "EISA timers"
+#~ msgstr "ЕИСА одбројавачи"
+
+# >> @item
+#~ msgid "ISA RTC"
+#~ msgstr "ИСА РТЦ"
+
+# >> @item
+#~ msgid "Extended"
+#~ msgstr "проширени"
+
+# >> @item
+#~ msgid "OHCI"
+#~ msgstr "ОХЦИ"
+
+# >> @item
+#~ msgid "UHCI"
+#~ msgstr "УХЦИ"
+
+# >> @item
+#~ msgid "EHCI"
+#~ msgstr "ЕХЦИ"
+
+# >> @item
+#~ msgid "Unspecified"
+#~ msgstr "неназначено"
+
+# >> @item
+#~ msgid "USB Device"
+#~ msgstr "УСБ уређај"
+
+# >> @item
+#~ msgid "SMIC"
+#~ msgstr "СМИЦ"
+
+# >> @item
+#~ msgid "Keyboard controller style"
+#~ msgstr "стил контролора тастатуре"
+
+# >> @item
+#~ msgid "Block transfer"
+#~ msgstr "блоковски пренос"
+
+# >> @item
+#~ msgid "Vital product data"
+#~ msgstr "кључни подаци о производу"
+
+# >> @item
+#~ msgid "Slot identification"
+#~ msgstr "идентификација слота"
+
+# >> @item
+#~ msgid "CompactPCI hot swap"
+#~ msgstr "компактПЦИ вруће замене"
+
+# >> @item
+#~ msgid "HyperTransport"
+#~ msgstr "хипертранспорт"
+
+# >> @item
+#~ msgid "Debug port"
+#~ msgstr "исправљачки порт"
+
+# >> @item
+#~ msgid "CompactPCI central resource control"
+#~ msgstr "компактПЦИ централно управљање ресурсима"
+
+# >> @item
+#~ msgid "PCI hot-plug"
+#~ msgstr "ПЦИ врућег укључивања"
+
+# >> @item
+#~ msgid "AGP x8"
+#~ msgstr "АГП×8"
+
+# >> @item
+#~ msgid "Secure device"
+#~ msgstr "безбедни уређај"
+
+# >> @item
+#~ msgid "PCI express"
+#~ msgstr "ПЦИ‑експрес"
+
+# >> @item
+#~ msgid "MSI-X"
+#~ msgstr "МСИ‑Икс"
+
+# >> @item
+#~ msgid "Fast"
+#~ msgstr "брз"
+
+# >> @item
+#~ msgid "Medium"
+#~ msgstr "средњи"
+
+# >> @item
+#~ msgid "Slow"
+#~ msgstr "спор"
+
+# >> @item
+#~ msgid "32 bit"
+#~ msgstr "32‑битни"
+
+# >> @item
+#~ msgid "Below 1M"
+#~ msgstr "испод 1M"
+
+# >> @item
+#~ msgid "64 bit"
+#~ msgstr "64‑битни"
+
+# >> @item
+#~ msgid "Standard"
+#~ msgstr "стандардни"
+
+# >> @item
+#~ msgid "CardBus"
+#~ msgstr "кардбас"
+
+# >> @item
+#~ msgid "1X"
+#~ msgstr "1×"
+
+# >> @item
+#~ msgid "2X"
+#~ msgstr "2×"
+
+# >> @item
+#~ msgid "1X & 2X"
+#~ msgstr "1× и 2×"
+
+# >> @item
+#~ msgid "4X"
+#~ msgstr "4×"
+
+# >> @item
+#~ msgid "1X & 4X"
+#~ msgstr "1× и 4×"
+
+# >> @item
+#~ msgid "2X & 4X"
+#~ msgstr "2× и 4×"
+
+# >> @item
+#~ msgid "1X & 2X & 4X"
+#~ msgstr "1× и 2× и 4×"
+
+# >> @item
+#~ msgid "8X"
+#~ msgstr "8×"
+
+# >> @item
+#~ msgid "4X & 8X"
+#~ msgstr "4× и 8×"
+
+# >> @item
+#~ msgid "4 ms"
+#~ msgstr "4 ms"
+
+# >> @item
+#~ msgid "16 ms"
+#~ msgstr "16 ms"
+
+# >> @item
+#~ msgid "64 ms"
+#~ msgstr "64 ms"
+
+# >> @item
+#~ msgid "256 ms"
+#~ msgstr "256 ms"
+
+# >> @item
+#~ msgid "Not needed"
+#~ msgstr "непотребно"
+
+# >> @item
+#~ msgid "0 (self powered)"
+#~ msgstr "0 (самонапајање)"
+
+# >> @item
+#~ msgid "55 mA"
+#~ msgstr "55 mA"
+
+# >> @item
+#~ msgid "100 mA"
+#~ msgstr "100 mA"
+
+# >> @item
+#~ msgid "160 mA"
+#~ msgstr "160 mA"
+
+# >> @item
+#~ msgid "220 mA"
+#~ msgstr "220 mA"
+
+# >> @item
+#~ msgid "270 mA"
+#~ msgstr "270 mA"
+
+# >> @item
+#~ msgid "320 mA"
+#~ msgstr "320 mA"
+
+# >> @item
+#~ msgid "375 mA"
+#~ msgstr "375 mA"
+
+# >> @item
+#~ msgid "1 vector"
+#~ msgstr "1 вектор"
+
+# >> @item
+#~ msgid "2 vectors"
+#~ msgstr "2 вектора"
+
+# >> @item
+#~ msgid "4 vectors"
+#~ msgstr "4 вектора"
+
+# >> @item
+#~ msgid "8 vectors"
+#~ msgstr "8 вектора"
+
+# >> @item
+#~ msgid "16 vectors"
+#~ msgstr "16 вектора"
+
+# >> @item
+#~ msgid "32 vectors"
+#~ msgstr "32 вектора"

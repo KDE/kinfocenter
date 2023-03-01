@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:48+0000\n"
+"POT-Creation-Date: 2023-03-01 23:30+0000\n"
 "PO-Revision-Date: 2021-10-11 06:20+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -19,26 +19,6 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "X-Generator: Lokalize 20.12.2\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Andrej Mernik,Matjaž Jeran"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "andrejm@ubuntu.si,matjaz.jeran@amis.net"
-
-#: kcm.cpp:41
-#, kde-format
-msgid "Energy Consumption Statistics"
-msgstr "Statistika porabe energije"
-
-#: kcm.cpp:42
-#, kde-format
-msgid "Kai Uwe Broulik"
-msgstr "Kai Uwe Broulik"
 
 #: package/contents/ui/main.qml:22
 #, kde-format
@@ -366,6 +346,20 @@ msgstr "Ne"
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Andrej Mernik,Matjaž Jeran"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "andrejm@ubuntu.si,matjaz.jeran@amis.net"
+
+#~ msgid "Energy Consumption Statistics"
+#~ msgstr "Statistika porabe energije"
+
+#~ msgid "Kai Uwe Broulik"
+#~ msgstr "Kai Uwe Broulik"
 
 #~ msgid "Application Energy Consumption"
 #~ msgstr "Poraba energije programa"

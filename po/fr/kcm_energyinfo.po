@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:48+0000\n"
+"POT-Creation-Date: 2023-03-01 23:30+0000\n"
 "PO-Revision-Date: 2021-07-11 08:31+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@neuf.fr>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
@@ -23,26 +23,6 @@ msgstr ""
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Johan Claude, Vincent Pinon, Simon Depiets"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "johan.claudebreuninger@gmail.com, vpinon@kde.org, sdepiets@gmail.com"
-
-#: kcm.cpp:41
-#, kde-format
-msgid "Energy Consumption Statistics"
-msgstr "Statistiques de consommation d'énergie"
-
-#: kcm.cpp:42
-#, kde-format
-msgid "Kai Uwe Broulik"
-msgstr "Kai Uwe Broulik"
 
 #: package/contents/ui/main.qml:22
 #, kde-format
@@ -373,6 +353,21 @@ msgstr "Non"
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Johan Claude, Vincent Pinon, Simon Depiets"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr ""
+#~ "johan.claudebreuninger@gmail.com, vpinon@kde.org, sdepiets@gmail.com"
+
+#~ msgid "Energy Consumption Statistics"
+#~ msgstr "Statistiques de consommation d'énergie"
+
+#~ msgid "Kai Uwe Broulik"
+#~ msgstr "Kai Uwe Broulik"
 
 #~ msgid "Application Energy Consumption"
 #~ msgstr "Consommation d'énergie de l'application"

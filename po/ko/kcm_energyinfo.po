@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:48+0000\n"
+"POT-Creation-Date: 2023-03-01 23:30+0000\n"
 "PO-Revision-Date: 2021-07-18 13:24+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -16,26 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 20.12.3\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "박신조"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "kde@peremen.name"
-
-#: kcm.cpp:41
-#, kde-format
-msgid "Energy Consumption Statistics"
-msgstr "에너지 소모 통계"
-
-#: kcm.cpp:42
-#, kde-format
-msgid "Kai Uwe Broulik"
-msgstr "Kai Uwe Broulik"
 
 #: package/contents/ui/main.qml:22
 #, kde-format
@@ -363,6 +343,20 @@ msgstr "아니요"
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1%2"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "박신조"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "kde@peremen.name"
+
+#~ msgid "Energy Consumption Statistics"
+#~ msgstr "에너지 소모 통계"
+
+#~ msgid "Kai Uwe Broulik"
+#~ msgstr "Kai Uwe Broulik"
 
 #~ msgid "Application Energy Consumption"
 #~ msgstr "프로그램 에너지 소모"

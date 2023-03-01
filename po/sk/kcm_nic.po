@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmnic\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-14 00:46+0000\n"
+"POT-Creation-Date: 2023-03-01 23:30+0000\n"
 "PO-Revision-Date: 2021-01-07 14:30+0100\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -16,16 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 20.12.0\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Michal Šulek"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "misurel@gmail.com"
 
 #: networkmodel.cpp:159
 #, kde-format
@@ -50,47 +40,6 @@ msgstr "Multicast"
 msgctxt "@item:intable Network type"
 msgid "Loopback"
 msgstr "Loopback"
-
-#: nic.cpp:21
-#, kde-format
-msgid "kcm_nic"
-msgstr "kcm_nic"
-
-#: nic.cpp:22
-#, kde-format
-msgctxt "@title:window"
-msgid "Network Interfaces"
-msgstr "Sieťové rozhrania"
-
-#: nic.cpp:26
-#, kde-format
-msgctxt "@info"
-msgid "(c) 2001 - 2002 Alexander Neundorf"
-msgstr "(c) 2001 - 2002 Alexander Neundorf"
-
-#: nic.cpp:28
-#, kde-format
-msgctxt "@info:credit"
-msgid "Alexander Neundorf"
-msgstr "Alexander Neundorf"
-
-#: nic.cpp:28
-#, kde-format
-msgctxt "@info:credit"
-msgid "creator"
-msgstr "creator"
-
-#: nic.cpp:29
-#, kde-format
-msgctxt "@info:credit"
-msgid "Carl Schwan"
-msgstr "Carl Schwan"
-
-#: nic.cpp:29
-#, kde-format
-msgctxt "@info:credit"
-msgid "developer"
-msgstr "developer"
 
 #: package/contents/ui/main.qml:15
 #, kde-format
@@ -150,6 +99,41 @@ msgstr "Nebeží"
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr "Obnoviť"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Michal Šulek"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "misurel@gmail.com"
+
+#~ msgid "kcm_nic"
+#~ msgstr "kcm_nic"
+
+#~ msgctxt "@title:window"
+#~ msgid "Network Interfaces"
+#~ msgstr "Sieťové rozhrania"
+
+#~ msgctxt "@info"
+#~ msgid "(c) 2001 - 2002 Alexander Neundorf"
+#~ msgstr "(c) 2001 - 2002 Alexander Neundorf"
+
+#~ msgctxt "@info:credit"
+#~ msgid "Alexander Neundorf"
+#~ msgstr "Alexander Neundorf"
+
+#~ msgctxt "@info:credit"
+#~ msgid "creator"
+#~ msgstr "creator"
+
+#~ msgctxt "@info:credit"
+#~ msgid "Carl Schwan"
+#~ msgstr "Carl Schwan"
+
+#~ msgctxt "@info:credit"
+#~ msgid "developer"
+#~ msgstr "developer"
 
 #~ msgctxt "@item:intext Mode of network card"
 #~ msgid "Broadcast"

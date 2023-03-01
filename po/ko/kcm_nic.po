@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-14 00:46+0000\n"
+"POT-Creation-Date: 2023-03-01 23:30+0000\n"
 "PO-Revision-Date: 2020-10-04 18:56+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -16,16 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 19.12.3\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "박신조"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "kde@peremen.name"
 
 #: networkmodel.cpp:159
 #, kde-format
@@ -50,47 +40,6 @@ msgstr "멀티캐스트"
 msgctxt "@item:intable Network type"
 msgid "Loopback"
 msgstr "루프백"
-
-#: nic.cpp:21
-#, kde-format
-msgid "kcm_nic"
-msgstr "kcm_nic"
-
-#: nic.cpp:22
-#, kde-format
-msgctxt "@title:window"
-msgid "Network Interfaces"
-msgstr "네트워크 인터페이스"
-
-#: nic.cpp:26
-#, kde-format
-msgctxt "@info"
-msgid "(c) 2001 - 2002 Alexander Neundorf"
-msgstr "(c) 2001 - 2002 Alexander Neundorf"
-
-#: nic.cpp:28
-#, kde-format
-msgctxt "@info:credit"
-msgid "Alexander Neundorf"
-msgstr "Alexander Neundorf"
-
-#: nic.cpp:28
-#, kde-format
-msgctxt "@info:credit"
-msgid "creator"
-msgstr "개발자"
-
-#: nic.cpp:29
-#, kde-format
-msgctxt "@info:credit"
-msgid "Carl Schwan"
-msgstr "Carl Schwan"
-
-#: nic.cpp:29
-#, kde-format
-msgctxt "@info:credit"
-msgid "developer"
-msgstr "개발자"
 
 #: package/contents/ui/main.qml:15
 #, kde-format
@@ -150,6 +99,41 @@ msgstr "연결 끊김"
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr "새로 고침"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "박신조"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "kde@peremen.name"
+
+#~ msgid "kcm_nic"
+#~ msgstr "kcm_nic"
+
+#~ msgctxt "@title:window"
+#~ msgid "Network Interfaces"
+#~ msgstr "네트워크 인터페이스"
+
+#~ msgctxt "@info"
+#~ msgid "(c) 2001 - 2002 Alexander Neundorf"
+#~ msgstr "(c) 2001 - 2002 Alexander Neundorf"
+
+#~ msgctxt "@info:credit"
+#~ msgid "Alexander Neundorf"
+#~ msgstr "Alexander Neundorf"
+
+#~ msgctxt "@info:credit"
+#~ msgid "creator"
+#~ msgstr "개발자"
+
+#~ msgctxt "@info:credit"
+#~ msgid "Carl Schwan"
+#~ msgstr "Carl Schwan"
+
+#~ msgctxt "@info:credit"
+#~ msgid "developer"
+#~ msgstr "개발자"
 
 #~ msgctxt "@item:intext Mode of network card"
 #~ msgid "Broadcast"

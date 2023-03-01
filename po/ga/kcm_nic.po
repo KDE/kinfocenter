@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmnic\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-14 00:46+0000\n"
+"POT-Creation-Date: 2023-03-01 23:30+0000\n"
 "PO-Revision-Date: 2011-12-28 12:28-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -16,16 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n < 11 ? "
 "3 : 4\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Kevin Scannell"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "kscanne@gmail.com"
 
 #: networkmodel.cpp:159
 #, fuzzy, kde-format
@@ -55,50 +45,6 @@ msgstr "Ilchraolacháin"
 msgctxt "@item:intable Network type"
 msgid "Loopback"
 msgstr "Aislúbadh"
-
-#: nic.cpp:21
-#, kde-format
-msgid "kcm_nic"
-msgstr ""
-
-#: nic.cpp:22
-#, fuzzy, kde-format
-#| msgid "Network Mask"
-msgctxt "@title:window"
-msgid "Network Interfaces"
-msgstr "Masc Líonra"
-
-#: nic.cpp:26
-#, fuzzy, kde-format
-#| msgid "(c) 2001 - 2002 Alexander Neundorf"
-msgctxt "@info"
-msgid "(c) 2001 - 2002 Alexander Neundorf"
-msgstr "© 2001 - 2002 Alexander Neundorf"
-
-#: nic.cpp:28
-#, fuzzy, kde-format
-#| msgid "Alexander Neundorf"
-msgctxt "@info:credit"
-msgid "Alexander Neundorf"
-msgstr "Alexander Neundorf"
-
-#: nic.cpp:28
-#, kde-format
-msgctxt "@info:credit"
-msgid "creator"
-msgstr ""
-
-#: nic.cpp:29
-#, kde-format
-msgctxt "@info:credit"
-msgid "Carl Schwan"
-msgstr ""
-
-#: nic.cpp:29
-#, kde-format
-msgctxt "@info:credit"
-msgid "developer"
-msgstr ""
 
 #: package/contents/ui/main.qml:15
 #, fuzzy, kde-format
@@ -164,6 +110,32 @@ msgstr "Dínasctha"
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr ""
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Kevin Scannell"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "kscanne@gmail.com"
+
+#, fuzzy
+#~| msgid "Network Mask"
+#~ msgctxt "@title:window"
+#~ msgid "Network Interfaces"
+#~ msgstr "Masc Líonra"
+
+#, fuzzy
+#~| msgid "(c) 2001 - 2002 Alexander Neundorf"
+#~ msgctxt "@info"
+#~ msgid "(c) 2001 - 2002 Alexander Neundorf"
+#~ msgstr "© 2001 - 2002 Alexander Neundorf"
+
+#, fuzzy
+#~| msgid "Alexander Neundorf"
+#~ msgctxt "@info:credit"
+#~ msgid "Alexander Neundorf"
+#~ msgstr "Alexander Neundorf"
 
 #~ msgctxt "@item:intext Mode of network card"
 #~ msgid "Broadcast"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-23 00:59+0000\n"
+"POT-Creation-Date: 2023-03-01 23:30+0000\n"
 "PO-Revision-Date: 2023-02-08 07:08+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -17,16 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.2.2\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Temuri Doghonadze"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "Temuri.doghonadze@gmail.com"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -63,72 +53,48 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1 (%2-ბიტი)"
 
-#: main.cpp:104
-#, kde-format
-msgctxt "@title"
-msgid "About this System"
-msgstr "ამ სისტემის შესახებ"
-
-#: main.cpp:107
-#, kde-format
-msgctxt "@info:credit"
-msgid "Copyright 2012-2020 Harald Sitter"
-msgstr "2012-2020 Harald Sitter, ყველა უფლება დაცულია"
-
-#: main.cpp:108
-#, kde-format
-msgctxt "@info:credit"
-msgid "Harald Sitter"
-msgstr "Harald Sitter"
-
-#: main.cpp:108
-#, kde-format
-msgctxt "@info:credit"
-msgid "Author"
-msgstr "ავტორი"
-
-#: main.cpp:184
+#: main.cpp:174
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr "მწარმოებელი:"
 
-#: main.cpp:187 main.cpp:204
+#: main.cpp:177 main.cpp:194
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr "პროდუქტის სახელი:"
 
-#: main.cpp:190
+#: main.cpp:180
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
 msgstr "სისტემის ვერსია:"
 
-#: main.cpp:193 main.cpp:207
+#: main.cpp:183 main.cpp:197
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr "სერიული ნომერი:"
 
-#: main.cpp:197 main.cpp:214
+#: main.cpp:187 main.cpp:204
 #, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "უცნობი:"
 
-#: main.cpp:210
+#: main.cpp:200
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "U-Boot-ის ვერსია:"
 
-#: main.cpp:248
+#: main.cpp:238
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "KDE Frameworks-ის ვერსია:"
 
-#: main.cpp:249
+#: main.cpp:239
 #, kde-format
 msgid "Qt Version:"
 msgstr "Qt-ის ვერსია:"
@@ -221,3 +187,27 @@ msgstr "KDE Plasma-ის ვერსია:"
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ":"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Temuri Doghonadze"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "Temuri.doghonadze@gmail.com"
+
+#~ msgctxt "@title"
+#~ msgid "About this System"
+#~ msgstr "ამ სისტემის შესახებ"
+
+#~ msgctxt "@info:credit"
+#~ msgid "Copyright 2012-2020 Harald Sitter"
+#~ msgstr "2012-2020 Harald Sitter, ყველა უფლება დაცულია"
+
+#~ msgctxt "@info:credit"
+#~ msgid "Harald Sitter"
+#~ msgstr "Harald Sitter"
+
+#~ msgctxt "@info:credit"
+#~ msgid "Author"
+#~ msgstr "ავტორი"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmnic 0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-14 00:46+0000\n"
+"POT-Creation-Date: 2023-03-01 23:30+0000\n"
 "PO-Revision-Date: 2011-07-12 17:37+0200\n"
 "Last-Translator: Marko Dimjašević <marko@dimjasevic.net>\n"
 "Language-Team: Croatian <kde-croatia-list@lists.sourceforge.net>\n"
@@ -21,16 +21,6 @@ msgstr ""
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Renato Pavičić, Andrej Dundović"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "renato@translator-shop.org, adundovi@gmail.com"
 
 #: networkmodel.cpp:159
 #, fuzzy, kde-format
@@ -60,50 +50,6 @@ msgstr "Određena objava"
 msgctxt "@item:intable Network type"
 msgid "Loopback"
 msgstr "Povratna petlja"
-
-#: nic.cpp:21
-#, kde-format
-msgid "kcm_nic"
-msgstr ""
-
-#: nic.cpp:22
-#, fuzzy, kde-format
-#| msgid "Network Mask"
-msgctxt "@title:window"
-msgid "Network Interfaces"
-msgstr "Mrežna maska"
-
-#: nic.cpp:26
-#, fuzzy, kde-format
-#| msgid "(c) 2001 - 2002 Alexander Neundorf"
-msgctxt "@info"
-msgid "(c) 2001 - 2002 Alexander Neundorf"
-msgstr "© 2001–2002 Alexander Neundorf"
-
-#: nic.cpp:28
-#, fuzzy, kde-format
-#| msgid "Alexander Neundorf"
-msgctxt "@info:credit"
-msgid "Alexander Neundorf"
-msgstr "Alexander Neundorf"
-
-#: nic.cpp:28
-#, kde-format
-msgctxt "@info:credit"
-msgid "creator"
-msgstr ""
-
-#: nic.cpp:29
-#, kde-format
-msgctxt "@info:credit"
-msgid "Carl Schwan"
-msgstr ""
-
-#: nic.cpp:29
-#, kde-format
-msgctxt "@info:credit"
-msgid "developer"
-msgstr ""
 
 #: package/contents/ui/main.qml:15
 #, fuzzy, kde-format
@@ -169,6 +115,32 @@ msgstr "Nije povezano"
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr ""
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Renato Pavičić, Andrej Dundović"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "renato@translator-shop.org, adundovi@gmail.com"
+
+#, fuzzy
+#~| msgid "Network Mask"
+#~ msgctxt "@title:window"
+#~ msgid "Network Interfaces"
+#~ msgstr "Mrežna maska"
+
+#, fuzzy
+#~| msgid "(c) 2001 - 2002 Alexander Neundorf"
+#~ msgctxt "@info"
+#~ msgid "(c) 2001 - 2002 Alexander Neundorf"
+#~ msgstr "© 2001–2002 Alexander Neundorf"
+
+#, fuzzy
+#~| msgid "Alexander Neundorf"
+#~ msgctxt "@info:credit"
+#~ msgid "Alexander Neundorf"
+#~ msgstr "Alexander Neundorf"
 
 #~ msgctxt "@item:intext Mode of network card"
 #~ msgid "Broadcast"

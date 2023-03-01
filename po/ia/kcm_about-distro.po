@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-23 00:59+0000\n"
+"POT-Creation-Date: 2023-03-01 23:30+0000\n"
 "PO-Revision-Date: 2023-02-08 12:18+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -16,16 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 21.12.3\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Giovanni Sora"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "g.sora@tiscali.it"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -62,72 +52,48 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1 (%2-bit)"
 
-#: main.cpp:104
-#, kde-format
-msgctxt "@title"
-msgid "About this System"
-msgstr "Re iste systema"
-
-#: main.cpp:107
-#, kde-format
-msgctxt "@info:credit"
-msgid "Copyright 2012-2020 Harald Sitter"
-msgstr "Copyright 2012-2020 Harald Sitter"
-
-#: main.cpp:108
-#, kde-format
-msgctxt "@info:credit"
-msgid "Harald Sitter"
-msgstr "Harald Sitter"
-
-#: main.cpp:108
-#, kde-format
-msgctxt "@info:credit"
-msgid "Author"
-msgstr "Autor"
-
-#: main.cpp:184
+#: main.cpp:174
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr "Constructor:"
 
-#: main.cpp:187 main.cpp:204
+#: main.cpp:177 main.cpp:194
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr "Nomine de producto:"
 
-#: main.cpp:190
+#: main.cpp:180
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
 msgstr "Version de Systema:"
 
-#: main.cpp:193 main.cpp:207
+#: main.cpp:183 main.cpp:197
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr "Numero serial:"
 
-#: main.cpp:197 main.cpp:214
+#: main.cpp:187 main.cpp:204
 #, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "Incognite:"
 
-#: main.cpp:210
+#: main.cpp:200
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "Version de U-Boot:"
 
-#: main.cpp:248
+#: main.cpp:238
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "Version de KDE Frameworks :"
 
-#: main.cpp:249
+#: main.cpp:239
 #, kde-format
 msgid "Qt Version:"
 msgstr "Version de Qt:"
@@ -220,6 +186,30 @@ msgstr "Version de KDE Plasma:"
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ":"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Giovanni Sora"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "g.sora@tiscali.it"
+
+#~ msgctxt "@title"
+#~ msgid "About this System"
+#~ msgstr "Re iste systema"
+
+#~ msgctxt "@info:credit"
+#~ msgid "Copyright 2012-2020 Harald Sitter"
+#~ msgstr "Copyright 2012-2020 Harald Sitter"
+
+#~ msgctxt "@info:credit"
+#~ msgid "Harald Sitter"
+#~ msgstr "Harald Sitter"
+
+#~ msgctxt "@info:credit"
+#~ msgid "Author"
+#~ msgstr "Autor"
 
 #~ msgid "Copy software and hardware information to clipboard"
 #~ msgstr "Copia information de software e hardware in area de transferentia"

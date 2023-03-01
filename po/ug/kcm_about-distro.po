@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-23 00:59+0000\n"
+"POT-Creation-Date: 2023-03-01 23:30+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
@@ -16,16 +16,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "ئابدۇقادىر ئابلىز, غەيرەت كەنجى"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "sahran.ug@gmail.com,  gheyret@gmail.com"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -63,57 +53,31 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr ""
 
-#: main.cpp:104
-#, kde-format
-msgctxt "@title"
-msgid "About this System"
-msgstr ""
-
-#: main.cpp:107
-#, kde-format
-msgctxt "@info:credit"
-msgid "Copyright 2012-2020 Harald Sitter"
-msgstr ""
-
-#: main.cpp:108
-#, fuzzy, kde-format
-#| msgid "Harald Sitter"
-msgctxt "@info:credit"
-msgid "Harald Sitter"
-msgstr "Harald Sitter"
-
-#: main.cpp:108
-#, fuzzy, kde-format
-#| msgid "Author"
-msgctxt "@info:credit"
-msgid "Author"
-msgstr "ئاپتور"
-
-#: main.cpp:184
+#: main.cpp:174
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr ""
 
-#: main.cpp:187 main.cpp:204
+#: main.cpp:177 main.cpp:194
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr ""
 
-#: main.cpp:190
+#: main.cpp:180
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
 msgstr ""
 
-#: main.cpp:193 main.cpp:207
+#: main.cpp:183 main.cpp:197
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr ""
 
-#: main.cpp:197 main.cpp:214
+#: main.cpp:187 main.cpp:204
 #, fuzzy, kde-format
 #| msgctxt "Unknown amount of RAM"
 #| msgid "Unknown"
@@ -121,18 +85,18 @@ msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "نامەلۇم"
 
-#: main.cpp:210
+#: main.cpp:200
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr ""
 
-#: main.cpp:248
+#: main.cpp:238
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr ""
 
-#: main.cpp:249
+#: main.cpp:239
 #, kde-format
 msgid "Qt Version:"
 msgstr ""
@@ -227,6 +191,26 @@ msgstr ""
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ""
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "ئابدۇقادىر ئابلىز, غەيرەت كەنجى"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "sahran.ug@gmail.com,  gheyret@gmail.com"
+
+#, fuzzy
+#~| msgid "Harald Sitter"
+#~ msgctxt "@info:credit"
+#~ msgid "Harald Sitter"
+#~ msgstr "Harald Sitter"
+
+#, fuzzy
+#~| msgid "Author"
+#~ msgctxt "@info:credit"
+#~ msgid "Author"
+#~ msgstr "ئاپتور"
 
 #~ msgctxt "@label Unknown distribution name (e.g. MyDistro)"
 #~ msgid "Unknown"

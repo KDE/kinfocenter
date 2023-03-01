@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-06-17 02:10+0200\n"
+"POT-Creation-Date: 2023-03-01 23:30+0000\n"
 "PO-Revision-Date: 2016-06-19 15:35+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -18,30 +18,8 @@ msgstr ""
 "X-Text-Markup: kde4\n"
 "X-Environment: kde\n"
 
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Часлав Илић"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "caslav.ilic@gmx.net"
-
-#: BitEntry.cpp:10
-#, kde-format
-msgid "OS Type:"
-msgstr "Врста ОС‑а:"
-
-# >> @item:intable
-#: BitEntry.cpp:18
-#, kde-format
-msgctxt "@label %1 is the CPU bit width (e.g. 32 or 64)"
-msgid "%1-bit"
-msgstr "%1‑битно"
-
 # >> @item
-#: CPUEntry.cpp:20
+#: CPUEntry.cpp:17
 #, kde-format
 msgid "Processor:"
 msgid_plural "Processors:"
@@ -50,12 +28,30 @@ msgstr[1] "Процесори:"
 msgstr[2] "Процесори:"
 msgstr[3] "Процесор:"
 
+# >! Contexts.
+#: CPUEntry.cpp:22
+#, fuzzy, kde-format
+#| msgctxt "Unknown amount of RAM"
+#| msgid "Unknown"
+msgctxt ""
+"unknown CPU type/product name; presented as `Processors: 4 × Unknown Type'"
+msgid "Unknown Type"
+msgstr "непознато"
+
 # >> @item
-#: GPUEntry.cpp:20
+#: GPUEntry.cpp:19
 #, fuzzy, kde-format
 #| msgid "Processor:"
 #| msgid_plural "Processors:"
 msgid "Graphics Processor:"
+msgstr "Процесори:"
+
+# >> @item
+#: GraphicsPlatformEntry.cpp:10
+#, fuzzy, kde-format
+#| msgid "Processor:"
+#| msgid_plural "Processors:"
+msgid "Graphics Platform:"
 msgstr "Процесори:"
 
 #: KernelEntry.cpp:11
@@ -63,105 +59,181 @@ msgstr "Процесори:"
 msgid "Kernel Version:"
 msgstr "Издање језгра:"
 
-#: MemoryEntry.cpp:17
+# >> @item:intable
+#: KernelEntry.cpp:23
+#, fuzzy, kde-format
+#| msgctxt "@label %1 is the CPU bit width (e.g. 32 or 64)"
+#| msgid "%1-bit"
+msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
+msgid "%1 (%2-bit)"
+msgstr "%1‑битно"
+
+#: main.cpp:174
+#, kde-format
+msgctxt "@label"
+msgid "Manufacturer:"
+msgstr ""
+
+#: main.cpp:177 main.cpp:194
+#, kde-format
+msgctxt "@label"
+msgid "Product Name:"
+msgstr ""
+
+#: main.cpp:180
+#, fuzzy, kde-format
+#| msgid "Qt Version:"
+msgctxt "@label"
+msgid "System Version:"
+msgstr "Издање КуТ‑а:"
+
+#: main.cpp:183 main.cpp:197
+#, kde-format
+msgctxt "@label"
+msgid "Serial Number:"
+msgstr ""
+
+# >! Contexts.
+#: main.cpp:187 main.cpp:204
+#, fuzzy, kde-format
+#| msgctxt "Unknown amount of RAM"
+#| msgid "Unknown"
+msgctxt "@label unknown entry in table"
+msgid "Unknown:"
+msgstr "непознато"
+
+#: main.cpp:200
+#, fuzzy, kde-format
+#| msgid "Qt Version:"
+msgctxt "@label uboot is the name of a bootloader for embedded devices"
+msgid "U-Boot Version:"
+msgstr "Издање КуТ‑а:"
+
+#: main.cpp:238
+#, kde-format
+msgid "KDE Frameworks Version:"
+msgstr "Издање Радних оквира КДЕ‑а:"
+
+#: main.cpp:239
+#, kde-format
+msgid "Qt Version:"
+msgstr "Издање КуТ‑а:"
+
+#: MemoryEntry.cpp:20
 #, kde-format
 msgid "Memory:"
 msgstr "Меморија:"
 
-#: MemoryEntry.cpp:47
+#: MemoryEntry.cpp:49
 #, kde-format
 msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
 msgid "%1 of RAM"
 msgstr "%1 РАМ‑а"
 
 # >! Contexts.
-#: MemoryEntry.cpp:49
+#: MemoryEntry.cpp:53
 #, kde-format
 msgctxt "Unknown amount of RAM"
 msgid "Unknown"
 msgstr "непознато"
 
-#: Module.cpp:35
-#, kde-format
-msgctxt "@title"
-msgid "About System"
-msgstr ""
-
-#: Module.cpp:39
-#, fuzzy, kde-format
-#| msgctxt "@info:credit"
-#| msgid "Copyright 2012-2014 Harald Sitter"
-msgctxt "@info:credit"
-msgid "Copyright 2012-2020 Harald Sitter"
-msgstr "© 2012–2014, Харалд Ситер"
-
-#: Module.cpp:41
-#, kde-format
-msgctxt "@info:credit"
-msgid "Harald Sitter"
-msgstr "Харалд Ситер"
-
-#: Module.cpp:42
-#, kde-format
-msgctxt "@info:credit"
-msgid "Author"
-msgstr "Аутор"
-
-#: Module.cpp:135
+#: OSVersionEntry.cpp:9
 #, kde-format
 msgid "Operating System:"
 msgstr ""
 
-#: Module.cpp:180
+#: OSVersionEntry.cpp:11
+#, kde-format
+msgctxt "@label %1 is the distro name, %2 is the version"
+msgid "%1 %2"
+msgstr ""
+
+#: OSVersionEntry.cpp:13
+#, kde-format
+msgctxt ""
+"@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
+"should be a number, or 'rolling'"
+msgid "%1 %2 Build: %3"
+msgstr ""
+
+#: package/contents/ui/main.qml:91
+#, kde-format
+msgctxt "@title"
+msgid "Serial Number"
+msgstr ""
+
+#: package/contents/ui/main.qml:97 package/contents/ui/main.qml:178
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy to Clipboard"
+msgstr ""
+
+#: package/contents/ui/main.qml:124
+#, kde-format
+msgctxt "@action:button show a hidden entry in an overlay"
+msgid "Show"
+msgstr ""
+
+#: package/contents/ui/main.qml:136
 #, fuzzy, kde-format
 #| msgid "Software"
 msgctxt "@title:group"
 msgid "Software"
 msgstr "Софтвер"
 
-#: Module.cpp:183
-#, kde-format
-msgid "KDE Frameworks Version:"
-msgstr "Издање Радних оквира КДЕ‑а:"
-
-#: Module.cpp:184
-#, kde-format
-msgid "Qt Version:"
-msgstr "Издање КуТ‑а:"
-
 # >> @item category
-#: Module.cpp:190
+#: package/contents/ui/main.qml:146
 #, fuzzy, kde-format
 #| msgid "Hardware"
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "Хардвер"
 
-#. i18n: ectx: property (toolTip), widget (QPushButton, pushButtonCopyInfo)
-#: Module.ui:175
+#: package/contents/ui/main.qml:166
 #, kde-format
-msgid "Copy software and hardware information to clipboard"
+msgctxt "@action:button launches kinfocenter from systemsettings"
+msgid "Show More Information"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QPushButton, pushButtonCopyInfo)
-#: Module.ui:178
+#: package/contents/ui/main.qml:185
 #, kde-format
-msgid "Copy to Clipboard"
-msgstr ""
-
-#. i18n: ectx: property (toolTip), widget (QPushButton, pushButtonCopyInfoInEnglish)
-#: Module.ui:189
-#, kde-format
-msgid "Copy software and hardware information to clipboard in English"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QPushButton, pushButtonCopyInfoInEnglish)
-#: Module.ui:192
-#, kde-format
+msgctxt "@action:button"
 msgid "Copy to Clipboard in English"
 msgstr ""
 
-#: PlasmaEntry.cpp:13
+#: PlasmaEntry.cpp:15
 #, kde-format
 msgid "KDE Plasma Version:"
 msgstr "Издање КДЕ Плазме:"
+
+#: ThirdPartyEntry.cpp:12
+#, kde-format
+msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
+msgid ":"
+msgstr ""
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Часлав Илић"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "caslav.ilic@gmx.net"
+
+#~ msgid "OS Type:"
+#~ msgstr "Врста ОС‑а:"
+
+#, fuzzy
+#~| msgctxt "@info:credit"
+#~| msgid "Copyright 2012-2014 Harald Sitter"
+#~ msgctxt "@info:credit"
+#~ msgid "Copyright 2012-2020 Harald Sitter"
+#~ msgstr "© 2012–2014, Харалд Ситер"
+
+#~ msgctxt "@info:credit"
+#~ msgid "Harald Sitter"
+#~ msgstr "Харалд Ситер"
+
+#~ msgctxt "@info:credit"
+#~ msgid "Author"
+#~ msgstr "Аутор"
