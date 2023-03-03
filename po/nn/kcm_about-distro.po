@@ -189,27 +189,3 @@ msgstr "KDE Plasma-versjon:"
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ":"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Karl Ove Hufthammer"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "karl@huftis.org"
-
-#~ msgctxt "@title"
-#~ msgid "About this System"
-#~ msgstr "Om dette systemet"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Copyright 2012-2020 Harald Sitter"
-#~ msgstr "Copyright © 2012–2020 Harald Sitter"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Harald Sitter"
-#~ msgstr "Harald Sitter"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Author"
-#~ msgstr "Opphavsperson"

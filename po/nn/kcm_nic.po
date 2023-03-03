@@ -102,38 +102,3 @@ msgstr "Nede"
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr "Oppdater"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Gaute Hvoslef Kvalnes"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "gaute@verdsveven.com"
-
-#~ msgid "kcm_nic"
-#~ msgstr "kcm_nic"
-
-#~ msgctxt "@title:window"
-#~ msgid "Network Interfaces"
-#~ msgstr "Nettverksgrensesnitt"
-
-#~ msgctxt "@info"
-#~ msgid "(c) 2001 - 2002 Alexander Neundorf"
-#~ msgstr "© 2001–2002 Alexander Neundorf"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Alexander Neundorf"
-#~ msgstr "Alexander Neundorf"
-
-#~ msgctxt "@info:credit"
-#~ msgid "creator"
-#~ msgstr "Opphavsperson"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Carl Schwan"
-#~ msgstr "Carl Schwan"
-
-#~ msgctxt "@info:credit"
-#~ msgid "developer"
-#~ msgstr "Utviklar"
