@@ -97,7 +97,7 @@ msgstr "إصدار U-Boot:"
 #: main.cpp:238
 #, kde-format
 msgid "KDE Frameworks Version:"
-msgstr "إصدارة إطار كدي:"
+msgstr "إصدارة إطار كِيدِي:"
 
 #: main.cpp:239
 #, kde-format
@@ -185,7 +185,7 @@ msgstr "انسخ إلى الحافظة بالإنجليزية"
 #: PlasmaEntry.cpp:15
 #, kde-format
 msgid "KDE Plasma Version:"
-msgstr "إصدارة كدي بلازما:"
+msgstr "إصدارة كِيدِي بلازما:"
 
 #: ThirdPartyEntry.cpp:12
 #, kde-format

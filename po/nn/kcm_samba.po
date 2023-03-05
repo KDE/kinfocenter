@@ -1,4 +1,4 @@
-# Translation of kcmsamba to Norwegian Nynorsk
+# Translation of kcm_samba to Norwegian Nynorsk
 #
 # Gaute Hvoslef Kvalnes <gaute@verdsveven.com>, 1999, 2000, 2002, 2005.
 # Karl Ove Hufthammer <karl@huftis.org>, 2004, 2007, 2008, 2015, 2016, 2020.
@@ -50,41 +50,3 @@ msgstr "Det er ingen Samba-ressursar monterte på systemet"
 msgctxt "@info:tooltip"
 msgid "Open folder properties to change share settings"
 msgstr "Opna mappeeigenskapar for å endra deleinnstillingar"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Gaute Hvoslef Kvalnes"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "gaute@verdsveven.com"
-
-#~ msgid "kcmsamba"
-#~ msgstr "kcmsamba"
-
-#~ msgid "Samba Status"
-#~ msgstr "Samba-status"
-
-#~ msgid "(c) 2002-2020 KDE Information Control Module Samba Team"
-#~ msgstr "© 2002–2020 KDE-gruppa for Samba-informasjonsmodul"
-
-#~ msgid "Michael Glauche"
-#~ msgstr "Michael Glauche"
-
-#~ msgid "Matthias Hoelzer"
-#~ msgstr "Matthias Hoelzer"
-
-#~ msgid "David Faure"
-#~ msgstr "David Faure"
-
-#~ msgid "Harald Koschinski"
-#~ msgstr "Harald Koschinski"
-
-#~ msgid "Wilco Greven"
-#~ msgstr "Wilco Greven"
-
-#~ msgid "Alexander Neundorf"
-#~ msgstr "Alexander Neundorf"
-
-#~ msgid "Harald Sitter"
-#~ msgstr "Harald Sitter"

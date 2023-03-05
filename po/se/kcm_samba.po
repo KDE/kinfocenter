@@ -1,4 +1,4 @@
-# Translation of kcmsamba to Northern Sami
+# Translation of kcm_samba to Northern Sami
 #
 # Nils Johan Utsi <njutsi@frisurf.no>, 2003.
 # Børre Gaup <boerre@skolelinux.no>, 2003, 2004, 2005.
@@ -49,14 +49,3 @@ msgstr ""
 msgctxt "@info:tooltip"
 msgid "Open folder properties to change share settings"
 msgstr ""
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Nils Johan Utsi"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "njutsi@frisurf.no"
-
-#~ msgid "kcmsamba"
-#~ msgstr "kcmsamba"
