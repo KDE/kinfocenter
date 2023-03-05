@@ -197,4 +197,4 @@ msgstr "أنعش"
 
 #, fuzzy
 #~ msgid "System Information Control Module"
-#~ msgstr "وحدة تحكم نظام معلومات كدي"
+#~ msgstr "وحدة تحكم نظام معلومات كِيدِي"

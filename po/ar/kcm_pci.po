@@ -1329,4 +1329,4 @@ msgstr "معلومات PCI"
 #~ msgstr "متوافق مع 8514"
 
 #~ msgid "KDE PCI Information Control Module"
-#~ msgstr "وحدة كدي للتحكم بمعلومات PCI "
+#~ msgstr "وحدة كِيدِي للتحكم بمعلومات PCI "

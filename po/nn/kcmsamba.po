@@ -1,4 +1,4 @@
-# Translation of kcmsamba to Norwegian Nynorsk
+# Translation of kcm_samba to Norwegian Nynorsk
 #
 # Gaute Hvoslef Kvalnes <gaute@verdsveven.com>, 1999, 2000, 2002, 2005.
 # Karl Ove Hufthammer <karl@huftis.org>, 2004, 2007, 2008, 2015, 2016, 2020.

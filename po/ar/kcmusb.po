@@ -595,4 +595,4 @@ msgstr "<tr><td><i>الحجم الأقصى لحزم البيانات</i></td><td
 #~ "USB التي يجب أن تدرج هنا."
 
 #~ msgid "KDE USB Viewer"
-#~ msgstr "مُظهر أجهزة USB للكيدي"
+#~ msgstr "مُظهر أجهزة USB للكِيدِي"
