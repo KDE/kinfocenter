@@ -163,7 +163,7 @@ KCM.SimpleKCM {
 
             Layout.alignment: Qt.AlignHCenter
 
-            text: i18nc("@action:button launches kinfocenter from systemsettings", "Show More Information")
+            text: i18nc("@action:button launches kinfocenter from systemsettings", "Launch %1", kicRunner.genericName)
             icon.name: kicRunner.iconName
             onClicked: kicRunner.run()
         }
