@@ -1,5 +1,5 @@
 # KI18N Translation Domain for this library
-add_definitions(-DTRANSLATION_DOMAIN=\"kcmsamba\")
+add_definitions(-DTRANSLATION_DOMAIN=\"kcm_samba\")
 
 set(kcm_samba_PART_SRCS
     smbmountmodel.cpp
@@ -29,6 +29,6 @@ target_link_libraries(kcm_samba
     kcm_samba_static
 )
 
-kpackage_install_package(package kcmsamba kcms) # NB: the target name follows the kaboutdata name which in turn follows the i18n domain name
+kpackage_install_package(package kcm_samba kcms) # NB: the target name follows the kaboutdata name which in turn follows the i18n domain name
 
 add_subdirectory(autotests)
