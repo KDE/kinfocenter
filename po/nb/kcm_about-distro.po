@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 23:30+0000\n"
+"POT-Creation-Date: 2023-03-06 02:13+0000\n"
 "PO-Revision-Date: 2015-04-30 08:57+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -169,7 +169,7 @@ msgstr ""
 #: package/contents/ui/main.qml:166
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
-msgid "Show More Information"
+msgid "Launch %1"
 msgstr ""
 
 #: package/contents/ui/main.qml:185

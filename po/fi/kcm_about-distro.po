@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 23:30+0000\n"
+"POT-Creation-Date: 2023-03-06 02:13+0000\n"
 "PO-Revision-Date: 2022-08-22 21:56+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -172,8 +172,8 @@ msgstr "Laitteisto"
 #: package/contents/ui/main.qml:166
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
-msgid "Show More Information"
-msgstr "Näytä lisätietoa"
+msgid "Launch %1"
+msgstr ""
 
 #: package/contents/ui/main.qml:185
 #, kde-format
@@ -191,6 +191,10 @@ msgstr "KDE Plasma -versio:"
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ""
+
+#~ msgctxt "@action:button launches kinfocenter from systemsettings"
+#~ msgid "Show More Information"
+#~ msgstr "Näytä lisätietoa"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 23:30+0000\n"
+"POT-Creation-Date: 2023-03-06 02:13+0000\n"
 "PO-Revision-Date: 2023-02-20 10:53+0100\n"
 "Last-Translator: Phu Hung Nguyen <phu.nguyen@kdemail.net>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -166,8 +166,8 @@ msgstr "Phần cứng"
 #: package/contents/ui/main.qml:166
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
-msgid "Show More Information"
-msgstr "Hiện thêm thông tin"
+msgid "Launch %1"
+msgstr ""
 
 #: package/contents/ui/main.qml:185
 #, kde-format
@@ -185,6 +185,10 @@ msgstr "Phiên bản Plasma KDE:"
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ":"
+
+#~ msgctxt "@action:button launches kinfocenter from systemsettings"
+#~ msgid "Show More Information"
+#~ msgstr "Hiện thêm thông tin"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

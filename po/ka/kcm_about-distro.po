@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 23:30+0000\n"
+"POT-Creation-Date: 2023-03-06 02:13+0000\n"
 "PO-Revision-Date: 2023-02-08 07:08+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -168,8 +168,8 @@ msgstr "აპარატურა"
 #: package/contents/ui/main.qml:166
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
-msgid "Show More Information"
-msgstr "მეტი ინფორმაციის ჩვენება"
+msgid "Launch %1"
+msgstr ""
 
 #: package/contents/ui/main.qml:185
 #, kde-format
@@ -187,6 +187,10 @@ msgstr "KDE Plasma-ის ვერსია:"
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ":"
+
+#~ msgctxt "@action:button launches kinfocenter from systemsettings"
+#~ msgid "Show More Information"
+#~ msgstr "მეტი ინფორმაციის ჩვენება"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

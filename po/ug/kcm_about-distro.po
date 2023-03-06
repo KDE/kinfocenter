@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 23:30+0000\n"
+"POT-Creation-Date: 2023-03-06 02:13+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
@@ -172,7 +172,7 @@ msgstr "قاتتىق دېتال"
 #: package/contents/ui/main.qml:166
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
-msgid "Show More Information"
+msgid "Launch %1"
 msgstr ""
 
 #: package/contents/ui/main.qml:185

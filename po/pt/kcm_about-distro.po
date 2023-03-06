@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 23:30+0000\n"
+"POT-Creation-Date: 2023-03-06 02:13+0000\n"
 "PO-Revision-Date: 2023-02-15 16:20+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -163,8 +163,8 @@ msgstr "'Hardware'"
 #: package/contents/ui/main.qml:166
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
-msgid "Show More Information"
-msgstr "Mostrar Mais Informações"
+msgid "Launch %1"
+msgstr ""
 
 #: package/contents/ui/main.qml:185
 #, kde-format
@@ -182,6 +182,10 @@ msgstr "Versão do Plasma do KDE:"
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ":"
+
+#~ msgctxt "@action:button launches kinfocenter from systemsettings"
+#~ msgid "Show More Information"
+#~ msgstr "Mostrar Mais Informações"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 23:30+0000\n"
+"POT-Creation-Date: 2023-03-06 02:13+0000\n"
 "PO-Revision-Date: 2023-02-18 19:12+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -167,8 +167,8 @@ msgstr "Avadanlıq"
 #: package/contents/ui/main.qml:166
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
-msgid "Show More Information"
-msgstr "Daha çox məlumat göstərmək"
+msgid "Launch %1"
+msgstr ""
 
 #: package/contents/ui/main.qml:185
 #, kde-format
@@ -186,6 +186,10 @@ msgstr "KDE Plasma Versiyası:"
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ":"
+
+#~ msgctxt "@action:button launches kinfocenter from systemsettings"
+#~ msgid "Show More Information"
+#~ msgstr "Daha çox məlumat göstərmək"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
