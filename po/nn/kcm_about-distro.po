@@ -189,7 +189,3 @@ msgstr "KDE Plasma-versjon:"
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ":"
-
-#~ msgctxt "@action:button launches kinfocenter from systemsettings"
-#~ msgid "Show More Information"
-#~ msgstr "Vis meir informasjon"

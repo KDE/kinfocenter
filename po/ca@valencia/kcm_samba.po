@@ -1,4 +1,4 @@
-# Translation of kcmsamba.po to Catalan (Valencian)
+# Translation of kcm_samba.po to Catalan (Valencian)
 # Copyright (C) 1998-2020 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
@@ -54,41 +54,3 @@ msgid "Open folder properties to change share settings"
 msgstr ""
 "Obriu les propietats de la carpeta per a canviar la configuració de la "
 "compartició"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Sebastià Pla i Sanz"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "sps@sastia.com"
-
-#~ msgid "kcmsamba"
-#~ msgstr "kcmsamba"
-
-#~ msgid "Samba Status"
-#~ msgstr "Estat de Samba"
-
-#~ msgid "(c) 2002-2020 KDE Information Control Module Samba Team"
-#~ msgstr "(c) 2002-2020 Equip Samba del mòdul de control d'informació de KDE"
-
-#~ msgid "Michael Glauche"
-#~ msgstr "Michael Glauche"
-
-#~ msgid "Matthias Hoelzer"
-#~ msgstr "Matthias Hoelzer"
-
-#~ msgid "David Faure"
-#~ msgstr "David Faure"
-
-#~ msgid "Harald Koschinski"
-#~ msgstr "Harald Koschinski"
-
-#~ msgid "Wilco Greven"
-#~ msgstr "Wilco Greven"
-
-#~ msgid "Alexander Neundorf"
-#~ msgstr "Alexander Neundorf"
-
-#~ msgid "Harald Sitter"
-#~ msgstr "Harald Sitter"

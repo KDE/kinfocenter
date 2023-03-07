@@ -103,38 +103,3 @@ msgstr "Inactiva"
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr "Actualitza"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Empar Montoro Martín,Sebastià Pla i Sanz"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "montoro_mde@gva.es,sps@sastia.com"
-
-#~ msgid "kcm_nic"
-#~ msgstr "kcm_nic"
-
-#~ msgctxt "@title:window"
-#~ msgid "Network Interfaces"
-#~ msgstr "Interfícies de xarxa"
-
-#~ msgctxt "@info"
-#~ msgid "(c) 2001 - 2002 Alexander Neundorf"
-#~ msgstr "(c) 2001 - 2002 Alexander Neundorf"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Alexander Neundorf"
-#~ msgstr "Alexander Neundorf"
-
-#~ msgctxt "@info:credit"
-#~ msgid "creator"
-#~ msgstr "Creador"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Carl Schwan"
-#~ msgstr "Carl Schwan"
-
-#~ msgctxt "@info:credit"
-#~ msgid "developer"
-#~ msgstr "Desenvolupador"
