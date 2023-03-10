@@ -100,38 +100,3 @@ msgstr "Neběží"
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr "Obnovit"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Lukáš Tinkl"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "lukas@kde.org"
-
-#~ msgid "kcm_nic"
-#~ msgstr "kcm_nic"
-
-#~ msgctxt "@title:window"
-#~ msgid "Network Interfaces"
-#~ msgstr "Síťová rozhraní"
-
-#~ msgctxt "@info"
-#~ msgid "(c) 2001 - 2002 Alexander Neundorf"
-#~ msgstr "(c) 2001 - 2002 Alexander Neundorf"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Alexander Neundorf"
-#~ msgstr "Alexander Neundorf"
-
-#~ msgctxt "@info:credit"
-#~ msgid "creator"
-#~ msgstr "Vytvořil"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Carl Schwan"
-#~ msgstr "Carl Schwan"
-
-#~ msgctxt "@info:credit"
-#~ msgid "developer"
-#~ msgstr "vývojář"

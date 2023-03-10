@@ -344,17 +344,3 @@ msgstr "Ne"
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Vít Pelčák"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "vit@pelcak.org"
-
-#~ msgid "Energy Consumption Statistics"
-#~ msgstr "Statistika spotřeby energie"
-
-#~ msgid "Kai Uwe Broulik"
-#~ msgstr "Kai Uwe Broulik"
