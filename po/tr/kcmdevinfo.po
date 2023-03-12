@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-16 00:48+0000\n"
-"PO-Revision-Date: 2023-03-07 20:49+0300\n"
+"PO-Revision-Date: 2023-03-11 16:43+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -134,7 +134,7 @@ msgstr "Ürün: "
 #: infopanel.cpp:123
 #, kde-format
 msgid "Vendor: "
-msgstr "Sağlayıcı: "
+msgstr "Satıcı: "
 
 #: infopanel.cpp:145
 #, kde-format
