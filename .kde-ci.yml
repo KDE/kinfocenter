@@ -20,5 +20,13 @@ Dependencies:
     'frameworks/solid': '@latest'
     'plasma/systemsettings': '@same'
     'plasma/plasma-systemmonitor': '@same'
+
+RuntimeDependencies:
+- 'on': ['Linux']
+  'require':
+    'sdk/selenium-webdriver-at-spi': '@latest'
+    'plasma/xdg-desktop-portal-kde': '@same'
+
 Options:
   require-passing-tests-on: [ 'Linux', 'FreeBSD']
+  ctest-arguments: '-VV'
