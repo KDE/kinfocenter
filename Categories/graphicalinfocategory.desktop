@@ -2,8 +2,8 @@
 Type=Service
 X-KDE-ServiceTypes=KInfoCenterCategory
 X-KDE-KInfoCenter-Category=graphical_information
-X-KDE-KInfoCenter-Parent-Category=detailed_information
 Icon=applications-graphics
+X-KDE-Weight=40
 
 Name=Graphics
 Name[ar]=الرسوميات

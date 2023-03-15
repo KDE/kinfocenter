@@ -2,8 +2,8 @@
 Type=Service
 X-KDE-ServiceTypes=KInfoCenterCategory
 X-KDE-KInfoCenter-Category=network_information
-X-KDE-KInfoCenter-Parent-Category=detailed_information
 Icon=preferences-system-network
+X-KDE-Weight=20
 
 Name=Network
 Name[ar]=الشبكة
