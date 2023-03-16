@@ -12,7 +12,5 @@ import org.kde.kinfocenter.private 1.0 as KInfoCenter
 import org.kde.kinfocenter.kwinsupportinfo.private 1.0
 
 KInfoCenter.CommandOutputKCM {
-    KCM.ConfigModule.quickHelp: i18nc("@info", "KWin Support Information")
-
     output: InfoOutputContext
 }

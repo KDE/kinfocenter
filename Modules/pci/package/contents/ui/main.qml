@@ -11,8 +11,6 @@ import org.kde.kinfocenter.private 1.0 as KInfoCenter
 import org.kde.kinfocenter.pci.private 1.0
 
 KInfoCenter.CommandOutputKCM {
-    KCM.ConfigModule.quickHelp: i18nc("@info:whatsthis", "PCI Information")
-
     output: InfoOutputContext
     wrapMode: TextEdit.Wrap
 }

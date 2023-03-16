@@ -5,16 +5,16 @@
 
 #include <KLocalizedString>
 #include <KPluginFactory>
-#include <KQuickAddons/ConfigModule>
+#include <KQuickConfigModule>
 
 #include <CommandOutputContext.h>
 
-class KCMVulkan : public KQuickAddons::ConfigModule
+class KCMVulkan : public KQuickConfigModule
 {
     Q_OBJECT
 public:
     explicit KCMVulkan(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
-        : ConfigModule(parent, data, args)
+        : KQuickConfigModule(parent, data, args)
     {
         auto outputContext = new CommandOutputContext(QStringLiteral("vulkaninfo"), {}, parent);
         qmlRegisterSingletonInstance("org.kde.kinfocenter.vulkan.private", 1, 0, "InfoOutputContext", outputContext);

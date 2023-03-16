@@ -20,7 +20,7 @@ target_link_libraries(kcm_energyinfo
   KF6::KCMUtils
   KF6::I18n
   KF6::Solid
-  KF6::QuickAddons
+  KF6::KCMUtilsQuick
 )
 
 kpackage_install_package(package kcm_energyinfo kcms)

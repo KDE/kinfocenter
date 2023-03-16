@@ -10,7 +10,7 @@ set_package_properties(aha PROPERTIES TYPE RUNTIME)
 add_definitions(-DTRANSLATION_DOMAIN=\"kcm_firmware_security\")
 
 add_library(kcm_firmware_security MODULE main.cpp)
-target_link_libraries(kcm_firmware_security KF6::CoreAddons KF6::QuickAddons KF6::I18n KF6::Package KInfoCenterInternal)
+target_link_libraries(kcm_firmware_security KF6::CoreAddons KF6::KCMUtilsQuick KF6::I18n KF6::Package KInfoCenterInternal)
 
 install(TARGETS kcm_firmware_security DESTINATION ${KDE_INSTALL_PLUGINDIR}/plasma/kcms/kinfocenter)
 

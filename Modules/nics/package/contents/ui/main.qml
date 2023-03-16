@@ -12,7 +12,6 @@ import org.kde.kcm 1.3
 import org.kde.kinfocenter.nic.private 1.0
 
 SimpleKCM {
-    ConfigModule.quickHelp: i18n("Network Interfaces")
     clip: true
 
     Kirigami.CardsLayout {

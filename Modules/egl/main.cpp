@@ -5,16 +5,16 @@
 
 #include <KLocalizedString>
 #include <KPluginFactory>
-#include <KQuickAddons/ConfigModule>
+#include <KQuickConfigModule>
 
 #include <CommandOutputContext.h>
 
-class KCMXServer : public KQuickAddons::ConfigModule
+class KCMXServer : public KQuickConfigModule
 {
     Q_OBJECT
 public:
     explicit KCMXServer(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
-        : ConfigModule(parent, data, args)
+        : KQuickConfigModule(parent, data, args)
     {
         auto outputContext = new CommandOutputContext(QStringLiteral("eglinfo"), {}, parent);
         qmlRegisterSingletonInstance("org.kde.kinfocenter.egl.private", 1, 0, "InfoOutputContext", outputContext);

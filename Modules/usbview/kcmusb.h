@@ -19,7 +19,7 @@ class USBViewer : public KCModule
     Q_OBJECT
 
 public:
-    explicit USBViewer(QWidget *parent = nullptr, const QVariantList &list = QVariantList());
+    explicit USBViewer(QObject *parent, const KPluginMetaData &data, const QVariantList &args);
     ~USBViewer() override;
 
     void load() override;

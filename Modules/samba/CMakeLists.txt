@@ -1,5 +1,5 @@
 # KI18N Translation Domain for this library
-add_definitions(-DTRANSLATION_DOMAIN=\"kcmsamba\")
+add_definitions(-DTRANSLATION_DOMAIN=\"kcm_samba\")
 
 set(kcm_samba_PART_SRCS
     smbmountmodel.cpp
@@ -25,10 +25,10 @@ set(kcm_samba_SRCS main.cpp)
 qt_add_dbus_interface(kcm_samba_SRCS org.freedesktop.DBus.Properties.xml org.freedesktop.DBus.Properties)
 kcoreaddons_add_plugin(kcm_samba SOURCES ${kcm_samba_SRCS} INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
 target_link_libraries(kcm_samba
-    KF6::QuickAddons
+    KF6::KCMUtilsQuick
     kcm_samba_static
 )
 
-kpackage_install_package(package kcmsamba kcms) # NB: the target name follows the kaboutdata name which in turn follows the i18n domain name
+kpackage_install_package(package kcm_samba kcms)
 
 add_subdirectory(autotests)

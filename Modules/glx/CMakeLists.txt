@@ -7,7 +7,7 @@ set_package_properties(glxinfo PROPERTIES TYPE RUNTIME)
 add_definitions(-DTRANSLATION_DOMAIN=\"kcm_glx\")
 
 add_library(kcm_glx MODULE main.cpp)
-target_link_libraries(kcm_glx KF6::CoreAddons KF6::QuickAddons KF6::I18n KInfoCenterInternal)
+target_link_libraries(kcm_glx KF6::CoreAddons KF6::KCMUtilsQuick KF6::I18n KInfoCenterInternal)
 
 install(TARGETS kcm_glx DESTINATION ${KDE_INSTALL_PLUGINDIR}/plasma/kcms/kinfocenter)
 

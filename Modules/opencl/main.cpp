@@ -7,16 +7,16 @@
 
 #include <KLocalizedString>
 #include <KPluginFactory>
-#include <KQuickAddons/ConfigModule>
+#include <KQuickConfigModule>
 
 #include <CommandOutputContext.h>
 
-class KCMOpenCL : public KQuickAddons::ConfigModule
+class KCMOpenCL : public KQuickConfigModule
 {
     Q_OBJECT
 public:
     explicit KCMOpenCL(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
-        : ConfigModule(parent, data, args)
+        : KQuickConfigModule(parent, data, args)
     {
         auto outputContext = new CommandOutputContext(QStringLiteral("clinfo"), {}, parent);
         qmlRegisterSingletonInstance("org.kde.kinfocenter.opencl.private", 1, 0, "InfoOutputContext", outputContext);

@@ -15,7 +15,7 @@
 K_PLUGIN_CLASS_WITH_JSON(KCMNic, "kcm_nic.json")
 
 KCMNic::KCMNic(QObject *parent, const KPluginMetaData &data, const QVariantList &list)
-    : KQuickAddons::ConfigModule(parent, data, list)
+    : KQuickConfigModule(parent, data, list)
 {
     qmlRegisterType<NetworkModel>("org.kde.kinfocenter.nic.private", 1, 0, "NetworkModel");
 }

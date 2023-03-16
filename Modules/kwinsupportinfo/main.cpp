@@ -6,17 +6,17 @@
 
 #include <KLocalizedString>
 #include <KPluginFactory>
-#include <KQuickAddons/ConfigModule>
+#include <KQuickConfigModule>
 #include <QLibraryInfo>
 
 #include <CommandOutputContext.h>
 
-class KCMKWinSupportInfo : public KQuickAddons::ConfigModule
+class KCMKWinSupportInfo : public KQuickConfigModule
 {
     Q_OBJECT
 public:
     explicit KCMKWinSupportInfo(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
-        : ConfigModule(parent, data, args)
+        : KQuickConfigModule(parent, data, args)
     {
         auto outputContext = new CommandOutputContext(QLibraryInfo::location(QLibraryInfo::BinariesPath) + QStringLiteral("/qdbus"),
                                                       {QStringLiteral("org.kde.KWin"), QStringLiteral("/KWin"), QStringLiteral("supportInformation")},

@@ -12,7 +12,6 @@
 #include <QTimer>
 #include <QTreeWidget>
 
-#include <KAboutData>
 
 #include <KLocalizedString>
 #include <KPluginFactory>
@@ -21,18 +20,14 @@
 
 K_PLUGIN_CLASS_WITH_JSON(USBViewer, "kcmusb.json")
 
-USBViewer::USBViewer(QWidget *parent, const QVariantList &)
-    : KCModule(parent)
+USBViewer::USBViewer(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
+    : KCModule(parent, data, args)
 {
-    setQuickHelp(
-        i18n("This module allows you to see"
-             " the devices attached to your USB bus(es)."));
-
-    QHBoxLayout *mainLayout = new QHBoxLayout(this);
+    QHBoxLayout *mainLayout = new QHBoxLayout(widget());
     mainLayout->setContentsMargins(0, 0, 0, 0);
     mainLayout->setSpacing(0);
 
-    QSplitter *splitter = new QSplitter(this);
+    QSplitter *splitter = new QSplitter(widget());
     splitter->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::MinimumExpanding);
     mainLayout->addWidget(splitter);
 
@@ -58,13 +53,6 @@ USBViewer::USBViewer(QWidget *parent, const QVariantList &)
 
     connect(refreshTimer, &QTimer::timeout, this, &USBViewer::refresh);
     connect(_devices, &QTreeWidget::currentItemChanged, this, &USBViewer::selectionChanged);
-
-    KAboutData *about =
-        new KAboutData(i18n("kcmusb"), i18n("USB Devices"), QString(), QString(), KAboutLicense::GPL, i18n("(c) 2001 Matthias Hoelzer-Kluepfel"));
-
-    about->addAuthor(i18n("Matthias Hoelzer-Kluepfel"), QString(), QStringLiteral("mhk@kde.org"));
-    about->addCredit(i18n("Leo Savernik"), i18n("Live Monitoring of USB Bus"), QStringLiteral("l.savernik@aon.at"));
-    setAboutData(about);
 }
 
 USBViewer::~USBViewer()

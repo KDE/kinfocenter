@@ -11,7 +11,5 @@ import org.kde.kinfocenter.private 1.0 as KInfoCenter
 import org.kde.kinfocenter.glx.private 1.0
 
 KInfoCenter.CommandOutputKCM {
-    KCM.ConfigModule.quickHelp: i18nc("@info:whatsthis", "OpenGL (GLX)")
-
     output: InfoOutputContext
 }

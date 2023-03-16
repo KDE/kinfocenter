@@ -7,7 +7,7 @@ set_package_properties(xdpyinfo PROPERTIES TYPE RUNTIME)
 add_definitions(-DTRANSLATION_DOMAIN=\"kcm_xserver\")
 
 add_library(kcm_xserver MODULE main.cpp)
-target_link_libraries(kcm_xserver KF6::CoreAddons KF6::QuickAddons KF6::I18n KInfoCenterInternal)
+target_link_libraries(kcm_xserver KF6::CoreAddons KF6::KCMUtilsQuick KF6::I18n KInfoCenterInternal)
 
 install(TARGETS kcm_xserver DESTINATION ${KDE_INSTALL_PLUGINDIR}/plasma/kcms/kinfocenter)
 

@@ -19,8 +19,6 @@ import org.kde.kcm 1.1 as KCM
 KCM.SimpleKCM {
     id: root
 
-    KCM.ConfigModule.quickHelp: i18n("This module lets you see energy information and statistics.")
-
     property QtObject currentBattery: null
     property string currentUdi: ""
     property string currentVendor: ""

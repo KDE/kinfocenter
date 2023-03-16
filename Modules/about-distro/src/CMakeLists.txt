@@ -35,7 +35,7 @@ target_link_libraries(kcm_about-distro
     KF6::CoreAddons
     KF6::I18n
     KF6::ConfigCore
-    KF6::QuickAddons
+    KF6::KCMUtilsQuick
     KF6::Solid
     KF6::Service
     KF6::KIOGui

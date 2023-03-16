@@ -5,16 +5,16 @@
 
 #include <KLocalizedString>
 #include <KPluginFactory>
-#include <KQuickAddons/ConfigModule>
+#include <KQuickConfigModule>
 
 #include <CommandOutputContext.h>
 
-class KCMInterrupts : public KQuickAddons::ConfigModule
+class KCMInterrupts : public KQuickConfigModule
 {
     Q_OBJECT
 public:
     explicit KCMInterrupts(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
-        : ConfigModule(parent, data, args)
+        : KQuickConfigModule(parent, data, args)
     {
         auto outputContext =
 #if defined(Q_OS_FREEBSD)

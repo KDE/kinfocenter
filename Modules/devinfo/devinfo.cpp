@@ -7,7 +7,6 @@
 
 #include "devinfo.h"
 
-#include <KAboutData>
 #include <KLocalizedString>
 #include <QGridLayout>
 #include <QLabel>
@@ -21,20 +20,15 @@
 
 K_PLUGIN_CLASS_WITH_JSON(DevInfoPlugin, "devinfo.json")
 
-DevInfoPlugin::DevInfoPlugin(QWidget *parent, const QVariantList &)
-    : KCModule(parent)
+DevInfoPlugin::DevInfoPlugin(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
+    : KCModule(parent, data, args)
 {
-    const KAboutData *about =
-        new KAboutData(i18n("kcmdevinfo"), i18n("Device Viewer"), QStringLiteral("0.70"), QString(), KAboutLicense::GPL, i18n("(c) 2010 David Hubner"));
-
-    setAboutData(about);
-
     // Layout
-    layout = new QGridLayout(this);
+    layout = new QGridLayout(widget());
     layout->setContentsMargins(0, 0, 0, 0);
 
     // top
-    QSplitter *split = new QSplitter(Qt::Horizontal, this);
+    QSplitter *split = new QSplitter(Qt::Horizontal, widget());
     split->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
     split->setChildrenCollapsible(false);
@@ -45,7 +39,7 @@ DevInfoPlugin::DevInfoPlugin(QWidget *parent, const QVariantList &)
     split->setStretchFactor(1, 1);
 
     // bottom
-    QWidget *bottom = new QWidget(this);
+    QWidget *bottom = new QWidget(widget());
     bottom->setContentsMargins(0, 0, 0, 0);
     bottom->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Minimum);
 
@@ -60,7 +54,7 @@ DevInfoPlugin::DevInfoPlugin(QWidget *parent, const QVariantList &)
     udiLabel->setFont(boldFont);
     udiLabel->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
 
-    udiStatus = new QLabel(this);
+    udiStatus = new QLabel(widget());
     udiStatus->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
     udiStatus->setTextInteractionFlags(Qt::TextSelectableByMouse);
     udiStatus->setWhatsThis(i18nc("Udi Whats This", "Shows the current device's UDI (Unique Device Identifier)"));

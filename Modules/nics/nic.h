@@ -7,9 +7,9 @@
 
 #pragma once
 
-#include <KQuickAddons/ConfigModule>
+#include <KQuickConfigModule>
 
-class KCMNic : public KQuickAddons::ConfigModule
+class KCMNic : public KQuickConfigModule
 {
     Q_OBJECT
 

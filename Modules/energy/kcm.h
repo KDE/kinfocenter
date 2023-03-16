@@ -7,10 +7,10 @@
 #ifndef KCM_ENERGYINFO_H
 #define KCM_ENERGYINFO_H
 
-#include <KQuickAddons/ConfigModule>
+#include <KQuickConfigModule>
 class BatteryModel;
 
-class KCMEnergyInfo : public KQuickAddons::ConfigModule
+class KCMEnergyInfo : public KQuickConfigModule
 {
     Q_OBJECT
 

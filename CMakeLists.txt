@@ -26,7 +26,6 @@ find_package(Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Core Gui Widgets)
 
 find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
     Config
-    ConfigWidgets
     CoreAddons
     DocTools
     I18n
@@ -35,7 +34,6 @@ find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
     Service
     Solid
     WidgetsAddons
-    Declarative
     Package
     Solid
 )

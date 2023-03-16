@@ -6,16 +6,16 @@
 #include <KLocalizedString>
 #include <KPackage/PackageLoader>
 #include <KPluginFactory>
-#include <KQuickAddons/ConfigModule>
+#include <KQuickConfigModule>
 
 #include <CommandOutputContext.h>
 
-class KCMFirmwareSecurity : public KQuickAddons::ConfigModule
+class KCMFirmwareSecurity : public KQuickConfigModule
 {
     Q_OBJECT
 public:
     explicit KCMFirmwareSecurity(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
-        : ConfigModule(parent, data, args)
+        : KQuickConfigModule(parent, data, args)
     {
         KPackage::Package package = KPackage::PackageLoader::self()->loadPackage(QStringLiteral("KPackage/GenericQML"));
         package.setDefaultPackageRoot(QStringLiteral("kpackage/kcms"));

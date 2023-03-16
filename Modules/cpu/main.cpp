@@ -5,16 +5,16 @@
 
 #include <KLocalizedString>
 #include <KPluginFactory>
-#include <KQuickAddons/ConfigModule>
+#include <KQuickConfigModule>
 
 #include <CommandOutputContext.h>
 
-class KCMCPU : public KQuickAddons::ConfigModule
+class KCMCPU : public KQuickConfigModule
 {
     Q_OBJECT
 public:
     explicit KCMCPU(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
-        : ConfigModule(parent, data, args)
+        : KQuickConfigModule(parent, data, args)
     {
         auto outputContext = new CommandOutputContext(QStringLiteral("lscpu"), {}, parent);
         qmlRegisterSingletonInstance("org.kde.kinfocenter.cpu.private", 1, 0, "InfoOutputContext", outputContext);

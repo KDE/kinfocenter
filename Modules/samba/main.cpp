@@ -5,12 +5,12 @@
 
 #include <KLocalizedString>
 #include <KPluginFactory>
-#include <KQuickAddons/ConfigModule>
+#include <KQuickConfigModule>
 
 #include "ksambasharemodel.h"
 #include "smbmountmodel.h"
 
-class SambaModule : public KQuickAddons::ConfigModule
+class SambaModule : public KQuickConfigModule
 {
     Q_OBJECT
 public:
@@ -19,7 +19,7 @@ public:
 };
 
 SambaModule::SambaModule(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
-    : KQuickAddons::ConfigModule(parent, data, args)
+    : KQuickConfigModule(parent, data, args)
 {
     qmlRegisterType<SmbMountModel>("org.kde.kinfocenter.samba", 1, 0, "MountModel");
     qmlRegisterType<KSambaShareModel>("org.kde.kinfocenter.samba", 1, 0, "ShareModel");

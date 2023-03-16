@@ -32,7 +32,7 @@
 
 #include <KLocalizedString>
 #include <KPluginFactory>
-#include <KQuickAddons/ConfigModule>
+#include <KQuickConfigModule>
 
 class EntryModel : public QAbstractListModel
 {
@@ -90,13 +90,13 @@ private:
 Q_DECLARE_METATYPE(EntryModel *)
 Q_DECLARE_METATYPE(Entry *)
 
-class KCMAboutSystem : public KQuickAddons::ConfigModule
+class KCMAboutSystem : public KQuickConfigModule
 {
     Q_OBJECT
     Q_DISABLE_COPY_MOVE(KCMAboutSystem) // rule of 5
 public:
     explicit KCMAboutSystem(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
-        : ConfigModule(parent, data, args)
+        : KQuickConfigModule(parent, data, args)
     {
         qmlRegisterType<ServiceRunner>("org.kde.kinfocenter.about_distro.private", 1, 0, "ServiceRunner");
 
