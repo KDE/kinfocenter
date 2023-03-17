@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-06 02:13+0000\n"
-"PO-Revision-Date: 2023-02-16 11:09+0400\n"
+"PO-Revision-Date: 2023-03-16 11:28+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -174,7 +174,7 @@ msgstr "العتاد"
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
-msgstr ""
+msgstr "شغّل %1"
 
 #: package/contents/ui/main.qml:185
 #, kde-format
