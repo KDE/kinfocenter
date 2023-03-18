@@ -345,17 +345,3 @@ msgstr "Nei"
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Bjørn Steensrud"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "bjornst@skogkatt.homelinux.org"
-
-#~ msgid "Energy Consumption Statistics"
-#~ msgstr "Statistikk over energibruk"
-
-#~ msgid "Kai Uwe Broulik"
-#~ msgstr "Kai Uwe Broulik"
