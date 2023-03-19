@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-03 00:18+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2022-04-10 17:47+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -21,16 +21,6 @@ msgstr ""
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Gaute Hvoslef Kvalnes"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "gaute@verdsveven.com"
 
 #: classes.i18n:2 usbdevices.cpp:66
 #, kde-format
@@ -388,47 +378,10 @@ msgctxt "USB device subclass"
 msgid "Wireless USB Wire Adapter"
 msgstr "USB-adapter for trådlaus tilkopling"
 
-#: kcmusb.cpp:28
-#, kde-format
-msgid "This module allows you to see the devices attached to your USB bus(es)."
-msgstr ""
-"Denne modulen viser einingane som er kopla til USB-bussen/-bussane på "
-"systemet."
-
-#: kcmusb.cpp:42
+#: kcmusb.cpp:37
 #, kde-format
 msgid "Device"
 msgstr "Eining"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "kcmusb"
-msgstr "kcmusb"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "USB Devices"
-msgstr "USB-einingar"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
-msgstr "© 2001 Matthias Hölzer-Klüpfel"
-
-#: kcmusb.cpp:65
-#, kde-format
-msgid "Matthias Hoelzer-Kluepfel"
-msgstr "Matthias Hoelzer-Kluepfel"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Leo Savernik"
-msgstr "Leo Savernik"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Live Monitoring of USB Bus"
-msgstr "Direkteovervaking av USB-buss"
 
 #: usbdevices.cpp:92
 #, kde-format
@@ -495,3 +448,35 @@ msgstr "<tr><td><i>Kanalar</i></td><td>%1</td></tr>"
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
 msgstr "<tr><td><i>Høgste pakkestorleik</i></td><td>%1</td></tr>"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Gaute Hvoslef Kvalnes"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "gaute@verdsveven.com"
+
+#~ msgid ""
+#~ "This module allows you to see the devices attached to your USB bus(es)."
+#~ msgstr ""
+#~ "Denne modulen viser einingane som er kopla til USB-bussen/-bussane på "
+#~ "systemet."
+
+#~ msgid "kcmusb"
+#~ msgstr "kcmusb"
+
+#~ msgid "USB Devices"
+#~ msgstr "USB-einingar"
+
+#~ msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
+#~ msgstr "© 2001 Matthias Hölzer-Klüpfel"
+
+#~ msgid "Matthias Hoelzer-Kluepfel"
+#~ msgstr "Matthias Hoelzer-Kluepfel"
+
+#~ msgid "Leo Savernik"
+#~ msgstr "Leo Savernik"
+
+#~ msgid "Live Monitoring of USB Bus"
+#~ msgstr "Direkteovervaking av USB-buss"

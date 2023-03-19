@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-03 00:18+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2008-07-08 11:48+0200\n"
 "Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
 "Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
@@ -18,16 +18,6 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Божидар Проевски"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "bobibobi@freemail.com.mk"
 
 #: classes.i18n:2 usbdevices.cpp:66
 #, kde-format
@@ -413,48 +403,10 @@ msgctxt "USB device subclass"
 msgid "Wireless USB Wire Adapter"
 msgstr ""
 
-#: kcmusb.cpp:28
-#, kde-format
-msgid "This module allows you to see the devices attached to your USB bus(es)."
-msgstr ""
-"Овој модул ви овозможува да ги видите уредите закачени на вашите USB-"
-"магистрали."
-
-#: kcmusb.cpp:42
+#: kcmusb.cpp:37
 #, kde-format
 msgid "Device"
 msgstr "Уред"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "kcmusb"
-msgstr "kcmusb"
-
-#: kcmusb.cpp:63
-#, fuzzy, kde-format
-#| msgid "Device"
-msgid "USB Devices"
-msgstr "Уред"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
-msgstr "(c) 2001 Matthias Hoelzer-Kluepfel"
-
-#: kcmusb.cpp:65
-#, kde-format
-msgid "Matthias Hoelzer-Kluepfel"
-msgstr "Matthias Hoelzer-Kluepfel"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Leo Savernik"
-msgstr "Leo Savernik"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Live Monitoring of USB Bus"
-msgstr "Мониторинг во живо за USB-магистралата"
 
 #: usbdevices.cpp:92
 #, kde-format
@@ -521,6 +473,40 @@ msgstr "<tr><td><i>Канали</i></td><td>%1</td></tr>"
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
 msgstr "<tr><td><i>Макс. големина на пакети</i></td><td>%1</td></tr>"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Божидар Проевски"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "bobibobi@freemail.com.mk"
+
+#~ msgid ""
+#~ "This module allows you to see the devices attached to your USB bus(es)."
+#~ msgstr ""
+#~ "Овој модул ви овозможува да ги видите уредите закачени на вашите USB-"
+#~ "магистрали."
+
+#~ msgid "kcmusb"
+#~ msgstr "kcmusb"
+
+#, fuzzy
+#~| msgid "Device"
+#~ msgid "USB Devices"
+#~ msgstr "Уред"
+
+#~ msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
+#~ msgstr "(c) 2001 Matthias Hoelzer-Kluepfel"
+
+#~ msgid "Matthias Hoelzer-Kluepfel"
+#~ msgstr "Matthias Hoelzer-Kluepfel"
+
+#~ msgid "Leo Savernik"
+#~ msgstr "Leo Savernik"
+
+#~ msgid "Live Monitoring of USB Bus"
+#~ msgstr "Мониторинг во живо за USB-магистралата"
 
 #~ msgid "AT-commands"
 #~ msgstr "AT-команди"

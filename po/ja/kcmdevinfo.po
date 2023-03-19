@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_devinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:48+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2015-05-22 22:15-0700\n"
 "Last-Translator: Fumiaki Okushi <fumiaki.okushi@gmail.com>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -16,16 +16,6 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 "X-Generator: Lokalize 1.0\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Taiki Komoda"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "kom@kde.gr.jp"
 
 #: devicelisting.cpp:41
 #, kde-format
@@ -64,34 +54,18 @@ msgctxt "unknown device type"
 msgid "Unknown"
 msgstr "未知"
 
-#: devicelisting.cpp:136 devinfo.cpp:79
+#: devicelisting.cpp:136 devinfo.cpp:73
 #, kde-format
 msgctxt "no device UDI"
 msgid "None"
 msgstr "なし"
 
-#: devinfo.cpp:28
-#, kde-format
-msgid "kcmdevinfo"
-msgstr "kcmdevinfo"
-
-#: devinfo.cpp:28
-#, fuzzy, kde-format
-#| msgid "KDE Solid Based Device Viewer"
-msgid "Device Viewer"
-msgstr "KDE Solid ベースのデバイスビューア"
-
-#: devinfo.cpp:28
-#, kde-format
-msgid "(c) 2010 David Hubner"
-msgstr "(c) 2010 David Hubner"
-
-#: devinfo.cpp:58
+#: devinfo.cpp:52
 #, kde-format
 msgid "UDI: "
 msgstr "UDI: "
 
-#: devinfo.cpp:66
+#: devinfo.cpp:60
 #, kde-format
 msgctxt "Udi Whats This"
 msgid "Shows the current device's UDI (Unique Device Identifier)"
@@ -537,3 +511,22 @@ msgstr "充電状態: "
 #| msgid "Charge Status: "
 msgid "Charge Percent: "
 msgstr "充電状態: "
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Taiki Komoda"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "kom@kde.gr.jp"
+
+#~ msgid "kcmdevinfo"
+#~ msgstr "kcmdevinfo"
+
+#, fuzzy
+#~| msgid "KDE Solid Based Device Viewer"
+#~ msgid "Device Viewer"
+#~ msgstr "KDE Solid ベースのデバイスビューア"
+
+#~ msgid "(c) 2010 David Hubner"
+#~ msgstr "(c) 2010 David Hubner"

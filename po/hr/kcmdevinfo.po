@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:48+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2011-03-04 18:42+0100\n"
 "Last-Translator: Marko Dimjasevic <marko@dimjasevic.net>\n"
 "Language-Team: Croatian <kde-croatia-list@lists.sourceforge.net>\n"
@@ -20,16 +20,6 @@ msgstr ""
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Andrej Dundović"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "adundovi@gmail.com"
 
 #: devicelisting.cpp:41
 #, kde-format
@@ -69,35 +59,19 @@ msgctxt "unknown device type"
 msgid "Unknown"
 msgstr "Nepoznato"
 
-#: devicelisting.cpp:136 devinfo.cpp:79
+#: devicelisting.cpp:136 devinfo.cpp:73
 #, fuzzy, kde-format
 #| msgid "None"
 msgctxt "no device UDI"
 msgid "None"
 msgstr "Ništa"
 
-#: devinfo.cpp:28
-#, kde-format
-msgid "kcmdevinfo"
-msgstr "kcmdevinfo"
-
-#: devinfo.cpp:28
-#, fuzzy, kde-format
-#| msgid "KDE Solid Based Device Viewer"
-msgid "Device Viewer"
-msgstr "KDE-ov preglednik uređaja baziran na Solidu"
-
-#: devinfo.cpp:28
-#, kde-format
-msgid "(c) 2010 David Hubner"
-msgstr "© 2010 David Hubner"
-
-#: devinfo.cpp:58
+#: devinfo.cpp:52
 #, kde-format
 msgid "UDI: "
 msgstr "UDI: "
 
-#: devinfo.cpp:66
+#: devinfo.cpp:60
 #, kde-format
 msgctxt "Udi Whats This"
 msgid "Shows the current device's UDI (Unique Device Identifier)"
@@ -553,6 +527,25 @@ msgstr "Stanje punjenja: "
 #| msgid "Charge Status: "
 msgid "Charge Percent: "
 msgstr "Stanje punjenja: "
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Andrej Dundović"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "adundovi@gmail.com"
+
+#~ msgid "kcmdevinfo"
+#~ msgstr "kcmdevinfo"
+
+#, fuzzy
+#~| msgid "KDE Solid Based Device Viewer"
+#~ msgid "Device Viewer"
+#~ msgstr "KDE-ov preglednik uređaja baziran na Solidu"
+
+#~ msgid "(c) 2010 David Hubner"
+#~ msgstr "© 2010 David Hubner"
 
 #~ msgid "Device unable to be cast to correct device"
 #~ msgstr "Uređaj se nije uspio pustiti na točan uređaj"

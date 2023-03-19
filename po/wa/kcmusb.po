@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-03 00:18+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2010-12-24 14:14+0100\n"
 "Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
 "Language-Team: Walloon <linux@walon.org>\n"
@@ -17,16 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Pablo Saratxaga"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "pablo@walon.org"
 
 #: classes.i18n:2 usbdevices.cpp:66
 #, kde-format
@@ -412,46 +402,10 @@ msgctxt "USB device subclass"
 msgid "Wireless USB Wire Adapter"
 msgstr ""
 
-#: kcmusb.cpp:28
-#, kde-format
-msgid "This module allows you to see the devices attached to your USB bus(es)."
-msgstr ""
-"Çou module ci vos permet d' vey les éndjins stitchîs dins vos(se) pôrt(s) USB"
-
-#: kcmusb.cpp:42
+#: kcmusb.cpp:37
 #, kde-format
 msgid "Device"
 msgstr "Éndjin"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "kcmusb"
-msgstr "kcmusb"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "USB Devices"
-msgstr "Éndjins USB"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
-msgstr "© 2001, Matthias Hoelzer-Kluepfel"
-
-#: kcmusb.cpp:65
-#, kde-format
-msgid "Matthias Hoelzer-Kluepfel"
-msgstr "Matthias Hoelzer-Kluepfel"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Leo Savernik"
-msgstr "Leo Savernik"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Live Monitoring of USB Bus"
-msgstr "Vicant corwaitaedje des pôrts USB"
 
 #: usbdevices.cpp:92
 #, kde-format
@@ -518,6 +472,38 @@ msgstr "<tr><td><i>Canås</i></td><td>%1</td></tr>"
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
 msgstr "<tr><td><i>Grandeu macs. do paket</i></td><td>%1</td></tr>"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Pablo Saratxaga"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "pablo@walon.org"
+
+#~ msgid ""
+#~ "This module allows you to see the devices attached to your USB bus(es)."
+#~ msgstr ""
+#~ "Çou module ci vos permet d' vey les éndjins stitchîs dins vos(se) pôrt(s) "
+#~ "USB"
+
+#~ msgid "kcmusb"
+#~ msgstr "kcmusb"
+
+#~ msgid "USB Devices"
+#~ msgstr "Éndjins USB"
+
+#~ msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
+#~ msgstr "© 2001, Matthias Hoelzer-Kluepfel"
+
+#~ msgid "Matthias Hoelzer-Kluepfel"
+#~ msgstr "Matthias Hoelzer-Kluepfel"
+
+#~ msgid "Leo Savernik"
+#~ msgstr "Leo Savernik"
+
+#~ msgid "Live Monitoring of USB Bus"
+#~ msgstr "Vicant corwaitaedje des pôrts USB"
 
 #~ msgid "AT-commands"
 #~ msgstr "Comandes AT"

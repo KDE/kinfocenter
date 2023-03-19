@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-03 00:18+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2021-05-12 09:52+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -16,16 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 20.04.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Giovanni Sora"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "g.sora@tiscali.it"
 
 #: classes.i18n:2 usbdevices.cpp:66
 #, kde-format
@@ -381,46 +371,10 @@ msgctxt "USB device subclass"
 msgid "Wireless USB Wire Adapter"
 msgstr "Adaptator sin cablo de cablo  USB"
 
-#: kcmusb.cpp:28
-#, kde-format
-msgid "This module allows you to see the devices attached to your USB bus(es)."
-msgstr ""
-"Iste modulo permitte te de vider le dispositivos attaccate a tu USB bus(es)."
-
-#: kcmusb.cpp:42
+#: kcmusb.cpp:37
 #, kde-format
 msgid "Device"
 msgstr "Dispositivo"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "kcmusb"
-msgstr "kcmusb"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "USB Devices"
-msgstr "Dispositivos USB"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
-msgstr "(c) -2001, Matthias Hoelzer-Kluepfel"
-
-#: kcmusb.cpp:65
-#, kde-format
-msgid "Matthias Hoelzer-Kluepfel"
-msgstr "Matthias Hoelzer-Kluepfel"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Leo Savernik"
-msgstr "Leo Savernik"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Live Monitoring of USB Bus"
-msgstr "Monitorar ab vive del bus USB"
 
 #: usbdevices.cpp:92
 #, kde-format
@@ -487,6 +441,38 @@ msgstr "<tr><td><i>Canales</i></td><td>%1</td></tr>"
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
 msgstr "<tr><td><i>Max. Dim. Pacchetto</i></td><td>%1</td></tr>"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Giovanni Sora"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "g.sora@tiscali.it"
+
+#~ msgid ""
+#~ "This module allows you to see the devices attached to your USB bus(es)."
+#~ msgstr ""
+#~ "Iste modulo permitte te de vider le dispositivos attaccate a tu USB "
+#~ "bus(es)."
+
+#~ msgid "kcmusb"
+#~ msgstr "kcmusb"
+
+#~ msgid "USB Devices"
+#~ msgstr "Dispositivos USB"
+
+#~ msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
+#~ msgstr "(c) -2001, Matthias Hoelzer-Kluepfel"
+
+#~ msgid "Matthias Hoelzer-Kluepfel"
+#~ msgstr "Matthias Hoelzer-Kluepfel"
+
+#~ msgid "Leo Savernik"
+#~ msgstr "Leo Savernik"
+
+#~ msgid "Live Monitoring of USB Bus"
+#~ msgstr "Monitorar ab vive del bus USB"
 
 #~ msgid "AT-commands"
 #~ msgstr "Commandos AT"

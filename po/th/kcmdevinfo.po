@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmdevinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:48+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2010-12-17 20:54+0700\n"
 "Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -17,16 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "ถนอมทรัพย์ นพบูรณ์"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "donga.nb@gmail.com"
 
 #: devicelisting.cpp:41
 #, kde-format
@@ -66,35 +56,19 @@ msgctxt "unknown device type"
 msgid "Unknown"
 msgstr "ไม่ทราบ"
 
-#: devicelisting.cpp:136 devinfo.cpp:79
+#: devicelisting.cpp:136 devinfo.cpp:73
 #, fuzzy, kde-format
 #| msgid "None"
 msgctxt "no device UDI"
 msgid "None"
 msgstr "ไม่มี"
 
-#: devinfo.cpp:28
-#, kde-format
-msgid "kcmdevinfo"
-msgstr "kcmdevinfo"
-
-#: devinfo.cpp:28
-#, fuzzy, kde-format
-#| msgid "KDE Solid Based Device Viewer"
-msgid "Device Viewer"
-msgstr "ตัวแสดงรายการอุปกรณ์ต่าง ๆ อิงพื้นฐาน Solid ของ KDE"
-
-#: devinfo.cpp:28
-#, kde-format
-msgid "(c) 2010 David Hubner"
-msgstr "สงวนลิขสิทธิ์ (c) 2010 David Hubner"
-
-#: devinfo.cpp:58
+#: devinfo.cpp:52
 #, kde-format
 msgid "UDI: "
 msgstr "ค่า UDI: "
 
-#: devinfo.cpp:66
+#: devinfo.cpp:60
 #, kde-format
 msgctxt "Udi Whats This"
 msgid "Shows the current device's UDI (Unique Device Identifier)"
@@ -548,6 +522,25 @@ msgstr "สถานะการประจุไฟ: "
 #| msgid "Charge Status: "
 msgid "Charge Percent: "
 msgstr "สถานะการประจุไฟ: "
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "ถนอมทรัพย์ นพบูรณ์"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "donga.nb@gmail.com"
+
+#~ msgid "kcmdevinfo"
+#~ msgstr "kcmdevinfo"
+
+#, fuzzy
+#~| msgid "KDE Solid Based Device Viewer"
+#~ msgid "Device Viewer"
+#~ msgstr "ตัวแสดงรายการอุปกรณ์ต่าง ๆ อิงพื้นฐาน Solid ของ KDE"
+
+#~ msgid "(c) 2010 David Hubner"
+#~ msgstr "สงวนลิขสิทธิ์ (c) 2010 David Hubner"
 
 #~ msgid "Network Interfaces"
 #~ msgstr "แผงวงจรเครือข่าย"

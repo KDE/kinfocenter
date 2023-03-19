@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-03 00:18+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2008-08-05 22:26+0200\n"
 "Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
 "Language-Team: Occitan (lengadocian) <ubuntu-l10n-oci@lists.ubuntu.com>\n"
@@ -18,16 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: KBabel 1.11.4\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Yannig Marchegay (Kokoyaya)"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "yannig@marchegay.org"
 
 #: classes.i18n:2 usbdevices.cpp:66
 #, kde-format
@@ -391,46 +381,10 @@ msgctxt "USB device subclass"
 msgid "Wireless USB Wire Adapter"
 msgstr ""
 
-#: kcmusb.cpp:28
-#, kde-format
-msgid "This module allows you to see the devices attached to your USB bus(es)."
-msgstr ""
-
-#: kcmusb.cpp:42
+#: kcmusb.cpp:37
 #, kde-format
 msgid "Device"
 msgstr "Periferic"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "kcmusb"
-msgstr ""
-
-#: kcmusb.cpp:63
-#, fuzzy, kde-format
-#| msgid "Device"
-msgid "USB Devices"
-msgstr "Periferic"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
-msgstr ""
-
-#: kcmusb.cpp:65
-#, kde-format
-msgid "Matthias Hoelzer-Kluepfel"
-msgstr "Matthias Hoelzer-Kluepfel"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Leo Savernik"
-msgstr "Leo Savernik"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Live Monitoring of USB Bus"
-msgstr ""
 
 #: usbdevices.cpp:92
 #, kde-format
@@ -497,6 +451,25 @@ msgstr ""
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
 msgstr ""
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Yannig Marchegay (Kokoyaya)"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "yannig@marchegay.org"
+
+#, fuzzy
+#~| msgid "Device"
+#~ msgid "USB Devices"
+#~ msgstr "Periferic"
+
+#~ msgid "Matthias Hoelzer-Kluepfel"
+#~ msgstr "Matthias Hoelzer-Kluepfel"
+
+#~ msgid "Leo Savernik"
+#~ msgstr "Leo Savernik"
 
 #~ msgid "Interface"
 #~ msgstr "Interfaç"

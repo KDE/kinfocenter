@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:48+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2021-04-27 08:10+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -20,16 +20,6 @@ msgstr ""
 "X-Generator: Poedit 2.4.2\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Jure Repinc,Andrej Mernik,Matjaž Jeran"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "jlp@holodeck1.com,andrejm@ubuntu.si,matjaz.jeran@amis.net"
 
 #: devicelisting.cpp:41
 #, kde-format
@@ -68,33 +58,18 @@ msgctxt "unknown device type"
 msgid "Unknown"
 msgstr "Neznana"
 
-#: devicelisting.cpp:136 devinfo.cpp:79
+#: devicelisting.cpp:136 devinfo.cpp:73
 #, kde-format
 msgctxt "no device UDI"
 msgid "None"
 msgstr "Brez"
 
-#: devinfo.cpp:28
-#, kde-format
-msgid "kcmdevinfo"
-msgstr "kcmdevinfo"
-
-#: devinfo.cpp:28
-#, kde-format
-msgid "Device Viewer"
-msgstr "Pregledovalnik naprav"
-
-#: devinfo.cpp:28
-#, kde-format
-msgid "(c) 2010 David Hubner"
-msgstr "© 2010 David Hubner"
-
-#: devinfo.cpp:58
+#: devinfo.cpp:52
 #, kde-format
 msgid "UDI: "
 msgstr "UDI: "
 
-#: devinfo.cpp:66
+#: devinfo.cpp:60
 #, kde-format
 msgctxt "Udi Whats This"
 msgid "Shows the current device's UDI (Unique Device Identifier)"
@@ -535,6 +510,23 @@ msgstr "Stanje: "
 #, kde-format
 msgid "Charge Percent: "
 msgstr "Delež napolnjenosti: "
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Jure Repinc,Andrej Mernik,Matjaž Jeran"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "jlp@holodeck1.com,andrejm@ubuntu.si,matjaz.jeran@amis.net"
+
+#~ msgid "kcmdevinfo"
+#~ msgstr "kcmdevinfo"
+
+#~ msgid "Device Viewer"
+#~ msgstr "Pregledovalnik naprav"
+
+#~ msgid "(c) 2010 David Hubner"
+#~ msgstr "© 2010 David Hubner"
 
 #~ msgid "Network Interfaces"
 #~ msgstr "Omrežni vmesniki"

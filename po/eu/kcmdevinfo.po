@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:48+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2020-06-25 12:36+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque\n"
@@ -21,16 +21,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 20.04.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Iñigo Salvador Azurmendi,Hizkuntza Politikarako Sailburuordetza"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "xalba@euskalnet.net,hizpol@ej-gv.es"
 
 #: devicelisting.cpp:41
 #, kde-format
@@ -69,33 +59,18 @@ msgctxt "unknown device type"
 msgid "Unknown"
 msgstr "Ezezaguna"
 
-#: devicelisting.cpp:136 devinfo.cpp:79
+#: devicelisting.cpp:136 devinfo.cpp:73
 #, kde-format
 msgctxt "no device UDI"
 msgid "None"
 msgstr "Bat ere ez"
 
-#: devinfo.cpp:28
-#, kde-format
-msgid "kcmdevinfo"
-msgstr "kcmdevinfo"
-
-#: devinfo.cpp:28
-#, kde-format
-msgid "Device Viewer"
-msgstr "Gailu-erakuslea"
-
-#: devinfo.cpp:28
-#, kde-format
-msgid "(c) 2010 David Hubner"
-msgstr "(c) 2010 David Hubner"
-
-#: devinfo.cpp:58
+#: devinfo.cpp:52
 #, kde-format
 msgid "UDI: "
 msgstr "UDIa: "
 
-#: devinfo.cpp:66
+#: devinfo.cpp:60
 #, kde-format
 msgctxt "Udi Whats This"
 msgid "Shows the current device's UDI (Unique Device Identifier)"
@@ -536,6 +511,23 @@ msgstr "Kargaren egoera: "
 #, kde-format
 msgid "Charge Percent: "
 msgstr "Kargaren ehunekoa: "
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Iñigo Salvador Azurmendi,Hizkuntza Politikarako Sailburuordetza"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "xalba@euskalnet.net,hizpol@ej-gv.es"
+
+#~ msgid "kcmdevinfo"
+#~ msgstr "kcmdevinfo"
+
+#~ msgid "Device Viewer"
+#~ msgstr "Gailu-erakuslea"
+
+#~ msgid "(c) 2010 David Hubner"
+#~ msgstr "(c) 2010 David Hubner"
 
 #~ msgid "Network Interfaces"
 #~ msgstr "Sare-interfazeak"

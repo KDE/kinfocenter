@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-03 00:18+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2023-02-24 12:43\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -16,16 +16,6 @@ msgstr ""
 "X-Crowdin-Language: zh-CN\n"
 "X-Crowdin-File: /kf5-trunk/messages/kinfocenter/kcmusb.pot\n"
 "X-Crowdin-File-ID: 4423\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Guo Yunhe, Tyson Tan"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "i@guoyunhe.me, tysontan@tysontan.com"
 
 #: classes.i18n:2 usbdevices.cpp:66
 #, kde-format
@@ -381,45 +371,10 @@ msgctxt "USB device subclass"
 msgid "Wireless USB Wire Adapter"
 msgstr "无线 USB 线适配器"
 
-#: kcmusb.cpp:28
-#, kde-format
-msgid "This module allows you to see the devices attached to your USB bus(es)."
-msgstr "本模块让您查看连接到 USB 总线上的设备。"
-
-#: kcmusb.cpp:42
+#: kcmusb.cpp:37
 #, kde-format
 msgid "Device"
 msgstr "设备"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "kcmusb"
-msgstr "kcmusb"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "USB Devices"
-msgstr "USB设备"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
-msgstr "(c) 2001 Matthias Hoelzer-Kluepfel"
-
-#: kcmusb.cpp:65
-#, kde-format
-msgid "Matthias Hoelzer-Kluepfel"
-msgstr "Matthias Hoelzer-Kluepfel"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Leo Savernik"
-msgstr "Leo Savernik"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Live Monitoring of USB Bus"
-msgstr "实时监视 USB 总线"
 
 #: usbdevices.cpp:92
 #, kde-format
@@ -486,3 +441,33 @@ msgstr "<tr><td><i>通道</i></td><td>%1</td></tr>"
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
 msgstr "<tr><td><i>最大包体积</i></td><td>%1</td></tr>"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Guo Yunhe, Tyson Tan"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "i@guoyunhe.me, tysontan@tysontan.com"
+
+#~ msgid ""
+#~ "This module allows you to see the devices attached to your USB bus(es)."
+#~ msgstr "本模块让您查看连接到 USB 总线上的设备。"
+
+#~ msgid "kcmusb"
+#~ msgstr "kcmusb"
+
+#~ msgid "USB Devices"
+#~ msgstr "USB设备"
+
+#~ msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
+#~ msgstr "(c) 2001 Matthias Hoelzer-Kluepfel"
+
+#~ msgid "Matthias Hoelzer-Kluepfel"
+#~ msgstr "Matthias Hoelzer-Kluepfel"
+
+#~ msgid "Leo Savernik"
+#~ msgstr "Leo Savernik"
+
+#~ msgid "Live Monitoring of USB Bus"
+#~ msgstr "实时监视 USB 总线"

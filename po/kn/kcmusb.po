@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-03 00:18+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2008-12-29 17:13+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
@@ -17,16 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "ಶಂಕರ ಪ್ರಸಾದ್‌ ಎಂ. ವಿ."
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "svenkate@redhat.com"
 
 #: classes.i18n:2 usbdevices.cpp:66
 #, kde-format
@@ -412,48 +402,10 @@ msgctxt "USB device subclass"
 msgid "Wireless USB Wire Adapter"
 msgstr ""
 
-#: kcmusb.cpp:28
-#, kde-format
-msgid "This module allows you to see the devices attached to your USB bus(es)."
-msgstr ""
-"ನಿಮ್ಮ USB ಬಸ್‌ಗೆ(ಗಳಿಗೆ) ಜೋಡಿಸಲಾಗಿರುವ ಸಾಧನಗಳನ್ನುನೀವು ನೋಡಲು ಈ ಮಾಡ್ಯೂಲ್ ಅನುವು "
-"ಮಾಡಿಕೊಡುತ್ತದೆ."
-
-#: kcmusb.cpp:42
+#: kcmusb.cpp:37
 #, kde-format
 msgid "Device"
 msgstr "ಸಾಧನ"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "kcmusb"
-msgstr "kcmusb"
-
-#: kcmusb.cpp:63
-#, fuzzy, kde-format
-#| msgid "Device"
-msgid "USB Devices"
-msgstr "ಸಾಧನ"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
-msgstr "(c) 2001 Matthias Hoelzer-Kluepfel"
-
-#: kcmusb.cpp:65
-#, kde-format
-msgid "Matthias Hoelzer-Kluepfel"
-msgstr "Matthias Hoelzer-Kluepfel"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Leo Savernik"
-msgstr "Leo Savernik"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Live Monitoring of USB Bus"
-msgstr "USB ಬಸ್‌ನ ನೇರ ಮೇಲ್ವಿಚಾರಣೆ"
 
 #: usbdevices.cpp:92
 #, kde-format
@@ -520,6 +472,40 @@ msgstr "<tr><td><i>ಮಾರ್ಗಗಳು</i></td><td>%1</td></tr>"
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
 msgstr "<tr><td><i>ಗರಿಷ್ಟ ಪ್ಯಾಕೆಟ್ ಗಾತ್ರ</i></td><td>%1</td></tr>"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "ಶಂಕರ ಪ್ರಸಾದ್‌ ಎಂ. ವಿ."
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "svenkate@redhat.com"
+
+#~ msgid ""
+#~ "This module allows you to see the devices attached to your USB bus(es)."
+#~ msgstr ""
+#~ "ನಿಮ್ಮ USB ಬಸ್‌ಗೆ(ಗಳಿಗೆ) ಜೋಡಿಸಲಾಗಿರುವ ಸಾಧನಗಳನ್ನುನೀವು ನೋಡಲು ಈ ಮಾಡ್ಯೂಲ್ ಅನುವು "
+#~ "ಮಾಡಿಕೊಡುತ್ತದೆ."
+
+#~ msgid "kcmusb"
+#~ msgstr "kcmusb"
+
+#, fuzzy
+#~| msgid "Device"
+#~ msgid "USB Devices"
+#~ msgstr "ಸಾಧನ"
+
+#~ msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
+#~ msgstr "(c) 2001 Matthias Hoelzer-Kluepfel"
+
+#~ msgid "Matthias Hoelzer-Kluepfel"
+#~ msgstr "Matthias Hoelzer-Kluepfel"
+
+#~ msgid "Leo Savernik"
+#~ msgstr "Leo Savernik"
+
+#~ msgid "Live Monitoring of USB Bus"
+#~ msgstr "USB ಬಸ್‌ನ ನೇರ ಮೇಲ್ವಿಚಾರಣೆ"
 
 #~ msgid "AT-commands"
 #~ msgstr "AT-ಆಜ್ಞೆಗಳು"

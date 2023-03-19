@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 23:30+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2020-09-27 10:08+0300\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -43,64 +43,62 @@ msgctxt "@item:intable Network type"
 msgid "Loopback"
 msgstr "Βρόχος ανακύκλωσης"
 
-#: package/contents/ui/main.qml:15
-#, kde-format
-msgid "Network Interfaces"
-msgstr "Δικτυακές διεπαφές"
-
-#: package/contents/ui/main.qml:30
+#: package/contents/ui/main.qml:29
 #, kde-format
 msgctxt "@label"
 msgid "Name:"
 msgstr "Όνομα:"
 
-#: package/contents/ui/main.qml:34
+#: package/contents/ui/main.qml:33
 #, kde-format
 msgctxt "@label"
 msgid "Address:"
 msgstr "Διεύθυνση:"
 
-#: package/contents/ui/main.qml:38
+#: package/contents/ui/main.qml:37
 #, kde-format
 msgctxt "@label"
 msgid "Network Mask:"
 msgstr "Μάσκα δικτύου:"
 
-#: package/contents/ui/main.qml:42
+#: package/contents/ui/main.qml:41
 #, kde-format
 msgctxt "@label"
 msgid "Type:"
 msgstr "Τύπος:"
 
-#: package/contents/ui/main.qml:46
+#: package/contents/ui/main.qml:45
 #, kde-format
 msgctxt "@label"
 msgid "Hardware Address:"
 msgstr "Διεύθυνση υλικού:"
 
-#: package/contents/ui/main.qml:51
+#: package/contents/ui/main.qml:50
 #, kde-format
 msgctxt "@label"
 msgid "State:"
 msgstr "Κατάσταση:"
 
-#: package/contents/ui/main.qml:59
+#: package/contents/ui/main.qml:58
 #, kde-format
 msgctxt "State of network card is connected"
 msgid "Up"
 msgstr "Πάνω"
 
-#: package/contents/ui/main.qml:60
+#: package/contents/ui/main.qml:59
 #, kde-format
 msgctxt "State of network card is disconnected"
 msgid "Down"
 msgstr "Κάτω"
 
-#: package/contents/ui/main.qml:76
+#: package/contents/ui/main.qml:75
 #, kde-format
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr "Ανανέωση"
+
+#~ msgid "Network Interfaces"
+#~ msgstr "Δικτυακές διεπαφές"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

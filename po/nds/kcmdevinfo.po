@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_devinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:48+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2014-02-16 23:06+0100\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -17,16 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Manfred Wiese, Sönke Dibbern"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "m.j.wiese@web.de, s_dibbern@web.de"
 
 #: devicelisting.cpp:41
 #, kde-format
@@ -65,34 +55,18 @@ msgctxt "unknown device type"
 msgid "Unknown"
 msgstr "Nich begäng"
 
-#: devicelisting.cpp:136 devinfo.cpp:79
+#: devicelisting.cpp:136 devinfo.cpp:73
 #, kde-format
 msgctxt "no device UDI"
 msgid "None"
 msgstr "Keen"
 
-#: devinfo.cpp:28
-#, kde-format
-msgid "kcmdevinfo"
-msgstr "kcmdevinfo"
-
-#: devinfo.cpp:28
-#, fuzzy, kde-format
-#| msgid "KDE Solid Based Device Viewer"
-msgid "Device Viewer"
-msgstr "Op »Solid« opbuut Reedschappenkieker för KDE"
-
-#: devinfo.cpp:28
-#, kde-format
-msgid "(c) 2010 David Hubner"
-msgstr "© 2010 David Hubner"
-
-#: devinfo.cpp:58
+#: devinfo.cpp:52
 #, kde-format
 msgid "UDI: "
 msgstr "UDI: "
 
-#: devinfo.cpp:66
+#: devinfo.cpp:60
 #, kde-format
 msgctxt "Udi Whats This"
 msgid "Shows the current device's UDI (Unique Device Identifier)"
@@ -541,6 +515,25 @@ msgstr "Oplaadtostand: "
 #| msgid "Charge Status: "
 msgid "Charge Percent: "
 msgstr "Oplaadtostand: "
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Manfred Wiese, Sönke Dibbern"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "m.j.wiese@web.de, s_dibbern@web.de"
+
+#~ msgid "kcmdevinfo"
+#~ msgstr "kcmdevinfo"
+
+#, fuzzy
+#~| msgid "KDE Solid Based Device Viewer"
+#~ msgid "Device Viewer"
+#~ msgstr "Op »Solid« opbuut Reedschappenkieker för KDE"
+
+#~ msgid "(c) 2010 David Hubner"
+#~ msgstr "© 2010 David Hubner"
 
 #~ msgid "Network Interfaces"
 #~ msgstr "Nettwark-Koppelsteden"

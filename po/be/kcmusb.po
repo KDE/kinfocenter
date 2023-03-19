@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-03 00:18+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2007-08-26 21:08+0300\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@licei2.com>\n"
 "Language-Team: Belarusian <i18n@mova.org>\n"
@@ -18,16 +18,6 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Дарафей Праляскоўскі"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "symbol@akeeri.tk"
 
 #: classes.i18n:2 usbdevices.cpp:66
 #, kde-format
@@ -396,50 +386,10 @@ msgctxt "USB device subclass"
 msgid "Wireless USB Wire Adapter"
 msgstr ""
 
-#: kcmusb.cpp:28
-#, fuzzy, kde-format
-#| msgid ""
-#| "<h1>USB Devices</h1> This module allows you to see the devices attached "
-#| "to your USB bus(es)."
-msgid "This module allows you to see the devices attached to your USB bus(es)."
-msgstr ""
-"<h1>Прылады USB</h1> Гэты модуль дазваляе вам назіраць за далучанымі да шыны "
-"USB прыладамі."
-
-#: kcmusb.cpp:42
+#: kcmusb.cpp:37
 #, kde-format
 msgid "Device"
 msgstr "Прылада"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "kcmusb"
-msgstr "kcmusb"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "USB Devices"
-msgstr "USB прылады"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
-msgstr "(c) 2001 Матыяс Хёльцэр-Клюпфэл"
-
-#: kcmusb.cpp:65
-#, kde-format
-msgid "Matthias Hoelzer-Kluepfel"
-msgstr "Матыяс Хёльцэр-Клюпфэл"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Leo Savernik"
-msgstr "Лео Савернік"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Live Monitoring of USB Bus"
-msgstr "Назіранне за шынай USB у рэальным часе"
 
 #: usbdevices.cpp:92
 #, kde-format
@@ -506,6 +456,42 @@ msgstr "<tr><td><i>Каналы</i></td><td>%1</td></tr>"
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
 msgstr ""
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Дарафей Праляскоўскі"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "symbol@akeeri.tk"
+
+#, fuzzy
+#~| msgid ""
+#~| "<h1>USB Devices</h1> This module allows you to see the devices attached "
+#~| "to your USB bus(es)."
+#~ msgid ""
+#~ "This module allows you to see the devices attached to your USB bus(es)."
+#~ msgstr ""
+#~ "<h1>Прылады USB</h1> Гэты модуль дазваляе вам назіраць за далучанымі да "
+#~ "шыны USB прыладамі."
+
+#~ msgid "kcmusb"
+#~ msgstr "kcmusb"
+
+#~ msgid "USB Devices"
+#~ msgstr "USB прылады"
+
+#~ msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
+#~ msgstr "(c) 2001 Матыяс Хёльцэр-Клюпфэл"
+
+#~ msgid "Matthias Hoelzer-Kluepfel"
+#~ msgstr "Матыяс Хёльцэр-Клюпфэл"
+
+#~ msgid "Leo Savernik"
+#~ msgstr "Лео Савернік"
+
+#~ msgid "Live Monitoring of USB Bus"
+#~ msgstr "Назіранне за шынай USB у рэальным часе"
 
 #~ msgid "AT-commands"
 #~ msgstr "AT-каманды"

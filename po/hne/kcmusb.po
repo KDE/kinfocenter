@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-03 00:18+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2009-02-09 18:07+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,16 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "रविसंकर सिरीवास्तव, जी. करूनाकर"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "raviratlami@aol.in,"
 
 #: classes.i18n:2 usbdevices.cpp:66
 #, kde-format
@@ -413,45 +403,10 @@ msgctxt "USB device subclass"
 msgid "Wireless USB Wire Adapter"
 msgstr ""
 
-#: kcmusb.cpp:28
-#, kde-format
-msgid "This module allows you to see the devices attached to your USB bus(es)."
-msgstr "ये वाले माड्यूल आप मन ल आप मन के यूएसबी बस से जुड़े औजार मन ल देखाथे."
-
-#: kcmusb.cpp:42
+#: kcmusb.cpp:37
 #, kde-format
 msgid "Device"
 msgstr "उपकरन"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "kcmusb"
-msgstr "केसीएमयूएसबी"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "USB Devices"
-msgstr "यूएसबी औजार"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
-msgstr "(c) 2000, मैथियास होल्जर-क्लूपफेल"
-
-#: kcmusb.cpp:65
-#, kde-format
-msgid "Matthias Hoelzer-Kluepfel"
-msgstr "मैथियास होल्जर-क्लूपफेल"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Leo Savernik"
-msgstr "लिओ सावरनिक"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Live Monitoring of USB Bus"
-msgstr "यूएसबी बस के लाइव मानीटरिंग"
 
 #: usbdevices.cpp:92
 #, kde-format
@@ -518,6 +473,36 @@ msgstr "<tr><td><i>चैनल्स</i></td><td>%1</td></tr>"
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
 msgstr "<tr><td><i>सबसे अधिक पैकेट आकार</i></td><td>%1</td></tr>"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "रविसंकर सिरीवास्तव, जी. करूनाकर"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "raviratlami@aol.in,"
+
+#~ msgid ""
+#~ "This module allows you to see the devices attached to your USB bus(es)."
+#~ msgstr "ये वाले माड्यूल आप मन ल आप मन के यूएसबी बस से जुड़े औजार मन ल देखाथे."
+
+#~ msgid "kcmusb"
+#~ msgstr "केसीएमयूएसबी"
+
+#~ msgid "USB Devices"
+#~ msgstr "यूएसबी औजार"
+
+#~ msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
+#~ msgstr "(c) 2000, मैथियास होल्जर-क्लूपफेल"
+
+#~ msgid "Matthias Hoelzer-Kluepfel"
+#~ msgstr "मैथियास होल्जर-क्लूपफेल"
+
+#~ msgid "Leo Savernik"
+#~ msgstr "लिओ सावरनिक"
+
+#~ msgid "Live Monitoring of USB Bus"
+#~ msgstr "यूएसबी बस के लाइव मानीटरिंग"
 
 #~ msgid "AT-commands"
 #~ msgstr "एटी- कमांड"

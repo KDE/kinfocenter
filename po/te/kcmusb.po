@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-03 00:18+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2009-01-16 22:16+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
@@ -17,16 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "కృష్ణబాబు కె , విజయ్ కిరణ్ కముజు"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "k.meetme@gmail.com,infyquest@gmail.com"
 
 #: classes.i18n:2 usbdevices.cpp:66
 #, kde-format
@@ -412,46 +402,10 @@ msgctxt "USB device subclass"
 msgid "Wireless USB Wire Adapter"
 msgstr ""
 
-#: kcmusb.cpp:28
-#, kde-format
-msgid "This module allows you to see the devices attached to your USB bus(es)."
-msgstr "ఈ మాడ్యూల్ మీ USB బస్(ల)కు అనుభందించబడివున్న పరికరములను మీరు చూడుటకు అనుమతిస్తుంది."
-
-#: kcmusb.cpp:42
+#: kcmusb.cpp:37
 #, kde-format
 msgid "Device"
 msgstr "పరికరం"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "kcmusb"
-msgstr "kcmusb"
-
-#: kcmusb.cpp:63
-#, fuzzy, kde-format
-#| msgid "Device"
-msgid "USB Devices"
-msgstr "పరికరం"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
-msgstr "(c) 2001 మాథియాస్ హోల్జెర్-క్లుఫెల్"
-
-#: kcmusb.cpp:65
-#, kde-format
-msgid "Matthias Hoelzer-Kluepfel"
-msgstr "మథయాస్ హొయెల్జర్-క్లూప్ఫెల్"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Leo Savernik"
-msgstr "లియో సావెర్నిక్"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Live Monitoring of USB Bus"
-msgstr "USB బస్ యొక్క లైవ్ మానిటరింగ్"
 
 #: usbdevices.cpp:92
 #, kde-format
@@ -518,6 +472,39 @@ msgstr "<tr><td><i>చానల్స్</i></td><td>%1</td></tr>"
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
 msgstr "<tr><td><i>గిరిష్ట ప్యాకెట్ పరిమాణము</i></td><td>%1</td></tr>"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "కృష్ణబాబు కె , విజయ్ కిరణ్ కముజు"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "k.meetme@gmail.com,infyquest@gmail.com"
+
+#~ msgid ""
+#~ "This module allows you to see the devices attached to your USB bus(es)."
+#~ msgstr ""
+#~ "ఈ మాడ్యూల్ మీ USB బస్(ల)కు అనుభందించబడివున్న పరికరములను మీరు చూడుటకు అనుమతిస్తుంది."
+
+#~ msgid "kcmusb"
+#~ msgstr "kcmusb"
+
+#, fuzzy
+#~| msgid "Device"
+#~ msgid "USB Devices"
+#~ msgstr "పరికరం"
+
+#~ msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
+#~ msgstr "(c) 2001 మాథియాస్ హోల్జెర్-క్లుఫెల్"
+
+#~ msgid "Matthias Hoelzer-Kluepfel"
+#~ msgstr "మథయాస్ హొయెల్జర్-క్లూప్ఫెల్"
+
+#~ msgid "Leo Savernik"
+#~ msgstr "లియో సావెర్నిక్"
+
+#~ msgid "Live Monitoring of USB Bus"
+#~ msgstr "USB బస్ యొక్క లైవ్ మానిటరింగ్"
 
 #~ msgid "AT-commands"
 #~ msgstr "AT-ఆదేశములు"

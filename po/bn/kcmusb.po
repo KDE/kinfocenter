@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-03 00:18+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2006-01-04 12:53-0600\n"
 "Last-Translator: Deepayan Sarkar <deepayan@bengalinux.org>\n"
 "Language-Team: Bengali <kde-translation@bengalinux.org>\n"
@@ -14,16 +14,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "দীপায়ন সরকার"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "deepayan@bengalinux.org"
 
 #: classes.i18n:2 usbdevices.cpp:66
 #, kde-format
@@ -409,47 +399,10 @@ msgctxt "USB device subclass"
 msgid "Wireless USB Wire Adapter"
 msgstr ""
 
-#: kcmusb.cpp:28
-#, fuzzy, kde-format
-msgid "This module allows you to see the devices attached to your USB bus(es)."
-msgstr ""
-"<h1>ইউ-এস-বি ডিভাইস</h1> এই মডিউল আপনার ইউ-এস-বি বাস-এ সংযুক্ত ডিভাইসগুলি "
-"সম্বন্ধে জানার সুযোগ দেয়।"
-
-#: kcmusb.cpp:42
+#: kcmusb.cpp:37
 #, kde-format
 msgid "Device"
 msgstr "ডিভাইস"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "kcmusb"
-msgstr "kcmusb"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "USB Devices"
-msgstr "ইউ-এস-বি ডিভাইস"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
-msgstr "(c) 2001 Matthias Hoelzer-Kluepfel"
-
-#: kcmusb.cpp:65
-#, fuzzy, kde-format
-msgid "Matthias Hoelzer-Kluepfel"
-msgstr "(c) 2001 Matthias Hoelzer-Kluepfel"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Leo Savernik"
-msgstr ""
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Live Monitoring of USB Bus"
-msgstr ""
 
 #: usbdevices.cpp:92
 #, kde-format
@@ -516,6 +469,34 @@ msgstr "<tr><td><i>চ্যানেল</i></td><td>%1</td></tr>"
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
 msgstr "<tr><td><i>সর্বাধিক প্যাকেট সাইজ</i></td><td>%1</td></tr>"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "দীপায়ন সরকার"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "deepayan@bengalinux.org"
+
+#, fuzzy
+#~ msgid ""
+#~ "This module allows you to see the devices attached to your USB bus(es)."
+#~ msgstr ""
+#~ "<h1>ইউ-এস-বি ডিভাইস</h1> এই মডিউল আপনার ইউ-এস-বি বাস-এ সংযুক্ত ডিভাইসগুলি "
+#~ "সম্বন্ধে জানার সুযোগ দেয়।"
+
+#~ msgid "kcmusb"
+#~ msgstr "kcmusb"
+
+#~ msgid "USB Devices"
+#~ msgstr "ইউ-এস-বি ডিভাইস"
+
+#~ msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
+#~ msgstr "(c) 2001 Matthias Hoelzer-Kluepfel"
+
+#, fuzzy
+#~ msgid "Matthias Hoelzer-Kluepfel"
+#~ msgstr "(c) 2001 Matthias Hoelzer-Kluepfel"
 
 #~ msgid "AT-commands"
 #~ msgstr "AT-কমান্ড"

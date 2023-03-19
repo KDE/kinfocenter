@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmnic\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 23:30+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -46,70 +46,69 @@ msgctxt "@item:intable Network type"
 msgid "Loopback"
 msgstr "ھالقا"
 
-#: package/contents/ui/main.qml:15
-#, fuzzy, kde-format
-#| msgid "Network Mask"
-msgid "Network Interfaces"
-msgstr "تور ماسكىسى"
-
-#: package/contents/ui/main.qml:30
+#: package/contents/ui/main.qml:29
 #, fuzzy, kde-format
 #| msgid "Name"
 msgctxt "@label"
 msgid "Name:"
 msgstr "ئاتى"
 
-#: package/contents/ui/main.qml:34
+#: package/contents/ui/main.qml:33
 #, fuzzy, kde-format
 #| msgid "IP Address"
 msgctxt "@label"
 msgid "Address:"
 msgstr "‍IP ئادرېس:"
 
-#: package/contents/ui/main.qml:38
+#: package/contents/ui/main.qml:37
 #, fuzzy, kde-format
 #| msgid "Network Mask"
 msgctxt "@label"
 msgid "Network Mask:"
 msgstr "تور ماسكىسى"
 
-#: package/contents/ui/main.qml:42
+#: package/contents/ui/main.qml:41
 #, fuzzy, kde-format
 #| msgid "Type"
 msgctxt "@label"
 msgid "Type:"
 msgstr "تىپى"
 
-#: package/contents/ui/main.qml:46
+#: package/contents/ui/main.qml:45
 #, kde-format
 msgctxt "@label"
 msgid "Hardware Address:"
 msgstr ""
 
-#: package/contents/ui/main.qml:51
+#: package/contents/ui/main.qml:50
 #, fuzzy, kde-format
 #| msgid "State"
 msgctxt "@label"
 msgid "State:"
 msgstr "ھالەت"
 
-#: package/contents/ui/main.qml:59
+#: package/contents/ui/main.qml:58
 #, kde-format
 msgctxt "State of network card is connected"
 msgid "Up"
 msgstr "ئۈستى"
 
-#: package/contents/ui/main.qml:60
+#: package/contents/ui/main.qml:59
 #, kde-format
 msgctxt "State of network card is disconnected"
 msgid "Down"
 msgstr "ئاستى"
 
-#: package/contents/ui/main.qml:76
+#: package/contents/ui/main.qml:75
 #, kde-format
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Network Mask"
+#~ msgid "Network Interfaces"
+#~ msgstr "تور ماسكىسى"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

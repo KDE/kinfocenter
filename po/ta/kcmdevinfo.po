@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:48+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2022-03-10 21:51+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -16,16 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 21.12.3\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr ""
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr ""
 
 #: devicelisting.cpp:41
 #, kde-format
@@ -64,33 +54,18 @@ msgctxt "unknown device type"
 msgid "Unknown"
 msgstr "தெரியாதது"
 
-#: devicelisting.cpp:136 devinfo.cpp:79
+#: devicelisting.cpp:136 devinfo.cpp:73
 #, kde-format
 msgctxt "no device UDI"
 msgid "None"
 msgstr "ஏதுமில்லை"
 
-#: devinfo.cpp:28
-#, kde-format
-msgid "kcmdevinfo"
-msgstr ""
-
-#: devinfo.cpp:28
-#, kde-format
-msgid "Device Viewer"
-msgstr "சாதன காட்டி"
-
-#: devinfo.cpp:28
-#, kde-format
-msgid "(c) 2010 David Hubner"
-msgstr "(c) 2010 டேவிட் ஹுப்னர்"
-
-#: devinfo.cpp:58
+#: devinfo.cpp:52
 #, kde-format
 msgid "UDI: "
 msgstr ""
 
-#: devinfo.cpp:66
+#: devinfo.cpp:60
 #, kde-format
 msgctxt "Udi Whats This"
 msgid "Shows the current device's UDI (Unique Device Identifier)"
@@ -529,3 +504,9 @@ msgstr "ஆற்றல் நிலை: "
 #, kde-format
 msgid "Charge Percent: "
 msgstr "ஆற்றல் சதவீதம்: "
+
+#~ msgid "Device Viewer"
+#~ msgstr "சாதன காட்டி"
+
+#~ msgid "(c) 2010 David Hubner"
+#~ msgstr "(c) 2010 டேவிட் ஹுப்னர்"

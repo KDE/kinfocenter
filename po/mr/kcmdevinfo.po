@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:48+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2014-10-28 15:30+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -16,16 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Lokalize 1.5\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "चेतन खोना"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "chetan@kompkin.com"
 
 #: devicelisting.cpp:41
 #, kde-format
@@ -64,34 +54,18 @@ msgctxt "unknown device type"
 msgid "Unknown"
 msgstr "अपरिचीत"
 
-#: devicelisting.cpp:136 devinfo.cpp:79
+#: devicelisting.cpp:136 devinfo.cpp:73
 #, kde-format
 msgctxt "no device UDI"
 msgid "None"
 msgstr "काही नाही"
 
-#: devinfo.cpp:28
-#, kde-format
-msgid "kcmdevinfo"
-msgstr "केसीएम-डेव्ह-इन्फो"
-
-#: devinfo.cpp:28
-#, fuzzy, kde-format
-#| msgid "KDE Solid Based Device Viewer"
-msgid "Device Viewer"
-msgstr "केडीई सॉलिड आधारित साधन प्रदर्शक"
-
-#: devinfo.cpp:28
-#, kde-format
-msgid "(c) 2010 David Hubner"
-msgstr "(c) 2010 डेविड हब्नर"
-
-#: devinfo.cpp:58
+#: devinfo.cpp:52
 #, kde-format
 msgid "UDI: "
 msgstr "UDI: "
 
-#: devinfo.cpp:66
+#: devinfo.cpp:60
 #, kde-format
 msgctxt "Udi Whats This"
 msgid "Shows the current device's UDI (Unique Device Identifier)"
@@ -538,6 +512,25 @@ msgstr "चार्ज स्थिती : "
 #| msgid "Charge Status: "
 msgid "Charge Percent: "
 msgstr "चार्ज स्थिती : "
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "चेतन खोना"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "chetan@kompkin.com"
+
+#~ msgid "kcmdevinfo"
+#~ msgstr "केसीएम-डेव्ह-इन्फो"
+
+#, fuzzy
+#~| msgid "KDE Solid Based Device Viewer"
+#~ msgid "Device Viewer"
+#~ msgstr "केडीई सॉलिड आधारित साधन प्रदर्शक"
+
+#~ msgid "(c) 2010 David Hubner"
+#~ msgstr "(c) 2010 डेविड हब्नर"
 
 #~ msgid "Network Interfaces"
 #~ msgstr "संजाळ दुवे"

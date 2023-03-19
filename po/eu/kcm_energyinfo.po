@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 23:30+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2021-07-17 20:12+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -21,334 +21,332 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 21.04.3\n"
 
-#: package/contents/ui/main.qml:22
-#, kde-format
-msgid "This module lets you see energy information and statistics."
-msgstr ""
-"Modulu honek energiaren gaineko informazioa eta estatistikak ikusten uzten "
-"dizu."
-
-#: package/contents/ui/main.qml:49
+#: package/contents/ui/main.qml:47
 #, kde-format
 msgid "Battery"
 msgstr "Bateria"
 
-#: package/contents/ui/main.qml:51
+#: package/contents/ui/main.qml:49
 #, kde-format
 msgid "Rechargeable"
 msgstr "Kargagarria"
 
-#: package/contents/ui/main.qml:52
+#: package/contents/ui/main.qml:50
 #, kde-format
 msgid "Charge state"
 msgstr "Kargaren egoera"
 
-#: package/contents/ui/main.qml:53
+#: package/contents/ui/main.qml:51
 #, kde-format
 msgid "Current charge"
 msgstr "Unekoa karga"
 
-#: package/contents/ui/main.qml:53 package/contents/ui/main.qml:54
+#: package/contents/ui/main.qml:51 package/contents/ui/main.qml:52
 #, kde-format
 msgid "%"
 msgstr "%"
 
-#: package/contents/ui/main.qml:54
+#: package/contents/ui/main.qml:52
 #, kde-format
 msgid "Health"
 msgstr "Osasuna"
 
-#: package/contents/ui/main.qml:55
+#: package/contents/ui/main.qml:53
 #, kde-format
 msgid "Vendor"
 msgstr "Hornitzailea"
 
-#: package/contents/ui/main.qml:56
+#: package/contents/ui/main.qml:54
 #, kde-format
 msgid "Model"
 msgstr "Eredua"
 
-#: package/contents/ui/main.qml:57
+#: package/contents/ui/main.qml:55
 #, kde-format
 msgid "Serial Number"
 msgstr "Serie-zenbakia"
 
-#: package/contents/ui/main.qml:58
+#: package/contents/ui/main.qml:56
 #, kde-format
 msgid "Technology"
 msgstr "Teknologia"
 
-#: package/contents/ui/main.qml:62
+#: package/contents/ui/main.qml:60
 #, kde-format
 msgid "Energy"
 msgstr "Energia"
 
-#: package/contents/ui/main.qml:64
+#: package/contents/ui/main.qml:62
 #, kde-format
 msgctxt "current power draw from the battery in W"
 msgid "Consumption"
 msgstr "Kontsumoa"
 
-#: package/contents/ui/main.qml:64
+#: package/contents/ui/main.qml:62
 #, kde-format
 msgctxt "Watt"
 msgid "W"
 msgstr "W"
 
-#: package/contents/ui/main.qml:65
+#: package/contents/ui/main.qml:63
 #, kde-format
 msgid "Voltage"
 msgstr "Tentsioa"
 
-#: package/contents/ui/main.qml:65
+#: package/contents/ui/main.qml:63
 #, kde-format
 msgctxt "Volt"
 msgid "V"
 msgstr "V"
 
-#: package/contents/ui/main.qml:66
+#: package/contents/ui/main.qml:64
 #, kde-format
 msgid "Remaining energy"
 msgstr "Geratzen den energia"
 
-#: package/contents/ui/main.qml:66 package/contents/ui/main.qml:67
-#: package/contents/ui/main.qml:68
+#: package/contents/ui/main.qml:64 package/contents/ui/main.qml:65
+#: package/contents/ui/main.qml:66
 #, kde-format
 msgctxt "Watt-hours"
 msgid "Wh"
 msgstr "Wh"
 
-#: package/contents/ui/main.qml:67
+#: package/contents/ui/main.qml:65
 #, kde-format
 msgid "Last full charge"
 msgstr "Azken karga osoa"
 
-#: package/contents/ui/main.qml:68
+#: package/contents/ui/main.qml:66
 #, kde-format
 msgid "Original charge capacity"
 msgstr "Kargaren jatorrizko kapazitatea"
 
-#: package/contents/ui/main.qml:72
+#: package/contents/ui/main.qml:70
 #, kde-format
 msgid "Environment"
 msgstr "Ingurunea"
 
-#: package/contents/ui/main.qml:74
+#: package/contents/ui/main.qml:72
 #, kde-format
 msgid "Temperature"
 msgstr "Tenperatura"
 
-#: package/contents/ui/main.qml:74
+#: package/contents/ui/main.qml:72
 #, kde-format
 msgctxt "Degree Celsius"
 msgid "°C"
 msgstr "°C"
 
-#: package/contents/ui/main.qml:81
+#: package/contents/ui/main.qml:79
 #, kde-format
 msgid "Not charging"
 msgstr "Ez da kargatzen ari"
 
-#: package/contents/ui/main.qml:82
+#: package/contents/ui/main.qml:80
 #, kde-format
 msgid "Charging"
 msgstr "Kargatzen"
 
-#: package/contents/ui/main.qml:83
+#: package/contents/ui/main.qml:81
 #, kde-format
 msgid "Discharging"
 msgstr "Deskargatzen"
 
-#: package/contents/ui/main.qml:84
+#: package/contents/ui/main.qml:82
 #, kde-format
 msgid "Fully charged"
 msgstr "Osorik kargatuta"
 
-#: package/contents/ui/main.qml:90
+#: package/contents/ui/main.qml:88
 #, kde-format
 msgid "Lithium ion"
 msgstr "Litio ioi"
 
-#: package/contents/ui/main.qml:91
+#: package/contents/ui/main.qml:89
 #, kde-format
 msgid "Lithium polymer"
 msgstr "Litio polimero"
 
-#: package/contents/ui/main.qml:92
+#: package/contents/ui/main.qml:90
 #, kde-format
 msgid "Lithium iron phosphate"
 msgstr "Litio burdin fosfato"
 
-#: package/contents/ui/main.qml:93
+#: package/contents/ui/main.qml:91
 #, kde-format
 msgid "Lead acid"
 msgstr "Berun azido"
 
-#: package/contents/ui/main.qml:94
+#: package/contents/ui/main.qml:92
 #, kde-format
 msgid "Nickel cadmium"
 msgstr "Nikel kadmio"
 
-#: package/contents/ui/main.qml:95
+#: package/contents/ui/main.qml:93
 #, kde-format
 msgid "Nickel metal hydride"
 msgstr "Nikel metal hidruro"
 
-#: package/contents/ui/main.qml:96
+#: package/contents/ui/main.qml:94
 #, kde-format
 msgid "Unknown technology"
 msgstr "Teknologia ezezaguna"
 
-#: package/contents/ui/main.qml:103
+#: package/contents/ui/main.qml:101
 #, kde-format
 msgid "Last hour"
 msgstr "Azken orduan"
 
-#: package/contents/ui/main.qml:103
+#: package/contents/ui/main.qml:101
 #, kde-format
 msgid "Last 2 hours"
 msgstr "Azken 2 orduetan"
 
-#: package/contents/ui/main.qml:103
+#: package/contents/ui/main.qml:101
 #, kde-format
 msgid "Last 12 hours"
 msgstr "Azken 12 orduetan"
 
-#: package/contents/ui/main.qml:103
+#: package/contents/ui/main.qml:101
 #, kde-format
 msgid "Last 24 hours"
 msgstr "Azken 24 orduetan"
 
-#: package/contents/ui/main.qml:103
+#: package/contents/ui/main.qml:101
 #, kde-format
 msgid "Last 48 hours"
 msgstr "Azken 48 orduetan"
 
-#: package/contents/ui/main.qml:103
+#: package/contents/ui/main.qml:101
 #, kde-format
 msgid "Last 7 days"
 msgstr "Azken 7 egunetan"
 
-#: package/contents/ui/main.qml:110
+#: package/contents/ui/main.qml:108
 #, kde-format
 msgctxt "@info:status"
 msgid "No energy information available on this system"
 msgstr "Sistema honetan ez dago erabilgarri energiari buruzko informaziorik"
 
-#: package/contents/ui/main.qml:175
+#: package/contents/ui/main.qml:173
 #, kde-format
 msgid "Internal battery"
 msgstr "Barneko bateria"
 
-#: package/contents/ui/main.qml:176
+#: package/contents/ui/main.qml:174
 #, kde-format
 msgid "UPS battery"
 msgstr "UPS bateria"
 
-#: package/contents/ui/main.qml:177
+#: package/contents/ui/main.qml:175
 #, kde-format
 msgid "Monitor battery"
 msgstr "Monitoreko bateria"
 
-#: package/contents/ui/main.qml:178
+#: package/contents/ui/main.qml:176
 #, kde-format
 msgid "Mouse battery"
 msgstr "Saguko bateria"
 
-#: package/contents/ui/main.qml:179
+#: package/contents/ui/main.qml:177
 #, kde-format
 msgid "Keyboard battery"
 msgstr "Teklatuko bateria"
 
-#: package/contents/ui/main.qml:180
+#: package/contents/ui/main.qml:178
 #, kde-format
 msgid "PDA battery"
 msgstr "PDAko bateria"
 
-#: package/contents/ui/main.qml:181
+#: package/contents/ui/main.qml:179
 #, kde-format
 msgid "Phone battery"
 msgstr "Telefonoko bateria"
 
-#: package/contents/ui/main.qml:182
+#: package/contents/ui/main.qml:180
 #, kde-format
 msgid "Unknown battery"
 msgstr "Bateria ezezaguna"
 
-#: package/contents/ui/main.qml:200
+#: package/contents/ui/main.qml:198
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr "%%1 (kargatzen)"
 
-#: package/contents/ui/main.qml:201
+#: package/contents/ui/main.qml:199
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr "%%1"
 
-#: package/contents/ui/main.qml:250
+#: package/contents/ui/main.qml:248
 #, kde-format
 msgctxt "Shorthand for Watts"
 msgid "W"
 msgstr "W"
 
-#: package/contents/ui/main.qml:250
+#: package/contents/ui/main.qml:248
 #, kde-format
 msgctxt "literal percent sign"
 msgid "%"
 msgstr "%"
 
-#: package/contents/ui/main.qml:276
+#: package/contents/ui/main.qml:274
 #, kde-format
 msgid "Charge Percentage"
 msgstr "Kargaren ehunekoa"
 
-#: package/contents/ui/main.qml:286
+#: package/contents/ui/main.qml:284
 #, kde-format
 msgid "Energy Consumption"
 msgstr "Energia kontsumoa"
 
-#: package/contents/ui/main.qml:301
+#: package/contents/ui/main.qml:299
 #, kde-format
 msgid "Timespan"
 msgstr "Denbora tartea"
 
-#: package/contents/ui/main.qml:302
+#: package/contents/ui/main.qml:300
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "Bistaratzeko datuen denbora tartea"
 
-#: package/contents/ui/main.qml:308
+#: package/contents/ui/main.qml:306
 #, kde-format
 msgid "Refresh"
 msgstr "Freskatu"
 
-#: package/contents/ui/main.qml:320
+#: package/contents/ui/main.qml:318
 #, kde-format
 msgid "This type of history is currently not available for this device."
 msgstr "Mota honetako historia ez dago eskuragarri oraingoz gailu honentzako."
 
-#: package/contents/ui/main.qml:378
+#: package/contents/ui/main.qml:376
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
-#: package/contents/ui/main.qml:389
+#: package/contents/ui/main.qml:387
 #, kde-format
 msgid "Yes"
 msgstr "Bai"
 
-#: package/contents/ui/main.qml:391
+#: package/contents/ui/main.qml:389
 #, kde-format
 msgid "No"
 msgstr "Ez"
 
-#: package/contents/ui/main.qml:409
+#: package/contents/ui/main.qml:407
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
+
+#~ msgid "This module lets you see energy information and statistics."
+#~ msgstr ""
+#~ "Modulu honek energiaren gaineko informazioa eta estatistikak ikusten "
+#~ "uzten dizu."
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

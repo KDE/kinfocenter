@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-03 00:18+0000\n"
+"POT-Creation-Date: 2023-03-19 02:06+0000\n"
 "PO-Revision-Date: 2007-08-20 10:25+0545\n"
 "Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -18,16 +18,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n !=1\n"
 "\n"
 "X-Generator: KBabel 1.11.4\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Nabin Gautam,श्यामकृष्ण बल"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "nabin@mpp.org.np,shyam@mpp.org.np"
 
 #: classes.i18n:2 usbdevices.cpp:66
 #, kde-format
@@ -413,50 +403,10 @@ msgctxt "USB device subclass"
 msgid "Wireless USB Wire Adapter"
 msgstr ""
 
-#: kcmusb.cpp:28
-#, fuzzy, kde-format
-#| msgid ""
-#| "<h1>USB Devices</h1> This module allows you to see the devices attached "
-#| "to your USB bus(es)."
-msgid "This module allows you to see the devices attached to your USB bus(es)."
-msgstr ""
-"<h1>USB यन्त्र</h1> यो मोड्युलले तपाईँलाई तपाईँको USB बसहरूमा संलग्न भएको यन्त्रहरू हेर्न "
-"अनुमित दिन्छ ।"
-
-#: kcmusb.cpp:42
+#: kcmusb.cpp:37
 #, kde-format
 msgid "Device"
 msgstr "यन्त्र"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "kcmusb"
-msgstr "kcmusb"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "USB Devices"
-msgstr "USB यन्त्र"
-
-#: kcmusb.cpp:63
-#, kde-format
-msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
-msgstr "(सी) २००१ माथियस होइल्जर-क्लुपफेल"
-
-#: kcmusb.cpp:65
-#, kde-format
-msgid "Matthias Hoelzer-Kluepfel"
-msgstr "माथियस होइल्जर-क्लुपफेल"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Leo Savernik"
-msgstr "लियो सेभरनिक"
-
-#: kcmusb.cpp:66
-#, kde-format
-msgid "Live Monitoring of USB Bus"
-msgstr "यूएसबी बसको प्रत्यक्ष अनुगमन"
 
 #: usbdevices.cpp:92
 #, kde-format
@@ -523,6 +473,42 @@ msgstr "<tr><td><i>च्यानल</i></td><td>%1</td></tr>"
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
 msgstr "<tr><td><i>अधिकतम प्याकेट साइज</i></td><td>%1</td></tr>"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Nabin Gautam,श्यामकृष्ण बल"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "nabin@mpp.org.np,shyam@mpp.org.np"
+
+#, fuzzy
+#~| msgid ""
+#~| "<h1>USB Devices</h1> This module allows you to see the devices attached "
+#~| "to your USB bus(es)."
+#~ msgid ""
+#~ "This module allows you to see the devices attached to your USB bus(es)."
+#~ msgstr ""
+#~ "<h1>USB यन्त्र</h1> यो मोड्युलले तपाईँलाई तपाईँको USB बसहरूमा संलग्न भएको यन्त्रहरू "
+#~ "हेर्न अनुमित दिन्छ ।"
+
+#~ msgid "kcmusb"
+#~ msgstr "kcmusb"
+
+#~ msgid "USB Devices"
+#~ msgstr "USB यन्त्र"
+
+#~ msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
+#~ msgstr "(सी) २००१ माथियस होइल्जर-क्लुपफेल"
+
+#~ msgid "Matthias Hoelzer-Kluepfel"
+#~ msgstr "माथियस होइल्जर-क्लुपफेल"
+
+#~ msgid "Leo Savernik"
+#~ msgstr "लियो सेभरनिक"
+
+#~ msgid "Live Monitoring of USB Bus"
+#~ msgstr "यूएसबी बसको प्रत्यक्ष अनुगमन"
 
 #~ msgid "AT-commands"
 #~ msgstr "AT-आदेश"
