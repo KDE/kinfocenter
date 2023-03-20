@@ -509,20 +509,3 @@ msgstr "Ladestatus: "
 #, kde-format
 msgid "Charge Percent: "
 msgstr "Ladingsprosent:"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Karl Ove Hufthammer"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "karl@huftis.org"
-
-#~ msgid "kcmdevinfo"
-#~ msgstr "kcmdevinfo"
-
-#~ msgid "Device Viewer"
-#~ msgstr "Einingsvisar"
-
-#~ msgid "(c) 2010 David Hubner"
-#~ msgstr "© 2010 David Hubner"

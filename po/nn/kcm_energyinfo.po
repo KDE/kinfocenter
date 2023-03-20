@@ -342,7 +342,3 @@ msgstr "Nei"
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
-
-#~ msgid "This module lets you see energy information and statistics."
-#~ msgstr ""
-#~ "Denne modulen lèt deg sjå informasjon og statistikk over energiforbruk."

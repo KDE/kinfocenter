@@ -345,21 +345,3 @@ msgstr "No"
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
-
-#~ msgid "This module lets you see energy information and statistics."
-#~ msgstr ""
-#~ "Aquest mòdul permet veure informació i estadístiques quant a l'energia."
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Josep M. Ferrer"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "txemaq@gmail.com"
-
-#~ msgid "Energy Consumption Statistics"
-#~ msgstr "Estadístiques del consum d'energia"
-
-#~ msgid "Kai Uwe Broulik"
-#~ msgstr "Kai Uwe Broulik"

@@ -444,32 +444,3 @@ msgstr "<tr><td><i>Kanaler</i></td><td>%1</td></tr>"
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
 msgstr "<tr><td><i>Maks. pakkestørrelse</i></td><td>%1</td></tr>"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Klaus Ade Johnstad,Knut Yrvin"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "klaus@skolelinux.no,knut.yrvin@gmail.com"
-
-#~ msgid ""
-#~ "This module allows you to see the devices attached to your USB bus(es)."
-#~ msgstr ""
-#~ " Med denne modulen kan du se enheter som er koblet til din(e) USB-"
-#~ "buss(er)."
-
-#~ msgid "kcmusb"
-#~ msgstr "kcmusb"
-
-#~ msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
-#~ msgstr "© 2001 Matthias Hoelzer-Kluepfel"
-
-#~ msgid "Matthias Hoelzer-Kluepfel"
-#~ msgstr "Matthias Hoelzer-Kluepfel"
-
-#~ msgid "Leo Savernik"
-#~ msgstr "Leo Savernik"
-
-#~ msgid "Live Monitoring of USB Bus"
-#~ msgstr "Direkte overvåking av USB-bus"

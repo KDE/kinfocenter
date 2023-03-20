@@ -508,17 +508,3 @@ msgstr "Ladingsstatus: "
 #, kde-format
 msgid "Charge Percent: "
 msgstr ""
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Bjørn Steensrud"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "bjornst@skogkatt.homelinux.org"
-
-#~ msgid "kcmdevinfo"
-#~ msgstr "kcmdevinfo"
-
-#~ msgid "(c) 2010 David Hubner"
-#~ msgstr "© 2010 David Hubner"

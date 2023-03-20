@@ -513,20 +513,3 @@ msgstr "Estat de la càrrega: "
 #, kde-format
 msgid "Charge Percent: "
 msgstr "Percentatge de càrrega: "
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Josep M. Ferrer"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "txemaq@gmail.com"
-
-#~ msgid "kcmdevinfo"
-#~ msgstr "kcmdevinfo"
-
-#~ msgid "Device Viewer"
-#~ msgstr "Visualitzador de dispositius"
-
-#~ msgid "(c) 2010 David Hubner"
-#~ msgstr "(c) 2010 David Hubner"

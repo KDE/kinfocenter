@@ -97,6 +97,3 @@ msgstr "Nede"
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr "Oppdater"
-
-#~ msgid "Network Interfaces"
-#~ msgstr "Nettverksgrensesnitt"
