@@ -449,33 +449,3 @@ msgstr "<tr><td><i>Canals</i></td><td>%1</td></tr>"
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
 msgstr "<tr><td><i>Mida màx. del paquet</i></td><td>%1</td></tr>"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Empar Montoro Martín,Sebastià Pla i Sanz,Antoni Bella"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "montoro_mde@gva.es,sps@sastia.com,antonibella5@yahoo.com"
-
-#~ msgid ""
-#~ "This module allows you to see the devices attached to your USB bus(es)."
-#~ msgstr "Este mòdul permet veure els dispositius connectats als busos USB."
-
-#~ msgid "kcmusb"
-#~ msgstr "kcmusb"
-
-#~ msgid "USB Devices"
-#~ msgstr "Dispositius USB"
-
-#~ msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
-#~ msgstr "(c) 2001 Matthias Hoelzer-Kluepfel"
-
-#~ msgid "Matthias Hoelzer-Kluepfel"
-#~ msgstr "Matthias Hoelzer-Kluepfel"
-
-#~ msgid "Leo Savernik"
-#~ msgstr "Leo Savernik"
-
-#~ msgid "Live Monitoring of USB Bus"
-#~ msgstr "Control instantani del bus USB"

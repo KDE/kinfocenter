@@ -98,6 +98,3 @@ msgstr "Inactiva"
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr "Actualitza"
-
-#~ msgid "Network Interfaces"
-#~ msgstr "Interfícies de xarxa"

@@ -95,6 +95,3 @@ msgstr "Neběží"
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr "Obnovit"
-
-#~ msgid "Network Interfaces"
-#~ msgstr "Síťová rozhraní"

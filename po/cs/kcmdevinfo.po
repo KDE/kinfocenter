@@ -507,20 +507,3 @@ msgstr "Stav nabití: "
 #, kde-format
 msgid "Charge Percent: "
 msgstr "Procento nabití: "
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Vít Pelčák"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "vit@pelcak.org"
-
-#~ msgid "kcmdevinfo"
-#~ msgstr "kcmdevinfo"
-
-#~ msgid "Device Viewer"
-#~ msgstr "Prohlížeč zařízení"
-
-#~ msgid "(c) 2010 David Hubner"
-#~ msgstr "(c) 2010 David Hubner"
