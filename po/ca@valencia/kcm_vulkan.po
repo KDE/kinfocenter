@@ -44,4 +44,4 @@ msgstr "Harald Sitter"
 #: package/contents/ui/main.qml:14
 msgctxt "@info"
 msgid "Vulkan Graphics API Information"
-msgstr "Informació de la API gràfica Vulkan"
+msgstr "Informació de l'API gràfica Vulkan"

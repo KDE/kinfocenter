@@ -44,4 +44,4 @@ msgstr "Linus Torvalds"
 #: package/contents/ui/main.qml:16
 msgctxt "@info"
 msgid "OpenCL API Information"
-msgstr "Informació de la API d'OpenCL"
+msgstr "Informació de l'API d'OpenCL"
