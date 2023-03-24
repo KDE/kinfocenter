@@ -36,6 +36,7 @@ find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
     WidgetsAddons
     Package
     Solid
+    Auth
 )
 
 ecm_find_qmlmodule(org.kde.kirigami 2.5)
