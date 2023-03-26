@@ -18,6 +18,7 @@
   <name xml:lang="de">Infozentrum</name>
   <name xml:lang="el">Κέντρο πληροφοριών</name>
   <name xml:lang="en-GB">Info Centre</name>
+  <name xml:lang="eo">Informcentro</name>
   <name xml:lang="es">Centro de información</name>
   <name xml:lang="et">Infokeskus</name>
   <name xml:lang="eu">Info-gunea</name>
@@ -60,6 +61,7 @@
   <summary xml:lang="de">Zentrale Übersicht über Systeminformationen</summary>
   <summary xml:lang="el">Συγκεντρωτική και βολική επισκόπηση πληροφοριών του συστήματος</summary>
   <summary xml:lang="en-GB">Centralised and convenient overview of system information</summary>
+  <summary xml:lang="eo">Alcentrigita kaj oportuna superrigardo de sistemaj informoj</summary>
   <summary xml:lang="es">Resumen práctico y centralizado de la información del sistema</summary>
   <summary xml:lang="et">Keskne ja mugav ülevaade süsteemsest teabest</summary>
   <summary xml:lang="eu">Sistema-informazioaren ikuspegi-orokor zentralizatu eta praktikoa</summary>
@@ -103,6 +105,7 @@
     <p xml:lang="de">Das  Infozentrum bietet Ihnen einen zentralisierten und bequemen Überblick über Ihr System und die Arbeitsumgebung.</p>
     <p xml:lang="el">Το κέντρο πληροφοριών παρέχει μια συγκεντρωτική και βολική επισκόπηση πληροφοριών του συστήματός σας και του περιβάλλοντος της επιφάνειας εργασίας.</p>
     <p xml:lang="en-GB">The Info Centre provides you with a centralised and convenient overview of your system and desktop environment.</p>
+    <p xml:lang="eo">La Infocentro provizas al vi centralizitan kaj oportunan superrigardon de via sistemo kaj labortabla medio.</p>
     <p xml:lang="es">El centro de información le proporciona un resumen práctico y centralizado del entorno de su sistema y de su escritorio.</p>
     <p xml:lang="et">Infokeskus pakub tsentraliseeritud ja mugava ülevaate sinu süsteemist ja töökeskkonnast.</p>
     <p xml:lang="eu">Info-guneak zure sistemaren eta mahaigain ingurunearen ikuspegi-orokor zentralizatu eta praktiko bat ematen dizu.</p>
@@ -146,6 +149,7 @@
     <p xml:lang="de">Das Infozentrum besteht aus mehreren Modulen. Jedes Modul ist eine separate Anwendung, aber das Infozentrum ordnet all diese Programme bequem an einem Ort an.</p>
     <p xml:lang="el">Το κέντρο πληροφοριών περιλαμβάνει πολλά αρθρώματα. Καθένα από αυτά είναι μια ξεχωριστή εφαρμογή, αλλά το κέντρο πληροφοριών συγκεντρώνει όλα αυτά τα προγράμματα σε μια βολική τοποθεσία.</p>
     <p xml:lang="en-GB">The information centre is made up of multiple modules. Each module is a separate application, but the information center organizes all of these programs into a convenient location.</p>
+    <p xml:lang="eo">La informcentro konsistas el multoblaj moduloj. Ĉiu modulo estas aparta aplikaĵo, sed la informcentro organizas ĉiujn ĉi tiujn programojn en oportuna loko.</p>
     <p xml:lang="es">El centro de información está compuesto por múltiples módulos. Cada módulo es una aplicación separada, aunque el centro de información organiza todos estos programas en un lugar adecuado.</p>
     <p xml:lang="et">Infokeskus koosneb paljudest moodulitest. Iga moodul on omaette rakendus, aga infokeskus korraldab kõigi nende teabe mugavalt ühte kohta.</p>
     <p xml:lang="eu">Informazio gunea modulu anitzez osatua dago. Modulu bakoitza aplikazio bereizi bat da, baino informazio guneak programa guzti hauek kokaleku praktiko batean kokatzen ditu.</p>
