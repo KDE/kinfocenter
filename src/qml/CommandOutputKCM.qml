@@ -18,6 +18,8 @@ KCM.SimpleKCM {
     implicitHeight: Kirigami.Units.gridUnit * 20
     // Use a horizontal scrollbar if text wrapping is disabled. In all other cases we'll go with the defaults.
     horizontalScrollBarPolicy: wrapMode === TextEdit.NoWrap ? QQC2.ScrollBar.AsNeeded : QQC2.ScrollBar.AlwaysOff
+    // Disable footer padding
+    extraFooterTopPadding: false
 
     Kirigami.Theme.colorSet: Kirigami.Theme.View
     Kirigami.Theme.inherit: false
@@ -117,14 +119,14 @@ KCM.SimpleKCM {
         anchors.fill: parent
     }
 
-    footer: QQC2.ToolBar {
-        contentItem: RowLayout {
-
-            Kirigami.SearchField {
-                id: filterField
-
-                Layout.fillWidth: true
-
+    actions: [
+        Kirigami.Action {
+            icon.name: "edit-copy"
+            text: i18nc("@action:button copies all displayed text", "Copy to Clipboard")
+            onTriggered: clipboard.content = output.text
+        },
+        Kirigami.Action {
+            displayComponent: Kirigami.SearchField {
                 visible: {
                     const isVisibleState = (root.state === "" || !(root.state === "noData" && contentLoader.item.errorNotFilter))
                     return isVisibleState && root.textFormat === TextEdit.PlainText
@@ -139,16 +141,8 @@ KCM.SimpleKCM {
 
                 onAccepted: output.filter = text
             }
-            QQC2.Button {
-                Layout.alignment: Qt.AlignRight
-
-                icon.name: "edit-copy"
-                text: i18nc("@action:button copies all displayed text", "Copy to Clipboard")
-
-                onClicked: clipboard.content = output.text
-            }
         }
-    }
+    ]
 
     states: [
         State {
