@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-19 02:06+0000\n"
-"PO-Revision-Date: 2023-03-11 16:43+0300\n"
+"PO-Revision-Date: 2023-03-28 21:48+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -228,7 +228,7 @@ msgstr "Bu sistemde enerji bilgisi kullanılabilir değil"
 #: package/contents/ui/main.qml:173
 #, kde-format
 msgid "Internal battery"
-msgstr "İç pil"
+msgstr "İçsel pil"
 
 #: package/contents/ui/main.qml:174
 #, kde-format
@@ -275,7 +275,7 @@ msgstr "%​%1 (şarj oluyor)"
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
-msgstr "%% %1"
+msgstr "%​%1"
 
 #: package/contents/ui/main.qml:248
 #, kde-format
