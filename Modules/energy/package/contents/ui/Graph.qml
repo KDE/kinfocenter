@@ -146,7 +146,7 @@ Canvas
         // Draw the X value texts
         c.textAlign = "center"
         c.lineWidth = 1
-        c.strokeStyle = 'rgba(0, 0, 0, 0.15)'
+        c.strokeStyle = 'rgba(%1, %2, %3, 0.15)'.arg(palette.text.r * 255).arg(palette.text.g * 255).arg(palette.text.b * 255)
 
         var xDivisions = xDuration / xDivisionWidth * 1000
         var xGridDistance = plotWidth / xDivisions
