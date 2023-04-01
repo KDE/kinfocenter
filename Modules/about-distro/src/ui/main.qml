@@ -169,24 +169,33 @@ KCM.SimpleKCM {
         }
     }
 
-    footer: QQC2.Control { // wrapping the footer to get control-style padding
-        contentItem: Kirigami.ActionToolBar {
-            flat: false
 
-            actions: [
-                Kirigami.Action {
-                    text: i18nc("@action:button", "Copy to Clipboard")
-                    icon.name: "edit-copy"
-                    onTriggered: kcm.copyToClipboard()
-                    shortcut: StandardKey.Copy
-                },
-                Kirigami.Action {
-                    visible: !kcm.isEnglish
-                    text: i18nc("@action:button", "Copy to Clipboard in English")
-                    icon.name: "edit-copy"
-                    onTriggered: kcm.copyToClipboardInEnglish()
-                }
-            ]
+    actions: [
+
+        Kirigami.Action {
+            visible: kcm.isEnglish
+
+            icon.name: "edit-copy"
+            text: i18nc("@action:button", "Copy")
+            onTriggered: kcm.copyToClipboard()
+        },
+
+        Kirigami.Action {
+            visible: !kcm.isEnglish
+
+            icon.name: "edit-copy"
+            text: i18nc("@action:button", "Copy")
+
+            Kirigami.Action {
+                text: i18nc("@action:button Copy...", "In current language")
+                onTriggered: kcm.copyToClipboard()
+                shortcut: StandardKey.Copy
+            }
+
+            Kirigami.Action {
+                text: i18nc("@action:button Copy...", "In English")
+                onTriggered: kcm.copyToClipboardInEnglish()
+            }
         }
-    }
+    ]
 }
