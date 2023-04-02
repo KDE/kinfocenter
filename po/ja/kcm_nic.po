@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmnic\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-19 02:06+0000\n"
+"POT-Creation-Date: 2023-04-02 02:07+0000\n"
 "PO-Revision-Date: 2007-06-24 23:00+0900\n"
 "Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -102,7 +102,7 @@ msgctxt "State of network card is disconnected"
 msgid "Down"
 msgstr "切断中"
 
-#: package/contents/ui/main.qml:75
+#: package/contents/ui/main.qml:70
 #, kde-format
 msgctxt "@action:button"
 msgid "Refresh"
