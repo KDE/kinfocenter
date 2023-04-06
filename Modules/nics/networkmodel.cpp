@@ -86,7 +86,9 @@ QList<NetworkModel::MyNIC *> findNICs();
 
 void NetworkModel::update()
 {
+    beginResetModel();
     m_nics = findNICs();
+    endResetModel();
 }
 
 // Convenience wrapper around sa_len being available or not.
