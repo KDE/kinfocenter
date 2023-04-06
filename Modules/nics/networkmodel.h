@@ -32,11 +32,10 @@ public:
     };
 
     explicit NetworkModel(QObject *parent = nullptr);
-    ~NetworkModel() override = default;
 
-    virtual QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
-    virtual QHash<int, QByteArray> roleNames() const override;
-    virtual int rowCount(const QModelIndex &parent = QModelIndex()) const override;
+    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
+    QHash<int, QByteArray> roleNames() const override;
+    int rowCount(const QModelIndex &parent = QModelIndex()) const override;
 
     Q_INVOKABLE void update();
 
