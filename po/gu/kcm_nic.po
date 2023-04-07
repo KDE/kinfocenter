@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmnic\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-02 02:07+0000\n"
+"POT-Creation-Date: 2023-04-07 02:03+0000\n"
 "PO-Revision-Date: 2010-12-22 14:58+0530\n"
 "Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
 "Language-Team: Gujarati\n"
@@ -18,14 +18,14 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: networkmodel.cpp:159
+#: networkmodel.cpp:161
 #, fuzzy, kde-format
 #| msgid "Point to Point"
 msgctxt "@item:intable Network type"
 msgid "Point to Point"
 msgstr "પોઇંટ થી પોઇંટ"
 
-#: networkmodel.cpp:166
+#: networkmodel.cpp:168
 #, fuzzy, kde-format
 #| msgctxt "@item:intext Mode of network card"
 #| msgid "Broadcast"
@@ -33,14 +33,14 @@ msgctxt "@item:intable Network type"
 msgid "Broadcast"
 msgstr "બ્રોડકાસ્ટ"
 
-#: networkmodel.cpp:173
+#: networkmodel.cpp:175
 #, fuzzy, kde-format
 #| msgid "Multicast"
 msgctxt "@item:intable Network type"
 msgid "Multicast"
 msgstr "મલ્ટીકાસ્ટ"
 
-#: networkmodel.cpp:180
+#: networkmodel.cpp:182
 #, fuzzy, kde-format
 #| msgid "Loopback"
 msgctxt "@item:intable Network type"

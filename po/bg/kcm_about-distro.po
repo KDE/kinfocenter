@@ -188,31 +188,3 @@ msgstr "Версия на KDE Plasma:"
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ":"
-
-#~ msgctxt "@action:button launches kinfocenter from systemsettings"
-#~ msgid "Show More Information"
-#~ msgstr "Показване на повече информация"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Светослав Стефанов"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "svetlisashkov@yahoo.com"
-
-#~ msgctxt "@title"
-#~ msgid "About this System"
-#~ msgstr "За системата"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Copyright 2012-2020 Harald Sitter"
-#~ msgstr "Copyright 2012-2020 Harald Sitter"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Harald Sitter"
-#~ msgstr "Harald Sitter"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Author"
-#~ msgstr "Автор"

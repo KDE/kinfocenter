@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmnic\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-02 02:07+0000\n"
+"POT-Creation-Date: 2023-04-07 02:03+0000\n"
 "PO-Revision-Date: 2020-09-27 23:22+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -15,25 +15,25 @@ msgstr ""
 "X-POFile-IgnoreConsistency: Type\n"
 "X-POFile-IgnoreConsistency: Name\n"
 
-#: networkmodel.cpp:159
+#: networkmodel.cpp:161
 #, kde-format
 msgctxt "@item:intable Network type"
 msgid "Point to Point"
 msgstr "Ponto-a-Ponto"
 
-#: networkmodel.cpp:166
+#: networkmodel.cpp:168
 #, kde-format
 msgctxt "@item:intable Network type"
 msgid "Broadcast"
 msgstr "Difusão"
 
-#: networkmodel.cpp:173
+#: networkmodel.cpp:175
 #, kde-format
 msgctxt "@item:intable Network type"
 msgid "Multicast"
 msgstr "Difusão"
 
-#: networkmodel.cpp:180
+#: networkmodel.cpp:182
 #, kde-format
 msgctxt "@item:intable Network type"
 msgid "Loopback"

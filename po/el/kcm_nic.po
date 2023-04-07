@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-02 02:07+0000\n"
+"POT-Creation-Date: 2023-04-07 02:03+0000\n"
 "PO-Revision-Date: 2020-09-27 10:08+0300\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -19,25 +19,25 @@ msgstr ""
 "X-Generator: Lokalize 20.04.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: networkmodel.cpp:159
+#: networkmodel.cpp:161
 #, kde-format
 msgctxt "@item:intable Network type"
 msgid "Point to Point"
 msgstr "Δισημειακό"
 
-#: networkmodel.cpp:166
+#: networkmodel.cpp:168
 #, kde-format
 msgctxt "@item:intable Network type"
 msgid "Broadcast"
 msgstr "Αναμετάδοση"
 
-#: networkmodel.cpp:173
+#: networkmodel.cpp:175
 #, kde-format
 msgctxt "@item:intable Network type"
 msgid "Multicast"
 msgstr "Πολλαπλή αναμετάδοση"
 
-#: networkmodel.cpp:180
+#: networkmodel.cpp:182
 #, kde-format
 msgctxt "@item:intable Network type"
 msgid "Loopback"

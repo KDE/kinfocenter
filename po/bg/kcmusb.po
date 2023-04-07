@@ -442,34 +442,3 @@ msgstr "<tr><td><i>Канали</i></td><td>%1</td></tr>"
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
 msgstr "<tr><td><i>Макс. размер на пакета</i></td><td>%1</td></tr>"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Радостин Раднев"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "radnev@yahoo.com"
-
-#~ msgid ""
-#~ "This module allows you to see the devices attached to your USB bus(es)."
-#~ msgstr ""
-#~ "От тук може да видите устройствата, които са свързани към USB портoвете."
-
-#~ msgid "kcmusb"
-#~ msgstr "kcmusb"
-
-#~ msgid "USB Devices"
-#~ msgstr "Устройства USB"
-
-#~ msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
-#~ msgstr "(c) 2001 Matthias Hoelzer-Kluepfel"
-
-#~ msgid "Matthias Hoelzer-Kluepfel"
-#~ msgstr "Matthias Hoelzer-Kluepfel"
-
-#~ msgid "Leo Savernik"
-#~ msgstr "Leo Savernik"
-
-#~ msgid "Live Monitoring of USB Bus"
-#~ msgstr "Live Monitoring of USB Bus"

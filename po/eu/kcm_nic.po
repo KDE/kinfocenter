@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-02 02:07+0000\n"
+"POT-Creation-Date: 2023-04-07 02:03+0000\n"
 "PO-Revision-Date: 2020-11-15 16:54+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -22,25 +22,25 @@ msgstr ""
 "X-Generator: Lokalize 20.08.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: networkmodel.cpp:159
+#: networkmodel.cpp:161
 #, kde-format
 msgctxt "@item:intable Network type"
 msgid "Point to Point"
 msgstr "Puntutik puntura"
 
-#: networkmodel.cpp:166
+#: networkmodel.cpp:168
 #, kde-format
 msgctxt "@item:intable Network type"
 msgid "Broadcast"
 msgstr "Difusioa"
 
-#: networkmodel.cpp:173
+#: networkmodel.cpp:175
 #, kde-format
 msgctxt "@item:intable Network type"
 msgid "Multicast"
 msgstr "Multidifusioa"
 
-#: networkmodel.cpp:180
+#: networkmodel.cpp:182
 #, kde-format
 msgctxt "@item:intable Network type"
 msgid "Loopback"

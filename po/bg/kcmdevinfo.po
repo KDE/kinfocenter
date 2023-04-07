@@ -507,20 +507,3 @@ msgstr "Състояние на заряда: "
 #, kde-format
 msgid "Charge Percent: "
 msgstr "Процент на зареждане: "
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Ясен Праматаров"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "yasen@lindeas.com"
-
-#~ msgid "kcmdevinfo"
-#~ msgstr "kcmdevinfo"
-
-#~ msgid "Device Viewer"
-#~ msgstr "Преглед на устройства"
-
-#~ msgid "(c) 2010 David Hubner"
-#~ msgstr "(c) 2010 David Hubner"

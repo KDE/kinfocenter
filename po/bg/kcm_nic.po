@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmnic\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-02 02:07+0000\n"
+"POT-Creation-Date: 2023-04-07 02:03+0000\n"
 "PO-Revision-Date: 2022-05-21 07:07+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
@@ -18,25 +18,25 @@ msgstr ""
 "X-Generator: Lokalize 22.04.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: networkmodel.cpp:159
+#: networkmodel.cpp:161
 #, kde-format
 msgctxt "@item:intable Network type"
 msgid "Point to Point"
 msgstr "Point-to-Point"
 
-#: networkmodel.cpp:166
+#: networkmodel.cpp:168
 #, kde-format
 msgctxt "@item:intable Network type"
 msgid "Broadcast"
 msgstr "Broadcast"
 
-#: networkmodel.cpp:173
+#: networkmodel.cpp:175
 #, kde-format
 msgctxt "@item:intable Network type"
 msgid "Multicast"
 msgstr "Multicast"
 
-#: networkmodel.cpp:180
+#: networkmodel.cpp:182
 #, kde-format
 msgctxt "@item:intable Network type"
 msgid "Loopback"
@@ -95,41 +95,3 @@ msgstr "Изключено"
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr "Обновяване"
-
-#~ msgid "Network Interfaces"
-#~ msgstr "Мрежов интерфейс"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Ясен Праматаров"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "yasen@lindeas.com"
-
-#~ msgid "kcm_nic"
-#~ msgstr "kcm_nic"
-
-#~ msgctxt "@title:window"
-#~ msgid "Network Interfaces"
-#~ msgstr "Мрежов интерфейс"
-
-#~ msgctxt "@info"
-#~ msgid "(c) 2001 - 2002 Alexander Neundorf"
-#~ msgstr "(c) 2001 - 2002 Alexander Neundorf"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Alexander Neundorf"
-#~ msgstr "Alexander Neundorf"
-
-#~ msgctxt "@info:credit"
-#~ msgid "creator"
-#~ msgstr "създател"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Carl Schwan"
-#~ msgstr "Carl Schwan"
-
-#~ msgctxt "@info:credit"
-#~ msgid "developer"
-#~ msgstr "разработчик"
