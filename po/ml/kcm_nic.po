@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmnic trunk\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-14 00:46+0000\n"
+"POT-Creation-Date: 2023-04-07 02:38+0000\n"
 "PO-Revision-Date: 2019-12-12 22:51+0000\n"
 "Last-Translator: Vivek KJ Pazhedath <vivekkj2004@gmail.com>\n"
 "Language-Team: SMC <smc.org.in>\n"
@@ -27,14 +27,14 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "shijualexonline@gmail.com,snalledam@dataone.in,vivekkj2004@gmail.com"
 
-#: networkmodel.cpp:159
+#: networkmodel.cpp:161
 #, fuzzy, kde-format
 #| msgid "Point to Point"
 msgctxt "@item:intable Network type"
 msgid "Point to Point"
 msgstr "പോയിന്റ് ടു പോയിന്റ്(ബിന്ദുവില്‍ നിന്ന് ബിന്ദുവിലേക്ക്)"
 
-#: networkmodel.cpp:166
+#: networkmodel.cpp:168
 #, fuzzy, kde-format
 #| msgctxt "@item:intext Mode of network card"
 #| msgid "Broadcast"
@@ -42,14 +42,14 @@ msgctxt "@item:intable Network type"
 msgid "Broadcast"
 msgstr "സംപ്രേക്ഷണം"
 
-#: networkmodel.cpp:173
+#: networkmodel.cpp:175
 #, fuzzy, kde-format
 #| msgid "Multicast"
 msgctxt "@item:intable Network type"
 msgid "Multicast"
 msgstr "മള്‍ട്ടികാസ്റ്റ്"
 
-#: networkmodel.cpp:180
+#: networkmodel.cpp:182
 #, fuzzy, kde-format
 #| msgid "Loopback"
 msgctxt "@item:intable Network type"

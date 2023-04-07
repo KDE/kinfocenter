@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmnic\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-14 00:46+0000\n"
+"POT-Creation-Date: 2023-04-07 02:38+0000\n"
 "PO-Revision-Date: 2007-06-24 23:00+0900\n"
 "Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -30,14 +30,14 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "shinobo@leo.bekkoame.ne.jp"
 
-#: networkmodel.cpp:159
+#: networkmodel.cpp:161
 #, fuzzy, kde-format
 #| msgid "Point to Point"
 msgctxt "@item:intable Network type"
 msgid "Point to Point"
 msgstr "ポイント to ポイント"
 
-#: networkmodel.cpp:166
+#: networkmodel.cpp:168
 #, fuzzy, kde-format
 #| msgctxt "@item:intext Mode of network card"
 #| msgid "Broadcast"
@@ -45,14 +45,14 @@ msgctxt "@item:intable Network type"
 msgid "Broadcast"
 msgstr "ブロードキャスト"
 
-#: networkmodel.cpp:173
+#: networkmodel.cpp:175
 #, fuzzy, kde-format
 #| msgid "Multicast"
 msgctxt "@item:intable Network type"
 msgid "Multicast"
 msgstr "マルチキャスト"
 
-#: networkmodel.cpp:180
+#: networkmodel.cpp:182
 #, fuzzy, kde-format
 #| msgid "Loopback"
 msgctxt "@item:intable Network type"

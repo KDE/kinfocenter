@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmnic\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-14 00:46+0000\n"
+"POT-Creation-Date: 2023-04-07 02:38+0000\n"
 "PO-Revision-Date: 2017-05-16 06:53-0400\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
@@ -28,14 +28,14 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde-l10n-he@kde.org"
 
-#: networkmodel.cpp:159
+#: networkmodel.cpp:161
 #, fuzzy, kde-format
 #| msgid "Point to Point"
 msgctxt "@item:intable Network type"
 msgid "Point to Point"
 msgstr "נקודה לנקודה"
 
-#: networkmodel.cpp:166
+#: networkmodel.cpp:168
 #, fuzzy, kde-format
 #| msgctxt "@item:intext Mode of network card"
 #| msgid "Broadcast"
@@ -43,14 +43,14 @@ msgctxt "@item:intable Network type"
 msgid "Broadcast"
 msgstr "שידור"
 
-#: networkmodel.cpp:173
+#: networkmodel.cpp:175
 #, fuzzy, kde-format
 #| msgid "Multicast"
 msgctxt "@item:intable Network type"
 msgid "Multicast"
 msgstr "שידור"
 
-#: networkmodel.cpp:180
+#: networkmodel.cpp:182
 #, fuzzy, kde-format
 #| msgid "Loopback"
 msgctxt "@item:intable Network type"
