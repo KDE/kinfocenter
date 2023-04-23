@@ -800,7 +800,7 @@
 <para
 ><command
 >showmount</command
-> fait partie de l'ensemble des  logiciels &NFS;, acronyme pour « Network File System », soit système de fichiers en réseau. C'est la méthode habituelle sous &UNIX; pour partager des dossiers sur un réseau. Dans ce cas, la sortie de <command
+> fait partie de l'ensemble des logiciels &NFS;, acronyme pour « Network File System », soit système de fichiers en réseau. C'est la méthode habituelle sous &UNIX; pour partager des dossiers sur un réseau. Dans ce cas, la sortie de <command
 >showmount</command
 > <option
 >-a localhost</option
@@ -873,7 +873,7 @@
 >). Si ce niveau est défini à 1, &Samba; n'écrit dans le journal que les informations de connexion d'une personne et de sa déconnexion de votre machine. Si le niveau est défini à 2, il consigne aussi toute ouverture et fermeture de fichier. Si le niveau d'historique est défini au delà de 2, encore plus de renseignements sont enregistrés.</para>
 
 <para
->Si vous voulez savoir qui accède à votre machine et quels sont les fichiers accédés, vous devez alors paramétrer le niveau d'historique du journal à 2 et créer régulièrement un nouveau journal &Samba;  (&pex; définir une tâche <command
+>Si vous voulez savoir qui accède à votre machine et quels sont les fichiers accédés, vous devez alors paramétrer le niveau d'historique du journal à 2 et créer régulièrement un nouveau journal &Samba; (&pex; définir une tâche <command
 >cron</command
 > qui va déplacer une fois par semaine votre journal &Samba;  courant dans un autre dossier ou quelque chose comme cela). Sinon, votre journal &Samba;  peut devenir très gros.</para>
 
