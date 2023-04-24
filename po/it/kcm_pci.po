@@ -4,7 +4,7 @@
 # Federico Zenith <zenith@chemeng.ntnu.no>, 2008.
 # Luciano Montanaro <mikelima@cirulla.net>, 2008.
 # Federico Zenith <federico.zenith@member.fsf.org>, 2009, 2010, 2012.
-# Paolo Zamponi <zapaolo@email.it>, 2016, 2018, 2019, 2021.
+# Paolo Zamponi <feus73@gmail.com>, 2016, 2018, 2019, 2021.
 #
 msgid ""
 msgstr ""
