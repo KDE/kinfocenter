@@ -67,7 +67,7 @@ Kirigami.AbstractListItem {
 
         QQC2.ToolButton {
             action: Kirigami.Action {
-                iconName: "document-properties"
+                icon.name: "document-properties"
                 tooltip: xi18nc("@info:tooltip", "Open folder properties to change share settings")
                 displayHint: Kirigami.Action.DisplayHint.IconOnly
                 onTriggered: view.model.showPropertiesDialog(model.row)

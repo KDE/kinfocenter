@@ -69,7 +69,7 @@ KCM.AbstractKCM {
                     action: Kirigami.Action {
                         // TODO document-open-remote is actually pretty cool but lacks a visualization for not connected
                         //   emblem icons are kind of a crutch
-                        iconName: ROLE_Accessible ? "emblem-mounted" : "emblem-unmounted"
+                        icon.name: ROLE_Accessible ? "emblem-mounted" : "emblem-unmounted"
                         onTriggered: {
                             // Append a slash as openurlexternally fucks with perfectly valid urls and turns them into
                             // invalid ones (file:///srv => file://srv) that KIO then thinks is a windows UNC path
