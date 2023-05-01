@@ -17,7 +17,7 @@ KCM.SimpleKCM {
     id: root
 
     // bugger off with all your buttons, we don't need any!
-    ConfigModule.buttons: KCM.ConfigModule.NoAdditionalButton
+    ConfigModule.buttons: ConfigModule.NoAdditionalButton
 
     implicitWidth: Kirigami.Units.gridUnit * 20
     implicitHeight: Kirigami.Units.gridUnit * 20
