@@ -3,7 +3,6 @@
     SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
 */
 
-#include <KLocalizedString>
 #include <KPluginFactory>
 #include <KQuickConfigModule>
 

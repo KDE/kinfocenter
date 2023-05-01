@@ -17,6 +17,8 @@
 #include <KCoreAddons>
 #include <KLocalizedString>
 #include <KOSRelease>
+#include <KPluginFactory>
+#include <KQuickConfigModule>
 #include <KSharedConfig>
 
 #include "CPUEntry.h"
@@ -29,10 +31,6 @@
 #include "ServiceRunner.h"
 #include "ThirdPartyEntry.h"
 #include "Version.h"
-
-#include <KLocalizedString>
-#include <KPluginFactory>
-#include <KQuickConfigModule>
 
 class EntryModel : public QAbstractListModel
 {

@@ -12,7 +12,6 @@
 #include <QTimer>
 #include <QTreeWidget>
 
-
 #include <KLocalizedString>
 #include <KPluginFactory>
 
@@ -33,8 +32,7 @@ USBViewer::USBViewer(QObject *parent, const KPluginMetaData &data)
 
     _devices = new QTreeWidget(splitter);
 
-    QStringList headers;
-    headers << i18n("Device");
+    QStringList headers{i18n("Device")};
     _devices->setHeaderLabels(headers);
     _devices->setRootIsDecorated(true);
     _devices->header()->hide();

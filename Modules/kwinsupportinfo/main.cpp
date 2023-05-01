@@ -4,7 +4,6 @@
     SPDX-FileCopyrightText: 2022 Nate Graham <nate@kde.org>
 */
 
-#include <KLocalizedString>
 #include <KPluginFactory>
 #include <KQuickConfigModule>
 #include <QLibraryInfo>

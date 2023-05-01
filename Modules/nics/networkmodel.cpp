@@ -21,11 +21,11 @@
 #include <array>
 
 #include <KLocalizedString>
+#include <KPluginFactory>
 
 #include <QDebug>
 #include <QHash>
 
-#include <KPluginFactory>
 #include <net/if.h>
 #include <sys/ioctl.h>
 

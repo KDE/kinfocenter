@@ -4,7 +4,6 @@
  *   SPDX-License-Identifier: GPL-2.0-or-later
  */
 
-#include <KPluginFactory>
 #include <QDebug>
 #include <QStandardPaths>
 
@@ -17,7 +16,7 @@
 #include <Solid/Device>
 #include <Solid/DeviceNotifier>
 
-#include <KLocalizedString>
+#include <KPluginFactory>
 #include <KQuickConfigModule>
 
 #include "batterymodel.h"

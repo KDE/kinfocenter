@@ -4,7 +4,6 @@
     SPDX-FileCopyrightText: 2022 Tobias C. Berner <tcberner@FreeBSD.org>
 */
 
-#include <KLocalizedString>
 #include <KPluginFactory>
 #include <KQuickConfigModule>
 
