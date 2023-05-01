@@ -17,14 +17,10 @@ public:
     explicit KCMFirmwareSecurity(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
         : KQuickConfigModule(parent, data, args)
     {
-        KPackage::Package package = KPackage::PackageLoader::self()->loadPackage(QStringLiteral("KPackage/GenericQML"));
-        package.setDefaultPackageRoot(QStringLiteral("kpackage/kcms"));
-        package.setPath(data.pluginId());
-
-        auto outputContext = new CommandOutputContext({QStringLiteral("fwupdmgr"), QStringLiteral("aha")},
-                                                      QStringLiteral("/bin/sh"),
-                                                      {package.path() + QStringLiteral("contents/code/fwupdmgr.sh")},
-                                                      parent);
+        const QString executable = QStandardPaths::locate(QStandardPaths::GenericDataLocation,
+                                                          QStringLiteral("kinfocenter/firmware_security/fwupdmgr.sh"),
+                                                          QStandardPaths::LocateFile);
+        auto outputContext = new CommandOutputContext({QStringLiteral("fwupdmgr"), QStringLiteral("aha")}, QStringLiteral("/bin/sh"), {executable}, parent);
         qmlRegisterSingletonInstance("org.kde.kinfocenter.firmware_security.private", 1, 0, "InfoOutputContext", outputContext);
     }
 };
