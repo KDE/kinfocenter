@@ -5,19 +5,24 @@
  * SPDX-License-Identifier: GPL-2.0-or-later
  */
 
-#include "nic.h"
-
 #include <KLocalizedString>
 #include <KPluginFactory>
+#include <KQuickConfigModule>
 
 #include "networkmodel.h"
 
-K_PLUGIN_CLASS_WITH_JSON(KCMNic, "kcm_nic.json")
-
-KCMNic::KCMNic(QObject *parent, const KPluginMetaData &data, const QVariantList &list)
-    : KQuickConfigModule(parent, data, list)
+class KCMNic : public KQuickConfigModule
 {
-    qmlRegisterType<NetworkModel>("org.kde.kinfocenter.nic.private", 1, 0, "NetworkModel");
-}
+    Q_OBJECT
+
+public:
+    explicit KCMNic(QObject *parent, const KPluginMetaData &data)
+        : KQuickConfigModule(parent, data)
+    {
+        qmlRegisterType<NetworkModel>("org.kde.kinfocenter.nic.private", 1, 0, "NetworkModel");
+    }
+};
+
+K_PLUGIN_CLASS_WITH_JSON(KCMNic, "kcm_nic.json")
 
 #include "nic.moc"

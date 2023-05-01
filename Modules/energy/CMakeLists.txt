@@ -5,7 +5,6 @@ set(kcm_energyinfo_SRCS
     batterymodel.cpp
     batterymodel.h
     kcm.cpp
-    kcm.h
     statisticsprovider.cpp
     statisticsprovider.h
 )

@@ -4,8 +4,6 @@
  *   SPDX-License-Identifier: GPL-2.0-or-later
  */
 
-#include "kcm.h"
-
 #include <KPluginFactory>
 #include <QDebug>
 #include <QStandardPaths>
@@ -20,21 +18,37 @@
 #include <Solid/DeviceNotifier>
 
 #include <KLocalizedString>
+#include <KQuickConfigModule>
 
 #include "batterymodel.h"
 #include "statisticsprovider.h"
 
-K_PLUGIN_CLASS_WITH_JSON(KCMEnergyInfo, "kcm_energyinfo.json")
-
-KCMEnergyInfo::KCMEnergyInfo(QObject *parent, const KPluginMetaData &data)
-    : KQuickConfigModule(parent, data)
+class KCMEnergyInfo : public KQuickConfigModule
 {
-    qmlRegisterAnonymousType<BatteryModel>("org.kde.kinfocenter.energy.private", 1);
+    Q_OBJECT
+    Q_PROPERTY(BatteryModel *batteries READ batteries CONSTANT)
+public:
+    explicit KCMEnergyInfo(QObject *parent, const KPluginMetaData &data)
+        : KQuickConfigModule(parent, data)
+    {
+        qmlRegisterAnonymousType<BatteryModel>("org.kde.kinfocenter.energy.private", 1);
 
-    qmlRegisterType<StatisticsProvider>("org.kde.kinfocenter.energy.private", 1, 0, "HistoryModel");
-    qmlRegisterUncreatableType<BatteryModel>("org.kde.kinfocenter.energy.private", 1, 0, "BatteryModel", QStringLiteral("Use BatteryModel"));
+        qmlRegisterType<StatisticsProvider>("org.kde.kinfocenter.energy.private", 1, 0, "HistoryModel");
+        qmlRegisterUncreatableType<BatteryModel>("org.kde.kinfocenter.energy.private", 1, 0, "BatteryModel", QStringLiteral("Use BatteryModel"));
 
-    m_batteries = new BatteryModel(this);
-}
+        m_batteries = new BatteryModel(this);
+    }
+
+    BatteryModel *batteries() const
+    {
+        return m_batteries;
+    }
+
+private:
+    BatteryModel *m_batteries = nullptr;
+};
+
+Q_DECLARE_METATYPE(QList<QPointF>)
+K_PLUGIN_CLASS_WITH_JSON(KCMEnergyInfo, "kcm_energyinfo.json")
 
 #include "kcm.moc"
