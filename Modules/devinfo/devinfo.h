@@ -19,7 +19,7 @@ class DevInfoPlugin : public KCModule
     Q_OBJECT
 
 public:
-    explicit DevInfoPlugin(QObject *parent, const KPluginMetaData &data, const QVariantList &args);
+    explicit DevInfoPlugin(QObject *parent, const KPluginMetaData &data);
     ~DevInfoPlugin() override;
 
     void updateStatus(const QString &uid);

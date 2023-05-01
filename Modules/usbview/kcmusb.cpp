@@ -20,8 +20,8 @@
 
 K_PLUGIN_CLASS_WITH_JSON(USBViewer, "kcmusb.json")
 
-USBViewer::USBViewer(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
-    : KCModule(parent, data, args)
+USBViewer::USBViewer(QObject *parent, const KPluginMetaData &data)
+    : KCModule(parent, data)
 {
     QHBoxLayout *mainLayout = new QHBoxLayout(widget());
     mainLayout->setContentsMargins(0, 0, 0, 0);

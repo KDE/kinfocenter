@@ -17,7 +17,7 @@ class KCMEnergyInfo : public KQuickConfigModule
     Q_PROPERTY(BatteryModel *batteries READ batteries CONSTANT)
 
 public:
-    explicit KCMEnergyInfo(QObject *parent, const KPluginMetaData &data, const QVariantList &args);
+    explicit KCMEnergyInfo(QObject *parent, const KPluginMetaData &data);
     ~KCMEnergyInfo() override = default;
 
     BatteryModel *batteries() const

@@ -14,8 +14,8 @@ class KCMFirmwareSecurity : public KQuickConfigModule
 {
     Q_OBJECT
 public:
-    explicit KCMFirmwareSecurity(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
-        : KQuickConfigModule(parent, data, args)
+    explicit KCMFirmwareSecurity(QObject *parent, const KPluginMetaData &data)
+        : KQuickConfigModule(parent, data)
     {
         const QString executable = QStandardPaths::locate(QStandardPaths::GenericDataLocation,
                                                           QStringLiteral("kinfocenter/firmware_security/fwupdmgr.sh"),

@@ -14,12 +14,12 @@ class SambaModule : public KQuickConfigModule
 {
     Q_OBJECT
 public:
-    SambaModule(QObject *parent, const KPluginMetaData &data, const QVariantList &list = QVariantList());
+    SambaModule(QObject *parent, const KPluginMetaData &data);
     ~SambaModule() override = default;
 };
 
-SambaModule::SambaModule(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
-    : KQuickConfigModule(parent, data, args)
+SambaModule::SambaModule(QObject *parent, const KPluginMetaData &data)
+    : KQuickConfigModule(parent, data)
 {
     qmlRegisterType<SmbMountModel>("org.kde.kinfocenter.samba", 1, 0, "MountModel");
     qmlRegisterType<KSambaShareModel>("org.kde.kinfocenter.samba", 1, 0, "ShareModel");

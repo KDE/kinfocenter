@@ -20,8 +20,8 @@
 
 K_PLUGIN_CLASS_WITH_JSON(DevInfoPlugin, "devinfo.json")
 
-DevInfoPlugin::DevInfoPlugin(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
-    : KCModule(parent, data, args)
+DevInfoPlugin::DevInfoPlugin(QObject *parent, const KPluginMetaData &data)
+    : KCModule(parent, data)
 {
     // Layout
     layout = new QGridLayout(widget());

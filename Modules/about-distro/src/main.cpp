@@ -95,8 +95,8 @@ class KCMAboutSystem : public KQuickConfigModule
     Q_OBJECT
     Q_DISABLE_COPY_MOVE(KCMAboutSystem) // rule of 5
 public:
-    explicit KCMAboutSystem(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
-        : KQuickConfigModule(parent, data, args)
+    explicit KCMAboutSystem(QObject *parent, const KPluginMetaData &data)
+        : KQuickConfigModule(parent, data)
     {
         qmlRegisterType<ServiceRunner>("org.kde.kinfocenter.about_distro.private", 1, 0, "ServiceRunner");
 

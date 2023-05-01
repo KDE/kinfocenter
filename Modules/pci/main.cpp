@@ -16,8 +16,8 @@ class KCMXServer : public KQuickConfigModule
 {
     Q_OBJECT
 public:
-    explicit KCMXServer(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
-        : KQuickConfigModule(parent, data, args)
+    explicit KCMXServer(QObject *parent, const KPluginMetaData &data)
+        : KQuickConfigModule(parent, data)
     {
         auto outputContext = new CommandOutputContext(QStringLiteral(PCI_BACKEND), {QStringLiteral(PCI_BACKEND_ARGUMENTS)}, parent);
         qmlRegisterSingletonInstance("org.kde.kinfocenter.pci.private", 1, 0, "InfoOutputContext", outputContext);

@@ -13,8 +13,8 @@ class KCMInterrupts : public KQuickConfigModule
 {
     Q_OBJECT
 public:
-    explicit KCMInterrupts(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
-        : KQuickConfigModule(parent, data, args)
+    explicit KCMInterrupts(QObject *parent, const KPluginMetaData &data)
+        : KQuickConfigModule(parent, data)
     {
         auto outputContext =
 #if defined(Q_OS_FREEBSD)

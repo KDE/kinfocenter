@@ -13,8 +13,8 @@ class KCMXServer : public KQuickConfigModule
 {
     Q_OBJECT
 public:
-    explicit KCMXServer(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
-        : KQuickConfigModule(parent, data, args)
+    explicit KCMXServer(QObject *parent, const KPluginMetaData &data)
+        : KQuickConfigModule(parent, data)
     {
         auto outputContext = new CommandOutputContext(QStringLiteral("glxinfo"), {}, parent);
         qmlRegisterSingletonInstance("org.kde.kinfocenter.glx.private", 1, 0, "InfoOutputContext", outputContext);

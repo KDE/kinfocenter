@@ -26,8 +26,8 @@
 
 K_PLUGIN_CLASS_WITH_JSON(KCMEnergyInfo, "kcm_energyinfo.json")
 
-KCMEnergyInfo::KCMEnergyInfo(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
-    : KQuickConfigModule(parent, data, args)
+KCMEnergyInfo::KCMEnergyInfo(QObject *parent, const KPluginMetaData &data)
+    : KQuickConfigModule(parent, data)
 {
     qmlRegisterAnonymousType<BatteryModel>("org.kde.kinfocenter.energy.private", 1);
 
