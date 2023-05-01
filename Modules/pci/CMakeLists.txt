@@ -28,9 +28,5 @@ configure_file(backend.h.cmake backend.h)
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kcm_pci\")
 
-add_library(kcm_pci MODULE main.cpp)
+kinfocenter_add_kcm(kcm_pci main.cpp)
 target_link_libraries(kcm_pci KF6::CoreAddons KF6::KCMUtilsQuick KF6::I18n KInfoCenterInternal)
-
-install(TARGETS kcm_pci DESTINATION ${KDE_INSTALL_PLUGINDIR}/plasma/kcms/kinfocenter)
-
-kpackage_install_package(package kcm_pci kcms)

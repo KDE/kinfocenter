@@ -28,9 +28,8 @@ set(kcm_SRCS
     ThirdPartyEntry.h
 )
 
-kcoreaddons_add_plugin(kcm_about-distro SOURCES ${kcm_SRCS} INSTALL_NAMESPACE "plasma/kcms")
+kcmutils_add_qml_kcm(kcm_about-distro SOURCES ${kcm_SRCS} INSTALL_NAMESPACE "plasma/kcms")
 
-kcmutils_generate_desktop_file(kcm_about-distro)
 target_link_libraries(kcm_about-distro
     KF6::CoreAddons
     KF6::I18n
@@ -39,6 +38,5 @@ target_link_libraries(kcm_about-distro
     KF6::Solid
     KF6::Service
     KF6::KIOGui
-    KF6::AuthCore)
-
-kpackage_install_package(package kcm_about-distro kcms)
+    KF6::AuthCore
+)

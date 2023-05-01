@@ -1,8 +1,6 @@
 # KI18N Translation Domain for this library
 add_definitions(-DTRANSLATION_DOMAIN=\"kcmusb\")
 
-########### next target ###############
-
 set(kcm_usb_PART_SRCS kcmusb.cpp
     kcmusb.h
     usbdb.cpp

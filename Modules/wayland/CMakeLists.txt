@@ -9,9 +9,5 @@ set_package_properties(wayland-info PROPERTIES
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kcm_wayland\")
 
-add_library(kcm_wayland MODULE main.cpp)
+kinfocenter_add_kcm(kcm_wayland main.cpp)
 target_link_libraries(kcm_wayland KF6::CoreAddons KF6::KCMUtilsQuick KF6::I18n KInfoCenterInternal)
-
-install(TARGETS kcm_wayland DESTINATION ${KDE_INSTALL_PLUGINDIR}/plasma/kcms/kinfocenter)
-
-kpackage_install_package(package kcm_wayland kcms)

@@ -10,7 +10,7 @@ set(kcm_energyinfo_SRCS
     statisticsprovider.h
 )
 
-kcoreaddons_add_plugin(kcm_energyinfo SOURCES ${kcm_energyinfo_SRCS} INSTALL_NAMESPACE "plasma/kcms")
+kcmutils_add_qml_kcm(kcm_energyinfo SOURCES ${kcm_energyinfo_SRCS} INSTALL_NAMESPACE "plasma/kcms")
 
 target_link_libraries(kcm_energyinfo
   Qt::DBus
@@ -22,5 +22,3 @@ target_link_libraries(kcm_energyinfo
   KF6::Solid
   KF6::KCMUtilsQuick
 )
-
-kpackage_install_package(package kcm_energyinfo kcms)

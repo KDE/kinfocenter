@@ -8,12 +8,7 @@ check_struct_has_member("struct sockaddr" "sa_len" "sys/socket.h" HAVE_STRUCT_SO
 
 configure_file(config-nic.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-nic.h)
 
-########### next target ###############
-set(kcm_nic_PART_SRCS
-    nic.cpp
-    networkmodel.cpp)
-
-kcoreaddons_add_plugin(kcm_nic SOURCES ${kcm_nic_PART_SRCS} INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
+kinfocenter_add_kcm(kcm_nic nic.cpp networkmodel.cpp)
 
 target_link_libraries(kcm_nic
     KF6::I18n
@@ -22,5 +17,3 @@ target_link_libraries(kcm_nic
     KF6::KCMUtilsQuick)
 
 target_compile_features(kcm_nic PUBLIC cxx_std_14)
-
-kpackage_install_package(package kcm_nic kcms)

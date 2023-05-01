@@ -41,6 +41,10 @@ find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
 
 ecm_find_qmlmodule(org.kde.kirigami 2.5)
 
+macro(kinfocenter_add_kcm target)
+    kcmutils_add_qml_kcm(${target} DISABLE_DESKTOP_FILE_GENERATION SOURCES ${ARGN} INSTALL_NAMESPACE plasma/kcms/kinfocenter)
+endmacro()
+
 find_package(SystemSettings QUIET)
 set_package_properties(SystemSettings PROPERTIES
     DESCRIPTION "Plasma's SystemSettings"

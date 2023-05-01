@@ -6,9 +6,5 @@ set_package_properties(lscpu PROPERTIES TYPE RUNTIME)
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kcm_cpu\")
 
-add_library(kcm_cpu MODULE main.cpp)
+kinfocenter_add_kcm(kcm_cpu main.cpp)
 target_link_libraries(kcm_cpu KF6::CoreAddons KF6::KCMUtilsQuick KF6::I18n KInfoCenterInternal)
-
-install(TARGETS kcm_cpu DESTINATION ${KDE_INSTALL_PLUGINDIR}/plasma/kcms/kinfocenter)
-
-kpackage_install_package(package kcm_cpu kcms)
