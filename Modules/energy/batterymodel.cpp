@@ -32,7 +32,7 @@ BatteryModel::BatteryModel(QObject *parent)
             m_batteries.append(device);
             endInsertRows();
 
-            emit countChanged();
+            Q_EMIT countChanged();
         }
     });
     connect(Solid::DeviceNotifier::instance(), &Solid::DeviceNotifier::deviceRemoved, this, [this](const QString &udi) {
@@ -49,7 +49,7 @@ BatteryModel::BatteryModel(QObject *parent)
         m_batteries.removeAt(index);
         endRemoveRows();
 
-        emit countChanged();
+        Q_EMIT countChanged();
     });
 }
 

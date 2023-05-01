@@ -21,7 +21,7 @@ public:
 private:
     void connectToNicSignals();
 
-signals:
+Q_SIGNALS:
     void nicActivatedOrDisconnected();
 
 public slots:

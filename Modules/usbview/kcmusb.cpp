@@ -105,7 +105,8 @@ void USBViewer::refresh()
     while (found) {
         found = false;
 
-        foreach (USBDevice *usbDevice, USBDevice::devices()) {
+        const auto devices = USBDevice::devices();
+        for (USBDevice *usbDevice : devices) {
             if (usbDevice->level() == level) {
                 quint32 k = key(*usbDevice);
                 if (level == 0) {

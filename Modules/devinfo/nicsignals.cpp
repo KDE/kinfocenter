@@ -21,7 +21,7 @@ void NicSignals::connectToNicSignals()
 {
     const QList<Solid::Control::NetworkInterface *> nicList = Solid::Control::NetworkManager::networkInterfaces();
 
-    foreach (const Solid::Control::NetworkInterface *nic, nicList) {
+    for (const Solid::Control::NetworkInterface *nic : nicList) {
         connect(nic, SIGNAL(connectionStateChanged(int, int, int)), this, SLOT(nicChangedSignal(int, int, int)));
     }
 }
@@ -31,6 +31,6 @@ void NicSignals::nicChangedSignal(int ns, int os, int reason)
     Q_UNUSED(os);
     Q_UNUSED(reason);
     if (ns == 8 || ns == 2) {
-        emit nicActivatedOrDisconnected();
+        Q_EMIT nicActivatedOrDisconnected();
     }
 }

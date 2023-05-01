@@ -197,7 +197,7 @@ void USBDevice::collectDataSys(libusb_device *dev)
 
 USBDevice *USBDevice::find(int bus, int device)
 {
-    foreach (USBDevice *usbDevice, _devices) {
+    for (USBDevice *usbDevice : std::as_const(_devices)) {
         if (usbDevice->bus() == bus && usbDevice->device() == device)
             return usbDevice;
     }

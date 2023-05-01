@@ -59,7 +59,7 @@ public:
     {
         const QList<Solid::Device> list = Solid::Device::listFromType(type, parentUid);
 
-        foreach (const Solid::Device &dev, list) {
+        for (const Solid::Device &dev : list) {
             new IFace(treeParent, dev);
         }
     }
