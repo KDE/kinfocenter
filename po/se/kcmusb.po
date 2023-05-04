@@ -444,20 +444,3 @@ msgstr "<tr><td><i>Kánalat</i></td><td>%1</td></tr>"
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
 msgstr "<tr><td><i>Stuoramus páhkkasturrodat</i></td><td>%1</td></tr>"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Nils Johan Utsi,Børre Gaup"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "njutsi@frisurf.no,boerre@skolelinux.no"
-
-#~ msgid "kcmusb"
-#~ msgstr "kcmusb"
-
-#~ msgid "USB Devices"
-#~ msgstr "USB ovttadagat"
-
-#~ msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
-#~ msgstr "© 2001 Mattias Hoelzer-Kluepfel"
