@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmnic\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-07 02:03+0000\n"
+"POT-Creation-Date: 2023-05-05 02:14+0000\n"
 "PO-Revision-Date: 2022-03-11 11:50+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -43,55 +43,55 @@ msgctxt "@item:intable Network type"
 msgid "Loopback"
 msgstr "Döngü Sınaması"
 
-#: package/contents/ui/main.qml:29
+#: ui/main.qml:29
 #, kde-format
 msgctxt "@label"
 msgid "Name:"
 msgstr "Ad:"
 
-#: package/contents/ui/main.qml:33
+#: ui/main.qml:33
 #, kde-format
 msgctxt "@label"
 msgid "Address:"
 msgstr "Adres:"
 
-#: package/contents/ui/main.qml:37
+#: ui/main.qml:37
 #, kde-format
 msgctxt "@label"
 msgid "Network Mask:"
 msgstr "Ağ Maskesi:"
 
-#: package/contents/ui/main.qml:41
+#: ui/main.qml:41
 #, kde-format
 msgctxt "@label"
 msgid "Type:"
 msgstr "Tür:"
 
-#: package/contents/ui/main.qml:45
+#: ui/main.qml:45
 #, kde-format
 msgctxt "@label"
 msgid "Hardware Address:"
 msgstr "Donanım Adresi:"
 
-#: package/contents/ui/main.qml:50
+#: ui/main.qml:50
 #, kde-format
 msgctxt "@label"
 msgid "State:"
 msgstr "Durum:"
 
-#: package/contents/ui/main.qml:58
+#: ui/main.qml:58
 #, kde-format
 msgctxt "State of network card is connected"
 msgid "Up"
 msgstr "Çalışıyor"
 
-#: package/contents/ui/main.qml:59
+#: ui/main.qml:59
 #, kde-format
 msgctxt "State of network card is disconnected"
 msgid "Down"
 msgstr "Çalışmıyor"
 
-#: package/contents/ui/main.qml:70
+#: ui/main.qml:70
 #, kde-format
 msgctxt "@action:button"
 msgid "Refresh"

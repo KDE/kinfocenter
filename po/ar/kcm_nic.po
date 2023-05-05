@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-07 02:03+0000\n"
+"POT-Creation-Date: 2023-05-05 02:14+0000\n"
 "PO-Revision-Date: 2021-12-18 22:46+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -42,55 +42,55 @@ msgctxt "@item:intable Network type"
 msgid "Loopback"
 msgstr "استرجاع"
 
-#: package/contents/ui/main.qml:29
+#: ui/main.qml:29
 #, kde-format
 msgctxt "@label"
 msgid "Name:"
 msgstr "الاسم:"
 
-#: package/contents/ui/main.qml:33
+#: ui/main.qml:33
 #, kde-format
 msgctxt "@label"
 msgid "Address:"
 msgstr "العنوان:"
 
-#: package/contents/ui/main.qml:37
+#: ui/main.qml:37
 #, kde-format
 msgctxt "@label"
 msgid "Network Mask:"
 msgstr "قناع الشبكة:"
 
-#: package/contents/ui/main.qml:41
+#: ui/main.qml:41
 #, kde-format
 msgctxt "@label"
 msgid "Type:"
 msgstr "النوع:"
 
-#: package/contents/ui/main.qml:45
+#: ui/main.qml:45
 #, kde-format
 msgctxt "@label"
 msgid "Hardware Address:"
 msgstr "عنوان العتاد:"
 
-#: package/contents/ui/main.qml:50
+#: ui/main.qml:50
 #, kde-format
 msgctxt "@label"
 msgid "State:"
 msgstr "الولاية:"
 
-#: package/contents/ui/main.qml:58
+#: ui/main.qml:58
 #, kde-format
 msgctxt "State of network card is connected"
 msgid "Up"
 msgstr "أعلى"
 
-#: package/contents/ui/main.qml:59
+#: ui/main.qml:59
 #, kde-format
 msgctxt "State of network card is disconnected"
 msgid "Down"
 msgstr "أسفل"
 
-#: package/contents/ui/main.qml:70
+#: ui/main.qml:70
 #, kde-format
 msgctxt "@action:button"
 msgid "Refresh"

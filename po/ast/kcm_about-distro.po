@@ -1,0 +1,188 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the kinfocenter package.
+#
+# Enol P. <enolp@softastur.org>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: kinfocenter\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-05-05 02:14+0000\n"
+"PO-Revision-Date: 2023-05-03 21:33+0200\n"
+"Last-Translator: Enol P. <enolp@softastur.org>\n"
+"Language-Team: \n"
+"Language: ast_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 23.04.0\n"
+
+#: CPUEntry.cpp:17
+#, kde-format
+msgid "Processor:"
+msgid_plural "Processors:"
+msgstr[0] "Procesador:"
+msgstr[1] "Procesadores:"
+
+#: CPUEntry.cpp:22
+#, kde-format
+msgctxt ""
+"unknown CPU type/product name; presented as `Processors: 4 × Unknown Type'"
+msgid "Unknown Type"
+msgstr ""
+
+#: GPUEntry.cpp:19
+#, kde-format
+msgid "Graphics Processor:"
+msgstr ""
+
+#: GraphicsPlatformEntry.cpp:10
+#, kde-format
+msgid "Graphics Platform:"
+msgstr ""
+
+#: KernelEntry.cpp:11
+#, kde-format
+msgid "Kernel Version:"
+msgstr ""
+
+#: KernelEntry.cpp:23
+#, kde-format
+msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
+msgid "%1 (%2-bit)"
+msgstr ""
+
+#: main.cpp:172
+#, kde-format
+msgctxt "@label"
+msgid "Manufacturer:"
+msgstr ""
+
+#: main.cpp:175 main.cpp:192
+#, kde-format
+msgctxt "@label"
+msgid "Product Name:"
+msgstr ""
+
+#: main.cpp:178
+#, kde-format
+msgctxt "@label"
+msgid "System Version:"
+msgstr ""
+
+#: main.cpp:181 main.cpp:195
+#, kde-format
+msgctxt "@label"
+msgid "Serial Number:"
+msgstr ""
+
+#: main.cpp:185 main.cpp:202
+#, kde-format
+msgctxt "@label unknown entry in table"
+msgid "Unknown:"
+msgstr ""
+
+#: main.cpp:198
+#, kde-format
+msgctxt "@label uboot is the name of a bootloader for embedded devices"
+msgid "U-Boot Version:"
+msgstr ""
+
+#: main.cpp:236
+#, kde-format
+msgid "KDE Frameworks Version:"
+msgstr ""
+
+#: main.cpp:237
+#, kde-format
+msgid "Qt Version:"
+msgstr ""
+
+#: MemoryEntry.cpp:20
+#, kde-format
+msgid "Memory:"
+msgstr ""
+
+#: MemoryEntry.cpp:49
+#, kde-format
+msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
+msgid "%1 of RAM"
+msgstr ""
+
+#: MemoryEntry.cpp:53
+#, kde-format
+msgctxt "Unknown amount of RAM"
+msgid "Unknown"
+msgstr ""
+
+#: OSVersionEntry.cpp:9
+#, kde-format
+msgid "Operating System:"
+msgstr ""
+
+#: OSVersionEntry.cpp:11
+#, kde-format
+msgctxt "@label %1 is the distro name, %2 is the version"
+msgid "%1 %2"
+msgstr ""
+
+#: OSVersionEntry.cpp:13
+#, kde-format
+msgctxt ""
+"@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
+"should be a number, or 'rolling'"
+msgid "%1 %2 Build: %3"
+msgstr ""
+
+#: PlasmaEntry.cpp:15
+#, kde-format
+msgid "KDE Plasma Version:"
+msgstr ""
+
+#: ThirdPartyEntry.cpp:12
+#, kde-format
+msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
+msgid ":"
+msgstr ""
+
+#: ui/main.qml:92
+#, kde-format
+msgctxt "@title"
+msgid "Serial Number"
+msgstr ""
+
+#: ui/main.qml:98 ui/main.qml:179
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy to Clipboard"
+msgstr ""
+
+#: ui/main.qml:125
+#, kde-format
+msgctxt "@action:button show a hidden entry in an overlay"
+msgid "Show"
+msgstr ""
+
+#: ui/main.qml:137
+#, kde-format
+msgctxt "@title:group"
+msgid "Software"
+msgstr ""
+
+#: ui/main.qml:147
+#, kde-format
+msgctxt "@title:group"
+msgid "Hardware"
+msgstr ""
+
+#: ui/main.qml:167
+#, kde-format
+msgctxt "@action:button launches kinfocenter from systemsettings"
+msgid "Launch %1"
+msgstr ""
+
+#: ui/main.qml:186
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy to Clipboard in English"
+msgstr ""

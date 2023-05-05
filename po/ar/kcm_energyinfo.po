@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-19 02:06+0000\n"
+"POT-Creation-Date: 2023-05-05 02:14+0000\n"
 "PO-Revision-Date: 2022-03-06 17:40+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: Arabic <kde-l10n-ar@kde.org>\n"
@@ -19,323 +19,322 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 "X-Generator: Lokalize 21.07.70\n"
 
-#: package/contents/ui/main.qml:47
+#: ui/main.qml:47
 #, kde-format
 msgid "Battery"
 msgstr "البطّاريّة"
 
-#: package/contents/ui/main.qml:49
+#: ui/main.qml:49
 #, kde-format
 msgid "Rechargeable"
 msgstr "يمكن إعادة شحنها"
 
-#: package/contents/ui/main.qml:50
+#: ui/main.qml:50
 #, kde-format
 msgid "Charge state"
 msgstr "حالة الشّحن"
 
-#: package/contents/ui/main.qml:51
+#: ui/main.qml:51
 #, kde-format
 msgid "Current charge"
 msgstr "الشحن الحالي"
 
-#: package/contents/ui/main.qml:51 package/contents/ui/main.qml:52
+#: ui/main.qml:51 ui/main.qml:52
 #, kde-format
 msgid "%"
 msgstr "%"
 
-#: package/contents/ui/main.qml:52
+#: ui/main.qml:52
 #, kde-format
 msgid "Health"
 msgstr "الصحة"
 
-#: package/contents/ui/main.qml:53
+#: ui/main.qml:53
 #, kde-format
 msgid "Vendor"
 msgstr "البائع"
 
-#: package/contents/ui/main.qml:54
+#: ui/main.qml:54
 #, kde-format
 msgid "Model"
 msgstr "الطّراز"
 
-#: package/contents/ui/main.qml:55
+#: ui/main.qml:55
 #, kde-format
 msgid "Serial Number"
 msgstr "الرّقم التّسلسليّ"
 
-#: package/contents/ui/main.qml:56
+#: ui/main.qml:56
 #, kde-format
 msgid "Technology"
 msgstr "التقنية"
 
-#: package/contents/ui/main.qml:60
+#: ui/main.qml:60
 #, kde-format
 msgid "Energy"
 msgstr "الطّاقة"
 
-#: package/contents/ui/main.qml:62
+#: ui/main.qml:62
 #, kde-format
 msgctxt "current power draw from the battery in W"
 msgid "Consumption"
 msgstr "الاستهلاك"
 
-#: package/contents/ui/main.qml:62
+#: ui/main.qml:62
 #, kde-format
 msgctxt "Watt"
 msgid "W"
 msgstr "واط"
 
-#: package/contents/ui/main.qml:63
+#: ui/main.qml:63
 #, kde-format
 msgid "Voltage"
 msgstr "الفولتيّة"
 
-#: package/contents/ui/main.qml:63
+#: ui/main.qml:63
 #, kde-format
 msgctxt "Volt"
 msgid "V"
 msgstr "فولت"
 
-#: package/contents/ui/main.qml:64
+#: ui/main.qml:64
 #, kde-format
 msgid "Remaining energy"
 msgstr "الطاقة المتبقية"
 
-#: package/contents/ui/main.qml:64 package/contents/ui/main.qml:65
-#: package/contents/ui/main.qml:66
+#: ui/main.qml:64 ui/main.qml:65 ui/main.qml:66
 #, kde-format
 msgctxt "Watt-hours"
 msgid "Wh"
 msgstr "واط ساعيّ"
 
-#: package/contents/ui/main.qml:65
+#: ui/main.qml:65
 #, kde-format
 msgid "Last full charge"
 msgstr "أخر شحن كامل"
 
-#: package/contents/ui/main.qml:66
+#: ui/main.qml:66
 #, kde-format
 msgid "Original charge capacity"
 msgstr "سعة الشحن الأصلية"
 
-#: package/contents/ui/main.qml:70
+#: ui/main.qml:70
 #, kde-format
 msgid "Environment"
 msgstr "البيئة"
 
-#: package/contents/ui/main.qml:72
+#: ui/main.qml:72
 #, kde-format
 msgid "Temperature"
 msgstr "درجة الحرارة"
 
-#: package/contents/ui/main.qml:72
+#: ui/main.qml:72
 #, kde-format
 msgctxt "Degree Celsius"
 msgid "°C"
 msgstr "°م"
 
-#: package/contents/ui/main.qml:79
+#: ui/main.qml:79
 #, kde-format
 msgid "Not charging"
 msgstr "لا تشحن"
 
-#: package/contents/ui/main.qml:80
+#: ui/main.qml:80
 #, kde-format
 msgid "Charging"
 msgstr "تشحن"
 
-#: package/contents/ui/main.qml:81
+#: ui/main.qml:81
 #, kde-format
 msgid "Discharging"
 msgstr "تفرّغ الشّحن"
 
-#: package/contents/ui/main.qml:82
+#: ui/main.qml:82
 #, kde-format
 msgid "Fully charged"
 msgstr "مشحونة بالكامل"
 
-#: package/contents/ui/main.qml:88
+#: ui/main.qml:88
 #, kde-format
 msgid "Lithium ion"
 msgstr "أيونات ليثيوم"
 
-#: package/contents/ui/main.qml:89
+#: ui/main.qml:89
 #, kde-format
 msgid "Lithium polymer"
 msgstr "بوليمرات ليثيوم"
 
-#: package/contents/ui/main.qml:90
+#: ui/main.qml:90
 #, kde-format
 msgid "Lithium iron phosphate"
 msgstr "فوسفات حديد الليثيوم"
 
-#: package/contents/ui/main.qml:91
+#: ui/main.qml:91
 #, kde-format
 msgid "Lead acid"
 msgstr "حمض الرصاص"
 
-#: package/contents/ui/main.qml:92
+#: ui/main.qml:92
 #, kde-format
 msgid "Nickel cadmium"
 msgstr "كادميوم نيكل"
 
-#: package/contents/ui/main.qml:93
+#: ui/main.qml:93
 #, kde-format
 msgid "Nickel metal hydride"
 msgstr "هيدريد فلز النيكل"
 
-#: package/contents/ui/main.qml:94
+#: ui/main.qml:94
 #, kde-format
 msgid "Unknown technology"
 msgstr "تقنية مجهولة"
 
-#: package/contents/ui/main.qml:101
+#: ui/main.qml:101
 #, kde-format
 msgid "Last hour"
 msgstr "آخر ساعة"
 
-#: package/contents/ui/main.qml:101
+#: ui/main.qml:101
 #, kde-format
 msgid "Last 2 hours"
 msgstr "آخر ساعتين"
 
-#: package/contents/ui/main.qml:101
+#: ui/main.qml:101
 #, kde-format
 msgid "Last 12 hours"
 msgstr "آخر 12 ساعة"
 
-#: package/contents/ui/main.qml:101
+#: ui/main.qml:101
 #, kde-format
 msgid "Last 24 hours"
 msgstr "آخر 24 ساعة"
 
-#: package/contents/ui/main.qml:101
+#: ui/main.qml:101
 #, kde-format
 msgid "Last 48 hours"
 msgstr "آخر 48 ساعة"
 
-#: package/contents/ui/main.qml:101
+#: ui/main.qml:101
 #, kde-format
 msgid "Last 7 days"
 msgstr "آخر 7 أيّام"
 
-#: package/contents/ui/main.qml:108
+#: ui/main.qml:108
 #, kde-format
 msgctxt "@info:status"
 msgid "No energy information available on this system"
 msgstr "لا يوجد معلومات متوفّرة على هذا النظام"
 
-#: package/contents/ui/main.qml:173
+#: ui/main.qml:173
 #, kde-format
 msgid "Internal battery"
 msgstr "بطارية داخلية"
 
-#: package/contents/ui/main.qml:174
+#: ui/main.qml:174
 #, kde-format
 msgid "UPS battery"
 msgstr "بطارية UPS"
 
-#: package/contents/ui/main.qml:175
+#: ui/main.qml:175
 #, kde-format
 msgid "Monitor battery"
 msgstr "بطارية شاشة"
 
-#: package/contents/ui/main.qml:176
+#: ui/main.qml:176
 #, kde-format
 msgid "Mouse battery"
 msgstr "بطارية فأرة"
 
-#: package/contents/ui/main.qml:177
+#: ui/main.qml:177
 #, kde-format
 msgid "Keyboard battery"
 msgstr "بطارية لوحة مفاتيح"
 
-#: package/contents/ui/main.qml:178
+#: ui/main.qml:178
 #, kde-format
 msgid "PDA battery"
 msgstr "بطارية PDA"
 
-#: package/contents/ui/main.qml:179
+#: ui/main.qml:179
 #, kde-format
 msgid "Phone battery"
 msgstr "بطارية هاتف"
 
-#: package/contents/ui/main.qml:180
+#: ui/main.qml:180
 #, kde-format
 msgid "Unknown battery"
 msgstr "بطارية مجهولة"
 
-#: package/contents/ui/main.qml:198
+#: ui/main.qml:198
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr "%1٪ (تشحن)"
 
-#: package/contents/ui/main.qml:199
+#: ui/main.qml:199
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr "%1٪"
 
-#: package/contents/ui/main.qml:248
+#: ui/main.qml:248
 #, kde-format
 msgctxt "Shorthand for Watts"
 msgid "W"
 msgstr "واط"
 
-#: package/contents/ui/main.qml:248
+#: ui/main.qml:248
 #, kde-format
 msgctxt "literal percent sign"
 msgid "%"
 msgstr "٪"
 
-#: package/contents/ui/main.qml:274
+#: ui/main.qml:274
 #, kde-format
 msgid "Charge Percentage"
 msgstr "نسبة الشّحن"
 
-#: package/contents/ui/main.qml:284
+#: ui/main.qml:284
 #, kde-format
 msgid "Energy Consumption"
 msgstr "استهلاك الطّاقة"
 
-#: package/contents/ui/main.qml:299
+#: ui/main.qml:299
 #, kde-format
 msgid "Timespan"
 msgstr "الفترة الزّمنيّة"
 
-#: package/contents/ui/main.qml:300
+#: ui/main.qml:300
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "فترة البيانات الزّمنيّة لعرضها"
 
-#: package/contents/ui/main.qml:306
+#: ui/main.qml:306
 #, kde-format
 msgid "Refresh"
 msgstr "أنعش"
 
-#: package/contents/ui/main.qml:318
+#: ui/main.qml:318
 #, kde-format
 msgid "This type of history is currently not available for this device."
 msgstr "نوع التّأريخ هذا ليس متوفّرًا حاليًّا لهذا الجهاز."
 
-#: package/contents/ui/main.qml:376
+#: ui/main.qml:376
 #, kde-format
 msgid "%1:"
 msgstr "‏%1:"
 
-#: package/contents/ui/main.qml:387
+#: ui/main.qml:387
 #, kde-format
 msgid "Yes"
 msgstr "نعم"
 
-#: package/contents/ui/main.qml:389
+#: ui/main.qml:389
 #, kde-format
 msgid "No"
 msgstr "لا"
 
-#: package/contents/ui/main.qml:407
+#: ui/main.qml:407
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"

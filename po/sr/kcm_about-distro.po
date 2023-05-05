@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-19 02:06+0000\n"
+"POT-Creation-Date: 2023-05-05 02:14+0000\n"
 "PO-Revision-Date: 2016-06-19 15:35+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -68,33 +68,33 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1‑битно"
 
-#: main.cpp:174
+#: main.cpp:172
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr ""
 
-#: main.cpp:177 main.cpp:194
+#: main.cpp:175 main.cpp:192
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr ""
 
-#: main.cpp:180
+#: main.cpp:178
 #, fuzzy, kde-format
 #| msgid "Qt Version:"
 msgctxt "@label"
 msgid "System Version:"
 msgstr "Издање КуТ‑а:"
 
-#: main.cpp:183 main.cpp:197
+#: main.cpp:181 main.cpp:195
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr ""
 
 # >! Contexts.
-#: main.cpp:187 main.cpp:204
+#: main.cpp:185 main.cpp:202
 #, fuzzy, kde-format
 #| msgctxt "Unknown amount of RAM"
 #| msgid "Unknown"
@@ -102,19 +102,19 @@ msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "непознато"
 
-#: main.cpp:200
+#: main.cpp:198
 #, fuzzy, kde-format
 #| msgid "Qt Version:"
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "Издање КуТ‑а:"
 
-#: main.cpp:238
+#: main.cpp:236
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "Издање Радних оквира КДЕ‑а:"
 
-#: main.cpp:239
+#: main.cpp:237
 #, kde-format
 msgid "Qt Version:"
 msgstr "Издање КуТ‑а:"
@@ -156,51 +156,6 @@ msgctxt ""
 msgid "%1 %2 Build: %3"
 msgstr ""
 
-#: package/contents/ui/main.qml:92
-#, kde-format
-msgctxt "@title"
-msgid "Serial Number"
-msgstr ""
-
-#: package/contents/ui/main.qml:98 package/contents/ui/main.qml:179
-#, kde-format
-msgctxt "@action:button"
-msgid "Copy to Clipboard"
-msgstr ""
-
-#: package/contents/ui/main.qml:125
-#, kde-format
-msgctxt "@action:button show a hidden entry in an overlay"
-msgid "Show"
-msgstr ""
-
-#: package/contents/ui/main.qml:137
-#, fuzzy, kde-format
-#| msgid "Software"
-msgctxt "@title:group"
-msgid "Software"
-msgstr "Софтвер"
-
-# >> @item category
-#: package/contents/ui/main.qml:147
-#, fuzzy, kde-format
-#| msgid "Hardware"
-msgctxt "@title:group"
-msgid "Hardware"
-msgstr "Хардвер"
-
-#: package/contents/ui/main.qml:167
-#, kde-format
-msgctxt "@action:button launches kinfocenter from systemsettings"
-msgid "Launch %1"
-msgstr ""
-
-#: package/contents/ui/main.qml:186
-#, kde-format
-msgctxt "@action:button"
-msgid "Copy to Clipboard in English"
-msgstr ""
-
 #: PlasmaEntry.cpp:15
 #, kde-format
 msgid "KDE Plasma Version:"
@@ -210,6 +165,51 @@ msgstr "Издање КДЕ Плазме:"
 #, kde-format
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
+msgstr ""
+
+#: ui/main.qml:92
+#, kde-format
+msgctxt "@title"
+msgid "Serial Number"
+msgstr ""
+
+#: ui/main.qml:98 ui/main.qml:179
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy to Clipboard"
+msgstr ""
+
+#: ui/main.qml:125
+#, kde-format
+msgctxt "@action:button show a hidden entry in an overlay"
+msgid "Show"
+msgstr ""
+
+#: ui/main.qml:137
+#, fuzzy, kde-format
+#| msgid "Software"
+msgctxt "@title:group"
+msgid "Software"
+msgstr "Софтвер"
+
+# >> @item category
+#: ui/main.qml:147
+#, fuzzy, kde-format
+#| msgid "Hardware"
+msgctxt "@title:group"
+msgid "Hardware"
+msgstr "Хардвер"
+
+#: ui/main.qml:167
+#, kde-format
+msgctxt "@action:button launches kinfocenter from systemsettings"
+msgid "Launch %1"
+msgstr ""
+
+#: ui/main.qml:186
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy to Clipboard in English"
 msgstr ""
 
 #~ msgctxt "NAME OF TRANSLATORS"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-07 02:03+0000\n"
+"POT-Creation-Date: 2023-05-05 02:14+0000\n"
 "PO-Revision-Date: 2019-09-17 14:23+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -41,57 +41,57 @@ msgctxt "@item:intable Network type"
 msgid "Loopback"
 msgstr ""
 
-#: package/contents/ui/main.qml:29
+#: ui/main.qml:29
 #, fuzzy, kde-format
 #| msgid "Name"
 msgctxt "@label"
 msgid "Name:"
 msgstr "Ном"
 
-#: package/contents/ui/main.qml:33
+#: ui/main.qml:33
 #, kde-format
 msgctxt "@label"
 msgid "Address:"
 msgstr ""
 
-#: package/contents/ui/main.qml:37
+#: ui/main.qml:37
 #, kde-format
 msgctxt "@label"
 msgid "Network Mask:"
 msgstr ""
 
-#: package/contents/ui/main.qml:41
+#: ui/main.qml:41
 #, fuzzy, kde-format
 #| msgid "Type"
 msgctxt "@label"
 msgid "Type:"
 msgstr "Навъ"
 
-#: package/contents/ui/main.qml:45
+#: ui/main.qml:45
 #, kde-format
 msgctxt "@label"
 msgid "Hardware Address:"
 msgstr ""
 
-#: package/contents/ui/main.qml:50
+#: ui/main.qml:50
 #, kde-format
 msgctxt "@label"
 msgid "State:"
 msgstr ""
 
-#: package/contents/ui/main.qml:58
+#: ui/main.qml:58
 #, kde-format
 msgctxt "State of network card is connected"
 msgid "Up"
 msgstr "Ба боло"
 
-#: package/contents/ui/main.qml:59
+#: ui/main.qml:59
 #, kde-format
 msgctxt "State of network card is disconnected"
 msgid "Down"
 msgstr "Ба поён"
 
-#: package/contents/ui/main.qml:70
+#: ui/main.qml:70
 #, kde-format
 msgctxt "@action:button"
 msgid "Refresh"

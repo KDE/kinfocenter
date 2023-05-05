@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-19 02:06+0000\n"
+"POT-Creation-Date: 2023-05-05 02:14+0000\n"
 "PO-Revision-Date: 2022-07-04 11:42-0700\n"
 "Last-Translator: Fumiaki Okushi <fumiaki.okushi@gmail.com>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -53,31 +53,31 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr ""
 
-#: main.cpp:174
+#: main.cpp:172
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr "製造元:"
 
-#: main.cpp:177 main.cpp:194
+#: main.cpp:175 main.cpp:192
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr "製品名:"
 
-#: main.cpp:180
+#: main.cpp:178
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
 msgstr "システムのバージョン:"
 
-#: main.cpp:183 main.cpp:197
+#: main.cpp:181 main.cpp:195
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr "シリアルナンバー:"
 
-#: main.cpp:187 main.cpp:204
+#: main.cpp:185 main.cpp:202
 #, fuzzy, kde-format
 #| msgctxt "Unknown amount of RAM"
 #| msgid "Unknown"
@@ -85,19 +85,19 @@ msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "不明"
 
-#: main.cpp:200
+#: main.cpp:198
 #, fuzzy, kde-format
 #| msgid "Qt Version:"
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "Qt のバージョン:"
 
-#: main.cpp:238
+#: main.cpp:236
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "KDE Frameworks のバージョン:"
 
-#: main.cpp:239
+#: main.cpp:237
 #, kde-format
 msgid "Qt Version:"
 msgstr "Qt のバージョン:"
@@ -138,48 +138,6 @@ msgctxt ""
 msgid "%1 %2 Build: %3"
 msgstr ""
 
-#: package/contents/ui/main.qml:92
-#, kde-format
-msgctxt "@title"
-msgid "Serial Number"
-msgstr "シリアルナンバー"
-
-#: package/contents/ui/main.qml:98 package/contents/ui/main.qml:179
-#, kde-format
-msgctxt "@action:button"
-msgid "Copy to Clipboard"
-msgstr "クリップボードにコピー"
-
-#: package/contents/ui/main.qml:125
-#, kde-format
-msgctxt "@action:button show a hidden entry in an overlay"
-msgid "Show"
-msgstr "表示"
-
-#: package/contents/ui/main.qml:137
-#, kde-format
-msgctxt "@title:group"
-msgid "Software"
-msgstr "ソフトウェア"
-
-#: package/contents/ui/main.qml:147
-#, kde-format
-msgctxt "@title:group"
-msgid "Hardware"
-msgstr "ハードウェア"
-
-#: package/contents/ui/main.qml:167
-#, kde-format
-msgctxt "@action:button launches kinfocenter from systemsettings"
-msgid "Launch %1"
-msgstr ""
-
-#: package/contents/ui/main.qml:186
-#, kde-format
-msgctxt "@action:button"
-msgid "Copy to Clipboard in English"
-msgstr "英語でクリップボードにコピー"
-
 #: PlasmaEntry.cpp:15
 #, kde-format
 msgid "KDE Plasma Version:"
@@ -190,6 +148,48 @@ msgstr "KDE Plasma のバージョン:"
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ""
+
+#: ui/main.qml:92
+#, kde-format
+msgctxt "@title"
+msgid "Serial Number"
+msgstr "シリアルナンバー"
+
+#: ui/main.qml:98 ui/main.qml:179
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy to Clipboard"
+msgstr "クリップボードにコピー"
+
+#: ui/main.qml:125
+#, kde-format
+msgctxt "@action:button show a hidden entry in an overlay"
+msgid "Show"
+msgstr "表示"
+
+#: ui/main.qml:137
+#, kde-format
+msgctxt "@title:group"
+msgid "Software"
+msgstr "ソフトウェア"
+
+#: ui/main.qml:147
+#, kde-format
+msgctxt "@title:group"
+msgid "Hardware"
+msgstr "ハードウェア"
+
+#: ui/main.qml:167
+#, kde-format
+msgctxt "@action:button launches kinfocenter from systemsettings"
+msgid "Launch %1"
+msgstr ""
+
+#: ui/main.qml:186
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy to Clipboard in English"
+msgstr "英語でクリップボードにコピー"
 
 #~ msgctxt "@action:button launches kinfocenter from systemsettings"
 #~ msgid "Show More Information"

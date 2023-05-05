@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-19 02:06+0000\n"
+"POT-Creation-Date: 2023-05-05 02:14+0000\n"
 "PO-Revision-Date: 2023-02-24 12:43\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -17,323 +17,322 @@ msgstr ""
 "X-Crowdin-File: /kf5-trunk/messages/kinfocenter/kcm_energyinfo.pot\n"
 "X-Crowdin-File-ID: 4357\n"
 
-#: package/contents/ui/main.qml:47
+#: ui/main.qml:47
 #, kde-format
 msgid "Battery"
 msgstr "电池"
 
-#: package/contents/ui/main.qml:49
+#: ui/main.qml:49
 #, kde-format
 msgid "Rechargeable"
 msgstr "可充电"
 
-#: package/contents/ui/main.qml:50
+#: ui/main.qml:50
 #, kde-format
 msgid "Charge state"
 msgstr "充电状态"
 
-#: package/contents/ui/main.qml:51
+#: ui/main.qml:51
 #, kde-format
 msgid "Current charge"
 msgstr "当前电量"
 
-#: package/contents/ui/main.qml:51 package/contents/ui/main.qml:52
+#: ui/main.qml:51 ui/main.qml:52
 #, kde-format
 msgid "%"
 msgstr "%"
 
-#: package/contents/ui/main.qml:52
+#: ui/main.qml:52
 #, kde-format
 msgid "Health"
 msgstr "健康水平"
 
-#: package/contents/ui/main.qml:53
+#: ui/main.qml:53
 #, kde-format
 msgid "Vendor"
 msgstr "制造商"
 
-#: package/contents/ui/main.qml:54
+#: ui/main.qml:54
 #, kde-format
 msgid "Model"
 msgstr "型号"
 
-#: package/contents/ui/main.qml:55
+#: ui/main.qml:55
 #, kde-format
 msgid "Serial Number"
 msgstr "序列号"
 
-#: package/contents/ui/main.qml:56
+#: ui/main.qml:56
 #, kde-format
 msgid "Technology"
 msgstr "技术"
 
-#: package/contents/ui/main.qml:60
+#: ui/main.qml:60
 #, kde-format
 msgid "Energy"
 msgstr "电量"
 
-#: package/contents/ui/main.qml:62
+#: ui/main.qml:62
 #, kde-format
 msgctxt "current power draw from the battery in W"
 msgid "Consumption"
 msgstr "功耗"
 
-#: package/contents/ui/main.qml:62
+#: ui/main.qml:62
 #, kde-format
 msgctxt "Watt"
 msgid "W"
 msgstr "瓦"
 
-#: package/contents/ui/main.qml:63
+#: ui/main.qml:63
 #, kde-format
 msgid "Voltage"
 msgstr "电压"
 
-#: package/contents/ui/main.qml:63
+#: ui/main.qml:63
 #, kde-format
 msgctxt "Volt"
 msgid "V"
 msgstr "伏"
 
-#: package/contents/ui/main.qml:64
+#: ui/main.qml:64
 #, kde-format
 msgid "Remaining energy"
 msgstr "剩余电量"
 
-#: package/contents/ui/main.qml:64 package/contents/ui/main.qml:65
-#: package/contents/ui/main.qml:66
+#: ui/main.qml:64 ui/main.qml:65 ui/main.qml:66
 #, kde-format
 msgctxt "Watt-hours"
 msgid "Wh"
 msgstr "瓦时"
 
-#: package/contents/ui/main.qml:65
+#: ui/main.qml:65
 #, kde-format
 msgid "Last full charge"
 msgstr "上次充满"
 
-#: package/contents/ui/main.qml:66
+#: ui/main.qml:66
 #, kde-format
 msgid "Original charge capacity"
 msgstr "原始容量"
 
-#: package/contents/ui/main.qml:70
+#: ui/main.qml:70
 #, kde-format
 msgid "Environment"
 msgstr "环境"
 
-#: package/contents/ui/main.qml:72
+#: ui/main.qml:72
 #, kde-format
 msgid "Temperature"
 msgstr "温度"
 
-#: package/contents/ui/main.qml:72
+#: ui/main.qml:72
 #, kde-format
 msgctxt "Degree Celsius"
 msgid "°C"
 msgstr "°C"
 
-#: package/contents/ui/main.qml:79
+#: ui/main.qml:79
 #, kde-format
 msgid "Not charging"
 msgstr "不在充电"
 
-#: package/contents/ui/main.qml:80
+#: ui/main.qml:80
 #, kde-format
 msgid "Charging"
 msgstr "正在充电"
 
-#: package/contents/ui/main.qml:81
+#: ui/main.qml:81
 #, kde-format
 msgid "Discharging"
 msgstr "正在放电"
 
-#: package/contents/ui/main.qml:82
+#: ui/main.qml:82
 #, kde-format
 msgid "Fully charged"
 msgstr "完全充满"
 
-#: package/contents/ui/main.qml:88
+#: ui/main.qml:88
 #, kde-format
 msgid "Lithium ion"
 msgstr "锂离子"
 
-#: package/contents/ui/main.qml:89
+#: ui/main.qml:89
 #, kde-format
 msgid "Lithium polymer"
 msgstr "锂聚合物"
 
-#: package/contents/ui/main.qml:90
+#: ui/main.qml:90
 #, kde-format
 msgid "Lithium iron phosphate"
 msgstr "磷酸铁锂"
 
-#: package/contents/ui/main.qml:91
+#: ui/main.qml:91
 #, kde-format
 msgid "Lead acid"
 msgstr "铅酸"
 
-#: package/contents/ui/main.qml:92
+#: ui/main.qml:92
 #, kde-format
 msgid "Nickel cadmium"
 msgstr "镍镉"
 
-#: package/contents/ui/main.qml:93
+#: ui/main.qml:93
 #, kde-format
 msgid "Nickel metal hydride"
 msgstr "镍氢"
 
-#: package/contents/ui/main.qml:94
+#: ui/main.qml:94
 #, kde-format
 msgid "Unknown technology"
 msgstr "未知技术"
 
-#: package/contents/ui/main.qml:101
+#: ui/main.qml:101
 #, kde-format
 msgid "Last hour"
 msgstr "最近 1 小时"
 
-#: package/contents/ui/main.qml:101
+#: ui/main.qml:101
 #, kde-format
 msgid "Last 2 hours"
 msgstr "最近 2 小时"
 
-#: package/contents/ui/main.qml:101
+#: ui/main.qml:101
 #, kde-format
 msgid "Last 12 hours"
 msgstr "最近 12 小时"
 
-#: package/contents/ui/main.qml:101
+#: ui/main.qml:101
 #, kde-format
 msgid "Last 24 hours"
 msgstr "最近 24 小时"
 
-#: package/contents/ui/main.qml:101
+#: ui/main.qml:101
 #, kde-format
 msgid "Last 48 hours"
 msgstr "最近 48 小时"
 
-#: package/contents/ui/main.qml:101
+#: ui/main.qml:101
 #, kde-format
 msgid "Last 7 days"
 msgstr "最近 7 天"
 
-#: package/contents/ui/main.qml:108
+#: ui/main.qml:108
 #, kde-format
 msgctxt "@info:status"
 msgid "No energy information available on this system"
 msgstr "本系统无可用电量信息"
 
-#: package/contents/ui/main.qml:173
+#: ui/main.qml:173
 #, kde-format
 msgid "Internal battery"
 msgstr "内置电池"
 
-#: package/contents/ui/main.qml:174
+#: ui/main.qml:174
 #, kde-format
 msgid "UPS battery"
 msgstr "UPS 电池"
 
-#: package/contents/ui/main.qml:175
+#: ui/main.qml:175
 #, kde-format
 msgid "Monitor battery"
 msgstr "显示器电池"
 
-#: package/contents/ui/main.qml:176
+#: ui/main.qml:176
 #, kde-format
 msgid "Mouse battery"
 msgstr "鼠标电池"
 
-#: package/contents/ui/main.qml:177
+#: ui/main.qml:177
 #, kde-format
 msgid "Keyboard battery"
 msgstr "键盘电池"
 
-#: package/contents/ui/main.qml:178
+#: ui/main.qml:178
 #, kde-format
 msgid "PDA battery"
 msgstr "PDA 电池"
 
-#: package/contents/ui/main.qml:179
+#: ui/main.qml:179
 #, kde-format
 msgid "Phone battery"
 msgstr "手机电池"
 
-#: package/contents/ui/main.qml:180
+#: ui/main.qml:180
 #, kde-format
 msgid "Unknown battery"
 msgstr "未知电池"
 
-#: package/contents/ui/main.qml:198
+#: ui/main.qml:198
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr "%1% (正在充电)"
 
-#: package/contents/ui/main.qml:199
+#: ui/main.qml:199
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr "%1%"
 
-#: package/contents/ui/main.qml:248
+#: ui/main.qml:248
 #, kde-format
 msgctxt "Shorthand for Watts"
 msgid "W"
 msgstr "瓦"
 
-#: package/contents/ui/main.qml:248
+#: ui/main.qml:248
 #, kde-format
 msgctxt "literal percent sign"
 msgid "%"
 msgstr "%"
 
-#: package/contents/ui/main.qml:274
+#: ui/main.qml:274
 #, kde-format
 msgid "Charge Percentage"
 msgstr "电量百分比"
 
-#: package/contents/ui/main.qml:284
+#: ui/main.qml:284
 #, kde-format
 msgid "Energy Consumption"
 msgstr "电量消耗"
 
-#: package/contents/ui/main.qml:299
+#: ui/main.qml:299
 #, kde-format
 msgid "Timespan"
 msgstr "时间区间"
 
-#: package/contents/ui/main.qml:300
+#: ui/main.qml:300
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "要显示的数据的时间区间"
 
-#: package/contents/ui/main.qml:306
+#: ui/main.qml:306
 #, kde-format
 msgid "Refresh"
 msgstr "刷新"
 
-#: package/contents/ui/main.qml:318
+#: ui/main.qml:318
 #, kde-format
 msgid "This type of history is currently not available for this device."
 msgstr "当前设备无法显示此类型的历史记录。"
 
-#: package/contents/ui/main.qml:376
+#: ui/main.qml:376
 #, kde-format
 msgid "%1:"
 msgstr "%1："
 
-#: package/contents/ui/main.qml:387
+#: ui/main.qml:387
 #, kde-format
 msgid "Yes"
 msgstr "是"
 
-#: package/contents/ui/main.qml:389
+#: ui/main.qml:389
 #, kde-format
 msgid "No"
 msgstr "否"
 
-#: package/contents/ui/main.qml:407
+#: ui/main.qml:407
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
