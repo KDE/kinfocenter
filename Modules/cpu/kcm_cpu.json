@@ -45,6 +45,7 @@
         "Icon": "preferences-devices-cpu",
         "Name": "CPU",
         "Name[ar]": "المعالج",
+        "Name[ast]": "CPU",
         "Name[az]": "CPU",
         "Name[bg]": "CPU",
         "Name[ca@valencia]": "CPU",
