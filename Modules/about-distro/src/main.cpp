@@ -3,12 +3,14 @@
     SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 */
 
+#include <iostream>
 #include <utility>
 
 #include <QClipboard>
 #include <QGuiApplication>
 #include <QIcon>
 #include <QLocale>
+#include <QLoggingCategory>
 
 #include <KAuth/Action>
 #include <KAuth/ExecuteJob>
@@ -93,9 +95,14 @@ class KCMAboutSystem : public KQuickConfigModule
     Q_OBJECT
     Q_DISABLE_COPY_MOVE(KCMAboutSystem) // rule of 5
 public:
-    explicit KCMAboutSystem(QObject *parent, const KPluginMetaData &data)
+    explicit KCMAboutSystem(QObject *parent, const KPluginMetaData &data, const QVariantList &args)
         : KQuickConfigModule(parent, data)
+        , m_dumpToStdout(args.contains(QStringLiteral("dump")))
     {
+        if (m_dumpToStdout) {
+            QLoggingCategory::setFilterRules(QStringLiteral("*=false"));
+        }
+
         qmlRegisterType<ServiceRunner>("org.kde.kinfocenter.about_distro.private", 1, 0, "ServiceRunner");
 
         // https://bugs.kde.org/show_bug.cgi?id=366158
@@ -119,6 +126,12 @@ public:
 
         loadOSData();
         loadEntries();
+
+        if (m_dumpToStdout) {
+            std::wcout << clipboardText(Entry::Language::English).toStdWString();
+            QMetaObject::invokeMethod(qApp, &QCoreApplication::quit, Qt::QueuedConnection);
+            return;
+        }
     }
 
     void loadOSData()
@@ -286,28 +299,26 @@ public:
         Q_EMIT changed();
     }
 
-    Q_SCRIPTABLE void copyToClipboard()
+    QString clipboardText(Entry::Language language) const
     {
         QString text;
         for (auto entry : std::as_const(m_entries)) {
             if (entry->isHidden()) {
                 continue;
             }
-            text += entry->diagnosticLine(Entry::Language::System);
+            text += entry->diagnosticLine(language);
         }
-        storeInClipboard(text);
+        return text;
     }
 
-    Q_SCRIPTABLE void copyToClipboardInEnglish()
+    Q_INVOKABLE void copyToClipboard() const
     {
-        QString text;
-        for (auto entry : std::as_const(m_entries)) {
-            if (entry->isHidden()) {
-                continue;
-            }
-            text += entry->diagnosticLine(Entry::Language::English);
-        }
-        storeInClipboard(text);
+        storeInClipboard(clipboardText(Entry::Language::System));
+    }
+
+    Q_INVOKABLE void copyToClipboardInEnglish() const
+    {
+        storeInClipboard(clipboardText(Entry::Language::English));
     }
 
     Q_SCRIPTABLE static void storeInClipboard(const QString &text)
@@ -316,6 +327,7 @@ public:
     }
 
 private:
+    const bool m_dumpToStdout;
     std::vector<const Entry *> m_entries;
     // Extra data distro wants to show in key/value pairs
     std::vector<Entry *> m_extraDataEntries;
