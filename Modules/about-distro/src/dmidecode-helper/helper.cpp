@@ -56,7 +56,8 @@ KAuth::ActionReply DMIDecodeHelper::systeminformation(const QVariantMap &args)
                                                           QStringLiteral("standard"), /* sometimes the version is useless */
                                                           QStringLiteral("sku"),
                                                           QStringLiteral("default string"),
-                                                          QStringLiteral("not specified")
+                                                          QStringLiteral("not specified"),
+                                                          QStringLiteral("not applicable")
                                                           /* may also be empty, but that is filtered above already */);
         if (std::find(dummyData.cbegin(), dummyData.cend(), output.toLower()) != dummyData.cend()) {
             continue;
