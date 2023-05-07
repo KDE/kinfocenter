@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-05 02:14+0000\n"
+"POT-Creation-Date: 2023-05-07 02:16+0000\n"
 "PO-Revision-Date: 2023-03-01 02:06+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -51,48 +51,48 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1(%2비트)"
 
-#: main.cpp:172
+#: main.cpp:185
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr "제조사:"
 
-#: main.cpp:175 main.cpp:192
+#: main.cpp:188 main.cpp:205
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr "제품 이름:"
 
-#: main.cpp:178
+#: main.cpp:191
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
 msgstr "시스템 버전:"
 
-#: main.cpp:181 main.cpp:195
+#: main.cpp:194 main.cpp:208
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr "일련 번호:"
 
-#: main.cpp:185 main.cpp:202
+#: main.cpp:198 main.cpp:215
 #, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "알 수 없음:"
 
-#: main.cpp:198
+#: main.cpp:211
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "U-Boot 버전:"
 
-#: main.cpp:236
+#: main.cpp:249
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "KDE 프레임워크 버전:"
 
-#: main.cpp:237
+#: main.cpp:250
 #, kde-format
 msgid "Qt Version:"
 msgstr "Qt 버전:"

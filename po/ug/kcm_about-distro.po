@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-05 02:14+0000\n"
+"POT-Creation-Date: 2023-05-07 02:16+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
@@ -53,31 +53,31 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr ""
 
-#: main.cpp:172
+#: main.cpp:185
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr ""
 
-#: main.cpp:175 main.cpp:192
+#: main.cpp:188 main.cpp:205
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr ""
 
-#: main.cpp:178
+#: main.cpp:191
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
 msgstr ""
 
-#: main.cpp:181 main.cpp:195
+#: main.cpp:194 main.cpp:208
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr ""
 
-#: main.cpp:185 main.cpp:202
+#: main.cpp:198 main.cpp:215
 #, fuzzy, kde-format
 #| msgctxt "Unknown amount of RAM"
 #| msgid "Unknown"
@@ -85,18 +85,18 @@ msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "نامەلۇم"
 
-#: main.cpp:198
+#: main.cpp:211
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr ""
 
-#: main.cpp:236
+#: main.cpp:249
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr ""
 
-#: main.cpp:237
+#: main.cpp:250
 #, kde-format
 msgid "Qt Version:"
 msgstr ""
