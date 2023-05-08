@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-19 00:47+0000\n"
+"POT-Creation-Date: 2023-05-08 02:41+0000\n"
 "PO-Revision-Date: 2020-12-26 13:13+0100\n"
 "Last-Translator: Kristóf Kiszel <kiszel.kristof@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -69,7 +69,7 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1 bit"
 
-#: main.cpp:104
+#: main.cpp:111
 #, fuzzy, kde-format
 #| msgctxt "@title"
 #| msgid "About System"
@@ -77,50 +77,50 @@ msgctxt "@title"
 msgid "About this System"
 msgstr "Rendszerjellemzők"
 
-#: main.cpp:107
+#: main.cpp:114
 #, kde-format
 msgctxt "@info:credit"
 msgid "Copyright 2012-2020 Harald Sitter"
 msgstr "Copyright Harald Sitter, 2012-2020."
 
-#: main.cpp:108
+#: main.cpp:115
 #, kde-format
 msgctxt "@info:credit"
 msgid "Harald Sitter"
 msgstr "Harald Sitter"
 
-#: main.cpp:108
+#: main.cpp:115
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
 msgstr "Szerző"
 
-#: main.cpp:177
+#: main.cpp:190
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr ""
 
-#: main.cpp:180 main.cpp:197
+#: main.cpp:193 main.cpp:210
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr ""
 
-#: main.cpp:183
+#: main.cpp:196
 #, fuzzy, kde-format
 #| msgid "Qt Version:"
 msgctxt "@label"
 msgid "System Version:"
 msgstr "Qt verzió:"
 
-#: main.cpp:186 main.cpp:200
+#: main.cpp:199 main.cpp:213
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr ""
 
-#: main.cpp:190 main.cpp:207
+#: main.cpp:203 main.cpp:220
 #, fuzzy, kde-format
 #| msgctxt "Unknown amount of RAM"
 #| msgid "Unknown"
@@ -128,19 +128,19 @@ msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "Ismeretlen"
 
-#: main.cpp:203
+#: main.cpp:216
 #, fuzzy, kde-format
 #| msgid "Qt Version:"
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "Qt verzió:"
 
-#: main.cpp:241
+#: main.cpp:254
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "KDE Frameworks verzió:"
 
-#: main.cpp:242
+#: main.cpp:255
 #, kde-format
 msgid "Qt Version:"
 msgstr "Qt verzió:"

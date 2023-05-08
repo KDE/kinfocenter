@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-19 00:47+0000\n"
+"POT-Creation-Date: 2023-05-08 02:41+0000\n"
 "PO-Revision-Date: 2022-11-04 06:09+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -65,72 +65,72 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1 (%2-bit)"
 
-#: main.cpp:104
+#: main.cpp:111
 #, kde-format
 msgctxt "@title"
 msgid "About this System"
 msgstr "Sistema honi buruz"
 
-#: main.cpp:107
+#: main.cpp:114
 #, kde-format
 msgctxt "@info:credit"
 msgid "Copyright 2012-2020 Harald Sitter"
 msgstr "Copyright 2012-2020 Harald Sitter"
 
-#: main.cpp:108
+#: main.cpp:115
 #, kde-format
 msgctxt "@info:credit"
 msgid "Harald Sitter"
 msgstr "Harald Sitter"
 
-#: main.cpp:108
+#: main.cpp:115
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
 msgstr "Egilea"
 
-#: main.cpp:177
+#: main.cpp:190
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr "Fabrikatzailea:"
 
-#: main.cpp:180 main.cpp:197
+#: main.cpp:193 main.cpp:210
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr "Produktuaren izena:"
 
-#: main.cpp:183
+#: main.cpp:196
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
 msgstr "Sistemaren bertsioa:"
 
-#: main.cpp:186 main.cpp:200
+#: main.cpp:199 main.cpp:213
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr "Serie-zenbakia:"
 
-#: main.cpp:190 main.cpp:207
+#: main.cpp:203 main.cpp:220
 #, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "Ezezaguna:"
 
-#: main.cpp:203
+#: main.cpp:216
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "U-Boot bertsioa:"
 
-#: main.cpp:241
+#: main.cpp:254
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "KDE Frameworks bertsioa:"
 
-#: main.cpp:242
+#: main.cpp:255
 #, kde-format
 msgid "Qt Version:"
 msgstr "Qt bertsioa:"
