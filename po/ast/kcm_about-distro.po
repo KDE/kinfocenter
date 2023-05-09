@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-07 02:16+0000\n"
-"PO-Revision-Date: 2023-05-03 21:33+0200\n"
+"PO-Revision-Date: 2023-05-04 22:58+0200\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -34,47 +34,47 @@ msgstr ""
 #: GPUEntry.cpp:19
 #, kde-format
 msgid "Graphics Processor:"
-msgstr ""
+msgstr "Procesador gráficu:"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
 msgid "Graphics Platform:"
-msgstr ""
+msgstr "Plataforma gráfica:"
 
 #: KernelEntry.cpp:11
 #, kde-format
 msgid "Kernel Version:"
-msgstr ""
+msgstr "Versión del kernel:"
 
 #: KernelEntry.cpp:23
 #, kde-format
 msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
-msgstr ""
+msgstr "%1 (%2 bits)"
 
 #: main.cpp:185
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
-msgstr ""
+msgstr "Fabricante:"
 
 #: main.cpp:188 main.cpp:205
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
-msgstr ""
+msgstr "Nome del productu:"
 
 #: main.cpp:191
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
-msgstr ""
+msgstr "Versión del sistema:"
 
 #: main.cpp:194 main.cpp:208
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
-msgstr ""
+msgstr "Númberu de serie:"
 
 #: main.cpp:198 main.cpp:215
 #, kde-format
@@ -86,17 +86,17 @@ msgstr ""
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
-msgstr ""
+msgstr "Versión d'U-Boot:"
 
 #: main.cpp:249
 #, kde-format
 msgid "KDE Frameworks Version:"
-msgstr ""
+msgstr "Versión de KDE Frameworks:"
 
 #: main.cpp:250
 #, kde-format
 msgid "Qt Version:"
-msgstr ""
+msgstr "Versión de Qt:"
 
 #: MemoryEntry.cpp:20
 #, kde-format
@@ -118,7 +118,7 @@ msgstr ""
 #: OSVersionEntry.cpp:9
 #, kde-format
 msgid "Operating System:"
-msgstr ""
+msgstr "Sistema operativu:"
 
 #: OSVersionEntry.cpp:11
 #, kde-format
@@ -149,31 +149,31 @@ msgstr ""
 #, kde-format
 msgctxt "@title"
 msgid "Serial Number"
-msgstr ""
+msgstr "Númberu de serie"
 
 #: ui/main.qml:98 ui/main.qml:179
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Copiar nel cartafueyu"
 
 #: ui/main.qml:125
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
-msgstr ""
+msgstr "Amosar"
 
 #: ui/main.qml:137
 #, kde-format
 msgctxt "@title:group"
 msgid "Software"
-msgstr ""
+msgstr "Software"
 
 #: ui/main.qml:147
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
-msgstr ""
+msgstr "Hardware"
 
 #: ui/main.qml:167
 #, kde-format
@@ -186,3 +186,14 @@ msgstr ""
 msgctxt "@action:button"
 msgid "Copy to Clipboard in English"
 msgstr ""
+
+#: PlasmaEntry.cpp:15
+#, kde-format
+msgid "KDE Plasma Version:"
+msgstr "Versión de KDE Plasma:"
+
+#: ThirdPartyEntry.cpp:12
+#, kde-format
+msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
+msgid ":"
+msgstr ":"
