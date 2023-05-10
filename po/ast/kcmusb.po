@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-05 02:14+0000\n"
-"PO-Revision-Date: 2023-05-03 21:36+0200\n"
+"PO-Revision-Date: 2023-05-09 23:01+0200\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -87,7 +87,7 @@ msgstr ""
 #, kde-format
 msgctxt "USB device class"
 msgid "Mass Storage"
-msgstr ""
+msgstr "Almacenamientu masivu"
 
 #: classes.i18n:14 usbdevices.cpp:99
 #, kde-format
@@ -105,7 +105,7 @@ msgstr ""
 #, kde-format
 msgctxt "USB device class"
 msgid "Printer"
-msgstr ""
+msgstr "Imprentadora"
 
 #: classes.i18n:17 usbdevices.cpp:104
 #, kde-format
@@ -129,7 +129,7 @@ msgstr ""
 #, kde-format
 msgctxt "USB device class"
 msgid "Xbox"
-msgstr ""
+msgstr "Xbox"
 
 #: classes.i18n:21
 #, kde-format
@@ -243,7 +243,7 @@ msgstr ""
 #, kde-format
 msgctxt "USB device subclass"
 msgid "OBEX"
-msgstr ""
+msgstr "OBEX"
 
 #: classes.i18n:40
 #, kde-format
@@ -255,7 +255,7 @@ msgstr ""
 #, kde-format
 msgctxt "USB device subclass"
 msgid "QIC-157"
-msgstr ""
+msgstr "QIC-157"
 
 #: classes.i18n:42
 #, kde-format
@@ -279,7 +279,7 @@ msgstr ""
 #, kde-format
 msgctxt "USB device subclass"
 msgid "SCSI"
-msgstr ""
+msgstr "SCSI"
 
 #: classes.i18n:46
 #, kde-format
@@ -309,7 +309,7 @@ msgstr ""
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Telephone"
-msgstr ""
+msgstr "Teléfonu"
 
 #: classes.i18n:51
 #, kde-format
@@ -374,7 +374,7 @@ msgstr ""
 #: kcmusb.cpp:35
 #, kde-format
 msgid "Device"
-msgstr ""
+msgstr "Preséu"
 
 #: usbdevices.cpp:92
 #, kde-format

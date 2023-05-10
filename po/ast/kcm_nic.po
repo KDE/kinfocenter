@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-05 02:14+0000\n"
-"PO-Revision-Date: 2023-05-03 21:34+0200\n"
+"PO-Revision-Date: 2023-05-09 22:59+0200\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -45,7 +45,7 @@ msgstr ""
 #, kde-format
 msgctxt "@label"
 msgid "Name:"
-msgstr ""
+msgstr "Nome:"
 
 #: ui/main.qml:33
 #, kde-format
@@ -63,7 +63,7 @@ msgstr ""
 #, kde-format
 msgctxt "@label"
 msgid "Type:"
-msgstr ""
+msgstr "Tipu:"
 
 #: ui/main.qml:45
 #, kde-format
@@ -75,7 +75,7 @@ msgstr ""
 #, kde-format
 msgctxt "@label"
 msgid "State:"
-msgstr ""
+msgstr "Estáu:"
 
 #: ui/main.qml:58
 #, kde-format

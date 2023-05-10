@@ -137,13 +137,13 @@ msgstr ""
 #: PlasmaEntry.cpp:15
 #, kde-format
 msgid "KDE Plasma Version:"
-msgstr ""
+msgstr "Versión de KDE Plasma:"
 
 #: ThirdPartyEntry.cpp:12
 #, kde-format
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
-msgstr ""
+msgstr ":"
 
 #: ui/main.qml:92
 #, kde-format
@@ -186,14 +186,3 @@ msgstr ""
 msgctxt "@action:button"
 msgid "Copy to Clipboard in English"
 msgstr ""
-
-#: PlasmaEntry.cpp:15
-#, kde-format
-msgid "KDE Plasma Version:"
-msgstr "Versión de KDE Plasma:"
-
-#: ThirdPartyEntry.cpp:12
-#, kde-format
-msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
-msgid ":"
-msgstr ":"
