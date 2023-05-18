@@ -334,23 +334,23 @@ private:
 
     Q_SIGNAL void changed();
 
-    Q_PROPERTY(EntryModel *softwareEntries MEMBER m_softwareEntries CONSTANT);
+    Q_PROPERTY(EntryModel *softwareEntries MEMBER m_softwareEntries CONSTANT)
     EntryModel *m_softwareEntries = new EntryModel(this);
-    Q_PROPERTY(EntryModel *hardwareEntries MEMBER m_hardwareEntries CONSTANT);
+    Q_PROPERTY(EntryModel *hardwareEntries MEMBER m_hardwareEntries CONSTANT)
     EntryModel *m_hardwareEntries = new EntryModel(this);
 
-    Q_PROPERTY(QString distroLogo MEMBER m_distroLogo NOTIFY changed);
+    Q_PROPERTY(QString distroLogo MEMBER m_distroLogo NOTIFY changed)
     QString m_distroLogo;
-    Q_PROPERTY(QString distroNameVersion MEMBER m_distroNameVersion NOTIFY changed);
+    Q_PROPERTY(QString distroNameVersion MEMBER m_distroNameVersion NOTIFY changed)
     QString m_distroNameVersion;
-    Q_PROPERTY(QString distroVariant MEMBER m_distroVariant NOTIFY changed);
+    Q_PROPERTY(QString distroVariant MEMBER m_distroVariant NOTIFY changed)
     QString m_distroVariant;
-    Q_PROPERTY(QString distroUrl MEMBER m_distroUrl NOTIFY changed);
+    Q_PROPERTY(QString distroUrl MEMBER m_distroUrl NOTIFY changed)
     QString m_distroUrl;
 
-    Q_PROPERTY(bool isEnglish MEMBER m_isEnglish CONSTANT);
+    Q_PROPERTY(bool isEnglish MEMBER m_isEnglish CONSTANT)
     const bool m_isEnglish = QLocale::system().language() == QLocale::English || QLocale::system().language() == QLocale::C;
-    Q_PROPERTY(bool isThisKInfoCenter MEMBER m_isThisKInfoCenter CONSTANT);
+    Q_PROPERTY(bool isThisKInfoCenter MEMBER m_isThisKInfoCenter CONSTANT)
     const bool m_isThisKInfoCenter = qGuiApp->desktopFileName() == QLatin1String("org.kde.kinfocenter");
 };
 
