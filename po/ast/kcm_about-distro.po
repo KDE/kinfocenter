@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-07 02:16+0000\n"
-"PO-Revision-Date: 2023-05-04 22:58+0200\n"
+"PO-Revision-Date: 2023-05-13 23:15+0200\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.0\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -101,13 +101,13 @@ msgstr "Versión de Qt:"
 #: MemoryEntry.cpp:20
 #, kde-format
 msgid "Memory:"
-msgstr ""
+msgstr "Memoria:"
 
 #: MemoryEntry.cpp:49
 #, kde-format
 msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
 msgid "%1 of RAM"
-msgstr ""
+msgstr "%1 de RAM"
 
 #: MemoryEntry.cpp:53
 #, kde-format
@@ -124,7 +124,7 @@ msgstr "Sistema operativu:"
 #, kde-format
 msgctxt "@label %1 is the distro name, %2 is the version"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: OSVersionEntry.cpp:13
 #, kde-format
@@ -132,7 +132,7 @@ msgctxt ""
 "@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
 "should be a number, or 'rolling'"
 msgid "%1 %2 Build: %3"
-msgstr ""
+msgstr "%1 %2 Compilación: %3"
 
 #: PlasmaEntry.cpp:15
 #, kde-format
@@ -185,4 +185,4 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard in English"
-msgstr ""
+msgstr "Copiar nel cartafueyu n'inglés"

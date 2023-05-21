@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-05 02:14+0000\n"
-"PO-Revision-Date: 2023-05-09 23:01+0200\n"
+"PO-Revision-Date: 2023-05-14 17:09+0200\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.0\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #: classes.i18n:2 usbdevices.cpp:66
 #, kde-format
@@ -189,7 +189,7 @@ msgstr ""
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Direct Line"
-msgstr ""
+msgstr "Llinia direuta"
 
 #: classes.i18n:31
 #, kde-format
@@ -390,7 +390,7 @@ msgstr ""
 #: usbdevices.cpp:225
 #, kde-format
 msgid "<b>Manufacturer:</b> "
-msgstr ""
+msgstr "<b>Fabricante:</b> "
 
 #: usbdevices.cpp:227
 #, kde-format
@@ -400,7 +400,7 @@ msgstr ""
 #: usbdevices.cpp:240
 #, kde-format
 msgid "<tr><td><i>Class</i></td>%1</tr>"
-msgstr ""
+msgstr "<tr><td><i>Clas</i></td>%1</tr>"
 
 #: usbdevices.cpp:245
 #, kde-format
@@ -410,7 +410,7 @@ msgstr ""
 #: usbdevices.cpp:250
 #, kde-format
 msgid "<tr><td><i>Protocol</i></td>%1</tr>"
-msgstr ""
+msgstr "<tr><td><i>Protocolu</i></td>%1</tr>"
 
 #: usbdevices.cpp:251
 #, kde-format
@@ -435,7 +435,7 @@ msgstr ""
 #: usbdevices.cpp:267
 #, kde-format
 msgid "<tr><td><i>Channels</i></td><td>%1</td></tr>"
-msgstr ""
+msgstr "<tr><td><i>Canales</i></td><td>%1</td></tr>"
 
 #: usbdevices.cpp:268
 #, kde-format
