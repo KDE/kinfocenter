@@ -1,12 +1,13 @@
 # Tomohiro Hyakutake <tomhioo@outlook.jp>, 2019.
 # Fumiaki Okushi <fumiaki.okushi@gmail.com>, 2019.
+# Ryuichi Yamada <ryuichi_ya220@outlook.jp>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-05 02:14+0000\n"
-"PO-Revision-Date: 2019-10-05 19:02-0700\n"
-"Last-Translator: Fumiaki Okushi <fumiaki.okushi@gmail.com>\n"
+"PO-Revision-Date: 2023-05-18 01:48+0900\n"
+"Last-Translator: Ryuichi Yamada <ryuichi_ya220@outlook.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -15,7 +16,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-"X-Generator: Lokalize 19.08.1\n"
+"X-Generator: Lokalize 23.04.0\n"
 
 #: ui/main.qml:47
 #, kde-format
@@ -40,7 +41,7 @@ msgstr "現在の充電"
 #: ui/main.qml:51 ui/main.qml:52
 #, kde-format
 msgid "%"
-msgstr ""
+msgstr "%"
 
 #: ui/main.qml:52
 #, kde-format
@@ -65,7 +66,7 @@ msgstr "シリアルナンバー"
 #: ui/main.qml:56
 #, kde-format
 msgid "Technology"
-msgstr ""
+msgstr "種類"
 
 #: ui/main.qml:60
 #, kde-format
@@ -82,7 +83,7 @@ msgstr "消費電力"
 #, kde-format
 msgctxt "Watt"
 msgid "W"
-msgstr ""
+msgstr "W"
 
 #: ui/main.qml:63
 #, kde-format
@@ -93,7 +94,7 @@ msgstr "電圧"
 #, kde-format
 msgctxt "Volt"
 msgid "V"
-msgstr ""
+msgstr "V"
 
 #: ui/main.qml:64
 #, kde-format
@@ -104,7 +105,7 @@ msgstr "残り容量"
 #, kde-format
 msgctxt "Watt-hours"
 msgid "Wh"
-msgstr ""
+msgstr "Wh"
 
 #: ui/main.qml:65
 #, kde-format
@@ -130,7 +131,7 @@ msgstr "温度"
 #, kde-format
 msgctxt "Degree Celsius"
 msgid "°C"
-msgstr ""
+msgstr "°C"
 
 #: ui/main.qml:79
 #, kde-format
@@ -155,38 +156,37 @@ msgstr "フル充電"
 #: ui/main.qml:88
 #, kde-format
 msgid "Lithium ion"
-msgstr ""
+msgstr "リチウムイオン"
 
 #: ui/main.qml:89
 #, kde-format
 msgid "Lithium polymer"
-msgstr ""
+msgstr "リチウムポリマー"
 
 #: ui/main.qml:90
 #, kde-format
 msgid "Lithium iron phosphate"
-msgstr ""
+msgstr "リン酸鉄リチウム"
 
 #: ui/main.qml:91
 #, kde-format
 msgid "Lead acid"
-msgstr ""
+msgstr "鉛蓄電池"
 
 #: ui/main.qml:92
 #, kde-format
 msgid "Nickel cadmium"
-msgstr ""
+msgstr "ニカド"
 
 #: ui/main.qml:93
 #, kde-format
 msgid "Nickel metal hydride"
-msgstr ""
+msgstr "ニッケル水素"
 
 #: ui/main.qml:94
-#, fuzzy, kde-format
-#| msgid "Unknown battery"
+#, kde-format
 msgid "Unknown technology"
-msgstr "不明なバッテリ"
+msgstr "不明"
 
 #: ui/main.qml:101
 #, kde-format
@@ -222,7 +222,7 @@ msgstr "過去7日間"
 #, kde-format
 msgctxt "@info:status"
 msgid "No energy information available on this system"
-msgstr ""
+msgstr "エネルギー情報は利用できません"
 
 #: ui/main.qml:173
 #, kde-format
@@ -280,38 +280,38 @@ msgstr "%1%"
 #, kde-format
 msgctxt "Shorthand for Watts"
 msgid "W"
-msgstr ""
+msgstr "W"
 
 #: ui/main.qml:248
 #, kde-format
 msgctxt "literal percent sign"
 msgid "%"
-msgstr ""
+msgstr "%"
 
 #: ui/main.qml:274
 #, kde-format
 msgid "Charge Percentage"
-msgstr ""
+msgstr "充電パーセンテージ"
 
 #: ui/main.qml:284
 #, kde-format
 msgid "Energy Consumption"
-msgstr ""
+msgstr "エネルギー消費"
 
 #: ui/main.qml:299
 #, kde-format
 msgid "Timespan"
-msgstr ""
+msgstr "タイムスパン"
 
 #: ui/main.qml:300
 #, kde-format
 msgid "Timespan of data to display"
-msgstr ""
+msgstr "表示するデータの期間"
 
 #: ui/main.qml:306
 #, kde-format
 msgid "Refresh"
-msgstr ""
+msgstr "再読み込み"
 
 #: ui/main.qml:318
 #, kde-format
@@ -321,7 +321,7 @@ msgstr "現在、この種類の履歴はこのデバイスでは利用できま
 #: ui/main.qml:376
 #, kde-format
 msgid "%1:"
-msgstr ""
+msgstr "%1:"
 
 #: ui/main.qml:387
 #, kde-format
@@ -337,7 +337,4 @@ msgstr "いいえ"
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
-msgstr ""
-
-#~ msgid "Energy Consumption Statistics"
-#~ msgstr "エネルギー消費の統計"
+msgstr "%1 %2"
