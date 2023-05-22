@@ -1,12 +1,13 @@
 # Tomohiro Hyakutake <tomhioo@outlook.jp>, 2019.
 # Fumiaki Okushi <fumiaki.okushi@gmail.com>, 2019.
+# Ryuichi Yamada <ryuichi_ya220@outlook.jp>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-16 00:48+0000\n"
-"PO-Revision-Date: 2019-10-05 19:02-0700\n"
-"Last-Translator: Fumiaki Okushi <fumiaki.okushi@gmail.com>\n"
+"PO-Revision-Date: 2023-05-18 01:48+0900\n"
+"Last-Translator: Ryuichi Yamada <ryuichi_ya220@outlook.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -15,17 +16,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-"X-Generator: Lokalize 19.08.1\n"
+"X-Generator: Lokalize 23.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Ryuichi Yamada"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "ryuichi_ya220@outlook.jp"
 
 #: kcm.cpp:41
 #, kde-format
@@ -35,12 +36,12 @@ msgstr "エネルギー消費の統計"
 #: kcm.cpp:42
 #, kde-format
 msgid "Kai Uwe Broulik"
-msgstr ""
+msgstr "Kai Uwe Broulik"
 
 #: package/contents/ui/main.qml:22
 #, kde-format
 msgid "This module lets you see energy information and statistics."
-msgstr ""
+msgstr "このモジュールでエネルギー情報と統計を確認できます。"
 
 #: package/contents/ui/main.qml:49
 #, kde-format
@@ -65,7 +66,7 @@ msgstr "現在の充電"
 #: package/contents/ui/main.qml:53 package/contents/ui/main.qml:54
 #, kde-format
 msgid "%"
-msgstr ""
+msgstr "%"
 
 #: package/contents/ui/main.qml:54
 #, kde-format
@@ -90,7 +91,7 @@ msgstr "シリアルナンバー"
 #: package/contents/ui/main.qml:58
 #, kde-format
 msgid "Technology"
-msgstr ""
+msgstr "種類"
 
 #: package/contents/ui/main.qml:62
 #, kde-format
@@ -107,7 +108,7 @@ msgstr "消費電力"
 #, kde-format
 msgctxt "Watt"
 msgid "W"
-msgstr ""
+msgstr "W"
 
 #: package/contents/ui/main.qml:65
 #, kde-format
@@ -118,7 +119,7 @@ msgstr "電圧"
 #, kde-format
 msgctxt "Volt"
 msgid "V"
-msgstr ""
+msgstr "V"
 
 #: package/contents/ui/main.qml:66
 #, kde-format
@@ -130,7 +131,7 @@ msgstr "残り容量"
 #, kde-format
 msgctxt "Watt-hours"
 msgid "Wh"
-msgstr ""
+msgstr "Wh"
 
 #: package/contents/ui/main.qml:67
 #, kde-format
@@ -156,7 +157,7 @@ msgstr "温度"
 #, kde-format
 msgctxt "Degree Celsius"
 msgid "°C"
-msgstr ""
+msgstr "°C"
 
 #: package/contents/ui/main.qml:81
 #, kde-format
@@ -181,38 +182,37 @@ msgstr "フル充電"
 #: package/contents/ui/main.qml:90
 #, kde-format
 msgid "Lithium ion"
-msgstr ""
+msgstr "リチウムイオン"
 
 #: package/contents/ui/main.qml:91
 #, kde-format
 msgid "Lithium polymer"
-msgstr ""
+msgstr "リチウムポリマー"
 
 #: package/contents/ui/main.qml:92
 #, kde-format
 msgid "Lithium iron phosphate"
-msgstr ""
+msgstr "リン酸鉄リチウム"
 
 #: package/contents/ui/main.qml:93
 #, kde-format
 msgid "Lead acid"
-msgstr ""
+msgstr "鉛蓄電池"
 
 #: package/contents/ui/main.qml:94
 #, kde-format
 msgid "Nickel cadmium"
-msgstr ""
+msgstr "ニカド"
 
 #: package/contents/ui/main.qml:95
 #, kde-format
 msgid "Nickel metal hydride"
-msgstr ""
+msgstr "ニッケル水素"
 
 #: package/contents/ui/main.qml:96
-#, fuzzy, kde-format
-#| msgid "Unknown battery"
+#, kde-format
 msgid "Unknown technology"
-msgstr "不明なバッテリ"
+msgstr "不明"
 
 #: package/contents/ui/main.qml:103
 #, kde-format
@@ -248,7 +248,7 @@ msgstr "過去7日間"
 #, kde-format
 msgctxt "@info:status"
 msgid "No energy information available on this system"
-msgstr ""
+msgstr "エネルギー情報は利用できません"
 
 #: package/contents/ui/main.qml:175
 #, kde-format
@@ -306,38 +306,38 @@ msgstr "%1%"
 #, kde-format
 msgctxt "Shorthand for Watts"
 msgid "W"
-msgstr ""
+msgstr "W"
 
 #: package/contents/ui/main.qml:250
 #, kde-format
 msgctxt "literal percent sign"
 msgid "%"
-msgstr ""
+msgstr "%"
 
 #: package/contents/ui/main.qml:276
 #, kde-format
 msgid "Charge Percentage"
-msgstr ""
+msgstr "充電パーセンテージ"
 
 #: package/contents/ui/main.qml:286
 #, kde-format
 msgid "Energy Consumption"
-msgstr ""
+msgstr "エネルギー消費"
 
 #: package/contents/ui/main.qml:301
 #, kde-format
 msgid "Timespan"
-msgstr ""
+msgstr "タイムスパン"
 
 #: package/contents/ui/main.qml:302
 #, kde-format
 msgid "Timespan of data to display"
-msgstr ""
+msgstr "表示するデータの期間"
 
 #: package/contents/ui/main.qml:308
 #, kde-format
 msgid "Refresh"
-msgstr ""
+msgstr "再読み込み"
 
 #: package/contents/ui/main.qml:320
 #, kde-format
@@ -347,7 +347,7 @@ msgstr "現在、この種類の履歴はこのデバイスでは利用できま
 #: package/contents/ui/main.qml:378
 #, kde-format
 msgid "%1:"
-msgstr ""
+msgstr "%1:"
 
 #: package/contents/ui/main.qml:389
 #, kde-format
@@ -363,4 +363,4 @@ msgstr "いいえ"
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
