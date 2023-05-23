@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-05 02:14+0000\n"
-"PO-Revision-Date: 2023-02-24 12:43\n"
+"PO-Revision-Date: 2023-05-22 13:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -14,8 +14,8 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf5-trunk/messages/kinfocenter/kcmusb.pot\n"
-"X-Crowdin-File-ID: 4423\n"
+"X-Crowdin-File: /kf6-trunk/messages/kinfocenter/kcmusb.pot\n"
+"X-Crowdin-File-ID: 43505\n"
 
 #: classes.i18n:2 usbdevices.cpp:66
 #, kde-format
@@ -441,33 +441,3 @@ msgstr "<tr><td><i>通道</i></td><td>%1</td></tr>"
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
 msgstr "<tr><td><i>最大包体积</i></td><td>%1</td></tr>"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Guo Yunhe, Tyson Tan"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "i@guoyunhe.me, tysontan@tysontan.com"
-
-#~ msgid ""
-#~ "This module allows you to see the devices attached to your USB bus(es)."
-#~ msgstr "本模块让您查看连接到 USB 总线上的设备。"
-
-#~ msgid "kcmusb"
-#~ msgstr "kcmusb"
-
-#~ msgid "USB Devices"
-#~ msgstr "USB设备"
-
-#~ msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
-#~ msgstr "(c) 2001 Matthias Hoelzer-Kluepfel"
-
-#~ msgid "Matthias Hoelzer-Kluepfel"
-#~ msgstr "Matthias Hoelzer-Kluepfel"
-
-#~ msgid "Leo Savernik"
-#~ msgstr "Leo Savernik"
-
-#~ msgid "Live Monitoring of USB Bus"
-#~ msgstr "实时监视 USB 总线"

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-07 02:16+0000\n"
-"PO-Revision-Date: 2023-02-24 12:43\n"
+"PO-Revision-Date: 2023-05-22 13:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -14,8 +14,8 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf5-trunk/messages/kinfocenter/kcm_about-distro.pot\n"
-"X-Crowdin-File-ID: 25683\n"
+"X-Crowdin-File: /kf6-trunk/messages/kinfocenter/kcm_about-distro.pot\n"
+"X-Crowdin-File-ID: 43017\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -49,7 +49,7 @@ msgstr "内核版本："
 #, kde-format
 msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
-msgstr "%1 (%2-位)"
+msgstr "%1 (%2 位)"
 
 #: main.cpp:185
 #, kde-format
@@ -142,7 +142,7 @@ msgstr "KDE Plasma 版本："
 #, kde-format
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
-msgstr ""
+msgstr ":"
 
 #: ui/main.qml:92
 #, kde-format
@@ -178,39 +178,10 @@ msgstr "硬件"
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
-msgstr ""
+msgstr "启动 %1"
 
 #: ui/main.qml:186
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard in English"
 msgstr "复制到剪贴板 (英文)"
-
-#~ msgctxt "@action:button launches kinfocenter from systemsettings"
-#~ msgid "Show More Information"
-#~ msgstr "显示更多信息"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "KDE China, Guo Yunhe, Tyson Tan, Weng Xuetian"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr ""
-#~ "kde-china@kde.org, i@guoyunhe.me, tysontan@tysontan.com, wengxt@gmail.com"
-
-#~ msgctxt "@title"
-#~ msgid "About this System"
-#~ msgstr "关于本机"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Copyright 2012-2020 Harald Sitter"
-#~ msgstr "Copyright 2012-2020 Harald Sitter"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Harald Sitter"
-#~ msgstr "Harald Sitter"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Author"
-#~ msgstr "作者"
