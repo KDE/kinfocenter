@@ -4,6 +4,8 @@
 # SPDX-FileCopyrightText: 2021-2022 Harald Sitter <sitter@kde.org>
 # SPDX-FileCopyrightText: 2023 Alexander Wilms <f.alexander.wilms@gmail.com>
 
+import re
+import subprocess
 import sys
 import unittest
 from appium import webdriver
@@ -44,13 +46,16 @@ class AboutThisSystemTests(unittest.TestCase):
         self.driver.get_screenshot_as_file(f"appium_artifact_screenshot_{self.__qualname__}_{sys._getframe().f_code.co_name}.png")
 
     @classmethod
-    def test_Energy(self):
-        self.driver.find_element(by=AppiumBy.NAME, value="Energy").click()
+    def test_CPU(self):
+        self.driver.find_element(by=AppiumBy.NAME, value="CPU").click()
+        self.driver.find_element(by=AppiumBy.NAME, value="Copy to Clipboard").click()
+        self.assertTrue(self, "64-bit" in self.driver.get_clipboard_text())
         self.driver.get_screenshot_as_file(f"appium_artifact_screenshot_{self.__qualname__}_{sys._getframe().f_code.co_name}.png")
 
     @classmethod
-    def test_NetworkInterfaces(self):
-        self.driver.find_element(by=AppiumBy.NAME, value="Network Interfaces").click()
+    def test_Wayland(self):
+        #subprocess.run(['zypper install -y wayland-info'])
+        self.driver.find_element(by=AppiumBy.NAME, value="Wayland").click()
         self.driver.get_screenshot_as_file(f"appium_artifact_screenshot_{self.__qualname__}_{sys._getframe().f_code.co_name}.png")
 
 
