@@ -35,6 +35,7 @@ class AboutThisSystemTests(unittest.TestCase):
     def setUp(self):
         pass
 
+    @classmethod
     def test_plasma_version_clipboard(self):
         self.driver.find_element(by=AppiumBy.NAME, value="About this System").click()
         self.driver.find_element(by=AppiumBy.NAME, value="Copy to Clipboard").click()
