@@ -43,7 +43,7 @@ class AboutThisSystemTests(unittest.TestCase):
         self.driver.find_element(by=AppiumBy.NAME, value="About this System").click()
         self.driver.find_element(by=AppiumBy.NAME, value="Copy to Clipboard").click()
         self.assertTrue(self, "Graphics Platform: Wayland" in self.driver.get_clipboard_text())
-        self.driver.get_screenshot_as_file("appium_artifact_screenshot_{}.png".format(self.__qualname__))
+        self.driver.get_screenshot_as_file(f"appium_artifact_screenshot_{self.__qualname__}_{sys._getframe().f_code.co_name}.png")
 
 
 if __name__ == '__main__':
