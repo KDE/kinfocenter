@@ -39,7 +39,7 @@ class AboutThisSystemTests(unittest.TestCase):
     def test_plasma_version_clipboard(self):
         self.driver.find_element(by=AppiumBy.NAME, value="About this System").click()
         self.driver.find_element(by=AppiumBy.NAME, value="Copy to Clipboard").click()
-        self.assertTrue("Graphics Platform: Wayland" in self.driver.get_clipboard_text())
+        self.assertTrue(self, "Graphics Platform: Wayland" in self.driver.get_clipboard_text())
         self.driver.get_screenshot_as_file("appium_artifact_screenshot_{}.png".format(self.__qualname__))
 
 
