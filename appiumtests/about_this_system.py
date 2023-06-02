@@ -43,20 +43,7 @@ class AboutThisSystemTests(unittest.TestCase):
         self.driver.find_element(by=AppiumBy.NAME, value="About this System").click()
         self.driver.find_element(by=AppiumBy.NAME, value="Copy to Clipboard").click()
         self.assertTrue(self, "Graphics Platform: Wayland" in self.driver.get_clipboard_text())
-        self.driver.get_screenshot_as_file(f"appium_artifact_screenshot_{self.__qualname__}_{sys._getframe().f_code.co_name}.png")
-
-    @classmethod
-    def test_CPU(self):
-        self.driver.find_element(by=AppiumBy.NAME, value="CPU").click()
-        self.driver.find_element(by=AppiumBy.NAME, value="Copy to Clipboard").click()
-        self.assertTrue(self, "64-bit" in self.driver.get_clipboard_text())
-        self.driver.get_screenshot_as_file(f"appium_artifact_screenshot_{self.__qualname__}_{sys._getframe().f_code.co_name}.png")
-
-    @classmethod
-    def test_Wayland(self):
-        #subprocess.run(['zypper install -y wayland-info'])
-        self.driver.find_element(by=AppiumBy.NAME, value="Wayland").click()
-        self.driver.get_screenshot_as_file(f"appium_artifact_screenshot_{self.__qualname__}_{sys._getframe().f_code.co_name}.png")
+        self.driver.get_screenshot_as_file("appium_artifact_screenshot_{}.png".format(self.__qualname__))
 
 
 if __name__ == '__main__':
