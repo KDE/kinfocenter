@@ -10,6 +10,7 @@ from appium.webdriver.common.appiumby import AppiumBy
 import selenium.common.exceptions
 from selenium.webdriver.support.ui import WebDriverWait
 
+
 class AboutThisSystemTests(unittest.TestCase):
     @classmethod
     def setUpClass(self):
@@ -28,7 +29,6 @@ class AboutThisSystemTests(unittest.TestCase):
 
     @classmethod
     def tearDownClass(self):
-        self.driver.get_screenshot_as_file("appium_artifact_screenshot_{}.png".format(self.__qualname__))
         # Make sure to terminate the driver again, lest it dangles.
         self.driver.quit()
 
@@ -39,7 +39,8 @@ class AboutThisSystemTests(unittest.TestCase):
         self.driver.find_element(by=AppiumBy.NAME, value="About this System").click()
         self.driver.find_element(by=AppiumBy.NAME, value="Copy to Clipboard").click()
         self.assertTrue("Graphics Platform: Wayland" in self.driver.get_clipboard_text())
+        self.driver.get_screenshot_as_file("appium_artifact_screenshot_{}.png".format(self.__qualname__))
+
 
 if __name__ == '__main__':
     unittest.main()
- 
