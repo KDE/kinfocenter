@@ -48,8 +48,8 @@ KCM.SimpleKCM {
             data: [
                 {label: i18n("Rechargeable"), value: "rechargeable"},
                 {label: i18n("Charge state"), value: "chargeState", modifier: "chargeState"},
-                {label: i18n("Current charge"), value: "chargePercent", unit: i18n("%"), precision: 0},
-                {label: i18n("Health"), value: "capacity", unit: i18n("%"), precision: 0},
+                {label: i18n("Current charge"), value: i18nc("Battery charge percentage", "%1%", chargePercent), precision: 0},
+                {label: i18n("Health"), value: i18nc("Battery health percentage", "%1%", capacity), precision: 0},
                 {label: i18n("Vendor"), value: "vendor", source:"Vendor"},
                 {label: i18n("Model"), value: "model", source:"Product"},
                 {label: i18n("Serial Number"), value: "serial"},
