@@ -8,10 +8,10 @@ import QtQuick.Controls 2.15 as QQC2
 import QtQuick.Layouts 1.2
 
 import org.kde.kirigami 2.14 as Kirigami
-import org.kde.kcm 1.3
+import org.kde.kcmutils as KCM
 import org.kde.kinfocenter.nic.private 1.0
 
-SimpleKCM {
+KCM.SimpleKCM {
     clip: true
 
     Kirigami.CardsLayout {

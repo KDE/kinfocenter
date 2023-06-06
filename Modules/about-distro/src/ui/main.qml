@@ -8,8 +8,7 @@ import QtQuick.Controls 2.5 as QQC2
 import QtQuick.Layouts 1.1
 
 import org.kde.kirigami 2.20 as Kirigami
-import org.kde.kcm 1.6 as KCM
-import org.kde.kcmutils 1.0
+import org.kde.kcmutils as KCM
 
 import org.kde.kinfocenter.about_distro.private 1.0
 
@@ -17,7 +16,7 @@ KCM.SimpleKCM {
     id: root
 
     // bugger off with all your buttons, we don't need any!
-    ConfigModule.buttons: ConfigModule.NoAdditionalButton
+    KCM.ConfigModule.buttons: KCM.ConfigModule.NoAdditionalButton
 
     implicitWidth: Kirigami.Units.gridUnit * 20
     implicitHeight: Kirigami.Units.gridUnit * 20

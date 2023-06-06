@@ -14,7 +14,7 @@ import org.kde.kinfocenter.energy.private 1.0
 
 import org.kde.plasma.core 2.0 as PlasmaCore
 
-import org.kde.kcm 1.1 as KCM
+import org.kde.kcmutils as KCM
 
 KCM.SimpleKCM {
     id: root

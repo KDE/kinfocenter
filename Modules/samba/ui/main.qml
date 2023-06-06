@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 // SPDX-FileCopyrightText: 2020 Harald Sitter <sitter@kde.org>
 
-import org.kde.kcm 1.4 as KCM
+import org.kde.kcmutils as KCM
 import QtQuick 2.14
 import org.kde.kirigami 2.12 as Kirigami
 import QtQuick.Controls 2.14 as QQC2
