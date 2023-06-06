@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-05 02:14+0000\n"
+"POT-Creation-Date: 2023-06-06 02:08+0000\n"
 "PO-Revision-Date: 2021-07-11 00:31+0400\n"
 "Last-Translator: Kheyyam Gojayev <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -37,15 +37,24 @@ msgstr "Doldurulma vəziyyəti"
 msgid "Current charge"
 msgstr "Hazırkı doldurulma"
 
-#: ui/main.qml:51 ui/main.qml:52
+#: ui/main.qml:51 ui/main.qml:199
 #, kde-format
-msgid "%"
-msgstr "%"
+msgctxt "Battery charge percentage"
+msgid "%1%"
+msgstr "%1%"
 
 #: ui/main.qml:52
 #, kde-format
 msgid "Health"
 msgstr "Vəziyyəti"
+
+#: ui/main.qml:52
+#, fuzzy, kde-format
+#| msgctxt "Battery charge percentage"
+#| msgid "%1%"
+msgctxt "Battery health percentage"
+msgid "%1%"
+msgstr "%1%"
 
 #: ui/main.qml:53
 #, kde-format
@@ -269,12 +278,6 @@ msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr "%1% (Doldurulur)"
 
-#: ui/main.qml:199
-#, kde-format
-msgctxt "Battery charge percentage"
-msgid "%1%"
-msgstr "%1%"
-
 #: ui/main.qml:248
 #, kde-format
 msgctxt "Shorthand for Watts"
@@ -337,6 +340,9 @@ msgstr "Xeyir"
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
+
+#~ msgid "%"
+#~ msgstr "%"
 
 #~ msgid "This module lets you see energy information and statistics."
 #~ msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-05 02:14+0000\n"
+"POT-Creation-Date: 2023-06-06 02:08+0000\n"
 "PO-Revision-Date: 2022-07-31 08:56+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -40,15 +40,24 @@ msgstr "Стан зарядженості"
 msgid "Current charge"
 msgstr "Поточний рівень заряду"
 
-#: ui/main.qml:51 ui/main.qml:52
+#: ui/main.qml:51 ui/main.qml:199
 #, kde-format
-msgid "%"
-msgstr "%"
+msgctxt "Battery charge percentage"
+msgid "%1%"
+msgstr "%1%"
 
 #: ui/main.qml:52
 #, kde-format
 msgid "Health"
 msgstr "Рівень зношеності"
+
+#: ui/main.qml:52
+#, fuzzy, kde-format
+#| msgctxt "Battery charge percentage"
+#| msgid "%1%"
+msgctxt "Battery health percentage"
+msgid "%1%"
+msgstr "%1%"
 
 #: ui/main.qml:53
 #, kde-format
@@ -272,12 +281,6 @@ msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr "%1% (заряджається)"
 
-#: ui/main.qml:199
-#, kde-format
-msgctxt "Battery charge percentage"
-msgid "%1%"
-msgstr "%1%"
-
 #: ui/main.qml:248
 #, kde-format
 msgctxt "Shorthand for Watts"
@@ -340,6 +343,9 @@ msgstr "Ні"
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
+
+#~ msgid "%"
+#~ msgstr "%"
 
 #~ msgid "This module lets you see energy information and statistics."
 #~ msgstr ""

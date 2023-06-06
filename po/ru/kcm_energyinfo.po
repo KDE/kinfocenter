@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-05 02:14+0000\n"
+"POT-Creation-Date: 2023-06-06 02:08+0000\n"
 "PO-Revision-Date: 2022-12-23 10:06+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -39,15 +39,26 @@ msgstr "Состояние заряда"
 msgid "Current charge"
 msgstr "Текущий заряд"
 
-#: ui/main.qml:51 ui/main.qml:52
+# BUGME: spacing depends on the actual unit. "%" often should not have a space in front of it. --aspotashev
+#: ui/main.qml:51 ui/main.qml:199
 #, kde-format
-msgid "%"
-msgstr "%"
+msgctxt "Battery charge percentage"
+msgid "%1%"
+msgstr "%1%"
 
 #: ui/main.qml:52
 #, kde-format
 msgid "Health"
 msgstr "Состояние"
+
+# BUGME: spacing depends on the actual unit. "%" often should not have a space in front of it. --aspotashev
+#: ui/main.qml:52
+#, fuzzy, kde-format
+#| msgctxt "Battery charge percentage"
+#| msgid "%1%"
+msgctxt "Battery health percentage"
+msgid "%1%"
+msgstr "%1%"
 
 #: ui/main.qml:53
 #, kde-format
@@ -271,13 +282,6 @@ msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr "%1% (заряжается)"
 
-# BUGME: spacing depends on the actual unit. "%" often should not have a space in front of it. --aspotashev
-#: ui/main.qml:199
-#, kde-format
-msgctxt "Battery charge percentage"
-msgid "%1%"
-msgstr "%1%"
-
 #: ui/main.qml:248
 #, kde-format
 msgctxt "Shorthand for Watts"
@@ -341,6 +345,9 @@ msgstr "Нет"
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
+
+#~ msgid "%"
+#~ msgstr "%"
 
 #~ msgid "This module lets you see energy information and statistics."
 #~ msgstr ""

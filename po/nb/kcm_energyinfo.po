@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-05 02:14+0000\n"
+"POT-Creation-Date: 2023-06-06 02:08+0000\n"
 "PO-Revision-Date: 2015-04-30 21:53+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -39,15 +39,24 @@ msgstr "Ladingstilstand"
 msgid "Current charge"
 msgstr ""
 
-#: ui/main.qml:51 ui/main.qml:52
+#: ui/main.qml:51 ui/main.qml:199
 #, kde-format
-msgid "%"
-msgstr "%"
+msgctxt "Battery charge percentage"
+msgid "%1%"
+msgstr ""
 
 #: ui/main.qml:52
 #, kde-format
 msgid "Health"
 msgstr ""
+
+#: ui/main.qml:52
+#, fuzzy, kde-format
+#| msgctxt "%1 is value, %2 is unit"
+#| msgid "%1 %2"
+msgctxt "Battery health percentage"
+msgid "%1%"
+msgstr "%1 %2"
 
 #: ui/main.qml:53
 #, kde-format
@@ -271,12 +280,6 @@ msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr ""
 
-#: ui/main.qml:199
-#, kde-format
-msgctxt "Battery charge percentage"
-msgid "%1%"
-msgstr ""
-
 #: ui/main.qml:248
 #, kde-format
 msgctxt "Shorthand for Watts"
@@ -339,3 +342,6 @@ msgstr "Nei"
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
+
+#~ msgid "%"
+#~ msgstr "%"

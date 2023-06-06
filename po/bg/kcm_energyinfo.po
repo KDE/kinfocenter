@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-05 02:14+0000\n"
+"POT-Creation-Date: 2023-06-06 02:08+0000\n"
 "PO-Revision-Date: 2022-05-21 07:03+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -37,15 +37,24 @@ msgstr "Състояние на заряд"
 msgid "Current charge"
 msgstr "Текущ заряд"
 
-#: ui/main.qml:51 ui/main.qml:52
+#: ui/main.qml:51 ui/main.qml:199
 #, kde-format
-msgid "%"
-msgstr "%"
+msgctxt "Battery charge percentage"
+msgid "%1%"
+msgstr "%1%"
 
 #: ui/main.qml:52
 #, kde-format
 msgid "Health"
 msgstr "Техническо състояние"
+
+#: ui/main.qml:52
+#, fuzzy, kde-format
+#| msgctxt "Battery charge percentage"
+#| msgid "%1%"
+msgctxt "Battery health percentage"
+msgid "%1%"
+msgstr "%1%"
 
 #: ui/main.qml:53
 #, kde-format
@@ -269,12 +278,6 @@ msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr "%1% (Зареждане)"
 
-#: ui/main.qml:199
-#, kde-format
-msgctxt "Battery charge percentage"
-msgid "%1%"
-msgstr "%1%"
-
 #: ui/main.qml:248
 #, kde-format
 msgctxt "Shorthand for Watts"
@@ -337,3 +340,6 @@ msgstr "Не"
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
+
+#~ msgid "%"
+#~ msgstr "%"
