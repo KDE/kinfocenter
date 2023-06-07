@@ -1,11 +1,11 @@
 # Burkhard Lück <lueck@hube-lueck.de>, 2015, 2016, 2018, 2019.
-# Frederik Schwarzer <schwarzer@kde.org>, 2015, 2020, 2022.
+# Frederik Schwarzer <schwarzer@kde.org>, 2015, 2020, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-06-06 02:08+0000\n"
-"PO-Revision-Date: 2022-02-13 20:37+0100\n"
+"PO-Revision-Date: 2023-06-06 23:25+0200\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-doc@kde.org>\n"
 "Language: de\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 21.08.0\n"
+"X-Generator: Lokalize 23.07.70\n"
 
 #: ui/main.qml:47
 #, kde-format
@@ -47,9 +47,7 @@ msgid "Health"
 msgstr "Alterungszustand"
 
 #: ui/main.qml:52
-#, fuzzy, kde-format
-#| msgctxt "Battery charge percentage"
-#| msgid "%1%"
+#, kde-format
 msgctxt "Battery health percentage"
 msgid "%1%"
 msgstr "%1 %"

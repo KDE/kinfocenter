@@ -50,9 +50,7 @@ msgid "Health"
 msgstr "Sağlık"
 
 #: ui/main.qml:52
-#, fuzzy, kde-format
-#| msgctxt "Battery charge percentage"
-#| msgid "%1%"
+#, kde-format
 msgctxt "Battery health percentage"
 msgid "%1%"
 msgstr "%​%1"
@@ -319,7 +317,7 @@ msgstr "Yenile"
 #: ui/main.qml:318
 #, kde-format
 msgid "This type of history is currently not available for this device."
-msgstr "Bu tür bir geçmiş şu anda bu aygıt için mevcut değil."
+msgstr "Bu tür bir geçmiş şu anda bu aygıt için kullanılamıyor."
 
 #: ui/main.qml:376
 #, kde-format
@@ -341,54 +339,3 @@ msgstr "Hayır"
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
-
-#~ msgid "%"
-#~ msgstr "%"
-
-#~ msgid "This module lets you see energy information and statistics."
-#~ msgstr ""
-#~ "Bu modül, enerji bilgisini ve istatistiklerini görmenize izin verir."
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Volkan Gezer"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "volkangezer@gmail.com"
-
-#~ msgid "Energy Consumption Statistics"
-#~ msgstr "Güç Tüketimi İstatistikleri"
-
-#~ msgid "Kai Uwe Broulik"
-#~ msgstr "Kai Uwe Broulik"
-
-#~ msgid "Application Energy Consumption"
-#~ msgstr "Uygulama Güç Tüketimi"
-
-#~ msgid "Path: %1"
-#~ msgstr "Yol: %1"
-
-#~ msgid "PID: %1"
-#~ msgstr "PID: %1"
-
-#~ msgid "Wakeups per second: %1 (%2%)"
-#~ msgstr "Saniyedeki uyanma sayısı: %1 (% %2)"
-
-#~ msgid "Details: %1"
-#~ msgstr "Ayrıntılar: %1"
-
-#~ msgid "Manufacturer"
-#~ msgstr "Üretici firma"
-
-#~ msgid "Full design"
-#~ msgstr "Tam tasarım"
-
-#~ msgid "System"
-#~ msgstr "Sistem"
-
-#~ msgid "Has power supply"
-#~ msgstr "Güç kaynağı var"
-
-#~ msgid "Capacity"
-#~ msgstr "Kapasite"
