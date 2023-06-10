@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-07 02:16+0000\n"
+"POT-Creation-Date: 2023-06-10 02:09+0000\n"
 "PO-Revision-Date: 2021-10-04 10:35+0300\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -151,43 +151,43 @@ msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ""
 
-#: ui/main.qml:92
+#: ui/main.qml:91
 #, kde-format
 msgctxt "@title"
 msgid "Serial Number"
 msgstr ""
 
-#: ui/main.qml:98 ui/main.qml:179
+#: ui/main.qml:97 ui/main.qml:178
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr "Αντιγραφή στο πρόχειρο"
 
-#: ui/main.qml:125
+#: ui/main.qml:124
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
 msgstr ""
 
-#: ui/main.qml:137
+#: ui/main.qml:136
 #, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "Λογισμικό"
 
-#: ui/main.qml:147
+#: ui/main.qml:146
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "Υλικό"
 
-#: ui/main.qml:167
+#: ui/main.qml:166
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
 msgstr ""
 
-#: ui/main.qml:186
+#: ui/main.qml:185
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard in English"
