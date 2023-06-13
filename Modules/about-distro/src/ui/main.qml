@@ -94,7 +94,7 @@ KCM.SimpleKCM {
                             standardButtons: Kirigami.Dialog.NoButton
                             customFooterActions: [
                                 Kirigami.Action {
-                                    text: i18nc("@action:button", "Copy to Clipboard")
+                                    text: i18nc("@action:button", "Copy")
                                     icon.name: "edit-copy"
                                     onTriggered: kcm.storeInClipboard(subtitle)
                                     shortcut: StandardKey.Copy
