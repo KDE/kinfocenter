@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-10 02:09+0000\n"
+"POT-Creation-Date: 2023-06-14 02:06+0000\n"
 "PO-Revision-Date: 2023-03-08 14:26+0100\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard]neuf.fr>\n"
 "Language-Team: fr\n"
@@ -161,11 +161,11 @@ msgctxt "@title"
 msgid "Serial Number"
 msgstr "Numéro de série"
 
-#: ui/main.qml:97 ui/main.qml:178
+#: ui/main.qml:97 ui/main.qml:179 ui/main.qml:187
 #, kde-format
 msgctxt "@action:button"
-msgid "Copy to Clipboard"
-msgstr "Copier vers le presse-papier"
+msgid "Copy"
+msgstr ""
 
 #: ui/main.qml:124
 #, kde-format
@@ -191,11 +191,25 @@ msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
 msgstr "Lancer %1"
 
-#: ui/main.qml:185
+#: ui/main.qml:190
 #, kde-format
-msgctxt "@action:button"
-msgid "Copy to Clipboard in English"
-msgstr "Copier vers le presse-papier en Anglais"
+msgctxt "@action:button Copy..."
+msgid "In current language"
+msgstr ""
+
+#: ui/main.qml:196
+#, kde-format
+msgctxt "@action:button Copy..."
+msgid "In English"
+msgstr ""
+
+#~ msgctxt "@action:button"
+#~ msgid "Copy to Clipboard"
+#~ msgstr "Copier vers le presse-papier"
+
+#~ msgctxt "@action:button"
+#~ msgid "Copy to Clipboard in English"
+#~ msgstr "Copier vers le presse-papier en Anglais"
 
 #~ msgctxt "@action:button launches kinfocenter from systemsettings"
 #~ msgid "Show More Information"

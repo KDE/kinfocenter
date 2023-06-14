@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-10 02:09+0000\n"
+"POT-Creation-Date: 2023-06-14 02:06+0000\n"
 "PO-Revision-Date: 2023-02-14 21:50+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -151,11 +151,11 @@ msgctxt "@title"
 msgid "Serial Number"
 msgstr "தொடர் எண்"
 
-#: ui/main.qml:97 ui/main.qml:178
+#: ui/main.qml:97 ui/main.qml:179 ui/main.qml:187
 #, kde-format
 msgctxt "@action:button"
-msgid "Copy to Clipboard"
-msgstr "பிடிப்புப்பலகைக்கு நகலெடு"
+msgid "Copy"
+msgstr ""
 
 #: ui/main.qml:124
 #, kde-format
@@ -181,11 +181,25 @@ msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
 msgstr ""
 
-#: ui/main.qml:185
+#: ui/main.qml:190
 #, kde-format
-msgctxt "@action:button"
-msgid "Copy to Clipboard in English"
-msgstr "பிடிப்புப்பலகைக்கு ஆங்கிலத்தில் நகலெடு"
+msgctxt "@action:button Copy..."
+msgid "In current language"
+msgstr ""
+
+#: ui/main.qml:196
+#, kde-format
+msgctxt "@action:button Copy..."
+msgid "In English"
+msgstr ""
+
+#~ msgctxt "@action:button"
+#~ msgid "Copy to Clipboard"
+#~ msgstr "பிடிப்புப்பலகைக்கு நகலெடு"
+
+#~ msgctxt "@action:button"
+#~ msgid "Copy to Clipboard in English"
+#~ msgstr "பிடிப்புப்பலகைக்கு ஆங்கிலத்தில் நகலெடு"
 
 #~ msgctxt "@action:button launches kinfocenter from systemsettings"
 #~ msgid "Show More Information"

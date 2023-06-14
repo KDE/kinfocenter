@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-10 02:09+0000\n"
+"POT-Creation-Date: 2023-06-14 02:06+0000\n"
 "PO-Revision-Date: 2023-03-06 10:04+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -151,11 +151,11 @@ msgctxt "@title"
 msgid "Serial Number"
 msgstr "Serienummer"
 
-#: ui/main.qml:97 ui/main.qml:178
+#: ui/main.qml:97 ui/main.qml:179 ui/main.qml:187
 #, kde-format
 msgctxt "@action:button"
-msgid "Copy to Clipboard"
-msgstr "Naar klembord kopiëren"
+msgid "Copy"
+msgstr ""
 
 #: ui/main.qml:124
 #, kde-format
@@ -181,11 +181,25 @@ msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
 msgstr "%1 opstarten"
 
-#: ui/main.qml:185
+#: ui/main.qml:190
 #, kde-format
-msgctxt "@action:button"
-msgid "Copy to Clipboard in English"
-msgstr "Naar klembord in het Engels kopiëren"
+msgctxt "@action:button Copy..."
+msgid "In current language"
+msgstr ""
+
+#: ui/main.qml:196
+#, kde-format
+msgctxt "@action:button Copy..."
+msgid "In English"
+msgstr ""
+
+#~ msgctxt "@action:button"
+#~ msgid "Copy to Clipboard"
+#~ msgstr "Naar klembord kopiëren"
+
+#~ msgctxt "@action:button"
+#~ msgid "Copy to Clipboard in English"
+#~ msgstr "Naar klembord in het Engels kopiëren"
 
 #~ msgctxt "@action:button launches kinfocenter from systemsettings"
 #~ msgid "Show More Information"

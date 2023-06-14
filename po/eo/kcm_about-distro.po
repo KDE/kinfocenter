@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-10 02:09+0000\n"
+"POT-Creation-Date: 2023-06-14 02:06+0000\n"
 "PO-Revision-Date: 2023-03-25 23:06+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
@@ -152,11 +152,11 @@ msgctxt "@title"
 msgid "Serial Number"
 msgstr "Seria Numero"
 
-#: ui/main.qml:97 ui/main.qml:178
+#: ui/main.qml:97 ui/main.qml:179 ui/main.qml:187
 #, kde-format
 msgctxt "@action:button"
-msgid "Copy to Clipboard"
-msgstr "Kopii al tondujo"
+msgid "Copy"
+msgstr ""
 
 #: ui/main.qml:124
 #, kde-format
@@ -182,8 +182,22 @@ msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
 msgstr "Lanĉi %1"
 
-#: ui/main.qml:185
+#: ui/main.qml:190
 #, kde-format
-msgctxt "@action:button"
-msgid "Copy to Clipboard in English"
-msgstr "Kopii al Tondujo en la angla"
+msgctxt "@action:button Copy..."
+msgid "In current language"
+msgstr ""
+
+#: ui/main.qml:196
+#, kde-format
+msgctxt "@action:button Copy..."
+msgid "In English"
+msgstr ""
+
+#~ msgctxt "@action:button"
+#~ msgid "Copy to Clipboard"
+#~ msgstr "Kopii al tondujo"
+
+#~ msgctxt "@action:button"
+#~ msgid "Copy to Clipboard in English"
+#~ msgstr "Kopii al Tondujo en la angla"
