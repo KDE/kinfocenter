@@ -12,8 +12,6 @@ import org.kde.kirigami 2.20 as Kirigami
 import org.kde.kquickcontrolsaddons 2.0
 import org.kde.kinfocenter.energy.private 1.0
 
-import org.kde.plasma.core 2.0 as PlasmaCore
-
 import org.kde.kcmutils as KCM
 
 KCM.SimpleKCM {
