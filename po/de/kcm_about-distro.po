@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-06-14 02:06+0000\n"
-"PO-Revision-Date: 2023-03-17 23:13+0100\n"
+"PO-Revision-Date: 2023-06-15 13:58+0200\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.07.70\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -153,7 +153,7 @@ msgstr "Seriennummer"
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
-msgstr ""
+msgstr "Kopieren"
 
 #: ui/main.qml:124
 #, kde-format
@@ -183,13 +183,13 @@ msgstr "%1 starten"
 #, kde-format
 msgctxt "@action:button Copy..."
 msgid "In current language"
-msgstr ""
+msgstr "In aktueller Sprache"
 
 #: ui/main.qml:196
 #, kde-format
 msgctxt "@action:button Copy..."
 msgid "In English"
-msgstr ""
+msgstr "Auf Englisch"
 
 #~ msgctxt "@action:button"
 #~ msgid "Copy to Clipboard"
