@@ -1,20 +1,20 @@
 # translation of kcm_pci.po to galician
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-#
 # mvillarino <mvillarino@users.sourceforge.net>, 2008, 2009.
 # marce villarino <mvillarino@users.sourceforge.net>, 2009.
 # marce villarino <mvillarino@gmail.com>, 2009.
 # Marce Villarino <mvillarino@kde-espana.es>, 2009.
 # Marce Villarino <mvillarino@kde-espana.es>, 2011, 2012, 2014.
 # Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail.com>, 2016, 2017.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2019.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2019, 2023.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm_pci\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-05-24 00:45+0000\n"
-"PO-Revision-Date: 2019-08-19 21:24+0200\n"
+"PO-Revision-Date: 2023-06-18 16:11+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 19.04.3\n"
+"X-Generator: Lokalize 23.04.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -35,23 +35,20 @@ msgid "Your emails"
 msgstr "mvillarino@users.sourceforge.net"
 
 #: main.cpp:26
-#, fuzzy, kde-format
-#| msgid "PCI-X"
+#, kde-format
 msgctxt "@label kcm name"
 msgid "PCI"
-msgstr "PCI-X"
+msgstr "PCI"
 
 #: main.cpp:27
 #, kde-format
 msgid "Harald Sitter"
-msgstr ""
+msgstr "Harald Sitter"
 
 #: package/contents/ui/main.qml:14
-#, fuzzy
-#| msgid "Information"
 msgctxt "@info:whatsthis"
 msgid "PCI Information"
-msgstr "Información"
+msgstr "Información de PCI."
 
 #~ msgid "kcm_pci"
 #~ msgstr "kcm_pci"

@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-#
 # Adrián Chaves Fernández <adriyetichaves@gmail.com>, 2015, 2017.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2019.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2019, 2023.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-16 00:48+0000\n"
-"PO-Revision-Date: 2019-10-19 22:07+0200\n"
+"PO-Revision-Date: 2023-06-18 19:41+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 19.11.70\n"
+"X-Generator: Lokalize 23.04.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -249,7 +249,7 @@ msgstr "Últimos 7 días"
 #, kde-format
 msgctxt "@info:status"
 msgid "No energy information available on this system"
-msgstr ""
+msgstr "Non hai información de enerxía dispoñíbel no sistema."
 
 #: package/contents/ui/main.qml:175
 #, kde-format
@@ -333,7 +333,7 @@ msgstr "Duración"
 #: package/contents/ui/main.qml:302
 #, kde-format
 msgid "Timespan of data to display"
-msgstr "Duración dos datos que se mostran."
+msgstr "Duración dos datos que se amosan."
 
 #: package/contents/ui/main.qml:308
 #, kde-format
