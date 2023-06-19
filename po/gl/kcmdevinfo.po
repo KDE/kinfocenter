@@ -1,29 +1,30 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-#
 # Xosé <xosecalvo@gmail.com>, 2010.
 # Marce Villarino <mvillarino@kde-espana.es>, 2012, 2013, 2014.
 # Adrián Chaves Fernández <adriyetichaves@gmail.com>, 2015, 2016.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2023.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-19 02:06+0000\n"
-"PO-Revision-Date: 2018-04-22 09:28+0100\n"
-"Last-Translator: Adrian Chaves <adrian@chaves.io>\n"
-"Language-Team: Galician <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2023-06-18 20:05+0200\n"
+"Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
+"Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 23.04.2\n"
 
 #: devicelisting.cpp:41
 #, kde-format
 msgctxt "Device Listing Whats This"
 msgid "Shows all the devices that are currently listed."
-msgstr "Mostra todos os dispositivos que aparecen na lista."
+msgstr "Amosar todos os dispositivos que aparecen na lista."
 
 #: devicelisting.cpp:44
 #, kde-format
@@ -43,12 +44,12 @@ msgstr "Expandilo todo"
 #: devicelisting.cpp:63
 #, kde-format
 msgid "Show All Devices"
-msgstr "Mostrar todos os dispositivos"
+msgstr "Amosar todos os dispositivos"
 
 #: devicelisting.cpp:66
 #, kde-format
 msgid "Show Relevant Devices"
-msgstr "Mostrar os dispositivos relevantes"
+msgstr "Amosar os dispositivos relevantes"
 
 #: devicelisting.cpp:95
 #, kde-format
@@ -71,8 +72,7 @@ msgstr "UDI: "
 #, kde-format
 msgctxt "Udi Whats This"
 msgid "Shows the current device's UDI (Unique Device Identifier)"
-msgstr ""
-"Mostra o UDI do dispositivo actual (Identificador único de dispositivo)"
+msgstr "Amosa o UDI do dispositivo actual (Identificador único de dispositivo)"
 
 #: infopanel.cpp:20
 #, kde-format
@@ -83,7 +83,7 @@ msgstr "Información do dispositivo"
 #, kde-format
 msgctxt "Info Panel Whats This"
 msgid "Shows information about the currently selected device."
-msgstr "Mostra información sobre o dispositivo seleccionado."
+msgstr "Amosa información sobre o dispositivo seleccionado."
 
 #: infopanel.cpp:56
 #, kde-format
@@ -97,7 +97,7 @@ msgstr ""
 #: infopanel.cpp:119
 #, kde-format
 msgid "Description: "
-msgstr ""
+msgstr "Descrición: "
 
 #: infopanel.cpp:121
 #, kde-format
@@ -168,28 +168,24 @@ msgid "Intel SSE3"
 msgstr "Intel SSE3"
 
 #: soldevicetypes.cpp:88
-#, fuzzy, kde-format
-#| msgid "Intel SSE3"
+#, kde-format
 msgid "Intel SSSE3"
-msgstr "Intel SSE3"
+msgstr "Intel SSSE3"
 
 #: soldevicetypes.cpp:91
-#, fuzzy, kde-format
-#| msgid "Intel SSE4"
+#, kde-format
 msgid "Intel SSE4.1"
-msgstr "Intel SSE4"
+msgstr "Intel SSE4.1"
 
 #: soldevicetypes.cpp:94
-#, fuzzy, kde-format
-#| msgid "Intel SSE4"
+#, kde-format
 msgid "Intel SSE4.2"
-msgstr "Intel SSE4"
+msgstr "Intel SSE4.2"
 
 #: soldevicetypes.cpp:97
-#, fuzzy, kde-format
-#| msgid "AMD 3DNow"
+#, kde-format
 msgid "AMD 3DNow!"
-msgstr "AMD 3DNow"
+msgstr "AMD 3DNow!"
 
 #: soldevicetypes.cpp:100
 #, kde-format
@@ -389,7 +385,7 @@ msgstr "Tamaño do volume:"
 #, kde-format
 msgctxt "Available space out of total partition size (percent used)"
 msgid "%1 free of %2 (%3% used)"
-msgstr "%1 de %2 libres (%3% empregado)"
+msgstr "%1 de %2 libres (%3% en uso)"
 
 #: soldevicetypes.cpp:303
 #, kde-format

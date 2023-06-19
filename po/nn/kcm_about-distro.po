@@ -195,11 +195,3 @@ msgstr ""
 msgctxt "@action:button Copy..."
 msgid "In English"
 msgstr ""
-
-#~ msgctxt "@action:button"
-#~ msgid "Copy to Clipboard"
-#~ msgstr "Kopier til utklippstavla"
-
-#~ msgctxt "@action:button"
-#~ msgid "Copy to Clipboard in English"
-#~ msgstr "Kopier på engelsk til utklippstavla"
