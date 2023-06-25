@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-06-14 02:06+0000\n"
-"PO-Revision-Date: 2023-03-12 10:48+0200\n"
+"PO-Revision-Date: 2023-05-27 11:27+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.04.0\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -64,13 +64,13 @@ msgstr "Valmistaja:"
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
-msgstr "Tuotteen nimi:"
+msgstr "Mallinimi:"
 
 #: main.cpp:191
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
-msgstr "Järjestelmän versio:"
+msgstr "Järjestelmäversio:"
 
 #: main.cpp:194 main.cpp:208
 #, kde-format
@@ -109,7 +109,7 @@ msgstr "Muisti:"
 #, kde-format
 msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
 msgid "%1 of RAM"
-msgstr "%1 keskusmuistia"
+msgstr "Keskusmuistia %1"
 
 #: MemoryEntry.cpp:53
 #, kde-format

@@ -1,7 +1,7 @@
 # Finnish messages for kcmdevinfo.
 # Copyright © 2010, 2011 This_file_is_part_of_KDE
 # This file is distributed under the same license as the kdebase package.
-# Tommi Nieminen <translator@legisign.org>, 2010, 2011, 2012, 2015, 2018, 2020.
+# Tommi Nieminen <translator@legisign.org>, 2010, 2011, 2012, 2015, 2018, 2020, 2023.
 # Lasse Liehu <lliehu@kolumbus.fi>, 2011, 2012, 2013, 2014, 2015, 2016.
 # Jorma Karvonen <karvonen.jorma@gmail.com>, 2011.
 #
@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kcmdevinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-19 02:06+0000\n"
-"PO-Revision-Date: 2020-06-18 19:15+0300\n"
+"PO-Revision-Date: 2023-05-27 11:24+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-POT-Import-Date: 2012-12-01 22:22:21+0000\n"
-"X-Generator: Lokalize 20.04.2\n"
+"X-Generator: Lokalize 23.04.0\n"
 
 #: devicelisting.cpp:41
 #, kde-format
@@ -75,7 +75,7 @@ msgstr "UDI: "
 #, kde-format
 msgctxt "Udi Whats This"
 msgid "Shows the current device's UDI (Unique Device Identifier)"
-msgstr "Näytä nykyisen laitteen UDIn (ainutkertainen laitetunniste)"
+msgstr "Näyttää valitun laitteen UDIn (ainutkertaisen laitetunnisteen)"
 
 #: infopanel.cpp:20
 #, kde-format
@@ -95,17 +95,18 @@ msgid ""
 "Solid Based Device Viewer Module"
 msgstr ""
 "\n"
-"Solid-perustainen laitteenkatselinmoduuli"
+"Solid-pohjainen laiteselain"
 
 #: infopanel.cpp:119
 #, kde-format
 msgid "Description: "
 msgstr "Kuvaus: "
 
+# Tämä on pikemmin ”malli” kuin ”tuote”. ”Valmistaja” seuraa, mutta usein sen jono on tyhjä ja valmistajakin tulee tämän alle.
 #: infopanel.cpp:121
 #, kde-format
 msgid "Product: "
-msgstr "Tuote: "
+msgstr "Malli: "
 
 #: infopanel.cpp:123
 #, kde-format
@@ -204,7 +205,7 @@ msgstr "Ei mitään"
 #: soldevicetypes.cpp:106
 #, kde-format
 msgid "Processor Number: "
-msgstr "Suorittimen numero: "
+msgstr "Suoritin numero: "
 
 #: soldevicetypes.cpp:106
 #, kde-format
@@ -306,7 +307,7 @@ msgstr "Väylä: "
 #: soldevicetypes.cpp:213
 #, kde-format
 msgid "Hotpluggable?"
-msgstr "Ajonaikaisesti kytkettävä?"
+msgstr "Vaihdettavissa ajonaikaisesti?"
 
 #: soldevicetypes.cpp:213
 #, kde-format
@@ -372,7 +373,7 @@ msgstr "UUID: "
 #: soldevicetypes.cpp:282
 #, kde-format
 msgid "Mounted At: "
-msgstr "Liitettynä kansioon:"
+msgstr "Liitetty kansioon:"
 
 #: soldevicetypes.cpp:282
 #, kde-format
@@ -393,7 +394,7 @@ msgstr "%1/%2 (%3 % käytössä)"
 #: soldevicetypes.cpp:303
 #, kde-format
 msgid "No data available"
-msgstr "Tietoa ei saatavilla"
+msgstr "Tieto ei saatavilla"
 
 #: soldevicetypes.cpp:330
 #, kde-format
@@ -491,12 +492,12 @@ msgstr "Purkautuu"
 #: soldevicetypes.cpp:472
 #, kde-format
 msgid "Fully Charged"
-msgstr "Täydessä latauksessa"
+msgstr "Täysi lataus"
 
 #: soldevicetypes.cpp:475
 #, kde-format
 msgid "No Charge"
-msgstr "Ei latausta"
+msgstr "Tyhjä"
 
 #: soldevicetypes.cpp:478
 #, kde-format
