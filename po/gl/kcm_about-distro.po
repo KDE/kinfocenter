@@ -2,22 +2,22 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Adrián Chaves Fernández <adriyetichaves@gmail.com>, 2013, 2015, 2016.
 # Marce Villarino <mvillarino@kde-espana.org>, 2013.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2020.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2020, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-08 02:41+0000\n"
-"PO-Revision-Date: 2020-01-05 18:38+0100\n"
+"PO-Revision-Date: 2023-06-28 07:56+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
-"Language-Team: Galician <kde-i18n-doc@kde.org>\n"
+"Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 19.08.3\n"
+"X-Generator: Lokalize 23.04.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -37,27 +37,21 @@ msgstr[0] "Procesador:"
 msgstr[1] "Procesadores:"
 
 #: CPUEntry.cpp:22
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt ""
 "unknown CPU type/product name; presented as `Processors: 4 × Unknown Type'"
 msgid "Unknown Type"
-msgstr "Descoñecida"
+msgstr "Tipo descoñecido"
 
 #: GPUEntry.cpp:19
-#, fuzzy, kde-format
-#| msgid "Processor:"
-#| msgid_plural "Processors:"
+#, kde-format
 msgid "Graphics Processor:"
-msgstr "Procesador:"
+msgstr "Procesador gráfico:"
 
 #: GraphicsPlatformEntry.cpp:10
-#, fuzzy, kde-format
-#| msgid "Processor:"
-#| msgid_plural "Processors:"
+#, kde-format
 msgid "Graphics Platform:"
-msgstr "Procesador:"
+msgstr "Plataforma gráfica:"
 
 #: KernelEntry.cpp:11
 #, kde-format
@@ -65,26 +59,22 @@ msgid "Kernel Version:"
 msgstr "Versión do núcleo:"
 
 #: KernelEntry.cpp:23
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the CPU bit width (e.g. 32 or 64)"
-#| msgid "%1-bit"
+#, kde-format
 msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
-msgstr "%1 bits"
+msgstr "%1 (%2 bits)"
 
 #: main.cpp:111
 #, kde-format
 msgctxt "@title"
 msgid "About this System"
-msgstr ""
+msgstr "Sobre o sistema"
 
 #: main.cpp:114
-#, fuzzy, kde-format
-#| msgctxt "@info:credit"
-#| msgid "Copyright 2012-2014 Harald Sitter"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Copyright 2012-2020 Harald Sitter"
-msgstr "© 2012-2014 Harald Sitter"
+msgstr "© 2012-2020 Harald Sitter."
 
 #: main.cpp:115
 #, kde-format
@@ -96,47 +86,43 @@ msgstr "Harald Sitter"
 #, kde-format
 msgctxt "@info:credit"
 msgid "Author"
-msgstr "Autor."
+msgstr "Autoría."
 
 #: main.cpp:190
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
-msgstr ""
+msgstr "Fabricante:"
 
 #: main.cpp:193 main.cpp:210
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
-msgstr ""
+msgstr "Nome do produto:"
 
 #: main.cpp:196
-#, fuzzy, kde-format
-#| msgid "Qt Version:"
+#, kde-format
 msgctxt "@label"
 msgid "System Version:"
-msgstr "Versión de Qt:"
+msgstr "Versión do sistema:"
 
 #: main.cpp:199 main.cpp:213
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
-msgstr ""
+msgstr "Número de serie:"
 
 #: main.cpp:203 main.cpp:220
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
-msgstr "Descoñecida"
+msgstr "Descoñecida:"
 
 #: main.cpp:216
-#, fuzzy, kde-format
-#| msgid "Qt Version:"
+#, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
-msgstr "Versión de Qt:"
+msgstr "Versión de U-Boot:"
 
 #: main.cpp:254
 #, kde-format
@@ -166,17 +152,12 @@ msgid "Unknown"
 msgstr "Descoñecida"
 
 #: OSVersionEntry.cpp:9
-#, fuzzy, kde-format
-#| msgctxt "@title:row"
-#| msgid "Operating System:"
+#, kde-format
 msgid "Operating System:"
 msgstr "Sistema operativo:"
 
 #: OSVersionEntry.cpp:11
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "%1 is a label already including a colon, %2 is the corresponding value"
-#| msgid "%1 %2"
+#, kde-format
 msgctxt "@label %1 is the distro name, %2 is the version"
 msgid "%1 %2"
 msgstr "%1 %2"
@@ -187,17 +168,16 @@ msgctxt ""
 "@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
 "should be a number, or 'rolling'"
 msgid "%1 %2 Build: %3"
-msgstr ""
+msgstr "%1 %2, construción: %3"
 
 #: package/contents/ui/main.qml:91
 #, kde-format
 msgctxt "@title"
 msgid "Serial Number"
-msgstr ""
+msgstr "Número de serie"
 
 #: package/contents/ui/main.qml:97 package/contents/ui/main.qml:177
-#, fuzzy, kde-format
-#| msgid "Copy to Clipboard"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr "Copiar no portapapeis"
@@ -206,18 +186,16 @@ msgstr "Copiar no portapapeis"
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
-msgstr ""
+msgstr "Amosar"
 
 #: package/contents/ui/main.qml:135
-#, fuzzy, kde-format
-#| msgid "Software"
+#, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "Software"
 
 #: package/contents/ui/main.qml:145
-#, fuzzy, kde-format
-#| msgid "Hardware"
+#, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "Soporte físico"
@@ -226,11 +204,10 @@ msgstr "Soporte físico"
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Show More Information"
-msgstr ""
+msgstr "Amosar máis información"
 
 #: package/contents/ui/main.qml:184
-#, fuzzy, kde-format
-#| msgid "Copy to Clipboard in English"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard in English"
 msgstr "Copiar en inglés no portapapeis"
