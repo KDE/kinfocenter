@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-06-14 02:06+0000\n"
-"PO-Revision-Date: 2023-03-10 22:07+0100\n"
+"PO-Revision-Date: 2023-07-15 14:32+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.04.3\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -158,7 +158,7 @@ msgstr "Serienummer"
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
-msgstr ""
+msgstr "Kopier"
 
 #: ui/main.qml:124
 #, kde-format
@@ -188,10 +188,10 @@ msgstr "Start %1"
 #, kde-format
 msgctxt "@action:button Copy..."
 msgid "In current language"
-msgstr ""
+msgstr "På noverande språk"
 
 #: ui/main.qml:196
 #, kde-format
 msgctxt "@action:button Copy..."
 msgid "In English"
-msgstr ""
+msgstr "På engelsk"
