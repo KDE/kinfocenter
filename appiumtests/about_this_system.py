@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
 
+# Execute tests with the following command:
+# selenium-webdriver-at-spi-run appiumtests/about_this_system.py
+
 # SPDX-License-Identifier: MIT
 # SPDX-FileCopyrightText: 2021-2022 Harald Sitter <sitter@kde.org>
 # SPDX-FileCopyrightText: 2023 Alexander Wilms <f.alexander.wilms@gmail.com>
 
-import re
-import subprocess
+import logging
 import sys
 import unittest
+
 from appium import webdriver
 from appium.webdriver.common.appiumby import AppiumBy
-import selenium.common.exceptions
-from selenium.webdriver.support.ui import WebDriverWait
+from colorama import Fore, Style
 
 
 class AboutThisSystemTests(unittest.TestCase):
@@ -32,6 +34,8 @@ class AboutThisSystemTests(unittest.TestCase):
 
     @classmethod
     def tearDownClass(self):
+        log = logging.getLogger("log")
+        log.debug(Style.RESET_ALL)
         # Make sure to terminate the driver again, lest it dangles.
         self.driver.quit()
 
@@ -42,9 +46,45 @@ class AboutThisSystemTests(unittest.TestCase):
     def test_plasma_version_clipboard(self):
         self.driver.find_element(by=AppiumBy.NAME, value="About this System").click()
         self.driver.find_element(by=AppiumBy.NAME, value="Copy to Clipboard").click()
-        self.assertTrue(self, "Graphics Platform: Wayland" in self.driver.get_clipboard_text())
+        text = self.driver.get_clipboard_text()
+        log = logging.getLogger("log")
+        log.debug(Fore.GREEN+"Contents of clipboard:")
+        log.debug(Fore.GREEN+text)
+        log.debug(Style.RESET_ALL)
+        self.assertTrue(self, "Graphics Platform: Wayland" in text)
         self.driver.get_screenshot_as_file(f"appium_artifact_screenshot_{self.__qualname__}_{sys._getframe().f_code.co_name}.png")
 
+    # @classmethod
+    # def test_CPU(self):
+    #     self.driver.find_element(by=AppiumBy.NAME, value="Devices").click()
+    #     self.driver.find_element(by=AppiumBy.NAME, value="CPU").click()
+    #     #time.sleep(10)
+    #     self.driver.find_element(by=AppiumBy.NAME, value="Copy to Clipboard").click()
+    #     clipboard_contents = self.driver.get_clipboard_text()
+    #     log = logging.getLogger("log")
+    #     log.debug(Fore.GREEN+"Contents of clipboard:")
+    #     log.debug(Fore.GREEN+clipboard_contents)
+    #     log.debug(Style.RESET_ALL)
+    #     self.assertTrue(self, "64-bit" in clipboard_contents)
+    #     self.driver.get_screenshot_as_file(f"appium_artifact_screenshot_{self.__qualname__}_{sys._getframe().f_code.co_name}.png")
+
+    # @classmethod
+    # def test_Wayland(self):
+    #     # subprocess.run(['zypper install -y wayland-info'])
+    #     self.driver.find_element(by=AppiumBy.NAME, value="Graphics").click()
+    #     self.driver.find_element(by=AppiumBy.NAME, value="Wayland").click()
+    #     self.driver.find_element(by=AppiumBy.NAME, value="Copy to Clipboard").click()
+    #     clipboard_contents = self.driver.get_clipboard_text()
+    #     self.assertTrue(self, "interface: 'wl_compositor'" in clipboard_contents)
+    #     self.driver.get_screenshot_as_file(f"appium_artifact_screenshot_{self.__qualname__}_{sys._getframe().f_code.co_name}.png")
+
+    # @classmethod
+    # def test_get_clipboard(self):
+    #     self.driver.set_clipboard_text("asdf")
+    #     text = self.driver.get_clipboard_text()
+    #     self.assertEqual(text, "asdf", "oops")
 
 if __name__ == '__main__':
+    logging.basicConfig( stream=sys.stderr )
+    logging.getLogger("log").setLevel( logging.DEBUG )
     unittest.main()
