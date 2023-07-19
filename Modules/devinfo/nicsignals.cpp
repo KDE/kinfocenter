@@ -34,3 +34,5 @@ void NicSignals::nicChangedSignal(int ns, int os, int reason)
         Q_EMIT nicActivatedOrDisconnected();
     }
 }
+
+#include "moc_nicsignals.cpp"

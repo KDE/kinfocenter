@@ -89,3 +89,5 @@ QHash<int, QByteArray> BatteryModel::roleNames() const
 {
     return {{BatteryRole, "battery"}, {VendorRole, "vendor"}, {ProductRole, "product"}, {UdiRole, "udi"}};
 }
+
+#include "moc_batterymodel.cpp"

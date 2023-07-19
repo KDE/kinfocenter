@@ -146,3 +146,5 @@ QString InfoPanel::convertTf(bool b)
     }
     return i18n("No");
 }
+
+#include "moc_infopanel.cpp"

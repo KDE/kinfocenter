@@ -187,3 +187,5 @@ void StatisticsProvider::load()
         Q_EMIT dataChanged();
     });
 }
+
+#include "moc_statisticsprovider.cpp"

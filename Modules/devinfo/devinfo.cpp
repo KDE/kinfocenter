@@ -84,3 +84,5 @@ void DevInfoPlugin::updateStatus(const QString &message)
 }
 
 #include "devinfo.moc"
+
+#include "moc_devinfo.cpp"

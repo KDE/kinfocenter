@@ -43,3 +43,5 @@ bool ServiceRunner::canRun() const
 {
     return !m_desktopFileName.isEmpty() && m_service && m_service->isValid();
 }
+
+#include "moc_ServiceRunner.cpp"

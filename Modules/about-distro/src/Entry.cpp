@@ -74,3 +74,5 @@ QLocale Entry::localeForLanguage(Language language) const
     Q_UNREACHABLE();
     return QLocale::system();
 }
+
+#include "moc_Entry.cpp"

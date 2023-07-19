@@ -130,3 +130,5 @@ QHash<int, QByteArray> SmbMountModel::roleNames() const
     }
     return roles;
 }
+
+#include "moc_smbmountmodel.cpp"
