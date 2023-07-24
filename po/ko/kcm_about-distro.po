@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-06-14 02:06+0000\n"
-"PO-Revision-Date: 2023-03-01 02:06+0100\n"
+"PO-Revision-Date: 2023-07-23 00:52+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -154,7 +154,7 @@ msgstr "일련 번호"
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
-msgstr ""
+msgstr "복사"
 
 #: ui/main.qml:124
 #, kde-format
@@ -178,19 +178,19 @@ msgstr "하드웨어"
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
-msgstr ""
+msgstr "%1 실행"
 
 #: ui/main.qml:190
 #, kde-format
 msgctxt "@action:button Copy..."
 msgid "In current language"
-msgstr ""
+msgstr "현재 언어로"
 
 #: ui/main.qml:196
 #, kde-format
 msgctxt "@action:button Copy..."
 msgid "In English"
-msgstr ""
+msgstr "영어로"
 
 #~ msgctxt "@action:button"
 #~ msgid "Copy to Clipboard"
