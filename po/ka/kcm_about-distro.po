@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-14 02:06+0000\n"
+"POT-Creation-Date: 2023-07-26 02:01+0000\n"
 "PO-Revision-Date: 2023-06-15 09:07+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -152,7 +152,7 @@ msgctxt "@title"
 msgid "Serial Number"
 msgstr "სერიული ნომერი"
 
-#: ui/main.qml:97 ui/main.qml:179 ui/main.qml:187
+#: ui/main.qml:97
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
@@ -182,15 +182,27 @@ msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
 msgstr "%1-ის გაშვება"
 
+#: ui/main.qml:179 ui/main.qml:187
+#, fuzzy, kde-format
+#| msgctxt "EMAIL OF TRANSLATORS"
+#| msgid "Your emails"
+msgctxt "@action:button"
+msgid "Copy Details"
+msgstr "Temuri.doghonadze@gmail.com"
+
 #: ui/main.qml:190
-#, kde-format
-msgctxt "@action:button Copy..."
+#, fuzzy, kde-format
+#| msgctxt "@action:button Copy..."
+#| msgid "In current language"
+msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "მიმდინარე ენაზე"
 
 #: ui/main.qml:196
-#, kde-format
-msgctxt "@action:button Copy..."
+#, fuzzy, kde-format
+#| msgctxt "@action:button Copy..."
+#| msgid "In English"
+msgctxt "@action:button Copy Details..."
 msgid "In English"
 msgstr "ინგლისურად"
 
@@ -209,10 +221,6 @@ msgstr "ინგლისურად"
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
 #~ msgstr "Temuri Doghonadze"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "Temuri.doghonadze@gmail.com"
 
 #~ msgctxt "@title"
 #~ msgid "About this System"

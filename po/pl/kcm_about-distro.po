@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-14 02:06+0000\n"
+"POT-Creation-Date: 2023-07-26 02:01+0000\n"
 "PO-Revision-Date: 2023-07-01 07:51+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -154,7 +154,7 @@ msgctxt "@title"
 msgid "Serial Number"
 msgstr "Numer seryjny"
 
-#: ui/main.qml:97 ui/main.qml:179 ui/main.qml:187
+#: ui/main.qml:97
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
@@ -184,15 +184,27 @@ msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
 msgstr "Uruchom %1"
 
+#: ui/main.qml:179 ui/main.qml:187
+#, fuzzy, kde-format
+#| msgctxt "EMAIL OF TRANSLATORS"
+#| msgid "Your emails"
+msgctxt "@action:button"
+msgid "Copy Details"
+msgstr "lukasz.wojnilowicz@gmail.com"
+
 #: ui/main.qml:190
-#, kde-format
-msgctxt "@action:button Copy..."
+#, fuzzy, kde-format
+#| msgctxt "@action:button Copy..."
+#| msgid "In current language"
+msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "W bieżącym języku"
 
 #: ui/main.qml:196
-#, kde-format
-msgctxt "@action:button Copy..."
+#, fuzzy, kde-format
+#| msgctxt "@action:button Copy..."
+#| msgid "In English"
+msgctxt "@action:button Copy Details..."
 msgid "In English"
 msgstr "Po angielsku"
 
@@ -211,10 +223,6 @@ msgstr "Po angielsku"
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
 #~ msgstr "Łukasz Wojniłowicz"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "lukasz.wojnilowicz@gmail.com"
 
 #~ msgctxt "@title"
 #~ msgid "About this System"
