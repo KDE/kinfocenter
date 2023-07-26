@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2013, 2014, 2016, 2018, 2020, 2021, 2022.
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2013, 2014, 2016, 2018, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-08 02:41+0000\n"
-"PO-Revision-Date: 2022-08-03 10:02+0200\n"
+"PO-Revision-Date: 2023-07-25 11:16+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -155,10 +155,7 @@ msgid "Operating System:"
 msgstr "Operativsystem:"
 
 #: OSVersionEntry.cpp:11
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "%1 is a label already including a colon, %2 is the corresponding value"
-#| msgid "%1 %2"
+#, kde-format
 msgctxt "@label %1 is the distro name, %2 is the version"
 msgid "%1 %2"
 msgstr "%1 %2"
@@ -169,7 +166,7 @@ msgctxt ""
 "@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
 "should be a number, or 'rolling'"
 msgid "%1 %2 Build: %3"
-msgstr ""
+msgstr "%1 %2 Bygge: %3"
 
 #: package/contents/ui/main.qml:91
 #, kde-format
