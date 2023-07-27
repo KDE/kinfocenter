@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-07-26 02:01+0000\n"
-"PO-Revision-Date: 2023-06-14 07:50+0200\n"
+"PO-Revision-Date: 2023-07-26 07:39+0300\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -190,20 +190,16 @@ msgstr "Inicia %1"
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
-msgstr ""
+msgstr "Copia els detalls"
 
 #: ui/main.qml:190
-#, fuzzy, kde-format
-#| msgctxt "@action:button Copy..."
-#| msgid "In current language"
+#, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "En l'idioma actual"
 
 #: ui/main.qml:196
-#, fuzzy, kde-format
-#| msgctxt "@action:button Copy..."
-#| msgid "In English"
+#, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
 msgstr "En anglés"
