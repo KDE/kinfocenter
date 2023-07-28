@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-07-26 02:01+0000\n"
-"PO-Revision-Date: 2023-07-15 14:32+0200\n"
+"PO-Revision-Date: 2023-07-27 22:02+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -188,20 +188,16 @@ msgstr "Start %1"
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
-msgstr ""
+msgstr "Kopier detaljar"
 
 #: ui/main.qml:190
-#, fuzzy, kde-format
-#| msgctxt "@action:button Copy..."
-#| msgid "In current language"
+#, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "På noverande språk"
 
 #: ui/main.qml:196
-#, fuzzy, kde-format
-#| msgctxt "@action:button Copy..."
-#| msgid "In English"
+#, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
 msgstr "På engelsk"
