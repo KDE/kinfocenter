@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-14 02:06+0000\n"
+"POT-Creation-Date: 2023-07-26 02:01+0000\n"
 "PO-Revision-Date: 2023-06-14 14:13+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -152,7 +152,7 @@ msgctxt "@title"
 msgid "Serial Number"
 msgstr "Sériové číslo"
 
-#: ui/main.qml:97 ui/main.qml:179 ui/main.qml:187
+#: ui/main.qml:97
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
@@ -182,14 +182,24 @@ msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
 msgstr "Spustit %1"
 
-#: ui/main.qml:190
+#: ui/main.qml:179 ui/main.qml:187
 #, kde-format
-msgctxt "@action:button Copy..."
+msgctxt "@action:button"
+msgid "Copy Details"
+msgstr ""
+
+#: ui/main.qml:190
+#, fuzzy, kde-format
+#| msgctxt "@action:button Copy..."
+#| msgid "In current language"
+msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "V současném jazyce"
 
 #: ui/main.qml:196
-#, kde-format
-msgctxt "@action:button Copy..."
+#, fuzzy, kde-format
+#| msgctxt "@action:button Copy..."
+#| msgid "In English"
+msgctxt "@action:button Copy Details..."
 msgid "In English"
 msgstr "Anglicky"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-14 02:06+0000\n"
+"POT-Creation-Date: 2023-07-26 02:01+0000\n"
 "PO-Revision-Date: 2019-12-12 22:18+0000\n"
 "Last-Translator: Vivek KJ Pazhedath <vivekkj2004@gmail.com>\n"
 "Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ് <smc."
@@ -152,7 +152,7 @@ msgctxt "@title"
 msgid "Serial Number"
 msgstr ""
 
-#: ui/main.qml:97 ui/main.qml:179 ui/main.qml:187
+#: ui/main.qml:97
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
@@ -182,19 +182,22 @@ msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
 msgstr ""
 
+#: ui/main.qml:179 ui/main.qml:187
+#, fuzzy, kde-format
+#| msgctxt "EMAIL OF TRANSLATORS"
+#| msgid "Your emails"
+msgctxt "@action:button"
+msgid "Copy Details"
+msgstr "shijualexonline@gmail.com,snalledam@dataone.in,vivekkj2004@gmail.com"
+
 #: ui/main.qml:190
 #, kde-format
-msgctxt "@action:button Copy..."
+msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr ""
 
 #: ui/main.qml:196
 #, kde-format
-msgctxt "@action:button Copy..."
+msgctxt "@action:button Copy Details..."
 msgid "In English"
 msgstr ""
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr ""
-#~ "shijualexonline@gmail.com,snalledam@dataone.in,vivekkj2004@gmail.com"

@@ -183,3 +183,5 @@ QString flags_tos(unsigned int flags)
     }
     return tmp;
 }
+
+#include "moc_networkmodel.cpp"

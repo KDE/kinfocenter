@@ -163,7 +163,7 @@
     <p xml:lang="it">Il centro d'informazione è composto da diversi moduli; ognuno è un'applicazione a sé, ma il centro d'informazione li riunisce tutti in un posto comodo.</p>
     <p xml:lang="ja">システム情報センターは複数のモジュールで構成されています。それぞれのモジュールは独立したアプリケーションですが、システム情報センターがそれらを統合します。</p>
     <p xml:lang="ka">საინფორმაციო ცენტრი შედგება მრავალი მოდულისგან. თითოეული მოდული ცალკე აპლიკაციაა, მაგრამ საინფორმაციო ცენტრი ყველა ამ პროგრამას მოსახერხებელ ადგილას ალაგებს.</p>
-    <p xml:lang="ko">정보 센터는 여러 모듈로 구성되어 있습니다. 개별 모듈은 개별 프로그램이지만 정보 센터에서 한 자리에서 편하게 볼 수 있도록 모아 줍니다.</p>
+    <p xml:lang="ko">정보 센터는 여러 모듈로 구성되어 있습니다. 개별 모듈은 개별 앱이지만 정보 센터에서 한 자리에서 편하게 볼 수 있도록 모아 줍니다.</p>
     <p xml:lang="lt">Informacinį centrą sudaro daug modulių. Kiekvienas modulis yra atskira programa, tačiau informacinis centras sutelkia visas šias programas į patogią vietą.</p>
     <p xml:lang="nl">Het informatiecentrum bestaat uit verschillende modules. Elke module is een apart programma, maar het informatiecentrum organiseert al deze programma's in een handige locatie.</p>
     <p xml:lang="nn">Informasjonssenteret består av fleire modular. Kvar modul er eit eige program, men informasjonssenteret samlar alle desse programma for enkel tilgang.</p>
@@ -203,9 +203,9 @@
   </provides>
   <project_group>KDE</project_group>
   <releases>
+    <release version="5.27.7" date="2023-08-01"/>
     <release version="5.27.6" date="2023-06-20"/>
     <release version="5.27.5" date="2023-05-09"/>
     <release version="5.27.4" date="2023-04-04"/>
-    <release version="5.27.3" date="2023-03-14"/>
   </releases>
 </component>

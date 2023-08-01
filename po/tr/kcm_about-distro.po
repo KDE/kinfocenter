@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: playground-base-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-14 02:06+0000\n"
-"PO-Revision-Date: 2023-06-14 13:17+0300\n"
+"POT-Creation-Date: 2023-07-26 02:01+0000\n"
+"PO-Revision-Date: 2023-07-26 12:57+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -153,7 +153,7 @@ msgctxt "@title"
 msgid "Serial Number"
 msgstr "Seri Numarası"
 
-#: ui/main.qml:97 ui/main.qml:179 ui/main.qml:187
+#: ui/main.qml:97
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
@@ -183,15 +183,21 @@ msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
 msgstr "Başlat: %1"
 
+#: ui/main.qml:179 ui/main.qml:187
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy Details"
+msgstr "Ayrıntıları Kopyala"
+
 #: ui/main.qml:190
 #, kde-format
-msgctxt "@action:button Copy..."
+msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "Geçerli Dilde"
 
 #: ui/main.qml:196
 #, kde-format
-msgctxt "@action:button Copy..."
+msgctxt "@action:button Copy Details..."
 msgid "In English"
 msgstr "İngilizce Olarak"
 
@@ -210,10 +216,6 @@ msgstr "İngilizce Olarak"
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
 #~ msgstr "Volkan Gezer, Emir SARI"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "volkangezer@gmail.com, emir_sari@icloud.com"
 
 #~ msgctxt "@title"
 #~ msgid "About this System"

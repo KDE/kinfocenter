@@ -39,7 +39,7 @@ class EntryModel : public QAbstractListModel
     Q_OBJECT
 public:
     enum Role {
-        ModelData = Qt::UserRole,
+        EntryRole = Qt::UserRole,
     };
     Q_ENUM(Role)
 
@@ -58,7 +58,7 @@ public:
         }
 
         switch (static_cast<Role>(intRole)) {
-        case Role::ModelData:
+        case Role::EntryRole:
             return QVariant::fromValue(m_entries.at(index.row()));
         }
 
@@ -73,7 +73,7 @@ public:
         }
 
         roles = QAbstractListModel::roleNames();
-        roles.insert(Role::ModelData, QByteArrayLiteral("modelData"));
+        roles.insert(Role::EntryRole, QByteArrayLiteral("entry"));
         return roles;
     }
 

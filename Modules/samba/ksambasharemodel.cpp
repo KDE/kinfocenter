@@ -126,3 +126,5 @@ QHash<int, QByteArray> KSambaShareModel::roleNames() const
     }
     return roles;
 }
+
+#include "moc_ksambasharemodel.cpp"

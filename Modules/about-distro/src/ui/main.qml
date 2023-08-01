@@ -80,8 +80,8 @@ KCM.SimpleKCM {
             Component {
                 id: entryComponent
                 RowLayout {
-                    Kirigami.FormData.label: modelData.localizedLabel()
-                    readonly property bool hidden: modelData.isHidden()
+                    Kirigami.FormData.label: entry.localizedLabel()
+                    readonly property bool hidden: entry.isHidden()
 
                     Component {
                         id: unhideDialog
@@ -89,7 +89,7 @@ KCM.SimpleKCM {
                             // NB: should we ever have other entries that need this dialog then this needs refactoring on the Entry side.
                             //  Do NOT simply add if else logic here!
                             title: i18nc("@title", "Serial Number")
-                            subtitle: modelData.localizedValue()
+                            subtitle: entry.localizedValue()
                             flatFooterButtons: true
                             standardButtons: Kirigami.Dialog.NoButton
                             customFooterActions: [
@@ -107,7 +107,7 @@ KCM.SimpleKCM {
                     Kirigami.SelectableLabel {
                         id: valueLabel
                         visible: !hidden
-                        text: modelData.localizedValue()
+                        text: entry.localizedValue()
                         Keys.onShortcutOverride: event.accepted = (valueLabel.activeFocus && valueLabel.selectedText && event.matches(StandardKey.Copy))
                         Keys.onPressed: {
                             if (event.matches(StandardKey.Copy)) {
@@ -176,7 +176,7 @@ KCM.SimpleKCM {
             visible: kcm.isEnglish
 
             icon.name: "edit-copy"
-            text: i18nc("@action:button", "Copy")
+            text: i18nc("@action:button", "Copy Details")
             onTriggered: kcm.copyToClipboard()
         },
 
@@ -184,16 +184,16 @@ KCM.SimpleKCM {
             visible: !kcm.isEnglish
 
             icon.name: "edit-copy"
-            text: i18nc("@action:button", "Copy")
+            text: i18nc("@action:button", "Copy Details")
 
             Kirigami.Action {
-                text: i18nc("@action:button Copy...", "In current language")
+                text: i18nc("@action:button Copy Details...", "In current language")
                 onTriggered: kcm.copyToClipboard()
                 shortcut: StandardKey.Copy
             }
 
             Kirigami.Action {
-                text: i18nc("@action:button Copy...", "In English")
+                text: i18nc("@action:button Copy Details...", "In English")
                 onTriggered: kcm.copyToClipboardInEnglish()
             }
         }

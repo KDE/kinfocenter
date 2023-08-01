@@ -162,3 +162,5 @@ void USBViewer::selectionChanged(QTreeWidgetItem *item)
 }
 
 #include "kcmusb.moc"
+
+#include "moc_kcmusb.cpp"

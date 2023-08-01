@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-14 02:06+0000\n"
-"PO-Revision-Date: 2023-06-14 09:31+0300\n"
+"POT-Creation-Date: 2023-07-26 02:01+0000\n"
+"PO-Revision-Date: 2023-07-26 22:38+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -156,7 +156,7 @@ msgctxt "@title"
 msgid "Serial Number"
 msgstr "Серійний номер"
 
-#: ui/main.qml:97 ui/main.qml:179 ui/main.qml:187
+#: ui/main.qml:97
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
@@ -186,15 +186,21 @@ msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
 msgstr "Запустити %1"
 
+#: ui/main.qml:179 ui/main.qml:187
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy Details"
+msgstr "Копіювати подробиці"
+
 #: ui/main.qml:190
 #, kde-format
-msgctxt "@action:button Copy..."
+msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "Поточною мовою"
 
 #: ui/main.qml:196
 #, kde-format
-msgctxt "@action:button Copy..."
+msgctxt "@action:button Copy Details..."
 msgid "In English"
 msgstr "Англійською"
 
@@ -213,10 +219,6 @@ msgstr "Англійською"
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
 #~ msgstr "Юрій Чорноіван"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "yurchor@ukr.net"
 
 #~ msgctxt "@title"
 #~ msgid "About this System"

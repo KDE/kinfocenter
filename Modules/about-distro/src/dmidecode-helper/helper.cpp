@@ -69,3 +69,5 @@ KAuth::ActionReply DMIDecodeHelper::systeminformation(const QVariantMap &args)
 }
 
 KAUTH_HELPER_MAIN("org.kde.kinfocenter.dmidecode", DMIDecodeHelper)
+
+#include "moc_helper.cpp"

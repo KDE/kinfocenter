@@ -149,3 +149,5 @@ void CommandOutputContext::setReady()
     m_ready = true;
     Q_EMIT readyChanged();
 }
+
+#include "moc_CommandOutputContext.cpp"

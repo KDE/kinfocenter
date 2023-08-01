@@ -217,3 +217,5 @@ void DeviceListing::showRelevantDevicesSlot()
 {
     populateListing(RELEVANT);
 }
+
+#include "moc_devicelisting.cpp"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-14 02:06+0000\n"
-"PO-Revision-Date: 2023-06-14 17:27+0200\n"
+"POT-Creation-Date: 2023-07-26 02:01+0000\n"
+"PO-Revision-Date: 2023-07-26 14:06+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.04.2\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -152,7 +152,7 @@ msgctxt "@title"
 msgid "Serial Number"
 msgstr "Numero seriale"
 
-#: ui/main.qml:97 ui/main.qml:179 ui/main.qml:187
+#: ui/main.qml:97
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
@@ -182,15 +182,21 @@ msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
 msgstr "Avvia %1"
 
+#: ui/main.qml:179 ui/main.qml:187
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy Details"
+msgstr "Copia i dettagli"
+
 #: ui/main.qml:190
 #, kde-format
-msgctxt "@action:button Copy..."
+msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "Nella lingua attuale"
 
 #: ui/main.qml:196
 #, kde-format
-msgctxt "@action:button Copy..."
+msgctxt "@action:button Copy Details..."
 msgid "In English"
 msgstr "In inglese"
 
@@ -209,10 +215,6 @@ msgstr "In inglese"
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
 #~ msgstr "Vincenzo Reale,Luigi Toscano"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "smart2128vr@gmail.com,"
 
 #~ msgctxt "@title"
 #~ msgid "About this System"

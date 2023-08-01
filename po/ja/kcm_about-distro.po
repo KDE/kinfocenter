@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-14 02:06+0000\n"
+"POT-Creation-Date: 2023-07-26 02:01+0000\n"
 "PO-Revision-Date: 2022-07-04 11:42-0700\n"
 "Last-Translator: Fumiaki Okushi <fumiaki.okushi@gmail.com>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -154,7 +154,7 @@ msgctxt "@title"
 msgid "Serial Number"
 msgstr "シリアルナンバー"
 
-#: ui/main.qml:97 ui/main.qml:179 ui/main.qml:187
+#: ui/main.qml:97
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
@@ -184,15 +184,23 @@ msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
 msgstr ""
 
+#: ui/main.qml:179 ui/main.qml:187
+#, fuzzy, kde-format
+#| msgctxt "EMAIL OF TRANSLATORS"
+#| msgid "Your emails"
+msgctxt "@action:button"
+msgid "Copy Details"
+msgstr "ryuichi_ya220@outlook.jp"
+
 #: ui/main.qml:190
 #, kde-format
-msgctxt "@action:button Copy..."
+msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr ""
 
 #: ui/main.qml:196
 #, kde-format
-msgctxt "@action:button Copy..."
+msgctxt "@action:button Copy Details..."
 msgid "In English"
 msgstr ""
 
@@ -211,10 +219,6 @@ msgstr ""
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
 #~ msgstr "Ryuichi Yamada"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "ryuichi_ya220@outlook.jp"
 
 #~ msgctxt "@title"
 #~ msgid "About this System"
