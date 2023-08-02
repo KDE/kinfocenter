@@ -12,6 +12,7 @@ set_package_properties(SeleniumWebDriverATSPI PROPERTIES
     URL "https://invent.kde.org/sdk/selenium-webdriver-at-spi"
     TYPE OPTIONAL
 )
+
 if(NOT SeleniumWebDriverATSPI_FOUND AND NOT "$ENV{KDECI_BUILD}" STREQUAL "TRUE") # always run on CI
     return()
 endif()
@@ -36,6 +37,3 @@ add_test(
 set_tests_properties(falsetest PROPERTIES
     WILL_FAIL TRUE
     ENVIRONMENT "TEST_WITH_KWIN_WAYLAND=0")
-
-endif()
-
