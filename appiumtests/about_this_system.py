@@ -13,7 +13,6 @@ import unittest
 
 from appium import webdriver
 from appium.webdriver.common.appiumby import AppiumBy
-from colorama import Fore, Style
 
 
 class AboutThisSystemTests(unittest.TestCase):
@@ -35,7 +34,6 @@ class AboutThisSystemTests(unittest.TestCase):
     @classmethod
     def tearDownClass(self):
         log = logging.getLogger("log")
-        log.debug(Style.RESET_ALL)
         # Make sure to terminate the driver again, lest it dangles.
         self.driver.quit()
 
@@ -48,9 +46,8 @@ class AboutThisSystemTests(unittest.TestCase):
         self.driver.find_element(by=AppiumBy.NAME, value="Copy to Clipboard").click()
         text = self.driver.get_clipboard_text()
         log = logging.getLogger("log")
-        log.debug(Fore.GREEN+"Contents of clipboard:")
-        log.debug(Fore.GREEN+text)
-        log.debug(Style.RESET_ALL)
+        log.debug("Contents of clipboard:")
+        log.debug(text)
         self.assertTrue(self, "Graphics Platform: Wayland" in text)
         self.driver.get_screenshot_as_file(f"appium_artifact_screenshot_{self.__qualname__}_{sys._getframe().f_code.co_name}.png")
 
@@ -62,9 +59,8 @@ class AboutThisSystemTests(unittest.TestCase):
     #     self.driver.find_element(by=AppiumBy.NAME, value="Copy to Clipboard").click()
     #     clipboard_contents = self.driver.get_clipboard_text()
     #     log = logging.getLogger("log")
-    #     log.debug(Fore.GREEN+"Contents of clipboard:")
-    #     log.debug(Fore.GREEN+clipboard_contents)
-    #     log.debug(Style.RESET_ALL)
+    #     log.debug("Contents of clipboard:")
+    #     log.debug(clipboard_contents)
     #     self.assertTrue(self, "64-bit" in clipboard_contents)
     #     self.driver.get_screenshot_as_file(f"appium_artifact_screenshot_{self.__qualname__}_{sys._getframe().f_code.co_name}.png")
 
