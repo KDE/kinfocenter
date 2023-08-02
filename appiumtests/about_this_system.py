@@ -7,7 +7,7 @@
 # SPDX-FileCopyrightText: 2021-2022 Harald Sitter <sitter@kde.org>
 # SPDX-FileCopyrightText: 2023 Alexander Wilms <f.alexander.wilms@gmail.com>
 
-import logging
+#import logging
 import sys
 import unittest
 import time
@@ -15,6 +15,8 @@ import time
 from appium import webdriver
 from appium.webdriver.common.appiumby import AppiumBy
 
+def eprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
 
 class AboutThisSystemTests(unittest.TestCase):
     @classmethod
@@ -35,7 +37,7 @@ class AboutThisSystemTests(unittest.TestCase):
 
     @classmethod
     def tearDownClass(self):
-        log = logging.getLogger("log")
+        #log = logging.getLogger("log")
         # Make sure to terminate the driver again, lest it dangles.
         self.driver.quit()
 
@@ -47,9 +49,11 @@ class AboutThisSystemTests(unittest.TestCase):
         self.driver.find_element(by=AppiumBy.NAME, value="About this System").click()
         self.driver.find_element(by=AppiumBy.NAME, value="Copy to Clipboard").click()
         text = self.driver.get_clipboard_text()
-        log = logging.getLogger("log")
-        log.debug("Contents of clipboard:")
-        log.debug(text)
+        #log = logging.getLogger("log")
+        eprint("▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼")
+        eprint("Contents of clipboard:")
+        eprint(text)
+        eprint("▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲")
         self.assertTrue(self, "Graphics Platform: Wayland" in text)
         self.driver.get_screenshot_as_file(f"appium_artifact_screenshot_{self.__qualname__}_{sys._getframe().f_code.co_name}.png")
 
@@ -61,8 +65,10 @@ class AboutThisSystemTests(unittest.TestCase):
     #     self.driver.find_element(by=AppiumBy.NAME, value="Copy to Clipboard").click()
     #     clipboard_contents = self.driver.get_clipboard_text()
     #     log = logging.getLogger("log")
-    #     log.debug("Contents of clipboard:")
-    #     log.debug(clipboard_contents)
+    #     eprint("▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼")
+    #     eprint("Contents of clipboard:")
+    #     eprint(clipboard_contents)
+    #     eprint("▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲")
     #     self.assertTrue(self, "64-bit" in clipboard_contents)
     #     self.driver.get_screenshot_as_file(f"appium_artifact_screenshot_{self.__qualname__}_{sys._getframe().f_code.co_name}.png")
 
@@ -83,6 +89,6 @@ class AboutThisSystemTests(unittest.TestCase):
     #     self.assertEqual(text, "asdf", "oops")
 
 if __name__ == '__main__':
-    logging.basicConfig( stream=sys.stderr )
-    logging.getLogger("log").setLevel( logging.DEBUG )
+    #logging.basicConfig( stream=sys.stderr )
+    #logging.getLogger("log").setLevel( logging.DEBUG )
     unittest.main()
