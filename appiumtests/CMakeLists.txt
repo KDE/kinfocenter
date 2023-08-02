@@ -1,6 +1,8 @@
 # SPDX-License-Identifier: BSD-2-Clause
 # SPDX-FileCopyrightText: 2023 Harald Sitter <sitter@kde.org>
 
+find_package(SeleniumWebDriverATSPI)
+
 # Make sure return values get forwarded properly
 add_test(
     NAME truetest
@@ -24,10 +26,12 @@ if(NOT "$ENV{KDECI_BUILD}" STREQUAL "TRUE")
         INSTALL_COMMAND ""
         TEST_EXCLUDE_FROM_MAIN true
     )
-    add_test(
-        NAME examplestest
-        COMMAND ${CMAKE_COMMAND} --build ${CMAKE_CURRENT_BINARY_DIR}/appiumtests --target test
-    )
-    set_tests_properties(examplestest PROPERTIES ENVIRONMENT "CTEST_OUTPUT_ON_FAILURE=1")
+    
+add_test(
+    NAME appium-about-this-system
+    COMMAND selenium-webdriver-at-spi-run ${CMAKE_CURRENT_SOURCE_DIR}/about_this_system.py
+)
+
+    set_tests_properties(appium-about-this-system PROPERTIES TIMEOUT 600)
 endif()
 
