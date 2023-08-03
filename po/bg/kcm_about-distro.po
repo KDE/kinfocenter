@@ -200,11 +200,3 @@ msgstr "На текущия език"
 msgctxt "@action:button Copy Details..."
 msgid "In English"
 msgstr "На английски"
-
-#~ msgctxt "@action:button"
-#~ msgid "Copy to Clipboard"
-#~ msgstr "Копиране в клипборда"
-
-#~ msgctxt "@action:button"
-#~ msgid "Copy to Clipboard in English"
-#~ msgstr "Копиране в клипборда на английски език"
