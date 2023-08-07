@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-07-26 02:01+0000\n"
-"PO-Revision-Date: 2023-07-23 00:52+0200\n"
+"PO-Revision-Date: 2023-08-07 00:03+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -181,25 +181,19 @@ msgid "Launch %1"
 msgstr "%1 실행"
 
 #: ui/main.qml:179 ui/main.qml:187
-#, fuzzy, kde-format
-#| msgctxt "EMAIL OF TRANSLATORS"
-#| msgid "Your emails"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
-msgstr "kde@peremen.name"
+msgstr "자세한 정보 복사"
 
 #: ui/main.qml:190
-#, fuzzy, kde-format
-#| msgctxt "@action:button Copy..."
-#| msgid "In current language"
+#, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "현재 언어로"
 
 #: ui/main.qml:196
-#, fuzzy, kde-format
-#| msgctxt "@action:button Copy..."
-#| msgid "In English"
+#, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
 msgstr "영어로"
