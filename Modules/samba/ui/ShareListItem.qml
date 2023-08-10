@@ -1,12 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 // SPDX-FileCopyrightText: 2020 Harald Sitter <sitter@kde.org>
 
-import org.kde.kcmutils as KCM
 import QtQuick 2.14
 import org.kde.kirigami 2.12 as Kirigami
 import QtQuick.Controls 2.14 as QQC2
 import QtQuick.Layouts 1.14
-import org.kde.kinfocenter.samba 1.0 as Samba
 
 // This is a slightly bespoke variant of a BasicListItem. It features equally sized labels for the share information.
 Kirigami.AbstractListItem {
