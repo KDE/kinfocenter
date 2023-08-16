@@ -65,7 +65,7 @@ KCM.SimpleKCM {
                     visible: kcm.distroUrl !== ""
                     text: "<a href='%1'>%1</a>".arg(kcm.distroUrl)
                     textFormat: Text.RichText
-                    onLinkActivated: Qt.openUrlExternally(link)
+                    onLinkActivated: link => Qt.openUrlExternally(link)
 
                     HoverHandler { cursorShape: Qt.PointingHandCursor }
                 }

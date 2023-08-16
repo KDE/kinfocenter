@@ -40,7 +40,7 @@ KCM.SimpleKCM {
             font.family: "monospace"
             wrapMode: root.wrapMode
             textFormat: root.textFormat
-            onLinkActivated: Qt.openUrlExternally(link)
+            onLinkActivated: link => Qt.openUrlExternally(link)
         }
     }
 
