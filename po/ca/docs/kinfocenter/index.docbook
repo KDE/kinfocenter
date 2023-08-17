@@ -861,7 +861,7 @@
 >Registre</title>
 
 <para
->Aquesta pàgina presenta els continguts del vostre fitxer de registre de &Samba; en un mode bonic. Si obriu aquesta pàgina, la llista estarà buida. Haureu de prémer el botó <guibutton
+>Aquesta pàgina presenta el contingut del vostre fitxer de registre de &Samba; en un mode bonic. Si obriu aquesta pàgina, la llista estarà buida. Haureu de prémer el botó <guibutton
 >Actualitza</guibutton
 >, aleshores es llegirà el fitxer de registre de &Samba; i es mostraran els resultats. Comproveu si el fitxer de registre de &Samba; en el vostre sistema es troba realment a l'adreça especificada en la línia d'entrada. Si està en un altre lloc o té un altre nom, corregiu-ho. Després de canviar el nom de fitxer haureu de prémer <guibutton
 >Actualitza</guibutton
@@ -891,7 +891,7 @@
 >Estadístiques</title>
 
 <para
->En aquesta pàgina podeu filtrar els continguts de la tercera pàgina per a certs continguts.</para>
+>En aquesta pàgina podeu filtrar el contingut de la tercera pàgina per a cert contingut.</para>
 
 <para
 >Suposem que dieu que el camp <guilabel
