@@ -52,8 +52,6 @@ msgstr ""
 
 #: ui/main.qml:50
 #, fuzzy, kde-format
-#| msgctxt "%1 is value, %2 is unit"
-#| msgid "%1 %2"
 msgctxt "Battery health percentage"
 msgid "%1%"
 msgstr "%1 %2"
