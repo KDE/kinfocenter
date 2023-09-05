@@ -406,18 +406,18 @@
 >Aygıt Bilgisi Modülü</title>
 
 <para
->Aygıt Bilgisi, bir aygıt görüntüleyici modülüdür. <acronym
+>Aygıt Bilgisi, bir aygıt görüntüleyicisi modülüdür. <acronym
 >Bilgisayarınız</acronym
-> içinde bulunan tüm ilgili aygıtları gösterir. Üç bölümü vardır: Bir aygıt görüntüleyici, bir bilgi paneli ve seçili aygıt için bir <acronym
+> içinde bulunan tüm ilgili aygıtları gösterir. Üç bölümü vardır: Bir aygıt görüntüleyicisi, bir bilgi paneli ve seçili aygıt için bir <acronym
 >UDI</acronym
 > listesi.</para>
 <sect2 id="devlist">
 <title
->Aygıt Görüntüleyici</title>
+>Aygıt Görüntüleyicisi</title>
 <para
->Aygıt görüntüleyici, <acronym
+>Aygıt görüntüleyicisi, <acronym
 >Bilgisayarınızda</acronym
-> algılanan geçerli tüm aygıtları bir ağaçta görüntüler. Ağacın başındaki ana konular aygıt kategorileridir, daraltılmış bir kategoriyi genişletmek için sol tıklayın ve daraltmak için tersini yapın. Bir aygıtla ilgili bilgiyi görüntülemek için görüntüleyicide aygıta sol tıklayın, bilgiler sağ taraftaki bilgi panelinde görüntülenecektir. Aşağıdaki seçenekleri göstermek için aygıt görüntüleyiciye sağ tıklayabilirsiniz: </para>
+> algılanan geçerli tüm aygıtları bir ağaçta görüntüler. Ağacın başındaki ana konular aygıt kategorileridir, daraltılmış bir kategoriyi genişletmek için sol tıklayın ve daraltmak için tersini yapın. Bir aygıtla ilgili bilgiyi görüntülemek için görüntüleyicide aygıta sol tıklayın, bilgiler sağ taraftaki bilgi panelinde görüntülenecektir. Aşağıdaki seçenekleri göstermek için aygıt görüntüleyicisine sağ tıklayabilirsiniz: </para>
 <itemizedlist>
 <listitem
 ><para
@@ -447,7 +447,7 @@
 <para
 >Öntanımlı ekran, yalnızca ilgili aygıtları gösterirken tümünü daraltır. Lütfen aygıt listesinde gösterilen aygıtların bilgisayarınızdaki tüm aygıtlar olmadığını, yalnızca &solid; aracılığıyla algılanan aygıtlar olduğunu unutmayın.</para>
 <para
->Aygıt görüntüleyici, aşağıdaki aygıtları gösterebilir:</para>
+>Aygıt görüntüleyicisi, aşağıdaki aygıtları gösterebilir:</para>
 <itemizedlist>
 <listitem
 ><para
@@ -1129,7 +1129,7 @@
 <para
 ><acronym
 >DRI</acronym
-> (Doğrudan Sunum Altyapısı) OpenGL için donanım hızlandırması sağlar. Bunun için 3B hızlandırıcılı bir video kartı ve düzgün kurulmuş bir sürücüye gereksiniminiz vardır.</para>
+> (Doğrudan Sunum Altyapısı) OpenGL için donanım ivmelendirmesi sağlar. Bunun için 3B hızlandırıcılı bir video kartı ve düzgün kurulmuş bir sürücüye gereksiniminiz vardır.</para>
  
 
 <para
