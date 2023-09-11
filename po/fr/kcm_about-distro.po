@@ -1,6 +1,6 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# xavier <xavier.besnard@neuf.fr>, 2013, 2021, 2022.
+# SPDX-FileCopyrightText: 2013, 2021, 2022, 2023 xavier <xavier.besnard@neuf.fr>
 # Joëlle Cornavin <jcorn@free.fr>, 2013.
 # Geoffray Levasseur <geoffray.levasseur-brandin@ac-toulouse.fr>, 2014.
 # Maxime Corteel <mcorteel@gmail.com>, 2015, 2016.
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.04.2\n"
+"X-Generator: Lokalize 23.08.0\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
