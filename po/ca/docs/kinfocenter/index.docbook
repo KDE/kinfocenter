@@ -157,7 +157,7 @@
 </para>
 
 <para
->El plafó principal us mostra quelcom d'informació del sistema quant al mòdul seleccionat. </para>
+>El plafó principal us mostra informació del sistema quant al mòdul seleccionat. </para>
 
 </sect1>
 
@@ -1020,7 +1020,7 @@
 >Mòdul Informació gràfica</title>
 
 <para
->Quan obriu els mòduls en aquesta secció, se us presentarà quelcom d'informació. La part esquerra de la finestra està organitzada en forma d'arbre. Alguns elements tenen un signe més al davant de l'etiqueta. Fent clic sobre aquest símbol s'obre un <quote
+>Quan obriu els mòduls en aquesta secció, se us presentarà informació. La part esquerra de la finestra està organitzada en forma d'arbre. Alguns elements tenen un signe més al davant de l'etiqueta. Fent clic sobre aquest símbol s'obre un <quote
 >submenú</quote
 > relacionat amb l'etiqueta. Fent clic sobre el signe menys al davant d'una etiqueta s'oculta el submenú.</para>
 
