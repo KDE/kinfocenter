@@ -29,4 +29,4 @@ configure_file(backend.h.cmake backend.h)
 add_definitions(-DTRANSLATION_DOMAIN=\"kcm_pci\")
 
 kinfocenter_add_kcm(kcm_pci main.cpp)
-target_link_libraries(kcm_pci KF6::CoreAddons KF6::KCMUtilsQuick KF6::I18n KInfoCenterInternal)
+target_link_libraries(kcm_pci PRIVATE KF6::CoreAddons KF6::KCMUtilsQuick KF6::I18n KInfoCenterInternal)

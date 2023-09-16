@@ -30,7 +30,7 @@ set(kcm_SRCS
 
 kcmutils_add_qml_kcm(kcm_about-distro SOURCES ${kcm_SRCS} INSTALL_NAMESPACE "plasma/kcms")
 
-target_link_libraries(kcm_about-distro
+target_link_libraries(kcm_about-distro  PRIVATE
     KF6::CoreAddons
     KF6::I18n
     KF6::ConfigCore

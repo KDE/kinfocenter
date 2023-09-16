@@ -11,7 +11,7 @@ set(kcm_energyinfo_SRCS
 
 kcmutils_add_qml_kcm(kcm_energyinfo SOURCES ${kcm_energyinfo_SRCS} INSTALL_NAMESPACE "plasma/kcms")
 
-target_link_libraries(kcm_energyinfo
+target_link_libraries(kcm_energyinfo PRIVATE
   Qt::DBus
   Qt::Widgets
   KF6::KIOWidgets

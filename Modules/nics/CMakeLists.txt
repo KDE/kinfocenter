@@ -10,7 +10,7 @@ configure_file(config-nic.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-nic.h)
 
 kinfocenter_add_kcm(kcm_nic nic.cpp networkmodel.cpp)
 
-target_link_libraries(kcm_nic
+target_link_libraries(kcm_nic PRIVATE
     KF6::I18n
     KF6::CoreAddons
     KF6::KCMUtils

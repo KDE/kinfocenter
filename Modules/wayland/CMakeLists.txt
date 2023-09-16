@@ -10,4 +10,4 @@ set_package_properties(wayland-info PROPERTIES
 add_definitions(-DTRANSLATION_DOMAIN=\"kcm_wayland\")
 
 kinfocenter_add_kcm(kcm_wayland main.cpp)
-target_link_libraries(kcm_wayland KF6::CoreAddons KF6::KCMUtilsQuick KF6::I18n KInfoCenterInternal)
+target_link_libraries(kcm_wayland PRIVATE KF6::CoreAddons KF6::KCMUtilsQuick KF6::I18n KInfoCenterInternal)
