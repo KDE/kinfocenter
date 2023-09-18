@@ -21,7 +21,7 @@ KCM.SimpleKCM {
     property string currentUdi: ""
     property string currentVendor: ""
     property string currentProduct: ""
-    property bool compact: (root.width / units.gridUnit) < 25
+    property bool compact: (root.width / Kirigami.Units.gridUnit) < 25
 
     function initCurrentBattery() {
         currentBattery = kcm.batteries.data(kcm.batteries.index(0, 0), BatteryModel.BatteryRole)
@@ -93,8 +93,8 @@ KCM.SimpleKCM {
         }
     }
 
-    implicitWidth: units.gridUnit * 30
-    implicitHeight: !!currentBattery ? units.gridUnit * 30 : units.gridUnit * 12
+    implicitWidth: Kirigami.Units.gridUnit * 30
+    implicitHeight: !!currentBattery ? Kirigami.Units.gridUnit * 30 : Kirigami.Units.gridUnit * 12
 
     readonly property var timespanComboChoices: [i18n("Last hour"),i18n("Last 2 hours"),i18n("Last 12 hours"),i18n("Last 24 hours"),i18n("Last 48 hours"), i18n("Last 7 days")]
     readonly property var timespanComboDurations: [3600, 7200, 43200, 86400, 172800, 604800]
@@ -112,7 +112,7 @@ KCM.SimpleKCM {
         QQC2.ScrollView {
             id: tabView
             Layout.fillWidth: true
-            Layout.minimumHeight: units.gridUnit * 4
+            Layout.minimumHeight: Kirigami.Units.gridUnit * 4
             Layout.maximumHeight: Layout.minimumHeight
             visible: kcm.batteries.count > 1
 
@@ -123,7 +123,7 @@ KCM.SimpleKCM {
 
                     QQC2.Button {
                         id: button
-                        width: units.gridUnit * 10
+                        width: Kirigami.Units.gridUnit * 10
                         height: tabView.height
                         checked: model.battery == root.currentBattery
                         checkable: true
@@ -142,7 +142,7 @@ KCM.SimpleKCM {
                         ColumnLayout {
                             anchors {
                                 fill: parent
-                                margins: units.smallSpacing * 2
+                                margins: Kirigami.Units.smallSpacing * 2
                             }
                             RowLayout {
 
@@ -205,7 +205,7 @@ KCM.SimpleKCM {
 
         ColumnLayout {
             Layout.fillWidth: true
-            spacing: units.smallSpacing
+            spacing: Kirigami.Units.smallSpacing
             visible: !!currentBattery
 
 
@@ -221,7 +221,7 @@ KCM.SimpleKCM {
                 Layout.fillWidth: true
                 Layout.minimumHeight: column.width / 3
                 Layout.maximumHeight: column.width / 3
-                Layout.topMargin: -units.largeSpacing
+                Layout.topMargin: -Kirigami.Units.largeSpacing
 
                 data: history.points
 
@@ -292,7 +292,7 @@ KCM.SimpleKCM {
 
                 QQC2.ComboBox {
                     id: timespanCombo
-                    Layout.minimumWidth: units.gridUnit * 6
+                    Layout.minimumWidth: Kirigami.Units.gridUnit * 6
                     model: timespanComboChoices
                     Accessible.name: i18n("Timespan")
                     Accessible.description: i18n("Timespan of data to display")
@@ -311,7 +311,7 @@ KCM.SimpleKCM {
 
             Kirigami.InlineMessage {
                 Layout.fillWidth: true
-                Layout.topMargin: units.smallSpacing
+                Layout.topMargin: Kirigami.Units.smallSpacing
                 showCloseButton: true
                 text: i18n("This type of history is currently not available for this device.")
                 visible: !graph.visible
