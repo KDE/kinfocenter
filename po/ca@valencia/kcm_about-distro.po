@@ -96,7 +96,7 @@ msgstr "Versió d'U-Boot:"
 #: main.cpp:249
 #, kde-format
 msgid "KDE Frameworks Version:"
-msgstr "Versió de Frameworks de KDE:"
+msgstr "Versió dels Frameworks de KDE:"
 
 #: main.cpp:250
 #, kde-format
