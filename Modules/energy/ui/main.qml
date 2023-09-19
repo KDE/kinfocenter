@@ -46,8 +46,8 @@ KCM.SimpleKCM {
             data: [
                 {label: i18n("Rechargeable"), value: "rechargeable"},
                 {label: i18n("Charge state"), value: "chargeState", modifier: "chargeState"},
-                {label: i18n("Current charge"), value: i18nc("Battery charge percentage", "%1%", chargePercent), precision: 0},
-                {label: i18n("Health"), value: i18nc("Battery health percentage", "%1%", capacity), precision: 0},
+                {label: i18n("Current charge"), value: "chargePercent", unit: "%", precision: 0},
+                {label: i18n("Health"), value: "capacity", unit: "%", precision: 0},
                 {label: i18n("Vendor"), value: "vendor", source:"Vendor"},
                 {label: i18n("Model"), value: "model", source:"Product"},
                 {label: i18n("Serial Number"), value: "serial"},
@@ -402,7 +402,12 @@ KCM.SimpleKCM {
                                 }
 
                                 if (modelData.unit) {
-                                    value = i18nc("%1 is value, %2 is unit", "%1 %2", value, modelData.unit)
+                                    if (modelData.unit === "%") {
+                                        // We delay the percentage localization as the position may vary
+                                        value = i18nc("%1 is a percentage value", "%1%", value)
+                                    } else {
+                                        value = i18nc("%1 is value, %2 is unit", "%1 %2", value, modelData.unit)
+                                    }
                                 }
 
                                 return value
