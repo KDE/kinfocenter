@@ -26,6 +26,7 @@ KCM.SimpleKCM {
     leftPadding: Kirigami.Units.gridUnit
     rightPadding: Kirigami.Units.gridUnit
 
+    extraFooterTopPadding: false
 
     ServiceRunner {
         id: kicRunner
