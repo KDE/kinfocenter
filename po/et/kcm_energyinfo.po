@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-16 02:03+0000\n"
+"POT-Creation-Date: 2023-09-20 01:55+0000\n"
 "PO-Revision-Date: 2019-11-20 16:33+0200\n"
 "Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
 "Language-Team: Estonian <kde-et@lists.linux.ee>\n"
@@ -37,24 +37,10 @@ msgstr "Täituvuse olek"
 msgid "Current charge"
 msgstr "Praegune täituvus"
 
-#: ui/main.qml:49 ui/main.qml:197
-#, kde-format
-msgctxt "Battery charge percentage"
-msgid "%1%"
-msgstr "%1%"
-
 #: ui/main.qml:50
 #, kde-format
 msgid "Health"
 msgstr "Korrasolek"
-
-#: ui/main.qml:50
-#, fuzzy, kde-format
-#| msgctxt "Battery charge percentage"
-#| msgid "%1%"
-msgctxt "Battery health percentage"
-msgid "%1%"
-msgstr "%1%"
 
 #: ui/main.qml:51
 #, kde-format
@@ -278,6 +264,12 @@ msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr "%1% (laetakse)"
 
+#: ui/main.qml:197
+#, kde-format
+msgctxt "Battery charge percentage"
+msgid "%1%"
+msgstr "%1%"
+
 #: ui/main.qml:246
 #, kde-format
 msgctxt "Shorthand for Watts"
@@ -335,11 +327,26 @@ msgstr "Jah"
 msgid "No"
 msgstr "Ei"
 
-#: ui/main.qml:405
+#: ui/main.qml:407
+#, fuzzy, kde-format
+#| msgctxt "Battery charge percentage"
+#| msgid "%1%"
+msgctxt "%1 is a percentage value"
+msgid "%1%"
+msgstr "%1%"
+
+#: ui/main.qml:409
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
+
+#, fuzzy
+#~| msgctxt "Battery charge percentage"
+#~| msgid "%1%"
+#~ msgctxt "Battery health percentage"
+#~ msgid "%1%"
+#~ msgstr "%1%"
 
 #~ msgid "%"
 #~ msgstr "%"
