@@ -1,7 +1,7 @@
 # Translation for kcm_energyinfo.po to Euskara/Basque (eu).
 # Copyright (C) 2017-2023 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
-# KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>.
+# SPDX-FileCopyrightText: 2023 KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
 #
 # Translators:
 # Iñigo Salvador Azurmendi <xalba@ni.eus>, 2017, 2019, 2021, 2023.
@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-20 01:55+0000\n"
-"PO-Revision-Date: 2023-07-15 19:19+0200\n"
+"PO-Revision-Date: 2023-09-20 18:16+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.04.0\n"
+"X-Generator: Lokalize 23.08.1\n"
 
 #: ui/main.qml:45
 #, kde-format
@@ -331,9 +331,7 @@ msgid "No"
 msgstr "Ez"
 
 #: ui/main.qml:407
-#, fuzzy, kde-format
-#| msgctxt "Battery charge percentage"
-#| msgid "%1%"
+#, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%%1"
