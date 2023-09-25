@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-20 01:55+0000\n"
-"PO-Revision-Date: 2023-07-01 07:51+0200\n"
+"PO-Revision-Date: 2023-09-24 08:04+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 23.04.2\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -185,25 +185,19 @@ msgid "Launch %1"
 msgstr "Uruchom %1"
 
 #: ui/main.qml:180 ui/main.qml:188
-#, fuzzy, kde-format
-#| msgctxt "EMAIL OF TRANSLATORS"
-#| msgid "Your emails"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
-msgstr "lukasz.wojnilowicz@gmail.com"
+msgstr "Skopiuj szczegóły"
 
 #: ui/main.qml:191
-#, fuzzy, kde-format
-#| msgctxt "@action:button Copy..."
-#| msgid "In current language"
+#, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "W bieżącym języku"
 
 #: ui/main.qml:197
-#, fuzzy, kde-format
-#| msgctxt "@action:button Copy..."
-#| msgid "In English"
+#, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
 msgstr "Po angielsku"
