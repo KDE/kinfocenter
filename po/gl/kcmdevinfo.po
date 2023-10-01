@@ -338,7 +338,7 @@ msgstr "Extraíbel?"
 #: soldevicetypes.cpp:257
 #, kde-format
 msgid "Unused"
-msgstr "Sen utilizar"
+msgstr "Sen usar"
 
 #: soldevicetypes.cpp:260
 #, kde-format
@@ -503,12 +503,12 @@ msgstr "Descoñecido"
 #: soldevicetypes.cpp:466
 #, kde-format
 msgid "Charging"
-msgstr "Estase a cargar"
+msgstr "Cargando"
 
 #: soldevicetypes.cpp:469
 #, kde-format
 msgid "Discharging"
-msgstr "Estase a descargar"
+msgstr "Descargando"
 
 #: soldevicetypes.cpp:472
 #, kde-format
