@@ -6,7 +6,9 @@
 #include <iostream>
 #include <utility>
 
+#include <QAbstractListModel>
 #include <QClipboard>
+#include <QFileInfo>
 #include <QGuiApplication>
 #include <QIcon>
 #include <QLocale>

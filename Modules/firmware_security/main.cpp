@@ -5,6 +5,7 @@
 
 #include <KPluginFactory>
 #include <KQuickConfigModule>
+#include <QStandardPaths>
 
 #include <CommandOutputContext.h>
 
