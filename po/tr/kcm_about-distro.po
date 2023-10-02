@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: playground-base-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-20 01:55+0000\n"
+"POT-Creation-Date: 2023-10-02 01:42+0000\n"
 "PO-Revision-Date: 2023-07-26 12:57+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -54,48 +54,48 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1 (%2 bit)"
 
-#: main.cpp:185
+#: main.cpp:187
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr "Üretici:"
 
-#: main.cpp:188 main.cpp:205
+#: main.cpp:190 main.cpp:207
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr "Ürün Adı:"
 
-#: main.cpp:191
+#: main.cpp:193
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
 msgstr "Sistem Sürümü:"
 
-#: main.cpp:194 main.cpp:208
+#: main.cpp:196 main.cpp:210
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr "Seri Numarası:"
 
-#: main.cpp:198 main.cpp:215
+#: main.cpp:200 main.cpp:217
 #, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "Bilinmiyor:"
 
-#: main.cpp:211
+#: main.cpp:213
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "U-Boot Sürümü:"
 
-#: main.cpp:249
+#: main.cpp:251
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "KDE Frameworks Sürümü:"
 
-#: main.cpp:250
+#: main.cpp:252
 #, kde-format
 msgid "Qt Version:"
 msgstr "Qt Sürümü:"
