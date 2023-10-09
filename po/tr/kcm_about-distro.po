@@ -3,13 +3,13 @@
 #
 # Translators:
 # Volkan Gezer <volkangezer@gmail.com>, 2013, 2017, 2021.
-# Emir SARI <emir_sari@icloud.com>, 2022.
+# Emir SARI <emir_sari@icloud.com>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: playground-base-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-08 02:41+0000\n"
-"PO-Revision-Date: 2022-11-04 10:07+0300\n"
+"PO-Revision-Date: 2023-10-08 12:52+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.08.2\n"
+"X-Generator: Lokalize 23.11.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -46,17 +46,17 @@ msgstr "Bilinmeyen Tür"
 #: GPUEntry.cpp:19
 #, kde-format
 msgid "Graphics Processor:"
-msgstr "Grafik İşlemcisi:"
+msgstr "Grafik işlemcisi:"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
 msgid "Graphics Platform:"
-msgstr "Grafik Platformu:"
+msgstr "Grafik platformu:"
 
 #: KernelEntry.cpp:11
 #, kde-format
 msgid "Kernel Version:"
-msgstr "Çekirdek Sürümü:"
+msgstr "Çekirdek sürümü:"
 
 #: KernelEntry.cpp:23
 #, kde-format
@@ -98,19 +98,19 @@ msgstr "Üretici:"
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
-msgstr "Ürün Adı:"
+msgstr "Ürün adı:"
 
 #: main.cpp:196
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
-msgstr "Sistem Sürümü:"
+msgstr "Sistem sürümü:"
 
 #: main.cpp:199 main.cpp:213
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
-msgstr "Seri Numarası:"
+msgstr "Seri numarası:"
 
 #: main.cpp:203 main.cpp:220
 #, kde-format
@@ -122,17 +122,17 @@ msgstr "Bilinmiyor:"
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
-msgstr "U-Boot Sürümü:"
+msgstr "U-Boot sürümü:"
 
 #: main.cpp:254
 #, kde-format
 msgid "KDE Frameworks Version:"
-msgstr "KDE Frameworks Sürümü:"
+msgstr "KDE Frameworks sürümü:"
 
 #: main.cpp:255
 #, kde-format
 msgid "Qt Version:"
-msgstr "Qt Sürümü:"
+msgstr "Qt sürümü:"
 
 #: MemoryEntry.cpp:20
 #, kde-format
@@ -154,7 +154,7 @@ msgstr "Bilinmiyor"
 #: OSVersionEntry.cpp:9
 #, kde-format
 msgid "Operating System:"
-msgstr "İşletim Sistemi:"
+msgstr "İşletim sistemi:"
 
 #: OSVersionEntry.cpp:11
 #, kde-format
@@ -215,7 +215,7 @@ msgstr "Panoya İngilizce Kopyala"
 #: PlasmaEntry.cpp:15
 #, kde-format
 msgid "KDE Plasma Version:"
-msgstr "KDE Plasma Sürümü:"
+msgstr "KDE Plasma sürümü:"
 
 #~ msgid "Copy software and hardware information to clipboard"
 #~ msgstr "Yazılım ve donanım bilgilerini panoya kopyala"
