@@ -107,34 +107,3 @@ msgstr "切断中"
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr ""
-
-#, fuzzy
-#~| msgid "Network Mask"
-#~ msgid "Network Interfaces"
-#~ msgstr "ネットワークマスク"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Noboru Sinohara"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "shinobo@leo.bekkoame.ne.jp"
-
-#, fuzzy
-#~| msgid "Network Mask"
-#~ msgctxt "@title:window"
-#~ msgid "Network Interfaces"
-#~ msgstr "ネットワークマスク"
-
-#, fuzzy
-#~| msgid "(c) 2001 - 2002 Alexander Neundorf"
-#~ msgctxt "@info"
-#~ msgid "(c) 2001 - 2002 Alexander Neundorf"
-#~ msgstr "(c) 2001 - 2002 Alexander Neundorf"
-
-#, fuzzy
-#~| msgid "Alexander Neundorf"
-#~ msgctxt "@info:credit"
-#~ msgid "Alexander Neundorf"
-#~ msgstr "Alexander Neundorf"

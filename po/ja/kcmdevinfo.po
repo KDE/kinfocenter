@@ -511,22 +511,3 @@ msgstr "充電状態: "
 #| msgid "Charge Status: "
 msgid "Charge Percent: "
 msgstr "充電状態: "
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Taiki Komoda"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "kom@kde.gr.jp"
-
-#~ msgid "kcmdevinfo"
-#~ msgstr "kcmdevinfo"
-
-#, fuzzy
-#~| msgid "KDE Solid Based Device Viewer"
-#~ msgid "Device Viewer"
-#~ msgstr "KDE Solid ベースのデバイスビューア"
-
-#~ msgid "(c) 2010 David Hubner"
-#~ msgstr "(c) 2010 David Hubner"

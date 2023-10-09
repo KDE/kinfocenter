@@ -51,37 +51,3 @@ msgstr ""
 msgctxt "@info:tooltip"
 msgid "Open folder properties to change share settings"
 msgstr ""
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Nobosu Sinohara,Shinichi Tsunoda"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "shinobo@leo.bekkoame.ne.jp,tsuno@ngy.1st.ne.jp"
-
-#~ msgid "kcmsamba"
-#~ msgstr "kcmsamba"
-
-#, fuzzy
-#~| msgid "(c) 2002 KDE Information Control Module Samba Team"
-#~ msgid "(c) 2002-2020 KDE Information Control Module Samba Team"
-#~ msgstr "(c) 2002 KDE 情報モジュール Samba チーム"
-
-#~ msgid "Michael Glauche"
-#~ msgstr "Michael Glauche"
-
-#~ msgid "Matthias Hoelzer"
-#~ msgstr "Matthias Hoelzer"
-
-#~ msgid "David Faure"
-#~ msgstr "David Faure"
-
-#~ msgid "Harald Koschinski"
-#~ msgstr "Harald Koschinski"
-
-#~ msgid "Wilco Greven"
-#~ msgstr "Wilco Greven"
-
-#~ msgid "Alexander Neundorf"
-#~ msgstr "Alexander Neundorf"

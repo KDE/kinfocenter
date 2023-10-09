@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-19 02:06+0000\n"
-"PO-Revision-Date: 2023-08-31 19:39+0300\n"
+"PO-Revision-Date: 2023-10-08 12:51+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -203,17 +203,17 @@ msgstr "Yok"
 #: soldevicetypes.cpp:106
 #, kde-format
 msgid "Processor Number: "
-msgstr "İşlemci Numarası: "
+msgstr "İşlemci numarası: "
 
 #: soldevicetypes.cpp:106
 #, kde-format
 msgid "Max Speed: "
-msgstr "En Yüksek Hız: "
+msgstr "En yüksek hız: "
 
 #: soldevicetypes.cpp:107
 #, kde-format
 msgid "Supported Instruction Sets: "
-msgstr "Desteklenen Yönerge Kümeleri: "
+msgstr "Desteklenen yönerge kümeleri: "
 
 #: soldevicetypes.cpp:132
 #, kde-format
@@ -346,7 +346,7 @@ msgstr "Bilinmeyen"
 #: soldevicetypes.cpp:275
 #, kde-format
 msgid "File System Type: "
-msgstr "Dosya Sistemi Türü: "
+msgstr "Dosya sistemi türü: "
 
 #: soldevicetypes.cpp:275
 #, kde-format
@@ -361,17 +361,17 @@ msgstr "Ayarlanmamış"
 #: soldevicetypes.cpp:276
 #, kde-format
 msgid "Volume Usage: "
-msgstr "Bölüm Kullanımı: "
+msgstr "Bölüm kullanımı: "
 
 #: soldevicetypes.cpp:276
 #, kde-format
 msgid "UUID: "
-msgstr "Evrensel Biricik Tanımlayıcı: "
+msgstr "Evrensel biricik tanımlayıcı: "
 
 #: soldevicetypes.cpp:282
 #, kde-format
 msgid "Mounted At: "
-msgstr "Bağlama Noktası: "
+msgstr "Bağlama noktası: "
 
 #: soldevicetypes.cpp:282
 #, kde-format
@@ -397,17 +397,17 @@ msgstr "Kullanılabilir veri yok"
 #: soldevicetypes.cpp:330
 #, kde-format
 msgid "Multimedia Players"
-msgstr "Çoklu Ortam Oynatıcılar"
+msgstr "Çoklu Ortam Oynatıcıları"
 
 #: soldevicetypes.cpp:349 soldevicetypes.cpp:388
 #, kde-format
 msgid "Supported Drivers: "
-msgstr "Desteklenen Sürücüler: "
+msgstr "Desteklenen sürücüler: "
 
 #: soldevicetypes.cpp:349 soldevicetypes.cpp:388
 #, kde-format
 msgid "Supported Protocols: "
-msgstr "Desteklenen Protokoller: "
+msgstr "Desteklenen protokoller: "
 
 #: soldevicetypes.cpp:369
 #, kde-format
@@ -490,7 +490,7 @@ msgstr "Şarj Tüketiliyor"
 #: soldevicetypes.cpp:472
 #, kde-format
 msgid "Fully Charged"
-msgstr "Tamamen Dolu"
+msgstr "Tümüyle Dolu"
 
 #: soldevicetypes.cpp:475
 #, kde-format
@@ -500,17 +500,17 @@ msgstr "Şarj Yok"
 #: soldevicetypes.cpp:478
 #, kde-format
 msgid "Battery Type: "
-msgstr "Pil Türü: "
+msgstr "Pil türü: "
 
 #: soldevicetypes.cpp:478
 #, kde-format
 msgid "Charge Status: "
-msgstr "Şarj Durumu: "
+msgstr "Şarj durumu: "
 
 #: soldevicetypes.cpp:478
 #, kde-format
 msgid "Charge Percent: "
-msgstr "Şarj Yüzdesi: "
+msgstr "Şarj yüzdesi: "
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

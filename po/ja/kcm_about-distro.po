@@ -203,27 +203,3 @@ msgstr ""
 msgctxt "@action:button Copy Details..."
 msgid "In English"
 msgstr ""
-
-#~ msgctxt "@action:button"
-#~ msgid "Copy to Clipboard"
-#~ msgstr "クリップボードにコピー"
-
-#~ msgctxt "@action:button"
-#~ msgid "Copy to Clipboard in English"
-#~ msgstr "英語でクリップボードにコピー"
-
-#~ msgctxt "@action:button launches kinfocenter from systemsettings"
-#~ msgid "Show More Information"
-#~ msgstr "その他の情報"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Ryuichi Yamada"
-
-#~ msgctxt "@title"
-#~ msgid "About this System"
-#~ msgstr "このシステムについて"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Author"
-#~ msgstr "作者"
