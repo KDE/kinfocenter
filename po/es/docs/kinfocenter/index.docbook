@@ -157,7 +157,7 @@
 </screenshot>
 
 <para
->En la parte superior hay una barra de herramientas que proporciona acceso rápido a la mayoría de funciones de &infocenter; como obtener ayuda sobre el módulo actual y un menú de ayuda general. </para>
+>En la parte superior hay una barra de herramientas que proporciona un rápido acceso a la mayoría de las funciones de &infocenter;, como obtener ayuda sobre el módulo actual, y un menú de ayuda general. </para>
 
 <para
 >En el lado de la izquierda hay una columna con un filtro en la parte superior. Aquí es donde se podrá seleccionar el módulo que desea investigar. Para examinar los distintos módulos <acronym
@@ -304,7 +304,7 @@
 <para
 >El primer tipo, se denomina memoria física. Esta memoria está localizada en los chips de memoria, dentro de su ordenador. Esta es la <acronym
 >RAM</acronym
-> (Random Acess Memory o Memoria de Acceso Aleatorio) que usted adquirió con su ordenador.</para>
+> (Random Acess Memory o Memoria de Acceso Aleatorio) que adquirió con su ordenador.</para>
 
 <para
 >El segundo tipo de memoria, se denomina memoria virtual o memoria de intercambio. Este bloque de memoria es, en realidad, espacio en el disco duro. El sistema operativo reserva espacio en el disco duro para «espacio de intercambio». El sistema operativo puede utilizar esta memoria virtual (o espacio de intercambio) si se queda sin memoria física. La razón por la que se denomina memoria «de intercambio» es que el sistema operativo toma algunos datos que piensa que usted no utilizará durante un tiempo y los guarda en el disco en este espacio reservado. El sistema operativo después carga los nuevos datos que usted necesita en ese preciso instante. Ha «intercambiado» los datos innecesarios, por los datos que usted necesita en este momento. La memoria virtual o de intercambio no es tan rápida como la memoria física, de modo que los sistemas operativos tratan de mantener los datos (especialmente los que se usan frecuentemente), en la memoria física.</para>
@@ -841,12 +841,12 @@
 >pid</acronym
 >) de este <command
 >smbd</command
->. Si usted mata este proceso el usuario conectado será desconectado. Si el usuario remoto trabaja desde &Windows;, tan pronto como este proceso sea matado se creará uno nuevo, de modo que apenas lo notará.</para>
+>. Si mata este proceso, el usuario conectado será desconectado. Si el usuario remoto trabaja desde &Windows;, tan pronto como este proceso sea matado se creará uno nuevo, de modo que apenas lo notará.</para>
 
 <para
->La última columna muestra cuantos archivos tiene abiertos actualmente este usuario. Aquí usted solo ve, cuantos archivos tiene <emphasis
+>La última columna muestra cuantos archivos tiene abiertos actualmente este usuario. Aquí solo verá cuántos archivos tiene <emphasis
 >abiertos</emphasis
->, no verá cuantos abrió o copió previamente, &etc;</para>
+>; no verá cuántos ha abierto o copiado anteriormente, &etc;</para>
 
 </sect3>
 
@@ -919,9 +919,9 @@
 > está desactivado.</para>
 
 <para
->Si usted pulsa ahora <guibutton
+>Si pulsa ahora <guibutton
 >Actualizar</guibutton
-> verá cuan frecuentemente se abre una conexión para compartir <literal
+> verá la frecuencia con la que se abre una conexión para compartir <literal
 >*</literal
 > (&ie; cualquier recurso) desde la máquina <literal
 >*</literal
@@ -929,7 +929,7 @@
 >Mostrar info expandida de máquina</guilabel
 > y pulse <guibutton
 >Actualizar</guibutton
-> de nuevo. Ahora verá para cada máquina que concuerde con el comodin  <literal
+> de nuevo. Ahora verá para cada máquina que concuerde con el comodín  <literal
 >*</literal
 >, cuantas conexiones abrió dicha máquina.</para>
 
@@ -948,7 +948,7 @@
 >.</para>
 
 <para
->Ahora verá cuan frecuentemente se accede a cada archivo individual. Si usted activa también <guilabel
+>Ahora verá cuan frecuentemente se accede a cada archivo individual. Si activa también <guilabel
 >Mostrar info expandida de la máquina</guilabel
 >, verá cuan frecuentemente cada usuario abrió cada uno de los archivos.</para>
 
