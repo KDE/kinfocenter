@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-03-05 00:45+0000\n"
-"PO-Revision-Date: 2023-10-10 14:34\n"
+"PO-Revision-Date: 2023-10-21 13:57\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -31,7 +31,7 @@ msgstr "tysontan@tysontan.com"
 #, kde-format
 msgctxt "@label kcm name"
 msgid "Firmware Security"
-msgstr "固件安全"
+msgstr "固件安全性"
 
 #: main.cpp:26
 #, kde-format
@@ -41,4 +41,4 @@ msgstr "Harald Sitter"
 #: package/contents/ui/main.qml:14
 msgctxt "@info:whatsthis"
 msgid "Firmware Security Information"
-msgstr "固件安全信息"
+msgstr "固件安全性信息"
