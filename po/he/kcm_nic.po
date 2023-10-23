@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kcmnic\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-05 02:14+0000\n"
-"PO-Revision-Date: 2017-05-16 06:53-0400\n"
+"PO-Revision-Date: 2023-10-22 15:02+0300\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
 "Language: he\n"
@@ -17,95 +17,85 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Zanata 3.9.6\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: networkmodel.cpp:161
-#, fuzzy, kde-format
-#| msgid "Point to Point"
+#, kde-format
 msgctxt "@item:intable Network type"
 msgid "Point to Point"
 msgstr "נקודה לנקודה"
 
 #: networkmodel.cpp:168
-#, fuzzy, kde-format
-#| msgctxt "@item:intext Mode of network card"
-#| msgid "Broadcast"
+#, kde-format
 msgctxt "@item:intable Network type"
 msgid "Broadcast"
 msgstr "שידור"
 
 #: networkmodel.cpp:175
-#, fuzzy, kde-format
-#| msgid "Multicast"
+#, kde-format
 msgctxt "@item:intable Network type"
 msgid "Multicast"
-msgstr "שידור"
+msgstr "הפצה"
 
 #: networkmodel.cpp:182
-#, fuzzy, kde-format
-#| msgid "Loopback"
+#, kde-format
 msgctxt "@item:intable Network type"
 msgid "Loopback"
-msgstr "לולאה"
+msgstr "לולאה חוזרת"
 
 #: ui/main.qml:29
-#, fuzzy, kde-format
-#| msgid "Name"
+#, kde-format
 msgctxt "@label"
 msgid "Name:"
-msgstr "שם"
+msgstr "שם:"
 
 #: ui/main.qml:33
-#, fuzzy, kde-format
-#| msgid "IP Address"
+#, kde-format
 msgctxt "@label"
 msgid "Address:"
-msgstr "כתובת &IP"
+msgstr "כתובת:"
 
 #: ui/main.qml:37
-#, fuzzy, kde-format
-#| msgid "Network Mask"
+#, kde-format
 msgctxt "@label"
 msgid "Network Mask:"
-msgstr "מסיכת רשת"
+msgstr "מסכת רשת:"
 
 #: ui/main.qml:41
-#, fuzzy, kde-format
-#| msgid "Type"
+#, kde-format
 msgctxt "@label"
 msgid "Type:"
-msgstr "סוג"
+msgstr "סוג:"
 
 #: ui/main.qml:45
 #, kde-format
 msgctxt "@label"
 msgid "Hardware Address:"
-msgstr ""
+msgstr "כתובת חומרה:"
 
 #: ui/main.qml:50
-#, fuzzy, kde-format
-#| msgid "State"
+#, kde-format
 msgctxt "@label"
 msgid "State:"
-msgstr "מצב"
+msgstr "מצב:"
 
 #: ui/main.qml:58
 #, kde-format
 msgctxt "State of network card is connected"
 msgid "Up"
-msgstr "למעלה"
+msgstr "מחובר"
 
 #: ui/main.qml:59
 #, kde-format
 msgctxt "State of network card is disconnected"
 msgid "Down"
-msgstr "למטה"
+msgstr "מנותק"
 
 #: ui/main.qml:70
 #, kde-format
 msgctxt "@action:button"
 msgid "Refresh"
-msgstr ""
+msgstr "רענון"
 
 #, fuzzy
 #~| msgid "Network Mask"

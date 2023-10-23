@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-02 01:42+0000\n"
-"PO-Revision-Date: 2017-05-16 11:30-0400\n"
+"PO-Revision-Date: 2023-10-22 14:55+0300\n"
 "Last-Translator: Elkana Bardugo <ttv200@gmail.com>\n"
 "Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
 "Language: he\n"
@@ -17,92 +17,80 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Zanata 3.9.6\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: CPUEntry.cpp:17
-#, fuzzy, kde-format
+#, kde-format
 msgid "Processor:"
 msgid_plural "Processors:"
 msgstr[0] "מעבד:"
-msgstr[1] "מעבד:"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[1] "מעבדים:"
+msgstr[2] "מעבדים:"
+msgstr[3] "מעבדים:"
 
 #: CPUEntry.cpp:22
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt ""
 "unknown CPU type/product name; presented as `Processors: 4 × Unknown Type'"
 msgid "Unknown Type"
-msgstr "לא ידוע"
+msgstr "סוג לא ידוע"
 
 #: GPUEntry.cpp:19
-#, fuzzy, kde-format
-#| msgid "Processor:"
-#| msgid_plural "Processors:"
+#, kde-format
 msgid "Graphics Processor:"
-msgstr "מעבד:"
+msgstr "מעבד גרפי:"
 
 #: GraphicsPlatformEntry.cpp:10
-#, fuzzy, kde-format
-#| msgid "Processor:"
-#| msgid_plural "Processors:"
+#, kde-format
 msgid "Graphics Platform:"
-msgstr "מעבד:"
+msgstr "Graphics Platform:"
 
 #: KernelEntry.cpp:11
 #, kde-format
 msgid "Kernel Version:"
-msgstr "גרסת קרנל:"
+msgstr "גרסת ליבה (kernel):"
 
 #: KernelEntry.cpp:23
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the CPU bit width (e.g. 32 or 64)"
-#| msgid "%1-bit"
+#, kde-format
 msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
-msgstr "%1 ביט"
+msgstr "%1 (%2 סיביות)"
 
 #: main.cpp:187
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
-msgstr ""
+msgstr "יצרן:"
 
 #: main.cpp:190 main.cpp:207
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
-msgstr ""
+msgstr "שם המוצר:"
 
 #: main.cpp:193
-#, fuzzy, kde-format
-#| msgid "Qt Version:"
+#, kde-format
 msgctxt "@label"
 msgid "System Version:"
-msgstr "גרסת Qt:"
+msgstr "גרסת המערכת:"
 
 #: main.cpp:196 main.cpp:210
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
-msgstr ""
+msgstr "מספר סידורי:"
 
 #: main.cpp:200 main.cpp:217
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
-msgstr "לא ידוע"
+msgstr "לא ידוע:"
 
 #: main.cpp:213
-#, fuzzy, kde-format
-#| msgid "Qt Version:"
+#, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
-msgstr "גרסת Qt:"
+msgstr "גרסת U-Boot:"
 
 #: main.cpp:251
 #, kde-format
@@ -123,7 +111,7 @@ msgstr "זיכרון:"
 #, kde-format
 msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
 msgid "%1 of RAM"
-msgstr "%1 זיכרון RAM"
+msgstr "%1 של זיכרון RAM"
 
 #: MemoryEntry.cpp:53
 #, kde-format
@@ -134,13 +122,13 @@ msgstr "לא ידוע"
 #: OSVersionEntry.cpp:9
 #, kde-format
 msgid "Operating System:"
-msgstr ""
+msgstr "מערכת הפעלה:"
 
 #: OSVersionEntry.cpp:11
 #, kde-format
 msgctxt "@label %1 is the distro name, %2 is the version"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: OSVersionEntry.cpp:13
 #, kde-format
@@ -148,47 +136,45 @@ msgctxt ""
 "@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
 "should be a number, or 'rolling'"
 msgid "%1 %2 Build: %3"
-msgstr ""
+msgstr "%1 %2 בנייה: %3"
 
 #: PlasmaEntry.cpp:15
 #, kde-format
 msgid "KDE Plasma Version:"
-msgstr "גרסת KDE Plasma:"
+msgstr "גרסת KDE פלזמה:"
 
 #: ThirdPartyEntry.cpp:12
 #, kde-format
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
-msgstr ""
+msgstr ":"
 
 #: ui/main.qml:92
 #, kde-format
 msgctxt "@title"
 msgid "Serial Number"
-msgstr ""
+msgstr "מספר סידורי"
 
 #: ui/main.qml:98
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
-msgstr ""
+msgstr "העתקה"
 
 #: ui/main.qml:125
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
-msgstr ""
+msgstr "הצגה"
 
 #: ui/main.qml:137
-#, fuzzy, kde-format
-#| msgid "Software"
+#, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "תוכנה"
 
 #: ui/main.qml:147
-#, fuzzy, kde-format
-#| msgid "Hardware"
+#, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "חומרה"
@@ -197,27 +183,25 @@ msgstr "חומרה"
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
-msgstr ""
+msgstr "הפעלת %1"
 
 #: ui/main.qml:180 ui/main.qml:188
-#, fuzzy, kde-format
-#| msgctxt "EMAIL OF TRANSLATORS"
-#| msgid "Your emails"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
-msgstr "ttv200@gmail.com"
+msgstr "העתקת פרטים"
 
 #: ui/main.qml:191
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
-msgstr ""
+msgstr "בשפה הנוכחית"
 
 #: ui/main.qml:197
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
-msgstr ""
+msgstr "באנגלית"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

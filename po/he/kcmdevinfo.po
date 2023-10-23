@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: kcmdevinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-19 02:06+0000\n"
-"PO-Revision-Date: 2017-05-16 06:52-0400\n"
+"PO-Revision-Date: 2023-10-22 15:10+0300\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
 "Language: he\n"
@@ -15,15 +15,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Poedit-Language: Hebrew\n"
-"X-Poedit-Country: ISRAEL\n"
-"X-Generator: Zanata 3.9.6\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: devicelisting.cpp:41
 #, kde-format
 msgctxt "Device Listing Whats This"
 msgid "Shows all the devices that are currently listed."
-msgstr "מציג את כל ההתקנים שכרגע רשומים."
+msgstr "מציג את כל ההתקנים שרשומים נכון לעכשיו."
 
 #: devicelisting.cpp:44
 #, kde-format
@@ -33,22 +31,22 @@ msgstr "התקנים"
 #: devicelisting.cpp:57
 #, kde-format
 msgid "Collapse All"
-msgstr "הסתר הכל"
+msgstr "צמצום של הכול"
 
 #: devicelisting.cpp:60
 #, kde-format
 msgid "Expand All"
-msgstr "הצג הכל"
+msgstr "הרחבה של הכול"
 
 #: devicelisting.cpp:63
 #, kde-format
 msgid "Show All Devices"
-msgstr "הצג כל ההתקנים"
+msgstr "הצגת כל ההתקנים"
 
 #: devicelisting.cpp:66
 #, kde-format
 msgid "Show Relevant Devices"
-msgstr "הצג התקנים רלוונטים"
+msgstr "הצגת התקנים קשורים"
 
 #: devicelisting.cpp:95
 #, kde-format
@@ -71,18 +69,18 @@ msgstr "UDI: "
 #, kde-format
 msgctxt "Udi Whats This"
 msgid "Shows the current device's UDI (Unique Device Identifier)"
-msgstr "מציג את ה-UDI (Unique Device Identifier) הנוכחי של ההתקן"
+msgstr "מציג את ה־UDI‏ (Unique Device Identifier) הנוכחי של ההתקן"
 
 #: infopanel.cpp:20
 #, kde-format
 msgid "Device Information"
-msgstr "מידע אודות ההתקן"
+msgstr "מידע על ההתקן"
 
 #: infopanel.cpp:29
 #, kde-format
 msgctxt "Info Panel Whats This"
 msgid "Shows information about the currently selected device."
-msgstr "מציג מידע אודות ההתקן שנבחר."
+msgstr "הצגת מידע על ההתקן שנבחר."
 
 #: infopanel.cpp:56
 #, kde-format
@@ -91,22 +89,22 @@ msgid ""
 "Solid Based Device Viewer Module"
 msgstr ""
 "\n"
-"מודול מציג התקנים מבוסס Solid"
+"מודול שמציג התקנים מבוסס Solid"
 
 #: infopanel.cpp:119
 #, kde-format
 msgid "Description: "
-msgstr ""
+msgstr "תיאור: "
 
 #: infopanel.cpp:121
 #, kde-format
 msgid "Product: "
-msgstr "מוצר:"
+msgstr "מוצר: "
 
 #: infopanel.cpp:123
 #, kde-format
 msgid "Vendor: "
-msgstr "ספק:"
+msgstr "יצרן: "
 
 #: infopanel.cpp:145
 #, kde-format
@@ -167,28 +165,24 @@ msgid "Intel SSE3"
 msgstr "Intel SSE3"
 
 #: soldevicetypes.cpp:88
-#, fuzzy, kde-format
-#| msgid "Intel SSE3"
+#, kde-format
 msgid "Intel SSSE3"
-msgstr "Intel SSE3"
+msgstr "Intel SSSE3"
 
 #: soldevicetypes.cpp:91
-#, fuzzy, kde-format
-#| msgid "Intel SSE4"
+#, kde-format
 msgid "Intel SSE4.1"
-msgstr "Intel SSE4"
+msgstr "Intel SSE4.1"
 
 #: soldevicetypes.cpp:94
-#, fuzzy, kde-format
-#| msgid "Intel SSE4"
+#, kde-format
 msgid "Intel SSE4.2"
-msgstr "Intel SSE4"
+msgstr "Intel SSE4.2"
 
 #: soldevicetypes.cpp:97
-#, fuzzy, kde-format
-#| msgid "AMD 3DNow"
+#, kde-format
 msgid "AMD 3DNow!"
-msgstr "AMD 3DNow"
+msgstr "AMD 3DNow!‎"
 
 #: soldevicetypes.cpp:100
 #, kde-format
@@ -199,22 +193,22 @@ msgstr "ATI IVEC"
 #, kde-format
 msgctxt "no instruction set extensions"
 msgid "None"
-msgstr "כלום"
+msgstr "אין"
 
 #: soldevicetypes.cpp:106
 #, kde-format
 msgid "Processor Number: "
-msgstr "מספר מעבד:"
+msgstr "מספר מעבד: "
 
 #: soldevicetypes.cpp:106
 #, kde-format
 msgid "Max Speed: "
-msgstr "מהירות מקסימלית:"
+msgstr "מהירות מרבית: "
 
 #: soldevicetypes.cpp:107
 #, kde-format
 msgid "Supported Instruction Sets: "
-msgstr "פקודות נתמכות:"
+msgstr "סט פקודות נתמכות: "
 
 #: soldevicetypes.cpp:132
 #, kde-format
@@ -229,7 +223,7 @@ msgstr "כונן קשיח"
 #: soldevicetypes.cpp:154
 #, kde-format
 msgid "Compact Flash Reader"
-msgstr "קורא Flash קומפקטי"
+msgstr "קורא התקני CF"
 
 #: soldevicetypes.cpp:157
 #, kde-format
@@ -301,17 +295,17 @@ msgstr "לא ידוע"
 #: soldevicetypes.cpp:213
 #, kde-format
 msgid "Bus: "
-msgstr "Bus: "
+msgstr "אפיק: "
 
 #: soldevicetypes.cpp:213
 #, kde-format
 msgid "Hotpluggable?"
-msgstr "החלפה חמה?"
+msgstr "יש החלפה חמה?"
 
 #: soldevicetypes.cpp:213
 #, kde-format
 msgid "Removable?"
-msgstr "ניתן להסרה?"
+msgstr "ניתן להסיר?"
 
 #: soldevicetypes.cpp:257
 #, kde-format
@@ -347,12 +341,12 @@ msgstr "לא ידוע"
 #: soldevicetypes.cpp:275
 #, kde-format
 msgid "File System Type: "
-msgstr "סוג מערכת קבצים:"
+msgstr "סוג מערכת קבצים: "
 
 #: soldevicetypes.cpp:275
 #, kde-format
 msgid "Label: "
-msgstr "תווית:"
+msgstr "תווית: "
 
 #: soldevicetypes.cpp:276
 #, kde-format
@@ -362,7 +356,7 @@ msgstr "לא מוגדר"
 #: soldevicetypes.cpp:276
 #, kde-format
 msgid "Volume Usage: "
-msgstr "נפח בשימוש:"
+msgstr "נפח בשימוש: "
 
 #: soldevicetypes.cpp:276
 #, kde-format
@@ -372,7 +366,7 @@ msgstr "UUID: "
 #: soldevicetypes.cpp:282
 #, kde-format
 msgid "Mounted At: "
-msgstr "מעוגן ב:"
+msgstr "מעוגן ב־: "
 
 #: soldevicetypes.cpp:282
 #, kde-format
@@ -382,18 +376,18 @@ msgstr "לא מעוגן"
 #: soldevicetypes.cpp:287
 #, kde-format
 msgid "Volume Space:"
-msgstr "גודל נפח:"
+msgstr "נפח כרך:"
 
 #: soldevicetypes.cpp:297
 #, kde-format
 msgctxt "Available space out of total partition size (percent used)"
 msgid "%1 free of %2 (%3% used)"
-msgstr "%1 חופשי מתוך %2 (%3% בשימוש)"
+msgstr "%1 פנויים מתוך %2 (%3% בשימוש)"
 
 #: soldevicetypes.cpp:303
 #, kde-format
 msgid "No data available"
-msgstr "לא זמינים נתונים"
+msgstr "אין נתונים זמינים"
 
 #: soldevicetypes.cpp:330
 #, kde-format
@@ -403,12 +397,12 @@ msgstr "נגני מולטימדיה"
 #: soldevicetypes.cpp:349 soldevicetypes.cpp:388
 #, kde-format
 msgid "Supported Drivers: "
-msgstr "מנהלי התקנים נתמכים:"
+msgstr "מנהלי התקנים נתמכים: "
 
 #: soldevicetypes.cpp:349 soldevicetypes.cpp:388
 #, kde-format
 msgid "Supported Protocols: "
-msgstr "פרוטוקולים נתמכים:"
+msgstr "פרוטוקולים נתמכים: "
 
 #: soldevicetypes.cpp:369
 #, kde-format
@@ -423,12 +417,12 @@ msgstr "סוללות"
 #: soldevicetypes.cpp:430
 #, kde-format
 msgid "PDA"
-msgstr "PDA"
+msgstr "מחשב כף יד"
 
 #: soldevicetypes.cpp:433
 #, kde-format
 msgid "UPS"
-msgstr "UPS"
+msgstr "אל־פסק"
 
 #: soldevicetypes.cpp:436
 #, kde-format
@@ -458,19 +452,19 @@ msgstr "מצלמה"
 #: soldevicetypes.cpp:451
 #, kde-format
 msgid "Phone"
-msgstr ""
+msgstr "טלפון"
 
 #: soldevicetypes.cpp:454
 #, kde-format
 msgctxt "Screen"
 msgid "Monitor"
-msgstr ""
+msgstr "צג"
 
 #: soldevicetypes.cpp:457
 #, kde-format
 msgctxt "Wireless game pad or joystick battery"
 msgid "Gaming Input"
-msgstr ""
+msgstr "קלט משחקים"
 
 #: soldevicetypes.cpp:460
 #, kde-format
@@ -481,17 +475,17 @@ msgstr "לא ידוע"
 #: soldevicetypes.cpp:466
 #, kde-format
 msgid "Charging"
-msgstr "טוען"
+msgstr "בטעינה"
 
 #: soldevicetypes.cpp:469
 #, kde-format
 msgid "Discharging"
-msgstr "פורק"
+msgstr "בשימוש"
 
 #: soldevicetypes.cpp:472
 #, kde-format
 msgid "Fully Charged"
-msgstr "טעון במלואו"
+msgstr "טעינה מלאה"
 
 #: soldevicetypes.cpp:475
 #, kde-format
@@ -501,18 +495,17 @@ msgstr "לא בטעינה"
 #: soldevicetypes.cpp:478
 #, kde-format
 msgid "Battery Type: "
-msgstr "סוג סוללה:"
+msgstr "סוג סוללה: "
 
 #: soldevicetypes.cpp:478
 #, kde-format
 msgid "Charge Status: "
-msgstr "מצב טעינה:"
+msgstr "מצב טעינה: "
 
 #: soldevicetypes.cpp:478
-#, fuzzy, kde-format
-#| msgid "Charge Status: "
+#, kde-format
 msgid "Charge Percent: "
-msgstr "מצב טעינה:"
+msgstr "אחוז טעינה: "
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

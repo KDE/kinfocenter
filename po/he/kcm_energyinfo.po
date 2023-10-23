@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-20 01:55+0000\n"
-"PO-Revision-Date: 2017-05-16 11:23-0400\n"
+"PO-Revision-Date: 2023-10-22 15:01+0300\n"
 "Last-Translator: Elkana Bardugo <ttv200@gmail.com>\n"
 "Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
 "Language: he\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Zanata 3.9.6\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: ui/main.qml:45
 #, kde-format
@@ -27,7 +27,7 @@ msgstr "סוללה"
 #: ui/main.qml:47
 #, kde-format
 msgid "Rechargeable"
-msgstr "נטען"
+msgstr "רב־פעמית"
 
 #: ui/main.qml:48
 #, kde-format
@@ -35,15 +35,14 @@ msgid "Charge state"
 msgstr "מצב טעינה"
 
 #: ui/main.qml:49
-#, fuzzy, kde-format
-#| msgid "Current"
+#, kde-format
 msgid "Current charge"
-msgstr "נוכחי"
+msgstr "רמת טעינה נוכחית"
 
 #: ui/main.qml:50
 #, kde-format
 msgid "Health"
-msgstr ""
+msgstr "בריאות"
 
 #: ui/main.qml:51
 #, kde-format
@@ -63,7 +62,7 @@ msgstr "מספר סידורי"
 #: ui/main.qml:54
 #, kde-format
 msgid "Technology"
-msgstr ""
+msgstr "טכנולוגיה"
 
 #: ui/main.qml:58
 #, kde-format
@@ -96,7 +95,7 @@ msgstr "V"
 #: ui/main.qml:62
 #, kde-format
 msgid "Remaining energy"
-msgstr ""
+msgstr "אנרגיה שנותרה"
 
 #: ui/main.qml:62 ui/main.qml:63 ui/main.qml:64
 #, kde-format
@@ -105,15 +104,14 @@ msgid "Wh"
 msgstr "Wh"
 
 #: ui/main.qml:63
-#, fuzzy, kde-format
-#| msgid "Last full"
+#, kde-format
 msgid "Last full charge"
-msgstr "קיבולת מלאה אחרונה"
+msgstr "טעינה מלאה אחרונה"
 
 #: ui/main.qml:64
 #, kde-format
 msgid "Original charge capacity"
-msgstr ""
+msgstr "קיבולת טעינה מקורית"
 
 #: ui/main.qml:68
 #, kde-format
@@ -129,62 +127,62 @@ msgstr "טמפרטורה"
 #, kde-format
 msgctxt "Degree Celsius"
 msgid "°C"
-msgstr "מעלות צלזיוס"
+msgstr "℃"
 
 #: ui/main.qml:77
 #, kde-format
 msgid "Not charging"
-msgstr "לא נטען"
+msgstr "לא בטעינה"
 
 #: ui/main.qml:78
 #, kde-format
 msgid "Charging"
-msgstr "נטען"
+msgstr "בטעינה"
 
 #: ui/main.qml:79
 #, kde-format
 msgid "Discharging"
-msgstr "לא מחובר לחשמל"
+msgstr "סוללה בשימוש"
 
 #: ui/main.qml:80
 #, kde-format
 msgid "Fully charged"
-msgstr "טעון במלואו"
+msgstr "טעינה מלאה"
 
 #: ui/main.qml:86
 #, kde-format
 msgid "Lithium ion"
-msgstr ""
+msgstr "ליתיום יון"
 
 #: ui/main.qml:87
 #, kde-format
 msgid "Lithium polymer"
-msgstr ""
+msgstr "ליתיום פולימר"
 
 #: ui/main.qml:88
 #, kde-format
 msgid "Lithium iron phosphate"
-msgstr ""
+msgstr "ליתיום ברזל פוספט"
 
 #: ui/main.qml:89
 #, kde-format
 msgid "Lead acid"
-msgstr ""
+msgstr "עופרת חומצה"
 
 #: ui/main.qml:90
 #, kde-format
 msgid "Nickel cadmium"
-msgstr ""
+msgstr "ניקל קדמיום"
 
 #: ui/main.qml:91
 #, kde-format
 msgid "Nickel metal hydride"
-msgstr ""
+msgstr "ניקל מתכת הידריד"
 
 #: ui/main.qml:92
 #, kde-format
 msgid "Unknown technology"
-msgstr ""
+msgstr "טכנולוגיה לא מוכרת"
 
 #: ui/main.qml:99
 #, kde-format
@@ -220,66 +218,59 @@ msgstr "7 ימים אחרונים"
 #, kde-format
 msgctxt "@info:status"
 msgid "No energy information available on this system"
-msgstr ""
+msgstr "אין פרטי אנרגיה למערכת הזאת"
 
 #: ui/main.qml:171
 #, kde-format
 msgid "Internal battery"
-msgstr ""
+msgstr "סוללה פנימית"
 
 #: ui/main.qml:172
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "UPS battery"
-msgstr "סוללה"
+msgstr "סוללת אל־פסק"
 
 #: ui/main.qml:173
 #, kde-format
 msgid "Monitor battery"
-msgstr ""
+msgstr "סוללת הצג"
 
 #: ui/main.qml:174
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Mouse battery"
-msgstr "סוללה"
+msgstr "סוללת העכבר"
 
 #: ui/main.qml:175
 #, kde-format
 msgid "Keyboard battery"
-msgstr ""
+msgstr "סוללת המקלדת"
 
 #: ui/main.qml:176
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "PDA battery"
-msgstr "סוללה"
+msgstr "סוללת מחשב כף יד"
 
 #: ui/main.qml:177
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Phone battery"
-msgstr "סוללה"
+msgstr "סוללת הטלפון"
 
 #: ui/main.qml:178
 #, kde-format
 msgid "Unknown battery"
-msgstr ""
+msgstr "סוללה לא ידועה"
 
 #: ui/main.qml:196
-#, fuzzy, kde-format
-#| msgid "Charging"
+#, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
-msgstr "נטען"
+msgstr "%1% (בטעינה)"
 
 #: ui/main.qml:197
-#, fuzzy, kde-format
-#| msgctxt "%1 is value, %2 is unit"
-#| msgid "%1 %2"
+#, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
-msgstr "%1 %2"
+msgstr "%1%"
 
 #: ui/main.qml:246
 #, kde-format
@@ -316,12 +307,12 @@ msgstr "טווח זמן להצגת נתונים"
 #: ui/main.qml:304
 #, kde-format
 msgid "Refresh"
-msgstr "רענן"
+msgstr "רענון"
 
 #: ui/main.qml:316
 #, kde-format
 msgid "This type of history is currently not available for this device."
-msgstr "סוג נתונים זה אינו זמין להתקן זה כרגע"
+msgstr "סוג היסטוריה זה אינו זמין למכשיר הזה."
 
 #: ui/main.qml:374
 #, kde-format
@@ -339,12 +330,10 @@ msgid "No"
 msgstr "לא"
 
 #: ui/main.qml:407
-#, fuzzy, kde-format
-#| msgctxt "%1 is value, %2 is unit"
-#| msgid "%1 %2"
+#, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
-msgstr "%1 %2"
+msgstr "%1%"
 
 #: ui/main.qml:409
 #, kde-format
