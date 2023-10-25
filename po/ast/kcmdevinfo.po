@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
 #
-# Enol P. <enolp@softastur.org>, 2023.
+# SPDX-FileCopyrightText: 2023 Enol P. <enolp@softastur.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-19 02:06+0000\n"
-"PO-Revision-Date: 2023-05-03 21:36+0200\n"
+"PO-Revision-Date: 2023-10-24 15:45+0200\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.0\n"
+"X-Generator: Lokalize 23.08.2\n"
 
 #: devicelisting.cpp:41
 #, kde-format
@@ -63,7 +63,7 @@ msgstr ""
 #: devinfo.cpp:52
 #, kde-format
 msgid "UDI: "
-msgstr ""
+msgstr "UDI: "
 
 #: devinfo.cpp:60
 #, kde-format
@@ -92,12 +92,12 @@ msgstr ""
 #: infopanel.cpp:119
 #, kde-format
 msgid "Description: "
-msgstr ""
+msgstr "Descripción:"
 
 #: infopanel.cpp:121
 #, kde-format
 msgid "Product: "
-msgstr ""
+msgstr "Productu:"
 
 #: infopanel.cpp:123
 #, kde-format
@@ -107,12 +107,12 @@ msgstr ""
 #: infopanel.cpp:145
 #, kde-format
 msgid "Yes"
-msgstr ""
+msgstr "Sí"
 
 #: infopanel.cpp:147
 #, kde-format
 msgid "No"
-msgstr ""
+msgstr "Non"
 
 #: infopanel.h:36
 #, kde-format
@@ -130,17 +130,17 @@ msgstr ""
 #, kde-format
 msgctxt "Default device tooltip"
 msgid "A Device"
-msgstr ""
+msgstr "Un preséu"
 
 #: soldevicetypes.cpp:43
 #, kde-format
 msgid "Processors"
-msgstr ""
+msgstr "Procesadores"
 
 #: soldevicetypes.cpp:59
 #, kde-format
 msgid "Processor %1"
-msgstr ""
+msgstr "Procesador %1"
 
 #: soldevicetypes.cpp:76
 #, kde-format
@@ -256,33 +256,33 @@ msgstr ""
 #: soldevicetypes.cpp:192
 #, kde-format
 msgid "IDE"
-msgstr ""
+msgstr "IDE"
 
 #: soldevicetypes.cpp:195
 #, kde-format
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 #: soldevicetypes.cpp:198
 #, kde-format
 msgid "IEEE1394"
-msgstr ""
+msgstr "IEEE1394"
 
 #: soldevicetypes.cpp:201
 #, kde-format
 msgid "SCSI"
-msgstr ""
+msgstr "SCSI"
 
 #: soldevicetypes.cpp:204
 #, kde-format
 msgid "SATA"
-msgstr ""
+msgstr " "
 
 #: soldevicetypes.cpp:207
 #, kde-format
 msgctxt "platform storage bus"
 msgid "Platform"
-msgstr ""
+msgstr "Plataforma"
 
 #: soldevicetypes.cpp:210
 #, kde-format
@@ -293,7 +293,7 @@ msgstr ""
 #: soldevicetypes.cpp:213
 #, kde-format
 msgid "Bus: "
-msgstr ""
+msgstr "Bus: "
 
 #: soldevicetypes.cpp:213
 #, kde-format
@@ -359,7 +359,7 @@ msgstr ""
 #: soldevicetypes.cpp:276
 #, kde-format
 msgid "UUID: "
-msgstr ""
+msgstr "UUID: "
 
 #: soldevicetypes.cpp:282
 #, kde-format
@@ -415,12 +415,12 @@ msgstr ""
 #: soldevicetypes.cpp:430
 #, kde-format
 msgid "PDA"
-msgstr ""
+msgstr "PDA"
 
 #: soldevicetypes.cpp:433
 #, kde-format
 msgid "UPS"
-msgstr ""
+msgstr "SAI"
 
 #: soldevicetypes.cpp:436
 #, kde-format
@@ -430,22 +430,22 @@ msgstr ""
 #: soldevicetypes.cpp:439
 #, kde-format
 msgid "Mouse"
-msgstr ""
+msgstr "Mur"
 
 #: soldevicetypes.cpp:442
 #, kde-format
 msgid "Keyboard"
-msgstr ""
+msgstr "Tecláu"
 
 #: soldevicetypes.cpp:445
 #, kde-format
 msgid "Keyboard + Mouse"
-msgstr ""
+msgstr "Tecláu + mur"
 
 #: soldevicetypes.cpp:448
 #, kde-format
 msgid "Camera"
-msgstr ""
+msgstr "Cámara"
 
 #: soldevicetypes.cpp:451
 #, kde-format
@@ -456,7 +456,7 @@ msgstr ""
 #, kde-format
 msgctxt "Screen"
 msgid "Monitor"
-msgstr ""
+msgstr "Monitor"
 
 #: soldevicetypes.cpp:457
 #, kde-format

@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
 #
-# Enol P. <enolp@softastur.org>, 2023.
+# SPDX-FileCopyrightText: 2023 Enol P. <enolp@softastur.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-02 01:42+0000\n"
-"PO-Revision-Date: 2023-05-13 23:15+0200\n"
+"PO-Revision-Date: 2023-10-24 15:37+0200\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 23.08.2\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -155,7 +155,7 @@ msgstr "Númberu de serie"
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
-msgstr ""
+msgstr "Copiar"
 
 #: ui/main.qml:125
 #, kde-format
@@ -185,19 +185,19 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
-msgstr ""
+msgstr "Copiar los detalles"
 
 #: ui/main.qml:191
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
-msgstr ""
+msgstr "Na llingua actual"
 
 #: ui/main.qml:197
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
-msgstr ""
+msgstr "N'inglés"
 
 #~ msgctxt "@action:button"
 #~ msgid "Copy to Clipboard"
