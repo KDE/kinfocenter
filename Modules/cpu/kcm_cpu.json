@@ -4,6 +4,7 @@
         "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
         "Description": "Advanced CPU Information",
         "Description[ar]": "معلومات متقدمة عن المعالج",
+        "Description[ast]": "Información avanzada de la CPU",
         "Description[az]": "Əlavə CPU məlumatı",
         "Description[bg]": "Разширена информация за процесора",
         "Description[ca@valencia]": "Informació avançada de la CPU",

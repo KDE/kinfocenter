@@ -4,6 +4,7 @@
         "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
         "Description": "X-Server information",
         "Description[ar]": "معلومات خادم أكس",
+        "Description[ast]": "Información del sirvidor X",
         "Description[az]": "X-Server məlumatı",
         "Description[bg]": "Данни за сървъра X",
         "Description[ca@valencia]": "Informació del servidor X",
