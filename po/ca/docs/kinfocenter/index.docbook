@@ -269,9 +269,7 @@
 >Tipus de memòria</title>
 
 <para
->El primer que heu de comprendre és que existeixen dos tipus de <quote
->memòria</quote
->, disponibles per al sistema operatiu i per als programes que s'hi executen.</para>
+>El primer que heu de comprendre és que existeixen dos tipus de «memòria», disponibles per al sistema operatiu i per als programes que s'hi executen.</para>
 
 <para
 >El primer tipus s'anomena memòria física. Aquesta memòria està localitzada en els xips de memòria, dins del vostre ordinador. Aquesta és la <acronym
@@ -279,13 +277,7 @@
 > (Random Acess Memory -memòria d'accés aleatori) que vàreu comprar amb el vostre ordinador.</para>
 
 <para
->El segon tipus de memòria, s'anomena memòria virtual o memòria d'intercanvi. Aquest bloc de memòria, en realitat és espai en el disc dur. El sistema operatiu reserva espai en el disc dur per a <quote
->espai d'intercanvi</quote
->. El sistema operatiu pot utilitzar aquesta memòria virtual (o espai d'intercanvi) si es queda sense memòria física. La raó per la qual s'anomena memòria d'<quote
->intercanvi</quote
-> és que el sistema operatiu pren algunes dades que creu que no ha de menester durant un temps i les desa en el disc en aquest espai reservat. Després el sistema operatiu carregarà altra vegada les dades que necessita. Ha <quote
->intercanviat</quote
-> les dades innecessàries, per a les dades que requeriu en aquest moment. La memòria virtual o d'intercanvi no és tan ràpida com la memòria física, de manera que els sistemes operatius miren de mantenir les dades (especialment les que s'utilitzen sovint), en la memòria física.</para>
+>El segon tipus de memòria, s'anomena memòria virtual o memòria d'intercanvi. Aquest bloc de memòria, en realitat és espai en el disc dur. El sistema operatiu reserva espai en el disc dur per a «espai d'intercanvi». El sistema operatiu pot utilitzar aquesta memòria virtual (o espai d'intercanvi) si es queda sense memòria física. La raó per la qual s'anomena memòria d'«intercanvi» és que el sistema operatiu pren algunes dades que creu que no ha de menester durant un temps i les desa en el disc en aquest espai reservat. Després el sistema operatiu carregarà altra vegada les dades que necessita. Ha «intercanviat» les dades innecessàries, per a les dades que requeriu en aquest moment. La memòria virtual o d'intercanvi no és tan ràpida com la memòria física, de manera que els sistemes operatius miren de mantenir les dades (especialment les que s'utilitzen sovint), en la memòria física.</para>
 
 <para
 >La memòria total és la combinació de memòria física i memòria virtual.</para>
@@ -1020,9 +1012,7 @@
 >Mòdul Informació gràfica</title>
 
 <para
->Quan obriu els mòduls en aquesta secció, se us presentarà informació. La part esquerra de la finestra està organitzada en forma d'arbre. Alguns elements tenen un signe més al davant de l'etiqueta. Fent clic sobre aquest símbol s'obre un <quote
->submenú</quote
-> relacionat amb l'etiqueta. Fent clic sobre el signe menys al davant d'una etiqueta s'oculta el submenú.</para>
+>Quan obriu els mòduls en aquesta secció, se us presentarà informació. La part esquerra de la finestra està organitzada en forma d'arbre. Alguns elements tenen un signe més al davant de l'etiqueta. Fent clic sobre aquest símbol s'obre un «submenú» relacionat amb l'etiqueta. Fent clic sobre el signe menys al davant d'una etiqueta s'oculta el submenú.</para>
 
 <para
 >La part dreta de la finestra conté els valors individuals per a cadascun dels paràmetres de l'esquerra.</para>
