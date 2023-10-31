@@ -6,8 +6,7 @@ import org.kde.kirigami 2.12 as Kirigami
 import QtQuick.Controls 2.14 as QQC2
 import QtQuick.Layouts 1.14
 
-// This is a slightly bespoke variant of a BasicListItem. It features equally sized labels for the share information.
-Kirigami.AbstractListItem {
+QQC2.ItemDelegate {
     id: listItem
 
     contentItem: RowLayout {

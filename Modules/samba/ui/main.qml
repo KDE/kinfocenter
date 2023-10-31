@@ -37,8 +37,12 @@ KCM.AbstractKCM {
                 model: Samba.ShareModel{}
 
                 delegate: ShareListItem {
+                    width: view.width
+
                     // The view isn't navigatable nor interactable. Disable highlighting.
+                    highlighted: false
                     hoverEnabled: false
+                    down: false
                 }
 
                 Kirigami.PlaceholderMessage {
