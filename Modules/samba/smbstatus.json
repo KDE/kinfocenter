@@ -4,6 +4,7 @@
         "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
         "Description": "Samba status monitor",
         "Description[ar]": "مراقب حالة سامبا",
+        "Description[ast]": "Supervisor del estáu de SAMBA",
         "Description[az]": "Samba serverinin vəziyyəti",
         "Description[bg]": "Монитор на Samba статус",
         "Description[ca@valencia]": "Controlador de l'estat de Samba",

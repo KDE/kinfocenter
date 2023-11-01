@@ -4,6 +4,7 @@
         "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
         "Description": "Vulkan graphics API information",
         "Description[ar]": "المعلومات الرّسوميّة لواجهة فالكن",
+        "Description[ast]": "Información de l'API de gráficos Vulkan",
         "Description[az]": "Vulkan qrafik kartları API-si məlumatı",
         "Description[bg]": "API информация за Vulkan графика",
         "Description[ca@valencia]": "Informació de l'API gràfica Vulkan",

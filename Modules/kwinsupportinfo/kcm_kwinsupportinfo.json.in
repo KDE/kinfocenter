@@ -44,6 +44,7 @@
         "Icon": "kwin",
         "Name": "Window Manager",
         "Name[ar]": "مدير نوافذ",
+        "Name[ast]": "Xestor de ventanes",
         "Name[az]": "Pəncərə meneceri",
         "Name[bg]": "Мениджър на прозорци",
         "Name[ca@valencia]": "Gestor de finestres",
