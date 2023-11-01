@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-02 01:42+0000\n"
-"PO-Revision-Date: 2023-10-24 15:37+0200\n"
+"PO-Revision-Date: 2023-11-01 00:17+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -179,7 +179,7 @@ msgstr "Hardware"
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
-msgstr ""
+msgstr "Llanzar «%1»"
 
 #: ui/main.qml:180 ui/main.qml:188
 #, kde-format
