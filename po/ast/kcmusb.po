@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-05 02:14+0000\n"
-"PO-Revision-Date: 2023-11-01 01:02+0100\n"
+"PO-Revision-Date: 2023-11-01 10:45+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -213,7 +213,7 @@ msgstr ""
 #, kde-format
 msgctxt "USB device subclass"
 msgid "IRDA Bridge"
-msgstr ""
+msgstr "Ponte IRDA"
 
 #: classes.i18n:35
 #, kde-format
