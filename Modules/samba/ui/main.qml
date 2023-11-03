@@ -4,6 +4,7 @@
 import org.kde.kcmutils as KCM
 import QtQuick 2.14
 import org.kde.kirigami 2.12 as Kirigami
+import org.kde.kirigami.delegates as KD
 import QtQuick.Controls 2.14 as QQC2
 import QtQuick.Layouts 1.14
 import org.kde.kinfocenter.samba 1.0 as Samba
@@ -67,20 +68,18 @@ KCM.AbstractKCM {
                 currentIndex: -1
                 model: Samba.MountModel {}
 
-                delegate: Kirigami.BasicListItem {
-                    label: ROLE_Path
+                delegate: KD.SubtitleDelegate {
+                    // TODO document-open-remote is actually pretty cool but lacks a visualization for not connected
+                    //   emblem icons are kind of a crutch
+                    icon.name: ROLE_Accessible ? "emblem-mounted" : "emblem-unmounted"
+                    text: ROLE_Path
                     subtitle: ROLE_Share
-                    action: Kirigami.Action {
-                        // TODO document-open-remote is actually pretty cool but lacks a visualization for not connected
-                        //   emblem icons are kind of a crutch
-                        icon.name: ROLE_Accessible ? "emblem-mounted" : "emblem-unmounted"
-                        onTriggered: {
-                            // Append a slash as openurlexternally fucks with perfectly valid urls and turns them into
-                            // invalid ones (file:///srv => file://srv) that KIO then thinks is a windows UNC path
-                            // (file://srv => smb://srv).
-                            // By appending a slash we effectively trick Qt. Kinda meh.
-                            Qt.openUrlExternally("file://" + ROLE_Path + "/")
-                        }
+                    onClicked: {
+                        // Append a slash as openurlexternally fucks with perfectly valid urls and turns them into
+                        // invalid ones (file:///srv => file://srv) that KIO then thinks is a windows UNC path
+                        // (file://srv => smb://srv).
+                        // By appending a slash we effectively trick Qt. Kinda meh.
+                        Qt.openUrlExternally("file://" + ROLE_Path + "/")
                     }
                 }
 
