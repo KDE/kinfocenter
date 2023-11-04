@@ -1,7 +1,7 @@
 # translation of kcmsamba.po to Slovenian
 # Translation of kcmsamba.po to Slovenian
 # KDEBASE translation to Slovenian language.
-# $Id: kcm_samba.po 1658014 2023-08-12 02:14:18Z scripty $
+# $Id: kcm_samba.po 1664000 2023-11-04 02:01:47Z scripty $
 # $Source$
 #
 # Copyright (C) 2000, 2003, 2005 Free Software Foundation, Inc.
@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-12 02:01+0000\n"
+"POT-Creation-Date: 2023-11-04 01:38+0000\n"
 "PO-Revision-Date: 2020-09-30 07:20+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -27,31 +27,31 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 
-#: ui/main.qml:17
+#: ui/main.qml:18
 #, kde-format
 msgctxt "@title heading above listview"
 msgid "User-Created Shares"
 msgstr "Uporabniško ustvarjeni skupni viri"
 
-#: ui/main.qml:22
+#: ui/main.qml:23
 #, kde-format
 msgctxt "@title heading above listview"
 msgid "Mounted Remote Shares"
 msgstr "Priklopljeni oddaljeni skupni viri"
 
-#: ui/main.qml:49
+#: ui/main.qml:54
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no directories shared by users"
 msgstr "Ni direktorijev v skupni rabi uporabnikov"
 
-#: ui/main.qml:89
+#: ui/main.qml:92
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no Samba shares mounted on this system"
 msgstr "Ni priklopljenih skupnih Sambinih virov na tem sistemu"
 
-#: ui/ShareListItem.qml:69
+#: ui/ShareListItem.qml:68
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Open folder properties to change share settings"

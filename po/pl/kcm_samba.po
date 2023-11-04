@@ -1,4 +1,4 @@
-# Version: $Revision: 1658014 $
+# Version: $Revision: 1664000 $
 # translation of kcmsamba.po to
 # Marcin Giedz <mgiedz@elka.pw.edu.pl>, 2002.
 # Michal Rudolf <mrudolf@kdewebdev.org>, 2003.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-12 02:01+0000\n"
+"POT-Creation-Date: 2023-11-04 01:38+0000\n"
 "PO-Revision-Date: 2021-01-23 06:49+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -21,31 +21,31 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
-#: ui/main.qml:17
+#: ui/main.qml:18
 #, kde-format
 msgctxt "@title heading above listview"
 msgid "User-Created Shares"
 msgstr "Udziały utworzone przez użytkownika"
 
-#: ui/main.qml:22
+#: ui/main.qml:23
 #, kde-format
 msgctxt "@title heading above listview"
 msgid "Mounted Remote Shares"
 msgstr "Podpięte zdalne udziały"
 
-#: ui/main.qml:49
+#: ui/main.qml:54
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no directories shared by users"
 msgstr "Nie ma katalogów współdzielonych przez użytkowników"
 
-#: ui/main.qml:89
+#: ui/main.qml:92
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no Samba shares mounted on this system"
 msgstr "Nie ma udziałów podpiętych na tym systemie"
 
-#: ui/ShareListItem.qml:69
+#: ui/ShareListItem.qml:68
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Open folder properties to change share settings"

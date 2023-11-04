@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-12 02:01+0000\n"
+"POT-Creation-Date: 2023-11-04 01:38+0000\n"
 "PO-Revision-Date: 2023-06-23 08:22+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
@@ -24,31 +24,31 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 23.04.2\n"
 
-#: ui/main.qml:17
+#: ui/main.qml:18
 #, kde-format
 msgctxt "@title heading above listview"
 msgid "User-Created Shares"
 msgstr "Comparticións de persoas usuarias"
 
-#: ui/main.qml:22
+#: ui/main.qml:23
 #, kde-format
 msgctxt "@title heading above listview"
 msgid "Mounted Remote Shares"
 msgstr "Comparticións remotas montadas"
 
-#: ui/main.qml:49
+#: ui/main.qml:54
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no directories shared by users"
 msgstr "Non hai cartafoles compartidos por persoas usuarias."
 
-#: ui/main.qml:89
+#: ui/main.qml:92
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no Samba shares mounted on this system"
 msgstr "Non hai comparticións de Samba montadas no sistema."
 
-#: ui/ShareListItem.qml:69
+#: ui/ShareListItem.qml:68
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Open folder properties to change share settings"

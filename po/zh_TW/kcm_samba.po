@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-12 02:01+0000\n"
+"POT-Creation-Date: 2023-11-04 01:38+0000\n"
 "PO-Revision-Date: 2022-12-26 03:08+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
@@ -25,31 +25,31 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 22.12.0\n"
 
-#: ui/main.qml:17
+#: ui/main.qml:18
 #, kde-format
 msgctxt "@title heading above listview"
 msgid "User-Created Shares"
 msgstr "使用者建立的共享裝置"
 
-#: ui/main.qml:22
+#: ui/main.qml:23
 #, kde-format
 msgctxt "@title heading above listview"
 msgid "Mounted Remote Shares"
 msgstr "已掛載的遠端共享裝置"
 
-#: ui/main.qml:49
+#: ui/main.qml:54
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no directories shared by users"
 msgstr "沒有被使用者分享的目錄"
 
-#: ui/main.qml:89
+#: ui/main.qml:92
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no Samba shares mounted on this system"
 msgstr "這個系統上沒有已掛載的 Samba 共享裝置"
 
-#: ui/ShareListItem.qml:69
+#: ui/ShareListItem.qml:68
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Open folder properties to change share settings"

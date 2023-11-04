@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-12 02:01+0000\n"
+"POT-Creation-Date: 2023-11-04 01:38+0000\n"
 "PO-Revision-Date: 2022-03-11 11:57+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -21,31 +21,31 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Lokalize 21.12.3\n"
 
-#: ui/main.qml:17
+#: ui/main.qml:18
 #, kde-format
 msgctxt "@title heading above listview"
 msgid "User-Created Shares"
 msgstr "Kullanıcı Tarafından Oluşturulan Paylaşımlar"
 
-#: ui/main.qml:22
+#: ui/main.qml:23
 #, kde-format
 msgctxt "@title heading above listview"
 msgid "Mounted Remote Shares"
 msgstr "Bağlı Uzak Konum Paylaşımları"
 
-#: ui/main.qml:49
+#: ui/main.qml:54
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no directories shared by users"
 msgstr "Kullanıcılar tarafından paylaşılan dizin yok"
 
-#: ui/main.qml:89
+#: ui/main.qml:92
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no Samba shares mounted on this system"
 msgstr "Bu sistemde bağlı bir Samba paylaşımı yok"
 
-#: ui/ShareListItem.qml:69
+#: ui/ShareListItem.qml:68
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Open folder properties to change share settings"
