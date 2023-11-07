@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-20 01:55+0000\n"
-"PO-Revision-Date: 2023-07-25 13:44+0300\n"
+"PO-Revision-Date: 2023-09-26 10:49+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -334,9 +334,7 @@ msgid "No"
 msgstr "Ei"
 
 #: ui/main.qml:407
-#, fuzzy, kde-format
-#| msgctxt "Battery charge percentage"
-#| msgid "%1%"
+#, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1 %"
