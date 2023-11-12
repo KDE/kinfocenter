@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-16 00:48+0000\n"
-"PO-Revision-Date: 2023-10-08 12:51+0300\n"
+"PO-Revision-Date: 2023-11-12 01:10+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -248,22 +248,22 @@ msgstr "Depolama Sürücüleri"
 #: soldevicetypes.cpp:151
 #, kde-format
 msgid "Hard Disk Drive"
-msgstr "Sabit Disk Sürücü"
+msgstr "Sabit Disk Sürücüsü"
 
 #: soldevicetypes.cpp:154
 #, kde-format
 msgid "Compact Flash Reader"
-msgstr "Kompakt Flaş Okuyucu"
+msgstr "Kompakt Flaş Okuyucusu"
 
 #: soldevicetypes.cpp:157
 #, kde-format
 msgid "Smart Media Reader"
-msgstr "Akıllı Ortam Okuyucu"
+msgstr "Akıllı Ortam Okuyucusu"
 
 #: soldevicetypes.cpp:160
 #, kde-format
 msgid "SD/MMC Reader"
-msgstr "SD/MMC Okuyucu"
+msgstr "SD/MMC Okuyucusu"
 
 #: soldevicetypes.cpp:163
 #, kde-format
@@ -273,12 +273,12 @@ msgstr "Optik Sürücü"
 #: soldevicetypes.cpp:166
 #, kde-format
 msgid "Memory Stick Reader"
-msgstr "Bellek Kartı Okuyucu"
+msgstr "Bellek Kartı Okuyucusu"
 
 #: soldevicetypes.cpp:169
 #, kde-format
 msgid "xD Reader"
-msgstr "xD Okuyucu"
+msgstr "xD Okuyucusu"
 
 #: soldevicetypes.cpp:172
 #, kde-format
