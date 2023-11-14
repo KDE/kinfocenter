@@ -4,21 +4,21 @@
 # Franklin, 2015.
 # Jeff Huang <s8321414@gmail.com>, 2016.
 # pan93412 <pan93412@gmail.com>, 2018, 2020.
-# Kisaragi Hiu <mail@kisaragi-hiu.com>, 2022.
+# Kisaragi Hiu <mail@kisaragi-hiu.com>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-02 01:42+0000\n"
-"PO-Revision-Date: 2022-12-21 05:20+0900\n"
+"PO-Revision-Date: 2023-11-14 02:42+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
-"Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
+"Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 24.01.75\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -145,7 +145,7 @@ msgstr "KDE Plasma 版本："
 #, kde-format
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
-msgstr ""
+msgstr ":"
 
 #: ui/main.qml:92
 #, kde-format
@@ -157,7 +157,7 @@ msgstr "序號"
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
-msgstr ""
+msgstr "複製"
 
 #: ui/main.qml:125
 #, kde-format
@@ -177,31 +177,30 @@ msgctxt "@title:group"
 msgid "Hardware"
 msgstr "硬體"
 
+# %1 是中文的譯文，所以沒有空白會比較好。
 #: ui/main.qml:167
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
-msgstr ""
+msgstr "啟動%1"
 
 #: ui/main.qml:180 ui/main.qml:188
-#, fuzzy, kde-format
-#| msgctxt "EMAIL OF TRANSLATORS"
-#| msgid "Your emails"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
-msgstr "franklin@goodhorse.idv.tw, s8321414@gmail.com"
+msgstr "複製詳細資訊"
 
 #: ui/main.qml:191
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
-msgstr ""
+msgstr "使用目前語言"
 
 #: ui/main.qml:197
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
-msgstr ""
+msgstr "使用英文"
 
 #~ msgctxt "@action:button"
 #~ msgid "Copy to Clipboard"
