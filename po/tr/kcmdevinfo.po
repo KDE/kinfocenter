@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-16 00:48+0000\n"
-"PO-Revision-Date: 2023-11-12 01:10+0300\n"
+"PO-Revision-Date: 2023-11-29 16:33+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -355,12 +355,12 @@ msgstr "Bölüntü Tablosu"
 #: soldevicetypes.cpp:266
 #, kde-format
 msgid "Raid"
-msgstr "Raid"
+msgstr "RAID"
 
 #: soldevicetypes.cpp:269
 #, kde-format
 msgid "Encrypted"
-msgstr "Şifrelenmiş"
+msgstr "Şifreli"
 
 #: soldevicetypes.cpp:272
 #, kde-format
@@ -381,7 +381,7 @@ msgstr "Etiket: "
 #: soldevicetypes.cpp:276
 #, kde-format
 msgid "Not Set"
-msgstr "Ayarlanmamış"
+msgstr "Ayarlanmadı"
 
 #: soldevicetypes.cpp:276
 #, kde-format
@@ -391,7 +391,7 @@ msgstr "Bölüm kullanımı: "
 #: soldevicetypes.cpp:276
 #, kde-format
 msgid "UUID: "
-msgstr "Evrensel biricik tanımlayıcı: "
+msgstr "UUID:"
 
 #: soldevicetypes.cpp:282
 #, kde-format
@@ -401,18 +401,18 @@ msgstr "Bağlama noktası: "
 #: soldevicetypes.cpp:282
 #, kde-format
 msgid "Not Mounted"
-msgstr "Bağlanmamış"
+msgstr "Bağlanmadı"
 
 #: soldevicetypes.cpp:287
 #, kde-format
 msgid "Volume Space:"
-msgstr "Bölüm Alanı:"
+msgstr "Bölüm alanı:"
 
 #: soldevicetypes.cpp:297
 #, kde-format
 msgctxt "Available space out of total partition size (percent used)"
 msgid "%1 free of %2 (%3% used)"
-msgstr "%1 / %2 boş (%​%3 kullanılıyor)"
+msgstr "%1/%2 boş (%​%3 kullanılıyor)"
 
 #: soldevicetypes.cpp:303
 #, kde-format
