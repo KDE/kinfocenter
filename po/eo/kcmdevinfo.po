@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: kcmdevinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-16 00:48+0000\n"
-"PO-Revision-Date: 2023-01-07 01:00+0100\n"
+"PO-Revision-Date: 2023-03-25 23:06+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: pology\n"
+"X-Generator: translate-po (https://github.com/zcribe/translate-po)\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -96,7 +96,7 @@ msgstr "UDI:"
 #, kde-format
 msgctxt "Udi Whats This"
 msgid "Shows the current device's UDI (Unique Device Identifier)"
-msgstr ""
+msgstr "Montras la UDI (Unike Device Identifier) ​​de la nuna aparato"
 
 #: infopanel.cpp:20
 #, kde-format
@@ -107,7 +107,7 @@ msgstr "Aparatoinformo"
 #, kde-format
 msgctxt "Info Panel Whats This"
 msgid "Shows information about the currently selected device."
-msgstr ""
+msgstr "Montras informojn pri la nuntempe elektita aparato."
 
 #: infopanel.cpp:56
 #, kde-format
@@ -115,6 +115,8 @@ msgid ""
 "\n"
 "Solid Based Device Viewer Module"
 msgstr ""
+"\n"
+"Solidbazita Aparato-Vidilo-Modulo"
 
 #: infopanel.cpp:119
 #, kde-format
@@ -243,42 +245,42 @@ msgstr "Memoraparatoj"
 #: soldevicetypes.cpp:151
 #, kde-format
 msgid "Hard Disk Drive"
-msgstr ""
+msgstr "Malmola Diska Disko"
 
 #: soldevicetypes.cpp:154
 #, kde-format
 msgid "Compact Flash Reader"
-msgstr ""
+msgstr "Kompakta Flash Leganto"
 
 #: soldevicetypes.cpp:157
 #, kde-format
 msgid "Smart Media Reader"
-msgstr ""
+msgstr "Smart Media Reader"
 
 #: soldevicetypes.cpp:160
 #, kde-format
 msgid "SD/MMC Reader"
-msgstr ""
+msgstr "SD/MMC-Leganto"
 
 #: soldevicetypes.cpp:163
 #, kde-format
 msgid "Optical Drive"
-msgstr ""
+msgstr "Optika Drive"
 
 #: soldevicetypes.cpp:166
 #, kde-format
 msgid "Memory Stick Reader"
-msgstr ""
+msgstr "Memorbastona Leganto"
 
 #: soldevicetypes.cpp:169
 #, kde-format
 msgid "xD Reader"
-msgstr ""
+msgstr "xD Leganto"
 
 #: soldevicetypes.cpp:172
 #, kde-format
 msgid "Unknown Drive"
-msgstr ""
+msgstr "Nekonata Veturado"
 
 #: soldevicetypes.cpp:192
 #, kde-format
@@ -293,7 +295,7 @@ msgstr "USB"
 #: soldevicetypes.cpp:198
 #, kde-format
 msgid "IEEE1394"
-msgstr ""
+msgstr "IEEE1394"
 
 #: soldevicetypes.cpp:201
 #, kde-format
@@ -303,7 +305,7 @@ msgstr "SCSI"
 #: soldevicetypes.cpp:204
 #, kde-format
 msgid "SATA"
-msgstr ""
+msgstr "SATA"
 
 #: soldevicetypes.cpp:207
 #, kde-format
@@ -320,12 +322,12 @@ msgstr "Nekonata"
 #: soldevicetypes.cpp:213
 #, kde-format
 msgid "Bus: "
-msgstr ""
+msgstr "Buso:"
 
 #: soldevicetypes.cpp:213
 #, kde-format
 msgid "Hotpluggable?"
-msgstr ""
+msgstr "Varmkonektebla?"
 
 #: soldevicetypes.cpp:213
 #, kde-format
@@ -401,58 +403,58 @@ msgstr "Ne muntita"
 #: soldevicetypes.cpp:287
 #, kde-format
 msgid "Volume Space:"
-msgstr ""
+msgstr "Volumspaco:"
 
 #: soldevicetypes.cpp:297
 #, kde-format
 msgctxt "Available space out of total partition size (percent used)"
 msgid "%1 free of %2 (%3% used)"
-msgstr ""
+msgstr "%1 libera de %2 (%3% uzata)"
 
 #: soldevicetypes.cpp:303
 #, kde-format
 msgid "No data available"
-msgstr ""
+msgstr "Neniuj datumoj haveblaj"
 
 #: soldevicetypes.cpp:330
 #, kde-format
 msgid "Multimedia Players"
-msgstr ""
+msgstr "Plurmedia Ludiloj"
 
 #: soldevicetypes.cpp:349 soldevicetypes.cpp:388
 #, kde-format
 msgid "Supported Drivers: "
-msgstr ""
+msgstr "Subtenataj peliloj:"
 
 #: soldevicetypes.cpp:349 soldevicetypes.cpp:388
 #, kde-format
 msgid "Supported Protocols: "
-msgstr ""
+msgstr "Subtenataj Protokoloj:"
 
 #: soldevicetypes.cpp:369
 #, kde-format
 msgid "Cameras"
-msgstr ""
+msgstr "Fotiloj"
 
 #: soldevicetypes.cpp:408
 #, kde-format
 msgid "Batteries"
-msgstr ""
+msgstr "Baterioj"
 
 #: soldevicetypes.cpp:430
 #, kde-format
 msgid "PDA"
-msgstr ""
+msgstr "PDA"
 
 #: soldevicetypes.cpp:433
 #, kde-format
 msgid "UPS"
-msgstr ""
+msgstr "UPS"
 
 #: soldevicetypes.cpp:436
 #, kde-format
 msgid "Primary"
-msgstr ""
+msgstr "Primaraj"
 
 #: soldevicetypes.cpp:439
 #, kde-format
@@ -467,7 +469,7 @@ msgstr "Klavaro"
 #: soldevicetypes.cpp:445
 #, kde-format
 msgid "Keyboard + Mouse"
-msgstr ""
+msgstr "Klavaro + Muso"
 
 #: soldevicetypes.cpp:448
 #, kde-format
@@ -530,4 +532,4 @@ msgstr "Ŝarĝostato: "
 #: soldevicetypes.cpp:478
 #, kde-format
 msgid "Charge Percent: "
-msgstr ""
+msgstr "Ŝarĝprocento:"
