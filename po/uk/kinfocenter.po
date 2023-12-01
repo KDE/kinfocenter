@@ -1,24 +1,22 @@
-# Translation for kinfocenter.po to Euskara/Basque (eu).
-# Copyright (C) 2023 This file is copyright:
+# Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
-# KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
 #
-# Translators:
-# SPDX-FileCopyrightText: 2023 Iñigo Salvador Azurmendi <xalba@ni.eus>
+# Yuri Chornoivan <yurchor@ukr.net>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-29 01:38+0000\n"
-"PO-Revision-Date: 2023-11-29 22:49+0100\n"
-"Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
-"Language-Team: Basque <kde-i18n-eu@kde.org>\n"
-"Language: eu\n"
+"PO-Revision-Date: 2023-11-29 09:52+0200\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 20.12.0\n"
 
 #: CommandOutputContext.cpp:98
 #, kde-kuit-format
@@ -27,8 +25,8 @@ msgid ""
 "The <command>%1</command> tool is required to display this page, but could "
 "not be found"
 msgstr ""
-"<command>%1</command> tresna behar da orri hau azaltzeko, baina ezin izan da "
-"aurkitu"
+"Для показу цієї сторінки потрібна програма <command>%1</command>, але її не "
+"вдалося знайти"
 
 #: CommandOutputContext.cpp:100
 #, kde-kuit-format
@@ -37,16 +35,17 @@ msgid ""
 "You can search for it and install it using your package manager.<nl/>Then "
 "please report this packaging issue to your distribution."
 msgstr ""
-"Zure pakete-kudeatzailea erabiliz hura bilatu eta instalatu dezakezu.<nl/> "
-"Ondoren, mesedez, eman paketatze arazo horren berri zure banatzaileari."
+"Ви можете пошукати її і встановити за допомогою програми для керування "
+"пакунками.<nl/>Після встановлення програми повідомте про цю помилку "
+"пакування авторам свого дистрибутива."
 
 #: CommandOutputContext.cpp:113
 #, kde-kuit-format
 msgctxt "@info"
 msgid "The <command>%1</command> tool crashed while generating page content"
 msgstr ""
-"<command>%1</command> tresna, orriaren edukia sortu bitartean, kraskatu egin "
-"da"
+"Програма <command>%1</command> аварійно завершила роботу під час спроби "
+"створити вміст сторінки"
 
 #: CommandOutputContext.cpp:114
 #, kde-kuit-format
@@ -55,40 +54,40 @@ msgid ""
 "Try again later. If keeps happening, please report the crash to your "
 "distribution."
 msgstr ""
-"Saiatu berriz beranduago. Etengabe gertatzen bada, mesedez, eman "
-"kraskaduraren berri zure banatzaileari."
+"Повторіть спробу пізніше. Якщо помилка повторюється, будь ласка, повідомте "
+"про аварій авторам вашого дистрибутива."
 
 #: qml/CommandOutputKCM.qml:88
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
-msgstr "Ez dago iragazkiarekin bat datorren testurik"
+msgstr "У тексті немає відповідників фільтра"
 
 #: qml/CommandOutputKCM.qml:93
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
-msgstr "Ez dago datu erabilgarririk"
+msgstr "Не виявлено даних"
 
 #: qml/CommandOutputKCM.qml:106
 #, kde-format
 msgid "Report this issue"
-msgstr "Eman arazo honen berri"
+msgstr "Повідомити про цю проблему"
 
 #: qml/CommandOutputKCM.qml:125
 #, kde-format
 msgctxt "@action:button copies all displayed text"
 msgid "Copy to Clipboard"
-msgstr "Kopiatu arbelera"
+msgstr "Скопіювати до буфера"
 
 #: qml/CommandOutputKCM.qml:135
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
-msgstr "Iragazi…"
+msgstr "Фільтрувати…"
 
 #: qml/CommandOutputKCM.qml:137
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"
-msgstr "Iragazi"
+msgstr "Фільтр"
