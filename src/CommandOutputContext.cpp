@@ -117,7 +117,9 @@ void CommandOutputContext::load()
         }
 
         m_text = QString::fromLocal8Bit(proc->readAllStandardOutput());
-        m_text = m_text.trimmed();
+        if (m_trimAllowed) {
+            m_text = m_text.trimmed();
+        }
         m_originalLines = m_text.split('\n');
         if (!m_filter.isEmpty()) {
             // re-apply filter on new text
@@ -148,6 +150,11 @@ void CommandOutputContext::setReady()
 {
     m_ready = true;
     Q_EMIT readyChanged();
+}
+
+void CommandOutputContext::setTrimAllowed(bool allow)
+{
+    m_trimAllowed = allow;
 }
 
 #include "moc_CommandOutputContext.cpp"

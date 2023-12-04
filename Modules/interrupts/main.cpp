@@ -20,6 +20,7 @@ public:
             new CommandOutputContext(QStringLiteral("vmstat"), {QStringLiteral("-i")}, parent);
 #else
             new CommandOutputContext(QStringLiteral("cat"), {QStringLiteral("/proc/interrupts")}, parent);
+        outputContext->setTrimAllowed(false);
 #endif
         qmlRegisterSingletonInstance("org.kde.kinfocenter.interrupts.private", 1, 0, "InfoOutputContext", outputContext);
     }

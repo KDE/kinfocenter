@@ -39,6 +39,8 @@ public:
     void setFilter(const QString &filter);
     Q_SIGNAL void filterChanged();
 
+    void setTrimAllowed(bool allow);
+
 Q_SIGNALS:
     void textChanged();
     void readyChanged();
@@ -59,6 +61,7 @@ private:
 
     QStringList m_originalLines;
 
+    bool m_trimAllowed = true;
     bool m_ready = false;
     QString m_error;
     QString m_explanation;
