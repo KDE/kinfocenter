@@ -2,7 +2,7 @@ project(kinfocenter)
 set(PROJECT_VERSION "5.90.90")
 
 cmake_minimum_required(VERSION 3.16)
-set(QT_MIN_VERSION "6.4")
+set(QT_MIN_VERSION "6.6.0")
 
 set(KF6_MIN_VERSION "5.240")
 find_package(ECM ${KF6_MIN_VERSION} REQUIRED NO_MODULE)
