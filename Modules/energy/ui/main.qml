@@ -145,7 +145,7 @@ KCM.SimpleKCM {
                                 margins: Kirigami.Units.smallSpacing * 2
                             }
                             RowLayout {
-
+                                // Reference: BatteryType enum in solid/devices/frontend/battery.h
                                 Kirigami.Icon {
                                     id: batteryIcon
                                     Layout.preferredWidth: Kirigami.Units.iconSizes.smallMedium
@@ -158,7 +158,7 @@ KCM.SimpleKCM {
                                         case 4: return "input-mouse"
                                         case 5: return "input-keyboard"
                                         case 1: return "phone"
-                                        case 7: return "smartphone"
+                                        case 8: return "smartphone"
                                         default: return "paint-unknown"
                                         }
                                     }
@@ -174,7 +174,7 @@ KCM.SimpleKCM {
                                         case 4: return i18n("Mouse battery")
                                         case 5: return i18n("Keyboard battery")
                                         case 1: return i18n("PDA battery")
-                                        case 7: return i18n("Phone battery")
+                                        case 8: return i18n("Phone battery")
                                         default: return i18n("Unknown battery")
                                         }
                                     }
