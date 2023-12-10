@@ -43,6 +43,7 @@ Name[uk]=Інтерфейс керування стільницею
 Name[vi]=Giao diện quản lí máy tính
 Name[x-test]=xxDesktop Management Interfacexx
 Name[zh_CN]=桌面管理界面 (DMI)
+Name[zh_TW]=桌面管理介面
 
 [org.kde.kinfocenter.dmidecode.systeminformation]
 Policy=yes
@@ -135,3 +136,4 @@ Description[uk]=Читати дані системи з інтерфейсу к�
 Description[vi]=Đọc thông tin hệ thống từ "Giao diện quản lí máy tính" (DMI) của hệ thống
 Description[x-test]=xxRead system information from system's Desktop Management Interface (DMI)xx
 Description[zh_CN]=读取本机系统的桌面管理界面 (DMI) 中的系统信息
+Description[zh_TW]=從系統的桌面管理介面 (DMI) 讀取系統資訊

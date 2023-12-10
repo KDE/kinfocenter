@@ -37,6 +37,7 @@
         "Description[vi]": "Thông tin về API OpenCL",
         "Description[x-test]": "xxOpenCL API informationxx",
         "Description[zh_CN]": "OpenCL API 信息",
+        "Description[zh_TW]": "OpenCL API 資訊",
         "Icon": "video-display",
         "Name": "OpenCL",
         "Name[ar]": "أوبن‌سي‌إل",
@@ -72,7 +73,8 @@
         "Name[uk]": "OpenCL",
         "Name[vi]": "OpenCL",
         "Name[x-test]": "xxOpenCLxx",
-        "Name[zh_CN]": "OpenCL"
+        "Name[zh_CN]": "OpenCL",
+        "Name[zh_TW]": "OpenCL"
     },
     "TryExec": "clinfo",
     "X-KDE-KInfoCenter-Category": "graphical_information",
