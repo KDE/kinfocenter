@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeorg\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-11-29 01:38+0000\n"
+"PO-Revision-Date: 2023-12-09 09:24\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: kdeorg\n"
+"X-Crowdin-Project-ID: 269464\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /kf6-trunk/messages/kinfocenter/kinfocenter.pot\n"
+"X-Crowdin-File-ID: 48714\n"
+
+#: CommandOutputContext.cpp:98
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"The <command>%1</command> tool is required to display this page, but could "
+"not be found"
+msgstr ""
+
+#: CommandOutputContext.cpp:100
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"You can search for it and install it using your package manager.<nl/>Then "
+"please report this packaging issue to your distribution."
+msgstr ""
+
+#: CommandOutputContext.cpp:113
+#, kde-kuit-format
+msgctxt "@info"
+msgid "The <command>%1</command> tool crashed while generating page content"
+msgstr ""
+
+#: CommandOutputContext.cpp:114
+#, kde-kuit-format
+msgctxt "@Info"
+msgid ""
+"Try again later. If keeps happening, please report the crash to your "
+"distribution."
+msgstr ""
+
+#: qml/CommandOutputKCM.qml:88
+#, kde-format
+msgctxt "@info"
+msgid "No text matching the filter"
+msgstr ""
+
+#: qml/CommandOutputKCM.qml:93
+#, kde-format
+msgctxt "@info the KCM has no data to display"
+msgid "No data available"
+msgstr ""
+
+#: qml/CommandOutputKCM.qml:106
+#, kde-format
+msgid "Report this issue"
+msgstr ""
+
+#: qml/CommandOutputKCM.qml:125
+#, kde-format
+msgctxt "@action:button copies all displayed text"
+msgid "Copy to Clipboard"
+msgstr ""
+
+#: qml/CommandOutputKCM.qml:135
+#, kde-format
+msgctxt "@label placeholder text to filter for something"
+msgid "Filter…"
+msgstr ""
+
+#: qml/CommandOutputKCM.qml:137
+#, kde-format
+msgctxt "accessible name for filter input"
+msgid "Filter"
+msgstr ""
