@@ -123,7 +123,7 @@ KCM.SimpleKCM {
 
                     QQC2.Button {
                         id: button
-                        width: Kirigami.Units.gridUnit * 10
+                        width: Kirigami.Units.gridUnit * 12
                         height: tabView.height
                         checked: model.battery == root.currentBattery
                         checkable: true
@@ -152,36 +152,53 @@ KCM.SimpleKCM {
                                     Layout.preferredHeight: Layout.preferredWidth
                                     source: {
                                         switch(model.battery.type) {
-                                        case 3: return model.battery.chargeState === 1 ? "battery-full-charging" : "battery-full"
-                                        case 2: return "battery-ups"
-                                        case 9: return "monitor"
-                                        case 4: return "input-mouse"
-                                        case 5: return "input-keyboard"
-                                        case 1: return "phone"
-                                        case 8: return "smartphone"
-                                        default: return "paint-unknown"
+                                            case 1: return "phone"
+                                            case 2: return "battery-ups"
+                                            case 3: return model.battery.chargeState === 1 ? "battery-full-charging" : "battery-full"
+                                            case 4: return "input-mouse"
+                                            case 5: return "input-keyboard"
+                                            case 6: return "input-keyboard" // TODO: New Icon Required?
+                                            case 7: return "camera-photo"
+                                            case 8: return "smartphone"
+                                            case 9: return "monitor"
+                                            case 10: return "input-gamepad"
+                                            case 11: return "preferences-system-bluetooth-battery"
+                                            case 12: return "input-tablet"
+                                            case 13: return "headphone"
+                                            case 14: return "headset"
+                                            case 15: return "input-touchpad"
+                                            default: return "paint-unknown"
                                         }
                                     }
                                 }
 
                                 ColumnLayout {
                                     spacing: 0
+
                                     QQC2.Label {
                                         Layout.fillWidth: true
                                         text: {
                                             switch(model.battery.type) {
-                                            case 3: return i18n("Internal battery")
-                                            case 2: return i18n("UPS battery")
-                                            case 9: return i18n("Monitor battery")
-                                            case 4: return i18n("Mouse battery")
-                                            case 5: return i18n("Keyboard battery")
-                                            case 1: return i18n("PDA battery")
-                                            case 8: return i18n("Phone battery")
-                                            default: return i18n("Unknown battery")
+                                                case 1: return i18n("PDA Battery")
+                                                case 2: return i18n("UPS Battery")
+                                                case 3: return i18n("Internal Battery")
+                                                case 4: return i18n("Mouse Battery")
+                                                case 5: return i18n("Keyboard Battery")
+                                                case 6: return i18n("Keyboard/Mouse Battery")
+                                                case 7: return i18n("Camera Battery")
+                                                case 8: return i18n("Phone Battery")
+                                                case 9: return i18n("Monitor Battery")
+                                                case 10: return i18n("Gaming Input Battery")
+                                                case 11: return i18n("Bluetooth Battery")
+                                                case 12: return i18n("Tablet Battery")
+                                                case 13: return i18n("Headphone Battery")
+                                                case 14: return i18n("Headset Battery")
+                                                case 15: return i18n("Touchpad Battery")
+                                                default: return i18n("Unknown Battery")
                                             }
+                                            elide: Text.ElideRight
+                                            maximumLineCount : 1
                                         }
-                                        elide: Text.ElideRight
-                                        maximumLineCount : 1
                                     }
 
                                     QQC2.Label {
