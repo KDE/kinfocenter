@@ -164,22 +164,34 @@ KCM.SimpleKCM {
                                     }
                                 }
 
-                                QQC2.Label {
-                                    Layout.fillWidth: true
-                                    text: {
-                                        switch(model.battery.type) {
-                                        case 3: return i18n("Internal battery")
-                                        case 2: return i18n("UPS battery")
-                                        case 9: return i18n("Monitor battery")
-                                        case 4: return i18n("Mouse battery")
-                                        case 5: return i18n("Keyboard battery")
-                                        case 1: return i18n("PDA battery")
-                                        case 8: return i18n("Phone battery")
-                                        default: return i18n("Unknown battery")
+                                ColumnLayout {
+                                    spacing: 0
+                                    QQC2.Label {
+                                        Layout.fillWidth: true
+                                        text: {
+                                            switch(model.battery.type) {
+                                            case 3: return i18n("Internal battery")
+                                            case 2: return i18n("UPS battery")
+                                            case 9: return i18n("Monitor battery")
+                                            case 4: return i18n("Mouse battery")
+                                            case 5: return i18n("Keyboard battery")
+                                            case 1: return i18n("PDA battery")
+                                            case 8: return i18n("Phone battery")
+                                            default: return i18n("Unknown battery")
+                                            }
                                         }
+                                        elide: Text.ElideRight
+                                        maximumLineCount : 1
                                     }
-                                    elide: Text.ElideRight
-                                }
+
+                                    QQC2.Label {
+                                        Layout.fillWidth: true
+                                        text: model.product
+                                        color: Kirigami.Theme.disabledTextColor
+                                        elide: Text.ElideRight
+                                        maximumLineCount : 1
+                                    }
+                               }
                             }
 
                             RowLayout {
