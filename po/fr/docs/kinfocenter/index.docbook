@@ -534,10 +534,10 @@
 >Les sujets d'informations suivants dépendent du périphérique choisi. Ils sont nommés de façon explicite pour faciliter la compréhension. Les titres d'informations peuvent être choisis et copiés.</para>
 <note>
 <para
->Processeurs <guilabel
->Fréquences maximales : Les sujets </guilabel
-> et <guilabel
->Ensemble d'instructions pris en charge :</guilabel
+>Les sujets concernant les <guilabel
+>Fréquences maximales :</guilabel
+> des processeurs et les <guilabel
+>Ensembles d'instructions pris en charge :</guilabel
 > ne sont pas en général traités par &solid;.</para>
 </note>
 <note>
@@ -804,7 +804,7 @@
 >showmount</command
 > <option
 >-a localhost</option
-> est analysée. Sur certains systèmes,la commande « showmount » est présente dans le répertoire <filename class="directory"
+> est analysée. Sur certains systèmes,la commande « showmount » est présente dans le dossier <filename class="directory"
 >/usr/sbin</filename
 >. Veuillez vérifier la présence de « showmount » dans votre variable d'environnement <envar
 >PATH</envar
@@ -875,7 +875,7 @@
 <para
 >Si vous voulez savoir qui accède à votre machine et quels sont les fichiers accédés, vous devez alors paramétrer le niveau d'historique du journal à 2 et créer régulièrement un nouveau journal &Samba; (&pex; définir une tâche <command
 >cron</command
-> qui va déplacer une fois par semaine votre journal &Samba;  courant dans un autre dossier ou quelque chose comme cela). Sinon, votre journal &Samba;  peut devenir très gros.</para>
+> qui va déplacer une fois par semaine votre journal &Samba; courant dans un autre dossier ou quelque chose comme cela). Sinon, votre journal &Samba; peut devenir très gros.</para>
 
 <para
 >À l'aide des quatre cases à cocher situées sous la grande liste, vous pouvez décider quels évènements afficher dans la liste. Vous devez cliquer sur le bouton <guibutton
