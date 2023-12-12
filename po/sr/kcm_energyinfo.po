@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-20 01:55+0000\n"
+"POT-Creation-Date: 2023-12-12 01:38+0000\n"
 "PO-Revision-Date: 2016-07-03 22:52+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -222,58 +222,58 @@ msgctxt "@info:status"
 msgid "No energy information available on this system"
 msgstr ""
 
-#: ui/main.qml:171
-#, kde-format
-msgid "Internal battery"
-msgstr ""
-
-#: ui/main.qml:172
-#, fuzzy, kde-format
-#| msgid "Battery"
-msgid "UPS battery"
-msgstr "Батерија"
-
 #: ui/main.qml:173
 #, kde-format
-msgid "Monitor battery"
+msgid "Internal battery"
 msgstr ""
 
 #: ui/main.qml:174
 #, fuzzy, kde-format
 #| msgid "Battery"
-msgid "Mouse battery"
+msgid "UPS battery"
 msgstr "Батерија"
 
 #: ui/main.qml:175
 #, kde-format
-msgid "Keyboard battery"
+msgid "Monitor battery"
 msgstr ""
 
 #: ui/main.qml:176
 #, fuzzy, kde-format
 #| msgid "Battery"
-msgid "PDA battery"
+msgid "Mouse battery"
 msgstr "Батерија"
 
 #: ui/main.qml:177
+#, kde-format
+msgid "Keyboard battery"
+msgstr ""
+
+#: ui/main.qml:178
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "PDA battery"
+msgstr "Батерија"
+
+#: ui/main.qml:179
 #, fuzzy, kde-format
 #| msgid "Battery"
 msgid "Phone battery"
 msgstr "Батерија"
 
-#: ui/main.qml:178
+#: ui/main.qml:180
 #, kde-format
 msgid "Unknown battery"
 msgstr ""
 
-#: ui/main.qml:196
+#: ui/main.qml:208
 #, fuzzy, kde-format
 #| msgid "Charging"
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr "Пуни се"
 
-#: ui/main.qml:197
+#: ui/main.qml:209
 #, fuzzy, kde-format
 #| msgctxt "%1 is value, %2 is unit"
 #| msgid "%1 %2"
@@ -282,66 +282,66 @@ msgid "%1%"
 msgstr "%1 %2"
 
 # >> @title:column
-#: ui/main.qml:246
+#: ui/main.qml:258
 #, kde-format
 msgctxt "Shorthand for Watts"
 msgid "W"
 msgstr "W"
 
-#: ui/main.qml:246
+#: ui/main.qml:258
 #, kde-format
 msgctxt "literal percent sign"
 msgid "%"
 msgstr "%"
 
-#: ui/main.qml:272
+#: ui/main.qml:284
 #, kde-format
 msgid "Charge Percentage"
 msgstr "Проценат попуњености"
 
-#: ui/main.qml:282
+#: ui/main.qml:294
 #, kde-format
 msgid "Energy Consumption"
 msgstr "Потрошња енергије"
 
-#: ui/main.qml:297
+#: ui/main.qml:309
 #, kde-format
 msgid "Timespan"
 msgstr "Временски распон"
 
-#: ui/main.qml:298
+#: ui/main.qml:310
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "Временски распон за приказ података"
 
-#: ui/main.qml:304
+#: ui/main.qml:316
 #, kde-format
 msgid "Refresh"
 msgstr "Освежи"
 
-#: ui/main.qml:316
+#: ui/main.qml:328
 #, kde-format
 msgid "This type of history is currently not available for this device."
 msgstr "Ова врста историјата тренутно није доступна за овај уређај."
 
-#: ui/main.qml:374
+#: ui/main.qml:386
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
 # >> @item
-#: ui/main.qml:385
+#: ui/main.qml:397
 #, kde-format
 msgid "Yes"
 msgstr "да"
 
 # >> @item
-#: ui/main.qml:387
+#: ui/main.qml:399
 #, kde-format
 msgid "No"
 msgstr "не"
 
-#: ui/main.qml:407
+#: ui/main.qml:419
 #, fuzzy, kde-format
 #| msgctxt "%1 is value, %2 is unit"
 #| msgid "%1 %2"
@@ -349,7 +349,7 @@ msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1 %2"
 
-#: ui/main.qml:409
+#: ui/main.qml:421
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"

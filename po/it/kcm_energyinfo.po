@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-20 01:55+0000\n"
+"POT-Creation-Date: 2023-12-12 01:38+0000\n"
 "PO-Revision-Date: 2023-09-21 01:40+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -218,123 +218,123 @@ msgctxt "@info:status"
 msgid "No energy information available on this system"
 msgstr "Nessuna informazione energetica disponibile su questo sistema"
 
-#: ui/main.qml:171
+#: ui/main.qml:173
 #, kde-format
 msgid "Internal battery"
 msgstr "Batteria interna"
 
-#: ui/main.qml:172
+#: ui/main.qml:174
 #, kde-format
 msgid "UPS battery"
 msgstr "Batteria dell'UPS"
 
-#: ui/main.qml:173
+#: ui/main.qml:175
 #, kde-format
 msgid "Monitor battery"
 msgstr "Batteria del monitor"
 
-#: ui/main.qml:174
+#: ui/main.qml:176
 #, kde-format
 msgid "Mouse battery"
 msgstr "Batteria del mouse"
 
-#: ui/main.qml:175
+#: ui/main.qml:177
 #, kde-format
 msgid "Keyboard battery"
 msgstr "Batteria della tastiera"
 
-#: ui/main.qml:176
+#: ui/main.qml:178
 #, kde-format
 msgid "PDA battery"
 msgstr "Batteria del PDA"
 
-#: ui/main.qml:177
+#: ui/main.qml:179
 #, kde-format
 msgid "Phone battery"
 msgstr "Batteria del telefono"
 
-#: ui/main.qml:178
+#: ui/main.qml:180
 #, kde-format
 msgid "Unknown battery"
 msgstr "Batteria sconosciuta"
 
-#: ui/main.qml:196
+#: ui/main.qml:208
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr "%1% (In ricarica)"
 
-#: ui/main.qml:197
+#: ui/main.qml:209
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:246
+#: ui/main.qml:258
 #, kde-format
 msgctxt "Shorthand for Watts"
 msgid "W"
 msgstr "W"
 
-#: ui/main.qml:246
+#: ui/main.qml:258
 #, kde-format
 msgctxt "literal percent sign"
 msgid "%"
 msgstr "%"
 
-#: ui/main.qml:272
+#: ui/main.qml:284
 #, kde-format
 msgid "Charge Percentage"
 msgstr "Percentuale di carica"
 
-#: ui/main.qml:282
+#: ui/main.qml:294
 #, kde-format
 msgid "Energy Consumption"
 msgstr "Consumo di energia"
 
-#: ui/main.qml:297
+#: ui/main.qml:309
 #, kde-format
 msgid "Timespan"
 msgstr "Intervallo di tempo"
 
-#: ui/main.qml:298
+#: ui/main.qml:310
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "Intervallo di tempo dei dati da visualizzare"
 
-#: ui/main.qml:304
+#: ui/main.qml:316
 #, kde-format
 msgid "Refresh"
 msgstr "Aggiorna"
 
-#: ui/main.qml:316
+#: ui/main.qml:328
 #, kde-format
 msgid "This type of history is currently not available for this device."
 msgstr ""
 "Questo tipo di storico non è attualmente disponibile per questo dispositivo."
 
-#: ui/main.qml:374
+#: ui/main.qml:386
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
-#: ui/main.qml:385
+#: ui/main.qml:397
 #, kde-format
 msgid "Yes"
 msgstr "Sì"
 
-#: ui/main.qml:387
+#: ui/main.qml:399
 #, kde-format
 msgid "No"
 msgstr "No"
 
-#: ui/main.qml:407
+#: ui/main.qml:419
 #, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:409
+#: ui/main.qml:421
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
