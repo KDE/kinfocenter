@@ -18,17 +18,12 @@
 #include "infopanel.h"
 #include "soldevicetypes.h"
 #include "solidhelper.h"
-//#include "nicsignals.h"
 
 DeviceListing::DeviceListing(QWidget *parent, InfoPanel *info, DevInfoPlugin *stat)
     : QTreeWidget(parent)
     , iPanel(info)
     , status(stat)
 {
-    //     // Check nic changes
-    //    nicSig = new NicSignals();
-    //    connect(nicSig,SIGNAL(nicActivatedOrDisconnected()),this,SLOT(networkingChangedSlot()));
-    //
     // Check if selection changed
     connect(this, &DeviceListing::currentItemChanged, this, &DeviceListing::currentItemChangedSlot);
 
@@ -48,7 +43,6 @@ DeviceListing::DeviceListing(QWidget *parent, InfoPanel *info, DevInfoPlugin *st
 
 DeviceListing::~DeviceListing()
 {
-    // delete nicSig;
     clear();
 }
 
