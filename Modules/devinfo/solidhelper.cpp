@@ -13,9 +13,7 @@
 Solid::DeviceInterface::Type SolidHelper::deviceType(const Solid::Device *dev)
 {
     const Solid::DeviceInterface::Type needHardware[] = {
-        Solid::DeviceInterface::Processor,
         Solid::DeviceInterface::StorageDrive,
-        Solid::DeviceInterface::Battery,
         Solid::DeviceInterface::PortableMediaPlayer,
         Solid::DeviceInterface::Camera,
         Solid::DeviceInterface::StorageVolume,

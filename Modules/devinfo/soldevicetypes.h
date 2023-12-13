@@ -13,18 +13,6 @@
 
 class QVListLayout;
 
-class SolProcessorDevice : public SolDevice
-{
-public:
-    SolProcessorDevice(const Solid::DeviceInterface::Type &);
-    SolProcessorDevice(QTreeWidgetItem *, const Solid::Device &);
-    QVListLayout *infoPanelLayout() override;
-
-private:
-    void setDefaultDeviceText() override;
-    void setDefaultListing(const Solid::DeviceInterface::Type &) override;
-};
-
 class SolStorageDevice : public SolDevice
 {
 public:
@@ -74,16 +62,4 @@ public:
 private:
     void setDefaultListing(const Solid::DeviceInterface::Type &) override;
 };
-
-class SolBatteryDevice : public SolDevice
-{
-public:
-    SolBatteryDevice(const Solid::DeviceInterface::Type &);
-    SolBatteryDevice(QTreeWidgetItem *, const Solid::Device &);
-    QVListLayout *infoPanelLayout() override;
-
-private:
-    void setDefaultListing(const Solid::DeviceInterface::Type &) override;
-};
-
 #endif //

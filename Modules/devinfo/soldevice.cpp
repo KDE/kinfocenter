@@ -66,7 +66,7 @@ void SolDevice::setDefaultDeviceText()
 
     if (deviceSet) {
         ddtString = tiedDevice.product();
-        if (tiedDevice.isDeviceInterface(Solid::DeviceInterface::StorageVolume) || tiedDevice.isDeviceInterface(Solid::DeviceInterface::Battery)) {
+        if (tiedDevice.isDeviceInterface(Solid::DeviceInterface::StorageVolume)) {
             QString label = SolDevice::udi().section(QStringLiteral("/"), -1, -1);
             if (!label.isEmpty()) {
                 ddtString = label;
@@ -154,12 +154,6 @@ bool SolDevice::operator<(const QTreeWidgetItem &other) const
             return deviceType() < otherDevice->deviceType();
         }
         switch (deviceType()) {
-        case Solid::DeviceInterface::Processor: {
-            const Solid::Processor *left = tiedDevice.as<const Solid::Processor>();
-            const Solid::Processor *right = otherDevice->tiedDevice.as<const Solid::Processor>();
-            // Processors are sorted in ascending order, so this is reversed
-            return left->number() > right->number();
-        }
         case Solid::DeviceInterface::StorageVolume: {
             // Storage volumes are sorted in ascending order (i.e. sda, sda1, sda2...)
             return text(0) > other.text(0);

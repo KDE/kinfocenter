@@ -75,16 +75,12 @@ void DeviceListing::contextMenuEvent(QContextMenuEvent *event)
 QTreeWidgetItem *DeviceListing::createListItems(const Solid::DeviceInterface::Type &type)
 {
     switch (type) {
-    case Solid::DeviceInterface::Processor:
-        return new SolProcessorDevice(type);
     case Solid::DeviceInterface::StorageDrive:
         return new SolStorageDevice(type);
     case Solid::DeviceInterface::Camera:
         return new SolCameraDevice(type);
     case Solid::DeviceInterface::PortableMediaPlayer:
         return new SolMediaPlayerDevice(type);
-    case Solid::DeviceInterface::Battery:
-        return new SolBatteryDevice(type);
     default:
         return new SolDevice(type, i18nc("unknown device type", "Unknown"));
     }
@@ -93,9 +89,7 @@ QTreeWidgetItem *DeviceListing::createListItems(const Solid::DeviceInterface::Ty
 void DeviceListing::populateListing(const show showStatus)
 {
     const Solid::DeviceInterface::Type needHardware[] = {
-        Solid::DeviceInterface::Processor,
         Solid::DeviceInterface::StorageDrive,
-        Solid::DeviceInterface::Battery,
         Solid::DeviceInterface::PortableMediaPlayer,
         Solid::DeviceInterface::Camera,
     };
@@ -155,17 +149,11 @@ void DeviceListing::deviceAddedSlot(const QString &udi)
     }
 
     switch (deviceType) {
-    case Solid::DeviceInterface::Processor:
-        new SolProcessorDevice(deviceMap[deviceType], dev);
-        break;
     case Solid::DeviceInterface::Camera:
         new SolCameraDevice(deviceMap[deviceType], dev);
         break;
     case Solid::DeviceInterface::PortableMediaPlayer:
         new SolMediaPlayerDevice(deviceMap[deviceType], dev);
-        break;
-    case Solid::DeviceInterface::Battery:
-        new SolBatteryDevice(deviceMap[deviceType], dev);
         break;
     case Solid::DeviceInterface::StorageDrive:
         new SolStorageDevice(deviceMap[deviceType], dev, SolStorageDevice::NOCHILDREN);

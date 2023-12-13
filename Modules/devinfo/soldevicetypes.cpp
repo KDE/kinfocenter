@@ -7,11 +7,9 @@
 
 #include "soldevicetypes.h"
 
-#include <solid/battery.h>
 #include <solid/camera.h>
 #include <solid/deviceinterface.h>
 #include <solid/portablemediaplayer.h>
-#include <solid/processor.h>
 #include <solid/storageaccess.h>
 #include <solid/storagedrive.h>
 #include <solid/storagevolume.h>
@@ -24,91 +22,6 @@
 #include <KFormat>
 
 #include "qvlistlayout.h"
-
-// ---- Processor
-
-SolProcessorDevice::SolProcessorDevice(QTreeWidgetItem *parent, const Solid::Device &device)
-    : SolDevice(parent, device)
-{
-    deviceTypeHolder = Solid::DeviceInterface::Processor;
-    setDefaultDeviceText();
-}
-
-SolProcessorDevice::SolProcessorDevice(const Solid::DeviceInterface::Type &type)
-    : SolDevice(type)
-{
-    deviceTypeHolder = Solid::DeviceInterface::Processor;
-
-    setDeviceIcon(QIcon::fromTheme(QStringLiteral("cpu")));
-    setDeviceText(i18n("Processors"));
-    setDefaultListing(type);
-}
-
-void SolProcessorDevice::setDefaultListing(const Solid::DeviceInterface::Type &type)
-{
-    createDeviceChildren<SolProcessorDevice>(this, QString(), type);
-}
-
-void SolProcessorDevice::setDefaultDeviceText()
-{
-    const Solid::Processor *prodev = interface<const Solid::Processor>();
-
-    if (!prodev) {
-        return;
-    }
-    setText(0, i18n("Processor %1", QString::number(prodev->number())));
-}
-
-QVListLayout *SolProcessorDevice::infoPanelLayout()
-{
-    QStringList labels;
-    const Solid::Processor *prodev = interface<const Solid::Processor>();
-
-    if (!prodev) {
-        return nullptr;
-    }
-    deviceInfoLayout = new QVListLayout();
-
-    QStringList extensions;
-    const Solid::Processor::InstructionSets insSets = prodev->instructionSets();
-
-    if (insSets & Solid::Processor::IntelMmx) {
-        extensions << i18n("Intel MMX");
-    }
-    if (insSets & Solid::Processor::IntelSse) {
-        extensions << i18n("Intel SSE");
-    }
-    if (insSets & Solid::Processor::IntelSse2) {
-        extensions << i18n("Intel SSE2");
-    }
-    if (insSets & Solid::Processor::IntelSse3) {
-        extensions << i18n("Intel SSE3");
-    }
-    if (insSets & Solid::Processor::IntelSsse3) {
-        extensions << i18n("Intel SSSE3");
-    }
-    if (insSets & Solid::Processor::IntelSse41) {
-        extensions << i18n("Intel SSE4.1");
-    }
-    if (insSets & Solid::Processor::IntelSse42) {
-        extensions << i18n("Intel SSE4.2");
-    }
-    if (insSets & Solid::Processor::Amd3DNow) {
-        extensions << i18n("AMD 3DNow!");
-    }
-    if (insSets & Solid::Processor::AltiVec) {
-        extensions << i18n("ATI IVEC");
-    }
-    if (extensions.isEmpty()) {
-        extensions << i18nc("no instruction set extensions", "None");
-    }
-
-    labels << i18n("Processor Number: ") << InfoPanel::friendlyString(QString::number(prodev->number())) << i18n("Max Speed: ")
-           << InfoPanel::friendlyString(QString::number(prodev->maxSpeed())) << i18n("Supported Instruction Sets: ") << extensions.join(QLatin1String("\n"));
-
-    deviceInfoLayout->applyQListToLayout(labels);
-    return deviceInfoLayout;
-}
 
 // ---- Storage
 
@@ -388,103 +301,5 @@ QVListLayout *SolCameraDevice::infoPanelLayout()
     labels << i18n("Supported Drivers: ") << camdev->supportedDrivers() << i18n("Supported Protocols: ") << camdev->supportedProtocols();
 
     deviceInfoLayout->applyQListToLayout(labels);
-    return deviceInfoLayout;
-}
-
-// Battery
-
-SolBatteryDevice::SolBatteryDevice(QTreeWidgetItem *parent, const Solid::Device &device)
-    : SolDevice(parent, device)
-{
-    deviceTypeHolder = Solid::DeviceInterface::Battery;
-}
-
-SolBatteryDevice::SolBatteryDevice(const Solid::DeviceInterface::Type &type)
-    : SolDevice(type)
-{
-    deviceTypeHolder = Solid::DeviceInterface::Battery;
-
-    setDeviceIcon(QIcon::fromTheme(QStringLiteral("battery")));
-    setDeviceText(i18n("Batteries"));
-    setDefaultListing(type);
-}
-
-void SolBatteryDevice::setDefaultListing(const Solid::DeviceInterface::Type &type)
-{
-    createDeviceChildren<SolBatteryDevice>(this, QString(), type);
-}
-
-QVListLayout *SolBatteryDevice::infoPanelLayout()
-{
-    QStringList labels;
-    const Solid::Battery *batdev = interface<const Solid::Battery>();
-
-    if (!batdev) {
-        return nullptr;
-    }
-    deviceInfoLayout = new QVListLayout();
-
-    QString type;
-    switch (batdev->type()) {
-    case Solid::Battery::PdaBattery:
-        type = i18n("PDA");
-        break;
-    case Solid::Battery::UpsBattery:
-        type = i18n("UPS");
-        break;
-    case Solid::Battery::PrimaryBattery:
-        type = i18n("Primary");
-        break;
-    case Solid::Battery::MouseBattery:
-        type = i18n("Mouse");
-        break;
-    case Solid::Battery::KeyboardBattery:
-        type = i18n("Keyboard");
-        break;
-    case Solid::Battery::KeyboardMouseBattery:
-        type = i18n("Keyboard + Mouse");
-        break;
-    case Solid::Battery::CameraBattery:
-        type = i18n("Camera");
-        break;
-    case Solid::Battery::PhoneBattery:
-        type = i18n("Phone");
-        break;
-    case Solid::Battery::MonitorBattery:
-        type = i18nc("Screen", "Monitor");
-        break;
-    case Solid::Battery::GamingInputBattery:
-        type = i18nc("Wireless game pad or joystick battery", "Gaming Input");
-        break;
-    default:
-        type = i18nc("unknown battery type", "Unknown");
-    }
-
-    QString state;
-    switch (batdev->chargeState()) {
-    case Solid::Battery::Charging:
-        state = i18n("Charging");
-        break;
-    case Solid::Battery::Discharging:
-        state = i18n("Discharging");
-        break;
-    case Solid::Battery::FullyCharged:
-        state = i18n("Fully Charged");
-        break;
-    default:
-        state = i18n("No Charge");
-    }
-
-    labels << i18n("Battery Type: ") << type << i18n("Charge Status: ") << state << i18n("Charge Percent: ");
-
-    deviceInfoLayout->applyQListToLayout(labels);
-
-    QProgressBar *chargePercent = new QProgressBar();
-    chargePercent->setMaximum(100);
-    chargePercent->setValue(batdev->chargePercent());
-    chargePercent->setEnabled(batdev->isPresent());
-
-    deviceInfoLayout->addWidget(chargePercent);
-
     return deviceInfoLayout;
 }
