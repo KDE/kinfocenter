@@ -233,6 +233,104 @@ KCM.SimpleKCM {
         }
 
         ColumnLayout {
+            id: detailsColumn
+            spacing: 0
+
+            Layout.fillWidth: true
+            visible: !!currentBattery
+
+            Repeater {
+                id: titleRepeater
+                model: root.details
+                property list<Kirigami.FormLayout> layouts
+
+                delegate: Kirigami.FormLayout {
+                    id: currentLayout
+
+                    Component.onCompleted: {
+                        // ensure that all visible FormLayout share the same set of x
+                        titleRepeater.layouts.push(currentLayout);
+                        for (var i = 0, length = titleRepeater.layouts.length; i < length; ++i) {
+                            titleRepeater.layouts[i].twinFormLayouts = titleRepeater.layouts;
+                        }
+                    }
+                    Item {
+                        Kirigami.FormData.isSection: true
+                        Kirigami.FormData.label: modelData.title
+                        // HACK: hide section header if all labels are invisible
+                        visible: {
+                            for (var i = 0, length = detailsRepeater.count; i < length; ++i) {
+                                var item = detailsRepeater.itemAt(i)
+                                if (item && item.visible) {
+                                    return true
+                                }
+                            }
+                            return false
+                        }
+                    }
+
+                    Repeater {
+                        id: detailsRepeater
+                        model: modelData.data || []
+
+                        Kirigami.SelectableLabel {
+                            id: valueLabel
+                            Layout.fillWidth: true
+                            Keys.onPressed: {
+                                if (event.matches(StandardKey.Copy)) {
+                                    valueLabel.copy();
+                                    event.accepted = true;
+                                }
+                            }
+                            Kirigami.FormData.label: i18n("%1:", modelData.label)
+                            text: {
+                                var value;
+                                if (modelData.source) {
+                                    value = root["current" + modelData.source];
+                                } else {
+                                    value = currentBattery[modelData.value]
+                                }
+
+                                if (typeof value === "boolean") {
+                                    if (value) {
+                                        return i18n("Yes")
+                                    } else {
+                                        return i18n("No")
+                                    }
+                                }
+
+                                if (!value) {
+                                    return ""
+                                }
+
+                                var precision = modelData.precision
+                                if (typeof precision === "number") { // round to decimals
+                                    value = Number(value).toLocaleString(Qt.locale(), "f", precision)
+                                }
+
+                                if (modelData.modifier && root["modifier_" + modelData.modifier]) {
+                                    value = root["modifier_" + modelData.modifier](value)
+                                }
+
+                                if (modelData.unit) {
+                                    if (modelData.unit === "%") {
+                                        // We delay the percentage localization as the position may vary
+                                        value = i18nc("%1 is a percentage value", "%1%", value)
+                                    } else {
+                                        value = i18nc("%1 is value, %2 is unit", "%1 %2", value, modelData.unit)
+                                    }
+                                }
+
+                                return value
+                            }
+                            visible: valueLabel.text !== ""
+                        }
+                    }
+                }
+            }
+        }
+
+        ColumnLayout {
             Layout.fillWidth: true
             spacing: Kirigami.Units.smallSpacing
             visible: !!currentBattery
@@ -347,105 +445,5 @@ KCM.SimpleKCM {
             }
         }
 
-        ColumnLayout {
-            id: detailsColumn
-            spacing: 0
-
-            Layout.fillWidth: true
-            visible: !!currentBattery
-
-            Repeater {
-                id: titleRepeater
-                model: root.details
-                property list<Kirigami.FormLayout> layouts
-
-                delegate: Kirigami.FormLayout {
-                    id: currentLayout
-
-                    Component.onCompleted: {
-                        // ensure that all visible FormLayout share the same set of twinFormLayouts
-                        titleRepeater.layouts.push(currentLayout);
-                        for (var i = 0, length = titleRepeater.layouts.length; i < length; ++i) {
-                            titleRepeater.layouts[i].twinFormLayouts = titleRepeater.layouts;
-                        }
-                    }
-
-                    Kirigami.Heading {
-                        text: modelData.title
-                        Kirigami.FormData.isSection: true
-                        level: 2
-                        // HACK hide section header if all labels are invisible
-                        visible: {
-                            for (var i = 0, length = detailsRepeater.count; i < length; ++i) {
-                                var item = detailsRepeater.itemAt(i)
-                                if (item && item.visible) {
-                                    return true
-                                }
-                            }
-
-                            return false
-                        }
-                    }
-
-                    Repeater {
-                        id: detailsRepeater
-                        model: modelData.data || []
-
-                        Kirigami.SelectableLabel {
-                            id: valueLabel
-                            Layout.fillWidth: true
-                            Keys.onPressed: {
-                                if (event.matches(StandardKey.Copy)) {
-                                    valueLabel.copy();
-                                    event.accepted = true;
-                                }
-                            }
-                            Kirigami.FormData.label: i18n("%1:", modelData.label)
-                            text: {
-                                var value;
-                                if (modelData.source) {
-                                    value = root["current" + modelData.source];
-                                } else {
-                                    value = currentBattery[modelData.value]
-                                }
-
-                                if (typeof value === "boolean") {
-                                    if (value) {
-                                        return i18n("Yes")
-                                    } else {
-                                        return i18n("No")
-                                    }
-                                }
-
-                                if (!value) {
-                                    return ""
-                                }
-
-                                var precision = modelData.precision
-                                if (typeof precision === "number") { // round to decimals
-                                    value = Number(value).toLocaleString(Qt.locale(), "f", precision)
-                                }
-
-                                if (modelData.modifier && root["modifier_" + modelData.modifier]) {
-                                    value = root["modifier_" + modelData.modifier](value)
-                                }
-
-                                if (modelData.unit) {
-                                    if (modelData.unit === "%") {
-                                        // We delay the percentage localization as the position may vary
-                                        value = i18nc("%1 is a percentage value", "%1%", value)
-                                    } else {
-                                        value = i18nc("%1 is value, %2 is unit", "%1 %2", value, modelData.unit)
-                                    }
-                                }
-
-                                return value
-                            }
-                            visible: valueLabel.text !== ""
-                        }
-                    }
-                }
-            }
-        }
     }
 }
