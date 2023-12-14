@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-19 02:06+0000\n"
+"POT-Creation-Date: 2023-12-14 01:36+0000\n"
 "PO-Revision-Date: 2010-12-23 13:11+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: kn-l10n <kde-kn-l10n@kde.org>\n"
@@ -18,45 +18,45 @@ msgstr ""
 "X-Generator: Lokalize 1.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: devicelisting.cpp:41
+#: devicelisting.cpp:36
 #, kde-format
 msgctxt "Device Listing Whats This"
 msgid "Shows all the devices that are currently listed."
 msgstr "ಸದ್ಯ ಪಟ್ಟಿ ಮಾಡಲಾಗಿರುವ ಎಲ್ಲಾ ಸಾಧನಗಳನ್ನು ತೋರಿಸು."
 
-#: devicelisting.cpp:44
+#: devicelisting.cpp:39
 #, kde-format
 msgid "Devices"
 msgstr "ಸಾಧನಗಳು "
 
-#: devicelisting.cpp:57
+#: devicelisting.cpp:51
 #, kde-format
 msgid "Collapse All"
 msgstr "ಎಲ್ಲವನ್ನೂ ಬೀಳಿಸು"
 
-#: devicelisting.cpp:60
+#: devicelisting.cpp:54
 #, kde-format
 msgid "Expand All"
 msgstr "ಎಲ್ಲವನ್ನೂ ಹಿಗ್ಗಿಸು"
 
-#: devicelisting.cpp:63
+#: devicelisting.cpp:57
 #, kde-format
 msgid "Show All Devices"
 msgstr "ಎಲ್ಲಾ ಸಾಧನಗಳನ್ನು ತೋರಿಸಿ "
 
-#: devicelisting.cpp:66
+#: devicelisting.cpp:60
 #, kde-format
 msgid "Show Relevant Devices"
 msgstr "ಸಂಗತವಾದ ಸಾಧನಗಳನ್ನು ತೋರಿಸು "
 
-#: devicelisting.cpp:95
+#: devicelisting.cpp:89
 #, fuzzy, kde-format
 #| msgid "Unknown"
 msgctxt "unknown device type"
 msgid "Unknown"
 msgstr "ಅಜ್ಞಾತ"
 
-#: devicelisting.cpp:136 devinfo.cpp:73
+#: devicelisting.cpp:130 devinfo.cpp:73
 #, fuzzy, kde-format
 #| msgid "None"
 msgctxt "no device UDI"

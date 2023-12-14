@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmdevinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-19 02:06+0000\n"
+"POT-Creation-Date: 2023-12-14 01:36+0000\n"
 "PO-Revision-Date: 2023-10-22 15:10+0300\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
@@ -17,44 +17,44 @@ msgstr ""
 "n % 10 == 0) ? 2 : 3));\n"
 "X-Generator: Poedit 3.3.2\n"
 
-#: devicelisting.cpp:41
+#: devicelisting.cpp:36
 #, kde-format
 msgctxt "Device Listing Whats This"
 msgid "Shows all the devices that are currently listed."
 msgstr "מציג את כל ההתקנים שרשומים נכון לעכשיו."
 
-#: devicelisting.cpp:44
+#: devicelisting.cpp:39
 #, kde-format
 msgid "Devices"
 msgstr "התקנים"
 
-#: devicelisting.cpp:57
+#: devicelisting.cpp:51
 #, kde-format
 msgid "Collapse All"
 msgstr "צמצום של הכול"
 
-#: devicelisting.cpp:60
+#: devicelisting.cpp:54
 #, kde-format
 msgid "Expand All"
 msgstr "הרחבה של הכול"
 
-#: devicelisting.cpp:63
+#: devicelisting.cpp:57
 #, kde-format
 msgid "Show All Devices"
 msgstr "הצגת כל ההתקנים"
 
-#: devicelisting.cpp:66
+#: devicelisting.cpp:60
 #, kde-format
 msgid "Show Relevant Devices"
 msgstr "הצגת התקנים קשורים"
 
-#: devicelisting.cpp:95
+#: devicelisting.cpp:89
 #, kde-format
 msgctxt "unknown device type"
 msgid "Unknown"
 msgstr "לא ידוע"
 
-#: devicelisting.cpp:136 devinfo.cpp:73
+#: devicelisting.cpp:130 devinfo.cpp:73
 #, kde-format
 msgctxt "no device UDI"
 msgid "None"

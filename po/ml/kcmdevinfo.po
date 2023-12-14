@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmdevinfo trunk\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-19 02:06+0000\n"
+"POT-Creation-Date: 2023-12-14 01:36+0000\n"
 "PO-Revision-Date: 2019-12-12 22:51+0000\n"
 "Last-Translator: Vivek KJ Pazhedath <vivekkj2004@gmail.com>\n"
 "Language-Team: SMC <smc.org.in>\n"
@@ -18,44 +18,44 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: devicelisting.cpp:41
+#: devicelisting.cpp:36
 #, kde-format
 msgctxt "Device Listing Whats This"
 msgid "Shows all the devices that are currently listed."
 msgstr "ഇപ്പോള്‍ പട്ടികപ്പെടുത്തിയിട്ടുള്ള എല്ലാ ഉപകരണങ്ങളേയും കാണിക്കുന്നു."
 
-#: devicelisting.cpp:44
+#: devicelisting.cpp:39
 #, kde-format
 msgid "Devices"
 msgstr "ഉപകരണങ്ങള്‍"
 
-#: devicelisting.cpp:57
+#: devicelisting.cpp:51
 #, kde-format
 msgid "Collapse All"
 msgstr "എല്ലാം അടയ്ക്കുക"
 
-#: devicelisting.cpp:60
+#: devicelisting.cpp:54
 #, kde-format
 msgid "Expand All"
 msgstr "എല്ലാം തുറക്കുക"
 
-#: devicelisting.cpp:63
+#: devicelisting.cpp:57
 #, kde-format
 msgid "Show All Devices"
 msgstr "എല്ലാ ഉപകരണങ്ങളേയും കാണിയ്ക്കുക"
 
-#: devicelisting.cpp:66
+#: devicelisting.cpp:60
 #, kde-format
 msgid "Show Relevant Devices"
 msgstr "പ്രസക്തമായ ഉപകരണങ്ങളെ കാണിയ്ക്കുക"
 
-#: devicelisting.cpp:95
+#: devicelisting.cpp:89
 #, fuzzy, kde-format
 msgctxt "unknown device type"
 msgid "Unknown"
 msgstr "അജ്ഞാതം"
 
-#: devicelisting.cpp:136 devinfo.cpp:73
+#: devicelisting.cpp:130 devinfo.cpp:73
 #, fuzzy, kde-format
 msgctxt "no device UDI"
 msgid "None"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-19 02:06+0000\n"
+"POT-Creation-Date: 2023-12-14 01:36+0000\n"
 "PO-Revision-Date: 2023-06-18 20:05+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
@@ -20,44 +20,44 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 23.04.2\n"
 
-#: devicelisting.cpp:41
+#: devicelisting.cpp:36
 #, kde-format
 msgctxt "Device Listing Whats This"
 msgid "Shows all the devices that are currently listed."
 msgstr "Amosar todos os dispositivos que aparecen na lista."
 
-#: devicelisting.cpp:44
+#: devicelisting.cpp:39
 #, kde-format
 msgid "Devices"
 msgstr "Dispositivos"
 
-#: devicelisting.cpp:57
+#: devicelisting.cpp:51
 #, kde-format
 msgid "Collapse All"
 msgstr "Pregalo todo"
 
-#: devicelisting.cpp:60
+#: devicelisting.cpp:54
 #, kde-format
 msgid "Expand All"
 msgstr "Expandilo todo"
 
-#: devicelisting.cpp:63
+#: devicelisting.cpp:57
 #, kde-format
 msgid "Show All Devices"
 msgstr "Amosar todos os dispositivos"
 
-#: devicelisting.cpp:66
+#: devicelisting.cpp:60
 #, kde-format
 msgid "Show Relevant Devices"
 msgstr "Amosar os dispositivos relevantes"
 
-#: devicelisting.cpp:95
+#: devicelisting.cpp:89
 #, kde-format
 msgctxt "unknown device type"
 msgid "Unknown"
 msgstr "Descoñecido"
 
-#: devicelisting.cpp:136 devinfo.cpp:73
+#: devicelisting.cpp:130 devinfo.cpp:73
 #, kde-format
 msgctxt "no device UDI"
 msgid "None"

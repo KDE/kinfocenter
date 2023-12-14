@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-12 01:38+0000\n"
+"POT-Creation-Date: 2023-12-14 01:36+0000\n"
 "PO-Revision-Date: 2015-04-30 21:53+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -220,122 +220,174 @@ msgctxt "@info:status"
 msgid "No energy information available on this system"
 msgstr ""
 
-#: ui/main.qml:173
+#: ui/main.qml:182
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "PDA Battery"
+msgstr "Batteri"
+
+#: ui/main.qml:183
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "UPS Battery"
+msgstr "Batteri"
+
+#: ui/main.qml:184
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "Internal Battery"
+msgstr "Batteri"
+
+#: ui/main.qml:185
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "Mouse Battery"
+msgstr "Batteri"
+
+#: ui/main.qml:186
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "Keyboard Battery"
+msgstr "Batteri"
+
+#: ui/main.qml:187
 #, kde-format
-msgid "Internal battery"
+msgid "Keyboard/Mouse Battery"
 msgstr ""
 
-#: ui/main.qml:174
+#: ui/main.qml:188
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "Camera Battery"
+msgstr "Batteri"
+
+#: ui/main.qml:189
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "Phone Battery"
+msgstr "Batteri"
+
+#: ui/main.qml:190
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "Monitor Battery"
+msgstr "Batteri"
+
+#: ui/main.qml:191
 #, kde-format
-msgid "UPS battery"
+msgid "Gaming Input Battery"
 msgstr ""
 
-#: ui/main.qml:175
+#: ui/main.qml:192
 #, kde-format
-msgid "Monitor battery"
+msgid "Bluetooth Battery"
 msgstr ""
 
-#: ui/main.qml:176
+#: ui/main.qml:193
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "Tablet Battery"
+msgstr "Batteri"
+
+#: ui/main.qml:194
 #, kde-format
-msgid "Mouse battery"
+msgid "Headphone Battery"
 msgstr ""
 
-#: ui/main.qml:177
-#, kde-format
-msgid "Keyboard battery"
-msgstr ""
+#: ui/main.qml:195
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "Headset Battery"
+msgstr "Batteri"
 
-#: ui/main.qml:178
-#, kde-format
-msgid "PDA battery"
-msgstr ""
+#: ui/main.qml:196
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "Touchpad Battery"
+msgstr "Batteri"
 
-#: ui/main.qml:179
-#, kde-format
-msgid "Phone battery"
-msgstr ""
+#: ui/main.qml:197
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "Unknown Battery"
+msgstr "Batteri"
 
-#: ui/main.qml:180
-#, kde-format
-msgid "Unknown battery"
-msgstr ""
-
-#: ui/main.qml:208
+#: ui/main.qml:225
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr ""
 
-#: ui/main.qml:209
+#: ui/main.qml:226
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr ""
 
-#: ui/main.qml:258
+#: ui/main.qml:275
 #, kde-format
 msgctxt "Shorthand for Watts"
 msgid "W"
 msgstr "W"
 
-#: ui/main.qml:258
+#: ui/main.qml:275
 #, kde-format
 msgctxt "literal percent sign"
 msgid "%"
 msgstr "%"
 
-#: ui/main.qml:284
+#: ui/main.qml:301
 #, kde-format
 msgid "Charge Percentage"
 msgstr "Prosent ladet"
 
-#: ui/main.qml:294
+#: ui/main.qml:311
 #, kde-format
 msgid "Energy Consumption"
 msgstr "Energiforbruk"
 
-#: ui/main.qml:309
+#: ui/main.qml:326
 #, kde-format
 msgid "Timespan"
 msgstr "Tidsrom"
 
-#: ui/main.qml:310
+#: ui/main.qml:327
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "Vis data for tidsrom"
 
-#: ui/main.qml:316
+#: ui/main.qml:333
 #, kde-format
 msgid "Refresh"
 msgstr "Frisk opp"
 
-#: ui/main.qml:328
+#: ui/main.qml:345
 #, kde-format
 msgid "This type of history is currently not available for this device."
 msgstr "Denne sorten historie er nå ikke tilgjengelig for denne enheten."
 
-#: ui/main.qml:386
+#: ui/main.qml:403
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
-#: ui/main.qml:397
+#: ui/main.qml:414
 #, kde-format
 msgid "Yes"
 msgstr "Ja"
 
-#: ui/main.qml:399
+#: ui/main.qml:416
 #, kde-format
 msgid "No"
 msgstr "Nei"
 
-#: ui/main.qml:419
+#: ui/main.qml:436
 #, fuzzy, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1 %2"
 
-#: ui/main.qml:421
+#: ui/main.qml:438
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"

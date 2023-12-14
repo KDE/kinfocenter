@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-12 01:38+0000\n"
+"POT-Creation-Date: 2023-12-14 01:36+0000\n"
 "PO-Revision-Date: 2023-11-01 00:39+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
@@ -218,122 +218,177 @@ msgctxt "@info:status"
 msgid "No energy information available on this system"
 msgstr ""
 
-#: ui/main.qml:173
-#, kde-format
-msgid "Internal battery"
-msgstr "Batería interna"
-
-#: ui/main.qml:174
-#, kde-format
-msgid "UPS battery"
-msgstr "Batería del SAI"
-
-#: ui/main.qml:175
-#, kde-format
-msgid "Monitor battery"
-msgstr "Batería del monitor"
-
-#: ui/main.qml:176
-#, kde-format
-msgid "Mouse battery"
-msgstr "Batería del mur"
-
-#: ui/main.qml:177
-#, kde-format
-msgid "Keyboard battery"
-msgstr "Batería del tecláu"
-
-#: ui/main.qml:178
-#, kde-format
-msgid "PDA battery"
+#: ui/main.qml:182
+#, fuzzy, kde-format
+#| msgid "PDA battery"
+msgid "PDA Battery"
 msgstr "Batería de la PDA"
 
-#: ui/main.qml:179
-#, kde-format
-msgid "Phone battery"
+#: ui/main.qml:183
+#, fuzzy, kde-format
+#| msgid "UPS battery"
+msgid "UPS Battery"
+msgstr "Batería del SAI"
+
+#: ui/main.qml:184
+#, fuzzy, kde-format
+#| msgid "Internal battery"
+msgid "Internal Battery"
+msgstr "Batería interna"
+
+#: ui/main.qml:185
+#, fuzzy, kde-format
+#| msgid "Mouse battery"
+msgid "Mouse Battery"
+msgstr "Batería del mur"
+
+#: ui/main.qml:186
+#, fuzzy, kde-format
+#| msgid "Keyboard battery"
+msgid "Keyboard Battery"
+msgstr "Batería del tecláu"
+
+#: ui/main.qml:187
+#, fuzzy, kde-format
+#| msgid "Keyboard battery"
+msgid "Keyboard/Mouse Battery"
+msgstr "Batería del tecláu"
+
+#: ui/main.qml:188
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "Camera Battery"
+msgstr "Batería"
+
+#: ui/main.qml:189
+#, fuzzy, kde-format
+#| msgid "Phone battery"
+msgid "Phone Battery"
 msgstr "Batería del teléfonu"
 
-#: ui/main.qml:180
+#: ui/main.qml:190
+#, fuzzy, kde-format
+#| msgid "Monitor battery"
+msgid "Monitor Battery"
+msgstr "Batería del monitor"
+
+#: ui/main.qml:191
 #, kde-format
-msgid "Unknown battery"
+msgid "Gaming Input Battery"
 msgstr ""
 
-#: ui/main.qml:208
+#: ui/main.qml:192
+#, fuzzy, kde-format
+#| msgid "Mouse battery"
+msgid "Bluetooth Battery"
+msgstr "Batería del mur"
+
+#: ui/main.qml:193
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "Tablet Battery"
+msgstr "Batería"
+
+#: ui/main.qml:194
+#, fuzzy, kde-format
+#| msgid "Phone battery"
+msgid "Headphone Battery"
+msgstr "Batería del teléfonu"
+
+#: ui/main.qml:195
+#, fuzzy, kde-format
+#| msgid "Keyboard battery"
+msgid "Headset Battery"
+msgstr "Batería del tecláu"
+
+#: ui/main.qml:196
+#, fuzzy, kde-format
+#| msgid "Keyboard battery"
+msgid "Touchpad Battery"
+msgstr "Batería del tecláu"
+
+#: ui/main.qml:197
+#, fuzzy, kde-format
+#| msgid "Phone battery"
+msgid "Unknown Battery"
+msgstr "Batería del teléfonu"
+
+#: ui/main.qml:225
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr ""
 
-#: ui/main.qml:209
+#: ui/main.qml:226
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:258
+#: ui/main.qml:275
 #, kde-format
 msgctxt "Shorthand for Watts"
 msgid "W"
 msgstr "W"
 
-#: ui/main.qml:258
+#: ui/main.qml:275
 #, kde-format
 msgctxt "literal percent sign"
 msgid "%"
 msgstr "%"
 
-#: ui/main.qml:284
+#: ui/main.qml:301
 #, kde-format
 msgid "Charge Percentage"
 msgstr "Porcentaxe de la carga"
 
-#: ui/main.qml:294
+#: ui/main.qml:311
 #, kde-format
 msgid "Energy Consumption"
 msgstr "Consumu d'enerxía"
 
-#: ui/main.qml:309
+#: ui/main.qml:326
 #, kde-format
 msgid "Timespan"
 msgstr "Periodu de tiempu"
 
-#: ui/main.qml:310
+#: ui/main.qml:327
 #, kde-format
 msgid "Timespan of data to display"
 msgstr ""
 
-#: ui/main.qml:316
+#: ui/main.qml:333
 #, kde-format
 msgid "Refresh"
 msgstr "Anovar"
 
-#: ui/main.qml:328
+#: ui/main.qml:345
 #, kde-format
 msgid "This type of history is currently not available for this device."
 msgstr ""
 
-#: ui/main.qml:386
+#: ui/main.qml:403
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
-#: ui/main.qml:397
+#: ui/main.qml:414
 #, kde-format
 msgid "Yes"
 msgstr "Sí"
 
-#: ui/main.qml:399
+#: ui/main.qml:416
 #, kde-format
 msgid "No"
 msgstr "Non"
 
-#: ui/main.qml:419
+#: ui/main.qml:436
 #, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:421
+#: ui/main.qml:438
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"

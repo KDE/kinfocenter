@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmdevinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-19 02:06+0000\n"
+"POT-Creation-Date: 2023-12-14 01:36+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -17,44 +17,44 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: devicelisting.cpp:41
+#: devicelisting.cpp:36
 #, kde-format
 msgctxt "Device Listing Whats This"
 msgid "Shows all the devices that are currently listed."
 msgstr "نۆۋەتتە تىزىلغان بارلىق ئۈسكۈنىلەرنى كۆرسىتىدۇ."
 
-#: devicelisting.cpp:44
+#: devicelisting.cpp:39
 #, kde-format
 msgid "Devices"
 msgstr "ئۈسكۈنىلەر"
 
-#: devicelisting.cpp:57
+#: devicelisting.cpp:51
 #, kde-format
 msgid "Collapse All"
 msgstr "ھەممىنى قاتلا"
 
-#: devicelisting.cpp:60
+#: devicelisting.cpp:54
 #, kde-format
 msgid "Expand All"
 msgstr "ھەممىنى ياي"
 
-#: devicelisting.cpp:63
+#: devicelisting.cpp:57
 #, kde-format
 msgid "Show All Devices"
 msgstr "ھەممە ئۈسكۈنىلەرنى كۆرسەت"
 
-#: devicelisting.cpp:66
+#: devicelisting.cpp:60
 #, kde-format
 msgid "Show Relevant Devices"
 msgstr "مۇناسىۋەتلىك ئۈسكۈنىلەرنى كۆرسەت"
 
-#: devicelisting.cpp:95
+#: devicelisting.cpp:89
 #, kde-format
 msgctxt "unknown device type"
 msgid "Unknown"
 msgstr "نامەلۇم"
 
-#: devicelisting.cpp:136 devinfo.cpp:73
+#: devicelisting.cpp:130 devinfo.cpp:73
 #, kde-format
 msgctxt "no device UDI"
 msgid "None"

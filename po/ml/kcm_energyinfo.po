@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-12 01:38+0000\n"
+"POT-Creation-Date: 2023-12-14 01:36+0000\n"
 "PO-Revision-Date: 2019-12-12 22:12+0000\n"
 "Last-Translator: Vivek KJ Pazhedath <vivekkj2004@gmail.com>\n"
 "Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ് <smc."
@@ -219,122 +219,162 @@ msgctxt "@info:status"
 msgid "No energy information available on this system"
 msgstr ""
 
-#: ui/main.qml:173
+#: ui/main.qml:182
 #, kde-format
-msgid "Internal battery"
+msgid "PDA Battery"
 msgstr ""
 
-#: ui/main.qml:174
+#: ui/main.qml:183
 #, kde-format
-msgid "UPS battery"
+msgid "UPS Battery"
 msgstr ""
 
-#: ui/main.qml:175
+#: ui/main.qml:184
 #, kde-format
-msgid "Monitor battery"
+msgid "Internal Battery"
 msgstr ""
 
-#: ui/main.qml:176
+#: ui/main.qml:185
 #, kde-format
-msgid "Mouse battery"
+msgid "Mouse Battery"
 msgstr ""
 
-#: ui/main.qml:177
+#: ui/main.qml:186
 #, kde-format
-msgid "Keyboard battery"
+msgid "Keyboard Battery"
 msgstr ""
 
-#: ui/main.qml:178
+#: ui/main.qml:187
 #, kde-format
-msgid "PDA battery"
+msgid "Keyboard/Mouse Battery"
 msgstr ""
 
-#: ui/main.qml:179
+#: ui/main.qml:188
 #, kde-format
-msgid "Phone battery"
+msgid "Camera Battery"
 msgstr ""
 
-#: ui/main.qml:180
+#: ui/main.qml:189
 #, kde-format
-msgid "Unknown battery"
+msgid "Phone Battery"
 msgstr ""
 
-#: ui/main.qml:208
+#: ui/main.qml:190
+#, kde-format
+msgid "Monitor Battery"
+msgstr ""
+
+#: ui/main.qml:191
+#, kde-format
+msgid "Gaming Input Battery"
+msgstr ""
+
+#: ui/main.qml:192
+#, kde-format
+msgid "Bluetooth Battery"
+msgstr ""
+
+#: ui/main.qml:193
+#, kde-format
+msgid "Tablet Battery"
+msgstr ""
+
+#: ui/main.qml:194
+#, kde-format
+msgid "Headphone Battery"
+msgstr ""
+
+#: ui/main.qml:195
+#, kde-format
+msgid "Headset Battery"
+msgstr ""
+
+#: ui/main.qml:196
+#, kde-format
+msgid "Touchpad Battery"
+msgstr ""
+
+#: ui/main.qml:197
+#, kde-format
+msgid "Unknown Battery"
+msgstr ""
+
+#: ui/main.qml:225
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr ""
 
-#: ui/main.qml:209
+#: ui/main.qml:226
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr ""
 
-#: ui/main.qml:258
+#: ui/main.qml:275
 #, kde-format
 msgctxt "Shorthand for Watts"
 msgid "W"
 msgstr ""
 
-#: ui/main.qml:258
+#: ui/main.qml:275
 #, kde-format
 msgctxt "literal percent sign"
 msgid "%"
 msgstr ""
 
-#: ui/main.qml:284
+#: ui/main.qml:301
 #, kde-format
 msgid "Charge Percentage"
 msgstr ""
 
-#: ui/main.qml:294
+#: ui/main.qml:311
 #, kde-format
 msgid "Energy Consumption"
 msgstr ""
 
-#: ui/main.qml:309
+#: ui/main.qml:326
 #, kde-format
 msgid "Timespan"
 msgstr ""
 
-#: ui/main.qml:310
+#: ui/main.qml:327
 #, kde-format
 msgid "Timespan of data to display"
 msgstr ""
 
-#: ui/main.qml:316
+#: ui/main.qml:333
 #, fuzzy, kde-format
 msgid "Refresh"
 msgstr "ഉന്മേഷം വീണ്ടെടുക്കുക"
 
-#: ui/main.qml:328
+#: ui/main.qml:345
 #, kde-format
 msgid "This type of history is currently not available for this device."
 msgstr ""
 
-#: ui/main.qml:386
+#: ui/main.qml:403
 #, kde-format
 msgid "%1:"
 msgstr ""
 
-#: ui/main.qml:397
+#: ui/main.qml:414
 #, kde-format
 msgid "Yes"
 msgstr ""
 
-#: ui/main.qml:399
+#: ui/main.qml:416
 #, kde-format
 msgid "No"
 msgstr ""
 
-#: ui/main.qml:419
+#: ui/main.qml:436
 #, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr ""
 
-#: ui/main.qml:421
+#: ui/main.qml:438
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"

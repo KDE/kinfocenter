@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-12 01:38+0000\n"
+"POT-Creation-Date: 2023-12-14 01:36+0000\n"
 "PO-Revision-Date: 2023-10-08 23:16+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -218,122 +218,177 @@ msgctxt "@info:status"
 msgid "No energy information available on this system"
 msgstr "사용 가능한 에너지 정보 없음"
 
-#: ui/main.qml:173
-#, kde-format
-msgid "Internal battery"
-msgstr "내장 배터리"
-
-#: ui/main.qml:174
-#, kde-format
-msgid "UPS battery"
-msgstr "UPS 배터리"
-
-#: ui/main.qml:175
-#, kde-format
-msgid "Monitor battery"
-msgstr "모니터 배터리"
-
-#: ui/main.qml:176
-#, kde-format
-msgid "Mouse battery"
-msgstr "마우스 배터리"
-
-#: ui/main.qml:177
-#, kde-format
-msgid "Keyboard battery"
-msgstr "키보드 배터리"
-
-#: ui/main.qml:178
-#, kde-format
-msgid "PDA battery"
+#: ui/main.qml:182
+#, fuzzy, kde-format
+#| msgid "PDA battery"
+msgid "PDA Battery"
 msgstr "PDA 배터리"
 
-#: ui/main.qml:179
-#, kde-format
-msgid "Phone battery"
+#: ui/main.qml:183
+#, fuzzy, kde-format
+#| msgid "UPS battery"
+msgid "UPS Battery"
+msgstr "UPS 배터리"
+
+#: ui/main.qml:184
+#, fuzzy, kde-format
+#| msgid "Internal battery"
+msgid "Internal Battery"
+msgstr "내장 배터리"
+
+#: ui/main.qml:185
+#, fuzzy, kde-format
+#| msgid "Mouse battery"
+msgid "Mouse Battery"
+msgstr "마우스 배터리"
+
+#: ui/main.qml:186
+#, fuzzy, kde-format
+#| msgid "Keyboard battery"
+msgid "Keyboard Battery"
+msgstr "키보드 배터리"
+
+#: ui/main.qml:187
+#, fuzzy, kde-format
+#| msgid "Keyboard battery"
+msgid "Keyboard/Mouse Battery"
+msgstr "키보드 배터리"
+
+#: ui/main.qml:188
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "Camera Battery"
+msgstr "배터리"
+
+#: ui/main.qml:189
+#, fuzzy, kde-format
+#| msgid "Phone battery"
+msgid "Phone Battery"
 msgstr "휴대폰 배터리"
 
-#: ui/main.qml:180
+#: ui/main.qml:190
+#, fuzzy, kde-format
+#| msgid "Monitor battery"
+msgid "Monitor Battery"
+msgstr "모니터 배터리"
+
+#: ui/main.qml:191
 #, kde-format
-msgid "Unknown battery"
+msgid "Gaming Input Battery"
+msgstr ""
+
+#: ui/main.qml:192
+#, fuzzy, kde-format
+#| msgid "Mouse battery"
+msgid "Bluetooth Battery"
+msgstr "마우스 배터리"
+
+#: ui/main.qml:193
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "Tablet Battery"
+msgstr "배터리"
+
+#: ui/main.qml:194
+#, fuzzy, kde-format
+#| msgid "Phone battery"
+msgid "Headphone Battery"
+msgstr "휴대폰 배터리"
+
+#: ui/main.qml:195
+#, fuzzy, kde-format
+#| msgid "Keyboard battery"
+msgid "Headset Battery"
+msgstr "키보드 배터리"
+
+#: ui/main.qml:196
+#, fuzzy, kde-format
+#| msgid "Keyboard battery"
+msgid "Touchpad Battery"
+msgstr "키보드 배터리"
+
+#: ui/main.qml:197
+#, fuzzy, kde-format
+#| msgid "Unknown battery"
+msgid "Unknown Battery"
 msgstr "알 수 없는 배터리"
 
-#: ui/main.qml:208
+#: ui/main.qml:225
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr "%1%(충전 중)"
 
-#: ui/main.qml:209
+#: ui/main.qml:226
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:258
+#: ui/main.qml:275
 #, kde-format
 msgctxt "Shorthand for Watts"
 msgid "W"
 msgstr "W"
 
-#: ui/main.qml:258
+#: ui/main.qml:275
 #, kde-format
 msgctxt "literal percent sign"
 msgid "%"
 msgstr "%"
 
-#: ui/main.qml:284
+#: ui/main.qml:301
 #, kde-format
 msgid "Charge Percentage"
 msgstr "충전 비율"
 
-#: ui/main.qml:294
+#: ui/main.qml:311
 #, kde-format
 msgid "Energy Consumption"
 msgstr "에너지 소모"
 
-#: ui/main.qml:309
+#: ui/main.qml:326
 #, kde-format
 msgid "Timespan"
 msgstr "시간 범위"
 
-#: ui/main.qml:310
+#: ui/main.qml:327
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "표시할 데이터 시간 범위"
 
-#: ui/main.qml:316
+#: ui/main.qml:333
 #, kde-format
 msgid "Refresh"
 msgstr "새로 고침"
 
-#: ui/main.qml:328
+#: ui/main.qml:345
 #, kde-format
 msgid "This type of history is currently not available for this device."
 msgstr "이 장치에서 다음 기록을 사용할 수 없습니다."
 
-#: ui/main.qml:386
+#: ui/main.qml:403
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
-#: ui/main.qml:397
+#: ui/main.qml:414
 #, kde-format
 msgid "Yes"
 msgstr "예"
 
-#: ui/main.qml:399
+#: ui/main.qml:416
 #, kde-format
 msgid "No"
 msgstr "아니요"
 
-#: ui/main.qml:419
+#: ui/main.qml:436
 #, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:421
+#: ui/main.qml:438
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
