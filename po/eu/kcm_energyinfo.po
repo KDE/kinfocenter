@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-14 01:36+0000\n"
-"PO-Revision-Date: 2023-09-20 18:16+0200\n"
+"PO-Revision-Date: 2023-12-14 18:43+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.1\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #: ui/main.qml:45
 #, kde-format
@@ -222,97 +222,82 @@ msgid "No energy information available on this system"
 msgstr "Sistema honetan ez dago erabilgarri energiari buruzko informaziorik"
 
 #: ui/main.qml:182
-#, fuzzy, kde-format
-#| msgid "PDA battery"
+#, kde-format
 msgid "PDA Battery"
-msgstr "PDAko bateria"
+msgstr "PDAren bateria"
 
 #: ui/main.qml:183
-#, fuzzy, kde-format
-#| msgid "UPS battery"
+#, kde-format
 msgid "UPS Battery"
-msgstr "UPS bateria"
+msgstr "UPSaren bateria"
 
 #: ui/main.qml:184
-#, fuzzy, kde-format
-#| msgid "Internal battery"
+#, kde-format
 msgid "Internal Battery"
 msgstr "Barneko bateria"
 
 #: ui/main.qml:185
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
+#, kde-format
 msgid "Mouse Battery"
-msgstr "Saguko bateria"
+msgstr "Saguaren bateria"
 
 #: ui/main.qml:186
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Keyboard Battery"
-msgstr "Teklatuko bateria"
+msgstr "Teklatuaren bateria"
 
 #: ui/main.qml:187
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Keyboard/Mouse Battery"
-msgstr "Teklatuko bateria"
+msgstr "Teklatuaren/saguaren bateria"
 
 #: ui/main.qml:188
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Camera Battery"
-msgstr "Bateria"
+msgstr "Kameraren bateria"
 
 #: ui/main.qml:189
-#, fuzzy, kde-format
-#| msgid "Phone battery"
+#, kde-format
 msgid "Phone Battery"
-msgstr "Telefonoko bateria"
+msgstr "Telefonoaren bateria"
 
 #: ui/main.qml:190
-#, fuzzy, kde-format
-#| msgid "Monitor battery"
+#, kde-format
 msgid "Monitor Battery"
-msgstr "Monitoreko bateria"
+msgstr "Monitorearen bateria"
 
 #: ui/main.qml:191
 #, kde-format
 msgid "Gaming Input Battery"
-msgstr ""
+msgstr "Joko-sarrerakoaren bateria"
 
 #: ui/main.qml:192
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
+#, kde-format
 msgid "Bluetooth Battery"
-msgstr "Saguko bateria"
+msgstr "«Bluetooth»aren bateria"
 
 #: ui/main.qml:193
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Tablet Battery"
-msgstr "Bateria"
+msgstr "Tabletaren bateria"
 
 #: ui/main.qml:194
-#, fuzzy, kde-format
-#| msgid "Phone battery"
+#, kde-format
 msgid "Headphone Battery"
-msgstr "Telefonoko bateria"
+msgstr "Aurikularren bateria"
 
 #: ui/main.qml:195
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Headset Battery"
-msgstr "Teklatuko bateria"
+msgstr "Aurikular mikrofonodunaren bateria"
 
 #: ui/main.qml:196
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Touchpad Battery"
-msgstr "Teklatuko bateria"
+msgstr "Ukimen-saguaren bateria"
 
 #: ui/main.qml:197
-#, fuzzy, kde-format
-#| msgid "Unknown battery"
+#, kde-format
 msgid "Unknown Battery"
 msgstr "Bateria ezezaguna"
 

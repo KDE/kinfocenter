@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-14 01:36+0000\n"
-"PO-Revision-Date: 2023-11-29 16:31+0300\n"
+"PO-Revision-Date: 2023-12-14 15:57+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.11.70\n"
+"X-Generator: Lokalize 24.01.80\n"
 
 #: ui/main.qml:45
 #, kde-format
@@ -220,99 +220,84 @@ msgid "No energy information available on this system"
 msgstr "Bu sistemde enerji bilgisi kullanılabilir değil"
 
 #: ui/main.qml:182
-#, fuzzy, kde-format
-#| msgid "PDA battery"
+#, kde-format
 msgid "PDA Battery"
-msgstr "PDA pili"
+msgstr "PDA Pili"
 
 #: ui/main.qml:183
-#, fuzzy, kde-format
-#| msgid "UPS battery"
+#, kde-format
 msgid "UPS Battery"
-msgstr "UPS pil"
+msgstr "UPS Pili"
 
 #: ui/main.qml:184
-#, fuzzy, kde-format
-#| msgid "Internal battery"
+#, kde-format
 msgid "Internal Battery"
-msgstr "İç pil"
+msgstr "İç Pil"
 
 #: ui/main.qml:185
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
+#, kde-format
 msgid "Mouse Battery"
-msgstr "Fare pili"
+msgstr "Fare Pili"
 
 #: ui/main.qml:186
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Keyboard Battery"
-msgstr "Klavye pili"
+msgstr "Klavye Pili"
 
 #: ui/main.qml:187
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Keyboard/Mouse Battery"
-msgstr "Klavye pili"
+msgstr "Klavye/Fare Pili"
 
 #: ui/main.qml:188
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Camera Battery"
-msgstr "Pil"
+msgstr "Kamera Pili"
 
 #: ui/main.qml:189
-#, fuzzy, kde-format
-#| msgid "Phone battery"
+#, kde-format
 msgid "Phone Battery"
-msgstr "Telefon pili"
+msgstr "Telefon Pili"
 
 #: ui/main.qml:190
-#, fuzzy, kde-format
-#| msgid "Monitor battery"
+#, kde-format
 msgid "Monitor Battery"
-msgstr "Monitör pili"
+msgstr "Monitör Pili"
 
 #: ui/main.qml:191
 #, kde-format
 msgid "Gaming Input Battery"
-msgstr ""
+msgstr "Oyun Giriş Aygıtı Pili"
 
 #: ui/main.qml:192
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
+#, kde-format
 msgid "Bluetooth Battery"
-msgstr "Fare pili"
+msgstr "Bluetooth Pil"
 
 #: ui/main.qml:193
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Tablet Battery"
-msgstr "Pil"
+msgstr "Tablet Pili"
 
 #: ui/main.qml:194
-#, fuzzy, kde-format
-#| msgid "Phone battery"
+#, kde-format
 msgid "Headphone Battery"
-msgstr "Telefon pili"
+msgstr "Kulaklık Pili"
 
 #: ui/main.qml:195
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Headset Battery"
-msgstr "Klavye pili"
+msgstr "Kulaklık-Mikrofon Pili"
 
 #: ui/main.qml:196
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Touchpad Battery"
-msgstr "Klavye pili"
+msgstr "Dokunmatik Yüzey Pili"
 
 #: ui/main.qml:197
-#, fuzzy, kde-format
-#| msgid "Unknown battery"
+#, kde-format
 msgid "Unknown Battery"
-msgstr "Bilinmeyen pil"
+msgstr "Bilinmeyen Pil"
 
 #: ui/main.qml:225
 #, kde-format
