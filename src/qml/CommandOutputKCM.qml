@@ -26,7 +26,7 @@ KCM.SimpleKCM {
 
     // The CommandOutputContext object.
     required property QtObject output
-    property int wrapMode: TextEdit.WordWrap
+    property int wrapMode: TextEdit.NoWrap
     property int textFormat: TextEdit.PlainText
 
     Clipboard { id: clipboard }
