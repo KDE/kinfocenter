@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-14 01:36+0000\n"
-"PO-Revision-Date: 2023-11-14 02:43+0900\n"
+"PO-Revision-Date: 2023-12-15 21:05+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 24.01.75\n"
+"X-Generator: Lokalize 24.01.80\n"
 
 #: ui/main.qml:45
 #, kde-format
@@ -222,97 +222,82 @@ msgid "No energy information available on this system"
 msgstr "此系統沒有可用的電量資訊"
 
 #: ui/main.qml:182
-#, fuzzy, kde-format
-#| msgid "PDA battery"
+#, kde-format
 msgid "PDA Battery"
 msgstr "PDA 電池"
 
 #: ui/main.qml:183
-#, fuzzy, kde-format
-#| msgid "UPS battery"
+#, kde-format
 msgid "UPS Battery"
 msgstr "UPS 電池"
 
 #: ui/main.qml:184
-#, fuzzy, kde-format
-#| msgid "Internal battery"
+#, kde-format
 msgid "Internal Battery"
 msgstr "內部電池"
 
 #: ui/main.qml:185
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
+#, kde-format
 msgid "Mouse Battery"
 msgstr "滑鼠電池"
 
 #: ui/main.qml:186
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Keyboard Battery"
 msgstr "鍵盤電池"
 
 #: ui/main.qml:187
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Keyboard/Mouse Battery"
-msgstr "鍵盤電池"
+msgstr "鍵盤/滑鼠電池"
 
 #: ui/main.qml:188
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Camera Battery"
-msgstr "電池"
+msgstr "相機電池"
 
 #: ui/main.qml:189
-#, fuzzy, kde-format
-#| msgid "Phone battery"
+#, kde-format
 msgid "Phone Battery"
 msgstr "手機電池"
 
 #: ui/main.qml:190
-#, fuzzy, kde-format
-#| msgid "Monitor battery"
+#, kde-format
 msgid "Monitor Battery"
 msgstr "顯示器電池"
 
 #: ui/main.qml:191
 #, kde-format
 msgid "Gaming Input Battery"
-msgstr ""
+msgstr "遊戲手柄電池"
 
 #: ui/main.qml:192
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
+#, kde-format
 msgid "Bluetooth Battery"
-msgstr "滑鼠電池"
+msgstr "藍牙電池"
 
 #: ui/main.qml:193
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Tablet Battery"
-msgstr "電池"
+msgstr "平板電池"
 
 #: ui/main.qml:194
-#, fuzzy, kde-format
-#| msgid "Phone battery"
+#, kde-format
 msgid "Headphone Battery"
-msgstr "手機電池"
+msgstr "耳機電池"
 
 #: ui/main.qml:195
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Headset Battery"
-msgstr "鍵盤電池"
+msgstr "耳麥電池"
 
 #: ui/main.qml:196
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Touchpad Battery"
-msgstr "鍵盤電池"
+msgstr "觸控板電池"
 
 #: ui/main.qml:197
-#, fuzzy, kde-format
-#| msgid "Unknown battery"
+#, kde-format
 msgid "Unknown Battery"
 msgstr "未知電池"
 

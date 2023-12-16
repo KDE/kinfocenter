@@ -1,21 +1,21 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
 #
-# Mincho Kondarev <mkondarev@yahoo.de>, 2022, 2023.
+# SPDX-FileCopyrightText: 2022, 2023 Mincho Kondarev <mkondarev@yahoo.de>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-14 01:36+0000\n"
-"PO-Revision-Date: 2023-09-24 22:23+0200\n"
+"PO-Revision-Date: 2023-12-16 00:06+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
-"Language-Team: \n"
+"Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.3\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #: ui/main.qml:45
 #, kde-format
@@ -219,97 +219,82 @@ msgid "No energy information available on this system"
 msgstr "Няма налична информация за енергийно състояние на тази система"
 
 #: ui/main.qml:182
-#, fuzzy, kde-format
-#| msgid "PDA battery"
+#, kde-format
 msgid "PDA Battery"
 msgstr "PDA батерия"
 
 #: ui/main.qml:183
-#, fuzzy, kde-format
-#| msgid "UPS battery"
+#, kde-format
 msgid "UPS Battery"
 msgstr "UPS батерия"
 
 #: ui/main.qml:184
-#, fuzzy, kde-format
-#| msgid "Internal battery"
+#, kde-format
 msgid "Internal Battery"
 msgstr "Вътрешна батерия"
 
 #: ui/main.qml:185
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
+#, kde-format
 msgid "Mouse Battery"
 msgstr "Батерия на мишка"
 
 #: ui/main.qml:186
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Keyboard Battery"
 msgstr "Батерия на клавиатура"
 
 #: ui/main.qml:187
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Keyboard/Mouse Battery"
-msgstr "Батерия на клавиатура"
+msgstr "Батерия на клавиатура/мишка"
 
 #: ui/main.qml:188
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Camera Battery"
-msgstr "Батерия"
+msgstr "Батерия на камера"
 
 #: ui/main.qml:189
-#, fuzzy, kde-format
-#| msgid "Phone battery"
+#, kde-format
 msgid "Phone Battery"
 msgstr "Батерия на телефон"
 
 #: ui/main.qml:190
-#, fuzzy, kde-format
-#| msgid "Monitor battery"
+#, kde-format
 msgid "Monitor Battery"
 msgstr "Батерия на монитор"
 
 #: ui/main.qml:191
 #, kde-format
 msgid "Gaming Input Battery"
-msgstr ""
+msgstr "Батерия на игрово устройство"
 
 #: ui/main.qml:192
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
+#, kde-format
 msgid "Bluetooth Battery"
-msgstr "Батерия на мишка"
+msgstr "Батерия на Bluetooth"
 
 #: ui/main.qml:193
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Tablet Battery"
-msgstr "Батерия"
+msgstr "Батерия на таблет"
 
 #: ui/main.qml:194
-#, fuzzy, kde-format
-#| msgid "Phone battery"
+#, kde-format
 msgid "Headphone Battery"
-msgstr "Батерия на телефон"
+msgstr "Батерия на слушалки"
 
 #: ui/main.qml:195
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Headset Battery"
-msgstr "Батерия на клавиатура"
+msgstr "Батерия на слушалки с микрофон"
 
 #: ui/main.qml:196
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Touchpad Battery"
-msgstr "Батерия на клавиатура"
+msgstr "Батерия на тъчпад"
 
 #: ui/main.qml:197
-#, fuzzy, kde-format
-#| msgid "Unknown battery"
+#, kde-format
 msgid "Unknown Battery"
 msgstr "Неизвестна батерия"
 
