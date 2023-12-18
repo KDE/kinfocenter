@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2020 Carl Schwan <carl@carlschwan.eu>
+ * SPDX-FileCopyrightText: 2023 Carl Schwan <carl@carlschwan.eu>
  * SPDX-License-Identifier: GPL-2.0-or-later
  */
 
@@ -8,55 +8,72 @@ import QtQuick.Controls 2.15 as QQC2
 import QtQuick.Layouts 1.2
 
 import org.kde.kirigami 2.14 as Kirigami
+import org.kde.kirigamiaddons.formcard as FormCard
 import org.kde.kcmutils as KCM
 import org.kde.kinfocenter.nic.private 1.0
 
 KCM.SimpleKCM {
     clip: true
 
-    Kirigami.CardsLayout {
+    topPadding: Kirigami.Units.largeSpacing
+    bottomPadding: Kirigami.Units.largeSpacing
+    leftPadding: 0
+    rightPadding: 0
+
+    ColumnLayout {
+        spacing: 0
         Repeater {
             id: repeater
             model: NetworkModel { id: networkModel }
-            Kirigami.AbstractCard {
-                Layout.fillHeight: true
-                contentItem: Kirigami.FormLayout {
-                    id: delegateLayout
-                    // NB: do not make the repeated layouts twinFormLayouts!
-                    //    It utterly doesn't scale and causes seconds long lockups while calculating the layout.
-                    Layout.fillWidth: true
-                    QQC2.Label {
-                        Kirigami.FormData.label: i18nc("@label", "Name:")
-                        text: model.name
-                    }
-                    QQC2.Label {
-                        Kirigami.FormData.label: i18nc("@label", "Address:")
+
+            ColumnLayout {
+                spacing: 0
+                FormCard.FormHeader {
+                    id: header
+                    title: model.name
+                    trailing: QQC2.Label {
                         text: model.address
+                        topPadding: header.topPadding
+                        bottomPadding: header.bottomPadding
+                        leftPadding: header.leftPadding
+                        rightPadding: header.rightPadding
                     }
-                    QQC2.Label {
-                        Kirigami.FormData.label: i18nc("@label", "Network Mask:")
-                        text: model.netmask
+                }
+
+                FormCard.FormCard {
+                    FormCard.FormTextDelegate {
+                        text: i18nc("@label", "Network Mask:")
+                        description: model.netmask
                     }
-                    QQC2.Label {
-                        Kirigami.FormData.label: i18nc("@label", "Type:")
-                        text: model.type
+
+                    FormCard.FormDelegateSeparator {}
+
+                    FormCard.FormTextDelegate {
+                        text: i18nc("@label", "Type:")
+                        description: model.type
                     }
-                    QQC2.Label {
-                        Kirigami.FormData.label: i18nc("@label", "Hardware Address:")
-                        text: model.hardwareAddress
-                        visible: text.length > 0
+
+                    FormCard.FormDelegateSeparator {}
+
+                    FormCard.FormTextDelegate {
+                        text: i18nc("@label", "Hardware Address:")
+                        description: model.hardwareAddress
+                        visible: description.length > 0
                     }
-                    RowLayout {
-                        Kirigami.FormData.label: i18nc("@label", "State:")
-                        Rectangle {
-                            width: Kirigami.Units.largeSpacing
-                            height: width
-                            radius: width / 2
+
+                    FormCard.FormDelegateSeparator {
+                        visible: model.hardwareAddress.length > 0
+                    }
+
+                    FormCard.FormTextDelegate {
+                        text: i18nc("@label", "State:")
+                        description: model.state ? i18nc("State of network card is connected", "Up")
+                                          : i18nc("State of network card is disconnected", "Down")
+                        trailing: Rectangle {
+                            implicitWidth: Kirigami.Units.gridUnit
+                            implicitHeight: width
+                            radius: width
                             color: model.state ? Kirigami.Theme.positiveTextColor : Kirigami.Theme.negativeBackgroundColor
-                        }
-                        QQC2.Label {
-                            text: model.state ? i18nc("State of network card is connected", "Up")
-                                              : i18nc("State of network card is disconnected", "Down")
                         }
                     }
                 }
