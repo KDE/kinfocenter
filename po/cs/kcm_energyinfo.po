@@ -220,16 +220,14 @@ msgid "No energy information available on this system"
 msgstr "Informace o energii nejsou pro tento systém dostupné"
 
 #: ui/main.qml:182
-#, fuzzy, kde-format
-#| msgid "PDA battery"
+#, kde-format
 msgid "PDA Battery"
-msgstr "Baterie PDA"
+msgstr "PDA baterie"
 
 #: ui/main.qml:183
-#, fuzzy, kde-format
-#| msgid "UPS battery"
+#, kde-format
 msgid "UPS Battery"
-msgstr "Baterie UPS"
+msgstr "UPS baterie"
 
 #: ui/main.qml:184
 #, fuzzy, kde-format
@@ -238,14 +236,12 @@ msgid "Internal Battery"
 msgstr "Vnitřní baterie"
 
 #: ui/main.qml:185
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
+#, kde-format
 msgid "Mouse Battery"
 msgstr "Baterie myši"
 
 #: ui/main.qml:186
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Keyboard Battery"
 msgstr "Baterie klávesnice"
 
@@ -256,33 +252,29 @@ msgid "Keyboard/Mouse Battery"
 msgstr "Baterie klávesnice"
 
 #: ui/main.qml:188
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Camera Battery"
-msgstr "Baterie"
+msgstr "Baterie fotoaparátu"
 
 #: ui/main.qml:189
-#, fuzzy, kde-format
-#| msgid "Phone battery"
+#, kde-format
 msgid "Phone Battery"
 msgstr "Baterie telefonu"
 
 #: ui/main.qml:190
-#, fuzzy, kde-format
-#| msgid "Monitor battery"
+#, kde-format
 msgid "Monitor Battery"
-msgstr "Baterie monitoru"
+msgstr "Monitorovat baterii"
 
 #: ui/main.qml:191
 #, kde-format
 msgid "Gaming Input Battery"
-msgstr ""
+msgstr "Baterie herního ovladače"
 
 #: ui/main.qml:192
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
+#, kde-format
 msgid "Bluetooth Battery"
-msgstr "Baterie myši"
+msgstr "Baterie Bluetooth"
 
 #: ui/main.qml:193
 #, fuzzy, kde-format
@@ -309,8 +301,7 @@ msgid "Touchpad Battery"
 msgstr "Baterie klávesnice"
 
 #: ui/main.qml:197
-#, fuzzy, kde-format
-#| msgid "Unknown battery"
+#, kde-format
 msgid "Unknown Battery"
 msgstr "Neznámá baterie"
 
