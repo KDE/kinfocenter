@@ -12,6 +12,7 @@ add_subdirectory(glx)
 add_subdirectory(pci)
 add_subdirectory(firmware_security)
 add_subdirectory(opencl)
+add_subdirectory(block_devices)
 
 add_subdirectory( samba )
 add_subdirectory( nics )
