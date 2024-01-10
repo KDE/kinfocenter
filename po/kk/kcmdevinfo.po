@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-14 01:36+0000\n"
+"POT-Creation-Date: 2024-01-10 01:35+0000\n"
 "PO-Revision-Date: 2013-01-03 06:22+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -49,13 +49,13 @@ msgstr "Барлық құрылғыларын көрсету"
 msgid "Show Relevant Devices"
 msgstr "Тиісті құрылғыларын көрсету"
 
-#: devicelisting.cpp:89
+#: devicelisting.cpp:85
 #, kde-format
 msgctxt "unknown device type"
 msgid "Unknown"
 msgstr "Беймәлім"
 
-#: devicelisting.cpp:130 devinfo.cpp:73
+#: devicelisting.cpp:124 devinfo.cpp:73
 #, kde-format
 msgctxt "no device UDI"
 msgid "None"
@@ -135,384 +135,311 @@ msgctxt "Default device tooltip"
 msgid "A Device"
 msgstr "Құрылғы"
 
-#: soldevicetypes.cpp:43
-#, kde-format
-msgid "Processors"
-msgstr "Процессорлар"
-
-#: soldevicetypes.cpp:59
-#, kde-format
-msgid "Processor %1"
-msgstr "%1 процессоры"
-
-#: soldevicetypes.cpp:76
-#, kde-format
-msgid "Intel MMX"
-msgstr "Intel MMX"
-
-#: soldevicetypes.cpp:79
-#, kde-format
-msgid "Intel SSE"
-msgstr "Intel SSE"
-
-#: soldevicetypes.cpp:82
-#, kde-format
-msgid "Intel SSE2"
-msgstr "Intel SSE2"
-
-#: soldevicetypes.cpp:85
-#, kde-format
-msgid "Intel SSE3"
-msgstr "Intel SSE3"
-
-#: soldevicetypes.cpp:88
-#, fuzzy, kde-format
-#| msgid "Intel SSE3"
-msgid "Intel SSSE3"
-msgstr "Intel SSE3"
-
-#: soldevicetypes.cpp:91
-#, fuzzy, kde-format
-#| msgid "Intel SSE4"
-msgid "Intel SSE4.1"
-msgstr "Intel SSE4"
-
-#: soldevicetypes.cpp:94
-#, fuzzy, kde-format
-#| msgid "Intel SSE4"
-msgid "Intel SSE4.2"
-msgstr "Intel SSE4"
-
-#: soldevicetypes.cpp:97
-#, fuzzy, kde-format
-#| msgid "AMD 3DNow"
-msgid "AMD 3DNow!"
-msgstr "AMD 3DNow"
-
-#: soldevicetypes.cpp:100
-#, kde-format
-msgid "ATI IVEC"
-msgstr "ATI IVEC"
-
-#: soldevicetypes.cpp:103
-#, kde-format
-msgctxt "no instruction set extensions"
-msgid "None"
-msgstr "Жоқ"
-
-#: soldevicetypes.cpp:106
-#, kde-format
-msgid "Processor Number: "
-msgstr "Процессорлар саны:"
-
-#: soldevicetypes.cpp:106
-#, kde-format
-msgid "Max Speed: "
-msgstr "Макс.жылдамдығы:"
-
-#: soldevicetypes.cpp:107
-#, kde-format
-msgid "Supported Instruction Sets: "
-msgstr "Қолданатын нұсқаулар жиыны:"
-
-#: soldevicetypes.cpp:132
+#: soldevicetypes.cpp:45
 #, kde-format
 msgid "Storage Drives"
 msgstr "Жинақтауыш құрылғылары"
 
-#: soldevicetypes.cpp:151
+#: soldevicetypes.cpp:64
 #, kde-format
 msgid "Hard Disk Drive"
 msgstr "Қатқыл диск жетегі"
 
-#: soldevicetypes.cpp:154
+#: soldevicetypes.cpp:67
 #, kde-format
 msgid "Compact Flash Reader"
 msgstr "Флеш-картаны оқу құралы"
 
-#: soldevicetypes.cpp:157
+#: soldevicetypes.cpp:70
 #, kde-format
 msgid "Smart Media Reader"
 msgstr "Смарт-тасушысын оқу құралы"
 
-#: soldevicetypes.cpp:160
+#: soldevicetypes.cpp:73
 #, kde-format
 msgid "SD/MMC Reader"
 msgstr "SD/MMC оқу құралы"
 
-#: soldevicetypes.cpp:163
+#: soldevicetypes.cpp:76
 #, kde-format
 msgid "Optical Drive"
 msgstr "Оптикалық диск жетегі"
 
-#: soldevicetypes.cpp:166
+#: soldevicetypes.cpp:79
 #, kde-format
 msgid "Memory Stick Reader"
 msgstr "Флеш-жады картаны оқу құралы"
 
-#: soldevicetypes.cpp:169
+#: soldevicetypes.cpp:82
 #, kde-format
 msgid "xD Reader"
 msgstr "xD оқу құралы"
 
-#: soldevicetypes.cpp:172
+#: soldevicetypes.cpp:85
 #, kde-format
 msgid "Unknown Drive"
 msgstr "Беймәлім құрылғы"
 
-#: soldevicetypes.cpp:192
+#: soldevicetypes.cpp:105
 #, kde-format
 msgid "IDE"
 msgstr "IDE"
 
-#: soldevicetypes.cpp:195
+#: soldevicetypes.cpp:108
 #, kde-format
 msgid "USB"
 msgstr "USB"
 
-#: soldevicetypes.cpp:198
+#: soldevicetypes.cpp:111
 #, kde-format
 msgid "IEEE1394"
 msgstr "IEEE1394"
 
-#: soldevicetypes.cpp:201
+#: soldevicetypes.cpp:114
 #, kde-format
 msgid "SCSI"
 msgstr "SCSI"
 
-#: soldevicetypes.cpp:204
+#: soldevicetypes.cpp:117
 #, kde-format
 msgid "SATA"
 msgstr "SATA"
 
-#: soldevicetypes.cpp:207
+#: soldevicetypes.cpp:120
 #, kde-format
 msgctxt "platform storage bus"
 msgid "Platform"
 msgstr "Платформа"
 
-#: soldevicetypes.cpp:210
+#: soldevicetypes.cpp:123
 #, kde-format
 msgctxt "unknown storage bus"
 msgid "Unknown"
 msgstr "Беймәлім"
 
-#: soldevicetypes.cpp:213
+#: soldevicetypes.cpp:126
 #, kde-format
 msgid "Bus: "
 msgstr "Шинасы: "
 
-#: soldevicetypes.cpp:213
+#: soldevicetypes.cpp:126
 #, kde-format
 msgid "Hotpluggable?"
 msgstr "Істеп тұрғанда қосылатын ба?"
 
-#: soldevicetypes.cpp:213
+#: soldevicetypes.cpp:126
 #, kde-format
 msgid "Removable?"
 msgstr "Ауыстырмалы ма?"
 
-#: soldevicetypes.cpp:257
+#: soldevicetypes.cpp:170
 #, kde-format
 msgid "Unused"
 msgstr "Пайдалануда емес"
 
-#: soldevicetypes.cpp:260
+#: soldevicetypes.cpp:173
 #, kde-format
 msgid "File System"
 msgstr "Файлдық жүйесі"
 
-#: soldevicetypes.cpp:263
+#: soldevicetypes.cpp:176
 #, kde-format
 msgid "Partition Table"
 msgstr "Бөлімдер кестесі"
 
-#: soldevicetypes.cpp:266
+#: soldevicetypes.cpp:179
 #, kde-format
 msgid "Raid"
 msgstr "RAID"
 
-#: soldevicetypes.cpp:269
+#: soldevicetypes.cpp:182
 #, kde-format
 msgid "Encrypted"
 msgstr "Шифрланған"
 
-#: soldevicetypes.cpp:272
+#: soldevicetypes.cpp:185
 #, kde-format
 msgctxt "unknown volume usage"
 msgid "Unknown"
 msgstr "Беймәлім"
 
-#: soldevicetypes.cpp:275
+#: soldevicetypes.cpp:188
 #, kde-format
 msgid "File System Type: "
 msgstr "Файлдық жүйесінің түрі: "
 
-#: soldevicetypes.cpp:275
+#: soldevicetypes.cpp:188
 #, kde-format
 msgid "Label: "
 msgstr "Жарлығы: "
 
-#: soldevicetypes.cpp:276
+#: soldevicetypes.cpp:189
 #, kde-format
 msgid "Not Set"
 msgstr "Орнатылмаған"
 
-#: soldevicetypes.cpp:276
+#: soldevicetypes.cpp:189
 #, kde-format
 msgid "Volume Usage: "
 msgstr "Толуы: "
 
-#: soldevicetypes.cpp:276
+#: soldevicetypes.cpp:189
 #, kde-format
 msgid "UUID: "
 msgstr "UUID: "
 
-#: soldevicetypes.cpp:282
+#: soldevicetypes.cpp:195
 #, kde-format
 msgid "Mounted At: "
 msgstr "Тіркеген орны: "
 
-#: soldevicetypes.cpp:282
+#: soldevicetypes.cpp:195
 #, kde-format
 msgid "Not Mounted"
 msgstr "Тіркемеген"
 
-#: soldevicetypes.cpp:287
+#: soldevicetypes.cpp:200
 #, kde-format
 msgid "Volume Space:"
 msgstr "Көлемі: "
 
-#: soldevicetypes.cpp:297
+#: soldevicetypes.cpp:210
 #, kde-format
 msgctxt "Available space out of total partition size (percent used)"
 msgid "%1 free of %2 (%3% used)"
 msgstr "Жалпы %2, %1 бос (%3% жұмсалған)"
 
-#: soldevicetypes.cpp:303
+#: soldevicetypes.cpp:216
 #, kde-format
 msgid "No data available"
 msgstr ""
 
-#: soldevicetypes.cpp:330
+#: soldevicetypes.cpp:243
 #, kde-format
 msgid "Multimedia Players"
 msgstr "Мультимедиа плейерлер"
 
-#: soldevicetypes.cpp:349 soldevicetypes.cpp:388
+#: soldevicetypes.cpp:262 soldevicetypes.cpp:301
 #, kde-format
 msgid "Supported Drivers: "
 msgstr "Танитын драйверлері: "
 
-#: soldevicetypes.cpp:349 soldevicetypes.cpp:388
+#: soldevicetypes.cpp:262 soldevicetypes.cpp:301
 #, kde-format
 msgid "Supported Protocols: "
 msgstr "Танитын протоколдары: "
 
-#: soldevicetypes.cpp:369
+#: soldevicetypes.cpp:282
 #, kde-format
 msgid "Cameras"
 msgstr "Фотокамералар"
 
-#: soldevicetypes.cpp:408
-#, kde-format
-msgid "Batteries"
-msgstr "Батареялар"
+#~ msgid "Processors"
+#~ msgstr "Процессорлар"
 
-#: soldevicetypes.cpp:430
-#, kde-format
-msgid "PDA"
-msgstr "PDA"
+#~ msgid "Processor %1"
+#~ msgstr "%1 процессоры"
 
-#: soldevicetypes.cpp:433
-#, kde-format
-msgid "UPS"
-msgstr "UPS"
+#~ msgid "Intel MMX"
+#~ msgstr "Intel MMX"
 
-#: soldevicetypes.cpp:436
-#, kde-format
-msgid "Primary"
-msgstr "Негізгі"
+#~ msgid "Intel SSE"
+#~ msgstr "Intel SSE"
 
-#: soldevicetypes.cpp:439
-#, kde-format
-msgid "Mouse"
-msgstr "Тышқан"
+#~ msgid "Intel SSE2"
+#~ msgstr "Intel SSE2"
 
-#: soldevicetypes.cpp:442
-#, kde-format
-msgid "Keyboard"
-msgstr "Пернетақта"
+#~ msgid "Intel SSE3"
+#~ msgstr "Intel SSE3"
 
-#: soldevicetypes.cpp:445
-#, kde-format
-msgid "Keyboard + Mouse"
-msgstr "Пернетақта + Тышқан"
+#, fuzzy
+#~| msgid "Intel SSE3"
+#~ msgid "Intel SSSE3"
+#~ msgstr "Intel SSE3"
 
-#: soldevicetypes.cpp:448
-#, kde-format
-msgid "Camera"
-msgstr "Фотокамера"
+#, fuzzy
+#~| msgid "Intel SSE4"
+#~ msgid "Intel SSE4.1"
+#~ msgstr "Intel SSE4"
 
-#: soldevicetypes.cpp:451
-#, kde-format
-msgid "Phone"
-msgstr ""
+#, fuzzy
+#~| msgid "Intel SSE4"
+#~ msgid "Intel SSE4.2"
+#~ msgstr "Intel SSE4"
 
-#: soldevicetypes.cpp:454
-#, kde-format
-msgctxt "Screen"
-msgid "Monitor"
-msgstr ""
+#, fuzzy
+#~| msgid "AMD 3DNow"
+#~ msgid "AMD 3DNow!"
+#~ msgstr "AMD 3DNow"
 
-#: soldevicetypes.cpp:457
-#, kde-format
-msgctxt "Wireless game pad or joystick battery"
-msgid "Gaming Input"
-msgstr ""
+#~ msgid "ATI IVEC"
+#~ msgstr "ATI IVEC"
 
-#: soldevicetypes.cpp:460
-#, kde-format
-msgctxt "unknown battery type"
-msgid "Unknown"
-msgstr "Беймәлім"
+#~ msgctxt "no instruction set extensions"
+#~ msgid "None"
+#~ msgstr "Жоқ"
 
-#: soldevicetypes.cpp:466
-#, kde-format
-msgid "Charging"
-msgstr "Толтырылып жатыр"
+#~ msgid "Processor Number: "
+#~ msgstr "Процессорлар саны:"
 
-#: soldevicetypes.cpp:469
-#, kde-format
-msgid "Discharging"
-msgstr "Толуы бітті"
+#~ msgid "Max Speed: "
+#~ msgstr "Макс.жылдамдығы:"
 
-#: soldevicetypes.cpp:472
-#, fuzzy, kde-format
-#| msgid "No Charge"
-msgid "Fully Charged"
-msgstr "Толтырылмаған"
+#~ msgid "Supported Instruction Sets: "
+#~ msgstr "Қолданатын нұсқаулар жиыны:"
 
-#: soldevicetypes.cpp:475
-#, kde-format
-msgid "No Charge"
-msgstr "Толтырылмаған"
+#~ msgid "Batteries"
+#~ msgstr "Батареялар"
 
-#: soldevicetypes.cpp:478
-#, kde-format
-msgid "Battery Type: "
-msgstr "Батареяның түрі: "
+#~ msgid "PDA"
+#~ msgstr "PDA"
 
-#: soldevicetypes.cpp:478
-#, kde-format
-msgid "Charge Status: "
-msgstr "Толу күйі: "
+#~ msgid "UPS"
+#~ msgstr "UPS"
 
-#: soldevicetypes.cpp:478
-#, fuzzy, kde-format
-#| msgid "Charge Status: "
-msgid "Charge Percent: "
-msgstr "Толу күйі: "
+#~ msgid "Primary"
+#~ msgstr "Негізгі"
+
+#~ msgid "Mouse"
+#~ msgstr "Тышқан"
+
+#~ msgid "Keyboard"
+#~ msgstr "Пернетақта"
+
+#~ msgid "Keyboard + Mouse"
+#~ msgstr "Пернетақта + Тышқан"
+
+#~ msgid "Camera"
+#~ msgstr "Фотокамера"
+
+#~ msgctxt "unknown battery type"
+#~ msgid "Unknown"
+#~ msgstr "Беймәлім"
+
+#~ msgid "Charging"
+#~ msgstr "Толтырылып жатыр"
+
+#~ msgid "Discharging"
+#~ msgstr "Толуы бітті"
+
+#, fuzzy
+#~| msgid "No Charge"
+#~ msgid "Fully Charged"
+#~ msgstr "Толтырылмаған"
+
+#~ msgid "No Charge"
+#~ msgstr "Толтырылмаған"
+
+#~ msgid "Battery Type: "
+#~ msgstr "Батареяның түрі: "
+
+#~ msgid "Charge Status: "
+#~ msgstr "Толу күйі: "
+
+#, fuzzy
+#~| msgid "Charge Status: "
+#~ msgid "Charge Percent: "
+#~ msgstr "Толу күйі: "
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

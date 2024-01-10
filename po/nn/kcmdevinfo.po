@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-14 01:36+0000\n"
+"POT-Creation-Date: 2024-01-10 01:35+0000\n"
 "PO-Revision-Date: 2020-06-14 13:08+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -51,13 +51,13 @@ msgstr "Vis alle einingar"
 msgid "Show Relevant Devices"
 msgstr "Vis relevante einingar"
 
-#: devicelisting.cpp:89
+#: devicelisting.cpp:85
 #, kde-format
 msgctxt "unknown device type"
 msgid "Unknown"
 msgstr "Ukjend"
 
-#: devicelisting.cpp:130 devinfo.cpp:73
+#: devicelisting.cpp:124 devinfo.cpp:73
 #, kde-format
 msgctxt "no device UDI"
 msgid "None"
@@ -137,375 +137,307 @@ msgctxt "Default device tooltip"
 msgid "A Device"
 msgstr "Ei eining"
 
-#: soldevicetypes.cpp:43
-#, kde-format
-msgid "Processors"
-msgstr "Prosessorar"
-
-#: soldevicetypes.cpp:59
-#, kde-format
-msgid "Processor %1"
-msgstr "Prosessor %1"
-
-#: soldevicetypes.cpp:76
-#, kde-format
-msgid "Intel MMX"
-msgstr "Intel MMX"
-
-#: soldevicetypes.cpp:79
-#, kde-format
-msgid "Intel SSE"
-msgstr "Intel SSE"
-
-#: soldevicetypes.cpp:82
-#, kde-format
-msgid "Intel SSE2"
-msgstr "Intel SSE2"
-
-#: soldevicetypes.cpp:85
-#, kde-format
-msgid "Intel SSE3"
-msgstr "Intel SSE3"
-
-#: soldevicetypes.cpp:88
-#, kde-format
-msgid "Intel SSSE3"
-msgstr "Intel SSSE3"
-
-#: soldevicetypes.cpp:91
-#, kde-format
-msgid "Intel SSE4.1"
-msgstr "Intel SSE4.1"
-
-#: soldevicetypes.cpp:94
-#, kde-format
-msgid "Intel SSE4.2"
-msgstr "Intel SSE4.2"
-
-#: soldevicetypes.cpp:97
-#, kde-format
-msgid "AMD 3DNow!"
-msgstr "AMD 3DNow!"
-
-#: soldevicetypes.cpp:100
-#, kde-format
-msgid "ATI IVEC"
-msgstr "ATI IVEC"
-
-#: soldevicetypes.cpp:103
-#, kde-format
-msgctxt "no instruction set extensions"
-msgid "None"
-msgstr "Ingen"
-
-#: soldevicetypes.cpp:106
-#, kde-format
-msgid "Processor Number: "
-msgstr "Prosessornummer: "
-
-#: soldevicetypes.cpp:106
-#, kde-format
-msgid "Max Speed: "
-msgstr "Maksfart: "
-
-#: soldevicetypes.cpp:107
-#, kde-format
-msgid "Supported Instruction Sets: "
-msgstr "Støtta instruksjonssett: "
-
-#: soldevicetypes.cpp:132
+#: soldevicetypes.cpp:45
 #, kde-format
 msgid "Storage Drives"
 msgstr "Lagringsstasjonar"
 
-#: soldevicetypes.cpp:151
+#: soldevicetypes.cpp:64
 #, kde-format
 msgid "Hard Disk Drive"
 msgstr "Harddisk"
 
-#: soldevicetypes.cpp:154
+#: soldevicetypes.cpp:67
 #, kde-format
 msgid "Compact Flash Reader"
 msgstr "CompactFlash-lesar"
 
-#: soldevicetypes.cpp:157
+#: soldevicetypes.cpp:70
 #, kde-format
 msgid "Smart Media Reader"
 msgstr "Smart media-lesar"
 
-#: soldevicetypes.cpp:160
+#: soldevicetypes.cpp:73
 #, kde-format
 msgid "SD/MMC Reader"
 msgstr "SD-/MMC-kortlesar"
 
-#: soldevicetypes.cpp:163
+#: soldevicetypes.cpp:76
 #, kde-format
 msgid "Optical Drive"
 msgstr "Optisk stasjon"
 
-#: soldevicetypes.cpp:166
+#: soldevicetypes.cpp:79
 #, kde-format
 msgid "Memory Stick Reader"
 msgstr "Minnepinnelesar"
 
-#: soldevicetypes.cpp:169
+#: soldevicetypes.cpp:82
 #, kde-format
 msgid "xD Reader"
 msgstr "xD-lesar"
 
-#: soldevicetypes.cpp:172
+#: soldevicetypes.cpp:85
 #, kde-format
 msgid "Unknown Drive"
 msgstr "Ukjent stasjon"
 
-#: soldevicetypes.cpp:192
+#: soldevicetypes.cpp:105
 #, kde-format
 msgid "IDE"
 msgstr "IDE"
 
-#: soldevicetypes.cpp:195
+#: soldevicetypes.cpp:108
 #, kde-format
 msgid "USB"
 msgstr "USB"
 
-#: soldevicetypes.cpp:198
+#: soldevicetypes.cpp:111
 #, kde-format
 msgid "IEEE1394"
 msgstr "IEEE 1394"
 
-#: soldevicetypes.cpp:201
+#: soldevicetypes.cpp:114
 #, kde-format
 msgid "SCSI"
 msgstr "SCSI"
 
-#: soldevicetypes.cpp:204
+#: soldevicetypes.cpp:117
 #, kde-format
 msgid "SATA"
 msgstr "SATA"
 
-#: soldevicetypes.cpp:207
+#: soldevicetypes.cpp:120
 #, kde-format
 msgctxt "platform storage bus"
 msgid "Platform"
 msgstr "Plattform"
 
-#: soldevicetypes.cpp:210
+#: soldevicetypes.cpp:123
 #, kde-format
 msgctxt "unknown storage bus"
 msgid "Unknown"
 msgstr "Ukjend"
 
-#: soldevicetypes.cpp:213
+#: soldevicetypes.cpp:126
 #, kde-format
 msgid "Bus: "
 msgstr "Buss: "
 
-#: soldevicetypes.cpp:213
+#: soldevicetypes.cpp:126
 #, kde-format
 msgid "Hotpluggable?"
 msgstr "Hotplug-kompatibel:"
 
-#: soldevicetypes.cpp:213
+#: soldevicetypes.cpp:126
 #, kde-format
 msgid "Removable?"
 msgstr "Flyttbar?"
 
-#: soldevicetypes.cpp:257
+#: soldevicetypes.cpp:170
 #, kde-format
 msgid "Unused"
 msgstr "Ubrukt"
 
-#: soldevicetypes.cpp:260
+#: soldevicetypes.cpp:173
 #, kde-format
 msgid "File System"
 msgstr "Filsystem"
 
-#: soldevicetypes.cpp:263
+#: soldevicetypes.cpp:176
 #, kde-format
 msgid "Partition Table"
 msgstr "Partisjonstabell"
 
-#: soldevicetypes.cpp:266
+#: soldevicetypes.cpp:179
 #, kde-format
 msgid "Raid"
 msgstr "RAID"
 
-#: soldevicetypes.cpp:269
+#: soldevicetypes.cpp:182
 #, kde-format
 msgid "Encrypted"
 msgstr "Kryptert"
 
-#: soldevicetypes.cpp:272
+#: soldevicetypes.cpp:185
 #, kde-format
 msgctxt "unknown volume usage"
 msgid "Unknown"
 msgstr "Ukjend"
 
-#: soldevicetypes.cpp:275
+#: soldevicetypes.cpp:188
 #, kde-format
 msgid "File System Type: "
 msgstr "Filsystemtype: "
 
-#: soldevicetypes.cpp:275
+#: soldevicetypes.cpp:188
 #, kde-format
 msgid "Label: "
 msgstr "Merkelapp: "
 
-#: soldevicetypes.cpp:276
+#: soldevicetypes.cpp:189
 #, kde-format
 msgid "Not Set"
 msgstr "Ikkje valt"
 
-#: soldevicetypes.cpp:276
+#: soldevicetypes.cpp:189
 #, kde-format
 msgid "Volume Usage: "
 msgstr "Bruk av lagringsområde: "
 
-#: soldevicetypes.cpp:276
+#: soldevicetypes.cpp:189
 #, kde-format
 msgid "UUID: "
 msgstr "UUID: "
 
-#: soldevicetypes.cpp:282
+#: soldevicetypes.cpp:195
 #, kde-format
 msgid "Mounted At: "
 msgstr "Montert på: "
 
-#: soldevicetypes.cpp:282
+#: soldevicetypes.cpp:195
 #, kde-format
 msgid "Not Mounted"
 msgstr "Ikkje montert"
 
-#: soldevicetypes.cpp:287
+#: soldevicetypes.cpp:200
 #, kde-format
 msgid "Volume Space:"
 msgstr "Namn på lagringsområde:"
 
-#: soldevicetypes.cpp:297
+#: soldevicetypes.cpp:210
 #, kde-format
 msgctxt "Available space out of total partition size (percent used)"
 msgid "%1 free of %2 (%3% used)"
 msgstr "%1 ledig av %2 (%3 % brukt)"
 
-#: soldevicetypes.cpp:303
+#: soldevicetypes.cpp:216
 #, kde-format
 msgid "No data available"
 msgstr "Ingen data tilgjengeleg"
 
-#: soldevicetypes.cpp:330
+#: soldevicetypes.cpp:243
 #, kde-format
 msgid "Multimedia Players"
 msgstr "Mediespelarar"
 
-#: soldevicetypes.cpp:349 soldevicetypes.cpp:388
+#: soldevicetypes.cpp:262 soldevicetypes.cpp:301
 #, kde-format
 msgid "Supported Drivers: "
 msgstr "Støtta drivarar: "
 
-#: soldevicetypes.cpp:349 soldevicetypes.cpp:388
+#: soldevicetypes.cpp:262 soldevicetypes.cpp:301
 #, kde-format
 msgid "Supported Protocols: "
 msgstr "Støtta protokollar: "
 
-#: soldevicetypes.cpp:369
+#: soldevicetypes.cpp:282
 #, kde-format
 msgid "Cameras"
 msgstr "Kamera"
 
-#: soldevicetypes.cpp:408
-#, kde-format
-msgid "Batteries"
-msgstr "Batteri"
+#~ msgid "Processors"
+#~ msgstr "Prosessorar"
 
-#: soldevicetypes.cpp:430
-#, kde-format
-msgid "PDA"
-msgstr "PDA"
+#~ msgid "Processor %1"
+#~ msgstr "Prosessor %1"
 
-#: soldevicetypes.cpp:433
-#, kde-format
-msgid "UPS"
-msgstr "UPS"
+#~ msgid "Intel MMX"
+#~ msgstr "Intel MMX"
 
-#: soldevicetypes.cpp:436
-#, kde-format
-msgid "Primary"
-msgstr "Primær"
+#~ msgid "Intel SSE"
+#~ msgstr "Intel SSE"
 
-#: soldevicetypes.cpp:439
-#, kde-format
-msgid "Mouse"
-msgstr "Mus"
+#~ msgid "Intel SSE2"
+#~ msgstr "Intel SSE2"
 
-#: soldevicetypes.cpp:442
-#, kde-format
-msgid "Keyboard"
-msgstr "Tastatur"
+#~ msgid "Intel SSE3"
+#~ msgstr "Intel SSE3"
 
-#: soldevicetypes.cpp:445
-#, kde-format
-msgid "Keyboard + Mouse"
-msgstr "Tastatur + mus"
+#~ msgid "Intel SSSE3"
+#~ msgstr "Intel SSSE3"
 
-#: soldevicetypes.cpp:448
-#, kde-format
-msgid "Camera"
-msgstr "Kamera"
+#~ msgid "Intel SSE4.1"
+#~ msgstr "Intel SSE4.1"
 
-#: soldevicetypes.cpp:451
-#, kde-format
-msgid "Phone"
-msgstr "Telefon"
+#~ msgid "Intel SSE4.2"
+#~ msgstr "Intel SSE4.2"
 
-#: soldevicetypes.cpp:454
-#, kde-format
-msgctxt "Screen"
-msgid "Monitor"
-msgstr "Skjerm"
+#~ msgid "AMD 3DNow!"
+#~ msgstr "AMD 3DNow!"
 
-#: soldevicetypes.cpp:457
-#, kde-format
-msgctxt "Wireless game pad or joystick battery"
-msgid "Gaming Input"
-msgstr "Spelkontrollar"
+#~ msgid "ATI IVEC"
+#~ msgstr "ATI IVEC"
 
-#: soldevicetypes.cpp:460
-#, kde-format
-msgctxt "unknown battery type"
-msgid "Unknown"
-msgstr "Ukjend"
+#~ msgctxt "no instruction set extensions"
+#~ msgid "None"
+#~ msgstr "Ingen"
 
-#: soldevicetypes.cpp:466
-#, kde-format
-msgid "Charging"
-msgstr "Ladar"
+#~ msgid "Processor Number: "
+#~ msgstr "Prosessornummer: "
 
-#: soldevicetypes.cpp:469
-#, kde-format
-msgid "Discharging"
-msgstr "Ladar ut"
+#~ msgid "Max Speed: "
+#~ msgstr "Maksfart: "
 
-#: soldevicetypes.cpp:472
-#, kde-format
-msgid "Fully Charged"
-msgstr "Ferdig ladd"
+#~ msgid "Supported Instruction Sets: "
+#~ msgstr "Støtta instruksjonssett: "
 
-#: soldevicetypes.cpp:475
-#, kde-format
-msgid "No Charge"
-msgstr "Inga lading"
+#~ msgid "Batteries"
+#~ msgstr "Batteri"
 
-#: soldevicetypes.cpp:478
-#, kde-format
-msgid "Battery Type: "
-msgstr "Batteritype: "
+#~ msgid "PDA"
+#~ msgstr "PDA"
 
-#: soldevicetypes.cpp:478
-#, kde-format
-msgid "Charge Status: "
-msgstr "Ladestatus: "
+#~ msgid "UPS"
+#~ msgstr "UPS"
 
-#: soldevicetypes.cpp:478
-#, kde-format
-msgid "Charge Percent: "
-msgstr "Ladingsprosent:"
+#~ msgid "Primary"
+#~ msgstr "Primær"
+
+#~ msgid "Mouse"
+#~ msgstr "Mus"
+
+#~ msgid "Keyboard"
+#~ msgstr "Tastatur"
+
+#~ msgid "Keyboard + Mouse"
+#~ msgstr "Tastatur + mus"
+
+#~ msgid "Camera"
+#~ msgstr "Kamera"
+
+#~ msgid "Phone"
+#~ msgstr "Telefon"
+
+#~ msgctxt "Screen"
+#~ msgid "Monitor"
+#~ msgstr "Skjerm"
+
+#~ msgctxt "Wireless game pad or joystick battery"
+#~ msgid "Gaming Input"
+#~ msgstr "Spelkontrollar"
+
+#~ msgctxt "unknown battery type"
+#~ msgid "Unknown"
+#~ msgstr "Ukjend"
+
+#~ msgid "Charging"
+#~ msgstr "Ladar"
+
+#~ msgid "Discharging"
+#~ msgstr "Ladar ut"
+
+#~ msgid "Fully Charged"
+#~ msgstr "Ferdig ladd"
+
+#~ msgid "No Charge"
+#~ msgstr "Inga lading"
+
+#~ msgid "Battery Type: "
+#~ msgstr "Batteritype: "
+
+#~ msgid "Charge Status: "
+#~ msgstr "Ladestatus: "
+
+#~ msgid "Charge Percent: "
+#~ msgstr "Ladingsprosent:"

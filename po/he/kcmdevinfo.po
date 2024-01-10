@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmdevinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-14 01:36+0000\n"
+"POT-Creation-Date: 2024-01-10 01:35+0000\n"
 "PO-Revision-Date: 2023-10-22 15:10+0300\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
@@ -48,13 +48,13 @@ msgstr "הצגת כל ההתקנים"
 msgid "Show Relevant Devices"
 msgstr "הצגת התקנים קשורים"
 
-#: devicelisting.cpp:89
+#: devicelisting.cpp:85
 #, kde-format
 msgctxt "unknown device type"
 msgid "Unknown"
 msgstr "לא ידוע"
 
-#: devicelisting.cpp:130 devinfo.cpp:73
+#: devicelisting.cpp:124 devinfo.cpp:73
 #, kde-format
 msgctxt "no device UDI"
 msgid "None"
@@ -134,378 +134,310 @@ msgctxt "Default device tooltip"
 msgid "A Device"
 msgstr "התקן"
 
-#: soldevicetypes.cpp:43
-#, kde-format
-msgid "Processors"
-msgstr "מעבדים"
-
-#: soldevicetypes.cpp:59
-#, kde-format
-msgid "Processor %1"
-msgstr "מעבד %1"
-
-#: soldevicetypes.cpp:76
-#, kde-format
-msgid "Intel MMX"
-msgstr "Intel MMX"
-
-#: soldevicetypes.cpp:79
-#, kde-format
-msgid "Intel SSE"
-msgstr "Intel SSE"
-
-#: soldevicetypes.cpp:82
-#, kde-format
-msgid "Intel SSE2"
-msgstr "Intel SSE2"
-
-#: soldevicetypes.cpp:85
-#, kde-format
-msgid "Intel SSE3"
-msgstr "Intel SSE3"
-
-#: soldevicetypes.cpp:88
-#, kde-format
-msgid "Intel SSSE3"
-msgstr "Intel SSSE3"
-
-#: soldevicetypes.cpp:91
-#, kde-format
-msgid "Intel SSE4.1"
-msgstr "Intel SSE4.1"
-
-#: soldevicetypes.cpp:94
-#, kde-format
-msgid "Intel SSE4.2"
-msgstr "Intel SSE4.2"
-
-#: soldevicetypes.cpp:97
-#, kde-format
-msgid "AMD 3DNow!"
-msgstr "AMD 3DNow!‎"
-
-#: soldevicetypes.cpp:100
-#, kde-format
-msgid "ATI IVEC"
-msgstr "ATI IVEC"
-
-#: soldevicetypes.cpp:103
-#, kde-format
-msgctxt "no instruction set extensions"
-msgid "None"
-msgstr "אין"
-
-#: soldevicetypes.cpp:106
-#, kde-format
-msgid "Processor Number: "
-msgstr "מספר מעבד: "
-
-#: soldevicetypes.cpp:106
-#, kde-format
-msgid "Max Speed: "
-msgstr "מהירות מרבית: "
-
-#: soldevicetypes.cpp:107
-#, kde-format
-msgid "Supported Instruction Sets: "
-msgstr "סט פקודות נתמכות: "
-
-#: soldevicetypes.cpp:132
+#: soldevicetypes.cpp:45
 #, kde-format
 msgid "Storage Drives"
 msgstr "כונני אחסון"
 
-#: soldevicetypes.cpp:151
+#: soldevicetypes.cpp:64
 #, kde-format
 msgid "Hard Disk Drive"
 msgstr "כונן קשיח"
 
-#: soldevicetypes.cpp:154
+#: soldevicetypes.cpp:67
 #, kde-format
 msgid "Compact Flash Reader"
 msgstr "קורא התקני CF"
 
-#: soldevicetypes.cpp:157
+#: soldevicetypes.cpp:70
 #, kde-format
 msgid "Smart Media Reader"
 msgstr "קורא מדיות חכמות"
 
-#: soldevicetypes.cpp:160
+#: soldevicetypes.cpp:73
 #, kde-format
 msgid "SD/MMC Reader"
 msgstr "קורא SD/MMC"
 
-#: soldevicetypes.cpp:163
+#: soldevicetypes.cpp:76
 #, kde-format
 msgid "Optical Drive"
 msgstr "כונן אופטי"
 
-#: soldevicetypes.cpp:166
+#: soldevicetypes.cpp:79
 #, kde-format
 msgid "Memory Stick Reader"
 msgstr "קורא כרטיסי זיכרון"
 
-#: soldevicetypes.cpp:169
+#: soldevicetypes.cpp:82
 #, kde-format
 msgid "xD Reader"
 msgstr "קורא xD"
 
-#: soldevicetypes.cpp:172
+#: soldevicetypes.cpp:85
 #, kde-format
 msgid "Unknown Drive"
 msgstr "כונן לא ידוע"
 
-#: soldevicetypes.cpp:192
+#: soldevicetypes.cpp:105
 #, kde-format
 msgid "IDE"
 msgstr "IDE"
 
-#: soldevicetypes.cpp:195
+#: soldevicetypes.cpp:108
 #, kde-format
 msgid "USB"
 msgstr "USB"
 
-#: soldevicetypes.cpp:198
+#: soldevicetypes.cpp:111
 #, kde-format
 msgid "IEEE1394"
 msgstr "IEEE1394"
 
-#: soldevicetypes.cpp:201
+#: soldevicetypes.cpp:114
 #, kde-format
 msgid "SCSI"
 msgstr "SCSI"
 
-#: soldevicetypes.cpp:204
+#: soldevicetypes.cpp:117
 #, kde-format
 msgid "SATA"
 msgstr "SATA"
 
-#: soldevicetypes.cpp:207
+#: soldevicetypes.cpp:120
 #, kde-format
 msgctxt "platform storage bus"
 msgid "Platform"
 msgstr "פלטפורמה"
 
-#: soldevicetypes.cpp:210
+#: soldevicetypes.cpp:123
 #, kde-format
 msgctxt "unknown storage bus"
 msgid "Unknown"
 msgstr "לא ידוע"
 
-#: soldevicetypes.cpp:213
+#: soldevicetypes.cpp:126
 #, kde-format
 msgid "Bus: "
 msgstr "אפיק: "
 
-#: soldevicetypes.cpp:213
+#: soldevicetypes.cpp:126
 #, kde-format
 msgid "Hotpluggable?"
 msgstr "יש החלפה חמה?"
 
-#: soldevicetypes.cpp:213
+#: soldevicetypes.cpp:126
 #, kde-format
 msgid "Removable?"
 msgstr "ניתן להסיר?"
 
-#: soldevicetypes.cpp:257
+#: soldevicetypes.cpp:170
 #, kde-format
 msgid "Unused"
 msgstr "לא בשימוש"
 
-#: soldevicetypes.cpp:260
+#: soldevicetypes.cpp:173
 #, kde-format
 msgid "File System"
 msgstr "מערכת קבצים"
 
-#: soldevicetypes.cpp:263
+#: soldevicetypes.cpp:176
 #, kde-format
 msgid "Partition Table"
 msgstr "טבלת מחיצות"
 
-#: soldevicetypes.cpp:266
+#: soldevicetypes.cpp:179
 #, kde-format
 msgid "Raid"
 msgstr "Raid"
 
-#: soldevicetypes.cpp:269
+#: soldevicetypes.cpp:182
 #, kde-format
 msgid "Encrypted"
 msgstr "מוצפן"
 
-#: soldevicetypes.cpp:272
+#: soldevicetypes.cpp:185
 #, kde-format
 msgctxt "unknown volume usage"
 msgid "Unknown"
 msgstr "לא ידוע"
 
-#: soldevicetypes.cpp:275
+#: soldevicetypes.cpp:188
 #, kde-format
 msgid "File System Type: "
 msgstr "סוג מערכת קבצים: "
 
-#: soldevicetypes.cpp:275
+#: soldevicetypes.cpp:188
 #, kde-format
 msgid "Label: "
 msgstr "תווית: "
 
-#: soldevicetypes.cpp:276
+#: soldevicetypes.cpp:189
 #, kde-format
 msgid "Not Set"
 msgstr "לא מוגדר"
 
-#: soldevicetypes.cpp:276
+#: soldevicetypes.cpp:189
 #, kde-format
 msgid "Volume Usage: "
 msgstr "נפח בשימוש: "
 
-#: soldevicetypes.cpp:276
+#: soldevicetypes.cpp:189
 #, kde-format
 msgid "UUID: "
 msgstr "UUID: "
 
-#: soldevicetypes.cpp:282
+#: soldevicetypes.cpp:195
 #, kde-format
 msgid "Mounted At: "
 msgstr "מעוגן ב־: "
 
-#: soldevicetypes.cpp:282
+#: soldevicetypes.cpp:195
 #, kde-format
 msgid "Not Mounted"
 msgstr "לא מעוגן"
 
-#: soldevicetypes.cpp:287
+#: soldevicetypes.cpp:200
 #, kde-format
 msgid "Volume Space:"
 msgstr "נפח כרך:"
 
-#: soldevicetypes.cpp:297
+#: soldevicetypes.cpp:210
 #, kde-format
 msgctxt "Available space out of total partition size (percent used)"
 msgid "%1 free of %2 (%3% used)"
 msgstr "%1 פנויים מתוך %2 (%3% בשימוש)"
 
-#: soldevicetypes.cpp:303
+#: soldevicetypes.cpp:216
 #, kde-format
 msgid "No data available"
 msgstr "אין נתונים זמינים"
 
-#: soldevicetypes.cpp:330
+#: soldevicetypes.cpp:243
 #, kde-format
 msgid "Multimedia Players"
 msgstr "נגני מולטימדיה"
 
-#: soldevicetypes.cpp:349 soldevicetypes.cpp:388
+#: soldevicetypes.cpp:262 soldevicetypes.cpp:301
 #, kde-format
 msgid "Supported Drivers: "
 msgstr "מנהלי התקנים נתמכים: "
 
-#: soldevicetypes.cpp:349 soldevicetypes.cpp:388
+#: soldevicetypes.cpp:262 soldevicetypes.cpp:301
 #, kde-format
 msgid "Supported Protocols: "
 msgstr "פרוטוקולים נתמכים: "
 
-#: soldevicetypes.cpp:369
+#: soldevicetypes.cpp:282
 #, kde-format
 msgid "Cameras"
 msgstr "מצלמות"
 
-#: soldevicetypes.cpp:408
-#, kde-format
-msgid "Batteries"
-msgstr "סוללות"
+#~ msgid "Processors"
+#~ msgstr "מעבדים"
 
-#: soldevicetypes.cpp:430
-#, kde-format
-msgid "PDA"
-msgstr "מחשב כף יד"
+#~ msgid "Processor %1"
+#~ msgstr "מעבד %1"
 
-#: soldevicetypes.cpp:433
-#, kde-format
-msgid "UPS"
-msgstr "אל־פסק"
+#~ msgid "Intel MMX"
+#~ msgstr "Intel MMX"
 
-#: soldevicetypes.cpp:436
-#, kde-format
-msgid "Primary"
-msgstr "ראשי"
+#~ msgid "Intel SSE"
+#~ msgstr "Intel SSE"
 
-#: soldevicetypes.cpp:439
-#, kde-format
-msgid "Mouse"
-msgstr "עכבר"
+#~ msgid "Intel SSE2"
+#~ msgstr "Intel SSE2"
 
-#: soldevicetypes.cpp:442
-#, kde-format
-msgid "Keyboard"
-msgstr "מקלדת"
+#~ msgid "Intel SSE3"
+#~ msgstr "Intel SSE3"
 
-#: soldevicetypes.cpp:445
-#, kde-format
-msgid "Keyboard + Mouse"
-msgstr "מקלדת + עכבר"
+#~ msgid "Intel SSSE3"
+#~ msgstr "Intel SSSE3"
 
-#: soldevicetypes.cpp:448
-#, kde-format
-msgid "Camera"
-msgstr "מצלמה"
+#~ msgid "Intel SSE4.1"
+#~ msgstr "Intel SSE4.1"
 
-#: soldevicetypes.cpp:451
-#, kde-format
-msgid "Phone"
-msgstr "טלפון"
+#~ msgid "Intel SSE4.2"
+#~ msgstr "Intel SSE4.2"
 
-#: soldevicetypes.cpp:454
-#, kde-format
-msgctxt "Screen"
-msgid "Monitor"
-msgstr "צג"
+#~ msgid "AMD 3DNow!"
+#~ msgstr "AMD 3DNow!‎"
 
-#: soldevicetypes.cpp:457
-#, kde-format
-msgctxt "Wireless game pad or joystick battery"
-msgid "Gaming Input"
-msgstr "קלט משחקים"
+#~ msgid "ATI IVEC"
+#~ msgstr "ATI IVEC"
 
-#: soldevicetypes.cpp:460
-#, kde-format
-msgctxt "unknown battery type"
-msgid "Unknown"
-msgstr "לא ידוע"
+#~ msgctxt "no instruction set extensions"
+#~ msgid "None"
+#~ msgstr "אין"
 
-#: soldevicetypes.cpp:466
-#, kde-format
-msgid "Charging"
-msgstr "בטעינה"
+#~ msgid "Processor Number: "
+#~ msgstr "מספר מעבד: "
 
-#: soldevicetypes.cpp:469
-#, kde-format
-msgid "Discharging"
-msgstr "בשימוש"
+#~ msgid "Max Speed: "
+#~ msgstr "מהירות מרבית: "
 
-#: soldevicetypes.cpp:472
-#, kde-format
-msgid "Fully Charged"
-msgstr "טעינה מלאה"
+#~ msgid "Supported Instruction Sets: "
+#~ msgstr "סט פקודות נתמכות: "
 
-#: soldevicetypes.cpp:475
-#, kde-format
-msgid "No Charge"
-msgstr "לא בטעינה"
+#~ msgid "Batteries"
+#~ msgstr "סוללות"
 
-#: soldevicetypes.cpp:478
-#, kde-format
-msgid "Battery Type: "
-msgstr "סוג סוללה: "
+#~ msgid "PDA"
+#~ msgstr "מחשב כף יד"
 
-#: soldevicetypes.cpp:478
-#, kde-format
-msgid "Charge Status: "
-msgstr "מצב טעינה: "
+#~ msgid "UPS"
+#~ msgstr "אל־פסק"
 
-#: soldevicetypes.cpp:478
-#, kde-format
-msgid "Charge Percent: "
-msgstr "אחוז טעינה: "
+#~ msgid "Primary"
+#~ msgstr "ראשי"
+
+#~ msgid "Mouse"
+#~ msgstr "עכבר"
+
+#~ msgid "Keyboard"
+#~ msgstr "מקלדת"
+
+#~ msgid "Keyboard + Mouse"
+#~ msgstr "מקלדת + עכבר"
+
+#~ msgid "Camera"
+#~ msgstr "מצלמה"
+
+#~ msgid "Phone"
+#~ msgstr "טלפון"
+
+#~ msgctxt "Screen"
+#~ msgid "Monitor"
+#~ msgstr "צג"
+
+#~ msgctxt "Wireless game pad or joystick battery"
+#~ msgid "Gaming Input"
+#~ msgstr "קלט משחקים"
+
+#~ msgctxt "unknown battery type"
+#~ msgid "Unknown"
+#~ msgstr "לא ידוע"
+
+#~ msgid "Charging"
+#~ msgstr "בטעינה"
+
+#~ msgid "Discharging"
+#~ msgstr "בשימוש"
+
+#~ msgid "Fully Charged"
+#~ msgstr "טעינה מלאה"
+
+#~ msgid "No Charge"
+#~ msgstr "לא בטעינה"
+
+#~ msgid "Battery Type: "
+#~ msgstr "סוג סוללה: "
+
+#~ msgid "Charge Status: "
+#~ msgstr "מצב טעינה: "
+
+#~ msgid "Charge Percent: "
+#~ msgstr "אחוז טעינה: "
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
