@@ -1,13 +1,13 @@
+# SPDX-FileCopyrightText: 2022, 2023 Ryuichi Yamada <ryuichi_ya220@outlook.jp>
 # Tomohiro Hyakutake <tomhioo@outlook.jp>, 2019.
-# Ryuichi Yamada <ryuichi_ya220@outlook.jp>, 2022.
 # Fumiaki Okushi <fumiaki.okushi@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-02 01:42+0000\n"
-"PO-Revision-Date: 2022-07-04 11:42-0700\n"
-"Last-Translator: Fumiaki Okushi <fumiaki.okushi@gmail.com>\n"
+"PO-Revision-Date: 2023-12-21 23:02+0900\n"
+"Last-Translator: Ryuichi Yamada <ryuichi_ya220@outlook.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -50,7 +50,7 @@ msgstr "カーネルバージョン:"
 #, kde-format
 msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
-msgstr ""
+msgstr "%1 (%2 ビット)"
 
 #: main.cpp:187
 #, kde-format
@@ -68,7 +68,7 @@ msgstr "製品名:"
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
-msgstr "システムのバージョン:"
+msgstr "システムバージョン:"
 
 #: main.cpp:196 main.cpp:210
 #, kde-format
@@ -77,29 +77,26 @@ msgid "Serial Number:"
 msgstr "シリアルナンバー:"
 
 #: main.cpp:200 main.cpp:217
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
-msgstr "不明"
+msgstr "不明:"
 
 #: main.cpp:213
-#, fuzzy, kde-format
-#| msgid "Qt Version:"
+#, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
-msgstr "Qt のバージョン:"
+msgstr "U-Boot バージョン:"
 
 #: main.cpp:251
 #, kde-format
 msgid "KDE Frameworks Version:"
-msgstr "KDE Frameworks のバージョン:"
+msgstr "KDE Frameworks バージョン:"
 
 #: main.cpp:252
 #, kde-format
 msgid "Qt Version:"
-msgstr "Qt のバージョン:"
+msgstr "Qt バージョン:"
 
 #: MemoryEntry.cpp:20
 #, kde-format
@@ -127,7 +124,7 @@ msgstr "オペレーティングシステム:"
 #, kde-format
 msgctxt "@label %1 is the distro name, %2 is the version"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: OSVersionEntry.cpp:13
 #, kde-format
@@ -135,18 +132,18 @@ msgctxt ""
 "@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
 "should be a number, or 'rolling'"
 msgid "%1 %2 Build: %3"
-msgstr ""
+msgstr "%1 %2 ビルド: %3"
 
 #: PlasmaEntry.cpp:15
 #, kde-format
 msgid "KDE Plasma Version:"
-msgstr "KDE Plasma のバージョン:"
+msgstr "KDE Plasma バージョン:"
 
 #: ThirdPartyEntry.cpp:12
 #, kde-format
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
-msgstr ""
+msgstr ":"
 
 #: ui/main.qml:92
 #, kde-format
@@ -158,7 +155,7 @@ msgstr "シリアルナンバー"
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
-msgstr ""
+msgstr "コピー"
 
 #: ui/main.qml:125
 #, kde-format
@@ -182,24 +179,22 @@ msgstr "ハードウェア"
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
-msgstr ""
+msgstr "%1 を起動"
 
 #: ui/main.qml:180 ui/main.qml:188
-#, fuzzy, kde-format
-#| msgctxt "EMAIL OF TRANSLATORS"
-#| msgid "Your emails"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
-msgstr "ryuichi_ya220@outlook.jp"
+msgstr "詳細をコピー"
 
 #: ui/main.qml:191
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
-msgstr ""
+msgstr "現在の言語で"
 
 #: ui/main.qml:197
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
-msgstr ""
+msgstr "英語で"
