@@ -142,6 +142,8 @@
         "Name[zh_CN]": "网络接口",
         "Name[zh_TW]": "網路介面"
     },
-    "X-DocPath": "kinfocenter/network.html#nic",
-    "X-KDE-KInfoCenter-Category": "network_information"
+    "TryExec": "ip",
+    "X-KDE-KInfoCenter-Category": "network_information",
+    "X-KDE-Keywords": "network,nic,ip,ip address,mac,inet,eth,wlan,wifi"
 }
+

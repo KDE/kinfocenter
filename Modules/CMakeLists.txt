@@ -12,9 +12,9 @@ add_subdirectory(pci)
 add_subdirectory(firmware_security)
 add_subdirectory(opencl)
 add_subdirectory(block_devices)
+add_subdirectory(network)
 
 add_subdirectory( samba )
-add_subdirectory( nics )
 
 find_package(USB1 MODULE)
 set_package_properties(USB1 PROPERTIES DESCRIPTION "library that provides generic access to USB devicess"
