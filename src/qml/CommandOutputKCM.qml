@@ -18,8 +18,6 @@ KCM.SimpleKCM {
     implicitHeight: Kirigami.Units.gridUnit * 20
     // Use a horizontal scrollbar if text wrapping is disabled. In all other cases we'll go with the defaults.
     horizontalScrollBarPolicy: wrapMode === TextEdit.NoWrap ? QQC2.ScrollBar.AsNeeded : QQC2.ScrollBar.AlwaysOff
-    // Disable footer padding
-    extraFooterTopPadding: false
 
     Kirigami.Theme.colorSet: Kirigami.Theme.View
     Kirigami.Theme.inherit: false
