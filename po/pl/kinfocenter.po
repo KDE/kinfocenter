@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-29 01:38+0000\n"
+"POT-Creation-Date: 2024-01-14 03:08+0000\n"
 "PO-Revision-Date: 2023-12-16 10:33+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmai.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -56,36 +56,36 @@ msgstr ""
 "Spróbuj ponownie później. Jeśli będzie się to powtarzać, to zalecamy "
 "zgłoszenie tego swojej dystrybucji."
 
-#: qml/CommandOutputKCM.qml:88
+#: qml/CommandOutputKCM.qml:86
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
 msgstr "Nie znaleziono tekstu odpowiadającego filtrowi"
 
-#: qml/CommandOutputKCM.qml:93
+#: qml/CommandOutputKCM.qml:91
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
 msgstr "Brak danych"
 
-#: qml/CommandOutputKCM.qml:106
+#: qml/CommandOutputKCM.qml:104
 #, kde-format
 msgid "Report this issue"
 msgstr "Zgłoś ten błąd"
 
-#: qml/CommandOutputKCM.qml:125
+#: qml/CommandOutputKCM.qml:123
 #, kde-format
 msgctxt "@action:button copies all displayed text"
 msgid "Copy to Clipboard"
 msgstr "Skopiuj do schowka"
 
-#: qml/CommandOutputKCM.qml:135
+#: qml/CommandOutputKCM.qml:133
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
 msgstr "Odfiltruj…"
 
-#: qml/CommandOutputKCM.qml:137
+#: qml/CommandOutputKCM.qml:135
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"

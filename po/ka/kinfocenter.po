@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-29 01:38+0000\n"
+"POT-Creation-Date: 2024-01-14 03:08+0000\n"
 "PO-Revision-Date: 2023-11-30 05:58+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -56,36 +56,36 @@ msgstr ""
 "მოგვიანებით სცადეთ. თუ ეს კიდევ მოხდა, მისწერეთ თქვენი დისტრიბუტივის "
 "მწარმოებელს."
 
-#: qml/CommandOutputKCM.qml:88
+#: qml/CommandOutputKCM.qml:86
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
 msgstr "ტექსტი, რომელც ფილტრს ემთხვევა, არ არსებობს"
 
-#: qml/CommandOutputKCM.qml:93
+#: qml/CommandOutputKCM.qml:91
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
 msgstr "მონაცემები მიუწვდომელია"
 
-#: qml/CommandOutputKCM.qml:106
+#: qml/CommandOutputKCM.qml:104
 #, kde-format
 msgid "Report this issue"
 msgstr "ამ პრობლემის რეპორტი"
 
-#: qml/CommandOutputKCM.qml:125
+#: qml/CommandOutputKCM.qml:123
 #, kde-format
 msgctxt "@action:button copies all displayed text"
 msgid "Copy to Clipboard"
 msgstr "გაცვლის ბუფერში კოპირება"
 
-#: qml/CommandOutputKCM.qml:135
+#: qml/CommandOutputKCM.qml:133
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
 msgstr "ფილტრი…"
 
-#: qml/CommandOutputKCM.qml:137
+#: qml/CommandOutputKCM.qml:135
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"

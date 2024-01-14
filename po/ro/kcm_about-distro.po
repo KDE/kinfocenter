@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-02 01:42+0000\n"
+"POT-Creation-Date: 2024-01-14 03:08+0000\n"
 "PO-Revision-Date: 2022-12-28 20:56+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -147,43 +147,43 @@ msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ""
 
-#: ui/main.qml:92
+#: ui/main.qml:90
 #, kde-format
 msgctxt "@title"
 msgid "Serial Number"
 msgstr "Număr de serie"
 
-#: ui/main.qml:98
+#: ui/main.qml:96
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
 msgstr ""
 
-#: ui/main.qml:125
+#: ui/main.qml:123
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
 msgstr "Arată"
 
-#: ui/main.qml:137
+#: ui/main.qml:135
 #, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "Programe"
 
-#: ui/main.qml:147
+#: ui/main.qml:145
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "Echipament"
 
-#: ui/main.qml:167
+#: ui/main.qml:165
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "Launch %1"
 msgstr ""
 
-#: ui/main.qml:180 ui/main.qml:188
+#: ui/main.qml:178 ui/main.qml:186
 #, fuzzy, kde-format
 #| msgctxt "EMAIL OF TRANSLATORS"
 #| msgid "Your emails"
@@ -191,13 +191,13 @@ msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "sergiu@cip.md"
 
-#: ui/main.qml:191
+#: ui/main.qml:189
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr ""
 
-#: ui/main.qml:197
+#: ui/main.qml:195
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
