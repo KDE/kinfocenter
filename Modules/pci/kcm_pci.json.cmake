@@ -19,6 +19,7 @@
         "Description[fr]": "Informations concernant l'interface PCI",
         "Description[gl]": "Información de PCI.",
         "Description[he]": "פרטי התקני PCI",
+        "Description[hu]": "PCI-információk",
         "Description[ia]": "Information de PCI",
         "Description[id]": "Informasi PCI",
         "Description[is]": "Upplýsingar um PCI-braut",
