@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kcmdevinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-10 01:35+0000\n"
-"PO-Revision-Date: 2021-08-21 16:34+0300\n"
+"PO-Revision-Date: 2024-01-16 01:26+0200\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: devicelisting.cpp:36
 #, kde-format
@@ -333,7 +333,7 @@ msgstr "Palaikomos tvarkyklės: "
 #: soldevicetypes.cpp:262 soldevicetypes.cpp:301
 #, kde-format
 msgid "Supported Protocols: "
-msgstr "Palaikomi protokolai:"
+msgstr "Palaikomi protokolai: "
 
 #: soldevicetypes.cpp:282
 #, kde-format
