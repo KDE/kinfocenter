@@ -1,56 +1,54 @@
 #
 # Tamas Szanto <tszanto@interware.hu>, 2001.
 # Kiszel Kristóf <kiszel.kristof@gmail.com>, 2017.
+# SPDX-FileCopyrightText: 2024 Kristof Kiszel <ulysses@fsf.hu>
 msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.1\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-05 02:14+0000\n"
-"PO-Revision-Date: 2017-02-24 22:18+0100\n"
-"Last-Translator: Kiszel Kristóf <kiszel.kristof@gmail.com>\n"
+"PO-Revision-Date: 2024-01-16 10:55+0100\n"
+"Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 24.01.90\n"
 
 #: classes.i18n:2 usbdevices.cpp:66
 #, kde-format
 msgctxt "USB device class"
 msgid "(Defined at Interface level)"
-msgstr ""
+msgstr "(Interfész szintjén definiálva)"
 
 #: classes.i18n:3 usbdevices.cpp:102
 #, kde-format
 msgctxt "USB device class"
 msgid "Application Specific Interface"
-msgstr ""
+msgstr "Alkalmazásspecifikus interfész"
 
 #: classes.i18n:4 usbdevices.cpp:68
-#, fuzzy, kde-format
-#| msgid "Audio"
+#, kde-format
 msgctxt "USB device class"
 msgid "Audio"
 msgstr "Hang"
 
 #: classes.i18n:5 usbdevices.cpp:84
-#, fuzzy, kde-format
-#| msgid "Data"
+#, kde-format
 msgctxt "USB device class"
 msgid "CDC Data"
-msgstr "Adat"
+msgstr "CDC adat"
 
 #: classes.i18n:6 usbdevices.cpp:86
 #, kde-format
 msgctxt "USB device class"
 msgid "Chip/SmartCard"
-msgstr ""
+msgstr "Chip/Intelligens kártya"
 
 #: classes.i18n:7 usbdevices.cpp:70
-#, fuzzy, kde-format
-#| msgid "Communications"
+#, kde-format
 msgctxt "USB device class"
 msgid "Communications"
 msgstr "Kommunikáció"
@@ -59,64 +57,58 @@ msgstr "Kommunikáció"
 #, kde-format
 msgctxt "USB device class"
 msgid "Content Security"
-msgstr ""
+msgstr "Tartalombiztonság"
 
 #: classes.i18n:9 usbdevices.cpp:94
 #, kde-format
 msgctxt "USB device class"
 msgid "Diagnostic"
-msgstr ""
+msgstr "Diagnosztika"
 
 #: classes.i18n:10 usbdevices.cpp:82
-#, fuzzy, kde-format
-#| msgid "Hub"
+#, kde-format
 msgctxt "USB device class"
 msgid "Hub"
 msgstr "Hub"
 
 #: classes.i18n:11 usbdevices.cpp:72
-#, fuzzy, kde-format
-#| msgid "Human Interface Devices"
+#, kde-format
 msgctxt "USB device class"
 msgid "Human Interface Device"
-msgstr "Emberi reakcióra épülő eszközök (Human Interface)"
+msgstr "Külső kezelőeszköz"
 
 #: classes.i18n:12 usbdevices.cpp:78
 #, kde-format
 msgctxt "USB device class"
 msgid "Imaging"
-msgstr ""
+msgstr "Képkezelés"
 
 #: classes.i18n:13 usbdevices.cpp:80
-#, fuzzy, kde-format
-#| msgid "Mass Storage"
+#, kde-format
 msgctxt "USB device class"
 msgid "Mass Storage"
-msgstr "Háttértároló"
+msgstr "Tömegtár"
 
 #: classes.i18n:14 usbdevices.cpp:99
 #, kde-format
 msgctxt "USB device class"
 msgid "Miscellaneous Device"
-msgstr ""
+msgstr "Egyéb eszköz"
 
 #: classes.i18n:15 usbdevices.cpp:74
-#, fuzzy, kde-format
-#| msgid "Human Interface Devices"
+#, kde-format
 msgctxt "USB device class"
 msgid "Physical Interface Device"
-msgstr "Emberi reakcióra épülő eszközök (Human Interface)"
+msgstr "Fizikai kezelőeszköz"
 
 #: classes.i18n:16 usbdevices.cpp:76
-#, fuzzy, kde-format
-#| msgid "Printer"
+#, kde-format
 msgctxt "USB device class"
 msgid "Printer"
 msgstr "Nyomtató"
 
 #: classes.i18n:17 usbdevices.cpp:104
-#, fuzzy, kde-format
-#| msgid "Vendor Specific Class"
+#, kde-format
 msgctxt "USB device class"
 msgid "Vendor Specific Class"
 msgstr "Gyártóspecifikus osztály"
@@ -125,151 +117,136 @@ msgstr "Gyártóspecifikus osztály"
 #, kde-format
 msgctxt "USB device class"
 msgid "Video"
-msgstr ""
+msgstr "Videó"
 
 #: classes.i18n:19 usbdevices.cpp:96
 #, kde-format
 msgctxt "USB device class"
 msgid "Wireless"
-msgstr ""
+msgstr "Vezeték nélküli"
 
 #: classes.i18n:20
 #, kde-format
 msgctxt "USB device class"
 msgid "Xbox"
-msgstr ""
+msgstr "Xbox"
 
 #: classes.i18n:21
 #, kde-format
 msgctxt "USB device subclass"
 msgid "?"
-msgstr ""
+msgstr "?"
 
 #: classes.i18n:22
-#, fuzzy, kde-format
-#| msgid "ATM Networking"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "ATM Networking"
 msgstr "ATM-hálózat"
 
 #: classes.i18n:23
-#, fuzzy, kde-format
-#| msgid "Abstract (modem)"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Abstract (modem)"
 msgstr "Absztrakt (modem)"
 
 #: classes.i18n:24
-#, fuzzy, kde-format
-#| msgid "Boot Interface Subclass"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Boot Interface Subclass"
 msgstr "A rendszerindítási felületek alosztálya"
 
 #: classes.i18n:25
-#, fuzzy, kde-format
-#| msgid "CAPI Control"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "CAPI Control"
 msgstr "CAPI-vezérlés"
 
 #: classes.i18n:26
-#, fuzzy, kde-format
-#| msgid "Control Device"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Control Device"
 msgstr "Vezérlőeszköz"
 
 #: classes.i18n:27
-#, fuzzy, kde-format
-#| msgid "Control/Bulk"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Controller"
-msgstr "Vezérlő/nyers adat"
+msgstr "Vezérlő"
 
 #: classes.i18n:28
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Device Firmware Update"
-msgstr ""
+msgstr "Eszköz belső vezérlőprogram frissítése"
 
 #: classes.i18n:29
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Device Management"
-msgstr ""
+msgstr "Eszközkezelés"
 
 #: classes.i18n:30
-#, fuzzy, kde-format
-#| msgid "Direct Line"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Direct Line"
 msgstr "Közvetlen vonal"
 
 #: classes.i18n:31
-#, fuzzy, kde-format
-#| msgid "Ethernet Networking"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Ethernet Emulation"
-msgstr "Ethernet-hálózat"
+msgstr "Ethernet-emuláció"
 
 #: classes.i18n:32
-#, fuzzy, kde-format
-#| msgid "Ethernet Networking"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Ethernet Networking"
 msgstr "Ethernet-hálózat"
 
 #: classes.i18n:33
-#, fuzzy, kde-format
-#| msgid "Floppy"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Floppy (UFI)"
-msgstr "Floppy"
+msgstr "Floppy (UFI)"
 
 #: classes.i18n:34
 #, kde-format
 msgctxt "USB device subclass"
 msgid "IRDA Bridge"
-msgstr ""
+msgstr "IRDA-híd"
 
 #: classes.i18n:35
-#, fuzzy, kde-format
-#| msgid "Streaming"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "MIDI Streaming"
-msgstr "Adatfolyam"
+msgstr "MIDI-adatfolyam"
 
 #: classes.i18n:36
-#, fuzzy, kde-format
-#| msgid "Direct Line"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Mobile Direct Line"
-msgstr "Közvetlen vonal"
+msgstr "Mobil közvetlen vonal"
 
 #: classes.i18n:37
-#, fuzzy, kde-format
-#| msgid "Multi-Channel"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Multi-Channel"
 msgstr "Többcsatornás"
 
 #: classes.i18n:38
-#, fuzzy, kde-format
-#| msgid "No Subclass"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "No Subclass"
-msgstr "(nincs alosztály)"
+msgstr "Nincs alosztály"
 
 #: classes.i18n:39
 #, kde-format
 msgctxt "USB device subclass"
 msgid "OBEX"
-msgstr ""
+msgstr "OBEX"
 
 #: classes.i18n:40
-#, fuzzy, kde-format
-#| msgid "Printer"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Printer"
 msgstr "Nyomtató"
@@ -278,29 +255,28 @@ msgstr "Nyomtató"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "QIC-157"
-msgstr ""
+msgstr "QIC-157"
 
 #: classes.i18n:42
 #, kde-format
 msgctxt "USB device subclass"
 msgid "RBC (typically Flash)"
-msgstr ""
+msgstr "RBC (általában flash)"
 
 #: classes.i18n:43
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Radio Frequency"
-msgstr ""
+msgstr "Rádiófrekvenciás"
 
 #: classes.i18n:44
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Reprogrammable Diagnostics"
-msgstr ""
+msgstr "Újraprogramozható diagnosztika"
 
 #: classes.i18n:45
-#, fuzzy, kde-format
-#| msgid "SCSI"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "SCSI"
 msgstr "SCSI"
@@ -309,30 +285,28 @@ msgstr "SCSI"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "SFF-8020i, MMC-2 (ATAPI)"
-msgstr ""
+msgstr "SFF-8020i, MMC-2 (ATAPI)"
 
 #: classes.i18n:47
 #, kde-format
 msgctxt "USB device subclass"
 msgid "SFF-8070i"
-msgstr ""
+msgstr "SFF-8070i"
 
 #: classes.i18n:48
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Still Image Capture"
-msgstr ""
+msgstr "Fényképező"
 
 #: classes.i18n:49
-#, fuzzy, kde-format
-#| msgid "Streaming"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Streaming"
 msgstr "Adatfolyam"
 
 #: classes.i18n:50
-#, fuzzy, kde-format
-#| msgid "Telephone"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Telephone"
 msgstr "Telefon"
@@ -341,64 +315,61 @@ msgstr "Telefon"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Test and Measurement"
-msgstr ""
+msgstr "Vizsgálat és mérés"
 
 #: classes.i18n:52
 #, kde-format
 msgctxt "USB device subclass"
 msgid "USB3 Vision"
-msgstr ""
+msgstr "USB3 Vision"
 
 #: classes.i18n:53
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Undefined"
-msgstr ""
+msgstr "Nem definiált"
 
 #: classes.i18n:54
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Unused"
-msgstr ""
+msgstr "Nem használt"
 
 #: classes.i18n:55
-#, fuzzy, kde-format
-#| msgid "Vendor Specific Subclass"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Vendor Specific Subclass"
 msgstr "Gyártóspecifikus alosztály"
 
 #: classes.i18n:56
-#, fuzzy, kde-format
-#| msgid "CAPI Control"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Video Control"
-msgstr "CAPI-vezérlés"
+msgstr "Videóvezérlő"
 
 #: classes.i18n:57
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Video Interface Collection"
-msgstr ""
+msgstr "Videóinterfész-gyűjtemény"
 
 #: classes.i18n:58
-#, fuzzy, kde-format
-#| msgid "Non Streaming"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Video Streaming"
-msgstr "Nem adatfolyamra épülő"
+msgstr "Videóközvetítés"
 
 #: classes.i18n:59
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Wireless Handset Control"
-msgstr ""
+msgstr "Vezeték nélküli kézi vezérlő"
 
 #: classes.i18n:60
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Wireless USB Wire Adapter"
-msgstr ""
+msgstr "Vezeték nélküli USB-vezetékes adapter"
 
 #: kcmusb.cpp:35
 #, kde-format
@@ -409,7 +380,7 @@ msgstr "Eszköz"
 #, kde-format
 msgctxt "USB device class"
 msgid "Personal Healthcare"
-msgstr ""
+msgstr "Személyes egészségügy"
 
 #: usbdevices.cpp:215
 #, kde-format
