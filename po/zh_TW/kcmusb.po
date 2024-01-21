@@ -7,13 +7,13 @@
 # Jeff Huang <s8321414@gmail.com>, 2016.
 # Franklin Weng <franklin at goodhorse dot idv dot tw>, 2007.
 # Frank Weng (a.k.a. Franklin) <franklin at goodhorse dot idv dot tw>, 2008.
-# SPDX-FileCopyrightText: 2022, 2023 Kisaragi Hiu <mail@kisaragi-hiu.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-05 02:14+0000\n"
-"PO-Revision-Date: 2023-12-27 17:54+0900\n"
+"PO-Revision-Date: 2024-01-21 01:11+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -200,15 +200,13 @@ msgid "Direct Line"
 msgstr "連接線"
 
 #: classes.i18n:31
-#, fuzzy, kde-format
-#| msgid "Ethernet Networking"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Ethernet Emulation"
 msgstr "乙太網路模擬"
 
 #: classes.i18n:32
-#, fuzzy, kde-format
-#| msgid "Ethernet Networking"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Ethernet Networking"
 msgstr "乙太網路連線"
@@ -239,8 +237,7 @@ msgid "Mobile Direct Line"
 msgstr "連接線"
 
 #: classes.i18n:37
-#, fuzzy, kde-format
-#| msgid "Multi-Channel"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Multi-Channel"
 msgstr "多頻道"
@@ -309,7 +306,7 @@ msgstr "SFF-8070i"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Still Image Capture"
-msgstr ""
+msgstr "靜態影像擷取"
 
 #: classes.i18n:49
 #, kde-format
@@ -327,7 +324,7 @@ msgstr "電話"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Test and Measurement"
-msgstr ""
+msgstr "測試與測量"
 
 #: classes.i18n:52
 #, kde-format
@@ -375,13 +372,13 @@ msgstr "影像串流"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Wireless Handset Control"
-msgstr ""
+msgstr "無線電話控制"
 
 #: classes.i18n:60
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Wireless USB Wire Adapter"
-msgstr ""
+msgstr "無線 USB 線路配接器"
 
 #: kcmusb.cpp:35
 #, kde-format
@@ -397,7 +394,7 @@ msgstr "個人健康管理"
 #: usbdevices.cpp:215
 #, kde-format
 msgid "Unknown"
-msgstr "不知名的"
+msgstr "未知"
 
 #: usbdevices.cpp:225
 #, kde-format
@@ -412,12 +409,12 @@ msgstr "<b>序號#:</b>"
 #: usbdevices.cpp:240
 #, kde-format
 msgid "<tr><td><i>Class</i></td>%1</tr>"
-msgstr "<tr><td><i>等級</i></td>%1</tr>"
+msgstr "<tr><td><i>裝置類別</i></td>%1</tr>"
 
 #: usbdevices.cpp:245
 #, kde-format
 msgid "<tr><td><i>Subclass</i></td>%1</tr>"
-msgstr "<tr><td><i>次等級</i></td>%1</tr>"
+msgstr "<tr><td><i>子類別</i></td>%1</tr>"
 
 #: usbdevices.cpp:250
 #, kde-format
@@ -447,12 +444,12 @@ msgstr "<tr><td><i>速度</i></td><td>%1 Mbit/s</td></tr>"
 #: usbdevices.cpp:267
 #, kde-format
 msgid "<tr><td><i>Channels</i></td><td>%1</td></tr>"
-msgstr "<tr><td><i>Channels</i></td><td>%1</td></tr>"
+msgstr "<tr><td><i>頻道</i></td><td>%1</td></tr>"
 
 #: usbdevices.cpp:268
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
-msgstr "<tr><td><i>封包長度上限</i></td><td>%1</td></tr>"
+msgstr "<tr><td><i>封包大小上限</i></td><td>%1</td></tr>"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
