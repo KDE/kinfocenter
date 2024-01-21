@@ -3,6 +3,7 @@
     "KPlugin": {
         "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
         "Description": "Block Devices",
+        "Description[ar]": "أجهزة كتلية",
         "Description[bg]": "Блокови устройства",
         "Description[ca@valencia]": "Dispositius de blocs",
         "Description[ca]": "Dispositius de blocs",
@@ -18,8 +19,10 @@
         "Description[tr]": "Blok Aygıtlar",
         "Description[uk]": "Блокові пристрої",
         "Description[x-test]": "xxBlock Devicesxx",
+        "Description[zh_TW]": "區塊裝置",
         "Icon": "drive-multidisk",
         "Name": "Block Devices",
+        "Name[ar]": "أجهزة كتلية",
         "Name[bg]": "Блокови устройства",
         "Name[ca@valencia]": "Dispositius de blocs",
         "Name[ca]": "Dispositius de blocs",
@@ -34,7 +37,8 @@
         "Name[sl]": "Bločne naprave",
         "Name[tr]": "Blok Aygıtlar",
         "Name[uk]": "Блокові пристрої",
-        "Name[x-test]": "xxBlock Devicesxx"
+        "Name[x-test]": "xxBlock Devicesxx",
+        "Name[zh_TW]": "區塊裝置"
     },
     "TryExec": "lsblk",
     "X-KDE-KInfoCenter-Category": "device_information",
