@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Safa Alfulaij <safa1996alfulaij@gmail.com>, 2015, 2015.
-# Zayed Al-Saidi <zayed.alsaidi@gmail.com>, 2021, 2022, 2023.
+# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-13 00:39+0000\n"
-"PO-Revision-Date: 2023-06-15 09:45+0400\n"
+"PO-Revision-Date: 2024-01-20 18:28+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.1\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -188,25 +188,19 @@ msgid "Launch %1"
 msgstr "شغّل %1"
 
 #: ui/main.qml:178 ui/main.qml:186
-#, fuzzy, kde-format
-#| msgctxt "EMAIL OF TRANSLATORS"
-#| msgid "Your emails"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
-msgstr "zayed.alsaidi@gmail.com,safaalfulaij@hotmail.com"
+msgstr "انسخ التفاصيل"
 
 #: ui/main.qml:189
-#, fuzzy, kde-format
-#| msgctxt "@action:button Copy..."
-#| msgid "In current language"
+#, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "باللغة الحالية"
 
 #: ui/main.qml:195
-#, fuzzy, kde-format
-#| msgctxt "@action:button Copy..."
-#| msgid "In English"
+#, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
 msgstr "بالإنجليزيّة"
