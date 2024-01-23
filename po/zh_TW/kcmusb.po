@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-05 02:14+0000\n"
-"PO-Revision-Date: 2024-01-21 01:11+0900\n"
+"PO-Revision-Date: 2024-01-22 16:52+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -330,7 +330,7 @@ msgstr "測試與測量"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "USB3 Vision"
-msgstr ""
+msgstr "USB3 視覺"
 
 #: classes.i18n:53
 #, kde-format
