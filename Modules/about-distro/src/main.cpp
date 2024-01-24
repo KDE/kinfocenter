@@ -138,6 +138,9 @@ public:
 
         if (m_dumpToStdout) {
             std::wcout << clipboardText(Entry::Language::English).toStdWString();
+            // No more output thank you very much. This for example prevents warnings coming out of libwayland.
+            fclose(stderr);
+            fclose(stdout);
             QMetaObject::invokeMethod(qApp, &QCoreApplication::quit, Qt::QueuedConnection);
             return;
         }
