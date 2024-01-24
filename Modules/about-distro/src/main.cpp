@@ -13,6 +13,7 @@
 #include <QIcon>
 #include <QLocale>
 #include <QLoggingCategory>
+#include <QWindow>
 
 #include <KAuth/Action>
 #include <KAuth/ExecuteJob>
@@ -102,6 +103,12 @@ public:
         , m_dumpToStdout(args.contains(QStringLiteral("dump")))
     {
         if (m_dumpToStdout) {
+            const auto windows = qGuiApp->allWindows();
+            for (const auto &window : windows) {
+                // Don't steal focus when running in wayland or xcb platform mode. Bit of a hack but the best we can do
+                // since we can't move the window off-screen on wayland.
+                window->setVisibility(QWindow::Minimized);
+            }
             QLoggingCategory::setFilterRules(QStringLiteral("*=false"));
         }
 
