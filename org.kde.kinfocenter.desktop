@@ -3,7 +3,7 @@ Exec=kinfocenter
 Icon=hwinfo
 Type=Application
 X-DocPath=kinfocenter/index.html
-X-KDE-StartupNotify=true
+StartupNotify=true
 OnlyShowIn=KDE;
 
 Name=Info Center
