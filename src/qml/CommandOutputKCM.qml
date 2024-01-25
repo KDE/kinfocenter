@@ -83,12 +83,12 @@ KCM.SimpleKCM {
 
                 text: {
                     if (output.filter !== "") {
-                        return i18nc("@info", "No text matching the filter")
+                        return i18ndc("kinfocenter", "@info", "No text matching the filter")
                     }
                     if (output.error !== "") {
                         return output.error
                     }
-                    return i18nc("@info the KCM has no data to display", "No data available")
+                    return i18ndc("kinfocenter", "@info the KCM has no data to display", "No data available")
                 }
                 explanation: {
                     if (errorNotFilter && output.explanation !== "") {
@@ -120,7 +120,7 @@ KCM.SimpleKCM {
     actions: [
         Kirigami.Action {
             icon.name: "edit-copy"
-            text: i18nc("@action:button copies all displayed text", "Copy to Clipboard")
+            text: i18ndc("kinfocenter", "@action:button copies all displayed text", "Copy to Clipboard")
             onTriggered: clipboard.content = output.text
         },
         Kirigami.Action {
@@ -130,9 +130,9 @@ KCM.SimpleKCM {
                     return isVisibleState && root.textFormat === TextEdit.PlainText
                 }
 
-                placeholderText: i18nc("@label placeholder text to filter for something", "Filter…")
+                placeholderText: i18ndc("kinfocenter", "@label placeholder text to filter for something", "Filter…")
 
-                Accessible.name: i18nc("accessible name for filter input", "Filter")
+                Accessible.name: i18ndc("kinfocenter", "accessible name for filter input", "Filter")
                 Accessible.searchEdit: true
 
                 focusSequence: "Ctrl+I"
