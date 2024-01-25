@@ -131,7 +131,7 @@ KCM.SimpleKCM {
                 }
             }
 
-            Kirigami.Separator {
+            Item {
                 Kirigami.FormData.label: i18nc("@title:group", "Software")
                 Kirigami.FormData.isSection: true
             }
@@ -141,7 +141,7 @@ KCM.SimpleKCM {
                 delegate: entryComponent
             }
 
-            Kirigami.Separator {
+            Item {
                 Kirigami.FormData.label: i18nc("@title:group", "Hardware")
                 Kirigami.FormData.isSection: true
             }
