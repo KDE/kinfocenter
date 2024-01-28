@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: trunk-kf 5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-14 01:36+0000\n"
-"PO-Revision-Date: 2021-08-21 16:39+0300\n"
+"PO-Revision-Date: 2024-01-27 17:41+0200\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: ui/main.qml:45
 #, kde-format
@@ -223,97 +223,82 @@ msgid "No energy information available on this system"
 msgstr "Šioje sistemoje nėra prieinamos informacijos apie energiją"
 
 #: ui/main.qml:182
-#, fuzzy, kde-format
-#| msgid "PDA battery"
+#, kde-format
 msgid "PDA Battery"
 msgstr "Delninuko akumuliatorius"
 
 #: ui/main.qml:183
-#, fuzzy, kde-format
-#| msgid "UPS battery"
+#, kde-format
 msgid "UPS Battery"
 msgstr "NMŠ akumuliatorius"
 
 #: ui/main.qml:184
-#, fuzzy, kde-format
-#| msgid "Internal battery"
+#, kde-format
 msgid "Internal Battery"
 msgstr "Vidinis akumuliatorius"
 
 #: ui/main.qml:185
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
+#, kde-format
 msgid "Mouse Battery"
 msgstr "Pelės akumuliatorius"
 
 #: ui/main.qml:186
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Keyboard Battery"
 msgstr "Klaviatūros akumuliatorius"
 
 #: ui/main.qml:187
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Keyboard/Mouse Battery"
-msgstr "Klaviatūros akumuliatorius"
+msgstr "Klaviatūros/pelės akumuliatorius"
 
 #: ui/main.qml:188
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Camera Battery"
-msgstr "Akumuliatorius"
+msgstr "Kameros akumuliatorius"
 
 #: ui/main.qml:189
-#, fuzzy, kde-format
-#| msgid "Phone battery"
+#, kde-format
 msgid "Phone Battery"
 msgstr "Telefono akumuliatorius"
 
 #: ui/main.qml:190
-#, fuzzy, kde-format
-#| msgid "Monitor battery"
+#, kde-format
 msgid "Monitor Battery"
 msgstr "Monitoriaus akumuliatorius"
 
 #: ui/main.qml:191
 #, kde-format
 msgid "Gaming Input Battery"
-msgstr ""
+msgstr "Žaidimų įvedimo akumuliatorius"
 
 #: ui/main.qml:192
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
+#, kde-format
 msgid "Bluetooth Battery"
-msgstr "Pelės akumuliatorius"
+msgstr "Bluetooth akumuliatorius"
 
 #: ui/main.qml:193
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Tablet Battery"
-msgstr "Akumuliatorius"
+msgstr "Planšetės akumuliatorius"
 
 #: ui/main.qml:194
-#, fuzzy, kde-format
-#| msgid "Phone battery"
+#, kde-format
 msgid "Headphone Battery"
-msgstr "Telefono akumuliatorius"
+msgstr "Ausinių akumuliatorius"
 
 #: ui/main.qml:195
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Headset Battery"
-msgstr "Klaviatūros akumuliatorius"
+msgstr "Ausinių su mikrofonu akumuliatorius"
 
 #: ui/main.qml:196
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Touchpad Battery"
-msgstr "Klaviatūros akumuliatorius"
+msgstr "Jutiklinio kilimėlio akumuliatorius"
 
 #: ui/main.qml:197
-#, fuzzy, kde-format
-#| msgid "Unknown battery"
+#, kde-format
 msgid "Unknown Battery"
 msgstr "Nežinomas akumuliatorius"
 
@@ -387,9 +372,7 @@ msgid "No"
 msgstr "Ne"
 
 #: ui/main.qml:436
-#, fuzzy, kde-format
-#| msgctxt "Battery charge percentage"
-#| msgid "%1%"
+#, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1%"
