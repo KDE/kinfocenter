@@ -8,7 +8,7 @@
 #include <KPluginFactory>
 #include <KQuickConfigModule>
 
-#include <CommandOutputContext.h>
+#include "CommandOutputContext.h"
 
 class KCMOpenCL : public KQuickConfigModule
 {

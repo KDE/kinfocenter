@@ -7,7 +7,7 @@
 #include <KQuickConfigModule>
 #include <QStandardPaths>
 
-#include <CommandOutputContext.h>
+#include "CommandOutputContext.h"
 
 class KCMFirmwareSecurity : public KQuickConfigModule
 {

@@ -8,7 +8,7 @@
 #include <KQuickConfigModule>
 #include <QLibraryInfo>
 
-#include <CommandOutputContext.h>
+#include "CommandOutputContext.h"
 
 class KCMKWinSupportInfo : public KQuickConfigModule
 {

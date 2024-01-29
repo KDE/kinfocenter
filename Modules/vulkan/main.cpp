@@ -6,7 +6,7 @@
 #include <KPluginFactory>
 #include <KQuickConfigModule>
 
-#include <CommandOutputContext.h>
+#include "CommandOutputContext.h"
 
 class KCMVulkan : public KQuickConfigModule
 {

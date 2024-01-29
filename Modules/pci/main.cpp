@@ -7,7 +7,7 @@
 #include <KPluginFactory>
 #include <KQuickConfigModule>
 
-#include <CommandOutputContext.h>
+#include "CommandOutputContext.h"
 
 #include "backend.h"
 

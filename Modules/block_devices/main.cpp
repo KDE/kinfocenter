@@ -6,7 +6,7 @@
 #include <KPluginFactory>
 #include <KQuickConfigModule>
 
-#include <CommandOutputContext.h>
+#include "CommandOutputContext.h"
 
 using namespace Qt::StringLiterals;
 
