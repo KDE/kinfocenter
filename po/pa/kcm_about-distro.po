@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-13 00:39+0000\n"
+"POT-Creation-Date: 2024-01-31 00:38+0000\n"
 "PO-Revision-Date: 2024-01-28 14:54-0600\n"
 "Last-Translator: A S Alam <aalam@punlinux.org>\n"
 "Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
@@ -52,48 +52,48 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1 (%2-ਬਿੱਟ)"
 
-#: main.cpp:187
+#: main.cpp:197
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr "ਨਿਰਮਾਤਾ:"
 
-#: main.cpp:190 main.cpp:207
+#: main.cpp:200 main.cpp:217
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr "ਪਰੋਡੱਕਟ ਦਾ ਨਾਂ:"
 
-#: main.cpp:193
+#: main.cpp:203
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
 msgstr "ਸਿਸਟਮ ਵਰਜ਼ਨ:"
 
-#: main.cpp:196 main.cpp:210
+#: main.cpp:206 main.cpp:220
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr "ਸੀਰੀਅਲ ਨੰਬਰ:"
 
-#: main.cpp:200 main.cpp:217
+#: main.cpp:210 main.cpp:227
 #, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "ਅਣਪਛਾਤਾ:"
 
-#: main.cpp:213
+#: main.cpp:223
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "ਯੂ-ਬੂਟ ਵਰਜ਼ਨ:"
 
-#: main.cpp:251
+#: main.cpp:261
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "KDE ਫਰੇਮਵਰਕਸ ਵਰਜ਼ਨ:"
 
-#: main.cpp:252
+#: main.cpp:262
 #, kde-format
 msgid "Qt Version:"
 msgstr "Qt ਵਰਜ਼ਨ:"

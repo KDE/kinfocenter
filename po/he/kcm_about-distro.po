@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-13 00:39+0000\n"
+"POT-Creation-Date: 2024-01-31 00:38+0000\n"
 "PO-Revision-Date: 2023-10-22 14:55+0300\n"
 "Last-Translator: Elkana Bardugo <ttv200@gmail.com>\n"
 "Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
@@ -56,48 +56,48 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1 (%2 סיביות)"
 
-#: main.cpp:187
+#: main.cpp:197
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr "יצרן:"
 
-#: main.cpp:190 main.cpp:207
+#: main.cpp:200 main.cpp:217
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr "שם המוצר:"
 
-#: main.cpp:193
+#: main.cpp:203
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
 msgstr "גרסת המערכת:"
 
-#: main.cpp:196 main.cpp:210
+#: main.cpp:206 main.cpp:220
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr "מספר סידורי:"
 
-#: main.cpp:200 main.cpp:217
+#: main.cpp:210 main.cpp:227
 #, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "לא ידוע:"
 
-#: main.cpp:213
+#: main.cpp:223
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "גרסת U-Boot:"
 
-#: main.cpp:251
+#: main.cpp:261
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "גרסת KDE Frameworks:"
 
-#: main.cpp:252
+#: main.cpp:262
 #, kde-format
 msgid "Qt Version:"
 msgstr "גרסת Qt:"
