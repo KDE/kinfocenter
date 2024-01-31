@@ -1,7 +1,7 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2015, 2016.
-# Tommi Nieminen <translator@legisign.org>, 2019, 2021, 2023.
+# Tommi Nieminen <translator@legisign.org>, 2019, 2021, 2023, 2024.
 #
 #
 #
@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-14 01:36+0000\n"
-"PO-Revision-Date: 2023-09-26 10:49+0300\n"
+"PO-Revision-Date: 2024-01-22 16:16+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -23,7 +23,7 @@ msgstr ""
 #: ui/main.qml:45
 #, kde-format
 msgid "Battery"
-msgstr "Akku"
+msgstr "Akku tai paristo"
 
 #: ui/main.qml:47
 #, kde-format
@@ -223,100 +223,85 @@ msgid "No energy information available on this system"
 msgstr "Tälle järjestelmälle ei ole saatavilla virrankulutustietoa"
 
 #: ui/main.qml:182
-#, fuzzy, kde-format
-#| msgid "PDA battery"
+#, kde-format
 msgid "PDA Battery"
 msgstr "PDA-akku"
 
 #: ui/main.qml:183
-#, fuzzy, kde-format
-#| msgid "UPS battery"
+#, kde-format
 msgid "UPS Battery"
 msgstr "UPS-akku"
 
 #: ui/main.qml:184
-#, fuzzy, kde-format
-#| msgid "Internal battery"
+#, kde-format
 msgid "Internal Battery"
 msgstr "Sisäinen akku"
 
 #: ui/main.qml:185
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
+#, kde-format
 msgid "Mouse Battery"
-msgstr "Hiiren akku"
+msgstr "Hiiren paristo"
 
 #: ui/main.qml:186
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Keyboard Battery"
-msgstr "Näppäimistön akku"
+msgstr "Näppäimistön paristo"
 
 #: ui/main.qml:187
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Keyboard/Mouse Battery"
-msgstr "Näppäimistön akku"
+msgstr "Näppäimistön tai hiiren paristo"
 
 #: ui/main.qml:188
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Camera Battery"
-msgstr "Akku"
+msgstr "Kameran akku"
 
 #: ui/main.qml:189
-#, fuzzy, kde-format
-#| msgid "Phone battery"
+#, kde-format
 msgid "Phone Battery"
 msgstr "Puhelimen akku"
 
 # *** TARKISTA: Vai ”valvo akkua” tms.?
 #: ui/main.qml:190
-#, fuzzy, kde-format
-#| msgid "Monitor battery"
+#, kde-format
 msgid "Monitor Battery"
 msgstr "Näytön akku"
 
 #: ui/main.qml:191
 #, kde-format
 msgid "Gaming Input Battery"
-msgstr ""
+msgstr "Peliohjaimen paristo"
 
 #: ui/main.qml:192
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
+#, kde-format
 msgid "Bluetooth Battery"
-msgstr "Hiiren akku"
+msgstr "Bluetooth-akku"
 
 #: ui/main.qml:193
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Tablet Battery"
-msgstr "Akku"
+msgstr "Tabletin akku"
 
 #: ui/main.qml:194
-#, fuzzy, kde-format
-#| msgid "Phone battery"
+#, kde-format
 msgid "Headphone Battery"
-msgstr "Puhelimen akku"
+msgstr "Kuulokkeiden paristo"
 
 #: ui/main.qml:195
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Headset Battery"
-msgstr "Näppäimistön akku"
+msgstr "Kuulokemikrofonin paristo"
 
 #: ui/main.qml:196
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Touchpad Battery"
-msgstr "Näppäimistön akku"
+msgstr "Kosketuslaitteen paristo"
 
 #: ui/main.qml:197
-#, fuzzy, kde-format
-#| msgid "Unknown battery"
+#, kde-format
 msgid "Unknown Battery"
-msgstr "Tuntematon akku"
+msgstr "Tuntematon akku tai paristo"
 
 #: ui/main.qml:225
 #, kde-format
