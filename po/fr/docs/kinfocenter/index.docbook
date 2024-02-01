@@ -415,7 +415,7 @@
 >Processeurs :</guisubmenu
 >ce sont les processeurs de votre ordinateur, nommés aussi <acronym
 >CPU</acronym
-> ( Central Processing Units ).</para
+> (Central Processing Unit).</para
 ></listitem>
 <listitem
 ><para
@@ -730,7 +730,7 @@
 >PCI</acronym
 > et les cartes <acronym
 >PCI</acronym
-> installées, ainsi que les autres périphériques qui utilisent le bus Peripheral Component Interconnect (<acronym
+> installées, ainsi que les autres périphériques qui utilisent le bus « Peripheral Component Interconnect » (<acronym
 >PCI</acronym
 >).</para>
 
@@ -792,7 +792,7 @@
 >smbstatus</command
 > et <command
 >showmount</command
->. Le programme « Smbstatus » vous informe sur les connexions &Samba; courantes. Il fait partie de la suite des outils &Samba; constituant le protocole &SMB; (Server Message Block), appelé aussi « NetBIOS » ou « LanManager ».</para>
+>. Le programme « smbstatus » vous informe sur les connexions &Samba; courantes. Il fait partie de la suite des outils &Samba; constituant le protocole &SMB; (Server Message Block), appelé aussi « NetBIOS » ou « LanManager ».</para>
 
 <para
 >Ce protocole peut être utilisé pour fournir des services de partage des imprimantes ou des lecteurs sur un réseau comportant des machines fonctionnant avec différentes versions de &Microsoft; &Windows;.</para>
@@ -989,13 +989,13 @@
 ><para
 >Utilisation de <classname
 >K3Process</classname
-> au lieu de popen et plus de recherche d'erreurs :</para>
+> au lieu de « popen » et plus de recherche d'erreurs :</para>
 <para
 >&David.Faure; &David.Faure.mail;</para
 ></listitem>
 <listitem
 ><para
->Conversion à kcmodule, ajout des onglets pages 2, 3, 4, corrections de bogues : </para>
+>Conversion vers kcmodule, ajout des onglets pages 2, 3, 4, corrections de bogues : </para>
 <para
 >&Alexander.Neundorf; &Alexander.Neundorf.mail;</para
 ></listitem>
@@ -1071,12 +1071,12 @@
 <para
 >Cette page affiche des informations sur une implémentation installée de <acronym
 >OpenGL</acronym
->. OpenGL (Open Graphics Library, Bibliothèque graphique libre) est une interface multiplates-formes pour graphiques 3D indépendante du matériel.</para>
+>. OpenGL (Open Graphics Library, Bibliothèque graphique libre) est une interface multi-plate-formes pour graphiques 3D indépendante du matériel.</para>
 
 <para
 ><acronym
 >GLX</acronym
-> est la liaison pour OpenGL au système X Window</para>
+> est la liaison pour OpenGL au système X-Windows</para>
 
 <para
 ><acronym
