@@ -13,15 +13,22 @@
 class KCMKWinSupportInfo : public KQuickConfigModule
 {
     Q_OBJECT
+    Q_PROPERTY(CommandOutputContext *infoOutputContext READ outputContext CONSTANT FINAL)
 public:
     explicit KCMKWinSupportInfo(QObject *parent, const KPluginMetaData &data)
         : KQuickConfigModule(parent, data)
     {
-        auto outputContext = new CommandOutputContext(QLibraryInfo::location(QLibraryInfo::BinariesPath) + QStringLiteral("/qdbus"),
-                                                      {QStringLiteral("org.kde.KWin"), QStringLiteral("/KWin"), QStringLiteral("supportInformation")},
-                                                      parent);
-        qmlRegisterSingletonInstance("org.kde.kinfocenter.kwinsupportinfo.private", 1, 0, "InfoOutputContext", outputContext);
+        m_outputContext = new CommandOutputContext(QLibraryInfo::location(QLibraryInfo::BinariesPath) + QStringLiteral("/qdbus"),
+                                                   {QStringLiteral("org.kde.KWin"), QStringLiteral("/KWin"), QStringLiteral("supportInformation")},
+                                                   parent);
     }
+    CommandOutputContext *outputContext() const
+    {
+        return m_outputContext;
+    }
+
+private:
+    CommandOutputContext *m_outputContext;
 };
 
 K_PLUGIN_CLASS_WITH_JSON(KCMKWinSupportInfo, "kcm_kwinsupportinfo.json")

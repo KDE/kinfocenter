@@ -11,13 +11,20 @@
 class KCMCPU : public KQuickConfigModule
 {
     Q_OBJECT
+    Q_PROPERTY(CommandOutputContext *infoOutputContext READ outputContext CONSTANT FINAL)
 public:
     explicit KCMCPU(QObject *parent, const KPluginMetaData &data)
         : KQuickConfigModule(parent, data)
     {
-        auto outputContext = new CommandOutputContext(QStringLiteral("lscpu"), {}, parent);
-        qmlRegisterSingletonInstance("org.kde.kinfocenter.cpu.private", 1, 0, "InfoOutputContext", outputContext);
+        m_outputContext = new CommandOutputContext(QStringLiteral("lscpu"), {}, parent);
     }
+    CommandOutputContext *outputContext() const
+    {
+        return m_outputContext;
+    }
+
+private:
+    CommandOutputContext *m_outputContext;
 };
 
 K_PLUGIN_CLASS_WITH_JSON(KCMCPU, "kcm_cpu.json")
