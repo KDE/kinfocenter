@@ -12,6 +12,7 @@
 class KCMFirmwareSecurity : public KQuickConfigModule
 {
     Q_OBJECT
+    Q_PROPERTY(CommandOutputContext *infoOutputContext READ outputContext CONSTANT FINAL)
 public:
     explicit KCMFirmwareSecurity(QObject *parent, const KPluginMetaData &data)
         : KQuickConfigModule(parent, data)
@@ -19,9 +20,15 @@ public:
         const QString executable = QStandardPaths::locate(QStandardPaths::GenericDataLocation,
                                                           QStringLiteral("kinfocenter/firmware_security/fwupdmgr.sh"),
                                                           QStandardPaths::LocateFile);
-        auto outputContext = new CommandOutputContext({QStringLiteral("fwupdmgr"), QStringLiteral("aha")}, QStringLiteral("/bin/sh"), {executable}, parent);
-        qmlRegisterSingletonInstance("org.kde.kinfocenter.firmware_security.private", 1, 0, "InfoOutputContext", outputContext);
+        m_outputContext = new CommandOutputContext({QStringLiteral("fwupdmgr"), QStringLiteral("aha")}, QStringLiteral("/bin/sh"), {executable}, parent);
     }
+    CommandOutputContext *outputContext() const
+    {
+        return m_outputContext;
+    }
+
+private:
+    CommandOutputContext *m_outputContext;
 };
 
 K_PLUGIN_CLASS_WITH_JSON(KCMFirmwareSecurity, "kcm_firmware_security.json")

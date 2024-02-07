@@ -8,9 +8,8 @@ import QtQuick 2.5
 import org.kde.kcmutils as KCM
 
 import org.kde.kinfocenter.private 1.0 as KInfoCenter
-import org.kde.kinfocenter.firmware_security.private 1.0
 
 KInfoCenter.CommandOutputKCM {
-    output: InfoOutputContext
+    output: kcm.infoOutputContext
     textFormat: TextEdit.RichText
 }

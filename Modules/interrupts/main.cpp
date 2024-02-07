@@ -11,19 +11,26 @@
 class KCMInterrupts : public KQuickConfigModule
 {
     Q_OBJECT
+    Q_PROPERTY(CommandOutputContext *infoOutputContext READ outputContext CONSTANT FINAL)
 public:
     explicit KCMInterrupts(QObject *parent, const KPluginMetaData &data)
         : KQuickConfigModule(parent, data)
     {
-        auto outputContext =
+        m_outputContext =
 #if defined(Q_OS_FREEBSD)
             new CommandOutputContext(QStringLiteral("vmstat"), {QStringLiteral("-i")}, parent);
 #else
             new CommandOutputContext(QStringLiteral("cat"), {QStringLiteral("/proc/interrupts")}, parent);
-        outputContext->setTrimAllowed(false);
+        m_outputContext->setTrimAllowed(false);
 #endif
-        qmlRegisterSingletonInstance("org.kde.kinfocenter.interrupts.private", 1, 0, "InfoOutputContext", outputContext);
     }
+    CommandOutputContext *outputContext() const
+    {
+        return m_outputContext;
+    }
+
+private:
+    CommandOutputContext *m_outputContext;
 };
 
 K_PLUGIN_CLASS_WITH_JSON(KCMInterrupts, "kcm_interrupts.json")

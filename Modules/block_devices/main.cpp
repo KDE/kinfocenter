@@ -13,15 +13,22 @@ using namespace Qt::StringLiterals;
 class KCMBlockDevices : public KQuickConfigModule
 {
     Q_OBJECT
+    Q_PROPERTY(CommandOutputContext *infoOutputContext READ outputContext CONSTANT FINAL)
 public:
     explicit KCMBlockDevices(QObject *parent, const KPluginMetaData &data)
         : KQuickConfigModule(parent, data)
     {
         // NOTE: careful when using -o, it tends to incorrectly print multiple mountpoints as a single path
         // (e.g. when different btrfs subvolumes are mounted at various points in the system it ought to enumerate all mountpoints)
-        auto outputContext = new CommandOutputContext(u"lsblk"_s, {}, parent);
-        qmlRegisterSingletonInstance("org.kde.kinfocenter.block_devices.private", 1, 0, "InfoOutputContext", outputContext);
+        m_outputContext = new CommandOutputContext(u"lsblk"_s, {}, parent);
     }
+    CommandOutputContext *outputContext() const
+    {
+        return m_outputContext;
+    }
+
+private:
+    CommandOutputContext *m_outputContext;
 };
 
 K_PLUGIN_CLASS_WITH_JSON(KCMBlockDevices, "kcm_block_devices.json")
