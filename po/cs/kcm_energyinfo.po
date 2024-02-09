@@ -230,10 +230,9 @@ msgid "UPS Battery"
 msgstr "UPS baterie"
 
 #: ui/main.qml:184
-#, fuzzy, kde-format
-#| msgid "Internal battery"
+#, kde-format
 msgid "Internal Battery"
-msgstr "Vnitřní baterie"
+msgstr ""
 
 #: ui/main.qml:185
 #, kde-format
@@ -246,10 +245,9 @@ msgid "Keyboard Battery"
 msgstr "Baterie klávesnice"
 
 #: ui/main.qml:187
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Keyboard/Mouse Battery"
-msgstr "Baterie klávesnice"
+msgstr ""
 
 #: ui/main.qml:188
 #, kde-format
@@ -277,28 +275,24 @@ msgid "Bluetooth Battery"
 msgstr "Baterie Bluetooth"
 
 #: ui/main.qml:193
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Tablet Battery"
-msgstr "Baterie"
+msgstr ""
 
 #: ui/main.qml:194
-#, fuzzy, kde-format
-#| msgid "Phone battery"
+#, kde-format
 msgid "Headphone Battery"
-msgstr "Baterie telefonu"
+msgstr ""
 
 #: ui/main.qml:195
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Headset Battery"
-msgstr "Baterie klávesnice"
+msgstr ""
 
 #: ui/main.qml:196
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Touchpad Battery"
-msgstr "Baterie klávesnice"
+msgstr ""
 
 #: ui/main.qml:197
 #, kde-format
