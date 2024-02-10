@@ -228,7 +228,7 @@
 <para
 >&kinfocenter; yazılımında ortak &kde; <guimenu
 >Yardım</guimenu
-> menü ögeleri vardır; daha fazla bilgi için &kde; Temelleri'nde <ulink url="help:/fundamentals/menus.html#menus-help"
+> menü ögeleri vardır; daha fazla bilgi için &kde; Temelleri’nde <ulink url="help:/fundamentals/menus.html#menus-help"
 >Yardım Menüsü</ulink
 > ile ilgili bölüme bakın. </para>
 
@@ -237,7 +237,7 @@
 </sect1>
 <sect1 id="info-center-exiting">
 <title
->Bilgi Merkezi'nden Çıkış</title>
+>Bilgi Merkezi’nden Çıkış</title>
 
 <para
 >Bilgi merkezinden şu iki yoldan biriyle çıkabilirsiniz: </para>
@@ -844,9 +844,9 @@
 >-a localhost</option
 > komutunun çıktısı ayrıştırılır. Kimi sistemlerde, showmount <filename class="directory"
 >/usr/sbin</filename
-> içindedir; showmount'un <envar
+> içindedir; showmount’un <envar
 >PATH</envar
->'iniz içinde olup olmadığını denetleyin.</para>
+>’iniz içinde olup olmadığını denetleyin.</para>
 
 <sect3 id="smb-exports">
 <title
@@ -908,7 +908,7 @@
 <para
 >&Samba; eylemlerini günlük düzeyine göre günlükler (bkz. <filename
 >smb.conf</filename
->). Günlük düzeyi 1 ise &Samba; yalnızca birisi makinenize bağlandığında ve bu bağlantı kapatıldığında günlüğe yazar. Günlük düzeyi 2 ise birisi bir dosyayı açıp kapadığında da günlüğe yazar. Günlük düzeyi 2'den çoksa bayağı bir şeyler daha günlüğe yazılır.</para>
+>). Günlük düzeyi 1 ise &Samba; yalnızca birisi makinenize bağlandığında ve bu bağlantı kapatıldığında günlüğe yazar. Günlük düzeyi 2 ise birisi bir dosyayı açıp kapadığında da günlüğe yazar. Günlük düzeyi 2’den çoksa bayağı bir şeyler daha günlüğe yazılır.</para>
 
 <para
 >Makinenize kimin eriştiği ve hangi dosyalara erişildiği ile ilgileniyorsanız günlük düzeyini 2 olarak ayarlamalı ve düzenli olarak yeni bir &Samba; günlük dosyası (örn. var olan &Samba; günlük dosyanızı haftada bir başka bir klasöre veya buna benzer bir yere taşıyan bir <command
@@ -973,11 +973,11 @@
 <para
 >Şimdi <guilabel
 >Olay</guilabel
-> alanını Dosya Erişimi'ne ayarlayıp,<guilabel
+> alanını Dosya Erişimi’ne ayarlayıp,<guilabel
 >Genişletilmiş hizmet bilgisini göster</guilabel
->'i etkinleştirin ve <guibutton
+>’i etkinleştirin ve <guibutton
 >Güncelle</guibutton
->'ye bir kez daha basın.</para>
+>’ye bir kez daha basın.</para>
 
 <para
 >Şimdi her dosyaya hangi sıklıkla ulaşıldığını görürsünüz. <guilabel
@@ -1043,7 +1043,7 @@
 >Belgelendirme telif hakkı 2000 &Alexander.Neundorf; &Alexander.Neundorf.mail;</para>
 
 <para
->&Mike.McBride; &Mike.McBride.mail; tarafından docbook'a çevrilmiştir</para>
+>&Mike.McBride; &Mike.McBride.mail; tarafından docbook’a çevrilmiştir</para>
 
 <para
 >Çeviri: Engin ÇAĞATAY <email
@@ -1106,7 +1106,7 @@
 >X Sunucusu Bilgi Modülü</title>
 
 <para
->Bu ekran, X Sunucunuz ve X'in geçerli oturumu hakkında özel bilgiler almak için yararlıdır.</para>
+>Bu ekran, X Sunucunuz ve X’in geçerli oturumu hakkında özel bilgiler almak için yararlıdır.</para>
 
 </sect2>
 
