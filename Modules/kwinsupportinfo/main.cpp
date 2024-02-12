@@ -18,7 +18,7 @@ public:
     explicit KCMKWinSupportInfo(QObject *parent, const KPluginMetaData &data)
         : KQuickConfigModule(parent, data)
     {
-        m_outputContext = new CommandOutputContext(QLibraryInfo::location(QLibraryInfo::BinariesPath) + QStringLiteral("/qdbus"),
+        m_outputContext = new CommandOutputContext(QLibraryInfo::path(QLibraryInfo::BinariesPath) + QStringLiteral("/qdbus"),
                                                    {QStringLiteral("org.kde.KWin"), QStringLiteral("/KWin"), QStringLiteral("supportInformation")},
                                                    parent);
     }
