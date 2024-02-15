@@ -151,25 +151,18 @@ KCM.SimpleKCM {
                 delegate: entryComponent
             }
         }
-
-        Item {
-            visible: !kcm.isThisKInfoCenter && kicRunner.canRun
-            implicitHeight: Kirigami.Units.largeSpacing
-        }
-
-        QQC2.Button {
-            visible: !kcm.isThisKInfoCenter && kicRunner.canRun
-
-            Layout.alignment: Qt.AlignHCenter
-
-            text: i18nc("@action:button launches kinfocenter from systemsettings", "Launch %1", kicRunner.genericName)
-            icon.name: kicRunner.iconName
-            onClicked: kicRunner.run()
-        }
     }
 
 
     actions: [
+        Kirigami.Action {
+            visible: !kcm.isThisKInfoCenter && kicRunner.canRun
+
+            icon.name: kicRunner.iconName
+            text: i18nc("@action:button launches kinfocenter from systemsettings", "More System Information")
+            tooltip: i18nc("@info:tooltip", "Launch %1", kicRunner.genericName)
+            onTriggered: kicRunner.run()
+        },
 
         Kirigami.Action {
             visible: kcm.isEnglish
