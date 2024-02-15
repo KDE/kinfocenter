@@ -3,15 +3,15 @@
 
 #include "helper.h"
 
-#include <array>
 #include <QDebug>
 #include <QProcess>
 #include <QStandardPaths>
+#include <array>
 
 #include <KAuth/HelperSupport>
 
 template<typename Output, typename... Input>
-auto make_array(Input&&... args) -> std::array<Output, sizeof...(args)> // NB: we need suffix notation here so args is defined
+auto make_array(Input &&...args) -> std::array<Output, sizeof...(args)> // NB: we need suffix notation here so args is defined
 {
     return {std::forward<Input>(args)...};
 }
