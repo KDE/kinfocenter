@@ -48,23 +48,23 @@ USBDB::USBDB()
 
             QRegularExpressionMatch match;
             if (line.startsWith('C') && (match = cls.match(line)).hasMatch()) {
-                id = match.capturedView(1).toInt(0, 16);
+                id = match.capturedView(1).toInt(nullptr, 16);
                 const QString name = match.capturedView(2).trimmed().toString();
                 _classes.insert(QStringLiteral("%1").arg(id), name);
             } else if (id >= 0 && subid >= 0 && (match = prot.match(line)).hasMatch()) {
-                const int protid = match.capturedView(1).toInt(0, 16);
+                const int protid = match.capturedView(1).toInt(nullptr, 16);
                 const QString name = match.capturedView(2).trimmed().toString();
                 _classes.insert(QStringLiteral("%1-%2-%3").arg(id).arg(subid).arg(protid), name);
             } else if (id >= 0 && (match = subclass.match(line)).hasMatch()) {
-                subid = match.capturedView(1).toInt(0, 16);
+                subid = match.capturedView(1).toInt(nullptr, 16);
                 const QString name = match.capturedView(2).trimmed().toString();
                 _classes.insert(QStringLiteral("%1-%2").arg(id).arg(subid), name);
             } else if ((match = vendor.match(line)).hasMatch()) {
-                id = match.capturedView(1).toInt(0, 16);
+                id = match.capturedView(1).toInt(nullptr, 16);
                 const QString name = match.captured(2);
                 _ids.insert(QStringLiteral("%1").arg(id), name);
             } else if (id >= 0 && (match = product.match(line)).hasMatch()) {
-                subid = match.capturedView(1).toInt(0, 16);
+                subid = match.capturedView(1).toInt(nullptr, 16);
                 const QString name = match.capturedView(2).trimmed().toString();
                 _ids.insert(QStringLiteral("%1-%2").arg(id).arg(subid), name);
             } else {
