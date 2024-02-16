@@ -10,7 +10,6 @@
 #include <QQmlContext>
 #include <QQmlEngine>
 #include <QStandardItemModel>
-#include <QtQml>
 
 #include <Solid/Battery>
 #include <Solid/Device>

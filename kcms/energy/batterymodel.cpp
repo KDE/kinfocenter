@@ -9,7 +9,6 @@
 #include <Solid/DeviceNotifier>
 
 #include <QQmlEngine>
-#include <QtQml>
 
 BatteryModel::BatteryModel(QObject *parent)
     : QAbstractListModel(parent)

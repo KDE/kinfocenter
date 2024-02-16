@@ -5,8 +5,6 @@
 
 #include "usbdb.h"
 
-#include <iostream>
-
 #include <QDebug>
 #include <QFile>
 #include <QRegularExpression>
