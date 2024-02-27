@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-31 00:38+0000\n"
+"POT-Creation-Date: 2024-02-27 00:38+0000\n"
 "PO-Revision-Date: 2024-01-20 18:28+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -181,25 +181,35 @@ msgctxt "@title:group"
 msgid "Hardware"
 msgstr "العتاد"
 
-#: ui/main.qml:165
-#, kde-format
+#: ui/main.qml:162
+#, fuzzy, kde-format
+#| msgctxt "@action:button launches kinfocenter from systemsettings"
+#| msgid "Show More Information"
 msgctxt "@action:button launches kinfocenter from systemsettings"
+msgid "More System Information"
+msgstr "أظهر المزيد من المعلومات"
+
+#: ui/main.qml:163
+#, fuzzy, kde-format
+#| msgctxt "@action:button launches kinfocenter from systemsettings"
+#| msgid "Launch %1"
+msgctxt "@info:tooltip"
 msgid "Launch %1"
 msgstr "شغّل %1"
 
-#: ui/main.qml:178 ui/main.qml:186
+#: ui/main.qml:171 ui/main.qml:179
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "انسخ التفاصيل"
 
-#: ui/main.qml:189
+#: ui/main.qml:182
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "باللغة الحالية"
 
-#: ui/main.qml:195
+#: ui/main.qml:188
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
@@ -212,10 +222,6 @@ msgstr "بالإنجليزيّة"
 #~ msgctxt "@action:button"
 #~ msgid "Copy to Clipboard in English"
 #~ msgstr "انسخ إلى الحافظة بالإنجليزية"
-
-#~ msgctxt "@action:button launches kinfocenter from systemsettings"
-#~ msgid "Show More Information"
-#~ msgstr "أظهر المزيد من المعلومات"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

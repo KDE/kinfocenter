@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-31 00:38+0000\n"
+"POT-Creation-Date: 2024-02-27 00:38+0000\n"
 "PO-Revision-Date: 2023-07-30 12:11+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -175,25 +175,35 @@ msgctxt "@title:group"
 msgid "Hardware"
 msgstr "வன்பொருள்"
 
-#: ui/main.qml:165
-#, kde-format
+#: ui/main.qml:162
+#, fuzzy, kde-format
+#| msgctxt "@action:button launches kinfocenter from systemsettings"
+#| msgid "Show More Information"
 msgctxt "@action:button launches kinfocenter from systemsettings"
+msgid "More System Information"
+msgstr "மேலும் விவரங்களை காட்டு"
+
+#: ui/main.qml:163
+#, fuzzy, kde-format
+#| msgctxt "@action:button launches kinfocenter from systemsettings"
+#| msgid "Launch %1"
+msgctxt "@info:tooltip"
 msgid "Launch %1"
 msgstr "%1 தனை திற"
 
-#: ui/main.qml:178 ui/main.qml:186
+#: ui/main.qml:171 ui/main.qml:179
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "விவரங்களை நகலெடு"
 
-#: ui/main.qml:189
+#: ui/main.qml:182
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "தற்போதைய மொழியில்"
 
-#: ui/main.qml:195
+#: ui/main.qml:188
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
@@ -206,10 +216,6 @@ msgstr "ஆங்கிலத்தில்"
 #~ msgctxt "@action:button"
 #~ msgid "Copy to Clipboard in English"
 #~ msgstr "பிடிப்புப்பலகைக்கு ஆங்கிலத்தில் நகலெடு"
-
-#~ msgctxt "@action:button launches kinfocenter from systemsettings"
-#~ msgid "Show More Information"
-#~ msgstr "மேலும் விவரங்களை காட்டு"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

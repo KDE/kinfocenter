@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-31 00:38+0000\n"
+"POT-Creation-Date: 2024-02-27 00:38+0000\n"
 "PO-Revision-Date: 2023-07-26 07:09+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -180,25 +180,35 @@ msgctxt "@title:group"
 msgid "Hardware"
 msgstr "Strojna oprema"
 
-#: ui/main.qml:165
-#, kde-format
+#: ui/main.qml:162
+#, fuzzy, kde-format
+#| msgctxt "@action:button launches kinfocenter from systemsettings"
+#| msgid "Show More Information"
 msgctxt "@action:button launches kinfocenter from systemsettings"
+msgid "More System Information"
+msgstr "Prikaži več informacij"
+
+#: ui/main.qml:163
+#, fuzzy, kde-format
+#| msgctxt "@action:button launches kinfocenter from systemsettings"
+#| msgid "Launch %1"
+msgctxt "@info:tooltip"
 msgid "Launch %1"
 msgstr "Zaženi %1"
 
-#: ui/main.qml:178 ui/main.qml:186
+#: ui/main.qml:171 ui/main.qml:179
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "Kopiraj podrobnosti"
 
-#: ui/main.qml:189
+#: ui/main.qml:182
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "V trenutnem jeziku"
 
-#: ui/main.qml:195
+#: ui/main.qml:188
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
@@ -211,10 +221,6 @@ msgstr "V angleščini"
 #~ msgctxt "@action:button"
 #~ msgid "Copy to Clipboard in English"
 #~ msgstr "Kopiraj na odložišče v angleščini"
-
-#~ msgctxt "@action:button launches kinfocenter from systemsettings"
-#~ msgid "Show More Information"
-#~ msgstr "Prikaži več informacij"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

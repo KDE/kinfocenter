@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: playground-base-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-31 00:38+0000\n"
+"POT-Creation-Date: 2024-02-27 00:38+0000\n"
 "PO-Revision-Date: 2023-10-08 12:52+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -177,25 +177,33 @@ msgctxt "@title:group"
 msgid "Hardware"
 msgstr "Donanım"
 
-#: ui/main.qml:165
+#: ui/main.qml:162
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
+msgid "More System Information"
+msgstr ""
+
+#: ui/main.qml:163
+#, fuzzy, kde-format
+#| msgctxt "@action:button launches kinfocenter from systemsettings"
+#| msgid "Launch %1"
+msgctxt "@info:tooltip"
 msgid "Launch %1"
 msgstr "Başlat: %1"
 
-#: ui/main.qml:178 ui/main.qml:186
+#: ui/main.qml:171 ui/main.qml:179
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "Ayrıntıları Kopyala"
 
-#: ui/main.qml:189
+#: ui/main.qml:182
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "Geçerli Dilde"
 
-#: ui/main.qml:195
+#: ui/main.qml:188
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"

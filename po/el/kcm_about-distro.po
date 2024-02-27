@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-31 00:38+0000\n"
+"POT-Creation-Date: 2024-02-27 00:38+0000\n"
 "PO-Revision-Date: 2021-10-04 10:35+0300\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -181,13 +181,19 @@ msgctxt "@title:group"
 msgid "Hardware"
 msgstr "Υλικό"
 
-#: ui/main.qml:165
+#: ui/main.qml:162
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
+msgid "More System Information"
+msgstr ""
+
+#: ui/main.qml:163
+#, kde-format
+msgctxt "@info:tooltip"
 msgid "Launch %1"
 msgstr ""
 
-#: ui/main.qml:178 ui/main.qml:186
+#: ui/main.qml:171 ui/main.qml:179
 #, fuzzy, kde-format
 #| msgctxt "EMAIL OF TRANSLATORS"
 #| msgid "Your emails"
@@ -195,13 +201,13 @@ msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "capoiosct@gmail.com"
 
-#: ui/main.qml:189
+#: ui/main.qml:182
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr ""
 
-#: ui/main.qml:195
+#: ui/main.qml:188
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
