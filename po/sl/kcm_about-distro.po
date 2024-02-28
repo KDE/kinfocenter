@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-27 00:38+0000\n"
-"PO-Revision-Date: 2023-07-26 07:09+0200\n"
+"PO-Revision-Date: 2024-02-27 07:51+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
 msgid "Processor:"
 msgid_plural "Processors:"
-msgstr[0] "Procesor:"
-msgstr[1] "Procesorja:"
-msgstr[2] "Procesorji:"
+msgstr[0] "Procesorjev:"
+msgstr[1] "Procesor:"
+msgstr[2] "Procesorja:"
 msgstr[3] "Procesorji:"
 
 #: CPUEntry.cpp:22
@@ -181,17 +181,13 @@ msgid "Hardware"
 msgstr "Strojna oprema"
 
 #: ui/main.qml:162
-#, fuzzy, kde-format
-#| msgctxt "@action:button launches kinfocenter from systemsettings"
-#| msgid "Show More Information"
+#, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "More System Information"
-msgstr "Prikaži več informacij"
+msgstr "Več sistemskih informacij"
 
 #: ui/main.qml:163
-#, fuzzy, kde-format
-#| msgctxt "@action:button launches kinfocenter from systemsettings"
-#| msgid "Launch %1"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Launch %1"
 msgstr "Zaženi %1"

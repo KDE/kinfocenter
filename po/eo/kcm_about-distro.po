@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-27 00:38+0000\n"
-"PO-Revision-Date: 2023-07-28 11:07+0100\n"
+"PO-Revision-Date: 2024-02-27 21:53+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -180,12 +180,10 @@ msgstr "Aparataro"
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "More System Information"
-msgstr ""
+msgstr "Plia Sisteminformo"
 
 #: ui/main.qml:163
-#, fuzzy, kde-format
-#| msgctxt "@action:button launches kinfocenter from systemsettings"
-#| msgid "Launch %1"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Launch %1"
 msgstr "Lanĉi %1"
