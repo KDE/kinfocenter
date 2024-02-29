@@ -183,12 +183,10 @@ msgid "More System Information"
 msgstr ""
 
 #: ui/main.qml:163
-#, fuzzy, kde-format
-#| msgctxt "@action:button launches kinfocenter from systemsettings"
-#| msgid "Launch %1"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Launch %1"
-msgstr "Spustit %1"
+msgstr ""
 
 #: ui/main.qml:171 ui/main.qml:179
 #, kde-format

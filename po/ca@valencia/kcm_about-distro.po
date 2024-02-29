@@ -1,17 +1,17 @@
 # Translation of kcm_about-distro.po to Catalan (Valencian)
-# Copyright (C) 2014-2023 This_file_is_part_of_KDE
+# Copyright (C) 2014-2024 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2014, 2015, 2021.
-# Josep M. Ferrer <txemaq@gmail.com>, 2016, 2018, 2020, 2022, 2023.
+# Josep M. Ferrer <txemaq@gmail.com>, 2016, 2018, 2020, 2022, 2023, 2024.
 # Empar Montoro Martín <montoro_mde@gva.es>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-27 00:38+0000\n"
-"PO-Revision-Date: 2023-07-26 07:39+0300\n"
+"PO-Revision-Date: 2024-02-27 13:28+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -184,12 +184,10 @@ msgstr "Maquinari"
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "More System Information"
-msgstr ""
+msgstr "Més informació del sistema"
 
 #: ui/main.qml:163
-#, fuzzy, kde-format
-#| msgctxt "@action:button launches kinfocenter from systemsettings"
-#| msgid "Launch %1"
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Launch %1"
 msgstr "Inicia %1"
