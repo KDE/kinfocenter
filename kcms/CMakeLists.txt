@@ -13,6 +13,7 @@ add_subdirectory(firmware_security)
 add_subdirectory(opencl)
 add_subdirectory(block_devices)
 add_subdirectory(network)
+add_subdirectory(audio_information)
 
 add_subdirectory( samba )
 

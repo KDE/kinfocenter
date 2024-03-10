@@ -1,0 +1,12 @@
+{
+    "Categories": "Qt;KDE;X-KDE-information;",
+    "KPlugin": {
+        "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
+        "Description": "Audio Device Information",
+        "Icon": "audio-card",
+        "Name": "Audio"
+    },
+    "TryExec": "pactl",
+    "X-KDE-KInfoCenter-Category": "device_information",
+    "X-KDE-Keywords": "Pipewire,Audio,PulseAudio,pactl"
+}
