@@ -35,7 +35,7 @@ KCM.SimpleKCM {
         Kirigami.SelectableLabel {
             id: text
             text: output.text
-            font.family: "monospace"
+            font.family: output.font
             wrapMode: root.wrapMode
             textFormat: root.textFormat
             onLinkActivated: link => Qt.openUrlExternally(link)

@@ -13,6 +13,7 @@
 
 #include <KLocalizedString>
 #include <KOSRelease>
+#include <QFontDatabase>
 
 CommandOutputContext::CommandOutputContext(const QStringList &findExecutables, const QString &executable, const QStringList &arguments, QObject *parent)
     : QObject(parent)
@@ -20,6 +21,7 @@ CommandOutputContext::CommandOutputContext(const QStringList &findExecutables, c
     , m_executablePath(QStandardPaths::findExecutable(m_executableName))
     , m_arguments(arguments)
     , m_bugReportUrl(KOSRelease().bugReportUrl())
+    , m_font(QFontDatabase::systemFont(QFontDatabase::FixedFont).family())
 {
     // Various utilities are installed in sbin, but work without elevated privileges
     if (m_executablePath.isEmpty()) {

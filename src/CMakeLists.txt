@@ -3,7 +3,7 @@
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kinfocenter\")
 add_library(KInfoCenterInternal SHARED CommandOutputContext.cpp CommandOutputContext.h)
-target_link_libraries(KInfoCenterInternal Qt::Qml KF6::I18n KF6::CoreAddons)
+target_link_libraries(KInfoCenterInternal Qt::Qml Qt6::Gui KF6::I18n KF6::CoreAddons)
 # Disable legacy stuff to get rid of some deprecation warnings. Notably duplicated QProcess::finished overloads.
 target_compile_definitions(KInfoCenterInternal PRIVATE -DQT_DISABLE_DEPRECATED_BEFORE=0x050e00)
 target_include_directories(KInfoCenterInternal INTERFACE "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>")

@@ -28,6 +28,8 @@ class CommandOutputContext : public QObject
     Q_PROPERTY(QString explanation MEMBER m_explanation NOTIFY explanationChanged)
     // URL where the user can report a bug when there is an error. Empty when there is no error, or no applicable place to report a bug
     Q_PROPERTY(QUrl bugReportUrl MEMBER m_bugReportUrl CONSTANT)
+    // Selected system monospace (fixedWidth) font
+    Q_PROPERTY(QString font MEMBER m_font CONSTANT)
 public:
     CommandOutputContext(const QStringList &findExecutables, const QString &executable, const QStringList &arguments, QObject *parent = nullptr);
     CommandOutputContext(const QString &executable, const QStringList &arguments, QObject *parent = nullptr);
@@ -68,4 +70,5 @@ private:
 
     QString m_text; // possibly filtered
     QString m_filter;
+    QString m_font;
 };
