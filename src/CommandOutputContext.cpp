@@ -14,6 +14,7 @@
 #include <KLocalizedString>
 #include <KOSRelease>
 #include <QFontDatabase>
+#include <QGuiApplication>
 
 CommandOutputContext::CommandOutputContext(const QStringList &findExecutables, const QString &executable, const QStringList &arguments, QObject *parent)
     : QObject(parent)
@@ -23,6 +24,9 @@ CommandOutputContext::CommandOutputContext(const QStringList &findExecutables, c
     , m_bugReportUrl(KOSRelease().bugReportUrl())
     , m_font(QFontDatabase::systemFont(QFontDatabase::FixedFont).family())
 {
+    connect(qGuiApp, &QGuiApplication::fontDatabaseChanged, this, &CommandOutputContext::handleFontDatabaseChanged);
+    connect(qGuiApp, &QGuiApplication::fontChanged, this, &CommandOutputContext::handleFontDatabaseChanged);
+
     // Various utilities are installed in sbin, but work without elevated privileges
     if (m_executablePath.isEmpty()) {
         m_executablePath =
@@ -157,6 +161,13 @@ void CommandOutputContext::setReady()
 void CommandOutputContext::setTrimAllowed(bool allow)
 {
     m_trimAllowed = allow;
+}
+
+Q_SLOT void CommandOutputContext::handleFontDatabaseChanged()
+{
+    m_font = QFontDatabase::systemFont(QFontDatabase::FixedFont).family();
+    Q_EMIT fontChanged();
+    Q_EMIT textChanged();
 }
 
 #include "moc_CommandOutputContext.cpp"

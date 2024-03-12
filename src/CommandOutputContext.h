@@ -29,7 +29,7 @@ class CommandOutputContext : public QObject
     // URL where the user can report a bug when there is an error. Empty when there is no error, or no applicable place to report a bug
     Q_PROPERTY(QUrl bugReportUrl MEMBER m_bugReportUrl CONSTANT)
     // Selected system monospace (fixedWidth) font
-    Q_PROPERTY(QString font MEMBER m_font CONSTANT)
+    Q_PROPERTY(QString font MEMBER m_font NOTIFY fontChanged)
 public:
     CommandOutputContext(const QStringList &findExecutables, const QString &executable, const QStringList &arguments, QObject *parent = nullptr);
     CommandOutputContext(const QString &executable, const QStringList &arguments, QObject *parent = nullptr);
@@ -48,6 +48,10 @@ Q_SIGNALS:
     void readyChanged();
     void errorChanged();
     void explanationChanged();
+    void fontChanged();
+
+private Q_SLOTS:
+    void handleFontDatabaseChanged();
 
 private:
     void reset();
