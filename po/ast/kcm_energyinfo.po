@@ -1,13 +1,13 @@
 # Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
 #
-# SPDX-FileCopyrightText: 2023 Enol P. <enolp@softastur.org>
+# SPDX-FileCopyrightText: 2023, 2024 Enol P. <enolp@softastur.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-14 01:36+0000\n"
-"PO-Revision-Date: 2023-12-14 21:45+0100\n"
+"PO-Revision-Date: 2024-03-15 01:17+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: Assamese <alministradores@softastur.org>\n"
 "Language: ast\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.02.0\n"
 
 #: ui/main.qml:45
 #, kde-format
@@ -165,17 +165,17 @@ msgstr "Litiu ferrofosfatu"
 #: ui/main.qml:89
 #, kde-format
 msgid "Lead acid"
-msgstr "Plomu ya ácidu"
+msgstr "Plomu y ácidu"
 
 #: ui/main.qml:90
 #, kde-format
 msgid "Nickel cadmium"
-msgstr "Níquel ya cadmiu"
+msgstr "Níquel y cadmiu"
 
 #: ui/main.qml:91
 #, kde-format
 msgid "Nickel metal hydride"
-msgstr "Níquel ya metal d'hidruru"
+msgstr "Níquel y metal d'hidruru"
 
 #: ui/main.qml:92
 #, kde-format
