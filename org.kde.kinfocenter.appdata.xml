@@ -56,7 +56,7 @@
   <name xml:lang="zh-TW">資訊中心</name>
   <summary>Centralized and convenient overview of system information</summary>
   <summary xml:lang="ar">نظرة عامة مركزية ومريحة لمعلومات النظام</summary>
-  <summary xml:lang="ast">Una vista xeneral centralizada ya afayadiza de la información del sistema</summary>
+  <summary xml:lang="ast">Una vista xeneral centralizada y afayadiza de la información del sistema</summary>
   <summary xml:lang="az">Sistem haqqında məlumatlara mərkəzləşmiş və rahat şəkildə baxış</summary>
   <summary xml:lang="bg">Централизиран и удобен преглед на системната информация</summary>
   <summary xml:lang="ca">Resum centralitzat i pràctic de la informació del sistema</summary>
@@ -103,7 +103,7 @@
     <p>The Info Center provides you with a centralized and convenient
      overview of your system and desktop environment.</p>
     <p xml:lang="ar">يوفر لك مركز المعلومات نظرة عامة مركزية ومريحة لنظامك وبيئة سطح المكتب.</p>
-    <p xml:lang="ast">El centru d'información forne una vista xeneral centralizada ya afayadiza del sistema ya l'entornu d'escritoriu.</p>
+    <p xml:lang="ast">El centru d'información forne una vista xeneral centralizada y afayadiza del sistema y l'entornu d'escritoriu.</p>
     <p xml:lang="az">"Sistem haqqında məlumat" proqramı sistem parametrlərinə və İş masası mühitinə mərkəzləşmiş şəkildə baxmağa imkan verir.</p>
     <p xml:lang="bg">Информационният център ви предоставя централизиран и удобен преглед на системната и работната среда.</p>
     <p xml:lang="ca">El Centre d'informació proporciona una vista general centralitzada i còmoda del sistema i l'escriptori.</p>
