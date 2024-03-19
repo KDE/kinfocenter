@@ -3,13 +3,14 @@
 #
 # Andrej Mernik <andrejm@ubuntu.si>, 2015, 2016.
 # Matjaž Jeran <matjaz.jeran@amis.net>, 2020, 2021.
+# SPDX-FileCopyrightText: 2024 Jure Repinc <jlp@holodeck1.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-14 01:36+0000\n"
-"PO-Revision-Date: 2023-12-14 06:38+0100\n"
-"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"PO-Revision-Date: 2024-03-17 13:30+0100\n"
+"Last-Translator: Jure Repinc <jlp@holodeck1.com>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Lokalize 24.04.70\n"
 
 #: ui/main.qml:45
 #, kde-format
@@ -33,12 +34,12 @@ msgstr "Znova napolnljiva"
 #: ui/main.qml:48
 #, kde-format
 msgid "Charge state"
-msgstr "Stanje napolnjenosti"
+msgstr "Stanje polnjenja"
 
 #: ui/main.qml:49
 #, kde-format
 msgid "Current charge"
-msgstr "Trenutni tok"
+msgstr "Trenutna napolnjenost"
 
 #: ui/main.qml:50
 #, kde-format
@@ -107,7 +108,7 @@ msgstr "Wh"
 #: ui/main.qml:63
 #, kde-format
 msgid "Last full charge"
-msgstr "Zadnjič popolnoma napolnjena"
+msgstr "Zadnjič povsem napolnjena"
 
 #: ui/main.qml:64
 #, kde-format
@@ -158,12 +159,12 @@ msgstr "Litij-ionska"
 #: ui/main.qml:87
 #, kde-format
 msgid "Lithium polymer"
-msgstr "Litij polimerna"
+msgstr "Litij-polimerna"
 
 #: ui/main.qml:88
 #, kde-format
 msgid "Lithium iron phosphate"
-msgstr "Litijev železov fosfat"
+msgstr "Litij-železov fosfatna"
 
 #: ui/main.qml:89
 #, kde-format
@@ -173,12 +174,12 @@ msgstr "Svinčeno kislinska"
 #: ui/main.qml:90
 #, kde-format
 msgid "Nickel cadmium"
-msgstr "Nikel kadmijeva"
+msgstr "Nikelj-kadmijeva"
 
 #: ui/main.qml:91
 #, kde-format
 msgid "Nickel metal hydride"
-msgstr "Nikel metalni hidrid"
+msgstr "Nikelj-metalno hidridna"
 
 #: ui/main.qml:92
 #, kde-format
@@ -224,17 +225,17 @@ msgstr "Ni informacij o energiji na tem sistemu"
 #: ui/main.qml:182
 #, kde-format
 msgid "PDA Battery"
-msgstr "PDA baterija"
+msgstr "Baterija dlančnika"
 
 #: ui/main.qml:183
 #, kde-format
 msgid "UPS Battery"
-msgstr "UPS baterija"
+msgstr "Baterija brezprekinitvenega napajanja"
 
 #: ui/main.qml:184
 #, kde-format
 msgid "Internal Battery"
-msgstr "Interna baterija"
+msgstr "Notranja baterija"
 
 #: ui/main.qml:185
 #, kde-format
@@ -254,7 +255,7 @@ msgstr "Baterija tipkovnice/miške"
 #: ui/main.qml:188
 #, kde-format
 msgid "Camera Battery"
-msgstr "Baterija kamere"
+msgstr "Baterija fotoaparata"
 
 #: ui/main.qml:189
 #, kde-format
@@ -269,12 +270,12 @@ msgstr "Baterija monitorja"
 #: ui/main.qml:191
 #, kde-format
 msgid "Gaming Input Battery"
-msgstr "Baterija iralnega vhoda"
+msgstr "Baterija igralnega vhoda"
 
 #: ui/main.qml:192
 #, kde-format
 msgid "Bluetooth Battery"
-msgstr "Baterija bluetooth"
+msgstr "Baterija Bluetooth"
 
 #: ui/main.qml:193
 #, kde-format
@@ -284,12 +285,12 @@ msgstr "Baterija tablice"
 #: ui/main.qml:194
 #, kde-format
 msgid "Headphone Battery"
-msgstr "Baterija naglavnega telefona"
+msgstr "Baterija slušalk"
 
 #: ui/main.qml:195
 #, kde-format
 msgid "Headset Battery"
-msgstr "Baterija slušalk"
+msgstr "Baterija slušalk z mikrofonom"
 
 #: ui/main.qml:196
 #, kde-format
@@ -305,13 +306,13 @@ msgstr "Neznana baterija"
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
-msgstr "%1% (Polnjenje)"
+msgstr "%1 % (Polnjenje)"
 
 #: ui/main.qml:226
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
-msgstr "%1%"
+msgstr "%1 %"
 
 #: ui/main.qml:275
 #, kde-format
@@ -374,13 +375,13 @@ msgstr "Ne"
 #, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
-msgstr "%1%"
+msgstr "%1 %"
 
 #: ui/main.qml:438
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
-msgstr "%1 %2"
+msgstr "%1 %2"
 
 #~ msgctxt "Battery health percentage"
 #~ msgid "%1%"
