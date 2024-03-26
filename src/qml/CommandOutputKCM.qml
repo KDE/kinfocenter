@@ -119,12 +119,15 @@ KCM.SimpleKCM {
 
     actions: [
         Kirigami.Action {
+            enabled: output.error === ''
+
             icon.name: "edit-copy"
             text: i18ndc("kinfocenter", "@action:button copies all displayed text", "Copy to Clipboard")
             onTriggered: clipboard.content = output.text
         },
         Kirigami.Action {
             displayComponent: Kirigami.SearchField {
+                enabled: output.error === ''
                 visible: {
                     const isVisibleState = (root.state === "" || !(root.state === "noData" && contentLoader.item.errorNotFilter))
                     return isVisibleState && root.textFormat === TextEdit.PlainText
