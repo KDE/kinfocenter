@@ -1,21 +1,21 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the kinfocenter package.
+#
+# SPDX-FileCopyrightText: 2024 Enol P. <enolp@softastur.org>
 msgid ""
 msgstr ""
-"Project-Id-Version: kdeorg\n"
+"Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-13 00:39+0000\n"
-"PO-Revision-Date: 2024-03-27 19:44\n"
-"Last-Translator: \n"
-"Language-Team: Chinese Simplified\n"
-"Language: zh_CN\n"
+"PO-Revision-Date: 2024-03-27 23:51+0100\n"
+"Last-Translator: Enol P. <enolp@softastur.org>\n"
+"Language-Team: Asturian <alministradores@softastur.org>\n"
+"Language: ast_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Crowdin-Project: kdeorg\n"
-"X-Crowdin-Project-ID: 269464\n"
-"X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf6-trunk/messages/kinfocenter/kinfocenter.pot\n"
-"X-Crowdin-File-ID: 48714\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 24.02.1\n"
 
 #: CommandOutputContext.cpp:98
 #, kde-kuit-format
@@ -23,7 +23,7 @@ msgctxt "@info"
 msgid ""
 "The <command>%1</command> tool is required to display this page, but could "
 "not be found"
-msgstr "显示此页面需要 <command>%1</command> 工具程序，但无法找到此程序"
+msgstr ""
 
 #: CommandOutputContext.cpp:100
 #, kde-kuit-format
@@ -32,14 +32,12 @@ msgid ""
 "You can search for it and install it using your package manager.<nl/>Then "
 "please report this packaging issue to your distribution."
 msgstr ""
-"您可以在系统的软件包管理器中搜索并安装此程序。<nl/>请将此打包问题报告给本机安"
-"装的发行版。"
 
 #: CommandOutputContext.cpp:113
 #, kde-kuit-format
 msgctxt "@info"
 msgid "The <command>%1</command> tool crashed while generating page content"
-msgstr "生成页面内容时 <command>%1</command> 工具程序发生了崩溃"
+msgstr ""
 
 #: CommandOutputContext.cpp:114
 #, kde-kuit-format
@@ -47,39 +45,39 @@ msgctxt "@Info"
 msgid ""
 "Try again later. If keeps happening, please report the crash to your "
 "distribution."
-msgstr "请稍后重试。如果崩溃反复发生，请向本机安装的发行版报告。"
+msgstr ""
 
 #: qml/CommandOutputKCM.qml:86
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
-msgstr "没有匹配此过滤条件的文本"
+msgstr ""
 
 #: qml/CommandOutputKCM.qml:91
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
-msgstr "没有可用数据"
+msgstr ""
 
 #: qml/CommandOutputKCM.qml:104
 #, kde-format
 msgid "Report this issue"
-msgstr "报告此问题"
+msgstr ""
 
 #: qml/CommandOutputKCM.qml:123
 #, kde-format
 msgctxt "@action:button copies all displayed text"
 msgid "Copy to Clipboard"
-msgstr "复制到剪贴板"
+msgstr ""
 
 #: qml/CommandOutputKCM.qml:133
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
-msgstr "过滤…"
+msgstr ""
 
 #: qml/CommandOutputKCM.qml:135
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"
-msgstr "过滤"
+msgstr ""
