@@ -18,6 +18,7 @@
   <name xml:lang="de">Infozentrum</name>
   <name xml:lang="el">Κέντρο πληροφοριών</name>
   <name xml:lang="en-GB">Info Centre</name>
+  <name xml:lang="eo">Informcentro</name>
   <name xml:lang="es">Centro de información</name>
   <name xml:lang="et">Infokeskus</name>
   <name xml:lang="eu">Info-gunea</name>
@@ -60,6 +61,7 @@
   <summary xml:lang="de">Zentrale Übersicht über Systeminformationen</summary>
   <summary xml:lang="el">Συγκεντρωτική και βολική επισκόπηση πληροφοριών του συστήματος</summary>
   <summary xml:lang="en-GB">Centralised and convenient overview of system information</summary>
+  <summary xml:lang="eo">Alcentrigita kaj oportuna superrigardo de sistemaj informoj</summary>
   <summary xml:lang="es">Resumen práctico y centralizado de la información del sistema</summary>
   <summary xml:lang="et">Keskne ja mugav ülevaade süsteemsest teabest</summary>
   <summary xml:lang="eu">Sistema-informazioaren ikuspegi-orokor zentralizatu eta praktikoa</summary>
