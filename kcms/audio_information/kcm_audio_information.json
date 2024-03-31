@@ -3,6 +3,7 @@
     "KPlugin": {
         "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
         "Description": "Audio Device Information",
+        "Description[ar]": "معلومات جهاز الصوت",
         "Description[bg]": "Информация за звуково устройство",
         "Description[ca@valencia]": "Informació del dispositiu d'àudio",
         "Description[ca]": "Informació del dispositiu d'àudio",
@@ -27,6 +28,7 @@
         "Description[zh_CN]": "音频设备信息",
         "Icon": "audio-card",
         "Name": "Audio",
+        "Name[ar]": "الصوت",
         "Name[bg]": "Аудио",
         "Name[ca@valencia]": "Àudio",
         "Name[ca]": "Àudio",
