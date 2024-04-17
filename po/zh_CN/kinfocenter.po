@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-13 00:39+0000\n"
+"POT-Creation-Date: 2024-04-17 00:39+0000\n"
 "PO-Revision-Date: 2024-03-30 19:37\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -66,19 +66,19 @@ msgstr "没有可用数据"
 msgid "Report this issue"
 msgstr "报告此问题"
 
-#: qml/CommandOutputKCM.qml:123
+#: qml/CommandOutputKCM.qml:125
 #, kde-format
 msgctxt "@action:button copies all displayed text"
 msgid "Copy to Clipboard"
 msgstr "复制到剪贴板"
 
-#: qml/CommandOutputKCM.qml:133
+#: qml/CommandOutputKCM.qml:136
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
 msgstr "过滤…"
 
-#: qml/CommandOutputKCM.qml:135
+#: qml/CommandOutputKCM.qml:138
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"

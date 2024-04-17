@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-13 00:39+0000\n"
+"POT-Creation-Date: 2024-04-17 00:39+0000\n"
 "PO-Revision-Date: 2023-11-29 17:36+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -72,19 +72,19 @@ msgstr "Geen gegevens beschikbaar"
 msgid "Report this issue"
 msgstr "Dit probleem rapporteren"
 
-#: qml/CommandOutputKCM.qml:123
+#: qml/CommandOutputKCM.qml:125
 #, kde-format
 msgctxt "@action:button copies all displayed text"
 msgid "Copy to Clipboard"
 msgstr "Naar klembord kopiëren"
 
-#: qml/CommandOutputKCM.qml:133
+#: qml/CommandOutputKCM.qml:136
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
 msgstr "Filteren…"
 
-#: qml/CommandOutputKCM.qml:135
+#: qml/CommandOutputKCM.qml:138
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"
