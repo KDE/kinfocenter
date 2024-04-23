@@ -95,7 +95,7 @@ KCM.SimpleKCM {
                                 Kirigami.Action {
                                     text: i18nc("@action:button", "Copy")
                                     icon.name: "edit-copy"
-                                    onTriggered: kcm.storeInClipboard(subtitle)
+                                    onTriggered: source => kcm.storeInClipboard(subtitle)
                                     shortcut: StandardKey.Copy
                                 }
                             ]
@@ -107,8 +107,10 @@ KCM.SimpleKCM {
                         id: valueLabel
                         visible: !hidden
                         text: entry.localizedValue()
-                        Keys.onShortcutOverride: event.accepted = (valueLabel.activeFocus && valueLabel.selectedText && event.matches(StandardKey.Copy))
-                        Keys.onPressed: {
+                        Keys.onShortcutOverride: event => {
+                            event.accepted = (valueLabel.activeFocus && valueLabel.selectedText && event.matches(StandardKey.Copy));
+                        }
+                        Keys.onPressed: event => {
                             if (event.matches(StandardKey.Copy)) {
                                 valueLabel.copy();
                                 event.accepted = true;
@@ -161,7 +163,7 @@ KCM.SimpleKCM {
             icon.name: kicRunner.iconName
             text: i18nc("@action:button launches kinfocenter from systemsettings", "More System Information")
             tooltip: i18nc("@info:tooltip", "Launch %1", kicRunner.genericName)
-            onTriggered: kicRunner.run()
+            onTriggered: source => kicRunner.run()
         },
 
         Kirigami.Action {
@@ -169,7 +171,7 @@ KCM.SimpleKCM {
 
             icon.name: "edit-copy"
             text: i18nc("@action:button", "Copy Details")
-            onTriggered: kcm.copyToClipboard()
+            onTriggered: source => kcm.copyToClipboard()
         },
 
         Kirigami.Action {
@@ -180,13 +182,13 @@ KCM.SimpleKCM {
 
             Kirigami.Action {
                 text: i18nc("@action:button Copy Details...", "In current language")
-                onTriggered: kcm.copyToClipboard()
+                onTriggered: source => kcm.copyToClipboard()
                 shortcut: StandardKey.Copy
             }
 
             Kirigami.Action {
                 text: i18nc("@action:button Copy Details...", "In English")
-                onTriggered: kcm.copyToClipboardInEnglish()
+                onTriggered: source => kcm.copyToClipboardInEnglish()
             }
         }
     ]
