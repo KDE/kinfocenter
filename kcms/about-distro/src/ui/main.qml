@@ -3,20 +3,20 @@
     SPDX-FileCopyrightText: 2021-2022 Harald Sitter <sitter@kde.org>
 */
 
-import QtQuick 2.15
-import QtQuick.Controls 2.5 as QQC2
-import QtQuick.Layouts 1.1
+import QtQuick
+import QtQuick.Controls as QQC2
+import QtQuick.Layouts
 
-import org.kde.kirigami 2.20 as Kirigami
-import org.kde.kcmutils as KCM
+import org.kde.kirigami as Kirigami
+import org.kde.kcmutils as KCMUtils
 
-import org.kde.kinfocenter.about_distro.private 1.0
+import org.kde.kinfocenter.about_distro.private as Private
 
-KCM.SimpleKCM {
+KCMUtils.SimpleKCM {
     id: root
 
     // bugger off with all your buttons, we don't need any!
-    KCM.ConfigModule.buttons: KCM.ConfigModule.NoAdditionalButton
+    KCMUtils.ConfigModule.buttons: KCMUtils.ConfigModule.NoAdditionalButton
 
     implicitWidth: Kirigami.Units.gridUnit * 20
     implicitHeight: Kirigami.Units.gridUnit * 20
@@ -26,7 +26,7 @@ KCM.SimpleKCM {
     leftPadding: Kirigami.Units.gridUnit
     rightPadding: Kirigami.Units.gridUnit
 
-    ServiceRunner {
+    Private.ServiceRunner {
         id: kicRunner
         desktopFileName: "org.kde.kinfocenter"
     }
