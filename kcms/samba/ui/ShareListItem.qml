@@ -64,14 +64,15 @@ QQC2.ItemDelegate {
 
         QQC2.ToolButton {
             action: Kirigami.Action {
+                id: propertiesAction
                 icon.name: "document-properties"
                 tooltip: xi18nc("@info:tooltip", "Open folder properties to change share settings")
                 displayHint: Kirigami.DisplayHint.IconOnly
-                onTriggered: view.model.showPropertiesDialog(model.row)
+                onTriggered: source => view.model.showPropertiesDialog(model.row)
             }
 
             QQC2.ToolTip {
-                text: parent.action.tooltip
+                text: propertiesAction.tooltip
             }
         }
     }
