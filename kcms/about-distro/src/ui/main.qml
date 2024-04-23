@@ -94,7 +94,7 @@ KCMUtils.SimpleKCM {
                             customFooterActions: [
                                 Kirigami.Action {
                                     text: i18nc("@action:button", "Copy")
-                                    icon.name: "edit-copy"
+                                    icon.name: "edit-copy-symbolic"
                                     onTriggered: source => kcm.storeInClipboard(subtitle)
                                     shortcut: StandardKey.Copy
                                 }
@@ -121,7 +121,7 @@ KCMUtils.SimpleKCM {
                     QQC2.Button {
                         visible: hidden
                         property var dialog: null
-                        icon.name: "view-visible"
+                        icon.name: "view-visible-symbolic"
                         text: i18nc("@action:button show a hidden entry in an overlay", "Show")
                         onClicked: {
                             if (!dialog) {
@@ -169,7 +169,7 @@ KCMUtils.SimpleKCM {
         Kirigami.Action {
             visible: kcm.isEnglish
 
-            icon.name: "edit-copy"
+            icon.name: "edit-copy-symbolic"
             text: i18nc("@action:button", "Copy Details")
             onTriggered: source => kcm.copyToClipboard()
         },
@@ -177,7 +177,7 @@ KCMUtils.SimpleKCM {
         Kirigami.Action {
             visible: !kcm.isEnglish
 
-            icon.name: "edit-copy"
+            icon.name: "edit-copy-symbolic"
             text: i18nc("@action:button", "Copy Details")
 
             Kirigami.Action {

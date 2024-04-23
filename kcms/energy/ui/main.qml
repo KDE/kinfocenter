@@ -328,7 +328,7 @@ KCM.SimpleKCM {
                 }
 
                 QQC2.Button {
-                    icon.name: "view-refresh"
+                    icon.name: "view-refresh-symbolic"
                     hoverEnabled: true
                     QQC2.ToolTip.text: i18n("Refresh")
                     QQC2.ToolTip.visible: hovered
