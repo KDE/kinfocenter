@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-27 00:38+0000\n"
+"POT-Creation-Date: 2024-04-24 00:39+0000\n"
 "PO-Revision-Date: 2024-03-06 10:56+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -159,49 +159,49 @@ msgctxt "@action:button"
 msgid "Copy"
 msgstr "Копиране"
 
-#: ui/main.qml:123
+#: ui/main.qml:125
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
 msgstr "Показване"
 
-#: ui/main.qml:135
+#: ui/main.qml:137
 #, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "Софтуер"
 
-#: ui/main.qml:145
+#: ui/main.qml:147
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "Хардуер"
 
-#: ui/main.qml:162
+#: ui/main.qml:164
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "More System Information"
 msgstr "Допълнителна системна информация"
 
-#: ui/main.qml:163
+#: ui/main.qml:165
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Launch %1"
 msgstr "Стартиране %1"
 
-#: ui/main.qml:171 ui/main.qml:179
+#: ui/main.qml:173 ui/main.qml:181
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "Копиране на подробности"
 
-#: ui/main.qml:182
+#: ui/main.qml:184
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "На текущия език"
 
-#: ui/main.qml:188
+#: ui/main.qml:190
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"

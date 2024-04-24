@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-27 00:38+0000\n"
+"POT-Creation-Date: 2024-04-24 00:39+0000\n"
 "PO-Revision-Date: 2023-08-07 00:03+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -156,25 +156,25 @@ msgctxt "@action:button"
 msgid "Copy"
 msgstr "복사"
 
-#: ui/main.qml:123
+#: ui/main.qml:125
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
 msgstr "표시"
 
-#: ui/main.qml:135
+#: ui/main.qml:137
 #, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "소프트웨어"
 
-#: ui/main.qml:145
+#: ui/main.qml:147
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "하드웨어"
 
-#: ui/main.qml:162
+#: ui/main.qml:164
 #, fuzzy, kde-format
 #| msgctxt "@action:button launches kinfocenter from systemsettings"
 #| msgid "Show More Information"
@@ -182,7 +182,7 @@ msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "More System Information"
 msgstr "더 많은 정보 표시"
 
-#: ui/main.qml:163
+#: ui/main.qml:165
 #, fuzzy, kde-format
 #| msgctxt "@action:button launches kinfocenter from systemsettings"
 #| msgid "Launch %1"
@@ -190,19 +190,19 @@ msgctxt "@info:tooltip"
 msgid "Launch %1"
 msgstr "%1 실행"
 
-#: ui/main.qml:171 ui/main.qml:179
+#: ui/main.qml:173 ui/main.qml:181
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "자세한 정보 복사"
 
-#: ui/main.qml:182
+#: ui/main.qml:184
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "현재 언어로"
 
-#: ui/main.qml:188
+#: ui/main.qml:190
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"

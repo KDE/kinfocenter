@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-04 01:38+0000\n"
+"POT-Creation-Date: 2024-04-24 00:39+0000\n"
 "PO-Revision-Date: 2024-01-28 15:06-0600\n"
 "Last-Translator: A S Alam <aalam@punlinux.org>\n"
 "Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
@@ -41,7 +41,7 @@ msgctxt "@info place holder for empty listview"
 msgid "There are no Samba shares mounted on this system"
 msgstr "ਇਸ ਸਿਸਟਮ ਉੱਤੇ ਕੋਈ ਵੀ ਸਾਂਬਾ ਸ਼ੇਅਰ ਮਾਊਂਟ ਨਹੀਂ ਕੀਤੀ ਹੋਏ ਹਨ"
 
-#: ui/ShareListItem.qml:68
+#: ui/ShareListItem.qml:69
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Open folder properties to change share settings"

@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-27 00:38+0000\n"
-"PO-Revision-Date: 2024-01-16 01:28+0200\n"
+"POT-Creation-Date: 2024-04-24 00:39+0000\n"
+"PO-Revision-Date: 2024-04-24 00:59+0300\n"
 "Last-Translator: Moo <<>>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -163,53 +163,49 @@ msgctxt "@action:button"
 msgid "Copy"
 msgstr "Kopijuoti"
 
-#: ui/main.qml:123
+#: ui/main.qml:125
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
 msgstr "Rodyti"
 
-#: ui/main.qml:135
+#: ui/main.qml:137
 #, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "Programinė įranga"
 
-#: ui/main.qml:145
+#: ui/main.qml:147
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "Aparatinė įranga"
 
-#: ui/main.qml:162
-#, fuzzy, kde-format
-#| msgctxt "@action:button launches kinfocenter from systemsettings"
-#| msgid "Show More Information"
+#: ui/main.qml:164
+#, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "More System Information"
-msgstr "Rodyti daugiau informacijos"
+msgstr "Daugiau informacijos apie sistemą"
 
-#: ui/main.qml:163
-#, fuzzy, kde-format
-#| msgctxt "@action:button launches kinfocenter from systemsettings"
-#| msgid "Launch %1"
+#: ui/main.qml:165
+#, kde-format
 msgctxt "@info:tooltip"
 msgid "Launch %1"
-msgstr "Paleisti programą %1"
+msgstr "Paleisti %1"
 
-#: ui/main.qml:171 ui/main.qml:179
+#: ui/main.qml:173 ui/main.qml:181
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "Kopijuoti išsamesnę informaciją"
 
-#: ui/main.qml:182
+#: ui/main.qml:184
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "Dabartine kalba"
 
-#: ui/main.qml:188
+#: ui/main.qml:190
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
