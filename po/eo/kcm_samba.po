@@ -4,7 +4,7 @@
 # Wolfram Diestel <wolfram@steloj.de>, 1998.
 # Cindy McKee <cfmckee@gmail.com>, 2007.
 # Axel Rousseau <axel@esperanto-jeunes.org>, 2009.
-# Oliver Kellogg <okellogg@users.sourceforge.net>, 2023.
+# Oliver Kellogg <olivermkellogg@gmail.com>, 2023.
 #
 msgid ""
 msgstr ""
@@ -12,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-04 01:38+0000\n"
 "PO-Revision-Date: 2023-03-25 23:06+0100\n"
-"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
+"Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
@@ -50,38 +50,3 @@ msgstr "Ne ekzistas Samba-komundosierujoj muntitaj en ĉi sistemo"
 msgctxt "@info:tooltip"
 msgid "Open folder properties to change share settings"
 msgstr "Malfermi dosierujajn trajtojn por ŝanĝi komunigecon"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Wolfram Diestel"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "wolfram@steloj.de"
-
-#~ msgid "kcmsamba"
-#~ msgstr "kcmsamba"
-
-#~ msgid "Samba Status"
-#~ msgstr "Stato de Samba"
-
-#~ msgid "(c) 2002-2020 KDE Information Control Module Samba Team"
-#~ msgstr "(c) 2002-2020 KDE Information Control Module Samba Team"
-
-#~ msgid "Michael Glauche"
-#~ msgstr "Michael Glauche"
-
-#~ msgid "Matthias Hoelzer"
-#~ msgstr "Matthias Hoelzer"
-
-#~ msgid "David Faure"
-#~ msgstr "David Faure"
-
-#~ msgid "Harald Koschinski"
-#~ msgstr "Harald Koschinski"
-
-#~ msgid "Wilco Greven"
-#~ msgstr "Wilco Greven"
-
-#~ msgid "Alexander Neundorf"
-#~ msgstr "Alexander Neundorf"

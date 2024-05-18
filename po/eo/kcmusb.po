@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the kinfocenter package.
 # Cindy McKee <cfmckee@gmail.com>, 2007.
 # Axel Rousseau <axel@esperanto-jeunes.org>, 2009.
-# Oliver Kellogg <okellogg@users.sourceforge.net>, 2023.
+# Oliver Kellogg <olivermkellogg@gmail.com>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-05 02:14+0000\n"
-"PO-Revision-Date: 2023-03-25 23:06+0100\n"
-"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
+"PO-Revision-Date: 2024-05-15 23:33+0100\n"
+"Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
@@ -349,13 +349,13 @@ msgstr "Vendistospecifa subklaso"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Video Control"
-msgstr "Video Kontrolo"
+msgstr "Filmestrado"
 
 #: classes.i18n:57
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Video Interface Collection"
-msgstr "Kolekto de Video Interfaco"
+msgstr "Filminterfaca Kolekto"
 
 #: classes.i18n:58
 #, kde-format
@@ -367,7 +367,7 @@ msgstr "Video Streaming"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Wireless Handset Control"
-msgstr "Sendrata Teletelefona Kontrolo"
+msgstr "Estrado de Sendrata Kaptelefono"
 
 #: classes.i18n:60
 #, kde-format
