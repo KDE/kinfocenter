@@ -30,6 +30,7 @@
         "Description[lt]": "Informacija apie PCI",
         "Description[nl]": "PCI-informatie",
         "Description[nn]": "PCI-informasjon",
+        "Description[pa]": "PCI ਜਾਣਕਾਰੀ",
         "Description[pl]": "Szczegóły o PCI",
         "Description[pt]": "Informação sobre o PCI",
         "Description[pt_BR]": "Informações PCI",
