@@ -1,0 +1,335 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the kinfocenter package.
+#
+# SPDX-FileCopyrightText: 2024 Mincho Kondarev <mkondarev@yahoo.de>
+msgid ""
+msgstr ""
+"Project-Id-Version: kinfocenter\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-01-10 01:35+0000\n"
+"PO-Revision-Date: 2024-05-26 13:56+0200\n"
+"Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
+"Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 24.02.2\n"
+
+#: devicelisting.cpp:36
+#, kde-format
+msgctxt "Device Listing Whats This"
+msgid "Shows all the devices that are currently listed."
+msgstr "Показване на всички устройства в списъка"
+
+#: devicelisting.cpp:39
+#, kde-format
+msgid "Devices"
+msgstr "Устройства"
+
+#: devicelisting.cpp:51
+#, kde-format
+msgid "Collapse All"
+msgstr "Сгъване на всичко"
+
+#: devicelisting.cpp:54
+#, kde-format
+msgid "Expand All"
+msgstr "Разгъване на всичко"
+
+#: devicelisting.cpp:57
+#, kde-format
+msgid "Show All Devices"
+msgstr "Показване на всички устройства"
+
+#: devicelisting.cpp:60
+#, kde-format
+msgid "Show Relevant Devices"
+msgstr "Показване на уместните устройства"
+
+#: devicelisting.cpp:85
+#, kde-format
+msgctxt "unknown device type"
+msgid "Unknown"
+msgstr "Неизвестно"
+
+#: devicelisting.cpp:124 devinfo.cpp:73
+#, kde-format
+msgctxt "no device UDI"
+msgid "None"
+msgstr "Без"
+
+#: devinfo.cpp:52
+#, kde-format
+msgid "UDI: "
+msgstr "UDI: "
+
+#: devinfo.cpp:60
+#, kde-format
+msgctxt "Udi Whats This"
+msgid "Shows the current device's UDI (Unique Device Identifier)"
+msgstr "Показване на UDI на текущото устройство (Unique Device Identifier)"
+
+#: infopanel.cpp:20
+#, kde-format
+msgid "Device Information"
+msgstr "Данни за устройството"
+
+#: infopanel.cpp:29
+#, kde-format
+msgctxt "Info Panel Whats This"
+msgid "Shows information about the currently selected device."
+msgstr "Показване данни за текущо избраното устройство"
+
+#: infopanel.cpp:56
+#, kde-format
+msgid ""
+"\n"
+"Solid Based Device Viewer Module"
+msgstr ""
+"\n"
+"Модул за преглед на устройствата"
+
+#: infopanel.cpp:119
+#, kde-format
+msgid "Description: "
+msgstr "Описание: "
+
+#: infopanel.cpp:121
+#, kde-format
+msgid "Product: "
+msgstr "Продукт:"
+
+#: infopanel.cpp:123
+#, kde-format
+msgid "Vendor: "
+msgstr "Производител:"
+
+#: infopanel.cpp:145
+#, kde-format
+msgid "Yes"
+msgstr "Да"
+
+#: infopanel.cpp:147
+#, kde-format
+msgid "No"
+msgstr "Не"
+
+#: infopanel.h:36
+#, kde-format
+msgctxt "name of something is not known"
+msgid "Unknown"
+msgstr "Неизвестно"
+
+#: soldevice.cpp:65
+#, kde-format
+msgctxt "unknown device"
+msgid "Unknown"
+msgstr "Неизвестно"
+
+#: soldevice.cpp:91
+#, kde-format
+msgctxt "Default device tooltip"
+msgid "A Device"
+msgstr "Устройство"
+
+#: soldevicetypes.cpp:45
+#, kde-format
+msgid "Storage Drives"
+msgstr "Устройства за съхранение"
+
+#: soldevicetypes.cpp:64
+#, kde-format
+msgid "Hard Disk Drive"
+msgstr "Твърд диск"
+
+#: soldevicetypes.cpp:67
+#, kde-format
+msgid "Compact Flash Reader"
+msgstr "Четец на Compact Flash"
+
+#: soldevicetypes.cpp:70
+#, kde-format
+msgid "Smart Media Reader"
+msgstr "Четец на Smart Media"
+
+#: soldevicetypes.cpp:73
+#, kde-format
+msgid "SD/MMC Reader"
+msgstr "Четец на SD/MMC"
+
+#: soldevicetypes.cpp:76
+#, kde-format
+msgid "Optical Drive"
+msgstr "Оптично устройство"
+
+#: soldevicetypes.cpp:79
+#, kde-format
+msgid "Memory Stick Reader"
+msgstr "Четец на Memory Stick"
+
+#: soldevicetypes.cpp:82
+#, kde-format
+msgid "xD Reader"
+msgstr "Четец на xD"
+
+#: soldevicetypes.cpp:85
+#, kde-format
+msgid "Unknown Drive"
+msgstr "Непознато устройство"
+
+#: soldevicetypes.cpp:105
+#, kde-format
+msgid "IDE"
+msgstr "IDE"
+
+#: soldevicetypes.cpp:108
+#, kde-format
+msgid "USB"
+msgstr "USB"
+
+#: soldevicetypes.cpp:111
+#, kde-format
+msgid "IEEE1394"
+msgstr "IEEE1394"
+
+#: soldevicetypes.cpp:114
+#, kde-format
+msgid "SCSI"
+msgstr "SCSI"
+
+#: soldevicetypes.cpp:117
+#, kde-format
+msgid "SATA"
+msgstr "SATA"
+
+#: soldevicetypes.cpp:120
+#, kde-format
+msgctxt "platform storage bus"
+msgid "Platform"
+msgstr "Платформа"
+
+#: soldevicetypes.cpp:123
+#, kde-format
+msgctxt "unknown storage bus"
+msgid "Unknown"
+msgstr "Неизвестно"
+
+#: soldevicetypes.cpp:126
+#, kde-format
+msgid "Bus: "
+msgstr "Шина: "
+
+#: soldevicetypes.cpp:126
+#, kde-format
+msgid "Hotpluggable?"
+msgstr "Изваждаемо?"
+
+#: soldevicetypes.cpp:126
+#, kde-format
+msgid "Removable?"
+msgstr "Премахваемо?"
+
+#: soldevicetypes.cpp:170
+#, kde-format
+msgid "Unused"
+msgstr "Неизползвано"
+
+#: soldevicetypes.cpp:173
+#, kde-format
+msgid "File System"
+msgstr "Файлова система"
+
+#: soldevicetypes.cpp:176
+#, kde-format
+msgid "Partition Table"
+msgstr "Таблица с дяловете"
+
+#: soldevicetypes.cpp:179
+#, kde-format
+msgid "Raid"
+msgstr "Raid"
+
+#: soldevicetypes.cpp:182
+#, kde-format
+msgid "Encrypted"
+msgstr "Шифрирано"
+
+#: soldevicetypes.cpp:185
+#, kde-format
+msgctxt "unknown volume usage"
+msgid "Unknown"
+msgstr "Неизвестен"
+
+#: soldevicetypes.cpp:188
+#, kde-format
+msgid "File System Type: "
+msgstr "Вид файлова система: "
+
+#: soldevicetypes.cpp:188
+#, kde-format
+msgid "Label: "
+msgstr "Етикет: "
+
+#: soldevicetypes.cpp:189
+#, kde-format
+msgid "Not Set"
+msgstr "Не е указано"
+
+#: soldevicetypes.cpp:189
+#, kde-format
+msgid "Volume Usage: "
+msgstr "Използване на дела: "
+
+#: soldevicetypes.cpp:189
+#, kde-format
+msgid "UUID: "
+msgstr "UUID: "
+
+#: soldevicetypes.cpp:195
+#, kde-format
+msgid "Mounted At: "
+msgstr "Монтиран в: "
+
+#: soldevicetypes.cpp:195
+#, kde-format
+msgid "Not Mounted"
+msgstr "Не е монтирано"
+
+#: soldevicetypes.cpp:200
+#, kde-format
+msgid "Volume Space:"
+msgstr "Размер на дела:"
+
+#: soldevicetypes.cpp:210
+#, kde-format
+msgctxt "Available space out of total partition size (percent used)"
+msgid "%1 free of %2 (%3% used)"
+msgstr "Свободни са %1 от общо %2 (използвани %3%)"
+
+#: soldevicetypes.cpp:216
+#, kde-format
+msgid "No data available"
+msgstr "Няма данни"
+
+#: soldevicetypes.cpp:243
+#, kde-format
+msgid "Multimedia Players"
+msgstr "Мултимедийни плеъри"
+
+#: soldevicetypes.cpp:262 soldevicetypes.cpp:301
+#, kde-format
+msgid "Supported Drivers: "
+msgstr "Поддържани драйвери: "
+
+#: soldevicetypes.cpp:262 soldevicetypes.cpp:301
+#, kde-format
+msgid "Supported Protocols: "
+msgstr "Поддържани протоколи: "
+
+#: soldevicetypes.cpp:282
+#, kde-format
+msgid "Cameras"
+msgstr "Фотоапарати"
+

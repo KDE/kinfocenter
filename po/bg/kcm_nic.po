@@ -1,0 +1,97 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the kinfocenter package.
+#
+# SPDX-FileCopyrightText: 2024 Mincho Kondarev <mkondarev@yahoo.de>
+msgid ""
+msgstr ""
+"Project-Id-Version: kinfocenter\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-05-05 02:14+0000\n"
+"PO-Revision-Date: 2024-05-26 13:54+0200\n"
+"Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
+"Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 24.02.2\n"
+
+#: networkmodel.cpp:161
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Point to Point"
+msgstr "Point-to-Point"
+
+#: networkmodel.cpp:168
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Broadcast"
+msgstr "Broadcast"
+
+#: networkmodel.cpp:175
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Multicast"
+msgstr "Multicast"
+
+#: networkmodel.cpp:182
+#, kde-format
+msgctxt "@item:intable Network type"
+msgid "Loopback"
+msgstr "Loopback"
+
+#: ui/main.qml:29
+#, kde-format
+msgctxt "@label"
+msgid "Name:"
+msgstr "Име:"
+
+#: ui/main.qml:33
+#, kde-format
+msgctxt "@label"
+msgid "Address:"
+msgstr "Адрес:"
+
+#: ui/main.qml:37
+#, kde-format
+msgctxt "@label"
+msgid "Network Mask:"
+msgstr "Мрежова маска:"
+
+#: ui/main.qml:41
+#, kde-format
+msgctxt "@label"
+msgid "Type:"
+msgstr "Вид:"
+
+#: ui/main.qml:45
+#, kde-format
+msgctxt "@label"
+msgid "Hardware Address:"
+msgstr "Хардуер адрес:"
+
+#: ui/main.qml:50
+#, kde-format
+msgctxt "@label"
+msgid "State:"
+msgstr "Състояние:"
+
+#: ui/main.qml:58
+#, kde-format
+msgctxt "State of network card is connected"
+msgid "Up"
+msgstr "Включено"
+
+#: ui/main.qml:59
+#, kde-format
+msgctxt "State of network card is disconnected"
+msgid "Down"
+msgstr "Изключено"
+
+#: ui/main.qml:70
+#, kde-format
+msgctxt "@action:button"
+msgid "Refresh"
+msgstr "Обновяване"
+
