@@ -15,7 +15,6 @@ Dependencies:
     'frameworks/kio': '@latest-kf6'
     'frameworks/kjobwidgets': '@latest-kf6'
     'frameworks/kservice': '@latest-kf6'
-    'frameworks/kwidgetsaddons': '@latest-kf6'
     'frameworks/kwindowsystem': '@latest-kf6'
     'frameworks/solid': '@latest-kf6'
     'plasma/systemsettings': '@same'
