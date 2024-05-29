@@ -32,8 +32,6 @@ find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
     KIO
     Service
     Solid
-    WidgetsAddons
-    Solid
     Auth
 )
 
