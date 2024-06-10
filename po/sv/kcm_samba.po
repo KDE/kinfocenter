@@ -6,15 +6,15 @@
 # Anders Widell <awl@hem.passagen.se>, 1998.
 # Per Lindström <pelinsr@algonet.se>, 2000.
 # Mattias Newzella <newzella@linux.nu>, 2000, 2001, 2002, 2003.
-# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2005, 2007, 2008.
-# Stefan Asserhall <stefan.asserhall@bredband.net>, 2010, 2014, 2020.
+# Stefan Asserhäll <stefan.asserhall@gmail.com>, 2005, 2007, 2008.
+# Stefan Asserhall <stefan.asserhall@gmail.com>, 2010, 2014, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-24 00:39+0000\n"
 "PO-Revision-Date: 2020-09-30 07:36+0200\n"
-"Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
@@ -59,7 +59,7 @@ msgstr "Öppna katalogegenskaper för att ändra delningsinställningar"
 
 #~ msgctxt "EMAIL OF TRANSLATORS"
 #~ msgid "Your emails"
-#~ msgstr "stefan.asserhall@telia.com,newzella@linux.nu"
+#~ msgstr "stefan.asserhall@gmail.com,newzella@linux.nu"
 
 #~ msgid "kcmsamba"
 #~ msgstr "IM Samba"
