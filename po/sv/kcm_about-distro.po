@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2013, 2014, 2016, 2018, 2020, 2021, 2022.
+# SPDX-FileCopyrightText: 2013, 2014, 2016, 2018, 2020, 2021, 2022, 2024 Stefan Asserhäll <stefan.asserhall@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-24 00:39+0000\n"
-"PO-Revision-Date: 2022-08-03 10:02+0200\n"
+"PO-Revision-Date: 2024-06-09 11:35+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.08.1\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -121,10 +121,7 @@ msgid "Operating System:"
 msgstr "Operativsystem:"
 
 #: OSVersionEntry.cpp:11
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "%1 is a label already including a colon, %2 is the corresponding value"
-#| msgid "%1 %2"
+#, kde-format
 msgctxt "@label %1 is the distro name, %2 is the version"
 msgid "%1 %2"
 msgstr "%1 %2"
@@ -135,7 +132,7 @@ msgctxt ""
 "@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
 "should be a number, or 'rolling'"
 msgid "%1 %2 Build: %3"
-msgstr ""
+msgstr "%1 %2 Bygge: %3"
 
 #: PlasmaEntry.cpp:15
 #, kde-format
@@ -146,7 +143,7 @@ msgstr "Version av KDE Plasma:"
 #, kde-format
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
-msgstr ""
+msgstr ":"
 
 #: ui/main.qml:90
 #, kde-format
@@ -158,7 +155,7 @@ msgstr "Serienummer"
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
-msgstr ""
+msgstr "Kopiera"
 
 #: ui/main.qml:125
 #, kde-format
@@ -179,38 +176,34 @@ msgid "Hardware"
 msgstr "Hårdvara"
 
 #: ui/main.qml:164
-#, fuzzy, kde-format
-#| msgctxt "@action:button launches kinfocenter from systemsettings"
-#| msgid "Show More Information"
+#, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "More System Information"
-msgstr "Visa mer information"
+msgstr "Mer systeminformation"
 
 #: ui/main.qml:165
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Launch %1"
-msgstr ""
+msgstr "Starta %1"
 
 #: ui/main.qml:173 ui/main.qml:181
-#, fuzzy, kde-format
-#| msgctxt "EMAIL OF TRANSLATORS"
-#| msgid "Your emails"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
-msgstr "stefan.asserhall@bredband.net"
+msgstr "Kopiera information"
 
 #: ui/main.qml:184
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
-msgstr ""
+msgstr "På nuvarande språk"
 
 #: ui/main.qml:190
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
-msgstr ""
+msgstr "På engelska"
 
 #~ msgctxt "@action:button"
 #~ msgid "Copy to Clipboard"
