@@ -216,7 +216,7 @@ msgstr "最近 7 天"
 #, kde-format
 msgctxt "@info:status"
 msgid "No energy information available on this system"
-msgstr "本系统无可用电量信息"
+msgstr "本系统没有可用的电量信息"
 
 #: ui/main.qml:182
 #, kde-format
