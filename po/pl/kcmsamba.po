@@ -1,16 +1,16 @@
-# Version: $Revision: 1681059 $
+# Version: $Revision: 1683038 $
 # translation of kcmsamba.po to
+# SPDX-FileCopyrightText: 2011, 2014, 2017, 2020, 2021, 2024 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
 # Marcin Giedz <mgiedz@elka.pw.edu.pl>, 2002.
 # Michal Rudolf <mrudolf@kdewebdev.org>, 2003.
 # Krzysztof Lichota <lichota@mimuw.edu.pl>, 2005.
 # Marta Rybczyńska <kde-i18n@rybczynska.net>, 2007, 2008.
-# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2011, 2014, 2017, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-11-17 00:29+0000\n"
-"PO-Revision-Date: 2021-01-23 06:49+0100\n"
+"PO-Revision-Date: 2024-06-22 08:59+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -19,6 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -84,25 +85,25 @@ msgstr "Harald Sitter"
 #, kde-format
 msgctxt "@title heading above listview"
 msgid "User-Created Shares"
-msgstr "Udziały utworzone przez użytkownika"
+msgstr "Udostępniane lokalne katalogi"
 
 #: package/contents/ui/main.qml:22
 #, kde-format
 msgctxt "@title heading above listview"
 msgid "Mounted Remote Shares"
-msgstr "Podpięte zdalne udziały"
+msgstr "Podpięte zdalne katalogi"
 
 #: package/contents/ui/main.qml:49
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no directories shared by users"
-msgstr "Nie ma katalogów współdzielonych przez użytkowników"
+msgstr "Na tym systemie żaden użytkownik nie udostępnia katalogów"
 
 #: package/contents/ui/main.qml:89
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no Samba shares mounted on this system"
-msgstr "Nie ma udziałów podpiętych na tym systemie"
+msgstr "Na tym systemie nie podpięto żadnych udziałów"
 
 #: package/contents/ui/ShareListItem.qml:71
 #, kde-kuit-format
