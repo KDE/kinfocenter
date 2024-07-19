@@ -1,0 +1,12 @@
+{
+    "Categories": "Qt;KDE;X-KDE-information;",
+    "KPlugin": {
+        "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
+        "Description": "Memory Information",
+        "Icon": "memory",
+        "Name": "Memory"
+    },
+    "TryExec": "pkexec dmidecode",
+    "X-KDE-KInfoCenter-Category": "device_information",
+    "X-KDE-Keywords": "Memory,RAM,dmidecode"
+}
