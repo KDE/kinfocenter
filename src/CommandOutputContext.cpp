@@ -117,6 +117,15 @@ void CommandOutputContext::load()
         }
 
         m_text = QString::fromLocal8Bit(proc->readAllStandardOutput());
+        if (m_text.contains("Error executing command as another user: Not authorized", Qt::CaseInsensitive)) {
+            // If the command is run with pkexec and the authentication fails or the user cancels the authentication,
+            // the output will contain an error message including "This incident has been reported.", in which case we
+            // want to replace the error message with a more user-friendly one.
+            return setError(xi18nc("@info", "Authentication failed for the <command>%1</command> tool", m_executableName),
+                            xi18nc("@info",
+                                   "This tool needs to run with elevated privileges to function properly.<nl/>"
+                                   "Please try again and make sure to enter your password correctly."));
+        }
         if (m_trimAllowed) {
             m_text = m_text.trimmed();
         }
