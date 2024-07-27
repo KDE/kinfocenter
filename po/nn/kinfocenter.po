@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-17 00:39+0000\n"
-"PO-Revision-Date: 2024-07-06 16:24+0200\n"
+"PO-Revision-Date: 2024-07-26 14:36+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.05.1\n"
+"X-Generator: Lokalize 24.11.70\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -25,6 +25,8 @@ msgid ""
 "The <command>%1</command> tool is required to display this page, but could "
 "not be found"
 msgstr ""
+"Treng verktøyet <command>%1</command> for å visa denne sida, men det er "
+"ikkje tilgjengeleg."
 
 #: CommandOutputContext.cpp:100
 #, kde-kuit-format
@@ -33,12 +35,14 @@ msgid ""
 "You can search for it and install it using your package manager.<nl/>Then "
 "please report this packaging issue to your distribution."
 msgstr ""
+"Du kan søkja etter og installera det med pakkehandsamaren.<nl/>Meld frå om "
+"denne pakkefeilen til distribusjonen din."
 
 #: CommandOutputContext.cpp:113
 #, kde-kuit-format
 msgctxt "@info"
 msgid "The <command>%1</command> tool crashed while generating page content"
-msgstr ""
+msgstr "Verktøyet <command>%1</command> krasja ved generering av sideinnhaldet"
 
 #: CommandOutputContext.cpp:114
 #, kde-kuit-format
@@ -47,12 +51,14 @@ msgid ""
 "Try again later. If keeps happening, please report the crash to your "
 "distribution."
 msgstr ""
+"Prøv på nytt. Viss dette skjer fleire gongar, meld frå om feilen til "
+"distribusjonen din."
 
 #: qml/CommandOutputKCM.qml:86
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
-msgstr ""
+msgstr "Ingen tekst i samsvar med filteret"
 
 #: qml/CommandOutputKCM.qml:91
 #, kde-format
