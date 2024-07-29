@@ -3,6 +3,7 @@
     "KPlugin": {
         "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
         "Description": "Memory Information",
+        "Description[ar]": "معلومات الذاكرة",
         "Description[bg]": "Информация за паметта",
         "Description[ca@valencia]": "Informació de la memòria",
         "Description[ca]": "Informació de la memòria",
@@ -27,7 +28,7 @@
         "Icon": "memory",
         "Name": "Memory",
         "Name[af]": "Geheue",
-        "Name[ar]": "الذّاكرة",
+        "Name[ar]": "الذاكرة",
         "Name[as]": "স্মৃতিশক্তি",
         "Name[az]": "Yaddaş",
         "Name[be@latin]": "Pamiać",
