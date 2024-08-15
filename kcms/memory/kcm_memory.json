@@ -28,6 +28,7 @@
         "Description[uk]": "Інформація щодо пам'яті",
         "Description[x-test]": "xxMemory Informationxx",
         "Description[zh_CN]": "内存信息",
+        "Description[zh_TW]": "記憶體資訊",
         "Icon": "memory",
         "Name": "Memory",
         "Name[af]": "Geheue",
