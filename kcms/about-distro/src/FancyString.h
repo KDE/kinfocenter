@@ -12,6 +12,8 @@ namespace FancyString
 {
 // Turns ugly '(R)' '(TM)' ascii into unicode.
 QString fromUgly(const QString &string);
-}
+// Turns renderer string into a fancy string (drops excess parentheses and such).
+QString fromRenderer(const QString &renderer);
+} // namespace FancyString
 
 #endif // FANCYSTRING_H
