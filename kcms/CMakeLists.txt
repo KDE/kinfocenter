@@ -1,3 +1,4 @@
+add_subdirectory(helpers)
 
 add_subdirectory( about-distro )
 add_subdirectory(vulkan)
