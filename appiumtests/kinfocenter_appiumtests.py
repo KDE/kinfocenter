@@ -37,14 +37,8 @@ class AboutThisSystemTests(unittest.TestCase):
     def setUp(self):
         pass
 
-    def tearDown(self) -> None:
-        """
-        Take screenshot when the current test fails
-        """
-        if not self._outcome.result.wasSuccessful():
-            self.driver.get_screenshot_as_file(
-                f"failed_test_shot_kinfocenter_kcms_#{self.id()}.png"
-            )
+    def tearDown(self):
+        self.driver.get_screenshot_as_file("failed_test_shot_{}.png".format(self.id()))
 
     def test_About_this_System(self):
         self.driver.find_element(by=AppiumBy.NAME, value="About this System").click()
@@ -60,7 +54,7 @@ class AboutThisSystemTests(unittest.TestCase):
         self.assertIn(
             "Graphics Platform: Wayland",
             text,
-            "'Graphics Platform: Wayland' not found in 'Abou this System' KCM",
+            "'Graphics Platform: Wayland' not found in 'About this System' KCM",
         )
 
     def test_Devices_CPU(self):

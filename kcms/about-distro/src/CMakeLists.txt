@@ -1,6 +1,8 @@
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Version.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/Version.h)
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
+add_subdirectory(opengl-helper)
+
 set(kcm_SRCS
     CPUEntry.cpp
     CPUEntry.h
@@ -37,4 +39,14 @@ target_link_libraries(kcm_about-distro  PRIVATE
     KF6::Service
     KF6::KIOGui
     KF6::AuthCore
+    PkgConfig::libdrm
+)
+
+cmake_path(RELATIVE_PATH KDE_INSTALL_FULL_LIBEXECDIR BASE_DIRECTORY "${KDE_INSTALL_FULL_PLUGINDIR}/plasma/kcms/" OUTPUT_VARIABLE LIBEXECDIR_FROM_KCM)
+
+target_compile_options(
+    kcm_about-distro
+    PRIVATE
+        -DKDE_INSTALL_FULL_LIBEXECDIR=\"${KDE_INSTALL_FULL_LIBEXECDIR}\"
+        -DLIBEXECDIR_FROM_KCM=\"${LIBEXECDIR_FROM_KCM}\"
 )
