@@ -12,7 +12,7 @@ QString fromUgly(const QString &string)
     QString ugly(string);
     ugly.replace(QStringLiteral("(TM)"), QChar(8482));
     ugly.replace(QStringLiteral("(R)"), QChar(174));
-    return ugly.simplified();
+    return ugly.trimmed();
 }
 
 } // namespace FancyString

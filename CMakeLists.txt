@@ -36,6 +36,10 @@ find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
     Auth
 )
 
+find_package(PkgConfig)
+pkg_check_modules(libdrm REQUIRED IMPORTED_TARGET libdrm)
+pkg_check_modules(libpci REQUIRED IMPORTED_TARGET libpci)
+
 ecm_find_qmlmodule(org.kde.kirigami 2.5)
 
 macro(kinfocenter_add_kcm target)

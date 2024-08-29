@@ -39,4 +39,6 @@ target_link_libraries(kcm_about-distro  PRIVATE
     KF6::Service
     KF6::KIOGui
     KF6::AuthCore
+    PkgConfig::libdrm
+    PkgConfig::libpci
 )

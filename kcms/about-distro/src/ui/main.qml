@@ -80,6 +80,7 @@ KCMUtils.SimpleKCM {
                 id: entryComponent
                 RowLayout {
                     Kirigami.FormData.label: entry.localizedLabel()
+                    Kirigami.FormData.labelAlignment: Qt.AlignTop
                     readonly property bool hidden: entry.isHidden()
 
                     Component {

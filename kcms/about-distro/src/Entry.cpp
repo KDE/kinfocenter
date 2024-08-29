@@ -5,6 +5,8 @@
 
 #include "Entry.h"
 
+using namespace Qt::StringLiterals;
+
 Entry::Entry(const KLocalizedString &label_, const QString &value_, Hidden hidden)
     : m_label(label_)
     , m_value(value_)
@@ -31,7 +33,7 @@ QString Entry::diagnosticLine(Language language) const
     // that is to say the colon should be on the left, BUT englishy words
     // within that should be LTR, everything besides the label should be LTR
     // because we do not localize the values I don't think?
-    return localizedLabel(language) + ' ' + localizedValue(language) + '\n';
+    return localizedLabel(language) + ' ' + localizedValue(language).replace('\n'_L1, " | "_L1) + '\n';
 }
 
 QString Entry::localize(const KLocalizedString &string, Language language) const
