@@ -2,6 +2,7 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Version.h.cmake ${CMAKE_CURRENT_BINAR
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
 add_subdirectory(dmidecode-helper)
+add_subdirectory(gpu-helper)
 
 set(kcm_SRCS
     CPUEntry.cpp
