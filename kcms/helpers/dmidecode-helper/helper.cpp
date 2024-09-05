@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 // SPDX-FileCopyrightText: 2021-2022 Harald Sitter <sitter@kde.org>
+// SPDX-FileCopyrightText: 2024 Kristen McWilliam <kmcwilliampublic@gmail.com>
 
 #include "helper.h"
 
@@ -16,16 +17,18 @@ auto make_array(Input &&...args) -> std::array<Output, sizeof...(args)> // NB: w
     return {std::forward<Input>(args)...};
 }
 
+DMIDecodeHelper::DMIDecodeHelper(QObject *parent)
+    : QObject(parent)
+{
+    // PATH is super minimal when invoked through dbus
+    setenv("PATH", "/usr/sbin:/sbin:/usr/local/sbin", 1);
+
+    m_dmidecodePath = QStandardPaths::findExecutable("dmidecode");
+}
+
 KAuth::ActionReply DMIDecodeHelper::systeminformation(const QVariantMap &args)
 {
     Q_UNUSED(args);
-
-    // PATH is super minimal when invoked through dbus
-    setenv("PATH", "/usr/sbin:/sbin:/usr/local/sbin", 1);
-    const QString dmidecode = QStandardPaths::findExecutable("dmidecode");
-    if (dmidecode.isEmpty()) {
-        return KAuth::ActionReply::HelperErrorReply();
-    }
 
     // NB: Microsoft also outlines a limited set of DMI values to be required for IOT OEM licensing, as such we
     //   can rely on the same fields to have sound content . Since this only applies to OEMs we still need to filter
@@ -33,18 +36,19 @@ KAuth::ActionReply DMIDecodeHelper::systeminformation(const QVariantMap &args)
     // https://docs.microsoft.com/en-us/windows-hardware/manufacture/iot/license-requirements?view=windows-11#smbios-support
 
     KAuth::ActionReply reply;
-    for (const auto &key : {QStringLiteral("system-manufacturer"),
-                            QStringLiteral("system-product-name"),
-                            QStringLiteral("system-version"),
-                            QStringLiteral("system-serial-number")}) {
-        QProcess proc;
-        proc.start(dmidecode, {QStringLiteral("--string"), key});
-        proc.waitForFinished();
-        const QByteArray output = proc.readAllStandardOutput().trimmed();
 
-        if (output.isEmpty() || proc.error() != QProcess::UnknownError || proc.exitStatus() != QProcess::NormalExit) {
+    const auto keys = {QStringLiteral("system-manufacturer"),
+                       QStringLiteral("system-product-name"),
+                       QStringLiteral("system-version"),
+                       QStringLiteral("system-serial-number")};
+
+    for (const auto &key : keys) {
+        auto result = executeDmidecode({QStringLiteral("--string"), key});
+        if (result.failed()) {
             continue;
         }
+
+        const auto output = result.data().value("result").toString();
 
         // Fairly exhaustive filter list based on a dozen or so samples gathered from reddit and other places.
         // These are values that may appear in the DMI system information but aren't really useful.
@@ -59,12 +63,34 @@ KAuth::ActionReply DMIDecodeHelper::systeminformation(const QVariantMap &args)
                                                           QStringLiteral("not specified"),
                                                           QStringLiteral("not applicable")
                                                           /* may also be empty, but that is filtered above already */);
+
         if (std::find(dummyData.cbegin(), dummyData.cend(), output.toLower()) != dummyData.cend()) {
             continue;
         }
 
         reply.addData(key, output);
     }
+
+    return reply;
+}
+
+KAuth::ActionReply DMIDecodeHelper::executeDmidecode(const QStringList &arguments)
+{
+    if (m_dmidecodePath.isEmpty()) {
+        return KAuth::ActionReply::HelperErrorReply();
+    }
+
+    QProcess proc;
+    proc.start(m_dmidecodePath, arguments);
+    proc.waitForFinished();
+    const QByteArray output = proc.readAllStandardOutput().trimmed();
+
+    if (output.isEmpty() || proc.error() != QProcess::UnknownError || proc.exitStatus() != QProcess::NormalExit) {
+        return KAuth::ActionReply::HelperErrorReply();
+    }
+
+    KAuth::ActionReply reply;
+    reply.addData("result", output);
     return reply;
 }
 
