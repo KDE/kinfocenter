@@ -3,7 +3,7 @@
 # Frederik Schwarzer <schwarzer@kde.org>, 2014, 2015, 2016, 2022, 2023.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: kcm_about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-24 00:39+0000\n"
 "PO-Revision-Date: 2024-03-20 21:16+0100\n"
