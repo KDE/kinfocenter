@@ -7,7 +7,7 @@
 # Automatically generated, 2021.
 msgid ""
 msgstr ""
-"Project-Id-Version: kinfocenter\n"
+"Project-Id-Version: kcm_wayland\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-11-17 00:29+0000\n"
 "PO-Revision-Date: 2021-11-02 18:59+0100\n"

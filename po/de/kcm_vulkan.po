@@ -8,7 +8,7 @@
 # Automatically generated, 2021.
 msgid ""
 msgstr ""
-"Project-Id-Version: kinfocenter\n"
+"Project-Id-Version: kcm_vulkan\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-11-17 00:29+0000\n"
 "PO-Revision-Date: 2022-10-05 22:40+0200\n"

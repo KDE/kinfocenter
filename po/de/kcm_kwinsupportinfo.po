@@ -6,7 +6,7 @@
 # Automatically generated, 2022.
 msgid ""
 msgstr ""
-"Project-Id-Version: kinfocenter\n"
+"Project-Id-Version: kcm_kwinsupportinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-19 00:46+0000\n"
 "PO-Revision-Date: 2023-01-29 22:18+0100\n"

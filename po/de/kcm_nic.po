@@ -3,7 +3,7 @@
 # Burkhard Lück <lueck@hube-lueck.de>, 2012, 2020.
 msgid ""
 msgstr ""
-"Project-Id-Version: kcmnic\n"
+"Project-Id-Version: kcm_nic\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-07 02:38+0000\n"
 "PO-Revision-Date: 2020-10-19 06:57+0200\n"
