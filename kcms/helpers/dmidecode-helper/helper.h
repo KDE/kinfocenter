@@ -14,6 +14,11 @@ public:
     explicit DMIDecodeHelper(QObject *parent = nullptr);
 
 public Q_SLOTS:
+    /**
+     * Retrieves memory (RAM) information from dmidecode.
+     */
+    KAuth::ActionReply memoryinformation(const QVariantMap &args);
+
     KAuth::ActionReply systeminformation(const QVariantMap &args);
 
 private:
