@@ -6,7 +6,7 @@
 # Burkhard Lück <lueck@hube-lueck.de>, 2014, 2020, 2021.
 msgid ""
 msgstr ""
-"Project-Id-Version: kcmsamba\n"
+"Project-Id-Version: kcm_samba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-24 00:39+0000\n"
 "PO-Revision-Date: 2021-04-18 15:23+0200\n"
