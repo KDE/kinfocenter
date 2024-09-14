@@ -74,5 +74,6 @@
     },
     "TryExec": "clinfo",
     "X-KDE-KInfoCenter-Category": "graphical_information",
-    "X-KDE-Keywords": "OpenCL,VideoCard,Hardware Acceleration,Graphics"
+    "X-KDE-Keywords": "OpenCL,VideoCard,Hardware Acceleration,Graphics",
+    "X-KDE-Keywords[x-test]": "xxOpenCLxx,xxVideoCardxx,xxHardware Accelerationxx,xxGraphicsxx"
 }

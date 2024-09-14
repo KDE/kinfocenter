@@ -92,6 +92,7 @@
     },
     "X-KDE-KInfoCenter-Category": "basic_information",
     "X-KDE-Keywords": "about,info,information,distribution,distro,system,kernel,qt,kde,version",
+    "X-KDE-Keywords[x-test]": "xxaboutxx,xxinfoxx,xxinformationxx,xxdistributionxx,xxdistroxx,xxsystemxx,xxkernelxx,xxqtxx,xxkdexx,xxversionxx",
     "X-KDE-System-Settings-Parent-Category": "system-administration",
     "X-KDE-Weight": 0
 }
