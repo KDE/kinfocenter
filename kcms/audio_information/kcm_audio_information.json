@@ -74,5 +74,14 @@
     },
     "TryExec": "pactl",
     "X-KDE-KInfoCenter-Category": "device_information",
-    "X-KDE-Keywords": "Pipewire,Audio,PulseAudio,pactl"
+    "X-KDE-Keywords": "Pipewire,Audio,PulseAudio,pactl",
+    "X-KDE-Keywords[ca]": "Pipewire,Àudio,PulseAudio,pactl",
+    "X-KDE-Keywords[he]": "Pipewire,Audio,PulseAudio,pactl,שמע,צליל,התקני שמע,רמקולים,אוזניות",
+    "X-KDE-Keywords[ia]": "Pipewire,Audio,PulseAudio,pactl",
+    "X-KDE-Keywords[ka]": "Pipewire,Audio,PulseAudio,pactl,აუდიო",
+    "X-KDE-Keywords[sl]": "Pipewire,Audio,PulseAudio,pactl",
+    "X-KDE-Keywords[sv]": "Pipewire,ljud,PulseAudio,pactl",
+    "X-KDE-Keywords[tr]": "pipewire,ses,pulseaudio,pactl",
+    "X-KDE-Keywords[uk]": "Pipewire,Audio,PulseAudio,pactl,звук,аудіо,пульсаудіо,пайпваєр",
+    "X-KDE-Keywords[x-test]": "xxPipewirexx,xxAudioxx,xxPulseAudioxx,xxpactlxx"
 }

@@ -98,6 +98,15 @@
     },
     "X-KDE-KInfoCenter-Category": "basic_information",
     "X-KDE-Keywords": "about,info,information,distribution,distro,system,kernel,qt,kde,version",
+    "X-KDE-Keywords[ca]": "quant,info,informació,distribució,distro,sistema,nucli,qt,kde,versió",
+    "X-KDE-Keywords[he]": "about,information,distribution,distro,system,kernel,qt,kde,מידע,הפצה,מערכת,ליבה,פלזמה,אודות,על אודות",
+    "X-KDE-Keywords[ia]": "about,info,information,distribution,distro,system,kernel,qt,kde,version",
+    "X-KDE-Keywords[ka]": "about,info,information,distribution,distro,system,kernel,qt,kde,version,შესახებ,ვერსია,ინფორმაცია,დისტრიბუტივი,სისტემა,ბირთვი",
+    "X-KDE-Keywords[sl]": "o,info,informacije,distribucija,distro,sistem,jedro,qt,kde,različica",
+    "X-KDE-Keywords[sv]": "om,info,information,distribution,distro,system,kernel,qt,kde,version",
+    "X-KDE-Keywords[tr]": "hakkında,bilgi,dağıtım,distro,sistem,kernel,çekirdek,qt,kde,sürüm,versiyon",
+    "X-KDE-Keywords[uk]": "information,distribution,distro,system,kernel,qt,kde,version,інформація,дистрибутив,дистро,система,ядро,процесор,комп’ютер,інфо,версія",
+    "X-KDE-Keywords[x-test]": "xxaboutxx,xxinfoxx,xxinformationxx,xxdistributionxx,xxdistroxx,xxsystemxx,xxkernelxx,xxqtxx,xxkdexx,xxversionxx",
     "X-KDE-System-Settings-Parent-Category": "system-administration",
     "X-KDE-Weight": 0
 }
