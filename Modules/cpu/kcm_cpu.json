@@ -93,6 +93,7 @@
     "X-KDE-KInfoCenter-Category": "device_information",
     "X-KDE-Keywords": "cpu,amd,intel,arm,instructions,cores,architecture,byte order",
     "X-KDE-Keywords[az]": "cpu,amd,intel,arm,instructions,cores,architecture,byte order,təlimatlar,nüvə,növbə,arxitektura,bayt",
+    "X-KDE-Keywords[ca]": "cpu,amd,intel,arm,instruccions,nuclis,arquitectura,ordre dels bytes",
     "X-KDE-Keywords[el]": "cpu,amd,intel,arm,instructions,πυρήνες,αρχιτεκτονική,byte order",
     "X-KDE-Keywords[en_GB]": "cpu,amd,intel,arm,instructions,cores,architecture,byte order",
     "X-KDE-Keywords[es]": "cpu,amd,intel,arm,instrucciones,cores,núcleos,arquitectura,byte order,orden de bytes",
