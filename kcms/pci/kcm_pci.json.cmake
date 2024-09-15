@@ -156,6 +156,7 @@
     "X-KDE-Keywords[et]": "PCI,PCI seadmed,PCI siin,süsteemi teave",
     "X-KDE-Keywords[eu]": "PCI,PCI gailuak,PCI busa,sistema-informazioa",
     "X-KDE-Keywords[fi]": "PCI,PCI-laitteet,PCI-väylä,järjestelmätiedot",
+    "X-KDE-Keywords[fr]": "PCI, Périphériques PCI, Bus PCI, Informations Système",
     "X-KDE-Keywords[ga]": "PCI,Gléasanna PCI,Bun PCI,Eolas faoin Chóras",
     "X-KDE-Keywords[gl]": "PCI,dispositivos PCI,bus PCI,Información do sistema",
     "X-KDE-Keywords[he]": "Interrupts,IRQ,System Information,פסיקות,מידע,פרטי מערכת",
