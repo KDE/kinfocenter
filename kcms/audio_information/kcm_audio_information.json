@@ -74,5 +74,9 @@
     },
     "TryExec": "pactl",
     "X-KDE-KInfoCenter-Category": "device_information",
-    "X-KDE-Keywords": "Pipewire,Audio,PulseAudio,pactl"
+    "X-KDE-Keywords": "Pipewire,Audio,PulseAudio,pactl",
+    "X-KDE-Keywords[ca]": "Pipewire,Àudio,PulseAudio,pactl",
+    "X-KDE-Keywords[sl]": "Pipewire,Audio,PulseAudio,pactl",
+    "X-KDE-Keywords[sv]": "Pipewire,ljud,PulseAudio,pactl",
+    "X-KDE-Keywords[tr]": "pipewire,ses,pulseaudio,pactl"
 }

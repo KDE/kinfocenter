@@ -147,6 +147,7 @@
     "X-KDE-Keywords[ar]": "USB,أجهزة,عارض,تحكّم",
     "X-KDE-Keywords[az]": "USB,devices,viewer,control,qurğu,baxış,nəzarət,idarəetmə",
     "X-KDE-Keywords[bs]": "Usb,uređaji,gledatelj,kontrola",
+    "X-KDE-Keywords[ca]": "USB,dispositius,visualitzador,control",
     "X-KDE-Keywords[da]": "USB,enheder,fremviser,kontrol",
     "X-KDE-Keywords[de]": "USB,Geräte,Betrachter,Steuerung",
     "X-KDE-Keywords[el]": "USB,συσκευές,προβολέας,έλεγχος",
@@ -155,7 +156,6 @@
     "X-KDE-Keywords[et]": "USB,seadmed,näitaja,juhtimine",
     "X-KDE-Keywords[eu]": "USB,gailuak,erakuslea,ikustailea,kontrola",
     "X-KDE-Keywords[fi]": "USB,laitteet,katselin,näytin,hallinta",
-    "X-KDE-Keywords[fr]": "USB, périphériques, afficheur, contrôle",
     "X-KDE-Keywords[ga]": "USB,gléasanna,amharcán,rialú",
     "X-KDE-Keywords[gl]": "USB,dispositivo,visor,control",
     "X-KDE-Keywords[hu]": "USB,eszközök,megjelenítő,beállítás",
@@ -181,6 +181,7 @@
     "X-KDE-Keywords[sr@latin]": "USB,devices,viewer,control,USB,uređaji,prikazivač,upravljanje",
     "X-KDE-Keywords[sr]": "USB,devices,viewer,control,УСБ,уређаји,приказивач,управљање",
     "X-KDE-Keywords[sv]": "USB,enheter,visning,kontroll",
+    "X-KDE-Keywords[tr]": "usb,aygıt,cihaz,görüntüleyici,denetim,kontrol",
     "X-KDE-Keywords[uk]": "USB,devices,viewer,control,пристрій,пристрої,перегляд,переглядач,керування,контроль",
     "X-KDE-Keywords[vi]": "USB,devices,viewer,control,thiết bị,trình xem,điều khiển",
     "X-KDE-Keywords[zh_TW]": "USB,devices,viewer,control"

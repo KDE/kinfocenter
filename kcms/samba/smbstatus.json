@@ -148,6 +148,7 @@
     "X-KDE-Keywords[ar]": "SMB,سامبا,شبكة وندوز,LAN,معلومات النّظام",
     "X-KDE-Keywords[az]": "SMB,SAMBA,Windows network,LAN,System Information,Windows şəbəkəsi,lokal şəbəkə,lokal hesablama şəbəkəsi,LHŞ",
     "X-KDE-Keywords[bs]": "SMB,SAMBA,Windows umrežavanje,LAN,Sistemske informacije",
+    "X-KDE-Keywords[ca]": "SMB,SAMBA,Xarxa Windows,LAN,Informació del sistema",
     "X-KDE-Keywords[da]": "SMB,SAMBA,Windows netværk,LAN,Systeminformation",
     "X-KDE-Keywords[de]": "SMB,Samba,Windows-Netzwerk,LAN,Systeminformationen",
     "X-KDE-Keywords[el]": "SMB,SAMBA,δίκτυο Windows,LAN,πληροφορίες συστήματος",
@@ -156,7 +157,6 @@
     "X-KDE-Keywords[et]": "SMB,SAMBA,Windowsi võrk,LAN,süsteemi teave",
     "X-KDE-Keywords[eu]": "SMB,SAMBA,Windows sarea,LAN,sistema-informazioa",
     "X-KDE-Keywords[fi]": "SMB,SAMBA,Windows-verkko,LAN,järjestelmätiedot",
-    "X-KDE-Keywords[fr]": "SMB, SAMBA, réseau Windows, LAN, Informations système",
     "X-KDE-Keywords[ga]": "SMB,SAMBA,Líonra Windows,LAN,líonra logánta,Eolas faoin Chóras",
     "X-KDE-Keywords[gl]": "SMB,SAMBA,Rede de Windows,LAN,Información do sistema",
     "X-KDE-Keywords[hu]": "SMB,SAMBA,Windows hálózat,LAN,Rendszerinformáció",
@@ -182,6 +182,7 @@
     "X-KDE-Keywords[sr@latin]": "SMB,SAMBA,Windows network,LAN,System Information,SMB,Samba,windows mreža,LAN,sistemske informacije",
     "X-KDE-Keywords[sr]": "SMB,SAMBA,Windows network,LAN,System Information,СМБ,Самба,виндоуз мрежа,ЛАН,системске информације",
     "X-KDE-Keywords[sv]": "SMB,SAMBA,Windows-nätverk,LAN,Systeminformation",
+    "X-KDE-Keywords[tr]": "smb,samba,windows ağı,lan,sistem bilgisi",
     "X-KDE-Keywords[uk]": "SMB,SAMBA,Windows network,LAN,System Information,мережа,віндоус,віндоуз,віндовс,віндовз,система,інформація,відомості",
     "X-KDE-Keywords[vi]": "SMB,SAMBA,Windows network,LAN,System Information,Mạng Windows,Thông tin hệ thống",
     "X-KDE-Keywords[zh_TW]": "SMB,SAMBA,Windows network,LAN,System Information"

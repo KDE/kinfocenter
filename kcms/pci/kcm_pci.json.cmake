@@ -147,6 +147,7 @@
     "X-KDE-Keywords[ar]": "PCI,أجهزة PCI,PCI-Bus,معلومات النّظام",
     "X-KDE-Keywords[az]": "PCI,PCI-Devices,PCI-Bus,System Information,PCİ yolu,PCİ cihazı,sistem haqqında məlumat",
     "X-KDE-Keywords[bs]": "PCI,PCI-uređaji,PCI-Bus,Sistemske informacije",
+    "X-KDE-Keywords[ca]": "PCI,Dispositius PCI,Bus PCI,Informació del sistema",
     "X-KDE-Keywords[da]": "PCI,PCI-enheder,PCI-Bus,Systeminformation",
     "X-KDE-Keywords[de]": "PCI,PCI-Geräte,PCI-Bus,Systeminformationen",
     "X-KDE-Keywords[el]": "PCI,PCI-συσκευές,PCI-Bus,πληροφορίες συστήματος",
@@ -155,7 +156,6 @@
     "X-KDE-Keywords[et]": "PCI,PCI seadmed,PCI siin,süsteemi teave",
     "X-KDE-Keywords[eu]": "PCI,PCI gailuak,PCI busa,sistema-informazioa",
     "X-KDE-Keywords[fi]": "PCI,PCI-laitteet,PCI-väylä,järjestelmätiedot",
-    "X-KDE-Keywords[fr]": "PCI, Périphériques PCI, Bus PCI, Informations Système",
     "X-KDE-Keywords[ga]": "PCI,Gléasanna PCI,Bun PCI,Eolas faoin Chóras",
     "X-KDE-Keywords[gl]": "PCI,dispositivos PCI,bus PCI,Información do sistema",
     "X-KDE-Keywords[hu]": "PCI,PCI eszközök,PCI busz,Rendszerinformáció",
@@ -181,6 +181,7 @@
     "X-KDE-Keywords[sr@latin]": "PCI,PCI-Devices,PCI-Bus,System Information,PCI,PCI uređaji,PCI magistrala,sistemske informacije",
     "X-KDE-Keywords[sr]": "PCI,PCI-Devices,PCI-Bus,System Information,ПЦИ,ПЦИ уређаји,ПЦИ магистрала,системске информације",
     "X-KDE-Keywords[sv]": "PCI,PCI-Enheter,PCI-Buss,Systeminformation",
+    "X-KDE-Keywords[tr]": "pci,pci aygıtları,pci cihazları,pci veri yolu,sistem bilgisi",
     "X-KDE-Keywords[uk]": "PCI,PCI-Devices,PCI-Bus,System Information,пристрій,пристрої,канал,шина,система,інформація,відомості",
     "X-KDE-Keywords[vi]": "PCI,PCI-Devices,PCI-Bus,System Information,Thiết bị PCI,Buýt PCI,Thông tin hệ thống",
     "X-KDE-Keywords[zh_TW]": "PCI,PCI-Devices,PCI-Bus,System Information"

@@ -99,11 +99,11 @@
     "X-KDE-KInfoCenter-Category": "graphical_information",
     "X-KDE-Keywords": "OpenGL,DRI,3D,VideoCard,Hardware Acceleration,Graphics,EGL",
     "X-KDE-Keywords[az]": "OpenGL,DRI,3D,VideoCard,Hardware Acceleration,Graphics,EGL,Videokart,Avadanlıq sürətləndiricisi,Qrafukalar",
+    "X-KDE-Keywords[ca]": "OpenGL,DRI,3D,Targeta de vídeo,Acceleració per maquinari,Gràfics,EGL",
     "X-KDE-Keywords[el]": "OpenGL,DRI,3D,VideoCard,Επιτάχυνση υλικού,Γραφικά,EGL",
     "X-KDE-Keywords[en_GB]": "OpenGL,DRI,3D,VideoCard,Hardware Acceleration,Graphics,EGL",
     "X-KDE-Keywords[es]": "OpenGL,DRI,3D,tarjeta de vídeo,aceleración por hardware,gráficos,EGL",
     "X-KDE-Keywords[fi]": "OpenGL,DRI,3D,näytönohjain,näyttökortti,laitteistokiihdytys,grafiikka,EGL",
-    "X-KDE-Keywords[fr]": "OpenGL, DRI, 3D, carte vidéo, accélération matérielle, graphique, EGL",
     "X-KDE-Keywords[ia]": "OpenGL,DRI,3D,Carta de Video,Acceleration Hardware,Graphiches,EGL",
     "X-KDE-Keywords[it]": "OpenGL,DRI,3D,Scheda video,Accelerazione hardware,Grafica,EGL",
     "X-KDE-Keywords[ko]": "OpenGL,DRI,3D,VideoCard,Hardware Acceleration,Graphics,EGL,비디오 카드,그래픽 카드,하드웨어 가속,그래픽",
@@ -113,6 +113,7 @@
     "X-KDE-Keywords[sk]": "OpenGL,DRI,grafická karta,hardvérová akcelerácia,grafika,EGL",
     "X-KDE-Keywords[sl]": "OpenGL,DRI,3D,Video kratica,strojno pospeševanje,grafika,EGL",
     "X-KDE-Keywords[sv]": "OpenGL,DRI,3D,Videokort,Maskinvaruacceleration,Grafik,EGL",
+    "X-KDE-Keywords[tr]": "opengl,dri,3d,3b,video kartı,donanım hızlandırması,donanım ivmelendirmesi,grafik,grafikler,egl",
     "X-KDE-Keywords[uk]": "OpenGL,DRI,3D,Vulkan,VideoCard,Hardware Acceleration,Graphics,EGL,вулкан,відеокартка,апаратне прискорення,графіка,оупенгл,оупенгеель,дрі,трид,егл,егеель",
     "X-KDE-Keywords[vi]": "OpenGL,DRI,3D,VideoCard,Hardware Acceleration,Graphics,EGL,Bo mạch đồ hoạ,Tăng tốc phần cứng,Đồ hoạ"
 }
