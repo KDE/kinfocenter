@@ -80,12 +80,10 @@ msgid "Serial Number:"
 msgstr ""
 
 #: main.cpp:210 main.cpp:227
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
-msgstr "Άγνωστο"
+msgstr "Άγνωστο:"
 
 #: main.cpp:223
 #, fuzzy, kde-format

@@ -233,20 +233,17 @@ msgid "UPS Battery"
 msgstr "Μπαταρία UPS"
 
 #: ui/main.qml:184
-#, fuzzy, kde-format
-#| msgid "Internal battery"
+#, kde-format
 msgid "Internal Battery"
 msgstr "Εσωτερική μπαταρία"
 
 #: ui/main.qml:185
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
+#, kde-format
 msgid "Mouse Battery"
 msgstr "Μπαταρία ποντικιού"
 
 #: ui/main.qml:186
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Keyboard Battery"
 msgstr "Μπαταρία πληκτρολογίου"
 
@@ -263,14 +260,12 @@ msgid "Camera Battery"
 msgstr "Μπαταρία"
 
 #: ui/main.qml:189
-#, fuzzy, kde-format
-#| msgid "Phone battery"
+#, kde-format
 msgid "Phone Battery"
 msgstr "Μπαταρία τηλεφώνου"
 
 #: ui/main.qml:190
-#, fuzzy, kde-format
-#| msgid "Monitor battery"
+#, kde-format
 msgid "Monitor Battery"
 msgstr "Μπαταρία οθόνης"
 
@@ -310,8 +305,7 @@ msgid "Touchpad Battery"
 msgstr "Μπαταρία πληκτρολογίου"
 
 #: ui/main.qml:197
-#, fuzzy, kde-format
-#| msgid "Unknown battery"
+#, kde-format
 msgid "Unknown Battery"
 msgstr "Άγνωστη μπαταρία"
 
@@ -387,9 +381,7 @@ msgid "No"
 msgstr "Όχι"
 
 #: ui/main.qml:436
-#, fuzzy, kde-format
-#| msgctxt "Battery charge percentage"
-#| msgid "%1%"
+#, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1%"
