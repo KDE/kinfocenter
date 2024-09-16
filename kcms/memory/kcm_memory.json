@@ -127,6 +127,8 @@
     "X-KDE-KInfoCenter-Category": "device_information",
     "X-KDE-Keywords": "Memory,RAM,dmidecode",
     "X-KDE-Keywords[ca]": "Memòria,RAM,dmidecode",
+    "X-KDE-Keywords[ka]": "Memory,RAM,dmidecode,მეხსიერება",
+    "X-KDE-Keywords[pl]": "Pamięć,RAM,dmidecode",
     "X-KDE-Keywords[sl]": "Pomnilnik,RAM,dmidecode",
     "X-KDE-Keywords[sv]": "Minne,RAM,dmidecode",
     "X-KDE-Keywords[tr]": "bellek,memory,ram,dmidecode"

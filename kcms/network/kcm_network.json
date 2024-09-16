@@ -146,6 +146,8 @@
     "X-KDE-KInfoCenter-Category": "network_information",
     "X-KDE-Keywords": "network,nic,ip,ip address,mac,inet,eth,wlan,wifi",
     "X-KDE-Keywords[ca]": "xarxa,nic,ip,adreça ip,mac,inet,eth,wlan,wi-fi",
+    "X-KDE-Keywords[ka]": "network,nic,ip,ip address,mac,inet,eth,wlan,wifi,ქსელი",
+    "X-KDE-Keywords[pl]": "sieć,nic,ip,adres ip,mac,inet,eth,wlan,wifi",
     "X-KDE-Keywords[sl]": "omrežje,nic,ip,ip naslov,mac,inet,eth,wlan,wifi",
     "X-KDE-Keywords[sv]": "nätverk,nic,ip,ip-adress,mac,inet,eth,wlan,wifi",
     "X-KDE-Keywords[tr]": "ağ,nic,ip,ip adresi,mac,inet,eth,wlan,wifi,wi-fi"

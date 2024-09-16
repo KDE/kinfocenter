@@ -99,6 +99,8 @@
     "X-KDE-KInfoCenter-Category": "basic_information",
     "X-KDE-Keywords": "about,info,information,distribution,distro,system,kernel,qt,kde,version",
     "X-KDE-Keywords[ca]": "quant,info,informació,distribució,distro,sistema,nucli,qt,kde,versió",
+    "X-KDE-Keywords[ka]": "about,info,information,distribution,distro,system,kernel,qt,kde,version,შესახებ,ვერსია,ინფორმაცია,დისტრიბუტივი,სისტემა,ბირთვი",
+    "X-KDE-Keywords[pl]": "info,informacje,dystrybucja,distro,system,jądro,qt,kde,wersja",
     "X-KDE-Keywords[sl]": "o,info,informacije,distribucija,distro,sistem,jedro,qt,kde,različica",
     "X-KDE-Keywords[sv]": "om,info,information,distribution,distro,system,kernel,qt,kde,version",
     "X-KDE-Keywords[tr]": "hakkında,bilgi,dağıtım,distro,sistem,kernel,çekirdek,qt,kde,sürüm,versiyon",

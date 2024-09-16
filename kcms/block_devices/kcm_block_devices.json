@@ -78,6 +78,8 @@
     "X-KDE-KInfoCenter-Category": "device_information",
     "X-KDE-Keywords": "lsblk,block device,partition,disk,drive,hdd,ssd,nvme",
     "X-KDE-Keywords[ca]": "lsblk,dispositiu de blocs,partició,disc,unitat,hdd,ssd,nvme",
+    "X-KDE-Keywords[ka]": "lsblk,block device,partition,disk,drive,hdd,ssd,nvme,ბლოკური მოწყობილობები,დისკი",
+    "X-KDE-Keywords[pl]": "lsblk,urządzenie blokowe,partycja,dysk,napęd,hdd,ssd,nvme",
     "X-KDE-Keywords[sl]": "lsblk,bločna naprava,particija,disk,pogon,hdd,ssd,nvme",
     "X-KDE-Keywords[sv]": "lsblk,blockenhet,partition,disk,enhet,hdd,ssd,nvme",
     "X-KDE-Keywords[tr]": "lsblk,blok aygıtı,bölüntü,bölüm,disk,sürücü,hdd,ssd,nvme"
