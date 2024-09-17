@@ -116,6 +116,7 @@
     "X-KDE-Keywords[nn]": "OpenGL,DRI,3D,skjerm,maskinvareakselerasjon,grafikk,EGL",
     "X-KDE-Keywords[pl]": "OpenGL,DRI,GLX,D,Karta graficzna,Przyspieszenie sprzętowe,Grafika,EGL",
     "X-KDE-Keywords[pt_BR]": "OpenGL,DRI,3D,placa de vídeo,aceleração por hardware,gráfico,gráfica,EGL",
+    "X-KDE-Keywords[ru]": "OpenGL,DRI,3D,VideoCard,Hardware Acceleration,Graphics,EGL,видеокарта,аппаратное ускорение,графика,дисплей",
     "X-KDE-Keywords[sk]": "OpenGL,DRI,grafická karta,hardvérová akcelerácia,grafika,EGL",
     "X-KDE-Keywords[sl]": "OpenGL,DRI,3D,Video kratica,strojno pospeševanje,grafika,EGL",
     "X-KDE-Keywords[sv]": "OpenGL,DRI,3D,Videokort,Maskinvaruacceleration,Grafik,EGL",

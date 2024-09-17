@@ -118,6 +118,7 @@
     "X-KDE-Keywords[nn]": "cpu,prosessor,amd,intel,arm,instruksjonar,kjerner,arkitektur,byterekkjefølgje",
     "X-KDE-Keywords[pl]": "cpu,amd,intel,arm,instrukcje,rdzenie,architektura,kolejność bajtów",
     "X-KDE-Keywords[pt_BR]": "cpu,amd,intel,arm,instruções,cores,arquitetura,byte order,ordem dos bits",
+    "X-KDE-Keywords[ru]": "cpu,amd,intel,arm,instructions,cores,architecture,byte order,ЦПУ,процессор,инструкции,ядра,архитектура,порядок байтов",
     "X-KDE-Keywords[sk]": "cpu,amd,intel,arm,inštrukcie,jadrá,architektúra,poradie bajtov",
     "X-KDE-Keywords[sl]": "cpe,amd,intel,arm,instrukcije,jedra,arhitektura,vrstni red",
     "X-KDE-Keywords[sv]": "processor,amd,intel,arm,instruktioner,kärnor,arkitektur,byteordning",
