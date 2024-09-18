@@ -149,6 +149,7 @@
     "X-KDE-Keywords[bs]": "PCI,PCI-uređaji,PCI-Bus,Sistemske informacije",
     "X-KDE-Keywords[ca@valencia]": "PCI,Dispositius PCI,Bus PCI,Informació del sistema",
     "X-KDE-Keywords[ca]": "PCI,Dispositius PCI,Bus PCI,Informació del sistema",
+    "X-KDE-Keywords[cs]": "PCI,Zařízení PCI,Sběrnice PCI,Informace o systému",
     "X-KDE-Keywords[da]": "PCI,PCI-enheder,PCI-Bus,Systeminformation",
     "X-KDE-Keywords[de]": "PCI,PCI-Geräte,PCI-Bus,Systeminformationen",
     "X-KDE-Keywords[el]": "PCI,PCI-συσκευές,PCI-Bus,πληροφορίες συστήματος",

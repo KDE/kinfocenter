@@ -100,9 +100,12 @@
     "X-KDE-Keywords[ca]": "microprogramari,seguretat,hsi,secureboot,fwupd,bootguard,bloqueig de seguretat",
     "X-KDE-Keywords[en_GB]": "firmware,security,hsi,secureboot,fwupd,bootguard,lockdown",
     "X-KDE-Keywords[es]": "firmware,seguridad,hsi,arranque seguro,fwupd,protector de arranque,apagado",
+    "X-KDE-Keywords[fr]": "micro-logiciel, sécurité, hsi, secureboot, fwupd, bootguard, verrouillage",
+    "X-KDE-Keywords[ia]": "firmware,security,hsi,secureboot,fwupd,bootguard,lockdown",
     "X-KDE-Keywords[it]": "firmware,sicurezza,hsi,secureboot,fwupd,bootguard,blocco",
     "X-KDE-Keywords[ka]": "firmware,security,hsi,secureboot,fwupd,bootguard,lockdown,მიკროკოდი,უსაფრთხოება",
     "X-KDE-Keywords[pl]": "oprogramowanie układowe,bezpieczeństwo,hsi,secureboot,fwupd,bootguard,zablokowanie",
+    "X-KDE-Keywords[ru]": "firmware,security,hsi,secureboot,fwupd,bootguard,lockdown,микропрограмма,прошивка,безопасность,безопасная загрузка,защита загрузки,блокировка",
     "X-KDE-Keywords[sl]": "firmware,varnost,hsi,secureboot,fwupd,bootguard,lockdown",
     "X-KDE-Keywords[sv]": "fast programvara,säkerhet,hsi,secureboot,fwupd,bootguard,låsning",
     "X-KDE-Keywords[tr]": "firmware,donanım yazılımı,hsi,güvenlik,secure boot,fwupd,bootguard,lockdown,kilit"
