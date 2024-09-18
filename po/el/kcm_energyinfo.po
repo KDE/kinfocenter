@@ -221,14 +221,12 @@ msgstr ""
 "Δεν υπάρχουν διαθέσιμες πληροφορίες για την ενέργεια σε αυτό το σύστημα"
 
 #: ui/main.qml:182
-#, fuzzy, kde-format
-#| msgid "PDA battery"
+#, kde-format
 msgid "PDA Battery"
 msgstr "Μπαταρία POA"
 
 #: ui/main.qml:183
-#, fuzzy, kde-format
-#| msgid "UPS battery"
+#, kde-format
 msgid "UPS Battery"
 msgstr "Μπαταρία UPS"
 
