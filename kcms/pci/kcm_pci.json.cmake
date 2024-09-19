@@ -144,7 +144,6 @@
     "TryExec": "@PCI_BACKEND@",
     "X-KDE-KInfoCenter-Category": "device_information",
     "X-KDE-Keywords": "PCI,PCI-Devices,PCI-Bus,System Information",
-    "X-KDE-Keywords[ar]": "PCI,أجهزة PCI,PCI-Bus,معلومات النّظام",
     "X-KDE-Keywords[az]": "PCI,PCI-Devices,PCI-Bus,System Information,PCİ yolu,PCİ cihazı,sistem haqqında məlumat",
     "X-KDE-Keywords[bs]": "PCI,PCI-uređaji,PCI-Bus,Sistemske informacije",
     "X-KDE-Keywords[ca@valencia]": "PCI,Dispositius PCI,Bus PCI,Informació del sistema",
