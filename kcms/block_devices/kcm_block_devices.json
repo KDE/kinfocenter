@@ -82,6 +82,7 @@
     "X-KDE-Keywords[en_GB]": "lsblk,block device,partition,disk,drive,hdd,ssd,nvme",
     "X-KDE-Keywords[es]": "lsblk,dispositivo de bloques,partición,disco,unidad,hdd,ssd,nvme",
     "X-KDE-Keywords[fr]": "lsblk, périphérique de bloc, partition, disque, lecteur, hdd, ssd, nvme",
+    "X-KDE-Keywords[he]": "lsblk,התקן בלוק,מחיצה,כונן,דיסק,דרייב,hdd,ssd,nvme",
     "X-KDE-Keywords[ia]": "lsblk,block device,partition,disk,drive,hdd,ssd,nvme",
     "X-KDE-Keywords[it]": "lsblk,dispositivo a blocchi,partizione,disco,unità,hdd,ssd,nvme",
     "X-KDE-Keywords[ka]": "lsblk,block device,partition,disk,drive,hdd,ssd,nvme,ბლოკური მოწყობილობები,დისკი",

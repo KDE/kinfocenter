@@ -160,6 +160,7 @@
     "X-KDE-Keywords[fr]": "PCI, Périphériques PCI, Bus PCI, Informations Système",
     "X-KDE-Keywords[ga]": "PCI,Gléasanna PCI,Bun PCI,Eolas faoin Chóras",
     "X-KDE-Keywords[gl]": "PCI,dispositivos PCI,bus PCI,Información do sistema",
+    "X-KDE-Keywords[he]": "Interrupts,IRQ,System Information,פסיקות,מידע,פרטי מערכת",
     "X-KDE-Keywords[hu]": "PCI,PCI eszközök,PCI busz,Rendszerinformáció",
     "X-KDE-Keywords[ia]": "PCI,Dispositivos PCI,Bus PCI,Information de systema",
     "X-KDE-Keywords[id]": "PCI,Perangkat-PCI,Bus-PCI,Informasi Sistem",
