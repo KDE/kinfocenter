@@ -146,6 +146,7 @@
     "X-KDE-KInfoCenter-Category": "network_information",
     "X-KDE-Keywords": "SMB,SAMBA,Windows network,LAN,System Information",
     "X-KDE-Keywords[az]": "SMB,SAMBA,Windows network,LAN,System Information,Windows şəbəkəsi,lokal şəbəkə,lokal hesablama şəbəkəsi,LHŞ",
+    "X-KDE-Keywords[bg]": "SMB,SAMBA,Windows мрежа,LAN,системна информация",
     "X-KDE-Keywords[bs]": "SMB,SAMBA,Windows umrežavanje,LAN,Sistemske informacije",
     "X-KDE-Keywords[ca@valencia]": "SMB,SAMBA,Xarxa Windows,LAN,Informació del sistema",
     "X-KDE-Keywords[ca]": "SMB,SAMBA,Xarxa Windows,LAN,Informació del sistema",

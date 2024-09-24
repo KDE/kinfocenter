@@ -96,6 +96,7 @@
     "TryExec": "fwupdmgr",
     "X-KDE-KInfoCenter-Category": "device_information",
     "X-KDE-Keywords": "firmware,security,hsi,secureboot,fwupd,bootguard,lockdown",
+    "X-KDE-Keywords[bg]": "фърмуер,сигурност,hsi,secureboot,fwupd,bootguard,заключване",
     "X-KDE-Keywords[ca@valencia]": "microprogramari,seguretat,hsi,secureboot,fwupd,bootguard,bloqueig de seguretat",
     "X-KDE-Keywords[ca]": "microprogramari,seguretat,hsi,secureboot,fwupd,bootguard,bloqueig de seguretat",
     "X-KDE-Keywords[en_GB]": "firmware,security,hsi,secureboot,fwupd,bootguard,lockdown",
