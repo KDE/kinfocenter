@@ -146,6 +146,7 @@
     "X-KDE-KInfoCenter-Category": "device_information",
     "X-KDE-Keywords": "PCI,PCI-Devices,PCI-Bus,System Information",
     "X-KDE-Keywords[az]": "PCI,PCI-Devices,PCI-Bus,System Information,PCİ yolu,PCİ cihazı,sistem haqqında məlumat",
+    "X-KDE-Keywords[bg]": "PCI,PCI-устройства,PCI-шина,системна информация",
     "X-KDE-Keywords[bs]": "PCI,PCI-uređaji,PCI-Bus,Sistemske informacije",
     "X-KDE-Keywords[ca@valencia]": "PCI,Dispositius PCI,Bus PCI,Informació del sistema",
     "X-KDE-Keywords[ca]": "PCI,Dispositius PCI,Bus PCI,Informació del sistema",
