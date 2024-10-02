@@ -150,6 +150,7 @@
     "X-KDE-Keywords[ca]": "xarxa,nic,ip,adreça ip,mac,inet,eth,wlan,wi-fi",
     "X-KDE-Keywords[en_GB]": "network,nic,ip,ip address,mac,inet,eth,wlan,wifi",
     "X-KDE-Keywords[es]": "red,nic,ip,dirección ip,mac,inet,eth,wlan,wifi",
+    "X-KDE-Keywords[eu]": "sarea,nic,ip,ip helbidea,mac,inet,eth,wlan,wifi",
     "X-KDE-Keywords[fr]": "réseau, nic, ip, adresse ip, mac, inet, eth, wlan, wifi",
     "X-KDE-Keywords[gl]": "network,rede,nic,ip,ip address,enderezo IP,mac,inet,eth,wlan,wifi",
     "X-KDE-Keywords[he]": "רשת,כרטיס רשת,מתאם רשת,ip,כתובת ip,כתובת חומרה,מק,inet,eth,wlan,wifi,רשת אלחוטית",
