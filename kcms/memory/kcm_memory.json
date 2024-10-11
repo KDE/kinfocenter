@@ -152,5 +152,6 @@
     "X-KDE-Keywords[sv]": "Minne,RAM,dmidecode",
     "X-KDE-Keywords[tr]": "bellek,memory,ram,dmidecode",
     "X-KDE-Keywords[uk]": "Memory,RAM,dmidecode,пам'ять,оперативна",
-    "X-KDE-Keywords[x-test]": "xxMemoryxx,xxRAMxx,xxdmidecodexx"
+    "X-KDE-Keywords[x-test]": "xxMemoryxx,xxRAMxx,xxdmidecodexx",
+    "X-KDE-Keywords[zh_CN]": "Memory,RAM,dmidecode,neicun,yuncun,yunxingneicun,dmijiema,内存,运存,运行内存,DMI 解码"
 }

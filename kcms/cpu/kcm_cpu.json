@@ -128,5 +128,6 @@
     "X-KDE-Keywords[tr]": "cpu,amd,intel,arm,yönergeled,çekirdek,mimari,bayt,bayt sırası",
     "X-KDE-Keywords[uk]": "cpu,amd,intel,arm,instructions,cores,architecture,byte order,процесор,амд,інтел,арм,інструкції,ядра,архітектура,порядок байтів",
     "X-KDE-Keywords[vi]": "cpu,amd,intel,arm,instructions,cores,architecture,byte order,lệnh,lõi,kiến trúc,thứ tự byte",
-    "X-KDE-Keywords[x-test]": "xxcpuxx,xxamdxx,xxintelxx,xxarmxx,xxinstructionsxx,xxcoresxx,xxarchitecturexx,xxbyte orderxx"
+    "X-KDE-Keywords[x-test]": "xxcpuxx,xxamdxx,xxintelxx,xxarmxx,xxinstructionsxx,xxcoresxx,xxarchitecturexx,xxbyte orderxx",
+    "X-KDE-Keywords[zh_CN]": "cpu,amd,intel,arm,instructions,cores,architecture,byte order,zhongyangchuliqi,chuliqi,zhilingji,chuliqihexin,hexin,neihe,hexinshuliang,jiagou,tixi,zijieshunxu,中央处理器,处理器,指令集,处理器核心,核心,内核,核心数量,架构,体系,字节顺序"
 }

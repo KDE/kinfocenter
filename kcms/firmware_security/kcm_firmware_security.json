@@ -117,5 +117,6 @@
     "X-KDE-Keywords[sv]": "fast programvara,säkerhet,hsi,secureboot,fwupd,bootguard,låsning",
     "X-KDE-Keywords[tr]": "firmware,donanım yazılımı,hsi,güvenlik,secure boot,fwupd,bootguard,lockdown,kilit",
     "X-KDE-Keywords[uk]": "firmware,security,hsi,secureboot,fwupd,bootguard,lockdown,мікропрограма,безпека,безпечне завантаження,блокування",
-    "X-KDE-Keywords[x-test]": "xxfirmwarexx,xxsecurityxx,xxhsixx,xxsecurebootxx,xxfwupdxx,xxbootguardxx,xxlockdownxx"
+    "X-KDE-Keywords[x-test]": "xxfirmwarexx,xxsecurityxx,xxhsixx,xxsecurebootxx,xxfwupdxx,xxbootguardxx,xxlockdownxx",
+    "X-KDE-Keywords[zh_CN]": "firmware,security,hsi,secureboot,fwupd,bootguard,lockdown,gujian,anquan,yingjiananquan,anquanqidong,anquanyindao,gujiangengxin,yindaobaohu,yindaoqubaohu,suoding,固件,安全,硬件安全,安全启动,安全引导,固件更新,引导保护,引导区保护,锁定"
 }
