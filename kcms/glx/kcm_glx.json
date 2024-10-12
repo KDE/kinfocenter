@@ -143,5 +143,6 @@
     "X-KDE-Keywords[tr]": "opengl,dri,glx,3d,3b,video kartı,donanım hızlandırması,donanım ivmelendirmesi,x,x11,x sunucusu,xserver,x-server,xfree86,ekran,görüntü",
     "X-KDE-Keywords[uk]": "OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display,відео,картка,відеокартка,прискорення,апаратне,графіка,дисплей,показ,сервер,графічний",
     "X-KDE-Keywords[vi]": "OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display,Bo mạch đồ hoạ,Tăng tốc phần cứng,Đồ hoạ,Máy chủ X,Hiển thị",
+    "X-KDE-Keywords[zh_CN]": "OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display,sanwei,liti,GPU,xianka,yingjianjiasu,tuxing,X fuwuqi,xianshi,三维,立体,显卡,硬件加速,图形,X 服务器,显示",
     "X-KDE-Keywords[zh_TW]": "OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display"
 }

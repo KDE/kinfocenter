@@ -190,5 +190,6 @@
     "X-KDE-Keywords[tr]": "pci,pci aygıtları,pci cihazları,pci veri yolu,sistem bilgisi",
     "X-KDE-Keywords[uk]": "PCI,PCI-Devices,PCI-Bus,System Information,пристрій,пристрої,канал,шина,система,інформація,відомості",
     "X-KDE-Keywords[vi]": "PCI,PCI-Devices,PCI-Bus,System Information,Thiết bị PCI,Buýt PCI,Thông tin hệ thống",
+    "X-KDE-Keywords[zh_CN]": "PCI,PCI-Devices,PCI-Bus,System Information,PCI shebei,PCI zongxian,xitongxinxi,PCI 设备,PCI 总线,系统信息",
     "X-KDE-Keywords[zh_TW]": "PCI,PCI-Devices,PCI-Bus,System Information"
 }

@@ -125,5 +125,6 @@
     "X-KDE-Keywords[sv]": "Vulkan,Videokort,Hårdvaruacceleration,Grafik",
     "X-KDE-Keywords[tr]": "vulkan,video kartı,donanım hızlandırması,donanım ivmelendirmesi,grafik",
     "X-KDE-Keywords[uk]": "Vulkan,VideoCard,Hardware Acceleration,Graphics,вулкан,відеокартка,апаратне прискорення,графіка",
-    "X-KDE-Keywords[vi]": "Vulkan,VideoCard,Hardware Acceleration,Graphics,Bo mạch đồ hoạ,Tăng tốc phần cứng,Đồ hoạ"
+    "X-KDE-Keywords[vi]": "Vulkan,VideoCard,Hardware Acceleration,Graphics,Bo mạch đồ hoạ,Tăng tốc phần cứng,Đồ hoạ",
+    "X-KDE-Keywords[zh_CN]": "Vulkan,VideoCard,Hardware Acceleration,Graphics,xianka,xianshika,yingjianjiasu,tuxing,GPU,显卡,显示卡,硬件加速,图形"
 }

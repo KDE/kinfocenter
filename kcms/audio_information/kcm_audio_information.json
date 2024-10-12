@@ -94,5 +94,6 @@
     "X-KDE-Keywords[sl]": "Pipewire,Audio,PulseAudio,pactl",
     "X-KDE-Keywords[sv]": "Pipewire,ljud,PulseAudio,pactl",
     "X-KDE-Keywords[tr]": "pipewire,ses,pulseaudio,pactl",
-    "X-KDE-Keywords[uk]": "Pipewire,Audio,PulseAudio,pactl,звук,аудіо,пульсаудіо,пайпваєр"
+    "X-KDE-Keywords[uk]": "Pipewire,Audio,PulseAudio,pactl,звук,аудіо,пульсаудіо,пайпваєр",
+    "X-KDE-Keywords[zh_CN]": "Pipewire,Audio,PulseAudio,pactl,yinpin,maichong,音频,脉冲"
 }
