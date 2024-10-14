@@ -1,5 +1,7 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
+# SPDX-FileCopyrightText: 2024 Kristen McWilliam <kmcwilliampublic@gmail.com>
+
 [Domain]
 Icon=computer
 URL=https://www.kde.org
@@ -46,6 +48,11 @@ Name[vi]=Giao diện quản lí máy tính
 Name[x-test]=xxDesktop Management Interfacexx
 Name[zh_CN]=桌面管理界面 (DMI)
 Name[zh_TW]=桌面管理介面
+
+[org.kde.kinfocenter.dmidecode.memoryinformation]
+Policy=yes
+Name=Memory Information
+Description=Read memory information from system's Desktop Management Interface (DMI)
 
 [org.kde.kinfocenter.dmidecode.systeminformation]
 Policy=yes

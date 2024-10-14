@@ -26,6 +26,24 @@ DMIDecodeHelper::DMIDecodeHelper(QObject *parent)
     m_dmidecodePath = QStandardPaths::findExecutable("dmidecode");
 }
 
+KAuth::ActionReply DMIDecodeHelper::memoryinformation(const QVariantMap &args)
+{
+    Q_UNUSED(args);
+
+    KAuth::ActionReply reply;
+    auto result = executeDmidecode({QStringLiteral("--type"), QStringLiteral("17")});
+
+    if (result.failed()) {
+        qWarning() << "DMIDecodeHelper: Unable to get memory information";
+        return KAuth::ActionReply::HelperErrorReply();
+    }
+
+    const QString output = result.data().value("result").toString();
+    reply.addData("memory", output);
+
+    return reply;
+}
+
 KAuth::ActionReply DMIDecodeHelper::systeminformation(const QVariantMap &args)
 {
     Q_UNUSED(args);
@@ -45,6 +63,8 @@ KAuth::ActionReply DMIDecodeHelper::systeminformation(const QVariantMap &args)
     for (const auto &key : keys) {
         auto result = executeDmidecode({QStringLiteral("--string"), key});
         if (result.failed()) {
+            qWarning() << "DMIDecodeHelper: Unable to get system information for " << key;
+            // We don't want to fail the entire action if we can't get a single piece of information.
             continue;
         }
 
@@ -69,6 +89,12 @@ KAuth::ActionReply DMIDecodeHelper::systeminformation(const QVariantMap &args)
         }
 
         reply.addData(key, output);
+    }
+
+    if (reply.data().isEmpty()) {
+        qWarning() << "DMIDecodeHelper: Unable to get system information";
+        // If we didn't get any data, we should fail the action.
+        return KAuth::ActionReply::HelperErrorReply();
     }
 
     return reply;
