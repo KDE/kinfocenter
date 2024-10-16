@@ -1,0 +1,208 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the kinfocenter package.
+#
+# SPDX-FileCopyrightText: 2024 Toms Trasuns <toms.trasuns@posteo.net>
+msgid ""
+msgstr ""
+"Project-Id-Version: kinfocenter\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-04-24 00:39+0000\n"
+"PO-Revision-Date: 2024-10-13 16:12+0300\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Generator: Lokalize 24.08.1\n"
+
+#: CPUEntry.cpp:17
+#, kde-format
+msgid "Processor:"
+msgid_plural "Processors:"
+msgstr[0] "Procesors:"
+msgstr[1] "Procesori:"
+msgstr[2] "Procesori:"
+
+#: CPUEntry.cpp:22
+#, kde-format
+msgctxt ""
+"unknown CPU type/product name; presented as `Processors: 4 × Unknown Type'"
+msgid "Unknown Type"
+msgstr "Nezināms tips"
+
+#: GPUEntry.cpp:19
+#, kde-format
+msgid "Graphics Processor:"
+msgstr "Grafikas procesors:"
+
+#: GraphicsPlatformEntry.cpp:10
+#, kde-format
+msgid "Graphics Platform:"
+msgstr "Grafikas platforma"
+
+#: KernelEntry.cpp:11
+#, kde-format
+msgid "Kernel Version:"
+msgstr "Kerneļa versija:"
+
+#: KernelEntry.cpp:23
+#, kde-format
+msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
+msgid "%1 (%2-bit)"
+msgstr "%1 (%2 bitu)"
+
+#: main.cpp:197
+#, kde-format
+msgctxt "@label"
+msgid "Manufacturer:"
+msgstr "Ražotājs:"
+
+#: main.cpp:200 main.cpp:217
+#, kde-format
+msgctxt "@label"
+msgid "Product Name:"
+msgstr "Produkta nosaukums:"
+
+#: main.cpp:203
+#, kde-format
+msgctxt "@label"
+msgid "System Version:"
+msgstr "Sistēmas versija:"
+
+#: main.cpp:206 main.cpp:220
+#, kde-format
+msgctxt "@label"
+msgid "Serial Number:"
+msgstr "Sērijas numurs:"
+
+#: main.cpp:210 main.cpp:227
+#, kde-format
+msgctxt "@label unknown entry in table"
+msgid "Unknown:"
+msgstr "Nezināms:"
+
+#: main.cpp:223
+#, kde-format
+msgctxt "@label uboot is the name of a bootloader for embedded devices"
+msgid "U-Boot Version:"
+msgstr "„U-Boot“ versija:"
+
+#: main.cpp:261
+#, kde-format
+msgid "KDE Frameworks Version:"
+msgstr "KDE „Frameworks“ versija:"
+
+#: main.cpp:262
+#, kde-format
+msgid "Qt Version:"
+msgstr "„Qt“ versija:"
+
+#: MemoryEntry.cpp:20
+#, kde-format
+msgid "Memory:"
+msgstr "Atmiņa:"
+
+#: MemoryEntry.cpp:49
+#, kde-format
+msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
+msgid "%1 of RAM"
+msgstr "%1 RAM"
+
+#: MemoryEntry.cpp:53
+#, kde-format
+msgctxt "Unknown amount of RAM"
+msgid "Unknown"
+msgstr "Nezināms"
+
+#: OSVersionEntry.cpp:9
+#, kde-format
+msgid "Operating System:"
+msgstr "Operētājsistēma:"
+
+#: OSVersionEntry.cpp:11
+#, kde-format
+msgctxt "@label %1 is the distro name, %2 is the version"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: OSVersionEntry.cpp:13
+#, kde-format
+msgctxt ""
+"@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
+"should be a number, or 'rolling'"
+msgid "%1 %2 Build: %3"
+msgstr "%1 %2 būvējums: %3"
+
+#: PlasmaEntry.cpp:15
+#, kde-format
+msgid "KDE Plasma Version:"
+msgstr "KDE „Plasma“ versija:"
+
+#: ThirdPartyEntry.cpp:12
+#, kde-format
+msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
+msgid ":"
+msgstr ":"
+
+#: ui/main.qml:90
+#, kde-format
+msgctxt "@title"
+msgid "Serial Number"
+msgstr "Sērijas numurs"
+
+#: ui/main.qml:96
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy"
+msgstr "Kopēt"
+
+#: ui/main.qml:125
+#, kde-format
+msgctxt "@action:button show a hidden entry in an overlay"
+msgid "Show"
+msgstr "Rādīt"
+
+#: ui/main.qml:137
+#, kde-format
+msgctxt "@title:group"
+msgid "Software"
+msgstr "Programmatūra"
+
+#: ui/main.qml:147
+#, kde-format
+msgctxt "@title:group"
+msgid "Hardware"
+msgstr "Aparatūra"
+
+#: ui/main.qml:164
+#, kde-format
+msgctxt "@action:button launches kinfocenter from systemsettings"
+msgid "More System Information"
+msgstr "Vairāk informācijas par sistēmu"
+
+#: ui/main.qml:165
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Launch %1"
+msgstr "Palaist „%1“"
+
+#: ui/main.qml:173 ui/main.qml:181
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy Details"
+msgstr "Kopēt informāciju"
+
+#: ui/main.qml:184
+#, kde-format
+msgctxt "@action:button Copy Details..."
+msgid "In current language"
+msgstr "Pašreizējā valodā"
+
+#: ui/main.qml:190
+#, kde-format
+msgctxt "@action:button Copy Details..."
+msgid "In English"
+msgstr "Angļu valodā"
