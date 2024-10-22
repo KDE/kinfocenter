@@ -246,4 +246,4 @@ Keywords[zh_CN]=kinfocenter, KDE 信息中心, 系统信息中心, xinxizhongxin
 Keywords[zh_TW]=kinfocenter;資訊中心;
 X-DBUS-ServiceName=org.kde.kinfocenter
 X-DBUS-StartupType=Unique
-Categories=Qt;KDE;System;
+Categories=Qt;KDE;System;Documentation;
