@@ -105,5 +105,6 @@
     "X-KDE-Keywords[pl]": "oprogramowanie układowe,bezpieczeństwo,hsi,secureboot,fwupd,bootguard,zablokowanie",
     "X-KDE-Keywords[sl]": "firmware,varnost,hsi,secureboot,fwupd,bootguard,lockdown",
     "X-KDE-Keywords[sv]": "fast programvara,säkerhet,hsi,secureboot,fwupd,bootguard,låsning",
+    "X-KDE-Keywords[uk]": "firmware,security,hsi,secureboot,fwupd,bootguard,lockdown,мікропрограма,безпека,безпечне завантаження,блокування",
     "X-KDE-Keywords[x-test]": "xxfirmwarexx,xxsecurityxx,xxhsixx,xxsecurebootxx,xxfwupdxx,xxbootguardxx,xxlockdownxx"
 }
