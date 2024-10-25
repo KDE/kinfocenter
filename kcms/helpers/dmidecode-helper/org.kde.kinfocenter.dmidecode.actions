@@ -53,6 +53,7 @@ Name[zh_TW]=桌面管理介面
 [org.kde.kinfocenter.dmidecode.memoryinformation]
 Policy=yes
 Name=Memory Information
+Name[ar]=معلومات الذاكرة
 Name[bg]=Информация за паметта
 Name[ca]=Informació de la memòria
 Name[ca@valencia]=Informació de la memòria
@@ -75,6 +76,7 @@ Name[uk]=Інформація щодо пам'яті
 Name[x-test]=xxMemory Informationxx
 Name[zh_CN]=内存信息
 Description=Read memory information from system's Desktop Management Interface (DMI)
+Description[ar]=تقرأ معلومات الذاكرة من واجهة إدارة سطح المكتب DMI للنظام
 Description[bg]=Прочитане на информацията за паметта от интерфейса за управление на работния плот (DMI) на системата
 Description[ca]=Llegeix la informació de la memòria de la Interfície de gestió de l'escriptori «Desktop Management Interface (DMI)» del sistema
 Description[ca@valencia]=Llig la informació de la memòria de la Interfície de gestió de l'escriptori «Desktop Management Interface (DMI)» del sistema
