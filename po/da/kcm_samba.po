@@ -5,54 +5,51 @@
 # Thomas Tanghus <tanghus@earthling.net>, 1998.
 # Erik Kjær Pedersen <erik@binghamton.edu>, 2002, 2005.
 # Martin Schlander <mschlander@opensuse.org>, 2008, 2010, 2014, 2020.
+# SPDX-FileCopyrightText: 2024 rasmus rosendahl-kaa <rasmus@rosendahl-kaa.name>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-24 00:39+0000\n"
-"PO-Revision-Date: 2020-07-27 22:17+0200\n"
-"Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
+"PO-Revision-Date: 2024-10-30 11:50+0100\n"
+"Last-Translator: rasmus rosendahl-kaa <rasmus@rosendahl-kaa.name>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 20.04.2\n"
+"X-Generator: Lokalize 24.08.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: ui/main.qml:18
-#, fuzzy, kde-format
-#| msgctxt "@title/group"
-#| msgid "Exported Shares"
+#, kde-format
 msgctxt "@title heading above listview"
 msgid "User-Created Shares"
-msgstr "Eksporterede delte ressourcer"
+msgstr "Brugerlavede delte ressourcer"
 
 #: ui/main.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@title/group"
-#| msgid "Mounted Shares"
+#, kde-format
 msgctxt "@title heading above listview"
 msgid "Mounted Remote Shares"
-msgstr "Monterede delte ressourcer"
+msgstr "Monterede eksterne delte ressourcer"
 
 #: ui/main.qml:54
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no directories shared by users"
-msgstr ""
+msgstr "Der er ingen mapper delt af brugere"
 
 #: ui/main.qml:92
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no Samba shares mounted on this system"
-msgstr ""
+msgstr "Der er ingen Samba-delte ressourcer monterede på systemet"
 
 #: ui/ShareListItem.qml:69
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Open folder properties to change share settings"
-msgstr ""
+msgstr "Åbn mappeegenskaber for at ændre delingsindstillinger"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
