@@ -9,6 +9,7 @@
         "Description[ca@valencia]": "Informació de PCI",
         "Description[ca]": "Informació de PCI",
         "Description[cs]": "Informace o PCI",
+        "Description[da]": "PCI-information",
         "Description[de]": "Informationen zu PCI",
         "Description[el]": "Πληροφορίες PCI",
         "Description[en_GB]": "PCI information",

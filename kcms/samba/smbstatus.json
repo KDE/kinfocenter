@@ -10,6 +10,7 @@
         "Description[ca@valencia]": "Controlador de l'estat de Samba",
         "Description[ca]": "Controlador de l'estat de Samba",
         "Description[cs]": "Monitor stavu Samby",
+        "Description[da]": "Overvågning af samba-status",
         "Description[de]": "Samba-Statusmonitor",
         "Description[el]": "Εποπτεία της samba",
         "Description[en_GB]": "Samba status monitor",
