@@ -64,7 +64,6 @@ ecm_query_qt(QtBinariesDir QT_INSTALL_BINS)
 
 add_subdirectory( appiumtests )
 add_subdirectory( categories )
-add_subdirectory( kcontrol/menus )
 add_subdirectory( kcms )
 add_subdirectory(src)
 
