@@ -78,6 +78,12 @@ class AboutThisSystemTests(unittest.TestCase):
         self.assertIn("64-bit", clipboard_contents, "'64-bit' not found in CPU KCM")
 
     def test_Graphics_Wayland(self):
+        # Search for wayland. Not only does this test the search, it also ensures
+        # the list item will be in view. Being a qml listview the item isn't
+        # necessarily loaded until it is in view.
+        search = self.driver.find_element(by=AppiumBy.NAME, value="Search")
+        search.click()
+        search.send_keys("wayland")
         self.driver.find_element(by=AppiumBy.NAME, value="Graphics").click()
         self.driver.find_element(by=AppiumBy.NAME, value="Wayland").click()
         self.driver.find_element(by=AppiumBy.NAME, value="Copy to Clipboard").click()
