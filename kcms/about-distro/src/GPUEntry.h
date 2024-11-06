@@ -7,12 +7,22 @@
 #ifndef GPUENTRY_H
 #define GPUENTRY_H
 
+#include <QVulkanInstance>
+
 #include "Entry.h"
 
 class GPUEntry : public Entry
 {
 public:
-    GPUEntry();
+    struct Device {
+        QString name;
+        VkPhysicalDeviceType type;
+    };
+
+    GPUEntry(std::optional<int> deviceIndex, const Device &device);
+
+private:
+    Device m_device;
 };
 
 #endif // GPUENTRY_H

@@ -11,6 +11,7 @@ set(kcm_SRCS
     FancyString.cpp
     FancyString.h
     GPUEntry.cpp
+    GPUEntryFactory.cpp
     GPUEntry.h
     GraphicsPlatformEntry.cpp
     GraphicsPlatformEntry.h
