@@ -121,6 +121,7 @@ KCMUtils.SimpleKCM {
 
                     Kirigami.SelectableLabel {
                         id: valueLabel
+                        Layout.alignment: Qt.AlignTop
                         visible: !hidden
                         text: entry.localizedValue()
                         Keys.onShortcutOverride: event => {
