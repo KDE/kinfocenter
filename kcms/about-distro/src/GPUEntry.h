@@ -20,6 +20,7 @@ public:
     };
 
     GPUEntry(std::optional<int> deviceIndex, const Device &device);
+    [[nodiscard]] Hint localizedHint(Language language = Language::System) const override;
 
 private:
     Device m_device;

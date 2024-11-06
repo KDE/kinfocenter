@@ -20,3 +20,20 @@ GPUEntry::GPUEntry(std::optional<int> deviceIndex, const Device &device)
     , m_device(device)
 {
 }
+
+Hint GPUEntry::localizedHint(Language language) const
+{
+    switch (m_device.type) {
+    case VK_PHYSICAL_DEVICE_TYPE_INTEGRATED_GPU:
+        return {.m_text = localize(ki18nc("@label GPU type", "integrated"), language), .m_color = Hint::Color::One};
+    case VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU:
+        return {.m_text = localize(ki18nc("@label GPU type", "discrete"), language), .m_color = Hint::Color::Two};
+    case VK_PHYSICAL_DEVICE_TYPE_VIRTUAL_GPU:
+        return {.m_text = localize(ki18nc("@label GPU type. GPU of a virtual machine", "virtual"), language), .m_color = Hint::Color::Three};
+    case VK_PHYSICAL_DEVICE_TYPE_CPU:
+    case VK_PHYSICAL_DEVICE_TYPE_OTHER:
+    case VK_PHYSICAL_DEVICE_TYPE_MAX_ENUM:
+        break;
+    }
+    return {};
+}
