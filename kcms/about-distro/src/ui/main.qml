@@ -82,6 +82,21 @@ KCMUtils.SimpleKCM {
                     Kirigami.FormData.label: entry.localizedLabel()
                     Kirigami.FormData.labelAlignment: Qt.AlignTop
                     readonly property bool hidden: entry.isHidden()
+                    readonly property string hint: entry.localizedHint().text
+                    readonly property color hintColorForeground: {
+                        switch (entry.localizedHint().color) {
+                            case Private.Hint.Color.One: return Kirigami.Theme.linkColor
+                            case Private.Hint.Color.Two: return Kirigami.Theme.positiveTextColor
+                            case Private.Hint.Color.Three: return Kirigami.Theme.alternateTextColor
+                        }
+                    }
+                    readonly property color hintColorBackground: {
+                        switch (entry.localizedHint().color) {
+                            case Private.Hint.Color.One: return Kirigami.Theme.linkBackgroundColor
+                            case Private.Hint.Color.Two: return Kirigami.Theme.positiveBackgroundColor
+                            case Private.Hint.Color.Three: return Kirigami.Theme.alternateBackgroundColor
+                        }
+                    }
 
                     Component {
                         id: unhideDialog
@@ -116,6 +131,28 @@ KCMUtils.SimpleKCM {
                                 valueLabel.copy();
                                 event.accepted = true;
                             }
+                        }
+                    }
+
+                    QQC2.Control {
+                        visible: hint !== ""
+                        topPadding: Kirigami.Units.smallSpacing
+                        rightPadding: Kirigami.Units.smallSpacing
+                        bottomPadding: Kirigami.Units.smallSpacing
+                        leftPadding: Kirigami.Units.smallSpacing
+
+                        Kirigami.Theme.colorSet: Kirigami.Theme.Window
+
+                        background: Rectangle {
+                            color: hintColorBackground
+                            radius: Kirigami.Units.cornerRadius
+                        }
+
+                        contentItem: QQC2.Label {
+                            text: hint
+                            color: hintColorForeground
+                            font.bold: true
+                            font.pixelSize: Kirigami.Theme.smallFont.pixelSize
                         }
                     }
 

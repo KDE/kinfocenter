@@ -11,6 +11,28 @@
 #include <QObject>
 #include <QString>
 
+// A hint is short additional information for an Entry. It may be color coded as well.
+// Hints annotate the Entry with extra info. Notable example are GPUEntry which may
+// have a hint about the type of GPU (integrated vs. discrete).
+class Hint
+{
+public:
+    enum class Color {
+        One,
+        Two,
+        Three
+    };
+    Q_ENUM(Color)
+
+private:
+    Q_GADGET
+    Q_PROPERTY(QString text MEMBER m_text CONSTANT)
+    Q_PROPERTY(Color color MEMBER m_color CONSTANT)
+public:
+    QString m_text;
+    Color m_color = Hint::Color::One;
+};
+
 // Generic dumpable info entry.
 // This encapsulates a table entry so that it may be put into the UI
 // and also serialized into textual form for copy to clipboard.
@@ -52,6 +74,9 @@ public:
 
     // Returns whether this Entry should be hidden by default (i.e. only shown upon user request)
     Q_INVOKABLE virtual bool isHidden() const;
+
+    // Returns a hint for the user to consider when interpreting the value.
+    Q_INVOKABLE [[nodiscard]] virtual Hint localizedHint(Language language = Language::System) const;
 
 protected:
     // Returns localized QString for the given language.

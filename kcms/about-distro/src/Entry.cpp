@@ -77,4 +77,9 @@ QLocale Entry::localeForLanguage(Language language) const
     return QLocale::system();
 }
 
+Hint Entry::localizedHint(Language) const
+{
+    return {};
+}
+
 #include "moc_Entry.cpp"
