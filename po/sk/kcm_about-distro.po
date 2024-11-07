@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-24 00:39+0000\n"
+"POT-Creation-Date: 2024-11-07 00:41+0000\n"
 "PO-Revision-Date: 2023-11-11 15:58+0100\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -32,7 +32,31 @@ msgctxt ""
 msgid "Unknown Type"
 msgstr "Neznámy typ"
 
-#: GPUEntry.cpp:19
+#: GPUEntry.cpp:180
+#, kde-format
+msgctxt "@label GPU type"
+msgid "Integrated"
+msgstr ""
+
+#: GPUEntry.cpp:182
+#, kde-format
+msgctxt "@label GPU type"
+msgid "Discrete"
+msgstr ""
+
+#: GPUEntry.cpp:184
+#, kde-format
+msgctxt "@label GPU type. GPU of a VM"
+msgid "Virtual"
+msgstr ""
+
+#: GPUEntry.cpp:203
+#, kde-format
+msgctxt "@label %1 is a GPU name and %2 a type such as 'Integrated'"
+msgid "%1 [%2]"
+msgstr ""
+
+#: GPUEntry.cpp:287
 #, kde-format
 msgid "Graphics Processor:"
 msgstr "Grafický procesor:"
@@ -146,37 +170,37 @@ msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ":"
 
-#: ui/main.qml:90
+#: ui/main.qml:91
 #, kde-format
 msgctxt "@title"
 msgid "Serial Number"
 msgstr "Sériové číslo"
 
-#: ui/main.qml:96
+#: ui/main.qml:97
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
 msgstr "Kopírovať"
 
-#: ui/main.qml:125
+#: ui/main.qml:126
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
 msgstr "Zobraziť"
 
-#: ui/main.qml:137
+#: ui/main.qml:138
 #, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "Softvér"
 
-#: ui/main.qml:147
+#: ui/main.qml:148
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "Hardvér"
 
-#: ui/main.qml:164
+#: ui/main.qml:165
 #, fuzzy, kde-format
 #| msgctxt "@action:button launches kinfocenter from systemsettings"
 #| msgid "Show More Information"
@@ -184,7 +208,7 @@ msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "More System Information"
 msgstr "Zobraziť viac informácií"
 
-#: ui/main.qml:165
+#: ui/main.qml:166
 #, fuzzy, kde-format
 #| msgctxt "@action:button launches kinfocenter from systemsettings"
 #| msgid "Launch %1"
@@ -192,19 +216,19 @@ msgctxt "@info:tooltip"
 msgid "Launch %1"
 msgstr "Spustiť %1"
 
-#: ui/main.qml:173 ui/main.qml:181
+#: ui/main.qml:174 ui/main.qml:182
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "Kopírovať podrobnosti"
 
-#: ui/main.qml:184
+#: ui/main.qml:185
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "V aktuálnom jazyku"
 
-#: ui/main.qml:190
+#: ui/main.qml:191
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
