@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-07 00:41+0000\n"
-"PO-Revision-Date: 2024-02-27 07:51+0100\n"
+"PO-Revision-Date: 2024-11-07 05:41+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -40,25 +40,25 @@ msgstr "Neznana vrsta"
 #, kde-format
 msgctxt "@label GPU type"
 msgid "Integrated"
-msgstr ""
+msgstr "Integrirano"
 
 #: GPUEntry.cpp:182
 #, kde-format
 msgctxt "@label GPU type"
 msgid "Discrete"
-msgstr ""
+msgstr "Diskretno"
 
 #: GPUEntry.cpp:184
 #, kde-format
 msgctxt "@label GPU type. GPU of a VM"
 msgid "Virtual"
-msgstr ""
+msgstr "Navidezno"
 
 #: GPUEntry.cpp:203
 #, kde-format
 msgctxt "@label %1 is a GPU name and %2 a type such as 'Integrated'"
 msgid "%1 [%2]"
-msgstr ""
+msgstr "%1 [%2]"
 
 #: GPUEntry.cpp:287
 #, kde-format

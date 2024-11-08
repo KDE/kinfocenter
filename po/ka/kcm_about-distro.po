@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-07 00:41+0000\n"
-"PO-Revision-Date: 2024-02-27 04:49+0100\n"
+"PO-Revision-Date: 2024-11-07 04:06+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -36,25 +36,25 @@ msgstr "უცნობი ტიპი"
 #, kde-format
 msgctxt "@label GPU type"
 msgid "Integrated"
-msgstr ""
+msgstr "ინტეგრირებული"
 
 #: GPUEntry.cpp:182
 #, kde-format
 msgctxt "@label GPU type"
 msgid "Discrete"
-msgstr ""
+msgstr "დისკრეტული"
 
 #: GPUEntry.cpp:184
 #, kde-format
 msgctxt "@label GPU type. GPU of a VM"
 msgid "Virtual"
-msgstr ""
+msgstr "ვირტუალური"
 
 #: GPUEntry.cpp:203
 #, kde-format
 msgctxt "@label %1 is a GPU name and %2 a type such as 'Integrated'"
 msgid "%1 [%2]"
-msgstr ""
+msgstr "%1 [%2]"
 
 #: GPUEntry.cpp:287
 #, kde-format

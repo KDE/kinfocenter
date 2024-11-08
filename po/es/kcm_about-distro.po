@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kcm_about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-07 00:41+0000\n"
-"PO-Revision-Date: 2024-02-27 22:51+0100\n"
+"PO-Revision-Date: 2024-11-07 02:24+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -37,25 +37,25 @@ msgstr "Tipo desconocido"
 #, kde-format
 msgctxt "@label GPU type"
 msgid "Integrated"
-msgstr ""
+msgstr "Integrado"
 
 #: GPUEntry.cpp:182
 #, kde-format
 msgctxt "@label GPU type"
 msgid "Discrete"
-msgstr ""
+msgstr "Separado"
 
 #: GPUEntry.cpp:184
 #, kde-format
 msgctxt "@label GPU type. GPU of a VM"
 msgid "Virtual"
-msgstr ""
+msgstr "Virtual"
 
 #: GPUEntry.cpp:203
 #, kde-format
 msgctxt "@label %1 is a GPU name and %2 a type such as 'Integrated'"
 msgid "%1 [%2]"
-msgstr ""
+msgstr "%1 [%2]"
 
 #: GPUEntry.cpp:287
 #, kde-format

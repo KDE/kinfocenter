@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-07 00:41+0000\n"
-"PO-Revision-Date: 2024-02-27 13:28+0100\n"
+"PO-Revision-Date: 2024-11-07 09:29+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -40,25 +40,25 @@ msgstr "Tipus desconegut"
 #, kde-format
 msgctxt "@label GPU type"
 msgid "Integrated"
-msgstr ""
+msgstr "Integrada"
 
 #: GPUEntry.cpp:182
 #, kde-format
 msgctxt "@label GPU type"
 msgid "Discrete"
-msgstr ""
+msgstr "Dedicada"
 
 #: GPUEntry.cpp:184
 #, kde-format
 msgctxt "@label GPU type. GPU of a VM"
 msgid "Virtual"
-msgstr ""
+msgstr "Virtual"
 
 #: GPUEntry.cpp:203
 #, kde-format
 msgctxt "@label %1 is a GPU name and %2 a type such as 'Integrated'"
 msgid "%1 [%2]"
-msgstr ""
+msgstr "%1 [%2]"
 
 #: GPUEntry.cpp:287
 #, kde-format
