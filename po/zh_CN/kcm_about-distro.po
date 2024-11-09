@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-07 00:41+0000\n"
+"POT-Creation-Date: 2024-11-09 00:41+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -30,34 +30,41 @@ msgctxt ""
 msgid "Unknown Type"
 msgstr "未知类型"
 
-#: GPUEntry.cpp:180
-#, kde-format
-msgctxt "@label GPU type"
-msgid "Integrated"
-msgstr ""
+#: GPUEntry.cpp:17
+#, fuzzy, kde-format
+#| msgid "Graphics Processor:"
+msgctxt "@label %1 is the GPU index number"
+msgid "Graphics Processor %1:"
+msgstr "图形处理器："
 
-#: GPUEntry.cpp:182
-#, kde-format
-msgctxt "@label GPU type"
-msgid "Discrete"
-msgstr ""
-
-#: GPUEntry.cpp:184
-#, kde-format
-msgctxt "@label GPU type. GPU of a VM"
-msgid "Virtual"
-msgstr ""
-
-#: GPUEntry.cpp:203
-#, kde-format
-msgctxt "@label %1 is a GPU name and %2 a type such as 'Integrated'"
-msgid "%1 [%2]"
-msgstr ""
-
-#: GPUEntry.cpp:287
+#: GPUEntry.cpp:18
 #, kde-format
 msgid "Graphics Processor:"
 msgstr "图形处理器："
+
+#: GPUEntry.cpp:28
+#, fuzzy, kde-format
+#| msgctxt "@label GPU type"
+#| msgid "Integrated"
+msgctxt "@label GPU type"
+msgid "integrated"
+msgstr "集成显卡"
+
+#: GPUEntry.cpp:30
+#, fuzzy, kde-format
+#| msgctxt "@label GPU type"
+#| msgid "Discrete"
+msgctxt "@label GPU type"
+msgid "discrete"
+msgstr "独立显卡"
+
+#: GPUEntry.cpp:32
+#, fuzzy, kde-format
+#| msgctxt "@label GPU type. GPU of a VM"
+#| msgid "Virtual"
+msgctxt "@label GPU type. GPU of a virtual machine"
+msgid "virtual"
+msgstr "虚拟显卡"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
@@ -75,48 +82,48 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1 (%2 位)"
 
-#: main.cpp:197
+#: main.cpp:199
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr "制造商："
 
-#: main.cpp:200 main.cpp:217
+#: main.cpp:202 main.cpp:219
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr "产品名称："
 
-#: main.cpp:203
+#: main.cpp:205
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
 msgstr "系统版本："
 
-#: main.cpp:206 main.cpp:220
+#: main.cpp:208 main.cpp:222
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr "序列号："
 
-#: main.cpp:210 main.cpp:227
+#: main.cpp:212 main.cpp:229
 #, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "未知："
 
-#: main.cpp:223
+#: main.cpp:225
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "U-Boot 版本："
 
-#: main.cpp:261
+#: main.cpp:263
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "KDE 程序框架版本："
 
-#: main.cpp:262
+#: main.cpp:264
 #, kde-format
 msgid "Qt Version:"
 msgstr "Qt 版本："
@@ -168,62 +175,66 @@ msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ":"
 
-#: ui/main.qml:91
+#: ui/main.qml:106
 #, kde-format
 msgctxt "@title"
 msgid "Serial Number"
 msgstr "序列号"
 
-#: ui/main.qml:97
+#: ui/main.qml:112
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
 msgstr "复制"
 
-#: ui/main.qml:126
+#: ui/main.qml:164
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
 msgstr "显示"
 
-#: ui/main.qml:138
+#: ui/main.qml:176
 #, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "软件"
 
-#: ui/main.qml:148
+#: ui/main.qml:186
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "硬件"
 
-#: ui/main.qml:165
+#: ui/main.qml:203
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "More System Information"
 msgstr "更多系统信息"
 
-#: ui/main.qml:166
+#: ui/main.qml:204
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Launch %1"
 msgstr "启动 %1"
 
-#: ui/main.qml:174 ui/main.qml:182
+#: ui/main.qml:212 ui/main.qml:220
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "复制详细信息"
 
-#: ui/main.qml:185
+#: ui/main.qml:223
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "当前语言"
 
-#: ui/main.qml:191
+#: ui/main.qml:229
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
 msgstr "英语"
+
+#~ msgctxt "@label %1 is a GPU name and %2 a type such as 'Integrated'"
+#~ msgid "%1 [%2]"
+#~ msgstr "%1 [%2]"

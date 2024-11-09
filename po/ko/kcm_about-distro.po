@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-07 00:41+0000\n"
+"POT-Creation-Date: 2024-11-09 00:41+0000\n"
 "PO-Revision-Date: 2024-08-19 23:18+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -30,34 +30,35 @@ msgctxt ""
 msgid "Unknown Type"
 msgstr "알 수 없는 형식"
 
-#: GPUEntry.cpp:180
-#, kde-format
-msgctxt "@label GPU type"
-msgid "Integrated"
-msgstr ""
+#: GPUEntry.cpp:17
+#, fuzzy, kde-format
+#| msgid "Graphics Processor:"
+msgctxt "@label %1 is the GPU index number"
+msgid "Graphics Processor %1:"
+msgstr "그래픽 프로세서:"
 
-#: GPUEntry.cpp:182
-#, kde-format
-msgctxt "@label GPU type"
-msgid "Discrete"
-msgstr ""
-
-#: GPUEntry.cpp:184
-#, kde-format
-msgctxt "@label GPU type. GPU of a VM"
-msgid "Virtual"
-msgstr ""
-
-#: GPUEntry.cpp:203
-#, kde-format
-msgctxt "@label %1 is a GPU name and %2 a type such as 'Integrated'"
-msgid "%1 [%2]"
-msgstr ""
-
-#: GPUEntry.cpp:287
+#: GPUEntry.cpp:18
 #, kde-format
 msgid "Graphics Processor:"
 msgstr "그래픽 프로세서:"
+
+#: GPUEntry.cpp:28
+#, kde-format
+msgctxt "@label GPU type"
+msgid "integrated"
+msgstr ""
+
+#: GPUEntry.cpp:30
+#, kde-format
+msgctxt "@label GPU type"
+msgid "discrete"
+msgstr ""
+
+#: GPUEntry.cpp:32
+#, kde-format
+msgctxt "@label GPU type. GPU of a virtual machine"
+msgid "virtual"
+msgstr ""
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
@@ -75,48 +76,48 @@ msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
 msgstr "%1(%2비트)"
 
-#: main.cpp:197
+#: main.cpp:199
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
 msgstr "제조사:"
 
-#: main.cpp:200 main.cpp:217
+#: main.cpp:202 main.cpp:219
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
 msgstr "제품 이름:"
 
-#: main.cpp:203
+#: main.cpp:205
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
 msgstr "시스템 버전:"
 
-#: main.cpp:206 main.cpp:220
+#: main.cpp:208 main.cpp:222
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
 msgstr "일련 번호:"
 
-#: main.cpp:210 main.cpp:227
+#: main.cpp:212 main.cpp:229
 #, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
 msgstr "알 수 없음:"
 
-#: main.cpp:223
+#: main.cpp:225
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
 msgstr "U-Boot 버전:"
 
-#: main.cpp:261
+#: main.cpp:263
 #, kde-format
 msgid "KDE Frameworks Version:"
 msgstr "KDE 프레임워크 버전:"
 
-#: main.cpp:262
+#: main.cpp:264
 #, kde-format
 msgid "Qt Version:"
 msgstr "Qt 버전:"
@@ -168,61 +169,61 @@ msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ":"
 
-#: ui/main.qml:91
+#: ui/main.qml:106
 #, kde-format
 msgctxt "@title"
 msgid "Serial Number"
 msgstr "일련 번호"
 
-#: ui/main.qml:97
+#: ui/main.qml:112
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
 msgstr "복사"
 
-#: ui/main.qml:126
+#: ui/main.qml:164
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
 msgstr "표시"
 
-#: ui/main.qml:138
+#: ui/main.qml:176
 #, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "소프트웨어"
 
-#: ui/main.qml:148
+#: ui/main.qml:186
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "하드웨어"
 
-#: ui/main.qml:165
+#: ui/main.qml:203
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "More System Information"
 msgstr "더 많은 시스템 정보"
 
-#: ui/main.qml:166
+#: ui/main.qml:204
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Launch %1"
 msgstr "%1 실행"
 
-#: ui/main.qml:174 ui/main.qml:182
+#: ui/main.qml:212 ui/main.qml:220
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "자세한 정보 복사"
 
-#: ui/main.qml:185
+#: ui/main.qml:223
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "현재 언어로"
 
-#: ui/main.qml:191
+#: ui/main.qml:229
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
