@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-09 00:41+0000\n"
-"PO-Revision-Date: 2024-11-07 17:15+0200\n"
+"PO-Revision-Date: 2024-11-09 09:11+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -37,11 +37,10 @@ msgid "Unknown Type"
 msgstr "Невідомий тип"
 
 #: GPUEntry.cpp:17
-#, fuzzy, kde-format
-#| msgid "Graphics Processor:"
+#, kde-format
 msgctxt "@label %1 is the GPU index number"
 msgid "Graphics Processor %1:"
-msgstr "Графічний процесор:"
+msgstr "Графічний процесор %1:"
 
 #: GPUEntry.cpp:18
 #, kde-format
@@ -49,28 +48,22 @@ msgid "Graphics Processor:"
 msgstr "Графічний процесор:"
 
 #: GPUEntry.cpp:28
-#, fuzzy, kde-format
-#| msgctxt "@label GPU type"
-#| msgid "Integrated"
+#, kde-format
 msgctxt "@label GPU type"
 msgid "integrated"
-msgstr "Інтегрований"
+msgstr "інтегрований"
 
 #: GPUEntry.cpp:30
-#, fuzzy, kde-format
-#| msgctxt "@label GPU type"
-#| msgid "Discrete"
+#, kde-format
 msgctxt "@label GPU type"
 msgid "discrete"
-msgstr "Дискретний"
+msgstr "дискретний"
 
 #: GPUEntry.cpp:32
-#, fuzzy, kde-format
-#| msgctxt "@label GPU type. GPU of a VM"
-#| msgid "Virtual"
+#, kde-format
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
-msgstr "Віртуальний"
+msgstr "віртуальний"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format

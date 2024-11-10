@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: playground-base-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-09 00:41+0000\n"
-"PO-Revision-Date: 2024-11-08 19:34+0300\n"
+"PO-Revision-Date: 2024-11-09 08:41+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -34,11 +34,10 @@ msgid "Unknown Type"
 msgstr "Bilinmeyen Tür"
 
 #: GPUEntry.cpp:17
-#, fuzzy, kde-format
-#| msgid "Graphics Processor:"
+#, kde-format
 msgctxt "@label %1 is the GPU index number"
 msgid "Graphics Processor %1:"
-msgstr "Grafik işlemcisi:"
+msgstr "Grafik işlemcisi %1:"
 
 #: GPUEntry.cpp:18
 #, kde-format
@@ -46,28 +45,22 @@ msgid "Graphics Processor:"
 msgstr "Grafik işlemcisi:"
 
 #: GPUEntry.cpp:28
-#, fuzzy, kde-format
-#| msgctxt "@label GPU type"
-#| msgid "Integrated"
+#, kde-format
 msgctxt "@label GPU type"
 msgid "integrated"
-msgstr "Tümleşik"
+msgstr "tümleşik"
 
 #: GPUEntry.cpp:30
-#, fuzzy, kde-format
-#| msgctxt "@label GPU type"
-#| msgid "Discrete"
+#, kde-format
 msgctxt "@label GPU type"
 msgid "discrete"
-msgstr "Ayrı"
+msgstr "ayrı"
 
 #: GPUEntry.cpp:32
-#, fuzzy, kde-format
-#| msgctxt "@label GPU type. GPU of a VM"
-#| msgid "Virtual"
+#, kde-format
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
-msgstr "Sanal"
+msgstr "sanal"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format

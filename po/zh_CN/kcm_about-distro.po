@@ -31,11 +31,10 @@ msgid "Unknown Type"
 msgstr "未知类型"
 
 #: GPUEntry.cpp:17
-#, fuzzy, kde-format
-#| msgid "Graphics Processor:"
+#, kde-format
 msgctxt "@label %1 is the GPU index number"
 msgid "Graphics Processor %1:"
-msgstr "图形处理器："
+msgstr ""
 
 #: GPUEntry.cpp:18
 #, kde-format
@@ -43,28 +42,22 @@ msgid "Graphics Processor:"
 msgstr "图形处理器："
 
 #: GPUEntry.cpp:28
-#, fuzzy, kde-format
-#| msgctxt "@label GPU type"
-#| msgid "Integrated"
+#, kde-format
 msgctxt "@label GPU type"
 msgid "integrated"
-msgstr "集成显卡"
+msgstr ""
 
 #: GPUEntry.cpp:30
-#, fuzzy, kde-format
-#| msgctxt "@label GPU type"
-#| msgid "Discrete"
+#, kde-format
 msgctxt "@label GPU type"
 msgid "discrete"
-msgstr "独立显卡"
+msgstr ""
 
 #: GPUEntry.cpp:32
-#, fuzzy, kde-format
-#| msgctxt "@label GPU type. GPU of a VM"
-#| msgid "Virtual"
+#, kde-format
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
-msgstr "虚拟显卡"
+msgstr ""
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
@@ -234,7 +227,3 @@ msgstr "当前语言"
 msgctxt "@action:button Copy Details..."
 msgid "In English"
 msgstr "英语"
-
-#~ msgctxt "@label %1 is a GPU name and %2 a type such as 'Integrated'"
-#~ msgid "%1 [%2]"
-#~ msgstr "%1 [%2]"
