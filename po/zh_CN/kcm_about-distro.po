@@ -34,7 +34,7 @@ msgstr "未知类型"
 #, kde-format
 msgctxt "@label %1 is the GPU index number"
 msgid "Graphics Processor %1:"
-msgstr ""
+msgstr "图形处理器 %1："
 
 #: GPUEntry.cpp:18
 #, kde-format
@@ -45,19 +45,19 @@ msgstr "图形处理器："
 #, kde-format
 msgctxt "@label GPU type"
 msgid "integrated"
-msgstr ""
+msgstr "集成"
 
 #: GPUEntry.cpp:30
 #, kde-format
 msgctxt "@label GPU type"
 msgid "discrete"
-msgstr ""
+msgstr "独立"
 
 #: GPUEntry.cpp:32
 #, kde-format
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
-msgstr ""
+msgstr "虚拟"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
