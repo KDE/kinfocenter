@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Giovanni Sora <g.sora@tiscali.it>, 2016, 2020, 2021, 2022, 2023, 2024.
+# SPDX-FileCopyrightText: 2016, 2020, 2021, 2022, 2023, 2024 Giovanni Sora <g.sora@tiscali.it>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-09 00:41+0000\n"
-"PO-Revision-Date: 2024-02-27 09:56+0100\n"
+"PO-Revision-Date: 2024-11-11 15:57+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -32,11 +32,10 @@ msgid "Unknown Type"
 msgstr "Typo incognite"
 
 #: GPUEntry.cpp:17
-#, fuzzy, kde-format
-#| msgid "Graphics Processor:"
+#, kde-format
 msgctxt "@label %1 is the GPU index number"
 msgid "Graphics Processor %1:"
-msgstr "Processor graphic:"
+msgstr "Processor graphic %1:"
 
 #: GPUEntry.cpp:18
 #, kde-format
@@ -47,19 +46,19 @@ msgstr "Processor graphic:"
 #, kde-format
 msgctxt "@label GPU type"
 msgid "integrated"
-msgstr ""
+msgstr "integrarate"
 
 #: GPUEntry.cpp:30
 #, kde-format
 msgctxt "@label GPU type"
 msgid "discrete"
-msgstr ""
+msgstr "discrete"
 
 #: GPUEntry.cpp:32
 #, kde-format
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
-msgstr ""
+msgstr "virtual"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
