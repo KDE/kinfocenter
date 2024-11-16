@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-09 00:41+0000\n"
-"PO-Revision-Date: 2024-10-13 16:12+0300\n"
+"PO-Revision-Date: 2024-11-12 20:01+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 24.08.1\n"
+"X-Generator: Lokalize 24.08.3\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -34,11 +34,10 @@ msgid "Unknown Type"
 msgstr "Nezināms tips"
 
 #: GPUEntry.cpp:17
-#, fuzzy, kde-format
-#| msgid "Graphics Processor:"
+#, kde-format
 msgctxt "@label %1 is the GPU index number"
 msgid "Graphics Processor %1:"
-msgstr "Grafikas procesors:"
+msgstr "%1. grafikas procesors:"
 
 #: GPUEntry.cpp:18
 #, kde-format
@@ -49,19 +48,19 @@ msgstr "Grafikas procesors:"
 #, kde-format
 msgctxt "@label GPU type"
 msgid "integrated"
-msgstr ""
+msgstr "integrēta"
 
 #: GPUEntry.cpp:30
 #, kde-format
 msgctxt "@label GPU type"
 msgid "discrete"
-msgstr ""
+msgstr "diskrēta"
 
 #: GPUEntry.cpp:32
 #, kde-format
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
-msgstr ""
+msgstr "virtuāla"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format

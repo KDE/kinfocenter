@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-09 00:41+0000\n"
-"PO-Revision-Date: 2024-05-23 11:57+0200\n"
+"PO-Revision-Date: 2024-11-15 20:22+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.07.70\n"
+"X-Generator: Lokalize 24.08.3\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -35,11 +35,10 @@ msgid "Unknown Type"
 msgstr "Ismeretlen típus"
 
 #: GPUEntry.cpp:17
-#, fuzzy, kde-format
-#| msgid "Graphics Processor:"
+#, kde-format
 msgctxt "@label %1 is the GPU index number"
 msgid "Graphics Processor %1:"
-msgstr "Grafikai feldolgozóegység:"
+msgstr "Grafikai processzor: %1"
 
 #: GPUEntry.cpp:18
 #, kde-format
@@ -50,19 +49,19 @@ msgstr "Grafikai feldolgozóegység:"
 #, kde-format
 msgctxt "@label GPU type"
 msgid "integrated"
-msgstr ""
+msgstr "integrált"
 
 #: GPUEntry.cpp:30
 #, kde-format
 msgctxt "@label GPU type"
 msgid "discrete"
-msgstr ""
+msgstr "diszkrét"
 
 #: GPUEntry.cpp:32
 #, kde-format
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
-msgstr ""
+msgstr "virtuális"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
