@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-09 00:41+0000\n"
-"PO-Revision-Date: 2024-11-08 14:58+0000\n"
+"PO-Revision-Date: 2024-11-16 12:54+0000\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
 "Language: en_GB\n"
@@ -32,11 +32,10 @@ msgid "Unknown Type"
 msgstr "Unknown Type"
 
 #: GPUEntry.cpp:17
-#, fuzzy, kde-format
-#| msgid "Graphics Processor:"
+#, kde-format
 msgctxt "@label %1 is the GPU index number"
 msgid "Graphics Processor %1:"
-msgstr "Graphics Processor:"
+msgstr "Graphics Processor %1:"
 
 #: GPUEntry.cpp:18
 #, kde-format
@@ -44,28 +43,22 @@ msgid "Graphics Processor:"
 msgstr "Graphics Processor:"
 
 #: GPUEntry.cpp:28
-#, fuzzy, kde-format
-#| msgctxt "@label GPU type"
-#| msgid "Integrated"
+#, kde-format
 msgctxt "@label GPU type"
 msgid "integrated"
-msgstr "Integrated"
+msgstr "integrated"
 
 #: GPUEntry.cpp:30
-#, fuzzy, kde-format
-#| msgctxt "@label GPU type"
-#| msgid "Discrete"
+#, kde-format
 msgctxt "@label GPU type"
 msgid "discrete"
-msgstr "Discrete"
+msgstr "discrete"
 
 #: GPUEntry.cpp:32
-#, fuzzy, kde-format
-#| msgctxt "@label GPU type. GPU of a VM"
-#| msgid "Virtual"
+#, kde-format
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
-msgstr "Virtual"
+msgstr "virtual"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
