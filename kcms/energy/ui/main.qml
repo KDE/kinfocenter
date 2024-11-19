@@ -48,6 +48,7 @@ KCM.SimpleKCM {
                 {label: i18n("Charge state"), value: "chargeState", modifier: "chargeState"},
                 {label: i18n("Current charge"), value: "chargePercent", unit: "%", precision: 0},
                 {label: i18n("Health"), value: "capacity", unit: "%", precision: 0},
+                {label: i18n("Charge Cycles"), value: "cycleCount", modifier: "cycleCount"},
                 {label: i18n("Vendor"), value: "vendor", source:"Vendor"},
                 {label: i18n("Model"), value: "model", source:"Product"},
                 {label: i18n("Serial Number"), value: "serial"},
@@ -91,6 +92,11 @@ KCM.SimpleKCM {
         case Battery.NickelMetalHydride: return i18n("Nickel metal hydride")
         default: return i18n("Unknown technology")
         }
+    }
+
+    function modifier_cycleCount(value) {
+        // -1 means "not available", don't show this.
+        return value > 0 ? value : "";
     }
 
     implicitWidth: Kirigami.Units.gridUnit * 30
