@@ -43,10 +43,9 @@ msgid "Health"
 msgstr "健康水平"
 
 #: ui/main.qml:51
-#, fuzzy, kde-format
-#| msgid "Charge state"
+#, kde-format
 msgid "Charge Cycles"
-msgstr "充电状态"
+msgstr ""
 
 #: ui/main.qml:52
 #, kde-format
