@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-21 00:42+0000\n"
-"PO-Revision-Date: 2024-05-23 19:58+0100\n"
+"PO-Revision-Date: 2024-11-23 12:11+0000\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
 "Language: en_GB\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.08.3\n"
 
 #: ui/main.qml:45
 #, kde-format
@@ -43,10 +43,9 @@ msgid "Health"
 msgstr "Health"
 
 #: ui/main.qml:51
-#, fuzzy, kde-format
-#| msgid "Charge state"
+#, kde-format
 msgid "Charge Cycles"
-msgstr "Charge state"
+msgstr "Charge Cycles"
 
 #: ui/main.qml:52
 #, kde-format

@@ -45,7 +45,7 @@ msgstr "健康水平"
 #: ui/main.qml:51
 #, kde-format
 msgid "Charge Cycles"
-msgstr ""
+msgstr "充电循环"
 
 #: ui/main.qml:52
 #, kde-format
