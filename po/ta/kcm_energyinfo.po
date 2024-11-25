@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-14 01:36+0000\n"
-"PO-Revision-Date: 2024-03-17 18:29+0530\n"
+"PO-Revision-Date: 2024-11-24 16:52+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.02.0\n"
+"X-Generator: Lokalize 24.08.3\n"
 
 #: ui/main.qml:45
 #, kde-format
@@ -109,7 +109,7 @@ msgstr "கடைசியாக முழுதாக நிரப்பிய�
 #: ui/main.qml:64
 #, kde-format
 msgid "Original charge capacity"
-msgstr ""
+msgstr "புதியதன் ஆற்றல் கொள்ளளவு"
 
 #: ui/main.qml:68
 #, kde-format
@@ -180,7 +180,7 @@ msgstr ""
 #: ui/main.qml:92
 #, kde-format
 msgid "Unknown technology"
-msgstr ""
+msgstr "தெரியாத தொழில்நுட்பம்"
 
 #: ui/main.qml:99
 #, kde-format
@@ -286,7 +286,7 @@ msgstr "செவிபேசி மின்கலம்"
 #: ui/main.qml:195
 #, kde-format
 msgid "Headset Battery"
-msgstr ""
+msgstr "தலையணி ஒலிவாங்கி மின்கலம்"
 
 #: ui/main.qml:196
 #, kde-format
@@ -302,13 +302,13 @@ msgstr "தெரியாத மின்கலம்"
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
-msgstr ""
+msgstr "%1% (ஆற்றலேறுகிறது)"
 
 #: ui/main.qml:226
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: ui/main.qml:275
 #, kde-format
@@ -335,12 +335,12 @@ msgstr "ஆற்றல் பயன்பாட்டு"
 #: ui/main.qml:326
 #, kde-format
 msgid "Timespan"
-msgstr ""
+msgstr "கால வரையறை"
 
 #: ui/main.qml:327
 #, kde-format
 msgid "Timespan of data to display"
-msgstr ""
+msgstr "காட்டவேண்டியவற்றிற்கான கால வரையறை"
 
 #: ui/main.qml:333
 #, kde-format
@@ -350,31 +350,31 @@ msgstr "புதுப்பி"
 #: ui/main.qml:345
 #, kde-format
 msgid "This type of history is currently not available for this device."
-msgstr ""
+msgstr "இவ்வகையான வரலாறு இந்த சாதனத்திற்கு கிடைக்கவில்லை."
 
 #: ui/main.qml:403
 #, kde-format
 msgid "%1:"
-msgstr ""
+msgstr "%1:"
 
 #: ui/main.qml:414
 #, kde-format
 msgid "Yes"
-msgstr ""
+msgstr "ஆம்"
 
 #: ui/main.qml:416
 #, kde-format
 msgid "No"
-msgstr ""
+msgstr "இல்லை"
 
 #: ui/main.qml:436
 #, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: ui/main.qml:438
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
