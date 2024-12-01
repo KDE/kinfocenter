@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-09 00:41+0000\n"
-"PO-Revision-Date: 2024-03-02 12:50+0100\n"
+"PO-Revision-Date: 2024-11-30 09:10+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 24.08.3\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -34,11 +35,10 @@ msgid "Unknown Type"
 msgstr "Nieznany rodzaj"
 
 #: GPUEntry.cpp:17
-#, fuzzy, kde-format
-#| msgid "Graphics Processor:"
+#, kde-format
 msgctxt "@label %1 is the GPU index number"
 msgid "Graphics Processor %1:"
-msgstr "Procesor graficzny:"
+msgstr "Procesor graficzny %1:"
 
 #: GPUEntry.cpp:18
 #, kde-format
@@ -49,19 +49,19 @@ msgstr "Procesor graficzny:"
 #, kde-format
 msgctxt "@label GPU type"
 msgid "integrated"
-msgstr ""
+msgstr "wbudowany"
 
 #: GPUEntry.cpp:30
 #, kde-format
 msgctxt "@label GPU type"
 msgid "discrete"
-msgstr ""
+msgstr "wydzielony"
 
 #: GPUEntry.cpp:32
 #, kde-format
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
-msgstr ""
+msgstr "wirtualny"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
