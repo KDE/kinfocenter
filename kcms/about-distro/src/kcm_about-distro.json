@@ -103,6 +103,7 @@
     },
     "X-KDE-KInfoCenter-Category": "basic_information",
     "X-KDE-Keywords": "about,info,information,distribution,distro,system,kernel,qt,kde,version",
+    "X-KDE-Keywords[ar]": "information,distribution,distro,system,kernel,qt,kde,معلومات,توزيعة,نظام,نواة,كيوت,كِيدِي,حول",
     "X-KDE-Keywords[bg]": "относно,информация,информация,разпределение,дистрибуция,система,ядро,qt,kde,версия",
     "X-KDE-Keywords[ca@valencia]": "quant,info,informació,distribució,distro,sistema,nucli,qt,kde,versió",
     "X-KDE-Keywords[ca]": "quant,info,informació,distribució,distro,sistema,nucli,qt,kde,versió",

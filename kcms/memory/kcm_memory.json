@@ -132,6 +132,7 @@
     "TryExec": "pkexec dmidecode",
     "X-KDE-KInfoCenter-Category": "device_information",
     "X-KDE-Keywords": "Memory,RAM,dmidecode",
+    "X-KDE-Keywords[ar]": "Memory,RAM,dmidecode,رام,ذاكرة,ذاكرة حية",
     "X-KDE-Keywords[bg]": "Памет,RAM,dmidecode",
     "X-KDE-Keywords[ca@valencia]": "Memòria,RAM,dmidecode",
     "X-KDE-Keywords[ca]": "Memòria,RAM,dmidecode",

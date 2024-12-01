@@ -3,6 +3,7 @@
     "KPlugin": {
         "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
         "Description": "Extended Display Identification Data",
+        "Description[ar]": "بيانات تعريف العرض الممتد",
         "Description[bg]": "Extended Display Identification Data",
         "Description[ca@valencia]": "Dades ampliades d'identificació de pantalla",
         "Description[ca]": "Dades ampliades d'identificació de pantalla",
@@ -29,6 +30,7 @@
         "Description[zh_CN]": "扩展显示识别数据",
         "Icon": "video-display",
         "Name": "EDID",
+        "Name[ar]": "بيانات تعريف العرض الممتدة",
         "Name[bg]": "EDID",
         "Name[ca@valencia]": "EDID",
         "Name[ca]": "EDID",
@@ -57,6 +59,7 @@
     "TryExec": "di-edid-decode",
     "X-KDE-KInfoCenter-Category": "graphical_information",
     "X-KDE-Keywords": "EDID,Graphics",
+    "X-KDE-Keywords[ar]": "EDID,Graphics,الرسوميات,بيانات تعريف العرض الممتدة",
     "X-KDE-Keywords[bg]": "EDID,Графика",
     "X-KDE-Keywords[ca@valencia]": "EDID,Gràfics",
     "X-KDE-Keywords[ca]": "EDID,Gràfics",

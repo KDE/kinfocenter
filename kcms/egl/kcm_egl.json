@@ -103,6 +103,7 @@
     "TryExec": "eglinfo",
     "X-KDE-KInfoCenter-Category": "graphical_information",
     "X-KDE-Keywords": "OpenGL,DRI,3D,VideoCard,Hardware Acceleration,Graphics,EGL",
+    "X-KDE-Keywords[ar]": "OpenGL,DRI,3D,VideoCard,Hardware Acceleration,Graphics,EGL,بطاقة الرسوميات,تسريع العتاد,رسوميات",
     "X-KDE-Keywords[az]": "OpenGL,DRI,3D,VideoCard,Hardware Acceleration,Graphics,EGL,Videokart,Avadanlıq sürətləndiricisi,Qrafukalar",
     "X-KDE-Keywords[bg]": "OpenGL,DRI,3D,видеокарта,хардуерно ускорение,графика,EGL",
     "X-KDE-Keywords[ca@valencia]": "OpenGL,DRI,3D,Targeta de vídeo,Acceleració per maquinari,Gràfics,EGL",

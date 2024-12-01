@@ -103,6 +103,7 @@
     "TryExec": "lscpu",
     "X-KDE-KInfoCenter-Category": "device_information",
     "X-KDE-Keywords": "cpu,amd,intel,arm,instructions,cores,architecture,byte order",
+    "X-KDE-Keywords[ar]": "cpu,amd,intel,arm,instructions,cores,architecture,byte order,تعليمات,أنوية,معمارية",
     "X-KDE-Keywords[az]": "cpu,amd,intel,arm,instructions,cores,architecture,byte order,təlimatlar,nüvə,növbə,arxitektura,bayt",
     "X-KDE-Keywords[bg]": "процесор,amd,intel,ръка,инструкции,ядра,архитектура,ред на байтовете",
     "X-KDE-Keywords[ca@valencia]": "cpu,amd,intel,arm,instruccions,nuclis,arquitectura,ordre dels bytes",

@@ -81,6 +81,7 @@
     "TryExec": "lsblk",
     "X-KDE-KInfoCenter-Category": "device_information",
     "X-KDE-Keywords": "lsblk,block device,partition,disk,drive,hdd,ssd,nvme",
+    "X-KDE-Keywords[ar]": "lsblk,block device,partition,disk,drive,hdd,ssd,nvme,قرص,قسم,قطاع جهاز",
     "X-KDE-Keywords[bg]": "lsblk,блокиране на устройство,дял,диск,устройство,hdd,ssd,nvme",
     "X-KDE-Keywords[ca@valencia]": "lsblk,dispositiu de blocs,partició,disc,unitat,hdd,ssd,nvme",
     "X-KDE-Keywords[ca]": "lsblk,dispositiu de blocs,partició,disc,unitat,hdd,ssd,nvme",
