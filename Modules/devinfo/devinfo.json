@@ -115,6 +115,7 @@
     "X-DocPath": "kinfocenter/devinfo.html",
     "X-KDE-KInfoCenter-Category": "device_information",
     "X-KDE-Keywords": "device,devices,disk,drive,processor,cpu",
+    "X-KDE-Keywords[ar]": "جهاز,أجهزة,قرص,محرك,معالج,وحدة المعالجة المركزية",
     "X-KDE-Keywords[az]": "device,devices,disk,drive,processor,cpu,qurğu,cihaz,disk,prosessor,mərkəzi prosessor,sürücü",
     "X-KDE-Keywords[ca@valencia]": "dispositiu,dispositius,disc,unitat,processador,cpu",
     "X-KDE-Keywords[ca]": "dispositiu,dispositius,disc,unitat,processador,cpu",
