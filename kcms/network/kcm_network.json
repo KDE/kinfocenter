@@ -145,6 +145,7 @@
     "TryExec": "ip",
     "X-KDE-KInfoCenter-Category": "network_information",
     "X-KDE-Keywords": "network,nic,ip,ip address,mac,inet,eth,wlan,wifi",
+    "X-KDE-Keywords[ar]": "network,nic,ip,ip address,mac,inet,eth,wlan,wifi,الشبكة,شبكة الاتصال,عنوان IP,عنوان IP,جهاز Mac,شبكة الإنترنت,شبكة ETH,شبكة WLAN,شبكة Wi-Fi",
     "X-KDE-Keywords[bg]": "мрежа,nic,ip,ip адрес,mac,inet,eth,wlan,wifi",
     "X-KDE-Keywords[ca@valencia]": "xarxa,nic,ip,adreça ip,mac,inet,eth,wlan,wifi",
     "X-KDE-Keywords[ca]": "xarxa,nic,ip,adreça ip,mac,inet,eth,wlan,wifi",
