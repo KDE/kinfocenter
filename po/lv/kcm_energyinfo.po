@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-21 00:42+0000\n"
-"PO-Revision-Date: 2024-11-06 20:51+0200\n"
+"PO-Revision-Date: 2024-12-01 21:34+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 24.08.2\n"
+"X-Generator: Lokalize 24.08.3\n"
 
 #: ui/main.qml:45
 #, kde-format
@@ -44,10 +44,9 @@ msgid "Health"
 msgstr "Veselība"
 
 #: ui/main.qml:51
-#, fuzzy, kde-format
-#| msgid "Charge state"
+#, kde-format
 msgid "Charge Cycles"
-msgstr "Uzlādes statuss"
+msgstr "Uzlādes cikli"
 
 #: ui/main.qml:52
 #, kde-format
