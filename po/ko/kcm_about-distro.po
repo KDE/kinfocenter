@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-09 00:41+0000\n"
-"PO-Revision-Date: 2024-08-19 23:18+0200\n"
+"PO-Revision-Date: 2024-12-10 00:48+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -31,11 +31,10 @@ msgid "Unknown Type"
 msgstr "알 수 없는 형식"
 
 #: GPUEntry.cpp:17
-#, fuzzy, kde-format
-#| msgid "Graphics Processor:"
+#, kde-format
 msgctxt "@label %1 is the GPU index number"
 msgid "Graphics Processor %1:"
-msgstr "그래픽 프로세서:"
+msgstr "그래픽 프로세서 %1:"
 
 #: GPUEntry.cpp:18
 #, kde-format
@@ -46,19 +45,19 @@ msgstr "그래픽 프로세서:"
 #, kde-format
 msgctxt "@label GPU type"
 msgid "integrated"
-msgstr ""
+msgstr "내장형"
 
 #: GPUEntry.cpp:30
 #, kde-format
 msgctxt "@label GPU type"
 msgid "discrete"
-msgstr ""
+msgstr "독립형"
 
 #: GPUEntry.cpp:32
 #, kde-format
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
-msgstr ""
+msgstr "가상"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
