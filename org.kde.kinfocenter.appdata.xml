@@ -44,6 +44,7 @@
   <name xml:lang="pt-BR">Centro de informações</name>
   <name xml:lang="ro">Centru de informații</name>
   <name xml:lang="ru">Информация о системе</name>
+  <name xml:lang="sa">सूचना केन्द्र</name>
   <name xml:lang="sk">Informačné centrum</name>
   <name xml:lang="sl">Info Center</name>
   <name xml:lang="sv">Informationscentral</name>
@@ -91,6 +92,7 @@
   <summary xml:lang="pt-BR">Visão geral centralizada e conveniente das informações do sistema</summary>
   <summary xml:lang="ro">Vizualizare centralizată și convenabilă a informațiilor despre sistem</summary>
   <summary xml:lang="ru">Централизованный и удобный просмотр информации о системе</summary>
+  <summary xml:lang="sa">प्रणालीसूचनायाः केन्द्रीकृतं सुविधाजनकं च अवलोकनम्</summary>
   <summary xml:lang="sk">Centralizovaný a pohodlný prehľad systémových informácií</summary>
   <summary xml:lang="sl">Centraliziran in priročen pregled sistemskih informacij</summary>
   <summary xml:lang="sv">Centraliserad och bekväm översikt av systeminformation</summary>
@@ -138,6 +140,7 @@
     <p xml:lang="pt-BR">O centro de informações fornece a você uma visão geral centralizada e conveniente de seu sistema e ambiente de trabalho.</p>
     <p xml:lang="ro">Centrul de informații oferă o vedere generală centralizată și convenabilă asupra sistemului și mediului de birou</p>
     <p xml:lang="ru">Программа «Информация о системе» позволяет централизованно посмотреть параметры системы и окружения рабочего стола.</p>
+    <p xml:lang="sa">सूचनाकेन्द्रं भवतः प्रणाल्याः डेस्कटॉप् वातावरणस्य च केन्द्रीकृतं सुविधाजनकं च अवलोकनं प्रदाति ।</p>
     <p xml:lang="sk">Informačné centrum vám poskytuje centralizovaný a pohodlný prehľad o vašom systéme a prostredí pracovnej plochy.</p>
     <p xml:lang="sl">Info center vam nudi centraliziran in priročen pregled nad sistemom in namizjem.</p>
     <p xml:lang="sv">Informationscentralen ger dig en centraliserad och bekväm översikt av systemet och skrivbordsmiljön.</p>
@@ -186,6 +189,7 @@
     <p xml:lang="pt-BR">O centro de informações é formado por vários módulos, sendo que cada um deles é um aplicativo separado. Porém, ele organiza todos estes programas, em uma localização conveniente.</p>
     <p xml:lang="ro">Centrul de informații e compus din multe module. Fiecare modul e o aplicație separată, dar Centrul de informații organizează toate aceste programe într-un loc convenabil.</p>
     <p xml:lang="ru">Она имеет модульную структуру. Каждый модуль является отдельным приложением, а приложение KInfoCenter объединяет их в одном месте.</p>
+    <p xml:lang="sa">सूचनाकेन्द्रं बहुविधमॉड्यूलैः निर्मितम् अस्ति । प्रत्येकं मॉड्यूल् पृथक् अनुप्रयोगः अस्ति, परन्तु सूचनाकेन्द्रम् एतान् सर्वान् कार्यक्रमान् सुविधाजनकस्थाने व्यवस्थितं करोति ।</p>
     <p xml:lang="sk">Informačné centrum pozostáva z viacerých modulov. Každý modul je samostatnou aplikáciou, ale informačné centrum organizuje všetky tieto programy na vhodnom mieste.</p>
     <p xml:lang="sl">Informacijski center je sestavljen iz več modulov. Vsak modul je ločena aplikacija, vendar informacijski center vse to sestavi na priročno mesto.</p>
     <p xml:lang="sv">Informationscentralen består av flera moduler. Varje modul är ett eget program, men informationscentralen organiserar alla dessa program på ett bekvämt ställe.</p>
