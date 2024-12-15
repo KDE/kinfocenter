@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-21 00:42+0000\n"
-"PO-Revision-Date: 2024-12-13 20:20+0530\n"
+"PO-Revision-Date: 2024-12-14 01:08+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
 "Language: sa\n"
@@ -78,13 +78,13 @@ msgstr "ऊर्जा"
 #, kde-format
 msgctxt "current power draw from the battery in W"
 msgid "Consumption"
-msgstr ""
+msgstr "उपभोग"
 
 #: ui/main.qml:61
 #, kde-format
 msgctxt "Watt"
 msgid "W"
-msgstr ""
+msgstr "इत्यस्मिन्‌"
 
 #: ui/main.qml:62
 #, kde-format
@@ -95,7 +95,7 @@ msgstr "वोल्टेज"
 #, kde-format
 msgctxt "Volt"
 msgid "V"
-msgstr ""
+msgstr "वि"
 
 #: ui/main.qml:63
 #, kde-format
@@ -106,7 +106,7 @@ msgstr "अवशिष्ट ऊर्जा"
 #, kde-format
 msgctxt "Watt-hours"
 msgid "Wh"
-msgstr ""
+msgstr "ह्"
 
 #: ui/main.qml:64
 #, kde-format
@@ -132,7 +132,7 @@ msgstr "तापमान"
 #, kde-format
 msgctxt "Degree Celsius"
 msgid "°C"
-msgstr ""
+msgstr "°C"
 
 #: ui/main.qml:78
 #, kde-format
@@ -223,7 +223,7 @@ msgstr "गत ७ दिवस"
 #, kde-format
 msgctxt "@info:status"
 msgid "No energy information available on this system"
-msgstr ""
+msgstr "अस्मिन् प्रणाल्यां ऊर्जासूचना उपलब्धा नास्ति"
 
 #: ui/main.qml:188
 #, kde-format
@@ -309,25 +309,25 @@ msgstr "अज्ञात बैटरी"
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
-msgstr ""
+msgstr "%1% (चार्जिंग) २."
 
 #: ui/main.qml:232
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
-msgstr ""
+msgstr "%1% २."
 
 #: ui/main.qml:281
 #, kde-format
 msgctxt "Shorthand for Watts"
 msgid "W"
-msgstr ""
+msgstr "इत्यस्मिन्‌"
 
 #: ui/main.qml:281
 #, kde-format
 msgctxt "literal percent sign"
 msgid "%"
-msgstr ""
+msgstr "% ."
 
 #: ui/main.qml:307
 #, kde-format
@@ -378,10 +378,10 @@ msgstr "नहि"
 #, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
-msgstr ""
+msgstr "%1% २."
 
 #: ui/main.qml:444
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"

@@ -23,355 +23,355 @@ msgstr ""
 #, kde-format
 msgctxt "USB device class"
 msgid "(Defined at Interface level)"
-msgstr ""
+msgstr "(Interface level इत्यत्र परिभाषितम्)"
 
 #: classes.i18n:3 usbdevices.cpp:102
 #, kde-format
 msgctxt "USB device class"
 msgid "Application Specific Interface"
-msgstr ""
+msgstr "अनुप्रयोगविशिष्टं अन्तरफलकं"
 
 #: classes.i18n:4 usbdevices.cpp:68
 #, kde-format
 msgctxt "USB device class"
 msgid "Audio"
-msgstr ""
+msgstr "श्रव्यः"
 
 #: classes.i18n:5 usbdevices.cpp:84
 #, kde-format
 msgctxt "USB device class"
 msgid "CDC Data"
-msgstr ""
+msgstr "सीडीसी डाटा"
 
 #: classes.i18n:6 usbdevices.cpp:86
 #, kde-format
 msgctxt "USB device class"
 msgid "Chip/SmartCard"
-msgstr ""
+msgstr "चिप/स्मार्टकार्ड"
 
 #: classes.i18n:7 usbdevices.cpp:70
 #, kde-format
 msgctxt "USB device class"
 msgid "Communications"
-msgstr ""
+msgstr "संचारः"
 
 #: classes.i18n:8 usbdevices.cpp:88
 #, kde-format
 msgctxt "USB device class"
 msgid "Content Security"
-msgstr ""
+msgstr "सामग्री सुरक्षा"
 
 #: classes.i18n:9 usbdevices.cpp:94
 #, kde-format
 msgctxt "USB device class"
 msgid "Diagnostic"
-msgstr ""
+msgstr "निदानात्मकम्"
 
 #: classes.i18n:10 usbdevices.cpp:82
 #, kde-format
 msgctxt "USB device class"
 msgid "Hub"
-msgstr ""
+msgstr "कोश"
 
 #: classes.i18n:11 usbdevices.cpp:72
 #, kde-format
 msgctxt "USB device class"
 msgid "Human Interface Device"
-msgstr ""
+msgstr "मानवीय अन्तरफलकयन्त्रम्"
 
 #: classes.i18n:12 usbdevices.cpp:78
 #, kde-format
 msgctxt "USB device class"
 msgid "Imaging"
-msgstr ""
+msgstr "इमेजिंग"
 
 #: classes.i18n:13 usbdevices.cpp:80
 #, kde-format
 msgctxt "USB device class"
 msgid "Mass Storage"
-msgstr ""
+msgstr "सामूहिक भण्डारण"
 
 #: classes.i18n:14 usbdevices.cpp:99
 #, kde-format
 msgctxt "USB device class"
 msgid "Miscellaneous Device"
-msgstr ""
+msgstr "विविध यन्त्र"
 
 #: classes.i18n:15 usbdevices.cpp:74
 #, kde-format
 msgctxt "USB device class"
 msgid "Physical Interface Device"
-msgstr ""
+msgstr "भौतिक अन्तरफलक उपकरण"
 
 #: classes.i18n:16 usbdevices.cpp:76
 #, kde-format
 msgctxt "USB device class"
 msgid "Printer"
-msgstr ""
+msgstr "मुद्रक"
 
 #: classes.i18n:17 usbdevices.cpp:104
 #, kde-format
 msgctxt "USB device class"
 msgid "Vendor Specific Class"
-msgstr ""
+msgstr "विक्रेता विशिष्ट वर्ग"
 
 #: classes.i18n:18 usbdevices.cpp:90
 #, kde-format
 msgctxt "USB device class"
 msgid "Video"
-msgstr ""
+msgstr "विडिओ"
 
 #: classes.i18n:19 usbdevices.cpp:96
 #, kde-format
 msgctxt "USB device class"
 msgid "Wireless"
-msgstr ""
+msgstr "वायरलेस्"
 
 #: classes.i18n:20
 #, kde-format
 msgctxt "USB device class"
 msgid "Xbox"
-msgstr ""
+msgstr "Xbox"
 
 #: classes.i18n:21
 #, kde-format
 msgctxt "USB device subclass"
 msgid "?"
-msgstr ""
+msgstr "?"
 
 #: classes.i18n:22
 #, kde-format
 msgctxt "USB device subclass"
 msgid "ATM Networking"
-msgstr ""
+msgstr "एटीएम नेटवर्किंग"
 
 #: classes.i18n:23
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Abstract (modem)"
-msgstr ""
+msgstr "अमूर्त (आधुनिक) ९."
 
 #: classes.i18n:24
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Boot Interface Subclass"
-msgstr ""
+msgstr "बूट अन्तरफलक उपवर्ग"
 
 #: classes.i18n:25
 #, kde-format
 msgctxt "USB device subclass"
 msgid "CAPI Control"
-msgstr ""
+msgstr "CAPI नियन्त्रणम्"
 
 #: classes.i18n:26
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Control Device"
-msgstr ""
+msgstr "नियन्त्रणयन्त्रम्"
 
 #: classes.i18n:27
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Controller"
-msgstr ""
+msgstr "नियन्त्रक"
 
 #: classes.i18n:28
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Device Firmware Update"
-msgstr ""
+msgstr "डिवाइस फर्मवेयर अपडेट"
 
 #: classes.i18n:29
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Device Management"
-msgstr ""
+msgstr "उपकरण प्रबन्धन"
 
 #: classes.i18n:30
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Direct Line"
-msgstr ""
+msgstr "प्रत्यक्ष रेखा"
 
 #: classes.i18n:31
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Ethernet Emulation"
-msgstr ""
+msgstr "ईथरनेट अनुकरणम्"
 
 #: classes.i18n:32
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Ethernet Networking"
-msgstr ""
+msgstr "ईथरनेट नेटवर्किंग"
 
 #: classes.i18n:33
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Floppy (UFI)"
-msgstr ""
+msgstr "फ्लॉपी (UFI) ९."
 
 #: classes.i18n:34
 #, kde-format
 msgctxt "USB device subclass"
 msgid "IRDA Bridge"
-msgstr ""
+msgstr "इर्दा सेतु"
 
 #: classes.i18n:35
 #, kde-format
 msgctxt "USB device subclass"
 msgid "MIDI Streaming"
-msgstr ""
+msgstr "MIDI स्ट्रीमिंग"
 
 #: classes.i18n:36
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Mobile Direct Line"
-msgstr ""
+msgstr "मोबाईल डायरेक्ट लाइन"
 
 #: classes.i18n:37
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Multi-Channel"
-msgstr ""
+msgstr "बहु-चैनल"
 
 #: classes.i18n:38
 #, kde-format
 msgctxt "USB device subclass"
 msgid "No Subclass"
-msgstr ""
+msgstr "न उपवर्गः"
 
 #: classes.i18n:39
 #, kde-format
 msgctxt "USB device subclass"
 msgid "OBEX"
-msgstr ""
+msgstr "OBESS इति"
 
 #: classes.i18n:40
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Printer"
-msgstr ""
+msgstr "मुद्रक"
 
 #: classes.i18n:41
 #, kde-format
 msgctxt "USB device subclass"
 msgid "QIC-157"
-msgstr ""
+msgstr "QIC-157"
 
 #: classes.i18n:42
 #, kde-format
 msgctxt "USB device subclass"
 msgid "RBC (typically Flash)"
-msgstr ""
+msgstr "आरबीसी (विशेषतः फ्लैश) २."
 
 #: classes.i18n:43
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Radio Frequency"
-msgstr ""
+msgstr "रेडियो आवृत्ति"
 
 #: classes.i18n:44
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Reprogrammable Diagnostics"
-msgstr ""
+msgstr "पुनः प्रोग्रामेबल डायग्नोस्टिक्स"
 
 #: classes.i18n:45
 #, kde-format
 msgctxt "USB device subclass"
 msgid "SCSI"
-msgstr ""
+msgstr "SCSI"
 
 #: classes.i18n:46
 #, kde-format
 msgctxt "USB device subclass"
 msgid "SFF-8020i, MMC-2 (ATAPI)"
-msgstr ""
+msgstr "एसएफएफ-8020i, एमएमसी-2 (एटीएपीआई)"
 
 #: classes.i18n:47
 #, kde-format
 msgctxt "USB device subclass"
 msgid "SFF-8070i"
-msgstr ""
+msgstr "एसएफएफ-8070i"
 
 #: classes.i18n:48
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Still Image Capture"
-msgstr ""
+msgstr "अद्यापि चित्रग्रहणम्"
 
 #: classes.i18n:49
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Streaming"
-msgstr ""
+msgstr "स्ट्रीमिंग"
 
 #: classes.i18n:50
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Telephone"
-msgstr ""
+msgstr "दूरभाषः"
 
 #: classes.i18n:51
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Test and Measurement"
-msgstr ""
+msgstr "परीक्षणं मापनं च"
 
 #: classes.i18n:52
 #, kde-format
 msgctxt "USB device subclass"
 msgid "USB3 Vision"
-msgstr ""
+msgstr "USB3 दृष्टिः"
 
 #: classes.i18n:53
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Undefined"
-msgstr ""
+msgstr "अनिर्दिष्टम्"
 
 #: classes.i18n:54
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Unused"
-msgstr ""
+msgstr "अप्रयुक्तः"
 
 #: classes.i18n:55
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Vendor Specific Subclass"
-msgstr ""
+msgstr "विक्रेता विशिष्ट उपवर्ग"
 
 #: classes.i18n:56
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Video Control"
-msgstr ""
+msgstr "विडियो नियन्त्रणम्"
 
 #: classes.i18n:57
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Video Interface Collection"
-msgstr ""
+msgstr "विडियो अन्तरफलक संग्रह"
 
 #: classes.i18n:58
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Video Streaming"
-msgstr ""
+msgstr "विडियो स्ट्रीमिंग"
 
 #: classes.i18n:59
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Wireless Handset Control"
-msgstr ""
+msgstr "वायरलेस हैण्डसेट नियन्त्रण"
 
 #: classes.i18n:60
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Wireless USB Wire Adapter"
-msgstr ""
+msgstr "वायरलेस USB तार एडाप्टर"
 
 #: kcmusb.cpp:35
 #, kde-format
@@ -382,7 +382,7 @@ msgstr "उपकरणम्‌"
 #, kde-format
 msgctxt "USB device class"
 msgid "Personal Healthcare"
-msgstr ""
+msgstr "व्यक्तिगत स्वास्थ्यसेवा"
 
 #: usbdevices.cpp:215
 #, kde-format
