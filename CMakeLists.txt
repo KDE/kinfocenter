@@ -58,8 +58,8 @@ remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_K
 add_definitions(-DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT)
 add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
 add_definitions(-DQT_USE_QSTRINGBUILDER)
-ecm_set_disabled_deprecation_versions(QT 6.7.0
-    KF 6.4.0
+ecm_set_disabled_deprecation_versions(QT 6.8.0
+    KF 6.9.0
 )
 
 
