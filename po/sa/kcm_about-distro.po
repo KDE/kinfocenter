@@ -3,26 +3,28 @@
 # This file is distributed under the same license as the kinfocenter package.
 # Kali <EMAIL@ADDRESS>, 2024.
 #
+# SPDX-FileCopyrightText: 2024 kali <skkalwar999@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-09 00:41+0000\n"
-"PO-Revision-Date: 2024-12-13 19:09+0530\n"
-"Last-Translator: Kali <EMAIL@ADDRESS>\n"
-"Language-Team: Sanskrit\n"
+"PO-Revision-Date: 2024-12-20 21:52+0530\n"
+"Last-Translator: kali <skkalwar999@gmail.com>\n"
+"Language-Team: English <kde-i18n-doc@kde.org>\n"
 "Language: sa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n>2);\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
 msgid "Processor:"
 msgid_plural "Processors:"
-msgstr[0] "संसाधकः : १."
-msgstr[1] "संसाधकाः : १."
+msgstr[0] "संसाधकः :"
+msgstr[1] "संसाधकाः :"
 
 #: CPUEntry.cpp:22
 #, kde-format
@@ -40,7 +42,7 @@ msgstr "ग्राफिक्स प्रोसेसर %1:"
 #: GPUEntry.cpp:18
 #, kde-format
 msgid "Graphics Processor:"
-msgstr "ग्राफिक्स प्रोसेसर : १."
+msgstr "ग्राफिक्स प्रोसेसर :"
 
 #: GPUEntry.cpp:28
 #, kde-format
@@ -63,42 +65,42 @@ msgstr "आभास"
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
 msgid "Graphics Platform:"
-msgstr "ग्राफिक्स मञ्चः : १."
+msgstr "ग्राफिक्स मञ्चः :"
 
 #: KernelEntry.cpp:11
 #, kde-format
 msgid "Kernel Version:"
-msgstr "कर्नेल् संस्करणम् : १."
+msgstr "कर्नेल् संस्करणम् :"
 
 #: KernelEntry.cpp:23
 #, kde-format
 msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
-msgstr "%1 (%2-बिट) २."
+msgstr "%1 (%2-बिट)"
 
 #: main.cpp:199
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
-msgstr "निर्माता : १."
+msgstr "निर्माता :"
 
 #: main.cpp:202 main.cpp:219
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
-msgstr "उत्पाद का नाम : १."
+msgstr "उत्पाद का नाम :"
 
 #: main.cpp:205
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
-msgstr "प्रणालीसंस्करणम् : १."
+msgstr "प्रणालीसंस्करणम् :"
 
 #: main.cpp:208 main.cpp:222
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
-msgstr "क्रमाङ्कः : १."
+msgstr "क्रमाङ्कः :"
 
 #: main.cpp:212 main.cpp:229
 #, kde-format
@@ -110,17 +112,17 @@ msgstr "अज्ञात:"
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
-msgstr "यू-बूट् संस्करणम् : १."
+msgstr "यू-बूट् संस्करणम् :"
 
 #: main.cpp:263
 #, kde-format
 msgid "KDE Frameworks Version:"
-msgstr "KDE Frameworks संस्करणम् : १."
+msgstr "KDE Frameworks संस्करणम् :"
 
 #: main.cpp:264
 #, kde-format
 msgid "Qt Version:"
-msgstr "Qt संस्करणम् : १."
+msgstr "Qt संस्करणम् :"
 
 #: MemoryEntry.cpp:20
 #, kde-format
@@ -142,7 +144,7 @@ msgstr "अज्ञात"
 #: OSVersionEntry.cpp:9
 #, kde-format
 msgid "Operating System:"
-msgstr "प्रचालन प्रणाली : १."
+msgstr "प्रचालन प्रणाली :"
 
 #: OSVersionEntry.cpp:11
 #, kde-format
@@ -161,13 +163,13 @@ msgstr "%1 %2 निर्माणम्: %3"
 #: PlasmaEntry.cpp:15
 #, kde-format
 msgid "KDE Plasma Version:"
-msgstr "केडीई प्लाज्मा संस्करणम् : १."
+msgstr "केडीई प्लाज्मा संस्करणम् :"
 
 #: ThirdPartyEntry.cpp:12
 #, kde-format
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
-msgstr ": १."
+msgstr ":"
 
 #: ui/main.qml:106
 #, kde-format

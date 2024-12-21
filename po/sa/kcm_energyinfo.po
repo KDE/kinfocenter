@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-21 00:42+0000\n"
-"PO-Revision-Date: 2024-12-14 01:08+0530\n"
+"PO-Revision-Date: 2024-12-20 21:52+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
 "Language: sa\n"
@@ -309,13 +309,13 @@ msgstr "अज्ञात बैटरी"
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
-msgstr "%1% (चार्जिंग) २."
+msgstr "%1% (चार्जिंग)"
 
 #: ui/main.qml:232
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
-msgstr "%1% २."
+msgstr "%1%"
 
 #: ui/main.qml:281
 #, kde-format
@@ -362,7 +362,7 @@ msgstr "अस्य यन्त्रस्य कृते सम्प्र
 #: ui/main.qml:409
 #, kde-format
 msgid "%1:"
-msgstr "%1: १."
+msgstr "%1:"
 
 #: ui/main.qml:420
 #, kde-format
@@ -378,7 +378,7 @@ msgstr "नहि"
 #, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
-msgstr "%1% २."
+msgstr "%1%"
 
 #: ui/main.qml:444
 #, kde-format

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-05 02:14+0000\n"
-"PO-Revision-Date: 2024-12-13 20:20+0530\n"
+"PO-Revision-Date: 2024-12-20 22:01+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
 "Language: sa\n"
@@ -149,7 +149,7 @@ msgstr "एटीएम नेटवर्किंग"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Abstract (modem)"
-msgstr "अमूर्त (आधुनिक) ९."
+msgstr "अमूर्त (आधुनिक)"
 
 #: classes.i18n:24
 #, kde-format
@@ -209,7 +209,7 @@ msgstr "ईथरनेट नेटवर्किंग"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Floppy (UFI)"
-msgstr "फ्लॉपी (UFI) ९."
+msgstr "फ्लॉपी (UFI)"
 
 #: classes.i18n:34
 #, kde-format
@@ -263,7 +263,7 @@ msgstr "QIC-157"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "RBC (typically Flash)"
-msgstr "आरबीसी (विशेषतः फ्लैश) २."
+msgstr "आरबीसी (विशेषतः फ्लैश)"
 
 #: classes.i18n:43
 #, kde-format
