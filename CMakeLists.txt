@@ -22,12 +22,13 @@ include(ECMSetupQtPluginMacroNames)
 include(ECMQueryQt)
 include(ECMDeprecationSettings)
 
+option(BUILD_DOC "Whether to build the documentation" ON)
+
 find_package(Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Core Gui Widgets)
 
 find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
     Config
     CoreAddons
-    DocTools
     I18n
     KCMUtils
     KIO
@@ -44,6 +45,14 @@ ecm_find_qmlmodule(org.kde.kirigami 2.5)
 macro(kinfocenter_add_kcm target)
     kcmutils_add_qml_kcm(${target} DISABLE_DESKTOP_FILE_GENERATION SOURCES ${ARGN} INSTALL_NAMESPACE plasma/kcms/kinfocenter)
 endmacro()
+
+if(BUILD_DOC)
+    find_package(KF6DocTools ${KF6_MIN_VERSION})
+    set_package_properties(KF6DocTools PROPERTIES
+        DESCRIPTION "Tools to generate documentation"
+        TYPE REQUIRED
+    )
+endif()
 
 find_package(SystemSettings QUIET)
 set_package_properties(SystemSettings PROPERTIES
@@ -70,9 +79,10 @@ add_subdirectory( categories )
 add_subdirectory( kcms )
 add_subdirectory(src)
 
-include(ECMOptionalAddSubdirectory)
-ecm_optional_add_subdirectory( doc )
-kdoctools_install(po)
+if(BUILD_DOC)
+    add_subdirectory(doc)
+    kdoctools_install(po)
+endif()
 
 # add clang-format target for all our real source files
 file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)
