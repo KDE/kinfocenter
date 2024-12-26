@@ -3,19 +3,21 @@
 # This file is distributed under the same license as the kinfocenter package.
 # Kali <EMAIL@ADDRESS>, 2024.
 #
+# SPDX-FileCopyrightText: 2024 kali <shreekantkalwar@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-24 00:39+0000\n"
-"PO-Revision-Date: 2024-12-13 19:09+0530\n"
-"Last-Translator: Kali <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-12-25 19:45+0530\n"
+"Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
 "Language: sa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n>2);\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #: ui/main.qml:18
 #, kde-format
@@ -45,4 +47,4 @@ msgstr "अस्मिन् प्रणाल्यां साम्बा-
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Open folder properties to change share settings"
-msgstr "साझासेटिंग्स् परिवर्तयितुं फोल्डर् गुणाः उद्घाटयन्तु"
+msgstr "साझासेटिंग्स् परिवर्तयितुं समुच्चय गुणाः उद्घाटयन्तु"
