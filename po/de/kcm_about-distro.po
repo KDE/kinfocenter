@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: kcm_about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-09 00:41+0000\n"
-"PO-Revision-Date: 2024-03-20 21:16+0100\n"
+"PO-Revision-Date: 2024-12-28 23:11+0100\n"
 "Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.02.0\n"
+"X-Generator: Lokalize 25.03.70\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -31,11 +31,10 @@ msgid "Unknown Type"
 msgstr "Unbekannter Typ"
 
 #: GPUEntry.cpp:17
-#, fuzzy, kde-format
-#| msgid "Graphics Processor:"
+#, kde-format
 msgctxt "@label %1 is the GPU index number"
 msgid "Graphics Processor %1:"
-msgstr "Grafikprozessor:"
+msgstr "Grafikprozessor %1:"
 
 #: GPUEntry.cpp:18
 #, kde-format
@@ -46,19 +45,19 @@ msgstr "Grafikprozessor:"
 #, kde-format
 msgctxt "@label GPU type"
 msgid "integrated"
-msgstr ""
+msgstr "integriert"
 
 #: GPUEntry.cpp:30
 #, kde-format
 msgctxt "@label GPU type"
 msgid "discrete"
-msgstr ""
+msgstr "eigenständig"
 
 #: GPUEntry.cpp:32
 #, kde-format
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
-msgstr ""
+msgstr "virtuell"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
