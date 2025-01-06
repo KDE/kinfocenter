@@ -35,8 +35,6 @@ msgstr ""
 
 #: GPUEntry.cpp:17
 #, fuzzy, kde-format
-#| msgid "Processor:"
-#| msgid_plural "Processors:"
 msgctxt "@label %1 is the GPU index number"
 msgid "Graphics Processor %1:"
 msgstr "Prosessor:"

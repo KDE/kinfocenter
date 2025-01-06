@@ -46,7 +46,6 @@ msgstr "Helse"
 
 #: ui/main.qml:51
 #, fuzzy, kde-format
-#| msgid "Charge state"
 msgid "Charge Cycles"
 msgstr "Ladestatus"
 

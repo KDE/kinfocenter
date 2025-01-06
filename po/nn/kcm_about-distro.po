@@ -35,7 +35,6 @@ msgstr "Ukjend type"
 
 #: GPUEntry.cpp:17
 #, fuzzy, kde-format
-#| msgid "Graphics Processor:"
 msgctxt "@label %1 is the GPU index number"
 msgid "Graphics Processor %1:"
 msgstr "Skjermkort:"
