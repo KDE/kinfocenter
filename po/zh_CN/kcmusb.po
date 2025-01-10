@@ -14,8 +14,8 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf6-trunk/messages/kinfocenter/kcmusb.pot\n"
-"X-Crowdin-File-ID: 43505\n"
+"X-Crowdin-File: /kf6-stable/messages/kinfocenter/kcmusb.pot\n"
+"X-Crowdin-File-ID: 52364\n"
 
 #: classes.i18n:2 usbdevices.cpp:66
 #, kde-format
