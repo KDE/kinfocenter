@@ -88,6 +88,7 @@
     "X-KDE-Keywords[ca@valencia]": "lsblk,dispositiu de blocs,partició,disc,unitat,hdd,ssd,nvme",
     "X-KDE-Keywords[ca]": "lsblk,dispositiu de blocs,partició,disc,unitat,hdd,ssd,nvme",
     "X-KDE-Keywords[da]": "lsblk,blokenheder,partition,disk,drev,hdd,ssd,nvme",
+    "X-KDE-Keywords[de]": "lsblk,Blockorientierte Geräte,Partition,Festplatte,Laufwerk,HDD,SSD,NVMe",
     "X-KDE-Keywords[en_GB]": "lsblk,block device,partition,disk,drive,hdd,ssd,nvme",
     "X-KDE-Keywords[es]": "lsblk,dispositivo de bloques,partición,disco,unidad,hdd,ssd,nvme",
     "X-KDE-Keywords[eu]": "lsblk,bloke-gailua,bloke gailua,block device,partizioa,diskoa,unitatea,hdd,ssd,nvme",
