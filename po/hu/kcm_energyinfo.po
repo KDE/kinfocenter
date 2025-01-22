@@ -3,13 +3,13 @@
 #
 # Kiszel Kristóf <kiszel.kristof@gmail.com>, 2017.
 # Kristóf Kiszel <ulysses@kubuntu.org>, 2019.
-# SPDX-FileCopyrightText: 2024 Kristof Kiszel <ulysses@fsf.hu>
+# SPDX-FileCopyrightText: 2024, 2025 Kristof Kiszel <ulysses@fsf.hu>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-21 00:42+0000\n"
-"PO-Revision-Date: 2024-01-16 21:30+0100\n"
+"PO-Revision-Date: 2025-01-21 21:09+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.12.1\n"
 
 #: ui/main.qml:45
 #, kde-format
@@ -45,10 +45,9 @@ msgid "Health"
 msgstr "Állapot"
 
 #: ui/main.qml:51
-#, fuzzy, kde-format
-#| msgid "Charge state"
+#, kde-format
 msgid "Charge Cycles"
-msgstr "Feltöltöttségi állapot"
+msgstr "Feltöltési ciklusok"
 
 #: ui/main.qml:52
 #, kde-format
