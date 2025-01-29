@@ -2,8 +2,8 @@
 # SPDX-License-Identifier: CC0-1.0
 
 Dependencies:
-- 'on': ['@all']
-  'require':
+ - 'on': ['@all']
+   'require':
     'frameworks/extra-cmake-modules': '@latest-kf6'
     'frameworks/kauth': '@latest-kf6'
     'frameworks/kcmutils': '@latest-kf6'
@@ -21,10 +21,10 @@ Dependencies:
     'plasma/plasma-systemmonitor': '@same'
 
 RuntimeDependencies:
-- 'on': ['Linux']
-  'require':
+ - 'on': ['Linux']
+   'require':
     'sdk/selenium-webdriver-at-spi': '@latest-kf6'
     'plasma/xdg-desktop-portal-kde': '@same'
 
 Options:
-  require-passing-tests-on: [ 'Linux', 'FreeBSD']
+ require-passing-tests-on: ['Linux', 'FreeBSD']
