@@ -28,7 +28,14 @@ class CommandOutputContext : public QObject
     Q_PROPERTY(QString explanation MEMBER m_explanation NOTIFY explanationChanged)
     // URL where the user can report a bug when there is an error. Empty when there is no error, or no applicable place to report a bug
     Q_PROPERTY(QUrl bugReportUrl MEMBER m_bugReportUrl CONSTANT)
+    // Text styling, which matters for filtering purposes.
+    Q_PROPERTY(Qt::TextFormat textFormat MEMBER m_format CONSTANT)
 public:
+    CommandOutputContext(const QStringList &findExecutables,
+                         const QString &executable,
+                         const QStringList &arguments,
+                         Qt::TextFormat format,
+                         QObject *parent = nullptr);
     CommandOutputContext(const QStringList &findExecutables, const QString &executable, const QStringList &arguments, QObject *parent = nullptr);
     CommandOutputContext(const QString &executable, const QStringList &arguments, QObject *parent = nullptr);
 
@@ -68,4 +75,7 @@ private:
 
     QString m_text; // possibly filtered
     QString m_filter;
+
+    Qt::TextFormat m_format;
+    QString m_newlineIdentifier;
 };

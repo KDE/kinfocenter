@@ -20,7 +20,11 @@ public:
         const QString executable = QStandardPaths::locate(QStandardPaths::GenericDataLocation,
                                                           QStringLiteral("kinfocenter/firmware_security/fwupdmgr.sh"),
                                                           QStandardPaths::LocateFile);
-        m_outputContext = new CommandOutputContext({QStringLiteral("fwupdmgr"), QStringLiteral("aha")}, QStringLiteral("/bin/sh"), {executable}, parent);
+        m_outputContext = new CommandOutputContext({QStringLiteral("fwupdmgr"), QStringLiteral("aha")},
+                                                   QStringLiteral("/bin/sh"),
+                                                   {executable},
+                                                   Qt::TextFormat::RichText,
+                                                   parent);
     }
     CommandOutputContext *outputContext() const
     {
