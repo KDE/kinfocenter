@@ -11,5 +11,4 @@ import org.kde.kinfocenter.private 1.0 as KInfoCenter
 
 KInfoCenter.CommandOutputKCM {
     output: kcm.infoOutputContext
-    textFormat: TextEdit.RichText
 }

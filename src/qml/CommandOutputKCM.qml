@@ -11,6 +11,8 @@ import org.kde.kirigami 2.20 as Kirigami
 import org.kde.kquickcontrolsaddons 2.0
 import org.kde.kcmutils as KCM
 
+import org.kde.kinfocenter.private as Private
+
 KCM.SimpleKCM {
     id: root
 
@@ -25,7 +27,7 @@ KCM.SimpleKCM {
     // The CommandOutputContext object.
     required property QtObject output
     property int wrapMode: TextEdit.NoWrap
-    property int textFormat: TextEdit.PlainText
+    property int textFormat: output.textFormat
 
     Clipboard { id: clipboard }
 

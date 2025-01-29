@@ -14,12 +14,30 @@
 #include <KLocalizedString>
 #include <KOSRelease>
 
-CommandOutputContext::CommandOutputContext(const QStringList &findExecutables, const QString &executable, const QStringList &arguments, QObject *parent)
+using namespace Qt::StringLiterals;
+
+CommandOutputContext::CommandOutputContext(const QStringList &findExecutables,
+                                           const QString &executable,
+                                           const QStringList &arguments,
+                                           Qt::TextFormat format,
+                                           QObject *parent)
     : QObject(parent)
     , m_executableName(executable)
     , m_executablePath(QStandardPaths::findExecutable(m_executableName))
     , m_arguments(arguments)
     , m_bugReportUrl(KOSRelease().bugReportUrl())
+    , m_format(format)
+    , m_newlineIdentifier([format] {
+        switch (format) {
+        case Qt::TextFormat::RichText:
+            return "<br/>"_L1;
+        case Qt::TextFormat::AutoText:
+        case Qt::TextFormat::MarkdownText:
+        case Qt::TextFormat::PlainText:
+            break;
+        }
+        return "\n"_L1;
+    }())
 {
     // Various utilities are installed in sbin, but work without elevated privileges
     if (m_executablePath.isEmpty()) {
@@ -33,6 +51,11 @@ CommandOutputContext::CommandOutputContext(const QStringList &findExecutables, c
     }
 
     metaObject()->invokeMethod(this, &CommandOutputContext::load);
+}
+
+CommandOutputContext::CommandOutputContext(const QStringList &findExecutables, const QString &executable, const QStringList &arguments, QObject *parent)
+    : CommandOutputContext(findExecutables, executable, arguments, Qt::TextFormat::PlainText, parent)
+{
 }
 
 CommandOutputContext::CommandOutputContext(const QString &executable, const QStringList &arguments, QObject *parent)
@@ -59,12 +82,12 @@ void CommandOutputContext::setFilter(const QString &filter)
 {
     m_filter = filter;
     if (m_filter.isEmpty()) {
-        m_text = m_originalLines.join('\n');
+        m_text = m_originalLines.join(m_newlineIdentifier);
     } else {
         m_text.clear();
         for (const QString &line : std::as_const(m_originalLines)) {
             if (line.contains(filter, Qt::CaseInsensitive)) {
-                m_text += line + '\n';
+                m_text += line + m_newlineIdentifier;
             }
         }
     }
