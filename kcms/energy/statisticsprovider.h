@@ -36,6 +36,8 @@ class StatisticsProvider : public QObject, public QQmlParserStatus
     Q_PROPERTY(int lastDataPointTime READ lastDataPointTime NOTIFY dataChanged)
     Q_PROPERTY(int largestValue READ largestValue NOTIFY dataChanged)
 
+    Q_PROPERTY(bool available READ isHistoryAvailable NOTIFY historyAvailableChanged)
+
 public:
     enum HistoryType {
         RateType,
@@ -67,15 +69,22 @@ public:
     int lastDataPointTime() const;
     int largestValue() const;
 
+    bool isHistoryAvailable() const;
+
 Q_SIGNALS:
     void deviceChanged();
     void typeChanged();
     void durationChanged();
 
     void dataChanged();
+    void historyAvailableChanged();
 
 public Q_SLOTS:
     void refresh();
+
+private:
+    void checkHistoryAvailable();
+    void setHistoryAvailable(bool available);
 
 private:
     QString m_device;
@@ -84,6 +93,7 @@ private:
 
     QList<HistoryReply> m_values;
     bool m_isComplete = false;
+    bool m_isHistoryAvailable = false;
 };
 
 #endif // STATISTICSPROVIDER_H

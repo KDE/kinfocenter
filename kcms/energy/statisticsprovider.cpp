@@ -50,7 +50,7 @@ void StatisticsProvider::setDevice(const QString &device)
     m_device = device;
     Q_EMIT deviceChanged();
 
-    load();
+    checkHistoryAvailable();
 }
 
 void StatisticsProvider::setDuration(uint duration)
@@ -140,14 +140,67 @@ int StatisticsProvider::largestValue() const
     return max;
 }
 
+bool StatisticsProvider::isHistoryAvailable() const
+{
+    return m_isHistoryAvailable;
+}
+
+void StatisticsProvider::setHistoryAvailable(bool available)
+{
+    if (m_isHistoryAvailable != available) {
+        m_isHistoryAvailable = available;
+        Q_EMIT historyAvailableChanged();
+    }
+
+    load();
+}
+
 void StatisticsProvider::refresh()
 {
     load();
 }
 
+void StatisticsProvider::checkHistoryAvailable()
+{
+    if (m_device.isEmpty()) {
+        return;
+    }
+
+    auto msg = QDBusMessage::createMethodCall(QStringLiteral("org.freedesktop.UPower"),
+                                              m_device,
+                                              QStringLiteral("org.freedesktop.DBus.Properties"),
+                                              QStringLiteral("Get"));
+    msg << QStringLiteral("org.freedesktop.UPower.Device") << QStringLiteral("HasHistory");
+
+    QDBusPendingReply<QVariant> reply = QDBusConnection::systemBus().asyncCall(msg);
+
+    auto *watcher = new QDBusPendingCallWatcher(reply, this);
+    QObject::connect(watcher, &QDBusPendingCallWatcher::finished, this, [this](QDBusPendingCallWatcher *watcher) {
+        QDBusPendingReply<QVariant> reply = *watcher;
+        watcher->deleteLater();
+
+        if (reply.isError()) {
+            qWarning() << "Failed to check device history availability from UPower" << reply.error().message();
+            setHistoryAvailable(false);
+            return;
+        }
+
+        const bool available = reply.value().toBool();
+        setHistoryAvailable(available);
+    });
+}
+
 void StatisticsProvider::load()
 {
     if (!m_isComplete || m_device.isEmpty()) {
+        return;
+    }
+
+    if (!m_isHistoryAvailable) {
+        if (!m_values.isEmpty()) {
+            m_values.clear();
+            Q_EMIT dataChanged();
+        }
         return;
     }
 
