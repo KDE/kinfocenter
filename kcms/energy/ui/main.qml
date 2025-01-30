@@ -238,18 +238,17 @@ KCM.SimpleKCM {
             }
         }
 
+        HistoryModel {
+            id: history
+            duration: timespanComboDurations[timespanCombo.currentIndex]
+            device: currentUdi
+            type: root.historyType
+        }
+
         ColumnLayout {
             Layout.fillWidth: true
             spacing: Kirigami.Units.smallSpacing
-            visible: !!currentBattery
-
-
-            HistoryModel {
-                id: history
-                duration: timespanComboDurations[timespanCombo.currentIndex]
-                device: currentUdi
-                type: root.historyType
-            }
+            visible: !!currentBattery && history.available
 
             Graph {
                 id: graph
@@ -291,7 +290,15 @@ KCM.SimpleKCM {
                     }
                 }
                 yStep: root.historyType == HistoryModel.RateType ? 10 : 20
-                visible: history.count > 1
+            }
+
+            // Reparented to keep the item outside of a layout and the graph canvas
+            Kirigami.PlaceholderMessage {
+                parent: graph
+                anchors.centerIn: parent
+                visible: graph.data.length < 2
+                width: parent.width - (Kirigami.Units.largeSpacing * 4)
+                text: i18nc("@info:status", "No history information for this time span")
             }
 
             GridLayout {
@@ -342,14 +349,6 @@ KCM.SimpleKCM {
                     Accessible.name: QQC2.ToolTip.text
                     onClicked: history.refresh()
                 }
-            }
-
-            Kirigami.InlineMessage {
-                Layout.fillWidth: true
-                Layout.topMargin: Kirigami.Units.smallSpacing
-                showCloseButton: true
-                text: i18n("This type of history is currently not available for this device.")
-                visible: !graph.visible
             }
         }
 

@@ -93,31 +93,33 @@ Canvas
         var currentUnixTime = Date.now()
         var xMinUnixTime = currentUnixTime - xDuration * 1000
 
-        // Draw the line graph
         c.beginPath();
 
-        var index = 0
+        // Draw the line graph if we have enough points
+        if (data.length >= 2) {
+            var index = 0
 
-        while ((index < data.length - 1) && (data[index].x < (xMinUnixTime / 1000))) {
-            index++
-        }
-
-        var firstPoint = scalePoint(data[index], currentUnixTime)
-        c.moveTo(firstPoint.x, firstPoint.y)
-
-        var point
-        for (var i = index + 1; i < data.length; i++) {
-            if (data[i].x > (xMinUnixTime / 1000)) {
-                point = scalePoint(data[i], currentUnixTime)
-                c.lineTo(point.x, point.y)
+            while ((index < data.length - 1) && (data[index].x < (xMinUnixTime / 1000))) {
+                index++
             }
+
+            var firstPoint = scalePoint(data[index], currentUnixTime)
+            c.moveTo(firstPoint.x, firstPoint.y)
+
+            var point
+            for (var i = index + 1; i < data.length; i++) {
+                if (data[i].x > (xMinUnixTime / 1000)) {
+                    point = scalePoint(data[i], currentUnixTime)
+                    c.lineTo(point.x, point.y)
+                }
+            }
+
+            c.stroke();
+            c.strokeStyle = 'rgba(0, 0, 0, 0)';
+            c.lineTo(point.x, height - yPadding);
+            c.lineTo(firstPoint.x, height - yPadding);
+            c.fill();
         }
-            
-        c.stroke();
-        c.strokeStyle = 'rgba(0, 0, 0, 0)';
-        c.lineTo(point.x, height - yPadding);
-        c.lineTo(firstPoint.x, height - yPadding);
-        c.fill();
 
         c.closePath()
 
