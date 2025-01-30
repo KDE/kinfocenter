@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-17 00:39+0000\n"
+"POT-Creation-Date: 2025-01-30 00:42+0000\n"
 "PO-Revision-Date: 2024-02-10 12:06+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Lokalize 24.01.95\n"
 
-#: CommandOutputContext.cpp:98
+#: CommandOutputContext.cpp:121
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -28,7 +28,7 @@ msgstr ""
 "Не найдена программа <command>%1</command>, необходимая для формирования "
 "содержимого этой страницы"
 
-#: CommandOutputContext.cpp:100
+#: CommandOutputContext.cpp:123
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -39,7 +39,7 @@ msgstr ""
 "приложение для управления пакетами используемого дистрибутива.<nl/>Сообщите "
 "об этой ситуации разработчикам используемого дистрибутива."
 
-#: CommandOutputContext.cpp:113
+#: CommandOutputContext.cpp:136
 #, kde-kuit-format
 msgctxt "@info"
 msgid "The <command>%1</command> tool crashed while generating page content"
@@ -47,7 +47,7 @@ msgstr ""
 "Программа <command>%1</command> аварийно завершилась во всемя формирования "
 "содержимого страницы"
 
-#: CommandOutputContext.cpp:114
+#: CommandOutputContext.cpp:137
 #, kde-kuit-format
 msgctxt "@Info"
 msgid ""
@@ -57,36 +57,36 @@ msgstr ""
 "Попробуйте позднее. Если проблема повториться, сообщите об этой ситуации "
 "разработчикам используемого дистрибутива."
 
-#: qml/CommandOutputKCM.qml:86
+#: qml/CommandOutputKCM.qml:88
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
 msgstr "Отсутствует текст, соответствующий фильтру"
 
-#: qml/CommandOutputKCM.qml:91
+#: qml/CommandOutputKCM.qml:93
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
 msgstr "Данные отсутствуют"
 
-#: qml/CommandOutputKCM.qml:104
+#: qml/CommandOutputKCM.qml:106
 #, kde-format
 msgid "Report this issue"
 msgstr "Сообщить об ошибке"
 
-#: qml/CommandOutputKCM.qml:125
+#: qml/CommandOutputKCM.qml:127
 #, kde-format
 msgctxt "@action:button copies all displayed text"
 msgid "Copy to Clipboard"
 msgstr "Копировать в буфер обмена"
 
-#: qml/CommandOutputKCM.qml:136
+#: qml/CommandOutputKCM.qml:138
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
 msgstr "Фильтр…"
 
-#: qml/CommandOutputKCM.qml:138
+#: qml/CommandOutputKCM.qml:140
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"
