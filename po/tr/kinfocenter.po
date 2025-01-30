@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-17 00:39+0000\n"
+"POT-Creation-Date: 2025-01-30 02:33+0000\n"
 "PO-Revision-Date: 2023-11-29 16:18+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Lokalize 23.11.70\n"
 
-#: CommandOutputContext.cpp:98
+#: CommandOutputContext.cpp:121
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -27,7 +27,7 @@ msgstr ""
 "Bu sayfayı görüntülemek için <command>%1</command> aracı gerekiyor; ancak "
 "bulunamadı"
 
-#: CommandOutputContext.cpp:100
+#: CommandOutputContext.cpp:123
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -37,13 +37,13 @@ msgstr ""
 "Paket yöneticinizi kullanarak arayabilir ve kurabilirsiniz.<nl/>Sonrasında "
 "lütfen bu paketleme sorununu dağıtımınıza bildirin."
 
-#: CommandOutputContext.cpp:113
+#: CommandOutputContext.cpp:136
 #, kde-kuit-format
 msgctxt "@info"
 msgid "The <command>%1</command> tool crashed while generating page content"
 msgstr "Sayfa içeriği oluşturulurken <command>%1</command> aracı çöktü"
 
-#: CommandOutputContext.cpp:114
+#: CommandOutputContext.cpp:137
 #, kde-kuit-format
 msgctxt "@Info"
 msgid ""
@@ -53,36 +53,36 @@ msgstr ""
 "Daha sonra yeniden deneyin. Bu sürekli oluyorsa lütfen çökmeyi dağıtımınıza "
 "bildirin."
 
-#: qml/CommandOutputKCM.qml:86
+#: qml/CommandOutputKCM.qml:88
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
 msgstr "Süzgeçle eşleşen metin yok"
 
-#: qml/CommandOutputKCM.qml:91
+#: qml/CommandOutputKCM.qml:93
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
 msgstr "Kullanılabilir veri yok"
 
-#: qml/CommandOutputKCM.qml:104
+#: qml/CommandOutputKCM.qml:106
 #, kde-format
 msgid "Report this issue"
 msgstr "Bu Sorunu Bildir"
 
-#: qml/CommandOutputKCM.qml:125
+#: qml/CommandOutputKCM.qml:127
 #, kde-format
 msgctxt "@action:button copies all displayed text"
 msgid "Copy to Clipboard"
 msgstr "Panoya Kopyala"
 
-#: qml/CommandOutputKCM.qml:136
+#: qml/CommandOutputKCM.qml:138
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
 msgstr "Süz…"
 
-#: qml/CommandOutputKCM.qml:138
+#: qml/CommandOutputKCM.qml:140
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"

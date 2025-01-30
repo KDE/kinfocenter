@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-17 00:39+0000\n"
+"POT-Creation-Date: 2025-01-30 02:33+0000\n"
 "PO-Revision-Date: 2024-02-09 23:49+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 23.08.1\n"
 
-#: CommandOutputContext.cpp:98
+#: CommandOutputContext.cpp:121
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -27,7 +27,7 @@ msgstr ""
 "이 페이지를 표시하려면 <command>%1</command> 도구가 필요하지만 찾을 수 없습니"
 "다"
 
-#: CommandOutputContext.cpp:100
+#: CommandOutputContext.cpp:123
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -37,13 +37,13 @@ msgstr ""
 "패키지 관리자를 통해서 검색 및 설치하십시오.<nl/>그 다음 배포판에 패키지 문제"
 "를 보고해 주십시오."
 
-#: CommandOutputContext.cpp:113
+#: CommandOutputContext.cpp:136
 #, kde-kuit-format
 msgctxt "@info"
 msgid "The <command>%1</command> tool crashed while generating page content"
 msgstr "페이지 내용을 생성하는 중 <command>%1</command> 도구가 충돌함"
 
-#: CommandOutputContext.cpp:114
+#: CommandOutputContext.cpp:137
 #, kde-kuit-format
 msgctxt "@Info"
 msgid ""
@@ -53,36 +53,36 @@ msgstr ""
 "나중에 다시 시도하십시오. 문제가 계속 발생한다면 배포판에 충돌을 보고해 주십"
 "시오."
 
-#: qml/CommandOutputKCM.qml:86
+#: qml/CommandOutputKCM.qml:88
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
 msgstr "필터와 일치하는 텍스트 없음"
 
-#: qml/CommandOutputKCM.qml:91
+#: qml/CommandOutputKCM.qml:93
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
 msgstr "데이터 없음"
 
-#: qml/CommandOutputKCM.qml:104
+#: qml/CommandOutputKCM.qml:106
 #, kde-format
 msgid "Report this issue"
 msgstr "이 문제 보고"
 
-#: qml/CommandOutputKCM.qml:125
+#: qml/CommandOutputKCM.qml:127
 #, kde-format
 msgctxt "@action:button copies all displayed text"
 msgid "Copy to Clipboard"
 msgstr "클립보드에 복사"
 
-#: qml/CommandOutputKCM.qml:136
+#: qml/CommandOutputKCM.qml:138
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
 msgstr "필터…"
 
-#: qml/CommandOutputKCM.qml:138
+#: qml/CommandOutputKCM.qml:140
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"
