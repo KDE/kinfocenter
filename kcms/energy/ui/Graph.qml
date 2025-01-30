@@ -61,6 +61,10 @@ Canvas
     SystemPalette {
         id: palette;
         colorGroup: SystemPalette.Active
+
+        onPaletteChanged: {
+            canvas.requestPaint();
+        }
     }
 
     onPaint: {
@@ -77,11 +81,11 @@ Canvas
 
         //Draw the lines
 
-        c.lineWidth = 1;
+        c.lineWidth = 2;
         c.lineJoin = 'round';
         c.lineCap = 'round';
 
-        const lineColor = Qt.rgba(255, 0, 0, 1)
+        const lineColor = palette.accent
         c.strokeStyle = lineColor;
         const gradient = c.createLinearGradient(0, 0, 0, height);
         gradient.addColorStop(0, Qt.alpha(lineColor, 0.2));
