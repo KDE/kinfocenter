@@ -5,7 +5,7 @@
  *
  */
 
-import QtQuick 2.3
+import QtQuick
 
 /**
  * We need to draw a graph, all other libs are not suitable as we are basically
@@ -18,9 +18,8 @@ import QtQuick 2.3
 
 Canvas
 {
-    width: 500
-    height: 500
     id: canvas
+
     antialiasing: true
 
     property int xPadding: 45
@@ -42,22 +41,21 @@ Canvas
     property real xDivisionWidth: 600000
     property real xTicksAt: xTicksAtDontCare
 
-    //internal
-
-    property real plotWidth: width - xPadding * 1.5
-    property real plotHeight: height - yPadding * 2
+    readonly property real plotWidth: width - xPadding * 1.5
+    readonly property real plotHeight: height - yPadding * 2
 
     onDataChanged: {
         canvas.requestPaint();
     }
 
-    //take a QPointF
-    function scalePoint(plot, currentUnixTime) {
-        var scaledX = (plot.x - (currentUnixTime / 1000 - xDuration)) / xDuration * plotWidth;
-        var scaledY = (plot.y - yMin)  * plotHeight / (yMax - yMin);
+    function scalePoint(plot /*: point*/, currentUnixTime : int) : point {
+        const scaledX = (plot.x - (currentUnixTime / 1000 - xDuration)) / xDuration * plotWidth;
+        const scaledY = (plot.y - yMin) * plotHeight / (yMax - yMin);
 
-        return Qt.point(xPadding + scaledX,
-            height - yPadding - scaledY);
+        return Qt.point(
+            xPadding + scaledX,
+            height - yPadding - scaledY
+        );
     }
 
     SystemPalette {
@@ -65,9 +63,8 @@ Canvas
         colorGroup: SystemPalette.Active
     }
 
-
     onPaint: {
-        var c = canvas.getContext('2d');
+        const c = canvas.getContext('2d');
 
         c.clearRect(0,0, width, height)
 
@@ -83,31 +80,33 @@ Canvas
         c.lineWidth = 1;
         c.lineJoin = 'round';
         c.lineCap = 'round';
-        c.strokeStyle = 'rgba(255, 0, 0, 1)';
-        var gradient = c.createLinearGradient(0,0,0,height);
-        gradient.addColorStop(0, 'rgba(255, 0, 0, 0.2)');
-        gradient.addColorStop(1, 'rgba(255, 0, 0, 0.05)');
+
+        const lineColor = Qt.rgba(255, 0, 0, 1)
+        c.strokeStyle = lineColor;
+        const gradient = c.createLinearGradient(0, 0, 0, height);
+        gradient.addColorStop(0, Qt.alpha(lineColor, 0.2));
+        gradient.addColorStop(1, Qt.alpha(lineColor, 0.05));
         c.fillStyle = gradient;
 
         // For scaling
-        var currentUnixTime = Date.now()
-        var xMinUnixTime = currentUnixTime - xDuration * 1000
+        const currentUnixTime = Date.now()
+        const xMinUnixTime = currentUnixTime - xDuration * 1000
 
         c.beginPath();
 
         // Draw the line graph if we have enough points
         if (data.length >= 2) {
-            var index = 0
+            let index = 0
 
             while ((index < data.length - 1) && (data[index].x < (xMinUnixTime / 1000))) {
                 index++
             }
 
-            var firstPoint = scalePoint(data[index], currentUnixTime)
+            const firstPoint = scalePoint(data[index], currentUnixTime)
             c.moveTo(firstPoint.x, firstPoint.y)
 
-            var point
-            for (var i = index + 1; i < data.length; i++) {
+            let point
+            for (let i = index + 1; i < data.length; i++) {
                 if (data[i].x > (xMinUnixTime / 1000)) {
                     point = scalePoint(data[i], currentUnixTime)
                     c.lineTo(point.x, point.y)
@@ -115,7 +114,7 @@ Canvas
             }
 
             c.stroke();
-            c.strokeStyle = 'rgba(0, 0, 0, 0)';
+            c.strokeStyle = 'transparent';
             c.lineTo(point.x, height - yPadding);
             c.lineTo(firstPoint.x, height - yPadding);
             c.fill();
@@ -126,7 +125,7 @@ Canvas
         // Draw the frame on top
 
         //draw an outline
-        c.strokeStyle = 'rgba(0,50,0,0.02)';
+        c.strokeStyle = Qt.rgba(0, 50, 0, 0.02);
         c.lineWidth = 1;
         c.rect(xPadding - 1, yPadding - 1, plotWidth + 2, plotHeight + 2);
 
@@ -134,8 +133,8 @@ Canvas
         c.fillStyle = palette.text;
         c.textAlign = "right"
         c.textBaseline = "middle";
-        for(var i = 0; i <=  yMax; i += yStep) {
-            var y = scalePoint(Qt.point(0,i)).y;
+        for(let i = 0; i <=  yMax; i += yStep) {
+            const y = scalePoint(Qt.point(0,i)).y;
 
             c.fillText(i + canvas.yUnits, xPadding - 10, y);
 
@@ -148,23 +147,23 @@ Canvas
         // Draw the X value texts
         c.textAlign = "center"
         c.lineWidth = 1
-        c.strokeStyle = 'rgba(%1, %2, %3, 0.15)'.arg(palette.text.r * 255).arg(palette.text.g * 255).arg(palette.text.b * 255)
+        c.strokeStyle = Qt.alpha(palette.text, 0.15)
 
-        var xDivisions = xDuration / xDivisionWidth * 1000
-        var xGridDistance = plotWidth / xDivisions
-        var xTickPos
-        var xTickDateTime
-        var xTickDateStr
-        var xTickTimeStr
+        const xDivisions = xDuration / xDivisionWidth * 1000
+        const xGridDistance = plotWidth / xDivisions
+        let xTickPos
+        let xTickDateTime
+        let xTickDateStr
+        let xTickTimeStr
 
-        var currentDateTime = new Date()
-        var lastDateStr = currentDateTime.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
+        const currentDateTime = new Date()
+        let lastDateStr = currentDateTime.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
 
-        var hours = currentDateTime.getHours()
-        var minutes = currentDateTime.getMinutes()
-        var seconds = currentDateTime.getSeconds()
-       
-        var diff
+        const hours = currentDateTime.getHours()
+        const minutes = currentDateTime.getMinutes()
+        const seconds = currentDateTime.getSeconds()
+
+        let diff
 
         switch (xTicksAt) {
             case xTicksAtTwelveOClock:
@@ -186,17 +185,17 @@ Canvas
                 diff = 0
         }
 
-        var xGridOffset = plotWidth * (diff / xDuration)
-        var dateChanged = false 
+        const xGridOffset = plotWidth * (diff / xDuration)
+        let dateChanged = false
 
-        var dashedLines = 50
-        var dashedLineLength = plotHeight / dashedLines
-        var dashedLineDutyCycle
+        const dashedLines = 50
+        const dashedLineLength = plotHeight / dashedLines
+        let dashedLineDutyCycle
 
-        for (var i = xDivisions; i >= -1; i--) {
+        for (let i = xDivisions; i >= -1; i--) {
             xTickPos = i * xGridDistance + xPadding - xGridOffset
 
-            if ((xTickPos > xPadding) && (xTickPos < plotWidth + xPadding)) 
+            if ((xTickPos > xPadding) && (xTickPos < plotWidth + xPadding))
             {
                 xTickDateTime = new Date(currentUnixTime - (xDivisions - i) * xDivisionWidth - diff * 1000)
                 xTickDateStr = xTickDateTime.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
@@ -205,12 +204,12 @@ Canvas
                 if (lastDateStr != xTickDateStr) {
                     dateChanged = true
                 }
- 
+
                 if  ((i % 2 == 0) || (xDivisions < 10))
                 {
                     // Display the time
                     c.fillText(xTickTimeStr, xTickPos, canvas.height - yPadding / 2)
-    
+
                     // If the date has changed and is not the current day in a <= 24h graph, display it
                     // Always display the date for 48h and 1 week graphs
                     if (dateChanged || (xDuration > (60*60*48))) {
@@ -221,13 +220,13 @@ Canvas
                     // Tick markers
                     c.moveTo(xTickPos, canvas.height - yPadding)
                     c.lineTo(xTickPos, canvas.height - (yPadding * 4) / 5)
-        
+
                     dashedLineDutyCycle = 0.5
                 } else {
                     dashedLineDutyCycle = 0.1
                 }
-        
-                for (var j = 0; j < dashedLines; j++) { 
+
+                for (let j = 0; j < dashedLines; j++) {
                     c.moveTo(xTickPos, yPadding + j * dashedLineLength)
                     c.lineTo(xTickPos, yPadding + j * dashedLineLength + dashedLineDutyCycle * dashedLineLength)
                 }
