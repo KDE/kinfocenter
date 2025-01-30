@@ -85,9 +85,6 @@ KCM.SimpleKCM {
     implicitWidth: Kirigami.Units.gridUnit * 30
     implicitHeight: !!currentBattery ? Kirigami.Units.gridUnit * 30 : Kirigami.Units.gridUnit * 12
 
-    readonly property var timespanComboChoices: [i18n("Last hour"),i18n("Last 2 hours"),i18n("Last 12 hours"),i18n("Last 24 hours"),i18n("Last 48 hours"), i18n("Last 7 days")]
-    readonly property var timespanComboDurations: [3600, 7200, 43200, 86400, 172800, 604800]
-
     Kirigami.PlaceholderMessage {
         anchors.centerIn: parent
         visible: kcm.batteries.count <= 0 && history.count <= 0
@@ -241,7 +238,7 @@ KCM.SimpleKCM {
     ColumnLayout {
         HistoryModel {
             id: history
-            duration: timespanComboDurations[timespanCombo.currentIndex]
+            duration: timespanCombo.duration
             device: currentUdi
             type: root.historyType
         }
@@ -253,6 +250,7 @@ KCM.SimpleKCM {
 
             Graph {
                 id: graph
+
                 Layout.fillWidth: true
                 Layout.minimumHeight: root.width / 3
                 Layout.maximumHeight: root.width / 3
@@ -260,22 +258,6 @@ KCM.SimpleKCM {
 
                 data: history.points
 
-                readonly property real xTicksAtDontCare: 0
-                readonly property real xTicksAtTwelveOClock: 1
-                readonly property real xTicksAtFullHour: 2
-                readonly property real xTicksAtHalfHour: 3
-                readonly property real xTicksAtFullSecondHour: 4
-                readonly property real xTicksAtTenMinutes: 5
-                readonly property var xTicksAtList: [xTicksAtTenMinutes, xTicksAtHalfHour, xTicksAtHalfHour,
-                                                     xTicksAtFullHour, xTicksAtFullSecondHour, xTicksAtTwelveOClock]
-
-                // Set grid lines distances which directly correspondent to the xTicksAt variables
-                readonly property var xDivisionWidths: [1000 * 60 * 10, 1000 * 60 * 60 * 12, 1000 * 60 * 60, 1000 * 60 * 30, 1000 * 60 * 60 * 2, 1000 * 60 * 10]
-                xTicksAt: xTicksAtList[timespanCombo.currentIndex]
-                xDivisionWidth: xDivisionWidths[xTicksAt]
-
-                xMin: history.firstDataPointTime
-                xMax: history.lastDataPointTime
                 xDuration: history.duration
 
                 yLabel: root.historyType == HistoryModel.RateType ? ( value => i18nc("Graph axis label: power in Watts","%1 W", value) )
@@ -334,7 +316,21 @@ KCM.SimpleKCM {
                 QQC2.ComboBox {
                     id: timespanCombo
                     Layout.minimumWidth: Kirigami.Units.gridUnit * 6
-                    model: timespanComboChoices
+
+                    model: [
+                        i18n("Last hour"),
+                        i18n("Last 2 hours"),
+                        i18n("Last 12 hours"),
+                        i18n("Last 24 hours"),
+                        i18n("Last 48 hours"),
+                        i18n("Last 7 days")
+                    ]
+
+                    readonly property int duration : {
+                        const hours = [1, 2, 12, 24, 48, 24 * 7];
+                        return hours[currentIndex] * 3600;
+                    }
+
                     Accessible.name: i18n("Timespan")
                     Accessible.description: i18n("Timespan of data to display")
                 }
@@ -379,73 +375,54 @@ KCM.SimpleKCM {
                         Kirigami.FormData.isSection: true
                         level: 2
                         // HACK hide section header if all labels are invisible
-                        visible: {
-                            for (let i = 0, length = detailsRepeater.count; i < length; ++i) {
-                                const item = detailsRepeater.itemAt(i)
-                                if (item && item.visible) {
-                                    return true
-                                }
-                            }
-
-                            return false
-                        }
+                        visible:  [...Array(detailsRepeater.count).keys()].some(i => detailsRepeater.itemAt(i)?.visible ?? false)
                     }
 
                     Repeater {
                         id: detailsRepeater
                         model: modelData.data || []
-
-                        Kirigami.SelectableLabel {
+                        delegate: Kirigami.SelectableLabel {
                             id: valueLabel
+                            visible: text.length > 0
                             Layout.fillWidth: true
+
                             Keys.onPressed: {
                                 if (event.matches(StandardKey.Copy)) {
                                     valueLabel.copy();
                                     event.accepted = true;
                                 }
                             }
+
                             Kirigami.FormData.label: i18n("%1:", modelData.label)
                             text: {
-                                let value;
-                                if (modelData.source) {
-                                    value = root["current" + modelData.source];
-                                } else {
-                                    value = currentBattery[modelData.value]
-                                }
+                                let value = (modelData.source) ? root["current" + modelData.source]
+                                                               : currentBattery[modelData.value]
 
                                 if (typeof value === "boolean") {
-                                    if (value) {
-                                        return i18n("Yes")
-                                    } else {
-                                        return i18n("No")
-                                    }
+                                    return value ? i18n("Yes") : i18n("No")
                                 }
 
                                 if (!value) {
                                     return ""
                                 }
 
-                                const precision = modelData.precision
-                                if (typeof precision === "number") { // round to decimals
-                                    value = Number(value).toLocaleString(Qt.locale(), "f", precision)
+                                if (modelData.precision) { // round to decimals
+                                    value = Number(value).toLocaleString(Qt.locale(), "f", modelData.precision)
                                 }
 
                                 if (modelData.modifier && root["modifier_" + modelData.modifier]) {
                                     value = root["modifier_" + modelData.modifier](value)
                                 }
 
-                                if (modelData.unit) {
-                                    if (modelData.unit === "%") {
-                                        // We delay the percentage localization as the position may vary
-                                        value = i18nc("%1 is a percentage value", "%1%", value)
-                                    } else {
-                                        value = i18nc("%1 is value, %2 is unit", "%1 %2", value, modelData.unit)
-                                    }
+                                switch (modelData.unit) {
+                                case undefined:
+                                    return value
+                                case "%":
+                                    return i18nc("%1 is a percentage value", "%1%", value)
+                                default:
+                                    return i18nc("%1 is value, %2 is unit", "%1 %2", value, modelData.unit)
                                 }
-
-                                return value
                             }
-                            visible: valueLabel.text !== ""
                         }
                     }
                 }

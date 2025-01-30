@@ -27,34 +27,67 @@ Canvas
 
     property var data //expect an array of QPointF
 
-    property real yMax: 100
-    property real xMax: 100
-    property real yMin: 0
-    property real xMin: 0
-    property real yStep: 20
+    property int yMin: 0
+    property int yMax: 100
+    property int yStep: 20
 
     property var yLabel: ( value => value )  // A formatter function
 
-    property real xDuration: 3600
-    property real xDivisions: 6
-    property real xDivisionWidth: 600000
-    property real xTicksAt: xTicksAtDontCare
+    property int xDuration: 3600
 
-    readonly property real plotWidth: width - xPadding * 1.5
-    readonly property real plotHeight: height - yPadding * 2
+    readonly property int plotWidth: Math.round(width - xPadding * 1.5)
+    readonly property int plotHeight: height - yPadding * 2
 
     onDataChanged: {
         canvas.requestPaint();
     }
 
-    function scalePoint(plot /*: point*/, currentUnixTime : int) : point {
-        const scaledX = (plot.x - (currentUnixTime / 1000 - xDuration)) / xDuration * plotWidth;
-        const scaledY = (plot.y - yMin) * plotHeight / (yMax - yMin);
+    function scalePoint(plot : point, currentUnixTime : int) : point {
+        const scaledX = Math.round((plot.x - (currentUnixTime - xDuration)) / xDuration * plotWidth);
+        const scaledY = Math.round((plot.y - yMin) * plotHeight / (yMax - yMin));
 
         return Qt.point(
             xPadding + scaledX,
             height - yPadding - scaledY
         );
+    }
+
+    // Spacing between x division lines, in seconds
+    function stepForDuration(seconds : int) : int {
+        const hours = seconds / 3600;
+        if (hours <= 1) {
+            return 60 * 10;      // Ten minutes
+        } else if (hours <= 12) {
+            return 60 * 30;      // Half an hour
+        } else if (hours <= 24) {
+            return 60 * 60;      // Full hour
+        } else if (hours <= 48) {
+            return 60 * 60 * 2;  // Two hours
+        } else {
+            return 60 * 60 * 12; // Full day
+        }
+    }
+
+    // Offset to align the tick marks from current time
+    function offsetForStep(step : int) : int {
+        const now = new Date();
+        const hours = now.getHours();
+        const minutes = now.getMinutes();
+        const seconds = now.getSeconds();
+
+        switch (step / 60) {  // step in minutes
+            case 60 * 12:
+                return (hours - 12) * 3600 + minutes * 60 + seconds;
+            case 60 * 2:
+            case 60:
+                return minutes * 60 + seconds;
+            case 30:
+                return (minutes - 30) * 60 + seconds;
+            case 10:
+                return (minutes % 10) * 60 + seconds;
+            default:
+                return 0;
+        }
     }
 
     SystemPalette {
@@ -69,7 +102,7 @@ Canvas
     onPaint: {
         const c = canvas.getContext('2d');
 
-        c.clearRect(0,0, width, height)
+        c.clearRect(0, 0, width, height)
 
         //draw the background
         c.fillStyle = palette.base
@@ -92,28 +125,27 @@ Canvas
         c.fillStyle = gradient;
 
         // For scaling
-        const currentUnixTime = Date.now()
-        const xMinUnixTime = currentUnixTime - xDuration * 1000
+        const currentUnixTime = Date.now() / 1000  // ms to s
 
         c.beginPath();
 
         // Draw the line graph if we have enough points
         if (data.length >= 2) {
-            let index = 0
-
-            while ((index < data.length - 1) && (data[index].x < (xMinUnixTime / 1000))) {
-                index++
-            }
-
-            const firstPoint = scalePoint(data[index], currentUnixTime)
-            c.moveTo(firstPoint.x, firstPoint.y)
-
-            let point
-            for (let i = index + 1; i < data.length; i++) {
-                if (data[i].x > (xMinUnixTime / 1000)) {
-                    point = scalePoint(data[i], currentUnixTime)
-                    c.lineTo(point.x, point.y)
+            let firstPoint = null;
+            let point;
+            for (const dataPoint of data) {
+                if (dataPoint.x < currentUnixTime - xDuration) {
+                    continue;
                 }
+
+                if (!firstPoint) {
+                    firstPoint = scalePoint(dataPoint, currentUnixTime);
+                    c.moveTo(firstPoint.x, firstPoint.y);
+                    continue;
+                }
+
+                point = scalePoint(dataPoint, currentUnixTime);
+                c.lineTo(point.x, point.y);
             }
 
             c.stroke();
@@ -136,8 +168,9 @@ Canvas
         c.fillStyle = palette.text;
         c.textAlign = "right"
         c.textBaseline = "middle";
-        for(let i = 0; i <=  yMax; i += yStep) {
-            const y = scalePoint(Qt.point(0,i)).y;
+
+        for(let i = 0; i <= yMax; i += yStep) {
+            const y = scalePoint(Qt.point(0, i)).y;
 
             c.fillText(canvas.yLabel(i), xPadding - 10, y);
 
@@ -152,64 +185,35 @@ Canvas
         c.lineWidth = 1
         c.strokeStyle = Qt.alpha(palette.text, 0.15)
 
-        const xDivisions = xDuration / xDivisionWidth * 1000
+        const xStep = stepForDuration(xDuration)
+        const xDivisions = xDuration / xStep
         const xGridDistance = plotWidth / xDivisions
-        let xTickPos
-        let xTickDateTime
-        let xTickDateStr
-        let xTickTimeStr
 
-        const currentDateTime = new Date()
-        let lastDateStr = currentDateTime.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
+        const currentDayTime = new Date()
 
-        const hours = currentDateTime.getHours()
-        const minutes = currentDateTime.getMinutes()
-        const seconds = currentDateTime.getSeconds()
-
-        let diff
-
-        switch (xTicksAt) {
-            case xTicksAtTwelveOClock:
-                diff = ((hours - 12) * 60 * 60 + minutes * 60 + seconds)
-                break
-            case xTicksAtFullHour:
-                diff = (minutes * 60 + seconds)
-                break
-            case xTicksAtFullSecondHour:
-                diff = (minutes * 60 + seconds)
-                break
-            case xTicksAtHalfHour:
-                diff = ((minutes - 30) * 60 + seconds)
-                break
-            case xTicksAtTenMinutes:
-                diff = ((minutes % 10) * 60 + seconds)
-                break
-            default:
-                diff = 0
-        }
-
-        const xGridOffset = plotWidth * (diff / xDuration)
-        let dateChanged = false
+        const xOffset = offsetForStep(xStep)
+        const xGridOffset = plotWidth * (xOffset / xDuration)
 
         const dashedLines = 50
         const dashedLineLength = plotHeight / dashedLines
-        let dashedLineDutyCycle
+
+        let lastDateStr = currentDayTime.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
+        let dateChanged = false
 
         for (let i = xDivisions; i >= -1; i--) {
-            xTickPos = i * xGridDistance + xPadding - xGridOffset
+            const xTickPos = i * xGridDistance + xPadding - xGridOffset
 
-            if ((xTickPos > xPadding) && (xTickPos < plotWidth + xPadding))
-            {
-                xTickDateTime = new Date(currentUnixTime - (xDivisions - i) * xDivisionWidth - diff * 1000)
-                xTickDateStr = xTickDateTime.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
-                xTickTimeStr = xTickDateTime.toLocaleTimeString(Qt.locale(), Locale.ShortFormat)
+            if ((xTickPos > xPadding) && (xTickPos < plotWidth + xPadding)) {
+                const xTickDateTime = new Date((currentUnixTime - (xDivisions - i) * xStep - xOffset) * 1000)
+                const xTickDateStr = xTickDateTime.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
+                const xTickTimeStr = xTickDateTime.toLocaleTimeString(Qt.locale(), Locale.ShortFormat)
 
                 if (lastDateStr != xTickDateStr) {
                     dateChanged = true
                 }
 
-                if  ((i % 2 == 0) || (xDivisions < 10))
-                {
+                let dashedLineDutyCycle = 0.1
+                if  ((i % 2 == 0) || (xDivisions < 10)) {
                     // Display the time
                     c.fillText(xTickTimeStr, xTickPos, canvas.height - yPadding / 2)
 
@@ -225,15 +229,14 @@ Canvas
                     c.lineTo(xTickPos, canvas.height - (yPadding * 4) / 5)
 
                     dashedLineDutyCycle = 0.5
-                } else {
-                    dashedLineDutyCycle = 0.1
                 }
 
                 for (let j = 0; j < dashedLines; j++) {
                     c.moveTo(xTickPos, yPadding + j * dashedLineLength)
-                    c.lineTo(xTickPos, yPadding + j * dashedLineLength + dashedLineDutyCycle * dashedLineLength)
+                    c.lineTo(xTickPos, yPadding + (j + dashedLineDutyCycle) * dashedLineLength)
                 }
-               lastDateStr = xTickDateStr
+
+                lastDateStr = xTickDateStr
             }
         }
         c.stroke()
