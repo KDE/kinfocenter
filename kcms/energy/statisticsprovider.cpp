@@ -174,6 +174,7 @@ void StatisticsProvider::load()
 
         if (reply.isError()) {
             qWarning() << "Failed to get device history from UPower" << reply.error().message();
+            Q_EMIT dataChanged();
             return;
         }
 
