@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-21 00:42+0000\n"
+"POT-Creation-Date: 2025-02-01 00:42+0000\n"
 "PO-Revision-Date: 2016-07-03 22:52+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -339,66 +339,67 @@ msgid "%1%"
 msgstr "%1 %2"
 
 # >> @title:column
-#: ui/main.qml:281
+#: ui/main.qml:280
 #, kde-format
 msgctxt "Shorthand for Watts"
 msgid "W"
 msgstr "W"
 
-#: ui/main.qml:281
+#: ui/main.qml:280
 #, kde-format
 msgctxt "literal percent sign"
 msgid "%"
 msgstr "%"
 
-#: ui/main.qml:307
+#: ui/main.qml:301
+#, kde-format
+msgctxt "@info:status"
+msgid "No history information for this time span"
+msgstr ""
+
+#: ui/main.qml:314
 #, kde-format
 msgid "Charge Percentage"
 msgstr "Проценат попуњености"
 
-#: ui/main.qml:317
+#: ui/main.qml:324
 #, kde-format
 msgid "Energy Consumption"
 msgstr "Потрошња енергије"
 
-#: ui/main.qml:332
+#: ui/main.qml:339
 #, kde-format
 msgid "Timespan"
 msgstr "Временски распон"
 
-#: ui/main.qml:333
+#: ui/main.qml:340
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "Временски распон за приказ података"
 
-#: ui/main.qml:339
+#: ui/main.qml:346
 #, kde-format
 msgid "Refresh"
 msgstr "Освежи"
 
-#: ui/main.qml:351
-#, kde-format
-msgid "This type of history is currently not available for this device."
-msgstr "Ова врста историјата тренутно није доступна за овај уређај."
-
-#: ui/main.qml:409
+#: ui/main.qml:408
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
 # >> @item
-#: ui/main.qml:420
+#: ui/main.qml:419
 #, kde-format
 msgid "Yes"
 msgstr "да"
 
 # >> @item
-#: ui/main.qml:422
+#: ui/main.qml:421
 #, kde-format
 msgid "No"
 msgstr "не"
 
-#: ui/main.qml:442
+#: ui/main.qml:441
 #, fuzzy, kde-format
 #| msgctxt "%1 is value, %2 is unit"
 #| msgid "%1 %2"
@@ -406,11 +407,14 @@ msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1 %2"
 
-#: ui/main.qml:444
+#: ui/main.qml:443
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
+
+#~ msgid "This type of history is currently not available for this device."
+#~ msgstr "Ова врста историјата тренутно није доступна за овај уређај."
 
 #, fuzzy
 #~| msgctxt "%1 is value, %2 is unit"

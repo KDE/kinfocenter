@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-21 00:42+0000\n"
+"POT-Creation-Date: 2025-02-01 00:42+0000\n"
 "PO-Revision-Date: 2024-11-21 11:31+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -317,76 +317,82 @@ msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:281
+#: ui/main.qml:280
 #, kde-format
 msgctxt "Shorthand for Watts"
 msgid "W"
 msgstr "W"
 
-#: ui/main.qml:281
+#: ui/main.qml:280
 #, kde-format
 msgctxt "literal percent sign"
 msgid "%"
 msgstr "%"
 
-#: ui/main.qml:307
+#: ui/main.qml:301
+#, fuzzy, kde-format
+#| msgctxt "@info:status"
+#| msgid "No energy information available on this system"
+msgctxt "@info:status"
+msgid "No history information for this time span"
+msgstr "Este sistema no dispone de información sobre energía"
+
+#: ui/main.qml:314
 #, kde-format
 msgid "Charge Percentage"
 msgstr "Porcentaje de carga"
 
-#: ui/main.qml:317
+#: ui/main.qml:324
 #, kde-format
 msgid "Energy Consumption"
 msgstr "Consumo de energía"
 
-#: ui/main.qml:332
+#: ui/main.qml:339
 #, kde-format
 msgid "Timespan"
 msgstr "Intervalo de tiempo"
 
-#: ui/main.qml:333
+#: ui/main.qml:340
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "Intervalo de tiempo de los datos a mostrar"
 
-#: ui/main.qml:339
+#: ui/main.qml:346
 #, kde-format
 msgid "Refresh"
 msgstr "Refrescar"
 
-#: ui/main.qml:351
-#, kde-format
-msgid "This type of history is currently not available for this device."
-msgstr ""
-"Este tipo de historial no está disponible en la actualidad para este "
-"dispositivo"
-
-#: ui/main.qml:409
+#: ui/main.qml:408
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
-#: ui/main.qml:420
+#: ui/main.qml:419
 #, kde-format
 msgid "Yes"
 msgstr "Sí"
 
-#: ui/main.qml:422
+#: ui/main.qml:421
 #, kde-format
 msgid "No"
 msgstr "No"
 
-#: ui/main.qml:442
+#: ui/main.qml:441
 #, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:444
+#: ui/main.qml:443
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
+
+#~ msgid "This type of history is currently not available for this device."
+#~ msgstr ""
+#~ "Este tipo de historial no está disponible en la actualidad para este "
+#~ "dispositivo"
 
 #~ msgctxt "Battery health percentage"
 #~ msgid "%1%"
