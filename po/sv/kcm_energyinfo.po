@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# SPDX-FileCopyrightText: 2015, 2016, 2019, 2021, 2024 Stefan Asserhäll <stefan.asserhall@gmail.com>
+# SPDX-FileCopyrightText: 2015, 2016, 2019, 2021, 2024, 2025 Stefan Asserhäll <stefan.asserhall@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-01 00:42+0000\n"
-"PO-Revision-Date: 2024-11-24 18:00+0100\n"
+"PO-Revision-Date: 2025-02-01 08:18+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 24.12.0\n"
 
 #: ui/main.qml:45
 #, kde-format
@@ -328,12 +328,10 @@ msgid "%"
 msgstr "%"
 
 #: ui/main.qml:301
-#, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "No energy information available on this system"
+#, kde-format
 msgctxt "@info:status"
 msgid "No history information for this time span"
-msgstr "Ingen information om energi tillgänglig på systemet"
+msgstr "Ingen historikinformation för det här tidsintervallet"
 
 #: ui/main.qml:314
 #, kde-format

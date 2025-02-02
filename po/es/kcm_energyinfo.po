@@ -1,15 +1,15 @@
 # Spanish translations for kcm_energyinfo.po package.
 # Copyright (C) 2015 This_file_is_part_of_KDE
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the kinfocenter package.
 #
 # Automatically generated, 2015.
-# SPDX-FileCopyrightText: 2015, 2016, 2019, 2021, 2023, 2024 Eloy Cuadra <ecuadra@eloihr.net>
+# SPDX-FileCopyrightText: 2015, 2016, 2019, 2021, 2023, 2024, 2025 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-01 00:42+0000\n"
-"PO-Revision-Date: 2024-11-21 11:31+0100\n"
+"PO-Revision-Date: 2025-02-01 12:09+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 24.12.1\n"
 
 #: ui/main.qml:45
 #, kde-format
@@ -330,12 +330,10 @@ msgid "%"
 msgstr "%"
 
 #: ui/main.qml:301
-#, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "No energy information available on this system"
+#, kde-format
 msgctxt "@info:status"
 msgid "No history information for this time span"
-msgstr "Este sistema no dispone de información sobre energía"
+msgstr "No hay información histórica para este intervalo de tiempo"
 
 #: ui/main.qml:314
 #, kde-format
@@ -388,70 +386,3 @@ msgstr "%1%"
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
-
-#~ msgid "This type of history is currently not available for this device."
-#~ msgstr ""
-#~ "Este tipo de historial no está disponible en la actualidad para este "
-#~ "dispositivo"
-
-#~ msgctxt "Battery health percentage"
-#~ msgid "%1%"
-#~ msgstr "%1%"
-
-#~ msgid "%"
-#~ msgstr "%"
-
-#~ msgid "This module lets you see energy information and statistics."
-#~ msgstr ""
-#~ "Este módulo le permite ver información y estadísticas sobre el consumo de "
-#~ "energía."
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Eloy Cuadra"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "ecuadra@eloihr.net"
-
-#~ msgid "Energy Consumption Statistics"
-#~ msgstr "Estadísticas de consumo de energía"
-
-#~ msgid "Kai Uwe Broulik"
-#~ msgstr "Kai Uwe Broulik"
-
-#~ msgid "Application Energy Consumption"
-#~ msgstr "Consumo de energía de las aplicaciones"
-
-#~ msgid "Path: %1"
-#~ msgstr "Ruta: %1"
-
-#~ msgid "PID: %1"
-#~ msgstr "PID: %1"
-
-#~ msgid "Wakeups per second: %1 (%2%)"
-#~ msgstr "Vueltas a la actividad por segundo: %1 (%2%)"
-
-#~ msgid "Details: %1"
-#~ msgstr "Detalles: %1"
-
-#~ msgid "LeadAcid"
-#~ msgstr "Plomo y ácido"
-
-#~ msgid "Capacity degradation"
-#~ msgstr "Degradación de la capacidad"
-
-#~ msgid "Manufacturer"
-#~ msgstr "Fabricante"
-
-#~ msgid "Full design"
-#~ msgstr "Diseño completo"
-
-#~ msgid "System"
-#~ msgstr "Sistema"
-
-#~ msgid "Has power supply"
-#~ msgstr "Tiene toma de corriente"
-
-#~ msgid "Capacity"
-#~ msgstr "Capacidad"

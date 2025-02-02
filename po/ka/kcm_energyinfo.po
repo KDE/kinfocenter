@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-01 00:42+0000\n"
-"PO-Revision-Date: 2024-11-21 05:11+0100\n"
+"PO-Revision-Date: 2025-02-01 05:27+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -329,12 +329,10 @@ msgid "%"
 msgstr "%"
 
 #: ui/main.qml:301
-#, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "No energy information available on this system"
+#, kde-format
 msgctxt "@info:status"
 msgid "No history information for this time span"
-msgstr "ენერგიის ხარჯვის შესახებ ინფორმაცია ამ სისტემაზე ხელმიუწვდომელია"
+msgstr "ამ დროის განმავლობის შესახებ ისტორიის ინფორმაცია არ არსებობს"
 
 #: ui/main.qml:314
 #, kde-format
