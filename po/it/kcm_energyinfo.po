@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# SPDX-FileCopyrightText: 2015, 2019, 2021, 2023, 2024 Vincenzo Reale <smart2128vr@gmail.com>
+# SPDX-FileCopyrightText: 2015, 2019, 2021, 2023, 2024, 2025 Vincenzo Reale <smart2128vr@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-01 00:42+0000\n"
-"PO-Revision-Date: 2024-11-22 09:05+0100\n"
+"PO-Revision-Date: 2025-02-01 20:48+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 24.12.1\n"
 
 #: ui/main.qml:45
 #, kde-format
@@ -328,12 +328,10 @@ msgid "%"
 msgstr "%"
 
 #: ui/main.qml:301
-#, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "No energy information available on this system"
+#, kde-format
 msgctxt "@info:status"
 msgid "No history information for this time span"
-msgstr "Nessuna informazione energetica disponibile su questo sistema"
+msgstr "Nessuna informazione storica per questo periodo di tempo"
 
 #: ui/main.qml:314
 #, kde-format
