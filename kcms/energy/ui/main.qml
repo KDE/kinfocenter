@@ -275,7 +275,8 @@ KCM.SimpleKCM {
                 xMax: history.lastDataPointTime
                 xDuration: history.duration
 
-                yUnits: root.historyType == HistoryModel.RateType ? i18nc("Shorthand for Watts","W") : i18nc("literal percent sign","%")
+                yLabel: root.historyType == HistoryModel.RateType ? ( value => i18nc("Graph axis label: power in Watts","%1 W", value) )
+                                                                  : ( value => i18nc("Graph axis label: percentage","%1%", value) )
                 yMax: {
                     if (root.historyType == HistoryModel.RateType) {
                         // ceil to nearest 10

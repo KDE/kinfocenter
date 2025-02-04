@@ -33,8 +33,7 @@ Canvas
     property real xMin: 0
     property real yStep: 20
 
-    property string yUnits: ""
-    property string xUnits: ""
+    property var yLabel: ( value => value )  // A formatter function
 
     property real xDuration: 3600
     property real xDivisions: 6
@@ -140,7 +139,7 @@ Canvas
         for(let i = 0; i <=  yMax; i += yStep) {
             const y = scalePoint(Qt.point(0,i)).y;
 
-            c.fillText(i + canvas.yUnits, xPadding - 10, y);
+            c.fillText(canvas.yLabel(i), xPadding - 10, y);
 
             //grid line
             c.moveTo(xPadding, y)
