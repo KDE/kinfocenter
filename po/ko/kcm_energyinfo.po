@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-01 00:42+0000\n"
+"POT-Creation-Date: 2025-02-04 00:42+0000\n"
 "PO-Revision-Date: 2024-12-10 00:48+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -17,317 +17,317 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 23.08.5\n"
 
-#: ui/main.qml:45
+#: ui/main.qml:43
 #, kde-format
 msgid "Battery"
 msgstr "배터리"
 
-#: ui/main.qml:47
+#: ui/main.qml:45
 #, kde-format
 msgid "Rechargeable"
 msgstr "충전 가능"
 
-#: ui/main.qml:48
+#: ui/main.qml:46
 #, kde-format
 msgid "Charge state"
 msgstr "충전 상태"
 
-#: ui/main.qml:49
+#: ui/main.qml:47
 #, kde-format
 msgid "Current charge"
 msgstr "현재 충전"
 
-#: ui/main.qml:50
+#: ui/main.qml:48
 #, kde-format
 msgid "Health"
 msgstr "수명"
 
-#: ui/main.qml:51
+#: ui/main.qml:49
 #, kde-format
 msgid "Charge Cycles"
 msgstr "충전 사이클"
 
-#: ui/main.qml:52
+#: ui/main.qml:50
 #, kde-format
 msgid "Vendor"
 msgstr "제조사"
 
-#: ui/main.qml:53
+#: ui/main.qml:51
 #, kde-format
 msgid "Model"
 msgstr "모델"
 
-#: ui/main.qml:54
+#: ui/main.qml:52
 #, kde-format
 msgid "Serial Number"
 msgstr "일련 번호"
 
-#: ui/main.qml:55
+#: ui/main.qml:53
 #, kde-format
 msgid "Technology"
 msgstr "기술"
 
-#: ui/main.qml:59
+#: ui/main.qml:57
 #, kde-format
 msgid "Energy"
 msgstr "에너지"
 
-#: ui/main.qml:61
+#: ui/main.qml:59
 #, kde-format
 msgctxt "current power draw from the battery in W"
 msgid "Consumption"
 msgstr "에너지 소모"
 
-#: ui/main.qml:61
+#: ui/main.qml:59
 #, kde-format
 msgctxt "Watt"
 msgid "W"
 msgstr "W"
 
-#: ui/main.qml:62
+#: ui/main.qml:60
 #, kde-format
 msgid "Voltage"
 msgstr "전압"
 
-#: ui/main.qml:62
+#: ui/main.qml:60
 #, kde-format
 msgctxt "Volt"
 msgid "V"
 msgstr "V"
 
-#: ui/main.qml:63
+#: ui/main.qml:61
 #, kde-format
 msgid "Remaining energy"
 msgstr "남은 에너지"
 
-#: ui/main.qml:63 ui/main.qml:64 ui/main.qml:65
+#: ui/main.qml:61 ui/main.qml:62 ui/main.qml:63
 #, kde-format
 msgctxt "Watt-hours"
 msgid "Wh"
 msgstr "Wh"
 
-#: ui/main.qml:64
+#: ui/main.qml:62
 #, kde-format
 msgid "Last full charge"
 msgstr "마지막 완전 충전"
 
-#: ui/main.qml:65
+#: ui/main.qml:63
 #, kde-format
 msgid "Original charge capacity"
 msgstr "설계 충전 용량"
 
-#: ui/main.qml:69
+#: ui/main.qml:67
 #, kde-format
 msgid "Environment"
 msgstr "환경"
 
-#: ui/main.qml:71
+#: ui/main.qml:69
 #, kde-format
 msgid "Temperature"
 msgstr "온도"
 
-#: ui/main.qml:71
+#: ui/main.qml:69
 #, kde-format
 msgctxt "Degree Celsius"
 msgid "°C"
 msgstr "°C"
 
-#: ui/main.qml:78
+#: ui/main.qml:76
 #, kde-format
 msgid "Not charging"
 msgstr "충전하지 않음"
 
-#: ui/main.qml:79
+#: ui/main.qml:77
 #, kde-format
 msgid "Charging"
 msgstr "충전 중"
 
-#: ui/main.qml:80
+#: ui/main.qml:78
 #, kde-format
 msgid "Discharging"
 msgstr "방전 중"
 
-#: ui/main.qml:81
+#: ui/main.qml:79
 #, kde-format
 msgid "Fully charged"
 msgstr "충전 완료"
 
-#: ui/main.qml:87
+#: ui/main.qml:85
 #, kde-format
 msgid "Lithium ion"
 msgstr "리튬 이온"
 
-#: ui/main.qml:88
+#: ui/main.qml:86
 #, kde-format
 msgid "Lithium polymer"
 msgstr "리튬 폴리머"
 
-#: ui/main.qml:89
+#: ui/main.qml:87
 #, kde-format
 msgid "Lithium iron phosphate"
 msgstr "리튬 인산철"
 
-#: ui/main.qml:90
+#: ui/main.qml:88
 #, kde-format
 msgid "Lead acid"
 msgstr "납 산"
 
-#: ui/main.qml:91
+#: ui/main.qml:89
 #, kde-format
 msgid "Nickel cadmium"
 msgstr "니켈 카드뮴"
 
-#: ui/main.qml:92
+#: ui/main.qml:90
 #, kde-format
 msgid "Nickel metal hydride"
 msgstr "니켈 수소"
 
-#: ui/main.qml:93
+#: ui/main.qml:91
 #, kde-format
 msgid "Unknown technology"
 msgstr "알 수 없는 기술"
 
-#: ui/main.qml:105
+#: ui/main.qml:103
 #, kde-format
 msgid "Last hour"
 msgstr "마지막 1시간"
 
-#: ui/main.qml:105
+#: ui/main.qml:103
 #, kde-format
 msgid "Last 2 hours"
 msgstr "마지막 2시간"
 
-#: ui/main.qml:105
+#: ui/main.qml:103
 #, kde-format
 msgid "Last 12 hours"
 msgstr "마지막 12시간"
 
-#: ui/main.qml:105
+#: ui/main.qml:103
 #, kde-format
 msgid "Last 24 hours"
 msgstr "마지막 24시간"
 
-#: ui/main.qml:105
+#: ui/main.qml:103
 #, kde-format
 msgid "Last 48 hours"
 msgstr "마지막 48시간"
 
-#: ui/main.qml:105
+#: ui/main.qml:103
 #, kde-format
 msgid "Last 7 days"
 msgstr "마지막 7일"
 
-#: ui/main.qml:112
+#: ui/main.qml:110
 #, kde-format
 msgctxt "@info:status"
 msgid "No energy information available on this system"
 msgstr "사용 가능한 에너지 정보 없음"
 
-#: ui/main.qml:188
+#: ui/main.qml:186
 #, kde-format
 msgid "PDA Battery"
 msgstr "PDA 배터리"
 
-#: ui/main.qml:189
+#: ui/main.qml:187
 #, kde-format
 msgid "UPS Battery"
 msgstr "UPS 배터리"
 
-#: ui/main.qml:190
+#: ui/main.qml:188
 #, kde-format
 msgid "Internal Battery"
 msgstr "내장 배터리"
 
-#: ui/main.qml:191
+#: ui/main.qml:189
 #, kde-format
 msgid "Mouse Battery"
 msgstr "마우스 배터리"
 
-#: ui/main.qml:192
+#: ui/main.qml:190
 #, kde-format
 msgid "Keyboard Battery"
 msgstr "키보드 배터리"
 
-#: ui/main.qml:193
+#: ui/main.qml:191
 #, kde-format
 msgid "Keyboard/Mouse Battery"
 msgstr "키보드/마우스 배터리"
 
-#: ui/main.qml:194
+#: ui/main.qml:192
 #, kde-format
 msgid "Camera Battery"
 msgstr "카메라 배터리"
 
-#: ui/main.qml:195
+#: ui/main.qml:193
 #, kde-format
 msgid "Phone Battery"
 msgstr "휴대폰 배터리"
 
-#: ui/main.qml:196
+#: ui/main.qml:194
 #, kde-format
 msgid "Monitor Battery"
 msgstr "모니터 배터리"
 
-#: ui/main.qml:197
+#: ui/main.qml:195
 #, kde-format
 msgid "Gaming Input Battery"
 msgstr "게이밍 입력 배터리"
 
-#: ui/main.qml:198
+#: ui/main.qml:196
 #, kde-format
 msgid "Bluetooth Battery"
 msgstr "블루투스 배터리"
 
-#: ui/main.qml:199
+#: ui/main.qml:197
 #, kde-format
 msgid "Tablet Battery"
 msgstr "태블릿 배터리"
 
-#: ui/main.qml:200
+#: ui/main.qml:198
 #, kde-format
 msgid "Headphone Battery"
 msgstr "헤드폰 배터리"
 
-#: ui/main.qml:201
+#: ui/main.qml:199
 #, kde-format
 msgid "Headset Battery"
 msgstr "헤드셋 배터리"
 
-#: ui/main.qml:202
+#: ui/main.qml:200
 #, kde-format
 msgid "Touchpad Battery"
 msgstr "터치패드 배터리"
 
-#: ui/main.qml:203
+#: ui/main.qml:201
 #, kde-format
 msgid "Unknown Battery"
 msgstr "알 수 없는 배터리"
 
-#: ui/main.qml:231
+#: ui/main.qml:229
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr "%1%(충전 중)"
 
-#: ui/main.qml:232
+#: ui/main.qml:230
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:280
+#: ui/main.qml:278
 #, kde-format
 msgctxt "Shorthand for Watts"
 msgid "W"
 msgstr "W"
 
-#: ui/main.qml:280
+#: ui/main.qml:278
 #, kde-format
 msgctxt "literal percent sign"
 msgid "%"
 msgstr "%"
 
-#: ui/main.qml:301
+#: ui/main.qml:296
 #, fuzzy, kde-format
 #| msgctxt "@info:status"
 #| msgid "No energy information available on this system"
@@ -335,53 +335,53 @@ msgctxt "@info:status"
 msgid "No history information for this time span"
 msgstr "사용 가능한 에너지 정보 없음"
 
-#: ui/main.qml:314
+#: ui/main.qml:309
 #, kde-format
 msgid "Charge Percentage"
 msgstr "충전 비율"
 
-#: ui/main.qml:324
+#: ui/main.qml:319
 #, kde-format
 msgid "Energy Consumption"
 msgstr "에너지 소모"
 
-#: ui/main.qml:339
+#: ui/main.qml:334
 #, kde-format
 msgid "Timespan"
 msgstr "시간 범위"
 
-#: ui/main.qml:340
+#: ui/main.qml:335
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "표시할 데이터 시간 범위"
 
-#: ui/main.qml:346
+#: ui/main.qml:341
 #, kde-format
 msgid "Refresh"
 msgstr "새로 고침"
 
-#: ui/main.qml:408
+#: ui/main.qml:403
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
-#: ui/main.qml:419
+#: ui/main.qml:414
 #, kde-format
 msgid "Yes"
 msgstr "예"
 
-#: ui/main.qml:421
+#: ui/main.qml:416
 #, kde-format
 msgid "No"
 msgstr "아니요"
 
-#: ui/main.qml:441
+#: ui/main.qml:436
 #, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:443
+#: ui/main.qml:438
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
