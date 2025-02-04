@@ -275,7 +275,6 @@ KCM.SimpleKCM {
                 xMax: history.lastDataPointTime
                 xDuration: history.duration
 
-                yUnits: root.historyType == HistoryModel.RateType ? i18nc("Shorthand for Watts","W") : i18nc("literal percent sign","%")
                 yMax: {
                     if (root.historyType == HistoryModel.RateType) {
                         // ceil to nearest 10
@@ -285,6 +284,12 @@ KCM.SimpleKCM {
                     }
                 }
                 yStep: root.historyType == HistoryModel.RateType ? 10 : 20
+
+                yAxis {
+                    valueFormatter: function(value) {
+                        return root.historyType == HistoryModel.RateType ? i18nc("Watt value", "%1W", value) : i18nc("Percent value", "%1%", value);
+                    }
+                }
             }
 
             // Reparented to keep the item outside of a layout and the graph canvas
