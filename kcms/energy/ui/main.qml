@@ -1,5 +1,6 @@
 /*
  *   SPDX-FileCopyrightText: 2015 Kai Uwe Broulik <kde@privat.broulik.de>
+ *   SPDX-FileCopyrightText: 2025 Ismael Asensio <isma.af@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-2.0-or-later
  */
@@ -252,9 +253,9 @@ KCM.SimpleKCM {
                 id: graph
 
                 Layout.fillWidth: true
-                Layout.minimumHeight: root.width / 3
-                Layout.maximumHeight: root.width / 3
-                Layout.topMargin: -Kirigami.Units.largeSpacing
+                Layout.preferredHeight: root.width / 3
+                Layout.minimumHeight: Kirigami.Units.gridUnit * 12
+                Layout.maximumHeight: Kirigami.Units.gridUnit * 24
 
                 data: history.points
 
@@ -264,8 +265,8 @@ KCM.SimpleKCM {
                                                                   : ( value => i18nc("Graph axis label: percentage","%1%", value) )
                 yMax: {
                     if (root.historyType == HistoryModel.RateType) {
-                        // ceil to nearest 10
-                        return Math.ceil(history.largestValue / 10) * 10;
+                        // Ceil to next 10
+                        return Math.floor(history.largestValue / 10) * 10 + 10;
                     } else {
                         return 100;
                     }
@@ -276,16 +277,17 @@ KCM.SimpleKCM {
             // Reparented to keep the item outside of a layout and the graph canvas
             Kirigami.PlaceholderMessage {
                 parent: graph
-                anchors.centerIn: parent
                 visible: graph.data.length < 2
-                width: parent.width - (Kirigami.Units.largeSpacing * 4)
+                x: graph.plotCenter.x - width / 2
+                y: graph.plotCenter.y - height / 2
+                width: graph.plot.width - (Kirigami.Units.largeSpacing * 4)
                 text: i18nc("@info:status", "No history information for this time span")
             }
 
             GridLayout {
                 Layout.fillWidth: true
-                Layout.leftMargin: graph.xPadding
-                Layout.rightMargin: graph.xPadding/2
+                Layout.leftMargin: graph.plot.left
+                Layout.rightMargin: graph.width - graph.plot.right
                 columns: !compact ? 5 : 3
 
                 QQC2.Button {

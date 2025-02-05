@@ -1,5 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2015 David Edmundson <david@davidedmundson.co.uk>
+ * SPDX-FileCopyrightText: 2025 Ismael Asensio <isma.af@gmail.com>
  *
  * SPDX-License-Identifier: LGPL-2.1-or-later
  *
@@ -22,9 +23,6 @@ Canvas
 
     antialiasing: true
 
-    property int xPadding: 45
-    property int yPadding: 40
-
     property var data //expect an array of QPointF
 
     property int yMin: 0
@@ -35,20 +33,25 @@ Canvas
 
     property int xDuration: 3600
 
-    readonly property int plotWidth: Math.round(width - xPadding * 1.5)
-    readonly property int plotHeight: height - yPadding * 2
+    readonly property rect plot: Qt.rect(yLabelMetrics.labelWidth,
+                                         yLabelMetrics.height / 2,
+                                         width - yLabelMetrics.labelWidth - 5,
+                                         height - 50 - yLabelMetrics.height / 2)
+    readonly property point plotCenter: Qt.point(
+        Math.round((plot.left + plot.right) / 2),
+        Math.round((plot.top + plot.bottom) / 2))
 
     onDataChanged: {
         canvas.requestPaint();
     }
 
-    function scalePoint(plot : point, currentUnixTime : int) : point {
-        const scaledX = Math.round((plot.x - (currentUnixTime - xDuration)) / xDuration * plotWidth);
-        const scaledY = Math.round((plot.y - yMin) * plotHeight / (yMax - yMin));
+    function scalePoint(point : point, currentUnixTime : int) : point {
+        const scaledX = Math.round((point.x - (currentUnixTime - xDuration)) / xDuration * plot.width);
+        const scaledY = Math.round((point.y - yMin) * plot.height / (yMax - yMin));
 
         return Qt.point(
-            xPadding + scaledX,
-            height - yPadding - scaledY
+            plot.left + scaledX,
+            plot.bottom - scaledY
         );
     }
 
@@ -99,6 +102,20 @@ Canvas
         }
     }
 
+    TextMetrics {
+        id: yLabelMetrics
+        text: canvas.yLabel(canvas.yMax)
+
+        readonly property int labelWidth: width + 10  // Adds the right spacing
+    }
+
+    onAvailableChanged: {
+        if (available) {
+            const c = canvas.getContext('2d');
+            yLabelMetrics.font = c.font;
+        }
+    }
+
     onPaint: {
         const c = canvas.getContext('2d');
 
@@ -106,7 +123,7 @@ Canvas
 
         //draw the background
         c.fillStyle = palette.base
-        c.fillRect(xPadding, yPadding, plotWidth, plotHeight);
+        c.fillRect(plot.left, plot.top, plot.width, plot.height);
 
         //reset for fonts and stuff
         c.fillStyle = palette.text
@@ -150,8 +167,8 @@ Canvas
 
             c.stroke();
             c.strokeStyle = 'transparent';
-            c.lineTo(point.x, height - yPadding);
-            c.lineTo(firstPoint.x, height - yPadding);
+            c.lineTo(point.x, plot.bottom);
+            c.lineTo(firstPoint.x, plot.bottom);
             c.fill();
         }
 
@@ -162,7 +179,7 @@ Canvas
         //draw an outline
         c.strokeStyle = Qt.rgba(0, 50, 0, 0.02);
         c.lineWidth = 1;
-        c.rect(xPadding - 1, yPadding - 1, plotWidth + 2, plotHeight + 2);
+        c.rect(plot.left, plot.top, plot.width, plot.height);
 
         // Draw the Y value texts
         c.fillStyle = palette.text;
@@ -172,11 +189,11 @@ Canvas
         for(let i = 0; i <= yMax; i += yStep) {
             const y = scalePoint(Qt.point(0, i)).y;
 
-            c.fillText(canvas.yLabel(i), xPadding - 10, y);
+            c.fillText(canvas.yLabel(i), plot.left - 10, y);
 
             //grid line
-            c.moveTo(xPadding, y)
-            c.lineTo(plotWidth + xPadding, y)
+            c.moveTo(plot.left, y)
+            c.lineTo(plot.width + plot.left, y)
         }
         c.stroke()
 
@@ -187,23 +204,24 @@ Canvas
 
         const xStep = stepForDuration(xDuration)
         const xDivisions = xDuration / xStep
-        const xGridDistance = plotWidth / xDivisions
+        const xGridDistance = plot.width / xDivisions
+        const bottomPadding = canvas.height - plot.bottom
 
         const currentDayTime = new Date()
 
         const xOffset = offsetForStep(xStep)
-        const xGridOffset = plotWidth * (xOffset / xDuration)
+        const xGridOffset = plot.width * (xOffset / xDuration)
 
         const dashedLines = 50
-        const dashedLineLength = plotHeight / dashedLines
+        const dashedLineLength = plot.height / dashedLines
 
         let lastDateStr = currentDayTime.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
         let dateChanged = false
 
         for (let i = xDivisions; i >= -1; i--) {
-            const xTickPos = i * xGridDistance + xPadding - xGridOffset
+            const xTickPos = i * xGridDistance + plot.left - xGridOffset
 
-            if ((xTickPos > xPadding) && (xTickPos < plotWidth + xPadding)) {
+            if ((xTickPos > plot.left) && (xTickPos < plot.width + plot.left)) {
                 const xTickDateTime = new Date((currentUnixTime - (xDivisions - i) * xStep - xOffset) * 1000)
                 const xTickDateStr = xTickDateTime.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
                 const xTickTimeStr = xTickDateTime.toLocaleTimeString(Qt.locale(), Locale.ShortFormat)
@@ -215,25 +233,25 @@ Canvas
                 let dashedLineDutyCycle = 0.1
                 if  ((i % 2 == 0) || (xDivisions < 10)) {
                     // Display the time
-                    c.fillText(xTickTimeStr, xTickPos, canvas.height - yPadding / 2)
+                    c.fillText(xTickTimeStr, xTickPos, plot.bottom + bottomPadding / 2)
 
                     // If the date has changed and is not the current day in a <= 24h graph, display it
                     // Always display the date for 48h and 1 week graphs
                     if (dateChanged || (xDuration > (60*60*48))) {
-                        c.fillText(xTickDateStr, xTickPos, canvas.height - yPadding / 4)
+                        c.fillText(xTickDateStr, xTickPos, plot.bottom + bottomPadding * 3/4)
                         dateChanged = false
                     }
 
                     // Tick markers
-                    c.moveTo(xTickPos, canvas.height - yPadding)
-                    c.lineTo(xTickPos, canvas.height - (yPadding * 4) / 5)
+                    c.moveTo(xTickPos, plot.bottom)
+                    c.lineTo(xTickPos, plot.bottom + bottomPadding * 1/5)
 
                     dashedLineDutyCycle = 0.5
                 }
 
                 for (let j = 0; j < dashedLines; j++) {
-                    c.moveTo(xTickPos, yPadding + j * dashedLineLength)
-                    c.lineTo(xTickPos, yPadding + (j + dashedLineDutyCycle) * dashedLineLength)
+                    c.moveTo(xTickPos, plot.top + j * dashedLineLength)
+                    c.lineTo(xTickPos, plot.top + (j + dashedLineDutyCycle) * dashedLineLength)
                 }
 
                 lastDateStr = xTickDateStr
