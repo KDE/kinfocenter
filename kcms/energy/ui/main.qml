@@ -236,29 +236,33 @@ KCM.SimpleKCM {
         }
     }
 
+    HistoryModel {
+        id: history
+        duration: timespanCombo.duration
+        device: currentUdi
+        type: root.historyType
+    }
+
+    // Set the padding for KCMUtils.SimpleKCM to the Kirigami.Page defaults
+    topPadding: Kirigami.Units.gridUnit
+    leftPadding: Kirigami.Units.gridUnit
+    rightPadding: Kirigami.Units.gridUnit
+
     ColumnLayout {
-        HistoryModel {
-            id: history
-            duration: timespanCombo.duration
-            device: currentUdi
-            type: root.historyType
-        }
+        spacing: Kirigami.Units.largeSpacing
 
-        ColumnLayout {
+        Kirigami.AbstractCard {
+            visible: !!root.currentBattery && history.available
+
             Layout.fillWidth: true
-            spacing: Kirigami.Units.smallSpacing
-            visible: !!currentBattery && history.available
+            Layout.preferredHeight: root.width / 3
+            Layout.minimumHeight: Kirigami.Units.gridUnit * 12
+            Layout.maximumHeight: Kirigami.Units.gridUnit * 24
 
-            Graph {
+            contentItem: Graph {
                 id: graph
 
-                Layout.fillWidth: true
-                Layout.preferredHeight: root.width / 3
-                Layout.minimumHeight: Kirigami.Units.gridUnit * 12
-                Layout.maximumHeight: Kirigami.Units.gridUnit * 24
-
                 data: history.points
-
                 xDuration: history.duration
 
                 yLabel: root.historyType == HistoryModel.RateType ? ( value => i18nc("Graph axis label: power in Watts","%1 W", value) )
@@ -284,10 +288,7 @@ KCM.SimpleKCM {
                 text: i18nc("@info:status", "No history information for this time span")
             }
 
-            GridLayout {
-                Layout.fillWidth: true
-                Layout.leftMargin: graph.plot.left
-                Layout.rightMargin: graph.width - graph.plot.right
+            footer: GridLayout {
                 columns: !compact ? 5 : 3
 
                 QQC2.Button {
@@ -349,81 +350,76 @@ KCM.SimpleKCM {
             }
         }
 
-        ColumnLayout {
-            id: detailsColumn
-            spacing: 0
+        Repeater {
+            id: titleRepeater
+            property list<Kirigami.FormLayout> layouts
 
-            Layout.fillWidth: true
             visible: !!currentBattery
 
-            Repeater {
-                id: titleRepeater
-                model: root.details
-                property list<Kirigami.FormLayout> layouts
+            model: root.details
 
-                delegate: Kirigami.FormLayout {
-                    id: currentLayout
+            delegate: Kirigami.FormLayout {
+                id: currentLayout
 
-                    Component.onCompleted: {
-                        // ensure that all visible FormLayout share the same set of twinFormLayouts
-                        titleRepeater.layouts.push(currentLayout);
-                        for (let i = 0, length = titleRepeater.layouts.length; i < length; ++i) {
-                            titleRepeater.layouts[i].twinFormLayouts = titleRepeater.layouts;
+                Component.onCompleted: {
+                    // ensure that all visible FormLayout share the same set of twinFormLayouts
+                    titleRepeater.layouts.push(currentLayout);
+                    for (let i = 0, length = titleRepeater.layouts.length; i < length; ++i) {
+                        titleRepeater.layouts[i].twinFormLayouts = titleRepeater.layouts;
+                    }
+                }
+
+                Kirigami.Heading {
+                    text: modelData.title
+                    Kirigami.FormData.isSection: true
+                    level: 2
+                    // HACK hide section header if all labels are invisible
+                    visible:  [...Array(detailsRepeater.count).keys()].some(i => detailsRepeater.itemAt(i)?.visible ?? false)
+                }
+
+                Repeater {
+                    id: detailsRepeater
+                    model: modelData.data || []
+                    delegate: Kirigami.SelectableLabel {
+                        id: valueLabel
+                        visible: text.length > 0
+                        Layout.fillWidth: true
+
+                        Keys.onPressed: {
+                            if (event.matches(StandardKey.Copy)) {
+                                valueLabel.copy();
+                                event.accepted = true;
+                            }
                         }
-                    }
 
-                    Kirigami.Heading {
-                        text: modelData.title
-                        Kirigami.FormData.isSection: true
-                        level: 2
-                        // HACK hide section header if all labels are invisible
-                        visible:  [...Array(detailsRepeater.count).keys()].some(i => detailsRepeater.itemAt(i)?.visible ?? false)
-                    }
+                        Kirigami.FormData.label: i18n("%1:", modelData.label)
+                        text: {
+                            let value = (modelData.source) ? root["current" + modelData.source]
+                                                           : currentBattery[modelData.value]
 
-                    Repeater {
-                        id: detailsRepeater
-                        model: modelData.data || []
-                        delegate: Kirigami.SelectableLabel {
-                            id: valueLabel
-                            visible: text.length > 0
-                            Layout.fillWidth: true
-
-                            Keys.onPressed: {
-                                if (event.matches(StandardKey.Copy)) {
-                                    valueLabel.copy();
-                                    event.accepted = true;
-                                }
+                            if (typeof value === "boolean") {
+                                return value ? i18n("Yes") : i18n("No")
                             }
 
-                            Kirigami.FormData.label: i18n("%1:", modelData.label)
-                            text: {
-                                let value = (modelData.source) ? root["current" + modelData.source]
-                                                               : currentBattery[modelData.value]
+                            if (!value) {
+                                return ""
+                            }
 
-                                if (typeof value === "boolean") {
-                                    return value ? i18n("Yes") : i18n("No")
-                                }
+                            if (modelData.precision) { // round to decimals
+                                value = Number(value).toLocaleString(Qt.locale(), "f", modelData.precision)
+                            }
 
-                                if (!value) {
-                                    return ""
-                                }
+                            if (modelData.modifier && root["modifier_" + modelData.modifier]) {
+                                value = root["modifier_" + modelData.modifier](value)
+                            }
 
-                                if (modelData.precision) { // round to decimals
-                                    value = Number(value).toLocaleString(Qt.locale(), "f", modelData.precision)
-                                }
-
-                                if (modelData.modifier && root["modifier_" + modelData.modifier]) {
-                                    value = root["modifier_" + modelData.modifier](value)
-                                }
-
-                                switch (modelData.unit) {
-                                case undefined:
-                                    return value
-                                case "%":
-                                    return i18nc("%1 is a percentage value", "%1%", value)
-                                default:
-                                    return i18nc("%1 is value, %2 is unit", "%1 %2", value, modelData.unit)
-                                }
+                            switch (modelData.unit) {
+                            case undefined:
+                                return value
+                            case "%":
+                                return i18nc("%1 is a percentage value", "%1%", value)
+                            default:
+                                return i18nc("%1 is value, %2 is unit", "%1 %2", value, modelData.unit)
                             }
                         }
                     }

@@ -36,7 +36,7 @@ Canvas
     readonly property rect plot: Qt.rect(yLabelMetrics.labelWidth,
                                          yLabelMetrics.height / 2,
                                          width - yLabelMetrics.labelWidth - 5,
-                                         height - 50 - yLabelMetrics.height / 2)
+                                         height - yLabelMetrics.height * 3.5)
     readonly property point plotCenter: Qt.point(
         Math.round((plot.left + plot.right) / 2),
         Math.round((plot.top + plot.bottom) / 2))
@@ -121,18 +121,10 @@ Canvas
 
         c.clearRect(0, 0, width, height)
 
-        //draw the background
-        c.fillStyle = palette.base
-        c.fillRect(plot.left, plot.top, plot.width, plot.height);
-
-        //reset for fonts and stuff
-        c.fillStyle = palette.text
-
-        //Draw the lines
-
         c.lineWidth = 2;
         c.lineJoin = 'round';
         c.lineCap = 'round';
+        c.fillStyle = palette.text
 
         const lineColor = palette.accent
         c.strokeStyle = lineColor;
@@ -237,8 +229,8 @@ Canvas
 
                     // If the date has changed and is not the current day in a <= 24h graph, display it
                     // Always display the date for 48h and 1 week graphs
-                    if (dateChanged || (xDuration > (60*60*48))) {
-                        c.fillText(xTickDateStr, xTickPos, plot.bottom + bottomPadding * 3/4)
+                    if (dateChanged || xDuration > 60*60*48) {
+                        c.fillText(xTickDateStr, xTickPos, plot.bottom + bottomPadding * 4/5)
                         dateChanged = false
                     }
 
