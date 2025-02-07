@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-04 00:42+0000\n"
+"POT-Creation-Date: 2025-02-07 00:43+0000\n"
 "PO-Revision-Date: 2023-11-11 15:57+0100\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -332,17 +332,19 @@ msgstr "%1%"
 
 #: ui/main.qml:278
 #, kde-format
-msgctxt "Shorthand for Watts"
-msgid "W"
-msgstr "W"
+msgctxt "Graph axis label: power in Watts"
+msgid "%1 W"
+msgstr ""
 
-#: ui/main.qml:278
-#, kde-format
-msgctxt "literal percent sign"
-msgid "%"
-msgstr "%"
+#: ui/main.qml:279
+#, fuzzy, kde-format
+#| msgctxt "Battery charge percentage"
+#| msgid "%1%"
+msgctxt "Graph axis label: percentage"
+msgid "%1%"
+msgstr "%1%"
 
-#: ui/main.qml:296
+#: ui/main.qml:297
 #, fuzzy, kde-format
 #| msgctxt "@info:status"
 #| msgid "No energy information available on this system"
@@ -350,57 +352,65 @@ msgctxt "@info:status"
 msgid "No history information for this time span"
 msgstr "O tomto systéme nie sú k dispozícii žiadne informácie o energii"
 
-#: ui/main.qml:309
+#: ui/main.qml:310
 #, kde-format
 msgid "Charge Percentage"
 msgstr "Percento nabitia"
 
-#: ui/main.qml:319
+#: ui/main.qml:320
 #, kde-format
 msgid "Energy Consumption"
 msgstr "Spotreba energie"
 
-#: ui/main.qml:334
+#: ui/main.qml:335
 #, kde-format
 msgid "Timespan"
 msgstr "Časový rozsah"
 
-#: ui/main.qml:335
+#: ui/main.qml:336
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "Časový rozsah zobrazených údajov"
 
-#: ui/main.qml:341
+#: ui/main.qml:342
 #, kde-format
 msgid "Refresh"
 msgstr "Obnoviť"
 
-#: ui/main.qml:403
+#: ui/main.qml:404
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
-#: ui/main.qml:414
+#: ui/main.qml:415
 #, kde-format
 msgid "Yes"
 msgstr "Áno"
 
-#: ui/main.qml:416
+#: ui/main.qml:417
 #, kde-format
 msgid "No"
 msgstr "Nie"
 
-#: ui/main.qml:436
+#: ui/main.qml:437
 #, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:438
+#: ui/main.qml:439
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
+
+#~ msgctxt "Shorthand for Watts"
+#~ msgid "W"
+#~ msgstr "W"
+
+#~ msgctxt "literal percent sign"
+#~ msgid "%"
+#~ msgstr "%"
 
 #~ msgid "This type of history is currently not available for this device."
 #~ msgstr "Tento typ histórie momentálne nie je dostupný pre toto zariadenie."

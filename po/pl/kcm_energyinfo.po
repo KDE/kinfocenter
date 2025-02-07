@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-04 00:42+0000\n"
+"POT-Creation-Date: 2025-02-07 00:43+0000\n"
 "PO-Revision-Date: 2025-02-01 12:51+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -318,73 +318,83 @@ msgstr "%1%"
 
 #: ui/main.qml:278
 #, kde-format
-msgctxt "Shorthand for Watts"
-msgid "W"
-msgstr "W"
+msgctxt "Graph axis label: power in Watts"
+msgid "%1 W"
+msgstr ""
 
-#: ui/main.qml:278
-#, kde-format
-msgctxt "literal percent sign"
-msgid "%"
-msgstr "%"
+#: ui/main.qml:279
+#, fuzzy, kde-format
+#| msgctxt "Battery charge percentage"
+#| msgid "%1%"
+msgctxt "Graph axis label: percentage"
+msgid "%1%"
+msgstr "%1%"
 
-#: ui/main.qml:296
+#: ui/main.qml:297
 #, kde-format
 msgctxt "@info:status"
 msgid "No history information for this time span"
 msgstr "Nie ma żadnej historii dla tego przedziału czasowego"
 
-#: ui/main.qml:309
+#: ui/main.qml:310
 #, kde-format
 msgid "Charge Percentage"
 msgstr "Procent naładowania"
 
-#: ui/main.qml:319
+#: ui/main.qml:320
 #, kde-format
 msgid "Energy Consumption"
 msgstr "Pobór mocy"
 
-#: ui/main.qml:334
+#: ui/main.qml:335
 #, kde-format
 msgid "Timespan"
 msgstr "Przedział czasowy"
 
-#: ui/main.qml:335
+#: ui/main.qml:336
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "Przedział czasowy danych do wyświetlenia"
 
-#: ui/main.qml:341
+#: ui/main.qml:342
 #, kde-format
 msgid "Refresh"
 msgstr "Odśwież"
 
-#: ui/main.qml:403
+#: ui/main.qml:404
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
-#: ui/main.qml:414
+#: ui/main.qml:415
 #, kde-format
 msgid "Yes"
 msgstr "Tak"
 
-#: ui/main.qml:416
+#: ui/main.qml:417
 #, kde-format
 msgid "No"
 msgstr "Nie"
 
-#: ui/main.qml:436
+#: ui/main.qml:437
 #, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:438
+#: ui/main.qml:439
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
+
+#~ msgctxt "Shorthand for Watts"
+#~ msgid "W"
+#~ msgstr "W"
+
+#~ msgctxt "literal percent sign"
+#~ msgid "%"
+#~ msgstr "%"
 
 #~ msgid "This type of history is currently not available for this device."
 #~ msgstr "Ten rodzaj historii nie jest obecnie dostępny dla tego urządzenia."

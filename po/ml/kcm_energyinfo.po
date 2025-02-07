@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-04 00:42+0000\n"
+"POT-Creation-Date: 2025-02-07 00:43+0000\n"
 "PO-Revision-Date: 2019-12-12 22:12+0000\n"
 "Last-Translator: Vivek KJ Pazhedath <vivekkj2004@gmail.com>\n"
 "Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ് <smc."
@@ -318,69 +318,69 @@ msgstr ""
 
 #: ui/main.qml:278
 #, kde-format
-msgctxt "Shorthand for Watts"
-msgid "W"
+msgctxt "Graph axis label: power in Watts"
+msgid "%1 W"
 msgstr ""
 
-#: ui/main.qml:278
+#: ui/main.qml:279
 #, kde-format
-msgctxt "literal percent sign"
-msgid "%"
+msgctxt "Graph axis label: percentage"
+msgid "%1%"
 msgstr ""
 
-#: ui/main.qml:296
+#: ui/main.qml:297
 #, kde-format
 msgctxt "@info:status"
 msgid "No history information for this time span"
 msgstr ""
 
-#: ui/main.qml:309
+#: ui/main.qml:310
 #, kde-format
 msgid "Charge Percentage"
 msgstr ""
 
-#: ui/main.qml:319
+#: ui/main.qml:320
 #, kde-format
 msgid "Energy Consumption"
 msgstr ""
 
-#: ui/main.qml:334
+#: ui/main.qml:335
 #, kde-format
 msgid "Timespan"
 msgstr ""
 
-#: ui/main.qml:335
+#: ui/main.qml:336
 #, kde-format
 msgid "Timespan of data to display"
 msgstr ""
 
-#: ui/main.qml:341
+#: ui/main.qml:342
 #, fuzzy, kde-format
 msgid "Refresh"
 msgstr "ഉന്മേഷം വീണ്ടെടുക്കുക"
 
-#: ui/main.qml:403
+#: ui/main.qml:404
 #, kde-format
 msgid "%1:"
 msgstr ""
 
-#: ui/main.qml:414
+#: ui/main.qml:415
 #, kde-format
 msgid "Yes"
 msgstr ""
 
-#: ui/main.qml:416
+#: ui/main.qml:417
 #, kde-format
 msgid "No"
 msgstr ""
 
-#: ui/main.qml:436
+#: ui/main.qml:437
 #, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr ""
 
-#: ui/main.qml:438
+#: ui/main.qml:439
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"

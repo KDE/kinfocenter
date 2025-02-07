@@ -6,20 +6,21 @@
 # Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2016, 2018, 2021, 2022, 2023.
 # Thiago Masato Costa Sueto <herzenschein@gmail.com>, 2021.
 # SPDX-FileCopyrightText: 2023, 2024 Geraldo Simiao <geraldosimiao@fedoraproject.org>
+# SPDX-FileCopyrightText: 2025 Guilherme Marçal Silva <guimarcalsilva@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-09 00:41+0000\n"
-"PO-Revision-Date: 2024-04-13 01:10-0300\n"
-"Last-Translator: Geraldo Simiao <geraldosimiao@fedoraproject.org>\n"
+"PO-Revision-Date: 2025-02-05 22:17-0300\n"
+"Last-Translator: Guilherme Marçal Silva <guimarcalsilva@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.02.1\n"
+"X-Generator: Lokalize 24.12.1\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -36,11 +37,10 @@ msgid "Unknown Type"
 msgstr "Tipo desconhecido"
 
 #: GPUEntry.cpp:17
-#, fuzzy, kde-format
-#| msgid "Graphics Processor:"
+#, kde-format
 msgctxt "@label %1 is the GPU index number"
 msgid "Graphics Processor %1:"
-msgstr "Processador gráfico:"
+msgstr "Processador gráfico %1:"
 
 #: GPUEntry.cpp:18
 #, kde-format
@@ -51,19 +51,19 @@ msgstr "Processador gráfico:"
 #, kde-format
 msgctxt "@label GPU type"
 msgid "integrated"
-msgstr ""
+msgstr "integrado"
 
 #: GPUEntry.cpp:30
 #, kde-format
 msgctxt "@label GPU type"
 msgid "discrete"
-msgstr ""
+msgstr "dedicado"
 
 #: GPUEntry.cpp:32
 #, kde-format
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
-msgstr ""
+msgstr "virtual"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
@@ -125,7 +125,7 @@ msgstr "Versão do KDE Frameworks:"
 #: main.cpp:264
 #, kde-format
 msgid "Qt Version:"
-msgstr "Versão da Qt:"
+msgstr "Versão do Qt:"
 
 #: MemoryEntry.cpp:20
 #, kde-format
