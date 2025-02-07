@@ -128,6 +128,7 @@
     "X-KDE-Keywords[nl]": "info over,info,informatie,distributie,distributie,systeem,kernel,qt,kde,versie",
     "X-KDE-Keywords[nn]": "om,info,informasjon,distribusjon,distro,system,kjerne,qt,kde,versjon",
     "X-KDE-Keywords[pl]": "info,informacje,dystrybucja,distro,system,jądro,qt,kde,wersja",
+    "X-KDE-Keywords[pt_BR]": "sobre,info,informações,distribuição,sistema,kernel,qt,kde,versão",
     "X-KDE-Keywords[ru]": "about,info,information,distribution,distro,system,kernel,qt,kde,version,информация,сведения,дистрибутив,ядро,процессор,компьютер,операционная система,память,архитектура,версия",
     "X-KDE-Keywords[sa]": "के बारे में,सूचना,सूचना,वितरण,डिस्ट्रो,प्रणाली,कर्नेल,qt,kde,संस्करण",
     "X-KDE-Keywords[sl]": "o,info,informacije,distribucija,distro,sistem,jedro,qt,kde,različica",
@@ -136,6 +137,7 @@
     "X-KDE-Keywords[uk]": "information,distribution,distro,system,kernel,qt,kde,version,інформація,дистрибутив,дистро,система,ядро,процесор,комп’ютер,інфо,версія",
     "X-KDE-Keywords[x-test]": "xxaboutxx,xxinfoxx,xxinformationxx,xxdistributionxx,xxdistroxx,xxsystemxx,xxkernelxx,xxqtxx,xxkdexx,xxversionxx",
     "X-KDE-Keywords[zh_CN]": "about,info,information,distribution,distro,system,kernel,qt,kde,version,guanyu,xinxi,faxingban,xitong,neihe,banben,关于,信息,发行版,系统,内核,版本",
+    "X-KDE-Keywords[zh_TW]": "關於,資訊,訊息,發行版,發行,系統,核心,內核,版本,散佈,散布,散佈版,散布版",
     "X-KDE-System-Settings-Parent-Category": "system-administration",
     "X-KDE-Weight": 0
 }
