@@ -172,6 +172,7 @@
     "X-KDE-Keywords[nl]": "netwerk,nic,ip,ip-adres,mac,inet,eth,wlan,wifi",
     "X-KDE-Keywords[nn]": "nettverk,nett,nic,ip,ip-adresse,mac,inet,eth,kabla,wlan,wifi,trådlaus",
     "X-KDE-Keywords[pl]": "sieć,nic,ip,adres ip,mac,inet,eth,wlan,wifi",
+    "X-KDE-Keywords[pt_BR]": "network,nic,ip,ip address,mac,inet,eth,wlan,wifi,rede,endereço ip",
     "X-KDE-Keywords[ru]": "network,nic,ip,ip address,mac,inet,eth,wlan,wifi,сеть,адаптер,сетевой адрес,интернет,инет,локальная сеть,беспроводная локальная сеть,вай-фай",
     "X-KDE-Keywords[sa]": "नेटवर्क,निक,आईपी,आईपी पता,मैक,inet,eth,wlan,wifi",
     "X-KDE-Keywords[sl]": "omrežje,nic,ip,ip naslov,mac,inet,eth,wlan,wifi",
@@ -179,5 +180,6 @@
     "X-KDE-Keywords[tr]": "ağ,nic,ip,ip adresi,mac,inet,eth,wlan,wifi,wi-fi",
     "X-KDE-Keywords[uk]": "network,nic,ip,ip address,mac,inet,eth,wlan,wifi,мережа,адреса,мак,інтернет,езернет,вайфай",
     "X-KDE-Keywords[x-test]": "xxnetworkxx,xxnicxx,xxipxx,xxip addressxx,xxmacxx,xxinetxx,xxethxx,xxwlanxx,xxwifixx",
-    "X-KDE-Keywords[zh_CN]": "network,nic,ip,ip address,mac,inet,eth,wlan,wifi,wangluo,wangka,wangluojiemian,IP dizhi,dizhi,juyuwang,yitaiwang,wuxianwangluo,网络,网卡,网络界面,IP 地址,地址,局域网,以太网,无线网络"
+    "X-KDE-Keywords[zh_CN]": "network,nic,ip,ip address,mac,inet,eth,wlan,wifi,wangluo,wangka,wangluojiemian,IP dizhi,dizhi,juyuwang,yitaiwang,wuxianwangluo,网络,网卡,网络界面,IP 地址,地址,局域网,以太网,无线网络",
+    "X-KDE-Keywords[zh_TW]": "網路,NIC,IP 位址,MAC 位址,乙太網路,以太,網絡"
 }

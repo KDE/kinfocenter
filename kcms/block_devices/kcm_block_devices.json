@@ -105,6 +105,7 @@
     "X-KDE-Keywords[nl]": "lsblk,blokapparaat,partitie,schijf,station,hdd,ssd,nvme",
     "X-KDE-Keywords[nn]": "lsblk,blokk-eining,partisjon,disk,stasjon,harddisk,hdd,ssd,nvme",
     "X-KDE-Keywords[pl]": "lsblk,urządzenie blokowe,partycja,dysk,napęd,hdd,ssd,nvme",
+    "X-KDE-Keywords[pt_BR]": "lsblk,dispositivo de bloco,partição,disco,unidade,hdd,ssd,nvme",
     "X-KDE-Keywords[ru]": "lsblk,block device,partition,disk,drive,hdd,ssd,nvme,блочное устройство,раздел,диск,накопитель,логический диск,жёсткий диск,твердотельный диск",
     "X-KDE-Keywords[sa]": "lsblk,ब्लॉक डिवाइस,विभाजन,डिस्क,ड्राइव,hdd,ssd,nvme",
     "X-KDE-Keywords[sl]": "lsblk,bločna naprava,particija,disk,pogon,hdd,ssd,nvme",
@@ -112,5 +113,6 @@
     "X-KDE-Keywords[tr]": "lsblk,blok aygıtı,bölüntü,bölüm,disk,sürücü,hdd,ssd,nvme",
     "X-KDE-Keywords[uk]": "lsblk,block device,partition,disk,drive,hdd,ssd,nvme,блоковий,пристрій,розділ,диск,вінчестер",
     "X-KDE-Keywords[x-test]": "xxlsblkxx,xxblock devicexx,xxpartitionxx,xxdiskxx,xxdrivexx,xxhddxx,xxssdxx,xxnvmexx",
-    "X-KDE-Keywords[zh_CN]": "lsblk,block device,partition,disk,drive,hdd,ssd,nvme,kuaishebei,fenqu,cipan,qudongqi,yingpan,gutaiyingpan,块设备,分区,磁盘,驱动器,硬盘,固态硬盘"
+    "X-KDE-Keywords[zh_CN]": "lsblk,block device,partition,disk,drive,hdd,ssd,nvme,kuaishebei,fenqu,cipan,qudongqi,yingpan,gutaiyingpan,块设备,分区,磁盘,驱动器,硬盘,固态硬盘",
+    "X-KDE-Keywords[zh_TW]": "分割區,硬碟,磁碟,區塊裝置"
 }

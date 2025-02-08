@@ -29,6 +29,7 @@
         "Description[nl]": "Geheugeninformatie",
         "Description[nn]": "Minneinformasjon",
         "Description[pl]": "Dane o pamięci",
+        "Description[pt_BR]": "Informações da memória",
         "Description[ru]": "Сведения об использовании памяти",
         "Description[sa]": "स्मृति सूचना",
         "Description[sl]": "Informacije o pomnilniku",
@@ -158,6 +159,7 @@
     "X-KDE-Keywords[nl]": "Geheugen,RAM,dmidecode",
     "X-KDE-Keywords[nn]": "minne,RAM,dmidecode",
     "X-KDE-Keywords[pl]": "Pamięć,RAM,dmidecode",
+    "X-KDE-Keywords[pt_BR]": "Memory,RAM,dmidecode,memória",
     "X-KDE-Keywords[ru]": "Memory,RAM,dmidecode,память,ОЗУ",
     "X-KDE-Keywords[sa]": "स्मृति,RAM,dmidecode",
     "X-KDE-Keywords[sl]": "Pomnilnik,RAM,dmidecode",
@@ -165,5 +167,6 @@
     "X-KDE-Keywords[tr]": "bellek,memory,ram,dmidecode",
     "X-KDE-Keywords[uk]": "Memory,RAM,dmidecode,пам'ять,оперативна",
     "X-KDE-Keywords[x-test]": "xxMemoryxx,xxRAMxx,xxdmidecodexx",
-    "X-KDE-Keywords[zh_CN]": "Memory,RAM,dmidecode,neicun,yuncun,yunxingneicun,dmijiema,内存,运存,运行内存,DMI 解码"
+    "X-KDE-Keywords[zh_CN]": "Memory,RAM,dmidecode,neicun,yuncun,yunxingneicun,dmijiema,内存,运存,运行内存,DMI 解码",
+    "X-KDE-Keywords[zh_TW]": "記憶體"
 }

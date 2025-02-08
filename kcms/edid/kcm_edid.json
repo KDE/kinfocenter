@@ -25,6 +25,7 @@
         "Description[nl]": "Extended Display Identification Data",
         "Description[nn]": "Extended Display Identification Data",
         "Description[pl]": "Rozbudowane Dane Identyfikujące Wyświetlacz (EDID)",
+        "Description[pt_BR]": "Dados de identificação de exibição estendida",
         "Description[sa]": "विस्तारितः प्रदर्शनपरिचयदत्तांशः",
         "Description[sl]": "Extended Display Identification Data (Podatki določilnika razširjenega prikaza)",
         "Description[sv]": "Utökad bildskärmsidentifikationsdata (EDID)",
@@ -32,6 +33,7 @@
         "Description[uk]": "Розширені дані ідентифікації дисплея",
         "Description[x-test]": "xxExtended Display Identification Dataxx",
         "Description[zh_CN]": "扩展显示识别数据",
+        "Description[zh_TW]": "延伸顯示器識別資料 (EDID)",
         "Icon": "video-display",
         "Name": "EDID",
         "Name[ar]": "بيانات تعريف العرض الممتدة",
@@ -56,13 +58,15 @@
         "Name[nl]": "EDID",
         "Name[nn]": "EDID",
         "Name[pl]": "EDID",
+        "Name[pt_BR]": "EDID",
         "Name[sa]": "एडिड",
         "Name[sl]": "EDID",
         "Name[sv]": "EDID",
         "Name[tr]": "EDID",
         "Name[uk]": "EDID",
         "Name[x-test]": "xxEDIDxx",
-        "Name[zh_CN]": "EDID"
+        "Name[zh_CN]": "EDID",
+        "Name[zh_TW]": "EDID"
     },
     "TryExec": "di-edid-decode",
     "X-KDE-KInfoCenter-Category": "graphical_information",
@@ -89,11 +93,13 @@
     "X-KDE-Keywords[nl]": "EDID,grafisch",
     "X-KDE-Keywords[nn]": "EDID,Grafikk",
     "X-KDE-Keywords[pl]": "EDID,Grafika",
+    "X-KDE-Keywords[pt_BR]": "EDID,gráficos",
     "X-KDE-Keywords[sa]": "EDID,ग्राफिक्स",
     "X-KDE-Keywords[sl]": "EDID,Grafika",
     "X-KDE-Keywords[sv]": "EDID,grafik",
     "X-KDE-Keywords[tr]": "EDID,grafikler,grafik",
     "X-KDE-Keywords[uk]": "EDID,Graphics,едід,графіка",
     "X-KDE-Keywords[x-test]": "xxEDIDxx,xxGraphicsxx",
-    "X-KDE-Keywords[zh_CN]": "EDID,Graphics,kuozhanxianshibiaoshishuju,xianshi,tuxing,tuxiang,xianka,扩展显示标识数据,图形,图像,显示,显卡"
+    "X-KDE-Keywords[zh_CN]": "EDID,Graphics,kuozhanxianshibiaoshishuju,xianshi,tuxing,tuxiang,xianka,扩展显示标识数据,图形,图像,显示,显卡",
+    "X-KDE-Keywords[zh_TW]": "EDID,圖形"
 }
