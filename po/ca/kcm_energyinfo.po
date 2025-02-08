@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-07 00:43+0000\n"
-"PO-Revision-Date: 2025-02-01 10:26+0100\n"
+"PO-Revision-Date: 2025-02-07 09:38+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -324,12 +324,10 @@ msgstr "%1%"
 #, kde-format
 msgctxt "Graph axis label: power in Watts"
 msgid "%1 W"
-msgstr ""
+msgstr "%1 W"
 
 #: ui/main.qml:279
-#, fuzzy, kde-format
-#| msgctxt "Battery charge percentage"
-#| msgid "%1%"
+#, kde-format
 msgctxt "Graph axis label: percentage"
 msgid "%1%"
 msgstr "%1%"
