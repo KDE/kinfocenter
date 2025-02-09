@@ -239,8 +239,6 @@ KCM.SimpleKCM {
     }
 
     ColumnLayout {
-        id: column
-
         HistoryModel {
             id: history
             duration: timespanComboDurations[timespanCombo.currentIndex]
@@ -256,8 +254,8 @@ KCM.SimpleKCM {
             Graph {
                 id: graph
                 Layout.fillWidth: true
-                Layout.minimumHeight: column.width / 3
-                Layout.maximumHeight: column.width / 3
+                Layout.minimumHeight: root.width / 3
+                Layout.maximumHeight: root.width / 3
                 Layout.topMargin: -Kirigami.Units.largeSpacing
 
                 data: history.points
