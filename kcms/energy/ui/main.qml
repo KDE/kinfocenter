@@ -114,7 +114,6 @@ KCM.SimpleKCM {
     }
 
     ColumnLayout {
-        id: column
         QQC2.ScrollView {
             id: tabView
             Layout.fillWidth: true
@@ -254,8 +253,8 @@ KCM.SimpleKCM {
             Graph {
                 id: graph
                 Layout.fillWidth: true
-                Layout.minimumHeight: column.width / 3
-                Layout.maximumHeight: column.width / 3
+                Layout.minimumHeight: root.width / 3
+                Layout.maximumHeight: root.width / 3
                 Layout.topMargin: -Kirigami.Units.largeSpacing
 
                 data: history.points
