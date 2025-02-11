@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-10 00:41+0000\n"
+"POT-Creation-Date: 2025-02-11 00:42+0000\n"
 "PO-Revision-Date: 2025-02-07 17:03+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -20,369 +20,369 @@ msgstr ""
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Lokalize 23.04.3\n"
 
-#: ui/main.qml:28
+#: ui/main.qml:29
 #, kde-format
 msgid "Battery"
 msgstr "Акумулятор"
 
-#: ui/main.qml:30
+#: ui/main.qml:31
 #, kde-format
 msgid "Rechargeable"
 msgstr "Перезаряджуваний"
 
-#: ui/main.qml:31
+#: ui/main.qml:32
 #, kde-format
 msgid "Charge state"
 msgstr "Стан зарядженості"
 
-#: ui/main.qml:32
+#: ui/main.qml:33
 #, kde-format
 msgid "Current charge"
 msgstr "Поточний рівень заряду"
 
-#: ui/main.qml:33
+#: ui/main.qml:34
 #, kde-format
 msgid "Health"
 msgstr "Стан"
 
-#: ui/main.qml:34
+#: ui/main.qml:35
 #, kde-format
 msgid "Charge Cycles"
 msgstr "Цикли заряджання-розряджання"
 
-#: ui/main.qml:35
+#: ui/main.qml:36
 #, kde-format
 msgid "Vendor"
 msgstr "Постачальник"
 
-#: ui/main.qml:36
+#: ui/main.qml:37
 #, kde-format
 msgid "Model"
 msgstr "Модель"
 
-#: ui/main.qml:37
+#: ui/main.qml:38
 #, kde-format
 msgid "Serial Number"
 msgstr "Серійний номер"
 
-#: ui/main.qml:38
+#: ui/main.qml:39
 #, kde-format
 msgid "Technology"
 msgstr "Технологія"
 
-#: ui/main.qml:42
+#: ui/main.qml:43
 #, kde-format
 msgid "Energy"
 msgstr "Енергія"
 
-#: ui/main.qml:44
+#: ui/main.qml:45
 #, kde-format
 msgctxt "current power draw from the battery in W"
 msgid "Consumption"
 msgstr "Споживання"
 
-#: ui/main.qml:44
+#: ui/main.qml:45
 #, kde-format
 msgctxt "Watt"
 msgid "W"
 msgstr "Вт"
 
-#: ui/main.qml:45
+#: ui/main.qml:46
 #, kde-format
 msgid "Voltage"
 msgstr "Напруга"
 
-#: ui/main.qml:45
+#: ui/main.qml:46
 #, kde-format
 msgctxt "Volt"
 msgid "V"
 msgstr "В"
 
-#: ui/main.qml:46
+#: ui/main.qml:47
 #, kde-format
 msgid "Remaining energy"
 msgstr "Лишилося"
 
-#: ui/main.qml:46 ui/main.qml:47 ui/main.qml:48
+#: ui/main.qml:47 ui/main.qml:48 ui/main.qml:49
 #, kde-format
 msgctxt "Watt-hours"
 msgid "Wh"
 msgstr "Вт-год."
 
-#: ui/main.qml:47
+#: ui/main.qml:48
 #, kde-format
 msgid "Last full charge"
 msgstr "Востаннє повністю заряджено"
 
-#: ui/main.qml:48
+#: ui/main.qml:49
 #, kde-format
 msgid "Original charge capacity"
 msgstr "Початкова місткість"
 
-#: ui/main.qml:52
+#: ui/main.qml:53
 #, kde-format
 msgid "Environment"
 msgstr "Середовище"
 
-#: ui/main.qml:54
+#: ui/main.qml:55
 #, kde-format
 msgid "Temperature"
 msgstr "Температура"
 
-#: ui/main.qml:54
+#: ui/main.qml:55
 #, kde-format
 msgctxt "Degree Celsius"
 msgid "°C"
 msgstr "°C"
 
-#: ui/main.qml:61
+#: ui/main.qml:62
 #, kde-format
 msgid "Not charging"
 msgstr "Не заряджається"
 
-#: ui/main.qml:62
+#: ui/main.qml:63
 #, kde-format
 msgid "Charging"
 msgstr "Заряджається"
 
-#: ui/main.qml:63
+#: ui/main.qml:64
 #, kde-format
 msgid "Discharging"
 msgstr "Розряджання"
 
-#: ui/main.qml:64
+#: ui/main.qml:65
 #, kde-format
 msgid "Fully charged"
 msgstr "Повністю заряджено"
 
-#: ui/main.qml:70
+#: ui/main.qml:71
 #, kde-format
 msgid "Lithium ion"
 msgstr "Літій-іонний"
 
-#: ui/main.qml:71
+#: ui/main.qml:72
 #, kde-format
 msgid "Lithium polymer"
 msgstr "Літій-полімерний"
 
-#: ui/main.qml:72
+#: ui/main.qml:73
 #, kde-format
 msgid "Lithium iron phosphate"
 msgstr "Літій-залізний фосфатний"
 
-#: ui/main.qml:73
+#: ui/main.qml:74
 #, kde-format
 msgid "Lead acid"
 msgstr "Свинцево-кислотний"
 
-#: ui/main.qml:74
+#: ui/main.qml:75
 #, kde-format
 msgid "Nickel cadmium"
 msgstr "Нікель-кадмієвий"
 
-#: ui/main.qml:75
+#: ui/main.qml:76
 #, kde-format
 msgid "Nickel metal hydride"
 msgstr "Нікель-метал-гідридний"
 
-#: ui/main.qml:76
+#: ui/main.qml:77
 #, kde-format
 msgid "Unknown technology"
 msgstr "Невідома технологія"
 
-#: ui/main.qml:88
-#, kde-format
-msgid "Last hour"
-msgstr "Попередня година"
-
-#: ui/main.qml:88
-#, kde-format
-msgid "Last 2 hours"
-msgstr "Попередні дві години"
-
-#: ui/main.qml:88
-#, kde-format
-msgid "Last 12 hours"
-msgstr "Попередні 12 годин"
-
-#: ui/main.qml:88
-#, kde-format
-msgid "Last 24 hours"
-msgstr "Попередні 24 години"
-
-#: ui/main.qml:88
-#, kde-format
-msgid "Last 48 hours"
-msgstr "Попередні 48 годин"
-
-#: ui/main.qml:88
-#, kde-format
-msgid "Last 7 days"
-msgstr "Попередні 7 днів"
-
-#: ui/main.qml:95
+#: ui/main.qml:93
 #, kde-format
 msgctxt "@info:status"
 msgid "No energy information available on this system"
 msgstr "У цій системі дані щодо енергоспоживання є недоступними"
 
-#: ui/main.qml:188
+#: ui/main.qml:186
 #, kde-format
 msgid "PDA Battery"
 msgstr "Акумулятори КПК"
 
-#: ui/main.qml:189
+#: ui/main.qml:187
 #, kde-format
 msgid "UPS Battery"
 msgstr "Акумулятори UPS"
 
-#: ui/main.qml:190
+#: ui/main.qml:188
 #, kde-format
 msgid "Internal Battery"
 msgstr "Вбудований акумулятор"
 
-#: ui/main.qml:191
+#: ui/main.qml:189
 #, kde-format
 msgid "Mouse Battery"
 msgstr "Акумулятор миші"
 
-#: ui/main.qml:192
+#: ui/main.qml:190
 #, kde-format
 msgid "Keyboard Battery"
 msgstr "Акумулятор клавіатури"
 
-#: ui/main.qml:193
+#: ui/main.qml:191
 #, kde-format
 msgid "Keyboard/Mouse Battery"
 msgstr "Акумулятор клавіатури або миші"
 
-#: ui/main.qml:194
+#: ui/main.qml:192
 #, kde-format
 msgid "Camera Battery"
 msgstr "Акумулятор фотоапарата"
 
-#: ui/main.qml:195
+#: ui/main.qml:193
 #, kde-format
 msgid "Phone Battery"
 msgstr "Акумулятор телефону"
 
-#: ui/main.qml:196
+#: ui/main.qml:194
 #, kde-format
 msgid "Monitor Battery"
 msgstr "Акумулятор монітора"
 
-#: ui/main.qml:197
+#: ui/main.qml:195
 #, kde-format
 msgid "Gaming Input Battery"
 msgstr "Акумулятор ігрового пульта"
 
-#: ui/main.qml:198
+#: ui/main.qml:196
 #, kde-format
 msgid "Bluetooth Battery"
 msgstr "Акумулятор Bluetooth"
 
-#: ui/main.qml:199
+#: ui/main.qml:197
 #, kde-format
 msgid "Tablet Battery"
 msgstr "Акумулятор планшета"
 
-#: ui/main.qml:200
+#: ui/main.qml:198
 #, kde-format
 msgid "Headphone Battery"
 msgstr "Акумулятор навушників"
 
-#: ui/main.qml:201
+#: ui/main.qml:199
 #, kde-format
 msgid "Headset Battery"
 msgstr "Акумулятор гарнітури"
 
-#: ui/main.qml:202
+#: ui/main.qml:200
 #, kde-format
 msgid "Touchpad Battery"
 msgstr "Акумулятор сенсорної панелі"
 
-#: ui/main.qml:203
+#: ui/main.qml:201
 #, kde-format
 msgid "Unknown Battery"
 msgstr "Невідомий акумулятор"
 
-#: ui/main.qml:231
+#: ui/main.qml:229
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr "%1% (заряджається)"
 
-#: ui/main.qml:232
+#: ui/main.qml:230
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:283
+#: ui/main.qml:264
 #, kde-format
 msgctxt "Graph axis label: power in Watts"
 msgid "%1 W"
 msgstr "%1 Вт"
 
-#: ui/main.qml:284
+#: ui/main.qml:265
 #, kde-format
 msgctxt "Graph axis label: percentage"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:302
+#: ui/main.qml:284
 #, kde-format
 msgctxt "@info:status"
 msgid "No history information for this time span"
 msgstr "Немає даних журналу для цього проміжку часу"
 
-#: ui/main.qml:315
+#: ui/main.qml:297
 #, kde-format
 msgid "Charge Percentage"
 msgstr "Відсоток заряду"
 
-#: ui/main.qml:325
+#: ui/main.qml:307
 #, kde-format
 msgid "Energy Consumption"
 msgstr "Витрачена енергія"
 
-#: ui/main.qml:340
+#: ui/main.qml:323
+#, kde-format
+msgid "Last hour"
+msgstr "Попередня година"
+
+#: ui/main.qml:324
+#, kde-format
+msgid "Last 2 hours"
+msgstr "Попередні дві години"
+
+#: ui/main.qml:325
+#, kde-format
+msgid "Last 12 hours"
+msgstr "Попередні 12 годин"
+
+#: ui/main.qml:326
+#, kde-format
+msgid "Last 24 hours"
+msgstr "Попередні 24 години"
+
+#: ui/main.qml:327
+#, kde-format
+msgid "Last 48 hours"
+msgstr "Попередні 48 годин"
+
+#: ui/main.qml:328
+#, kde-format
+msgid "Last 7 days"
+msgstr "Попередні 7 днів"
+
+#: ui/main.qml:336
 #, kde-format
 msgid "Timespan"
 msgstr "Часовий проміжок"
 
-#: ui/main.qml:341
+#: ui/main.qml:337
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "Часовий проміжок для показаних даних"
 
-#: ui/main.qml:347
+#: ui/main.qml:343
 #, kde-format
 msgid "Refresh"
 msgstr "Оновити"
 
-#: ui/main.qml:409
+#: ui/main.qml:398
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
-#: ui/main.qml:420
+#: ui/main.qml:404
 #, kde-format
 msgid "Yes"
 msgstr "Так"
 
-#: ui/main.qml:422
+#: ui/main.qml:404
 #, kde-format
 msgid "No"
 msgstr "Ні"
 
-#: ui/main.qml:442
+#: ui/main.qml:423
 #, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:444
+#: ui/main.qml:425
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"

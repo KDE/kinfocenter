@@ -33,11 +33,10 @@ msgid "Unknown Type"
 msgstr "Neznámý typ"
 
 #: GPUEntry.cpp:17
-#, fuzzy, kde-format
-#| msgid "Graphics Processor:"
+#, kde-format
 msgctxt "@label %1 is the GPU index number"
 msgid "Graphics Processor %1:"
-msgstr "Grafický procesor:"
+msgstr ""
 
 #: GPUEntry.cpp:18
 #, kde-format
