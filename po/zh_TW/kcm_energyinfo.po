@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-21 00:42+0000\n"
+"POT-Creation-Date: 2025-02-11 02:40+0000\n"
 "PO-Revision-Date: 2025-01-08 16:22+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -226,162 +226,162 @@ msgctxt "@info:status"
 msgid "No energy information available on this system"
 msgstr "此系統沒有可用的電量資訊"
 
-#: ui/main.qml:188
+#: ui/main.qml:187
 #, kde-format
 msgid "PDA Battery"
 msgstr "PDA 電池"
 
-#: ui/main.qml:189
+#: ui/main.qml:188
 #, kde-format
 msgid "UPS Battery"
 msgstr "UPS 電池"
 
-#: ui/main.qml:190
+#: ui/main.qml:189
 #, kde-format
 msgid "Internal Battery"
 msgstr "內部電池"
 
-#: ui/main.qml:191
+#: ui/main.qml:190
 #, kde-format
 msgid "Mouse Battery"
 msgstr "滑鼠電池"
 
-#: ui/main.qml:192
+#: ui/main.qml:191
 #, kde-format
 msgid "Keyboard Battery"
 msgstr "鍵盤電池"
 
-#: ui/main.qml:193
+#: ui/main.qml:192
 #, kde-format
 msgid "Keyboard/Mouse Battery"
 msgstr "鍵盤/滑鼠電池"
 
-#: ui/main.qml:194
+#: ui/main.qml:193
 #, kde-format
 msgid "Camera Battery"
 msgstr "相機電池"
 
-#: ui/main.qml:195
+#: ui/main.qml:194
 #, kde-format
 msgid "Phone Battery"
 msgstr "手機電池"
 
-#: ui/main.qml:196
+#: ui/main.qml:195
 #, kde-format
 msgid "Monitor Battery"
 msgstr "顯示器電池"
 
-#: ui/main.qml:197
+#: ui/main.qml:196
 #, kde-format
 msgid "Gaming Input Battery"
 msgstr "遊戲手柄電池"
 
-#: ui/main.qml:198
+#: ui/main.qml:197
 #, kde-format
 msgid "Bluetooth Battery"
 msgstr "藍牙電池"
 
-#: ui/main.qml:199
+#: ui/main.qml:198
 #, kde-format
 msgid "Tablet Battery"
 msgstr "平板電池"
 
-#: ui/main.qml:200
+#: ui/main.qml:199
 #, kde-format
 msgid "Headphone Battery"
 msgstr "耳機電池"
 
-#: ui/main.qml:201
+#: ui/main.qml:200
 #, kde-format
 msgid "Headset Battery"
 msgstr "耳麥電池"
 
-#: ui/main.qml:202
+#: ui/main.qml:201
 #, kde-format
 msgid "Touchpad Battery"
 msgstr "觸控板電池"
 
-#: ui/main.qml:203
+#: ui/main.qml:202
 #, kde-format
 msgid "Unknown Battery"
 msgstr "未知電池"
 
-#: ui/main.qml:231
+#: ui/main.qml:230
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr "%1% (充電中)"
 
-#: ui/main.qml:232
+#: ui/main.qml:231
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:281
+#: ui/main.qml:280
 #, kde-format
 msgctxt "Shorthand for Watts"
 msgid "W"
 msgstr "瓦特"
 
-#: ui/main.qml:281
+#: ui/main.qml:280
 #, kde-format
 msgctxt "literal percent sign"
 msgid "%"
 msgstr "%"
 
-#: ui/main.qml:307
+#: ui/main.qml:306
 #, kde-format
 msgid "Charge Percentage"
 msgstr "充電百分比"
 
-#: ui/main.qml:317
+#: ui/main.qml:316
 #, kde-format
 msgid "Energy Consumption"
 msgstr "能源消耗"
 
-#: ui/main.qml:332
+#: ui/main.qml:331
 #, kde-format
 msgid "Timespan"
 msgstr "時間區段"
 
-#: ui/main.qml:333
+#: ui/main.qml:332
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "要顯示資料的時間區段"
 
-#: ui/main.qml:339
+#: ui/main.qml:338
 #, kde-format
 msgid "Refresh"
 msgstr "重新整理"
 
-#: ui/main.qml:351
+#: ui/main.qml:350
 #, kde-format
 msgid "This type of history is currently not available for this device."
 msgstr "此裝置未提供這種型態的歷史紀錄。"
 
-#: ui/main.qml:409
+#: ui/main.qml:408
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
-#: ui/main.qml:420
+#: ui/main.qml:419
 #, kde-format
 msgid "Yes"
 msgstr "是"
 
-#: ui/main.qml:422
+#: ui/main.qml:421
 #, kde-format
 msgid "No"
 msgstr "否"
 
-#: ui/main.qml:442
+#: ui/main.qml:441
 #, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:444
+#: ui/main.qml:443
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
