@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-11 00:42+0000\n"
+"POT-Creation-Date: 2025-02-13 00:46+0000\n"
 "PO-Revision-Date: 2022-10-23 16:58+0700\n"
 "Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
@@ -302,13 +302,13 @@ msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:264
+#: ui/main.qml:268
 #, kde-format
 msgctxt "Graph axis label: power in Watts"
 msgid "%1 W"
 msgstr ""
 
-#: ui/main.qml:265
+#: ui/main.qml:269
 #, fuzzy, kde-format
 #| msgctxt "Battery charge percentage"
 #| msgid "%1%"
@@ -316,7 +316,7 @@ msgctxt "Graph axis label: percentage"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:284
+#: ui/main.qml:288
 #, fuzzy, kde-format
 #| msgctxt "@info:status"
 #| msgid "No energy information available on this system"
@@ -324,77 +324,77 @@ msgctxt "@info:status"
 msgid "No history information for this time span"
 msgstr "Tidak ada informasi energi yang tersedia pada sistem ini"
 
-#: ui/main.qml:297
+#: ui/main.qml:298
 #, kde-format
 msgid "Charge Percentage"
 msgstr "Persentase Beban"
 
-#: ui/main.qml:307
+#: ui/main.qml:308
 #, kde-format
 msgid "Energy Consumption"
 msgstr "Konsumsi Energi"
 
-#: ui/main.qml:323
+#: ui/main.qml:324
 #, kde-format
 msgid "Last hour"
 msgstr "Jam terakhir"
 
-#: ui/main.qml:324
+#: ui/main.qml:325
 #, kde-format
 msgid "Last 2 hours"
 msgstr "2 jam terakhir"
 
-#: ui/main.qml:325
+#: ui/main.qml:326
 #, kde-format
 msgid "Last 12 hours"
 msgstr "12 jam terakhir"
 
-#: ui/main.qml:326
+#: ui/main.qml:327
 #, kde-format
 msgid "Last 24 hours"
 msgstr "24 jam terakhir"
 
-#: ui/main.qml:327
+#: ui/main.qml:328
 #, kde-format
 msgid "Last 48 hours"
 msgstr "48 jam terakhir"
 
-#: ui/main.qml:328
+#: ui/main.qml:329
 #, kde-format
 msgid "Last 7 days"
 msgstr "7 hari terakhir"
 
-#: ui/main.qml:336
+#: ui/main.qml:337
 #, kde-format
 msgid "Timespan"
 msgstr "Rentang waktu"
 
-#: ui/main.qml:337
+#: ui/main.qml:338
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "Rentang waktu data untuk ditampilkan"
 
-#: ui/main.qml:343
+#: ui/main.qml:344
 #, kde-format
 msgid "Refresh"
 msgstr "Segarkan"
 
-#: ui/main.qml:398
+#: ui/main.qml:395
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
-#: ui/main.qml:404
+#: ui/main.qml:401
 #, kde-format
 msgid "Yes"
 msgstr "Ya"
 
-#: ui/main.qml:404
+#: ui/main.qml:401
 #, kde-format
 msgid "No"
 msgstr "Tidak"
 
-#: ui/main.qml:423
+#: ui/main.qml:420
 #, fuzzy, kde-format
 #| msgctxt "Battery charge percentage"
 #| msgid "%1%"
@@ -402,7 +402,7 @@ msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:425
+#: ui/main.qml:422
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"

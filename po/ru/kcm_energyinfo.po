@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-11 00:42+0000\n"
+"POT-Creation-Date: 2025-02-13 00:46+0000\n"
 "PO-Revision-Date: 2023-12-17 21:49+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -288,13 +288,13 @@ msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:264
+#: ui/main.qml:268
 #, kde-format
 msgctxt "Graph axis label: power in Watts"
 msgid "%1 W"
 msgstr ""
 
-#: ui/main.qml:265
+#: ui/main.qml:269
 #, fuzzy, kde-format
 #| msgctxt "Battery charge percentage"
 #| msgid "%1%"
@@ -302,7 +302,7 @@ msgctxt "Graph axis label: percentage"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:284
+#: ui/main.qml:288
 #, fuzzy, kde-format
 #| msgctxt "@info:status"
 #| msgid "No energy information available on this system"
@@ -310,83 +310,83 @@ msgctxt "@info:status"
 msgid "No history information for this time span"
 msgstr "Информация об энергопотреблении недоступна"
 
-#: ui/main.qml:297
+#: ui/main.qml:298
 #, kde-format
 msgid "Charge Percentage"
 msgstr "Процент заряда"
 
-#: ui/main.qml:307
+#: ui/main.qml:308
 #, kde-format
 msgid "Energy Consumption"
 msgstr "Энергопотребление"
 
-#: ui/main.qml:323
+#: ui/main.qml:324
 #, kde-format
 msgid "Last hour"
 msgstr "Последний час"
 
-#: ui/main.qml:324
+#: ui/main.qml:325
 #, kde-format
 msgid "Last 2 hours"
 msgstr "Последние 2 часа"
 
-#: ui/main.qml:325
+#: ui/main.qml:326
 #, kde-format
 msgid "Last 12 hours"
 msgstr "Последние 12 часов"
 
-#: ui/main.qml:326
+#: ui/main.qml:327
 #, kde-format
 msgid "Last 24 hours"
 msgstr "Последние 24 часа"
 
-#: ui/main.qml:327
+#: ui/main.qml:328
 #, kde-format
 msgid "Last 48 hours"
 msgstr "Последние 48 часов"
 
-#: ui/main.qml:328
+#: ui/main.qml:329
 #, kde-format
 msgid "Last 7 days"
 msgstr "Последние 7 дней"
 
-#: ui/main.qml:336
+#: ui/main.qml:337
 #, kde-format
 msgid "Timespan"
 msgstr "Промежуток времени"
 
-#: ui/main.qml:337
+#: ui/main.qml:338
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "Показывать данные для этого промежутка времени"
 
-#: ui/main.qml:343
+#: ui/main.qml:344
 #, kde-format
 msgid "Refresh"
 msgstr "Обновить"
 
-#: ui/main.qml:398
+#: ui/main.qml:395
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
-#: ui/main.qml:404
+#: ui/main.qml:401
 #, kde-format
 msgid "Yes"
 msgstr "Да"
 
-#: ui/main.qml:404
+#: ui/main.qml:401
 #, kde-format
 msgid "No"
 msgstr "Нет"
 
-#: ui/main.qml:423
+#: ui/main.qml:420
 #, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:425
+#: ui/main.qml:422
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-11 00:42+0000\n"
+"POT-Creation-Date: 2025-02-13 00:46+0000\n"
 "PO-Revision-Date: 2025-02-08 00:06+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -287,101 +287,101 @@ msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr "%1 %"
 
-#: ui/main.qml:264
+#: ui/main.qml:268
 #, kde-format
 msgctxt "Graph axis label: power in Watts"
 msgid "%1 W"
 msgstr "%1 W"
 
-#: ui/main.qml:265
+#: ui/main.qml:269
 #, kde-format
 msgctxt "Graph axis label: percentage"
 msgid "%1%"
 msgstr "%1 %"
 
-#: ui/main.qml:284
+#: ui/main.qml:288
 #, kde-format
 msgctxt "@info:status"
 msgid "No history information for this time span"
 msgstr "No hay información histórica para este intervalo de tiempo"
 
-#: ui/main.qml:297
+#: ui/main.qml:298
 #, kde-format
 msgid "Charge Percentage"
 msgstr "Porcentaje de carga"
 
-#: ui/main.qml:307
+#: ui/main.qml:308
 #, kde-format
 msgid "Energy Consumption"
 msgstr "Consumo de energía"
 
-#: ui/main.qml:323
+#: ui/main.qml:324
 #, kde-format
 msgid "Last hour"
 msgstr "Última hora"
 
-#: ui/main.qml:324
+#: ui/main.qml:325
 #, kde-format
 msgid "Last 2 hours"
 msgstr "Últimas 2 horas"
 
-#: ui/main.qml:325
+#: ui/main.qml:326
 #, kde-format
 msgid "Last 12 hours"
 msgstr "Últimas 12 horas"
 
-#: ui/main.qml:326
+#: ui/main.qml:327
 #, kde-format
 msgid "Last 24 hours"
 msgstr "Últimas 24 horas"
 
-#: ui/main.qml:327
+#: ui/main.qml:328
 #, kde-format
 msgid "Last 48 hours"
 msgstr "Últimas 48 horas"
 
-#: ui/main.qml:328
+#: ui/main.qml:329
 #, kde-format
 msgid "Last 7 days"
 msgstr "Últimos 7 días"
 
-#: ui/main.qml:336
+#: ui/main.qml:337
 #, kde-format
 msgid "Timespan"
 msgstr "Intervalo de tiempo"
 
-#: ui/main.qml:337
+#: ui/main.qml:338
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "Intervalo de tiempo de los datos a mostrar"
 
-#: ui/main.qml:343
+#: ui/main.qml:344
 #, kde-format
 msgid "Refresh"
 msgstr "Refrescar"
 
-#: ui/main.qml:398
+#: ui/main.qml:395
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
 
-#: ui/main.qml:404
+#: ui/main.qml:401
 #, kde-format
 msgid "Yes"
 msgstr "Sí"
 
-#: ui/main.qml:404
+#: ui/main.qml:401
 #, kde-format
 msgid "No"
 msgstr "No"
 
-#: ui/main.qml:423
+#: ui/main.qml:420
 #, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1 %"
 
-#: ui/main.qml:425
+#: ui/main.qml:422
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
