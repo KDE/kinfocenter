@@ -4,6 +4,7 @@
 #include "GPUEntryFactory.h"
 
 #include <QDebug>
+#include <QFile>
 #include <QGuiApplication>
 #include <QJsonArray>
 #include <QJsonDocument>
@@ -41,14 +42,47 @@ constexpr Output narrow(Input i)
     return o;
 }
 
-QJsonDocument readFromProcess(const QString &executable, std::optional<int> deviceIndex = std::nullopt)
+bool isNvidiaLoaded()
+{
+    QFile file("/proc/modules");
+    if (!file.open(QIODevice::ReadOnly)) {
+        qWarning() << "Failed to open /proc/modules";
+        return false;
+    }
+
+    while (!file.atEnd()) {
+        const auto line = file.readLine();
+        if (line.startsWith("nvidia"_L1)) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+QJsonDocument readFromProcess(const QString &executable, int deviceIndex)
 {
     QProcess process;
-    if (deviceIndex.has_value() && deviceIndex.value() > 0) {
-        auto processEnvironment = QProcessEnvironment::systemEnvironment();
-        processEnvironment.insert("DRI_PRIME", QString::number(deviceIndex.value()));
-        process.setProcessEnvironment(processEnvironment);
+
+    auto processEnvironment = QProcessEnvironment::systemEnvironment();
+    if (deviceIndex > 0) {
+        if (isNvidiaLoaded()) {
+            // nvidia docs are unclear if __NV_PRIME_RENDER_OFFLOAD is a bool or an index. We only support 0 and 1 until someone turns up with a 3rd gpu, so
+            // we can test if it is an index.
+            const auto supportedIndex = deviceIndex <= 1;
+            Q_ASSERT(supportedIndex);
+            if (!supportedIndex) {
+                qWarning() << "Unsupported device index" << deviceIndex;
+                return {};
+            }
+            processEnvironment.insert(u"__NV_PRIME_RENDER_OFFLOAD"_s, QString::number(deviceIndex));
+            processEnvironment.insert(u"__GLX_VENDOR_LIBRARY_NAME"_s, u"nvidia"_s);
+        } else { // assume mesa
+            processEnvironment.insert("DRI_PRIME", QString::number(deviceIndex));
+        }
     }
+    process.setProcessEnvironment(processEnvironment);
+
     process.setProcessChannelMode(QProcess::ForwardedErrorChannel);
     process.setProgram(executable);
     process.setArguments({u"--platform"_s, qGuiApp->platformName()});
