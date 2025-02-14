@@ -203,7 +203,7 @@ std::optional<std::vector<GPUEntry::Device>> vulkanGPUs()
     auto devices = vulkanDevices();
 
     if (!devicesAddUpAfterStripping(devices, false)) {
-        qWarning() << "GPU count mismatch (from vulkan)" << devices.size() << drmDeviceCount();
+        qWarning() << "GPU count mismatch (from vulkan). Are you maybe missing vulkan drivers?" << devices.size() << drmDeviceCount();
         return {};
     }
 
