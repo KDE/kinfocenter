@@ -6,14 +6,14 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-16 00:48+0000\n"
-"PO-Revision-Date: 2015-04-30 22:59+0200\n"
-"Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
+"PO-Revision-Date: 2025-02-15 19:40+0100\n"
+"Last-Translator: Martin Hansen <mh306602@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 24.12.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
@@ -22,18 +22,18 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Bjørn Steensrud"
+msgstr "Bjørn Steensrud, Martin Hansen"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "bjornst@skogkatt.homelinux.org"
+msgstr "bjornst@skogkatt.homelinux.org,mh306602@gmail.com"
 
 #: devicelisting.cpp:41
 #, kde-format
 msgctxt "Device Listing Whats This"
 msgid "Shows all the devices that are currently listed."
-msgstr "Viser alle enheter som er listet nå."
+msgstr "Viser alle enheter som er lista nå."
 
 #: devicelisting.cpp:44
 #, kde-format
@@ -43,7 +43,7 @@ msgstr "Enheter"
 #: devicelisting.cpp:57
 #, kde-format
 msgid "Collapse All"
-msgstr "Fold sammen alle"
+msgstr "Fold alle"
 
 #: devicelisting.cpp:60
 #, kde-format
@@ -80,7 +80,7 @@ msgstr "kcmdevinfo"
 #: devinfo.cpp:28
 #, kde-format
 msgid "Device Viewer"
-msgstr ""
+msgstr "Enhetsviser"
 
 #: devinfo.cpp:28
 #, kde-format
@@ -96,7 +96,7 @@ msgstr "UDI: "
 #, kde-format
 msgctxt "Udi Whats This"
 msgid "Shows the current device's UDI (Unique Device Identifier)"
-msgstr "Viser UDI for gjeldende enhet (Unique Device Identifier)"
+msgstr "Viser UDI (Unique Device Identifier) for gjeldende enhet"
 
 #: infopanel.cpp:20
 #, kde-format
@@ -116,12 +116,12 @@ msgid ""
 "Solid Based Device Viewer Module"
 msgstr ""
 "\n"
-"Solid-basert modul for enhetsvising"
+"Solid-basert modul for enhetsvisning"
 
 #: infopanel.cpp:119
 #, kde-format
 msgid "Description: "
-msgstr ""
+msgstr "Beskrivelse: "
 
 #: infopanel.cpp:121
 #, kde-format
@@ -194,22 +194,22 @@ msgstr "Intel SSE3"
 #: soldevicetypes.cpp:88
 #, kde-format
 msgid "Intel SSSE3"
-msgstr ""
+msgstr "Intel SSSE3"
 
 #: soldevicetypes.cpp:91
 #, kde-format
 msgid "Intel SSE4.1"
-msgstr ""
+msgstr "Intel SSE4.1"
 
 #: soldevicetypes.cpp:94
 #, kde-format
 msgid "Intel SSE4.2"
-msgstr ""
+msgstr "Intel SSE4.2"
 
 #: soldevicetypes.cpp:97
 #, kde-format
 msgid "AMD 3DNow!"
-msgstr ""
+msgstr "AMD 3DNow!"
 
 #: soldevicetypes.cpp:100
 #, kde-format
@@ -225,7 +225,7 @@ msgstr "Ingen"
 #: soldevicetypes.cpp:106
 #, kde-format
 msgid "Processor Number: "
-msgstr "Prosessor nummer: "
+msgstr "Prosessornummer: "
 
 #: soldevicetypes.cpp:106
 #, kde-format
@@ -240,7 +240,7 @@ msgstr "Støttede instruksjonssett: "
 #: soldevicetypes.cpp:132
 #, kde-format
 msgid "Storage Drives"
-msgstr "Lagringsdrev"
+msgstr "Lagringsstasjoner"
 
 #: soldevicetypes.cpp:151
 #, kde-format
@@ -250,7 +250,7 @@ msgstr "Harddisk"
 #: soldevicetypes.cpp:154
 #, kde-format
 msgid "Compact Flash Reader"
-msgstr "Kompakt flash-leser"
+msgstr "CompactFlash-leser"
 
 #: soldevicetypes.cpp:157
 #, kde-format
@@ -260,27 +260,27 @@ msgstr "Smart media-leser"
 #: soldevicetypes.cpp:160
 #, kde-format
 msgid "SD/MMC Reader"
-msgstr "SD / MMC kortleser"
+msgstr "SD/MMC-kortleser"
 
 #: soldevicetypes.cpp:163
 #, kde-format
 msgid "Optical Drive"
-msgstr "Optisk drev"
+msgstr "Optisk stasjon"
 
 #: soldevicetypes.cpp:166
 #, kde-format
 msgid "Memory Stick Reader"
-msgstr "Minnepenn-leser"
+msgstr "Minnepennleser"
 
 #: soldevicetypes.cpp:169
 #, kde-format
 msgid "xD Reader"
-msgstr "xD-kortleser"
+msgstr "xD-leser"
 
 #: soldevicetypes.cpp:172
 #, kde-format
 msgid "Unknown Drive"
-msgstr "Ukjent drev"
+msgstr "Ukjent stasjon"
 
 #: soldevicetypes.cpp:192
 #, kde-format
@@ -373,7 +373,7 @@ msgstr "Filsystemtype: "
 #: soldevicetypes.cpp:275
 #, kde-format
 msgid "Label: "
-msgstr "Etikett:"
+msgstr "Merkelapp:"
 
 #: soldevicetypes.cpp:276
 #, kde-format
@@ -414,12 +414,12 @@ msgstr "%1 ledig av %2 (%3% brukt)"
 #: soldevicetypes.cpp:303
 #, kde-format
 msgid "No data available"
-msgstr "Ingen data tilgjengelige"
+msgstr "Ingen data tilgjengelig"
 
 #: soldevicetypes.cpp:330
 #, kde-format
 msgid "Multimedia Players"
-msgstr "Multimedia-spillere"
+msgstr "Multimediaspillere"
 
 #: soldevicetypes.cpp:349 soldevicetypes.cpp:388
 #, kde-format
@@ -485,13 +485,13 @@ msgstr "Telefon"
 #, kde-format
 msgctxt "Screen"
 msgid "Monitor"
-msgstr ""
+msgstr "Skjerm"
 
 #: soldevicetypes.cpp:457
 #, kde-format
 msgctxt "Wireless game pad or joystick battery"
 msgid "Gaming Input"
-msgstr ""
+msgstr "Spillkontroller"
 
 #: soldevicetypes.cpp:460
 #, kde-format
@@ -512,7 +512,7 @@ msgstr "Lader ut"
 #: soldevicetypes.cpp:472
 #, kde-format
 msgid "Fully Charged"
-msgstr "Fulladet"
+msgstr "Ferdig oppladet"
 
 #: soldevicetypes.cpp:475
 #, kde-format
@@ -527,9 +527,9 @@ msgstr "Batteritype: "
 #: soldevicetypes.cpp:478
 #, kde-format
 msgid "Charge Status: "
-msgstr "Ladingsstatus: "
+msgstr "Ladestatus: "
 
 #: soldevicetypes.cpp:478
 #, kde-format
 msgid "Charge Percent: "
-msgstr ""
+msgstr "Ladingsprosent: "

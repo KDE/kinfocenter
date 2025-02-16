@@ -6,15 +6,15 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-16 00:48+0000\n"
-"PO-Revision-Date: 2015-04-30 21:53+0200\n"
-"Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
+"PO-Revision-Date: 2025-02-15 19:39+0100\n"
+"Last-Translator: Martin Hansen <mh306602@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 24.12.2\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -22,12 +22,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Bjørn Steensrud"
+msgstr "Bjørn Steensrud, Martin Hansen"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "bjornst@skogkatt.homelinux.org"
+msgstr "bjornst@skogkatt.homelinux.org,mh306602@gmail.com"
 
 #: kcm.cpp:41
 #, kde-format
@@ -42,7 +42,7 @@ msgstr "Kai Uwe Broulik"
 #: package/contents/ui/main.qml:22
 #, kde-format
 msgid "This module lets you see energy information and statistics."
-msgstr ""
+msgstr "Denne modulen lar deg se informasjon og statistikk over energiforbruk."
 
 #: package/contents/ui/main.qml:49
 #, kde-format
@@ -57,12 +57,12 @@ msgstr "Oppladbar"
 #: package/contents/ui/main.qml:52
 #, kde-format
 msgid "Charge state"
-msgstr "Ladingstilstand"
+msgstr "Ladestatus"
 
 #: package/contents/ui/main.qml:53
 #, kde-format
 msgid "Current charge"
-msgstr ""
+msgstr "Gjeldende ladenivå"
 
 #: package/contents/ui/main.qml:53 package/contents/ui/main.qml:54
 #, kde-format
@@ -72,7 +72,7 @@ msgstr "%"
 #: package/contents/ui/main.qml:54
 #, kde-format
 msgid "Health"
-msgstr ""
+msgstr "Helse"
 
 #: package/contents/ui/main.qml:55
 #, kde-format
@@ -92,7 +92,7 @@ msgstr "Serienummer"
 #: package/contents/ui/main.qml:58
 #, kde-format
 msgid "Technology"
-msgstr ""
+msgstr "Teknologi"
 
 #: package/contents/ui/main.qml:62
 #, kde-format
@@ -103,13 +103,13 @@ msgstr "Energi"
 #, kde-format
 msgctxt "current power draw from the battery in W"
 msgid "Consumption"
-msgstr ""
+msgstr "Energiforbruk"
 
 #: package/contents/ui/main.qml:64
 #, kde-format
 msgctxt "Watt"
 msgid "W"
-msgstr ""
+msgstr "W"
 
 #: package/contents/ui/main.qml:65
 #, kde-format
@@ -125,7 +125,7 @@ msgstr "V"
 #: package/contents/ui/main.qml:66
 #, kde-format
 msgid "Remaining energy"
-msgstr ""
+msgstr "Gjenværende strøm"
 
 #: package/contents/ui/main.qml:66 package/contents/ui/main.qml:67
 #: package/contents/ui/main.qml:68
@@ -137,12 +137,12 @@ msgstr "Wh"
 #: package/contents/ui/main.qml:67
 #, kde-format
 msgid "Last full charge"
-msgstr ""
+msgstr "Siste fullading"
 
 #: package/contents/ui/main.qml:68
 #, kde-format
 msgid "Original charge capacity"
-msgstr ""
+msgstr "Opprinnelig ladekapasitet"
 
 #: package/contents/ui/main.qml:72
 #, kde-format
@@ -178,42 +178,42 @@ msgstr "Lader ut"
 #: package/contents/ui/main.qml:84
 #, kde-format
 msgid "Fully charged"
-msgstr "Ferdig ladet"
+msgstr "Ferdig oppladet"
 
 #: package/contents/ui/main.qml:90
 #, kde-format
 msgid "Lithium ion"
-msgstr ""
+msgstr "Litium ion"
 
 #: package/contents/ui/main.qml:91
 #, kde-format
 msgid "Lithium polymer"
-msgstr ""
+msgstr "Litium polymer"
 
 #: package/contents/ui/main.qml:92
 #, kde-format
 msgid "Lithium iron phosphate"
-msgstr ""
+msgstr "Litium jernfosfat"
 
 #: package/contents/ui/main.qml:93
 #, kde-format
 msgid "Lead acid"
-msgstr ""
+msgstr "Bly-syre"
 
 #: package/contents/ui/main.qml:94
 #, kde-format
 msgid "Nickel cadmium"
-msgstr ""
+msgstr "Nikkel-kadmium"
 
 #: package/contents/ui/main.qml:95
 #, kde-format
 msgid "Nickel metal hydride"
-msgstr ""
+msgstr "Nikkel-metallhydrid"
 
 #: package/contents/ui/main.qml:96
 #, kde-format
 msgid "Unknown technology"
-msgstr ""
+msgstr "Ukjent teknologi"
 
 #: package/contents/ui/main.qml:103
 #, kde-format
@@ -249,59 +249,59 @@ msgstr "Siste 7 dager"
 #, kde-format
 msgctxt "@info:status"
 msgid "No energy information available on this system"
-msgstr ""
+msgstr "Det finnes ikke informasjon om strømkilden til dette systemet"
 
 #: package/contents/ui/main.qml:175
 #, kde-format
 msgid "Internal battery"
-msgstr ""
+msgstr "Internt batteri"
 
 #: package/contents/ui/main.qml:176
 #, kde-format
 msgid "UPS battery"
-msgstr ""
+msgstr "UPS-batteri"
 
 #: package/contents/ui/main.qml:177
 #, kde-format
 msgid "Monitor battery"
-msgstr ""
+msgstr "Skjermbatteri"
 
 #: package/contents/ui/main.qml:178
 #, kde-format
 msgid "Mouse battery"
-msgstr ""
+msgstr "Musebatteri"
 
 #: package/contents/ui/main.qml:179
 #, kde-format
 msgid "Keyboard battery"
-msgstr ""
+msgstr "Tastaturbatteri"
 
 #: package/contents/ui/main.qml:180
 #, kde-format
 msgid "PDA battery"
-msgstr ""
+msgstr "PDA-batteri"
 
 #: package/contents/ui/main.qml:181
 #, kde-format
 msgid "Phone battery"
-msgstr ""
+msgstr "Telefonbatteri"
 
 #: package/contents/ui/main.qml:182
 #, kde-format
 msgid "Unknown battery"
-msgstr ""
+msgstr "Ukjent batteri"
 
 #: package/contents/ui/main.qml:200
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
-msgstr ""
+msgstr "%1% (lader)"
 
 #: package/contents/ui/main.qml:201
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #: package/contents/ui/main.qml:250
 #, kde-format
@@ -318,7 +318,7 @@ msgstr "%"
 #: package/contents/ui/main.qml:276
 #, kde-format
 msgid "Charge Percentage"
-msgstr "Prosent ladet"
+msgstr "Ladingsprosent"
 
 #: package/contents/ui/main.qml:286
 #, kde-format
@@ -338,12 +338,12 @@ msgstr "Vis data for tidsrom"
 #: package/contents/ui/main.qml:308
 #, kde-format
 msgid "Refresh"
-msgstr "Frisk opp"
+msgstr "Oppdater"
 
 #: package/contents/ui/main.qml:320
 #, kde-format
 msgid "This type of history is currently not available for this device."
-msgstr "Denne sorten historie er nå ikke tilgjengelig for denne enheten."
+msgstr "Denne type historie er ikke tilgjengelig for denne enheten."
 
 #: package/contents/ui/main.qml:378
 #, kde-format
