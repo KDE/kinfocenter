@@ -1,0 +1,92 @@
+# Translation of kinfocenter to Norwegian Bokmål
+#
+# SPDX-FileCopyrightText: 2025 Martin Hansen <mh306602@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kinfocenter\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-01-30 02:33+0000\n"
+"PO-Revision-Date: 2025-02-12 19:35+0100\n"
+"Last-Translator: Martin Hansen <mh306602@gmail.com>\n"
+"Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 24.12.2\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#: CommandOutputContext.cpp:121
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"The <command>%1</command> tool is required to display this page, but could "
+"not be found"
+msgstr ""
+"Trenger verktøyet <command>%1</command> for å vise denne siden, men det er "
+"ikke tilgjengelig."
+
+#: CommandOutputContext.cpp:123
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"You can search for it and install it using your package manager.<nl/>Then "
+"please report this packaging issue to your distribution."
+msgstr ""
+"Du kan søke etter og installere det med pakkebehandleren<nl/>Meld fra om "
+"denne pakkefeilen til distribusjonen din."
+
+#: CommandOutputContext.cpp:136
+#, kde-kuit-format
+msgctxt "@info"
+msgid "The <command>%1</command> tool crashed while generating page content"
+msgstr "Verktøyet <command>%1</command> krasja ved generering av sideinnholdet"
+
+#: CommandOutputContext.cpp:137
+#, kde-kuit-format
+msgctxt "@Info"
+msgid ""
+"Try again later. If keeps happening, please report the crash to your "
+"distribution."
+msgstr ""
+"Prøv på nytt. Hvis dette skjer flere ganger, meld fra om feilen til "
+"distribusjonen din."
+
+#: qml/CommandOutputKCM.qml:88
+#, kde-format
+msgctxt "@info"
+msgid "No text matching the filter"
+msgstr "Ingen tekst samsvarer med filteret"
+
+#: qml/CommandOutputKCM.qml:93
+#, kde-format
+msgctxt "@info the KCM has no data to display"
+msgid "No data available"
+msgstr "Ingen data tilgjengelig"
+
+#: qml/CommandOutputKCM.qml:106
+#, kde-format
+msgid "Report this issue"
+msgstr "Meld fra om feilen"
+
+#: qml/CommandOutputKCM.qml:127
+#, kde-format
+msgctxt "@action:button copies all displayed text"
+msgid "Copy to Clipboard"
+msgstr "Kopier til utklippstavla"
+
+#: qml/CommandOutputKCM.qml:138
+#, kde-format
+msgctxt "@label placeholder text to filter for something"
+msgid "Filter…"
+msgstr "Filtrer …"
+
+#: qml/CommandOutputKCM.qml:140
+#, kde-format
+msgctxt "accessible name for filter input"
+msgid "Filter"
+msgstr "Filter"
