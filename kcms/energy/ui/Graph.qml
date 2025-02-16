@@ -7,6 +7,7 @@
  */
 
 import QtQuick
+import org.kde.kirigami as Kirigami
 
 /**
  * We need to draw a graph, all other libs are not suitable as we are basically
@@ -43,6 +44,17 @@ Canvas
 
     onDataChanged: {
         canvas.requestPaint();
+    }
+
+    onXDurationChanged: {
+        canvas.requestPaint();
+    }
+
+    Behavior on xDuration {
+        NumberAnimation {
+            duration: Kirigami.Units.longDuration
+            easing.type: Easing.OutQuad
+        }
     }
 
     function scalePoint(point : point, currentUnixTime : int) : point {

@@ -263,7 +263,7 @@ KCM.SimpleKCM {
                 id: graph
 
                 data: history.points
-                xDuration: history.duration
+                xDuration: timespanCombo.duration
 
                 yLabel: root.historyType == HistoryModel.RateType ? ( value => i18nc("Graph axis label: power in Watts","%1 W", value) )
                                                                   : ( value => i18nc("Graph axis label: percentage","%1%", value) )
