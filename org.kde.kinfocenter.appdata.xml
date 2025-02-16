@@ -36,6 +36,7 @@
   <name xml:lang="ko">정보 센터</name>
   <name xml:lang="lt">Informacinis centras</name>
   <name xml:lang="lv">Informācijas centrs</name>
+  <name xml:lang="nb">Informasjonssenter</name>
   <name xml:lang="nl">Informatiecentrum</name>
   <name xml:lang="nn">Informasjonssenter</name>
   <name xml:lang="pa">ਜਾਣਕਾਰੀ ਸੈਂਟਰ</name>
@@ -84,6 +85,7 @@
   <summary xml:lang="ko">시스템 정보를 한 눈에 보기</summary>
   <summary xml:lang="lt">Centralizuota ir patogi sistemos informacijos apžvalga</summary>
   <summary xml:lang="lv">Centralizēts un ērts sistēmas informācijas pārskats</summary>
+  <summary xml:lang="nb">Sentralisert og praktisk oversikt over systeminformasjon</summary>
   <summary xml:lang="nl">Gecentraliseerd en prettig overzicht van systeeminformatie</summary>
   <summary xml:lang="nn">Sentralisert og praktisk oversikt over systeminformasjon</summary>
   <summary xml:lang="pa">ਸਿਸਟਮ ਜਾਣਕਾਰੀ ਲੈਣ ਲਈ ਇੱਕ ਸਾਂਝੀ ਅਤੇ ਸੌਖਾਲੀ ਥਾਂ ਹੈ</summary>
@@ -133,6 +135,7 @@
     <p xml:lang="ko">정보 센터에서는 시스템과 데스크톱 환경 정보를 모아서 표시합니다.</p>
     <p xml:lang="lt">Informacinis centras pateikia jums centralizuotą ir patogią jūsų sistemos ir darbalaukio aplinkos apžvalgą.</p>
     <p xml:lang="lv">Informācijas centrs sniedz centralizētu un ērtu pārskatu par jūsu sistēmu un darbvirsmas vidi.</p>
+    <p xml:lang="nb">Informasjonssenteret gir sentralisert og praktisk oversikt over systemet og skrivebordsmiljøet.</p>
     <p xml:lang="nl">Het informatiecentrum biedt u een gecentraliseerd en handig overzicht van uw systeem en bureaubladomgeving.</p>
     <p xml:lang="nn">Informasjonssenteret gjev sentralisert og praktisk oversikt over systemet og skrivebordsmiljøet.</p>
     <p xml:lang="pl">Ośrodek danych zapewnia skupiony w jednym miejscu i wygodny przegląd systemu i środowiska pulpitu.</p>
@@ -182,6 +185,7 @@
     <p xml:lang="ko">정보 센터는 여러 모듈로 구성되어 있습니다. 개별 모듈은 개별 앱이지만 정보 센터에서 한 자리에서 편하게 볼 수 있도록 모아 줍니다.</p>
     <p xml:lang="lt">Informacinį centrą sudaro daug modulių. Kiekvienas modulis yra atskira programa, tačiau informacinis centras sutelkia visas šias programas į patogią vietą.</p>
     <p xml:lang="lv">Informācijas centru veido vairāki moduļi. Katrs modulis ir atsevišķa programma, kuras visas ir apvienotas ērtai piekļuvei.</p>
+    <p xml:lang="nb">Informasjonssenteret består av flere moduler. Hver modul er et eget program, men informasjonssenteret samler alle disse programmene for enkel tilgang.</p>
     <p xml:lang="nl">Het informatiecentrum bestaat uit verschillende modules. Elke module is een apart programma, maar het informatiecentrum organiseert al deze programma's in een handige locatie.</p>
     <p xml:lang="nn">Informasjonssenteret består av fleire modular. Kvar modul er eit eige program, men informasjonssenteret samlar alle desse programma for enkel tilgang.</p>
     <p xml:lang="pl">Ośrodek danych składa się z wielu części. Każda część jest osobnym programem, lecz ośrodek danych zbiera je wszystkie w jednym miejscu.</p>
