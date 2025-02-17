@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-13 00:46+0000\n"
-"PO-Revision-Date: 2024-03-09 19:08+0100\n"
+"PO-Revision-Date: 2025-02-16 12:40+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.12.2\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -45,9 +45,9 @@ msgid "Health"
 msgstr "Helse"
 
 #: ui/main.qml:35
-#, fuzzy, kde-format
+#, kde-format
 msgid "Charge Cycles"
-msgstr "Ladestatus"
+msgstr "Ladesyklusar"
 
 #: ui/main.qml:36
 #, kde-format
@@ -291,23 +291,19 @@ msgstr "%1 %"
 #, kde-format
 msgctxt "Graph axis label: power in Watts"
 msgid "%1 W"
-msgstr ""
+msgstr "%1 W"
 
 #: ui/main.qml:269
-#, fuzzy, kde-format
-#| msgctxt "Battery charge percentage"
-#| msgid "%1%"
+#, kde-format
 msgctxt "Graph axis label: percentage"
 msgid "%1%"
 msgstr "%1 %"
 
 #: ui/main.qml:288
-#, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "No energy information available on this system"
+#, kde-format
 msgctxt "@info:status"
 msgid "No history information for this time span"
-msgstr "Det finst ikkje informasjon om straumkjelda til dette systemet"
+msgstr "Ingen historikk for dette tidsrommet"
 
 #: ui/main.qml:298
 #, kde-format
