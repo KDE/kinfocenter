@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-11 02:40+0000\n"
-"PO-Revision-Date: 2025-02-02 16:17+0530\n"
+"PO-Revision-Date: 2025-02-16 16:36+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.12.1\n"
+"X-Generator: Lokalize 24.12.2\n"
 
 #: ui/main.qml:45
 #, kde-format
@@ -226,12 +226,12 @@ msgstr "இந்த கணினியில் ஆற்றல் குறி
 #: ui/main.qml:187
 #, kde-format
 msgid "PDA Battery"
-msgstr ""
+msgstr "PDA மின்கலம்"
 
 #: ui/main.qml:188
 #, kde-format
 msgid "UPS Battery"
-msgstr ""
+msgstr "UPS மின்கலம்"
 
 #: ui/main.qml:189
 #, kde-format
