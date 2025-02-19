@@ -80,7 +80,9 @@ KCMUtils.SimpleKCM {
                 id: entryComponent
                 RowLayout {
                     Kirigami.FormData.label: entry.localizedLabel()
-                    Kirigami.FormData.labelAlignment: Qt.AlignTop
+                    Kirigami.FormData.labelAlignment: idealAlignment
+                    Layout.alignment: idealAlignment
+                    readonly property int idealAlignment: valueLabel.lineCount > 1 ? Qt.AlignTop : Qt.AlignVCenter // looks tidier this way
                     readonly property bool hidden: entry.isHidden()
                     readonly property string hint: entry.localizedHint().text
                     readonly property color hintColorForeground: {
@@ -121,7 +123,6 @@ KCMUtils.SimpleKCM {
 
                     Kirigami.SelectableLabel {
                         id: valueLabel
-                        Layout.alignment: Qt.AlignTop
                         visible: !hidden
                         text: entry.localizedValue()
                         Keys.onShortcutOverride: event => {
