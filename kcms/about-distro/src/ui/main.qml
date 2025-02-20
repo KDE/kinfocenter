@@ -136,25 +136,34 @@ KCMUtils.SimpleKCM {
                         }
                     }
 
-                    QQC2.Control {
-                        visible: hint !== ""
-                        topPadding: Kirigami.Units.smallSpacing
-                        rightPadding: Kirigami.Units.smallSpacing
-                        bottomPadding: Kirigami.Units.smallSpacing
-                        leftPadding: Kirigami.Units.smallSpacing
-
+                    QQC2.Label {
                         Kirigami.Theme.colorSet: Kirigami.Theme.Window
+                        visible: hint !== ""
+
+                        // Vertical padding accounts for the difference in normal label height and the content height of this small label
+                        readonly property real verticalPadding: (hintMetrics.height - contentHeight) / 2
+                        // Horizontal padding also accounts for the difference in content height and the font's pixelSize to better balance the text
+                        readonly property real horizontalPadding: ((hintMetrics.height - contentHeight) + (contentHeight - font.pixelSize)) / 2
+
+                        TextMetrics {
+                            // Necessary as valueLabel could be multiple lines
+                            id: hintMetrics
+                            text: " "
+                        }
+
+                        topPadding: verticalPadding
+                        bottomPadding: verticalPadding
+                        leftPadding: horizontalPadding
+                        rightPadding: horizontalPadding
+
+                        text: hint
+                        color: hintColorForeground
+                        font.bold: true
+                        font.pixelSize: Kirigami.Theme.smallFont.pixelSize
 
                         background: Rectangle {
                             color: hintColorBackground
                             radius: Kirigami.Units.cornerRadius
-                        }
-
-                        contentItem: QQC2.Label {
-                            text: hint
-                            color: hintColorForeground
-                            font.bold: true
-                            font.pixelSize: Kirigami.Theme.smallFont.pixelSize
                         }
                     }
 
