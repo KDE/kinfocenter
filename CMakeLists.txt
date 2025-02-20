@@ -41,6 +41,10 @@ find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
 find_package(PkgConfig)
 pkg_check_modules(libdrm REQUIRED IMPORTED_TARGET libdrm)
 
+if(CMAKE_SYSTEM_NAME MATCHES "Linux")
+    find_package(UDev REQUIRED COMPONENTS UDev)
+endif()
+
 ecm_find_qmlmodule(org.kde.kirigami 2.5)
 
 macro(kinfocenter_add_kcm target)

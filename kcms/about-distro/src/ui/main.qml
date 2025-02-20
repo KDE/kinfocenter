@@ -167,6 +167,11 @@ KCMUtils.SimpleKCM {
                         }
                     }
 
+                    Kirigami.ContextualHelpButton {
+                        visible: toolTipText.length > 0
+                        toolTipText: entry.localizedHelp()
+                    }
+
                     QQC2.Button {
                         visible: hidden
                         property var dialog: null

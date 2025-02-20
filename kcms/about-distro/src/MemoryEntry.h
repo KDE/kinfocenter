@@ -12,10 +12,17 @@ class MemoryEntry : public Entry
 {
 public:
     MemoryEntry();
-    static qlonglong calculateTotalRam();
 
     // Overwrite to get correct localization for the value.
     QString localizedValue(Language language = Language::System) const final;
+    QString localizedHelp(Language language = Language::System) const final;
+
+private:
+    static std::optional<qlonglong> calculateTotalRam();
+    static std::optional<qlonglong> calculateAvailableRam();
+
+    std::optional<qlonglong> m_totalRam = calculateTotalRam();
+    std::optional<qlonglong> m_availableRam = calculateAvailableRam();
 };
 
 #endif // MEMORYENTRY_H

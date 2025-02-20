@@ -78,6 +78,9 @@ public:
     // Returns a hint for the user to consider when interpreting the value.
     Q_INVOKABLE [[nodiscard]] virtual Hint localizedHint(Language language = Language::System) const;
 
+    // Returns a help string for the entry, shown with a ContextualHelpButton
+    Q_SCRIPTABLE [[nodiscard]] virtual QString localizedHelp(Language language = Language::System) const;
+
 protected:
     // Returns localized QString for the given language.
     QString localize(const KLocalizedString &string, Language language) const;
