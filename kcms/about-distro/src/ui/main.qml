@@ -99,6 +99,7 @@ KCMUtils.SimpleKCM {
                             case Private.Hint.Color.Three: return Kirigami.Theme.alternateBackgroundColor
                         }
                     }
+                    readonly property string help: entry.localizedHelp()
 
                     Component {
                         id: unhideDialog
@@ -156,6 +157,11 @@ KCMUtils.SimpleKCM {
                             font.bold: true
                             font.pixelSize: Kirigami.Theme.smallFont.pixelSize
                         }
+                    }
+
+                    Kirigami.ContextualHelpButton {
+                        visible: help !== ""
+                        toolTipText: help
                     }
 
                     QQC2.Button {

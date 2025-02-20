@@ -43,6 +43,11 @@ target_link_libraries(kcm_about-distro  PRIVATE
     PkgConfig::libdrm
 )
 
+if(UDev_FOUND)
+    target_link_libraries(kcm_about-distro PRIVATE UDev::UDev)
+    target_compile_definitions(kcm_about-distro PRIVATE UDEV_FOUND)
+endif()
+
 cmake_path(RELATIVE_PATH KDE_INSTALL_FULL_LIBEXECDIR BASE_DIRECTORY "${KDE_INSTALL_FULL_PLUGINDIR}/plasma/kcms/" OUTPUT_VARIABLE LIBEXECDIR_FROM_KCM)
 
 target_compile_options(

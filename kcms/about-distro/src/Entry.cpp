@@ -82,4 +82,9 @@ Hint Entry::localizedHint(Language) const
     return {};
 }
 
+QString Entry::localizedHelp(Language) const
+{
+    return {};
+}
+
 #include "moc_Entry.cpp"
