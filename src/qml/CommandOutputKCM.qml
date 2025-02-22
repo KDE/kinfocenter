@@ -1,6 +1,7 @@
 /*
     SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
     SPDX-FileCopyrightText: 2021-2022 Harald Sitter <sitter@kde.org>
+    SPDX-FileCopyrightText: 2025 Thomas Duckworth <tduck973564@gmail.com>
 */
 
 import QtQuick 2.15
@@ -123,9 +124,17 @@ KCM.SimpleKCM {
         Kirigami.Action {
             enabled: output.error === ''
 
-            icon.name: "edit-copy"
+            icon.name: "edit-copy-symbolic"
             text: i18ndc("kinfocenter", "@action:button copies all displayed text", "Copy to Clipboard")
             onTriggered: clipboard.content = output.text
+        },
+        Kirigami.Action {
+            enabled: output.error === ''
+            visible: output.updateInterval === 0
+
+            icon.name: "view-refresh-symbolic"
+            text: i18ndc("kinfocenter", "@action:button re-runs the command", "Refresh")
+            onTriggered: output.refresh()
         },
         Kirigami.Action {
             displayComponent: Kirigami.SearchField {
@@ -146,6 +155,23 @@ KCM.SimpleKCM {
             }
         }
     ]
+
+    // Shows when an update interval is set.
+    header: RowLayout {
+        Kirigami.InlineMessage {
+            property int seconds: Math.floor(output.updateInterval / 1000)
+
+            visible: output.updateInterval > 0
+            Layout.fillWidth: true
+            position: Kirigami.InlineMessage.Header
+
+            text: seconds === 1 ? 
+                i18ndc("kinfocenter", "@info", "This information is automatically refreshed every %1 second.").arg(seconds)
+                : i18ndc("kinfocenter", "@info", "This information is automatically refreshed every %1 seconds.").arg(seconds)
+
+            showCloseButton: true
+        }
+    }
 
     states: [
         State {

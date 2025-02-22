@@ -1,6 +1,7 @@
 /*
     SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
     SPDX-FileCopyrightText: 2021-2022 Harald Sitter <sitter@kde.org>
+    SPDX-FileCopyrightText: 2025 Thomas Duckworth <tduck973564@gmail.com>
 */
 
 #include "CommandOutputContext.h"
@@ -26,6 +27,7 @@ CommandOutputContext::CommandOutputContext(const QStringList &findExecutables,
     , m_executablePath(QStandardPaths::findExecutable(m_executableName))
     , m_arguments(arguments)
     , m_bugReportUrl(KOSRelease().bugReportUrl())
+    , m_updateInterval(0)
     , m_format(format)
     , m_newlineIdentifier([format] {
         switch (format) {
@@ -49,6 +51,9 @@ CommandOutputContext::CommandOutputContext(const QStringList &findExecutables,
     for (const QString &findExecutable : findExecutables) {
         m_foundExecutablePaths[findExecutable] = QStandardPaths::findExecutable(findExecutable);
     }
+
+    m_updateTimer = new QTimer(this);
+    connect(m_updateTimer, &QTimer::timeout, this, &CommandOutputContext::refresh);
 
     metaObject()->invokeMethod(this, &CommandOutputContext::load);
 }
@@ -97,6 +102,10 @@ void CommandOutputContext::setFilter(const QString &filter)
 
 void CommandOutputContext::reset()
 {
+    if (m_updateTimer->isActive()) {
+        m_updateTimer->stop();
+    }
+
     m_ready = false;
     m_error.clear();
     m_explanation.clear();
@@ -126,6 +135,11 @@ void CommandOutputContext::load()
         }
     }
 
+    runProcess();
+}
+
+void CommandOutputContext::runProcess()
+{
     auto proc = new QProcess(this);
     proc->setProcessChannelMode(QProcess::MergedChannels);
     connect(proc, &QProcess::finished, this, [this, proc](int /* exitCode */, QProcess::ExitStatus exitStatus) {
@@ -155,6 +169,34 @@ void CommandOutputContext::load()
     proc->start(m_executablePath, m_arguments);
 }
 
+void CommandOutputContext::refresh()
+{
+    if (!m_ready) {
+        return;
+    }
+
+    metaObject()->invokeMethod(this, [this] {
+        runProcess();
+    });
+}
+
+void CommandOutputContext::setUpdateInterval(unsigned int milliseconds)
+{
+    if (m_updateInterval == milliseconds) {
+        return;
+    }
+
+    m_updateInterval = milliseconds;
+
+    if (milliseconds > 0 && m_ready) {
+        m_updateTimer->start(milliseconds);
+    } else {
+        m_updateTimer->stop();
+    }
+
+    Q_EMIT updateIntervalChanged();
+}
+
 void CommandOutputContext::setError(const QString &message, const QString &explanation = QString())
 {
     m_error = message;
@@ -172,6 +214,9 @@ void CommandOutputContext::setError(const QString &message, const QString &expla
 void CommandOutputContext::setReady()
 {
     m_ready = true;
+    if (m_updateInterval > 0) {
+        m_updateTimer->start(m_updateInterval);
+    }
     Q_EMIT readyChanged();
 }
 
