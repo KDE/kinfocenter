@@ -38,7 +38,7 @@ class AboutThisSystemTests(unittest.TestCase):
         pass
 
     def tearDown(self):
-        self.driver.get_screenshot_as_file("failed_test_shot_{}.png".format(self.id()))
+        pass
 
     def test_About_this_System(self):
         self.driver.find_element(by=AppiumBy.NAME, value="About this System").click()
