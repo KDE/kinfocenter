@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-09 00:41+0000\n"
+"POT-Creation-Date: 2025-02-22 02:33+0000\n"
 "PO-Revision-Date: 2024-12-20 21:52+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -171,61 +171,61 @@ msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ":"
 
-#: ui/main.qml:106
+#: ui/main.qml:108
 #, kde-format
 msgctxt "@title"
 msgid "Serial Number"
 msgstr "क्रमाङ्कः"
 
-#: ui/main.qml:112
+#: ui/main.qml:114
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
 msgstr "प्रतिलिपि"
 
-#: ui/main.qml:164
+#: ui/main.qml:165
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
 msgstr "दर्शयतु"
 
-#: ui/main.qml:176
+#: ui/main.qml:177
 #, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "तन्त्रांश"
 
-#: ui/main.qml:186
+#: ui/main.qml:187
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "हार्डवेयर"
 
-#: ui/main.qml:203
+#: ui/main.qml:204
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "More System Information"
 msgstr "अधिकानि प्रणालीसूचना"
 
-#: ui/main.qml:204
+#: ui/main.qml:205
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Launch %1"
 msgstr "%1 प्रारम्भं कुर्वन्तु"
 
-#: ui/main.qml:212 ui/main.qml:220
+#: ui/main.qml:213 ui/main.qml:221
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "विवरणं प्रतिलिपितु"
 
-#: ui/main.qml:223
+#: ui/main.qml:224
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "वर्तमानभाषायां"
 
-#: ui/main.qml:229
+#: ui/main.qml:230
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
