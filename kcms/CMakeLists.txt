@@ -17,6 +17,7 @@ add_subdirectory(network)
 add_subdirectory(audio_information)
 add_subdirectory(memory)
 add_subdirectory(edid)
+add_subdirectory(sensors)
 
 add_subdirectory( samba )
 
