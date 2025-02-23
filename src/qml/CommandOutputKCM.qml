@@ -1,6 +1,7 @@
 /*
     SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
     SPDX-FileCopyrightText: 2021-2022 Harald Sitter <sitter@kde.org>
+    SPDX-FileCopyrightText: 2025 Thomas Duckworth <tduck@filotimoproject.org>
 */
 
 import QtQuick 2.15
@@ -125,8 +126,24 @@ KCM.SimpleKCM {
     actions: [
         Kirigami.Action {
             enabled: output.error === ''
+            visible: output.autoRefresh && output.autoRefreshMs > 0
 
-            icon.name: "edit-copy"
+            icon.name: "media-playback-pause-symbolic"
+            text: i18ndc("kinfocenter", "@action:button pauses automatic refreshing", "Pause Refreshing")
+            onTriggered: output.autoRefresh = false
+        },
+        Kirigami.Action {
+            enabled: output.error === ''
+            visible: !output.autoRefresh && output.autoRefreshMs > 0
+
+            icon.name: "media-playback-start-symbolic"
+            text: i18ndc("kinfocenter", "@action:button resumes automatic refreshing", "Resume Refreshing")
+            onTriggered: output.autoRefresh = true
+        },
+        Kirigami.Action {
+            enabled: output.error === ''
+
+            icon.name: "edit-copy-symbolic"
             text: i18ndc("kinfocenter", "@action:button copies all displayed text", "Copy to Clipboard")
             onTriggered: clipboard.content = output.text
         },

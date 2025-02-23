@@ -1,6 +1,7 @@
 /*
     SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
     SPDX-FileCopyrightText: 2021-2022 Harald Sitter <sitter@kde.org>
+    SPDX-FileCopyrightText: 2025 Thomas Duckworth <tduck@filotimoproject.org>
 */
 
 #include "CommandOutputContext.h"
@@ -50,6 +51,9 @@ CommandOutputContext::CommandOutputContext(const QStringList &findExecutables,
         m_foundExecutablePaths[findExecutable] = QStandardPaths::findExecutable(findExecutable);
     }
 
+    m_autoRefreshTimer = new QTimer(this);
+    connect(m_autoRefreshTimer, &QTimer::timeout, this, &CommandOutputContext::refresh);
+
     metaObject()->invokeMethod(this, &CommandOutputContext::load);
 }
 
@@ -97,6 +101,8 @@ void CommandOutputContext::setFilter(const QString &filter)
 
 void CommandOutputContext::reset()
 {
+    setAutoRefresh(false);
+
     m_ready = false;
     m_error.clear();
     m_explanation.clear();
@@ -128,6 +134,11 @@ void CommandOutputContext::load()
         }
     }
 
+    runProcess();
+}
+
+void CommandOutputContext::runProcess()
+{
     auto proc = new QProcess(this);
     proc->setProcessChannelMode(QProcess::MergedChannels);
     connect(proc, &QProcess::finished, this, [this, proc](int /* exitCode */, QProcess::ExitStatus exitStatus) {
@@ -157,6 +168,53 @@ void CommandOutputContext::load()
     proc->start(m_executablePath, m_arguments);
 }
 
+void CommandOutputContext::refresh()
+{
+    if (!m_ready) {
+        return;
+    }
+
+    metaObject()->invokeMethod(
+        this,
+        [this] {
+            runProcess();
+        },
+        Qt::QueuedConnection);
+}
+
+bool CommandOutputContext::autoRefresh() const
+{
+    return m_autoRefreshTimer->isActive();
+}
+
+void CommandOutputContext::setAutoRefresh(bool autoRefresh)
+{
+    if (m_autoRefreshTimer->isActive() == autoRefresh) {
+        return;
+    }
+
+    if (autoRefresh && m_ready) {
+        m_autoRefreshTimer->start(m_autoRefreshMs);
+    } else {
+        m_autoRefreshTimer->stop();
+    }
+
+    Q_EMIT autoRefreshChanged();
+}
+
+void CommandOutputContext::setAutoRefreshMs(int ms)
+{
+    if (m_autoRefreshMs == ms) {
+        return;
+    }
+
+    m_autoRefreshMs = ms;
+
+    setAutoRefresh(ms > 0 && m_ready);
+
+    Q_EMIT autoRefreshMsChanged();
+}
+
 void CommandOutputContext::setError(const QString &message, const QString &explanation = QString())
 {
     m_error = message;
@@ -174,6 +232,8 @@ void CommandOutputContext::setError(const QString &message, const QString &expla
 void CommandOutputContext::setReady()
 {
     m_ready = true;
+    setAutoRefresh(m_autoRefreshMs > 0);
+
     Q_EMIT readyChanged();
 }
 
