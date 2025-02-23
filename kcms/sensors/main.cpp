@@ -19,6 +19,7 @@ public:
         : KQuickConfigModule(parent, data)
     {
         m_outputContext = new CommandOutputContext(u"sensors"_s, {}, parent);
+        m_outputContext->setAutoRefreshMs(1000);
     }
     CommandOutputContext *outputContext() const
     {

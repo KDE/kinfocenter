@@ -1,12 +1,14 @@
 /*
     SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
     SPDX-FileCopyrightText: 2021-2022 Harald Sitter <sitter@kde.org>
+    SPDX-FileCopyrightText: 2025 Thomas Duckworth <tduck@filotimoproject.org>
 */
 
 #pragma once
 
 #include <QMap>
 #include <QObject>
+#include <QTimer>
 #include <QUrl>
 
 // Somewhat general-purpose command executor. This class runs the executable with arguments, collecting all its output
@@ -30,6 +32,10 @@ class CommandOutputContext : public QObject
     Q_PROPERTY(QUrl bugReportUrl MEMBER m_bugReportUrl CONSTANT)
     // Text styling, which matters for filtering purposes.
     Q_PROPERTY(Qt::TextFormat textFormat MEMBER m_format CONSTANT)
+    // Interval in milliseconds at which to automatically refresh the output. 0 means no refreshing.
+    Q_PROPERTY(int autoRefreshMs MEMBER m_autoRefreshMs WRITE setAutoRefreshMs NOTIFY autoRefreshMsChanged)
+    // If automatic refreshing is enabled. Setting an interval will automatically enable this.
+    Q_PROPERTY(bool autoRefresh READ autoRefresh WRITE setAutoRefresh NOTIFY autoRefreshChanged)
 public:
     CommandOutputContext(const QStringList &findExecutables,
                          const QString &executable,
@@ -46,6 +52,15 @@ public:
     void setFilter(const QString &filter);
     Q_SIGNAL void filterChanged();
 
+    bool autoRefresh() const;
+    void setAutoRefresh(bool autoRefresh);
+    Q_SIGNAL void autoRefreshChanged();
+
+    void setAutoRefreshMs(int ms);
+    Q_SIGNAL void autoRefreshMsChanged();
+
+    Q_SLOT void refresh();
+
     void setTrimAllowed(bool allow);
 
 Q_SIGNALS:
@@ -57,6 +72,7 @@ Q_SIGNALS:
 private:
     void reset();
     void load();
+    void runProcess();
     void setError(const QString &message, const QString &explanation);
     void setReady();
 
@@ -75,6 +91,9 @@ private:
 
     QString m_text; // possibly filtered
     QString m_filter;
+
+    QTimer *m_autoRefreshTimer = nullptr;
+    int m_autoRefreshMs = 0;
 
     Qt::TextFormat m_format;
     QString m_newlineIdentifier;
