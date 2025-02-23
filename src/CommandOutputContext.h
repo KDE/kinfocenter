@@ -1,12 +1,14 @@
 /*
     SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
     SPDX-FileCopyrightText: 2021-2022 Harald Sitter <sitter@kde.org>
+    SPDX-FileCopyrightText: 2025 Thomas Duckworth <tduck@filotimoproject.org>
 */
 
 #pragma once
 
 #include <QMap>
 #include <QObject>
+#include <QTimer>
 #include <QUrl>
 
 // Somewhat general-purpose command executor. This class runs the executable with arguments, collecting all its output
@@ -30,6 +32,8 @@ class CommandOutputContext : public QObject
     Q_PROPERTY(QUrl bugReportUrl MEMBER m_bugReportUrl CONSTANT)
     // Text styling, which matters for filtering purposes.
     Q_PROPERTY(Qt::TextFormat textFormat MEMBER m_format CONSTANT)
+    // Interval in milliseconds at which to update the output. 0 means no updates.
+    Q_PROPERTY(int updateIntervalMs MEMBER m_updateIntervalMs WRITE setUpdateIntervalMs NOTIFY updateIntervalMsChanged)
 public:
     CommandOutputContext(const QStringList &findExecutables,
                          const QString &executable,
@@ -46,6 +50,11 @@ public:
     void setFilter(const QString &filter);
     Q_SIGNAL void filterChanged();
 
+    void setUpdateIntervalMs(int ms);
+    Q_SIGNAL void updateIntervalMsChanged();
+
+    Q_SLOT void refresh();
+
     void setTrimAllowed(bool allow);
 
 Q_SIGNALS:
@@ -57,6 +66,7 @@ Q_SIGNALS:
 private:
     void reset();
     void load();
+    void runProcess();
     void setError(const QString &message, const QString &explanation);
     void setReady();
 
@@ -75,6 +85,9 @@ private:
 
     QString m_text; // possibly filtered
     QString m_filter;
+
+    QTimer *m_updateTimer = nullptr;
+    int m_updateIntervalMs = 0;
 
     Qt::TextFormat m_format;
     QString m_newlineIdentifier;

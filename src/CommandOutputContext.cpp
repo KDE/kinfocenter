@@ -1,6 +1,7 @@
 /*
     SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
     SPDX-FileCopyrightText: 2021-2022 Harald Sitter <sitter@kde.org>
+    SPDX-FileCopyrightText: 2025 Thomas Duckworth <tduck@filotimoproject.org>
 */
 
 #include "CommandOutputContext.h"
@@ -50,6 +51,9 @@ CommandOutputContext::CommandOutputContext(const QStringList &findExecutables,
         m_foundExecutablePaths[findExecutable] = QStandardPaths::findExecutable(findExecutable);
     }
 
+    m_updateTimer = new QTimer(this);
+    connect(m_updateTimer, &QTimer::timeout, this, &CommandOutputContext::refresh);
+
     metaObject()->invokeMethod(this, &CommandOutputContext::load);
 }
 
@@ -97,6 +101,8 @@ void CommandOutputContext::setFilter(const QString &filter)
 
 void CommandOutputContext::reset()
 {
+    m_updateTimer->stop();
+
     m_ready = false;
     m_error.clear();
     m_explanation.clear();
@@ -126,6 +132,11 @@ void CommandOutputContext::load()
         }
     }
 
+    runProcess();
+}
+
+void CommandOutputContext::runProcess()
+{
     auto proc = new QProcess(this);
     proc->setProcessChannelMode(QProcess::MergedChannels);
     connect(proc, &QProcess::finished, this, [this, proc](int /* exitCode */, QProcess::ExitStatus exitStatus) {
@@ -155,6 +166,37 @@ void CommandOutputContext::load()
     proc->start(m_executablePath, m_arguments);
 }
 
+void CommandOutputContext::refresh()
+{
+    if (!m_ready) {
+        return;
+    }
+
+    metaObject()->invokeMethod(
+        this,
+        [this] {
+            runProcess();
+        },
+        Qt::QueuedConnection);
+}
+
+void CommandOutputContext::setUpdateIntervalMs(int ms)
+{
+    if (m_updateIntervalMs == ms) {
+        return;
+    }
+
+    m_updateIntervalMs = ms;
+
+    if (ms > 0 && m_ready) {
+        m_updateTimer->start(ms);
+    } else {
+        m_updateTimer->stop();
+    }
+
+    Q_EMIT updateIntervalMsChanged();
+}
+
 void CommandOutputContext::setError(const QString &message, const QString &explanation = QString())
 {
     m_error = message;
@@ -172,6 +214,9 @@ void CommandOutputContext::setError(const QString &message, const QString &expla
 void CommandOutputContext::setReady()
 {
     m_ready = true;
+    if (m_updateIntervalMs > 0) {
+        m_updateTimer->start(m_updateIntervalMs);
+    }
     Q_EMIT readyChanged();
 }
 
