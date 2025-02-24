@@ -54,14 +54,14 @@ KCMUtils.SimpleKCM {
                 }
 
                 Kirigami.Heading {
-                    visible: kcm.distroVariant !== ""
+                    visible: kcm.distroVariant.length > 0
                     text: kcm.distroVariant
                     level: 2
                     type: Kirigami.Heading.Type.Secondary
                 }
 
                 QQC2.Label {
-                    visible: kcm.distroUrl !== ""
+                    visible: kcm.distroUrl.length > 0
                     text: "<a href='%1'>%1</a>".arg(kcm.distroUrl)
                     textFormat: Text.RichText
                     onLinkActivated: link => Qt.openUrlExternally(link)
@@ -82,23 +82,11 @@ KCMUtils.SimpleKCM {
                     Kirigami.FormData.label: entry.localizedLabel()
                     Kirigami.FormData.labelAlignment: idealAlignment
                     Layout.alignment: idealAlignment
+
                     readonly property int idealAlignment: valueLabel.lineCount > 1 ? Qt.AlignTop : Qt.AlignVCenter // looks tidier this way
                     readonly property bool hidden: entry.isHidden()
-                    readonly property string hint: entry.localizedHint().text
-                    readonly property color hintColorForeground: {
-                        switch (entry.localizedHint().color) {
-                            case Private.Hint.Color.One: return Kirigami.Theme.linkColor
-                            case Private.Hint.Color.Two: return Kirigami.Theme.positiveTextColor
-                            case Private.Hint.Color.Three: return Kirigami.Theme.alternateTextColor
-                        }
-                    }
-                    readonly property color hintColorBackground: {
-                        switch (entry.localizedHint().color) {
-                            case Private.Hint.Color.One: return Kirigami.Theme.linkBackgroundColor
-                            case Private.Hint.Color.Two: return Kirigami.Theme.positiveBackgroundColor
-                            case Private.Hint.Color.Three: return Kirigami.Theme.alternateBackgroundColor
-                        }
-                    }
+
+                    spacing: Kirigami.Units.smallSpacing
 
                     Component {
                         id: unhideDialog
@@ -138,7 +126,7 @@ KCMUtils.SimpleKCM {
 
                     QQC2.Label {
                         Kirigami.Theme.colorSet: Kirigami.Theme.Window
-                        visible: hint !== ""
+                        visible: text.length > 0
 
                         // Vertical padding accounts for the difference in normal label height and the content height of this small label
                         readonly property real verticalPadding: (hintMetrics.height - contentHeight) / 2
@@ -156,13 +144,25 @@ KCMUtils.SimpleKCM {
                         leftPadding: horizontalPadding
                         rightPadding: horizontalPadding
 
-                        text: hint
-                        color: hintColorForeground
+                        text: entry.localizedHint().text
+                        color: {
+                            switch (entry.localizedHint().color) {
+                                case Private.Hint.Color.One: return Kirigami.Theme.linkColor
+                                case Private.Hint.Color.Two: return Kirigami.Theme.positiveTextColor
+                                case Private.Hint.Color.Three: return Kirigami.Theme.alternateTextColor
+                            }
+                        }
                         font.bold: true
                         font.pixelSize: Kirigami.Theme.smallFont.pixelSize
 
                         background: Rectangle {
-                            color: hintColorBackground
+                            color: {
+                                switch (entry.localizedHint().color) {
+                                    case Private.Hint.Color.One: return Kirigami.Theme.linkBackgroundColor
+                                    case Private.Hint.Color.Two: return Kirigami.Theme.positiveBackgroundColor
+                                    case Private.Hint.Color.Three: return Kirigami.Theme.alternateBackgroundColor
+                                }
+                            }
                             radius: Kirigami.Units.cornerRadius
                         }
                     }

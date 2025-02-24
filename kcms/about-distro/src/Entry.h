@@ -66,20 +66,20 @@ public:
     // Returns textual representation of entry.
     QString diagnosticLine(Language language = Language::System) const;
 
-    Q_SCRIPTABLE virtual QString localizedLabel(Language language = Language::System) const;
+    Q_INVOKABLE [[nodiscard]] virtual QString localizedLabel(Language language = Language::System) const;
 
     // Returns the value by default. Needs to be overridden in subclasses if localization
     // is needed for the value.
-    Q_SCRIPTABLE virtual QString localizedValue(Language language = Language::System) const;
+    Q_INVOKABLE [[nodiscard]] virtual QString localizedValue(Language language = Language::System) const;
 
     // Returns whether this Entry should be hidden by default (i.e. only shown upon user request)
-    Q_INVOKABLE virtual bool isHidden() const;
+    Q_INVOKABLE [[nodiscard]] virtual bool isHidden() const;
 
     // Returns a hint for the user to consider when interpreting the value.
     Q_INVOKABLE [[nodiscard]] virtual Hint localizedHint(Language language = Language::System) const;
 
     // Returns a help string for the entry, shown with a ContextualHelpButton
-    Q_SCRIPTABLE [[nodiscard]] virtual QString localizedHelp(Language language = Language::System) const;
+    Q_INVOKABLE [[nodiscard]] virtual QString localizedHelp(Language language = Language::System) const;
 
 protected:
     // Returns localized QString for the given language.
