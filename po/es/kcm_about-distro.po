@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-22 00:42+0000\n"
+"POT-Creation-Date: 2025-02-26 00:43+0000\n"
 "PO-Revision-Date: 2024-11-09 19:17+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -124,22 +124,69 @@ msgstr "Versión de KDE Frameworks:"
 msgid "Qt Version:"
 msgstr "Versión de Qt:"
 
-#: MemoryEntry.cpp:20
+#: MemoryEntry.cpp:23
 #, kde-format
 msgid "Memory:"
 msgstr "Memoria:"
 
-#: MemoryEntry.cpp:49
+#: MemoryEntry.cpp:111
 #, kde-format
-msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
+msgctxt ""
+"@label, %1 is the total amount of installed system memory, %2 is the amount "
+"of which is usable, both expressed as 7.7 GiB"
+msgid "%1 of RAM (%2 usable)"
+msgstr ""
+
+#: MemoryEntry.cpp:119
+#, fuzzy, kde-format
+#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
+#| msgid "%1 of RAM"
+msgctxt ""
+"@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
 msgstr "%1 de RAM"
 
-#: MemoryEntry.cpp:53
-#, kde-format
-msgctxt "Unknown amount of RAM"
+#: MemoryEntry.cpp:126
+#, fuzzy, kde-format
+#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
+#| msgid "%1 of RAM"
+msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
+msgid "%1 of usable RAM"
+msgstr "%1 de RAM"
+
+#: MemoryEntry.cpp:132
+#, fuzzy, kde-format
+#| msgctxt "Unknown amount of RAM"
+#| msgid "Unknown"
+msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
 msgstr "Desconocida"
+
+#: MemoryEntry.cpp:140
+#, kde-format
+msgctxt "@info:tooltip, referring to system memory or RAM"
+msgid ""
+"Some memory is reserved for use by the kernel or system hardware such as "
+"integrated graphics memory."
+msgstr ""
+
+#: MemoryEntry.cpp:148
+#, kde-format
+msgctxt "@info:tooltip, referring to system memory or RAM"
+msgid ""
+"The amount of usable memory may be lower than the displayed amount because "
+"some memory is reserved for use by the kernel or system hardware, such as "
+"integrated graphics memory."
+msgstr ""
+
+#: MemoryEntry.cpp:157
+#, kde-format
+msgctxt "@info:tooltip, referring to system memory or RAM"
+msgid ""
+"The amount of memory displayed may be lower than the installed amount "
+"because some memory is reserved for use by the kernel or system hardware, "
+"such as integrated graphics memory."
+msgstr ""
 
 #: OSVersionEntry.cpp:9
 #, kde-format
@@ -171,61 +218,61 @@ msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ":"
 
-#: ui/main.qml:108
+#: ui/main.qml:96
 #, kde-format
 msgctxt "@title"
 msgid "Serial Number"
 msgstr "Número de serie"
 
-#: ui/main.qml:114
+#: ui/main.qml:102
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
 msgstr "Copiar"
 
-#: ui/main.qml:165
+#: ui/main.qml:179
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
 msgstr "Mostrar"
 
-#: ui/main.qml:177
+#: ui/main.qml:191
 #, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "Software"
 
-#: ui/main.qml:187
+#: ui/main.qml:201
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "Hardware"
 
-#: ui/main.qml:204
+#: ui/main.qml:218
 #, kde-format
 msgctxt "@action:button launches kinfocenter from systemsettings"
 msgid "More System Information"
 msgstr "Más información sobre el sistema"
 
-#: ui/main.qml:205
+#: ui/main.qml:219
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Launch %1"
 msgstr "Lanzar %1"
 
-#: ui/main.qml:213 ui/main.qml:221
+#: ui/main.qml:227 ui/main.qml:235
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "Copiar detalles"
 
-#: ui/main.qml:224
+#: ui/main.qml:238
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "En el idioma actual"
 
-#: ui/main.qml:230
+#: ui/main.qml:244
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
