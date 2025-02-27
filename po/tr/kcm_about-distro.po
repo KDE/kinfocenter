@@ -3,13 +3,13 @@
 #
 # Translators:
 # Volkan Gezer <volkangezer@gmail.com>, 2013, 2017, 2021.
-# SPDX-FileCopyrightText: 2022, 2023, 2024 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: playground-base-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:43+0000\n"
-"PO-Revision-Date: 2024-11-09 08:41+0300\n"
+"PO-Revision-Date: 2025-02-26 10:53+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.11.70\n"
+"X-Generator: Lokalize 25.03.70\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -135,29 +135,23 @@ msgctxt ""
 "@label, %1 is the total amount of installed system memory, %2 is the amount "
 "of which is usable, both expressed as 7.7 GiB"
 msgid "%1 of RAM (%2 usable)"
-msgstr ""
+msgstr "%1 RAM (%2 kullanılabilir)"
 
 #: MemoryEntry.cpp:119
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt ""
 "@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
 msgstr "%1 RAM"
 
 #: MemoryEntry.cpp:126
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
-msgstr "%1 RAM"
+msgstr "%1 kullanılabilir RAM"
 
 #: MemoryEntry.cpp:132
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
 msgstr "Bilinmiyor"
@@ -169,6 +163,8 @@ msgid ""
 "Some memory is reserved for use by the kernel or system hardware such as "
 "integrated graphics memory."
 msgstr ""
+"Bazı bellekler, çekirdek veya tümleşik grafik belleği gibi sistem donanımı "
+"tarafından kullanılmak üzere ayrılmıştır."
 
 #: MemoryEntry.cpp:148
 #, kde-format
@@ -178,6 +174,9 @@ msgid ""
 "some memory is reserved for use by the kernel or system hardware, such as "
 "integrated graphics memory."
 msgstr ""
+"Kullanılabilir bellek miktarı görüntülenen miktardan daha düşük olabilir; "
+"çünkü belleğin bir kısmı çekirdek veya tümleşik grafik belleği gibi sistem "
+"donanımı tarafından kullanılmak üzere ayrılmıştır."
 
 #: MemoryEntry.cpp:157
 #, kde-format
@@ -187,6 +186,9 @@ msgid ""
 "because some memory is reserved for use by the kernel or system hardware, "
 "such as integrated graphics memory."
 msgstr ""
+"Görüntülenen bellek miktarı, takılı miktardan daha düşük olabilir; çünkü "
+"belleğin bir kısmı tümleşik grafik belleği gibi çekirdek veya sistem "
+"donanımı tarafından kullanılmak üzere ayrılmıştır."
 
 #: OSVersionEntry.cpp:9
 #, kde-format

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:43+0000\n"
-"PO-Revision-Date: 2024-11-09 06:58+0100\n"
+"PO-Revision-Date: 2025-02-26 06:51+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -138,32 +138,26 @@ msgctxt ""
 "@label, %1 is the total amount of installed system memory, %2 is the amount "
 "of which is usable, both expressed as 7.7 GiB"
 msgid "%1 of RAM (%2 usable)"
-msgstr ""
+msgstr "%1 RAMa (%2 uporabno)"
 
 #: MemoryEntry.cpp:119
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt ""
 "@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
 msgstr "%1 RAM"
 
 #: MemoryEntry.cpp:126
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
-msgstr "%1 RAM"
+msgstr "%1 uporabnega RAMa"
 
 #: MemoryEntry.cpp:132
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
-msgstr "Neznan"
+msgstr "Neznano"
 
 #: MemoryEntry.cpp:140
 #, kde-format
@@ -172,6 +166,8 @@ msgid ""
 "Some memory is reserved for use by the kernel or system hardware such as "
 "integrated graphics memory."
 msgstr ""
+"Nekaj ​​pomnilnika je rezerviranega za uporabo jedra ali sistemske strojne "
+"opreme, kot je integrirani grafični pomnilnik."
 
 #: MemoryEntry.cpp:148
 #, kde-format
@@ -181,6 +177,9 @@ msgid ""
 "some memory is reserved for use by the kernel or system hardware, such as "
 "integrated graphics memory."
 msgstr ""
+"Količina uporabnega pomnilnika je lahko manjša od prikazane količine, ker je "
+"nekaj pomnilnika rezerviranega za uporabo jedra ali sistemske strojne "
+"opreme, kot je integrirani grafični pomnilnik."
 
 #: MemoryEntry.cpp:157
 #, kde-format
@@ -190,6 +189,9 @@ msgid ""
 "because some memory is reserved for use by the kernel or system hardware, "
 "such as integrated graphics memory."
 msgstr ""
+"Količina prikazanega pomnilnika je lahko nižja od nameščene količine, ker je "
+"nekaj pomnilnika rezerviranega za uporabo jedra ali sistemske strojne "
+"opreme, kot je integrirani grafični pomnilnik."
 
 #: OSVersionEntry.cpp:9
 #, kde-format

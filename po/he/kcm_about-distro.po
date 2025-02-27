@@ -3,13 +3,13 @@
 #
 # Elkana Bardugo <ttv200@gmail.com>, 2016.
 # Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
-# SPDX-FileCopyrightText: 2024 Yaron Shahrabani <sh.yaron@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2025 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:43+0000\n"
-"PO-Revision-Date: 2024-11-09 11:34+0200\n"
+"PO-Revision-Date: 2025-02-26 08:37+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 24.08.1\n"
+"X-Generator: Lokalize 24.12.2\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -68,7 +68,7 @@ msgstr "וירטואלי"
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
 msgid "Graphics Platform:"
-msgstr "Graphics Platform:"
+msgstr "פלטפורמה גרפית:"
 
 #: KernelEntry.cpp:11
 #, kde-format
@@ -138,29 +138,23 @@ msgctxt ""
 "@label, %1 is the total amount of installed system memory, %2 is the amount "
 "of which is usable, both expressed as 7.7 GiB"
 msgid "%1 of RAM (%2 usable)"
-msgstr ""
+msgstr "%1 זיכרון (%2 שמישים)"
 
 #: MemoryEntry.cpp:119
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt ""
 "@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
 msgstr "%1 של זיכרון RAM"
 
 #: MemoryEntry.cpp:126
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
-msgstr "%1 של זיכרון RAM"
+msgstr "%1 של זיכרון RAM שמיש"
 
 #: MemoryEntry.cpp:132
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
 msgstr "לא ידוע"
@@ -172,6 +166,7 @@ msgid ""
 "Some memory is reserved for use by the kernel or system hardware such as "
 "integrated graphics memory."
 msgstr ""
+"חלק מהזיכרון שמור לשימוש הליבה או חומרת המערכת כגון זיכרון לכרטיס גרפי משולב."
 
 #: MemoryEntry.cpp:148
 #, kde-format
@@ -181,6 +176,8 @@ msgid ""
 "some memory is reserved for use by the kernel or system hardware, such as "
 "integrated graphics memory."
 msgstr ""
+"כמות הזיכרון השמיש עלולה להיות נמוכה מהכמות שמוצגת כיוון שחלק מהזיכרון שמור "
+"לשימוש הליבה או חומרת המערכת כגון זיכרון לכרטיס גרפי משולב."
 
 #: MemoryEntry.cpp:157
 #, kde-format
@@ -190,6 +187,8 @@ msgid ""
 "because some memory is reserved for use by the kernel or system hardware, "
 "such as integrated graphics memory."
 msgstr ""
+"כמות הזיכרון המוצגת עלולה להיות נמוכה מהכמות המותקנת כיוון שחלק מהזיכרון "
+"שמור לשימוש הליבה או חומרת המערכת כגון זיכרון לכרטיס גרפי משולב."
 
 #: OSVersionEntry.cpp:9
 #, kde-format

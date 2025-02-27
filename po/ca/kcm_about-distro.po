@@ -1,17 +1,17 @@
 # Translation of kcm_about-distro.po to Catalan
-# Copyright (C) 2014-2024 This_file_is_part_of_KDE
+# Copyright (C) 2014-2025 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2014, 2015, 2021.
-# Josep M. Ferrer <txemaq@gmail.com>, 2016, 2018, 2020, 2022, 2023, 2024.
+# Josep M. Ferrer <txemaq@gmail.com>, 2016, 2018, 2020, 2022, 2023, 2024, 2025.
 # Empar Montoro Martín <montoro_mde@gva.es>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:43+0000\n"
-"PO-Revision-Date: 2024-11-09 09:46+0100\n"
+"PO-Revision-Date: 2025-02-26 12:17+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -138,29 +138,23 @@ msgctxt ""
 "@label, %1 is the total amount of installed system memory, %2 is the amount "
 "of which is usable, both expressed as 7.7 GiB"
 msgid "%1 of RAM (%2 usable)"
-msgstr ""
+msgstr "%1 de RAM (utilitzable %2)"
 
 #: MemoryEntry.cpp:119
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt ""
 "@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
 msgstr "%1 de RAM"
 
 #: MemoryEntry.cpp:126
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
-msgstr "%1 de RAM"
+msgstr "%1 de RAM utilitzable"
 
 #: MemoryEntry.cpp:132
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
 msgstr "Desconeguda"
@@ -172,6 +166,8 @@ msgid ""
 "Some memory is reserved for use by the kernel or system hardware such as "
 "integrated graphics memory."
 msgstr ""
+"Una part de la memòria està reservada per a l'ús del nucli o el maquinari "
+"del sistema, com ara la memòria gràfica integrada."
 
 #: MemoryEntry.cpp:148
 #, kde-format
@@ -181,6 +177,9 @@ msgid ""
 "some memory is reserved for use by the kernel or system hardware, such as "
 "integrated graphics memory."
 msgstr ""
+"La quantitat de memòria usable pot ser menor que la quantitat mostrada "
+"perquè una part de la memòria està reservada per a l'ús del nucli o el "
+"maquinari del sistema, com ara la memòria gràfica integrada."
 
 #: MemoryEntry.cpp:157
 #, kde-format
@@ -190,6 +189,9 @@ msgid ""
 "because some memory is reserved for use by the kernel or system hardware, "
 "such as integrated graphics memory."
 msgstr ""
+"La quantitat de memòria mostrada pot ser menor que la quantitat instal·lada "
+"perquè una part de la memòria està reservada per a l'ús del nucli o el "
+"maquinari del sistema, com ara la memòria gràfica integrada."
 
 #: OSVersionEntry.cpp:9
 #, kde-format

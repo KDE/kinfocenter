@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:43+0000\n"
-"PO-Revision-Date: 2024-11-09 05:10+0100\n"
+"PO-Revision-Date: 2025-02-26 08:16+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -134,29 +134,23 @@ msgctxt ""
 "@label, %1 is the total amount of installed system memory, %2 is the amount "
 "of which is usable, both expressed as 7.7 GiB"
 msgid "%1 of RAM (%2 usable)"
-msgstr ""
+msgstr "%1 ოპერატიული მეხსიერება (%2 გამოყენებადია)"
 
 #: MemoryEntry.cpp:119
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt ""
 "@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
-msgstr "%1 RAM"
+msgstr "%1 ოპერატიული მეხსიერება"
 
 #: MemoryEntry.cpp:126
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
-msgstr "%1 RAM"
+msgstr "%1 გამოყენებადი ოპერატიული მეხსიერება"
 
 #: MemoryEntry.cpp:132
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
 msgstr "უცნობი"
@@ -168,6 +162,8 @@ msgid ""
 "Some memory is reserved for use by the kernel or system hardware such as "
 "integrated graphics memory."
 msgstr ""
+"მეხსიერების ნაწილი დაცულია ბირთვის ან სისტემური აპარატურის მიერ (როგორიცაა "
+"ჩაშენებული გრაფიკის მეხსიერება)."
 
 #: MemoryEntry.cpp:148
 #, kde-format
@@ -177,6 +173,9 @@ msgid ""
 "some memory is reserved for use by the kernel or system hardware, such as "
 "integrated graphics memory."
 msgstr ""
+"გამოყენებადი მეხსიერების რაოდენობა, შეიძლება, ნაჩვენებზე ნაკლები იყოს, "
+"რადგან მეხსიერების ნაწილი შემონახულია ბირთვის ან სისტემური აპარატურის, "
+"მაგალითად ჩაშენებული გრაფიკული კონტროლერის მიერ."
 
 #: MemoryEntry.cpp:157
 #, kde-format
@@ -186,6 +185,9 @@ msgid ""
 "because some memory is reserved for use by the kernel or system hardware, "
 "such as integrated graphics memory."
 msgstr ""
+"ნაჩვენები მეხსიერების რაოდენობა, შეიძლება, სისტემაში არსებულ მეხსიერებაზე "
+"ნაკლები იყოს, რადგან მეხსიერების ნაწილი შემონახულია ბირთვის ან სისტემური "
+"აპარატურის, მაგალითად ჩაშენებული გრაფიკული კონტროლერის მიერ."
 
 #: OSVersionEntry.cpp:9
 #, kde-format
