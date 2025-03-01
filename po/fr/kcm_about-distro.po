@@ -1,6 +1,6 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# SPDX-FileCopyrightText: 2013, 2021, 2022, 2023, 2024 Xavier Besnard <xavier.besnard@kde.org>
+# SPDX-FileCopyrightText: 2013, 2021, 2022, 2023, 2024, 2025 Xavier Besnard <xavier.besnard@kde.org>
 # Joëlle Cornavin <jcorn@free.fr>, 2013.
 # Geoffray Levasseur <geoffray.levasseur-brandin@ac-toulouse.fr>, 2014.
 # Maxime Corteel <mcorteel@gmail.com>, 2015, 2016.
@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:43+0000\n"
-"PO-Revision-Date: 2024-11-10 10:40+0100\n"
+"PO-Revision-Date: 2025-02-27 09:27+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Accelerator-Marker: &\n"
 "X-Environment: kde\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 24.12.2\n"
 "X-Text-Markup: kde4\n"
 
 #: CPUEntry.cpp:17
@@ -143,29 +143,23 @@ msgctxt ""
 "@label, %1 is the total amount of installed system memory, %2 is the amount "
 "of which is usable, both expressed as 7.7 GiB"
 msgid "%1 of RAM (%2 usable)"
-msgstr ""
+msgstr "%1 de mémoire vive (%2 de RAM utilisable)"
 
 #: MemoryEntry.cpp:119
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt ""
 "@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
-msgstr "%1 de mémoire vive"
+msgstr "%1 de mémoire vive (RAM)"
 
 #: MemoryEntry.cpp:126
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
-msgstr "%1 de mémoire vive"
+msgstr "%1 de mémoire vive (RAM) utilisable"
 
 #: MemoryEntry.cpp:132
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
 msgstr "Inconnu"
@@ -177,6 +171,8 @@ msgid ""
 "Some memory is reserved for use by the kernel or system hardware such as "
 "integrated graphics memory."
 msgstr ""
+"Une partie de la mémoire est réservée à l'utilisation par le noyau ou "
+"lematériel du système tel que la mémoire graphique intégrée."
 
 #: MemoryEntry.cpp:148
 #, kde-format
@@ -186,6 +182,9 @@ msgid ""
 "some memory is reserved for use by the kernel or system hardware, such as "
 "integrated graphics memory."
 msgstr ""
+"La quantité de mémoire utilisable peut être inférieure à celle affichée car "
+"une partie de la mémoire est réservée pour son utilisation par le noyau ou "
+"le matériel du système, tel que la mémoire graphique intégrée."
 
 #: MemoryEntry.cpp:157
 #, kde-format
@@ -195,6 +194,9 @@ msgid ""
 "because some memory is reserved for use by the kernel or system hardware, "
 "such as integrated graphics memory."
 msgstr ""
+"La quantité de mémoire affichée peut être inférieure à celle installée car "
+"une partie de la mémoire est réservée pour son utilisation par le noyau ou "
+"le matériel du système, tel que la mémoire graphique intégrée."
 
 #: OSVersionEntry.cpp:9
 #, kde-format
