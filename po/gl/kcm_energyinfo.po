@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-13 00:46+0000\n"
-"PO-Revision-Date: 2025-02-14 08:28+0100\n"
-"Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
+"PO-Revision-Date: 2025-03-02 08:58+0100\n"
+"Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.gal>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
@@ -301,6 +301,7 @@ msgctxt "Graph axis label: percentage"
 msgid "%1%"
 msgstr "%1%"
 
+# skip-rule: trasno-history
 #: ui/main.qml:288
 #, kde-format
 msgctxt "@info:status"

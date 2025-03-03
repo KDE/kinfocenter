@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-#
 # Safa Alfulaij <safa1996alfulaij@gmail.com>, 2015, 2015.
-# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024, 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:43+0000\n"
-"PO-Revision-Date: 2024-11-28 13:50+0400\n"
+"PO-Revision-Date: 2025-03-02 10:47+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -139,29 +139,23 @@ msgctxt ""
 "@label, %1 is the total amount of installed system memory, %2 is the amount "
 "of which is usable, both expressed as 7.7 GiB"
 msgid "%1 of RAM (%2 usable)"
-msgstr ""
+msgstr "%1 من ذاكرة الوصول العشوائي (%2 قابلة للاستخدام)"
 
 #: MemoryEntry.cpp:119
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt ""
 "@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
 msgstr "%1 من الذّاكرة العشوائيّة"
 
 #: MemoryEntry.cpp:126
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
-msgstr "%1 من الذّاكرة العشوائيّة"
+msgstr "%1 من ذاكرة الوصول العشوائي القابلة للاستخدام"
 
 #: MemoryEntry.cpp:132
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
 msgstr "مجهول"
@@ -173,6 +167,8 @@ msgid ""
 "Some memory is reserved for use by the kernel or system hardware such as "
 "integrated graphics memory."
 msgstr ""
+"يحجز جزء من الذاكرة لاستخدامه بواسطة نواة الجهاز أو أجهزة النظام مثل ذاكرة "
+"الرسومات المتكاملة."
 
 #: MemoryEntry.cpp:148
 #, kde-format
@@ -182,6 +178,9 @@ msgid ""
 "some memory is reserved for use by the kernel or system hardware, such as "
 "integrated graphics memory."
 msgstr ""
+"قد تكون كمية الذاكرة القابلة للاستخدام أقل من الكمية المعروضة لأن بعض "
+"الذاكرة محجوزة للاستخدام بواسطة نواة الجهاز أو أجهزة النظام، مثل ذاكرة "
+"الرسومات المتكاملة."
 
 #: MemoryEntry.cpp:157
 #, kde-format
@@ -191,6 +190,8 @@ msgid ""
 "because some memory is reserved for use by the kernel or system hardware, "
 "such as integrated graphics memory."
 msgstr ""
+"قد تكون كمية الذاكرة المعروضة أقل من الكمية المثبتة لأن بعض الذاكرة محجوزة "
+"للاستخدام بواسطة نواة النظام أو أجهزة النظام، مثل ذاكرة الرسومات المتكاملة."
 
 #: OSVersionEntry.cpp:9
 #, kde-format
