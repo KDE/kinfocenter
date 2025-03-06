@@ -45,19 +45,19 @@ msgstr "图形处理器："
 #, kde-format
 msgctxt "@label GPU type"
 msgid "integrated"
-msgstr "集成"
+msgstr "集成显卡"
 
 #: GPUEntry.cpp:30
 #, kde-format
 msgctxt "@label GPU type"
 msgid "discrete"
-msgstr "独立"
+msgstr "独立显卡"
 
 #: GPUEntry.cpp:32
 #, kde-format
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
-msgstr "虚拟"
+msgstr "虚拟显卡"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
@@ -132,29 +132,23 @@ msgctxt ""
 "@label, %1 is the total amount of installed system memory, %2 is the amount "
 "of which is usable, both expressed as 7.7 GiB"
 msgid "%1 of RAM (%2 usable)"
-msgstr ""
+msgstr "%1 内存 (%2 可用)"
 
 #: MemoryEntry.cpp:119
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt ""
 "@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
 msgstr "%1 内存"
 
 #: MemoryEntry.cpp:126
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
-msgstr "%1 内存"
+msgstr "%1 可用内存"
 
 #: MemoryEntry.cpp:132
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
 msgstr "未知"
@@ -165,7 +159,7 @@ msgctxt "@info:tooltip, referring to system memory or RAM"
 msgid ""
 "Some memory is reserved for use by the kernel or system hardware such as "
 "integrated graphics memory."
-msgstr ""
+msgstr "部分内存被预留供内核或系统硬件 (如集显显存) 使用。"
 
 #: MemoryEntry.cpp:148
 #, kde-format
@@ -175,6 +169,8 @@ msgid ""
 "some memory is reserved for use by the kernel or system hardware, such as "
 "integrated graphics memory."
 msgstr ""
+"可用内存的容量可能低于显示的容量，因为部分内存被预留供内核或系统硬件使用，例"
+"如集成显卡显存。"
 
 #: MemoryEntry.cpp:157
 #, kde-format
@@ -184,6 +180,8 @@ msgid ""
 "because some memory is reserved for use by the kernel or system hardware, "
 "such as integrated graphics memory."
 msgstr ""
+"显示的内存容量可能低于系统安装的容量，因为部分内存被预留供内核或系统硬件使"
+"用，例如集成显卡显存。"
 
 #: OSVersionEntry.cpp:9
 #, kde-format
