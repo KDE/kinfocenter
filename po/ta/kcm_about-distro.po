@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
 #
-# SPDX-FileCopyrightText: 2022, 2023, 2024 Kishore G <kishore96@gmail.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Kishore G <kishore96@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:43+0000\n"
-"PO-Revision-Date: 2024-11-17 22:08+0530\n"
+"PO-Revision-Date: 2025-03-09 17:58+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -133,29 +133,23 @@ msgctxt ""
 "@label, %1 is the total amount of installed system memory, %2 is the amount "
 "of which is usable, both expressed as 7.7 GiB"
 msgid "%1 of RAM (%2 usable)"
-msgstr ""
+msgstr "%1 RAM (பயன்படுத்தக்கூடியது %2)"
 
 #: MemoryEntry.cpp:119
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt ""
 "@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
 msgstr "%1 RAM"
 
 #: MemoryEntry.cpp:126
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
-msgstr "%1 RAM"
+msgstr "%1 பயன்படுத்தக்கூடிய RAM"
 
 #: MemoryEntry.cpp:132
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
 msgstr "தெரியாதது"
@@ -167,6 +161,7 @@ msgid ""
 "Some memory is reserved for use by the kernel or system hardware such as "
 "integrated graphics memory."
 msgstr ""
+"கருனியோ வரைகலை அட்டையோ பயன்படுத்துவதற்காக நினைவகத்தின் ஓர் பகுதி ஒதுக்கப்பட்டுள்ளது."
 
 #: MemoryEntry.cpp:148
 #, kde-format
@@ -176,6 +171,8 @@ msgid ""
 "some memory is reserved for use by the kernel or system hardware, such as "
 "integrated graphics memory."
 msgstr ""
+"பயன்படுத்தக்கூடிய நினைவிடம் காட்டப்படுவதைவிட குறைவாக இருக்கலாம், ஏனெனில் கருனியோ "
+"வரைகலை அட்டையோ பயன்படுத்துவதற்காக நினைவகத்தின் ஓர் பகுதி ஒதுக்கப்பட்டிருக்கும்."
 
 #: MemoryEntry.cpp:157
 #, kde-format
@@ -185,6 +182,8 @@ msgid ""
 "because some memory is reserved for use by the kernel or system hardware, "
 "such as integrated graphics memory."
 msgstr ""
+"காட்டப்படும் நினைவிடம் நிறுவியுள்ளதைவிட குறைவாக இருக்கலாம், ஏனெனில் கருனியோ வரைகலை "
+"அட்டையோ பயன்படுத்துவதற்காக நினைவகத்தின் ஓர் பகுதி ஒதுக்கப்பட்டிருக்கும்."
 
 #: OSVersionEntry.cpp:9
 #, kde-format
