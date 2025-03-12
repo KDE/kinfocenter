@@ -150,25 +150,26 @@ Canvas
 
         c.beginPath();
 
-        // Draw the line graph if we have enough points
-        if (data.length >= 2) {
-            let firstPoint = null;
-            let point;
-            for (const dataPoint of data) {
-                if (dataPoint.x < currentUnixTime - xDuration) {
-                    continue;
-                }
-
-                if (!firstPoint) {
-                    firstPoint = scalePoint(dataPoint, currentUnixTime);
-                    c.moveTo(firstPoint.x, firstPoint.y);
-                    continue;
-                }
-
-                point = scalePoint(dataPoint, currentUnixTime);
-                c.lineTo(point.x, point.y);
+        // Draw the data points in the graph
+        let firstPoint = null;
+        let point = null;
+        for (const dataPoint of data) {
+            if (!dataPoint || dataPoint.x < currentUnixTime - xDuration) {
+                continue;
             }
 
+            if (!firstPoint) {
+                firstPoint = scalePoint(dataPoint, currentUnixTime);
+                c.moveTo(firstPoint.x, firstPoint.y);
+                continue;
+            }
+
+            point = scalePoint(dataPoint, currentUnixTime);
+            c.lineTo(point.x, point.y);
+        }
+
+        // Finish the graph area
+        if (point && firstPoint) {
             c.stroke();
             c.strokeStyle = 'transparent';
             c.lineTo(point.x, plot.bottom);
