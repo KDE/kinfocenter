@@ -301,7 +301,7 @@ KCM.SimpleKCM {
                         return 100;
                     }
                 }
-                yStep: root.historyType == HistoryModel.RateType ? 10 : 20
+                yStep: root.historyType == HistoryModel.RateType ? 10 : 25
             }
 
             // Reparented to keep the item outside of a layout and the graph canvas
