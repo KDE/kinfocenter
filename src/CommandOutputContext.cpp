@@ -118,10 +118,12 @@ void CommandOutputContext::load()
 
     for (auto it = m_foundExecutablePaths.cbegin(); it != m_foundExecutablePaths.cend(); ++it) {
         if (it.value().isEmpty()) {
-            setError(xi18nc("@info", "The <command>%1</command> tool is required to display this page, but could not be found", it.key()),
+            setError(xi18nc("@info", "Could not load page content", KOSRelease().name()),
                      xi18nc("@info",
-                            "You can search for it and install it using your package manager.<nl/>"
-                            "Then please report this packaging issue to your distribution."));
+                            "Technical details: The <command>%1</command> tool is required to display this page, but could not be found. You may be able to "
+                            "install it using your package manager; either way, please report this packaging issue to %2.",
+                            it.key(),
+                            KOSRelease().name()));
             return;
         }
     }
@@ -133,8 +135,8 @@ void CommandOutputContext::load()
 
         switch (exitStatus) {
         case QProcess::CrashExit:
-            return setError(xi18nc("@info", "The <command>%1</command> tool crashed while generating page content", m_executableName),
-                            xi18nc("@Info", "Try again later. If keeps happening, please report the crash to your distribution."));
+            return setError(xi18nc("@info", "Could not load page content", KOSRelease().name()),
+                            xi18nc("@Info", "Technical details: the <command>%1</command> tool crashed while generating page content.", m_executableName));
         case QProcess::NormalExit:
             break;
         }

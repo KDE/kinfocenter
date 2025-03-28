@@ -10,6 +10,7 @@ import QtQuick.Layouts 1.1
 import org.kde.kirigami 2.20 as Kirigami
 import org.kde.kquickcontrolsaddons 2.0
 import org.kde.kcmutils as KCM
+import org.kde.coreaddons as KCoreAddons
 
 import org.kde.kinfocenter.private as Private
 
@@ -98,12 +99,12 @@ KCM.SimpleKCM {
                     }
                     return ""
                 }
-                icon.name: "data-warning"
+                icon.name: errorNotFilter ? "action-unavailable-symbolic" : "edit-none"
 
                 helpfulAction: Kirigami.Action {
                     enabled: placeholder.errorNotFilter
                     icon.name: "tools-report-bug"
-                    text: i18n("Report this issue")
+                    text: i18n("Report to %1", KCoreAddons.KOSRelease.name)
                     onTriggered: {
                         Qt.openUrlExternally(output.bugReportUrl)
                     }
