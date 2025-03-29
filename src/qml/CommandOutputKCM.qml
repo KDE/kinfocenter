@@ -20,8 +20,6 @@ KCM.SimpleKCM {
 
     implicitWidth: Kirigami.Units.gridUnit * 20
     implicitHeight: Kirigami.Units.gridUnit * 20
-    // Use a horizontal scrollbar if text wrapping is disabled. In all other cases we'll go with the defaults.
-    horizontalScrollBarPolicy: wrapMode === TextEdit.NoWrap ? QQC2.ScrollBar.AsNeeded : QQC2.ScrollBar.AlwaysOff
 
     Kirigami.Theme.colorSet: Kirigami.Theme.View
     Kirigami.Theme.inherit: false
@@ -38,13 +36,28 @@ KCM.SimpleKCM {
     Component {
         id: dataComponent
 
-        Kirigami.SelectableLabel {
-            id: text
-            text: output.text
-            font: Kirigami.Theme.fixedWidthFont
-            wrapMode: root.wrapMode
-            textFormat: root.textFormat
-            onLinkActivated: link => Qt.openUrlExternally(link)
+        Item {
+            width: parent.width
+            implicitHeight: scrollView.implicitHeight
+
+            QQC2.ScrollView {
+                id: scrollView
+
+                anchors.fill: parent
+
+                // Use a horizontal scrollbar if text wrapping is disabled. In all other cases we'll go with the defaults.
+                QQC2.ScrollBar.horizontal.policy: wrapMode === TextEdit.NoWrap ? QQC2.ScrollBar.AsNeeded : QQC2.ScrollBar.AlwaysOff
+
+                Kirigami.SelectableLabel {
+                    id: text
+                    padding: Kirigami.Units.largeSpacing
+                    text: output.text
+                    font.family: "monospace"
+                    wrapMode: root.wrapMode
+                    textFormat: root.textFormat
+                    onLinkActivated: link => Qt.openUrlExternally(link)
+                }
+            }
         }
     }
 
@@ -61,7 +74,7 @@ KCM.SimpleKCM {
                 anchors.centerIn: parent
 
                 running: false
-                // only show the indicator after a brief timeout otherwise we can have a situtation where loading takes a couple
+                // only show the indicator after a brief timeout otherwise we can have a situation where loading takes a couple
                 // milliseconds during which time the indicator flashes up for no good reason
                 Timer {
                     running: true
@@ -116,11 +129,94 @@ KCM.SimpleKCM {
         }
     }
 
-    // This is a bit flimsy but we want to switch the content of the KCM around, based on the data state.
-    // We could switch around visiblity but a Loader seems neater over all.
-    Loader {
-        id: contentLoader
+    contentItem: ColumnLayout {
         anchors.fill: parent
+        spacing: 0
+
+        QQC2.ToolBar {
+            id: filterHeader
+
+            property bool expanded: false
+
+            Layout.fillWidth: true
+            Layout.topMargin: expanded ? 0 : -implicitHeight
+
+            Kirigami.Theme.inherit: false
+            Kirigami.Theme.colorSet: Kirigami.Theme.Window
+
+            visible: {
+                const isVisibleState = (root.state === "" || !(root.state === "noData" && contentLoader.item.errorNotFilter))
+                return isVisibleState && root.textFormat === TextEdit.PlainText
+            }
+            position: QQC2.ToolBar.Header
+
+            function toggleExpanded() {
+                expanded = !expanded;
+                if (expanded) {
+                    filterField.forceActiveFocus();
+                } else {
+                    filterField.clear();
+                    output.filter = "";
+                }
+            }
+
+            Keys.onEscapePressed: {
+                if (expanded) {
+                    toggleExpanded();
+                }
+            }
+
+            // Animate the header to slide in and out from the top
+            // Hacky use of topMargin
+            Behavior on Layout.topMargin {
+                NumberAnimation { 
+                    duration: Kirigami.Units.longDuration
+                    easing.type: Easing.InOutQuad
+                }
+            }
+            
+            contentItem: RowLayout {
+                id: filterLayout
+                anchors.fill: parent
+                anchors.margins: Kirigami.Units.smallSpacing
+                Layout.preferredHeight: filterHeader.visible ? filterHeader.implicitHeight : 0
+                
+                Kirigami.SearchField {
+                    id: filterField
+                
+                    Layout.fillWidth: true
+                    
+                    placeholderText: i18ndc("kinfocenter", "@label placeholder text to filter for something", "Filter…")
+                    
+                    Accessible.name: i18ndc("kinfocenter", "accessible name for filter input", "Filter")
+                    Accessible.searchEdit: true
+                    
+                    onAccepted: {
+                        root.output.filter = filterField.text
+                    }
+                }
+                
+                QQC2.ToolButton {
+                    icon.name: "dialog-close"
+                    onClicked: filterHeader.toggleExpanded()
+                    display: QQC2.AbstractButton.IconOnly
+                    text: i18ndc("kinfocenter", "@action:button close filter header", "Close")
+                    Accessible.name: text
+
+                    QQC2.ToolTip.visible: hovered
+                    QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
+                    QQC2.ToolTip.text: text
+                }
+            }
+        }
+
+        // This is a bit flimsy but we want to switch the content of the KCM around, based on the data state.
+        // We could switch around visiblity but a Loader seems neater over all.
+        Loader {
+            id: contentLoader
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+        }
     }
 
     actions: [
@@ -148,22 +244,13 @@ KCM.SimpleKCM {
             onTriggered: clipboard.content = output.text
         },
         Kirigami.Action {
-            displayComponent: Kirigami.SearchField {
-                enabled: output.error === ''
-                visible: {
-                    const isVisibleState = (root.state === "" || !(root.state === "noData" && contentLoader.item.errorNotFilter))
-                    return isVisibleState && root.textFormat === TextEdit.PlainText
-                }
+            enabled: output.error === ''
+            visible: root.textFormat === TextEdit.PlainText
 
-                placeholderText: i18ndc("kinfocenter", "@label placeholder text to filter for something", "Filter…")
-
-                Accessible.name: i18ndc("kinfocenter", "accessible name for filter input", "Filter")
-                Accessible.searchEdit: true
-
-                focusSequence: "Ctrl+I"
-
-                onAccepted: output.filter = text
-            }
+            icon.name: "search"
+            text: i18ndc("kinfocenter", "@action:button opens filter bar", "Filter")
+            onTriggered: filterHeader.toggleExpanded();
+            shortcut: "Ctrl+I"
         }
     ]
 
