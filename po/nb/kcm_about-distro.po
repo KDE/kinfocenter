@@ -139,8 +139,6 @@ msgstr ""
 
 #: MemoryEntry.cpp:119
 #, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
 msgctxt ""
 "@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
@@ -148,16 +146,12 @@ msgstr "%1 RAM"
 
 #: MemoryEntry.cpp:126
 #, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
 msgstr "%1 RAM"
 
 #: MemoryEntry.cpp:132
 #, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
 msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
 msgstr "Ukjent"
