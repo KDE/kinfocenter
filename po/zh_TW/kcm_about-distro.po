@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:43+0000\n"
-"PO-Revision-Date: 2025-01-08 16:18+0900\n"
+"PO-Revision-Date: 2025-04-07 15:17+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 25.03.70\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -135,29 +135,23 @@ msgctxt ""
 "@label, %1 is the total amount of installed system memory, %2 is the amount "
 "of which is usable, both expressed as 7.7 GiB"
 msgid "%1 of RAM (%2 usable)"
-msgstr ""
+msgstr "%1 的記憶體 (%2 可用)"
 
 #: MemoryEntry.cpp:119
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt ""
 "@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
 msgstr "%1 的記憶體"
 
 #: MemoryEntry.cpp:126
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
-msgstr "%1 的記憶體"
+msgstr "%1 的可用記憶體"
 
 #: MemoryEntry.cpp:132
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
 msgstr "未知"
@@ -168,7 +162,7 @@ msgctxt "@info:tooltip, referring to system memory or RAM"
 msgid ""
 "Some memory is reserved for use by the kernel or system hardware such as "
 "integrated graphics memory."
-msgstr ""
+msgstr "有些記憶體由核心或是系統硬體保留，像是內建顯卡的記憶體。"
 
 #: MemoryEntry.cpp:148
 #, kde-format
@@ -178,6 +172,8 @@ msgid ""
 "some memory is reserved for use by the kernel or system hardware, such as "
 "integrated graphics memory."
 msgstr ""
+"可用記憶體可能比這裡顯示的量還要低，因為某些記憶體由核心或是系統硬體保留，像"
+"是內建顯卡的記憶體。"
 
 #: MemoryEntry.cpp:157
 #, kde-format
@@ -187,6 +183,8 @@ msgid ""
 "because some memory is reserved for use by the kernel or system hardware, "
 "such as integrated graphics memory."
 msgstr ""
+"可用記憶體可能比安裝的量還要低，因為某些記憶體由核心或是系統硬體保留，像是內"
+"建顯卡的記憶體。"
 
 #: OSVersionEntry.cpp:9
 #, kde-format
