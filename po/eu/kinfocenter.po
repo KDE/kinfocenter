@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-30 00:42+0000\n"
+"POT-Creation-Date: 2025-04-15 00:42+0000\n"
 "PO-Revision-Date: 2023-11-29 22:49+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -20,75 +20,89 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 23.08.3\n"
 
-#: CommandOutputContext.cpp:121
+#: CommandOutputContext.cpp:121 CommandOutputContext.cpp:138
 #, kde-kuit-format
 msgctxt "@info"
-msgid ""
-"The <command>%1</command> tool is required to display this page, but could "
-"not be found"
+msgid "Could not load page content"
 msgstr ""
-"<command>%1</command> tresna behar da orri hau azaltzeko, baina ezin izan da "
-"aurkitu"
 
 #: CommandOutputContext.cpp:123
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
-"You can search for it and install it using your package manager.<nl/>Then "
-"please report this packaging issue to your distribution."
+"Technical details: The <command>%1</command> tool is required to display "
+"this page, but could not be found. You may be able to install it using your "
+"package manager; either way, please report this packaging issue to %2."
 msgstr ""
-"Zure pakete-kudeatzailea erabiliz hura bilatu eta instalatu dezakezu.<nl/> "
-"Ondoren, mesedez, eman paketatze arazo horren berri zure banatzaileari."
 
-#: CommandOutputContext.cpp:136
-#, kde-kuit-format
-msgctxt "@info"
-msgid "The <command>%1</command> tool crashed while generating page content"
+#: CommandOutputContext.cpp:139
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info"
+#| msgid "The <command>%1</command> tool crashed while generating page content"
+msgctxt "@Info"
+msgid ""
+"Technical details: the <command>%1</command> tool crashed while generating "
+"page content."
 msgstr ""
 "<command>%1</command> tresna, orriaren edukia sortu bitartean, kraskatu egin "
 "da"
 
-#: CommandOutputContext.cpp:137
-#, kde-kuit-format
-msgctxt "@Info"
-msgid ""
-"Try again later. If keeps happening, please report the crash to your "
-"distribution."
-msgstr ""
-"Saiatu berriz beranduago. Etengabe gertatzen bada, mesedez, eman "
-"kraskaduraren berri zure banatzaileari."
-
-#: qml/CommandOutputKCM.qml:88
+#: qml/CommandOutputKCM.qml:89
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
 msgstr "Ez dago iragazkiarekin bat datorren testurik"
 
-#: qml/CommandOutputKCM.qml:93
+#: qml/CommandOutputKCM.qml:94
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
 msgstr "Ez dago datu erabilgarririk"
 
-#: qml/CommandOutputKCM.qml:106
-#, kde-format
-msgid "Report this issue"
+#: qml/CommandOutputKCM.qml:107
+#, fuzzy, kde-format
+#| msgid "Report this issue"
+msgid "Report to %1"
 msgstr "Eman arazo honen berri"
 
-#: qml/CommandOutputKCM.qml:127
+#: qml/CommandOutputKCM.qml:128
 #, kde-format
 msgctxt "@action:button copies all displayed text"
 msgid "Copy to Clipboard"
 msgstr "Kopiatu arbelera"
 
-#: qml/CommandOutputKCM.qml:138
+#: qml/CommandOutputKCM.qml:139
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
 msgstr "Iragazi…"
 
-#: qml/CommandOutputKCM.qml:140
+#: qml/CommandOutputKCM.qml:141
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"
 msgstr "Iragazi"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The <command>%1</command> tool is required to display this page, but "
+#~ "could not be found"
+#~ msgstr ""
+#~ "<command>%1</command> tresna behar da orri hau azaltzeko, baina ezin izan "
+#~ "da aurkitu"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You can search for it and install it using your package manager.<nl/>Then "
+#~ "please report this packaging issue to your distribution."
+#~ msgstr ""
+#~ "Zure pakete-kudeatzailea erabiliz hura bilatu eta instalatu dezakezu.<nl/"
+#~ "> Ondoren, mesedez, eman paketatze arazo horren berri zure banatzaileari."
+
+#~ msgctxt "@Info"
+#~ msgid ""
+#~ "Try again later. If keeps happening, please report the crash to your "
+#~ "distribution."
+#~ msgstr ""
+#~ "Saiatu berriz beranduago. Etengabe gertatzen bada, mesedez, eman "
+#~ "kraskaduraren berri zure banatzaileari."

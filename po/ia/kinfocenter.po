@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-30 00:42+0000\n"
+"POT-Creation-Date: 2025-04-15 00:42+0000\n"
 "PO-Revision-Date: 2023-12-01 10:32+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -17,75 +17,89 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 22.12.3\n"
 
-#: CommandOutputContext.cpp:121
+#: CommandOutputContext.cpp:121 CommandOutputContext.cpp:138
 #, kde-kuit-format
 msgctxt "@info"
-msgid ""
-"The <command>%1</command> tool is required to display this page, but could "
-"not be found"
+msgid "Could not load page content"
 msgstr ""
-"Le instrumento <command>%1</command>  es requirite per monsrar iste pagina, "
-"ma non poteva esser trovate"
 
 #: CommandOutputContext.cpp:123
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
-"You can search for it and install it using your package manager.<nl/>Then "
-"please report this packaging issue to your distribution."
+"Technical details: The <command>%1</command> tool is required to display "
+"this page, but could not be found. You may be able to install it using your "
+"package manager; either way, please report this packaging issue to %2."
 msgstr ""
-"Tu pote cercar lo e installar lo per usar tu gerente de pacchettos.<nl/"
-">Postea per favor tu reporta iste problemade pacchettar a tu distribution."
 
-#: CommandOutputContext.cpp:136
-#, kde-kuit-format
-msgctxt "@info"
-msgid "The <command>%1</command> tool crashed while generating page content"
+#: CommandOutputContext.cpp:139
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info"
+#| msgid "The <command>%1</command> tool crashed while generating page content"
+msgctxt "@Info"
+msgid ""
+"Technical details: the <command>%1</command> tool crashed while generating "
+"page content."
 msgstr ""
 "Le instrumento  <command>%1</command> fracassava durante le generation de "
 "contento de pagina"
 
-#: CommandOutputContext.cpp:137
-#, kde-kuit-format
-msgctxt "@Info"
-msgid ""
-"Try again later. If keeps happening, please report the crash to your "
-"distribution."
-msgstr ""
-"Essaya de novo plus tarde. Si occurre novemente, tu reporta le fracasso a tu "
-"distribution."
-
-#: qml/CommandOutputKCM.qml:88
+#: qml/CommandOutputKCM.qml:89
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
 msgstr "Nulle texto correspondente al filtro"
 
-#: qml/CommandOutputKCM.qml:93
+#: qml/CommandOutputKCM.qml:94
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
 msgstr "Necun datos disponibile"
 
-#: qml/CommandOutputKCM.qml:106
-#, kde-format
-msgid "Report this issue"
+#: qml/CommandOutputKCM.qml:107
+#, fuzzy, kde-format
+#| msgid "Report this issue"
+msgid "Report to %1"
 msgstr "Reporta iste question"
 
-#: qml/CommandOutputKCM.qml:127
+#: qml/CommandOutputKCM.qml:128
 #, kde-format
 msgctxt "@action:button copies all displayed text"
 msgid "Copy to Clipboard"
 msgstr "Copia in area de transferentia"
 
-#: qml/CommandOutputKCM.qml:138
+#: qml/CommandOutputKCM.qml:139
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
 msgstr "Filtrar..."
 
-#: qml/CommandOutputKCM.qml:140
+#: qml/CommandOutputKCM.qml:141
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"
 msgstr "Filtro"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The <command>%1</command> tool is required to display this page, but "
+#~ "could not be found"
+#~ msgstr ""
+#~ "Le instrumento <command>%1</command>  es requirite per monsrar iste "
+#~ "pagina, ma non poteva esser trovate"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You can search for it and install it using your package manager.<nl/>Then "
+#~ "please report this packaging issue to your distribution."
+#~ msgstr ""
+#~ "Tu pote cercar lo e installar lo per usar tu gerente de pacchettos.<nl/"
+#~ ">Postea per favor tu reporta iste problemade pacchettar a tu distribution."
+
+#~ msgctxt "@Info"
+#~ msgid ""
+#~ "Try again later. If keeps happening, please report the crash to your "
+#~ "distribution."
+#~ msgstr ""
+#~ "Essaya de novo plus tarde. Si occurre novemente, tu reporta le fracasso a "
+#~ "tu distribution."

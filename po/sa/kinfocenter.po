@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-30 00:42+0000\n"
+"POT-Creation-Date: 2025-04-15 00:42+0000\n"
 "PO-Revision-Date: 2024-12-14 01:48+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -19,71 +19,85 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n>2);\n"
 "X-Generator: Lokalize 24.08.2\n"
 
-#: CommandOutputContext.cpp:121
+#: CommandOutputContext.cpp:121 CommandOutputContext.cpp:138
 #, kde-kuit-format
 msgctxt "@info"
-msgid ""
-"The <command>%1</command> tool is required to display this page, but could "
-"not be found"
-msgstr "एतत् पृष्ठं प्रदर्शयितुं <command>%1</command> साधनं आवश्यकं, परन्तु न लब्धम्"
+msgid "Could not load page content"
+msgstr ""
 
 #: CommandOutputContext.cpp:123
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
-"You can search for it and install it using your package manager.<nl/>Then "
-"please report this packaging issue to your distribution."
+"Technical details: The <command>%1</command> tool is required to display "
+"this page, but could not be found. You may be able to install it using your "
+"package manager; either way, please report this packaging issue to %2."
 msgstr ""
-"भवान् तत् अन्वेष्टुं स्वस्य संकुलप्रबन्धकस्य उपयोगेन संस्थापयितुं च शक्नोति।<nl/>ततः कृपया एतत् "
-"संकुलसमस्यां स्ववितरणं प्रति निवेदयतु।"
 
-#: CommandOutputContext.cpp:136
-#, kde-kuit-format
-msgctxt "@info"
-msgid "The <command>%1</command> tool crashed while generating page content"
-msgstr "पृष्ठसामग्रीजननकाले <command>%1</command> साधनं दुर्घटनाम् अभवत्"
-
-#: CommandOutputContext.cpp:137
-#, kde-kuit-format
+#: CommandOutputContext.cpp:139
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info"
+#| msgid "The <command>%1</command> tool crashed while generating page content"
 msgctxt "@Info"
 msgid ""
-"Try again later. If keeps happening, please report the crash to your "
-"distribution."
-msgstr ""
-"पश्चात् पुनः प्रयासं कुर्वन्तु। यदि भवति एव तर्हि कृपया दुर्घटनायाः सूचनां स्ववितरणं प्रति "
-"ददातु ।"
+"Technical details: the <command>%1</command> tool crashed while generating "
+"page content."
+msgstr "पृष्ठसामग्रीजननकाले <command>%1</command> साधनं दुर्घटनाम् अभवत्"
 
-#: qml/CommandOutputKCM.qml:88
+#: qml/CommandOutputKCM.qml:89
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
 msgstr "फ़िल्टरसङ्गतः पाठः नास्ति"
 
-#: qml/CommandOutputKCM.qml:93
+#: qml/CommandOutputKCM.qml:94
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
 msgstr "न कोऽपि दत्तांशः उपलब्धः"
 
-#: qml/CommandOutputKCM.qml:106
-#, kde-format
-msgid "Report this issue"
+#: qml/CommandOutputKCM.qml:107
+#, fuzzy, kde-format
+#| msgid "Report this issue"
+msgid "Report to %1"
 msgstr "अस्य विषयस्य सूचनां ददातु"
 
-#: qml/CommandOutputKCM.qml:127
+#: qml/CommandOutputKCM.qml:128
 #, kde-format
 msgctxt "@action:button copies all displayed text"
 msgid "Copy to Clipboard"
 msgstr "क्लिप्बोर्ड् प्रति प्रतिलिख्यताम्"
 
-#: qml/CommandOutputKCM.qml:138
+#: qml/CommandOutputKCM.qml:139
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
 msgstr "फ़िल्टर…"
 
-#: qml/CommandOutputKCM.qml:140
+#: qml/CommandOutputKCM.qml:141
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"
 msgstr "फ़िल्टर"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The <command>%1</command> tool is required to display this page, but "
+#~ "could not be found"
+#~ msgstr "एतत् पृष्ठं प्रदर्शयितुं <command>%1</command> साधनं आवश्यकं, परन्तु न लब्धम्"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You can search for it and install it using your package manager.<nl/>Then "
+#~ "please report this packaging issue to your distribution."
+#~ msgstr ""
+#~ "भवान् तत् अन्वेष्टुं स्वस्य संकुलप्रबन्धकस्य उपयोगेन संस्थापयितुं च शक्नोति।<nl/>ततः कृपया एतत् "
+#~ "संकुलसमस्यां स्ववितरणं प्रति निवेदयतु।"
+
+#~ msgctxt "@Info"
+#~ msgid ""
+#~ "Try again later. If keeps happening, please report the crash to your "
+#~ "distribution."
+#~ msgstr ""
+#~ "पश्चात् पुनः प्रयासं कुर्वन्तु। यदि भवति एव तर्हि कृपया दुर्घटनायाः सूचनां स्ववितरणं प्रति "
+#~ "ददातु ।"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-30 00:42+0000\n"
+"POT-Creation-Date: 2025-04-15 00:42+0000\n"
 "PO-Revision-Date: 2024-01-14 21:52+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -17,74 +17,88 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 23.08.4\n"
 
-#: CommandOutputContext.cpp:121
+#: CommandOutputContext.cpp:121 CommandOutputContext.cpp:138
 #, kde-kuit-format
 msgctxt "@info"
-msgid ""
-"The <command>%1</command> tool is required to display this page, but could "
-"not be found"
+msgid "Could not load page content"
 msgstr ""
-"A(z) <command>%1</command> szükséges az oldal megjelenítéséhez, de nem "
-"található"
 
 #: CommandOutputContext.cpp:123
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
-"You can search for it and install it using your package manager.<nl/>Then "
-"please report this packaging issue to your distribution."
+"Technical details: The <command>%1</command> tool is required to display "
+"this page, but could not be found. You may be able to install it using your "
+"package manager; either way, please report this packaging issue to %2."
 msgstr ""
-"A csomagkezelővel megkeresheti és telepítheti azt.<nl/>Ezután jelentse ezt a "
-"csomagolási hibát a disztribúciójának."
 
-#: CommandOutputContext.cpp:136
-#, kde-kuit-format
-msgctxt "@info"
-msgid "The <command>%1</command> tool crashed while generating page content"
+#: CommandOutputContext.cpp:139
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info"
+#| msgid "The <command>%1</command> tool crashed while generating page content"
+msgctxt "@Info"
+msgid ""
+"Technical details: the <command>%1</command> tool crashed while generating "
+"page content."
 msgstr ""
 "A(z) <command>%1</command> összeomlott az oldal tartalmának generálása közben"
 
-#: CommandOutputContext.cpp:137
-#, kde-kuit-format
-msgctxt "@Info"
-msgid ""
-"Try again later. If keeps happening, please report the crash to your "
-"distribution."
-msgstr ""
-"Próbálja újra később. Ha ez továbbra is megtörténik, jelentse ezt az "
-"összeomlást a disztribúciójának."
-
-#: qml/CommandOutputKCM.qml:88
+#: qml/CommandOutputKCM.qml:89
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
 msgstr "Nincs a szűrőre illeszkedő szöveg"
 
-#: qml/CommandOutputKCM.qml:93
+#: qml/CommandOutputKCM.qml:94
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
 msgstr "Nincs elérhető adat"
 
-#: qml/CommandOutputKCM.qml:106
-#, kde-format
-msgid "Report this issue"
+#: qml/CommandOutputKCM.qml:107
+#, fuzzy, kde-format
+#| msgid "Report this issue"
+msgid "Report to %1"
 msgstr "Jelentse ezt a hibát"
 
-#: qml/CommandOutputKCM.qml:127
+#: qml/CommandOutputKCM.qml:128
 #, kde-format
 msgctxt "@action:button copies all displayed text"
 msgid "Copy to Clipboard"
 msgstr "Másolás a vágólapra"
 
-#: qml/CommandOutputKCM.qml:138
+#: qml/CommandOutputKCM.qml:139
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
 msgstr "Szűrő…"
 
-#: qml/CommandOutputKCM.qml:140
+#: qml/CommandOutputKCM.qml:141
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"
 msgstr "Szűrő"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The <command>%1</command> tool is required to display this page, but "
+#~ "could not be found"
+#~ msgstr ""
+#~ "A(z) <command>%1</command> szükséges az oldal megjelenítéséhez, de nem "
+#~ "található"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "You can search for it and install it using your package manager.<nl/>Then "
+#~ "please report this packaging issue to your distribution."
+#~ msgstr ""
+#~ "A csomagkezelővel megkeresheti és telepítheti azt.<nl/>Ezután jelentse "
+#~ "ezt a csomagolási hibát a disztribúciójának."
+
+#~ msgctxt "@Info"
+#~ msgid ""
+#~ "Try again later. If keeps happening, please report the crash to your "
+#~ "distribution."
+#~ msgstr ""
+#~ "Próbálja újra később. Ha ez továbbra is megtörténik, jelentse ezt az "
+#~ "összeomlást a disztribúciójának."
