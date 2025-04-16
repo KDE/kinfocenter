@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-15 00:42+0000\n"
-"PO-Revision-Date: 2023-11-30 05:58+0100\n"
+"PO-Revision-Date: 2025-04-15 03:32+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,13 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #: CommandOutputContext.cpp:121 CommandOutputContext.cpp:138
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Could not load page content"
-msgstr ""
+msgstr "გვერდის შემცველობის ჩატვირთვა შეუძლებელია"
 
 #: CommandOutputContext.cpp:123
 #, kde-kuit-format
@@ -32,18 +32,20 @@ msgid ""
 "this page, but could not be found. You may be able to install it using your "
 "package manager; either way, please report this packaging issue to %2."
 msgstr ""
+"ტექნიკური დეტალები: გვერდის საჩვენებლად საჭიროა პროგრამა <command>%1</"
+"command>, მაგრამ ის აღმოჩენილი არაა. შეიძლება, მისი დაყენება თქვენი "
+"პაკეტების მმართველიდან შეძლოთ. ასეა თუ ისე, მოგვწერეთ პაკეტის პრობლემის "
+"შესახებ მისამართზე %2."
 
 #: CommandOutputContext.cpp:139
-#, fuzzy, kde-kuit-format
-#| msgctxt "@info"
-#| msgid "The <command>%1</command> tool crashed while generating page content"
+#, kde-kuit-format
 msgctxt "@Info"
 msgid ""
 "Technical details: the <command>%1</command> tool crashed while generating "
 "page content."
 msgstr ""
 "ბრძანება <command>%1</command> ავარიულად დასრულდა გვერდის შემცველობის "
-"შექმნისას"
+"შექმნისას."
 
 #: qml/CommandOutputKCM.qml:89
 #, kde-format
@@ -58,10 +60,9 @@ msgid "No data available"
 msgstr "მონაცემები მიუწვდომელია"
 
 #: qml/CommandOutputKCM.qml:107
-#, fuzzy, kde-format
-#| msgid "Report this issue"
+#, kde-format
 msgid "Report to %1"
-msgstr "ამ პრობლემის რეპორტი"
+msgstr "პრობლემის ანგარიში %1-სთვის"
 
 #: qml/CommandOutputKCM.qml:128
 #, kde-format

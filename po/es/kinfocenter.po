@@ -1,15 +1,15 @@
 # Spanish translations for kinfocenter.po package.
-# Copyright (C) 2023 This file is copyright:
+# Copyright (C) 2023-2025 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
 # Automatically generated, 2023.
 #
-# SPDX-FileCopyrightText: 2023 Eloy Cuadra <ecuadra@eloihr.net>
+# SPDX-FileCopyrightText: 2023, 2025 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-15 00:42+0000\n"
-"PO-Revision-Date: 2023-12-02 01:08+0100\n"
+"PO-Revision-Date: 2025-04-15 23:53+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,13 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.3\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #: CommandOutputContext.cpp:121 CommandOutputContext.cpp:138
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Could not load page content"
-msgstr ""
+msgstr "No se ha podido cargar el contenido de la página"
 
 #: CommandOutputContext.cpp:123
 #, kde-kuit-format
@@ -33,18 +33,20 @@ msgid ""
 "this page, but could not be found. You may be able to install it using your "
 "package manager; either way, please report this packaging issue to %2."
 msgstr ""
+"Detalles técnicos: Se necesita la herramienta <command>%1</command> para "
+"mostrar esta página, pero no se ha encontrado. Es posible que pueda "
+"instalarla usando el gestor de paquetes. De cualquier modo, notifique este "
+"problema de empaquetado a %2."
 
 #: CommandOutputContext.cpp:139
-#, fuzzy, kde-kuit-format
-#| msgctxt "@info"
-#| msgid "The <command>%1</command> tool crashed while generating page content"
+#, kde-kuit-format
 msgctxt "@Info"
 msgid ""
 "Technical details: the <command>%1</command> tool crashed while generating "
 "page content."
 msgstr ""
-"La herramienta <command>%1</command> ha fallado al generar el contenido de "
-"la página."
+"Detalles técnicos: La herramienta <command>%1</command> ha fallado al "
+"generar el contenido de la página."
 
 #: qml/CommandOutputKCM.qml:89
 #, kde-format
@@ -59,10 +61,9 @@ msgid "No data available"
 msgstr "No hay datos disponibles"
 
 #: qml/CommandOutputKCM.qml:107
-#, fuzzy, kde-format
-#| msgid "Report this issue"
+#, kde-format
 msgid "Report to %1"
-msgstr "Notificar este problema"
+msgstr "Notificar a %1"
 
 #: qml/CommandOutputKCM.qml:128
 #, kde-format
@@ -74,34 +75,10 @@ msgstr "Copiar al portapapeles"
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
-msgstr "Filtro..."
+msgstr "Filtro…"
 
 #: qml/CommandOutputKCM.qml:141
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"
 msgstr "Filtro"
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "The <command>%1</command> tool is required to display this page, but "
-#~ "could not be found"
-#~ msgstr ""
-#~ "La herramienta <command>%1</command> es necesaria para mostrar esta "
-#~ "página, pero no se ha encontrado."
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "You can search for it and install it using your package manager.<nl/>Then "
-#~ "please report this packaging issue to your distribution."
-#~ msgstr ""
-#~ "Puede buscarla e instalarla usando su gestor de paquetes.<nl/>Notifique "
-#~ "este problema de empaquetado a su distribución."
-
-#~ msgctxt "@Info"
-#~ msgid ""
-#~ "Try again later. If keeps happening, please report the crash to your "
-#~ "distribution."
-#~ msgstr ""
-#~ "Vuelva a intentarlo más tarde. Si sigue ocurriendo, informe de este fallo "
-#~ "a su distribución."

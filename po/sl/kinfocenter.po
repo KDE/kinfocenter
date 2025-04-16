@@ -7,22 +7,22 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-15 00:42+0000\n"
-"PO-Revision-Date: 2023-11-30 09:58+0100\n"
+"PO-Revision-Date: 2025-04-15 07:22+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.08.3\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
+"X-Generator: Poedit 3.6\n"
 
 #: CommandOutputContext.cpp:121 CommandOutputContext.cpp:138
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Could not load page content"
-msgstr ""
+msgstr "Vsebine strani ni bilo mogoče naložiti"
 
 #: CommandOutputContext.cpp:123
 #, kde-kuit-format
@@ -32,17 +32,20 @@ msgid ""
 "this page, but could not be found. You may be able to install it using your "
 "package manager; either way, please report this packaging issue to %2."
 msgstr ""
+"Tehnične podrobnosti: Za prikaz te strani je potrebno orodje <command>%1</"
+"command>, vendar ga ni bilo mogoče najti. Morda ga boste lahko namestili s "
+"svojim upravljalnikom paketov; v vsakem primeru poročajte o težavi s "
+"pakiranjem %2."
 
 #: CommandOutputContext.cpp:139
-#, fuzzy, kde-kuit-format
-#| msgctxt "@info"
-#| msgid "The <command>%1</command> tool crashed while generating page content"
+#, kde-kuit-format
 msgctxt "@Info"
 msgid ""
 "Technical details: the <command>%1</command> tool crashed while generating "
 "page content."
 msgstr ""
-"Orodje <command>%1</command> se je sesulo pri generiranju vsebine strani"
+"Tehnične podrobnosti: orodje <command>%1</command> se je sesulo med "
+"ustvarjanjem vsebine strani."
 
 #: qml/CommandOutputKCM.qml:89
 #, kde-format
@@ -57,10 +60,9 @@ msgid "No data available"
 msgstr "Ni razpoložljivih podatkov"
 
 #: qml/CommandOutputKCM.qml:107
-#, fuzzy, kde-format
-#| msgid "Report this issue"
+#, kde-format
 msgid "Report to %1"
-msgstr "Poročajte o tej težavi"
+msgstr "Poročajte k %1"
 
 #: qml/CommandOutputKCM.qml:128
 #, kde-format

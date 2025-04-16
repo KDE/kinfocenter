@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
 #
-# giovanni <g.sora@tiscali.it>, 2023.
+# SPDX-FileCopyrightText: 2023, 2025 giovanni <g.sora@tiscali.it>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-15 00:42+0000\n"
-"PO-Revision-Date: 2023-12-01 10:32+0100\n"
+"PO-Revision-Date: 2025-04-15 15:23+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -15,13 +15,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: CommandOutputContext.cpp:121 CommandOutputContext.cpp:138
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Could not load page content"
-msgstr ""
+msgstr "Non poteva cargar contento de pagina"
 
 #: CommandOutputContext.cpp:123
 #, kde-kuit-format
@@ -31,18 +31,20 @@ msgid ""
 "this page, but could not be found. You may be able to install it using your "
 "package manager; either way, please report this packaging issue to %2."
 msgstr ""
+"Detalios Technic : Le instrumento  <command>%1</command> es requirite per "
+"monstrar iste pagina, ma nonpoteva esser trovate. Tu poterea installar lo "
+"per usar tu gerente de pacchettos; alteremente, pro favor reporta iste "
+"problema de pacchettos a %2."
 
 #: CommandOutputContext.cpp:139
-#, fuzzy, kde-kuit-format
-#| msgctxt "@info"
-#| msgid "The <command>%1</command> tool crashed while generating page content"
+#, kde-kuit-format
 msgctxt "@Info"
 msgid ""
 "Technical details: the <command>%1</command> tool crashed while generating "
 "page content."
 msgstr ""
-"Le instrumento  <command>%1</command> fracassava durante le generation de "
-"contento de pagina"
+"Detalios technic: Le instrumento  <command>%1</command> fracassava durante "
+"le generation de contento de pagina"
 
 #: qml/CommandOutputKCM.qml:89
 #, kde-format
@@ -57,10 +59,9 @@ msgid "No data available"
 msgstr "Necun datos disponibile"
 
 #: qml/CommandOutputKCM.qml:107
-#, fuzzy, kde-format
-#| msgid "Report this issue"
+#, kde-format
 msgid "Report to %1"
-msgstr "Reporta iste question"
+msgstr "Reporta a %1"
 
 #: qml/CommandOutputKCM.qml:128
 #, kde-format
