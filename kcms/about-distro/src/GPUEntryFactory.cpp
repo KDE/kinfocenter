@@ -130,47 +130,29 @@ std::vector<GPUEntry::Device> vulkanDevices()
         };
     }
 
-    QVulkanInstance instance;
-    if (!instance.create()) {
-        qWarning() << "Failed to create vulkan instance";
-        return {};
-    }
-    auto functions = instance.functions();
+    auto vulkanHelperExecutable = QStandardPaths::findExecutable("kinfocenter-vulkan-helper", searchPaths());
+    qDebug() << "Looking at" << searchPaths() << vulkanHelperExecutable;
 
-    uint32_t count = 0;
-    functions->vkEnumeratePhysicalDevices(instance.vkInstance(), &count, nullptr);
-    if (count == 0) {
-        qWarning("No vulkan devices");
+    QJsonDocument document = readFromProcess(vulkanHelperExecutable, 0);
+    if (!document.isArray()) {
+        qWarning() << "Failed to read GPU info from vulkan helper";
         return {};
     }
 
-    QVarLengthArray<VkPhysicalDevice, 4> devices(count);
-    VkResult error = functions->vkEnumeratePhysicalDevices(instance.vkInstance(), &count, devices.data());
-    if (error != VK_SUCCESS || count == 0) {
-        qWarning("Failed to enumerate vulkan devices: %d", error);
-        return {};
-    }
-
+    const QJsonArray array = document.array();
     std::vector<GPUEntry::Device> deviceList;
-    deviceList.reserve(devices.count());
-    for (const auto &device : devices) {
-        VkPhysicalDeviceProperties properties;
-        functions->vkGetPhysicalDeviceProperties(device, &properties);
-        qDebug("Physical device %d: '%s' %d.%d.%d (api %d.%d.%d vendor 0x%X device 0x%X type %d)",
-               0,
-               properties.deviceName,
-               VK_VERSION_MAJOR(properties.driverVersion),
-               VK_VERSION_MINOR(properties.driverVersion),
-               VK_VERSION_PATCH(properties.driverVersion),
-               VK_VERSION_MAJOR(properties.apiVersion),
-               VK_VERSION_MINOR(properties.apiVersion),
-               VK_VERSION_PATCH(properties.apiVersion),
-               properties.vendorID,
-               properties.deviceID,
-               properties.deviceType);
-
-        deviceList.emplace_back(QString::fromUtf8(properties.deviceName), properties.deviceType);
+    deviceList.reserve(array.size());
+    for (const auto &device : array) {
+        const auto obj = device.toObject();
+        const QString name = FancyString::fromRenderer(obj.value("name").toString());
+        if (name.isEmpty()) {
+            qWarning() << "Empty name for device";
+            return {};
+        }
+        const VkPhysicalDeviceType type = static_cast<VkPhysicalDeviceType>(obj.value("type").toInt(VK_PHYSICAL_DEVICE_TYPE_OTHER));
+        deviceList.emplace_back(GPUEntry::Device{name, type});
     }
+
     return deviceList;
 }
 
