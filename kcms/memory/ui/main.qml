@@ -25,7 +25,7 @@ KCM.SimpleKCM {
     Kirigami.SelectableLabel {
         id: text
         text: kcm.memoryInformation
-        font.family: "monospace"
+        font: Kirigami.Theme.fixedWidthFont
         visible: kcm.memoryInformation !== ""
     }
 }
