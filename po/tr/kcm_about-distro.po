@@ -279,7 +279,3 @@ msgstr "Geçerli Dilde"
 msgctxt "@action:button Copy Details..."
 msgid "In English"
 msgstr "İngilizce Olarak"
-
-#~ msgctxt "@label %1 is a GPU name and %2 a type such as 'Integrated'"
-#~ msgid "%1 [%2]"
-#~ msgstr "%1 [%2]"

@@ -385,14 +385,3 @@ msgstr "%​%1"
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
-
-#~ msgctxt "Shorthand for Watts"
-#~ msgid "W"
-#~ msgstr "W"
-
-#~ msgctxt "literal percent sign"
-#~ msgid "%"
-#~ msgstr "%"
-
-#~ msgid "This type of history is currently not available for this device."
-#~ msgstr "Bu tür bir geçmiş şu anda bu aygıt için kullanılamıyor."

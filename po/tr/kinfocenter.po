@@ -21,7 +21,7 @@ msgstr ""
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Could not load page content"
-msgstr ""
+msgstr "Sayfa içeriği yüklenemedi"
 
 #: CommandOutputContext.cpp:123
 #, kde-kuit-format
@@ -31,16 +31,20 @@ msgid ""
 "this page, but could not be found. You may be able to install it using your "
 "package manager; either way, please report this packaging issue to %2."
 msgstr ""
+"Teknik ayrıntılar: Bu sayfayı görüntülemek için <command>%1</command> aracı "
+"gerekiyor; ancak sisteminizde bulunamadı. Onu, sisteminizin paket "
+"yöneticisini kullanarak kurabilirsiniz; ancak her halükârda bu durumu %2 "
+"topluluğuna bildirin."
 
 #: CommandOutputContext.cpp:139
-#, fuzzy, kde-kuit-format
-#| msgctxt "@info"
-#| msgid "The <command>%1</command> tool crashed while generating page content"
+#, kde-kuit-format
 msgctxt "@Info"
 msgid ""
 "Technical details: the <command>%1</command> tool crashed while generating "
 "page content."
-msgstr "Sayfa içeriği oluşturulurken <command>%1</command> aracı çöktü"
+msgstr ""
+"Teknik ayrıntılar: <command>%1</command> aracı, sayfa içeriği üretilirken "
+"çöktü."
 
 #: qml/CommandOutputKCM.qml:89
 #, kde-format
@@ -55,10 +59,9 @@ msgid "No data available"
 msgstr "Kullanılabilir veri yok"
 
 #: qml/CommandOutputKCM.qml:107
-#, fuzzy, kde-format
-#| msgid "Report this issue"
+#, kde-format
 msgid "Report to %1"
-msgstr "Bu Sorunu Bildir"
+msgstr "Şuraya Bildir: %1"
 
 #: qml/CommandOutputKCM.qml:128
 #, kde-format
@@ -77,27 +80,3 @@ msgstr "Süz…"
 msgctxt "accessible name for filter input"
 msgid "Filter"
 msgstr "Süz"
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "The <command>%1</command> tool is required to display this page, but "
-#~ "could not be found"
-#~ msgstr ""
-#~ "Bu sayfayı görüntülemek için <command>%1</command> aracı gerekiyor; ancak "
-#~ "bulunamadı"
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "You can search for it and install it using your package manager.<nl/>Then "
-#~ "please report this packaging issue to your distribution."
-#~ msgstr ""
-#~ "Paket yöneticinizi kullanarak arayabilir ve kurabilirsiniz.<nl/"
-#~ ">Sonrasında lütfen bu paketleme sorununu dağıtımınıza bildirin."
-
-#~ msgctxt "@Info"
-#~ msgid ""
-#~ "Try again later. If keeps happening, please report the crash to your "
-#~ "distribution."
-#~ msgstr ""
-#~ "Daha sonra yeniden deneyin. Bu sürekli oluyorsa lütfen çökmeyi "
-#~ "dağıtımınıza bildirin."

@@ -21,7 +21,7 @@ msgstr ""
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Could not load page content"
-msgstr ""
+msgstr "无法加载页面内容"
 
 #: CommandOutputContext.cpp:123
 #, kde-kuit-format
@@ -31,6 +31,9 @@ msgid ""
 "this page, but could not be found. You may be able to install it using your "
 "package manager; either way, please report this packaging issue to %2."
 msgstr ""
+"技术细节：显示此页面需要 <command>%1</command> 工具，但程序无法在系统中找到"
+"它。您或许可以使用您的软件包管理器安装它；无论具体情况如何，请将此打包问题报"
+"告给 %2。"
 
 #: CommandOutputContext.cpp:139
 #, kde-kuit-format
@@ -38,7 +41,7 @@ msgctxt "@Info"
 msgid ""
 "Technical details: the <command>%1</command> tool crashed while generating "
 "page content."
-msgstr ""
+msgstr "技术细节：生成页面内容时 <command>%1</command> 工具程序发生了崩溃。"
 
 #: qml/CommandOutputKCM.qml:89
 #, kde-format
@@ -55,7 +58,7 @@ msgstr "没有可用数据"
 #: qml/CommandOutputKCM.qml:107
 #, kde-format
 msgid "Report to %1"
-msgstr ""
+msgstr "报告到 %1"
 
 #: qml/CommandOutputKCM.qml:128
 #, kde-format

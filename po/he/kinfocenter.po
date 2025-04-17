@@ -1,21 +1,20 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# SPDX-FileCopyrightText: 2025 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-15 00:42+0000\n"
-"PO-Revision-Date: 2023-12-06 10:44+0200\n"
+"PO-Revision-Date: 2025-04-16 08:53+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Lokalize 24.12.3\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
 
@@ -23,7 +22,7 @@ msgstr ""
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Could not load page content"
-msgstr ""
+msgstr "לא ניתן לטעון את תוכן העמוד"
 
 #: CommandOutputContext.cpp:123
 #, kde-kuit-format
@@ -33,16 +32,17 @@ msgid ""
 "this page, but could not be found. You may be able to install it using your "
 "package manager; either way, please report this packaging issue to %2."
 msgstr ""
+"פרטים טכניים: הכלי <command>%1</command> נחוץ להצגת העמוד הזה, אך הוא לא "
+"נמצא. אפשר להתקין אותו בעזרת מנהל החבילות שלך, כך או כך, נא לדווח על תקלת "
+"האריזה הזאת אל %2."
 
 #: CommandOutputContext.cpp:139
-#, fuzzy, kde-kuit-format
-#| msgctxt "@info"
-#| msgid "The <command>%1</command> tool crashed while generating page content"
+#, kde-kuit-format
 msgctxt "@Info"
 msgid ""
 "Technical details: the <command>%1</command> tool crashed while generating "
 "page content."
-msgstr "הכלי <command>%1</command> קרס תוך כדי יצירת תוכן העמוד"
+msgstr "פרטים טכניים: הכלי <command>%1</command> קרס תוך כדי יצירת תוכן העמוד"
 
 #: qml/CommandOutputKCM.qml:89
 #, kde-format
@@ -57,10 +57,9 @@ msgid "No data available"
 msgstr "אין נתונים זמינים"
 
 #: qml/CommandOutputKCM.qml:107
-#, fuzzy, kde-format
-#| msgid "Report this issue"
+#, kde-format
 msgid "Report to %1"
-msgstr "דיווח על התקלה הזאת"
+msgstr "דיווח אל %1"
 
 #: qml/CommandOutputKCM.qml:128
 #, kde-format
