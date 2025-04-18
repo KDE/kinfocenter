@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
+# SPDX-FileCopyrightText: 2024, 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 #
-# SPDX-FileCopyrightText: 2024 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-15 00:42+0000\n"
-"PO-Revision-Date: 2024-01-20 18:27+0400\n"
+"PO-Revision-Date: 2025-04-17 09:42+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -16,12 +16,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: CommandOutputContext.cpp:121 CommandOutputContext.cpp:138
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Could not load page content"
-msgstr ""
+msgstr "تعذر تحميل محتوى الصفحة"
 
 #: CommandOutputContext.cpp:123
 #, kde-kuit-format
@@ -31,16 +32,18 @@ msgid ""
 "this page, but could not be found. You may be able to install it using your "
 "package manager; either way, please report this packaging issue to %2."
 msgstr ""
+"التفاصيل الفنية: أداة <command>%1</command> مطلوبة لعرض هذه الصفحة، ولكن لم "
+"يعثر عليها. قد تتمكن من تثبيتها باستخدام مدير الحزم؛ على أي حال، يُرجى "
+"الإبلاغ عن مشكلة الحزم هذه إلى %2."
 
 #: CommandOutputContext.cpp:139
-#, fuzzy, kde-kuit-format
-#| msgctxt "@info"
-#| msgid "The <command>%1</command> tool crashed while generating page content"
+#, kde-kuit-format
 msgctxt "@Info"
 msgid ""
 "Technical details: the <command>%1</command> tool crashed while generating "
 "page content."
-msgstr "انهارت الأداة <command>%1</command> عند توليد محتويات الصفحة"
+msgstr ""
+"التفاصيل الفنية: انهارت الأداة <command>%1</command> عند توليد محتويات الصفحة"
 
 #: qml/CommandOutputKCM.qml:89
 #, kde-format
@@ -55,10 +58,9 @@ msgid "No data available"
 msgstr "لا تتوفر بيانات"
 
 #: qml/CommandOutputKCM.qml:107
-#, fuzzy, kde-format
-#| msgid "Report this issue"
+#, kde-format
 msgid "Report to %1"
-msgstr "أبلغ عن هذه المشكلة"
+msgstr "أبلغ إلى %1"
 
 #: qml/CommandOutputKCM.qml:128
 #, kde-format

@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
 #
-# SPDX-FileCopyrightText: 2024 Stefan Asserhäll <stefan.asserhall@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2025 Stefan Asserhäll <stefan.asserhall@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-15 00:42+0000\n"
-"PO-Revision-Date: 2024-06-19 02:37+0200\n"
+"PO-Revision-Date: 2025-04-17 12:22+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -15,13 +15,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #: CommandOutputContext.cpp:121 CommandOutputContext.cpp:138
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Could not load page content"
-msgstr ""
+msgstr "Kunde inte läsa in sidans innehåll"
 
 #: CommandOutputContext.cpp:123
 #, kde-kuit-format
@@ -31,18 +31,19 @@ msgid ""
 "this page, but could not be found. You may be able to install it using your "
 "package manager; either way, please report this packaging issue to %2."
 msgstr ""
+"Tekniska detaljer: Verktyget <command>%1</command> krävs för att visa den "
+"här sidan, men det kunde inte hittas. Du kanske kan installera det med "
+"pakethanteraren. Hur som helst, rapportera paketeringsproblemet till %2."
 
 #: CommandOutputContext.cpp:139
-#, fuzzy, kde-kuit-format
-#| msgctxt "@info"
-#| msgid "The <command>%1</command> tool crashed while generating page content"
+#, kde-kuit-format
 msgctxt "@Info"
 msgid ""
 "Technical details: the <command>%1</command> tool crashed while generating "
 "page content."
 msgstr ""
-"Verktyget <command>%1</command> kraschade när sidans innehåll skulle "
-"genereras"
+"Tekniska detaljer: Verktyget <command>%1</command> kraschade när sidans "
+"innehåll genererades."
 
 #: qml/CommandOutputKCM.qml:89
 #, kde-format
@@ -57,10 +58,9 @@ msgid "No data available"
 msgstr "Ingen data tillgänglig"
 
 #: qml/CommandOutputKCM.qml:107
-#, fuzzy, kde-format
-#| msgid "Report this issue"
+#, kde-format
 msgid "Report to %1"
-msgstr "Rapportera felet"
+msgstr "Rapportera till %1"
 
 #: qml/CommandOutputKCM.qml:128
 #, kde-format
