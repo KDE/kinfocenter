@@ -3,7 +3,7 @@
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kinfocenter\")
 add_library(KInfoCenterInternal SHARED CommandOutputContext.cpp CommandOutputContext.h)
-target_link_libraries(KInfoCenterInternal Qt::Qml KF6::I18n KF6::CoreAddons)
+target_link_libraries(KInfoCenterInternal PRIVATE Qt::Qml KF6::I18n KF6::CoreAddons)
 # Disable legacy stuff to get rid of some deprecation warnings. Notably duplicated QProcess::finished overloads.
 target_compile_definitions(KInfoCenterInternal PRIVATE -DQT_DISABLE_DEPRECATED_BEFORE=0x050e00)
 target_include_directories(KInfoCenterInternal INTERFACE "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>")
@@ -15,5 +15,12 @@ set_target_properties(KInfoCenterInternal
         CXX_VISIBILITY_PRESET default
         VISIBILITY_INLINES_HIDDEN OFF)
 
-install(DIRECTORY qml/ DESTINATION ${KDE_INSTALL_QMLDIR}/org/kde/kinfocenter/private)
+ecm_add_qml_module(KInfoCenterInternal
+    URI "org.kde.kinfocenter.private"
+    VERSION 1.0
+    GENERATE_PLUGIN_SOURCE
+    QML_FILES qml/CommandOutputKCM.qml
+)
+ecm_finalize_qml_module(KInfoCenterInternal)
+
 install(TARGETS KInfoCenterInternal ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} LIBRARY NAMELINK_SKIP)
