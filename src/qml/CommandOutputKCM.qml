@@ -250,6 +250,8 @@ KCM.SimpleKCM {
             icon.name: "search"
             text: i18ndc("kinfocenter", "@action:button opens filter bar", "Filter")
             onTriggered: filterHeader.toggleExpanded();
+            checkable: true
+            checked: filterHeader.expanded
             shortcut: "Ctrl+I"
         }
     ]
