@@ -1,16 +1,16 @@
 # Translation for kinfocenter.po to Euskara/Basque (eu).
-# Copyright (C) 2023 This file is copyright:
+# Copyright (C) 2023-2025 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
-# KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
+# SPDX-FileCopyrightText: 2023, 2025 KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
 #
 # Translators:
-# SPDX-FileCopyrightText: 2023 Iñigo Salvador Azurmendi <xalba@ni.eus>
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2023, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-15 00:42+0000\n"
-"PO-Revision-Date: 2023-11-29 22:49+0100\n"
+"PO-Revision-Date: 2025-04-22 12:04+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,13 +18,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.3\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: CommandOutputContext.cpp:121 CommandOutputContext.cpp:138
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Could not load page content"
-msgstr ""
+msgstr "Ezin izan du orriaren edukia zamatu"
 
 #: CommandOutputContext.cpp:123
 #, kde-kuit-format
@@ -34,18 +34,19 @@ msgid ""
 "this page, but could not be found. You may be able to install it using your "
 "package manager; either way, please report this packaging issue to %2."
 msgstr ""
+"Xehetasun teknikoak: <command>%1</command> behar da orri honen edukia "
+"azaltzeko, baina ez da aurkitu. Zure pakete-kudeatzailea erabiliz instalatu "
+"zenezake; dena dela, mesedez, eman ezazu paketatze auzi honen berri %2(e)an."
 
 #: CommandOutputContext.cpp:139
-#, fuzzy, kde-kuit-format
-#| msgctxt "@info"
-#| msgid "The <command>%1</command> tool crashed while generating page content"
+#, kde-kuit-format
 msgctxt "@Info"
 msgid ""
 "Technical details: the <command>%1</command> tool crashed while generating "
 "page content."
 msgstr ""
-"<command>%1</command> tresna, orriaren edukia sortu bitartean, kraskatu egin "
-"da"
+"Xehetasun teknikoak: <command>%1</command> tresna, orriaren edukia sortu "
+"bitartean, kraskatu egin da."
 
 #: qml/CommandOutputKCM.qml:89
 #, kde-format
@@ -60,10 +61,9 @@ msgid "No data available"
 msgstr "Ez dago datu erabilgarririk"
 
 #: qml/CommandOutputKCM.qml:107
-#, fuzzy, kde-format
-#| msgid "Report this issue"
+#, kde-format
 msgid "Report to %1"
-msgstr "Eman arazo honen berri"
+msgstr "Jakinarazi %1(e)an"
 
 #: qml/CommandOutputKCM.qml:128
 #, kde-format
