@@ -30,6 +30,8 @@ KCM.SimpleKCM {
     property int wrapMode: TextEdit.NoWrap
     property int textFormat: output.textFormat
 
+    flickable.contentWidth: wrapMode === TextEdit.NoWrap ? contentLoader.implicitWidth : undefined
+
     Clipboard { id: clipboard }
 
     Component {
