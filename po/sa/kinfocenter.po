@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-15 00:42+0000\n"
+"POT-Creation-Date: 2025-04-26 00:43+0000\n"
 "PO-Revision-Date: 2024-12-14 01:48+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -44,37 +44,37 @@ msgid ""
 "page content."
 msgstr "पृष्ठसामग्रीजननकाले <command>%1</command> साधनं दुर्घटनाम् अभवत्"
 
-#: qml/CommandOutputKCM.qml:89
+#: qml/CommandOutputKCM.qml:91
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
 msgstr "फ़िल्टरसङ्गतः पाठः नास्ति"
 
-#: qml/CommandOutputKCM.qml:94
+#: qml/CommandOutputKCM.qml:96
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
 msgstr "न कोऽपि दत्तांशः उपलब्धः"
 
-#: qml/CommandOutputKCM.qml:107
+#: qml/CommandOutputKCM.qml:109
 #, fuzzy, kde-format
 #| msgid "Report this issue"
 msgid "Report to %1"
 msgstr "अस्य विषयस्य सूचनां ददातु"
 
-#: qml/CommandOutputKCM.qml:128
+#: qml/CommandOutputKCM.qml:130
 #, kde-format
 msgctxt "@action:button copies all displayed text"
 msgid "Copy to Clipboard"
 msgstr "क्लिप्बोर्ड् प्रति प्रतिलिख्यताम्"
 
-#: qml/CommandOutputKCM.qml:139
+#: qml/CommandOutputKCM.qml:141
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
 msgstr "फ़िल्टर…"
 
-#: qml/CommandOutputKCM.qml:141
+#: qml/CommandOutputKCM.qml:143
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"

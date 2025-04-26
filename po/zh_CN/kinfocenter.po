@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-15 00:42+0000\n"
+"POT-Creation-Date: 2025-04-26 00:43+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -43,36 +43,36 @@ msgid ""
 "page content."
 msgstr "技术细节：生成页面内容时 <command>%1</command> 工具程序发生了崩溃。"
 
-#: qml/CommandOutputKCM.qml:89
+#: qml/CommandOutputKCM.qml:91
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
 msgstr "没有匹配此过滤条件的文本"
 
-#: qml/CommandOutputKCM.qml:94
+#: qml/CommandOutputKCM.qml:96
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
 msgstr "没有可用数据"
 
-#: qml/CommandOutputKCM.qml:107
+#: qml/CommandOutputKCM.qml:109
 #, kde-format
 msgid "Report to %1"
 msgstr "报告到 %1"
 
-#: qml/CommandOutputKCM.qml:128
+#: qml/CommandOutputKCM.qml:130
 #, kde-format
 msgctxt "@action:button copies all displayed text"
 msgid "Copy to Clipboard"
 msgstr "复制到剪贴板"
 
-#: qml/CommandOutputKCM.qml:139
+#: qml/CommandOutputKCM.qml:141
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
 msgstr "过滤…"
 
-#: qml/CommandOutputKCM.qml:141
+#: qml/CommandOutputKCM.qml:143
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"
