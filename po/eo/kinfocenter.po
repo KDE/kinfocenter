@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-26 00:43+0000\n"
+"POT-Creation-Date: 2025-04-29 00:42+0000\n"
 "PO-Revision-Date: 2023-12-08 19:15+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
@@ -17,13 +17,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: CommandOutputContext.cpp:121 CommandOutputContext.cpp:138
+#: CommandOutputContext.cpp:127 CommandOutputContext.cpp:149
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Could not load page content"
 msgstr ""
 
-#: CommandOutputContext.cpp:123
+#: CommandOutputContext.cpp:129
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -32,7 +32,7 @@ msgid ""
 "package manager; either way, please report this packaging issue to %2."
 msgstr ""
 
-#: CommandOutputContext.cpp:139
+#: CommandOutputContext.cpp:150
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid "The <command>%1</command> tool crashed while generating page content"
@@ -42,39 +42,65 @@ msgid ""
 "page content."
 msgstr "La ilo <command>%1</command> paneis generante paĝenhavon"
 
-#: qml/CommandOutputKCM.qml:91
+#: qml/CommandOutputKCM.qml:105
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
 msgstr "Neniu teksto kongruas al filtrilo"
 
-#: qml/CommandOutputKCM.qml:96
+#: qml/CommandOutputKCM.qml:110
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
 msgstr "Neniuj datumoj haveblas"
 
-#: qml/CommandOutputKCM.qml:109
+#: qml/CommandOutputKCM.qml:123
 #, fuzzy, kde-format
 #| msgid "Report this issue"
 msgid "Report to %1"
 msgstr "Raport ĉi tiun problemon"
 
-#: qml/CommandOutputKCM.qml:130
-#, kde-format
-msgctxt "@action:button copies all displayed text"
-msgid "Copy to Clipboard"
-msgstr "Kopii al Tondujo"
-
-#: qml/CommandOutputKCM.qml:141
+#: qml/CommandOutputKCM.qml:189
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
 msgstr "Filtri…"
 
-#: qml/CommandOutputKCM.qml:143
+#: qml/CommandOutputKCM.qml:191
 #, kde-format
 msgctxt "accessible name for filter input"
+msgid "Filter"
+msgstr "Filtrilo"
+
+#: qml/CommandOutputKCM.qml:203
+#, kde-format
+msgctxt "@action:button close filter header"
+msgid "Close"
+msgstr ""
+
+#: qml/CommandOutputKCM.qml:228
+#, kde-format
+msgctxt "@action:button pauses automatic refreshing"
+msgid "Pause Refreshing"
+msgstr ""
+
+#: qml/CommandOutputKCM.qml:236
+#, kde-format
+msgctxt "@action:button resumes automatic refreshing"
+msgid "Resume Refreshing"
+msgstr ""
+
+#: qml/CommandOutputKCM.qml:243
+#, kde-format
+msgctxt "@action:button copies all displayed text"
+msgid "Copy to Clipboard"
+msgstr "Kopii al Tondujo"
+
+#: qml/CommandOutputKCM.qml:251
+#, fuzzy, kde-format
+#| msgctxt "accessible name for filter input"
+#| msgid "Filter"
+msgctxt "@action:button opens filter bar"
 msgid "Filter"
 msgstr "Filtrilo"
 

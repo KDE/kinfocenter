@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-26 00:43+0000\n"
+"POT-Creation-Date: 2025-04-29 00:42+0000\n"
 "PO-Revision-Date: 2025-04-15 19:36+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -19,13 +19,13 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 24.12.3\n"
 
-#: CommandOutputContext.cpp:121 CommandOutputContext.cpp:138
+#: CommandOutputContext.cpp:127 CommandOutputContext.cpp:149
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Could not load page content"
 msgstr "No s'ha pogut carregar el contingut de la pàgina"
 
-#: CommandOutputContext.cpp:123
+#: CommandOutputContext.cpp:129
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -38,7 +38,7 @@ msgstr ""
 "gestor de paquets; en cas contrari, informeu d'esta incidència "
 "d'empaquetament a %2."
 
-#: CommandOutputContext.cpp:139
+#: CommandOutputContext.cpp:150
 #, kde-kuit-format
 msgctxt "@Info"
 msgid ""
@@ -48,37 +48,63 @@ msgstr ""
 "Detalls tècnics: l'eina <command>%1</command> ha fallat mentre generava el "
 "contingut de la pàgina."
 
-#: qml/CommandOutputKCM.qml:91
+#: qml/CommandOutputKCM.qml:105
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
 msgstr "Cap text coincidix amb el filtre"
 
-#: qml/CommandOutputKCM.qml:96
+#: qml/CommandOutputKCM.qml:110
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
 msgstr "No hi ha dades disponibles"
 
-#: qml/CommandOutputKCM.qml:109
+#: qml/CommandOutputKCM.qml:123
 #, kde-format
 msgid "Report to %1"
 msgstr "Informa a %1"
 
-#: qml/CommandOutputKCM.qml:130
-#, kde-format
-msgctxt "@action:button copies all displayed text"
-msgid "Copy to Clipboard"
-msgstr "Copia a dins del porta-retalls"
-
-#: qml/CommandOutputKCM.qml:141
+#: qml/CommandOutputKCM.qml:189
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
 msgstr "Filtre…"
 
-#: qml/CommandOutputKCM.qml:143
+#: qml/CommandOutputKCM.qml:191
 #, kde-format
 msgctxt "accessible name for filter input"
+msgid "Filter"
+msgstr "Filtre"
+
+#: qml/CommandOutputKCM.qml:203
+#, kde-format
+msgctxt "@action:button close filter header"
+msgid "Close"
+msgstr ""
+
+#: qml/CommandOutputKCM.qml:228
+#, kde-format
+msgctxt "@action:button pauses automatic refreshing"
+msgid "Pause Refreshing"
+msgstr ""
+
+#: qml/CommandOutputKCM.qml:236
+#, kde-format
+msgctxt "@action:button resumes automatic refreshing"
+msgid "Resume Refreshing"
+msgstr ""
+
+#: qml/CommandOutputKCM.qml:243
+#, kde-format
+msgctxt "@action:button copies all displayed text"
+msgid "Copy to Clipboard"
+msgstr "Copia a dins del porta-retalls"
+
+#: qml/CommandOutputKCM.qml:251
+#, fuzzy, kde-format
+#| msgctxt "accessible name for filter input"
+#| msgid "Filter"
+msgctxt "@action:button opens filter bar"
 msgid "Filter"
 msgstr "Filtre"

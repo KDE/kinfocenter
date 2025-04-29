@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-26 00:43+0000\n"
+"POT-Creation-Date: 2025-04-29 00:42+0000\n"
 "PO-Revision-Date: 2025-04-15 07:22+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -18,13 +18,13 @@ msgstr ""
 "%100==4 ? 3 : 0);\n"
 "X-Generator: Poedit 3.6\n"
 
-#: CommandOutputContext.cpp:121 CommandOutputContext.cpp:138
+#: CommandOutputContext.cpp:127 CommandOutputContext.cpp:149
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Could not load page content"
 msgstr "Vsebine strani ni bilo mogoče naložiti"
 
-#: CommandOutputContext.cpp:123
+#: CommandOutputContext.cpp:129
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -37,7 +37,7 @@ msgstr ""
 "svojim upravljalnikom paketov; v vsakem primeru poročajte o težavi s "
 "pakiranjem %2."
 
-#: CommandOutputContext.cpp:139
+#: CommandOutputContext.cpp:150
 #, kde-kuit-format
 msgctxt "@Info"
 msgid ""
@@ -47,38 +47,64 @@ msgstr ""
 "Tehnične podrobnosti: orodje <command>%1</command> se je sesulo med "
 "ustvarjanjem vsebine strani."
 
-#: qml/CommandOutputKCM.qml:91
+#: qml/CommandOutputKCM.qml:105
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
 msgstr "Ni besedila, ki bi ustrezalo filtru"
 
-#: qml/CommandOutputKCM.qml:96
+#: qml/CommandOutputKCM.qml:110
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
 msgstr "Ni razpoložljivih podatkov"
 
-#: qml/CommandOutputKCM.qml:109
+#: qml/CommandOutputKCM.qml:123
 #, kde-format
 msgid "Report to %1"
 msgstr "Poročajte k %1"
 
-#: qml/CommandOutputKCM.qml:130
-#, kde-format
-msgctxt "@action:button copies all displayed text"
-msgid "Copy to Clipboard"
-msgstr "Kopiraj na odložišče"
-
-#: qml/CommandOutputKCM.qml:141
+#: qml/CommandOutputKCM.qml:189
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
 msgstr "Filter…"
 
-#: qml/CommandOutputKCM.qml:143
+#: qml/CommandOutputKCM.qml:191
 #, kde-format
 msgctxt "accessible name for filter input"
+msgid "Filter"
+msgstr "Filter"
+
+#: qml/CommandOutputKCM.qml:203
+#, kde-format
+msgctxt "@action:button close filter header"
+msgid "Close"
+msgstr ""
+
+#: qml/CommandOutputKCM.qml:228
+#, kde-format
+msgctxt "@action:button pauses automatic refreshing"
+msgid "Pause Refreshing"
+msgstr ""
+
+#: qml/CommandOutputKCM.qml:236
+#, kde-format
+msgctxt "@action:button resumes automatic refreshing"
+msgid "Resume Refreshing"
+msgstr ""
+
+#: qml/CommandOutputKCM.qml:243
+#, kde-format
+msgctxt "@action:button copies all displayed text"
+msgid "Copy to Clipboard"
+msgstr "Kopiraj na odložišče"
+
+#: qml/CommandOutputKCM.qml:251
+#, fuzzy, kde-format
+#| msgctxt "accessible name for filter input"
+#| msgid "Filter"
+msgctxt "@action:button opens filter bar"
 msgid "Filter"
 msgstr "Filter"
 
