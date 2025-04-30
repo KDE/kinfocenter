@@ -3,10 +3,31 @@
     "KPlugin": {
         "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
         "Description": "Sensors",
+        "Description[ca@valencia]": "Sensors",
+        "Description[ca]": "Sensors",
+        "Description[ka]": "სენსორები",
+        "Description[nl]": "Sensoren",
+        "Description[sl]": "Senzorji",
+        "Description[uk]": "Датчики",
+        "Description[x-test]": "xxSensorsxx",
         "Icon": "temperature-normal",
-        "Name": "Sensors"
+        "Name": "Sensors",
+        "Name[ca@valencia]": "Sensors",
+        "Name[ca]": "Sensors",
+        "Name[ka]": "სენსორები",
+        "Name[nl]": "Sensoren",
+        "Name[sl]": "Senzorji",
+        "Name[uk]": "Датчики",
+        "Name[x-test]": "xxSensorsxx"
     },
     "TryExec": "sensors",
     "X-KDE-KInfoCenter-Category": "device_information",
-    "X-KDE-Keywords": "lm_sensors,sensors,temp,temperature,volt,voltage,sensors,fan,fan speed,monitoring,amp,amps,current,power"
+    "X-KDE-Keywords": "lm_sensors,sensors,temp,temperature,volt,voltage,sensors,fan,fan speed,monitoring,amp,amps,current,power",
+    "X-KDE-Keywords[ca@valencia]": "lm_sensors,sensors,temp,temperatura,volt,voltatge,sensors,ventilador,velocitat dels ventiladors,monitoratge,amp,amps,electricitat,energia",
+    "X-KDE-Keywords[ca]": "lm_sensors,sensors,temp,temperatura,volt,voltatge,sensors,ventilador,velocitat dels ventiladors,monitoratge,amp,amps,electricitat,energia",
+    "X-KDE-Keywords[ka]": "lm_sensors,sensors,temp,temperature,volt,voltage,sensors,fan,fan speed,monitoring,amp,amps,current,power;სენსორები;კვება;ვოლტაჟი;ტემპერატურა;ვენტილატორი;მონიტორინგი",
+    "X-KDE-Keywords[nl]": "lm_sensors,sensors,temp,temperatuur,volt,voltage,sensors,fan,fansnelheid,monitoring,amp,amps,stroom,energie,power",
+    "X-KDE-Keywords[sl]": "lm_senzorji,senzorji,temperatura,volt,napetost,senzorji,ventilator,hitrost ventilatorja,spremljanje,amper,amperji,tok,moč",
+    "X-KDE-Keywords[uk]": "lm_sensors,sensors,temp,temperature,volt,voltage,sensors,fan,fan speed,monitoring,amp,amps,current,power,датчики,температура,вольт,напруження,вентилятор,охолодження,обертання,спостереження,ампери,живлення,струм,потужність",
+    "X-KDE-Keywords[x-test]": "xxlm_sensorsxx,xxsensorsxx,xxtempxx,xxtemperaturexx,xxvoltxx,xxvoltagexx,xxsensorsxx,xxfanxx,xxfan speedxx,xxmonitoringxx,xxampxx,xxampsxx,xxcurrentxx,xxpowerxx"
 }
