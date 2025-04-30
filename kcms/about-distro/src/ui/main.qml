@@ -215,8 +215,8 @@ KCMUtils.SimpleKCM {
             visible: !kcm.isThisKInfoCenter && kicRunner.canRun
 
             icon.name: kicRunner.iconName
-            text: i18nc("@action:button launches kinfocenter from systemsettings", "More System Information")
-            tooltip: i18nc("@info:tooltip", "Launch %1", kicRunner.genericName)
+            text: i18nc("@action:button", "Launch %1…", kicRunner.genericName)
+            tooltip: i18nc("@info:tooltip launches kinfocenter from systemsettings", "See more detailed system information")
             onTriggered: source => kicRunner.run()
         },
 
