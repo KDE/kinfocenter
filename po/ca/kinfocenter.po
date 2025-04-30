@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-29 00:42+0000\n"
-"PO-Revision-Date: 2025-04-15 19:36+0200\n"
+"PO-Revision-Date: 2025-04-29 09:04+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.12.3\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: CommandOutputContext.cpp:127 CommandOutputContext.cpp:149
 #, kde-kuit-format
@@ -81,19 +81,19 @@ msgstr "Filtre"
 #, kde-format
 msgctxt "@action:button close filter header"
 msgid "Close"
-msgstr ""
+msgstr "Tanca"
 
 #: qml/CommandOutputKCM.qml:228
 #, kde-format
 msgctxt "@action:button pauses automatic refreshing"
 msgid "Pause Refreshing"
-msgstr ""
+msgstr "Fes pausa de l'actualització"
 
 #: qml/CommandOutputKCM.qml:236
 #, kde-format
 msgctxt "@action:button resumes automatic refreshing"
 msgid "Resume Refreshing"
-msgstr ""
+msgstr "Reprèn l'actualització"
 
 #: qml/CommandOutputKCM.qml:243
 #, kde-format
@@ -102,9 +102,7 @@ msgid "Copy to Clipboard"
 msgstr "Copia al porta-retalls"
 
 #: qml/CommandOutputKCM.qml:251
-#, fuzzy, kde-format
-#| msgctxt "accessible name for filter input"
-#| msgid "Filter"
+#, kde-format
 msgctxt "@action:button opens filter bar"
 msgid "Filter"
 msgstr "Filtre"
