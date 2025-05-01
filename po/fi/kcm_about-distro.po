@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-26 00:43+0000\n"
+"POT-Creation-Date: 2025-05-01 00:43+0000\n"
 "PO-Revision-Date: 2025-04-03 17:35+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -251,16 +251,20 @@ msgid "Hardware"
 msgstr "Laitteisto"
 
 #: ui/main.qml:218
-#, kde-format
-msgctxt "@action:button launches kinfocenter from systemsettings"
-msgid "More System Information"
-msgstr "Lisää järjestelmätietoa"
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip"
+#| msgid "Launch %1"
+msgctxt "@action:button"
+msgid "Launch %1…"
+msgstr "Käynnistä %1"
 
 #: ui/main.qml:219
-#, kde-format
-msgctxt "@info:tooltip"
-msgid "Launch %1"
-msgstr "Käynnistä %1"
+#, fuzzy, kde-format
+#| msgctxt "@action:button launches kinfocenter from systemsettings"
+#| msgid "More System Information"
+msgctxt "@info:tooltip launches kinfocenter from systemsettings"
+msgid "See more detailed system information"
+msgstr "Lisää järjestelmätietoa"
 
 #: ui/main.qml:227 ui/main.qml:235
 #, kde-format

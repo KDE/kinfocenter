@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-26 00:43+0000\n"
+"POT-Creation-Date: 2025-05-01 00:43+0000\n"
 "PO-Revision-Date: 2025-02-26 18:11+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -249,16 +249,20 @@ msgid "Hardware"
 msgstr "Hårdvara"
 
 #: ui/main.qml:218
-#, kde-format
-msgctxt "@action:button launches kinfocenter from systemsettings"
-msgid "More System Information"
-msgstr "Mer systeminformation"
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip"
+#| msgid "Launch %1"
+msgctxt "@action:button"
+msgid "Launch %1…"
+msgstr "Starta %1"
 
 #: ui/main.qml:219
-#, kde-format
-msgctxt "@info:tooltip"
-msgid "Launch %1"
-msgstr "Starta %1"
+#, fuzzy, kde-format
+#| msgctxt "@action:button launches kinfocenter from systemsettings"
+#| msgid "More System Information"
+msgctxt "@info:tooltip launches kinfocenter from systemsettings"
+msgid "See more detailed system information"
+msgstr "Mer systeminformation"
 
 #: ui/main.qml:227 ui/main.qml:235
 #, kde-format

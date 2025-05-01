@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-26 00:43+0000\n"
+"POT-Creation-Date: 2025-05-01 00:43+0000\n"
 "PO-Revision-Date: 2022-12-28 20:56+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -250,18 +250,18 @@ msgid "Hardware"
 msgstr "Echipament"
 
 #: ui/main.qml:218
+#, kde-format
+msgctxt "@action:button"
+msgid "Launch %1…"
+msgstr ""
+
+#: ui/main.qml:219
 #, fuzzy, kde-format
 #| msgctxt "@action:button launches kinfocenter from systemsettings"
 #| msgid "Show More Information"
-msgctxt "@action:button launches kinfocenter from systemsettings"
-msgid "More System Information"
+msgctxt "@info:tooltip launches kinfocenter from systemsettings"
+msgid "See more detailed system information"
 msgstr "Arată informații suplimentare"
-
-#: ui/main.qml:219
-#, kde-format
-msgctxt "@info:tooltip"
-msgid "Launch %1"
-msgstr ""
 
 #: ui/main.qml:227 ui/main.qml:235
 #, fuzzy, kde-format

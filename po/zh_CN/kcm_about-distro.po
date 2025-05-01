@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-26 00:43+0000\n"
+"POT-Creation-Date: 2025-05-01 00:43+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -244,16 +244,20 @@ msgid "Hardware"
 msgstr "硬件"
 
 #: ui/main.qml:218
-#, kde-format
-msgctxt "@action:button launches kinfocenter from systemsettings"
-msgid "More System Information"
-msgstr "更多系统信息"
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip"
+#| msgid "Launch %1"
+msgctxt "@action:button"
+msgid "Launch %1…"
+msgstr "启动 %1"
 
 #: ui/main.qml:219
-#, kde-format
-msgctxt "@info:tooltip"
-msgid "Launch %1"
-msgstr "启动 %1"
+#, fuzzy, kde-format
+#| msgctxt "@action:button launches kinfocenter from systemsettings"
+#| msgid "More System Information"
+msgctxt "@info:tooltip launches kinfocenter from systemsettings"
+msgid "See more detailed system information"
+msgstr "更多系统信息"
 
 #: ui/main.qml:227 ui/main.qml:235
 #, kde-format

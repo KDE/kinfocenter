@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-26 00:43+0000\n"
+"POT-Creation-Date: 2025-05-01 00:43+0000\n"
 "PO-Revision-Date: 2025-03-02 10:47+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -254,16 +254,20 @@ msgid "Hardware"
 msgstr "العتاد"
 
 #: ui/main.qml:218
-#, kde-format
-msgctxt "@action:button launches kinfocenter from systemsettings"
-msgid "More System Information"
-msgstr "المزيد من معلومات النظام"
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip"
+#| msgid "Launch %1"
+msgctxt "@action:button"
+msgid "Launch %1…"
+msgstr "شغّل %1"
 
 #: ui/main.qml:219
-#, kde-format
-msgctxt "@info:tooltip"
-msgid "Launch %1"
-msgstr "شغّل %1"
+#, fuzzy, kde-format
+#| msgctxt "@action:button launches kinfocenter from systemsettings"
+#| msgid "More System Information"
+msgctxt "@info:tooltip launches kinfocenter from systemsettings"
+msgid "See more detailed system information"
+msgstr "المزيد من معلومات النظام"
 
 #: ui/main.qml:227 ui/main.qml:235
 #, kde-format

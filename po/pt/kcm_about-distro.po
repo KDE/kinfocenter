@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-26 00:43+0000\n"
+"POT-Creation-Date: 2025-05-01 00:43+0000\n"
 "PO-Revision-Date: 2023-02-15 16:20+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -244,18 +244,18 @@ msgid "Hardware"
 msgstr "'Hardware'"
 
 #: ui/main.qml:218
+#, kde-format
+msgctxt "@action:button"
+msgid "Launch %1…"
+msgstr ""
+
+#: ui/main.qml:219
 #, fuzzy, kde-format
 #| msgctxt "@action:button launches kinfocenter from systemsettings"
 #| msgid "Show More Information"
-msgctxt "@action:button launches kinfocenter from systemsettings"
-msgid "More System Information"
+msgctxt "@info:tooltip launches kinfocenter from systemsettings"
+msgid "See more detailed system information"
 msgstr "Mostrar Mais Informações"
-
-#: ui/main.qml:219
-#, kde-format
-msgctxt "@info:tooltip"
-msgid "Launch %1"
-msgstr ""
 
 #: ui/main.qml:227 ui/main.qml:235
 #, fuzzy, kde-format
