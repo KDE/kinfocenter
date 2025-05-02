@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-29 00:42+0000\n"
-"PO-Revision-Date: 2025-04-17 09:05+0200\n"
+"PO-Revision-Date: 2025-04-30 15:31+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
@@ -76,19 +76,19 @@ msgstr "Filtre"
 #, kde-format
 msgctxt "@action:button close filter header"
 msgid "Close"
-msgstr ""
+msgstr "Fermer"
 
 #: qml/CommandOutputKCM.qml:228
 #, kde-format
 msgctxt "@action:button pauses automatic refreshing"
 msgid "Pause Refreshing"
-msgstr ""
+msgstr "Mettre le rafraîchissement en pause"
 
 #: qml/CommandOutputKCM.qml:236
 #, kde-format
 msgctxt "@action:button resumes automatic refreshing"
 msgid "Resume Refreshing"
-msgstr ""
+msgstr "Poursuivre le rafraîchissement"
 
 #: qml/CommandOutputKCM.qml:243
 #, kde-format
@@ -97,9 +97,7 @@ msgid "Copy to Clipboard"
 msgstr "Copier dans le presse-papier"
 
 #: qml/CommandOutputKCM.qml:251
-#, fuzzy, kde-format
-#| msgctxt "accessible name for filter input"
-#| msgid "Filter"
+#, kde-format
 msgctxt "@action:button opens filter bar"
 msgid "Filter"
 msgstr "Filtre"
