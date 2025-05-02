@@ -3,7 +3,7 @@
     "KPlugin": {
         "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
         "Description": "Firmware Security Information",
-        "Description[ar]": "معلومات عن أمن البرامج الثابتة",
+        "Description[ar]": "معلومات أمن البرامج الثابتة",
         "Description[az]": "Mikroproqram təhlükəsizliyi məlumatı",
         "Description[bg]": "Данни за сигурността на фърмуера",
         "Description[ca@valencia]": "Informació de seguretat del microprogramari",
