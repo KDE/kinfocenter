@@ -7,13 +7,13 @@
 # Jeff Huang <s8321414@gmail.com>, 2016.
 # Franklin Weng <franklin at goodhorse dot idv dot tw>, 2007.
 # Frank Weng (a.k.a. Franklin) <franklin at goodhorse dot idv dot tw>, 2008.
-# SPDX-FileCopyrightText: 2022, 2023, 2024 Kisaragi Hiu <mail@kisaragi-hiu.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-05 02:14+0000\n"
-"PO-Revision-Date: 2024-01-22 16:52+0900\n"
+"PO-Revision-Date: 2025-05-03 15:12+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 25.07.70\n"
 
 #: classes.i18n:2 usbdevices.cpp:66
 #, kde-format
@@ -150,11 +150,10 @@ msgid "ATM Networking"
 msgstr "ATM 網路"
 
 #: classes.i18n:23
-#, fuzzy, kde-format
-#| msgid "Abstract (modem)"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Abstract (modem)"
-msgstr "數據型(數據機)"
+msgstr "抽象（數據機）"
 
 #: classes.i18n:24
 #, kde-format
@@ -193,11 +192,10 @@ msgid "Device Management"
 msgstr "裝置管理"
 
 #: classes.i18n:30
-#, fuzzy, kde-format
-#| msgid "Direct Line"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Direct Line"
-msgstr "連接線"
+msgstr "專線"
 
 #: classes.i18n:31
 #, kde-format
@@ -230,11 +228,10 @@ msgid "MIDI Streaming"
 msgstr "MIDI 串流"
 
 #: classes.i18n:36
-#, fuzzy, kde-format
-#| msgid "Direct Line"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Mobile Direct Line"
-msgstr "連接線"
+msgstr "行動專線"
 
 #: classes.i18n:37
 #, kde-format
@@ -270,7 +267,7 @@ msgstr "QIC-157"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "RBC (typically Flash)"
-msgstr ""
+msgstr "RBC（通常是隨身碟）"
 
 #: classes.i18n:43
 #, kde-format
@@ -282,7 +279,7 @@ msgstr "廣播頻率"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Reprogrammable Diagnostics"
-msgstr ""
+msgstr "可再程式化診斷"
 
 #: classes.i18n:45
 #, kde-format
