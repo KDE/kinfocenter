@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
 #
-# SPDX-FileCopyrightText: 2024 Toms Trasuns <toms.trasuns@posteo.net>
+# SPDX-FileCopyrightText: 2024, 2025 Toms Trasuns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-29 00:42+0000\n"
-"PO-Revision-Date: 2024-10-13 23:22+0300\n"
+"PO-Revision-Date: 2025-05-03 14:35+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
@@ -16,13 +16,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 24.08.1\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: CommandOutputContext.cpp:127 CommandOutputContext.cpp:149
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Could not load page content"
-msgstr ""
+msgstr "Lapas sarakstu ielādēt neizdevās"
 
 #: CommandOutputContext.cpp:129
 #, kde-kuit-format
@@ -32,22 +32,26 @@ msgid ""
 "this page, but could not be found. You may be able to install it using your "
 "package manager; either way, please report this packaging issue to %2."
 msgstr ""
+"Tehniska informācija: šīs lapas parādīšanai ir nepieciešama „<command>%1</"
+"command>“ programma, bet to sistēmā neizdodas atrast. Varat mēģināt to "
+"instalēt, izmantojot sistēmas pakotņu pārvaldnieku, bet par šo problēmu "
+"jebkurā gadījumā lūdzam informēt „%2“."
 
 #: CommandOutputContext.cpp:150
-#, fuzzy, kde-kuit-format
-#| msgctxt "@info"
-#| msgid "The <command>%1</command> tool crashed while generating page content"
+#, kde-kuit-format
 msgctxt "@Info"
 msgid ""
 "Technical details: the <command>%1</command> tool crashed while generating "
 "page content."
-msgstr "<command>%1</command> rīks avarēja, ģenerējot lapas saturu"
+msgstr ""
+"Tehniska informācija: lapas satura ģenerēšanas laikā <command>%1</command> "
+"rīks avarēja."
 
 #: qml/CommandOutputKCM.qml:105
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
-msgstr "Filtram neatbilst neviens teksts"
+msgstr "Nav filtram atbilstoša teksta"
 
 #: qml/CommandOutputKCM.qml:110
 #, kde-format
@@ -56,10 +60,9 @@ msgid "No data available"
 msgstr "Informācija nav pieejama"
 
 #: qml/CommandOutputKCM.qml:123
-#, fuzzy, kde-format
-#| msgid "Report this issue"
+#, kde-format
 msgid "Report to %1"
-msgstr "Ziņot par problēmu"
+msgstr "Ziņot „%1“"
 
 #: qml/CommandOutputKCM.qml:189
 #, kde-format
@@ -77,19 +80,19 @@ msgstr "Filtrēt"
 #, kde-format
 msgctxt "@action:button close filter header"
 msgid "Close"
-msgstr ""
+msgstr "Aizvērt"
 
 #: qml/CommandOutputKCM.qml:228
 #, kde-format
 msgctxt "@action:button pauses automatic refreshing"
 msgid "Pause Refreshing"
-msgstr ""
+msgstr "Pauzēt pārlādēšanu"
 
 #: qml/CommandOutputKCM.qml:236
 #, kde-format
 msgctxt "@action:button resumes automatic refreshing"
 msgid "Resume Refreshing"
-msgstr ""
+msgstr "Atsākt pārlādēšanu"
 
 #: qml/CommandOutputKCM.qml:243
 #, kde-format
@@ -98,9 +101,7 @@ msgid "Copy to Clipboard"
 msgstr "Kopēt starpliktuvē"
 
 #: qml/CommandOutputKCM.qml:251
-#, fuzzy, kde-format
-#| msgctxt "accessible name for filter input"
-#| msgid "Filter"
+#, kde-format
 msgctxt "@action:button opens filter bar"
 msgid "Filter"
 msgstr "Filtrēt"
