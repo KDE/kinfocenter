@@ -98,13 +98,20 @@ QStringList searchPaths()
     return paths;
 }
 
-int drmDeviceCount()
+size_t drmDeviceCount()
 {
     static auto count = [] {
         if (qEnvironmentVariableIntValue("KINFOCENTER_SIMULATION") == 1) {
-            return 3; // NOTE: this is intentionally off by one. We don't see llvmpipe in drmGetDevices2!
+            return narrow<size_t>(3); // NOTE: this is intentionally off by one. We don't see llvmpipe in drmGetDevices2!
         }
-        return drmGetDevices2(0, nullptr, 0);
+        int ret = drmGetDevices2(0, nullptr, 0);
+        if (ret < 0) {
+            qWarning() << "drmGetDevices2() failed with " << ret;
+            drmError(ret, "drmGetDevices2()");
+            return narrow<size_t>(0);
+        }
+
+        return narrow<size_t>(ret);
     }();
     return count;
 }
@@ -216,7 +223,7 @@ std::optional<std::vector<GPUEntry::Device>> openglGPUs()
     qDebug() << "Looking at" << searchPaths() << openglHelperExecutable;
 
     QJsonArray array;
-    for (auto i = 0; i < drmDeviceCount(); ++i) {
+    for (size_t i = 0; i < drmDeviceCount(); ++i) {
         auto document = readFromProcess(openglHelperExecutable, i);
         if (!document.isArray()) {
             qWarning() << "Failed to read GPU info from opengl helper for device" << i;
