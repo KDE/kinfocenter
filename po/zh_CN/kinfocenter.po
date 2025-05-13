@@ -76,19 +76,19 @@ msgstr "过滤"
 #, kde-format
 msgctxt "@action:button close filter header"
 msgid "Close"
-msgstr ""
+msgstr "关闭"
 
 #: qml/CommandOutputKCM.qml:228
 #, kde-format
 msgctxt "@action:button pauses automatic refreshing"
 msgid "Pause Refreshing"
-msgstr ""
+msgstr "暂停刷新"
 
 #: qml/CommandOutputKCM.qml:236
 #, kde-format
 msgctxt "@action:button resumes automatic refreshing"
 msgid "Resume Refreshing"
-msgstr ""
+msgstr "继续刷新"
 
 #: qml/CommandOutputKCM.qml:243
 #, kde-format
@@ -97,9 +97,7 @@ msgid "Copy to Clipboard"
 msgstr "复制到剪贴板"
 
 #: qml/CommandOutputKCM.qml:251
-#, fuzzy, kde-format
-#| msgctxt "accessible name for filter input"
-#| msgid "Filter"
+#, kde-format
 msgctxt "@action:button opens filter bar"
 msgid "Filter"
 msgstr "过滤"

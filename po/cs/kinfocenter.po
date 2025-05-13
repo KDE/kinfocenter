@@ -53,10 +53,9 @@ msgid "No data available"
 msgstr "Nejsou dostupná žádná data"
 
 #: qml/CommandOutputKCM.qml:123
-#, fuzzy, kde-format
-#| msgid "Report this issue"
+#, kde-format
 msgid "Report to %1"
-msgstr "Nahlásit tuto chybu"
+msgstr ""
 
 #: qml/CommandOutputKCM.qml:189
 #, kde-format
@@ -95,9 +94,7 @@ msgid "Copy to Clipboard"
 msgstr "Zkopírovat do schránky"
 
 #: qml/CommandOutputKCM.qml:251
-#, fuzzy, kde-format
-#| msgctxt "accessible name for filter input"
-#| msgid "Filter"
+#, kde-format
 msgctxt "@action:button opens filter bar"
 msgid "Filter"
-msgstr "Filtr"
+msgstr ""
