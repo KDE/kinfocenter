@@ -22,6 +22,7 @@ include(KDEGitCommitHooks)
 include(ECMSetupQtPluginMacroNames)
 include(ECMQueryQt)
 include(ECMDeprecationSettings)
+include(ECMQmlModule)
 
 option(BUILD_DOC "Whether to build the documentation" ON)
 
