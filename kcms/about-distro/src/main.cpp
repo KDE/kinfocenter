@@ -114,7 +114,7 @@ public:
         }
 
         qmlRegisterType<ServiceRunner>("org.kde.kinfocenter.about_distro.private", 1, 0, "ServiceRunner");
-        qmlRegisterUncreatableType<Hint>("org.kde.kinfocenter.about_distro.private", 1, 0, "Hint", "Only for enums");
+        qmlRegisterUncreatableType<Hint>("org.kde.kinfocenter.about_distro.private", 1, 0, "hint", "Only for enums");
 
         // https://bugs.kde.org/show_bug.cgi?id=366158
         // When a KCM loads fast enough do a blocking load via the constructor.
