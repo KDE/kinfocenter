@@ -160,6 +160,7 @@
     "X-KDE-Keywords[zh_CN]": "Wayland,Compositor,Display,System Information,xianshitexiaohunheqi,texiao,hunheqi,xianshi,xianshiqi,xitongxinxi,显示特效混合器,特效,混合器,显示,显示器,系统信息",
     "X-KDE-Keywords[zh_TW]": "Wayland,Compositor,Display,System Information",
     "X-KDE-OnlyShowOnQtPlatforms": [
-        "wayland"
+        "wayland",
+        "wayland-egl"
     ]
 }
