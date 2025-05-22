@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
 #
-# SPDX-FileCopyrightText: 2024 Kristof Kiszel <ulysses@fsf.hu>
+# SPDX-FileCopyrightText: 2024, 2025 Kristof Kiszel <ulysses@fsf.hu>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-29 00:42+0000\n"
-"PO-Revision-Date: 2024-01-14 21:52+0100\n"
+"PO-Revision-Date: 2025-05-21 21:41+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -15,13 +15,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 25.04.1\n"
 
 #: CommandOutputContext.cpp:127 CommandOutputContext.cpp:149
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Could not load page content"
-msgstr ""
+msgstr "Nem sikerült betölteni az oldal tartalmát"
 
 #: CommandOutputContext.cpp:129
 #, kde-kuit-format
@@ -31,17 +31,19 @@ msgid ""
 "this page, but could not be found. You may be able to install it using your "
 "package manager; either way, please report this packaging issue to %2."
 msgstr ""
+"Technikai részletek: A(z) <command>%1</command> szükséges az oldal "
+"megjelenítéséhez, de nem található. Telepítheti a csomagkezelőjével, "
+"akárhogy is, kérjük, jelentse ezt a csomagolási problémát itt: %2."
 
 #: CommandOutputContext.cpp:150
-#, fuzzy, kde-kuit-format
-#| msgctxt "@info"
-#| msgid "The <command>%1</command> tool crashed while generating page content"
+#, kde-kuit-format
 msgctxt "@Info"
 msgid ""
 "Technical details: the <command>%1</command> tool crashed while generating "
 "page content."
 msgstr ""
-"A(z) <command>%1</command> összeomlott az oldal tartalmának generálása közben"
+"Technikai részletek: A(z) <command>%1</command> összeomlott az oldal "
+"tartalmának előállítása közben."
 
 #: qml/CommandOutputKCM.qml:105
 #, kde-format
@@ -56,10 +58,9 @@ msgid "No data available"
 msgstr "Nincs elérhető adat"
 
 #: qml/CommandOutputKCM.qml:123
-#, fuzzy, kde-format
-#| msgid "Report this issue"
+#, kde-format
 msgid "Report to %1"
-msgstr "Jelentse ezt a hibát"
+msgstr "Jelentés itt: %1"
 
 #: qml/CommandOutputKCM.qml:189
 #, kde-format
@@ -77,19 +78,19 @@ msgstr "Szűrő"
 #, kde-format
 msgctxt "@action:button close filter header"
 msgid "Close"
-msgstr ""
+msgstr "Bezárás"
 
 #: qml/CommandOutputKCM.qml:228
 #, kde-format
 msgctxt "@action:button pauses automatic refreshing"
 msgid "Pause Refreshing"
-msgstr ""
+msgstr "Frissítés szüneteltetése"
 
 #: qml/CommandOutputKCM.qml:236
 #, kde-format
 msgctxt "@action:button resumes automatic refreshing"
 msgid "Resume Refreshing"
-msgstr ""
+msgstr "Frissítés folytatása"
 
 #: qml/CommandOutputKCM.qml:243
 #, kde-format
@@ -98,9 +99,7 @@ msgid "Copy to Clipboard"
 msgstr "Másolás a vágólapra"
 
 #: qml/CommandOutputKCM.qml:251
-#, fuzzy, kde-format
-#| msgctxt "accessible name for filter input"
-#| msgid "Filter"
+#, kde-format
 msgctxt "@action:button opens filter bar"
 msgid "Filter"
 msgstr "Szűrő"
