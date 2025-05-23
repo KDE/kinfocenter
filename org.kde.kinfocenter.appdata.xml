@@ -58,53 +58,6 @@
   <name xml:lang="zh-CN">系统信息中心</name>
   <name xml:lang="zh-TW">資訊中心</name>
   <summary>Learn about the system's hardware and status</summary>
-  <summary xml:lang="ar">نظرة عامة مركزية ومريحة لمعلومات النظام</summary>
-  <summary xml:lang="ast">Una vista xeneral centralizada y afayadiza de la información del sistema</summary>
-  <summary xml:lang="az">Sistem haqqında məlumatlara mərkəzləşmiş və rahat şəkildə baxış</summary>
-  <summary xml:lang="bg">Централизиран и удобен преглед на системната информация</summary>
-  <summary xml:lang="ca">Resum centralitzat i pràctic de la informació del sistema</summary>
-  <summary xml:lang="ca-valencia">Resum centralitzat i pràctic de la informació del sistema</summary>
-  <summary xml:lang="da">Centraliseret og bekvem oversigt over systeminformation</summary>
-  <summary xml:lang="de">Zentrale Übersicht über Systeminformationen</summary>
-  <summary xml:lang="el">Συγκεντρωτική και βολική επισκόπηση πληροφοριών του συστήματος</summary>
-  <summary xml:lang="en-GB">Centralised and convenient overview of system information</summary>
-  <summary xml:lang="eo">Alcentrigita kaj oportuna superrigardo de sistemaj informoj</summary>
-  <summary xml:lang="es">Resumen práctico y centralizado de la información del sistema</summary>
-  <summary xml:lang="et">Keskne ja mugav ülevaade süsteemsest teabest</summary>
-  <summary xml:lang="eu">Sistema-informazioaren ikuspegi-orokor zentralizatu eta praktikoa</summary>
-  <summary xml:lang="fi">Järjestelmätietojen mukava keskitetty yleisnäkymä</summary>
-  <summary xml:lang="fr">Aperçu centralisé et pratique des informations système</summary>
-  <summary xml:lang="gl">Resumo centralizado e cómodo de información do sistema</summary>
-  <summary xml:lang="he">סקירה נוחה ומרוכזת של פרטי המערכת</summary>
-  <summary xml:lang="hu">A rendszerjellemzők központosított és kényelmes áttekintése</summary>
-  <summary xml:lang="ia">Centralisate e conveniente supervision del information de systema</summary>
-  <summary xml:lang="id">Ikhtisar informasi sistem yang terpusat dan serasi</summary>
-  <summary xml:lang="it">Panoramica centralizzata e comoda delle informazioni di sistema</summary>
-  <summary xml:lang="ja">システム情報の一元化された便利な概要</summary>
-  <summary xml:lang="ka">ცენტრალიზებული და მოხერხებული ადგილი სისტემური ინფორმაციის სანახავად</summary>
-  <summary xml:lang="ko">시스템 정보를 한 눈에 보기</summary>
-  <summary xml:lang="lt">Centralizuota ir patogi sistemos informacijos apžvalga</summary>
-  <summary xml:lang="lv">Centralizēts un ērts sistēmas informācijas pārskats</summary>
-  <summary xml:lang="nb">Sentralisert og praktisk oversikt over systeminformasjon</summary>
-  <summary xml:lang="nl">Gecentraliseerd en prettig overzicht van systeeminformatie</summary>
-  <summary xml:lang="nn">Sentralisert og praktisk oversikt over systeminformasjon</summary>
-  <summary xml:lang="pa">ਸਿਸਟਮ ਜਾਣਕਾਰੀ ਲੈਣ ਲਈ ਇੱਕ ਸਾਂਝੀ ਅਤੇ ਸੌਖਾਲੀ ਥਾਂ ਹੈ</summary>
-  <summary xml:lang="pl">Skupiony w jednym miejscu i wygodny przegląd danych o systemie</summary>
-  <summary xml:lang="pt">Visão centralizada e conveniente da informação do sistema</summary>
-  <summary xml:lang="pt-BR">Visão geral centralizada e conveniente das informações do sistema</summary>
-  <summary xml:lang="ro">Vizualizare centralizată și convenabilă a informațiilor despre sistem</summary>
-  <summary xml:lang="ru">Централизованный и удобный просмотр информации о системе</summary>
-  <summary xml:lang="sa">प्रणालीसूचनायाः केन्द्रीकृतं सुविधाजनकं च अवलोकनम्</summary>
-  <summary xml:lang="sk">Centralizovaný a pohodlný prehľad systémových informácií</summary>
-  <summary xml:lang="sl">Centraliziran in priročen pregled sistemskih informacij</summary>
-  <summary xml:lang="sv">Centraliserad och bekväm översikt av systeminformation</summary>
-  <summary xml:lang="tg">Намоиши мусоид ва марказонидашуда барои низоми иттилоотӣ</summary>
-  <summary xml:lang="tr">Sistem bilgisinin kolayca ulaşılabilir ve uygunca bir genel görünümü</summary>
-  <summary xml:lang="uk">Централізований та зручний огляд усіх даних щодо системи</summary>
-  <summary xml:lang="vi">Phần tổng quan tập trung và tiện lợi về thông tin hệ thống</summary>
-  <summary xml:lang="x-test">xxCentralized and convenient overview of system informationxx</summary>
-  <summary xml:lang="zh-CN">系统信息的一站式简易概览</summary>
-  <summary xml:lang="zh-TW">集中且方便的系統資訊總覽</summary>
   <description>
     <p>The Info Center provides you with a centralized and convenient
      overview of your system and desktop environment.</p>
