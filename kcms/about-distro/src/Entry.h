@@ -81,6 +81,9 @@ public:
     // Returns a help string for the entry, shown with a ContextualHelpButton
     Q_INVOKABLE [[nodiscard]] virtual QString localizedHelp(Language language = Language::System) const;
 
+Q_SIGNALS:
+    void updated();
+
 protected:
     // Returns localized QString for the given language.
     QString localize(const KLocalizedString &string, Language language) const;
