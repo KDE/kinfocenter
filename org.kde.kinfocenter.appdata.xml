@@ -58,6 +58,14 @@
   <name xml:lang="zh-CN">系统信息中心</name>
   <name xml:lang="zh-TW">資訊中心</name>
   <summary>Learn about the system's hardware and status</summary>
+  <summary xml:lang="ca">Coneixeu sobre el maquinari i l'estat del sistema</summary>
+  <summary xml:lang="ca-valencia">Coneixeu sobre el maquinari i l'estat del sistema</summary>
+  <summary xml:lang="es">Obtenga información sobre el hardware y el estado del sistema</summary>
+  <summary xml:lang="ka">გაიგეთ მეტი სისტემის აპარატურის და სტატუსის შესახებ</summary>
+  <summary xml:lang="nl">Kom meer te weten over de hardware van het systeem en zijn status</summary>
+  <summary xml:lang="sl">Spoznajte strojno opremo in stanje sistema</summary>
+  <summary xml:lang="uk">Дізнайтеся більше про обладнання та стан системи</summary>
+  <summary xml:lang="x-test">xxLearn about the system's hardware and statusxx</summary>
   <description>
     <p>The Info Center provides you with a centralized and convenient
      overview of your system and desktop environment.</p>
