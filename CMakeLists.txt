@@ -46,6 +46,12 @@ if(CMAKE_SYSTEM_NAME MATCHES "Linux")
     find_package(UDev REQUIRED COMPONENTS UDev)
 endif()
 
+find_package(KF6PulseAudioQt 1.8.0)
+set_package_properties(KF6PulseAudioQt PROPERTIES
+    DESCRIPTION "Qt bindings for pulseaudio"
+    PURPOSE "Provides information about the audio server"
+)
+
 ecm_find_qmlmodule(org.kde.kirigami 2.5)
 
 macro(kinfocenter_add_kcm target)

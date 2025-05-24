@@ -29,6 +29,10 @@ set(kcm_SRCS
     ThirdPartyEntry.h
 )
 
+if(KF6PulseAudioQt_FOUND)
+    set(kcm_SRCS ${kcm_SRCS} AudioServerEntry.h AudioServerEntry.cpp)
+endif()
+
 kcmutils_add_qml_kcm(kcm_about-distro SOURCES ${kcm_SRCS} INSTALL_NAMESPACE "plasma/kcms")
 
 target_link_libraries(kcm_about-distro  PRIVATE
@@ -46,6 +50,11 @@ target_link_libraries(kcm_about-distro  PRIVATE
 if(UDev_FOUND)
     target_link_libraries(kcm_about-distro PRIVATE UDev::UDev)
     target_compile_definitions(kcm_about-distro PRIVATE UDEV_FOUND)
+endif()
+
+if(KF6PulseAudioQt_FOUND)
+    target_link_libraries(kcm_about-distro PRIVATE KF6::PulseAudioQt)
+    target_compile_definitions(kcm_about-distro PRIVATE PULSEAUDIOQT_FOUND)
 endif()
 
 cmake_path(RELATIVE_PATH KDE_INSTALL_FULL_LIBEXECDIR BASE_DIRECTORY "${KDE_INSTALL_FULL_PLUGINDIR}/plasma/kcms/" OUTPUT_VARIABLE LIBEXECDIR_FROM_KCM)

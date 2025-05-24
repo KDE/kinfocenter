@@ -38,6 +38,10 @@
 #include "ThirdPartyEntry.h"
 #include "Version.h"
 
+#ifdef PULSEAUDIOQT_FOUND
+#include "AudioServerEntry.h"
+#endif
+
 class EntryModel : public QAbstractListModel
 {
     Q_OBJECT
@@ -275,11 +279,16 @@ public:
 
         // software
         addEntriesToGrid(m_softwareEntries,
-                         {new PlasmaEntry(),
-                          new Entry(ki18n("KDE Frameworks Version:"), KCoreAddons::versionString()),
-                          new Entry(ki18n("Qt Version:"), QString::fromLatin1(qVersion())),
-                          new KernelEntry(),
-                          new GraphicsPlatformEntry()});
+                         {
+                             new PlasmaEntry(),
+                             new Entry(ki18n("KDE Frameworks Version:"), KCoreAddons::versionString()),
+                             new Entry(ki18n("Qt Version:"), QString::fromLatin1(qVersion())),
+                             new KernelEntry(),
+                             new GraphicsPlatformEntry(),
+#ifdef PULSEAUDIOQT_FOUND
+                             new AudioServerEntry(),
+#endif
+                         });
 
         // Add any extraData entries
         if (!m_extraDataEntries.empty()) {
