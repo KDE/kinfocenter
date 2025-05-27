@@ -63,6 +63,7 @@
   <summary xml:lang="es">Obtenga información sobre el hardware y el estado del sistema</summary>
   <summary xml:lang="eu">Ezagutu sistemaren hardwarea eta egoera</summary>
   <summary xml:lang="fr">En savoir plus sur le matériel et l'état du système</summary>
+  <summary xml:lang="gl">Información do soporte físico e estado do sistema.</summary>
   <summary xml:lang="he">מידע על החומרה ועל מצב המערכת</summary>
   <summary xml:lang="it">Conosci l'hardware e lo stato del sistema</summary>
   <summary xml:lang="ka">გაიგეთ მეტი სისტემის აპარატურის და სტატუსის შესახებ</summary>
@@ -71,6 +72,7 @@
   <summary xml:lang="tr">Sistemdeki donanım ve sistem durumu hakkında bilgi alın</summary>
   <summary xml:lang="uk">Дізнайтеся більше про обладнання та стан системи</summary>
   <summary xml:lang="x-test">xxLearn about the system's hardware and statusxx</summary>
+  <summary xml:lang="zh-CN">显示系统硬件和状态信息</summary>
   <summary xml:lang="zh-TW">瞭解關於系統硬體與狀態的資訊</summary>
   <description>
     <p>The Info Center provides you with a centralized and convenient
