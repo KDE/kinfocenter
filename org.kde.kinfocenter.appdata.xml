@@ -58,10 +58,12 @@
   <name xml:lang="zh-CN">系统信息中心</name>
   <name xml:lang="zh-TW">資訊中心</name>
   <summary>Learn about the system's hardware and status</summary>
+  <summary xml:lang="ar">تعرّف على أجهزة النظام وحاله</summary>
   <summary xml:lang="ca">Coneixeu sobre el maquinari i l'estat del sistema</summary>
   <summary xml:lang="ca-valencia">Coneixeu sobre el maquinari i l'estat del sistema</summary>
   <summary xml:lang="es">Obtenga información sobre el hardware y el estado del sistema</summary>
   <summary xml:lang="eu">Ezagutu sistemaren hardwarea eta egoera</summary>
+  <summary xml:lang="fi">Opi lisää järjestelmän laitteistosta ja tilasta</summary>
   <summary xml:lang="fr">En savoir plus sur le matériel et l'état du système</summary>
   <summary xml:lang="gl">Información do soporte físico e estado do sistema.</summary>
   <summary xml:lang="he">מידע על החומרה ועל מצב המערכת</summary>
