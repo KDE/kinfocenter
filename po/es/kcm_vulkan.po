@@ -1,15 +1,15 @@
 # Spanish translations for kcm_vulkan.po package.
-# Copyright (C) 2021 This file is copyright:
+# Copyright (C) 2021-2025 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
-#
 # Automatically generated, 2021.
-# Eloy Cuadra <ecuadra@eloihr.net>, 2021.
+#
+# SPDX-FileCopyrightText: 2021, 2025 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm_vulkan\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-11-17 00:29+0000\n"
-"PO-Revision-Date: 2021-08-12 11:44+0200\n"
+"PO-Revision-Date: 2025-06-10 00:56+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -44,23 +44,3 @@ msgstr "Harald Sitter"
 msgctxt "@info"
 msgid "Vulkan Graphics API Information"
 msgstr "Información de la API de gráficos Vulkan"
-
-#~ msgctxt "@info"
-#~ msgid "The executable <command>%1</command> could not be found in $PATH."
-#~ msgstr "El ejecutable <command>%1</command> no se puede encontrar en $PATH."
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "The subprocess <command>%1</command> crashed unexpectedly. No data could "
-#~ "be obtained."
-#~ msgstr ""
-#~ "El subproceso <command>%1</command> ha fallado de forma inesperada. No se "
-#~ "ha podido obtener ningún dato."
-
-#~ msgctxt "@label placeholder text to filter for something"
-#~ msgid "Filter…"
-#~ msgstr "Filtro..."
-
-#~ msgctxt "accessible name for filter input"
-#~ msgid "Filter"
-#~ msgstr "Filtro"

@@ -1,22 +1,22 @@
-# Copyright (C) YEAR This_file_is_part_of_KDE
-# This file is distributed under the same license as the PACKAGE package.
+# Spanish translations for kcm_nic.po package.
+# Copyright (C) 2010-2025 This file is copyright:
+# This file is distributed under the same license as the kinfocenter package.
 #
-# Kira J. Fernandez <kirajfdez@gmail.com>, 2010.
-# Cristina Yenyxe González García <the.blue.valkyrie@gmail.com>, 2010.
-# Eloy Cuadra <ecuadra@eloihr.net>, 2014, 2019, 2020.
+# SPDX-FileCopyrightText: 2010 Kira J. Fernandez <kirajfdez@gmail.com>
+# SPDX-FileCopyrightText: 2010 Cristina Yenyxe González García <the.blue.valkyrie@gmail.com>
+# SPDX-FileCopyrightText: 2014, 2019, 2020, 2025 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: kcm_nic\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-07 02:38+0000\n"
-"PO-Revision-Date: 2020-09-27 13:33+0200\n"
+"PO-Revision-Date: 2025-06-10 00:56+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"com>\n"
 "X-Generator: Lokalize 20.08.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
@@ -153,48 +153,3 @@ msgstr "Abajo"
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr "Actualizar"
-
-#~ msgctxt "@item:intext Mode of network card"
-#~ msgid "Broadcast"
-#~ msgstr "Emisión"
-
-#~ msgctxt "@item:intext Mode of network card"
-#~ msgid "Point to Point"
-#~ msgstr "Punto a punto"
-
-#~ msgctxt "@item:intext Mode of network card"
-#~ msgid "Multicast"
-#~ msgstr "Multidifusión"
-
-#~ msgctxt "@item:intext Mode of network card"
-#~ msgid "Loopback"
-#~ msgstr "Loopback"
-
-#~ msgctxt "@item:intext Mode of network card"
-#~ msgid "Unknown"
-#~ msgstr "Desconocido"
-
-#~ msgctxt "Unknown network mask"
-#~ msgid "Unknown"
-#~ msgstr "Desconocida"
-
-#~ msgctxt "Unknown HWaddr"
-#~ msgid "Unknown"
-#~ msgstr "Desconocida"
-
-#~| msgid "Broadcast"
-#~ msgctxt "@item:intable Netork type"
-#~ msgid "Broadcast"
-#~ msgstr "Emisión"
-
-#~ msgid "HWAddr"
-#~ msgstr "Dirección hardware"
-
-#~ msgid "&Update"
-#~ msgstr "Act&ualizar"
-
-#~ msgid "kcminfo"
-#~ msgstr "kcminfo"
-
-#~ msgid "System Information Control Module"
-#~ msgstr "Módulo de control de información del sistema"
