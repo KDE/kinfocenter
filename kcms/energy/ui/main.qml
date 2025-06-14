@@ -13,6 +13,8 @@ import org.kde.kirigami as Kirigami
 import org.kde.kcmutils as KCM
 import org.kde.kinfocenter.energy.private 1.0
 
+pragma ComponentBehavior: Bound
+
 KCM.SimpleKCM {
     id: root
 
@@ -384,6 +386,9 @@ KCM.SimpleKCM {
             delegate: Kirigami.FormLayout {
                 id: currentLayout
 
+                required property string title
+                required property list<var> info
+
                 Component.onCompleted: {
                     // ensure that all visible FormLayout share the same set of twinFormLayouts
                     titleRepeater.layouts.push(currentLayout);
@@ -393,7 +398,7 @@ KCM.SimpleKCM {
                 }
 
                 Kirigami.Heading {
-                    text: modelData.title
+                    text: currentLayout.title
                     Kirigami.FormData.isSection: true
                     level: 2
                     // HACK hide section header if all labels are invisible
@@ -402,25 +407,30 @@ KCM.SimpleKCM {
 
                 Repeater {
                     id: detailsRepeater
-                    model: modelData.info || []
+                    model: currentLayout.info || []
                     delegate: Kirigami.SelectableLabel {
                         id: valueLabel
+
+                        required property string label
+                        required property string source
+                        required property var format  // A formatter function
+
                         visible: text.length > 0
                         Layout.fillWidth: true
 
-                        Keys.onPressed: {
+                        Keys.onPressed: event => {
                             if (event.matches(StandardKey.Copy)) {
                                 valueLabel.copy();
                                 event.accepted = true;
                             }
                         }
 
-                        Kirigami.FormData.label: i18n("%1:", modelData.label)
+                        Kirigami.FormData.label: i18n("%1:", valueLabel.label)
                         text: {
                             // Battery properties are lower-cased. Otherwise get the "currentX" property from root
-                            const isBatteryProperty = (modelData.source[0] == modelData.source[0].toLowerCase())
-                            const value = isBatteryProperty ? root.currentBattery[modelData.source] : root[`current${modelData.source}`]
-                            return value ? modelData.format(value) : ""
+                            const isBatteryProperty = (valueLabel.source[0] == valueLabel.source[0].toLowerCase())
+                            const value = isBatteryProperty ? root.currentBattery[valueLabel.source] : root[`current${valueLabel.source}`]
+                            return value ? valueLabel.format(value) : ""
                         }
                     }
                 }
