@@ -24,7 +24,7 @@ Canvas
 
     antialiasing: true
 
-    property var data //expect an array of QPointF
+    property list<point> points
 
     property int yMin: 0
     property int yMax: 100
@@ -42,7 +42,7 @@ Canvas
         Math.round((plot.left + plot.right) / 2),
         Math.round((plot.top + plot.bottom) / 2))
 
-    onDataChanged: {
+    onPointsChanged: {
         canvas.requestPaint();
     }
 
@@ -153,7 +153,7 @@ Canvas
         // Draw the data points in the graph
         let firstPoint = null;
         let point = null;
-        for (const dataPoint of data) {
+        for (const dataPoint of canvas.points) {
             if (!dataPoint || dataPoint.x < currentUnixTime - xDuration) {
                 continue;
             }
