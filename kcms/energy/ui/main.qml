@@ -27,7 +27,7 @@ KCM.SimpleKCM {
     readonly property var details: [
         {
             title: i18n("Battery"),
-            data: [
+            info: [
                 {label: i18n("Rechargeable"), value: "rechargeable"},
                 {label: i18n("Charge state"), value: "chargeState", modifier: "chargeState"},
                 {label: i18n("Current charge"), value: "chargePercent", unit: "%", precision: 0},
@@ -41,7 +41,7 @@ KCM.SimpleKCM {
         },
         {
             title: i18n("Energy"),
-            data: [
+            info: [
                 {label: i18nc("current power draw from the battery in W", "Consumption"), value: "energyRate", unit: i18nc("Watt", "W"), precision: 2},
                 {label: i18n("Voltage"), value: "voltage", unit: i18nc("Volt", "V"), precision: 2},
                 {label: i18n("Remaining energy"), value: "energy", unit: i18nc("Watt-hours", "Wh"), precision: 2},
@@ -51,7 +51,7 @@ KCM.SimpleKCM {
         },
         {
             title: i18n("Environment"),
-            data: [
+            info: [
                 {label: i18n("Temperature"), value: "temperature", unit: i18nc("Degree Celsius", "°C"), precision: 2}
             ]
         },
@@ -128,6 +128,8 @@ KCM.SimpleKCM {
                 model: kcm.batteries
 
                 delegate: QQC2.Button {
+                    id: deviceItem
+
                     required property int index
                     required property string udi
                     required property string vendor
@@ -154,10 +156,10 @@ KCM.SimpleKCM {
                                 Layout.preferredWidth: Kirigami.Units.iconSizes.smallMedium
                                 Layout.preferredHeight: Layout.preferredWidth
                                 source: {
-                                    switch(battery.type) {
+                                    switch(deviceItem.battery.type) {
                                         case 1: return "phone"
                                         case 2: return "battery-ups"
-                                        case 3: return battery.chargeState === 1 ? "battery-full-charging" : "battery-full"
+                                        case 3: return deviceItem.battery.chargeState === Battery.Charging ? "battery-full-charging" : "battery-full"
                                         case 4: return "input-mouse"
                                         case 5: return "input-keyboard"
                                         case 6: return "input-keyboard" // TODO: New Icon Required?
@@ -182,7 +184,7 @@ KCM.SimpleKCM {
                                 QQC2.Label {
                                     Layout.fillWidth: true
                                     text: {
-                                        switch(battery.type) {
+                                        switch(deviceItem.battery.type) {
                                             case 1: return i18n("PDA Battery")
                                             case 2: return i18n("UPS Battery")
                                             case 3: return i18n("Internal Battery")
@@ -207,7 +209,7 @@ KCM.SimpleKCM {
 
                                 QQC2.Label {
                                     Layout.fillWidth: true
-                                    text: product
+                                    text: deviceItem.product
                                     color: Kirigami.Theme.disabledTextColor
                                     elide: Text.ElideRight
                                     maximumLineCount : 1
@@ -221,11 +223,11 @@ KCM.SimpleKCM {
                                 Layout.fillWidth: true
                                 from: 0
                                 to: 100
-                                value: battery.chargePercent
+                                value: deviceItem.battery.chargePercent
                             }
 
                             QQC2.Label {
-                                text: battery.chargeState === 1 ?
+                                text: deviceItem.battery.chargeState === Battery.Charging ?
                                     i18nc("Battery charge percentage", "%1% (Charging)", Math.round(percentageSlider.value)) :
                                     i18nc("Battery charge percentage", "%1%", Math.round(percentageSlider.value))
                             }
@@ -239,7 +241,7 @@ KCM.SimpleKCM {
     HistoryModel {
         id: history
         duration: timespanCombo.duration
-        device: currentUdi
+        device: root.currentUdi
         type: root.historyType
     }
 
@@ -262,7 +264,7 @@ KCM.SimpleKCM {
             contentItem: Graph {
                 id: graph
 
-                data: history.points
+                points: history.points
                 xDuration: timespanCombo.duration
 
                 yLabel: root.historyType == HistoryModel.RateType ? ( value => i18nc("Graph axis label: power in Watts","%1 W", value) )
@@ -281,7 +283,7 @@ KCM.SimpleKCM {
             // Reparented to keep the item outside of a layout and the graph canvas
             Kirigami.PlaceholderMessage {
                 parent: graph
-                visible: graph.data.length < 2
+                visible: graph.points.length < 2
                 x: graph.plotCenter.x - width / 2
                 y: graph.plotCenter.y - height / 2
                 width: graph.plot.width - (Kirigami.Units.largeSpacing * 4)
@@ -297,7 +299,7 @@ KCM.SimpleKCM {
                     checkable: true
                     text: i18n("Charge Percentage")
                     onClicked: {
-                        historyType = HistoryModel.ChargeType
+                        root.historyType = HistoryModel.ChargeType
                         rateButton.checked = false
                     }
                 }
@@ -307,7 +309,7 @@ KCM.SimpleKCM {
                     checkable: true
                     text: i18n("Energy Consumption")
                     onClicked: {
-                        historyType = HistoryModel.RateType
+                        root.historyType = HistoryModel.RateType
                         chargeButton.checked = false
                     }
                 }
@@ -353,8 +355,7 @@ KCM.SimpleKCM {
         Repeater {
             id: titleRepeater
             property list<Kirigami.FormLayout> layouts
-
-            visible: !!currentBattery
+            visible: !!root.currentBattery
 
             model: root.details
 
@@ -379,7 +380,7 @@ KCM.SimpleKCM {
 
                 Repeater {
                     id: detailsRepeater
-                    model: modelData.data || []
+                    model: modelData.info || []
                     delegate: Kirigami.SelectableLabel {
                         id: valueLabel
                         visible: text.length > 0

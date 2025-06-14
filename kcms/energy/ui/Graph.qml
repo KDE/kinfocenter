@@ -24,7 +24,7 @@ Canvas
 
     antialiasing: true
 
-    property var data //expect an array of QPointF
+    property list<point> points
 
     property int yMin: 0
     property int yMax: 100
@@ -42,7 +42,7 @@ Canvas
         Math.round((plot.left + plot.right) / 2),
         Math.round((plot.top + plot.bottom) / 2))
 
-    onDataChanged: {
+    onPointsChanged: {
         canvas.requestPaint();
     }
 
@@ -151,10 +151,10 @@ Canvas
         c.beginPath();
 
         // Draw the line graph if we have enough points
-        if (data.length >= 2) {
+        if (points.length >= 2) {
             let firstPoint = null;
             let point;
-            for (const dataPoint of data) {
+            for (const dataPoint of points) {
                 if (dataPoint.x < currentUnixTime - xDuration) {
                     continue;
                 }
