@@ -28,36 +28,59 @@ KCM.SimpleKCM {
         {
             title: i18n("Battery"),
             info: [
-                {label: i18n("Rechargeable"), value: "rechargeable"},
-                {label: i18n("Charge state"), value: "chargeState", modifier: "chargeState"},
-                {label: i18n("Current charge"), value: "chargePercent", unit: "%", precision: 0},
-                {label: i18n("Health"), value: "capacity", unit: "%", precision: 0},
-                {label: i18n("Charge Cycles"), value: "cycleCount", modifier: "cycleCount"},
-                {label: i18n("Vendor"), value: "vendor", source:"Vendor"},
-                {label: i18n("Model"), value: "model", source:"Product"},
-                {label: i18n("Serial Number"), value: "serial"},
-                {label: i18n("Technology"), value: "technology", modifier: "technology"}
+                {label: i18n("Rechargeable"), source: "rechargeable", format: format_yesno},
+                {label: i18n("Charge state"), source: "chargeState", format: format_chargeState},
+                {label: i18n("Current charge"), source: "chargePercent", format: format_percentage},
+                {label: i18n("Health"), source: "capacity", format: format_percentage},
+                {label: i18n("Charge Cycles"), source: "cycleCount", format: format_cycleCount},
+                {label: i18n("Vendor"), source: "Vendor", format: format_text},
+                {label: i18n("Model"), source: "Product", format: format_text},
+                {label: i18n("Serial Number"), source: "serial", format: format_text},
+                {label: i18n("Technology"), source: "technology", format: format_technology}
             ]
         },
         {
             title: i18n("Energy"),
             info: [
-                {label: i18nc("current power draw from the battery in W", "Consumption"), value: "energyRate", unit: i18nc("Watt", "W"), precision: 2},
-                {label: i18n("Voltage"), value: "voltage", unit: i18nc("Volt", "V"), precision: 2},
-                {label: i18n("Remaining energy"), value: "energy", unit: i18nc("Watt-hours", "Wh"), precision: 2},
-                {label: i18n("Last full charge"), value: "energyFull", unit: i18nc("Watt-hours", "Wh"), precision: 2},
-                {label: i18n("Original charge capacity"), value: "energyFullDesign", unit: i18nc("Watt-hours", "Wh"), precision: 2}
+                {label: i18nc("current power draw from the battery in W", "Consumption"), source: "energyRate", format: format_unit(i18nc("Watt", "W"), 2)},
+                {label: i18n("Voltage"), source: "voltage", format: format_unit(i18nc("Volt", "V"), 2)},
+                {label: i18n("Remaining energy"), source: "energy", format: format_unit(i18nc("Watt-hours", "Wh"), 2)},
+                {label: i18n("Last full charge"), source: "energyFull", format: format_unit(i18nc("Watt-hours", "Wh"), 2)},
+                {label: i18n("Original charge capacity"), source: "energyFullDesign", format: format_unit(i18nc("Watt-hours", "Wh"), 2)}
             ]
         },
         {
             title: i18n("Environment"),
             info: [
-                {label: i18n("Temperature"), value: "temperature", unit: i18nc("Degree Celsius", "°C"), precision: 2}
+                {label: i18n("Temperature"), source: "temperature", format: format_unit(i18nc("Degree Celsius", "°C"), 2)}
             ]
         },
     ]
 
-    function modifier_chargeState(value) {
+    // Formatter functions for the details properties
+
+    function format_text(value) {
+        return value
+    }
+
+    function format_yesno(value) {
+        return value
+            ? i18nc("@info:label The battery has a certain capability, such as `Rechargable:`", "Yes")
+            : i18nc("@info:label The battery doesn't have a certain capability, such as `Rechargable:`", "No");
+    }
+
+    function format_percentage(value) {
+        return i18nc("%1 is a percentage value", "%1%", value);
+    }
+
+    function format_unit(unit, precision) {
+        return (value) => {
+            const fmtValue = Number(value).toLocaleString(Qt.locale(), "f", precision);
+            return i18nc("%1 is value, %2 is unit", "%1 %2", fmtValue, unit);
+        }
+    }
+
+    function format_chargeState(value) {
         switch(value) {
         case Battery.NoCharge: return i18n("Not charging")
         case Battery.Charging: return i18n("Charging")
@@ -66,7 +89,7 @@ KCM.SimpleKCM {
         }
     }
 
-    function modifier_technology(value) {
+    function format_technology(value) {
         switch(value) {
         case Battery.LithiumIon: return i18n("Lithium ion")
         case Battery.LithiumPolymer: return i18n("Lithium polymer")
@@ -78,9 +101,9 @@ KCM.SimpleKCM {
         }
     }
 
-    function modifier_cycleCount(value) {
+    function format_cycleCount(value) {
         // -1 means "not available", don't show this.
-        return value > 0 ? value : "";
+        return value > 0 ? Number(value) : "";
     }
 
     implicitWidth: Kirigami.Units.gridUnit * 30
@@ -267,8 +290,7 @@ KCM.SimpleKCM {
                 points: history.points
                 xDuration: timespanCombo.duration
 
-                yLabel: root.historyType == HistoryModel.RateType ? ( value => i18nc("Graph axis label: power in Watts","%1 W", value) )
-                                                                  : ( value => i18nc("Graph axis label: percentage","%1%", value) )
+                yLabel: root.historyType == HistoryModel.RateType ? root.format_unit(i18nc("Watt", "W"), 0) : root.format_percentage
                 yMax: {
                     if (root.historyType == HistoryModel.RateType) {
                         // Ceil to next 10
@@ -395,33 +417,10 @@ KCM.SimpleKCM {
 
                         Kirigami.FormData.label: i18n("%1:", modelData.label)
                         text: {
-                            let value = (modelData.source) ? root["current" + modelData.source]
-                                                           : currentBattery[modelData.value]
-
-                            if (typeof value === "boolean") {
-                                return value ? i18n("Yes") : i18n("No")
-                            }
-
-                            if (!value) {
-                                return ""
-                            }
-
-                            if (modelData.precision) { // round to decimals
-                                value = Number(value).toLocaleString(Qt.locale(), "f", modelData.precision)
-                            }
-
-                            if (modelData.modifier && root["modifier_" + modelData.modifier]) {
-                                value = root["modifier_" + modelData.modifier](value)
-                            }
-
-                            switch (modelData.unit) {
-                            case undefined:
-                                return value
-                            case "%":
-                                return i18nc("%1 is a percentage value", "%1%", value)
-                            default:
-                                return i18nc("%1 is value, %2 is unit", "%1 %2", value, modelData.unit)
-                            }
+                            // Battery properties are lower-cased. Otherwise get the "currentX" property from root
+                            const isBatteryProperty = (modelData.source[0] == modelData.source[0].toLowerCase())
+                            const value = isBatteryProperty ? root.currentBattery[modelData.source] : root[`current${modelData.source}`]
+                            return value ? modelData.format(value) : ""
                         }
                     }
                 }
