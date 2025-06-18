@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-13 00:46+0000\n"
+"POT-Creation-Date: 2025-06-18 00:44+0000\n"
 "PO-Revision-Date: 2023-05-18 01:48+0900\n"
 "Last-Translator: Ryuichi Yamada <ryuichi_ya220@outlook.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -18,383 +18,140 @@ msgstr ""
 "X-Text-Markup: kde4\n"
 "X-Generator: Lokalize 23.04.0\n"
 
-#: ui/main.qml:29
+#: ui/main.qml:31
 #, kde-format
 msgid "Battery"
 msgstr "バッテリ"
 
-#: ui/main.qml:31
+#: ui/main.qml:33
 #, kde-format
 msgid "Rechargeable"
 msgstr "再充電可能"
 
-#: ui/main.qml:32
+#: ui/main.qml:34
 #, kde-format
 msgid "Charge state"
 msgstr "充電状態"
 
-#: ui/main.qml:33
+#: ui/main.qml:35
 #, kde-format
 msgid "Current charge"
 msgstr "現在の充電"
 
-#: ui/main.qml:34
+#: ui/main.qml:36
 #, kde-format
 msgid "Health"
 msgstr "正常性"
 
-#: ui/main.qml:35
+#: ui/main.qml:37
 #, fuzzy, kde-format
 #| msgid "Charge state"
 msgid "Charge Cycles"
 msgstr "充電状態"
 
-#: ui/main.qml:36
+#: ui/main.qml:38
 #, kde-format
 msgid "Vendor"
 msgstr "ベンダー"
 
-#: ui/main.qml:37
+#: ui/main.qml:39
 #, kde-format
 msgid "Model"
 msgstr "モデル"
 
-#: ui/main.qml:38
+#: ui/main.qml:40
 #, kde-format
 msgid "Serial Number"
 msgstr "シリアルナンバー"
 
-#: ui/main.qml:39
+#: ui/main.qml:41
 #, kde-format
 msgid "Technology"
 msgstr "種類"
 
-#: ui/main.qml:43
+#: ui/main.qml:45
 #, kde-format
 msgid "Energy"
 msgstr "エネルギー"
 
-#: ui/main.qml:45
+#: ui/main.qml:47
 #, kde-format
 msgctxt "current power draw from the battery in W"
 msgid "Consumption"
 msgstr "消費電力"
 
-#: ui/main.qml:45
+#: ui/main.qml:47 ui/main.qml:295
 #, kde-format
 msgctxt "Watt"
 msgid "W"
 msgstr "W"
 
-#: ui/main.qml:46
+#: ui/main.qml:48
 #, kde-format
 msgid "Voltage"
 msgstr "電圧"
 
-#: ui/main.qml:46
+#: ui/main.qml:48
 #, kde-format
 msgctxt "Volt"
 msgid "V"
 msgstr "V"
 
-#: ui/main.qml:47
+#: ui/main.qml:49
 #, kde-format
 msgid "Remaining energy"
 msgstr "残り容量"
 
-#: ui/main.qml:47 ui/main.qml:48 ui/main.qml:49
+#: ui/main.qml:49 ui/main.qml:50 ui/main.qml:51
 #, kde-format
 msgctxt "Watt-hours"
 msgid "Wh"
 msgstr "Wh"
 
-#: ui/main.qml:48
+#: ui/main.qml:50
 #, kde-format
 msgid "Last full charge"
 msgstr "前回の満充電"
 
-#: ui/main.qml:49
+#: ui/main.qml:51
 #, kde-format
 msgid "Original charge capacity"
 msgstr "元の充電容量"
 
-#: ui/main.qml:53
+#: ui/main.qml:55
 #, kde-format
 msgid "Environment"
 msgstr "環境"
 
-#: ui/main.qml:55
+#: ui/main.qml:57
 #, kde-format
 msgid "Temperature"
 msgstr "温度"
 
-#: ui/main.qml:55
+#: ui/main.qml:57
 #, kde-format
 msgctxt "Degree Celsius"
 msgid "°C"
 msgstr "°C"
 
-#: ui/main.qml:62
-#, kde-format
-msgid "Not charging"
-msgstr "充電していません"
-
-#: ui/main.qml:63
-#, kde-format
-msgid "Charging"
-msgstr "充電中"
-
-#: ui/main.qml:64
-#, kde-format
-msgid "Discharging"
-msgstr "放電中"
-
-#: ui/main.qml:65
-#, kde-format
-msgid "Fully charged"
-msgstr "フル充電"
-
-#: ui/main.qml:71
-#, kde-format
-msgid "Lithium ion"
-msgstr "リチウムイオン"
-
-#: ui/main.qml:72
-#, kde-format
-msgid "Lithium polymer"
-msgstr "リチウムポリマー"
-
-#: ui/main.qml:73
-#, kde-format
-msgid "Lithium iron phosphate"
-msgstr "リン酸鉄リチウム"
-
-#: ui/main.qml:74
-#, kde-format
-msgid "Lead acid"
-msgstr "鉛蓄電池"
-
-#: ui/main.qml:75
-#, kde-format
-msgid "Nickel cadmium"
-msgstr "ニカド"
-
-#: ui/main.qml:76
-#, kde-format
-msgid "Nickel metal hydride"
-msgstr "ニッケル水素"
-
-#: ui/main.qml:77
-#, kde-format
-msgid "Unknown technology"
-msgstr "不明"
-
-#: ui/main.qml:93
-#, kde-format
-msgctxt "@info:status"
-msgid "No energy information available on this system"
-msgstr "エネルギー情報は利用できません"
-
-#: ui/main.qml:186
+#: ui/main.qml:70
 #, fuzzy, kde-format
-#| msgid "PDA battery"
-msgid "PDA Battery"
-msgstr "PDA のバッテリ"
-
-#: ui/main.qml:187
-#, fuzzy, kde-format
-#| msgid "UPS battery"
-msgid "UPS Battery"
-msgstr "UPS バッテリ"
-
-#: ui/main.qml:188
-#, fuzzy, kde-format
-#| msgid "Internal battery"
-msgid "Internal Battery"
-msgstr "内部バッテリ"
-
-#: ui/main.qml:189
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
-msgid "Mouse Battery"
-msgstr "マウスのバッテリ"
-
-#: ui/main.qml:190
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
-msgid "Keyboard Battery"
-msgstr "キーボードのバッテリ"
-
-#: ui/main.qml:191
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
-msgid "Keyboard/Mouse Battery"
-msgstr "キーボードのバッテリ"
-
-#: ui/main.qml:192
-#, fuzzy, kde-format
-#| msgid "Battery"
-msgid "Camera Battery"
-msgstr "バッテリ"
-
-#: ui/main.qml:193
-#, fuzzy, kde-format
-#| msgid "Phone battery"
-msgid "Phone Battery"
-msgstr "電話のバッテリ"
-
-#: ui/main.qml:194
-#, fuzzy, kde-format
-#| msgid "Monitor battery"
-msgid "Monitor Battery"
-msgstr "モニターのバッテリ"
-
-#: ui/main.qml:195
-#, kde-format
-msgid "Gaming Input Battery"
-msgstr ""
-
-#: ui/main.qml:196
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
-msgid "Bluetooth Battery"
-msgstr "マウスのバッテリ"
-
-#: ui/main.qml:197
-#, fuzzy, kde-format
-#| msgid "Battery"
-msgid "Tablet Battery"
-msgstr "バッテリ"
-
-#: ui/main.qml:198
-#, fuzzy, kde-format
-#| msgid "Phone battery"
-msgid "Headphone Battery"
-msgstr "電話のバッテリ"
-
-#: ui/main.qml:199
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
-msgid "Headset Battery"
-msgstr "キーボードのバッテリ"
-
-#: ui/main.qml:200
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
-msgid "Touchpad Battery"
-msgstr "キーボードのバッテリ"
-
-#: ui/main.qml:201
-#, fuzzy, kde-format
-#| msgid "Unknown battery"
-msgid "Unknown Battery"
-msgstr "不明なバッテリ"
-
-#: ui/main.qml:229
-#, kde-format
-msgctxt "Battery charge percentage"
-msgid "%1% (Charging)"
-msgstr "%1% (充電中)"
-
-#: ui/main.qml:230
-#, kde-format
-msgctxt "Battery charge percentage"
-msgid "%1%"
-msgstr "%1%"
-
-#: ui/main.qml:268
-#, kde-format
-msgctxt "Graph axis label: power in Watts"
-msgid "%1 W"
-msgstr ""
-
-#: ui/main.qml:269
-#, fuzzy, kde-format
-#| msgctxt "Battery charge percentage"
-#| msgid "%1%"
-msgctxt "Graph axis label: percentage"
-msgid "%1%"
-msgstr "%1%"
-
-#: ui/main.qml:288
-#, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "No energy information available on this system"
-msgctxt "@info:status"
-msgid "No history information for this time span"
-msgstr "エネルギー情報は利用できません"
-
-#: ui/main.qml:298
-#, kde-format
-msgid "Charge Percentage"
-msgstr "充電パーセンテージ"
-
-#: ui/main.qml:308
-#, kde-format
-msgid "Energy Consumption"
-msgstr "エネルギー消費"
-
-#: ui/main.qml:324
-#, kde-format
-msgid "Last hour"
-msgstr "過去1時間"
-
-#: ui/main.qml:325
-#, kde-format
-msgid "Last 2 hours"
-msgstr "過去2時間"
-
-#: ui/main.qml:326
-#, kde-format
-msgid "Last 12 hours"
-msgstr "過去12時間"
-
-#: ui/main.qml:327
-#, kde-format
-msgid "Last 24 hours"
-msgstr "過去24時間"
-
-#: ui/main.qml:328
-#, kde-format
-msgid "Last 48 hours"
-msgstr "過去48時間"
-
-#: ui/main.qml:329
-#, kde-format
-msgid "Last 7 days"
-msgstr "過去7日間"
-
-#: ui/main.qml:337
-#, kde-format
-msgid "Timespan"
-msgstr "タイムスパン"
-
-#: ui/main.qml:338
-#, kde-format
-msgid "Timespan of data to display"
-msgstr "表示するデータの期間"
-
-#: ui/main.qml:344
-#, kde-format
-msgid "Refresh"
-msgstr "再読み込み"
-
-#: ui/main.qml:395
-#, kde-format
-msgid "%1:"
-msgstr "%1:"
-
-#: ui/main.qml:401
-#, kde-format
+#| msgid "Yes"
+msgctxt ""
+"@info:label The battery has a certain capability, such as `Rechargable:`"
 msgid "Yes"
 msgstr "はい"
 
-#: ui/main.qml:401
-#, kde-format
+#: ui/main.qml:71
+#, fuzzy, kde-format
+#| msgid "No"
+msgctxt ""
+"@info:label The battery doesn't have a certain capability, such as "
+"`Rechargable:`"
 msgid "No"
 msgstr "いいえ"
 
-#: ui/main.qml:420
+#: ui/main.qml:75
 #, fuzzy, kde-format
 #| msgctxt "Battery charge percentage"
 #| msgid "%1%"
@@ -402,11 +159,254 @@ msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:422
+#: ui/main.qml:81
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
+
+#: ui/main.qml:87
+#, kde-format
+msgid "Not charging"
+msgstr "充電していません"
+
+#: ui/main.qml:88
+#, kde-format
+msgid "Charging"
+msgstr "充電中"
+
+#: ui/main.qml:89
+#, kde-format
+msgid "Discharging"
+msgstr "放電中"
+
+#: ui/main.qml:90
+#, kde-format
+msgid "Fully charged"
+msgstr "フル充電"
+
+#: ui/main.qml:96
+#, kde-format
+msgid "Lithium ion"
+msgstr "リチウムイオン"
+
+#: ui/main.qml:97
+#, kde-format
+msgid "Lithium polymer"
+msgstr "リチウムポリマー"
+
+#: ui/main.qml:98
+#, kde-format
+msgid "Lithium iron phosphate"
+msgstr "リン酸鉄リチウム"
+
+#: ui/main.qml:99
+#, kde-format
+msgid "Lead acid"
+msgstr "鉛蓄電池"
+
+#: ui/main.qml:100
+#, kde-format
+msgid "Nickel cadmium"
+msgstr "ニカド"
+
+#: ui/main.qml:101
+#, kde-format
+msgid "Nickel metal hydride"
+msgstr "ニッケル水素"
+
+#: ui/main.qml:102
+#, kde-format
+msgid "Unknown technology"
+msgstr "不明"
+
+#: ui/main.qml:118
+#, kde-format
+msgctxt "@info:status"
+msgid "No energy information available on this system"
+msgstr "エネルギー情報は利用できません"
+
+#: ui/main.qml:213
+#, fuzzy, kde-format
+#| msgid "PDA battery"
+msgid "PDA Battery"
+msgstr "PDA のバッテリ"
+
+#: ui/main.qml:214
+#, fuzzy, kde-format
+#| msgid "UPS battery"
+msgid "UPS Battery"
+msgstr "UPS バッテリ"
+
+#: ui/main.qml:215
+#, fuzzy, kde-format
+#| msgid "Internal battery"
+msgid "Internal Battery"
+msgstr "内部バッテリ"
+
+#: ui/main.qml:216
+#, fuzzy, kde-format
+#| msgid "Mouse battery"
+msgid "Mouse Battery"
+msgstr "マウスのバッテリ"
+
+#: ui/main.qml:217
+#, fuzzy, kde-format
+#| msgid "Keyboard battery"
+msgid "Keyboard Battery"
+msgstr "キーボードのバッテリ"
+
+#: ui/main.qml:218
+#, fuzzy, kde-format
+#| msgid "Keyboard battery"
+msgid "Keyboard/Mouse Battery"
+msgstr "キーボードのバッテリ"
+
+#: ui/main.qml:219
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "Camera Battery"
+msgstr "バッテリ"
+
+#: ui/main.qml:220
+#, fuzzy, kde-format
+#| msgid "Phone battery"
+msgid "Phone Battery"
+msgstr "電話のバッテリ"
+
+#: ui/main.qml:221
+#, fuzzy, kde-format
+#| msgid "Monitor battery"
+msgid "Monitor Battery"
+msgstr "モニターのバッテリ"
+
+#: ui/main.qml:222
+#, kde-format
+msgid "Gaming Input Battery"
+msgstr ""
+
+#: ui/main.qml:223
+#, fuzzy, kde-format
+#| msgid "Mouse battery"
+msgid "Bluetooth Battery"
+msgstr "マウスのバッテリ"
+
+#: ui/main.qml:224
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "Tablet Battery"
+msgstr "バッテリ"
+
+#: ui/main.qml:225
+#, fuzzy, kde-format
+#| msgid "Phone battery"
+msgid "Headphone Battery"
+msgstr "電話のバッテリ"
+
+#: ui/main.qml:226
+#, fuzzy, kde-format
+#| msgid "Keyboard battery"
+msgid "Headset Battery"
+msgstr "キーボードのバッテリ"
+
+#: ui/main.qml:227
+#, fuzzy, kde-format
+#| msgid "Keyboard battery"
+msgid "Touchpad Battery"
+msgstr "キーボードのバッテリ"
+
+#: ui/main.qml:228
+#, fuzzy, kde-format
+#| msgid "Unknown battery"
+msgid "Unknown Battery"
+msgstr "不明なバッテリ"
+
+#: ui/main.qml:256
+#, kde-format
+msgctxt "Battery charge percentage"
+msgid "%1% (Charging)"
+msgstr "%1% (充電中)"
+
+#: ui/main.qml:257
+#, kde-format
+msgctxt "Battery charge percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: ui/main.qml:314
+#, fuzzy, kde-format
+#| msgctxt "@info:status"
+#| msgid "No energy information available on this system"
+msgctxt "@info:status"
+msgid "No history information for this time span"
+msgstr "エネルギー情報は利用できません"
+
+#: ui/main.qml:324
+#, kde-format
+msgid "Charge Percentage"
+msgstr "充電パーセンテージ"
+
+#: ui/main.qml:334
+#, kde-format
+msgid "Energy Consumption"
+msgstr "エネルギー消費"
+
+#: ui/main.qml:350
+#, kde-format
+msgid "Last hour"
+msgstr "過去1時間"
+
+#: ui/main.qml:351
+#, kde-format
+msgid "Last 2 hours"
+msgstr "過去2時間"
+
+#: ui/main.qml:352
+#, kde-format
+msgid "Last 12 hours"
+msgstr "過去12時間"
+
+#: ui/main.qml:353
+#, kde-format
+msgid "Last 24 hours"
+msgstr "過去24時間"
+
+#: ui/main.qml:354
+#, kde-format
+msgid "Last 48 hours"
+msgstr "過去48時間"
+
+#: ui/main.qml:355
+#, kde-format
+msgid "Last 7 days"
+msgstr "過去7日間"
+
+#: ui/main.qml:363
+#, kde-format
+msgid "Timespan"
+msgstr "タイムスパン"
+
+#: ui/main.qml:364
+#, kde-format
+msgid "Timespan of data to display"
+msgstr "表示するデータの期間"
+
+#: ui/main.qml:370
+#, kde-format
+msgid "Refresh"
+msgstr "再読み込み"
+
+#: ui/main.qml:428
+#, kde-format
+msgid "%1:"
+msgstr "%1:"
+
+#, fuzzy
+#~| msgctxt "Battery charge percentage"
+#~| msgid "%1%"
+#~ msgctxt "Graph axis label: percentage"
+#~ msgid "%1%"
+#~ msgstr "%1%"
 
 #~ msgctxt "Shorthand for Watts"
 #~ msgid "W"

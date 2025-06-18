@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-13 00:46+0000\n"
+"POT-Creation-Date: 2025-06-18 00:44+0000\n"
 "PO-Revision-Date: 2019-11-20 16:33+0200\n"
 "Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
 "Language-Team: Estonian <kde-et@lists.linux.ee>\n"
@@ -17,381 +17,140 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 19.08.1\n"
 
-#: ui/main.qml:29
+#: ui/main.qml:31
 #, kde-format
 msgid "Battery"
 msgstr "Aku"
 
-#: ui/main.qml:31
+#: ui/main.qml:33
 #, kde-format
 msgid "Rechargeable"
 msgstr "Laetav"
 
-#: ui/main.qml:32
+#: ui/main.qml:34
 #, kde-format
 msgid "Charge state"
 msgstr "Täituvuse olek"
 
-#: ui/main.qml:33
+#: ui/main.qml:35
 #, kde-format
 msgid "Current charge"
 msgstr "Praegune täituvus"
 
-#: ui/main.qml:34
+#: ui/main.qml:36
 #, kde-format
 msgid "Health"
 msgstr "Korrasolek"
 
-#: ui/main.qml:35
+#: ui/main.qml:37
 #, fuzzy, kde-format
 #| msgid "Charge state"
 msgid "Charge Cycles"
 msgstr "Täituvuse olek"
 
-#: ui/main.qml:36
+#: ui/main.qml:38
 #, kde-format
 msgid "Vendor"
 msgstr "Tootja"
 
-#: ui/main.qml:37
+#: ui/main.qml:39
 #, kde-format
 msgid "Model"
 msgstr "Mudel"
 
-#: ui/main.qml:38
+#: ui/main.qml:40
 #, kde-format
 msgid "Serial Number"
 msgstr "Seerianumber"
 
-#: ui/main.qml:39
+#: ui/main.qml:41
 #, kde-format
 msgid "Technology"
 msgstr "Tehnoloogia"
 
-#: ui/main.qml:43
+#: ui/main.qml:45
 #, kde-format
 msgid "Energy"
 msgstr "Energia"
 
-#: ui/main.qml:45
+#: ui/main.qml:47
 #, kde-format
 msgctxt "current power draw from the battery in W"
 msgid "Consumption"
 msgstr "Tarbimine"
 
-#: ui/main.qml:45
+#: ui/main.qml:47 ui/main.qml:295
 #, kde-format
 msgctxt "Watt"
 msgid "W"
 msgstr "W"
 
-#: ui/main.qml:46
+#: ui/main.qml:48
 #, kde-format
 msgid "Voltage"
 msgstr "Pinge"
 
-#: ui/main.qml:46
+#: ui/main.qml:48
 #, kde-format
 msgctxt "Volt"
 msgid "V"
 msgstr "V"
 
-#: ui/main.qml:47
+#: ui/main.qml:49
 #, kde-format
 msgid "Remaining energy"
 msgstr "Energiat alles"
 
-#: ui/main.qml:47 ui/main.qml:48 ui/main.qml:49
+#: ui/main.qml:49 ui/main.qml:50 ui/main.qml:51
 #, kde-format
 msgctxt "Watt-hours"
 msgid "Wh"
 msgstr "Wh"
 
-#: ui/main.qml:48
+#: ui/main.qml:50
 #, kde-format
 msgid "Last full charge"
 msgstr "Viimasel täislaadimisel"
 
-#: ui/main.qml:49
+#: ui/main.qml:51
 #, kde-format
 msgid "Original charge capacity"
 msgstr "Algne mahtuvus"
 
-#: ui/main.qml:53
+#: ui/main.qml:55
 #, kde-format
 msgid "Environment"
 msgstr "Keskkond"
 
-#: ui/main.qml:55
+#: ui/main.qml:57
 #, kde-format
 msgid "Temperature"
 msgstr "Temperatuur"
 
-#: ui/main.qml:55
+#: ui/main.qml:57
 #, kde-format
 msgctxt "Degree Celsius"
 msgid "°C"
 msgstr "°C"
 
-#: ui/main.qml:62
-#, kde-format
-msgid "Not charging"
-msgstr "Ei lae"
-
-#: ui/main.qml:63
-#, kde-format
-msgid "Charging"
-msgstr "Laeb"
-
-#: ui/main.qml:64
-#, kde-format
-msgid "Discharging"
-msgstr "Laeb tühjaks"
-
-#: ui/main.qml:65
-#, kde-format
-msgid "Fully charged"
-msgstr "Täielikult laetud"
-
-#: ui/main.qml:71
-#, kde-format
-msgid "Lithium ion"
-msgstr "Liitium-ioon"
-
-#: ui/main.qml:72
-#, kde-format
-msgid "Lithium polymer"
-msgstr "Liitium-polümeer"
-
-#: ui/main.qml:73
-#, kde-format
-msgid "Lithium iron phosphate"
-msgstr "Liitium-raudfosfaat"
-
-#: ui/main.qml:74
-#, kde-format
-msgid "Lead acid"
-msgstr "Plii-happe"
-
-#: ui/main.qml:75
-#, kde-format
-msgid "Nickel cadmium"
-msgstr "Nikkel-kaadmium"
-
-#: ui/main.qml:76
-#, kde-format
-msgid "Nickel metal hydride"
-msgstr "Nikkel-metallhüdriid"
-
-#: ui/main.qml:77
-#, kde-format
-msgid "Unknown technology"
-msgstr "Tundmatu tehnoloogia"
-
-#: ui/main.qml:93
-#, kde-format
-msgctxt "@info:status"
-msgid "No energy information available on this system"
-msgstr ""
-
-#: ui/main.qml:186
+#: ui/main.qml:70
 #, fuzzy, kde-format
-#| msgid "PDA battery"
-msgid "PDA Battery"
-msgstr "PDA aku"
-
-#: ui/main.qml:187
-#, fuzzy, kde-format
-#| msgid "UPS battery"
-msgid "UPS Battery"
-msgstr "UPS-i aku"
-
-#: ui/main.qml:188
-#, fuzzy, kde-format
-#| msgid "Internal battery"
-msgid "Internal Battery"
-msgstr "Sisemine aku"
-
-#: ui/main.qml:189
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
-msgid "Mouse Battery"
-msgstr "Hiire aku"
-
-#: ui/main.qml:190
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
-msgid "Keyboard Battery"
-msgstr "Klaviatuuri aku"
-
-#: ui/main.qml:191
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
-msgid "Keyboard/Mouse Battery"
-msgstr "Klaviatuuri aku"
-
-#: ui/main.qml:192
-#, fuzzy, kde-format
-#| msgid "Battery"
-msgid "Camera Battery"
-msgstr "Aku"
-
-#: ui/main.qml:193
-#, fuzzy, kde-format
-#| msgid "Phone battery"
-msgid "Phone Battery"
-msgstr "Telefoni aku"
-
-#: ui/main.qml:194
-#, fuzzy, kde-format
-#| msgid "Monitor battery"
-msgid "Monitor Battery"
-msgstr "Monitori aku"
-
-#: ui/main.qml:195
-#, kde-format
-msgid "Gaming Input Battery"
-msgstr ""
-
-#: ui/main.qml:196
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
-msgid "Bluetooth Battery"
-msgstr "Hiire aku"
-
-#: ui/main.qml:197
-#, fuzzy, kde-format
-#| msgid "Battery"
-msgid "Tablet Battery"
-msgstr "Aku"
-
-#: ui/main.qml:198
-#, fuzzy, kde-format
-#| msgid "Phone battery"
-msgid "Headphone Battery"
-msgstr "Telefoni aku"
-
-#: ui/main.qml:199
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
-msgid "Headset Battery"
-msgstr "Klaviatuuri aku"
-
-#: ui/main.qml:200
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
-msgid "Touchpad Battery"
-msgstr "Klaviatuuri aku"
-
-#: ui/main.qml:201
-#, fuzzy, kde-format
-#| msgid "Unknown battery"
-msgid "Unknown Battery"
-msgstr "Tundmatu aku"
-
-#: ui/main.qml:229
-#, kde-format
-msgctxt "Battery charge percentage"
-msgid "%1% (Charging)"
-msgstr "%1% (laetakse)"
-
-#: ui/main.qml:230
-#, kde-format
-msgctxt "Battery charge percentage"
-msgid "%1%"
-msgstr "%1%"
-
-#: ui/main.qml:268
-#, kde-format
-msgctxt "Graph axis label: power in Watts"
-msgid "%1 W"
-msgstr ""
-
-#: ui/main.qml:269
-#, fuzzy, kde-format
-#| msgctxt "Battery charge percentage"
-#| msgid "%1%"
-msgctxt "Graph axis label: percentage"
-msgid "%1%"
-msgstr "%1%"
-
-#: ui/main.qml:288
-#, kde-format
-msgctxt "@info:status"
-msgid "No history information for this time span"
-msgstr ""
-
-#: ui/main.qml:298
-#, kde-format
-msgid "Charge Percentage"
-msgstr "Täituvuse protsent"
-
-#: ui/main.qml:308
-#, kde-format
-msgid "Energy Consumption"
-msgstr "Energiatarbimine"
-
-#: ui/main.qml:324
-#, kde-format
-msgid "Last hour"
-msgstr "Viimasel tunnil"
-
-#: ui/main.qml:325
-#, kde-format
-msgid "Last 2 hours"
-msgstr "Viimasel 2 tunnil"
-
-#: ui/main.qml:326
-#, kde-format
-msgid "Last 12 hours"
-msgstr "Viimasel 12 tunnil"
-
-#: ui/main.qml:327
-#, kde-format
-msgid "Last 24 hours"
-msgstr "Viimasel 24 tunnil"
-
-#: ui/main.qml:328
-#, kde-format
-msgid "Last 48 hours"
-msgstr "Viimasel 48 tunnil"
-
-#: ui/main.qml:329
-#, kde-format
-msgid "Last 7 days"
-msgstr "Viimasel 7 päeval"
-
-#: ui/main.qml:337
-#, kde-format
-msgid "Timespan"
-msgstr "Ajavahemik"
-
-#: ui/main.qml:338
-#, kde-format
-msgid "Timespan of data to display"
-msgstr "Näidatavate andmete ajavahemik"
-
-#: ui/main.qml:344
-#, kde-format
-msgid "Refresh"
-msgstr "Värskenda"
-
-#: ui/main.qml:395
-#, kde-format
-msgid "%1:"
-msgstr "%1:"
-
-#: ui/main.qml:401
-#, kde-format
+#| msgid "Yes"
+msgctxt ""
+"@info:label The battery has a certain capability, such as `Rechargable:`"
 msgid "Yes"
 msgstr "Jah"
 
-#: ui/main.qml:401
-#, kde-format
+#: ui/main.qml:71
+#, fuzzy, kde-format
+#| msgid "No"
+msgctxt ""
+"@info:label The battery doesn't have a certain capability, such as "
+"`Rechargable:`"
 msgid "No"
 msgstr "Ei"
 
-#: ui/main.qml:420
+#: ui/main.qml:75
 #, fuzzy, kde-format
 #| msgctxt "Battery charge percentage"
 #| msgid "%1%"
@@ -399,11 +158,252 @@ msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:422
+#: ui/main.qml:81
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
+
+#: ui/main.qml:87
+#, kde-format
+msgid "Not charging"
+msgstr "Ei lae"
+
+#: ui/main.qml:88
+#, kde-format
+msgid "Charging"
+msgstr "Laeb"
+
+#: ui/main.qml:89
+#, kde-format
+msgid "Discharging"
+msgstr "Laeb tühjaks"
+
+#: ui/main.qml:90
+#, kde-format
+msgid "Fully charged"
+msgstr "Täielikult laetud"
+
+#: ui/main.qml:96
+#, kde-format
+msgid "Lithium ion"
+msgstr "Liitium-ioon"
+
+#: ui/main.qml:97
+#, kde-format
+msgid "Lithium polymer"
+msgstr "Liitium-polümeer"
+
+#: ui/main.qml:98
+#, kde-format
+msgid "Lithium iron phosphate"
+msgstr "Liitium-raudfosfaat"
+
+#: ui/main.qml:99
+#, kde-format
+msgid "Lead acid"
+msgstr "Plii-happe"
+
+#: ui/main.qml:100
+#, kde-format
+msgid "Nickel cadmium"
+msgstr "Nikkel-kaadmium"
+
+#: ui/main.qml:101
+#, kde-format
+msgid "Nickel metal hydride"
+msgstr "Nikkel-metallhüdriid"
+
+#: ui/main.qml:102
+#, kde-format
+msgid "Unknown technology"
+msgstr "Tundmatu tehnoloogia"
+
+#: ui/main.qml:118
+#, kde-format
+msgctxt "@info:status"
+msgid "No energy information available on this system"
+msgstr ""
+
+#: ui/main.qml:213
+#, fuzzy, kde-format
+#| msgid "PDA battery"
+msgid "PDA Battery"
+msgstr "PDA aku"
+
+#: ui/main.qml:214
+#, fuzzy, kde-format
+#| msgid "UPS battery"
+msgid "UPS Battery"
+msgstr "UPS-i aku"
+
+#: ui/main.qml:215
+#, fuzzy, kde-format
+#| msgid "Internal battery"
+msgid "Internal Battery"
+msgstr "Sisemine aku"
+
+#: ui/main.qml:216
+#, fuzzy, kde-format
+#| msgid "Mouse battery"
+msgid "Mouse Battery"
+msgstr "Hiire aku"
+
+#: ui/main.qml:217
+#, fuzzy, kde-format
+#| msgid "Keyboard battery"
+msgid "Keyboard Battery"
+msgstr "Klaviatuuri aku"
+
+#: ui/main.qml:218
+#, fuzzy, kde-format
+#| msgid "Keyboard battery"
+msgid "Keyboard/Mouse Battery"
+msgstr "Klaviatuuri aku"
+
+#: ui/main.qml:219
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "Camera Battery"
+msgstr "Aku"
+
+#: ui/main.qml:220
+#, fuzzy, kde-format
+#| msgid "Phone battery"
+msgid "Phone Battery"
+msgstr "Telefoni aku"
+
+#: ui/main.qml:221
+#, fuzzy, kde-format
+#| msgid "Monitor battery"
+msgid "Monitor Battery"
+msgstr "Monitori aku"
+
+#: ui/main.qml:222
+#, kde-format
+msgid "Gaming Input Battery"
+msgstr ""
+
+#: ui/main.qml:223
+#, fuzzy, kde-format
+#| msgid "Mouse battery"
+msgid "Bluetooth Battery"
+msgstr "Hiire aku"
+
+#: ui/main.qml:224
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "Tablet Battery"
+msgstr "Aku"
+
+#: ui/main.qml:225
+#, fuzzy, kde-format
+#| msgid "Phone battery"
+msgid "Headphone Battery"
+msgstr "Telefoni aku"
+
+#: ui/main.qml:226
+#, fuzzy, kde-format
+#| msgid "Keyboard battery"
+msgid "Headset Battery"
+msgstr "Klaviatuuri aku"
+
+#: ui/main.qml:227
+#, fuzzy, kde-format
+#| msgid "Keyboard battery"
+msgid "Touchpad Battery"
+msgstr "Klaviatuuri aku"
+
+#: ui/main.qml:228
+#, fuzzy, kde-format
+#| msgid "Unknown battery"
+msgid "Unknown Battery"
+msgstr "Tundmatu aku"
+
+#: ui/main.qml:256
+#, kde-format
+msgctxt "Battery charge percentage"
+msgid "%1% (Charging)"
+msgstr "%1% (laetakse)"
+
+#: ui/main.qml:257
+#, kde-format
+msgctxt "Battery charge percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: ui/main.qml:314
+#, kde-format
+msgctxt "@info:status"
+msgid "No history information for this time span"
+msgstr ""
+
+#: ui/main.qml:324
+#, kde-format
+msgid "Charge Percentage"
+msgstr "Täituvuse protsent"
+
+#: ui/main.qml:334
+#, kde-format
+msgid "Energy Consumption"
+msgstr "Energiatarbimine"
+
+#: ui/main.qml:350
+#, kde-format
+msgid "Last hour"
+msgstr "Viimasel tunnil"
+
+#: ui/main.qml:351
+#, kde-format
+msgid "Last 2 hours"
+msgstr "Viimasel 2 tunnil"
+
+#: ui/main.qml:352
+#, kde-format
+msgid "Last 12 hours"
+msgstr "Viimasel 12 tunnil"
+
+#: ui/main.qml:353
+#, kde-format
+msgid "Last 24 hours"
+msgstr "Viimasel 24 tunnil"
+
+#: ui/main.qml:354
+#, kde-format
+msgid "Last 48 hours"
+msgstr "Viimasel 48 tunnil"
+
+#: ui/main.qml:355
+#, kde-format
+msgid "Last 7 days"
+msgstr "Viimasel 7 päeval"
+
+#: ui/main.qml:363
+#, kde-format
+msgid "Timespan"
+msgstr "Ajavahemik"
+
+#: ui/main.qml:364
+#, kde-format
+msgid "Timespan of data to display"
+msgstr "Näidatavate andmete ajavahemik"
+
+#: ui/main.qml:370
+#, kde-format
+msgid "Refresh"
+msgstr "Värskenda"
+
+#: ui/main.qml:428
+#, kde-format
+msgid "%1:"
+msgstr "%1:"
+
+#, fuzzy
+#~| msgctxt "Battery charge percentage"
+#~| msgid "%1%"
+#~ msgctxt "Graph axis label: percentage"
+#~ msgid "%1%"
+#~ msgstr "%1%"
 
 #~ msgctxt "Shorthand for Watts"
 #~ msgid "W"

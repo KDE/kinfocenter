@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-13 00:46+0000\n"
+"POT-Creation-Date: 2025-06-18 00:44+0000\n"
 "PO-Revision-Date: 2025-02-07 19:42-0300\n"
 "Last-Translator: Geraldo Simiao <geraldosimiao@fedoraproject.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -22,373 +22,376 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Lokalize 24.12.1\n"
 
-#: ui/main.qml:29
+#: ui/main.qml:31
 #, kde-format
 msgid "Battery"
 msgstr "Bateria"
 
-#: ui/main.qml:31
+#: ui/main.qml:33
 #, kde-format
 msgid "Rechargeable"
 msgstr "Recarregável"
 
-#: ui/main.qml:32
+#: ui/main.qml:34
 #, kde-format
 msgid "Charge state"
 msgstr "Estado da carga"
 
-#: ui/main.qml:33
+#: ui/main.qml:35
 #, kde-format
 msgid "Current charge"
 msgstr "Carga atual"
 
-#: ui/main.qml:34
+#: ui/main.qml:36
 #, kde-format
 msgid "Health"
 msgstr "Saúde"
 
-#: ui/main.qml:35
+#: ui/main.qml:37
 #, kde-format
 msgid "Charge Cycles"
 msgstr "Ciclos de carga"
 
-#: ui/main.qml:36
+#: ui/main.qml:38
 #, kde-format
 msgid "Vendor"
 msgstr "Fornecedor"
 
-#: ui/main.qml:37
+#: ui/main.qml:39
 #, kde-format
 msgid "Model"
 msgstr "Modelo"
 
-#: ui/main.qml:38
+#: ui/main.qml:40
 #, kde-format
 msgid "Serial Number"
 msgstr "Número de série"
 
-#: ui/main.qml:39
+#: ui/main.qml:41
 #, kde-format
 msgid "Technology"
 msgstr "Tecnologia"
 
-#: ui/main.qml:43
+#: ui/main.qml:45
 #, kde-format
 msgid "Energy"
 msgstr "Energia"
 
-#: ui/main.qml:45
+#: ui/main.qml:47
 #, kde-format
 msgctxt "current power draw from the battery in W"
 msgid "Consumption"
 msgstr "Consumo"
 
-#: ui/main.qml:45
+#: ui/main.qml:47 ui/main.qml:295
 #, kde-format
 msgctxt "Watt"
 msgid "W"
 msgstr "W"
 
-#: ui/main.qml:46
+#: ui/main.qml:48
 #, kde-format
 msgid "Voltage"
 msgstr "Tensão"
 
-#: ui/main.qml:46
+#: ui/main.qml:48
 #, kde-format
 msgctxt "Volt"
 msgid "V"
 msgstr "V"
 
-#: ui/main.qml:47
+#: ui/main.qml:49
 #, kde-format
 msgid "Remaining energy"
 msgstr "Energia restante"
 
-#: ui/main.qml:47 ui/main.qml:48 ui/main.qml:49
+#: ui/main.qml:49 ui/main.qml:50 ui/main.qml:51
 #, kde-format
 msgctxt "Watt-hours"
 msgid "Wh"
 msgstr "Wh"
 
-#: ui/main.qml:48
+#: ui/main.qml:50
 #, kde-format
 msgid "Last full charge"
 msgstr "Última carga completa"
 
-#: ui/main.qml:49
+#: ui/main.qml:51
 #, kde-format
 msgid "Original charge capacity"
 msgstr "Capacidade de carga original"
 
-#: ui/main.qml:53
+#: ui/main.qml:55
 #, kde-format
 msgid "Environment"
 msgstr "Ambiente"
 
-#: ui/main.qml:55
+#: ui/main.qml:57
 #, kde-format
 msgid "Temperature"
 msgstr "Temperatura"
 
-#: ui/main.qml:55
+#: ui/main.qml:57
 #, kde-format
 msgctxt "Degree Celsius"
 msgid "°C"
 msgstr "°C"
 
-#: ui/main.qml:62
-#, kde-format
-msgid "Not charging"
-msgstr "Não está carregando"
-
-#: ui/main.qml:63
-#, kde-format
-msgid "Charging"
-msgstr "Carregando"
-
-#: ui/main.qml:64
-#, kde-format
-msgid "Discharging"
-msgstr "Descarregando"
-
-#: ui/main.qml:65
-#, kde-format
-msgid "Fully charged"
-msgstr "Totalmente carregada"
-
-#: ui/main.qml:71
-#, kde-format
-msgid "Lithium ion"
-msgstr "Íons de lítio"
-
-#: ui/main.qml:72
-#, kde-format
-msgid "Lithium polymer"
-msgstr "Polímero de lítio"
-
-#: ui/main.qml:73
-#, kde-format
-msgid "Lithium iron phosphate"
-msgstr "Fosfatos de íons de lítio"
-
-#: ui/main.qml:74
-#, kde-format
-msgid "Lead acid"
-msgstr "Chumbo-ácido"
-
-#: ui/main.qml:75
-#, kde-format
-msgid "Nickel cadmium"
-msgstr "Níquel-cádmio"
-
-#: ui/main.qml:76
-#, kde-format
-msgid "Nickel metal hydride"
-msgstr "Hidreto de níquel-metal"
-
-#: ui/main.qml:77
-#, kde-format
-msgid "Unknown technology"
-msgstr "Tecnologia desconhecida"
-
-#: ui/main.qml:93
-#, kde-format
-msgctxt "@info:status"
-msgid "No energy information available on this system"
-msgstr "Não há informações de energia disponíveis para este sistema"
-
-#: ui/main.qml:186
-#, kde-format
-msgid "PDA Battery"
-msgstr "Bateria do PDA"
-
-#: ui/main.qml:187
-#, kde-format
-msgid "UPS Battery"
-msgstr "Bateria da UPS"
-
-#: ui/main.qml:188
-#, kde-format
-msgid "Internal Battery"
-msgstr "Bateria interna"
-
-#: ui/main.qml:189
-#, kde-format
-msgid "Mouse Battery"
-msgstr "Bateria do mouse"
-
-#: ui/main.qml:190
-#, kde-format
-msgid "Keyboard Battery"
-msgstr "Bateria do teclado"
-
-#: ui/main.qml:191
-#, kde-format
-msgid "Keyboard/Mouse Battery"
-msgstr "Bateria do teclado/mouse"
-
-#: ui/main.qml:192
-#, kde-format
-msgid "Camera Battery"
-msgstr "Bateria da câmera"
-
-#: ui/main.qml:193
-#, kde-format
-msgid "Phone Battery"
-msgstr "Bateria do celular"
-
-#: ui/main.qml:194
-#, kde-format
-msgid "Monitor Battery"
-msgstr "Bateria do monitor"
-
-#: ui/main.qml:195
-#, kde-format
-msgid "Gaming Input Battery"
-msgstr "Bateria da entrada de jogos"
-
-#: ui/main.qml:196
-#, kde-format
-msgid "Bluetooth Battery"
-msgstr "Bateria do Bluetooth"
-
-#: ui/main.qml:197
-#, kde-format
-msgid "Tablet Battery"
-msgstr "Bateria do tablet"
-
-#: ui/main.qml:198
-#, kde-format
-msgid "Headphone Battery"
-msgstr "Bateria do fone de ouvido"
-
-#: ui/main.qml:199
-#, kde-format
-msgid "Headset Battery"
-msgstr "Bateria do headset"
-
-#: ui/main.qml:200
-#, kde-format
-msgid "Touchpad Battery"
-msgstr "Bateria do touchpad"
-
-#: ui/main.qml:201
-#, kde-format
-msgid "Unknown Battery"
-msgstr "Bateria desconhecida"
-
-#: ui/main.qml:229
-#, kde-format
-msgctxt "Battery charge percentage"
-msgid "%1% (Charging)"
-msgstr "%1% (carregando)"
-
-#: ui/main.qml:230
-#, kde-format
-msgctxt "Battery charge percentage"
-msgid "%1%"
-msgstr "%1%"
-
-#: ui/main.qml:268
-#, kde-format
-msgctxt "Graph axis label: power in Watts"
-msgid "%1 W"
-msgstr "%1 W"
-
-#: ui/main.qml:269
-#, kde-format
-msgctxt "Graph axis label: percentage"
-msgid "%1%"
-msgstr "%1%"
-
-#: ui/main.qml:288
-#, kde-format
-msgctxt "@info:status"
-msgid "No history information for this time span"
-msgstr "Não há histórico de informações para este período de tempo"
-
-#: ui/main.qml:298
-#, kde-format
-msgid "Charge Percentage"
-msgstr "Porcentual de carga"
-
-#: ui/main.qml:308
-#, kde-format
-msgid "Energy Consumption"
-msgstr "Consumo de energia"
-
-#: ui/main.qml:324
-#, kde-format
-msgid "Last hour"
-msgstr "Última hora"
-
-#: ui/main.qml:325
-#, kde-format
-msgid "Last 2 hours"
-msgstr "Últimas 2 horas"
-
-#: ui/main.qml:326
-#, kde-format
-msgid "Last 12 hours"
-msgstr "Últimas 12 horas"
-
-#: ui/main.qml:327
-#, kde-format
-msgid "Last 24 hours"
-msgstr "Últimas 24 horas"
-
-#: ui/main.qml:328
-#, kde-format
-msgid "Last 48 hours"
-msgstr "Últimas 48 horas"
-
-#: ui/main.qml:329
-#, kde-format
-msgid "Last 7 days"
-msgstr "Últimos 7 dias"
-
-#: ui/main.qml:337
-#, kde-format
-msgid "Timespan"
-msgstr "Período de tempo"
-
-#: ui/main.qml:338
-#, kde-format
-msgid "Timespan of data to display"
-msgstr "Período de tempo a mostrar"
-
-#: ui/main.qml:344
-#, kde-format
-msgid "Refresh"
-msgstr "Atualizar"
-
-#: ui/main.qml:395
-#, kde-format
-msgid "%1:"
-msgstr "%1:"
-
-#: ui/main.qml:401
-#, kde-format
+#: ui/main.qml:70
+#, fuzzy, kde-format
+#| msgid "Yes"
+msgctxt ""
+"@info:label The battery has a certain capability, such as `Rechargable:`"
 msgid "Yes"
 msgstr "Sim"
 
-#: ui/main.qml:401
-#, kde-format
+#: ui/main.qml:71
+#, fuzzy, kde-format
+#| msgid "No"
+msgctxt ""
+"@info:label The battery doesn't have a certain capability, such as "
+"`Rechargable:`"
 msgid "No"
 msgstr "Não"
 
-#: ui/main.qml:420
+#: ui/main.qml:75
 #, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:422
+#: ui/main.qml:81
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
+
+#: ui/main.qml:87
+#, kde-format
+msgid "Not charging"
+msgstr "Não está carregando"
+
+#: ui/main.qml:88
+#, kde-format
+msgid "Charging"
+msgstr "Carregando"
+
+#: ui/main.qml:89
+#, kde-format
+msgid "Discharging"
+msgstr "Descarregando"
+
+#: ui/main.qml:90
+#, kde-format
+msgid "Fully charged"
+msgstr "Totalmente carregada"
+
+#: ui/main.qml:96
+#, kde-format
+msgid "Lithium ion"
+msgstr "Íons de lítio"
+
+#: ui/main.qml:97
+#, kde-format
+msgid "Lithium polymer"
+msgstr "Polímero de lítio"
+
+#: ui/main.qml:98
+#, kde-format
+msgid "Lithium iron phosphate"
+msgstr "Fosfatos de íons de lítio"
+
+#: ui/main.qml:99
+#, kde-format
+msgid "Lead acid"
+msgstr "Chumbo-ácido"
+
+#: ui/main.qml:100
+#, kde-format
+msgid "Nickel cadmium"
+msgstr "Níquel-cádmio"
+
+#: ui/main.qml:101
+#, kde-format
+msgid "Nickel metal hydride"
+msgstr "Hidreto de níquel-metal"
+
+#: ui/main.qml:102
+#, kde-format
+msgid "Unknown technology"
+msgstr "Tecnologia desconhecida"
+
+#: ui/main.qml:118
+#, kde-format
+msgctxt "@info:status"
+msgid "No energy information available on this system"
+msgstr "Não há informações de energia disponíveis para este sistema"
+
+#: ui/main.qml:213
+#, kde-format
+msgid "PDA Battery"
+msgstr "Bateria do PDA"
+
+#: ui/main.qml:214
+#, kde-format
+msgid "UPS Battery"
+msgstr "Bateria da UPS"
+
+#: ui/main.qml:215
+#, kde-format
+msgid "Internal Battery"
+msgstr "Bateria interna"
+
+#: ui/main.qml:216
+#, kde-format
+msgid "Mouse Battery"
+msgstr "Bateria do mouse"
+
+#: ui/main.qml:217
+#, kde-format
+msgid "Keyboard Battery"
+msgstr "Bateria do teclado"
+
+#: ui/main.qml:218
+#, kde-format
+msgid "Keyboard/Mouse Battery"
+msgstr "Bateria do teclado/mouse"
+
+#: ui/main.qml:219
+#, kde-format
+msgid "Camera Battery"
+msgstr "Bateria da câmera"
+
+#: ui/main.qml:220
+#, kde-format
+msgid "Phone Battery"
+msgstr "Bateria do celular"
+
+#: ui/main.qml:221
+#, kde-format
+msgid "Monitor Battery"
+msgstr "Bateria do monitor"
+
+#: ui/main.qml:222
+#, kde-format
+msgid "Gaming Input Battery"
+msgstr "Bateria da entrada de jogos"
+
+#: ui/main.qml:223
+#, kde-format
+msgid "Bluetooth Battery"
+msgstr "Bateria do Bluetooth"
+
+#: ui/main.qml:224
+#, kde-format
+msgid "Tablet Battery"
+msgstr "Bateria do tablet"
+
+#: ui/main.qml:225
+#, kde-format
+msgid "Headphone Battery"
+msgstr "Bateria do fone de ouvido"
+
+#: ui/main.qml:226
+#, kde-format
+msgid "Headset Battery"
+msgstr "Bateria do headset"
+
+#: ui/main.qml:227
+#, kde-format
+msgid "Touchpad Battery"
+msgstr "Bateria do touchpad"
+
+#: ui/main.qml:228
+#, kde-format
+msgid "Unknown Battery"
+msgstr "Bateria desconhecida"
+
+#: ui/main.qml:256
+#, kde-format
+msgctxt "Battery charge percentage"
+msgid "%1% (Charging)"
+msgstr "%1% (carregando)"
+
+#: ui/main.qml:257
+#, kde-format
+msgctxt "Battery charge percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: ui/main.qml:314
+#, kde-format
+msgctxt "@info:status"
+msgid "No history information for this time span"
+msgstr "Não há histórico de informações para este período de tempo"
+
+#: ui/main.qml:324
+#, kde-format
+msgid "Charge Percentage"
+msgstr "Porcentual de carga"
+
+#: ui/main.qml:334
+#, kde-format
+msgid "Energy Consumption"
+msgstr "Consumo de energia"
+
+#: ui/main.qml:350
+#, kde-format
+msgid "Last hour"
+msgstr "Última hora"
+
+#: ui/main.qml:351
+#, kde-format
+msgid "Last 2 hours"
+msgstr "Últimas 2 horas"
+
+#: ui/main.qml:352
+#, kde-format
+msgid "Last 12 hours"
+msgstr "Últimas 12 horas"
+
+#: ui/main.qml:353
+#, kde-format
+msgid "Last 24 hours"
+msgstr "Últimas 24 horas"
+
+#: ui/main.qml:354
+#, kde-format
+msgid "Last 48 hours"
+msgstr "Últimas 48 horas"
+
+#: ui/main.qml:355
+#, kde-format
+msgid "Last 7 days"
+msgstr "Últimos 7 dias"
+
+#: ui/main.qml:363
+#, kde-format
+msgid "Timespan"
+msgstr "Período de tempo"
+
+#: ui/main.qml:364
+#, kde-format
+msgid "Timespan of data to display"
+msgstr "Período de tempo a mostrar"
+
+#: ui/main.qml:370
+#, kde-format
+msgid "Refresh"
+msgstr "Atualizar"
+
+#: ui/main.qml:428
+#, kde-format
+msgid "%1:"
+msgstr "%1:"
+
+#~ msgctxt "Graph axis label: power in Watts"
+#~ msgid "%1 W"
+#~ msgstr "%1 W"
+
+#~ msgctxt "Graph axis label: percentage"
+#~ msgid "%1%"
+#~ msgstr "%1%"
 
 #~ msgctxt "Shorthand for Watts"
 #~ msgid "W"
