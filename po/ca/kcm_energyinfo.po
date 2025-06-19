@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-18 00:44+0000\n"
-"PO-Revision-Date: 2025-02-07 09:38+0100\n"
+"PO-Revision-Date: 2025-06-18 08:42+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -138,16 +138,14 @@ msgid "°C"
 msgstr "°C"
 
 #: ui/main.qml:70
-#, fuzzy, kde-format
-#| msgid "Yes"
+#, kde-format
 msgctxt ""
 "@info:label The battery has a certain capability, such as `Rechargable:`"
 msgid "Yes"
 msgstr "Sí"
 
 #: ui/main.qml:71
-#, fuzzy, kde-format
-#| msgid "No"
+#, kde-format
 msgctxt ""
 "@info:label The battery doesn't have a certain capability, such as "
 "`Rechargable:`"
@@ -384,24 +382,3 @@ msgstr "Actualitza"
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
-
-#~ msgctxt "Graph axis label: power in Watts"
-#~ msgid "%1 W"
-#~ msgstr "%1 W"
-
-#~ msgctxt "Graph axis label: percentage"
-#~ msgid "%1%"
-#~ msgstr "%1%"
-
-#~ msgctxt "Shorthand for Watts"
-#~ msgid "W"
-#~ msgstr "W"
-
-#~ msgctxt "literal percent sign"
-#~ msgid "%"
-#~ msgstr "%"
-
-#~ msgid "This type of history is currently not available for this device."
-#~ msgstr ""
-#~ "Actualment, aquest tipus d'historial no està disponible per a aquest "
-#~ "dispositiu."

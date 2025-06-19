@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-18 00:44+0000\n"
-"PO-Revision-Date: 2025-02-08 04:08+0100\n"
+"PO-Revision-Date: 2025-06-18 04:37+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 
 #: ui/main.qml:31
 #, kde-format
@@ -134,16 +134,14 @@ msgid "°C"
 msgstr "°C"
 
 #: ui/main.qml:70
-#, fuzzy, kde-format
-#| msgid "Yes"
+#, kde-format
 msgctxt ""
 "@info:label The battery has a certain capability, such as `Rechargable:`"
 msgid "Yes"
 msgstr "დიახ"
 
 #: ui/main.qml:71
-#, fuzzy, kde-format
-#| msgid "No"
+#, kde-format
 msgctxt ""
 "@info:label The battery doesn't have a certain capability, such as "
 "`Rechargable:`"

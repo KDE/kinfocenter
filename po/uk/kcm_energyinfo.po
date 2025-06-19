@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-18 00:44+0000\n"
-"PO-Revision-Date: 2025-02-07 17:03+0200\n"
+"PO-Revision-Date: 2025-06-18 08:26+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -136,16 +136,14 @@ msgid "°C"
 msgstr "°C"
 
 #: ui/main.qml:70
-#, fuzzy, kde-format
-#| msgid "Yes"
+#, kde-format
 msgctxt ""
 "@info:label The battery has a certain capability, such as `Rechargable:`"
 msgid "Yes"
 msgstr "Так"
 
 #: ui/main.qml:71
-#, fuzzy, kde-format
-#| msgid "No"
+#, kde-format
 msgctxt ""
 "@info:label The battery doesn't have a certain capability, such as "
 "`Rechargable:`"
