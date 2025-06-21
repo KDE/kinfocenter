@@ -133,16 +133,14 @@ msgid "°C"
 msgstr "°C"
 
 #: ui/main.qml:70
-#, fuzzy, kde-format
-#| msgid "Yes"
+#, kde-format
 msgctxt ""
 "@info:label The battery has a certain capability, such as `Rechargable:`"
 msgid "Yes"
 msgstr "是"
 
 #: ui/main.qml:71
-#, fuzzy, kde-format
-#| msgid "No"
+#, kde-format
 msgctxt ""
 "@info:label The battery doesn't have a certain capability, such as "
 "`Rechargable:`"
@@ -379,11 +377,3 @@ msgstr "刷新"
 #, kde-format
 msgid "%1:"
 msgstr "%1："
-
-#~ msgctxt "Graph axis label: power in Watts"
-#~ msgid "%1 W"
-#~ msgstr "%1 瓦"
-
-#~ msgctxt "Graph axis label: percentage"
-#~ msgid "%1%"
-#~ msgstr "%1%"
