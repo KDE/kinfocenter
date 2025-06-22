@@ -381,11 +381,3 @@ msgstr "Oppdater"
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
-
-#~ msgctxt "Graph axis label: power in Watts"
-#~ msgid "%1 W"
-#~ msgstr "%1 W"
-
-#~ msgctxt "Graph axis label: percentage"
-#~ msgid "%1%"
-#~ msgstr "%1 %"
