@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-01 00:43+0000\n"
-"PO-Revision-Date: 2025-04-05 12:56+0300\n"
-"Last-Translator: Toms Trasūns <toms.trasuns@posteo.net>\n"
+"PO-Revision-Date: 2025-06-21 14:06+0300\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 24.12.3\n"
+"X-Generator: Lokalize 25.04.2\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -249,20 +249,16 @@ msgid "Hardware"
 msgstr "Aparatūra"
 
 #: ui/main.qml:218
-#, fuzzy, kde-format
-#| msgctxt "@info:tooltip"
-#| msgid "Launch %1"
+#, kde-format
 msgctxt "@action:button"
 msgid "Launch %1…"
-msgstr "Palaist „%1“"
+msgstr "Palaist „%1“…"
 
 #: ui/main.qml:219
-#, fuzzy, kde-format
-#| msgctxt "@action:button launches kinfocenter from systemsettings"
-#| msgid "More System Information"
+#, kde-format
 msgctxt "@info:tooltip launches kinfocenter from systemsettings"
 msgid "See more detailed system information"
-msgstr "Vairāk informācijas par sistēmu"
+msgstr "Sīkāka informācija par sistēmu"
 
 #: ui/main.qml:227 ui/main.qml:235
 #, kde-format
