@@ -124,47 +124,17 @@ KCMUtils.SimpleKCM {
                         }
                     }
 
-                    QQC2.Label {
-                        Kirigami.Theme.colorSet: Kirigami.Theme.Window
+                    Kirigami.Badge {
                         visible: text.length > 0
-
-                        // Vertical padding accounts for the difference in normal label height and the content height of this small label
-                        readonly property real verticalPadding: (hintMetrics.height - contentHeight) / 2
-                        // Horizontal padding also accounts for the difference in content height and the font's pixelSize to better balance the text
-                        readonly property real horizontalPadding: ((hintMetrics.height - contentHeight) + (contentHeight - font.pixelSize)) / 2
-
-                        TextMetrics {
-                            // Necessary as valueLabel could be multiple lines
-                            id: hintMetrics
-                            text: " "
-                        }
-
-                        topPadding: verticalPadding
-                        bottomPadding: verticalPadding
-                        leftPadding: horizontalPadding
-                        rightPadding: horizontalPadding
-
-                        text: entry.localizedHint().text
-                        color: {
+                        padding: 1
+                        backgroundColor: {
                             switch (entry.localizedHint().color) {
-                                case Private.hint.Color.One: return Kirigami.Theme.linkColor
-                                case Private.hint.Color.Two: return Kirigami.Theme.positiveTextColor
-                                case Private.hint.Color.Three: return Kirigami.Theme.alternateTextColor
+                                case Private.hint.Color.One: return Kirigami.Theme.activeBackgroundColor
+                                case Private.hint.Color.Two: return Kirigami.Theme.positiveBackgroundColor
+                                case Private.hint.Color.Three: return Kirigami.Theme.alternateBackgroundColor
                             }
                         }
-                        font.bold: true
-                        font.pixelSize: Kirigami.Theme.smallFont.pixelSize
-
-                        background: Rectangle {
-                            color: {
-                                switch (entry.localizedHint().color) {
-                                    case Private.hint.Color.One: return Kirigami.Theme.linkBackgroundColor
-                                    case Private.hint.Color.Two: return Kirigami.Theme.positiveBackgroundColor
-                                    case Private.hint.Color.Three: return Kirigami.Theme.alternateBackgroundColor
-                                }
-                            }
-                            radius: Kirigami.Units.cornerRadius
-                        }
+                        text: entry.localizedHint().text
                     }
 
                     Kirigami.ContextualHelpButton {
