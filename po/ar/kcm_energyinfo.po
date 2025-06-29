@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-16 00:48+0000\n"
-"PO-Revision-Date: 2022-03-06 17:40+0400\n"
+"PO-Revision-Date: 2025-06-28 17:12+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -37,7 +37,7 @@ msgstr "إحصائيّات استهلاك الطّاقة"
 #: kcm.cpp:42
 #, kde-format
 msgid "Kai Uwe Broulik"
-msgstr "Kai Uwe Broulik"
+msgstr "كاي أووي بروتيك"
 
 #: package/contents/ui/main.qml:22
 #, kde-format
@@ -338,7 +338,7 @@ msgstr "فترة البيانات الزّمنيّة لعرضها"
 #: package/contents/ui/main.qml:308
 #, kde-format
 msgid "Refresh"
-msgstr "أنعش"
+msgstr "حدّث"
 
 #: package/contents/ui/main.qml:320
 #, kde-format
