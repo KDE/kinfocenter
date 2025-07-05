@@ -1,0 +1,279 @@
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the kinfocenter package.
+#
+# SPDX-FileCopyrightText: 2025 Gummi <gudmundure@gmail.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: kinfocenter\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-05-01 00:43+0000\n"
+"PO-Revision-Date: 2025-07-01 14:12+0000\n"
+"Last-Translator: Gummi <gudmundure@gmail.com>\n"
+"Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
+"Language: is\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 24.12.3\n"
+
+#: CPUEntry.cpp:17
+#, kde-format
+msgid "Processor:"
+msgid_plural "Processors:"
+msgstr[0] "Örgjörvi:"
+msgstr[1] "Örgjörvar:"
+
+#: CPUEntry.cpp:22
+#, kde-format
+msgctxt ""
+"unknown CPU type/product name; presented as `Processors: 4 × Unknown Type'"
+msgid "Unknown Type"
+msgstr "Óþekkt gerð"
+
+#: GPUEntry.cpp:17
+#, kde-format
+msgctxt "@label %1 is the GPU index number"
+msgid "Graphics Processor %1:"
+msgstr "Skjákort %1:"
+
+#: GPUEntry.cpp:18
+#, kde-format
+msgid "Graphics Processor:"
+msgstr "Skjákort:"
+
+#: GPUEntry.cpp:28
+#, kde-format
+msgctxt "@label GPU type"
+msgid "integrated"
+msgstr "innbyggt"
+
+#: GPUEntry.cpp:30
+#, kde-format
+msgctxt "@label GPU type"
+msgid "discrete"
+msgstr "aðskilið"
+
+#: GPUEntry.cpp:32
+#, kde-format
+msgctxt "@label GPU type. GPU of a virtual machine"
+msgid "virtual"
+msgstr "sýndar"
+
+#: GraphicsPlatformEntry.cpp:10
+#, kde-format
+msgid "Graphics Platform:"
+msgstr "Myndvinnslukerfi:"
+
+#: KernelEntry.cpp:11
+#, kde-format
+msgid "Kernel Version:"
+msgstr "Útgáfa kjarna:"
+
+#: KernelEntry.cpp:23
+#, kde-format
+msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
+msgid "%1 (%2-bit)"
+msgstr "%1 (%2-bita)"
+
+#: main.cpp:199
+#, kde-format
+msgctxt "@label"
+msgid "Manufacturer:"
+msgstr "Framleiðandi:"
+
+#: main.cpp:202 main.cpp:219
+#, kde-format
+msgctxt "@label"
+msgid "Product Name:"
+msgstr "Vöruheiti:"
+
+#: main.cpp:205
+#, kde-format
+msgctxt "@label"
+msgid "System Version:"
+msgstr "Kerfisútgáfa:"
+
+#: main.cpp:208 main.cpp:222
+#, kde-format
+msgctxt "@label"
+msgid "Serial Number:"
+msgstr "Raðnúmer:"
+
+#: main.cpp:212 main.cpp:229
+#, kde-format
+msgctxt "@label unknown entry in table"
+msgid "Unknown:"
+msgstr "Óþekkt:"
+
+#: main.cpp:225
+#, kde-format
+msgctxt "@label uboot is the name of a bootloader for embedded devices"
+msgid "U-Boot Version:"
+msgstr "U-Boot útgáfa:"
+
+#: main.cpp:263
+#, kde-format
+msgid "KDE Frameworks Version:"
+msgstr "Útgáfa KDE Frameworks:"
+
+#: main.cpp:264
+#, kde-format
+msgid "Qt Version:"
+msgstr "Qt-útgáfa:"
+
+#: MemoryEntry.cpp:23
+#, kde-format
+msgid "Memory:"
+msgstr "Minni:"
+
+#: MemoryEntry.cpp:111
+#, kde-format
+msgctxt ""
+"@label, %1 is the total amount of installed system memory, %2 is the amount "
+"of which is usable, both expressed as 7.7 GiB"
+msgid "%1 of RAM (%2 usable)"
+msgstr "%1 af RAM (%2 nýtileg)"
+
+#: MemoryEntry.cpp:119
+#, kde-format
+msgctxt ""
+"@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
+msgid "%1 of RAM"
+msgstr "%1 af RAM"
+
+#: MemoryEntry.cpp:126
+#, kde-format
+msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
+msgid "%1 of usable RAM"
+msgstr "%1 af nýtilegu RAM"
+
+#: MemoryEntry.cpp:132
+#, kde-format
+msgctxt "@label, Unknown amount of system memory"
+msgid "Unknown"
+msgstr "Óþekkt"
+
+#: MemoryEntry.cpp:140
+#, kde-format
+msgctxt "@info:tooltip, referring to system memory or RAM"
+msgid ""
+"Some memory is reserved for use by the kernel or system hardware such as "
+"integrated graphics memory."
+msgstr ""
+"Hluti minnis er frátekið til notkunar af kjarnanum eða kerfisvélbúnaði, eins "
+"og innbyggt skjáminni."
+
+#: MemoryEntry.cpp:148
+#, kde-format
+msgctxt "@info:tooltip, referring to system memory or RAM"
+msgid ""
+"The amount of usable memory may be lower than the displayed amount because "
+"some memory is reserved for use by the kernel or system hardware, such as "
+"integrated graphics memory."
+msgstr ""
+"Magn nýtilegs minnis gæti verið minna en magnið sem er birt þar sem hluti "
+"minnisins er frátekið til notkunar af kjarnanum eða kerfisvélbúnaði, eins og "
+"innbyggt skjáminni."
+
+#: MemoryEntry.cpp:157
+#, kde-format
+msgctxt "@info:tooltip, referring to system memory or RAM"
+msgid ""
+"The amount of memory displayed may be lower than the installed amount "
+"because some memory is reserved for use by the kernel or system hardware, "
+"such as integrated graphics memory."
+msgstr ""
+"Magn minnis sem er birt gæti verið minna en uppsett magn þar sem hluti "
+"minnisins er frátekið til notkunar af kjarnanum eða kerfisvélbúnaði, eins og "
+"innbyggt skjáminni."
+
+#: OSVersionEntry.cpp:9
+#, kde-format
+msgid "Operating System:"
+msgstr "Stýrikerfi:"
+
+#: OSVersionEntry.cpp:11
+#, kde-format
+msgctxt "@label %1 is the distro name, %2 is the version"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: OSVersionEntry.cpp:13
+#, kde-format
+msgctxt ""
+"@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
+"should be a number, or 'rolling'"
+msgid "%1 %2 Build: %3"
+msgstr "%1 %2 smíð: %3"
+
+#: PlasmaEntry.cpp:15
+#, kde-format
+msgid "KDE Plasma Version:"
+msgstr "Útgáfa KDE Plasma:"
+
+#: ThirdPartyEntry.cpp:12
+#, kde-format
+msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
+msgid ":"
+msgstr ":"
+
+#: ui/main.qml:96
+#, kde-format
+msgctxt "@title"
+msgid "Serial Number"
+msgstr "Raðnúmer"
+
+#: ui/main.qml:102
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy"
+msgstr "Afrita"
+
+#: ui/main.qml:179
+#, kde-format
+msgctxt "@action:button show a hidden entry in an overlay"
+msgid "Show"
+msgstr "Sýna"
+
+#: ui/main.qml:191
+#, kde-format
+msgctxt "@title:group"
+msgid "Software"
+msgstr "Hugbúnaður"
+
+#: ui/main.qml:201
+#, kde-format
+msgctxt "@title:group"
+msgid "Hardware"
+msgstr "Vélbúnaður"
+
+#: ui/main.qml:218
+#, kde-format
+msgctxt "@action:button"
+msgid "Launch %1…"
+msgstr "Keyra %1…"
+
+#: ui/main.qml:219
+#, kde-format
+msgctxt "@info:tooltip launches kinfocenter from systemsettings"
+msgid "See more detailed system information"
+msgstr "Sjá ítarlegri kerfisupplýsingar"
+
+#: ui/main.qml:227 ui/main.qml:235
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy Details"
+msgstr "Afrita upplýsingar"
+
+#: ui/main.qml:238
+#, kde-format
+msgctxt "@action:button Copy Details..."
+msgid "In current language"
+msgstr "Á núverandi tungumál"
+
+#: ui/main.qml:244
+#, kde-format
+msgctxt "@action:button Copy Details..."
+msgid "In English"
+msgstr "Á ensku"
