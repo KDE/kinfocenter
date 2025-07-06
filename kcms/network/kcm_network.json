@@ -166,6 +166,7 @@
     "X-KDE-Keywords[he]": "רשת,כרטיס רשת,מתאם רשת,ip,כתובת ip,כתובת חומרה,מק,inet,eth,wlan,wifi,רשת אלחוטית",
     "X-KDE-Keywords[hu]": "hálózat,nic,ip,ip cím,mac,inet,eth,wlan,wifi",
     "X-KDE-Keywords[ia]": "network,nic,ip,ip address,mac,inet,eth,wlan,wifi",
+    "X-KDE-Keywords[is]": "net,nic,ip,ip-tala,mac,inet,eth,wlan,wifi",
     "X-KDE-Keywords[it]": "rete,nic,ip,indirizzo ip,mac,inet,eth,wlan,wifi",
     "X-KDE-Keywords[ka]": "network,nic,ip,ip address,mac,inet,eth,wlan,wifi,ქსელი",
     "X-KDE-Keywords[ko]": "네트워크,ip 주소,무선",

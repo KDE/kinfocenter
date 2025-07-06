@@ -171,6 +171,7 @@
     "X-KDE-Keywords[he]": "Interrupts,IRQ,System Information,פסיקות,מידע,פרטי מערכת",
     "X-KDE-Keywords[hu]": "PCI,PCI eszközök,PCI busz,Rendszerinformáció",
     "X-KDE-Keywords[ia]": "PCI,Dispositivos PCI,Bus PCI,Information de systema",
+    "X-KDE-Keywords[is]": "PCI,PCI-tæki,PCI-braut,kerfisupplýsingar",
     "X-KDE-Keywords[it]": "PCI,dispositivi PCI,bus PCI,Informazioni di sistema",
     "X-KDE-Keywords[ka]": "PCI,PCI-Devices,PCI-Bus,System Information,სისტემის ინფორმაცია",
     "X-KDE-Keywords[kk]": "PCI,PCI-Devices,PCI-Bus,System Information",
