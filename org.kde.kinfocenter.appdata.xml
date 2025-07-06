@@ -30,6 +30,7 @@
   <name xml:lang="hu">Rendszerinformáció</name>
   <name xml:lang="ia">Centro de Info</name>
   <name xml:lang="id">Info Center</name>
+  <name xml:lang="is">Upplýsingamiðstöð</name>
   <name xml:lang="it">Centro d'informazione</name>
   <name xml:lang="ja">システム情報センター</name>
   <name xml:lang="ka">საინფორმაციო ცენტრი</name>
@@ -69,6 +70,7 @@
   <summary xml:lang="gl">Información do soporte físico e estado do sistema.</summary>
   <summary xml:lang="he">מידע על החומרה ועל מצב המערכת</summary>
   <summary xml:lang="ia">Apprende re le stato e hardware de systema</summary>
+  <summary xml:lang="is">Læra meira um vélbúnað tölvunnar og stöðu hans</summary>
   <summary xml:lang="it">Conosci l'hardware e lo stato del sistema</summary>
   <summary xml:lang="ka">გაიგეთ მეტი სისტემის აპარატურის და სტატუსის შესახებ</summary>
   <summary xml:lang="ko">시스템의 하드웨어와 상태 보기</summary>
@@ -107,6 +109,7 @@
     <p xml:lang="hu">A Rendszerinformáció központosított és kényelmes áttekintést nyújt a rendszer és az asztali környezet jellemzőiről.</p>
     <p xml:lang="ia">Le Centro de Information (Indo center)  te provide con un supervision centralisate e conveniente de ambiente de tu systema e scriptorio.</p>
     <p xml:lang="id">Info Center menyediakanmu dengan ikhtisar terpusat dan serasi terhadap sistem dan lingkungan desktop-mu.</p>
+    <p xml:lang="is">Upplýsingamiðstöðin er miðlægt og þægilegt yfirlit yfir tölvuna þína og skjáborðsumhverfið.</p>
     <p xml:lang="it">Il centro d'informazione ti dà una panoramica centralizzata e comoda sul tuo sistema e sull'ambiente desktop.</p>
     <p xml:lang="ja">システム情報センターは、システムとデスクトップ環境の一元化された便利な概要を提供します。</p>
     <p xml:lang="ka">საინფორმაციო ცენტრი თქვენი სისტემის და სამუშაო გარემოს ცენტრალიზებულ და მოსახერხებელ მიმოხილვას გთავაზობთ.</p>
@@ -157,6 +160,7 @@
     <p xml:lang="hu">Az alkalmazás több modulból épül fel. Minden modul egy külön alkalmazás, a Rendszerinformáció azonban egy helyre gyűjti össze azokat.</p>
     <p xml:lang="ia">Le centro de information es constituite de modulos multiple. Cata modulo es un application separate, ma le centro de information organisa omne de iste programmas in un location conveniente.</p>
     <p xml:lang="id">Pusat informasi terdiri dari banyak modul. Setiap modul adalah sebuah aplikasi yang terpisah, tetapi pusat informasi yang mengorganisasi semua program tersebut ke dalam lokasi yang serasi.</p>
+    <p xml:lang="is">Upplýsingamiðstöðina samanstendur af mörgum einingum. Hver eining er aðskilið forrit, en upplýsingamiðstöðin kemur forritunum fyrir og raðar þeim upp á þægilegan hátt.</p>
     <p xml:lang="it">Il centro d'informazione è composto da diversi moduli; ognuno è un'applicazione a sé, ma il centro d'informazione li riunisce tutti in un posto comodo.</p>
     <p xml:lang="ja">システム情報センターは複数のモジュールで構成されています。それぞれのモジュールは独立したアプリケーションですが、システム情報センターがそれらを統合します。</p>
     <p xml:lang="ka">საინფორმაციო ცენტრი შედგება მრავალი მოდულისგან. თითოეული მოდული ცალკე აპლიკაციაა, მაგრამ საინფორმაციო ცენტრი ყველა ამ პროგრამას მოსახერხებელ ადგილას ალაგებს.</p>
