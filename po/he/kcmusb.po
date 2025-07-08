@@ -11,19 +11,20 @@
 #
 # Diego Iastrubni <elcuco@kde.org>, 2005, 2008.
 # Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
+# SPDX-FileCopyrightText: 2025 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-09-03 00:18+0000\n"
-"PO-Revision-Date: 2017-05-16 06:53-0400\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: Hebrew <kde-l10n-he@kde.org>\n"
+"PO-Revision-Date: 2025-07-07 17:49+0300\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 3.9.6\n"
+"X-Generator: Lokalize 25.04.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -49,8 +50,7 @@ msgid "Application Specific Interface"
 msgstr ""
 
 #: classes.i18n:4 usbdevices.cpp:68
-#, fuzzy, kde-format
-#| msgid "Audio"
+#, kde-format
 msgctxt "USB device class"
 msgid "Audio"
 msgstr "שמע"
@@ -85,7 +85,7 @@ msgstr ""
 #, kde-format
 msgctxt "USB device class"
 msgid "Diagnostic"
-msgstr ""
+msgstr "ניתוח"
 
 #: classes.i18n:10 usbdevices.cpp:82
 #, fuzzy, kde-format
@@ -105,7 +105,7 @@ msgstr "התקני ממשק אנושי"
 #, kde-format
 msgctxt "USB device class"
 msgid "Imaging"
-msgstr ""
+msgstr "צלימה"
 
 #: classes.i18n:13 usbdevices.cpp:80
 #, fuzzy, kde-format
@@ -118,7 +118,7 @@ msgstr "אחסן רב קיבול"
 #, kde-format
 msgctxt "USB device class"
 msgid "Miscellaneous Device"
-msgstr ""
+msgstr "התקן שונה"
 
 #: classes.i18n:15 usbdevices.cpp:74
 #, fuzzy, kde-format
@@ -145,25 +145,25 @@ msgstr "מחלקה ייחודית לספק"
 #, kde-format
 msgctxt "USB device class"
 msgid "Video"
-msgstr ""
+msgstr "וידאו"
 
 #: classes.i18n:19 usbdevices.cpp:96
 #, kde-format
 msgctxt "USB device class"
 msgid "Wireless"
-msgstr ""
+msgstr "אלחוטי"
 
 #: classes.i18n:20
 #, kde-format
 msgctxt "USB device class"
 msgid "Xbox"
-msgstr ""
+msgstr "Xbox"
 
 #: classes.i18n:21
 #, kde-format
 msgctxt "USB device subclass"
 msgid "?"
-msgstr ""
+msgstr "?"
 
 #: classes.i18n:22
 #, fuzzy, kde-format
@@ -211,13 +211,13 @@ msgstr "בקרה\\אחסון"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Device Firmware Update"
-msgstr ""
+msgstr "עדכון קושחת התקן"
 
 #: classes.i18n:29
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Device Management"
-msgstr ""
+msgstr "ניהול התקנים"
 
 #: classes.i18n:30
 #, fuzzy, kde-format
@@ -251,7 +251,7 @@ msgstr "תקליטון"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "IRDA Bridge"
-msgstr ""
+msgstr "גשר IRDA"
 
 #: classes.i18n:35
 #, fuzzy, kde-format
