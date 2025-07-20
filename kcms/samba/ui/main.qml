@@ -20,7 +20,7 @@ KCM.AbstractKCM {
         }
 
         Kirigami.Heading {
-            text: i18nc("@title heading above listview", "Mounted Remote Shares")
+            text: i18nc("@title heading above listview", "Remote Share Mounts")
             level: 2
         }
 
