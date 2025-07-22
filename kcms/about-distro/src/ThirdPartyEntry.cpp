@@ -45,6 +45,10 @@ QString ThirdPartyEntry::localizedValue(Language language) const
 void ThirdPartyEntry::processOutput(const QStringList &output, Language language)
 {
     Q_ASSERT(output.size() >= 2);
+    if (output.size() < 2) {
+        qFatal() << "Do you have a broken kcm-about-distrorc file? ThirdPartyEntry script output must have at least 2 lines. Got this output:" << output;
+        return;
+    }
     m_labels[language] = output.at(0);
     m_values[language] = output.at(1);
 }
