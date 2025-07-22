@@ -21,5 +21,5 @@ add_test(
     NAME kinfocenter_appiumtests
     COMMAND selenium-webdriver-at-spi-run ${CMAKE_CURRENT_SOURCE_DIR}/kinfocenter_appiumtests.py
 )
-set_tests_properties(kinfocenter_appiumtests PROPERTIES TIMEOUT 1200)
+set_tests_properties(kinfocenter_appiumtests PROPERTIES TIMEOUT 300)
 
