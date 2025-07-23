@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-24 00:39+0000\n"
+"POT-Creation-Date: 2025-07-23 00:44+0000\n"
 "PO-Revision-Date: 2022-12-31 14:35+0000\n"
 "Last-Translator: gummi <gudmundure@gmail.com>\n"
 "Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
@@ -31,9 +31,11 @@ msgid "User-Created Shares"
 msgstr "Sameignir búnar til af notanda"
 
 #: ui/main.qml:23
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@title heading above listview"
+#| msgid "Mounted Remote Shares"
 msgctxt "@title heading above listview"
-msgid "Mounted Remote Shares"
+msgid "Remote Share Mounts"
 msgstr "Fjartengdar sameignir"
 
 #: ui/main.qml:54

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-24 00:39+0000\n"
+"POT-Creation-Date: 2025-07-23 00:44+0000\n"
 "PO-Revision-Date: 2007-11-01 20:09+0545\n"
 "Last-Translator: Shyam Krishna Bal <shyamkrishna_bal@yahoo.com>\n"
 "Language-Team: Nepali <info@mpp.org.np>\n"
@@ -30,7 +30,7 @@ msgstr "निर्यात"
 #, fuzzy, kde-format
 #| msgid "Mounted Under"
 msgctxt "@title heading above listview"
-msgid "Mounted Remote Shares"
+msgid "Remote Share Mounts"
 msgstr "तल माउन्ट गरिएको"
 
 #: ui/main.qml:54

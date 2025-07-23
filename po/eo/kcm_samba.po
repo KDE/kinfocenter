@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-24 00:39+0000\n"
+"POT-Creation-Date: 2025-07-23 00:44+0000\n"
 "PO-Revision-Date: 2023-03-25 23:06+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -28,9 +28,11 @@ msgid "User-Created Shares"
 msgstr "Uzantkreitaj Komundosierujoj"
 
 #: ui/main.qml:23
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@title heading above listview"
+#| msgid "Mounted Remote Shares"
 msgctxt "@title heading above listview"
-msgid "Mounted Remote Shares"
+msgid "Remote Share Mounts"
 msgstr "Muntitaj Foraj Komundosierujoj"
 
 #: ui/main.qml:54

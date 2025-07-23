@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-24 00:39+0000\n"
+"POT-Creation-Date: 2025-07-23 00:44+0000\n"
 "PO-Revision-Date: 2020-10-03 11:46+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -28,9 +28,11 @@ msgid "User-Created Shares"
 msgstr "Brukaroppretta ressursar"
 
 #: ui/main.qml:23
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@title heading above listview"
+#| msgid "Mounted Remote Shares"
 msgctxt "@title heading above listview"
-msgid "Mounted Remote Shares"
+msgid "Remote Share Mounts"
 msgstr "Monterte fjernressursar"
 
 #: ui/main.qml:54

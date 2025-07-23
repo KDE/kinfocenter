@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-24 00:39+0000\n"
+"POT-Creation-Date: 2025-07-23 00:44+0000\n"
 "PO-Revision-Date: 2020-11-07 13:02+0100\n"
 "Last-Translator: Matej Mrenica <matejm98mthw@gmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -27,9 +27,11 @@ msgid "User-Created Shares"
 msgstr "Zdieľania vytvorené používateľom"
 
 #: ui/main.qml:23
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@title heading above listview"
+#| msgid "Mounted Remote Shares"
 msgctxt "@title heading above listview"
-msgid "Mounted Remote Shares"
+msgid "Remote Share Mounts"
 msgstr "Pripojené vzdialené zdieľania"
 
 #: ui/main.qml:54

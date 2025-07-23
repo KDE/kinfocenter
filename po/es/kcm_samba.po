@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_samba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-24 00:39+0000\n"
+"POT-Creation-Date: 2025-07-23 00:44+0000\n"
 "PO-Revision-Date: 2025-05-18 12:35+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -30,9 +30,11 @@ msgid "User-Created Shares"
 msgstr "Recursos compartidos creados por el usuario"
 
 #: ui/main.qml:23
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@title heading above listview"
+#| msgid "Mounted Remote Shares"
 msgctxt "@title heading above listview"
-msgid "Mounted Remote Shares"
+msgid "Remote Share Mounts"
 msgstr "Recursos compartidos remotos montados"
 
 #: ui/main.qml:54
