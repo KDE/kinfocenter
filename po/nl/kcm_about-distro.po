@@ -2,14 +2,15 @@
 # This file is distributed under the same license as the kinfocenter package.
 #
 # SPDX-FileCopyrightText: 2021, 2022, 2023, 2024, 2025 Freek de Kruijf <freekdekruijf@kde.nl>
+# SPDX-FileCopyrightText: 2025 Luc Castermans <luc.castermans@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-01 00:43+0000\n"
-"PO-Revision-Date: 2025-05-01 18:44+0200\n"
-"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2025-07-23 10:36+0200\n"
+"Last-Translator: Luc Castermans <luc.castermans@gmail.com>\n"
+"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -161,8 +162,8 @@ msgid ""
 "Some memory is reserved for use by the kernel or system hardware such as "
 "integrated graphics memory."
 msgstr ""
-"Enig geheugen is gereserveerd voor gebruik door de kernel of systeemhardware "
-"zoals geïntegreerd grafisch geheugen."
+"Een gedeelte van het  geheugen is gereserveerd voor gebruik door de kernel "
+"of systeemhardware zoals bijvoorbeeld geïntegreerd grafisch geheugen."
 
 #: MemoryEntry.cpp:148
 #, kde-format
@@ -184,9 +185,10 @@ msgid ""
 "because some memory is reserved for use by the kernel or system hardware, "
 "such as integrated graphics memory."
 msgstr ""
-"De hoeveelheid getoonde geheugen lan lager zijn dan de geïnstalleerde "
-"hoeveelheid omdat enig geheugen is gereserveerd voor gebruik door de kernel "
-"of systeemhardware zoals geïntegreerd grafisch geheugen."
+"De getoonde hoeveelheid geheugen kan lager zijn dan de geïnstalleerde "
+"hoeveelheid omdat een deel van het geheugen is gereserveerd voor gebruik "
+"door de kernel of systeemhardware zoals bijvoorbeeld geïntegreerd grafisch "
+"geheugen."
 
 #: OSVersionEntry.cpp:9
 #, kde-format

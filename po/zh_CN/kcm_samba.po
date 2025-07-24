@@ -24,12 +24,10 @@ msgid "User-Created Shares"
 msgstr "用户建立的共享"
 
 #: ui/main.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@title heading above listview"
-#| msgid "Mounted Remote Shares"
+#, kde-format
 msgctxt "@title heading above listview"
 msgid "Remote Share Mounts"
-msgstr "挂载的远程共享"
+msgstr ""
 
 #: ui/main.qml:54
 #, kde-format
