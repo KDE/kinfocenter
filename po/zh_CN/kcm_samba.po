@@ -27,7 +27,7 @@ msgstr "用户建立的共享"
 #, kde-format
 msgctxt "@title heading above listview"
 msgid "Remote Share Mounts"
-msgstr ""
+msgstr "远程共享挂载"
 
 #: ui/main.qml:54
 #, kde-format
