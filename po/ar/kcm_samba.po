@@ -6,14 +6,14 @@
 # محمد سعد  Mohamed SAAD <metehyi@free.fr>, 2006.
 # AbdulAziz AlSharif <a.a-a.s@hotmail.com>, 2007.
 # Youssef Chahibi <chahibi@gmail.com>, 2007.
-# zayed <zayed.alsaidi@gmail.com>, 2008, 2021.
+# SPDX-FileCopyrightText: 2008, 2021, 2025 zayed <zayed.alsaidi@gmail.com>
 # Abdalrahim Fakhouri <abdilra7eem@yahoo.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-07-23 00:44+0000\n"
-"PO-Revision-Date: 2021-12-18 22:51+0400\n"
+"PO-Revision-Date: 2025-07-31 18:39+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -22,6 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: ui/main.qml:18
 #, kde-format
@@ -30,9 +31,7 @@ msgid "User-Created Shares"
 msgstr "المجلدات المشاركة بواسطة المستخدم"
 
 #: ui/main.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@title heading above listview"
-#| msgid "Mounted Remote Shares"
+#, kde-format
 msgctxt "@title heading above listview"
 msgid "Remote Share Mounts"
 msgstr "المجلدات المشاركة المضمومة"
