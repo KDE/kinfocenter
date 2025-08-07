@@ -1,14 +1,15 @@
 # Diego Iastrubni <elcuco@kde.org>, 2012.
 # elkana bardugo <ttv200@gmail.com>, 2016.
 # Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
+# SPDX-FileCopyrightText: 2025 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmdevinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-16 00:48+0000\n"
-"PO-Revision-Date: 2017-05-16 06:52-0400\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2025-08-06 18:31+0300\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,23 +17,23 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-Language: Hebrew\n"
 "X-Poedit-Country: ISRAEL\n"
-"X-Generator: Zanata 3.9.6\n"
+"X-Generator: Lokalize 25.04.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "אופיר קלינגר"
+msgstr "אופיר קלינגר,צוות התרגום של KDE ישראל"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "klinger.ofir@gmail.com"
+msgstr "klinger.ofir@gmail.com,kde-l10n-he@kde.org"
 
 #: devicelisting.cpp:41
 #, kde-format
 msgctxt "Device Listing Whats This"
 msgid "Shows all the devices that are currently listed."
-msgstr "מציג את כל ההתקנים שכרגע רשומים."
+msgstr "הצגת כל ההתקנים שרשומים כרגע."
 
 #: devicelisting.cpp:44
 #, kde-format
@@ -42,22 +43,22 @@ msgstr "התקנים"
 #: devicelisting.cpp:57
 #, kde-format
 msgid "Collapse All"
-msgstr "הסתר הכל"
+msgstr "צמצום של הכול"
 
 #: devicelisting.cpp:60
 #, kde-format
 msgid "Expand All"
-msgstr "הצג הכל"
+msgstr "הרחבה של הכול"
 
 #: devicelisting.cpp:63
 #, kde-format
 msgid "Show All Devices"
-msgstr "הצג כל ההתקנים"
+msgstr "הצגת כל ההתקנים"
 
 #: devicelisting.cpp:66
 #, kde-format
 msgid "Show Relevant Devices"
-msgstr "הצג התקנים רלוונטים"
+msgstr "הצגת התקנים רלוונטים"
 
 #: devicelisting.cpp:95
 #, kde-format
@@ -84,7 +85,7 @@ msgstr "מציג התקנים"
 #: devinfo.cpp:28
 #, kde-format
 msgid "(c) 2010 David Hubner"
-msgstr "(c) 2010 David Hubner"
+msgstr "(c) 2010 דיויד האבנר"
 
 #: devinfo.cpp:58
 #, kde-format
@@ -95,12 +96,12 @@ msgstr "UDI: "
 #, kde-format
 msgctxt "Udi Whats This"
 msgid "Shows the current device's UDI (Unique Device Identifier)"
-msgstr "מציג את ה-UDI (Unique Device Identifier) הנוכחי של ההתקן"
+msgstr "הצגת ה־UDI‏ (Unique Device Identifier) הנוכחי של ההתקן"
 
 #: infopanel.cpp:20
 #, kde-format
 msgid "Device Information"
-msgstr "מידע אודות ההתקן"
+msgstr "מידע על ההתקן"
 
 #: infopanel.cpp:29
 #, kde-format
@@ -120,7 +121,7 @@ msgstr ""
 #: infopanel.cpp:119
 #, kde-format
 msgid "Description: "
-msgstr ""
+msgstr "תיאור: "
 
 #: infopanel.cpp:121
 #, kde-format
@@ -191,28 +192,24 @@ msgid "Intel SSE3"
 msgstr "Intel SSE3"
 
 #: soldevicetypes.cpp:88
-#, fuzzy, kde-format
-#| msgid "Intel SSE3"
+#, kde-format
 msgid "Intel SSSE3"
-msgstr "Intel SSE3"
+msgstr "Intel SSSE3"
 
 #: soldevicetypes.cpp:91
-#, fuzzy, kde-format
-#| msgid "Intel SSE4"
+#, kde-format
 msgid "Intel SSE4.1"
-msgstr "Intel SSE4"
+msgstr "Intel SSE4.1"
 
 #: soldevicetypes.cpp:94
-#, fuzzy, kde-format
-#| msgid "Intel SSE4"
+#, kde-format
 msgid "Intel SSE4.2"
-msgstr "Intel SSE4"
+msgstr "Intel SSE4.2"
 
 #: soldevicetypes.cpp:97
-#, fuzzy, kde-format
-#| msgid "AMD 3DNow"
+#, kde-format
 msgid "AMD 3DNow!"
-msgstr "AMD 3DNow"
+msgstr "AMD 3DNow!"
 
 #: soldevicetypes.cpp:100
 #, kde-format
@@ -482,19 +479,19 @@ msgstr "מצלמה"
 #: soldevicetypes.cpp:451
 #, kde-format
 msgid "Phone"
-msgstr ""
+msgstr "טלפון"
 
 #: soldevicetypes.cpp:454
 #, kde-format
 msgctxt "Screen"
 msgid "Monitor"
-msgstr ""
+msgstr "צג"
 
 #: soldevicetypes.cpp:457
 #, kde-format
 msgctxt "Wireless game pad or joystick battery"
 msgid "Gaming Input"
-msgstr ""
+msgstr "קלט למשחקים"
 
 #: soldevicetypes.cpp:460
 #, kde-format
@@ -533,7 +530,6 @@ msgid "Charge Status: "
 msgstr "מצב טעינה:"
 
 #: soldevicetypes.cpp:478
-#, fuzzy, kde-format
-#| msgid "Charge Status: "
+#, kde-format
 msgid "Charge Percent: "
-msgstr "מצב טעינה:"
+msgstr "אחוזי טעינה: "

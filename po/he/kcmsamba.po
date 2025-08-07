@@ -11,19 +11,20 @@
 # Diego Iastrubni <elcuco@kde.org>, 2008, 2009, 2012.
 # Elkana Bardugo <ttv200@gmail.com>, 2016.
 # Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
+# SPDX-FileCopyrightText: 2025 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-11-17 00:29+0000\n"
-"PO-Revision-Date: 2017-05-23 08:27-0400\n"
-"Last-Translator: Elkana Bardugo <ttv200@gmail.com>\n"
-"Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2025-08-06 18:33+0300\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 3.9.6\n"
+"X-Generator: Lokalize 25.04.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -44,80 +45,77 @@ msgstr "kcmsamba"
 #: main.cpp:26
 #, kde-format
 msgid "Samba Status"
-msgstr ""
+msgstr "מצב Samba"
 
 #: main.cpp:30
-#, fuzzy, kde-format
-#| msgid "(c) 2002 KDE Information Control Module Samba Team"
+#, kde-format
 msgid "(c) 2002-2020 KDE Information Control Module Samba Team"
-msgstr "(c) 2002 KDE של מודול בקרת המערכת של Samba-צוות ה"
+msgstr "‏(c) 2002‏-2020 צוות מודל בקרת מידע של Samba ב־KDE"
 
 #: main.cpp:31
 #, kde-format
 msgid "Michael Glauche"
-msgstr "Michael Glauche"
+msgstr "מייקל גלוש"
 
 #: main.cpp:32
 #, kde-format
 msgid "Matthias Hoelzer"
-msgstr "Matthias Hoelzer"
+msgstr "מתיאס הולצר"
 
 #: main.cpp:33
 #, kde-format
 msgid "David Faure"
-msgstr "David Faure"
+msgstr "דוד פור"
 
 #: main.cpp:34
 #, kde-format
 msgid "Harald Koschinski"
-msgstr "Harald Koschinski"
+msgstr "הראלד קושינסקי"
 
 #: main.cpp:35
 #, kde-format
 msgid "Wilco Greven"
-msgstr "Wilco Greven"
+msgstr "וילקו גריבן"
 
 #: main.cpp:36
 #, kde-format
 msgid "Alexander Neundorf"
-msgstr "Alexander Neundorf"
+msgstr "אלכסנדר נוינדורף"
 
 #: main.cpp:37
 #, kde-format
 msgid "Harald Sitter"
-msgstr ""
+msgstr "הראלד סיטר"
 
 #: package/contents/ui/main.qml:17
-#, fuzzy, kde-format
-#| msgid "&Exports"
+#, kde-format
 msgctxt "@title heading above listview"
 msgid "User-Created Shares"
-msgstr "יי&צואים"
+msgstr "שיתופים שיצרו המשתמשים"
 
 #: package/contents/ui/main.qml:22
-#, fuzzy, kde-format
-#| msgid "Mounted Under"
+#, kde-format
 msgctxt "@title heading above listview"
 msgid "Mounted Remote Shares"
-msgstr "מחובר במיקום"
+msgstr "שיתופים מרוחקים מעוגנים"
 
 #: package/contents/ui/main.qml:49
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no directories shared by users"
-msgstr ""
+msgstr "אין תיקיות ששותפו על ידי המשתמשים"
 
 #: package/contents/ui/main.qml:89
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no Samba shares mounted on this system"
-msgstr ""
+msgstr "אין שיתופי Samba שמעוגנים במערכת הזאת"
 
 #: package/contents/ui/ShareListItem.qml:71
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Open folder properties to change share settings"
-msgstr ""
+msgstr "יש לפתוח את מאפייני התיקייה כדי לשנות את הגדרות השיתוף"
 
 #~ msgid "System Information Control Module"
 #~ msgstr "מודול בקרת מידע המערכת"
