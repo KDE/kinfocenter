@@ -50,11 +50,13 @@ bool isNvidiaLoaded()
         return false;
     }
 
-    while (!file.atEnd()) {
-        const auto line = file.readLine();
+    QTextStream in(&file);
+    QString line = in.readLine();
+    while (!line.isNull()) {
         if (line.startsWith("nvidia"_L1)) {
             return true;
         }
+        line = in.readLine();
     }
 
     return false;
