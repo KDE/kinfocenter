@@ -3,7 +3,7 @@
     "KPlugin": {
         "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
         "Description": "KWin Support information",
-        "Description[ar]": "معلومات دعم ك.وين",
+        "Description[ar]": "معلومات عن قدرات ك.وين",
         "Description[az]": "KWin dəstək məlumatları",
         "Description[bg]": "Информация за поддръжка на KWin",
         "Description[ca@valencia]": "Informació de la implementació de KWin",
