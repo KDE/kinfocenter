@@ -26,12 +26,10 @@ msgid "User-Created Shares"
 msgstr "Sdílení vytvořená uživatelem"
 
 #: ui/main.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@title heading above listview"
-#| msgid "Mounted Remote Shares"
+#, kde-format
 msgctxt "@title heading above listview"
 msgid "Remote Share Mounts"
-msgstr "Připojená vzdálená sdílení"
+msgstr ""
 
 #: ui/main.qml:54
 #, kde-format
