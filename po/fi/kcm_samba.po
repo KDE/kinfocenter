@@ -1,11 +1,11 @@
 # translation of kcmsamba.po to Finnish
 # KDE Finnish translation sprint participants:
+# SPDX-FileCopyrightText: 2015, 2020, 2021, 2025 Tommi Nieminen <translator@legisign.org>
 # Teemu Rytilahti <teemu.rytilahti@d5k.net>, 2003, 2008.
 # Kim Enkovaara <kim.enkovaara@iki.fi>, 2003.
 # Teemu Rytilahti <teemu.rytilahti@kde-fi.org>, 2003, 2008.
 # Ilpo Kantonen <ilpo@iki.fi>, 2005.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2011, 2012, 2014.
-# Tommi Nieminen <translator@legisign.org>, 2015, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
@@ -19,6 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: ui/main.qml:18
 #, kde-format
