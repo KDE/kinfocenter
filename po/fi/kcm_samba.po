@@ -1,17 +1,17 @@
 # translation of kcmsamba.po to Finnish
 # KDE Finnish translation sprint participants:
+# SPDX-FileCopyrightText: 2015, 2020, 2021, 2025 Tommi Nieminen <translator@legisign.org>
 # Teemu Rytilahti <teemu.rytilahti@d5k.net>, 2003, 2008.
 # Kim Enkovaara <kim.enkovaara@iki.fi>, 2003.
 # Teemu Rytilahti <teemu.rytilahti@kde-fi.org>, 2003, 2008.
 # Ilpo Kantonen <ilpo@iki.fi>, 2005.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2011, 2012, 2014.
-# Tommi Nieminen <translator@legisign.org>, 2015, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-07-23 00:44+0000\n"
-"PO-Revision-Date: 2021-01-11 20:15+0200\n"
+"PO-Revision-Date: 2025-08-22 17:17+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -19,6 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: ui/main.qml:18
 #, kde-format
@@ -27,9 +28,7 @@ msgid "User-Created Shares"
 msgstr "Käyttäjän luomat jaot"
 
 #: ui/main.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@title heading above listview"
-#| msgid "Mounted Remote Shares"
+#, kde-format
 msgctxt "@title heading above listview"
 msgid "Remote Share Mounts"
 msgstr "Liitetyt etäjaot"
