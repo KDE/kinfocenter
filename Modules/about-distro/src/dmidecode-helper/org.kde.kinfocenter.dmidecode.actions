@@ -43,7 +43,6 @@ Name[ta]=மேசைக்கணினி நிர்வாக இடைமு
 Name[tr]=Masaüstü Yönetim Arayüzü
 Name[uk]=Інтерфейс керування стільницею
 Name[vi]=Giao diện quản lí máy tính
-Name[x-test]=xxDesktop Management Interfacexx
 Name[zh_CN]=桌面管理界面 (DMI)
 
 [org.kde.kinfocenter.dmidecode.systeminformation]
@@ -94,7 +93,6 @@ Name[tg]=Иттилоот дар бораи низом
 Name[tr]=Sistem Bilgisi
 Name[uk]=Інформація про систему
 Name[vi]=Thông tin hệ thống
-Name[x-test]=xxSystem Informationxx
 Name[zh_CN]=系统信息
 Name[zh_TW]=系統資訊
 Description=Read system information from system's Desktop Management Interface (DMI)
@@ -137,5 +135,4 @@ Description[ta]=கணினியின் நிர்வாக இடைம�
 Description[tr]=Sistem bilgisini, sistemin Masaüstü Yönetim Arayüzü'nden (DMI) okuyun
 Description[uk]=Читати дані системи з інтерфейсу керування стільницею (DMI) системи
 Description[vi]=Đọc thông tin hệ thống từ "Giao diện quản lí máy tính" (DMI) của hệ thống
-Description[x-test]=xxRead system information from system's Desktop Management Interface (DMI)xx
 Description[zh_CN]=读取本机系统的桌面管理界面 (DMI) 中的系统信息
