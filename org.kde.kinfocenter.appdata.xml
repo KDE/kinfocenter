@@ -55,7 +55,6 @@
   <name xml:lang="tr">Bilgi Merkezi</name>
   <name xml:lang="uk">Центр інформації</name>
   <name xml:lang="vi">Trung tâm thông tin</name>
-  <name xml:lang="x-test">xxInfo Centerxx</name>
   <name xml:lang="zh-CN">系统信息中心</name>
   <name xml:lang="zh-TW">資訊中心</name>
   <summary>Learn about the system's hardware and status</summary>
@@ -82,7 +81,6 @@
   <summary xml:lang="sv">Ta reda på mer om systemets hårdvara och status</summary>
   <summary xml:lang="tr">Sistemdeki donanım ve sistem durumu hakkında bilgi alın</summary>
   <summary xml:lang="uk">Дізнайтеся більше про обладнання та стан системи</summary>
-  <summary xml:lang="x-test">xxLearn about the system's hardware and statusxx</summary>
   <summary xml:lang="zh-CN">显示系统硬件和状态信息</summary>
   <summary xml:lang="zh-TW">瞭解關於系統硬體與狀態的資訊</summary>
   <description>
@@ -132,7 +130,6 @@
     <p xml:lang="tr">Bilgi Merkezi, sistem ve masaüstü ortamınızın kolayca ulaşılabilir ve uygunca bir genel görünümünü sağlar.</p>
     <p xml:lang="uk">«Центр інформації» надає вам змогу переглядати централізовано і зручно параметри вашої системи та стільничного середовища.</p>
     <p xml:lang="vi">Trung tâm thông tin cung cấp cho bạn một phần tổng quan tập trung và tiện lợi về hệ thống và môi trường bàn làm việc của bạn.</p>
-    <p xml:lang="x-test">xxThe Info Center provides you with a centralized and convenient overview of your system and desktop environment.xx</p>
     <p xml:lang="zh-CN">信息中心为您提供了一个集中和便于操作的系统和桌面环境信息概览。</p>
     <p xml:lang="zh-TW">資訊中心提供您一個集中且方便使用的系統與桌面環境資訊總覽。</p>
     <p>The information center is made up of multiple modules.  Each module is a
@@ -183,7 +180,6 @@
     <p xml:lang="tr">Bilgi Merkezi, birden çok modülden oluşur. Her bir modül ayrı bir uygulamadır; ancak Bilgi Merkezi, tüm bu uygulamaları kolayca ulaşılabilir bir konumda organize eder.</p>
     <p xml:lang="uk">Центр інформації складається з декількох модулів. Кожен модуль є окремою програмою, але центр інформації об’єднує всі ці програми у вигляді однієї зручної оболонки.</p>
     <p xml:lang="vi">Trung tâm thông tin được tạo thành bởi nhiều khối. Mỗi khối là một ứng dụng riêng biệt, nhưng trung tâm thông tin tổ chức tất cả các chương trình này vào một địa điểm tiện lợi.</p>
-    <p xml:lang="x-test">xxThe information center is made up of multiple modules. Each module is a separate application, but the information center organizes all of these programs into a convenient location.xx</p>
     <p xml:lang="zh-CN">信息中心由多个模块组成，每个模块都是一个单独的应用程序。信息中心将所有这些程序集中组织在一个便于操作的界面中进行显示。</p>
     <p xml:lang="zh-TW">資訊中心是由多個模組組成的。每個模組皆是獨立的應用程式，但資訊中心把這些程式統整到一個方便查閱的位置。</p>
   </description>
