@@ -43,7 +43,6 @@
         "Description[tr]": "EGL Bilgisi",
         "Description[uk]": "Інформація про EGL",
         "Description[vi]": "Thông tin về EGL",
-        "Description[x-test]": "xxEGL informationxx",
         "Description[zh_CN]": "EGL 信息",
         "Description[zh_TW]": "EGL 資訊",
         "Icon": "video-display",
@@ -89,7 +88,6 @@
         "Name[tr]": "OpenGL (EGL)",
         "Name[uk]": "OpenGL (EGL)",
         "Name[vi]": "OpenGL (EGL)",
-        "Name[x-test]": "xxOpenGL (EGL)xx",
         "Name[zh_CN]": "OpenGL (EGL)",
         "Name[zh_TW]": "OpenGL (EGL)"
     },
@@ -122,6 +120,5 @@
     "X-KDE-Keywords[sl]": "OpenGL,DRI,3D,Video kratica,strojno pospeševanje,grafika,EGL",
     "X-KDE-Keywords[sv]": "OpenGL,DRI,3D,Videokort,Maskinvaruacceleration,Grafik,EGL",
     "X-KDE-Keywords[uk]": "OpenGL,DRI,3D,Vulkan,VideoCard,Hardware Acceleration,Graphics,EGL,вулкан,відеокартка,апаратне прискорення,графіка,оупенгл,оупенгеель,дрі,трид,егл,егеель",
-    "X-KDE-Keywords[vi]": "OpenGL,DRI,3D,VideoCard,Hardware Acceleration,Graphics,EGL,Bo mạch đồ hoạ,Tăng tốc phần cứng,Đồ hoạ",
-    "X-KDE-Keywords[x-test]": "xxOpenGLxx,xxDRIxx,xx3Dxx,xxVideoCardxx,xxHardware Accelerationxx,xxGraphicsxx,xxEGLxx"
+    "X-KDE-Keywords[vi]": "OpenGL,DRI,3D,VideoCard,Hardware Acceleration,Graphics,EGL,Bo mạch đồ hoạ,Tăng tốc phần cứng,Đồ hoạ"
 }

@@ -43,7 +43,6 @@
         "Description[tr]": "Aygıt Görüntüleyici",
         "Description[uk]": "Переглядач пристроїв",
         "Description[vi]": "Trình xem thiết bị",
-        "Description[x-test]": "xxDevice Viewerxx",
         "Description[zh_CN]": "设备查看器",
         "Description[zh_TW]": "裝置檢視器",
         "Icon": "device-notifier",
@@ -110,7 +109,6 @@
         "Name[uk]": "Переглядач пристроїв",
         "Name[vi]": "Trình xem thiết bị",
         "Name[wa]": "Håyneu des éndjins",
-        "Name[x-test]": "xxDevice Viewerxx",
         "Name[zh_CN]": "设备查看器",
         "Name[zh_TW]": "裝置檢視器"
     },
@@ -151,7 +149,6 @@
     "X-KDE-Keywords[sv]": "enhet,enheter,disk,processor,cpu",
     "X-KDE-Keywords[uk]": "device,devices,disk,drive,processor,cpu,пристрій,пристрої,диск,флешка,процесор,цпу",
     "X-KDE-Keywords[vi]": "device,devices,disk,drive,processor,cpu,thiết bị,đĩa,ổ,bộ xử lí",
-    "X-KDE-Keywords[x-test]": "xxdevicexx,xxdevicesxx,xxdiskxx,xxdrivexx,xxprocessorxx,xxcpuxx",
     "X-KDE-Keywords[zh_TW]": "device,devices,disk,drive,processor,cpu,裝置,磁碟,硬碟,磁碟機,硬碟機,裝置,設備,處理器,CPU",
     "X-KDE-Weight": 0
 }

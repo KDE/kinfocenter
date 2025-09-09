@@ -39,7 +39,6 @@
         "Description[tr]": "KWin Destek Bilgisi",
         "Description[uk]": "Дані щодо підтримки KWin",
         "Description[vi]": "Thông tin hỗ trợ KWin",
-        "Description[x-test]": "xxKWin Support informationxx",
         "Description[zh_CN]": "KWin 支持信息",
         "Description[zh_TW]": "KWin 支援資訊",
         "Icon": "kwin",
@@ -80,7 +79,6 @@
         "Name[tr]": "Pencere Yöneticisi",
         "Name[uk]": "Керування вікнами",
         "Name[vi]": "Trình quản lí cửa sổ",
-        "Name[x-test]": "xxWindow Managerxx",
         "Name[zh_CN]": "窗口管理器",
         "Name[zh_TW]": "視窗管理員"
     },

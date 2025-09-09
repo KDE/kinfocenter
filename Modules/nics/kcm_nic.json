@@ -43,7 +43,6 @@
         "Description[tr]": "Ağ Arayüzleri Bilgisi",
         "Description[uk]": "Інформація щодо інтерфейсів мережі",
         "Description[vi]": "Thông tin giao diện mạng",
-        "Description[x-test]": "xxNetwork interface informationxx",
         "Description[zh_CN]": "网络接口信息",
         "Description[zh_TW]": "網路介面資訊",
         "Icon": "network-card",
@@ -135,7 +134,6 @@
         "Name[uz]": "Tarmoq interfeyslari",
         "Name[vi]": "Giao diện mạng",
         "Name[wa]": "Eterfaces rantoele",
-        "Name[x-test]": "xxNetwork Interfacesxx",
         "Name[xh]": "Ujongano Lomsebenzi womnatha",
         "Name[zh_CN]": "网络接口",
         "Name[zh_TW]": "網路介面"

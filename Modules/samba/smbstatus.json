@@ -43,7 +43,6 @@
         "Description[tr]": "Samba Durumu İzleyicisi",
         "Description[uk]": "Монітор стану Samba",
         "Description[vi]": "Giám sát trạng thái Samba",
-        "Description[x-test]": "xxSamba status monitorxx",
         "Description[zh_CN]": "SAMBA 状态监视器",
         "Description[zh_TW]": "Samba 狀態監視器",
         "Icon": "preferences-system-network-sharing",
@@ -135,7 +134,6 @@
         "Name[uz]": "Samba'ning holati",
         "Name[vi]": "Trạng thái Samba",
         "Name[wa]": "Estat di Samba",
-        "Name[x-test]": "xxSamba Statusxx",
         "Name[xh]": "Isimo se Samba",
         "Name[zh_CN]": "SAMBA 状态",
         "Name[zh_TW]": "Samba 狀態"
@@ -188,6 +186,5 @@
     "X-KDE-Keywords[tr]": "SMB,SAMBA,Windows ağı,LAN,Yerel Ağ,Sistem Bilgileri",
     "X-KDE-Keywords[uk]": "SMB,SAMBA,Windows network,LAN,System Information,мережа,віндоус,віндоуз,віндовс,віндовз,система,інформація,відомості",
     "X-KDE-Keywords[vi]": "SMB,SAMBA,Windows network,LAN,System Information,Mạng Windows,Thông tin hệ thống",
-    "X-KDE-Keywords[x-test]": "xxSMBxx,xxSAMBAxx,xxWindows networkxx,xxLANxx,xxSystem Informationxx",
     "X-KDE-Keywords[zh_TW]": "SMB,SAMBA,Windows network,LAN,System Information"
 }

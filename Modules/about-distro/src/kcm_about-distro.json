@@ -43,7 +43,6 @@
         "Description[tr]": "Bu Sistem Hakkında Bilgi",
         "Description[uk]": "Інформація щодо цієї системи",
         "Description[vi]": "Thông tin về hệ thống này",
-        "Description[x-test]": "xxInformation About This Systemxx",
         "Description[zh_CN]": "关于此系统的信息",
         "Description[zh_TW]": "關於這個系統的資訊",
         "Icon": "ktip",
@@ -90,7 +89,6 @@
         "Name[tr]": "Sistem Hakkında",
         "Name[uk]": "Про цю систему",
         "Name[vi]": "Về hệ thống này",
-        "Name[x-test]": "xxAbout this Systemxx",
         "Name[zh_CN]": "关于此系统",
         "Name[zh_TW]": "關於這個系統"
     },
@@ -120,7 +118,6 @@
     "X-KDE-Keywords[sl]": "o,info,informacije,distribucija,distro,sistem,jedro,qt,kde,različica",
     "X-KDE-Keywords[sv]": "om,info,information,distribution,distro,system,kernel,qt,kde,version",
     "X-KDE-Keywords[uk]": "information,distribution,distro,system,kernel,qt,kde,version,інформація,дистрибутив,дистро,система,ядро,процесор,комп’ютер,інфо,версія",
-    "X-KDE-Keywords[x-test]": "xxaboutxx,xxinfoxx,xxinformationxx,xxdistributionxx,xxdistroxx,xxsystemxx,xxkernelxx,xxqtxx,xxkdexx,xxversionxx",
     "X-KDE-System-Settings-Parent-Category": "system-administration",
     "X-KDE-Weight": 0
 }

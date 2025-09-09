@@ -42,7 +42,6 @@
         "Description[tr]": "Vulkan Grafik API'si Bilgisi",
         "Description[uk]": "Далі щодо графічного програмного інтерфейсу Vulkan",
         "Description[vi]": "Thông tin API đồ hoạ Vulkan",
-        "Description[x-test]": "xxVulkan graphics API informationxx",
         "Description[zh_CN]": "Vulkan 图形 API 信息",
         "Description[zh_TW]": "Vulkan 圖形 API 資訊",
         "Icon": "video-display",
@@ -87,7 +86,6 @@
         "Name[tr]": "Vulkan",
         "Name[uk]": "Vulkan",
         "Name[vi]": "Vulkan",
-        "Name[x-test]": "xxVulkanxx",
         "Name[zh_CN]": "Vulkan",
         "Name[zh_TW]": "Vulkan"
     },
@@ -121,6 +119,5 @@
     "X-KDE-Keywords[sl]": "Vulkan,Videokartica,Strojno pospeševanje,Grafika",
     "X-KDE-Keywords[sv]": "Vulkan,Videokort,Hårdvaruacceleration,Grafik",
     "X-KDE-Keywords[uk]": "Vulkan,VideoCard,Hardware Acceleration,Graphics,вулкан,відеокартка,апаратне прискорення,графіка",
-    "X-KDE-Keywords[vi]": "Vulkan,VideoCard,Hardware Acceleration,Graphics,Bo mạch đồ hoạ,Tăng tốc phần cứng,Đồ hoạ",
-    "X-KDE-Keywords[x-test]": "xxVulkanxx,xxVideoCardxx,xxHardware Accelerationxx,xxGraphicsxx"
+    "X-KDE-Keywords[vi]": "Vulkan,VideoCard,Hardware Acceleration,Graphics,Bo mạch đồ hoạ,Tăng tốc phần cứng,Đồ hoạ"
 }

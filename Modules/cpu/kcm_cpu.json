@@ -43,7 +43,6 @@
         "Description[tr]": "Gelişmiş CPU Bilgisi",
         "Description[uk]": "Додаткові відомості щодо процесора",
         "Description[vi]": "Thông tin nâng cao về CPU",
-        "Description[x-test]": "xxAdvanced CPU Informationxx",
         "Description[zh_CN]": "高级 CPU 信息",
         "Description[zh_TW]": "進階 CPU 資訊",
         "Icon": "preferences-devices-cpu",
@@ -89,7 +88,6 @@
         "Name[tr]": "CPU",
         "Name[uk]": "Процесор",
         "Name[vi]": "CPU",
-        "Name[x-test]": "xxCPUxx",
         "Name[zh_CN]": "CPU",
         "Name[zh_TW]": "CPU"
     },
@@ -122,6 +120,5 @@
     "X-KDE-Keywords[sl]": "cpe,amd,intel,arm,instrukcije,jedra,arhitektura,vrstni red",
     "X-KDE-Keywords[sv]": "processor,amd,intel,arm,instruktioner,kärnor,arkitektur,byteordning",
     "X-KDE-Keywords[uk]": "cpu,amd,intel,arm,instructions,cores,architecture,byte order,процесор,амд,інтел,арм,інструкції,ядра,архітектура,порядок байтів",
-    "X-KDE-Keywords[vi]": "cpu,amd,intel,arm,instructions,cores,architecture,byte order,lệnh,lõi,kiến trúc,thứ tự byte",
-    "X-KDE-Keywords[x-test]": "xxcpuxx,xxamdxx,xxintelxx,xxarmxx,xxinstructionsxx,xxcoresxx,xxarchitecturexx,xxbyte orderxx"
+    "X-KDE-Keywords[vi]": "cpu,amd,intel,arm,instructions,cores,architecture,byte order,lệnh,lõi,kiến trúc,thứ tự byte"
 }

@@ -43,7 +43,6 @@
         "Description[tr]": "PCI Bilgisi",
         "Description[uk]": "Інформація щодо шини PCI",
         "Description[vi]": "Thông tin về PCI",
-        "Description[x-test]": "xxPCI informationxx",
         "Description[zh_CN]": "PCI 信息",
         "Description[zh_TW]": "PCI 資訊",
         "Icon": "hwinfo",
@@ -135,7 +134,6 @@
         "Name[uz]": "PCI",
         "Name[vi]": "PCI",
         "Name[wa]": "PCI",
-        "Name[x-test]": "xxPCIxx",
         "Name[xh]": "PCI",
         "Name[zh_CN]": "PCI",
         "Name[zh_TW]": "PCI"
@@ -188,6 +186,5 @@
     "X-KDE-Keywords[tr]": "PCI,PCI Aygıtları,PCI Veri Yolu,Sistem Bilgileri",
     "X-KDE-Keywords[uk]": "PCI,PCI-Devices,PCI-Bus,System Information,пристрій,пристрої,канал,шина,система,інформація,відомості",
     "X-KDE-Keywords[vi]": "PCI,PCI-Devices,PCI-Bus,System Information,Thiết bị PCI,Buýt PCI,Thông tin hệ thống",
-    "X-KDE-Keywords[x-test]": "xxPCIxx,xxPCI-Devicesxx,xxPCI-Busxx,xxSystem Informationxx",
     "X-KDE-Keywords[zh_TW]": "PCI,PCI-Devices,PCI-Bus,System Information"
 }

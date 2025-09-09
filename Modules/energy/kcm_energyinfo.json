@@ -43,7 +43,6 @@
         "Description[tr]": "Enerji Tüketimi İstatistikleri",
         "Description[uk]": "Статистика споживання електроенергії",
         "Description[vi]": "Thống kê tiêu thụ năng lượng",
-        "Description[x-test]": "xxEnergy Consumption Statisticsxx",
         "Description[zh_CN]": "电量消耗统计信息",
         "Description[zh_TW]": "能源消耗統計",
         "FormFactors": [
@@ -96,7 +95,6 @@
         "Name[tr]": "Enerji",
         "Name[uk]": "Живлення",
         "Name[vi]": "Năng lượng",
-        "Name[x-test]": "xxEnergyxx",
         "Name[zh_CN]": "电量",
         "Name[zh_TW]": "電量"
     },
@@ -141,7 +139,6 @@
     "X-KDE-Keywords[tr]": "Pil,Enerji,İstatistik,Geçmiş,Güç",
     "X-KDE-Keywords[uk]": "Battery,Energy,Statistics,History,Power,акумулятор,енергія,статистика,журнал,живлення,споживання,енергоспоживання",
     "X-KDE-Keywords[vi]": "Battery,Energy,Statistics,History,Power,Pin,Năng lượng,Thống kê,Lịch sử,Nguồn điện",
-    "X-KDE-Keywords[x-test]": "xxBatteryxx,xxEnergyxx,xxStatisticsxx,xxHistoryxx,xxPowerxx",
     "X-KDE-Keywords[zh_TW]": "Battery,Energy,Statistics,History,Power",
     "X-KDE-ParentApp": "kinfocenter",
     "X-KDE-Weight": 2
