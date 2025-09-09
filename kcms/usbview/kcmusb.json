@@ -48,7 +48,6 @@
         "Description[tr]": "Bu Bilgisayara Bağlı USB Aygıtları",
         "Description[uk]": "Пристроїв USB, під'єднаних до комп'ютера",
         "Description[vi]": "Các thiết bị USB nối với máy tính này",
-        "Description[x-test]": "xxUSB devices attached to this computerxx",
         "Description[zh_CN]": "本机已连接的 USB 设备",
         "Description[zh_TW]": "連接到這台電腦的 USB 裝置",
         "Icon": "drive-removable-media-usb-pendrive",
@@ -142,7 +141,6 @@
         "Name[uz]": "USB uskunalar",
         "Name[vi]": "Thiết bị USB",
         "Name[wa]": "Éndjins USB",
-        "Name[x-test]": "xxUSB Devicesxx",
         "Name[xh]": "Amacebo e USB",
         "Name[zh_CN]": "USB设备",
         "Name[zh_TW]": "USB 裝置"
@@ -200,7 +198,6 @@
     "X-KDE-Keywords[tr]": "usb,aygıt,cihaz,görüntüleyici,denetim,kontrol",
     "X-KDE-Keywords[uk]": "USB,devices,viewer,control,пристрій,пристрої,перегляд,переглядач,керування,контроль",
     "X-KDE-Keywords[vi]": "USB,devices,viewer,control,thiết bị,trình xem,điều khiển",
-    "X-KDE-Keywords[x-test]": "xxUSBxx,xxdevicesxx,xxviewerxx,xxcontrolxx",
     "X-KDE-Keywords[zh_CN]": "USB,devices,viewer,control,shebei,chakanqi,kongzhi,设备,查看器,控制",
     "X-KDE-Keywords[zh_TW]": "USB,devices,viewer,control"
 }

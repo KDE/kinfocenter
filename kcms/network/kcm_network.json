@@ -49,7 +49,6 @@
         "Description[tr]": "Ağ Arayüzleri Bilgisi",
         "Description[uk]": "Інформація щодо інтерфейсів мережі",
         "Description[vi]": "Thông tin giao diện mạng",
-        "Description[x-test]": "xxNetwork interface informationxx",
         "Description[zh_CN]": "网络接口信息",
         "Description[zh_TW]": "網路介面資訊",
         "Icon": "network-card",
@@ -143,7 +142,6 @@
         "Name[uz]": "Tarmoq interfeyslari",
         "Name[vi]": "Giao diện mạng",
         "Name[wa]": "Eterfaces rantoele",
-        "Name[x-test]": "xxNetwork Interfacesxx",
         "Name[xh]": "Ujongano Lomsebenzi womnatha",
         "Name[zh_CN]": "网络接口",
         "Name[zh_TW]": "網路介面"
@@ -181,7 +179,6 @@
     "X-KDE-Keywords[sv]": "nätverk,nic,ip,ip-adress,mac,inet,eth,wlan,wifi",
     "X-KDE-Keywords[tr]": "ağ,nic,ip,ip adresi,mac,inet,eth,wlan,wifi,wi-fi",
     "X-KDE-Keywords[uk]": "network,nic,ip,ip address,mac,inet,eth,wlan,wifi,мережа,адреса,мак,інтернет,езернет,вайфай",
-    "X-KDE-Keywords[x-test]": "xxnetworkxx,xxnicxx,xxipxx,xxip addressxx,xxmacxx,xxinetxx,xxethxx,xxwlanxx,xxwifixx",
     "X-KDE-Keywords[zh_CN]": "network,nic,ip,ip address,mac,inet,eth,wlan,wifi,wangluo,wangka,wangluojiemian,IP dizhi,dizhi,juyuwang,yitaiwang,wuxianwangluo,网络,网卡,网络界面,IP 地址,地址,局域网,以太网,无线网络",
     "X-KDE-Keywords[zh_TW]": "網路,NIC,IP 位址,MAC 位址,乙太網路,以太,網絡"
 }

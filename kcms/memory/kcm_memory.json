@@ -38,7 +38,6 @@
         "Description[ta]": "நினைவுத் தகவல்",
         "Description[tr]": "Bellek Bilgisi",
         "Description[uk]": "Інформація щодо пам'яті",
-        "Description[x-test]": "xxMemory Informationxx",
         "Description[zh_CN]": "内存信息",
         "Description[zh_TW]": "記憶體資訊",
         "Icon": "memory",
@@ -129,7 +128,6 @@
         "Name[uz]": "Xotira",
         "Name[vi]": "Bộ nhớ",
         "Name[wa]": "Memwere",
-        "Name[x-test]": "xxMemoryxx",
         "Name[xh]": "Inkumbulo",
         "Name[zh_CN]": "内存",
         "Name[zh_TW]": "記憶體"
@@ -168,7 +166,6 @@
     "X-KDE-Keywords[sv]": "Minne,RAM,dmidecode",
     "X-KDE-Keywords[tr]": "bellek,memory,ram,dmidecode",
     "X-KDE-Keywords[uk]": "Memory,RAM,dmidecode,пам'ять,оперативна",
-    "X-KDE-Keywords[x-test]": "xxMemoryxx,xxRAMxx,xxdmidecodexx",
     "X-KDE-Keywords[zh_CN]": "Memory,RAM,dmidecode,neicun,yuncun,yunxingneicun,dmijiema,内存,运存,运行内存,DMI 解码",
     "X-KDE-Keywords[zh_TW]": "記憶體"
 }

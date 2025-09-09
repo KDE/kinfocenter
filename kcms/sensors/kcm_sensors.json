@@ -27,7 +27,6 @@
         "Description[sv]": "Sensorer",
         "Description[tr]": "Algılayıcılar",
         "Description[uk]": "Датчики",
-        "Description[x-test]": "xxSensorsxx",
         "Description[zh_CN]": "传感器",
         "Description[zh_TW]": "感測器",
         "Icon": "temperature-normal",
@@ -56,7 +55,6 @@
         "Name[sv]": "Sensorer",
         "Name[tr]": "Algılayıcılar",
         "Name[uk]": "Датчики",
-        "Name[x-test]": "xxSensorsxx",
         "Name[zh_CN]": "传感器",
         "Name[zh_TW]": "感測器"
     },
@@ -87,7 +85,6 @@
     "X-KDE-Keywords[sv]": "lm_sensors,sensorer,temp,temperatur,volt,spänning,fläkt,fläkthastighet,övervakning,amp,ampere,ström,effekt",
     "X-KDE-Keywords[tr]": "lm_sensors,sensors,temp,temperature,volt,voltage,sensors,fan,fan speed,monitoring,amp,amps,current,power,sensörler,algılayıcılar,sıcaklık,voltaj,fan hızı,izleme,amper,akım,cereyan,ceryan,güç",
     "X-KDE-Keywords[uk]": "lm_sensors,sensors,temp,temperature,volt,voltage,sensors,fan,fan speed,monitoring,amp,amps,current,power,датчики,температура,вольт,напруження,вентилятор,охолодження,обертання,спостереження,ампери,живлення,струм,потужність",
-    "X-KDE-Keywords[x-test]": "xxlm_sensorsxx,xxsensorsxx,xxtempxx,xxtemperaturexx,xxvoltxx,xxvoltagexx,xxsensorsxx,xxfanxx,xxfan speedxx,xxmonitoringxx,xxampxx,xxampsxx,xxcurrentxx,xxpowerxx",
     "X-KDE-Keywords[zh_CN]": "lm_sensors,sensors,temp,temperature,volt,voltage,sensors,fan,fan speed,monitoring,amp,amps,current,power,chuanganqi,tantou,wendu,dianya,fengshan,fengshanzhuansu,jianshi,jiankong,dianliu,anpei,dianliang,传感器,探头,温度,电压,风扇,风扇转速,监视,监控,电流,安培,电量",
     "X-KDE-Keywords[zh_TW]": "感測器,溫度,電流,電力,安培,監控,風扇,風扇速度,瓦數,伏特,伏,電壓"
 }

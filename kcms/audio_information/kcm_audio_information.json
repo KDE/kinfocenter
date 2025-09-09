@@ -38,7 +38,6 @@
         "Description[ta]": "ஒலிச்சாதன விவரங்கள்",
         "Description[tr]": "Ses Aygıtı Bilgisi",
         "Description[uk]": "Відомості щодо звукових пристроїв",
-        "Description[x-test]": "xxAudio Device Informationxx",
         "Description[zh_CN]": "音频设备信息",
         "Description[zh_TW]": "音訊裝置資訊",
         "Icon": "audio-card",
@@ -78,7 +77,6 @@
         "Name[ta]": "ஒலி",
         "Name[tr]": "Ses",
         "Name[uk]": "Звук",
-        "Name[x-test]": "xxAudioxx",
         "Name[zh_CN]": "音频",
         "Name[zh_TW]": "音訊"
     },
@@ -115,7 +113,6 @@
     "X-KDE-Keywords[sv]": "Pipewire,ljud,PulseAudio,pactl",
     "X-KDE-Keywords[tr]": "pipewire,ses,pulseaudio,pactl",
     "X-KDE-Keywords[uk]": "Pipewire,Audio,PulseAudio,pactl,звук,аудіо,пульсаудіо,пайпваєр",
-    "X-KDE-Keywords[x-test]": "xxPipewirexx,xxAudioxx,xxPulseAudioxx,xxpactlxx",
     "X-KDE-Keywords[zh_CN]": "Pipewire,Audio,PulseAudio,pactl,yinpin,maichong,音频,脉冲",
     "X-KDE-Keywords[zh_TW]": "音訊,音效,聲音"
 }

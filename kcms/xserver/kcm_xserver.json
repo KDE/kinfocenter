@@ -49,7 +49,6 @@
         "Description[tr]": "X Sunucusu Bilgisi",
         "Description[uk]": "Інформація щодо сервера X",
         "Description[vi]": "Thông tin về máy chủ X",
-        "Description[x-test]": "xxX-Server informationxx",
         "Description[zh_CN]": "X 服务器信息",
         "Description[zh_TW]": "X 伺服器資訊",
         "Icon": "xorg",
@@ -143,7 +142,6 @@
         "Name[uz]": "X-Server",
         "Name[vi]": "Máy chủ X",
         "Name[wa]": "Sierveu X",
-        "Name[x-test]": "xxX-Serverxx",
         "Name[xh]": "Umncedisi we-X",
         "Name[zh_CN]": "X 服务器",
         "Name[zh_TW]": "X 伺服器"
@@ -201,7 +199,6 @@
     "X-KDE-Keywords[tr]": "x, x sunucusu,x-server,xserver,xfree86,ekran,görüntü,video kartı,sistem bilgisi",
     "X-KDE-Keywords[uk]": "X,X-Server,XServer,XFree86,Display,VideoCard,System Information,сервер,графічний,графічний сервер,дисплей,відео,відеокартка,система,інформація,відомості",
     "X-KDE-Keywords[vi]": "X,X-Server,XServer,XFree86,Display,VideoCard,System Information,Máy chủ X,Hiển thị,Bo mạch đồ hoạ,Thông tin hệ thống",
-    "X-KDE-Keywords[x-test]": "xxXxx,xxX-Serverxx,xxXServerxx,xxXFree86xx,xxDisplayxx,xxVideoCardxx,xxSystem Informationxx",
     "X-KDE-Keywords[zh_CN]": "X,X-Server,XServer,XFree86,Display,VideoCard,System Information,X fuwuqi,xianshi,xianshiqi,xianka,GPU,xitongxinxi,X 服务器,显示,显示器,显卡,GPU,系统信息",
     "X-KDE-Keywords[zh_TW]": "X,X-Server,XServer,XFree86,Display,VideoCard,System Information"
 }

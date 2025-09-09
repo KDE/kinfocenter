@@ -48,7 +48,6 @@
         "Description[tr]": "Wayland Bileşikleştiricisi Bilgisi",
         "Description[uk]": "Відомості щодо засобу композиції Wayland",
         "Description[vi]": "Thông tin về Trình kết hợp Wayland",
-        "Description[x-test]": "xxInformation about the Wayland Compositorxx",
         "Description[zh_CN]": "关于 Wayland 显示特效合成器的信息。",
         "Description[zh_TW]": "關於 Wayland 合成器的資訊",
         "Icon": "wayland",
@@ -104,7 +103,6 @@
         "Name[tr]": "Wayland",
         "Name[uk]": "Wayland",
         "Name[vi]": "Wayland",
-        "Name[x-test]": "xxWaylandxx",
         "Name[zh_CN]": "Wayland",
         "Name[zh_TW]": "Wayland"
     },
@@ -156,7 +154,6 @@
     "X-KDE-Keywords[tr]": "wayland,bileşikleştirici,bileştirici,görüntü,ekran,sistem bilgisi",
     "X-KDE-Keywords[uk]": "Wayland,Compositor,Display,System Information,композиція,засіб,дисплей,монітор,відомості щодо системи",
     "X-KDE-Keywords[vi]": "Wayland,Compositor,Display,System Information,Trình kết hợp,Hiển thị,Thông tin hệ thống",
-    "X-KDE-Keywords[x-test]": "xxWaylandxx,xxCompositorxx,xxDisplayxx,xxSystem Informationxx",
     "X-KDE-Keywords[zh_CN]": "Wayland,Compositor,Display,System Information,xianshitexiaohunheqi,texiao,hunheqi,xianshi,xianshiqi,xitongxinxi,显示特效混合器,特效,混合器,显示,显示器,系统信息",
     "X-KDE-Keywords[zh_TW]": "Wayland,Compositor,Display,System Information",
     "X-KDE-OnlyShowOnQtPlatforms": [
