@@ -43,7 +43,6 @@
         "Description[tr]": "OpenCL API'si Bilgisi",
         "Description[uk]": "Інформація щодо програмного інтерфейсу OpenCL",
         "Description[vi]": "Thông tin về API OpenCL",
-        "Description[x-test]": "xxOpenCL API informationxx",
         "Description[zh_CN]": "OpenCL API 信息",
         "Description[zh_TW]": "OpenCL API 資訊",
         "Icon": "video-display",
@@ -88,7 +87,6 @@
         "Name[tr]": "OpenCL",
         "Name[uk]": "OpenCL",
         "Name[vi]": "OpenCL",
-        "Name[x-test]": "xxOpenCLxx",
         "Name[zh_CN]": "OpenCL",
         "Name[zh_TW]": "OpenCL"
     },
@@ -127,7 +125,6 @@
     "X-KDE-Keywords[sv]": "OpenCL,Videokort,Maskinvaruacceleration,Grafik",
     "X-KDE-Keywords[tr]": "opencl,video kartı,donanım hızlandırması, donanım ivmelendirmesi,grafik",
     "X-KDE-Keywords[uk]": "OpenCL,VideoCard,Hardware Acceleration,Graphics,відеокартка,апаратне прискорення,графіка",
-    "X-KDE-Keywords[x-test]": "xxOpenCLxx,xxVideoCardxx,xxHardware Accelerationxx,xxGraphicsxx",
     "X-KDE-Keywords[zh_CN]": "OpenCL,VideoCard,Hardware Acceleration,Graphics,xianka,xianshika,yingjianjiasu,tuxing,GPU,显卡,显示卡,硬件加速,图形",
     "X-KDE-Keywords[zh_TW]": "硬體加速,顯示卡,圖形"
 }
