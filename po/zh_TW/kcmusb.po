@@ -7,21 +7,21 @@
 # Jeff Huang <s8321414@gmail.com>, 2016.
 # Franklin Weng <franklin at goodhorse dot idv dot tw>, 2007.
 # Frank Weng (a.k.a. Franklin) <franklin at goodhorse dot idv dot tw>, 2008.
-# Kisaragi Hiu <mail@kisaragi-hiu.com>, 2022.
+# SPDX-FileCopyrightText: 2022, 2025 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-09-03 00:18+0000\n"
-"PO-Revision-Date: 2022-12-26 03:15+0900\n"
+"PO-Revision-Date: 2025-09-22 06:34+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
-"Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
+"Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 25.07.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -79,7 +79,7 @@ msgstr "內容安全性"
 #, kde-format
 msgctxt "USB device class"
 msgid "Diagnostic"
-msgstr ""
+msgstr "診斷"
 
 #: classes.i18n:10 usbdevices.cpp:82
 #, kde-format
@@ -160,11 +160,10 @@ msgid "ATM Networking"
 msgstr "ATM 網路"
 
 #: classes.i18n:23
-#, fuzzy, kde-format
-#| msgid "Abstract (modem)"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Abstract (modem)"
-msgstr "數據型(數據機)"
+msgstr "抽象（數據機）"
 
 #: classes.i18n:24
 #, kde-format
@@ -203,22 +202,19 @@ msgid "Device Management"
 msgstr "裝置管理"
 
 #: classes.i18n:30
-#, fuzzy, kde-format
-#| msgid "Direct Line"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Direct Line"
-msgstr "連接線"
+msgstr "專線"
 
 #: classes.i18n:31
-#, fuzzy, kde-format
-#| msgid "Ethernet Networking"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Ethernet Emulation"
 msgstr "乙太網路模擬"
 
 #: classes.i18n:32
-#, fuzzy, kde-format
-#| msgid "Ethernet Networking"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Ethernet Networking"
 msgstr "乙太網路連線"
@@ -242,15 +238,13 @@ msgid "MIDI Streaming"
 msgstr "MIDI 串流"
 
 #: classes.i18n:36
-#, fuzzy, kde-format
-#| msgid "Direct Line"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Mobile Direct Line"
-msgstr "連接線"
+msgstr "行動專線"
 
 #: classes.i18n:37
-#, fuzzy, kde-format
-#| msgid "Multi-Channel"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Multi-Channel"
 msgstr "多頻道"
@@ -283,7 +277,7 @@ msgstr "QIC-157"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "RBC (typically Flash)"
-msgstr ""
+msgstr "RBC（通常是隨身碟）"
 
 #: classes.i18n:43
 #, kde-format
@@ -295,7 +289,7 @@ msgstr "廣播頻率"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Reprogrammable Diagnostics"
-msgstr ""
+msgstr "可再程式化診斷"
 
 #: classes.i18n:45
 #, kde-format
@@ -319,7 +313,7 @@ msgstr "SFF-8070i"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Still Image Capture"
-msgstr ""
+msgstr "靜態影像擷取"
 
 #: classes.i18n:49
 #, kde-format
@@ -337,13 +331,13 @@ msgstr "電話"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Test and Measurement"
-msgstr ""
+msgstr "測試與測量"
 
 #: classes.i18n:52
 #, kde-format
 msgctxt "USB device subclass"
 msgid "USB3 Vision"
-msgstr ""
+msgstr "USB3 視覺"
 
 #: classes.i18n:53
 #, kde-format
@@ -385,13 +379,13 @@ msgstr "影像串流"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Wireless Handset Control"
-msgstr ""
+msgstr "無線電話控制"
 
 #: classes.i18n:60
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Wireless USB Wire Adapter"
-msgstr ""
+msgstr "無線 USB 線路配接器"
 
 #: kcmusb.cpp:28
 #, kde-format
