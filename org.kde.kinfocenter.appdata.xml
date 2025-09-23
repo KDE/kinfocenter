@@ -95,6 +95,7 @@
   <summary xml:lang="uk">Централізований та зручний огляд усіх даних щодо системи</summary>
   <summary xml:lang="vi">Phần tổng quan tập trung và tiện lợi về thông tin hệ thống</summary>
   <summary xml:lang="zh-CN">系统信息的一站式简易概览</summary>
+  <summary xml:lang="zh-TW">集中且方便的系統資訊總覽</summary>
   <description>
     <p>The Info Center provides you with a centralized and convenient
      overview of your system and desktop environment.</p>
@@ -139,6 +140,7 @@
     <p xml:lang="uk">«Центр інформації» надає вам змогу переглядати централізовано і зручно параметри вашої системи та стільничного середовища.</p>
     <p xml:lang="vi">Trung tâm thông tin cung cấp cho bạn một phần tổng quan tập trung và tiện lợi về hệ thống và môi trường bàn làm việc của bạn.</p>
     <p xml:lang="zh-CN">信息中心为您提供了一个集中和便于操作的系统和桌面环境信息概览。</p>
+    <p xml:lang="zh-TW">資訊中心提供您一個集中且方便使用的系統與桌面環境資訊總覽。</p>
     <p>The information center is made up of multiple modules.  Each module is a
      separate application, but the information center organizes all of these
      programs into a convenient location.</p>
