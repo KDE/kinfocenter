@@ -120,5 +120,6 @@
     "X-KDE-Keywords[sl]": "cpe,amd,intel,arm,instrukcije,jedra,arhitektura,vrstni red",
     "X-KDE-Keywords[sv]": "processor,amd,intel,arm,instruktioner,kärnor,arkitektur,byteordning",
     "X-KDE-Keywords[uk]": "cpu,amd,intel,arm,instructions,cores,architecture,byte order,процесор,амд,інтел,арм,інструкції,ядра,архітектура,порядок байтів",
-    "X-KDE-Keywords[vi]": "cpu,amd,intel,arm,instructions,cores,architecture,byte order,lệnh,lõi,kiến trúc,thứ tự byte"
+    "X-KDE-Keywords[vi]": "cpu,amd,intel,arm,instructions,cores,architecture,byte order,lệnh,lõi,kiến trúc,thứ tự byte",
+    "X-KDE-Keywords[zh_TW]": "指令集,架構,位元順序"
 }
