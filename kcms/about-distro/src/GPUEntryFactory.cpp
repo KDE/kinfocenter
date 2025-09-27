@@ -177,14 +177,8 @@ bool devicesAddUpAfterStripping(std::vector<GPUEntry::Device> &devices, bool fin
         return true;
     }
 
-    if (devices.size() != drmDeviceCount()) {
-        stripLlvmpipe(devices);
-        if (devices.size() != drmDeviceCount()) {
-            return false;
-        }
-    }
-
-    return true;
+    stripLlvmpipe(devices);
+    return devices.size() == drmDeviceCount();
 }
 
 std::optional<std::vector<GPUEntry::Device>> vulkanGPUs()
@@ -192,7 +186,7 @@ std::optional<std::vector<GPUEntry::Device>> vulkanGPUs()
     auto devices = vulkanDevices();
 
     if (!devicesAddUpAfterStripping(devices, false)) {
-        qWarning() << "GPU count mismatch (from vulkan). Are you maybe missing vulkan drivers?" << devices.size() << drmDeviceCount();
+        qWarning() << "GPU count mismatch (from vulkan). Missing vulkan drivers or no hardware support?" << devices.size() << drmDeviceCount();
         return {};
     }
 
