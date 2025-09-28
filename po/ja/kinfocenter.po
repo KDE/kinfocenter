@@ -1,10 +1,11 @@
+# SPDX-FileCopyrightText: 2025 Yuma Kakei <yumasansansan@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-29 00:42+0000\n"
-"PO-Revision-Date: 2023-12-03 22:51-0800\n"
-"Last-Translator: Japanese KDE translation team <kde-jp@kde.org>\n"
+"PO-Revision-Date: 2025-09-24 14:44+0900\n"
+"Last-Translator: Yuma Kakei <yumasansansan@gmail.com>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -13,12 +14,13 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
+"X-Generator: Lokalize 25.08.1\n"
 
 #: CommandOutputContext.cpp:127 CommandOutputContext.cpp:149
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Could not load page content"
-msgstr ""
+msgstr "ページの内容を読み込めませんでした"
 
 #: CommandOutputContext.cpp:129
 #, kde-kuit-format
@@ -28,6 +30,10 @@ msgid ""
 "this page, but could not be found. You may be able to install it using your "
 "package manager; either way, please report this packaging issue to %2."
 msgstr ""
+"技術的な詳細: このページを表示するには <command>%1</command> ツールが必要です"
+"が、見つかりませんでした。パッケージマネージャを使用してインストールできる可"
+"能性があります。いずれにせよ、このパッケージングの問題を %2 に報告してくださ"
+"い。"
 
 #: CommandOutputContext.cpp:150
 #, kde-kuit-format
@@ -36,62 +42,64 @@ msgid ""
 "Technical details: the <command>%1</command> tool crashed while generating "
 "page content."
 msgstr ""
+"技術的な詳細: ページの内容を生成中に、<command>%1</command> ツールがクラッ"
+"シュしました。"
 
 #: qml/CommandOutputKCM.qml:105
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
-msgstr ""
+msgstr "フィルタに一致するテキストはありません"
 
 #: qml/CommandOutputKCM.qml:110
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
-msgstr ""
+msgstr "データはありません"
 
 #: qml/CommandOutputKCM.qml:123
 #, kde-format
 msgid "Report to %1"
-msgstr ""
+msgstr "%1 に報告する"
 
 #: qml/CommandOutputKCM.qml:189
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
-msgstr ""
+msgstr "フィルタ…"
 
 #: qml/CommandOutputKCM.qml:191
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"
-msgstr ""
+msgstr "フィルタ"
 
 #: qml/CommandOutputKCM.qml:203
 #, kde-format
 msgctxt "@action:button close filter header"
 msgid "Close"
-msgstr ""
+msgstr "閉じる"
 
 #: qml/CommandOutputKCM.qml:228
 #, kde-format
 msgctxt "@action:button pauses automatic refreshing"
 msgid "Pause Refreshing"
-msgstr ""
+msgstr "ページの更新を一時停止"
 
 #: qml/CommandOutputKCM.qml:236
 #, kde-format
 msgctxt "@action:button resumes automatic refreshing"
 msgid "Resume Refreshing"
-msgstr ""
+msgstr "ページの更新を再開"
 
 #: qml/CommandOutputKCM.qml:243
 #, kde-format
 msgctxt "@action:button copies all displayed text"
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "クリップボードにコピー"
 
 #: qml/CommandOutputKCM.qml:251
 #, kde-format
 msgctxt "@action:button opens filter bar"
 msgid "Filter"
-msgstr ""
+msgstr "フィルタ"
