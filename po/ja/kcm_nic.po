@@ -1,4 +1,5 @@
 # Translation of kcmnic into Japanese.
+# SPDX-FileCopyrightText: 2025 Yuma Kakei <yumasansansan@gmail.com>
 # This file is distributed under the same license as the kdebase package.
 # Taiki Komoda <kom@kde.gr.jp>, 2004.
 # Fumiaki Okushi <fumiaki@okushi.com>, 2006.
@@ -8,14 +9,14 @@ msgstr ""
 "Project-Id-Version: kcmnic\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-07 02:38+0000\n"
-"PO-Revision-Date: 2007-06-24 23:00+0900\n"
-"Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
+"PO-Revision-Date: 2025-09-24 15:11+0900\n"
+"Last-Translator: Yuma Kakei <yumasansansan@gmail.com>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.1\n"
+"X-Generator: Lokalize 25.08.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -23,38 +24,33 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Noboru Sinohara"
+msgstr "Noboru Sinohara,Yuma Kakei"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "shinobo@leo.bekkoame.ne.jp"
+msgstr "shinobo@leo.bekkoame.ne.jp,yumasansansan@gmail.com"
 
 #: networkmodel.cpp:161
-#, fuzzy, kde-format
-#| msgid "Point to Point"
+#, kde-format
 msgctxt "@item:intable Network type"
 msgid "Point to Point"
 msgstr "ポイント to ポイント"
 
 #: networkmodel.cpp:168
-#, fuzzy, kde-format
-#| msgctxt "@item:intext Mode of network card"
-#| msgid "Broadcast"
+#, kde-format
 msgctxt "@item:intable Network type"
 msgid "Broadcast"
 msgstr "ブロードキャスト"
 
 #: networkmodel.cpp:175
-#, fuzzy, kde-format
-#| msgid "Multicast"
+#, kde-format
 msgctxt "@item:intable Network type"
 msgid "Multicast"
 msgstr "マルチキャスト"
 
 #: networkmodel.cpp:182
-#, fuzzy, kde-format
-#| msgid "Loopback"
+#, kde-format
 msgctxt "@item:intable Network type"
 msgid "Loopback"
 msgstr "ループバック"
@@ -62,25 +58,22 @@ msgstr "ループバック"
 #: nic.cpp:21
 #, kde-format
 msgid "kcm_nic"
-msgstr ""
+msgstr "kcm_nic"
 
 #: nic.cpp:22
-#, fuzzy, kde-format
-#| msgid "Network Mask"
+#, kde-format
 msgctxt "@title:window"
 msgid "Network Interfaces"
-msgstr "ネットワークマスク"
+msgstr "ネットワークインターフェース"
 
 #: nic.cpp:26
-#, fuzzy, kde-format
-#| msgid "(c) 2001 - 2002 Alexander Neundorf"
+#, kde-format
 msgctxt "@info"
 msgid "(c) 2001 - 2002 Alexander Neundorf"
 msgstr "(c) 2001 - 2002 Alexander Neundorf"
 
 #: nic.cpp:28
-#, fuzzy, kde-format
-#| msgid "Alexander Neundorf"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Alexander Neundorf"
 msgstr "Alexander Neundorf"
@@ -89,66 +82,60 @@ msgstr "Alexander Neundorf"
 #, kde-format
 msgctxt "@info:credit"
 msgid "creator"
-msgstr ""
+msgstr "作者"
 
 #: nic.cpp:29
 #, kde-format
 msgctxt "@info:credit"
 msgid "Carl Schwan"
-msgstr ""
+msgstr "Carl Schwan"
 
 #: nic.cpp:29
 #, kde-format
 msgctxt "@info:credit"
 msgid "developer"
-msgstr ""
+msgstr "開発者"
 
 #: package/contents/ui/main.qml:15
-#, fuzzy, kde-format
-#| msgid "Network Mask"
+#, kde-format
 msgid "Network Interfaces"
-msgstr "ネットワークマスク"
+msgstr "ネットワークインターフェース"
 
 #: package/contents/ui/main.qml:30
-#, fuzzy, kde-format
-#| msgid "Name"
+#, kde-format
 msgctxt "@label"
 msgid "Name:"
-msgstr "名前"
+msgstr "名前:"
 
 #: package/contents/ui/main.qml:34
-#, fuzzy, kde-format
-#| msgid "IP Address"
+#, kde-format
 msgctxt "@label"
 msgid "Address:"
-msgstr "IP アドレス"
+msgstr "アドレス:"
 
 #: package/contents/ui/main.qml:38
-#, fuzzy, kde-format
-#| msgid "Network Mask"
+#, kde-format
 msgctxt "@label"
 msgid "Network Mask:"
-msgstr "ネットワークマスク"
+msgstr "ネットワークマスク:"
 
 #: package/contents/ui/main.qml:42
-#, fuzzy, kde-format
-#| msgid "Type"
+#, kde-format
 msgctxt "@label"
 msgid "Type:"
-msgstr "タイプ"
+msgstr "タイプ:"
 
 #: package/contents/ui/main.qml:46
 #, kde-format
 msgctxt "@label"
 msgid "Hardware Address:"
-msgstr ""
+msgstr "ハードウェアアドレス:"
 
 #: package/contents/ui/main.qml:51
-#, fuzzy, kde-format
-#| msgid "State"
+#, kde-format
 msgctxt "@label"
 msgid "State:"
-msgstr "状態"
+msgstr "状態:"
 
 #: package/contents/ui/main.qml:59
 #, kde-format
@@ -166,4 +153,4 @@ msgstr "切断中"
 #, kde-format
 msgctxt "@action:button"
 msgid "Refresh"
-msgstr ""
+msgstr "更新"

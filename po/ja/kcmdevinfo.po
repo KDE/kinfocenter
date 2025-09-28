@@ -1,3 +1,4 @@
+# SPDX-FileCopyrightText: 2025 Yuma Kakei <yumasansansan@gmail.com>
 # Taiki Komoda <kom@kde.gr.jp>, 2010.
 # Fumiaki Okushi <fumiaki.okushi@gmail.com>, 2010, 2015.
 msgid ""
@@ -5,8 +6,8 @@ msgstr ""
 "Project-Id-Version: kcm_devinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-16 00:48+0000\n"
-"PO-Revision-Date: 2015-05-22 22:15-0700\n"
-"Last-Translator: Fumiaki Okushi <fumiaki.okushi@gmail.com>\n"
+"PO-Revision-Date: 2025-09-24 15:33+0900\n"
+"Last-Translator: Yuma Kakei <yumasansansan@gmail.com>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -15,17 +16,17 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 25.08.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Taiki Komoda"
+msgstr "Taiki Komoda,Yuma Kakei"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "kom@kde.gr.jp"
+msgstr "kom@kde.gr.jp,yumasansansan@gmail.com"
 
 #: devicelisting.cpp:41
 #, kde-format
@@ -76,10 +77,9 @@ msgid "kcmdevinfo"
 msgstr "kcmdevinfo"
 
 #: devinfo.cpp:28
-#, fuzzy, kde-format
-#| msgid "KDE Solid Based Device Viewer"
+#, kde-format
 msgid "Device Viewer"
-msgstr "KDE Solid ベースのデバイスビューア"
+msgstr "デバイスビューア"
 
 #: devinfo.cpp:28
 #, kde-format
@@ -120,7 +120,7 @@ msgstr ""
 #: infopanel.cpp:119
 #, kde-format
 msgid "Description: "
-msgstr ""
+msgstr "説明:"
 
 #: infopanel.cpp:121
 #, kde-format
@@ -191,28 +191,24 @@ msgid "Intel SSE3"
 msgstr "Intel SSE3"
 
 #: soldevicetypes.cpp:88
-#, fuzzy, kde-format
-#| msgid "Intel SSE3"
+#, kde-format
 msgid "Intel SSSE3"
-msgstr "Intel SSE3"
+msgstr "Intel SSSE3"
 
 #: soldevicetypes.cpp:91
-#, fuzzy, kde-format
-#| msgid "Intel SSE4"
+#, kde-format
 msgid "Intel SSE4.1"
-msgstr "Intel SSE4"
+msgstr "Intel SSE4.1"
 
 #: soldevicetypes.cpp:94
-#, fuzzy, kde-format
-#| msgid "Intel SSE4"
+#, kde-format
 msgid "Intel SSE4.2"
-msgstr "Intel SSE4"
+msgstr "Intel SSE4.2"
 
 #: soldevicetypes.cpp:97
-#, fuzzy, kde-format
-#| msgid "AMD 3DNow"
+#, kde-format
 msgid "AMD 3DNow!"
-msgstr "AMD 3DNow"
+msgstr "AMD 3DNow!"
 
 #: soldevicetypes.cpp:100
 #, kde-format
@@ -412,12 +408,12 @@ msgstr "ボリュームスペース: "
 #, kde-format
 msgctxt "Available space out of total partition size (percent used)"
 msgid "%1 free of %2 (%3% used)"
-msgstr ""
+msgstr "%1 / %2 (%3% 使用済み)"
 
 #: soldevicetypes.cpp:303
 #, kde-format
 msgid "No data available"
-msgstr ""
+msgstr "データはありません"
 
 #: soldevicetypes.cpp:330
 #, kde-format
@@ -482,19 +478,19 @@ msgstr "カメラ"
 #: soldevicetypes.cpp:451
 #, kde-format
 msgid "Phone"
-msgstr ""
+msgstr "電話"
 
 #: soldevicetypes.cpp:454
 #, kde-format
 msgctxt "Screen"
 msgid "Monitor"
-msgstr ""
+msgstr "モニター"
 
 #: soldevicetypes.cpp:457
 #, kde-format
 msgctxt "Wireless game pad or joystick battery"
 msgid "Gaming Input"
-msgstr ""
+msgstr "ゲーミング入力デバイス"
 
 #: soldevicetypes.cpp:460
 #, kde-format
@@ -533,7 +529,6 @@ msgid "Charge Status: "
 msgstr "充電状態: "
 
 #: soldevicetypes.cpp:478
-#, fuzzy, kde-format
-#| msgid "Charge Status: "
+#, kde-format
 msgid "Charge Percent: "
-msgstr "充電状態: "
+msgstr "充電率: "
