@@ -174,7 +174,6 @@
     "X-KDE-Keywords[pa]": "PCI,PCI-ਡਿਵਾਈਸ,PCI-ਜੰਤਰ,PCI-ਬੱਸ,ਸਿਸਟਮ ਜਾਣਕਾਰੀ",
     "X-KDE-Keywords[pl]": "PCI,Urządzenia-PCI,Szyna-PCI,Dane o systemie",
     "X-KDE-Keywords[pt_BR]": "PCI,Dispositivos PCI,Barramento PCI,Informação do sistema",
-    "X-KDE-Keywords[ro]": "PCI,dispozitive PCI,PCI-Bus,informații sistem",
     "X-KDE-Keywords[ru]": "PCI,PCI-Devices,PCI-Bus,System Information,шина PCI, PCI устройства,сведения о системе",
     "X-KDE-Keywords[sk]": "PCI,PCI zariadenia,PCI zbernice,Systémové informácie",
     "X-KDE-Keywords[sl]": "PCI,naprave PCI,vodilo PCI,sistemski podatki,podatki o sistemu",
