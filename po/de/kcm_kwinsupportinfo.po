@@ -1,9 +1,7 @@
 # German translations for kinfocenter package.
 # Copyright (C) 2022 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
-# Frederik Schwarzer <schwarzer@kde.org>, 2022, 2023.
-#
-# Automatically generated, 2022.
+# SPDX-FileCopyrightText: 2022, 2023 Frederik Schwarzer <schwarzer@kde.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm_kwinsupportinfo\n"

@@ -1,7 +1,6 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
-# Frederik Schwarzer <schwarzer@kde.org>, 2022.
-#
+# SPDX-FileCopyrightText: 2022 Frederik Schwarzer <schwarzer@kde.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm_firmware_security\n"
