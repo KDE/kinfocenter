@@ -1,6 +1,6 @@
 # SPDX-FileCopyrightText: 2023, 2024 Johannes Obermayr <johannesobermayr@gmx.de>
-# Burkhard Lück <lueck@hube-lueck.de>, 2015, 2016, 2018, 2019.
-# Frederik Schwarzer <schwarzer@kde.org>, 2015, 2020, 2022, 2023.
+# SPDX-FileCopyrightText: 2015, 2016, 2018, 2019 Burkhard Lück <lueck@hube-lueck.de>
+# SPDX-FileCopyrightText: 2015, 2020, 2022, 2023 Frederik Schwarzer <schwarzer@kde.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
