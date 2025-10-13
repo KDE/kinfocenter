@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-01 00:43+0000\n"
-"PO-Revision-Date: 2024-04-24 00:59+0300\n"
+"PO-Revision-Date: 2025-10-12 22:07+0300\n"
 "Last-Translator: Moo <<>>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.6\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -38,11 +38,10 @@ msgid "Unknown Type"
 msgstr "Nežinomas tipas"
 
 #: GPUEntry.cpp:17
-#, fuzzy, kde-format
-#| msgid "Graphics Processor:"
+#, kde-format
 msgctxt "@label %1 is the GPU index number"
 msgid "Graphics Processor %1:"
-msgstr "Grafikos procesorius:"
+msgstr "Grafikos procesorius %1:"
 
 #: GPUEntry.cpp:18
 #, kde-format
@@ -59,13 +58,13 @@ msgstr ""
 #, kde-format
 msgctxt "@label GPU type"
 msgid "discrete"
-msgstr ""
+msgstr "atskiras"
 
 #: GPUEntry.cpp:32
 #, kde-format
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
-msgstr ""
+msgstr "virtualus"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
@@ -140,29 +139,23 @@ msgctxt ""
 "@label, %1 is the total amount of installed system memory, %2 is the amount "
 "of which is usable, both expressed as 7.7 GiB"
 msgid "%1 of RAM (%2 usable)"
-msgstr ""
+msgstr "%1 operatyviosios atminties (RAM) (naudojamosios %2)"
 
 #: MemoryEntry.cpp:119
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt ""
 "@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
 msgstr "%1 operatyviosios atminties (RAM)"
 
 #: MemoryEntry.cpp:126
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
-msgstr "%1 operatyviosios atminties (RAM)"
+msgstr "%1 naudojamosios operatyviosios atminties (RAM)"
 
 #: MemoryEntry.cpp:132
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
 msgstr "Nežinoma"
@@ -174,6 +167,8 @@ msgid ""
 "Some memory is reserved for use by the kernel or system hardware such as "
 "integrated graphics memory."
 msgstr ""
+"Dalis atminties yra rezervuota branduoliui ar sistemos aparatinei įrangai, "
+"pavyzdžiui, integruotai grafikos atminčiai."
 
 #: MemoryEntry.cpp:148
 #, kde-format
@@ -183,6 +178,9 @@ msgid ""
 "some memory is reserved for use by the kernel or system hardware, such as "
 "integrated graphics memory."
 msgstr ""
+"Naudojamosios atminties kiekis gali būti mažesnis nei įrengtos atminties "
+"kiekis, nes dalis atminties yra rezervuota branduoliui ar sistemos "
+"aparatinei įrangai, pavyzdžiui, integruotai grafikos atminčiai."
 
 #: MemoryEntry.cpp:157
 #, kde-format
@@ -192,6 +190,9 @@ msgid ""
 "because some memory is reserved for use by the kernel or system hardware, "
 "such as integrated graphics memory."
 msgstr ""
+"Rodomas atminties kiekis gali būti mažesnis nei įrengtos atminties kiekis, "
+"nes dalis atminties yra rezervuota branduoliui ar sistemos aparatinei "
+"įrangai, pavyzdžiui, integruotai grafikos atminčiai."
 
 #: OSVersionEntry.cpp:9
 #, kde-format
@@ -254,20 +255,16 @@ msgid "Hardware"
 msgstr "Aparatinė įranga"
 
 #: ui/main.qml:218
-#, fuzzy, kde-format
-#| msgctxt "@info:tooltip"
-#| msgid "Launch %1"
+#, kde-format
 msgctxt "@action:button"
 msgid "Launch %1…"
-msgstr "Paleisti %1"
+msgstr "Paleisti %1…"
 
 #: ui/main.qml:219
-#, fuzzy, kde-format
-#| msgctxt "@action:button launches kinfocenter from systemsettings"
-#| msgid "More System Information"
+#, kde-format
 msgctxt "@info:tooltip launches kinfocenter from systemsettings"
 msgid "See more detailed system information"
-msgstr "Daugiau informacijos apie sistemą"
+msgstr "Rodyti daugiau išsamesnės informacijos apie sistemą"
 
 #: ui/main.qml:227 ui/main.qml:235
 #, kde-format
