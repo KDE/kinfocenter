@@ -3,9 +3,9 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Antoni Bella Pérez <antonibella5@yahoo.com>, 2014, 2015, 2021.
-# Josep M. Ferrer <txemaq@gmail.com>, 2016, 2018, 2020, 2022.
-# Empar Montoro Martín <montoro_mde@gva.es>, 2019.
+# SPDX-FileCopyrightText: 2014, 2015, 2021 Antoni Bella Pérez <antonibella5@yahoo.com>
+# SPDX-FileCopyrightText: 2016, 2018, 2020, 2022 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2019 Empar Montoro Martín <montoro_mde@gva.es>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
@@ -25,7 +25,7 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Empar Montoro Martín,Antoni Bella"
+msgstr "SPDX-FileCopyrightText: 2019 Empar Montoro Martín,Antoni Bella"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
@@ -183,7 +183,7 @@ msgstr "Número de sèrie"
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard"
-msgstr "Copia al porta-retalls"
+msgstr "Copia a dins del porta-retalls"
 
 #: package/contents/ui/main.qml:123
 #, kde-format
@@ -213,7 +213,7 @@ msgstr "Mostra més informació"
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard in English"
-msgstr "Copia al porta-retalls en anglés"
+msgstr "Copia a dins del porta-retalls en anglés"
 
 #: PlasmaEntry.cpp:15
 #, kde-format
