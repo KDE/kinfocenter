@@ -16,7 +16,7 @@ public:
     explicit KCMCPU(QObject *parent, const KPluginMetaData &data)
         : KQuickConfigModule(parent, data)
     {
-        m_outputContext = new CommandOutputContext(QStringLiteral("lscpu"), {}, parent);
+        m_outputContext = new CommandOutputContext(QStringLiteral("lscpu"), {QStringLiteral("--hierarchic=always")}, parent);
     }
     CommandOutputContext *outputContext() const
     {
