@@ -5,6 +5,7 @@
 
 #include <KPluginFactory>
 #include <KQuickConfigModule>
+#include <QStandardPaths>
 
 #include <CommandOutputContext.h>
 
@@ -18,7 +19,8 @@ public:
     explicit KCMNetwork(QObject *parent, const KPluginMetaData &data)
         : KQuickConfigModule(parent, data)
     {
-        m_outputContext = new CommandOutputContext(u"ip"_s, {u"address"_s}, parent);
+        const QString executable = QStandardPaths::locate(QStandardPaths::GenericDataLocation, u"kinfocenter/network/ip.sh"_s, QStandardPaths::LocateFile);
+        m_outputContext = new CommandOutputContext({u"ip"_s, u"aha"_s}, u"/bin/sh"_s, {executable}, Qt::TextFormat::RichText, parent);
     }
     CommandOutputContext *outputContext() const
     {
