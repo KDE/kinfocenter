@@ -31,7 +31,7 @@ KAuth::ActionReply DMIDecodeHelper::memoryinformation(const QVariantMap &args)
     Q_UNUSED(args);
 
     KAuth::ActionReply reply;
-    auto result = executeDmidecode({QStringLiteral("--type"), QStringLiteral("17")});
+    auto result = executeDmidecode({QStringLiteral("--type"), QStringLiteral("memory"), QStringLiteral("--quiet")});
 
     if (result.failed()) {
         qWarning() << "DMIDecodeHelper: Unable to get memory information";
