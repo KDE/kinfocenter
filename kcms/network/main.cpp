@@ -3,9 +3,12 @@
     SPDX-FileCopyrightText: 2024 Harald Sitter <sitter@kde.org>
 */
 
+#include <QGuiApplication>
+#include <QStandardPaths>
+#include <QStyleHints>
+
 #include <KPluginFactory>
 #include <KQuickConfigModule>
-#include <QStandardPaths>
 
 #include <CommandOutputContext.h>
 
@@ -20,7 +23,8 @@ public:
         : KQuickConfigModule(parent, data)
     {
         const QString executable = QStandardPaths::locate(QStandardPaths::GenericDataLocation, u"kinfocenter/network/ip.sh"_s, QStandardPaths::LocateFile);
-        m_outputContext = new CommandOutputContext({u"ip"_s, u"aha"_s}, u"/bin/sh"_s, {executable}, Qt::TextFormat::RichText, parent);
+        const QString darkness = QGuiApplication::styleHints()->colorScheme() == Qt::ColorScheme::Dark ? u"1"_s : u"0"_s;
+        m_outputContext = new CommandOutputContext({u"ip"_s, u"aha"_s}, u"/bin/sh"_s, {executable, darkness}, Qt::TextFormat::RichText, parent);
     }
     CommandOutputContext *outputContext() const
     {
