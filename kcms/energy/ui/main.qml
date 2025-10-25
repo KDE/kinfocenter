@@ -307,7 +307,7 @@ KCM.SimpleKCM {
             contentItem: Graph {
                 id: graph
 
-                points: history.points
+                points: history.points // TODO : add this model (qvariant list of QpointF(x:time,y: value to the XYSeries)
                 xDuration: timespanCombo.duration
 
                 yLabel: root.historyType == HistoryModel.RateType ? root.format_unit(i18nc("Watt", "W"), 0) : root.format_percentage

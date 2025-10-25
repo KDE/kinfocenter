@@ -7,6 +7,7 @@
  */
 
 import QtQuick
+import QtGraphs
 import org.kde.kirigami as Kirigami
 
 /**
@@ -18,6 +19,69 @@ import org.kde.kirigami as Kirigami
  * It is designed to look identical to those in ksysguard.
  */
 
+// - [ ] TODO : get the color scheme from user ?
+GraphsView {
+    id: graph
+
+
+// - [ ] TODO : keep the animation behavior when duration change
+    Behavior on xDuration {
+        NumberAnimation {
+            duration: Kirigami.Units.longDuration
+            easing.type: Easing.OutQuad
+        }
+    }
+
+
+    // - [ ] TODO : react to palette change event
+    // - [ ] TODO : react to availability change event
+
+
+    anchors.fill: parent
+    theme: GraphsTheme {
+        colorScheme: GraphsTheme.ColorScheme.Dark
+        seriesColors: ["#E0D080", "#B0A060"]
+        borderColors: ["#807040", "#706030"]
+        grid.mainColor: "#ccccff"
+        grid.subColor: "#eeeeff"
+        axisY.mainColor: "#ccccff"
+        axisY.subColor: "#eeeeff"
+    }
+    axisX: BarCategoryAxis {
+        categories: ["2023", "2024", "2025"]
+        lineVisible: true
+    }
+    axisY: ValueAxis {
+        min: 0
+        max: 10
+        subTickCount: 4
+    }
+    AreaSeries {
+        name: "wassup"
+        borderColor: "#ff0000"
+        color: Qt.rgba(0, 0.3, 0.7, 0.6)
+        upperSeries: LineSeries {
+            id: history
+            XYPoint {
+                x: 0.62; y: 3
+            }
+            XYPoint {
+                x: 1.1; y: 2
+            }
+            XYPoint {
+                x: 2; y: 2.5
+            }
+            XYPoint {
+                x: 2.5; y: 1
+            }
+        }
+
+
+    }
+}
+/**/
+
+/*
 Canvas
 {
     id: canvas
@@ -265,3 +329,4 @@ Canvas
         c.stroke()
     }
 }
+*/
