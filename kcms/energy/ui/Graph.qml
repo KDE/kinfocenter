@@ -22,9 +22,32 @@ import org.kde.kirigami as Kirigami
 // - [ ] TODO : get the color scheme from user ?
 GraphsView {
     id: graph
+    anchors.fill: parent
 
+    property var yLabel: (value => value)  // A formatter function
 
-// - [ ] TODO : keep the animation behavior when duration change
+    readonly property int yMin: 0
+    property int yMax: 100
+    // property int yStep: 20
+    property int xDuration: 3600
+    property list<point> points: [
+        Qt.point(aXe.min.getTime(), 30),
+        Qt.point(aXe.min.getTime() + (2000 * 1000), 20),
+        Qt.point(aXe.min.getTime() + (3000 * 1000), 10),
+        Qt.point(aXe.min.getTime() + (3600 * 1000), 25)
+    ]
+
+    function hoverHandler(value: point) {
+        const date = new Date(aXe.min.getTime() + value.x)
+        console.log("hovering at " +  Qt.locale().toString(date,Locale.ShortFormat) + " " + value.y + "W")
+    }
+    // onPointsChanged: {
+    //     canvas.requestPaint(); // ??
+    // }
+    // onXDurationChanged: {
+    //     canvas.requestPaint(); // ??
+    // }
+    // - [ ] TODO : keep the animation behavior when duration change
     Behavior on xDuration {
         NumberAnimation {
             duration: Kirigami.Units.longDuration
@@ -32,14 +55,11 @@ GraphsView {
         }
     }
 
-
     // - [ ] TODO : react to palette change event
     // - [ ] TODO : react to availability change event
 
-
-    anchors.fill: parent
     theme: GraphsTheme {
-        colorScheme: GraphsTheme.ColorScheme.Dark
+        colorScheme: GraphsTheme.ColorScheme.Light
         seriesColors: ["#E0D080", "#B0A060"]
         borderColors: ["#807040", "#706030"]
         grid.mainColor: "#ccccff"
@@ -47,37 +67,34 @@ GraphsView {
         axisY.mainColor: "#ccccff"
         axisY.subColor: "#eeeeff"
     }
-    axisX: BarCategoryAxis {
-        categories: ["2023", "2024", "2025"]
-        lineVisible: true
+    axisX: DateTimeAxis {
+        id: aXe
+        min: new Date(Date.now() - (graph.xDuration * 1000)) // here we have to pass a date object
+        max: new Date(Date.now())
+
+        // subTickCount: 5 // TODO
+        // TODO : datetime if > one day,time otherwise. Qt.locale().timeFormat(Locale.ShortFormat)
+        labelFormat: Qt.locale().dateTimeFormat(Locale.ShortFormat)
     }
     axisY: ValueAxis {
-        min: 0
-        max: 10
-        subTickCount: 4
+        id: aYe
+        min: graph.yMin
+        max: graph.yMax
+        labelFormat: "%.0f W"
     }
     AreaSeries {
-        name: "wassup"
-        borderColor: "#ff0000"
+        hoverable: true
+        name: "areaGraph"
+        borderColor: "#5555ca"
         color: Qt.rgba(0, 0.3, 0.7, 0.6)
         upperSeries: LineSeries {
             id: history
-            XYPoint {
-                x: 0.62; y: 3
-            }
-            XYPoint {
-                x: 1.1; y: 2
-            }
-            XYPoint {
-                x: 2; y: 2.5
-            }
-            XYPoint {
-                x: 2.5; y: 1
+            Component.onCompleted: {
+                history.append(graph.points)
             }
         }
-
-
     }
+    onHover: (_,_,val) => hoverHandler(val)
 }
 /**/
 
