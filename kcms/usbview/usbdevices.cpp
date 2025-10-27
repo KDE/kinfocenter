@@ -63,7 +63,7 @@ static QString prettyLibusbClassName(int class_code)
 {
     switch (class_code) {
     case LIBUSB_CLASS_PER_INTERFACE:
-        return i18nc("USB device class", "(Defined at Interface level)");
+        return i18nc("USB device class", "Defined at Interface Level");
     case LIBUSB_CLASS_AUDIO:
         return i18nc("USB device class", "Audio");
     case LIBUSB_CLASS_COMM:
@@ -226,7 +226,19 @@ QString USBDevice::dump()
     if (!_serial.isEmpty())
         r += i18n("<b>Serial #:</b> ") + _serial + QStringLiteral("<br/>");
 
-    r += QLatin1String("<br/><table>");
+    r += QLatin1String("<table>");
+
+    QString v = QStringLiteral("%1").arg(_vendorID, 4, 16, QLatin1Char('0'));
+    QString name = _db->vendor(_vendorID);
+    if (!name.isEmpty())
+        v += QStringLiteral("<td>(") + name + QStringLiteral(")</td>");
+    r += i18n("<tr><td><i>Vendor ID</i></td><td>0x%1</td></tr>", v);
+    QString p = QStringLiteral("%1").arg(_prodID, 4, 16, QLatin1Char('0'));
+    QString pname = _db->device(_vendorID, _prodID);
+    if (!pname.isEmpty())
+        p += QStringLiteral("<td>(") + pname + QStringLiteral(")</td>");
+    r += i18n("<tr><td><i>Product ID</i></td><td>0x%1</td></tr>", p);
+    r += QLatin1String("<tr><td></td></tr>");
 
     QString c = QStringLiteral("<td>%1</td>").arg(_class);
     QString cname = prettyLibusbClassName(_class);
@@ -249,18 +261,6 @@ QString USBDevice::dump()
         pr += QStringLiteral("<td>(") + prname + QStringLiteral(")</td>");
     r += i18n("<tr><td><i>Protocol</i></td>%1</tr>", pr);
     r += ki18n("<tr><td><i>USB Version</i></td><td>%1.%2</td></tr>").subs(_verMajor).subs(_verMinor, 2, 10, QChar::fromLatin1('0')).toString();
-    r += QLatin1String("<tr><td></td></tr>");
-
-    QString v = QStringLiteral("%1").arg(_vendorID, 4, 16, QLatin1Char('0'));
-    QString name = _db->vendor(_vendorID);
-    if (!name.isEmpty())
-        v += QStringLiteral("<td>(") + name + QStringLiteral(")</td>");
-    r += i18n("<tr><td><i>Vendor ID</i></td><td>0x%1</td></tr>", v);
-    QString p = QStringLiteral("%1").arg(_prodID, 4, 16, QLatin1Char('0'));
-    QString pname = _db->device(_vendorID, _prodID);
-    if (!pname.isEmpty())
-        p += QStringLiteral("<td>(") + pname + QStringLiteral(")</td>");
-    r += i18n("<tr><td><i>Product ID</i></td><td>0x%1</td></tr>", p);
     r += QLatin1String("<tr><td></td></tr>");
 
     r += i18n("<tr><td><i>Speed</i></td><td>%1 Mbit/s</td></tr>", _speed);
