@@ -105,6 +105,17 @@
     },
     "X-KDE-KInfoCenter-Category": "basic_information",
     "X-KDE-Keywords": "about,info,information,distribution,distro,system,kernel,qt,kde,version,winver",
+    "X-KDE-Keywords[ar]": "information,distribution,distro,system,kernel,qt,kde,معلومات,توزيعة,نظام,نواة,كيوت,كِيدِي,حول,winver",
+    "X-KDE-Keywords[ca@valencia]": "quant,info,informació,distribució,distro,sistema,nucli,qt,kde,versió,winver",
+    "X-KDE-Keywords[ca]": "quant,info,informació,distribució,distro,sistema,nucli,qt,kde,versió,winver",
+    "X-KDE-Keywords[es]": "acerca de,info,información,distribución,distro,sistema,kernel,qt,kde,versión,winver",
+    "X-KDE-Keywords[he]": "about,information,distribution,distro,system,kernel,qt,kde,מידע,הפצה,מערכת,ליבה,פלזמה,אודות,על אודות,winver,גרסה,גירסה,גרסת מערכת,גירסת מערכת",
+    "X-KDE-Keywords[ka]": "about,info,information,distribution,distro,system,kernel,qt,kde,version,შესახებ,ვერსია,ინფორმაცია,დისტრიბუტივი,სისტემა,ბირთვი",
+    "X-KDE-Keywords[nl]": "info over,info,informatie,distro,distributie,systeem,kernel,qt,kde,versie,winver",
+    "X-KDE-Keywords[pt_BR]": "sobre,info,informações,distribuição,sistema,kernel,qt,kde,versão,winver",
+    "X-KDE-Keywords[sl]": "o,info,informacije,distribucija,distro,sistem,jedro,qt,kde,različica,winver",
+    "X-KDE-Keywords[tr]": "hakkında,bilgi,dağıtım,distro,sistem,kernel,çekirdek,qt,kde,sürüm,versiyon,winver",
+    "X-KDE-Keywords[uk]": "information,distribution,distro,system,kernel,qt,kde,version,winver,інформація,дистрибутив,дистро,система,ядро,процесор,комп’ютер,інфо,версія,вінверсія",
     "X-KDE-System-Settings-Parent-Category": "system-administration",
     "X-KDE-Weight": 0
 }
