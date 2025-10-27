@@ -96,5 +96,6 @@
         "Name[zh_TW]": "視窗管理員"
     },
     "TryExec": "@QtBinariesDir@/qdbus",
-    "X-KDE-KInfoCenter-Category": "graphical_information"
+    "X-KDE-KInfoCenter-Category": "graphical_information",
+    "X-KDE-Keywords": "dxdiag"
 }
