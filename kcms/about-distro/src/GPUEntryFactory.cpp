@@ -14,8 +14,6 @@
 #include <QOpenGLFunctions>
 #include <QProcess>
 #include <QStandardPaths>
-#include <QVulkanFunctions>
-#include <QVulkanInstance>
 
 #include <KLibexec>
 #include <KLocalizedString>
