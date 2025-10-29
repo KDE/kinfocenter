@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-05 02:14+0000\n"
+"POT-Creation-Date: 2025-10-29 00:45+0000\n"
 "PO-Revision-Date: 2009-01-02 11:47+0530\n"
 "Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
 "Language-Team: Oriya <oriya-it@googlegroups.com>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "\n"
 "\n"
 
-#: classes.i18n:2 usbdevices.cpp:66
+#: classes.i18n:2
 #, kde-format
 msgctxt "USB device class"
 msgid "(Defined at Interface level)"
@@ -379,6 +379,12 @@ msgstr ""
 msgid "Device"
 msgstr ""
 
+#: usbdevices.cpp:66
+#, kde-format
+msgctxt "USB device class"
+msgid "Defined at Interface Level"
+msgstr ""
+
 #: usbdevices.cpp:92
 #, kde-format
 msgctxt "USB device class"
@@ -400,34 +406,34 @@ msgstr ""
 msgid "<b>Serial #:</b> "
 msgstr ""
 
-#: usbdevices.cpp:240
-#, kde-format
-msgid "<tr><td><i>Class</i></td>%1</tr>"
-msgstr ""
-
-#: usbdevices.cpp:245
-#, kde-format
-msgid "<tr><td><i>Subclass</i></td>%1</tr>"
-msgstr ""
-
-#: usbdevices.cpp:250
-#, kde-format
-msgid "<tr><td><i>Protocol</i></td>%1</tr>"
-msgstr ""
-
-#: usbdevices.cpp:251
-#, kde-format
-msgid "<tr><td><i>USB Version</i></td><td>%1.%2</td></tr>"
-msgstr ""
-
-#: usbdevices.cpp:258
+#: usbdevices.cpp:235
 #, kde-format
 msgid "<tr><td><i>Vendor ID</i></td><td>0x%1</td></tr>"
 msgstr ""
 
-#: usbdevices.cpp:263
+#: usbdevices.cpp:240
 #, kde-format
 msgid "<tr><td><i>Product ID</i></td><td>0x%1</td></tr>"
+msgstr ""
+
+#: usbdevices.cpp:252
+#, kde-format
+msgid "<tr><td><i>Class</i></td>%1</tr>"
+msgstr ""
+
+#: usbdevices.cpp:257
+#, kde-format
+msgid "<tr><td><i>Subclass</i></td>%1</tr>"
+msgstr ""
+
+#: usbdevices.cpp:262
+#, kde-format
+msgid "<tr><td><i>Protocol</i></td>%1</tr>"
+msgstr ""
+
+#: usbdevices.cpp:263
+#, kde-format
+msgid "<tr><td><i>USB Version</i></td><td>%1.%2</td></tr>"
 msgstr ""
 
 #: usbdevices.cpp:266

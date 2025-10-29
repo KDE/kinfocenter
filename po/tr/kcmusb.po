@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-05 02:14+0000\n"
+"POT-Creation-Date: 2025-10-29 00:45+0000\n"
 "PO-Revision-Date: 2023-11-29 16:30+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Lokalize 23.11.70\n"
 
-#: classes.i18n:2 usbdevices.cpp:66
+#: classes.i18n:2
 #, kde-format
 msgctxt "USB device class"
 msgid "(Defined at Interface level)"
@@ -379,6 +379,14 @@ msgstr "Kablosuz USB Kablosu Bağdaştırıcısı"
 msgid "Device"
 msgstr "Aygıt"
 
+#: usbdevices.cpp:66
+#, fuzzy, kde-format
+#| msgctxt "USB device class"
+#| msgid "(Defined at Interface level)"
+msgctxt "USB device class"
+msgid "Defined at Interface Level"
+msgstr "(Arayüz düzeyinde tanımlı)"
+
 #: usbdevices.cpp:92
 #, kde-format
 msgctxt "USB device class"
@@ -400,35 +408,35 @@ msgstr "<b>Üretici:</b> "
 msgid "<b>Serial #:</b> "
 msgstr "<b>Seri numarası:</b> "
 
-#: usbdevices.cpp:240
-#, kde-format
-msgid "<tr><td><i>Class</i></td>%1</tr>"
-msgstr "<tr><td><i>Sınıf</i></td>%1</tr>"
-
-#: usbdevices.cpp:245
-#, kde-format
-msgid "<tr><td><i>Subclass</i></td>%1</tr>"
-msgstr "<tr><td><i>Alt Sınıf</i></td>%1</tr>"
-
-#: usbdevices.cpp:250
-#, kde-format
-msgid "<tr><td><i>Protocol</i></td>%1</tr>"
-msgstr "<tr><td><i>Protokol</i></td>%1</tr>"
-
-#: usbdevices.cpp:251
-#, kde-format
-msgid "<tr><td><i>USB Version</i></td><td>%1.%2</td></tr>"
-msgstr "<tr><td><i>USB Sürümü</i></td><td>%1.%2</td></tr>"
-
-#: usbdevices.cpp:258
+#: usbdevices.cpp:235
 #, kde-format
 msgid "<tr><td><i>Vendor ID</i></td><td>0x%1</td></tr>"
 msgstr "<tr><td><i>Satıcı Kimliği</i></td><td>0x%1</td></tr>"
 
-#: usbdevices.cpp:263
+#: usbdevices.cpp:240
 #, kde-format
 msgid "<tr><td><i>Product ID</i></td><td>0x%1</td></tr>"
 msgstr "<tr><td><i>Ürün Kimliği</i></td><td>0x%1</td></tr>"
+
+#: usbdevices.cpp:252
+#, kde-format
+msgid "<tr><td><i>Class</i></td>%1</tr>"
+msgstr "<tr><td><i>Sınıf</i></td>%1</tr>"
+
+#: usbdevices.cpp:257
+#, kde-format
+msgid "<tr><td><i>Subclass</i></td>%1</tr>"
+msgstr "<tr><td><i>Alt Sınıf</i></td>%1</tr>"
+
+#: usbdevices.cpp:262
+#, kde-format
+msgid "<tr><td><i>Protocol</i></td>%1</tr>"
+msgstr "<tr><td><i>Protokol</i></td>%1</tr>"
+
+#: usbdevices.cpp:263
+#, kde-format
+msgid "<tr><td><i>USB Version</i></td><td>%1.%2</td></tr>"
+msgstr "<tr><td><i>USB Sürümü</i></td><td>%1.%2</td></tr>"
 
 #: usbdevices.cpp:266
 #, kde-format

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-05 02:14+0000\n"
+"POT-Creation-Date: 2025-10-29 00:45+0000\n"
 "PO-Revision-Date: 2021-09-09 16:20+0200\n"
 "Last-Translator: Phu Hung Nguyen <phu.nguyen@kdemail.net>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 20.12.2\n"
 
-#: classes.i18n:2 usbdevices.cpp:66
+#: classes.i18n:2
 #, kde-format
 msgctxt "USB device class"
 msgid "(Defined at Interface level)"
@@ -378,6 +378,14 @@ msgstr "Bộ điều hợp dây USB không dây"
 msgid "Device"
 msgstr "Thiết bị"
 
+#: usbdevices.cpp:66
+#, fuzzy, kde-format
+#| msgctxt "USB device class"
+#| msgid "(Defined at Interface level)"
+msgctxt "USB device class"
+msgid "Defined at Interface Level"
+msgstr "(Được xác định ở mức \"Giao diện\")"
+
 #: usbdevices.cpp:92
 #, kde-format
 msgctxt "USB device class"
@@ -399,35 +407,35 @@ msgstr "<b>Nhà sản xuất:</b>"
 msgid "<b>Serial #:</b> "
 msgstr "<b>Số loạt #:</b> "
 
-#: usbdevices.cpp:240
-#, kde-format
-msgid "<tr><td><i>Class</i></td>%1</tr>"
-msgstr "<tr><td><i>Lớp</i></td>%1</tr>"
-
-#: usbdevices.cpp:245
-#, kde-format
-msgid "<tr><td><i>Subclass</i></td>%1</tr>"
-msgstr "<tr><td><i>Lớp con</i></td>%1</tr>"
-
-#: usbdevices.cpp:250
-#, kde-format
-msgid "<tr><td><i>Protocol</i></td>%1</tr>"
-msgstr "<tr><td><i>Giao thức</i></td>%1</tr>"
-
-#: usbdevices.cpp:251
-#, kde-format
-msgid "<tr><td><i>USB Version</i></td><td>%1.%2</td></tr>"
-msgstr "<tr><td><i>Phiên bản USB</i></td><td>%1.%2</td></tr>"
-
-#: usbdevices.cpp:258
+#: usbdevices.cpp:235
 #, kde-format
 msgid "<tr><td><i>Vendor ID</i></td><td>0x%1</td></tr>"
 msgstr "<tr><td><i>Mã nhà cung cấp</i></td><td>0x%1</td></tr>"
 
-#: usbdevices.cpp:263
+#: usbdevices.cpp:240
 #, kde-format
 msgid "<tr><td><i>Product ID</i></td><td>0x%1</td></tr>"
 msgstr "<tr><td><i>Mã sản phẩm</i></td><td>0x%1</td></tr>"
+
+#: usbdevices.cpp:252
+#, kde-format
+msgid "<tr><td><i>Class</i></td>%1</tr>"
+msgstr "<tr><td><i>Lớp</i></td>%1</tr>"
+
+#: usbdevices.cpp:257
+#, kde-format
+msgid "<tr><td><i>Subclass</i></td>%1</tr>"
+msgstr "<tr><td><i>Lớp con</i></td>%1</tr>"
+
+#: usbdevices.cpp:262
+#, kde-format
+msgid "<tr><td><i>Protocol</i></td>%1</tr>"
+msgstr "<tr><td><i>Giao thức</i></td>%1</tr>"
+
+#: usbdevices.cpp:263
+#, kde-format
+msgid "<tr><td><i>USB Version</i></td><td>%1.%2</td></tr>"
+msgstr "<tr><td><i>Phiên bản USB</i></td><td>%1.%2</td></tr>"
 
 #: usbdevices.cpp:266
 #, kde-format

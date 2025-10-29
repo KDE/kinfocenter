@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-05 02:14+0000\n"
+"POT-Creation-Date: 2025-10-29 00:45+0000\n"
 "PO-Revision-Date: 2022-08-10 23:03+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: Arabic <kde-l10n-ar@kde.org>\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 
-#: classes.i18n:2 usbdevices.cpp:66
+#: classes.i18n:2
 #, kde-format
 msgctxt "USB device class"
 msgid "(Defined at Interface level)"
@@ -381,6 +381,14 @@ msgstr "محول سلك USB لاسلكي"
 msgid "Device"
 msgstr "الجهاز"
 
+#: usbdevices.cpp:66
+#, fuzzy, kde-format
+#| msgctxt "USB device class"
+#| msgid "(Defined at Interface level)"
+msgctxt "USB device class"
+msgid "Defined at Interface Level"
+msgstr "(معرف في مستوى الواجهة)"
+
 #: usbdevices.cpp:92
 #, kde-format
 msgctxt "USB device class"
@@ -402,35 +410,35 @@ msgstr "<b>المصنّع:</b>"
 msgid "<b>Serial #:</b> "
 msgstr "<b>الرقم التسلسلي:</b>"
 
-#: usbdevices.cpp:240
-#, kde-format
-msgid "<tr><td><i>Class</i></td>%1</tr>"
-msgstr "<tr><td><i>الصنف</i></td>%1</tr>"
-
-#: usbdevices.cpp:245
-#, kde-format
-msgid "<tr><td><i>Subclass</i></td>%1</tr>"
-msgstr "<tr><td><i>الصنف الفرعي</i></td>%1</tr>"
-
-#: usbdevices.cpp:250
-#, kde-format
-msgid "<tr><td><i>Protocol</i></td>%1</tr>"
-msgstr "<tr><td><i>البروتوكول</i></td>%1</tr>"
-
-#: usbdevices.cpp:251
-#, kde-format
-msgid "<tr><td><i>USB Version</i></td><td>%1.%2</td></tr>"
-msgstr "<tr><td><i>إصدار USB</i></td><td>%1.%2</td></tr>"
-
-#: usbdevices.cpp:258
+#: usbdevices.cpp:235
 #, kde-format
 msgid "<tr><td><i>Vendor ID</i></td><td>0x%1</td></tr>"
 msgstr "<tr><td><i>رقم تعريف المصنّع</i></td><td>0x%1</td></tr>"
 
-#: usbdevices.cpp:263
+#: usbdevices.cpp:240
 #, kde-format
 msgid "<tr><td><i>Product ID</i></td><td>0x%1</td></tr>"
 msgstr "<tr><td><i>رقم تعريف المنتج</i></td><td>0x%1</td></tr>"
+
+#: usbdevices.cpp:252
+#, kde-format
+msgid "<tr><td><i>Class</i></td>%1</tr>"
+msgstr "<tr><td><i>الصنف</i></td>%1</tr>"
+
+#: usbdevices.cpp:257
+#, kde-format
+msgid "<tr><td><i>Subclass</i></td>%1</tr>"
+msgstr "<tr><td><i>الصنف الفرعي</i></td>%1</tr>"
+
+#: usbdevices.cpp:262
+#, kde-format
+msgid "<tr><td><i>Protocol</i></td>%1</tr>"
+msgstr "<tr><td><i>البروتوكول</i></td>%1</tr>"
+
+#: usbdevices.cpp:263
+#, kde-format
+msgid "<tr><td><i>USB Version</i></td><td>%1.%2</td></tr>"
+msgstr "<tr><td><i>إصدار USB</i></td><td>%1.%2</td></tr>"
 
 #: usbdevices.cpp:266
 #, kde-format
