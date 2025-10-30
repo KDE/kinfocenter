@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-10-29 00:45+0000\n"
-"PO-Revision-Date: 2022-07-23 18:28+0200\n"
+"PO-Revision-Date: 2025-10-29 04:07+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.8\n"
 
 #: classes.i18n:2
 #, kde-format
@@ -378,12 +378,10 @@ msgid "Device"
 msgstr "მოწყობილობა"
 
 #: usbdevices.cpp:66
-#, fuzzy, kde-format
-#| msgctxt "USB device class"
-#| msgid "(Defined at Interface level)"
+#, kde-format
 msgctxt "USB device class"
 msgid "Defined at Interface Level"
-msgstr "(აღწერილია ინტერფეისის დონეზე)"
+msgstr "აღწერილია ინტერფეისის დონეზე"
 
 #: usbdevices.cpp:92
 #, kde-format

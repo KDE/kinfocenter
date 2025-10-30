@@ -2,14 +2,14 @@
 # Copyright (C) 2005, 2007, 2008 Free Software Foundation, Inc.
 # Andrea Rizzi <rizzi@kde.org>, 2005.
 # Andrea Rizzi <rizzi@sns.it>, 2007.
-# Vincenzo Reale <smart2128vr@gmail.com>, 2021.
+# SPDX-FileCopyrightText: 2021, 2025 Vincenzo Reale <smart2128vr@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-10-29 00:45+0000\n"
-"PO-Revision-Date: 2021-04-26 20:08+0200\n"
+"PO-Revision-Date: 2025-10-29 14:10+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 21.04.0\n"
+"X-Generator: Lokalize 25.08.2\n"
 
 #: classes.i18n:2
 #, kde-format
@@ -379,12 +379,10 @@ msgid "Device"
 msgstr "Dispositivo"
 
 #: usbdevices.cpp:66
-#, fuzzy, kde-format
-#| msgctxt "USB device class"
-#| msgid "(Defined at Interface level)"
+#, kde-format
 msgctxt "USB device class"
 msgid "Defined at Interface Level"
-msgstr "(Definito a livello di interfaccia)"
+msgstr "Definito a livello di interfaccia"
 
 #: usbdevices.cpp:92
 #, kde-format
