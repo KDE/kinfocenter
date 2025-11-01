@@ -13,10 +13,9 @@
 #include <QQmlParserStatus>
 
 struct HistoryReply {
-public:
-    uint time = 0;
+    quint32 time = 0;
     double value = 0.0;
-    uint charging = 0;
+    quint32 charging = 0;
 };
 
 Q_DECLARE_METATYPE(HistoryReply)

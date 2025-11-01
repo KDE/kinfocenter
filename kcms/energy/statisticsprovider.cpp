@@ -92,7 +92,8 @@ QVariantList StatisticsProvider::asPoints() const
     QVariantList points;
     points.reserve(m_values.count());
     for (const HistoryReply &h : std::as_const(m_values)) {
-        points.append(QPointF(h.time, h.value));
+        // in QML, point has two "real" attributes x and y defined as double-precision floats
+        points.append(QPointF(static_cast<qreal>(h.time) * 1000, h.value));
     }
 
     if (!points.isEmpty()) {

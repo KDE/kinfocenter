@@ -28,25 +28,16 @@ GraphsView {
 
     readonly property int yMin: 0
     property int yMax: 100
-    // property int yStep: 20
+    property int yStep: 20
     property int xDuration: 3600
-    property list<point> points: [
-        Qt.point(aXe.min.getTime(), 30),
-        Qt.point(aXe.min.getTime() + (2000 * 1000), 20),
-        Qt.point(aXe.min.getTime() + (3000 * 1000), 10),
-        Qt.point(aXe.min.getTime() + (3600 * 1000), 25)
-    ]
+    property list<point> points
 
     function hoverHandler(value: point) {
+        if (value.y < 0 || value.y > yMax) return;
         const date = new Date(aXe.min.getTime() + value.x)
-        console.log("hovering at " +  Qt.locale().toString(date,Locale.ShortFormat) + " " + value.y + "W")
+        console.log("hovering at " + Qt.locale().toString(date, Locale.ShortFormat) + " " + value.y + "%")
     }
-    // onPointsChanged: {
-    //     canvas.requestPaint(); // ??
-    // }
-    // onXDurationChanged: {
-    //     canvas.requestPaint(); // ??
-    // }
+
     // - [ ] TODO : keep the animation behavior when duration change
     Behavior on xDuration {
         NumberAnimation {
@@ -80,21 +71,21 @@ GraphsView {
         id: aYe
         min: graph.yMin
         max: graph.yMax
-        labelFormat: "%.0f W"
+        labelFormat: graph.yMax === 100 ? "%.0f %%" : "%.0f W" // TODO : localize
     }
     AreaSeries {
         hoverable: true
         name: "areaGraph"
-        borderColor: "#5555ca"
-        color: Qt.rgba(0, 0.3, 0.7, 0.6)
+        borderColor: "#000000"
+        color: Qt.rgba(0, 0.3, 0.3, 0.6)
         upperSeries: LineSeries {
-            id: history
-            Component.onCompleted: {
-                history.append(graph.points)
-            }
+            id: uSerie
         }
     }
-    onHover: (_,_,val) => hoverHandler(val)
+    onPointsChanged: {
+        uSerie.replace(graph.points)
+    }
+    onHover: (_, _, val) => hoverHandler(val)
 }
 /**/
 
