@@ -97,5 +97,13 @@
     },
     "TryExec": "@QtBinariesDir@/qdbus",
     "X-KDE-KInfoCenter-Category": "graphical_information",
-    "X-KDE-Keywords": "dxdiag"
+    "X-KDE-Keywords": "dxdiag",
+    "X-KDE-Keywords[ca]": "dxdiag",
+    "X-KDE-Keywords[he]": "dxdiag",
+    "X-KDE-Keywords[it]": "dxdiag",
+    "X-KDE-Keywords[ka]": "dxdiag",
+    "X-KDE-Keywords[pt_BR]": "dxdiag",
+    "X-KDE-Keywords[sl]": "dxdiag",
+    "X-KDE-Keywords[tr]": "dxdiag",
+    "X-KDE-Keywords[uk]": "dxdiag"
 }

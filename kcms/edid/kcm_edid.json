@@ -76,5 +76,13 @@
     },
     "TryExec": "di-edid-decode",
     "X-KDE-KInfoCenter-Category": "graphical_information",
-    "X-KDE-Keywords": "EDID,Graphics,dxdiag"
+    "X-KDE-Keywords": "EDID,Graphics,dxdiag",
+    "X-KDE-Keywords[ca]": "EDID,Gràfics,dxdiag",
+    "X-KDE-Keywords[he]": "EDID,גרפיקה,dxdiag",
+    "X-KDE-Keywords[it]": "EDID,grafica,dxdiag",
+    "X-KDE-Keywords[ka]": "EDID,Graphics;გრაფიკა,dxdiag",
+    "X-KDE-Keywords[pt_BR]": "EDID,gráficos,dxdiag",
+    "X-KDE-Keywords[sl]": "EDID,Grafika,dxdiag",
+    "X-KDE-Keywords[tr]": "EDID,grafikler,grafik,dxdiag",
+    "X-KDE-Keywords[uk]": "EDID,Graphics,едід,графіка,dxdiag"
 }
