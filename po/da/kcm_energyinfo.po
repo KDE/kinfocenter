@@ -2,21 +2,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Martin Schlander <mschlander@opensuse.org>, 2015, 2016, 2020.
-# SPDX-FileCopyrightText: 2024 rasmus rosendahl-kaa <rasmus@rosendahl-kaa.name>
+# SPDX-FileCopyrightText: 2024, 2025 rasmus rosendahl-kaa <rasmus@rosendahl-kaa.name>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-18 00:44+0000\n"
-"PO-Revision-Date: 2024-10-30 11:46+0100\n"
-"Last-Translator: rasmus rosendahl-kaa <rasmus@rosendahl-kaa.name>\n"
+"PO-Revision-Date: 2025-10-31 23:26+0100\n"
+"Last-Translator: Rasmus Rosendahl-Kaa <rasmus@rosendahl-kaa.name>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.08.2\n"
+"X-Generator: Lokalize 25.08.2\n"
 
 #: ui/main.qml:31
 #, kde-format
@@ -44,10 +44,9 @@ msgid "Health"
 msgstr "Sundhedstilstand"
 
 #: ui/main.qml:37
-#, fuzzy, kde-format
-#| msgid "Charge state"
+#, kde-format
 msgid "Charge Cycles"
-msgstr "Opladningstilstand"
+msgstr "Opladningscyklusser"
 
 #: ui/main.qml:38
 #, kde-format
@@ -135,16 +134,14 @@ msgid "°C"
 msgstr "°C"
 
 #: ui/main.qml:70
-#, fuzzy, kde-format
-#| msgid "Yes"
+#, kde-format
 msgctxt ""
 "@info:label The battery has a certain capability, such as `Rechargable:`"
 msgid "Yes"
 msgstr "Ja"
 
 #: ui/main.qml:71
-#, fuzzy, kde-format
-#| msgid "No"
+#, kde-format
 msgctxt ""
 "@info:label The battery doesn't have a certain capability, such as "
 "`Rechargable:`"
@@ -317,12 +314,10 @@ msgid "%1%"
 msgstr "%1%"
 
 #: ui/main.qml:314
-#, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "No energy information available on this system"
+#, kde-format
 msgctxt "@info:status"
 msgid "No history information for this time span"
-msgstr "Ingen energiinformation tilgængeligt på dette system"
+msgstr "Ingen historik over informationen for denne tidsperiode"
 
 #: ui/main.qml:324
 #, kde-format
