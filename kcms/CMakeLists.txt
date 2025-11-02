@@ -22,7 +22,7 @@ add_subdirectory(sensors)
 add_subdirectory( samba )
 
 find_package(USB1 MODULE)
-set_package_properties(USB1 PROPERTIES DESCRIPTION "library that provides generic access to USB devicess"
+set_package_properties(USB1 PROPERTIES DESCRIPTION "library that provides generic access to USB devices"
                        URL "https://libusb.info/"
                        TYPE OPTIONAL
                        PURPOSE "View USB devices in kinfocenter"

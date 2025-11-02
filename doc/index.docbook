@@ -754,7 +754,7 @@ hardware independent interface for 3D graphics.</para>
 
 <para><acronym>GLX</acronym> is the binding for OpenGL to X Window system.</para>
 
-<para> <acronym>DRI</acronym> (Direct Rendering Infrastucture) provides hardware acceleration for OpenGL.
+<para> <acronym>DRI</acronym> (Direct Rendering Infrastructure) provides hardware acceleration for OpenGL.
 You must have a videocard with 3D accelerator and properly installed driver for this.</para>
 <para> </para>
 

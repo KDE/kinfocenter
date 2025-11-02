@@ -67,8 +67,8 @@ KCM.SimpleKCM {
 
     function format_yesno(value) {
         return value
-            ? i18nc("@info:label The battery has a certain capability, such as `Rechargable:`", "Yes")
-            : i18nc("@info:label The battery doesn't have a certain capability, such as `Rechargable:`", "No");
+            ? i18nc("@info:label The battery has a certain capability, such as `Rechargeable:`", "Yes")
+            : i18nc("@info:label The battery doesn't have a certain capability, such as `Rechargeable:`", "No");
     }
 
     function format_percentage(value) {

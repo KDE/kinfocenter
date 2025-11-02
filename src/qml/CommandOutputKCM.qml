@@ -211,7 +211,7 @@ KCM.SimpleKCM {
         }
 
         // This is a bit flimsy but we want to switch the content of the KCM around, based on the data state.
-        // We could switch around visiblity but a Loader seems neater over all.
+        // We could switch around visibility but a Loader seems neater over all.
         Loader {
             id: contentLoader
             Layout.fillWidth: true
