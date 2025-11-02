@@ -24,7 +24,7 @@ GraphsView {
     id: graph
     anchors.fill: parent
 
-    property var yLabel: (value => value)  // A formatter function
+    property string yLabel: graph.yMax === 100 ? " %%" : " W"
 
     readonly property int yMin: 0
     property int yMax: 100
@@ -51,13 +51,20 @@ GraphsView {
 
     theme: GraphsTheme {
         colorScheme: GraphsTheme.ColorScheme.Light
+        backgroundColor: "white"
         seriesColors: ["#E0D080", "#B0A060"]
         borderColors: ["#807040", "#706030"]
-        grid.mainColor: "#ccccff"
-        grid.subColor: "#eeeeff"
-        axisY.mainColor: "#ccccff"
-        axisY.subColor: "#eeeeff"
+        grid.mainColor: "#d3d3d6"
+        grid.subColor: "#dfdfdf"
+        axisY.mainColor: "#d3d3d6"
+        axisY.subColor: "#dfdfdf"
     }
+
+    marginTop:Kirigami.Units.smallSpacing
+    marginBottom:Kirigami.Units.smallSpacing
+    marginLeft:Kirigami.Units.smallSpacing
+    marginRight:Kirigami.Units.smallSpacing
+
     axisX: DateTimeAxis {
         id: aXe
         min: new Date(Date.now() - (graph.xDuration * 1000)) // here we have to pass a date object
@@ -65,13 +72,17 @@ GraphsView {
 
         // subTickCount: 5 // TODO
         // TODO : datetime if > one day,time otherwise. Qt.locale().timeFormat(Locale.ShortFormat)
-        labelFormat: Qt.locale().dateTimeFormat(Locale.ShortFormat)
+        labelFormat: graph.xDuration >= 3600 * 24 ? Qt.locale().dateTimeFormat(Locale.ShortFormat)
+            : Qt.locale().timeFormat(Locale.ShortFormat)
+        /* const xTickDateStr = xTickDateTime.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
+                const xTickTimeStr = xTickDateTime.toLocaleTimeString(Qt.locale(), Locale.ShortFormat)
+*/
     }
     axisY: ValueAxis {
         id: aYe
         min: graph.yMin
         max: graph.yMax
-        labelFormat: graph.yMax === 100 ? "%.0f %%" : "%.0f W" // TODO : localize
+        labelFormat: "%.0f" + graph.yLabel
     }
     AreaSeries {
         hoverable: true

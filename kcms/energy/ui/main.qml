@@ -75,6 +75,10 @@ KCM.SimpleKCM {
         return value >= 0 ? i18nc("%1 is a percentage value", "%1%", value) : "";
     }
 
+    function i18n_percentage_string() {
+        return i18nc("this is a format string, equivalent to '%'", " %%");
+    }
+
     function format_unit(unit, precision) {
         return (value) => {
             const fmtValue = Number(value).toLocaleString(Qt.locale(), "f", precision);
@@ -89,6 +93,10 @@ KCM.SimpleKCM {
         } else {
             return "";
         }
+    }
+
+    function i18n_watt_string() {
+            return i18nc("%1 is the unit", "%1", ("Watt", " W"));
     }
 
     function format_chargeState(value) {
@@ -310,25 +318,25 @@ KCM.SimpleKCM {
                 points: history.points
                 xDuration: timespanCombo.duration
 
-                yLabel: root.historyType == HistoryModel.RateType ? root.format_unit(i18nc("Watt", "W"), 0) : root.format_percentage
+                yLabel: root.historyType === HistoryModel.RateType ? root.i18n_watt_string() : root.i18n_percentage_string()
                 yMax: {
-                    if (root.historyType == HistoryModel.RateType) {
+                    if (root.historyType === HistoryModel.RateType) {
                         // Ceil to next 10
                         return Math.floor(history.largestValue / 10) * 10 + 10;
                     } else {
                         return 100;
                     }
                 }
-                yStep: root.historyType == HistoryModel.RateType ? 10 : 25
+                yStep: root.historyType === HistoryModel.RateType ? 10 : 25
             }
 
             // Reparented to keep the item outside of a layout and the graph canvas
             Kirigami.PlaceholderMessage {
                 parent: graph
                 visible: graph.points.length < 2
-                x: graph.plotCenter.x - width / 2
-                y: graph.plotCenter.y - height / 2
-                width: graph.plot.width - (Kirigami.Units.largeSpacing * 4)
+                x: graph.plotArea.x + graph.plotArea.width / 2 - width / 2
+                y: graph.plotArea.y + graph.plotArea.height / 2 - height / 2
+                width: graph.plotArea.width - (Kirigami.Units.largeSpacing * 4)
                 text: i18nc("@info:status", "No history information for this time span")
             }
 
