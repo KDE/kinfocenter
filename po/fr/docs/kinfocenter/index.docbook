@@ -136,7 +136,7 @@
 >KCM</acronym
 >, cliquez sur le module dans la vue en arbre. Vous pouvez aussi utiliser les touches fléchées pour faire défiler les modules <acronym
 >KCM</acronym
-> et appuyer sur &Entree; pour choisir le module. Ce dernier va maintenant apparaître dans le panneau principal de la fenêtre du &centreInformation;. Certains éléments dans l'arbre sont classés, vous pouvez cliquer ou appuyer sur &Entree; pour développer ou réduire la branche de l'arbre. Cela vous affichera les modules par catégorie. Vous pouvez faire un clic droit sur la liste des modules pour afficher les options suivantes : <itemizedlist>
+> et appuyer sur &Entree; pour choisir le module. Ce dernier va maintenant apparaitre dans le panneau principal de la fenêtre du &centreInformation;. Certains éléments dans l'arbre sont classés, vous pouvez cliquer ou appuyer sur &Entree; pour développer ou réduire la branche de l'arbre. Cela vous affichera les modules par catégorie. Vous pouvez faire un clic droit sur la liste des modules pour afficher les options suivantes : <itemizedlist>
   <listitem
 ><para
 ><guimenuitem
@@ -1022,7 +1022,7 @@
 <para
 >Quand vous ouvrez ce module dans cette section, des informations vous sont proposées. La partie gauche de la fenêtre est organisée sous la forme d'une arborescence. Certains des éléments ont un signe « + » devant. Un clic sur le signe « + » ouvre le <quote
 >sous-menu</quote
-> associé à cette étiquette. Un clic sur le signe « - » en face de l'étiquette fait disparaître le sous-menu.</para>
+> associé à cette étiquette. Un clic sur le signe « - » en face de l'étiquette fait disparaitre le sous-menu.</para>
 
 <para
 >La partie droite de la fenêtre détaille les valeurs de chacun des paramètres sur la gauche.</para>
