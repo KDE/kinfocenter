@@ -104,6 +104,7 @@
     "TryExec": "glxinfo",
     "X-KDE-KInfoCenter-Category": "graphical_information",
     "X-KDE-Keywords": "OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display,dxdiag",
+    "X-KDE-Keywords[ar]": "OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display,بطاقة,dxdiag الرسوميات,تسريع العتاد,الرسوميات",
     "X-KDE-Keywords[ca@valencia]": "OpenGL,DRI,GLX,3D,Targeta de vídeo,Acceleració per maquinari,Gràfics,X,X11,Xserver,Servidor X,XFree86,Pantalla,dxdiag",
     "X-KDE-Keywords[ca]": "OpenGL,DRI,GLX,3D,Targeta de vídeo,Acceleració per maquinari,Gràfics,X,X11,Xserver,Servidor X,XFree86,Pantalla,dxdiag",
     "X-KDE-Keywords[da]": "OpenGL,DRI,GLX,3D,Videokort,grafikkort,Hardwareacceleration,Grafik,X,X11,Xserver,X-Server,XFree86,skærm,dxdiag",

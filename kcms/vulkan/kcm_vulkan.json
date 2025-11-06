@@ -103,6 +103,7 @@
     "TryExec": "vulkaninfo",
     "X-KDE-KInfoCenter-Category": "graphical_information",
     "X-KDE-Keywords": "Vulkan,VideoCard,Hardware Acceleration,Graphics,dxdiag",
+    "X-KDE-Keywords[ar]": "Vulkan,VideoCard,Hardware Acceleration,Graphics,فولكان,بطاقة الفيديو,تسريع الأجهزة,الرسومات,dxdiag",
     "X-KDE-Keywords[ca@valencia]": "Vulkan,Targeta de vídeo,Acceleració per maquinari,Gràfics,dxdiag",
     "X-KDE-Keywords[ca]": "Vulkan,Targeta de vídeo,Acceleració per maquinari,Gràfics,dxdiag",
     "X-KDE-Keywords[da]": "Vulkan,Videokort,grafikkort,Hardwareacceleration,Grafik,dxdiag",

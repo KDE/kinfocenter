@@ -77,6 +77,7 @@
     "TryExec": "di-edid-decode",
     "X-KDE-KInfoCenter-Category": "graphical_information",
     "X-KDE-Keywords": "EDID,Graphics,dxdiag",
+    "X-KDE-Keywords[ar]": "EDID,Graphics,الرسوميات,بيانات تعريف العرض الممتدة,dxdiag",
     "X-KDE-Keywords[ca@valencia]": "EDID,Gràfics,dxdiag",
     "X-KDE-Keywords[ca]": "EDID,Gràfics,dxdiag",
     "X-KDE-Keywords[da]": "EDID,Grafik,dxdiag",

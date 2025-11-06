@@ -98,6 +98,7 @@
     "TryExec": "@QtBinariesDir@/qdbus",
     "X-KDE-KInfoCenter-Category": "graphical_information",
     "X-KDE-Keywords": "dxdiag",
+    "X-KDE-Keywords[ar]": "dxdiag",
     "X-KDE-Keywords[ca@valencia]": "dxdiag",
     "X-KDE-Keywords[ca]": "dxdiag",
     "X-KDE-Keywords[da]": "dxdiag",

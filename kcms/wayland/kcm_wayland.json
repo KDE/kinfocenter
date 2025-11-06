@@ -109,6 +109,7 @@
     "TryExec": "wayland-info",
     "X-KDE-KInfoCenter-Category": "graphical_information",
     "X-KDE-Keywords": "Wayland,Compositor,Display,System Information,dxdiag",
+    "X-KDE-Keywords[ar]": "ويلاند,مراكب,عرض,معلومات النّظام,dxdiag",
     "X-KDE-Keywords[ca@valencia]": "Wayland,Compositor,Pantalla,Informació del sistema,dxdiag",
     "X-KDE-Keywords[ca]": "Wayland,Compositor,Pantalla,Informació del sistema,dxdiag",
     "X-KDE-Keywords[da]": "Wayland,Compositor,Display,System Information,dxdiag",
