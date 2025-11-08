@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-18 00:44+0000\n"
+"POT-Creation-Date: 2025-11-08 00:43+0000\n"
 "PO-Revision-Date: 2025-06-21 10:47+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -133,17 +133,24 @@ msgid "°C"
 msgstr "°C"
 
 #: ui/main.qml:70
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "@info:label The battery has a certain capability, such as `Rechargable:`"
+#| msgid "Yes"
 msgctxt ""
-"@info:label The battery has a certain capability, such as `Rechargable:`"
+"@info:label The battery has a certain capability, such as `Rechargeable:`"
 msgid "Yes"
 msgstr "Да"
 
 #: ui/main.qml:71
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "@info:label The battery doesn't have a certain capability, such as "
+#| "`Rechargable:`"
+#| msgid "No"
 msgctxt ""
 "@info:label The battery doesn't have a certain capability, such as "
-"`Rechargable:`"
+"`Rechargeable:`"
 msgid "No"
 msgstr "Не"
 
