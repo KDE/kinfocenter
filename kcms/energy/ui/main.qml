@@ -330,16 +330,6 @@ KCM.SimpleKCM {
                 yStep: root.historyType === HistoryModel.RateType ? 10 : 25
             }
 
-            // Reparented to keep the item outside of a layout and the graph canvas
-            Kirigami.PlaceholderMessage {
-                parent: graph
-                visible: graph.points.length < 2
-                x: graph.plotArea.x + graph.plotArea.width / 2 - width / 2
-                y: graph.plotArea.y + graph.plotArea.height / 2 - height / 2
-                width: graph.plotArea.width - (Kirigami.Units.largeSpacing * 4)
-                text: i18nc("@info:status", "No history information for this time span")
-            }
-
             footer: GridLayout {
                 columns: !compact ? 5 : 3
 

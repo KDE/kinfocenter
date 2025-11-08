@@ -1,3 +1,5 @@
+
+
 /*
  * SPDX-FileCopyrightText: 2015 David Edmundson <david@davidedmundson.co.uk>
  * SPDX-FileCopyrightText: 2025 Ismael Asensio <isma.af@gmail.com>
@@ -5,100 +7,174 @@
  * SPDX-License-Identifier: LGPL-2.1-or-later
  *
  */
-
 import QtQuick
+import QtQuick.Controls as Controls
+import QtQuick.Layouts
 import QtGraphs
 import org.kde.kirigami as Kirigami
 
+
 /**
+ * Original comment
  * We need to draw a graph, all other libs are not suitable as we are basically
  * a connected scatter plot with non linear X spacing.
  * Currently this is not available in kdeclarative nor kqtquickcharts
  *
  * We only paint once, so canvas is fast enough for our purposes.
  * It is designed to look identical to those in ksysguard.
+ *
+ * QtGraphs version
+ * I think we can do everything we ever wanted now ?
  */
-
-// - [ ] TODO : get the color scheme from user ?
-GraphsView {
-    id: graph
-    anchors.fill: parent
-
-    property string yLabel: graph.yMax === 100 ? " %%" : " W"
+Item {
+    id: graphRoot
+    property string yLabel
 
     readonly property int yMin: 0
     property int yMax: 100
     property int yStep: 20
     property int xDuration: 3600
     property list<point> points
-
-    function hoverHandler(value: point) {
-        if (value.y < 0 || value.y > yMax) return;
-        const date = new Date(aXe.min.getTime() + value.x)
-        console.log("hovering at " + Qt.locale().toString(date, Locale.ShortFormat) + " " + value.y + "%")
-    }
-
-    // - [ ] TODO : keep the animation behavior when duration change
     Behavior on xDuration {
         NumberAnimation {
             duration: Kirigami.Units.longDuration
             easing.type: Easing.OutQuad
         }
     }
+    GraphsView {
+        id: graph
+        anchors.fill: parent
 
-    // - [ ] TODO : react to palette change event
-    // - [ ] TODO : react to availability change event
-
-    theme: GraphsTheme {
-        colorScheme: GraphsTheme.ColorScheme.Light
-        backgroundColor: "white"
-        seriesColors: ["#E0D080", "#B0A060"]
-        borderColors: ["#807040", "#706030"]
-        grid.mainColor: "#d3d3d6"
-        grid.subColor: "#dfdfdf"
-        axisY.mainColor: "#d3d3d6"
-        axisY.subColor: "#dfdfdf"
-    }
-
-    marginTop:Kirigami.Units.smallSpacing
-    marginBottom:Kirigami.Units.smallSpacing
-    marginLeft:Kirigami.Units.smallSpacing
-    marginRight:Kirigami.Units.smallSpacing
-
-    axisX: DateTimeAxis {
-        id: aXe
-        min: new Date(Date.now() - (graph.xDuration * 1000)) // here we have to pass a date object
-        max: new Date(Date.now())
-
-        // subTickCount: 5 // TODO
-        // TODO : datetime if > one day,time otherwise. Qt.locale().timeFormat(Locale.ShortFormat)
-        labelFormat: graph.xDuration >= 3600 * 24 ? Qt.locale().dateTimeFormat(Locale.ShortFormat)
-            : Qt.locale().timeFormat(Locale.ShortFormat)
-        /* const xTickDateStr = xTickDateTime.toLocaleDateString(Qt.locale(), Locale.ShortFormat)
-                const xTickTimeStr = xTickDateTime.toLocaleTimeString(Qt.locale(), Locale.ShortFormat)
-*/
-    }
-    axisY: ValueAxis {
-        id: aYe
-        min: graph.yMin
-        max: graph.yMax
-        labelFormat: "%.0f" + graph.yLabel
-    }
-    AreaSeries {
-        hoverable: true
-        name: "areaGraph"
-        borderColor: "#000000"
-        color: Qt.rgba(0, 0.3, 0.3, 0.6)
-        upperSeries: LineSeries {
-            id: uSerie
+        function hoverHandler(position: point, value: point) {
+            if (value.y < yMin || value.y > yMax)
+                return
+            const date = new Date(aXe.min.getTime() + value.x)
+            coordinateLabel.x = (plotArea.x + position.x)
+            coordinateLabel.y = (position.y - coordinateLabel.height)
+            coordinateLabel.text = Qt.locale().toString(date, Locale.ShortFormat) + ": " + Math.trunc(value.y)
+            //console.log("hovering at " + Qt.locale().toString(date, Locale.ShortFormat) + " " + value.y + "%")
         }
+
+        SystemPalette {
+            id: palette
+            colorGroup: SystemPalette.Active
+
+            onPaletteChanged: {
+            }
+        }
+
+        // - [ ] TODO : react to availability change event
+        theme: GraphsTheme {
+            backgroundColor: palette.light
+            colorScheme: GraphsTheme.ColorScheme.Automatic
+            colorStyle: GraphsTheme.ColorStyle.RangeGradient
+            theme: GraphsTheme.Theme.UserDefined
+            seriesColors: [Qt.alpha(palette.accent, 0.2)]
+            borderColors: [palette.accent]
+            grid.mainWidth: 1.0
+            grid.mainColor: "#d3d3d6"
+            grid.subColor: "#dfdfdf"
+            axisY.mainColor: "#d3d3d6"
+            axisY.subColor: "#dfdfdf"
+            axisY.mainWidth: grid.mainWidth
+        }
+
+        marginTop: Kirigami.Units.smallSpacing
+        marginBottom: Kirigami.Units.smallSpacing
+        marginLeft: Kirigami.Units.smallSpacing
+        marginRight: Kirigami.Units.smallSpacing
+
+        axisX: DateTimeAxis {
+            id: aXe
+            max: new Date()
+            min: new Date(max - (graphRoot.xDuration * 1000)) // here we have to pass a date object
+            labelDelegate: Component {
+                Column {
+                    spacing: 0
+                    property string text // I'm really not happy about this
+                    property list<string> dateTime: text.split(" ")
+                    Text {
+                        //Layout.alignment: Qt.AlignCenter
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        font.pointSize: 8
+                        visible: dateTime.length > 1
+                        text: visible ? dateTime[1] : ""
+                        color: palette.text
+                    }
+                    Text {
+                        // Layout.alignment: Qt.AlignCenter
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        font.pointSize: (dateTime.length > 1) ? 7 : 8
+                        text: dateTime[0]
+                        color: palette.text
+                    }
+                }
+            }
+            subTickCount: 1
+            labelFormat: graph.xDuration >= 3600 * 24 ?
+                             Qt.locale().dateTimeFormat(Locale.ShortFormat) :
+                             Qt.locale().timeFormat(Locale.ShortFormat)
+            tickInterval: 6
+        }
+        axisY: ValueAxis {
+            id: aYe
+            min: graphRoot.yMin
+            max: graphRoot.yMax
+            tickInterval: graphRoot.yMax === 100 ? 25.0 : graphRoot.yMax / 5
+            labelFormat: "%.0f" + graphRoot.yLabel
+            labelDelegate: Component {
+                Item {
+                    property string text // I'm not happy about this
+                    Text {
+                        anchors.right: parent.right
+                        anchors.verticalCenter: parent.verticalCenter
+                        font.pointSize: 9
+                        text: parent.text
+                        color: palette.text
+                    }
+                }
+            }
+        }
+        AreaSeries {
+            id: area
+            hoverable: true
+            name: "areaGraph"
+            upperSeries: LineSeries {
+                id: uSerie
+            }
+        }
+
+        onHoverEnter: coordinateLabel.visible = true
+        onHover: (_, pos, val) => hoverHandler(pos, val)
+        onHoverExit: coordinateLabel.visible = false
+
+    }
+
+    Kirigami.PlaceholderMessage {
+        visible: graphRoot.points.length < 2
+        x: graph.plotArea.x + graph.plotArea.width / 2 - width / 2
+        y: graph.plotArea.y + graph.plotArea.height / 2 - height / 2
+        width: graph.plotArea.width - (Kirigami.Units.largeSpacing * 4)
+        text: i18nc("@info:status", "No history information for this time span")
+    }
+    Controls.Label {
+        id: coordinateLabel
+        visible: false
+        padding: Kirigami.Units.smallSpacing
+        background: Rectangle {
+            color: Kirigami.Theme.backgroundColor
+            border.color: Kirigami.Theme.textColor
+            border.width: 1
+            radius: Kirigami.Units.smallSpacing
+            opacity: 0.9
+        }
+        color: Kirigami.Theme.textColor
+        font.pointSize: Kirigami.Theme.smallFont.pointSize
     }
     onPointsChanged: {
-        uSerie.replace(graph.points)
+        uSerie.replace(graphRoot.points)
     }
-    onHover: (_, _, val) => hoverHandler(val)
 }
-/**/
 
 /*
 Canvas
@@ -349,3 +425,4 @@ Canvas
     }
 }
 */
+
