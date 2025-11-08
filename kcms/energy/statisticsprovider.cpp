@@ -215,7 +215,7 @@ void StatisticsProvider::load()
         msg << QLatin1String("charge");
     }
 
-    uint resolution = 100;
+    uint resolution = 500;
     msg << m_duration << resolution;
 
     QDBusPendingReply<QList<HistoryReply>> reply = QDBusConnection::systemBus().asyncCall(msg);
