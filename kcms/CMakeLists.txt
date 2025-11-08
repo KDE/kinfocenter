@@ -31,8 +31,3 @@ set_package_properties(USB1 PROPERTIES DESCRIPTION "library that provides generi
 if(USB1_FOUND)
    add_subdirectory( usbview )
 endif()
-
-if (CMAKE_SYSTEM_NAME MATCHES Linux)
-    add_subdirectory(energy)
-endif()
-
