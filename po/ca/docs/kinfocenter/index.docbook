@@ -1071,7 +1071,7 @@
 <para
 ><acronym
 >DRI</acronym
-> (Direct Rendering Infrastructure -Infraestructura de Representació Directa-) proveeix acceleració de maquinari per a OpenGL. Per a poder utilitzar-la, haureu de tenir una targeta gràfica amb acceleració en 3D, així com tenir instal·lat el controlador adequat.</para>
+> (Direct Rendering Infrastructure -Infraestructura de Representació Directa-) proveeix acceleració de maquinari per a OpenGL. Per a poder utilitzar-la, cal tenir una targeta gràfica amb acceleració en 3D, així com tenir instal·lat el controlador adequat.</para>
  
 
 <para

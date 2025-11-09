@@ -133,26 +133,19 @@ msgid "°C"
 msgstr "°C"
 
 #: ui/main.qml:70
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "@info:label The battery has a certain capability, such as `Rechargable:`"
-#| msgid "Yes"
+#, kde-format
 msgctxt ""
 "@info:label The battery has a certain capability, such as `Rechargeable:`"
 msgid "Yes"
-msgstr "是"
+msgstr ""
 
 #: ui/main.qml:71
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "@info:label The battery doesn't have a certain capability, such as "
-#| "`Rechargable:`"
-#| msgid "No"
+#, kde-format
 msgctxt ""
 "@info:label The battery doesn't have a certain capability, such as "
 "`Rechargeable:`"
 msgid "No"
-msgstr "否"
+msgstr ""
 
 #: ui/main.qml:75
 #, kde-format
