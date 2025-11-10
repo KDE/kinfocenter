@@ -8,7 +8,7 @@
 
 <book id="kinfocenter" lang="&language;">
 <title
->El &infocenter;</title>
+>&infocenter;</title>
 
 <bookinfo>
 <authorgroup>
@@ -74,7 +74,7 @@
 
 <chapter id="introduction">
 <title
->El &infocenter;</title>
+>&infocenter;</title>
 
 <para
 >El &infocenter; le proporciona un resumen centralizado y cómodo de su sistema y del entorno de escritorio. </para>
