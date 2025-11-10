@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-08 00:43+0000\n"
-"PO-Revision-Date: 2025-10-07 10:51+0300\n"
+"PO-Revision-Date: 2025-11-08 19:57+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 25.08.1\n"
+"X-Generator: Lokalize 25.08.2\n"
 
 #: ui/main.qml:31
 #, kde-format
@@ -136,21 +136,14 @@ msgid "°C"
 msgstr "℃"
 
 #: ui/main.qml:70
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "@info:label The battery has a certain capability, such as `Rechargable:`"
-#| msgid "Yes"
+#, kde-format
 msgctxt ""
 "@info:label The battery has a certain capability, such as `Rechargeable:`"
 msgid "Yes"
 msgstr "כן"
 
 #: ui/main.qml:71
-#, fuzzy, kde-format
-#| msgctxt ""
-#| "@info:label The battery doesn't have a certain capability, such as "
-#| "`Rechargable:`"
-#| msgid "No"
+#, kde-format
 msgctxt ""
 "@info:label The battery doesn't have a certain capability, such as "
 "`Rechargeable:`"
