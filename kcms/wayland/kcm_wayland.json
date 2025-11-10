@@ -110,6 +110,7 @@
     "X-KDE-KInfoCenter-Category": "graphical_information",
     "X-KDE-Keywords": "Wayland,Compositor,Display,System Information,dxdiag",
     "X-KDE-Keywords[ar]": "ويلاند,مراكب,عرض,معلومات النّظام,dxdiag",
+    "X-KDE-Keywords[bg]": "Wayland,Compositor,Display,System Information,dxdiag",
     "X-KDE-Keywords[ca@valencia]": "Wayland,Compositor,Pantalla,Informació del sistema,dxdiag",
     "X-KDE-Keywords[ca]": "Wayland,Compositor,Pantalla,Informació del sistema,dxdiag",
     "X-KDE-Keywords[da]": "Wayland,Compositor,Display,System Information,dxdiag",
@@ -123,6 +124,7 @@
     "X-KDE-Keywords[sl]": "Wayland,upravljalnik skladnje,prikaz,sistemske podrobnosti,dxdiag",
     "X-KDE-Keywords[tr]": "wayland,bileşikleştirici,bileştirici,görüntü,ekran,sistem bilgisi,dxdiag",
     "X-KDE-Keywords[uk]": "Wayland,Compositor,Display,System Information,dxdiag,композиція,засіб,дисплей,монітор,відомості щодо системи",
+    "X-KDE-Keywords[zh_CN]": "Wayland,Compositor,Display,System Information,dxdiag,directx,xianshitexiaohunheqi,texiao,hunheqi,xianshi,xianshiqi,xitongxinxi,显示特效混合器,特效,混合器,显示,显示器,系统信息",
     "X-KDE-OnlyShowOnQtPlatforms": [
         "wayland",
         "wayland-egl"

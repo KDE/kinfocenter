@@ -78,6 +78,7 @@
     "X-KDE-KInfoCenter-Category": "graphical_information",
     "X-KDE-Keywords": "EDID,Graphics,dxdiag",
     "X-KDE-Keywords[ar]": "EDID,Graphics,الرسوميات,بيانات تعريف العرض الممتدة,dxdiag",
+    "X-KDE-Keywords[bg]": "EDID,Графика,dxdiag",
     "X-KDE-Keywords[ca@valencia]": "EDID,Gràfics,dxdiag",
     "X-KDE-Keywords[ca]": "EDID,Gràfics,dxdiag",
     "X-KDE-Keywords[da]": "EDID,Grafik,dxdiag",
@@ -90,5 +91,6 @@
     "X-KDE-Keywords[pt_BR]": "EDID,gráficos,dxdiag",
     "X-KDE-Keywords[sl]": "EDID,Grafika,dxdiag",
     "X-KDE-Keywords[tr]": "EDID,grafikler,grafik,dxdiag",
-    "X-KDE-Keywords[uk]": "EDID,Graphics,едід,графіка,dxdiag"
+    "X-KDE-Keywords[uk]": "EDID,Graphics,едід,графіка,dxdiag",
+    "X-KDE-Keywords[zh_CN]": "EDID,Graphics,dxdiag,directx,gpu,tuxing,xianka,图形,显卡"
 }

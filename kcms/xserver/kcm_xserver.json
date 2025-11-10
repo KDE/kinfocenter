@@ -151,6 +151,7 @@
     "X-KDE-KInfoCenter-Category": "graphical_information",
     "X-KDE-Keywords": "X,X-Server,XServer,XFree86,Display,VideoCard,System Information,dxdiag",
     "X-KDE-Keywords[ar]": "X,خادم X,س,خادم س,XFree86,عرض,بطاقة فيديو,معلومات النّظام,dxdiag",
+    "X-KDE-Keywords[bg]": "X,X-Server,XServer,XFree86,Display,VideoCard,Системна информация,dxdiag",
     "X-KDE-Keywords[ca@valencia]": "X,Servidor X,XServer,XFree86,Pantalla,Targeta de vídeo,Informació del sistema,dxdiag",
     "X-KDE-Keywords[ca]": "X,Servidor X,XServer,XFree86,Pantalla,Targeta de vídeo,Informació del sistema,dxdiag",
     "X-KDE-Keywords[da]": "X,X-Server,XServer,XFree86,skærm,Videokort,grafikkort,Systeminformation,dxdiag",
@@ -163,5 +164,6 @@
     "X-KDE-Keywords[pt_BR]": "X,Servidor-X,Servidor X,XFree86,Monitor,Placa de vídeo,Informação do sistema,dxdiag",
     "X-KDE-Keywords[sl]": "X11,x,strežnik x,xserver,xorg,xfree86,x.org,zaslon,prikazovalnik,grafični strežnik,grafična kartica,sistemski podatki,podatki o sistemu,dxdiag",
     "X-KDE-Keywords[tr]": "x, x sunucusu,x-server,xserver,xfree86,ekran,görüntü,video kartı,sistem bilgisi,dxdiag",
-    "X-KDE-Keywords[uk]": "X,X-Server,XServer,XFree86,Display,VideoCard,System Information,dxdiag,сервер,графічний,графічний сервер,дисплей,відео,відеокартка,система,інформація,відомості"
+    "X-KDE-Keywords[uk]": "X,X-Server,XServer,XFree86,Display,VideoCard,System Information,dxdiag,сервер,графічний,графічний сервер,дисплей,відео,відеокартка,система,інформація,відомості",
+    "X-KDE-Keywords[zh_CN]": "X,X-Server,XServer,XFree86,Display,VideoCard,System Information,dxdiag,directx,X fuwuqi,xianshi,xianshiqi,xianka,GPU,xitongxinxi,X 服务器,显示,显示器,显卡,GPU,系统信息"
 }

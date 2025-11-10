@@ -121,6 +121,7 @@
     "X-KDE-Keywords[sv]": "om,info,information,distribution,distro,system,kernel,qt,kde,version,winver",
     "X-KDE-Keywords[tr]": "hakkında,bilgi,dağıtım,distro,sistem,kernel,çekirdek,qt,kde,sürüm,versiyon,winver",
     "X-KDE-Keywords[uk]": "information,distribution,distro,system,kernel,qt,kde,version,winver,інформація,дистрибутив,дистро,система,ядро,процесор,комп’ютер,інфо,версія,вінверсія",
+    "X-KDE-Keywords[zh_CN]": "about,info,information,distribution,distro,system,kernel,qt,kde,version,winver,guanyu,xinxi,faxingban,xitong,neihe,banben,xitongbanben,关于,信息,发行版,系统,内核,版本,系统版本",
     "X-KDE-System-Settings-Parent-Category": "system-administration",
     "X-KDE-Weight": 0
 }
