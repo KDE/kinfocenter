@@ -379,12 +379,10 @@ msgid "Device"
 msgstr "Zařízení"
 
 #: usbdevices.cpp:66
-#, fuzzy, kde-format
-#| msgctxt "USB device class"
-#| msgid "(Defined at Interface level)"
+#, kde-format
 msgctxt "USB device class"
 msgid "Defined at Interface Level"
-msgstr "(Určeno na úrovni rozhraní)"
+msgstr ""
 
 #: usbdevices.cpp:92
 #, kde-format
