@@ -103,6 +103,7 @@
     "X-KDE-Keywords[es]": "OpenCL,tarjeta de vídeo,tarjeta de video,aceleración por hardware,gráficos,gráfica,dxdiag",
     "X-KDE-Keywords[fr]": "OpenCL, carte vidéo, accélération matérielle, graphique, dxdiag",
     "X-KDE-Keywords[he]": "OpenCL,כרטיס וידאו,כרטיס גרפי,כרטיס תצוגה,האצת חומרה,גרפיקה,אופן סי אל,dxdiag",
+    "X-KDE-Keywords[is]": "OpenCL,skjákort,vélbúnaðarhröðun,myndvinnsla,dxdiag",
     "X-KDE-Keywords[it]": "OpenCL,scheda video,accelerazione hardware,grafica,dxdiag",
     "X-KDE-Keywords[ka]": "OpenCL,VideoCard,Hardware Acceleration,Graphics,აპარატურული აჩქარება,გრაფიკა,dxdiag",
     "X-KDE-Keywords[nl]": "OpenCL,VideoCard,Hardware versnelling,grafische voorstellingen,dxdiag",
@@ -110,5 +111,6 @@
     "X-KDE-Keywords[sl]": "OpenCL,Videokartica,Strojno pospeševanje,Grafika,dxdiag",
     "X-KDE-Keywords[tr]": "opencl,video kartı,donanım hızlandırması, donanım ivmelendirmesi,grafik,dxdiag",
     "X-KDE-Keywords[uk]": "OpenCL,VideoCard,Hardware Acceleration,Graphics,dxdiag,відеокартка,апаратне прискорення,графіка",
-    "X-KDE-Keywords[zh_CN]": "OpenCL,VideoCard,Hardware Acceleration,Graphics,dxdiag,directx,xianka,xianshika,yingjianjiasu,tuxing,GPU,显卡,显示卡,硬件加速,图形"
+    "X-KDE-Keywords[zh_CN]": "OpenCL,VideoCard,Hardware Acceleration,Graphics,dxdiag,directx,xianka,xianshika,yingjianjiasu,tuxing,GPU,显卡,显示卡,硬件加速,图形",
+    "X-KDE-Keywords[zh_TW]": "OpenCL,硬體加速,顯示卡,圖形"
 }

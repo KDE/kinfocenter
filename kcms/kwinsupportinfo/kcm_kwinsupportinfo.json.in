@@ -22,7 +22,7 @@
         "Description[he]": "פרטי תמיכת KWin",
         "Description[hu]": "A KWin támogatás jellemzői",
         "Description[ia]": "Information de suppoto de KWin",
-        "Description[is]": "Upplýsingar um KWin stuðning",
+        "Description[is]": "Upplýsingar um KWin-stuðning",
         "Description[it]": "Informazioni di supporto per KWin",
         "Description[ja]": "KWin サポート情報",
         "Description[ka]": "KWin მხარდაჭერის ინფორმაცია",
@@ -106,6 +106,7 @@
     "X-KDE-Keywords[es]": "dxdiag",
     "X-KDE-Keywords[fr]": "dxdiag",
     "X-KDE-Keywords[he]": "dxdiag",
+    "X-KDE-Keywords[is]": "dxdiag",
     "X-KDE-Keywords[it]": "dxdiag",
     "X-KDE-Keywords[ka]": "dxdiag",
     "X-KDE-Keywords[nl]": "dxdiag",
@@ -113,5 +114,6 @@
     "X-KDE-Keywords[sl]": "dxdiag",
     "X-KDE-Keywords[tr]": "dxdiag",
     "X-KDE-Keywords[uk]": "dxdiag",
-    "X-KDE-Keywords[zh_CN]": "dxdiag,directx"
+    "X-KDE-Keywords[zh_CN]": "dxdiag,directx",
+    "X-KDE-Keywords[zh_TW]": "dxdiag"
 }

@@ -112,6 +112,7 @@
     "X-KDE-Keywords[es]": "OpenGL,DRI,GLX,3D,Tarjeta de vídeo,Aceleración por hardware,Gráficos,X,X11,Xserver, Servidor-X,XFree86,Pantalla,dxdiag",
     "X-KDE-Keywords[fr]": "OpenGL, DRI, GLX, 3D, carte vidéo, accélération matérielle, graphique, X, X11, Serveur X, X-Server, XFree86, affichage, dxdiag",
     "X-KDE-Keywords[he]": "OpenGL,DRI,GLX,3D,כרטיס וידאו,כרטיס גרפי,האצת חומרה,גרפיקה,X,X11,Xserver,X-Server,XFree86,צג,תצוגה,שרת X,שרת-X,dxdiag",
+    "X-KDE-Keywords[is]": "OpenGL,DRI,GLX,3D,skjákort,vélbúnaðarhröðun,myndvinnsla,X,X11,Xserver,X-Server,XFree86,skjár,dxdiag",
     "X-KDE-Keywords[it]": "OpenGL,DRI,GLX,3D,scheda video,accelerazione hardware,grafica,X,X11,Xserver,X-Server,XFree86,schermo,dxdiag",
     "X-KDE-Keywords[ka]": "OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display,ეკრანი,აპარატურული აჩქარება,გრაფიკა,dxdiag",
     "X-KDE-Keywords[nl]": "OpenGL,DRI,GLX,3D,VideoCard,hardwareversnelling,Graphics,X,X11,Xserver,X-Server,XFree86,scherm,dxdiag",
@@ -119,5 +120,6 @@
     "X-KDE-Keywords[sl]": "OpenGL,DRI,GLX,egl,3D,grafika,grafična kartica,strojno pospeševanje,X,X11,strežnik X,xserver,grafični strežnik,xorg,x.org,xfree86,prikazovalnik,prikaz,dxdiag",
     "X-KDE-Keywords[tr]": "opengl,dri,glx,3d,3b,video kartı,donanım hızlandırması,donanım ivmelendirmesi,x,x11,x sunucusu,xserver,x-server,xfree86,ekran,görüntü,dxdiag",
     "X-KDE-Keywords[uk]": "OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display,dxdiag,відео,картка,відеокартка,прискорення,апаратне,графіка,дисплей,показ,сервер,графічний",
-    "X-KDE-Keywords[zh_CN]": "OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display,dxdiag,sanwei,liti,GPU,xianka,yingjianjiasu,tuxing,X fuwuqi,xianshi,三维,立体,显卡,硬件加速,图形,X 服务器,显示"
+    "X-KDE-Keywords[zh_CN]": "OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display,dxdiag,sanwei,liti,GPU,xianka,yingjianjiasu,tuxing,X fuwuqi,xianshi,三维,立体,显卡,硬件加速,图形,X 服务器,显示",
+    "X-KDE-Keywords[zh_TW]": "OpenGL,DRI,GLX,3D,顯示卡,硬體加速,圖形,X,X11,顯示器"
 }

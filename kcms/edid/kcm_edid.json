@@ -85,6 +85,7 @@
     "X-KDE-Keywords[es]": "EDID,Gráficos,dxdiag",
     "X-KDE-Keywords[fr]": "EDID, graphiques, dxdiag",
     "X-KDE-Keywords[he]": "EDID,גרפיקה,dxdiag",
+    "X-KDE-Keywords[is]": "EDID,myndvinnsla,dxdiag",
     "X-KDE-Keywords[it]": "EDID,grafica,dxdiag",
     "X-KDE-Keywords[ka]": "EDID,Graphics;გრაფიკა,dxdiag",
     "X-KDE-Keywords[nl]": "EDID,grafisch,dxdiag",
@@ -92,5 +93,6 @@
     "X-KDE-Keywords[sl]": "EDID,Grafika,dxdiag",
     "X-KDE-Keywords[tr]": "EDID,grafikler,grafik,dxdiag",
     "X-KDE-Keywords[uk]": "EDID,Graphics,едід,графіка,dxdiag",
-    "X-KDE-Keywords[zh_CN]": "EDID,Graphics,dxdiag,directx,gpu,tuxing,xianka,图形,显卡"
+    "X-KDE-Keywords[zh_CN]": "EDID,Graphics,dxdiag,directx,gpu,tuxing,xianka,图形,显卡",
+    "X-KDE-Keywords[zh_TW]": "EDID,圖形"
 }

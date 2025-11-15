@@ -117,6 +117,7 @@
     "X-KDE-Keywords[es]": "Wayland,Compositor,Pantalla,Información sobre el sistema,dxdiag",
     "X-KDE-Keywords[fr]": "Wayland, compositeur, affichage, informations système ,dxdiag",
     "X-KDE-Keywords[he]": "Wayland,מנהל חלונאי,תצוגה,פרטי מערכת,ויילנד,וויילנד,dxdiag",
+    "X-KDE-Keywords[is]": "Wayland,myndsmiður,skjár,kerfisupplýsingar,dxdiag",
     "X-KDE-Keywords[it]": "Wayland,compositore,schermo,informazioni di sistema,dxdiag",
     "X-KDE-Keywords[ka]": "Wayland,Compositor,Display,System Information,ეკრანი,კომპოზიტორი,სისტემის ინფორმაცია,dxdiag",
     "X-KDE-Keywords[nl]": "Wayland,Compositor,Scherm,Systeeminformatie,dxdiag",
@@ -125,6 +126,7 @@
     "X-KDE-Keywords[tr]": "wayland,bileşikleştirici,bileştirici,görüntü,ekran,sistem bilgisi,dxdiag",
     "X-KDE-Keywords[uk]": "Wayland,Compositor,Display,System Information,dxdiag,композиція,засіб,дисплей,монітор,відомості щодо системи",
     "X-KDE-Keywords[zh_CN]": "Wayland,Compositor,Display,System Information,dxdiag,directx,xianshitexiaohunheqi,texiao,hunheqi,xianshi,xianshiqi,xitongxinxi,显示特效混合器,特效,混合器,显示,显示器,系统信息",
+    "X-KDE-Keywords[zh_TW]": "Wayland,合成器,顯示,系統資訊",
     "X-KDE-OnlyShowOnQtPlatforms": [
         "wayland",
         "wayland-egl"
