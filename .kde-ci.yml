@@ -23,7 +23,7 @@ Dependencies:
 RuntimeDependencies:
  - 'on': ['Linux']
    'require':
-    'sdk/selenium-webdriver-at-spi': '@latest-kf6'
+    'sdk/selenium-webdriver-at-spi': '@same'
     'plasma/xdg-desktop-portal-kde': '@same'
 
 Options:
