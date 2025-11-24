@@ -3,6 +3,8 @@
 
 #include "GPUEntryFactory.h"
 
+#include <algorithm>
+
 #include <QDebug>
 #include <QFile>
 #include <QGuiApplication>
@@ -166,7 +168,7 @@ void stripLlvmpipe(std::vector<GPUEntry::Device> &devices)
     }
 }
 
-bool devicesAddUpAfterStripping(std::vector<GPUEntry::Device> &devices, bool finalSource)
+bool isGoodDeviceData(std::vector<GPUEntry::Device> &devices, bool finalSource)
 {
     if (finalSource && devices.size() <= 1) {
         // Single devices always get displayed so long as we are allowed to contain llvmpipe. llvmpipe always introduces
@@ -175,6 +177,25 @@ bool devicesAddUpAfterStripping(std::vector<GPUEntry::Device> &devices, bool fin
         //   i.e. vulkan=false > opengl=true
         // Which means vulkan will stumble if only llvmpipe is present, but opengl will still show it.
         return true;
+    }
+
+    // If we are not on the final source (i.e. vulkan) but have no type information on anything, then we don't lose
+    // anything by checking another source (i.e. opengl). This then allows us to get opengl's information in case vulkan
+    // isn't supported on this hardware.
+    // https://bugs.kde.org/show_bug.cgi?id=499882
+    if (!finalSource) {
+        // Only applies when llvmpipe is in the list. Otherwise we should only have gotten real hardware.
+        const auto atLeastOnellvmpipe = std::ranges::any_of(devices, [](const auto &dev) {
+            return dev.name.contains("llvmpipe"_L1);
+        });
+        // If then also all types are OTHER then we also have no useful type information.
+        const auto onlyOtherType = std::ranges::all_of(devices, [](const auto &dev) {
+            return dev.type == VK_PHYSICAL_DEVICE_TYPE_OTHER;
+        });
+        if (atLeastOnellvmpipe && onlyOtherType) {
+            // Combined this tells us that we may be getting better data from opengl...
+            return false;
+        }
     }
 
     if (devices.size() != drmDeviceCount()) {
@@ -191,7 +212,7 @@ std::optional<std::vector<GPUEntry::Device>> vulkanGPUs()
 {
     auto devices = vulkanDevices();
 
-    if (!devicesAddUpAfterStripping(devices, false)) {
+    if (!isGoodDeviceData(devices, false)) {
         qWarning() << "GPU count mismatch (from vulkan). Are you maybe missing vulkan drivers?" << devices.size() << drmDeviceCount();
         return {};
     }
@@ -230,7 +251,7 @@ std::optional<std::vector<GPUEntry::Device>> openglGPUs()
         devices.push_back(GPUEntry::Device{name, VK_PHYSICAL_DEVICE_TYPE_OTHER});
     }
 
-    if (!devicesAddUpAfterStripping(devices, true)) {
+    if (!isGoodDeviceData(devices, true)) {
         qWarning() << "GPU count mismatch (from opengl)" << devices.size() << drmDeviceCount();
         return {};
     }
