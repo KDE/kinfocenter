@@ -181,6 +181,34 @@ bool devicesAddUpAfterStripping(std::vector<GPUEntry::Device> &devices, bool fin
     return devices.size() == drmDeviceCount();
 }
 
+// Try to improve device type detection for devices that report VK_PHYSICAL_DEVICE_TYPE_OTHER. That in particular affects
+// opengl where we have no type information at all.
+void updateTypesInPlace(std::vector<GPUEntry::Device> &devices)
+{
+    for (auto &device : devices) {
+        if (device.type != VK_PHYSICAL_DEVICE_TYPE_OTHER) { // use reported type, we currently have no reason to second guess
+            continue;
+        }
+
+        const auto name = device.name.toLower();
+
+        if (name.contains("virgl"_L1) || name.contains("virtio"_L1)) { // qemu
+            device.type = VK_PHYSICAL_DEVICE_TYPE_VIRTUAL_GPU;
+            continue;
+        }
+
+        if (name.contains("svga"_L1)) { // vmware & virtualbox
+            device.type = VK_PHYSICAL_DEVICE_TYPE_VIRTUAL_GPU;
+            continue;
+        }
+
+        if (name.contains("llvmpipe"_L1)) {
+            device.type = VK_PHYSICAL_DEVICE_TYPE_CPU;
+            continue;
+        }
+    }
+}
+
 std::optional<std::vector<GPUEntry::Device>> vulkanGPUs()
 {
     auto devices = vulkanDevices();
@@ -190,6 +218,7 @@ std::optional<std::vector<GPUEntry::Device>> vulkanGPUs()
         return {};
     }
 
+    updateTypesInPlace(devices);
     return devices;
 }
 
@@ -229,6 +258,7 @@ std::optional<std::vector<GPUEntry::Device>> openglGPUs()
         return {};
     }
 
+    updateTypesInPlace(devices);
     return devices;
 }
 
