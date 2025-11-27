@@ -21,9 +21,17 @@ int main(int argc, char *argv[])
         qWarning("Failed to create Vulkan instance");
         return 1;
     }
+    if (!instance.vkInstance()) {
+        qWarning("Vulkan instance not available");
+        return 1;
+    }
 
     QJsonArray devicesArray;
     auto *functions = instance.functions();
+    if (!functions) {
+        qWarning("Vulkan functions not available");
+        return 1;
+    }
 
     uint32_t count = 0;
     functions->vkEnumeratePhysicalDevices(instance.vkInstance(), &count, nullptr);
