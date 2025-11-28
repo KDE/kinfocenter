@@ -4,14 +4,17 @@
     SPDX-FileCopyrightText: 2025 Thomas Duckworth <tduck@filotimoproject.org>
 */
 
-import QtQuick 2.15
-import QtQuick.Controls 2.15 as QQC2
-import QtQuick.Layouts 1.1
+pragma ComponentBehavior: Bound
+
+import QtQuick
+import QtQuick.Controls as QQC2
+import QtQuick.Layouts
 
 import org.kde.kirigami 2.20 as Kirigami
 import org.kde.kquickcontrolsaddons 2.0
 import org.kde.kcmutils as KCM
 import org.kde.coreaddons as KCoreAddons
+import org.kde.ki18n
 
 import org.kde.kinfocenter.private as Private
 
@@ -24,8 +27,7 @@ KCM.SimpleKCM {
     Kirigami.Theme.colorSet: Kirigami.Theme.View
     Kirigami.Theme.inherit: false
 
-    // The CommandOutputContext object.
-    required property QtObject output
+    required property Private.CommandOutputContext output
     property int wrapMode: TextEdit.NoWrap
     property int textFormat: output.textFormat
 
@@ -46,12 +48,12 @@ KCM.SimpleKCM {
                 anchors.fill: parent
 
                 // Use a horizontal scrollbar if text wrapping is disabled. In all other cases we'll go with the defaults.
-                QQC2.ScrollBar.horizontal.policy: wrapMode === TextEdit.NoWrap ? QQC2.ScrollBar.AsNeeded : QQC2.ScrollBar.AlwaysOff
+                QQC2.ScrollBar.horizontal.policy: root.wrapMode === TextEdit.NoWrap ? QQC2.ScrollBar.AsNeeded : QQC2.ScrollBar.AlwaysOff
 
                 Kirigami.SelectableLabel {
                     id: text
                     padding: Kirigami.Units.largeSpacing
-                    text: output.text
+                    text: root.output.text
                     font.family: "monospace"
                     wrapMode: root.wrapMode
                     textFormat: root.textFormat
@@ -95,23 +97,23 @@ KCM.SimpleKCM {
 
             Kirigami.PlaceholderMessage {
                 id: placeholder
-                readonly property bool errorNotFilter: output.filter === "" && output.error !== ""
+                readonly property bool errorNotFilter: root.output.filter === "" && root.output.error !== ""
 
                 width: parent.width - (Kirigami.Units.largeSpacing * 8)
                 anchors.centerIn: parent
 
                 text: {
-                    if (output.filter !== "") {
-                        return i18ndc("kinfocenter", "@info", "No text matching the filter")
+                    if (root.output.filter !== "") {
+                        return KI18n.i18ndc("kinfocenter", "@info", "No text matching the filter")
                     }
-                    if (output.error !== "") {
-                        return output.error
+                    if (root.output.error !== "") {
+                        return root.output.error
                     }
-                    return i18ndc("kinfocenter", "@info the KCM has no data to display", "No data available")
+                    return KI18n.i18ndc("kinfocenter", "@info the KCM has no data to display", "No data available")
                 }
                 explanation: {
-                    if (errorNotFilter && output.explanation !== "") {
-                        return output.explanation
+                    if (errorNotFilter && root.output.explanation !== "") {
+                        return root.output.explanation
                     }
                     return ""
                 }
@@ -120,9 +122,9 @@ KCM.SimpleKCM {
                 helpfulAction: Kirigami.Action {
                     enabled: placeholder.errorNotFilter
                     icon.name: "tools-report-bug"
-                    text: i18n("Report to %1", KCoreAddons.KOSRelease.name)
+                    text: KI18n.i18n("Report to %1", KCoreAddons.KOSRelease.name)
                     onTriggered: {
-                        Qt.openUrlExternally(output.bugReportUrl)
+                        Qt.openUrlExternally(root.output.bugReportUrl)
                     }
                 }
             }
@@ -156,7 +158,7 @@ KCM.SimpleKCM {
                     filterField.forceActiveFocus();
                 } else {
                     filterField.clear();
-                    output.filter = "";
+                    root.output.filter = "";
                 }
             }
 
@@ -186,9 +188,9 @@ KCM.SimpleKCM {
                 
                     Layout.fillWidth: true
                     
-                    placeholderText: i18ndc("kinfocenter", "@label placeholder text to filter for something", "Filter…")
                     
-                    Accessible.name: i18ndc("kinfocenter", "accessible name for filter input", "Filter")
+                    placeholderText: KI18n.i18ndc("kinfocenter", "@label placeholder text to filter for something", "Filter…")
+                    Accessible.name: KI18n.i18ndc("kinfocenter", "accessible name for filter input", "Filter")
                     Accessible.searchEdit: true
                     
                     onAccepted: {
@@ -200,7 +202,7 @@ KCM.SimpleKCM {
                     icon.name: "dialog-close"
                     onClicked: filterHeader.toggleExpanded()
                     display: QQC2.AbstractButton.IconOnly
-                    text: i18ndc("kinfocenter", "@action:button close filter header", "Close")
+                    text: KI18n.i18ndc("kinfocenter", "@action:button close filter header", "Close")
                     Accessible.name: text
 
                     QQC2.ToolTip.visible: hovered
@@ -221,34 +223,34 @@ KCM.SimpleKCM {
 
     actions: [
         Kirigami.Action {
-            enabled: output.error === ''
-            visible: output.autoRefresh && output.autoRefreshMs > 0
+            enabled: root.output.error === ''
+            visible: root.output.autoRefresh && root.output.autoRefreshMs > 0
 
             icon.name: "media-playback-pause-symbolic"
-            text: i18ndc("kinfocenter", "@action:button pauses automatic refreshing", "Pause Refreshing")
-            onTriggered: output.autoRefresh = false
+            text: KI18n.i18ndc("kinfocenter", "@action:button pauses automatic refreshing", "Pause Refreshing")
+            onTriggered: root.output.autoRefresh = false
         },
         Kirigami.Action {
-            enabled: output.error === ''
-            visible: !output.autoRefresh && output.autoRefreshMs > 0
+            enabled: root.output.error === ''
+            visible: !root.output.autoRefresh && root.output.autoRefreshMs > 0
 
             icon.name: "media-playback-start-symbolic"
-            text: i18ndc("kinfocenter", "@action:button resumes automatic refreshing", "Resume Refreshing")
-            onTriggered: output.autoRefresh = true
+            text: KI18n.i18ndc("kinfocenter", "@action:button resumes automatic refreshing", "Resume Refreshing")
+            onTriggered: root.output.autoRefresh = true
         },
         Kirigami.Action {
-            enabled: output.error === ''
+            enabled: root.output.error === ''
 
             icon.name: "edit-copy-symbolic"
-            text: i18ndc("kinfocenter", "@action:button copies all displayed text", "Copy to Clipboard")
-            onTriggered: clipboard.content = output.text
+            text: KI18n.i18ndc("kinfocenter", "@action:button copies all displayed text", "Copy to Clipboard")
+            onTriggered: clipboard.content = root.output.text
         },
         Kirigami.Action {
-            enabled: output.error === ''
+            enabled: root.output.error === ''
             visible: root.textFormat === TextEdit.PlainText
 
             icon.name: "search"
-            text: i18ndc("kinfocenter", "@action:button opens filter bar", "Filter")
+            text: KI18n.i18ndc("kinfocenter", "@action:button opens filter bar", "Filter")
             onTriggered: filterHeader.toggleExpanded();
             checkable: true
             checked: filterHeader.expanded
@@ -259,12 +261,12 @@ KCM.SimpleKCM {
     states: [
         State {
             name: "loading"
-            when: !output.ready
+            when: !root.output.ready
             PropertyChanges { target: contentLoader; sourceComponent: loadingComponent }
         },
         State {
             name: "noData"
-            when: output.text === "" || output.error !== ""
+            when: root.output.text === "" || root.output.error !== ""
             PropertyChanges { target: contentLoader; sourceComponent: noDataComponent }
         },
         State {
