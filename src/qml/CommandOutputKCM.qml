@@ -171,33 +171,33 @@ KCM.SimpleKCM {
             // Animate the header to slide in and out from the top
             // Hacky use of topMargin
             Behavior on Layout.topMargin {
-                NumberAnimation { 
+                NumberAnimation {
                     duration: Kirigami.Units.longDuration
                     easing.type: Easing.InOutQuad
                 }
             }
-            
+
             contentItem: RowLayout {
                 id: filterLayout
                 anchors.fill: parent
                 anchors.margins: Kirigami.Units.smallSpacing
                 Layout.preferredHeight: filterHeader.visible ? filterHeader.implicitHeight : 0
-                
+
                 Kirigami.SearchField {
                     id: filterField
-                
+
                     Layout.fillWidth: true
-                    
-                    
+
                     placeholderText: KI18n.i18ndc("kinfocenter", "@label placeholder text to filter for something", "Filter…")
+
                     Accessible.name: KI18n.i18ndc("kinfocenter", "accessible name for filter input", "Filter")
                     Accessible.searchEdit: true
-                    
+
                     onAccepted: {
                         root.output.filter = filterField.text
                     }
                 }
-                
+
                 QQC2.ToolButton {
                     icon.name: "dialog-close"
                     onClicked: filterHeader.toggleExpanded()
