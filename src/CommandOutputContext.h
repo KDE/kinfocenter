@@ -10,12 +10,15 @@
 #include <QObject>
 #include <QTimer>
 #include <QUrl>
+#include <QtQmlIntegration>
 
 // Somewhat general-purpose command executor. This class runs the executable with arguments, collecting all its output
 // and potentially filtering it to limit the lines to only ones matching.
 class CommandOutputContext : public QObject
 {
     Q_OBJECT
+    QML_ELEMENT
+    QML_UNCREATABLE("Only ever passed in from C++")
     Q_PROPERTY(QString executable READ executableName CONSTANT)
     Q_PROPERTY(QStringList arguments READ arguments CONSTANT)
     // Output. With filter applied.
