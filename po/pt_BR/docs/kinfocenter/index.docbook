@@ -1,28 +1,19 @@
 <?xml version="1.0" ?>
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
 "dtd/kdedbx45.dtd" [
-<!ENTITY kappname "&kinfocenter;">
 <!ENTITY % addindex "IGNORE">
 <!ENTITY % Brazilian-Portuguese "INCLUDE"
 > <!-- change language only here -->
 ]>
 
 <book id="kinfocenter" lang="&language;">
-<bookinfo>
 <title
 >O &infocenter;</title>
 
+<bookinfo>
 <authorgroup>
 <author
-><firstname
->Michael</firstname
-> <surname
->McBride</surname
-> <affiliation
-><address
->&Mike.McBride.mail;</address
-></affiliation>
-</author>
+>&Mike.McBride; &Mike.McBride.mail;</author>
 <othercredit role="translator"
 ><firstname
 >Lisiane</firstname
@@ -57,18 +48,18 @@
 <legalnotice
 >&FDLNotice;</legalnotice>
 <date
->19/03/2016</date>
+>31/03/2018</date>
 <releaseinfo
->Plasma 5.6</releaseinfo>
+>Plasma 5.12</releaseinfo>
 
 <abstract>
 <para
->Este documento descreve o Centro de Informações do &kde;.</para>
+>Este documento descreve o Centro de Informações do &plasma;.</para>
 </abstract>
 
 <keywordset>
 <keyword
->KDE</keyword>
+>Plasma</keyword>
 <keyword
 >O Centro de Informações</keyword>
 <keyword
@@ -93,7 +84,7 @@
 
 <para
 >A próxima seção detalha o uso do centro de informações. Para informações sobre os módulos individualmente, por favor, procure em <link linkend="module"
-> Módulos padrão do Centro de Informações</link
+> Módulos padrão do &infocenter;</link
 >. </para>
 
 <sect1 id="information-center-starting">
@@ -112,7 +103,7 @@
 ><guisubmenu
 >Sistema</guisubmenu
 ><guimenuitem
->Centro de Informações</guimenuitem
+>&infocenter;</guimenuitem
 ></menuchoice
 > a partir do seu lançados de aplicativos no painel. </para>
 </listitem>
@@ -123,9 +114,7 @@
 >F2</keycap
 ></keycombo
 > ou <keycombo action="simul"
->&Alt;<keycap
->Espaço</keycap
-></keycombo
+>&Alt;&Space;</keycombo
 >. Isto executará o &krunner;. Digite <userinput
 ><command
 >kinfocenter</command
@@ -207,16 +196,16 @@
 
 <sect1 id="info-center-menus">
 <title
->A Barra de Ferramentas do &infocenter;</title>
+>A barra de ferramentas do &infocenter;</title>
 
 <para
->Esta seção fornece uma breve descrição sobre o que cada item da barra de ferramentas faz. </para>
+>Esta seção fornece uma breve descrição sobre o que cada item da barra de ferramentas faz.</para>
 
 <sect2 id="info-center-module-help">
 <title
 >Botão Ajuda do módulo </title>
 <para
->Este botão abre o KHelpCenter com a página de ajuda atual para o módulo de informações. </para>
+>Este botão abre o &khelpcenter; com a página de ajuda atual para o módulo de informações. </para>
 </sect2>
 
 <sect2 id="info-center-menu-help">
@@ -225,7 +214,7 @@
 <para
 >O &kinfocenter; tem alguns dos itens do menu <guimenu
 >Ajuda</guimenu
-> comuns do &kde;. Para mais informações, leia a seção <ulink url="help:/fundamentals/ui.html#menus-help"
+> comuns do &kde;. Para mais informações, leia a seção <ulink url="help:/fundamentals/menus.html#menus-help"
 >Menu Ajuda</ulink
 > nos Fundamentos do &kde;. </para>
 
@@ -234,7 +223,7 @@
 </sect1>
 <sect1 id="info-center-exiting">
 <title
->Saindo do Centro de informações do &kde;</title>
+>Saindo do Centro de informações</title>
 
 <para
 >Você pode sair do Centro de informações de uma das duas maneiras: </para>
@@ -268,28 +257,31 @@
 
 <sect1 id="aboutsystem">
 <title
->Módulo de Informações do Sistema</title>
+>Sobre o módulo do sistema</title>
 
 <para
 >Esta página apresenta um breve resumo sobre o seu sistema, &ie;, sua distribuição, <guilabel
->Versão do KDE Plasma</guilabel
+>Versão do KDE Plasma:</guilabel
 >, <guilabel
->Versão do Qt</guilabel
+>Versão do KDE Frameworks:</guilabel
 >, <guilabel
->Versão do Kernel</guilabel
+>Versão do Qt:</guilabel
+>, <guilabel
+>Versão do kernel:</guilabel
 > e <guilabel
->Tipo de sistema operacional</guilabel
+>Tipo de sistema operacional:</guilabel
 >. Na seção de hardware, informações sobre <guilabel
->Processadores</guilabel
+>Processadores:</guilabel
+>, <guilabel
+>Memória:</guilabel
 > e <guilabel
->Memória</guilabel
+>Processador gráfico:</guilabel
 >.</para>
 
 <para
->Use as informações desta página se precisar de ajuda em canais de suporte ou em relatórios de erros no <ulink url="http://bugs.kde.org"
+>Use as informações desta página se precisar de ajuda em canais de suporte ou em relatórios de erros no <ulink url="https://bugs.kde.org"
 >sistema de gerenciamento de erros do &kde;</ulink
->.</para
-> 
+>.</para>
 </sect1>
 
 
@@ -383,6 +375,18 @@
 </sect2>
 </sect1>
 
+
+<!--****************************************-->
+
+<sect1 id="energieinformation">
+<title
+>Módulo de informações da energia</title>
+
+<para
+>Isto fornece informações sobre as ativações da CPU, porcentagem da bateria e consumo sobre um histórico definido pelo usuário e informações detalhadas sobre a bateria. </para>
+</sect1>
+
+
 <!--****************************************-->
 
 <sect1 id="devinfo">
@@ -397,7 +401,7 @@
 >'s do dispositivo selecionado no momento.</para>
 <sect2 id="devlist">
 <title
->Lista dos Dispositivos</title>
+>Visualizador de dispositivos</title>
 <para
 >O visualizador de dispositivos mostra todos os dispositivos atuais que forem detectados no seu <acronym
 >PC</acronym
@@ -429,31 +433,39 @@
 ></listitem>
 </itemizedlist>
 <para
->A apresentação padrão é tudo fechado, mostrando apenas os dispositivos relevantes. Lembre-se que os dispositivos apresentados na listagem não são todos os dispositivos no seu PC, são apenas os que tiverem sido detectados através do Solid.</para>
+>A apresentação padrão é tudo fechado, mostrando apenas os dispositivos relevantes. Lembre-se que os dispositivos apresentados na listagem não são todos os dispositivos no seu PC, são apenas os que tiverem sido detectados através do &solid;.</para>
 <para
 >O visualizador de dispositivos poderá mostrar os seguintes dispositivos:</para>
 <itemizedlist>
 <listitem
 ><para
->Processadores: Estes são as <acronym
+><guisubmenu
+>Processadores:</guisubmenu
+> Estes são as <acronym
 >CPU</acronym
->'s ( Unidades Centrais de Processamento ) do seu computador.</para
+>'s (Unidades Centrais de Processamento) do seu computador.</para
 ></listitem>
 <listitem
 ><para
->Unidades de Armazenamento: Os dispositivos que são usados para guardar os arquivos e dados do seu <acronym
+><guisubmenu
+>Unidades de Armazenamento:</guisubmenu
+> Os dispositivos que são usados para guardar os arquivos e dados do seu <acronym
 >PC</acronym
 >.</para
 ></listitem>
 <listitem
 ><para
->Interfaces de Rede: Dispositivos que lhe permitem conectar a uma rede ou a outro <acronym
+><guisubmenu
+>Interfaces de rede:</guisubmenu
+> Dispositivos que lhe permitem conectar a uma rede ou a outro <acronym
 >PC</acronym
 >.</para
 ></listitem>
 <listitem
 ><para
->Interfaces de Áudio: Dispositivos que permitem ao seu <acronym
+><guisubmenu
+>Interfaces de áudio:</guisubmenu
+> Dispositivos que permitem ao seu <acronym
 >PC</acronym
 > reproduzir sons. Estão divididos em duas categorias, as arquiteturas de som <acronym
 >ALSA</acronym
@@ -463,41 +475,61 @@
 ></listitem>
 <listitem
 ><para
->Dispositivos de Vídeo: Dispositivos que lhe permitem transmitir vídeo ao vivo. </para
+><guisubmenu
+>Dispositivos de vídeo:</guisubmenu
+> Dispositivos que lhe permitem transmitir vídeo ao vivo.</para
 ></listitem>
 <listitem
 ><para
->Dispositivos Seriais: Dispositivos que estão conectados à sua porta serial no seu PC.</para
+><guisubmenu
+>Dispositivos seriais:</guisubmenu
+> Dispositivos que estão conectados à sua porta serial no seu PC.</para
 ></listitem>
 <listitem
 ><para
->Dispositivos 'Smart Card': Dispositivos que sejam leitores de cartões inteligentes ('smart card'). </para
+><guisubmenu
+>Dispositivos 'smart card':</guisubmenu
+> Dispositivos que sejam leitores de cartões inteligentes ('smart card').</para
 ></listitem>
 <listitem
 ><para
->Dispositivos de Difusão de Vídeo Digital: Dispositivos que usam formatos abertos de televisão digital.</para
+><guisubmenu
+>Dispositivos de difusão de vídeo digital</guisubmenu
+>: Dispositivos que usam formatos abertos de televisão digital.</para
 ></listitem>
 <listitem
 ><para
->Botões do Dispositivo: Estes são botões que estão presentes no seu <acronym
+><guisubmenu
+>Botões do dispositivo</guisubmenu
+>: Estes são botões que estão presentes no seu <acronym
 >PC</acronym
-> ou nos dispositivos externos. </para
+> ou nos dispositivos externos.</para
 ></listitem>
 <listitem
 ><para
->Baterias: Estes são os dispositivos de energia ligados ao seu portátil. </para
+><guisubmenu
+>Baterias</guisubmenu
+>: Estes são os dispositivos de energia ligados ao seu portátil.</para
 ></listitem>
 <listitem
 ><para
->Adaptadores de energia: São os dispositivos presentes quando você ligar o seu computador à corrente elétrica. </para
+><guisubmenu
+>Adaptadores de energia</guisubmenu
+>: São os dispositivos presentes quando você ligar o seu computador à corrente elétrica alternada (<acronym
+>AC</acronym
+>).</para
 ></listitem>
 <listitem
 ><para
->Leitores Multimídia: Os dispositivos que reproduzem arquivos multimídia, como os leitores de música. </para
+><guisubmenu
+>Leitores multimídia</guisubmenu
+>: Os dispositivos que reproduzem arquivos multimídia, como os leitores de música.</para
 ></listitem>
 <listitem
 ><para
->Dispositivos de Câmeras: São máquinas fotográficas ou câmeras digitais conectadas ao seu <acronym
+><guisubmenu
+>Dispositivos de câmeras</guisubmenu
+>: São máquinas fotográficas ou câmeras digitais conectadas ao seu <acronym
 >PC</acronym
 >.</para
 ></listitem>
@@ -506,8 +538,8 @@
 <para
 >Os dispositivos de vídeo não incluem a sua placa gráfica</para>
 </note>
-</sect2>
-<sect2 id="infopanel">
+
+<sect3 id="infopanel">
 <title
 >Painel de informações</title>
 <para
@@ -516,32 +548,32 @@
 <listitem
 ><para
 ><guilabel
->Produto</guilabel
->: O nome do dispositivo.</para
+>Produto:</guilabel
+> O nome do dispositivo.</para
 ></listitem>
 <listitem
 ><para
 ><guilabel
->Fabricante</guilabel
->: O nome do fabricante do dispositivo.</para
+>Fabricante:</guilabel
+> O nome do fabricante do dispositivo.</para
 ></listitem>
 </itemizedlist>
 <para
 >Os tópicos seguintes dependem do dispositivo escolhido. São legendados com nomes compreensíveis. Os textos informativos podem ser selecionados e copiados.</para>
 <note>
 <para
->Os tópicos da <quote
->Velocidade Máxima</quote
-> e <quote
->Conjuntos de Instruções Suportados</quote
-> não são normalmente definidos pelo Solid.</para>
+>Os tópicos <guilabel
+>Velocidade máxima</guilabel
+> e <guilabel
+>Conjuntos de instruções suportados</guilabel
+> não são normalmente definidos pelo &solid;.</para>
 </note>
 <note>
 <para
 >As categorias de topo na listagem de dispositivos não mostram qualquer informação.</para>
 </note>
-</sect2>
-<sect2 id="udilabel">
+</sect3>
+<sect3 id="udilabel">
 <title
 >Informação do <acronym
 >UDI</acronym
@@ -552,12 +584,12 @@
 >s dos dispositivos selecionados no momento. Eles são identificadores únicos para os mesmos.</para>
 <para
 >Todos os textos podem ser selecionados e copiados.</para>
+</sect3>
 </sect2>
-</sect1>
 
 <!--****************************************-->
 
-<sect1 id="interrupts">
+<sect2 id="interrupts">
 <title
 >Módulo de Informações de Pedidos de Interrupção (<abbrev
 >IRQ</abbrev
@@ -611,11 +643,11 @@
 
 <para
 >O usuário não pode modificar as configurações desta página.</para>
-</sect1>
+</sect2>
 
 <!--****************************************-->
 
-<sect1 id="dma">
+<sect2 id="dma">
 <title
 >Módulo de Informação dos Canais de <acronym
 >DMA</acronym
@@ -630,13 +662,13 @@
 >PC</acronym
 >s) possuem oito canais <acronym
 >DMA </acronym
-> (de 0 a 7). </para>
+> (de 0 a 7).</para>
 
 <note
 > <para
 >A informação exibida é dependente do sistema. Em alguns sistemas, as informações sobre Canal <acronym
 >DMA</acronym
-> ainda não podem ser exibidas. </para
+> ainda não podem ser exibidas.</para
 > </note>
 
 <para
@@ -644,14 +676,14 @@
 > /proc/dma</filename
 >, que está disponível somente se o pseudo-sistema de arquivos <filename class="directory"
 >/proc</filename
-> estiver compilado com o kernel. </para>
+> estiver compilado com o kernel.</para>
 
 <para
 >É mostrada uma lista de todos os canais atualmente registrados (barramento <acronym
 >ISA</acronym
 >) que estão em uso. A primeira coluna mostra o canal <acronym
 >DMA</acronym
->, e a segunda mostra o dispositivo que usa o canal exibido. </para>
+>, e a segunda mostra o dispositivo que usa o canal exibido.</para>
 
 <para
 >Canais <acronym
@@ -660,103 +692,62 @@
 
 <para
 >O usuário não pode modificar as configurações desta página. </para>
-</sect1>
+</sect2>
 
 <!--****************************************-->
 
-<sect1 id="kcmview1394">
+<sect2 id="kcmusb">
 <title
->Módulo de Informação dos Dispositivos IEEE 1394</title>
+>Módulo de informação de dispositivos/controladores &USB;</title>
 
 <para
->A interface IEEE 1394, também conhecida como <trademark
->FireWire</trademark
->, é uma interface-padrão serial para comunicações em alta velocidade para a transferência de dados em tempo-real isócrona.</para>
+>Este módulo permite a você visualizar os dispositivos anexados ao(s) seu(s) barramento(s) &USB;.</para>
 
 <para
->A lista neste módulo apresenta todos os dispositivos ligados ao barramento IEEE 1394 e permite-lhe reiniciar o barramento, ao clicar no botão <guibutton
->Gerar um Reinício do Barramento 1394</guibutton
->.</para>
-
-<para
->O significado das colunas nesta lista é:</para>
-<itemizedlist>
-<listitem
-><para
-><guilabel
->Nome</guilabel
->: o nome do nó ou da porta, sendo que o número poderá mudar com cada reinício</para
-></listitem>
-<listitem
-><para
-><guilabel
->GUID</guilabel
->: o GUID de 64 bits do nó</para
-></listitem>
-<listitem
-><para
-><guilabel
->Local</guilabel
->: assinalado se o nó for uma porta IEEE 1394 do seu computador</para
-></listitem>
-<listitem
-><para
-><guilabel
->IRM</guilabel
->: assinalado se o nó for capaz de gerenciar os recursos isócronos</para
-></listitem>
-<listitem
-><para
-><guilabel
->CRM</guilabel
->: assinalado se o nó for um mestre de ciclos</para
-></listitem>
-<listitem
-><para
-><guilabel
->ISO</guilabel
->: assinalado se o nó suporta transferências isócronas</para
-></listitem>
-<listitem
-><para
-><guilabel
->BM</guilabel
->: assinalado se o nó for capaz de gerenciar o barramento</para
-></listitem>
-<listitem
-><para
-><guilabel
->PM</guilabel
->: assinalado se o nó for capaz de fazer a gestão de energia</para
-></listitem>
-<listitem
-><para
-><guilabel
->Prec</guilabel
->: a precisão do ciclo de relógio do nó, válida de 0 a 100</para
-></listitem>
-<listitem
-><para
-><guilabel
->Velocidade</guilabel
->: a velocidade do nó</para
-></listitem>
-<listitem
-><para
-><guilabel
->Fabricante</guilabel
->: o fabricante do dispositivo</para
-></listitem>
-</itemizedlist>
-</sect1>
+>Este módulo é apenas informacional, e você não pode editar informações vistas aqui.</para>
+</sect2>
 
 <!--****************************************-->
 
-<sect1 id="kcm_pci">
+<sect2 id="ioports">
 <title
->Módulo de Informação de Placas/Barramentos <acronym
+>Módulo de Informação de Portas de Entrada/Saída</title>
+
+<para
+>Esta página exibe informações sobre as portas de E/S.</para>
+
+<para
+>As portas de E/S são endereços de memória usados pelo processador para a comunicação direta com um dispositivo, que enviou um sinal de interrupção para o processador.</para>
+
+<para
+>O intercâmbio de comandos/dados entre o processador e o dispositivo é feito através do endereço da porta de E/S do dispositivo, que é um número hexadecimal. Dois dispositivos não podem compartilhar uma mesma porta. Muitos deles usam múltiplos endereços de E/S, que são expressos como um intervalo de números hexadecimais.</para>
+
+<note
+><para
+>A informação exibida é dependente do sistema. Em alguns sistemas, as informações sobre portas de E/S ainda não podem ser exibidas.</para
+></note>
+
+<para
+>No &Linux;, esta informação é lida de <filename class="devicefile"
+> /proc/ioports</filename
+>, que está disponível somente se o sistema de arquivos <filename class="devicefile"
+>/proc</filename
+> estiver compilado com o kernel. É mostrada a lista com todas as portas atualmente registradas e em uso.</para>
+
+<para
+>A primeira coluna mostra a porta de E/S (ou o intervalo de portas), e a segunda coluna identifica o dispositivo que utiliza estas portas.</para>
+
+<para
+>O usuário não pode modificar as configurações desta página.</para>
+</sect2>
+
+<!--****************************************-->
+
+<sect2 id="kcm_pci">
+<title
+>Módulo de informação de placas/barramentos <acronym
 >PCI</acronym
-> Instalados</title>
+> instalados</title>
 
 <para
 >Esta página mostra informações sobre o barramento <acronym
@@ -787,75 +778,45 @@
 >Cada entrada inicia com um barramento, dispositivo e número da função.</para>
 <para
 >O usuário não pode modificar as configurações desta página.</para>
+</sect2>
+
 </sect1>
 
 <!--****************************************-->
 
-<sect1 id="ioports">
+
+<sect1 id="network">
 <title
->Módulo de Informação de Portas de Entrada/Saída</title>
+>Módulo de informações da rede</title>
+
+<sect2 id="nic">
+<title
+>Módulo de Informação das Interfaces de Rede</title>
 
 <para
->Esta página exibe informações sobre as portas de E/S.</para>
-
-<para
->As portas de E/S são endereços de memória usados pelo processador para a comunicação direta com um dispositivo, que enviou um sinal de interrupção para o processador.</para>
-
-<para
->O intercâmbio de comandos/dados entre o processador e o dispositivo é feito através do endereço da porta de E/S do dispositivo, que é um número hexadecimal. Dois dispositivos não podem compartilhar uma mesma porta. Muitos deles usam múltiplos endereços de E/S, que são expressos como um intervalo de números hexadecimais. </para>
+>Esta página mostra informações sobre as interfaces de rede instaladas no seu computador. </para>
 
 <note
 ><para
->A informação exibida é dependente do sistema. Em alguns sistemas, as informações sobre portas de E/S ainda não podem ser exibidas.</para
+>A informação exata que é apresentada depende do sistema. Em alguns sistemas, ele até poderá nem sequer estar visível.</para
 ></note>
 
 <para
->No &Linux;, esta informação é lida de <filename class="devicefile"
-> /proc/ioports</filename
->, que está disponível somente se o sistema de arquivos <filename class="devicefile"
->/proc</filename
-> estiver compilado com o kernel. É mostrada a lista com todas as portas atualmente registradas e em uso.</para>
-
-<para
->A primeira coluna mostra a porta de E/S (ou o intervalo de portas), e a segunda coluna identifica o dispositivo que utiliza estas portas.</para>
-
-<para
 >O usuário não pode modificar as configurações desta página.</para>
-</sect1>
+</sect2>
 
 <!--****************************************-->
 
-<sect1 id="kcmusb">
+<sect2 id="smbstatus">
 <title
->Módulo de Informação de Dispositivos/Controladores <acronym
->USB</acronym
-></title>
+>Módulo de informação do estado do &Samba;</title>
 
 <para
->Este módulo permite a você visualizar os dispositivos anexados ao(s) seu(s) barramento(s) <acronym
->USB</acronym
->.</para>
-
-<para
->Este módulo é apenas informacional, e você não pode editar informações vistas aqui.</para>
-</sect1>
-
-<!--****************************************-->
-
-<sect1 id="smbstatus">
-<title
->Módulo de Informação do Estado do Samba</title>
-
-<para
->O Monitor de Estado do Samba e do <acronym
->NFS</acronym
-> é uma interface para os programas <command
+>O monitor de estado do &Samba; e do &NFS; é uma interface para os programas <command
 >smbstatus</command
 > e <command
 > showmount</command
->. O Smbstatus relata as conexões atuais do Samba, e faz parte das ferramentas do Samba, que implementa o <acronym
->SMB</acronym
-> (Bloco de Mensagens de Sessões ou Session Message Block), também chamado de protocolo NetBIOS ou LanManager.</para>
+>. O Smbstatus relata as conexões atuais do &Samba;, e faz parte das ferramentas do &Samba;, que implementa o &SMB; (Bloco de Mensagens do Servidor ou Server Message Block), também chamado de protocolo NetBIOS ou LanManager.</para>
 
 <para
 >Este protocolo pode ser usado para fornecer compartilhamento de serviços de impressora ou compartilhamento de unidade em uma rede, incluindo máquinas executando os vários sabores de &Microsoft; &Windows;.</para>
@@ -863,9 +824,7 @@
 <para
 >O <command
 >showmount</command
-> faz parte do pacote <acronym
->NFS</acronym
-> (Sistema de Arquivos de Rede ou Network File System), e é o modo &UNIX; tradicional de compartilhar pastas na rede. Neste caso, a saída do comando <command
+> faz parte do pacote &NFS; (Sistema de Arquivos de Rede ou Network File System), e é o modo &UNIX; tradicional de compartilhar pastas na rede. Neste caso, a saída do comando <command
 >showmount</command
 > <option
 >-a localhost</option
@@ -875,18 +834,12 @@
 >PATH</envar
 >).</para>
 
-<sect2 id="smb-exports">
+<sect3 id="smb-exports">
 <title
 >Exporta</title>
 
 <para
->Nesta página você pode ver uma lista grande que mostra as conexões atualmente ativas para compartilhamentos Samba e <acronym
->NFS</acronym
-> de sua máquina. A primeira coluna mostra a você se o recurso é um volume Samba (<acronym
->SMB</acronym
->) ou um volume <acronym
->NFS</acronym
->. A segunda coluna contém o nome do volume, a terceira o nome da máquina remota que acessa este compartilhamento, e as colunas restantes possuem significado somente para volumes Samba.</para>
+>Nesta página você pode ver uma lista grande que mostra as conexões atualmente ativas para compartilhamentos &Samba; e &NFS; de sua máquina. A primeira coluna mostra a você se o recurso é um volume &Samba; (&SMB;) ou um volume &NFS;. A segunda coluna contém o nome do volume, a terceira o nome da máquina remota que acessa este compartilhamento, e as colunas restantes possuem significado somente para volumes &Samba;.</para>
 
 <para
 >A quarta coluna contém o <abbrev
@@ -913,57 +866,51 @@
 >abertos </emphasis
 > exatamente agora, e você não pode ver quantos arquivos ele copiou, abriu anteriormente, &etc;</para>
 
-</sect2>
+</sect3>
 
-<sect2 id="smb-imports">
+<sect3 id="smb-imports">
 <title
 >Compartilhamentos Importados</title>
 
 <para
->Aqui você vê quais volumes Samba e <acronym
->NFS</acronym
-> de outras máquinas estão montados em seu sistema local. A primeira coluna mostra se é um volume Samba ou <acronym
->NFS</acronym
->; a segunda coluna exibe o nome do volume, e a terceira mostra onde ele está montado.</para>
+>Aqui você vê quais volumes &Samba; e &NFS; de outras máquinas estão montados em seu sistema local. A primeira coluna mostra se é um volume &Samba; ou &NFS;; a segunda coluna exibe o nome do volume, e a terceira mostra onde ele está montado.</para>
 
 <para
->Os volumes <acronym
->NFS</acronym
-> montados você deve ver no &Linux; (isto foi testado), e deve funcionar também em &Solaris; (isto não foi testado).</para>
+>Os volumes &NFS; montados você deve ver no &Linux; (isto foi testado), e deve funcionar também em &Solaris; (isto não foi testado).</para>
 
-</sect2>
+</sect3>
 
-<sect2 id="smb-log">
+<sect3 id="smb-log">
 <title
 >Registro</title>
 
 <para
->Esta página apresenta o conteúdo de seu arquivo de registro local do Samba, de um modo agradável. Se você abrir esta página, a lista estará vazia. Você deve pressionar o botão <guibutton
+>Esta página apresenta o conteúdo de seu arquivo de registro local do &Samba;, de um modo agradável. Se você abrir esta página, a lista estará vazia. Você deve pressionar o botão <guibutton
 >Atualizar</guibutton
->, e então o arquivo de registro do Samba será lido e os resultados mostrados. Verifique se o arquivo em seu sistema está realmente na localização correta, como especificado na linha de entrada. Se está em outro local, ou se ele possui outro nome, corrija-o. Depois de modificar o nome do arquivo, deve pressionar o botão <guibutton
+>, e então o arquivo de registro do &Samba; será lido e os resultados mostrados. Verifique se o arquivo em seu sistema está realmente na localização correta, como especificado na linha de entrada. Se está em outro local, ou se ele possui outro nome, corrija-o. Depois de modificar o nome do arquivo, deve pressionar o botão <guibutton
 >Atualizar</guibutton
 > novamente.</para>
 
 <para
->Os registros do Samba agem de acordo com o nível de registro (veja em <filename
+>Os registros do &Samba; agem de acordo com o nível de registro (veja em <filename
 >smb.conf</filename
->). Se o loglevel = 1, então o Samba registra somente quando alguém conecta-se em sua máquina e quando esta conexão é fechada. Se loglevel = 2, então ele registra também quando alguém abre um arquivo e quando fecha-o. Se a opção loglevel for maior que 2, então mais informações são armazenadas.</para>
+>). Se o loglevel = 1, então o &Samba; registra somente quando alguém conecta-se em sua máquina e quando esta conexão é fechada. Se loglevel = 2, então ele registra também quando alguém abre um arquivo e quando fecha-o. Se a opção loglevel for maior que 2, então mais informações são armazenadas.</para>
 
 <para
->Se você está interessado em saber quem acessa sua máquina e quais arquivos são acessados, deve ajustar o nível de registro para 2 e criar regularmente um novo arquivo de registro do Samba (pode configurar uma tarefa no <command
-> cron</command
-> que, &eg;, uma vez por semana move o seu arquivo de registro para outro diretório, ou algo semelhante). Caso contrário, o seu arquivo de registro do Samba pode se tornar muito grande.</para>
+>Se você está interessado em saber quem acessa sua máquina e quais arquivos são acessados, deve ajustar o nível de registro para 2 e criar regularmente um novo arquivo de registro do &Samba; (pode configurar uma tarefa no <command
+>cron</command
+> que, &eg;, uma vez por semana move o seu arquivo de registro para outro diretório, ou algo semelhante). Caso contrário, o seu arquivo de registro do pode se tornar muito grande.</para>
 
 <para
 >Com as quatro caixas de verificação abaixo, você pode decidir quais eventos serão exibidos na lista. Pressione o botão <guibutton
 >Atualizar</guibutton
-> para ver os resultados. Se o nível de registro de seu Samba estiver muito baixo, poderá não visualizar as informações.</para>
+> para ver os resultados. Se o nível de registro de seu &Samba; estiver muito baixo, poderá não visualizar as informações.</para>
 
 <para
 >Clicando no cabeçalho de uma coluna, você pode ordenar a lista, de acordo com esta coluna.</para>
 
-</sect2>
-<sect2 id="smb-statistics">
+</sect3>
+<sect3 id="smb-statistics">
 <title
 >Estatísticas</title>
 
@@ -1006,7 +953,7 @@
 
 <para
 >Pressione agora <guibutton
->Apagar resultados</guibutton
+>Limpar resultados</guibutton
 >.</para>
 
 <para
@@ -1037,10 +984,10 @@
 <para
 >Clicando no cabeçalho de uma coluna, você ordena a lista de acordo com esta coluna. Desta maneira, você pode verificar quais os arquivos foram abertos com mais frequência, ou qual usuário abriu mais arquivos, e assim por diante.</para>
 
-</sect2>
+</sect3>
 
 
-<sect2 id="smb-stat-author">
+<sect3 id="smb-stat-author">
 <title
 >Autor da Seção</title>
 
@@ -1058,7 +1005,7 @@
 >Contribuições</title>
 <listitem
 ><para
->Conversão para miniaplicativo do Centro de Controle:</para>
+>Conversão para miniaplicativo do &kcontrol;:</para>
 <para
 >&Matthias.Hoelzer-Kluepfel; &Matthias.Hoelzer-Kluepfel.mail;</para
 ></listitem>
@@ -1090,66 +1037,16 @@
 ></para
 > 
 
+</sect3>
 </sect2>
 </sect1>
 
-<!--****************************************-->
-
-<sect1 id="nic">
+<sect1 id="graphical">
 <title
->Módulo de Informação das Interfaces de Rede</title>
+>Módulo de informações gráficas</title>
 
 <para
->Esta página mostra informações sobre as interfaces de rede instaladas no seu computador. </para>
-
-<note
-><para
->A informação exata que é apresentada depende do sistema. Em alguns sistemas, ele até poderá nem sequer estar visível.</para
-></note>
-
-<para
->O usuário não pode modificar as configurações desta página.</para>
-</sect1>
-
-<!--****************************************-->
-
-<sect1 id="opengl">
-<title
->Módulo de Informação do OpenGL</title>
-
-<para
->Esta página exibe informações sobre a implementação <acronym
->OpenGL</acronym
-> instalada no seu sistema. OpenGL (acrônimo do inglês para "Biblioteca Gráfica Aberta") é uma interface independente de hardware e plataforma para gráficos 3D. </para>
-
-<para
-><acronym
->GLX</acronym
-> é a implementação do OpenGL para o sistema X Window.</para>
-
-<para
-><acronym
->DRI</acronym
-> (do inglês, Infraestrutura de Renderização Direta) fornece aceleração de hardware para o OpenGL. Você deve possuir uma placa de vídeo com aceleração 3D e drivers instalados corretamente para ela.</para>
- 
-
-<para
->Leia mais na página oficial do OpenGL <ulink url="http://www.opengl.org"
->http://www.opengl.org</ulink
-> </para>
-</sect1>
-
-<!--****************************************-->
-
-<sect1 id="xserver">
-<title
->Módulo de Informação do Servidor X</title>
-
-<para
->Esta tela é útil para obter informações específicas sobre o servidor X e sua sessão X atual.</para>
-
-<para
->Ao abrir este módulo, serão apresentadas a você algumas informações. O lado esquerdo da janela está organizado em forma de árvore, e alguns dos elementos possuem um sinal de mais no nome. Ao clicar neste sinal, será aberto um <quote
+>Ao abrir os módulos nesta seção, serão apresentadas a você algumas informações. O lado esquerdo da janela está organizado em forma de árvore, e alguns dos elementos possuem um sinal de mais no nome. Ao clicar neste sinal, será aberto um <quote
 >submenu</quote
 >, relacionado com o nome. Ao clicar no sinal de menos, na frente do nome, o submenu será ocultado.</para>
 
@@ -1165,12 +1062,61 @@
 ></note>
 
 <para
->Você não pode modificar os valores deste menu, pois ele é somente informacional.</para>
-</sect1>
+>Você não pode modificar os valores deste módulo. Ele é somente informacional.</para>
 
 <!--****************************************-->
 
-<!-- Wayland missing -->
+<sect2 id="wayland">
+<title
+>Módulo de Informações do &Wayland;</title>
+
+<para
+>Esta tela é útil para obter informações específicas sobre o seu <ulink url="https://en.wikipedia.org/wiki/Wayland_(display_server_protocol)"
+>Compositor &Wayland;</ulink
+>.</para>
+
+</sect2>
+
+<!--****************************************-->
+
+<sect2 id="xserver">
+<title
+>Módulo de Informação do Servidor X</title>
+
+<para
+>Esta tela é útil para obter informações específicas sobre o servidor X e sua sessão X atual.</para>
+
+</sect2>
+
+<!--****************************************-->
+
+<sect2 id="opengl">
+<title
+>Módulo de Informação do OpenGL</title>
+
+<para
+>Esta página exibe informações sobre a implementação <acronym
+>OpenGL</acronym
+> instalada no seu sistema. OpenGL (acrônimo do inglês para "Biblioteca Gráfica Aberta") é uma interface independente de hardware e plataforma para gráficos 3D.</para>
+
+<para
+><acronym
+>GLX</acronym
+> é a implementação do OpenGL para o sistema X Window.</para>
+
+<para
+><acronym
+>DRI</acronym
+> (do inglês, Infraestrutura de Renderização Direta) fornece aceleração de hardware para o OpenGL. Você deve possuir uma placa de vídeo com aceleração 3D e drivers instalados corretamente para ela.</para>
+ 
+
+<para
+>Leia mais na página oficial do OpenGL <ulink url="https://www.opengl.org"
+>OpenGL</ulink
+> </para>
+</sect2>
+
+</sect1>
 
 </chapter>
 
@@ -1188,7 +1134,7 @@
 <itemizedlist>
 <listitem
 ><para
->Matthias Hoelzer-Kluepfel &Matthias.Hoelzer-Kluepfel.mail;</para
+>&Matthias.Hoelzer-Kluepfel; &Matthias.Hoelzer-Kluepfel.mail;</para
 ></listitem>
 <listitem
 ><para
@@ -1198,7 +1144,7 @@
 
 <para
 >Documentação com <trademark class="copyright"
->'copyright' 2000 de Michael McBride</trademark
+>'copyright' 2000 de &Mike.McBride;</trademark
 > &Mike.McBride.mail;</para>
 
 <para
@@ -1235,11 +1181,11 @@
 ></listitem>
 <listitem
 ><para
->Matthias Hoelzer-Kluepfel &Matthias.Hoelzer-Kluepfel.mail;</para
+>&Matthias.Hoelzer-Kluepfel; &Matthias.Hoelzer-Kluepfel.mail;</para
 ></listitem>
 <listitem
 ><para
->Martin Jones &Martin.R.Jones.mail;</para
+>&Martin.R.Jones; &Martin.R.Jones.mail;</para
 ></listitem>
 <listitem
 ><para
@@ -1270,8 +1216,7 @@
 >Tradução atual de Marcus Gama <email
 >marcus.gama@gmail.com</email
 ></para
-> 
-&underFDL; &underGPL; </chapter>
+> &underFDL; &underGPL; </chapter>
 
 </book>
 <!--
