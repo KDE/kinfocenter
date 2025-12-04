@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-12-04 00:45+0000\n"
 "PO-Revision-Date: 2023-12-08 19:15+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
@@ -42,61 +42,61 @@ msgid ""
 "page content."
 msgstr "La ilo <command>%1</command> paneis generante paĝenhavon"
 
-#: qml/CommandOutputKCM.qml:105
+#: qml/CommandOutputKCM.qml:107
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
 msgstr "Neniu teksto kongruas al filtrilo"
 
-#: qml/CommandOutputKCM.qml:110
+#: qml/CommandOutputKCM.qml:112
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
 msgstr "Neniuj datumoj haveblas"
 
-#: qml/CommandOutputKCM.qml:123
+#: qml/CommandOutputKCM.qml:125
 #, fuzzy, kde-format
 #| msgid "Report this issue"
 msgid "Report to %1"
 msgstr "Raport ĉi tiun problemon"
 
-#: qml/CommandOutputKCM.qml:189
+#: qml/CommandOutputKCM.qml:191
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
 msgstr "Filtri…"
 
-#: qml/CommandOutputKCM.qml:191
+#: qml/CommandOutputKCM.qml:193
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"
 msgstr "Filtrilo"
 
-#: qml/CommandOutputKCM.qml:203
+#: qml/CommandOutputKCM.qml:205
 #, kde-format
 msgctxt "@action:button close filter header"
 msgid "Close"
 msgstr ""
 
-#: qml/CommandOutputKCM.qml:228
+#: qml/CommandOutputKCM.qml:230
 #, kde-format
 msgctxt "@action:button pauses automatic refreshing"
 msgid "Pause Refreshing"
 msgstr ""
 
-#: qml/CommandOutputKCM.qml:236
+#: qml/CommandOutputKCM.qml:238
 #, kde-format
 msgctxt "@action:button resumes automatic refreshing"
 msgid "Resume Refreshing"
 msgstr ""
 
-#: qml/CommandOutputKCM.qml:243
+#: qml/CommandOutputKCM.qml:245
 #, kde-format
 msgctxt "@action:button copies all displayed text"
 msgid "Copy to Clipboard"
 msgstr "Kopii al Tondujo"
 
-#: qml/CommandOutputKCM.qml:251
+#: qml/CommandOutputKCM.qml:253
 #, fuzzy, kde-format
 #| msgctxt "accessible name for filter input"
 #| msgid "Filter"

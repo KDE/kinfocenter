@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-12-04 00:45+0000\n"
 "PO-Revision-Date: 2025-04-29 12:03+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -46,60 +46,60 @@ msgstr ""
 "Technische details: het hulpmiddel <command>%1</command> is gecrasht tijdens "
 "het genereren van de inhoud van de pagina."
 
-#: qml/CommandOutputKCM.qml:105
+#: qml/CommandOutputKCM.qml:107
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
 msgstr "Geen overeenkomende tekst met het filter"
 
-#: qml/CommandOutputKCM.qml:110
+#: qml/CommandOutputKCM.qml:112
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
 msgstr "Geen gegevens beschikbaar"
 
-#: qml/CommandOutputKCM.qml:123
+#: qml/CommandOutputKCM.qml:125
 #, kde-format
 msgid "Report to %1"
 msgstr "Rapporteer aan %1"
 
-#: qml/CommandOutputKCM.qml:189
+#: qml/CommandOutputKCM.qml:191
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
 msgstr "Filteren…"
 
-#: qml/CommandOutputKCM.qml:191
+#: qml/CommandOutputKCM.qml:193
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"
 msgstr "Filteren"
 
-#: qml/CommandOutputKCM.qml:203
+#: qml/CommandOutputKCM.qml:205
 #, kde-format
 msgctxt "@action:button close filter header"
 msgid "Close"
 msgstr "Sluiten"
 
-#: qml/CommandOutputKCM.qml:228
+#: qml/CommandOutputKCM.qml:230
 #, kde-format
 msgctxt "@action:button pauses automatic refreshing"
 msgid "Pause Refreshing"
 msgstr "Verversen pauzeren"
 
-#: qml/CommandOutputKCM.qml:236
+#: qml/CommandOutputKCM.qml:238
 #, kde-format
 msgctxt "@action:button resumes automatic refreshing"
 msgid "Resume Refreshing"
 msgstr "Verversen hervatten"
 
-#: qml/CommandOutputKCM.qml:243
+#: qml/CommandOutputKCM.qml:245
 #, kde-format
 msgctxt "@action:button copies all displayed text"
 msgid "Copy to Clipboard"
 msgstr "Naar klembord kopiëren"
 
-#: qml/CommandOutputKCM.qml:251
+#: qml/CommandOutputKCM.qml:253
 #, kde-format
 msgctxt "@action:button opens filter bar"
 msgid "Filter"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-12-04 00:45+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -43,60 +43,60 @@ msgid ""
 "page content."
 msgstr "技术细节：生成页面内容时 <command>%1</command> 工具程序发生了崩溃。"
 
-#: qml/CommandOutputKCM.qml:105
+#: qml/CommandOutputKCM.qml:107
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
 msgstr "没有匹配此过滤条件的文本"
 
-#: qml/CommandOutputKCM.qml:110
+#: qml/CommandOutputKCM.qml:112
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
 msgstr "没有可用数据"
 
-#: qml/CommandOutputKCM.qml:123
+#: qml/CommandOutputKCM.qml:125
 #, kde-format
 msgid "Report to %1"
 msgstr "报告到 %1"
 
-#: qml/CommandOutputKCM.qml:189
+#: qml/CommandOutputKCM.qml:191
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
 msgstr "过滤…"
 
-#: qml/CommandOutputKCM.qml:191
+#: qml/CommandOutputKCM.qml:193
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"
 msgstr "过滤"
 
-#: qml/CommandOutputKCM.qml:203
+#: qml/CommandOutputKCM.qml:205
 #, kde-format
 msgctxt "@action:button close filter header"
 msgid "Close"
 msgstr "关闭"
 
-#: qml/CommandOutputKCM.qml:228
+#: qml/CommandOutputKCM.qml:230
 #, kde-format
 msgctxt "@action:button pauses automatic refreshing"
 msgid "Pause Refreshing"
 msgstr "暂停刷新"
 
-#: qml/CommandOutputKCM.qml:236
+#: qml/CommandOutputKCM.qml:238
 #, kde-format
 msgctxt "@action:button resumes automatic refreshing"
 msgid "Resume Refreshing"
 msgstr "继续刷新"
 
-#: qml/CommandOutputKCM.qml:243
+#: qml/CommandOutputKCM.qml:245
 #, kde-format
 msgctxt "@action:button copies all displayed text"
 msgid "Copy to Clipboard"
 msgstr "复制到剪贴板"
 
-#: qml/CommandOutputKCM.qml:251
+#: qml/CommandOutputKCM.qml:253
 #, kde-format
 msgctxt "@action:button opens filter bar"
 msgid "Filter"

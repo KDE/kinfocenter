@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-12-04 00:45+0000\n"
 "PO-Revision-Date: 2025-05-25 16:45+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -45,60 +45,60 @@ msgstr ""
 "Teknistä tietoa: <command>%1</command>-työkalu kaatui luodessaan sivun "
 "sisältöä."
 
-#: qml/CommandOutputKCM.qml:105
+#: qml/CommandOutputKCM.qml:107
 #, kde-format
 msgctxt "@info"
 msgid "No text matching the filter"
 msgstr "Ei suodatinta vastaavaa tekstiä"
 
-#: qml/CommandOutputKCM.qml:110
+#: qml/CommandOutputKCM.qml:112
 #, kde-format
 msgctxt "@info the KCM has no data to display"
 msgid "No data available"
 msgstr "Tietoa ei saatavilla"
 
-#: qml/CommandOutputKCM.qml:123
+#: qml/CommandOutputKCM.qml:125
 #, kde-format
 msgid "Report to %1"
 msgstr "Ilmoita: %1"
 
-#: qml/CommandOutputKCM.qml:189
+#: qml/CommandOutputKCM.qml:191
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
 msgstr "Suodata…"
 
-#: qml/CommandOutputKCM.qml:191
+#: qml/CommandOutputKCM.qml:193
 #, kde-format
 msgctxt "accessible name for filter input"
 msgid "Filter"
 msgstr "Suodatin"
 
-#: qml/CommandOutputKCM.qml:203
+#: qml/CommandOutputKCM.qml:205
 #, kde-format
 msgctxt "@action:button close filter header"
 msgid "Close"
 msgstr "Sulje"
 
-#: qml/CommandOutputKCM.qml:228
+#: qml/CommandOutputKCM.qml:230
 #, kde-format
 msgctxt "@action:button pauses automatic refreshing"
 msgid "Pause Refreshing"
 msgstr "Keskeytä virkistys"
 
-#: qml/CommandOutputKCM.qml:236
+#: qml/CommandOutputKCM.qml:238
 #, kde-format
 msgctxt "@action:button resumes automatic refreshing"
 msgid "Resume Refreshing"
 msgstr "Jatka virkistystä"
 
-#: qml/CommandOutputKCM.qml:243
+#: qml/CommandOutputKCM.qml:245
 #, kde-format
 msgctxt "@action:button copies all displayed text"
 msgid "Copy to Clipboard"
 msgstr "Kopioi leikepöydälle"
 
-#: qml/CommandOutputKCM.qml:251
+#: qml/CommandOutputKCM.qml:253
 #, kde-format
 msgctxt "@action:button opens filter bar"
 msgid "Filter"
