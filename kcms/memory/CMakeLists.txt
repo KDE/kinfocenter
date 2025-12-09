@@ -7,7 +7,7 @@ set_package_properties(dmidecode PROPERTIES TYPE RUNTIME)
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kcm_memory\")
 
-kinfocenter_add_kcm(kcm_memory main.cpp)
+kinfocenter_add_kcm2(kcm_memory org.kde.kcm.memory main.cpp kcm_memory.cpp)
 target_link_libraries(kcm_memory PRIVATE
     KF6::AuthCore
     KF6::CoreAddons
