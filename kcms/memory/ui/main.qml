@@ -8,9 +8,11 @@ import QtQuick 2.15
 
 import org.kde.kirigami 2.20 as Kirigami
 import org.kde.kcmutils as KCM
+import org.kde.kcm.memory
 
 KCM.SimpleKCM {
-    id: kcm_memory
+    required property KCMMemory kcm
+
     Kirigami.Theme.colorSet: Kirigami.Theme.View
     Kirigami.Theme.inherit: false
 

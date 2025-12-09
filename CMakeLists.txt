@@ -52,6 +52,14 @@ macro(kinfocenter_add_kcm target)
     kcmutils_add_qml_kcm(${target} DISABLE_DESKTOP_FILE_GENERATION SOURCES ${ARGN} INSTALL_NAMESPACE plasma/kcms/kinfocenter)
 endmacro()
 
+macro(kinfocenter_add_kcm2 target uri)
+    kcmutils_add_qml_kcm2(${target}
+        URI ${uri}
+        DISABLE_DESKTOP_FILE_GENERATION
+        SOURCES ${ARGN}
+        INSTALL_NAMESPACE plasma/kcms/kinfocenter)
+endmacro()
+
 if(BUILD_DOC)
     find_package(KF6DocTools ${KF6_MIN_VERSION})
     set_package_properties(KF6DocTools PROPERTIES

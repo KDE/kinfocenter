@@ -20,5 +20,8 @@ ecm_add_qml_module(KInfoCenterInternal
     QML_FILES qml/CommandOutputKCM.qml
 )
 ecm_finalize_qml_module(KInfoCenterInternal)
+# Somehow qmlls doesn't find it in bin even though the qmlls.ini tells it to look there :(
+add_custom_target(link_bin_org ALL
+                  COMMAND ${CMAKE_COMMAND} -E create_symlink bin/org ${CMAKE_BINARY_DIR}/org)
 
 install(TARGETS KInfoCenterInternal ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} LIBRARY NAMELINK_SKIP)
