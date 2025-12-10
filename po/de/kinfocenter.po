@@ -3,26 +3,27 @@
 # Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
 # SPDX-FileCopyrightText: 2023 Johannes Obermayr <johannesobermayr@gmx.de>
+# SPDX-FileCopyrightText: 2025 Oliver Schramm <oliver.schramm97@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-04 00:45+0000\n"
-"PO-Revision-Date: 2023-12-21 16:56+0100\n"
-"Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
+"PO-Revision-Date: 2025-12-01 23:18+0100\n"
+"Last-Translator: Oliver Schramm <oliver.schramm97@gmail.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 25.08.3\n"
 
 #: CommandOutputContext.cpp:127 CommandOutputContext.cpp:149
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Could not load page content"
-msgstr ""
+msgstr "Seiteninhalt kann nicht geladen werden"
 
 #: CommandOutputContext.cpp:129
 #, kde-kuit-format
@@ -32,18 +33,20 @@ msgid ""
 "this page, but could not be found. You may be able to install it using your "
 "package manager; either way, please report this packaging issue to %2."
 msgstr ""
+"Technische Details: Das Programm <command>%1</command> ist erforderlich, um "
+"diese Seite anzuzeigen, konnte jedoch nicht gefunden werden. Möglicherweise "
+"können Sie es über Ihren Paketmanager installieren. Bitte melden Sie dieses "
+"Paketierungsproblem in jedem Fall an %2."
 
 #: CommandOutputContext.cpp:150
-#, fuzzy, kde-kuit-format
-#| msgctxt "@info"
-#| msgid "The <command>%1</command> tool crashed while generating page content"
+#, kde-kuit-format
 msgctxt "@Info"
 msgid ""
 "Technical details: the <command>%1</command> tool crashed while generating "
 "page content."
 msgstr ""
-"Das Werkzeug <command>%1</command> stürzte beim Erstellen des Seiteninhalts "
-"ab"
+"Technische Details: Das Programm <command>%1</command> ist bei der "
+"Erstellung des Seiteninhalts abgestürzt."
 
 #: qml/CommandOutputKCM.qml:107
 #, kde-format
@@ -58,10 +61,9 @@ msgid "No data available"
 msgstr "Keine Daten verfügbar"
 
 #: qml/CommandOutputKCM.qml:125
-#, fuzzy, kde-format
-#| msgid "Report this issue"
+#, kde-format
 msgid "Report to %1"
-msgstr "Dieses Problem berichten"
+msgstr "An %1 melden"
 
 #: qml/CommandOutputKCM.qml:191
 #, kde-format
@@ -79,19 +81,19 @@ msgstr "Filter"
 #, kde-format
 msgctxt "@action:button close filter header"
 msgid "Close"
-msgstr ""
+msgstr "Schließen"
 
 #: qml/CommandOutputKCM.qml:230
 #, kde-format
 msgctxt "@action:button pauses automatic refreshing"
 msgid "Pause Refreshing"
-msgstr ""
+msgstr "Aktualisieren pausieren"
 
 #: qml/CommandOutputKCM.qml:238
 #, kde-format
 msgctxt "@action:button resumes automatic refreshing"
 msgid "Resume Refreshing"
-msgstr ""
+msgstr "Aktualisieren fortsetzen"
 
 #: qml/CommandOutputKCM.qml:245
 #, kde-format
@@ -100,9 +102,7 @@ msgid "Copy to Clipboard"
 msgstr "In die Zwischenablage kopieren"
 
 #: qml/CommandOutputKCM.qml:253
-#, fuzzy, kde-format
-#| msgctxt "accessible name for filter input"
-#| msgid "Filter"
+#, kde-format
 msgctxt "@action:button opens filter bar"
 msgid "Filter"
 msgstr "Filter"
