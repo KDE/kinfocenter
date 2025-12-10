@@ -1,20 +1,21 @@
 # SPDX-FileCopyrightText: 2024 Johannes Obermayr <johannesobermayr@gmx.de>
 # SPDX-FileCopyrightText: 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2021 Burkhard Lück <lueck@hube-lueck.de>
 # SPDX-FileCopyrightText: 2014, 2015, 2016, 2022, 2023 Frederik Schwarzer <schwarzer@kde.org>
+# SPDX-FileCopyrightText: 2025 Oliver Schramm <oliver.schramm97@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm_about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 14:41+0000\n"
-"PO-Revision-Date: 2024-12-28 23:11+0100\n"
-"Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
+"PO-Revision-Date: 2025-12-07 20:22+0100\n"
+"Last-Translator: Oliver Schramm <oliver.schramm97@gmail.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.03.70\n"
+"X-Generator: Lokalize 25.08.3\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -124,7 +125,7 @@ msgstr "Qt-Version:"
 #: MemoryEntry.cpp:23
 #, kde-format
 msgid "Memory:"
-msgstr "Speicher:"
+msgstr "Arbeitsspeicher:"
 
 #: MemoryEntry.cpp:111
 #, kde-format
@@ -132,29 +133,23 @@ msgctxt ""
 "@label, %1 is the total amount of installed system memory, %2 is the amount "
 "of which is usable, both expressed as 7.7 GiB"
 msgid "%1 of RAM (%2 usable)"
-msgstr ""
+msgstr "%1 (%2 nutzbar)"
 
 #: MemoryEntry.cpp:119
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt ""
 "@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
-msgstr "%1 Arbeitsspeicher"
+msgstr "%1"
 
 #: MemoryEntry.cpp:126
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
-msgstr "%1 Arbeitsspeicher"
+msgstr "%1 nutzbar"
 
 #: MemoryEntry.cpp:132
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
 msgstr "Unbekannt"
@@ -166,6 +161,8 @@ msgid ""
 "Some memory is reserved for use by the kernel or system hardware such as "
 "integrated graphics memory."
 msgstr ""
+"Ein Teil des Speichers ist für den Kernel oder die Systemhardware "
+"reserviert, beispielsweise für eine integrierte Grafikkarte."
 
 #: MemoryEntry.cpp:148
 #, kde-format
@@ -175,6 +172,9 @@ msgid ""
 "some memory is reserved for use by the kernel or system hardware, such as "
 "integrated graphics memory."
 msgstr ""
+"Der nutzbare Speicher kann geringer sein als angezeigt, da ein Teil des "
+"Speichers für den Kernel oder die Systemhardware reserviert ist, "
+"beispielsweise für eine integrierte Grafikkarte."
 
 #: MemoryEntry.cpp:157
 #, kde-format
@@ -184,6 +184,9 @@ msgid ""
 "because some memory is reserved for use by the kernel or system hardware, "
 "such as integrated graphics memory."
 msgstr ""
+"Die angezeigte Speichergröße kann geringer sein als der eingebaute Speicher, "
+"da ein Teil des Speichers für den Kernel oder die Systemhardware reserviert "
+"ist, beispielsweise für eine integrierte Grafikkarte."
 
 #: OSVersionEntry.cpp:9
 #, kde-format
@@ -246,20 +249,16 @@ msgid "Hardware"
 msgstr "Hardware"
 
 #: ui/main.qml:218
-#, fuzzy, kde-format
-#| msgctxt "@info:tooltip"
-#| msgid "Launch %1"
+#, kde-format
 msgctxt "@action:button"
 msgid "Launch %1…"
-msgstr "%1 starten"
+msgstr "%1 starten …"
 
 #: ui/main.qml:219
-#, fuzzy, kde-format
-#| msgctxt "@action:button launches kinfocenter from systemsettings"
-#| msgid "More System Information"
+#, kde-format
 msgctxt "@info:tooltip launches kinfocenter from systemsettings"
 msgid "See more detailed system information"
-msgstr "Weitere Systeminformationen anzeigen"
+msgstr "Detailliertere Systeminformationen anzeigen"
 
 #: ui/main.qml:227 ui/main.qml:235
 #, kde-format
