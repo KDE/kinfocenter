@@ -21,7 +21,7 @@ QQC2.ItemDelegate {
                     elide: Text.ElideMiddle
                     horizontalAlignment: Text.AlignLeft
                     font: Kirigami.Theme.smallFont
-                    text: i18nc("@label local file system path", 'Path:')
+                    text: i18nc("@label local file system path", "Path:")
                 }
 
                 Kirigami.UrlButton {
@@ -37,7 +37,7 @@ QQC2.ItemDelegate {
                     elide: Text.ElideMiddle
                     horizontalAlignment: Text.AlignLeft
                     font: Kirigami.Theme.smallFont
-                    text: i18nc("@label labels a samba url or path", 'Shared at:')
+                    text: i18nc("@label labels a samba url or path", "Shared at:")
                 }
 
                 // either fully qualified url
