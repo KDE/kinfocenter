@@ -62,7 +62,7 @@
 <legalnotice
 >&FDLNotice;</legalnotice>
 <date
->2018-03-31</date>
+>2018‒03‒31</date>
 <releaseinfo
 >Plasma 5.12</releaseinfo>
 
@@ -99,7 +99,7 @@
 <para
 >Bu sonraki bölüm, bilgi merkezinin kullanımının ayrıntılarını verir. Bireysel modüller hakkında bilgi için lütfen <link linkend="module"
 >Öntanımlı &infocenter; Modülleri</link
->'ne bakın. </para>
+>’ne bakın. </para>
 
 <sect1 id="information-center-starting">
 <title
@@ -133,7 +133,7 @@
 ><command
 >kinfocenter</command
 ></userinput
-> yazın ve &Enter;'e basın. </para>
+> yazın ve &Enter;’e basın. </para>
 </listitem>
 
 <listitem>
@@ -178,7 +178,7 @@
 >KCM</acronym
 > modülleri arasında gezinmek için ağaç görünümünde modüle sol tıklayın. Ayrıca <acronym
 >KCM</acronym
->'ler arasında gezinmek için ok düğmelerini kullanabilir ve &Enter;'e basabilirsiniz; bu eylem modülü seçecektir. Modül şimdi &infocenter; uygulamasının ana panelinde görünecektir. Ağaç görünümündeki bazı ögeler kategorilerdir; bu ögeleri genişletmek ve daraltmak için sol tıklayabilir veya yeniden &Enter;'e basabilirsiniz. Bu, kategori altındaki modülleri gösterecektir. Aşağıdaki seçenekleri göstermek için modül listesine sağ tıklayabilirsiniz: <itemizedlist>
+>’ler arasında gezinmek için ok düğmelerini kullanabilir ve &Enter;’e basabilirsiniz; bu eylem modülü seçecektir. Modül şimdi &infocenter; uygulamasının ana panelinde görünecektir. Ağaç görünümündeki bazı ögeler kategorilerdir; bu ögeleri genişletmek ve daraltmak için sol tıklayabilir veya yeniden &Enter;’e basabilirsiniz. Bu, kategori altındaki modülleri gösterecektir. Aşağıdaki seçenekleri göstermek için modül listesine sağ tıklayabilirsiniz: <itemizedlist>
   <listitem
 ><para
 ><guimenuitem
@@ -292,7 +292,7 @@
 
 <para
 >Destek kanallarında yardım isterken veya <ulink url="https://bugs.kde.org"
->&kde;'nin hata izleyicisinde</ulink
+>&kde;’nin hata izleyicisinde</ulink
 > bir hata kaydı açarken buradaki bilgiyi kullanın.</para>
 </sect1>
 
@@ -318,7 +318,7 @@
 <para
 >İlk tür, fiziksel bellek olarak adlandırılır. Bu, bilgisayarınızın içindeki bellek yongalarında bulunan bellektir. Bu, bilgisayarınızı satın aldığınızda satın aldığınız <acronym
 >RAM</acronym
->'dir (Rastgele Erişilen Bellek - Random Access Memory).</para>
+>’dir (Rastgele Erişilen Bellek — Random Access Memory).</para>
 
 <para
 >İkinci tür bellek, sanal veya takas belleği olarak adlandırılır. Bu bellek bloku, aslında sabit sürücüdeki boşluktur. İşletim sistemi, <quote
@@ -455,7 +455,7 @@
 >İşlemciler:</guisubmenu
 > Bunlar bilgisayarınızın <acronym
 >CPU</acronym
->'larıdır (Merkezi İşlem Birimleri ).</para
+>’larıdır (Merkezi İşlem Birimleri ).</para
 ></listitem>
 <listitem
 ><para
@@ -593,7 +593,7 @@
 <para
 >Alt bilgi paneli, şu anda seçili aygıtların <acronym
 >UDI</acronym
->'larını gösterir. Bu, benzersiz aygıt tanımlayıcısıdır.</para>
+>’larını gösterir. Bu, benzersiz aygıt tanımlayıcısıdır.</para>
 <para
 >Tüm etiketler seçilip kopyalanabilme özelliğine sahiptir.</para>
 </sect3>
@@ -621,12 +621,12 @@
 >PC</acronym
 >) mimarisinde kullanılabilen yalnızca on altı <acronym
 >IRQ</acronym
-> (0-15) vardır. .</para>
+> (0–15) vardır.</para>
 
 <para
 >Birçok donanım sorunu, iki aygıt aynı <acronym
 >IRQ</acronym
->'yi kullanmaya çalıştığında veya yazılım bir aygıtın gerçekten yapılandırıldığı aygıttan farklı bir <acronym
+>’yi kullanmaya çalıştığında veya yazılım bir aygıtın gerçekten yapılandırıldığı aygıttan farklı bir <acronym
 >IRQ</acronym
 > kullanmak üzere yanlış yapılandırıldığında <acronym
 >IRQ</acronym
@@ -640,7 +640,7 @@
 ></note>
 
 <para
->&Linux;'ta bu bilgi, yalnızca <filename class="devicefile"
+>&Linux;’ta bu bilgi, yalnızca <filename class="devicefile"
 >/proc</filename
 > sözde dosya sistemi çekirdeğe derlendiğinde kullanılabilen <filename class="devicefile"
 >/proc/interrupts</filename
@@ -666,13 +666,13 @@
 <para
 >Bu sayfa <acronym
 >DMA</acronym
-> (Direct Memory Access - Doğrudan Hafıza Erişimi) Kanalları hakkında bilgi verir. Bir <acronym
+> (Direct Memory Access — Doğrudan Hafıza Erişimi) Kanalları hakkında bilgi verir. Bir <acronym
 >DMA</acronym
 > kanalı, aygıtların işlemciyi pas geçerek hafızayla bilgi alışverişlerini sağlayan bir doğrudan bağlantıdır. Tipik olarak, i386-mimarisi sistemleri (<acronym
 >PC</acronym
->'ler - Personal Computer -- Kişisel Bilgisayar) sekiz <acronym
+>’ler —Personal Computer— Kişisel Bilgisayar) sekiz <acronym
 >DMA</acronym
-> Kanalına sahiptir (0-7).</para>
+> Kanalına sahiptir (0–7).</para>
 
 <note
 > <para
@@ -682,7 +682,7 @@
 > </note>
 
 <para
->&Linux;'ta bu bilgi, yalnızca <filename class="devicefile"
+>&Linux;’ta bu bilgi, yalnızca <filename class="devicefile"
 >/proc</filename
 > sözde dosya sistemi çekirdeğe derlendiğinde kullanılabilen <filename class="devicefile"
 >/proc/dma</filename
@@ -740,7 +740,7 @@
 ></note>
 
 <para
->&Linux;'ta bu bilgi, yalnızca <filename class="devicefile"
+>&Linux;’ta bu bilgi, yalnızca <filename class="devicefile"
 >/proc</filename
 > sözde dosya sistemi çekirdeğe derlendiğinde kullanılabilen <filename class="devicefile"
 >/proc/ioports</filename
@@ -780,7 +780,7 @@
 > </note>
 
 <para
->&Linux;'ta bu bilgi, yalnızca <filename class="devicefile"
+>&Linux;’ta bu bilgi, yalnızca <filename class="devicefile"
 >/proc</filename
 > sözde dosya sistemi çekirdeğe derlendiğinde kullanılabilen <filename class="devicefile"
 >/proc/pci</filename
@@ -830,7 +830,7 @@
 >smbstatus</command
 > ve <command
 >showmount</command
-> programlarının ön yüzüdür. Smbstatus, geçerli &Samba; bağlantıları hakkında rapor verir ve &SMB; protokolünü (Server Message Block - Sunucu İletisi Bloku) uygulayan &Samba; paketinin bir parçasıdır; NetBIOS veya LanManager protokolü olarak da adlandırılır.</para>
+> programlarının ön yüzüdür. Smbstatus, geçerli &Samba; bağlantıları hakkında rapor verir ve &SMB; protokolünü (Server Message Block — Sunucu İletisi Bloku) uygulayan &Samba; paketinin bir parçasıdır; NetBIOS veya LanManager protokolü olarak da adlandırılır.</para>
 
 <para
 >Bu protokol,çeşitli &Microsoft; &Windows; sürümleri kurulu aygıtları da içeren ağdaki aygıtlar üzerinde yazıcı ve sürücü paylaşımı hizmetleri sağlamak için kullanılabilir.</para>
@@ -869,7 +869,7 @@
 >smbd</command
 >) tarafından yürütülür; bir sonraki sütun, <command
 >smbd</command
->'nin <abbrev
+>’nin <abbrev
 >kimlik</abbrev
 > (<acronym
 >pid</acronym
@@ -918,7 +918,7 @@
 <para
 >Büyük listenin altındaki dört onay kutusuyla listede hangi olayların görüntüleneceğine karar verebilirsiniz. Sonuçları görmek için <guibutton
 >Güncelle</guibutton
->'ye basmanız gerekir. &Samba; günlük düzeyiniz çok düşükse her şeyi göremezsiniz.</para>
+>’ye basmanız gerekir. &Samba; günlük düzeyiniz çok düşükse her şeyi göremezsiniz.</para>
 
 <para
 >Bir sütunun başlığına tıklayarak listeyi bu sütuna göre sıralayabilirsiniz.</para>
@@ -953,15 +953,15 @@
 <para
 ><guibutton
 >Güncelle</guibutton
->'ye basarsanız <literal
+>’ye basarsanız <literal
 >*</literal
 > bilgisayarından <literal
 >*</literal
 > bilgisayarına hangi sıklıkla bağlantı kurulduğunu göreceksiniz. Şimdi <guilabel
 >Genişletilmiş bilgisayar bilgisini göster</guilabel
->'i etkinleştirin ve <guibutton
+>’i etkinleştirin ve <guibutton
 >Güncelle</guibutton
->'ye yeniden basın. Şimdi <literal
+>’ye yeniden basın. Şimdi <literal
 >*</literal
 > sembolü ile eşleşen her bilgisayarı göreceksiniz ve onunla kaç bağlantı kurulduğunu öğrenebileceksiniz.</para>
 
@@ -982,7 +982,7 @@
 <para
 >Şimdi her dosyaya hangi sıklıkla ulaşıldığını görürsünüz. <guilabel
 >Genişletilmiş bilgisayar bilgisini göster</guilabel
->'i de seçerseniz her kullanıcının her dosyayı hangi sıklıkla açtığını da görebileceksiniz.</para>
+>’i de seçerseniz her kullanıcının her dosyayı hangi sıklıkla açtığını da görebileceksiniz.</para>
 
 <para
 ><guilabel
@@ -1119,7 +1119,7 @@
 <para
 >Bu sayfa, kurulu <acronym
 >OpenGL</acronym
-> uygulaması hakkında bilgi görüntüler. OpenGL ("Open Graphics Library" - Açık Grafikler Kitaplığı), 3B grafikler için donanımdan bağımsız bir çapraz platform arabirimidir.</para>
+> uygulaması hakkında bilgi görüntüler. OpenGL ("Open Graphics Library" — Açık Grafikler Kitaplığı), 3B grafikler için donanımdan bağımsız bir çapraz platform arabirimidir.</para>
 
 <para
 ><acronym
@@ -1149,7 +1149,7 @@
 <para
 >&infocenter;</para>
 <para
->Program telif hakkı 1997-2001 &infocenter; Geliştiricileri</para>
+>Program telif hakkı 1997–2001 &infocenter; Geliştiricileri</para>
 <para
 >Katkıda Bulunanlar:</para>
 
