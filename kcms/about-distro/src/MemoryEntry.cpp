@@ -12,8 +12,9 @@
 #ifdef UDEV_FOUND
 #include <libudev.h>
 #endif
-#elif defined(Q_OS_FREEBSD)
+#elif defined(Q_OS_FREEBSD) || defined(Q_OS_OPENBSD)
 // clang-format off
+#include <unistd.h>
 #include <sys/types.h>
 #include <sys/sysctl.h>
 // clang-format on
@@ -58,6 +59,13 @@ std::optional<qlonglong> MemoryEntry::calculateTotalRam()
     }
 
     return totalBytes;
+#elif defined(Q_OS_OPENBSD)
+    int64_t memSize = 0;
+    int mib[] = {CTL_HW, HW_PHYSMEM64};
+    size_t sz = sizeof(memSize);
+    if (sysctl(mib, 2, &memSize, &sz, NULL, 0) == 0) {
+        return memSize;
+    }
 #endif
 
     /*
@@ -79,6 +87,16 @@ std::optional<qlonglong> MemoryEntry::calculateAvailableRam()
         // manpage: "sizes are given as multiples of mem_unit bytes"
         return qlonglong(info.totalram) * info.mem_unit;
     }
+#elif defined(Q_OS_OPENBSD)
+    struct uvmexp uvmexp;
+    int mib[] = {CTL_VM, VM_UVMEXP};
+    size_t sz = sizeof(uvmexp);
+    if (sysctl(mib, 2, &uvmexp, &sz, NULL, 0) == 0) {
+        int64_t pagesize = uvmexp.pagesize;
+        int64_t available = (int64_t)(uvmexp.free + uvmexp.inactive) * pagesize;
+        return available;
+    }
+
 #elif defined(Q_OS_FREEBSD)
     /* Stuff for sysctl */
     unsigned long memory;
