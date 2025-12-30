@@ -1,0 +1,273 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the kinfocenter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: kinfocenter\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-11-17 14:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n < 11 ? "
+"3 : 4\n"
+
+#: CPUEntry.cpp:17
+#, kde-format
+msgid "Processor:"
+msgid_plural "Processors:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: CPUEntry.cpp:22
+#, kde-format
+msgctxt ""
+"unknown CPU type/product name; presented as `Processors: 4 × Unknown Type'"
+msgid "Unknown Type"
+msgstr ""
+
+#: GPUEntry.cpp:17
+#, kde-format
+msgctxt "@label %1 is the GPU index number"
+msgid "Graphics Processor %1:"
+msgstr ""
+
+#: GPUEntry.cpp:18
+#, kde-format
+msgid "Graphics Processor:"
+msgstr ""
+
+#: GPUEntry.cpp:28
+#, kde-format
+msgctxt "@label GPU type"
+msgid "integrated"
+msgstr ""
+
+#: GPUEntry.cpp:30
+#, kde-format
+msgctxt "@label GPU type"
+msgid "discrete"
+msgstr ""
+
+#: GPUEntry.cpp:32
+#, kde-format
+msgctxt "@label GPU type. GPU of a virtual machine"
+msgid "virtual"
+msgstr ""
+
+#: GraphicsPlatformEntry.cpp:10
+#, kde-format
+msgid "Graphics Platform:"
+msgstr ""
+
+#: KernelEntry.cpp:11
+#, kde-format
+msgid "Kernel Version:"
+msgstr ""
+
+#: KernelEntry.cpp:23
+#, kde-format
+msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
+msgid "%1 (%2-bit)"
+msgstr ""
+
+#: main.cpp:199
+#, kde-format
+msgctxt "@label"
+msgid "Manufacturer:"
+msgstr ""
+
+#: main.cpp:202 main.cpp:219
+#, kde-format
+msgctxt "@label"
+msgid "Product Name:"
+msgstr ""
+
+#: main.cpp:205
+#, kde-format
+msgctxt "@label"
+msgid "System Version:"
+msgstr ""
+
+#: main.cpp:208 main.cpp:222
+#, kde-format
+msgctxt "@label"
+msgid "Serial Number:"
+msgstr ""
+
+#: main.cpp:212 main.cpp:229
+#, kde-format
+msgctxt "@label unknown entry in table"
+msgid "Unknown:"
+msgstr ""
+
+#: main.cpp:225
+#, kde-format
+msgctxt "@label uboot is the name of a bootloader for embedded devices"
+msgid "U-Boot Version:"
+msgstr ""
+
+#: main.cpp:263
+#, kde-format
+msgid "KDE Frameworks Version:"
+msgstr ""
+
+#: main.cpp:264
+#, kde-format
+msgid "Qt Version:"
+msgstr ""
+
+#: MemoryEntry.cpp:23
+#, kde-format
+msgid "Memory:"
+msgstr ""
+
+#: MemoryEntry.cpp:111
+#, kde-format
+msgctxt ""
+"@label, %1 is the total amount of installed system memory, %2 is the amount "
+"of which is usable, both expressed as 7.7 GiB"
+msgid "%1 of RAM (%2 usable)"
+msgstr ""
+
+#: MemoryEntry.cpp:119
+#, kde-format
+msgctxt ""
+"@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
+msgid "%1 of RAM"
+msgstr ""
+
+#: MemoryEntry.cpp:126
+#, kde-format
+msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
+msgid "%1 of usable RAM"
+msgstr ""
+
+#: MemoryEntry.cpp:132
+#, kde-format
+msgctxt "@label, Unknown amount of system memory"
+msgid "Unknown"
+msgstr ""
+
+#: MemoryEntry.cpp:140
+#, kde-format
+msgctxt "@info:tooltip, referring to system memory or RAM"
+msgid ""
+"Some memory is reserved for use by the kernel or system hardware such as "
+"integrated graphics memory."
+msgstr ""
+
+#: MemoryEntry.cpp:148
+#, kde-format
+msgctxt "@info:tooltip, referring to system memory or RAM"
+msgid ""
+"The amount of usable memory may be lower than the displayed amount because "
+"some memory is reserved for use by the kernel or system hardware, such as "
+"integrated graphics memory."
+msgstr ""
+
+#: MemoryEntry.cpp:157
+#, kde-format
+msgctxt "@info:tooltip, referring to system memory or RAM"
+msgid ""
+"The amount of memory displayed may be lower than the installed amount "
+"because some memory is reserved for use by the kernel or system hardware, "
+"such as integrated graphics memory."
+msgstr ""
+
+#: OSVersionEntry.cpp:9
+#, kde-format
+msgid "Operating System:"
+msgstr ""
+
+#: OSVersionEntry.cpp:11
+#, kde-format
+msgctxt "@label %1 is the distro name, %2 is the version"
+msgid "%1 %2"
+msgstr ""
+
+#: OSVersionEntry.cpp:13
+#, kde-format
+msgctxt ""
+"@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
+"should be a number, or 'rolling'"
+msgid "%1 %2 Build: %3"
+msgstr ""
+
+#: PlasmaEntry.cpp:15
+#, kde-format
+msgid "KDE Plasma Version:"
+msgstr ""
+
+#: ThirdPartyEntry.cpp:12
+#, kde-format
+msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
+msgid ":"
+msgstr ""
+
+#: ui/main.qml:96
+#, kde-format
+msgctxt "@title"
+msgid "Serial Number"
+msgstr ""
+
+#: ui/main.qml:102
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy"
+msgstr ""
+
+#: ui/main.qml:179
+#, kde-format
+msgctxt "@action:button show a hidden entry in an overlay"
+msgid "Show"
+msgstr ""
+
+#: ui/main.qml:191
+#, kde-format
+msgctxt "@title:group"
+msgid "Software"
+msgstr ""
+
+#: ui/main.qml:201
+#, kde-format
+msgctxt "@title:group"
+msgid "Hardware"
+msgstr ""
+
+#: ui/main.qml:218
+#, kde-format
+msgctxt "@action:button"
+msgid "Launch %1…"
+msgstr ""
+
+#: ui/main.qml:219
+#, kde-format
+msgctxt "@info:tooltip launches kinfocenter from systemsettings"
+msgid "See more detailed system information"
+msgstr ""
+
+#: ui/main.qml:227 ui/main.qml:235
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy Details"
+msgstr ""
+
+#: ui/main.qml:238
+#, kde-format
+msgctxt "@action:button Copy Details..."
+msgid "In current language"
+msgstr ""
+
+#: ui/main.qml:244
+#, kde-format
+msgctxt "@action:button Copy Details..."
+msgid "In English"
+msgstr ""
