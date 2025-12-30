@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-12-30 00:42+0000\n"
 "PO-Revision-Date: 2025-12-07 20:22+0100\n"
 "Last-Translator: Oliver Schramm <oliver.schramm97@gmail.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -122,12 +122,12 @@ msgstr "KDE-Frameworks-Version:"
 msgid "Qt Version:"
 msgstr "Qt-Version:"
 
-#: MemoryEntry.cpp:23
+#: MemoryEntry.cpp:24
 #, kde-format
 msgid "Memory:"
 msgstr "Arbeitsspeicher:"
 
-#: MemoryEntry.cpp:111
+#: MemoryEntry.cpp:129
 #, kde-format
 msgctxt ""
 "@label, %1 is the total amount of installed system memory, %2 is the amount "
@@ -135,26 +135,26 @@ msgctxt ""
 msgid "%1 of RAM (%2 usable)"
 msgstr "%1 (%2 nutzbar)"
 
-#: MemoryEntry.cpp:119
+#: MemoryEntry.cpp:137
 #, kde-format
 msgctxt ""
 "@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
 msgstr "%1"
 
-#: MemoryEntry.cpp:126
+#: MemoryEntry.cpp:144
 #, kde-format
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
 msgstr "%1 nutzbar"
 
-#: MemoryEntry.cpp:132
+#: MemoryEntry.cpp:150
 #, kde-format
 msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
 msgstr "Unbekannt"
 
-#: MemoryEntry.cpp:140
+#: MemoryEntry.cpp:158
 #, kde-format
 msgctxt "@info:tooltip, referring to system memory or RAM"
 msgid ""
@@ -164,7 +164,7 @@ msgstr ""
 "Ein Teil des Speichers ist für den Kernel oder die Systemhardware "
 "reserviert, beispielsweise für eine integrierte Grafikkarte."
 
-#: MemoryEntry.cpp:148
+#: MemoryEntry.cpp:166
 #, kde-format
 msgctxt "@info:tooltip, referring to system memory or RAM"
 msgid ""
@@ -176,7 +176,7 @@ msgstr ""
 "Speichers für den Kernel oder die Systemhardware reserviert ist, "
 "beispielsweise für eine integrierte Grafikkarte."
 
-#: MemoryEntry.cpp:157
+#: MemoryEntry.cpp:175
 #, kde-format
 msgctxt "@info:tooltip, referring to system memory or RAM"
 msgid ""

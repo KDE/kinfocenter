@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-12-30 00:42+0000\n"
 "PO-Revision-Date: 2025-07-24 08:18+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
@@ -50,6 +50,20 @@ msgstr "Il n'y a aucun dossier partagé par les utilisateurs"
 msgctxt "@info place holder for empty listview"
 msgid "There are no Samba shares mounted on this system"
 msgstr "Il n'y a aucun partage « Samba » monté sur ce système"
+
+#: ui/ShareListItem.qml:24
+#, fuzzy, kde-format
+#| msgctxt "@title:column samba share dir path"
+#| msgid "Path"
+msgctxt "@label local file system path"
+msgid "Path:"
+msgstr "Emplacement"
+
+#: ui/ShareListItem.qml:40
+#, kde-format
+msgctxt "@label labels a samba url or path"
+msgid "Shared at:"
+msgstr ""
 
 #: ui/ShareListItem.qml:69
 #, kde-kuit-format
@@ -101,10 +115,6 @@ msgstr ""
 #~ msgctxt "@title:column samba share name"
 #~ msgid "Name"
 #~ msgstr "Nom"
-
-#~ msgctxt "@title:column samba share dir path"
-#~ msgid "Path"
-#~ msgstr "Emplacement"
 
 #~ msgctxt "@title:column samba share text comment/description"
 #~ msgid "Comment"

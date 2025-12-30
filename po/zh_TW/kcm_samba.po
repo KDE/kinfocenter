@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-12-30 00:42+0000\n"
 "PO-Revision-Date: 2025-08-08 01:42+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -48,6 +48,20 @@ msgstr "沒有被使用者分享的目錄"
 msgctxt "@info place holder for empty listview"
 msgid "There are no Samba shares mounted on this system"
 msgstr "這個系統上沒有已掛載的 Samba 共享裝置"
+
+#: ui/ShareListItem.qml:24
+#, fuzzy, kde-format
+#| msgctxt "@title:column samba share dir path"
+#| msgid "Path"
+msgctxt "@label local file system path"
+msgid "Path:"
+msgstr "路徑"
+
+#: ui/ShareListItem.qml:40
+#, kde-format
+msgctxt "@label labels a samba url or path"
+msgid "Shared at:"
+msgstr ""
 
 #: ui/ShareListItem.qml:69
 #, kde-kuit-format
@@ -96,10 +110,6 @@ msgstr "開啟資料夾屬性來修改共享裝置設定"
 #~ msgctxt "@title:column samba share name"
 #~ msgid "Name"
 #~ msgstr "名稱"
-
-#~ msgctxt "@title:column samba share dir path"
-#~ msgid "Path"
-#~ msgstr "路徑"
 
 #~ msgctxt "@title:column samba share text comment/description"
 #~ msgid "Comment"

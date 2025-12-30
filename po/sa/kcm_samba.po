@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-12-30 00:42+0000\n"
 "PO-Revision-Date: 2024-12-25 19:45+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -44,6 +44,18 @@ msgstr "उपयोक्तृभिः साझाः निर्देश�
 msgctxt "@info place holder for empty listview"
 msgid "There are no Samba shares mounted on this system"
 msgstr "अस्मिन् प्रणाल्यां साम्बा-भागाः न स्थापिताः"
+
+#: ui/ShareListItem.qml:24
+#, kde-format
+msgctxt "@label local file system path"
+msgid "Path:"
+msgstr ""
+
+#: ui/ShareListItem.qml:40
+#, kde-format
+msgctxt "@label labels a samba url or path"
+msgid "Shared at:"
+msgstr ""
 
 #: ui/ShareListItem.qml:69
 #, kde-kuit-format

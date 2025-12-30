@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-12-30 00:42+0000\n"
 "PO-Revision-Date: 2016-06-19 15:35+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -146,12 +146,12 @@ msgstr "Izdanje Radnih okvira KDE‑a:"
 msgid "Qt Version:"
 msgstr "Izdanje Qt‑a:"
 
-#: MemoryEntry.cpp:23
+#: MemoryEntry.cpp:24
 #, kde-format
 msgid "Memory:"
 msgstr "Memorija:"
 
-#: MemoryEntry.cpp:111
+#: MemoryEntry.cpp:129
 #, kde-format
 msgctxt ""
 "@label, %1 is the total amount of installed system memory, %2 is the amount "
@@ -159,7 +159,7 @@ msgctxt ""
 msgid "%1 of RAM (%2 usable)"
 msgstr ""
 
-#: MemoryEntry.cpp:119
+#: MemoryEntry.cpp:137
 #, fuzzy, kde-format
 #| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
 #| msgid "%1 of RAM"
@@ -168,7 +168,7 @@ msgctxt ""
 msgid "%1 of RAM"
 msgstr "%1 RAM‑a"
 
-#: MemoryEntry.cpp:126
+#: MemoryEntry.cpp:144
 #, fuzzy, kde-format
 #| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
 #| msgid "%1 of RAM"
@@ -177,7 +177,7 @@ msgid "%1 of usable RAM"
 msgstr "%1 RAM‑a"
 
 # >! Contexts.
-#: MemoryEntry.cpp:132
+#: MemoryEntry.cpp:150
 #, fuzzy, kde-format
 #| msgctxt "Unknown amount of RAM"
 #| msgid "Unknown"
@@ -185,7 +185,7 @@ msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
 msgstr "nepoznato"
 
-#: MemoryEntry.cpp:140
+#: MemoryEntry.cpp:158
 #, kde-format
 msgctxt "@info:tooltip, referring to system memory or RAM"
 msgid ""
@@ -193,7 +193,7 @@ msgid ""
 "integrated graphics memory."
 msgstr ""
 
-#: MemoryEntry.cpp:148
+#: MemoryEntry.cpp:166
 #, kde-format
 msgctxt "@info:tooltip, referring to system memory or RAM"
 msgid ""
@@ -202,7 +202,7 @@ msgid ""
 "integrated graphics memory."
 msgstr ""
 
-#: MemoryEntry.cpp:157
+#: MemoryEntry.cpp:175
 #, kde-format
 msgctxt "@info:tooltip, referring to system memory or RAM"
 msgid ""

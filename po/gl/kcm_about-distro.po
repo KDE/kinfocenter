@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-12-30 00:42+0000\n"
 "PO-Revision-Date: 2025-05-03 07:07+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.gal>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
@@ -124,12 +124,12 @@ msgstr "Versión da infraestrutura de KDE:"
 msgid "Qt Version:"
 msgstr "Versión de Qt:"
 
-#: MemoryEntry.cpp:23
+#: MemoryEntry.cpp:24
 #, kde-format
 msgid "Memory:"
 msgstr "Memoria:"
 
-#: MemoryEntry.cpp:111
+#: MemoryEntry.cpp:129
 #, kde-format
 msgctxt ""
 "@label, %1 is the total amount of installed system memory, %2 is the amount "
@@ -137,26 +137,26 @@ msgctxt ""
 msgid "%1 of RAM (%2 usable)"
 msgstr "%1 de RAM (%2 usábel)"
 
-#: MemoryEntry.cpp:119
+#: MemoryEntry.cpp:137
 #, kde-format
 msgctxt ""
 "@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
 msgstr "%1 de RAM"
 
-#: MemoryEntry.cpp:126
+#: MemoryEntry.cpp:144
 #, kde-format
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
 msgstr "%1 de RAM usábel"
 
-#: MemoryEntry.cpp:132
+#: MemoryEntry.cpp:150
 #, kde-format
 msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
 msgstr "Descoñecida"
 
-#: MemoryEntry.cpp:140
+#: MemoryEntry.cpp:158
 #, kde-format
 msgctxt "@info:tooltip, referring to system memory or RAM"
 msgid ""
@@ -166,7 +166,7 @@ msgstr ""
 "Algunha memoria está reservada para que a use o núcleo ou o soporte físico "
 "do sistema, p. ex. unha memoria gráfica integrada."
 
-#: MemoryEntry.cpp:148
+#: MemoryEntry.cpp:166
 #, kde-format
 msgctxt "@info:tooltip, referring to system memory or RAM"
 msgid ""
@@ -178,7 +178,7 @@ msgstr ""
 "memoria está reservada para que a use o núcleo ou o soporte físico do "
 "sistema, p. ex. unha memoria gráfica integrada."
 
-#: MemoryEntry.cpp:157
+#: MemoryEntry.cpp:175
 #, kde-format
 msgctxt "@info:tooltip, referring to system memory or RAM"
 msgid ""

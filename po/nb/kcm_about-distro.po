@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-12-30 00:42+0000\n"
 "PO-Revision-Date: 2025-02-15 19:17+0100\n"
 "Last-Translator: Martin Hansen <mh306602@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -124,12 +124,12 @@ msgstr "KDE Frameworks-versjon:"
 msgid "Qt Version:"
 msgstr "Qt-versjon:"
 
-#: MemoryEntry.cpp:23
+#: MemoryEntry.cpp:24
 #, kde-format
 msgid "Memory:"
 msgstr "Minne:"
 
-#: MemoryEntry.cpp:111
+#: MemoryEntry.cpp:129
 #, kde-format
 msgctxt ""
 "@label, %1 is the total amount of installed system memory, %2 is the amount "
@@ -137,26 +137,26 @@ msgctxt ""
 msgid "%1 of RAM (%2 usable)"
 msgstr ""
 
-#: MemoryEntry.cpp:119
+#: MemoryEntry.cpp:137
 #, fuzzy, kde-format
 msgctxt ""
 "@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
 msgstr "%1 RAM"
 
-#: MemoryEntry.cpp:126
+#: MemoryEntry.cpp:144
 #, fuzzy, kde-format
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
 msgstr "%1 RAM"
 
-#: MemoryEntry.cpp:132
+#: MemoryEntry.cpp:150
 #, fuzzy, kde-format
 msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
 msgstr "Ukjent"
 
-#: MemoryEntry.cpp:140
+#: MemoryEntry.cpp:158
 #, kde-format
 msgctxt "@info:tooltip, referring to system memory or RAM"
 msgid ""
@@ -164,7 +164,7 @@ msgid ""
 "integrated graphics memory."
 msgstr ""
 
-#: MemoryEntry.cpp:148
+#: MemoryEntry.cpp:166
 #, kde-format
 msgctxt "@info:tooltip, referring to system memory or RAM"
 msgid ""
@@ -173,7 +173,7 @@ msgid ""
 "integrated graphics memory."
 msgstr ""
 
-#: MemoryEntry.cpp:157
+#: MemoryEntry.cpp:175
 #, kde-format
 msgctxt "@info:tooltip, referring to system memory or RAM"
 msgid ""

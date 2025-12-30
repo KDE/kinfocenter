@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-12-30 00:42+0000\n"
 "PO-Revision-Date: 2025-10-09 00:53+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -41,6 +41,20 @@ msgstr "사용자가 공유한 디렉터리 없음"
 msgctxt "@info place holder for empty listview"
 msgid "There are no Samba shares mounted on this system"
 msgstr "시스템에 마운트된 Samba 공유 없음"
+
+#: ui/ShareListItem.qml:24
+#, fuzzy, kde-format
+#| msgctxt "@title:column samba share dir path"
+#| msgid "Path"
+msgctxt "@label local file system path"
+msgid "Path:"
+msgstr "경로"
+
+#: ui/ShareListItem.qml:40
+#, kde-format
+msgctxt "@label labels a samba url or path"
+msgid "Shared at:"
+msgstr ""
 
 #: ui/ShareListItem.qml:69
 #, kde-kuit-format
@@ -89,10 +103,6 @@ msgstr "공유 설정을 변경하려면 폴더 속성을 여십시오"
 #~ msgctxt "@title:column samba share name"
 #~ msgid "Name"
 #~ msgstr "이름"
-
-#~ msgctxt "@title:column samba share dir path"
-#~ msgid "Path"
-#~ msgstr "경로"
 
 #~ msgctxt "@title:column samba share text comment/description"
 #~ msgid "Comment"

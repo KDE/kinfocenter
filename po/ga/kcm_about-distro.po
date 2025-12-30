@@ -1,133 +1,133 @@
-# Translation of kcm_about-distro to Norwegian Nynorsk
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the kinfocenter package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# Øystein Steffensen-Alværvik <oysteins.omsetting@protonmail.com>, 2021.
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-30 00:42+0000\n"
-"PO-Revision-Date: 2025-02-16 12:39+0100\n"
-"Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
-"Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
-"Language: nn\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.12.2\n"
-"X-Environment: kde\n"
-"X-Accelerator-Marker: &\n"
-"X-Text-Markup: kde4\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n < 11 ? "
+"3 : 4\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
 msgid "Processor:"
 msgid_plural "Processors:"
-msgstr[0] "Prosessor:"
-msgstr[1] "Prosessorar:"
+msgstr[0] ""
+msgstr[1] ""
 
 #: CPUEntry.cpp:22
 #, kde-format
 msgctxt ""
 "unknown CPU type/product name; presented as `Processors: 4 × Unknown Type'"
 msgid "Unknown Type"
-msgstr "Ukjend type"
+msgstr ""
 
 #: GPUEntry.cpp:17
 #, kde-format
 msgctxt "@label %1 is the GPU index number"
 msgid "Graphics Processor %1:"
-msgstr "Skjermkort %1:"
+msgstr ""
 
 #: GPUEntry.cpp:18
 #, kde-format
 msgid "Graphics Processor:"
-msgstr "Skjermkort:"
+msgstr ""
 
 #: GPUEntry.cpp:28
 #, kde-format
 msgctxt "@label GPU type"
 msgid "integrated"
-msgstr "integrert"
+msgstr ""
 
 #: GPUEntry.cpp:30
 #, kde-format
 msgctxt "@label GPU type"
 msgid "discrete"
-msgstr "diskret"
+msgstr ""
 
 #: GPUEntry.cpp:32
 #, kde-format
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
-msgstr "virtuelt"
+msgstr ""
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
 msgid "Graphics Platform:"
-msgstr "Grafikk­plattform:"
+msgstr ""
 
 #: KernelEntry.cpp:11
 #, kde-format
 msgid "Kernel Version:"
-msgstr "Kjerneversjon:"
+msgstr ""
 
 #: KernelEntry.cpp:23
 #, kde-format
 msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
-msgstr "%1 (%2-bit)"
+msgstr ""
 
 #: main.cpp:199
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
-msgstr "Produsent:"
+msgstr ""
 
 #: main.cpp:202 main.cpp:219
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
-msgstr "Produktnamn:"
+msgstr ""
 
 #: main.cpp:205
 #, kde-format
 msgctxt "@label"
 msgid "System Version:"
-msgstr "System­versjon:"
+msgstr ""
 
 #: main.cpp:208 main.cpp:222
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
-msgstr "Serienummer:"
+msgstr ""
 
 #: main.cpp:212 main.cpp:229
 #, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
-msgstr "Ukjend:"
+msgstr ""
 
 #: main.cpp:225
 #, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
-msgstr "U-Boot-versjon:"
+msgstr ""
 
 #: main.cpp:263
 #, kde-format
 msgid "KDE Frameworks Version:"
-msgstr "KDE Frameworks-versjon:"
+msgstr ""
 
 #: main.cpp:264
 #, kde-format
 msgid "Qt Version:"
-msgstr "Qt-versjon:"
+msgstr ""
 
 #: MemoryEntry.cpp:24
 #, kde-format
 msgid "Memory:"
-msgstr "Minne:"
+msgstr ""
 
 #: MemoryEntry.cpp:129
 #, kde-format
@@ -138,23 +138,23 @@ msgid "%1 of RAM (%2 usable)"
 msgstr ""
 
 #: MemoryEntry.cpp:137
-#, fuzzy, kde-format
+#, kde-format
 msgctxt ""
 "@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
-msgstr "%1 RAM"
+msgstr ""
 
 #: MemoryEntry.cpp:144
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
-msgstr "%1 RAM"
+msgstr ""
 
 #: MemoryEntry.cpp:150
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
-msgstr "Ukjend"
+msgstr ""
 
 #: MemoryEntry.cpp:158
 #, kde-format
@@ -185,13 +185,13 @@ msgstr ""
 #: OSVersionEntry.cpp:9
 #, kde-format
 msgid "Operating System:"
-msgstr "Operativsystem:"
+msgstr ""
 
 #: OSVersionEntry.cpp:11
 #, kde-format
 msgctxt "@label %1 is the distro name, %2 is the version"
 msgid "%1 %2"
-msgstr "%1 %2"
+msgstr ""
 
 #: OSVersionEntry.cpp:13
 #, kde-format
@@ -199,79 +199,75 @@ msgctxt ""
 "@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
 "should be a number, or 'rolling'"
 msgid "%1 %2 Build: %3"
-msgstr "%1 %2 – bygg: %3"
+msgstr ""
 
 #: PlasmaEntry.cpp:15
 #, kde-format
 msgid "KDE Plasma Version:"
-msgstr "KDE Plasma-versjon:"
+msgstr ""
 
 #: ThirdPartyEntry.cpp:12
 #, kde-format
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
-msgstr ":"
+msgstr ""
 
 #: ui/main.qml:96
 #, kde-format
 msgctxt "@title"
 msgid "Serial Number"
-msgstr "Serienummer"
+msgstr ""
 
 #: ui/main.qml:102
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
-msgstr "Kopier"
+msgstr ""
 
 #: ui/main.qml:179
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
-msgstr "Vis"
+msgstr ""
 
 #: ui/main.qml:191
 #, kde-format
 msgctxt "@title:group"
 msgid "Software"
-msgstr "Programvare"
+msgstr ""
 
 #: ui/main.qml:201
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
-msgstr "Maskinvare"
+msgstr ""
 
 #: ui/main.qml:218
-#, fuzzy, kde-format
-#| msgctxt "@info:tooltip"
-#| msgid "Launch %1"
+#, kde-format
 msgctxt "@action:button"
 msgid "Launch %1…"
-msgstr "Start %1"
+msgstr ""
 
 #: ui/main.qml:219
-#, fuzzy, kde-format
-#| msgctxt "@action:button launches kinfocenter from systemsettings"
-#| msgid "More System Information"
+#, kde-format
 msgctxt "@info:tooltip launches kinfocenter from systemsettings"
 msgid "See more detailed system information"
-msgstr "Meir systeminformasjon"
+msgstr ""
 
 #: ui/main.qml:227 ui/main.qml:235
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
-msgstr "Kopier detaljar"
+msgstr ""
 
 #: ui/main.qml:238
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
-msgstr "På noverande språk"
+msgstr ""
 
 #: ui/main.qml:244
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
-msgstr "På engelsk"
+msgstr ""

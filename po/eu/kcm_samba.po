@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-12-30 00:42+0000\n"
 "PO-Revision-Date: 2025-07-23 12:03+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -49,6 +49,20 @@ msgstr "Ez dago erabiltzaileek partekatutako direktoriorik"
 msgctxt "@info place holder for empty listview"
 msgid "There are no Samba shares mounted on this system"
 msgstr "Sistema honetan ez dago muntatuta dagoen Samba partekatzerik"
+
+#: ui/ShareListItem.qml:24
+#, fuzzy, kde-format
+#| msgctxt "@title:column samba share dir path"
+#| msgid "Path"
+msgctxt "@label local file system path"
+msgid "Path:"
+msgstr "Bide-izena"
+
+#: ui/ShareListItem.qml:40
+#, kde-format
+msgctxt "@label labels a samba url or path"
+msgid "Shared at:"
+msgstr ""
 
 #: ui/ShareListItem.qml:69
 #, kde-kuit-format
@@ -101,10 +115,6 @@ msgstr "Ireki karpetaren propietateak partekatze-ezarpenak aldatzeko"
 #~ msgctxt "@title:column samba share name"
 #~ msgid "Name"
 #~ msgstr "Izena"
-
-#~ msgctxt "@title:column samba share dir path"
-#~ msgid "Path"
-#~ msgstr "Bide-izena"
 
 #~ msgctxt "@title:column samba share text comment/description"
 #~ msgid "Comment"

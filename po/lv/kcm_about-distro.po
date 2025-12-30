@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-12-30 00:42+0000\n"
 "PO-Revision-Date: 2025-06-21 14:06+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -124,12 +124,12 @@ msgstr "KDE „Frameworks“ versija:"
 msgid "Qt Version:"
 msgstr "„Qt“ versija:"
 
-#: MemoryEntry.cpp:23
+#: MemoryEntry.cpp:24
 #, kde-format
 msgid "Memory:"
 msgstr "Atmiņa:"
 
-#: MemoryEntry.cpp:111
+#: MemoryEntry.cpp:129
 #, kde-format
 msgctxt ""
 "@label, %1 is the total amount of installed system memory, %2 is the amount "
@@ -137,26 +137,26 @@ msgctxt ""
 msgid "%1 of RAM (%2 usable)"
 msgstr "%1 no RAM (%2 lietojami)"
 
-#: MemoryEntry.cpp:119
+#: MemoryEntry.cpp:137
 #, kde-format
 msgctxt ""
 "@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
 msgstr "%1 no RAM"
 
-#: MemoryEntry.cpp:126
+#: MemoryEntry.cpp:144
 #, kde-format
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
 msgstr "%1 no lietojamā RAM"
 
-#: MemoryEntry.cpp:132
+#: MemoryEntry.cpp:150
 #, kde-format
 msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
 msgstr "Nezināms"
 
-#: MemoryEntry.cpp:140
+#: MemoryEntry.cpp:158
 #, kde-format
 msgctxt "@info:tooltip, referring to system memory or RAM"
 msgid ""
@@ -166,7 +166,7 @@ msgstr ""
 "Daļu atmiņas ir rezervējis kodols vai sistēmas aparatūra, piemēram, "
 "integrētās grafikas atmiņai."
 
-#: MemoryEntry.cpp:148
+#: MemoryEntry.cpp:166
 #, kde-format
 msgctxt "@info:tooltip, referring to system memory or RAM"
 msgid ""
@@ -177,7 +177,7 @@ msgstr ""
 "Lietojamās atmiņas izmērs var būt mazāks par parādīto, jo atsevišķu atmiņu "
 "rezervē kodols vai sistēmas aparatūra, piemēram, integrētā grafika."
 
-#: MemoryEntry.cpp:157
+#: MemoryEntry.cpp:175
 #, kde-format
 msgctxt "@info:tooltip, referring to system memory or RAM"
 msgid ""

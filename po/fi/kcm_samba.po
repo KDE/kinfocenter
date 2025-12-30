@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-12-30 00:42+0000\n"
 "PO-Revision-Date: 2025-08-22 17:17+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -44,6 +44,20 @@ msgstr "Käyttäjien jakamia kansioita ei ole"
 msgctxt "@info place holder for empty listview"
 msgid "There are no Samba shares mounted on this system"
 msgstr "Järjestelmään ei ole liitetty Samba-jakoja"
+
+#: ui/ShareListItem.qml:24
+#, fuzzy, kde-format
+#| msgctxt "@title:column samba share dir path"
+#| msgid "Path"
+msgctxt "@label local file system path"
+msgid "Path:"
+msgstr "Sijainti"
+
+#: ui/ShareListItem.qml:40
+#, kde-format
+msgctxt "@label labels a samba url or path"
+msgid "Shared at:"
+msgstr ""
 
 #: ui/ShareListItem.qml:69
 #, kde-kuit-format
@@ -92,10 +106,6 @@ msgstr "Muuta jaon asetuksia avaamalla kansion ominaisuudet"
 #~ msgctxt "@title:column samba share name"
 #~ msgid "Name"
 #~ msgstr "Nimi"
-
-#~ msgctxt "@title:column samba share dir path"
-#~ msgid "Path"
-#~ msgstr "Sijainti"
 
 #~ msgctxt "@title:column samba share text comment/description"
 #~ msgid "Comment"
