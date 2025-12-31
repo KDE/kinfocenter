@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-30 00:42+0000\n"
-"PO-Revision-Date: 2025-07-23 16:09+0300\n"
+"PO-Revision-Date: 2025-12-30 09:46+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -49,18 +49,16 @@ msgid "There are no Samba shares mounted on this system"
 msgstr "У цій системі немає змонтованих спільних ресурсів Samba"
 
 #: ui/ShareListItem.qml:24
-#, fuzzy, kde-format
-#| msgctxt "@title:column samba share dir path"
-#| msgid "Path"
+#, kde-format
 msgctxt "@label local file system path"
 msgid "Path:"
-msgstr "Шлях"
+msgstr "Шлях:"
 
 #: ui/ShareListItem.qml:40
 #, kde-format
 msgctxt "@label labels a samba url or path"
 msgid "Shared at:"
-msgstr ""
+msgstr "Оприлюднено тут:"
 
 #: ui/ShareListItem.qml:69
 #, kde-kuit-format
