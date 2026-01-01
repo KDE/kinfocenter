@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kcm_samba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-30 00:42+0000\n"
-"PO-Revision-Date: 2025-07-24 19:56+0100\n"
+"PO-Revision-Date: 2025-12-31 18:15+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "First-Translator: Boris Wesslowski <Boris@Wesslowski.com>\n"
-"X-Generator: Lokalize 25.04.3\n"
+"X-Generator: Lokalize 25.12.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: ui/main.qml:18
@@ -51,13 +51,13 @@ msgstr "No hay recursos compartidos de Samba montados en este sistema"
 #, kde-format
 msgctxt "@label local file system path"
 msgid "Path:"
-msgstr ""
+msgstr "Ruta:"
 
 #: ui/ShareListItem.qml:40
 #, kde-format
 msgctxt "@label labels a samba url or path"
 msgid "Shared at:"
-msgstr ""
+msgstr "Compartido en:"
 
 #: ui/ShareListItem.qml:69
 #, kde-kuit-format
