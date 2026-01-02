@@ -9,13 +9,13 @@
 # Frank Weng (a.k.a. Franklin) <franklin at goodhorse dot idv dot tw>, 2008.
 # Franklin Weng <franklin@mail.everfocus.com.tw>, 2010, 2014.
 # Yi-Jyun Pan <pan93412@gmail.com>, 2020.
-# SPDX-FileCopyrightText: 2022, 2025 Kisaragi Hiu <mail@kisaragi-hiu.com>
+# SPDX-FileCopyrightText: 2022, 2025, 2026 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-30 00:42+0000\n"
-"PO-Revision-Date: 2025-08-08 01:42+0900\n"
+"PO-Revision-Date: 2026-01-02 07:42+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 25.07.70\n"
+"X-Generator: Lokalize 25.11.70\n"
 
 #: ui/main.qml:18
 #, kde-format
@@ -50,18 +50,16 @@ msgid "There are no Samba shares mounted on this system"
 msgstr "這個系統上沒有已掛載的 Samba 共享裝置"
 
 #: ui/ShareListItem.qml:24
-#, fuzzy, kde-format
-#| msgctxt "@title:column samba share dir path"
-#| msgid "Path"
+#, kde-format
 msgctxt "@label local file system path"
 msgid "Path:"
-msgstr "路徑"
+msgstr "路徑："
 
 #: ui/ShareListItem.qml:40
 #, kde-format
 msgctxt "@label labels a samba url or path"
 msgid "Shared at:"
-msgstr ""
+msgstr "共享於："
 
 #: ui/ShareListItem.qml:69
 #, kde-kuit-format

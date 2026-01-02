@@ -45,13 +45,13 @@ msgstr "系统没有挂载 SAMBA 共享"
 #, kde-format
 msgctxt "@label local file system path"
 msgid "Path:"
-msgstr ""
+msgstr "路径："
 
 #: ui/ShareListItem.qml:40
 #, kde-format
 msgctxt "@label labels a samba url or path"
 msgid "Shared at:"
-msgstr ""
+msgstr "共享于："
 
 #: ui/ShareListItem.qml:69
 #, kde-kuit-format
