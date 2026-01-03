@@ -1,5 +1,3 @@
-
-
 /*
  * SPDX-FileCopyrightText: 2015 David Edmundson <david@davidedmundson.co.uk>
  * SPDX-FileCopyrightText: 2025 Ismael Asensio <isma.af@gmail.com>
@@ -9,10 +7,8 @@
  */
 import QtQuick
 import QtQuick.Controls as Controls
-import QtQuick.Layouts
 import QtGraphs
 import org.kde.kirigami as Kirigami
-
 
 /**
  * Original comment
@@ -28,151 +24,200 @@ import org.kde.kirigami as Kirigami
  */
 Item {
     id: graphRoot
-    property string yLabel
 
-    readonly property int yMin: 0
-    property int yMax: 100
-    property int yStep: 20
-    property int xDuration: 3600
     property list<point> points
+    property int xDuration: 3600 // in seconds
+    property string yLabel
+    property int yMax: 100
+    readonly property int yMin: 0
+    property int yStep: 20
+
     Behavior on xDuration {
         NumberAnimation {
             duration: Kirigami.Units.longDuration
             easing.type: Easing.OutQuad
         }
     }
+
+    onPointsChanged: {
+        uSerie.replace(graphRoot.points);
+    }
+
     GraphsView {
         id: graph
-        anchors.fill: parent
 
-        function hoverHandler(position: point, value: point) {
-            if (value.y < yMin || value.y > yMax)
-                return
-            const date = new Date(aXe.min.getTime() + value.x)
-            coordinateLabel.x = (plotArea.x + position.x)
-            coordinateLabel.y = (position.y - coordinateLabel.height)
-            coordinateLabel.text = Qt.locale().toString(date, Locale.ShortFormat) + ": " + Math.trunc(value.y)
-            //console.log("hovering at " + Qt.locale().toString(date, Locale.ShortFormat) + " " + value.y + "%")
+        function getYValue(timeOffset): int { // good enough
+            let beginIndex = 0;
+            let endIndex = graphRoot.points.length - 1;
+            while (endIndex - beginIndex > 0) {
+                const middleIndex = Math.floor((beginIndex + endIndex) / 2);
+                if (timeOffset < graphRoot.points[middleIndex].x) {
+                    endIndex = middleIndex - 1;
+                } else {
+                    beginIndex = middleIndex + 1;
+                }
+            }
+            return graphRoot.points[endIndex].y;
+        }
+        function hoverHandler(position: point, value: point): void {
+            if (value.y < graphRoot.yMin || value.y > graphRoot.yMax)
+                return;
+            const timeOffset = Math.round(aXe.min.getTime() + value.x);
+            const _date = new Date(timeOffset);
+            if (plotArea.x + position.x + coordinateLabel.width > graphRoot.width) {
+                coordinateLabel.x = graphRoot.width - coordinateLabel.width - Kirigami.Units.smallSpacing;
+            } else {
+                coordinateLabel.x = plotArea.x + position.x;
+            }
+            coordinateLabel.y = (position.y - coordinateLabel.height);
+
+            coordinateLabel.text = Qt.locale().toString(_date, Locale.ShortFormat) + ": " + getYValue(timeOffset);
         }
 
-        SystemPalette {
-            id: palette
-            colorGroup: SystemPalette.Active
+        // splits the list<point> points into multiple series based on the interval between samples
+        function splicePoints() {
+        // si moins de 3 points : do nothing
+        // cste interval = d * split ->
+        //  (nb arbitraire) * 500 / (xDuration * 1000)
+        //  for i in points[1:] :
+        //      si points[i] - points[i-1] > interval :
+        //          create new Serie and stop old Serieif it exists. Append all of it to seriesList
+        }
 
-            onPaletteChanged: {
+        anchors.fill: parent
+        marginBottom: Kirigami.Units.smallSpacing
+        marginLeft: Kirigami.Units.smallSpacing
+        marginRight: Kirigami.Units.smallSpacing
+        marginTop: Kirigami.Units.smallSpacing
+
+        // Date QML object extends Date JS Object
+        axisX: DateTimeAxis {
+            id: aXe
+
+            labelFormat: graphRoot.xDuration >= 3600 * 24 ? Qt.locale().dateTimeFormat(Locale.ShortFormat) : Qt.locale().timeFormat(Locale.ShortFormat)
+            // timeZone: QTimeZone.systemTimeZoneId()
+            max: new Date() // here we have to pass a date object
+            min: new Date(max.valueOf() - (graphRoot.xDuration * 1000)) // definitely wrong, and yet
+            subTickCount: 1
+
+            labelDelegate: Component {
+                Column {
+                    property list<string> dateTime: text.split(" ")
+                    property string text // I'm really not happy about this
+
+                    spacing: 0
+
+                    Text {
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        color: palette.text
+                        font.pointSize: 8
+                        text: visible ? parent.dateTime[1] : ""
+                        visible: parent.dateTime.length > 1
+                    }
+                    Text {
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        color: palette.text
+                        font.pointSize: (parent.dateTime.length > 1) ? 7 : 8
+                        text: parent.dateTime[0]
+                    }
+                }
+            }
+
+            // tickInterval: 6
+            // TODO: remove this
+            // Component.onCompleted: {
+            //     print("min UTC, " + min.toUTCString());
+            //     print("min locale, " + min.toLocaleString());
+            //     print("min offset, " + min.getTimezoneOffset());
+            //     print("max UTC, " + max.toUTCString());
+            //     print("max locale, " + max.toLocaleString());
+            //     print("max offset, " + max.getTimezoneOffset());
+            // }
+        }
+        axisY: ValueAxis {
+            id: aYe
+
+            labelFormat: "%.0f" + graphRoot.yLabel
+            max: graphRoot.yMax
+            min: graphRoot.yMin
+            tickInterval: graphRoot.yMax === 100 ? 25.0 : graphRoot.yMax / 5
+
+            labelDelegate: Component {
+                Item {
+                    property string text // I'm not happy about this
+
+                    Text {
+                        anchors.right: parent.right
+                        anchors.verticalCenter: parent.verticalCenter
+                        color: palette.text
+                        font.pointSize: 9
+                        text: parent.text
+                    }
+                }
             }
         }
 
         // - [ ] TODO : react to availability change event
         theme: GraphsTheme {
+            axisY.mainColor: "#d3d3d6"
+            axisY.mainWidth: grid.mainWidth
+            axisY.subColor: "#dfdfdf"
             backgroundColor: palette.light
+            borderColors: [palette.accent]
             colorScheme: GraphsTheme.ColorScheme.Automatic
             colorStyle: GraphsTheme.ColorStyle.RangeGradient
-            theme: GraphsTheme.Theme.UserDefined
-            seriesColors: [Qt.alpha(palette.accent, 0.2)]
-            borderColors: [palette.accent]
-            grid.mainWidth: 1.0
             grid.mainColor: "#d3d3d6"
+            grid.mainWidth: 1.0
             grid.subColor: "#dfdfdf"
-            axisY.mainColor: "#d3d3d6"
-            axisY.subColor: "#dfdfdf"
-            axisY.mainWidth: grid.mainWidth
+            seriesColors: [Qt.alpha(palette.accent, 0.2)]
+            theme: GraphsTheme.Theme.UserDefined
         }
 
-        marginTop: Kirigami.Units.smallSpacing
-        marginBottom: Kirigami.Units.smallSpacing
-        marginLeft: Kirigami.Units.smallSpacing
-        marginRight: Kirigami.Units.smallSpacing
+        onHover: (_, pos, val) => hoverHandler(pos, val)
+        onHoverEnter: coordinateLabel.visible = true
+        onHoverExit: coordinateLabel.visible = false
 
-        axisX: DateTimeAxis {
-            id: aXe
-            max: new Date()
-            min: new Date(max - (graphRoot.xDuration * 1000)) // here we have to pass a date object
-            labelDelegate: Component {
-                Column {
-                    spacing: 0
-                    property string text // I'm really not happy about this
-                    property list<string> dateTime: text.split(" ")
-                    Text {
-                        //Layout.alignment: Qt.AlignCenter
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        font.pointSize: 8
-                        visible: dateTime.length > 1
-                        text: visible ? dateTime[1] : ""
-                        color: palette.text
-                    }
-                    Text {
-                        // Layout.alignment: Qt.AlignCenter
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        font.pointSize: (dateTime.length > 1) ? 7 : 8
-                        text: dateTime[0]
-                        color: palette.text
-                    }
-                }
-            }
-            subTickCount: 1
-            labelFormat: graph.xDuration >= 3600 * 24 ?
-                             Qt.locale().dateTimeFormat(Locale.ShortFormat) :
-                             Qt.locale().timeFormat(Locale.ShortFormat)
-            tickInterval: 6
-        }
-        axisY: ValueAxis {
-            id: aYe
-            min: graphRoot.yMin
-            max: graphRoot.yMax
-            tickInterval: graphRoot.yMax === 100 ? 25.0 : graphRoot.yMax / 5
-            labelFormat: "%.0f" + graphRoot.yLabel
-            labelDelegate: Component {
-                Item {
-                    property string text // I'm not happy about this
-                    Text {
-                        anchors.right: parent.right
-                        anchors.verticalCenter: parent.verticalCenter
-                        font.pointSize: 9
-                        text: parent.text
-                        color: palette.text
-                    }
-                }
-            }
+        SystemPalette {
+            id: palette
+
+            colorGroup: SystemPalette.Active
+
+            onPaletteChanged: {}
         }
         AreaSeries {
             id: area
+
             hoverable: true
             name: "areaGraph"
+
             upperSeries: LineSeries {
                 id: uSerie
+
             }
         }
-
-        onHoverEnter: coordinateLabel.visible = true
-        onHover: (_, pos, val) => hoverHandler(pos, val)
-        onHoverExit: coordinateLabel.visible = false
-
     }
-
     Kirigami.PlaceholderMessage {
+        text: i18nc("@info:status", "No history information for this time span")
         visible: graphRoot.points.length < 2
+        width: graph.plotArea.width - (Kirigami.Units.largeSpacing * 4)
         x: graph.plotArea.x + graph.plotArea.width / 2 - width / 2
         y: graph.plotArea.y + graph.plotArea.height / 2 - height / 2
-        width: graph.plotArea.width - (Kirigami.Units.largeSpacing * 4)
-        text: i18nc("@info:status", "No history information for this time span")
     }
     Controls.Label {
         id: coordinateLabel
-        visible: false
-        padding: Kirigami.Units.smallSpacing
-        background: Rectangle {
-            color: Kirigami.Theme.backgroundColor
-            border.color: Kirigami.Theme.textColor
-            border.width: 1
-            radius: Kirigami.Units.smallSpacing
-            opacity: 0.9
-        }
+
         color: Kirigami.Theme.textColor
         font.pointSize: Kirigami.Theme.smallFont.pointSize
-    }
-    onPointsChanged: {
-        uSerie.replace(graphRoot.points)
+        padding: Kirigami.Units.smallSpacing
+        visible: false
+
+        background: Rectangle {
+            border.color: Kirigami.Theme.textColor
+            border.width: 1
+            color: Kirigami.Theme.backgroundColor
+            opacity: 0.9
+            radius: Kirigami.Units.smallSpacing
+        }
     }
 }
 
@@ -425,4 +470,3 @@ Canvas
     }
 }
 */
-
