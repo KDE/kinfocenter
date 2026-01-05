@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-30 00:42+0000\n"
-"PO-Revision-Date: 2025-07-24 08:27+0200\n"
+"PO-Revision-Date: 2025-12-30 09:15+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.11.70\n"
+"X-Generator: Lokalize 25.12.0\n"
 
 #: ui/main.qml:18
 #, kde-format
@@ -43,18 +43,16 @@ msgid "There are no Samba shares mounted on this system"
 msgstr "Non ci sono condivisioni Samba montate su questo sistema"
 
 #: ui/ShareListItem.qml:24
-#, fuzzy, kde-format
-#| msgctxt "@title:column samba share dir path"
-#| msgid "Path"
+#, kde-format
 msgctxt "@label local file system path"
 msgid "Path:"
-msgstr "Percorso"
+msgstr "Percorso:"
 
 #: ui/ShareListItem.qml:40
 #, kde-format
 msgctxt "@label labels a samba url or path"
 msgid "Shared at:"
-msgstr ""
+msgstr "Condiviso su:"
 
 #: ui/ShareListItem.qml:69
 #, kde-kuit-format

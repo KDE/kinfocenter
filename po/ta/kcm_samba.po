@@ -1,64 +1,62 @@
-# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR Free Software Foundation, Inc.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# SPDX-FileCopyrightText: 2026 Kishore G <kishore96@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-30 00:42+0000\n"
-"PO-Revision-Date: 2004-08-09 03:56-0800\n"
-"Last-Translator: Tamil PC <tamilpc@ambalam.com>\n"
-"Language-Team: தமிழ் <tamilinix@yahoogroups.com>\n"
+"PO-Revision-Date: 2026-01-04 16:11+0530\n"
+"Last-Translator: Kishore G <kishore96@gmail.com>\n"
+"Language-Team: Tamil <kde-l10n-ta@kde.org>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 25.12.0\n"
 
 #: ui/main.qml:18
-#, fuzzy, kde-format
-#| msgid "&Exports"
+#, kde-format
 msgctxt "@title heading above listview"
 msgid "User-Created Shares"
-msgstr "ஏற்றுமதிகள்"
+msgstr "பயனர் உருவாக்கிய பகிர்வுகள்"
 
 #: ui/main.qml:23
-#, fuzzy, kde-format
-#| msgid "Mounted Under"
+#, kde-format
 msgctxt "@title heading above listview"
 msgid "Remote Share Mounts"
-msgstr "ஏற்றிய இடம்"
+msgstr "ஏற்றியுள்ள தொலை பகிர்வுகள்"
 
 #: ui/main.qml:54
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no directories shared by users"
-msgstr ""
+msgstr "இக்கணினியின் எந்த அடைவும் பகிரப்படவில்லை"
 
 #: ui/main.qml:92
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no Samba shares mounted on this system"
-msgstr ""
+msgstr "இக்கணினியில் எந்த Samba பகிர்வும் ஏற்றப்பட்டிருக்கவில்லை"
 
 #: ui/ShareListItem.qml:24
 #, kde-format
 msgctxt "@label local file system path"
 msgid "Path:"
-msgstr ""
+msgstr "பாதை:"
 
 #: ui/ShareListItem.qml:40
 #, kde-format
 msgctxt "@label labels a samba url or path"
 msgid "Shared at:"
-msgstr ""
+msgstr "பகிர்வின் பாதை:"
 
 #: ui/ShareListItem.qml:69
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Open folder properties to change share settings"
-msgstr ""
+msgstr "பகிர்வு அமைப்புகளை மாற்ற அடைவின் பண்புகளைத் திறக்கவும்."
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
