@@ -1081,7 +1081,7 @@
 <para
 ><acronym
 >DRI</acronym
-> (Direct Rendering Infrastructure) provides hardware acceleration for OpenGL. You must have a videocard with 3D accelerator and properly installed driver for this.</para>
+> (« Direct Rendering Infrastructure » soit « Infrastructure de rendu direct ») fournit une accélération matérielle pour OpenGL. Vous devez posséder une carte graphique avec accélération 3D dont le pilote doit avoir été convenablement installé pour cela.</para>
  
 
 <para
