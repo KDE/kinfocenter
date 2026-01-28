@@ -33,7 +33,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no directories shared by users"
-msgstr ""
+msgstr "ئىشلەتكۈچىلەر ھەمبەھىرلىگەن مۇندەرىجە يوق"
 
 #: ui/main.qml:92
 #, kde-format
@@ -45,7 +45,7 @@ msgstr ""
 #, kde-format
 msgctxt "@label local file system path"
 msgid "Path:"
-msgstr ""
+msgstr "يول:"
 
 #: ui/ShareListItem.qml:40
 #, kde-format
