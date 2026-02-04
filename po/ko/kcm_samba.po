@@ -1,6 +1,6 @@
 # Translation of kcmsamba to Korean.
 # Copyright (C) 2001, 2007 Free Software Foundation, Inc.
-# SPDX-FileCopyrightText: 2007, 2011, 2013, 2014, 2015, 2020, 2025 Shinjo Park <kde@peremen.name>
+# SPDX-FileCopyrightText: 2007, 2011, 2013, 2014, 2015, 2020, 2025, 2026 Shinjo Park <kde@peremen.name>
 #
 # Yu-Chan Park, 2001.
 msgid ""
@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-30 00:42+0000\n"
-"PO-Revision-Date: 2025-10-09 00:53+0200\n"
+"PO-Revision-Date: 2026-02-04 00:18+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 24.12.3\n"
+"X-Generator: Lokalize 25.08.1\n"
 
 #: ui/main.qml:18
 #, kde-format
@@ -43,18 +43,16 @@ msgid "There are no Samba shares mounted on this system"
 msgstr "시스템에 마운트된 Samba 공유 없음"
 
 #: ui/ShareListItem.qml:24
-#, fuzzy, kde-format
-#| msgctxt "@title:column samba share dir path"
-#| msgid "Path"
+#, kde-format
 msgctxt "@label local file system path"
 msgid "Path:"
-msgstr "경로"
+msgstr "경로:"
 
 #: ui/ShareListItem.qml:40
 #, kde-format
 msgctxt "@label labels a samba url or path"
 msgid "Shared at:"
-msgstr ""
+msgstr "공유된 위치:"
 
 #: ui/ShareListItem.qml:69
 #, kde-kuit-format
