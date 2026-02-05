@@ -124,6 +124,7 @@
     "X-KDE-Keywords[is]": "Wayland,myndsmiður,skjár,kerfisupplýsingar,dxdiag",
     "X-KDE-Keywords[it]": "Wayland,compositore,schermo,informazioni di sistema,dxdiag",
     "X-KDE-Keywords[ka]": "Wayland,Compositor,Display,System Information,ეკრანი,კომპოზიტორი,სისტემის ინფორმაცია,dxdiag",
+    "X-KDE-Keywords[ko]": "컴포지터,디스플레이,시스템 정보",
     "X-KDE-Keywords[nl]": "Wayland,Compositor,Scherm,Systeeminformatie,dxdiag",
     "X-KDE-Keywords[pt_BR]": "Wayland,Compositor,Tela,Informações do sistema,dxdiag",
     "X-KDE-Keywords[ru]": "Wayland,Compositor,Display,System Information,dxdiag,графический сервер,композитор,компоновщик,сведения о системе",
