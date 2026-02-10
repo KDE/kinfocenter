@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2026 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
-# Sergiu Bivol <sergiu@cip.md>, 2022.
+# SPDX-FileCopyrightText: 2022, 2026 Sergiu Bivol <sergiu@cip.md>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-30 00:42+0000\n"
-"PO-Revision-Date: 2022-12-28 20:56+0000\n"
+"PO-Revision-Date: 2026-02-09 12:18+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 25.08.1\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -34,11 +34,10 @@ msgid "Unknown Type"
 msgstr "Tip necunoscut"
 
 #: GPUEntry.cpp:17
-#, fuzzy, kde-format
-#| msgid "Graphics Processor:"
+#, kde-format
 msgctxt "@label %1 is the GPU index number"
 msgid "Graphics Processor %1:"
-msgstr "Procesor grafic:"
+msgstr "Procesor grafic %1:"
 
 #: GPUEntry.cpp:18
 #, kde-format
@@ -49,19 +48,19 @@ msgstr "Procesor grafic:"
 #, kde-format
 msgctxt "@label GPU type"
 msgid "integrated"
-msgstr ""
+msgstr "integrat"
 
 #: GPUEntry.cpp:30
 #, kde-format
 msgctxt "@label GPU type"
 msgid "discrete"
-msgstr ""
+msgstr "discret"
 
 #: GPUEntry.cpp:32
 #, kde-format
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
-msgstr ""
+msgstr "virtual"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
@@ -136,29 +135,23 @@ msgctxt ""
 "@label, %1 is the total amount of installed system memory, %2 is the amount "
 "of which is usable, both expressed as 7.7 GiB"
 msgid "%1 of RAM (%2 usable)"
-msgstr ""
+msgstr "%1 de RAM (%2 utilizabili)"
 
 #: MemoryEntry.cpp:137
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt ""
 "@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
 msgstr "%1 de RAM"
 
 #: MemoryEntry.cpp:144
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
-msgstr "%1 de RAM"
+msgstr "%1 de RAM utilizabil"
 
 #: MemoryEntry.cpp:150
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
 msgstr "Necunoscută"
@@ -170,6 +163,8 @@ msgid ""
 "Some memory is reserved for use by the kernel or system hardware such as "
 "integrated graphics memory."
 msgstr ""
+"O parte din memorie e rezervată pentru folosirea de către nucleu sau "
+"componentele sistemului, cum ar fi memoria pentru grafică încorporată."
 
 #: MemoryEntry.cpp:166
 #, kde-format
@@ -179,6 +174,9 @@ msgid ""
 "some memory is reserved for use by the kernel or system hardware, such as "
 "integrated graphics memory."
 msgstr ""
+"Cantitatea de memorie utilizabilă poate fi mai mică decât cea afișată "
+"deoarece o parte din memorie e rezervată pentru folosirea de către nucleu "
+"sau componentele sistemului, cum ar fi memoria pentru grafică încorporată."
 
 #: MemoryEntry.cpp:175
 #, kde-format
@@ -188,6 +186,9 @@ msgid ""
 "because some memory is reserved for use by the kernel or system hardware, "
 "such as integrated graphics memory."
 msgstr ""
+"Cantitatea de memorie afișată poate fi mai mică decât cea instalată deoarece "
+"o parte din memorie e rezervată pentru folosirea de către nucleu sau "
+"componentele sistemului, cum ar fi memoria pentru grafică încorporată."
 
 #: OSVersionEntry.cpp:9
 #, kde-format
@@ -198,7 +199,7 @@ msgstr "Sistem de operare:"
 #, kde-format
 msgctxt "@label %1 is the distro name, %2 is the version"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: OSVersionEntry.cpp:13
 #, kde-format
@@ -206,7 +207,7 @@ msgctxt ""
 "@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
 "should be a number, or 'rolling'"
 msgid "%1 %2 Build: %3"
-msgstr ""
+msgstr "%1 %2 Construcție: %3"
 
 #: PlasmaEntry.cpp:15
 #, kde-format
@@ -217,7 +218,7 @@ msgstr "Versiune KDE Plasma:"
 #, kde-format
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
-msgstr ""
+msgstr ":"
 
 #: ui/main.qml:96
 #, kde-format
@@ -229,7 +230,7 @@ msgstr "Număr de serie"
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
-msgstr ""
+msgstr "Copiază"
 
 #: ui/main.qml:179
 #, kde-format
@@ -253,35 +254,31 @@ msgstr "Echipament"
 #, kde-format
 msgctxt "@action:button"
 msgid "Launch %1…"
-msgstr ""
+msgstr "Lansează %1…"
 
 #: ui/main.qml:219
-#, fuzzy, kde-format
-#| msgctxt "@action:button launches kinfocenter from systemsettings"
-#| msgid "Show More Information"
+#, kde-format
 msgctxt "@info:tooltip launches kinfocenter from systemsettings"
 msgid "See more detailed system information"
-msgstr "Arată informații suplimentare"
+msgstr "Vedeți informații mai detaliate despre sistem"
 
 #: ui/main.qml:227 ui/main.qml:235
-#, fuzzy, kde-format
-#| msgctxt "EMAIL OF TRANSLATORS"
-#| msgid "Your emails"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
-msgstr "sergiu@cip.md"
+msgstr "Copiază detaliile"
 
 #: ui/main.qml:238
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
-msgstr ""
+msgstr "În română"
 
 #: ui/main.qml:244
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
-msgstr ""
+msgstr "În engleză"
 
 #~ msgctxt "@action:button"
 #~ msgid "Copy to Clipboard"
