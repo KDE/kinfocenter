@@ -114,5 +114,6 @@
     "X-KDE-Keywords[pt_BR]": "Vulkan,Placa de vídeo,aceleração por hardware,gráfico,gráfica,dxdiag,vulkaninfo",
     "X-KDE-Keywords[sl]": "Vulkan,Videokartica,Strojno pospeševanje,Grafika,dxdiag,vulkaninfo",
     "X-KDE-Keywords[tr]": "vulkan,video kartı,donanım hızlandırması,donanım ivmelendirmesi,grafik,dxdiag,vulkaninfo",
-    "X-KDE-Keywords[uk]": "Vulkan,VideoCard,Hardware Acceleration,Graphics,dxdiag,vulkaninfo,вулкан,відеокартка,апаратне прискорення,графіка"
+    "X-KDE-Keywords[uk]": "Vulkan,VideoCard,Hardware Acceleration,Graphics,dxdiag,vulkaninfo,вулкан,відеокартка,апаратне прискорення,графіка",
+    "X-KDE-Keywords[zh_TW]": "硬體加速,顯示卡,圖形"
 }
