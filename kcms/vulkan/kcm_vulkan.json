@@ -108,12 +108,16 @@
     "X-KDE-Keywords[ca@valencia]": "Vulkan,Targeta de vídeo,Acceleració per maquinari,Gràfics,dxdiag,vulkaninfo",
     "X-KDE-Keywords[ca]": "Vulkan,Targeta de vídeo,Acceleració per maquinari,Gràfics,dxdiag,vulkaninfo",
     "X-KDE-Keywords[es]": "Vulkan,Tarjeta de vídeo,Tarjeta de video,Aceleración por hardware,Gráficos,dxdiag,vulkaninfo",
+    "X-KDE-Keywords[fr]": "Vulkan, carte vidéo, accélération matérielle, graphique, dxdiag, vulkaninfo",
+    "X-KDE-Keywords[he]": "Vulkan,כרטיס וידאו,כרטיס גרפי,כרטיס תצוגה,האצת חומרה,גרפיקה,וולקן,dxdiag,vulkaninfo",
     "X-KDE-Keywords[ia]": "Vulkan,VideoCard,Hardware Acceleration,Graphics,dxdiag,vulkaninfo",
     "X-KDE-Keywords[ka]": "Vulkan,VideoCard,Hardware Acceleration,Graphics,აპატურული აჩქარება,გრაფიკა,dxdiag,vulkaninfo",
     "X-KDE-Keywords[nl]": "Vulkan,Videokaart,Hardware versnelling,grafisch,dxdiag,vulkaninfo",
     "X-KDE-Keywords[pt_BR]": "Vulkan,Placa de vídeo,aceleração por hardware,gráfico,gráfica,dxdiag,vulkaninfo",
+    "X-KDE-Keywords[ru]": "Vulkan,VideoCard,Hardware Acceleration,Graphics,dxdiag,vulkaninfo,видеокарта,аппаратное ускорение,графика",
     "X-KDE-Keywords[sl]": "Vulkan,Videokartica,Strojno pospeševanje,Grafika,dxdiag,vulkaninfo",
     "X-KDE-Keywords[tr]": "vulkan,video kartı,donanım hızlandırması,donanım ivmelendirmesi,grafik,dxdiag,vulkaninfo",
     "X-KDE-Keywords[uk]": "Vulkan,VideoCard,Hardware Acceleration,Graphics,dxdiag,vulkaninfo,вулкан,відеокартка,апаратне прискорення,графіка",
+    "X-KDE-Keywords[zh_CN]": "Vulkan,VideoCard,Hardware Acceleration,Graphics,dxdiag,vulkaninfo,directx,xianka,xianshika,yingjianjiasu,tuxing,GPU,显卡,显示卡,硬件加速,图形",
     "X-KDE-Keywords[zh_TW]": "硬體加速,顯示卡,圖形"
 }
