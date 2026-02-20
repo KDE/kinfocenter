@@ -28,33 +28,28 @@ msgid "Your emails"
 msgstr "kscanne@gmail.com"
 
 #: networkmodel.cpp:161
-#, fuzzy, kde-format
-#| msgid "Point to Point"
+#, kde-format
 msgctxt "@item:intable Network type"
 msgid "Point to Point"
-msgstr "Pointe go Pointe"
+msgstr ""
 
 #: networkmodel.cpp:168
-#, fuzzy, kde-format
-#| msgctxt "@item:intext Mode of network card"
-#| msgid "Broadcast"
+#, kde-format
 msgctxt "@item:intable Network type"
 msgid "Broadcast"
-msgstr "Craolacháin"
+msgstr ""
 
 #: networkmodel.cpp:175
-#, fuzzy, kde-format
-#| msgid "Multicast"
+#, kde-format
 msgctxt "@item:intable Network type"
 msgid "Multicast"
-msgstr "Ilchraolacháin"
+msgstr ""
 
 #: networkmodel.cpp:182
-#, fuzzy, kde-format
-#| msgid "Loopback"
+#, kde-format
 msgctxt "@item:intable Network type"
 msgid "Loopback"
-msgstr "Aislúbadh"
+msgstr ""
 
 #: nic.cpp:21
 #, kde-format
@@ -62,25 +57,22 @@ msgid "kcm_nic"
 msgstr ""
 
 #: nic.cpp:22
-#, fuzzy, kde-format
-#| msgid "Network Mask"
+#, kde-format
 msgctxt "@title:window"
 msgid "Network Interfaces"
-msgstr "Masc Líonra"
+msgstr ""
 
 #: nic.cpp:26
-#, fuzzy, kde-format
-#| msgid "(c) 2001 - 2002 Alexander Neundorf"
+#, kde-format
 msgctxt "@info"
 msgid "(c) 2001 - 2002 Alexander Neundorf"
-msgstr "© 2001 - 2002 Alexander Neundorf"
+msgstr ""
 
 #: nic.cpp:28
-#, fuzzy, kde-format
-#| msgid "Alexander Neundorf"
+#, kde-format
 msgctxt "@info:credit"
 msgid "Alexander Neundorf"
-msgstr "Alexander Neundorf"
+msgstr ""
 
 #: nic.cpp:28
 #, kde-format
@@ -101,38 +93,33 @@ msgid "developer"
 msgstr ""
 
 #: package/contents/ui/main.qml:15
-#, fuzzy, kde-format
-#| msgid "Network Mask"
+#, kde-format
 msgid "Network Interfaces"
-msgstr "Masc Líonra"
+msgstr ""
 
 #: package/contents/ui/main.qml:30
-#, fuzzy, kde-format
-#| msgid "Name"
+#, kde-format
 msgctxt "@label"
 msgid "Name:"
-msgstr "Ainm"
+msgstr ""
 
 #: package/contents/ui/main.qml:34
-#, fuzzy, kde-format
-#| msgid "IP Address"
+#, kde-format
 msgctxt "@label"
 msgid "Address:"
-msgstr "Seoladh IP"
+msgstr ""
 
 #: package/contents/ui/main.qml:38
-#, fuzzy, kde-format
-#| msgid "Network Mask"
+#, kde-format
 msgctxt "@label"
 msgid "Network Mask:"
-msgstr "Masc Líonra"
+msgstr ""
 
 #: package/contents/ui/main.qml:42
-#, fuzzy, kde-format
-#| msgid "Type"
+#, kde-format
 msgctxt "@label"
 msgid "Type:"
-msgstr "Cineál"
+msgstr ""
 
 #: package/contents/ui/main.qml:46
 #, kde-format
@@ -141,11 +128,10 @@ msgid "Hardware Address:"
 msgstr ""
 
 #: package/contents/ui/main.qml:51
-#, fuzzy, kde-format
-#| msgid "State"
+#, kde-format
 msgctxt "@label"
 msgid "State:"
-msgstr "Staid"
+msgstr ""
 
 #: package/contents/ui/main.qml:59
 #, kde-format
@@ -164,49 +150,3 @@ msgstr "Dínasctha"
 msgctxt "@action:button"
 msgid "Refresh"
 msgstr ""
-
-#~ msgctxt "@item:intext Mode of network card"
-#~ msgid "Broadcast"
-#~ msgstr "Craolacháin"
-
-#~ msgctxt "@item:intext Mode of network card"
-#~ msgid "Point to Point"
-#~ msgstr "Pointe go Pointe"
-
-#~ msgctxt "@item:intext Mode of network card"
-#~ msgid "Multicast"
-#~ msgstr "Ilchraolacháin"
-
-#~ msgctxt "@item:intext Mode of network card"
-#~ msgid "Loopback"
-#~ msgstr "Aislúbadh"
-
-#~ msgctxt "@item:intext Mode of network card"
-#~ msgid "Unknown"
-#~ msgstr "Anaithnid"
-
-#~ msgctxt "Unknown network mask"
-#~ msgid "Unknown"
-#~ msgstr "Anaithnid"
-
-#~ msgctxt "Unknown HWaddr"
-#~ msgid "Unknown"
-#~ msgstr "Anaithnid"
-
-#, fuzzy
-#~| msgid "Broadcast"
-#~ msgctxt "@item:intable Netork type"
-#~ msgid "Broadcast"
-#~ msgstr "Craoladh"
-
-#~ msgid "HWAddr"
-#~ msgstr "Seoladh Crua-Earra"
-
-#~ msgid "&Update"
-#~ msgstr "N&uashonraigh"
-
-#~ msgid "kcminfo"
-#~ msgstr "kcminfo"
-
-#~ msgid "System Information Control Module"
-#~ msgstr "Modúl Rialaithe Eolais Córais"

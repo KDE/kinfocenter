@@ -41,18 +41,16 @@ msgid "Application Specific Interface"
 msgstr ""
 
 #: classes.i18n:4 usbdevices.cpp:68
-#, fuzzy, kde-format
-#| msgid "Audio"
+#, kde-format
 msgctxt "USB device class"
 msgid "Audio"
-msgstr "Fuaim"
+msgstr ""
 
 #: classes.i18n:5 usbdevices.cpp:84
-#, fuzzy, kde-format
-#| msgid "Data"
+#, kde-format
 msgctxt "USB device class"
 msgid "CDC Data"
-msgstr "Sonraí"
+msgstr ""
 
 #: classes.i18n:6 usbdevices.cpp:86
 #, kde-format
@@ -61,11 +59,10 @@ msgid "Chip/SmartCard"
 msgstr ""
 
 #: classes.i18n:7 usbdevices.cpp:70
-#, fuzzy, kde-format
-#| msgid "Communications"
+#, kde-format
 msgctxt "USB device class"
 msgid "Communications"
-msgstr "Cumarsáid"
+msgstr ""
 
 #: classes.i18n:8 usbdevices.cpp:88
 #, kde-format
@@ -80,18 +77,16 @@ msgid "Diagnostic"
 msgstr ""
 
 #: classes.i18n:10 usbdevices.cpp:82
-#, fuzzy, kde-format
-#| msgid "Hub"
+#, kde-format
 msgctxt "USB device class"
 msgid "Hub"
-msgstr "Mol"
+msgstr ""
 
 #: classes.i18n:11 usbdevices.cpp:72
-#, fuzzy, kde-format
-#| msgid "Human Interface Devices"
+#, kde-format
 msgctxt "USB device class"
 msgid "Human Interface Device"
-msgstr "Gléasanna Comhéadain Dhaonna"
+msgstr ""
 
 #: classes.i18n:12 usbdevices.cpp:78
 #, kde-format
@@ -100,11 +95,10 @@ msgid "Imaging"
 msgstr ""
 
 #: classes.i18n:13 usbdevices.cpp:80
-#, fuzzy, kde-format
-#| msgid "Mass Storage"
+#, kde-format
 msgctxt "USB device class"
 msgid "Mass Storage"
-msgstr "Ollstóráil"
+msgstr ""
 
 #: classes.i18n:14 usbdevices.cpp:99
 #, kde-format
@@ -113,25 +107,22 @@ msgid "Miscellaneous Device"
 msgstr ""
 
 #: classes.i18n:15 usbdevices.cpp:74
-#, fuzzy, kde-format
-#| msgid "Human Interface Devices"
+#, kde-format
 msgctxt "USB device class"
 msgid "Physical Interface Device"
-msgstr "Gléasanna Comhéadain Dhaonna"
+msgstr ""
 
 #: classes.i18n:16 usbdevices.cpp:76
-#, fuzzy, kde-format
-#| msgid "Printer"
+#, kde-format
 msgctxt "USB device class"
 msgid "Printer"
-msgstr "Printéir"
+msgstr ""
 
 #: classes.i18n:17 usbdevices.cpp:104
-#, fuzzy, kde-format
-#| msgid "Vendor Specific Class"
+#, kde-format
 msgctxt "USB device class"
 msgid "Vendor Specific Class"
-msgstr "Aicme Shainiúil don Díoltóir"
+msgstr ""
 
 #: classes.i18n:18 usbdevices.cpp:90
 #, kde-format
@@ -158,46 +149,40 @@ msgid "?"
 msgstr "?"
 
 #: classes.i18n:22
-#, fuzzy, kde-format
-#| msgid "ATM Networking"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "ATM Networking"
-msgstr "Líonrú ATM"
+msgstr ""
 
 #: classes.i18n:23
-#, fuzzy, kde-format
-#| msgid "Abstract (modem)"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Abstract (modem)"
-msgstr "Teibí (móideim)"
+msgstr ""
 
 #: classes.i18n:24
-#, fuzzy, kde-format
-#| msgid "Boot Interface Subclass"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Boot Interface Subclass"
-msgstr "Fo-aicme Chomhéadain Tosaithe"
+msgstr ""
 
 #: classes.i18n:25
-#, fuzzy, kde-format
-#| msgid "CAPI Control"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "CAPI Control"
-msgstr "Rialú CAPI"
+msgstr ""
 
 #: classes.i18n:26
-#, fuzzy, kde-format
-#| msgid "Control Device"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Control Device"
-msgstr "Gléas Rialaithe"
+msgstr ""
 
 #: classes.i18n:27
-#, fuzzy, kde-format
-#| msgid "Control/Bulk"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Controller"
-msgstr "Rialú/Bulc"
+msgstr ""
 
 #: classes.i18n:28
 #, kde-format
@@ -212,32 +197,28 @@ msgid "Device Management"
 msgstr ""
 
 #: classes.i18n:30
-#, fuzzy, kde-format
-#| msgid "Direct Line"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Direct Line"
-msgstr "Líne Dhíreach"
+msgstr ""
 
 #: classes.i18n:31
-#, fuzzy, kde-format
-#| msgid "Ethernet Networking"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Ethernet Emulation"
-msgstr "Líonrú Ethernet"
+msgstr ""
 
 #: classes.i18n:32
-#, fuzzy, kde-format
-#| msgid "Ethernet Networking"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Ethernet Networking"
-msgstr "Líonrú Ethernet"
+msgstr ""
 
 #: classes.i18n:33
-#, fuzzy, kde-format
-#| msgid "Floppy"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Floppy (UFI)"
-msgstr "Diosca Flapach"
+msgstr ""
 
 #: classes.i18n:34
 #, kde-format
@@ -246,32 +227,28 @@ msgid "IRDA Bridge"
 msgstr ""
 
 #: classes.i18n:35
-#, fuzzy, kde-format
-#| msgid "Streaming"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "MIDI Streaming"
-msgstr "Sruthú"
+msgstr ""
 
 #: classes.i18n:36
-#, fuzzy, kde-format
-#| msgid "Direct Line"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Mobile Direct Line"
-msgstr "Líne Dhíreach"
+msgstr ""
 
 #: classes.i18n:37
-#, fuzzy, kde-format
-#| msgid "Multi-Channel"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Multi-Channel"
-msgstr "Il-chainéal"
+msgstr ""
 
 #: classes.i18n:38
-#, fuzzy, kde-format
-#| msgid "No Subclass"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "No Subclass"
-msgstr "Gan Fo-Aicme"
+msgstr ""
 
 #: classes.i18n:39
 #, kde-format
@@ -280,11 +257,10 @@ msgid "OBEX"
 msgstr "OBEX"
 
 #: classes.i18n:40
-#, fuzzy, kde-format
-#| msgid "Printer"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Printer"
-msgstr "Printéir"
+msgstr ""
 
 #: classes.i18n:41
 #, kde-format
@@ -311,11 +287,10 @@ msgid "Reprogrammable Diagnostics"
 msgstr ""
 
 #: classes.i18n:45
-#, fuzzy, kde-format
-#| msgid "SCSI"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "SCSI"
-msgstr "SCSI"
+msgstr ""
 
 #: classes.i18n:46
 #, kde-format
@@ -336,18 +311,16 @@ msgid "Still Image Capture"
 msgstr ""
 
 #: classes.i18n:49
-#, fuzzy, kde-format
-#| msgid "Streaming"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Streaming"
-msgstr "Sruthú"
+msgstr ""
 
 #: classes.i18n:50
-#, fuzzy, kde-format
-#| msgid "Telephone"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Telephone"
-msgstr "Teileafón"
+msgstr ""
 
 #: classes.i18n:51
 #, kde-format
@@ -374,18 +347,16 @@ msgid "Unused"
 msgstr ""
 
 #: classes.i18n:55
-#, fuzzy, kde-format
-#| msgid "Vendor Specific Subclass"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Vendor Specific Subclass"
-msgstr "Fo-Aicme Shainiúil don Díoltóir"
+msgstr ""
 
 #: classes.i18n:56
-#, fuzzy, kde-format
-#| msgid "CAPI Control"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Video Control"
-msgstr "Rialú CAPI"
+msgstr ""
 
 #: classes.i18n:57
 #, kde-format
@@ -394,11 +365,10 @@ msgid "Video Interface Collection"
 msgstr ""
 
 #: classes.i18n:58
-#, fuzzy, kde-format
-#| msgid "Non Streaming"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Video Streaming"
-msgstr "Neamhshreabhach"
+msgstr ""
 
 #: classes.i18n:59
 #, kde-format
@@ -519,107 +489,3 @@ msgstr "<tr><td><i>Cainéil</i></td><td>%1</td></tr>"
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
 msgstr "<tr><td><i>Uasmhéid Paicéid</i></td><td>%1</td></tr>"
-
-#~ msgid "AT-commands"
-#~ msgstr "Orduithe-AT"
-
-#~ msgid "Bidirectional"
-#~ msgstr "Déthreo"
-
-#~ msgid "Bulk (Zip)"
-#~ msgstr "Bulc (Zip)"
-
-#~ msgid "CAPI 2.0"
-#~ msgstr "CAPI 2.0"
-
-#~ msgid "CDC PUF"
-#~ msgstr "CDC PUF"
-
-#~ msgid "Control/Bulk/Interrupt"
-#~ msgstr "Rialú/Bulc/Idirbhriseadh"
-
-#~ msgid "HDLC"
-#~ msgstr "HDLC"
-
-#~ msgid "Host Based Driver"
-#~ msgstr "Tiománaí bunaithe ar óstríomhaire"
-
-#~ msgid "I.430 ISDN BRI"
-#~ msgstr "I.430 ISDN BRI"
-
-#~ msgid "Interface"
-#~ msgstr "Comhéadan"
-
-#~ msgid "Keyboard"
-#~ msgstr "Méarchlár"
-
-#~ msgid "Mouse"
-#~ msgstr "Luch"
-
-#~ msgid "None"
-#~ msgstr "Neamhní"
-
-#~ msgid "Q.921"
-#~ msgstr "Q.921"
-
-#~ msgid "Q.921M"
-#~ msgstr "Q.921M"
-
-#~ msgid "Q.921TM"
-#~ msgstr "Q.921TM"
-
-#~ msgid "Q.932 EuroISDN"
-#~ msgstr "Q.932 EuroISDN"
-
-#~ msgid "Transparent"
-#~ msgstr "Trédhearcach"
-
-#~ msgid "Unidirectional"
-#~ msgstr "Aontreoch"
-
-#~ msgid "V.120 V.24 rate ISDN"
-#~ msgstr "ISDN ráta V.120 V.24"
-
-#~ msgid "V.42bis"
-#~ msgstr "V.42bis"
-
-#~ msgid "Vendor Specific"
-#~ msgstr "Sainiúil Don Díoltóir"
-
-#~ msgid "Vendor Specific Protocol"
-#~ msgstr "Prótacal Sainiúil don Díoltóir"
-
-#~ msgid "Vendor specific"
-#~ msgstr "Sainiúil don díoltóir"
-
-#~ msgid "<tr><td><i>Revision</i></td><td>%1.%2</td></tr>"
-#~ msgstr "<tr><td><i>Leasú</i></td><td>%1.%2</td></tr>"
-
-#~ msgid "<tr><td><i>Power Consumption</i></td><td>%1 mA</td></tr>"
-#~ msgstr "<tr><td><i>Tomhaltas Fuinnimh</i></td><td>%1 mA</td></tr>"
-
-#~ msgid "<tr><td><i>Power Consumption</i></td><td>self powered</td></tr>"
-#~ msgstr ""
-#~ "<tr><td><i>Tomhaltas Fuinnimh</i></td><td>féinchumhachtaithe</td></tr>"
-
-#~ msgid "<tr><td><i>Attached Devicenodes</i></td><td>%1</td></tr>"
-#~ msgstr "<tr><td><i>Gléas-nóid Cheangailte</i></td><td>%1</td></tr>"
-
-#~ msgid "<tr><td><i>Bandwidth</i></td><td>%1 of %2 (%3%)</td></tr>"
-#~ msgstr "<tr><td><i>Bandaleithead</i></td><td>%1 as %2 (%3%)</td></tr>"
-
-#~ msgid "<tr><td><i>Intr. requests</i></td><td>%1</td></tr>"
-#~ msgstr "<tr><td><i>Iarratais ar idirbhriseadh</i></td><td>%1</td></tr>"
-
-#~ msgid "<tr><td><i>Isochr. requests</i></td><td>%1</td></tr>"
-#~ msgstr "<tr><td><i>Iarratais iseacronacha</i></td><td>%1</td></tr>"
-
-#~ msgid ""
-#~ "Could not open one or more USB controller. Make sure, you have read "
-#~ "access to all USB controllers that should be listed here."
-#~ msgstr ""
-#~ "Níorbh fhéidir rialaitheoir nó rialaitheoirí USB a oscailt. Bí cinnte go "
-#~ "bhfuil cead agat na rialaitheoirí USB a léamh."
-
-#~ msgid "KDE USB Viewer"
-#~ msgstr "Amharcán USB KDE"

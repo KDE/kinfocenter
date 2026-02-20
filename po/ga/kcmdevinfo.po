@@ -76,10 +76,9 @@ msgid "kcmdevinfo"
 msgstr "kcmdevinfo"
 
 #: devinfo.cpp:28
-#, fuzzy, kde-format
-#| msgid "Device Type: "
+#, kde-format
 msgid "Device Viewer"
-msgstr "Cineál an Ghléis: "
+msgstr ""
 
 #: devinfo.cpp:28
 #, kde-format
@@ -189,28 +188,24 @@ msgid "Intel SSE3"
 msgstr "Intel SSE3"
 
 #: soldevicetypes.cpp:88
-#, fuzzy, kde-format
-#| msgid "Intel SSE3"
+#, kde-format
 msgid "Intel SSSE3"
-msgstr "Intel SSE3"
+msgstr ""
 
 #: soldevicetypes.cpp:91
-#, fuzzy, kde-format
-#| msgid "Intel SSE4"
+#, kde-format
 msgid "Intel SSE4.1"
-msgstr "Intel SSE4"
+msgstr ""
 
 #: soldevicetypes.cpp:94
-#, fuzzy, kde-format
-#| msgid "Intel SSE4"
+#, kde-format
 msgid "Intel SSE4.2"
-msgstr "Intel SSE4"
+msgstr ""
 
 #: soldevicetypes.cpp:97
-#, fuzzy, kde-format
-#| msgid "AMD 3DNow"
+#, kde-format
 msgid "AMD 3DNow!"
-msgstr "AMD 3DNow"
+msgstr ""
 
 #: soldevicetypes.cpp:100
 #, kde-format
@@ -511,10 +506,9 @@ msgid "Discharging"
 msgstr "Á Dhíluchtú"
 
 #: soldevicetypes.cpp:472
-#, fuzzy, kde-format
-#| msgid "No Charge"
+#, kde-format
 msgid "Fully Charged"
-msgstr "Gan Luchtú"
+msgstr ""
 
 #: soldevicetypes.cpp:475
 #, kde-format
@@ -532,172 +526,6 @@ msgid "Charge Status: "
 msgstr "Stádas Luchtaithe: "
 
 #: soldevicetypes.cpp:478
-#, fuzzy, kde-format
-#| msgid "Charge Status: "
+#, kde-format
 msgid "Charge Percent: "
-msgstr "Stádas Luchtaithe: "
-
-#~ msgid "Network Interfaces"
-#~ msgstr "Comhéadain Líonra"
-
-#~ msgid "Connected"
-#~ msgstr "Ceangailte"
-
-#~ msgid "Wireless"
-#~ msgstr "Gan Sreang"
-
-#~ msgid "Wired"
-#~ msgstr "Sreangaithe"
-
-#~ msgid "Hardware Address: "
-#~ msgstr "Seoladh Crua-Earraí: "
-
-#~ msgid "Wireless?"
-#~ msgstr "Gan Sreang?"
-
-#~ msgid "Audio Interfaces"
-#~ msgstr "Comhéadain Fhuaime"
-
-#~ msgid "Alsa Interfaces"
-#~ msgstr "Comhéadain ALSA"
-
-#~ msgid "Open Sound System Interfaces"
-#~ msgstr "Comhéadain don Chóras Fuaime Oscailte"
-
-#~ msgid "Control"
-#~ msgstr "Control"
-
-#~ msgid "Input"
-#~ msgstr "Ionchur"
-
-#~ msgid "Output"
-#~ msgstr "Aschur"
-
-#~ msgctxt "unknown audio interface type"
-#~ msgid "Unknown"
-#~ msgstr "Anaithnid"
-
-#~ msgid "Internal Soundcard"
-#~ msgstr "Cárta Inmheánach Fuaime"
-
-#~ msgid "USB Soundcard"
-#~ msgstr "Cárta Fuaime USB"
-
-#~ msgid "Firewire Soundcard"
-#~ msgstr "Cárta Fuaime Firewire"
-
-#~ msgid "Headset"
-#~ msgstr "Gléas Cinn"
-
-#~ msgid "Modem"
-#~ msgstr "Móideim"
-
-#~ msgctxt "unknown sound card type"
-#~ msgid "Unknown"
-#~ msgstr "Anaithnid"
-
-#~ msgid "Audio Interface Type: "
-#~ msgstr "Cineál Comhéadain Fuaime: "
-
-#~ msgid "Soundcard Type: "
-#~ msgstr "Cineál an Chárta Fuaime: "
-
-#~ msgid "Device Buttons"
-#~ msgstr "Cnaipí Gléis"
-
-#~ msgid "Lid Button"
-#~ msgstr "Cnaipe Clúdaigh"
-
-#~ msgid "Power Button"
-#~ msgstr "Cnaipe Cumhachta"
-
-#~ msgid "Sleep Button"
-#~ msgstr "Cnaipe Codlata"
-
-#~ msgid "Tablet Button"
-#~ msgstr "Cnaipe Táibléid"
-
-#~ msgid "Unknown Button"
-#~ msgstr "Cnaipe Anaithnid"
-
-#~ msgid "Button type: "
-#~ msgstr "Cineál cnaipe: "
-
-#~ msgid "Has State?"
-#~ msgstr "Staid Aige?"
-
-#~ msgid "AC Adapters"
-#~ msgstr "Cuibheoirí SA"
-
-#~ msgid "Is plugged in?"
-#~ msgstr "Plugáilte isteach?"
-
-#~ msgid "Audio"
-#~ msgstr "Fuaim"
-
-#~ msgid "Conditional access system"
-#~ msgstr "Córas rochtana coinníollaí"
-
-#~ msgid "Demux"
-#~ msgstr "Dí-ilphléacsóir"
-
-#~ msgid "Digital video recorder"
-#~ msgstr "Fístaifeadán digiteach"
-
-#~ msgid "Front end"
-#~ msgstr "Comhéadan"
-
-#~ msgid "Network"
-#~ msgstr "Líonra"
-
-#~ msgid "On-Screen display"
-#~ msgstr "Taispeáint ar scáileán"
-
-#~ msgid "Security and content protection"
-#~ msgstr "Slándáil agus cosaint ábhair"
-
-#~ msgid "Video"
-#~ msgstr "Físeán"
-
-#~ msgid "Serial Devices"
-#~ msgstr "Gléasanna Srathacha"
-
-#~ msgctxt "platform serial interface type"
-#~ msgid "Platform"
-#~ msgstr "Ardán"
-
-#~ msgctxt "unknown serial interface type"
-#~ msgid "Unknown"
-#~ msgstr "Anaithnid"
-
-#~ msgctxt "unknown port"
-#~ msgid "Unknown"
-#~ msgstr "Anaithnid"
-
-#~ msgid "Serial Type: "
-#~ msgstr "Cineál Srathach: "
-
-#~ msgid "Port: "
-#~ msgstr "Port: "
-
-#~ msgid "Smart Card Devices"
-#~ msgstr "Gléasanna Cárta Cliste"
-
-#~ msgid "Card Reader"
-#~ msgstr "Léitheoir Cártaí"
-
-#~ msgid "Crypto Token"
-#~ msgstr "Ceadchomhartha Criptiúcháin"
-
-#~ msgctxt "unknown smart card type"
-#~ msgid "Unknown"
-#~ msgstr "Anaithnid"
-
-#~ msgid "Smart Card Type: "
-#~ msgstr "Cineál an Chárta Chliste: "
-
-#~ msgid "Video Devices"
-#~ msgstr "Gléasanna Físe"
-
-#~ msgid "Not Connected"
-#~ msgstr "Gan Cheangal"
+msgstr ""
