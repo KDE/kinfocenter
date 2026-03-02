@@ -1,7 +1,6 @@
 # Translation of kcmusb to Norwegian Nynorsk
 #
 # Gaute Hvoslef Kvalnes <gaute@verdsveven.com>, 1999, 2000, 2001, 2002, 2005.
-# Karl Ove Hufthammer <karl@huftis.org>, 2004, 2007, 2008, 2016, 2022.
 # Eirik U. Birkeland <eirbir@gmail.com>, 2008.
 # Øystein Steffensen-Alværvik <oysteins.omsetting@protonmail.com>, 2021.
 msgid ""
@@ -9,14 +8,14 @@ msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:53+0000\n"
-"PO-Revision-Date: 2022-04-10 17:47+0200\n"
+"PO-Revision-Date: 2026-03-01 10:59+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 26.03.70\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
@@ -384,12 +383,10 @@ msgid "Device"
 msgstr "Eining"
 
 #: usbdevices.cpp:66
-#, fuzzy, kde-format
-#| msgctxt "USB device class"
-#| msgid "(Defined at Interface level)"
+#, kde-format
 msgctxt "USB device class"
 msgid "Defined at Interface Level"
-msgstr "(Definert på grensesnitt-nivå)"
+msgstr "Definert på grensesnitt-nivå"
 
 #: usbdevices.cpp:92
 #, kde-format
