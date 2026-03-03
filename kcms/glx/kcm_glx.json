@@ -122,6 +122,7 @@
     "X-KDE-Keywords[ko]": "OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display,비디오 카드,그래픽 카드,가속,하드웨어 가속,그래픽,디스플레이",
     "X-KDE-Keywords[lv]": "OpenGL,DRI,GLX,3D,videokarte, grafikas karte,aparatūras paātrināšana,grafika,X,X11,Xserveris,X-Server,XFree86,displejs,dxdiag",
     "X-KDE-Keywords[nl]": "OpenGL,DRI,GLX,3D,VideoCard,hardwareversnelling,Graphics,X,X11,Xserver,X-Server,XFree86,scherm,dxdiag",
+    "X-KDE-Keywords[nn]": "OpenGL,DRI,GLX,3D,skjerm,maskinvareakselerasjon,grafikk,X,X11,XServer,X-tener,XFree86,Xorg,X.org,skjerm,dxdiag",
     "X-KDE-Keywords[pt_BR]": "OpenGL,DRI,GLX,3D,Placa de vídeo,Aceleração por Hardware,Gráficos,X,X11,Servidor X,Servidor-X,XFree86,Monitor,dxdiag",
     "X-KDE-Keywords[ru]": "OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display,dxdiag,видеокарта,аппаратное ускорение,графика,дисплей",
     "X-KDE-Keywords[sl]": "OpenGL,DRI,GLX,egl,3D,grafika,grafična kartica,strojno pospeševanje,X,X11,strežnik X,xserver,grafični strežnik,xorg,x.org,xfree86,prikazovalnik,prikaz,dxdiag",
