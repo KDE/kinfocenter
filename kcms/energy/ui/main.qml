@@ -193,7 +193,6 @@ KCM.SimpleKCM {
                                     switch(deviceItem.battery.type) {
                                         case 1: return "phone"
                                         case 2: return "battery-ups"
-                                        case 3: return deviceItem.battery.chargeState === Battery.Charging ? "battery-full-charging" : "battery-full"
                                         case 4: return "input-mouse"
                                         case 5: return "input-keyboard"
                                         case 6: return "input-keyboard" // TODO: New Icon Required?
@@ -206,8 +205,15 @@ KCM.SimpleKCM {
                                         case 13: return "headphone"
                                         case 14: return "headset"
                                         case 15: return "input-touchpad"
-                                        default: return "paint-unknown"
                                     }
+
+                                    // Show percent icons for PC (case 3) or unknown battery types.
+                                    const roundedPercent = Math.ceil(deviceItem.battery.chargePercent / 10) * 10;
+                                    let iconName = "battery-" + String(roundedPercent).padStart(3, "0");
+                                    if (deviceItem.battery.chargeState === Battery.Charging) {
+                                        iconName += "-charging";
+                                    }
+                                    return iconName;
                                 }
                             }
 
