@@ -54,7 +54,7 @@ KCM.SimpleKCM {
         {
             title: i18n("Environment"),
             info: [
-                {label: i18n("Temperature"), source: "temperature", format: format_unit(i18nc("Degree Celsius", "°C"), 2)}
+                {label: i18n("Temperature"), source: "temperature", format: format_temperature}
             ]
         },
     ]
@@ -72,13 +72,22 @@ KCM.SimpleKCM {
     }
 
     function format_percentage(value) {
-        return i18nc("%1 is a percentage value", "%1%", value);
+        return value >= 0 ? i18nc("%1 is a percentage value", "%1%", value) : "";
     }
 
     function format_unit(unit, precision) {
         return (value) => {
             const fmtValue = Number(value).toLocaleString(Qt.locale(), "f", precision);
             return i18nc("%1 is value, %2 is unit", "%1 %2", fmtValue, unit);
+        }
+    }
+
+    function format_temperature(value) {
+        if (value >= -273.15) {
+            const fmtValue = Number(value).toLocaleString(Qt.locale(), "f", 2);
+            return i18nc("Degree Celsius", "%1 °C", fmtValue);
+        } else {
+            return "";
         }
     }
 
