@@ -10,12 +10,23 @@
 
 #include <QQmlEngine>
 
+#include <algorithm>
+
 BatteryModel::BatteryModel(QObject *parent)
     : QAbstractListModel(parent)
 {
     qmlRegisterUncreatableType<Solid::Battery>("org.kde.kinfocenter.energy.private", 1, 0, "Battery", QStringLiteral("Use Solid::Battery"));
 
     m_batteries = Solid::Device::listFromType(Solid::DeviceInterface::Battery);
+    std::sort(m_batteries.begin(), m_batteries.end(), [](const Solid::Device &lhs, const Solid::Device &rhs) {
+        auto lhsBattery = lhs.as<Solid::Battery>();
+        auto rhsBattery = rhs.as<Solid::Battery>();
+        if (lhsBattery->isPowerSupply() != rhsBattery->isPowerSupply()) {
+            return lhsBattery->isPowerSupply();
+        }
+
+        return lhs.product().compare(rhs.product(), Qt::CaseInsensitive) < 0;
+    });
 
     connect(Solid::DeviceNotifier::instance(), &Solid::DeviceNotifier::deviceAdded, this, [this](const QString &udi) {
         auto it = std::find_if(m_batteries.constBegin(), m_batteries.constEnd(), [&udi](const Solid::Device &dev) {
