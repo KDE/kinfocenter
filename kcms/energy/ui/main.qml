@@ -240,7 +240,7 @@ KCM.SimpleKCM {
                                             case 13: return i18n("Headphone Battery")
                                             case 14: return i18n("Headset Battery")
                                             case 15: return i18n("Touchpad Battery")
-                                            default: return i18n("Unknown Battery")
+                                            default: return i18n("Battery")
                                         }
                                     }
                                     elide: Text.ElideRight
