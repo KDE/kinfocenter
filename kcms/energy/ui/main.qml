@@ -244,6 +244,7 @@ KCM.SimpleKCM {
                                         }
                                     }
                                     elide: Text.ElideRight
+                                    textFormat: Text.PlainText
                                     maximumLineCount : 1
                                 }
 
@@ -252,6 +253,7 @@ KCM.SimpleKCM {
                                     text: deviceItem.product
                                     color: Kirigami.Theme.disabledTextColor
                                     elide: Text.ElideRight
+                                    textFormat: Text.PlainText
                                     maximumLineCount : 1
                                 }
                             }
@@ -270,6 +272,7 @@ KCM.SimpleKCM {
                                 text: deviceItem.battery.chargeState === Battery.Charging ?
                                     i18nc("Battery charge percentage", "%1% (Charging)", Math.round(percentageSlider.value)) :
                                     i18nc("Battery charge percentage", "%1%", Math.round(percentageSlider.value))
+                                textFormat: Text.PlainText
                             }
                         }
                     }
@@ -414,6 +417,7 @@ KCM.SimpleKCM {
 
                 Kirigami.Heading {
                     text: currentLayout.title
+                    textFormat: Text.PlainText
                     Kirigami.FormData.isSection: true
                     level: 2
                     // HACK hide section header if all labels are invisible
@@ -447,6 +451,7 @@ KCM.SimpleKCM {
                             const value = isBatteryProperty ? root.currentBattery[valueLabel.source] : root[`current${valueLabel.source}`]
                             return value ? valueLabel.format(value) : ""
                         }
+                        textFormat: Text.PlainText
                     }
                 }
             }
