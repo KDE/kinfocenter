@@ -48,7 +48,7 @@
         "Description[tr]": "Wayland Bileşikleştiricisi Bilgisi",
         "Description[uk]": "Відомості щодо засобу композиції Wayland",
         "Description[vi]": "Thông tin về Trình kết hợp Wayland",
-        "Description[zh_CN]": "关于 Wayland 显示特效合成器的信息。",
+        "Description[zh_CN]": "关于 Wayland 显示合成器的信息。",
         "Description[zh_TW]": "關於 Wayland 合成器的資訊",
         "Icon": "wayland",
         "Name": "Wayland",
