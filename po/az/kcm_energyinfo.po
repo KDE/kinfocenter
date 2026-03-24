@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2026-03-24 00:45+0000\n"
 "PO-Revision-Date: 2021-07-11 00:31+0400\n"
 "Last-Translator: Kheyyam Gojayev <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 21.04.3\n"
 
-#: ui/main.qml:31
+#: ui/main.qml:31 ui/main.qml:243
 #, kde-format
 msgid "Battery"
 msgstr "Batareya"
@@ -79,7 +79,7 @@ msgctxt "current power draw from the battery in W"
 msgid "Consumption"
 msgstr "Enerji sərfiyyatı"
 
-#: ui/main.qml:47 ui/main.qml:295
+#: ui/main.qml:47 ui/main.qml:313
 #, kde-format
 msgctxt "Watt"
 msgid "W"
@@ -127,12 +127,6 @@ msgstr "Mühit"
 msgid "Temperature"
 msgstr "Temperatur"
 
-#: ui/main.qml:57
-#, kde-format
-msgctxt "Degree Celsius"
-msgid "°C"
-msgstr "°C"
-
 #: ui/main.qml:70
 #, fuzzy, kde-format
 #| msgid "Yes"
@@ -164,175 +158,175 @@ msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: ui/main.qml:87
+#: ui/main.qml:88
+#, kde-format
+msgctxt "Degree Celsius"
+msgid "%1 °C"
+msgstr ""
+
+#: ui/main.qml:96
 #, kde-format
 msgid "Not charging"
 msgstr "Doldurulmur"
 
-#: ui/main.qml:88
+#: ui/main.qml:97
 #, kde-format
 msgid "Charging"
 msgstr "Doldurulma"
 
-#: ui/main.qml:89
+#: ui/main.qml:98
 #, kde-format
 msgid "Discharging"
 msgstr "Boşalma"
 
-#: ui/main.qml:90
+#: ui/main.qml:99
 #, kde-format
 msgid "Fully charged"
 msgstr "Tam doldurulub"
 
-#: ui/main.qml:96
+#: ui/main.qml:105
 #, kde-format
 msgid "Lithium ion"
 msgstr "Litium ion"
 
-#: ui/main.qml:97
+#: ui/main.qml:106
 #, kde-format
 msgid "Lithium polymer"
 msgstr "Litium polimer"
 
-#: ui/main.qml:98
+#: ui/main.qml:107
 #, kde-format
 msgid "Lithium iron phosphate"
 msgstr "Litium ion fosfat"
 
-#: ui/main.qml:99
+#: ui/main.qml:108
 #, kde-format
 msgid "Lead acid"
 msgstr "Qurğuşun-turşu"
 
-#: ui/main.qml:100
+#: ui/main.qml:109
 #, kde-format
 msgid "Nickel cadmium"
 msgstr "Nikel Kadmium"
 
-#: ui/main.qml:101
+#: ui/main.qml:110
 #, kde-format
 msgid "Nickel metal hydride"
 msgstr "Nikel-metal hibrid"
 
-#: ui/main.qml:102
+#: ui/main.qml:111
 #, kde-format
 msgid "Unknown technology"
 msgstr "Naməlum texnologiya"
 
-#: ui/main.qml:118
+#: ui/main.qml:127
 #, kde-format
 msgctxt "@info:status"
 msgid "No energy information available on this system"
 msgstr "Bu sistemdə enerji haqqında məlumatı yoxdur"
 
-#: ui/main.qml:213
+#: ui/main.qml:228
 #, fuzzy, kde-format
 #| msgid "PDA battery"
 msgid "PDA Battery"
 msgstr "Cib komputeri batareyası"
 
-#: ui/main.qml:214
+#: ui/main.qml:229
 #, fuzzy, kde-format
 #| msgid "UPS battery"
 msgid "UPS Battery"
 msgstr "UPS batareya"
 
-#: ui/main.qml:215
+#: ui/main.qml:230
 #, fuzzy, kde-format
 #| msgid "Internal battery"
 msgid "Internal Battery"
 msgstr "Daxili batareya"
 
-#: ui/main.qml:216
+#: ui/main.qml:231
 #, fuzzy, kde-format
 #| msgid "Mouse battery"
 msgid "Mouse Battery"
 msgstr "Siçan batareyası"
 
-#: ui/main.qml:217
+#: ui/main.qml:232
 #, fuzzy, kde-format
 #| msgid "Keyboard battery"
 msgid "Keyboard Battery"
 msgstr "Klaviatura batareyası"
 
-#: ui/main.qml:218
+#: ui/main.qml:233
 #, fuzzy, kde-format
 #| msgid "Keyboard battery"
 msgid "Keyboard/Mouse Battery"
 msgstr "Klaviatura batareyası"
 
-#: ui/main.qml:219
+#: ui/main.qml:234
 #, fuzzy, kde-format
 #| msgid "Battery"
 msgid "Camera Battery"
 msgstr "Batareya"
 
-#: ui/main.qml:220
+#: ui/main.qml:235
 #, fuzzy, kde-format
 #| msgid "Phone battery"
 msgid "Phone Battery"
 msgstr "Telefon batareyası"
 
-#: ui/main.qml:221
+#: ui/main.qml:236
 #, fuzzy, kde-format
 #| msgid "Monitor battery"
 msgid "Monitor Battery"
 msgstr "Monitor batareyası"
 
-#: ui/main.qml:222
+#: ui/main.qml:237
 #, kde-format
 msgid "Gaming Input Battery"
 msgstr ""
 
-#: ui/main.qml:223
+#: ui/main.qml:238
 #, fuzzy, kde-format
 #| msgid "Mouse battery"
 msgid "Bluetooth Battery"
 msgstr "Siçan batareyası"
 
-#: ui/main.qml:224
+#: ui/main.qml:239
 #, fuzzy, kde-format
 #| msgid "Battery"
 msgid "Tablet Battery"
 msgstr "Batareya"
 
-#: ui/main.qml:225
+#: ui/main.qml:240
 #, fuzzy, kde-format
 #| msgid "Phone battery"
 msgid "Headphone Battery"
 msgstr "Telefon batareyası"
 
-#: ui/main.qml:226
+#: ui/main.qml:241
 #, fuzzy, kde-format
 #| msgid "Keyboard battery"
 msgid "Headset Battery"
 msgstr "Klaviatura batareyası"
 
-#: ui/main.qml:227
+#: ui/main.qml:242
 #, fuzzy, kde-format
 #| msgid "Keyboard battery"
 msgid "Touchpad Battery"
 msgstr "Klaviatura batareyası"
 
-#: ui/main.qml:228
-#, fuzzy, kde-format
-#| msgid "Unknown battery"
-msgid "Unknown Battery"
-msgstr "Naməlum batareya"
-
-#: ui/main.qml:256
+#: ui/main.qml:273
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr "%1% (Doldurulur)"
 
-#: ui/main.qml:257
+#: ui/main.qml:274
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:314
+#: ui/main.qml:332
 #, fuzzy, kde-format
 #| msgctxt "@info:status"
 #| msgid "No energy information available on this system"
@@ -340,65 +334,74 @@ msgctxt "@info:status"
 msgid "No history information for this time span"
 msgstr "Bu sistemdə enerji haqqında məlumatı yoxdur"
 
-#: ui/main.qml:324
+#: ui/main.qml:342
 #, kde-format
 msgid "Charge Percentage"
 msgstr "Dolma faizi"
 
-#: ui/main.qml:334
+#: ui/main.qml:352
 #, kde-format
 msgid "Energy Consumption"
 msgstr "Enerji sərfiyyatı"
 
-#: ui/main.qml:350
+#: ui/main.qml:368
 #, kde-format
 msgid "Last hour"
 msgstr "Son saat"
 
-#: ui/main.qml:351
+#: ui/main.qml:369
 #, kde-format
 msgid "Last 2 hours"
 msgstr "Son 2 saat"
 
-#: ui/main.qml:352
+#: ui/main.qml:370
 #, kde-format
 msgid "Last 12 hours"
 msgstr "Son 12 saat"
 
-#: ui/main.qml:353
+#: ui/main.qml:371
 #, kde-format
 msgid "Last 24 hours"
 msgstr "Son 24 saat"
 
-#: ui/main.qml:354
+#: ui/main.qml:372
 #, kde-format
 msgid "Last 48 hours"
 msgstr "Son 48 saat"
 
-#: ui/main.qml:355
+#: ui/main.qml:373
 #, kde-format
 msgid "Last 7 days"
 msgstr "Son 7 gün"
 
-#: ui/main.qml:363
+#: ui/main.qml:381
 #, kde-format
 msgid "Timespan"
 msgstr "Vaxt aralığı"
 
-#: ui/main.qml:364
+#: ui/main.qml:382
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "Göstəriləcək verilənlərin vaxt aralığı"
 
-#: ui/main.qml:370
+#: ui/main.qml:388
 #, kde-format
 msgid "Refresh"
 msgstr "Yeniləmək"
 
-#: ui/main.qml:428
+#: ui/main.qml:447
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
+
+#~ msgctxt "Degree Celsius"
+#~ msgid "°C"
+#~ msgstr "°C"
+
+#, fuzzy
+#~| msgid "Unknown battery"
+#~ msgid "Unknown Battery"
+#~ msgstr "Naməlum batareya"
 
 #, fuzzy
 #~| msgctxt "Battery charge percentage"

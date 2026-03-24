@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2026-03-24 00:45+0000\n"
 "PO-Revision-Date: 2026-03-01 10:59+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 
-#: ui/main.qml:31
+#: ui/main.qml:31 ui/main.qml:243
 #, kde-format
 msgid "Battery"
 msgstr "Batteri"
@@ -80,7 +80,7 @@ msgctxt "current power draw from the battery in W"
 msgid "Consumption"
 msgstr "Energiforbruk"
 
-#: ui/main.qml:47 ui/main.qml:295
+#: ui/main.qml:47 ui/main.qml:313
 #, kde-format
 msgctxt "Watt"
 msgid "W"
@@ -128,12 +128,6 @@ msgstr "Omgjevnad"
 msgid "Temperature"
 msgstr "Temperatur"
 
-#: ui/main.qml:57
-#, kde-format
-msgctxt "Degree Celsius"
-msgid "°C"
-msgstr "°C"
-
 #: ui/main.qml:70
 #, kde-format
 msgctxt ""
@@ -161,221 +155,229 @@ msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: ui/main.qml:87
+#: ui/main.qml:88
+#, kde-format
+msgctxt "Degree Celsius"
+msgid "%1 °C"
+msgstr ""
+
+#: ui/main.qml:96
 #, kde-format
 msgid "Not charging"
 msgstr "Ladar ikkje"
 
-#: ui/main.qml:88
+#: ui/main.qml:97
 #, kde-format
 msgid "Charging"
 msgstr "Ladar"
 
-#: ui/main.qml:89
+#: ui/main.qml:98
 #, kde-format
 msgid "Discharging"
 msgstr "Ladar ut"
 
-#: ui/main.qml:90
+#: ui/main.qml:99
 #, kde-format
 msgid "Fully charged"
 msgstr "Fullt opplada"
 
-#: ui/main.qml:96
+#: ui/main.qml:105
 #, kde-format
 msgid "Lithium ion"
 msgstr "Litium ion"
 
-#: ui/main.qml:97
+#: ui/main.qml:106
 #, kde-format
 msgid "Lithium polymer"
 msgstr "Litium polymer"
 
-#: ui/main.qml:98
+#: ui/main.qml:107
 #, kde-format
 msgid "Lithium iron phosphate"
 msgstr "Litium jernfosfat"
 
-#: ui/main.qml:99
+#: ui/main.qml:108
 #, kde-format
 msgid "Lead acid"
 msgstr "Bly-syre"
 
-#: ui/main.qml:100
+#: ui/main.qml:109
 #, kde-format
 msgid "Nickel cadmium"
 msgstr "Nikkel-kadmium"
 
-#: ui/main.qml:101
+#: ui/main.qml:110
 #, kde-format
 msgid "Nickel metal hydride"
 msgstr "Nikkel-metallhydrid"
 
-#: ui/main.qml:102
+#: ui/main.qml:111
 #, kde-format
 msgid "Unknown technology"
 msgstr "Ukjend teknologi"
 
-#: ui/main.qml:118
+#: ui/main.qml:127
 #, kde-format
 msgctxt "@info:status"
 msgid "No energy information available on this system"
 msgstr "Det finst ikkje informasjon om straumkjelda til dette systemet"
 
-#: ui/main.qml:213
+#: ui/main.qml:228
 #, kde-format
 msgid "PDA Battery"
 msgstr "PDA-batteri"
 
-#: ui/main.qml:214
+#: ui/main.qml:229
 #, kde-format
 msgid "UPS Battery"
 msgstr "UPS-batteri"
 
-#: ui/main.qml:215
+#: ui/main.qml:230
 #, kde-format
 msgid "Internal Battery"
 msgstr "Internt batteri"
 
-#: ui/main.qml:216
+#: ui/main.qml:231
 #, kde-format
 msgid "Mouse Battery"
 msgstr "Musebatteri"
 
-#: ui/main.qml:217
+#: ui/main.qml:232
 #, kde-format
 msgid "Keyboard Battery"
 msgstr "Tastaturbatteri"
 
-#: ui/main.qml:218
+#: ui/main.qml:233
 #, kde-format
 msgid "Keyboard/Mouse Battery"
 msgstr "Tastatur-/musebatteri"
 
-#: ui/main.qml:219
+#: ui/main.qml:234
 #, kde-format
 msgid "Camera Battery"
 msgstr "Kamerabatteri"
 
-#: ui/main.qml:220
+#: ui/main.qml:235
 #, kde-format
 msgid "Phone Battery"
 msgstr "Telefonbatteri"
 
-#: ui/main.qml:221
+#: ui/main.qml:236
 #, kde-format
 msgid "Monitor Battery"
 msgstr "Skjermbatteri"
 
-#: ui/main.qml:222
+#: ui/main.qml:237
 #, kde-format
 msgid "Gaming Input Battery"
 msgstr "Spelkontroll-batteri"
 
-#: ui/main.qml:223
+#: ui/main.qml:238
 #, kde-format
 msgid "Bluetooth Battery"
 msgstr "Bluetooth-batteri"
 
-#: ui/main.qml:224
+#: ui/main.qml:239
 #, kde-format
 msgid "Tablet Battery"
 msgstr "Teikneplate-batteri"
 
-#: ui/main.qml:225
+#: ui/main.qml:240
 #, kde-format
 msgid "Headphone Battery"
 msgstr "Hovudtelefon-batteri"
 
-#: ui/main.qml:226
+#: ui/main.qml:241
 #, kde-format
 msgid "Headset Battery"
 msgstr "Hovudsett-batteri"
 
-#: ui/main.qml:227
+#: ui/main.qml:242
 #, kde-format
 msgid "Touchpad Battery"
 msgstr "Styreplate-batteri"
 
-#: ui/main.qml:228
-#, kde-format
-msgid "Unknown Battery"
-msgstr "Ukjent batteri"
-
-#: ui/main.qml:256
+#: ui/main.qml:273
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr "%1 % (ladar)"
 
-#: ui/main.qml:257
+#: ui/main.qml:274
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr "%1 %"
 
-#: ui/main.qml:314
+#: ui/main.qml:332
 #, kde-format
 msgctxt "@info:status"
 msgid "No history information for this time span"
 msgstr "Ingen historikk for dette tidsrommet"
 
-#: ui/main.qml:324
+#: ui/main.qml:342
 #, kde-format
 msgid "Charge Percentage"
 msgstr "Ladingsprosent"
 
-#: ui/main.qml:334
+#: ui/main.qml:352
 #, kde-format
 msgid "Energy Consumption"
 msgstr "Energiforbruk"
 
-#: ui/main.qml:350
+#: ui/main.qml:368
 #, kde-format
 msgid "Last hour"
 msgstr "Siste time"
 
-#: ui/main.qml:351
+#: ui/main.qml:369
 #, kde-format
 msgid "Last 2 hours"
 msgstr "Siste 2 timar"
 
-#: ui/main.qml:352
+#: ui/main.qml:370
 #, kde-format
 msgid "Last 12 hours"
 msgstr "Siste 12 timar"
 
-#: ui/main.qml:353
+#: ui/main.qml:371
 #, kde-format
 msgid "Last 24 hours"
 msgstr "Siste 24 timar"
 
-#: ui/main.qml:354
+#: ui/main.qml:372
 #, kde-format
 msgid "Last 48 hours"
 msgstr "Siste 48 timar"
 
-#: ui/main.qml:355
+#: ui/main.qml:373
 #, kde-format
 msgid "Last 7 days"
 msgstr "Siste 7 dagar"
 
-#: ui/main.qml:363
+#: ui/main.qml:381
 #, kde-format
 msgid "Timespan"
 msgstr "Tidsrom"
 
-#: ui/main.qml:364
+#: ui/main.qml:382
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "Vis data for tidsrom"
 
-#: ui/main.qml:370
+#: ui/main.qml:388
 #, kde-format
 msgid "Refresh"
 msgstr "Oppdater"
 
-#: ui/main.qml:428
+#: ui/main.qml:447
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
+
+#~ msgctxt "Degree Celsius"
+#~ msgid "°C"
+#~ msgstr "°C"
+
+#~ msgid "Unknown Battery"
+#~ msgstr "Ukjent batteri"

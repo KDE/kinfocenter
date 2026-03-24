@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2026-03-24 00:45+0000\n"
 "PO-Revision-Date: 2016-07-03 22:52+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Text-Markup: kde4\n"
 "X-Environment: kde\n"
 
-#: ui/main.qml:31
+#: ui/main.qml:31 ui/main.qml:243
 #, kde-format
 msgid "Battery"
 msgstr "Baterija"
@@ -81,7 +81,7 @@ msgctxt "current power draw from the battery in W"
 msgid "Consumption"
 msgstr "Potrošnja"
 
-#: ui/main.qml:47 ui/main.qml:295
+#: ui/main.qml:47 ui/main.qml:313
 #, kde-format
 msgctxt "Watt"
 msgid "W"
@@ -131,12 +131,6 @@ msgstr "Okruženje"
 msgid "Temperature"
 msgstr "Temperatura"
 
-#: ui/main.qml:57
-#, kde-format
-msgctxt "Degree Celsius"
-msgid "°C"
-msgstr "°C"
-
 # >> @item
 #: ui/main.qml:70
 #, fuzzy, kde-format
@@ -170,170 +164,170 @@ msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: ui/main.qml:87
+#: ui/main.qml:88
+#, kde-format
+msgctxt "Degree Celsius"
+msgid "%1 °C"
+msgstr ""
+
+#: ui/main.qml:96
 #, kde-format
 msgid "Not charging"
 msgstr "Ne puni se"
 
-#: ui/main.qml:88
+#: ui/main.qml:97
 #, kde-format
 msgid "Charging"
 msgstr "Puni se"
 
-#: ui/main.qml:89
+#: ui/main.qml:98
 #, kde-format
 msgid "Discharging"
 msgstr "Prazni se"
 
-#: ui/main.qml:90
+#: ui/main.qml:99
 #, kde-format
 msgid "Fully charged"
 msgstr "Skroz puna"
 
-#: ui/main.qml:96
+#: ui/main.qml:105
 #, kde-format
 msgid "Lithium ion"
 msgstr ""
 
-#: ui/main.qml:97
+#: ui/main.qml:106
 #, kde-format
 msgid "Lithium polymer"
 msgstr ""
 
-#: ui/main.qml:98
+#: ui/main.qml:107
 #, kde-format
 msgid "Lithium iron phosphate"
 msgstr ""
 
-#: ui/main.qml:99
+#: ui/main.qml:108
 #, kde-format
 msgid "Lead acid"
 msgstr ""
 
-#: ui/main.qml:100
+#: ui/main.qml:109
 #, kde-format
 msgid "Nickel cadmium"
 msgstr ""
 
-#: ui/main.qml:101
+#: ui/main.qml:110
 #, kde-format
 msgid "Nickel metal hydride"
 msgstr ""
 
-#: ui/main.qml:102
+#: ui/main.qml:111
 #, kde-format
 msgid "Unknown technology"
 msgstr ""
 
-#: ui/main.qml:118
+#: ui/main.qml:127
 #, kde-format
 msgctxt "@info:status"
 msgid "No energy information available on this system"
 msgstr ""
 
-#: ui/main.qml:213
+#: ui/main.qml:228
 #, fuzzy, kde-format
 #| msgid "Battery"
 msgid "PDA Battery"
 msgstr "Baterija"
 
-#: ui/main.qml:214
+#: ui/main.qml:229
 #, fuzzy, kde-format
 #| msgid "Battery"
 msgid "UPS Battery"
 msgstr "Baterija"
 
-#: ui/main.qml:215
+#: ui/main.qml:230
 #, fuzzy, kde-format
 #| msgid "Battery"
 msgid "Internal Battery"
 msgstr "Baterija"
 
-#: ui/main.qml:216
+#: ui/main.qml:231
 #, fuzzy, kde-format
 #| msgid "Battery"
 msgid "Mouse Battery"
 msgstr "Baterija"
 
-#: ui/main.qml:217
+#: ui/main.qml:232
 #, fuzzy, kde-format
 #| msgid "Battery"
 msgid "Keyboard Battery"
 msgstr "Baterija"
 
-#: ui/main.qml:218
+#: ui/main.qml:233
 #, fuzzy, kde-format
 #| msgid "Battery"
 msgid "Keyboard/Mouse Battery"
 msgstr "Baterija"
 
-#: ui/main.qml:219
+#: ui/main.qml:234
 #, fuzzy, kde-format
 #| msgid "Battery"
 msgid "Camera Battery"
 msgstr "Baterija"
 
-#: ui/main.qml:220
+#: ui/main.qml:235
 #, fuzzy, kde-format
 #| msgid "Battery"
 msgid "Phone Battery"
 msgstr "Baterija"
 
-#: ui/main.qml:221
+#: ui/main.qml:236
 #, fuzzy, kde-format
 #| msgid "Battery"
 msgid "Monitor Battery"
 msgstr "Baterija"
 
-#: ui/main.qml:222
+#: ui/main.qml:237
 #, kde-format
 msgid "Gaming Input Battery"
 msgstr ""
 
-#: ui/main.qml:223
+#: ui/main.qml:238
 #, fuzzy, kde-format
 #| msgid "Battery"
 msgid "Bluetooth Battery"
 msgstr "Baterija"
 
-#: ui/main.qml:224
+#: ui/main.qml:239
 #, fuzzy, kde-format
 #| msgid "Battery"
 msgid "Tablet Battery"
 msgstr "Baterija"
 
-#: ui/main.qml:225
+#: ui/main.qml:240
 #, fuzzy, kde-format
 #| msgid "Battery"
 msgid "Headphone Battery"
 msgstr "Baterija"
 
-#: ui/main.qml:226
+#: ui/main.qml:241
 #, fuzzy, kde-format
 #| msgid "Battery"
 msgid "Headset Battery"
 msgstr "Baterija"
 
-#: ui/main.qml:227
+#: ui/main.qml:242
 #, fuzzy, kde-format
 #| msgid "Battery"
 msgid "Touchpad Battery"
 msgstr "Baterija"
 
-#: ui/main.qml:228
-#, fuzzy, kde-format
-#| msgid "Battery"
-msgid "Unknown Battery"
-msgstr "Baterija"
-
-#: ui/main.qml:256
+#: ui/main.qml:273
 #, fuzzy, kde-format
 #| msgid "Charging"
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
 msgstr "Puni se"
 
-#: ui/main.qml:257
+#: ui/main.qml:274
 #, fuzzy, kde-format
 #| msgctxt "%1 is value, %2 is unit"
 #| msgid "%1 %2"
@@ -341,71 +335,80 @@ msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr "%1 %2"
 
-#: ui/main.qml:314
+#: ui/main.qml:332
 #, kde-format
 msgctxt "@info:status"
 msgid "No history information for this time span"
 msgstr ""
 
-#: ui/main.qml:324
+#: ui/main.qml:342
 #, kde-format
 msgid "Charge Percentage"
 msgstr "Procenat popunjenosti"
 
-#: ui/main.qml:334
+#: ui/main.qml:352
 #, kde-format
 msgid "Energy Consumption"
 msgstr "Potrošnja energije"
 
-#: ui/main.qml:350
+#: ui/main.qml:368
 #, kde-format
 msgid "Last hour"
 msgstr "Prethodnog sata"
 
-#: ui/main.qml:351
+#: ui/main.qml:369
 #, kde-format
 msgid "Last 2 hours"
 msgstr "Prethodna 2 sata"
 
-#: ui/main.qml:352
+#: ui/main.qml:370
 #, kde-format
 msgid "Last 12 hours"
 msgstr "Prethodnih 12 sati"
 
-#: ui/main.qml:353
+#: ui/main.qml:371
 #, kde-format
 msgid "Last 24 hours"
 msgstr "Prethodnih 24 sata"
 
-#: ui/main.qml:354
+#: ui/main.qml:372
 #, kde-format
 msgid "Last 48 hours"
 msgstr "Prethodnih 48 sati"
 
-#: ui/main.qml:355
+#: ui/main.qml:373
 #, kde-format
 msgid "Last 7 days"
 msgstr "Prethodnih 7 dana"
 
-#: ui/main.qml:363
+#: ui/main.qml:381
 #, kde-format
 msgid "Timespan"
 msgstr "Vremenski raspon"
 
-#: ui/main.qml:364
+#: ui/main.qml:382
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "Vremenski raspon za prikaz podataka"
 
-#: ui/main.qml:370
+#: ui/main.qml:388
 #, kde-format
 msgid "Refresh"
 msgstr "Osveži"
 
-#: ui/main.qml:428
+#: ui/main.qml:447
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
+
+#~ msgctxt "Degree Celsius"
+#~ msgid "°C"
+#~ msgstr "°C"
+
+#, fuzzy
+#~| msgid "Battery"
+#~ msgid "Unknown Battery"
+#~ msgstr "Baterija"
 
 #, fuzzy
 #~| msgctxt "%1 is value, %2 is unit"
