@@ -3,13 +3,13 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2015, 2016, 2019, 2021, 2022, 2023, 2024, 2025.
+# Yuri Chornoivan <yurchor@ukr.net>, 2015, 2016, 2019, 2021, 2022, 2023, 2024, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-03-24 00:45+0000\n"
-"PO-Revision-Date: 2025-11-08 17:48+0200\n"
+"PO-Revision-Date: 2026-03-24 08:12+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -160,7 +160,7 @@ msgstr "%1 %2"
 #, kde-format
 msgctxt "Degree Celsius"
 msgid "%1 °C"
-msgstr ""
+msgstr "%1 °C"
 
 #: ui/main.qml:96
 #, kde-format

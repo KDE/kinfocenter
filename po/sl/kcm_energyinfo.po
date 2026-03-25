@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-03-24 00:45+0000\n"
-"PO-Revision-Date: 2025-11-08 06:57+0100\n"
+"PO-Revision-Date: 2026-03-24 06:23+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #: ui/main.qml:31 ui/main.qml:243
 #, kde-format
@@ -161,7 +161,7 @@ msgstr "%1 %2"
 #, kde-format
 msgctxt "Degree Celsius"
 msgid "%1 °C"
-msgstr ""
+msgstr "%1 °C"
 
 #: ui/main.qml:96
 #, kde-format
