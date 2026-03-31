@@ -103,6 +103,7 @@
     "X-KDE-KInfoCenter-Category": "device_information",
     "X-KDE-Keywords": "firmware,security,hsi,secureboot,fwupd,bootguard,lockdown",
     "X-KDE-Keywords[ar]": "firmware,security,hsi,secureboot,fwupd,bootguard,lockdown,البرنامج الثابت,الأمان,التمهيد الآمن,إغلاق",
+    "X-KDE-Keywords[az]": "firmware,security,hsi,secureboot,fwupd,bootguard,lockdown,mikroproqram,təhlükəsizlik,təhlükəsiz önyükləmə,endirmə təhlükəsziliyi,təhlükəsizlik divarı,kilidləmə",
     "X-KDE-Keywords[bg]": "фърмуер,сигурност,hsi,secureboot,fwupd,bootguard,заключване",
     "X-KDE-Keywords[ca@valencia]": "microprogramari,seguretat,hsi,secureboot,fwupd,bootguard,bloqueig de seguretat",
     "X-KDE-Keywords[ca]": "microprogramari,seguretat,hsi,secureboot,fwupd,bootguard,bloqueig de seguretat",
