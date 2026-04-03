@@ -8,50 +8,48 @@ msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:53+0000\n"
-"PO-Revision-Date: 2013-09-08 07:05+0900\n"
-"Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
+"PO-Revision-Date: 2026-04-01 09:02-0400\n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.8\n"
 
 #: classes.i18n:2
 #, kde-format
 msgctxt "USB device class"
 msgid "(Defined at Interface level)"
-msgstr ""
+msgstr "(ئارايۈز دەرىجىسىدە بەلگىلەنگەن)"
 
 #: classes.i18n:3 usbdevices.cpp:102
 #, kde-format
 msgctxt "USB device class"
 msgid "Application Specific Interface"
-msgstr ""
+msgstr "پىروگرامما بەلگىلىگەن ئارايۈز"
 
 #: classes.i18n:4 usbdevices.cpp:68
-#, fuzzy, kde-format
-#| msgid "Audio"
+#, kde-format
 msgctxt "USB device class"
 msgid "Audio"
 msgstr "ئۈن"
 
 #: classes.i18n:5 usbdevices.cpp:84
-#, fuzzy, kde-format
-#| msgid "Data"
+#, kde-format
 msgctxt "USB device class"
 msgid "CDC Data"
-msgstr "سانلىق-مەلۇمات"
+msgstr "CDC سانلىق مەلۇمات"
 
 #: classes.i18n:6 usbdevices.cpp:86
 #, kde-format
 msgctxt "USB device class"
 msgid "Chip/SmartCard"
-msgstr ""
+msgstr "ئۆزەك/ئىدراكلىق كارتا"
 
 #: classes.i18n:7 usbdevices.cpp:70
-#, fuzzy, kde-format
-#| msgid "Communications"
+#, kde-format
 msgctxt "USB device class"
 msgid "Communications"
 msgstr "ئالاقە"
@@ -60,91 +58,88 @@ msgstr "ئالاقە"
 #, kde-format
 msgctxt "USB device class"
 msgid "Content Security"
-msgstr ""
+msgstr "مەزمۇن بىخەتەرلىكى"
 
 #: classes.i18n:9 usbdevices.cpp:94
 #, kde-format
 msgctxt "USB device class"
 msgid "Diagnostic"
-msgstr ""
+msgstr "ئېنىقلاش"
 
 #: classes.i18n:10 usbdevices.cpp:82
 #, kde-format
 msgctxt "USB device class"
 msgid "Hub"
-msgstr ""
+msgstr "توپلىغۇچ"
 
 #: classes.i18n:11 usbdevices.cpp:72
 #, kde-format
 msgctxt "USB device class"
 msgid "Human Interface Device"
-msgstr ""
+msgstr "ئىنسان ئارايۈز ئۈسكۈنىسى"
 
 #: classes.i18n:12 usbdevices.cpp:78
 #, kde-format
 msgctxt "USB device class"
 msgid "Imaging"
-msgstr ""
+msgstr "سۈرەت ئۈسكۈنىسى"
 
 #: classes.i18n:13 usbdevices.cpp:80
 #, kde-format
 msgctxt "USB device class"
 msgid "Mass Storage"
-msgstr ""
+msgstr "يۇقىرى سىغىملىق ساقلىغۇچ"
 
 #: classes.i18n:14 usbdevices.cpp:99
 #, kde-format
 msgctxt "USB device class"
 msgid "Miscellaneous Device"
-msgstr ""
+msgstr "باشقا ئۈسكۈنە"
 
 #: classes.i18n:15 usbdevices.cpp:74
 #, kde-format
 msgctxt "USB device class"
 msgid "Physical Interface Device"
-msgstr ""
+msgstr "فىزىكىلىق ئارايۈز ئۈسكۈنىسى"
 
 #: classes.i18n:16 usbdevices.cpp:76
-#, fuzzy, kde-format
-#| msgid "Printer"
+#, kde-format
 msgctxt "USB device class"
 msgid "Printer"
-msgstr "پرىنتېر"
+msgstr "باسقۇ"
 
 #: classes.i18n:17 usbdevices.cpp:104
-#, fuzzy, kde-format
-#| msgid "Vendor specific"
+#, kde-format
 msgctxt "USB device class"
 msgid "Vendor Specific Class"
-msgstr "شىركەتكە خاس"
+msgstr "تەمىنلىگۈچىگە خاس تۈر"
 
 #: classes.i18n:18 usbdevices.cpp:90
 #, kde-format
 msgctxt "USB device class"
 msgid "Video"
-msgstr ""
+msgstr "سىن"
 
 #: classes.i18n:19 usbdevices.cpp:96
 #, kde-format
 msgctxt "USB device class"
 msgid "Wireless"
-msgstr ""
+msgstr "سىمسىز"
 
 #: classes.i18n:20
 #, kde-format
 msgctxt "USB device class"
 msgid "Xbox"
-msgstr ""
+msgstr "Xbox"
 
 #: classes.i18n:21
 #, kde-format
 msgctxt "USB device subclass"
 msgid "?"
-msgstr ""
+msgstr "؟"
 
 #: classes.i18n:22
-#, fuzzy, kde-format
-#| msgid "ATM Networking"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "ATM Networking"
 msgstr "ATM تورى"
@@ -153,143 +148,136 @@ msgstr "ATM تورى"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Abstract (modem)"
-msgstr ""
+msgstr "ئابىستىراكىت (مودېم)"
 
 #: classes.i18n:24
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Boot Interface Subclass"
-msgstr ""
+msgstr "قوزغاتقۇچ ئېغىزىنىڭ قىسمى تۈرى"
 
 #: classes.i18n:25
 #, kde-format
 msgctxt "USB device subclass"
 msgid "CAPI Control"
-msgstr ""
+msgstr "CAPI كونترولى"
 
 #: classes.i18n:26
-#, fuzzy, kde-format
-#| msgid "Control Device"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Control Device"
-msgstr "ئۈسكۈنە تىزگىنلە"
+msgstr "تىزگىنلەش ئۈسكۈنىسى"
 
 #: classes.i18n:27
-#, fuzzy, kde-format
-#| msgid "Control Device"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Controller"
-msgstr "ئۈسكۈنە تىزگىنلە"
+msgstr "تىزگىنلىگۈچ"
 
 #: classes.i18n:28
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Device Firmware Update"
-msgstr ""
+msgstr "ئۈسكۈنە مۇقىم دېتالىنى يېڭىلاش"
 
 #: classes.i18n:29
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Device Management"
-msgstr ""
+msgstr "ئۈسكۈنە باشقۇرۇش"
 
 #: classes.i18n:30
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Direct Line"
-msgstr ""
+msgstr "بىۋاسىتە لىنىيە"
 
 #: classes.i18n:31
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Ethernet Emulation"
-msgstr ""
+msgstr "دائىرىلىك تور تەقلىدلەش"
 
 #: classes.i18n:32
-#, fuzzy, kde-format
-#| msgid "ATM Networking"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Ethernet Networking"
-msgstr "ATM تورى"
+msgstr "دائىرىلىك تور تورچىلىقى"
 
 #: classes.i18n:33
-#, fuzzy, kde-format
-#| msgid "Floppy"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Floppy (UFI)"
-msgstr "يۇمشاق دىسكا"
+msgstr "يۇمشاق دىسكا (UFI)"
 
 #: classes.i18n:34
 #, kde-format
 msgctxt "USB device subclass"
 msgid "IRDA Bridge"
-msgstr ""
+msgstr "IRDA كۆۋرۈكى"
 
 #: classes.i18n:35
-#, fuzzy, kde-format
-#| msgid "Streaming"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "MIDI Streaming"
-msgstr "ئېقىم"
+msgstr "MIDI ئېقىمى"
 
 #: classes.i18n:36
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Mobile Direct Line"
-msgstr ""
+msgstr "كۆچمە ئۈسكۈنە بىۋاسىتە لىنىيەسى"
 
 #: classes.i18n:37
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Multi-Channel"
-msgstr ""
+msgstr "كۆپ يوللۇق"
 
 #: classes.i18n:38
 #, kde-format
 msgctxt "USB device subclass"
 msgid "No Subclass"
-msgstr ""
+msgstr "قىسمى تۈرى يوق"
 
 #: classes.i18n:39
 #, kde-format
 msgctxt "USB device subclass"
 msgid "OBEX"
-msgstr ""
+msgstr "OBEX"
 
 #: classes.i18n:40
-#, fuzzy, kde-format
-#| msgid "Printer"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Printer"
-msgstr "پرىنتېر"
+msgstr "باسقۇ"
 
 #: classes.i18n:41
 #, kde-format
 msgctxt "USB device subclass"
 msgid "QIC-157"
-msgstr ""
+msgstr "QIC-157"
 
 #: classes.i18n:42
 #, kde-format
 msgctxt "USB device subclass"
 msgid "RBC (typically Flash)"
-msgstr ""
+msgstr "RBC (ئادەتتىكى Flash)"
 
 #: classes.i18n:43
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Radio Frequency"
-msgstr ""
+msgstr "سىمسىز تارقىتىش چاستوتىسى"
 
 #: classes.i18n:44
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Reprogrammable Diagnostics"
-msgstr ""
+msgstr "قايتا پىروگرامما تۈزۈشچان ئېنىقلاش ئۈسكۈنىسى"
 
 #: classes.i18n:45
-#, fuzzy, kde-format
-#| msgid "SCSI"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "SCSI"
 msgstr "SCSI"
@@ -298,30 +286,28 @@ msgstr "SCSI"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "SFF-8020i, MMC-2 (ATAPI)"
-msgstr ""
+msgstr "SFF-8020i, MMC-2 (ATAPI)"
 
 #: classes.i18n:47
 #, kde-format
 msgctxt "USB device subclass"
 msgid "SFF-8070i"
-msgstr ""
+msgstr "SFF-8070i"
 
 #: classes.i18n:48
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Still Image Capture"
-msgstr ""
+msgstr "تىنچ سۈرەت تۇتۇش"
 
 #: classes.i18n:49
-#, fuzzy, kde-format
-#| msgid "Streaming"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Streaming"
 msgstr "ئېقىم"
 
 #: classes.i18n:50
-#, fuzzy, kde-format
-#| msgid "Telephone"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Telephone"
 msgstr "تېلېفون"
@@ -330,63 +316,61 @@ msgstr "تېلېفون"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Test and Measurement"
-msgstr ""
+msgstr "سىناق ۋە ئۆلچەم"
 
 #: classes.i18n:52
 #, kde-format
 msgctxt "USB device subclass"
 msgid "USB3 Vision"
-msgstr ""
+msgstr "USB3 كۆرۈنۈش"
 
 #: classes.i18n:53
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Undefined"
-msgstr ""
+msgstr "ئېنىقلانمىغان"
 
 #: classes.i18n:54
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Unused"
-msgstr ""
+msgstr "ئىشلىتىلمىگىنى"
 
 #: classes.i18n:55
-#, fuzzy, kde-format
-#| msgid "Vendor specific"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Vendor Specific Subclass"
-msgstr "شىركەتكە خاس"
+msgstr "تەمىنلىگۈچىگە خاس قىسمى تۈر"
 
 #: classes.i18n:56
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Video Control"
-msgstr ""
+msgstr "سىن تىزگىنلەش"
 
 #: classes.i18n:57
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Video Interface Collection"
-msgstr ""
+msgstr "سىن ئارايۈز توپلىمى"
 
 #: classes.i18n:58
-#, fuzzy, kde-format
-#| msgid "Streaming"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Video Streaming"
-msgstr "ئېقىم"
+msgstr "سىن ئېقىمى"
 
 #: classes.i18n:59
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Wireless Handset Control"
-msgstr ""
+msgstr "سىمسىز تېلېفون تىزگىنلەش"
 
 #: classes.i18n:60
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Wireless USB Wire Adapter"
-msgstr ""
+msgstr "سىمسىز USB سىم ماسلاشتۇرغۇچ"
 
 #: kcmusb.cpp:35
 #, kde-format
@@ -397,48 +381,48 @@ msgstr "ئۈسكۈنە"
 #, kde-format
 msgctxt "USB device class"
 msgid "Defined at Interface Level"
-msgstr ""
+msgstr "ئارايۈز دەرىجىسىدە بەلگىلەنگەن"
 
 #: usbdevices.cpp:92
 #, kde-format
 msgctxt "USB device class"
 msgid "Personal Healthcare"
-msgstr ""
+msgstr "شەخسىي ساغلاملىق باشقۇرۇش"
 
 #: usbdevices.cpp:215
 #, kde-format
 msgid "Unknown"
-msgstr "نامەلۇم"
+msgstr "يوچۇن"
 
 #: usbdevices.cpp:225
 #, kde-format
 msgid "<b>Manufacturer:</b> "
-msgstr ""
+msgstr "<b>ياسىغۇچى:</b> "
 
 #: usbdevices.cpp:227
 #, kde-format
 msgid "<b>Serial #:</b> "
-msgstr ""
+msgstr "<b>تەرتىپ نومۇرى #:</b> "
 
 #: usbdevices.cpp:235
 #, kde-format
 msgid "<tr><td><i>Vendor ID</i></td><td>0x%1</td></tr>"
-msgstr ""
+msgstr "<tr><td><i>تەمىنلىگۈچى كىملىكى</i></td><td>0x%1</td></tr>"
 
 #: usbdevices.cpp:240
 #, kde-format
 msgid "<tr><td><i>Product ID</i></td><td>0x%1</td></tr>"
-msgstr ""
+msgstr "<tr><td><i>مەھسۇلات كىملىكى</i></td><td>0x%1</td></tr>"
 
 #: usbdevices.cpp:252
 #, kde-format
 msgid "<tr><td><i>Class</i></td>%1</tr>"
-msgstr ""
+msgstr "<tr><td><i>تۈرى</i></td>%1</tr>"
 
 #: usbdevices.cpp:257
 #, kde-format
 msgid "<tr><td><i>Subclass</i></td>%1</tr>"
-msgstr ""
+msgstr "<tr><td><i>قىسمى تۈرى</i></td>%1</tr>"
 
 #: usbdevices.cpp:262
 #, kde-format
@@ -448,22 +432,22 @@ msgstr "<tr><td><i>كېلىشىم</i></td>%1</tr>"
 #: usbdevices.cpp:263
 #, kde-format
 msgid "<tr><td><i>USB Version</i></td><td>%1.%2</td></tr>"
-msgstr ""
+msgstr "<tr><td><i>USB نەشرى</i></td><td>%1.%2</td></tr>"
 
 #: usbdevices.cpp:266
 #, kde-format
 msgid "<tr><td><i>Speed</i></td><td>%1 Mbit/s</td></tr>"
-msgstr "<tr><td><i>تېزلىك</i></td><td>%1 مېگابىت/s</td></tr>"
+msgstr "<tr><td><i>Speed</i></td><td>%1 Mbit/s</td></tr>"
 
 #: usbdevices.cpp:267
 #, kde-format
 msgid "<tr><td><i>Channels</i></td><td>%1</td></tr>"
-msgstr ""
+msgstr "<tr><td><i>قانال</i></td><td>%1</td></tr>"
 
 #: usbdevices.cpp:268
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
-msgstr ""
+msgstr "<tr><td><i>ئەڭ چوڭ بوغچا چوڭلۇقى</i></td><td>%1</td></tr>"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
@@ -481,7 +465,6 @@ msgstr ""
 #~ msgid "kcmusb"
 #~ msgstr "kcmusb"
 
-#, fuzzy
 #~| msgid "Device"
 #~ msgid "USB Devices"
 #~ msgstr "ئۈسكۈنە"
