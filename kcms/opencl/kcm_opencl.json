@@ -43,6 +43,7 @@
         "Description[sl]": "Informacija o API OpenCL",
         "Description[sv]": "Information om OpenCL programmeringsgränssnitt",
         "Description[tr]": "OpenCL API'si Bilgisi",
+        "Description[ug]": "OpenCL API ئۇچۇرى",
         "Description[uk]": "Інформація щодо програмного інтерфейсу OpenCL",
         "Description[vi]": "Thông tin về API OpenCL",
         "Description[zh_CN]": "OpenCL API 信息",
@@ -89,6 +90,7 @@
         "Name[sl]": "OpenCL",
         "Name[sv]": "OpenCL",
         "Name[tr]": "OpenCL",
+        "Name[ug]": "OpenCL",
         "Name[uk]": "OpenCL",
         "Name[vi]": "OpenCL",
         "Name[zh_CN]": "OpenCL",
@@ -121,6 +123,7 @@
     "X-KDE-Keywords[ru]": "OpenCL,VideoCard,Hardware Acceleration,Graphics,dxdiag,видеокарта,аппаратное ускорение,графика",
     "X-KDE-Keywords[sl]": "OpenCL,Videokartica,Strojno pospeševanje,Grafika,dxdiag",
     "X-KDE-Keywords[tr]": "opencl,video kartı,donanım hızlandırması, donanım ivmelendirmesi,grafik,dxdiag",
+    "X-KDE-Keywords[ug]": "OpenCL,VideoCard,Hardware Acceleration,Graphics,dxdiag,كۆرسىتىش كارتىسى,قاتتىق دېتال تېزلىتىش,گىرافىك",
     "X-KDE-Keywords[uk]": "OpenCL,VideoCard,Hardware Acceleration,Graphics,dxdiag,відеокартка,апаратне прискорення,графіка",
     "X-KDE-Keywords[zh_CN]": "OpenCL,VideoCard,Hardware Acceleration,Graphics,dxdiag,directx,xianka,xianshika,yingjianjiasu,tuxing,GPU,显卡,显示卡,硬件加速,图形",
     "X-KDE-Keywords[zh_TW]": "OpenCL,硬體加速,顯示卡,圖形"

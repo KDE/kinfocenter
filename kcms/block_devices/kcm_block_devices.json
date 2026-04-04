@@ -40,6 +40,7 @@
         "Description[sl]": "Bločne naprave",
         "Description[sv]": "Blockenheter",
         "Description[tr]": "Blok Aygıtlar",
+        "Description[ug]": "بۆلەك ئۈسكۈنە",
         "Description[uk]": "Блокові пристрої",
         "Description[zh_CN]": "块设备",
         "Description[zh_TW]": "區塊裝置",
@@ -82,6 +83,7 @@
         "Name[sl]": "Bločne naprave",
         "Name[sv]": "Blockenheter",
         "Name[tr]": "Blok Aygıtları",
+        "Name[ug]": "بۆلەك ئۈسكۈنە",
         "Name[uk]": "Блокові пристрої",
         "Name[zh_CN]": "块设备",
         "Name[zh_TW]": "區塊裝置"
@@ -120,6 +122,7 @@
     "X-KDE-Keywords[sl]": "lsblk,bločna naprava,particija,disk,pogon,hdd,ssd,nvme",
     "X-KDE-Keywords[sv]": "lsblk,blockenhet,partition,disk,enhet,hdd,ssd,nvme",
     "X-KDE-Keywords[tr]": "lsblk,blok aygıtı,bölüntü,bölüm,disk,sürücü,hdd,ssd,nvme",
+    "X-KDE-Keywords[ug]": "lsblk,block device,partition,disk,drive,hdd,ssd,nvme,بۆلەك ئۈسكۈنە,رايون,دىسكا,قوزغاتقۇچ,ساقلىغۇچ,قاتتىق دىسكا,مۇقىم قاتتىق دىسكا",
     "X-KDE-Keywords[uk]": "lsblk,block device,partition,disk,drive,hdd,ssd,nvme,блоковий,пристрій,розділ,диск,вінчестер",
     "X-KDE-Keywords[zh_CN]": "lsblk,block device,partition,disk,drive,hdd,ssd,nvme,kuaishebei,fenqu,cipan,qudongqi,yingpan,gutaiyingpan,块设备,分区,磁盘,驱动器,硬盘,固态硬盘",
     "X-KDE-Keywords[zh_TW]": "分割區,硬碟,磁碟,區塊裝置"

@@ -45,6 +45,7 @@
         "Description[sv]": "Säkerhetsinformation om fast programvara",
         "Description[ta]": "சாதனநிரல் பாதுகாப்பு குறித்த விவரங்கள்",
         "Description[tr]": "Donanım Yazılımı Güvenliği Bilgisi",
+        "Description[ug]": "مۇقىم دېتال بىخەتەرلىك ئۇچۇرى",
         "Description[uk]": "Дані щодо захисту мікропрограм",
         "Description[vi]": "Thông tin an ninh phần sụn",
         "Description[zh_CN]": "固件安全性信息",
@@ -94,6 +95,7 @@
         "Name[sv]": "Säkerhet för fast programvara",
         "Name[ta]": "சாதனநிரல் பாதுகாப்பு",
         "Name[tr]": "Donanım Yazılımı Güvenliği",
+        "Name[ug]": "مۇقىم دېتال بىخەتەرلىكى",
         "Name[uk]": "Захист мікропрограм",
         "Name[vi]": "An ninh phần sụn",
         "Name[zh_CN]": "固件安全性",
@@ -133,6 +135,7 @@
     "X-KDE-Keywords[sl]": "firmware,varnost,hsi,secureboot,fwupd,bootguard,lockdown",
     "X-KDE-Keywords[sv]": "fast programvara,säkerhet,hsi,secureboot,fwupd,bootguard,låsning",
     "X-KDE-Keywords[tr]": "firmware,donanım yazılımı,hsi,güvenlik,secure boot,fwupd,bootguard,lockdown,kilit",
+    "X-KDE-Keywords[ug]": "firmware,security,hsi,secureboot,fwupd,bootguard,lockdown,مۇقىم دېتال,بىخەتەرلىك,بىخەتەر قوزغىتىش,يېتەكلىگۈچ,قوغدىغۇچ,قۇلۇپ,قۇلۇپلا",
     "X-KDE-Keywords[uk]": "firmware,security,hsi,secureboot,fwupd,bootguard,lockdown,мікропрограма,безпека,безпечне завантаження,блокування",
     "X-KDE-Keywords[zh_CN]": "firmware,security,hsi,secureboot,fwupd,bootguard,lockdown,gujian,anquan,yingjiananquan,anquanqidong,anquanyindao,gujiangengxin,yindaobaohu,yindaoqubaohu,suoding,固件,安全,硬件安全,安全启动,安全引导,固件更新,引导保护,引导区保护,锁定",
     "X-KDE-Keywords[zh_TW]": "韌體,安全,安全開機,鎖定"

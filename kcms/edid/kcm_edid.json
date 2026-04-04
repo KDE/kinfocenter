@@ -36,6 +36,7 @@
         "Description[sl]": "Extended Display Identification Data (Podatki določilnika razširjenega prikaza)",
         "Description[sv]": "Utökad bildskärmsidentifikationsdata (EDID)",
         "Description[tr]": "Genişletilmiş Ekran Tanımlama Verisi",
+        "Description[ug]": "كېڭەيتىلگەن كۆرسەتكۈچ پەرقلەندۈرۈش سانلىق مەلۇماتى",
         "Description[uk]": "Розширені дані ідентифікації дисплея",
         "Description[zh_CN]": "扩展显示识别数据",
         "Description[zh_TW]": "延伸顯示器識別資料 (EDID)",
@@ -74,6 +75,7 @@
         "Name[sl]": "EDID",
         "Name[sv]": "EDID",
         "Name[tr]": "EDID",
+        "Name[ug]": "EDID",
         "Name[uk]": "EDID",
         "Name[zh_CN]": "EDID",
         "Name[zh_TW]": "EDID"
@@ -105,6 +107,7 @@
     "X-KDE-Keywords[ru]": "EDID,Graphics,dxdiag,графика",
     "X-KDE-Keywords[sl]": "EDID,Grafika,dxdiag",
     "X-KDE-Keywords[tr]": "EDID,grafikler,grafik,dxdiag",
+    "X-KDE-Keywords[ug]": "EDID,Graphics,dxdiag,گىرافىك,گىرافىكىلىق",
     "X-KDE-Keywords[uk]": "EDID,Graphics,едід,графіка,dxdiag",
     "X-KDE-Keywords[zh_CN]": "EDID,Graphics,dxdiag,directx,gpu,tuxing,xianka,图形,显卡",
     "X-KDE-Keywords[zh_TW]": "EDID,圖形"
