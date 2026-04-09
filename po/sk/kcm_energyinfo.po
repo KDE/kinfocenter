@@ -13,8 +13,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.08.3\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 23.08.3\n"
 
 #: ui/main.qml:31 ui/main.qml:243
 #, kde-format
@@ -42,10 +42,9 @@ msgid "Health"
 msgstr "Zdravie"
 
 #: ui/main.qml:37
-#, fuzzy, kde-format
-#| msgid "Charge state"
+#, kde-format
 msgid "Charge Cycles"
-msgstr "Stav nabitia"
+msgstr "Nabíjacie cykly"
 
 #: ui/main.qml:38
 #, kde-format
@@ -127,16 +126,14 @@ msgid "Temperature"
 msgstr "Teplota"
 
 #: ui/main.qml:70
-#, fuzzy, kde-format
-#| msgid "Yes"
+#, kde-format
 msgctxt ""
 "@info:label The battery has a certain capability, such as `Rechargeable:`"
 msgid "Yes"
 msgstr "Áno"
 
 #: ui/main.qml:71
-#, fuzzy, kde-format
-#| msgid "No"
+#, kde-format
 msgctxt ""
 "@info:label The battery doesn't have a certain capability, such as "
 "`Rechargeable:`"
@@ -223,93 +220,79 @@ msgid "No energy information available on this system"
 msgstr "O tomto systéme nie sú k dispozícii žiadne informácie o energii"
 
 #: ui/main.qml:228
-#, fuzzy, kde-format
-#| msgid "PDA battery"
+#, kde-format
 msgid "PDA Battery"
-msgstr "Batéria PDA"
+msgstr "PDA batéria"
 
 #: ui/main.qml:229
-#, fuzzy, kde-format
-#| msgid "UPS battery"
+#, kde-format
 msgid "UPS Battery"
-msgstr "Batéria UPS"
+msgstr "UPS batéria"
 
 #: ui/main.qml:230
-#, fuzzy, kde-format
-#| msgid "Internal battery"
+#, kde-format
 msgid "Internal Battery"
 msgstr "Vnútorná batéria"
 
 #: ui/main.qml:231
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
+#, kde-format
 msgid "Mouse Battery"
 msgstr "Batéria myši"
 
 #: ui/main.qml:232
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Keyboard Battery"
 msgstr "Batéria klávesnice"
 
 #: ui/main.qml:233
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Keyboard/Mouse Battery"
-msgstr "Batéria klávesnice"
+msgstr "Batéria klávesnice/myši"
 
 #: ui/main.qml:234
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Camera Battery"
-msgstr "Batéria"
+msgstr "Batéria fotoaparátu"
 
 #: ui/main.qml:235
-#, fuzzy, kde-format
-#| msgid "Phone battery"
+#, kde-format
 msgid "Phone Battery"
 msgstr "Batéria telefónu"
 
 #: ui/main.qml:236
-#, fuzzy, kde-format
-#| msgid "Monitor battery"
+#, kde-format
 msgid "Monitor Battery"
-msgstr "Batéria obrazovky"
+msgstr "Batéria monitora"
 
 #: ui/main.qml:237
 #, kde-format
 msgid "Gaming Input Battery"
-msgstr ""
+msgstr "Batéria herného vstupu"
 
 #: ui/main.qml:238
-#, fuzzy, kde-format
-#| msgid "Mouse battery"
+#, kde-format
 msgid "Bluetooth Battery"
-msgstr "Batéria myši"
+msgstr "Batéria bluetooth"
 
 #: ui/main.qml:239
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Tablet Battery"
-msgstr "Batéria"
+msgstr "Batéria tabletu"
 
 #: ui/main.qml:240
-#, fuzzy, kde-format
-#| msgid "Phone battery"
+#, kde-format
 msgid "Headphone Battery"
-msgstr "Batéria telefónu"
+msgstr "Batéria slúchadiel"
 
 #: ui/main.qml:241
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Headset Battery"
-msgstr "Batéria klávesnice"
+msgstr "Batéria headsetu"
 
 #: ui/main.qml:242
-#, fuzzy, kde-format
-#| msgid "Keyboard battery"
+#, kde-format
 msgid "Touchpad Battery"
-msgstr "Batéria klávesnice"
+msgstr "Batéria touchpadu"
 
 #: ui/main.qml:273
 #, kde-format
@@ -324,12 +307,10 @@ msgid "%1%"
 msgstr "%1%"
 
 #: ui/main.qml:332
-#, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "No energy information available on this system"
+#, kde-format
 msgctxt "@info:status"
 msgid "No history information for this time span"
-msgstr "O tomto systéme nie sú k dispozícii žiadne informácie o energii"
+msgstr "Žiadne informácie o histórii za toto obdobie"
 
 #: ui/main.qml:342
 #, kde-format
@@ -396,13 +377,10 @@ msgstr "%1:"
 #~ msgstr "°C"
 
 #, fuzzy
-#~| msgid "Unknown battery"
 #~ msgid "Unknown Battery"
 #~ msgstr "Neznáma batéria"
 
 #, fuzzy
-#~| msgctxt "Battery charge percentage"
-#~| msgid "%1%"
 #~ msgctxt "Graph axis label: percentage"
 #~ msgid "%1%"
 #~ msgstr "%1%"
@@ -419,8 +397,6 @@ msgstr "%1:"
 #~ msgstr "Tento typ histórie momentálne nie je dostupný pre toto zariadenie."
 
 #, fuzzy
-#~| msgctxt "Battery charge percentage"
-#~| msgid "%1%"
 #~ msgctxt "Battery health percentage"
 #~ msgid "%1%"
 #~ msgstr "%1%"

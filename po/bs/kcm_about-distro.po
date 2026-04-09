@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-30 00:42+0000\n"
+"POT-Creation-Date: 2026-04-09 00:46+0000\n"
 "PO-Revision-Date: 2014-10-20 20:42+0000\n"
 "Last-Translator: Samir Ribić <Unknown>\n"
 "Language-Team: bosanski <bs@li.org>\n"
@@ -244,39 +244,39 @@ msgctxt "@action:button"
 msgid "Copy"
 msgstr ""
 
-#: ui/main.qml:179
+#: ui/main.qml:149
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
 msgstr ""
 
-#: ui/main.qml:191
+#: ui/main.qml:161
 #, fuzzy, kde-format
 #| msgid "Software"
 msgctxt "@title:group"
 msgid "Software"
 msgstr "Software"
 
-#: ui/main.qml:201
+#: ui/main.qml:171
 #, fuzzy, kde-format
 #| msgid "Hardware"
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "Hardware"
 
-#: ui/main.qml:218
+#: ui/main.qml:188
 #, kde-format
 msgctxt "@action:button"
 msgid "Launch %1…"
 msgstr ""
 
-#: ui/main.qml:219
+#: ui/main.qml:189
 #, kde-format
 msgctxt "@info:tooltip launches kinfocenter from systemsettings"
 msgid "See more detailed system information"
 msgstr ""
 
-#: ui/main.qml:227 ui/main.qml:235
+#: ui/main.qml:197 ui/main.qml:205
 #, fuzzy, kde-format
 #| msgctxt "EMAIL OF TRANSLATORS"
 #| msgid "Your emails"
@@ -284,13 +284,13 @@ msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "Lagic1@etf.unsa.ba,samir.ribic@etf.unsa.ba"
 
-#: ui/main.qml:238
+#: ui/main.qml:208
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr ""
 
-#: ui/main.qml:244
+#: ui/main.qml:214
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"

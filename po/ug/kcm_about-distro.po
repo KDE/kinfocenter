@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-30 00:42+0000\n"
+"POT-Creation-Date: 2026-04-09 00:46+0000\n"
 "PO-Revision-Date: 2026-04-01 09:02-0400\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
@@ -230,49 +230,49 @@ msgctxt "@action:button"
 msgid "Copy"
 msgstr "كۆچۈر"
 
-#: ui/main.qml:179
+#: ui/main.qml:149
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
 msgstr "كۆرسەت"
 
-#: ui/main.qml:191
+#: ui/main.qml:161
 #, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "يۇمشاق دېتال"
 
-#: ui/main.qml:201
+#: ui/main.qml:171
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "قاتتىق دېتال"
 
-#: ui/main.qml:218
+#: ui/main.qml:188
 #, kde-format
 msgctxt "@action:button"
 msgid "Launch %1…"
 msgstr "%1 نى قوزغات…"
 
-#: ui/main.qml:219
+#: ui/main.qml:189
 #, kde-format
 msgctxt "@info:tooltip launches kinfocenter from systemsettings"
 msgid "See more detailed system information"
 msgstr "تېخىمۇ تەپسىلىي سىستېما ئۇچۇرىنى كۆرسىتىدۇ"
 
-#: ui/main.qml:227 ui/main.qml:235
+#: ui/main.qml:197 ui/main.qml:205
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "تەپسىلاتىنى كۆچۈر"
 
-#: ui/main.qml:238
+#: ui/main.qml:208
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "نۆۋەتتىكى تىلدا"
 
-#: ui/main.qml:244
+#: ui/main.qml:214
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
