@@ -69,7 +69,7 @@ msgstr "An %1 melden"
 #, kde-format
 msgctxt "@label placeholder text to filter for something"
 msgid "Filter…"
-msgstr "Filter …"
+msgstr "Filter …"
 
 #: qml/CommandOutputKCM.qml:193
 #, kde-format
