@@ -64,7 +64,7 @@ msgstr "Netzwerkschnittstellen"
 #, kde-format
 msgctxt "@info"
 msgid "(c) 2001 - 2002 Alexander Neundorf"
-msgstr "(c) 2001 - 2002 Alexander Neundorf"
+msgstr "© 2001–2002 Alexander Neundorf"
 
 #: nic.cpp:28
 #, kde-format

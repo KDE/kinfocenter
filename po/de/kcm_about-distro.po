@@ -1,6 +1,6 @@
+# SPDX-FileCopyrightText: 2013-2016, 2018-2021 Burkhard Lück <lueck@hube-lueck.de>
+# SPDX-FileCopyrightText: 2014-2016, 2022-2023 Frederik Schwarzer <schwarzer@kde.org>
 # SPDX-FileCopyrightText: 2024 Johannes Obermayr <johannesobermayr@gmx.de>
-# SPDX-FileCopyrightText: 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2021 Burkhard Lück <lueck@hube-lueck.de>
-# SPDX-FileCopyrightText: 2014, 2015, 2016, 2022, 2023 Frederik Schwarzer <schwarzer@kde.org>
 # SPDX-FileCopyrightText: 2025 Oliver Schramm <oliver.schramm97@gmail.com>
 msgid ""
 msgstr ""
@@ -72,7 +72,7 @@ msgstr "Über dieses System"
 #, kde-format
 msgctxt "@info:credit"
 msgid "Copyright 2012-2020 Harald Sitter"
-msgstr "Copyright © 2012-2020 Harald Sitter"
+msgstr "© 2012–2020 Harald Sitter"
 
 #: main.cpp:115
 #, kde-format
