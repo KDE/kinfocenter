@@ -41,6 +41,7 @@ find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
 
 find_package(PkgConfig)
 pkg_check_modules(libdrm REQUIRED IMPORTED_TARGET libdrm)
+find_package(KF6Screen REQUIRED)
 
 if(CMAKE_SYSTEM_NAME MATCHES "Linux")
     find_package(UDev REQUIRED COMPONENTS UDev)

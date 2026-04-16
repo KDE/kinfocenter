@@ -7,6 +7,8 @@ add_subdirectory(vulkan-helper)
 set(kcm_SRCS
     CPUEntry.cpp
     CPUEntry.h
+    DisplayEntry.cpp
+    DisplayEntry.h
     Entry.cpp
     Entry.h
     FancyString.cpp
@@ -41,6 +43,7 @@ target_link_libraries(kcm_about-distro  PRIVATE
     KF6::Service
     KF6::KIOGui
     KF6::AuthCore
+    KF6::Screen
     PkgConfig::libdrm
 )
 

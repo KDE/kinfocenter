@@ -27,6 +27,7 @@
 #include <KSharedConfig>
 
 #include "CPUEntry.h"
+#include "DisplayEntry.h"
 #include "GPUEntry.h"
 #include "GPUEntryFactory.h"
 #include "GraphicsPlatformEntry.h"
@@ -273,6 +274,7 @@ public:
         // hardware
         addEntriesToGrid(m_hardwareEntries, {new CPUEntry, new MemoryEntry});
         addEntriesToGrid(m_hardwareEntries, GPUEntryFactory::factorize());
+        addEntriesToGrid(m_hardwareEntries, {new DisplayEntry});
 
         KAuth::Action action(QStringLiteral("org.kde.kinfocenter.dmidecode.systeminformation"));
         action.setHelperId(QStringLiteral("org.kde.kinfocenter.dmidecode"));
