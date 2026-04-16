@@ -26,6 +26,7 @@ Item {
     id: graphRoot
 
     property list<point> points
+    property string timeZone
     property int xDuration: 3600 // in seconds
     property string yLabel
     property int yMax: 100
@@ -99,6 +100,7 @@ Item {
             max: new Date() // here we have to pass a date object
             min: new Date(max.valueOf() - (graphRoot.xDuration * 1000)) // definitely wrong, and yet
             subTickCount: 1
+            timeZone: timeZoneFromString(graphRoot.timeZone)
 
             labelDelegate: Component {
                 Column {

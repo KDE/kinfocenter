@@ -11,6 +11,7 @@
 #include <QObject>
 #include <QPointF>
 #include <QQmlParserStatus>
+#include <QTimeZone>
 
 struct HistoryReply {
     quint32 time = 0;
@@ -34,6 +35,7 @@ class StatisticsProvider : public QObject, public QQmlParserStatus
     Q_PROPERTY(int firstDataPointTime READ firstDataPointTime NOTIFY dataChanged)
     Q_PROPERTY(int lastDataPointTime READ lastDataPointTime NOTIFY dataChanged)
     Q_PROPERTY(int largestValue READ largestValue NOTIFY dataChanged)
+    Q_PROPERTY(QString timeZone READ timeZone NOTIFY timeZoneChanged)
 
     Q_PROPERTY(bool available READ isHistoryAvailable NOTIFY historyAvailableChanged)
 
@@ -70,11 +72,12 @@ public:
 
     bool isHistoryAvailable() const;
 
+    QString timeZone() const;
 Q_SIGNALS:
     void deviceChanged();
     void typeChanged();
     void durationChanged();
-
+    void timeZoneChanged();
     void dataChanged();
     void historyAvailableChanged();
 
