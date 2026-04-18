@@ -11,23 +11,10 @@ import QtGraphs
 import QtQuick.Shapes
 import org.kde.kirigami as Kirigami
 
-/**
- * Original comment
- * We need to draw a graph, all other libs are not suitable as we are basically
- * a connected scatter plot with non linear X spacing.
- * Currently this is not available in kdeclarative nor kqtquickcharts
- *
- * We only paint once, so canvas is fast enough for our purposes.
- * It is designed to look identical to those in ksysguard.
- *
- * QtGraphs version
- * I think we can do everything we ever wanted now ?
- */
 Item {
     id: graphRoot
 
     property list<point> points
-    property string timeZone
     property int xDuration: 3600 // in seconds
     property string yLabel
     property int yMax: 100
@@ -89,7 +76,6 @@ Item {
             max: new Date()
             min: new Date(max - (graphRoot.xDuration * 1000))
             subTickCount: 1
-            timeZone: timeZoneFromString(graphRoot.timeZone)
 
             labelDelegate: Component {
                 Column {

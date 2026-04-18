@@ -317,7 +317,6 @@ KCM.SimpleKCM {
 
                 points: history.points
                 xDuration: timespanCombo.duration
-                timeZone: history.timeZone
                 yLabel: root.historyType === HistoryModel.RateType ? root.i18n_watt_string() : root.i18n_percentage_string()
                 yMax: {
                     if (root.historyType === HistoryModel.RateType) {

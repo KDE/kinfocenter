@@ -141,11 +141,6 @@ int StatisticsProvider::largestValue() const
     return max;
 }
 
-QString StatisticsProvider::timeZone() const
-{
-    return QTimeZone::systemTimeZone().id();
-}
-
 bool StatisticsProvider::isHistoryAvailable() const
 {
     return m_isHistoryAvailable;
