@@ -94,6 +94,7 @@
     "X-KDE-Keywords[ko]": "센서,온도,전압,볼트,팬,팬 속도,모니터,모니터링,암페어,전류,전원,전력",
     "X-KDE-Keywords[lv]": "lm_sensors,sensori,temp,temperatūra,volti,spriegums,sensori,ventilators,ventilatora ātrums,pārraudzīšana,monitorēt,amp,apmēri,strāva,jauda",
     "X-KDE-Keywords[nl]": "lm_sensors,sensors,temp,temperatuur,volt,voltage,sensors,fan,fansnelheid,monitoring,amp,amps,stroom,energie,power",
+    "X-KDE-Keywords[nn]": "lm_sensors,sensors,sensorar,temp,temperatur,volt,spenning,vifte,viftefart,overvaking,amp,ampere,straum,straumstyrke,energi",
     "X-KDE-Keywords[pl]": "lm_sensors,czujniki,temp,temperatura,wolt,napięcie,mierniki,wentylator,szybkość wentylatora,monitorowanie,natężenie,natężenie,prąd,moc",
     "X-KDE-Keywords[pt_BR]": "lm_sensors,sensores,temp,temperatura,volt,voltagem,sensor,ventoinha,velocidade da ventoinha,monitoramento,amp,amps,corrente,potência",
     "X-KDE-Keywords[ru]": "lm_sensors,sensors,temp,temperature,volt,voltage,sensors,fan,fan speed,monitoring,amp,amps,current,power,датчики,температура,вольт,вольтаж,напряжение,вентилятор,скорость вентиляторов,мониторинг,отслеживание,ампер,амперы,ток,питание,мощность",
