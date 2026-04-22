@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-04 00:45+0000\n"
-"PO-Revision-Date: 2026-04-18 15:55+0200\n"
+"PO-Revision-Date: 2026-04-21 19:20+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -32,6 +32,9 @@ msgid ""
 "this page, but could not be found. You may be able to install it using your "
 "package manager; either way, please report this packaging issue to %2."
 msgstr ""
+"Tekniske detaljar: Treng verktøyet <command>%1</command> for å visa denne "
+"sida, men det er ikkje tilgjengeleg. Det kan vera du kan installera det via "
+"pakke­handsamaren. Uansett bør du melda frå om denne pakke­feilen til %2."
 
 #: CommandOutputContext.cpp:150
 #, kde-kuit-format
