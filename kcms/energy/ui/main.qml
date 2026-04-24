@@ -75,10 +75,6 @@ KCM.SimpleKCM {
         return value >= 0 ? i18nc("%1 is a percentage value", "%1%", value) : "";
     }
 
-    function i18n_percentage_string() {
-        return i18nc("this is a format string, equivalent to '%'", " %%");
-    }
-
     function format_unit(unit, precision) {
         return (value) => {
             const fmtValue = Number(value).toLocaleString(Qt.locale(), "f", precision);
@@ -93,10 +89,6 @@ KCM.SimpleKCM {
         } else {
             return "";
         }
-    }
-
-    function i18n_watt_string() {
-            return i18nc("%1 is the unit", "%1", ("Watt", " W"));
     }
 
     function format_chargeState(value) {
@@ -317,7 +309,10 @@ KCM.SimpleKCM {
 
                 points: history.points
                 xDuration: timespanCombo.duration
-                yLabel: root.historyType === HistoryModel.RateType ? root.i18n_watt_string() : root.i18n_percentage_string()
+
+                yLabel: root.historyType === HistoryModel.RateType ?
+                    i18nc("%1 is the unit", "%1", ("Watt", " W")) :
+                    i18nc("this is a format string, equivalent to '%'", " %%");
                 yMax: {
                     if (root.historyType === HistoryModel.RateType) {
                         // Ceil to next 10
