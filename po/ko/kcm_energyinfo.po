@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-03-24 00:45+0000\n"
-"PO-Revision-Date: 2026-02-04 00:18+0100\n"
+"PO-Revision-Date: 2026-04-26 22:48+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -157,7 +157,7 @@ msgstr "%1%2"
 #, kde-format
 msgctxt "Degree Celsius"
 msgid "%1 °C"
-msgstr ""
+msgstr "%1 °C"
 
 #: ui/main.qml:96
 #, kde-format
