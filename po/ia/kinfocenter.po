@@ -1,13 +1,13 @@
 # Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
 #
-# SPDX-FileCopyrightText: 2023, 2025 giovanni <g.sora@tiscali.it>
+# SPDX-FileCopyrightText: 2023, 2025, 2026 giovanni <g.sora@tiscali.it>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-04 00:45+0000\n"
-"PO-Revision-Date: 2025-05-09 17:00+0200\n"
+"PO-Revision-Date: 2026-04-30 17:25+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: CommandOutputContext.cpp:127 CommandOutputContext.cpp:149
 #, kde-kuit-format
@@ -32,7 +32,7 @@ msgid ""
 "package manager; either way, please report this packaging issue to %2."
 msgstr ""
 "Detalios Technic : Le instrumento  <command>%1</command> es requirite per "
-"monstrar iste pagina, ma nonpoteva esser trovate. Tu poterea installar lo "
+"monstrar iste pagina, ma non poteva esser trovate. Tu poterea installar lo "
 "per usar tu gerente de pacchettos; alteremente, pro favor reporta iste "
 "problema de pacchettos a %2."
 
