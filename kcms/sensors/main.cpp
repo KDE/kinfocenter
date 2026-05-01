@@ -6,6 +6,8 @@
 #include <KPluginFactory>
 #include <KQuickConfigModule>
 
+#include <QLocale>
+
 #include "CommandOutputContext.h"
 
 using namespace Qt::StringLiterals;
@@ -18,7 +20,11 @@ public:
     explicit KCMSensors(QObject *parent, const KPluginMetaData &data)
         : KQuickConfigModule(parent, data)
     {
-        m_outputContext = new CommandOutputContext(u"sensors"_s, {}, parent);
+        if (QLocale().measurementSystem() == QLocale::ImperialUSSystem) {
+            m_outputContext = new CommandOutputContext(u"sensors"_s, {u"-f"_s}, parent);
+        } else {
+            m_outputContext = new CommandOutputContext(u"sensors"_s, {}, parent);
+        }
         m_outputContext->setAutoRefreshMs(1000);
     }
     CommandOutputContext *outputContext() const
