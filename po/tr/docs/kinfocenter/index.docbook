@@ -483,7 +483,7 @@
 >ALSA</acronym
 > ve <acronym
 >OSS</acronym
-> ses mimarileri olarak iki kategoriye ayrılırlar.</para
+> ses mimarîleri olarak iki kategoriye ayrılırlar.</para
 ></listitem>
 <listitem
 ><para
@@ -619,7 +619,7 @@
 >ISA</acronym
 > aygıtları arasında paylaşım için i386 (<acronym
 >PC</acronym
->) mimarisinde kullanılabilen yalnızca on altı <acronym
+>) mimarîsinde kullanılabilen yalnızca on altı <acronym
 >IRQ</acronym
 > (0–15) vardır.</para>
 
@@ -668,7 +668,7 @@
 >DMA</acronym
 > (Direct Memory Access — Doğrudan Hafıza Erişimi) Kanalları hakkında bilgi verir. Bir <acronym
 >DMA</acronym
-> kanalı, aygıtların işlemciyi pas geçerek hafızayla bilgi alışverişlerini sağlayan bir doğrudan bağlantıdır. Tipik olarak, i386-mimarisi sistemleri (<acronym
+> kanalı, aygıtların işlemciyi pas geçerek hafızayla bilgi alışverişlerini sağlayan bir doğrudan bağlantıdır. Tipik olarak, i386-mimarîsi sistemleri (<acronym
 >PC</acronym
 >’ler —Personal Computer— Kişisel Bilgisayar) sekiz <acronym
 >DMA</acronym
@@ -1050,7 +1050,7 @@
 >engincagatay@yahoo.com</email
 ></para
 ><para
->Çeviri: Volkan Gezer <email
+>Çeviri: Volkan GEZER <email
 >volkangezer@gmail.com</email
 ></para
 ><para
@@ -1133,7 +1133,7 @@
  
 
 <para
->Resmi <ulink url="https://www.opengl.org"
+>Resmî <ulink url="https://www.opengl.org"
 >OpenGL</ulink
 > sitesinde daha fazlasını okuyun </para>
 </sect2>
@@ -1239,7 +1239,7 @@
 >engincagatay@yahoo.com</email
 ></para
 ><para
->Çeviri: Volkan Gezer <email
+>Çeviri: Volkan GEZER <email
 >volkangezer@gmail.com</email
 ></para
 ><para
