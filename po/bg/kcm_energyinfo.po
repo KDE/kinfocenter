@@ -372,10 +372,3 @@ msgstr "Обновяване"
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
-
-#~ msgctxt "Degree Celsius"
-#~ msgid "°C"
-#~ msgstr "°C"
-
-#~ msgid "Unknown Battery"
-#~ msgstr "Неизвестна батерия"
