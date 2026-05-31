@@ -1,13 +1,13 @@
 #
 # Tamas Szanto <tszanto@interware.hu>, 2001.
 # Kiszel Kristóf <kiszel.kristof@gmail.com>, 2017.
-# SPDX-FileCopyrightText: 2024 Kristof Kiszel <ulysses@fsf.hu>
+# SPDX-FileCopyrightText: 2024, 2026 Kristof Kiszel <ulysses@fsf.hu>
 msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.1\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:53+0000\n"
-"PO-Revision-Date: 2024-01-16 10:55+0100\n"
+"PO-Revision-Date: 2026-05-30 21:46+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.01.90\n"
+"X-Generator: Lokalize 26.04.1\n"
 
 #: classes.i18n:2
 #, kde-format
@@ -377,9 +377,7 @@ msgid "Device"
 msgstr "Eszköz"
 
 #: usbdevices.cpp:66
-#, fuzzy, kde-format
-#| msgctxt "USB device class"
-#| msgid "(Defined at Interface level)"
+#, kde-format
 msgctxt "USB device class"
 msgid "Defined at Interface Level"
 msgstr "(Interfész szintjén definiálva)"
