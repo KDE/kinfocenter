@@ -3,13 +3,13 @@
 # Balazs Nagy <julian7@kva.hu>, 1998.
 # Marcell Lengyel <miketkf@yahoo.com>, 1998.
 # Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2014, 2021.
-# SPDX-FileCopyrightText: 2025 Kristof Kiszel <ulysses@fsf.hu>
+# SPDX-FileCopyrightText: 2025-2026 Kristof Kiszel <ulysses@fsf.hu>
 msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.1\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-30 00:42+0000\n"
-"PO-Revision-Date: 2025-11-10 21:05+0100\n"
+"PO-Revision-Date: 2026-05-30 21:46+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.08.2\n"
+"X-Generator: Lokalize 26.04.1\n"
 
 #: ui/main.qml:18
 #, kde-format
@@ -47,13 +47,13 @@ msgstr "Nincsenek csatlakoztatott Samba megosztások"
 #, kde-format
 msgctxt "@label local file system path"
 msgid "Path:"
-msgstr ""
+msgstr "Útvonal:"
 
 #: ui/ShareListItem.qml:40
 #, kde-format
 msgctxt "@label labels a samba url or path"
 msgid "Shared at:"
-msgstr ""
+msgstr "Megosztva itt:"
 
 #: ui/ShareListItem.qml:69
 #, kde-kuit-format
