@@ -176,7 +176,7 @@
     "X-KDE-Keywords[kk]": "PCI,PCI-Devices,PCI-Bus,System Information",
     "X-KDE-Keywords[km]": "PCI,PCI-Devices,PCI-Bus,System Information",
     "X-KDE-Keywords[ko]": "PCI,PCI-Devices,PCI-Bus,System Information,PCI 장치,PCI 버스,시스템 정보",
-    "X-KDE-Keywords[lt]": "PCI,PCI įrenginiai,PCI irenginiai,PCI magistralės,PCI magistrales,sistemos informacija,informacija apie sistemą,informacija apie sistema",
+    "X-KDE-Keywords[lt]": "PCI,PCI-Devices,PCI-Bus,System Information,PCI,PCI įrenginiai,PCI irenginiai,PCI magistralės,PCI magistrales,sistemos informacija,informacija apie sistemą,informacija apie sistema",
     "X-KDE-Keywords[lv]": "PCI,PCI-ierīces,PCI kopne,sistēmas informācija",
     "X-KDE-Keywords[mr]": "PCI,PCI-साधन,PCI-Bus प्रणाली माहीती",
     "X-KDE-Keywords[nb]": "PCI,PCI-enheter,PCI-buss,systeminformasjon",
