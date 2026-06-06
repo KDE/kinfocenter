@@ -5,6 +5,8 @@
 
 #include <KQuickConfigModule>
 
+#include <qqml.h>
+
 #include "ksambasharemodel.h"
 #include "smbmountmodel.h"
 
