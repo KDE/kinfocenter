@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-24 00:45+0000\n"
+"POT-Creation-Date: 2026-06-10 00:47+0000\n"
 "PO-Revision-Date: 2016-07-03 22:52+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -17,6 +17,12 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 "X-Environment: kde\n"
+
+#: ui/Graph.qml:182
+#, kde-format
+msgctxt "@info:status"
+msgid "No history information for this time span"
+msgstr ""
 
 #: ui/main.qml:31 ui/main.qml:243
 #, kde-format
@@ -81,7 +87,7 @@ msgctxt "current power draw from the battery in W"
 msgid "Consumption"
 msgstr "Потрошња"
 
-#: ui/main.qml:47 ui/main.qml:313
+#: ui/main.qml:47
 #, kde-format
 msgctxt "Watt"
 msgid "W"
@@ -335,68 +341,77 @@ msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr "%1 %2"
 
-#: ui/main.qml:332
-#, kde-format
-msgctxt "@info:status"
-msgid "No history information for this time span"
-msgstr ""
+#: ui/main.qml:314
+#, fuzzy, kde-format
+#| msgid "%1:"
+msgctxt "%1 is the unit"
+msgid "%1"
+msgstr "%1:"
 
-#: ui/main.qml:342
+#: ui/main.qml:315
+#, fuzzy, kde-format
+#| msgctxt "%1 is value, %2 is unit"
+#| msgid "%1 %2"
+msgctxt "this is a format string, equivalent to '%'"
+msgid " %%"
+msgstr "%1 %2"
+
+#: ui/main.qml:334
 #, kde-format
 msgid "Charge Percentage"
 msgstr "Проценат попуњености"
 
-#: ui/main.qml:352
+#: ui/main.qml:344
 #, kde-format
 msgid "Energy Consumption"
 msgstr "Потрошња енергије"
 
-#: ui/main.qml:368
+#: ui/main.qml:360
 #, kde-format
 msgid "Last hour"
 msgstr "Претходног сата"
 
-#: ui/main.qml:369
+#: ui/main.qml:361
 #, kde-format
 msgid "Last 2 hours"
 msgstr "Претходна 2 сата"
 
-#: ui/main.qml:370
+#: ui/main.qml:362
 #, kde-format
 msgid "Last 12 hours"
 msgstr "Претходних 12 сати"
 
-#: ui/main.qml:371
+#: ui/main.qml:363
 #, kde-format
 msgid "Last 24 hours"
 msgstr "Претходних 24 сата"
 
-#: ui/main.qml:372
+#: ui/main.qml:364
 #, kde-format
 msgid "Last 48 hours"
 msgstr "Претходних 48 сати"
 
-#: ui/main.qml:373
+#: ui/main.qml:365
 #, kde-format
 msgid "Last 7 days"
 msgstr "Претходних 7 дана"
 
-#: ui/main.qml:381
+#: ui/main.qml:373
 #, kde-format
 msgid "Timespan"
 msgstr "Временски распон"
 
-#: ui/main.qml:382
+#: ui/main.qml:374
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "Временски распон за приказ података"
 
-#: ui/main.qml:388
+#: ui/main.qml:380
 #, kde-format
 msgid "Refresh"
 msgstr "Освежи"
 
-#: ui/main.qml:447
+#: ui/main.qml:439
 #, kde-format
 msgid "%1:"
 msgstr "%1:"

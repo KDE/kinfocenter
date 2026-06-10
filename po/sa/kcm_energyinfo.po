@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-24 00:45+0000\n"
+"POT-Creation-Date: 2026-06-10 00:47+0000\n"
 "PO-Revision-Date: 2024-12-20 21:52+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -18,6 +18,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n>2);\n"
 "X-Generator: Lokalize 24.08.2\n"
+
+#: ui/Graph.qml:182
+#, fuzzy, kde-format
+#| msgctxt "@info:status"
+#| msgid "No energy information available on this system"
+msgctxt "@info:status"
+msgid "No history information for this time span"
+msgstr "अस्मिन् प्रणाल्यां ऊर्जासूचना उपलब्धा नास्ति"
 
 #: ui/main.qml:31 ui/main.qml:243
 #, kde-format
@@ -80,7 +88,7 @@ msgctxt "current power draw from the battery in W"
 msgid "Consumption"
 msgstr "उपभोग"
 
-#: ui/main.qml:47 ui/main.qml:313
+#: ui/main.qml:47
 #, kde-format
 msgctxt "Watt"
 msgid "W"
@@ -311,70 +319,77 @@ msgctxt "Battery charge percentage"
 msgid "%1%"
 msgstr "%1%"
 
-#: ui/main.qml:332
+#: ui/main.qml:314
 #, fuzzy, kde-format
-#| msgctxt "@info:status"
-#| msgid "No energy information available on this system"
-msgctxt "@info:status"
-msgid "No history information for this time span"
-msgstr "अस्मिन् प्रणाल्यां ऊर्जासूचना उपलब्धा नास्ति"
+#| msgid "%1:"
+msgctxt "%1 is the unit"
+msgid "%1"
+msgstr "%1:"
 
-#: ui/main.qml:342
+#: ui/main.qml:315
+#, fuzzy, kde-format
+#| msgctxt "%1 is a percentage value"
+#| msgid "%1%"
+msgctxt "this is a format string, equivalent to '%'"
+msgid " %%"
+msgstr "%1%"
+
+#: ui/main.qml:334
 #, kde-format
 msgid "Charge Percentage"
 msgstr "शुल्क प्रतिशत"
 
-#: ui/main.qml:352
+#: ui/main.qml:344
 #, kde-format
 msgid "Energy Consumption"
 msgstr "ऊर्जा उपभोग"
 
-#: ui/main.qml:368
+#: ui/main.qml:360
 #, kde-format
 msgid "Last hour"
 msgstr "अन्तिमघण्टा"
 
-#: ui/main.qml:369
+#: ui/main.qml:361
 #, kde-format
 msgid "Last 2 hours"
 msgstr "अन्तिम २ घण्टा"
 
-#: ui/main.qml:370
+#: ui/main.qml:362
 #, kde-format
 msgid "Last 12 hours"
 msgstr "गत १२ घण्टा"
 
-#: ui/main.qml:371
+#: ui/main.qml:363
 #, kde-format
 msgid "Last 24 hours"
 msgstr "गत २४ घण्टा"
 
-#: ui/main.qml:372
+#: ui/main.qml:364
 #, kde-format
 msgid "Last 48 hours"
 msgstr "गत ४८ घण्टा"
 
-#: ui/main.qml:373
+#: ui/main.qml:365
 #, kde-format
 msgid "Last 7 days"
 msgstr "गत ७ दिवस"
 
-#: ui/main.qml:381
+#: ui/main.qml:373
 #, kde-format
 msgid "Timespan"
 msgstr "समयविस्तार"
 
-#: ui/main.qml:382
+#: ui/main.qml:374
 #, kde-format
 msgid "Timespan of data to display"
 msgstr "प्रदर्शयितुं दत्तांशस्य समयविस्तारः"
 
-#: ui/main.qml:388
+#: ui/main.qml:380
 #, kde-format
 msgid "Refresh"
 msgstr "ताजगी"
 
-#: ui/main.qml:447
+#: ui/main.qml:439
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
