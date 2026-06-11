@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-06-10 00:47+0000\n"
-"PO-Revision-Date: 2026-03-25 09:34+0400\n"
+"PO-Revision-Date: 2026-06-10 19:03+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -316,19 +316,16 @@ msgid "%1%"
 msgstr "%1٪"
 
 #: ui/main.qml:314
-#, fuzzy, kde-format
-#| msgid "%1:"
+#, kde-format
 msgctxt "%1 is the unit"
 msgid "%1"
-msgstr "‏%1:"
+msgstr "%1"
 
 #: ui/main.qml:315
-#, fuzzy, kde-format
-#| msgctxt "%1 is a percentage value"
-#| msgid "%1%"
+#, kde-format
 msgctxt "this is a format string, equivalent to '%'"
 msgid " %%"
-msgstr "%1٪"
+msgstr " %%"
 
 #: ui/main.qml:334
 #, kde-format
