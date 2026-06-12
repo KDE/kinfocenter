@@ -101,5 +101,16 @@
     },
     "TryExec": "@QtBinariesDir@/qdbus",
     "X-KDE-KInfoCenter-Category": "graphical_information",
-    "X-KDE-Keywords": "dxdiag,kwin"
+    "X-KDE-Keywords": "dxdiag,kwin",
+    "X-KDE-Keywords[ar]": "dxdiag,kwin",
+    "X-KDE-Keywords[ca@valencia]": "dxdiag,kwin",
+    "X-KDE-Keywords[ca]": "dxdiag,kwin",
+    "X-KDE-Keywords[es]": "dxdiag,kwin",
+    "X-KDE-Keywords[ka]": "dxdiag,kwin",
+    "X-KDE-Keywords[nl]": "dxdiag,kwin",
+    "X-KDE-Keywords[pt_BR]": "dxdiag,kwin",
+    "X-KDE-Keywords[sk]": "dxdiag,kwin",
+    "X-KDE-Keywords[sl]": "dxdiag,kwin",
+    "X-KDE-Keywords[tr]": "dxdiag,kwin",
+    "X-KDE-Keywords[uk]": "dxdiag,kwin,деіксдіаг,квін"
 }
