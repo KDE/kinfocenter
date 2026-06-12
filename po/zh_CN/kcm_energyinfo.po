@@ -317,13 +317,13 @@ msgstr "%1%"
 #, kde-format
 msgctxt "%1 is the unit"
 msgid "%1"
-msgstr ""
+msgstr "%1"
 
 #: ui/main.qml:315
 #, kde-format
 msgctxt "this is a format string, equivalent to '%'"
 msgid " %%"
-msgstr ""
+msgstr " %%"
 
 #: ui/main.qml:334
 #, kde-format
