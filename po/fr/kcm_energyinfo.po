@@ -4,16 +4,16 @@
 # Sebastien Renard <renard@kde.org>, 2015.
 # Vincent Pinon <vpinon@kde.org>, 2016.
 # Simon Depiets <sdepiets@gmail.com>, 2019.
-# SPDX-FileCopyrightText: 2021, 2023, 2024, 2025, 2026 Xavier Besnard <xavier.besnard@kde.org>
+# SPDX-FileCopyrightText: 2021, 2023-2026 Xavier Besnard <xavier.besnard@kde.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-06-10 00:47+0000\n"
-"PO-Revision-Date: 2026-03-25 18:28+0100\n"
+"PO-Revision-Date: 2026-06-11 16:45+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
-"Language-Team: \n"
+"Language-Team: fr\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Accelerator-Marker: &\n"
 "X-Environment: kde\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.04.1\n"
 "X-Text-Markup: kde4\n"
 
 #: ui/Graph.qml:182
@@ -321,19 +321,16 @@ msgid "%1%"
 msgstr "%1 %"
 
 #: ui/main.qml:314
-#, fuzzy, kde-format
-#| msgid "%1:"
+#, kde-format
 msgctxt "%1 is the unit"
 msgid "%1"
-msgstr "%1 : "
+msgstr "%1"
 
 #: ui/main.qml:315
-#, fuzzy, kde-format
-#| msgctxt "%1 is a percentage value"
-#| msgid "%1%"
+#, kde-format
 msgctxt "this is a format string, equivalent to '%'"
 msgid " %%"
-msgstr "%1 %"
+msgstr " %%"
 
 #: ui/main.qml:334
 #, kde-format
