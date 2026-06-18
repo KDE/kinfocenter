@@ -1,13 +1,13 @@
 # Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
 #
-# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025, 2026 Mincho Kondarev <mkondarev@yahoo.de>
+# SPDX-FileCopyrightText: 2022-2026 Mincho Kondarev <mkondarev@yahoo.de>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-06-10 00:47+0000\n"
-"PO-Revision-Date: 2026-04-03 00:34+0200\n"
+"PO-Revision-Date: 2026-06-17 15:52+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 26.03.70\n"
+"X-Generator: Lokalize 26.04.2\n"
 
 #: ui/Graph.qml:182
 #, kde-format
@@ -314,19 +314,16 @@ msgid "%1%"
 msgstr "%1%"
 
 #: ui/main.qml:314
-#, fuzzy, kde-format
-#| msgid "%1:"
+#, kde-format
 msgctxt "%1 is the unit"
 msgid "%1"
-msgstr "%1:"
+msgstr "%1"
 
 #: ui/main.qml:315
-#, fuzzy, kde-format
-#| msgctxt "%1 is a percentage value"
-#| msgid "%1%"
+#, kde-format
 msgctxt "this is a format string, equivalent to '%'"
 msgid " %%"
-msgstr "%1%"
+msgstr " %%"
 
 #: ui/main.qml:334
 #, kde-format
@@ -387,10 +384,3 @@ msgstr "Обновяване"
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
-
-#~ msgctxt "Degree Celsius"
-#~ msgid "°C"
-#~ msgstr "°C"
-
-#~ msgid "Unknown Battery"
-#~ msgstr "Неизвестна батерия"
