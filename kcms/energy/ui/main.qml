@@ -311,8 +311,8 @@ KCM.SimpleKCM {
                 xDuration: timespanCombo.duration
 
                 yLabel: root.historyType === HistoryModel.RateType ?
-                    i18nc("%1 is the unit", "%1", ("Watt", " W")) :
-                    i18nc("this is a format string, equivalent to '%'", " %%");
+                    i18nc("A format string with %1 as the short symbol for Watt", "%.0f %1",  "W") :
+                    i18nc("A format string with %1 as the percentage symbol '%'", "%.0f %1","%");
                 yMax: {
                     if (root.historyType === HistoryModel.RateType) {
                         // Ceil to next 10

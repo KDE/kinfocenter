@@ -104,8 +104,7 @@ Item {
         }
         axisY: ValueAxis {
             id: aYe
-
-            labelFormat: "%.0f" + graphRoot.yLabel
+            labelFormat: graphRoot.yLabel
             max: graphRoot.yMax
             min: graphRoot.yMin
             tickInterval: graphRoot.yMax === 100 ? 25.0 : graphRoot.yMax / 5
