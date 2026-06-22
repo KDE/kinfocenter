@@ -1,7 +1,7 @@
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Version.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/Version.h)
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
-add_subdirectory(opengl-helper)
+add_subdirectory(egl-helper)
 add_subdirectory(vulkan-helper)
 
 set(kcm_SRCS
