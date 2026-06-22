@@ -30,7 +30,7 @@ KCM.AbstractKCM {
 
             Kirigami.Theme.colorSet: Kirigami.Theme.View
             Kirigami.Theme.inherit: false
-            Component.onCompleted: background.visible = true // crashes when initialized with this. god knows why
+            Kirigami.StyleHints.showFramedBackground: true
 
             ListView {
                 id: view
@@ -62,7 +62,7 @@ KCM.AbstractKCM {
 
             Kirigami.Theme.colorSet: Kirigami.Theme.View
             Kirigami.Theme.inherit: false
-            Component.onCompleted: background.visible = true // crashes when initialized with this. god knows why
+            Kirigami.StyleHints.showFramedBackground: true
 
             ListView {
                 currentIndex: -1
