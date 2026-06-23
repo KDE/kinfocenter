@@ -237,6 +237,8 @@ std::optional<std::vector<GPUEntry::Device>> gpus()
 
 QString fancyOpenGLRenderer()
 {
+    qWarning() << "Falling back to QOpenGLContext for renderer name. This is a fallback and may not be accurate.";
+
     QOpenGLContext context;
     QOffscreenSurface surface;
     surface.create();
