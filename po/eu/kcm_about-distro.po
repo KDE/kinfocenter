@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-07 02:48+0000\n"
+"POT-Creation-Date: 2026-06-26 02:42+0000\n"
 "PO-Revision-Date: 2025-08-09 20:13+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -62,6 +62,14 @@ msgstr "diskretua"
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
 msgstr "alegiazkoa"
+
+#: GPUEntryFactory.cpp:243
+#, fuzzy, kde-format
+#| msgctxt "@label, Unknown amount of system memory"
+#| msgid "Unknown"
+msgctxt "unknown GPU name"
+msgid "Unknown"
+msgstr "Ezezaguna"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format

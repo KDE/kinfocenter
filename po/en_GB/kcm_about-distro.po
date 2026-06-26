@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-07 02:48+0000\n"
+"POT-Creation-Date: 2026-06-26 02:42+0000\n"
 "PO-Revision-Date: 2024-11-16 12:54+0000\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
@@ -59,6 +59,14 @@ msgstr "discrete"
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
 msgstr "virtual"
+
+#: GPUEntryFactory.cpp:243
+#, fuzzy, kde-format
+#| msgctxt "Unknown amount of RAM"
+#| msgid "Unknown"
+msgctxt "unknown GPU name"
+msgid "Unknown"
+msgstr "Unknown"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format

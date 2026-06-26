@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-07 02:48+0000\n"
+"POT-Creation-Date: 2026-06-26 02:42+0000\n"
 "PO-Revision-Date: 2025-08-07 21:27+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -64,6 +64,14 @@ msgstr "נפרד"
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
 msgstr "וירטואלי"
+
+#: GPUEntryFactory.cpp:243
+#, fuzzy, kde-format
+#| msgctxt "@label, Unknown amount of system memory"
+#| msgid "Unknown"
+msgctxt "unknown GPU name"
+msgid "Unknown"
+msgstr "לא ידוע"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format

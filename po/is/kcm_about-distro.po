@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-07 02:48+0000\n"
+"POT-Creation-Date: 2026-06-26 02:42+0000\n"
 "PO-Revision-Date: 2025-07-01 14:12+0000\n"
 "Last-Translator: Gummi <gudmundure@gmail.com>\n"
 "Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
@@ -59,6 +59,14 @@ msgstr "aðskilið"
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
 msgstr "sýndar"
+
+#: GPUEntryFactory.cpp:243
+#, fuzzy, kde-format
+#| msgctxt "@label, Unknown amount of system memory"
+#| msgid "Unknown"
+msgctxt "unknown GPU name"
+msgid "Unknown"
+msgstr "Óþekkt"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
