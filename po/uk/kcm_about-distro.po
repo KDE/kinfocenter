@@ -3,13 +3,13 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2013, 2014, 2016, 2018, 2020, 2021, 2022, 2023, 2024, 2025.
+# Yuri Chornoivan <yurchor@ukr.net>, 2013, 2014, 2016, 2018, 2020, 2021, 2022, 2023, 2024, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-06-26 02:42+0000\n"
-"PO-Revision-Date: 2025-05-01 12:43+0300\n"
+"PO-Revision-Date: 2026-06-26 16:47+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -66,12 +66,10 @@ msgid "virtual"
 msgstr "віртуальний"
 
 #: GPUEntryFactory.cpp:243
-#, fuzzy, kde-format
-#| msgctxt "@label, Unknown amount of system memory"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "unknown GPU name"
 msgid "Unknown"
-msgstr "Невідомо"
+msgstr "Невідомий"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
