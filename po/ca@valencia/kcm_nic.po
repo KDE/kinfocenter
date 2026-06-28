@@ -24,7 +24,7 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "SPDX-FileCopyrightText: 2019 Empar Montoro Martín,Sebastià Pla i Sanz"
+msgstr "Empar Montoro Martín,Sebastià Pla i Sanz"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
@@ -70,7 +70,7 @@ msgstr "Interfícies de xarxa"
 #, kde-format
 msgctxt "@info"
 msgid "(c) 2001 - 2002 Alexander Neundorf"
-msgstr "(c) 2001 - 2002 Alexander Neundorf"
+msgstr "(c) 2001 – 2002 Alexander Neundorf"
 
 #: nic.cpp:28
 #, kde-format
