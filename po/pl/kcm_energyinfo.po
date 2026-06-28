@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# SPDX-FileCopyrightText: 2015, 2016, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
+# SPDX-FileCopyrightText: 2015-2016, 2019-2026 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-06-10 00:47+0000\n"
-"PO-Revision-Date: 2026-04-04 19:17+0200\n"
+"PO-Revision-Date: 2026-06-27 12:27+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: pl\n"
 "Language: pl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 25.08.2\n"
+"X-Generator: Lokalize 26.04.2\n"
 
 #: ui/Graph.qml:182
 #, kde-format
@@ -315,19 +315,16 @@ msgid "%1%"
 msgstr "%1%"
 
 #: ui/main.qml:314
-#, fuzzy, kde-format
-#| msgid "%1:"
+#, kde-format
 msgctxt "%1 is the unit"
 msgid "%1"
-msgstr "%1:"
+msgstr "%1"
 
 #: ui/main.qml:315
-#, fuzzy, kde-format
-#| msgctxt "%1 is a percentage value"
-#| msgid "%1%"
+#, kde-format
 msgctxt "this is a format string, equivalent to '%'"
 msgid " %%"
-msgstr "%1%"
+msgstr " %%"
 
 #: ui/main.qml:334
 #, kde-format
