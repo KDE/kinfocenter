@@ -60,9 +60,7 @@ msgid "virtual"
 msgstr "虚拟显卡"
 
 #: GPUEntryFactory.cpp:243
-#, fuzzy, kde-format
-#| msgctxt "@label, Unknown amount of system memory"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "unknown GPU name"
 msgid "Unknown"
 msgstr "未知"
