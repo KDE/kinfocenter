@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-10 00:47+0000\n"
+"POT-Creation-Date: 2026-07-02 00:46+0000\n"
 "PO-Revision-Date: 2021-07-12 00:41+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-POFile-SpellExtra: Kai Wh Uwe Broulik UPS PDA Hidreto\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ui/Graph.qml:182
+#: ui/Graph.qml:181
 #, fuzzy, kde-format
 #| msgctxt "@info:status"
 #| msgid "No energy information available on this system"
@@ -331,19 +331,16 @@ msgid "%1%"
 msgstr "%1%"
 
 #: ui/main.qml:314
-#, fuzzy, kde-format
-#| msgid "%1:"
-msgctxt "%1 is the unit"
-msgid "%1"
-msgstr "%1:"
+#, kde-format
+msgctxt "A format string with %1 as the short symbol for Watt"
+msgid "%.0f %1"
+msgstr ""
 
 #: ui/main.qml:315
-#, fuzzy, kde-format
-#| msgctxt "Battery charge percentage"
-#| msgid "%1%"
-msgctxt "this is a format string, equivalent to '%'"
-msgid " %%"
-msgstr "%1%"
+#, kde-format
+msgctxt "A format string with %1 as the percentage symbol '%'"
+msgid "%.0f %1"
+msgstr ""
 
 #: ui/main.qml:334
 #, kde-format
@@ -404,6 +401,19 @@ msgstr "Actualizar"
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
+
+#, fuzzy
+#~| msgid "%1:"
+#~ msgctxt "%1 is the unit"
+#~ msgid "%1"
+#~ msgstr "%1:"
+
+#, fuzzy
+#~| msgctxt "Battery charge percentage"
+#~| msgid "%1%"
+#~ msgctxt "this is a format string, equivalent to '%'"
+#~ msgid " %%"
+#~ msgstr "%1%"
 
 #~ msgctxt "Degree Celsius"
 #~ msgid "°C"

@@ -1,7 +1,7 @@
 # Translation for kcm_energyinfo.po to Euskara/Basque (eu).
 # Copyright (C) 2017-2026 This file is copyright:
 # This file is distributed under the same license as the kinfocenter package.
-# SPDX-FileCopyrightText: 2023, 2024, 2025, 2026 KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
+# SPDX-FileCopyrightText: 2023-2026 KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
 #
 # Translators:
 # Iñigo Salvador Azurmendi <xalba@ni.eus>, 2017, 2019, 2021, 2023, 2024, 2025, 2026.
@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-10 00:47+0000\n"
-"PO-Revision-Date: 2026-03-29 20:37+0200\n"
+"POT-Creation-Date: 2026-07-02 00:46+0000\n"
+"PO-Revision-Date: 2026-07-01 21:24+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,13 +18,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.04.2\n"
 
-#: ui/Graph.qml:182
+#: ui/Graph.qml:181
 #, kde-format
 msgctxt "@info:status"
 msgid "No history information for this time span"
-msgstr "Denbora tarte honetarako ez dago historiari buruzko informaziorik"
+msgstr "Denbora tarte honetarako ez dago historiari-informaziorik"
 
 #: ui/main.qml:31 ui/main.qml:243
 #, kde-format
@@ -317,19 +317,16 @@ msgid "%1%"
 msgstr "%%1"
 
 #: ui/main.qml:314
-#, fuzzy, kde-format
-#| msgid "%1:"
-msgctxt "%1 is the unit"
-msgid "%1"
-msgstr "%1:"
+#, kde-format
+msgctxt "A format string with %1 as the short symbol for Watt"
+msgid "%.0f %1"
+msgstr ""
 
 #: ui/main.qml:315
-#, fuzzy, kde-format
-#| msgctxt "%1 is a percentage value"
-#| msgid "%1%"
-msgctxt "this is a format string, equivalent to '%'"
-msgid " %%"
-msgstr "%%1"
+#, kde-format
+msgctxt "A format string with %1 as the percentage symbol '%'"
+msgid "%.0f %1"
+msgstr ""
 
 #: ui/main.qml:334
 #, kde-format
@@ -390,6 +387,17 @@ msgstr "Freskatu"
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
+
+#~| msgid "%1:"
+#~ msgctxt "%1 is the unit"
+#~ msgid "%1"
+#~ msgstr "%1"
+
+#~| msgctxt "%1 is a percentage value"
+#~| msgid "%1%"
+#~ msgctxt "this is a format string, equivalent to '%'"
+#~ msgid " %%"
+#~ msgstr " %%"
 
 #~ msgctxt "Degree Celsius"
 #~ msgid "°C"

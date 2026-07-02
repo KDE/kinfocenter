@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-10 00:47+0000\n"
+"POT-Creation-Date: 2026-07-02 00:46+0000\n"
 "PO-Revision-Date: 2026-06-10 06:53+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
 "X-Generator: Poedit 3.9\n"
 
-#: ui/Graph.qml:182
+#: ui/Graph.qml:181
 #, kde-format
 msgctxt "@info:status"
 msgid "No history information for this time span"
@@ -319,15 +319,15 @@ msgstr "%1 %"
 
 #: ui/main.qml:314
 #, kde-format
-msgctxt "%1 is the unit"
-msgid "%1"
-msgstr "%1"
+msgctxt "A format string with %1 as the short symbol for Watt"
+msgid "%.0f %1"
+msgstr ""
 
 #: ui/main.qml:315
 #, kde-format
-msgctxt "this is a format string, equivalent to '%'"
-msgid " %%"
-msgstr " %%"
+msgctxt "A format string with %1 as the percentage symbol '%'"
+msgid "%.0f %1"
+msgstr ""
 
 #: ui/main.qml:334
 #, kde-format
@@ -388,6 +388,14 @@ msgstr "Osveži"
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
+
+#~ msgctxt "%1 is the unit"
+#~ msgid "%1"
+#~ msgstr "%1"
+
+#~ msgctxt "this is a format string, equivalent to '%'"
+#~ msgid " %%"
+#~ msgstr " %%"
 
 #~ msgctxt "Degree Celsius"
 #~ msgid "°C"
