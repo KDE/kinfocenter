@@ -14,6 +14,8 @@ class KCMMemory : public KQuickConfigModule
 {
     Q_OBJECT
     Q_PROPERTY(QString memoryInformation READ memoryInformation NOTIFY changed)
+    Q_PROPERTY(QString error MEMBER m_error NOTIFY errorChanged)
+    Q_PROPERTY(bool ready MEMBER m_ready NOTIFY readyChanged)
 public:
     explicit KCMMemory(QObject *parent, const KPluginMetaData &data)
         : KQuickConfigModule(parent, data)
@@ -34,6 +36,12 @@ private:
      */
     QString m_memoryInformation;
 
+    bool m_ready = false;
+    Q_SIGNAL void readyChanged();
+
+    QString m_error;
+    Q_SIGNAL void errorChanged();
+
     /**
      * Load the memory information from the dmidecode helper.
      */
@@ -46,15 +54,19 @@ private:
         connect(job, &KJob::result, this, [this, job]() {
             if (job->error()) {
                 qWarning() << "Failed to retrieve memory information: " << job->errorString();
+                m_error = job->errorString();
+                Q_EMIT errorChanged();
                 return;
             } else {
                 const auto reply = job->data();
                 if (reply.contains("memory")) {
                     m_memoryInformation = reply["memory"].toString();
+                    Q_EMIT changed();
                 }
-            }
 
-            Q_EMIT changed();
+                m_ready = true;
+                Q_EMIT readyChanged();
+            }
         });
 
         job->start();
