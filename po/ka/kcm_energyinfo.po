@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-02 00:46+0000\n"
-"PO-Revision-Date: 2026-06-10 05:52+0200\n"
+"PO-Revision-Date: 2026-07-02 06:01+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -318,13 +318,13 @@ msgstr "%1%"
 #, kde-format
 msgctxt "A format string with %1 as the short symbol for Watt"
 msgid "%.0f %1"
-msgstr ""
+msgstr "%.0f %1"
 
 #: ui/main.qml:315
 #, kde-format
 msgctxt "A format string with %1 as the percentage symbol '%'"
 msgid "%.0f %1"
-msgstr ""
+msgstr "%.0f %1"
 
 #: ui/main.qml:334
 #, kde-format

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-02 00:46+0000\n"
-"PO-Revision-Date: 2026-06-10 09:45+0300\n"
+"PO-Revision-Date: 2026-07-02 11:03+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -320,13 +320,13 @@ msgstr "%1%"
 #, kde-format
 msgctxt "A format string with %1 as the short symbol for Watt"
 msgid "%.0f %1"
-msgstr ""
+msgstr "%.0f %1"
 
 #: ui/main.qml:315
 #, kde-format
 msgctxt "A format string with %1 as the percentage symbol '%'"
 msgid "%.0f %1"
-msgstr ""
+msgstr "%.0f %1"
 
 #: ui/main.qml:334
 #, kde-format

@@ -388,16 +388,3 @@ msgstr "Oppdater"
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
-
-#, fuzzy
-#~| msgid "%1:"
-#~ msgctxt "%1 is the unit"
-#~ msgid "%1"
-#~ msgstr "%1:"
-
-#, fuzzy
-#~| msgctxt "%1 is a percentage value"
-#~| msgid "%1%"
-#~ msgctxt "this is a format string, equivalent to '%'"
-#~ msgid " %%"
-#~ msgstr "%1%"
