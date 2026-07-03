@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-03-24 00:45+0000\n"
-"PO-Revision-Date: 2026-07-01 21:23+0200\n"
+"PO-Revision-Date: 2026-07-02 17:43+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -314,7 +314,7 @@ msgstr "%%1"
 #, kde-format
 msgctxt "@info:status"
 msgid "No history information for this time span"
-msgstr "Denbora tarte honetarako ez dago historiari-informaziorik"
+msgstr "Denbora tarte honetarako ez dago historia-informaziorik"
 
 #: ui/main.qml:342
 #, kde-format
