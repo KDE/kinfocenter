@@ -119,7 +119,9 @@
     "X-KDE-Keywords[ru]": "dxdiag,kwin",
     "X-KDE-Keywords[sk]": "dxdiag,kwin",
     "X-KDE-Keywords[sl]": "dxdiag,kwin",
+    "X-KDE-Keywords[sv]": "dxdiag,kwin",
     "X-KDE-Keywords[tr]": "dxdiag,kwin",
     "X-KDE-Keywords[uk]": "dxdiag,kwin,деіксдіаг,квін",
-    "X-KDE-Keywords[zh_CN]": "dxdiag,kwin,directx,directxzhenduangongju,zhenduangongju,DirectX 诊断工具,诊断工具"
+    "X-KDE-Keywords[zh_CN]": "dxdiag,kwin,directx,directxzhenduangongju,zhenduangongju,DirectX 诊断工具,诊断工具",
+    "X-KDE-Keywords[zh_TW]": "dxdiag,kwin"
 }
