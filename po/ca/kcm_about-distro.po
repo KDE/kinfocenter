@@ -1,17 +1,17 @@
 # Translation of kcm_about-distro.po to Catalan
-# Copyright (C) 2014-2022 This_file_is_part_of_KDE
+# Copyright (C) 2014-2026 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # SPDX-FileCopyrightText: 2014, 2015, 2021 Antoni Bella Pérez <antonibella5@yahoo.com>
-# SPDX-FileCopyrightText: 2016, 2018, 2020, 2022 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2016, 2018, 2020, 2022, 2026 Josep M. Ferrer <txemaq@gmail.com>
 # SPDX-FileCopyrightText: 2019 Empar Montoro Martín <montoro_mde@gva.es>
 msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 16:18+0000\n"
-"PO-Revision-Date: 2022-11-04 13:34+0100\n"
+"PO-Revision-Date: 2026-07-11 17:17+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 20.12.0\n"
+"X-Generator: Lokalize 26.04.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -130,7 +130,7 @@ msgstr "Versió de l'U-Boot:"
 #: main.cpp:254
 #, kde-format
 msgid "KDE Frameworks Version:"
-msgstr "Versió dels Frameworks del KDE:"
+msgstr "Versió dels Frameworks de KDE:"
 
 #: main.cpp:255
 #, kde-format
@@ -218,4 +218,4 @@ msgstr "Copia al porta-retalls en anglès"
 #: PlasmaEntry.cpp:15
 #, kde-format
 msgid "KDE Plasma Version:"
-msgstr "Versió del Plasma del KDE:"
+msgstr "Versió del Plasma de KDE:"
