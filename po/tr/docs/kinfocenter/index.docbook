@@ -483,7 +483,7 @@
 >ALSA</acronym
 > ve <acronym
 >OSS</acronym
-> ses mimarîleri olarak iki kategoriye ayrılırlar.</para
+> ses mimârileri olarak iki kategoriye ayrılırlar.</para
 ></listitem>
 <listitem
 ><para
@@ -619,7 +619,7 @@
 >ISA</acronym
 > aygıtları arasında paylaşım için i386 (<acronym
 >PC</acronym
->) mimarîsinde kullanılabilen yalnızca on altı <acronym
+>) mimârisinde kullanılabilen yalnızca on altı <acronym
 >IRQ</acronym
 > (0–15) vardır.</para>
 
@@ -668,7 +668,7 @@
 >DMA</acronym
 > (Direct Memory Access — Doğrudan Hafıza Erişimi) Kanalları hakkında bilgi verir. Bir <acronym
 >DMA</acronym
-> kanalı, aygıtların işlemciyi pas geçerek hafızayla bilgi alışverişlerini sağlayan bir doğrudan bağlantıdır. Tipik olarak, i386-mimarîsi sistemleri (<acronym
+> kanalı, aygıtların işlemciyi pas geçerek hafızayla bilgi alışverişlerini sağlayan bir doğrudan bağlantıdır. Tipik olarak, i386-mimârisi sistemleri (<acronym
 >PC</acronym
 >’ler —Personal Computer— Kişisel Bilgisayar) sekiz <acronym
 >DMA</acronym
