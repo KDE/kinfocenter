@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-07 00:46+0000\n"
+"POT-Creation-Date: 2026-07-31 00:47+0000\n"
 "PO-Revision-Date: 2025-05-18 12:34+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -220,19 +220,19 @@ msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ":"
 
-#: ui/main.qml:96
+#: ui/main.qml:95
 #, kde-format
 msgctxt "@title"
 msgid "Serial Number"
 msgstr "Número de serie"
 
-#: ui/main.qml:102
+#: ui/main.qml:101
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
 msgstr "Copiar"
 
-#: ui/main.qml:149
+#: ui/main.qml:148
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
@@ -244,37 +244,37 @@ msgctxt "@title:group"
 msgid "Software"
 msgstr "Software"
 
-#: ui/main.qml:171
+#: ui/main.qml:169
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "Hardware"
 
-#: ui/main.qml:188
+#: ui/main.qml:184
 #, kde-format
 msgctxt "@action:button"
 msgid "Launch %1…"
 msgstr "Lanzar %1…"
 
-#: ui/main.qml:189
+#: ui/main.qml:185
 #, kde-format
 msgctxt "@info:tooltip launches kinfocenter from systemsettings"
 msgid "See more detailed system information"
 msgstr "Ver información más detallada sobre el sistema"
 
-#: ui/main.qml:197 ui/main.qml:205
+#: ui/main.qml:193 ui/main.qml:201
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "Copiar detalles"
 
-#: ui/main.qml:208
+#: ui/main.qml:204
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "En el idioma actual"
 
-#: ui/main.qml:214
+#: ui/main.qml:210
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
