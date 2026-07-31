@@ -48,7 +48,7 @@
 <legalnotice
 >&FDLNotice;</legalnotice>
 <date
->2018-03-31</date>
+>2018–03–31</date>
 <releaseinfo
 >Plasma 5.12</releaseinfo>
 
@@ -164,7 +164,7 @@
 <para
 >Auf der linken Seite befindet sich eine Spalte mit einem Filterfeld darüber. Hier können Sie die Module auswählen, deren Informationen Sie lesen möchten. Um durch die verschiedenen <acronym
 >KCM</acronym
->-Module zu navigieren, klicken Sie auf ein Modul in der Baumansicht. Sie können auch die Pfeiltasten benutzen, um durch die <acronym
+>-Module zu navigieren, klicken Sie auf ein Modul in der Baumansicht. Sie können auch die Pfeiltasten verwenden, um durch die <acronym
 >KCM</acronym
 >s zu blättern. Drücken Sie die &Enter;taste um ein Modul auszuwählen, dann werden die Informationen im Hauptbereich des &infocenter; angezeigt. Einige Einträge in der Baumansicht sind Kategorien, Sie können mit der &LMBn; klicken oder die &Enter;taste drücken, um die darin enthaltenen Einträge ein- oder auszuklappen. Dann werden die Module in dieser Kategorie angezeigt. Durch Klicken mit der &RMBn; öffnen Sie ein Kontextmenü mit folgenden Aktionen: <itemizedlist>
   <listitem
@@ -214,7 +214,7 @@
 <title
 >Der Knopf Hilfe</title>
 <para
->&kinfocenter; benutzt die bekannten &kde;-Einträge im Menü <guimenu
+>&kinfocenter; verwendet die bekannten &kde;-Einträge im Menü <guimenu
 >Hilfe</guimenu
 >, weitere Informationen dazu finden Sie im Abschnitt über das Menü <ulink url="help:/fundamentals/menus.html#menus-help"
 >Hilfe</ulink
@@ -281,7 +281,7 @@
 >.</para>
 
 <para
->Benutzen Sie die Informationen auf dieser Seite, wenn Sie Hilfe im Internet suchen oder Fehler im <ulink url="https://bugs.kde.org"
+>Verwenden Sie die Informationen auf dieser Seite, wenn Sie Hilfe im Internet suchen oder Fehler im <ulink url="https://bugs.kde.org"
 >&kde;-Fehlerverfolgungssytsem</ulink
 > berichten.</para>
 </sect1>
@@ -313,7 +313,7 @@
 > (Random Access Memory), das Sie mit Ihrem Rechner gekauft haben.</para>
 
 <para
->Der zweite Typ von Arbeitsspeicher nennt sich virtueller oder Auslagerungsspeicher. Dieser Speicherblock ist in Wirklichkeit Festplattenplatz. Das Betriebssystem reserviert einen Teil der Festplatte zum Auslagern von Speicherbereichen. Es kann diesen Auslagerungsspeicher benutzen, wenn der physikalische Speicher zur Neige geht. Der Grund dafür, dass dieser Speicherblock Auslagerungsspeicher genannt wird, ist folgender: Das Betriebssystem entfernt die Daten, von denen es annimmt, dass der Benutzer sie in absehbarer Zeit nicht braucht, aus dem physikalischen Speicher und schreibt diese Daten auf die Festplatte. Daraufhin lädt das Betriebssystem die neuen Daten, die der Benutzer jetzt gerade braucht. Der Speicherinhalt wird also auf die Festplatte ausgelagert. Virtueller (Auslagerungs-) Speicher ist nicht so schnell wie physikalischer Speicher, daher versuchen Betriebssysteme, oft benötigte Daten stets im physischen Arbeitsspeicher zu belassen.</para>
+>Der zweite Typ von Arbeitsspeicher nennt sich virtueller oder Auslagerungsspeicher. Dieser Speicherblock ist in Wirklichkeit Festplattenplatz. Das Betriebssystem reserviert einen Teil der Festplatte zum Auslagern von Speicherbereichen. Es kann diesen Auslagerungsspeicher verwenden, wenn der physikalische Speicher zur Neige geht. Der Grund dafür, dass dieser Speicherblock Auslagerungsspeicher genannt wird, ist folgender: Das Betriebssystem entfernt die Daten, von denen es annimmt, dass der Benutzer sie in absehbarer Zeit nicht benötigt, aus dem physikalischen Speicher und schreibt diese Daten auf die Festplatte. Daraufhin lädt das Betriebssystem die neuen Daten, die der Benutzer jetzt gerade benötigt. Der Speicherinhalt wird also auf die Festplatte ausgelagert. Virtueller (Auslagerungs-) Speicher ist nicht so schnell wie physikalischer Speicher, daher versuchen Betriebssysteme, oft benötigte Daten stets im physischen Arbeitsspeicher zu belassen.</para>
 
 <para
 >Der gesamte Arbeitsspeicher ist die Summe aus physischem und virtuellem Arbeitsspeicher.</para>
@@ -361,7 +361,7 @@
 >Dabei stehen blaue und grüne Bereiche für belegten, graue Bereiche für freien Speicher.</para>
 <tip
 ><para
->Die exakten Werte für die Speichertypen sind nicht so entscheidend und wechseln ständig. Wenn Sie die Informationen dieses Moduls auswerten wollen, dann schauen Sie am besten nach Trends.</para>
+>Die exakten Werte für die Speichertypen sind nicht so entscheidend und wechseln ständig. Wenn Sie die Informationen dieses Moduls auswerten möchten, dann schauen Sie am besten nach Trends.</para>
 
 <para
 >Hat Ihr Rechner genügend freien Speicherplatz (grau)? Wenn nicht, können Sie den Auslagerungsbereich erhöhen oder mehr physikalischen Speicher kaufen.</para>
@@ -493,7 +493,7 @@
 ><para
 ><guisubmenu
 >DVB-Geräte:</guisubmenu
-> Geräte, die den offenen Standard für digitales Fernsehen benutzen.</para
+> Geräte, die den offenen Standard für digitales Fernsehen verwenden.</para
 ></listitem>
 <listitem
 ><para
@@ -656,7 +656,7 @@
 >PC</acronym
 >) besitzt üblicherweise acht <acronym
 >DMA</acronym
->-Kanäle (0-7).</para>
+>-Kanäle (0–7).</para>
 
 <note
 > <para
@@ -817,7 +817,7 @@
 >. Smbstatus zeigt die aktuellen &Samba;-Verbindungen an und ist Teil der &Samba;-Programme, die das &SMB;-Protokoll (Server Message Block), auch NetBIOS oder LanManager-Protokoll genannte Netzwerkprotokoll unter Unix zur Verfügung stellen.</para>
 
 <para
->Dieses Protokoll wird zur gemeinsamen Nutzung von Druckern und Laufwerken in Netzwerken verwendet, die eines der &Microsoft; &Windows;-Betriebssysteme benutzen.</para>
+>Dieses Protokoll wird zur gemeinsamen Nutzung von Druckern und Laufwerken in Netzwerken verwendet, die eines der &Microsoft; &Windows;-Betriebssysteme verwenden.</para>
 
 <para
 >Das Programm <command
@@ -1015,7 +1015,7 @@
 >Mitwirkende</title>
 <listitem
 ><para
->Konvertierung des Moduls für das &kcontrolcenter;:</para>
+>Konvertierung des Moduls für das &kcontrol;:</para>
 <para
 >&Matthias.Hoelzer-Kluepfel; &Matthias.Hoelzer-Kluepfel.mail;</para
 ></listitem>
@@ -1145,7 +1145,7 @@
 <para
 >Das &infocenter;</para>
 <para
->Copyright für das Programm 1997-2001, die &infocenter;-Entwickler</para>
+>Copyright für das Programm 1997–2001, die &infocenter;-Entwickler</para>
 <para
 >Beiträge von:</para>
 
