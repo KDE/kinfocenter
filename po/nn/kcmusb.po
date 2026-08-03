@@ -1,6 +1,7 @@
 # Translation of kcmusb to Norwegian Nynorsk
 #
 # Gaute Hvoslef Kvalnes <gaute@verdsveven.com>, 1999, 2000, 2001, 2002, 2005.
+# Karl Ove Hufthammer <karl@huftis.org>, 2004, 2007, 2008, 2016, 2022, 2026.
 # Eirik U. Birkeland <eirbir@gmail.com>, 2008.
 # Øystein Steffensen-Alværvik <oysteins.omsetting@protonmail.com>, 2021.
 msgid ""

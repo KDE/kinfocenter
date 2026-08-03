@@ -1,6 +1,7 @@
 # Translation of kcm_nic to Norwegian Bokmål
 #
 # Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2002, 2007, 2010.
+# Martin Hansen <mh306602@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmnic\n"
