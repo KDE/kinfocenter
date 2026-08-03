@@ -2,6 +2,7 @@
 #
 # Knut Yrvin <knut.yrvin@gmail.com>, 2005.
 # Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2008.
+# Martin Hansen <mh306602@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
