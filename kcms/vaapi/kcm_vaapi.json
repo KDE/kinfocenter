@@ -1,0 +1,12 @@
+{
+    "Categories": "Qt;KDE;X-KDE-information;",
+    "KPlugin": {
+        "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
+        "Description": "Information about the Video Acceleration API (VA-API)",
+        "Icon": "video-display",
+        "Name": "Video Acceleration (VA-API)"
+    },
+    "TryExec": "vainfo",
+    "X-KDE-KInfoCenter-Category": "graphical_information",
+    "X-KDE-Keywords": "VA-API,Encoding,Decoding,VideoCard,Hardware Acceleration,Graphics,vainfo"
+}

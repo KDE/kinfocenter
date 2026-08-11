@@ -1,6 +1,7 @@
 add_subdirectory(helpers)
 
 add_subdirectory( about-distro )
+add_subdirectory(vaapi)
 add_subdirectory(vulkan)
 add_subdirectory(kwinsupportinfo)
 add_subdirectory(cpu)
