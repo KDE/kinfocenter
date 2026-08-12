@@ -269,7 +269,7 @@ msgstr "شغّل %1…"
 #, kde-format
 msgctxt "@info:tooltip launches kinfocenter from systemsettings"
 msgid "See more detailed system information"
-msgstr "اطلع على معلومات أكثر تفصيلاً عن النظام"
+msgstr "اطلع على معلومات أكثر تفصيلًا عن النظام"
 
 #: ui/main.qml:197 ui/main.qml:205
 #, kde-format
