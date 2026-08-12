@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-31 00:47+0000\n"
-"PO-Revision-Date: 2025-05-04 06:32+0400\n"
+"PO-Revision-Date: 2026-06-30 20:37+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -263,7 +263,7 @@ msgstr "شغّل %1…"
 #, kde-format
 msgctxt "@info:tooltip launches kinfocenter from systemsettings"
 msgid "See more detailed system information"
-msgstr "اطلع على معلومات أكثر تفصيلاً عن النظام"
+msgstr "اطلع على معلومات أكثر تفصيلًا عن النظام"
 
 #: ui/main.qml:193 ui/main.qml:201
 #, kde-format
