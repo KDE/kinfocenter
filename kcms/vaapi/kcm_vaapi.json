@@ -3,6 +3,7 @@
     "KPlugin": {
         "BugReportUrl": "https://bugs.kde.org/enter_bug.cgi?product=kinfocenter&component=general",
         "Description": "Information about the Video Acceleration API (VA-API)",
+        "Description[ar]": "معلومات حول واجهة برمجة تطبيقات تسريع الفيديو (VA-API)",
         "Description[bg]": "Информация за API за видео ускорение (VA-API)",
         "Description[ca@valencia]": "Informació sobre l'API d'acceleració de vídeo (VA-API)",
         "Description[ca]": "Informació sobre l'API d'acceleració de vídeo (VA-API)",
@@ -22,6 +23,7 @@
         "Description[uk]": "Відомості щодо програмного інтерфейсу прискорення обробки відео (VA-API)",
         "Icon": "video-display",
         "Name": "Video Acceleration (VA-API)",
+        "Name[ar]": "تسريع الفيديو (VA-API)",
         "Name[bg]": "Видео ускорение (VA-API)",
         "Name[ca@valencia]": "Acceleració de vídeo (VA-API)",
         "Name[ca]": "Acceleració de vídeo (VA-API)",
@@ -43,6 +45,7 @@
     "TryExec": "vainfo",
     "X-KDE-KInfoCenter-Category": "graphical_information",
     "X-KDE-Keywords": "VA-API,Encoding,Decoding,VideoCard,Hardware Acceleration,Graphics,vainfo",
+    "X-KDE-Keywords[ar]": "Vulkan,VideoCard,Hardware Acceleration,Graphics,فولكان,بطاقة الفيديو,تسريع الأجهزة,الرسومات,dxdiag,vulkaninfo,VA-API,ترميز,فك ترميز",
     "X-KDE-Keywords[bg]": "VA-API,кодиране,декодиране,видео карта,хардуерно ускорение,графика,vainfo",
     "X-KDE-Keywords[ca@valencia]": "VA-API,Codificació,Descodificació,Targeta de vídeo,Acceleració per maquinari,Gràfics,vainfo",
     "X-KDE-Keywords[ca]": "VA-API,Codificació,Descodificació,Targeta de vídeo,Acceleració per maquinari,Gràfics,vainfo",
