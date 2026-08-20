@@ -21,6 +21,7 @@
         "Description[sv]": "Information om programmeringsgränssnittet för videoacceleration (VA-API)",
         "Description[tr]": "Video İvmelendirme API’si hakkında bilgi",
         "Description[uk]": "Відомості щодо програмного інтерфейсу прискорення обробки відео (VA-API)",
+        "Description[zh_CN]": "视频解码加速 API (VA-API) 信息",
         "Icon": "video-display",
         "Name": "Video Acceleration (VA-API)",
         "Name[ar]": "تسريع الفيديو (VA-API)",
@@ -40,7 +41,8 @@
         "Name[sl]": "Video pospeševanje (VA-API)",
         "Name[sv]": "Videoacceleration (VA-API)",
         "Name[tr]": "Video İvmelendirme (VA-API)",
-        "Name[uk]": "Прискорення обробки відео (VA-API)"
+        "Name[uk]": "Прискорення обробки відео (VA-API)",
+        "Name[zh_CN]": "视频解码加速 (VA-API)"
     },
     "TryExec": "vainfo",
     "X-KDE-KInfoCenter-Category": "graphical_information",
@@ -62,5 +64,6 @@
     "X-KDE-Keywords[sl]": "Vulkan,Videokartica,Strojno pospeševanje,Grafika,dxdiag,vulkaninfo\nVA-API,Kodiranje,Dekodiranje,Video kartica,strojna oprema,pospeševanje,grafika,info o video pospeševanju",
     "X-KDE-Keywords[sv]": "VA-API,kodning,avkodning,Videokort,Maskinvaruacceleration,Grafik,vainfo",
     "X-KDE-Keywords[tr]": "kodlama,kod çözme,video kartı,donanım hızlandırması,donanım ivmelendirmesi,grafik,VA-API,vainfo",
-    "X-KDE-Keywords[uk]": "VA-API,Encoding,Decoding,VideoCard,Hardware Acceleration,Graphics,vainfo,кодування,декодування,апаратне прискорення,графіка"
+    "X-KDE-Keywords[uk]": "VA-API,Encoding,Decoding,VideoCard,Hardware Acceleration,Graphics,vainfo,кодування,декодування,апаратне прискорення,графіка",
+    "X-KDE-Keywords[zh_CN]": "VA-API,Encoding,Decoding,VideoCard,Hardware Acceleration,Graphics,vainfo,bianma,jiema,xianka,yingjianjiasu,tuxing,编码,解码,显卡,硬件加速,图形"
 }
