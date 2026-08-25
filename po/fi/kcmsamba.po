@@ -1,6 +1,6 @@
 # translation of kcmsamba.po to Finnish
 # KDE Finnish translation sprint participants:
-# SPDX-FileCopyrightText: 2015, 2020, 2021, 2025 Tommi Nieminen <translator@legisign.org>
+# SPDX-FileCopyrightText: 2015, 2020, 2021, 2025, 2026 Tommi Nieminen <translator@legisign.org>
 # Teemu Rytilahti <teemu.rytilahti@d5k.net>, 2003, 2008.
 # Kim Enkovaara <kim.enkovaara@iki.fi>, 2003.
 # Teemu Rytilahti <teemu.rytilahti@kde-fi.org>, 2003, 2008.
