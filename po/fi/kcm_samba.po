@@ -1,6 +1,6 @@
 # translation of kcmsamba.po to Finnish
 # KDE Finnish translation sprint participants:
-# SPDX-FileCopyrightText: 2015, 2020, 2021, 2025 Tommi Nieminen <translator@legisign.org>
+# SPDX-FileCopyrightText: 2015, 2020, 2021, 2025, 2026 Tommi Nieminen <translator@legisign.org>
 # Teemu Rytilahti <teemu.rytilahti@d5k.net>, 2003, 2008.
 # Kim Enkovaara <kim.enkovaara@iki.fi>, 2003.
 # Teemu Rytilahti <teemu.rytilahti@kde-fi.org>, 2003, 2008.
@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-30 00:42+0000\n"
-"PO-Revision-Date: 2025-08-22 17:17+0300\n"
+"PO-Revision-Date: 2026-02-25 15:49+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -46,18 +46,16 @@ msgid "There are no Samba shares mounted on this system"
 msgstr "Järjestelmään ei ole liitetty Samba-jakoja"
 
 #: ui/ShareListItem.qml:24
-#, fuzzy, kde-format
-#| msgctxt "@title:column samba share dir path"
-#| msgid "Path"
+#, kde-format
 msgctxt "@label local file system path"
 msgid "Path:"
-msgstr "Sijainti"
+msgstr "Sijainti:"
 
 #: ui/ShareListItem.qml:40
 #, kde-format
 msgctxt "@label labels a samba url or path"
 msgid "Shared at:"
-msgstr ""
+msgstr "Jakosijainti:"
 
 #: ui/ShareListItem.qml:69
 #, kde-kuit-format
