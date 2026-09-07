@@ -26,7 +26,13 @@ include(ECMQmlModule)
 
 option(BUILD_DOC "Whether to build the documentation" ON)
 
-find_package(Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Core Gui Widgets Graphs)
+find_package(Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
+    Core
+    Graphs
+    Gui
+    Qml
+    Widgets
+)
 
 find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
     Config
