@@ -25,6 +25,7 @@ set(kcm_samba_SRCS main.cpp)
 qt_add_dbus_interface(kcm_samba_SRCS org.freedesktop.DBus.Properties.xml org.freedesktop.DBus.Properties)
 kinfocenter_add_kcm(kcm_samba SOURCES ${kcm_samba_SRCS} INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
 target_link_libraries(kcm_samba PRIVATE
+    Qt6::Qml
     KF6::KCMUtilsQuick
     kcm_samba_static
 )
