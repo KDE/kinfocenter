@@ -3,7 +3,7 @@
 
 #pragma once
 
-#include <QList>
+#include <vector>
 
 class Entry;
 
