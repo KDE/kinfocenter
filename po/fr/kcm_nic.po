@@ -155,7 +155,7 @@ msgstr "Déconnecté"
 #, kde-format
 msgctxt "@action:button"
 msgid "Refresh"
-msgstr "Rafraîchir"
+msgstr "Rafraichir"
 
 #~ msgctxt "@item:intext Mode of network card"
 #~ msgid "Broadcast"
