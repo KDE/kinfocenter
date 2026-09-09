@@ -82,13 +82,13 @@ msgstr "Fermer"
 #, kde-format
 msgctxt "@action:button pauses automatic refreshing"
 msgid "Pause Refreshing"
-msgstr "Mettre le rafraîchissement en pause"
+msgstr "Mettre le rafraichissement en pause"
 
 #: qml/CommandOutputKCM.qml:238
 #, kde-format
 msgctxt "@action:button resumes automatic refreshing"
 msgid "Resume Refreshing"
-msgstr "Poursuivre le rafraîchissement"
+msgstr "Poursuivre le rafraichissement"
 
 #: qml/CommandOutputKCM.qml:245
 #, kde-format
