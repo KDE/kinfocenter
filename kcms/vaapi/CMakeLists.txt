@@ -2,7 +2,11 @@
 # SPDX-FileCopyrightText: 2026 Satakun Utama <linesofcodes@dailitation.xyz>
 
 find_package(libva-utils)
-set_package_properties(libva-utils PROPERTIES TYPE RUNTIME)
+set_package_properties(libva-utils PROPERTIES
+    URL https://github.com/intel/libva-utils
+    TYPE RUNTIME
+    PURPOSE "Display information about the Video Acceleration API (VA-API)"
+)
 
 add_definitions(-DTRANSLATION_DOMAIN=\"kcm_vaapi\")
 
