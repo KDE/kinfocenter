@@ -31,6 +31,48 @@ KCMUtils.SimpleKCM {
         desktopFileName: "org.kde.kinfocenter"
     }
 
+    //TODO: Replace Toast with Kirigami.showPassiveNotification once the base app is written using QtQuick
+
+    QQC2.Popup {
+        id: toast
+        parent: root
+
+        property alias text: toastLabel.text
+
+        x: Math.round((parent.width - width) / 2)
+        y: parent.height - height - Kirigami.Units.gridUnit * 2
+
+        padding: Kirigami.Units.largeSpacing
+        modal: false
+        focus: false
+        closePolicy: QQC2.Popup.NoAutoClose
+
+        background: Kirigami.ShadowedRectangle {
+            color: Kirigami.Theme.textColor
+            radius: Kirigami.Units.cornerRadius
+            shadow.size: Kirigami.Units.largeSpacing
+            shadow.color: Qt.rgba(0, 0, 0, 0.3)
+        }
+
+        contentItem: QQC2.Label {
+            id: toastLabel
+            color: Kirigami.Theme.backgroundColor
+        }
+
+        Timer {
+            id: toastTimer
+            interval: 3000
+            onTriggered: toast.close()
+        }
+
+        onOpened: toastTimer.restart()
+    }
+
+    function showToast(message) {
+        toast.text = message;
+        toast.open();
+    }
+
     ColumnLayout {
         spacing: Kirigami.Units.largeSpacing
 
@@ -100,7 +142,10 @@ KCMUtils.SimpleKCM {
                                     Kirigami.Action {
                                         text: i18nc("@action:button", "Copy")
                                         icon.name: "edit-copy-symbolic"
-                                        onTriggered: source => kcm.storeInClipboard(subtitle)
+                                        onTriggered: source => {
+                                            kcm.storeInClipboard(subtitle)
+                                            root.showToast(i18nc("@info:status", "Serial number copied to clipboard"));
+                                        }
                                         shortcut: StandardKey.Copy
                                     }
                                 ]
@@ -191,7 +236,10 @@ KCMUtils.SimpleKCM {
 
             icon.name: "edit-copy-symbolic"
             text: i18nc("@action:button", "Copy Details")
-            onTriggered: source => kcm.copyToClipboard()
+            onTriggered: source => {
+                kcm.copyToClipboard()
+                showToast(i18nc("@info:status", "System information copied to clipboard"));
+            }
         },
 
         Kirigami.Action {
@@ -202,13 +250,19 @@ KCMUtils.SimpleKCM {
 
             Kirigami.Action {
                 text: i18nc("@action:button Copy Details...", "In current language")
-                onTriggered: source => kcm.copyToClipboard()
+                onTriggered: source => {
+                    kcm.copyToClipboard()
+                    showToast("@info:status", "System information copied to clipboard");
+                }
                 shortcut: StandardKey.Copy
             }
 
             Kirigami.Action {
                 text: i18nc("@action:button Copy Details...", "In English")
-                onTriggered: source => kcm.copyToClipboardInEnglish()
+                onTriggered: source => {
+                    kcm.copyToClipboardInEnglish()
+                    showToast("@info:status", "System information copied to clipboard");
+                }
             }
         }
     ]
