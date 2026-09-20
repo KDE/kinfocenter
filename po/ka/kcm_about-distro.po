@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-20 00:47+0000\n"
-"PO-Revision-Date: 2025-05-01 03:46+0200\n"
+"PO-Revision-Date: 2026-09-20 03:41+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.9\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -235,7 +235,7 @@ msgstr "კოპირება"
 #, kde-format
 msgctxt "@info:status"
 msgid "Serial number copied to clipboard"
-msgstr ""
+msgstr "სერიული ნომერი დაკოპირდა ბუფერში"
 
 #: ui/main.qml:193
 #, kde-format
@@ -277,7 +277,7 @@ msgstr "დეტალების კოპირება"
 #, kde-format
 msgctxt "@info:status"
 msgid "System information copied to clipboard"
-msgstr ""
+msgstr "ინფორმაცია სისტემის შესახებ დაკოპირდა ბუფერში"
 
 #: ui/main.qml:252
 #, kde-format
