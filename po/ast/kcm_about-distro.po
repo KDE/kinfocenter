@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-31 00:47+0000\n"
+"POT-Creation-Date: 2026-09-20 00:47+0000\n"
 "PO-Revision-Date: 2024-03-18 01:19+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: Asturian <alministradores@softastur.org>\n"
@@ -215,43 +215,49 @@ msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ":"
 
-#: ui/main.qml:95
+#: ui/main.qml:137
 #, kde-format
 msgctxt "@title"
 msgid "Serial Number"
 msgstr "Númberu de serie"
 
-#: ui/main.qml:101
+#: ui/main.qml:143
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
 msgstr "Copiar"
 
-#: ui/main.qml:148
+#: ui/main.qml:147
+#, kde-format
+msgctxt "@info:status"
+msgid "Serial number copied to clipboard"
+msgstr ""
+
+#: ui/main.qml:193
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
 msgstr "Amosar"
 
-#: ui/main.qml:161
+#: ui/main.qml:206
 #, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "Software"
 
-#: ui/main.qml:169
+#: ui/main.qml:214
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "Hardware"
 
-#: ui/main.qml:184
+#: ui/main.qml:229
 #, kde-format
 msgctxt "@action:button"
 msgid "Launch %1…"
 msgstr ""
 
-#: ui/main.qml:185
+#: ui/main.qml:230
 #, fuzzy, kde-format
 #| msgctxt "@action:button launches kinfocenter from systemsettings"
 #| msgid "More System Information"
@@ -259,19 +265,25 @@ msgctxt "@info:tooltip launches kinfocenter from systemsettings"
 msgid "See more detailed system information"
 msgstr "Más información del sistema"
 
-#: ui/main.qml:193 ui/main.qml:201
+#: ui/main.qml:238 ui/main.qml:249
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "Copiar los detalles"
 
-#: ui/main.qml:204
+#: ui/main.qml:241
+#, kde-format
+msgctxt "@info:status"
+msgid "System information copied to clipboard"
+msgstr ""
+
+#: ui/main.qml:252
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "Na llingua actual"
 
-#: ui/main.qml:210
+#: ui/main.qml:261
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"

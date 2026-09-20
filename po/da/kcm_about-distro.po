@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-31 00:47+0000\n"
+"POT-Creation-Date: 2026-09-20 00:47+0000\n"
 "PO-Revision-Date: 2025-10-31 23:24+0100\n"
 "Last-Translator: Rasmus Rosendahl-Kaa <rasmus@rosendahl-kaa.name>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -216,37 +216,43 @@ msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ":"
 
-#: ui/main.qml:95
+#: ui/main.qml:137
 #, kde-format
 msgctxt "@title"
 msgid "Serial Number"
 msgstr "Serienummer"
 
-#: ui/main.qml:101
+#: ui/main.qml:143
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
 msgstr "Kopiér"
 
-#: ui/main.qml:148
+#: ui/main.qml:147
+#, kde-format
+msgctxt "@info:status"
+msgid "Serial number copied to clipboard"
+msgstr ""
+
+#: ui/main.qml:193
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
 msgstr "Vis"
 
-#: ui/main.qml:161
+#: ui/main.qml:206
 #, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "Software"
 
-#: ui/main.qml:169
+#: ui/main.qml:214
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "Hardware"
 
-#: ui/main.qml:184
+#: ui/main.qml:229
 #, fuzzy, kde-format
 #| msgctxt "@info:tooltip"
 #| msgid "Launch %1"
@@ -254,25 +260,32 @@ msgctxt "@action:button"
 msgid "Launch %1…"
 msgstr "Start %1…"
 
-#: ui/main.qml:185
+#: ui/main.qml:230
 #, kde-format
 msgctxt "@info:tooltip launches kinfocenter from systemsettings"
 msgid "See more detailed system information"
 msgstr "Se mere detaljeret systeminformation"
 
-#: ui/main.qml:193 ui/main.qml:201
+#: ui/main.qml:238 ui/main.qml:249
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "Kopiér detaljer"
 
-#: ui/main.qml:204
+#: ui/main.qml:241
+#, fuzzy, kde-format
+#| msgid "Copy software and hardware information to clipboard"
+msgctxt "@info:status"
+msgid "System information copied to clipboard"
+msgstr "Kopiér information om software og hardware til udklipsholderen"
+
+#: ui/main.qml:252
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "På nuværende sprog"
 
-#: ui/main.qml:210
+#: ui/main.qml:261
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
@@ -312,9 +325,6 @@ msgstr "På engelsk"
 #~ msgctxt "@info:credit"
 #~ msgid "Author"
 #~ msgstr "Ophavsmand"
-
-#~ msgid "Copy software and hardware information to clipboard"
-#~ msgstr "Kopiér information om software og hardware til udklipsholderen"
 
 #~ msgid "Copy software and hardware information to clipboard in English"
 #~ msgstr ""

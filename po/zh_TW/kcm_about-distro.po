@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-31 00:47+0000\n"
+"POT-Creation-Date: 2026-09-20 00:47+0000\n"
 "PO-Revision-Date: 2025-05-01 17:51+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -216,62 +216,75 @@ msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
 msgstr ":"
 
-#: ui/main.qml:95
+#: ui/main.qml:137
 #, kde-format
 msgctxt "@title"
 msgid "Serial Number"
 msgstr "序號"
 
-#: ui/main.qml:101
+#: ui/main.qml:143
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
 msgstr "複製"
 
-#: ui/main.qml:148
+#: ui/main.qml:147
+#, kde-format
+msgctxt "@info:status"
+msgid "Serial number copied to clipboard"
+msgstr ""
+
+#: ui/main.qml:193
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
 msgstr "顯示"
 
-#: ui/main.qml:161
+#: ui/main.qml:206
 #, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "軟體"
 
-#: ui/main.qml:169
+#: ui/main.qml:214
 #, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "硬體"
 
 # %1 是中文的譯文，所以沒有空白會比較好。
-#: ui/main.qml:184
+#: ui/main.qml:229
 #, kde-format
 msgctxt "@action:button"
 msgid "Launch %1…"
 msgstr "啟動%1…"
 
-#: ui/main.qml:185
+#: ui/main.qml:230
 #, kde-format
 msgctxt "@info:tooltip launches kinfocenter from systemsettings"
 msgid "See more detailed system information"
 msgstr "查看更詳細的系統資訊"
 
-#: ui/main.qml:193 ui/main.qml:201
+#: ui/main.qml:238 ui/main.qml:249
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "複製詳細資訊"
 
-#: ui/main.qml:204
+#: ui/main.qml:241
+#, fuzzy, kde-format
+#| msgid "Copy software and hardware information to clipboard"
+msgctxt "@info:status"
+msgid "System information copied to clipboard"
+msgstr "複製軟體與硬體資訊到剪貼簿"
+
+#: ui/main.qml:252
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
 msgstr "使用目前語言"
 
-#: ui/main.qml:210
+#: ui/main.qml:261
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
@@ -304,9 +317,6 @@ msgstr "使用英文"
 #~ msgctxt "@info:credit"
 #~ msgid "Author"
 #~ msgstr "作者"
-
-#~ msgid "Copy software and hardware information to clipboard"
-#~ msgstr "複製軟體與硬體資訊到剪貼簿"
 
 #~ msgid "Copy software and hardware information to clipboard in English"
 #~ msgstr "複製英文的軟體與硬體資訊到剪貼簿"
