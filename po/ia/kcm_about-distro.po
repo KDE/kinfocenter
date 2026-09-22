@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# SPDX-FileCopyrightText: 2016, 2020, 2021, 2022, 2023, 2024, 2025 Giovanni Sora <g.sora@tiscali.it>
+# SPDX-FileCopyrightText: 2016, 2020, 2021, 2022, 2023, 2024, 2025, 2026 Giovanni Sora <g.sora@tiscali.it>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-20 00:47+0000\n"
-"PO-Revision-Date: 2025-05-09 16:58+0200\n"
+"PO-Revision-Date: 2026-09-21 12:26+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
@@ -234,7 +234,7 @@ msgstr "Copia"
 #, kde-format
 msgctxt "@info:status"
 msgid "Serial number copied to clipboard"
-msgstr ""
+msgstr "Numero serial copiate a area de transferentia"
 
 #: ui/main.qml:193
 #, kde-format
@@ -273,11 +273,10 @@ msgid "Copy Details"
 msgstr "Copia detalios "
 
 #: ui/main.qml:241
-#, fuzzy, kde-format
-#| msgid "Copy software and hardware information to clipboard"
+#, kde-format
 msgctxt "@info:status"
 msgid "System information copied to clipboard"
-msgstr "Copia information de software e hardware in area de transferentia"
+msgstr "Information de Systema copiate a area de transferentia"
 
 #: ui/main.qml:252
 #, kde-format
