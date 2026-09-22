@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kinfocenter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-02 00:46+0000\n"
-"PO-Revision-Date: 2026-05-31 18:40-0400\n"
+"PO-Revision-Date: 2026-09-22 18:03+0900\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
 "Language: ug\n"
@@ -89,7 +89,7 @@ msgstr "سەرپىياتى"
 #, kde-format
 msgctxt "Watt"
 msgid "W"
-msgstr "W"
+msgstr ""
 
 #: ui/main.qml:48
 #, kde-format
@@ -100,7 +100,7 @@ msgstr "توك بېسىمى"
 #, kde-format
 msgctxt "Volt"
 msgid "V"
-msgstr "V"
+msgstr ""
 
 #: ui/main.qml:49
 #, kde-format
@@ -111,7 +111,7 @@ msgstr "قالغان ئېنېرگىيە"
 #, kde-format
 msgctxt "Watt-hours"
 msgid "Wh"
-msgstr "Wh"
+msgstr ""
 
 #: ui/main.qml:50
 #, kde-format
@@ -152,19 +152,19 @@ msgstr "ياق"
 #, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
-msgstr "%1%"
+msgstr ""
 
 #: ui/main.qml:81
 #, kde-format
 msgctxt "%1 is value, %2 is unit"
 msgid "%1 %2"
-msgstr "%1 %2"
+msgstr ""
 
 #: ui/main.qml:88
 #, kde-format
 msgctxt "Degree Celsius"
 msgid "%1 °C"
-msgstr "%1 °C"
+msgstr ""
 
 #: ui/main.qml:96
 #, kde-format
@@ -312,7 +312,7 @@ msgstr "%1% (توكلاۋاتىدۇ)"
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
-msgstr "%1%"
+msgstr ""
 
 #: ui/main.qml:314
 #, kde-format
@@ -384,15 +384,13 @@ msgstr "يېڭىلا"
 #: ui/main.qml:439
 #, kde-format
 msgid "%1:"
-msgstr "%1:"
+msgstr ""
 
-#, fuzzy
 #~| msgid "%1:"
 #~ msgctxt "%1 is the unit"
 #~ msgid "%1"
 #~ msgstr "%1:"
 
-#, fuzzy
 #~| msgctxt "%1 is a percentage value"
 #~| msgid "%1%"
 #~ msgctxt "this is a format string, equivalent to '%'"

@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-20 00:47+0000\n"
-"PO-Revision-Date: 2026-04-02 21:04+0200\n"
+"PO-Revision-Date: 2026-09-21 10:29+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: fr\n"
 "Language: fr\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Accelerator-Marker: &\n"
 "X-Environment: kde\n"
-"X-Generator: Lokalize 26.04.2\n"
+"X-Generator: Lokalize 26.08.0\n"
 "X-Text-Markup: kde4\n"
 
 #: CPUEntry.cpp:17
@@ -244,7 +244,7 @@ msgstr "Copier"
 #, kde-format
 msgctxt "@info:status"
 msgid "Serial number copied to clipboard"
-msgstr ""
+msgstr "Numéro de série copié dans le presse-papier"
 
 #: ui/main.qml:193
 #, kde-format
@@ -283,12 +283,10 @@ msgid "Copy Details"
 msgstr "Copier les détails"
 
 #: ui/main.qml:241
-#, fuzzy, kde-format
-#| msgid "Copy software and hardware information to clipboard"
+#, kde-format
 msgctxt "@info:status"
 msgid "System information copied to clipboard"
-msgstr ""
-"Copier les informations logicielles et matérielles dans le presse-papiers"
+msgstr "Informations sur le système dans le presse-papier"
 
 #: ui/main.qml:252
 #, kde-format
