@@ -136,7 +136,6 @@
         "Name[tg]": "PCI",
         "Name[th]": "อุปกรณ์ PCI",
         "Name[tr]": "PCI",
-        "Name[ug]": "PCI",
         "Name[uk]": "Шина PCI",
         "Name[uz@cyrillic]": "PCI",
         "Name[uz]": "PCI",
