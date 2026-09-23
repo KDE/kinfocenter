@@ -53,6 +53,7 @@ KCM.SimpleKCM {
                 Kirigami.SelectableLabel {
                     id: text
                     padding: Kirigami.Units.largeSpacing
+                    width: scrollView.width - leftPadding - rightPadding
                     text: root.output.text
                     font.family: "monospace"
                     wrapMode: root.wrapMode
