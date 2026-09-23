@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-20 00:47+0000\n"
-"PO-Revision-Date: 2025-05-20 14:21+0300\n"
+"PO-Revision-Date: 2026-09-22 22:00+0200\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -243,7 +243,7 @@ msgstr "Копировать"
 #, kde-format
 msgctxt "@info:status"
 msgid "Serial number copied to clipboard"
-msgstr ""
+msgstr "Серийный номер скопирован в буфер обмена"
 
 #: ui/main.qml:193
 #, kde-format
@@ -282,13 +282,10 @@ msgid "Copy Details"
 msgstr "Скопировать подробные сведения"
 
 #: ui/main.qml:241
-#, fuzzy, kde-format
-#| msgid "Copy software and hardware information to clipboard"
+#, kde-format
 msgctxt "@info:status"
 msgid "System information copied to clipboard"
-msgstr ""
-"Скопировать информацию о программном обеспечении и оборудовании в буфер "
-"обмена"
+msgstr "Сведения о системе скопированы в буфер обмена"
 
 #: ui/main.qml:252
 #, kde-format
