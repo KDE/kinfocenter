@@ -1,7 +1,7 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2015, 2016.
-# SPDX-FileCopyrightText: 2019, 2021, 2023, 2024, 2025 Tommi Nieminen <translator@legisign.org>
+# SPDX-FileCopyrightText: 2019, 2021, 2023, 2024, 2025, 2026 Tommi Nieminen <translator@legisign.org>
 #
 #
 #
@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-02 00:46+0000\n"
-"PO-Revision-Date: 2025-11-13 13:51+0200\n"
+"PO-Revision-Date: 2026-08-25 19:53+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -166,7 +166,7 @@ msgstr "%1 %2"
 #, kde-format
 msgctxt "Degree Celsius"
 msgid "%1 °C"
-msgstr ""
+msgstr "%1 °C"
 
 #: ui/main.qml:96
 #, kde-format
@@ -322,13 +322,13 @@ msgstr "%1 %"
 #, kde-format
 msgctxt "A format string with %1 as the short symbol for Watt"
 msgid "%.0f %1"
-msgstr ""
+msgstr "%0.0f %1"
 
 #: ui/main.qml:315
 #, kde-format
 msgctxt "A format string with %1 as the percentage symbol '%'"
 msgid "%.0f %1"
-msgstr ""
+msgstr "%0.0f %1"
 
 #: ui/main.qml:334
 #, kde-format
