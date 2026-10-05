@@ -3,13 +3,14 @@
 # Toplica Tanaskovic <toptan@kde.org.yu>, 2003.
 # Chusslove Illich <caslav.ilic@gmx.net>, 2005, 2007, 2008, 2012, 2016.
 # Dalibor Djuric <dalibor.djuric@mozilla-srbija.org>, 2009, 2010.
+# Nemanja Hiršl <nemhirsl@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmusb\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:53+0000\n"
-"PO-Revision-Date: 2016-03-13 14:33+0100\n"
-"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"PO-Revision-Date: 2026-10-03 22:09+0200\n"
+"Last-Translator: Nemanja Hiršl <nemhirsl@gmail.com>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
@@ -25,37 +26,34 @@ msgstr ""
 #, kde-format
 msgctxt "USB device class"
 msgid "(Defined at Interface level)"
-msgstr ""
+msgstr "(одређено на нивоу сучеља)"
 
 #: classes.i18n:3 usbdevices.cpp:102
 #, kde-format
 msgctxt "USB device class"
 msgid "Application Specific Interface"
-msgstr ""
+msgstr "посебно сучеље програма"
 
 #: classes.i18n:4 usbdevices.cpp:68
-#, fuzzy, kde-format
-#| msgid "Audio"
+#, kde-format
 msgctxt "USB device class"
 msgid "Audio"
 msgstr "аудио"
 
 #: classes.i18n:5 usbdevices.cpp:84
-#, fuzzy, kde-format
-#| msgid "Data"
+#, kde-format
 msgctxt "USB device class"
 msgid "CDC Data"
-msgstr "подаци"
+msgstr "ЦДЦ подаци"
 
 #: classes.i18n:6 usbdevices.cpp:86
 #, kde-format
 msgctxt "USB device class"
 msgid "Chip/SmartCard"
-msgstr ""
+msgstr "чип/смарт-картица"
 
 #: classes.i18n:7 usbdevices.cpp:70
-#, fuzzy, kde-format
-#| msgid "Communications"
+#, kde-format
 msgctxt "USB device class"
 msgid "Communications"
 msgstr "комуникације"
@@ -64,37 +62,34 @@ msgstr "комуникације"
 #, kde-format
 msgctxt "USB device class"
 msgid "Content Security"
-msgstr ""
+msgstr "безбедност садржаја"
 
 #: classes.i18n:9 usbdevices.cpp:94
 #, kde-format
 msgctxt "USB device class"
 msgid "Diagnostic"
-msgstr ""
+msgstr "дијагностика"
 
 #: classes.i18n:10 usbdevices.cpp:82
-#, fuzzy, kde-format
-#| msgid "Hub"
+#, kde-format
 msgctxt "USB device class"
 msgid "Hub"
 msgstr "чвориште"
 
 #: classes.i18n:11 usbdevices.cpp:72
-#, fuzzy, kde-format
-#| msgid "Human Interface Devices"
+#, kde-format
 msgctxt "USB device class"
 msgid "Human Interface Device"
-msgstr "уређаји људског сучеља"
+msgstr "уређај људског сучеља"
 
 #: classes.i18n:12 usbdevices.cpp:78
 #, kde-format
 msgctxt "USB device class"
 msgid "Imaging"
-msgstr ""
+msgstr "снимање слика"
 
 #: classes.i18n:13 usbdevices.cpp:80
-#, fuzzy, kde-format
-#| msgid "Mass Storage"
+#, kde-format
 msgctxt "USB device class"
 msgid "Mass Storage"
 msgstr "масовно складиште"
@@ -103,25 +98,22 @@ msgstr "масовно складиште"
 #, kde-format
 msgctxt "USB device class"
 msgid "Miscellaneous Device"
-msgstr ""
+msgstr "уређај разне намене"
 
 #: classes.i18n:15 usbdevices.cpp:74
-#, fuzzy, kde-format
-#| msgid "Human Interface Devices"
+#, kde-format
 msgctxt "USB device class"
 msgid "Physical Interface Device"
-msgstr "уређаји људског сучеља"
+msgstr "уређај физичког сучеља"
 
 #: classes.i18n:16 usbdevices.cpp:76
-#, fuzzy, kde-format
-#| msgid "Printer"
+#, kde-format
 msgctxt "USB device class"
 msgid "Printer"
 msgstr "штампач"
 
 #: classes.i18n:17 usbdevices.cpp:104
-#, fuzzy, kde-format
-#| msgid "Vendor Specific Class"
+#, kde-format
 msgctxt "USB device class"
 msgid "Vendor Specific Class"
 msgstr "посебна класа произвођача"
@@ -130,140 +122,126 @@ msgstr "посебна класа произвођача"
 #, kde-format
 msgctxt "USB device class"
 msgid "Video"
-msgstr ""
+msgstr "видео"
 
 #: classes.i18n:19 usbdevices.cpp:96
 #, kde-format
 msgctxt "USB device class"
 msgid "Wireless"
-msgstr ""
+msgstr "бежично"
 
 #: classes.i18n:20
 #, kde-format
 msgctxt "USB device class"
 msgid "Xbox"
-msgstr ""
+msgstr "Xbox"
 
 #: classes.i18n:21
 #, kde-format
 msgctxt "USB device subclass"
 msgid "?"
-msgstr ""
+msgstr "?"
 
 #: classes.i18n:22
-#, fuzzy, kde-format
-#| msgid "ATM Networking"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "ATM Networking"
 msgstr "АТМ умрежавање"
 
 #: classes.i18n:23
-#, fuzzy, kde-format
-#| msgid "Abstract (modem)"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Abstract (modem)"
 msgstr "апстрактни (модем)"
 
 #: classes.i18n:24
-#, fuzzy, kde-format
-#| msgid "Boot Interface Subclass"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Boot Interface Subclass"
 msgstr "поткласа подизног сучеља"
 
 #: classes.i18n:25
-#, fuzzy, kde-format
-#| msgid "CAPI Control"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "CAPI Control"
 msgstr "ЦАПИ контрола"
 
 #: classes.i18n:26
-#, fuzzy, kde-format
-#| msgid "Control Device"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Control Device"
 msgstr "контролни уређај"
 
 #: classes.i18n:27
-#, fuzzy, kde-format
-#| msgid "Control/Bulk"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Controller"
-msgstr "контрола/количински"
+msgstr "контролор"
 
 #: classes.i18n:28
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Device Firmware Update"
-msgstr ""
+msgstr "ажурирање фирмвера уређаја"
 
 #: classes.i18n:29
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Device Management"
-msgstr ""
+msgstr "управљање уређајем"
 
 # skip-rule: t-line
 #: classes.i18n:30
-#, fuzzy, kde-format
-#| msgid "Direct Line"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Direct Line"
 msgstr "директна веза"
 
 #: classes.i18n:31
-#, fuzzy, kde-format
-#| msgid "Ethernet Networking"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Ethernet Emulation"
-msgstr "етернетско умрежавање"
+msgstr "етернетска емулација"
 
 #: classes.i18n:32
-#, fuzzy, kde-format
-#| msgid "Ethernet Networking"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Ethernet Networking"
 msgstr "етернетско умрежавање"
 
 #: classes.i18n:33
-#, fuzzy, kde-format
-#| msgid "Floppy"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Floppy (UFI)"
-msgstr "флопи"
+msgstr "флопи (UFI)"
 
 #: classes.i18n:34
 #, kde-format
 msgctxt "USB device subclass"
 msgid "IRDA Bridge"
-msgstr ""
+msgstr "ИрДА мост"
 
 #: classes.i18n:35
-#, fuzzy, kde-format
-#| msgid "Streaming"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "MIDI Streaming"
-msgstr "струјање"
+msgstr "МИДИ струјање"
 
 # skip-rule: t-line
 #: classes.i18n:36
-#, fuzzy, kde-format
-#| msgid "Direct Line"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Mobile Direct Line"
-msgstr "директна веза"
+msgstr "мобилна директна веза"
 
 #: classes.i18n:37
-#, fuzzy, kde-format
-#| msgid "Multi-Channel"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Multi-Channel"
 msgstr "вишеканалски"
 
 #: classes.i18n:38
-#, fuzzy, kde-format
-#| msgid "No Subclass"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "No Subclass"
 msgstr "без поткласе"
@@ -272,11 +250,10 @@ msgstr "без поткласе"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "OBEX"
-msgstr ""
+msgstr "ОБЕКС"
 
 #: classes.i18n:40
-#, fuzzy, kde-format
-#| msgid "Printer"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Printer"
 msgstr "штампач"
@@ -285,29 +262,28 @@ msgstr "штампач"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "QIC-157"
-msgstr ""
+msgstr "QIC-157"
 
 #: classes.i18n:42
 #, kde-format
 msgctxt "USB device subclass"
 msgid "RBC (typically Flash)"
-msgstr ""
+msgstr "RBC (обично флеш меморија)"
 
 #: classes.i18n:43
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Radio Frequency"
-msgstr ""
+msgstr "радио-фреквенција"
 
 #: classes.i18n:44
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Reprogrammable Diagnostics"
-msgstr ""
+msgstr "репрограмабилна дијагностика"
 
 #: classes.i18n:45
-#, fuzzy, kde-format
-#| msgid "SCSI"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "SCSI"
 msgstr "скази"
@@ -316,30 +292,28 @@ msgstr "скази"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "SFF-8020i, MMC-2 (ATAPI)"
-msgstr ""
+msgstr "SFF-8020i, MMC-2 (АТАПИ)"
 
 #: classes.i18n:47
 #, kde-format
 msgctxt "USB device subclass"
 msgid "SFF-8070i"
-msgstr ""
+msgstr "SFF-8070i"
 
 #: classes.i18n:48
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Still Image Capture"
-msgstr ""
+msgstr "хватање непокретних слика"
 
 #: classes.i18n:49
-#, fuzzy, kde-format
-#| msgid "Streaming"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Streaming"
 msgstr "струјање"
 
 #: classes.i18n:50
-#, fuzzy, kde-format
-#| msgid "Telephone"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Telephone"
 msgstr "телефон"
@@ -348,64 +322,61 @@ msgstr "телефон"
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Test and Measurement"
-msgstr ""
+msgstr "испитивање и мерење"
 
 #: classes.i18n:52
 #, kde-format
 msgctxt "USB device subclass"
 msgid "USB3 Vision"
-msgstr ""
+msgstr "USB3 Vision"
 
 #: classes.i18n:53
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Undefined"
-msgstr ""
+msgstr "недефинисано"
 
 #: classes.i18n:54
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Unused"
-msgstr ""
+msgstr "некоришћено"
 
 #: classes.i18n:55
-#, fuzzy, kde-format
-#| msgid "Vendor Specific Subclass"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Vendor Specific Subclass"
 msgstr "посебна поткласа произвођача"
 
 #: classes.i18n:56
-#, fuzzy, kde-format
-#| msgid "CAPI Control"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Video Control"
-msgstr "ЦАПИ контрола"
+msgstr "видео контрола"
 
 #: classes.i18n:57
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Video Interface Collection"
-msgstr ""
+msgstr "збирка видео сучеља"
 
 #: classes.i18n:58
-#, fuzzy, kde-format
-#| msgid "Non Streaming"
+#, kde-format
 msgctxt "USB device subclass"
 msgid "Video Streaming"
-msgstr "без струјања"
+msgstr "видео струјање"
 
 #: classes.i18n:59
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Wireless Handset Control"
-msgstr ""
+msgstr "контрола бежичне слушалице"
 
 #: classes.i18n:60
 #, kde-format
 msgctxt "USB device subclass"
 msgid "Wireless USB Wire Adapter"
-msgstr ""
+msgstr "жични адаптер за бежични УСБ"
 
 #: kcmusb.cpp:35
 #, kde-format
@@ -413,17 +384,16 @@ msgid "Device"
 msgstr "Уређај"
 
 #: usbdevices.cpp:66
-#, fuzzy, kde-format
-#| msgid "Human Interface Devices"
+#, kde-format
 msgctxt "USB device class"
 msgid "Defined at Interface Level"
-msgstr "уређаји људског сучеља"
+msgstr "одређено на нивоу сучеља"
 
 #: usbdevices.cpp:92
 #, kde-format
 msgctxt "USB device class"
 msgid "Personal Healthcare"
-msgstr ""
+msgstr "лична здравствена нега"
 
 # >> @item:intext USB product
 #: usbdevices.cpp:215
@@ -454,17 +424,17 @@ msgstr "<tr><td><i>ИД производа</i></td><td>0x%1</td></tr>"
 #: usbdevices.cpp:252
 #, kde-format
 msgid "<tr><td><i>Class</i></td>%1</tr>"
-msgstr "<tr><td><i>класа</i></td><td>%1</td></tr>"
+msgstr "<tr><td><i>класа</i></td>%1</tr>"
 
 #: usbdevices.cpp:257
 #, kde-format
 msgid "<tr><td><i>Subclass</i></td>%1</tr>"
-msgstr "<tr><td><i>поткласа</i></td><td>%1</td></tr>"
+msgstr "<tr><td><i>поткласа</i></td>%1</tr>"
 
 #: usbdevices.cpp:262
 #, kde-format
 msgid "<tr><td><i>Protocol</i></td>%1</tr>"
-msgstr "<tr><td><i>протокол</i></td><td>%1</td></tr>"
+msgstr "<tr><td><i>протокол</i></td>%1</tr>"
 
 #: usbdevices.cpp:263
 #, kde-format
@@ -485,133 +455,3 @@ msgstr "<tr><td><i>канала</i></td><td>%1</td></tr>"
 #, kde-format
 msgid "<tr><td><i>Max. Packet Size</i></td><td>%1</td></tr>"
 msgstr "<tr><td><i>макс. величина пакета</i></td><td>%1</td></tr>"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Тирон Андрић,Часлав Илић"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "tiron@beotel.yu,caslav.ilic@gmx.net"
-
-#~ msgid ""
-#~ "This module allows you to see the devices attached to your USB bus(es)."
-#~ msgstr "Овај модул даје преглед уређаја прикачених на УСБ магистралу."
-
-#~ msgid "kcmusb"
-#~ msgstr "КЦМ‑УСБ "
-
-#~ msgid "USB Devices"
-#~ msgstr "УСБ уређаји"
-
-#~ msgid "(c) 2001 Matthias Hoelzer-Kluepfel"
-#~ msgstr "© 2001, Матијас Хелцер-Клипфел"
-
-#~ msgid "Matthias Hoelzer-Kluepfel"
-#~ msgstr "Матијас Хелцер-Клипфел"
-
-#~ msgid "Leo Savernik"
-#~ msgstr "Лео Саверник"
-
-#~ msgid "Live Monitoring of USB Bus"
-#~ msgstr "Уживо надгледање УСБ магистрале"
-
-#~ msgid "AT-commands"
-#~ msgstr "АТ‑наредбе"
-
-#~ msgid "Bidirectional"
-#~ msgstr "двосмерни"
-
-#~ msgid "Bulk (Zip)"
-#~ msgstr "количина (зип)"
-
-#~ msgid "CAPI 2.0"
-#~ msgstr "ЦАПИ 2.0"
-
-#~ msgid "CDC PUF"
-#~ msgstr "ЦДЦ ПУФ"
-
-#~ msgid "Control/Bulk/Interrupt"
-#~ msgstr "контрола/количински/прекид"
-
-#~ msgid "HDLC"
-#~ msgstr "ХДЛЦ"
-
-#~ msgid "Host Based Driver"
-#~ msgstr "драјвер у домаћину"
-
-#~ msgid "I.430 ISDN BRI"
-#~ msgstr "И.430 ИСДН БРИ"
-
-#~ msgid "Interface"
-#~ msgstr "сучеље"
-
-#~ msgid "Keyboard"
-#~ msgstr "тастатура"
-
-#~ msgid "Mouse"
-#~ msgstr "миш"
-
-#~ msgid "None"
-#~ msgstr "ниједан"
-
-#~ msgid "Q.921"
-#~ msgstr "Ку.921"
-
-#~ msgid "Q.921M"
-#~ msgstr "Ку.921М"
-
-#~ msgid "Q.921TM"
-#~ msgstr "Ку.921ТМ"
-
-#~ msgid "Q.932 EuroISDN"
-#~ msgstr "Ку.932 (евроИСДН)"
-
-#~ msgid "Transparent"
-#~ msgstr "прозиран"
-
-#~ msgid "Unidirectional"
-#~ msgstr "једносмеран"
-
-#~ msgid "V.120 V.24 rate ISDN"
-#~ msgstr "В.120 В.24 ИСДН"
-
-#~ msgid "V.42bis"
-#~ msgstr "В.42бис"
-
-#~ msgid "Vendor Specific"
-#~ msgstr "посебно произвођача"
-
-#~ msgid "Vendor Specific Protocol"
-#~ msgstr "посебан протокол произвођача"
-
-#~ msgid "Vendor specific"
-#~ msgstr "посебно произвођача"
-
-#~ msgid "<tr><td><i>Revision</i></td><td>%1.%2</td></tr>"
-#~ msgstr "<tr><td><i>ревизија</i></td><td>%1.%2</td></tr>"
-
-#~ msgid "<tr><td><i>Power Consumption</i></td><td>%1 mA</td></tr>"
-#~ msgstr "<tr><td><i>потрошња енергије</i></td><td>%1 mA</td></tr>"
-
-#~ msgid "<tr><td><i>Power Consumption</i></td><td>self powered</td></tr>"
-#~ msgstr "<tr><td><i>потрошња енергије</i></td><td>самонапајање</td></tr>"
-
-#~ msgid "<tr><td><i>Attached Devicenodes</i></td><td>%1</td></tr>"
-#~ msgstr "<tr><td><i>прикачени чворови</i></td><td>%1</td></tr>"
-
-#~ msgid "<tr><td><i>Bandwidth</i></td><td>%1 of %2 (%3%)</td></tr>"
-#~ msgstr "<tr><td><i>пропусност</i></td><td>%1 од %2 (%3%)</td></tr>"
-
-#~ msgid "<tr><td><i>Intr. requests</i></td><td>%1</td></tr>"
-#~ msgstr "<tr><td><i>прекидних захтева</i></td><td>%1</td></tr>"
-
-#~ msgid "<tr><td><i>Isochr. requests</i></td><td>%1</td></tr>"
-#~ msgstr "<tr><td><i>изохроних захтева</i></td><td>%1</td></tr>"
-
-#~ msgid ""
-#~ "Could not open one or more USB controller. Make sure, you have read "
-#~ "access to all USB controllers that should be listed here."
-#~ msgstr ""
-#~ "Не могу да отворим један или више УСБ контролора. Проверите имате ли "
-#~ "приступ за читање за све УСБ контролоре које овде треба набројати."

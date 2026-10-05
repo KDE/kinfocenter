@@ -1,12 +1,13 @@
 # Translation of kcm-about-distro.po into Serbian.
 # Chusslove Illich <caslav.ilic@gmx.net>, 2015, 2016.
+# Nemanja Hiršl <nemhirsl@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm-about-distro\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-20 00:47+0000\n"
-"PO-Revision-Date: 2016-06-19 15:35+0200\n"
-"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"PO-Revision-Date: 2026-10-03 22:09+0200\n"
+"Last-Translator: Nemanja Hiršl <nemhirsl@gmail.com>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
 "Language: sr@latin\n"
 "MIME-Version: 1.0\n"
@@ -30,56 +31,48 @@ msgstr[3] "Procesor:"
 
 # >! Contexts.
 #: CPUEntry.cpp:22
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt ""
 "unknown CPU type/product name; presented as `Processors: 4 × Unknown Type'"
 msgid "Unknown Type"
-msgstr "nepoznato"
+msgstr "nepoznat tip"
 
 # >> @item
 #: GPUEntry.cpp:17
-#, fuzzy, kde-format
-#| msgid "Processor:"
-#| msgid_plural "Processors:"
+#, kde-format
 msgctxt "@label %1 is the GPU index number"
 msgid "Graphics Processor %1:"
-msgstr "Procesori:"
+msgstr "Grafički procesor %1:"
 
 # >> @item
 #: GPUEntry.cpp:18
-#, fuzzy, kde-format
-#| msgid "Processor:"
-#| msgid_plural "Processors:"
+#, kde-format
 msgid "Graphics Processor:"
-msgstr "Procesori:"
+msgstr "Grafički procesor:"
 
 #: GPUEntry.cpp:28
 #, kde-format
 msgctxt "@label GPU type"
 msgid "integrated"
-msgstr ""
+msgstr "Integrisani"
 
 #: GPUEntry.cpp:30
 #, kde-format
 msgctxt "@label GPU type"
 msgid "discrete"
-msgstr ""
+msgstr "Diskretni"
 
 #: GPUEntry.cpp:32
 #, kde-format
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
-msgstr ""
+msgstr "Virtuelni"
 
 # >> @item
 #: GraphicsPlatformEntry.cpp:10
-#, fuzzy, kde-format
-#| msgid "Processor:"
-#| msgid_plural "Processors:"
+#, kde-format
 msgid "Graphics Platform:"
-msgstr "Procesori:"
+msgstr "Grafička platforma:"
 
 #: KernelEntry.cpp:11
 #, kde-format
@@ -88,53 +81,47 @@ msgstr "Izdanje jezgra:"
 
 # >> @item:intable
 #: KernelEntry.cpp:23
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the CPU bit width (e.g. 32 or 64)"
-#| msgid "%1-bit"
+#, kde-format
 msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
-msgstr "%1‑bitno"
+msgstr "%1 (%2‑bitno)"
 
 #: main.cpp:201
 #, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
-msgstr ""
+msgstr "Proizvođač:"
 
 #: main.cpp:204 main.cpp:221
 #, kde-format
 msgctxt "@label"
 msgid "Product Name:"
-msgstr ""
+msgstr "Ime proizvoda:"
 
 #: main.cpp:207
-#, fuzzy, kde-format
-#| msgid "Qt Version:"
+#, kde-format
 msgctxt "@label"
 msgid "System Version:"
-msgstr "Izdanje Qt‑a:"
+msgstr "Izdanje sistema:"
 
 #: main.cpp:210 main.cpp:224
 #, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
-msgstr ""
+msgstr "Serijski broj:"
 
 # >! Contexts.
 #: main.cpp:214 main.cpp:231
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label unknown entry in table"
 msgid "Unknown:"
-msgstr "nepoznato"
+msgstr "Nepoznato:"
 
 #: main.cpp:227
-#, fuzzy, kde-format
-#| msgid "Qt Version:"
+#, kde-format
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
-msgstr "Izdanje Qt‑a:"
+msgstr "Izdanje podiznog učitavača U-Boot:"
 
 #: main.cpp:265
 #, kde-format
@@ -157,30 +144,24 @@ msgctxt ""
 "@label, %1 is the total amount of installed system memory, %2 is the amount "
 "of which is usable, both expressed as 7.7 GiB"
 msgid "%1 of RAM (%2 usable)"
-msgstr ""
+msgstr "%1 RAM‑a (%2 upotrebljivo)"
 
 #: MemoryEntry.cpp:137
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt ""
 "@label, %1 is the amount of installed system memory expressed as 7.7 GiB"
 msgid "%1 of RAM"
 msgstr "%1 RAM‑a"
 
 #: MemoryEntry.cpp:144
-#, fuzzy, kde-format
-#| msgctxt "@label %1 is the formatted amount of system memory (e.g. 7,7 GiB)"
-#| msgid "%1 of RAM"
+#, kde-format
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
-msgstr "%1 RAM‑a"
+msgstr "%1 upotrebljivog RAM‑a"
 
 # >! Contexts.
 #: MemoryEntry.cpp:150
-#, fuzzy, kde-format
-#| msgctxt "Unknown amount of RAM"
-#| msgid "Unknown"
+#, kde-format
 msgctxt "@label, Unknown amount of system memory"
 msgid "Unknown"
 msgstr "nepoznato"
@@ -192,6 +173,8 @@ msgid ""
 "Some memory is reserved for use by the kernel or system hardware such as "
 "integrated graphics memory."
 msgstr ""
+"Deo memorije je rezervisan za jezgro ili sistemski hardver, kao što je "
+"memorija integrisane grafike."
 
 #: MemoryEntry.cpp:166
 #, kde-format
@@ -201,6 +184,9 @@ msgid ""
 "some memory is reserved for use by the kernel or system hardware, such as "
 "integrated graphics memory."
 msgstr ""
+"Količina upotrebljive memorije može biti manja od prikazane zato što je deo "
+"memorije rezervisan za jezgro ili sistemski hardver, kao što je memorija "
+"integrisane grafike."
 
 #: MemoryEntry.cpp:175
 #, kde-format
@@ -210,17 +196,20 @@ msgid ""
 "because some memory is reserved for use by the kernel or system hardware, "
 "such as integrated graphics memory."
 msgstr ""
+"Prikazana količina memorije može biti manja od ugrađene zato što je deo "
+"memorije rezervisan za jezgro ili sistemski hardver, kao što je memorija "
+"integrisane grafike."
 
 #: OSVersionEntry.cpp:9
 #, kde-format
 msgid "Operating System:"
-msgstr ""
+msgstr "Operativni sistem:"
 
 #: OSVersionEntry.cpp:11
 #, kde-format
 msgctxt "@label %1 is the distro name, %2 is the version"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: OSVersionEntry.cpp:13
 #, kde-format
@@ -228,7 +217,7 @@ msgctxt ""
 "@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
 "should be a number, or 'rolling'"
 msgid "%1 %2 Build: %3"
-msgstr ""
+msgstr "%1 %2, gradnja: %3"
 
 #: PlasmaEntry.cpp:15
 #, kde-format
@@ -239,43 +228,41 @@ msgstr "Izdanje KDE Plasme:"
 #, kde-format
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
-msgstr ""
+msgstr ":"
 
 #: ui/main.qml:137
 #, kde-format
 msgctxt "@title"
 msgid "Serial Number"
-msgstr ""
+msgstr "Serijski broj"
 
 #: ui/main.qml:143
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
-msgstr ""
+msgstr "Kopiraj"
 
 #: ui/main.qml:147
 #, kde-format
 msgctxt "@info:status"
 msgid "Serial number copied to clipboard"
-msgstr ""
+msgstr "Serijski broj je kopiran u klipbord"
 
 #: ui/main.qml:193
 #, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
-msgstr ""
+msgstr "Prikaži"
 
 #: ui/main.qml:206
-#, fuzzy, kde-format
-#| msgid "Software"
+#, kde-format
 msgctxt "@title:group"
 msgid "Software"
 msgstr "Softver"
 
 # >> @item category
 #: ui/main.qml:214
-#, fuzzy, kde-format
-#| msgid "Hardware"
+#, kde-format
 msgctxt "@title:group"
 msgid "Hardware"
 msgstr "Hardver"
@@ -284,58 +271,34 @@ msgstr "Hardver"
 #, kde-format
 msgctxt "@action:button"
 msgid "Launch %1…"
-msgstr ""
+msgstr "Pokreni %1…"
 
 #: ui/main.qml:230
 #, kde-format
 msgctxt "@info:tooltip launches kinfocenter from systemsettings"
 msgid "See more detailed system information"
-msgstr ""
+msgstr "Pogledaj detaljnije podatke o sistemu"
 
 #: ui/main.qml:238 ui/main.qml:249
-#, fuzzy, kde-format
-#| msgctxt "EMAIL OF TRANSLATORS"
-#| msgid "Your emails"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy Details"
-msgstr "caslav.ilic@gmx.net"
+msgstr "Kopiraj detalje"
 
 #: ui/main.qml:241
 #, kde-format
 msgctxt "@info:status"
 msgid "System information copied to clipboard"
-msgstr ""
+msgstr "Podaci o sistemu su kopirani u klipbord"
 
 #: ui/main.qml:252
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
-msgstr ""
+msgstr "Na tekućem jeziku"
 
 #: ui/main.qml:261
 #, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
-msgstr ""
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Časlav Ilić"
-
-#~ msgid "OS Type:"
-#~ msgstr "Vrsta OS‑a:"
-
-#, fuzzy
-#~| msgctxt "@info:credit"
-#~| msgid "Copyright 2012-2014 Harald Sitter"
-#~ msgctxt "@info:credit"
-#~ msgid "Copyright 2012-2020 Harald Sitter"
-#~ msgstr "© 2012–2014, Harald Siter"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Harald Sitter"
-#~ msgstr "Harald Siter"
-
-#~ msgctxt "@info:credit"
-#~ msgid "Author"
-#~ msgstr "Autor"
+msgstr "Na engleskom"

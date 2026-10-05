@@ -1,12 +1,13 @@
 # Translation of kcm_energyinfo.po into Serbian.
 # Chusslove Illich <caslav.ilic@gmx.net>, 2015, 2016.
+# Nemanja Hiršl <nemhirsl@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-02 00:46+0000\n"
-"PO-Revision-Date: 2016-07-03 22:52+0200\n"
-"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"PO-Revision-Date: 2026-10-03 22:09+0200\n"
+"Last-Translator: Nemanja Hiršl <nemhirsl@gmail.com>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +23,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info:status"
 msgid "No history information for this time span"
-msgstr ""
+msgstr "Нема података историјата за овај временски распон"
 
 #: ui/main.qml:31 ui/main.qml:243
 #, kde-format
@@ -40,21 +41,19 @@ msgid "Charge state"
 msgstr "Попуњеност"
 
 #: ui/main.qml:35
-#, fuzzy, kde-format
-#| msgid "Current"
+#, kde-format
 msgid "Current charge"
-msgstr "Тренутно"
+msgstr "Тренутна попуњеност"
 
 #: ui/main.qml:36
 #, kde-format
 msgid "Health"
-msgstr ""
+msgstr "Здравље"
 
 #: ui/main.qml:37
-#, fuzzy, kde-format
-#| msgid "Charge state"
+#, kde-format
 msgid "Charge Cycles"
-msgstr "Попуњеност"
+msgstr "Циклуси пуњења"
 
 #: ui/main.qml:38
 #, kde-format
@@ -74,7 +73,7 @@ msgstr "Серијски број"
 #: ui/main.qml:41
 #, kde-format
 msgid "Technology"
-msgstr ""
+msgstr "Технологија"
 
 #: ui/main.qml:45
 #, kde-format
@@ -107,7 +106,7 @@ msgstr "V"
 #: ui/main.qml:49
 #, kde-format
 msgid "Remaining energy"
-msgstr ""
+msgstr "Преостала енергија"
 
 #: ui/main.qml:49 ui/main.qml:50 ui/main.qml:51
 #, kde-format
@@ -116,15 +115,14 @@ msgid "Wh"
 msgstr "Wh"
 
 #: ui/main.qml:50
-#, fuzzy, kde-format
-#| msgid "Last full"
+#, kde-format
 msgid "Last full charge"
-msgstr "Последње пуно"
+msgstr "Последње пуно пуњење"
 
 #: ui/main.qml:51
 #, kde-format
 msgid "Original charge capacity"
-msgstr ""
+msgstr "Првобитни капацитет"
 
 #: ui/main.qml:55
 #, kde-format
@@ -139,8 +137,7 @@ msgstr "Температура"
 
 # >> @item
 #: ui/main.qml:70
-#, fuzzy, kde-format
-#| msgid "Yes"
+#, kde-format
 msgctxt ""
 "@info:label The battery has a certain capability, such as `Rechargeable:`"
 msgid "Yes"
@@ -148,8 +145,7 @@ msgstr "да"
 
 # >> @item
 #: ui/main.qml:71
-#, fuzzy, kde-format
-#| msgid "No"
+#, kde-format
 msgctxt ""
 "@info:label The battery doesn't have a certain capability, such as "
 "`Rechargeable:`"
@@ -157,12 +153,10 @@ msgid "No"
 msgstr "не"
 
 #: ui/main.qml:75
-#, fuzzy, kde-format
-#| msgctxt "%1 is value, %2 is unit"
-#| msgid "%1 %2"
+#, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
-msgstr "%1 %2"
+msgstr "%1%"
 
 #: ui/main.qml:81
 #, kde-format
@@ -174,7 +168,7 @@ msgstr "%1 %2"
 #, kde-format
 msgctxt "Degree Celsius"
 msgid "%1 °C"
-msgstr ""
+msgstr "%1 °C"
 
 #: ui/main.qml:96
 #, kde-format
@@ -199,159 +193,142 @@ msgstr "Скроз пуна"
 #: ui/main.qml:105
 #, kde-format
 msgid "Lithium ion"
-msgstr ""
+msgstr "Литијум-јонска"
 
 #: ui/main.qml:106
 #, kde-format
 msgid "Lithium polymer"
-msgstr ""
+msgstr "Литијум-полимерска"
 
 #: ui/main.qml:107
 #, kde-format
 msgid "Lithium iron phosphate"
-msgstr ""
+msgstr "Литијум-гвожђе-фосфатна"
 
 #: ui/main.qml:108
 #, kde-format
 msgid "Lead acid"
-msgstr ""
+msgstr "Олово-киселинска"
 
 #: ui/main.qml:109
 #, kde-format
 msgid "Nickel cadmium"
-msgstr ""
+msgstr "Никл‑кадмијумска"
 
 #: ui/main.qml:110
 #, kde-format
 msgid "Nickel metal hydride"
-msgstr ""
+msgstr "Никл‑металхидридна"
 
 #: ui/main.qml:111
 #, kde-format
 msgid "Unknown technology"
-msgstr ""
+msgstr "Непозната технологија"
 
 #: ui/main.qml:127
 #, kde-format
 msgctxt "@info:status"
 msgid "No energy information available on this system"
-msgstr ""
+msgstr "Нема података о енергији на овом систему"
 
 #: ui/main.qml:228
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "PDA Battery"
-msgstr "Батерија"
+msgstr "ПДА батерија"
 
 #: ui/main.qml:229
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "UPS Battery"
-msgstr "Батерија"
+msgstr "УПС батерија"
 
 #: ui/main.qml:230
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Internal Battery"
-msgstr "Батерија"
+msgstr "Унутрашња батерија"
 
 #: ui/main.qml:231
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Mouse Battery"
-msgstr "Батерија"
+msgstr "Батерија миша"
 
 #: ui/main.qml:232
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Keyboard Battery"
-msgstr "Батерија"
+msgstr "Батерија тастатуре"
 
 #: ui/main.qml:233
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Keyboard/Mouse Battery"
-msgstr "Батерија"
+msgstr "Батерија тастатуре/миша"
 
 #: ui/main.qml:234
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Camera Battery"
-msgstr "Батерија"
+msgstr "Батерија фотоапарата"
 
 #: ui/main.qml:235
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Phone Battery"
-msgstr "Батерија"
+msgstr "Батерија телефона"
 
 #: ui/main.qml:236
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Monitor Battery"
-msgstr "Батерија"
+msgstr "Батерија монитора"
 
 #: ui/main.qml:237
 #, kde-format
 msgid "Gaming Input Battery"
-msgstr ""
+msgstr "Батерија контролора за игре"
 
 #: ui/main.qml:238
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Bluetooth Battery"
-msgstr "Батерија"
+msgstr "Блутут батерија"
 
 #: ui/main.qml:239
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Tablet Battery"
-msgstr "Батерија"
+msgstr "Батерија таблице"
 
 #: ui/main.qml:240
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Headphone Battery"
-msgstr "Батерија"
+msgstr "Батерија слушалица"
 
 #: ui/main.qml:241
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Headset Battery"
-msgstr "Батерија"
+msgstr "Батерија слушалица са микрофоном"
 
 #: ui/main.qml:242
-#, fuzzy, kde-format
-#| msgid "Battery"
+#, kde-format
 msgid "Touchpad Battery"
-msgstr "Батерија"
+msgstr "Батерија додирника"
 
 #: ui/main.qml:273
-#, fuzzy, kde-format
-#| msgid "Charging"
+#, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
-msgstr "Пуни се"
+msgstr "%1% (пуни се)"
 
 #: ui/main.qml:274
-#, fuzzy, kde-format
-#| msgctxt "%1 is value, %2 is unit"
-#| msgid "%1 %2"
+#, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
-msgstr "%1 %2"
+msgstr "%1%"
 
 #: ui/main.qml:314
 #, kde-format
 msgctxt "A format string with %1 as the short symbol for Watt"
 msgid "%.0f %1"
-msgstr ""
+msgstr "%.0f %1"
 
 #: ui/main.qml:315
 #, kde-format
 msgctxt "A format string with %1 as the percentage symbol '%'"
 msgid "%.0f %1"
-msgstr ""
+msgstr "%.0f %1"
 
 #: ui/main.qml:334
 #, kde-format
@@ -412,83 +389,3 @@ msgstr "Освежи"
 #, kde-format
 msgid "%1:"
 msgstr "%1:"
-
-#, fuzzy
-#~| msgid "%1:"
-#~ msgctxt "%1 is the unit"
-#~ msgid "%1"
-#~ msgstr "%1:"
-
-#, fuzzy
-#~| msgctxt "%1 is value, %2 is unit"
-#~| msgid "%1 %2"
-#~ msgctxt "this is a format string, equivalent to '%'"
-#~ msgid " %%"
-#~ msgstr "%1 %2"
-
-#~ msgctxt "Degree Celsius"
-#~ msgid "°C"
-#~ msgstr "°C"
-
-#, fuzzy
-#~| msgid "Battery"
-#~ msgid "Unknown Battery"
-#~ msgstr "Батерија"
-
-#, fuzzy
-#~| msgctxt "%1 is value, %2 is unit"
-#~| msgid "%1 %2"
-#~ msgctxt "Graph axis label: percentage"
-#~ msgid "%1%"
-#~ msgstr "%1 %2"
-
-# >> @title:column
-#~ msgctxt "Shorthand for Watts"
-#~ msgid "W"
-#~ msgstr "W"
-
-#~ msgctxt "literal percent sign"
-#~ msgid "%"
-#~ msgstr "%"
-
-#~ msgid "This type of history is currently not available for this device."
-#~ msgstr "Ова врста историјата тренутно није доступна за овај уређај."
-
-#, fuzzy
-#~| msgctxt "%1 is value, %2 is unit"
-#~| msgid "%1 %2"
-#~ msgctxt "Battery health percentage"
-#~ msgid "%1%"
-#~ msgstr "%1 %2"
-
-#~ msgid "%"
-#~ msgstr "%"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Часлав Илић"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "caslav.ilic@gmx.net"
-
-#~ msgid "Energy Consumption Statistics"
-#~ msgstr "Статистика потрошње енергије"
-
-#~ msgid "Kai Uwe Broulik"
-#~ msgstr "Каи Уве Броулик"
-
-#~ msgid "Application Energy Consumption"
-#~ msgstr "Потрошња енергије програма"
-
-#~ msgid "Path: %1"
-#~ msgstr "Путања: %1"
-
-#~ msgid "PID: %1"
-#~ msgstr "ПИД: %1"
-
-#~ msgid "Wakeups per second: %1 (%2%)"
-#~ msgstr "Буђења по секунди: %1 (%2%)"
-
-#~ msgid "Details: %1"
-#~ msgstr "Детаљи: %1"
