@@ -4,13 +4,14 @@
 # Toplica Tanaskovic <toptan@kde.org.yu>, 2003.
 # Chusslove Illich <caslav.ilic@gmx.net>, 2005, 2007, 2008, 2009, 2010, 2014, 2017.
 # Dalibor Djuric <daliborddjuric@gmail.com>, 2009.
+# Nemanja Hiršl <nemhirsl@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmsamba\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-30 00:42+0000\n"
-"PO-Revision-Date: 2017-09-28 17:58+0200\n"
-"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"PO-Revision-Date: 2026-10-03 22:09+0200\n"
+"Last-Translator: Nemanja Hiršl <nemhirsl@gmail.com>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
@@ -23,101 +24,44 @@ msgstr ""
 "X-Environment: kde\n"
 
 #: ui/main.qml:18
-#, fuzzy, kde-format
-#| msgid "&Exports"
+#, kde-format
 msgctxt "@title heading above listview"
 msgid "User-Created Shares"
-msgstr "&Извози"
+msgstr "Дељења која су направили корисници"
 
 # >> @title:column
 #: ui/main.qml:23
-#, fuzzy, kde-format
-#| msgid "Mounted Under"
+#, kde-format
 msgctxt "@title heading above listview"
 msgid "Remote Share Mounts"
-msgstr "монтиран под"
+msgstr "Монтирана удаљена дељења"
 
 #: ui/main.qml:54
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no directories shared by users"
-msgstr ""
+msgstr "Нема фасцикли које су корисници поделили"
 
 #: ui/main.qml:92
 #, kde-format
 msgctxt "@info place holder for empty listview"
 msgid "There are no Samba shares mounted on this system"
-msgstr ""
+msgstr "Нема самба дељења монтираних на овом систему"
 
 #: ui/ShareListItem.qml:24
 #, kde-format
 msgctxt "@label local file system path"
 msgid "Path:"
-msgstr ""
+msgstr "Путања:"
 
 #: ui/ShareListItem.qml:40
 #, kde-format
 msgctxt "@label labels a samba url or path"
 msgid "Shared at:"
-msgstr ""
+msgstr "Дељено на:"
 
 #: ui/ShareListItem.qml:69
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Open folder properties to change share settings"
-msgstr ""
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Часлав Илић"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "caslav.ilic@gmx.net"
-
-#~ msgid "kcmsamba"
-#~ msgstr "КЦМ‑Самба"
-
-#, fuzzy
-#~| msgid "(c) 2002 KDE Information Control Module Samba Team"
-#~ msgid "(c) 2002-2020 KDE Information Control Module Samba Team"
-#~ msgstr "© 2002, тим самба модула контролног центра"
-
-#~ msgid "Michael Glauche"
-#~ msgstr "Михаел Глаухе"
-
-#~ msgid "Matthias Hoelzer"
-#~ msgstr "Матијас Хелцер-Клипфел"
-
-#~ msgid "David Faure"
-#~ msgstr "Давид Фор"
-
-#~ msgid "Harald Koschinski"
-#~ msgstr "Харалд Кошински"
-
-#~ msgid "Wilco Greven"
-#~ msgstr "Вилко Гревен"
-
-#~ msgid "Alexander Neundorf"
-#~ msgstr "Александер Нојндорф"
-
-#~ msgid "System Information Control Module"
-#~ msgstr ""
-#~ "Контролни модул података о систему|/|$[својства дат 'Контролном модулу "
-#~ "података о систему']"
-
-# >> @title:column
-#~ msgid "Resource"
-#~ msgstr "ресурс"
-
-# >> @title:column
-#~ msgid "Mounted Under"
-#~ msgstr "монтиран под"
-
-# >> @title:column
-#, fuzzy
-#~| msgid "Accessed From"
-#~ msgctxt ""
-#~ "@title:column whether a samba share is accessible locally (i.e. mounted)"
-#~ msgid "Accessible"
-#~ msgstr "приступ са"
+msgstr "Отвори својства фасцикле ради измене поставки дељења"
