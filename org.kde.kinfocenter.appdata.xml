@@ -49,6 +49,10 @@
   <name xml:lang="sa">सूचना केन्द्र</name>
   <name xml:lang="sk">Informačné centrum</name>
   <name xml:lang="sl">Info Center</name>
+  <name xml:lang="sr">Инфоцентар</name>
+  <name xml:lang="sr-Latn">Infocentar</name>
+  <name xml:lang="sr-ijekavian">Инфоцентар</name>
+  <name xml:lang="sr-ijekavianlatin">Infocentar</name>
   <name xml:lang="sv">Informationscentral</name>
   <name xml:lang="ta">தகவல் மையம்</name>
   <name xml:lang="tg">Маркази иттилоотӣ</name>
@@ -88,6 +92,10 @@
   <summary xml:lang="ru">Получение сведений об аппаратном обеспечении и состоянии системы</summary>
   <summary xml:lang="sk">Informácie o hardvéri a stave systému</summary>
   <summary xml:lang="sl">Spoznajte strojno opremo in stanje sistema</summary>
+  <summary xml:lang="sr">Сазнајте више о хардверу и стању система</summary>
+  <summary xml:lang="sr-Latn">Saznajte više o hardveru i stanju sistema</summary>
+  <summary xml:lang="sr-ijekavian">Сазнајте више о хардверу и стању система</summary>
+  <summary xml:lang="sr-ijekavianlatin">Saznajte više o hardveru i stanju sistema</summary>
   <summary xml:lang="sv">Ta reda på mer om systemets hårdvara och status</summary>
   <summary xml:lang="tr">Sistemdeki donanım ve sistem durumu hakkında bilgi alın</summary>
   <summary xml:lang="ug">سىستېمىنىڭ قاتتىق دېتال ۋە ھالىتى ھەققىدىكى ئۇچۇرنى كۆرسىتىدۇ</summary>
@@ -137,6 +145,10 @@
     <p xml:lang="sa">सूचनाकेन्द्रं भवतः प्रणाल्याः डेस्कटॉप् वातावरणस्य च केन्द्रीकृतं सुविधाजनकं च अवलोकनं प्रदाति ।</p>
     <p xml:lang="sk">Informačné centrum vám poskytuje centralizovaný a pohodlný prehľad o vašom systéme a prostredí pracovnej plochy.</p>
     <p xml:lang="sl">Info center vam nudi centraliziran in priročen pregled nad sistemom in namizjem.</p>
+    <p xml:lang="sr">Инфоцентар пружа централизован и згодан преглед система и окружења површи.</p>
+    <p xml:lang="sr-Latn">Infocentar pruža centralizovan i zgodan pregled sistema i okruženja površi.</p>
+    <p xml:lang="sr-ijekavian">Инфоцентар пружа централизован и згодан преглед система и окружења површи.</p>
+    <p xml:lang="sr-ijekavianlatin">Infocentar pruža centralizovan i zgodan pregled sistema i okruženja površi.</p>
     <p xml:lang="sv">Informationscentralen ger dig en centraliserad och bekväm översikt av systemet och skrivbordsmiljön.</p>
     <p xml:lang="tg">Маркази иттилоотӣ ба шумо намоиши мусоид ва марказонидашударо барои низом ва муҳити мизи кории шумо таъмин менамояд.</p>
     <p xml:lang="tr">Bilgi Merkezi, sistem ve masaüstü ortamınızın kolayca ulaşılabilir ve uygunca bir genel görünümünü sağlar.</p>
@@ -187,6 +199,10 @@
     <p xml:lang="sa">सूचनाकेन्द्रं बहुविधमॉड्यूलैः निर्मितम् अस्ति । प्रत्येकं मॉड्यूल् पृथक् अनुप्रयोगः अस्ति, परन्तु सूचनाकेन्द्रम् एतान् सर्वान् कार्यक्रमान् सुविधाजनकस्थाने व्यवस्थितं करोति ।</p>
     <p xml:lang="sk">Informačné centrum pozostáva z viacerých modulov. Každý modul je samostatnou aplikáciou, ale informačné centrum organizuje všetky tieto programy na vhodnom mieste.</p>
     <p xml:lang="sl">Informacijski center je sestavljen iz več modulov. Vsak modul je ločena aplikacija, vendar informacijski center vse to sestavi na priročno mesto.</p>
+    <p xml:lang="sr">Информациони центар се састоји од више модула. Сваки модул је засебан програм, али их информациони центар све окупља на једном згодном месту.</p>
+    <p xml:lang="sr-Latn">Informacioni centar se sastoji od više modula. Svaki modul je zaseban program, ali ih informacioni centar sve okuplja na jednom zgodnom mestu.</p>
+    <p xml:lang="sr-ijekavian">Информациони центар се састоји од више модула. Сваки модул је засебан програм, али их информациони центар све окупља на једном згодном мјесту.</p>
+    <p xml:lang="sr-ijekavianlatin">Informacioni centar se sastoji od više modula. Svaki modul je zaseban program, ali ih informacioni centar sve okuplja na jednom zgodnom mjestu.</p>
     <p xml:lang="sv">Informationscentralen består av flera moduler. Varje modul är ett eget program, men informationscentralen organiserar alla dessa program på ett bekvämt ställe.</p>
     <p xml:lang="tg">маркази иттилоотӣ аз якчанд модул иборат аст. Ҳар як модул барномаи алоҳида мебошад, аммо маркази иттилоотӣ ҳамаи барномаҳоро дар як ҷои мусоид муттаҳид мекунад.</p>
     <p xml:lang="tr">Bilgi Merkezi, birden çok modülden oluşur. Her bir modül ayrı bir uygulamadır; ancak Bilgi Merkezi, tüm bu uygulamaları kolayca ulaşılabilir bir konumda organize eder.</p>
