@@ -235,7 +235,7 @@ msgstr "Kopírovať"
 #, kde-format
 msgctxt "@info:status"
 msgid "Serial number copied to clipboard"
-msgstr ""
+msgstr "Sériové číslo bolo skopírované do schránky"
 
 #: ui/main.qml:193
 #, kde-format
@@ -274,11 +274,10 @@ msgid "Copy Details"
 msgstr "Kopírovať podrobnosti"
 
 #: ui/main.qml:241
-#, fuzzy, kde-format
-#| msgid "Copy software and hardware information to clipboard"
+#, kde-format
 msgctxt "@info:status"
 msgid "System information copied to clipboard"
-msgstr "Skopírovať softvérové a hardvérové informácie do schránky"
+msgstr "Informácie o systéme boli skopírované do schránky"
 
 #: ui/main.qml:252
 #, kde-format
