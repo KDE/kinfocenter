@@ -440,7 +440,7 @@ KCM.SimpleKCM {
                         text: {
                             // Battery properties are lower-cased. Otherwise get the "currentX" property from root
                             const isBatteryProperty = (valueLabel.source[0] == valueLabel.source[0].toLowerCase())
-                            const value = isBatteryProperty ? root.currentBattery[valueLabel.source] : root[`current${valueLabel.source}`]
+                            const value = isBatteryProperty ? root.currentBattery?.[valueLabel.source] : root[`current${valueLabel.source}`]
                             return value ? valueLabel.format(value) : ""
                         }
                         textFormat: Text.PlainText
