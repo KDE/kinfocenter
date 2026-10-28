@@ -51,8 +51,7 @@ Item {
         function hoverHandler(position: point, value: point): void {
             if (value.y < graphRoot.yMin || value.y > graphRoot.yMax)
                 return;
-            const timeOffset = Math.round(aXe.min.getTime() + value.x);
-            const _date = new Date(timeOffset);
+            const _date = new Date(value.x);
             if (plotArea.x + position.x + coordinateLabel.width > graphRoot.width) {
                 coordinateLabel.x = graphRoot.width - coordinateLabel.width - Kirigami.Units.smallSpacing;
             } else {
@@ -60,7 +59,7 @@ Item {
             }
             coordinateLabel.y = (position.y - coordinateLabel.height);
 
-            coordinateLabel.text = Qt.locale().toString(_date, Locale.ShortFormat) + ": " + getYValue(timeOffset);
+            coordinateLabel.text = Qt.locale().toString(_date, Locale.ShortFormat) + ": " + getYValue(value.x);
         }
 
         anchors.fill: parent
