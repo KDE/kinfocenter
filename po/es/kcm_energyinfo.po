@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-02 00:46+0000\n"
+"POT-Creation-Date: 2026-10-30 00:55+0000\n"
 "PO-Revision-Date: 2026-07-02 21:04+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 26.04.2\n"
 
-#: ui/Graph.qml:181
+#: ui/Graph.qml:180
 #, kde-format
 msgctxt "@info:status"
 msgid "No history information for this time span"

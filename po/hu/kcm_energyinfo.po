@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-02 00:46+0000\n"
+"POT-Creation-Date: 2026-10-30 00:55+0000\n"
 "PO-Revision-Date: 2026-05-30 21:46+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 26.04.1\n"
 
-#: ui/Graph.qml:181
+#: ui/Graph.qml:180
 #, kde-format
 msgctxt "@info:status"
 msgid "No history information for this time span"

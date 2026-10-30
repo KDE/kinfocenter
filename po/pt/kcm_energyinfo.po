@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_energyinfo\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-02 00:46+0000\n"
+"POT-Creation-Date: 2026-10-30 00:55+0000\n"
 "PO-Revision-Date: 2021-07-12 00:41+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-POFile-SpellExtra: Kai Wh Uwe Broulik UPS PDA Hidreto\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ui/Graph.qml:181
+#: ui/Graph.qml:180
 #, fuzzy, kde-format
 #| msgctxt "@info:status"
 #| msgid "No energy information available on this system"
