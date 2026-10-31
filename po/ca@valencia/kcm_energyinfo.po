@@ -104,7 +104,7 @@ msgstr "Voltatge"
 #, kde-format
 msgctxt "Volt"
 msgid "V"
-msgstr "V"
+msgstr "R"
 
 #: ui/main.qml:49
 #, kde-format
@@ -156,7 +156,7 @@ msgstr "No"
 #, kde-format
 msgctxt "%1 is a percentage value"
 msgid "%1%"
-msgstr "%1%"
+msgstr "%1 %"
 
 #: ui/main.qml:81
 #, kde-format
@@ -316,7 +316,7 @@ msgstr "%1% (Està carregant)"
 #, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1%"
-msgstr "%1%"
+msgstr "%1 %"
 
 #: ui/main.qml:314
 #, kde-format
