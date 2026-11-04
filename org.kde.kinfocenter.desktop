@@ -5,6 +5,7 @@ Type=Application
 X-DocPath=kinfocenter/index.html
 StartupNotify=true
 OnlyShowIn=KDE;
+X-KDE-Shortcuts=Meta+Pause
 
 Name=Info Center
 Name[ar]=مركز المعلومات
