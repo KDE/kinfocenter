@@ -25,8 +25,7 @@ msgstr ""
 #| msgid "No energy information available on this system"
 msgctxt "@info:status"
 msgid "No history information for this time span"
-msgstr ""
-"Δεν υπάρχουν διαθέσιμες πληροφορίες για την ενέργεια σε αυτό το σύστημα"
+msgstr "Δεν υπάρχουν πληροφορίες ιστορικού γι' αυτό το χρονικό εύρος"
 
 #: ui/main.qml:31 ui/main.qml:243
 #, kde-format
@@ -57,7 +56,7 @@ msgstr "Υγεία"
 #, fuzzy, kde-format
 #| msgid "Charge state"
 msgid "Charge Cycles"
-msgstr "Κατάσταση φόρτισης"
+msgstr "Κύκλοι φόρτισης"
 
 #: ui/main.qml:38
 #, kde-format
@@ -168,25 +167,25 @@ msgid "%1 %2"
 msgstr "%1 %2"
 
 #: ui/main.qml:88
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "Degree Celsius"
 msgid "%1 °C"
-msgstr ""
+msgstr "%1 °C"
 
 #: ui/main.qml:96
-#, kde-format
+#, fuzzy, kde-format
 msgid "Not charging"
-msgstr "Εκτός φόρτισης"
+msgstr "Δεν φορτίζεται"
 
 #: ui/main.qml:97
-#, kde-format
+#, fuzzy, kde-format
 msgid "Charging"
-msgstr "Φόρτιση"
+msgstr "Φορτίζεται"
 
 #: ui/main.qml:98
-#, kde-format
+#, fuzzy, kde-format
 msgid "Discharging"
-msgstr "Αποφόρτιση"
+msgstr "Αποφορτίζεται"
 
 #: ui/main.qml:99
 #, kde-format
@@ -219,9 +218,9 @@ msgid "Nickel cadmium"
 msgstr "Καδμίου νικελίου"
 
 #: ui/main.qml:110
-#, kde-format
+#, fuzzy, kde-format
 msgid "Nickel metal hydride"
-msgstr "Υδρίδιο νικελίου μετάλλου"
+msgstr "Υβρίδιο νικελίου μετάλλου"
 
 #: ui/main.qml:111
 #, kde-format
@@ -229,16 +228,15 @@ msgid "Unknown technology"
 msgstr "Άγνωστη τεχνολογία"
 
 #: ui/main.qml:127
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@info:status"
 msgid "No energy information available on this system"
-msgstr ""
-"Δεν υπάρχουν διαθέσιμες πληροφορίες για την ενέργεια σε αυτό το σύστημα"
+msgstr "Δεν υπάρχουν πληροφορίες για την ενέργεια σε αυτό το σύστημα"
 
 #: ui/main.qml:228
-#, kde-format
+#, fuzzy, kde-format
 msgid "PDA Battery"
-msgstr "Μπαταρία POA"
+msgstr "Μπαταρία PDA"
 
 #: ui/main.qml:229
 #, kde-format
@@ -264,13 +262,13 @@ msgstr "Μπαταρία πληκτρολογίου"
 #, fuzzy, kde-format
 #| msgid "Keyboard battery"
 msgid "Keyboard/Mouse Battery"
-msgstr "Μπαταρία πληκτρολογίου"
+msgstr "Μπαταρία πληκτρολογίου/ποντικιού"
 
 #: ui/main.qml:234
 #, fuzzy, kde-format
 #| msgid "Battery"
 msgid "Camera Battery"
-msgstr "Μπαταρία"
+msgstr "Μπαταρία κάμερας"
 
 #: ui/main.qml:235
 #, kde-format
@@ -283,45 +281,45 @@ msgid "Monitor Battery"
 msgstr "Μπαταρία οθόνης"
 
 #: ui/main.qml:237
-#, kde-format
+#, fuzzy, kde-format
 msgid "Gaming Input Battery"
-msgstr ""
+msgstr "Μπαταρία χειριστηρίου παιχνιδιών"
 
 #: ui/main.qml:238
 #, fuzzy, kde-format
 #| msgid "Mouse battery"
 msgid "Bluetooth Battery"
-msgstr "Μπαταρία ποντικιού"
+msgstr "Μπαταρία Bluetooth"
 
 #: ui/main.qml:239
 #, fuzzy, kde-format
 #| msgid "Battery"
 msgid "Tablet Battery"
-msgstr "Μπαταρία"
+msgstr "Μπαταρία tablet"
 
 #: ui/main.qml:240
 #, fuzzy, kde-format
 #| msgid "Phone battery"
 msgid "Headphone Battery"
-msgstr "Μπαταρία τηλεφώνου"
+msgstr "Μπαταρία ακουστικών"
 
 #: ui/main.qml:241
 #, fuzzy, kde-format
 #| msgid "Keyboard battery"
 msgid "Headset Battery"
-msgstr "Μπαταρία πληκτρολογίου"
+msgstr "Μπαταρία ακουστικών με μικρόφωνο"
 
 #: ui/main.qml:242
 #, fuzzy, kde-format
 #| msgid "Keyboard battery"
 msgid "Touchpad Battery"
-msgstr "Μπαταρία πληκτρολογίου"
+msgstr "Μπαταρία επιφάνειας αφής"
 
 #: ui/main.qml:273
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "Battery charge percentage"
 msgid "%1% (Charging)"
-msgstr "%1% (Φόρτιση)"
+msgstr "%1% (Φορτίζεται)"
 
 #: ui/main.qml:274
 #, kde-format
@@ -330,16 +328,16 @@ msgid "%1%"
 msgstr "%1%"
 
 #: ui/main.qml:314
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "A format string with %1 as the short symbol for Watt"
 msgid "%.0f %1"
-msgstr ""
+msgstr "%.0f %1"
 
 #: ui/main.qml:315
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "A format string with %1 as the percentage symbol '%'"
 msgid "%.0f %1"
-msgstr ""
+msgstr "%.0f %1"
 
 #: ui/main.qml:334
 #, kde-format

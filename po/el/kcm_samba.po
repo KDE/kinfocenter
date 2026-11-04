@@ -37,7 +37,7 @@ msgstr "Κοινοί πόροι δημιουργημένοι από τον χρ�
 #| msgid "Mounted Remote Shares"
 msgctxt "@title heading above listview"
 msgid "Remote Share Mounts"
-msgstr "Προσαρτημένοι απομακρυσμένοι κοινοί πόροι"
+msgstr "Απομακρυσμένοι κοινοί πόροι προσάρτησης"
 
 #: ui/main.qml:54
 #, kde-format
@@ -57,13 +57,13 @@ msgstr "Δεν υπάρχουν προσαρτημένοι πόροι Samba σε
 #| msgid "Path"
 msgctxt "@label local file system path"
 msgid "Path:"
-msgstr "Διαδρομή"
+msgstr "Διαδρομή:"
 
 #: ui/ShareListItem.qml:40
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@label labels a samba url or path"
 msgid "Shared at:"
-msgstr ""
+msgstr "Κοινοποιήθηκε στις:"
 
 #: ui/ShareListItem.qml:69
 #, kde-kuit-format

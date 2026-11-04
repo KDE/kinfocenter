@@ -1,0 +1,107 @@
+# Copyright (C) 2026 This file is copyright:
+# This file is distributed under the same license as the kinfocenter package.
+#
+# SPDX-FileCopyrightText: 2026 SPDX-FileCopyrightText :
+# SPDX-FileCopyrightText: 2026 Λευτέρης Τ. <tripoleft@protonmail.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: kinfocenter\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-09-24 00:47+0000\n"
+"PO-Revision-Date: 2026-10-29 18:07+0200\n"
+"Last-Translator: Λευτέρης Τ. <tripoleft@protonmail.com>\n"
+"Language-Team: Greek <kde-i18n-doc@kde.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 26.08.1\n"
+
+#: CommandOutputContext.cpp:127 CommandOutputContext.cpp:149
+#, kde-kuit-format
+msgctxt "@info"
+msgid "Could not load page content"
+msgstr "Αδυναμία φόρτωσης περιεχομένου σελίδας"
+
+#: CommandOutputContext.cpp:129
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Technical details: The <command>%1</command> tool is required to display "
+"this page, but could not be found. You may be able to install it using your "
+"package manager; either way, please report this packaging issue to %2."
+msgstr ""
+"Τεχνικές λεπτομέρειες: Το εργαλείο <command>%1</command> απαιτείται για την "
+"εμφάνισητης σελίδας αλλά, δεν βρέθηκε. Ίσως μπορέσετε να εγκαταστήσετε "
+"χρησιμοποιώντας τονδιαχειριστή πακέτων σας. Όπως και να 'χει, παρακαλούμε να "
+"αναφέρετε αυτό το ζήτημα πακέτων στο %2."
+
+#: CommandOutputContext.cpp:150
+#, kde-kuit-format
+msgctxt "@Info"
+msgid ""
+"Technical details: the <command>%1</command> tool crashed while generating "
+"page content."
+msgstr ""
+"Τεχνικές λεπτομέρειες: Το εργαλείο <command>%1</command> διακόπηκε απότομα "
+"κατά την δημιουργία του περιεχομένου της σελίδας."
+
+#: qml/CommandOutputKCM.qml:108
+#, kde-format
+msgctxt "@info"
+msgid "No text matching the filter"
+msgstr "Κανένα κείμενο δεν ταιριάζει με το φίλτρο"
+
+#: qml/CommandOutputKCM.qml:113
+#, kde-format
+msgctxt "@info the KCM has no data to display"
+msgid "No data available"
+msgstr "Δεν υπάρχουν διαθέσιμα δεδομένα"
+
+#: qml/CommandOutputKCM.qml:126
+#, kde-format
+msgid "Report to %1"
+msgstr "Αναφορά στο %1"
+
+#: qml/CommandOutputKCM.qml:192
+#, kde-format
+msgctxt "@label placeholder text to filter for something"
+msgid "Filter…"
+msgstr "Φίλτρο…"
+
+#: qml/CommandOutputKCM.qml:194
+#, kde-format
+msgctxt "accessible name for filter input"
+msgid "Filter"
+msgstr "Φίλτρο"
+
+#: qml/CommandOutputKCM.qml:206
+#, kde-format
+msgctxt "@action:button close filter header"
+msgid "Close"
+msgstr "Κλείσιμο"
+
+#: qml/CommandOutputKCM.qml:231
+#, kde-format
+msgctxt "@action:button pauses automatic refreshing"
+msgid "Pause Refreshing"
+msgstr "Παύση ανανέωσης"
+
+#: qml/CommandOutputKCM.qml:239
+#, kde-format
+msgctxt "@action:button resumes automatic refreshing"
+msgid "Resume Refreshing"
+msgstr "Συνέχιση ανανέωσης"
+
+#: qml/CommandOutputKCM.qml:246
+#, kde-format
+msgctxt "@action:button copies all displayed text"
+msgid "Copy to Clipboard"
+msgstr "Αντιγραφή στο πρόχειρο"
+
+#: qml/CommandOutputKCM.qml:254
+#, kde-format
+msgctxt "@action:button opens filter bar"
+msgid "Filter"
+msgstr "Φίλτρο"

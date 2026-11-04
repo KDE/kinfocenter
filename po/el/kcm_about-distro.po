@@ -20,10 +20,10 @@ msgstr ""
 "X-Generator: Lokalize 20.04.2\n"
 
 #: CPUEntry.cpp:17
-#, kde-format
+#, fuzzy, kde-format
 msgid "Processor:"
 msgid_plural "Processors:"
-msgstr[0] "Επεξεργαστής"
+msgstr[0] "Επεξεργαστής:"
 msgstr[1] "Επεξεργαστές:"
 
 #: CPUEntry.cpp:22
@@ -38,7 +38,7 @@ msgstr "Άγνωστος τύπος"
 #| msgid "Graphics Processor:"
 msgctxt "@label %1 is the GPU index number"
 msgid "Graphics Processor %1:"
-msgstr "Επεξεργαστής γραφικών:"
+msgstr "Επεξεργαστής γραφικών %1:"
 
 #: GPUEntry.cpp:18
 #, kde-format
@@ -46,22 +46,22 @@ msgid "Graphics Processor:"
 msgstr "Επεξεργαστής γραφικών:"
 
 #: GPUEntry.cpp:28
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@label GPU type"
 msgid "integrated"
-msgstr ""
+msgstr "ενσωματωμένος"
 
 #: GPUEntry.cpp:30
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@label GPU type"
 msgid "discrete"
-msgstr ""
+msgstr "ανεξάρτητος"
 
 #: GPUEntry.cpp:32
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@label GPU type. GPU of a virtual machine"
 msgid "virtual"
-msgstr ""
+msgstr "εικονικός"
 
 #: GraphicsPlatformEntry.cpp:10
 #, kde-format
@@ -74,35 +74,35 @@ msgid "Kernel Version:"
 msgstr "Έκδοση πυρήνα:"
 
 #: KernelEntry.cpp:23
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
-msgstr "%1 (%2-bit"
+msgstr "%1 (%2-bit)"
 
 #: main.cpp:201
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@label"
 msgid "Manufacturer:"
-msgstr ""
+msgstr "Κατασκευαστής:"
 
 #: main.cpp:204 main.cpp:221
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@label"
 msgid "Product Name:"
-msgstr ""
+msgstr "Όνομα προϊόντος:"
 
 #: main.cpp:207
 #, fuzzy, kde-format
 #| msgid "Qt Version:"
 msgctxt "@label"
 msgid "System Version:"
-msgstr "Έκδοση Qt:"
+msgstr "Έκδοση συστήματος:"
 
 #: main.cpp:210 main.cpp:224
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@label"
 msgid "Serial Number:"
-msgstr ""
+msgstr "Σειριακός αριθμός:"
 
 #: main.cpp:214 main.cpp:231
 #, kde-format
@@ -115,7 +115,7 @@ msgstr "Άγνωστο:"
 #| msgid "Qt Version:"
 msgctxt "@label uboot is the name of a bootloader for embedded devices"
 msgid "U-Boot Version:"
-msgstr "Έκδοση Qt:"
+msgstr "Έκδοση U-Boot:"
 
 #: main.cpp:265
 #, kde-format
@@ -133,12 +133,12 @@ msgid "Memory:"
 msgstr "Μνήμη:"
 
 #: MemoryEntry.cpp:129
-#, kde-format
+#, fuzzy, kde-format
 msgctxt ""
 "@label, %1 is the total amount of installed system memory, %2 is the amount "
 "of which is usable, both expressed as 7.7 GiB"
 msgid "%1 of RAM (%2 usable)"
-msgstr ""
+msgstr "%1 RAM (%2 προς χρήση)"
 
 #: MemoryEntry.cpp:137
 #, fuzzy, kde-format
@@ -155,7 +155,7 @@ msgstr "%1 RAM"
 #| msgid "%1 of RAM"
 msgctxt "@label, %1 is the amount of usable system memory expressed as 7.7 GiB"
 msgid "%1 of usable RAM"
-msgstr "%1 RAM"
+msgstr "%1 αξιοποιήσιμης RAM"
 
 #: MemoryEntry.cpp:150
 #, fuzzy, kde-format
@@ -166,30 +166,38 @@ msgid "Unknown"
 msgstr "Άγνωστο"
 
 #: MemoryEntry.cpp:158
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@info:tooltip, referring to system memory or RAM"
 msgid ""
 "Some memory is reserved for use by the kernel or system hardware such as "
 "integrated graphics memory."
 msgstr ""
+"Μερική μνήμη είναι δεσμευμένη για χρήση από τον πυρήνα ή το υλικό του "
+"συστήματος όπως η μνήμη για τα ενσωματωμένα γραφικά."
 
 #: MemoryEntry.cpp:166
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@info:tooltip, referring to system memory or RAM"
 msgid ""
 "The amount of usable memory may be lower than the displayed amount because "
 "some memory is reserved for use by the kernel or system hardware, such as "
 "integrated graphics memory."
 msgstr ""
+"Το μέγεθος της διαθέσιμης μνήμης μπορεί να είναι λιγότερο από το "
+"εμφανιζόμενο μέγεθος επειδή μερική μνήμη είναι δεσμευμένη για χρήση από τον "
+"πυρήνα ή το υλικό του συστήματος όπως η μνήμη για τα ενσωματωμένα γραφικά."
 
 #: MemoryEntry.cpp:175
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@info:tooltip, referring to system memory or RAM"
 msgid ""
 "The amount of memory displayed may be lower than the installed amount "
 "because some memory is reserved for use by the kernel or system hardware, "
 "such as integrated graphics memory."
 msgstr ""
+"Το μέγεθος της μνήμης που εμφανίζεται μπορεί να είναι λιγότερο από το "
+"εμφανιζόμενο μέγεθος επειδή μερική μνήμη είναι δεσμευμένη για χρήση από τον "
+"πυρήνα ή το υλικό του συστήματος όπως η μνήμη για τα ενσωματωμένα γραφικά."
 
 #: OSVersionEntry.cpp:9
 #, kde-format
@@ -197,18 +205,18 @@ msgid "Operating System:"
 msgstr "Λειτουργικό σύστημα:"
 
 #: OSVersionEntry.cpp:11
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@label %1 is the distro name, %2 is the version"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: OSVersionEntry.cpp:13
-#, kde-format
+#, fuzzy, kde-format
 msgctxt ""
 "@label %1 is the distro name, %2 is the version, %3 is the 'build' which "
 "should be a number, or 'rolling'"
 msgid "%1 %2 Build: %3"
-msgstr ""
+msgstr "%1 %2 Δομή: %3"
 
 #: PlasmaEntry.cpp:15
 #, kde-format
@@ -216,34 +224,34 @@ msgid "KDE Plasma Version:"
 msgstr "Έκδοση KDE Plasma:"
 
 #: ThirdPartyEntry.cpp:12
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "Unused but needs to be : to avoid assertion in Entry constructor"
 msgid ":"
-msgstr ""
+msgstr ":"
 
 #: ui/main.qml:137
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@title"
 msgid "Serial Number"
-msgstr ""
+msgstr "Σειριακός αριθμός"
 
 #: ui/main.qml:143
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@action:button"
 msgid "Copy"
-msgstr ""
+msgstr "Αντιγραφή"
 
 #: ui/main.qml:147
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@info:status"
 msgid "Serial number copied to clipboard"
-msgstr ""
+msgstr "Έγινε αντιγραφή σειριακού αριθμού στο πρόχειρο"
 
 #: ui/main.qml:193
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@action:button show a hidden entry in an overlay"
 msgid "Show"
-msgstr ""
+msgstr "Εμφάνιση"
 
 #: ui/main.qml:206
 #, kde-format
@@ -258,16 +266,16 @@ msgid "Hardware"
 msgstr "Υλικό"
 
 #: ui/main.qml:229
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@action:button"
 msgid "Launch %1…"
-msgstr ""
+msgstr "Εκκίνηση %1…"
 
 #: ui/main.qml:230
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@info:tooltip launches kinfocenter from systemsettings"
 msgid "See more detailed system information"
-msgstr ""
+msgstr "Δείτε λεπτομερέστερες πληροφορίες συστήματος"
 
 #: ui/main.qml:238 ui/main.qml:249
 #, fuzzy, kde-format
@@ -275,26 +283,26 @@ msgstr ""
 #| msgid "Your emails"
 msgctxt "@action:button"
 msgid "Copy Details"
-msgstr "capoiosct@gmail.com"
+msgstr "Αντιγραφή Λεπτομερειών"
 
 #: ui/main.qml:241
 #, fuzzy, kde-format
 #| msgid "Copy software and hardware information to clipboard"
 msgctxt "@info:status"
 msgid "System information copied to clipboard"
-msgstr "Αντιγραφή πληροφοριών λογισμικού και υλικού στο πρόχειρο"
+msgstr "Αντιγράφηκαν πληροφορίες συστήματος στο πρόχειρο"
 
 #: ui/main.qml:252
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In current language"
-msgstr ""
+msgstr "Στην τρέχουσα γλώσσα"
 
 #: ui/main.qml:261
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@action:button Copy Details..."
 msgid "In English"
-msgstr ""
+msgstr "Στα αγγλικά"
 
 #~ msgctxt "@action:button"
 #~ msgid "Copy to Clipboard"
