@@ -252,7 +252,7 @@ KCMUtils.SimpleKCM {
                 text: i18nc("@action:button Copy Details...", "In current language")
                 onTriggered: source => {
                     kcm.copyToClipboard()
-                    showToast("@info:status", "System information copied to clipboard");
+                    showToast(i18nc("@info:status", "System information copied to clipboard"));
                 }
                 shortcut: StandardKey.Copy
             }
@@ -261,7 +261,7 @@ KCMUtils.SimpleKCM {
                 text: i18nc("@action:button Copy Details...", "In English")
                 onTriggered: source => {
                     kcm.copyToClipboardInEnglish()
-                    showToast("@info:status", "System information copied to clipboard");
+                    showToast(i18nc("@info:status", "System information copied to clipboard"));
                 }
             }
         }
