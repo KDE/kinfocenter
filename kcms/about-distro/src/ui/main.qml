@@ -113,7 +113,7 @@ KCMUtils.SimpleKCM {
                             visible: !entry.isHidden()
                             text: entry.localizedValue()
                             Keys.onShortcutOverride: event => {
-                                event.accepted = (valueLabel.activeFocus && valueLabel.selectedText && event.matches(StandardKey.Copy));
+                                event.accepted = (valueLabel.contentItem.activeFocus && valueLabel.selectedText && event.matches(StandardKey.Copy));
                             }
                             Keys.onPressed: event => {
                                 if (event.matches(StandardKey.Copy)) {
