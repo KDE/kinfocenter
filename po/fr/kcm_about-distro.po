@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-20 00:47+0000\n"
+"POT-Creation-Date: 2026-11-10 10:13+0000\n"
 "PO-Revision-Date: 2026-09-21 10:29+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: fr\n"
@@ -282,7 +282,7 @@ msgctxt "@action:button"
 msgid "Copy Details"
 msgstr "Copier les détails"
 
-#: ui/main.qml:241
+#: ui/main.qml:241 ui/main.qml:255 ui/main.qml:264
 #, kde-format
 msgctxt "@info:status"
 msgid "System information copied to clipboard"
