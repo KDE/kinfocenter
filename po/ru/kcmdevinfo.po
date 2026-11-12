@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 16:18+0000\n"
-"PO-Revision-Date: 2020-06-28 10:02+0300\n"
+"PO-Revision-Date: 2026-11-11 22:56+0200\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -417,7 +417,7 @@ msgstr "Используемое пространство:"
 #, kde-format
 msgctxt "Available space out of total partition size (percent used)"
 msgid "%1 free of %2 (%3% used)"
-msgstr "свободно %1 из %2 (использовано %3%)"
+msgstr "свободно %1 из %2 (использовано %3 %)"
 
 #: soldevicetypes.cpp:303
 #, kde-format
