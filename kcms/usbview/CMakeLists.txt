@@ -1,13 +1,20 @@
-# KI18N Translation Domain for this library
+# SPDX-FileCopyrightText: 2026 Tobias Fella <tobias.fella@kde.org>
+# SPDX-License-Identifier: BSD-2-Clause
+
+find_package(lsusb)
+set_package_properties(lsusb PROPERTIES TYPE RUNTIME)
+
 add_definitions(-DTRANSLATION_DOMAIN=\"kcmusb\")
 
-set(kcm_usb_PART_SRCS kcmusb.cpp
-    kcmusb.h
-    usbdb.cpp
-    usbdb.h
-    usbdevices.cpp
-    usbdevices.h )
+kinfocenter_add_kcm(kcm_usb
+    SOURCES
+        kcmusb.cpp
+        kcmusb.h
+)
 
-kcoreaddons_add_plugin(kcm_usb SOURCES ${kcm_usb_PART_SRCS} INSTALL_NAMESPACE "plasma/kcms/kinfocenter")
-
-target_link_libraries(kcm_usb KF6::KCMUtils KF6::I18n Libusb-1.0)
+target_link_libraries(kcm_usb PRIVATE
+    KF6::CoreAddons
+    KF6::KCMUtilsQuick
+    KF6::I18n
+    KInfoCenterInternal
+)

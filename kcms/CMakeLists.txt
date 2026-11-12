@@ -22,16 +22,7 @@ add_subdirectory(sensors)
 
 add_subdirectory( samba )
 
-find_package(USB1 MODULE)
-set_package_properties(USB1 PROPERTIES DESCRIPTION "library that provides generic access to USB devices"
-                       URL "https://libusb.info/"
-                       TYPE OPTIONAL
-                       PURPOSE "View USB devices in kinfocenter"
-                      )
-
-if(USB1_FOUND)
-   add_subdirectory( usbview )
-endif()
+add_subdirectory(usbview)
 
 if (CMAKE_SYSTEM_NAME MATCHES Linux)
     add_subdirectory(energy)

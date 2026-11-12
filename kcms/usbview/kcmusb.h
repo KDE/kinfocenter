@@ -1,38 +1,24 @@
 /*
- *   SPDX-FileCopyrightText: 2001 Matthias Hoelzer-Kluepfel <mhk@caldera.de>
+ *   SPDX-FileCopyrightText: 2026 Tobias Fella <tobias.fella@kde.org>
  *   SPDX-License-Identifier: GPL-2.0-or-later
  */
 
-#ifndef _KCMUSB_H
-#define _KCMUSB_H
+#pragma once
 
-#include <QMap>
+#include <KQuickConfigModule>
 
-#include <KCModule>
+class CommandOutputContext;
 
-class QTreeWidget;
-class QTreeWidgetItem;
-class QTextEdit;
-
-class USBViewer : public KCModule
+class USBViewer : public KQuickConfigModule
 {
     Q_OBJECT
+    Q_PROPERTY(CommandOutputContext *infoOutputContext READ outputContext CONSTANT FINAL)
 
 public:
     explicit USBViewer(QObject *parent, const KPluginMetaData &data);
-    ~USBViewer() override;
 
-    void load() override;
-
-protected Q_SLOTS:
-
-    void selectionChanged(QTreeWidgetItem *item);
-    void refresh();
+    CommandOutputContext *outputContext() const;
 
 private:
-    QMap<int, QTreeWidgetItem *> _items;
-    QTreeWidget *_devices;
-    QTextEdit *_details;
+    CommandOutputContext *const m_outputContext;
 };
-
-#endif

@@ -150,6 +150,7 @@
         "Name[zh_CN]": "USB设备",
         "Name[zh_TW]": "USB 裝置"
     },
+    "TryExec": "lsusb",
     "X-DocPath": "kinfocenter/devinfo.html#kcmusb",
     "X-KDE-KInfoCenter-Category": "device_information",
     "X-KDE-Keywords": "USB,devices,viewer,control",
