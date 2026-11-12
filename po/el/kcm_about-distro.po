@@ -77,7 +77,7 @@ msgstr "Έκδοση πυρήνα:"
 #, fuzzy, kde-format
 msgctxt "@label %1 is the kernel version, %2 CPU bit width (e.g. 32 or 64)"
 msgid "%1 (%2-bit)"
-msgstr "%1 (%2-bit)"
+msgstr "%1 (%2 bit)"
 
 #: main.cpp:201
 #, fuzzy, kde-format
