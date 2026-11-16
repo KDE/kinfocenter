@@ -1,7 +1,7 @@
 # translation of kcmsamba.po to Slovenian
 # Translation of kcmsamba.po to Slovenian
 # KDEBASE translation to Slovenian language.
-# $Id: kcm_samba.po 1726255 2025-12-31 01:26:47Z scripty $
+# $Id$
 # $Source$
 #
 # Copyright (C) 2000, 2003, 2005 Free Software Foundation, Inc.
