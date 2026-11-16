@@ -1,7 +1,7 @@
 # Translation of kcmusb.po to Slovenian
 # SLOVENIAN TRANSLATION OF K DESKTOP ENVIRONMENT.
 # Copyright (C) 2001, 2003, 2005 Free Software Foundation, Inc.
-# $Id: kcmusb.po 1723123 2025-11-17 16:34:17Z scripty $
+# $Id$
 # $Source$
 #
 # Andrej Vernekar <andrej.vernekar@moj.net>, 2001.
