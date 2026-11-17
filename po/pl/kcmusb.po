@@ -1,4 +1,4 @@
-# Version: $Revision: 1733680 $
+# Version: $Revision$
 # translation of kcmusb.po to
 # Copyright (C) 2002, 2003, 2005, 2007, 2008 Free Software Foundation, Inc.
 # Michał Rudolf <mrudolf@kdewebdev.org>, 2002.
