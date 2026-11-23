@@ -229,7 +229,7 @@ msgstr "复制"
 #, kde-format
 msgctxt "@info:status"
 msgid "Serial number copied to clipboard"
-msgstr ""
+msgstr "序列号已复制到剪贴板"
 
 #: ui/main.qml:193
 #, kde-format
@@ -271,7 +271,7 @@ msgstr "复制详细信息"
 #, kde-format
 msgctxt "@info:status"
 msgid "System information copied to clipboard"
-msgstr ""
+msgstr "系统信息已复制到剪贴板"
 
 #: ui/main.qml:252
 #, kde-format
