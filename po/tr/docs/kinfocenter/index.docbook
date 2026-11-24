@@ -98,7 +98,7 @@
 
 <para
 >Bu sonraki bölüm, bilgi merkezinin kullanımının ayrıntılarını verir. Bireysel modüller hakkında bilgi için lütfen <link linkend="module"
->Öntanımlı &infocenter; Modülleri</link
+>Varsayılan &infocenter; Modülleri</link
 >’ne bakın. </para>
 
 <sect1 id="information-center-starting">
@@ -265,7 +265,7 @@
 
 <chapter id="module">
 <title
->Öntanımlı &infocenter; Modülleri</title>
+>Varsayılan &infocenter; Modülleri</title>
 
 <!--****************************************-->
 
@@ -445,7 +445,7 @@
 ></listitem>
 </itemizedlist>
 <para
->Öntanımlı ekran, yalnızca ilgili aygıtları gösterirken tümünü daraltır. Lütfen aygıt listesinde gösterilen aygıtların bilgisayarınızdaki tüm aygıtlar olmadığını, yalnızca &solid; aracılığıyla algılanan aygıtlar olduğunu unutmayın.</para>
+>Varsayılan ekran, yalnızca ilgili aygıtları gösterirken tümünü daraltır. Lütfen aygıt listesinde gösterilen aygıtların bilgisayarınızdaki tüm aygıtlar olmadığını, yalnızca &solid; aracılığıyla algılanan aygıtlar olduğunu unutmayın.</para>
 <para
 >Aygıt görüntüleyicisi, aşağıdaki aygıtları gösterebilir:</para>
 <itemizedlist>
