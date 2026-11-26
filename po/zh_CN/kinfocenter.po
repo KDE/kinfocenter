@@ -14,8 +14,8 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf6-trunk/messages/kinfocenter/kinfocenter.pot\n"
-"X-Crowdin-File-ID: 48714\n"
+"X-Crowdin-File: /kf6-stable/messages/kinfocenter/kinfocenter.pot\n"
+"X-Crowdin-File-ID: 52168\n"
 
 #: CommandOutputContext.cpp:127 CommandOutputContext.cpp:149
 #, kde-kuit-format

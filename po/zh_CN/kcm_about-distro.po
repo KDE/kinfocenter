@@ -14,8 +14,8 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf6-trunk/messages/kinfocenter/kcm_about-distro.pot\n"
-"X-Crowdin-File-ID: 43017\n"
+"X-Crowdin-File: /kf6-stable/messages/kinfocenter/kcm_about-distro.pot\n"
+"X-Crowdin-File-ID: 52518\n"
 
 #: CPUEntry.cpp:17
 #, kde-format
